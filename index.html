@@ -236,6 +236,31 @@
     .grid{grid-template-columns:1fr;}
     .hero{padding:48px 22px 36px;}
   }
+
+/* ── 記事ファインダー（検索・カテゴリ絞り込み） ── */
+.finder{max-width:1040px;margin:0 auto 30px;padding:0 24px;}
+.search-wrap{position:relative;display:flex;align-items:center;margin-bottom:18px;}
+.search-ic{position:absolute;left:16px;font-size:17px;opacity:.55;pointer-events:none;}
+#articleSearch{width:100%;font-family:inherit;font-size:16px;color:var(--ink);
+  background:var(--card);border:1px solid var(--line);border-radius:3px;
+  padding:14px 44px 14px 44px;box-shadow:var(--shadow);transition:.2s;}
+#articleSearch:focus{outline:none;border-color:var(--brown);box-shadow:0 0 0 3px rgba(166,113,62,.12);}
+#searchClear{position:absolute;right:12px;width:26px;height:26px;border:none;border-radius:50%;
+  background:var(--paper-deep);color:var(--ink-soft);font-size:17px;line-height:1;cursor:pointer;transition:.2s;}
+#searchClear:hover{background:var(--brown);color:#fff;}
+.cat-tabs{display:flex;flex-wrap:wrap;gap:9px;}
+.cat-tab{font-family:inherit;font-size:14px;color:var(--ink-soft);
+  background:var(--card);border:1px solid var(--line);border-radius:999px;
+  padding:8px 17px;cursor:pointer;transition:.18s;}
+.cat-tab:hover{border-color:var(--brown);color:var(--brown-deep);}
+.cat-tab.is-active{background:var(--pine);border-color:var(--pine);color:#fff;}
+.result-count{margin:16px 2px 0;font-size:13px;color:var(--ink-soft);min-height:1.2em;}
+.no-result{max-width:1040px;margin:8px auto 0;padding:30px 24px;text-align:center;
+  font-family:"Shippori Mincho",serif;font-size:16px;color:var(--ink-soft);}
+.card.is-hidden{display:none;}
+@media(max-width:680px){
+  .cat-tab{font-size:13px;padding:7px 14px;}
+}
 </style>
 </head>
 <body>
@@ -285,53 +310,73 @@
     <p class="eyebrow">ARTICLES</p>
     <h2>磐田物語の読みもの</h2>
   </div>
-  <div class="grid">
-    <a class="card" href="/totoumi-kokufu.html" style="text-decoration:none;color:inherit;">
+
+  <div class="finder">
+    <div class="search-wrap">
+      <span class="search-ic" aria-hidden="true">🔍</span>
+      <input type="text" id="articleSearch" placeholder="記事をさがす（例：国分寺、裸祭り、見付宿、湊…）" autocomplete="off" aria-label="記事を検索">
+      <button type="button" id="searchClear" aria-label="検索をクリア" hidden>×</button>
+    </div>
+    <div class="cat-tabs" id="catTabs" role="tablist">
+      <button type="button" class="cat-tab is-active" data-cat="all">すべて</button>
+      <button type="button" class="cat-tab" data-cat="古代の磐田">古代の磐田</button>
+      <button type="button" class="cat-tab" data-cat="東海道・見付宿">東海道・見付宿</button>
+      <button type="button" class="cat-tab" data-cat="祭りと信仰">祭りと信仰</button>
+      <button type="button" class="cat-tab" data-cat="近代の磐田">近代の磐田</button>
+      <button type="button" class="cat-tab" data-cat="暮らしの記憶">暮らしの記憶</button>
+    </div>
+    <p class="result-count" id="resultCount" aria-live="polite"></p>
+  </div>
+
+  <div class="grid" id="articleGrid">
+    <a class="card" href="/totoumi-kokufu.html" data-cat="古代の磐田" data-key="遠江国府 古代 国府 こくふ 遺跡 地名 はじまり 奈良 平安" style="text-decoration:none;color:inherit;">
       <span class="num">其の一</span>
       <h3>遠江国府と古代の磐田</h3>
       <p>国府が置かれた時代の磐田。遺跡や地名に残る古代の痕跡から、このまちの始まりをたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span></p>
     </a>
-    <a class="card" href="/mitsuke-shuku.html" style="text-decoration:none;color:inherit;">
+    <a class="card" href="/mitsuke-shuku.html" data-cat="東海道・見付宿" data-key="東海道 見付宿 みつけ 宿場 本陣 問屋場 街道 賑わい" style="text-decoration:none;color:inherit;">
       <span class="num">其の二</span>
       <h3>東海道・見付宿の面影</h3>
       <p>宿場町として栄えた見付。旧東海道の道筋、本陣や問屋場の記憶、街道がもたらした賑わいを訪ねる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span></p>
     </a>
-    <a class="card" href="/matsuri-kurashi.html" style="text-decoration:none;color:inherit;">
+    <a class="card" href="/matsuri-kurashi.html" data-cat="祭りと信仰" data-key="祭り 暮らし 見付天神裸祭 裸祭 行事 悉平太郎 神輿" style="text-decoration:none;color:inherit;">
       <span class="num">其の三</span>
       <h3>祭りと暮らしの記憶</h3>
       <p>見付天神裸祭をはじめ、まちに受け継がれてきた行事や、人々の日々の暮らしの移ろいを書き留める。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span></p>
     </a>
-    <a class="card" href="/kyu-mitsuke-gakko.html" style="text-decoration:none;color:inherit;">
+    <a class="card" href="/kyu-mitsuke-gakko.html" data-cat="近代の磐田" data-key="旧見付学校 見付の五階 木造 校舎 寺子屋 磐田文庫 学び 学校 教育 明治" style="text-decoration:none;color:inherit;">
       <span class="num">其の四</span>
       <h3>旧見付学校と、学びのまち磐田</h3>
       <p>現存最古の木造校舎「見付の五階」。寺子屋から磐田文庫へと続く、学びのまち磐田の記憶をたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span></p>
     </a>
-    <a class="card" href="/totoumi-kokubunji.html" style="text-decoration:none;color:inherit;">
+    <a class="card" href="/totoumi-kokubunji.html" data-cat="古代の磐田" data-key="遠江国分寺跡 国分寺 こくぶんじ 七重塔 金堂 聖武天皇 天平 特別史跡 古代 奈良" style="text-decoration:none;color:inherit;">
       <span class="num">其の五</span>
       <h3>遠江国分寺跡と、古代磐田のはじまり</h3>
       <p>天平の世、七重塔がそびえた遠江国の中心。特別史跡に眠る、古代磐田のはじまりの記憶をたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span></p>
     </a>
-    <a class="card" href="/fu-hachimangu.html" style="text-decoration:none;color:inherit;">
+    <a class="card" href="/fu-hachimangu.html" data-cat="古代の磐田" data-key="府八幡宮 はちまん 楼門 国府 守り神 桜井王 神社 寛永 文化財" style="text-decoration:none;color:inherit;">
       <span class="num">其の六</span>
       <h3>府八幡宮と、国府のまちの守り神</h3>
       <p>国府の守りとして奈良時代に祀られた古社。寛永の楼門が今に伝える、国府のまちの記憶をたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span></p>
     </a>
-    <a class="card" href="/oumikunitama-jinja.html" style="text-decoration:none;color:inherit;">
+    <a class="card" href="/oumikunitama-jinja.html" data-cat="祭りと信仰" data-key="淡海國玉神社 おうみくにたま 総社 そうしゃ 式内社 大国主 狛兎 縁結び 神社 見付" style="text-decoration:none;color:inherit;">
       <span class="num">其の七</span>
       <h3>淡海國玉神社と、遠江の神々が集うまち</h3>
       <p>ここを参れば、遠江じゅうの神を拝んだことになる――旧見付学校の隣に建つ、遠江国総社の記憶をたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span></p>
     </a>
-    <a class="card" href="/mitsuke-tenjin.html" style="text-decoration:none;color:inherit;">
+    <a class="card" href="/mitsuke-tenjin.html" data-cat="祭りと信仰" data-key="見付天神 矢奈比賣神社 やなひめ 悉平太郎 しっぺい 霊犬 裸祭 菅原道真 天神 神社" style="text-decoration:none;color:inherit;">
       <span class="num">其の八</span>
       <h3>見付天神と、霊犬悉平太郎のものがたり</h3>
       <p>まちを怪物から救った犬の伝説と、夜を練り歩く裸祭り。見付天神・矢奈比賣神社の記憶をたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span></p>
     </a>
-    <a class="card" href="/kaketsuka-minato.html" style="text-decoration:none;color:inherit;">
+    <a class="card" href="/kaketsuka-minato.html" data-cat="暮らしの記憶" data-key="掛塚湊 かけつか 湊 港 天竜川 廻船 廻船問屋 材木 遠州の小江戸 伊豆石 屋台 掛塚まつり 貴船神社" style="text-decoration:none;color:inherit;">
       <span class="num">其の九</span>
       <h3>掛塚湊と、遠州の小江戸とよばれたまち</h3>
       <p>天竜川の材木を江戸へ運び、廻船問屋でにぎわった湊町。「遠州の小江戸」掛塚の記憶をたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span></p>
     </a>
   </div>
+
+  <p class="no-result" id="noResult" hidden>該当する記事が見つからなかった。別のことばで探してみてほしい。</p>
 </section>
 
 <div class="mapbanner">
@@ -374,77 +419,7 @@
   </div>
 </section>
 
-<section class="latest" id="latest">
-  <div class="inner">
-    <div class="sec-head">
-      <p class="eyebrow">LATEST</p>
-      <h2>近況</h2>
-    </div>
-    <a href="/kaketsuka-minato.html" style="text-decoration:none;color:inherit;display:block;margin-bottom:18px;">
-      <div class="placeholder" style="border-style:solid;border-color:var(--line);text-align:left;">
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:14px;color:var(--brown-deep);letter-spacing:.1em;">其の九 ｜ 暮らしの記憶</span>
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:20px;color:var(--ink);">掛塚湊と、遠州の小江戸とよばれたまち</span>
-        天竜川の河口に栄えた廻船の湊町・掛塚。江戸へ材木を運び「遠州の小江戸」とよばれた繁栄と、伊豆石の蔵、絢爛な屋台に残る、まちの記憶をたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span>
-      </div>
-    </a>
-    <a href="/mitsuke-tenjin.html" style="text-decoration:none;color:inherit;display:block;margin-bottom:18px;">
-      <div class="placeholder" style="border-style:solid;border-color:var(--line);text-align:left;">
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:14px;color:var(--brown-deep);letter-spacing:.1em;">其の八 ｜ 祭りと信仰</span>
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:20px;color:var(--ink);">見付天神と、霊犬悉平太郎のものがたり</span>
-        まちを怪物から救った霊犬・悉平太郎の伝説と、国の重要無形民俗文化財「見付天神裸祭」。三つの信仰が重なる見付天神・矢奈比賣神社の記憶をたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span>
-      </div>
-    </a>
-    <a href="/oumikunitama-jinja.html" style="text-decoration:none;color:inherit;display:block;margin-bottom:18px;">
-      <div class="placeholder" style="border-style:solid;border-color:var(--line);text-align:left;">
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:14px;color:var(--brown-deep);letter-spacing:.1em;">其の七 ｜ 祭りと信仰</span>
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:20px;color:var(--ink);">淡海國玉神社と、遠江の神々が集うまち</span>
-        ここを参れば、遠江じゅうの神を拝んだことになる。旧見付学校の隣に建つ、遠江国の総社・淡海國玉神社。総社という制度と、見付が国の中心だった記憶をたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span>
-      </div>
-    </a>
-    <a href="/fu-hachimangu.html" style="text-decoration:none;color:inherit;display:block;margin-bottom:18px;">
-      <div class="placeholder" style="border-style:solid;border-color:var(--line);text-align:left;">
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:14px;color:var(--brown-deep);letter-spacing:.1em;">其の六 ｜ 古代の磐田</span>
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:20px;color:var(--ink);">府八幡宮と、国府のまちの守り神</span>
-        遠江国府の守りとして奈良時代に祀られた古社。寛永の楼門は静岡県指定文化財。国分寺跡と道をはさんで向かい合う、国府のまちの記憶をたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span>
-      </div>
-    </a>
-    <a href="/totoumi-kokubunji.html" style="text-decoration:none;color:inherit;display:block;margin-bottom:18px;">
-      <div class="placeholder" style="border-style:solid;border-color:var(--line);text-align:left;">
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:14px;color:var(--brown-deep);letter-spacing:.1em;">其の五 ｜ 古代の磐田</span>
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:20px;color:var(--ink);">遠江国分寺跡と、古代磐田のはじまり</span>
-        天平の世、七重塔がそびえた遠江国の中心。聖武天皇の詔で建てられ、特別史跡に眠る古代寺院の跡から、古代磐田のはじまりの記憶をたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span>
-      </div>
-    </a>
-    <a href="/kyu-mitsuke-gakko.html" style="text-decoration:none;color:inherit;display:block;margin-bottom:18px;">
-      <div class="placeholder" style="border-style:solid;border-color:var(--line);text-align:left;">
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:14px;color:var(--brown-deep);letter-spacing:.1em;">其の四 ｜ 近代の磐田</span>
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:20px;color:var(--ink);">旧見付学校と、学びのまち磐田</span>
-        現存する日本最古の木造擬洋風小学校「見付の五階」。城の石垣を土台に建ち、寺子屋・私塾・磐田文庫へと続く学びの系譜の上に生まれた校舎から、学びのまち磐田の記憶をたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span>
-      </div>
-    </a>
-    <a href="/matsuri-kurashi.html" style="text-decoration:none;color:inherit;display:block;margin-bottom:18px;">
-      <div class="placeholder" style="border-style:solid;border-color:var(--line);text-align:left;">
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:14px;color:var(--brown-deep);letter-spacing:.1em;">其の三 ｜ 祭りと暮らし</span>
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:20px;color:var(--ink);">祭りと暮らしの記憶 ── 闇のなかの裸祭</span>
-        七百年以上受け継がれてきた天下の奇祭・見付天神裸祭。闇のなかの神輿渡御、悉平太郎の伝説、まちに息づく祭りと暮らしの記憶をたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span>
-      </div>
-    </a>
-    <a href="/mitsuke-shuku.html" style="text-decoration:none;color:inherit;display:block;margin-bottom:18px;">
-      <div class="placeholder" style="border-style:solid;border-color:var(--line);text-align:left;">
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:14px;color:var(--brown-deep);letter-spacing:.1em;">其の二 ｜ 街道と宿場</span>
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:20px;color:var(--ink);">東海道・見付宿の面影 ── 旅人が行き交ったまち</span>
-        東海道五十三次の28番目の宿場、見付宿。本陣2軒・旅籠56軒を数えた東海道屈指の宿場町の賑わいと、今に残る面影をたどる。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span>
-      </div>
-    </a>
-    <a href="/totoumi-kokufu.html" style="text-decoration:none;color:inherit;display:block;">
-      <div class="placeholder" style="border-style:solid;border-color:var(--line);text-align:left;">
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:14px;color:var(--brown-deep);letter-spacing:.1em;">其の一 ｜ 古代の磐田</span>
-        <span class="mincho" style="display:block;margin-bottom:10px;font-size:20px;color:var(--ink);">遠江国府と古代の磐田 ── かつて、ここが国の中心だった</span>
-        奈良・平安のころ、磐田は遠江国の「首都」だった。国府が置かれ、約66メートルの七重塔がそびえた古代磐田を、史跡をたどりながら見つめ直す。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span>
-      </div>
-    </a>
-  </div>
-</section>
+
 
 <footer class="site">
   <div class="inner">
@@ -474,5 +449,52 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  var input=document.getElementById('articleSearch');
+  var clearBtn=document.getElementById('searchClear');
+  var tabs=document.querySelectorAll('.cat-tab');
+  var cards=Array.prototype.slice.call(document.querySelectorAll('#articleGrid .card'));
+  var countEl=document.getElementById('resultCount');
+  var noResult=document.getElementById('noResult');
+  var total=cards.length;
+  var activeCat='all';
+
+  function normalize(str){ return (str||'').toLowerCase(); }
+
+  function apply(){
+    var q=normalize(input.value).trim();
+    var shown=0;
+    cards.forEach(function(card){
+      var cat=card.getAttribute('data-cat')||'';
+      var key=normalize(card.getAttribute('data-key')||'');
+      var title=normalize(card.textContent||'');
+      var catOk=(activeCat==='all')||(cat===activeCat);
+      var qOk=(q==='')||(key.indexOf(q)!==-1)||(title.indexOf(q)!==-1);
+      if(catOk&&qOk){ card.classList.remove('is-hidden'); shown++; }
+      else{ card.classList.add('is-hidden'); }
+    });
+    clearBtn.hidden=(input.value==='');
+    noResult.hidden=(shown!==0);
+    if(q==''&&activeCat==='all'){
+      countEl.textContent='全'+total+'本の記事';
+    }else{
+      countEl.textContent=shown+'本の記事が見つかった';
+    }
+  }
+
+  input.addEventListener('input',apply);
+  clearBtn.addEventListener('click',function(){ input.value=''; input.focus(); apply(); });
+  tabs.forEach(function(tab){
+    tab.addEventListener('click',function(){
+      tabs.forEach(function(t){ t.classList.remove('is-active'); });
+      tab.classList.add('is-active');
+      activeCat=tab.getAttribute('data-cat');
+      apply();
+    });
+  });
+  apply();
+})();
+</script>
 </body>
 </html>
