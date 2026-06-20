@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>遠江国分寺跡と、古代磐田のはじまり ｜ 磐田物語</title>
+<meta name="description" content="遠江国分寺跡は、磐田市見付に残る奈良時代の特別史跡。七重塔と金堂を備えた古代寺院の跡をたどり、遠江国の中心として栄えた古代磐田のはじまりの記憶を書き留める。">
+<meta property="og:title" content="遠江国分寺跡と、古代磐田のはじまり ｜ 磐田物語">
+<meta property="og:description" content="七重塔がそびえた、遠江国のはじまりの地。特別史跡・遠江国分寺跡の記憶をたどる。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --kinari:#f7f2e9;
+    --cha:#a6713e;
+    --matsu:#46624a;
+    --sumi:#33312e;
+    --usuzumi:#6b665e;
+    --waku:#e4dccb;
+    --paper:#fffdf8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:"Zen Kaku Gothic New",sans-serif;
+    color:var(--sumi);
+    background:var(--kinari);
+    line-height:1.95;
+    font-size:17px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--cha);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+
+  /* ヘッダー */
+  header.site{
+    background:var(--matsu);
+    color:#fff;
+    padding:0;
+  }
+  .site-inner{
+    max-width:880px;margin:0 auto;padding:18px 22px;
+  }
+  .site-title{
+    font-family:"Shippori Mincho",serif;
+    font-weight:600;font-size:19px;color:#fff;display:block;letter-spacing:.04em;
+  }
+  .site-title small{display:block;font-size:12px;font-weight:400;opacity:.82;margin-top:3px;letter-spacing:.02em;}
+  nav.global{
+    background:#3a5340;
+  }
+  nav.global ul{
+    max-width:880px;margin:0 auto;padding:0 22px;list-style:none;display:flex;flex-wrap:wrap;gap:4px 26px;
+  }
+  nav.global a{
+    color:#f1ece1;display:inline-block;padding:11px 0;font-size:14px;letter-spacing:.03em;
+  }
+  nav.global a:hover{color:#fff;text-decoration:none;}
+
+  /* 本体 */
+  main{max-width:760px;margin:0 auto;padding:0 22px;}
+  .crumb{font-size:13px;color:var(--usuzumi);padding:20px 0 6px;}
+  .crumb a{color:var(--usuzumi);}
+  .cat{
+    display:inline-block;font-size:13px;color:var(--matsu);
+    border-left:3px solid var(--cha);padding-left:9px;margin:18px 0 10px;letter-spacing:.04em;
+  }
+  h1{
+    font-family:"Shippori Mincho",serif;
+    font-weight:700;font-size:31px;line-height:1.5;color:var(--sumi);
+    margin:6px 0 28px;letter-spacing:.02em;
+  }
+  .lead{
+    background:var(--paper);
+    border:1px solid var(--waku);
+    border-radius:4px;
+    padding:22px 24px;
+    font-size:16px;
+    color:#46423c;
+    margin-bottom:34px;
+  }
+
+  /* 挿絵 */
+  figure{margin:32px 0;}
+  .fig-box{
+    background:var(--paper);border:1px solid var(--waku);border-radius:4px;
+    padding:26px 20px;text-align:center;
+  }
+  figcaption{
+    font-size:13.5px;color:var(--usuzumi);margin-top:12px;line-height:1.8;text-align:left;
+  }
+  svg{max-width:100%;height:auto;}
+  .svg-label{font-family:"Zen Kaku Gothic New",sans-serif;fill:var(--sumi);}
+  .svg-sub{fill:var(--usuzumi);}
+
+  h2{
+    font-family:"Shippori Mincho",serif;
+    font-weight:600;font-size:22px;color:var(--matsu);
+    margin:40px 0 16px;padding-bottom:9px;border-bottom:2px solid var(--waku);letter-spacing:.02em;
+  }
+  p{margin:0 0 20px;}
+
+  /* 系譜の図 */
+  .keifu{
+    background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:24px 22px;margin:30px 0;
+  }
+
+  /* 参考・あわせて */
+  h3{
+    font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--sumi);
+    margin:34px 0 12px;
+  }
+  .refs{font-size:14px;color:var(--usuzumi);}
+  .refs li{margin:0 0 6px 1.2em;line-height:1.8;}
+  .related{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 8px;}
+  .related a{
+    background:var(--paper);border:1px solid var(--waku);border-radius:4px;
+    padding:10px 15px;font-size:14px;color:var(--matsu);
+  }
+  .related a:hover{background:#fbf7ee;text-decoration:none;}
+
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:40px 0 10px;flex-wrap:wrap;}
+  .pager a{font-size:14px;}
+
+  /* フッター */
+  footer.site{
+    background:var(--matsu);color:#eee;margin-top:54px;
+  }
+  .foot-inner{max-width:760px;margin:0 auto;padding:34px 22px;}
+  .foot-inner .mincho{font-size:18px;color:#fff;display:block;margin-bottom:12px;}
+  .foot-inner p{font-size:13.5px;color:#dfe6df;line-height:1.85;margin-bottom:18px;}
+  .foot-inner h4{font-size:13px;color:#cdd8cd;font-weight:500;margin:16px 0 8px;letter-spacing:.05em;}
+  .foot-links{list-style:none;}
+  .foot-links li{margin-bottom:7px;font-size:14px;}
+  .foot-links a{color:#f1ece1;}
+  .copy{font-size:12px;color:#b9c5b9;margin-top:22px;}
+  @media(max-width:600px){
+    h1{font-size:25px;}
+    body{font-size:16px;}
+    h2{font-size:19px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="site-inner">
+    <a href="https://iwata-monogatari.pages.dev/" class="site-title mincho">磐田物語。<small>遠江・見付のまちの歴史と文化</small></a>
+  </div>
+</header>
+<nav class="global">
+  <ul>
+    <li><a href="https://iwata-monogatari.pages.dev/hajimeni.html">はじめに</a></li>
+    <li><a href="https://iwata-monogatari.pages.dev/#themes">読みもの</a></li>
+    <li><a href="https://iwata-monogatari.pages.dev/chizu.html">地図で見る</a></li>
+    <li><a href="https://iwata-monogatari.pages.dev/#enshu">遠州弁</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="crumb"><a href="https://iwata-monogatari.pages.dev/">磐田物語</a> ／ 遠江国分寺跡と、古代磐田のはじまり</div>
+
+  <span class="cat">古代の磐田 ｜ 国府と国分寺の記憶</span>
+
+  <h1>遠江国分寺跡と、<br>古代磐田のはじまり</h1>
+
+  <div class="lead">
+    磐田市役所の北、市街地のただなかに、芝の広がる静かな公園がある。遠江国分寺跡である。なんの変哲もない広場に見えて、ここには千三百年近く前、遠江国の中心として、七重塔がそびえていた。足もとに眠る古代のまちの記憶を、たどってみたい。
+  </div>
+
+  <figure>
+    <img src="totoumi-kokubunji-hi.jpg" alt="特別史跡・遠江国分寺跡の入口。手前に「特別史跡 遠江國分寺址」と刻まれた石碑が立ち、奥に堂と説明板が見える。青空の広がる冬の日の風景。" loading="lazy" style="width:100%;height:auto;border:1px solid var(--waku);border-radius:4px;display:block;">
+    <figcaption>「特別史跡 遠江國分寺址」と刻まれた石碑。奥に堂と説明板が見える。芝のひろがる史跡公園として、市街地のただなかに残されている。</figcaption>
+  </figure>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="遠江国分寺の伽藍配置の模式図">
+        <rect x="0" y="0" width="520" height="300" fill="#fffdf8"/>
+        <!-- 寺域の枠 -->
+        <rect x="70" y="28" width="380" height="244" fill="none" stroke="#c9bfa7" stroke-width="1.4" stroke-dasharray="5 4"/>
+        <text x="260" y="20" text-anchor="middle" font-size="12" class="svg-sub">寺域（およそ一町四方）</text>
+        <!-- 南大門 -->
+        <rect x="232" y="244" width="56" height="16" fill="#e4dccb" stroke="#a6713e" stroke-width="1"/>
+        <text x="260" y="256" text-anchor="middle" font-size="10" class="svg-label">南大門</text>
+        <!-- 中門 -->
+        <rect x="236" y="196" width="48" height="14" fill="#e4dccb" stroke="#a6713e" stroke-width="1"/>
+        <text x="260" y="207" text-anchor="middle" font-size="10" class="svg-label">中門</text>
+        <!-- 回廊 -->
+        <rect x="176" y="118" width="168" height="80" fill="none" stroke="#46624a" stroke-width="1.2"/>
+        <!-- 金堂 -->
+        <rect x="222" y="132" width="76" height="30" fill="#46624a" opacity="0.82"/>
+        <text x="260" y="151" text-anchor="middle" font-size="11" fill="#fff">金堂</text>
+        <!-- 講堂 -->
+        <rect x="226" y="86" width="68" height="22" fill="#e4dccb" stroke="#a6713e" stroke-width="1"/>
+        <text x="260" y="101" text-anchor="middle" font-size="10" class="svg-label">講堂</text>
+        <!-- 七重塔 -->
+        <rect x="120" y="120" width="34" height="34" fill="#a6713e"/>
+        <text x="137" y="142" text-anchor="middle" font-size="10" fill="#fff">塔</text>
+        <text x="137" y="172" text-anchor="middle" font-size="10" class="svg-sub">七重塔</text>
+        <!-- 方位 -->
+        <text x="95" y="44" text-anchor="middle" font-size="11" class="svg-sub">北 ↑</text>
+      </svg>
+      <figcaption>発掘調査で確認された伽藍配置をもとにした模式図。南北の中軸に南大門・中門・金堂・講堂を並べ、金堂と中門を回廊で結び、その西外側に七重と推定される塔が建っていた。（位置関係をもとにした模式図）</figcaption>
+    </div>
+  </figure>
+
+  <p>JR磐田駅の北口から、まっすぐ北へのびる通りがある。地元では「ジュビロ通り」とも呼ばれるが、正式な名は「天平通り」という。十五分ほど歩くと、市役所の北側に、芝生のひろがる公園に行き当たる。これが遠江国分寺跡である。通りの名が「天平」であるのは、伊達ではない。この道の先に、奈良時代――天平の世の、遠江国の中心があったからである。</p>
+
+  <h2>芝のひろがる、静かな広場</h2>
+
+  <p>はじめて訪れた人は、たいてい少し拍子抜けする。国の特別史跡と聞いて身構えてくると、目の前にあるのは、ただ広い芝の公園だからである。だが、足もとをよく見ると、ところどころに礎石が顔を出し、建物の輪郭が地面に示されている。かつてここに、堂々たる古代寺院が建っていたのだと、その痕跡が静かに語りかけてくる。</p>
+
+  <p>遠江国分寺は、今からおよそ千三百年近く前、奈良時代の天平13年（741年）にさかのぼる。この年、聖武天皇は「国分寺建立の詔」を発した。たびかさなる災いや疫病に揺れる世を、仏教の力で安んじようとした願いから、全国の国ごとに寺を建てよ、と命じたのである。正式には金光明四天王護国之寺といい、各地に七重塔を建て、経を写して納めることが求められた。その遠江国の一つが、国府の置かれたこの磐田の地に建てられた。</p>
+
+  <p>なぜ磐田だったのか。それは、ここが当時、遠江国の役所――国府の置かれた、いわば県庁所在地のような場所だったからである。古代の磐田は、遠江という国のまさに中心であった。国府があり、その鎮護のための国分寺が建つ。古代の地方都市として、このまちはたしかに栄えていたのである。</p>
+
+  <h2>七重塔が、そびえていた</h2>
+
+  <p>昭和26年（1951年）、ここで本格的な発掘調査が行われた。その結果は、研究者たちを驚かせるものだった。南北にのびる中軸線に沿って、南から南大門・中門・金堂・講堂が一直線に並び、金堂と中門は回廊で結ばれていた。そして回廊の西外側には、七重と推定される塔の跡が確認された。整然とした伽藍の配置が、地中にそっくり残っていたのである。国分寺の跡で、これほど主要な建物の配置がはっきりと確認できた例は、全国でも初めてのことだった。その翌年、遠江国分寺跡は国の特別史跡に指定された。</p>
+
+  <p>特別史跡というのは、史跡のなかでも特に重要なものに与えられる、いわば国宝級の格である。国分寺跡で特別史跡となっているのは、全国でもこの遠江国分寺跡と、常陸国分寺跡（茨城県石岡市）、上野国分寺跡（群馬県高崎市・前橋市）の三つだけだという。市街地のただなかに、これほどの遺跡が奇跡的に残った。そのことの値打ちは、芝生の広場という見た目からは、なかなか伝わりにくいかもしれない。</p>
+
+  <p>とりわけ目をひくのが、七重塔である。詔が求めたとおり、ここにも高くそびえる塔が建っていた。だが、その塔は永くは残らなかった。平安のはじめ、弘仁10年（819年）の火災で焼け落ちたと伝えられている。天をつくような塔が、遠江のまちのどこからも見えていた時代が、たしかにあった。そして、それが失われた日も。塔の礎石は今も残っており、足を運べば、その大きさから当時の塔の偉容をしのぶことができる。</p>
+
+  <h2>古代のまちの、中心として</h2>
+
+  <p>国分寺だけが、ぽつんと建っていたわけではない。少し南には国分尼寺の跡もあり、駅前の天平通りを歩けば、わずか数分でその跡に行き着く。さらに、このあたりには国府があり、役人たちが行き交い、人と物が集まっていた。古代の磐田は、寺と役所と市が一体となった、遠江国の政治と信仰の中心地だったのである。</p>
+
+  <p>磐田というまちには、もともと古い時代の記憶が幾重にも積もっている。市内には九百基を超える古墳が点在し、二万年ほど前の旧石器時代から人の暮らしがあったとされる。そうした長い時間の流れのなかで、奈良時代に国府と国分寺が置かれたことは、このまちが「遠江のはじまりの地」と呼ばれるゆえんの一つになっている。見付の宿場町としてのにぎわいも、その後の発展も、こうした古代からの土台の上に重なっていったものだといえる。</p>
+
+  <p>平安の中ごろをすぎると、国家の手あつい保護がうすれるにつれ、遠江国分寺もしだいに衰えていったと考えられている。広大な伽藍を保ちつづけることは、容易ではなかった。やがて建物は失われ、寺域は田畑となり、土塁の一部が西側にわずかに残るのみとなった。けれど、地中に眠った礎石と基壇は、千年あまりの時を越えて、近代の発掘調査によってふたたび姿をあらわした。土の下で、まちのはじまりの記憶は、ずっと守られていたのである。</p>
+
+  <h2>よみがえる、天平の姿</h2>
+
+  <p>近年、磐田市はこの史跡の再整備を進めている。平成から令和にかけて行われた発掘調査では、新たな発見もあった。主な建物の基壇――建物をのせる土台の部分――が、すべて木で装われた「木装基壇」であったことが、全国の古代寺院跡で初めて確認されたのである。これは遠江国分寺跡ならではの特徴だという。</p>
+
+  <p>令和に入ってからは、その成果をもとに金堂の基壇が復元された。かつての遺構を地下にそのまま保存したうえで、その真上に、当時と同じ大きさの木装基壇を再現している。木装基壇の金堂を復元した例は、全国の国分寺のなかでも、ここが初めてである。金堂の正面では石の階段の跡も見つかり、これも当時の姿に整えられた。芝のひろがるだけだった公園に、少しずつ、天平の時代の輪郭がよみがえりつつある。</p>
+
+  <p>遺構そのものは、壊さず、地下に守る。そのうえに、わかる範囲で、かつての姿を重ねていく。憶測でつくりかえるのではなく、調査で確かめられたことだけを、ていねいに形にする。この整備のしかたには、古いものを受け継ぎながら次へ渡していこうとする、まちの姿勢がにじんでいるように思う。</p>
+
+  <h2>次の世代へ、手渡したいもの</h2>
+
+  <p>遠江国分寺跡は、ただ古い広場なのではない。ここは、磐田というまちが遠江国の中心だったことを、今に伝える唯一無二の場所である。七重塔がそびえ、国府の役人が行き交い、まちが古代の活気にあふれていた――そのはじまりの記憶が、芝の下に静かに眠っている。</p>
+
+  <p>歴史は、目に見える建物が残っていないと、つい忘れられてしまう。けれど磐田の人々は、地中の遺構を壊さずに守り、調べ、少しずつその姿をよみがえらせてきた。残すという、その積み重ねがあったから、私たちは今もこの場所に立って、天平のまちを思い描くことができる。</p>
+
+  <p>休日に、この公園を子どもと歩くとき、ひとこと伝えてみる。「ここには昔、お寺の高い塔が建っていてね、このまちが遠江でいちばんの場所だったんだよ」と。足もとの芝が、急に違って見えてくるかもしれない。そんな小さな受け渡しから、古代磐田のはじまりの記憶は、また次の世代へと続いていく。次の世代へ残したいのは、立派な建物そのものではなく、この足もとに長い時間が眠っているのだ、という感覚なのだと思う。</p>
+
+  <h3>主な参考</h3>
+  <ul class="refs">
+    <li>磐田市公式ウェブサイト「遠江国分寺跡整備事業」「遠江国分寺跡整備工事の様子」</li>
+    <li>磐田市観光協会「遠江国分寺跡」「遠江国はじまりの地～磐田に刻まれた歴史をたどる旅」</li>
+    <li>国指定文化財等データベース／コトバンク「遠江国分寺跡」（日本歴史地名大系・日本大百科全書）</li>
+  </ul>
+
+  <h3>あわせて読みたい</h3>
+  <div class="related">
+    <a href="https://iwata-monogatari.pages.dev/kyu-mitsuke-gakko">旧見付学校と、学びのまち磐田</a>
+    <a href="https://iwata-monogatari.pages.dev/mitsuke-shuku.html">東海道・見付宿の面影</a>
+    <a href="https://iwata-monogatari.pages.dev/chizu.html">磐田タイムトラベル地図</a>
+  </div>
+
+  <div class="pager">
+    <a href="https://iwata-monogatari.pages.dev/">← トップへ戻る</a>
+    <a href="https://iwata-monogatari.pages.dev/kyu-mitsuke-gakko">関連記事 ── 旧見付学校と、学びのまち磐田 →</a>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="foot-inner">
+    <span class="mincho">磐田物語。</span>
+    <p>静岡県磐田市の歴史と文化を、一市民の視点で書き留めていく記録の場。記載内容は個人の調査・覚え書きであり、正確性の向上に努めながら綴っています。</p>
+    <h4>運営者・大石浩之のほかの活動</h4>
+    <ul class="foot-links">
+      <li><a href="https://www.fujigaoka-service.co.jp/">富士ヶ丘サービス（不動産）磐田・袋井の不動産売却支援</a></li>
+      <li><a href="https://www.fujigaoka-service.info/">富士ヶ丘サービス（介護）高齢者向け住宅・親の家の相談</a></li>
+      <li><a href="https://hiroyukio0122.wixsite.com/for202904">磐田市政、ちょっと一言。市政・地域への提言</a></li>
+      <li><a href="https://note.com/fujigaoka_oishi">note（大石浩之）日々の発信・エッセイ</a></li>
+    </ul>
+    <h4>SNS</h4>
+    <ul class="foot-links">
+      <li><a href="https://www.facebook.com/oishi.hiroyuki.5">Facebook</a></li>
+      <li><a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/">Instagram</a></li>
+    </ul>
+    <div class="copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+
+</body>
+</html>
