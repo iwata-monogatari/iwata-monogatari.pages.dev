@@ -141,6 +141,21 @@
     padding:30px 26px;box-shadow:var(--shadow);transition:.22s;
   }
   .card:hover{transform:translateY(-3px);border-color:var(--brown);}
+  /* 遠州弁セクション */
+  .enshu{background:var(--paper-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .enshu .inner{max-width:1040px;margin:0 auto;padding:64px 24px;}
+  .enshu .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  .ecard{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:28px 26px;
+    box-shadow:var(--shadow);transition:.2s;position:relative;display:block;text-decoration:none;color:inherit;}
+  .ecard.live:hover{transform:translateY(-3px);border-color:var(--brown);}
+  .ecard.soon{opacity:.78;cursor:default;}
+  .ecard .ic{font-size:26px;display:block;margin-bottom:12px;}
+  .ecard h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;margin:0 0 10px;color:var(--ink);}
+  .ecard p{margin:0;font-size:14.5px;color:var(--ink-soft);line-height:1.8;}
+  .ecard .badge{position:absolute;top:18px;right:20px;font-size:11px;font-weight:700;border-radius:999px;padding:4px 12px;letter-spacing:.04em;}
+  .ecard .badge.now{background:var(--brown);color:#fff;}
+  .ecard .badge.next{background:var(--paper-deep);color:var(--ink-soft);border:1px solid var(--line);}
+  .ecard .go{display:inline-block;margin-top:14px;font-size:14px;font-weight:700;color:var(--brown-deep);}
   .card .num{
     font-family:"Shippori Mincho",serif;font-size:15px;color:var(--brown);
     font-weight:700;letter-spacing:.1em;
@@ -194,7 +209,7 @@
       <a href="/hajimeni.html">はじめに</a>
       <a href="#about">このサイトについて</a>
       <a href="#themes">読みもの</a>
-      <a href="/enshu-ben.html">遠州弁辞典</a>
+      <a href="#enshu">遠州弁</a>
     </nav>
   </div>
 </header>
@@ -241,6 +256,47 @@
       <h3>祭りと暮らしの記憶</h3>
       <p>見付天神裸祭をはじめ、まちに受け継がれてきた行事や、人々の日々の暮らしの移ろいを書き留める。<span style="color:var(--brown-deep);font-weight:700;">　記事を読む →</span></p>
     </a>
+  </div>
+</section>
+
+<section class="enshu" id="enshu">
+  <div class="inner">
+    <div class="sec-head">
+      <p class="eyebrow">ENSHU BEN</p>
+      <h2>遠州弁ひろば</h2>
+    </div>
+    <div class="grid">
+
+      <a class="ecard live" href="/enshu-ben.html">
+        <span class="badge now">公開中</span>
+        <span class="ic">📖</span>
+        <h3>遠州弁辞典</h3>
+        <p>磐田・中遠の方言を、意味と用例つきで集めた辞典。語尾や否定・推量など文法の特徴もまとめてある。</p>
+        <span class="go">辞典をひらく →</span>
+      </a>
+
+      <div class="ecard soon">
+        <span class="badge next">近日公開</span>
+        <span class="ic">🔄</span>
+        <h3>標準語⇄遠州弁 変換</h3>
+        <p>標準語を入れると遠州弁に、遠州弁を入れると標準語に。やさしい遠州弁から磐田っぽい言い回しまで、変換できるようにする予定。</p>
+      </div>
+
+      <div class="ecard soon">
+        <span class="badge next">近日公開</span>
+        <span class="ic">🗓️</span>
+        <h3>今日の遠州弁</h3>
+        <p>日替わりで、ひとつの遠州弁を紹介。意味と例文、使う時の空気感まで添えて、毎日ひとつ覚えられるようにする予定。</p>
+      </div>
+
+      <div class="ecard soon">
+        <span class="badge next">近日公開</span>
+        <span class="ic">✍️</span>
+        <h3>みんなで投稿</h3>
+        <p>「うちのおばあちゃんはこう言っていた」「この地域ではこう言う」── みんなで言葉を持ち寄り、消えゆく遠州弁を一緒に残していく仕組みをつくる予定。</p>
+      </div>
+
+    </div>
   </div>
 </section>
 
