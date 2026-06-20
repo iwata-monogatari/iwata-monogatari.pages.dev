@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>東海道・見付宿の面影 ｜ 磐田物語</title>
+<meta name="description" content="東海道五十三次の28番目の宿場、見付宿。中世から栄えた東海道屈指の宿場町の賑わいと、今に残る面影を、旧東海道をたどりながら描く。">
+<meta property="og:title" content="東海道・見付宿の面影 ｜ 磐田物語">
+<meta property="og:description" content="本陣2軒、旅籠56軒。東海道屈指の宿場町だった見付宿の賑わいと、今に残る面影をたどる。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f7f2e9;--paper-deep:#efe6d4;--ink:#3a312a;--ink-soft:#6b5d50;
+    --brown:#a6713e;--brown-deep:#85562c;--pine:#46624a;--line:#e0d4bd;
+    --card:#fffdf8;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    line-height:1.95;font-size:17px;letter-spacing:.02em;
+    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(166,113,62,.035) 0, transparent 38%),
+      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);}
+  a{color:var(--brown-deep);text-underline-offset:3px;}
+
+  header.site{background:var(--card);border-bottom:1px solid var(--line);}
+  .bar{max-width:1040px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+  .brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;}
+  .brand .logo{font-family:"Shippori Mincho",serif;font-weight:800;font-size:26px;color:var(--ink);letter-spacing:.06em;}
+  .brand .logo .dot{color:var(--brown);}
+  .brand .tag{font-size:12.5px;color:var(--ink-soft);letter-spacing:.08em;}
+  nav.menu{display:flex;gap:26px;}
+  nav.menu a{text-decoration:none;color:var(--ink-soft);font-size:14.5px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
+  nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
+
+  .crumbs{max-width:760px;margin:0 auto;padding:24px 24px 0;font-size:13px;color:var(--ink-soft);}
+  .crumbs a{text-decoration:none;}
+  .crumbs a:hover{text-decoration:underline;}
+
+  .article-head{max-width:760px;margin:0 auto;padding:28px 24px 12px;}
+  .article-head .cat{font-size:13px;letter-spacing:.18em;color:var(--pine);font-weight:700;margin:0 0 16px;}
+  .article-head .cat .no{color:var(--brown);}
+  .article-head h1{font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(28px,5vw,44px);line-height:1.45;margin:0 0 20px;color:var(--ink);letter-spacing:.03em;}
+  .article-head .sub{font-size:16.5px;color:var(--ink-soft);margin:0;line-height:1.95;}
+
+  .cover{max-width:760px;margin:28px auto 0;padding:0 24px;}
+  .cover svg{width:100%;height:auto;display:block;border-radius:4px;
+    border:1px solid var(--line);box-shadow:var(--shadow);background:var(--card);}
+  .cover figcaption{font-size:13px;color:var(--ink-soft);margin-top:10px;text-align:center;}
+
+  .article{max-width:760px;margin:0 auto;padding:24px 24px 56px;}
+  .article h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:23px;
+    color:var(--ink);letter-spacing:.03em;margin:52px 0 20px;
+    padding-left:16px;border-left:4px solid var(--brown);line-height:1.5;}
+  .article p{margin:0 0 22px;color:var(--ink);}
+  .article p.lead{font-size:18.5px;line-height:2.1;}
+
+  figure.fig{margin:34px 0;padding:0;}
+  figure.fig svg{width:100%;height:auto;display:block;border-radius:4px;
+    border:1px solid var(--line);box-shadow:var(--shadow);background:var(--card);}
+  figure.fig figcaption{font-size:13px;color:var(--ink-soft);margin-top:10px;text-align:center;line-height:1.7;}
+
+  .pull{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--pine);
+    border-radius:3px;padding:24px 30px;margin:32px 0;box-shadow:var(--shadow);}
+  .pull p{margin:0;font-family:"Shippori Mincho",serif;font-size:18.5px;color:var(--ink);line-height:2;}
+
+  .memo{background:var(--paper-deep);border-radius:3px;padding:26px 30px;margin:34px 0;}
+  .memo h3{font-family:"Shippori Mincho",serif;font-size:17px;color:var(--ink);margin:0 0 14px;letter-spacing:.04em;}
+  .memo dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;}
+  .memo dt{font-weight:700;color:var(--brown-deep);font-size:14.5px;white-space:nowrap;}
+  .memo dd{margin:0;font-size:14.5px;color:var(--ink);}
+
+  .sources{max-width:760px;margin:0 auto;padding:0 24px 8px;}
+  .sources h3{font-size:14px;color:var(--ink-soft);font-weight:700;letter-spacing:.06em;margin:0 0 10px;}
+  .sources ul{margin:0;padding-left:1.2em;}
+  .sources li{font-size:13px;color:var(--ink-soft);line-height:1.8;margin-bottom:4px;}
+
+  .article-nav{max-width:760px;margin:0 auto 56px;padding:0 24px;display:flex;flex-wrap:wrap;gap:14px;}
+  .article-nav a{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
+    padding:13px 26px;border-radius:2px;transition:.2s;letter-spacing:.04em;}
+  .article-nav a.primary{background:var(--brown);color:#fff;}
+  .article-nav a.primary:hover{background:var(--brown-deep);}
+  .article-nav a.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
+  .article-nav a.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
+
+  footer.site{background:var(--ink);color:#e9e0d2;}
+  footer.site .inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  footer .f-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  footer .f-brand .dot{color:var(--brown);}
+  footer .f-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
+  footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
+
+  .s-paper{fill:#fffdf8;} .s-line{stroke:#d8c8ab;} .s-ink{fill:#3a312a;}
+  .s-brown{fill:#a6713e;} .s-pine{fill:#46624a;} .s-soft{fill:#6b5d50;}
+  .s-water{fill:#cdd9d2;} .s-road{stroke:#a6713e;}
+
+  @media(max-width:760px){
+    nav.menu{display:none;}
+    .memo dl{grid-template-columns:1fr;gap:2px 0;}
+    .memo dt{margin-top:8px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/">
+      <span class="logo">磐田物語<span class="dot">。</span></span>
+      <span class="tag">遠江・見付のまちの歴史と文化</span>
+    </a>
+    <nav class="menu">
+      <a href="/hajimeni.html">はじめに</a>
+      <a href="/#themes">書いていくこと</a>
+      <a href="/#latest">近況</a>
+    </nav>
+  </div>
+</header>
+
+<div class="crumbs"><a href="/">磐田物語</a> ／ 東海道・見付宿の面影</div>
+
+<div class="article-head">
+  <p class="cat"><span class="no">其の二</span> ｜ 街道と宿場</p>
+  <h1>東海道・見付宿の面影<br>── 旅人が行き交ったまち</h1>
+  <p class="sub">江戸から京へ続く東海道。その28番目の宿場が、ここ見付宿である。大名行列が通り、旅人が宿を取り、荷を運ぶ人馬が行き交った。本陣2軒、旅籠56軒を数えた東海道屈指の宿場町の賑わいと、今もまちに残るその面影をたどってみたい。</p>
+</div>
+
+<figure class="cover">
+  <!-- 表紙：東海道五十三次のなかの見付宿 -->
+  <svg viewBox="0 0 760 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="東海道五十三次における見付宿の位置">
+    <rect width="760" height="240" class="s-paper"/>
+    <text x="380" y="42" text-anchor="middle" class="s-ink mincho" style="font-size:18px;font-weight:700;">江戸から数えて二十八番目の宿 ── 見付宿</text>
+    <!-- 街道の線 -->
+    <line x1="60" y1="130" x2="700" y2="130" class="s-road" stroke-width="3"/>
+    <!-- 江戸 -->
+    <circle cx="60" cy="130" r="6" class="s-ink"/>
+    <text x="60" y="160" text-anchor="middle" class="s-ink" style="font-size:13px;">江戸・日本橋</text>
+    <!-- 京 -->
+    <circle cx="700" cy="130" r="6" class="s-ink"/>
+    <text x="700" y="160" text-anchor="middle" class="s-ink" style="font-size:13px;">京・三条大橋</text>
+    <!-- 宿の点 -->
+    <g class="s-soft">
+      <circle cx="160" cy="130" r="2.5"/><circle cx="220" cy="130" r="2.5"/>
+      <circle cx="290" cy="130" r="2.5"/><circle cx="350" cy="130" r="2.5"/>
+      <circle cx="470" cy="130" r="2.5"/><circle cx="540" cy="130" r="2.5"/>
+      <circle cx="610" cy="130" r="2.5"/>
+    </g>
+    <!-- 見付宿（強調） -->
+    <circle cx="410" cy="130" r="9" class="s-brown"/>
+    <line x1="410" y1="130" x2="410" y2="92" class="s-line" stroke-width="1.5"/>
+    <text x="410" y="84" text-anchor="middle" class="s-brown mincho" style="font-size:15px;font-weight:700;">見付宿</text>
+    <text x="410" y="180" text-anchor="middle" class="s-soft" style="font-size:12px;">江戸から約60里17町</text>
+    <!-- 隣の宿 -->
+    <text x="350" y="205" text-anchor="middle" class="s-soft" style="font-size:11.5px;">← 袋井宿</text>
+    <text x="470" y="205" text-anchor="middle" class="s-soft" style="font-size:11.5px;">浜松宿（天竜川を越えて）→</text>
+  </svg>
+  <figcaption>見付宿は、東海道五十三次の28番目の宿場。西の袋井宿、東の浜松宿とのあいだに位置し、天竜川の渡しを控えていた。</figcaption>
+</figure>
+
+<article class="article">
+
+  <p class="lead">磐田の中心、見付のまちを歩くと、寺の多さに気づく。狭い範囲に、いくつもの古い寺が肩を寄せ合うように建っている。これは偶然ではない。かつてここが東海道の宿場町であり、行き交う旅人や大名行列を受け入れてきた名残なのである。</p>
+
+  <h2>東海道二十八番目の宿</h2>
+
+  <p>江戸時代、徳川幕府は江戸の日本橋から京の三条大橋までを結ぶ東海道を整備し、その道筋に五十三の宿場を置いた。いわゆる東海道五十三次である。宿場には、旅人を泊める旅籠、大名や公家が休泊する本陣・脇本陣、荷や人を次の宿へ運ぶ人馬を備えた問屋場などが設けられ、街道交通の拠点となった。</p>
+
+  <p>見付宿は、その28番目。江戸からおよそ60里17町、西の袋井宿と東の浜松宿のあいだに位置していた。ただの通過点ではない。見付宿は、東海道のなかでも屈指の規模を誇る宿場であった。記録によれば、家数はおよそ1029軒、本陣2軒、脇本陣1軒、旅籠は56軒を数えたという。これだけの宿が並んでいたということは、それだけ多くの旅人がこの地に足を止めたということである。</p>
+
+  <h2>「見付」という名の由来</h2>
+
+  <p>見付という地名の由来には、いくつかの説がある。ひとつは「水付き」。古代、このあたりまで海水が入り込み、今之浦と呼ばれる入江が広がっていた。水に接する土地であったことから「みつき」、やがて「見付」になったという説である。</p>
+
+  <p>もうひとつは、よく語られる説。京から東へ下ってくる旅人が、この地に至って初めて富士山を「見付ける」ことができた——だから見付なのだ、という。どちらが本当かはわからない。けれど、海辺の記憶を伝える説も、富士を望む旅情を伝える説も、どちらもこの土地の風景を語っていて味わい深い。</p>
+
+  <div class="pull">
+    <p>見付は、宿場町になる前から栄えていた。古代には遠江国府が置かれ、鎌倉期には国衙と守護所が構えられた。つまり見付は、千年以上にわたってこの地域の中心であり続けた、由緒あるまちなのである。</p>
+  </div>
+
+  <figure class="fig">
+    <!-- 宿場の構成図 -->
+    <svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="見付宿の街道沿いの施設の様子">
+      <rect width="760" height="360" class="s-paper"/>
+      <text x="380" y="40" text-anchor="middle" class="s-ink mincho" style="font-size:18px;font-weight:700;">東西約1キロに広がった宿場町</text>
+      <text x="380" y="62" text-anchor="middle" class="s-soft" style="font-size:12.5px;">※ 宿場の構成を示した概念図（実際の配置とは異なる）</text>
+
+      <!-- 街道 -->
+      <line x1="70" y1="200" x2="690" y2="200" class="s-road" stroke-width="6"/>
+      <text x="70" y="232" class="s-soft" style="font-size:12px;">西木戸（姫街道の分岐）</text>
+      <text x="690" y="232" text-anchor="end" class="s-soft" style="font-size:12px;">東木戸（天竜川の渡しへ）</text>
+
+      <!-- 本陣 -->
+      <g transform="translate(330,120)">
+        <polygon points="50,0 90,28 10,28" class="s-brown"/>
+        <rect x="20" y="28" width="60" height="40" class="s-brown" opacity="0.85"/>
+        <text x="50" y="52" text-anchor="middle" fill="#fff" style="font-size:13px;font-weight:700;">本陣</text>
+      </g>
+      <text x="380" y="110" text-anchor="middle" class="s-soft" style="font-size:11.5px;">大名・公家の休泊（2軒）</text>
+
+      <!-- 旅籠（複数） -->
+      <g class="s-pine">
+        <rect x="150" y="158" width="26" height="30"/>
+        <rect x="185" y="158" width="26" height="30"/>
+        <rect x="540" y="158" width="26" height="30"/>
+        <rect x="575" y="158" width="26" height="30"/>
+        <rect x="610" y="158" width="26" height="30"/>
+      </g>
+      <text x="185" y="150" text-anchor="middle" class="s-soft" style="font-size:11.5px;">旅籠（56軒）</text>
+      <text x="588" y="150" text-anchor="middle" class="s-soft" style="font-size:11.5px;">旅籠</text>
+
+      <!-- 問屋場 -->
+      <rect x="430" y="158" width="44" height="30" fill="none" class="s-line" stroke-width="1.5"/>
+      <text x="452" y="178" text-anchor="middle" class="s-ink" style="font-size:11px;">問屋場</text>
+      <text x="452" y="150" text-anchor="middle" class="s-soft" style="font-size:11px;">人馬の継立</text>
+
+      <!-- 旅人の点 -->
+      <g class="s-ink">
+        <circle cx="250" cy="200" r="3"/><circle cx="290" cy="206" r="3"/>
+        <circle cx="500" cy="200" r="3"/><circle cx="640" cy="205" r="3"/>
+      </g>
+
+      <text x="380" y="320" text-anchor="middle" class="s-soft" style="font-size:12px;">家数 約1029軒・本陣2・脇本陣1・旅籠56（江戸後期）</text>
+    </svg>
+    <figcaption>宿場には、大名が休泊する本陣、旅人が泊まる旅籠、荷を運ぶ人馬を扱う問屋場が並んだ。<br>見付宿は東西約1キロにわたって町並みが続く、大きな宿場だった。</figcaption>
+  </figure>
+
+  <h2>天竜川の渡しと、姫街道の分かれ道</h2>
+
+  <p>見付宿が栄えた理由のひとつに、その立地がある。宿を東に出ると、ほどなく天竜川にさしかかる。この川は大井川ほどの難所ではなかったが、橋は架けられておらず、主に渡し舟で越えた。増水して川止めになれば、旅人はこの宿に足止めされる。そのとき、宿場は足止めされた人々で大いに賑わったという。</p>
+
+  <p>もうひとつ、見付は街道の分岐点でもあった。東海道の本道のほかに、浜名湖の北をまわって本坂峠を越える脇往還——のちに姫街道と呼ばれる道——が、この見付で分かれていた。本道の今切の渡し（船）を嫌う旅人や、関所の取り調べを避けたい女性たちがこちらを選んだことから、姫街道の名がついたとも伝わる。人と道が交わる結節点であったことが、宿場の活気を支えていた。</p>
+
+  <h2>今に残る、宿場の面影</h2>
+
+  <p>正直に言えば、見付のまちを歩いても、宿場町らしい古い町並みがそのまま残っているわけではない。建物の多くは新しく、街灯が行灯風にしつらえられてはいるものの、江戸の面影を色濃くとどめている、とは言いがたい。けれど、目を凝らせば、確かに痕跡は残っている。</p>
+
+  <p>たとえば旧見付学校。明治8年（1875年）に建てられた、現存する日本最古級の木造洋風小学校で、擬洋風建築の堂々たる校舎が今も残る。宿場の中心にあったこの場所が、近代には教育の象徴となった。その隣には遠江国の総社・淡海國玉神社が静かに鎮座する。また、旧見付宿の脇本陣であった大三河屋の門は、移築されて今も伝わっている。寺の多さも、大名行列の宿泊を担った名残である。地名や石碑、寺社の佇まいの一つひとつが、かつての宿場のかたちを今にとどめている。</p>
+
+  <div class="memo">
+    <h3>見付宿をたどる手がかり</h3>
+    <dl>
+      <dt>旧見付学校</dt><dd>明治8年建築の現存最古級の木造洋風小学校。擬洋風の校舎が宿場の中心に残る。</dd>
+      <dt>淡海國玉神社</dt><dd>遠江国の総社。旧見付学校に隣接して鎮座する。</dd>
+      <dt>大三河屋門</dt><dd>旧見付宿の脇本陣の門。移築され今に伝わる。</dd>
+      <dt>阿多古山一里塚</dt><dd>街道沿いの一里塚の跡。旅の道のりの目印だった。</dd>
+      <dt>姫街道分岐（西木戸跡）</dt><dd>本坂通（姫街道）が東海道から分かれた地点。</dd>
+    </dl>
+  </div>
+
+  <h2>道は、まちの記憶を運ぶ</h2>
+
+  <p>かつて見付宿には、東へ西へ向かう旅人の足音があり、大名行列の華やかさがあり、川止めにあった人々のざわめきがあり、旅籠の灯りと、人馬の声があった。そのすべては、もう聞くことができない。宿場という制度そのものが、明治の世とともに役割を終えたからである。</p>
+
+  <p>けれど、まちのかたちは、道に沿って残る。見付の中心を貫く一本の道は、いまも旧東海道の道筋を受け継いでいる。その道を歩けば、足の裏に、かつてここを行き交った無数の旅人の道のりが、かすかに伝わってくる気がする。道は、人と物を運ぶだけではない。まちの記憶もまた、道に沿って受け継がれていくのである。</p>
+
+  <p>次は、このまちに今も受け継がれる祭り——見付天神裸祭をはじめとする、人々の暮らしの記憶をたどってみたい。</p>
+
+</article>
+
+<div class="sources">
+  <h3>主な参考</h3>
+  <ul>
+    <li>Wikipedia「見附宿」「東海道五十三次」</li>
+    <li>磐田市観光協会・磐田市公式ウェブサイト</li>
+    <li>「東海道見付宿散策」（遠州史跡めぐり）ほか旧東海道紀行各種</li>
+  </ul>
+</div>
+
+<div class="article-nav">
+  <a class="primary" href="/">トップへ戻る</a>
+  <a class="ghost" href="/totoumi-kokufu.html">前の記事 ── 遠江国府と古代の磐田</a>
+</div>
+
+<footer class="site">
+  <div class="inner">
+    <div class="f-brand">磐田物語<span class="dot">。</span></div>
+    <div class="f-note">静岡県磐田市の歴史と文化を、一市民の視点で書き留めていく記録の場。記載内容は個人の調査・覚え書きであり、正確性の向上に努めながら綴っています。</div>
+    <div class="copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+
+</body>
+</html>
