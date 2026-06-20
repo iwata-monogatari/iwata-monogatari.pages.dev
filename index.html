@@ -156,6 +156,18 @@
   .ecard .badge.now{background:var(--brown);color:#fff;}
   .ecard .badge.next{background:var(--paper-deep);color:var(--ink-soft);border:1px solid var(--line);}
   .ecard .go{display:inline-block;margin-top:14px;font-size:14px;font-weight:700;color:var(--brown-deep);}
+  /* 地図バナー */
+  .mapbanner{max-width:1040px;margin:0 auto;padding:8px 24px 56px;}
+  .mapbanner a{display:flex;align-items:center;gap:24px;text-decoration:none;color:inherit;
+    background:var(--ink);border-radius:8px;padding:30px 34px;box-shadow:var(--shadow);
+    transition:.2s;flex-wrap:wrap;position:relative;overflow:hidden;}
+  .mapbanner a:hover{transform:translateY(-2px);}
+  .mapbanner .mb-ic{font-size:40px;line-height:1;}
+  .mapbanner .mb-txt{flex:1;min-width:240px;}
+  .mapbanner .mb-eyebrow{font-size:12px;letter-spacing:.18em;color:#c9a06f;font-weight:700;margin:0 0 6px;}
+  .mapbanner h3{font-family:"Shippori Mincho",serif;font-size:24px;font-weight:700;color:#f3ece0;margin:0 0 8px;letter-spacing:.04em;}
+  .mapbanner p{font-size:14px;color:#bcae9b;margin:0;line-height:1.8;}
+  .mapbanner .mb-go{color:#e7c9a3;font-weight:700;font-size:15px;white-space:nowrap;}
   .card .num{
     font-family:"Shippori Mincho",serif;font-size:15px;color:var(--brown);
     font-weight:700;letter-spacing:.1em;
@@ -207,8 +219,8 @@
     </a>
     <nav class="menu">
       <a href="/hajimeni.html">はじめに</a>
-      <a href="#about">このサイトについて</a>
       <a href="#themes">読みもの</a>
+      <a href="/chizu.html">地図で見る</a>
       <a href="#enshu">遠州弁</a>
     </nav>
   </div>
@@ -263,6 +275,18 @@
     </a>
   </div>
 </section>
+
+<div class="mapbanner">
+  <a href="/chizu.html">
+    <span class="mb-ic">🗺️</span>
+    <div class="mb-txt">
+      <p class="mb-eyebrow">TIME TRAVEL MAP</p>
+      <h3>磐田タイムトラベル地図</h3>
+      <p>旧見付学校、府八幡宮、遠江国分寺跡、見付宿、古墳――足もとに眠る歴史スポットを地図でたどる。いつもの道が、少し違って見える。</p>
+    </div>
+    <span class="mb-go">地図をひらく →</span>
+  </a>
+</div>
 
 <section class="enshu" id="enshu">
   <div class="inner">
