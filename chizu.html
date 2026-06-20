@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>磐田タイムトラベル地図 ｜ 磐田物語</title>
-<meta name="description" content="磐田のまちを地図で旅する。旧見付学校、府八幡宮、遠江国分寺跡、見付宿、古墳――今いる場所の足もとに眠る歴史スポットを、地図とカードでたどる。いつもの道が、少し違って見える。">
+<meta name="description" content="磐田のまちを地図で旅する。旧見付学校、府八幡宮、遠江国分寺跡、見付宿、古墳――今いる場所の足もとに眠る歴史スポットを、実際の位置関係にもとづいた地図とカードでたどる。">
 <meta property="og:title" content="磐田タイムトラベル地図 ｜ 磐田物語">
 <meta property="og:description" content="磐田の歴史スポットを地図でたどる。いつもの道が、少し違って見える。">
 <meta property="og:type" content="website">
@@ -17,7 +17,7 @@
     --paper:#f7f2e9;--paper-deep:#efe6d4;--ink:#3a312a;--ink-soft:#6b5d50;
     --brown:#a6713e;--brown-deep:#85562c;--pine:#46624a;--line:#e0d4bd;
     --card:#fffdf8;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
-    --map-bg:#eae4d2;--map-green:#d9e0cc;--map-road:#cdbfa6;--map-river:#c4d4d6;
+    --map-bg:#e9e3d2;--map-green:#d4ddc4;--map-road:#cdbfa6;--map-river:#bcd0d2;
   }
   *{box-sizing:border-box;}
   body{margin:0;background:var(--paper);color:var(--ink);
@@ -45,35 +45,32 @@
   .hero .eyebrow{font-size:13px;letter-spacing:.22em;color:var(--pine);font-weight:700;margin:0 0 14px;}
   .hero h1{font-family:"Shippori Mincho",serif;font-weight:800;
     font-size:clamp(28px,5vw,44px);line-height:1.4;margin:0 0 16px;color:var(--ink);letter-spacing:.04em;}
-  .hero h1 .accent{color:var(--brown-deep);background:linear-gradient(transparent 62%, rgba(166,113,62,.18) 62%);}
   .hero p{font-size:16px;color:var(--ink-soft);margin:0;line-height:1.95;max-width:680px;}
 
   .wrap{max-width:1000px;margin:0 auto;padding:14px 24px 8px;}
 
-  /* フィルタ */
   .filters{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px;}
   .chip{padding:7px 16px;font-size:13.5px;font-weight:500;border:1.5px solid var(--line);
     border-radius:999px;background:var(--card);color:var(--ink-soft);cursor:pointer;transition:.18s;font-family:inherit;}
   .chip:hover{border-color:var(--brown);color:var(--brown-deep);}
   .chip.active{background:var(--brown);color:#fff;border-color:var(--brown);}
 
-  /* 地図 */
-  .maparea{position:relative;width:100%;background:var(--card);border:1px solid var(--line);
+  .maparea{position:relative;width:100%;background:var(--map-bg);border:1px solid var(--line);
     border-radius:8px;overflow:hidden;box-shadow:var(--shadow);}
   .maparea svg{display:block;width:100%;height:auto;}
-  .pin{cursor:pointer;transition:transform .15s;transform-origin:center bottom;}
   #map > *{pointer-events:none;}
   #pins, #pins *{pointer-events:auto;}
-  .pin:hover{transform:scale(1.15);}
-  .pin.dim{opacity:.22;}
+  .pin{cursor:pointer;transition:transform .15s;transform-origin:center bottom;}
+  .pin:hover{transform:scale(1.12);}
+  .pin.dim{opacity:.2;}
   .pin .dot{fill:var(--brown);stroke:#fff;stroke-width:2;}
   .pin .ring{fill:none;stroke:var(--brown);stroke-width:1.5;opacity:.4;}
   .pin.sel .dot{fill:var(--pine);}
-  .pin text{font-family:"Zen Kaku Gothic New",sans-serif;font-size:11px;fill:var(--ink);font-weight:700;paint-order:stroke;stroke:#fffdf8;stroke-width:3px;}
+  .pin.sel .ring{stroke:var(--pine);opacity:.7;}
+  .pin text{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;fill:var(--ink);font-weight:700;paint-order:stroke;stroke:#f3ece0;stroke-width:3.5px;}
 
   .legend{font-size:12px;color:var(--ink-soft);margin:8px 2px 0;}
 
-  /* カード */
   .cardwrap{max-width:1000px;margin:0 auto;padding:18px 24px 10px;}
   .spotcard{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--brown);
     border-radius:6px;padding:24px 28px;box-shadow:var(--shadow);display:none;}
@@ -91,7 +88,6 @@
   .placeholder{text-align:center;color:var(--ink-soft);padding:34px 20px;font-size:15px;}
   .placeholder .mincho{display:block;font-size:18px;color:var(--ink);margin-bottom:8px;}
 
-  /* スポット一覧 */
   .listsec{max-width:1000px;margin:0 auto;padding:20px 24px 8px;}
   .listsec h3{font-family:"Shippori Mincho",serif;font-size:18px;color:var(--ink);margin:0 0 14px;letter-spacing:.04em;}
   .list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
@@ -113,7 +109,7 @@
 
   @media(max-width:760px){
     nav.menu{display:none;}
-    .pin text{font-size:9px;}
+    .pin text{font-size:10px;}
   }
 </style>
 </head>
@@ -144,35 +140,15 @@
   <div class="filters" id="filters"></div>
 
   <div class="maparea">
-    <svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg" id="map" role="img" aria-label="磐田市の歴史スポット絵地図">
-      <!-- 背景 -->
-      <rect width="1000" height="600" fill="#eae4d2"/>
-      <!-- 緑地（自然・社叢など） -->
-      <ellipse cx="300" cy="180" rx="160" ry="110" fill="#d9e0cc" opacity="0.7"/>
-      <ellipse cx="720" cy="200" rx="120" ry="90" fill="#d9e0cc" opacity="0.6"/>
-      <ellipse cx="500" cy="470" rx="200" ry="100" fill="#d9e0cc" opacity="0.5"/>
-      <!-- 天竜川（西の縁） -->
-      <path d="M40,0 C70,150 30,300 80,460 C100,540 60,580 90,600 L0,600 L0,0 Z" fill="#c4d4d6" opacity="0.8"/>
-      <text x="46" y="320" fill="#7d9396" class="mincho" style="font-size:14px;" transform="rotate(-78 46 320)">天竜川</text>
-      <!-- 旧東海道（東西の街道） -->
-      <path d="M120,300 C300,270 520,250 760,235 C850,229 920,225 980,222" fill="none" stroke="#cdbfa6" stroke-width="9" stroke-linecap="round"/>
-      <path d="M120,300 C300,270 520,250 760,235 C850,229 920,225 980,222" fill="none" stroke="#bfa97e" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
-      <text x="600" y="232" fill="#85562c" class="mincho" style="font-size:13px;font-weight:700;" transform="rotate(-3 600 232)">旧 東 海 道（見付宿）</text>
-      <!-- JR・磐田駅の示唆（南） -->
-      <line x1="120" y1="540" x2="980" y2="520" stroke="#b7a890" stroke-width="3" stroke-dasharray="10 6"/>
-      <circle cx="470" cy="531" r="7" fill="#fffdf8" stroke="#a6713e" stroke-width="3"/>
-      <text x="470" y="558" text-anchor="middle" fill="#6b5d50" style="font-size:12px;font-weight:700;">JR磐田駅</text>
-      <text x="900" y="512" fill="#9c8f7c" style="font-size:11px;">東海道本線</text>
-
-      <!-- エリア見出し -->
-      <text x="640" y="150" text-anchor="middle" fill="#a99b84" class="mincho" style="font-size:15px;letter-spacing:.2em;">― 見付エリア ―</text>
-      <text x="300" y="120" text-anchor="middle" fill="#a99b84" class="mincho" style="font-size:15px;letter-spacing:.2em;">― 国府・国分寺エリア ―</text>
-
-      <!-- ピンはJSで描画 -->
+    <svg viewBox="0 0 1000 720" xmlns="http://www.w3.org/2000/svg" id="map" role="img" aria-label="磐田市の歴史スポット地図">
+      <rect width="1000" height="720" fill="#e9e3d2"/>
+      <!-- 地物（座標投影に合わせてJSで描画） -->
+      <g id="geo"></g>
+      <!-- ピン -->
       <g id="pins"></g>
     </svg>
   </div>
-  <p class="legend">※ この地図は位置関係をわかりやすくした「絵地図」です。実際の距離・方角とは異なります。ピンをタップすると解説が出ます。</p>
+  <p class="legend">※ 実際の位置関係をもとに配置しています（縮尺は簡略化）。正確な道順は地図アプリ等もあわせてご確認ください。ピンをタップすると解説が出ます。</p>
 </div>
 
 <div class="cardwrap">
@@ -190,7 +166,7 @@
 
 <div class="note">
   <div class="inner">
-    この地図は、磐田市の歴史スポットを、位置関係がわかりやすいように配置した絵地図である。実際の距離や方角は正確ではないので、現地を訪ねる際は、磐田市や観光協会の正式な地図・文化財マップもあわせて確認してほしい。史実は磐田市・観光協会等の公開情報をもとにしているが、誤りや古い情報があれば少しずつ直していきたい。スポットは順次増やしていく予定である。
+    この地図は、各スポットの実際の位置（緯度・経度）をもとに配置している。ただし表示の都合で縮尺は簡略化しており、細かな道筋までは正確ではない。現地を訪ねる際は、磐田市や観光協会の文化財マップ、地図アプリもあわせて確認してほしい。史実・所在は磐田市・観光協会等の公開情報をもとにしているが、誤りがあれば少しずつ直していきたい。スポットは順次増やしていく予定である。
   </div>
 </div>
 
@@ -203,88 +179,126 @@
 </footer>
 
 <script>
-/* ===== スポットデータ ===== */
-// cat: 古代/街道・宿場/神社仏閣/学校・教育/古墳・遺跡
-// x,y: 絵地図上の座標(0-1000, 0-600)
-// link: 関連する読みもの（あれば）
+/* =========================================================
+   スポットデータ（実際の緯度経度つき）
+   lat/lng は各史跡のおおよその座標。位置関係を正確に投影する。
+   ========================================================= */
 const SPOTS = [
-  {
-    id:"gakko", name:"旧見付学校", cat:"学校・教育", x:690, y:300,
+  { id:"gakko", name:"旧見付学校", cat:"学校・教育", lat:34.7281, lng:137.8570, labelPos:"belowleft",
     hitokoto:"明治の学校建築が今も残る、磐田の学びの記憶。",
     point:"玄関のエンタシス柱、たくさんの窓、五階建ての高さ。城の石垣を使った土台にも注目。",
     asobi:"まず正面から見上げる。次に少し離れて全体の高さを感じる。最後に、昔の子どもたちがここに通った姿を想像してみる。",
-    time:"15分", tags:["学校","明治","見付","建築","教育"], link:"/kyu-mitsuke-gakko.html"
-  },
-  {
-    id:"oumi", name:"淡海國玉神社", cat:"神社仏閣", x:730, y:270,
+    time:"15分", tags:["学校","明治","見付","建築","教育"], link:"/kyu-mitsuke-gakko.html" },
+
+  { id:"oumi", name:"淡海國玉神社", cat:"神社仏閣", lat:34.7282, lng:137.8576, labelPos:"right",
     hitokoto:"遠江国の総社。国司が最初に参った、由緒ある古社。",
-    point:"旧見付学校のすぐ東。社殿の落ち着いたたたずまい、緑の境内。学校用地はこの神社の境内地が寄附された。",
+    point:"旧見付学校のすぐ東隣。落ち着いた社殿、緑の境内、珍しい狛うさぎ。学校用地はこの神社の境内地が寄附された。",
     asobi:"旧見付学校とセットで歩く。学びの場と祈りの場が隣り合う意味を感じてみる。",
-    time:"10分", tags:["神社","総社","見付","古代"], link:""
-  },
-  {
-    id:"tenjin", name:"見付天神（矢奈比賣神社）", cat:"神社仏閣", x:790, y:230,
+    time:"10分", tags:["神社","総社","見付","古代"], link:"" },
+
+  { id:"bunko", name:"磐田文庫", cat:"学校・教育", lat:34.7285, lng:137.8574, labelPos:"above",
+    hitokoto:"幕末に生まれた、地域に開かれた私設の図書館。",
+    point:"旧見付学校の北側、淡海國玉神社の境内。国学者・大久保忠尚が創建。蔵書は見付学校の設立も支えた。",
+    asobi:"旧見付学校・淡海國玉神社とあわせて巡る。学びのまち磐田の原点を感じる。",
+    time:"10分", tags:["学校","幕末","図書館","国学","見付"], link:"/kyu-mitsuke-gakko.html" },
+
+  { id:"tenjin", name:"見付天神（矢奈比賣神社）", cat:"神社仏閣", lat:34.7340, lng:137.8567,
     hitokoto:"天下の奇祭・裸祭の舞台。霊犬しっぺい太郎の伝説の地。",
     point:"参道のしっぺい太郎像。学問の神として知られる社。秋の裸祭では腰蓑姿の男衆が練り歩く。",
     asobi:"参道を歩き、しっぺい太郎像に会う。祭りの日の熱気を思い浮かべながら拝殿へ。",
-    time:"20分", tags:["神社","裸祭","悉平太郎","見付","祭り"], link:"/matsuri-kurashi.html"
-  },
-  {
-    id:"shuku", name:"見付宿周辺", cat:"街道・宿場", x:560, y:255,
+    time:"20分", tags:["神社","裸祭","悉平太郎","見付","祭り"], link:"/matsuri-kurashi.html" },
+
+  { id:"shuku", name:"見付宿周辺", cat:"街道・宿場", lat:34.7278, lng:137.8540,
     hitokoto:"東海道五十三次、28番目の宿場。旅人が行き交ったまち。",
     point:"旧東海道の道筋、まちなみの区割り、本陣跡や問屋場の名残。少し高低のある地形も宿場らしさ。",
     asobi:"旧東海道沿いをゆっくり歩く。道の幅や曲がり方に、宿場だったころの面影を探す。",
-    time:"30分", tags:["東海道","宿場","見付","街道"], link:"/mitsuke-shuku.html"
-  },
-  {
-    id:"akamatsu", name:"旧赤松家記念館", cat:"近代", x:620, y:380,
+    time:"30分", tags:["東海道","宿場","見付","街道"], link:"/mitsuke-shuku.html" },
+
+  { id:"akamatsu", name:"旧赤松家記念館", cat:"近代", lat:34.7330, lng:137.8520,
     hitokoto:"咸臨丸で海を渡った幕臣・赤松家の、れんが塀が残る邸宅跡。",
     point:"立派な門・塀・土蔵。赤松則良は近代海軍の礎を築いた人物。庭園もある。",
     asobi:"門とれんが塀の造りをじっくり見る。明治の近代化を担った人の暮らしに思いを馳せる。",
-    time:"20分", tags:["近代","赤松則良","海軍","建築"], link:""
-  },
-  {
-    id:"kokubunji", name:"遠江国分寺跡", cat:"古代", x:380, y:230,
-    hitokoto:"奈良時代、聖武天皇の詔で建てられた国分寺の跡。特別史跡。",
-    point:"広い史跡公園。七重塔や金堂があった伽藍の配置。全国で初めて建物配置が明らかになった場所。",
-    asobi:"広々とした公園を歩き、かつてそびえた七重塔の高さを想像する。塔の礎石を探してみる。",
-    time:"25分", tags:["古代","奈良時代","国分寺","特別史跡","寺谷"], link:"/totoumi-kokufu.html"
-  },
-  {
-    id:"fuhachiman", name:"府八幡宮", cat:"神社仏閣", x:300, y:300,
+    time:"20分", tags:["近代","赤松則良","海軍","建築"], link:"" },
+
+  { id:"fuhachiman", name:"府八幡宮", cat:"神社仏閣", lat:34.7185, lng:137.8497, labelPos:"left",
     hitokoto:"遠江国府の守護神として勧請された、国司ゆかりの社。",
     point:"県指定文化財の楼門。広い自然林の境内（ふるさと自然百選）。国司・桜井王が勧請したと伝わる。",
     asobi:"楼門をくぐり、自然林に包まれた境内を歩く。国府の時代を見守ってきた木々を見上げる。",
-    time:"20分", tags:["神社","国府","楼門","古代"], link:"/totoumi-kokufu.html"
-  },
-  {
-    id:"kofu", name:"遠江国府関連地", cat:"古代", x:450, y:330,
+    time:"20分", tags:["神社","国府","楼門","古代"], link:"/totoumi-kokufu.html" },
+
+  { id:"kokubunji", name:"遠江国分寺跡", cat:"古代", lat:34.7178, lng:137.8533, labelPos:"belowright",
+    hitokoto:"奈良時代、聖武天皇の詔で建てられた国分寺の跡。特別史跡。",
+    point:"広い史跡公園。七重塔や金堂があった伽藍の配置。全国で初めて建物配置が明らかになった場所。",
+    asobi:"広々とした公園を歩き、かつてそびえた七重塔の高さを想像する。塔の礎石を探してみる。",
+    time:"25分", tags:["古代","奈良時代","国分寺","特別史跡","寺谷"], link:"/totoumi-kokufu.html" },
+
+  { id:"kokufu", name:"遠江国府跡（推定地）", cat:"古代", lat:34.7235, lng:137.8540,
     hitokoto:"かつて遠江国の政治の中心、国府が置かれたあたり。",
-    point:"国府の正確な場所はなお研究中。御殿・二之宮遺跡など、手がかりとなる遺跡が周辺にある。",
+    point:"国府の正確な場所はなお研究中。見付の中心部、国分寺と見付宿のあいだ一帯がその有力地とされる。",
     asobi:"「ここが国の中心だった」と想像しながら歩く。地名や地形に古代の痕跡を探す。",
-    time:"15分", tags:["古代","国府","遺跡"], link:"/totoumi-kokufu.html"
-  },
-  {
-    id:"choshizuka", name:"銚子塚古墳", cat:"古墳・遺跡", x:250, y:450,
+    time:"15分", tags:["古代","国府","遺跡"], link:"/totoumi-kokufu.html" },
+
+  { id:"choshizuka", name:"銚子塚古墳", cat:"古墳・遺跡", lat:34.7360, lng:137.8800,
     hitokoto:"全長108メートル。磐田の繁栄を物語る、古墳時代前期の大古墳。",
-    point:"前方後円墳の大きな墳丘。小銚子塚古墳とあわせて国の史跡。向笠竹之内に位置する。",
+    point:"前方後円墳の大きな墳丘。小銚子塚古墳とあわせて国の史跡。市の北東、向笠竹之内に位置する。",
     asobi:"墳丘の大きさを体で感じる。1600年以上前、この地に大きな力があったことを思う。",
-    time:"20分", tags:["古墳","古墳時代","史跡","向笠"], link:""
-  },
-  {
-    id:"bunko", name:"磐田文庫", cat:"学校・教育", x:660, y:255,
-    hitokoto:"幕末に生まれた、地域に開かれた私設の図書館。",
-    point:"旧見付学校の北側。国学者・大久保忠尚が創建。蔵書は見付学校の設立も支えた。",
-    asobi:"旧見付学校・淡海國玉神社とあわせて巡る。学びのまち磐田の原点を感じる。",
-    time:"10分", tags:["学校","幕末","図書館","国学","見付"], link:"/kyu-mitsuke-gakko.html"
-  }
+    time:"20分", tags:["古墳","古墳時代","史跡","向笠"], link:"" },
+
+  { id:"station", name:"JR磐田駅", cat:"目印", lat:34.7142, lng:137.8512,
+    hitokoto:"まち歩きの起点。ここから見付までは北へ約2km。",
+    point:"駅前のロータリー。北口から旧東海道・見付方面へ向かうのが歴史さんぽの定番ルート。",
+    asobi:"駅を起点に、府八幡宮・国分寺跡（近い）と、見付エリア（北へ2km）の二方向で計画を立てる。",
+    time:"—", tags:["駅","起点","中泉"], link:"" }
 ];
 
 const CATS = ["すべて","古代","街道・宿場","神社仏閣","学校・教育","近代","古墳・遺跡"];
 let activeCat = "すべて";
 let selected = null;
 
+/* ---- 緯度経度 → 画面座標への投影 ----
+   スポットの経度・緯度の範囲を求め、余白をとってviewBox(1000x720)に線形マッピング。
+   緯度は北が上なので y は反転。緯度1度あたりの距離より経度方向が縮むため、
+   緯度に応じた経度補正（cos）をかけて形が歪まないようにする。           */
+const VB_W = 1000, VB_H = 720;
+const PAD = 90;            // 端の余白
+const TOP_PAD = 70;        // 上の余白（凡例見出し用）
+
+const lats = SPOTS.map(s=>s.lat), lngs = SPOTS.map(s=>s.lng);
+const latMin = Math.min(...lats), latMax = Math.max(...lats);
+const lngMin = Math.min(...lngs), lngMax = Math.max(...lngs);
+const latMid = (latMin+latMax)/2;
+const cosLat = Math.cos(latMid*Math.PI/180);
+
+// 経度方向は cos 補正して「実距離」に近いスパンにする
+const spanX = (lngMax - lngMin) * cosLat;
+const spanY = (latMax - latMin);
+// アスペクトを保ったままviewBoxに収めるスケール
+const availW = VB_W - PAD*2;
+const availH = VB_H - PAD - TOP_PAD;
+const scale = Math.min(availW/spanX, availH/spanY);
+// 中央寄せのためのオフセット
+const drawW = spanX*scale, drawH = spanY*scale;
+const offX = (VB_W - drawW)/2;
+const offY = TOP_PAD + (availH - drawH)/2;
+
+function project(lat, lng){
+  const x = offX + ((lng - lngMin) * cosLat) * scale;
+  const y = offY + (latMax - lat) * scale;  // 北が上
+  return {x, y};
+}
+// 各スポットに画面座標を付与
+SPOTS.forEach(s=>{ const p = project(s.lat, s.lng); s.x = p.x; s.y = p.y; });
+
+// 至近距離で重なるスポットは、表示上だけ少し開く（実距離は数十m）
+const SPREAD = {
+  gakko:   {dx:-16, dy:6},   // 旧見付学校（西寄り）
+  oumi:    {dx: 18, dy:6},   // 淡海國玉神社（東隣）
+  bunko:   {dx:  2, dy:-20}, // 磐田文庫（北側）
+};
+SPOTS.forEach(s=>{ if(SPREAD[s.id]){ s.x += SPREAD[s.id].dx; s.y += SPREAD[s.id].dy; } });
+
 const pinsEl = document.getElementById("pins");
+const geoEl = document.getElementById("geo");
 const filtersEl = document.getElementById("filters");
 const listEl = document.getElementById("list");
 const cardEl = document.getElementById("spotcard");
@@ -292,7 +306,44 @@ const phEl = document.getElementById("placeholder");
 
 function esc(s){return s.replace(/[&<>]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[m]));}
 
-// フィルタ
+/* ---- 地物（街道・鉄道・川・エリア帯）を座標に合わせて描画 ---- */
+function renderGeo(){
+  const stn = project(34.7142, 137.8512);          // 磐田駅
+  const gakko = project(34.7281, 137.8570);        // 見付中心
+  const kokubunji = project(34.7178, 137.8533);    // 国分寺
+  // 旧東海道：見付宿を東西に通す（見付の緯度帯）
+  const e1 = project(34.7276, 137.8430), e2 = project(34.7285, 137.8880);
+  // 鉄道：磐田駅を通る東西線（駅の緯度帯）
+  const r1 = project(34.7140, 137.8430), r2 = project(34.7150, 137.8880);
+
+  geoEl.innerHTML = `
+    <!-- 見付エリアの薄い帯 -->
+    <ellipse cx="${gakko.x}" cy="${(gakko.y+ project(34.7340,137.8567).y)/2}" rx="155" ry="120" fill="#d4ddc4" opacity="0.55"/>
+    <!-- 中泉（駅・国分寺・府八幡）エリア -->
+    <ellipse cx="${(stn.x+kokubunji.x)/2}" cy="${(stn.y+kokubunji.y)/2}" rx="135" ry="95" fill="#d4ddc4" opacity="0.5"/>
+
+    <!-- 旧東海道 -->
+    <path d="M${e1.x},${e1.y} Q${(e1.x+e2.x)/2},${e1.y-14} ${e2.x},${e2.y}" fill="none" stroke="#cdbfa6" stroke-width="9" stroke-linecap="round"/>
+    <path d="M${e1.x},${e1.y} Q${(e1.x+e2.x)/2},${e1.y-14} ${e2.x},${e2.y}" fill="none" stroke="#bfa97e" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+    <text x="${e2.x-150}" y="${e2.y-12}" fill="#85562c" class="mincho" style="font-size:13px;font-weight:700;">旧東海道（見付宿）</text>
+
+    <!-- 鉄道 -->
+    <line x1="${r1.x}" y1="${r1.y}" x2="${r2.x}" y2="${r2.y}" stroke="#b7a890" stroke-width="3" stroke-dasharray="11 6"/>
+    <text x="${r2.x-130}" y="${r2.y+22}" fill="#9c8f7c" style="font-size:11px;">JR東海道本線</text>
+
+    <!-- 方位 -->
+    <g transform="translate(60,${TOP_PAD+6})">
+      <circle r="20" fill="#fffdf8" stroke="#d8c8ab" stroke-width="1.2"/>
+      <text x="0" y="-7" text-anchor="middle" fill="#a6713e" class="mincho" style="font-size:12px;font-weight:700;">北</text>
+      <path d="M0,-3 L4,8 L0,4 L-4,8 Z" fill="#a6713e"/>
+    </g>
+
+    <!-- エリア見出し -->
+    <text x="${gakko.x}" y="${project(34.7355,137.8567).y - 8}" text-anchor="middle" fill="#9aaa86" class="mincho" style="font-size:14px;letter-spacing:.16em;">見付エリア</text>
+    <text x="${(stn.x+kokubunji.x)/2}" y="${stn.y + 44}" text-anchor="middle" fill="#9aaa86" class="mincho" style="font-size:14px;letter-spacing:.14em;">中泉エリア（駅周辺）</text>
+  `;
+}
+
 CATS.forEach(c=>{
   const b=document.createElement("button");
   b.className="chip"+(c==="すべて"?" active":"");
@@ -306,26 +357,41 @@ CATS.forEach(c=>{
   filtersEl.appendChild(b);
 });
 
-// ピン描画
+// ラベルの配置：labelPos指定があればそれに従い、なければ自動（端は内側へ）
+function labelLayout(s){
+  const pos = s.labelPos || (s.x > VB_W-150 ? "left" : (s.x < 150 ? "right" : "above"));
+  switch(pos){
+    case "above":      return {dx:0,  dy:-16, anchor:"middle"};
+    case "below":      return {dx:0,  dy:26,  anchor:"middle"};
+    case "left":       return {dx:-15,dy:4,   anchor:"end"};
+    case "right":      return {dx:15, dy:4,   anchor:"start"};
+    case "belowleft":  return {dx:-12,dy:24,  anchor:"end"};
+    case "belowright": return {dx:12, dy:24,  anchor:"start"};
+    default:           return {dx:0,  dy:-16, anchor:"middle"};
+  }
+}
+
 function renderPins(){
   pinsEl.innerHTML = SPOTS.map(s=>{
     const dim = (activeCat!=="すべて" && s.cat!==activeCat) ? " dim":"";
     const sel = (selected===s.id) ? " sel":"";
+    const L = labelLayout(s);
+    const isStn = s.cat==="目印";
+    const hit = (s.id==="gakko"||s.id==="oumi"||s.id==="bunko"||s.id==="kokubunji"||s.id==="fuhachiman") ? 15 : 22;
     return `<g class="pin${dim}${sel}" data-id="${s.id}" transform="translate(${s.x},${s.y})">
-      <circle cx="0" cy="-4" r="22" fill="transparent"/>
+      <circle cx="0" cy="0" r="${hit}" fill="transparent"/>
       <circle class="ring" cx="0" cy="0" r="13"/>
-      <circle class="dot" cx="0" cy="0" r="7"/>
-      <text x="0" y="-18" text-anchor="middle">${esc(s.name)}</text>
+      <circle class="dot" cx="0" cy="0" r="${isStn?6:7}" ${isStn?'style="fill:#6b5d50"':''}/>
+      <text x="${L.dx}" y="${L.dy}" text-anchor="${L.anchor}">${esc(s.name)}</text>
     </g>`;
   }).join("");
-  pinsEl.querySelectorAll(".pin").forEach(p=>{
-    p.onclick=()=>select(p.dataset.id);
-  });
+  pinsEl.querySelectorAll(".pin").forEach(p=>{ p.onclick=()=>select(p.dataset.id); });
 }
 
-// 一覧描画
 function renderList(){
-  listEl.innerHTML = SPOTS.map(s=>{
+  // 目印(駅)は一覧の最後へ
+  const ordered = SPOTS.slice().sort((a,b)=> (a.cat==="目印") - (b.cat==="目印"));
+  listEl.innerHTML = ordered.map(s=>{
     const dim = (activeCat!=="すべて" && s.cat!==activeCat) ? " dim":"";
     return `<div class="litem${dim}" data-id="${s.id}">
       <div class="ln">${esc(s.name)}</div>
@@ -337,7 +403,6 @@ function renderList(){
   });
 }
 
-// 選択→カード表示
 function select(id){
   selected=id;
   const s=SPOTS.find(x=>x.id===id);
@@ -359,6 +424,7 @@ function select(id){
   renderPins();
 }
 
+renderGeo();
 renderPins();
 renderList();
 </script>
