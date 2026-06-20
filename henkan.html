@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>標準語⇄遠州弁 変換 ｜ 磐田物語</title>
+<meta name="description" content="標準語を入れると遠州弁に変換するツール。やさしい遠州弁から磐田っぽい言い回し、おじいちゃん風まで、モードを選んで変換できる。">
+<meta property="og:title" content="標準語⇄遠州弁 変換 ｜ 磐田物語">
+<meta property="og:description" content="標準語を遠州弁に変換。やさしい・磐田っぽい・おじいちゃん風など、モードを選べる。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f7f2e9;--paper-deep:#efe6d4;--ink:#3a312a;--ink-soft:#6b5d50;
+    --brown:#a6713e;--brown-deep:#85562c;--pine:#46624a;--line:#e0d4bd;
+    --card:#fffdf8;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    line-height:1.9;font-size:17px;letter-spacing:.02em;
+    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(166,113,62,.035) 0, transparent 38%),
+      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);}
+  a{color:var(--brown-deep);text-underline-offset:3px;}
+
+  header.site{background:var(--card);border-bottom:1px solid var(--line);}
+  .bar{max-width:1040px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+  .brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;}
+  .brand .logo{font-family:"Shippori Mincho",serif;font-weight:800;font-size:26px;color:var(--ink);letter-spacing:.06em;}
+  .brand .logo .dot{color:var(--brown);}
+  .brand .tag{font-size:12.5px;color:var(--ink-soft);letter-spacing:.08em;}
+  nav.menu{display:flex;gap:26px;}
+  nav.menu a{text-decoration:none;color:var(--ink-soft);font-size:14.5px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
+  nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
+
+  .hero{max-width:880px;margin:0 auto;padding:48px 24px 14px;}
+  .hero .eyebrow{font-size:13px;letter-spacing:.22em;color:var(--pine);font-weight:700;margin:0 0 14px;}
+  .hero h1{font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(28px,5vw,42px);line-height:1.4;margin:0 0 16px;color:var(--ink);letter-spacing:.04em;}
+  .hero h1 .accent{color:var(--brown-deep);background:linear-gradient(transparent 62%, rgba(166,113,62,.18) 62%);}
+  .hero p{font-size:16px;color:var(--ink-soft);margin:0;line-height:1.95;max-width:640px;}
+
+  .app{max-width:880px;margin:0 auto;padding:18px 24px 8px;}
+
+  /* 方向切替 */
+  .dir{display:flex;gap:0;margin-bottom:18px;border:1.5px solid var(--line);border-radius:5px;overflow:hidden;width:fit-content;}
+  .dir button{padding:10px 20px;font-size:14.5px;font-weight:700;font-family:inherit;
+    border:none;background:var(--card);color:var(--ink-soft);cursor:pointer;transition:.18s;}
+  .dir button.active{background:var(--brown);color:#fff;}
+
+  /* モード */
+  .modes{margin-bottom:16px;}
+  .modes .lbl{font-size:13px;color:var(--ink-soft);font-weight:700;margin-bottom:8px;}
+  .modes .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .mode{padding:7px 16px;font-size:13.5px;font-weight:500;border:1.5px solid var(--line);
+    border-radius:999px;background:var(--card);color:var(--ink-soft);cursor:pointer;transition:.18s;font-family:inherit;}
+  .mode:hover{border-color:var(--brown);color:var(--brown-deep);}
+  .mode.active{background:var(--brown);color:#fff;border-color:var(--brown);}
+
+  /* 入出力 */
+  .io{display:grid;grid-template-columns:1fr;gap:14px;}
+  .field label{display:block;font-size:13px;font-weight:700;color:var(--ink-soft);margin-bottom:7px;letter-spacing:.04em;}
+  textarea{width:100%;min-height:120px;padding:16px 18px;font-size:16px;line-height:1.85;
+    border:1.5px solid var(--line);border-radius:5px;background:var(--card);color:var(--ink);
+    font-family:inherit;resize:vertical;box-shadow:var(--shadow);transition:.2s;}
+  textarea:focus{outline:none;border-color:var(--brown);}
+  textarea#out{background:var(--paper-deep);}
+  .row-btn{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 6px;}
+  .btn{display:inline-block;font-weight:700;font-size:15px;padding:13px 28px;border-radius:3px;
+    border:none;cursor:pointer;font-family:inherit;transition:.2s;letter-spacing:.04em;}
+  .btn.primary{background:var(--brown);color:#fff;}
+  .btn.primary:hover{background:var(--brown-deep);}
+  .btn.ghost{background:var(--card);color:var(--ink);border:1.5px solid var(--line);}
+  .btn.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
+  .hint{font-size:12.5px;color:var(--ink-soft);margin-top:4px;}
+  .copied{font-size:12.5px;color:var(--pine);font-weight:700;margin-left:8px;opacity:0;transition:.3s;}
+  .copied.show{opacity:1;}
+
+  /* 例文ボタン */
+  .samples{margin-top:22px;}
+  .samples .lbl{font-size:13px;color:var(--ink-soft);font-weight:700;margin-bottom:8px;}
+  .samples .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .samp{padding:7px 14px;font-size:13px;border:1px solid var(--line);border-radius:4px;
+    background:var(--card);color:var(--ink-soft);cursor:pointer;transition:.18s;font-family:inherit;}
+  .samp:hover{border-color:var(--brown);color:var(--brown-deep);}
+
+  .note{max-width:880px;margin:30px auto 40px;padding:0 24px;}
+  .note .inner{background:var(--paper-deep);border-radius:4px;padding:20px 24px;font-size:13.5px;color:var(--ink-soft);line-height:1.85;}
+
+  footer.site{background:var(--ink);color:#e9e0d2;}
+  footer.site .inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  footer .f-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  footer .f-brand .dot{color:var(--brown);}
+  footer .f-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
+  footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
+
+  @media(max-width:760px){ nav.menu{display:none;} }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/">
+      <span class="logo">磐田物語<span class="dot">。</span></span>
+      <span class="tag">遠江・見付のまちの歴史と文化</span>
+    </a>
+    <nav class="menu">
+      <a href="/hajimeni.html">はじめに</a>
+      <a href="/#themes">読みもの</a>
+      <a href="/#enshu">遠州弁</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="eyebrow">ENSHU BEN ｜ へんかん</p>
+  <h1>標準語 ⇄ 遠州弁 <span class="accent">変換</span></h1>
+  <p>標準語を入れると、遠州弁に変換する。やさしい言い回しから磐田っぽいことば、おじいちゃん風まで、モードを選んで試せる。簡易的な置きかえによる変換なので、すべてが自然になるとは限らないが、遠州弁の雰囲気を掴む手がかりに。</p>
+</section>
+
+<div class="app">
+
+  <div class="dir" id="dir">
+    <button data-dir="s2e" class="active">標準語 → 遠州弁</button>
+    <button data-dir="e2s">遠州弁 → 標準語</button>
+  </div>
+
+  <div class="modes" id="modeWrap">
+    <div class="lbl">変換のモード</div>
+    <div class="chips" id="modes">
+      <button class="mode active" data-mode="normal">ふつう</button>
+      <button class="mode" data-mode="soft">やさしい</button>
+      <button class="mode" data-mode="iwata">磐田っぽい</button>
+      <button class="mode" data-mode="oji">おじいちゃん風</button>
+    </div>
+  </div>
+
+  <div class="io">
+    <div class="field">
+      <label id="inLabel">標準語を入力</label>
+      <textarea id="in" placeholder="例：今日は雨だから、出かけるのはやめよう。"></textarea>
+    </div>
+    <div class="row-btn">
+      <button class="btn primary" id="go">変換する</button>
+      <button class="btn ghost" id="swap">⇅ 入れ替え</button>
+      <button class="btn ghost" id="copy">結果をコピー</button>
+      <span class="copied" id="copied">コピーしたに！</span>
+    </div>
+    <div class="field">
+      <label id="outLabel">遠州弁</label>
+      <textarea id="out" readonly placeholder="ここに変換結果が出るに。"></textarea>
+    </div>
+  </div>
+
+  <div class="samples">
+    <div class="lbl">例文を入れてみる</div>
+    <div class="chips" id="samples"></div>
+  </div>
+
+</div>
+
+<div class="note">
+  <div class="inner">
+    この変換は、よく使う言葉や語尾を機械的に置きかえる簡易的なものである。文脈によっては不自然になったり、変換しきれなかったりすることがある。遠州弁は地域や世代によって言い方が異なるため、出てくる結果は一例として楽しんでほしい。より自然な変換や、本格的な対応は今後すこしずつ整えていきたい。
+  </div>
+</div>
+
+<footer class="site">
+  <div class="inner">
+    <div class="f-brand">磐田物語<span class="dot">。</span></div>
+    <div class="f-note">静岡県磐田市の歴史と文化を、一市民の視点で書き留めていく記録の場。記載内容は個人の調査・覚え書きであり、正確性の向上に努めながら綴っています。</div>
+    <div class="copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+
+<script>
+let dir = "s2e";   // s2e: 標準語→遠州弁 / e2s: 遠州弁→標準語
+let mode = "normal";
+
+const inEl = document.getElementById("in");
+const outEl = document.getElementById("out");
+const inLabel = document.getElementById("inLabel");
+const outLabel = document.getElementById("outLabel");
+const modeWrap = document.getElementById("modeWrap");
+
+// ===== 語彙の置きかえ（標準語 → 遠州弁）。長いものから順に適用 =====
+const VOCAB = [
+  ["仕方がない","しょんない"],["仕方ない","しょんない"],["しょうがない","しょんない"],
+  ["うっとうしい","やぶせったい"],["わずらわしい","やぶせったい"],
+  ["疲れた","えらい"],["しんどい","えらい"],
+  ["ずるい","こすい"],["せこい","こすい"],
+  ["まぶしい","ひずるしい"],
+  ["幼い","みるい"],["未熟","みるい"],
+  ["捨てて","ほかって"],["捨てる","ほかる"],["捨てといて","ほかっといて"],
+  ["放っておいて","うっちゃっといて"],["ほったらかして","ほっぽかして"],
+  ["走って","とんで"],["急いで","ちゃっと"],
+  ["とても","ばか"],["すごく","ばか"],["かなり","がんこ"],
+  ["たくさん","いっちょ"],
+  ["端っこ","くろ"],["隅","くろ"],["端","くろ"],
+  ["定規","せんひき"],["物差し","せんひき"],
+  ["すきま","あいさ"],
+  ["てっぺん","てんこちょ"],["頂上","てんこちょ"],
+  ["腹が立つ","やっきりする"],["いらいらする","やっきりする"],
+  ["ふてくされて","ちんぷりかえって"],["すねて","ちんぷりかえって"],
+  ["硬い","こわい"],
+  ["やめておこう","いいにしよう"],["やめておく","いいにする"],["やめとこう","いいにしよう"],["やめよう","いいにしよう"],["やめとく","いいにする"],
+  ["やろう","やらまい"],["やってみよう","やらまい"],
+];
+
+// ===== 語尾・助詞の変換（標準語 → 遠州弁）。順序が大事 =====
+function endingsS2E(t, mode){
+  // だから → だもんで
+  t = t.replace(/だから/g,"だもんで");
+  t = t.replace(/なので/g,"だもんで");
+  // 過去否定 〜なかった → 〜なんだ（おじいちゃん風のみ強め）
+  if(mode==="oji"){
+    t = t.replace(/なかった/g,"なんだ");
+  }
+  // 否定 〜ない → 〜ん（動詞の否定。形容詞「〜ない」は残す簡易処理）
+  // 「〜らない/〜れない/〜かない」等の動詞否定をターゲットに
+  t = t.replace(/([かがさたなはまらわいきしちにひみりえけせてねへめれ])ない(?![。、！？\w])/g, function(m,p1){
+    // 「〜じゃない」「〜しない」などはそのまま「ん」へ
+    return p1+"ん";
+  });
+  // 〜でしょう / 〜だろう → 〜だら
+  t = t.replace(/でしょう|だろう/g,"だら");
+  // 文末「〜だ。」→ モードに応じて
+  // 〜しよう → 〜しよう（そのまま、誘いは別途）
+  // 文末の調整
+  if(mode==="iwata" || mode==="normal"){
+    // 〜だよ → 〜だに
+    t = t.replace(/だよ/g,"だに");
+    // 〜するよ → 〜するに（簡易）
+    t = t.replace(/るよ/g,"るに");
+  }
+  if(mode==="soft"){
+    t = t.replace(/だよ/g,"だに");
+  }
+  if(mode==="oji"){
+    t = t.replace(/だよ/g,"だに");
+    t = t.replace(/だね/g,"だのん");
+    t = t.replace(/だな/g,"だのん");
+  }
+  // 〜じゃない（確認）→ 〜じゃん
+  t = t.replace(/じゃないか/g,"じゃんか");
+  return t;
+}
+
+// ===== 遠州弁 → 標準語（簡易・逆引き） =====
+const VOCAB_REV = VOCAB.map(p=>[p[1],p[0]]);
+function e2s(t){
+  // 語尾を戻す
+  t = t.replace(/だもんで/g,"だから");
+  t = t.replace(/だに/g,"だよ");
+  t = t.replace(/だら/g,"でしょう");
+  t = t.replace(/じゃんか/g,"じゃないか");
+  t = t.replace(/いいにする/g,"やめておく");
+  t = t.replace(/いいにしよう/g,"やめておこう");
+  t = t.replace(/やらまい/g,"やろう");
+  // 語彙を戻す（長いものから）
+  const sorted = [...VOCAB_REV].sort((a,b)=>b[0].length-a[0].length);
+  for(const [a,b] of sorted){ t = t.split(a).join(b); }
+  return t;
+}
+
+function s2e(t, mode){
+  // 語彙の置きかえ（長いものから）
+  const sorted = [...VOCAB].sort((a,b)=>b[0].length-a[0].length);
+  for(const [a,b] of sorted){ t = t.split(a).join(b); }
+  // 語尾変換
+  t = endingsS2E(t, mode);
+  // モード別の味付け（文末に一言）
+  if(mode==="oji"){
+    // 文末の「。」の前に軽く「のん」を足しすぎない簡易処理 → ここでは何もしない
+  }
+  return t;
+}
+
+function convert(){
+  const src = inEl.value;
+  if(!src.trim()){ outEl.value=""; return; }
+  outEl.value = (dir==="s2e") ? s2e(src, mode) : e2s(src);
+}
+
+// 方向切替
+document.querySelectorAll("#dir button").forEach(b=>{
+  b.onclick=()=>{
+    dir=b.dataset.dir;
+    document.querySelectorAll("#dir button").forEach(x=>x.classList.remove("active"));
+    b.classList.add("active");
+    if(dir==="s2e"){
+      inLabel.textContent="標準語を入力"; outLabel.textContent="遠州弁";
+      inEl.placeholder="例：今日は雨だから、出かけるのはやめよう。";
+      modeWrap.style.display="";
+    }else{
+      inLabel.textContent="遠州弁を入力"; outLabel.textContent="標準語";
+      inEl.placeholder="例：今日は雨だもんで、出かけるのはいいにしようか。";
+      modeWrap.style.display="none";
+    }
+    convert();
+  };
+});
+
+// モード切替
+document.querySelectorAll(".mode").forEach(b=>{
+  b.onclick=()=>{
+    mode=b.dataset.mode;
+    document.querySelectorAll(".mode").forEach(x=>x.classList.remove("active"));
+    b.classList.add("active");
+    convert();
+  };
+});
+
+document.getElementById("go").onclick=convert;
+inEl.addEventListener("input",convert);
+
+// 入れ替え
+document.getElementById("swap").onclick=()=>{
+  const o = outEl.value;
+  // 方向を反転
+  document.querySelector(`#dir button[data-dir="${dir==='s2e'?'e2s':'s2e'}"]`).click();
+  inEl.value = o;
+  convert();
+};
+
+// コピー
+document.getElementById("copy").onclick=()=>{
+  if(!outEl.value) return;
+  navigator.clipboard.writeText(outEl.value).then(()=>{
+    const c=document.getElementById("copied");
+    c.classList.add("show");
+    setTimeout(()=>c.classList.remove("show"),1500);
+  });
+};
+
+// 例文
+const SAMPLES = [
+  "今日は雨だから、出かけるのはやめよう。",
+  "それ、すごく うっとうしいね。",
+  "走って行けば間に合うでしょう。",
+  "見つからないものは仕方ないよ。",
+  "明日、一緒にやってみよう。",
+  "今日は疲れたから、もう休むよ。"
+];
+const sampWrap=document.getElementById("samples");
+SAMPLES.forEach(s=>{
+  const b=document.createElement("button");
+  b.className="samp"; b.textContent=s;
+  b.onclick=()=>{
+    if(dir!=="s2e"){ document.querySelector('#dir button[data-dir="s2e"]').click(); }
+    inEl.value=s; convert();
+  };
+  sampWrap.appendChild(b);
+});
+</script>
+
+</body>
+</html>
