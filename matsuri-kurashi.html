@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>祭りと暮らしの記憶 ｜ 磐田物語</title>
+<meta name="description" content="天下の奇祭・見付天神裸祭。漆黒の闇のなかで行われる神輿の渡御、腰蓑姿の男衆の鬼踊り、悉平太郎の伝説。まちに受け継がれてきた祭りと暮らしの記憶をたどる。">
+<meta property="og:title" content="祭りと暮らしの記憶 ｜ 磐田物語">
+<meta property="og:description" content="700年以上受け継がれてきた天下の奇祭・見付天神裸祭。まちの祭りと暮らしの記憶をたどる。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f7f2e9;--paper-deep:#efe6d4;--ink:#3a312a;--ink-soft:#6b5d50;
+    --brown:#a6713e;--brown-deep:#85562c;--pine:#46624a;--line:#e0d4bd;
+    --card:#fffdf8;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    line-height:1.95;font-size:17px;letter-spacing:.02em;
+    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(166,113,62,.035) 0, transparent 38%),
+      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);}
+  a{color:var(--brown-deep);text-underline-offset:3px;}
+
+  header.site{background:var(--card);border-bottom:1px solid var(--line);}
+  .bar{max-width:1040px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+  .brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;}
+  .brand .logo{font-family:"Shippori Mincho",serif;font-weight:800;font-size:26px;color:var(--ink);letter-spacing:.06em;}
+  .brand .logo .dot{color:var(--brown);}
+  .brand .tag{font-size:12.5px;color:var(--ink-soft);letter-spacing:.08em;}
+  nav.menu{display:flex;gap:26px;}
+  nav.menu a{text-decoration:none;color:var(--ink-soft);font-size:14.5px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
+  nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
+
+  .crumbs{max-width:760px;margin:0 auto;padding:24px 24px 0;font-size:13px;color:var(--ink-soft);}
+  .crumbs a{text-decoration:none;}
+  .crumbs a:hover{text-decoration:underline;}
+
+  .article-head{max-width:760px;margin:0 auto;padding:28px 24px 12px;}
+  .article-head .cat{font-size:13px;letter-spacing:.18em;color:var(--pine);font-weight:700;margin:0 0 16px;}
+  .article-head .cat .no{color:var(--brown);}
+  .article-head h1{font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(28px,5vw,44px);line-height:1.45;margin:0 0 20px;color:var(--ink);letter-spacing:.03em;}
+  .article-head .sub{font-size:16.5px;color:var(--ink-soft);margin:0;line-height:1.95;}
+
+  .cover{max-width:760px;margin:28px auto 0;padding:0 24px;}
+  .cover svg{width:100%;height:auto;display:block;border-radius:4px;
+    border:1px solid var(--line);box-shadow:var(--shadow);}
+  .cover figcaption{font-size:13px;color:var(--ink-soft);margin-top:10px;text-align:center;}
+
+  .article{max-width:760px;margin:0 auto;padding:24px 24px 56px;}
+  .article h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:23px;
+    color:var(--ink);letter-spacing:.03em;margin:52px 0 20px;
+    padding-left:16px;border-left:4px solid var(--brown);line-height:1.5;}
+  .article p{margin:0 0 22px;color:var(--ink);}
+  .article p.lead{font-size:18.5px;line-height:2.1;}
+
+  figure.fig{margin:34px 0;padding:0;}
+  figure.fig svg{width:100%;height:auto;display:block;border-radius:4px;
+    border:1px solid var(--line);box-shadow:var(--shadow);background:var(--card);}
+  figure.fig figcaption{font-size:13px;color:var(--ink-soft);margin-top:10px;text-align:center;line-height:1.7;}
+
+  .pull{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--pine);
+    border-radius:3px;padding:24px 30px;margin:32px 0;box-shadow:var(--shadow);}
+  .pull p{margin:0;font-family:"Shippori Mincho",serif;font-size:18.5px;color:var(--ink);line-height:2;}
+
+  .memo{background:var(--paper-deep);border-radius:3px;padding:26px 30px;margin:34px 0;}
+  .memo h3{font-family:"Shippori Mincho",serif;font-size:17px;color:var(--ink);margin:0 0 14px;letter-spacing:.04em;}
+  .memo dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;}
+  .memo dt{font-weight:700;color:var(--brown-deep);font-size:14.5px;white-space:nowrap;}
+  .memo dd{margin:0;font-size:14.5px;color:var(--ink);}
+
+  .sources{max-width:760px;margin:0 auto;padding:0 24px 8px;}
+  .sources h3{font-size:14px;color:var(--ink-soft);font-weight:700;letter-spacing:.06em;margin:0 0 10px;}
+  .sources ul{margin:0;padding-left:1.2em;}
+  .sources li{font-size:13px;color:var(--ink-soft);line-height:1.8;margin-bottom:4px;}
+
+  .article-nav{max-width:760px;margin:0 auto 56px;padding:0 24px;display:flex;flex-wrap:wrap;gap:14px;}
+  .article-nav a{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
+    padding:13px 26px;border-radius:2px;transition:.2s;letter-spacing:.04em;}
+  .article-nav a.primary{background:var(--brown);color:#fff;}
+  .article-nav a.primary:hover{background:var(--brown-deep);}
+  .article-nav a.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
+  .article-nav a.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
+
+  footer.site{background:var(--ink);color:#e9e0d2;}
+  footer.site .inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  footer .f-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  footer .f-brand .dot{color:var(--brown);}
+  footer .f-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
+  footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
+
+  .s-paper{fill:#fffdf8;} .s-line{stroke:#d8c8ab;} .s-ink{fill:#3a312a;}
+  .s-brown{fill:#a6713e;} .s-pine{fill:#46624a;} .s-soft{fill:#6b5d50;}
+
+  @media(max-width:760px){
+    nav.menu{display:none;}
+    .memo dl{grid-template-columns:1fr;gap:2px 0;}
+    .memo dt{margin-top:8px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/">
+      <span class="logo">磐田物語<span class="dot">。</span></span>
+      <span class="tag">遠江・見付のまちの歴史と文化</span>
+    </a>
+    <nav class="menu">
+      <a href="/hajimeni.html">はじめに</a>
+      <a href="/#themes">書いていくこと</a>
+      <a href="/#latest">近況</a>
+    </nav>
+  </div>
+</header>
+
+<div class="crumbs"><a href="/">磐田物語</a> ／ 祭りと暮らしの記憶</div>
+
+<div class="article-head">
+  <p class="cat"><span class="no">其の三</span> ｜ 祭りと暮らし</p>
+  <h1>祭りと暮らしの記憶<br>── 闇のなかの裸祭</h1>
+  <p class="sub">灯りがすべて消され、漆黒の闇のなかを神輿が進む。腰蓑をつけた男衆が、旧東海道の往来を練り歩く。七百年以上にわたって受け継がれてきた「天下の奇祭」見付天神裸祭。このまちの祭りと、そこに息づく暮らしの記憶をたどってみたい。</p>
+</div>
+
+<figure class="cover">
+  <!-- 表紙：闇のなかの渡御 -->
+  <svg viewBox="0 0 760 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="漆黒の闇のなかで行われる神輿の渡御">
+    <rect width="760" height="260" fill="#2b2520"/>
+    <!-- 提灯のわずかな灯り -->
+    <circle cx="120" cy="80" r="40" fill="#a6713e" opacity="0.12"/>
+    <circle cx="640" cy="70" r="36" fill="#a6713e" opacity="0.10"/>
+    <!-- 神輿 -->
+    <g transform="translate(330,110)">
+      <rect x="20" y="20" width="60" height="36" fill="#85562c"/>
+      <polygon points="14,20 86,20 50,0" fill="#a6713e"/>
+      <circle cx="50" cy="6" r="5" fill="#d8c8ab"/>
+      <line x1="0" y1="48" x2="100" y2="48" stroke="#6b5d50" stroke-width="4"/>
+    </g>
+    <text x="380" y="200" text-anchor="middle" fill="#e9e0d2" class="mincho" style="font-size:17px;font-weight:700;">灯火が消され、闇のなかを神輿が渡る</text>
+    <text x="380" y="226" text-anchor="middle" fill="#9c8f7c" style="font-size:12.5px;">見付天神裸祭 ── 矢奈比賣神社から、総社・淡海國玉神社へ</text>
+  </svg>
+  <figcaption>裸祭の渡御は、すべての灯火を消した漆黒の闇のなかで行われる。古式の様相を今に伝える神事である。</figcaption>
+</figure>
+
+<article class="article">
+
+  <p class="lead">毎年、旧暦の8月10日が近づくと、見付のまちは祭りの気配に包まれる。見付天神裸祭。腰蓑をつけた裸の男衆が押し合いもみ合いながら練り歩き、拝殿で鬼踊りを舞う、勇壮な祭りである。「天下の奇祭」と呼ばれ、平成12年（2000年）には国の重要無形民俗文化財に指定された、このまちが誇る祭りである。</p>
+
+  <h2>神様が、総社へ渡る夜</h2>
+
+  <p>この祭りは、見た目の勇壮さだけで語られがちだが、その芯にあるのは、ひとつの神事である。見付天神社、正しくは矢奈比賣（やなひめ）神社の祭神が、遠江国の総社である淡海國玉神社へと渡御する——つまり神様がお出ましになって総社へ渡る、その神事を中心にした祭りなのである。</p>
+
+  <p>裸の男衆が町中を練り歩くのは、この神輿の渡御に先立つもの。サラシと腰蓑を身につけた男たちが旧東海道の往来を練り歩き、矢奈比賣神社へと向かう。そして拝殿に集い、鬼踊りと呼ばれる乱舞を繰り広げる。その後、灯火がいっせいに消され、漆黒の闇のなかで、神輿は静かに総社へと渡っていく。この「闇の渡御」こそが、祭りのもっとも神聖な瞬間である。</p>
+
+  <figure class="fig">
+    <!-- 祭りの流れ図 -->
+    <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="見付天神裸祭の神事の流れ">
+      <rect width="760" height="300" class="s-paper"/>
+      <text x="380" y="40" text-anchor="middle" class="s-ink mincho" style="font-size:18px;font-weight:700;">神様が渡る ── 渡御の道筋</text>
+
+      <!-- 矢奈比賣神社 -->
+      <g transform="translate(120,120)">
+        <polygon points="40,0 70,22 10,22" class="s-pine"/>
+        <rect x="18" y="22" width="44" height="34" class="s-pine" opacity="0.85"/>
+      </g>
+      <text x="160" y="200" text-anchor="middle" class="s-ink mincho" style="font-size:14px;font-weight:700;">矢奈比賣神社</text>
+      <text x="160" y="220" text-anchor="middle" class="s-soft" style="font-size:11.5px;">（見付天神社）</text>
+      <text x="160" y="238" text-anchor="middle" class="s-soft" style="font-size:11px;">祭神がお出ましになる</text>
+
+      <!-- 矢印（渡御） -->
+      <line x1="240" y1="148" x2="500" y2="148" class="s-brown" stroke="#a6713e" stroke-width="3"/>
+      <polygon points="500,148 488,142 488,154" class="s-brown"/>
+      <text x="370" y="138" text-anchor="middle" class="s-brown mincho" style="font-size:13px;font-weight:700;">神輿の渡御（闇のなか）</text>
+      <text x="370" y="170" text-anchor="middle" class="s-soft" style="font-size:11.5px;">旧東海道を練り歩く男衆が先導</text>
+
+      <!-- 淡海國玉神社 -->
+      <g transform="translate(560,120)">
+        <polygon points="40,0 70,22 10,22" class="s-brown"/>
+        <rect x="18" y="22" width="44" height="34" class="s-brown" opacity="0.85"/>
+      </g>
+      <text x="600" y="200" text-anchor="middle" class="s-ink mincho" style="font-size:14px;font-weight:700;">淡海國玉神社</text>
+      <text x="600" y="220" text-anchor="middle" class="s-soft" style="font-size:11.5px;">（遠江国の総社）</text>
+      <text x="600" y="238" text-anchor="middle" class="s-soft" style="font-size:11px;">神様を迎える</text>
+
+      <text x="380" y="280" text-anchor="middle" class="s-soft" style="font-size:11.5px;">祭事始・浜垢離など、祭りは8日間にわたって営まれる</text>
+    </svg>
+    <figcaption>矢奈比賣神社の祭神が、遠江国の総社・淡海國玉神社へと渡り、また還る。<br>この渡御を中心に、8日間にわたる神事が営まれる。</figcaption>
+  </figure>
+
+  <h2>悉平太郎の伝説</h2>
+
+  <p>この祭りには、ひとつの伝説が寄り添っている。悉平太郎（しっぺいたろう）の物語である。</p>
+
+  <p>その昔、見付では、毎年娘を人身御供として怪物に差し出さねばならない習わしが続いていたという。村人の難儀を知った旅の僧が、怪物が「信濃の悉平太郎には知らせるな、悉平太郎が怖い」と恐れているのを聞きつける。悉平太郎とは、信濃・光前寺の犬であった。僧はこの犬を借り受け、見事に怪物を退治する。そして犬を寺に送り届け、礼に大般若経六百巻を書き写して奉納した——そんな物語である。矢奈比賣神社の参道には、今もこの悉平太郎の像が建っている。</p>
+
+  <div class="pull">
+    <p>裸祭の起源は諸説あり、定かではない。けれど、悉平太郎が怪物を退治したあとの「歓喜の踊り」が、あの鬼踊りの始まりだという言い伝えもある。祭りの熱狂の底に、まちを救った物語が静かに流れているのである。</p>
+  </div>
+
+  <h2>八日間にわたる、祈りの時間</h2>
+
+  <p>裸祭というと、あの一夜の熱狂が思い浮かぶ。けれど、実際の祭りは、それだけではない。祭事始に始まり、御斯葉（おしば）下ろし、浜垢離（はまごり）、御池の清祓い、例祭、そして裸祭、還御——と、およそ八日間にわたって営まれる、長い祈りの時間なのである。</p>
+
+  <p>たとえば浜垢離は、祭りに参加する氏子たちが、海で心身を清める行事である。華やかな乱舞の前に、こうした地道な禊（みそぎ）が積み重ねられている。祭りとは、見える部分だけではない。その背後に、数えきれない人々の準備と祈りと、暮らしの時間が支えとしてある。その全体が、七百年という長い歳月を超えて受け継がれてきた。</p>
+
+  <div class="memo">
+    <h3>見付天神裸祭をめぐって</h3>
+    <dl>
+      <dt>祭神・舞台</dt><dd>矢奈比賣神社（見付天神社）。延喜式にも記された古社。学問の神として知られる。</dd>
+      <dt>開催</dt><dd>旧暦8月10日直前の土・日曜。祭事は8日間にわたる。</dd>
+      <dt>文化財指定</dt><dd>平成12年（2000年）、国の重要無形民俗文化財に指定。</dd>
+      <dt>伝説</dt><dd>悉平太郎（しっぺい太郎）の怪物退治。参道に像が建つ。</dd>
+      <dt>見どころ</dt><dd>腰蓑姿の男衆の練りと鬼踊り、灯火を消した闇のなかの神輿渡御。</dd>
+    </dl>
+  </div>
+
+  <h2>受け継ぐ、ということ</h2>
+
+  <p>祭りは、ただ昔から続いているのではない。毎年、誰かが準備し、誰かが担い、誰かが次の世代へ手渡してきたからこそ、今がある。腰蓑を編む手、神輿を担ぐ肩、子に祭りの作法を教える声——その一つひとつが途切れずに繋がってきたから、七百年という時間が今に届いている。</p>
+
+  <p>近年は、疫病の流行で祭りが縮小された年もあった。担い手の確保が難しくなる地域も、全国には少なくない。祭りを受け継ぐということは、当たり前のことではなく、いつの時代も、人の意志によって支えられている営みなのである。見付天神裸祭が、これほどの規模で今も続いていること自体が、このまちの底力であり、ひとつの誇りであると思う。</p>
+
+  <p>祭りの夜の熱気も、闇のなかの神輿の静けさも、その場に身を置いた者にしか分からないものがある。けれど、その記憶を書き留め、語り継いでいくことで、祭りはまた次の世代へと渡っていく。古代の国府から、東海道の宿場、そして今に生きる祭りまで——磐田には、足もとに語り継ぐべきものが、まだまだ眠っている。これからも、少しずつ綴っていきたい。</p>
+
+</article>
+
+<div class="sources">
+  <h3>主な参考</h3>
+  <ul>
+    <li>見付天神 公式サイト「見付天神裸祭」／見付天神裸祭保存会</li>
+    <li>磐田市公式ウェブサイト・磐田市観光協会「見付天神裸祭」</li>
+    <li>地域文化資産ポータル／静岡新聞アットエス ほか</li>
+  </ul>
+</div>
+
+<div class="article-nav">
+  <a class="primary" href="/">トップへ戻る</a>
+  <a class="ghost" href="/mitsuke-shuku.html">前の記事 ── 東海道・見付宿の面影</a>
+</div>
+
+<footer class="site">
+  <div class="inner">
+    <div class="f-brand">磐田物語<span class="dot">。</span></div>
+    <div class="f-note">静岡県磐田市の歴史と文化を、一市民の視点で書き留めていく記録の場。記載内容は個人の調査・覚え書きであり、正確性の向上に努めながら綴っています。</div>
+    <div class="copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+
+</body>
+</html>
