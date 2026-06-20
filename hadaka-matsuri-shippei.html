@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>悉平太郎伝説の考察 ── 早太郎との異同と、猿神退治の系譜 ｜ 見付天神裸祭【磐田物語】</title>
+<meta name="description" content="霊犬・悉平太郎の伝説を民俗学の視点で考察。信州・光前寺の早太郎との異同、全国の猿神退治譚との類型比較、「早太郎→悉平太郎」という表記の歴史的変遷、大林太良・柳田國男ら学術的研究での扱いを整理する。">
+<meta property="og:title" content="悉平太郎伝説の考察 ── 早太郎との異同と、猿神退治の系譜 ｜ 見付天神裸祭">
+<meta property="og:description" content="霊犬・悉平太郎伝説を民俗学の視点で読みとく決定版資料。早太郎との異同、猿神退治譚の系譜、表記の変遷を整理する。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--kinari:#f7f2e9;--cha:#a6713e;--matsu:#46624a;--sumi:#33312e;--usuzumi:#6b665e;--waku:#e4dccb;--paper:#fffdf8;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Zen Kaku Gothic New",sans-serif;color:var(--sumi);background:var(--kinari);line-height:1.95;font-size:17px;-webkit-font-smoothing:antialiased;}
+  a{color:var(--cha);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+  header.site{background:var(--matsu);color:#fff;padding:0;}
+  .site-inner{max-width:880px;margin:0 auto;padding:18px 22px;}
+  .site-title{font-family:"Shippori Mincho",serif;font-weight:600;font-size:19px;color:#fff;display:block;letter-spacing:.04em;}
+  .site-title small{display:block;font-size:12px;font-weight:400;opacity:.82;margin-top:3px;letter-spacing:.02em;}
+  nav.global{background:#3a5340;}
+  nav.global ul{max-width:880px;margin:0 auto;padding:0 22px;list-style:none;display:flex;flex-wrap:wrap;gap:4px 26px;}
+  nav.global a{color:#f1ece1;display:inline-block;padding:11px 0;font-size:14px;letter-spacing:.03em;}
+  nav.global a:hover{color:#fff;text-decoration:none;}
+  main{max-width:760px;margin:0 auto;padding:0 22px;}
+  .crumb{font-size:13px;color:var(--usuzumi);padding:20px 0 6px;}
+  .crumb a{color:var(--usuzumi);}
+  .cat{display:inline-block;font-size:13px;color:var(--matsu);border-left:3px solid var(--cha);padding-left:9px;margin:18px 0 10px;letter-spacing:.04em;}
+  h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:28px;line-height:1.5;color:var(--sumi);margin:6px 0 28px;letter-spacing:.02em;}
+  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#46423c;margin-bottom:30px;}
+  .note{background:#fbf7ee;border:1px solid var(--waku);border-left:3px solid var(--cha);border-radius:0 4px 4px 0;padding:16px 20px;font-size:14.5px;color:#4a453d;margin:24px 0;}
+  .note strong{color:#85562c;}
+  figure{margin:32px 0;}
+  .fig-box{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:26px 20px;text-align:center;}
+  figcaption{font-size:13.5px;color:var(--usuzumi);margin-top:12px;line-height:1.8;text-align:left;}
+  svg{max-width:100%;height:auto;}
+  .svg-label{fill:var(--sumi);}.svg-sub{fill:var(--usuzumi);}
+  h2{font-family:"Shippori Mincho",serif;font-weight:600;font-size:22px;color:var(--matsu);margin:40px 0 16px;padding-bottom:9px;border-bottom:2px solid var(--waku);letter-spacing:.02em;}
+  p{margin:0 0 20px;}
+  .compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14.5px;}
+  .compare th,.compare td{border:1px solid var(--waku);padding:11px 14px;text-align:left;vertical-align:top;}
+  .compare th{background:var(--matsu);color:#fff;font-weight:600;font-size:14px;}
+  .compare td:first-child{background:var(--paper);font-weight:700;color:var(--matsu);white-space:nowrap;}
+  h3{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--sumi);margin:34px 0 12px;}
+  .refs{font-size:13.5px;color:var(--usuzumi);}
+  .refs li{margin:0 0 7px 1.3em;line-height:1.75;}
+  .related{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 8px;}
+  .related a{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:10px 15px;font-size:14px;color:var(--matsu);}
+  .related a:hover{background:#fbf7ee;text-decoration:none;}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:40px 0 10px;flex-wrap:wrap;}
+  .pager a{font-size:14px;}
+  footer.site{background:var(--matsu);color:#eee;margin-top:54px;}
+  .foot-inner{max-width:760px;margin:0 auto;padding:34px 22px;}
+  .foot-inner .mincho{font-size:18px;color:#fff;display:block;margin-bottom:12px;}
+  .foot-inner p{font-size:13.5px;color:#dfe6df;line-height:1.85;margin-bottom:18px;}
+  .foot-inner h4{font-size:13px;color:#cdd8cd;font-weight:500;margin:16px 0 8px;letter-spacing:.05em;}
+  .foot-links{list-style:none;}
+  .foot-links li{margin-bottom:7px;font-size:14px;}
+  .foot-links a{color:#f1ece1;}
+  .copy{font-size:12px;color:#b9c5b9;margin-top:22px;}
+  @media(max-width:600px){h1{font-size:22px;}body{font-size:16px;}h2{font-size:19px;}.compare{font-size:13px;}.compare th,.compare td{padding:8px 9px;}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="site-inner">
+    <a href="https://iwata-monogatari.pages.dev/" class="site-title mincho">磐田物語。<small>遠江・見付のまちの歴史と文化</small></a>
+  </div>
+</header>
+<nav class="global">
+  <ul>
+    <li><a href="https://iwata-monogatari.pages.dev/hajimeni.html">はじめに</a></li>
+    <li><a href="https://iwata-monogatari.pages.dev/#themes">読みもの</a></li>
+    <li><a href="https://iwata-monogatari.pages.dev/chizu.html">地図で見る</a></li>
+    <li><a href="https://iwata-monogatari.pages.dev/#enshu">遠州弁</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="crumb"><a href="https://iwata-monogatari.pages.dev/">磐田物語</a> ／ <a href="https://iwata-monogatari.pages.dev/mitsuke-tenjin-hadaka-matsuri.html">見付天神裸祭【特集】</a> ／ 悉平太郎伝説の考察</div>
+
+  <span class="cat">特集・見付天神裸祭 ｜ 其の三</span>
+
+  <h1>悉平太郎伝説の考察<br>── 早太郎との異同と、猿神退治の系譜</h1>
+
+  <div class="lead">
+    まちを救った霊犬・悉平太郎。磐田で育った人なら、誰もが知る物語である。だが、この伝説を少し離れて眺めると、興味ぶかいことが見えてくる。同じ犬が、信州では「早太郎」と呼ばれていること。よく似た「犬が怪物を退治する話」が、全国に散らばっていること。そして、「悉平太郎」という呼び名が、じつは比較的新しく定着したものであること。伝説そのものを、民俗学の視点で読みといてみたい。
+  </div>
+
+  <div class="note">
+    <strong>この稿の立場。</strong>悉平太郎の物語は、史実ではなく、語り継がれてきた伝説（口承文芸）である。ここでは、その史実性を問うのではなく、「この伝説が、どのような型をもち、どう広がり、どう変化してきたか」を、民俗学の視点から考えたい。伝説を伝説として尊重しつつ、その背後にある人々の心のはたらきを読みとることが、ここでの目的である。
+  </div>
+
+  <h2>見付の悉平太郎、信州の早太郎</h2>
+
+  <p>まず、いちばん有名な「異同」から見ていこう。見付天神に伝わる霊犬は「悉平太郎（しっぺいたろう）」と呼ばれる。ところが、この犬の故郷とされる信濃の光前寺（こうぜんじ・長野県駒ヶ根市）では、同じ犬が「早太郎（はやたろう）」と呼ばれているのである。同一の犬が、遠州と信州で、別の名をもっている。さらに地域によっては「疾風太郎（しっぷうたろう／はやてたろう）」とも呼ばれる。</p>
+
+  <p>物語の骨格は共通している。人身御供を求める怪物がいて、それを恐れる犬を、旅の僧などが連れてきて退治させる、というものだ。見付では、僧が信州・光前寺から悉平太郎を借りてくる。そして退治を果たした犬は、深手を負いながらも信州へ帰り着き、息絶えたとも伝えられる。光前寺には、この早太郎をまつる塚があり、見付天神には悉平太郎の像と霊犬神社がある。遠く離れた二つの土地が、一匹の犬の物語で結ばれているのである。この縁により、磐田市と駒ヶ根市は、昭和四十二年（1967年）に友好都市の提携を結んでいる。</p>
+
+  <table class="compare">
+    <tr><th>項目</th><th>見付（遠州）</th><th>光前寺（信州）</th></tr>
+    <tr><td>犬の名</td><td>悉平太郎（しっぺいたろう）</td><td>早太郎（はやたろう）</td></tr>
+    <tr><td>役割</td><td>怪物に苦しむ見付を救う側</td><td>犬の故郷・出生地</td></tr>
+    <tr><td>退治の場</td><td>見付天神での人身御供の夜</td><td>（犬を貸し出した側）</td></tr>
+    <tr><td>結末</td><td>退治後、信州へ帰る／力尽きるとも</td><td>傷を負って帰り、葬られたと伝える</td></tr>
+    <tr><td>記念</td><td>悉平太郎像・霊犬神社</td><td>早太郎の塚・縁起</td></tr>
+  </table>
+
+  <h2>全国にある「猿神退治」の物語</h2>
+
+  <p>じつは、この「犬が怪物を退治する話」は、見付と信州だけのものではない。よく似た物語が、全国各地に散らばって伝わっている。民俗学では、こうした類型を「猿神退治（さるがみたいじ）」と呼ぶ。人身御供を要求する怪物――その正体はしばしば年老いた猿や狒々（ひひ）とされる――を、強い犬が退治する、という型である。</p>
+
+  <p>たとえば、宮城県には「竹箆太郎（しっぺいたろう）」、山形県には「めっけ犬」や「べんべこ太郎」、滋賀県や美作国（岡山県）の一宮・中山神社にも、よく似た話が伝わっている。古くは『今昔物語集』や『宇治拾遺物語』といった説話集にも、猿神に人身御供を捧げる話と、それを退治する話が見える。つまり、悉平太郎の物語は、この国に古くからある「猿神退治譚」という大きな物語の系譜の、遠州における一つのあらわれなのである。</p>
+
+  <p>このことは、悉平太郎の物語の価値を下げるものではない。むしろ逆である。全国に共通する「型」があり、それが土地ごとに、その土地の神社や地名、犬の名と結びついて、固有の物語として根づいていく。見付では、それが見付天神の祭りと結びつき、悉平太郎という名を得て、まちの誇りとなった。普遍的な型が、いかにして土地に固有のものになるか――その見事な一例が、この伝説なのである。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 520 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="猿神退治譚の系譜のなかの悉平太郎を示す図">
+        <rect x="0" y="0" width="520" height="220" fill="#fffdf8"/>
+        <text x="260" y="28" text-anchor="middle" font-size="13" class="svg-label">「猿神退治譚」という大きな型</text>
+        <!-- 中心の型 -->
+        <ellipse cx="260" cy="115" rx="78" ry="40" fill="#46624a" opacity="0.9"/>
+        <text x="260" y="110" text-anchor="middle" font-size="11" fill="#fff">猿神退治譚</text>
+        <text x="260" y="128" text-anchor="middle" font-size="9" fill="#dfe6df">犬が人身御供の怪物を退治</text>
+        <!-- 各地のあらわれ -->
+        <g font-size="10">
+          <circle cx="90" cy="60" r="22" fill="#a6713e"/><text x="90" y="58" text-anchor="middle" fill="#fff">見付</text><text x="90" y="71" text-anchor="middle" fill="#f3e7da" font-size="8">悉平太郎</text>
+          <circle cx="430" cy="60" r="22" fill="#e4dccb" stroke="#a6713e"/><text x="430" y="58" text-anchor="middle" fill="#85562c">信州</text><text x="430" y="71" text-anchor="middle" fill="#85562c" font-size="8">早太郎</text>
+          <circle cx="60" cy="160" r="20" fill="#e4dccb" stroke="#a6713e"/><text x="60" y="158" text-anchor="middle" fill="#85562c" font-size="9">宮城</text><text x="60" y="170" text-anchor="middle" fill="#85562c" font-size="8">竹箆太郎</text>
+          <circle cx="460" cy="160" r="20" fill="#e4dccb" stroke="#a6713e"/><text x="460" y="158" text-anchor="middle" fill="#85562c" font-size="9">山形</text><text x="460" y="170" text-anchor="middle" fill="#85562c" font-size="8">めっけ犬</text>
+        </g>
+        <g stroke="#c9bfa7" stroke-width="1.2">
+          <line x1="110" y1="76" x2="190" y2="100"/>
+          <line x1="410" y1="76" x2="330" y2="100"/>
+          <line x1="78" y1="146" x2="186" y2="124"/>
+          <line x1="442" y1="146" x2="334" y2="124"/>
+        </g>
+        <text x="260" y="205" text-anchor="middle" font-size="10" class="svg-sub">全国共通の「型」が、土地ごとに固有の物語として根づく</text>
+      </svg>
+      <figcaption>悉平太郎の物語は、全国にある「猿神退治譚」という型の、遠州における一つのあらわれである。共通する型が、土地ごとの神社・地名・犬の名と結びついて、固有の伝説として根づいていく。（系譜をもとにした模式図）</figcaption>
+    </div>
+  </figure>
+
+  <h2>「早太郎」から「悉平太郎」へ ── 表記の変遷</h2>
+
+  <p>もう一つ、興味ぶかい事実がある。じつは、磐田の側で「悉平太郎」という表記が標準になったのは、比較的近年のことらしいのである。民俗学者の大林太良（おおばやし・たりょう）は、一九七六年（昭和51年）の論考でこの伝説をあつかったとき、見出しを「早太郎」としている。また、一九五〇年代の旧『磐田市誌』でも、項目名は「早太郎」だったとされる。磐田の地元資料で「悉平太郎」が前面に出てくるのは、一九八四年（昭和59年）刊の『磐田の民俗』あたりからだと整理されている。</p>
+
+  <p>つまり、かつては磐田でも「早太郎」と呼ばれることがあり、「悉平太郎」という表記が地元の標準として定着していったのは、それほど古いことではない。伝説の名は、固定されたものではなく、語り継がれるなかで、ゆれ、選ばれ、定まっていく。今、磐田市のイメージキャラクター「しっぺい」として親しまれているこの犬の名も、そうした長い変遷の果てに、まちの顔となったのである。</p>
+
+  <h2>学術の世界での扱い</h2>
+
+  <p>この伝説は、民俗学の世界でも、早くから注目されてきた。先に挙げた大林太良は、神話学・民族学の大家であり、「遠州見付天神の裸祭と早太郎伝説」と題して、祭りと伝説を結びつけて論じた。その論考は、のちに『北の神々 南の英雄』（小学館、1995年）にも収められている。</p>
+
+  <p>さらにさかのぼれば、日本民俗学の祖・柳田國男（やなぎた・くにお）の仕事にも、この種の物語を読みとく視点がある。柳田は『一目小僧その他』などで、人身御供の伝承や、かつて神であった存在が時代とともに零落して妖怪になっていく過程（妖怪零落論）を論じた。猿神退治譚における「人身御供を求める怪物」も、この視点から見れば、かつて畏れられた古い神の、零落した姿なのかもしれない。悉平太郎の物語は、こうした日本の信仰の古層と、深いところでつながっているのである。</p>
+
+  <h2>伝説を、伝説として受け継ぐ</h2>
+
+  <p>悉平太郎の物語は、史実ではない。人身御供も、犬の怪物退治も、歴史の事実として確認できるものではない。けれど、だからといって、この物語の価値が損なわれるわけではまったくない。むしろ、史実でないからこそ、この物語は人々の心に長く生き続けてきた。恐ろしい怪物、犠牲になる娘、勇敢な犬、そして救済――そこには、人が物語に求めるものが、すべて詰まっている。</p>
+
+  <p>そして、この物語は、磐田の子どもたちに、口づてで受け継がれてきた。教科書ではなく、親から子へ、人から人へと語られてきた。八百年とも言われる時を越えて、一匹の犬の勇気が、今の子どもたちのなかに生きている。これは、なかなかに得がたいことである。文書や建物だけでなく、「語り」もまた、まちの大切な遺産なのだ。次の世代へ残したいのは、悉平太郎の像や霊犬神社だけでなく、その物語を「語る」という、ささやかで尊い習わしそのものなのだと思う。</p>
+
+  <h3>主な参考文献</h3>
+  <ul class="refs">
+    <li>大林太良「遠州見付天神の裸祭と早太郎伝説」『日本の神話』大月書店、1976年（再録『北の神々 南の英雄 ── 列島のフォークロア』小学館、1995年、pp.117–132）</li>
+    <li>柳田國男『一目小僧その他』（人身御供・妖怪零落論）</li>
+    <li>『磐田の民俗』磐田市民俗調査団編、磐田市、1984年（「悉平太郎」項）／旧『磐田市誌』（「早太郎」項）</li>
+    <li>駒ヶ根市『光前寺の早太郎伝説と大般若経』文化財解説（早太郎・大般若経奉納の縁起について）</li>
+    <li>磐田市公式ウェブサイト「悉平太郎伝説の紹介」</li>
+  </ul>
+
+  <div class="pager">
+    <a href="https://iwata-monogatari.pages.dev/hadaka-matsuri-kigen.html">← 其の二・起源をめぐる三つの説</a>
+    <a href="https://iwata-monogatari.pages.dev/hadaka-matsuri-hozon.html">其の四・無形文化財としての継承 →</a>
+  </div>
+
+  <h3>あわせて読みたい</h3>
+  <div class="related">
+    <a href="https://iwata-monogatari.pages.dev/mitsuke-tenjin">見付天神と、霊犬悉平太郎のものがたり</a>
+    <a href="https://iwata-monogatari.pages.dev/mitsuke-tenjin-hadaka-matsuri.html">見付天神裸祭【特集トップ】</a>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="foot-inner">
+    <span class="mincho">磐田物語。</span>
+    <p>静岡県磐田市の歴史と文化を、一市民の視点で書き留めていく記録の場。記載内容は個人の調査・覚え書きであり、正確性の向上に努めながら綴っています。</p>
+    <h4>運営者・大石浩之のほかの活動</h4>
+    <ul class="foot-links">
+      <li><a href="https://www.fujigaoka-service.co.jp/">富士ヶ丘サービス（不動産）磐田・袋井の不動産売却支援</a></li>
+      <li><a href="https://www.fujigaoka-service.info/">富士ヶ丘サービス（介護）高齢者向け住宅・親の家の相談</a></li>
+      <li><a href="https://hiroyukio0122.wixsite.com/for202904">磐田市政、ちょっと一言。市政・地域への提言</a></li>
+      <li><a href="https://note.com/fujigaoka_oishi">note（大石浩之）日々の発信・エッセイ</a></li>
+    </ul>
+    <h4>SNS</h4>
+    <ul class="foot-links">
+      <li><a href="https://www.facebook.com/oishi.hiroyuki.5">Facebook</a></li>
+      <li><a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/">Instagram</a></li>
+    </ul>
+    <div class="copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+
+</body>
+</html>
