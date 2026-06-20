@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>磐田タイムトラベル地図 ｜ 磐田物語</title>
+<meta name="description" content="磐田のまちを地図で旅する。旧見付学校、府八幡宮、遠江国分寺跡、見付宿、古墳――今いる場所の足もとに眠る歴史スポットを、地図とカードでたどる。いつもの道が、少し違って見える。">
+<meta property="og:title" content="磐田タイムトラベル地図 ｜ 磐田物語">
+<meta property="og:description" content="磐田の歴史スポットを地図でたどる。いつもの道が、少し違って見える。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f7f2e9;--paper-deep:#efe6d4;--ink:#3a312a;--ink-soft:#6b5d50;
+    --brown:#a6713e;--brown-deep:#85562c;--pine:#46624a;--line:#e0d4bd;
+    --card:#fffdf8;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+    --map-bg:#eae4d2;--map-green:#d9e0cc;--map-road:#cdbfa6;--map-river:#c4d4d6;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    line-height:1.9;font-size:17px;letter-spacing:.02em;
+    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(166,113,62,.035) 0, transparent 38%),
+      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);}
+  a{color:var(--brown-deep);text-underline-offset:3px;}
+
+  header.site{background:var(--card);border-bottom:1px solid var(--line);}
+  .bar{max-width:1040px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+  .brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;}
+  .brand .logo{font-family:"Shippori Mincho",serif;font-weight:800;font-size:26px;color:var(--ink);letter-spacing:.06em;}
+  .brand .logo .dot{color:var(--brown);}
+  .brand .tag{font-size:12.5px;color:var(--ink-soft);letter-spacing:.08em;}
+  nav.menu{display:flex;gap:26px;}
+  nav.menu a{text-decoration:none;color:var(--ink-soft);font-size:14.5px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
+  nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
+
+  .hero{max-width:1000px;margin:0 auto;padding:46px 24px 10px;}
+  .hero .eyebrow{font-size:13px;letter-spacing:.22em;color:var(--pine);font-weight:700;margin:0 0 14px;}
+  .hero h1{font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(28px,5vw,44px);line-height:1.4;margin:0 0 16px;color:var(--ink);letter-spacing:.04em;}
+  .hero h1 .accent{color:var(--brown-deep);background:linear-gradient(transparent 62%, rgba(166,113,62,.18) 62%);}
+  .hero p{font-size:16px;color:var(--ink-soft);margin:0;line-height:1.95;max-width:680px;}
+
+  .wrap{max-width:1000px;margin:0 auto;padding:14px 24px 8px;}
+
+  /* フィルタ */
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px;}
+  .chip{padding:7px 16px;font-size:13.5px;font-weight:500;border:1.5px solid var(--line);
+    border-radius:999px;background:var(--card);color:var(--ink-soft);cursor:pointer;transition:.18s;font-family:inherit;}
+  .chip:hover{border-color:var(--brown);color:var(--brown-deep);}
+  .chip.active{background:var(--brown);color:#fff;border-color:var(--brown);}
+
+  /* 地図 */
+  .maparea{position:relative;width:100%;background:var(--card);border:1px solid var(--line);
+    border-radius:8px;overflow:hidden;box-shadow:var(--shadow);}
+  .maparea svg{display:block;width:100%;height:auto;}
+  .pin{cursor:pointer;transition:transform .15s;transform-origin:center bottom;}
+  #map > *{pointer-events:none;}
+  #pins, #pins *{pointer-events:auto;}
+  .pin:hover{transform:scale(1.15);}
+  .pin.dim{opacity:.22;}
+  .pin .dot{fill:var(--brown);stroke:#fff;stroke-width:2;}
+  .pin .ring{fill:none;stroke:var(--brown);stroke-width:1.5;opacity:.4;}
+  .pin.sel .dot{fill:var(--pine);}
+  .pin text{font-family:"Zen Kaku Gothic New",sans-serif;font-size:11px;fill:var(--ink);font-weight:700;paint-order:stroke;stroke:#fffdf8;stroke-width:3px;}
+
+  .legend{font-size:12px;color:var(--ink-soft);margin:8px 2px 0;}
+
+  /* カード */
+  .cardwrap{max-width:1000px;margin:0 auto;padding:18px 24px 10px;}
+  .spotcard{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--brown);
+    border-radius:6px;padding:24px 28px;box-shadow:var(--shadow);display:none;}
+  .spotcard.show{display:block;animation:fade .25s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
+  .spotcard .cat{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--pine);margin:0 0 8px;}
+  .spotcard h2{font-family:"Shippori Mincho",serif;font-size:25px;font-weight:800;color:var(--ink);margin:0 0 6px;letter-spacing:.03em;}
+  .spotcard .hitokoto{font-size:16.5px;color:var(--brown-deep);font-weight:500;margin:0 0 18px;line-height:1.8;}
+  .spotcard .rows{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin-bottom:8px;}
+  .spotcard dt{font-weight:700;color:var(--pine);font-size:13.5px;white-space:nowrap;}
+  .spotcard dd{margin:0;font-size:14.5px;color:var(--ink);line-height:1.8;}
+  .spotcard .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px;}
+  .spotcard .tag{font-size:11.5px;color:var(--ink-soft);background:var(--paper-deep);border-radius:999px;padding:3px 11px;}
+  .spotcard .more{margin-top:16px;font-size:13.5px;}
+  .placeholder{text-align:center;color:var(--ink-soft);padding:34px 20px;font-size:15px;}
+  .placeholder .mincho{display:block;font-size:18px;color:var(--ink);margin-bottom:8px;}
+
+  /* スポット一覧 */
+  .listsec{max-width:1000px;margin:0 auto;padding:20px 24px 8px;}
+  .listsec h3{font-family:"Shippori Mincho",serif;font-size:18px;color:var(--ink);margin:0 0 14px;letter-spacing:.04em;}
+  .list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
+  .litem{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:14px 16px;cursor:pointer;transition:.16s;}
+  .litem:hover{border-color:var(--brown);transform:translateY(-2px);}
+  .litem.dim{display:none;}
+  .litem .ln{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16px;color:var(--ink);margin-bottom:4px;}
+  .litem .lc{font-size:12px;color:var(--pine);font-weight:700;}
+
+  .note{max-width:1000px;margin:24px auto 40px;padding:0 24px;}
+  .note .inner{background:var(--paper-deep);border-radius:4px;padding:20px 24px;font-size:13.5px;color:var(--ink-soft);line-height:1.85;}
+
+  footer.site{background:var(--ink);color:#e9e0d2;}
+  footer.site .inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  footer .f-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  footer .f-brand .dot{color:var(--brown);}
+  footer .f-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
+  footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
+
+  @media(max-width:760px){
+    nav.menu{display:none;}
+    .pin text{font-size:9px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/">
+      <span class="logo">磐田物語<span class="dot">。</span></span>
+      <span class="tag">遠江・見付のまちの歴史と文化</span>
+    </a>
+    <nav class="menu">
+      <a href="/hajimeni.html">はじめに</a>
+      <a href="/#themes">読みもの</a>
+      <a href="/chizu.html">地図で見る</a>
+      <a href="/#enshu">遠州弁</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="eyebrow">TIME TRAVEL MAP ｜ 地図で見る</p>
+  <h1>磐田タイムトラベル地図</h1>
+  <p>いつも通り過ぎているあの道、あの神社、あの坂に、どんな歴史が眠っているのか。磐田のまちを、地図でたどってみる。ピンをタップすると、その場所の物語と、現地での楽しみ方が出てくる。いつもの風景が、少し違って見えるはずである。</p>
+</section>
+
+<div class="wrap">
+  <div class="filters" id="filters"></div>
+
+  <div class="maparea">
+    <svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg" id="map" role="img" aria-label="磐田市の歴史スポット絵地図">
+      <!-- 背景 -->
+      <rect width="1000" height="600" fill="#eae4d2"/>
+      <!-- 緑地（自然・社叢など） -->
+      <ellipse cx="300" cy="180" rx="160" ry="110" fill="#d9e0cc" opacity="0.7"/>
+      <ellipse cx="720" cy="200" rx="120" ry="90" fill="#d9e0cc" opacity="0.6"/>
+      <ellipse cx="500" cy="470" rx="200" ry="100" fill="#d9e0cc" opacity="0.5"/>
+      <!-- 天竜川（西の縁） -->
+      <path d="M40,0 C70,150 30,300 80,460 C100,540 60,580 90,600 L0,600 L0,0 Z" fill="#c4d4d6" opacity="0.8"/>
+      <text x="46" y="320" fill="#7d9396" class="mincho" style="font-size:14px;" transform="rotate(-78 46 320)">天竜川</text>
+      <!-- 旧東海道（東西の街道） -->
+      <path d="M120,300 C300,270 520,250 760,235 C850,229 920,225 980,222" fill="none" stroke="#cdbfa6" stroke-width="9" stroke-linecap="round"/>
+      <path d="M120,300 C300,270 520,250 760,235 C850,229 920,225 980,222" fill="none" stroke="#bfa97e" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+      <text x="600" y="232" fill="#85562c" class="mincho" style="font-size:13px;font-weight:700;" transform="rotate(-3 600 232)">旧 東 海 道（見付宿）</text>
+      <!-- JR・磐田駅の示唆（南） -->
+      <line x1="120" y1="540" x2="980" y2="520" stroke="#b7a890" stroke-width="3" stroke-dasharray="10 6"/>
+      <circle cx="470" cy="531" r="7" fill="#fffdf8" stroke="#a6713e" stroke-width="3"/>
+      <text x="470" y="558" text-anchor="middle" fill="#6b5d50" style="font-size:12px;font-weight:700;">JR磐田駅</text>
+      <text x="900" y="512" fill="#9c8f7c" style="font-size:11px;">東海道本線</text>
+
+      <!-- エリア見出し -->
+      <text x="640" y="150" text-anchor="middle" fill="#a99b84" class="mincho" style="font-size:15px;letter-spacing:.2em;">― 見付エリア ―</text>
+      <text x="300" y="120" text-anchor="middle" fill="#a99b84" class="mincho" style="font-size:15px;letter-spacing:.2em;">― 国府・国分寺エリア ―</text>
+
+      <!-- ピンはJSで描画 -->
+      <g id="pins"></g>
+    </svg>
+  </div>
+  <p class="legend">※ この地図は位置関係をわかりやすくした「絵地図」です。実際の距離・方角とは異なります。ピンをタップすると解説が出ます。</p>
+</div>
+
+<div class="cardwrap">
+  <div class="spotcard" id="spotcard"></div>
+  <div class="placeholder" id="placeholder">
+    <span class="mincho">ピンをタップしてみてください。</span>
+    その場所に眠る物語と、現地での楽しみ方が出てきます。
+  </div>
+</div>
+
+<div class="listsec">
+  <h3>スポット一覧</h3>
+  <div class="list" id="list"></div>
+</div>
+
+<div class="note">
+  <div class="inner">
+    この地図は、磐田市の歴史スポットを、位置関係がわかりやすいように配置した絵地図である。実際の距離や方角は正確ではないので、現地を訪ねる際は、磐田市や観光協会の正式な地図・文化財マップもあわせて確認してほしい。史実は磐田市・観光協会等の公開情報をもとにしているが、誤りや古い情報があれば少しずつ直していきたい。スポットは順次増やしていく予定である。
+  </div>
+</div>
+
+<footer class="site">
+  <div class="inner">
+    <div class="f-brand">磐田物語<span class="dot">。</span></div>
+    <div class="f-note">静岡県磐田市の歴史と文化を、一市民の視点で書き留めていく記録の場。記載内容は個人の調査・覚え書きであり、正確性の向上に努めながら綴っています。</div>
+    <div class="copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+
+<script>
+/* ===== スポットデータ ===== */
+// cat: 古代/街道・宿場/神社仏閣/学校・教育/古墳・遺跡
+// x,y: 絵地図上の座標(0-1000, 0-600)
+// link: 関連する読みもの（あれば）
+const SPOTS = [
+  {
+    id:"gakko", name:"旧見付学校", cat:"学校・教育", x:690, y:300,
+    hitokoto:"明治の学校建築が今も残る、磐田の学びの記憶。",
+    point:"玄関のエンタシス柱、たくさんの窓、五階建ての高さ。城の石垣を使った土台にも注目。",
+    asobi:"まず正面から見上げる。次に少し離れて全体の高さを感じる。最後に、昔の子どもたちがここに通った姿を想像してみる。",
+    time:"15分", tags:["学校","明治","見付","建築","教育"], link:"/kyu-mitsuke-gakko.html"
+  },
+  {
+    id:"oumi", name:"淡海國玉神社", cat:"神社仏閣", x:730, y:270,
+    hitokoto:"遠江国の総社。国司が最初に参った、由緒ある古社。",
+    point:"旧見付学校のすぐ東。社殿の落ち着いたたたずまい、緑の境内。学校用地はこの神社の境内地が寄附された。",
+    asobi:"旧見付学校とセットで歩く。学びの場と祈りの場が隣り合う意味を感じてみる。",
+    time:"10分", tags:["神社","総社","見付","古代"], link:""
+  },
+  {
+    id:"tenjin", name:"見付天神（矢奈比賣神社）", cat:"神社仏閣", x:790, y:230,
+    hitokoto:"天下の奇祭・裸祭の舞台。霊犬しっぺい太郎の伝説の地。",
+    point:"参道のしっぺい太郎像。学問の神として知られる社。秋の裸祭では腰蓑姿の男衆が練り歩く。",
+    asobi:"参道を歩き、しっぺい太郎像に会う。祭りの日の熱気を思い浮かべながら拝殿へ。",
+    time:"20分", tags:["神社","裸祭","悉平太郎","見付","祭り"], link:"/matsuri-kurashi.html"
+  },
+  {
+    id:"shuku", name:"見付宿周辺", cat:"街道・宿場", x:560, y:255,
+    hitokoto:"東海道五十三次、28番目の宿場。旅人が行き交ったまち。",
+    point:"旧東海道の道筋、まちなみの区割り、本陣跡や問屋場の名残。少し高低のある地形も宿場らしさ。",
+    asobi:"旧東海道沿いをゆっくり歩く。道の幅や曲がり方に、宿場だったころの面影を探す。",
+    time:"30分", tags:["東海道","宿場","見付","街道"], link:"/mitsuke-shuku.html"
+  },
+  {
+    id:"akamatsu", name:"旧赤松家記念館", cat:"近代", x:620, y:380,
+    hitokoto:"咸臨丸で海を渡った幕臣・赤松家の、れんが塀が残る邸宅跡。",
+    point:"立派な門・塀・土蔵。赤松則良は近代海軍の礎を築いた人物。庭園もある。",
+    asobi:"門とれんが塀の造りをじっくり見る。明治の近代化を担った人の暮らしに思いを馳せる。",
+    time:"20分", tags:["近代","赤松則良","海軍","建築"], link:""
+  },
+  {
+    id:"kokubunji", name:"遠江国分寺跡", cat:"古代", x:380, y:230,
+    hitokoto:"奈良時代、聖武天皇の詔で建てられた国分寺の跡。特別史跡。",
+    point:"広い史跡公園。七重塔や金堂があった伽藍の配置。全国で初めて建物配置が明らかになった場所。",
+    asobi:"広々とした公園を歩き、かつてそびえた七重塔の高さを想像する。塔の礎石を探してみる。",
+    time:"25分", tags:["古代","奈良時代","国分寺","特別史跡","寺谷"], link:"/totoumi-kokufu.html"
+  },
+  {
+    id:"fuhachiman", name:"府八幡宮", cat:"神社仏閣", x:300, y:300,
+    hitokoto:"遠江国府の守護神として勧請された、国司ゆかりの社。",
+    point:"県指定文化財の楼門。広い自然林の境内（ふるさと自然百選）。国司・桜井王が勧請したと伝わる。",
+    asobi:"楼門をくぐり、自然林に包まれた境内を歩く。国府の時代を見守ってきた木々を見上げる。",
+    time:"20分", tags:["神社","国府","楼門","古代"], link:"/totoumi-kokufu.html"
+  },
+  {
+    id:"kofu", name:"遠江国府関連地", cat:"古代", x:450, y:330,
+    hitokoto:"かつて遠江国の政治の中心、国府が置かれたあたり。",
+    point:"国府の正確な場所はなお研究中。御殿・二之宮遺跡など、手がかりとなる遺跡が周辺にある。",
+    asobi:"「ここが国の中心だった」と想像しながら歩く。地名や地形に古代の痕跡を探す。",
+    time:"15分", tags:["古代","国府","遺跡"], link:"/totoumi-kokufu.html"
+  },
+  {
+    id:"choshizuka", name:"銚子塚古墳", cat:"古墳・遺跡", x:250, y:450,
+    hitokoto:"全長108メートル。磐田の繁栄を物語る、古墳時代前期の大古墳。",
+    point:"前方後円墳の大きな墳丘。小銚子塚古墳とあわせて国の史跡。向笠竹之内に位置する。",
+    asobi:"墳丘の大きさを体で感じる。1600年以上前、この地に大きな力があったことを思う。",
+    time:"20分", tags:["古墳","古墳時代","史跡","向笠"], link:""
+  },
+  {
+    id:"bunko", name:"磐田文庫", cat:"学校・教育", x:660, y:255,
+    hitokoto:"幕末に生まれた、地域に開かれた私設の図書館。",
+    point:"旧見付学校の北側。国学者・大久保忠尚が創建。蔵書は見付学校の設立も支えた。",
+    asobi:"旧見付学校・淡海國玉神社とあわせて巡る。学びのまち磐田の原点を感じる。",
+    time:"10分", tags:["学校","幕末","図書館","国学","見付"], link:"/kyu-mitsuke-gakko.html"
+  }
+];
+
+const CATS = ["すべて","古代","街道・宿場","神社仏閣","学校・教育","近代","古墳・遺跡"];
+let activeCat = "すべて";
+let selected = null;
+
+const pinsEl = document.getElementById("pins");
+const filtersEl = document.getElementById("filters");
+const listEl = document.getElementById("list");
+const cardEl = document.getElementById("spotcard");
+const phEl = document.getElementById("placeholder");
+
+function esc(s){return s.replace(/[&<>]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[m]));}
+
+// フィルタ
+CATS.forEach(c=>{
+  const b=document.createElement("button");
+  b.className="chip"+(c==="すべて"?" active":"");
+  b.textContent=c;
+  b.onclick=()=>{
+    activeCat=c;
+    document.querySelectorAll("#filters .chip").forEach(x=>x.classList.remove("active"));
+    b.classList.add("active");
+    renderPins(); renderList();
+  };
+  filtersEl.appendChild(b);
+});
+
+// ピン描画
+function renderPins(){
+  pinsEl.innerHTML = SPOTS.map(s=>{
+    const dim = (activeCat!=="すべて" && s.cat!==activeCat) ? " dim":"";
+    const sel = (selected===s.id) ? " sel":"";
+    return `<g class="pin${dim}${sel}" data-id="${s.id}" transform="translate(${s.x},${s.y})">
+      <circle cx="0" cy="-4" r="22" fill="transparent"/>
+      <circle class="ring" cx="0" cy="0" r="13"/>
+      <circle class="dot" cx="0" cy="0" r="7"/>
+      <text x="0" y="-18" text-anchor="middle">${esc(s.name)}</text>
+    </g>`;
+  }).join("");
+  pinsEl.querySelectorAll(".pin").forEach(p=>{
+    p.onclick=()=>select(p.dataset.id);
+  });
+}
+
+// 一覧描画
+function renderList(){
+  listEl.innerHTML = SPOTS.map(s=>{
+    const dim = (activeCat!=="すべて" && s.cat!==activeCat) ? " dim":"";
+    return `<div class="litem${dim}" data-id="${s.id}">
+      <div class="ln">${esc(s.name)}</div>
+      <div class="lc">${esc(s.cat)}</div>
+    </div>`;
+  }).join("");
+  listEl.querySelectorAll(".litem").forEach(p=>{
+    p.onclick=()=>{ select(p.dataset.id); document.querySelector(".maparea").scrollIntoView({behavior:"smooth",block:"center"}); };
+  });
+}
+
+// 選択→カード表示
+function select(id){
+  selected=id;
+  const s=SPOTS.find(x=>x.id===id);
+  if(!s) return;
+  phEl.style.display="none";
+  cardEl.className="spotcard show";
+  cardEl.innerHTML=`
+    <p class="cat">${esc(s.cat)}</p>
+    <h2>${esc(s.name)}</h2>
+    <p class="hitokoto">${esc(s.hitokoto)}</p>
+    <dl class="rows">
+      <dt>見るポイント</dt><dd>${esc(s.point)}</dd>
+      <dt>楽しみ方</dt><dd>${esc(s.asobi)}</dd>
+      <dt>滞在の目安</dt><dd>${esc(s.time)}</dd>
+    </dl>
+    <div class="tags">${s.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>
+    ${s.link?`<div class="more"><a href="${s.link}">この場所の読みものを読む →</a></div>`:""}
+  `;
+  renderPins();
+}
+
+renderPins();
+renderList();
+</script>
+
+</body>
+</html>
