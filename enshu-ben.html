@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>遠州弁辞典 ｜ 磐田物語</title>
-<meta name="description" content="磐田・浜松など遠州地方で使われる方言「遠州弁」の辞典。意味や使い方を検索でき、用例も添えた、遠州弁の言葉を集めた覚え書き。">
+<meta name="description" content="磐田・中遠地域を中心とした遠州弁の辞典。語彙を意味・用例つきで検索でき、語尾や否定・推量などの文法の特徴もまとめた、遠州のことばの覚え書き。">
 <meta property="og:title" content="遠州弁辞典 ｜ 磐田物語">
-<meta property="og:description" content="遠州地方の方言「遠州弁」を集めた辞典。意味と用例つき、検索もできる。">
+<meta property="og:description" content="磐田・中遠地域の遠州弁を集めた辞典。意味と用例つき、文法の解説つき、検索もできる。">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,15 +41,24 @@
   nav.menu a{text-decoration:none;color:var(--ink-soft);font-size:14.5px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
   nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
 
-  .hero{max-width:900px;margin:0 auto;padding:52px 24px 24px;}
+  .hero{max-width:900px;margin:0 auto;padding:52px 24px 18px;}
   .hero .eyebrow{font-size:13px;letter-spacing:.22em;color:var(--pine);font-weight:700;margin:0 0 16px;}
   .hero h1{font-family:"Shippori Mincho",serif;font-weight:800;
     font-size:clamp(30px,5vw,46px);line-height:1.4;margin:0 0 18px;color:var(--ink);letter-spacing:.04em;}
   .hero h1 .accent{color:var(--brown-deep);background:linear-gradient(transparent 62%, rgba(166,113,62,.18) 62%);}
-  .hero p{font-size:16.5px;color:var(--ink-soft);margin:0;line-height:2;max-width:640px;}
+  .hero p{font-size:16.5px;color:var(--ink-soft);margin:0;line-height:2;max-width:660px;}
 
-  /* 検索・操作エリア */
-  .tools{max-width:900px;margin:0 auto;padding:8px 24px 0;}
+  .tabs{max-width:900px;margin:0 auto;padding:18px 24px 0;display:flex;gap:8px;border-bottom:1px solid var(--line);}
+  .tab{padding:11px 22px;font-size:15px;font-weight:700;font-family:"Shippori Mincho",serif;
+    border:none;background:none;color:var(--ink-soft);cursor:pointer;border-bottom:3px solid transparent;
+    margin-bottom:-1px;transition:.18s;letter-spacing:.04em;}
+  .tab:hover{color:var(--brown-deep);}
+  .tab.active{color:var(--brown-deep);border-color:var(--brown);}
+
+  .panel{display:none;}
+  .panel.active{display:block;}
+
+  .tools{max-width:900px;margin:0 auto;padding:22px 24px 0;}
   .search-box{position:relative;margin-bottom:18px;}
   .search-box input{
     width:100%;padding:15px 18px 15px 48px;font-size:16px;
@@ -64,8 +73,7 @@
   .chip.active{background:var(--brown);color:#fff;border-color:var(--brown);}
   .count{font-size:13px;color:var(--ink-soft);margin:10px 2px 0;}
 
-  /* 辞典リスト */
-  .dict{max-width:900px;margin:0 auto;padding:18px 24px 56px;}
+  .dict{max-width:900px;margin:0 auto;padding:18px 24px 24px;}
   .entry{background:var(--card);border:1px solid var(--line);border-radius:5px;
     padding:22px 26px;margin-bottom:14px;box-shadow:var(--shadow);transition:.18s;}
   .entry:hover{border-color:var(--brown);}
@@ -81,8 +89,23 @@
   .empty{text-align:center;padding:50px 20px;color:var(--ink-soft);}
   .empty .mincho{display:block;font-size:18px;color:var(--ink);margin-bottom:8px;}
 
+  .grammar{max-width:900px;margin:0 auto;padding:30px 24px 24px;}
+  .gsec{margin-bottom:40px;}
+  .gsec h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:22px;color:var(--ink);
+    letter-spacing:.03em;margin:0 0 16px;padding-left:14px;border-left:4px solid var(--brown);line-height:1.5;}
+  .gsec p{margin:0 0 16px;font-size:16px;color:var(--ink);line-height:1.95;}
+  .gtable{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);
+    border-radius:5px;overflow:hidden;box-shadow:var(--shadow);font-size:14.5px;}
+  .gtable th{background:var(--paper-deep);color:var(--ink);font-weight:700;text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);font-size:13.5px;}
+  .gtable td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--ink);vertical-align:top;}
+  .gtable tr:last-child td{border-bottom:none;}
+  .gtable td .ex{color:var(--ink-soft);font-size:13px;display:block;margin-top:3px;}
+  .gnote{background:var(--paper-deep);border-radius:4px;padding:18px 22px;font-size:14.5px;color:var(--ink-soft);line-height:1.85;margin:16px 0;}
+  .gnote .mincho{color:var(--brown-deep);font-size:15px;}
+
   .note{max-width:900px;margin:0 auto 40px;padding:0 24px;}
   .note .inner{background:var(--paper-deep);border-radius:4px;padding:22px 26px;font-size:14px;color:var(--ink-soft);line-height:1.85;}
+  .note .src{margin-top:12px;font-size:12.5px;}
 
   footer.site{background:var(--ink);color:#e9e0d2;}
   footer.site .inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
@@ -94,6 +117,9 @@
   @media(max-width:760px){
     nav.menu{display:none;}
     .entry .cat{margin-left:0;}
+    .tabs{overflow-x:auto;}
+    .gtable{font-size:13px;}
+    .gtable th,.gtable td{padding:8px 10px;}
   }
 </style>
 </head>
@@ -114,25 +140,96 @@
 </header>
 
 <section class="hero">
-  <p class="eyebrow">ENSHU BEN ｜ 遠州のことば</p>
+  <p class="eyebrow">ENSHU BEN ｜ 磐田・中遠のことば</p>
   <h1>遠州弁辞典<br><span class="accent">ことばに残る、まちの記憶</span></h1>
-  <p>「だら」「だに」「やぶせったい」── 磐田・浜松をはじめ遠州地方で使われてきた方言、遠州弁。何気なく使っている言葉も、外の人には通じない、このまちならではのことばかもしれない。意味と使い方を集めた、ささやかな覚え書きである。</p>
+  <p>「だら」「だに」「やぶせったい」── 磐田を中心とする中遠地域で受け継がれてきた方言、遠州弁。何気なく使っている言葉も、外の人には通じない、このまちならではのことばかもしれない。語彙と、その使い方、そして文法の特徴を集めた覚え書きである。</p>
 </section>
 
-<div class="tools">
-  <div class="search-box">
-    <span class="icon">🔍</span>
-    <input type="text" id="search" placeholder="ことばを検索（例：だら、やぶせったい、意味の言葉でも）" autocomplete="off">
-  </div>
-  <div class="filters" id="filters"></div>
-  <p class="count" id="count"></p>
+<div class="tabs">
+  <button class="tab active" data-tab="dict">ことばを引く</button>
+  <button class="tab" data-tab="grammar">文法と語法</button>
 </div>
 
-<div class="dict" id="dict"></div>
+<div class="panel active" id="panel-dict">
+  <div class="tools">
+    <div class="search-box">
+      <span class="icon">🔍</span>
+      <input type="text" id="search" placeholder="ことばを検索（例：だら、やぶせったい、意味の言葉でも）" autocomplete="off">
+    </div>
+    <div class="filters" id="filters"></div>
+    <p class="count" id="count"></p>
+  </div>
+  <div class="dict" id="dict"></div>
+</div>
+
+<div class="panel" id="panel-grammar">
+  <div class="grammar">
+
+    <div class="gsec">
+      <h2>遠州弁という、ことばの土地</h2>
+      <p>磐田を中心とする中遠地域は、日本語の東西方言が交わる「漸移地帯」にある。否定に西日本ふうの「〜ん」を使う一方、東日本の特徴も併せ持つ。天竜川の東西、中遠と東遠でも少しずつことばが変わる、連続体としての方言である。同じ遠州弁でも、浜松・袋井・磐田で違いがあり、世代によっても使い方が移ろっている。</p>
+    </div>
+
+    <div class="gsec">
+      <h2>語尾でわかる、遠州弁</h2>
+      <p>遠州弁らしさは、文末に最もよく表れる。同じ「〜だろう」でも、確信の度合いや相手への配慮によって「ずら・だら・ら」を使い分け、さらにイントネーションでニュアンスが変わる。近年は古い「ずら」が衰退し、「だら」「ら」が若い世代まで広く使われている。</p>
+      <table class="gtable">
+        <tr><th>言い方</th><th>意味・はたらき</th><th>例</th></tr>
+        <tr><td>だら／ら</td><td>〜だろう、〜でしょ。推量・確認を求める。遠州弁の代表格。</td><td>行くら？<span class="ex">＝行くでしょ？</span></td></tr>
+        <tr><td>ずら</td><td>〜だろう。古くからの推量表現。今は高齢層中心で衰退傾向。</td><td>そうずらなあ。<span class="ex">＝そうだろうなあ。</span></td></tr>
+        <tr><td>だに／に</td><td>〜だよ、〜なんだよ。断定・念押し。名詞・形容動詞には「だに」、動詞・形容詞には「に」。</td><td>明日から10月だに。／早いに。</td></tr>
+        <tr><td>だもんで</td><td>〜だから。理由を、押しつけずやわらかく述べる。静岡を代表する接続表現。</td><td>雨だもんで、傘持ってきな。</td></tr>
+        <tr><td>じゃんね／じゃんか</td><td>〜じゃない。同意を求めたり、話を次へ繋ぐ。「じゃんか」は念押し・詰問。</td><td>昨日さ、〜だったじゃんね。</td></tr>
+        <tr><td>け</td><td>〜か。「〜か？」の角を取り、やわらかく問う。</td><td>これけ？<span class="ex">＝これなの？</span></td></tr>
+      </table>
+      <div class="gnote"><span class="mincho">同じ「だら」でも、イントネーション次第。</span><br>行くら？（上げる）＝行くよね？／ 行くらぁ（下げて伸ばす）＝行くに決まってる／ 行くらっ？（つめる）＝行きましょうよ。限られた語尾に抑揚を掛けて、繊細に気持ちを伝え分ける。</div>
+    </div>
+
+    <div class="gsec">
+      <h2>否定・推量・命令・誘い</h2>
+      <p>文法の核は、否定・推量・勧誘・命令にある。否定は西日本ふうの「〜ん」。過去否定には古い「〜なんだ」と新しい「〜んかった」が、世代で競合する。誘いの「〜まい」、やわらかい命令の「〜りん／〜きん」「〜ない」「〜ごう」も特徴的である。</p>
+      <table class="gtable">
+        <tr><th>はたらき</th><th>遠州弁</th><th>例</th></tr>
+        <tr><td>否定</td><td>〜ん</td><td>行かん<span class="ex">＝行かない</span></td></tr>
+        <tr><td>過去否定</td><td>〜んかった／〜なんだ</td><td>降らなんだ<span class="ex">＝降らなかった</span></td></tr>
+        <tr><td>可能（ら抜き・れ足す）</td><td>食べれる／行けれる</td><td>これ食べれる？／一人で行けれる</td></tr>
+        <tr><td>強い不可能</td><td>〜やせん／〜れやせん</td><td>そんなん行けやせん<span class="ex">＝到底行けない</span></td></tr>
+        <tr><td>勧誘</td><td>〜まい(か)／やらまい</td><td>みんなでやらまい<span class="ex">＝みんなでやろう</span></td></tr>
+        <tr><td>やわらか命令</td><td>〜ない／〜ごう／〜りん</td><td>食べてごぅ／早く起きない</td></tr>
+      </table>
+    </div>
+
+    <div class="gsec">
+      <h2>「ん」に集まる助詞、品詞のつくりかえ</h2>
+      <p>会話のテンポを重んじて、格助詞「が・の・を・に」がしばしば落ちたり、撥音「ん」に置きかわったりする。また、形容動詞の語尾に「い」を付けて形容詞にする、独特の言い回しもある。</p>
+      <table class="gtable">
+        <tr><th>種類</th><th>標準語 → 遠州弁</th></tr>
+        <tr><td rowspan="3">助詞が「ん」に</td><td>雨が降ってきた → 雨ん降ってきた</td></tr>
+        <tr><td>俺の手ぬぐい → 俺ん手ぬぐい</td></tr>
+        <tr><td>大工になった → 大工んなった</td></tr>
+        <tr><td rowspan="2">形容動詞→形容詞</td><td>横着な → 横着い／上手な → 上手い(じょうずい)</td></tr>
+        <tr><td>賑やかな → 賑やかい／丈夫な → 丈夫い</td></tr>
+      </table>
+    </div>
+
+    <div class="gsec">
+      <h2>「イワタ」のアクセント</h2>
+      <p>遠州では、ことばの最初の音を強く言う「頭高型」が好まれる。標準語では平板に言う「あくび」も、遠州では「あ」を強く言う。地名でもこの傾向は強い。「磐田」を、全国的な放送では平板に「イワタ」と読むが、地元では「イ」を強く言う頭高型の「イワタ」である。</p>
+      <div class="gnote"><span class="mincho">「ジュビロ磐田」のアクセント問題。</span><br>1993年のJリーグ発足で全国放送が平板の「イワタ」と読んだところ、地元から「発音が違う」と声が上がった。地元放送局やクラブの働きかけで、今では全国でも地元と同じ頭高型の「イワタ」で読まれている。アクセントは、地域への帰属意識そのものなのである。</div>
+    </div>
+
+    <div class="gsec">
+      <h2>「やらまいか」── ことばに宿る気質</h2>
+      <p>遠州人の気質を最もよく表すのが「やらまいか（一緒にやろうじゃないか、とにかくやってみよう）」である。失敗を恐れず新しいことに挑む進取の気性を表し、ヤマハやスズキといった企業を生んだ風土の支柱ともいわれる。一方で、「いいにする」「やっきりこく」「しょんない」といった言葉には、対立を避け、穏やかに物事を収めようとする心性もにじむ。挑む気概と、和を尊ぶやわらかさ。その両方が、遠州のことばには息づいている。</p>
+    </div>
+
+  </div>
+</div>
 
 <div class="note">
   <div class="inner">
-    この辞典は、遠州地方で使われる代表的な方言を集めたものである。遠州弁は浜松・袋井・磐田など地域によって、また世代によって使い方や意味に違いがある。ここに載せた意味や用例は一例であり、土地や人によって異なる場合がある。「この言葉も入れてほしい」「この意味は少し違う」といったお気づきの点は、これから少しずつ書き加え、直していきたい。
+    この辞典は、磐田・中遠地域を中心とした遠州弁を集めたものである。遠州弁は浜松・袋井・磐田など地域によって、また世代によって使い方や意味に違いがあり、ここに載せた意味や用例は一例である。土地や人によって異なる場合があり、お気づきの点は少しずつ書き加え、直していきたい。
+    <div class="src">主な参考：磐田市周辺部の遠州弁に関する調査報告（音声・形態・語用論的特徴の分析）／磐田市立図書館所蔵『磐田地方の方言集』ほか郷土資料／静岡大学・国立国語研究所系の方言研究 ほか</div>
   </div>
 </div>
 
@@ -145,41 +242,68 @@
 </footer>
 
 <script>
-// ===== 遠州弁データ（初版） =====
-// cat: 語尾・あいさつ / 形容・ようす / 動作・行い / 程度・量 / 呼びかけ・指示
 const DATA = [
-  {w:"だら", k:"だら", cat:"語尾・あいさつ", m:"〜だろう、〜でしょう。同意や確認を求めるときの語尾。遠州弁を代表する言い回し。", ex:"明日は晴れるだら。", std:"明日は晴れるだろう。"},
-  {w:"だに", k:"だに", cat:"語尾・あいさつ", m:"〜だよ、〜なんだよ。念を押したり、教えたりするときの語尾。", ex:"そこ、危ないだに。", std:"そこ、危ないんだよ。"},
-  {w:"ら", k:"ら／らぁ", cat:"語尾・あいさつ", m:"〜だろう、〜でしょ。「だら」と同じく確認・同意を求める。語尾を伸ばして「らぁ」とも。", ex:"おまえも行くら？", std:"おまえも行くだろ？"},
-  {w:"に", k:"に／にぃ", cat:"語尾・あいさつ", m:"〜よ、〜ね。文末に添えて、やわらかく念を押す。", ex:"ちゃんと食べないに。", std:"ちゃんと食べなさいよ。"},
-  {w:"だもんで", k:"だもんで", cat:"語尾・あいさつ", m:"だから、なので。理由を述べるときに使う。三河弁とも共通する。", ex:"雨だもんで、傘持ってきな。", std:"雨だから、傘を持っていきなさい。"},
+  {w:"だら", k:"だら", cat:"語尾・あいさつ", m:"〜だろう、〜でしょう。推量や確認を求めるときの語尾。遠州弁を代表する言い回し。古い「ずら」に代わって若い世代まで広く使う。", ex:"今日の夜ご飯カレーだら？", std:"今夜はカレーでしょ？"},
+  {w:"ずら", k:"ずら", cat:"語尾・あいさつ", m:"〜だろう。古くからの推量表現。「だら」より古風で、今は高齢層中心。衰退傾向にある。", ex:"そうずらなあ。", std:"そうだろうなあ。"},
+  {w:"ら", k:"ら／らぁ", cat:"語尾・あいさつ", m:"〜だろう、〜でしょ。「だら」と同じく確認・同意を求める。語尾を伸ばして「らぁ」とも。動詞・形容詞に付きやすい。", ex:"飲むら？", std:"飲むでしょ？／飲む？"},
+  {w:"だに", k:"だに", cat:"語尾・あいさつ", m:"〜だよ、〜なんだよ。断定や情報提供。名詞・形容動詞に付く。「に」より主張や念押しが強い。", ex:"明日から10月だに。", std:"明日から10月だよ。"},
+  {w:"に", k:"に／にぃ", cat:"語尾・あいさつ", m:"〜よ、〜ね。動詞・形容詞に直接付いて、やわらかく事実を伝える。", ex:"早いに。", std:"早いよ。"},
+  {w:"だもんで", k:"だもんで", cat:"語尾・あいさつ", m:"〜だから、〜なので。理由を、押しつけずやわらかく述べる。静岡・遠州を代表する接続表現。形容詞には「もんで」。", ex:"寝不足だもんで、眠いわ。", std:"寝不足だから、眠いよ。"},
+  {w:"じゃんね", k:"じゃんね", cat:"語尾・あいさつ", m:"〜じゃない、〜だよね。同意を求めたり、話を次へ繋いだりする。「じゃんか」は念押し・詰問。", ex:"昨日さ、雨だったじゃんね。", std:"昨日、雨だったよね。"},
+  {w:"け", k:"け", cat:"語尾・あいさつ", m:"〜か。「〜か？」の角を取って、やわらかく問う。体言にも用言にも付く。", ex:"これけ？", std:"これなの？"},
+  {w:"っち", k:"っち", cat:"語尾・あいさつ", m:"〜のところ、〜の家。親しい人や集団を表す接尾辞。「オレっち」で自分の家・自分たち。", ex:"今度、〇〇っち行ってみる？", std:"今度、〇〇の家に行ってみる？"},
+  {w:"っちゅう", k:"っちゅう", cat:"語尾・あいさつ", m:"〜という。「〜という」がつづまった形。", ex:"田中っちゅう人、知っとる？", std:"田中という人、知ってる？"},
+
   {w:"やぶせったい", k:"やぶせったい", cat:"形容・ようす", m:"うっとうしい、わずらわしい、じれったい。髪が目にかかるような、もどかしい不快感にも使う。", ex:"前髪が伸びてやぶせったい。", std:"前髪が伸びてうっとうしい。"},
-  {w:"ずく", k:"ずく", cat:"形容・ようす", m:"物事に取りかかる気力・根気。「ずくがない」で、やる気が出ない・面倒がる意。", ex:"今日はずくが出んわ。", std:"今日はやる気が出ないなあ。"},
-  {w:"とぶ", k:"とぶ", cat:"動作・行い", m:"走る。遠州では「飛ぶ」ではなく「走る」の意で使うことがある。", ex:"急ぐで、とんでいきな。", std:"急ぐから、走っていきなさい。"},
-  {w:"うっちゃる", k:"うっちゃる", cat:"動作・行い", m:"捨てる、放っておく。「うっちゃっとく」で放置する意。", ex:"いらんもんは、うっちゃっといて。", std:"いらない物は、捨てておいて。"},
-  {w:"ほかる", k:"ほかる", cat:"動作・行い", m:"捨てる。「うっちゃる」と近い。「ほかっといて」で捨てておいて。", ex:"その紙、ほかっといて。", std:"その紙、捨てておいて。"},
-  {w:"こすい", k:"こすい", cat:"形容・ようす", m:"ずるい、せこい。", ex:"あいつ、こすいことするなあ。", std:"あいつ、ずるいことをするなあ。"},
   {w:"えらい", k:"えらい", cat:"形容・ようす", m:"疲れた、しんどい。立派の意ではなく、体がきつい意で使う。", ex:"今日は歩きすぎてえらいわ。", std:"今日は歩きすぎて疲れたよ。"},
-  {w:"しょんない", k:"しょんない", cat:"形容・ようす", m:"しょうがない、仕方がない。", ex:"終わったことはしょんないら。", std:"終わったことは仕方ないだろう。"},
-  {w:"いっちょ", k:"いっちょ", cat:"程度・量", m:"とても、たくさん、いっぱい。「いっちょ」で強調することがある。", ex:"今日はいっちょ働いたわ。", std:"今日はたくさん働いたよ。"},
-  {w:"ばか", k:"ばか", cat:"程度・量", m:"とても、すごく。程度を強める言い方。けなす意味ではない。", ex:"今日はばか暑いなあ。", std:"今日はすごく暑いなあ。"},
-  {w:"どべ", k:"どべ", cat:"程度・量", m:"最下位、びり。", ex:"かけっこでどべだったわ。", std:"かけっこでびりだったよ。"},
+  {w:"しょんない", k:"しょんない", cat:"形容・ようす", m:"しょうがない、仕方がない。諦めの気持ちから、軽い非難まで幅広く使う。", ex:"見つからんもんはしょんないら。", std:"見つからない物は仕方ないよ。"},
+  {w:"こすい", k:"こすい", cat:"形容・ようす", m:"ずるい、せこい。", ex:"あいつ、こすいことするなあ。", std:"あいつ、ずるいことをするなあ。"},
+  {w:"こわい", k:"こわい", cat:"形容・ようす", m:"（食べ物などが）硬い。恐怖の意ではなく、餅などの物理的な硬さを指す。", ex:"このお餅、まだこわいわ。", std:"このお餅、まだ硬いよ。"},
+  {w:"おぞい", k:"おぞい", cat:"形容・ようす", m:"粗悪な、品質が悪い、みすぼらしい。", ex:"おぞい品物つかまされた。", std:"粗悪な品物を買わされた。"},
+  {w:"みるい", k:"みるい", cat:"形容・ようす", m:"幼い、未熟な。元は茶業で、摘む前の柔らかい新芽を指した言葉。転じて人の若さ・未熟さに。", ex:"1年生はみるくて可愛いなあ。", std:"1年生は幼くて可愛いなあ。"},
+  {w:"ひずるしい", k:"ひずるしい", cat:"形容・ようす", m:"まぶしい。日照の強い遠州の、夏のカンカン照りの眩しさを表す。「ひどろしい」とも。", ex:"今日はひずるしくって目が開けれん。", std:"今日はまぶしくて目が開けられない。"},
+  {w:"ぶしょったい", k:"ぶしょったい", cat:"形容・ようす", m:"だらしない、無精な感じでみっともない。", ex:"そんなぶしょったい格好で行くの。", std:"そんなだらしない格好で行くの。"},
   {w:"おちゃっぴい", k:"おちゃっぴい", cat:"形容・ようす", m:"おしゃべりで活発な（女の子）。お転婆。", ex:"あの子はおちゃっぴいだなあ。", std:"あの子はお転婆だなあ。"},
+  {w:"ちんちん", k:"ちんちん", cat:"形容・ようす", m:"（お湯などが）とても熱いこと。やかんが沸いた状態など。", ex:"お湯がちんちんだに、気いつけて。", std:"お湯がすごく熱いから、気をつけて。"},
+  {w:"いずようない", k:"いずようない", cat:"形容・ようす", m:"居づらい、居心地が悪い、居場所がない。", ex:"あの場はいずようなかったわ。", std:"あの場は居づらかったよ。"},
+
+  {w:"いいにする", k:"いいにする", cat:"気持ち", m:"〜にしておく、やめておく、これで良しとする。対立を避け、穏やかに物事を収めるときの言葉。中止・妥協・許容・中断と幅広く使う。", ex:"雨だで、今日のジョギングはいいにするか。", std:"雨だから、今日のジョギングはやめておくか。"},
+  {w:"やっきりこく", k:"やっきりこく", cat:"気持ち", m:"腹が立つ、いらいらする。直接ぶつけられず、諦めまじりに愚痴としてこぼすような、鬱屈した怒り。「やっきりする」とも。", ex:"あの人またサボってて、やっきりするわ。", std:"あの人またサボってて、腹が立つよ。"},
+  {w:"ちんぷりかえる", k:"ちんぷりかえる", cat:"気持ち", m:"ふてくされる、すねる、へそを曲げる。激しい怒りではなく、どこか愛嬌のあるすね方。", ex:"ちょっと言われてちんぷりかえっとる。", std:"少し言われてふてくされている。"},
+  {w:"やいやい", k:"やいやい", cat:"気持ち", m:"やれやれ、いやはや。がっかりした時や呆れた時に発する言葉。", ex:"やいやい、もっと気いつけて話なよ。", std:"やれやれ、もっと気をつけて話しなよ。"},
+
+  {w:"ど", k:"ど〜", cat:"程度・量", m:"ものすごく、超。強める接頭辞。「どでかい」など。やや乱暴できつい印象。", ex:"どでかい荷物が届いた。", std:"ものすごく大きい荷物が届いた。"},
+  {w:"ばか", k:"ばか", cat:"程度・量", m:"とても、すごく。程度を強める。けなす意味ではない。", ex:"今日はばか暑いなあ。", std:"今日はすごく暑いなあ。"},
+  {w:"がんこ", k:"がんこ", cat:"程度・量", m:"とても、すごく。頑固の意ではなく、程度を強める。", ex:"がんこ混んどったわ。", std:"すごく混んでいたよ。"},
+  {w:"いっちょ", k:"いっちょ", cat:"程度・量", m:"とても、たくさん、いっぱい。", ex:"今日はいっちょ働いたわ。", std:"今日はたくさん働いたよ。"},
+  {w:"どべ", k:"どべ", cat:"程度・量", m:"最下位、びり。", ex:"かけっこでどべだったわ。", std:"かけっこでびりだったよ。"},
+  {w:"さら", k:"〜さら", cat:"程度・量", m:"〜ごと、〜全部。残さず全体を、の意。「まるさら」で丸ごと。", ex:"りんご、皮さら食べる。", std:"りんご、皮ごと食べる。"},
+
+  {w:"とぶ", k:"とぶ", cat:"動作・行い", m:"走る、走っていく。飛行ではなく地上を急いで駆けること。「とんでく」とも。", ex:"急ぐで、とんでいきな。", std:"急ぐから、走っていきなさい。"},
+  {w:"うっちゃる", k:"うっちゃる", cat:"動作・行い", m:"捨てる、放っておく。「うっちゃっとく」で放置する。", ex:"いらんもんは、うっちゃっといて。", std:"いらない物は、捨てておいて。"},
+  {w:"ほかる", k:"ほかる", cat:"動作・行い", m:"捨てる。「ほかっといて」で捨てておいて。", ex:"その紙、ほかっといて。", std:"その紙、捨てておいて。"},
+  {w:"ほっぽかす", k:"ほっぽかす", cat:"動作・行い", m:"ほったらかす、放置する、無視する。軽い非難を含む。", ex:"あたしのことほっぽかしてどこ行ってたの。", std:"私のことほったらかしてどこ行ってたの。"},
+  {w:"はならかす", k:"はならかす", cat:"動作・行い", m:"離す、間を空ける。", ex:"洗濯物ははならかして干さんと。", std:"洗濯物は離して干さないと。"},
+  {w:"よさりかかる", k:"よさりかかる", cat:"動作・行い", m:"寄りかかる、体重を預ける。", ex:"壁によさりかかったらいかんに。", std:"壁に寄りかかったらだめだよ。"},
+  {w:"とんます", k:"とんます", cat:"動作・行い", m:"捕まえる。虫などを捕獲すること。", ex:"てんとう虫とんました。", std:"てんとう虫を捕まえた。"},
+  {w:"かじる", k:"かじる", cat:"動作・行い", m:"引っ掻く。歯で噛むだけでなく、爪で皮膚を掻くことも指す。", ex:"かさぶたかじっちゃいかんに。", std:"かさぶたを掻いちゃだめだよ。"},
   {w:"いぼる", k:"いぼる", cat:"動作・行い", m:"ぬかるみなどに足を取られてはまる、めり込む。", ex:"田んぼでいぼっちゃった。", std:"田んぼでぬかるみにはまってしまった。"},
   {w:"つる", k:"つる", cat:"動作・行い", m:"（机などを）持ち上げて運ぶ。「机をつる」で机を運ぶ。", ex:"みんなで机つって。", std:"みんなで机を運んで。"},
-  {w:"ごう", k:"ごう／ごぅ", cat:"呼びかけ・指示", m:"〜して（ごらん）。やわらかい命令・勧め。「見てごぅ」で見てごらん。", ex:"これ、食べてごぅ。", std:"これ、食べてごらん。"},
-  {w:"ない", k:"ない", cat:"呼びかけ・指示", m:"〜しなさい、〜して。やわらかい命令。「やりない」でやりなさい。", ex:"早く起きない。", std:"早く起きなさい。"},
-  {w:"やらまい", k:"やらまい", cat:"呼びかけ・指示", m:"やろう、やってみよう。誘いかけ。「〜まい」で〜しようの意。", ex:"みんなでやらまい。", std:"みんなでやろう。"},
-  {w:"ちんちん", k:"ちんちん", cat:"形容・ようす", m:"（お湯などが）とても熱いこと。やかんが沸いた状態など。", ex:"お湯がちんちんだに、気いつけて。", std:"お湯がすごく熱いから、気をつけて。"},
-  {w:"おぞい", k:"おぞい", cat:"形容・ようす", m:"粗悪な、品質が悪い、みすぼらしい。", ex:"おぞい品物つかまされた。", std:"粗悪な品物を買わされた。"},
-  {w:"うざってえ", k:"うざってえ", cat:"形容・ようす", m:"うっとうしい、わずらわしい。「やぶせったい」に近い。", ex:"虫が多くてうざってえ。", std:"虫が多くてうっとうしい。"},
-  {w:"がんこ", k:"がんこ", cat:"程度・量", m:"とても、すごく。程度を強める。頑固の意ではない。", ex:"がんこ混んどったわ。", std:"すごく混んでいたよ。"},
   {w:"こずむ", k:"こずむ", cat:"動作・行い", m:"（粉や沈殿物が）底にたまる、沈む。", ex:"片栗粉がこずんどる。", std:"片栗粉が底に沈んでいる。"},
   {w:"のうなる", k:"のうなる", cat:"動作・行い", m:"無くなる。「無う(のう)なる」から。", ex:"財布がのうなった。", std:"財布が無くなった。"},
-  {w:"ぶしょったい", k:"ぶしょったい", cat:"形容・ようす", m:"だらしない、無精な感じでみっともない。", ex:"そんなぶしょったい格好で行くの。", std:"そんなだらしない格好で行くの。"}
+  {w:"ちゃっと", k:"ちゃっと", cat:"動作・行い", m:"急いで、さっと。迅速な行動を促すときに。", ex:"塩切れたで、ちゃっと買ってくるに。", std:"塩が切れたから、急いで買ってくるよ。"},
+  {w:"血が死ぬ", k:"ちがしぬ", cat:"動作・行い", m:"内出血する。打撲などで皮膚の下が鬱血し、変色した状態。", ex:"ぶつけて血が死んじゃった。", std:"ぶつけて内出血してしまった。"},
+  {w:"頭を切る", k:"あたまをきる", cat:"動作・行い", m:"髪を切る、散髪する。頭そのものではなく、髪の意。", ex:"そろそろ頭切ってこんと。", std:"そろそろ髪を切ってこないと。"},
+
+  {w:"くろ", k:"くろ", cat:"名詞・もの", m:"端、隅、へり。色の黒ではなく、空間的な境界を指す。", ex:"車来るで、道のくろに寄んな。", std:"車が来るから、道の端に寄りなさい。"},
+  {w:"せんひき", k:"せんひき", cat:"名詞・もの", m:"定規、物差し。「線引き」から。静岡で広く使われる。", ex:"せんひき取って。", std:"定規を取って。"},
+  {w:"あいさ", k:"あいさ", cat:"名詞・もの", m:"間、すきま。", ex:"たんすと壁のあいさに落ちた。", std:"たんすと壁のあいだに落ちた。"},
+  {w:"てんこちょ", k:"てんこちょ", cat:"名詞・もの", m:"てっぺん、頂上。", ex:"山のてんこちょまで登った。", std:"山のてっぺんまで登った。"},
+  {w:"ねち", k:"ねち", cat:"名詞・もの", m:"歯ぐき、歯茎。高齢層に残る言い方。", ex:"ねちが腫れてまった。", std:"歯ぐきが腫れてしまった。"},
+  {w:"おっしー", k:"おっしー", cat:"名詞・もの", m:"味噌汁。やや古い言い方。", ex:"おっしー、もう一杯。", std:"味噌汁、もう一杯。"}
 ];
 
-const CATS = ["すべて","語尾・あいさつ","形容・ようす","動作・行い","程度・量","呼びかけ・指示"];
+const CATS = ["すべて","語尾・あいさつ","形容・ようす","気持ち","程度・量","動作・行い","名詞・もの"];
 
 let activeCat = "すべて";
 let keyword = "";
@@ -189,7 +313,15 @@ const countEl = document.getElementById("count");
 const filtersEl = document.getElementById("filters");
 const searchEl = document.getElementById("search");
 
-// フィルターチップ生成
+document.querySelectorAll(".tab").forEach(t=>{
+  t.onclick=()=>{
+    document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));
+    document.querySelectorAll(".panel").forEach(x=>x.classList.remove("active"));
+    t.classList.add("active");
+    document.getElementById("panel-"+t.dataset.tab).classList.add("active");
+  };
+});
+
 CATS.forEach(c=>{
   const b=document.createElement("button");
   b.className="chip"+(c==="すべて"?" active":"");
@@ -214,9 +346,7 @@ function render(){
     const kwOk = !kw || (d.w+d.k+d.m+d.ex+d.std).toLowerCase().includes(kw);
     return catOk && kwOk;
   });
-  // 五十音順
   list.sort((a,b)=>a.k.localeCompare(b.k,"ja"));
-
   countEl.textContent = list.length+" 語";
 
   if(list.length===0){
