@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>はじめに ｜ 磐田物語</title>
+<meta name="description" content="なぜ「磐田物語」を始めたのか。介護と不動産の会社を営む大石浩之が、消えゆくまちの記憶を少しでも後世へ残したいという思いを綴ります。">
+<meta property="og:title" content="はじめに ｜ 磐田物語">
+<meta property="og:description" content="消えゆくまちの記憶を、少しでも後世へ。介護と不動産の現場から綴る、このサイトを始めた思い。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f7f2e9;
+    --paper-deep:#efe6d4;
+    --ink:#3a312a;
+    --ink-soft:#6b5d50;
+    --brown:#a6713e;
+    --brown-deep:#85562c;
+    --pine:#46624a;
+    --line:#e0d4bd;
+    --card:#fffdf8;
+    --shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    line-height:1.95;font-size:17px;letter-spacing:.02em;
+    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
+  }
+  .mincho{font-family:"Shippori Mincho",serif;}
+  body::before{
+    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(166,113,62,.035) 0, transparent 38%),
+      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);
+  }
+  a{color:var(--brown-deep);text-underline-offset:3px;}
+
+  /* ヘッダー */
+  header.site{background:var(--card);border-bottom:1px solid var(--line);}
+  .bar{max-width:1040px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+  .brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;}
+  .brand .logo{font-family:"Shippori Mincho",serif;font-weight:800;font-size:26px;color:var(--ink);letter-spacing:.06em;}
+  .brand .logo .dot{color:var(--brown);}
+  .brand .tag{font-size:12.5px;color:var(--ink-soft);letter-spacing:.08em;}
+  nav.menu{display:flex;gap:26px;}
+  nav.menu a{text-decoration:none;color:var(--ink-soft);font-size:14.5px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
+  nav.menu a:hover,nav.menu a.current{color:var(--brown-deep);border-color:var(--brown);}
+
+  /* 記事ヘッダー */
+  .article-head{max-width:760px;margin:0 auto;padding:64px 24px 36px;}
+  .article-head .eyebrow{font-size:13px;letter-spacing:.22em;color:var(--pine);font-weight:700;margin:0 0 18px;}
+  .article-head h1{
+    font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(28px,5vw,42px);line-height:1.5;margin:0 0 22px;
+    color:var(--ink);letter-spacing:.03em;
+  }
+  .article-head .sub{font-size:16px;color:var(--ink-soft);margin:0;line-height:1.9;}
+  .article-head .byline{
+    margin-top:26px;padding-top:20px;border-top:1px solid var(--line);
+    font-size:14px;color:var(--ink-soft);
+  }
+  .article-head .byline strong{color:var(--ink);font-weight:700;}
+
+  /* 本文 */
+  .article{max-width:760px;margin:0 auto;padding:8px 24px 64px;}
+  .article h2{
+    font-family:"Shippori Mincho",serif;font-weight:700;font-size:23px;
+    color:var(--ink);letter-spacing:.03em;margin:54px 0 20px;
+    padding-left:16px;border-left:4px solid var(--brown);line-height:1.5;
+  }
+  .article p{margin:0 0 22px;color:var(--ink);}
+  .article p.lead{font-size:18.5px;color:var(--ink);line-height:2.1;}
+
+  /* 引用調の強調ブロック */
+  .pull{
+    background:var(--card);border:1px solid var(--line);border-left:4px solid var(--pine);
+    border-radius:3px;padding:26px 30px;margin:32px 0;box-shadow:var(--shadow);
+  }
+  .pull p{margin:0;font-family:"Shippori Mincho",serif;font-size:19px;color:var(--ink);line-height:2;}
+
+  /* 記憶の例リスト */
+  .voices{
+    background:var(--paper-deep);border-radius:3px;padding:28px 32px;margin:32px 0;
+  }
+  .voices p{margin:0 0 12px;font-family:"Shippori Mincho",serif;color:var(--ink);font-size:16.5px;line-height:1.85;}
+  .voices p:last-child{margin-bottom:0;}
+  .voices .v{color:var(--brown-deep);}
+
+  /* 署名 */
+  .sign{margin:48px 0 0;padding-top:28px;border-top:1px solid var(--line);text-align:right;}
+  .sign .name{font-family:"Shippori Mincho",serif;font-size:21px;color:var(--ink);font-weight:700;letter-spacing:.06em;}
+  .sign .role{font-size:13.5px;color:var(--ink-soft);margin-top:6px;}
+
+  /* 結びの戻りリンク */
+  .back-home{max-width:760px;margin:0 auto 64px;padding:0 24px;}
+  .back-home a{
+    display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
+    padding:13px 26px;border-radius:2px;background:var(--brown);color:#fff;transition:.2s;letter-spacing:.04em;
+  }
+  .back-home a:hover{background:var(--brown-deep);}
+
+  /* フッター */
+  footer.site{background:var(--ink);color:#e9e0d2;}
+  footer.site .inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  footer .f-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  footer .f-brand .dot{color:var(--brown);}
+  footer .f-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
+  footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
+
+  @media(max-width:760px){
+    nav.menu{display:none;}
+    .article-head{padding:48px 22px 28px;}
+    .article{padding:8px 22px 48px;}
+    .pull{padding:22px 22px;}
+    .voices{padding:22px 22px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/">
+      <span class="logo">磐田物語<span class="dot">。</span></span>
+      <span class="tag">遠江・見付のまちの歴史と文化</span>
+    </a>
+    <nav class="menu">
+      <a href="/hajimeni.html" class="current">はじめに</a>
+      <a href="/#themes">書いていくこと</a>
+      <a href="/#latest">近況</a>
+    </nav>
+  </div>
+</header>
+
+<div class="article-head">
+  <p class="eyebrow">はじめに ｜ GREETING</p>
+  <h1>消えゆく記憶を、<br>少しでも後世に残したい。</h1>
+  <p class="sub">介護と不動産という二つの仕事を通して、人の暮らしと、家の記憶と、地域の時間に触れてきた。その現場から、なぜこのサイトを始めたのかを書き留めておきたい。</p>
+  <div class="byline">綴る人 ── <strong>大石浩之</strong>（富士ヶ丘サービス株式会社 代表取締役）</div>
+</div>
+
+<article class="article">
+
+  <p class="lead">私は、富士ヶ丘サービスという会社を営んでいる。介護の会社であり、不動産の会社でもある。一見すると別々の仕事に見えるが、日々この二つの現場に立っていると、まったく別の仕事だとは思えなくなる。どちらも、人の人生に深く関わる仕事だからである。</p>
+
+  <p>介護の現場では、人が人生の後半に差しかかったときの暮らしに寄り添う。体が思うように動かなくなり、今までできていたことが少しずつ難しくなる。そういう場面に立ち会う。不動産の現場では、家を売る、空き家をどうする、相続した土地をどう整理するといった相談を受ける。だがそれは、単に土地や建物を売る話ではない。</p>
+
+  <p>そこには、住んでいた人の記憶がある。親が建てた家。子どもが育った家。盆や正月に家族が集まった家。庭に植えた木。玄関の傷。柱に残った身長の跡。昔はにぎやかだったけれど、今は誰も住まなくなった家。そういうものに触れるたびに思う。これは、ただの不動産ではない。誰かの人生そのものだったのだと。</p>
+
+  <h2>記憶は、驚くほど簡単に消えていく</h2>
+
+  <p>そして、少し怖くもなる。このままでは、こうした記憶がどんどん消えていくのではないか。誰かが大切にしていた場所の記憶が、誰にも語られないまま、ただ解体され、ただ更地になり、ただ次の用途に変わっていく。</p>
+
+  <p>それは仕方のないことでもある。家は古くなる。人は歳を取る。家族の形も、地域の姿も変わる。昔のように何世代も同じ土地に住み続けることは、もう当たり前ではない。子どもは遠くへ行き、親の家は空き家になり、相続人は遠方に住み、誰も管理できなくなる。そういう相談は、これからもっと増えていくだろう。</p>
+
+  <p>介護の現場でも、人の記憶が少しずつ薄れていく場面に出会う。けれど、ふとした瞬間に鮮やかな記憶がよみがえることがある。昔の歌を聞いたとき。懐かしい写真を見たとき。地元の地名が出たとき。その瞬間、その方の表情が変わる。今の暮らしだけを見ていてはわからない、人生の厚みが見えてくる。人は、今だけでできているのではない。歩いてきた道があり、苦労があり、喜びがある。そして、その記憶は、誰かが残そうとしなければ、たやすく消えてしまう。</p>
+
+  <h2>書類には載らないもの</h2>
+
+  <p>不動産の仕事では、登記簿を見れば所有者がわかり、公図を見れば形がわかり、測量図を見れば面積がわかる。そうした調査は当然大切で、間違えれば取引に大きな問題が起きる。だから私は、重要事項説明書を作るときも、できる限り丁寧に調べる。けれど、書類だけでは見えないものがある。</p>
+
+  <p>登記簿には、その家で子どもが初めて歩いた日のことは載っていない。公図には、庭で家族が囲んだ食卓のことは載っていない。固定資産評価証明には、亡くなったお父さんが毎朝掃除していた玄関のことは載っていない。不動産の資料に出てくるのは、面積、地目、構造、築年数、価格、法令制限、権利関係。それは必要だ。でも、それだけでは足りない。その不動産が、誰かの人生の舞台だったという事実を、忘れたくない。</p>
+
+  <div class="pull">
+    <p>空き家は、外から見れば「使われていない建物」だ。けれど所有者や相続人から見れば、そこは「実家」である。たとえ誰も住んでいなくても、親が暮らし、祖父母が守り、幼いころに帰省した、家族の思い出が詰まった場所なのだ。</p>
+  </div>
+
+  <p>だから、空き家問題を「早く売りましょう」「早く解体しましょう」だけで片付けてはいけないと思う。老朽化した建物の放置は危険だし、現実的な判断は必要だ。そこは不動産会社としてはっきり伝える。でも、その前に、あるいは同時に、こう問いかけたい。この家の記憶を、何か一つでも残せないだろうか、と。</p>
+
+  <h2>今の時代だからこそ、できること</h2>
+
+  <p>人は、失ってから気づくことが多い。家を解体してから「写真を撮っておけばよかった」と思う。親が亡くなってから「もっと話を聞いておけばよかった」と思う。そういう後悔を、少しでも減らしたい。</p>
+
+  <p>昔の人たちは、今のように簡単に発信できる道具を持っていなかった。だから多くの記憶は、家族の会話の中、地域の人の記憶の中にだけあった。それは温かいことだが、同時にとても消えやすい。語る人がいなくなれば、聞く人がいなければ、消えてしまう。</p>
+
+  <p>けれど今は、記録する道具がある。文章も、写真も、音声も、動画も残せる。AIを使えば、話し言葉を読みやすい文章にまとめることもできる。私自身、不動産の調査や文章を整えるのにAIを使っている。ただし、AIに何でもできるとは思っていない。AIは、その家に住んでいた人の温度までは勝手にはわからない。亡くなったお父さんの口ぐせも、家族が語らなければ知ることはできない。AIは道具だ。でも、人が語り、人が聞き、人が残そうとすれば、大きな助けになる。そこに可能性を感じている。</p>
+
+  <h2>残したいのは、小さな記憶</h2>
+
+  <p>残したいのは、立派な歴史資料ではない。大げさな郷土史でもない。もっと身近で、小さな記憶だ。</p>
+
+  <div class="voices">
+    <p><span class="v">──</span>あの家には、昔こういう人が住んでいた。</p>
+    <p><span class="v">──</span>あの畑は、おじいちゃんが毎朝手入れしていた。</p>
+    <p><span class="v">──</span>あの土地は、家族が最後まで手放せない場所だった。</p>
+    <p><span class="v">──</span>あの道は、通学路だった。</p>
+    <p><span class="v">──</span>あの交差点は、昔は今よりずっと静かだった。</p>
+  </div>
+
+  <p>新聞に載る大事件ではないかもしれない。本になる偉人の物語でもないかもしれない。でも、その人にとっては、かけがえのない歴史だ。その家族にとっては大切な記憶であり、その地域にとっては確かに存在した時間である。私は、介護と不動産という仕事を通して、その記憶の入口に立つ機会が多い人間だ。だからこそ、見過ごしてはいけないと思っている。</p>
+
+  <h2>富士ヶ丘サービスという会社の役割</h2>
+
+  <p>富士ヶ丘サービスは、ただ介護サービスを提供する会社でも、ただ不動産を売買する会社でもありたくない。もちろん、事業として利益を出し、社員を守り、お客様に満足していただき、法令を守ることは当然だ。でも、それだけではない会社でありたい。地域の人の記憶に触れ、暮らしの変化を見つめ、消えていく前に少しでも声をすくい上げる会社でありたい。</p>
+
+  <p>介護の現場には、人生の記憶がある。不動産の現場には、暮らしの記憶がある。その二つを持っている会社だからこそ、できることがあるのではないか。介護は現在の暮らしを支え、不動産は過去の暮らしと未来の暮らしをつなぐ。その間にあるのが、記憶だ。人の記憶、家族の記憶、家の記憶、地域の記憶。それらを大切にすることが、これからの会社の使命の一つになっていくと感じている。</p>
+
+  <p>もちろん、すべての記憶を残すことはできない。個人情報やプライバシーには十分配慮しなければならないし、外に出してよいものと、家族の中だけにとどめるべきものは分けなければならない。それでも、その配慮をしたうえで、できることはあるはずだ。売却前の家を写真に残す。家族に「この家で一番覚えていることは何ですか」と尋ねてみる。たったそれだけでも、そこに物語が生まれる。</p>
+
+  <h2>まずは、目の前の一つから</h2>
+
+  <p>大きなことを言いすぎると、動けなくなる。だから、まずは目の前の一つから始めたい。今日聞いた話を大切にする。今日見た風景を残す。相談を受けた家の背景に敬意を払う。出会った人の人生を、今の状態だけで判断しない。その小さな積み重ねが、やがて大きな記録になると信じている。</p>
+
+  <p>後世に残す、というと大げさに聞こえるかもしれない。でも後世とは、遠い未来だけではない。子どもや孫の世代、今の若いスタッフ、これからこの地域に住む人たち、将来この土地や家を引き継ぐ人たち。そういう人たちに「ここにはこういう暮らしがあったんだよ」と伝えること。それが、私の言う「後世に残す」ということだ。</p>
+
+  <div class="pull">
+    <p>記憶を残すというのは、過去を懐かしむだけの行為ではない。今を大切に見るための行為であり、未来の人が、今あるものを粗末に扱わないための行為でもある。</p>
+  </div>
+
+  <p>この「磐田物語」は、その小さな試みの場である。遠江国府が置かれ、東海道・見付宿として栄えたこのまちには、語り継ぐべきものが数多く眠っている。古代の遺跡から宿場の面影、祭りや暮らしの記憶まで——専門家の研究ではなく、このまちに暮らす一人として、足もとの歴史を見つめ直し、少しずつ、丁寧に、後世へ渡していきたい。</p>
+
+  <p>不器用でも、少しずつでもいい。介護と不動産の会社を営む者として、人と家、暮らしと土地、現在と過去、そして未来をつなぐ仕事をしている者として、私はこれからも、消えゆく記憶に目を向け続けたいと思っている。</p>
+
+  <div class="sign">
+    <div class="name">大石 浩之</div>
+    <div class="role">富士ヶ丘サービス株式会社 代表取締役</div>
+  </div>
+
+</article>
+
+<div class="back-home">
+  <a href="/">トップへ戻る</a>
+</div>
+
+<footer class="site">
+  <div class="inner">
+    <div class="f-brand">磐田物語<span class="dot">。</span></div>
+    <div class="f-note">静岡県磐田市の歴史と文化を、一市民の視点で書き留めていく記録の場。記載内容は個人の調査・覚え書きであり、正確性の向上に努めながら綴っています。</div>
+    <div class="copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+
+</body>
+</html>
