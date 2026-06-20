@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>磐田物語 ｜ 遠江・見付のまちの歴史と文化</title>
+<meta name="description" content="静岡県磐田市の歴史と文化を、一市民の視点で掘り起こし書き留めていく記録の場。遠江国府が置かれ、東海道見付宿として栄えたこのまちの記憶をたどります。">
+<meta property="og:title" content="磐田物語 ｜ 遠江・見付のまちの歴史と文化">
+<meta property="og:description" content="静岡県磐田市の歴史と文化を、一市民の視点で書き留めていく記録の場。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f7f2e9;        /* 生成りの背景 */
+    --paper-deep:#efe6d4;   /* 一段濃い和紙 */
+    --ink:#3a312a;          /* 本文の墨色（茶寄り） */
+    --ink-soft:#6b5d50;     /* 補助テキスト */
+    --brown:#a6713e;        /* 温かい茶のアクセント */
+    --brown-deep:#85562c;   /* 濃い茶 */
+    --pine:#46624a;         /* 見付の松並木の緑（差し色） */
+    --line:#e0d4bd;         /* 罫線 */
+    --card:#fffdf8;         /* カード地 */
+    --shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    line-height:1.9;
+    font-size:17px;
+    letter-spacing:.02em;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+  }
+  .mincho{font-family:"Shippori Mincho",serif;}
+
+  /* 和紙の地紋（ごく薄く） */
+  body::before{
+    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(166,113,62,.035) 0, transparent 38%),
+      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);
+  }
+
+  a{color:var(--brown-deep);text-underline-offset:3px;}
+
+  /* ===== ヘッダー ===== */
+  header.site{
+    background:var(--card);
+    border-bottom:1px solid var(--line);
+  }
+  .bar{
+    max-width:1040px;margin:0 auto;padding:16px 24px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;}
+  .brand .logo{
+    font-family:"Shippori Mincho",serif;font-weight:800;font-size:26px;
+    color:var(--ink);letter-spacing:.06em;
+  }
+  .brand .logo .dot{color:var(--brown);}
+  .brand .tag{font-size:12.5px;color:var(--ink-soft);letter-spacing:.08em;}
+  nav.menu{display:flex;gap:26px;}
+  nav.menu a{
+    text-decoration:none;color:var(--ink-soft);font-size:14.5px;font-weight:500;
+    padding:4px 0;border-bottom:2px solid transparent;transition:.2s;
+  }
+  nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
+
+  /* ===== ヒーロー ===== */
+  .hero{
+    max-width:1040px;margin:0 auto;padding:64px 24px 48px;
+  }
+  .hero .eyebrow{
+    font-size:13px;letter-spacing:.22em;color:var(--pine);font-weight:700;
+    margin:0 0 20px;
+  }
+  .hero h1{
+    font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(34px,6vw,58px);line-height:1.32;margin:0 0 24px;
+    color:var(--ink);letter-spacing:.04em;
+  }
+  .hero h1 .accent{
+    color:var(--brown-deep);
+    background:linear-gradient(transparent 62%, rgba(166,113,62,.18) 62%);
+  }
+  .hero .lead{
+    max-width:660px;font-size:17.5px;color:var(--ink-soft);margin:0 0 32px;
+    line-height:2.05;
+  }
+  .hero .cta-row{display:flex;flex-wrap:wrap;gap:14px;}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
+    padding:13px 26px;border-radius:2px;transition:.2s;letter-spacing:.04em;
+  }
+  .btn.primary{background:var(--brown);color:#fff;}
+  .btn.primary:hover{background:var(--brown-deep);}
+  .btn.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
+  .btn.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
+
+  /* ===== このサイトについて ===== */
+  .about{
+    background:var(--paper-deep);
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  }
+  .about .inner{
+    max-width:1040px;margin:0 auto;padding:56px 24px;
+    display:grid;grid-template-columns:200px 1fr;gap:48px;
+  }
+  .about .label{
+    font-family:"Shippori Mincho",serif;font-weight:700;font-size:21px;
+    color:var(--ink);
+  }
+  .about .label .en{
+    display:block;font-family:"Zen Kaku Gothic New",sans-serif;
+    font-size:11.5px;letter-spacing:.2em;color:var(--brown);font-weight:700;
+    margin-top:8px;
+  }
+  .about p{margin:0 0 18px;color:var(--ink);font-size:16.5px;}
+  .about p:last-child{margin-bottom:0;}
+
+  /* ===== これから書いていくこと ===== */
+  .themes{max-width:1040px;margin:0 auto;padding:64px 24px;}
+  .sec-head{margin:0 0 40px;}
+  .sec-head .eyebrow{
+    font-size:12.5px;letter-spacing:.22em;color:var(--pine);font-weight:700;margin:0 0 10px;
+  }
+  .sec-head h2{
+    font-family:"Shippori Mincho",serif;font-weight:700;
+    font-size:28px;margin:0;color:var(--ink);letter-spacing:.04em;
+  }
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:3px;
+    padding:30px 26px;box-shadow:var(--shadow);transition:.22s;
+  }
+  .card:hover{transform:translateY(-3px);border-color:var(--brown);}
+  .card .num{
+    font-family:"Shippori Mincho",serif;font-size:15px;color:var(--brown);
+    font-weight:700;letter-spacing:.1em;
+  }
+  .card h3{
+    font-family:"Shippori Mincho",serif;font-weight:700;font-size:19px;
+    margin:10px 0 12px;color:var(--ink);
+  }
+  .card p{margin:0;font-size:14.5px;color:var(--ink-soft);line-height:1.85;}
+
+  /* ===== 近況（最新の記事置き場の予告） ===== */
+  .latest{background:var(--paper-deep);border-top:1px solid var(--line);}
+  .latest .inner{max-width:1040px;margin:0 auto;padding:56px 24px;}
+  .latest .placeholder{
+    background:var(--card);border:1px dashed var(--brown);border-radius:3px;
+    padding:40px 32px;text-align:center;color:var(--ink-soft);
+  }
+  .latest .placeholder .mincho{font-size:18px;color:var(--ink);display:block;margin-bottom:8px;}
+
+  /* ===== フッター ===== */
+  footer.site{
+    background:var(--ink);color:#e9e0d2;
+  }
+  footer.site .inner{
+    max-width:1040px;margin:0 auto;padding:44px 24px;
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;
+  }
+  footer .f-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  footer .f-brand .dot{color:var(--brown);}
+  footer .f-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
+  footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
+
+  /* ===== レスポンシブ ===== */
+  @media(max-width:760px){
+    nav.menu{display:none;}
+    .about .inner{grid-template-columns:1fr;gap:24px;}
+    .grid{grid-template-columns:1fr;}
+    .hero{padding:48px 22px 36px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/">
+      <span class="logo">磐田物語<span class="dot">。</span></span>
+      <span class="tag">遠江・見付のまちの歴史と文化</span>
+    </a>
+    <nav class="menu">
+      <a href="#about">このサイトについて</a>
+      <a href="#themes">書いていくこと</a>
+      <a href="#latest">近況</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="eyebrow">IWATA MONOGATARI</p>
+  <h1>足もとの歴史を見つめ直し、<br><span class="accent">次の世代へ手渡す。</span></h1>
+  <p class="lead">遠江国の国府が置かれ、東海道・見付宿として栄えた磐田のまち。古代の遺跡から宿場の面影、祭りや暮らしの記憶まで、語り継ぐべきものが数多く眠っている。このまちに生きた人々の営みと、まちの移ろいを、一市民の視点でひとつひとつ綴っていく記録の場である。</p>
+  <div class="cta-row">
+    <a class="btn primary" href="#about">サイトについて読む</a>
+    <a class="btn ghost" href="#themes">これから書くこと</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="inner">
+    <div class="label">このサイトについて<span class="en">ABOUT</span></div>
+    <div>
+      <p>磐田物語は、静岡県磐田市に積み重ねられてきた歴史と文化を、一市民の視点で掘り起こし、書き留めていく場である。遠江国の国府が置かれ、東海道・見付宿として栄えたこの地には、古代の遺跡から宿場の面影、祭りや暮らしの記憶まで、語り継ぐべきものが数多く眠っている。</p>
+      <p>本サイトでは、郷土の史料や現地の風景をたどりながら、磐田に生きた人々の営みとまちの移ろいを、ひとつひとつの物語として綴っていく。専門家による研究ではなく、このまちに暮らす者が、足もとの歴史を見つめ直し、次の世代へと手渡していくための覚え書きである。</p>
+    </div>
+  </div>
+</section>
+
+<section class="themes" id="themes">
+  <div class="sec-head">
+    <p class="eyebrow">THEMES</p>
+    <h2>これから書いていくこと</h2>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <span class="num">其の一</span>
+      <h3>遠江国府と古代の磐田</h3>
+      <p>国府が置かれた時代の磐田。遺跡や地名に残る古代の痕跡から、このまちの始まりをたどる。</p>
+    </div>
+    <div class="card">
+      <span class="num">其の二</span>
+      <h3>東海道・見付宿の面影</h3>
+      <p>宿場町として栄えた見付。旧東海道の道筋、本陣や問屋場の記憶、街道がもたらした賑わいを訪ねる。</p>
+    </div>
+    <div class="card">
+      <span class="num">其の三</span>
+      <h3>祭りと暮らしの記憶</h3>
+      <p>見付天神裸祭をはじめ、まちに受け継がれてきた行事や、人々の日々の暮らしの移ろいを書き留める。</p>
+    </div>
+  </div>
+</section>
+
+<section class="latest" id="latest">
+  <div class="inner">
+    <div class="sec-head">
+      <p class="eyebrow">LATEST</p>
+      <h2>近況</h2>
+    </div>
+    <div class="placeholder">
+      <span class="mincho">最初の物語を準備しています。</span>
+      記事を書き上げ次第、ここに最新の更新が並んでいきます。
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="inner">
+    <div class="f-brand">磐田物語<span class="dot">。</span></div>
+    <div class="f-note">静岡県磐田市の歴史と文化を、一市民の視点で書き留めていく記録の場。記載内容は個人の調査・覚え書きであり、正確性の向上に努めながら綴っています。</div>
+    <div class="copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+
+</body>
+</html>
