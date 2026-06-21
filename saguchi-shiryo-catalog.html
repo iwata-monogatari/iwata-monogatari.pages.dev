@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>佐口行正氏所蔵史料 目録 ｜ 磐田物語</title>
-<meta name="description" content="見付の旧家・佐口行正氏が所蔵する、引札・浮世絵・古地図・鉄道案内など約200点の史料目録。商屋名・発行者・年代・寸法つきで分類・検索できる。佐口行正氏の許可を得て掲載。">
+<meta name="description" content="見付の旧家・佐口行正氏が所蔵する、引札・浮世絵・古地図・鉄道案内・絵葉書・屋台祭礼写真など約340点の史料目録。種別やグループで分類・検索できる。佐口行正氏の許可を得て掲載。">
 <meta property="og:title" content="佐口行正氏所蔵史料 目録 ｜ 磐田物語">
-<meta property="og:description" content="見付のまちに残された引札・浮世絵・古地図・鉄道案内など約200点。佐口行正氏所蔵・許可掲載の史料目録。">
+<meta property="og:description" content="見付のまちに残された引札・浮世絵・古地図・鉄道案内・絵葉書・屋台祭礼写真など。佐口行正氏所蔵・許可掲載の史料目録。">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -50,6 +50,11 @@
   .tab{border:1px solid var(--waku);background:var(--paper);color:var(--usuzumi);border-radius:20px;padding:7px 15px;font-family:inherit;font-size:13.5px;cursor:pointer;letter-spacing:.02em;}
   .tab:hover{border-color:var(--cha);color:var(--brown-deep);}
   .tab.is-active{background:var(--matsu);color:#fff;border-color:var(--matsu);}
+  /* secondary group filter */
+  .subtabs{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-top:11px;padding-top:11px;border-top:1px dashed var(--waku);}
+  .subtab-label{font-size:12.5px;color:var(--usuzumi);font-weight:700;margin-right:2px;}
+  .subtab{font-size:12.5px;padding:5px 12px;}
+  .subtab.is-active{background:var(--cha);color:#fff;border-color:var(--cha);}
   .count{font-size:13px;color:var(--usuzumi);margin-top:10px;}
   /* grid */
   .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:40px;}
@@ -61,6 +66,7 @@
   .card .body{padding:12px 13px 13px;display:flex;flex-direction:column;gap:4px;flex:1;}
   .card .cno{font-size:11px;color:var(--cha);font-weight:700;letter-spacing:.04em;}
   .card .cname{font-family:"Shippori Mincho",serif;font-size:15px;color:var(--sumi);font-weight:600;line-height:1.5;}
+  .card .ser{font-size:11px;color:var(--matsu);font-weight:500;}
   .card .meta{font-size:12px;color:var(--usuzumi);line-height:1.65;margin-top:2px;}
   .card .own{font-size:10.5px;color:#9a8e78;margin-top:auto;padding-top:8px;border-top:1px dashed var(--waku);}
   .badge{display:inline-block;font-size:10.5px;background:#eef0ea;color:var(--matsu);border-radius:3px;padding:1px 7px;font-weight:700;}
@@ -87,17 +93,6 @@
   .copy{font-size:12px;color:#b9c5b9;margin-top:22px;}
   @media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr);}}
   @media(max-width:680px){.grid{grid-template-columns:repeat(2,1fr);}h1{font-size:24px;}body{font-size:16px;}.lb-nav{font-size:30px;padding:6px 10px;}}
-  .foot-inner h4{font-size:13px;color:#cdd8cd;font-weight:500;margin:16px 0 8px;letter-spacing:.05em;}
-  .foot-links{list-style:none;}
-  .foot-links li{margin-bottom:7px;font-size:14px;}
-  .foot-links a{color:#f1ece1;}
-  /* 画像保護 */
-  .card img,.lb-inner img{-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none;-webkit-user-select:none;}
-  /* 人物紹介 */
-  .profile{background:var(--paper);border:1px solid var(--waku);border-left:4px solid var(--matsu);border-radius:4px;padding:22px 26px;margin:6px 0 26px;}
-  .profile h3{font-family:"Shippori Mincho",serif;font-size:18px;color:var(--matsu);margin:0 0 12px;}
-  .profile p{font-size:14.5px;color:#46423c;margin:0 0 13px;line-height:1.9;}
-  .profile p:last-child{margin-bottom:0;}
 </style>
 </head>
 <body>
@@ -111,7 +106,6 @@
   <ul>
     <li><a href="https://iwata-monogatari.pages.dev/hajimeni.html">はじめに</a></li>
     <li><a href="https://iwata-monogatari.pages.dev/#themes">読みもの</a></li>
-    <li><a href="/saguchi-shiryo.html">佐口史料</a></li>
     <li><a href="https://iwata-monogatari.pages.dev/bunkazai.html">文化財</a></li>
     <li><a href="https://iwata-monogatari.pages.dev/chizu.html">地図で見る</a></li>
     <li><a href="https://iwata-monogatari.pages.dev/#enshu">遠州弁</a></li>
@@ -127,27 +121,20 @@
   </div>
 
   <div class="lead">
-    見付のまちに残された、引札・浮世絵・古地図・鉄道案内など、およそ二百点の史料群である。明治から昭和にかけて、見付・中泉の商家がどんな広告を刷り、人々がどんな道を旅し、どんな名所をめぐったのか――一点ずつの紙片が、まちの暮らしの記憶を今に伝えている。種別での絞り込みや、商屋名・年代での検索ができる。画像をクリックすると拡大表示する。
+    見付のまちに残された、引札・浮世絵・古地図・鉄道案内・絵葉書・屋台祭礼写真などの史料群である。明治から昭和、そして近年にかけて、見付・中泉の商家がどんな広告を刷り、人々がどんな道を旅し、天神社の祭礼でどんな屋台を曳いてきたのか――一点ずつの紙片や写真が、まちの暮らしの記憶を今に伝えている。<b>種別</b>での絞り込みに加え、絵葉書のシリーズや屋台の町別などの<b>グループ</b>でも選べる。商屋名・年代での検索もできる。画像をクリックすると拡大表示する。
   </div>
 
   <div class="permit">
     <b>所蔵・掲載について</b> ── 本ページに掲載するすべての史料は、<b>佐口行正氏の所蔵</b>であり、<b>佐口行正氏の許可を得て掲載</b>しています。画像・目録情報の無断転載および二次利用を禁じます。
   </div>
 
-  <section class="profile">
-    <h3>佐口行正氏について ── 磐田・見付の郷土史研究家</h3>
-    <p>佐口行正氏は、静岡県磐田市見付を中心に、地域の歴史・文化・暮らしの記憶を長年にわたり収集・研究されてきた郷土史研究家です。</p>
-    <p>見付のまちに残る古写真、絵はがき、引き札、浮世絵、商店街にまつわる資料など、地域の人々の営みを伝える貴重な資料を数多く所蔵されており、そのコレクションは磐田市内の企画展や文化財関連の展示でも紹介されています。磐田市歴史文書館の企画展では「佐口行正氏所蔵」の資料が展示され、また見付の文化イベントでも、佐口氏所蔵の引き札や昭和の見付の写真などが紹介されています。</p>
-    <p>佐口氏の活動は、単に古い資料を集めることにとどまりません。そこには、見付というまちがどのように栄え、人々がどのように暮らし、商い、祭り、学び、時代を重ねてきたのかを、次の世代へ伝えようとする深い思いがあります。</p>
-    <p>本サイトでは、佐口行正氏のご厚意により、所蔵資料の一部を掲載させていただきます。失われつつある地域の記憶を、写真や資料とともに丁寧に記録し、磐田・見付の歴史文化を後世へつなぐ一助となることを目指します。</p>
-  </section>
-
   <div class="finder">
     <div class="search-wrap">
-      <input type="text" id="q" placeholder="さがす（例：古島竹次郎、明治、東海道、可睡斎…）" autocomplete="off" aria-label="史料を検索">
+      <input type="text" id="q" placeholder="さがす（例：古島竹次郎、東海道、可睡斎、浜垢離、河原町…）" autocomplete="off" aria-label="史料を検索">
       <button type="button" class="search-clear" id="qClear" hidden aria-label="クリア">×</button>
     </div>
     <div class="tabs" id="tabs"></div>
+    <div class="subtabs" id="subtabs" hidden></div>
     <p class="count" id="count"></p>
   </div>
 
@@ -157,7 +144,7 @@
   <div class="sourcebox">
     <h3>目録について</h3>
     <p class="disclaimer" id="metaNote"></p>
-    <p class="disclaimer">商屋名・発行者・年代・寸法は「佐口行正氏所蔵史料一覧」（2011年作成）に基づく。「〇」は原資料の判読不能箇所を示す。中綴じ・複数枚で構成される史料は代表の一枚を掲載している。出典・所蔵：佐口行正氏。掲載許可済み。</p>
+    <p class="disclaimer">商屋名・発行者・年代・寸法は「佐口行正氏所蔵史料一覧」（2011年作成）に基づく。「〇」は原資料の判読不能箇所を示す。中綴じ・複数枚で構成される史料は代表の一枚を掲載している。絵葉書・絵馬・屋台祭礼写真（資料②）の年代・寸法は判明分のみ記載。出典・所蔵：佐口行正氏。掲載許可済み。</p>
   </div>
 </main>
 
@@ -176,60 +163,18 @@
   </div>
 </div>
 
-<footer class="im-foot">
-<style>
-.im-foot{background:#3a312a;color:#e9e0d2;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
-.im-foot *{box-sizing:border-box;}
-.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
-.im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-.im-foot .im-brand .im-dot{color:#a6713e;}
-.im-foot .im-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
-.im-foot .im-links{width:100%;margin-top:6px;}
-.im-foot .im-lh{font-size:12px;color:#9c8f7c;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
-.im-foot .im-links li{font-size:13px;line-height:1.6;}
-.im-foot .im-links a{color:#d8cab4;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-.im-foot .im-links a:hover{color:#f3ece0;border-color:#e7c9a3;}
-.im-foot .im-desc{display:block;color:#9c8f7c;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
-.im-foot .im-sns{width:100%;margin-top:20px;}
-.im-foot .im-icons{display:flex;gap:14px;}
-.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#d8cab4;transition:.2s;}
-.im-foot .im-icons a:hover{color:#f3ece0;border-color:#e7c9a3;background:rgba(231,201,163,.08);}
-.im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
-.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
-</style>
-  <div class="im-inner">
-    <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
-    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は、個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら、消えゆく地域の記憶を未来へ残し、文化財研究の一助となることを目指して綴っています。</div>
-    <div class="im-links">
-      <p class="im-lh">運営者・大石浩之のほかの活動</p>
-      <ul>
-        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
-        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
-        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
-        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
-      </ul>
-      <div class="im-sns">
-        <p class="im-lh">SNS</p>
-        <div class="im-icons">
-          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.22.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.22.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.22-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.05.36-2.22.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.22-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.05-.41-2.22C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.22.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.36 2.22-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14c-.3.76-.5 1.63-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.63.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.13C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0z"/><path d="M12 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84M12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"/><circle cx="18.41" cy="5.59" r="1.44"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化　／　史料所蔵：佐口行正氏（許可掲載）</div>
+<footer class="site">
+  <div class="foot-inner">
+    <span class="mincho">磐田物語。</span>
+    <p>静岡県磐田市の歴史と文化を、一市民の視点で書き留めていく記録の場。記載内容は個人の調査・覚え書きであり、正確性の向上に努めながら綴っています。</p>
+    <div class="copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化　／　史料所蔵：佐口行正氏（許可掲載）</div>
   </div>
 </footer>
 
 <script>
-const CATS=["すべて","引札","浮世絵","銅印","地図・絵図","鉄道・交通","名所・観光案内","道中・講社","商家・地域資料","記念・行事"];
-let ITEMS=[], cur="すべて", kw="", view=[];
+// 種別の表示順（データに無い種別は自動で末尾に追加される）
+const CAT_ORDER=["引札","浮世絵","銅印","絵葉書","絵馬","屋台・祭礼写真","地図・絵図","鉄道・交通","名所・観光案内","道中・講社","商家・地域資料","記念・行事"];
+let ITEMS=[], cur="すべて", curGrp="すべて", kw="", view=[];
 const grid=document.getElementById('grid'), countEl=document.getElementById('count'),
       noRes=document.getElementById('noResult'), q=document.getElementById('q'), qClear=document.getElementById('qClear');
 
@@ -238,23 +183,58 @@ fetch('data/saguchi-shiryo.json').then(r=>r.json()).then(d=>{
   buildTabs(); render();
 }).catch(e=>{ grid.innerHTML='<p class="no-result">目録データを読み込めませんでした。</p>'; });
 
+function esc(s){return (s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));}
+
+function orderedCats(){
+  const present=new Set(ITEMS.map(i=>i.cat));
+  const ordered=CAT_ORDER.filter(c=>present.has(c));
+  present.forEach(c=>{ if(!ordered.includes(c)) ordered.push(c); });
+  return ["すべて",...ordered];
+}
+
 function buildTabs(){
   const t=document.getElementById('tabs'); const counts={};
   ITEMS.forEach(i=>counts[i.cat]=(counts[i.cat]||0)+1);
-  CATS.forEach(c=>{
-    if(c!=="すべて" && !counts[c]) return;
+  t.innerHTML='';
+  orderedCats().forEach(c=>{
     const n = c==="すべて"? ITEMS.length : counts[c];
     const b=document.createElement('button');
     b.className='tab'+(c===cur?' is-active':''); b.textContent=c+'（'+n+'）'; b.dataset.cat=c;
-    b.onclick=()=>{cur=c; [...t.children].forEach(x=>x.classList.toggle('is-active',x.dataset.cat===c)); render();};
+    b.onclick=()=>{ cur=c; curGrp="すべて";
+      [...t.children].forEach(x=>x.classList.toggle('is-active',x.dataset.cat===c));
+      buildSubtabs(); render(); };
     t.appendChild(b);
   });
+  buildSubtabs();
 }
-function esc(s){return (s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));}
+
+// 選択中の種別の中に複数グループがあれば、第2のグループ絞り込みを表示
+function buildSubtabs(){
+  const st=document.getElementById('subtabs'); st.innerHTML='';
+  if(cur==="すべて"){ st.hidden=true; return; }
+  const counts={}, order=[];
+  ITEMS.forEach(i=>{ if(i.cat===cur && i.grp){ if(!(i.grp in counts)){counts[i.grp]=0; order.push(i.grp);} counts[i.grp]++; } });
+  if(order.length<2){ st.hidden=true; return; }
+  st.hidden=false;
+  const label=document.createElement('span'); label.className='subtab-label'; label.textContent='グループ：'; st.appendChild(label);
+  const total=order.reduce((a,g)=>a+counts[g],0);
+  const mk=(g,n)=>{
+    const b=document.createElement('button');
+    b.className='tab subtab'+(g===curGrp?' is-active':''); b.textContent=g+'（'+n+'）'; b.dataset.grp=g;
+    b.onclick=()=>{ curGrp=g;
+      [...st.querySelectorAll('.subtab')].forEach(x=>x.classList.toggle('is-active',x.dataset.grp===g));
+      render(); };
+    st.appendChild(b);
+  };
+  mk("すべて",total);
+  order.forEach(g=>mk(g,counts[g]));
+}
+
 function render(){
   view=ITEMS.filter(i=>{
     if(cur!=="すべて" && i.cat!==cur) return false;
-    if(kw){ const hay=(i.name+' '+i.pub+' '+i.era+' '+i.cat+' '+(i.typ||'')+' '+i.no).toLowerCase();
+    if(cur!=="すべて" && curGrp!=="すべて" && i.grp!==curGrp) return false;
+    if(kw){ const hay=(i.name+' '+i.pub+' '+i.era+' '+i.cat+' '+(i.grp||'')+' '+(i.note||'')+' '+(i.typ||'')+' '+i.no).toLowerCase();
             if(!hay.includes(kw)) return false; }
     return true;
   });
@@ -266,10 +246,11 @@ function render(){
       : `<div class="thumb"><span class="noimg">画像準備中</span></div>`;
     const meta=[i.era,i.size].filter(Boolean).map(esc).join('　');
     const pub=i.pub?`<div class="meta">${esc(i.pub)}</div>`:'';
+    const ser=(i.grp && i.grp!==i.cat)?`<div class="ser">${esc(i.grp)}</div>`:'';
     return `<div class="card">${thumb}<div class="body">
       <span class="cno"><span class="badge">${esc(i.cat)}</span>　No.${esc(i.no)}</span>
       <span class="cname">${esc(i.name)}</span>
-      ${pub}${meta?`<div class="meta">${meta}</div>`:''}
+      ${ser}${pub}${meta?`<div class="meta">${meta}</div>`:''}
       <div class="own">所蔵：佐口行正氏／許可掲載</div>
     </div></div>`;
   }).join('');
@@ -281,14 +262,12 @@ qClear.onclick=()=>{q.value='';kw='';qClear.hidden=true;render();q.focus();};
 // lightbox
 const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),
       lbName=document.getElementById('lbName'),lbMeta=document.getElementById('lbMeta'),
-      lbOwn=document.getElementById('lbOwn'); let lbi=0;
-function openLB(idx){ const imgItems=view.map((it,k)=>({it,k})).filter(o=>o.it.img);
-  // map current idx to nearest with image
+      lbOwn=document.getElementById('lbOwn'); let lbi=0, lbList=[];
+function openLB(idx){
   lbList=view.filter(it=>it.img); lbi=lbList.findIndex(it=>it===view[idx]); if(lbi<0)lbi=0; showLB(); lb.classList.add('open'); }
-let lbList=[];
 function showLB(){ const i=lbList[lbi]; if(!i)return; lbImg.src=i.img; lbImg.alt=i.name;
   lbName.textContent='No.'+i.no+'　'+i.name;
-  lbMeta.textContent=[i.cat,i.pub,i.era,i.size].filter(Boolean).join('　／　');
+  lbMeta.textContent=[i.cat,(i.grp&&i.grp!==i.cat?i.grp:''),i.pub,i.era,i.size].filter(Boolean).join('　／　');
   lbOwn.textContent='所蔵：佐口行正氏（掲載許可済み）／無断転載・二次利用を禁じます'; }
 document.getElementById('lbClose').onclick=()=>lb.classList.remove('open');
 document.getElementById('lbPrev').onclick=e=>{e.stopPropagation();lbi=(lbi-1+lbList.length)%lbList.length;showLB();};
@@ -298,10 +277,6 @@ document.addEventListener('keydown',e=>{ if(!lb.classList.contains('open'))retur
   if(e.key==='Escape')lb.classList.remove('open');
   if(e.key==='ArrowLeft')document.getElementById('lbPrev').click();
   if(e.key==='ArrowRight')document.getElementById('lbNext').click(); });
-</script>
-<script>
-document.addEventListener('contextmenu',function(e){e.preventDefault();});
-document.addEventListener('dragstart',function(e){e.preventDefault();});
 </script>
 </body>
 </html>
