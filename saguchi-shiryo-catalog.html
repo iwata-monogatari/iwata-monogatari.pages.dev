@@ -51,8 +51,9 @@
   .tab:hover{border-color:var(--cha);color:var(--brown-deep);}
   .tab.is-active{background:var(--matsu);color:#fff;border-color:var(--matsu);}
   /* secondary group filter */
-  .subtabs{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-top:11px;padding-top:11px;border-top:1px dashed var(--waku);}
-  .subtab-label{font-size:12.5px;color:var(--usuzumi);font-weight:700;margin-right:2px;}
+  .subtabs{display:flex;flex-direction:column;gap:9px;align-items:stretch;margin-top:11px;padding-top:11px;border-top:1px dashed var(--waku);}
+  .subrow{display:flex;flex-wrap:wrap;gap:7px;align-items:center;}
+  .subtab-label{font-size:12.5px;color:var(--usuzumi);font-weight:700;margin-right:2px;min-width:4.7em;}
   .subtab{font-size:12.5px;padding:5px 12px;}
   .subtab.is-active{background:var(--cha);color:#fff;border-color:var(--cha);}
   .count{font-size:13px;color:var(--usuzumi);margin-top:10px;}
@@ -174,7 +175,8 @@
 <script>
 // 種別の表示順（データに無い種別は自動で末尾に追加される）
 const CAT_ORDER=["引札","浮世絵","銅印","絵葉書","絵馬","屋台・祭礼写真","地図・絵図","鉄道・交通","名所・観光案内","道中・講社","商家・地域資料","記念・行事"];
-let ITEMS=[], cur="すべて", curGrp="すべて", kw="", view=[];
+let ITEMS=[], cur="すべて", curGrps={}, kw="", view=[];
+const AXIS_ORDER=["年代","発行者","シリーズ","場所・テーマ","種別"];
 const grid=document.getElementById('grid'), countEl=document.getElementById('count'),
       noRes=document.getElementById('noResult'), q=document.getElementById('q'), qClear=document.getElementById('qClear');
 
@@ -200,7 +202,7 @@ function buildTabs(){
     const n = c==="すべて"? ITEMS.length : counts[c];
     const b=document.createElement('button');
     b.className='tab'+(c===cur?' is-active':''); b.textContent=c+'（'+n+'）'; b.dataset.cat=c;
-    b.onclick=()=>{ cur=c; curGrp="すべて";
+    b.onclick=()=>{ cur=c; curGrps={};
       [...t.children].forEach(x=>x.classList.toggle('is-active',x.dataset.cat===c));
       buildSubtabs(); render(); };
     t.appendChild(b);
@@ -208,33 +210,58 @@ function buildTabs(){
   buildSubtabs();
 }
 
-// 選択中の種別の中に複数グループがあれば、第2のグループ絞り込みを表示
+// 選択中の種別が持つグループ軸を、すべて並列に絞り込み行として表示する
 function buildSubtabs(){
   const st=document.getElementById('subtabs'); st.innerHTML='';
   if(cur==="すべて"){ st.hidden=true; return; }
-  const counts={}, order=[];
-  ITEMS.forEach(i=>{ if(i.cat===cur && i.grp){ if(!(i.grp in counts)){counts[i.grp]=0; order.push(i.grp);} counts[i.grp]++; } });
-  if(order.length<2){ st.hidden=true; return; }
-  st.hidden=false;
-  const label=document.createElement('span'); label.className='subtab-label'; label.textContent='グループ：'; st.appendChild(label);
-  const total=order.reduce((a,g)=>a+counts[g],0);
-  const mk=(g,n)=>{
-    const b=document.createElement('button');
-    b.className='tab subtab'+(g===curGrp?' is-active':''); b.textContent=g+'（'+n+'）'; b.dataset.grp=g;
-    b.onclick=()=>{ curGrp=g;
-      [...st.querySelectorAll('.subtab')].forEach(x=>x.classList.toggle('is-active',x.dataset.grp===g));
-      render(); };
-    st.appendChild(b);
-  };
-  mk("すべて",total);
-  order.forEach(g=>mk(g,counts[g]));
+  // 軸ごとに値と件数を集計
+  const axes={}; // axisName -> {order:[], counts:{}}
+  ITEMS.forEach(i=>{
+    if(i.cat!==cur) return;
+    const g=i.grps||{};
+    Object.keys(g).forEach(ax=>{
+      const val=g[ax]; if(!val) return;
+      if(!axes[ax]) axes[ax]={order:[],counts:{}};
+      if(!(val in axes[ax].counts)){axes[ax].counts[val]=0; axes[ax].order.push(val);}
+      axes[ax].counts[val]++;
+    });
+  });
+  const axisNames=Object.keys(axes).sort((a,b)=>{
+    const ia=AXIS_ORDER.indexOf(a), ib=AXIS_ORDER.indexOf(b);
+    return (ia<0?99:ia)-(ib<0?99:ib);
+  });
+  let shown=0;
+  axisNames.forEach(ax=>{
+    const {order,counts}=axes[ax];
+    if(order.length<2) return; // 値が1種類だけの軸は出さない
+    shown++;
+    const row=document.createElement('div'); row.className='subrow';
+    const label=document.createElement('span'); label.className='subtab-label'; label.textContent=ax+'：'; row.appendChild(label);
+    const sel=curGrps[ax]||"すべて";
+    const total=order.reduce((a,v)=>a+counts[v],0);
+    const mk=(val,n)=>{
+      const b=document.createElement('button');
+      b.className='tab subtab'+(val===sel?' is-active':'');
+      b.textContent=val+'（'+n+'）'; b.dataset.ax=ax; b.dataset.val=val;
+      b.onclick=()=>{ if(val==="すべて") delete curGrps[ax]; else curGrps[ax]=val; buildSubtabs(); render(); };
+      row.appendChild(b);
+    };
+    mk("すべて",total);
+    order.forEach(v=>mk(v,counts[v]));
+    st.appendChild(row);
+  });
+  st.hidden = shown===0;
 }
 
 function render(){
   view=ITEMS.filter(i=>{
     if(cur!=="すべて" && i.cat!==cur) return false;
-    if(cur!=="すべて" && curGrp!=="すべて" && i.grp!==curGrp) return false;
-    if(kw){ const hay=(i.name+' '+i.pub+' '+i.era+' '+i.cat+' '+(i.grp||'')+' '+(i.note||'')+' '+(i.typ||'')+' '+i.no).toLowerCase();
+    if(cur!=="すべて"){
+      const g=i.grps||{};
+      for(const ax in curGrps){ const v=curGrps[ax]; if(v && v!=="すべて" && g[ax]!==v) return false; }
+    }
+    if(kw){ const gv=Object.values(i.grps||{}).join(' ');
+            const hay=(i.name+' '+i.pub+' '+i.era+' '+i.cat+' '+(i.grp||'')+' '+gv+' '+(i.note||'')+' '+(i.typ||'')+' '+i.no).toLowerCase();
             if(!hay.includes(kw)) return false; }
     return true;
   });
