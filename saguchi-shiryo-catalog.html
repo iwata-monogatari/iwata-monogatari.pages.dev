@@ -91,6 +91,8 @@
   .foot-links{list-style:none;}
   .foot-links li{margin-bottom:7px;font-size:14px;}
   .foot-links a{color:#f1ece1;}
+  /* 画像保護 */
+  .card img,.lb-inner img{-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none;-webkit-user-select:none;}
 </style>
 </head>
 <body>
@@ -252,6 +254,10 @@ document.addEventListener('keydown',e=>{ if(!lb.classList.contains('open'))retur
   if(e.key==='Escape')lb.classList.remove('open');
   if(e.key==='ArrowLeft')document.getElementById('lbPrev').click();
   if(e.key==='ArrowRight')document.getElementById('lbNext').click(); });
+</script>
+<script>
+document.addEventListener('contextmenu',function(e){e.preventDefault();});
+document.addEventListener('dragstart',function(e){e.preventDefault();});
 </script>
 </body>
 </html>
