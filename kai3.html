@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>古い町の土地を売るとき、なぜ調査が大切なのか ― 見付の旧道・小路・町割りから｜見付古地図散歩 第3回</title>
+<meta name="description" content="明治42年の見付町戸別明細図に残る旧東海道と小路。宿場町の土地を売却するとき問題になりやすい幅員・接道・再建築・境界・上下水道を、古い町割りの視点から解説します。">
+<style>
+  :root{
+    --ink:#2b2622; --ink-soft:#5a514a; --paper:#f7f2e7; --paper-2:#fbf8f0;
+    --line:#d9cdb6; --accent:#2f6b46; --accent-soft:#e7efe7; --seal:#9b3b2f; --maxw:880px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; color:var(--ink); background:var(--paper);
+    font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;
+    line-height:1.95; font-size:17px; letter-spacing:.02em;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
+  .seriesnav{background:#efe7d4; border-bottom:1px solid var(--line); font-family:sans-serif; font-size:13px}
+  .seriesnav .wrap{display:flex; flex-wrap:wrap; gap:6px 18px; padding:11px 22px; align-items:center}
+  .seriesnav a{color:var(--accent); text-decoration:none}
+  .seriesnav a:hover{text-decoration:underline}
+  .seriesnav .now{color:var(--ink-soft)}
+  header.hero{background:linear-gradient(180deg,#efe7d4 0%, var(--paper) 100%); border-bottom:1px solid var(--line); padding:46px 0 34px;}
+  .series-tag{display:inline-block; font-size:13px; letter-spacing:.32em; color:var(--accent); border:1px solid var(--accent); border-radius:2px; padding:5px 14px; margin-bottom:20px;}
+  header.hero h1{font-size:28px; line-height:1.5; margin:0 0 14px; font-weight:600;}
+  header.hero .sub{font-size:16px; color:var(--ink-soft); margin:0}
+  .cover-fig{margin:28px 0 0; text-align:center}
+  .cover-fig img{max-width:100%; border:1px solid var(--line); box-shadow:0 8px 26px rgba(60,45,25,.15); cursor:zoom-in;}
+  .cover-fig figcaption{font-size:13px; color:var(--ink-soft); margin-top:10px}
+  main{padding:8px 0 10px}
+  .lead{background:var(--paper-2); border:1px solid var(--line); border-left:4px solid var(--accent); padding:22px 26px; margin:36px 0; font-size:16.5px; color:#3c352e;}
+  h2{font-size:21px; margin:50px 0 8px; padding:0 0 0 14px; border-left:6px solid var(--accent); line-height:1.5;}
+  h2 .en{display:block; font-size:11px; letter-spacing:.28em; color:var(--accent); font-family:sans-serif; margin-bottom:4px}
+  p{margin:14px 0}
+  figure.plate{margin:30px 0; text-align:center}
+  figure.plate img{max-width:100%; border:1px solid var(--line); box-shadow:0 6px 20px rgba(60,45,25,.12); cursor:zoom-in;}
+  figure.plate figcaption{font-size:13px; color:var(--ink-soft); margin-top:9px; line-height:1.6}
+  .pull{font-size:19px; color:var(--accent); text-align:center; margin:34px auto; max-width:660px; line-height:1.8;}
+  .check{background:var(--paper-2); border:1px solid var(--line); padding:20px 24px; margin:28px 0}
+  .check h3{margin:0 0 10px; font-size:16px; letter-spacing:.06em}
+  .check ul{margin:0; padding:0; list-style:none}
+  .check li{padding:9px 0 9px 30px; position:relative; border-top:1px dashed var(--line); font-size:15.5px}
+  .check li:first-child{border-top:none}
+  .check li::before{content:"✓"; position:absolute; left:4px; top:9px; color:var(--accent); font-weight:bold}
+  .cta{background:var(--accent); color:#fff; border-radius:4px; padding:34px 30px; margin:46px 0 24px; text-align:center;}
+  .cta p{color:#eef5ee; margin:8px auto 20px; max-width:620px}
+  .cta .big{font-size:20px; color:#fff; margin:0 0 6px}
+  .btn{display:inline-block; margin:6px; padding:13px 26px; border-radius:3px; background:#fff; color:var(--accent); text-decoration:none; font-size:15px; border:1px solid #fff;}
+  .btn.ghost{background:transparent; color:#fff}
+  .nextprev{display:flex; justify-content:space-between; gap:14px; margin:30px 0 0; font-family:sans-serif; font-size:14px}
+  .nextprev a{flex:1; border:1px solid var(--line); border-radius:4px; padding:16px 18px; text-decoration:none; color:var(--ink); background:var(--paper-2)}
+  .nextprev a:hover{border-color:var(--accent)}
+  .nextprev small{display:block; color:var(--accent); font-size:12px; margin-bottom:4px}
+  footer{border-top:1px solid var(--line); margin-top:40px; padding:28px 0 60px; color:var(--ink-soft); font-size:13.5px}
+  footer h3{font-size:14px; color:var(--ink); margin:0 0 8px; letter-spacing:.1em}
+  footer p{margin:7px 0}
+  #lb{position:fixed; inset:0; background:rgba(24,18,12,.93); display:none; z-index:99; cursor:zoom-out; padding:24px}
+  #lb.on{display:flex; flex-direction:column; align-items:center; justify-content:center}
+  #lb img{max-width:96%; max-height:84%; object-fit:contain; box-shadow:0 0 40px rgba(0,0,0,.6)}
+  #lb .cap{color:#f1e9da; font-size:14px; margin-top:14px; text-align:center; max-width:90%}
+  #lb .hint{color:#b8ad99; font-size:12px; margin-top:6px}
+  @media(max-width:640px){header.hero h1{font-size:22px} body{font-size:16px} .nextprev{flex-direction:column}}
+</style>
+</head>
+<body>
+
+<nav class="seriesnav"><div class="wrap">
+  <span>見付古地図散歩｜</span>
+  <a href="kai1.html">第1回</a>
+  <a href="kai2.html">第2回</a>
+  <span class="now">第3回 道と調査</span>
+  <a href="kai4.html">第4回</a>
+  <a href="kai5.html">第5回</a>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="series-tag">見付古地図散歩 ＞ 第三回</span>
+    <h1>古い町の土地を売るとき、<br>なぜ「調査」が大切なのか<br><span style="font-size:18px;font-weight:500;color:var(--ink-soft)">― 見付の旧道・小路・町割りから</span></h1>
+    <p class="sub">昔からある道、奥に長い敷地、細い路地。古い町の魅力は、そのまま売却の論点でもある。</p>
+    <figure class="cover-fig">
+      <img src="images/10_shuku.jpg" data-cap="「宿」 ― 旧東海道に面した宿の中心。中央の街道に沿って家々が並ぶ。" alt="見付町戸別明細図 宿">
+      <figcaption>『見付町戸別明細圖』より「宿」 ― 中央を東西に走るのが旧東海道（佐口行正氏 所蔵）</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="lead">
+    見付は、旧東海道の宿場町として発展してきた町です。街道に長く面した間口の狭い敷地、奥へ深くのびる地割、街道から枝分かれする細い小路――。明治四十二年の『見付町戸別明細図』を眺めると、こうした「古い町のかたち」がはっきりと見えてきます。そしてこのかたちは、今このまちで土地や家を売るときに、価格よりも先に確かめておくべき論点に、そのままつながっています。
+  </div>
+
+  <h2><span class="en">THE SHAPE OF AN OLD TOWN</span>古い町のかたちは、地図に残っている</h2>
+  <p>明治の地図から読み取れるのは、まず道のかたちです。東西にのびる旧東海道という太い背骨があり、そこから玄妙小路・寺小路・地蔵小路・横町・西之小路・倉小路・南小路・清水小路といった細い道が分かれていきます。街道沿いには家が密に並び、一軒一軒の間口は狭く、その分だけ敷地は奥へ長くのびています。緑の線でたどられた川や用水も、町のあちこちを縫って流れています。</p>
+  <p>これは宿場町に共通する特徴です。そして魅力であると同時に、現代の不動産取引では、いくつもの確認事項を生む原因にもなります。古い町の土地は、地図のかたちを知らずに「坪いくら」とだけ考えると、思わぬところでつまずきます。</p>
+
+  <figure class="plate">
+    <img src="images/14_nishikoji.jpg" data-cap="「西之小路・倉小路」 ― 街道から枝分かれする細い小路と、入り組んだ地割。" alt="見付町戸別明細図 西之小路・倉小路">
+    <figcaption>「西之小路・倉小路」のシート。街道から分かれる細い小路と、奥行きのある入り組んだ地割が読み取れます。</figcaption>
+  </figure>
+
+  <h2><span class="en">FIVE POINTS</span>古い町の土地で、価格より先に確かめること</h2>
+  <p>明治の地図を入口にすると、確認すべき点が具体的に見えてきます。昔からある道、家と家の距離、奥に長い敷地、細い路地、寺社や旧道との関係、昔の町名や字名――。これらは懐かしい風景の話ではなく、売却の可否や価格を左右する、現在進行形の論点です。</p>
+
+  <div class="check">
+    <h3>宿場町・見付の土地で、特に注意したいこと</h3>
+    <ul>
+      <li><b>道路の幅員（はばいん）</b> ― 細い小路に面した土地は、接する道路が建築基準法上の道路か、幅が足りているかで評価が変わります。</li>
+      <li><b>接道</b> ― 敷地が道路にどれだけ接しているか。間口が狭い、奥まっているといった土地では特に重要です。</li>
+      <li><b>再建築の可否</b> ― 今の家を解体すると新しく建てられない（再建築不可）土地が、古い市街地には潜んでいることがあります。</li>
+      <li><b>境界</b> ― 隣地や道路との境界がはっきりしているか。古い町ほど、境界が曖昧なまま受け継がれている例があります。</li>
+      <li><b>上下水道</b> ― 引き込みの有無や老朽化、私設管の共有など、見えない部分の確認が必要です。</li>
+    </ul>
+  </div>
+
+  <p>これらは、現地を見るだけでは分かりません。法務局の資料、市の道路台帳、過去の経緯、そして地域そのものへの理解――いくつもの手がかりを重ねて、はじめて見えてきます。だからこそ、古い町の不動産は、価格だけでなく「調査の深さ」で結果が変わるのです。</p>
+
+  <figure class="plate">
+    <img src="images/01_kawara.jpg" data-cap="「川原」 ― 町のへりを流れる川筋（緑の線）と、その近くの家並み。" alt="見付町戸別明細図 川原">
+    <figcaption>「川原」のシート。緑の線は町を流れる川筋。水まわりや境界は、古い町の土地でとりわけ確認が必要な部分です。</figcaption>
+  </figure>
+
+  <p class="pull">古い町の不動産は、価格ではなく、調査の深さで結果が変わる。</p>
+
+  <h2><span class="en">WHY IT MATTERS</span>調査が、売主と買主の両方を守る</h2>
+  <p>調査を尽くすことは、面倒な手続きのためではありません。境界や接道、再建築の可否をあらかじめ整理しておけば、買い手は安心して検討でき、結果として土地は適正に評価されます。逆に、確認を後回しにしたまま売り急ぐと、契約後のトラブルや、値引き、白紙解約につながりかねません。丁寧な調査は、売主の手取りを守り、買主の安心を支える――その両方に効いてくる準備です。</p>
+  <p>見付のように長い歴史を持つ町では、なおさらです。土地の一筆一筆に、何代にもわたる暮らしの経緯が積み重なっています。その背景を読み解けるかどうかで、同じ土地でも結果が変わってきます。</p>
+
+  <div class="cta">
+    <p class="big">古い町の土地ほど、売る前の調査がものを言う。</p>
+    <p>富士ヶ丘サービスでは、磐田市見付周辺の古い住宅・相続した土地・空き家について、境界・接道・再建築・上下水道などの確認を含めたご相談を承っています。価格を出す前に、まず土地の状況を一緒に整理しましょう。</p>
+  </div>
+
+  <div class="nextprev">
+    <a href="kai1.html"><small>&laquo; 第1回</small>見付の土地と記憶</a>
+    <a href="kai5.html"><small>第5回 &raquo;</small>見付の古い家を手放す前に、知っておきたいこと</a>
+  </div>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h3>出典・資料について</h3>
+    <p>資料：『見付町戸別明細圖』明治四十二年一月調査　全17葉＋表紙（佐口行正氏 所蔵史料）</p>
+    <p>本ページは富士ヶ丘サービス株式会社が運営する地域文化コンテンツです。掲載内容・画像に関するお問い合わせ、関係者の方からのご連絡は当社までお願いいたします。</p>
+    <p style="margin-top:14px">&copy; 富士ヶ丘サービス株式会社 ／ 磐田物語</p>
+  </div>
+</footer>
+
+<div id="lb"><img src="" alt=""><div class="cap"></div><div class="hint">クリックで閉じる</div></div>
+
+<script>
+(function(){
+  var lb=document.getElementById('lb'), lbi=lb.querySelector('img'), lbc=lb.querySelector('.cap');
+  function open(src,cap){lbi.src=src; lbc.textContent=cap||''; lb.classList.add('on'); document.body.style.overflow='hidden';}
+  function close(){lb.classList.remove('on'); lbi.src=''; document.body.style.overflow='';}
+  document.addEventListener('click',function(e){
+    var t=e.target;
+    if(t.tagName==='IMG' && t.dataset.cap && !t.closest('#lb')){ open(t.getAttribute('src'), t.dataset.cap); }
+  });
+  lb.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>
+                                                                                                                                                                     

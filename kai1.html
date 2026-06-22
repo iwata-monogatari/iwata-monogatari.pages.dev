@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>見付の土地と記憶 ― 明治42年の見付町戸別明細図から読む、家・道・暮らし</title>
+<meta name="description" content="明治42年1月に調査された『見付町戸別明細図』を読み解く。旧東海道の宿場町・見付に刻まれた家並み、小路、寺社、町の中枢。土地の記憶から、相続・空き家・古い家の扱いを考える。">
+<style>
+  :root{
+    --ink:#2b2622; --ink-soft:#5a514a; --paper:#f7f2e7; --paper-2:#fbf8f0;
+    --line:#d9cdb6; --accent:#2f6b46; --accent-soft:#e7efe7; --seal:#9b3b2f;
+    --maxw:880px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; color:var(--ink);
+    background:var(--paper);
+    font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;
+    line-height:1.95; font-size:17px; letter-spacing:.02em;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
+  /* ---- hero ---- */
+  header.hero{
+    background:linear-gradient(180deg,#efe7d4 0%, var(--paper) 100%);
+    border-bottom:1px solid var(--line);
+    padding:54px 0 38px;
+  }
+  .series-tag{
+    display:inline-block; font-size:13px; letter-spacing:.32em;
+    color:var(--accent); border:1px solid var(--accent);
+    border-radius:2px; padding:5px 14px; margin-bottom:22px;
+  }
+  header.hero h1{
+    font-size:30px; line-height:1.5; margin:0 0 14px; font-weight:600;
+  }
+  header.hero .sub{font-size:16px; color:var(--ink-soft); margin:0}
+  .cover-fig{margin:30px 0 0; text-align:center}
+  .cover-fig img{
+    max-width:100%; width:520px; border:1px solid var(--line);
+    box-shadow:0 10px 30px rgba(60,45,25,.16); cursor:zoom-in;
+  }
+  .cover-fig figcaption{font-size:13px; color:var(--ink-soft); margin-top:10px}
+  /* ---- body ---- */
+  main{padding:8px 0 10px}
+  .lead{
+    background:var(--paper-2); border:1px solid var(--line);
+    border-left:4px solid var(--accent);
+    padding:22px 26px; margin:38px 0; font-size:16.5px; color:#3c352e;
+  }
+  h2{
+    font-size:21px; margin:52px 0 8px; padding:0 0 0 14px;
+    border-left:6px solid var(--accent); line-height:1.5;
+  }
+  h2 .en{display:block; font-size:11px; letter-spacing:.28em; color:var(--accent); font-family:sans-serif; margin-bottom:4px}
+  p{margin:14px 0}
+  figure.plate{margin:30px 0; text-align:center}
+  figure.plate img{
+    max-width:100%; border:1px solid var(--line);
+    box-shadow:0 6px 20px rgba(60,45,25,.12); cursor:zoom-in;
+  }
+  figure.plate figcaption{font-size:13px; color:var(--ink-soft); margin-top:9px; line-height:1.6}
+  .pull{
+    font-size:19px; color:var(--accent); text-align:center;
+    margin:34px auto; max-width:640px; line-height:1.8;
+  }
+  /* ---- gallery ---- */
+  .gallery-intro{margin-top:48px}
+  .grid{
+    display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+    gap:12px; margin:24px 0 8px;
+  }
+  .cell{cursor:zoom-in; background:#fff; border:1px solid var(--line); padding:6px; text-align:center}
+  .cell img{width:100%; height:128px; object-fit:cover; display:block}
+  .cell span{display:block; font-size:12px; color:var(--ink-soft); margin-top:6px; line-height:1.4}
+  .note-small{font-size:12.5px; color:var(--ink-soft)}
+  /* ---- series ---- */
+  .series{background:var(--paper-2); border:1px solid var(--line); padding:8px 26px 26px; margin:40px 0}
+  .series ol{list-style:none; counter-reset:s; padding:0; margin:14px 0 0}
+  .series li{counter-increment:s; padding:16px 0 16px 52px; position:relative; border-top:1px dashed var(--line)}
+  .series li:first-child{border-top:none}
+  .series li::before{
+    content:counter(s); position:absolute; left:0; top:16px;
+    width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff;
+    font-family:sans-serif; font-size:15px; display:flex; align-items:center; justify-content:center;
+  }
+  .series li b{display:block; font-size:16.5px; margin-bottom:3px}
+  .series li small{color:var(--ink-soft); font-size:13.5px; line-height:1.6}
+  /* ---- cta ---- */
+  .cta{
+    background:var(--accent); color:#fff; border-radius:4px;
+    padding:34px 30px; margin:46px 0 30px; text-align:center;
+  }
+  .cta p{color:#eef5ee; margin:8px auto 20px; max-width:620px}
+  .cta .big{font-size:20px; color:#fff; margin:0 0 6px}
+  .btn{
+    display:inline-block; margin:6px; padding:13px 26px; border-radius:3px;
+    background:#fff; color:var(--accent); text-decoration:none; font-size:15px;
+    border:1px solid #fff;
+  }
+  .btn.ghost{background:transparent; color:#fff}
+  /* ---- footer ---- */
+  footer{border-top:1px solid var(--line); margin-top:40px; padding:28px 0 60px; color:var(--ink-soft); font-size:13.5px}
+  footer h3{font-size:14px; color:var(--ink); margin:0 0 8px; letter-spacing:.1em}
+  footer p{margin:7px 0}
+  /* ---- lightbox ---- */
+  #lb{position:fixed; inset:0; background:rgba(24,18,12,.93); display:none; z-index:99; cursor:zoom-out; padding:24px}
+  #lb.on{display:flex; flex-direction:column; align-items:center; justify-content:center}
+  #lb img{max-width:96%; max-height:84%; object-fit:contain; box-shadow:0 0 40px rgba(0,0,0,.6)}
+  #lb .cap{color:#f1e9da; font-size:14px; margin-top:14px; text-align:center; max-width:90%}
+  #lb .hint{color:#b8ad99; font-size:12px; margin-top:6px}
+  @media(max-width:640px){
+    header.hero h1{font-size:23px} body{font-size:16px}
+    .cell img{height:104px}
+  }
+</style>
+</head>
+<body>
+
+<nav style="background:#efe7d4;border-bottom:1px solid var(--line);font-family:sans-serif;font-size:13px">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:11px 22px;align-items:center">
+    <span>見付古地図散歩｜</span>
+    <span style="color:var(--ink-soft)">第1回 見付の土地と記憶</span>
+    <a href="kai2.html" style="color:var(--accent);text-decoration:none">第2回</a>
+    <a href="kai3.html" style="color:var(--accent);text-decoration:none">第3回</a>
+    <a href="kai4.html" style="color:var(--accent);text-decoration:none">第4回</a>
+    <a href="kai5.html" style="color:var(--accent);text-decoration:none">第5回</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="series-tag">見付古地図散歩 ＞ 第一回</span>
+    <h1>見付の土地と記憶<br>― 明治42年の見付町戸別明細図から読む、家・道・暮らし</h1>
+    <p class="sub">古い町には、古い家だけでなく、道、地割、商い、人の流れが残っている。</p>
+    <figure class="cover-fig">
+      <img src="images/00_hyoshi.jpg" data-cap="『見付町戸別明細圖』表紙 ― 明治四十二年一月調査" alt="明治四十二年一月調査 見付町戸別明細図 表紙">
+      <figcaption>『見付町戸別明細圖』表紙 ― 明治四十二年一月調査（佐口行正氏所蔵）</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="lead">
+    明治四十二（一九〇九）年一月に調査された『見付町戸別明細図』には、当時の家並み、道筋、暮らしの輪郭が一軒ずつ書き込まれています。現在の地図では見えにくくなった町の記憶を、この一枚一枚から少しずつ読み解いていきます。私たちが相続や空き家のご相談をお受けするとき見ているのも、じつはこの延長線上にある「土地の歴史」です。
+  </div>
+
+  <h2><span class="en">INTRODUCTION</span>見付という町は、土地の上に記憶が重なっている</h2>
+  <p>見付は、旧東海道の宿場町として栄えた町です。東西にのびる街道を背骨に、川原・一本松・西坂・馬場・宿・東坂・三本松といった町が連なり、そこから玄妙小路・宮小路・寺小路・地蔵小路・横町・南小路・清水小路・権現・境松といった小路が枝のように分かれていきます。町の名前そのものが、道のかたちや、神社へ向かう道筋、地形のなごりを今に伝えています。</p>
+  <p>不動産を見るときも、本来は同じことが言えます。単に「何坪か」「いくらで売れるか」だけでは、その土地の本当の姿は見えてきません。どんな道に面し、どんな家がどう並び、どんな歴史の上にあるのか。古い町ほど、そこに積み重なった記憶が、現在の取引にも静かに影響してきます。</p>
+
+  <h2><span class="en">HOUSES</span>明治42年の地図に残る、一軒ずつの家並み</h2>
+  <p>この図がほかの地図と決定的に違うのは、「戸別」――つまり一軒ずつ、世帯ごとに名前が記されている点です。街道や小路に沿って、当時そこに暮らした家々が、びっしりと書き込まれています。赤い線は道、緑の線は町なかを流れる川や用水、そして要所には寺(卍)や神社、町の施設が描かれています。</p>
+  <p>一枚を眺めるだけで、当時の見付がどれほど人の密度の高い、生き生きとした町だったかが伝わってきます。家と家のあいだの距離、奥に長くのびる敷地、路地のたたみ方。これらは単なる過去の風景ではなく、今の見付の地割にも、かたちを変えながら受け継がれています。</p>
+
+  <figure class="plate">
+    <img src="images/10_shuku.jpg" data-cap="「宿」 ― 旧東海道に面した宿の中心。街道(中央の帯)の両側に家々が向かい合って並ぶ。" alt="見付町戸別明細図 宿">
+    <figcaption>「宿」のシート。中央の帯が旧東海道で、街道の両側に家が向かい合って並ぶ、宿場町らしい町割りが読み取れます。</figcaption>
+  </figure>
+
+  <h2><span class="en">STREETS</span>旧東海道と小路 ― 今も残る道、変わった道</h2>
+  <p>古い地図と現在の地図を重ねると、変わらない道筋と、姿を変えた場所がはっきり見えてきます。見付の場合、東西に走る旧東海道という背骨は今もそのまま町の軸であり続けています。一方で、街道から分かれる細い小路、川沿いの道、寺社へ向かう参道などは、拡幅されたり、付け替えられたり、あるいは今も当時のまま残っていたりと、さまざまです。</p>
+  <p>これは懐古趣味の話ではありません。古い市街地では、道の幅(幅員)、敷地が道路にどう接しているか(接道)、奥行きの深さといった要素が、現在の不動産取引に直接かかわってきます。昔ながらの細い小路に面した土地、街道に長く面した間口の狭い敷地――こうした「町のかたち」は、売却や建て替えのときに必ず確認すべき論点になります。</p>
+
+  <figure class="plate">
+    <img src="images/04_terakoji.jpg" data-cap="「北井上・寺小路」 ― 郡役所や大見寺など、町の中枢が集まる一帯。右端の緑線は川筋。" alt="見付町戸別明細図 寺小路">
+    <figcaption>「北井上・寺小路」のシート。郡役所や大見寺など、明治の見付の中枢がこの一帯に集まっていました。右端の緑の線は町を流れる川筋です。</figcaption>
+  </figure>
+
+  <h2><span class="en">THE CORE OF THE TOWN</span>町の中枢 ― 郡役所・登記所・寺社・学校</h2>
+  <p>この図には、当時の見付が単なる住宅地ではなく、地域の中心だったことを示す施設がいくつも記されています。磐田郡の役所(郡役所)、土地や建物の権利を記録する登記所、ものづくりの製造所、学びの場である学校、そして数多くの寺院と神社。見付は、人が集まり、商いがあり、行政や教育の核があった、文字どおりの「町」でした。</p>
+  <p>なかでも私たちが目をとめるのは、明治四十二年の見付に、すでに<strong>登記所</strong>が置かれていたことです。土地や建物の権利を記録し、受け継いでいくしくみは、百年以上も前からこの町に根づいていました。相続登記が義務化された現在、私たちが日々向き合っている相続や名義の整理も、じつはこの長い営みの延長線上にあります。土地の価値は、面積や築年数だけでは測れません。その場所がどんな歴史を持ち、どんな人の流れの中にあったのか。地域を知ることは、不動産を正しく扱う第一歩です。</p>
+
+  <p class="pull">この町の土地は、ただの坪単価では語り尽くせない。</p>
+
+  <h2><span class="en">BEFORE YOU LET GO</span>古い家や土地を扱うときに、大切なこと</h2>
+  <p>見付のような歴史ある町では、相続した家、空き家、古い土地を売却する前に、確認しておきたいことが少なくありません。境界はどこか。道路にきちんと接しているか。建て替えはできるのか。上下水道はどうなっているか。解体が必要か、残置物はどうするか。近隣との関係は――。これらを一つずつ丁寧に調べておくことが、売主にとっても買主にとっても、安心できる取引につながります。</p>
+  <p>古い町の不動産は、価格の多寡だけでなく、こうした「調査の深さ」で結果が大きく変わります。急いで値段を決めることだけが正解ではありません。その土地がどう使われ、どう受け継がれてきたのかを一度整理してから考えることで、納得のいく判断にたどり着けます。</p>
+
+  <div class="cta">
+    <p class="big">売る前に、まず整理する。</p>
+    <p>富士ヶ丘サービスでは、磐田市見付周辺の相続不動産・空き家・古い住宅・土地売却のご相談を承っています。すぐに売るかどうか決まっていなくても構いません。まずは、家と土地の状況を一緒に整理するところからお手伝いします。</p>
+  </div>
+
+  <h2 class="gallery-intro"><span class="en">PLATES &nbsp;1–17</span>見付町戸別明細図 ― 町別シート一覧</h2>
+  <p>明治四十二年の見付町は、街道沿いの町と、そこから分かれる小路ごとに、十七枚の図に描き分けられています。各シートをクリックすると拡大表示されます。</p>
+  <div class="grid" id="grid"><!-- filled by JS --></div>
+  <p class="note-small">※ 各図には当時の世帯名など個人にかかわる記載が含まれます。郷土史・都市史の貴重な記録として公開していますが、ご関係者・ご子孫の方で掲載についてお気づきの点があれば、下記までご連絡ください。</p>
+
+  <div class="series">
+    <h2 style="border:none; padding:14px 0 0; margin:0"><span class="en">SERIES PLAN</span>連載「見付古地図散歩」全5回の構成</h2>
+    <ol>
+      <li><b>第1回：見付の土地と記憶（本記事）</b><small>戸別明細図の全体像から、見付という町の骨格と「土地の記憶」という視点を示す。シリーズの導入。</small></li>
+      <li><b><a href="kai2.html" style="color:var(--accent)">第2回：古い地図に残る家並みと、相続される土地</a></b><small>一軒ずつ記された家並みを入口に、相続した家・空き家を「処分」ではなく「受け継いできたもの」として見つめ直す。<a href="kai2.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
+      <li><b><a href="kai3.html" style="color:var(--accent)">第3回：旧道・小路・町割り ― 古い町の土地を売るとき、なぜ調査が大切か</a></b><small>幅員・接道・再建築・境界・上下水道など、宿場町ならではの売却時の論点を、地図の道筋から具体的に解説。<a href="kai3.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
+      <li><b><a href="kai4.html" style="color:var(--accent)">第4回：明治42年、見付の町の中枢 ― 郡役所・登記所・寺社・学校</a></b><small>町の施設から、見付が地域の中心だった歴史を語り、土地の価値は面積や築年数だけでは測れないことへつなげる。<a href="kai4.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
+      <li><b><a href="kai5.html" style="color:var(--accent)">第5回：見付の古い家を手放す前に、知っておきたいこと</a></b><small>相続登記・境界・接道・解体・残置物・空き家管理・売るか貸すか。歴史の語りから実務へ着地する、売却導線の要となる回。<a href="kai5.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
+    </ol>
+  </div>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h3>出典・資料について</h3>
+    <p>資料：『見付町戸別明細圖』明治四十二年一月調査　全17葉＋表紙（佐口行正氏 所蔵史料）</p>
+    <p>戦前の戸別明細図・商工地図は、個別の家名や商店名が記載され、郷土史・商業史・都市社会史などの研究に用いられる貴重な資料とされています。</p>
+    <p>本ページは富士ヶ丘サービス株式会社が運営する地域文化コンテンツです。掲載内容・画像に関するお問い合わせ、関係者の方からのご連絡は当社までお願いいたします。</p>
+    <p style="margin-top:14px">&copy; 富士ヶ丘サービス株式会社 ／ 磐田物語</p>
+  </div>
+</footer>
+
+<div id="lb"><img src="" alt=""><div class="cap"></div><div class="hint">クリックで閉じる</div></div>
+
+<script>
+(function(){
+  var plates=[
+    ["00_hyoshi","表紙"],["01_kawara","川原"],["02_genmyo","玄妙小路"],
+    ["03_miyakoji","宮小路"],["04_terakoji","北井上・寺小路"],["05_jizo","地蔵小路"],
+    ["06_sumiyoshi","住吉"],["07_ippommatsu","一本松・川原"],["08_nishizaka","西坂"],
+    ["09_baba","馬場"],["10_shuku","宿"],["11_higashizaka","東坂"],
+    ["12_sambommatsu","三本松"],["13_yokocho","横町"],["14_nishikoji","西之小路・倉小路"],
+    ["15_minamikoji","南小路・清水小路・川尻"],["16_gongen","権現"],["17_sakaimatsu","境松"]
+  ];
+ 

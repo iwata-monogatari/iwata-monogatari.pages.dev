@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>古い地図に残る家並みと、相続される土地 ― 見付古地図散歩 第2回</title>
+<meta name="description" content="明治42年の見付町戸別明細図には、街道や小路に沿って一軒ずつ世帯名が記されている。受け継がれてきた家並みを入口に、相続した家や空き家を「処分」ではなく「受け継いだもの」として見つめ直す。磐田市見付の相続不動産相談。">
+<style>
+  :root{--ink:#2b2622;--ink-soft:#5a514a;--paper:#f7f2e7;--paper-2:#fbf8f0;--line:#d9cdb6;--accent:#2f6b46;--accent-soft:#e7efe7;--seal:#9b3b2f;--maxw:880px;}
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
+  body{margin:0;color:var(--ink);background:var(--paper);font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;line-height:1.95;font-size:17px;letter-spacing:.02em;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .seriesnav{background:#efe7d4;border-bottom:1px solid var(--line);font-family:sans-serif;font-size:13px}
+  .seriesnav .wrap{display:flex;flex-wrap:wrap;gap:6px 16px;padding:11px 22px;align-items:center}
+  .seriesnav a{color:var(--accent);text-decoration:none}
+  .seriesnav a:hover{text-decoration:underline}
+  .seriesnav .now{color:var(--ink-soft)}
+  header.hero{background:linear-gradient(180deg,#efe7d4 0%,var(--paper) 100%);border-bottom:1px solid var(--line);padding:46px 0 34px;}
+  .series-tag{display:inline-block;font-size:13px;letter-spacing:.32em;color:var(--accent);border:1px solid var(--accent);border-radius:2px;padding:5px 14px;margin-bottom:20px;}
+  header.hero h1{font-size:28px;line-height:1.5;margin:0 0 14px;font-weight:600;}
+  header.hero .sub{font-size:16px;color:var(--ink-soft);margin:0}
+  .cover-fig{margin:28px 0 0;text-align:center}
+  .cover-fig img{max-width:100%;border:1px solid var(--line);box-shadow:0 8px 26px rgba(60,45,25,.15);cursor:zoom-in;}
+  .cover-fig figcaption{font-size:13px;color:var(--ink-soft);margin-top:10px}
+  main{padding:8px 0 10px}
+  .lead{background:var(--paper-2);border:1px solid var(--line);border-left:4px solid var(--accent);padding:22px 26px;margin:36px 0;font-size:16.5px;color:#3c352e;}
+  h2{font-size:21px;margin:50px 0 8px;padding:0 0 0 14px;border-left:6px solid var(--accent);line-height:1.5;}
+  h2 .en{display:block;font-size:11px;letter-spacing:.28em;color:var(--accent);font-family:sans-serif;margin-bottom:4px}
+  p{margin:14px 0}
+  figure.plate{margin:30px 0;text-align:center}
+  figure.plate img{max-width:100%;border:1px solid var(--line);box-shadow:0 6px 20px rgba(60,45,25,.12);cursor:zoom-in;}
+  figure.plate figcaption{font-size:13px;color:var(--ink-soft);margin-top:9px;line-height:1.6}
+  .pull{font-size:19px;color:var(--accent);text-align:center;margin:34px auto;max-width:660px;line-height:1.8;}
+  .cta{background:var(--accent);color:#fff;border-radius:4px;padding:34px 30px;margin:46px 0 24px;text-align:center;}
+  .cta p{color:#eef5ee;margin:8px auto 20px;max-width:620px}
+  .cta .big{font-size:20px;color:#fff;margin:0 0 6px}
+  .btn{display:inline-block;margin:6px;padding:13px 26px;border-radius:3px;background:#fff;color:var(--accent);text-decoration:none;font-size:15px;border:1px solid #fff;}
+  .btn.ghost{background:transparent;color:#fff}
+  .nextprev{display:flex;justify-content:space-between;gap:14px;margin:30px 0 0;font-family:sans-serif;font-size:14px}
+  .nextprev a{flex:1;border:1px solid var(--line);border-radius:4px;padding:16px 18px;text-decoration:none;color:var(--ink);background:var(--paper-2)}
+  .nextprev a:hover{border-color:var(--accent)}
+  .nextprev small{display:block;color:var(--accent);font-size:12px;margin-bottom:4px}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:28px 0 60px;color:var(--ink-soft);font-size:13.5px}
+  footer h3{font-size:14px;color:var(--ink);margin:0 0 8px;letter-spacing:.1em}
+  footer p{margin:7px 0}
+  #lb{position:fixed;inset:0;background:rgba(24,18,12,.93);display:none;z-index:99;cursor:zoom-out;padding:24px}
+  #lb.on{display:flex;flex-direction:column;align-items:center;justify-content:center}
+  #lb img{max-width:96%;max-height:84%;object-fit:contain;box-shadow:0 0 40px rgba(0,0,0,.6)}
+  #lb .cap{color:#f1e9da;font-size:14px;margin-top:14px;text-align:center;max-width:90%}
+  #lb .hint{color:#b8ad99;font-size:12px;margin-top:6px}
+  @media(max-width:640px){header.hero h1{font-size:22px} body{font-size:16px} .nextprev{flex-direction:column}}
+</style>
+</head>
+<body>
+
+<nav class="seriesnav"><div class="wrap">
+  <span>見付古地図散歩｜</span>
+  <a href="kai1.html">第1回</a>
+  <span class="now">第2回 相続される土地</span>
+  <a href="kai3.html">第3回</a>
+  <a href="kai4.html">第4回</a>
+  <a href="kai5.html">第5回</a>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="series-tag">見付古地図散歩 ＞ 第二回</span>
+    <h1>古い地図に残る家並みと、<br>相続される土地</h1>
+    <p class="sub">一軒ずつ記された名前は、長く受け継がれてきた家のしるしである。</p>
+    <figure class="cover-fig">
+      <img src="images/11_higashizaka.jpg" data-cap="「東坂」 ― 街道沿いに、一軒ずつ世帯名が記されている。" alt="見付町戸別明細図 東坂">
+      <figcaption>『見付町戸別明細圖』より「東坂」 ― 街道に沿って一軒ずつ家が書き込まれている（佐口行正氏 所蔵）</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="lead">
+    明治四十二年の『見付町戸別明細図』がほかの地図と決定的に違うのは、「戸別」――つまり一軒ずつ、世帯ごとに名前が記されている点です。街道や小路に沿ってびっしりと並ぶその名前は、当時そこに暮らし、家を守ってきた人々のしるしです。相続や空き家のご相談をお受けするとき、私たちが見ているのも、この「受け継がれてきた家」という時間の重なりです。
+  </div>
+
+  <h2><span class="en">HOUSE BY HOUSE</span>「戸別」── 一軒ずつ記された家並み</h2>
+  <p>地図を開くと、まず目に飛び込んでくるのは、道に沿ってびっしりと並ぶ手書きの名前です。赤い線で引かれた街道や小路の両側に、家が一軒ずつ、世帯ごとに記されています。間口の狭い家が肩を寄せ合うように連なり、その奥に敷地がのびていく。宿場町・見付の、人の密度の高い暮らしぶりが、そのまま紙の上に写し取られています。</p>
+  <p>一軒ずつの名前を眺めていると、ここが単なる土地の集まりではなく、家と家、人と人が重なり合って成り立っていた町だったことが伝わってきます。今に残る地割や町名の多くは、この時代の暮らしの単位を、かたちを変えながら受け継いだものです。</p>
+
+  <h2><span class="en">A MARK OF SUCCESSION</span>名前は、受け継がれてきたしるし</h2>
+  <p>戸別に記された名前は、その家がそこに「在った」という記録です。そして多くの家は、その後も世代を越えて住み継がれ、相続され、今へとつながっています。百年以上前の地図に記された区画が、現在のあなたの土地につながっている――見付では、それは決して珍しいことではありません。</p>
+  <p>だからこそ、相続した家や土地に向き合うとき、それを単なる「不動産」として数字だけで捉えてしまうと、どこか落ち着かない気持ちが残ります。そこには、長く続いてきた家の歴史があるからです。</p>
+
+  <p class="pull">そこにあるのは、土地建物ではなく、受け継がれてきた家の歴史である。</p>
+
+  <h2><span class="en">NOT JUST DISPOSAL</span>相続した家は、「処分するもの」ではない</h2>
+  <p>相続した家や空き家の話になると、つい「どう処分するか」という言葉で語られがちです。けれど、私たちはそれを少し違う角度から見ています。手放すかどうかを考える前に、まずその家がどんな経緯で受け継がれてきたのかを整理する。それは、過去を懐かしむためではなく、これからをきちんと決めるための準備です。</p>
+  <p>来歴を整理しておくと、選択肢が見えやすくなります。売る、貸す、活用する、今は動かさない――どれを選ぶにしても、家の背景を知っているかどうかで、判断の納得感がまるで変わってきます。</p>
+
+  <figure class="plate">
+    <img src="images/07_ippommatsu.jpg" data-cap="「一本松・川原」 ― 街道の西の入口にあたる一帯。家並みが連なる。" alt="見付町戸別明細図 一本松・川原">
+    <figcaption>「一本松・川原」のシート。街道の西の入口にあたる一帯にも、一軒ずつの暮らしが細かく記されています。</figcaption>
+  </figure>
+
+  <h2><span class="en">START BY ORGANIZING</span>まずは、家の来歴を整理することから</h2>
+  <p>見付の古い家、相続した土地、空き家について、すぐに売る・売らないを決める必要はありません。まずは、その土地がどんな背景を持ち、どう受け継がれてきたのかを整理するところから始めれば十分です。名義はどうなっているか、いつ頃からの家か、どんな経緯で今に至るのか。一つずつほどいていくと、進むべき方向が自然と見えてきます。</p>
+
+  <div class="cta">
+    <p class="big">急いで決めなくていい。まず、整理することから。</p>
+    <p>富士ヶ丘サービスでは、磐田市見付周辺の相続不動産・空き家・古い住宅のご相談を承っています。すぐに売るかどうか決まっていなくても構いません。まずは、家と土地の状況を一緒に整理するところからお手伝いします。</p>
+  </div>
+
+  <div class="nextprev">
+    <a href="kai1.html"><small>&laquo; 第1回</small>見付の土地と記憶</a>
+    <a href="kai3.html"><small>第3回 &raquo;</small>古い町の土地を売るとき、なぜ調査が大切なのか</a>
+  </div>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h3>出典・資料について</h3>
+    <p>資料：『見付町戸別明細圖』明治四十二年一月調査　全17葉＋表紙（佐口行正氏 所蔵史料）</p>
+    <p>各図には当時の世帯名など個人にかかわる記載が含まれます。郷土史・都市史の貴重な記録として公開しています。ご関係者・ご子孫の方でお気づきの点があれば当社までご連絡ください。</p>
+    <p style="margin-top:14px">&copy; 富士ヶ丘サービス株式会社 ／ 磐田物語</p>
+  </div>
+</footer>
+
+<div id="lb"><img src="" alt=""><div class="cap"></div><div class="hint">クリックで閉じる</div></div>
+
+<script>
+(function(){
+  var lb=document.getElementById('lb'),lbi=lb.querySelector('img'),lbc=lb.querySelector('.cap');
+  function open(src,cap){lbi.src=src;lbc.textContent=cap||'';lb.classList.add('on');document.body.style.overflow='hidden';}
+  function close(){lb.classList.remove('on');lbi.src='';document.body.style.overflow='';}
+  document.addEventListener('click',function(e){var t=e.target;if(t.tagName==='IMG'&&t.dataset.cap&&!t.closest('#lb')){open(t.getAttribute('src'),t.dataset.cap);}});
+  lb.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>
+                                                                                                                                                                           

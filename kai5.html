@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>見付の古い家を手放す前に、知っておきたいこと ― 相続・空き家・土地売却｜見付古地図散歩 第5回</title>
+<meta name="description" content="明治42年の見付町戸別明細図を入口に、相続した家・空き家・古い土地を手放す前に確認したいことを整理。相続登記・境界・接道・解体・残置物・空き家管理・売るか貸すか・すぐ売らない選択まで。磐田市見付の不動産相談。">
+<style>
+  :root{
+    --ink:#2b2622; --ink-soft:#5a514a; --paper:#f7f2e7; --paper-2:#fbf8f0;
+    --line:#d9cdb6; --accent:#2f6b46; --accent-soft:#e7efe7; --seal:#9b3b2f; --maxw:880px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; color:var(--ink); background:var(--paper);
+    font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;
+    line-height:1.95; font-size:17px; letter-spacing:.02em;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
+  .seriesnav{background:#efe7d4; border-bottom:1px solid var(--line); font-family:sans-serif; font-size:13px}
+  .seriesnav .wrap{display:flex; flex-wrap:wrap; gap:6px 18px; padding:11px 22px; align-items:center}
+  .seriesnav a{color:var(--accent); text-decoration:none}
+  .seriesnav a:hover{text-decoration:underline}
+  .seriesnav .now{color:var(--ink-soft)}
+  header.hero{background:linear-gradient(180deg,#efe7d4 0%, var(--paper) 100%); border-bottom:1px solid var(--line); padding:46px 0 34px;}
+  .series-tag{display:inline-block; font-size:13px; letter-spacing:.32em; color:var(--accent); border:1px solid var(--accent); border-radius:2px; padding:5px 14px; margin-bottom:20px;}
+  header.hero h1{font-size:28px; line-height:1.5; margin:0 0 14px; font-weight:600;}
+  header.hero .sub{font-size:16px; color:var(--ink-soft); margin:0}
+  .cover-fig{margin:28px 0 0; text-align:center}
+  .cover-fig img{max-width:100%; width:480px; border:1px solid var(--line); box-shadow:0 8px 26px rgba(60,45,25,.15); cursor:zoom-in;}
+  .cover-fig figcaption{font-size:13px; color:var(--ink-soft); margin-top:10px}
+  main{padding:8px 0 10px}
+  .lead{background:var(--paper-2); border:1px solid var(--line); border-left:4px solid var(--accent); padding:22px 26px; margin:36px 0; font-size:16.5px; color:#3c352e;}
+  h2{font-size:21px; margin:50px 0 8px; padding:0 0 0 14px; border-left:6px solid var(--accent); line-height:1.5;}
+  h2 .en{display:block; font-size:11px; letter-spacing:.28em; color:var(--accent); font-family:sans-serif; margin-bottom:4px}
+  p{margin:14px 0}
+  figure.plate{margin:30px 0; text-align:center}
+  figure.plate img{max-width:100%; border:1px solid var(--line); box-shadow:0 6px 20px rgba(60,45,25,.12); cursor:zoom-in;}
+  figure.plate figcaption{font-size:13px; color:var(--ink-soft); margin-top:9px; line-height:1.6}
+  .pull{font-size:19px; color:var(--accent); text-align:center; margin:34px auto; max-width:660px; line-height:1.8;}
+  .check{background:var(--paper-2); border:1px solid var(--line); padding:20px 24px; margin:28px 0}
+  .check h3{margin:0 0 10px; font-size:16px; letter-spacing:.06em}
+  .check ul{margin:0; padding:0; list-style:none}
+  .check li{padding:10px 0 10px 30px; position:relative; border-top:1px dashed var(--line); font-size:15.5px}
+  .check li:first-child{border-top:none}
+  .check li::before{content:"✓"; position:absolute; left:4px; top:10px; color:var(--accent); font-weight:bold}
+  .cta{background:var(--accent); color:#fff; border-radius:4px; padding:34px 30px; margin:46px 0 24px; text-align:center;}
+  .cta p{color:#eef5ee; margin:8px auto 20px; max-width:620px}
+  .cta .big{font-size:20px; color:#fff; margin:0 0 6px}
+  .btn{display:inline-block; margin:6px; padding:13px 26px; border-radius:3px; background:#fff; color:var(--accent); text-decoration:none; font-size:15px; border:1px solid #fff;}
+  .btn.ghost{background:transparent; color:#fff}
+  .nextprev{display:flex; justify-content:space-between; gap:14px; margin:30px 0 0; font-family:sans-serif; font-size:14px}
+  .nextprev a{flex:1; border:1px solid var(--line); border-radius:4px; padding:16px 18px; text-decoration:none; color:var(--ink); background:var(--paper-2)}
+  .nextprev a:hover{border-color:var(--accent)}
+  .nextprev small{display:block; color:var(--accent); font-size:12px; margin-bottom:4px}
+  footer{border-top:1px solid var(--line); margin-top:40px; padding:28px 0 60px; color:var(--ink-soft); font-size:13.5px}
+  footer h3{font-size:14px; color:var(--ink); margin:0 0 8px; letter-spacing:.1em}
+  footer p{margin:7px 0}
+  #lb{position:fixed; inset:0; background:rgba(24,18,12,.93); display:none; z-index:99; cursor:zoom-out; padding:24px}
+  #lb.on{display:flex; flex-direction:column; align-items:center; justify-content:center}
+  #lb img{max-width:96%; max-height:84%; object-fit:contain; box-shadow:0 0 40px rgba(0,0,0,.6)}
+  #lb .cap{color:#f1e9da; font-size:14px; margin-top:14px; text-align:center; max-width:90%}
+  #lb .hint{color:#b8ad99; font-size:12px; margin-top:6px}
+  @media(max-width:640px){header.hero h1{font-size:22px} body{font-size:16px} .nextprev{flex-direction:column}}
+</style>
+</head>
+<body>
+
+<nav class="seriesnav"><div class="wrap">
+  <span>見付古地図散歩｜</span>
+  <a href="kai1.html">第1回</a>
+  <a href="kai2.html">第2回</a>
+  <a href="kai3.html">第3回</a>
+  <a href="kai4.html">第4回</a>
+  <span class="now">第5回 手放す前に</span>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="series-tag">見付古地図散歩 ＞ 第五回</span>
+    <h1>見付の古い家を手放す前に、<br>知っておきたいこと</h1>
+    <p class="sub">古い家を売るとは、建物を処分することではなく、受け継いできたものを見つめ直すことでもある。</p>
+    <figure class="cover-fig">
+      <img src="images/00_hyoshi.jpg" data-cap="『見付町戸別明細圖』表紙 ― 明治四十二年一月調査" alt="見付町戸別明細図 表紙">
+      <figcaption>『見付町戸別明細圖』表紙 ― 明治四十二年一月調査（佐口行正氏 所蔵）</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="lead">
+    明治四十二年の『見付町戸別明細図』を見ると、今の見付につながる家並みや道筋が、一軒ずつ刻まれています。古い家を手放すということは、単に建物を処分することではありません。その家が地域の中でどのように残ってきたのかを、一度見つめ直すことでもあります。すぐに「売る」「売らない」を決める必要はありません。まずは、家と土地の状況を整理するところから始めましょう。
+  </div>
+
+  <h2><span class="en">A HOUSE THAT WAS HANDED DOWN</span>その家は、長い時間をかけて受け継がれてきた</h2>
+  <p>百年以上前の地図に、今のあなたの土地につながる区画が描かれている――見付では、それは珍しいことではありません。街道沿いの家、奥に長い敷地、小路に面した一角。そこには、何代にもわたって住み継がれ、相続され、ときに商いが営まれてきた歴史があります。</p>
+  <p>だからこそ、いざ手放すとなったとき、戸惑うのは自然なことです。建物としては古くても、家としては重い。その感覚を無視して数字だけで進めると、あとで後悔が残りがちです。まずは慌てず、何を確認すべきかを知ることから始めるのが、結局いちばんの近道になります。</p>
+
+  <h2><span class="en">CHECKLIST</span>手放す前に、確認しておきたいこと</h2>
+  <p>古い家・相続した土地・空き家を扱うとき、確認すべきことは多岐にわたります。順番に整理しておくだけで、その後の判断がぐっと楽になります。</p>
+
+  <div class="check">
+    <h3>古い家・相続不動産で整理しておきたい項目</h3>
+    <ul>
+      <li><b>相続登記</b> ― 名義が亡くなった方やさらに前の代のままになっていないか。相続登記は令和六年から義務化されました。売却の前提として、まず名義の整理が必要です。</li>
+      <li><b>境界</b> ― 隣地・道路との境界が確定しているか。古い家ほど曖昧なまま受け継がれていることがあります。</li>
+      <li><b>接道・再建築</b> ― 道路にきちんと接しているか、解体後に建て替えができるか。古い市街地では要注意です。</li>
+      <li><b>解体</b> ― 建物を解体するか、残して売るか。解体費用や、解体後の固定資産税の扱いも含めて検討します。</li>
+      <li><b>残置物</b> ― 家財・仏壇・思い出の品の整理。空き家の片付けは、想像以上に時間と心の負担がかかります。</li>
+      <li><b>空き家の管理</b> ― 売却までのあいだ、誰がどう管理するか。放置は老朽化や近隣トラブルの原因になります。</li>
+      <li><b>売るか、貸すか</b> ― 手放すだけが選択肢ではありません。貸す・活用するという道もあります。</li>
+      <li><b>すぐ売らない、という選択</b> ― 時期や家族の事情によっては、今は動かさないという判断も立派な選択です。</li>
+    </ul>
+  </div>
+
+  <figure class="plate">
+    <img src="images/04_terakoji.jpg" data-cap="「北井上・寺小路」 ― 郡役所や大見寺など、町の中枢が集まる一帯。" alt="見付町戸別明細図 寺小路">
+    <figcaption>「北井上・寺小路」のシート。明治四十二年の見付には、すでに土地や建物の権利を記録する登記所が置かれていました。相続登記の整理も、その長い営みの延長線上にあります。</figcaption>
+  </figure>
+
+  <p>とくに最初の一歩になりやすいのが、相続登記です。明治の見付に登記所が置かれていたように、土地や建物の権利を記録し受け継ぐしくみは、ずっと昔からこの町に根づいてきました。名義の整理は手間に感じられますが、ここを通さないと売却そのものが進みません。逆に言えば、ここを丁寧に片付けることが、すべての出発点になります。</p>
+
+  <p class="pull">急いで価格を決めることだけが、正解ではない。</p>
+
+  <h2><span class="en">DON'T RUSH</span>急いで決めなくていい。まず整理する。</h2>
+  <p>不動産売却というと、「早く・高く売る」ことばかりが注目されがちです。けれど、本当に大切なのは、納得して判断できることです。その土地がどのように使われ、どう受け継がれてきたのか。何を確認し、どんな選択肢があるのか。一度きちんと整理してから考えることで、慌てて決めるより、ずっと納得のいく結論にたどり着けます。</p>
+  <p>富士ヶ丘サービスは、磐田市見付という土地の歴史を、坪単価だけでは見ていません。相続した家、長く空いている家、古い土地――その背景を一緒に読み解きながら、売る・貸す・残す・今は動かさない、どの選択も含めて、あなたにとって良い形を一緒に考えます。</p>
+
+  <div class="cta">
+    <p class="big">売る前に、まず整理する。</p>
+    <p>磐田市見付周辺の相続不動産・空き家・古い住宅・土地売却のご相談を承っています。すぐに売るかどうか決まっていなくても構いません。まずは、家と土地の状況を一緒に整理するところからお手伝いします。相続登記や境界の確認など、最初の一歩からご相談ください。</p>
+  </div>
+
+  <div class="nextprev">
+    <a href="kai4.html"><small>&laquo; 第4回</small>明治42年、見付の町の中枢 ― 郡役所・登記所・寺社・学校</a>
+    <a href="kai1.html"><small>シリーズ目次 &raquo;</small>見付の土地と記憶（第1回・全シート一覧）</a>
+  </div>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h3>出典・資料について</h3>
+    <p>資料：『見付町戸別明細圖』明治四十二年一月調査　全17葉＋表紙（佐口行正氏 所蔵史料）</p>
+    <p>本ページは富士ヶ丘サービス株式会社が運営する地域文化コンテンツです。掲載内容・画像に関するお問い合わせ、関係者の方からのご連絡は当社までお願いいたします。</p>
+    <p style="margin-top:14px">&copy; 富士ヶ丘サービス株式会社 ／ 磐田物語</p>
+  </div>
+</footer>
+
+<div id="lb"><img src="" alt=""><div class="cap"></div><div class="hint">クリックで閉じる</div></div>
+
+<script>
+(function(){
+  var lb=document.getElementById('lb'), lbi=lb.querySelector('img'), lbc=lb.querySelector('.cap');
+  function open(src,cap){lbi.src=src; lbc.textContent=cap||''; lb.classList.add('on'); document.body.style.overflow='hidden';}
+  function close(){lb.classList.remove('on'); lbi.src=''; document.body.style.overflow='';}
+  document.addEventListener('click',function(e){
+    var t=e.target;
+    if(t.tagName==='IMG' && t.dataset.cap && !t.closest('#lb')){ open(t.getAttribute('src'), t.dataset.cap); }
+  });
+  lb.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>
+                                                                                                                                            
