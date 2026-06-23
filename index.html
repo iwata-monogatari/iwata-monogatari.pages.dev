@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>磐田物語 ｜ 磐田の歴史・文化・地名・古写真を後世へ伝える地域史アーカイブ</title>
-<meta name="description" content="磐田物語は、静岡県磐田市に残る歴史、文化、地名、古写真、古地図、祭り、地域の記憶を整理し、未来へ伝えていくための地域史サイトです。見付・旧豊田町・掛塚・中泉・池田・二之宮ほか、地域とテーマから磐田の歴史をたどれます。">
+<meta name="description" content="磐田物語は、静岡県磐田市に残る歴史、文化、地名、古写真、古地図、祭り、地域の記憶を整理し、未来へ伝えていくための地域史サイトです。">
 <meta property="og:title" content="磐田物語 ｜ 磐田の歴史・文化・地名・古写真を後世へ伝える地域史アーカイブ">
 <meta property="og:description" content="磐田市の歴史・文化・地名・古写真・古地図・祭り・地域の記憶を整理し、未来へ伝える地域史サイト。">
 <meta property="og:type" content="website">
@@ -14,288 +14,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{
-  --paper:#f5efe2;
-  --paper-2:#efe7d6;
-  --card:#fffdf8;
-  --ink:#23282c;
-  --ink-soft:#4d4a44;
-  --muted:#7c756a;
-  --line:#e3d9c3;
-  --line-soft:#ece3d0;
-  --indigo:#2e4859;
-  --indigo-deep:#21323d;
-  --akane:#9c4334;
-  --akane-soft:#b15a48;
-  --gold:#b3893c;
-  --gold-soft:#caa45a;
-  --shadow:0 1px 2px rgba(40,33,20,.05),0 8px 26px rgba(40,33,20,.07);
-  --radius:14px;
-  --maxw:1140px;
-  --serif:"Shippori Mincho","Noto Serif JP",serif;
-  --sans:"Noto Sans JP",system-ui,sans-serif;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{
-  font-family:var(--sans);
-  color:var(--ink);
-  background:var(--paper);
-  line-height:1.85;
-  font-size:16px;
-  letter-spacing:.01em;
-  text-rendering:optimizeLegibility;
-  -webkit-font-smoothing:antialiased;
-}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
-.serif{font-family:var(--serif)}
-
-/* ---------- Header ---------- */
-header.site{
-  position:sticky;top:0;z-index:50;
-  background:rgba(245,239,226,.93);
-  backdrop-filter:blur(8px);
-  border-bottom:1px solid var(--line);
-}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:62px}
-.brand{font-family:var(--serif);font-weight:700;font-size:1.32rem;letter-spacing:.16em;color:var(--indigo-deep)}
-.brand span{display:block;font-family:var(--sans);font-weight:500;font-size:.6rem;letter-spacing:.32em;color:var(--gold);margin-top:1px}
-.nav-links{display:flex;gap:24px;font-size:.86rem;font-weight:500;letter-spacing:.06em}
-.nav-links a{color:var(--ink-soft);padding:6px 0;border-bottom:2px solid transparent;transition:.2s}
-.nav-links a:hover{color:var(--akane);border-color:var(--gold-soft)}
-.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:.8rem;color:var(--ink-soft);cursor:pointer}
-
-/* ---------- Hero ---------- */
-.hero{
-  position:relative;
-  padding:74px 0 58px;
-  background:
-    linear-gradient(180deg,rgba(245,239,226,.55),rgba(245,239,226,.9) 70%,var(--paper)),
-    radial-gradient(120% 90% at 78% 8%,rgba(46,72,89,.16),transparent 60%),
-    radial-gradient(90% 80% at 12% 100%,rgba(156,67,52,.10),transparent 60%),
-    var(--paper-2);
-  border-bottom:1px solid var(--line);
-  overflow:hidden;
-}
-.hero .wrap{position:relative;z-index:2}
-.kicker{
-  display:inline-block;font-size:.72rem;letter-spacing:.34em;color:var(--gold);
-  font-weight:700;border:1px solid var(--line);background:rgba(255,253,248,.6);
-  padding:6px 14px;border-radius:999px;margin-bottom:22px;
-}
-.hero h1{
-  font-family:var(--serif);font-weight:800;color:var(--indigo-deep);
-  font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.12;letter-spacing:.06em;
-}
-.hero .sub{
-  font-family:var(--serif);font-weight:600;color:var(--akane);
-  font-size:clamp(1rem,2.3vw,1.32rem);margin-top:18px;letter-spacing:.04em;line-height:1.6;
-}
-.hero .lede{max-width:640px;margin:18px 0 0;color:var(--ink-soft);font-size:1rem}
-
-/* ---------- Search ---------- */
-.search-block{margin-top:34px;max-width:720px}
-.search-label{font-family:var(--serif);font-weight:600;font-size:1.02rem;color:var(--ink);margin-bottom:10px;display:flex;align-items:center;gap:9px}
-.search-label::before{content:"";width:7px;height:18px;background:var(--gold);border-radius:2px;display:inline-block}
-.search-box{position:relative}
-#search-input{
-  width:100%;font-family:var(--sans);font-size:1rem;color:var(--ink);
-  background:var(--card);border:1.5px solid var(--line);border-radius:12px;
-  padding:15px 18px 15px 46px;box-shadow:var(--shadow);outline:none;transition:.2s;
-}
-#search-input:focus{border-color:var(--indigo);box-shadow:0 0 0 3px rgba(46,72,89,.12)}
-.search-ico{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:1.1rem}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.chip{
-  font-size:.78rem;color:var(--ink-soft);background:rgba(255,253,248,.7);
-  border:1px solid var(--line);border-radius:999px;padding:5px 13px;cursor:pointer;transition:.2s;
-}
-.chip:hover{background:var(--indigo);color:#fff;border-color:var(--indigo)}
-#search-results{
-  list-style:none;margin-top:12px;background:var(--card);border:1px solid var(--line);
-  border-radius:12px;box-shadow:var(--shadow);overflow:hidden;display:none;
-}
-#search-results.show{display:block}
-#search-results li a{display:flex;justify-content:space-between;gap:12px;padding:12px 18px;border-bottom:1px solid var(--line-soft);transition:.15s}
-#search-results li:last-child a{border-bottom:none}
-#search-results li a:hover{background:var(--paper-2)}
-#search-results .r-title{font-weight:500}
-#search-results .r-tag{font-size:.74rem;color:var(--muted);white-space:nowrap;align-self:center}
-#search-results .empty{padding:14px 18px;color:var(--muted);font-size:.88rem}
-
-/* ---------- Section frame ---------- */
-section.band{padding:64px 0}
-section.alt{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.sec-head{margin-bottom:30px}
-.sec-en{font-size:.72rem;letter-spacing:.3em;color:var(--gold);font-weight:700;display:block;margin-bottom:8px}
-.sec-title{font-family:var(--serif);font-weight:700;color:var(--indigo-deep);font-size:clamp(1.5rem,3.4vw,2.1rem);letter-spacing:.04em}
-.sec-desc{color:var(--ink-soft);margin-top:12px;max-width:760px}
-
-/* ---------- Cards grid ---------- */
-.grid{display:grid;gap:18px}
-.g3{grid-template-columns:repeat(3,1fr)}
-.g2{grid-template-columns:repeat(2,1fr)}
-.card{
-  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-  padding:24px 22px;box-shadow:var(--shadow);transition:.22s;display:flex;flex-direction:column;height:100%;
-}
-a.card:hover{transform:translateY(-3px);border-color:var(--gold-soft);box-shadow:0 14px 34px rgba(40,33,20,.13)}
-.card .badge{font-size:.7rem;letter-spacing:.14em;color:var(--akane);font-weight:700;margin-bottom:9px;display:inline-flex;align-items:center;gap:7px}
-.card h3{font-family:var(--serif);font-weight:700;font-size:1.16rem;color:var(--ink);line-height:1.45;letter-spacing:.02em}
-.card p{color:var(--ink-soft);font-size:.9rem;margin-top:10px;flex:1}
-.card .more{margin-top:14px;font-size:.84rem;font-weight:600;color:var(--indigo);letter-spacing:.04em}
-a.card:hover .more{color:var(--akane)}
-
-/* featured (新着) */
-.feature .card{position:relative;overflow:hidden;border-top:3px solid var(--akane)}
-.feature .num{position:absolute;top:-10px;right:6px;font-family:var(--serif);font-weight:800;font-size:4.4rem;color:rgba(156,67,52,.08);line-height:1}
-
-/* ---------- Region & theme tiles ---------- */
-.tiles{display:grid;gap:12px;grid-template-columns:repeat(4,1fr)}
-.tile{
-  background:var(--card);border:1px solid var(--line);border-radius:11px;
-  padding:18px 16px;box-shadow:var(--shadow);transition:.2s;display:flex;flex-direction:column;gap:5px;min-height:84px;justify-content:center;
-}
-a.tile:hover{transform:translateY(-2px);border-color:var(--gold-soft);box-shadow:0 12px 28px rgba(40,33,20,.12)}
-.tile .t-name{font-family:var(--serif);font-weight:700;font-size:1.05rem;color:var(--ink);letter-spacing:.04em}
-.tile .t-sub{font-size:.76rem;color:var(--muted)}
-.tile.lead{border-color:var(--akane-soft);background:linear-gradient(180deg,#fff,rgba(177,90,72,.06))}
-.tile.lead .t-name{color:var(--akane)}
-.note{margin-top:16px;font-size:.8rem;color:var(--muted)}
-
-.theme-tiles{display:flex;flex-wrap:wrap;gap:10px}
-.theme-tiles a{
-  font-family:var(--serif);font-weight:600;font-size:.98rem;color:var(--indigo-deep);
-  background:var(--card);border:1px solid var(--line);border-radius:999px;
-  padding:11px 20px;box-shadow:var(--shadow);transition:.2s;letter-spacing:.04em;
-}
-.theme-tiles a:hover{background:var(--indigo);color:#fff;border-color:var(--indigo)}
-
-/* ---------- Saguchi feature ---------- */
-.saguchi{
-  background:linear-gradient(115deg,var(--indigo-deep),var(--indigo));
-  color:#f3ede0;border-radius:18px;padding:46px 40px;box-shadow:var(--shadow);
-  display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center;
-}
-.saguchi .s-en{font-size:.72rem;letter-spacing:.3em;color:var(--gold-soft);font-weight:700}
-.saguchi h2{font-family:var(--serif);font-weight:700;font-size:clamp(1.5rem,3vw,2rem);margin:10px 0 14px;letter-spacing:.05em;color:#fff}
-.saguchi p{color:#ded5c4;font-size:.95rem}
-.saguchi .btns{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px}
-.btn{
-  display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.9rem;letter-spacing:.04em;
-  padding:12px 24px;border-radius:999px;transition:.2s;
-}
-.btn-gold{background:var(--gold);color:#241c0c}
-.btn-gold:hover{background:var(--gold-soft)}
-.btn-ghost{border:1px solid rgba(255,253,248,.4);color:#f3ede0}
-.btn-ghost:hover{background:rgba(255,253,248,.12)}
-.saguchi .s-imgs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.saguchi .s-imgs img{border-radius:10px;height:130px;width:100%;object-fit:cover;border:2px solid rgba(255,253,248,.18)}
-.saguchi .s-imgs img:first-child{grid-column:1/3;height:150px}
-
-/* ---------- Buildings ---------- */
-.buildings{background:linear-gradient(180deg,var(--paper),var(--paper-2))}
-.cat-chips{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}
-.cat-chips span{
-  font-family:var(--serif);font-weight:600;font-size:.92rem;color:var(--ink-soft);
-  background:var(--card);border:1px dashed var(--gold-soft);border-radius:8px;padding:9px 16px;
-}
-
-/* ---------- Land & home memory ---------- */
-.memory{background:var(--indigo-deep);color:#ece4d4}
-.memory .sec-en{color:var(--gold-soft)}
-.memory .sec-title{color:#fff}
-.memory .m-body{max-width:760px;color:#d6cdbc;margin-top:14px;font-size:1rem}
-.memory .m-links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
-.memory .m-links a{
-  background:rgba(255,253,248,.05);border:1px solid rgba(255,253,248,.18);border-radius:12px;
-  padding:20px;transition:.2s;display:flex;flex-direction:column;gap:8px;
-}
-.memory .m-links a:hover{background:rgba(255,253,248,.1);border-color:var(--gold-soft)}
-.memory .m-links .ml-t{font-family:var(--serif);font-weight:700;font-size:1.06rem;color:#fff}
-.memory .m-links .ml-m{font-size:.82rem;color:var(--gold-soft);font-weight:600}
-
-/* ---------- Footer ---------- */
-footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem}
-.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;align-items:flex-start}
-.foot-brand{font-family:var(--serif);font-weight:700;font-size:1.3rem;letter-spacing:.14em;color:#f3ede0}
-.foot-brand p{font-family:var(--sans);font-weight:400;font-size:.82rem;color:#9b9384;margin-top:10px;max-width:420px;line-height:1.8}
-.foot-nav{display:flex;flex-wrap:wrap;gap:22px;font-size:.9rem}
-.foot-nav a{color:#cbc3b4;transition:.2s;border-bottom:1px solid transparent;padding-bottom:2px}
-.foot-nav a:hover{color:#fff;border-color:var(--gold-soft)}
-.foot-sns{display:flex;gap:14px;margin-top:6px}
-.foot-sns a{font-size:.82rem;color:#9b9384}
-.foot-sns a:hover{color:var(--gold-soft)}
-.copy{border-top:1px solid #2c343a;margin-top:34px;padding-top:20px;color:#857d6f;font-size:.78rem;letter-spacing:.04em}
-
-/* ---------- Hero collage ---------- */
-.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:48px;align-items:center}
-.hero-art{position:relative}
-.collage{
-  position:relative;display:grid;gap:12px;
-  grid-template-columns:1fr 1fr;grid-template-rows:124px 124px 110px;
-}
-.collage a{position:relative;overflow:hidden;border-radius:10px;border:4px solid #fffdf8;
-  box-shadow:0 9px 24px rgba(40,33,20,.17);transition:.3s}
-.collage a:hover{box-shadow:0 14px 32px rgba(40,33,20,.26)}
-.collage a img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s}
-.collage a:hover img{transform:scale(1.07)}
-.collage .c1{grid-column:1;grid-row:1/3}
-.collage .c2{grid-column:2;grid-row:1}
-.collage .c3{grid-column:2;grid-row:2}
-.collage .c4{grid-column:1/3;grid-row:3}
-.collage-badge{
-  position:absolute;top:-18px;left:-16px;z-index:4;
-  background:var(--akane);color:#fff;font-family:var(--serif);font-weight:700;
-  font-size:.82rem;line-height:1.34;text-align:center;letter-spacing:.06em;
-  padding:11px 13px;border-radius:13px;transform:rotate(-5deg);
-  box-shadow:0 7px 18px rgba(156,67,52,.4);border:2px solid #fffdf8;
-}
-.collage-cap{margin-top:16px;font-size:.78rem;color:var(--muted);text-align:center;letter-spacing:.02em}
-
-/* ---------- Yahoo風 文字メニュー（コンテンツ一覧） ---------- */
-.dir-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(208px,1fr));gap:24px 30px}
-.dir-col h4{
-  font-family:var(--serif);font-size:.96rem;font-weight:700;color:var(--indigo-deep);
-  letter-spacing:.04em;padding-bottom:8px;margin-bottom:7px;border-bottom:2px solid var(--line);
-  display:flex;align-items:center;gap:8px;
-}
-.dir-col h4::before{content:"";width:6px;height:15px;background:var(--gold);border-radius:2px;flex:none}
-.dir-col ul{list-style:none}
-.dir-col li a{display:block;font-size:.85rem;color:var(--ink-soft);padding:3.5px 0;transition:.15s}
-.dir-col li a:hover{color:var(--akane);padding-left:5px}
-.dir-col li.new a{color:var(--akane);font-weight:600}
-.dir-col li.new a::before{content:"NEW ";font-size:.62rem;font-weight:700;letter-spacing:.08em;color:var(--gold);vertical-align:1px}
-
-/* ---------- Responsive ---------- */
-@media(max-width:900px){
-  .hero-grid{grid-template-columns:1fr;gap:34px}
-  .collage{grid-template-rows:120px 120px 104px;max-width:520px;margin:0 auto}
-  .g3{grid-template-columns:1fr 1fr}
-  .tiles{grid-template-columns:repeat(3,1fr)}
-  .saguchi{grid-template-columns:1fr;padding:36px 26px}
-  .memory .m-links{grid-template-columns:1fr}
-}
-@media(max-width:620px){
-  .nav-links{display:none}
-  .nav-links.open{display:flex;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--line);padding:14px 22px;gap:14px;box-shadow:var(--shadow)}
-  .menu-btn{display:block}
-  .g3,.g2{grid-template-columns:1fr}
-  .tiles{grid-template-columns:1fr 1fr}
-  .feature .card{border-top-width:3px}
-  section.band{padding:48px 0}
-  .hero{padding:48px 0 40px}
-  .collage{grid-template-rows:104px 104px 92px;gap:9px}
-  .collage-badge{font-size:.74rem;padding:9px 10px;top:-14px;left:-10px}
-  .dir-grid{grid-template-columns:1fr 1fr;gap:20px}
-}
+:root{--paper:#f5efe2;--paper-2:#efe7d6;--card:#fffdf8;--ink:#23282c;--ink-soft:#4d4a44;--muted:#7c756a;--line:#e3d9c3;--indigo:#2e4859;--indigo-deep:#21323d;--akane:#9c4334;--gold:#b3893c;--shadow:0 1px 2px rgba(40,33,20,.05),0 8px 26px rgba(40,33,20,.07);--radius:14px;--maxw:1140px;--serif:"Shippori Mincho","Noto Serif JP",serif;--sans:"Noto Sans JP",system-ui,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.85;font-size:16px;letter-spacing:.01em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}.serif{font-family:var(--serif)}header.site{position:sticky;top:0;z-index:50;background:rgba(245,239,226,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:62px}.brand{font-family:var(--serif);font-weight:700;font-size:1.32rem;letter-spacing:.16em;color:var(--indigo-deep)}.brand span{display:block;font-family:var(--sans);font-weight:500;font-size:.6rem;letter-spacing:.32em;color:var(--gold);margin-top:1px}.nav-links{display:flex;gap:24px;font-size:.86rem;font-weight:500;letter-spacing:.06em}.nav-links a{color:var(--ink-soft);padding:6px 0;border-bottom:2px solid transparent;transition:.2s}.nav-links a:hover{color:var(--akane);border-color:var(--gold-soft)}.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:.8rem;color:var(--ink-soft);cursor:pointer}.hero{position:relative;padding:74px 0 58px;background:linear-gradient(180deg,rgba(245,239,226,.55),rgba(245,239,226,.9) 70%,var(--paper)),radial-gradient(120% 90% at 78% 8%,rgba(46,72,89,.16),transparent 60%),radial-gradient(90% 80% at 12% 100%,rgba(156,67,52,.10),transparent 60%),var(--paper-2);border-bottom:1px solid var(--line);overflow:hidden;}.hero .wrap{position:relative;z-index:2}.kicker{display:inline-block;font-size:.72rem;letter-spacing:.34em;color:var(--gold);font-weight:700;border:1px solid var(--line);background:rgba(255,253,248,.6);padding:6px 14px;border-radius:999px;margin-bottom:22px;}.hero h1{font-family:var(--serif);font-weight:800;color:var(--indigo-deep);font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.12;letter-spacing:.06em;}.hero .sub{font-family:var(--serif);font-weight:600;color:var(--akane);font-size:clamp(1rem,2.3vw,1.32rem);margin-top:18px;letter-spacing:.04em;line-height:1.6;}.hero .lede{max-width:640px;margin:18px 0 0;color:var(--ink-soft);font-size:1rem}.search-block{margin-top:34px;max-width:720px}.search-label{font-family:var(--serif);font-weight:600;font-size:1.02rem;color:var(--ink);margin-bottom:10px;display:flex;align-items:center;gap:9px}.search-label::before{content:"";width:7px;height:18px;background:var(--gold);border-radius:2px;display:inline-block}#search-input{width:100%;font-family:var(--sans);font-size:1rem;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:15px 18px 15px 46px;box-shadow:var(--shadow);outline:none;transition:.2s;}.search-ico{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:1.1rem}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.chip{font-size:.78rem;color:var(--ink-soft);background:rgba(255,253,248,.7);border:1px solid var(--line);border-radius:999px;padding:5px 13px;cursor:pointer;transition:.2s;}.chip:hover{background:var(--indigo);color:#fff;border-color:var(--indigo)}#search-results{list-style:none;margin-top:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden;display:none;}#search-results.show{display:block}#search-results li a{display:flex;justify-content:space-between;gap:12px;padding:12px 18px;border-bottom:1px solid var(--line-soft);transition:.15s}#search-results li:last-child a{border-bottom:none}#search-results li a:hover{background:var(--paper-2)}#search-results .r-title{font-weight:500}#search-results .r-tag{font-size:.74rem;color:var(--muted);white-space:nowrap;align-self:center}#search-results .empty{padding:14px 18px;color:var(--muted);font-size:.88rem}.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:48px;align-items:center}.hero-art{position:relative}.collage{position:relative;display:grid;gap:12px;grid-template-columns:1fr 1fr;grid-template-rows:124px 124px 110px;}.collage a{position:relative;overflow:hidden;border-radius:10px;border:4px solid #fffdf8;box-shadow:0 9px 24px rgba(40,33,20,.17);transition:.3s}.collage a:hover{box-shadow:0 14px 32px rgba(40,33,20,.26)}.collage a img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s}.collage a:hover img{transform:scale(1.07)}.collage .c1{grid-column:1;grid-row:1/3}.collage .c2{grid-column:2;grid-row:1}.collage .c3{grid-column:2;grid-row:2}.collage .c4{grid-column:1/3;grid-row:3}.collage-badge{position:absolute;top:-18px;left:-16px;z-index:4;background:var(--akane);color:#fff;font-family:var(--serif);font-weight:700;font-size:.82rem;line-height:1.34;text-align:center;letter-spacing:.06em;padding:11px 13px;border-radius:13px;transform:rotate(-5deg);box-shadow:0 7px 18px rgba(156,67,52,.4);border:2px solid #fffdf8;}.collage-cap{margin-top:16px;font-size:.78rem;color:var(--muted);text-align:center;letter-spacing:.02em}.dir-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(208px,1fr));gap:24px 30px}.dir-col h4{font-family:var(--serif);font-size:.96rem;font-weight:700;color:var(--indigo-deep);letter-spacing:.04em;padding-bottom:8px;margin-bottom:7px;border-bottom:2px solid var(--line);display:flex;align-items:center;gap:8px;}.dir-col h4::before{content:"";width:6px;height:15px;background:var(--gold);border-radius:2px;flex:none}.dir-col ul{list-style:none}.dir-col li a{display:block;font-size:.85rem;color:var(--ink-soft);padding:3.5px 0;transition:.15s}.dir-col li a:hover{color:var(--akane);padding-left:5px}.dir-col li.new a{color:var(--akane);font-weight:600}.dir-col li.new a::before{content:"NEW ";font-size:.62rem;font-weight:700;letter-spacing:.08em;color:var(--gold);vertical-align:1px}section.band{padding:64px 0}section.alt{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.sec-head{margin-bottom:30px}.sec-en{font-size:.72rem;letter-spacing:.3em;color:var(--gold);font-weight:700;display:block;margin-bottom:8px}.sec-title{font-family:var(--serif);font-weight:700;color:var(--indigo-deep);font-size:clamp(1.5rem,3.4vw,2.1rem);letter-spacing:.04em}.sec-desc{color:var(--ink-soft);margin-top:12px;max-width:760px}.grid{display:grid;gap:18px}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;box-shadow:var(--shadow);transition:.22s;display:flex;flex-direction:column;height:100%;}.card:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 14px 34px rgba(40,33,20,.13)}.card .badge{font-size:.7rem;letter-spacing:.14em;color:var(--akane);font-weight:700;margin-bottom:9px;display:inline-flex;align-items:center;gap:7px}.card h3{font-family:var(--serif);font-weight:700;font-size:1.16rem;color:var(--ink);line-height:1.45;letter-spacing:.02em}.card p{color:var(--ink-soft);font-size:.9rem;margin-top:10px;flex:1}.card .more{margin-top:14px;font-size:.84rem;font-weight:600;color:var(--indigo);letter-spacing:.04em}.feature .card{position:relative;overflow:hidden;border-top:3px solid var(--akane)}.feature .num{position:absolute;top:-10px;right:6px;font-family:var(--serif);font-weight:800;font-size:4.4rem;color:rgba(156,67,52,.08);line-height:1}.tiles{display:grid;gap:12px;grid-template-columns:repeat(4,1fr)}.tile{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:18px 16px;box-shadow:var(--shadow);transition:.2s;display:flex;flex-direction:column;gap:5px;min-height:84px;justify-content:center;}.tile:hover{transform:translateY(-2px);border-color:var(--gold);box-shadow:0 12px 28px rgba(40,33,20,.12)}.tile .t-name{font-family:var(--serif);font-weight:700;font-size:1.05rem;color:var(--ink);letter-spacing:.04em}.tile .t-sub{font-size:.76rem;color:var(--muted)}.tile.lead{border-color:var(--akane);background:linear-gradient(180deg,#fff,rgba(177,90,72,.06))}.tile.lead .t-name{color:var(--akane)}.note{margin-top:16px;font-size:.8rem;color:var(--muted)}.theme-tiles{display:flex;flex-wrap:wrap;gap:10px}.theme-tiles a{font-family:var(--serif);font-weight:600;font-size:.98rem;color:var(--indigo-deep);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:11px 20px;box-shadow:var(--shadow);transition:.2s;letter-spacing:.04em;}.theme-tiles a:hover{background:var(--indigo);color:#fff;border-color:var(--indigo)}.saguchi{background:linear-gradient(115deg,var(--indigo-deep),var(--indigo));color:#f3ede0;border-radius:18px;padding:46px 40px;box-shadow:var(--shadow);display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center;}.saguchi .s-en{font-size:.72rem;letter-spacing:.3em;color:var(--gold);font-weight:700}.saguchi h2{font-family:var(--serif);font-weight:700;font-size:clamp(1.5rem,3vw,2rem);margin:10px 0 14px;letter-spacing:.05em;color:#fff}.saguchi p{color:#ded5c4;font-size:.95rem}.saguchi .btns{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.9rem;letter-spacing:.04em;padding:12px 24px;border-radius:999px;transition:.2s;}.btn-gold{background:var(--gold);color:#241c0c}.btn-gold:hover{background:var(--gold)}.btn-ghost{border:1px solid rgba(255,253,248,.4);color:#f3ede0}.btn-ghost:hover{background:rgba(255,253,248,.12)}.saguchi .s-imgs{display:grid;grid-template-columns:1fr 1fr;gap:10px}.saguchi .s-imgs img{border-radius:10px;height:130px;width:100%;object-fit:cover;border:2px solid rgba(255,253,248,.18)}.saguchi .s-imgs img:first-child{grid-column:1/3;height:150px}.buildings{background:linear-gradient(180deg,var(--paper),var(--paper-2))}.cat-chips{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}.cat-chips span{font-family:var(--serif);font-weight:600;font-size:.92rem;color:var(--ink-soft);background:var(--card);border:1px dashed var(--gold);border-radius:8px;padding:9px 16px;}.memory{background:var(--indigo-deep);color:#ece4d4}.memory .sec-en{color:var(--gold)}.memory .sec-title{color:#fff}.memory .m-body{max-width:760px;color:#d6cdbc;margin-top:14px;font-size:1rem}.memory .m-links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}.memory .m-links a{background:rgba(255,253,248,.05);border:1px solid rgba(255,253,248,.18);border-radius:12px;padding:20px;transition:.2s;display:flex;flex-direction:column;gap:8px;}.memory .m-links a:hover{background:rgba(255,253,248,.1);border-color:var(--gold)}.memory .m-links .ml-t{font-family:var(--serif);font-weight:700;font-size:1.06rem;color:#fff}.memory .m-links .ml-m{font-size:.82rem;color:var(--gold);font-weight:600}footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem}.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;align-items:flex-start}.foot-brand{font-family:var(--serif);font-weight:700;font-size:1.3rem;letter-spacing:.14em;color:#f3ede0}.foot-brand p{font-family:var(--sans);font-weight:400;font-size:.82rem;color:#9b9384;margin-top:10px;max-width:420px;line-height:1.8}.foot-nav{display:flex;flex-wrap:wrap;gap:22px;font-size:.9rem}.foot-nav a{color:#cbc3b4;transition:.2s;border-bottom:1px solid transparent;padding-bottom:2px}.foot-nav a:hover{color:#fff;border-color:var(--gold)}.foot-sns{display:flex;gap:14px;margin-top:6px}.foot-sns a{font-size:.82rem;color:#9b9384}.foot-sns a:hover{color:var(--gold)}.copy{border-top:1px solid #2c343a;margin-top:34px;padding-top:20px;color:#857d6f;font-size:.78rem;letter-spacing:.04em}@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:34px}.collage{grid-template-rows:120px 120px 104px;max-width:520px;margin:0 auto}.g3{grid-template-columns:1fr 1fr}.tiles{grid-template-columns:repeat(3,1fr)}.saguchi{grid-template-columns:1fr;padding:36px 26px}.memory .m-links{grid-template-columns:1fr}}@media(max-width:620px){.nav-links{display:none}.nav-links.open{display:flex;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--line);padding:14px 22px;gap:14px;box-shadow:var(--shadow)}.menu-btn{display:block}.g3,.g2{grid-template-columns:1fr}.tiles{grid-template-columns:1fr 1fr}.feature .card{border-top-width:3px}.section{padding:48px 0}.hero{padding:48px 0 40px}.collage{grid-template-rows:104px 104px 92px;gap:9px}.collage-badge{font-size:.74rem;padding:9px 10px;top:-14px;left:-10px}.dir-grid{grid-template-columns:1fr 1fr;gap:20px}}
 </style>
 </head>
 <body>
 
-<!-- ===== Header ===== -->
 <header class="site">
   <div class="wrap nav">
     <a class="brand" href="/">磐田物語<span>IWATA MONOGATARI</span></a>
@@ -305,14 +29,12 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
       <a href="#region">地域から読む</a>
       <a href="#theme">テーマから読む</a>
       <a href="#saguchi">資料室</a>
-      <a href="#yomimono">読み物</a>
       <a href="hajimeni.html">はじめに</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="メニュー">≡ メニュー</button>
   </div>
 </header>
 
-<!-- ===== Hero ===== -->
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-text">
@@ -325,8 +47,7 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
       <div class="search-label">知りたい地域や言葉から探す</div>
       <div class="search-box">
         <span class="search-ico">🔍</span>
-        <input type="text" id="search-input" autocomplete="off"
-          placeholder="例：見付　旧豊田町　加茂　寺谷　東海道新田　掛塚　中泉　古地図　遠州弁　佐口行正">
+        <input type="text" id="search-input" autocomplete="off" placeholder="例：見付　旧豊田町　加茂　寺谷　東海道新田　掛塚　中泉　古地図　遠州弁　佐口行正">
         <ul id="search-results"></ul>
       </div>
       <div class="chips" id="chips">
@@ -340,7 +61,7 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
         <span class="chip">佐口行正</span>
       </div>
     </div>
-    </div><!-- /hero-text -->
+    </div>
 
     <div class="hero-art">
       <figure class="collage">
@@ -355,7 +76,6 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
   </div>
 </section>
 
-<!-- ===== 新着特集 ===== -->
 <section class="band feature" id="new">
   <div class="wrap">
     <div class="sec-head">
@@ -370,14 +90,14 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
         <p>旧豊田町の成り立ち、地名、交通、地域の歩みをたどる総合特集。</p>
         <span class="more">読む →</span>
       </a>
-      <a class="card" href="kyutoyoda-kamo-teradani.html">
+      <a class="card" href="kamo.html">
         <span class="num">2</span>
         <span class="badge">● 新着特集</span>
         <h3>加茂・寺谷の歴史</h3>
         <p>旧豊田町の加茂・寺谷地区に残る歴史と地域の変遷を解説。</p>
         <span class="more">読む →</span>
       </a>
-      <a class="card" href="kyutoyoda-tokaido-shinden.html">
+      <a class="card" href="shinden.html">
         <span class="num">3</span>
         <span class="badge">● 新着特集</span>
         <h3>東海道新田の歴史</h3>
@@ -388,7 +108,6 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
   </div>
 </section>
 
-<!-- ===== Yahoo風 文字メニュー（コンテンツ一覧） ===== -->
 <section class="band alt" id="directory">
   <div class="wrap">
     <div class="sec-head">
@@ -402,8 +121,8 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
         <h4>新着・特集</h4>
         <ul>
           <li class="new"><a href="kyutoyoda.html">旧豊田町の歴史</a></li>
-          <li class="new"><a href="kyutoyoda-kamo-teradani.html">加茂・寺谷の歴史</a></li>
-          <li class="new"><a href="kyutoyoda-tokaido-shinden.html">東海道新田の歴史</a></li>
+          <li class="new"><a href="kamo.html">加茂・寺谷の歴史</a></li>
+          <li class="new"><a href="shinden.html">東海道新田の歴史</a></li>
         </ul>
       </div>
 
@@ -514,7 +233,6 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
   </div>
 </section>
 
-<!-- ===== 地域から読む ===== -->
 <section class="band alt" id="region">
   <div class="wrap">
     <div class="sec-head">
@@ -534,7 +252,6 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
   </div>
 </section>
 
-<!-- ===== テーマから読む ===== -->
 <section class="band" id="theme">
   <div class="wrap">
     <div class="sec-head">
@@ -557,7 +274,6 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
   </div>
 </section>
 
-<!-- ===== 佐口行正氏資料室 ===== -->
 <section class="band alt" id="saguchi">
   <div class="wrap">
     <div class="saguchi">
@@ -579,7 +295,6 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
   </div>
 </section>
 
-<!-- ===== 特集コンテンツ 読み物 ===== -->
 <section class="band" id="yomimono">
   <div class="wrap">
     <div class="sec-head">
@@ -628,7 +343,6 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
   </div>
 </section>
 
-<!-- ===== 歴史的建築・古民家 ===== -->
 <section class="band buildings" id="buildings">
   <div class="wrap">
     <div class="sec-head">
@@ -662,7 +376,6 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
   </div>
 </section>
 
-<!-- ===== 家と土地の記憶 ===== -->
 <section class="band memory" id="memory">
   <div class="wrap">
     <div class="sec-head">
@@ -687,7 +400,6 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
   </div>
 </section>
 
-<!-- ===== Footer ===== -->
 <footer class="site">
   <div class="wrap">
     <div class="foot-top">
@@ -714,80 +426,9 @@ footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem
 </footer>
 
 <script>
-/* ---- メニュー（モバイル） ---- */
-document.getElementById('menuBtn').addEventListener('click',function(){
-  document.getElementById('navlinks').classList.toggle('open');
-});
-
-/* ---- サイト内検索（既存ページのインデックス） ---- */
-const PAGES=[
-  {t:"旧豊田町の歴史",u:"kyutoyoda.html",k:"旧豊田町 豊田町 加茂 寺谷 東海道新田 とよだ",g:"新着特集"},
-  {t:"加茂・寺谷の歴史",u:"kyutoyoda-kamo-teradani.html",k:"加茂 寺谷 旧豊田町 かも てらだに",g:"新着特集"},
-  {t:"東海道新田の歴史",u:"kyutoyoda-tokaido-shinden.html",k:"東海道新田 旧豊田町 しんでん",g:"新着特集"},
-  {t:"佐口行正氏所蔵史料",u:"saguchi-shiryo.html",k:"佐口行正 さぐち 引札 浮世絵 絵葉書 古写真 史料",g:"資料室"},
-  {t:"佐口行正氏所蔵史料 目録",u:"saguchi-shiryo-catalog.html",k:"佐口行正 目録 カタログ 引札 絵葉書 古写真",g:"資料室"},
-  {t:"磐田タイムトラベル地図",u:"chizu.html",k:"地図 古地図 タイムトラベル ちず",g:"テーマ"},
-  {t:"遠江国府と古代の磐田",u:"totoumi-kokufu.html",k:"国府 古代 遠江 七重塔 国府台",g:"古代"},
-  {t:"遠江国分寺跡",u:"totoumi-kokubunji.html",k:"国分寺 古代 特別史跡 七重塔",g:"古代"},
-  {t:"古墳から見る磐田",u:"kofun.html",k:"古墳 古代 台地",g:"古代"},
-  {t:"銚子塚古墳",u:"choshizuka-kofun.html",k:"銚子塚 古墳 前方後円墳",g:"古代"},
-  {t:"御殿・二之宮遺跡",u:"goten-ninomiya-iseki.html",k:"二之宮 御殿 遺跡 中泉御殿 にのみや",g:"地域"},
-  {t:"東海道・見付宿の面影",u:"mitsuke-shuku.html",k:"見付 見付宿 東海道 宿場 みつけ",g:"街道"},
-  {t:"見付宿と東海道のにぎわい",u:"mitsuke-shuku-tokaido.html",k:"見付 東海道 宿場 本陣 旅籠",g:"街道"},
-  {t:"姫街道",u:"hime-kaido.html",k:"姫街道 街道 本坂通 ひめかいどう",g:"街道"},
-  {t:"池田の渡し",u:"ikeda-watashi.html",k:"池田 渡し 天竜川 いけだ",g:"地域"},
-  {t:"掛塚湊",u:"kaketsuka-minato.html",k:"掛塚 湊 港町 廻船 かけつか",g:"地域"},
-  {t:"中泉代官所",u:"nakaizumi-daikan.html",k:"中泉 代官所 天領 磐田駅 なかいずみ 林鶴梁 前島密",g:"地域"},
-  {t:"一言坂の戦い",u:"hitokotozaka.html",k:"一言坂 合戦 本多忠勝 武田信玄",g:"街道"},
-  {t:"見付天神と霊犬悉平太郎",u:"mitsuke-tenjin.html",k:"見付天神 悉平太郎 矢奈比賣神社 神社",g:"社寺"},
-  {t:"淡海國玉神社",u:"oumikunitama-jinja.html",k:"淡海國玉 国総社 神社 国府台",g:"社寺"},
-  {t:"府八幡宮",u:"fu-hachimangu.html",k:"府八幡宮 神社 国府 楼門",g:"社寺"},
-  {t:"鎌田神明宮",u:"kamada-shinmei.html",k:"鎌田 神明宮 神社 御厨 お伊勢さま",g:"社寺"},
-  {t:"行興寺と熊野の長藤",u:"gyokoji-fuji.html",k:"行興寺 藤 熊野 ゆや 天然記念物",g:"社寺"},
-  {t:"見付天神裸祭【特集】",u:"mitsuke-tenjin-hadaka-matsuri.html",k:"裸祭 はだか祭 祭り 見付天神 重要無形民俗文化財",g:"祭り"},
-  {t:"裸祭の起源",u:"hadaka-matsuri-kigen.html",k:"裸祭 起源 反閇 悉平太郎",g:"祭り"},
-  {t:"裸祭の神事と日程",u:"hadaka-matsuri-shinji.html",k:"裸祭 神事 鬼踊り 渡御",g:"祭り"},
-  {t:"悉平太郎伝説の考察",u:"hadaka-matsuri-shippei.html",k:"悉平太郎 早太郎 伝説 裸祭 猿神",g:"祭り"},
-  {t:"無形文化財としての継承",u:"hadaka-matsuri-hozon.html",k:"裸祭 継承 文化財 保存",g:"祭り"},
-  {t:"祭りと暮らしの記憶",u:"matsuri-kurashi.html",k:"祭り 暮らし エッセイ",g:"祭り"},
-  {t:"旧見付学校",u:"kyu-mitsuke-gakko.html",k:"旧見付学校 擬洋風 歴史的建築 見付の五階 学校",g:"建築"},
-  {t:"旧赤松家",u:"kyu-akamatsuke.html",k:"旧赤松家 赤松則良 咸臨丸 人物 歴史的建築 邸宅",g:"建築"},
-  {t:"磐田の地名をたどる",u:"iwata-chimei.html",k:"地名 由来 国府台 中泉 二之宮 鎌田 見付",g:"ことば"},
-  {t:"遠州弁辞典",u:"enshu-ben.html",k:"遠州弁 方言 ことば 辞典",g:"ことば"},
-  {t:"標準語⇄遠州弁 変換",u:"henkan.html",k:"遠州弁 変換 ことば ツール",g:"ことば"},
-  {t:"磐田の文化財と地域の記憶",u:"bunkazai.html",k:"文化財 入口",g:"文化財"},
-  {t:"磐田市の指定文化財一覧",u:"shitei.html",k:"文化財 一覧 登録文化財 指定 検索",g:"文化財"},
-  {t:"磐田市の国指定文化財",u:"kuni-shitei.html",k:"国指定 文化財",g:"文化財"},
-  {t:"埋蔵文化財と磐田",u:"maizobunkazai.html",k:"埋蔵文化財 土地 遺跡 暮らし",g:"文化財"},
-  {t:"文化財を深く読む資料集",u:"dayori.html",k:"資料 だより 文化財",g:"文化財"},
-  {t:"磐田文化財研究ノート",u:"research-notes.html",k:"研究ノート 調査 はがき",g:"文化財"},
-  {t:"見付古地図散歩 第一回",u:"kai1.html",k:"古地図 見付 連載 戸別明細図",g:"連載"},
-  {t:"第二回 相続される土地",u:"kai2.html",k:"相続 土地 古地図 古い家 家並み",g:"連載"},
-  {t:"第三回 古い町の土地を売るとき",u:"kai3.html",k:"土地 売る 調査 空き家 接道 境界",g:"連載"},
-  {t:"第四回 明治42年の見付",u:"kai4.html",k:"見付 町 郡役所 登記所",g:"連載"},
-  {t:"第五回 古い家を手放す前に",u:"kai5.html",k:"古い家 手放す 相続 空き家 境界",g:"連載"},
-  {t:"はじめに",u:"hajimeni.html",k:"はじめに このサイト 理由",g:"案内"}
-];
-const input=document.getElementById('search-input');
-const box=document.getElementById('search-results');
-function render(q){
-  q=q.trim().toLowerCase();
-  if(!q){box.classList.remove('show');box.innerHTML='';return;}
-  const hits=PAGES.filter(p=>(p.t+' '+p.k).toLowerCase().includes(q)).slice(0,8);
-  if(hits.length===0){
-    box.innerHTML='<li class="empty">該当する記事が見つかりませんでした。別のことばでお試しください。</li>';
-  }else{
-    box.innerHTML=hits.map(p=>`<li><a href="${p.u}"><span class="r-title">${p.t}</span><span class="r-tag">${p.g}</span></a></li>`).join('');
-  }
-  box.classList.add('show');
-}
-input.addEventListener('input',e=>render(e.target.value));
-document.querySelectorAll('.chip').forEach(c=>{
-  c.addEventListener('click',()=>{input.value=c.textContent;render(c.textContent);input.focus();});
-});
-document.addEventListener('click',e=>{
-  if(!e.target.closest('.search-box'))box.classList.remove('show');
-});
+document.getElementById('menuBtn').addEventListener('click',function(){document.getElementById('navlinks').classList.toggle('open');});
+const PAGES=[{t:"旧豊田町の歴史",u:"kyutoyoda.html",k:"旧豊田町 豊田町 加茂 寺谷 東海道新田 とよだ",g:"新着特集"},{t:"加茂・寺谷の歴史",u:"kamo.html",k:"加茂 寺谷 旧豊田町 かも てらだに",g:"新着特集"},{t:"東海道新田の歴史",u:"shinden.html",k:"東海道新田 旧豊田町 しんでん",g:"新着特集"},{t:"佐口行正氏所蔵史料",u:"saguchi-shiryo.html",k:"佐口行正 さぐち 引札 浮世絵 絵葉書 古写真 史料",g:"資料室"},{t:"佐口行正氏所蔵史料 目録",u:"saguchi-shiryo-catalog.html",k:"佐口行正 目録 カタログ 引札 絵葉書 古写真",g:"資料室"},{t:"磐田タイムトラベル地図",u:"chizu.html",k:"地図 古地図 タイムトラベル ちず",g:"テーマ"},{t:"遠江国府と古代の磐田",u:"totoumi-kokufu.html",k:"国府 古代 遠江 七重塔 国府台",g:"古代"},{t:"遠江国分寺跡",u:"totoumi-kokubunji.html",k:"国分寺 古代 特別史跡 七重塔",g:"古代"},{t:"古墳から見る磐田",u:"kofun.html",k:"古墳 古代 台地",g:"古代"},{t:"銚子塚古墳",u:"choshizuka-kofun.html",k:"銚子塚 古墳 前方後円墳",g:"古代"},{t:"御殿・二之宮遺跡",u:"goten-ninomiya-iseki.html",k:"二之宮 御殿 遺跡 中泉御殿 にのみや",g:"地域"},{t:"東海道・見付宿の面影",u:"mitsuke-shuku.html",k:"見付 見付宿 東海道 宿場 みつけ",g:"街道"},{t:"見付宿と東海道のにぎわい",u:"mitsuke-shuku-tokaido.html",k:"見付 東海道 宿場 本陣 旅籠",g:"街道"},{t:"姫街道",u:"hime-kaido.html",k:"姫街道 街道 本坂通 ひめかいどう",g:"街道"},{t:"池田の渡し",u:"ikeda-watashi.html",k:"池田 渡し 天竜川 いけだ",g:"地域"},{t:"掛塚湊",u:"kaketsuka-minato.html",k:"掛塚 湊 港町 廻船 かけつか",g:"地域"},{t:"中泉代官所",u:"nakaizumi-daikan.html",k:"中泉 代官所 天領 磐田駅 なかいずみ 林鶴梁 前島密",g:"地域"},{t:"一言坂の戦い",u:"hitokotozaka.html",k:"一言坂 合戦 本多忠勝 武田信玄",g:"街道"},{t:"見付天神と霊犬悉平太郎",u:"mitsuke-tenjin.html",k:"見付天神 悉平太郎 矢奈比賣神社 神社",g:"社寺"},{t:"淡海國玉神社",u:"oumikunitama-jinja.html",k:"淡海國玉 国総社 神社 国府台",g:"社寺"},{t:"府八幡宮",u:"fu-hachimangu.html",k:"府八幡宮 神社 国府 楼門",g:"社寺"},{t:"鎌田神明宮",u:"kamada-shinmei.html",k:"鎌田 神明宮 神社 御厨 お伊勢さま",g:"社寺"},{t:"行興寺と熊野の長藤",u:"gyokoji-fuji.html",k:"行興寺 藤 熊野 ゆや 天然記念物",g:"社寺"},{t:"見付天神裸祭【特集】",u:"mitsuke-tenjin-hadaka-matsuri.html",k:"裸祭 はだか祭 祭り 見付天神 重要無形民俗文化財",g:"祭り"},{t:"裸祭の起源",u:"hadaka-matsuri-kigen.html",k:"裸祭 起源 反閇 悉平太郎",g:"祭り"},{t:"裸祭の神事と日程",u:"hadaka-matsuri-shinji.html",k:"裸祭 神事 鬼踊り 渡御",g:"祭り"},{t:"悉平太郎伝説の考察",u:"hadaka-matsuri-shippei.html",k:"悉平太郎 早太郎 伝説 裸祭 猿神",g:"祭り"},{t:"無形文化財としての継承",u:"hadaka-matsuri-hozon.html",k:"裸祭 継承 文化財 保存",g:"祭り"},{t:"祭りと暮らしの記憶",u:"matsuri-kurashi.html",k:"祭り 暮らし エッセイ",g:"祭り"},{t:"旧見付学校",u:"kyu-mitsuke-gakko.html",k:"旧見付学校 擬洋風 歴史的建築 見付の五階 学校",g:"建築"},{t:"旧赤松家",u:"kyu-akamatsuke.html",k:"旧赤松家 赤松則良 咸臨丸 人物 歴史的建築 邸宅",g:"建築"},{t:"磐田の地名をたどる",u:"iwata-chimei.html",k:"地名 由来 国府台 中泉 二之宮 鎌田 見付",g:"ことば"},{t:"遠州弁辞典",u:"enshu-ben.html",k:"遠州弁 方言 ことば 辞典",g:"ことば"},{t:"標準語⇄遠州弁 変換",u:"henkan.html",k:"遠州弁 変換 ことば ツール",g:"ことば"},{t:"磐田の文化財と地域の記憶",u:"bunkazai.html",k:"文化財 入口",g:"文化財"},{t:"磐田市の指定文化財一覧",u:"shitei.html",k:"文化財 一覧 登録文化財 指定 検索",g:"文化財"},{t:"磐田市の国指定文化財",u:"kuni-shitei.html",k:"国指定 文化財",g:"文化財"},{t:"埋蔵文化財と磐田",u:"maizobunkazai.html",k:"埋蔵文化財 土地 遺跡 暮らし",g:"文化財"},{t:"文化財を深く読む資料集",u:"dayori.html",k:"資料 だより 文化財",g:"文化財"},{t:"磐田文化財研究ノート",u:"research-notes.html",k:"研究ノート 調査 はがき",g:"文化財"},{t:"見付古地図散歩 第一回",u:"kai1.html",k:"古地図 見付 連載 戸別明細図",g:"連載"},{t:"第二回 相続される土地",u:"kai2.html",k:"相続 土地 古地図 古い家 家並み",g:"連載"},{t:"第三回 古い町の土地を売るとき",u:"kai3.html",k:"土地 売る 調査 空き家 接道 境界",g:"連載"},{t:"第四回 明治42年の見付",u:"kai4.html",k:"見付 町 郡役所 登記所",g:"連載"},{t:"第五回 古い家を手放す前に",u:"kai5.html",k:"古い家 手放す 相続 空き家 境界",g:"連載"},{t:"はじめに",u:"hajimeni.html",k:"はじめに このサイト 理由",g:"案内"}];
+const input=document.getElementById('search-input');const box=document.getElementById('search-results');function render(q){q=q.trim().toLowerCase();if(!q){box.classList.remove('show');box.innerHTML='';return;}const hits=PAGES.filter(p=>(p.t+' '+p.k).toLowerCase().includes(q)).slice(0,8);if(hits.length===0){box.innerHTML='<li class="empty">該当する記事が見つかりませんでした。別のことばでお試しください。</li>';}else{box.innerHTML=hits.map(p=>`<li><a href="${p.u}"><span class="r-title">${p.t}</span><span class="r-tag">${p.g}</span></a></li>`).join('');}box.classList.add('show');}input.addEventListener('input',e=>render(e.target.value));document.querySelectorAll('.chip').forEach(c=>{c.addEventListener('click',()=>{input.value=c.textContent;render(c.textContent);input.focus();});});document.addEventListener('click',e=>{if(!e.target.closest('.search-box'))box.classList.remove('show');});
 </script>
 </body>
 </html>
