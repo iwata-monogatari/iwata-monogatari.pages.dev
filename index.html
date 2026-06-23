@@ -163,6 +163,20 @@ nav.menu a:hover{color:var(--brown-deep);}
 @media(max-width:980px){ .cols{grid-template-columns:1fr;} .side-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;} }
 @media(max-width:680px){ nav.menu{display:none;} .rgrid,.cards,.subgrid{grid-template-columns:1fr;} .feature{grid-template-columns:1fr;} .side-row{grid-template-columns:1fr;} }
 .is-hidden{display:none!important;}
+/* ── 公的資料・運営者案内カード（右サイドバー） ── */
+.sidebar-card{background:#fff;border:1px solid #d8e8f5;border-radius:14px;padding:16px;box-shadow:0 4px 14px rgba(20,74,112,.07);margin-bottom:20px;}
+.sidebar-card h2{margin:0 0 10px;font-size:16px;color:#145c8f;border-bottom:2px solid #8fc9ee;padding-bottom:6px;font-family:"Shippori Mincho",serif;font-weight:700;}
+.sidebar-card-lead{margin:0 0 12px;font-size:12.5px;line-height:1.7;color:#4f6473;}
+.public-link-group + .public-link-group{margin-top:14px;}
+.public-link-group h3{margin:0 0 8px;font-size:13px;color:#285b7d;border-left:4px solid #8fc9ee;padding-left:8px;font-family:"Shippori Mincho",serif;}
+.compact-link-list,.operator-link-list{list-style:none;margin:0;padding:0;display:grid;gap:7px;}
+.compact-link-list a,.operator-link-list a{display:block;padding:7px 9px;border-radius:8px;background:#f4f9fd;color:#1f5f8b;text-decoration:none;font-size:12.5px;line-height:1.45;border:1px solid #e2eff8;transition:.2s;}
+.compact-link-list a:hover,.operator-link-list a:hover{background:#e7f4fc;color:#0d4f7d;}
+.operator-banner{display:block;margin:4px 0 12px;padding:16px;border-radius:16px;text-decoration:none;color:#fff;background:linear-gradient(135deg,#1c78b5 0%,#62b7e8 100%);box-shadow:0 8px 18px rgba(28,120,181,.22);transition:.2s;}
+.operator-banner:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(28,120,181,.28);}
+.operator-banner-label{display:inline-block;margin-bottom:8px;padding:3px 8px;border-radius:999px;background:rgba(255,255,255,.22);font-size:11px;letter-spacing:.04em;}
+.operator-banner strong{display:block;margin-bottom:8px;font-size:15.5px;line-height:1.45;font-family:"Shippori Mincho",serif;}
+.operator-banner span:last-child{display:block;font-size:12px;line-height:1.65;}
 </style>
 </head>
 <body>
@@ -355,6 +369,48 @@ nav.menu a:hover{color:var(--brown-deep);}
           <li><a href="/henkan.html">遠州弁変換</a></li>
         </ul>
       </div>
+
+      <section class="sidebar-card public-links-card">
+        <h2>遠州地域の公的資料</h2>
+        <p class="sidebar-card-lead">歴史・文化財・地図・防災・都市計画を確認するための公的情報です。</p>
+        <div class="public-link-group">
+          <h3>自治体・文化財</h3>
+          <ul class="compact-link-list">
+            <li><a href="https://www.city.iwata.shizuoka.jp/" target="_blank" rel="noopener">磐田市公式サイト</a></li>
+            <li><a href="https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/index.html" target="_blank" rel="noopener">磐田市 文化財</a></li>
+            <li><a href="https://www.city.fukuroi.shizuoka.jp/" target="_blank" rel="noopener">袋井市公式サイト</a></li>
+            <li><a href="https://www.city.fukuroi.shizuoka.jp/kanko_bunka/bunka/bunkazai/index.html" target="_blank" rel="noopener">袋井市 文化財</a></li>
+            <li><a href="https://www.city.kakegawa.shizuoka.jp/" target="_blank" rel="noopener">掛川市公式サイト</a></li>
+            <li><a href="https://www.city.kakegawa.shizuoka.jp/gyosei/kankobunka/geijyutsu/bunkazai/" target="_blank" rel="noopener">掛川市 文化財</a></li>
+            <li><a href="https://www.town.morimachi.shizuoka.jp/" target="_blank" rel="noopener">森町公式サイト</a></li>
+            <li><a href="https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/shakaikyoikuka/bunkashinkogakari/1/1096.html" target="_blank" rel="noopener">森町 文化財</a></li>
+            <li><a href="https://www.city.hamamatsu.shizuoka.jp/" target="_blank" rel="noopener">浜松市公式サイト</a></li>
+            <li><a href="https://www.city.hamamatsu.shizuoka.jp/bunkazai/shitei/tenryu/list.html" target="_blank" rel="noopener">浜松市 天竜区の文化財</a></li>
+          </ul>
+        </div>
+        <div class="public-link-group">
+          <h3>地図・不動産調査</h3>
+          <ul class="compact-link-list">
+            <li><a href="https://maps.gsi.go.jp/" target="_blank" rel="noopener">国土地理院 地理院地図</a></li>
+            <li><a href="https://www.reinfolib.mlit.go.jp/" target="_blank" rel="noopener">国土交通省 不動産情報ライブラリ</a></li>
+            <li><a href="https://www.pref.shizuoka.jp/kankosports/bunkageijutsu/bunkazai/1002115/1020625.html" target="_blank" rel="noopener">静岡県 埋蔵文化財・遺跡確認情報</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="sidebar-card operator-guide-card">
+        <h2>運営者からのご案内</h2>
+        <a class="operator-banner" href="https://www.fujigaoka-service.info/fudosan" target="_blank" rel="noopener">
+          <span class="operator-banner-label">富士ヶ丘サービス</span>
+          <strong>地域の記憶と、家・土地のこれから</strong>
+          <span>磐田市・袋井市・掛川市・森町・浜松市天竜区の相続した実家、空き家、土地建物のご相談を承っています。</span>
+        </a>
+        <ul class="operator-link-list">
+          <li><a href="https://www.fujigaoka-service.info/fudosan" target="_blank" rel="noopener">富士ヶ丘サービスの不動産相談</a></li>
+          <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス公式サイト</a></li>
+          <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">代表 大石浩之のnote</a></li>
+        </ul>
+      </section>
     </aside>
   </div>
 </div>
