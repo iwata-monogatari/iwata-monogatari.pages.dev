@@ -5,18 +5,383 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>東海道新田の歴史 ── 近世の開発と地域形成 ｜ 磐田物語</title>
 <meta name="description" content="東海道新田は、江戸時代の新田開発によって生まれた地域です。計画的な開発と地域形成の歴史をたどります。">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#f5efe2;--paper-2:#efe7d6;--card:#fffdf8;--ink:#23282c;--ink-soft:#4d4a44;--muted:#7c756a;--line:#e3d9c3;--indigo:#2e4859;--indigo-deep:#21323d;--akane:#9c4334;--gold:#b3893c;--serif:"Shippori Mincho","Noto Serif JP",serif;--sans:"Noto Sans JP",system-ui,sans-serif;}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.9;font-size:16px;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}a{color:var(--indigo);text-decoration:none;transition:.15s}a:hover{color:var(--akane)}.wrap{max-width:1140px;margin:0 auto;padding:0 22px}header{position:sticky;top:0;z-index:50;background:rgba(245,239,226,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}.hdr{display:flex;align-items:center;justify-content:space-between;height:56px}.logo{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--indigo-deep)}.nav-links{display:flex;gap:20px;font-size:.85rem}.nav-links a{color:var(--ink-soft);padding:4px 0}.nav-links a:hover{color:var(--akane)}.breadcrumb{margin-top:12px;font-size:.8rem;color:var(--muted);padding:0 22px}.hero{padding:60px 0;background:linear-gradient(180deg,rgba(245,239,226,.4),var(--paper-2));border-bottom:1px solid var(--line)}.hero h1{font-family:var(--serif);font-weight:800;color:var(--indigo-deep);font-size:clamp(2.2rem,5vw,3.2rem);line-height:1.2;margin-bottom:14px}.hero .sub{font-family:var(--serif);font-weight:600;color:var(--akane);font-size:1rem;margin-bottom:20px;letter-spacing:.04em}.hero p{color:var(--ink-soft);max-width:640px;line-height:1.9;margin-bottom:8px}.section{padding:68px 0;border-bottom:1px solid var(--line)}.section.alt{background:var(--paper-2)}.sec-title{font-family:var(--serif);font-weight:700;color:var(--indigo-deep);font-size:clamp(1.6rem,3vw,2.1rem);margin-bottom:12px}.sec-head{margin-bottom:34px}.sec-head .kicker{display:block;font-size:.72rem;letter-spacing:.3em;color:var(--gold);font-weight:700;margin-bottom:8px;text-transform:uppercase}.two-col{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:flex-start}.two-col-img{position:relative}.two-col-img img{width:100%;height:auto;border-radius:10px;box-shadow:0 8px 24px rgba(40,33,20,.1);margin-bottom:12px;display:block}.two-col-cap{font-size:.84rem;color:var(--muted);line-height:1.7}.two-col-text h3{font-family:var(--serif);font-weight:700;color:var(--ink);font-size:1.32rem;margin-bottom:16px}.two-col-text p{color:var(--ink-soft);margin-bottom:14px;line-height:1.9}.related{padding:44px 0}.rel-h{font-family:var(--serif);font-weight:700;color:var(--indigo-deep);font-size:1.08rem;margin-bottom:14px}.rel-links{display:flex;flex-wrap:wrap;gap:12px}.rel-links a{display:inline-block;background:var(--card);border:1px solid var(--line);padding:9px 18px;border-radius:8px;font-size:.88rem;color:var(--indigo);font-weight:600;transition:.2s}.rel-links a:hover{background:var(--indigo);color:#fff}footer{background:#1a2126;color:#cbc3b4;padding:46px 0 28px;font-size:.88rem}.foot-top{display:flex;justify-content:space-between;gap:40px;margin-bottom:32px}.foot-brand{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:#f3ede0;margin-bottom:8px}.foot-brand p{font-family:var(--sans);font-weight:400;font-size:.8rem;color:#9b9384;margin-top:8px;max-width:380px;line-height:1.8}.foot-nav{display:flex;gap:18px}.foot-nav a{color:#cbc3b4;transition:.2s}.foot-nav a:hover{color:#fff}.copy{border-top:1px solid #2c343a;margin-top:28px;padding-top:16px;color:#857d6f;font-size:.75rem}@media(max-width:900px){.section{padding:48px 0}.two-col{grid-template-columns:1fr;gap:32px}.two-col-img{order:-1}}@media(max-width:620px){.nav-links{display:none}.hero h1{font-size:clamp(1.8rem,4vw,2.4rem)}.section{padding:38px 0}.foot-top{flex-direction:column}}
+:root {
+  --paper: #f5efe2;
+  --paper-2: #efe7d6;
+  --card: #fffdf8;
+  --ink: #23282c;
+  --ink-soft: #4d4a44;
+  --muted: #7c756a;
+  --line: #e3d9c3;
+  --indigo: #2e4859;
+  --indigo-deep: #21323d;
+  --akane: #9c4334;
+  --gold: #b3893c;
+  --serif: "Shippori Mincho", "Noto Serif JP", serif;
+  --sans: "Noto Sans JP", system-ui, sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.9;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: var(--indigo);
+  text-decoration: none;
+  transition: 0.15s;
+}
+a:hover {
+  color: var(--akane);
+}
+.wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(245, 239, 226, 0.93);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.hdr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+.logo {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--indigo-deep);
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-size: 0.85rem;
+}
+.nav-links a {
+  color: var(--ink-soft);
+  padding: 4px 0;
+}
+.nav-links a:hover {
+  color: var(--akane);
+}
+.breadcrumb {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  padding: 0 22px;
+}
+.hero {
+  padding: 60px 0;
+  background: linear-gradient(180deg, rgba(245, 239, 226, 0.4), var(--paper-2));
+  border-bottom: 1px solid var(--line);
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-weight: 800;
+  color: var(--indigo-deep);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+.hero .sub {
+  font-family: var(--serif);
+  font-weight: 600;
+  color: var(--akane);
+  font-size: 1rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.04em;
+}
+.hero p {
+  color: var(--ink-soft);
+  max-width: 640px;
+  line-height: 1.9;
+  margin-bottom: 8px;
+}
+.section {
+  padding: 68px 0;
+  border-bottom: 1px solid var(--line);
+}
+.section.alt {
+  background: var(--paper-2);
+}
+.sec-title {
+  font-family: var(--serif);
+  font-weight: 700;
+  color: var(--indigo-deep);
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  margin-bottom: 12px;
+}
+.sec-head {
+  margin-bottom: 34px;
+}
+.sec-head .kicker {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.two-col {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 48px;
+  align-items: flex-start;
+}
+.two-col-img {
+  position: relative;
+}
+.two-col-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(40, 33, 20, 0.1);
+  margin-bottom: 12px;
+  display: block;
+}
+.two-col-cap {
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.two-col-text h3 {
+  font-family: var(--serif);
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 1.32rem;
+  margin-bottom: 16px;
+}
+.two-col-text p {
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+  line-height: 1.9;
+}
+.related {
+  padding: 44px 0;
+}
+.rel-h {
+  font-family: var(--serif);
+  font-weight: 700;
+  color: var(--indigo-deep);
+  font-size: 1.08rem;
+  margin-bottom: 14px;
+}
+.rel-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.rel-links a {
+  display: inline-block;
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  color: var(--indigo);
+  font-weight: 600;
+  transition: 0.2s;
+}
+.rel-links a:hover {
+  background: var(--indigo);
+  color: #fff;
+}
+footer {
+  background: #1a2126;
+  color: #cbc3b4;
+  padding: 46px 0 28px;
+  font-size: 0.88rem;
+}
+.foot-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+.foot-brand {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #f3ede0;
+  margin-bottom: 8px;
+}
+.foot-brand p {
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #9b9384;
+  margin-top: 8px;
+  max-width: 380px;
+  line-height: 1.8;
+}
+.foot-nav {
+  display: flex;
+  gap: 18px;
+}
+.foot-nav a {
+  color: #cbc3b4;
+  transition: 0.2s;
+}
+.foot-nav a:hover {
+  color: #fff;
+}
+.copy {
+  border-top: 1px solid #2c343a;
+  margin-top: 28px;
+  padding-top: 16px;
+  color: #857d6f;
+  font-size: 0.75rem;
+}
+@media (max-width: 900px) {
+  .section {
+    padding: 48px 0;
+  }
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .two-col-img {
+    order: -1;
+  }
+}
+@media (max-width: 620px) {
+  .nav-links {
+    display: none;
+  }
+  .hero h1 {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+  }
+  .section {
+    padding: 38px 0;
+  }
+  .foot-top {
+    flex-direction: column;
+  }
+}
 </style>
 </head>
 <body>
-<header><div class="wrap hdr"><a class="logo" href="/">磐田物語</a><nav class="nav-links"><a href="/">トップ</a><a href="hajimeni.html">はじめに</a><a href="kyutoyoda.html">旧豊田町</a><a href="chizu.html">地図</a></nav></div><div class="breadcrumb"><a href="/">磐田物語</a> ／ <a href="kyutoyoda.html">旧豊田町の歴史</a> ／ <strong>東海道新田</strong></div></header>
-<section class="hero"><div class="wrap"><span style="display:block;font-size:.72rem;letter-spacing:.3em;color:var(--gold);font-weight:700;margin-bottom:8px;text-transform:uppercase">TOKAIDO SHINDEN</span><h1>東海道新田の歴史<br>── 計画された田地から産業地域へ</h1><p class="sub">江戸時代の理性的な新田開発</p><p>東海道新田は、江戸時代の新田開発の流れの中で、計画的に造成された地域です。幾何学的に割られた土地、引かれた水路、直線の道路――すべてが人為的に設計されました。農業地から産業地への転換、そして現在のまち。東海道新田の歩みから見える、日本の地域形成の歴史をたどります。</p></div></section>
-<section class="section alt"><div class="wrap"><div class="sec-head"><span class="kicker">Planning</span><h2 class="sec-title">江戸幕府の新田開発政策</h2></div><div class="two-col"><div class="two-col-img"><img src="../img/shinden-rice-field-01.jpg" alt="東海道新田地区の水路と田園" loading="lazy"><div class="two-col-cap">計画的に開発された東海道新田の水路。江戸時代の理性的な土地利用計画の痕跡。</div></div><div class="two-col-text"><h3>計画的な大規模開発</h3><p>「東海道新田」という地名は、東海道沿いに開発された新たな田地を意味します。江戸時代、日本全体で人口が増加し、食糧需要が高まる中で、幕府は組織的に新田開発を奨励しました。東海道新田の造成は、こうした政策の産物であり、単なる自然発生的な農業地ではなく、政治的・経済的な意図をもって計画された事業でした。</p><p>土地は方眼状に割られ、精密に測量されました。水路は計算された勾配で引かれ、農民の入植を前提とした村落構造が予め設計されていました。直線的な道路、規則的な枡形の田畑――これらすべてが、江戸時代の理性的な土地利用計画の証拠です。</p><p>この地域の古絵図を見ると、現代のまち並みの背景にある計画性がはっきりと見えます。区画整理された土地は、農民たちの生産性を高め、領主にもたらされる年貢の増加につながりました。新田開発は、単なる農地の拡大ではなく、領主権力を強化する戦略的な事業だったのです。</p></div></div></div></section>
-<section class="section"><div class="wrap"><div class="sec-head"><span class="kicker">Transformation</span><h2 class="sec-title">農業地から産業地域へ ── 近代化の波</h2></div><div class="two-col"><div class="two-col-img"><img src="../img/shinden-rice-field-02.jpg" alt="田園地帯の風景" loading="lazy"><div class="two-col-cap">広がる水田。東海道新田が生み出した豊かな農業地帯の景観。</div></div><div class="two-col-text"><h3>幕末から明治への急速な変化</h3><p>江戸時代を通じて、東海道新田は一貫して農業地域として発展してきました。適切に管理された水路、良好な土壌、安定した年貢制度――これらが農業生産を支え、地域の繁栄をもたらしていました。しかし、明治時代の産業革命により、すべてが急速に変わります。</p><p>鉄道の敷設は、この地域に劇的な変化をもたらしました。東海道本線の通過により、農業地は一変して産業地へと転換されていきます。工場の立地、商業機能の集中、労働人口の集中――計画された農業地は、新しい産業地域へと生まれ変わったのです。</p><p>その過程で、元々の土地割りは部分的に破壊されました。新しい都市機能に対応するため、道路は拡幅され、建物は近代的な構造に改変されました。しかし、完全には消えず、古地図と現代の地図を重ねると、江戸時代の計画性が今も息づいていることに気づきます。</p><p>現在、東海道新田の跡地には、工業地帯や住宅地が広がっています。しかし、南北に走る直線の道路、東西に並ぶ水路など、江戸時代の計画的な地割りの名残は、都市構造の中に確かに存在しているのです。これらは、地域の深い歴史を今に伝える貴重な証拠なのです。</p></div></div></div></section>
-<section class="related"><div class="wrap"><div class="rel-h">関連する記事</div><div class="rel-links"><a href="kyutoyoda.html">旧豊田町の歴史</a><a href="kamo.html">加茂・寺谷の歴史</a><a href="kai3.html">古い町の土地を売るとき</a><a href="chizu.html">磐田タイムトラベル地図</a></div></div></section>
-<footer><div class="wrap"><div class="foot-top"><div><div class="foot-brand">磐田物語<p>静岡県磐田市の歴史・文化・地名・古写真・古地図・祭り・地域の記憶を整理し、未来へ伝えていくための地域史サイトです。</p></div></div><nav class="foot-nav"><a href="/">トップ</a><a href="hajimeni.html">はじめに</a><a href="bunkazai.html">文化財</a><a href="chizu.html">地図</a><a href="mailto:fudosan.fujigaokas@gmail.com">お問い合わせ</a></nav></div><p class="copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</p></div></footer>
+<header>
+  <div class="wrap hdr">
+    <a class="logo" href="/">磐田物語</a>
+    <nav class="nav-links">
+      <a href="/">トップ</a>
+      <a href="hajimeni.html">はじめに</a>
+      <a href="kyutoyoda.html">旧豊田町</a>
+      <a href="chizu.html">地図</a>
+    </nav>
+  </div>
+  <div class="breadcrumb">
+    <a href="/">磐田物語</a> ／ <a href="kyutoyoda.html">旧豊田町の歴史</a> ／ <strong>東海道新田</strong>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span style="display:block;font-size:.72rem;letter-spacing:.3em;color:var(--gold);font-weight:700;margin-bottom:8px;text-transform:uppercase">TOKAIDO SHINDEN</span>
+    <h1>東海道新田の歴史<br>── 計画された田地から産業地域へ</h1>
+    <p class="sub">江戸時代の理性的な新田開発</p>
+    <p>東海道新田は、江戸時代の新田開発の流れの中で、計画的に造成された地域です。幾何学的に割られた土地、引かれた水路、直線の道路――すべてが人為的に設計されました。農業地から産業地への転換、そして現在のまち。東海道新田の歩みから見える、日本の地域形成の歴史をたどります。</p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Planning</span>
+      <h2 class="sec-title">江戸幕府の新田開発政策</h2>
+    </div>
+    <div class="two-col">
+      <div class="two-col-img">
+        <img src="../images/shinden-rice-field-01.jpg" alt="東海道新田地区の水路と田園" loading="lazy">
+        <div class="two-col-cap">計画的に開発された東海道新田の水路。江戸時代の理性的な土地利用計画の痕跡。</div>
+      </div>
+      <div class="two-col-text">
+        <h3>計画的な大規模開発</h3>
+        <p>「東海道新田」という地名は、東海道沿いに開発された新たな田地を意味します。江戸時代、日本全体で人口が増加し、食糧需要が高まる中で、幕府は組織的に新田開発を奨励しました。東海道新田の造成は、こうした政策の産物であり、単なる自然発生的な農業地ではなく、政治的・経済的な意図をもって計画された事業でした。</p>
+        <p>土地は方眼状に割られ、精密に測量されました。水路は計算された勾配で引かれ、農民の入植を前提とした村落構造が予め設計されていました。直線的な道路、規則的な枡形の田畑――これらすべてが、江戸時代の理性的な土地利用計画の証拠です。</p>
+        <p>この地域の古絵図を見ると、現代のまち並みの背景にある計画性がはっきりと見えます。区画整理された土地は、農民たちの生産性を高め、領主にもたらされる年貢の増加につながりました。新田開発は、単なる農地の拡大ではなく、領主権力を強化する戦略的な事業だったのです。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Transformation</span>
+      <h2 class="sec-title">農業地から産業地域へ ── 近代化の波</h2>
+    </div>
+    <div class="two-col">
+      <div class="two-col-img">
+        <img src="../images/shinden-rice-field-02.jpg" alt="田園地帯の風景" loading="lazy">
+        <div class="two-col-cap">広がる水田。東海道新田が生み出した豊かな農業地帯の景観。</div>
+      </div>
+      <div class="two-col-text">
+        <h3>幕末から明治への急速な変化</h3>
+        <p>江戸時代を通じて、東海道新田は一貫して農業地域として発展してきました。適切に管理された水路、良好な土壌、安定した年貢制度――これらが農業生産を支え、地域の繁栄をもたらしていました。しかし、明治時代の産業革命により、すべてが急速に変わります。</p>
+        <p>鉄道の敷設は、この地域に劇的な変化をもたらしました。東海道本線の通過により、農業地は一変して産業地へと転換されていきます。工場の立地、商業機能の集中、労働人口の集中――計画された農業地は、新しい産業地域へと生まれ変わったのです。</p>
+        <p>その過程で、元々の土地割りは部分的に破壊されました。新しい都市機能に対応するため、道路は拡幅され、建物は近代的な構造に改変されました。しかし、完全には消えず、古地図と現代の地図を重ねると、江戸時代の計画性が今も息づいていることに気づきます。</p>
+        <p>現在、東海道新田の跡地には、工業地帯や住宅地が広がっています。しかし、南北に走る直線の道路、東西に並ぶ水路など、江戸時代の計画的な地割りの名残は、都市構造の中に確かに存在しているのです。これらは、地域の深い歴史を今に伝える貴重な証拠なのです。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="related">
+  <div class="wrap">
+    <div class="rel-h">関連する記事</div>
+    <div class="rel-links">
+      <a href="kyutoyoda.html">旧豊田町の歴史</a>
+      <a href="kamo.html">加茂・寺谷の歴史</a>
+      <a href="kai3.html">古い町の土地を売るとき</a>
+      <a href="chizu.html">磐田タイムトラベル地図</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          磐田物語
+          <p>静岡県磐田市の歴史・文化・地名・古写真・古地図・祭り・地域の記憶を整理し、未来へ伝えていくための地域史サイトです。</p>
+        </div>
+      </div>
+      <nav class="foot-nav">
+        <a href="/">トップ</a>
+        <a href="hajimeni.html">はじめに</a>
+        <a href="bunkazai.html">文化財</a>
+        <a href="chizu.html">地図</a>
+        <a href="mailto:fudosan.fujigaokas@gmail.com">お問い合わせ</a>
+      </nav>
+    </div>
+    <p class="copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</p>
+  </div>
+</footer>
 </body>
 </html>
