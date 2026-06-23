@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>遠州国分寺とは何か ── 古代遠江の中心寺院と伽藍復興への構想 ｜ 磐田物語</title>
+<meta name="description" content="遠州国分寺（遠江国分寺）とは何か。奈良時代、現在の磐田に置かれた国家の祈りと地方支配の巨大空間を、伽藍・立地・人々の暮らし・復興構想から読み解く特集の入口。">
+<link rel="canonical" href="https://iwata-monogatari.pages.dev/enshu-kokubunji.html">
+<meta property="og:title" content="遠州国分寺とは何か ── 古代遠江の中心寺院と伽藍復興への構想 ｜ 磐田物語">
+<meta property="og:description" content="奈良時代、磐田に置かれた遠州国分寺。伽藍・立地・労働・復興構想から、磐田という土地の奥行きを読み直す特集。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://iwata-monogatari.pages.dev/enshu-kokubunji.html">
+<meta name="theme-color" content="#fffdf7">
+<link rel="icon" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+  :root{--kinari:#fffdf7;--cha:#2f7fa3;--matsu:#356f88;--sumi:#22303a;--usuzumi:#5b6b74;--waku:#d8e8ef;--paper:#fffdf7;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Zen Kaku Gothic New",sans-serif;color:var(--sumi);background:var(--kinari);line-height:1.95;font-size:17px;-webkit-font-smoothing:antialiased;}
+  a{color:var(--cha);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+  header.site{background:var(--matsu);color:#fff;padding:0;}
+  .site-inner{max-width:880px;margin:0 auto;padding:18px 22px;}
+  .site-title{font-family:"Shippori Mincho",serif;font-weight:600;font-size:19px;color:#fff;display:block;letter-spacing:.04em;}
+  .site-title small{display:block;font-size:12px;font-weight:400;opacity:.82;margin-top:3px;letter-spacing:.02em;}
+  nav.global{background:#2c5566;}
+  nav.global .site-inner{display:flex;flex-wrap:wrap;gap:4px 26px;padding-top:0;padding-bottom:0;}
+  nav.global a{color:#eef6fb;display:inline-block;padding:11px 0;font-size:14px;letter-spacing:.03em;}
+  nav.global a:hover{color:#fff;text-decoration:none;}
+  main{max-width:760px;margin:0 auto;padding:0 22px;}
+  .crumb{font-size:13px;color:var(--usuzumi);padding:20px 0 6px;}
+  .crumb a{color:var(--usuzumi);}
+  .cat{display:inline-block;font-size:13px;color:var(--matsu);border-left:3px solid var(--cha);padding-left:9px;margin:18px 0 10px;letter-spacing:.04em;}
+  h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:31px;line-height:1.5;color:var(--sumi);margin:6px 0 28px;letter-spacing:.02em;}
+  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#3a4750;margin-bottom:34px;}
+  figure{margin:32px 0;}
+  .fig-box{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:26px 20px;text-align:center;}
+  figcaption{font-size:13.5px;color:var(--usuzumi);margin-top:12px;line-height:1.8;text-align:left;}
+  svg{max-width:100%;height:auto;}
+  .svg-label{font-family:"Zen Kaku Gothic New",sans-serif;fill:var(--sumi);}
+  .svg-sub{fill:var(--usuzumi);}
+  h2{font-family:"Shippori Mincho",serif;font-weight:600;font-size:22px;color:var(--matsu);margin:40px 0 16px;padding-bottom:9px;border-bottom:2px solid var(--waku);letter-spacing:.02em;}
+  h2 .num{color:var(--cha);font-size:16px;margin-right:8px;}
+  p{margin:0 0 20px;}
+  ul.body,ol.body{margin:0 0 22px 1.3em;}
+  ul.body li,ol.body li{margin-bottom:8px;}
+  strong{color:var(--matsu);font-weight:700;}
+  .toc{background:#f4fafc;border:1px solid var(--waku);border-radius:4px;padding:18px 22px 16px;margin:0 0 34px;}
+  .toc p{font-family:"Shippori Mincho",serif;font-weight:600;color:var(--matsu);margin:0 0 8px;font-size:15px;}
+  .toc ol{margin:0 0 0 1.4em;}
+  .toc li{font-size:14.5px;margin-bottom:5px;}
+  .badge{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.04em;border-radius:3px;padding:2px 8px;margin-right:6px;vertical-align:1px;}
+  .badge-fact{background:#dcebe0;color:#2f6b46;}
+  .badge-est{background:#f0e6cf;color:#8a6d2f;}
+  .factbox{border:1px solid var(--waku);border-radius:4px;margin:26px 0;overflow:hidden;}
+  .factbox .row{display:flex;border-top:1px solid #e7f1f5;}
+  .factbox .row:first-child{border-top:0;}
+  .factbox .k{flex:0 0 38%;background:#f4fafc;padding:11px 16px;font-size:14px;font-weight:500;color:var(--matsu);}
+  .factbox .v{flex:1;padding:11px 16px;font-size:14.5px;}
+  .note{background:#f7f4ec;border:1px solid #e7ddc6;border-radius:4px;padding:14px 18px;font-size:13px;color:#6a6048;line-height:1.8;margin:22px 0;}
+  .navgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 8px;}
+  .navcard{display:block;background:var(--paper);border:1px solid var(--waku);border-radius:5px;padding:16px 18px;transition:.15s;}
+  .navcard:hover{background:#f4fafc;text-decoration:none;border-color:#bcd9e6;}
+  .navcard .nc-cat{font-size:11.5px;color:var(--cha);letter-spacing:.06em;display:block;margin-bottom:4px;}
+  .navcard .nc-ttl{font-family:"Shippori Mincho",serif;font-weight:600;font-size:16px;color:var(--sumi);display:block;margin-bottom:5px;}
+  .navcard .nc-desc{font-size:13px;color:var(--usuzumi);line-height:1.7;}
+  @media(max-width:600px){.navgrid{grid-template-columns:1fr;}}
+  .henshu{background:#f7f4ec;border:1px solid #e7ddc6;border-radius:6px;padding:26px 26px 22px;margin:46px 0 10px;}
+  .henshu .h-lh{font-family:"Shippori Mincho",serif;font-weight:600;color:#8a6d2f;font-size:13px;letter-spacing:.06em;margin-bottom:10px;}
+  .henshu h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;color:var(--sumi);margin:0 0 14px;}
+  .henshu p{font-size:15px;color:#46412f;margin-bottom:14px;}
+  .henshu .cta-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px;}
+  .henshu .cta-links a{background:#fff;border:1px solid #ddd0b3;border-radius:4px;padding:9px 15px;font-size:13.5px;color:#7a5f28;}
+  .henshu .cta-links a:hover{background:#fffdf7;text-decoration:none;border-color:#c9b890;}
+  h3{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--sumi);margin:34px 0 12px;}
+  .refs{font-size:14px;color:var(--usuzumi);}
+  .refs li{margin:0 0 6px 1.2em;line-height:1.8;}
+  .related{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 8px;}
+  .related a{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:10px 15px;font-size:14px;color:var(--matsu);}
+  .related a:hover{background:#f4fafc;text-decoration:none;}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:40px 0 10px;flex-wrap:wrap;}
+  .pager a{font-size:14px;}
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;margin-top:56px;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-sns{width:100%;margin-top:6px;}
+  .im-foot .im-icons{display:flex;gap:12px;}
+  .im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
+  .im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
+  .im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  @media(max-width:600px){h1{font-size:25px;}body{font-size:16px;}h2{font-size:19px;}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="site-inner">
+    <a class="site-title" href="/">磐田物語。<small>遠江・見付のまちの歴史と文化</small></a>
+  </div>
+</header>
+<nav class="global">
+  <div class="site-inner">
+    <a href="/hajimeni.html">はじめに</a>
+    <a href="/#themes">読みもの</a>
+    <a href="/saguchi-shiryo.html">佐口史料</a>
+    <a href="/chizu.html">地図で見る</a>
+    <a href="/enshu-kokubunji.html">遠州国分寺特集</a>
+  </div>
+</nav>
+
+<main>
+  <div class="crumb"><a href="/">磐田物語</a> ／ 遠州国分寺特集</div>
+
+  <span class="cat">遠州国分寺特集 ｜ 親ページ</span>
+  <h1>遠州国分寺とは何か<br>── 古代遠江の中心寺院と、伽藍復興への構想</h1>
+
+  <div class="lead">
+    遠州国分寺は、単なる寺跡ではありません。奈良時代、国家の祈りと地方支配の仕組みが、現在の磐田の地に刻み込まれた巨大な空間です。<br>
+    この特集では、遠州国分寺とは何か、なぜ磐田に置かれたのか、人々の暮らしに何をもたらしたのか、そして失われた伽藍を現代にどう復興できるのかを考えます。遠州国分寺を読むことは、磐田という土地の奥行きを読むことでもあります。
+  </div>
+
+  <div class="toc">
+    <p>この特集で読めること</p>
+    <ol>
+      <li>遠州国分寺とは何だったのか</li>
+      <li>なぜ現在の磐田に置かれたのか</li>
+      <li>伽藍とは何か ── 中心空間を読む</li>
+      <li>建設と維持を支えた人々</li>
+      <li>失われた伽藍を、現代にどう復興できるか</li>
+    </ol>
+  </div>
+
+  <h2><span class="num">1</span>遠州国分寺とは、何だったのか</h2>
+  <p>遠州国分寺は、正式には<strong>金光明四天王護国之寺（こんこうみょうしてんのうごこくのてら）</strong>といい、奈良時代に遠江国（とおとうみのくに＝現在の静岡県西部、遠州）の中心に置かれた官立の寺院です。地元では「遠江国分寺」とも呼ばれます。跡地は現在の磐田市見付・国府台にあり、JR磐田駅の北口から北へのびる「天平通り」をたどった先、市役所の北側に、特別史跡・遠江国分寺跡として残されています。</p>
+  <p>「お寺」と聞くと、町の片隅に静かに建つ小さな堂を思い浮かべるかもしれません。けれども国分寺は、それとはまったく性格の違うものでした。<span class="badge badge-fact">事実</span>天平13年（741年）、聖武天皇は「国分寺建立の詔」を発し、全国の国ごとに僧寺と尼寺を建てるよう命じます。たびかさなる疫病・飢饉・争乱に揺れる世を、仏教の力で安んじようとした、国家をあげての一大事業でした。遠州国分寺は、その遠江国における拠点であり、<strong>国家が地方に置いた巨大な宗教・政治施設</strong>だったのです。</p>
+
+  <h2><span class="num">2</span>なぜ、現在の磐田に置かれたのか</h2>
+  <p>国分寺は、どこにでも建てられたわけではありません。詔は、その国の役所＝<strong>国府</strong>の近く、しかも「国の華」と呼べるような良い土地を選ぶよう求めていました。遠江国の国府は、見付の淡海國玉神社（総社）のあたりに置かれていたと考えられています。遠州国分寺は、その国府の北方、磐田原台地の南縁の平坦な面に営まれました。<span class="badge badge-fact">事実</span>国分寺の東には府八幡宮、さらに東には天御子神社、そして国分寺の北には国分尼寺が、南北に並ぶように配されていました。</p>
+  <p>この一帯は、古代の東海道が通り、人と物が行き交う交通の要でもありました。国府があり、寺があり、道があり、市が立つ。古代の磐田は、遠江国の政治・信仰・交通が重なり合う、まさに<strong>遠江のはじまりの地</strong>だったのです。なぜここだったのか――その答えは、立地と地理を読み解く子ページでくわしく考えます。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 720 300" role="img" aria-label="遠江国府・遠州国分寺・国分尼寺・古代東海道の位置関係の模式図">
+        <rect x="0" y="0" width="720" height="300" fill="#fbfdfe"/>
+        <!-- 台地の帯 -->
+        <rect x="40" y="60" width="640" height="150" fill="#eef6fb" stroke="#bcd9e6" stroke-width="1"/>
+        <text x="56" y="80" class="svg-sub" font-size="12">磐田原台地（標高約20m・古代は「大之浦」に臨む）</text>
+        <!-- 古代東海道 -->
+        <line x1="40" y1="180" x2="680" y2="160" stroke="#8a6d2f" stroke-width="3" stroke-dasharray="2 0"/>
+        <text x="300" y="200" class="svg-sub" font-size="12" fill="#8a6d2f">古代東海道（推定ルート）</text>
+        <!-- 施設 -->
+        <g font-size="13" class="svg-label">
+          <circle cx="250" cy="150" r="7" fill="#356f88"/><text x="250" y="135" text-anchor="middle">国府</text>
+          <circle cx="250" cy="105" r="7" fill="#2f7fa3"/><text x="250" y="95" text-anchor="middle">国分寺</text>
+          <circle cx="250" cy="80" r="6" fill="#7fae9a"/><text x="312" y="80" text-anchor="start">国分尼寺</text>
+          <circle cx="350" cy="150" r="6" fill="#9bb6c4"/><text x="372" y="150" text-anchor="start">府八幡宮</text>
+          <circle cx="440" cy="148" r="6" fill="#9bb6c4"/><text x="462" y="148" text-anchor="start">天御子神社</text>
+        </g>
+        <line x1="250" y1="143" x2="250" y2="112" stroke="#bcd9e6" stroke-width="1.5"/>
+        <line x1="250" y1="98" x2="250" y2="86" stroke="#bcd9e6" stroke-width="1.5"/>
+        <text x="360" y="252" text-anchor="middle" class="svg-sub" font-size="12">国府を中心に、その北へ国分寺・国分尼寺、東へ社が並ぶ</text>
+        <text x="690" y="290" text-anchor="end" class="svg-sub" font-size="11">N↑ 上が北</text>
+      </svg>
+      <figcaption>古代の磐田に営まれた主な施設の位置関係（模式図）。公的資料の記述をもとに、上下・東西のおおまかな関係を示したもので、距離・縮尺は正確ではありません。実測図ではありません。</figcaption>
+    </div>
+  </figure>
+
+  <h2><span class="num">3</span>伽藍とは何か ── 中心空間を読む</h2>
+  <p>寺院を構成する建物の集まりを<strong>伽藍（がらん）</strong>といいます。遠州国分寺の伽藍は、<span class="badge badge-fact">事実</span>金堂を中心に、その北に講堂、南に中門が置かれ、金堂と中門は回廊で結ばれていました。そして回廊の西外側に、空高くそびえる<strong>七重塔</strong>が建っていたと考えられています。これらは築地塀（ついじべい）で囲まれ、聖なる区画をかたちづくっていました。昭和26年（1951年）の発掘調査は、国分寺跡として日本で初めての本格的なもので、こうした主要伽藍の配置を地中から確かめました。その価値が認められ、翌年、国の特別史跡に指定されています。</p>
+  <p>伽藍を読むことは、建物の形を知ることではありません。そこに集まった人々の動き、祈り、労働、日常を読むことです。金堂・塔・講堂・回廊・中門・僧坊――それぞれが何のための空間だったのかは、伽藍の子ページと、各建物の孫ページでていねいにたどります。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 480 360" role="img" aria-label="遠州国分寺の伽藍配置の概念図">
+        <rect x="0" y="0" width="480" height="360" fill="#fbfdfe"/>
+        <!-- 築地塀 -->
+        <rect x="60" y="30" width="360" height="300" fill="none" stroke="#bcd9e6" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <text x="66" y="48" class="svg-sub" font-size="11">築地塀で区画された寺域（範囲は推定）</text>
+        <!-- 回廊 -->
+        <rect x="150" y="150" width="180" height="120" fill="none" stroke="#356f88" stroke-width="2"/>
+        <text x="240" y="215" text-anchor="middle" class="svg-sub" font-size="11">回廊</text>
+        <!-- 建物 -->
+        <g class="svg-label" font-size="13" text-anchor="middle">
+          <rect x="200" y="118" width="80" height="34" fill="#dfeef5" stroke="#356f88"/><text x="240" y="140">金堂</text>
+          <rect x="195" y="60" width="90" height="30" fill="#eef6fb" stroke="#9bb6c4"/><text x="240" y="80">講堂</text>
+          <rect x="205" y="268" width="70" height="26" fill="#eef6fb" stroke="#9bb6c4"/><text x="240" y="286">中門</text>
+          <rect x="205" y="305" width="70" height="22" fill="#f4fafc" stroke="#9bb6c4"/><text x="240" y="321" font-size="11">南大門</text>
+          <rect x="92" y="120" width="46" height="46" fill="#f0e6cf" stroke="#8a6d2f" stroke-dasharray="4 3"/><text x="115" y="148" font-size="12">塔</text>
+        </g>
+        <text x="115" y="184" text-anchor="middle" class="svg-sub" font-size="11">七重塔（推定）</text>
+        <text x="240" y="350" text-anchor="middle" class="svg-sub" font-size="11">上が北　／　南北の中軸に主要堂を並べる</text>
+      </svg>
+      <figcaption>遠州国分寺の伽藍配置の概念図（模式図）。発掘で確認された配置関係をもとに、各建物のおおよその位置を示しました。塔の位置・寺域の範囲には推定を含みます。建物の形・大きさは正確ではなく、実測図ではありません。</figcaption>
+    </div>
+  </figure>
+
+  <h2><span class="num">4</span>建設と維持を支えた人々</h2>
+  <p>これだけの伽藍をつくり、保ちつづけるには、想像を超える労力が必要でした。木を伐り出す人、土を運び基壇を突き固める人、瓦を焼く人、それを運ぶ人、そして寺と人々を養う食料を生み出した農民たち。<span class="badge badge-fact">事実</span>遠州国分寺や国分尼寺の瓦は、主に掛川市（旧大須賀町）の窯で焼かれ、はるばる運ばれてきました。後の屋根の修復のためには、磐田市寺谷でも瓦が焼かれています。</p>
+  <p>遠州国分寺は、支配者だけのものではありません。当時の人々の労働と負担、そして祈りと暮らしの上に成り立っていました。人々の暮らしを支える場所が、やがて地域の記憶になっていく――その視点は、現代の住まいや土地にも通じます。くわしくは「人々の暮らしをどう変えたか」の子ページで。</p>
+
+  <h2><span class="num">5</span>遠州国分寺を、復興できないか</h2>
+  <p>七重塔は、平安のはじめ、弘仁10年（819年）の火災で失われたと伝えられます（『類聚国史』）。やがて伽藍も衰え、寺域は田畑へと姿を変えました。けれども、地中に眠った礎石と基壇は、千年あまりの時を越えて発掘調査でふたたび姿をあらわしました。</p>
+  <p>近年、磐田市は史跡の再整備を進めています。<span class="badge badge-fact">事実</span>令和に入り、遺構を地下にそのまま保存したうえで、その真上に当時と同じ大きさの<strong>木装基壇</strong>で金堂が復元されました。木装基壇とは、基壇の側面を木で装ったもので、遠江国分寺跡で全国の古代寺院跡として初めて確認された特徴です。木装基壇の金堂を復元した例は、全国の国分寺のなかでもここが初めてだといいます。</p>
+  <p>この特集が考える「復興」は、失われた建物を安易に建て直すことではありません。古代遠江の中心であった空間の意味を、現代の磐田に住む私たちがもう一度共有できるようにすること――<strong>理解の復興、見える化の復興、空間体験の復興、思想の復興</strong>です。その構想は「復興できないか」の子ページで深めます。</p>
+
+  <h2>特集を読み進める</h2>
+  <p>遠州国分寺特集は、一度で読み切れなくてもかまいません。気になるところから、何度でも戻ってきて読み進められる「小さな専門サイト」として設計しています。</p>
+  <div class="navgrid">
+    <a class="navcard" href="/enshu-kokubunji-what.html"><span class="nc-cat">国分寺制度</span><span class="nc-ttl">遠州国分寺とは何か</span><span class="nc-desc">国分寺制度と聖武天皇の国家鎮護。古いお寺ではなく、国家施設として読む。</span></a>
+    <a class="navcard" href="/enshu-kokubunji-location.html"><span class="nc-cat">立地と地理</span><span class="nc-ttl">なぜ磐田に置かれたのか</span><span class="nc-desc">国府・台地・古代東海道。現在の市街地と重ねて、立地の必然を読む。</span></a>
+    <a class="navcard" href="/enshu-kokubunji-garan.html"><span class="nc-cat">伽藍</span><span class="nc-ttl">伽藍を読む</span><span class="nc-desc">金堂・塔・講堂・回廊・中門・僧坊。特集の中核となる中心空間。</span></a>
+    <a class="navcard" href="/enshu-kokubunji-life.html"><span class="nc-cat">労働と暮らし</span><span class="nc-ttl">人々の暮らしをどう変えたか</span><span class="nc-desc">瓦を焼き、土を運び、食を支えた人々。巨大事業としての国分寺。</span></a>
+    <a class="navcard" href="/enshu-kokubunji-fukko.html"><span class="nc-cat">復興構想</span><span class="nc-ttl">復興できないか</span><span class="nc-desc">復元と復興の違い。空間の意味を取り戻す4段階の構想。</span></a>
+    <a class="navcard" href="/enshu-kokubunji-walk.html"><span class="nc-cat">散策</span><span class="nc-ttl">遠州国分寺を歩く</span><span class="nc-desc">現在の道と地形から古代の伽藍を想像する、現地散策の案内。</span></a>
+    <a class="navcard" href="/enshu-kokubunji-chronology.html"><span class="nc-cat">年表</span><span class="nc-ttl">遠州国分寺 年表</span><span class="nc-desc">建立から火災、衰退、近代の発掘、現代の整備までの流れ。</span></a>
+    <a class="navcard" href="/enshu-kokubunji-glossary.html"><span class="nc-cat">用語集</span><span class="nc-ttl">読むための用語集</span><span class="nc-desc">国分寺・伽藍・金堂・七重塔・基壇・復元と復興など、やさしく解説。</span></a>
+    <a class="navcard" href="/enshu-kokubunji-tiles.html"><span class="nc-cat">瓦</span><span class="nc-ttl">瓦を読む</span><span class="nc-desc">瓦窯・文様・運搬。屋根材であり、国家事業の痕跡でもある瓦。</span></a>
+    <a class="navcard" href="/enshu-kokubunji-garan-tower.html"><span class="nc-cat">伽藍 ｜ 塔</span><span class="nc-ttl">七重塔とは何か</span><span class="nc-desc">仏舎利信仰と、遠くから見えた塔の象徴性。伽藍の孫ページへ。</span></a>
+  </div>
+
+  <h2>歴史ある土地を、どう受け継ぐか</h2>
+  <p>土地は、面積や価格だけでできているのではありません。そこには、人が住み、働き、祈り、家を建て、家族を育て、世代を重ねてきた時間があります。遠州国分寺を知ることは、磐田という土地に積もった時間を知ることでもあります。古い建物や土地は、簡単に壊すだけのものではありません。それは、地域の記憶を次の世代へ手渡すための器でもあるのです。</p>
+
+  <div class="henshu">
+    <p class="h-lh">運営者より</p>
+    <h3>磐田の土地を、次へどう渡すか</h3>
+    <p>土地や建物には、価格だけでは測れない時間が積み重なっています。遠州国分寺を知ることは、磐田という土地の奥行きを知ることでもあります。</p>
+    <p>磐田物語の運営者である富士ヶ丘サービスでは、磐田で受け継がれてきた住まいや土地について、売る・買うだけでなく、どう残し、どう住み継ぎ、どう手放すかという視点からも相談を受けています。住まいと土地を考えるとき、その背景にある時間も一緒に見つめてみませんか。</p>
+    <div class="cta-links">
+      <a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">土地や建物の背景をふまえて売却・購入を考える</a>
+      <a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続した家について相談する</a>
+      <a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家について相談する</a>
+    </div>
+  </div>
+
+  <h3>参考文献・参考資料</h3>
+  <ul class="refs">
+    <li>『遠州国分寺の研究』</li>
+    <li>磐田市公式ウェブサイト「遠江国分寺跡」「遠江国分寺跡整備事業」</li>
+    <li>磐田市観光協会「遠江国分寺跡」「遠江国はじまりの地～磐田に刻まれた歴史をたどる旅」</li>
+    <li>『類聚国史』（弘仁10年の火災記事）</li>
+    <li>大林組「季刊大林 No.8『寺』── 遠江国分寺の復元」（1980）※復元構想として参照</li>
+    <li>国指定文化財等データベース／日本歴史地名大系</li>
+    <li>制作者による現地確認・追加調査メモ</li>
+  </ul>
+  <p class="note">本記事は、上記資料を参考にしつつ、磐田物語の編集方針に基づいて独自に再構成したものです。本文・写真・図面の転載は行っていません。掲載図版は、WEB説明用として新規に作成した模式図であり、実測図ではありません。事実と推定・復元案は本文中で区別しています。</p>
+
+  <h3>あわせて読みたい</h3>
+  <div class="related">
+    <a href="/totoumi-kokubunji.html">遠江国分寺跡と、古代磐田のはじまり</a>
+    <a href="/totoumi-kokufu.html">遠江国府と古代の磐田</a>
+    <a href="/choshizuka-kofun.html">銚子塚古墳</a>
+    <a href="/chizu.html">磐田タイムトラベル地図</a>
+  </div>
+
+  <div class="pager">
+    <a href="/">← 磐田物語トップへ</a>
+    <a href="/enshu-kokubunji-what.html">最初の子ページ ── 遠州国分寺とは何か →</a>
+  </div>
+</main>
+
+<footer class="im-foot">
+  <div class="im-inner">
+    <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
+      </ul>
+      <div class="im-sns">
+        <p class="im-lh">大石ひろゆきのSNS</p>
+        <div class="im-icons">
+          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.9 3.78-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg></a>
+          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 1.95c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.4-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.42-.35 1.04-.4 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.4 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.16 1.04.35 2.19.4 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.4.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.42.35-1.04.4-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.4-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.16-1.04-.35-2.19-.4-1.24-.06-1.61-.07-4.76-.07Zm0 3.32a4.57 4.57 0 1 0 0 9.14 4.57 4.57 0 0 0 0-9.14Zm0 7.54a2.97 2.97 0 1 1 0-5.94 2.97 2.97 0 0 1 0 5.94Zm5.82-7.74a1.07 1.07 0 1 1-2.14 0 1.07 1.07 0 0 1 2.14 0Z"/></svg></a>
+          <a href="https://x.com/HiroyukiLawAka" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.22-6.82-5.97 6.82H1.66l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23Zm-1.16 17.52h1.83L7.01 4.12H5.04l12.04 15.65Z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+
+</body>
+</html>
