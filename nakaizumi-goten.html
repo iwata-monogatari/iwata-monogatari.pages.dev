@@ -22,9 +22,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#f7f2e9;--paper-deep:#efe6d4;--ink:#3a312a;--ink-soft:#6b5d50;
-    --brown:#a6713e;--brown-deep:#85562c;--pine:#46624a;--line:#e0d4bd;
-    --card:#fffdf8;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+    --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
+    --brown:#2f7fa3;--brown-deep:#1f4f6f;--pine:#356f88;--line:#d8e8ef;
+    --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -94,8 +94,8 @@
   table.kx caption{caption-side:top;text-align:left;font-size:13px;color:var(--ink-soft);margin-bottom:9px;font-weight:700;letter-spacing:.03em;}
   table.kx th,table.kx td{border:1px solid var(--line);padding:9px 13px;text-align:left;line-height:1.65;vertical-align:top;}
   table.kx thead th{background:var(--paper-deep);color:var(--brown-deep);font-weight:700;white-space:nowrap;}
-  table.kx tbody th{background:#faf6ee;font-weight:700;white-space:nowrap;}
-  table.kx tbody tr:nth-child(even) td{background:#fdfbf6;}
+  table.kx tbody th{background:#f4fafc;font-weight:700;white-space:nowrap;}
+  table.kx tbody tr:nth-child(even) td{background:#f8fcfe;}
 
   .faq{margin:30px 0 8px;}
   .faq-item{background:var(--card);border:1px solid var(--line);border-radius:4px;margin-bottom:12px;padding:17px 21px;box-shadow:var(--shadow);}
@@ -132,9 +132,9 @@
   .article-nav a.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
   .article-nav a.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
 
-  .s-paper{fill:#fffdf8;} .s-line{stroke:#d8c8ab;} .s-ink{fill:#3a312a;}
-  .s-brown{fill:#a6713e;} .s-pine{fill:#46624a;} .s-soft{fill:#6b5d50;}
-  .s-water{fill:#cdd9d2;}
+  .s-paper{fill:#fffdf7;} .s-line{stroke:#cfe2ec;} .s-ink{fill:#1f3a48;}
+  .s-brown{fill:#2f7fa3;} .s-pine{fill:#356f88;} .s-soft{fill:#5b6b74;}
+  .s-water{fill:#cfe2ec;}
 
   @media(max-width:760px){
     nav.menu{display:none;}
@@ -176,23 +176,23 @@
     <rect width="760" height="250" class="s-paper"></rect>
     <path d="M40 0 C70 70 55 150 80 250 L40 250 Z" class="s-water" opacity="0.75"></path>
     <text x="58" y="135" class="s-soft" font-size="11" transform="rotate(-80 58 135)" font-family="'Shippori Mincho',serif">天竜川</text>
-    <path d="M560 0 L760 0 L760 250 L560 250 C600 180 600 70 560 0 Z" fill="#efe6d4" opacity="0.85"></path>
+    <path d="M560 0 L760 0 L760 250 L560 250 C600 180 600 70 560 0 Z" fill="#e9f3fa" opacity="0.85"></path>
     <text x="690" y="40" text-anchor="middle" class="s-soft" font-size="12" font-family="'Shippori Mincho',serif">磐田原台地</text>
     <text x="690" y="58" text-anchor="middle" class="s-soft" font-size="10.5">（東・高い）</text>
     <text x="320" y="232" text-anchor="middle" class="s-soft" font-size="11" font-family="'Shippori Mincho',serif">低地（中泉）　西 ←　→ 東（台地・見付）</text>
-    <rect x="150" y="60" width="120" height="44" rx="6" class="s-paper" stroke="#46624a" stroke-width="2"></rect>
+    <rect x="150" y="60" width="120" height="44" rx="6" class="s-paper" stroke="#356f88" stroke-width="2"></rect>
     <text x="210" y="80" text-anchor="middle" class="s-pine" font-size="13" font-family="'Shippori Mincho',serif" font-weight="700">中泉御殿</text>
     <text x="210" y="96" text-anchor="middle" class="s-soft" font-size="10">家康・1587頃</text>
-    <rect x="150" y="125" width="120" height="44" rx="6" class="s-paper" stroke="#a6713e" stroke-width="2"></rect>
+    <rect x="150" y="125" width="120" height="44" rx="6" class="s-paper" stroke="#2f7fa3" stroke-width="2"></rect>
     <text x="210" y="145" text-anchor="middle" class="s-brown" font-size="13" font-family="'Shippori Mincho',serif" font-weight="700">中泉代官所</text>
     <text x="210" y="161" text-anchor="middle" class="s-soft" font-size="10">天領を支配</text>
-    <rect x="360" y="92" width="120" height="46" rx="6" class="s-paper" stroke="#3a312a" stroke-width="2"></rect>
+    <rect x="360" y="92" width="120" height="46" rx="6" class="s-paper" stroke="#1f3a48" stroke-width="2"></rect>
     <text x="420" y="113" text-anchor="middle" class="s-ink" font-size="14" font-family="'Shippori Mincho',serif" font-weight="800">中泉駅</text>
     <text x="420" y="130" text-anchor="middle" class="s-soft" font-size="10">1889 ＝現・磐田駅</text>
-    <g stroke="#d8c8ab" stroke-width="1.4" fill="none">
+    <g stroke="#cfe2ec" stroke-width="1.4" fill="none">
       <path d="M270 95 L360 110"></path><path d="M270 145 L360 120"></path>
     </g>
-    <line x1="100" y1="40" x2="100" y2="210" stroke="#cdd9d2" stroke-width="6" opacity="0.6"></line>
+    <line x1="100" y1="40" x2="100" y2="210" stroke="#cfe2ec" stroke-width="6" opacity="0.6"></line>
   </svg>
   <figcaption>図：磐田原台地の西の低地に開けた中泉。御殿・代官所・鉄道駅が、ほぼ同じ低地のなかに重なって置かれた（概念図）。</figcaption>
 </figure>
@@ -229,7 +229,7 @@
   <figure class="fig">
     <svg viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="西の天竜川低地から東の磐田原台地へ向かう地形断面に、中泉と見付の位置を示した模式図">
       <rect width="760" height="220" class="s-paper"></rect>
-      <path d="M40 170 L300 168 C420 165 470 120 560 90 L720 80 L720 200 L40 200 Z" fill="#efe6d4"></path>
+      <path d="M40 170 L300 168 C420 165 470 120 560 90 L720 80 L720 200 L40 200 Z" fill="#e9f3fa"></path>
       <path d="M40 175 L120 173 L120 200 L40 200 Z" class="s-water" opacity="0.7"></path>
       <text x="78" y="192" text-anchor="middle" class="s-soft" font-size="10.5" font-family="'Shippori Mincho',serif">天竜川</text>
       <circle cx="250" cy="166" r="6" class="s-pine"></circle>
@@ -452,25 +452,25 @@
 
 <footer class="im-foot">
 <style>
-.im-foot{background:#3a312a;color:#e9e0d2;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+.im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
 .im-foot *{box-sizing:border-box;}
 .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
 .im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-.im-foot .im-brand .im-dot{color:#a6713e;}
-.im-foot .im-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
+.im-foot .im-brand .im-dot{color:#2f7fa3;}
+.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
 .im-foot .im-links{width:100%;margin-top:6px;}
-.im-foot .im-lh{font-size:12px;color:#9c8f7c;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
 .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
 .im-foot .im-links li{font-size:13px;line-height:1.6;}
-.im-foot .im-links a{color:#d8cab4;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-.im-foot .im-links a:hover{color:#f3ece0;border-color:#e7c9a3;}
-.im-foot .im-desc{display:block;color:#9c8f7c;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
 .im-foot .im-sns{width:100%;margin-top:20px;}
 .im-foot .im-icons{display:flex;gap:14px;}
-.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#d8cab4;transition:.2s;}
-.im-foot .im-icons a:hover{color:#f3ece0;border-color:#e7c9a3;background:rgba(231,201,163,.08);}
+.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
+.im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
 .im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
-.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
+.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
 </style>
   <div class="im-inner">
     <div class="im-brand">磐田物語<span class="im-dot">。</span></div>

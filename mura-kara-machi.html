@@ -22,9 +22,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#f7f2e9;--paper-deep:#efe6d4;--ink:#3a312a;--ink-soft:#6b5d50;
-    --brown:#a6713e;--brown-deep:#85562c;--pine:#46624a;--line:#e0d4bd;
-    --card:#fffdf8;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+    --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
+    --brown:#2f7fa3;--brown-deep:#1f4f6f;--pine:#356f88;--line:#d8e8ef;
+    --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -94,8 +94,8 @@
   table.kx caption{caption-side:top;text-align:left;font-size:13px;color:var(--ink-soft);margin-bottom:9px;font-weight:700;letter-spacing:.03em;}
   table.kx th,table.kx td{border:1px solid var(--line);padding:9px 13px;text-align:left;line-height:1.65;vertical-align:top;}
   table.kx thead th{background:var(--paper-deep);color:var(--brown-deep);font-weight:700;white-space:nowrap;}
-  table.kx tbody th{background:#faf6ee;font-weight:700;white-space:nowrap;}
-  table.kx tbody tr:nth-child(even) td{background:#fdfbf6;}
+  table.kx tbody th{background:#f4fafc;font-weight:700;white-space:nowrap;}
+  table.kx tbody tr:nth-child(even) td{background:#f8fcfe;}
 
   .faq{margin:30px 0 8px;}
   .faq-item{background:var(--card);border:1px solid var(--line);border-radius:4px;margin-bottom:12px;padding:17px 21px;box-shadow:var(--shadow);}
@@ -132,9 +132,9 @@
   .article-nav a.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
   .article-nav a.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
 
-  .s-paper{fill:#fffdf8;} .s-line{stroke:#d8c8ab;} .s-ink{fill:#3a312a;}
-  .s-brown{fill:#a6713e;} .s-pine{fill:#46624a;} .s-soft{fill:#6b5d50;}
-  .s-water{fill:#cdd9d2;}
+  .s-paper{fill:#fffdf7;} .s-line{stroke:#cfe2ec;} .s-ink{fill:#1f3a48;}
+  .s-brown{fill:#2f7fa3;} .s-pine{fill:#356f88;} .s-soft{fill:#5b6b74;}
+  .s-water{fill:#cfe2ec;}
 
   @media(max-width:760px){
     nav.menu{display:none;}
@@ -183,17 +183,17 @@
       <circle cx="320" cy="150" r="12"></circle><circle cx="280" cy="40" r="9"></circle>
     </g>
     <text x="200" y="28" class="s-soft" font-size="12" font-family="'Shippori Mincho',serif">数十の村々</text>
-    <circle cx="470" cy="95" r="26" class="s-paper" stroke="#a6713e" stroke-width="2"></circle>
+    <circle cx="470" cy="95" r="26" class="s-paper" stroke="#2f7fa3" stroke-width="2"></circle>
     <text x="470" y="99" text-anchor="middle" class="s-brown" font-size="14" font-family="'Shippori Mincho',serif" font-weight="700">見付町</text>
-    <circle cx="470" cy="170" r="26" class="s-paper" stroke="#46624a" stroke-width="2"></circle>
+    <circle cx="470" cy="170" r="26" class="s-paper" stroke="#356f88" stroke-width="2"></circle>
     <text x="470" y="174" text-anchor="middle" class="s-pine" font-size="14" font-family="'Shippori Mincho',serif" font-weight="700">中泉町</text>
-    <g stroke="#d8c8ab" stroke-width="1.4" fill="none">
+    <g stroke="#cfe2ec" stroke-width="1.4" fill="none">
       <path d="M330 90 L435 95"></path><path d="M330 150 L435 165"></path>
       <path d="M250 120 L435 100"></path><path d="M270 190 L435 172"></path>
     </g>
-    <path d="M520 132 L600 132" stroke="#a6713e" stroke-width="1.6" fill="none" marker-end="url(#ar)"></path>
-    <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#a6713e"></path></marker></defs>
-    <rect x="618" y="98" width="96" height="70" rx="6" class="s-paper" stroke="#3a312a" stroke-width="2"></rect>
+    <path d="M520 132 L600 132" stroke="#2f7fa3" stroke-width="1.6" fill="none" marker-end="url(#ar)"></path>
+    <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#2f7fa3"></path></marker></defs>
+    <rect x="618" y="98" width="96" height="70" rx="6" class="s-paper" stroke="#1f3a48" stroke-width="2"></rect>
     <text x="666" y="130" text-anchor="middle" class="s-ink" font-size="17" font-family="'Shippori Mincho',serif" font-weight="800">磐田市</text>
     <text x="666" y="150" text-anchor="middle" class="s-soft" font-size="10.5">1948</text>
     <text x="666" y="210" text-anchor="middle" class="s-soft" font-size="11" font-family="'Shippori Mincho',serif">村 → 町 → 市</text>
@@ -434,25 +434,25 @@
 
 <footer class="im-foot">
 <style>
-.im-foot{background:#3a312a;color:#e9e0d2;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+.im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
 .im-foot *{box-sizing:border-box;}
 .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
 .im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-.im-foot .im-brand .im-dot{color:#a6713e;}
-.im-foot .im-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
+.im-foot .im-brand .im-dot{color:#2f7fa3;}
+.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
 .im-foot .im-links{width:100%;margin-top:6px;}
-.im-foot .im-lh{font-size:12px;color:#9c8f7c;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
 .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
 .im-foot .im-links li{font-size:13px;line-height:1.6;}
-.im-foot .im-links a{color:#d8cab4;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-.im-foot .im-links a:hover{color:#f3ece0;border-color:#e7c9a3;}
-.im-foot .im-desc{display:block;color:#9c8f7c;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
 .im-foot .im-sns{width:100%;margin-top:20px;}
 .im-foot .im-icons{display:flex;gap:14px;}
-.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#d8cab4;transition:.2s;}
-.im-foot .im-icons a:hover{color:#f3ece0;border-color:#e7c9a3;background:rgba(231,201,163,.08);}
+.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
+.im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
 .im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
-.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
+.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
 </style>
   <div class="im-inner">
     <div class="im-brand">磐田物語<span class="im-dot">。</span></div>

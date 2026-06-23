@@ -19,9 +19,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#f7f2e9;--paper-deep:#efe6d4;--ink:#3a312a;--ink-soft:#6b5d50;
-    --brown:#a6713e;--brown-deep:#85562c;--pine:#46624a;--line:#e0d4bd;
-    --card:#fffdf8;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+    --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
+    --brown:#2f7fa3;--brown-deep:#1f4f6f;--pine:#356f88;--line:#d8e8ef;
+    --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -108,30 +108,30 @@
   .article-nav a.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
   .article-nav a.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
 
-  footer.site{background:var(--ink);color:#e9e0d2;}
+  footer.site{background:var(--ink);color:#eaf4fa;}
   footer.site .inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
   footer .f-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
   footer .f-brand .dot{color:var(--brown);}
-  footer .f-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
-  footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
+  footer .f-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
   footer .links{width:100%;margin-top:6px;}
-  footer .links .lh{font-size:12px;color:#9c8f7c;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  footer .links .lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
   footer .links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
   footer .links li{font-size:13px;line-height:1.6;}
-  footer .links a{color:#d8cab4;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-  footer .links a:hover{color:#f3ece0;border-color:#e7c9a3;}
-  footer .links .desc{display:block;color:#9c8f7c;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  footer .links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  footer .links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  footer .links .desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
   footer .sns{width:100%;margin-top:20px;}
-  footer .sns .lh{font-size:12px;color:#9c8f7c;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  footer .sns .lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
   footer .sns .icons{display:flex;gap:14px;}
-  footer .sns a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#d8cab4;transition:.2s;}
-  footer .sns a:hover{color:#f3ece0;border-color:#e7c9a3;background:rgba(231,201,163,.08);}
+  footer .sns a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
+  footer .sns a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
   footer .sns svg{width:19px;height:19px;fill:currentColor;}
 
   /* SVG内の共通色 */
-  .s-paper{fill:#fffdf8;} .s-line{stroke:#d8c8ab;} .s-ink{fill:#3a312a;}
-  .s-brown{fill:#a6713e;} .s-pine{fill:#46624a;} .s-soft{fill:#6b5d50;}
-  .s-water{fill:#cdd9d2;}
+  .s-paper{fill:#fffdf7;} .s-line{stroke:#cfe2ec;} .s-ink{fill:#1f3a48;}
+  .s-brown{fill:#2f7fa3;} .s-pine{fill:#356f88;} .s-soft{fill:#5b6b74;}
+  .s-water{fill:#cfe2ec;}
 
   @media(max-width:760px){
     nav.menu{display:none;}
@@ -238,25 +238,25 @@
 
 <footer class="im-foot">
 <style>
-.im-foot{background:#3a312a;color:#e9e0d2;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+.im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
 .im-foot *{box-sizing:border-box;}
 .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
 .im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-.im-foot .im-brand .im-dot{color:#a6713e;}
-.im-foot .im-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
+.im-foot .im-brand .im-dot{color:#2f7fa3;}
+.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
 .im-foot .im-links{width:100%;margin-top:6px;}
-.im-foot .im-lh{font-size:12px;color:#9c8f7c;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
 .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
 .im-foot .im-links li{font-size:13px;line-height:1.6;}
-.im-foot .im-links a{color:#d8cab4;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-.im-foot .im-links a:hover{color:#f3ece0;border-color:#e7c9a3;}
-.im-foot .im-desc{display:block;color:#9c8f7c;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
 .im-foot .im-sns{width:100%;margin-top:20px;}
 .im-foot .im-icons{display:flex;gap:14px;}
-.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#d8cab4;transition:.2s;}
-.im-foot .im-icons a:hover{color:#f3ece0;border-color:#e7c9a3;background:rgba(231,201,163,.08);}
+.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
+.im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
 .im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
-.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
+.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
 </style>
   <div class="im-inner">
     <div class="im-brand">磐田物語<span class="im-dot">。</span></div>

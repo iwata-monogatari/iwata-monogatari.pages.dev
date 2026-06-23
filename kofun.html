@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  :root{--kinari:#f7f2e9;--cha:#a6713e;--brown-deep:#85562c;--matsu:#46624a;--sumi:#33312e;--usuzumi:#6b665e;--waku:#e4dccb;--paper:#fffdf8;}
+  :root{--kinari:#fffdf7;--cha:#2f7fa3;--brown-deep:#1f4f6f;--matsu:#356f88;--sumi:#22303a;--usuzumi:#5b6b74;--waku:#d8e8ef;--paper:#fffdf7;}
   *{box-sizing:border-box;margin:0;padding:0;}
   body{font-family:"Zen Kaku Gothic New",sans-serif;color:var(--sumi);background:var(--kinari);line-height:1.95;font-size:17px;-webkit-font-smoothing:antialiased;}
   a{color:var(--cha);text-decoration:none;}
@@ -27,16 +27,16 @@
   .site-inner{max-width:880px;margin:0 auto;padding:18px 22px;}
   .site-title{font-family:"Shippori Mincho",serif;font-weight:600;font-size:19px;color:#fff;display:block;letter-spacing:.04em;}
   .site-title small{display:block;font-size:12px;font-weight:400;opacity:.82;margin-top:3px;letter-spacing:.02em;}
-  nav.global{background:#3a5340;}
+  nav.global{background:#2c5566;}
   nav.global ul{max-width:880px;margin:0 auto;padding:0 22px;list-style:none;display:flex;flex-wrap:wrap;gap:4px 26px;}
-  nav.global a{color:#f1ece1;display:inline-block;padding:11px 0;font-size:14px;letter-spacing:.03em;}
+  nav.global a{color:#eef6fb;display:inline-block;padding:11px 0;font-size:14px;letter-spacing:.03em;}
   nav.global a:hover{color:#fff;text-decoration:none;}
   main{max-width:760px;margin:0 auto;padding:0 22px;}
   .crumb{font-size:13px;color:var(--usuzumi);padding:20px 0 6px;}
   .crumb a{color:var(--usuzumi);}
   .cat{display:inline-block;font-size:13px;color:var(--matsu);border-left:3px solid var(--cha);padding-left:9px;margin:18px 0 10px;letter-spacing:.04em;}
   h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:28px;line-height:1.5;color:var(--sumi);margin:6px 0 26px;letter-spacing:.02em;}
-  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#46423c;margin-bottom:30px;}
+  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#3a4750;margin-bottom:30px;}
   figure{margin:32px 0;}
   .fig-box{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:26px 20px;text-align:center;}
   figcaption{font-size:13.5px;color:var(--usuzumi);margin-top:12px;line-height:1.8;text-align:left;}
@@ -44,28 +44,28 @@
   .svg-label{fill:var(--sumi);}.svg-sub{fill:var(--usuzumi);}
   h2{font-family:"Shippori Mincho",serif;font-weight:600;font-size:22px;color:var(--matsu);margin:40px 0 16px;padding-bottom:9px;border-bottom:2px solid var(--waku);letter-spacing:.02em;}
   p{margin:0 0 20px;}
-  .note{background:#fbf7ee;border:1px solid var(--waku);border-left:3px solid var(--cha);border-radius:0 4px 4px 0;padding:16px 20px;font-size:14.5px;color:#4a453d;margin:24px 0;}
+  .note{background:#f4fafc;border:1px solid var(--waku);border-left:3px solid var(--cha);border-radius:0 4px 4px 0;padding:16px 20px;font-size:14.5px;color:#3a4750;margin:24px 0;}
   .note strong{color:var(--brown-deep);}
   h3{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--sumi);margin:30px 0 12px;}
-  .sourcebox{background:#f0ebe0;border:1px solid var(--waku);border-radius:4px;padding:20px 24px;margin:30px 0;font-size:14px;color:#4a453d;}
+  .sourcebox{background:#eef6fb;border:1px solid var(--waku);border-radius:4px;padding:20px 24px;margin:30px 0;font-size:14px;color:#3a4750;}
   .sourcebox h3{font-family:"Shippori Mincho",serif;font-size:16px;color:var(--matsu);margin:0 0 10px;}
   .sourcebox ul{margin:0 0 12px 1.3em;}
   .sourcebox li{margin-bottom:5px;line-height:1.7;}
   .sourcebox .disclaimer{font-size:13px;color:var(--usuzumi);border-top:1px dashed var(--waku);padding-top:12px;margin-top:4px;}
   .related{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 8px;}
   .related a{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:10px 15px;font-size:14px;color:var(--matsu);}
-  .related a:hover{background:#fbf7ee;text-decoration:none;}
+  .related a:hover{background:#f4fafc;text-decoration:none;}
   .pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 10px;flex-wrap:wrap;}
   .pager a{font-size:14px;}
   footer.site{background:var(--matsu);color:#eee;margin-top:54px;}
   .foot-inner{max-width:760px;margin:0 auto;padding:34px 22px;}
   .foot-inner .mincho{font-size:18px;color:#fff;display:block;margin-bottom:12px;}
-  .foot-inner p{font-size:13.5px;color:#dfe6df;line-height:1.85;margin-bottom:18px;}
-  .foot-inner h4{font-size:13px;color:#cdd8cd;font-weight:500;margin:16px 0 8px;letter-spacing:.05em;}
+  .foot-inner p{font-size:13.5px;color:#e9f3fa;line-height:1.85;margin-bottom:18px;}
+  .foot-inner h4{font-size:13px;color:#cfe2ec;font-weight:500;margin:16px 0 8px;letter-spacing:.05em;}
   .foot-links{list-style:none;}
   .foot-links li{margin-bottom:7px;font-size:14px;}
-  .foot-links a{color:#f1ece1;}
-  .copy{font-size:12px;color:#b9c5b9;margin-top:22px;}
+  .foot-links a{color:#eef6fb;}
+  .copy{font-size:12px;color:#a9c6d2;margin-top:22px;}
   @media(max-width:600px){h1{font-size:22px;}body{font-size:16px;}h2{font-size:19px;}}
 </style>
 </head>
@@ -107,7 +107,7 @@
   <figure>
     <div class="fig-box">
       <svg viewBox="0 0 520 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="磐田原台地と川と古墳の位置関係を示す図">
-        <rect x="0" y="0" width="520" height="240" fill="#fffdf8"/>
+        <rect x="0" y="0" width="520" height="240" fill="#fffdf7"/>
         <text x="260" y="26" text-anchor="middle" font-size="13" class="svg-label">地形と古墳の位置関係（模式図）</text>
         <!-- 天竜川 -->
         <path d="M70 40 Q88 120 60 210" fill="none" stroke="#acc4d4" stroke-width="10" stroke-linecap="round"/>
@@ -116,14 +116,14 @@
         <path d="M450 45 Q435 130 460 215" fill="none" stroke="#acc4d4" stroke-width="7" stroke-linecap="round"/>
         <text x="455" y="38" text-anchor="middle" font-size="10" fill="#5a7a8c">太田川</text>
         <!-- 台地 -->
-        <ellipse cx="260" cy="120" rx="150" ry="68" fill="#e4dccb"/>
-        <text x="260" y="100" text-anchor="middle" font-size="13" fill="#85562c">磐田原台地</text>
+        <ellipse cx="260" cy="120" rx="150" ry="68" fill="#d8e8ef"/>
+        <text x="260" y="100" text-anchor="middle" font-size="13" fill="#1f4f6f">磐田原台地</text>
         <text x="260" y="120" text-anchor="middle" font-size="10" class="svg-sub">周囲より一段高い・水害に強い</text>
         <!-- 古墳（台地の縁） -->
-        <g fill="#46624a">
-          <circle cx="135" cy="95" r="7"/><text x="135" y="82" text-anchor="middle" font-size="9" fill="#46624a">銚子塚（西縁）</text>
-          <circle cx="380" cy="100" r="6"/><text x="392" y="92" text-anchor="middle" font-size="9" fill="#46624a">新豊院山（東）</text>
-          <circle cx="300" cy="175" r="6"/><text x="300" y="195" text-anchor="middle" font-size="9" fill="#46624a">御厨（南・平野部）</text>
+        <g fill="#356f88">
+          <circle cx="135" cy="95" r="7"/><text x="135" y="82" text-anchor="middle" font-size="9" fill="#356f88">銚子塚（西縁）</text>
+          <circle cx="380" cy="100" r="6"/><text x="392" y="92" text-anchor="middle" font-size="9" fill="#356f88">新豊院山（東）</text>
+          <circle cx="300" cy="175" r="6"/><text x="300" y="195" text-anchor="middle" font-size="9" fill="#356f88">御厨（南・平野部）</text>
         </g>
         <!-- 海 -->
         <rect x="0" y="222" width="520" height="18" fill="#cfe0ea"/>
@@ -191,25 +191,25 @@
 
 <footer class="im-foot">
 <style>
-.im-foot{background:#3a312a;color:#e9e0d2;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+.im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
 .im-foot *{box-sizing:border-box;}
 .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
 .im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-.im-foot .im-brand .im-dot{color:#a6713e;}
-.im-foot .im-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
+.im-foot .im-brand .im-dot{color:#2f7fa3;}
+.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
 .im-foot .im-links{width:100%;margin-top:6px;}
-.im-foot .im-lh{font-size:12px;color:#9c8f7c;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
 .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
 .im-foot .im-links li{font-size:13px;line-height:1.6;}
-.im-foot .im-links a{color:#d8cab4;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-.im-foot .im-links a:hover{color:#f3ece0;border-color:#e7c9a3;}
-.im-foot .im-desc{display:block;color:#9c8f7c;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
 .im-foot .im-sns{width:100%;margin-top:20px;}
 .im-foot .im-icons{display:flex;gap:14px;}
-.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#d8cab4;transition:.2s;}
-.im-foot .im-icons a:hover{color:#f3ece0;border-color:#e7c9a3;background:rgba(231,201,163,.08);}
+.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
+.im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
 .im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
-.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
+.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
 </style>
   <div class="im-inner">
     <div class="im-brand">磐田物語<span class="im-dot">。</span></div>

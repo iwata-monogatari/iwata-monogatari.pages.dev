@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  :root{--kinari:#f7f2e9;--cha:#a6713e;--matsu:#46624a;--sumi:#33312e;--usuzumi:#6b665e;--waku:#e4dccb;--paper:#fffdf8;}
+  :root{--kinari:#fffdf7;--cha:#2f7fa3;--matsu:#356f88;--sumi:#22303a;--usuzumi:#5b6b74;--waku:#d8e8ef;--paper:#fffdf7;}
   *{box-sizing:border-box;margin:0;padding:0;}
   body{font-family:"Zen Kaku Gothic New",sans-serif;color:var(--sumi);background:var(--kinari);line-height:1.95;font-size:17px;-webkit-font-smoothing:antialiased;}
   a{color:var(--cha);text-decoration:none;}
@@ -27,18 +27,18 @@
   .site-inner{max-width:880px;margin:0 auto;padding:18px 22px;}
   .site-title{font-family:"Shippori Mincho",serif;font-weight:600;font-size:19px;color:#fff;display:block;letter-spacing:.04em;}
   .site-title small{display:block;font-size:12px;font-weight:400;opacity:.82;margin-top:3px;letter-spacing:.02em;}
-  nav.global{background:#3a5340;}
+  nav.global{background:#2c5566;}
   nav.global ul{max-width:880px;margin:0 auto;padding:0 22px;list-style:none;display:flex;flex-wrap:wrap;gap:4px 26px;}
-  nav.global a{color:#f1ece1;display:inline-block;padding:11px 0;font-size:14px;letter-spacing:.03em;}
+  nav.global a{color:#eef6fb;display:inline-block;padding:11px 0;font-size:14px;letter-spacing:.03em;}
   nav.global a:hover{color:#fff;text-decoration:none;}
   main{max-width:760px;margin:0 auto;padding:0 22px;}
   .crumb{font-size:13px;color:var(--usuzumi);padding:20px 0 6px;}
   .crumb a{color:var(--usuzumi);}
   .cat{display:inline-block;font-size:13px;color:var(--matsu);border-left:3px solid var(--cha);padding-left:9px;margin:18px 0 10px;letter-spacing:.04em;}
   h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:30px;line-height:1.5;color:var(--sumi);margin:6px 0 28px;letter-spacing:.02em;}
-  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#46423c;margin-bottom:30px;}
-  .note{background:#fbf7ee;border:1px solid var(--waku);border-left:3px solid var(--cha);border-radius:0 4px 4px 0;padding:16px 20px;font-size:14.5px;color:#4a453d;margin:24px 0;}
-  .note strong{color:var(--brown-deep,#85562c);}
+  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#3a4750;margin-bottom:30px;}
+  .note{background:#f4fafc;border:1px solid var(--waku);border-left:3px solid var(--cha);border-radius:0 4px 4px 0;padding:16px 20px;font-size:14.5px;color:#3a4750;margin:24px 0;}
+  .note strong{color:var(--brown-deep,#1f4f6f);}
   figure{margin:32px 0;}
   .fig-box{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:26px 20px;text-align:center;}
   figcaption{font-size:13.5px;color:var(--usuzumi);margin-top:12px;line-height:1.8;text-align:left;}
@@ -55,7 +55,7 @@
   .infobox dl>div{display:contents;}
   .children{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
   .children a{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:18px 20px;display:block;}
-  .children a:hover{background:#fbf7ee;text-decoration:none;border-color:var(--cha);}
+  .children a:hover{background:#f4fafc;text-decoration:none;border-color:var(--cha);}
   .children .ch-num{font-family:"Shippori Mincho",serif;font-size:13px;color:var(--cha);font-weight:700;letter-spacing:.08em;}
   .children .ch-ttl{font-family:"Shippori Mincho",serif;font-size:17px;color:var(--sumi);font-weight:600;display:block;margin:5px 0 6px;}
   .children .ch-desc{font-size:13px;color:var(--usuzumi);line-height:1.7;}
@@ -65,18 +65,18 @@
   .refs h4{font-size:14px;color:var(--matsu);font-weight:700;margin:16px 0 8px;}
   .related{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 8px;}
   .related a{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:10px 15px;font-size:14px;color:var(--matsu);}
-  .related a:hover{background:#fbf7ee;text-decoration:none;}
+  .related a:hover{background:#f4fafc;text-decoration:none;}
   .pager{display:flex;justify-content:space-between;gap:12px;margin:40px 0 10px;flex-wrap:wrap;}
   .pager a{font-size:14px;}
   footer.site{background:var(--matsu);color:#eee;margin-top:54px;}
   .foot-inner{max-width:760px;margin:0 auto;padding:34px 22px;}
   .foot-inner .mincho{font-size:18px;color:#fff;display:block;margin-bottom:12px;}
-  .foot-inner p{font-size:13.5px;color:#dfe6df;line-height:1.85;margin-bottom:18px;}
-  .foot-inner h4{font-size:13px;color:#cdd8cd;font-weight:500;margin:16px 0 8px;letter-spacing:.05em;}
+  .foot-inner p{font-size:13.5px;color:#e9f3fa;line-height:1.85;margin-bottom:18px;}
+  .foot-inner h4{font-size:13px;color:#cfe2ec;font-weight:500;margin:16px 0 8px;letter-spacing:.05em;}
   .foot-links{list-style:none;}
   .foot-links li{margin-bottom:7px;font-size:14px;}
-  .foot-links a{color:#f1ece1;}
-  .copy{font-size:12px;color:#b9c5b9;margin-top:22px;}
+  .foot-links a{color:#eef6fb;}
+  .copy{font-size:12px;color:#a9c6d2;margin-top:22px;}
   @media(max-width:600px){h1{font-size:24px;}body{font-size:16px;}h2{font-size:19px;}.children{grid-template-columns:1fr;}.infobox dl{grid-template-columns:1fr;}.infobox dt{border-bottom:none;padding-bottom:0;}}
 </style>
 </head>
@@ -139,35 +139,35 @@
   <figure>
     <div class="fig-box">
       <svg viewBox="0 0 520 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="見付天神裸祭の全体構造を示す図">
-        <rect x="0" y="0" width="520" height="250" fill="#fffdf8"/>
+        <rect x="0" y="0" width="520" height="250" fill="#fffdf7"/>
         <text x="260" y="28" text-anchor="middle" font-size="13" class="svg-label">見付天神裸祭の全体構造</text>
         <!-- 準備神事 -->
-        <rect x="30" y="50" width="150" height="160" rx="5" fill="#e4dccb"/>
-        <text x="105" y="74" text-anchor="middle" font-size="12" fill="#46624a">①祓いと清め</text>
+        <rect x="30" y="50" width="150" height="160" rx="5" fill="#d8e8ef"/>
+        <text x="105" y="74" text-anchor="middle" font-size="12" fill="#356f88">①祓いと清め</text>
         <text x="105" y="98" text-anchor="middle" font-size="10" class="svg-sub">祭事始</text>
         <text x="105" y="118" text-anchor="middle" font-size="10" class="svg-sub">御斯葉下ろし</text>
         <text x="105" y="138" text-anchor="middle" font-size="10" class="svg-sub">浜垢離</text>
         <text x="105" y="158" text-anchor="middle" font-size="10" class="svg-sub">御池の清祓い</text>
         <text x="105" y="186" text-anchor="middle" font-size="9" class="svg-sub">（約8日前から）</text>
         <!-- 鬼踊り -->
-        <rect x="195" y="50" width="130" height="160" rx="5" fill="#a6713e"/>
+        <rect x="195" y="50" width="130" height="160" rx="5" fill="#2f7fa3"/>
         <text x="260" y="74" text-anchor="middle" font-size="12" fill="#fff">②鬼踊り</text>
-        <text x="260" y="98" text-anchor="middle" font-size="10" fill="#f3e7da">腰蓑の裸衆が</text>
-        <text x="260" y="116" text-anchor="middle" font-size="10" fill="#f3e7da">拝殿に堂入り</text>
-        <text x="260" y="136" text-anchor="middle" font-size="10" fill="#f3e7da">乱舞して場を</text>
-        <text x="260" y="154" text-anchor="middle" font-size="10" fill="#f3e7da">清める</text>
-        <text x="260" y="186" text-anchor="middle" font-size="9" fill="#f3e7da">（大祭の夜）</text>
+        <text x="260" y="98" text-anchor="middle" font-size="10" fill="#e9f3fa">腰蓑の裸衆が</text>
+        <text x="260" y="116" text-anchor="middle" font-size="10" fill="#e9f3fa">拝殿に堂入り</text>
+        <text x="260" y="136" text-anchor="middle" font-size="10" fill="#e9f3fa">乱舞して場を</text>
+        <text x="260" y="154" text-anchor="middle" font-size="10" fill="#e9f3fa">清める</text>
+        <text x="260" y="186" text-anchor="middle" font-size="9" fill="#e9f3fa">（大祭の夜）</text>
         <!-- 渡御 -->
-        <rect x="340" y="50" width="150" height="160" rx="5" fill="#46624a"/>
+        <rect x="340" y="50" width="150" height="160" rx="5" fill="#356f88"/>
         <text x="415" y="74" text-anchor="middle" font-size="12" fill="#fff">③闇の渡御</text>
-        <text x="415" y="98" text-anchor="middle" font-size="10" fill="#dfe6df">全戸消灯</text>
-        <text x="415" y="118" text-anchor="middle" font-size="10" fill="#dfe6df">漆黒の闇のなか</text>
-        <text x="415" y="138" text-anchor="middle" font-size="10" fill="#dfe6df">氏神が総社へ</text>
-        <text x="415" y="158" text-anchor="middle" font-size="10" fill="#dfe6df">渡御・還御</text>
-        <text x="415" y="186" text-anchor="middle" font-size="9" fill="#dfe6df">（神事の核心）</text>
+        <text x="415" y="98" text-anchor="middle" font-size="10" fill="#e9f3fa">全戸消灯</text>
+        <text x="415" y="118" text-anchor="middle" font-size="10" fill="#e9f3fa">漆黒の闇のなか</text>
+        <text x="415" y="138" text-anchor="middle" font-size="10" fill="#e9f3fa">氏神が総社へ</text>
+        <text x="415" y="158" text-anchor="middle" font-size="10" fill="#e9f3fa">渡御・還御</text>
+        <text x="415" y="186" text-anchor="middle" font-size="9" fill="#e9f3fa">（神事の核心）</text>
         <!-- 矢印 -->
-        <text x="187" y="135" text-anchor="middle" font-size="16" fill="#a6713e">→</text>
-        <text x="332" y="135" text-anchor="middle" font-size="16" fill="#46624a">→</text>
+        <text x="187" y="135" text-anchor="middle" font-size="16" fill="#2f7fa3">→</text>
+        <text x="332" y="135" text-anchor="middle" font-size="16" fill="#356f88">→</text>
       </svg>
       <figcaption>見付天神裸祭は、長い祓いと清め（①）、鬼踊りによる場の浄め（②）、そして漆黒の闇のなかの総社への渡御（③）という流れをもつ。鬼踊りは祭りの華だが、全体は「神を清浄な状態でお渡しする」ための神事である。（構造をもとにした模式図）</figcaption>
     </div>
@@ -243,25 +243,25 @@
 
 <footer class="im-foot">
 <style>
-.im-foot{background:#3a312a;color:#e9e0d2;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+.im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
 .im-foot *{box-sizing:border-box;}
 .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
 .im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-.im-foot .im-brand .im-dot{color:#a6713e;}
-.im-foot .im-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
+.im-foot .im-brand .im-dot{color:#2f7fa3;}
+.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
 .im-foot .im-links{width:100%;margin-top:6px;}
-.im-foot .im-lh{font-size:12px;color:#9c8f7c;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
 .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
 .im-foot .im-links li{font-size:13px;line-height:1.6;}
-.im-foot .im-links a{color:#d8cab4;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-.im-foot .im-links a:hover{color:#f3ece0;border-color:#e7c9a3;}
-.im-foot .im-desc{display:block;color:#9c8f7c;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
 .im-foot .im-sns{width:100%;margin-top:20px;}
 .im-foot .im-icons{display:flex;gap:14px;}
-.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#d8cab4;transition:.2s;}
-.im-foot .im-icons a:hover{color:#f3ece0;border-color:#e7c9a3;background:rgba(231,201,163,.08);}
+.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
+.im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
 .im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
-.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
+.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
 </style>
   <div class="im-inner">
     <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
