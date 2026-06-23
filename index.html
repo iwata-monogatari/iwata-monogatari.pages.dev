@@ -3,443 +3,607 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>磐田物語 ｜ 佐口行正氏所蔵史料と、遠江・見付のまちの記憶</title>
-<meta name="description" content="見付の旧家・佐口行正氏が所蔵する引札・浮世絵・古地図・絵葉書など約336点の史料を中心に、静岡県磐田市の歴史と文化を一市民の視点でたどる記録の場。佐口行正氏のご厚意により公開しています。">
-<meta property="og:title" content="磐田物語 ｜ 佐口行正氏所蔵史料と、遠江・見付のまちの記憶">
-<meta property="og:description" content="佐口行正氏所蔵の引札・浮世絵・絵葉書など約336点の史料を中心に、磐田・見付のまちの記憶をたどります。">
+<title>磐田物語 ｜ 磐田の歴史・文化・地名・古写真を後世へ伝える地域史アーカイブ</title>
+<meta name="description" content="磐田物語は、静岡県磐田市に残る歴史、文化、地名、古写真、古地図、祭り、地域の記憶を整理し、未来へ伝えていくための地域史サイトです。見付・旧豊田町・掛塚・中泉・池田・二之宮ほか、地域とテーマから磐田の歴史をたどれます。">
+<meta property="og:title" content="磐田物語 ｜ 磐田の歴史・文化・地名・古写真を後世へ伝える地域史アーカイブ">
+<meta property="og:description" content="磐田市の歴史・文化・地名・古写真・古地図・祭り・地域の記憶を整理し、未来へ伝える地域史サイト。">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="saguchi/img/hk-3.jpg">
+<meta property="og:image" content="https://iwata-monogatari.pages.dev/hero-mitsuke.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --paper:#f7f2e9; --paper-deep:#efe6d4; --ink:#3a312a; --ink-soft:#6b5d50;
-    --brown:#a6713e; --brown-deep:#85562c; --pine:#46624a; --vermil:#b3503a;
-    --line:#e0d4bd; --card:#fffdf8;
-    --shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
-    --shadow-lg:0 4px 12px rgba(80,60,40,.10),0 18px 50px rgba(80,60,40,.14);
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;font-size:17px;letter-spacing:.02em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
-  .mincho{font-family:"Shippori Mincho",serif;}
-  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle at 20% 30%, rgba(166,113,62,.04) 0, transparent 38%),radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);}
-  a{color:var(--brown-deep);text-underline-offset:3px;}
-  img{display:block;max-width:100%;}
+:root{
+  --paper:#f5efe2;
+  --paper-2:#efe7d6;
+  --card:#fffdf8;
+  --ink:#23282c;
+  --ink-soft:#4d4a44;
+  --muted:#7c756a;
+  --line:#e3d9c3;
+  --line-soft:#ece3d0;
+  --indigo:#2e4859;
+  --indigo-deep:#21323d;
+  --akane:#9c4334;
+  --akane-soft:#b15a48;
+  --gold:#b3893c;
+  --gold-soft:#caa45a;
+  --shadow:0 1px 2px rgba(40,33,20,.05),0 8px 26px rgba(40,33,20,.07);
+  --radius:14px;
+  --maxw:1140px;
+  --serif:"Shippori Mincho","Noto Serif JP",serif;
+  --sans:"Noto Sans JP",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--sans);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.85;
+  font-size:16px;
+  letter-spacing:.01em;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.serif{font-family:var(--serif)}
 
-  header.site{background:rgba(255,253,248,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;}
-  .bar{max-width:1100px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
-  .brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;}
-  .brand .logo{font-family:"Shippori Mincho",serif;font-weight:800;font-size:25px;color:var(--ink);letter-spacing:.06em;}
-  .brand .logo .dot{color:var(--brown);}
-  .brand .tag{font-size:12px;color:var(--ink-soft);letter-spacing:.08em;}
-  nav.menu{display:flex;gap:20px;flex-wrap:wrap;}
-  nav.menu a{text-decoration:none;color:var(--ink-soft);font-size:14px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;white-space:nowrap;}
-  nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
-  nav.menu a.lead{color:var(--vermil);font-weight:700;}
+/* ---------- Header ---------- */
+header.site{
+  position:sticky;top:0;z-index:50;
+  background:rgba(245,239,226,.93);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:62px}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.32rem;letter-spacing:.16em;color:var(--indigo-deep)}
+.brand span{display:block;font-family:var(--sans);font-weight:500;font-size:.6rem;letter-spacing:.32em;color:var(--gold);margin-top:1px}
+.nav-links{display:flex;gap:24px;font-size:.86rem;font-weight:500;letter-spacing:.06em}
+.nav-links a{color:var(--ink-soft);padding:6px 0;border-bottom:2px solid transparent;transition:.2s}
+.nav-links a:hover{color:var(--akane);border-color:var(--gold-soft)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:.8rem;color:var(--ink-soft);cursor:pointer}
 
-  /* ===== ヒーロー：佐口史料 ===== */
-  .feature{background:linear-gradient(180deg,#fffaf0 0%, var(--paper) 100%);border-bottom:1px solid var(--line);}
-  .feature .inner{max-width:1100px;margin:0 auto;padding:60px 24px 56px;display:grid;grid-template-columns:1.05fr 1fr;gap:52px;align-items:center;}
-  .feature .eyebrow{font-size:12.5px;letter-spacing:.2em;color:var(--vermil);font-weight:700;margin:0 0 18px;display:flex;align-items:center;gap:10px;}
-  .feature .eyebrow::before{content:"";width:30px;height:2px;background:var(--vermil);display:inline-block;}
-  .feature h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:clamp(30px,4.6vw,46px);line-height:1.4;margin:0 0 22px;color:var(--ink);letter-spacing:.03em;}
-  .feature h1 .accent{background:linear-gradient(transparent 60%, rgba(179,80,58,.18) 60%);}
-  .feature .lead{font-size:16.5px;color:var(--ink-soft);margin:0 0 18px;line-height:2.0;}
-  .feature .credit{font-size:13px;color:var(--ink-soft);background:var(--card);border:1px solid var(--line);border-left:3px solid var(--brown);border-radius:2px;padding:12px 16px;margin:0 0 26px;line-height:1.8;}
-  .feature .cta-row{display:flex;flex-wrap:wrap;gap:13px;}
-  .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:13px 26px;border-radius:2px;transition:.2s;letter-spacing:.04em;}
-  .btn.primary{background:var(--vermil);color:#fff;box-shadow:0 6px 18px rgba(179,80,58,.25);}
-  .btn.primary:hover{background:#9c4330;}
-  .btn.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
-  .btn.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;
+  padding:74px 0 58px;
+  background:
+    linear-gradient(180deg,rgba(245,239,226,.55),rgba(245,239,226,.9) 70%,var(--paper)),
+    radial-gradient(120% 90% at 78% 8%,rgba(46,72,89,.16),transparent 60%),
+    radial-gradient(90% 80% at 12% 100%,rgba(156,67,52,.10),transparent 60%),
+    var(--paper-2);
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+.hero .wrap{position:relative;z-index:2}
+.kicker{
+  display:inline-block;font-size:.72rem;letter-spacing:.34em;color:var(--gold);
+  font-weight:700;border:1px solid var(--line);background:rgba(255,253,248,.6);
+  padding:6px 14px;border-radius:999px;margin-bottom:22px;
+}
+.hero h1{
+  font-family:var(--serif);font-weight:800;color:var(--indigo-deep);
+  font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.12;letter-spacing:.06em;
+}
+.hero .sub{
+  font-family:var(--serif);font-weight:600;color:var(--akane);
+  font-size:clamp(1rem,2.3vw,1.32rem);margin-top:18px;letter-spacing:.04em;line-height:1.6;
+}
+.hero .lede{max-width:640px;margin:18px 0 0;color:var(--ink-soft);font-size:1rem}
 
-  /* モザイク */
-  .mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,118px);gap:12px;}
-  .mosaic figure{margin:0;overflow:hidden;border-radius:4px;box-shadow:var(--shadow-lg);background:var(--card);}
-  .mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
-  .mosaic figure:hover img{transform:scale(1.06);}
-  .mosaic .tall{grid-row:span 2;}
-  .mosaic .wide{grid-column:span 2;}
+/* ---------- Search ---------- */
+.search-block{margin-top:34px;max-width:720px}
+.search-label{font-family:var(--serif);font-weight:600;font-size:1.02rem;color:var(--ink);margin-bottom:10px;display:flex;align-items:center;gap:9px}
+.search-label::before{content:"";width:7px;height:18px;background:var(--gold);border-radius:2px;display:inline-block}
+.search-box{position:relative}
+#search-input{
+  width:100%;font-family:var(--sans);font-size:1rem;color:var(--ink);
+  background:var(--card);border:1.5px solid var(--line);border-radius:12px;
+  padding:15px 18px 15px 46px;box-shadow:var(--shadow);outline:none;transition:.2s;
+}
+#search-input:focus{border-color:var(--indigo);box-shadow:0 0 0 3px rgba(46,72,89,.12)}
+.search-ico{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:1.1rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{
+  font-size:.78rem;color:var(--ink-soft);background:rgba(255,253,248,.7);
+  border:1px solid var(--line);border-radius:999px;padding:5px 13px;cursor:pointer;transition:.2s;
+}
+.chip:hover{background:var(--indigo);color:#fff;border-color:var(--indigo)}
+#search-results{
+  list-style:none;margin-top:12px;background:var(--card);border:1px solid var(--line);
+  border-radius:12px;box-shadow:var(--shadow);overflow:hidden;display:none;
+}
+#search-results.show{display:block}
+#search-results li a{display:flex;justify-content:space-between;gap:12px;padding:12px 18px;border-bottom:1px solid var(--line-soft);transition:.15s}
+#search-results li:last-child a{border-bottom:none}
+#search-results li a:hover{background:var(--paper-2)}
+#search-results .r-title{font-weight:500}
+#search-results .r-tag{font-size:.74rem;color:var(--muted);white-space:nowrap;align-self:center}
+#search-results .empty{padding:14px 18px;color:var(--muted);font-size:.88rem}
 
-  /* ===== 見どころギャラリー ===== */
-  .gallery{max-width:1100px;margin:0 auto;padding:62px 24px 8px;}
-  .sec-head{margin:0 0 28px;}
-  .sec-head .eyebrow{font-size:12.5px;letter-spacing:.2em;color:var(--pine);font-weight:700;margin:0 0 10px;}
-  .sec-head h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:27px;margin:0;color:var(--ink);letter-spacing:.04em;}
-  .sec-head .desc{margin:12px 0 0;color:var(--ink-soft);font-size:15px;max-width:760px;line-height:1.9;}
-  .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-  .gal-item{position:relative;display:block;overflow:hidden;border-radius:4px;box-shadow:var(--shadow);background:var(--card);text-decoration:none;color:inherit;aspect-ratio:4/3;}
-  .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .55s;}
-  .gal-item:hover img{transform:scale(1.07);}
-  .gal-item figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px 14px 11px;color:#fff;font-size:12.5px;line-height:1.5;background:linear-gradient(transparent,rgba(40,28,18,.82));}
-  .gal-item figcaption b{font-family:"Shippori Mincho",serif;font-weight:700;font-size:13.5px;display:block;margin-bottom:1px;}
-  .gal-cat{position:absolute;top:10px;left:10px;background:rgba(179,80,58,.92);color:#fff;font-size:11px;font-weight:700;letter-spacing:.04em;padding:3px 10px;border-radius:2px;}
+/* ---------- Section frame ---------- */
+section.band{padding:64px 0}
+section.alt{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-head{margin-bottom:30px}
+.sec-en{font-size:.72rem;letter-spacing:.3em;color:var(--gold);font-weight:700;display:block;margin-bottom:8px}
+.sec-title{font-family:var(--serif);font-weight:700;color:var(--indigo-deep);font-size:clamp(1.5rem,3.4vw,2.1rem);letter-spacing:.04em}
+.sec-desc{color:var(--ink-soft);margin-top:12px;max-width:760px}
 
-  /* ===== 佐口・2枚カード ===== */
-  .pri{max-width:1100px;margin:0 auto;padding:34px 24px 6px;}
-  .pri-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
-  a.pcard{display:flex;gap:18px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:18px;box-shadow:var(--shadow);text-decoration:none;color:inherit;transition:.2s;}
-  a.pcard:hover{transform:translateY(-3px);border-color:var(--brown);}
-  a.pcard .thumb{width:96px;height:96px;flex:0 0 96px;border-radius:3px;overflow:hidden;}
-  a.pcard .thumb img{width:100%;height:100%;object-fit:cover;}
-  a.pcard h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:18px;margin:0 0 6px;color:var(--ink);}
-  a.pcard p{margin:0;font-size:13px;color:var(--ink-soft);line-height:1.75;}
-  a.pcard .go{display:inline-block;margin-top:9px;font-size:12.5px;color:var(--vermil);font-weight:700;}
+/* ---------- Cards grid ---------- */
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 22px;box-shadow:var(--shadow);transition:.22s;display:flex;flex-direction:column;height:100%;
+}
+a.card:hover{transform:translateY(-3px);border-color:var(--gold-soft);box-shadow:0 14px 34px rgba(40,33,20,.13)}
+.card .badge{font-size:.7rem;letter-spacing:.14em;color:var(--akane);font-weight:700;margin-bottom:9px;display:inline-flex;align-items:center;gap:7px}
+.card h3{font-family:var(--serif);font-weight:700;font-size:1.16rem;color:var(--ink);line-height:1.45;letter-spacing:.02em}
+.card p{color:var(--ink-soft);font-size:.9rem;margin-top:10px;flex:1}
+.card .more{margin-top:14px;font-size:.84rem;font-weight:600;color:var(--indigo);letter-spacing:.04em}
+a.card:hover .more{color:var(--akane)}
 
-  /* ===== このサイトについて ===== */
-  .about{background:var(--paper-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:56px;}
-  .about .inner{max-width:1100px;margin:0 auto;padding:54px 24px;display:grid;grid-template-columns:300px 1fr;gap:46px;align-items:center;}
-  .about .ph{border-radius:4px;overflow:hidden;box-shadow:var(--shadow-lg);}
-  .about .ph img{width:100%;height:220px;object-fit:cover;}
-  .about .ph .cap{font-size:11.5px;color:var(--ink-soft);background:var(--card);padding:7px 12px;}
-  .about .label{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;color:var(--ink);margin:0 0 14px;}
-  .about .label .en{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:11px;letter-spacing:.2em;color:var(--brown);font-weight:700;margin-top:6px;}
-  .about p{margin:0 0 16px;color:var(--ink);font-size:16px;}
-  .about p:last-child{margin-bottom:0;}
+/* featured (新着) */
+.feature .card{position:relative;overflow:hidden;border-top:3px solid var(--akane)}
+.feature .num{position:absolute;top:-10px;right:6px;font-family:var(--serif);font-weight:800;font-size:4.4rem;color:rgba(156,67,52,.08);line-height:1}
 
-  /* ===== コンテンツ・セクション ===== */
-  .section{max-width:1100px;margin:0 auto;padding:56px 24px 6px;scroll-margin-top:74px;}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-  a.card{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:24px 22px;box-shadow:var(--shadow);transition:.22s;text-decoration:none;color:inherit;display:block;}
-  a.card:hover{transform:translateY(-3px);border-color:var(--brown);}
-  a.card .num{font-family:"Shippori Mincho",serif;font-size:12.5px;color:var(--brown);font-weight:700;letter-spacing:.08em;}
-  a.card h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:17px;margin:7px 0 9px;color:var(--ink);line-height:1.5;}
-  a.card p{margin:0;font-size:13px;color:var(--ink-soft);line-height:1.78;}
-  a.card .go{display:inline-block;margin-top:11px;font-size:12.5px;color:var(--brown-deep);font-weight:700;}
-  .badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;padding:2px 9px;border-radius:2px;margin-bottom:9px;}
-  .badge.tool{background:#eaf0ea;color:var(--pine);}
-  .badge.feature{background:rgba(179,80,58,.14);color:var(--vermil);}
+/* ---------- Region & theme tiles ---------- */
+.tiles{display:grid;gap:12px;grid-template-columns:repeat(4,1fr)}
+.tile{
+  background:var(--card);border:1px solid var(--line);border-radius:11px;
+  padding:18px 16px;box-shadow:var(--shadow);transition:.2s;display:flex;flex-direction:column;gap:5px;min-height:84px;justify-content:center;
+}
+a.tile:hover{transform:translateY(-2px);border-color:var(--gold-soft);box-shadow:0 12px 28px rgba(40,33,20,.12)}
+.tile .t-name{font-family:var(--serif);font-weight:700;font-size:1.05rem;color:var(--ink);letter-spacing:.04em}
+.tile .t-sub{font-size:.76rem;color:var(--muted)}
+.tile.lead{border-color:var(--akane-soft);background:linear-gradient(180deg,#fff,rgba(177,90,72,.06))}
+.tile.lead .t-name{color:var(--akane)}
+.note{margin-top:16px;font-size:.8rem;color:var(--muted)}
 
-  .series-sec{background:var(--paper-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:40px;}
-  .series-intro{max-width:760px;margin:0 0 26px;color:var(--ink-soft);font-size:15px;line-height:2;}
+.theme-tiles{display:flex;flex-wrap:wrap;gap:10px}
+.theme-tiles a{
+  font-family:var(--serif);font-weight:600;font-size:.98rem;color:var(--indigo-deep);
+  background:var(--card);border:1px solid var(--line);border-radius:999px;
+  padding:11px 20px;box-shadow:var(--shadow);transition:.2s;letter-spacing:.04em;
+}
+.theme-tiles a:hover{background:var(--indigo);color:#fff;border-color:var(--indigo)}
 
-  footer.site{background:var(--ink);color:#e9e0d2;margin-top:60px;}
-  footer.site .inner{max-width:1100px;margin:0 auto;padding:42px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:22px;align-items:flex-end;}
-  footer .f-brand{font-family:"Shippori Mincho",serif;font-size:21px;font-weight:700;letter-spacing:.06em;}
-  footer .f-brand .dot{color:var(--brown);}
-  footer .f-note{font-size:12.5px;color:#b8ab98;line-height:1.9;max-width:560px;}
-  footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:12px;color:#9c8f7c;letter-spacing:.04em;}
+/* ---------- Saguchi feature ---------- */
+.saguchi{
+  background:linear-gradient(115deg,var(--indigo-deep),var(--indigo));
+  color:#f3ede0;border-radius:18px;padding:46px 40px;box-shadow:var(--shadow);
+  display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center;
+}
+.saguchi .s-en{font-size:.72rem;letter-spacing:.3em;color:var(--gold-soft);font-weight:700}
+.saguchi h2{font-family:var(--serif);font-weight:700;font-size:clamp(1.5rem,3vw,2rem);margin:10px 0 14px;letter-spacing:.05em;color:#fff}
+.saguchi p{color:#ded5c4;font-size:.95rem}
+.saguchi .btns{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.9rem;letter-spacing:.04em;
+  padding:12px 24px;border-radius:999px;transition:.2s;
+}
+.btn-gold{background:var(--gold);color:#241c0c}
+.btn-gold:hover{background:var(--gold-soft)}
+.btn-ghost{border:1px solid rgba(255,253,248,.4);color:#f3ede0}
+.btn-ghost:hover{background:rgba(255,253,248,.12)}
+.saguchi .s-imgs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.saguchi .s-imgs img{border-radius:10px;height:130px;width:100%;object-fit:cover;border:2px solid rgba(255,253,248,.18)}
+.saguchi .s-imgs img:first-child{grid-column:1/3;height:150px}
 
-  @media(max-width:860px){
-    nav.menu{display:none;}
-    .feature .inner{grid-template-columns:1fr;gap:34px;}
-    .about .inner{grid-template-columns:1fr;gap:22px;}
-    .pri-grid{grid-template-columns:1fr;}
-  }
-  @media(max-width:600px){
-    .gal-grid{grid-template-columns:1fr 1fr;}
-    .grid{grid-template-columns:1fr;}
-    .mosaic{grid-template-rows:repeat(3,98px);}
-  }
+/* ---------- Buildings ---------- */
+.buildings{background:linear-gradient(180deg,var(--paper),var(--paper-2))}
+.cat-chips{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}
+.cat-chips span{
+  font-family:var(--serif);font-weight:600;font-size:.92rem;color:var(--ink-soft);
+  background:var(--card);border:1px dashed var(--gold-soft);border-radius:8px;padding:9px 16px;
+}
+
+/* ---------- Land & home memory ---------- */
+.memory{background:var(--indigo-deep);color:#ece4d4}
+.memory .sec-en{color:var(--gold-soft)}
+.memory .sec-title{color:#fff}
+.memory .m-body{max-width:760px;color:#d6cdbc;margin-top:14px;font-size:1rem}
+.memory .m-links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.memory .m-links a{
+  background:rgba(255,253,248,.05);border:1px solid rgba(255,253,248,.18);border-radius:12px;
+  padding:20px;transition:.2s;display:flex;flex-direction:column;gap:8px;
+}
+.memory .m-links a:hover{background:rgba(255,253,248,.1);border-color:var(--gold-soft)}
+.memory .m-links .ml-t{font-family:var(--serif);font-weight:700;font-size:1.06rem;color:#fff}
+.memory .m-links .ml-m{font-size:.82rem;color:var(--gold-soft);font-weight:600}
+
+/* ---------- Footer ---------- */
+footer.site{background:#1a2126;color:#cbc3b4;padding:50px 0 30px;font-size:.9rem}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;align-items:flex-start}
+.foot-brand{font-family:var(--serif);font-weight:700;font-size:1.3rem;letter-spacing:.14em;color:#f3ede0}
+.foot-brand p{font-family:var(--sans);font-weight:400;font-size:.82rem;color:#9b9384;margin-top:10px;max-width:420px;line-height:1.8}
+.foot-nav{display:flex;flex-wrap:wrap;gap:22px;font-size:.9rem}
+.foot-nav a{color:#cbc3b4;transition:.2s;border-bottom:1px solid transparent;padding-bottom:2px}
+.foot-nav a:hover{color:#fff;border-color:var(--gold-soft)}
+.foot-sns{display:flex;gap:14px;margin-top:6px}
+.foot-sns a{font-size:.82rem;color:#9b9384}
+.foot-sns a:hover{color:var(--gold-soft)}
+.copy{border-top:1px solid #2c343a;margin-top:34px;padding-top:20px;color:#857d6f;font-size:.78rem;letter-spacing:.04em}
+
+/* ---------- Responsive ---------- */
+@media(max-width:900px){
+  .g3{grid-template-columns:1fr 1fr}
+  .tiles{grid-template-columns:repeat(3,1fr)}
+  .saguchi{grid-template-columns:1fr;padding:36px 26px}
+  .memory .m-links{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .nav-links{display:none}
+  .nav-links.open{display:flex;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--line);padding:14px 22px;gap:14px;box-shadow:var(--shadow)}
+  .menu-btn{display:block}
+  .g3,.g2{grid-template-columns:1fr}
+  .tiles{grid-template-columns:1fr 1fr}
+  .feature .card{border-top-width:3px}
+  section.band{padding:48px 0}
+  .hero{padding:54px 0 44px}
+}
 </style>
 </head>
 <body>
 
+<!-- ===== Header ===== -->
 <header class="site">
-  <div class="bar">
-    <a class="brand" href="/">
-      <span class="logo">磐田物語<span class="dot">。</span></span>
-      <span class="tag">遠江・見付のまちの歴史と文化</span>
-    </a>
-    <nav class="menu">
-      <a class="lead" href="#shiryo">佐口史料</a>
+  <div class="wrap nav">
+    <a class="brand" href="/">磐田物語<span>IWATA MONOGATARI</span></a>
+    <nav class="nav-links" id="navlinks">
+      <a href="#new">新着</a>
+      <a href="#region">地域から読む</a>
+      <a href="#theme">テーマから読む</a>
+      <a href="#saguchi">資料室</a>
+      <a href="#yomimono">読み物</a>
       <a href="hajimeni.html">はじめに</a>
-      <a href="chizu.html">地図</a>
-      <a href="#kodai">古代</a>
-      <a href="#kaido">街道</a>
-      <a href="#shaji">社寺</a>
-      <a href="#matsuri">裸祭</a>
-      <a href="#machi">まち</a>
-      <a href="#kotoba">ことば</a>
-      <a href="#bunkazai">文化財</a>
-      <a href="#series">連載</a>
-      <a href="kyuiwata.html">成り立ち</a>
-      <a href="#about">このサイト</a>
     </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="メニュー">≡ メニュー</button>
   </div>
 </header>
 
-<!-- ===== ヒーロー：佐口行正氏所蔵史料 ===== -->
-<section class="feature" id="shiryo">
-  <div class="inner">
-    <div>
-      <p class="eyebrow">佐口行正氏所蔵史料コレクション</p>
-      <h1>紙片が伝える、<br><span class="accent">見付のまちの記憶。</span></h1>
-      <p class="lead">見付の旧家・佐口行正氏が大切に守り伝えてきた、引札・浮世絵・古地図・絵葉書・屋台祭礼写真など約三百三十六点の史料。明治・大正・昭和の見付の暮らしと商いが、一枚ずつの紙片に色あざやかに残されている。</p>
-      <p class="credit">本コレクションはすべて佐口行正氏の所蔵であり、佐口行正氏のご厚意・ご許可を得て公開しています。無断転載・二次利用を禁じます。</p>
-      <div class="cta-row">
-        <a class="btn primary" href="saguchi-shiryo.html">史料を見る →</a>
-        <a class="btn ghost" href="saguchi-shiryo-catalog.html">目録から探す</a>
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">磐田の歴史を巡る入口</span>
+    <h1>磐田物語</h1>
+    <p class="sub">磐田の歴史・文化・地名・古写真を後世へ伝える地域史アーカイブ</p>
+    <p class="lede">磐田物語は、静岡県磐田市に残る歴史、文化、地名、古写真、古地図、祭り、地域の記憶を整理し、未来へ伝えていくための地域史サイトです。</p>
+
+    <div class="search-block">
+      <div class="search-label">知りたい地域や言葉から探す</div>
+      <div class="search-box">
+        <span class="search-ico">🔍</span>
+        <input type="text" id="search-input" autocomplete="off"
+          placeholder="例：見付　旧豊田町　加茂　寺谷　東海道新田　掛塚　中泉　古地図　遠州弁　佐口行正">
+        <ul id="search-results"></ul>
+      </div>
+      <div class="chips" id="chips">
+        <span class="chip">見付</span>
+        <span class="chip">旧豊田町</span>
+        <span class="chip">掛塚</span>
+        <span class="chip">中泉</span>
+        <span class="chip">古地図</span>
+        <span class="chip">遠州弁</span>
+        <span class="chip">裸祭</span>
+        <span class="chip">佐口行正</span>
       </div>
     </div>
-    <div class="mosaic">
-      <figure class="tall"><img src="saguchi/img/ts-7.jpg" alt="浮世絵 美人東海道 見附駅 英泉"></figure>
-      <figure><img src="saguchi/img/hk-3.jpg" alt="引札 内山栄吉"></figure>
-      <figure><img src="saguchi/img/ph-2.jpg" alt="中川町 屋台彫刻"></figure>
-      <figure class="wide"><img src="saguchi/img/hk-1.jpg" alt="引札 川島幸三郎"></figure>
-    </div>
   </div>
 </section>
 
-<!-- ===== 見どころギャラリー ===== -->
-<section class="gallery">
-  <div class="sec-head">
-    <p class="eyebrow">GALLERY ｜ 見どころ</p>
-    <h2>コレクションの見どころ</h2>
-    <p class="desc">色刷りの引札、見付を描いた浮世絵、絢爛な屋台の彫刻、祭りの絵葉書。一点ずつクリックすると、史料のページへ進みます。</p>
-  </div>
-  <div class="gal-grid">
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">浮世絵</span><img src="saguchi/img/ts-7.jpg" alt="美人東海道 見附駅 英泉"><figcaption><b>美人東海道 見附駅</b>渓斎英泉／見付を描いた浮世絵</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">浮世絵</span><img src="saguchi/img/ts-5.jpg" alt="東海道五十三次 見附 広重"><figcaption><b>東海道五十三次 見附</b>歌川広重／狂歌入</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">引札</span><img src="saguchi/img/hk-3.jpg" alt="引札 内山栄吉 明治42年"><figcaption><b>引札 内山栄吉</b>明治42年／色刷りの広告</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">引札</span><img src="saguchi/img/hk-2.jpg" alt="引札 久野米吉 明治34年"><figcaption><b>引札 久野米吉</b>明治34年</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">屋台彫刻</span><img src="saguchi/img/ph-3.jpg" alt="中川町 屋台彫刻"><figcaption><b>中川町 屋台</b>絢爛な祭屋台の彫刻</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">絵葉書</span><img src="saguchi/img/eh-10.jpg" alt="住吉船屋台 絵葉書"><figcaption><b>住吉船屋台</b>祭礼の絵葉書</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">引札</span><img src="saguchi/img/hk-1.jpg" alt="引札 川島幸三郎"><figcaption><b>引札 川島幸三郎</b>武者と美人の図</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">屋台彫刻</span><img src="saguchi/img/ph-2.jpg" alt="中川町 屋台彫刻"><figcaption><b>中川町 屋台</b>欄間の龍の彫刻</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">絵葉書</span><img src="saguchi/img/eh-1.jpg" alt="はだか祭り 青年会員の正装 大正9年頃"><figcaption><b>裸祭の青年会員</b>大正9年頃の絵葉書</figcaption></a>
-  </div>
-</section>
-
-<!-- ===== 佐口史料への2つの入口 ===== -->
-<section class="pri">
-  <div class="pri-grid">
-    <a class="pcard" href="saguchi-shiryo.html">
-      <span class="thumb"><img src="saguchi/img/ts-5.jpg" alt="史料本編"></span>
-      <span>
-        <h3>史料本編を読む</h3>
-        <p>引札・浮世絵・古地図・鉄道案内など、約200点の史料を解説とともに一点ずつ。</p>
-        <span class="go">紙片が伝える見付の記憶 →</span>
-      </span>
-    </a>
-    <a class="pcard" href="saguchi-shiryo-catalog.html">
-      <span class="thumb"><img src="saguchi/img/hk-2.jpg" alt="目録"></span>
-      <span>
-        <h3>目録から探す</h3>
-        <p>引札・絵葉書・屋台祭礼写真ほか約336点を、種別やグループで分類・検索できる目録。</p>
-        <span class="go">佐口行正氏所蔵史料 目録 →</span>
-      </span>
-    </a>
-  </div>
-</section>
-
-<!-- ===== このサイトについて ===== -->
-<section class="about" id="about">
-  <div class="inner">
-    <figure class="ph" style="margin:0">
-      <img src="hero-mitsuke.jpg" alt="旧見付学校と淡海國玉神社">
-      <div class="cap">旧見付学校（手前）と淡海國玉神社の鳥居 ── 見付のまちのシンボル</div>
-    </figure>
-    <div>
-      <p class="label">このサイトについて<span class="en">ABOUT</span></p>
-      <p>磐田物語は、静岡県磐田市に積み重ねられてきた歴史と文化を、一市民の視点で掘り起こし、書き留めていく場である。遠江国の国府が置かれ、東海道・見付宿として栄えたこの地には、古代の遺跡から宿場の面影、祭りや暮らしの記憶まで、語り継ぐべきものが数多く眠っている。</p>
-      <p>その中心に据えているのが、見付の旧家・佐口行正氏が守り伝えてきた史料コレクションである。郷土の史料と現地の風景をたどりながら、足もとの歴史を見つめ直し、次の世代へと手渡していくための覚え書きとして綴っていく。</p>
-      <p style="font-size:14.5px;margin-top:20px;"><a href="hajimeni.html" style="font-weight:700;">はじめに ──このサイトを始めた理由</a>　／　<a href="chizu.html" style="font-weight:700;">磐田タイムトラベル地図で旅する</a></p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== 古代の磐田 ===== -->
-<section class="section" id="kodai">
-  <div class="sec-head">
-    <p class="eyebrow">ANCIENT IWATA</p>
-    <h2>古代の磐田 ── 国府・国分寺・古墳</h2>
-    <p class="desc">奈良時代、磐田は遠江国の中心だった。国府と国分寺が置かれ、台地には王たちの古墳が築かれた。まちの始まりの記憶をたどる。</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="totoumi-kokufu.html"><span class="num">遠江国府</span><h3>遠江国府と古代の磐田</h3><p>国府が置かれ、約66メートルの七重塔がそびえた古代磐田の姿を史跡からたどる。</p><span class="go">読む →</span></a>
-    <a class="card" href="totoumi-kokubunji.html"><span class="num">特別史跡</span><h3>遠江国分寺跡と、古代磐田のはじまり</h3><p>七重塔と金堂を備えた奈良時代の特別史跡。古代寺院の跡をたどる。</p><span class="go">読む →</span></a>
-    <a class="card" href="kofun.html"><span class="num">古墳</span><h3>古墳から見る磐田</h3><p>なぜ磐田に古墳が多いのか。台地と川がつくった、王たちの土地を考える。</p><span class="go">読む →</span></a>
-    <a class="card" href="choshizuka-kofun.html"><span class="num">前方後円墳</span><h3>銚子塚古墳と、遠江を治めた王の眠り</h3><p>全長約110メートル、県内第3位。4世紀の遠江を治めた豪族の墓。</p><span class="go">読む →</span></a>
-    <a class="card" href="goten-ninomiya-iseki.html"><span class="num">遺跡</span><h3>御殿・二之宮遺跡と、二つの時代が眠る原</h3><p>古代の国府候補地にして、徳川家康が築いた中泉御殿の跡。</p><span class="go">読む →</span></a>
-  </div>
-</section>
-
-<!-- ===== 東海道・宿場・街道 ===== -->
-<section class="section" id="kaido">
-  <div class="sec-head">
-    <p class="eyebrow">TOKAIDO &amp; ROADS</p>
-    <h2>東海道・宿場・街道</h2>
-    <p class="desc">東海道五十三次の見付宿を中心に、姫街道・池田の渡し・掛塚湊、そして街道を舞台にした合戦まで。人と物が行き交った道の記憶。</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="mitsuke-shuku.html"><span class="num">見付宿</span><h3>東海道・見付宿の面影</h3><p>中世から栄えた東海道屈指の宿場町。今に残る面影を旧東海道にたどる。</p><span class="go">読む →</span></a>
-    <a class="card" href="mitsuke-shuku-tokaido.html"><span class="num">宿場</span><h3>見付宿と、東海道のにぎわいの記憶</h3><p>本陣2・脇本陣1・旅籠56。東海道二十八番目の宿のにぎわい。</p><span class="go">読む →</span></a>
-    <a class="card" href="hime-kaido.html"><span class="num">脇街道</span><h3>姫街道と、見付から分かれるもう一つの道</h3><p>関所と今切の渡しを避けた人々が歩いた本坂通を、起点・見付からたどる。</p><span class="go">読む →</span></a>
-    <a class="card" href="ikeda-watashi.html"><span class="num">渡し</span><h3>池田の渡し ── 天竜川をわたる東海道</h3><p>東海道の難所・天竜川の渡船。中世の池田荘から明治の架橋まで。</p><span class="go">読む →</span></a>
-    <a class="card" href="kaketsuka-minato.html"><span class="num">湊町</span><h3>掛塚湊と、遠州の小江戸とよばれたまち</h3><p>天竜川河口に栄えた廻船の湊。材木を江戸へ運んだ繁栄の記憶。</p><span class="go">読む →</span></a>
-    <a class="card" href="nakaizumi-daikan.html"><span class="num">代官所</span><h3>中泉代官所と、徳川の天領を治めたまち</h3><p>家康の中泉御殿と天領の代官所。名代官・林鶴梁や前島密の足跡。</p><span class="go">読む →</span></a>
-    <a class="card" href="hitokotozaka.html"><span class="num">合戦</span><h3>一言坂の戦いと、本多忠勝の殿（しんがり）</h3><p>武田信玄の大軍を相手にした退き戦と「家康に過ぎたるもの」の落首。</p><span class="go">読む →</span></a>
-  </div>
-</section>
-
-<!-- ===== 社寺と信仰 ===== -->
-<section class="section" id="shaji">
-  <div class="sec-head">
-    <p class="eyebrow">SHRINES &amp; TEMPLES</p>
-    <h2>社寺と信仰</h2>
-    <p class="desc">国府の守り神から伊勢の御厨、国総社まで。まちの暮らしに根づいた信仰と、その由緒・祭礼をたどる。</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="mitsuke-tenjin.html"><span class="num">見付天神</span><h3>見付天神と、霊犬悉平太郎のものがたり</h3><p>矢奈比賣神社。霊犬悉平太郎の伝説と、見付宿の鎮守として続く信仰。</p><span class="go">読む →</span></a>
-    <a class="card" href="oumikunitama-jinja.html"><span class="num">国総社</span><h3>淡海國玉神社と、遠江の神々が集うまち</h3><p>国司が国じゅうの神を一度に拝した遠江国の総社。旧見付学校の隣に建つ。</p><span class="go">読む →</span></a>
-    <a class="card" href="fu-hachimangu.html"><span class="num">国府の守り神</span><h3>府八幡宮と、国府のまちの守り神</h3><p>奈良時代に勧請された古社。寛永の楼門は静岡県指定文化財。</p><span class="go">読む →</span></a>
-    <a class="card" href="kamada-shinmei.html"><span class="num">遠州のお伊勢さま</span><h3>鎌田神明宮 ── 遠州のお伊勢さま</h3><p>伊勢神宮領「鎌田御厨」の総鎮守。20年ごとの式年遷宮を伝える。</p><span class="go">読む →</span></a>
-    <a class="card" href="gyokoji-fuji.html"><span class="num">天然記念物</span><h3>行興寺と熊野（ゆや）の長藤</h3><p>国指定天然記念物・推定樹齢約850年の藤。熊野御前と能『熊野』の舞台。</p><span class="go">読む →</span></a>
-  </div>
-</section>
-
-<!-- ===== 見付天神裸祭【特集】 ===== -->
-<section class="section" id="matsuri">
-  <div class="sec-head">
-    <p class="eyebrow">HADAKA MATSURI ｜ 特集</p>
-    <h2>見付天神裸祭【特集】</h2>
-    <p class="desc">漆黒の闇に渡る国指定重要無形民俗文化財。その全体像を、起源・神事・伝説・継承の四つの視点から、史実と伝承を分けて学術的にまとめた特集。</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="mitsuke-tenjin-hadaka-matsuri.html"><span class="badge feature">特集トップ</span><h3>見付天神裸祭 ── 闇に渡る、遠江総社への神事</h3><p>約8日間の祓いと清め、鬼踊り、闇の渡御。全体像をまとめた決定版資料。</p><span class="go">読む →</span></a>
-    <a class="card" href="hadaka-matsuri-kigen.html"><span class="num">起源</span><h3>起源をめぐる三つの説 ── 歓喜・人身御供・反閇</h3><p>勧請への歓喜説、悉平太郎説、谷部真吾の反閇説。起源の謎を検証する。</p><span class="go">読む →</span></a>
-    <a class="card" href="hadaka-matsuri-shinji.html"><span class="num">神事</span><h3>神事の構造と日程 ── 八日間の祓いと、闇の渡御</h3><p>祭事始から堂入り・鬼踊り・闇の神輿渡御まで。四つの梯団と祭組を解説。</p><span class="go">読む →</span></a>
-    <a class="card" href="hadaka-matsuri-shippei.html"><span class="num">伝説</span><h3>悉平太郎伝説の考察 ── 早太郎との異同と猿神退治の系譜</h3><p>光前寺の早太郎との異同、猿神退治譚の類型、表記の歴史的変遷を整理。</p><span class="go">読む →</span></a>
-    <a class="card" href="hadaka-matsuri-hozon.html"><span class="num">継承</span><h3>無形文化財としての継承 ── 受け継がれる祭りの現在</h3><p>2000年の国指定、コロナ禍の縮小と再開、担い手不足という現代の課題。</p><span class="go">読む →</span></a>
-    <a class="card" href="matsuri-kurashi.html"><span class="num">エッセイ</span><h3>祭りと暮らしの記憶</h3><p>天下の奇祭をめぐり、まちに受け継がれてきた祭りと暮らしの記憶をたどる。</p><span class="go">読む →</span></a>
-  </div>
-</section>
-
-<!-- ===== まちの近代と学び ===== -->
-<section class="section" id="machi">
-  <div class="sec-head">
-    <p class="eyebrow">MODERN TOWN</p>
-    <h2>まちの近代と学び</h2>
-    <p class="desc">学びのまち磐田を象徴する建物と、世界を見た人がこのまちに残した記憶。</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="kyu-mitsuke-gakko.html"><span class="num">擬洋風建築</span><h3>旧見付学校と、学びのまち磐田</h3><p>現存最古の木造擬洋風小学校校舎「見付の五階」。学びのまちの記憶。</p><span class="go">読む →</span></a>
-    <a class="card" href="kyu-akamatsuke.html"><span class="num">赤レンガ</span><h3>旧赤松家と、海をわたった見付の人</h3><p>咸臨丸で渡米し近代日本の造船を築いた赤松則良の邸宅跡。</p><span class="go">読む →</span></a>
-  </div>
-</section>
-
-<!-- ===== 地名とことば ===== -->
-<section class="section" id="kotoba">
-  <div class="sec-head">
-    <p class="eyebrow">PLACE NAMES &amp; DIALECT</p>
-    <h2>地名とことば</h2>
-    <p class="desc">国・街道・信仰が名づけたまちの地名と、遠州のことば。辞典と変換ツールで、土地のことばに触れる。</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="iwata-chimei.html"><span class="num">地名</span><h3>磐田の地名をたどる ── 国・街道・信仰が名づけたまち</h3><p>見付・国府台・中泉・二之宮・鎌田。地名の由来を三つの流れからたどる。</p><span class="go">読む →</span></a>
-    <a class="card" href="enshu-ben.html"><span class="badge tool">辞典</span><h3>遠州弁辞典</h3><p>磐田・中遠の遠州弁を、意味・用例つきで検索。語尾や文法の特徴もまとめた。</p><span class="go">ひく →</span></a>
-    <a class="card" href="henkan.html"><span class="badge tool">ツール</span><h3>標準語⇄遠州弁 変換</h3><p>標準語を遠州弁に変換。ふつう／ガチの2モードで言い回しを試せる。</p><span class="go">使う →</span></a>
-  </div>
-</section>
-
-<!-- ===== 文化財を読む ===== -->
-<section class="section" id="bunkazai">
-  <div class="sec-head">
-    <p class="eyebrow">CULTURAL PROPERTIES</p>
-    <h2>文化財を読む ── 資料とデータ</h2>
-    <p class="desc">磐田の文化財を、観光名所としてではなく「地域の記憶を読み解く手がかり」として整理する。一覧・データ・研究ノートの入口。</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="bunkazai.html"><span class="badge feature">入口</span><h3>磐田の文化財と地域の記憶</h3><p>古墳・国分寺跡・旧街道・寺社・祭礼・学校から土地の歴史をたどる文化財群の入口。</p><span class="go">開く →</span></a>
-    <a class="card" href="shitei.html"><span class="num">一覧</span><h3>磐田市の指定文化財一覧</h3><p>国・県・市・登録・無形民俗を横断検索。区分・時代・種別・キーワードで絞り込み。</p><span class="go">さがす →</span></a>
-    <a class="card" href="kuni-shitei.html"><span class="num">国指定</span><h3>磐田市の国指定文化財</h3><p>遠江国分寺跡、銚子塚古墳、旧見付学校、見付天神裸祭ほか8件を読み解く。</p><span class="go">読む →</span></a>
-    <a class="card" href="maizobunkazai.html"><span class="num">埋蔵文化財</span><h3>土地と遺跡を調べる ── 埋蔵文化財と磐田</h3><p>土地を売る・買う・建てるとき、なぜ遺跡の確認が必要か。やさしく解説。</p><span class="go">読む →</span></a>
-    <a class="card" href="dayori.html"><span class="num">資料集</span><h3>磐田の文化財を深く読む資料集</h3><p>いわた文化財だより、旧赤松家だより、文書館だよりなど、一次資料への入口。</p><span class="go">開く →</span></a>
-    <a class="card" href="research-notes.html"><span class="num">研究ノート</span><h3>磐田文化財研究ノート</h3><p>古いはがきの場所の特定、旧道との比較など、調査途中のメモを蓄積する場。</p><span class="go">のぞく →</span></a>
-  </div>
-</section>
-
-<!-- ===== 連載：見付古地図散歩 ===== -->
-<div class="series-sec">
-  <section class="section" id="series" style="padding-bottom:0;">
+<!-- ===== 新着特集 ===== -->
+<section class="band feature" id="new">
+  <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">SERIES</p>
-      <h2>連載：見付古地図散歩</h2>
+      <span class="sec-en">LATEST</span>
+      <h2 class="sec-title">最新公開コンテンツ</h2>
     </div>
-    <p class="series-intro">明治四十二年一月に調査された『見付町戸別明細圖』を一枚ずつ読み解きながら、見付という町に積み重なってきた土地と暮らしの記憶をたどる連載です。全五回。</p>
-    <div class="grid">
-      <a class="card" href="kai1.html"><span class="num">第一回</span><h3>見付の土地と記憶</h3><p>戸別明細図の全体像と、町別シート全17枚の一覧。シリーズの導入。</p><span class="go">読む →</span></a>
-      <a class="card" href="kai2.html"><span class="num">第二回</span><h3>古い地図に残る家並みと、相続される土地</h3><p>一軒ずつ記された名前を入口に、受け継がれてきた家を見つめ直す。</p><span class="go">読む →</span></a>
-      <a class="card" href="kai3.html"><span class="num">第三回</span><h3>古い町の土地を売るとき、なぜ調査が大切なのか</h3><p>幅員・接道・再建築・境界・上下水道。宿場町の土地の論点を読む。</p><span class="go">読む →</span></a>
-      <a class="card" href="kai4.html"><span class="num">第四回</span><h3>明治42年、見付の町の中枢</h3><p>郡役所・登記所・寺社・学校。町の成り立ちから土地の価値を考える。</p><span class="go">読む →</span></a>
-      <a class="card" href="kai5.html"><span class="num">第五回</span><h3>見付の古い家を手放す前に、知っておきたいこと</h3><p>相続登記・境界・空き家管理ほか。歴史の語りから実務へ着地する。</p><span class="go">読む →</span></a>
+    <div class="grid g3">
+      <a class="card" href="kyutoyoda.html">
+        <span class="num">1</span>
+        <span class="badge">● 新着特集</span>
+        <h3>旧豊田町の歴史</h3>
+        <p>旧豊田町の成り立ち、地名、交通、地域の歩みをたどる総合特集。</p>
+        <span class="more">読む →</span>
+      </a>
+      <a class="card" href="kyutoyoda-kamo-teradani.html">
+        <span class="num">2</span>
+        <span class="badge">● 新着特集</span>
+        <h3>加茂・寺谷の歴史</h3>
+        <p>旧豊田町の加茂・寺谷地区に残る歴史と地域の変遷を解説。</p>
+        <span class="more">読む →</span>
+      </a>
+      <a class="card" href="kyutoyoda-tokaido-shinden.html">
+        <span class="num">3</span>
+        <span class="badge">● 新着特集</span>
+        <h3>東海道新田の歴史</h3>
+        <p>東海道新田の開発と地域形成をたどる地域史コンテンツ。</p>
+        <span class="more">読む →</span>
+      </a>
     </div>
-  </section>
-</div>
+  </div>
+</section>
 
-<!-- ===== 連載：まちの成り立ち（旧磐田市） ===== -->
-<div class="series-sec" id="series-machi">
-  <section class="section" style="padding-bottom:46px;">
+<!-- ===== 地域から読む ===== -->
+<section class="band alt" id="region">
+  <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">SERIES ｜ 新連載</p>
-      <h2>連載：まちの成り立ち ── 旧磐田市の村々をたどる</h2>
+      <span class="sec-en">BY REGION</span>
+      <h2 class="sec-title">地域から歴史を探す</h2>
+      <p class="sec-desc">磐田市の地域ごとに、まちの成り立ちと記憶をたどります。</p>
     </div>
-    <p class="series-intro">いまの磐田市の住所に残る「中泉」「二之宮」「西貝塚」「鎌田」などは、かつて独立した村の名でした。江戸の村高帳と明治の町村制から磐田市までの歩みを、年表・比較表・地名対応表・Q&Aで読み解く解説シリーズ。全十一回。</p>
-    <div class="grid">
-      <a class="card" href="kyuiwata.html"><span class="num">目次・はじめに</span><h3>連載トップ（全十一回の目次）</h3><p>各回への入口。まずはここから。旧磐田市の成り立ちを一望できる。</p><span class="go">連載を見る →</span></a>
-      <a class="card" href="mura-kara-machi.html"><span class="num">第一回</span><h3>旧磐田市の成り立ち ── 村から町、町から市へ</h3><p>三つの村高帳と、1889→1940→1948の合併年表。連載の見取り図。</p><span class="go">読む →</span></a>
-      <a class="card" href="nakaizumi-goten.html"><span class="num">第二回</span><h3>中泉御殿のあった町 ── 天領を治めた中泉</h3><p>家康の御殿、代官所、前島密、中泉駅（現・磐田駅）。</p><span class="go">読む →</span></a>
+    <div class="tiles">
+      <a class="tile lead" href="kyutoyoda.html"><span class="t-name">旧豊田町</span><span class="t-sub">加茂・寺谷・東海道新田</span></a>
+      <a class="tile" href="mitsuke-shuku.html"><span class="t-name">見付</span><span class="t-sub">東海道・見付宿</span></a>
+      <a class="tile" href="nakaizumi-daikan.html"><span class="t-name">中泉</span><span class="t-sub">天領・代官所</span></a>
+      <a class="tile" href="kaketsuka-minato.html"><span class="t-name">掛塚</span><span class="t-sub">天竜川河口の湊町</span></a>
+      <a class="tile" href="ikeda-watashi.html"><span class="t-name">池田</span><span class="t-sub">天竜川の渡し</span></a>
+      <a class="tile" href="goten-ninomiya-iseki.html"><span class="t-name">二之宮</span><span class="t-sub">御殿・古代の遺跡</span></a>
     </div>
-    <p style="margin:20px 0 0;">
-      <a href="kyuiwata.html" style="display:inline-block;background:var(--brown);color:#fff;text-decoration:none;font-weight:700;font-size:14.5px;padding:13px 28px;border-radius:2px;letter-spacing:.04em;">▶ 連載「まちの成り立ち」を読む（全十一回・目次へ）</a>
-    </p>
-  </section>
-</div>
+    <p class="note">※ 旧磐田市・旧福田町・旧竜洋町・旧豊岡村・国府台などの地域別ページは順次追加してまいります。</p>
+  </div>
+</section>
 
-<footer class="im-foot">
-<style>
-.im-foot{background:#3a312a;color:#e9e0d2;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
-.im-foot *{box-sizing:border-box;}
-.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
-.im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-.im-foot .im-brand .im-dot{color:#a6713e;}
-.im-foot .im-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
-.im-foot .im-links{width:100%;margin-top:6px;}
-.im-foot .im-lh{font-size:12px;color:#9c8f7c;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
-.im-foot .im-links li{font-size:13px;line-height:1.6;}
-.im-foot .im-links a{color:#d8cab4;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-.im-foot .im-links a:hover{color:#f3ece0;border-color:#e7c9a3;}
-.im-foot .im-desc{display:block;color:#9c8f7c;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
-.im-foot .im-sns{width:100%;margin-top:20px;}
-.im-foot .im-icons{display:flex;gap:14px;}
-.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#d8cab4;transition:.2s;}
-.im-foot .im-icons a:hover{color:#f3ece0;border-color:#e7c9a3;background:rgba(231,201,163,.08);}
-.im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
-.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
-</style>
-  <div class="im-inner">
-    <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
-    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
-    <div class="im-links">
-      <p class="im-lh">大石浩之の活動</p>
-      <ul>
-        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
-        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
-        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
-        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
-      </ul>
-      <div class="im-sns">
-        <p class="im-lh">SNS</p>
-        <div class="im-icons">
-          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.22.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.22.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.22-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.05.36-2.22.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.22-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.05-.41-2.22C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.22.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.36 2.22-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14c-.3.76-.5 1.63-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.63.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.13C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0z"/><path d="M12 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84M12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"/><circle cx="18.41" cy="5.59" r="1.44"/></svg>
-          </a>
+<!-- ===== テーマから読む ===== -->
+<section class="band" id="theme">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-en">BY THEME</span>
+      <h2 class="sec-title">テーマから探す</h2>
+      <p class="sec-desc">古写真・古地図・街道・社寺・祭り・ことば・地名から、磐田の歴史を横断的にたどります。</p>
+    </div>
+    <div class="theme-tiles">
+      <a href="saguchi-shiryo.html">古写真</a>
+      <a href="saguchi-shiryo-catalog.html">古絵葉書</a>
+      <a href="chizu.html">古地図</a>
+      <a href="mitsuke-shuku.html">東海道と見付宿</a>
+      <a href="mitsuke-tenjin.html">神社・寺院</a>
+      <a href="mitsuke-tenjin-hadaka-matsuri.html">祭り</a>
+      <a href="enshu-ben.html">遠州弁</a>
+      <a href="iwata-chimei.html">地名の由来</a>
+      <a href="maizobunkazai.html">土地と暮らし</a>
+      <a href="kai2.html">古い家とまちの記憶</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 佐口行正氏資料室 ===== -->
+<section class="band alt" id="saguchi">
+  <div class="wrap">
+    <div class="saguchi">
+      <div>
+        <span class="s-en">SAGUCHI COLLECTION</span>
+        <h2>佐口行正氏所蔵資料</h2>
+        <p>郷土史研究家・佐口行正氏が収集・整理された資料群を公開。引札・浮世絵・古地図・絵葉書・屋台祭礼写真など約三百三十六点を、解説と目録とともにたどれます。</p>
+        <div class="btns">
+          <a class="btn btn-gold" href="saguchi-shiryo-catalog.html">資料一覧を見る →</a>
+          <a class="btn btn-ghost" href="saguchi-shiryo.html">史料本編を読む</a>
         </div>
       </div>
+      <div class="s-imgs">
+        <img src="https://iwata-monogatari.pages.dev/saguchi/img/ts-7.jpg" alt="浮世絵 美人東海道 見附駅 英泉" loading="lazy">
+        <img src="https://iwata-monogatari.pages.dev/saguchi/img/hk-3.jpg" alt="引札 内山栄吉" loading="lazy">
+        <img src="https://iwata-monogatari.pages.dev/saguchi/img/ph-2.jpg" alt="中川町 屋台彫刻" loading="lazy">
+      </div>
     </div>
-    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</section>
+
+<!-- ===== 特集コンテンツ 読み物 ===== -->
+<section class="band" id="yomimono">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-en">FEATURED STORIES</span>
+      <h2 class="sec-title">磐田を好きになる読み物</h2>
+      <p class="sec-desc">まちの姿を、暮らしと風景の物語として読む。</p>
+    </div>
+    <div class="grid g3">
+      <a class="card" href="mitsuke-shuku.html">
+        <span class="badge">読み物</span>
+        <h3>見付というまち</h3>
+        <p>東海道屈指の宿場町・見付。今に残る面影を旧東海道にたどる。</p>
+        <span class="more">読む →</span>
+      </a>
+      <a class="card" href="kaketsuka-minato.html">
+        <span class="badge">読み物</span>
+        <h3>掛塚という港町</h3>
+        <p>天竜川河口に栄えた廻船の湊。遠州の小江戸とよばれた繁栄の記憶。</p>
+        <span class="more">読む →</span>
+      </a>
+      <a class="card" href="kyutoyoda.html">
+        <span class="badge">読み物</span>
+        <h3>豊田町の歴史と風景</h3>
+        <p>旧豊田町の成り立ちと、加茂・寺谷・東海道新田に残る地域の歩み。</p>
+        <span class="more">読む →</span>
+      </a>
+      <a class="card" href="kai1.html">
+        <span class="badge">読み物</span>
+        <h3>古い町並みを歩く</h3>
+        <p>連載「見付古地図散歩」。明治の戸別明細図から土地と暮らしの記憶をたどる。</p>
+        <span class="more">読む →</span>
+      </a>
+      <a class="card" href="kyu-mitsuke-gakko.html">
+        <span class="badge">読み物</span>
+        <h3>歴史的建築をめぐる</h3>
+        <p>現存最古の木造擬洋風校舎「旧見付学校」など、まちに残る建物の記憶。</p>
+        <span class="more">読む →</span>
+      </a>
+      <a class="card" href="matsuri-kurashi.html">
+        <span class="badge">読み物</span>
+        <h3>祭りと暮らしの記憶</h3>
+        <p>天下の奇祭をめぐり、まちに受け継がれてきた祭りと暮らしをたどる。</p>
+        <span class="more">読む →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 歴史的建築・古民家 ===== -->
+<section class="band buildings" id="buildings">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-en">HISTORIC ARCHITECTURE</span>
+      <h2 class="sec-title">未来へ残したい建物</h2>
+      <p class="sec-desc">江戸時代、明治時代、大正時代に建てられた建物は、一度失われると二度と戻りません。建物に刻まれた歴史や地域の記憶を記録していきます。</p>
+    </div>
+    <div class="cat-chips">
+      <span>古民家</span><span>商家</span><span>土蔵</span><span>町家</span><span>登録文化財</span><span>歴史的建築</span>
+    </div>
+    <div class="grid g3">
+      <a class="card" href="kyu-mitsuke-gakko.html">
+        <span class="badge">擬洋風建築</span>
+        <h3>旧見付学校</h3>
+        <p>現存最古の木造擬洋風小学校校舎「見付の五階」。学びのまちの記憶。</p>
+        <span class="more">読む →</span>
+      </a>
+      <a class="card" href="kyu-akamatsuke.html">
+        <span class="badge">赤レンガ・邸宅</span>
+        <h3>旧赤松家</h3>
+        <p>咸臨丸で渡米し近代日本の造船を築いた赤松則良の邸宅跡。</p>
+        <span class="more">読む →</span>
+      </a>
+      <a class="card" href="shitei.html">
+        <span class="badge">文化財一覧</span>
+        <h3>登録文化財・歴史的建築をさがす</h3>
+        <p>国・県・市・登録・無形民俗を横断検索。区分・時代・種別で絞り込めます。</p>
+        <span class="more">さがす →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 家と土地の記憶 ===== -->
+<section class="band memory" id="memory">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-en">LAND &amp; HOME</span>
+      <h2 class="sec-title">家と土地の記憶を未来へつなぐ</h2>
+      <p class="m-body">歴史を調べていくと、その土地や建物には数字だけでは表せない背景があることに気づきます。代々受け継がれてきた家、地域とともに歩んできた建物、そしてそこに暮らした人々の記憶。磐田物語では、歴史を知ることと、未来へ受け継ぐことの両方を考えていきます。</p>
+    </div>
+    <div class="m-links">
+      <a href="kai5.html">
+        <span class="ml-t">古い家を手放す前に読む</span>
+        <span class="ml-m">連載・見付古地図散歩 第五回 →</span>
+      </a>
+      <a href="kai2.html">
+        <span class="ml-t">相続した土地を考える</span>
+        <span class="ml-m">古い地図に残る家並みと相続される土地 →</span>
+      </a>
+      <a href="kai3.html">
+        <span class="ml-t">空き家になる前に読む</span>
+        <span class="ml-m">古い町の土地を売るとき、なぜ調査が大切か →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">磐田物語
+          <p>静岡県磐田市の歴史・文化・地名・古写真・古地図・祭り・地域の記憶を整理し、未来へ伝えていくための地域史サイトです。</p>
+        </div>
+      </div>
+      <nav class="foot-nav">
+        <a href="hajimeni.html">はじめに</a>
+        <a href="#region">地域から読む</a>
+        <a href="#theme">テーマから読む</a>
+        <a href="#saguchi">資料室</a>
+        <a href="mailto:fudosan.fujigaokas@gmail.com">お問い合わせ</a>
+      </nav>
+    </div>
+    <div class="foot-sns">
+      <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note</a>
+    </div>
+    <p class="copy">© 磐田物語 ｜ 磐田の歴史・文化・地名・古写真を後世へ伝える地域史アーカイブ</p>
   </div>
 </footer>
 
+<script>
+/* ---- メニュー（モバイル） ---- */
+document.getElementById('menuBtn').addEventListener('click',function(){
+  document.getElementById('navlinks').classList.toggle('open');
+});
+
+/* ---- サイト内検索（既存ページのインデックス） ---- */
+const PAGES=[
+  {t:"旧豊田町の歴史",u:"kyutoyoda.html",k:"旧豊田町 豊田町 加茂 寺谷 東海道新田 とよだ",g:"新着特集"},
+  {t:"加茂・寺谷の歴史",u:"kyutoyoda-kamo-teradani.html",k:"加茂 寺谷 旧豊田町 かも てらだに",g:"新着特集"},
+  {t:"東海道新田の歴史",u:"kyutoyoda-tokaido-shinden.html",k:"東海道新田 旧豊田町 しんでん",g:"新着特集"},
+  {t:"佐口行正氏所蔵史料",u:"saguchi-shiryo.html",k:"佐口行正 さぐち 引札 浮世絵 絵葉書 古写真 史料",g:"資料室"},
+  {t:"佐口行正氏所蔵史料 目録",u:"saguchi-shiryo-catalog.html",k:"佐口行正 目録 カタログ 引札 絵葉書 古写真",g:"資料室"},
+  {t:"磐田タイムトラベル地図",u:"chizu.html",k:"地図 古地図 タイムトラベル ちず",g:"テーマ"},
+  {t:"遠江国府と古代の磐田",u:"totoumi-kokufu.html",k:"国府 古代 遠江 七重塔 国府台",g:"古代"},
+  {t:"遠江国分寺跡",u:"totoumi-kokubunji.html",k:"国分寺 古代 特別史跡 七重塔",g:"古代"},
+  {t:"古墳から見る磐田",u:"kofun.html",k:"古墳 古代 台地",g:"古代"},
+  {t:"銚子塚古墳",u:"choshizuka-kofun.html",k:"銚子塚 古墳 前方後円墳",g:"古代"},
+  {t:"御殿・二之宮遺跡",u:"goten-ninomiya-iseki.html",k:"二之宮 御殿 遺跡 中泉御殿 にのみや",g:"地域"},
+  {t:"東海道・見付宿の面影",u:"mitsuke-shuku.html",k:"見付 見付宿 東海道 宿場 みつけ",g:"街道"},
+  {t:"見付宿と東海道のにぎわい",u:"mitsuke-shuku-tokaido.html",k:"見付 東海道 宿場 本陣 旅籠",g:"街道"},
+  {t:"姫街道",u:"hime-kaido.html",k:"姫街道 街道 本坂通 ひめかいどう",g:"街道"},
+  {t:"池田の渡し",u:"ikeda-watashi.html",k:"池田 渡し 天竜川 いけだ",g:"地域"},
+  {t:"掛塚湊",u:"kaketsuka-minato.html",k:"掛塚 湊 港町 廻船 かけつか",g:"地域"},
+  {t:"中泉代官所",u:"nakaizumi-daikan.html",k:"中泉 代官所 天領 磐田駅 なかいずみ 林鶴梁 前島密",g:"地域"},
+  {t:"一言坂の戦い",u:"hitokotozaka.html",k:"一言坂 合戦 本多忠勝 武田信玄",g:"街道"},
+  {t:"見付天神と霊犬悉平太郎",u:"mitsuke-tenjin.html",k:"見付天神 悉平太郎 矢奈比賣神社 神社",g:"社寺"},
+  {t:"淡海國玉神社",u:"oumikunitama-jinja.html",k:"淡海國玉 国総社 神社 国府台",g:"社寺"},
+  {t:"府八幡宮",u:"fu-hachimangu.html",k:"府八幡宮 神社 国府 楼門",g:"社寺"},
+  {t:"鎌田神明宮",u:"kamada-shinmei.html",k:"鎌田 神明宮 神社 御厨 お伊勢さま",g:"社寺"},
+  {t:"行興寺と熊野の長藤",u:"gyokoji-fuji.html",k:"行興寺 藤 熊野 ゆや 天然記念物",g:"社寺"},
+  {t:"見付天神裸祭【特集】",u:"mitsuke-tenjin-hadaka-matsuri.html",k:"裸祭 はだか祭 祭り 見付天神 重要無形民俗文化財",g:"祭り"},
+  {t:"裸祭の起源",u:"hadaka-matsuri-kigen.html",k:"裸祭 起源 反閇 悉平太郎",g:"祭り"},
+  {t:"裸祭の神事と日程",u:"hadaka-matsuri-shinji.html",k:"裸祭 神事 鬼踊り 渡御",g:"祭り"},
+  {t:"悉平太郎伝説の考察",u:"hadaka-matsuri-shippei.html",k:"悉平太郎 早太郎 伝説 裸祭 猿神",g:"祭り"},
+  {t:"無形文化財としての継承",u:"hadaka-matsuri-hozon.html",k:"裸祭 継承 文化財 保存",g:"祭り"},
+  {t:"祭りと暮らしの記憶",u:"matsuri-kurashi.html",k:"祭り 暮らし エッセイ",g:"祭り"},
+  {t:"旧見付学校",u:"kyu-mitsuke-gakko.html",k:"旧見付学校 擬洋風 歴史的建築 見付の五階 学校",g:"建築"},
+  {t:"旧赤松家",u:"kyu-akamatsuke.html",k:"旧赤松家 赤松則良 咸臨丸 人物 歴史的建築 邸宅",g:"建築"},
+  {t:"磐田の地名をたどる",u:"iwata-chimei.html",k:"地名 由来 国府台 中泉 二之宮 鎌田 見付",g:"ことば"},
+  {t:"遠州弁辞典",u:"enshu-ben.html",k:"遠州弁 方言 ことば 辞典",g:"ことば"},
+  {t:"標準語⇄遠州弁 変換",u:"henkan.html",k:"遠州弁 変換 ことば ツール",g:"ことば"},
+  {t:"磐田の文化財と地域の記憶",u:"bunkazai.html",k:"文化財 入口",g:"文化財"},
+  {t:"磐田市の指定文化財一覧",u:"shitei.html",k:"文化財 一覧 登録文化財 指定 検索",g:"文化財"},
+  {t:"磐田市の国指定文化財",u:"kuni-shitei.html",k:"国指定 文化財",g:"文化財"},
+  {t:"埋蔵文化財と磐田",u:"maizobunkazai.html",k:"埋蔵文化財 土地 遺跡 暮らし",g:"文化財"},
+  {t:"文化財を深く読む資料集",u:"dayori.html",k:"資料 だより 文化財",g:"文化財"},
+  {t:"磐田文化財研究ノート",u:"research-notes.html",k:"研究ノート 調査 はがき",g:"文化財"},
+  {t:"見付古地図散歩 第一回",u:"kai1.html",k:"古地図 見付 連載 戸別明細図",g:"連載"},
+  {t:"第二回 相続される土地",u:"kai2.html",k:"相続 土地 古地図 古い家 家並み",g:"連載"},
+  {t:"第三回 古い町の土地を売るとき",u:"kai3.html",k:"土地 売る 調査 空き家 接道 境界",g:"連載"},
+  {t:"第四回 明治42年の見付",u:"kai4.html",k:"見付 町 郡役所 登記所",g:"連載"},
+  {t:"第五回 古い家を手放す前に",u:"kai5.html",k:"古い家 手放す 相続 空き家 境界",g:"連載"},
+  {t:"はじめに",u:"hajimeni.html",k:"はじめに このサイト 理由",g:"案内"}
+];
+const input=document.getElementById('search-input');
+const box=document.getElementById('search-results');
+function render(q){
+  q=q.trim().toLowerCase();
+  if(!q){box.classList.remove('show');box.innerHTML='';return;}
+  const hits=PAGES.filter(p=>(p.t+' '+p.k).toLowerCase().includes(q)).slice(0,8);
+  if(hits.length===0){
+    box.innerHTML='<li class="empty">該当する記事が見つかりませんでした。別のことばでお試しください。</li>';
+  }else{
+    box.innerHTML=hits.map(p=>`<li><a href="${p.u}"><span class="r-title">${p.t}</span><span class="r-tag">${p.g}</span></a></li>`).join('');
+  }
+  box.classList.add('show');
+}
+input.addEventListener('input',e=>render(e.target.value));
+document.querySelectorAll('.chip').forEach(c=>{
+  c.addEventListener('click',()=>{input.value=c.textContent;render(c.textContent);input.focus();});
+});
+document.addEventListener('click',e=>{
+  if(!e.target.closest('.search-box'))box.classList.remove('show');
+});
+</script>
 </body>
 </html>
