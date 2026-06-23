@@ -176,8 +176,17 @@ const grid=document.getElementById('grid'), countEl=document.getElementById('cou
 
 fetch('data/saguchi-shiryo.json').then(r=>r.json()).then(d=>{
   ITEMS=d.items; document.getElementById('metaNote').textContent=d._meta.note||'';
-  buildTabs(); render();
+  buildTabs(); render(); openFromHash();
 }).catch(e=>{ grid.innerHTML='<p class="no-result">目録データを読み込めませんでした。</p>'; });
+
+// 個別アイテムへのディープリンク（例: ...catalog.html#hk-3 でその史料を開く）
+function openFromHash(){
+  var id=decodeURIComponent((location.hash||'').replace('#','')).trim();
+  if(!id) return;
+  var idx=view.findIndex(function(it){return it.id===id;});
+  if(idx>=0){ openLB(idx); }
+}
+window.addEventListener('hashchange', openFromHash);
 
 function esc(s){return (s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));}
 
