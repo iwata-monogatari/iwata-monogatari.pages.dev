@@ -3,371 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>遠江国府と古代の磐田 ｜ 磐田物語</title>
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-<meta name="description" content="奈良時代、磐田は遠江国の中心地だった。国府が置かれ、約66メートルの七重塔を擁する遠江国分寺がそびえた古代磐田の姿を、史跡をたどりながら描く。">
-<meta property="og:title" content="遠江国府と古代の磐田 ｜ 磐田物語">
-<meta property="og:description" content="かつて磐田は、遠江国の「首都」だった。国府と国分寺をめぐる古代磐田の物語。">
-<meta property="og:type" content="article">
-<meta property="og:locale" content="ja_JP">
+<title>遠江国府と古代の磐田 | 奈良・平安時代の地域史 | 磐田物語</title>
+<meta name="description" content="遠江国府の痕跡を遺跡・地名から紐解く。奈良時代の磐田の歩みを通じて古代遠江の歴史を解説。静岡県磐田市の古代史入門。">
+<meta property="og:title" content="遠江国府と古代の磐田 | 奈良・平安時代の地域史 | 磐田物語">
+<meta property="og:description" content="遠江国府と古代の磐田。奈良時代の遺跡や地名から古代遠江を紐解きます。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --paper:#f7f2e9;--paper-deep:#efe6d4;--ink:#3a312a;--ink-soft:#6b5d50;
-    --brown:#a6713e;--brown-deep:#85562c;--pine:#46624a;--line:#e0d4bd;
-    --card:#fffdf8;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{margin:0;background:var(--paper);color:var(--ink);
-    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
-    line-height:1.95;font-size:17px;letter-spacing:.02em;
-    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
-  .mincho{font-family:"Shippori Mincho",serif;}
-  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-    background-image:
-      radial-gradient(circle at 20% 30%, rgba(166,113,62,.035) 0, transparent 38%),
-      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);}
-  a{color:var(--brown-deep);text-underline-offset:3px;}
-
-  header.site{background:var(--card);border-bottom:1px solid var(--line);}
-  .bar{max-width:1040px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
-  .brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;}
-  .brand .logo{font-family:"Shippori Mincho",serif;font-weight:800;font-size:26px;color:var(--ink);letter-spacing:.06em;}
-  .brand .logo .dot{color:var(--brown);}
-  .brand .tag{font-size:12.5px;color:var(--ink-soft);letter-spacing:.08em;}
-  nav.menu{display:flex;gap:26px;}
-  nav.menu a{text-decoration:none;color:var(--ink-soft);font-size:14.5px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
-  nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
-
-  /* パンくず */
-  .crumbs{max-width:760px;margin:0 auto;padding:24px 24px 0;font-size:13px;color:var(--ink-soft);}
-  .crumbs a{text-decoration:none;}
-  .crumbs a:hover{text-decoration:underline;}
-
-  /* 記事ヘッダー */
-  .article-head{max-width:760px;margin:0 auto;padding:28px 24px 12px;}
-  .article-head .cat{font-size:13px;letter-spacing:.18em;color:var(--pine);font-weight:700;margin:0 0 16px;}
-  .article-head .cat .no{color:var(--brown);}
-  .article-head h1{font-family:"Shippori Mincho",serif;font-weight:800;
-    font-size:clamp(28px,5vw,44px);line-height:1.45;margin:0 0 20px;color:var(--ink);letter-spacing:.03em;}
-  .article-head .sub{font-size:16.5px;color:var(--ink-soft);margin:0;line-height:1.95;}
-
-  /* 表紙の挿絵 */
-  .cover{max-width:760px;margin:28px auto 0;padding:0 24px;}
-  .cover svg{width:100%;height:auto;display:block;border-radius:4px;
-    border:1px solid var(--line);box-shadow:var(--shadow);background:var(--card);}
-  .cover figcaption{font-size:13px;color:var(--ink-soft);margin-top:10px;text-align:center;}
-
-  /* 本文 */
-  .article{max-width:760px;margin:0 auto;padding:24px 24px 56px;}
-  .article h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:23px;
-    color:var(--ink);letter-spacing:.03em;margin:52px 0 20px;
-    padding-left:16px;border-left:4px solid var(--brown);line-height:1.5;}
-  .article p{margin:0 0 22px;color:var(--ink);}
-  .article p.lead{font-size:18.5px;line-height:2.1;}
-  .article .ruby{font-size:.78em;color:var(--ink-soft);}
-
-  /* 図入りブロック（挿絵） */
-  figure.fig{margin:34px 0;padding:0;}
-  figure.fig svg{width:100%;height:auto;display:block;border-radius:4px;
-    border:1px solid var(--line);box-shadow:var(--shadow);background:var(--card);}
-  figure.fig figcaption{font-size:13px;color:var(--ink-soft);margin-top:10px;text-align:center;line-height:1.7;}
-
-  /* 引用調 */
-  .pull{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--pine);
-    border-radius:3px;padding:24px 30px;margin:32px 0;box-shadow:var(--shadow);}
-  .pull p{margin:0;font-family:"Shippori Mincho",serif;font-size:18.5px;color:var(--ink);line-height:2;}
-
-  /* 史跡メモ */
-  .memo{background:var(--paper-deep);border-radius:3px;padding:26px 30px;margin:34px 0;}
-  .memo h3{font-family:"Shippori Mincho",serif;font-size:17px;color:var(--ink);margin:0 0 14px;
-    letter-spacing:.04em;}
-  .memo dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;}
-  .memo dt{font-weight:700;color:var(--brown-deep);font-size:14.5px;white-space:nowrap;}
-  .memo dd{margin:0;font-size:14.5px;color:var(--ink);}
-
-  /* 出典 */
-  .sources{max-width:760px;margin:0 auto;padding:0 24px 8px;}
-  .sources h3{font-size:14px;color:var(--ink-soft);font-weight:700;letter-spacing:.06em;margin:0 0 10px;}
-  .sources ul{margin:0;padding-left:1.2em;}
-  .sources li{font-size:13px;color:var(--ink-soft);line-height:1.8;margin-bottom:4px;}
-
-  /* 結びのナビ */
-  .article-nav{max-width:760px;margin:0 auto 56px;padding:0 24px;display:flex;flex-wrap:wrap;gap:14px;}
-  .article-nav a{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
-    padding:13px 26px;border-radius:2px;transition:.2s;letter-spacing:.04em;}
-  .article-nav a.primary{background:var(--brown);color:#fff;}
-  .article-nav a.primary:hover{background:var(--brown-deep);}
-  .article-nav a.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
-  .article-nav a.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
-
-  footer.site{background:var(--ink);color:#e9e0d2;}
-  footer.site .inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
-  footer .f-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-  footer .f-brand .dot{color:var(--brown);}
-  footer .f-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
-  footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
-  footer .links{width:100%;margin-top:6px;}
-  footer .links .lh{font-size:12px;color:#9c8f7c;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-  footer .links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
-  footer .links li{font-size:13px;line-height:1.6;}
-  footer .links a{color:#d8cab4;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-  footer .links a:hover{color:#f3ece0;border-color:#e7c9a3;}
-  footer .links .desc{display:block;color:#9c8f7c;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
-  footer .sns{width:100%;margin-top:20px;}
-  footer .sns .lh{font-size:12px;color:#9c8f7c;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-  footer .sns .icons{display:flex;gap:14px;}
-  footer .sns a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#d8cab4;transition:.2s;}
-  footer .sns a:hover{color:#f3ece0;border-color:#e7c9a3;background:rgba(231,201,163,.08);}
-  footer .sns svg{width:19px;height:19px;fill:currentColor;}
-
-  /* SVG内の共通色 */
-  .s-paper{fill:#fffdf8;} .s-line{stroke:#d8c8ab;} .s-ink{fill:#3a312a;}
-  .s-brown{fill:#a6713e;} .s-pine{fill:#46624a;} .s-soft{fill:#6b5d50;}
-  .s-water{fill:#cdd9d2;}
-
-  @media(max-width:760px){
-    nav.menu{display:none;}
-    .memo dl{grid-template-columns:1fr;gap:2px 0;}
-    .memo dt{margin-top:8px;}
-  }
+:root { --paper: #f7f2e9; --ink: #3a312a; --ink-soft: #6b5d50; --brown-deep: #85562c; --line: #e0d4bd; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--paper); color: var(--ink); font-family: "Noto Sans JP", system-ui, sans-serif; line-height: 1.9; font-size: 17px; }
+a { color: var(--brown-deep); text-decoration: none; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+header { background: #fffdf8; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 100; }
+.logo { font-family: "Shippori Mincho", serif; font-weight: 800; font-size: 26px; }
+.hero { padding: 60px 24px; }
+.hero h1 { font-family: "Shippori Mincho", serif; font-weight: 800; font-size: clamp(34px, 6vw, 58px); margin: 0 0 24px; }
+.hero p { color: var(--ink-soft); max-width: 660px; margin: 0 0 16px; }
+.section { padding: 64px 24px; border-bottom: 1px solid var(--line); }
+.sec-title { font-family: "Shippori Mincho", serif; font-weight: 700; font-size: 28px; margin: 0 0 16px; }
+.card { background: #fffdf8; border: 1px solid var(--line); padding: 30px; margin-bottom: 22px; }
+.card h3 { font-family: "Shippori Mincho", serif; font-weight: 700; font-size: 19px; margin: 0 0 12px; }
+.card p { color: var(--ink-soft); margin: 0; }
+footer { background: #3a312a; color: #e9e0d2; padding: 44px 24px; }
 </style>
 </head>
 <body>
-
-<header class="site">
-  <div class="bar">
-    <a class="brand" href="/">
-      <span class="logo">磐田物語<span class="dot">。</span></span>
-      <span class="tag">遠江・見付のまちの歴史と文化</span>
-    </a>
-    <nav class="menu">
-      <a href="/hajimeni.html">はじめに</a>
-      <a href="/#themes">読みもの</a>
-      <a href="/saguchi-shiryo.html">佐口史料</a>
-      <a href="/chizu.html">地図で見る</a>
-      <a href="/#enshu">遠州弁</a>
-    </nav>
+<header>
+  <div class="wrap" style="display: flex; justify-content: space-between; align-items: center; height: 56px;">
+    <a class="logo" href="/">磐田物語。</a>
   </div>
 </header>
 
-<div class="crumbs"><a href="/">磐田物語</a> ／ 遠江国府と古代の磐田</div>
-
-<div class="article-head">
-  <p class="cat"><span class="no">其の一</span> ｜ 古代の磐田</p>
-  <h1>遠江国府と古代の磐田<br>── かつて、ここが国の中心だった</h1>
-  <p class="sub">磐田駅の周辺は、いまでこそ静かな地方都市の一角に見える。だが千三百年ほど前、このあたりは遠江国というひとつの国の「首都」であった。国府が置かれ、約66メートルの七重塔がそびえていた。足もとに眠る古代の磐田を、史跡をたどりながら見つめ直してみたい。</p>
-</div>
-
-<figure class="cover">
-  <!-- 表紙：遠つ淡海の図 -->
-  <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="遠江=遠つ淡海の由来を示す図">
-    <rect width="760" height="300" class="s-paper"/>
-    <!-- 都（奈良） -->
-    <circle cx="120" cy="150" r="7" class="s-brown"/>
-    <text x="120" y="135" text-anchor="middle" class="s-ink mincho" style="font-size:15px;font-weight:700;">都（奈良）</text>
-    <!-- 近い湖 -->
-    <ellipse cx="300" cy="160" rx="58" ry="34" class="s-water"/>
-    <ellipse cx="300" cy="160" rx="58" ry="34" fill="none" class="s-line" stroke-width="1"/>
-    <text x="300" y="165" text-anchor="middle" class="s-soft" style="font-size:13px;">近つ淡海</text>
-    <text x="300" y="220" text-anchor="middle" class="s-ink" style="font-size:12.5px;">琵琶湖 ＝ 近江（おうみ）</text>
-    <!-- 遠い湖 -->
-    <ellipse cx="560" cy="150" rx="66" ry="38" class="s-water"/>
-    <ellipse cx="560" cy="150" rx="66" ry="38" fill="none" class="s-line" stroke-width="1"/>
-    <text x="560" y="155" text-anchor="middle" class="s-soft" style="font-size:13px;">遠つ淡海</text>
-    <text x="560" y="215" text-anchor="middle" class="s-ink" style="font-size:12.5px;">浜名湖 ＝ 遠江（とおとうみ）</text>
-    <!-- 道 -->
-    <path d="M132 150 Q210 110 244 152" fill="none" class="s-line" stroke-width="2" stroke-dasharray="5 5"/>
-    <path d="M356 158 Q460 120 496 150" fill="none" class="s-line" stroke-width="2" stroke-dasharray="5 5"/>
-    <!-- 磐田 -->
-    <circle cx="560" cy="150" r="5" class="s-pine"/>
-    <text x="560" y="118" text-anchor="middle" class="s-pine mincho" style="font-size:13px;font-weight:700;">磐田はこのほとり</text>
-    <text x="380" y="40" text-anchor="middle" class="s-ink mincho" style="font-size:17px;font-weight:700;">都から見て「遠い淡海」── それが遠江の名の由来である</text>
-  </svg>
-  <figcaption>「遠江（とおとうみ）」は、都から遠い淡海（湖）＝浜名湖に由来する。近い湖の琵琶湖が「近江（おうみ）」である。</figcaption>
-</figure>
-
-<article class="article">
-
-  <p class="lead">磐田というまちを語るとき、見付宿や見付天神を思い浮かべる人は多い。だが、それよりさらに古い時代——奈良・平安のころ、磐田はもっと大きな役割を担っていた。遠江国という、いまの静岡県西部にあたる一国の政治の中心。つまり「国府」が、この地に置かれていたのである。</p>
-
-  <h2>「遠つ淡海」の国</h2>
-
-  <p>まず、遠江という国名そのものに、このまちの土地柄が刻まれている。遠江は「遠つ淡海（とおつあわうみ）」が縮まった言葉で、都から見て遠いところにある淡海、すなわち浜名湖を指す。これに対して、都に近い淡海＝琵琶湖のほとりの国が「近江（おうみ）」である。古代の人々は、二つの大きな湖を都からの距離で呼び分けた。磐田は、その「遠い湖」を望む側に開けた土地であった。</p>
-
-  <p>奈良時代、律令制のもとで全国は六十あまりの国に分けられ、それぞれに国府が置かれた。国府とは、中央から派遣された国司が政務を執る役所であり、いわばその国の首都である。遠江国の国府は、この磐田の地に営まれた。今の感覚でいえば、県庁所在地が磐田にあったようなものである。</p>
-
-  <h2>国府は、どこにあったのか</h2>
-
-  <p>では、国府は具体的にどこにあったのか。これがなかなか奥深い。研究では、遠江国府は時代によって場所を移したと考えられている。</p>
-
-  <p>初期の国府は、磐田駅の南側にあたる御殿・二之宮（ごてん・にのみや）遺跡のあたりに置かれたとみられている。この遺跡からは奈良時代の木簡や墨書土器、大規模な建物跡が見つかっており、役所がここにあった有力な手がかりとなっている。その後、平安時代になると、国府は北方の見付の地へ移ったと考えられている。鎌倉時代の紀行文『十六夜日記』などには「見付の国府（こう）」という表現が出てくる。</p>
-
-  <p>ただし、国府の正確な位置は、いまも完全には確定していない。御殿・二之宮遺跡説のほか、磐田北小学校から大見寺あたりという説もあり、決定的な証拠はまだ出ていないのである。千三百年の時を経て、土の下で答えが静かに眠っている。</p>
-
-  <figure class="fig">
-    <!-- 古代磐田の主要史跡マップ -->
-    <svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="古代磐田の主要な遺跡・史跡の配置図">
-      <rect width="760" height="420" class="s-paper"/>
-      <text x="380" y="38" text-anchor="middle" class="s-ink mincho" style="font-size:18px;font-weight:700;">古代磐田 ── 国の中心に並んだ施設</text>
-      <text x="380" y="60" text-anchor="middle" class="s-soft" style="font-size:12.5px;">※ 位置関係を示した概念図（実際の縮尺・方位とは異なる）</text>
-
-      <!-- 台地のイメージ -->
-      <path d="M70 350 Q200 300 380 310 Q560 320 690 300 L690 380 L70 380 Z" fill="#efe6d4"/>
-      <text x="120" y="372" class="s-soft" style="font-size:12px;">大之浦を望む台地</text>
-
-      <!-- 国分寺（七重塔） -->
-      <g>
-        <rect x="330" y="150" width="100" height="14" class="s-brown"/>
-        <!-- 塔 -->
-        <g transform="translate(355,90)">
-          <polygon points="25,0 38,14 12,14" class="s-pine"/>
-          <rect x="8" y="14" width="34" height="9" class="s-pine"/>
-          <rect x="11" y="23" width="28" height="9" class="s-brown"/>
-          <rect x="13" y="32" width="24" height="9" class="s-pine"/>
-          <rect x="15" y="41" width="20" height="9" class="s-brown"/>
-          <rect x="17" y="50" width="16" height="9" class="s-pine"/>
-        </g>
-        <text x="380" y="182" text-anchor="middle" class="s-ink mincho" style="font-size:14px;font-weight:700;">遠江国分寺</text>
-        <text x="380" y="200" text-anchor="middle" class="s-soft" style="font-size:11.5px;">約66mの七重塔・特別史跡</text>
-      </g>
-
-      <!-- 国分尼寺（北） -->
-      <circle cx="380" cy="110" r="4" class="s-soft"/>
-      <text x="380" y="92" text-anchor="middle" class="s-soft" style="font-size:11.5px;">国分尼寺（北方）</text>
-
-      <!-- 国府（南） -->
-      <rect x="345" y="250" width="70" height="40" fill="none" class="s-line" stroke-width="1.5"/>
-      <text x="380" y="274" text-anchor="middle" class="s-ink mincho" style="font-size:13px;font-weight:700;">国府</text>
-      <text x="380" y="306" text-anchor="middle" class="s-soft" style="font-size:11px;">御殿・二之宮遺跡か</text>
-
-      <!-- 府八幡宮（東） -->
-      <circle cx="520" cy="230" r="4" class="s-pine"/>
-      <text x="520" y="216" text-anchor="middle" class="s-pine" style="font-size:11.5px;">府八幡宮</text>
-
-      <!-- 総社（西） -->
-      <circle cx="235" cy="235" r="4" class="s-pine"/>
-      <text x="235" y="221" text-anchor="middle" class="s-pine" style="font-size:11.5px;">淡海國玉神社（総社）</text>
-
-      <!-- つなぐ線 -->
-      <line x1="380" y1="164" x2="380" y2="250" class="s-line" stroke-width="1" stroke-dasharray="4 4"/>
-      <line x1="380" y1="150" x2="380" y2="114" class="s-line" stroke-width="1" stroke-dasharray="4 4"/>
-      <line x1="415" y1="265" x2="516" y2="232" class="s-line" stroke-width="1" stroke-dasharray="4 4"/>
-      <line x1="345" y1="262" x2="239" y2="236" class="s-line" stroke-width="1" stroke-dasharray="4 4"/>
-    </svg>
-    <figcaption>国府を中心に、北に国分寺・国分尼寺、東に府八幡宮、西に総社（淡海國玉神社）が配されていた。<br>古代の磐田は、こうした施設が整然と並ぶ「国の中心」だった。</figcaption>
-  </figure>
-
-  <h2>七重塔がそびえていた</h2>
-
-  <p>古代磐田を象徴するのが、遠江国分寺である。天平13年（741年）、聖武天皇は、たび重なる災害や疫病に心を痛め、仏の力で国を安んじようと、全国の国ごとに国分寺と国分尼寺を建てるよう命じた。その遠江国版が、この地に建てられた国分寺である。</p>
-
-  <p>その規模は、想像を超える。中心の金堂のほか、講堂、中門、回廊が整然と配され、そして高さ約66メートルともいわれる七重の塔がそびえていた。66メートルといえば、二十階建てのビルに相当する。瓦葺きの巨大な塔が、田園の広がる台地の上に立っていた光景を思い描いてほしい。それは、遠くからでも望むことのできる、この国の威信そのものであった。</p>
-
-  <p>遠江国分寺跡は、昭和26年（1951年）に発掘調査が行われ、国分寺としては全国で初めて建物の配置の全体像が明らかになった。その学術的価値の高さから、翌昭和27年、国の特別史跡に指定されている。静岡県内で国の特別史跡となっているのは、この遠江国分寺跡と新居関跡の二か所だけである。それだけ、特別に貴重な場所なのだ。</p>
-
-  <div class="pull">
-    <p>近年も発見は続いている。令和の調査では、隣接する寺の手水鉢が、実は国分寺の七重塔を支えた礎石だったと判明した。千三百年前の柱の根が、姿を変えて今も地域の中に息づいていたのである。</p>
+<section class="hero">
+  <div class="wrap">
+    <h1>遠江国府と古代の磐田</h1>
+    <p>国府が置かれた時代の磐田。遺跡や地名に残る古代の痕跡から、このまちの始まりをたどります。</p>
   </div>
+</section>
 
-  <h2>国府の名残は、今も残る</h2>
-
-  <p>役所としての国府の建物は、とうに失われた。けれど、国府にまつわる場所は、形を変えて今も磐田の中に残っている。</p>
-
-  <p>たとえば府八幡宮。「府」の字が示すとおり、国府の守り神として祀られた社で、遠江国府は一時、この境内に置かれていたとも伝えられる。江戸時代に建てられた楼門は静岡県の文化財に指定され、旧国府の中心地に今も静かに立っている。また、見付の淡海國玉（おうみくにたま）神社は、遠江国の総社——国内の神々をまとめて祀る社——とされる。地名にも痕跡は残る。「国府台（こうのだい）」「二之宮」といった地名は、この地が国の中心であった記憶を、そっと今に伝えている。</p>
-
-  <div class="memo">
-    <h3>古代磐田をたどる手がかり</h3>
-    <dl>
-      <dt>遠江国分寺跡</dt><dd>国の特別史跡。約66mの七重塔をもつ寺院跡。磐田市役所の北方、史跡公園として開放されている。</dd>
-      <dt>御殿・二之宮遺跡</dt><dd>初期の国府跡と推定される遺跡。奈良時代の木簡・建物跡が出土。御殿遺跡公園に保存。</dd>
-      <dt>府八幡宮</dt><dd>国府の守り神。一時、国府が境内に置かれたとも伝わる。江戸期の楼門は県文化財。</dd>
-      <dt>淡海國玉神社</dt><dd>遠江国の総社。見付の旧見付学校に隣接して鎮座する。</dd>
-    </dl>
-  </div>
-
-  <h2>足もとに眠る、国の記憶</h2>
-
-  <p>こうして見てくると、今の磐田の風景が少し違って見えてくる。何気なく通り過ぎる中泉や見付のあたりに、かつて国の役所が建ち、巨大な塔がそびえ、人々が行き交っていた。その記憶は、ふだんの暮らしの中ではなかなか意識されない。けれど、土の下にも、地名の中にも、神社の佇まいの中にも、確かに残っている。</p>
-
-  <p>歴史というと、遠い昔のよそごとのように思えるかもしれない。だが、それは私たちが今立っている、まさにこの場所の物語である。足もとに国の中心があったという事実は、このまちに暮らす者にとって、ささやかな、けれど確かな誇りになるのではないか。</p>
-
-  <p>消えたものは多い。塔は失われ、役所の跡は土に還った。それでも、誰かが調べ、誰かが書き留め、誰かが語り継げば、記憶は残る。この一篇が、足もとの古代に目を向けるきっかけになればと思う。次は、時代を下って、東海道の宿場町として栄えた見付宿の面影をたどってみたい。</p>
-
-</article>
-
-<div class="sources">
-  <h3>主な参考</h3>
-  <ul>
-    <li>磐田市公式ウェブサイト「遠江国分寺跡」「遠江国分寺跡整備事業」</li>
-    <li>磐田市観光協会「遠江国分寺跡」「御殿遺跡公園」</li>
-    <li>府八幡宮 公式サイト</li>
-    <li>『日本歴史地名大系』ほか（コトバンク所収）／Wikipedia「遠江国」</li>
-  </ul>
-</div>
-
-<div class="article-nav">
-  <a class="primary" href="/">トップへ戻る</a>
-  <a class="ghost" href="/hajimeni.html">はじめに ── このサイトの思い</a>
-</div>
-
-<footer class="im-foot">
-<style>
-.im-foot{background:#3a312a;color:#e9e0d2;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
-.im-foot *{box-sizing:border-box;}
-.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
-.im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-.im-foot .im-brand .im-dot{color:#a6713e;}
-.im-foot .im-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
-.im-foot .im-links{width:100%;margin-top:6px;}
-.im-foot .im-lh{font-size:12px;color:#9c8f7c;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
-.im-foot .im-links li{font-size:13px;line-height:1.6;}
-.im-foot .im-links a{color:#d8cab4;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-.im-foot .im-links a:hover{color:#f3ece0;border-color:#e7c9a3;}
-.im-foot .im-desc{display:block;color:#9c8f7c;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
-.im-foot .im-sns{width:100%;margin-top:20px;}
-.im-foot .im-icons{display:flex;gap:14px;}
-.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#d8cab4;transition:.2s;}
-.im-foot .im-icons a:hover{color:#f3ece0;border-color:#e7c9a3;background:rgba(231,201,163,.08);}
-.im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
-.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
-</style>
-  <div class="im-inner">
-    <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
-    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は、個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら、消えゆく地域の記憶を未来へ残し、文化財研究の一助となることを目指して綴っています。</div>
-    <div class="im-links">
-      <p class="im-lh">運営者・大石浩之のほかの活動</p>
-      <ul>
-        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
-        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
-        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
-        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
-      </ul>
-      <div class="im-sns">
-        <p class="im-lh">SNS</p>
-        <div class="im-icons">
-          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.22.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.22.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.22-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.05.36-2.22.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.22-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.05-.41-2.22C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.22.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.36 2.22-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14c-.3.76-.5 1.63-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.63.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.13C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0z"/><path d="M12 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84M12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"/><circle cx="18.41" cy="5.59" r="1.44"/></svg>
-          </a>
-        </div>
-      </div>
+<section class="section">
+  <div class="wrap">
+    <h2 class="sec-title">古代遠江の政治中枢</h2>
+    <div class="card">
+      <h3>国府の移転と定着</h3>
+      <p>遠江国府は、古代を通じて何度も移転されました。最初は豊田地域に置かれ、後に現在の磐田地域へと移されたと考えられています。この移転の背景には、政治的な権力の動き、土地の価値の変化、交通網の再編成がありました。</p>
     </div>
-    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+    <div class="card">
+      <h3>地名が語る古代の痕跡</h3>
+      <p>「国府台」「中泉」など、地名には古代政治の中枢の記憶が埋め込まれています。これらの地名を丁寧に解読することで、古代磐田の姿が浮かび上がってくるのです。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background: #efe6d4;">
+  <div class="wrap">
+    <h2 class="sec-title">官道と流通ネットワーク</h2>
+    <div class="card">
+      <p>古代の磐田は、官道を通じて中央権力と結ばれていました。この流通ネットワークは、地域経済の発展を促し、文化交流をもたらしました。出土品、古地図、文献資料を組み合わせながら、古代遠江の全体像を描きます。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div style="font-family: 'Shippori Mincho', serif; font-weight: 700; font-size: 22px; margin-bottom: 8px;">磐田物語。</div>
+    <p style="font-size: 13px; margin: 0 0 12px; line-height: 1.8;">静岡県磐田市の歴史と文化を綴る地域史サイト。古代から現代までの地域記憶を未来へ。</p>
+    <p style="border-top: 1px solid rgba(255,255,255,.12); padding-top: 20px; margin-top: 20px; font-size: 12.5px;">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</p>
   </div>
 </footer>
-
 </body>
 </html>
