@@ -14,10 +14,10 @@ pages_build_output_dir = "."
 #   （または Cloudflare ダッシュボードの Pages → Settings → Functions →
 #     D1 database bindings で binding 名 "DB" として設定してもよい）
 # ============================================================
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "iwata_monogatari_bbs"
-# database_id = "ここに実際のIDを貼る"
+[[d1_databases]]
+binding = "DB"
+database_name = "iwata_monogatari_bbs"
+database_id = "666f5bc9-49df-4ae9-b8fa-02f0d9a4e4e4"
 
 # 環境変数（Secrets はダッシュボードまたは `wrangler pages secret put` で設定する。
 # wrangler.toml には秘密情報を直接書かないこと）
