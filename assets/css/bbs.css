@@ -1,0 +1,211 @@
+/* 磐田物語 みんなの掲示板
+   方向性: 昔ながらの地域掲示板風 / 生成り背景・茶系の枠線・サックスブルーの差し色。
+   緑系の旧テーマ色は使わない。 */
+
+:root {
+  --bbs-bg: #f7f1e3;
+  --bbs-paper: #fffdf7;
+  --bbs-ink: #2b2118;
+  --bbs-sub: #6c5f4c;
+  --bbs-border: #d8c7a3;
+  --bbs-border-strong: #c2ad82;
+  --bbs-accent: #4a6d8c;       /* サックスブルー */
+  --bbs-accent-dark: #3a5874;
+  --bbs-no: #9a8255;
+  --bbs-danger: #9c4a3a;
+}
+
+.bbs-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px 16px 64px;
+  color: var(--bbs-ink);
+  background: var(--bbs-bg);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", serif;
+  line-height: 1.8;
+  -webkit-text-size-adjust: 100%;
+}
+
+.bbs-head { margin-bottom: 28px; }
+.bbs-kicker {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  color: var(--bbs-sub);
+  margin: 0 0 4px;
+}
+.bbs-head h1 {
+  font-size: 1.55rem;
+  margin: 0 0 14px;
+  line-height: 1.5;
+  border-bottom: 2px solid var(--bbs-border-strong);
+  padding-bottom: 10px;
+}
+.bbs-lead {
+  font-size: 0.98rem;
+  margin: 0 0 10px;
+  color: #3c3024;
+}
+.bbs-back { margin-top: 14px; font-size: 0.9rem; }
+.bbs-back a { color: var(--bbs-accent); text-decoration: none; }
+.bbs-back a:hover { text-decoration: underline; }
+
+/* 共通セクション見出し */
+.bbs-wrap h2 {
+  font-size: 1.18rem;
+  margin: 0 0 14px;
+  padding: 6px 12px;
+  background: var(--bbs-accent);
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  letter-spacing: 0.02em;
+}
+
+/* 投稿フォーム */
+.bbs-form-section,
+.bbs-rules,
+.bbs-posts-section {
+  margin-bottom: 34px;
+}
+.bbs-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: var(--bbs-paper);
+  border: 1px solid var(--bbs-border);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 18px 16px 20px;
+}
+.bbs-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.92rem;
+  color: var(--bbs-sub);
+}
+.bbs-form input[type="text"],
+.bbs-form input[type="url"],
+.bbs-form textarea {
+  font: inherit;
+  font-size: 1rem;
+  color: var(--bbs-ink);
+  background: #fff;
+  border: 1px solid var(--bbs-border-strong);
+  border-radius: 8px;
+  padding: 10px 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.bbs-form textarea {
+  min-height: 130px;
+  resize: vertical;
+  line-height: 1.7;
+}
+.bbs-form input:focus,
+.bbs-form textarea:focus {
+  outline: none;
+  border-color: var(--bbs-accent);
+  box-shadow: 0 0 0 3px rgba(74, 109, 140, 0.15);
+}
+.bbs-counter {
+  align-self: flex-end;
+  font-size: 0.78rem;
+  color: var(--bbs-sub);
+}
+.bbs-agree {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 8px !important;
+  font-size: 0.92rem;
+  color: var(--bbs-ink);
+}
+.bbs-agree input { width: auto; }
+
+.bbs-form button[type="submit"] {
+  align-self: flex-start;
+  font: inherit;
+  font-size: 1rem;
+  color: #fff;
+  background: var(--bbs-accent);
+  border: none;
+  border-radius: 10px;
+  padding: 11px 28px;
+  cursor: pointer;
+  transition: background .15s ease, transform .1s ease;
+}
+.bbs-form button[type="submit"]:hover { background: var(--bbs-accent-dark); }
+.bbs-form button[type="submit"]:active { transform: translateY(1px); }
+.bbs-form button[disabled] { opacity: .6; cursor: progress; }
+
+.bbs-message { margin: 4px 0 0; font-size: 0.92rem; min-height: 1.2em; }
+.bbs-message.ok { color: var(--bbs-accent-dark); }
+.bbs-message.err { color: var(--bbs-danger); }
+
+/* honeypot: 画面外へ追い出す */
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px; height: 1px;
+  opacity: 0;
+}
+
+/* 注意事項 */
+.bbs-rules {
+  background: var(--bbs-paper);
+  border: 1px solid var(--bbs-border);
+  border-radius: 12px;
+  padding: 0 0 16px;
+  overflow: hidden;
+}
+.bbs-rules p { margin: 12px 16px; font-size: 0.92rem; }
+.bbs-rules ul { margin: 12px 16px; padding-left: 1.2em; font-size: 0.9rem; }
+.bbs-rules li { margin-bottom: 6px; }
+
+/* 投稿一覧 */
+.bbs-posts-status { font-size: 0.9rem; color: var(--bbs-sub); margin: 0 0 14px; }
+.bbs-posts { display: flex; flex-direction: column; gap: 14px; }
+
+.bbs-post {
+  background: var(--bbs-paper);
+  border: 1px solid var(--bbs-border);
+  border-left: 4px solid var(--bbs-border-strong);
+  border-radius: 10px;
+  padding: 12px 14px 14px;
+}
+.bbs-post-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--bbs-sub);
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--bbs-border);
+}
+.bbs-no {
+  font-weight: 700;
+  color: var(--bbs-no);
+  font-variant-numeric: tabular-nums;
+}
+.bbs-name { font-weight: 700; color: var(--bbs-ink); }
+.bbs-area::before { content: "（"; }
+.bbs-area::after { content: "）"; }
+.bbs-body {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--bbs-ink);
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+.bbs-related {
+  margin: 10px 0 0;
+  font-size: 0.82rem;
+}
+.bbs-related a { color: var(--bbs-accent); word-break: break-all; }
+
+@media (max-width: 480px) {
+  .bbs-head h1 { font-size: 1.3rem; }
+  .bbs-wrap { padding: 16px 12px 48px; }
+}
