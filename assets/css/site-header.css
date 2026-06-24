@@ -32,9 +32,11 @@
 .gh-breadcrumb a{ color:#2f7fa3; text-decoration:none; }
 .gh-breadcrumb a:hover{ text-decoration:underline; }
 
-@media(max-width:680px){
-  .gh-menu{ display:none; }
+@media(max-width:760px){
+  .gh-bar{ height:auto; flex-wrap:wrap; padding:8px 14px; gap:6px 14px; }
   .gh-sub{ display:none; }
+  .gh-menu{ width:100%; gap:0; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  .gh-menu a{ flex:0 0 auto; padding:6px 12px; white-space:nowrap; }
 }
 
 /* === 高齢者配慮：既定の本文サイズ（site-header.css を読み込む全ページ共通） === */
