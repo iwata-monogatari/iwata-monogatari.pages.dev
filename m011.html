@@ -83,6 +83,28 @@
   .sg-grid .sg-era{color:#7a8a93;}
   .sg-credit{font-size:12px;color:var(--usuzumi);margin-top:6px;line-height:1.75;}
   .sg-credit strong{color:var(--matsu);}
+  .matsuri-academic-section{margin:40px 0;}
+  .matsuri-visual-card{background:#f7f1e3;border:1px solid #d8c3a5;border-radius:10px;padding:22px;margin:26px 0;box-shadow:0 2px 10px rgba(31,42,68,.06);}
+  .matsuri-visual-card h3{margin-top:0;color:#1f2a44;}
+  .matsuri-caption{font-size:13.5px;color:#5b6b74;line-height:1.8;margin-top:12px;}
+  .matsuri-table{width:100%;border-collapse:collapse;margin:18px 0 26px;background:#fffdf7;border:1px solid #d8c3a5;font-size:14px;}
+  .matsuri-table caption{text-align:left;font-family:"Shippori Mincho",serif;font-weight:600;color:#1f2a44;margin:0 0 8px;}
+  .matsuri-table th,.matsuri-table td{border:1px solid #e4d6bd;padding:10px 12px;vertical-align:top;line-height:1.75;}
+  .matsuri-table th{background:#f7f1e3;color:#1f2a44;white-space:nowrap;}
+  .matsuri-cards{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:18px 0 24px;}
+  .matsuri-card{background:#fffdf7;border:1px solid #d8c3a5;border-radius:10px;padding:16px 14px;}
+  .matsuri-card strong{display:block;font-family:"Shippori Mincho",serif;color:#9b3d2e;font-size:17px;margin-bottom:5px;}
+  .matsuri-card p{font-size:13.5px;line-height:1.75;margin:0;color:#3a4750;}
+  .matsuri-flow{display:grid;grid-template-columns:1fr;gap:10px;margin:16px 0;}
+  .matsuri-flow div{display:flex;gap:12px;align-items:center;background:#fffdf7;border:1px solid #d8c3a5;border-radius:10px;padding:12px 14px;}
+  .matsuri-flow b{min-width:9em;color:#1f2a44;}
+  .matsuri-flow span{font-size:14px;color:#5b6b74;}
+  .matsuri-timeline{position:relative;margin:18px 0 26px;padding-left:20px;border-left:3px solid #b8944d;}
+  .matsuri-timeline article{position:relative;margin:0 0 16px;padding:12px 14px;background:#fffdf7;border:1px solid #d8c3a5;border-radius:10px;}
+  .matsuri-timeline article::before{content:"";position:absolute;left:-27px;top:18px;width:11px;height:11px;border-radius:50%;background:#9b3d2e;border:2px solid #f7f1e3;}
+  .matsuri-timeline time{display:block;font-weight:700;color:#9b3d2e;margin-bottom:3px;}
+  .matsuri-timeline p{font-size:14px;line-height:1.75;margin:0;color:#3a4750;}
+  .children .ch-label{display:inline-block;font-size:11px;color:#fff;background:#9b3d2e;border-radius:999px;padding:2px 8px;margin-bottom:8px;letter-spacing:.04em;}
   footer.site{background:var(--matsu);color:#eee;margin-top:54px;}
   .foot-inner{max-width:760px;margin:0 auto;padding:34px 22px;}
   .foot-inner .mincho{font-size:18px;color:#fff;display:block;margin-bottom:12px;}
@@ -92,7 +114,8 @@
   .foot-links li{margin-bottom:7px;font-size:14px;}
   .foot-links a{color:#eef6fb;}
   .copy{font-size:12px;color:#a9c6d2;margin-top:22px;}
-  @media(max-width:600px){h1{font-size:24px;}body{font-size:16px;}h2{font-size:19px;}.children{grid-template-columns:1fr;}.infobox dl{grid-template-columns:1fr;}.infobox dt{border-bottom:none;padding-bottom:0;}.sg-grid{grid-template-columns:1fr 1fr;}.sg-grid img{height:128px;}}
+  @media(max-width:760px){.matsuri-cards{grid-template-columns:1fr 1fr;}.matsuri-table,.matsuri-table tbody,.matsuri-table tr,.matsuri-table th,.matsuri-table td{display:block;width:100%;}.matsuri-table tr{border-bottom:2px solid #d8c3a5;}.matsuri-table th{border-bottom:none;}.matsuri-flow div{display:block;}.matsuri-flow b{display:block;margin-bottom:3px;}}
+  @media(max-width:600px){h1{font-size:24px;}body{font-size:16px;}h2{font-size:19px;}.children{grid-template-columns:1fr;}.infobox dl{grid-template-columns:1fr;}.infobox dt{border-bottom:none;padding-bottom:0;}.sg-grid{grid-template-columns:1fr 1fr;}.sg-grid img{height:128px;}.matsuri-cards{grid-template-columns:1fr;}.matsuri-visual-card{padding:16px;}}
 </style>
   <link rel="canonical" href="https://iwata-monogatari.pages.dev/m011.html">
 <style id="reno-blocks">
@@ -140,18 +163,60 @@
   <h1>見付天神裸祭<br>── 闇に渡る、遠江総社への神事</h1>
 
   <div class="lead">
-    腰蓑をつけた男たちが、夜のまちを練り、拝殿でぶつかり合う。やがて灯りはすべて消え、漆黒の闇のなかを、神輿が静かに渡っていく。見付天神裸祭である。「天下の奇祭」と称されるこの祭りは、ただ勇壮なだけの祭りではない。約八日間にわたる徹底した祓いと清め、そして氏神が遠江国の総社へと渡る、深い信仰の神事である。この特集では、神社公式の解説をこえて、神事の構造・起源・伝説・文化財としての継承を、史実と伝承を分けながら、できるかぎり正確にまとめたい。
+    腰蓑をつけた男たちが、夜のまちを練り、拝殿でぶつかり合う。やがて灯りはすべて消え、漆黒の闇のなかを、神輿が静かに渡っていく。見付天神裸祭である。「天下の奇祭」と称されるこの祭りは、ただ勇壮なだけの祭りではない。約八日間にわたる徹底した祓いと清め、そして氏神が遠江国の総社へと渡る、深い信仰の神事である。この祭りを読む鍵は、勇壮さだけではない。闇、身体、清め、町内組織、伝承、そして変わりながら続く共同体の力である。この特集では、神社公式の解説をこえて、神事の構造・起源・伝説・文化財としての継承を、史実と伝承を分けながら、できるかぎり正確にまとめたい。
   </div>
 
   <div class="note">
     <strong>この特集について。</strong>本ページ群は、磐田市・文化庁・矢奈比賣神社・見付天神裸祭保存会の公式資料に加え、谷部真吾・大林太良・野本寛一らの民俗学的研究を参照してまとめた、地域に関わり続ける者による調査の覚え書きである。<strong>史実として史料で確認できる事項</strong>と、<strong>社伝・口碑・伝説にとどまる事項</strong>は、本文中で明確に区別して記す。学術的に未確定の事項については、その旨を付記する。
   </div>
 
+  <section class="matsuri-academic-section" aria-labelledby="matsuri-overview-visual">
+    <h2 id="matsuri-overview-visual">まず一枚で見る：見付天神裸祭とは何か</h2>
+    <figure class="matsuri-visual-card">
+      <svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="闇・身体・清め・渡御で読む見付天神裸祭の概念図">
+        <rect width="760" height="360" rx="18" fill="#1f2a44"/>
+        <path d="M30 260 C120 220 170 285 250 245 S410 215 500 245 S640 285 730 235" fill="none" stroke="#3f7899" stroke-width="18" opacity=".7"/>
+        <path d="M80 210 C160 185 250 178 350 185 C470 194 565 180 680 140" fill="none" stroke="#d8c3a5" stroke-width="10" stroke-linecap="round"/>
+        <circle cx="120" cy="250" r="46" fill="#3f7899" opacity=".95"/>
+        <circle cx="375" cy="185" r="58" fill="#f7f1e3" opacity=".96"/>
+        <circle cx="640" cy="125" r="48" fill="#9b3d2e" opacity=".96"/>
+        <path d="M320 210 q55 45 110 0" fill="none" stroke="#b8944d" stroke-width="7" stroke-linecap="round"/>
+        <path d="M612 155 C570 185 500 195 430 195" fill="none" stroke="#b8944d" stroke-width="5" stroke-dasharray="8 7" stroke-linecap="round"/>
+        <text x="380" y="44" text-anchor="middle" font-size="23" fill="#f7f1e3" font-family="Shippori Mincho, serif">闇・身体・清め・渡御で読む見付天神裸祭</text>
+        <text x="120" y="246" text-anchor="middle" font-size="18" fill="#fff" font-weight="700">福田の海</text>
+        <text x="120" y="270" text-anchor="middle" font-size="13" fill="#e9f3fa">浜垢離</text>
+        <text x="375" y="174" text-anchor="middle" font-size="19" fill="#1f2a44" font-weight="700">見付の町</text>
+        <text x="375" y="199" text-anchor="middle" font-size="13" fill="#5b4f3c">旧東海道・裸練り・鬼踊り</text>
+        <text x="640" y="118" text-anchor="middle" font-size="17" fill="#fff" font-weight="700">淡海國玉神社</text>
+        <text x="640" y="142" text-anchor="middle" font-size="13" fill="#f7f1e3">遠江国総社への渡御</text>
+        <text x="160" y="318" text-anchor="middle" font-size="13" fill="#f7f1e3">海で清める</text>
+        <text x="300" y="318" text-anchor="middle" font-size="13" fill="#f7f1e3">町を清める</text>
+        <text x="455" y="318" text-anchor="middle" font-size="13" fill="#f7f1e3">身体で祓う</text>
+        <text x="615" y="318" text-anchor="middle" font-size="13" fill="#f7f1e3">闇の中を神が渡る</text>
+      </svg>
+      <figcaption class="matsuri-caption">写真ではなく、ページ内で独自作成した概念図。福田の海での浜垢離、見付宿と旧東海道、矢奈比賣神社から淡海國玉神社への渡御を一続きの清めの流れとして示している。</figcaption>
+    </figure>
+  </section>
+
   <h2>見付天神裸祭とは</h2>
 
   <p>見付天神裸祭は、磐田市見付に鎮まる矢奈比賣（やなひめ）神社――通称「見付天神」の大祭である。その中核をなすのは、矢奈比賣神社の祭神が、すぐ近くの淡海國玉（おうみくにたま）神社――遠江国の総社へと渡御する神事である。つまりこの祭りは、勇ましい「裸練り」や「鬼踊り」だけを指すのではなく、氏神が総社へ渡り、また還ってくるという、一連の渡御神事の全体を指している。</p>
 
   <p>祭りは、旧暦八月十日の直前の土曜・日曜を大祭とし、その準備は約八日前から始まる。浜での禊（みそぎ）、社殿の清祓い、そして大祭の夜の鬼踊りと、漆黒の闇のなかの神輿渡御。この長い祓いと清めの積み重ねの果てに、神は総社へと渡っていく。腰蓑姿の男たちが拝殿で乱舞する「鬼踊り」は、その渡御を成り立たせるための、重要な一場面なのである。</p>
+
+  <p>見付天神裸祭は、単に「裸の男たちが暴れる祭り」ではない。祭りの中心にあるのは、氏神を清浄な状態で総社へお渡しするために、町と身体と道を段階的に清めていく構造である。海、町内、旧東海道、見付天神、淡海國玉神社が一つにつながり、磐田市見付という地域全体が一時的に神事の空間へと変わる。</p>
+
+  <table class="matsuri-table">
+    <caption>見付天神裸祭を構成する五つの層</caption>
+    <thead><tr><th>層</th><th>内容</th><th>読み解き</th></tr></thead>
+    <tbody>
+      <tr><th>信仰の層</th><td>矢奈比賣神社から淡海國玉神社への渡御</td><td>氏神と遠江国総社の関係</td></tr>
+      <tr><th>身体の層</th><td>裸練り・鬼踊り・浜垢離</td><td>身体による清め</td></tr>
+      <tr><th>空間の層</th><td>海・町・旧東海道・神社</td><td>町全体の聖化</td></tr>
+      <tr><th>伝承の層</th><td>悉平太郎・人身御供・怪物退治</td><td>地域の物語化</td></tr>
+      <tr><th>継承の層</th><td>保存会・梯団・町内・文化財指定</td><td>共同体による維持</td></tr>
+    </tbody>
+  </table>
 
   <div class="infobox">
     <dl>
@@ -165,11 +230,24 @@
     </dl>
   </div>
 
-  <h2>なぜ「奇祭」とよばれるのか</h2>
+  <h2>「奇祭」と呼ぶ前に見るべきこと</h2>
 
   <p>この祭りが「奇祭」と称される理由は、いくつかある。第一に、神輿の渡御が、まちじゅうの灯りを消した漆黒の闇のなかで行われること。第二に、腰蓑をまとった裸の男たちが、拝殿に飛び込み、もみ合いながら乱舞する「鬼踊り」の異様な熱気。そして第三に、その背後に、人身御供（ひとみごくう）と霊犬・悉平太郎（しっぺいたろう）の伝説という、ただならぬ物語を背負っていることである。</p>
 
   <p>ただし、注意したいことがある。「奇祭」という言葉の印象だけで、この祭りを「変わった見世物」のように捉えてしまうと、本質を見あやまる。岡山の西大寺会陽や愛知の国府宮はだか祭のような、冬に宝木（しんぎ）を奪い合う裸祭とは、見付天神裸祭は性格が異なる。これは秋祭りであり、奪い合いの祭りではない。あくまで、氏神を総社へお渡しするための、祓いと清めの神事なのである。その点を踏まえてはじめて、この祭りの深さが見えてくる。</p>
+
+  <p>「奇祭」という言葉は人を惹きつける一方で、祭りを外から眺める見世物として固定してしまう危険がある。見付天神裸祭は、観光的に珍しい祭りである以前に、見付の人々が自分たちの町を清め、神を送り、また迎えるための共同体儀礼である。共同体儀礼とは、地域の人々が役割を分担し、同じ時間と場所を共有することで、地域の結びつきを確かめる行為をいう。</p>
+
+  <table class="matsuri-table">
+    <caption>見世物として見るか、儀礼として読むか</caption>
+    <thead><tr><th>見方</th><th>見えてくるもの</th><th>見落とすもの</th></tr></thead>
+    <tbody>
+      <tr><th>奇祭として見る</th><td>裸、熱気、闇、非日常</td><td>祓い、清め、渡御、共同体</td></tr>
+      <tr><th>観光行事として見る</th><td>人出、迫力、写真映え</td><td>町内組織、氏子の役割</td></tr>
+      <tr><th>民俗学的に読む</th><td>儀礼構造、身体所作、伝承</td><td>すぐには分かりにくいが本質に近い部分</td></tr>
+      <tr><th>社会学的に読む</th><td>地域の結束、継承、変化</td><td>祭りを支える日常の負担</td></tr>
+    </tbody>
+  </table>
 
   <figure>
     <div class="fig-box">
@@ -208,9 +286,138 @@
     </div>
   </figure>
 
+  <section class="matsuri-academic-section">
+    <h2>祭りを読む五つの視点</h2>
+    <div class="matsuri-cards">
+      <div class="matsuri-card"><strong>闇</strong><p>灯りを消すことで、日常の町が神事の空間へ切り替わる。</p></div>
+      <div class="matsuri-card"><strong>身体</strong><p>裸練りや鬼踊りは、身体そのものを使って場を清める行為である。</p></div>
+      <div class="matsuri-card"><strong>境界</strong><p>海、町境、神社、総社という境界を行き来することで祭りは進行する。</p></div>
+      <div class="matsuri-card"><strong>伝承</strong><p>悉平太郎伝説は、地域が祭りを意味づける物語として読む。</p></div>
+      <div class="matsuri-card"><strong>継承</strong><p>保存会、町内、梯団、参加者によって維持される社会的な仕組みである。</p></div>
+    </div>
+    <figure class="matsuri-visual-card">
+      <svg viewBox="0 0 620 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="見付天神裸祭を読む五つの視点を円形に示した図">
+        <rect width="620" height="360" rx="16" fill="#fffdf7"/>
+        <circle cx="310" cy="180" r="72" fill="#1f2a44"/>
+        <text x="310" y="174" text-anchor="middle" fill="#fff" font-size="18" font-family="Shippori Mincho, serif">見付天神</text>
+        <text x="310" y="200" text-anchor="middle" fill="#fff" font-size="18" font-family="Shippori Mincho, serif">裸祭</text>
+        <g fill="#f7f1e3" stroke="#b8944d" stroke-width="2">
+          <circle cx="310" cy="55" r="45"/><circle cx="488" cy="132" r="45"/><circle cx="420" cy="292" r="45"/><circle cx="200" cy="292" r="45"/><circle cx="132" cy="132" r="45"/>
+        </g>
+        <g stroke="#b8944d" stroke-width="2" opacity=".75"><line x1="310" y1="108" x2="310" y2="130"/><line x1="448" y1="145" x2="377" y2="165"/><line x1="397" y1="257" x2="350" y2="230"/><line x1="223" y1="257" x2="270" y2="230"/><line x1="172" y1="145" x2="243" y2="165"/></g>
+        <g font-size="18" fill="#1f2a44" font-weight="700"><text x="310" y="62" text-anchor="middle">闇</text><text x="488" y="139" text-anchor="middle">身体</text><text x="420" y="299" text-anchor="middle">境界</text><text x="200" y="299" text-anchor="middle">伝承</text><text x="132" y="139" text-anchor="middle">継承</text></g>
+      </svg>
+      <figcaption class="matsuri-caption">五つの視点は競合するものではなく、互いに重なり合う。闇は空間を変え、身体は清めを行い、伝承は意味を与え、継承はそれを社会の仕組みとして維持する。</figcaption>
+    </figure>
+  </section>
+
+  <section class="matsuri-academic-section">
+    <h2>史実・伝承・学説を分けて読む</h2>
+    <p>見付天神裸祭を読むときには、史料で確認できる事実、神社や保存会に伝わる由緒、地域に語り継がれた伝説、研究者による学術仮説を分ける必要がある。とくに悉平太郎、人身御供、鬼踊りの起源は、魅力的な物語であるほど断定を避け、何が確認済みで何が考察なのかを示したい。</p>
+    <table class="matsuri-table">
+      <caption>このページでの扱い方</caption>
+      <thead><tr><th>項目</th><th>区分</th><th>扱い方</th></tr></thead>
+      <tbody>
+        <tr><th>国指定重要無形民俗文化財</th><td>確認できる事実</td><td>指定年月日・種別・保護団体を明記する。</td></tr>
+        <tr><th>旧暦八月十日直前の土日開催</th><td>確認できる事実</td><td>現在の公開時期として記す。</td></tr>
+        <tr><th>矢奈比賣神社から淡海國玉神社への渡御</th><td>神事の中核</td><td>祭りの本質として記す。</td></tr>
+        <tr><th>菅原道真勧請説</th><td>社伝・由緒</td><td>史実部分と起源説を分ける。</td></tr>
+        <tr><th>悉平太郎伝説</th><td>伝説・口碑</td><td>物語として尊重し、史実とは断定しない。</td></tr>
+        <tr><th>鬼踊り＝反閇説</th><td>学術仮説</td><td>民俗学的な有力な読み方として紹介する。</td></tr>
+        <tr><th>人身御供</th><td>伝承上の要素</td><td>実在を断定せず、語られてきた意味を考察する。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="matsuri-academic-section">
+    <h2>町はどのように神事の空間へ変わるのか</h2>
+    <p>祭りは、見付天神の境内だけで行われるものではない。御斯葉下ろしによって町の要所が清められ、浜垢離によって海の力が持ち帰られ、御池の清祓いによって社殿と境内が清められる。その後、裸衆が町を練り、拝殿で鬼踊りを行い、神輿が遠江国総社である淡海國玉神社へ渡る。</p>
+    <div class="matsuri-flow" aria-label="海・町・神社・総社をつなぐ清めの流れ">
+      <div><b>福田の海</b><span>浜垢離。海で身体を清め、その力を町へ持ち帰る。</span></div>
+      <div><b>見付の町</b><span>御斯葉下ろし・裸練り。見付宿と旧東海道を神事の場へ変える。</span></div>
+      <div><b>矢奈比賣神社</b><span>鬼踊り・神輿出御。拝殿と境内を清め、神を送り出す。</span></div>
+      <div><b>淡海國玉神社</b><span>総社への渡御。氏神が遠江国総社へ渡る。</span></div>
+      <div><b>見付へ戻る</b><span>還御。神を迎え、町の時間が日常へ戻っていく。</span></div>
+    </div>
+  </section>
+
+  <section class="matsuri-academic-section">
+    <h2>鬼踊りは何をしているのか</h2>
+    <p>鬼踊りは、外から見ると激しい乱舞に見える。しかし民俗学的には、これは無秩序な暴れではなく、場を踏み鎮め、神輿が出御するための清浄な状態をつくる所作として読むことができる。「反閇」とは、地面を強く踏みしめることで邪気を鎮めるとされる古い呪術的所作である。</p>
+    <p>この見方に立つと、鬼踊りは祭りの余興ではない。神をお渡しする前に、町と拝殿を清めるための、きわめて重要な儀礼である。</p>
+    <table class="matsuri-table">
+      <caption>鬼踊りの意味：熱狂の奥にある清め</caption>
+      <thead><tr><th>外から見た鬼踊り</th><th>内側から読んだ鬼踊り</th></tr></thead>
+      <tbody>
+        <tr><td>激しい、裸、ぶつかる、「奇祭」</td><td>踏み鎮める、祓う、神輿を出す準備、共同体の清め</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="matsuri-academic-section">
+    <h2>悉平太郎伝説は、何を語っているのか</h2>
+    <p>悉平太郎伝説は、史実として確認するための物語というより、地域が災厄、救済、感謝、再生を語るための物語として読むべきである。人身御供の悲しみ、怪物退治、犬による救済、喜びの踊り。この物語は、祭りに劇的な意味を与え、子どもにも伝わるかたちで地域の記憶を残してきた。</p>
+    <p>ただし、伝説と祭りの関係は単純ではない。近世文書と現在の伝承には差があり、悉平太郎伝説が現在の形に整っていく過程そのものも、地域の記憶の変化として重要である。</p>
+    <table class="matsuri-table">
+      <caption>悉平太郎伝説を読む三つのレベル</caption>
+      <thead><tr><th>レベル</th><th>読み方</th><th>注意点</th></tr></thead>
+      <tbody>
+        <tr><th>物語として</th><td>怪物を犬が退治する救済譚</td><td>子どもにも伝わる強い物語性</td></tr>
+        <tr><th>民俗学として</th><td>全国の猿神退治譚の一類型</td><td>見付だけの孤立した話ではない</td></tr>
+        <tr><th>地域社会として</th><td>見付の誇り・しっぺい文化の源</td><td>現代の地域アイデンティティに接続する</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="matsuri-academic-section">
+    <h2>祭りを支える町内・梯団・保存会</h2>
+    <p>見付天神裸祭は、個人の信仰だけで続いているのではない。町内、祭組、梯団、年行事、保存会といった組織があり、それぞれが役割を担うことで初めて成り立つ。この構造は、見付という地域社会の結びつきを可視化する仕組みでもある。</p>
+    <figure class="matsuri-visual-card">
+      <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="見付天神裸祭を支える関係図">
+        <rect width="640" height="360" rx="16" fill="#fffdf7"/>
+        <g font-size="15" text-anchor="middle" font-weight="700">
+          <rect x="220" y="28" width="200" height="44" rx="8" fill="#1f2a44"/><text x="320" y="56" fill="#fff">矢奈比賣神社</text>
+          <rect x="185" y="92" width="270" height="44" rx="8" fill="#b8944d"/><text x="320" y="120" fill="#1f2a44">見付天神裸祭保存会</text>
+          <rect x="210" y="156" width="220" height="44" rx="8" fill="#9b3d2e"/><text x="320" y="184" fill="#fff">四つの梯団</text>
+          <rect x="165" y="220" width="310" height="44" rx="8" fill="#d8c3a5"/><text x="320" y="248" fill="#1f2a44">各町内・祭組</text>
+          <rect x="110" y="284" width="420" height="44" rx="8" fill="#3f7899"/><text x="320" y="312" fill="#fff">年行事・輿番・参加者・見物人・次世代</text>
+        </g>
+        <g stroke="#b8944d" stroke-width="3"><line x1="320" y1="72" x2="320" y2="92"/><line x1="320" y1="136" x2="320" y2="156"/><line x1="320" y1="200" x2="320" y2="220"/><line x1="320" y1="264" x2="320" y2="284"/></g>
+      </svg>
+      <figcaption class="matsuri-caption">これは厳密な組織図ではなく、祭りを支える関係図である。祭りに参加することは、どの町内に属し、どの役割を引き受けるのかを確認する社会的な行為でもある。</figcaption>
+    </figure>
+  </section>
+
+  <section class="matsuri-academic-section">
+    <h2>変わりながら続くということ</h2>
+    <p>無形文化財は、古い形を冷凍保存するものではない。祭りは、人が参加し、町が支え、時代の条件に合わせて調整されることで続いていく。見付天神裸祭も、開催時刻、交通、浜垢離の移動手段、安全管理、感染症対策など、社会の変化に応じて姿を変えてきた。それでも、清め、鬼踊り、闇の渡御、還御という核心は守られている。</p>
+    <p>大切なのは、「変わったから本物ではない」と見ることではない。変える部分と変えてはならない部分を見極めてきたからこそ、祭りは続いている。</p>
+    <div class="matsuri-timeline" aria-label="見付天神裸祭をめぐる歴史と変化">
+      <article><time>840年</time><p>矢奈比賣神に神階が授けられる。古社としての由緒を示す。</p></article>
+      <article><time>860年</time><p>神階に関する記録。平安期からの信仰を考える手がかり。</p></article>
+      <article><time>993年</time><p>菅原道真勧請と伝わる。天神信仰との接続として扱う。</p></article>
+      <article><time>近世後期</time><p>祭礼の記録が残る。現在に近い構成が見える。</p></article>
+      <article><time>1898年</time><p>『風俗画報』に鬼踊りの記述。反閇説を考える手がかり。</p></article>
+      <article><time>1960〜61年頃</time><p>時間・交通・浜垢離の形が変化。社会状況に応じた変容。</p></article>
+      <article><time>2000年</time><p>国重要無形民俗文化財に指定。文化財として評価される。</p></article>
+      <article><time>2020〜22年頃</time><p>コロナ禍による縮小と再開。継承の危機と回復。</p></article>
+      <article><time>現在</time><p>保存会・町内・参加者により継承。次世代への課題も残る。</p></article>
+    </div>
+  </section>
+
   <section class="sg-sec">
     <h2>佐口史料に見る、裸祭の記憶</h2>
     <p class="sg-lead">見付の旧家・佐口行正氏が遺した絵葉書や祭礼写真には、大正・昭和の裸祭がいきいきと写しとられている。腰蓑をまとった青年会の正装、浜での禊（浜垢離）、各町が競って曳いた船屋台――紙片に残る、まちの晴れ姿である。画像をクリックすると目録で大きく見られる。</p>
+    <p class="sg-lead">佐口行正氏所蔵の絵葉書や写真は、単なる昔の祭りの記録ではない。そこには、青年会、腰蓑、浜垢離、船屋台、町内の誇り、時代ごとの祭りの見せ方が写っている。</p>
+    <table class="matsuri-table">
+      <caption>佐口資料を見る三つの視点</caption>
+      <thead><tr><th>視点</th><th>見るポイント</th></tr></thead>
+      <tbody>
+        <tr><th>身体</th><td>裸衆、腰蓑、姿勢、密集、表情</td></tr>
+        <tr><th>町</th><td>通り、神社、屋台、町内名</td></tr>
+        <tr><th>時代</th><td>大正・昭和の撮影意図、絵葉書文化、記録の残り方</td></tr>
+      </tbody>
+    </table>
     <div class="sg-grid">
       <figure><a href="/c019.html"><img src="/saguchi/img/eh-3.jpg" alt="男性的神事 裸祭ノ一 大正9年頃 佐口行正氏所蔵" loading="lazy"><figcaption><span class="sg-nm">男性的神事 裸祭ノ一</span><span class="sg-era">大正9年頃／見付町青年会</span></figcaption></a></figure>
       <figure><a href="/c019.html"><img src="/saguchi/img/eh-4.jpg" alt="男性的神事 裸祭ノ二 大正9年頃 佐口行正氏所蔵" loading="lazy"><figcaption><span class="sg-nm">男性的神事 裸祭ノ二</span><span class="sg-era">大正9年頃／見付町青年会</span></figcaption></a></figure>
@@ -231,24 +438,29 @@
   <h2>この特集の構成</h2>
 
   <p>見付天神裸祭は、一つの記事に収めきるには、あまりに多くのものを抱えている。神事の細かな次第、起源をめぐる複数の説、悉平太郎伝説の学術的な位置づけ、そして無形文化財としての保存の歩み。そこで本特集では、四つの子ページに分けて、それぞれを掘り下げた。順に読めば、この祭りの全体像が立ちあがってくるはずである。</p>
+  <p>この特集トップでは、見付天神裸祭を「祭り全体の構造」として見た。さらに詳しく知りたい場合は、次の四つの入口から読むとよい。神事の流れ、起源説、悉平太郎伝説、無形文化財としての継承。この四つを合わせることで、見付天神裸祭は、単なる祭礼紹介ではなく、見付という地域社会を読み解く大きな資料になる。</p>
 
   <div class="children">
     <a href="https://iwata-monogatari.pages.dev/m008.html">
+      <span class="ch-label">神事を知る</span>
       <span class="ch-num">其の一</span>
       <span class="ch-ttl">神事の構造と日程</span>
       <span class="ch-desc">祭事始から浜垢離、鬼踊り、闇の渡御まで。約八日間の神事を時系列でたどり、各儀礼の名称と意味を解き明かす。</span>
     </a>
     <a href="https://iwata-monogatari.pages.dev/m007.html">
+      <span class="ch-label">起源を考える</span>
       <span class="ch-num">其の二</span>
       <span class="ch-ttl">起源をめぐる三つの説</span>
       <span class="ch-desc">菅原道真勧請説、人身御供・悉平太郎説、そして「反閇」説。起源の謎に、史料と学説の両面から迫る。</span>
     </a>
     <a href="https://iwata-monogatari.pages.dev/m010.html">
+      <span class="ch-label">伝説を読む</span>
       <span class="ch-num">其の三</span>
       <span class="ch-ttl">悉平太郎伝説の考察</span>
       <span class="ch-desc">信州・早太郎との異同、各地の猿神退治譚との比較、表記の変遷。伝説を民俗学の視点で読みとく。</span>
     </a>
     <a href="https://iwata-monogatari.pages.dev/m009.html">
+      <span class="ch-label">継承を見る</span>
       <span class="ch-num">其の四</span>
       <span class="ch-ttl">無形文化財としての継承</span>
       <span class="ch-desc">国指定の経緯、祭りの変容、コロナ禍からの復活、担い手の課題。受け継がれる祭りの現在を見つめる。</span>
@@ -260,6 +472,8 @@
   <p>見付天神裸祭は、ただ勇壮なだけの祭りではない。その背後には、千年の歴史をもつ古社の信仰があり、総社という古代の制度の記憶があり、人身御供という時代の影があり、霊犬の伝説がある。そして、それらすべてを抱えながら、この祭りは今も、毎年欠かさず行われている。八百年とも伝えられる時を越えて、まちの人々の手で受け継がれてきたのである。</p>
 
   <p>この特集が伝えたいのは、祭りの「すごさ」ではない。その奥行きである。腰蓑姿の熱気の向こうに、どれほど深い信仰と歴史と物語がたたみこまれているか。それを知って祭りを見れば、同じ闇の渡御が、まったく違って見えてくる。次の世代へ残したいのは、祭りそのものと同時に、「なぜこの祭りが続いてきたのか」を問うまなざしなのだと思う。</p>
+  <p>見付天神裸祭は、過去を保存しているだけの祭りではない。毎年、人が集まり、町が動き、役割が受け渡されることで、地域社会そのものを更新している。祭りとは、昔の記憶をそのまま置いておく箱ではない。人が身体を使い、声を出し、道を歩き、神を送り迎えすることで、地域が自分自身を思い出す時間である。</p>
+  <p>だからこそ、この祭りを記録することは、単に「珍しい祭り」を紹介することではない。見付という町が、どのように信仰を持ち、どのように記憶を継ぎ、どのように変化を受け入れながら続いてきたのかを記録することなのである。</p>
 
   <h3>主な参考文献</h3>
   <div class="refs">
