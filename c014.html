@@ -3,51 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>はじめに ｜ 磐田物語</title>
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
-<link rel="icon" href="/favicon.ico" sizes="any">
+<title>連載 まちの成り立ち ── 旧磐田市の村々をたどる【目次】 ｜ 磐田物語</title>
+<meta name="description" content="見付・中泉・二之宮・西貝塚・鎌田――いまの磐田市の住所に残る地名は、かつて独立した村の名だった。江戸の村高帳と明治の町村制から磐田市までの歩みを、年表・図表・Q&Aで解説する全11回の連載「まちの成り立ち」の目次。">
+<link rel="canonical" href="https://iwata-monogatari.pages.dev/c014.html">
+<meta property="og:title" content="連載 まちの成り立ち ── 旧磐田市の村々をたどる【目次】 ｜ 磐田物語">
+<meta property="og:description" content="数十の村が、見付町と中泉町に、やがて磐田町・磐田市に。旧磐田市の成り立ちを年表・図表で解説する全11回の連載目次。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://iwata-monogatari.pages.dev/c014.html">
+<meta property="og:image" content="https://iwata-monogatari.pages.dev/hero-mitsuke.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-<meta name="description" content="なぜ「磐田物語」を始めたのか。介護と不動産の会社を営む大石浩之が、消えゆくまちの記憶を少しでも後世へ残したいという思いを綴ります。">
-<meta property="og:title" content="はじめに ｜ 磐田物語">
-<meta property="og:description" content="消えゆくまちの記憶を、少しでも後世へ。介護と不動産の現場から綴る、このサイトを始めた思い。">
-<meta property="og:type" content="article">
-<meta property="og:locale" content="ja_JP">
+<link rel="apple-touch-icon" href="/favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#fffdf7;
-    --paper-deep:#e9f3fa;
-    --ink:#1f3a48;
-    --ink-soft:#5b6b74;
-    --brown:#2f7fa3;
-    --brown-deep:#1f4f6f;
-    --accent-blue:#356f88;
-    --line:#d8e8ef;
-    --card:#fffdf7;
-    --shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+    --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
+    --brown:#2f7fa3;--brown-deep:#1f4f6f;--accent-blue:#356f88;--line:#d8e8ef;
+    --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  body{
-    margin:0;background:var(--paper);color:var(--ink);
+  body{margin:0;background:var(--paper);color:var(--ink);
     font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
     line-height:1.95;font-size:17px;letter-spacing:.02em;
-    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
-  }
+    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
   .mincho{font-family:"Shippori Mincho",serif;}
-  body::before{
-    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
     background-image:
       radial-gradient(circle at 20% 30%, rgba(166,113,62,.035) 0, transparent 38%),
-      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);
-  }
+      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);}
   a{color:var(--brown-deep);text-underline-offset:3px;}
 
-  /* ヘッダー */
   header.site{background:var(--card);border-bottom:1px solid var(--line);}
   .bar{max-width:1040px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
   .brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;}
@@ -56,91 +47,72 @@
   .brand .tag{font-size:12.5px;color:var(--ink-soft);letter-spacing:.08em;}
   nav.menu{display:flex;gap:26px;}
   nav.menu a{text-decoration:none;color:var(--ink-soft);font-size:14.5px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
-  nav.menu a:hover,nav.menu a.current{color:var(--brown-deep);border-color:var(--brown);}
+  nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
 
-  /* 記事ヘッダー */
-  .article-head{max-width:760px;margin:0 auto;padding:64px 24px 36px;}
-  .article-head .eyebrow{font-size:13px;letter-spacing:.22em;color:var(--accent-blue);font-weight:700;margin:0 0 18px;}
-  .article-head h1{
-    font-family:"Shippori Mincho",serif;font-weight:800;
-    font-size:clamp(28px,5vw,42px);line-height:1.5;margin:0 0 22px;
-    color:var(--ink);letter-spacing:.03em;
-  }
-  .article-head .sub{font-size:16px;color:var(--ink-soft);margin:0;line-height:1.9;}
-  .article-head .byline{
-    margin-top:26px;padding-top:20px;border-top:1px solid var(--line);
-    font-size:14px;color:var(--ink-soft);
-  }
-  .article-head .byline strong{color:var(--ink);font-weight:700;}
+  .crumbs{max-width:980px;margin:0 auto;padding:24px 24px 0;font-size:13px;color:var(--ink-soft);}
+  .crumbs a{text-decoration:none;}
+  .crumbs a:hover{text-decoration:underline;}
 
-  /* 本文 */
-  .article{max-width:760px;margin:0 auto;padding:8px 24px 64px;}
-  .article h2{
-    font-family:"Shippori Mincho",serif;font-weight:700;font-size:23px;
-    color:var(--ink);letter-spacing:.03em;margin:54px 0 20px;
-    padding-left:16px;border-left:4px solid var(--brown);line-height:1.5;
-  }
-  .article p{margin:0 0 22px;color:var(--ink);}
-  .article p.lead{font-size:18.5px;color:var(--ink);line-height:2.1;}
+  .backbanner{max-width:980px;margin:18px auto 0;padding:0 24px;}
+  .backbanner a{display:flex;flex-wrap:wrap;gap:3px 12px;align-items:baseline;background:var(--card);
+    border:1px solid var(--line);border-left:4px solid var(--brown);border-radius:3px;
+    padding:13px 20px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.2s;}
+  .backbanner a:hover{border-color:var(--brown);}
+  .backbanner .bb-main{font-weight:700;font-size:14px;color:var(--brown-deep);}
+  .backbanner .bb-sub{font-size:12.5px;color:var(--ink-soft);}
 
-  /* 引用調の強調ブロック */
-  .pull{
-    background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent-blue);
-    border-radius:3px;padding:26px 30px;margin:32px 0;box-shadow:var(--shadow);
-  }
-  .pull p{margin:0;font-family:"Shippori Mincho",serif;font-size:19px;color:var(--ink);line-height:2;}
+  .hub-head{max-width:760px;margin:0 auto;padding:28px 24px 4px;}
+  .hub-head .cat{font-size:13px;letter-spacing:.18em;color:var(--accent-blue);font-weight:700;margin:0 0 16px;}
+  .hub-head .cat .no{color:var(--brown);}
+  .hub-head h1{font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(28px,5vw,44px);line-height:1.45;margin:0 0 20px;color:var(--ink);letter-spacing:.03em;}
+  .hub-head .sub{font-size:16.5px;color:var(--ink-soft);margin:0 0 8px;line-height:1.95;}
 
-  /* 記憶の例リスト */
-  .voices{
-    background:var(--paper-deep);border-radius:3px;padding:28px 32px;margin:32px 0;
-  }
-  .voices p{margin:0 0 12px;font-family:"Shippori Mincho",serif;color:var(--ink);font-size:16.5px;line-height:1.85;}
-  .voices p:last-child{margin-bottom:0;}
-  .voices .v{color:var(--brown-deep);}
+  .hub-cover{max-width:760px;margin:24px auto 0;padding:0 24px;}
+  .hub-cover svg{width:100%;height:auto;display:block;border-radius:4px;
+    border:1px solid var(--line);box-shadow:var(--shadow);background:var(--card);}
+  .hub-cover figcaption{font-size:13px;color:var(--ink-soft);margin-top:10px;text-align:center;}
 
-  /* 署名 */
-  .sign{margin:48px 0 0;padding-top:28px;border-top:1px solid var(--line);text-align:right;}
-  .sign .name{font-family:"Shippori Mincho",serif;font-size:21px;color:var(--ink);font-weight:700;letter-spacing:.06em;}
-  .sign .role{font-size:13.5px;color:var(--ink-soft);margin-top:6px;}
+  .hub-intro{max-width:760px;margin:0 auto;padding:24px 24px 8px;}
+  .hub-intro p{margin:0 0 18px;}
+  .summary{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--brown);
+    border-radius:4px;padding:20px 26px;margin:8px auto 0;max-width:760px;box-shadow:var(--shadow);}
+  .summary .sh{font-family:"Shippori Mincho",serif;font-size:16px;margin:0 0 11px;color:var(--brown-deep);letter-spacing:.04em;font-weight:700;}
+  .summary ul{margin:0;padding:0;list-style:none;}
+  .summary li{position:relative;padding-left:22px;margin-bottom:8px;font-size:14.5px;line-height:1.8;}
+  .summary li::before{content:"";position:absolute;left:2px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--brown);}
+  .summary li:last-child{margin-bottom:0;}
 
-  /* 結びの戻りリンク */
-  .back-home{max-width:760px;margin:0 auto 64px;padding:0 24px;}
-  .back-home a{
-    display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
-    padding:13px 26px;border-radius:2px;background:var(--brown);color:#fff;transition:.2s;letter-spacing:.04em;
-  }
-  .back-home a:hover{background:var(--brown-deep);}
+  .hub-grid{max-width:980px;margin:18px auto 16px;padding:8px 24px 24px;
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;}
+  .hub-card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);
+    border-radius:5px;padding:22px 24px;text-decoration:none;color:inherit;box-shadow:var(--shadow);
+    transition:transform .18s,border-color .18s;}
+  .hub-card:hover{transform:translateY(-2px);border-color:var(--brown);}
+  .hub-card .kai{font-size:12px;letter-spacing:.1em;color:var(--brown);font-weight:700;margin-bottom:9px;}
+  .hub-card .t{font-family:"Shippori Mincho",serif;font-weight:700;font-size:18px;line-height:1.5;color:var(--ink);margin-bottom:9px;}
+  .hub-card .d{font-size:13.5px;color:var(--ink-soft);line-height:1.8;margin:0;flex:1;}
+  .hub-card .more{margin-top:13px;font-size:13px;font-weight:700;color:var(--brown-deep);letter-spacing:.04em;}
+  .hub-card.lead-card{border-left:4px solid var(--brown);}
 
-  /* フッター */
-  footer.site{background:var(--ink);color:#eaf4fa;}
-  footer.site .inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
-  footer .f-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-  footer .f-brand .dot{color:var(--brown);}
-  footer .f-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
-  footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
-  footer .links{width:100%;margin-top:6px;}
-  footer .links .lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-  footer .links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
-  footer .links li{font-size:13px;line-height:1.6;}
-  footer .links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-  footer .links a:hover{color:#eef6fb;border-color:#6fb7d8;}
-  footer .links .desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
-  footer .sns{width:100%;margin-top:20px;}
-  footer .sns .lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-  footer .sns .icons{display:flex;gap:14px;}
-  footer .sns a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
-  footer .sns a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
-  footer .sns svg{width:19px;height:19px;fill:currentColor;}
+  .hub-note{max-width:760px;margin:0 auto 8px;padding:8px 24px;font-size:13.5px;color:var(--ink-soft);line-height:1.85;}
+
+  .article-nav{max-width:760px;margin:8px auto 56px;padding:0 24px;display:flex;flex-wrap:wrap;gap:14px;}
+  .article-nav a{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
+    padding:13px 26px;border-radius:2px;transition:.2s;letter-spacing:.04em;}
+  .article-nav a.primary{background:var(--brown);color:#fff;}
+  .article-nav a.primary:hover{background:var(--brown-deep);}
+  .article-nav a.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
+  .article-nav a.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
+
+  .s-paper{fill:#fffdf7;} .s-line{stroke:#cfe2ec;} .s-ink{fill:#1f3a48;}
+  .s-brown{fill:#2f7fa3;} .s-pine{fill:#356f88;} .s-soft{fill:#5b6b74;}
+  .s-water{fill:#cfe2ec;}
 
   @media(max-width:760px){
     nav.menu{display:none;}
-    .article-head{padding:48px 22px 28px;}
-    .article{padding:8px 22px 48px;}
-    .pull{padding:22px 22px;}
-    .voices{padding:22px 22px;}
   }
 </style>
-  <link rel="canonical" href="https://iwata-monogatari.pages.dev/c007.html">
 <style id="reno-blocks">
 .article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
 .article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
@@ -178,95 +150,185 @@
   </div>
 </header>
 
-<div class="article-head">
-  <p class="eyebrow">はじめに ｜ GREETING</p>
-  <h1>消えゆく記憶を、<br>少しでも後世に残したい。</h1>
-  <p class="sub">介護と不動産という二つの仕事を通して、人の暮らしと、家の記憶と、地域の時間に触れてきた。その現場から、なぜこのサイトを始めたのかを書き留めておきたい。</p>
-  <div class="byline">綴る人 ── <strong>大石浩之</strong>（富士ヶ丘サービス株式会社 代表取締役）</div>
+<div class="backbanner"><a href="/"><span class="bb-main">◀ 「磐田物語」トップページへ</span><span class="bb-sub">佐口史料・古代・街道・社寺・裸祭・文化財ほかの読みものはこちら</span></a></div>
+
+<div class="crumbs"><a href="/">磐田物語</a> ／ 連載 まちの成り立ち（目次）</div>
+
+<div class="hub-head">
+  <p class="cat"><span class="no">連載・解説 全十一回</span> ｜ 旧磐田市の記憶</p>
+  <h1>まちの成り立ち<br>── 旧磐田市の村々をたどる</h1>
+  <p class="sub">いまの磐田市の住所に残る地名の多くは、かつて独立した村の名である。本連載は、江戸の村高帳・明治の町村制・現在の地名を手がかりに、旧磐田市がどのように成立したかを、年表・比較表・地名対応表・Q&Aで解説する全十一回のシリーズである。下の一覧から各回へ進める。</p>
 </div>
 
-<article class="article">
+<figure class="hub-cover">
+  <svg viewBox="0 0 760 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="旧磐田市域の村々が見付町・中泉町を経て磐田市へまとまる流れの概念図">
+    <rect width="760" height="230" class="s-paper"></rect>
+    <path d="M64 0 C84 70 56 140 92 230 L58 230 L38 0 Z" class="s-water" opacity="0.8"></path>
+    <text x="56" y="120" class="s-soft" font-size="11" transform="rotate(-78 56 120)" font-family="'Shippori Mincho',serif">天竜川</text>
+    <g class="s-line" fill="none" stroke-width="1">
+      <circle cx="175" cy="55" r="12"></circle><circle cx="225" cy="100" r="10"></circle>
+      <circle cx="155" cy="140" r="11"></circle><circle cx="245" cy="170" r="9"></circle>
+      <circle cx="295" cy="75" r="10"></circle><circle cx="205" cy="190" r="8"></circle>
+      <circle cx="315" cy="140" r="11"></circle><circle cx="275" cy="38" r="8"></circle>
+    </g>
+    <text x="196" y="26" class="s-soft" font-size="12" font-family="'Shippori Mincho',serif">数十の村々</text>
+    <circle cx="455" cy="88" r="25" class="s-paper" stroke="#2f7fa3" stroke-width="2"></circle>
+    <text x="455" y="92" text-anchor="middle" class="s-brown" font-size="13.5" font-family="'Shippori Mincho',serif" font-weight="700">見付町</text>
+    <circle cx="455" cy="158" r="25" class="s-paper" stroke="#356f88" stroke-width="2"></circle>
+    <text x="455" y="162" text-anchor="middle" class="s-pine" font-size="13.5" font-family="'Shippori Mincho',serif" font-weight="700">中泉町</text>
+    <g stroke="#cfe2ec" stroke-width="1.4" fill="none">
+      <path d="M325 85 L422 88"></path><path d="M325 140 L422 155"></path>
+      <path d="M250 110 L422 92"></path><path d="M268 180 L422 162"></path>
+    </g>
+    <path d="M504 123 L590 123" stroke="#2f7fa3" stroke-width="1.6" fill="none" marker-end="url(#ar)"></path>
+    <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#2f7fa3"></path></marker></defs>
+    <rect x="606" y="90" width="100" height="66" rx="6" class="s-paper" stroke="#1f3a48" stroke-width="2"></rect>
+    <text x="656" y="120" text-anchor="middle" class="s-ink" font-size="16" font-family="'Shippori Mincho',serif" font-weight="800">磐田市</text>
+    <text x="656" y="140" text-anchor="middle" class="s-soft" font-size="10.5">1948</text>
+    <text x="380" y="216" text-anchor="middle" class="s-soft" font-size="11" font-family="'Shippori Mincho',serif">村 → 町 → 市。およそ百十六年の歩み</text>
+  </svg>
+  <figcaption>図：江戸の村々が、明治の二つの町を経て、磐田町・磐田市へまとまる流れ（概念図）。</figcaption>
+</figure>
 
-  <p class="lead">私は、富士ヶ丘サービスという会社を営んでいる。介護の会社であり、不動産の会社でもある。一見すると別々の仕事に見えるが、日々この二つの現場に立っていると、まったく別の仕事だとは思えなくなる。どちらも、人の人生に深く関わる仕事だからである。</p>
-
-  <p>介護の現場では、人が人生の後半に差しかかったときの暮らしに寄り添う。体が思うように動かなくなり、今までできていたことが少しずつ難しくなる。そういう場面に立ち会う。不動産の現場では、家を売る、空き家をどうする、相続した土地をどう整理するといった相談を受ける。だがそれは、単に土地や建物を売る話ではない。</p>
-
-  <p>そこには、住んでいた人の記憶がある。親が建てた家。子どもが育った家。盆や正月に家族が集まった家。庭に植えた木。玄関の傷。柱に残った身長の跡。昔はにぎやかだったけれど、今は誰も住まなくなった家。そういうものに触れるたびに思う。これは、ただの不動産ではない。誰かの人生そのものだったのだと。</p>
-
-  <h2>記憶は、驚くほど簡単に消えていく</h2>
-
-  <p>そして、少し怖くもなる。このままでは、こうした記憶がどんどん消えていくのではないか。誰かが大切にしていた場所の記憶が、誰にも語られないまま、ただ解体され、ただ更地になり、ただ次の用途に変わっていく。</p>
-
-  <p>それは仕方のないことでもある。家は古くなる。人は歳を取る。家族の形も、地域の姿も変わる。昔のように何世代も同じ土地に住み続けることは、もう当たり前ではない。子どもは遠くへ行き、親の家は空き家になり、相続人は遠方に住み、誰も管理できなくなる。そういう相談は、これからもっと増えていくだろう。</p>
-
-  <p>介護の現場でも、人の記憶が少しずつ薄れていく場面に出会う。けれど、ふとした瞬間に鮮やかな記憶がよみがえることがある。昔の歌を聞いたとき。懐かしい写真を見たとき。地元の地名が出たとき。その瞬間、その方の表情が変わる。今の暮らしだけを見ていてはわからない、人生の厚みが見えてくる。人は、今だけでできているのではない。歩いてきた道があり、苦労があり、喜びがある。そして、その記憶は、誰かが残そうとしなければ、たやすく消えてしまう。</p>
-
-  <h2>書類には載らないもの</h2>
-
-  <p>不動産の仕事では、登記簿を見れば所有者がわかり、公図を見れば形がわかり、測量図を見れば面積がわかる。そうした調査は当然大切で、間違えれば取引に大きな問題が起きる。だから私は、重要事項説明書を作るときも、できる限り丁寧に調べる。けれど、書類だけでは見えないものがある。</p>
-
-  <p>登記簿には、その家で子どもが初めて歩いた日のことは載っていない。公図には、庭で家族が囲んだ食卓のことは載っていない。固定資産評価証明には、亡くなったお父さんが毎朝掃除していた玄関のことは載っていない。不動産の資料に出てくるのは、面積、地目、構造、築年数、価格、法令制限、権利関係。それは必要だ。でも、それだけでは足りない。その不動産が、誰かの人生の舞台だったという事実を、忘れたくない。</p>
-
-  <div class="pull">
-    <p>空き家は、外から見れば「使われていない建物」だ。けれど所有者や相続人から見れば、そこは「実家」である。たとえ誰も住んでいなくても、親が暮らし、祖父母が守り、幼いころに帰省した、家族の思い出が詰まった場所なのだ。</p>
-  </div>
-
-  <p>だから、空き家問題を「早く売りましょう」「早く解体しましょう」だけで片付けてはいけないと思う。老朽化した建物の放置は危険だし、現実的な判断は必要だ。そこは不動産会社としてはっきり伝える。でも、その前に、あるいは同時に、こう問いかけたい。この家の記憶を、何か一つでも残せないだろうか、と。</p>
-
-  <h2>今の時代だからこそ、できること</h2>
-
-  <p>人は、失ってから気づくことが多い。家を解体してから「写真を撮っておけばよかった」と思う。親が亡くなってから「もっと話を聞いておけばよかった」と思う。そういう後悔を、少しでも減らしたい。</p>
-
-  <p>昔の人たちは、今のように簡単に発信できる道具を持っていなかった。だから多くの記憶は、家族の会話の中、地域の人の記憶の中にだけあった。それは温かいことだが、同時にとても消えやすい。語る人がいなくなれば、聞く人がいなければ、消えてしまう。</p>
-
-  <p>けれど今は、記録する道具がある。文章も、写真も、音声も、動画も残せる。AIを使えば、話し言葉を読みやすい文章にまとめることもできる。私自身、不動産の調査や文章を整えるのにAIを使っている。ただし、AIに何でもできるとは思っていない。AIは、その家に住んでいた人の温度までは勝手にはわからない。亡くなったお父さんの口ぐせも、家族が語らなければ知ることはできない。AIは道具だ。でも、人が語り、人が聞き、人が残そうとすれば、大きな助けになる。そこに可能性を感じている。</p>
-
-  <h2>残したいのは、小さな記憶</h2>
-
-  <p>残したいのは、立派な歴史資料ではない。大げさな郷土史でもない。もっと身近で、小さな記憶だ。</p>
-
-  <div class="voices">
-    <p><span class="v">──</span>あの家には、昔こういう人が住んでいた。</p>
-    <p><span class="v">──</span>あの畑は、おじいちゃんが毎朝手入れしていた。</p>
-    <p><span class="v">──</span>あの土地は、家族が最後まで手放せない場所だった。</p>
-    <p><span class="v">──</span>あの道は、通学路だった。</p>
-    <p><span class="v">──</span>あの交差点は、昔は今よりずっと静かだった。</p>
-  </div>
-
-  <p>新聞に載る大事件ではないかもしれない。本になる偉人の物語でもないかもしれない。でも、その人にとっては、かけがえのない歴史だ。その家族にとっては大切な記憶であり、その地域にとっては確かに存在した時間である。私は、介護と不動産という仕事を通して、その記憶の入口に立つ機会が多い人間だ。だからこそ、見過ごしてはいけないと思っている。</p>
-
-  <h2>富士ヶ丘サービスという会社の役割</h2>
-
-  <p>富士ヶ丘サービスは、ただ介護サービスを提供する会社でも、ただ不動産を売買する会社でもありたくない。もちろん、事業として利益を出し、社員を守り、お客様に満足していただき、法令を守ることは当然だ。でも、それだけではない会社でありたい。地域の人の記憶に触れ、暮らしの変化を見つめ、消えていく前に少しでも声をすくい上げる会社でありたい。</p>
-
-  <p>介護の現場には、人生の記憶がある。不動産の現場には、暮らしの記憶がある。その二つを持っている会社だからこそ、できることがあるのではないか。介護は現在の暮らしを支え、不動産は過去の暮らしと未来の暮らしをつなぐ。その間にあるのが、記憶だ。人の記憶、家族の記憶、家の記憶、地域の記憶。それらを大切にすることが、これからの会社の使命の一つになっていくと感じている。</p>
-
-  <p>もちろん、すべての記憶を残すことはできない。個人情報やプライバシーには十分配慮しなければならないし、外に出してよいものと、家族の中だけにとどめるべきものは分けなければならない。それでも、その配慮をしたうえで、できることはあるはずだ。売却前の家を写真に残す。家族に「この家で一番覚えていることは何ですか」と尋ねてみる。たったそれだけでも、そこに物語が生まれる。</p>
-
-  <h2>まずは、目の前の一つから</h2>
-
-  <p>大きなことを言いすぎると、動けなくなる。だから、まずは目の前の一つから始めたい。今日聞いた話を大切にする。今日見た風景を残す。相談を受けた家の背景に敬意を払う。出会った人の人生を、今の状態だけで判断しない。その小さな積み重ねが、やがて大きな記録になると信じている。</p>
-
-  <p>後世に残す、というと大げさに聞こえるかもしれない。でも後世とは、遠い未来だけではない。子どもや孫の世代、今の若いスタッフ、これからこの地域に住む人たち、将来この土地や家を引き継ぐ人たち。そういう人たちに「ここにはこういう暮らしがあったんだよ」と伝えること。それが、私の言う「後世に残す」ということだ。</p>
-
-  <div class="pull">
-    <p>記憶を残すというのは、過去を懐かしむだけの行為ではない。今を大切に見るための行為であり、未来の人が、今あるものを粗末に扱わないための行為でもある。</p>
-  </div>
-
-  <p>この「磐田物語」は、その小さな試みの場である。遠江国府が置かれ、東海道・見付宿として栄えたこのまちには、語り継ぐべきものが数多く眠っている。古代の遺跡から宿場の面影、祭りや暮らしの記憶まで——専門家の研究ではなく、このまちに暮らす一人として、足もとの歴史を見つめ直し、少しずつ、丁寧に、後世へ渡していきたい。</p>
-
-  <p>不器用でも、少しずつでもいい。介護と不動産の会社を営む者として、人と家、暮らしと土地、現在と過去、そして未来をつなぐ仕事をしている者として、私はこれからも、消えゆく記憶に目を向け続けたいと思っている。</p>
-
-  <div class="sign">
-    <div class="name">大石 浩之</div>
-    <div class="role">富士ヶ丘サービス株式会社 代表取締役</div>
-  </div>
-
-</article>
-
-<div class="back-home">
-  <a href="/">トップへ戻る</a>
+<div class="summary">
+  <p class="sh">この連載でわかること</p>
+  <ul>
+    <li>旧磐田市が、数十の村から<strong>見付町・中泉町を経て磐田町・磐田市へ</strong>まとまった流れ（年表で整理）。</li>
+    <li>見付（宿場）と中泉（天領）の<strong>性格の違い</strong>と、それぞれの地名・史跡。</li>
+    <li>二之宮・西貝塚・鎌田・国府台など、<strong>旧村名がいまの住所に残るしくみ</strong>。</li>
+    <li>各回末の<strong>Q&A</strong>で、地名や合併のよくある疑問に答える。</li>
+  </ul>
 </div>
+
+<div class="hub-intro">
+  <p>各回は独立して読めるが、第一回（全体像）から順に読むと流れがつかみやすい。記載は磐田市公式資料・国立公文書館・国立歴史民俗博物館・角川『日本地名大辞典』などにもとづき、年次や地名由来など断定できない点は本文中で「事実・解釈・推測」を分けて示している。</p>
+</div>
+
+<div class="hub-grid">
+
+  <a class="hub-card lead-card" href="/c017.html">
+    <span class="kai">第一回</span>
+    <span class="t">旧磐田市の成り立ち ── 村から町、町から市へ</span>
+    <p class="d">三つの村高帳の読み方、見付と中泉の比較、1889→1940→1948の合併年表、旧村名の残り方まで。連載全体の見取り図。</p>
+    <span class="more">解説を読む →</span>
+  </a>
+
+  <a class="hub-card" href="/n021.html">
+    <span class="kai">第二回</span>
+    <span class="t">中泉御殿のあった町 ── 天領を治めた中泉</span>
+    <p class="d">家康の御殿、天領の代官所、前島密、中泉駅（現・磐田駅）。低地に開けた行政の町の成り立ちを年表と人物表で。</p>
+    <span class="more">解説を読む →</span>
+  </a>
+
+  <a class="hub-card" href="/n022.html">
+    <span class="kai">第三回</span>
+    <span class="t">二之宮はなぜ中泉と一つになったか</span>
+    <p class="d">遠江二宮にちなむ地名「二之宮」。一宮・二宮・総社の一覧と、明治の合併の経緯を解説。</p>
+    <span class="more">解説を読む →</span>
+  </a>
+
+  <a class="hub-card" href="/u001.html">
+    <span class="kai">第四回</span>
+    <span class="t">「貝塚」という地名 ── 西貝塚・東貝塚</span>
+    <p class="d">貝塚の地名が記憶する縄文の海。磐田の貝塚一覧と地形史の年表で、消えた海岸線を読む。</p>
+    <span class="more">解説を読む →</span>
+  </a>
+
+  <a class="hub-card" href="/s001.html">
+    <span class="kai">第五回</span>
+    <span class="t">天竜川がつくった村、流した村</span>
+    <p class="d">河道の変遷が村の立地を決めた。渡し場の池田、湊町の掛塚。水辺の地の一覧と年表で解説。</p>
+    <span class="more">解説を読む →</span>
+  </a>
+
+  <a class="hub-card" href="/t007.html">
+    <span class="kai">第六回</span>
+    <span class="t">「新田」と名のつく土地</span>
+    <p class="d">寺谷新田・太郎馬新田・宇兵衛新田。開発者の名が残る地名のしくみを、一覧表と用語解説で。</p>
+    <span class="more">解説を読む →</span>
+  </a>
+
+  <a class="hub-card" href="/k001.html">
+    <span class="kai">第七回</span>
+    <span class="t">匂坂・寺谷・岩田 ── 台地のへりの村</span>
+    <p class="d">難読地名「匂坂（さぎさか）」の諸説、岩田村と「磐田」の違い。地形と地名を表で読み解く。</p>
+    <span class="more">解説を読む →</span>
+  </a>
+
+  <a class="hub-card" href="/n019.html">
+    <span class="kai">第八回</span>
+    <span class="t">国府台と府八幡宮 ──「国府」の地名</span>
+    <p class="d">遠江国府の所在地の諸説を一覧で整理。古代の中心が現代の地名に残るしくみを解説。</p>
+    <span class="more">解説を読む →</span>
+  </a>
+
+  <a class="hub-card" href="/c011.html">
+    <span class="kai">第九回</span>
+    <span class="t">古地図に村の名を探す【読み方編】</span>
+    <p class="d">古地図・旧高帳・公図の三枚を重ねて消えた村や字を読む。三種の地図の比較表と手順を解説。</p>
+    <span class="more">解説を読む →</span>
+  </a>
+
+  <a class="hub-card" href="/c010.html">
+    <span class="kai">第十回</span>
+    <span class="t">磐田郡という広がり</span>
+    <p class="d">郡の成立と消滅。1896年の郡再編と、昭和に磐田市へ編入された村々を年表で整理。</p>
+    <span class="more">解説を読む →</span>
+  </a>
+
+  <a class="hub-card" href="/u002.html">
+    <span class="kai">第十一回・最終回</span>
+    <span class="t">鎌田御厨 ── 伊勢神宮領だった村</span>
+    <p class="d">「御厨」という地名と鎌田神明宮。神領のしくみと御厨地区の地名を解説し、連載を結ぶ。</p>
+    <span class="more">解説を読む →</span>
+  </a>
+
+</div>
+
+<div class="hub-note">
+  <p>※ 本連載は個人の調査・覚え書きにもとづく解説です。年次・地名由来など断定できない点は本文で「事実・解釈・推測」を分けて記しています。各回末にQ&A（よくある疑問）を設けています。</p>
+</div>
+
+<div class="article-nav">
+  <a class="primary" href="/c017.html">第一回から読む</a>
+  <a class="ghost" href="/c009.html">磐田の地名をたどる</a>
+  <a class="ghost" href="/m001.html">連載「見付古地図散歩」へ</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "連載 まちの成り立ち ── 旧磐田市の村々をたどる",
+  "description": "江戸の村高帳と明治の町村制から磐田市までの歩みを年表・図表・Q&Aで解説する、全11回の連載「まちの成り立ち」の目次。",
+  "url": "https://iwata-monogatari.pages.dev/c014.html",
+  "inLanguage": "ja",
+  "isPartOf": {"@type": "WebSite", "name": "磐田物語", "url": "https://iwata-monogatari.pages.dev/"},
+  "hasPart": [
+    {"@type": "Article", "name": "旧磐田市の成り立ち ── 村から町、町から市へ", "url": "https://iwata-monogatari.pages.dev/c017.html"},
+    {"@type": "Article", "name": "中泉御殿のあった町 ── 天領を治めた中泉", "url": "https://iwata-monogatari.pages.dev/n021.html"},
+    {"@type": "Article", "name": "二之宮はなぜ中泉と一つになったか", "url": "https://iwata-monogatari.pages.dev/n022.html"},
+    {"@type": "Article", "name": "「貝塚」という地名 ── 西貝塚・東貝塚", "url": "https://iwata-monogatari.pages.dev/u001.html"},
+    {"@type": "Article", "name": "天竜川がつくった村、流した村", "url": "https://iwata-monogatari.pages.dev/s001.html"},
+    {"@type": "Article", "name": "「新田」と名のつく土地", "url": "https://iwata-monogatari.pages.dev/t007.html"},
+    {"@type": "Article", "name": "匂坂・寺谷・岩田 ── 台地のへりの村", "url": "https://iwata-monogatari.pages.dev/k001.html"},
+    {"@type": "Article", "name": "国府台と府八幡宮 ──「国府」の地名", "url": "https://iwata-monogatari.pages.dev/n019.html"},
+    {"@type": "Article", "name": "古地図に村の名を探す", "url": "https://iwata-monogatari.pages.dev/c011.html"},
+    {"@type": "Article", "name": "磐田郡という広がり", "url": "https://iwata-monogatari.pages.dev/c010.html"},
+    {"@type": "Article", "name": "鎌田御厨 ── 伊勢神宮領だった村", "url": "https://iwata-monogatari.pages.dev/u002.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "磐田物語", "item": "https://iwata-monogatari.pages.dev/"},
+    {"@type": "ListItem", "position": 2, "name": "連載 まちの成り立ち", "item": "https://iwata-monogatari.pages.dev/c014.html"}
+  ]
+}
+</script>
 
 
 

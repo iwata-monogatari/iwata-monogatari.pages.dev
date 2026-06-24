@@ -3,123 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>標準語⇄遠州弁 変換 ｜ 磐田物語</title>
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<title>土地と遺跡を調べる ── 埋蔵文化財と磐田 ｜ 磐田物語</title>
+<meta name="description" content="土地を売る・買う・建てるとき、なぜ遺跡（周知の埋蔵文化財包蔵地）の確認が必要なのか。埋蔵文化財とは何かを一般の方向けにやさしく解説し、文化財保護と土地の記憶の接点を考える。手続きは磐田市文化財課への確認を案内する。">
+<meta property="og:title" content="土地と遺跡を調べる ── 埋蔵文化財と磐田 ｜ 磐田物語">
+<meta property="og:description" content="土地を売る・買う・建てるときの遺跡確認とは何か。埋蔵文化財と土地の記憶の接点を、やさしく整理する。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-<meta name="description" content="標準語を入れると遠州弁に変換するツール。磐田・中遠の言葉づかいをもとに、ふつう（若い人も使う）とガチ（年配の濃い遠州弁）の2モードで試せる。語尾や否定・推量の言い回しも変換。">
-<meta property="og:title" content="標準語⇄遠州弁 変換 ｜ 磐田物語">
-<meta property="og:description" content="標準語を遠州弁に変換。ふつう／ガチの2モード。磐田・中遠の言葉づかいをもとに。">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="ja_JP">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
-    --brown:#2f7fa3;--brown-deep:#1f4f6f;--accent-blue:#356f88;--line:#d8e8ef;
-    --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
-  }
-  *{box-sizing:border-box;}
-  body{margin:0;background:var(--paper);color:var(--ink);
-    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
-    line-height:1.9;font-size:17px;letter-spacing:.02em;
-    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+  :root{--kinari:#fffdf7;--cha:#2f7fa3;--brown-deep:#1f4f6f;--matsu:#356f88;--sumi:#22303a;--usuzumi:#5b6b74;--waku:#d8e8ef;--paper:#fffdf7;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Zen Kaku Gothic New",sans-serif;color:var(--sumi);background:var(--kinari);line-height:1.95;font-size:17px;-webkit-font-smoothing:antialiased;}
+  a{color:var(--cha);text-decoration:none;}
+  a:hover{text-decoration:underline;}
   .mincho{font-family:"Shippori Mincho",serif;}
-  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-    background-image:
-      radial-gradient(circle at 20% 30%, rgba(166,113,62,.035) 0, transparent 38%),
-      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);}
-  a{color:var(--brown-deep);text-underline-offset:3px;}
-
-  header.site{background:var(--card);border-bottom:1px solid var(--line);}
-  .bar{max-width:1040px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
-  .brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;}
-  .brand .logo{font-family:"Shippori Mincho",serif;font-weight:800;font-size:26px;color:var(--ink);letter-spacing:.06em;}
-  .brand .logo .dot{color:var(--brown);}
-  .brand .tag{font-size:12.5px;color:var(--ink-soft);letter-spacing:.08em;}
-  nav.menu{display:flex;gap:26px;}
-  nav.menu a{text-decoration:none;color:var(--ink-soft);font-size:14.5px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
-  nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
-
-  .hero{max-width:880px;margin:0 auto;padding:48px 24px 14px;}
-  .hero .eyebrow{font-size:13px;letter-spacing:.22em;color:var(--accent-blue);font-weight:700;margin:0 0 14px;}
-  .hero h1{font-family:"Shippori Mincho",serif;font-weight:800;
-    font-size:clamp(28px,5vw,42px);line-height:1.4;margin:0 0 16px;color:var(--ink);letter-spacing:.04em;}
-  .hero h1 .accent{color:var(--brown-deep);background:linear-gradient(transparent 62%, rgba(166,113,62,.18) 62%);}
-  .hero p{font-size:16px;color:var(--ink-soft);margin:0;line-height:1.95;max-width:660px;}
-
-  .app{max-width:880px;margin:0 auto;padding:18px 24px 8px;}
-
-  .dir{display:flex;gap:0;margin-bottom:18px;border:1.5px solid var(--line);border-radius:5px;overflow:hidden;width:fit-content;}
-  .dir button{padding:10px 20px;font-size:14.5px;font-weight:700;font-family:inherit;
-    border:none;background:var(--card);color:var(--ink-soft);cursor:pointer;transition:.18s;}
-  .dir button.active{background:var(--brown);color:#fff;}
-
-  .modes{margin-bottom:16px;}
-  .modes .lbl{font-size:13px;color:var(--ink-soft);font-weight:700;margin-bottom:8px;}
-  .modes .chips{display:flex;flex-wrap:wrap;gap:8px;}
-  .mode{padding:8px 18px;font-size:14px;font-weight:600;border:1.5px solid var(--line);
-    border-radius:999px;background:var(--card);color:var(--ink-soft);cursor:pointer;transition:.18s;font-family:inherit;}
-  .mode:hover{border-color:var(--brown);color:var(--brown-deep);}
-  .mode.active{background:var(--brown);color:#fff;border-color:var(--brown);}
-  .mode .sub{font-size:11.5px;font-weight:500;opacity:.8;margin-left:5px;}
-
-  .io{display:grid;grid-template-columns:1fr;gap:14px;}
-  .field label{display:block;font-size:13px;font-weight:700;color:var(--ink-soft);margin-bottom:7px;letter-spacing:.04em;}
-  textarea{width:100%;min-height:120px;padding:16px 18px;font-size:16px;line-height:1.85;
-    border:1.5px solid var(--line);border-radius:5px;background:var(--card);color:var(--ink);
-    font-family:inherit;resize:vertical;box-shadow:var(--shadow);transition:.2s;}
-  textarea:focus{outline:none;border-color:var(--brown);}
-  textarea#out{background:var(--paper-deep);}
-  .row-btn{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 6px;align-items:center;}
-  .btn{display:inline-block;font-weight:700;font-size:15px;padding:13px 28px;border-radius:3px;
-    border:none;cursor:pointer;font-family:inherit;transition:.2s;letter-spacing:.04em;}
-  .btn.primary{background:var(--brown);color:#fff;}
-  .btn.primary:hover{background:var(--brown-deep);}
-  .btn.ghost{background:var(--card);color:var(--ink);border:1.5px solid var(--line);}
-  .btn.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
-  .copied{font-size:12.5px;color:var(--accent-blue);font-weight:700;opacity:0;transition:.3s;}
-  .copied.show{opacity:1;}
-
-  .samples{margin-top:22px;}
-  .samples .lbl{font-size:13px;color:var(--ink-soft);font-weight:700;margin-bottom:8px;}
-  .samples .chips{display:flex;flex-wrap:wrap;gap:8px;}
-  .samp{padding:7px 14px;font-size:13px;border:1px solid var(--line);border-radius:4px;
-    background:var(--card);color:var(--ink-soft);cursor:pointer;transition:.18s;font-family:inherit;text-align:left;}
-  .samp:hover{border-color:var(--brown);color:var(--brown-deep);}
-
-  .note{max-width:880px;margin:30px auto 40px;padding:0 24px;}
-  .note .inner{background:var(--paper-deep);border-radius:4px;padding:20px 24px;font-size:13.5px;color:var(--ink-soft);line-height:1.85;}
-  .note .inner b{color:var(--brown-deep);}
-  .note .src{margin-top:10px;font-size:12px;}
-
-  footer.site{background:var(--ink);color:#eaf4fa;}
-  footer.site .inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
-  footer .f-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-  footer .f-brand .dot{color:var(--brown);}
-  footer .f-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
-  footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
-  footer .links{width:100%;margin-top:6px;}
-  footer .links .lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-  footer .links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
-  footer .links li{font-size:13px;line-height:1.6;}
-  footer .links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-  footer .links a:hover{color:#eef6fb;border-color:#6fb7d8;}
-  footer .links .desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
-  footer .sns{width:100%;margin-top:20px;}
-  footer .sns .lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-  footer .sns .icons{display:flex;gap:14px;}
-  footer .sns a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
-  footer .sns a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
-  footer .sns svg{width:19px;height:19px;fill:currentColor;}
-
-  @media(max-width:760px){ nav.menu{display:none;} }
+  header.site{background:var(--matsu);color:#fff;padding:0;}
+  .site-inner{max-width:880px;margin:0 auto;padding:18px 22px;}
+  .site-title{font-family:"Shippori Mincho",serif;font-weight:600;font-size:19px;color:#fff;display:block;letter-spacing:.04em;}
+  .site-title small{display:block;font-size:12px;font-weight:400;opacity:.82;margin-top:3px;letter-spacing:.02em;}
+  nav.global{background:#2c5566;}
+  nav.global ul{max-width:880px;margin:0 auto;padding:0 22px;list-style:none;display:flex;flex-wrap:wrap;gap:4px 26px;}
+  nav.global a{color:#eef6fb;display:inline-block;padding:11px 0;font-size:14px;letter-spacing:.03em;}
+  nav.global a:hover{color:#fff;text-decoration:none;}
+  main{max-width:760px;margin:0 auto;padding:0 22px;}
+  .crumb{font-size:13px;color:var(--usuzumi);padding:20px 0 6px;}
+  .crumb a{color:var(--usuzumi);}
+  .cat{display:inline-block;font-size:13px;color:var(--matsu);border-left:3px solid var(--cha);padding-left:9px;margin:18px 0 10px;letter-spacing:.04em;}
+  h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:27px;line-height:1.5;color:var(--sumi);margin:6px 0 26px;letter-spacing:.02em;}
+  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#3a4750;margin-bottom:30px;}
+  .caution{background:#eef6fb;border:1px solid #cfe2ec;border-left:4px solid var(--cha);border-radius:0 4px 4px 0;padding:18px 22px;font-size:15px;color:#22303a;margin:26px 0;}
+  .caution strong{color:var(--brown-deep);}
+  h2{font-family:"Shippori Mincho",serif;font-weight:600;font-size:21px;color:var(--matsu);margin:40px 0 16px;padding-bottom:9px;border-bottom:2px solid var(--waku);letter-spacing:.02em;}
+  p{margin:0 0 20px;}
+  h3{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--sumi);margin:30px 0 12px;}
+  .qa{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:6px 24px;margin:24px 0;}
+  .qa dt{font-weight:700;color:var(--matsu);padding:16px 0 4px;font-size:15.5px;}
+  .qa dt::before{content:"Q. ";color:var(--cha);}
+  .qa dd{padding:0 0 16px;font-size:15px;line-height:1.85;border-bottom:1px solid var(--waku);margin:0;}
+  .qa dd::before{content:"A. ";color:var(--cha);font-weight:700;}
+  .qa>div:last-child dd{border-bottom:none;}
+  .windowbox{background:var(--matsu);color:#fff;border-radius:5px;padding:22px 24px;margin:28px 0;}
+  .windowbox h3{color:#fff;margin:0 0 10px;font-size:17px;}
+  .windowbox p{font-size:14.5px;color:#eef2ee;margin:0 0 10px;line-height:1.8;}
+  .windowbox a{display:inline-block;background:#fff;color:var(--matsu);border-radius:4px;padding:9px 18px;font-size:14px;font-weight:700;margin-top:4px;}
+  .windowbox a:hover{background:#eef6fb;text-decoration:none;}
+  .sourcebox{background:#eef6fb;border:1px solid var(--waku);border-radius:4px;padding:20px 24px;margin:30px 0;font-size:14px;color:#3a4750;}
+  .sourcebox h3{font-family:"Shippori Mincho",serif;font-size:16px;color:var(--matsu);margin:0 0 10px;}
+  .sourcebox ul{margin:0 0 12px 1.3em;}
+  .sourcebox li{margin-bottom:5px;line-height:1.7;}
+  .sourcebox .disclaimer{font-size:13px;color:var(--usuzumi);border-top:1px dashed var(--waku);padding-top:12px;margin-top:4px;}
+  .related{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 8px;}
+  .related a{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:10px 15px;font-size:14px;color:var(--matsu);}
+  .related a:hover{background:#f4fafc;text-decoration:none;}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 10px;flex-wrap:wrap;}
+  .pager a{font-size:14px;}
+  footer.site{background:var(--matsu);color:#eee;margin-top:54px;}
+  .foot-inner{max-width:760px;margin:0 auto;padding:34px 22px;}
+  .foot-inner .mincho{font-size:18px;color:#fff;display:block;margin-bottom:12px;}
+  .foot-inner p{font-size:13.5px;color:#e9f3fa;line-height:1.85;margin-bottom:18px;}
+  .foot-inner h4{font-size:13px;color:#cfe2ec;font-weight:500;margin:16px 0 8px;letter-spacing:.05em;}
+  .foot-links{list-style:none;}
+  .foot-links li{margin-bottom:7px;font-size:14px;}
+  .foot-links a{color:#eef6fb;}
+  .copy{font-size:12px;color:#a9c6d2;margin-top:22px;}
+  @media(max-width:600px){h1{font-size:21px;}body{font-size:16px;}h2{font-size:19px;}}
 </style>
-  <link rel="canonical" href="https://iwata-monogatari.pages.dev/c008.html">
+  <link rel="canonical" href="https://iwata-monogatari.pages.dev/c015.html">
+<style id="reno-blocks">
+.article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
+.article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
+.article-policy dt{font-weight:700;margin-top:16px;}
+.article-policy dd{margin:6px 0 0;line-height:1.8;color:var(--ink-soft,#4b5b66);}
+.related-materials{max-width:1180px;margin:48px auto;padding:0 4px;}
+.related-materials h2{font-size:1.4rem;margin-bottom:8px;font-family:"Shippori Mincho",serif;}
+.related-materials>p{line-height:1.8;color:var(--ink-soft,#4b5b66);}
+.related-materials .rm-note{font-size:.82rem;color:var(--ink-soft,#5b6b74);margin-top:14px;}
+.material-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px;}
+.material-grid figure{margin:0;border:1px solid var(--line,#d8e3ea);border-radius:14px;overflow:hidden;background:#fff;}
+.material-grid a{text-decoration:none;color:inherit;display:block;}
+.material-grid img{width:100%;height:180px;object-fit:cover;display:block;background:#eee;}
+.material-grid figcaption{padding:12px;font-size:.9rem;line-height:1.6;}
+@media(max-width:768px){.material-grid{grid-template-columns:1fr;}.material-grid img{height:auto;}}
+</style>
   <link rel="stylesheet" href="/assets/css/site-header.css">
 </head>
 <body>
@@ -141,363 +112,90 @@
   </div>
 </header>
 
-<section class="hero">
-  <p class="eyebrow">ENSHU BEN ｜ へんかん</p>
-  <h1>標準語 ⇄ 遠州弁 <span class="accent">変換</span></h1>
-  <p>標準語を入れると、遠州弁に変換する。磐田・中遠の言葉づかいをもとに、「ふつう（若い人も使う自然な遠州弁）」と「ガチ（年配の人の濃い遠州弁）」の2モードで試せる。語尾や否定・推量の言い回しまで変換するが、簡易的な置きかえなので、すべてが自然になるとは限らない。遠州弁の雰囲気を掴む手がかりに。</p>
+<main>
+  <div class="crumb"><a href="https://iwata-monogatari.pages.dev/">磐田物語</a> ／ <a href="https://iwata-monogatari.pages.dev/c003.html">文化財</a> ／ 埋蔵文化財と磐田</div>
+
+  <span class="cat">文化財 ｜ 土地の記憶</span>
+
+  <h1>土地と遺跡を調べる<br>── 埋蔵文化財と磐田</h1>
+
+  <div class="lead">
+    家を建てる。土地を売る。実家を整理する。そうした土地にまつわる場面で、ときどき出会うのが「この土地は遺跡の範囲に入っている」という言葉である。驚く方も少なくない。けれど、これは特別なことではない。古い歴史をもつ磐田では、ごくありふれた話である。ここでは、その「埋蔵文化財」とは何かを、できるだけやさしく整理してみたい。
+  </div>
+
+  <div class="caution">
+    <strong>はじめにお断り。</strong>このページは、埋蔵文化財という制度の「考え方」を一般の方に知っていただくための、入門的な解説である。具体的な手続き・必要書類・期間・費用・可否などは、土地ごとに異なり、また制度も改定されることがある。<strong>実際の手続きや判断については、必ず磐田市文化財課（埋蔵文化財センター）にご確認いただきたい。</strong>このページの内容で個別の判断をされないようお願いする。
+  </div>
+
+  <h2>埋蔵文化財とは何か</h2>
+
+  <p>埋蔵文化財とは、文字どおり、地中に埋もれている文化財のことである。古い時代の住居の跡、土器や石器のかけら、井戸や溝の跡、そして古墳など――かつてそこで人が暮らした痕跡が、土の中に眠っている。それらが面的に広がって存在することが分かっている、あるいはその可能性が高い土地のことを、「周知の埋蔵文化財包蔵地（しゅうちのまいぞうぶんかざいほうぞうち）」と呼ぶ。ふだんは「遺跡」と言ったほうが通りがよい。</p>
+
+  <p>磐田は、古墳時代から国府・国分寺の時代、中世の宿場まで、長く人が暮らしてきた土地である。だから、市内のあちこちに、こうした遺跡の範囲が広がっている。見付や中泉、国府台のあたりはもちろん、台地や川沿いにも、古い時代の暮らしの跡が眠っている。自分の土地が遺跡の範囲に入っていると知らされても、それは「磐田が、それだけ古くから栄えてきた土地だ」という証なのである。</p>
+
+  <h2>なぜ、土地の工事で確認が必要なのか</h2>
+
+  <p>遺跡の範囲にあたる土地で、建物を建てたり、土を掘ったりする工事をしようとすると、事前に確認や届出が必要になる場合がある。これは、土地の所有者を困らせるための決まりではない。地中に眠る歴史の証を、知らないうちに壊してしまわないための仕組みである。</p>
+
+  <p>もし、確認をしないまま工事を進めて、貴重な遺跡を壊してしまったら、それは二度と取り返しがつかない。土の中の歴史は、一度こわれたら、復元できないからである。そこで、あらかじめ「この土地はどうか」を確認し、必要に応じて記録をとったり、調査をしたりする。文化財保護と、土地の活用とを、両立させるための知恵なのである。</p>
+
+  <h2>よくある疑問</h2>
+
+  <dl class="qa">
+    <div><dt>遺跡の範囲だと、家は建てられないの？</dt>
+    <dd>「建てられない」と決まっているわけではない。多くの場合は、事前の確認や届出などの手続きを経たうえで、工事を進められる。ただし、土地や工事の内容によって対応は異なるので、早めに文化財課へ相談するのが安心である。</dd></div>
+    <div><dt>自分の土地が遺跡かどうか、どうやって調べるの？</dt>
+    <dd>その土地が周知の埋蔵文化財包蔵地にあたるかどうかは、市の文化財課で確認できる。土地の売買や建築を考えはじめた、早い段階で問い合わせておくとよい。</dd></div>
+    <div><dt>遺跡だと、土地の価値が下がるの？</dt>
+    <dd>これは一概には言えず、土地ごとの個別事情による。確認や手続きに時間がかかる場合があることは事実だが、それは「歴史ある土地」であることの裏返しでもある。具体的な評価や取引のことは、専門家や市の窓口に相談されたい。</dd></div>
+  </dl>
+
+  <h2>文化財保護と、土地の記憶の接点</h2>
+
+  <p>土地の売買や相続、空き家の整理といった場面に立ち会っていると、土地というものが、単なる「資産」ではないことに気づかされる。その土地には、何代にもわたって暮らした人々の記憶があり、さらにその下には、何百年、何千年も前の人々の暮らしの跡が眠っている。埋蔵文化財という制度は、その「いちばん深い層の記憶」を、未来へ守り伝えるための仕組みである。</p>
+
+  <p>土地を次の世代へ手渡すとき、その土地が背負ってきた歴史を少しでも知っていれば、手続きもまた、違った意味をもって受けとめられるのではないだろうか。「面倒な決まり」ではなく、「この土地の古い記憶を、自分の代で壊さずに渡すための営み」として。文化財保護と、土地にまつわる一人ひとりの暮らしとは、こうしたところで、静かにつながっている。</p>
+
+  <div class="windowbox">
+    <h3>手続き・確認は、こちらへ</h3>
+    <p>埋蔵文化財に関する具体的な確認・届出・相談は、磐田市の文化財課（埋蔵文化財センター）が窓口である。土地ごとに対応が異なるため、土地の売買・建築・相続をお考えの際は、早めにご相談いただくのが確実である。</p>
+    <a href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/bunkazainitsuite/1007718.html">磐田市公式「開発に伴う埋蔵文化財の取り扱い」 →</a>
+  </div>
+
+  <div class="sourcebox">
+    <h3>主な参考資料</h3>
+    <ul>
+      <li>磐田市公式ウェブサイト「開発に伴う埋蔵文化財の取り扱い」</li>
+      <li>磐田市公式ウェブサイト「文化財」（文化財課・埋蔵文化財センターの案内）</li>
+    </ul>
+    <p class="disclaimer">本ページは、磐田市公式ウェブサイト等の公開情報を参考に、磐田物語編集部が独自に要約・編集した、一般向けの入門的解説である。法的な判断や具体的な手続きの内容を示すものではない。実際の制度・手続き・土地ごとの取り扱いについては、必ず磐田市文化財課にご確認いただきたい。出典：磐田市公式ウェブサイト。</p>
+  </div>
+
+  <div class="pager">
+    <a href="https://iwata-monogatari.pages.dev/c003.html">← 文化財トップへ</a>
+    <a href="https://iwata-monogatari.pages.dev/c018.html">研究ノートへ →</a>
+  </div>
+
+  <h2>関連する読みもの</h2>
+  <div class="related">
+    <a href="https://iwata-monogatari.pages.dev/c012.html">古墳から見る磐田</a>
+    <a href="https://iwata-monogatari.pages.dev/n018.html">御殿・二之宮遺跡と、二つの時代が眠る原</a>
+  </div>
+</main>
+
+
+
+<section class="article-policy">
+  <h2>この記事について</h2>
+  <dl>
+    <dt>著者</dt>
+    <dd>大石浩之（富士ヶ丘サービス株式会社 代表取締役／磐田物語 運営者）</dd>
+    <dt>参考資料</dt>
+    <dd>佐口行正氏所蔵資料、磐田市・静岡県等の公開資料、現地確認、郷土史関連資料を参考にしています。記事ごとに主要な参考資料がある場合は、個別に追記してください。</dd>
+    <dt>作成方針</dt>
+    <dd>本記事は、資料の文章をそのまま転載するのではなく、史実・地名・地理・時代背景を確認しながら、読みやすい地域史コンテンツとして再構成しています。誤りや補足情報がある場合は、運営者までお知らせください。</dd>
+  </dl>
 </section>
-
-<div class="app">
-
-  <div class="dir" id="dir">
-    <button data-dir="s2e" class="active">標準語 → 遠州弁</button>
-    <button data-dir="e2s">遠州弁 → 標準語</button>
-  </div>
-
-  <div class="modes" id="modeWrap">
-    <div class="lbl">遠州弁のモード</div>
-    <div class="chips" id="modes">
-      <button class="mode active" data-mode="futsu">ふつう<span class="sub">若い人も使う</span></button>
-      <button class="mode" data-mode="gachi">ガチ<span class="sub">年配の濃い遠州弁</span></button>
-    </div>
-  </div>
-
-  <div class="io">
-    <div class="field">
-      <label id="inLabel">標準語を入力</label>
-      <textarea id="in" placeholder="例：今日は雨だから、出かけるのはやめよう。"></textarea>
-    </div>
-    <div class="row-btn">
-      <button class="btn primary" id="go">変換する</button>
-      <button class="btn ghost" id="swap">⇅ 入れ替え</button>
-      <button class="btn ghost" id="copy">結果をコピー</button>
-      <span class="copied" id="copied">コピーしたに！</span>
-    </div>
-    <div class="field">
-      <label id="outLabel">遠州弁</label>
-      <textarea id="out" readonly placeholder="ここに変換結果が出るに。"></textarea>
-    </div>
-  </div>
-
-  <div class="samples">
-    <div class="lbl">例文を入れてみる</div>
-    <div class="chips" id="samples"></div>
-  </div>
-
-</div>
-
-<div class="note">
-  <div class="inner">
-    この変換は、磐田・中遠地域の言葉づかいをもとに、語彙や語尾を機械的に置きかえる簡易的なものである。文脈によっては不自然になったり、変換しきれなかったりすることがある。<b>「ふつう」</b>は「だら・ら」「だに」「だもんで」「じゃん」「〜んかった」など若い世代も使う言い方、<b>「ガチ」</b>は「ずら」「やせん／やへん」「〜なんだ」「がんこ」など年配の人の濃い言い方を中心に出している。なお磐田・中遠では「おる／〜とる」より「いる／〜てる」が自然なので、そちらを優先している。出てくる結果は一例として楽しんでほしい。
-    <div class="src">参考：磐田・中遠地域の遠州弁に関する調査・語彙資料／静岡県の方言研究／遠州弁の語彙・文法のまとめ ほか。お気づきの点があれば少しずつ直していきたい。</div>
-  </div>
-</div>
-
-
-
-<script>
-/* =========================================================
-   標準語 → 遠州弁 変換エンジン（ルールベース）
-   方針：①語尾・文法を優先的に変換（品詞/活用で分岐）
-        ②語彙を置換（長いものから）
-        ③モード（futsu/gachi）で言い回しを出し分け
-        ④磐田=中遠なので「おる/とる」は使わず「いる/てる」
-   ========================================================= */
-
-let dir = "s2e";
-let mode = "futsu";
-
-const inEl = document.getElementById("in");
-const outEl = document.getElementById("out");
-const inLabel = document.getElementById("inLabel");
-const outLabel = document.getElementById("outLabel");
-const modeWrap = document.getElementById("modeWrap");
-
-/* ---------- 語彙辞書（標準語→遠州弁）----------
-   tier: "all"=全世代 / "gachi"=濃い・年配中心（ガチで加点）
-   長い語から適用するため、適用時に文字数でソート         */
-const VOCAB = [
-  // 形容詞・ようす
-  ["うっとうしい","やぶせったい","all"],
-  ["わずらわしい","やぶせったい","gachi"],
-  ["みずみずしい","みるい","gachi"],
-  ["まぶしい","ひずるしい","all"],
-  ["仕方がない","しょんない","all"],
-  ["仕方ない","しょんない","all"],
-  ["しょうがない","しょんない","all"],
-  ["疲れた","えらい","all"],
-  ["しんどい","えらい","all"],
-  ["だらしない","ぶしょったい","gachi"],
-  ["みっともない","ぶしょったい","gachi"],
-  ["ずるい","ずっこい","all"],
-  ["せこい","こすい","all"],
-  ["きれいな","けっこい","gachi"],
-  ["かわいい","けっこい","gachi"],
-  ["粗悪","おぞい","gachi"],
-  ["ぼろい","ぼっこい","all"],
-  ["ボロい","ぼっこい","all"],
-  ["のろま","とろくさい","all"],
-  ["温かい","ぬくとい","gachi"],
-  ["くすぐったい","こそばい","all"],
-  // 動詞（連用・テ形で出やすいものは語尾規則の前に置換）
-  ["放っておいて","うっちゃっといて","all"],
-  ["ほったらかして","ほっぽらかして","all"],
-  ["捨てておいて","うっちゃっといて","all"],
-  ["捨てて","うっちゃって","all"],
-  ["捨てる","うっちゃる","all"],
-  ["捨て","うっちゃり","all"],
-  ["引っ掻く","かじる","all"],
-  ["引っ掻い","かじっ","all"],
-  ["走って","とんで","all"],
-  ["走り","とび","all"],
-  ["走る","とぶ","all"],
-  ["道の端","道のくろ","all"],
-  ["道の隅","道のくろ","all"],
-  ["つねる","ちみくる","gachi"],
-  ["捕まえる","とんまえる","all"],
-  ["捕まえ","とんまえ","all"],
-  ["ふてくされて","ちんぷりかえって","all"],
-  ["ふてくされ","ちんぷりかえ","all"],
-  ["すねて","ちんぷりかえって","all"],
-  ["腹が立つ","やっきりする","all"],
-  ["腹が立っ","やっきりし","all"],
-  ["いらいらする","やっきりする","all"],
-  ["作る","こさえる","gachi"],
-  ["作っ","こさえ","gachi"],
-  ["寄りかかる","よさりかかる","all"],
-  ["寄りかかっ","よさりかかっ","all"],
-  // 名詞・副詞
-  ["定規","せんひき","all"],
-  ["物差し","せんひき","all"],
-  ["実家","在所","gachi"],
-  ["てっぺん","てんこちょ","all"],
-  ["頂上","てんこちょ","all"],
-  ["自転車","けった","all"],
-  ["最下位","どべ","all"],
-  ["びり","どべ","all"],
-  ["端っこ","くろ","all"],
-  ["隅っこ","くろ","all"],
-  ["すぐに","ちゃっと","all"],
-  ["急いで","ちゃっと","all"],
-  ["さっさと","ちゃっちゃと","all"],
-  ["とても","ばか","all"],
-  ["すごく","ばか","all"],
-  ["かなり","がんこ","gachi"],
-  ["たくさん","えいかん","gachi"],
-  ["もう","はあ","all"],
-  ["熱い","ちんちん","all"],
-  ["久しぶり","やっとぶり","gachi"],
-  ["硬い","こわい","gachi"],
-  ["友達","連れ","all"],
-  ["友人","連れ","all"]
-];
-
-/* ---------- 語尾・文法の変換 ----------
-   日本語の活用を厳密に解析せず、語末パターンで近似する。
-   できるだけ誤爆を避けるため、固有の語尾から順に適用。     */
-
-function endingsS2E(t, mode){
-  // --- 理由：〜だから / 〜なので → だもんで ---
-  t = t.replace(/だから/g, "だもんで");
-  t = t.replace(/なので/g, "なもんで");
-  t = t.replace(/ので/g, "もんで");
-  // 動詞・形容詞の終止形＋から → もんで（来るから→来るもんで、寒いから→寒いもんで）
-  // ただし「見つからない」等の語幹内「から」を誤爆しないよう、直後が否定・連用に続く場合は除外
-  t = t.replace(/([るくぐすつぬむういた])から(?=[、。\s])/g, "$1もんで");
-  t = t.replace(/([るくぐすつぬむういた])から(?![ないなかなくれっ])(?=[ぁ-んァ-ヶ一-龠])/g, "$1もんで");
-
-  // --- 過去否定：〜なかった → んかった(ふつう) / なんだ(ガチ) ---
-  // 「〜らなかった」「〜れなかった」等の動詞過去否定を対象
-  if(mode==="gachi"){
-    t = t.replace(/([かがさたなはまらやわいきしちにひみりえけせてねへめれ])なかった/g, "$1なんだ");
-  }else{
-    t = t.replace(/([かがさたなはまらやわいきしちにひみりえけせてねへめれ])なかった/g, "$1んかった");
-  }
-
-  // --- 現在否定：〜ない → 〜ん（動詞否定）---
-  // 形容詞「〜ない（無い/赤くない等）」を避けるのは難しいので、
-  // 直前が動詞未然形になりやすい音のときだけ変換する近似。
-  t = t.replace(/([かがさたまらやわいきしちにみりえけせてねめれ])ない(?=$|[。、！？\s）」])/g, "$1ん");
-  t = t.replace(/しない/g, "せん");
-  t = t.replace(/来ない/g, "来ん");
-
-  // --- 推量・確認：〜だろう/でしょう → だら/ら/ずら ---
-  // 名詞・形容動詞のあとの「だろう/でしょう」→ だら(ふつう)/ずら(ガチ)
-  const dara = (mode==="gachi") ? "ずら" : "だら";
-  t = t.replace(/でしょうか/g, dara+"か");
-  t = t.replace(/だろうか/g, dara+"か");
-  t = t.replace(/でしょう/g, dara);
-  t = t.replace(/だろう/g, dara);
-  // 動詞・形容詞の終止形＋「だろ?」相当はここでは深追いしない
-
-  // --- 慣用的な言い回し（勧誘規則より先に）---
-  t = t.replace(/やめておこう/g, "いいにしよう");
-  t = t.replace(/やめよう/g, "いいにしよう");
-  t = t.replace(/やめておく/g, "いいにする");
-
-  // --- 勧誘：〜しよう / 〜ようか → 〜まい(か) ---
-  t = t.replace(/しようか/g, "しまいか");
-  t = t.replace(/しよう/g, "しまい");
-  t = t.replace(/やってみよう/g, "やってみまい");
-  t = t.replace(/([きしちにみりいえけせてねめ])ようか/g, "$1まいか");
-  t = t.replace(/([きしちにみりいえけせてねめ])よう(?=$|[。、！？\s）」])/g, "$1まい");
-
-  // --- 断定・念押し：〜だよ → だに / 〜するよ → するに ---
-  t = t.replace(/だよ/g, "だに");
-  t = t.replace(/ますよ/g, "ますに");
-  t = t.replace(/([るすくぐむぶぬう])よ(?=$|[。、！？\s）」])/g, "$1に");
-
-  // --- 同意・確認：〜じゃない（か）→ じゃん(か) ---
-  t = t.replace(/じゃないか/g, "じゃんか");
-  t = t.replace(/ではないか/g, "じゃんか");
-  t = t.replace(/じゃないですか/g, "じゃんね");
-
-  // --- 疑問の緩和：〜か？ → 〜け？（体言・形容動詞のあと中心）---
-  // 「ですか」→「け」、「するか」→「するけ」など軽めに
-  t = t.replace(/ですか/g, "け");
-  t = t.replace(/ます ?か/g, "ますか"); // 丁寧形は据え置き
-  // 名詞＋か？ の単純疑問
-  t = t.replace(/([ぁ-んァ-ヶ一-龠])か？/g, "$1け？");
-
-  // --- やわらか命令：〜なさい → 〜ない / 〜てごらん → 〜てごう ---
-  t = t.replace(/なさい/g, "ない");
-  t = t.replace(/てごらん/g, "てごう");
-  t = t.replace(/でごらん/g, "でごう");
-
-  // --- 「〜です」を軽い言い切りに（ふつうは控えめ、ガチは「だに」寄り）---
-  // 丁寧文はあえて崩しすぎない（読みやすさ優先）
-
-  // --- 可能：ら抜き・れ足す（軽い範囲で）---
-  t = t.replace(/食べられる/g, "食べれる");
-  t = t.replace(/見られる/g, "見れる");
-  t = t.replace(/来られる/g, "来れる");
-  t = t.replace(/られる/g, "れる");
-
-  // --- 磐田=中遠：おる/とる は使わない（いる/てる へ寄せる）---
-  t = t.replace(/とる(?=$|[。、！？\s）」])/g, "てる");
-
-  // --- 保護していた慣用句の復元 ---
-  t = t.replace(/いいにしまい/g, "いいにしよう");
-
-  return t;
-}
-
-/* ---------- 標準語→遠州弁 本体 ---------- */
-function s2e(src, mode){
-  let t = src;
-  // 1) 語尾・文法を先に変換
-  t = endingsS2E(t, mode);
-  // 2) 語彙を置換（長い順／モードでガチ語彙を有効化）
-  const list = VOCAB
-    .filter(v => v[2]==="all" || mode==="gachi") // ふつうはall語彙のみ、ガチは全部
-    .slice()
-    .sort((a,b)=> b[0].length - a[0].length);
-  for(const [a,b] of list){ t = t.split(a).join(b); }
-  // 3) ガチの仕上げ：強調「とても」相当を「がんこ」に寄せる等は語彙で対応済み
-  return t;
-}
-
-/* ---------- 遠州弁→標準語（簡易逆引き）---------- */
-function e2s(src){
-  let t = src;
-  // 語尾を戻す
-  t = t.replace(/だもんで/g,"だから");
-  t = t.replace(/なもんで/g,"なので");
-  t = t.replace(/もんで/g,"ので");
-  t = t.replace(/ずらか/g,"だろうか");
-  t = t.replace(/ずら/g,"だろう");
-  t = t.replace(/だらか/g,"だろうか");
-  t = t.replace(/だら/g,"だろう");
-  t = t.replace(/だに/g,"だよ");
-  t = t.replace(/じゃんか/g,"じゃないか");
-  t = t.replace(/じゃんね/g,"じゃない");
-  t = t.replace(/じゃん/g,"じゃない");
-  t = t.replace(/しまいか/g,"しようか");
-  t = t.replace(/しまい/g,"しよう");
-  t = t.replace(/まいか/g,"ようか");
-  t = t.replace(/てごう/g,"てごらん");
-  // 否定・過去否定
-  t = t.replace(/なんだ(?=$|[。、！？\s）」])/g,"なかった");
-  t = t.replace(/んかった/g,"なかった");
-  t = t.replace(/せん(?=$|[。、！？\s）」])/g,"しない");
-  // 語彙を戻す（長い順）
-  const rev = VOCAB.map(v=>[v[1],v[0]]).sort((a,b)=>b[0].length-a[0].length);
-  for(const [a,b] of rev){ t = t.split(a).join(b); }
-  return t;
-}
-
-function convert(){
-  const src = inEl.value;
-  if(!src.trim()){ outEl.value=""; return; }
-  outEl.value = (dir==="s2e") ? s2e(src, mode) : e2s(src);
-}
-
-/* ---------- UI ---------- */
-document.querySelectorAll("#dir button").forEach(b=>{
-  b.onclick=()=>{
-    dir=b.dataset.dir;
-    document.querySelectorAll("#dir button").forEach(x=>x.classList.remove("active"));
-    b.classList.add("active");
-    if(dir==="s2e"){
-      inLabel.textContent="標準語を入力"; outLabel.textContent="遠州弁";
-      inEl.placeholder="例：今日は雨だから、出かけるのはやめよう。";
-      modeWrap.style.display="";
-    }else{
-      inLabel.textContent="遠州弁を入力"; outLabel.textContent="標準語";
-      inEl.placeholder="例：今日は雨だもんで、出かけるのはいいにしようか。";
-      modeWrap.style.display="none";
-    }
-    convert();
-  };
-});
-
-document.querySelectorAll(".mode").forEach(b=>{
-  b.onclick=()=>{
-    mode=b.dataset.mode;
-    document.querySelectorAll(".mode").forEach(x=>x.classList.remove("active"));
-    b.classList.add("active");
-    convert();
-  };
-});
-
-document.getElementById("go").onclick=convert;
-inEl.addEventListener("input",convert);
-
-document.getElementById("swap").onclick=()=>{
-  const o = outEl.value;
-  document.querySelector(`#dir button[data-dir="${dir==='s2e'?'e2s':'s2e'}"]`).click();
-  inEl.value = o; convert();
-};
-
-document.getElementById("copy").onclick=()=>{
-  if(!outEl.value) return;
-  navigator.clipboard.writeText(outEl.value).then(()=>{
-    const c=document.getElementById("copied");
-    c.classList.add("show"); setTimeout(()=>c.classList.remove("show"),1500);
-  });
-};
-
-const SAMPLES = [
-  "今日は雨だから、出かけるのはやめよう。",
-  "それ、すごくうっとうしいね。",
-  "走って行けば間に合うでしょう。",
-  "見つからないものは仕方ないよ。",
-  "明日、一緒にやってみよう。",
-  "今日は疲れたから、もう休むよ。",
-  "あの人またサボってたの、腹が立つわ。",
-  "車が来るから道の端に寄りなさい。"
-];
-const sampWrap=document.getElementById("samples");
-SAMPLES.forEach(s=>{
-  const b=document.createElement("button");
-  b.className="samp"; b.textContent=s;
-  b.onclick=()=>{
-    if(dir!=="s2e"){ document.querySelector('#dir button[data-dir="s2e"]').click(); }
-    inEl.value=s; convert();
-  };
-  sampWrap.appendChild(b);
-});
-</script>
 
 <footer class="im-foot">
 <style>
