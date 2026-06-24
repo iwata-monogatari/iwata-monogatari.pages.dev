@@ -1,332 +1,187 @@
-<!DOCTYPE html>
+# 磐田物語 リネーム第1弾 実装指示書
+
+作成日：2026-06-25  
+対象リポジトリ：`iwata-monogatari/iwata-monogatari.pages.dev`  
+作業ID：`rename-batch-001`
+
+## Claude coworkへ渡す4ファイルと配置先
+
+この作業では、以下の4ファイルを使用する。  
+Claude coworkは、作業開始前に下記のGitHubリポジトリ内パスへ配置・反映すること。
+
+| No | この出力内のファイル | GitHubリポジトリ内の配置先 | 役割 |
+|---:|---|---|---|
+| 1 | `work/rename-batch01/instruction.md` | `work/rename-batch01/instruction.md` | 本作業指示書 |
+| 2 | `work/rename-batch01/rename-plan.json` | `work/rename-batch01/rename-plan.json` | リネーム対応表 |
+| 3 | `data/pages.json` | `data/pages.json` | 正式ページ台帳 |
+| 4 | `docs/pages-ledger.md` | `docs/pages-ledger.md` | 人間確認用の台帳 |
+
+## ChatGPT出力先パス
+
+ChatGPTからダウンロードしたファイル一式は、次の構成で出力している。
+
+```text
+iwata_rename_batch01_handoff/
+├─ data/
+│  └─ pages.json
+├─ docs/
+│  └─ pages-ledger.md
+└─ work/
+   └─ rename-batch01/
+      ├─ instruction.md
+      └─ rename-plan.json
+```
+
+## 重要ルール
+
+- GitHub上の正式原本は `data/pages.json` とする。
+- 人間確認用は `docs/pages-ledger.md` とする。
+- `work/rename-batch01/` は今回の作業用資料として残してよい。
+- 実行後は、`m001.html`〜`m005.html` が正式ページになっていることを確認する。
+- `kai1.html`〜`kai5.html` は削除せず、旧URL案内ページとして残す。
+- `sitemap.xml`、内部リンク、親ページ、台帳を必ず同時更新する。
+
+
+## 目的
+
+`kai1.html`〜`kai5.html` はファイル名だけでは内容が分かりにくく、今後の1000ページ化に向けて管理しづらい。  
+見付地区の短い地域別連番として、`m001.html`〜`m005.html` に整理する。
+
+## 確定済みの命名ルール
+
+- 作成日はファイル名に入れない。
+- 正式タイトル、地区分類、内容分類、作成日、旧ファイル名は `data/pages.json` で管理する。
+- 地区入口ページ `01001-mitsuke.html` などは固定維持する。
+- 読み物・特集・史料ページは短い地域別連番を基本にする。
+
+## リネーム対象
+
+| 旧ファイル名 | 新ファイル名 | タイトル | 地区 | 親ページ |
+|---|---|---|---|---|
+| `kai1.html` | `m001.html` | 見付古地図散歩 第1回 見付の土地と記憶 | 見付 | `01001-mitsuke.html` |
+| `kai2.html` | `m002.html` | 見付古地図散歩 第2回 相続される土地 | 見付 | `01001-mitsuke.html` |
+| `kai3.html` | `m003.html` | 見付古地図散歩 第3回 道と調査 | 見付 | `01001-mitsuke.html` |
+| `kai4.html` | `m004.html` | 見付古地図散歩 第4回 町の中枢 | 見付 | `01001-mitsuke.html` |
+| `kai5.html` | `m005.html` | 見付古地図散歩 第5回 手放す前に | 見付 | `01001-mitsuke.html` |
+
+## 実装手順
+
+### 1. 新ファイルを作成する
+
+旧ファイルの本文をそのままコピーし、新ファイルを作成する。
+
+```bash
+cp kai1.html m001.html
+cp kai2.html m002.html
+cp kai3.html m003.html
+cp kai4.html m004.html
+cp kai5.html m005.html
+```
+
+### 2. 旧ファイルは削除せず、移転案内ページにする
+
+既存URLから来た人と検索エンジン向けに、旧ファイルは削除しない。  
+`kai1.html`〜`kai5.html` は、以下の形式の移転案内ページに差し替える。
+
+```html
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>見付の土地と記憶 ― 明治42年の見付町戸別明細図から読む、家・道・暮らし</title>
-<meta name="description" content="明治42年1月に調査された『見付町戸別明細図』を読み解く。旧東海道の宿場町・見付に刻まれた家並み、小路、寺社、町の中枢。土地の記憶から、相続・空き家・古い家の扱いを考える。">
-<style>
-  :root{
-    --ink:#22303a; --ink-soft:#5b6b74; --paper:#fffdf7; --paper-2:#f4fafc;
-    --line:#d8e8ef; --accent:#1f4f6f; --accent-soft:#e9f3fa; --seal:#9b3b2f;
-    --maxw:880px;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{
-    margin:0; color:var(--ink);
-    background:var(--paper);
-    font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;
-    line-height:1.95; font-size:17px; letter-spacing:.02em;
-  }
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
-  /* ---- hero ---- */
-  header.hero{
-    background:linear-gradient(180deg,#eaf4fa 0%, var(--paper) 100%);
-    border-bottom:1px solid var(--line);
-    padding:54px 0 38px;
-  }
-  .series-tag{
-    display:inline-block; font-size:13px; letter-spacing:.32em;
-    color:var(--accent); border:1px solid var(--accent);
-    border-radius:2px; padding:5px 14px; margin-bottom:22px;
-  }
-  header.hero h1{
-    font-size:30px; line-height:1.5; margin:0 0 14px; font-weight:600;
-  }
-  header.hero .sub{font-size:16px; color:var(--ink-soft); margin:0}
-  .cover-fig{margin:30px 0 0; text-align:center}
-  .cover-fig img{
-    max-width:100%; width:520px; border:1px solid var(--line);
-    box-shadow:0 10px 30px rgba(60,45,25,.16); cursor:zoom-in;
-  }
-  .cover-fig figcaption{font-size:13px; color:var(--ink-soft); margin-top:10px}
-  /* ---- body ---- */
-  main{padding:8px 0 10px}
-  .lead{
-    background:var(--paper-2); border:1px solid var(--line);
-    border-left:4px solid var(--accent);
-    padding:22px 26px; margin:38px 0; font-size:16.5px; color:#22303a;
-  }
-  h2{
-    font-size:21px; margin:52px 0 8px; padding:0 0 0 14px;
-    border-left:6px solid var(--accent); line-height:1.5;
-  }
-  h2 .en{display:block; font-size:11px; letter-spacing:.28em; color:var(--accent); font-family:sans-serif; margin-bottom:4px}
-  p{margin:14px 0}
-  figure.plate{margin:30px 0; text-align:center}
-  figure.plate img{
-    max-width:100%; border:1px solid var(--line);
-    box-shadow:0 6px 20px rgba(60,45,25,.12); cursor:zoom-in;
-  }
-  figure.plate figcaption{font-size:13px; color:var(--ink-soft); margin-top:9px; line-height:1.6}
-  .pull{
-    font-size:19px; color:var(--accent); text-align:center;
-    margin:34px auto; max-width:640px; line-height:1.8;
-  }
-  /* ---- gallery ---- */
-  .gallery-intro{margin-top:48px}
-  .grid{
-    display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
-    gap:12px; margin:24px 0 8px;
-  }
-  .cell{cursor:zoom-in; background:#fff; border:1px solid var(--line); padding:6px; text-align:center}
-  .cell img{width:100%; height:128px; object-fit:cover; display:block}
-  .cell span{display:block; font-size:12px; color:var(--ink-soft); margin-top:6px; line-height:1.4}
-  .note-small{font-size:12.5px; color:var(--ink-soft)}
-  /* ---- series ---- */
-  .series{background:var(--paper-2); border:1px solid var(--line); padding:8px 26px 26px; margin:40px 0}
-  .series ol{list-style:none; counter-reset:s; padding:0; margin:14px 0 0}
-  .series li{counter-increment:s; padding:16px 0 16px 52px; position:relative; border-top:1px dashed var(--line)}
-  .series li:first-child{border-top:none}
-  .series li::before{
-    content:counter(s); position:absolute; left:0; top:16px;
-    width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff;
-    font-family:sans-serif; font-size:15px; display:flex; align-items:center; justify-content:center;
-  }
-  .series li b{display:block; font-size:16.5px; margin-bottom:3px}
-  .series li small{color:var(--ink-soft); font-size:13.5px; line-height:1.6}
-  /* ---- cta ---- */
-  .cta{
-    background:var(--accent); color:#fff; border-radius:4px;
-    padding:34px 30px; margin:46px 0 30px; text-align:center;
-  }
-  .cta p{color:#eaf4fa; margin:8px auto 20px; max-width:620px}
-  .cta .big{font-size:20px; color:#fff; margin:0 0 6px}
-  .btn{
-    display:inline-block; margin:6px; padding:13px 26px; border-radius:3px;
-    background:#fff; color:var(--accent); text-decoration:none; font-size:15px;
-    border:1px solid #fff;
-  }
-  .btn.ghost{background:transparent; color:#fff}
-  /* ---- footer ---- */
-  footer{border-top:1px solid var(--line); margin-top:40px; padding:28px 0 60px; color:var(--ink-soft); font-size:13.5px}
-  footer h3{font-size:14px; color:var(--ink); margin:0 0 8px; letter-spacing:.1em}
-  footer p{margin:7px 0}
-  /* ---- lightbox ---- */
-  #lb{position:fixed; inset:0; background:rgba(24,18,12,.93); display:none; z-index:99; cursor:zoom-out; padding:24px}
-  #lb.on{display:flex; flex-direction:column; align-items:center; justify-content:center}
-  #lb img{max-width:96%; max-height:84%; object-fit:contain; box-shadow:0 0 40px rgba(0,0,0,.6)}
-  #lb .cap{color:#eef6fb; font-size:14px; margin-top:14px; text-align:center; max-width:90%}
-  #lb .hint{color:#9bb6c4; font-size:12px; margin-top:6px}
-  @media(max-width:640px){
-    header.hero h1{font-size:23px} body{font-size:16px}
-    .cell img{height:104px}
-  }
-</style>
-  <link rel="canonical" href="https://iwata-monogatari.pages.dev/kai1.html">
-<style id="reno-blocks">
-.article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
-.article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
-.article-policy dt{font-weight:700;margin-top:16px;}
-.article-policy dd{margin:6px 0 0;line-height:1.8;color:var(--ink-soft,#4b5b66);}
-.related-materials{max-width:1180px;margin:48px auto;padding:0 4px;}
-.related-materials h2{font-size:1.4rem;margin-bottom:8px;font-family:"Shippori Mincho",serif;}
-.related-materials>p{line-height:1.8;color:var(--ink-soft,#4b5b66);}
-.related-materials .rm-note{font-size:.82rem;color:var(--ink-soft,#5b6b74);margin-top:14px;}
-.material-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px;}
-.material-grid figure{margin:0;border:1px solid var(--line,#d8e3ea);border-radius:14px;overflow:hidden;background:#fff;}
-.material-grid a{text-decoration:none;color:inherit;display:block;}
-.material-grid img{width:100%;height:180px;object-fit:cover;display:block;background:#eee;}
-.material-grid figcaption{padding:12px;font-size:.9rem;line-height:1.6;}
-@media(max-width:768px){.material-grid{grid-template-columns:1fr;}.material-grid img{height:auto;}}
-</style>
-  <link rel="stylesheet" href="/assets/css/site-header.css">
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, follow">
+  <meta http-equiv="refresh" content="0; url=NEW_FILE">
+  <link rel="canonical" href="https://iwata-monogatari.pages.dev/NEW_FILE">
+  <title>ページを移動しました｜磐田物語</title>
 </head>
 <body>
-<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
-<header class="gh-site">
-  <div class="gh-bar">
-    <a class="gh-brand" href="/">
-      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
-      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
-    </a>
-    <nav class="gh-menu" aria-label="主要ナビゲーション">
-      <a href="/hajimeni.html">はじめに</a>
-      <a href="/000-kensho.html">憲章</a>
-      <a href="/saguchi-shiryo-catalog.html">佐口史料室</a>
-      <a href="/#new">新着</a>
-      <a href="/bbs.html">掲示板</a>
-    </nav>
-  </div>
-</header>
-
-<nav style="background:#eaf4fa;border-bottom:1px solid var(--line);font-family:sans-serif;font-size:13px">
-  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:11px 22px;align-items:center">
-    <span>見付古地図散歩｜</span>
-    <span style="color:var(--ink-soft)">第1回 見付の土地と記憶</span>
-    <a href="kai2.html" style="color:var(--accent);text-decoration:none">第2回</a>
-    <a href="kai3.html" style="color:var(--accent);text-decoration:none">第3回</a>
-    <a href="kai4.html" style="color:var(--accent);text-decoration:none">第4回</a>
-    <a href="kai5.html" style="color:var(--accent);text-decoration:none">第5回</a>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="wrap">
-    <span class="series-tag">見付古地図散歩 ＞ 第一回</span>
-    <h1>見付の土地と記憶<br>― 明治42年の見付町戸別明細図から読む、家・道・暮らし</h1>
-    <p class="sub">古い町には、古い家だけでなく、道、地割、商い、人の流れが残っている。</p>
-    <figure class="cover-fig">
-      <img src="images/00_hyoshi.jpg" data-cap="『見付町戸別明細圖』表紙 ― 明治四十二年一月調査" alt="明治四十二年一月調査 見付町戸別明細図 表紙">
-      <figcaption>『見付町戸別明細圖』表紙 ― 明治四十二年一月調査（佐口行正氏所蔵）</figcaption>
-    </figure>
-  </div>
-</header>
-
-<main>
-<div class="wrap">
-
-  <div class="lead">
-    明治四十二（一九〇九）年一月に調査された『見付町戸別明細図』には、当時の家並み、道筋、暮らしの輪郭が一軒ずつ書き込まれています。現在の地図では見えにくくなった町の記憶を、この一枚一枚から少しずつ読み解いていきます。私たちが相続や空き家のご相談をお受けするとき見ているのも、じつはこの延長線上にある「土地の歴史」です。
-  </div>
-
-  <h2><span class="en">INTRODUCTION</span>見付という町は、土地の上に記憶が重なっている</h2>
-  <p>見付は、旧東海道の宿場町として栄えた町です。東西にのびる街道を背骨に、川原・一本松・西坂・馬場・宿・東坂・三本松といった町が連なり、そこから玄妙小路・宮小路・寺小路・地蔵小路・横町・南小路・清水小路・権現・境松といった小路が枝のように分かれていきます。町の名前そのものが、道のかたちや、神社へ向かう道筋、地形のなごりを今に伝えています。</p>
-  <p>不動産を見るときも、本来は同じことが言えます。単に「何坪か」「いくらで売れるか」だけでは、その土地の本当の姿は見えてきません。どんな道に面し、どんな家がどう並び、どんな歴史の上にあるのか。古い町ほど、そこに積み重なった記憶が、現在の取引にも静かに影響してきます。</p>
-
-  <h2><span class="en">HOUSES</span>明治42年の地図に残る、一軒ずつの家並み</h2>
-  <p>この図がほかの地図と決定的に違うのは、「戸別」――つまり一軒ずつ、世帯ごとに名前が記されている点です。街道や小路に沿って、当時そこに暮らした家々が、びっしりと書き込まれています。赤い線は道、緑の線は町なかを流れる川や用水、そして要所には寺(卍)や神社、町の施設が描かれています。</p>
-  <p>一枚を眺めるだけで、当時の見付がどれほど人の密度の高い、生き生きとした町だったかが伝わってきます。家と家のあいだの距離、奥に長くのびる敷地、路地のたたみ方。これらは単なる過去の風景ではなく、今の見付の地割にも、かたちを変えながら受け継がれています。</p>
-
-  <figure class="plate">
-    <img src="images/10_shuku.jpg" data-cap="「宿」 ― 旧東海道に面した宿の中心。街道(中央の帯)の両側に家々が向かい合って並ぶ。" alt="見付町戸別明細図 宿">
-    <figcaption>「宿」のシート。中央の帯が旧東海道で、街道の両側に家が向かい合って並ぶ、宿場町らしい町割りが読み取れます。</figcaption>
-  </figure>
-
-  <h2><span class="en">STREETS</span>旧東海道と小路 ― 今も残る道、変わった道</h2>
-  <p>古い地図と現在の地図を重ねると、変わらない道筋と、姿を変えた場所がはっきり見えてきます。見付の場合、東西に走る旧東海道という背骨は今もそのまま町の軸であり続けています。一方で、街道から分かれる細い小路、川沿いの道、寺社へ向かう参道などは、拡幅されたり、付け替えられたり、あるいは今も当時のまま残っていたりと、さまざまです。</p>
-  <p>これは懐古趣味の話ではありません。古い市街地では、道の幅(幅員)、敷地が道路にどう接しているか(接道)、奥行きの深さといった要素が、現在の不動産取引に直接かかわってきます。昔ながらの細い小路に面した土地、街道に長く面した間口の狭い敷地――こうした「町のかたち」は、売却や建て替えのときに必ず確認すべき論点になります。</p>
-
-  <figure class="plate">
-    <img src="images/04_terakoji.jpg" data-cap="「北井上・寺小路」 ― 郡役所や大見寺など、町の中枢が集まる一帯。右端の緑線は川筋。" alt="見付町戸別明細図 寺小路">
-    <figcaption>「北井上・寺小路」のシート。郡役所や大見寺など、明治の見付の中枢がこの一帯に集まっていました。右端の緑の線は町を流れる川筋です。</figcaption>
-  </figure>
-
-  <h2><span class="en">THE CORE OF THE TOWN</span>町の中枢 ― 郡役所・登記所・寺社・学校</h2>
-  <p>この図には、当時の見付が単なる住宅地ではなく、地域の中心だったことを示す施設がいくつも記されています。磐田郡の役所(郡役所)、土地や建物の権利を記録する登記所、ものづくりの製造所、学びの場である学校、そして数多くの寺院と神社。見付は、人が集まり、商いがあり、行政や教育の核があった、文字どおりの「町」でした。</p>
-  <p>なかでも私たちが目をとめるのは、明治四十二年の見付に、すでに<strong>登記所</strong>が置かれていたことです。土地や建物の権利を記録し、受け継いでいくしくみは、百年以上も前からこの町に根づいていました。相続登記が義務化された現在、私たちが日々向き合っている相続や名義の整理も、じつはこの長い営みの延長線上にあります。土地の価値は、面積や築年数だけでは測れません。その場所がどんな歴史を持ち、どんな人の流れの中にあったのか。地域を知ることは、不動産を正しく扱う第一歩です。</p>
-
-  <p class="pull">この町の土地は、ただの坪単価では語り尽くせない。</p>
-
-  <h2><span class="en">BEFORE YOU LET GO</span>古い家や土地を扱うときに、大切なこと</h2>
-  <p>見付のような歴史ある町では、相続した家、空き家、古い土地を売却する前に、確認しておきたいことが少なくありません。境界はどこか。道路にきちんと接しているか。建て替えはできるのか。上下水道はどうなっているか。解体が必要か、残置物はどうするか。近隣との関係は――。これらを一つずつ丁寧に調べておくことが、売主にとっても買主にとっても、安心できる取引につながります。</p>
-  <p>古い町の不動産は、価格の多寡だけでなく、こうした「調査の深さ」で結果が大きく変わります。急いで値段を決めることだけが正解ではありません。その土地がどう使われ、どう受け継がれてきたのかを一度整理してから考えることで、納得のいく判断にたどり着けます。</p>
-
-  <div class="cta">
-    <p class="big">売る前に、まず整理する。</p>
-    <p>富士ヶ丘サービスでは、磐田市見付周辺の相続不動産・空き家・古い住宅・土地売却のご相談を承っています。すぐに売るかどうか決まっていなくても構いません。まずは、家と土地の状況を一緒に整理するところからお手伝いします。</p>
-  </div>
-
-  <h2 class="gallery-intro"><span class="en">PLATES &nbsp;1–17</span>見付町戸別明細図 ― 町別シート一覧</h2>
-  <p>明治四十二年の見付町は、街道沿いの町と、そこから分かれる小路ごとに、十七枚の図に描き分けられています。各シートをクリックすると拡大表示されます。</p>
-  <div class="grid" id="grid"><!-- filled by JS --></div>
-  <p class="note-small">※ 各図には当時の世帯名など個人にかかわる記載が含まれます。郷土史・都市史の貴重な記録として公開していますが、ご関係者・ご子孫の方で掲載についてお気づきの点があれば、下記までご連絡ください。</p>
-
-  <div class="series">
-    <h2 style="border:none; padding:14px 0 0; margin:0"><span class="en">SERIES PLAN</span>連載「見付古地図散歩」全5回の構成</h2>
-    <ol>
-      <li><b>第1回：見付の土地と記憶（本記事）</b><small>戸別明細図の全体像から、見付という町の骨格と「土地の記憶」という視点を示す。シリーズの導入。</small></li>
-      <li><b><a href="kai2.html" style="color:var(--accent)">第2回：古い地図に残る家並みと、相続される土地</a></b><small>一軒ずつ記された家並みを入口に、相続した家・空き家を「処分」ではなく「受け継いできたもの」として見つめ直す。<a href="kai2.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
-      <li><b><a href="kai3.html" style="color:var(--accent)">第3回：旧道・小路・町割り ― 古い町の土地を売るとき、なぜ調査が大切か</a></b><small>幅員・接道・再建築・境界・上下水道など、宿場町ならではの売却時の論点を、地図の道筋から具体的に解説。<a href="kai3.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
-      <li><b><a href="kai4.html" style="color:var(--accent)">第4回：明治42年、見付の町の中枢 ― 郡役所・登記所・寺社・学校</a></b><small>町の施設から、見付が地域の中心だった歴史を語り、土地の価値は面積や築年数だけでは測れないことへつなげる。<a href="kai4.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
-      <li><b><a href="kai5.html" style="color:var(--accent)">第5回：見付の古い家を手放す前に、知っておきたいこと</a></b><small>相続登記・境界・接道・解体・残置物・空き家管理・売るか貸すか。歴史の語りから実務へ着地する、売却導線の要となる回。<a href="kai5.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
-    </ol>
-  </div>
-
-</div>
-</main>
-
-
-
-
-
-
-<div id="lb"><img src="" alt=""><div class="cap"></div><div class="hint">クリックで閉じる</div></div>
-
-<script>
-(function(){
-  var plates=[
-    ["00_hyoshi","表紙"],["01_kawara","川原"],["02_genmyo","玄妙小路"],
-    ["03_miyakoji","宮小路"],["04_terakoji","北井上・寺小路"],["05_jizo","地蔵小路"],
-    ["06_sumiyoshi","住吉"],["07_ippommatsu","一本松・川原"],["08_nishizaka","西坂"],
-    ["09_baba","馬場"],["10_shuku","宿"],["11_higashizaka","東坂"],
-    ["12_sambommatsu","三本松"],["13_yokocho","横町"],["14_nishikoji","西之小路・倉小路"],
-    ["15_minamikoji","南小路・清水小路・川尻"],["16_gongen","権現"],["17_sakaimatsu","境松"]
-  ];
-
-  var grid=document.getElementById('grid');
-  grid.innerHTML=plates.map(function(p){
-    return '<div class="cell" data-full="images/'+p[0]+'.jpg" data-cap="'+p[1]+'">'
-         +'<img src="images/'+p[0]+'_thumb.jpg" alt="'+p[1]+'" loading="lazy">'
-         +'<span>'+p[1]+'</span></div>';
-  }).join('');
-  var lb=document.getElementById('lb'), lbi=lb.querySelector('img'), lbc=lb.querySelector('.cap');
-  function openLb(src,cap){lbi.src=src;lbc.textContent=cap||'';lb.classList.add('on');document.body.style.overflow='hidden';}
-  function closeLb(){lb.classList.remove('on');lbi.src='';document.body.style.overflow='';}
-  grid.addEventListener('click',function(e){var c=e.target.closest('.cell');if(c)openLb(c.getAttribute('data-full'),c.getAttribute('data-cap'));});
-  lb.addEventListener('click',closeLb);
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb();});
-})();
-</script>
-
-<section class="article-policy">
-  <h2>この記事について</h2>
-  <dl>
-    <dt>著者</dt>
-    <dd>大石浩之（富士ヶ丘サービス株式会社 代表取締役／磐田物語 運営者）</dd>
-    <dt>参考資料</dt>
-    <dd>佐口行正氏所蔵資料、磐田市・静岡県等の公開資料、現地確認、郷土史関連資料を参考にしています。記事ごとに主要な参考資料がある場合は、個別に追記してください。</dd>
-    <dt>作成方針</dt>
-    <dd>本記事は、資料の文章をそのまま転載するのではなく、史実・地名・地理・時代背景を確認しながら、読みやすい地域史コンテンツとして再構成しています。誤りや補足情報がある場合は、運営者までお知らせください。</dd>
-  </dl>
-</section>
-
-<footer class="im-foot">
-<style>
-.im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
-.im-foot *{box-sizing:border-box;}
-.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
-.im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-.im-foot .im-brand .im-dot{color:#2f7fa3;}
-.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
-.im-foot .im-links{width:100%;margin-top:6px;}
-.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
-.im-foot .im-links li{font-size:13px;line-height:1.6;}
-.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
-.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
-.im-foot .im-sns{width:100%;margin-top:20px;}
-.im-foot .im-icons{display:flex;gap:14px;}
-.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
-.im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
-.im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
-.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
-</style>
-  <div class="im-inner">
-    <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
-    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
-    <div class="im-links">
-      <p class="im-lh">大石ひろゆきの別活動</p>
-      <ul>
-        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
-        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
-        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
-      </ul>
-      <div class="im-sns">
-        <p class="im-lh">大石ひろゆきのSNS</p>
-        <div class="im-icons">
-          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
-          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.92-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-          <a href="https://x.com/HiroyukiLawAka" target="_blank" rel="noopener" aria-label="X (旧Twitter)" title="X (旧Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-        </div>
-      </div>
-    </div>
-    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
-  </div>
-</footer>
+  <p>このページは移動しました。<a href="NEW_FILE">新しいページへ移動する</a></p>
 </body>
 </html>
+```
+
+各ファイルでは `NEW_FILE` を次のように置換する。
+
+| 旧ファイル | NEW_FILE |
+|---|---|
+| `kai1.html` | `m001.html` |
+| `kai2.html` | `m002.html` |
+| `kai3.html` | `m003.html` |
+| `kai4.html` | `m004.html` |
+| `kai5.html` | `m005.html` |
+
+### 3. 内部リンクをすべて新ファイル名に置換する
+
+リポジトリ全体で以下を置換する。
+
+```text
+kai1.html → m001.html
+kai2.html → m002.html
+kai3.html → m003.html
+kai4.html → m004.html
+kai5.html → m005.html
+```
+
+対象は少なくとも以下。
+
+```text
+index.html
+01001-mitsuke.html
+各記事HTML
+sitemap.xml
+data/pages.json
+docs/pages-ledger.md
+```
+
+### 4. sitemap.xml を更新する
+
+`sitemap.xml` には新URLのみを掲載する。
+
+```text
+https://iwata-monogatari.pages.dev/m001.html
+https://iwata-monogatari.pages.dev/m002.html
+https://iwata-monogatari.pages.dev/m003.html
+https://iwata-monogatari.pages.dev/m004.html
+https://iwata-monogatari.pages.dev/m005.html
+```
+
+旧URL `kai1.html`〜`kai5.html` は `sitemap.xml` から外す。
+
+### 5. 台帳を更新する
+
+`data/pages.json` では、各ページを次のように管理する。
+
+```json
+{
+  "file": "m001.html",
+  "title": "見付古地図散歩 第1回 見付の土地と記憶",
+  "region_code": "01",
+  "region_label": "見付",
+  "content_label": "読み物",
+  "parent_file": "01001-mitsuke.html",
+  "old_file": "kai1.html",
+  "redirect_from": ["kai1.html"],
+  "rename_batch": "rename-batch-001"
+}
+```
+
+同様に、`m002.html`〜`m005.html` も更新する。
+
+### 6. 確認項目
+
+- `m001.html`〜`m005.html` が公開URLで表示される。
+- `kai1.html`〜`kai5.html` が移転案内ページとして機能する。
+- `01001-mitsuke.html` から新ファイルへリンクされている。
+- `index.html` から旧ファイル名へのリンクが残っていない。
+- `sitemap.xml` に新URLが入り、旧URLが残っていない。
+- GitHub全体検索で通常リンクとして `kai1.html`〜`kai5.html` が残っていない。
+
+## コミットメッセージ案
+
+```text
+Rename Mitsuke map walk pages to short regional filenames
+```
+
+## 注意
+
+この作業は、単なるファイル名変更ではなく、URL・内部リンク・サイトマップ・台帳を同時に更新する作業である。  
+旧URLを完全削除すると既存リンクが切れるため、旧ファイルは移転案内ページとして残す。
