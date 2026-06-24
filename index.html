@@ -236,10 +236,10 @@ nav.menu a:hover{color:var(--brown-deep);}
   @keyframes ssL{from{transform:translateX(0)}to{transform:translateX(-50%)}}
   @keyframes ssR{from{transform:translateX(-50%)}to{transform:translateX(0)}}
   .ss-item{display:block;flex:0 0 auto;border-radius:4px;overflow:hidden;box-shadow:0 1px 5px rgba(80,60,40,.2);background:#fff;border:1px solid rgba(120,90,50,.12);}
-  .ss-item img{display:block;height:90px;width:auto;}
+  .ss-item img{display:block;height:170px;width:auto;}
   .ss-caption{position:absolute;right:14px;bottom:9px;z-index:3;font-size:12px;font-weight:600;color:var(--brown-deep);background:rgba(255,253,247,.9);border:1px solid var(--line);border-radius:999px;padding:3px 13px;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.06);}
   .ss-caption:hover{background:#fff;border-color:#6fb7d8;}
-  @media(max-width:680px){.ss-item img{height:66px;} .ss-rows .ss-track.ss-right{display:none;}}
+  @media(max-width:680px){.ss-item img{height:120px;}}
   @media(prefers-reduced-motion:reduce){.ss-track{animation:none!important;} .ss-rows{overflow-x:auto;-webkit-overflow-scrolling:touch;}}
 </style>
 <!-- 佐口資料室 画像マーキー（ランダム） -->
@@ -266,10 +266,9 @@ nav.menu a:hover{color:var(--brown-deep);}
     return track;
   }
   var pool=shuffle(IMGS.slice());
-  var n=18;
+  var n=26;
   var rows=document.getElementById('ss-rows');
   rows.appendChild(makeTrack(pool.slice(0,n),'left'));
-  rows.appendChild(makeTrack(pool.slice(n,2*n),'right'));
 })();
 </script>
 
