@@ -223,6 +223,55 @@ nav.menu a:hover{color:var(--brown-deep);}
     </nav>
   </div>
 </header>
+<style>
+  .saguchi-strip{position:relative;background:#f4f9fc;border-bottom:1px solid var(--line);padding:14px 0 12px;overflow:hidden;}
+  .saguchi-strip::before,.saguchi-strip::after{content:"";position:absolute;top:0;bottom:0;width:60px;z-index:2;pointer-events:none;}
+  .saguchi-strip::before{left:0;background:linear-gradient(90deg,#f4f9fc,rgba(244,249,252,0));}
+  .saguchi-strip::after{right:0;background:linear-gradient(270deg,#f4f9fc,rgba(244,249,252,0));}
+  .ss-rows{display:flex;flex-direction:column;gap:8px;}
+  .ss-track{display:flex;gap:8px;width:max-content;will-change:transform;}
+  .ss-left{animation:ssL 75s linear infinite;}
+  .ss-right{animation:ssR 90s linear infinite;}
+  .saguchi-strip:hover .ss-track{animation-play-state:paused;}
+  @keyframes ssL{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes ssR{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+  .ss-item{display:block;flex:0 0 auto;border-radius:4px;overflow:hidden;box-shadow:0 1px 5px rgba(80,60,40,.2);background:#fff;border:1px solid rgba(120,90,50,.12);}
+  .ss-item img{display:block;height:90px;width:auto;}
+  .ss-caption{position:absolute;right:14px;bottom:9px;z-index:3;font-size:12px;font-weight:600;color:var(--brown-deep);background:rgba(255,253,247,.9);border:1px solid var(--line);border-radius:999px;padding:3px 13px;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.06);}
+  .ss-caption:hover{background:#fff;border-color:#6fb7d8;}
+  @media(max-width:680px){.ss-item img{height:66px;} .ss-rows .ss-track.ss-right{display:none;}}
+  @media(prefers-reduced-motion:reduce){.ss-track{animation:none!important;} .ss-rows{overflow-x:auto;-webkit-overflow-scrolling:touch;}}
+</style>
+<!-- 佐口資料室 画像マーキー（ランダム） -->
+<section class="saguchi-strip" aria-label="佐口行正氏所蔵史料の画像">
+  <div class="ss-rows" id="ss-rows"></div>
+  <a class="ss-caption" href="/saguchi-shiryo-catalog.html">佐口行正氏所蔵史料より ｜ 目録を見る →</a>
+</section>
+<script>
+(function(){
+  var IMGS=["eh-1.jpg", "eh-10.jpg", "eh-11.jpg", "eh-12.jpg", "eh-13.jpg", "eh-14.jpg", "eh-15.jpg", "eh-16.jpg", "eh-17.jpg", "eh-18.jpg", "eh-19.jpg", "eh-2.jpg", "eh-20.jpg", "eh-21.jpg", "eh-22.jpg", "eh-23.jpg", "eh-24.jpg", "eh-25.jpg", "eh-26.jpg", "eh-27.jpg", "eh-28.jpg", "eh-29.jpg", "eh-3.jpg", "eh-30.jpg", "eh-31.jpg", "eh-32.jpg", "eh-33.jpg", "eh-34.jpg", "eh-35.jpg", "eh-36.jpg", "eh-37.jpg", "eh-38.jpg", "eh-39.jpg", "eh-4.jpg", "eh-40.jpg", "eh-41.jpg", "eh-42.jpg", "eh-43.jpg", "eh-44.jpg", "eh-45.jpg", "eh-5.jpg", "eh-6.jpg", "eh-7.jpg", "eh-8.jpg", "eh-9.jpg", "em-1.jpg", "em-2.jpg", "em-3.jpg", "em-4.jpg", "em-5.jpg", "em-6.jpg", "em-7.jpg", "ez2-1.jpg", "ez2-2.jpg", "hk-1.jpg", "hk-10.jpg", "hk-100.jpg", "hk-101.jpg", "hk-102.jpg", "hk-103.jpg", "hk-104.jpg", "hk-105.jpg", "hk-106.jpg", "hk-11.jpg", "hk-12.jpg", "hk-13.jpg", "hk-14.jpg", "hk-15.jpg", "hk-16.jpg", "hk-17.jpg", "hk-18.jpg", "hk-19.jpg", "hk-2.jpg", "hk-21.jpg", "hk-22.jpg", "hk-23.jpg", "hk-24.jpg", "hk-25.jpg", "hk-26.jpg", "hk-27.jpg", "hk-28.jpg", "hk-29.jpg", "hk-3.jpg", "hk-30.jpg", "hk-31.jpg", "hk-32.jpg", "hk-33.jpg", "hk-34.jpg", "hk-35.jpg", "hk-36.jpg", "hk-37.jpg", "hk-38.jpg", "hk-39.jpg", "hk-4.jpg", "hk-40.jpg", "hk-41.jpg", "hk-42.jpg", "hk-43.jpg", "hk-44.jpg", "hk-45.jpg", "hk-46.jpg", "hk-47.jpg", "hk-48.jpg", "hk-49.jpg", "hk-5.jpg", "hk-50.jpg", "hk-51.jpg", "hk-52.jpg", "hk-53.jpg", "hk-54.jpg", "hk-55.jpg", "hk-56.jpg", "hk-57.jpg", "hk-58.jpg", "hk-59.jpg", "hk-6.jpg", "hk-60.jpg", "hk-61.jpg", "hk-62.jpg", "hk-63.jpg", "hk-64.jpg", "hk-65.jpg", "hk-66.jpg", "hk-67.jpg", "hk-68.jpg", "hk-69.jpg", "hk-7.jpg", "hk-70.jpg", "hk-71.jpg", "hk-72.jpg", "hk-73.jpg", "hk-74.jpg", "hk-75.jpg", "hk-76.jpg", "hk-77.jpg", "hk-78.jpg", "hk-79.jpg", "hk-8.jpg", "hk-80.jpg", "hk-81.jpg", "hk-82.jpg", "hk-83.jpg", "hk-84.jpg", "hk-85.jpg", "hk-86.jpg", "hk-87.jpg", "hk-88.jpg", "hk-89.jpg", "hk-9.jpg", "hk-90.jpg", "hk-91.jpg", "hk-92.jpg", "hk-93.jpg", "hk-94.jpg", "hk-95.jpg", "hk-96.jpg", "hk-97.jpg", "hk-98.jpg", "hk-99.jpg", "ph-1.jpg", "ph-10.jpg", "ph-11.jpg", "ph-12.jpg", "ph-13.jpg", "ph-14.jpg", "ph-15.jpg", "ph-16.jpg", "ph-17.jpg", "ph-18.jpg", "ph-19.jpg", "ph-2.jpg", "ph-20.jpg", "ph-21.jpg", "ph-22.jpg", "ph-23.jpg", "ph-24.jpg", "ph-25.jpg", "ph-26.jpg", "ph-27.jpg", "ph-28.jpg", "ph-29.jpg", "ph-3.jpg", "ph-30.jpg", "ph-31.jpg", "ph-32.jpg", "ph-33.jpg", "ph-34.jpg", "ph-35.jpg", "ph-36.jpg", "ph-37.jpg", "ph-38.jpg", "ph-39.jpg", "ph-4.jpg", "ph-40.jpg", "ph-41.jpg", "ph-42.jpg", "ph-43.jpg", "ph-44.jpg", "ph-45.jpg", "ph-46.jpg", "ph-47.jpg", "ph-48.jpg", "ph-49.jpg", "ph-5.jpg", "ph-50.jpg", "ph-51.jpg", "ph-52.jpg", "ph-53.jpg", "ph-54.jpg", "ph-55.jpg", "ph-56.jpg", "ph-57.jpg", "ph-58.jpg", "ph-59.jpg", "ph-6.jpg", "ph-60.jpg", "ph-61.jpg", "ph-62.jpg", "ph-63.jpg", "ph-64.jpg", "ph-65.jpg", "ph-66.jpg", "ph-67.jpg", "ph-68.jpg", "ph-69.jpg", "ph-7.jpg", "ph-70.jpg", "ph-71.jpg", "ph-72.jpg", "ph-73.jpg", "ph-74.jpg", "ph-75.jpg", "ph-76.jpg", "ph-77.jpg", "ph-78.jpg", "ph-79.jpg", "ph-8.jpg", "ph-80.jpg", "ph-81.jpg", "ph-82.jpg", "ph-83.jpg", "ph-84.jpg", "ph-9.jpg", "ts-1.jpg", "ts-10.jpg", "ts-11.jpg", "ts-12.jpg", "ts-13.jpg", "ts-14.jpg", "ts-15.jpg", "ts-16.jpg", "ts-17.jpg", "ts-18.jpg", "ts-19.jpg", "ts-2.jpg", "ts-20.jpg", "ts-21.jpg", "ts-22.jpg", "ts-23.jpg", "ts-24.jpg", "ts-25.jpg", "ts-26.jpg", "ts-27.jpg", "ts-28.jpg", "ts-29.jpg", "ts-3.jpg", "ts-30.jpg", "ts-31.jpg", "ts-32.jpg", "ts-33.jpg", "ts-34.jpg", "ts-35.jpg", "ts-36.jpg", "ts-37.jpg", "ts-38.jpg", "ts-39.jpg", "ts-4.jpg", "ts-40.jpg", "ts-41.jpg", "ts-42.jpg", "ts-43.jpg", "ts-44.jpg", "ts-45.jpg", "ts-46.jpg", "ts-47.jpg", "ts-48.jpg", "ts-49.jpg", "ts-5.jpg", "ts-50.jpg", "ts-51.jpg", "ts-52.jpg", "ts-53.jpg", "ts-54.jpg", "ts-55.jpg", "ts-56.jpg", "ts-57.jpg", "ts-58.jpg", "ts-59.jpg", "ts-6.jpg", "ts-60.jpg", "ts-61.jpg", "ts-62.jpg", "ts-63.jpg", "ts-64.jpg", "ts-65.jpg", "ts-66.jpg", "ts-67.jpg", "ts-68.jpg", "ts-69.jpg", "ts-7.jpg", "ts-70.jpg", "ts-71.jpg", "ts-72.jpg", "ts-73.jpg", "ts-74.jpg", "ts-75.jpg", "ts-76.jpg", "ts-77.jpg", "ts-78.jpg", "ts-79.jpg", "ts-8.jpg", "ts-80.jpg", "ts-81.jpg", "ts-82.jpg", "ts-83.jpg", "ts-84.jpg", "ts-85.jpg", "ts-86.jpg", "ts-87.jpg", "ts-88.jpg", "ts-89.jpg", "ts-9.jpg", "ts-90.jpg", "ts-91.jpg", "ts-92.jpg"];
+  function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+  function makeTrack(list,dir){
+    var track=document.createElement('div');
+    track.className='ss-track '+(dir==='left'?'ss-left':'ss-right');
+    list.concat(list).forEach(function(name){
+      var a=document.createElement('a');
+      a.href='/saguchi-shiryo-catalog.html'; a.className='ss-item';
+      a.setAttribute('aria-label','佐口行正氏所蔵史料');
+      var img=document.createElement('img');
+      img.src='/saguchi/img/'+name; img.loading='lazy'; img.decoding='async';
+      img.alt='佐口行正氏所蔵史料'; img.onerror=function(){a.style.display='none';};
+      a.appendChild(img); track.appendChild(a);
+    });
+    return track;
+  }
+  var pool=shuffle(IMGS.slice());
+  var n=18;
+  var rows=document.getElementById('ss-rows');
+  rows.appendChild(makeTrack(pool.slice(0,n),'left'));
+  rows.appendChild(makeTrack(pool.slice(n,2*n),'right'));
+})();
+</script>
 
 <section class="searchhero">
   <div class="inner">
