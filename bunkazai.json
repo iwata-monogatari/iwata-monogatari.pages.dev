@@ -1,175 +1,131 @@
-{
-  "_meta": {
-    "description": "磐田市の文化財データ。指定区分・種別・指定年月日・年代・所在地は磐田市公式ウェブサイトの公開情報に基づく事実情報。summary・iwataNote は磐田物語編集部による独自の要約・視点。",
-    "source": "磐田市公式ウェブサイト「国指定文化財」(ページ番号1002037, 2023年3月20日更新) ほか",
-    "lastUpdated": "2026-06-21",
-    "note": "丸写しを避け、事実情報のみ引用。説明文は独自記述。不明事項はstatusでunconfirmedと明記する。"
-  },
-  "kuni_shitei": [
-    {
-      "id": "akegashima-kofungun-dosei",
-      "name": "明ヶ島古墳群出土土製品 附 土製品残欠",
-      "designation": "国指定",
-      "category": "重要文化財（有形文化財）",
-      "designatedDate": "2013-06-19",
-      "designatedDateJp": "平成25年6月19日",
-      "period": "古墳時代",
-      "location": "見付",
-      "summary": "明ヶ島古墳群から出土した、人物・動物などをかたどった多数の土製品。古墳時代の祭祀のありさまを伝える貴重な資料群である。",
-      "iwataNote": "古墳に供えられた土の造形からは、当時の人々が何を祈り、何を死者とともに送ろうとしたのかがうかがえる。古代磐田の人々の心性に触れられる資料である。",
-      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002061.html",
-      "status": "published"
-    },
-    {
-      "id": "totoumi-kokubunji-ato",
-      "name": "遠江国分寺跡",
-      "designation": "国指定",
-      "category": "特別史跡（記念物）",
-      "designatedDate": "1952-03-29",
-      "designatedDateJp": "昭和27年3月29日",
-      "period": "奈良時代",
-      "location": "見付",
-      "owner": "磐田市他",
-      "summary": "天平13年（741年）の聖武天皇「国分寺建立の詔」により、遠江国府の置かれた磐田に建てられた国分寺の跡。七重塔・金堂を備えた伽藍があった。",
-      "iwataNote": "全国の国分寺跡のなかでも早くに伽藍配置が解明され、特別史跡に指定された。古代の磐田が遠江国の政治・文化の中心であったことを示す、まちの原点である。",
-      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002046.html",
-      "readMore": "/totoumi-kokubunji.html",
-      "status": "published"
-    },
-    {
-      "id": "choshizuka-kofun",
-      "name": "銚子塚古墳 附 小銚子塚古墳",
-      "designation": "国指定",
-      "category": "史跡（記念物）",
-      "designatedDate": "1956-11-07",
-      "designatedDateJp": "昭和31年11月7日",
-      "period": "古墳時代",
-      "location": "寺谷",
-      "owner": "磐田市",
-      "summary": "磐田原台地の西縁に築かれた前方後円墳。全長約110メートルは静岡県内第3位の規模で、4世紀の遠江を治めた豪族の首長墓と考えられる。",
-      "iwataNote": "国府が置かれるよりはるか前、古墳時代の磐田に大きな力をもつ豪族がいたことを示す。隣接する小銚子塚古墳は県内に5例しかない前方後方墳である。",
-      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002047.html",
-      "readMore": "/choshizuka-kofun.html",
-      "status": "published"
-    },
-    {
-      "id": "shinpoinyama-kofungun",
-      "name": "新豊院山古墳群",
-      "designation": "国指定",
-      "category": "史跡（記念物）",
-      "designatedDate": "1987-07-03",
-      "designatedDateJp": "昭和62年7月3日",
-      "period": "古墳時代",
-      "location": "向笠竹之内",
-      "owner": "磐田市",
-      "summary": "向笠竹之内に所在する古墳群。古墳時代前期から中期にかけての磐田原東部の様相を伝える。",
-      "iwataNote": "銚子塚古墳とともに、磐田原台地に古墳時代の有力者が連なって眠っていたことを物語る。台地の縁という立地が、古墳の分布と深く関わる。",
-      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002048.html",
-      "status": "published"
-    },
-    {
-      "id": "mikuriya-kofungun",
-      "name": "御厨古墳群",
-      "designation": "国指定",
-      "category": "史跡（記念物）",
-      "designatedDate": "2001-03-26",
-      "designatedDateJp": "平成13年3月26日",
-      "period": "古墳時代",
-      "location": "新貝・鎌田",
-      "owner": "磐田市他",
-      "summary": "新貝・鎌田に分布する古墳群。磐田南部、太田川流域の古墳時代の様相を伝える。",
-      "iwataNote": "磐田原だけでなく、平野部・河川沿いにも古墳が築かれていたことを示す。古墳の分布から、古代の人々の暮らしの広がりが見えてくる。",
-      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002049.html",
-      "status": "published"
-    },
-    {
-      "id": "kyu-mitsuke-gakko-iwata-bunko",
-      "name": "旧見付学校 附 磐田文庫",
-      "designation": "国指定",
-      "category": "史跡（記念物）",
-      "designatedDate": "1969-04-12",
-      "designatedDateJp": "昭和44年4月12日",
-      "period": "明治時代",
-      "location": "見付",
-      "owner": "磐田市",
-      "summary": "明治8年（1875年）落成の、現存最古とされる木造擬洋風小学校校舎。隣接する磐田文庫とともに史跡に指定されている。",
-      "iwataNote": "「見付の五階」と親しまれた校舎。寺子屋・私塾・磐田文庫へと続く、学びのまち磐田の蓄積の上に建った。城の石垣を土台にした、受け継ぎの精神の象徴である。",
-      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002050.html",
-      "readMore": "/kyu-mitsuke-gakko.html",
-      "status": "published"
-    },
-    {
-      "id": "kumano-no-naga-fuji",
-      "name": "熊野の長フジ",
-      "designation": "国指定",
-      "category": "天然記念物（記念物）",
-      "designatedDate": "1932-07-25",
-      "designatedDateJp": "昭和7年7月25日",
-      "period": null,
-      "location": "池田",
-      "owner": "行興寺",
-      "summary": "池田の行興寺にある、樹齢を重ねたフジの巨木。長く垂れる花房で知られ、天然記念物に指定されている。",
-      "iwataNote": "平安の女性・熊野（ゆや）御前ゆかりと伝えられる。文化財は石や建物だけではない。生きて季節ごとに花を咲かせる樹木もまた、地域の記憶を背負っている。",
-      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002051.html",
-      "status": "published"
-    },
-    {
-      "id": "mitsuke-tenjin-hadaka-matsuri",
-      "name": "見付天神裸祭",
-      "designation": "国指定",
-      "category": "重要無形民俗文化財（民俗文化財）",
-      "designatedDate": "2000-12-27",
-      "designatedDateJp": "平成12年12月27日",
-      "period": null,
-      "location": "見付",
-      "summary": "矢奈比賣神社の祭神が遠江国総社・淡海國玉神社へ渡御する大祭。腰蓑姿の裸衆による鬼踊りと、漆黒の闇の神輿渡御で知られる。",
-      "iwataNote": "形あるものだけが文化財ではない。人々の手で毎年くり返される神事もまた、国の宝とされる。総社渡御という古代の信仰のかたちを、今に伝える。",
-      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002052.html",
-      "readMore": "/mitsuke-tenjin-hadaka-matsuri.html",
-      "status": "published"
-    }
-  ],
-  "ken_shitei": [
-    { "name": "府八幡宮楼門", "category": "建造物", "designatedDateJp": "昭和30年2月25日", "period": "江戸時代", "location": "中泉", "owner": "府八幡宮", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002054.html" },
-    { "name": "旧赤松家門・塀", "category": "建造物", "designatedDateJp": "平成4年3月17日", "period": "明治時代", "location": "見付", "owner": "磐田市", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002055.html" },
-    { "name": "木造地蔵菩薩坐像", "category": "彫刻", "designatedDateJp": "昭和59年11月30日", "period": "平安時代", "location": "見付", "owner": "宣光寺", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002056.html" },
-    { "name": "木造毘沙門天立像", "category": "彫刻", "designatedDateJp": "昭和59年11月30日", "period": "平安時代", "location": "見付", "owner": "宣光寺", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002056.html" },
-    { "name": "絹本着色釈迦十六善神画像", "category": "絵画", "designatedDateJp": "昭和57年2月26日", "period": "鎌倉時代", "location": "豊浜中野", "owner": "豊浜中野自治会", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002057.html" },
-    { "name": "熊野絵巻", "category": "絵画", "designatedDateJp": "令和2年12月8日", "period": "室町時代", "location": "池田", "owner": "行興寺", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1008998.html" },
-    { "name": "鰐口", "category": "工芸", "designatedDateJp": "昭和31年10月17日", "period": "南北朝時代", "location": "大島", "owner": "大島自治会", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002058.html" },
-    { "name": "三角縁四神四獣鏡", "category": "考古資料", "designatedDateJp": "昭和33年9月2日", "period": "古墳時代", "location": "新貝", "owner": "連城寺", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002059.html" },
-    { "name": "堂山古墳出土遺物", "category": "考古資料", "designatedDateJp": "平成8年3月22日", "period": "古墳時代", "location": "見付", "owner": "磐田市", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002060.html" },
-    { "name": "太刀 銘成高", "category": "工芸", "designatedDateJp": "平成26年3月14日", "period": "鎌倉時代", "location": "見付", "owner": "個人", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002068.html" },
-    { "name": "淡海国玉神社本殿 附棟札5枚", "category": "建造物", "designatedDateJp": "平成27年12月8日", "period": "平安時代", "location": "見付", "owner": "淡海国玉神社", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002069.html" },
-    { "name": "米塚古墳群", "category": "史跡（記念物）", "designatedDateJp": "昭和49年4月18日", "period": "古墳時代", "location": "寺谷", "owner": "磐田市", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002062.html" },
-    { "name": "長者屋敷遺跡", "category": "史跡（記念物）", "designatedDateJp": "昭和54年11月19日", "period": "奈良時代", "location": "寺谷", "owner": "磐田市", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002063.html" },
-    { "name": "土器塚古墳", "category": "史跡（記念物）", "designatedDateJp": "平成14年12月10日", "period": "古墳時代", "location": "中泉", "owner": "磐田市他", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002064.html" },
-    { "name": "善導寺大クス", "category": "天然記念物（記念物）", "designatedDateJp": "昭和34年4月14日", "period": null, "location": "中泉", "owner": "磐田市", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002065.html" },
-    { "name": "甲塚のクロガネモチ", "category": "天然記念物（記念物）", "designatedDateJp": "昭和59年3月23日", "period": null, "location": "見付", "owner": "磐田市", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002066.html" },
-    { "name": "熊野の長フジ（県指定・天然記念物）", "category": "天然記念物（記念物）", "designatedDateJp": "昭和47年9月26日", "period": null, "location": "池田", "owner": "行興寺", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002051.html", "note": "のちに国の天然記念物にも指定" },
-    { "name": "掛塚祭屋台囃子", "category": "無形民俗文化財", "designatedDateJp": "昭和45年6月2日", "period": null, "location": "掛塚", "owner": "掛塚地区9自治会", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002067.html" }
-  ],
-  "shi_shitei_mukei": [
-    { "name": "八王子神社米とぎまつり", "location": "下太", "owner": "八王子神社氏子" },
-    { "name": "中野白山神社十日祭（お箱）", "location": "豊浜中野", "owner": "白山神社氏子" },
-    { "name": "中野白山神社例祭（白酒）", "location": "豊浜中野", "owner": "白山神社氏子" },
-    { "name": "氏神様の年始回り", "location": "豊浜", "owner": "三嶋神社禰宜番" },
-    { "name": "賀茂神社特殊神饌", "location": "加茂", "owner": "賀茂神社氏子" },
-    { "name": "池田やかた祭り", "location": "池田", "owner": "池田やかた祭り保存会" },
-    { "name": "大めし祭り", "location": "富里", "owner": "諏訪神社氏子" },
-    { "name": "加茂大念仏", "location": "加茂", "owner": "加茂大念仏保存会" },
-    { "name": "豊岡の遠州大念仏", "location": "豊岡地区各所", "owner": "各地区の念仏組" },
-    { "name": "掛塚祭竹馬", "location": "掛塚", "owner": "掛塚東町自治会" }
-  ],
-  "_index_meta": {
-    "kuni_count": 8,
-    "kuni_source": "磐田市公式「国指定文化財」(1002037, 2023-03-20更新)",
-    "ken_count": 18,
-    "ken_source": "磐田市公式「県指定文化財」(1002038, 2023-03-20更新)",
-    "shi_source": "磐田市公式「市指定文化財」(1002039, 2025-08-19更新)",
-    "shi_note": "市指定の有形文化財（建造物・彫刻ほか多数）は件数が多く随時更新されるため、本データには未収載。公式ページを参照。",
-    "toroku_source": "磐田市公式「国登録有形文化財」(1002040, 2025-11-19更新)",
-    "toroku_note": "国登録有形文化財は本データに未収載。公式ページを参照。",
-    "mukei_source": "磐田市公式「無形民俗文化財」(1002041, 2025-02-27更新)"
-  }
-}
+# 磐田物語 リネーム第2弾 実装指示書
+
+作成日：2026-06-25  
+対象リポジトリ：`iwata-monogatari/iwata-monogatari.pages.dev`  
+作業ID：`rename-batch-002`
+
+## Claude coworkへ渡す4ファイルと配置先
+
+この作業では、以下の4ファイルを使用する。  
+Claude coworkは、作業開始前に下記のGitHubリポジトリ内パスへ配置・反映すること。
+
+| No | この出力内のファイル | GitHubリポジトリ内の配置先 | 役割 |
+|---:|---|---|---|
+| 1 | `work/rename-batch02/instruction.md` | `work/rename-batch02/instruction.md` | 本作業指示書 |
+| 2 | `work/rename-batch02/rename-plan.json` | `work/rename-batch02/rename-plan.json` | リネーム対応表 |
+| 3 | `data/pages.json` | `data/pages.json` | 正式ページ台帳 |
+| 4 | `docs/pages-ledger.md` | `docs/pages-ledger.md` | 人間確認用の台帳 |
+
+## ChatGPT出力先パス
+
+ChatGPTからダウンロードしたファイル一式は、次の構成で出力している。
+
+```text
+iwata_rename_batch02_handoff/
+├─ data/
+│  └─ pages.json
+├─ docs/
+│  └─ pages-ledger.md
+└─ work/
+   └─ rename-batch02/
+      ├─ instruction.md
+      └─ rename-plan.json
+```
+
+## 前提条件
+
+- `rename-batch-001` が先に反映済みであること。
+- 具体的には、`m001.html`〜`m005.html` が正式ページとして存在し、`kai1.html`〜`kai5.html` が旧URL案内ページとして残っていること。
+- 未実施の場合は、必ず第1弾を先に実行してから第2弾に進むこと。
+
+## 目的
+
+長い遠江国分寺系ファイル名を、中泉分類の短い地域別連番ファイル名へ変更する。  
+ファイル名には作成日や長い英語説明を入れず、意味・正式タイトル・作成日・更新日・地域分類・内容分類は `data/pages.json` で管理する。
+
+## リネーム対象
+
+| 旧ファイル名 | 新ファイル名 | 親ページ | 内容 |
+|---|---|---|---|
+| `enshu-kokubunji.html` | `n001.html` | `01002-nakaizumi.html` | 遠江国分寺 特集親ページ |
+| `enshu-kokubunji-what.html` | `n002.html` | `n001.html` | 遠江国分寺とは何か |
+| `enshu-kokubunji-location.html` | `n003.html` | `n001.html` | 遠江国分寺の位置 |
+| `enshu-kokubunji-garan.html` | `n004.html` | `n001.html` | 遠江国分寺の伽藍 |
+| `enshu-kokubunji-garan-kondo.html` | `n005.html` | `n004.html` | 遠江国分寺 伽藍・金堂 |
+| `enshu-kokubunji-garan-tower.html` | `n006.html` | `n004.html` | 遠江国分寺 伽藍・塔 |
+| `enshu-kokubunji-garan-kodo.html` | `n007.html` | `n004.html` | 遠江国分寺 伽藍・講堂 |
+| `enshu-kokubunji-garan-kairo.html` | `n008.html` | `n004.html` | 遠江国分寺 伽藍・回廊 |
+| `enshu-kokubunji-garan-sobo.html` | `n009.html` | `n004.html` | 遠江国分寺 伽藍・僧坊 |
+| `enshu-kokubunji-tiles.html` | `n010.html` | `n001.html` | 遠江国分寺の瓦 |
+| `enshu-kokubunji-chronology.html` | `n011.html` | `n001.html` | 遠江国分寺 年表 |
+| `enshu-kokubunji-life.html` | `n012.html` | `n001.html` | 遠江国分寺と人々の暮らし |
+| `enshu-kokubunji-walk.html` | `n013.html` | `n001.html` | 遠江国分寺を歩く |
+| `enshu-kokubunji-fukko.html` | `n014.html` | `n001.html` | 遠江国分寺 復興 |
+| `enshu-kokubunji-glossary.html` | `n015.html` | `n001.html` | 遠江国分寺 用語集 |
+| `totoumi-kokubunji.html` | `n016.html` | `01002-nakaizumi.html` | 遠江国分寺 関連ページ |
+
+
+## 実装方針
+
+1. 旧ファイルの本文を新ファイルへ移す。
+2. 新ファイル名を正式URLとして扱う。
+3. 旧ファイルは削除しない。
+4. 旧ファイルには、新URLへの移転案内を表示するHTMLを残す。
+5. 可能であれば、旧ファイルに `<meta http-equiv="refresh">` を設定して新URLへ誘導する。
+6. `sitemap.xml` には新ファイル `n001.html`〜`n016.html` のみ掲載する。
+7. `sitemap.xml` から旧ファイル名を削除する。
+8. `index.html`、`01002-nakaizumi.html`、各記事内の内部リンクをすべて新ファイル名へ更新する。
+9. `data/pages.json` をこの出力の `data/pages.json` で更新する。
+10. `docs/pages-ledger.md` をこの出力の `docs/pages-ledger.md` で更新する。
+
+## 親子関係
+
+- `n001.html`：遠江国分寺系の親ページ。
+- `n002.html`、`n003.html`、`n004.html`、`n010.html`〜`n015.html`：`n001.html` の子ページ。
+- `n004.html`：遠江国分寺 伽藍系の親ページ。
+- `n005.html`〜`n009.html`：`n004.html` の子ページ。
+- `n016.html`：遠江国分寺関連ページ。`01002-nakaizumi.html` に紐づける。
+
+## 旧URL案内ページの文例
+
+旧ファイルには、以下のような案内を入れる。
+
+```html
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url=新ファイル名.html">
+  <title>ページ移転のお知らせ｜磐田物語</title>
+</head>
+<body>
+  <main>
+    <h1>ページを移転しました</h1>
+    <p>このページは新しいURLへ移転しました。</p>
+    <p><a href="新ファイル名.html">新しいページを開く</a></p>
+  </main>
+</body>
+</html>
+```
+
+## 確認項目
+
+作業後、次を確認する。
+
+- `n001.html`〜`n016.html` が表示できる。
+- 旧URLから新URLへ移動できる。
+- `01002-nakaizumi.html` から遠江国分寺系ページへ移動できる。
+- 遠江国分寺系ページ内の相互リンクが旧ファイル名を参照していない。
+- `sitemap.xml` に旧ファイル名が残っていない。
+- `sitemap.xml` に新ファイル名が入っている。
+- `data/pages.json` が正式台帳として更新されている。
+- `docs/pages-ledger.md` で人間確認できる。
+- `work/rename-batch02/rename-plan.json` の内容と実ファイルのリネーム結果が一致している。
+
+## 注意
+
+- 旧ファイルを削除しないこと。
+- ファイル名に作成日を入れないこと。
+- 長い英語スラッグへ戻さないこと。
+- 地区入口ページ `01002-nakaizumi.html` はリネームしないこと。
+- 第1弾の `m001.html`〜`m005.html` を変更しないこと。

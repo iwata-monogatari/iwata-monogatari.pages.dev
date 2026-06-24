@@ -1,258 +1,543 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>古い町の土地を売るとき、なぜ調査が大切なのか ― 見付の旧道・小路・町割りから｜見付古地図散歩 第3回</title>
-<meta name="description" content="明治42年の見付町戸別明細図に残る旧東海道と小路。宿場町の土地を売却するとき問題になりやすい幅員・接道・再建築・境界・上下水道を、古い町割りの視点から解説します。">
-<style>
-  :root{
-    --ink:#22303a; --ink-soft:#5b6b74; --paper:#fffdf7; --paper-2:#f4fafc;
-    --line:#d8e8ef; --accent:#1f4f6f; --accent-soft:#e9f3fa; --seal:#9b3b2f; --maxw:880px;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0; color:var(--ink); background:var(--paper);
-    font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;
-    line-height:1.95; font-size:17px; letter-spacing:.02em;}
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
-  .seriesnav{background:#eaf4fa; border-bottom:1px solid var(--line); font-family:sans-serif; font-size:13px}
-  .seriesnav .wrap{display:flex; flex-wrap:wrap; gap:6px 18px; padding:11px 22px; align-items:center}
-  .seriesnav a{color:var(--accent); text-decoration:none}
-  .seriesnav a:hover{text-decoration:underline}
-  .seriesnav .now{color:var(--ink-soft)}
-  header.hero{background:linear-gradient(180deg,#eaf4fa 0%, var(--paper) 100%); border-bottom:1px solid var(--line); padding:46px 0 34px;}
-  .series-tag{display:inline-block; font-size:13px; letter-spacing:.32em; color:var(--accent); border:1px solid var(--accent); border-radius:2px; padding:5px 14px; margin-bottom:20px;}
-  header.hero h1{font-size:28px; line-height:1.5; margin:0 0 14px; font-weight:600;}
-  header.hero .sub{font-size:16px; color:var(--ink-soft); margin:0}
-  .cover-fig{margin:28px 0 0; text-align:center}
-  .cover-fig img{max-width:100%; border:1px solid var(--line); box-shadow:0 8px 26px rgba(60,45,25,.15); cursor:zoom-in;}
-  .cover-fig figcaption{font-size:13px; color:var(--ink-soft); margin-top:10px}
-  main{padding:8px 0 10px}
-  .lead{background:var(--paper-2); border:1px solid var(--line); border-left:4px solid var(--accent); padding:22px 26px; margin:36px 0; font-size:16.5px; color:#22303a;}
-  h2{font-size:21px; margin:50px 0 8px; padding:0 0 0 14px; border-left:6px solid var(--accent); line-height:1.5;}
-  h2 .en{display:block; font-size:11px; letter-spacing:.28em; color:var(--accent); font-family:sans-serif; margin-bottom:4px}
-  p{margin:14px 0}
-  figure.plate{margin:30px 0; text-align:center}
-  figure.plate img{max-width:100%; border:1px solid var(--line); box-shadow:0 6px 20px rgba(60,45,25,.12); cursor:zoom-in;}
-  figure.plate figcaption{font-size:13px; color:var(--ink-soft); margin-top:9px; line-height:1.6}
-  .pull{font-size:19px; color:var(--accent); text-align:center; margin:34px auto; max-width:660px; line-height:1.8;}
-  .check{background:var(--paper-2); border:1px solid var(--line); padding:20px 24px; margin:28px 0}
-  .check h3{margin:0 0 10px; font-size:16px; letter-spacing:.06em}
-  .check ul{margin:0; padding:0; list-style:none}
-  .check li{padding:9px 0 9px 30px; position:relative; border-top:1px dashed var(--line); font-size:15.5px}
-  .check li:first-child{border-top:none}
-  .check li::before{content:"✓"; position:absolute; left:4px; top:9px; color:var(--accent); font-weight:bold}
-  .cta{background:var(--accent); color:#fff; border-radius:4px; padding:34px 30px; margin:46px 0 24px; text-align:center;}
-  .cta p{color:#eaf4fa; margin:8px auto 20px; max-width:620px}
-  .cta .big{font-size:20px; color:#fff; margin:0 0 6px}
-  .btn{display:inline-block; margin:6px; padding:13px 26px; border-radius:3px; background:#fff; color:var(--accent); text-decoration:none; font-size:15px; border:1px solid #fff;}
-  .btn.ghost{background:transparent; color:#fff}
-  .nextprev{display:flex; justify-content:space-between; gap:14px; margin:30px 0 0; font-family:sans-serif; font-size:14px}
-  .nextprev a{flex:1; border:1px solid var(--line); border-radius:4px; padding:16px 18px; text-decoration:none; color:var(--ink); background:var(--paper-2)}
-  .nextprev a:hover{border-color:var(--accent)}
-  .nextprev small{display:block; color:var(--accent); font-size:12px; margin-bottom:4px}
-  footer{border-top:1px solid var(--line); margin-top:40px; padding:28px 0 60px; color:var(--ink-soft); font-size:13.5px}
-  footer h3{font-size:14px; color:var(--ink); margin:0 0 8px; letter-spacing:.1em}
-  footer p{margin:7px 0}
-  #lb{position:fixed; inset:0; background:rgba(24,18,12,.93); display:none; z-index:99; cursor:zoom-out; padding:24px}
-  #lb.on{display:flex; flex-direction:column; align-items:center; justify-content:center}
-  #lb img{max-width:96%; max-height:84%; object-fit:contain; box-shadow:0 0 40px rgba(0,0,0,.6)}
-  #lb .cap{color:#eef6fb; font-size:14px; margin-top:14px; text-align:center; max-width:90%}
-  #lb .hint{color:#9bb6c4; font-size:12px; margin-top:6px}
-  @media(max-width:640px){header.hero h1{font-size:22px} body{font-size:16px} .nextprev{flex-direction:column}}
-</style>
-  <link rel="canonical" href="https://iwata-monogatari.pages.dev/m003.html">
-<style id="reno-blocks">
-.article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
-.article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
-.article-policy dt{font-weight:700;margin-top:16px;}
-.article-policy dd{margin:6px 0 0;line-height:1.8;color:var(--ink-soft,#4b5b66);}
-.related-materials{max-width:1180px;margin:48px auto;padding:0 4px;}
-.related-materials h2{font-size:1.4rem;margin-bottom:8px;font-family:"Shippori Mincho",serif;}
-.related-materials>p{line-height:1.8;color:var(--ink-soft,#4b5b66);}
-.related-materials .rm-note{font-size:.82rem;color:var(--ink-soft,#5b6b74);margin-top:14px;}
-.material-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px;}
-.material-grid figure{margin:0;border:1px solid var(--line,#d8e3ea);border-radius:14px;overflow:hidden;background:#fff;}
-.material-grid a{text-decoration:none;color:inherit;display:block;}
-.material-grid img{width:100%;height:180px;object-fit:cover;display:block;background:#eee;}
-.material-grid figcaption{padding:12px;font-size:.9rem;line-height:1.6;}
-@media(max-width:768px){.material-grid{grid-template-columns:1fr;}.material-grid img{height:auto;}}
-</style>
-  <link rel="stylesheet" href="/assets/css/site-header.css">
-</head>
-<body>
-<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
-<header class="gh-site">
-  <div class="gh-bar">
-    <a class="gh-brand" href="/">
-      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
-      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
-    </a>
-    <nav class="gh-menu" aria-label="主要ナビゲーション">
-      <a href="/hajimeni.html">はじめに</a>
-      <a href="/000-kensho.html">憲章</a>
-      <a href="/saguchi-shiryo-catalog.html">佐口史料室</a>
-      <a href="/#new">新着</a>
-      <a href="/bbs.html">掲示板</a>
-    </nav>
-  </div>
-</header>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<nav class="seriesnav"><div class="wrap">
-  <span>見付古地図散歩｜</span>
-  <a href="m001.html">第1回</a>
-  <a href="m002.html">第2回</a>
-  <span class="now">第3回 道と調査</span>
-  <a href="m004.html">第4回</a>
-  <a href="m005.html">第5回</a>
-</div></nav>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/bunkazai.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-<header class="hero">
-  <div class="wrap">
-    <span class="series-tag">見付古地図散歩 ＞ 第三回</span>
-    <h1>古い町の土地を売るとき、<br>なぜ「調査」が大切なのか<br><span style="font-size:18px;font-weight:500;color:var(--ink-soft)">― 見付の旧道・小路・町割りから</span></h1>
-    <p class="sub">昔からある道、奥に長い敷地、細い路地。古い町の魅力は、そのまま売却の論点でもある。</p>
-    <figure class="cover-fig">
-      <img src="images/10_shuku.jpg" data-cap="「宿」 ― 旧東海道に面した宿の中心。中央の街道に沿って家々が並ぶ。" alt="見付町戸別明細図 宿">
-      <figcaption>『見付町戸別明細圖』より「宿」 ― 中央を東西に走るのが旧東海道（佐口行正氏 所蔵）</figcaption>
-    </figure>
-  </div>
-</header>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/chizu.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-<main>
-<div class="wrap">
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/choshizuka-kofun.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <div class="lead">
-    見付は、旧東海道の宿場町として発展してきた町です。街道に長く面した間口の狭い敷地、奥へ深くのびる地割、街道から枝分かれする細い小路――。明治四十二年の『見付町戸別明細図』を眺めると、こうした「古い町のかたち」がはっきりと見えてきます。そしてこのかたちは、今このまちで土地や家を売るときに、価格よりも先に確かめておくべき論点に、そのままつながっています。
-  </div>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/dayori.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <h2><span class="en">THE SHAPE OF AN OLD TOWN</span>古い町のかたちは、地図に残っている</h2>
-  <p>明治の地図から読み取れるのは、まず道のかたちです。東西にのびる旧東海道という太い背骨があり、そこから玄妙小路・寺小路・地蔵小路・横町・西之小路・倉小路・南小路・清水小路といった細い道が分かれていきます。街道沿いには家が密に並び、一軒一軒の間口は狭く、その分だけ敷地は奥へ長くのびています。緑の線でたどられた川や用水も、町のあちこちを縫って流れています。</p>
-  <p>これは宿場町に共通する特徴です。そして魅力であると同時に、現代の不動産取引では、いくつもの確認事項を生む原因にもなります。古い町の土地は、地図のかたちを知らずに「坪いくら」とだけ考えると、思わぬところでつまずきます。</p>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/enshu-ben.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <figure class="plate">
-    <img src="images/14_nishikoji.jpg" data-cap="「西之小路・倉小路」 ― 街道から枝分かれする細い小路と、入り組んだ地割。" alt="見付町戸別明細図 西之小路・倉小路">
-    <figcaption>「西之小路・倉小路」のシート。街道から分かれる細い小路と、奥行きのある入り組んだ地割が読み取れます。</figcaption>
-  </figure>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n011.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <h2><span class="en">FIVE POINTS</span>古い町の土地で、価格より先に確かめること</h2>
-  <p>明治の地図を入口にすると、確認すべき点が具体的に見えてきます。昔からある道、家と家の距離、奥に長い敷地、細い路地、寺社や旧道との関係、昔の町名や字名――。これらは懐かしい風景の話ではなく、売却の可否や価格を左右する、現在進行形の論点です。</p>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n014.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <div class="check">
-    <h3>宿場町・見付の土地で、特に注意したいこと</h3>
-    <ul>
-      <li><b>道路の幅員（はばいん）</b> ― 細い小路に面した土地は、接する道路が建築基準法上の道路か、幅が足りているかで評価が変わります。</li>
-      <li><b>接道</b> ― 敷地が道路にどれだけ接しているか。間口が狭い、奥まっているといった土地では特に重要です。</li>
-      <li><b>再建築の可否</b> ― 今の家を解体すると新しく建てられない（再建築不可）土地が、古い市街地には潜んでいることがあります。</li>
-      <li><b>境界</b> ― 隣地や道路との境界がはっきりしているか。古い町ほど、境界が曖昧なまま受け継がれている例があります。</li>
-      <li><b>上下水道</b> ― 引き込みの有無や老朽化、私設管の共有など、見えない部分の確認が必要です。</li>
-    </ul>
-  </div>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n008.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <p>これらは、現地を見るだけでは分かりません。法務局の資料、市の道路台帳、過去の経緯、そして地域そのものへの理解――いくつもの手がかりを重ねて、はじめて見えてきます。だからこそ、古い町の不動産は、価格だけでなく「調査の深さ」で結果が変わるのです。</p>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n007.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <figure class="plate">
-    <img src="images/01_kawara.jpg" data-cap="「川原」 ― 町のへりを流れる川筋（緑の線）と、その近くの家並み。" alt="見付町戸別明細図 川原">
-    <figcaption>「川原」のシート。緑の線は町を流れる川筋。水まわりや境界は、古い町の土地でとりわけ確認が必要な部分です。</figcaption>
-  </figure>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n005.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <p class="pull">古い町の不動産は、価格ではなく、調査の深さで結果が変わる。</p>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n009.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <h2><span class="en">WHY IT MATTERS</span>調査が、売主と買主の両方を守る</h2>
-  <p>調査を尽くすことは、面倒な手続きのためではありません。境界や接道、再建築の可否をあらかじめ整理しておけば、買い手は安心して検討でき、結果として土地は適正に評価されます。逆に、確認を後回しにしたまま売り急ぐと、契約後のトラブルや、値引き、白紙解約につながりかねません。丁寧な調査は、売主の手取りを守り、買主の安心を支える――その両方に効いてくる準備です。</p>
-  <p>見付のように長い歴史を持つ町では、なおさらです。土地の一筆一筆に、何代にもわたる暮らしの経緯が積み重なっています。その背景を読み解けるかどうかで、同じ土地でも結果が変わってきます。</p>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n006.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <div class="cta">
-    <p class="big">古い町の土地ほど、売る前の調査がものを言う。</p>
-    <p>富士ヶ丘サービスでは、磐田市見付周辺の古い住宅・相続した土地・空き家について、境界・接道・再建築・上下水道などの確認を含めたご相談を承っています。価格を出す前に、まず土地の状況を一緒に整理しましょう。</p>
-  </div>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n004.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <div class="nextprev">
-    <a href="m001.html"><small>&laquo; 第1回</small>見付の土地と記憶</a>
-    <a href="m005.html"><small>第5回 &raquo;</small>見付の古い家を手放す前に、知っておきたいこと</a>
-  </div>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n015.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-</div>
-</main>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n012.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n003.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n010.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n013.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n002.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n001.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-<div id="lb"><img src="" alt=""><div class="cap"></div><div class="hint">クリックで閉じる</div></div>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/fu-hachimangu.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-<script>
-(function(){
-  var lb=document.getElementById('lb'), lbi=lb.querySelector('img'), lbc=lb.querySelector('.cap');
-  function open(src,cap){lbi.src=src; lbc.textContent=cap||''; lb.classList.add('on'); document.body.style.overflow='hidden';}
-  function close(){lb.classList.remove('on'); lbi.src=''; document.body.style.overflow='';}
-  document.addEventListener('click',function(e){
-    var t=e.target;
-    if(t.tagName==='IMG' && t.dataset.cap && !t.closest('#lb')){ open(t.getAttribute('src'), t.dataset.cap); }
-  });
-  lb.addEventListener('click',close);
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
-})();
-</script>
-<section class="article-policy">
-  <h2>この記事について</h2>
-  <dl>
-    <dt>著者</dt>
-    <dd>大石浩之（富士ヶ丘サービス株式会社 代表取締役／磐田物語 運営者）</dd>
-    <dt>参考資料</dt>
-    <dd>佐口行正氏所蔵資料、磐田市・静岡県等の公開資料、現地確認、郷土史関連資料を参考にしています。記事ごとに主要な参考資料がある場合は、個別に追記してください。</dd>
-    <dt>作成方針</dt>
-    <dd>本記事は、資料の文章をそのまま転載するのではなく、史実・地名・地理・時代背景を確認しながら、読みやすい地域史コンテンツとして再構成しています。誤りや補足情報がある場合は、運営者までお知らせください。</dd>
-  </dl>
-</section>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/goten-ninomiya-iseki.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-<footer class="im-foot">
-<style>
-.im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
-.im-foot *{box-sizing:border-box;}
-.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
-.im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-.im-foot .im-brand .im-dot{color:#2f7fa3;}
-.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
-.im-foot .im-links{width:100%;margin-top:6px;}
-.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
-.im-foot .im-links li{font-size:13px;line-height:1.6;}
-.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
-.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
-.im-foot .im-sns{width:100%;margin-top:20px;}
-.im-foot .im-icons{display:flex;gap:14px;}
-.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
-.im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
-.im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
-.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
-</style>
-  <div class="im-inner">
-    <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
-    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
-    <div class="im-links">
-      <p class="im-lh">大石ひろゆきの別活動</p>
-      <ul>
-        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
-        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
-        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
-      </ul>
-      <div class="im-sns">
-        <p class="im-lh">大石ひろゆきのSNS</p>
-        <div class="im-icons">
-          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
-          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.92-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-          <a href="https://x.com/HiroyukiLawAka" target="_blank" rel="noopener" aria-label="X (旧Twitter)" title="X (旧Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-        </div>
-      </div>
-    </div>
-    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
-  </div>
-</footer>
-</body>
-</html>
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/gyokoji-fuji.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/hadaka-matsuri-hozon.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/hadaka-matsuri-kigen.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/hadaka-matsuri-shinji.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/hadaka-matsuri-shippei.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/hadaka-matsuri.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/hajimeni.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/henkan.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/hime-kaido.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/hitokotozaka.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/ikeda-watashi.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/iwata-chimei.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/iwata-gun.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/m001.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/m002.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/m003.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/m004.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/m005.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/kaizuka-chimei.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/kaketsuka-minato.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/kamada-mikuriya.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/kamada-shinmei.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/kamo.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/kochizu-murana.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/kofun.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/kounodai.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/kuni-shitei.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/kyu-akamatsuke.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/kyu-mitsuke-gakko.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/kyuiwata.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/kyutoyoda.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/maizobunkazai.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/matsuri-kurashi.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/mitsuke-shuku-tokaido.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/mitsuke-shuku.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/mitsuke-tenjin-hadaka-matsuri.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/mitsuke-tenjin.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/mitsuke.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/mura-kara-machi.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/nakaizumi-daikan.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/nakaizumi-goten.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/ninomiya-mura.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/oumikunitama-jinja.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/research-notes.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/sagisaka-iwata.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/saguchi-shiryo-catalog.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/saguchi-shiryo.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/shinden-chimei.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/shinden.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/shitei.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/tenryugawa-mura.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/tokaido-shuku.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/n016.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://iwata-monogatari.pages.dev/totoumi-kokufu.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

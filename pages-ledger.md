@@ -3,6 +3,12 @@
   "created_date": "2026-06-25",
   "region_scheme": [
     {
+      "code": "00",
+      "slug": "iwata-common",
+      "label": "磐田共通",
+      "description": "9地区のいずれか一地区に限定せず、磐田物語全体・旧磐田市全体・文化財総合・史料総合・地名総合などを扱う共通分類。"
+    },
+    {
       "code": "01",
       "slug": "mitsuke",
       "label": "見付"
@@ -51,7 +57,13 @@
   "field_notes": {
     "status": "confirmed=確定 / needs_review=要確認 / needs_confirm_region=地域確認待ち",
     "suggested_rename_to": "空欄は現時点でリネーム不要または未判断",
-    "published_in_sitemap": "sitemap.xmlに掲載されている公開URLかどうか"
+    "published_in_sitemap": "sitemap.xmlに掲載されている公開URLかどうか",
+    "region_scheme_note": "地域分類は「磐田共通」＋磐田物語9地区分類（見付・中泉・御厨・豊田・南部・向陽・竜洋・福田・豊岡）で運用する。",
+    "file_naming_policy": "ファイル名は短い地域別連番または既存固定名を基本とし、作成日・更新日・正式タイトル・地域分類・旧ファイル名は台帳で管理する。",
+    "created_at": "ページの作成日。ファイル名には入れず、台帳で管理する。未確認の場合は空欄。",
+    "updated_at": "ページの最終更新日。大幅改修時に更新する。未確認の場合は空欄。",
+    "old_file": "リネーム前の旧ファイル名。リネーム未実施または不明の場合は空欄。",
+    "first_published_at": "公開開始日。created_atと異なる場合に使用。未確認の場合は空欄。"
   },
   "entries": [
     {
@@ -67,7 +79,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "画像・CSS・JS等の素材置き場候補。ページ分類対象外。"
+      "notes": "画像・CSS・JS等の素材置き場候補。ページ分類対象外。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "data/",
@@ -82,7 +98,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "pages.json等の台帳ファイルを置く候補。"
+      "notes": "pages.json等の台帳ファイルを置く候補。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "functions/api/",
@@ -97,7 +117,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "掲示板等の処理用候補。ページ分類対象外。"
+      "notes": "掲示板等の処理用候補。ページ分類対象外。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "images/",
@@ -112,7 +136,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "画像置き場。ページ分類対象外。"
+      "notes": "画像置き場。ページ分類対象外。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "saguchi/img/",
@@ -127,22 +155,30 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "佐口行正氏所蔵史料の画像置き場候補。"
+      "notes": "佐口行正氏所蔵史料の画像置き場候補。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "000-kensho.html",
       "title": "磐田物語 憲章・理念",
       "url": "https://iwata-monogatari.pages.dev/000-kensho.html",
       "kind": "policy",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "",
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "サイト全体の理念ページ。地域分類は全域。"
+      "notes": "サイト全体の理念ページ。地域分類は磐田共通。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "01001-mitsuke.html",
@@ -157,7 +193,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。"
+      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "01002-nakaizumi.html",
@@ -172,7 +212,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。"
+      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "01003-mikuriya.html",
@@ -187,7 +231,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。"
+      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "01004-toyoda.html",
@@ -202,7 +250,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。"
+      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "01005-nanbu.html",
@@ -217,7 +269,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。"
+      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "01006-koyo.html",
@@ -232,7 +288,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。"
+      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "01007-ryuyo.html",
@@ -247,7 +307,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。"
+      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "01008-fukude.html",
@@ -262,7 +326,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。"
+      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "01009-toyooka.html",
@@ -277,37 +345,49 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。"
+      "notes": "9地区分類の入口ページ。ファイル名は固定推奨。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "index.html",
       "title": "磐田物語 トップページ",
       "url": "https://iwata-monogatari.pages.dev/",
       "kind": "home",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "トップページ。sitemap上は / として掲載。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "000-school-d.html",
       "title": "学校区・大字関連ページ",
       "url": "https://iwata-monogatari.pages.dev/000-school-d.html",
       "kind": "reference",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "",
       "status": "needs_review",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "学校区・大字の一覧系と思われる。内容確認後、名称確定。"
+      "notes": "学校区・大字の一覧系と思われる。内容確認後、名称確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "README.md",
@@ -322,7 +402,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "GitHub用説明文。サイト公開ページではない。"
+      "notes": "GitHub用説明文。サイト公開ページではない。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "admin-bbs.html",
@@ -337,22 +421,30 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "管理者用。sitemap掲載対象外推奨。"
+      "notes": "管理者用。sitemap掲載対象外推奨。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "bbs.html",
       "title": "みんなの掲示板",
       "url": "https://iwata-monogatari.pages.dev/bbs.html",
       "kind": "community_tool",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "",
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "地域横断の投稿ページ。sitemap掲載は運用判断。"
+      "notes": "地域横断の投稿ページ。sitemap掲載は運用判断。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "bunkazai-guide.md",
@@ -367,7 +459,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "制作・運用ガイド。"
+      "notes": "制作・運用ガイド。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "bunkazai-guide_1.md",
@@ -379,25 +475,33 @@
       "region_label": "分類対象外",
       "parent_file": "",
       "suggested_rename_to": "",
-      "status": "needs_review",
+      "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "重複・旧版の可能性。削除または統合候補。"
+      "notes": "大石社長確認（2026-06-25）：削除せず残す。ただし分類対象外。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "bunkazai.html",
       "title": "磐田市の文化財",
       "url": "https://iwata-monogatari.pages.dev/bunkazai.html",
       "kind": "index_or_category",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "文化財一覧・カテゴリページ。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "bunkazai.json",
@@ -412,22 +516,30 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root",
-      "notes": "ページではなくデータ。data/配下への移動候補。"
+      "notes": "ページではなくデータ。data/配下への移動候補。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "chizu.html",
       "title": "地図・古地図",
       "url": "https://iwata-monogatari.pages.dev/chizu.html",
       "kind": "category",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "地図系の入口。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "choshizuka-kofun.html",
@@ -438,266 +550,413 @@
       "region_slug": "toyoda",
       "region_label": "豊田",
       "parent_file": "01004-toyoda.html",
-      "suggested_rename_to": "所在地確認後に豊田で確定する。",
-      "status": "needs_review",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：豊田分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "dayori.html",
       "title": "磐田物語だより",
       "url": "https://iwata-monogatari.pages.dev/dayori.html",
       "kind": "news_or_note",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "サイト全体のお知らせ・読み物。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "enshu-ben.html",
       "title": "遠州弁",
       "url": "https://iwata-monogatari.pages.dev/enshu-ben.html",
       "kind": "tool_or_reading",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "地域横断コンテンツ。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
-      "file": "enshu-kokubunji-chronology.html",
+      "file": "n011.html",
       "title": "遠江国分寺 年表",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji-chronology.html",
+      "url": "https://iwata-monogatari.pages.dev/n011.html",
       "kind": "feature_child",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "enshu-kokubunji.html",
-      "suggested_rename_to": "遠江国分寺特集の子ページ。地域は見付候補。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "n001.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-chronology.html から新ファイル n011.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji-chronology.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji-chronology.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
-      "file": "enshu-kokubunji-fukko.html",
+      "file": "n014.html",
       "title": "遠江国分寺 復興",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji-fukko.html",
+      "url": "https://iwata-monogatari.pages.dev/n014.html",
       "kind": "feature_child",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "enshu-kokubunji.html",
-      "suggested_rename_to": "遠江国分寺特集の子ページ。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "n001.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-fukko.html から新ファイル n014.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji-fukko.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji-fukko.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
-      "file": "enshu-kokubunji-garan-kairo.html",
+      "file": "n008.html",
       "title": "遠江国分寺 伽藍・回廊",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji-garan-kairo.html",
+      "url": "https://iwata-monogatari.pages.dev/n008.html",
       "kind": "feature_child",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "enshu-kokubunji-garan.html",
-      "suggested_rename_to": "伽藍特集の子ページ。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "n004.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-kairo.html から新ファイル n008.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji-garan-kairo.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji-garan-kairo.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
-      "file": "enshu-kokubunji-garan-kodo.html",
+      "file": "n007.html",
       "title": "遠江国分寺 伽藍・講堂",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji-garan-kodo.html",
+      "url": "https://iwata-monogatari.pages.dev/n007.html",
       "kind": "feature_child",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "enshu-kokubunji-garan.html",
-      "suggested_rename_to": "伽藍特集の子ページ。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "n004.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-kodo.html から新ファイル n007.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji-garan-kodo.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji-garan-kodo.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
-      "file": "enshu-kokubunji-garan-kondo.html",
+      "file": "n005.html",
       "title": "遠江国分寺 伽藍・金堂",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji-garan-kondo.html",
+      "url": "https://iwata-monogatari.pages.dev/n005.html",
       "kind": "feature_child",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "enshu-kokubunji-garan.html",
-      "suggested_rename_to": "伽藍特集の子ページ。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "n004.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-kondo.html から新ファイル n005.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji-garan-kondo.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji-garan-kondo.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
-      "file": "enshu-kokubunji-garan-sobo.html",
+      "file": "n009.html",
       "title": "遠江国分寺 伽藍・僧坊",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji-garan-sobo.html",
+      "url": "https://iwata-monogatari.pages.dev/n009.html",
       "kind": "feature_child",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "enshu-kokubunji-garan.html",
-      "suggested_rename_to": "伽藍特集の子ページ。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "n004.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-sobo.html から新ファイル n009.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji-garan-sobo.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji-garan-sobo.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
-      "file": "enshu-kokubunji-garan-tower.html",
+      "file": "n006.html",
       "title": "遠江国分寺 伽藍・塔",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji-garan-tower.html",
+      "url": "https://iwata-monogatari.pages.dev/n006.html",
       "kind": "feature_child",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "enshu-kokubunji-garan.html",
-      "suggested_rename_to": "伽藍特集の子ページ。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "n004.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-tower.html から新ファイル n006.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji-garan-tower.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji-garan-tower.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
-      "file": "enshu-kokubunji-garan.html",
+      "file": "n004.html",
       "title": "遠江国分寺 伽藍",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji-garan.html",
+      "url": "https://iwata-monogatari.pages.dev/n004.html",
       "kind": "feature_child",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "enshu-kokubunji.html",
-      "suggested_rename_to": "遠江国分寺特集の下位入口。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "n001.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-garan.html から新ファイル n004.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji-garan.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji-garan.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
-      "file": "enshu-kokubunji-glossary.html",
+      "file": "n015.html",
       "title": "遠江国分寺 用語集",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji-glossary.html",
+      "url": "https://iwata-monogatari.pages.dev/n015.html",
       "kind": "feature_child",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "enshu-kokubunji.html",
-      "suggested_rename_to": "用語集。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "n001.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-glossary.html から新ファイル n015.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji-glossary.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji-glossary.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
-      "file": "enshu-kokubunji-life.html",
+      "file": "n012.html",
       "title": "遠江国分寺と人々の暮らし",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji-life.html",
+      "url": "https://iwata-monogatari.pages.dev/n012.html",
       "kind": "feature_child",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "enshu-kokubunji.html",
-      "suggested_rename_to": "暮らし解説。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "n001.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-life.html から新ファイル n012.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji-life.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji-life.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
-      "file": "enshu-kokubunji-location.html",
+      "file": "n003.html",
       "title": "遠江国分寺の位置",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji-location.html",
+      "url": "https://iwata-monogatari.pages.dev/n003.html",
       "kind": "feature_child",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "enshu-kokubunji.html",
-      "suggested_rename_to": "所在地・地理。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "n001.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-location.html から新ファイル n003.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji-location.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji-location.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
-      "file": "enshu-kokubunji-tiles.html",
+      "file": "n010.html",
       "title": "遠江国分寺の瓦",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji-tiles.html",
+      "url": "https://iwata-monogatari.pages.dev/n010.html",
       "kind": "feature_child",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "enshu-kokubunji.html",
-      "suggested_rename_to": "瓦・出土品解説。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "n001.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-tiles.html から新ファイル n010.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji-tiles.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji-tiles.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
-      "file": "enshu-kokubunji-walk.html",
+      "file": "n013.html",
       "title": "遠江国分寺を歩く",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji-walk.html",
+      "url": "https://iwata-monogatari.pages.dev/n013.html",
       "kind": "feature_child",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "enshu-kokubunji.html",
-      "suggested_rename_to": "散策ページ。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "n001.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-walk.html から新ファイル n013.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji-walk.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji-walk.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
-      "file": "enshu-kokubunji-what.html",
+      "file": "n002.html",
       "title": "遠江国分寺とは何か",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji-what.html",
+      "url": "https://iwata-monogatari.pages.dev/n002.html",
       "kind": "feature_child",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "enshu-kokubunji.html",
-      "suggested_rename_to": "基礎解説。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "n001.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-what.html から新ファイル n002.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji-what.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji-what.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
-      "file": "enshu-kokubunji.html",
-      "title": "遠江国分寺",
-      "url": "https://iwata-monogatari.pages.dev/enshu-kokubunji.html",
+      "file": "n001.html",
+      "title": "遠江国分寺 特集親ページ",
+      "url": "https://iwata-monogatari.pages.dev/n001.html",
       "kind": "feature_parent",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "01001-mitsuke.html",
-      "suggested_rename_to": "特集親ページ。見付分類候補。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "01002-nakaizumi.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji.html から新ファイル n001.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "enshu-kokubunji.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "enshu-kokubunji.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
       "file": "favicon-16.png",
@@ -712,7 +971,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root_or_verified",
-      "notes": "サイトアイコン。分類対象外。"
+      "notes": "サイトアイコン。分類対象外。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "favicon-180.png",
@@ -727,7 +990,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root_or_verified",
-      "notes": "サイトアイコン。分類対象外。"
+      "notes": "サイトアイコン。分類対象外。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "favicon-180_1.png",
@@ -739,10 +1006,14 @@
       "region_label": "分類対象外",
       "parent_file": "",
       "suggested_rename_to": "",
-      "status": "needs_review",
+      "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root_or_verified",
-      "notes": "重複候補。削除判断は表示確認後。"
+      "notes": "重複候補。削除判断は表示確認後。 大石社長確認（2026-06-25）：削除せず残す。分類対象外。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "favicon-192.png",
@@ -757,7 +1028,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root_or_verified",
-      "notes": "サイトアイコン。分類対象外。"
+      "notes": "サイトアイコン。分類対象外。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "favicon-32.png",
@@ -772,7 +1047,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root_or_verified",
-      "notes": "サイトアイコン。分類対象外。"
+      "notes": "サイトアイコン。分類対象外。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "favicon-512.png",
@@ -787,7 +1066,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root_or_verified",
-      "notes": "サイトアイコン。分類対象外。"
+      "notes": "サイトアイコン。分類対象外。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "favicon.ico",
@@ -802,7 +1085,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root_or_verified",
-      "notes": "サイトアイコン。分類対象外。"
+      "notes": "サイトアイコン。分類対象外。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "fu-hachimangu.html",
@@ -813,11 +1100,15 @@
       "region_slug": "nakaizumi",
       "region_label": "中泉",
       "parent_file": "01002-nakaizumi.html",
-      "suggested_rename_to": "中泉候補。所在地確認後に確定。",
-      "status": "needs_review",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：中泉分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "googlea3467099ea123f53.html",
@@ -832,7 +1123,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root_or_verified",
-      "notes": "削除禁止。分類対象外。"
+      "notes": "削除禁止。分類対象外。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "goten-ninomiya-iseki.html",
@@ -843,11 +1138,15 @@
       "region_slug": "nakaizumi",
       "region_label": "中泉",
       "parent_file": "01002-nakaizumi.html",
-      "suggested_rename_to": "二之宮・中泉系候補。",
-      "status": "needs_review",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：中泉分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "gyokoji-fuji.html",
@@ -858,11 +1157,15 @@
       "region_slug": "toyoda",
       "region_label": "豊田",
       "parent_file": "01004-toyoda.html",
-      "suggested_rename_to": "池田・豊田候補。",
-      "status": "needs_review",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：豊田分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "hadaka-matsuri-hozon.html",
@@ -877,7 +1180,11 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "hadaka-matsuri-kigen.html",
@@ -892,7 +1199,11 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "hadaka-matsuri-shinji.html",
@@ -907,7 +1218,11 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "hadaka-matsuri-shippei.html",
@@ -922,7 +1237,11 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "hadaka-matsuri.html",
@@ -937,37 +1256,49 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "hajimeni.html",
       "title": "はじめに",
       "url": "https://iwata-monogatari.pages.dev/hajimeni.html",
       "kind": "about",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "サイト全体の導入。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "henkan.html",
       "title": "遠州弁変換ツール",
       "url": "https://iwata-monogatari.pages.dev/henkan.html",
       "kind": "tool",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "地域横断ツール。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "hero-mitsuke.jpg",
@@ -982,37 +1313,49 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root_or_verified",
-      "notes": "見付関連画像。ページではない。"
+      "notes": "見付関連画像。ページではない。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "hime-kaido.html",
       "title": "姫街道",
       "url": "https://iwata-monogatari.pages.dev/hime-kaido.html",
       "kind": "reading",
-      "region_code": "04",
-      "region_slug": "toyoda",
-      "region_label": "豊田",
-      "parent_file": "01004-toyoda.html",
-      "suggested_rename_to": "池田・豊田方面候補。複数地区横断の可能性あり。",
-      "status": "needs_review",
+      "region_code": "01",
+      "region_slug": "mitsuke",
+      "region_label": "見付",
+      "parent_file": "01001-mitsuke.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：見付分類で確定。姫街道全体ではなく、見付から分かれる道として扱う。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "hitokotozaka.html",
       "title": "一言坂",
       "url": "https://iwata-monogatari.pages.dev/hitokotozaka.html",
       "kind": "reading",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "01001-mitsuke.html",
-      "suggested_rename_to": "見付候補。所在地確認後に確定。",
-      "status": "needs_review",
+      "region_code": "04",
+      "region_slug": "toyoda",
+      "region_label": "豊田",
+      "parent_file": "01004-toyoda.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：豊田分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "ikeda-watashi.html",
@@ -1023,47 +1366,59 @@
       "region_slug": "toyoda",
       "region_label": "豊田",
       "parent_file": "01004-toyoda.html",
-      "suggested_rename_to": "池田・豊田候補。",
-      "status": "needs_review",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：豊田分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "iwata-chimei.html",
       "title": "磐田の地名",
       "url": "https://iwata-monogatari.pages.dev/iwata-chimei.html",
       "kind": "category",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "地名の総合ページ。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "iwata-gun.html",
       "title": "磐田郡",
       "url": "https://iwata-monogatari.pages.dev/iwata-gun.html",
       "kind": "reading",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "広域の歴史。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "m001.html",
       "title": "見付古地図散歩 第1回 見付の土地と記憶",
       "url": "https://iwata-monogatari.pages.dev/m001.html",
-      "kind": "reading",
+      "kind": "feature_child",
       "region_code": "01",
       "region_slug": "mitsuke",
       "region_label": "見付",
@@ -1072,19 +1427,22 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": "rename-batch-001 により kai1.html から改名。旧URLは移転案内ページとして保持。",
-      "content_label": "読み物",
+      "notes": "大石社長確認（2026-06-25）：見付分類で確定。内容確認済み：明治42年の見付町戸別明細図を読む「見付古地図散歩」第1回。リネーム候補あり。 短い地域別連番方式のリネーム候補：m001.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai1.html から新ファイル m001.html へ変更。旧URLはリダイレクト控えとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
       "old_file": "kai1.html",
+      "rename_batch": "rename-batch-001",
       "redirect_from": [
         "kai1.html"
       ],
-      "rename_batch": "rename-batch-001"
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
       "file": "m002.html",
       "title": "見付古地図散歩 第2回 相続される土地",
       "url": "https://iwata-monogatari.pages.dev/m002.html",
-      "kind": "reading",
+      "kind": "feature_child",
       "region_code": "01",
       "region_slug": "mitsuke",
       "region_label": "見付",
@@ -1093,19 +1451,22 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": "rename-batch-001 により kai2.html から改名。旧URLは移転案内ページとして保持。",
-      "content_label": "読み物",
+      "notes": "大石社長確認（2026-06-25）：見付分類で確定。リネーム候補は継続。 短い地域別連番方式のリネーム候補：m002.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai2.html から新ファイル m002.html へ変更。旧URLはリダイレクト控えとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
       "old_file": "kai2.html",
+      "rename_batch": "rename-batch-001",
       "redirect_from": [
         "kai2.html"
       ],
-      "rename_batch": "rename-batch-001"
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
       "file": "m003.html",
       "title": "見付古地図散歩 第3回 道と調査",
       "url": "https://iwata-monogatari.pages.dev/m003.html",
-      "kind": "reading",
+      "kind": "feature_child",
       "region_code": "01",
       "region_slug": "mitsuke",
       "region_label": "見付",
@@ -1114,19 +1475,22 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": "rename-batch-001 により kai3.html から改名。旧URLは移転案内ページとして保持。",
-      "content_label": "読み物",
+      "notes": "大石社長確認（2026-06-25）：見付分類で確定。リネーム候補は継続。 短い地域別連番方式のリネーム候補：m003.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai3.html から新ファイル m003.html へ変更。旧URLはリダイレクト控えとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
       "old_file": "kai3.html",
+      "rename_batch": "rename-batch-001",
       "redirect_from": [
         "kai3.html"
       ],
-      "rename_batch": "rename-batch-001"
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
       "file": "m004.html",
       "title": "見付古地図散歩 第4回 町の中枢",
       "url": "https://iwata-monogatari.pages.dev/m004.html",
-      "kind": "reading",
+      "kind": "feature_child",
       "region_code": "01",
       "region_slug": "mitsuke",
       "region_label": "見付",
@@ -1135,19 +1499,22 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": "rename-batch-001 により kai4.html から改名。旧URLは移転案内ページとして保持。",
-      "content_label": "読み物",
+      "notes": "大石社長確認（2026-06-25）：見付分類で確定。リネーム候補は継続。 短い地域別連番方式のリネーム候補：m004.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai4.html から新ファイル m004.html へ変更。旧URLはリダイレクト控えとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
       "old_file": "kai4.html",
+      "rename_batch": "rename-batch-001",
       "redirect_from": [
         "kai4.html"
       ],
-      "rename_batch": "rename-batch-001"
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
       "file": "m005.html",
       "title": "見付古地図散歩 第5回 手放す前に",
       "url": "https://iwata-monogatari.pages.dev/m005.html",
-      "kind": "reading",
+      "kind": "feature_child",
       "region_code": "01",
       "region_slug": "mitsuke",
       "region_label": "見付",
@@ -1156,13 +1523,16 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": "rename-batch-001 により kai5.html から改名。旧URLは移転案内ページとして保持。",
-      "content_label": "読み物",
+      "notes": "大石社長確認（2026-06-25）：見付分類で確定。リネーム候補は継続。 短い地域別連番方式のリネーム候補：m005.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai5.html から新ファイル m005.html へ変更。旧URLはリダイレクト控えとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
       "old_file": "kai5.html",
+      "rename_batch": "rename-batch-001",
       "redirect_from": [
         "kai5.html"
       ],
-      "rename_batch": "rename-batch-001"
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
       "file": "kaizuka-chimei.html",
@@ -1173,11 +1543,15 @@
       "region_slug": "mikuriya",
       "region_label": "御厨",
       "parent_file": "01003-mikuriya.html",
-      "suggested_rename_to": "貝塚を御厨候補として仮置き。",
-      "status": "needs_review",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：御厨分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "kaketsuka-minato.html",
@@ -1192,7 +1566,11 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "kamada-mikuriya.html",
@@ -1207,7 +1585,11 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "kamada-shinmei.html",
@@ -1222,7 +1604,11 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "kamo.html",
@@ -1237,37 +1623,49 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "kochizu-murana.html",
       "title": "古地図と村名",
       "url": "https://iwata-monogatari.pages.dev/kochizu-murana.html",
       "kind": "reading",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "複数地域を扱うページ。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "kofun.html",
       "title": "古墳",
       "url": "https://iwata-monogatari.pages.dev/kofun.html",
       "kind": "category",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "複数地域の古墳総合ページ。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "kounodai.html",
@@ -1278,26 +1676,34 @@
       "region_slug": "nakaizumi",
       "region_label": "中泉",
       "parent_file": "01002-nakaizumi.html",
-      "suggested_rename_to": "中泉候補。所在地確認後に確定。",
-      "status": "needs_review",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：中泉分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "kuni-shitei.html",
       "title": "国指定文化財",
       "url": "https://iwata-monogatari.pages.dev/kuni-shitei.html",
       "kind": "category",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "分類横断。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "kyu-akamatsuke.html",
@@ -1308,11 +1714,15 @@
       "region_slug": "mitsuke",
       "region_label": "見付",
       "parent_file": "01001-mitsuke.html",
-      "suggested_rename_to": "見付候補。所在地確認後に確定。",
-      "status": "needs_review",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：見付分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "kyu-mitsuke-gakko.html",
@@ -1327,22 +1737,30 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "kyuiwata.html",
       "title": "旧磐田市",
       "url": "https://iwata-monogatari.pages.dev/kyuiwata.html",
       "kind": "region_or_feature",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "旧磐田市総合ページ。9地区の上位概念として扱う。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "kyutoyoda.html",
@@ -1357,37 +1775,49 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "maizobunkazai.html",
       "title": "埋蔵文化財",
       "url": "https://iwata-monogatari.pages.dev/maizobunkazai.html",
       "kind": "category",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "地域横断カテゴリ。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "matsuri-kurashi.html",
       "title": "祭りと暮らし",
       "url": "https://iwata-monogatari.pages.dev/matsuri-kurashi.html",
       "kind": "category",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "地域横断カテゴリ。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "mitsuke-shuku-tokaido.html",
@@ -1402,7 +1832,11 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "mitsuke-shuku.html",
@@ -1417,7 +1851,11 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "mitsuke-tenjin-hadaka-matsuri.html",
@@ -1432,7 +1870,11 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "mitsuke-tenjin.html",
@@ -1447,7 +1889,11 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "mitsuke.html",
@@ -1462,22 +1908,30 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "mura-kara-machi.html",
       "title": "村から町へ",
       "url": "https://iwata-monogatari.pages.dev/mura-kara-machi.html",
       "kind": "reading",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "広域・制度史。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "nakaizumi-daikan.html",
@@ -1492,7 +1946,11 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "nakaizumi-goten.html",
@@ -1507,7 +1965,11 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "ninomiya-mura.html",
@@ -1518,11 +1980,15 @@
       "region_slug": "nakaizumi",
       "region_label": "中泉",
       "parent_file": "01002-nakaizumi.html",
-      "suggested_rename_to": "中泉候補。",
-      "status": "needs_review",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：中泉分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "oishi.jpg",
@@ -1537,7 +2003,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root_or_verified",
-      "notes": "運営者・プロフィール用画像。ページではない。"
+      "notes": "運営者・プロフィール用画像。ページではない。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "oumikunitama-jinja.html",
@@ -1552,22 +2022,30 @@
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "research-notes.html",
       "title": "調査ノート",
       "url": "https://iwata-monogatari.pages.dev/research-notes.html",
       "kind": "notes",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "調査過程・メモ。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "robots.txt",
@@ -1582,7 +2060,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root_or_verified",
-      "notes": "検索エンジン向け制御ファイル。削除禁止。"
+      "notes": "検索エンジン向け制御ファイル。削除禁止。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "robots.txt.txt",
@@ -1594,10 +2076,14 @@
       "region_label": "分類対象外",
       "parent_file": "",
       "suggested_rename_to": "",
-      "status": "needs_review",
+      "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root_or_verified",
-      "notes": "robots.txtと内容が同一系。公開上は不要の可能性が高い。"
+      "notes": "robots.txtと内容が同一系。公開上は不要の可能性が高い。 大石社長確認（2026-06-25）：削除せず残す。ただし分類対象外。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "sagisaka-iwata.html",
@@ -1608,41 +2094,53 @@
       "region_slug": "koyo",
       "region_label": "向陽",
       "parent_file": "01006-koyo.html",
-      "suggested_rename_to": "匂坂は向陽候補。要確認。",
-      "status": "needs_review",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：向陽分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "saguchi-shiryo-catalog.html",
       "title": "佐口行正氏所蔵史料 目録",
       "url": "https://iwata-monogatari.pages.dev/saguchi-shiryo-catalog.html",
       "kind": "source_catalog",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "史料目録。地域横断。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "saguchi-shiryo.html",
       "title": "佐口行正氏所蔵史料",
       "url": "https://iwata-monogatari.pages.dev/saguchi-shiryo.html",
       "kind": "source_parent",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "史料親ページ。地域横断。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "shinden-chimei.html",
@@ -1653,11 +2151,15 @@
       "region_slug": "toyoda",
       "region_label": "豊田",
       "parent_file": "01004-toyoda.html",
-      "suggested_rename_to": "東海道新田・豊田候補。",
-      "status": "needs_review",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：豊田分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "shinden.html",
@@ -1668,26 +2170,34 @@
       "region_slug": "toyoda",
       "region_label": "豊田",
       "parent_file": "01004-toyoda.html",
-      "suggested_rename_to": "東海道新田・豊田候補。",
-      "status": "needs_review",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：豊田分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "shitei.html",
       "title": "指定文化財",
       "url": "https://iwata-monogatari.pages.dev/shitei.html",
       "kind": "category",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "地域横断カテゴリ。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "sitemap.xml",
@@ -1702,7 +2212,11 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root_or_verified",
-      "notes": "検索エンジン向けサイトマップ。リネーム不可。"
+      "notes": "検索エンジン向けサイトマップ。リネーム不可。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "tenryugawa-mura.html",
@@ -1713,26 +2227,34 @@
       "region_slug": "nanbu",
       "region_label": "南部",
       "parent_file": "01005-nanbu.html",
-      "suggested_rename_to": "南部候補。要確認。",
-      "status": "needs_review",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：南部分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "tokaido-shuku.html",
       "title": "東海道宿場",
       "url": "https://iwata-monogatari.pages.dev/tokaido-shuku.html",
       "kind": "reading",
-      "region_code": "all",
-      "region_slug": "all",
-      "region_label": "全域",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
       "parent_file": "",
       "suggested_rename_to": "見付中心だが街道全体のため全域扱い。",
       "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
       "file": "totoumi-kokubunji-hi.jpg",
@@ -1747,37 +2269,115 @@
       "status": "confirmed",
       "published_in_sitemap": false,
       "source": "github_root_or_verified",
-      "notes": "遠江国分寺関連画像。ページではない。"
+      "notes": "遠江国分寺関連画像。ページではない。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
     },
     {
-      "file": "totoumi-kokubunji.html",
-      "title": "遠江国分寺",
-      "url": "https://iwata-monogatari.pages.dev/totoumi-kokubunji.html",
+      "file": "n016.html",
+      "title": "遠江国分寺 関連ページ",
+      "url": "https://iwata-monogatari.pages.dev/n016.html",
       "kind": "feature_parent",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "01001-mitsuke.html",
-      "suggested_rename_to": "enshu-kokubunji.htmlとの重複・統合候補。",
-      "status": "needs_review",
+      "region_code": "02",
+      "region_slug": "nakaizumi",
+      "region_label": "中泉",
+      "parent_file": "01002-nakaizumi.html",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：遠江国分寺系に合わせ、中泉分類で確定。enshu-kokubunji.htmlとの重複・統合候補は継続。 リネーム第2弾：旧ファイル totoumi-kokubunji.html から新ファイル n016.html へ変更。旧URLは案内ページとして残す。",
+      "created_at": "",
+      "updated_at": "2026-06-25",
+      "first_published_at": "",
+      "old_file": "totoumi-kokubunji.html",
+      "rename_batch": "rename-batch-002",
+      "redirect_from": [
+        "totoumi-kokubunji.html"
+      ],
+      "redirect_policy": "old_file_redirect_stub"
     },
     {
       "file": "totoumi-kokufu.html",
       "title": "遠江国府",
       "url": "https://iwata-monogatari.pages.dev/totoumi-kokufu.html",
       "kind": "reading",
-      "region_code": "01",
-      "region_slug": "mitsuke",
-      "region_label": "見付",
-      "parent_file": "01001-mitsuke.html",
-      "suggested_rename_to": "見付・中泉をまたぐ可能性あり。暫定見付。",
-      "status": "needs_review",
+      "region_code": "00",
+      "region_slug": "iwata-common",
+      "region_label": "磐田共通",
+      "parent_file": "",
+      "suggested_rename_to": "",
+      "status": "confirmed",
       "published_in_sitemap": true,
       "source": "sitemap",
-      "notes": ""
+      "notes": "大石社長確認（2026-06-25）：見付・中泉・豊田をまたぐ古代磐田の共通テーマとして、磐田共通分類で確定。",
+      "created_at": "",
+      "updated_at": "",
+      "first_published_at": "",
+      "old_file": ""
+    }
+  ],
+  "revision_log": [
+    {
+      "date": "2026-06-25",
+      "change": "要確認No.4〜10（遠江国分寺系子ページ7件）の地域分類を見付から中泉へ修正。"
+    },
+    "2026-06-25：要確認No.11〜18（遠江国分寺系親・関連ページ）を中泉へ修正。No.19 favicon-180_1.png は残す方針で確定。No.20 府八幡宮は中泉で確定。",
+    {
+      "date": "2026-06-25",
+      "change": "No.21〜25相当：御殿・二之宮遺跡＝中泉、行興寺の藤＝豊田、姫街道＝見付、一言坂＝豊田、池田の渡し＝豊田で確定。kai1.htmlは内容確認により見付古地図散歩 第1回と判明、見付候補・リネーム候補を追記。"
+    },
+    {
+      "date": "2026-06-25",
+      "change": "No.26〜30相当（kai1.html〜kai5.html）の地域分類を見付へ設定。kai1.htmlは内容確認済みのため確定、kai2.html〜kai5.htmlは地域分類のみ確定し、正式タイトル・リネームは要確認。"
+    },
+    "2026-06-25：No.31〜40相当：貝塚の地名＝御厨、国府台＝中泉、旧赤松家＝見付、二之宮村＝中泉、robots.txt.txtは残すが分類対象外、匂坂と磐田＝向陽、新田系2件＝豊田、天竜川村＝南部、遠江国分寺（totoumi-kokubunji.html）＝中泉で確定。",
+    "2026-06-25：No.42〜47相当：bunkazai-guide_1.mdは残すが分類対象外、choshizuka-kofun.htmlは豊田、kai2.html〜kai5.htmlは見付で確定。No.48 totoumi-kokufu.htmlは内容確認中。",
+    "2026-06-25：地域横断・全体テーマ用の分類「磐田共通」（code=00, slug=iwata-common）を新設。従来の「全域」分類を「磐田共通」へ置換し、totoumi-kokufu.htmlも磐田共通で確定。",
+    {
+      "date": "2026-06-25",
+      "change": "ファイル名に作成日を入れず、created_at / updated_at / first_published_at / old_file を台帳で管理する方針を追加。kai1.html〜kai5.htmlのリネーム候補を短い地域別連番 m001.html〜m005.html に変更。"
+    },
+    "2026-06-25：リネーム第1弾として kai1.html〜kai5.html を m001.html〜m005.html に変更する前提の台帳へ更新。旧URLはHTMLリダイレクト控えとして残す方針。"
+  ],
+  "updated_date": "2026-06-25",
+  "rename_batches": [
+    {
+      "batch_id": "rename-batch-001",
+      "date": "2026-06-25",
+      "status": "ready_to_apply",
+      "description": "見付古地図散歩 kai1.html〜kai5.html を短い地域別連番 m001.html〜m005.html へ整理する。",
+      "files": [
+        {
+          "old_file": "kai1.html",
+          "new_file": "m001.html"
+        },
+        {
+          "old_file": "kai2.html",
+          "new_file": "m002.html"
+        },
+        {
+          "old_file": "kai3.html",
+          "new_file": "m003.html"
+        },
+        {
+          "old_file": "kai4.html",
+          "new_file": "m004.html"
+        },
+        {
+          "old_file": "kai5.html",
+          "new_file": "m005.html"
+        }
+      ],
+      "redirect_policy": "旧ファイル名は削除せず、noindex + meta refresh の案内ページとして残す。"
+    }
+  ],
+  "update_history": [
+    {
+      "date": "2026-06-25",
+      "change": "リネーム第2弾：遠江国分寺系ページ16件を中泉分類の短縮ファイル名 n001.html〜n016.html へ変更する前提の台帳へ更新。旧URLは案内ページとして残す方針。"
     }
   ]
 }

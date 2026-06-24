@@ -1,326 +1,175 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>遠州国分寺を復興できないか ｜ 磐田物語</title>
-<meta name="description" content="遠州国分寺（遠江国分寺）を復興できないか。失われた建物を再建することではなく、古代遠江の中心だった空間の意味を磐田市民がもう一度共有する。復元と復興の違い、令和の金堂復元、見える化の構想を考える。">
-<link rel="canonical" href="https://iwata-monogatari.pages.dev/enshu-kokubunji-fukko.html">
-<meta property="og:title" content="遠州国分寺を復興できないか ｜ 磐田物語">
-<meta property="og:description" content="復元と復興の違い。令和の金堂・木装基壇復元を出発点に、空間の意味を取り戻す4段階の復興構想を考える、特集の思想的な結論。">
-<meta property="og:type" content="article">
-<meta property="og:locale" content="ja_JP">
-<meta property="og:url" content="https://iwata-monogatari.pages.dev/enshu-kokubunji-fukko.html">
-<meta name="theme-color" content="#fffdf7">
-<link rel="icon" href="/favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
-<style>
-  :root{--kinari:#fffdf7;--cha:#2f7fa3;--matsu:#356f88;--sumi:#22303a;--usuzumi:#5b6b74;--waku:#d8e8ef;--paper:#fffdf7;}
-  *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:"Zen Kaku Gothic New",sans-serif;color:var(--sumi);background:var(--kinari);line-height:1.95;font-size:17px;-webkit-font-smoothing:antialiased;}
-  a{color:var(--cha);text-decoration:none;}
-  a:hover{text-decoration:underline;}
-  .mincho{font-family:"Shippori Mincho",serif;}
-  header.site{background:var(--matsu);color:#fff;padding:0;}
-  .site-inner{max-width:880px;margin:0 auto;padding:18px 22px;}
-  .site-title{font-family:"Shippori Mincho",serif;font-weight:600;font-size:19px;color:#fff;display:block;letter-spacing:.04em;}
-  .site-title small{display:block;font-size:12px;font-weight:400;opacity:.82;margin-top:3px;letter-spacing:.02em;}
-  nav.global{background:#2c5566;}
-  nav.global .site-inner{display:flex;flex-wrap:wrap;gap:4px 26px;padding-top:0;padding-bottom:0;}
-  nav.global a{color:#eef6fb;display:inline-block;padding:11px 0;font-size:14px;letter-spacing:.03em;}
-  nav.global a:hover{color:#fff;text-decoration:none;}
-  main{max-width:760px;margin:0 auto;padding:0 22px;}
-  .crumb{font-size:13px;color:var(--usuzumi);padding:20px 0 6px;}
-  .crumb a{color:var(--usuzumi);}
-  .cat{display:inline-block;font-size:13px;color:var(--matsu);border-left:3px solid var(--cha);padding-left:9px;margin:18px 0 10px;letter-spacing:.04em;}
-  h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:31px;line-height:1.5;color:var(--sumi);margin:6px 0 28px;letter-spacing:.02em;}
-  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#3a4750;margin-bottom:34px;}
-  figure{margin:32px 0;}
-  .fig-box{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:26px 20px;text-align:center;}
-  figcaption{font-size:13.5px;color:var(--usuzumi);margin-top:12px;line-height:1.8;text-align:left;}
-  svg{max-width:100%;height:auto;}
-  .svg-label{font-family:"Zen Kaku Gothic New",sans-serif;fill:var(--sumi);}
-  .svg-sub{fill:var(--usuzumi);}
-  h2{font-family:"Shippori Mincho",serif;font-weight:600;font-size:22px;color:var(--matsu);margin:40px 0 16px;padding-bottom:9px;border-bottom:2px solid var(--waku);letter-spacing:.02em;}
-  h2 .num{color:var(--cha);font-size:16px;margin-right:8px;}
-  p{margin:0 0 20px;}
-  ul.body,ol.body{margin:0 0 22px 1.3em;}
-  ul.body li,ol.body li{margin-bottom:8px;}
-  strong{color:var(--matsu);font-weight:700;}
-  .toc{background:#f4fafc;border:1px solid var(--waku);border-radius:4px;padding:18px 22px 16px;margin:0 0 34px;}
-  .toc p{font-family:"Shippori Mincho",serif;font-weight:600;color:var(--matsu);margin:0 0 8px;font-size:15px;}
-  .toc ol{margin:0 0 0 1.4em;}
-  .toc li{font-size:14.5px;margin-bottom:5px;}
-  .badge{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.04em;border-radius:3px;padding:2px 8px;margin-right:6px;vertical-align:1px;}
-  .badge-fact{background:#dcebe0;color:#2f6b46;}
-  .badge-est{background:#f0e6cf;color:#8a6d2f;}
-  .factbox{border:1px solid var(--waku);border-radius:4px;margin:26px 0;overflow:hidden;}
-  .factbox .row{display:flex;border-top:1px solid #e7f1f5;}
-  .factbox .row:first-child{border-top:0;}
-  .factbox .k{flex:0 0 38%;background:#f4fafc;padding:11px 16px;font-size:14px;font-weight:500;color:var(--matsu);}
-  .factbox .v{flex:1;padding:11px 16px;font-size:14.5px;}
-  .note{background:#f7f4ec;border:1px solid #e7ddc6;border-radius:4px;padding:14px 18px;font-size:13px;color:#6a6048;line-height:1.8;margin:22px 0;}
-  .navgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 8px;}
-  .navcard{display:block;background:var(--paper);border:1px solid var(--waku);border-radius:5px;padding:16px 18px;transition:.15s;}
-  .navcard:hover{background:#f4fafc;text-decoration:none;border-color:#bcd9e6;}
-  .navcard .nc-cat{font-size:11.5px;color:var(--cha);letter-spacing:.06em;display:block;margin-bottom:4px;}
-  .navcard .nc-ttl{font-family:"Shippori Mincho",serif;font-weight:600;font-size:16px;color:var(--sumi);display:block;margin-bottom:5px;}
-  .navcard .nc-desc{font-size:13px;color:var(--usuzumi);line-height:1.7;}
-  @media(max-width:600px){.navgrid{grid-template-columns:1fr;}}
-  .henshu{background:#f7f4ec;border:1px solid #e7ddc6;border-radius:6px;padding:26px 26px 22px;margin:46px 0 10px;}
-  .henshu .h-lh{font-family:"Shippori Mincho",serif;font-weight:600;color:#8a6d2f;font-size:13px;letter-spacing:.06em;margin-bottom:10px;}
-  .henshu h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;color:var(--sumi);margin:0 0 14px;}
-  .henshu p{font-size:15px;color:#46412f;margin-bottom:14px;}
-  .henshu .cta-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px;}
-  .henshu .cta-links a{background:#fff;border:1px solid #ddd0b3;border-radius:4px;padding:9px 15px;font-size:13.5px;color:#7a5f28;}
-  .henshu .cta-links a:hover{background:#fffdf7;text-decoration:none;border-color:#c9b890;}
-  h3{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--sumi);margin:34px 0 12px;}
-  .refs{font-size:14px;color:var(--usuzumi);}
-  .refs li{margin:0 0 6px 1.2em;line-height:1.8;}
-  .related{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 8px;}
-  .related a{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:10px 15px;font-size:14px;color:var(--matsu);}
-  .related a:hover{background:#f4fafc;text-decoration:none;}
-  .pager{display:flex;justify-content:space-between;gap:12px;margin:40px 0 10px;flex-wrap:wrap;}
-  .pager a{font-size:14px;}
-  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;margin-top:56px;}
-  .im-foot *{box-sizing:border-box;}
-  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
-  .im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-  .im-foot .im-brand .im-dot{color:#2f7fa3;}
-  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
-  .im-foot .im-links{width:100%;margin-top:6px;}
-  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
-  .im-foot .im-links li{font-size:13px;line-height:1.6;}
-  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
-  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
-  .im-foot .im-sns{width:100%;margin-top:6px;}
-  .im-foot .im-icons{display:flex;gap:12px;}
-  .im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
-  .im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
-  .im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
-  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
-  @media(max-width:600px){h1{font-size:25px;}body{font-size:16px;}h2{font-size:19px;}}
-</style>
-<style id="reno-blocks">
-.article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
-.article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
-.article-policy dt{font-weight:700;margin-top:16px;}
-.article-policy dd{margin:6px 0 0;line-height:1.8;color:var(--ink-soft,#4b5b66);}
-.related-materials{max-width:1180px;margin:48px auto;padding:0 4px;}
-.related-materials h2{font-size:1.4rem;margin-bottom:8px;font-family:"Shippori Mincho",serif;}
-.related-materials>p{line-height:1.8;color:var(--ink-soft,#4b5b66);}
-.related-materials .rm-note{font-size:.82rem;color:var(--ink-soft,#5b6b74);margin-top:14px;}
-.material-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px;}
-.material-grid figure{margin:0;border:1px solid var(--line,#d8e3ea);border-radius:14px;overflow:hidden;background:#fff;}
-.material-grid a{text-decoration:none;color:inherit;display:block;}
-.material-grid img{width:100%;height:180px;object-fit:cover;display:block;background:#eee;}
-.material-grid figcaption{padding:12px;font-size:.9rem;line-height:1.6;}
-@media(max-width:768px){.material-grid{grid-template-columns:1fr;}.material-grid img{height:auto;}}
-</style>
-  <link rel="stylesheet" href="/assets/css/site-header.css">
-</head>
-<body>
-
-<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
-<header class="gh-site">
-  <div class="gh-bar">
-    <a class="gh-brand" href="/">
-      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
-      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
-    </a>
-    <nav class="gh-menu" aria-label="主要ナビゲーション">
-      <a href="/hajimeni.html">はじめに</a>
-      <a href="/000-kensho.html">憲章</a>
-      <a href="/saguchi-shiryo-catalog.html">佐口史料室</a>
-      <a href="/#new">新着</a>
-      <a href="/bbs.html">掲示板</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <div class="crumb"><a href="/">磐田物語</a> ／ <a href="/enshu-kokubunji.html">遠州国分寺特集</a> ／ 復興構想</div>
-
-  <span class="cat">特集 ｜ 復興構想</span>
-  <h1>遠州国分寺を復興できないか</h1>
-
-  <div class="lead">
-    遠州国分寺の七重塔は、平安のはじめに失われ、伽藍もやがて田畑へと姿を変えました。では、これを「復興」できないのでしょうか。<br>
-    ここで考えたいのは、失われた建物をそっくり建て直すことではありません。古代遠江の中心であった空間の意味を、現代の磐田に住む私たちがもう一度共有できるようにすること――それが、この特集の考える「復興」です。復元と復興の違いから出発し、令和の金堂復元を足がかりに、四つの段階で復興を構想します。
-  </div>
-
-  <div class="toc">
-    <p>このページで読めること</p>
-    <ol>
-      <li>「復元」と「復興」はどう違うか</li>
-      <li>建物を真似るだけでは足りない理由</li>
-      <li>令和の金堂復元という出発点</li>
-      <li>伽藍全体を「見える化」する構想</li>
-      <li>復興の4段階 ── 理解・見える化・空間体験・思想</li>
-      <li>復興とは、空間の意味を共有すること</li>
-    </ol>
-  </div>
-
-  <h2><span class="num">1</span>「復元」と「復興」はどう違うか</h2>
-  <p>まず、二つの言葉を分けておきましょう。<strong>「復元」</strong>とは、失われたものを、もとの形にできるだけ近づけて再現することです。建物の基壇や柱の位置を、当時の姿に戻す作業がこれにあたります。一方、<strong>「復興」</strong>とは、形だけでなく、その場所が持っていた<strong>意味や働きを、現代のなかにもう一度立ち上げること</strong>を指します。</p>
-  <p>たとえば、立派な金堂を一棟だけ建て直したとしても、それを訪れた人が「これは古代遠江の中心だった場所だ」と感じ取れなければ、空間の意味は戻ってきません。形は復元できても、意味までは自動的には復興されないのです。遠州国分寺について考えるとき、この区別はとても大切です。私たちが目指したいのは、建物の再現そのものではなく、空間の意味の復興のほうだからです。</p>
-
-  <h2><span class="num">2</span>建物を真似るだけでは足りない理由</h2>
-  <p>仮に、七重塔や金堂を当時の姿のまま建て直すことができたとします。それは確かに壮観でしょう。しかし、いくつかの問題が残ります。第一に、地中に眠る本物の遺構は、建物の重みや工事によって損なわれかねません。第二に、建物の高さや細部には<span class="badge badge-est">推定</span>が多く含まれ、「これが正しい姿だ」と断定することはできません。七重塔の全高66.5mという数値も、大林組が1980年に示した<strong>復元案・推定</strong>であって、確定した事実ではありません。</p>
-  <p>そして何より、建物を一つ二つ建てるだけでは、伽藍が本来もっていた<strong>全体の広がり</strong>――東西約180m、南北約250mにおよぶ聖なる区画と、そこを行き交った人々の営み――は伝わりません。点としての建物ではなく、面としての空間。それを感じられるようにすることが、復興の本質なのです。だからこそ、建物の再建を急ぐより先に、空間の理解と見える化を進める必要があります。</p>
-
-  <h2><span class="num">3</span>令和の金堂復元という出発点</h2>
-  <p>とはいえ、復興はまだ何も始まっていないわけではありません。むしろ、すぐれた出発点がすでに磐田にあります。<span class="badge badge-fact">事実</span>令和に入り、磐田市は遠州国分寺跡の再整備を進め、<strong>地中の遺構をそのまま地下に保存したうえで、その真上に当時と同じ大きさの木装基壇によって金堂を復元</strong>しました。木装基壇とは、基壇の側面を木で装ったもので、遠江国分寺跡で全国の古代寺院跡として初めて確認された特徴です。</p>
-  <p><span class="badge badge-fact">事実</span>木装基壇で金堂を復元した例は、全国の国分寺のなかでもここが初めてだといいます。本物の遺構を傷つけず、その上に確かな根拠のある基壇を復元する――この手法は、まさに「遺構の保存」と「空間の見える化」を両立させた、復興の第一歩にふさわしいものです。金堂正面の石階段の跡も整えられ、JR磐田駅北口から北へのびる天平通り（通称ジュビロ通り）の先に、その姿を見ることができます。</p>
-
-  <div class="factbox">
-    <div class="row"><div class="k">整備の手法</div><div class="v">遺構を地下保存し、その直上に1/1スケールで復元 <span class="badge badge-fact">事実</span></div></div>
-    <div class="row"><div class="k">復元した基壇</div><div class="v">木装基壇（基壇側面を木で装う） <span class="badge badge-fact">事実</span></div></div>
-    <div class="row"><div class="k">全国初の点</div><div class="v">木装基壇による金堂復元は全国の国分寺で初 <span class="badge badge-fact">事実</span></div></div>
-    <div class="row"><div class="k">位置</div><div class="v">天平通り（ジュビロ通り）の先、市役所の北側 <span class="badge badge-fact">事実</span></div></div>
-  </div>
-
-  <h2><span class="num">4</span>伽藍全体を「見える化」する構想</h2>
-  <p>金堂の木装基壇という出発点をふまえると、次に考えたいのは、<strong>伽藍の全体を地面のうえで見えるようにすること</strong>です。ここから先は、確定した計画ではなく、磐田物語が提案する<span class="badge badge-est">構想</span>として記します。建物をすべて建て直さなくても、空間の輪郭を体感できるようにする方法は、いくつも考えられます。</p>
-  <ul class="body">
-    <li><strong>地面表示</strong><span class="badge badge-est">構想</span>……回廊や築地塀の位置を、舗装の色や素材の違いで地面に描き出す。</li>
-    <li><strong>柱位置表示</strong><span class="badge badge-est">構想</span>……講堂や中門の柱があった場所に、低い標示を置いて建物の大きさを示す。</li>
-    <li><strong>AR（拡張現実）</strong><span class="badge badge-est">構想</span>……スマートフォンをかざすと、その地面の上に七重塔や金堂が立ちあがって見える。</li>
-    <li><strong>散策ルート</strong><span class="badge badge-est">構想</span>……中門から金堂へと、古代の参拝者がたどった動線を歩けるようにする。</li>
-    <li><strong>子ども向けの教育活用</strong><span class="badge badge-est">構想</span>……地域の学校が、足元の歴史を学ぶ場として使えるようにする。</li>
-  </ul>
-  <p>これらはいずれも、本物の遺構を傷つけずに、空間の意味を伝える工夫です。文化財を「保存して終わり」にするのではなく、<strong>地域の誇りとして日常のなかに活かす</strong>こと。そこに、見える化の復興の値打ちがあります。</p>
-
-  <figure>
-    <div class="fig-box">
-      <svg viewBox="0 0 720 300" role="img" aria-label="復元から復興へ進む4段階を階段状に示した図">
-        <rect x="0" y="0" width="720" height="300" fill="#fbfdfe"/>
-        <text x="360" y="34" text-anchor="middle" class="svg-label mincho" font-size="16" fill="#356f88">「復元」から「復興」へ ── 四つの段階</text>
-        <!-- 階段状ステップ -->
-        <g class="svg-label">
-          <!-- 1 理解の復興 -->
-          <rect x="40" y="210" width="150" height="56" rx="4" fill="#eef6fb" stroke="#9bb6c4" stroke-width="1.5"/>
-          <text x="115" y="234" text-anchor="middle" font-size="13" font-weight="700">1 理解の復興</text>
-          <text x="115" y="254" text-anchor="middle" class="svg-sub" font-size="11">何だったかを知る</text>
-          <!-- 2 見える化 -->
-          <rect x="200" y="166" width="150" height="100" rx="4" fill="#dfeef5" stroke="#356f88" stroke-width="1.5"/>
-          <text x="275" y="190" text-anchor="middle" font-size="13" font-weight="700">2 見える化の復興</text>
-          <text x="275" y="210" text-anchor="middle" class="svg-sub" font-size="11">地面表示・柱表示</text>
-          <text x="275" y="226" text-anchor="middle" class="svg-sub" font-size="11">AR で姿を示す</text>
-          <!-- 3 空間体験 -->
-          <rect x="360" y="122" width="150" height="144" rx="4" fill="#e6f0e9" stroke="#7fae9a" stroke-width="1.5"/>
-          <text x="435" y="146" text-anchor="middle" font-size="13" font-weight="700">3 空間体験の復興</text>
-          <text x="435" y="166" text-anchor="middle" class="svg-sub" font-size="11">散策ルートを歩く</text>
-          <text x="435" y="182" text-anchor="middle" class="svg-sub" font-size="11">動線を体感する</text>
-          <!-- 4 思想 -->
-          <rect x="520" y="78" width="160" height="188" rx="4" fill="#f0e6cf" stroke="#8a6d2f" stroke-width="1.5"/>
-          <text x="600" y="102" text-anchor="middle" font-size="13" font-weight="700">4 思想の復興</text>
-          <text x="600" y="122" text-anchor="middle" class="svg-sub" font-size="11">空間の意味を</text>
-          <text x="600" y="138" text-anchor="middle" class="svg-sub" font-size="11">市民が共有する</text>
-        </g>
-        <!-- 進行の矢印 -->
-        <line x1="40" y1="284" x2="690" y2="284" stroke="#bcd9e6" stroke-width="1.5"/>
-        <polygon points="700,284 688,279 688,289" fill="#bcd9e6"/>
-        <text x="365" y="298" text-anchor="middle" class="svg-sub" font-size="11">建物の「復元」だけにとどまらず、段階を重ねて「復興」へ</text>
-      </svg>
-      <figcaption>「復元」から「復興」へと進む四つの段階を、積み上がる階段として示した図（模式図）。各段階の高さは重要度の順位ではなく、理解→見える化→体験→思想と積み重なる関係を表したものです（WEB説明用の模式図。実測図ではありません）。</figcaption>
-    </div>
-  </figure>
-
-  <h2><span class="num">5</span>復興の4段階 ── 理解・見える化・空間体験・思想</h2>
-  <p>これまで述べてきた構想を、四つの段階として整理してみます。これは建物を建てる順番ではなく、空間の意味を取り戻していく深まりの順番です。</p>
-  <ol class="body">
-    <li><strong>理解の復興</strong>……まず、遠州国分寺が何だったのかを知ること。古いお寺ではなく、古代遠江の中心だった巨大空間であると理解する段階です。</li>
-    <li><strong>見える化の復興</strong>……地面表示・柱位置表示・ARなどで、伽藍の広がりを目に見えるかたちにする段階です。</li>
-    <li><strong>空間体験の復興</strong>……散策ルートを歩き、中門から金堂へという動線を、身体で感じ取る段階です。</li>
-    <li><strong>思想の復興</strong>……そして最後に、この空間の意味を、磐田市民がそれぞれの言葉で共有できるようになる段階です。</li>
-  </ol>
-  <p>第一の理解の復興は、すでにこの特集を読んでくださっている皆さんのなかで始まっています。第二の見える化は、令和の金堂復元というかたちで動き出しています。残る空間体験と思想の復興は、これから磐田のまち全体で、ゆっくりと育てていくものなのだと思います。</p>
-
-  <h2><span class="num">6</span>復興とは、空間の意味を共有すること</h2>
-  <p>ここで、この特集がいちばん伝えたいことを記します。</p>
-  <p><strong>遠州国分寺の復興とは、失われた建物を安易に再建することではなく、古代遠江の中心であった空間の意味を、現代の磐田市民がもう一度共有できるようにすることです。</strong></p>
-  <p>地域の記憶を取り戻すことは、めぐりめぐって、そこに暮らす人々の幸せを考えることにつながります。どこに住み、何を残し、何を次の世代へ渡していくのか。遠州国分寺という古代の空間を考えることは、じつは現代の磐田の土地と住まいを考えることにも、静かに通じているのです。失われた塔の影を地面に思い描くことは、自分が立っているこの場所の奥行きを、あらためて見つめ直すことでもあります。</p>
-
-  <div class="henshu">
-    <p class="h-lh">運営者より</p>
-    <h3>磐田の土地を、次へどう渡すか</h3>
-    <p>土地や建物には、価格だけでは測れない時間が積み重なっています。遠州国分寺を知ることは、磐田という土地の奥行きを知ることでもあります。</p>
-    <p>磐田物語の運営者である富士ヶ丘サービスでは、磐田で受け継がれてきた住まいや土地について、売る・買うだけでなく、どう残し、どう住み継ぎ、どう手放すかという視点からも相談を受けています。住まいと土地を考えるとき、その背景にある時間も一緒に見つめてみませんか。</p>
-    <div class="cta-links">
-      <a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">土地や建物の背景をふまえて売却・購入を考える</a>
-      <a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続した家について相談する</a>
-      <a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家について相談する</a>
-    </div>
-  </div>
-
-  <h3>参考文献・参考資料</h3>
-  <ul class="refs">
-    <li>『遠州国分寺の研究』</li>
-    <li>磐田市公式ウェブサイト「遠江国分寺跡」「遠江国分寺跡整備事業」</li>
-    <li>磐田市観光協会「遠江国分寺跡」「遠江国はじまりの地」</li>
-    <li>あなたの静岡新聞（遠江国分寺跡 金堂復元に関する報道）</li>
-    <li>大林組「季刊大林 No.8『寺』── 遠江国分寺の復元」（1980）※復元構想として参照</li>
-    <li>国指定文化財等データベース／日本歴史地名大系</li>
-    <li>制作者による現地確認・追加調査メモ</li>
-  </ul>
-  <p class="note">本記事は、上記資料を参考にしつつ、磐田物語の編集方針に基づいて独自に再構成したものです。本文・写真・図面の転載は行っていません。掲載図版は、WEB説明用として新規に作成した模式図であり、実測図ではありません。本文中の「見える化」「散策ルート」「AR」などの活用案は、磐田物語による構想であり、確定した計画ではありません。事実と推定・復元案・構想は本文中で区別しています。</p>
-
-  <h3>あわせて読みたい</h3>
-  <div class="related">
-    <a href="/enshu-kokubunji.html">遠州国分寺特集トップ</a>
-    <a href="/enshu-kokubunji-garan.html">伽藍を読む</a>
-    <a href="/enshu-kokubunji-walk.html">遠州国分寺を歩く</a>
-    <a href="/totoumi-kokubunji.html">遠江国分寺跡と、古代磐田のはじまり</a>
-  </div>
-
-  <div class="pager">
-    <a href="/enshu-kokubunji-life.html">← 人々の暮らしをどう変えたか</a>
-    <a href="/enshu-kokubunji-walk.html">遠州国分寺を歩く →</a>
-  </div>
-</main>
-
-<section class="article-policy">
-  <h2>この記事について</h2>
-  <dl>
-    <dt>著者</dt>
-    <dd>大石浩之（富士ヶ丘サービス株式会社 代表取締役／磐田物語 運営者）</dd>
-    <dt>参考資料</dt>
-    <dd>佐口行正氏所蔵資料、磐田市・静岡県等の公開資料、現地確認、郷土史関連資料を参考にしています。記事ごとに主要な参考資料がある場合は、個別に追記してください。</dd>
-    <dt>作成方針</dt>
-    <dd>本記事は、資料の文章をそのまま転載するのではなく、史実・地名・地理・時代背景を確認しながら、読みやすい地域史コンテンツとして再構成しています。誤りや補足情報がある場合は、運営者までお知らせください。</dd>
-  </dl>
-</section>
-
-<footer class="im-foot">
-  <div class="im-inner">
-    <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
-    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
-    <div class="im-links">
-      <p class="im-lh">大石ひろゆきの別活動</p>
-      <ul>
-        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
-        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
-        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
-      </ul>
-      <div class="im-sns">
-        <p class="im-lh">大石ひろゆきのSNS</p>
-        <div class="im-icons">
-          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.9 3.78-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg></a>
-          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 1.95c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.4-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.42-.35 1.04-.4 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.4 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.16 1.04.35 2.19.4 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.4.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.42.35-1.04.4-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.4-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.16-1.04-.35-2.19-.4-1.24-.06-1.61-.07-4.76-.07Zm0 3.32a4.57 4.57 0 1 0 0 9.14 4.57 4.57 0 0 0 0-9.14Zm0 7.54a2.97 2.97 0 1 1 0-5.94 2.97 2.97 0 0 1 0 5.94Zm5.82-7.74a1.07 1.07 0 1 1-2.14 0 1.07 1.07 0 0 1 2.14 0Z"/></svg></a>
-          <a href="https://x.com/HiroyukiLawAka" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.22-6.82-5.97 6.82H1.66l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23Zm-1.16 17.52h1.83L7.01 4.12H5.04l12.04 15.65Z"/></svg></a>
-        </div>
-      </div>
-    </div>
-    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
-  </div>
-</footer>
-
-</body>
-</html>
+{
+  "_meta": {
+    "description": "磐田市の文化財データ。指定区分・種別・指定年月日・年代・所在地は磐田市公式ウェブサイトの公開情報に基づく事実情報。summary・iwataNote は磐田物語編集部による独自の要約・視点。",
+    "source": "磐田市公式ウェブサイト「国指定文化財」(ページ番号1002037, 2023年3月20日更新) ほか",
+    "lastUpdated": "2026-06-21",
+    "note": "丸写しを避け、事実情報のみ引用。説明文は独自記述。不明事項はstatusでunconfirmedと明記する。"
+  },
+  "kuni_shitei": [
+    {
+      "id": "akegashima-kofungun-dosei",
+      "name": "明ヶ島古墳群出土土製品 附 土製品残欠",
+      "designation": "国指定",
+      "category": "重要文化財（有形文化財）",
+      "designatedDate": "2013-06-19",
+      "designatedDateJp": "平成25年6月19日",
+      "period": "古墳時代",
+      "location": "見付",
+      "summary": "明ヶ島古墳群から出土した、人物・動物などをかたどった多数の土製品。古墳時代の祭祀のありさまを伝える貴重な資料群である。",
+      "iwataNote": "古墳に供えられた土の造形からは、当時の人々が何を祈り、何を死者とともに送ろうとしたのかがうかがえる。古代磐田の人々の心性に触れられる資料である。",
+      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002061.html",
+      "status": "published"
+    },
+    {
+      "id": "totoumi-kokubunji-ato",
+      "name": "遠江国分寺跡",
+      "designation": "国指定",
+      "category": "特別史跡（記念物）",
+      "designatedDate": "1952-03-29",
+      "designatedDateJp": "昭和27年3月29日",
+      "period": "奈良時代",
+      "location": "見付",
+      "owner": "磐田市他",
+      "summary": "天平13年（741年）の聖武天皇「国分寺建立の詔」により、遠江国府の置かれた磐田に建てられた国分寺の跡。七重塔・金堂を備えた伽藍があった。",
+      "iwataNote": "全国の国分寺跡のなかでも早くに伽藍配置が解明され、特別史跡に指定された。古代の磐田が遠江国の政治・文化の中心であったことを示す、まちの原点である。",
+      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002046.html",
+      "readMore": "/n016.html",
+      "status": "published"
+    },
+    {
+      "id": "choshizuka-kofun",
+      "name": "銚子塚古墳 附 小銚子塚古墳",
+      "designation": "国指定",
+      "category": "史跡（記念物）",
+      "designatedDate": "1956-11-07",
+      "designatedDateJp": "昭和31年11月7日",
+      "period": "古墳時代",
+      "location": "寺谷",
+      "owner": "磐田市",
+      "summary": "磐田原台地の西縁に築かれた前方後円墳。全長約110メートルは静岡県内第3位の規模で、4世紀の遠江を治めた豪族の首長墓と考えられる。",
+      "iwataNote": "国府が置かれるよりはるか前、古墳時代の磐田に大きな力をもつ豪族がいたことを示す。隣接する小銚子塚古墳は県内に5例しかない前方後方墳である。",
+      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002047.html",
+      "readMore": "/choshizuka-kofun.html",
+      "status": "published"
+    },
+    {
+      "id": "shinpoinyama-kofungun",
+      "name": "新豊院山古墳群",
+      "designation": "国指定",
+      "category": "史跡（記念物）",
+      "designatedDate": "1987-07-03",
+      "designatedDateJp": "昭和62年7月3日",
+      "period": "古墳時代",
+      "location": "向笠竹之内",
+      "owner": "磐田市",
+      "summary": "向笠竹之内に所在する古墳群。古墳時代前期から中期にかけての磐田原東部の様相を伝える。",
+      "iwataNote": "銚子塚古墳とともに、磐田原台地に古墳時代の有力者が連なって眠っていたことを物語る。台地の縁という立地が、古墳の分布と深く関わる。",
+      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002048.html",
+      "status": "published"
+    },
+    {
+      "id": "mikuriya-kofungun",
+      "name": "御厨古墳群",
+      "designation": "国指定",
+      "category": "史跡（記念物）",
+      "designatedDate": "2001-03-26",
+      "designatedDateJp": "平成13年3月26日",
+      "period": "古墳時代",
+      "location": "新貝・鎌田",
+      "owner": "磐田市他",
+      "summary": "新貝・鎌田に分布する古墳群。磐田南部、太田川流域の古墳時代の様相を伝える。",
+      "iwataNote": "磐田原だけでなく、平野部・河川沿いにも古墳が築かれていたことを示す。古墳の分布から、古代の人々の暮らしの広がりが見えてくる。",
+      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002049.html",
+      "status": "published"
+    },
+    {
+      "id": "kyu-mitsuke-gakko-iwata-bunko",
+      "name": "旧見付学校 附 磐田文庫",
+      "designation": "国指定",
+      "category": "史跡（記念物）",
+      "designatedDate": "1969-04-12",
+      "designatedDateJp": "昭和44年4月12日",
+      "period": "明治時代",
+      "location": "見付",
+      "owner": "磐田市",
+      "summary": "明治8年（1875年）落成の、現存最古とされる木造擬洋風小学校校舎。隣接する磐田文庫とともに史跡に指定されている。",
+      "iwataNote": "「見付の五階」と親しまれた校舎。寺子屋・私塾・磐田文庫へと続く、学びのまち磐田の蓄積の上に建った。城の石垣を土台にした、受け継ぎの精神の象徴である。",
+      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002050.html",
+      "readMore": "/kyu-mitsuke-gakko.html",
+      "status": "published"
+    },
+    {
+      "id": "kumano-no-naga-fuji",
+      "name": "熊野の長フジ",
+      "designation": "国指定",
+      "category": "天然記念物（記念物）",
+      "designatedDate": "1932-07-25",
+      "designatedDateJp": "昭和7年7月25日",
+      "period": null,
+      "location": "池田",
+      "owner": "行興寺",
+      "summary": "池田の行興寺にある、樹齢を重ねたフジの巨木。長く垂れる花房で知られ、天然記念物に指定されている。",
+      "iwataNote": "平安の女性・熊野（ゆや）御前ゆかりと伝えられる。文化財は石や建物だけではない。生きて季節ごとに花を咲かせる樹木もまた、地域の記憶を背負っている。",
+      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002051.html",
+      "status": "published"
+    },
+    {
+      "id": "mitsuke-tenjin-hadaka-matsuri",
+      "name": "見付天神裸祭",
+      "designation": "国指定",
+      "category": "重要無形民俗文化財（民俗文化財）",
+      "designatedDate": "2000-12-27",
+      "designatedDateJp": "平成12年12月27日",
+      "period": null,
+      "location": "見付",
+      "summary": "矢奈比賣神社の祭神が遠江国総社・淡海國玉神社へ渡御する大祭。腰蓑姿の裸衆による鬼踊りと、漆黒の闇の神輿渡御で知られる。",
+      "iwataNote": "形あるものだけが文化財ではない。人々の手で毎年くり返される神事もまた、国の宝とされる。総社渡御という古代の信仰のかたちを、今に伝える。",
+      "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002052.html",
+      "readMore": "/mitsuke-tenjin-hadaka-matsuri.html",
+      "status": "published"
+    }
+  ],
+  "ken_shitei": [
+    { "name": "府八幡宮楼門", "category": "建造物", "designatedDateJp": "昭和30年2月25日", "period": "江戸時代", "location": "中泉", "owner": "府八幡宮", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002054.html" },
+    { "name": "旧赤松家門・塀", "category": "建造物", "designatedDateJp": "平成4年3月17日", "period": "明治時代", "location": "見付", "owner": "磐田市", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002055.html" },
+    { "name": "木造地蔵菩薩坐像", "category": "彫刻", "designatedDateJp": "昭和59年11月30日", "period": "平安時代", "location": "見付", "owner": "宣光寺", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002056.html" },
+    { "name": "木造毘沙門天立像", "category": "彫刻", "designatedDateJp": "昭和59年11月30日", "period": "平安時代", "location": "見付", "owner": "宣光寺", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002056.html" },
+    { "name": "絹本着色釈迦十六善神画像", "category": "絵画", "designatedDateJp": "昭和57年2月26日", "period": "鎌倉時代", "location": "豊浜中野", "owner": "豊浜中野自治会", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002057.html" },
+    { "name": "熊野絵巻", "category": "絵画", "designatedDateJp": "令和2年12月8日", "period": "室町時代", "location": "池田", "owner": "行興寺", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1008998.html" },
+    { "name": "鰐口", "category": "工芸", "designatedDateJp": "昭和31年10月17日", "period": "南北朝時代", "location": "大島", "owner": "大島自治会", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002058.html" },
+    { "name": "三角縁四神四獣鏡", "category": "考古資料", "designatedDateJp": "昭和33年9月2日", "period": "古墳時代", "location": "新貝", "owner": "連城寺", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002059.html" },
+    { "name": "堂山古墳出土遺物", "category": "考古資料", "designatedDateJp": "平成8年3月22日", "period": "古墳時代", "location": "見付", "owner": "磐田市", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002060.html" },
+    { "name": "太刀 銘成高", "category": "工芸", "designatedDateJp": "平成26年3月14日", "period": "鎌倉時代", "location": "見付", "owner": "個人", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002068.html" },
+    { "name": "淡海国玉神社本殿 附棟札5枚", "category": "建造物", "designatedDateJp": "平成27年12月8日", "period": "平安時代", "location": "見付", "owner": "淡海国玉神社", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002069.html" },
+    { "name": "米塚古墳群", "category": "史跡（記念物）", "designatedDateJp": "昭和49年4月18日", "period": "古墳時代", "location": "寺谷", "owner": "磐田市", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002062.html" },
+    { "name": "長者屋敷遺跡", "category": "史跡（記念物）", "designatedDateJp": "昭和54年11月19日", "period": "奈良時代", "location": "寺谷", "owner": "磐田市", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002063.html" },
+    { "name": "土器塚古墳", "category": "史跡（記念物）", "designatedDateJp": "平成14年12月10日", "period": "古墳時代", "location": "中泉", "owner": "磐田市他", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002064.html" },
+    { "name": "善導寺大クス", "category": "天然記念物（記念物）", "designatedDateJp": "昭和34年4月14日", "period": null, "location": "中泉", "owner": "磐田市", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002065.html" },
+    { "name": "甲塚のクロガネモチ", "category": "天然記念物（記念物）", "designatedDateJp": "昭和59年3月23日", "period": null, "location": "見付", "owner": "磐田市", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002066.html" },
+    { "name": "熊野の長フジ（県指定・天然記念物）", "category": "天然記念物（記念物）", "designatedDateJp": "昭和47年9月26日", "period": null, "location": "池田", "owner": "行興寺", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002051.html", "note": "のちに国の天然記念物にも指定" },
+    { "name": "掛塚祭屋台囃子", "category": "無形民俗文化財", "designatedDateJp": "昭和45年6月2日", "period": null, "location": "掛塚", "owner": "掛塚地区9自治会", "officialUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002067.html" }
+  ],
+  "shi_shitei_mukei": [
+    { "name": "八王子神社米とぎまつり", "location": "下太", "owner": "八王子神社氏子" },
+    { "name": "中野白山神社十日祭（お箱）", "location": "豊浜中野", "owner": "白山神社氏子" },
+    { "name": "中野白山神社例祭（白酒）", "location": "豊浜中野", "owner": "白山神社氏子" },
+    { "name": "氏神様の年始回り", "location": "豊浜", "owner": "三嶋神社禰宜番" },
+    { "name": "賀茂神社特殊神饌", "location": "加茂", "owner": "賀茂神社氏子" },
+    { "name": "池田やかた祭り", "location": "池田", "owner": "池田やかた祭り保存会" },
+    { "name": "大めし祭り", "location": "富里", "owner": "諏訪神社氏子" },
+    { "name": "加茂大念仏", "location": "加茂", "owner": "加茂大念仏保存会" },
+    { "name": "豊岡の遠州大念仏", "location": "豊岡地区各所", "owner": "各地区の念仏組" },
+    { "name": "掛塚祭竹馬", "location": "掛塚", "owner": "掛塚東町自治会" }
+  ],
+  "_index_meta": {
+    "kuni_count": 8,
+    "kuni_source": "磐田市公式「国指定文化財」(1002037, 2023-03-20更新)",
+    "ken_count": 18,
+    "ken_source": "磐田市公式「県指定文化財」(1002038, 2023-03-20更新)",
+    "shi_source": "磐田市公式「市指定文化財」(1002039, 2025-08-19更新)",
+    "shi_note": "市指定の有形文化財（建造物・彫刻ほか多数）は件数が多く随時更新されるため、本データには未収載。公式ページを参照。",
+    "toroku_source": "磐田市公式「国登録有形文化財」(1002040, 2025-11-19更新)",
+    "toroku_note": "国登録有形文化財は本データに未収載。公式ページを参照。",
+    "mukei_source": "磐田市公式「無形民俗文化財」(1002041, 2025-02-27更新)"
+  }
+}

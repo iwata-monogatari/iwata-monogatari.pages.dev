@@ -3,118 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>見付の土地と記憶 ― 明治42年の見付町戸別明細図から読む、家・道・暮らし</title>
-<meta name="description" content="明治42年1月に調査された『見付町戸別明細図』を読み解く。旧東海道の宿場町・見付に刻まれた家並み、小路、寺社、町の中枢。土地の記憶から、相続・空き家・古い家の扱いを考える。">
+<title>見付の古い家を手放す前に、知っておきたいこと ― 相続・空き家・土地売却｜見付古地図散歩 第5回</title>
+<meta name="description" content="明治42年の見付町戸別明細図を入口に、相続した家・空き家・古い土地を手放す前に確認したいことを整理。相続登記・境界・接道・解体・残置物・空き家管理・売るか貸すか・すぐ売らない選択まで。磐田市見付の不動産相談。">
 <style>
   :root{
     --ink:#22303a; --ink-soft:#5b6b74; --paper:#fffdf7; --paper-2:#f4fafc;
-    --line:#d8e8ef; --accent:#1f4f6f; --accent-soft:#e9f3fa; --seal:#9b3b2f;
-    --maxw:880px;
+    --line:#d8e8ef; --accent:#1f4f6f; --accent-soft:#e9f3fa; --seal:#9b3b2f; --maxw:880px;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{
-    margin:0; color:var(--ink);
-    background:var(--paper);
+  body{margin:0; color:var(--ink); background:var(--paper);
     font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;
-    line-height:1.95; font-size:17px; letter-spacing:.02em;
-  }
+    line-height:1.95; font-size:17px; letter-spacing:.02em;}
   .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
-  /* ---- hero ---- */
-  header.hero{
-    background:linear-gradient(180deg,#eaf4fa 0%, var(--paper) 100%);
-    border-bottom:1px solid var(--line);
-    padding:54px 0 38px;
-  }
-  .series-tag{
-    display:inline-block; font-size:13px; letter-spacing:.32em;
-    color:var(--accent); border:1px solid var(--accent);
-    border-radius:2px; padding:5px 14px; margin-bottom:22px;
-  }
-  header.hero h1{
-    font-size:30px; line-height:1.5; margin:0 0 14px; font-weight:600;
-  }
+  .seriesnav{background:#eaf4fa; border-bottom:1px solid var(--line); font-family:sans-serif; font-size:13px}
+  .seriesnav .wrap{display:flex; flex-wrap:wrap; gap:6px 18px; padding:11px 22px; align-items:center}
+  .seriesnav a{color:var(--accent); text-decoration:none}
+  .seriesnav a:hover{text-decoration:underline}
+  .seriesnav .now{color:var(--ink-soft)}
+  header.hero{background:linear-gradient(180deg,#eaf4fa 0%, var(--paper) 100%); border-bottom:1px solid var(--line); padding:46px 0 34px;}
+  .series-tag{display:inline-block; font-size:13px; letter-spacing:.32em; color:var(--accent); border:1px solid var(--accent); border-radius:2px; padding:5px 14px; margin-bottom:20px;}
+  header.hero h1{font-size:28px; line-height:1.5; margin:0 0 14px; font-weight:600;}
   header.hero .sub{font-size:16px; color:var(--ink-soft); margin:0}
-  .cover-fig{margin:30px 0 0; text-align:center}
-  .cover-fig img{
-    max-width:100%; width:520px; border:1px solid var(--line);
-    box-shadow:0 10px 30px rgba(60,45,25,.16); cursor:zoom-in;
-  }
+  .cover-fig{margin:28px 0 0; text-align:center}
+  .cover-fig img{max-width:100%; width:480px; border:1px solid var(--line); box-shadow:0 8px 26px rgba(60,45,25,.15); cursor:zoom-in;}
   .cover-fig figcaption{font-size:13px; color:var(--ink-soft); margin-top:10px}
-  /* ---- body ---- */
   main{padding:8px 0 10px}
-  .lead{
-    background:var(--paper-2); border:1px solid var(--line);
-    border-left:4px solid var(--accent);
-    padding:22px 26px; margin:38px 0; font-size:16.5px; color:#22303a;
-  }
-  h2{
-    font-size:21px; margin:52px 0 8px; padding:0 0 0 14px;
-    border-left:6px solid var(--accent); line-height:1.5;
-  }
+  .lead{background:var(--paper-2); border:1px solid var(--line); border-left:4px solid var(--accent); padding:22px 26px; margin:36px 0; font-size:16.5px; color:#22303a;}
+  h2{font-size:21px; margin:50px 0 8px; padding:0 0 0 14px; border-left:6px solid var(--accent); line-height:1.5;}
   h2 .en{display:block; font-size:11px; letter-spacing:.28em; color:var(--accent); font-family:sans-serif; margin-bottom:4px}
   p{margin:14px 0}
   figure.plate{margin:30px 0; text-align:center}
-  figure.plate img{
-    max-width:100%; border:1px solid var(--line);
-    box-shadow:0 6px 20px rgba(60,45,25,.12); cursor:zoom-in;
-  }
+  figure.plate img{max-width:100%; border:1px solid var(--line); box-shadow:0 6px 20px rgba(60,45,25,.12); cursor:zoom-in;}
   figure.plate figcaption{font-size:13px; color:var(--ink-soft); margin-top:9px; line-height:1.6}
-  .pull{
-    font-size:19px; color:var(--accent); text-align:center;
-    margin:34px auto; max-width:640px; line-height:1.8;
-  }
-  /* ---- gallery ---- */
-  .gallery-intro{margin-top:48px}
-  .grid{
-    display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
-    gap:12px; margin:24px 0 8px;
-  }
-  .cell{cursor:zoom-in; background:#fff; border:1px solid var(--line); padding:6px; text-align:center}
-  .cell img{width:100%; height:128px; object-fit:cover; display:block}
-  .cell span{display:block; font-size:12px; color:var(--ink-soft); margin-top:6px; line-height:1.4}
-  .note-small{font-size:12.5px; color:var(--ink-soft)}
-  /* ---- series ---- */
-  .series{background:var(--paper-2); border:1px solid var(--line); padding:8px 26px 26px; margin:40px 0}
-  .series ol{list-style:none; counter-reset:s; padding:0; margin:14px 0 0}
-  .series li{counter-increment:s; padding:16px 0 16px 52px; position:relative; border-top:1px dashed var(--line)}
-  .series li:first-child{border-top:none}
-  .series li::before{
-    content:counter(s); position:absolute; left:0; top:16px;
-    width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff;
-    font-family:sans-serif; font-size:15px; display:flex; align-items:center; justify-content:center;
-  }
-  .series li b{display:block; font-size:16.5px; margin-bottom:3px}
-  .series li small{color:var(--ink-soft); font-size:13.5px; line-height:1.6}
-  /* ---- cta ---- */
-  .cta{
-    background:var(--accent); color:#fff; border-radius:4px;
-    padding:34px 30px; margin:46px 0 30px; text-align:center;
-  }
+  .pull{font-size:19px; color:var(--accent); text-align:center; margin:34px auto; max-width:660px; line-height:1.8;}
+  .check{background:var(--paper-2); border:1px solid var(--line); padding:20px 24px; margin:28px 0}
+  .check h3{margin:0 0 10px; font-size:16px; letter-spacing:.06em}
+  .check ul{margin:0; padding:0; list-style:none}
+  .check li{padding:10px 0 10px 30px; position:relative; border-top:1px dashed var(--line); font-size:15.5px}
+  .check li:first-child{border-top:none}
+  .check li::before{content:"✓"; position:absolute; left:4px; top:10px; color:var(--accent); font-weight:bold}
+  .cta{background:var(--accent); color:#fff; border-radius:4px; padding:34px 30px; margin:46px 0 24px; text-align:center;}
   .cta p{color:#eaf4fa; margin:8px auto 20px; max-width:620px}
   .cta .big{font-size:20px; color:#fff; margin:0 0 6px}
-  .btn{
-    display:inline-block; margin:6px; padding:13px 26px; border-radius:3px;
-    background:#fff; color:var(--accent); text-decoration:none; font-size:15px;
-    border:1px solid #fff;
-  }
+  .btn{display:inline-block; margin:6px; padding:13px 26px; border-radius:3px; background:#fff; color:var(--accent); text-decoration:none; font-size:15px; border:1px solid #fff;}
   .btn.ghost{background:transparent; color:#fff}
-  /* ---- footer ---- */
+  .nextprev{display:flex; justify-content:space-between; gap:14px; margin:30px 0 0; font-family:sans-serif; font-size:14px}
+  .nextprev a{flex:1; border:1px solid var(--line); border-radius:4px; padding:16px 18px; text-decoration:none; color:var(--ink); background:var(--paper-2)}
+  .nextprev a:hover{border-color:var(--accent)}
+  .nextprev small{display:block; color:var(--accent); font-size:12px; margin-bottom:4px}
   footer{border-top:1px solid var(--line); margin-top:40px; padding:28px 0 60px; color:var(--ink-soft); font-size:13.5px}
   footer h3{font-size:14px; color:var(--ink); margin:0 0 8px; letter-spacing:.1em}
   footer p{margin:7px 0}
-  /* ---- lightbox ---- */
   #lb{position:fixed; inset:0; background:rgba(24,18,12,.93); display:none; z-index:99; cursor:zoom-out; padding:24px}
   #lb.on{display:flex; flex-direction:column; align-items:center; justify-content:center}
   #lb img{max-width:96%; max-height:84%; object-fit:contain; box-shadow:0 0 40px rgba(0,0,0,.6)}
   #lb .cap{color:#eef6fb; font-size:14px; margin-top:14px; text-align:center; max-width:90%}
   #lb .hint{color:#9bb6c4; font-size:12px; margin-top:6px}
-  @media(max-width:640px){
-    header.hero h1{font-size:23px} body{font-size:16px}
-    .cell img{height:104px}
-  }
+  @media(max-width:640px){header.hero h1{font-size:22px} body{font-size:16px} .nextprev{flex-direction:column}}
 </style>
-  <link rel="canonical" href="https://iwata-monogatari.pages.dev/m001.html">
+  <link rel="canonical" href="https://iwata-monogatari.pages.dev/m005.html">
 <style id="reno-blocks">
 .article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
 .article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
@@ -151,25 +99,23 @@
   </div>
 </header>
 
-<nav style="background:#eaf4fa;border-bottom:1px solid var(--line);font-family:sans-serif;font-size:13px">
-  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:11px 22px;align-items:center">
-    <span>見付古地図散歩｜</span>
-    <span style="color:var(--ink-soft)">第1回 見付の土地と記憶</span>
-    <a href="m002.html" style="color:var(--accent);text-decoration:none">第2回</a>
-    <a href="m003.html" style="color:var(--accent);text-decoration:none">第3回</a>
-    <a href="m004.html" style="color:var(--accent);text-decoration:none">第4回</a>
-    <a href="m005.html" style="color:var(--accent);text-decoration:none">第5回</a>
-  </div>
-</nav>
+<nav class="seriesnav"><div class="wrap">
+  <span>見付古地図散歩｜</span>
+  <a href="m001.html">第1回</a>
+  <a href="m002.html">第2回</a>
+  <a href="m003.html">第3回</a>
+  <a href="m004.html">第4回</a>
+  <span class="now">第5回 手放す前に</span>
+</div></nav>
 
 <header class="hero">
   <div class="wrap">
-    <span class="series-tag">見付古地図散歩 ＞ 第一回</span>
-    <h1>見付の土地と記憶<br>― 明治42年の見付町戸別明細図から読む、家・道・暮らし</h1>
-    <p class="sub">古い町には、古い家だけでなく、道、地割、商い、人の流れが残っている。</p>
+    <span class="series-tag">見付古地図散歩 ＞ 第五回</span>
+    <h1>見付の古い家を手放す前に、<br>知っておきたいこと</h1>
+    <p class="sub">古い家を売るとは、建物を処分することではなく、受け継いできたものを見つめ直すことでもある。</p>
     <figure class="cover-fig">
-      <img src="images/00_hyoshi.jpg" data-cap="『見付町戸別明細圖』表紙 ― 明治四十二年一月調査" alt="明治四十二年一月調査 見付町戸別明細図 表紙">
-      <figcaption>『見付町戸別明細圖』表紙 ― 明治四十二年一月調査（佐口行正氏所蔵）</figcaption>
+      <img src="images/00_hyoshi.jpg" data-cap="『見付町戸別明細圖』表紙 ― 明治四十二年一月調査" alt="見付町戸別明細図 表紙">
+      <figcaption>『見付町戸別明細圖』表紙 ― 明治四十二年一月調査（佐口行正氏 所蔵）</figcaption>
     </figure>
   </div>
 </header>
@@ -178,60 +124,51 @@
 <div class="wrap">
 
   <div class="lead">
-    明治四十二（一九〇九）年一月に調査された『見付町戸別明細図』には、当時の家並み、道筋、暮らしの輪郭が一軒ずつ書き込まれています。現在の地図では見えにくくなった町の記憶を、この一枚一枚から少しずつ読み解いていきます。私たちが相続や空き家のご相談をお受けするとき見ているのも、じつはこの延長線上にある「土地の歴史」です。
+    明治四十二年の『見付町戸別明細図』を見ると、今の見付につながる家並みや道筋が、一軒ずつ刻まれています。古い家を手放すということは、単に建物を処分することではありません。その家が地域の中でどのように残ってきたのかを、一度見つめ直すことでもあります。すぐに「売る」「売らない」を決める必要はありません。まずは、家と土地の状況を整理するところから始めましょう。
   </div>
 
-  <h2><span class="en">INTRODUCTION</span>見付という町は、土地の上に記憶が重なっている</h2>
-  <p>見付は、旧東海道の宿場町として栄えた町です。東西にのびる街道を背骨に、川原・一本松・西坂・馬場・宿・東坂・三本松といった町が連なり、そこから玄妙小路・宮小路・寺小路・地蔵小路・横町・南小路・清水小路・権現・境松といった小路が枝のように分かれていきます。町の名前そのものが、道のかたちや、神社へ向かう道筋、地形のなごりを今に伝えています。</p>
-  <p>不動産を見るときも、本来は同じことが言えます。単に「何坪か」「いくらで売れるか」だけでは、その土地の本当の姿は見えてきません。どんな道に面し、どんな家がどう並び、どんな歴史の上にあるのか。古い町ほど、そこに積み重なった記憶が、現在の取引にも静かに影響してきます。</p>
+  <h2><span class="en">A HOUSE THAT WAS HANDED DOWN</span>その家は、長い時間をかけて受け継がれてきた</h2>
+  <p>百年以上前の地図に、今のあなたの土地につながる区画が描かれている――見付では、それは珍しいことではありません。街道沿いの家、奥に長い敷地、小路に面した一角。そこには、何代にもわたって住み継がれ、相続され、ときに商いが営まれてきた歴史があります。</p>
+  <p>だからこそ、いざ手放すとなったとき、戸惑うのは自然なことです。建物としては古くても、家としては重い。その感覚を無視して数字だけで進めると、あとで後悔が残りがちです。まずは慌てず、何を確認すべきかを知ることから始めるのが、結局いちばんの近道になります。</p>
 
-  <h2><span class="en">HOUSES</span>明治42年の地図に残る、一軒ずつの家並み</h2>
-  <p>この図がほかの地図と決定的に違うのは、「戸別」――つまり一軒ずつ、世帯ごとに名前が記されている点です。街道や小路に沿って、当時そこに暮らした家々が、びっしりと書き込まれています。赤い線は道、緑の線は町なかを流れる川や用水、そして要所には寺(卍)や神社、町の施設が描かれています。</p>
-  <p>一枚を眺めるだけで、当時の見付がどれほど人の密度の高い、生き生きとした町だったかが伝わってきます。家と家のあいだの距離、奥に長くのびる敷地、路地のたたみ方。これらは単なる過去の風景ではなく、今の見付の地割にも、かたちを変えながら受け継がれています。</p>
+  <h2><span class="en">CHECKLIST</span>手放す前に、確認しておきたいこと</h2>
+  <p>古い家・相続した土地・空き家を扱うとき、確認すべきことは多岐にわたります。順番に整理しておくだけで、その後の判断がぐっと楽になります。</p>
+
+  <div class="check">
+    <h3>古い家・相続不動産で整理しておきたい項目</h3>
+    <ul>
+      <li><b>相続登記</b> ― 名義が亡くなった方やさらに前の代のままになっていないか。相続登記は令和六年から義務化されました。売却の前提として、まず名義の整理が必要です。</li>
+      <li><b>境界</b> ― 隣地・道路との境界が確定しているか。古い家ほど曖昧なまま受け継がれていることがあります。</li>
+      <li><b>接道・再建築</b> ― 道路にきちんと接しているか、解体後に建て替えができるか。古い市街地では要注意です。</li>
+      <li><b>解体</b> ― 建物を解体するか、残して売るか。解体費用や、解体後の固定資産税の扱いも含めて検討します。</li>
+      <li><b>残置物</b> ― 家財・仏壇・思い出の品の整理。空き家の片付けは、想像以上に時間と心の負担がかかります。</li>
+      <li><b>空き家の管理</b> ― 売却までのあいだ、誰がどう管理するか。放置は老朽化や近隣トラブルの原因になります。</li>
+      <li><b>売るか、貸すか</b> ― 手放すだけが選択肢ではありません。貸す・活用するという道もあります。</li>
+      <li><b>すぐ売らない、という選択</b> ― 時期や家族の事情によっては、今は動かさないという判断も立派な選択です。</li>
+    </ul>
+  </div>
 
   <figure class="plate">
-    <img src="images/10_shuku.jpg" data-cap="「宿」 ― 旧東海道に面した宿の中心。街道(中央の帯)の両側に家々が向かい合って並ぶ。" alt="見付町戸別明細図 宿">
-    <figcaption>「宿」のシート。中央の帯が旧東海道で、街道の両側に家が向かい合って並ぶ、宿場町らしい町割りが読み取れます。</figcaption>
+    <img src="images/04_terakoji.jpg" data-cap="「北井上・寺小路」 ― 郡役所や大見寺など、町の中枢が集まる一帯。" alt="見付町戸別明細図 寺小路">
+    <figcaption>「北井上・寺小路」のシート。明治四十二年の見付には、すでに土地や建物の権利を記録する登記所が置かれていました。相続登記の整理も、その長い営みの延長線上にあります。</figcaption>
   </figure>
 
-  <h2><span class="en">STREETS</span>旧東海道と小路 ― 今も残る道、変わった道</h2>
-  <p>古い地図と現在の地図を重ねると、変わらない道筋と、姿を変えた場所がはっきり見えてきます。見付の場合、東西に走る旧東海道という背骨は今もそのまま町の軸であり続けています。一方で、街道から分かれる細い小路、川沿いの道、寺社へ向かう参道などは、拡幅されたり、付け替えられたり、あるいは今も当時のまま残っていたりと、さまざまです。</p>
-  <p>これは懐古趣味の話ではありません。古い市街地では、道の幅(幅員)、敷地が道路にどう接しているか(接道)、奥行きの深さといった要素が、現在の不動産取引に直接かかわってきます。昔ながらの細い小路に面した土地、街道に長く面した間口の狭い敷地――こうした「町のかたち」は、売却や建て替えのときに必ず確認すべき論点になります。</p>
+  <p>とくに最初の一歩になりやすいのが、相続登記です。明治の見付に登記所が置かれていたように、土地や建物の権利を記録し受け継ぐしくみは、ずっと昔からこの町に根づいてきました。名義の整理は手間に感じられますが、ここを通さないと売却そのものが進みません。逆に言えば、ここを丁寧に片付けることが、すべての出発点になります。</p>
 
-  <figure class="plate">
-    <img src="images/04_terakoji.jpg" data-cap="「北井上・寺小路」 ― 郡役所や大見寺など、町の中枢が集まる一帯。右端の緑線は川筋。" alt="見付町戸別明細図 寺小路">
-    <figcaption>「北井上・寺小路」のシート。郡役所や大見寺など、明治の見付の中枢がこの一帯に集まっていました。右端の緑の線は町を流れる川筋です。</figcaption>
-  </figure>
+  <p class="pull">急いで価格を決めることだけが、正解ではない。</p>
 
-  <h2><span class="en">THE CORE OF THE TOWN</span>町の中枢 ― 郡役所・登記所・寺社・学校</h2>
-  <p>この図には、当時の見付が単なる住宅地ではなく、地域の中心だったことを示す施設がいくつも記されています。磐田郡の役所(郡役所)、土地や建物の権利を記録する登記所、ものづくりの製造所、学びの場である学校、そして数多くの寺院と神社。見付は、人が集まり、商いがあり、行政や教育の核があった、文字どおりの「町」でした。</p>
-  <p>なかでも私たちが目をとめるのは、明治四十二年の見付に、すでに<strong>登記所</strong>が置かれていたことです。土地や建物の権利を記録し、受け継いでいくしくみは、百年以上も前からこの町に根づいていました。相続登記が義務化された現在、私たちが日々向き合っている相続や名義の整理も、じつはこの長い営みの延長線上にあります。土地の価値は、面積や築年数だけでは測れません。その場所がどんな歴史を持ち、どんな人の流れの中にあったのか。地域を知ることは、不動産を正しく扱う第一歩です。</p>
-
-  <p class="pull">この町の土地は、ただの坪単価では語り尽くせない。</p>
-
-  <h2><span class="en">BEFORE YOU LET GO</span>古い家や土地を扱うときに、大切なこと</h2>
-  <p>見付のような歴史ある町では、相続した家、空き家、古い土地を売却する前に、確認しておきたいことが少なくありません。境界はどこか。道路にきちんと接しているか。建て替えはできるのか。上下水道はどうなっているか。解体が必要か、残置物はどうするか。近隣との関係は――。これらを一つずつ丁寧に調べておくことが、売主にとっても買主にとっても、安心できる取引につながります。</p>
-  <p>古い町の不動産は、価格の多寡だけでなく、こうした「調査の深さ」で結果が大きく変わります。急いで値段を決めることだけが正解ではありません。その土地がどう使われ、どう受け継がれてきたのかを一度整理してから考えることで、納得のいく判断にたどり着けます。</p>
+  <h2><span class="en">DON'T RUSH</span>急いで決めなくていい。まず整理する。</h2>
+  <p>不動産売却というと、「早く・高く売る」ことばかりが注目されがちです。けれど、本当に大切なのは、納得して判断できることです。その土地がどのように使われ、どう受け継がれてきたのか。何を確認し、どんな選択肢があるのか。一度きちんと整理してから考えることで、慌てて決めるより、ずっと納得のいく結論にたどり着けます。</p>
+  <p>富士ヶ丘サービスは、磐田市見付という土地の歴史を、坪単価だけでは見ていません。相続した家、長く空いている家、古い土地――その背景を一緒に読み解きながら、売る・貸す・残す・今は動かさない、どの選択も含めて、あなたにとって良い形を一緒に考えます。</p>
 
   <div class="cta">
     <p class="big">売る前に、まず整理する。</p>
-    <p>富士ヶ丘サービスでは、磐田市見付周辺の相続不動産・空き家・古い住宅・土地売却のご相談を承っています。すぐに売るかどうか決まっていなくても構いません。まずは、家と土地の状況を一緒に整理するところからお手伝いします。</p>
+    <p>磐田市見付周辺の相続不動産・空き家・古い住宅・土地売却のご相談を承っています。すぐに売るかどうか決まっていなくても構いません。まずは、家と土地の状況を一緒に整理するところからお手伝いします。相続登記や境界の確認など、最初の一歩からご相談ください。</p>
   </div>
 
-  <h2 class="gallery-intro"><span class="en">PLATES &nbsp;1–17</span>見付町戸別明細図 ― 町別シート一覧</h2>
-  <p>明治四十二年の見付町は、街道沿いの町と、そこから分かれる小路ごとに、十七枚の図に描き分けられています。各シートをクリックすると拡大表示されます。</p>
-  <div class="grid" id="grid"><!-- filled by JS --></div>
-  <p class="note-small">※ 各図には当時の世帯名など個人にかかわる記載が含まれます。郷土史・都市史の貴重な記録として公開していますが、ご関係者・ご子孫の方で掲載についてお気づきの点があれば、下記までご連絡ください。</p>
-
-  <div class="series">
-    <h2 style="border:none; padding:14px 0 0; margin:0"><span class="en">SERIES PLAN</span>連載「見付古地図散歩」全5回の構成</h2>
-    <ol>
-      <li><b>第1回：見付の土地と記憶（本記事）</b><small>戸別明細図の全体像から、見付という町の骨格と「土地の記憶」という視点を示す。シリーズの導入。</small></li>
-      <li><b><a href="m002.html" style="color:var(--accent)">第2回：古い地図に残る家並みと、相続される土地</a></b><small>一軒ずつ記された家並みを入口に、相続した家・空き家を「処分」ではなく「受け継いできたもの」として見つめ直す。<a href="m002.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
-      <li><b><a href="m003.html" style="color:var(--accent)">第3回：旧道・小路・町割り ― 古い町の土地を売るとき、なぜ調査が大切か</a></b><small>幅員・接道・再建築・境界・上下水道など、宿場町ならではの売却時の論点を、地図の道筋から具体的に解説。<a href="m003.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
-      <li><b><a href="m004.html" style="color:var(--accent)">第4回：明治42年、見付の町の中枢 ― 郡役所・登記所・寺社・学校</a></b><small>町の施設から、見付が地域の中心だった歴史を語り、土地の価値は面積や築年数だけでは測れないことへつなげる。<a href="m004.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
-      <li><b><a href="m005.html" style="color:var(--accent)">第5回：見付の古い家を手放す前に、知っておきたいこと</a></b><small>相続登記・境界・接道・解体・残置物・空き家管理・売るか貸すか。歴史の語りから実務へ着地する、売却導線の要となる回。<a href="m005.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
-    </ol>
+  <div class="nextprev">
+    <a href="m004.html"><small>&laquo; 第4回</small>明治42年、見付の町の中枢 ― 郡役所・登記所・寺社・学校</a>
+    <a href="m001.html"><small>シリーズ目次 &raquo;</small>見付の土地と記憶（第1回・全シート一覧）</a>
   </div>
 
 </div>
@@ -246,30 +183,17 @@
 
 <script>
 (function(){
-  var plates=[
-    ["00_hyoshi","表紙"],["01_kawara","川原"],["02_genmyo","玄妙小路"],
-    ["03_miyakoji","宮小路"],["04_terakoji","北井上・寺小路"],["05_jizo","地蔵小路"],
-    ["06_sumiyoshi","住吉"],["07_ippommatsu","一本松・川原"],["08_nishizaka","西坂"],
-    ["09_baba","馬場"],["10_shuku","宿"],["11_higashizaka","東坂"],
-    ["12_sambommatsu","三本松"],["13_yokocho","横町"],["14_nishikoji","西之小路・倉小路"],
-    ["15_minamikoji","南小路・清水小路・川尻"],["16_gongen","権現"],["17_sakaimatsu","境松"]
-  ];
-
-  var grid=document.getElementById('grid');
-  grid.innerHTML=plates.map(function(p){
-    return '<div class="cell" data-full="images/'+p[0]+'.jpg" data-cap="'+p[1]+'">'
-         +'<img src="images/'+p[0]+'_thumb.jpg" alt="'+p[1]+'" loading="lazy">'
-         +'<span>'+p[1]+'</span></div>';
-  }).join('');
   var lb=document.getElementById('lb'), lbi=lb.querySelector('img'), lbc=lb.querySelector('.cap');
-  function openLb(src,cap){lbi.src=src;lbc.textContent=cap||'';lb.classList.add('on');document.body.style.overflow='hidden';}
-  function closeLb(){lb.classList.remove('on');lbi.src='';document.body.style.overflow='';}
-  grid.addEventListener('click',function(e){var c=e.target.closest('.cell');if(c)openLb(c.getAttribute('data-full'),c.getAttribute('data-cap'));});
-  lb.addEventListener('click',closeLb);
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb();});
+  function open(src,cap){lbi.src=src; lbc.textContent=cap||''; lb.classList.add('on'); document.body.style.overflow='hidden';}
+  function close(){lb.classList.remove('on'); lbi.src=''; document.body.style.overflow='';}
+  document.addEventListener('click',function(e){
+    var t=e.target;
+    if(t.tagName==='IMG' && t.dataset.cap && !t.closest('#lb')){ open(t.getAttribute('src'), t.dataset.cap); }
+  });
+  lb.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
 })();
 </script>
-
 <section class="article-policy">
   <h2>この記事について</h2>
   <dl>

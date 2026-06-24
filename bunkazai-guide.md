@@ -1,69 +1,167 @@
-# 文化財ページ 更新方針（docs/bunkazai-guide.md）
-
-「磐田物語」の文化財コンテンツ群（`/bunkazai/` 配下）を更新・追記する際の方針をまとめる。
-
-## 1. 基本方針
-
-- 文化財を「観光名所」ではなく、**地域の記憶をたどる入口**として扱う。
-- 単なる市公式ページの焼き直しにせず、磐田物語ならではの独自視点（道・川・学校・寺社・地名・家と土地の記憶）で再構成する。
-- 文体は「である調」。丁寧・あたたかい・地域への敬意がある・断定しすぎない。
-- 避ける表現：「映える」「超すごい」「完全解説」「知らないと損」「観光まとめ」だけで終わる表現。
-- 使いたい表現：「地域の記憶」「土地に刻まれた歴史」「暮らしの奥に残る痕跡」「公式情報を手がかりに」「現地を歩きながら考える」「未来へ引き継ぐための記録」。
-
-## 2. 著作権・出典の鉄則
-
-- 磐田市公式サイトは文書・画像・PDFの無断転載を原則禁止。**丸写しは厳禁。**
-- 公式情報は「事実確認の一次資料」として使い、**本文は必ず独自の言葉で再構成**する。
-- 文化財名・指定区分・種別・指定年月日・年代・所在地などの**事実情報は正確に確認**して記載する。
-- **不明な点は推測しない。**「未確認」と明記する。
-- 各ページ下部に必ず「主な参考資料」＋免責注記＋「出典：磐田市公式ウェブサイト」を置く（`.sourcebox` を使用）。
-- 画像は、権利確認済みの自前資料・利用許可済み資料・公式ページへのリンク表示に限定する。
-
-## 3. ページ構成（現状）
-
-| URL | 役割 |
-|-----|------|
-| `/bunkazai/` (index.html) | 文化財トップ。コンテンツ群の入口 |
-| `/bunkazai/kuni-shitei.html` | 国指定文化財一覧（8件カード） |
-| `/bunkazai/kofun.html` | 古墳から見る磐田（地形・交通の考察） |
-| `/bunkazai/maizobunkazai.html` | 埋蔵文化財と土地の記憶（不動産実務と接続） |
-| `/bunkazai/dayori.html` | 文化財だより等への資料導線 |
-| `/bunkazai/research-notes.html` | 研究ノート（調査メモ蓄積） |
-
-未作成（今後の拡張候補）：`/bunkazai/shitei.html`（全指定文化財一覧：県指定・市指定・国登録有形・無形民俗を含む）、遠江国分寺跡の文化財視点特集（既存 `/totoumi-kokubunji.html` と棲み分け）。
-
-## 4. データ管理
-
-- 文化財データは `/data/bunkazai.json` に構造化して保持。
-- フィールド：`id` `name` `designation`（国/県/市指定など）`category`（種別）`designatedDate`/`designatedDateJp` `period` `location` `owner` `summary`（独自要約）`iwataNote`（独自視点）`officialUrl` `readMore`（関連読みもの）`status`。
-- 事実情報（指定区分・年代・所在地）と独自記述（summary・iwataNote）を明確に分ける。
-
-## 5. デザイン
-
-- 既存の磐田物語の世界観を踏襲：生成り `#f7f2e9`／茶 `#a6713e`・`#85562c`／松緑 `#46624a`、Shippori Mincho 見出し＋Zen Kaku Gothic New 本文。
-- 全ページにファビコン4行（favicon.ico / -32 / -16 / -180）を必ず入れる。
-- 共通コンポーネント（クラス）：`.cpcard`（CulturalPropertyCard）、`.sourcebox`（SourceLinkBox／CitationBlock）、`.rnote`（ResearchNoteCard）、`.navcard`、`.timeline`。
-- スマホ表示（max-width:600px）で必ず確認。グリッドは1列に落とす。
-
-## 6. 新しい文化財カードの追加手順
-
-1. `/data/bunkazai.json` に事実情報＋独自メモを追記（公式ページで指定区分・年代・所在地を確認）。
-2. 該当一覧ページ（例 `kuni-shitei.html`）に `.cpcard` を追加。バッジの色は種別で使い分け（`.badge` 史跡系、`.kinen` 記念物、`.minzoku` 民俗）。
-3. 関連する読みものがあれば `readMore` でリンク。
-4. 公式情報リンク（`.official`）を必ず付ける。
-
-## 7. 将来の拡張余地
-
-- 古写真・はがき：権利確認済みのものを、定点比較などの形で追加できる構造にしてある。
-- 聞き書き・現地調査メモ：`research-notes.html` のテンプレートに沿って追記。家・家族の記憶は本人/家族の許可と個人情報配慮を前提とする。
-- 地図：将来 MapPlaceholder を実地図に差し替え可能。
-
-## 8. 公開前チェックリスト
-
-- [ ] 公式文章を長く転載していないか（独自の言葉になっているか）
-- [ ] 出典リンク・免責注記があるか
-- [ ] 文化財名・指定区分に誤りがないか
-- [ ] ファビコンが入っているか
-- [ ] スマホで読みやすいか
-- [ ] 磐田物語らしい独自視点があるか
-- [ ] 相互リンク先が実在するか
+{
+  "project": "磐田物語",
+  "repository": "iwata-monogatari/iwata-monogatari.pages.dev",
+  "batch_id": "rename-batch-002",
+  "created_at": "2026-06-25",
+  "purpose": "長い遠江国分寺系ファイル名を、中泉分類の短い地域別連番ファイル名へ変更する。",
+  "prerequisite": "rename-batch-001（kai1.html〜kai5.html → m001.html〜m005.html）が反映済みであること。",
+  "region": {
+    "region_code": "02",
+    "region_slug": "nakaizumi",
+    "region_label": "中泉",
+    "prefix": "n"
+  },
+  "policy": {
+    "delete_old_files": false,
+    "old_file_policy": "旧ファイルは削除せず、移転案内ページとして残す。",
+    "sitemap_policy": "sitemap.xmlには新ファイル名のみ掲載し、旧ファイル名は掲載しない。",
+    "ledger_policy": "data/pages.jsonを正式台帳、docs/pages-ledger.mdを確認用台帳とする。"
+  },
+  "renames": [
+    {
+      "old_file": "enshu-kokubunji.html",
+      "new_file": "n001.html",
+      "title": "遠江国分寺 特集親ページ",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "01002-nakaizumi.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "enshu-kokubunji-what.html",
+      "new_file": "n002.html",
+      "title": "遠江国分寺とは何か",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "n001.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "enshu-kokubunji-location.html",
+      "new_file": "n003.html",
+      "title": "遠江国分寺の位置",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "n001.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "enshu-kokubunji-garan.html",
+      "new_file": "n004.html",
+      "title": "遠江国分寺の伽藍",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "n001.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "enshu-kokubunji-garan-kondo.html",
+      "new_file": "n005.html",
+      "title": "遠江国分寺 伽藍・金堂",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "n004.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "enshu-kokubunji-garan-tower.html",
+      "new_file": "n006.html",
+      "title": "遠江国分寺 伽藍・塔",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "n004.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "enshu-kokubunji-garan-kodo.html",
+      "new_file": "n007.html",
+      "title": "遠江国分寺 伽藍・講堂",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "n004.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "enshu-kokubunji-garan-kairo.html",
+      "new_file": "n008.html",
+      "title": "遠江国分寺 伽藍・回廊",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "n004.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "enshu-kokubunji-garan-sobo.html",
+      "new_file": "n009.html",
+      "title": "遠江国分寺 伽藍・僧坊",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "n004.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "enshu-kokubunji-tiles.html",
+      "new_file": "n010.html",
+      "title": "遠江国分寺の瓦",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "n001.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "enshu-kokubunji-chronology.html",
+      "new_file": "n011.html",
+      "title": "遠江国分寺 年表",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "n001.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "enshu-kokubunji-life.html",
+      "new_file": "n012.html",
+      "title": "遠江国分寺と人々の暮らし",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "n001.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "enshu-kokubunji-walk.html",
+      "new_file": "n013.html",
+      "title": "遠江国分寺を歩く",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "n001.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "enshu-kokubunji-fukko.html",
+      "new_file": "n014.html",
+      "title": "遠江国分寺 復興",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "n001.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "enshu-kokubunji-glossary.html",
+      "new_file": "n015.html",
+      "title": "遠江国分寺 用語集",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "n001.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "totoumi-kokubunji.html",
+      "new_file": "n016.html",
+      "title": "遠江国分寺 関連ページ",
+      "region_code": "02",
+      "region_label": "中泉",
+      "parent_file_after_rename": "01002-nakaizumi.html",
+      "redirect_policy": "old_file_redirect_stub"
+    }
+  ],
+  "missing_from_source_ledger": []
+}
