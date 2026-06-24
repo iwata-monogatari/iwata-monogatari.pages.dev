@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>磐田物語 憲章 ｜ 磐田物語</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<meta name="description" content="磐田物語の憲章（Mission）・基本理念（Core Principle）・行動指針（Guiding Principles）。地域の記憶を収集・整理・公開し、未来へ継承するための理念を掲げます。">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#fffdf7">
+<link rel="canonical" href="https://iwata-monogatari.pages.dev/000-kensho.html">
+<meta property="og:title" content="磐田物語 憲章 ｜ 磐田物語">
+<meta property="og:description" content="地域の記憶を収集・整理・公開し、未来へ継承する。磐田物語の憲章・基本理念・行動指針。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="磐田物語">
+<meta property="og:url" content="https://iwata-monogatari.pages.dev/000-kensho.html">
+<meta property="og:image" content="https://iwata-monogatari.pages.dev/saguchi/img/hk-3.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="磐田物語 憲章">
+<meta name="twitter:description" content="地域の記憶を収集・整理・公開し、未来へ継承する。磐田物語の理念。">
+<meta name="twitter:image" content="https://iwata-monogatari.pages.dev/saguchi/img/hk-3.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<style>
+  :root{
+    --paper:#fffdf7;
+    --paper-deep:#e9f3fa;
+    --ink:#1f3a48;
+    --ink-soft:#5b6b74;
+    --brown:#2f7fa3;
+    --brown-deep:#1f4f6f;
+    --accent-blue:#356f88;
+    --line:#d8e8ef;
+    --card:#fffdf7;
+    --shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+    --gold:#b8893a;
+    --gold-bright:#e3c266;
+    --gold-deep:#8a6526;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    line-height:1.95;font-size:17px;letter-spacing:.02em;
+    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
+  }
+  .mincho{font-family:"Shippori Mincho",serif;}
+  body::before{
+    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(166,113,62,.05) 0, transparent 38%),
+      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);
+  }
+  a{color:var(--brown-deep);text-underline-offset:3px;}
+
+  .rule-gold{
+    width:200px;height:0;margin:26px auto 0;border:0;
+    border-top:2px solid transparent;
+    border-image:linear-gradient(90deg,transparent,var(--gold-bright),var(--gold),var(--gold-bright),transparent) 1;
+  }
+  .rule-gold.short{width:120px;}
+
+  /* ===== 本文ラッパ ===== */
+  .charter-wrap{max-width:820px;margin:0 auto;padding:64px 22px 30px;}
+
+  /* ===== 前文（宣言） ===== */
+  .preamble{text-align:center;margin:0 0 50px;}
+  .preamble .pre-eyebrow{
+    font-size:12.5px;letter-spacing:.4em;color:var(--gold-deep);font-weight:700;
+    margin:0 0 18px;text-indent:.4em;
+  }
+  .preamble .pre-lead{
+    font-family:"Shippori Mincho",serif;font-size:clamp(19px,2.8vw,23px);line-height:2.15;
+    color:var(--ink);letter-spacing:.05em;margin:0 auto;max-width:680px;font-weight:700;
+  }
+  .preamble .pre-lead .q{color:var(--gold);}
+
+  .sect-label{
+    text-align:center;font-size:12.5px;letter-spacing:.34em;color:var(--accent-blue);
+    font-weight:700;margin:0 0 6px;text-indent:.34em;
+  }
+  .sect-title{
+    text-align:center;font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(24px,3.6vw,32px);color:var(--ink);letter-spacing:.06em;margin:0 0 8px;
+  }
+
+  /* ===== 金色の額（憲章） ===== */
+  .gold-frame{
+    position:relative;margin:30px auto 8px;padding:13px;
+    background:linear-gradient(135deg,#f3dea6 0%,#caa14f 22%,#a87c2e 50%,#e7cd7e 70%,#b8893a 100%);
+    border-radius:8px;
+    box-shadow:0 18px 46px rgba(120,86,24,.34), 0 3px 8px rgba(120,86,24,.25);
+  }
+  .gold-frame::before{
+    content:"";position:absolute;inset:6px;border-radius:5px;pointer-events:none;
+    border:1px solid rgba(255,255,255,.5);
+  }
+  .gold-frame .inner{
+    position:relative;background:
+      linear-gradient(180deg,#fffefb 0%, #fffaf0 100%);
+    border:2px solid rgba(138,101,38,.55);
+    border-radius:4px;padding:48px 42px 44px;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.7), inset 0 2px 24px rgba(184,137,58,.12);
+  }
+  /* コーナー飾り */
+  .gold-frame .corner{
+    position:absolute;width:26px;height:26px;z-index:2;
+    border-color:var(--gold-deep);border-style:solid;border-width:0;
+  }
+  .gold-frame .corner.tl{top:20px;left:20px;border-top-width:2px;border-left-width:2px;}
+  .gold-frame .corner.tr{top:20px;right:20px;border-top-width:2px;border-right-width:2px;}
+  .gold-frame .corner.bl{bottom:20px;left:20px;border-bottom-width:2px;border-left-width:2px;}
+  .gold-frame .corner.br{bottom:20px;right:20px;border-bottom-width:2px;border-right-width:2px;}
+
+  .gold-frame .seal{
+    width:54px;height:54px;margin:0 auto 18px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-family:"Shippori Mincho",serif;font-weight:800;font-size:22px;color:#fff;
+    background:radial-gradient(circle at 36% 30%, var(--gold-bright), var(--gold) 56%, var(--gold-deep));
+    box-shadow:0 4px 12px rgba(138,101,38,.4), inset 0 0 0 2px rgba(255,255,255,.5);
+  }
+  .gold-frame .frame-body p{
+    font-family:"Shippori Mincho",serif;font-size:18.5px;line-height:2.25;
+    color:#2c2415;margin:0 0 16px;text-align:center;letter-spacing:.03em;
+  }
+  .gold-frame .frame-body p:last-child{margin-bottom:0;}
+
+  /* ===== 基本理念 ===== */
+  .principle{
+    margin:46px auto 0;padding:34px 36px;border-radius:6px;
+    background:linear-gradient(180deg,#fbfdff 0%, var(--card) 100%);
+    border:1px solid var(--line);border-top:3px solid var(--gold);
+    box-shadow:var(--shadow);text-align:center;
+  }
+  .principle .pi-eyebrow{
+    font-size:12px;letter-spacing:.32em;color:var(--accent-blue);font-weight:700;
+    margin:0 0 6px;text-indent:.32em;
+  }
+  .principle h2{
+    font-family:"Shippori Mincho",serif;font-weight:800;font-size:23px;
+    color:var(--ink);letter-spacing:.06em;margin:0 0 16px;
+  }
+  .principle p{
+    font-family:"Shippori Mincho",serif;font-size:19px;line-height:2.2;
+    color:var(--ink);margin:0;letter-spacing:.03em;
+  }
+  .principle p .em{color:var(--gold-deep);font-weight:700;}
+
+  /* ===== 行動指針 ===== */
+  .guide-head{text-align:center;margin:64px 0 6px;}
+  .guide-list{margin:30px 0 0;padding:0;list-style:none;counter-reset:gp;}
+  .guide-list li{
+    position:relative;margin:0 0 16px;padding:24px 28px 24px 84px;
+    background:var(--card);border:1px solid var(--line);border-radius:6px;
+    box-shadow:var(--shadow);
+  }
+  .guide-list li::before{
+    counter-increment:gp;content:counter(gp,decimal-leading-zero);
+    position:absolute;left:22px;top:22px;
+    width:44px;height:44px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-family:"Shippori Mincho",serif;font-weight:800;font-size:16px;color:#fff;
+    background:radial-gradient(circle at 36% 30%, var(--gold-bright), var(--gold) 58%, var(--gold-deep));
+    box-shadow:0 3px 8px rgba(138,101,38,.32), inset 0 0 0 2px rgba(255,255,255,.45);
+  }
+  .guide-list li h3{
+    font-family:"Shippori Mincho",serif;font-weight:700;font-size:19px;
+    color:var(--ink);letter-spacing:.04em;margin:0 0 6px;
+  }
+  .guide-list li p{margin:0;font-size:15.5px;color:var(--ink-soft);line-height:1.95;}
+
+  /* ===== 署名 ===== */
+  .signature{
+    max-width:820px;margin:34px auto 8px;padding:4px 4px 4px 0;text-align:right;
+  }
+  .signature .sig-date{font-size:15px;color:var(--ink-soft);margin:0 0 14px;letter-spacing:.08em;}
+  .signature .sig-decl{font-size:14.5px;color:var(--ink-soft);margin:0 0 14px;letter-spacing:.04em;line-height:1.9;}
+  .signature .sig-org{
+    font-family:"Shippori Mincho",serif;font-size:20px;font-weight:700;
+    color:var(--ink);margin:0 0 4px;letter-spacing:.06em;
+  }
+  .signature .sig-name{
+    font-family:"Shippori Mincho",serif;font-size:21px;font-weight:800;
+    color:var(--ink);margin:0;letter-spacing:.14em;
+  }
+  .signature .sig-name .sig-title{font-size:15px;font-weight:600;color:var(--ink-soft);letter-spacing:.08em;margin-right:14px;}
+
+  /* ===== 結び ===== */
+  .closing{
+    max-width:820px;margin:54px auto 0;padding:0 22px;text-align:center;
+  }
+  .closing p{font-size:15px;color:var(--ink-soft);line-height:2;margin:0;}
+  .closing .back{
+    display:inline-block;margin-top:22px;padding:11px 26px;border-radius:999px;
+    text-decoration:none;font-size:14.5px;font-weight:600;color:var(--brown-deep);
+    background:linear-gradient(180deg,#fffaf0,#f6ead2);border:1px solid #d8c7a3;
+    box-shadow:0 4px 12px rgba(0,0,0,.06);transition:.2s;
+  }
+  .closing .back:hover{transform:translateY(-1px);box-shadow:0 7px 16px rgba(0,0,0,.1);}
+  .pad-bottom{height:70px;}
+
+  @media(max-width:640px){
+    .charter-wrap{padding:44px 18px 30px;}
+    .gold-frame .inner{padding:36px 22px 32px;}
+    .gold-frame .corner{display:none;}
+    .gold-frame .frame-body p{font-size:17px;line-height:2.1;}
+    .principle{padding:26px 22px;}
+    .guide-list li{padding:22px 20px 22px 20px;}
+    .guide-list li::before{position:static;display:flex;margin:0 0 12px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">磐田の歴史・古写真・古地図・地名を探す地域史ポータル</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/#area">地域から</a>
+      <a href="/#theme">テーマから</a>
+      <a href="/#saguchi">佐口資料室</a>
+      <a href="/bunkazai.html">文化財</a>
+      <a href="/chizu.html">地図</a>
+      <a href="/hajimeni.html">はじめに</a>
+    </nav>
+  </div>
+</header>
+
+<div class="charter-wrap">
+
+  <!-- ===== 前文（宣言） ===== -->
+  <div class="preamble">
+    <p class="pre-eyebrow">磐田物語 宣言</p>
+    <p class="pre-lead mincho">磐田物語は、地域の記憶を収集し、整理し、<br>公開し、未来へ継承していくため、<br>ここに<span class="q">「</span>磐田物語<span class="q">」</span>憲章・基本理念・行動指針を定める。</p>
+    <hr class="rule-gold">
+  </div>
+
+  <!-- ===== 署名（宣言者） ===== -->
+  <div class="signature">
+    <p class="sig-date">令和８年６月吉日</p>
+    <p class="sig-decl">この憲章・基本理念・行動指針を、ここに宣言する。</p>
+    <p class="sig-org">富士ヶ丘サービス株式会社</p>
+    <p class="sig-name"><span class="sig-title">代表取締役</span>大石浩之</p>
+  </div>
+
+  <!-- ===== 憲章（金色の額） ===== -->
+  <p class="sect-label">MISSION</p>
+  <h2 class="sect-title">憲章</h2>
+  <div class="gold-frame">
+    <span class="corner tl"></span><span class="corner tr"></span>
+    <span class="corner bl"></span><span class="corner br"></span>
+    <div class="inner">
+      <div class="seal mincho">章</div>
+      <div class="frame-body mincho">
+        <p>磐田物語は、地域の記憶を収集・整理・公開し、<br>未来へ継承することを目的とする。</p>
+        <p>歴史を特定の個人や組織のものとせず、<br>資料と集合知に基づき記録する。</p>
+        <p>私たちは、失われつつある風景、建物、地名、人々の営みを記録し、<br>次の世代へ手渡していく。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 基本理念 ===== -->
+  <div class="principle">
+    <p class="pi-eyebrow">CORE PRINCIPLE</p>
+    <h2>基本理念</h2>
+    <p>私たちは、磐田の記憶が<span class="em">失われる速度</span>よりも、<br><span class="em">記録し継承する速度</span>を速くすることを目指す。</p>
+  </div>
+
+  <!-- ===== 行動指針 ===== -->
+  <div class="guide-head">
+    <p class="sect-label">GUIDING PRINCIPLES</p>
+    <h2 class="sect-title">行動指針</h2>
+    <hr class="rule-gold short">
+  </div>
+  <ol class="guide-list">
+    <li>
+      <h3>出典を明らかにする</h3>
+      <p>資料名、所蔵者、作成年代、参考文献、聞き取り元をできる限り明示する。</p>
+    </li>
+    <li>
+      <h3>事実・推定・伝承を分ける</h3>
+      <p>確認できた事実と、推測したこと、地域で語られてきた伝承を混同しない。</p>
+    </li>
+    <li>
+      <h3>丸写しをしない</h3>
+      <p>資料を尊重しつつ、そのまま転載せず、調査・整理・再構成を行う。</p>
+    </li>
+    <li>
+      <h3>地名を大切にする</h3>
+      <p>現在の住所だけでなく、旧町村、大字、小字、生活圏、地域に伝わる呼称を尊重する。</p>
+    </li>
+    <li>
+      <h3>消える前に記録する</h3>
+      <p>建物、風景、商店、祭礼、人々の記憶を、失われる前に記録する。</p>
+    </li>
+    <li>
+      <h3>集合知を尊重する</h3>
+      <p>一人の見解に依存せず、資料、証言、研究成果、地域の声を重ね合わせて記録する。</p>
+    </li>
+    <li>
+      <h3>読みやすく公開する</h3>
+      <p>専門家だけでなく、市民、子ども、移住者、かつて磐田に暮らした人にも理解できる形で公開する。</p>
+    </li>
+    <li>
+      <h3>次世代へ手渡す</h3>
+      <p>現在の評価や閲覧数だけを追わず、将来の世代が利用できる記録を残す。</p>
+    </li>
+  </ol>
+
+  <!-- ===== 結び ===== -->
+  <div class="closing">
+    <hr class="rule-gold short">
+    <p>この憲章は、磐田物語に関わるすべての記録の指針である。<br>足もとの歴史を見つめ直し、次の世代へと手渡していく。</p>
+    <a class="back" href="/">磐田物語のトップへ戻る</a>
+  </div>
+  <div class="pad-bottom"></div>
+</div>
+
+<!-- ===== グローバルフッター（共通） ===== -->
+<footer class="im-foot">
+<style>
+.im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+.im-foot *{box-sizing:border-box;}
+.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+.im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+.im-foot .im-brand .im-dot{color:#2f7fa3;}
+.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+.im-foot .im-links{width:100%;margin-top:6px;}
+.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+.im-foot .im-links li{font-size:13px;line-height:1.6;}
+.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+.im-foot .im-sns{width:100%;margin-top:20px;}
+.im-foot .im-icons{display:flex;gap:14px;}
+.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
+.im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
+.im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
+.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+</style>
+  <div class="im-inner">
+    <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
+      </ul>
+      <div class="im-sns">
+        <p class="im-lh">大石ひろゆきのSNS</p>
+        <div class="im-icons">
+          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.92-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://x.com/HiroyukiLawAka" target="_blank" rel="noopener" aria-label="X (旧Twitter)" title="X (旧Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+</body>
+</html>
