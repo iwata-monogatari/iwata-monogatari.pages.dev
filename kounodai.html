@@ -23,7 +23,7 @@
 <style>
   :root{
     --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
-    --brown:#2f7fa3;--brown-deep:#1f4f6f;--pine:#356f88;--line:#d8e8ef;
+    --brown:#2f7fa3;--brown-deep:#1f4f6f;--accent-blue:#356f88;--line:#d8e8ef;
     --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
   }
   *{box-sizing:border-box;}
@@ -54,7 +54,7 @@
   .crumbs a:hover{text-decoration:underline;}
 
   .article-head{max-width:760px;margin:0 auto;padding:28px 24px 12px;}
-  .article-head .cat{font-size:13px;letter-spacing:.18em;color:var(--pine);font-weight:700;margin:0 0 16px;}
+  .article-head .cat{font-size:13px;letter-spacing:.18em;color:var(--accent-blue);font-weight:700;margin:0 0 16px;}
   .article-head .cat .no{color:var(--brown);}
   .article-head h1{font-family:"Shippori Mincho",serif;font-weight:800;
     font-size:clamp(27px,5vw,42px);line-height:1.45;margin:0 0 20px;color:var(--ink);letter-spacing:.03em;}
@@ -82,7 +82,7 @@
   .summary li::before{content:"";position:absolute;left:2px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--brown);}
   .summary li:last-child{margin-bottom:0;}
 
-  .def{background:var(--paper-deep);border-left:4px solid var(--pine);border-radius:0 3px 3px 0;
+  .def{background:var(--paper-deep);border-left:4px solid var(--accent-blue);border-radius:0 3px 3px 0;
     padding:16px 22px;margin:24px 0;}
   .def .term{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16px;color:var(--ink);margin-bottom:5px;display:block;}
   .def .term .yomi{font-size:12.5px;color:var(--ink-soft);font-weight:500;margin-left:6px;}
@@ -109,7 +109,7 @@
     border:1px solid var(--line);box-shadow:var(--shadow);background:var(--card);}
   figure.fig figcaption{font-size:13px;color:var(--ink-soft);margin-top:10px;text-align:center;line-height:1.7;}
 
-  .pull{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--pine);
+  .pull{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent-blue);
     border-radius:3px;padding:22px 28px;margin:30px 0;box-shadow:var(--shadow);}
   .pull p{margin:0;font-family:"Shippori Mincho",serif;font-size:17.5px;color:var(--ink);line-height:1.95;}
 
@@ -160,21 +160,24 @@
 .material-grid figcaption{padding:12px;font-size:.9rem;line-height:1.6;}
 @media(max-width:768px){.material-grid{grid-template-columns:1fr;}.material-grid img{height:auto;}}
 </style>
+  <link rel="stylesheet" href="/assets/css/site-header.css">
 </head>
 <body>
 
-<header class="site">
-  <div class="bar">
-    <a class="brand" href="/">
-      <span class="logo">磐田物語<span class="dot">。</span></span>
-      <span class="tag">遠江・見付のまちの歴史と文化</span>
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">磐田の歴史・古写真・古地図・地名を探す地域史ポータル</span>
     </a>
-    <nav class="menu">
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/#area">地域から</a>
+      <a href="/#theme">テーマから</a>
+      <a href="/#saguchi">佐口資料室</a>
+      <a href="/bunkazai.html">文化財</a>
+      <a href="/chizu.html">地図</a>
       <a href="/hajimeni.html">はじめに</a>
-      <a href="/#themes">読みもの</a>
-      <a href="/saguchi-shiryo.html">佐口史料</a>
-      <a href="/chizu.html">地図で見る</a>
-      <a href="/#enshu">遠州弁</a>
     </nav>
   </div>
 </header>

@@ -54,7 +54,7 @@
 <style>
 :root{
   --paper:#fffdf7; --paper-deep:#e9f3fa; --ink:#1f3a48; --ink-soft:#5b6b74;
-  --brown:#2f7fa3; --brown-deep:#1f4f6f; --pine:#356f88; --line:#d8e8ef;
+  --brown:#2f7fa3; --brown-deep:#1f4f6f; --accent-blue:#356f88; --line:#d8e8ef;
   --card:#fffdf7; --shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
 }
 *{box-sizing:border-box;}
@@ -77,7 +77,7 @@ nav.menu a:hover{color:var(--brown-deep);}
 .crumb a{color:var(--ink-soft);}
 
 .hero{max-width:1040px;margin:0 auto;padding:18px 22px 8px;}
-.hero .eyebrow{font-size:12px;letter-spacing:.22em;color:var(--pine);font-weight:700;margin:0 0 12px;}
+.hero .eyebrow{font-size:12px;letter-spacing:.22em;color:var(--accent-blue);font-weight:700;margin:0 0 12px;}
 .hero h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:clamp(26px,4.6vw,40px);line-height:1.4;margin:0 0 18px;color:var(--ink);letter-spacing:.03em;}
 .hero h1 .accent{background:linear-gradient(transparent 62%, rgba(47,127,163,.18) 62%);}
 .hero .lead{max-width:760px;font-size:16.5px;color:var(--ink-soft);margin:0 0 8px;line-height:2.05;}
@@ -88,7 +88,7 @@ nav.menu a:hover{color:var(--brown-deep);}
 .keybox p{margin:0;font-size:15.5px;color:var(--ink);line-height:2;}
 
 section.block{max-width:1040px;margin:0 auto;padding:40px 22px 6px;}
-.eyebrow{font-size:11.5px;letter-spacing:.2em;color:var(--pine);font-weight:700;margin:0 0 6px;}
+.eyebrow{font-size:11.5px;letter-spacing:.2em;color:var(--accent-blue);font-weight:700;margin:0 0 6px;}
 .sectitle{font-family:"Shippori Mincho",serif;font-weight:700;font-size:23px;margin:0 0 16px;color:var(--ink);border-bottom:2px solid var(--brown);padding-bottom:8px;}
 section.block p{font-size:16px;color:#2a3f4a;line-height:2.05;margin:0 0 16px;}
 .h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:18px;color:var(--brown-deep);margin:26px 0 8px;}
@@ -182,21 +182,24 @@ table.data tr:hover td{background:#f3f9fc;}
 .material-grid figcaption{padding:12px;font-size:.9rem;line-height:1.6;}
 @media(max-width:768px){.material-grid{grid-template-columns:1fr;}.material-grid img{height:auto;}}
 </style>
+  <link rel="stylesheet" href="/assets/css/site-header.css">
 </head>
 <body>
 
-<header class="site">
-  <div class="bar">
-    <a class="brand" href="/">
-      <span class="logo">磐田物語<span style="color:var(--brown);">。</span></span>
-      <span class="sub">磐田の歴史・古写真・古地図・地名を探す地域史ポータル</span>
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">磐田の歴史・古写真・古地図・地名を探す地域史ポータル</span>
     </a>
-    <nav class="menu">
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
       <a href="/#area">地域から</a>
       <a href="/#theme">テーマから</a>
-      <a href="/saguchi-shiryo.html">佐口資料室</a>
+      <a href="/#saguchi">佐口資料室</a>
       <a href="/bunkazai.html">文化財</a>
       <a href="/chizu.html">地図</a>
+      <a href="/hajimeni.html">はじめに</a>
     </nav>
   </div>
 </header>

@@ -20,7 +20,7 @@
 <style>
   :root{
     --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
-    --brown:#2f7fa3;--brown-deep:#1f4f6f;--pine:#356f88;--line:#d8e8ef;
+    --brown:#2f7fa3;--brown-deep:#1f4f6f;--accent-blue:#356f88;--line:#d8e8ef;
     --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
     --map-bg:#e9e3d2;--map-green:#d4ddc4;--map-road:#cdbfa6;--map-river:#bcd0d2;
   }
@@ -47,7 +47,7 @@
   nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
 
   .hero{max-width:1000px;margin:0 auto;padding:46px 24px 10px;}
-  .hero .eyebrow{font-size:13px;letter-spacing:.22em;color:var(--pine);font-weight:700;margin:0 0 14px;}
+  .hero .eyebrow{font-size:13px;letter-spacing:.22em;color:var(--accent-blue);font-weight:700;margin:0 0 14px;}
   .hero h1{font-family:"Shippori Mincho",serif;font-weight:800;
     font-size:clamp(28px,5vw,44px);line-height:1.4;margin:0 0 16px;color:var(--ink);letter-spacing:.04em;}
   .hero p{font-size:16px;color:var(--ink-soft);margin:0;line-height:1.95;max-width:680px;}
@@ -70,8 +70,8 @@
   .pin.dim{opacity:.2;}
   .pin .dot{fill:var(--brown);stroke:#fff;stroke-width:2;}
   .pin .ring{fill:none;stroke:var(--brown);stroke-width:1.5;opacity:.4;}
-  .pin.sel .dot{fill:var(--pine);}
-  .pin.sel .ring{stroke:var(--pine);opacity:.7;}
+  .pin.sel .dot{fill:var(--accent-blue);}
+  .pin.sel .ring{stroke:var(--accent-blue);opacity:.7;}
   .pin text{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;fill:var(--ink);font-weight:700;paint-order:stroke;stroke:#eef6fb;stroke-width:3.5px;}
 
   .legend{font-size:12px;color:var(--ink-soft);margin:8px 2px 0;}
@@ -81,11 +81,11 @@
     border-radius:6px;padding:24px 28px;box-shadow:var(--shadow);display:none;}
   .spotcard.show{display:block;animation:fade .25s ease;}
   @keyframes fade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
-  .spotcard .cat{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--pine);margin:0 0 8px;}
+  .spotcard .cat{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--accent-blue);margin:0 0 8px;}
   .spotcard h2{font-family:"Shippori Mincho",serif;font-size:25px;font-weight:800;color:var(--ink);margin:0 0 6px;letter-spacing:.03em;}
   .spotcard .hitokoto{font-size:16.5px;color:var(--brown-deep);font-weight:500;margin:0 0 18px;line-height:1.8;}
   .spotcard .rows{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin-bottom:8px;}
-  .spotcard dt{font-weight:700;color:var(--pine);font-size:13.5px;white-space:nowrap;}
+  .spotcard dt{font-weight:700;color:var(--accent-blue);font-size:13.5px;white-space:nowrap;}
   .spotcard dd{margin:0;font-size:14.5px;color:var(--ink);line-height:1.8;}
   .spotcard .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px;}
   .spotcard .tag{font-size:11.5px;color:var(--ink-soft);background:var(--paper-deep);border-radius:999px;padding:3px 11px;}
@@ -100,7 +100,7 @@
   .litem:hover{border-color:var(--brown);transform:translateY(-2px);}
   .litem.dim{display:none;}
   .litem .ln{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16px;color:var(--ink);margin-bottom:4px;}
-  .litem .lc{font-size:12px;color:var(--pine);font-weight:700;}
+  .litem .lc{font-size:12px;color:var(--accent-blue);font-weight:700;}
 
   .note{max-width:1000px;margin:24px auto 40px;padding:0 24px;}
   .note .inner{background:var(--paper-deep);border-radius:4px;padding:20px 24px;font-size:13.5px;color:var(--ink-soft);line-height:1.85;}
@@ -131,21 +131,24 @@
   }
 </style>
   <link rel="canonical" href="https://iwata-monogatari.pages.dev/chizu.html">
+  <link rel="stylesheet" href="/assets/css/site-header.css">
 </head>
 <body>
 
-<header class="site">
-  <div class="bar">
-    <a class="brand" href="/">
-      <span class="logo">磐田物語<span class="dot">。</span></span>
-      <span class="tag">遠江・見付のまちの歴史と文化</span>
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">磐田の歴史・古写真・古地図・地名を探す地域史ポータル</span>
     </a>
-    <nav class="menu">
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/#area">地域から</a>
+      <a href="/#theme">テーマから</a>
+      <a href="/#saguchi">佐口資料室</a>
+      <a href="/bunkazai.html">文化財</a>
+      <a href="/chizu.html">地図</a>
       <a href="/hajimeni.html">はじめに</a>
-      <a href="/#themes">読みもの</a>
-      <a href="/saguchi-shiryo.html">佐口史料</a>
-      <a href="/chizu.html">地図で見る</a>
-      <a href="/#enshu">遠州弁</a>
     </nav>
   </div>
 </header>

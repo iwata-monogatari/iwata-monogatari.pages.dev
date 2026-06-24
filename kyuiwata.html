@@ -23,7 +23,7 @@
 <style>
   :root{
     --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
-    --brown:#2f7fa3;--brown-deep:#1f4f6f;--pine:#356f88;--line:#d8e8ef;
+    --brown:#2f7fa3;--brown-deep:#1f4f6f;--accent-blue:#356f88;--line:#d8e8ef;
     --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
   }
   *{box-sizing:border-box;}
@@ -62,7 +62,7 @@
   .backbanner .bb-sub{font-size:12.5px;color:var(--ink-soft);}
 
   .hub-head{max-width:760px;margin:0 auto;padding:28px 24px 4px;}
-  .hub-head .cat{font-size:13px;letter-spacing:.18em;color:var(--pine);font-weight:700;margin:0 0 16px;}
+  .hub-head .cat{font-size:13px;letter-spacing:.18em;color:var(--accent-blue);font-weight:700;margin:0 0 16px;}
   .hub-head .cat .no{color:var(--brown);}
   .hub-head h1{font-family:"Shippori Mincho",serif;font-weight:800;
     font-size:clamp(28px,5vw,44px);line-height:1.45;margin:0 0 20px;color:var(--ink);letter-spacing:.03em;}
@@ -129,21 +129,24 @@
 .material-grid figcaption{padding:12px;font-size:.9rem;line-height:1.6;}
 @media(max-width:768px){.material-grid{grid-template-columns:1fr;}.material-grid img{height:auto;}}
 </style>
+  <link rel="stylesheet" href="/assets/css/site-header.css">
 </head>
 <body>
 
-<header class="site">
-  <div class="bar">
-    <a class="brand" href="/">
-      <span class="logo">磐田物語<span class="dot">。</span></span>
-      <span class="tag">遠江・見付のまちの歴史と文化</span>
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">磐田の歴史・古写真・古地図・地名を探す地域史ポータル</span>
     </a>
-    <nav class="menu">
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/#area">地域から</a>
+      <a href="/#theme">テーマから</a>
+      <a href="/#saguchi">佐口資料室</a>
+      <a href="/bunkazai.html">文化財</a>
+      <a href="/chizu.html">地図</a>
       <a href="/hajimeni.html">はじめに</a>
-      <a href="/#themes">読みもの</a>
-      <a href="/saguchi-shiryo.html">佐口史料</a>
-      <a href="/chizu.html">地図で見る</a>
-      <a href="/#enshu">遠州弁</a>
     </nav>
   </div>
 </header>

@@ -165,7 +165,7 @@ footer{
   .foot-nav{flex-direction:column;gap:10px}
 }
 </style>
-  <link rel="canonical" href="https://iwata-monogatari.pages.dev/saguchi-shiryo.html">
+  <link rel="canonical" href="https://iwata-monogatari.pages.dev/saguchi-shiryo">
 <style id="reno-blocks">
 .article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
 .article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
@@ -182,24 +182,31 @@ footer{
 .material-grid figcaption{padding:12px;font-size:.9rem;line-height:1.6;}
 @media(max-width:768px){.material-grid{grid-template-columns:1fr;}.material-grid img{height:auto;}}
 </style>
+  <link rel="stylesheet" href="/assets/css/site-header.css">
 </head>
 <body>
 
 <!-- ===== Header ===== -->
-<header>
-  <div class="wrap hdr">
-    <a class="logo" href="/">磐田物語</a>
-    <nav class="nav-links">
-      <a href="/">トップ</a>
-      <a href="hajimeni.html">はじめに</a>
-      <a href="bunkazai.html">文化財</a>
-      <a href="chizu.html">地図</a>
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">磐田の歴史・古写真・古地図・地名を探す地域史ポータル</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/#area">地域から</a>
+      <a href="/#theme">テーマから</a>
+      <a href="/#saguchi">佐口資料室</a>
+      <a href="/bunkazai.html">文化財</a>
+      <a href="/chizu.html">地図</a>
+      <a href="/hajimeni.html">はじめに</a>
     </nav>
   </div>
-  <div class="breadcrumb">
+</header>
+<div class="gh-breadcrumb">
     <a href="/">磐田物語</a> ／ 史料アーカイブ ／ <strong>佐口行正氏所蔵史料</strong>
   </div>
-</header>
 
 <!-- ===== Hero ===== -->
 <section class="hero">
