@@ -3,7 +3,7 @@
 
 ## コンテンツ
 - 読みもの（記事）：ルート直下の各 `*.html`
-- 見付天神裸祭【特集】：`mitsuke-tenjin-hadaka-matsuri.html` ＋子ページ4本（`hadaka-matsuri-*.html`）
+- 見付天神裸祭【特集】：`m011.html` ＋子ページ4本（`hadaka-matsuri-*.html`）
 - 文化財コンテンツ群：`/bunkazai/` 配下。更新方針は [`docs/bunkazai-guide.md`](docs/bunkazai-guide.md) を参照。
 - 文化財データ：`/data/bunkazai.json`
 

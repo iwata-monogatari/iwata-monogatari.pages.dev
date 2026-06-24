@@ -1,13 +1,449 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="robots" content="noindex, follow">
-  <meta http-equiv="refresh" content="0; url=m001.html">
-  <link rel="canonical" href="https://iwata-monogatari.pages.dev/m001.html">
-  <title>ページを移動しました｜磐田物語</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>加茂・寺谷の歴史 | 遠江の信仰と農業が育んだ地 | 磐田物語</title>
+<meta name="description" content="加茂・寺谷は遠江有数の農業地帯。古代信仰から近世農業開発、近代化まで。旧豊田町の地域変遷をたどります。磐田市の地域史探訪。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #fffdf7;
+  --paper-2: #e9f3fa;
+  --card: #fffdf7;
+  --ink: #22303a;
+  --ink-soft: #4d4a44;
+  --muted: #7c8b93;
+  --line: #d8e8ef;
+  --indigo: #2e4859;
+  --indigo-deep: #21323d;
+  --akane: #9c4334;
+  --gold: #2f7fa3;
+  --serif: "Shippori Mincho", "Noto Serif JP", serif;
+  --sans: "Noto Sans JP", system-ui, sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.9;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: var(--indigo);
+  text-decoration: none;
+  transition: 0.15s;
+}
+a:hover {
+  color: var(--akane);
+}
+.wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(245, 239, 226, 0.93);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.hdr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+.logo {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--indigo-deep);
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-size: 0.85rem;
+}
+.nav-links a {
+  color: var(--ink-soft);
+  padding: 4px 0;
+}
+.nav-links a:hover {
+  color: var(--akane);
+}
+.breadcrumb {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  padding: 0 22px;
+}
+.hero {
+  padding: 60px 0;
+  background: linear-gradient(180deg, rgba(245, 239, 226, 0.4), var(--paper-2));
+  border-bottom: 1px solid var(--line);
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-weight: 800;
+  color: var(--indigo-deep);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+.hero .sub {
+  font-family: var(--serif);
+  font-weight: 600;
+  color: var(--akane);
+  font-size: 1rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.04em;
+}
+.hero p {
+  color: var(--ink-soft);
+  max-width: 640px;
+  line-height: 1.9;
+  margin-bottom: 8px;
+}
+.section {
+  padding: 68px 0;
+  border-bottom: 1px solid var(--line);
+}
+.section.alt {
+  background: var(--paper-2);
+}
+.sec-title {
+  font-family: var(--serif);
+  font-weight: 700;
+  color: var(--indigo-deep);
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  margin-bottom: 12px;
+}
+.sec-head {
+  margin-bottom: 34px;
+}
+.sec-head .kicker {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.two-col {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 48px;
+  align-items: flex-start;
+}
+.two-col-img {
+  position: relative;
+}
+.two-col-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(40, 33, 20, 0.1);
+  margin-bottom: 12px;
+  display: block;
+}
+.two-col-cap {
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.two-col-text h3 {
+  font-family: var(--serif);
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 1.32rem;
+  margin-bottom: 16px;
+}
+.two-col-text p {
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+  line-height: 1.9;
+}
+.related {
+  padding: 44px 0;
+}
+.rel-h {
+  font-family: var(--serif);
+  font-weight: 700;
+  color: var(--indigo-deep);
+  font-size: 1.08rem;
+  margin-bottom: 14px;
+}
+.rel-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.rel-links a {
+  display: inline-block;
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  color: var(--indigo);
+  font-weight: 600;
+  transition: 0.2s;
+}
+.rel-links a:hover {
+  background: var(--indigo);
+  color: #fff;
+}
+footer {
+  background: #1a2126;
+  color: #cfe2ec;
+  padding: 46px 0 28px;
+  font-size: 0.88rem;
+}
+.foot-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+.foot-brand {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #f3ede0;
+  margin-bottom: 8px;
+}
+.foot-brand p {
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #8aa0ab;
+  margin-top: 8px;
+  max-width: 380px;
+  line-height: 1.8;
+}
+.foot-nav {
+  display: flex;
+  gap: 18px;
+}
+.foot-nav a {
+  color: #cfe2ec;
+  transition: 0.2s;
+}
+.foot-nav a:hover {
+  color: #fff;
+}
+.copy {
+  border-top: 1px solid #2c343a;
+  margin-top: 28px;
+  padding-top: 16px;
+  color: #857d6f;
+  font-size: 0.75rem;
+}
+@media (max-width: 900px) {
+  .section {
+    padding: 48px 0;
+  }
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .two-col-img {
+    order: -1;
+  }
+}
+@media (max-width: 620px) {
+  .nav-links {
+    display: none;
+  }
+  .hero h1 {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+  }
+  .section {
+    padding: 38px 0;
+  }
+  .foot-top {
+    flex-direction: column;
+  }
+}
+</style>
+  <link rel="canonical" href="https://iwata-monogatari.pages.dev/kamo.html">
+<style id="reno-blocks">
+.article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
+.article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
+.article-policy dt{font-weight:700;margin-top:16px;}
+.article-policy dd{margin:6px 0 0;line-height:1.8;color:var(--ink-soft,#4b5b66);}
+.related-materials{max-width:1180px;margin:48px auto;padding:0 4px;}
+.related-materials h2{font-size:1.4rem;margin-bottom:8px;font-family:"Shippori Mincho",serif;}
+.related-materials>p{line-height:1.8;color:var(--ink-soft,#4b5b66);}
+.related-materials .rm-note{font-size:.82rem;color:var(--ink-soft,#5b6b74);margin-top:14px;}
+.material-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px;}
+.material-grid figure{margin:0;border:1px solid var(--line,#d8e3ea);border-radius:14px;overflow:hidden;background:#fff;}
+.material-grid a{text-decoration:none;color:inherit;display:block;}
+.material-grid img{width:100%;height:180px;object-fit:cover;display:block;background:#eee;}
+.material-grid figcaption{padding:12px;font-size:.9rem;line-height:1.6;}
+@media(max-width:768px){.material-grid{grid-template-columns:1fr;}.material-grid img{height:auto;}}
+</style>
+  <link rel="stylesheet" href="/assets/css/site-header.css">
 </head>
 <body>
-  <p>このページは移動しました。<a href="m001.html">新しいページへ移動する</a></p>
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/hajimeni.html">はじめに</a>
+      <a href="/000-kensho.html">憲章</a>
+      <a href="/saguchi-shiryo-catalog.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+    </nav>
+  </div>
+</header>
+<div class="gh-breadcrumb">
+    <a href="/">磐田物語</a> ／ <a href="kyutoyoda.html">旧豊田町の歴史</a> ／ <strong>加茂・寺谷</strong>
+  </div>
+
+<section class="hero">
+  <div class="wrap">
+    <span style="display:block;font-size:.72rem;letter-spacing:.3em;color:var(--gold);font-weight:700;margin-bottom:8px;text-transform:uppercase">KAMO & TERADANI</span>
+    <h1>加茂・寺谷の歴史<br>── 遠江の信仰と農業が育んだ地</h1>
+    <p class="sub">古代の信仰から近代のまちづくりまで</p>
+    <p>旧豊田町を構成していた加茂・寺谷地区は、遠江でも有数の農業地帯でした。古代からの信仰に根ざしながら、近世から近代にかけて新しいまちへと変遷してきた地域。地名、寺社、古い村落構造――それらすべてが、加茂・寺谷の歩みを物語ります。</p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Origins</span>
+      <h2 class="sec-title">古代の信仰と地名の由来</h2>
+    </div>
+    <div class="two-col">
+      <div class="two-col-img">
+        <img src="images/kamo-rice-field-01.jpg" alt="加茂・寺谷地区の田園風景" loading="lazy">
+        <div class="two-col-cap">遠江の穏やかな田園。古代からの信仰と地域の営みが刻まれています。</div>
+      </div>
+      <div class="two-col-text">
+        <h3>古代の信仰地 加茂・寺谷</h3>
+        <p>「加茂（かも）」という地名は、古代の信仰地を示すものとされています。全国に分布する加茂という地名は、京都の賀茂信仰に関連するものが多く、当地もまたこうした古い信仰圏の一部でした。古代から中世にかけて、遠江の加茂・寺谷地区には複数の寺社が置かれ、周辺地域の精神的な中心地となってきました。</p>
+        <p>「寺谷（てらだに）」の地名は、より直接的に地形を表しています。この地名が示すように、複数の寺院が谷間に点在していました。谷間という地形は、水利に恵まれると同時に、信仰の聖地として見なされることが多かったのです。古文書の記録によれば、平安時代には既にこの地に複数の寺院が存在し、農民たちの信仰を集めていました。</p>
+        <p>古代の地割りの痕跡は、現在のまち並みの下に今も息づいており、古地図と現地を照らし合わせると、その構造が明らかになります。地名は、地域の歴史を読み解くための最も基本的な手がかりなのです。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Development</span>
+      <h2 class="sec-title">街道と田畑 ── 中世から近世への変遷</h2>
+    </div>
+    <div class="two-col">
+      <div class="two-col-img">
+        <img src="images/kamo-rice-field-02.jpg" alt="青々とした田園風景" loading="lazy">
+        <div class="two-col-cap">青々とした稲穂が風に揺れる遠江の田園。加茂・寺谷の豊かな農業生産を支えてきた土地。</div>
+      </div>
+      <div class="two-col-text">
+        <h3>近世の農業開発と地域の繁栄</h3>
+        <p>加茂・寺谷地区は、東海道からほどほどの距離にあり、東海道の物流を支える支路としての機能を担ってきました。地域内の道筋の多くは、古代の官道の流れを受け継いでおり、中世から近世を通じて人と物の流通を支えていました。</p>
+        <p>江戸時代に入ると、加茂・寺谷地区は遠江でも有数の農業地帯として知られるようになります。水利に恵まれた土地は、稲作を中心とした農業生産の中心地となり、この地域の農産物は周辺の町市場に供給される重要な食糧源でした。江戸幕府の政策により新田開発が奨励され、耕地面積は大幅に増加しました。</p>
+        <p>耕地整理の過程で描かれた古い絵図には、当時の村の構成と人々の営みが詳細に記録されています。村役人の記録からは、農業用水路の管理、年貢の徴収、村民の生活ぶりなど、当時の村落社会の実態が浮かび上がってきます。</p>
+        <p>明治維新を経て豊田町が誕生すると、加茂・寺谷地区も急速な近代化の波に呑み込まれていきました。農業の機械化、教育制度の整備、交通網の拡充――大正から昭和初期にかけての急速な変化が、この地域の景観と社会構造を大きく変えていったのです。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="related">
+  <div class="wrap">
+    <div class="rel-h">関連する記事</div>
+    <div class="rel-links">
+      <a href="kyutoyoda.html">旧豊田町の歴史</a>
+      <a href="shinden.html">東海道新田の歴史</a>
+      <a href="iwata-chimei.html">磐田の地名をたどる</a>
+      <a href="m002.html">古い地図に残す家並み</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="article-policy">
+  <h2>この記事について</h2>
+  <dl>
+    <dt>著者</dt>
+    <dd>大石浩之（富士ヶ丘サービス株式会社 代表取締役／磐田物語 運営者）</dd>
+    <dt>参考資料</dt>
+    <dd>佐口行正氏所蔵資料、磐田市・静岡県等の公開資料、現地確認、郷土史関連資料を参考にしています。記事ごとに主要な参考資料がある場合は、個別に追記してください。</dd>
+    <dt>作成方針</dt>
+    <dd>本記事は、資料の文章をそのまま転載するのではなく、史実・地名・地理・時代背景を確認しながら、読みやすい地域史コンテンツとして再構成しています。誤りや補足情報がある場合は、運営者までお知らせください。</dd>
+  </dl>
+</section>
+
+<footer class="im-foot">
+<style>
+.im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+.im-foot *{box-sizing:border-box;}
+.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+.im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+.im-foot .im-brand .im-dot{color:#2f7fa3;}
+.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+.im-foot .im-links{width:100%;margin-top:6px;}
+.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+.im-foot .im-links li{font-size:13px;line-height:1.6;}
+.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+.im-foot .im-sns{width:100%;margin-top:20px;}
+.im-foot .im-icons{display:flex;gap:14px;}
+.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
+.im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
+.im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
+.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+</style>
+  <div class="im-inner">
+    <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
+      </ul>
+      <div class="im-sns">
+        <p class="im-lh">大石ひろゆきのSNS</p>
+        <div class="im-icons">
+          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.92-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://x.com/HiroyukiLawAka" target="_blank" rel="noopener" aria-label="X (旧Twitter)" title="X (旧Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
 </body>
 </html>

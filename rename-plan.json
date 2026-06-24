@@ -1,57 +1,34 @@
-# 磐田物語 ページ台帳（リネーム第2弾反映案）
+# 磐田物語 ページ台帳（リネーム第3弾反映案）
 
 作成日：2026-06-25  
 更新日：2026-06-25
 
 ## 重要
 
-この台帳は **rename-batch-001 と rename-batch-002 をGitHubに反映した後の状態** を示す更新案である。  
+この台帳は **rename-batch-001〜003 をGitHubに反映した後の状態** を示す更新案である。  
 実ファイルをGitHubで変更するまでは、リポジトリ上の実体と差が出るため、リネーム指示書に従って同時反映すること。
 
-## リネーム第2弾
+## リネーム第3弾
 
 | 旧ファイル名 | 新ファイル名 | 地区 | 親ページ | 内容 |
 |---|---|---|---|---|
-| `enshu-kokubunji.html` | `n001.html` | 中泉 | `01002-nakaizumi.html` | 遠江国分寺 特集親ページ |
-| `enshu-kokubunji-what.html` | `n002.html` | 中泉 | `n001.html` | 遠江国分寺とは何か |
-| `enshu-kokubunji-location.html` | `n003.html` | 中泉 | `n001.html` | 遠江国分寺の位置 |
-| `enshu-kokubunji-garan.html` | `n004.html` | 中泉 | `n001.html` | 遠江国分寺の伽藍 |
-| `enshu-kokubunji-garan-kondo.html` | `n005.html` | 中泉 | `n004.html` | 遠江国分寺 伽藍・金堂 |
-| `enshu-kokubunji-garan-tower.html` | `n006.html` | 中泉 | `n004.html` | 遠江国分寺 伽藍・塔 |
-| `enshu-kokubunji-garan-kodo.html` | `n007.html` | 中泉 | `n004.html` | 遠江国分寺 伽藍・講堂 |
-| `enshu-kokubunji-garan-kairo.html` | `n008.html` | 中泉 | `n004.html` | 遠江国分寺 伽藍・回廊 |
-| `enshu-kokubunji-garan-sobo.html` | `n009.html` | 中泉 | `n004.html` | 遠江国分寺 伽藍・僧坊 |
-| `enshu-kokubunji-tiles.html` | `n010.html` | 中泉 | `n001.html` | 遠江国分寺の瓦 |
-| `enshu-kokubunji-chronology.html` | `n011.html` | 中泉 | `n001.html` | 遠江国分寺 年表 |
-| `enshu-kokubunji-life.html` | `n012.html` | 中泉 | `n001.html` | 遠江国分寺と人々の暮らし |
-| `enshu-kokubunji-walk.html` | `n013.html` | 中泉 | `n001.html` | 遠江国分寺を歩く |
-| `enshu-kokubunji-fukko.html` | `n014.html` | 中泉 | `n001.html` | 遠江国分寺 復興 |
-| `enshu-kokubunji-glossary.html` | `n015.html` | 中泉 | `n001.html` | 遠江国分寺 用語集 |
-| `totoumi-kokubunji.html` | `n016.html` | 中泉 | `01002-nakaizumi.html` | 遠江国分寺 関連ページ |
+| `hadaka-matsuri.html` | `m006.html` | 見付 | `01001-mitsuke.html` | 見付天神裸祭 特集親ページ |
+| `hadaka-matsuri-kigen.html` | `m007.html` | 見付 | `m006.html` | 見付天神裸祭の起源 |
+| `hadaka-matsuri-shinji.html` | `m008.html` | 見付 | `m006.html` | 見付天神裸祭の神事 |
+| `hadaka-matsuri-hozon.html` | `m009.html` | 見付 | `m006.html` | 見付天神裸祭の保存と継承 |
+| `hadaka-matsuri-shippei.html` | `m010.html` | 見付 | `m006.html` | 見付天神裸祭としっぺい伝説 |
+| `mitsuke-tenjin-hadaka-matsuri.html` | `m011.html` | 見付 | `m006.html` | 見付天神裸祭 関連ページ |
+| `mitsuke-tenjin.html` | `m012.html` | 見付 | `01001-mitsuke.html` | 見付天神 矢奈比賣神社 |
 
 ## 運用方針
 
-- 新ファイル `n001.html`〜`n016.html` に本文を移す。
+- 新ファイル `m006.html`〜`m012.html` に本文を移す。
 - 旧ファイルは削除せず、移転案内・リダイレクト控えとして残す。
 - `sitemap.xml` には新URLだけを掲載し、旧URLは掲載しない。
 - 内部リンクはすべて新ファイル名へ更新する。
 - 作成日・更新日・旧ファイル名はファイル名ではなく台帳で管理する。
-- `n001.html` は遠江国分寺系の親ページ、`n004.html` は伽藍系の親ページとして扱う。
-
-## 地域分類コード
-
-| コード | slug | 表示名 | 説明 |
-|---|---|---|---|
-| 00 | iwata-common | 磐田共通 | 9地区のいずれか一地区に限定せず、磐田物語全体・旧磐田市全体・文化財総合・史料総合・地名総合などを扱う共通分類。 |
-| 01 | mitsuke | 見付 |  |
-| 02 | nakaizumi | 中泉 |  |
-| 03 | mikuriya | 御厨 |  |
-| 04 | toyoda | 豊田 |  |
-| 05 | nanbu | 南部 |  |
-| 06 | koyo | 向陽 |  |
-| 07 | ryuyo | 竜洋 |  |
-| 08 | fukude | 福田 |  |
-| 09 | toyooka | 豊岡 |  |
+- `m006.html` は見付天神裸祭系の親ページとして扱う。
+- `m012.html` は見付天神・矢奈比賣神社の寺社ページとして扱う。
 
 ## 確認用台帳
 
@@ -111,11 +88,11 @@
 | 52 | `googlea3467099ea123f53.html` | Google Search Console 認証ファイル | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | 削除禁止。分類対象外。 |
 | 53 | `goten-ninomiya-iseki.html` | 御殿・二之宮遺跡 | reading | 中泉 | `01002-nakaizumi.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：中泉分類で確定。 |
 | 54 | `gyokoji-fuji.html` | 行興寺の藤 | reading | 豊田 | `01004-toyoda.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：豊田分類で確定。 |
-| 55 | `hadaka-matsuri-hozon.html` | 見付天神裸祭 保存 | feature_child | 見付 | `mitsuke-tenjin-hadaka-matsuri.html` | confirmed |  |  | `` |  |
-| 56 | `hadaka-matsuri-kigen.html` | 見付天神裸祭 起源 | feature_child | 見付 | `mitsuke-tenjin-hadaka-matsuri.html` | confirmed |  |  | `` |  |
-| 57 | `hadaka-matsuri-shinji.html` | 見付天神裸祭 神事 | feature_child | 見付 | `mitsuke-tenjin-hadaka-matsuri.html` | confirmed |  |  | `` |  |
-| 58 | `hadaka-matsuri-shippei.html` | 見付天神裸祭 しっぺい | feature_child | 見付 | `mitsuke-tenjin-hadaka-matsuri.html` | confirmed |  |  | `` |  |
-| 59 | `hadaka-matsuri.html` | 見付天神裸祭 | feature_parent | 見付 | `01001-mitsuke.html` | confirmed |  |  | `` |  |
+| 55 | `m009.html` | 見付天神裸祭 保存 | feature_child | 見付 | `m006.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri-hozon.html` | リネーム第3弾：旧ファイル hadaka-matsuri-hozon.html から新ファイル m009.html へ変更。旧URLは案内ページとして残す。 |
+| 56 | `m007.html` | 見付天神裸祭 起源 | feature_child | 見付 | `m006.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri-kigen.html` | リネーム第3弾：旧ファイル hadaka-matsuri-kigen.html から新ファイル m007.html へ変更。旧URLは案内ページとして残す。 |
+| 57 | `m008.html` | 見付天神裸祭 神事 | feature_child | 見付 | `m006.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri-shinji.html` | リネーム第3弾：旧ファイル hadaka-matsuri-shinji.html から新ファイル m008.html へ変更。旧URLは案内ページとして残す。 |
+| 58 | `m010.html` | 見付天神裸祭 しっぺい | feature_child | 見付 | `m006.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri-shippei.html` | リネーム第3弾：旧ファイル hadaka-matsuri-shippei.html から新ファイル m010.html へ変更。旧URLは案内ページとして残す。 |
+| 59 | `m006.html` | 見付天神裸祭 特集親ページ | feature_parent | 見付 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri.html` | リネーム第3弾：旧ファイル hadaka-matsuri.html から新ファイル m006.html へ変更。旧URLは案内ページとして残す。 |
 | 60 | `hajimeni.html` | はじめに | about | 磐田共通 | `` | confirmed |  |  | `` |  |
 | 61 | `henkan.html` | 遠州弁変換ツール | tool | 磐田共通 | `` | confirmed |  |  | `` |  |
 | 62 | `hero-mitsuke.jpg` | 見付ヒーロー画像 | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | 見付関連画像。ページではない。 |
@@ -146,8 +123,8 @@
 | 87 | `matsuri-kurashi.html` | 祭りと暮らし | category | 磐田共通 | `` | confirmed |  |  | `` |  |
 | 88 | `mitsuke-shuku-tokaido.html` | 東海道と見付宿 | reading | 見付 | `01001-mitsuke.html` | confirmed |  |  | `` |  |
 | 89 | `mitsuke-shuku.html` | 見付宿 | reading | 見付 | `01001-mitsuke.html` | confirmed |  |  | `` |  |
-| 90 | `mitsuke-tenjin-hadaka-matsuri.html` | 見付天神裸祭 特集 | feature_parent | 見付 | `01001-mitsuke.html` | confirmed |  |  | `` |  |
-| 91 | `mitsuke-tenjin.html` | 見付天神 | reading | 見付 | `01001-mitsuke.html` | confirmed |  |  | `` |  |
+| 90 | `m011.html` | 見付天神裸祭 特集 | feature_child | 見付 | `m006.html` | confirmed |  | 2026-06-25 | `mitsuke-tenjin-hadaka-matsuri.html` | リネーム第3弾：旧ファイル mitsuke-tenjin-hadaka-matsuri.html から新ファイル m011.html へ変更。旧URLは案内ページとして残す。 |
+| 91 | `m012.html` | 見付天神 矢奈比賣神社 | reading | 見付 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `mitsuke-tenjin.html` | リネーム第3弾：旧ファイル mitsuke-tenjin.html から新ファイル m012.html へ変更。旧URLは案内ページとして残す。 |
 | 92 | `mitsuke.html` | 見付 | reading_or_old_entrance | 見付 | `01001-mitsuke.html` | confirmed |  |  | `` |  |
 | 93 | `mura-kara-machi.html` | 村から町へ | reading | 磐田共通 | `` | confirmed |  |  | `` |  |
 | 94 | `nakaizumi-daikan.html` | 中泉代官 | reading | 中泉 | `01002-nakaizumi.html` | confirmed |  |  | `` |  |

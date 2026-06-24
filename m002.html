@@ -3,72 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>古墳から見る磐田 ── 台地と川がつくった、王たちの土地 ｜ 磐田物語</title>
-<meta name="description" content="磐田になぜ古墳が多いのか。天竜川・太田川・磐田原台地・遠州灘という地形と、古代の交通の要衝という条件から、古墳時代の磐田を考える。銚子塚・新豊院山・御厨・明ヶ島の各古墳群を地域研究の視点でたどる。">
-<meta property="og:title" content="古墳から見る磐田 ── 台地と川がつくった、王たちの土地 ｜ 磐田物語">
-<meta property="og:description" content="磐田になぜ古墳が多いのか。地形と交通の視点から、古墳時代の磐田を読みとく。">
-<meta property="og:type" content="article">
-<meta property="og:locale" content="ja_JP">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<title>古い地図に残る家並みと、相続される土地 ― 見付古地図散歩 第2回</title>
+<meta name="description" content="明治42年の見付町戸別明細図には、街道や小路に沿って一軒ずつ世帯名が記されている。受け継がれてきた家並みを入口に、相続した家や空き家を「処分」ではなく「受け継いだもの」として見つめ直す。磐田市見付の相続不動産相談。">
 <style>
-  :root{--kinari:#fffdf7;--cha:#2f7fa3;--brown-deep:#1f4f6f;--matsu:#356f88;--sumi:#22303a;--usuzumi:#5b6b74;--waku:#d8e8ef;--paper:#fffdf7;}
-  *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:"Zen Kaku Gothic New",sans-serif;color:var(--sumi);background:var(--kinari);line-height:1.95;font-size:17px;-webkit-font-smoothing:antialiased;}
-  a{color:var(--cha);text-decoration:none;}
-  a:hover{text-decoration:underline;}
-  .mincho{font-family:"Shippori Mincho",serif;}
-  header.site{background:var(--matsu);color:#fff;padding:0;}
-  .site-inner{max-width:880px;margin:0 auto;padding:18px 22px;}
-  .site-title{font-family:"Shippori Mincho",serif;font-weight:600;font-size:19px;color:#fff;display:block;letter-spacing:.04em;}
-  .site-title small{display:block;font-size:12px;font-weight:400;opacity:.82;margin-top:3px;letter-spacing:.02em;}
-  nav.global{background:#2c5566;}
-  nav.global ul{max-width:880px;margin:0 auto;padding:0 22px;list-style:none;display:flex;flex-wrap:wrap;gap:4px 26px;}
-  nav.global a{color:#eef6fb;display:inline-block;padding:11px 0;font-size:14px;letter-spacing:.03em;}
-  nav.global a:hover{color:#fff;text-decoration:none;}
-  main{max-width:760px;margin:0 auto;padding:0 22px;}
-  .crumb{font-size:13px;color:var(--usuzumi);padding:20px 0 6px;}
-  .crumb a{color:var(--usuzumi);}
-  .cat{display:inline-block;font-size:13px;color:var(--matsu);border-left:3px solid var(--cha);padding-left:9px;margin:18px 0 10px;letter-spacing:.04em;}
-  h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:28px;line-height:1.5;color:var(--sumi);margin:6px 0 26px;letter-spacing:.02em;}
-  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#3a4750;margin-bottom:30px;}
-  figure{margin:32px 0;}
-  .fig-box{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:26px 20px;text-align:center;}
-  figcaption{font-size:13.5px;color:var(--usuzumi);margin-top:12px;line-height:1.8;text-align:left;}
-  svg{max-width:100%;height:auto;}
-  .svg-label{fill:var(--sumi);}.svg-sub{fill:var(--usuzumi);}
-  h2{font-family:"Shippori Mincho",serif;font-weight:600;font-size:22px;color:var(--matsu);margin:40px 0 16px;padding-bottom:9px;border-bottom:2px solid var(--waku);letter-spacing:.02em;}
-  p{margin:0 0 20px;}
-  .note{background:#f4fafc;border:1px solid var(--waku);border-left:3px solid var(--cha);border-radius:0 4px 4px 0;padding:16px 20px;font-size:14.5px;color:#3a4750;margin:24px 0;}
-  .note strong{color:var(--brown-deep);}
-  h3{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--sumi);margin:30px 0 12px;}
-  .sourcebox{background:#eef6fb;border:1px solid var(--waku);border-radius:4px;padding:20px 24px;margin:30px 0;font-size:14px;color:#3a4750;}
-  .sourcebox h3{font-family:"Shippori Mincho",serif;font-size:16px;color:var(--matsu);margin:0 0 10px;}
-  .sourcebox ul{margin:0 0 12px 1.3em;}
-  .sourcebox li{margin-bottom:5px;line-height:1.7;}
-  .sourcebox .disclaimer{font-size:13px;color:var(--usuzumi);border-top:1px dashed var(--waku);padding-top:12px;margin-top:4px;}
-  .related{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 8px;}
-  .related a{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:10px 15px;font-size:14px;color:var(--matsu);}
-  .related a:hover{background:#f4fafc;text-decoration:none;}
-  .pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 10px;flex-wrap:wrap;}
-  .pager a{font-size:14px;}
-  footer.site{background:var(--matsu);color:#eee;margin-top:54px;}
-  .foot-inner{max-width:760px;margin:0 auto;padding:34px 22px;}
-  .foot-inner .mincho{font-size:18px;color:#fff;display:block;margin-bottom:12px;}
-  .foot-inner p{font-size:13.5px;color:#e9f3fa;line-height:1.85;margin-bottom:18px;}
-  .foot-inner h4{font-size:13px;color:#cfe2ec;font-weight:500;margin:16px 0 8px;letter-spacing:.05em;}
-  .foot-links{list-style:none;}
-  .foot-links li{margin-bottom:7px;font-size:14px;}
-  .foot-links a{color:#eef6fb;}
-  .copy{font-size:12px;color:#a9c6d2;margin-top:22px;}
-  @media(max-width:600px){h1{font-size:22px;}body{font-size:16px;}h2{font-size:19px;}}
+  :root{--ink:#22303a;--ink-soft:#5b6b74;--paper:#fffdf7;--paper-2:#f4fafc;--line:#d8e8ef;--accent:#1f4f6f;--accent-soft:#e9f3fa;--seal:#9b3b2f;--maxw:880px;}
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
+  body{margin:0;color:var(--ink);background:var(--paper);font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;line-height:1.95;font-size:17px;letter-spacing:.02em;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .seriesnav{background:#eaf4fa;border-bottom:1px solid var(--line);font-family:sans-serif;font-size:13px}
+  .seriesnav .wrap{display:flex;flex-wrap:wrap;gap:6px 16px;padding:11px 22px;align-items:center}
+  .seriesnav a{color:var(--accent);text-decoration:none}
+  .seriesnav a:hover{text-decoration:underline}
+  .seriesnav .now{color:var(--ink-soft)}
+  header.hero{background:linear-gradient(180deg,#eaf4fa 0%,var(--paper) 100%);border-bottom:1px solid var(--line);padding:46px 0 34px;}
+  .series-tag{display:inline-block;font-size:13px;letter-spacing:.32em;color:var(--accent);border:1px solid var(--accent);border-radius:2px;padding:5px 14px;margin-bottom:20px;}
+  header.hero h1{font-size:28px;line-height:1.5;margin:0 0 14px;font-weight:600;}
+  header.hero .sub{font-size:16px;color:var(--ink-soft);margin:0}
+  .cover-fig{margin:28px 0 0;text-align:center}
+  .cover-fig img{max-width:100%;border:1px solid var(--line);box-shadow:0 8px 26px rgba(60,45,25,.15);cursor:zoom-in;}
+  .cover-fig figcaption{font-size:13px;color:var(--ink-soft);margin-top:10px}
+  main{padding:8px 0 10px}
+  .lead{background:var(--paper-2);border:1px solid var(--line);border-left:4px solid var(--accent);padding:22px 26px;margin:36px 0;font-size:16.5px;color:#22303a;}
+  h2{font-size:21px;margin:50px 0 8px;padding:0 0 0 14px;border-left:6px solid var(--accent);line-height:1.5;}
+  h2 .en{display:block;font-size:11px;letter-spacing:.28em;color:var(--accent);font-family:sans-serif;margin-bottom:4px}
+  p{margin:14px 0}
+  figure.plate{margin:30px 0;text-align:center}
+  figure.plate img{max-width:100%;border:1px solid var(--line);box-shadow:0 6px 20px rgba(60,45,25,.12);cursor:zoom-in;}
+  figure.plate figcaption{font-size:13px;color:var(--ink-soft);margin-top:9px;line-height:1.6}
+  .pull{font-size:19px;color:var(--accent);text-align:center;margin:34px auto;max-width:660px;line-height:1.8;}
+  .cta{background:var(--accent);color:#fff;border-radius:4px;padding:34px 30px;margin:46px 0 24px;text-align:center;}
+  .cta p{color:#eaf4fa;margin:8px auto 20px;max-width:620px}
+  .cta .big{font-size:20px;color:#fff;margin:0 0 6px}
+  .btn{display:inline-block;margin:6px;padding:13px 26px;border-radius:3px;background:#fff;color:var(--accent);text-decoration:none;font-size:15px;border:1px solid #fff;}
+  .btn.ghost{background:transparent;color:#fff}
+  .nextprev{display:flex;justify-content:space-between;gap:14px;margin:30px 0 0;font-family:sans-serif;font-size:14px}
+  .nextprev a{flex:1;border:1px solid var(--line);border-radius:4px;padding:16px 18px;text-decoration:none;color:var(--ink);background:var(--paper-2)}
+  .nextprev a:hover{border-color:var(--accent)}
+  .nextprev small{display:block;color:var(--accent);font-size:12px;margin-bottom:4px}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:28px 0 60px;color:var(--ink-soft);font-size:13.5px}
+  footer h3{font-size:14px;color:var(--ink);margin:0 0 8px;letter-spacing:.1em}
+  footer p{margin:7px 0}
+  #lb{position:fixed;inset:0;background:rgba(24,18,12,.93);display:none;z-index:99;cursor:zoom-out;padding:24px}
+  #lb.on{display:flex;flex-direction:column;align-items:center;justify-content:center}
+  #lb img{max-width:96%;max-height:84%;object-fit:contain;box-shadow:0 0 40px rgba(0,0,0,.6)}
+  #lb .cap{color:#eef6fb;font-size:14px;margin-top:14px;text-align:center;max-width:90%}
+  #lb .hint{color:#9bb6c4;font-size:12px;margin-top:6px}
+  @media(max-width:640px){header.hero h1{font-size:22px} body{font-size:16px} .nextprev{flex-direction:column}}
 </style>
-  <link rel="canonical" href="https://iwata-monogatari.pages.dev/kofun.html">
+  <link rel="canonical" href="https://iwata-monogatari.pages.dev/m002.html">
 <style id="reno-blocks">
 .article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
 .article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
@@ -88,7 +70,6 @@
   <link rel="stylesheet" href="/assets/css/site-header.css">
 </head>
 <body>
-
 <!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
 <header class="gh-site">
   <div class="gh-bar">
@@ -106,108 +87,86 @@
   </div>
 </header>
 
+<nav class="seriesnav"><div class="wrap">
+  <span>見付古地図散歩｜</span>
+  <a href="m001.html">第1回</a>
+  <span class="now">第2回 相続される土地</span>
+  <a href="m003.html">第3回</a>
+  <a href="m004.html">第4回</a>
+  <a href="m005.html">第5回</a>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="series-tag">見付古地図散歩 ＞ 第二回</span>
+    <h1>古い地図に残る家並みと、<br>相続される土地</h1>
+    <p class="sub">一軒ずつ記された名前は、長く受け継がれてきた家のしるしである。</p>
+    <figure class="cover-fig">
+      <img src="images/11_higashizaka.jpg" data-cap="「東坂」 ― 街道沿いに、一軒ずつ世帯名が記されている。" alt="見付町戸別明細図 東坂">
+      <figcaption>『見付町戸別明細圖』より「東坂」 ― 街道に沿って一軒ずつ家が書き込まれている（佐口行正氏 所蔵）</figcaption>
+    </figure>
+  </div>
+</header>
+
 <main>
-  <div class="crumb"><a href="https://iwata-monogatari.pages.dev/">磐田物語</a> ／ <a href="https://iwata-monogatari.pages.dev/bunkazai.html">文化財</a> ／ 古墳から見る磐田</div>
-
-  <span class="cat">文化財 ｜ 古墳と地形の記憶</span>
-
-  <h1>古墳から見る磐田<br>── 台地と川がつくった、王たちの土地</h1>
+<div class="wrap">
 
   <div class="lead">
-    磐田には、九百基を超える古墳があるといわれる。これは、けっして当たり前の数ではない。なぜ、この土地に、これほど多くの古墳が築かれたのか。その問いに答えるには、文化財そのものよりも、足もとの「地形」を見る必要がある。台地、川、海――磐田の古墳は、この土地のかたちが生んだものなのである。
+    明治四十二年の『見付町戸別明細図』がほかの地図と決定的に違うのは、「戸別」――つまり一軒ずつ、世帯ごとに名前が記されている点です。街道や小路に沿ってびっしりと並ぶその名前は、当時そこに暮らし、家を守ってきた人々のしるしです。相続や空き家のご相談をお受けするとき、私たちが見ているのも、この「受け継がれてきた家」という時間の重なりです。
   </div>
 
-  <h2>なぜ、磐田に古墳が多いのか</h2>
+  <h2><span class="en">HOUSE BY HOUSE</span>「戸別」── 一軒ずつ記された家並み</h2>
+  <p>地図を開くと、まず目に飛び込んでくるのは、道に沿ってびっしりと並ぶ手書きの名前です。赤い線で引かれた街道や小路の両側に、家が一軒ずつ、世帯ごとに記されています。間口の狭い家が肩を寄せ合うように連なり、その奥に敷地がのびていく。宿場町・見付の、人の密度の高い暮らしぶりが、そのまま紙の上に写し取られています。</p>
+  <p>一軒ずつの名前を眺めていると、ここが単なる土地の集まりではなく、家と家、人と人が重なり合って成り立っていた町だったことが伝わってきます。今に残る地割や町名の多くは、この時代の暮らしの単位を、かたちを変えながら受け継いだものです。</p>
 
-  <p>古墳は、どこにでも築けるものではない。大きな墓をつくるには、まず、それを支える豊かな土地と、大勢の人を動かす力をもった有力者が必要である。さらに、墓を築くのにふさわしい地形――水につかりにくく、見晴らしのよい、安定した土地が要る。磐田には、その条件がそろっていた。鍵をにぎるのは、「磐田原台地（いわたはらだいち）」である。</p>
+  <h2><span class="en">A MARK OF SUCCESSION</span>名前は、受け継がれてきたしるし</h2>
+  <p>戸別に記された名前は、その家がそこに「在った」という記録です。そして多くの家は、その後も世代を越えて住み継がれ、相続され、今へとつながっています。百年以上前の地図に記された区画が、現在のあなたの土地につながっている――見付では、それは決して珍しいことではありません。</p>
+  <p>だからこそ、相続した家や土地に向き合うとき、それを単なる「不動産」として数字だけで捉えてしまうと、どこか落ち着かない気持ちが残ります。そこには、長く続いてきた家の歴史があるからです。</p>
 
-  <p>磐田原台地は、天竜川と太田川にはさまれた、なだらかな台地である。周囲の低地よりも一段高く、水害を受けにくい。そして、その縁（へり）に立てば、天竜川の流れや、はるか遠州灘までを見わたすことができる。古代の有力者にとって、ここは墓を築くのに理想的な場所だった。高くそびえる墓は、自らの力を、生きている人々にも、川を行き交う人々にも、見せつけることができたからである。磐田の主要な古墳が、台地の縁に集まっているのは、偶然ではない。</p>
+  <p class="pull">そこにあるのは、土地建物ではなく、受け継がれてきた家の歴史である。</p>
 
-  <figure>
-    <div class="fig-box">
-      <svg viewBox="0 0 520 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="磐田原台地と川と古墳の位置関係を示す図">
-        <rect x="0" y="0" width="520" height="240" fill="#fffdf7"/>
-        <text x="260" y="26" text-anchor="middle" font-size="13" class="svg-label">地形と古墳の位置関係（模式図）</text>
-        <!-- 天竜川 -->
-        <path d="M70 40 Q88 120 60 210" fill="none" stroke="#acc4d4" stroke-width="10" stroke-linecap="round"/>
-        <text x="55" y="34" text-anchor="middle" font-size="10" fill="#5a7a8c">天竜川</text>
-        <!-- 太田川 -->
-        <path d="M450 45 Q435 130 460 215" fill="none" stroke="#acc4d4" stroke-width="7" stroke-linecap="round"/>
-        <text x="455" y="38" text-anchor="middle" font-size="10" fill="#5a7a8c">太田川</text>
-        <!-- 台地 -->
-        <ellipse cx="260" cy="120" rx="150" ry="68" fill="#d8e8ef"/>
-        <text x="260" y="100" text-anchor="middle" font-size="13" fill="#1f4f6f">磐田原台地</text>
-        <text x="260" y="120" text-anchor="middle" font-size="10" class="svg-sub">周囲より一段高い・水害に強い</text>
-        <!-- 古墳（台地の縁） -->
-        <g fill="#356f88">
-          <circle cx="135" cy="95" r="7"/><text x="135" y="82" text-anchor="middle" font-size="9" fill="#356f88">銚子塚（西縁）</text>
-          <circle cx="380" cy="100" r="6"/><text x="392" y="92" text-anchor="middle" font-size="9" fill="#356f88">新豊院山（東）</text>
-          <circle cx="300" cy="175" r="6"/><text x="300" y="195" text-anchor="middle" font-size="9" fill="#356f88">御厨（南・平野部）</text>
-        </g>
-        <!-- 海 -->
-        <rect x="0" y="222" width="520" height="18" fill="#cfe0ea"/>
-        <text x="260" y="236" text-anchor="middle" font-size="10" fill="#5a7a8c">遠州灘（南）</text>
-      </svg>
-      <figcaption>磐田原台地は天竜川と太田川にはさまれ、南は遠州灘に開ける。主要な古墳は、見晴らしのよい台地の縁に築かれた。御厨古墳群のように、平野部・河川沿いに営まれた古墳もある。（地形と分布をもとにした模式図。正確な位置や縮尺を示すものではない）</figcaption>
-    </div>
+  <h2><span class="en">NOT JUST DISPOSAL</span>相続した家は、「処分するもの」ではない</h2>
+  <p>相続した家や空き家の話になると、つい「どう処分するか」という言葉で語られがちです。けれど、私たちはそれを少し違う角度から見ています。手放すかどうかを考える前に、まずその家がどんな経緯で受け継がれてきたのかを整理する。それは、過去を懐かしむためではなく、これからをきちんと決めるための準備です。</p>
+  <p>来歴を整理しておくと、選択肢が見えやすくなります。売る、貸す、活用する、今は動かさない――どれを選ぶにしても、家の背景を知っているかどうかで、判断の納得感がまるで変わってきます。</p>
+
+  <figure class="plate">
+    <img src="images/07_ippommatsu.jpg" data-cap="「一本松・川原」 ― 街道の西の入口にあたる一帯。家並みが連なる。" alt="見付町戸別明細図 一本松・川原">
+    <figcaption>「一本松・川原」のシート。街道の西の入口にあたる一帯にも、一軒ずつの暮らしが細かく記されています。</figcaption>
   </figure>
 
-  <h2>川がもたらした、力と交通</h2>
+  <h2><span class="en">START BY ORGANIZING</span>まずは、家の来歴を整理することから</h2>
+  <p>見付の古い家、相続した土地、空き家について、すぐに売る・売らないを決める必要はありません。まずは、その土地がどんな背景を持ち、どう受け継がれてきたのかを整理するところから始めれば十分です。名義はどうなっているか、いつ頃からの家か、どんな経緯で今に至るのか。一つずつほどいていくと、進むべき方向が自然と見えてきます。</p>
 
-  <p>台地の高さだけが、古墳を生んだのではない。もうひとつ大切なのが、「川」である。天竜川と太田川は、ときに洪水をもたらす脅威であると同時に、豊かな恵みと、交通の道でもあった。川は、上流の山と下流の海をつなぐ大動脈である。木材や産物が川を下り、人と情報が行き交う。その流れを押さえた者が、富と力を握った。</p>
-
-  <p>とりわけ、天竜川の東岸という磐田の位置は重要だった。東西を結ぶ陸の道（のちの東海道）と、南北に通じる川の道とが、ここで交わる。この交通の要衝を支配した有力者が、台地の縁に大きな墓を築いた。銚子塚古墳の被葬者が、大和の中央政権とつながる銅鏡を持っていたことも、この地が交通を通じて広い世界とつながっていたことを物語っている。古墳の大きさは、その人物が握った交通と富の大きさの、いわば目に見えるかたちなのである。</p>
-
-  <h2>四つの古墳群が語ること</h2>
-
-  <p>磐田の国指定の古墳関係文化財を、地形の視点から並べてみると、それぞれの立地が、別々のことを語っているのがわかる。</p>
-
-  <h3>銚子塚古墳・小銚子塚古墳（寺谷／台地の西縁）</h3>
-  <p>磐田原台地の西の縁、天竜川を見おろす位置にある。県内第3位という規模は、天竜川の交通を押さえた首長の、抜きんでた力を示す。台地の縁という、最も見晴らしのきく場所が選ばれている。</p>
-
-  <h3>新豊院山古墳群（向笠竹之内／台地の東）</h3>
-  <p>台地の東側に位置する古墳群。西の銚子塚とは別の地点に有力者の墓があることは、台地の上に、いくつかの勢力が並び立っていた可能性を示す。</p>
-
-  <h3>御厨古墳群（新貝・鎌田／南の平野部）</h3>
-  <p>台地ではなく、南の平野部・太田川流域に分布する。これは、古墳が台地の上だけのものではなく、川沿いの低地にも、暮らしと有力者がいたことを示している。「御厨」という地名も、この土地の古い役割をしのばせる。</p>
-
-  <h3>明ヶ島古墳群出土土製品（見付）</h3>
-  <p>こちらは墳丘そのものではなく、古墳から出土した「もの」が文化財である。人や動物をかたどった土製品は、古墳の上で行われた祭りのありさまを伝える。墓は、ただの埋葬の場ではなく、祈りと儀式の場でもあったのだ。</p>
-
-  <div class="note">
-    <strong>現地を歩くときに。</strong>古墳は、今も土地の所有者や地域の人々によって守られている、大切な文化財である。多くは普通の住宅地や農地のなかにある。見学の際は、私有地に立ち入らない、墳丘を傷つけない、地域の方の暮らしを妨げないといった配慮を忘れずにいたい。正確な所在地や見学の可否は、磐田市文化財課や公式情報で確認するのが確実である。
+  <div class="cta">
+    <p class="big">急いで決めなくていい。まず、整理することから。</p>
+    <p>富士ヶ丘サービスでは、磐田市見付周辺の相続不動産・空き家・古い住宅のご相談を承っています。すぐに売るかどうか決まっていなくても構いません。まずは、家と土地の状況を一緒に整理するところからお手伝いします。</p>
   </div>
 
-  <h2>古墳は、地形を読む手がかり</h2>
-
-  <p>こうして見てくると、古墳は、ただ「古い墓」なのではないことがわかる。それは、その土地がどういう地形で、どこが安全で、どこが交通の要だったのかを教えてくれる、地形の証言者なのである。古墳のある場所を地図にしるしていくと、おのずと、古代の人々が「住みやすい」「力を示せる」と考えた土地が、浮かびあがってくる。</p>
-
-  <p>そして興味ぶかいことに、その古墳が選んだ高台や要衝は、のちの時代にも、しばしば重要な土地であり続けた。古墳時代の有力者が見晴らしのよい台地を選んだように、奈良時代の人々はそこに国府や国分寺を置き、近世の人々は街道と宿場を通した。土地のもつ条件は、時代を越えて、人を引きつける。古墳は、その最初の選択の跡なのである。次の世代へ残したいのは、こうして「足もとの地形から、まちの歴史を読む」というまなざしなのだと思う。</p>
-
-  <div class="sourcebox">
-    <h3>主な参考資料</h3>
-    <ul>
-      <li>磐田市公式ウェブサイト「国指定文化財」（銚子塚古墳・新豊院山古墳群・御厨古墳群・明ヶ島古墳群出土土製品の指定情報）</li>
-      <li>磐田物語「銚子塚古墳と、遠江を治めた王の眠り」（関連読みもの）</li>
-    </ul>
-    <p class="disclaimer">本ページの古墳名・指定区分・所在地などの事実情報は、磐田市公式ウェブサイトの公開情報にもとづく。地形と古墳の関係についての考察は、磐田物語編集部による独自の記述であり、図は位置関係を示す模式図である。正確な所在地・見学情報は、磐田市公式情報を確認されたい。出典：磐田市公式ウェブサイト。</p>
+  <div class="nextprev">
+    <a href="m001.html"><small>&laquo; 第1回</small>見付の土地と記憶</a>
+    <a href="m003.html"><small>第3回 &raquo;</small>古い町の土地を売るとき、なぜ調査が大切なのか</a>
   </div>
 
-  <div class="pager">
-    <a href="https://iwata-monogatari.pages.dev/kuni-shitei.html">← 国指定文化財一覧へ</a>
-    <a href="https://iwata-monogatari.pages.dev/bunkazai.html">文化財トップへ →</a>
-  </div>
-
-  <h2>関連する読みもの</h2>
-  <div class="related">
-    <a href="https://iwata-monogatari.pages.dev/choshizuka-kofun.html">銚子塚古墳と、遠江を治めた王の眠り</a>
-    <a href="https://iwata-monogatari.pages.dev/n016.html">遠江国分寺跡と、古代磐田のはじまり</a>
-    <a href="https://iwata-monogatari.pages.dev/chizu.html">磐田タイムトラベル地図</a>
-  </div>
+</div>
 </main>
 
 
 
+
+
+
+<div id="lb"><img src="" alt=""><div class="cap"></div><div class="hint">クリックで閉じる</div></div>
+
+<script>
+(function(){
+  var lb=document.getElementById('lb'),lbi=lb.querySelector('img'),lbc=lb.querySelector('.cap');
+  function open(src,cap){lbi.src=src;lbc.textContent=cap||'';lb.classList.add('on');document.body.style.overflow='hidden';}
+  function close(){lb.classList.remove('on');lbi.src='';document.body.style.overflow='';}
+  document.addEventListener('click',function(e){var t=e.target;if(t.tagName==='IMG'&&t.dataset.cap&&!t.closest('#lb')){open(t.getAttribute('src'),t.dataset.cap);}});
+  lb.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
 <section class="article-policy">
   <h2>この記事について</h2>
   <dl>

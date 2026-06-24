@@ -3,286 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>加茂・寺谷の歴史 | 遠江の信仰と農業が育んだ地 | 磐田物語</title>
-<meta name="description" content="加茂・寺谷は遠江有数の農業地帯。古代信仰から近世農業開発、近代化まで。旧豊田町の地域変遷をたどります。磐田市の地域史探訪。">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
+<title>見付の土地と記憶 ― 明治42年の見付町戸別明細図から読む、家・道・暮らし</title>
+<meta name="description" content="明治42年1月に調査された『見付町戸別明細図』を読み解く。旧東海道の宿場町・見付に刻まれた家並み、小路、寺社、町の中枢。土地の記憶から、相続・空き家・古い家の扱いを考える。">
 <style>
-:root {
-  --paper: #fffdf7;
-  --paper-2: #e9f3fa;
-  --card: #fffdf7;
-  --ink: #22303a;
-  --ink-soft: #4d4a44;
-  --muted: #7c8b93;
-  --line: #d8e8ef;
-  --indigo: #2e4859;
-  --indigo-deep: #21323d;
-  --akane: #9c4334;
-  --gold: #2f7fa3;
-  --serif: "Shippori Mincho", "Noto Serif JP", serif;
-  --sans: "Noto Sans JP", system-ui, sans-serif;
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  font-family: var(--sans);
-  color: var(--ink);
-  background: var(--paper);
-  line-height: 1.9;
-  font-size: 16px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-a {
-  color: var(--indigo);
-  text-decoration: none;
-  transition: 0.15s;
-}
-a:hover {
-  color: var(--akane);
-}
-.wrap {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 22px;
-}
-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(245, 239, 226, 0.93);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--line);
-}
-.hdr {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 56px;
-}
-.logo {
-  font-family: var(--serif);
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--indigo-deep);
-}
-.nav-links {
-  display: flex;
-  gap: 20px;
-  font-size: 0.85rem;
-}
-.nav-links a {
-  color: var(--ink-soft);
-  padding: 4px 0;
-}
-.nav-links a:hover {
-  color: var(--akane);
-}
-.breadcrumb {
-  margin-top: 12px;
-  font-size: 0.8rem;
-  color: var(--muted);
-  padding: 0 22px;
-}
-.hero {
-  padding: 60px 0;
-  background: linear-gradient(180deg, rgba(245, 239, 226, 0.4), var(--paper-2));
-  border-bottom: 1px solid var(--line);
-}
-.hero h1 {
-  font-family: var(--serif);
-  font-weight: 800;
-  color: var(--indigo-deep);
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
-  line-height: 1.2;
-  margin-bottom: 14px;
-}
-.hero .sub {
-  font-family: var(--serif);
-  font-weight: 600;
-  color: var(--akane);
-  font-size: 1rem;
-  margin-bottom: 20px;
-  letter-spacing: 0.04em;
-}
-.hero p {
-  color: var(--ink-soft);
-  max-width: 640px;
-  line-height: 1.9;
-  margin-bottom: 8px;
-}
-.section {
-  padding: 68px 0;
-  border-bottom: 1px solid var(--line);
-}
-.section.alt {
-  background: var(--paper-2);
-}
-.sec-title {
-  font-family: var(--serif);
-  font-weight: 700;
-  color: var(--indigo-deep);
-  font-size: clamp(1.6rem, 3vw, 2.1rem);
-  margin-bottom: 12px;
-}
-.sec-head {
-  margin-bottom: 34px;
-}
-.sec-head .kicker {
-  display: block;
-  font-size: 0.72rem;
-  letter-spacing: 0.3em;
-  color: var(--gold);
-  font-weight: 700;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-}
-.two-col {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 48px;
-  align-items: flex-start;
-}
-.two-col-img {
-  position: relative;
-}
-.two-col-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(40, 33, 20, 0.1);
-  margin-bottom: 12px;
-  display: block;
-}
-.two-col-cap {
-  font-size: 0.84rem;
-  color: var(--muted);
-  line-height: 1.7;
-}
-.two-col-text h3 {
-  font-family: var(--serif);
-  font-weight: 700;
-  color: var(--ink);
-  font-size: 1.32rem;
-  margin-bottom: 16px;
-}
-.two-col-text p {
-  color: var(--ink-soft);
-  margin-bottom: 14px;
-  line-height: 1.9;
-}
-.related {
-  padding: 44px 0;
-}
-.rel-h {
-  font-family: var(--serif);
-  font-weight: 700;
-  color: var(--indigo-deep);
-  font-size: 1.08rem;
-  margin-bottom: 14px;
-}
-.rel-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-.rel-links a {
-  display: inline-block;
-  background: var(--card);
-  border: 1px solid var(--line);
-  padding: 9px 18px;
-  border-radius: 8px;
-  font-size: 0.88rem;
-  color: var(--indigo);
-  font-weight: 600;
-  transition: 0.2s;
-}
-.rel-links a:hover {
-  background: var(--indigo);
-  color: #fff;
-}
-footer {
-  background: #1a2126;
-  color: #cfe2ec;
-  padding: 46px 0 28px;
-  font-size: 0.88rem;
-}
-.foot-top {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  margin-bottom: 32px;
-}
-.foot-brand {
-  font-family: var(--serif);
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #f3ede0;
-  margin-bottom: 8px;
-}
-.foot-brand p {
-  font-family: var(--sans);
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #8aa0ab;
-  margin-top: 8px;
-  max-width: 380px;
-  line-height: 1.8;
-}
-.foot-nav {
-  display: flex;
-  gap: 18px;
-}
-.foot-nav a {
-  color: #cfe2ec;
-  transition: 0.2s;
-}
-.foot-nav a:hover {
-  color: #fff;
-}
-.copy {
-  border-top: 1px solid #2c343a;
-  margin-top: 28px;
-  padding-top: 16px;
-  color: #857d6f;
-  font-size: 0.75rem;
-}
-@media (max-width: 900px) {
-  .section {
-    padding: 48px 0;
+  :root{
+    --ink:#22303a; --ink-soft:#5b6b74; --paper:#fffdf7; --paper-2:#f4fafc;
+    --line:#d8e8ef; --accent:#1f4f6f; --accent-soft:#e9f3fa; --seal:#9b3b2f;
+    --maxw:880px;
   }
-  .two-col {
-    grid-template-columns: 1fr;
-    gap: 32px;
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; color:var(--ink);
+    background:var(--paper);
+    font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;
+    line-height:1.95; font-size:17px; letter-spacing:.02em;
   }
-  .two-col-img {
-    order: -1;
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
+  /* ---- hero ---- */
+  header.hero{
+    background:linear-gradient(180deg,#eaf4fa 0%, var(--paper) 100%);
+    border-bottom:1px solid var(--line);
+    padding:54px 0 38px;
   }
-}
-@media (max-width: 620px) {
-  .nav-links {
-    display: none;
+  .series-tag{
+    display:inline-block; font-size:13px; letter-spacing:.32em;
+    color:var(--accent); border:1px solid var(--accent);
+    border-radius:2px; padding:5px 14px; margin-bottom:22px;
   }
-  .hero h1 {
-    font-size: clamp(1.8rem, 4vw, 2.4rem);
+  header.hero h1{
+    font-size:30px; line-height:1.5; margin:0 0 14px; font-weight:600;
   }
-  .section {
-    padding: 38px 0;
+  header.hero .sub{font-size:16px; color:var(--ink-soft); margin:0}
+  .cover-fig{margin:30px 0 0; text-align:center}
+  .cover-fig img{
+    max-width:100%; width:520px; border:1px solid var(--line);
+    box-shadow:0 10px 30px rgba(60,45,25,.16); cursor:zoom-in;
   }
-  .foot-top {
-    flex-direction: column;
+  .cover-fig figcaption{font-size:13px; color:var(--ink-soft); margin-top:10px}
+  /* ---- body ---- */
+  main{padding:8px 0 10px}
+  .lead{
+    background:var(--paper-2); border:1px solid var(--line);
+    border-left:4px solid var(--accent);
+    padding:22px 26px; margin:38px 0; font-size:16.5px; color:#22303a;
   }
-}
+  h2{
+    font-size:21px; margin:52px 0 8px; padding:0 0 0 14px;
+    border-left:6px solid var(--accent); line-height:1.5;
+  }
+  h2 .en{display:block; font-size:11px; letter-spacing:.28em; color:var(--accent); font-family:sans-serif; margin-bottom:4px}
+  p{margin:14px 0}
+  figure.plate{margin:30px 0; text-align:center}
+  figure.plate img{
+    max-width:100%; border:1px solid var(--line);
+    box-shadow:0 6px 20px rgba(60,45,25,.12); cursor:zoom-in;
+  }
+  figure.plate figcaption{font-size:13px; color:var(--ink-soft); margin-top:9px; line-height:1.6}
+  .pull{
+    font-size:19px; color:var(--accent); text-align:center;
+    margin:34px auto; max-width:640px; line-height:1.8;
+  }
+  /* ---- gallery ---- */
+  .gallery-intro{margin-top:48px}
+  .grid{
+    display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+    gap:12px; margin:24px 0 8px;
+  }
+  .cell{cursor:zoom-in; background:#fff; border:1px solid var(--line); padding:6px; text-align:center}
+  .cell img{width:100%; height:128px; object-fit:cover; display:block}
+  .cell span{display:block; font-size:12px; color:var(--ink-soft); margin-top:6px; line-height:1.4}
+  .note-small{font-size:12.5px; color:var(--ink-soft)}
+  /* ---- series ---- */
+  .series{background:var(--paper-2); border:1px solid var(--line); padding:8px 26px 26px; margin:40px 0}
+  .series ol{list-style:none; counter-reset:s; padding:0; margin:14px 0 0}
+  .series li{counter-increment:s; padding:16px 0 16px 52px; position:relative; border-top:1px dashed var(--line)}
+  .series li:first-child{border-top:none}
+  .series li::before{
+    content:counter(s); position:absolute; left:0; top:16px;
+    width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff;
+    font-family:sans-serif; font-size:15px; display:flex; align-items:center; justify-content:center;
+  }
+  .series li b{display:block; font-size:16.5px; margin-bottom:3px}
+  .series li small{color:var(--ink-soft); font-size:13.5px; line-height:1.6}
+  /* ---- cta ---- */
+  .cta{
+    background:var(--accent); color:#fff; border-radius:4px;
+    padding:34px 30px; margin:46px 0 30px; text-align:center;
+  }
+  .cta p{color:#eaf4fa; margin:8px auto 20px; max-width:620px}
+  .cta .big{font-size:20px; color:#fff; margin:0 0 6px}
+  .btn{
+    display:inline-block; margin:6px; padding:13px 26px; border-radius:3px;
+    background:#fff; color:var(--accent); text-decoration:none; font-size:15px;
+    border:1px solid #fff;
+  }
+  .btn.ghost{background:transparent; color:#fff}
+  /* ---- footer ---- */
+  footer{border-top:1px solid var(--line); margin-top:40px; padding:28px 0 60px; color:var(--ink-soft); font-size:13.5px}
+  footer h3{font-size:14px; color:var(--ink); margin:0 0 8px; letter-spacing:.1em}
+  footer p{margin:7px 0}
+  /* ---- lightbox ---- */
+  #lb{position:fixed; inset:0; background:rgba(24,18,12,.93); display:none; z-index:99; cursor:zoom-out; padding:24px}
+  #lb.on{display:flex; flex-direction:column; align-items:center; justify-content:center}
+  #lb img{max-width:96%; max-height:84%; object-fit:contain; box-shadow:0 0 40px rgba(0,0,0,.6)}
+  #lb .cap{color:#eef6fb; font-size:14px; margin-top:14px; text-align:center; max-width:90%}
+  #lb .hint{color:#9bb6c4; font-size:12px; margin-top:6px}
+  @media(max-width:640px){
+    header.hero h1{font-size:23px} body{font-size:16px}
+    .cell img{height:104px}
+  }
 </style>
-  <link rel="canonical" href="https://iwata-monogatari.pages.dev/kamo.html">
+  <link rel="canonical" href="https://iwata-monogatari.pages.dev/m001.html">
 <style id="reno-blocks">
 .article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
 .article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
@@ -318,74 +150,125 @@ footer {
     </nav>
   </div>
 </header>
-<div class="gh-breadcrumb">
-    <a href="/">磐田物語</a> ／ <a href="kyutoyoda.html">旧豊田町の歴史</a> ／ <strong>加茂・寺谷</strong>
-  </div>
 
-<section class="hero">
+<nav style="background:#eaf4fa;border-bottom:1px solid var(--line);font-family:sans-serif;font-size:13px">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:11px 22px;align-items:center">
+    <span>見付古地図散歩｜</span>
+    <span style="color:var(--ink-soft)">第1回 見付の土地と記憶</span>
+    <a href="m002.html" style="color:var(--accent);text-decoration:none">第2回</a>
+    <a href="m003.html" style="color:var(--accent);text-decoration:none">第3回</a>
+    <a href="m004.html" style="color:var(--accent);text-decoration:none">第4回</a>
+    <a href="m005.html" style="color:var(--accent);text-decoration:none">第5回</a>
+  </div>
+</nav>
+
+<header class="hero">
   <div class="wrap">
-    <span style="display:block;font-size:.72rem;letter-spacing:.3em;color:var(--gold);font-weight:700;margin-bottom:8px;text-transform:uppercase">KAMO & TERADANI</span>
-    <h1>加茂・寺谷の歴史<br>── 遠江の信仰と農業が育んだ地</h1>
-    <p class="sub">古代の信仰から近代のまちづくりまで</p>
-    <p>旧豊田町を構成していた加茂・寺谷地区は、遠江でも有数の農業地帯でした。古代からの信仰に根ざしながら、近世から近代にかけて新しいまちへと変遷してきた地域。地名、寺社、古い村落構造――それらすべてが、加茂・寺谷の歩みを物語ります。</p>
+    <span class="series-tag">見付古地図散歩 ＞ 第一回</span>
+    <h1>見付の土地と記憶<br>― 明治42年の見付町戸別明細図から読む、家・道・暮らし</h1>
+    <p class="sub">古い町には、古い家だけでなく、道、地割、商い、人の流れが残っている。</p>
+    <figure class="cover-fig">
+      <img src="images/00_hyoshi.jpg" data-cap="『見付町戸別明細圖』表紙 ― 明治四十二年一月調査" alt="明治四十二年一月調査 見付町戸別明細図 表紙">
+      <figcaption>『見付町戸別明細圖』表紙 ― 明治四十二年一月調査（佐口行正氏所蔵）</figcaption>
+    </figure>
   </div>
-</section>
+</header>
 
-<section class="section alt">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="kicker">Origins</span>
-      <h2 class="sec-title">古代の信仰と地名の由来</h2>
-    </div>
-    <div class="two-col">
-      <div class="two-col-img">
-        <img src="images/kamo-rice-field-01.jpg" alt="加茂・寺谷地区の田園風景" loading="lazy">
-        <div class="two-col-cap">遠江の穏やかな田園。古代からの信仰と地域の営みが刻まれています。</div>
-      </div>
-      <div class="two-col-text">
-        <h3>古代の信仰地 加茂・寺谷</h3>
-        <p>「加茂（かも）」という地名は、古代の信仰地を示すものとされています。全国に分布する加茂という地名は、京都の賀茂信仰に関連するものが多く、当地もまたこうした古い信仰圏の一部でした。古代から中世にかけて、遠江の加茂・寺谷地区には複数の寺社が置かれ、周辺地域の精神的な中心地となってきました。</p>
-        <p>「寺谷（てらだに）」の地名は、より直接的に地形を表しています。この地名が示すように、複数の寺院が谷間に点在していました。谷間という地形は、水利に恵まれると同時に、信仰の聖地として見なされることが多かったのです。古文書の記録によれば、平安時代には既にこの地に複数の寺院が存在し、農民たちの信仰を集めていました。</p>
-        <p>古代の地割りの痕跡は、現在のまち並みの下に今も息づいており、古地図と現地を照らし合わせると、その構造が明らかになります。地名は、地域の歴史を読み解くための最も基本的な手がかりなのです。</p>
-      </div>
-    </div>
+<main>
+<div class="wrap">
+
+  <div class="lead">
+    明治四十二（一九〇九）年一月に調査された『見付町戸別明細図』には、当時の家並み、道筋、暮らしの輪郭が一軒ずつ書き込まれています。現在の地図では見えにくくなった町の記憶を、この一枚一枚から少しずつ読み解いていきます。私たちが相続や空き家のご相談をお受けするとき見ているのも、じつはこの延長線上にある「土地の歴史」です。
   </div>
-</section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="kicker">Development</span>
-      <h2 class="sec-title">街道と田畑 ── 中世から近世への変遷</h2>
-    </div>
-    <div class="two-col">
-      <div class="two-col-img">
-        <img src="images/kamo-rice-field-02.jpg" alt="青々とした田園風景" loading="lazy">
-        <div class="two-col-cap">青々とした稲穂が風に揺れる遠江の田園。加茂・寺谷の豊かな農業生産を支えてきた土地。</div>
-      </div>
-      <div class="two-col-text">
-        <h3>近世の農業開発と地域の繁栄</h3>
-        <p>加茂・寺谷地区は、東海道からほどほどの距離にあり、東海道の物流を支える支路としての機能を担ってきました。地域内の道筋の多くは、古代の官道の流れを受け継いでおり、中世から近世を通じて人と物の流通を支えていました。</p>
-        <p>江戸時代に入ると、加茂・寺谷地区は遠江でも有数の農業地帯として知られるようになります。水利に恵まれた土地は、稲作を中心とした農業生産の中心地となり、この地域の農産物は周辺の町市場に供給される重要な食糧源でした。江戸幕府の政策により新田開発が奨励され、耕地面積は大幅に増加しました。</p>
-        <p>耕地整理の過程で描かれた古い絵図には、当時の村の構成と人々の営みが詳細に記録されています。村役人の記録からは、農業用水路の管理、年貢の徴収、村民の生活ぶりなど、当時の村落社会の実態が浮かび上がってきます。</p>
-        <p>明治維新を経て豊田町が誕生すると、加茂・寺谷地区も急速な近代化の波に呑み込まれていきました。農業の機械化、教育制度の整備、交通網の拡充――大正から昭和初期にかけての急速な変化が、この地域の景観と社会構造を大きく変えていったのです。</p>
-      </div>
-    </div>
+  <h2><span class="en">INTRODUCTION</span>見付という町は、土地の上に記憶が重なっている</h2>
+  <p>見付は、旧東海道の宿場町として栄えた町です。東西にのびる街道を背骨に、川原・一本松・西坂・馬場・宿・東坂・三本松といった町が連なり、そこから玄妙小路・宮小路・寺小路・地蔵小路・横町・南小路・清水小路・権現・境松といった小路が枝のように分かれていきます。町の名前そのものが、道のかたちや、神社へ向かう道筋、地形のなごりを今に伝えています。</p>
+  <p>不動産を見るときも、本来は同じことが言えます。単に「何坪か」「いくらで売れるか」だけでは、その土地の本当の姿は見えてきません。どんな道に面し、どんな家がどう並び、どんな歴史の上にあるのか。古い町ほど、そこに積み重なった記憶が、現在の取引にも静かに影響してきます。</p>
+
+  <h2><span class="en">HOUSES</span>明治42年の地図に残る、一軒ずつの家並み</h2>
+  <p>この図がほかの地図と決定的に違うのは、「戸別」――つまり一軒ずつ、世帯ごとに名前が記されている点です。街道や小路に沿って、当時そこに暮らした家々が、びっしりと書き込まれています。赤い線は道、緑の線は町なかを流れる川や用水、そして要所には寺(卍)や神社、町の施設が描かれています。</p>
+  <p>一枚を眺めるだけで、当時の見付がどれほど人の密度の高い、生き生きとした町だったかが伝わってきます。家と家のあいだの距離、奥に長くのびる敷地、路地のたたみ方。これらは単なる過去の風景ではなく、今の見付の地割にも、かたちを変えながら受け継がれています。</p>
+
+  <figure class="plate">
+    <img src="images/10_shuku.jpg" data-cap="「宿」 ― 旧東海道に面した宿の中心。街道(中央の帯)の両側に家々が向かい合って並ぶ。" alt="見付町戸別明細図 宿">
+    <figcaption>「宿」のシート。中央の帯が旧東海道で、街道の両側に家が向かい合って並ぶ、宿場町らしい町割りが読み取れます。</figcaption>
+  </figure>
+
+  <h2><span class="en">STREETS</span>旧東海道と小路 ― 今も残る道、変わった道</h2>
+  <p>古い地図と現在の地図を重ねると、変わらない道筋と、姿を変えた場所がはっきり見えてきます。見付の場合、東西に走る旧東海道という背骨は今もそのまま町の軸であり続けています。一方で、街道から分かれる細い小路、川沿いの道、寺社へ向かう参道などは、拡幅されたり、付け替えられたり、あるいは今も当時のまま残っていたりと、さまざまです。</p>
+  <p>これは懐古趣味の話ではありません。古い市街地では、道の幅(幅員)、敷地が道路にどう接しているか(接道)、奥行きの深さといった要素が、現在の不動産取引に直接かかわってきます。昔ながらの細い小路に面した土地、街道に長く面した間口の狭い敷地――こうした「町のかたち」は、売却や建て替えのときに必ず確認すべき論点になります。</p>
+
+  <figure class="plate">
+    <img src="images/04_terakoji.jpg" data-cap="「北井上・寺小路」 ― 郡役所や大見寺など、町の中枢が集まる一帯。右端の緑線は川筋。" alt="見付町戸別明細図 寺小路">
+    <figcaption>「北井上・寺小路」のシート。郡役所や大見寺など、明治の見付の中枢がこの一帯に集まっていました。右端の緑の線は町を流れる川筋です。</figcaption>
+  </figure>
+
+  <h2><span class="en">THE CORE OF THE TOWN</span>町の中枢 ― 郡役所・登記所・寺社・学校</h2>
+  <p>この図には、当時の見付が単なる住宅地ではなく、地域の中心だったことを示す施設がいくつも記されています。磐田郡の役所(郡役所)、土地や建物の権利を記録する登記所、ものづくりの製造所、学びの場である学校、そして数多くの寺院と神社。見付は、人が集まり、商いがあり、行政や教育の核があった、文字どおりの「町」でした。</p>
+  <p>なかでも私たちが目をとめるのは、明治四十二年の見付に、すでに<strong>登記所</strong>が置かれていたことです。土地や建物の権利を記録し、受け継いでいくしくみは、百年以上も前からこの町に根づいていました。相続登記が義務化された現在、私たちが日々向き合っている相続や名義の整理も、じつはこの長い営みの延長線上にあります。土地の価値は、面積や築年数だけでは測れません。その場所がどんな歴史を持ち、どんな人の流れの中にあったのか。地域を知ることは、不動産を正しく扱う第一歩です。</p>
+
+  <p class="pull">この町の土地は、ただの坪単価では語り尽くせない。</p>
+
+  <h2><span class="en">BEFORE YOU LET GO</span>古い家や土地を扱うときに、大切なこと</h2>
+  <p>見付のような歴史ある町では、相続した家、空き家、古い土地を売却する前に、確認しておきたいことが少なくありません。境界はどこか。道路にきちんと接しているか。建て替えはできるのか。上下水道はどうなっているか。解体が必要か、残置物はどうするか。近隣との関係は――。これらを一つずつ丁寧に調べておくことが、売主にとっても買主にとっても、安心できる取引につながります。</p>
+  <p>古い町の不動産は、価格の多寡だけでなく、こうした「調査の深さ」で結果が大きく変わります。急いで値段を決めることだけが正解ではありません。その土地がどう使われ、どう受け継がれてきたのかを一度整理してから考えることで、納得のいく判断にたどり着けます。</p>
+
+  <div class="cta">
+    <p class="big">売る前に、まず整理する。</p>
+    <p>富士ヶ丘サービスでは、磐田市見付周辺の相続不動産・空き家・古い住宅・土地売却のご相談を承っています。すぐに売るかどうか決まっていなくても構いません。まずは、家と土地の状況を一緒に整理するところからお手伝いします。</p>
   </div>
-</section>
 
-<section class="related">
-  <div class="wrap">
-    <div class="rel-h">関連する記事</div>
-    <div class="rel-links">
-      <a href="kyutoyoda.html">旧豊田町の歴史</a>
-      <a href="shinden.html">東海道新田の歴史</a>
-      <a href="iwata-chimei.html">磐田の地名をたどる</a>
-      <a href="m002.html">古い地図に残す家並み</a>
-    </div>
+  <h2 class="gallery-intro"><span class="en">PLATES &nbsp;1–17</span>見付町戸別明細図 ― 町別シート一覧</h2>
+  <p>明治四十二年の見付町は、街道沿いの町と、そこから分かれる小路ごとに、十七枚の図に描き分けられています。各シートをクリックすると拡大表示されます。</p>
+  <div class="grid" id="grid"><!-- filled by JS --></div>
+  <p class="note-small">※ 各図には当時の世帯名など個人にかかわる記載が含まれます。郷土史・都市史の貴重な記録として公開していますが、ご関係者・ご子孫の方で掲載についてお気づきの点があれば、下記までご連絡ください。</p>
+
+  <div class="series">
+    <h2 style="border:none; padding:14px 0 0; margin:0"><span class="en">SERIES PLAN</span>連載「見付古地図散歩」全5回の構成</h2>
+    <ol>
+      <li><b>第1回：見付の土地と記憶（本記事）</b><small>戸別明細図の全体像から、見付という町の骨格と「土地の記憶」という視点を示す。シリーズの導入。</small></li>
+      <li><b><a href="m002.html" style="color:var(--accent)">第2回：古い地図に残る家並みと、相続される土地</a></b><small>一軒ずつ記された家並みを入口に、相続した家・空き家を「処分」ではなく「受け継いできたもの」として見つめ直す。<a href="m002.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
+      <li><b><a href="m003.html" style="color:var(--accent)">第3回：旧道・小路・町割り ― 古い町の土地を売るとき、なぜ調査が大切か</a></b><small>幅員・接道・再建築・境界・上下水道など、宿場町ならではの売却時の論点を、地図の道筋から具体的に解説。<a href="m003.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
+      <li><b><a href="m004.html" style="color:var(--accent)">第4回：明治42年、見付の町の中枢 ― 郡役所・登記所・寺社・学校</a></b><small>町の施設から、見付が地域の中心だった歴史を語り、土地の価値は面積や築年数だけでは測れないことへつなげる。<a href="m004.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
+      <li><b><a href="m005.html" style="color:var(--accent)">第5回：見付の古い家を手放す前に、知っておきたいこと</a></b><small>相続登記・境界・接道・解体・残置物・空き家管理・売るか貸すか。歴史の語りから実務へ着地する、売却導線の要となる回。<a href="m005.html" style="color:var(--accent)">記事を読む &raquo;</a></small></li>
+    </ol>
   </div>
-</section>
 
+</div>
+</main>
+
+
+
+
+
+
+<div id="lb"><img src="" alt=""><div class="cap"></div><div class="hint">クリックで閉じる</div></div>
+
+<script>
+(function(){
+  var plates=[
+    ["00_hyoshi","表紙"],["01_kawara","川原"],["02_genmyo","玄妙小路"],
+    ["03_miyakoji","宮小路"],["04_terakoji","北井上・寺小路"],["05_jizo","地蔵小路"],
+    ["06_sumiyoshi","住吉"],["07_ippommatsu","一本松・川原"],["08_nishizaka","西坂"],
+    ["09_baba","馬場"],["10_shuku","宿"],["11_higashizaka","東坂"],
+    ["12_sambommatsu","三本松"],["13_yokocho","横町"],["14_nishikoji","西之小路・倉小路"],
+    ["15_minamikoji","南小路・清水小路・川尻"],["16_gongen","権現"],["17_sakaimatsu","境松"]
+  ];
+
+  var grid=document.getElementById('grid');
+  grid.innerHTML=plates.map(function(p){
+    return '<div class="cell" data-full="images/'+p[0]+'.jpg" data-cap="'+p[1]+'">'
+         +'<img src="images/'+p[0]+'_thumb.jpg" alt="'+p[1]+'" loading="lazy">'
+         +'<span>'+p[1]+'</span></div>';
+  }).join('');
+  var lb=document.getElementById('lb'), lbi=lb.querySelector('img'), lbc=lb.querySelector('.cap');
+  function openLb(src,cap){lbi.src=src;lbc.textContent=cap||'';lb.classList.add('on');document.body.style.overflow='hidden';}
+  function closeLb(){lb.classList.remove('on');lbi.src='';document.body.style.overflow='';}
+  grid.addEventListener('click',function(e){var c=e.target.closest('.cell');if(c)openLb(c.getAttribute('data-full'),c.getAttribute('data-cap'));});
+  lb.addEventListener('click',closeLb);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb();});
+})();
+</script>
 
 <section class="article-policy">
   <h2>この記事について</h2>

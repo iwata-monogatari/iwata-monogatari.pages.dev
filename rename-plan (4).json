@@ -1,0 +1,63 @@
+{
+  "batch_id": "rename-batch-001",
+  "created_at": "2026-06-25",
+  "repository": "iwata-monogatari/iwata-monogatari.pages.dev",
+  "purpose": "長く意味が曖昧な kai1.html〜kai5.html を、見付の短い地域別連番 m001.html〜m005.html に整理する。",
+  "rename_policy": "作成日・正式タイトル・地区・内容分類はファイル名ではなく data/pages.json で管理する。",
+  "files": [
+    {
+      "old_file": "kai1.html",
+      "new_file": "m001.html",
+      "region_code": "01",
+      "region_label": "見付",
+      "parent_file": "01001-mitsuke.html",
+      "keep_old_file_as_redirect": true
+    },
+    {
+      "old_file": "kai2.html",
+      "new_file": "m002.html",
+      "region_code": "01",
+      "region_label": "見付",
+      "parent_file": "01001-mitsuke.html",
+      "keep_old_file_as_redirect": true
+    },
+    {
+      "old_file": "kai3.html",
+      "new_file": "m003.html",
+      "region_code": "01",
+      "region_label": "見付",
+      "parent_file": "01001-mitsuke.html",
+      "keep_old_file_as_redirect": true
+    },
+    {
+      "old_file": "kai4.html",
+      "new_file": "m004.html",
+      "region_code": "01",
+      "region_label": "見付",
+      "parent_file": "01001-mitsuke.html",
+      "keep_old_file_as_redirect": true
+    },
+    {
+      "old_file": "kai5.html",
+      "new_file": "m005.html",
+      "region_code": "01",
+      "region_label": "見付",
+      "parent_file": "01001-mitsuke.html",
+      "keep_old_file_as_redirect": true
+    }
+  ],
+  "must_update": [
+    "data/pages.json",
+    "docs/pages-ledger.md",
+    "sitemap.xml",
+    "01001-mitsuke.html",
+    "index.html",
+    "all internal links that reference kai1.html〜kai5.html"
+  ],
+  "verification": [
+    "https://iwata-monogatari.pages.dev/m001.html が表示される",
+    "旧URL https://iwata-monogatari.pages.dev/kai1.html が m001.html へ案内される",
+    "sitemap.xml に m001.html〜m005.html があり kai1.html〜kai5.html が残っていない",
+    "GitHub検索で kai1.html への通常リンクが残っていない"
+  ]
+}
