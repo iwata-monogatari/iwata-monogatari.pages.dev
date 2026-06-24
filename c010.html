@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>磐田文化財研究ノート ｜ 磐田物語</title>
-<meta name="description" content="磐田の歴史・文化財をめぐる、調査途中のメモを蓄積していく場。古いはがきの場所の特定、旧道と現在の道の比較、古墳と地形、空き家に残る記憶など。完成記事ではなく、これから調べていくための研究ノート。">
-<meta property="og:title" content="磐田文化財研究ノート ｜ 磐田物語">
-<meta property="og:description" content="磐田の歴史・文化財をめぐる調査途中のメモを蓄積する場。これから調べていくための研究ノート。">
+<title>磐田の文化財と地域の記憶 ｜ 磐田物語</title>
+<meta name="description" content="磐田の文化財を、観光名所としてではなく「地域の記憶を読み解く手がかり」として整理する。古墳・国分寺跡・旧街道・寺社・祭礼・学校から、土地と暮らしの歴史をたどる磐田物語の文化財コンテンツ群の入口。">
+<meta property="og:title" content="磐田の文化財と地域の記憶 ｜ 磐田物語">
+<meta property="og:description" content="文化財は「昔のもの」ではなく、土地と暮らしと記憶を読み解く手がかりである。磐田の文化財を地域研究の入口として整理する。">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -31,36 +31,35 @@
   nav.global ul{max-width:880px;margin:0 auto;padding:0 22px;list-style:none;display:flex;flex-wrap:wrap;gap:4px 26px;}
   nav.global a{color:#eef6fb;display:inline-block;padding:11px 0;font-size:14px;letter-spacing:.03em;}
   nav.global a:hover{color:#fff;text-decoration:none;}
-  main{max-width:760px;margin:0 auto;padding:0 22px;}
+  main{max-width:820px;margin:0 auto;padding:0 22px;}
   .crumb{font-size:13px;color:var(--usuzumi);padding:20px 0 6px;}
   .crumb a{color:var(--usuzumi);}
-  .cat{display:inline-block;font-size:13px;color:var(--matsu);border-left:3px solid var(--cha);padding-left:9px;margin:18px 0 10px;letter-spacing:.04em;}
-  h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:27px;line-height:1.5;color:var(--sumi);margin:6px 0 26px;letter-spacing:.02em;}
-  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#3a4750;margin-bottom:30px;}
-  .note{background:#f4fafc;border:1px solid var(--waku);border-left:3px solid var(--cha);border-radius:0 4px 4px 0;padding:16px 20px;font-size:14.5px;color:#3a4750;margin:24px 0;}
-  .note strong{color:var(--brown-deep);}
-  h2{font-family:"Shippori Mincho",serif;font-weight:600;font-size:21px;color:var(--matsu);margin:40px 0 16px;padding-bottom:9px;border-bottom:2px solid var(--waku);letter-spacing:.02em;}
+  .hero{margin:18px 0 30px;}
+  .eyebrow{font-size:13px;color:var(--cha);letter-spacing:.12em;font-weight:700;}
+  h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:30px;line-height:1.5;color:var(--sumi);margin:6px 0 22px;letter-spacing:.02em;}
+  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:24px 26px;font-size:16px;color:#3a4750;margin-bottom:30px;}
+  h2{font-family:"Shippori Mincho",serif;font-weight:600;font-size:22px;color:var(--matsu);margin:42px 0 16px;padding-bottom:9px;border-bottom:2px solid var(--waku);letter-spacing:.02em;}
   p{margin:0 0 20px;}
-  .rnote{background:var(--paper);border:1px solid var(--waku);border-radius:5px;padding:4px 24px 18px;margin-bottom:18px;border-left:4px solid var(--cha);}
-  .rnote .rn-status{display:inline-block;font-size:11.5px;font-weight:700;color:#fff;background:var(--usuzumi);border-radius:3px;padding:3px 10px;margin:16px 0 0;letter-spacing:.04em;}
-  .rnote .rn-status.draft{background:var(--cha);}
-  .rnote h3{font-family:"Shippori Mincho",serif;font-size:18px;color:var(--sumi);font-weight:600;margin:8px 0 12px;}
-  .rnote dl{display:grid;grid-template-columns:auto 1fr;gap:0;font-size:14px;}
-  .rnote dt{font-weight:700;color:var(--matsu);padding:7px 14px 7px 0;white-space:nowrap;vertical-align:top;}
-  .rnote dd{padding:7px 0;margin:0;color:#3a4750;line-height:1.75;}
-  .rnote dl>div{display:contents;}
-  .template{background:#eef6fb;border:1px dashed var(--cha);border-radius:5px;padding:20px 24px;margin:24px 0;font-size:14px;}
-  .template h3{font-family:"Shippori Mincho",serif;font-size:16px;color:var(--matsu);margin:0 0 10px;}
-  .template pre{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:14px 16px;font-size:12.5px;line-height:1.7;color:#3a4750;white-space:pre-wrap;font-family:"Zen Kaku Gothic New",monospace;overflow-x:auto;}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0;}
+  .navcard{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:20px 22px;display:block;}
+  .navcard:hover{background:#f4fafc;text-decoration:none;border-color:var(--cha);}
+  .navcard .nc-eyebrow{font-size:12px;color:var(--cha);font-weight:700;letter-spacing:.06em;}
+  .navcard .nc-ttl{font-family:"Shippori Mincho",serif;font-size:18px;color:var(--sumi);font-weight:600;display:block;margin:5px 0 7px;}
+  .navcard .nc-desc{font-size:13.5px;color:var(--usuzumi);line-height:1.75;}
+  .viewpoint{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:8px 24px;margin:24px 0;}
+  .viewpoint li{list-style:none;border-bottom:1px solid var(--waku);padding:14px 0;font-size:15px;}
+  .viewpoint li:last-child{border-bottom:none;}
+  .viewpoint b{font-family:"Shippori Mincho",serif;color:var(--matsu);font-size:16px;display:block;margin-bottom:3px;}
   .sourcebox{background:#eef6fb;border:1px solid var(--waku);border-radius:4px;padding:20px 24px;margin:30px 0;font-size:14px;color:#3a4750;}
   .sourcebox h3{font-family:"Shippori Mincho",serif;font-size:16px;color:var(--matsu);margin:0 0 10px;}
   .sourcebox ul{margin:0 0 12px 1.3em;}
   .sourcebox li{margin-bottom:5px;line-height:1.7;}
   .sourcebox .disclaimer{font-size:13px;color:var(--usuzumi);border-top:1px dashed var(--waku);padding-top:12px;margin-top:4px;}
-  .pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 10px;flex-wrap:wrap;}
-  .pager a{font-size:14px;}
+  .related{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 8px;}
+  .related a{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:10px 15px;font-size:14px;color:var(--matsu);}
+  .related a:hover{background:#f4fafc;text-decoration:none;}
   footer.site{background:var(--matsu);color:#eee;margin-top:54px;}
-  .foot-inner{max-width:760px;margin:0 auto;padding:34px 22px;}
+  .foot-inner{max-width:820px;margin:0 auto;padding:34px 22px;}
   .foot-inner .mincho{font-size:18px;color:#fff;display:block;margin-bottom:12px;}
   .foot-inner p{font-size:13.5px;color:#e9f3fa;line-height:1.85;margin-bottom:18px;}
   .foot-inner h4{font-size:13px;color:#cfe2ec;font-weight:500;margin:16px 0 8px;letter-spacing:.05em;}
@@ -68,9 +67,9 @@
   .foot-links li{margin-bottom:7px;font-size:14px;}
   .foot-links a{color:#eef6fb;}
   .copy{font-size:12px;color:#a9c6d2;margin-top:22px;}
-  @media(max-width:600px){h1{font-size:21px;}body{font-size:16px;}h2{font-size:19px;}.rnote dl{grid-template-columns:1fr;}.rnote dt{padding-bottom:0;}}
+  @media(max-width:600px){h1{font-size:24px;}body{font-size:16px;}h2{font-size:19px;}.cards{grid-template-columns:1fr;}}
 </style>
-  <link rel="canonical" href="https://iwata-monogatari.pages.dev/c018.html">
+  <link rel="canonical" href="https://iwata-monogatari.pages.dev/c003.html">
 <style id="reno-blocks">
 .article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
 .article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
@@ -109,98 +108,92 @@
 </header>
 
 <main>
-  <div class="crumb"><a href="https://iwata-monogatari.pages.dev/">磐田物語</a> ／ <a href="https://iwata-monogatari.pages.dev/c003.html">文化財</a> ／ 研究ノート</div>
+  <div class="crumb"><a href="https://iwata-monogatari.pages.dev/">磐田物語</a> ／ 磐田の文化財</div>
 
-  <span class="cat">文化財 ｜ 調査の途中から</span>
-
-  <h1>磐田文化財研究ノート</h1>
+  <div class="hero">
+    <p class="eyebrow">CULTURAL PROPERTIES</p>
+    <h1>磐田の文化財と地域の記憶</h1>
+  </div>
 
   <div class="lead">
-    このページは、完成した記事ではない。磐田の歴史や文化財をめぐって、これから調べていきたいことを書き留めておく、いわば「調査の覚え書き」である。まだ答えの出ていない問い、確かめきれていない事実、いつか現地を歩いて確かめたいこと――そうしたものを、未完成のまま、正直に並べていく。地域の記憶をたどる作業は、一度に完成するものではない。少しずつ、書き足しながら育てていきたい。
+    磐田の文化財は、教科書のなかだけにあるものではない。道の曲がりかた、古い家並み、地名、神社、学校、橋、川、そして家に残された一枚の写真にも、地域の歴史は刻まれている。このページ群では、磐田市の公式情報を手がかりとしながら、文化財を「観光名所」ではなく「地域の記憶をたどる入口」として整理していきたい。
   </div>
 
-  <div class="note">
-    <strong>このページの読み方。</strong>以下の各ノートは、調査の途中段階のメモである。「未確認」と記したことは、まだ裏づけが取れていない。確かな事実として書いているのではなく、「これから調べる」という宣言だと受けとってほしい。確認が取れて、まとまった内容になったものは、いずれ独立した読みものとして書き起こしていく予定である。
+  <h2>文化財は「昔のもの」ではない</h2>
+
+  <p>文化財というと、ガラスケースのなかの古い道具や、立ち入り禁止の遺跡を思い浮かべるかもしれない。けれど、文化財の本当のはたらきは、もっと身近なところにある。それは、この土地で人々がどう暮らし、何を祈り、何を受け継いできたのかを、私たちに教えてくれる手がかりだということである。</p>
+
+  <p>磐田には、古墳時代から、奈良時代の国府・国分寺、中世の宿場、近世の街道、近代の学校まで、途切れることのない歴史が積み重なっている。一つひとつの文化財は、その長い時間の、ある一点を今に伝える証人である。それらをつなげて見たとき、はじめて、このまちが歩んできた道のりが立ちあがってくる。磐田物語では、公式情報を尊重しながら、そうした「つながり」を、地域に関わり続ける者の視点で読みといていきたい。</p>
+
+  <h2>磐田の文化財を、たどる</h2>
+
+  <div class="cards">
+    <a class="navcard" href="https://iwata-monogatari.pages.dev/c013.html">
+      <span class="nc-eyebrow">国指定文化財</span>
+      <span class="nc-ttl">磐田市の国指定文化財</span>
+      <span class="nc-desc">遠江国分寺跡、銚子塚古墳、旧見付学校、見付天神裸祭など。国が認めた、磐田の宝をたどる。</span>
+    </a>
+    <a class="navcard" href="https://iwata-monogatari.pages.dev/c021.html">
+      <span class="nc-eyebrow">指定文化財一覧</span>
+      <span class="nc-ttl">指定文化財の横断一覧</span>
+      <span class="nc-desc">国・県・市・登録・無形民俗を一覧で。区分・時代・キーワードで絞り込める検索表。</span>
+    </a>
+    <a class="navcard" href="https://iwata-monogatari.pages.dev/c012.html">
+      <span class="nc-eyebrow">古墳</span>
+      <span class="nc-ttl">古墳から見る磐田</span>
+      <span class="nc-desc">なぜ磐田に古墳が多いのか。天竜川・台地・交通から、古墳時代の磐田を考える。</span>
+    </a>
+    <a class="navcard" href="https://iwata-monogatari.pages.dev/n016.html">
+      <span class="nc-eyebrow">特集</span>
+      <span class="nc-ttl">遠江国分寺跡を読む</span>
+      <span class="nc-desc">奈良時代、なぜ磐田に国分寺が置かれたのか。古代磐田のはじまりを、まち歩きの視点で読む。</span>
+    </a>
+    <a class="navcard" href="https://iwata-monogatari.pages.dev/c015.html">
+      <span class="nc-eyebrow">埋蔵文化財</span>
+      <span class="nc-ttl">土地と遺跡を調べる</span>
+      <span class="nc-desc">土地を売る・買う・建てるとき、なぜ遺跡の確認が必要か。文化財保護と土地の記憶の接点。</span>
+    </a>
+    <a class="navcard" href="https://iwata-monogatari.pages.dev/c005.html">
+      <span class="nc-eyebrow">資料集</span>
+      <span class="nc-ttl">文化財を深く読む資料集</span>
+      <span class="nc-desc">いわた文化財だより、旧赤松家だより、旧見付学校だより。磐田市が公開する資料への入口。</span>
+    </a>
+    <a class="navcard" href="https://iwata-monogatari.pages.dev/c018.html">
+      <span class="nc-eyebrow">研究ノート</span>
+      <span class="nc-ttl">磐田文化財研究ノート</span>
+      <span class="nc-desc">古いはがき、旧道、地名、空き家の記憶。調査途中のメモを蓄積していく場。</span>
+    </a>
   </div>
 
-  <h2>調査中のノート</h2>
+  <h2>磐田物語としての、独自の視点</h2>
 
-  <div class="rnote">
-    <span class="rn-status draft">調査中</span>
-    <h3>古いはがき・写真に写る場所の特定</h3>
-    <dl>
-      <div><dt>調査対象</dt><dd>明治〜昭和の磐田を写した古いはがき・写真</dd></div>
-      <div><dt>関連する場所</dt><dd>見付宿の街道筋、旧見付学校周辺、中泉駅（現・磐田駅）周辺など</dd></div>
-      <div><dt>参考資料</dt><dd>磐田市の文化財だより、文書館だより／権利を確認できた古写真資料</dd></div>
-      <div><dt>未確認事項</dt><dd>個々のはがきの正確な撮影地点・年代。建物や町並みの現在地との対応。</dd></div>
-      <div><dt>今後調べたいこと</dt><dd>古写真と現在の風景を、同じ地点から撮り比べる「定点」の記録。権利関係を確認したうえで、比較できる形にまとめたい。</dd></div>
-    </dl>
-  </div>
+  <p>このページ群が、市の公式サイトの焼き直しにならないために、磐田物語ならではの視点を大切にしたい。それは、文化財を、より広い「地域の記憶」のなかに置きなおす、という視点である。</p>
 
-  <div class="rnote">
-    <span class="rn-status draft">調査中</span>
-    <h3>旧道と現在の道路の比較</h3>
-    <dl>
-      <div><dt>調査対象</dt><dd>旧東海道・姫街道（本坂通）・池田近道などの旧道</dd></div>
-      <div><dt>関連する場所</dt><dd>見付宿場通り、池田の渡し跡、東木戸・西木戸跡周辺</dd></div>
-      <div><dt>参考資料</dt><dd>東海道分間延図などの古地図／磐田市の文化財資料</dd></div>
-      <div><dt>未確認事項</dt><dd>旧道の正確な道筋と、現在の道路との重なり。道の曲がりや段差に残る、宿場時代の痕跡。</dd></div>
-      <div><dt>今後調べたいこと</dt><dd>古地図と現在の地図を重ね、旧道が今のどの道に対応するかをたどる。歩いて確かめたい。</dd></div>
-    </dl>
-  </div>
+  <ul class="viewpoint">
+    <li><b>道・川・学校・寺社から見る磐田</b>文化財として指定されたものだけでなく、まちの道の通りかた、川の流れ、学校や神社の位置にも、歴史は刻まれている。指定文化財を、まちの構造のなかで読む。</li>
+    <li><b>地名から見る磐田</b>「見付」「国府台」「中泉」「寺谷」――地名は、その土地が背負ってきた記憶の化石である。文化財と地名を重ねると、見えてくるものがある。</li>
+    <li><b>家の記憶、土地の記憶</b>介護と不動産の現場では、世代を越えて受け継がれた家や、整理される実家に出会う。そこに残る一枚の写真や、土地の言い伝えもまた、小さな地域史である。</li>
+    <li><b>写真とはがきで見る磐田</b>古い写真やはがきは、失われた風景を今に伝える。将来、権利を確認できた資料をもとに、かつての磐田の姿を記録していきたい。</li>
+  </ul>
 
-  <div class="rnote">
-    <span class="rn-status draft">調査中</span>
-    <h3>古墳の分布と、地形の関係</h3>
-    <dl>
-      <div><dt>調査対象</dt><dd>磐田原台地および周辺の古墳群</dd></div>
-      <div><dt>関連する場所</dt><dd>銚子塚古墳（寺谷）、新豊院山古墳群（向笠竹之内）、御厨古墳群（新貝・鎌田）ほか</dd></div>
-      <div><dt>参考資料</dt><dd>磐田市公式「国指定文化財」／地形図</dd></div>
-      <div><dt>未確認事項</dt><dd>台地の縁と古墳の立地の対応関係を、地形図の上でどこまで具体的に示せるか。</dd></div>
-      <div><dt>今後調べたいこと</dt><dd>「古墳から見る磐田」の記事をさらに深め、地形と古墳の関係を図でわかりやすく示したい。</dd></div>
-    </dl>
-  </div>
-
-  <div class="rnote">
-    <span class="rn-status">構想中</span>
-    <h3>空き家に残る記憶と、地域史</h3>
-    <dl>
-      <div><dt>調査対象</dt><dd>世代を越えて受け継がれた家、整理される実家に残る古い品や記録</dd></div>
-      <div><dt>関連する場所</dt><dd>磐田市内の各地域（個人が特定されない形で）</dd></div>
-      <div><dt>参考資料</dt><dd>介護・不動産の現場での見聞（本人・家族の許可を得た範囲のみ）</dd></div>
-      <div><dt>未確認事項</dt><dd>個人情報・プライバシーへの配慮の線引き。どこまでを地域史として記録できるか。</dd></div>
-      <div><dt>今後調べたいこと</dt><dd>家や土地に残る小さな記憶を、個人が特定されない形で、地域の暮らしの歴史としてどう書き留められるか。慎重に考えていきたいテーマ。</dd></div>
-    </dl>
-  </div>
-
-  <h2>これから取りあげたいテーマ</h2>
-
-  <p>このほかにも、書き留めておきたい問いはいくつもある。たとえば、見付学校と近代教育の歩み。旧赤松家と近代磐田の人物史。遠江国分寺跡と国府の記憶のつながり。祭礼（無形民俗文化財）と地域共同体の関係。どれも、一冊の本になるほどの奥行きをもったテーマである。あせらず、ひとつずつ、確かめながら書いていきたい。</p>
-
-  <div class="template">
-    <h3>研究ノートのテンプレート（今後の追記用）</h3>
-    <p>新しいノートを書き足すときは、以下の形式を使う。事実と推測を分け、未確認のことは「未確認」と正直に記すことを大切にする。</p>
-    <pre>【仮タイトル】
-　調査対象：（何を調べるか）
-　関連する場所：（地名・施設など）
-　参考資料：（公式資料・文献・古地図など）
-　未確認事項：（まだ裏づけが取れていないこと）
-　今後調べたいこと：（次のステップ）
-　関連する写真・はがき：（あれば記録。権利確認を前提とする）</pre>
-  </div>
+  <p>これらの視点は、まだ多くが「これから」のものである。このページ群は、完成された事典ではなく、地域の記憶を少しずつ書き留めていく、生きた記録の場でありたいと考えている。</p>
 
   <div class="sourcebox">
     <h3>主な参考資料</h3>
     <ul>
-      <li>磐田市公式ウェブサイト「文化財」「国指定文化財」ほか</li>
-      <li>磐田市の文化財だより・文書館だより（各テーマの裏づけ確認に活用予定）</li>
+      <li>磐田市公式ウェブサイト「文化財」</li>
+      <li>磐田市公式ウェブサイト「国指定文化財」「県指定文化財」「市指定文化財」「国登録有形文化財」「無形民俗文化財」</li>
+      <li>磐田市公式ウェブサイト「いわた文化財だより」ほか文化財関連資料</li>
     </ul>
-    <p class="disclaimer">本ページは、磐田物語編集部による調査途中のメモであり、確定した事実を述べるものではない。「未確認」と記した事項は、今後の確認を要する。事実の確認にあたっては磐田市公式情報および各文献を参照する。家・家族に関わる記憶を扱う際は、本人・家族の許可と個人情報への配慮を前提とする。出典：磐田市公式ウェブサイト ほか。</p>
+    <p class="disclaimer">本ページは、磐田市公式ウェブサイト等の公開情報を参考に、磐田物語編集部が独自に要約・編集したものである。文化財の指定区分・年代・所在地などの事実情報は公式情報に基づくが、解説文は独自の記述である。正確な制度・指定内容・手続きについては、必ず磐田市公式情報を確認されたい。出典：磐田市公式ウェブサイト。</p>
   </div>
 
-  <div class="pager">
-    <a href="https://iwata-monogatari.pages.dev/c003.html">← 文化財トップへ</a>
-    <a href="https://iwata-monogatari.pages.dev/c005.html">資料集へ →</a>
+  <h2>関連する読みもの</h2>
+  <div class="related">
+    <a href="https://iwata-monogatari.pages.dev/n016.html">遠江国分寺跡と、古代磐田のはじまり</a>
+    <a href="https://iwata-monogatari.pages.dev/t001.html">銚子塚古墳と、遠江を治めた王の眠り</a>
+    <a href="https://iwata-monogatari.pages.dev/m015.html">旧見付学校と、学びのまち磐田</a>
+    <a href="https://iwata-monogatari.pages.dev/m011.html">見付天神裸祭【特集】</a>
   </div>
 </main>
 

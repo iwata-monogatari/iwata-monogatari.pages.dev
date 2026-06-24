@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>磐田の文化財を深く読む資料集 ｜ 磐田物語</title>
-<meta name="description" content="磐田市が公開する文化財関連資料への入口。いわた文化財だより、こども文化財だより、旧赤松家だより、旧見付学校だより、文書館だより、文化財関連図書。それぞれの特徴と、磐田物語での活用方針を紹介する。">
-<meta property="og:title" content="磐田の文化財を深く読む資料集 ｜ 磐田物語">
-<meta property="og:description" content="磐田市が公開する文化財だより・関連資料への入口。さらに深く調べたい人のための資料案内。">
-<meta property="og:type" content="article">
+<title>佐口行正氏所蔵史料 目録 ｜ 磐田物語</title>
+<meta name="description" content="見付の旧家・佐口行正氏が所蔵する、引札・浮世絵・古地図・鉄道案内・絵葉書・屋台祭礼写真など約340点の史料目録。種別やグループで分類・検索できる。佐口行正氏の許可を得て掲載。">
+<meta property="og:title" content="佐口行正氏所蔵史料 目録 ｜ 磐田物語">
+<meta property="og:description" content="見付のまちに残された引札・浮世絵・古地図・鉄道案内・絵葉書・屋台祭礼写真など。佐口行正氏所蔵・許可掲載の史料目録。">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -23,7 +23,7 @@
   a{color:var(--cha);text-decoration:none;}
   a:hover{text-decoration:underline;}
   .mincho{font-family:"Shippori Mincho",serif;}
-  header.site{background:var(--matsu);color:#fff;padding:0;}
+  header.site{background:var(--matsu);color:#fff;}
   .site-inner{max-width:880px;margin:0 auto;padding:18px 22px;}
   .site-title{font-family:"Shippori Mincho",serif;font-weight:600;font-size:19px;color:#fff;display:block;letter-spacing:.04em;}
   .site-title small{display:block;font-size:12px;font-weight:400;opacity:.82;margin-top:3px;letter-spacing:.02em;}
@@ -31,41 +31,71 @@
   nav.global ul{max-width:880px;margin:0 auto;padding:0 22px;list-style:none;display:flex;flex-wrap:wrap;gap:4px 26px;}
   nav.global a{color:#eef6fb;display:inline-block;padding:11px 0;font-size:14px;letter-spacing:.03em;}
   nav.global a:hover{color:#fff;text-decoration:none;}
-  main{max-width:760px;margin:0 auto;padding:0 22px;}
+  main{max-width:1040px;margin:0 auto;padding:0 22px;}
   .crumb{font-size:13px;color:var(--usuzumi);padding:20px 0 6px;}
   .crumb a{color:var(--usuzumi);}
-  .cat{display:inline-block;font-size:13px;color:var(--matsu);border-left:3px solid var(--cha);padding-left:9px;margin:18px 0 10px;letter-spacing:.04em;}
-  h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:27px;line-height:1.5;color:var(--sumi);margin:6px 0 26px;letter-spacing:.02em;}
-  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#3a4750;margin-bottom:30px;}
-  h2{font-family:"Shippori Mincho",serif;font-weight:600;font-size:21px;color:var(--matsu);margin:40px 0 16px;padding-bottom:9px;border-bottom:2px solid var(--waku);letter-spacing:.02em;}
-  p{margin:0 0 20px;}
-  .reslist{margin:24px 0;}
-  .resitem{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:20px 22px;margin-bottom:14px;}
-  .resitem h3{font-family:"Shippori Mincho",serif;font-size:18px;color:var(--sumi);font-weight:600;margin:0 0 8px;}
-  .resitem .tags{font-size:12.5px;color:var(--cha);font-weight:700;margin-bottom:8px;}
-  .resitem p{font-size:14.5px;margin:0 0 10px;line-height:1.8;color:#3a4750;}
-  .resitem .links{display:flex;flex-wrap:wrap;gap:8px;}
-  .resitem .links a{font-size:13px;background:var(--kinari);border:1px solid var(--waku);border-radius:4px;padding:6px 12px;color:var(--matsu);}
-  .resitem .links a:hover{background:#eef6fb;text-decoration:none;}
-  .sourcebox{background:#eef6fb;border:1px solid var(--waku);border-radius:4px;padding:20px 24px;margin:30px 0;font-size:14px;color:#3a4750;}
+  .hero{margin:18px 0 22px;}
+  .eyebrow{font-size:13px;color:var(--cha);letter-spacing:.12em;font-weight:700;}
+  h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:30px;line-height:1.5;color:var(--sumi);margin:6px 0 18px;letter-spacing:.02em;}
+  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#3a4750;margin-bottom:18px;}
+  .permit{background:#eef6fb;border:1px solid var(--cha);border-left:4px solid var(--cha);border-radius:4px;padding:16px 20px;font-size:14px;color:#3a4750;margin-bottom:26px;line-height:1.8;}
+  .permit b{color:var(--brown-deep);}
+  /* finder */
+  .finder{position:sticky;top:0;background:var(--kinari);padding:14px 0 10px;z-index:20;border-bottom:1px solid var(--waku);margin-bottom:22px;}
+  .search-wrap{position:relative;max-width:460px;margin-bottom:12px;}
+  .search-wrap input{width:100%;padding:11px 38px 11px 16px;border:1px solid var(--waku);border-radius:24px;background:var(--paper);font-family:inherit;font-size:15px;color:var(--sumi);}
+  .search-wrap input:focus{outline:none;border-color:var(--cha);}
+  .search-clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);border:none;background:none;font-size:20px;color:var(--usuzumi);cursor:pointer;padding:4px 8px;}
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;}
+  .tab{border:1px solid var(--waku);background:var(--paper);color:var(--usuzumi);border-radius:20px;padding:7px 15px;font-family:inherit;font-size:13.5px;cursor:pointer;letter-spacing:.02em;}
+  .tab:hover{border-color:var(--cha);color:var(--brown-deep);}
+  .tab.is-active{background:var(--matsu);color:#fff;border-color:var(--matsu);}
+  /* secondary group filter */
+  .subtabs{display:flex;flex-direction:column;gap:9px;align-items:stretch;margin-top:11px;padding-top:11px;border-top:1px dashed var(--waku);}
+  .subrow{display:flex;flex-wrap:wrap;gap:7px;align-items:center;}
+  .subtab-label{font-size:12.5px;color:var(--usuzumi);font-weight:700;margin-right:2px;min-width:4.7em;}
+  .subtab{font-size:12.5px;padding:5px 12px;}
+  .subtab.is-active{background:var(--cha);color:#fff;border-color:var(--cha);}
+  .count{font-size:13px;color:var(--usuzumi);margin-top:10px;}
+  /* grid */
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:40px;}
+  .card{background:var(--paper);border:1px solid var(--waku);border-radius:5px;overflow:hidden;display:flex;flex-direction:column;}
+  .card .thumb{aspect-ratio:4/3;background:#efe8da;overflow:hidden;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+  .card .thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s;}
+  .card .thumb:hover img{transform:scale(1.05);}
+  .card .noimg{font-size:12px;color:var(--usuzumi);text-align:center;padding:10px;}
+  .card .body{padding:12px 13px 13px;display:flex;flex-direction:column;gap:4px;flex:1;}
+  .card .cno{font-size:11px;color:var(--cha);font-weight:700;letter-spacing:.04em;}
+  .card .cname{font-family:"Shippori Mincho",serif;font-size:15px;color:var(--sumi);font-weight:600;line-height:1.5;}
+  .card .ser{font-size:11px;color:var(--matsu);font-weight:500;}
+  .card .meta{font-size:12px;color:var(--usuzumi);line-height:1.65;margin-top:2px;}
+  .card .own{font-size:10.5px;color:#9a8e78;margin-top:auto;padding-top:8px;border-top:1px dashed var(--waku);}
+  .badge{display:inline-block;font-size:10.5px;background:#eef0ea;color:var(--matsu);border-radius:3px;padding:1px 7px;font-weight:700;}
+  .no-result{text-align:center;color:var(--usuzumi);padding:40px 0;}
+  /* lightbox */
+  .lb{position:fixed;inset:0;background:rgba(30,28,24,.92);display:none;align-items:center;justify-content:center;z-index:100;padding:24px;}
+  .lb.open{display:flex;}
+  .lb-inner{max-width:1000px;max-height:92vh;text-align:center;}
+  .lb-inner img{max-width:100%;max-height:74vh;border-radius:4px;box-shadow:0 8px 40px rgba(0,0,0,.5);}
+  .lb-cap{color:#eef6fb;font-size:14px;margin-top:16px;line-height:1.7;}
+  .lb-cap .lb-name{font-family:"Shippori Mincho",serif;font-size:17px;color:#fff;display:block;margin-bottom:4px;}
+  .lb-cap .lb-own{font-size:12px;color:#c7bfae;margin-top:8px;}
+  .lb-close{position:fixed;top:18px;right:24px;color:#fff;font-size:34px;cursor:pointer;line-height:1;background:none;border:none;}
+  .lb-nav{position:fixed;top:50%;transform:translateY(-50%);color:#fff;font-size:40px;cursor:pointer;background:none;border:none;padding:10px 18px;opacity:.7;}
+  .lb-nav:hover{opacity:1;}
+  .lb-prev{left:10px;} .lb-next{right:10px;}
+  .sourcebox{background:#eef6fb;border:1px solid var(--waku);border-radius:4px;padding:20px 24px;margin:10px 0 30px;font-size:14px;color:#3a4750;}
   .sourcebox h3{font-family:"Shippori Mincho",serif;font-size:16px;color:var(--matsu);margin:0 0 10px;}
-  .sourcebox ul{margin:0 0 12px 1.3em;}
-  .sourcebox li{margin-bottom:5px;line-height:1.7;}
-  .sourcebox .disclaimer{font-size:13px;color:var(--usuzumi);border-top:1px dashed var(--waku);padding-top:12px;margin-top:4px;}
-  .pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 10px;flex-wrap:wrap;}
-  .pager a{font-size:14px;}
-  footer.site{background:var(--matsu);color:#eee;margin-top:54px;}
-  .foot-inner{max-width:760px;margin:0 auto;padding:34px 22px;}
+  .sourcebox .disclaimer{font-size:13px;color:var(--usuzumi);line-height:1.75;}
+  footer.site{background:var(--matsu);color:#eee;margin-top:40px;}
+  .foot-inner{max-width:820px;margin:0 auto;padding:34px 22px;}
   .foot-inner .mincho{font-size:18px;color:#fff;display:block;margin-bottom:12px;}
   .foot-inner p{font-size:13.5px;color:#e9f3fa;line-height:1.85;margin-bottom:18px;}
-  .foot-inner h4{font-size:13px;color:#cfe2ec;font-weight:500;margin:16px 0 8px;letter-spacing:.05em;}
-  .foot-links{list-style:none;}
-  .foot-links li{margin-bottom:7px;font-size:14px;}
-  .foot-links a{color:#eef6fb;}
   .copy{font-size:12px;color:#a9c6d2;margin-top:22px;}
-  @media(max-width:600px){h1{font-size:21px;}body{font-size:16px;}h2{font-size:19px;}}
+  @media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr);}}
+  @media(max-width:680px){.grid{grid-template-columns:repeat(2,1fr);}h1{font-size:24px;}body{font-size:16px;}.lb-nav{font-size:30px;padding:6px 10px;}}
 </style>
-  <link rel="canonical" href="https://iwata-monogatari.pages.dev/dayori.html">
+  <link rel="canonical" href="https://iwata-monogatari.pages.dev/c019.html">
 <style id="reno-blocks">
 .article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
 .article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
@@ -94,9 +124,9 @@
       <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
     </a>
     <nav class="gh-menu" aria-label="主要ナビゲーション">
-      <a href="/hajimeni.html">はじめに</a>
-      <a href="/000-kensho.html">憲章</a>
-      <a href="/saguchi-shiryo-catalog.html">佐口史料室</a>
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
       <a href="/#new">新着</a>
       <a href="/bbs.html">掲示板</a>
     </nav>
@@ -104,99 +134,200 @@
 </header>
 
 <main>
-  <div class="crumb"><a href="https://iwata-monogatari.pages.dev/">磐田物語</a> ／ <a href="https://iwata-monogatari.pages.dev/bunkazai.html">文化財</a> ／ 資料集</div>
+  <div class="crumb"><a href="https://iwata-monogatari.pages.dev/">磐田物語</a> ／ <a href="https://iwata-monogatari.pages.dev/c020.html">佐口行正氏所蔵史料</a> ／ 目録</div>
 
-  <span class="cat">文化財 ｜ さらに深く読む</span>
-
-  <h1>磐田の文化財を深く読む資料集</h1>
+  <div class="hero">
+    <p class="eyebrow">SAGUCHI COLLECTION — CATALOG</p>
+    <h1>佐口行正氏所蔵史料 目録</h1>
+  </div>
 
   <div class="lead">
-    磐田の文化財をもっと深く知りたくなったら、磐田市が公開している、さまざまな「だより」や資料が手がかりになる。市の文化財課が長年にわたって発行してきたこれらの資料は、専門的でありながら、地域の人に向けてやさしく書かれている。ここでは、その主なものを、どんなときに役立つかとあわせて紹介したい。すべて、磐田市の公式ページへの入口である。
+    見付のまちに残された、引札・浮世絵・古地図・鉄道案内・絵葉書・屋台祭礼写真などの史料群である。明治から昭和、そして近年にかけて、見付・中泉の商家がどんな広告を刷り、人々がどんな道を旅し、天神社の祭礼でどんな屋台を曳いてきたのか――一点ずつの紙片や写真が、まちの暮らしの記憶を今に伝えている。<b>種別</b>での絞り込みに加え、絵葉書のシリーズや屋台の町別などの<b>グループ</b>でも選べる。商屋名・年代での検索もできる。画像をクリックすると拡大表示する。
   </div>
 
-  <h2>磐田市が公開している文化財資料</h2>
-
-  <div class="reslist">
-
-    <div class="resitem">
-      <h3>いわた文化財だより</h3>
-      <div class="tags">文化財全般 ／ 最新の話題を知りたい人に</div>
-      <p>磐田市の文化財課が発行する、文化財に関する定期的なたより。発掘調査の成果や、文化財にまつわる話題が、わかりやすく紹介される。まず磐田の文化財の「いま」に触れたい人に。バックナンバーもあわせて見ると、長年の積み重ねがわかる。</p>
-      <div class="links">
-        <a href="https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1002024.html">いわた文化財だより →</a>
-        <a href="https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html">バックナンバー →</a>
-      </div>
-    </div>
-
-    <div class="resitem">
-      <h3>こども文化財だより</h3>
-      <div class="tags">入門 ／ 子どもや初学者に</div>
-      <p>子ども向けに、文化財をやさしく紹介する資料。むずかしい言葉を使わずに書かれているので、文化財にはじめて触れる大人にも、よい入口になる。親子でまちの歴史を学ぶときにも役立つ。</p>
-      <div class="links">
-        <a href="https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1015877.html">こども文化財だより →</a>
-      </div>
-    </div>
-
-    <div class="resitem">
-      <h3>旧赤松家だより</h3>
-      <div class="tags">近代 ／ 赤松則良・近代磐田を調べたい人に</div>
-      <p>旧赤松家記念館にまつわるたより。咸臨丸で渡米し、近代日本の造船を築いた赤松則良と、その邸宅をめぐる近代磐田の話題が読める。明治の磐田や、近代の人物に関心がある人に。</p>
-      <div class="links">
-        <a href="https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1002026.html">旧赤松家だより →</a>
-      </div>
-    </div>
-
-    <div class="resitem">
-      <h3>旧見付学校だより</h3>
-      <div class="tags">近代教育 ／ 学校・教育史を調べたい人に</div>
-      <p>現存最古とされる木造校舎・旧見付学校にまつわるたより。近代の学校や教育の歴史、建物の保存にまつわる話題が読める。学びのまち磐田の歩みをたどりたい人に。</p>
-      <div class="links">
-        <a href="https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1002027.html">旧見付学校だより →</a>
-      </div>
-    </div>
-
-    <div class="resitem">
-      <h3>文書館だより</h3>
-      <div class="tags">古文書・記録 ／ 一次資料にあたりたい人に</div>
-      <p>磐田の古文書や歴史的な記録をあつかう、文書館のたより。土地や家、村の歴史を、当時の文書からたどりたい人に。地域史をより深く調べる段階で、力になる。</p>
-      <div class="links">
-        <a href="https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1005537.html">文書館だより →</a>
-      </div>
-    </div>
-
-    <div class="resitem">
-      <h3>文化財関連図書</h3>
-      <div class="tags">書籍 ／ 本格的に調べたい人に</div>
-      <p>磐田市が刊行している、文化財に関する図書の案内。発掘調査報告書や、まとまった解説書など、一歩進んだ調べものをしたいときの土台になる。</p>
-      <div class="links">
-        <a href="https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1002028/index.html">文化財関連図書の販売 →</a>
-      </div>
-    </div>
-
+  <div class="permit">
+    <b>所蔵・掲載について</b> ── 本ページに掲載するすべての史料は、<b>佐口行正氏の所蔵</b>であり、<b>佐口行正氏の許可を得て掲載</b>しています。画像・目録情報の無断転載および二次利用を禁じます。
   </div>
 
-  <h2>磐田物語での、今後の活用</h2>
+  <div class="finder">
+    <div class="search-wrap">
+      <input type="text" id="q" placeholder="さがす（例：古島竹次郎、東海道、可睡斎、浜垢離、河原町…）" autocomplete="off" aria-label="史料を検索">
+      <button type="button" class="search-clear" id="qClear" hidden aria-label="クリア">×</button>
+    </div>
+    <div class="tabs" id="tabs"></div>
+    <div class="subtabs" id="subtabs" hidden></div>
+    <p class="count" id="count"></p>
+  </div>
 
-  <p>これらの公式資料は、磐田物語にとっても、たいへん心強い土台である。今後、このサイトで記事を深めていくとき、これらのだよりや図書で事実を確かめ、出典として示しながら、地域の記憶を書き留めていきたい。市の公式資料が積み上げてきた正確な情報と、磐田物語が拾いあげる地域に関わり続ける者の視点や暮らしの記憶とが、たがいに補い合えればと考えている。</p>
-
-  <p>公式資料は「確かな幹」であり、磐田物語が記すのは、そこから伸びる「小さな枝葉」のようなものかもしれない。幹がしっかりしているからこそ、枝葉も安心して広げられる。まちの歴史を未来へ引き継ぐために、これらの資料を手がかりとしながら、記録を重ねていきたい。</p>
+  <div class="grid" id="grid"></div>
+  <p class="no-result" id="noResult" hidden>該当する史料が見つからなかった。別のことばで探してみてほしい。</p>
 
   <div class="sourcebox">
-    <h3>主な参考資料</h3>
-    <ul>
-      <li>磐田市公式ウェブサイト「文化財」（いわた文化財だより・こども文化財だより・旧赤松家だより・旧見付学校だより・文書館だより・文化財関連図書への各リンク）</li>
-    </ul>
-    <p class="disclaimer">本ページは、磐田市公式ウェブサイトが公開する各資料への入口として、磐田物語編集部が独自に整理・紹介したものである。各資料の内容は磐田市公式情報を確認されたい。リンク先や資料の有無は変わることがある。出典：磐田市公式ウェブサイト。</p>
-  </div>
-
-  <div class="pager">
-    <a href="https://iwata-monogatari.pages.dev/bunkazai.html">← 文化財トップへ</a>
-    <a href="https://iwata-monogatari.pages.dev/research-notes.html">研究ノートへ →</a>
+    <h3>目録について</h3>
+    <p class="disclaimer" id="metaNote"></p>
+    <p class="disclaimer">商屋名・発行者・年代・寸法は「佐口行正氏所蔵史料一覧」（2011年作成）に基づく。「〇」は原資料の判読不能箇所を示す。中綴じ・複数枚で構成される史料は代表の一枚を掲載している。絵葉書・絵馬・屋台祭礼写真（資料②）の年代・寸法は判明分のみ記載。出典・所蔵：佐口行正氏。掲載許可済み。</p>
   </div>
 </main>
 
+<!-- lightbox -->
+<div class="lb" id="lb">
+  <button class="lb-close" id="lbClose" aria-label="閉じる">×</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="前へ">‹</button>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="次へ">›</button>
+  <div class="lb-inner">
+    <img id="lbImg" src="" alt="">
+    <div class="lb-cap">
+      <span class="lb-name" id="lbName"></span>
+      <span id="lbMeta"></span>
+      <span class="lb-own" id="lbOwn"></span>
+    </div>
+  </div>
+</div>
 
 
+
+<script>
+// 種別の表示順（データに無い種別は自動で末尾に追加される）
+const CAT_ORDER=["引札","浮世絵","銅印","絵葉書","絵馬","屋台・祭礼写真","地図・絵図","鉄道・交通","名所・観光案内","道中・講社","商家・地域資料","記念・行事"];
+let ITEMS=[], cur="すべて", curGrps={}, kw="", view=[];
+const AXIS_ORDER=["年代","発行者","シリーズ","場所・テーマ","種別"];
+const grid=document.getElementById('grid'), countEl=document.getElementById('count'),
+      noRes=document.getElementById('noResult'), q=document.getElementById('q'), qClear=document.getElementById('qClear');
+
+fetch('data/saguchi-shiryo.json').then(r=>r.json()).then(d=>{
+  ITEMS=d.items; document.getElementById('metaNote').textContent=d._meta.note||'';
+  buildTabs(); render(); openFromHash();
+}).catch(e=>{ grid.innerHTML='<p class="no-result">目録データを読み込めませんでした。</p>'; });
+
+// 個別アイテムへのディープリンク（例: ...catalog.html#hk-3 でその史料を開く）
+function openFromHash(){
+  var id=decodeURIComponent((location.hash||'').replace('#','')).trim();
+  if(!id) return;
+  var idx=view.findIndex(function(it){return it.id===id;});
+  if(idx>=0){ openLB(idx); }
+}
+window.addEventListener('hashchange', openFromHash);
+
+function esc(s){return (s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));}
+
+function orderedCats(){
+  const present=new Set(ITEMS.map(i=>i.cat));
+  const ordered=CAT_ORDER.filter(c=>present.has(c));
+  present.forEach(c=>{ if(!ordered.includes(c)) ordered.push(c); });
+  return ["すべて",...ordered];
+}
+
+function buildTabs(){
+  const t=document.getElementById('tabs'); const counts={};
+  ITEMS.forEach(i=>counts[i.cat]=(counts[i.cat]||0)+1);
+  t.innerHTML='';
+  orderedCats().forEach(c=>{
+    const n = c==="すべて"? ITEMS.length : counts[c];
+    const b=document.createElement('button');
+    b.className='tab'+(c===cur?' is-active':''); b.textContent=c+'（'+n+'）'; b.dataset.cat=c;
+    b.onclick=()=>{ cur=c; curGrps={};
+      [...t.children].forEach(x=>x.classList.toggle('is-active',x.dataset.cat===c));
+      buildSubtabs(); render(); };
+    t.appendChild(b);
+  });
+  buildSubtabs();
+}
+
+// 選択中の種別が持つグループ軸を、すべて並列に絞り込み行として表示する
+function buildSubtabs(){
+  const st=document.getElementById('subtabs'); st.innerHTML='';
+  if(cur==="すべて"){ st.hidden=true; return; }
+  // 軸ごとに値と件数を集計
+  const axes={}; // axisName -> {order:[], counts:{}}
+  ITEMS.forEach(i=>{
+    if(i.cat!==cur) return;
+    const g=i.grps||{};
+    Object.keys(g).forEach(ax=>{
+      const val=g[ax]; if(!val) return;
+      if(!axes[ax]) axes[ax]={order:[],counts:{}};
+      if(!(val in axes[ax].counts)){axes[ax].counts[val]=0; axes[ax].order.push(val);}
+      axes[ax].counts[val]++;
+    });
+  });
+  const axisNames=Object.keys(axes).sort((a,b)=>{
+    const ia=AXIS_ORDER.indexOf(a), ib=AXIS_ORDER.indexOf(b);
+    return (ia<0?99:ia)-(ib<0?99:ib);
+  });
+  let shown=0;
+  axisNames.forEach(ax=>{
+    const {order,counts}=axes[ax];
+    if(order.length<2) return; // 値が1種類だけの軸は出さない
+    shown++;
+    const row=document.createElement('div'); row.className='subrow';
+    const label=document.createElement('span'); label.className='subtab-label'; label.textContent=ax+'：'; row.appendChild(label);
+    const sel=curGrps[ax]||"すべて";
+    const total=order.reduce((a,v)=>a+counts[v],0);
+    const mk=(val,n)=>{
+      const b=document.createElement('button');
+      b.className='tab subtab'+(val===sel?' is-active':'');
+      b.textContent=val+'（'+n+'）'; b.dataset.ax=ax; b.dataset.val=val;
+      b.onclick=()=>{ if(val==="すべて") delete curGrps[ax]; else curGrps[ax]=val; buildSubtabs(); render(); };
+      row.appendChild(b);
+    };
+    mk("すべて",total);
+    order.forEach(v=>mk(v,counts[v]));
+    st.appendChild(row);
+  });
+  st.hidden = shown===0;
+}
+
+function render(){
+  view=ITEMS.filter(i=>{
+    if(cur!=="すべて" && i.cat!==cur) return false;
+    if(cur!=="すべて"){
+      const g=i.grps||{};
+      for(const ax in curGrps){ const v=curGrps[ax]; if(v && v!=="すべて" && g[ax]!==v) return false; }
+    }
+    if(kw){ const gv=Object.values(i.grps||{}).join(' ');
+            const hay=(i.name+' '+i.pub+' '+i.era+' '+i.cat+' '+(i.grp||'')+' '+gv+' '+(i.note||'')+' '+(i.typ||'')+' '+i.no).toLowerCase();
+            if(!hay.includes(kw)) return false; }
+    return true;
+  });
+  countEl.textContent='全'+ITEMS.length+'点中　'+view.length+'点を表示';
+  noRes.hidden=view.length>0;
+  grid.innerHTML=view.map((i,idx)=>{
+    const thumb=i.img
+      ? `<div class="thumb" data-idx="${idx}"><img src="${i.img}" alt="${esc(i.name)}" loading="lazy"></div>`
+      : `<div class="thumb"><span class="noimg">画像準備中</span></div>`;
+    const meta=[i.era,i.size].filter(Boolean).map(esc).join('　');
+    const pub=i.pub?`<div class="meta">${esc(i.pub)}</div>`:'';
+    const ser=(i.grp && i.grp!==i.cat)?`<div class="ser">${esc(i.grp)}</div>`:'';
+    return `<div class="card">${thumb}<div class="body">
+      <span class="cno"><span class="badge">${esc(i.cat)}</span>　No.${esc(i.no)}</span>
+      <span class="cname">${esc(i.name)}</span>
+      ${ser}${pub}${meta?`<div class="meta">${meta}</div>`:''}
+      <div class="own">所蔵：佐口行正氏／許可掲載</div>
+    </div></div>`;
+  }).join('');
+  grid.querySelectorAll('.thumb[data-idx]').forEach(el=>el.onclick=()=>openLB(+el.dataset.idx));
+}
+q.addEventListener('input',()=>{kw=q.value.trim().toLowerCase(); qClear.hidden=!q.value; render();});
+qClear.onclick=()=>{q.value='';kw='';qClear.hidden=true;render();q.focus();};
+
+// lightbox
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),
+      lbName=document.getElementById('lbName'),lbMeta=document.getElementById('lbMeta'),
+      lbOwn=document.getElementById('lbOwn'); let lbi=0, lbList=[];
+function openLB(idx){
+  lbList=view.filter(it=>it.img); lbi=lbList.findIndex(it=>it===view[idx]); if(lbi<0)lbi=0; showLB(); lb.classList.add('open'); }
+function showLB(){ const i=lbList[lbi]; if(!i)return; lbImg.src=i.img; lbImg.alt=i.name;
+  lbName.textContent='No.'+i.no+'　'+i.name;
+  lbMeta.textContent=[i.cat,(i.grp&&i.grp!==i.cat?i.grp:''),i.pub,i.era,i.size].filter(Boolean).join('　／　');
+  lbOwn.textContent='所蔵：佐口行正氏（掲載許可済み）／無断転載・二次利用を禁じます'; }
+document.getElementById('lbClose').onclick=()=>lb.classList.remove('open');
+document.getElementById('lbPrev').onclick=e=>{e.stopPropagation();lbi=(lbi-1+lbList.length)%lbList.length;showLB();};
+document.getElementById('lbNext').onclick=e=>{e.stopPropagation();lbi=(lbi+1)%lbList.length;showLB();};
+lb.onclick=e=>{if(e.target===lb)lb.classList.remove('open');};
+document.addEventListener('keydown',e=>{ if(!lb.classList.contains('open'))return;
+  if(e.key==='Escape')lb.classList.remove('open');
+  if(e.key==='ArrowLeft')document.getElementById('lbPrev').click();
+  if(e.key==='ArrowRight')document.getElementById('lbNext').click(); });
+</script>
 <section class="article-policy">
   <h2>この記事について</h2>
   <dl>

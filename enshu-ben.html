@@ -3,144 +3,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>遠州弁辞典 ｜ 磐田物語</title>
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-<meta name="description" content="磐田・中遠地域を中心とした遠州弁の辞典。語彙を意味・用例つきで検索でき、語尾や否定・推量などの文法の特徴もまとめた、遠州のことばの覚え書き。">
-<meta property="og:title" content="遠州弁辞典 ｜ 磐田物語">
-<meta property="og:description" content="磐田・中遠地域の遠州弁を集めた辞典。意味と用例つき、文法の解説つき、検索もできる。">
-<meta property="og:type" content="website">
+<title>佐口行正氏所蔵史料 ── 紙片が伝える見付のまちの記憶</title>
+<meta name="description" content="見付の旧家・佐口行正氏が遺した引札・浮世絵・古地図・鉄道案内・絵葉書・屋台祭礼写真など約336点の史料。明治・大正・昭和の見付のまちの暮らしと商いの記憶を、一点ずつの紙片からたどる。">
+<meta property="og:title" content="佐口行正氏所蔵史料">
+<meta property="og:description" content="引札・浮世絵・古地図・鉄道案内――一点ずつの紙片が、見付のまちの暮らしと商いの記憶を今に伝えている。">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
-    --brown:#2f7fa3;--brown-deep:#1f4f6f;--accent-blue:#356f88;--line:#d8e8ef;
-    --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{margin:0;background:var(--paper);color:var(--ink);
-    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
-    line-height:1.9;font-size:17px;letter-spacing:.02em;
-    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
-  .mincho{font-family:"Shippori Mincho",serif;}
-  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-    background-image:
-      radial-gradient(circle at 20% 30%, rgba(166,113,62,.035) 0, transparent 38%),
-      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);}
-  a{color:var(--brown-deep);text-underline-offset:3px;}
+:root{
+  --paper:#fffdf7;
+  --paper-2:#e9f3fa;
+  --card:#fffdf7;
+  --ink:#22303a;
+  --ink-soft:#4d4a44;
+  --muted:#7c8b93;
+  --line:#d8e8ef;
+  --indigo:#2e4859;
+  --indigo-deep:#21323d;
+  --akane:#9c4334;
+  --gold:#b3893c;
+  --serif:"Shippori Mincho","Noto Serif JP",serif;
+  --sans:"Noto Sans JP",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);color:var(--ink);background:var(--paper);
+  line-height:1.9;font-size:16px;letter-spacing:.01em;
+  text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
+}
+a{color:var(--indigo);text-decoration:none;border-bottom:1px solid transparent;transition:.15s}
+a:hover{color:var(--akane);border-color:var(--akane)}
+img{max-width:100%;display:block;border-radius:8px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
 
-  header.site{background:var(--card);border-bottom:1px solid var(--line);}
-  .bar{max-width:1040px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
-  .brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;}
-  .brand .logo{font-family:"Shippori Mincho",serif;font-weight:800;font-size:26px;color:var(--ink);letter-spacing:.06em;}
-  .brand .logo .dot{color:var(--brown);}
-  .brand .tag{font-size:12.5px;color:var(--ink-soft);letter-spacing:.08em;}
-  nav.menu{display:flex;gap:26px;}
-  nav.menu a{text-decoration:none;color:var(--ink-soft);font-size:14.5px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
-  nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
+/* ===== Header ===== */
+header{
+  position:sticky;top:0;z-index:50;background:rgba(245,239,226,.93);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+}
+.hdr{display:flex;align-items:center;justify-content:space-between;height:56px;gap:14px}
+.logo{font-family:var(--serif);font-weight:700;font-size:1.2rem;letter-spacing:.1em;color:var(--indigo-deep)}
+.nav-links{display:flex;gap:20px;font-size:.85rem;font-weight:500}
+.nav-links a{color:var(--ink-soft);border-bottom:2px solid transparent;padding:4px 0}
+.nav-links a:hover{color:var(--akane);border-color:var(--akane)}
+.breadcrumb{margin-top:12px;font-size:.8rem;color:var(--muted);padding:0 22px}
 
-  .hero{max-width:900px;margin:0 auto;padding:52px 24px 18px;}
-  .hero .eyebrow{font-size:13px;letter-spacing:.22em;color:var(--accent-blue);font-weight:700;margin:0 0 16px;}
-  .hero h1{font-family:"Shippori Mincho",serif;font-weight:800;
-    font-size:clamp(30px,5vw,46px);line-height:1.4;margin:0 0 18px;color:var(--ink);letter-spacing:.04em;}
-  .hero h1 .accent{color:var(--brown-deep);background:linear-gradient(transparent 62%, rgba(166,113,62,.18) 62%);}
-  .hero p{font-size:16.5px;color:var(--ink-soft);margin:0;line-height:2;max-width:660px;}
+/* ===== Hero ===== */
+.hero{
+  padding:60px 0;background:linear-gradient(180deg,rgba(245,239,226,.4),var(--paper-2));
+  border-bottom:1px solid var(--line);
+}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:44px;align-items:center}
+.hero h1{font-family:var(--serif);font-weight:800;color:var(--indigo-deep);
+  font-size:clamp(2.2rem,5vw,3.2rem);line-height:1.2;letter-spacing:.06em;margin-bottom:14px}
+.hero .sub{font-family:var(--serif);font-weight:600;color:var(--akane);
+  font-size:1rem;margin-bottom:20px;letter-spacing:.04em}
+.hero p{color:var(--ink-soft);max-width:540px;line-height:1.9;margin-bottom:8px}
+.hero .note{font-size:.87rem;color:var(--muted);margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+.hero-img{position:relative;height:260px;overflow:hidden;border-radius:12px;box-shadow:0 10px 32px rgba(40,33,20,.16)}
+.hero-img img{width:100%;height:100%;object-fit:cover}
 
-  .tabs{max-width:900px;margin:0 auto;padding:18px 24px 0;display:flex;gap:8px;border-bottom:1px solid var(--line);}
-  .tab{padding:11px 22px;font-size:15px;font-weight:700;font-family:"Shippori Mincho",serif;
-    border:none;background:none;color:var(--ink-soft);cursor:pointer;border-bottom:3px solid transparent;
-    margin-bottom:-1px;transition:.18s;letter-spacing:.04em;}
-  .tab:hover{color:var(--brown-deep);}
-  .tab.active{color:var(--brown-deep);border-color:var(--brown);}
+/* ===== 2-Col Section ===== */
+.section{padding:68px 0;border-bottom:1px solid var(--line)}
+.section.alt{background:var(--paper-2)}
+.sec-title{font-family:var(--serif);font-weight:700;color:var(--indigo-deep);
+  font-size:clamp(1.6rem,3vw,2.1rem);letter-spacing:.04em;line-height:1.3;margin-bottom:12px}
+.sec-head{margin-bottom:34px}
+.sec-head .kicker{display:block;font-size:.72rem;letter-spacing:.3em;color:var(--gold);
+  font-weight:700;margin-bottom:8px;text-transform:uppercase}
+.two-col{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:flex-start}
+.two-col-img{position:relative}
+.two-col-img img{border-radius:10px;box-shadow:0 8px 24px rgba(40,33,20,.1);margin-bottom:12px}
+.two-col-cap{font-size:.84rem;color:var(--muted);line-height:1.7;letter-spacing:.01em}
+.two-col-cap em{display:block;font-style:normal;font-weight:600;color:var(--ink-soft);margin-top:8px}
+.two-col-text h3{font-family:var(--serif);font-weight:700;color:var(--ink);
+  font-size:1.32rem;letter-spacing:.04em;line-height:1.4;margin-bottom:16px}
+.two-col-text p{color:var(--ink-soft);margin-bottom:14px;line-height:1.9}
 
-  .panel{display:none;}
-  .panel.active{display:block;}
+/* Small images grid ===== */
+.img-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.img-pair img{border-radius:8px;box-shadow:0 6px 18px rgba(40,33,20,.09)}
+.img-trio{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:12px}
+.img-trio img{border-radius:8px;box-shadow:0 6px 18px rgba(40,33,20,.09)}
 
-  .tools{max-width:900px;margin:0 auto;padding:22px 24px 0;}
-  .search-box{position:relative;margin-bottom:18px;}
-  .search-box input{
-    width:100%;padding:15px 18px 15px 48px;font-size:16px;
-    border:1.5px solid var(--line);border-radius:4px;background:var(--card);color:var(--ink);
-    font-family:inherit;box-shadow:var(--shadow);transition:.2s;}
-  .search-box input:focus{outline:none;border-color:var(--brown);}
-  .search-box .icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--ink-soft);font-size:18px;}
-  .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;}
-  .chip{padding:7px 16px;font-size:13.5px;font-weight:500;border:1.5px solid var(--line);
-    border-radius:999px;background:var(--card);color:var(--ink-soft);cursor:pointer;transition:.18s;font-family:inherit;}
-  .chip:hover{border-color:var(--brown);color:var(--brown-deep);}
-  .chip.active{background:var(--brown);color:#fff;border-color:var(--brown);}
-  .count{font-size:13px;color:var(--ink-soft);margin:10px 2px 0;}
+/* About box ===== */
+.about-box{
+  background:var(--card);border:2px solid var(--line);border-radius:12px;
+  padding:28px 26px;margin:32px 0 0;
+}
+.about-box h4{font-family:var(--serif);font-weight:700;color:var(--indigo-deep);
+  font-size:1.08rem;letter-spacing:.04em;margin-bottom:12px}
+.about-box p{color:var(--ink-soft);margin-bottom:12px;font-size:.95rem;line-height:1.85}
+.about-box p:last-child{margin-bottom:0}
 
-  .dict{max-width:900px;margin:0 auto;padding:18px 24px 24px;}
-  .entry{background:var(--card);border:1px solid var(--line);border-radius:5px;
-    padding:22px 26px;margin-bottom:14px;box-shadow:var(--shadow);transition:.18s;}
-  .entry:hover{border-color:var(--brown);}
-  .entry .top{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px;}
-  .entry .word{font-family:"Shippori Mincho",serif;font-size:24px;font-weight:700;color:var(--ink);letter-spacing:.04em;}
-  .entry .kana{font-size:13px;color:var(--ink-soft);}
-  .entry .cat{font-size:11.5px;font-weight:700;color:var(--accent-blue);border:1px solid var(--line);
-    border-radius:999px;padding:3px 11px;margin-left:auto;white-space:nowrap;}
-  .entry .mean{margin:0 0 12px;font-size:16px;color:var(--ink);line-height:1.8;}
-  .entry .ex{background:var(--paper-deep);border-radius:3px;padding:12px 16px;font-size:14.5px;color:var(--ink);line-height:1.8;}
-  .entry .ex .label{font-weight:700;color:var(--brown-deep);font-size:12.5px;margin-right:8px;}
-  .entry .ex .std{display:block;margin-top:4px;color:var(--ink-soft);font-size:13.5px;}
-  .empty{text-align:center;padding:50px 20px;color:var(--ink-soft);}
-  .empty .mincho{display:block;font-size:18px;color:var(--ink);margin-bottom:8px;}
+/* CTA ===== */
+.cta-box{
+  background:var(--indigo-deep);color:#f3ede0;border-radius:14px;
+  padding:42px 36px;margin-top:40px;text-align:center;box-shadow:0 12px 28px rgba(40,33,20,.14)
+}
+.cta-box h3{font-family:var(--serif);font-weight:700;color:#fff;font-size:1.26rem;
+  letter-spacing:.04em;margin-bottom:10px}
+.cta-box p{color:#ded5c4;margin-bottom:22px;font-size:.96rem}
+.cta-box a{
+  display:inline-block;background:var(--gold);color:#241c0c;font-weight:700;
+  font-size:.92rem;padding:13px 32px;border-radius:999px;transition:.2s;
+  letter-spacing:.04em;border-bottom:none
+}
+.cta-box a:hover{background:#caa45a}
 
-  .grammar{max-width:900px;margin:0 auto;padding:30px 24px 24px;}
-  .gsec{margin-bottom:40px;}
-  .gsec h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:22px;color:var(--ink);
-    letter-spacing:.03em;margin:0 0 16px;padding-left:14px;border-left:4px solid var(--brown);line-height:1.5;}
-  .gsec p{margin:0 0 16px;font-size:16px;color:var(--ink);line-height:1.95;}
-  .gtable{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);
-    border-radius:5px;overflow:hidden;box-shadow:var(--shadow);font-size:14.5px;}
-  .gtable th{background:var(--paper-deep);color:var(--ink);font-weight:700;text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);font-size:13.5px;}
-  .gtable td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--ink);vertical-align:top;}
-  .gtable tr:last-child td{border-bottom:none;}
-  .gtable td .ex{color:var(--ink-soft);font-size:13px;display:block;margin-top:3px;}
-  .gnote{background:var(--paper-deep);border-radius:4px;padding:18px 22px;font-size:14.5px;color:var(--ink-soft);line-height:1.85;margin:16px 0;}
-  .gnote .mincho{color:var(--brown-deep);font-size:15px;}
+/* Related ===== */
+.related{padding:44px 0}
+.rel-h{font-family:var(--serif);font-weight:700;color:var(--indigo-deep);
+  font-size:1.08rem;letter-spacing:.04em;margin-bottom:14px}
+.rel-links{display:flex;flex-wrap:wrap;gap:12px}
+.rel-links a{
+  display:inline-block;background:var(--card);border:1px solid var(--line);
+  padding:9px 18px;border-radius:8px;font-size:.88rem;color:var(--indigo);
+  font-weight:600;transition:.2s;letter-spacing:.04em
+}
+.rel-links a:hover{background:var(--indigo);color:#fff}
 
-  .note{max-width:900px;margin:0 auto 40px;padding:0 24px;}
-  .note .inner{background:var(--paper-deep);border-radius:4px;padding:22px 26px;font-size:14px;color:var(--ink-soft);line-height:1.85;}
-  .note .src{margin-top:12px;font-size:12.5px;}
+/* ===== Footer ===== */
+footer{
+  background:#1a2126;color:#cfe2ec;padding:46px 0 28px;font-size:.88rem
+}
+.foot-top{display:flex;justify-content:space-between;gap:40px;margin-bottom:32px}
+.foot-brand{font-family:var(--serif);font-weight:700;font-size:1.2rem;
+  letter-spacing:.1em;color:#f3ede0;margin-bottom:8px}
+.foot-brand p{font-family:var(--sans);font-weight:400;font-size:.8rem;
+  color:#9b9384;margin-top:8px;max-width:380px;line-height:1.8}
+.foot-nav{display:flex;gap:18px}
+.foot-nav a{color:#cfe2ec;border-bottom:1px solid transparent;padding-bottom:2px;transition:.2s}
+.foot-nav a:hover{color:#fff;border-color:var(--gold)}
+.foot-sns{margin-top:14px;display:flex;gap:12px;font-size:.78rem}
+.foot-sns a{color:#9b9384}
+.foot-sns a:hover{color:var(--gold)}
+.copy{border-top:1px solid #2c343a;margin-top:28px;padding-top:16px;color:#857d6f;font-size:.75rem;letter-spacing:.04em}
 
-  footer.site{background:var(--ink);color:#eaf4fa;}
-  footer.site .inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
-  footer .f-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-  footer .f-brand .dot{color:var(--brown);}
-  footer .f-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
-  footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
-  footer .links{width:100%;margin-top:6px;}
-  footer .links .lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-  footer .links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
-  footer .links li{font-size:13px;line-height:1.6;}
-  footer .links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-  footer .links a:hover{color:#eef6fb;border-color:#6fb7d8;}
-  footer .links .desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
-  footer .sns{width:100%;margin-top:20px;}
-  footer .sns .lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-  footer .sns .icons{display:flex;gap:14px;}
-  footer .sns a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
-  footer .sns a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
-  footer .sns svg{width:19px;height:19px;fill:currentColor;}
-
-  @media(max-width:760px){
-    nav.menu{display:none;}
-    .entry .cat{margin-left:0;}
-    .tabs{overflow-x:auto;}
-    .gtable{font-size:13px;}
-    .gtable th,.gtable td{padding:8px 10px;}
-  }
+/* ===== Responsive ===== */
+@media(max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:28px}
+  .hero-img{height:220px}
+  .two-col{grid-template-columns:1fr;gap:32px}
+  .two-col-img{order:-1}
+  .section{padding:48px 0}
+}
+@media(max-width:620px){
+  .nav-links{display:none}
+  .hero h1{font-size:clamp(1.8rem,4vw,2.4rem)}
+  .sec-title{font-size:clamp(1.3rem,3vw,1.6rem)}
+  .hero{padding:42px 0}
+  .section{padding:38px 0}
+  .two-col{gap:22px}
+  .img-pair{grid-template-columns:1fr}
+  .img-trio{grid-template-columns:1fr 1fr}
+  .foot-top{flex-direction:column;gap:24px}
+  .foot-nav{flex-direction:column;gap:10px}
+}
 </style>
-  <link rel="canonical" href="https://iwata-monogatari.pages.dev/enshu-ben.html">
+  <link rel="canonical" href="https://iwata-monogatari.pages.dev/c020.html">
 <style id="reno-blocks">
 .article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
 .article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
@@ -161,6 +186,7 @@
 </head>
 <body>
 
+<!-- ===== Header ===== -->
 <!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
 <header class="gh-site">
   <div class="gh-bar">
@@ -169,240 +195,220 @@
       <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
     </a>
     <nav class="gh-menu" aria-label="主要ナビゲーション">
-      <a href="/hajimeni.html">はじめに</a>
-      <a href="/000-kensho.html">憲章</a>
-      <a href="/saguchi-shiryo-catalog.html">佐口史料室</a>
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
       <a href="/#new">新着</a>
       <a href="/bbs.html">掲示板</a>
     </nav>
   </div>
 </header>
+<div class="gh-breadcrumb">
+    <a href="/">磐田物語</a> ／ 史料アーカイブ ／ <strong>佐口行正氏所蔵史料</strong>
+  </div>
 
+<!-- ===== Hero ===== -->
 <section class="hero">
-  <p class="eyebrow">ENSHU BEN ｜ 磐田・中遠のことば</p>
-  <h1>遠州弁辞典<br><span class="accent">ことばに残る、まちの記憶</span></h1>
-  <p>「だら」「だに」「やぶせったい」── 磐田を中心とする中遠地域で受け継がれてきた方言、遠州弁。何気なく使っている言葉も、外の人には通じない、このまちならではのことばかもしれない。語彙と、その使い方、そして文法の特徴を集めた覚え書きである。</p>
+  <div class="wrap">
+    <div>
+      <span style="display:block;font-size:.72rem;letter-spacing:.3em;color:var(--gold);font-weight:700;margin-bottom:8px;text-transform:uppercase">SAGUCHI COLLECTION</span>
+      <h1>佐口行正氏所蔵史料<br>── 紙片が伝える、見付のまちの記憶</h1>
+      <p class="sub" style="margin-top:16px">引札・浮世絵・古地図・鉄道案内・絵葉書・屋台祭礼写真など、約336点</p>
+      <p>見付のまちに、ひとつの史料群が遺されている。佐口行正氏が長年にわたり守り伝えてきた、引札・浮世絵・古地図・鉄道案内・絵葉書・屋台祭礼写真など、約336点におよぶ紙資料・写真資料のまとまりである。</p>
+      <div class="note" style="margin-top:24px;font-weight:600">
+        すべての史料は佐口行正氏の所蔵であり、佐口行正氏の許可を得て掲載しています。無断転載・二次利用を禁じます。
+      </div>
+    </div>
+    <figure class="hero-img">
+      <img src="https://iwata-monogatari.pages.dev/saguchi/img/hk-33.jpg" alt="松風屋熊太郎の引札暦 明治25年">
+    </figure>
+  </div>
 </section>
 
-<div class="tabs">
-  <button class="tab active" data-tab="dict">ことばを引く</button>
-  <button class="tab" data-tab="grammar">文法と語法</button>
-</div>
-
-<div class="panel active" id="panel-dict">
-  <div class="tools">
-    <div class="search-box">
-      <span class="icon">🔍</span>
-      <input type="text" id="search" placeholder="ことばを検索（例：だら、やぶせったい、意味の言葉でも）" autocomplete="off">
+<!-- ===== 佐口行正氏について ===== -->
+<section class="section alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">About Saguchi</span>
+      <h2 class="sec-title">佐口行正氏について</h2>
     </div>
-    <div class="filters" id="filters"></div>
-    <p class="count" id="count"></p>
-  </div>
-  <div class="dict" id="dict"></div>
-</div>
-
-<div class="panel" id="panel-grammar">
-  <div class="grammar">
-
-    <div class="gsec">
-      <h2>遠州弁という、ことばの土地</h2>
-      <p>磐田を中心とする中遠地域は、日本語の東西方言が交わる「漸移地帯」にある。否定に西日本ふうの「〜ん」を使う一方、東日本の特徴も併せ持つ。天竜川の東西、中遠と東遠でも少しずつことばが変わる、連続体としての方言である。同じ遠州弁でも、浜松・袋井・磐田で違いがあり、世代によっても使い方が移ろっている。</p>
-    </div>
-
-    <div class="gsec">
-      <h2>語尾でわかる、遠州弁</h2>
-      <p>遠州弁らしさは、文末に最もよく表れる。同じ「〜だろう」でも、確信の度合いや相手への配慮によって「ずら・だら・ら」を使い分け、さらにイントネーションでニュアンスが変わる。近年は古い「ずら」が衰退し、「だら」「ら」が若い世代まで広く使われている。</p>
-      <table class="gtable">
-        <tr><th>言い方</th><th>意味・はたらき</th><th>例</th></tr>
-        <tr><td>だら／ら</td><td>〜だろう、〜でしょ。推量・確認を求める。遠州弁の代表格。</td><td>行くら？<span class="ex">＝行くでしょ？</span></td></tr>
-        <tr><td>ずら</td><td>〜だろう。古くからの推量表現。今は高齢層中心で衰退傾向。</td><td>そうずらなあ。<span class="ex">＝そうだろうなあ。</span></td></tr>
-        <tr><td>だに／に</td><td>〜だよ、〜なんだよ。断定・念押し。名詞・形容動詞には「だに」、動詞・形容詞には「に」。</td><td>明日から10月だに。／早いに。</td></tr>
-        <tr><td>だもんで</td><td>〜だから。理由を、押しつけずやわらかく述べる。静岡を代表する接続表現。</td><td>雨だもんで、傘持ってきな。</td></tr>
-        <tr><td>じゃんね／じゃんか</td><td>〜じゃない。同意を求めたり、話を次へ繋ぐ。「じゃんか」は念押し・詰問。</td><td>昨日さ、〜だったじゃんね。</td></tr>
-        <tr><td>け</td><td>〜か。「〜か？」の角を取り、やわらかく問う。</td><td>これけ？<span class="ex">＝これなの？</span></td></tr>
-      </table>
-      <div class="gnote"><span class="mincho">同じ「だら」でも、イントネーション次第。</span><br>行くら？（上げる）＝行くよね？／ 行くらぁ（下げて伸ばす）＝行くに決まってる／ 行くらっ？（つめる）＝行きましょうよ。限られた語尾に抑揚を掛けて、繊細に気持ちを伝え分ける。</div>
-    </div>
-
-    <div class="gsec">
-      <h2>否定・推量・命令・誘い</h2>
-      <p>文法の核は、否定・推量・勧誘・命令にある。否定は西日本ふうの「〜ん」。過去否定には古い「〜なんだ」と新しい「〜んかった」が、世代で競合する。誘いの「〜まい」、やわらかい命令の「〜りん／〜きん」「〜ない」「〜ごう」も特徴的である。</p>
-      <table class="gtable">
-        <tr><th>はたらき</th><th>遠州弁</th><th>例</th></tr>
-        <tr><td>否定</td><td>〜ん</td><td>行かん<span class="ex">＝行かない</span></td></tr>
-        <tr><td>過去否定</td><td>〜んかった／〜なんだ</td><td>降らなんだ<span class="ex">＝降らなかった</span></td></tr>
-        <tr><td>可能（ら抜き・れ足す）</td><td>食べれる／行けれる</td><td>これ食べれる？／一人で行けれる</td></tr>
-        <tr><td>強い不可能</td><td>〜やせん／〜れやせん</td><td>そんなん行けやせん<span class="ex">＝到底行けない</span></td></tr>
-        <tr><td>勧誘</td><td>〜まい(か)／やらまい</td><td>みんなでやらまい<span class="ex">＝みんなでやろう</span></td></tr>
-        <tr><td>やわらか命令</td><td>〜ない／〜ごう／〜りん</td><td>食べてごぅ／早く起きない</td></tr>
-      </table>
-    </div>
-
-    <div class="gsec">
-      <h2>「ん」に集まる助詞、品詞のつくりかえ</h2>
-      <p>会話のテンポを重んじて、格助詞「が・の・を・に」がしばしば落ちたり、撥音「ん」に置きかわったりする。また、形容動詞の語尾に「い」を付けて形容詞にする、独特の言い回しもある。</p>
-      <table class="gtable">
-        <tr><th>種類</th><th>標準語 → 遠州弁</th></tr>
-        <tr><td rowspan="3">助詞が「ん」に</td><td>雨が降ってきた → 雨ん降ってきた</td></tr>
-        <tr><td>俺の手ぬぐい → 俺ん手ぬぐい</td></tr>
-        <tr><td>大工になった → 大工んなった</td></tr>
-        <tr><td rowspan="2">形容動詞→形容詞</td><td>横着な → 横着い／上手な → 上手い(じょうずい)</td></tr>
-        <tr><td>賑やかな → 賑やかい／丈夫な → 丈夫い</td></tr>
-      </table>
-    </div>
-
-    <div class="gsec">
-      <h2>「イワタ」のアクセント</h2>
-      <p>遠州では、ことばの最初の音を強く言う「頭高型」が好まれる。標準語では平板に言う「あくび」も、遠州では「あ」を強く言う。地名でもこの傾向は強い。「磐田」を、全国的な放送では平板に「イワタ」と読むが、地元では「イ」を強く言う頭高型の「イワタ」である。</p>
-      <div class="gnote"><span class="mincho">「ジュビロ磐田」のアクセント問題。</span><br>1993年のJリーグ発足で全国放送が平板の「イワタ」と読んだところ、地元から「発音が違う」と声が上がった。地元放送局やクラブの働きかけで、今では全国でも地元と同じ頭高型の「イワタ」で読まれている。アクセントは、地域への帰属意識そのものなのである。</div>
-    </div>
-
-    <div class="gsec">
-      <h2>「やらまいか」── ことばに宿る気質</h2>
-      <p>遠州人の気質を最もよく表すのが「やらまいか（一緒にやろうじゃないか、とにかくやってみよう）」である。失敗を恐れず新しいことに挑む進取の気性を表し、ヤマハやスズキといった企業を生んだ風土の支柱ともいわれる。一方で、「いいにする」「やっきりこく」「しょんない」といった言葉には、対立を避け、穏やかに物事を収めようとする心性もにじむ。挑む気概と、和を尊ぶやわらかさ。その両方が、遠州のことばには息づいている。</p>
-    </div>
-
-  </div>
-</div>
-
-<div class="note">
-  <div class="inner">
-    この辞典は、磐田・中遠地域を中心とした遠州弁を集めたものである。遠州弁は浜松・袋井・磐田など地域によって、また世代によって使い方や意味に違いがあり、ここに載せた意味や用例は一例である。土地や人によって異なる場合があり、お気づきの点は少しずつ書き加え、直していきたい。
-    <div class="src">主な参考：磐田市周辺部の遠州弁に関する調査報告（音声・形態・語用論的特徴の分析）／磐田市立図書館所蔵『磐田地方の方言集』ほか郷土資料／静岡大学・国立国語研究所系の方言研究 ほか</div>
-  </div>
-</div>
-
-
-
-<script>
-const DATA = [
-  {w:"だら", k:"だら", cat:"語尾・あいさつ", m:"〜だろう、〜でしょう。推量や確認を求めるときの語尾。遠州弁を代表する言い回し。古い「ずら」に代わって若い世代まで広く使う。", ex:"今日の夜ご飯カレーだら？", std:"今夜はカレーでしょ？"},
-  {w:"ずら", k:"ずら", cat:"語尾・あいさつ", m:"〜だろう。古くからの推量表現。「だら」より古風で、今は高齢層中心。衰退傾向にある。", ex:"そうずらなあ。", std:"そうだろうなあ。"},
-  {w:"ら", k:"ら／らぁ", cat:"語尾・あいさつ", m:"〜だろう、〜でしょ。「だら」と同じく確認・同意を求める。語尾を伸ばして「らぁ」とも。動詞・形容詞に付きやすい。", ex:"飲むら？", std:"飲むでしょ？／飲む？"},
-  {w:"だに", k:"だに", cat:"語尾・あいさつ", m:"〜だよ、〜なんだよ。断定や情報提供。名詞・形容動詞に付く。「に」より主張や念押しが強い。", ex:"明日から10月だに。", std:"明日から10月だよ。"},
-  {w:"に", k:"に／にぃ", cat:"語尾・あいさつ", m:"〜よ、〜ね。動詞・形容詞に直接付いて、やわらかく事実を伝える。", ex:"早いに。", std:"早いよ。"},
-  {w:"だもんで", k:"だもんで", cat:"語尾・あいさつ", m:"〜だから、〜なので。理由を、押しつけずやわらかく述べる。静岡・遠州を代表する接続表現。形容詞には「もんで」。", ex:"寝不足だもんで、眠いわ。", std:"寝不足だから、眠いよ。"},
-  {w:"じゃんね", k:"じゃんね", cat:"語尾・あいさつ", m:"〜じゃない、〜だよね。同意を求めたり、話を次へ繋いだりする。「じゃんか」は念押し・詰問。", ex:"昨日さ、雨だったじゃんね。", std:"昨日、雨だったよね。"},
-  {w:"け", k:"け", cat:"語尾・あいさつ", m:"〜か。「〜か？」の角を取って、やわらかく問う。体言にも用言にも付く。", ex:"これけ？", std:"これなの？"},
-  {w:"っち", k:"っち", cat:"語尾・あいさつ", m:"〜のところ、〜の家。親しい人や集団を表す接尾辞。「オレっち」で自分の家・自分たち。", ex:"今度、〇〇っち行ってみる？", std:"今度、〇〇の家に行ってみる？"},
-  {w:"っちゅう", k:"っちゅう", cat:"語尾・あいさつ", m:"〜という。「〜という」がつづまった形。", ex:"田中っちゅう人、知っとる？", std:"田中という人、知ってる？"},
-
-  {w:"やぶせったい", k:"やぶせったい", cat:"形容・ようす", m:"うっとうしい、わずらわしい、じれったい。髪が目にかかるような、もどかしい不快感にも使う。", ex:"前髪が伸びてやぶせったい。", std:"前髪が伸びてうっとうしい。"},
-  {w:"えらい", k:"えらい", cat:"形容・ようす", m:"疲れた、しんどい。立派の意ではなく、体がきつい意で使う。", ex:"今日は歩きすぎてえらいわ。", std:"今日は歩きすぎて疲れたよ。"},
-  {w:"しょんない", k:"しょんない", cat:"形容・ようす", m:"しょうがない、仕方がない。諦めの気持ちから、軽い非難まで幅広く使う。", ex:"見つからんもんはしょんないら。", std:"見つからない物は仕方ないよ。"},
-  {w:"こすい", k:"こすい", cat:"形容・ようす", m:"ずるい、せこい。", ex:"あいつ、こすいことするなあ。", std:"あいつ、ずるいことをするなあ。"},
-  {w:"こわい", k:"こわい", cat:"形容・ようす", m:"（食べ物などが）硬い。恐怖の意ではなく、餅などの物理的な硬さを指す。", ex:"このお餅、まだこわいわ。", std:"このお餅、まだ硬いよ。"},
-  {w:"おぞい", k:"おぞい", cat:"形容・ようす", m:"粗悪な、品質が悪い、みすぼらしい。", ex:"おぞい品物つかまされた。", std:"粗悪な品物を買わされた。"},
-  {w:"みるい", k:"みるい", cat:"形容・ようす", m:"幼い、未熟な。元は茶業で、摘む前の柔らかい新芽を指した言葉。転じて人の若さ・未熟さに。", ex:"1年生はみるくて可愛いなあ。", std:"1年生は幼くて可愛いなあ。"},
-  {w:"ひずるしい", k:"ひずるしい", cat:"形容・ようす", m:"まぶしい。日照の強い遠州の、夏のカンカン照りの眩しさを表す。「ひどろしい」とも。", ex:"今日はひずるしくって目が開けれん。", std:"今日はまぶしくて目が開けられない。"},
-  {w:"ぶしょったい", k:"ぶしょったい", cat:"形容・ようす", m:"だらしない、無精な感じでみっともない。", ex:"そんなぶしょったい格好で行くの。", std:"そんなだらしない格好で行くの。"},
-  {w:"おちゃっぴい", k:"おちゃっぴい", cat:"形容・ようす", m:"おしゃべりで活発な（女の子）。お転婆。", ex:"あの子はおちゃっぴいだなあ。", std:"あの子はお転婆だなあ。"},
-  {w:"ちんちん", k:"ちんちん", cat:"形容・ようす", m:"（お湯などが）とても熱いこと。やかんが沸いた状態など。", ex:"お湯がちんちんだに、気いつけて。", std:"お湯がすごく熱いから、気をつけて。"},
-  {w:"いずようない", k:"いずようない", cat:"形容・ようす", m:"居づらい、居心地が悪い、居場所がない。", ex:"あの場はいずようなかったわ。", std:"あの場は居づらかったよ。"},
-
-  {w:"いいにする", k:"いいにする", cat:"気持ち", m:"〜にしておく、やめておく、これで良しとする。対立を避け、穏やかに物事を収めるときの言葉。中止・妥協・許容・中断と幅広く使う。", ex:"雨だで、今日のジョギングはいいにするか。", std:"雨だから、今日のジョギングはやめておくか。"},
-  {w:"やっきりこく", k:"やっきりこく", cat:"気持ち", m:"腹が立つ、いらいらする。直接ぶつけられず、諦めまじりに愚痴としてこぼすような、鬱屈した怒り。「やっきりする」とも。", ex:"あの人またサボってて、やっきりするわ。", std:"あの人またサボってて、腹が立つよ。"},
-  {w:"ちんぷりかえる", k:"ちんぷりかえる", cat:"気持ち", m:"ふてくされる、すねる、へそを曲げる。激しい怒りではなく、どこか愛嬌のあるすね方。", ex:"ちょっと言われてちんぷりかえっとる。", std:"少し言われてふてくされている。"},
-  {w:"やいやい", k:"やいやい", cat:"気持ち", m:"やれやれ、いやはや。がっかりした時や呆れた時に発する言葉。", ex:"やいやい、もっと気いつけて話なよ。", std:"やれやれ、もっと気をつけて話しなよ。"},
-
-  {w:"ど", k:"ど〜", cat:"程度・量", m:"ものすごく、超。強める接頭辞。「どでかい」など。やや乱暴できつい印象。", ex:"どでかい荷物が届いた。", std:"ものすごく大きい荷物が届いた。"},
-  {w:"ばか", k:"ばか", cat:"程度・量", m:"とても、すごく。程度を強める。けなす意味ではない。", ex:"今日はばか暑いなあ。", std:"今日はすごく暑いなあ。"},
-  {w:"がんこ", k:"がんこ", cat:"程度・量", m:"とても、すごく。頑固の意ではなく、程度を強める。", ex:"がんこ混んどったわ。", std:"すごく混んでいたよ。"},
-  {w:"いっちょ", k:"いっちょ", cat:"程度・量", m:"とても、たくさん、いっぱい。", ex:"今日はいっちょ働いたわ。", std:"今日はたくさん働いたよ。"},
-  {w:"どべ", k:"どべ", cat:"程度・量", m:"最下位、びり。", ex:"かけっこでどべだったわ。", std:"かけっこでびりだったよ。"},
-  {w:"さら", k:"〜さら", cat:"程度・量", m:"〜ごと、〜全部。残さず全体を、の意。「まるさら」で丸ごと。", ex:"りんご、皮さら食べる。", std:"りんご、皮ごと食べる。"},
-
-  {w:"とぶ", k:"とぶ", cat:"動作・行い", m:"走る、走っていく。飛行ではなく地上を急いで駆けること。「とんでく」とも。", ex:"急ぐで、とんでいきな。", std:"急ぐから、走っていきなさい。"},
-  {w:"うっちゃる", k:"うっちゃる", cat:"動作・行い", m:"捨てる、放っておく。「うっちゃっとく」で放置する。", ex:"いらんもんは、うっちゃっといて。", std:"いらない物は、捨てておいて。"},
-  {w:"ほかる", k:"ほかる", cat:"動作・行い", m:"捨てる。「ほかっといて」で捨てておいて。", ex:"その紙、ほかっといて。", std:"その紙、捨てておいて。"},
-  {w:"ほっぽかす", k:"ほっぽかす", cat:"動作・行い", m:"ほったらかす、放置する、無視する。軽い非難を含む。", ex:"あたしのことほっぽかしてどこ行ってたの。", std:"私のことほったらかしてどこ行ってたの。"},
-  {w:"はならかす", k:"はならかす", cat:"動作・行い", m:"離す、間を空ける。", ex:"洗濯物ははならかして干さんと。", std:"洗濯物は離して干さないと。"},
-  {w:"よさりかかる", k:"よさりかかる", cat:"動作・行い", m:"寄りかかる、体重を預ける。", ex:"壁によさりかかったらいかんに。", std:"壁に寄りかかったらだめだよ。"},
-  {w:"とんます", k:"とんます", cat:"動作・行い", m:"捕まえる。虫などを捕獲すること。", ex:"てんとう虫とんました。", std:"てんとう虫を捕まえた。"},
-  {w:"かじる", k:"かじる", cat:"動作・行い", m:"引っ掻く。歯で噛むだけでなく、爪で皮膚を掻くことも指す。", ex:"かさぶたかじっちゃいかんに。", std:"かさぶたを掻いちゃだめだよ。"},
-  {w:"いぼる", k:"いぼる", cat:"動作・行い", m:"ぬかるみなどに足を取られてはまる、めり込む。", ex:"田んぼでいぼっちゃった。", std:"田んぼでぬかるみにはまってしまった。"},
-  {w:"つる", k:"つる", cat:"動作・行い", m:"（机などを）持ち上げて運ぶ。「机をつる」で机を運ぶ。", ex:"みんなで机つって。", std:"みんなで机を運んで。"},
-  {w:"こずむ", k:"こずむ", cat:"動作・行い", m:"（粉や沈殿物が）底にたまる、沈む。", ex:"片栗粉がこずんどる。", std:"片栗粉が底に沈んでいる。"},
-  {w:"のうなる", k:"のうなる", cat:"動作・行い", m:"無くなる。「無う(のう)なる」から。", ex:"財布がのうなった。", std:"財布が無くなった。"},
-  {w:"ちゃっと", k:"ちゃっと", cat:"動作・行い", m:"急いで、さっと。迅速な行動を促すときに。", ex:"塩切れたで、ちゃっと買ってくるに。", std:"塩が切れたから、急いで買ってくるよ。"},
-  {w:"血が死ぬ", k:"ちがしぬ", cat:"動作・行い", m:"内出血する。打撲などで皮膚の下が鬱血し、変色した状態。", ex:"ぶつけて血が死んじゃった。", std:"ぶつけて内出血してしまった。"},
-  {w:"頭を切る", k:"あたまをきる", cat:"動作・行い", m:"髪を切る、散髪する。頭そのものではなく、髪の意。", ex:"そろそろ頭切ってこんと。", std:"そろそろ髪を切ってこないと。"},
-
-  {w:"くろ", k:"くろ", cat:"名詞・もの", m:"端、隅、へり。色の黒ではなく、空間的な境界を指す。", ex:"車来るで、道のくろに寄んな。", std:"車が来るから、道の端に寄りなさい。"},
-  {w:"せんひき", k:"せんひき", cat:"名詞・もの", m:"定規、物差し。「線引き」から。静岡で広く使われる。", ex:"せんひき取って。", std:"定規を取って。"},
-  {w:"あいさ", k:"あいさ", cat:"名詞・もの", m:"間、すきま。", ex:"たんすと壁のあいさに落ちた。", std:"たんすと壁のあいだに落ちた。"},
-  {w:"てんこちょ", k:"てんこちょ", cat:"名詞・もの", m:"てっぺん、頂上。", ex:"山のてんこちょまで登った。", std:"山のてっぺんまで登った。"},
-  {w:"ねち", k:"ねち", cat:"名詞・もの", m:"歯ぐき、歯茎。高齢層に残る言い方。", ex:"ねちが腫れてまった。", std:"歯ぐきが腫れてしまった。"},
-  {w:"おっしー", k:"おっしー", cat:"名詞・もの", m:"味噌汁。やや古い言い方。", ex:"おっしー、もう一杯。", std:"味噌汁、もう一杯。"}
-];
-
-const CATS = ["すべて","語尾・あいさつ","形容・ようす","気持ち","程度・量","動作・行い","名詞・もの"];
-
-let activeCat = "すべて";
-let keyword = "";
-
-const dictEl = document.getElementById("dict");
-const countEl = document.getElementById("count");
-const filtersEl = document.getElementById("filters");
-const searchEl = document.getElementById("search");
-
-document.querySelectorAll(".tab").forEach(t=>{
-  t.onclick=()=>{
-    document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));
-    document.querySelectorAll(".panel").forEach(x=>x.classList.remove("active"));
-    t.classList.add("active");
-    document.getElementById("panel-"+t.dataset.tab).classList.add("active");
-  };
-});
-
-CATS.forEach(c=>{
-  const b=document.createElement("button");
-  b.className="chip"+(c==="すべて"?" active":"");
-  b.textContent=c;
-  b.onclick=()=>{
-    activeCat=c;
-    document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));
-    b.classList.add("active");
-    render();
-  };
-  filtersEl.appendChild(b);
-});
-
-searchEl.addEventListener("input",e=>{ keyword=e.target.value.trim(); render(); });
-
-function esc(s){return s.replace(/[&<>]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[m]));}
-
-function render(){
-  let list=DATA.filter(d=>{
-    const catOk = activeCat==="すべて" || d.cat===activeCat;
-    const kw = keyword.toLowerCase();
-    const kwOk = !kw || (d.w+d.k+d.m+d.ex+d.std).toLowerCase().includes(kw);
-    return catOk && kwOk;
-  });
-  list.sort((a,b)=>a.k.localeCompare(b.k,"ja"));
-  countEl.textContent = list.length+" 語";
-
-  if(list.length===0){
-    dictEl.innerHTML='<div class="empty"><span class="mincho">見つからんかったわ。</span>別のことばで探してみてごぅ。</div>';
-    return;
-  }
-  dictEl.innerHTML = list.map(d=>`
-    <div class="entry">
-      <div class="top">
-        <span class="word">${esc(d.w)}</span>
-        <span class="kana">${esc(d.k)}</span>
-        <span class="cat">${esc(d.cat)}</span>
+    <div class="two-col">
+      <div class="two-col-text">
+        <h3>磐田・見付の郷土史研究家</h3>
+        <p>佐口行正氏は、静岡県磐田市見付を中心に、地域の歴史・文化・暮らしの記憶を長年にわたり収集・研究されてきた郷土史研究家です。</p>
+        <p>見付のまちに残る古写真、絵はがき、引き札、浮世絵、商店街にまつわる資料など、地域の人々の営みを伝える貴重な資料を数多く所蔵されており、そのコレクションは磐田市内の企画展や文化財関連の展示でも紹介されています。</p>
+        <p>佐口氏の活動は、単に古い資料を集めることにとどまりません。そこには、見付というまちがどのように栄え、人々がどのように暮らし、商い、祭り、学び、時代を重ねてきたのかを、次の世代へ伝えようとする深い思いがあります。</p>
       </div>
-      <p class="mean">${esc(d.m)}</p>
-      <div class="ex">
-        <span class="label">例</span>${esc(d.ex)}
-        <span class="std">＝ ${esc(d.std)}</span>
-      </div>
-    </div>`).join("");
-}
+    </div>
+  </div>
+</section>
 
-render();
-</script>
+<!-- ===== 引札 ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Hikifuda</span>
+      <h2 class="sec-title">引札 ── まちの商家が刷った広告</h2>
+    </div>
+    <div class="two-col">
+      <div class="two-col-img">
+        <img src="https://iwata-monogatari.pages.dev/saguchi/img/hk-2.jpg" alt="久野米吉の引札 明治34年">
+        <div class="two-col-cap">久野米吉の引札（明治34年、印刷兼発行者・古島竹次郎）<em>見付・中泉のまちには、古島竹次郎・古島德次郎・中遠日進社といった印刷を手がける版元があり、地元の商家の広告を数多く刷っていました。</em></div>
+        <img style="margin-top:20px" src="https://iwata-monogatari.pages.dev/saguchi/img/hk-3.jpg" alt="内山栄吉の引札 明治42年">
+        <div class="two-col-cap">内山栄吉の引札（明治42年）<em>色刷りの技術をつくした引札は、単なる宣伝物ではなく、家に飾る季節の風物でした。</em></div>
+      </div>
+      <div class="two-col-text">
+        <h3>この史料群の中心</h3>
+        <p>この史料群の中心をなすのが、百点をこえる「引札（ひきふだ）」である。引札とは、商店が客に配った広告のちらしのことで、江戸期から明治・大正にかけて広くおこなわれた。</p>
+        <p>多くは年の暮れに配られ、新しい年の福を願う図柄に、店の名と扱う品が刷り込まれた。当時の色刷りの技術をつくした引札は、ただの宣伝物ではなく、もらった人が一年のあいだ家に飾る、季節の風物でもあった。</p>
+        <p>佐口氏の引札を見ていくと、川島幸三郎・久野米吉・内山栄吉・岩田屋喜一郎といった、見付・中泉の商家の名がつぎつぎとあらわれる。そして、その多くに「印刷兼発行者 古島竹次郎」「同 古島德次郎」「中遠日進社印刷」といった刷り元の名が添えられている。</p>
+        <p>広告を出した商家だけでなく、それを刷った地元の印刷屋の存在まで見えてくるところに、この史料群の厚みがある。一枚の紙が、商いと、その商いを支えた職人の仕事を、同時に今に伝えている。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 暦と一覧表 ===== -->
+<section class="section alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Calendars & Lists</span>
+      <h2 class="sec-title">暦と一覧表 ── 紙が担った日々の役わり</h2>
+    </div>
+    <div class="two-col">
+      <div class="two-col-img">
+        <div class="img-pair">
+          <figure>
+            <img src="https://iwata-monogatari.pages.dev/saguchi/img/hk-92.jpg" alt="見付囲碁相撲一覧表">
+            <div class="two-col-cap" style="margin-top:8px">見付囲碁相撲一覧表（明治42年）</div>
+          </figure>
+          <figure>
+            <img src="https://iwata-monogatari.pages.dev/saguchi/img/hk-93.jpg" alt="改進新聞 明治23年">
+            <div class="two-col-cap" style="margin-top:8px">改進新聞（明治23年）</div>
+          </figure>
+        </div>
+      </div>
+      <div class="two-col-text">
+        <h3>実用と宣伝の結合</h3>
+        <p>引札のなかには、暦を刷り込んだ「引札暦」が少なくない。カレンダーが今ほど身近でなかった時代、商家が配る暦は実用品として重宝され、だからこそ一年を通じて人目に触れる、効果のある広告でもあった。実用と宣伝が一枚の紙のうえで結びついていた。</p>
+        <p>見付囲碁相撲一覧表（明治42年）は、番付の体裁で地域の顔ぶれを並べた、まちの楽しみを伝える一枚。改進新聞（明治23年）などの地域に出まわった新聞もまた、当時の情報のありようを伝える史料です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 浮世絵に描かれた見付 ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Ukiyo-e</span>
+      <h2 class="sec-title">浮世絵に描かれた見付</h2>
+    </div>
+    <div class="two-col">
+      <div class="two-col-img">
+        <img src="https://iwata-monogatari.pages.dev/saguchi/img/ts-5.jpg" alt="狂歌入り東海道五十三次 見附 広重">
+        <div class="two-col-cap">狂歌入り東海道五十三次「見附」歌川広重<em>天竜川の渡しを描いた広重の錦絵</em></div>
+        <img style="margin-top:20px" src="https://iwata-monogatari.pages.dev/saguchi/img/ts-7.jpg" alt="美人東海道 見附駅 英泉">
+        <div class="two-col-cap">美人東海道「見附駅」渓斎英泉<em>旅の女を描いた英泉の作品</em></div>
+      </div>
+      <div class="two-col-text">
+        <h3>江戸で刷られた見付の姿</h3>
+        <p>佐口氏の史料には、東海道五十三次を題材にした浮世絵も含まれている。いずれも、二十八番目の宿場「見付」を描いたものである。歌川広重をはじめ、英泉・国貞・芳虎・豊国・芳艶といった絵師たちが、それぞれの趣向で見付の宿を画面にとどめた。</p>
+        <p>広重の天竜川の渡し、英泉の旅の女、役者絵に重ねた見付――同じ宿場が、絵師の数だけ違った姿で描かれている。</p>
+        <p>これらの錦絵は、見付で刷られたものではなく、江戸の版元が東海道五十三次という人気の画題のなかで描いたものである。それでも、全国に流通した浮世絵のなかに見付の宿が確かな一枚として組み込まれていたことは、この宿場が東海道のうえで占めた位置を物語っている。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 古地図 ===== -->
+<section class="section alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Historic Maps</span>
+      <h2 class="sec-title">古地図がえがく、遠江と見付</h2>
+    </div>
+    <div class="two-col">
+      <div class="two-col-img">
+        <img src="https://iwata-monogatari.pages.dev/saguchi/img/ts-71.jpg" alt="遠江国全図 明治6年">
+        <div class="two-col-cap">遠江国全図（明治6年官許）<em>明治のはじめ、新しい世のもとで描かれた遠江国の全図。天竜川・浜名湖から、見付をふくむ町村の位置までを一枚におさめています。</em></div>
+      </div>
+      <div class="two-col-text">
+        <h3>時代とともに移る土地の記憶</h3>
+        <p>古地図もまた、この史料群の見どころである。明治初年の「遠江国全図」、江戸末の「遠江小国」、そして昭和初めの「見付 地図」まで、時代の異なる地図がそろっている。</p>
+        <p>地図を時代順に並べると、まちの広がりかたや、道と川の関係が、少しずつ移り変わっていくのがわかる。地名と地割りは、その土地が背負ってきた記憶の化石である。古地図は、今の磐田の風景の下に眠る、もうひとつのまちの姿を見せてくれる。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 鉄道と観光 ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Railways & Tourism</span>
+      <h2 class="sec-title">鉄道と観光 ── 近代の旅のすがた</h2>
+    </div>
+    <div class="two-col">
+      <div class="two-col-img">
+        <img src="https://iwata-monogatari.pages.dev/saguchi/img/ts-41.jpg" alt="光明電気鉄道 沿線案内">
+        <div class="two-col-cap">光明電気鉄道の沿線案内<em>のちに廃止された地域鉄道の姿を伝える貴重な記録</em></div>
+        <img style="margin-top:20px" src="https://iwata-monogatari.pages.dev/saguchi/img/ts-86.jpg" alt="産業と観光 いわた">
+        <div class="two-col-cap">「産業と観光 いわた」<em>まちが自らの産業と名所をどう語ろうとしたのかがうかがえます。</em></div>
+      </div>
+      <div class="two-col-text">
+        <h3>旅と交通のあゆみ</h3>
+        <p>大正から昭和にかけての史料には、鉄道や観光の案内が多く含まれる。光明電気鉄道や大井川鉄道の沿線案内、浜松鉄道の時刻表、可睡斎や法多山、天竜峡や浜名湖をめぐる名所案内――近代の旅が、どんな交通と、どんな目的地によって形づくられていたのかが、これらの紙片からうかがえます。</p>
+        <p>今は失われた鉄道の名が、当時の沿線案内のなかに生きている。地域鉄道の歴史もまた、これらの「紙片」に記録されているのです。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 道中案内 ===== -->
+<section class="section alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Historic Documents</span>
+      <h2 class="sec-title">道中案内と、まちのよろずの記録</h2>
+    </div>
+    <div class="two-col">
+      <div class="two-col-img">
+        <img src="https://iwata-monogatari.pages.dev/saguchi/img/ts-32.jpg" alt="一新講 川口 道中案内 明治6年">
+        <div class="two-col-cap">一新講「川口」（明治6年）<em>街道筋の宿屋が結んだ組合の道中案内。旅人に配られました。</em></div>
+      </div>
+      <div class="two-col-text">
+        <h3>暮らしの全体像を描く</h3>
+        <p>このほかにも、宿の組合「一新講（いっしんこう）」の道中案内、御臨幸の記念資料、青年会の機関誌、商工会の冊子、そして商家の銅印など、まちの暮らしのさまざまな場面に結びついた史料が含まれています。</p>
+        <p>一見ばらばらに見えるこれらの紙片や品々は、しかし、ひとつのまちに生きた人々が、何を商い、どこを旅し、何を記念したのかという、暮らしの全体像を少しずつ描き出していく。</p>
+        <p>一新講は、街道筋の宿屋が結んだ組合で、加盟する宿を記した道中案内を旅人に配った。旅の安全と便宜を支えたしくみが、こうした小さな紙に残されています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-box" style="margin:60px 22px 0;padding:44px 32px">
+  <h3>約336点の史料を、目録で見る</h3>
+  <p>引札・浮世絵・古地図・鉄道案内など、佐口行正氏所蔵史料のすべてを、種別での絞り込みと検索つきで一覧できます。</p>
+  <a href="c019.html">史料目録をひらく →</a>
+</section>
+
+<!-- ===== 参考・関連 ===== -->
+<section class="related">
+  <div class="wrap">
+    <div class="rel-h">関連する読みもの</div>
+    <div class="rel-links">
+      <a href="m017.html">見付宿の面影</a>
+      <a href="m016.html">見付宿と東海道</a>
+      <a href="r001.html">掛塚湊</a>
+      <a href="c019.html">史料目録</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+
 
 <section class="article-policy">
   <h2>この記事について</h2>

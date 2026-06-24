@@ -1,131 +1,86 @@
-# 磐田物語 リネーム第2弾 実装指示書
-
-作成日：2026-06-25  
-対象リポジトリ：`iwata-monogatari/iwata-monogatari.pages.dev`  
-作業ID：`rename-batch-002`
-
-## Claude coworkへ渡す4ファイルと配置先
-
-この作業では、以下の4ファイルを使用する。  
-Claude coworkは、作業開始前に下記のGitHubリポジトリ内パスへ配置・反映すること。
-
-| No | この出力内のファイル | GitHubリポジトリ内の配置先 | 役割 |
-|---:|---|---|---|
-| 1 | `work/rename-batch02/instruction.md` | `work/rename-batch02/instruction.md` | 本作業指示書 |
-| 2 | `work/rename-batch02/rename-plan.json` | `work/rename-batch02/rename-plan.json` | リネーム対応表 |
-| 3 | `data/pages.json` | `data/pages.json` | 正式ページ台帳 |
-| 4 | `docs/pages-ledger.md` | `docs/pages-ledger.md` | 人間確認用の台帳 |
-
-## ChatGPT出力先パス
-
-ChatGPTからダウンロードしたファイル一式は、次の構成で出力している。
-
-```text
-iwata_rename_batch02_handoff/
-├─ data/
-│  └─ pages.json
-├─ docs/
-│  └─ pages-ledger.md
-└─ work/
-   └─ rename-batch02/
-      ├─ instruction.md
-      └─ rename-plan.json
-```
-
-## 前提条件
-
-- `rename-batch-001` が先に反映済みであること。
-- 具体的には、`m001.html`〜`m005.html` が正式ページとして存在し、`kai1.html`〜`kai5.html` が旧URL案内ページとして残っていること。
-- 未実施の場合は、必ず第1弾を先に実行してから第2弾に進むこと。
-
-## 目的
-
-長い遠江国分寺系ファイル名を、中泉分類の短い地域別連番ファイル名へ変更する。  
-ファイル名には作成日や長い英語説明を入れず、意味・正式タイトル・作成日・更新日・地域分類・内容分類は `data/pages.json` で管理する。
-
-## リネーム対象
-
-| 旧ファイル名 | 新ファイル名 | 親ページ | 内容 |
-|---|---|---|---|
-| `enshu-kokubunji.html` | `n001.html` | `01002-nakaizumi.html` | 遠江国分寺 特集親ページ |
-| `enshu-kokubunji-what.html` | `n002.html` | `n001.html` | 遠江国分寺とは何か |
-| `enshu-kokubunji-location.html` | `n003.html` | `n001.html` | 遠江国分寺の位置 |
-| `enshu-kokubunji-garan.html` | `n004.html` | `n001.html` | 遠江国分寺の伽藍 |
-| `enshu-kokubunji-garan-kondo.html` | `n005.html` | `n004.html` | 遠江国分寺 伽藍・金堂 |
-| `enshu-kokubunji-garan-tower.html` | `n006.html` | `n004.html` | 遠江国分寺 伽藍・塔 |
-| `enshu-kokubunji-garan-kodo.html` | `n007.html` | `n004.html` | 遠江国分寺 伽藍・講堂 |
-| `enshu-kokubunji-garan-kairo.html` | `n008.html` | `n004.html` | 遠江国分寺 伽藍・回廊 |
-| `enshu-kokubunji-garan-sobo.html` | `n009.html` | `n004.html` | 遠江国分寺 伽藍・僧坊 |
-| `enshu-kokubunji-tiles.html` | `n010.html` | `n001.html` | 遠江国分寺の瓦 |
-| `enshu-kokubunji-chronology.html` | `n011.html` | `n001.html` | 遠江国分寺 年表 |
-| `enshu-kokubunji-life.html` | `n012.html` | `n001.html` | 遠江国分寺と人々の暮らし |
-| `enshu-kokubunji-walk.html` | `n013.html` | `n001.html` | 遠江国分寺を歩く |
-| `enshu-kokubunji-fukko.html` | `n014.html` | `n001.html` | 遠江国分寺 復興 |
-| `enshu-kokubunji-glossary.html` | `n015.html` | `n001.html` | 遠江国分寺 用語集 |
-| `totoumi-kokubunji.html` | `n016.html` | `01002-nakaizumi.html` | 遠江国分寺 関連ページ |
-
-
-## 実装方針
-
-1. 旧ファイルの本文を新ファイルへ移す。
-2. 新ファイル名を正式URLとして扱う。
-3. 旧ファイルは削除しない。
-4. 旧ファイルには、新URLへの移転案内を表示するHTMLを残す。
-5. 可能であれば、旧ファイルに `<meta http-equiv="refresh">` を設定して新URLへ誘導する。
-6. `sitemap.xml` には新ファイル `n001.html`〜`n016.html` のみ掲載する。
-7. `sitemap.xml` から旧ファイル名を削除する。
-8. `index.html`、`01002-nakaizumi.html`、各記事内の内部リンクをすべて新ファイル名へ更新する。
-9. `data/pages.json` をこの出力の `data/pages.json` で更新する。
-10. `docs/pages-ledger.md` をこの出力の `docs/pages-ledger.md` で更新する。
-
-## 親子関係
-
-- `n001.html`：遠江国分寺系の親ページ。
-- `n002.html`、`n003.html`、`n004.html`、`n010.html`〜`n015.html`：`n001.html` の子ページ。
-- `n004.html`：遠江国分寺 伽藍系の親ページ。
-- `n005.html`〜`n009.html`：`n004.html` の子ページ。
-- `n016.html`：遠江国分寺関連ページ。`01002-nakaizumi.html` に紐づける。
-
-## 旧URL案内ページの文例
-
-旧ファイルには、以下のような案内を入れる。
-
-```html
-<!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=新ファイル名.html">
-  <title>ページ移転のお知らせ｜磐田物語</title>
-</head>
-<body>
-  <main>
-    <h1>ページを移転しました</h1>
-    <p>このページは新しいURLへ移転しました。</p>
-    <p><a href="新ファイル名.html">新しいページを開く</a></p>
-  </main>
-</body>
-</html>
-```
-
-## 確認項目
-
-作業後、次を確認する。
-
-- `n001.html`〜`n016.html` が表示できる。
-- 旧URLから新URLへ移動できる。
-- `01002-nakaizumi.html` から遠江国分寺系ページへ移動できる。
-- 遠江国分寺系ページ内の相互リンクが旧ファイル名を参照していない。
-- `sitemap.xml` に旧ファイル名が残っていない。
-- `sitemap.xml` に新ファイル名が入っている。
-- `data/pages.json` が正式台帳として更新されている。
-- `docs/pages-ledger.md` で人間確認できる。
-- `work/rename-batch02/rename-plan.json` の内容と実ファイルのリネーム結果が一致している。
-
-## 注意
-
-- 旧ファイルを削除しないこと。
-- ファイル名に作成日を入れないこと。
-- 長い英語スラッグへ戻さないこと。
-- 地区入口ページ `01002-nakaizumi.html` はリネームしないこと。
-- 第1弾の `m001.html`〜`m005.html` を変更しないこと。
+{
+  "project": "磐田物語",
+  "repository": "iwata-monogatari/iwata-monogatari.pages.dev",
+  "batch_id": "rename-batch-003",
+  "created_at": "2026-06-25",
+  "purpose": "見付天神・裸祭系ファイル名を、見付分類の短い地域別連番ファイル名へ変更する。",
+  "prerequisite": "rename-batch-001 と rename-batch-002 が反映済みであること。",
+  "region": {
+    "region_code": "01",
+    "region_slug": "mitsuke",
+    "region_label": "見付",
+    "prefix": "m"
+  },
+  "policy": {
+    "delete_old_files": false,
+    "old_file_policy": "旧ファイルは削除せず、移転案内ページとして残す。",
+    "sitemap_policy": "sitemap.xmlには新ファイル名のみ掲載し、旧ファイル名は掲載しない。",
+    "ledger_policy": "data/pages.jsonを正式台帳、docs/pages-ledger.mdを確認用台帳とする。"
+  },
+  "renames": [
+    {
+      "old_file": "hadaka-matsuri.html",
+      "new_file": "m006.html",
+      "title": "見付天神裸祭 特集親ページ",
+      "region_code": "01",
+      "region_label": "見付",
+      "parent_file_after_rename": "01001-mitsuke.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "hadaka-matsuri-kigen.html",
+      "new_file": "m007.html",
+      "title": "見付天神裸祭の起源",
+      "region_code": "01",
+      "region_label": "見付",
+      "parent_file_after_rename": "m006.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "hadaka-matsuri-shinji.html",
+      "new_file": "m008.html",
+      "title": "見付天神裸祭の神事",
+      "region_code": "01",
+      "region_label": "見付",
+      "parent_file_after_rename": "m006.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "hadaka-matsuri-hozon.html",
+      "new_file": "m009.html",
+      "title": "見付天神裸祭の保存と継承",
+      "region_code": "01",
+      "region_label": "見付",
+      "parent_file_after_rename": "m006.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "hadaka-matsuri-shippei.html",
+      "new_file": "m010.html",
+      "title": "見付天神裸祭としっぺい伝説",
+      "region_code": "01",
+      "region_label": "見付",
+      "parent_file_after_rename": "m006.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "mitsuke-tenjin-hadaka-matsuri.html",
+      "new_file": "m011.html",
+      "title": "見付天神裸祭 関連ページ",
+      "region_code": "01",
+      "region_label": "見付",
+      "parent_file_after_rename": "m006.html",
+      "redirect_policy": "old_file_redirect_stub"
+    },
+    {
+      "old_file": "mitsuke-tenjin.html",
+      "new_file": "m012.html",
+      "title": "見付天神 矢奈比賣神社",
+      "region_code": "01",
+      "region_label": "見付",
+      "parent_file_after_rename": "01001-mitsuke.html",
+      "redirect_policy": "old_file_redirect_stub"
+    }
+  ],
+  "missing_from_source_ledger": []
+}

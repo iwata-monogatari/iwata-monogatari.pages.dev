@@ -1,149 +1,194 @@
-# 磐田物語 ページ台帳（リネーム第3弾反映案）
+# 磐田物語 ページ台帳（リネーム第4弾・最終反映案）
 
 作成日：2026-06-25  
 更新日：2026-06-25
 
 ## 重要
 
-この台帳は **rename-batch-001〜003 をGitHubに反映した後の状態** を示す更新案である。  
+この台帳は **rename-batch-001〜004 をGitHubに反映した後の状態** を示す更新案である。  
 実ファイルをGitHubで変更するまでは、リポジトリ上の実体と差が出るため、リネーム指示書に従って同時反映すること。
 
-## リネーム第3弾
+## リネーム第4弾・最終弾
 
-| 旧ファイル名 | 新ファイル名 | 地区 | 親ページ | 内容 |
-|---|---|---|---|---|
-| `hadaka-matsuri.html` | `m006.html` | 見付 | `01001-mitsuke.html` | 見付天神裸祭 特集親ページ |
-| `hadaka-matsuri-kigen.html` | `m007.html` | 見付 | `m006.html` | 見付天神裸祭の起源 |
-| `hadaka-matsuri-shinji.html` | `m008.html` | 見付 | `m006.html` | 見付天神裸祭の神事 |
-| `hadaka-matsuri-hozon.html` | `m009.html` | 見付 | `m006.html` | 見付天神裸祭の保存と継承 |
-| `hadaka-matsuri-shippei.html` | `m010.html` | 見付 | `m006.html` | 見付天神裸祭としっぺい伝説 |
-| `mitsuke-tenjin-hadaka-matsuri.html` | `m011.html` | 見付 | `m006.html` | 見付天神裸祭 関連ページ |
-| `mitsuke-tenjin.html` | `m012.html` | 見付 | `01001-mitsuke.html` | 見付天神 矢奈比賣神社 |
+対象は、残りの公開HTML読み物・カテゴリ・史料ページである。`index.html`、9地区入口ページ、掲示板、管理ファイル、画像、認証ファイル、robots、sitemap、データファイルは対象外とする。
+
+| 旧ファイル名 | 新ファイル名 | 地区 | 内容分類 | 親ページ | 内容 |
+|---|---|---|---|---|---|
+| `000-kensho.html` | `c001.html` | 磐田共通 | 運営方針 | `index.html` | 磐田物語 憲章・理念 |
+| `000-school-d.html` | `c002.html` | 磐田共通 | 資料 | `index.html` | 磐田物語の地域分類 |
+| `bunkazai.html` | `c003.html` | 磐田共通 | 文化財 | `index.html` | 磐田市の文化財 |
+| `chizu.html` | `c004.html` | 磐田共通 | 地図・古地図 | `index.html` | 地図・古地図 |
+| `dayori.html` | `c005.html` | 磐田共通 | お知らせ | `index.html` | 磐田物語だより |
+| `enshu-ben.html` | `c006.html` | 磐田共通 | 読み物 | `index.html` | 遠州弁 |
+| `hajimeni.html` | `c007.html` | 磐田共通 | 運営方針 | `index.html` | はじめに |
+| `henkan.html` | `c008.html` | 磐田共通 | ツール | `index.html` | 遠州弁変換ツール |
+| `iwata-chimei.html` | `c009.html` | 磐田共通 | 地名 | `index.html` | 磐田の地名 |
+| `iwata-gun.html` | `c010.html` | 磐田共通 | 歴史解説 | `index.html` | 磐田郡 |
+| `kochizu-murana.html` | `c011.html` | 磐田共通 | 地図・古地図 | `index.html` | 古地図と村名 |
+| `kofun.html` | `c012.html` | 磐田共通 | 遺跡・古墳 | `index.html` | 古墳 |
+| `kuni-shitei.html` | `c013.html` | 磐田共通 | 文化財 | `c003.html` | 国指定文化財 |
+| `kyuiwata.html` | `c014.html` | 磐田共通 | 歴史解説 | `index.html` | 旧磐田市 |
+| `maizobunkazai.html` | `c015.html` | 磐田共通 | 文化財 | `c003.html` | 埋蔵文化財 |
+| `matsuri-kurashi.html` | `c016.html` | 磐田共通 | 祭り・民俗 | `index.html` | 祭りと暮らし |
+| `mura-kara-machi.html` | `c017.html` | 磐田共通 | 歴史解説 | `index.html` | 村から町へ |
+| `research-notes.html` | `c018.html` | 磐田共通 | 調査ノート | `index.html` | 調査ノート |
+| `saguchi-shiryo-catalog.html` | `c019.html` | 磐田共通 | 史料目録 | `c020.html` | 佐口行正氏所蔵史料 目録 |
+| `saguchi-shiryo.html` | `c020.html` | 磐田共通 | 史料 | `index.html` | 佐口行正氏所蔵史料 |
+| `shitei.html` | `c021.html` | 磐田共通 | 文化財 | `c003.html` | 指定文化財 |
+| `tokaido-shuku.html` | `c022.html` | 磐田共通 | 街道・交通 | `index.html` | 東海道宿場 |
+| `totoumi-kokufu.html` | `c023.html` | 磐田共通 | 歴史解説 | `index.html` | 遠江国府 |
+| `hime-kaido.html` | `m013.html` | 見付 | 街道・交通 | `01001-mitsuke.html` | 姫街道 |
+| `kyu-akamatsuke.html` | `m014.html` | 見付 | 読み物 | `01001-mitsuke.html` | 旧赤松家 |
+| `kyu-mitsuke-gakko.html` | `m015.html` | 見付 | 文化財 | `01001-mitsuke.html` | 旧見付学校 |
+| `mitsuke-shuku-tokaido.html` | `m016.html` | 見付 | 街道・交通 | `01001-mitsuke.html` | 東海道と見付宿 |
+| `mitsuke-shuku.html` | `m017.html` | 見付 | 歴史解説 | `01001-mitsuke.html` | 見付宿 |
+| `mitsuke.html` | `m018.html` | 見付 | 読み物 | `01001-mitsuke.html` | 見付 |
+| `oumikunitama-jinja.html` | `m019.html` | 見付 | 寺社 | `01001-mitsuke.html` | 淡海國玉神社 |
+| `fu-hachimangu.html` | `n017.html` | 中泉 | 寺社 | `01002-nakaizumi.html` | 府八幡宮 |
+| `goten-ninomiya-iseki.html` | `n018.html` | 中泉 | 遺跡・古墳 | `01002-nakaizumi.html` | 御殿・二之宮遺跡 |
+| `kounodai.html` | `n019.html` | 中泉 | 地名 | `01002-nakaizumi.html` | 国府台 |
+| `nakaizumi-daikan.html` | `n020.html` | 中泉 | 歴史解説 | `01002-nakaizumi.html` | 中泉代官 |
+| `nakaizumi-goten.html` | `n021.html` | 中泉 | 歴史解説 | `01002-nakaizumi.html` | 中泉御殿 |
+| `ninomiya-mura.html` | `n022.html` | 中泉 | 歴史解説 | `01002-nakaizumi.html` | 二之宮村 |
+| `kaizuka-chimei.html` | `u001.html` | 御厨 | 地名 | `01003-mikuriya.html` | 貝塚の地名 |
+| `kamada-mikuriya.html` | `u002.html` | 御厨 | 歴史解説 | `01003-mikuriya.html` | 鎌田と御厨 |
+| `kamada-shinmei.html` | `u003.html` | 御厨 | 寺社 | `01003-mikuriya.html` | 鎌田神明宮 |
+| `choshizuka-kofun.html` | `t001.html` | 豊田 | 遺跡・古墳 | `01004-toyoda.html` | 銚子塚古墳 |
+| `gyokoji-fuji.html` | `t002.html` | 豊田 | 寺社 | `01004-toyoda.html` | 行興寺の藤 |
+| `hitokotozaka.html` | `t003.html` | 豊田 | 歴史解説 | `01004-toyoda.html` | 一言坂 |
+| `ikeda-watashi.html` | `t004.html` | 豊田 | 街道・交通 | `01004-toyoda.html` | 池田の渡し |
+| `kamo.html` | `t005.html` | 豊田 | 地名 | `01004-toyoda.html` | 加茂 |
+| `kyutoyoda.html` | `t006.html` | 豊田 | 歴史解説 | `01004-toyoda.html` | 旧豊田町 |
+| `shinden-chimei.html` | `t007.html` | 豊田 | 地名 | `01004-toyoda.html` | 新田の地名 |
+| `shinden.html` | `t008.html` | 豊田 | 歴史解説 | `01004-toyoda.html` | 新田 |
+| `tenryugawa-mura.html` | `s001.html` | 南部 | 歴史解説 | `01005-nanbu.html` | 天竜川村 |
+| `sagisaka-iwata.html` | `k001.html` | 向陽 | 歴史解説 | `01006-koyo.html` | 匂坂と磐田 |
+| `kaketsuka-minato.html` | `r001.html` | 竜洋 | 暮らし・産業 | `01007-ryuyo.html` | 掛塚湊 |
 
 ## 運用方針
 
-- 新ファイル `m006.html`〜`m012.html` に本文を移す。
+- 新ファイルに本文を移す。
 - 旧ファイルは削除せず、移転案内・リダイレクト控えとして残す。
 - `sitemap.xml` には新URLだけを掲載し、旧URLは掲載しない。
 - 内部リンクはすべて新ファイル名へ更新する。
 - 作成日・更新日・旧ファイル名はファイル名ではなく台帳で管理する。
-- `m006.html` は見付天神裸祭系の親ページとして扱う。
-- `m012.html` は見付天神・矢奈比賣神社の寺社ページとして扱う。
+- `index.html` と9地区入口ページはリネームしない。
+- `bbs.html` と `admin-bbs.html` は機能ページのため、今回はリネームしない。
 
 ## 確認用台帳
 
-| No | file | 表示名 | 種別 | 地域 | 親ページ | 状態 | 作成日 | 更新日 | 旧file | 備考 |
-|---:|---|---|---|---|---|---|---|---|---|---|
-| 1 | `assets/` | 素材フォルダ | folder | 分類対象外 | `` | confirmed |  |  | `` | 画像・CSS・JS等の素材置き場候補。ページ分類対象外。 |
-| 2 | `data/` | データフォルダ | folder | 分類対象外 | `` | confirmed |  |  | `` | pages.json等の台帳ファイルを置く候補。 |
-| 3 | `functions/api/` | APIフォルダ | folder | 分類対象外 | `` | confirmed |  |  | `` | 掲示板等の処理用候補。ページ分類対象外。 |
-| 4 | `images/` | 画像フォルダ | folder | 分類対象外 | `` | confirmed |  |  | `` | 画像置き場。ページ分類対象外。 |
-| 5 | `saguchi/img/` | 佐口行正氏所蔵史料 画像フォルダ | folder | 分類対象外 | `` | confirmed |  |  | `` | 佐口行正氏所蔵史料の画像置き場候補。 |
-| 6 | `000-kensho.html` | 磐田物語 憲章・理念 | policy | 磐田共通 | `` | confirmed |  |  | `` | サイト全体の理念ページ。地域分類は磐田共通。 |
-| 7 | `01001-mitsuke.html` | 磐田物語 見付 地区別入口ページ | region_entrance | 見付 | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
-| 8 | `01002-nakaizumi.html` | 磐田物語 中泉 地区別入口ページ | region_entrance | 中泉 | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
-| 9 | `01003-mikuriya.html` | 磐田物語 御厨 地区別入口ページ | region_entrance | 御厨 | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
-| 10 | `01004-toyoda.html` | 磐田物語 豊田 地区別入口ページ | region_entrance | 豊田 | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
-| 11 | `01005-nanbu.html` | 磐田物語 南部 地区別入口ページ | region_entrance | 南部 | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
-| 12 | `01006-koyo.html` | 磐田物語 向陽 地区別入口ページ | region_entrance | 向陽 | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
-| 13 | `01007-ryuyo.html` | 磐田物語 竜洋 地区別入口ページ | region_entrance | 竜洋 | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
-| 14 | `01008-fukude.html` | 磐田物語 福田 地区別入口ページ | region_entrance | 福田 | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
-| 15 | `01009-toyooka.html` | 磐田物語 豊岡 地区別入口ページ | region_entrance | 豊岡 | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
-| 16 | `index.html` | 磐田物語 トップページ | home | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 17 | `000-school-d.html` | 学校区・大字関連ページ | reference | 磐田共通 | `` | needs_review |  |  | `` | 学校区・大字の一覧系と思われる。内容確認後、名称確定。 |
-| 18 | `README.md` | リポジトリ説明 | document | 分類対象外 | `` | confirmed |  |  | `` | GitHub用説明文。サイト公開ページではない。 |
-| 19 | `admin-bbs.html` | 掲示板 管理ページ | admin_tool | 分類対象外 | `` | confirmed |  |  | `` | 管理者用。sitemap掲載対象外推奨。 |
-| 20 | `bbs.html` | みんなの掲示板 | community_tool | 磐田共通 | `` | confirmed |  |  | `` | 地域横断の投稿ページ。sitemap掲載は運用判断。 |
-| 21 | `bunkazai-guide.md` | 文化財ページ作成ガイド | document | 分類対象外 | `` | confirmed |  |  | `` | 制作・運用ガイド。 |
-| 22 | `bunkazai-guide_1.md` | 文化財ページ作成ガイド 重複候補 | document | 分類対象外 | `` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：削除せず残す。ただし分類対象外。 |
-| 23 | `bunkazai.html` | 磐田市の文化財 | index_or_category | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 24 | `bunkazai.json` | 文化財データ | data | 分類対象外 | `` | confirmed |  |  | `` | ページではなくデータ。data/配下への移動候補。 |
-| 25 | `chizu.html` | 地図・古地図 | category | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 26 | `choshizuka-kofun.html` | 銚子塚古墳 | reading | 豊田 | `01004-toyoda.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：豊田分類で確定。 |
-| 27 | `dayori.html` | 磐田物語だより | news_or_note | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 28 | `enshu-ben.html` | 遠州弁 | tool_or_reading | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 29 | `n011.html` | 遠江国分寺 年表 | feature_child | 中泉 | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-chronology.html` | 大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-chronology.html から新ファイル n011.html へ変更。旧URLは案内ページとして残す。 |
-| 30 | `n014.html` | 遠江国分寺 復興 | feature_child | 中泉 | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-fukko.html` | 大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-fukko.html から新ファイル n014.html へ変更。旧URLは案内ページとして残す。 |
-| 31 | `n008.html` | 遠江国分寺 伽藍・回廊 | feature_child | 中泉 | `n004.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-garan-kairo.html` | 大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-kairo.html から新ファイル n008.html へ変更。旧URLは案内ページとして残す。 |
-| 32 | `n007.html` | 遠江国分寺 伽藍・講堂 | feature_child | 中泉 | `n004.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-garan-kodo.html` | 大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-kodo.html から新ファイル n007.html へ変更。旧URLは案内ページとして残す。 |
-| 33 | `n005.html` | 遠江国分寺 伽藍・金堂 | feature_child | 中泉 | `n004.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-garan-kondo.html` | 大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-kondo.html から新ファイル n005.html へ変更。旧URLは案内ページとして残す。 |
-| 34 | `n009.html` | 遠江国分寺 伽藍・僧坊 | feature_child | 中泉 | `n004.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-garan-sobo.html` | 大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-sobo.html から新ファイル n009.html へ変更。旧URLは案内ページとして残す。 |
-| 35 | `n006.html` | 遠江国分寺 伽藍・塔 | feature_child | 中泉 | `n004.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-garan-tower.html` | 大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-tower.html から新ファイル n006.html へ変更。旧URLは案内ページとして残す。 |
-| 36 | `n004.html` | 遠江国分寺 伽藍 | feature_child | 中泉 | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-garan.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-garan.html から新ファイル n004.html へ変更。旧URLは案内ページとして残す。 |
-| 37 | `n015.html` | 遠江国分寺 用語集 | feature_child | 中泉 | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-glossary.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-glossary.html から新ファイル n015.html へ変更。旧URLは案内ページとして残す。 |
-| 38 | `n012.html` | 遠江国分寺と人々の暮らし | feature_child | 中泉 | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-life.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-life.html から新ファイル n012.html へ変更。旧URLは案内ページとして残す。 |
-| 39 | `n003.html` | 遠江国分寺の位置 | feature_child | 中泉 | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-location.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-location.html から新ファイル n003.html へ変更。旧URLは案内ページとして残す。 |
-| 40 | `n010.html` | 遠江国分寺の瓦 | feature_child | 中泉 | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-tiles.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-tiles.html から新ファイル n010.html へ変更。旧URLは案内ページとして残す。 |
-| 41 | `n013.html` | 遠江国分寺を歩く | feature_child | 中泉 | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-walk.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-walk.html から新ファイル n013.html へ変更。旧URLは案内ページとして残す。 |
-| 42 | `n002.html` | 遠江国分寺とは何か | feature_child | 中泉 | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-what.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-what.html から新ファイル n002.html へ変更。旧URLは案内ページとして残す。 |
-| 43 | `n001.html` | 遠江国分寺 特集親ページ | feature_parent | 中泉 | `01002-nakaizumi.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji.html から新ファイル n001.html へ変更。旧URLは案内ページとして残す。 |
-| 44 | `favicon-16.png` | favicon 16px | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | サイトアイコン。分類対象外。 |
-| 45 | `favicon-180.png` | favicon 180px | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | サイトアイコン。分類対象外。 |
-| 46 | `favicon-180_1.png` | favicon 180px 重複候補 | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | 重複候補。削除判断は表示確認後。 大石社長確認（2026-06-25）：削除せず残す。分類対象外。 |
-| 47 | `favicon-192.png` | favicon 192px | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | サイトアイコン。分類対象外。 |
-| 48 | `favicon-32.png` | favicon 32px | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | サイトアイコン。分類対象外。 |
-| 49 | `favicon-512.png` | favicon 512px | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | サイトアイコン。分類対象外。 |
-| 50 | `favicon.ico` | favicon ico | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | サイトアイコン。分類対象外。 |
-| 51 | `fu-hachimangu.html` | 府八幡宮 | reading | 中泉 | `01002-nakaizumi.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：中泉分類で確定。 |
-| 52 | `googlea3467099ea123f53.html` | Google Search Console 認証ファイル | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | 削除禁止。分類対象外。 |
-| 53 | `goten-ninomiya-iseki.html` | 御殿・二之宮遺跡 | reading | 中泉 | `01002-nakaizumi.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：中泉分類で確定。 |
-| 54 | `gyokoji-fuji.html` | 行興寺の藤 | reading | 豊田 | `01004-toyoda.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：豊田分類で確定。 |
-| 55 | `m009.html` | 見付天神裸祭 保存 | feature_child | 見付 | `m006.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri-hozon.html` | リネーム第3弾：旧ファイル hadaka-matsuri-hozon.html から新ファイル m009.html へ変更。旧URLは案内ページとして残す。 |
-| 56 | `m007.html` | 見付天神裸祭 起源 | feature_child | 見付 | `m006.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri-kigen.html` | リネーム第3弾：旧ファイル hadaka-matsuri-kigen.html から新ファイル m007.html へ変更。旧URLは案内ページとして残す。 |
-| 57 | `m008.html` | 見付天神裸祭 神事 | feature_child | 見付 | `m006.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri-shinji.html` | リネーム第3弾：旧ファイル hadaka-matsuri-shinji.html から新ファイル m008.html へ変更。旧URLは案内ページとして残す。 |
-| 58 | `m010.html` | 見付天神裸祭 しっぺい | feature_child | 見付 | `m006.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri-shippei.html` | リネーム第3弾：旧ファイル hadaka-matsuri-shippei.html から新ファイル m010.html へ変更。旧URLは案内ページとして残す。 |
-| 59 | `m006.html` | 見付天神裸祭 特集親ページ | feature_parent | 見付 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri.html` | リネーム第3弾：旧ファイル hadaka-matsuri.html から新ファイル m006.html へ変更。旧URLは案内ページとして残す。 |
-| 60 | `hajimeni.html` | はじめに | about | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 61 | `henkan.html` | 遠州弁変換ツール | tool | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 62 | `hero-mitsuke.jpg` | 見付ヒーロー画像 | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | 見付関連画像。ページではない。 |
-| 63 | `hime-kaido.html` | 姫街道 | reading | 見付 | `01001-mitsuke.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：見付分類で確定。姫街道全体ではなく、見付から分かれる道として扱う。 |
-| 64 | `hitokotozaka.html` | 一言坂 | reading | 豊田 | `01004-toyoda.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：豊田分類で確定。 |
-| 65 | `ikeda-watashi.html` | 池田の渡し | reading | 豊田 | `01004-toyoda.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：豊田分類で確定。 |
-| 66 | `iwata-chimei.html` | 磐田の地名 | category | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 67 | `iwata-gun.html` | 磐田郡 | reading | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 68 | `m001.html` | 見付古地図散歩 第1回 見付の土地と記憶 | feature_child | 見付 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `kai1.html` | 大石社長確認（2026-06-25）：見付分類で確定。内容確認済み：明治42年の見付町戸別明細図を読む「見付古地図散歩」第1回。リネーム候補あり。 短い地域別連番方式のリネーム候補：m001.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai1.html から新ファイル m001.html へ変更。旧URLはリダイレクト控え |
-| 69 | `m002.html` | 見付古地図散歩 第2回 相続される土地 | feature_child | 見付 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `kai2.html` | 大石社長確認（2026-06-25）：見付分類で確定。リネーム候補は継続。 短い地域別連番方式のリネーム候補：m002.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai2.html から新ファイル m002.html へ変更。旧URLはリダイレクト控えとして残す。 |
-| 70 | `m003.html` | 見付古地図散歩 第3回 道と調査 | feature_child | 見付 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `kai3.html` | 大石社長確認（2026-06-25）：見付分類で確定。リネーム候補は継続。 短い地域別連番方式のリネーム候補：m003.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai3.html から新ファイル m003.html へ変更。旧URLはリダイレクト控えとして残す。 |
-| 71 | `m004.html` | 見付古地図散歩 第4回 町の中枢 | feature_child | 見付 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `kai4.html` | 大石社長確認（2026-06-25）：見付分類で確定。リネーム候補は継続。 短い地域別連番方式のリネーム候補：m004.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai4.html から新ファイル m004.html へ変更。旧URLはリダイレクト控えとして残す。 |
-| 72 | `m005.html` | 見付古地図散歩 第5回 手放す前に | feature_child | 見付 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `kai5.html` | 大石社長確認（2026-06-25）：見付分類で確定。リネーム候補は継続。 短い地域別連番方式のリネーム候補：m005.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai5.html から新ファイル m005.html へ変更。旧URLはリダイレクト控えとして残す。 |
-| 73 | `kaizuka-chimei.html` | 貝塚の地名 | reading | 御厨 | `01003-mikuriya.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：御厨分類で確定。 |
-| 74 | `kaketsuka-minato.html` | 掛塚湊 | reading | 竜洋 | `01007-ryuyo.html` | confirmed |  |  | `` |  |
-| 75 | `kamada-mikuriya.html` | 鎌田と御厨 | reading | 御厨 | `01003-mikuriya.html` | confirmed |  |  | `` |  |
-| 76 | `kamada-shinmei.html` | 鎌田神明 | reading | 御厨 | `01003-mikuriya.html` | confirmed |  |  | `` |  |
-| 77 | `kamo.html` | 加茂 | reading | 豊田 | `01004-toyoda.html` | confirmed |  |  | `` |  |
-| 78 | `kochizu-murana.html` | 古地図と村名 | reading | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 79 | `kofun.html` | 古墳 | category | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 80 | `kounodai.html` | 国府台 | reading | 中泉 | `01002-nakaizumi.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：中泉分類で確定。 |
-| 81 | `kuni-shitei.html` | 国指定文化財 | category | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 82 | `kyu-akamatsuke.html` | 旧赤松家 | reading | 見付 | `01001-mitsuke.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：見付分類で確定。 |
-| 83 | `kyu-mitsuke-gakko.html` | 旧見付学校 | reading | 見付 | `01001-mitsuke.html` | confirmed |  |  | `` |  |
-| 84 | `kyuiwata.html` | 旧磐田市 | region_or_feature | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 85 | `kyutoyoda.html` | 旧豊田町 | region_or_feature | 豊田 | `01004-toyoda.html` | confirmed |  |  | `` |  |
-| 86 | `maizobunkazai.html` | 埋蔵文化財 | category | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 87 | `matsuri-kurashi.html` | 祭りと暮らし | category | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 88 | `mitsuke-shuku-tokaido.html` | 東海道と見付宿 | reading | 見付 | `01001-mitsuke.html` | confirmed |  |  | `` |  |
-| 89 | `mitsuke-shuku.html` | 見付宿 | reading | 見付 | `01001-mitsuke.html` | confirmed |  |  | `` |  |
-| 90 | `m011.html` | 見付天神裸祭 特集 | feature_child | 見付 | `m006.html` | confirmed |  | 2026-06-25 | `mitsuke-tenjin-hadaka-matsuri.html` | リネーム第3弾：旧ファイル mitsuke-tenjin-hadaka-matsuri.html から新ファイル m011.html へ変更。旧URLは案内ページとして残す。 |
-| 91 | `m012.html` | 見付天神 矢奈比賣神社 | reading | 見付 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `mitsuke-tenjin.html` | リネーム第3弾：旧ファイル mitsuke-tenjin.html から新ファイル m012.html へ変更。旧URLは案内ページとして残す。 |
-| 92 | `mitsuke.html` | 見付 | reading_or_old_entrance | 見付 | `01001-mitsuke.html` | confirmed |  |  | `` |  |
-| 93 | `mura-kara-machi.html` | 村から町へ | reading | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 94 | `nakaizumi-daikan.html` | 中泉代官 | reading | 中泉 | `01002-nakaizumi.html` | confirmed |  |  | `` |  |
-| 95 | `nakaizumi-goten.html` | 中泉御殿 | reading | 中泉 | `01002-nakaizumi.html` | confirmed |  |  | `` |  |
-| 96 | `ninomiya-mura.html` | 二之宮村 | reading | 中泉 | `01002-nakaizumi.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：中泉分類で確定。 |
-| 97 | `oishi.jpg` | 運営者画像 | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | 運営者・プロフィール用画像。ページではない。 |
-| 98 | `oumikunitama-jinja.html` | 淡海國玉神社 | reading | 見付 | `01001-mitsuke.html` | confirmed |  |  | `` |  |
-| 99 | `research-notes.html` | 調査ノート | notes | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 100 | `robots.txt` | robots.txt | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | 検索エンジン向け制御ファイル。削除禁止。 |
-| 101 | `robots.txt.txt` | robots.txt.txt 重複候補 | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | robots.txtと内容が同一系。公開上は不要の可能性が高い。 大石社長確認（2026-06-25）：削除せず残す。ただし分類対象外。 |
-| 102 | `sagisaka-iwata.html` | 匂坂と磐田 | reading | 向陽 | `01006-koyo.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：向陽分類で確定。 |
-| 103 | `saguchi-shiryo-catalog.html` | 佐口行正氏所蔵史料 目録 | source_catalog | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 104 | `saguchi-shiryo.html` | 佐口行正氏所蔵史料 | source_parent | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 105 | `shinden-chimei.html` | 新田の地名 | reading | 豊田 | `01004-toyoda.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：豊田分類で確定。 |
-| 106 | `shinden.html` | 新田 | reading | 豊田 | `01004-toyoda.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：豊田分類で確定。 |
-| 107 | `shitei.html` | 指定文化財 | category | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 108 | `sitemap.xml` | sitemap.xml | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | 検索エンジン向けサイトマップ。リネーム不可。 |
-| 109 | `tenryugawa-mura.html` | 天竜川村 | reading | 南部 | `01005-nanbu.html` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：南部分類で確定。 |
-| 110 | `tokaido-shuku.html` | 東海道宿場 | reading | 磐田共通 | `` | confirmed |  |  | `` |  |
-| 111 | `totoumi-kokubunji-hi.jpg` | 遠江国分寺碑 画像 | asset_or_system | 分類対象外 | `` | confirmed |  |  | `` | 遠江国分寺関連画像。ページではない。 |
-| 112 | `n016.html` | 遠江国分寺 関連ページ | feature_parent | 中泉 | `01002-nakaizumi.html` | confirmed |  | 2026-06-25 | `totoumi-kokubunji.html` | 大石社長確認（2026-06-25）：遠江国分寺系に合わせ、中泉分類で確定。enshu-kokubunji.htmlとの重複・統合候補は継続。 リネーム第2弾：旧ファイル totoumi-kokubunji.html から新ファイル n016.html へ変更。旧URLは案内ページとして残す。 |
-| 113 | `totoumi-kokufu.html` | 遠江国府 | reading | 磐田共通 | `` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：見付・中泉・豊田をまたぐ古代磐田の共通テーマとして、磐田共通分類で確定。 |
+| No | file | 表示名 | 種別 | 地域 | 内容分類 | 親ページ | 状態 | 作成日 | 更新日 | 旧file | 備考 |
+|---:|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | `assets/` | 素材フォルダ | folder | 分類対象外 |  | `` | confirmed |  |  | `` | 画像・CSS・JS等の素材置き場候補。ページ分類対象外。 |
+| 2 | `data/` | データフォルダ | folder | 分類対象外 |  | `` | confirmed |  |  | `` | pages.json等の台帳ファイルを置く候補。 |
+| 3 | `functions/api/` | APIフォルダ | folder | 分類対象外 |  | `` | confirmed |  |  | `` | 掲示板等の処理用候補。ページ分類対象外。 |
+| 4 | `images/` | 画像フォルダ | folder | 分類対象外 |  | `` | confirmed |  |  | `` | 画像置き場。ページ分類対象外。 |
+| 5 | `saguchi/img/` | 佐口行正氏所蔵史料 画像フォルダ | folder | 分類対象外 |  | `` | confirmed |  |  | `` | 佐口行正氏所蔵史料の画像置き場候補。 |
+| 6 | `c001.html` | 磐田物語 憲章・理念 | policy | 磐田共通 | 運営方針 | `index.html` | confirmed |  | 2026-06-25 | `000-kensho.html` | サイト全体の理念ページ。地域分類は磐田共通。 リネーム第4弾：旧ファイル 000-kensho.html から新ファイル c001.html へ変更。旧URLは案内ページとして残す。 |
+| 7 | `01001-mitsuke.html` | 磐田物語 見付 地区別入口ページ | region_entrance | 見付 |  | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
+| 8 | `01002-nakaizumi.html` | 磐田物語 中泉 地区別入口ページ | region_entrance | 中泉 |  | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
+| 9 | `01003-mikuriya.html` | 磐田物語 御厨 地区別入口ページ | region_entrance | 御厨 |  | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
+| 10 | `01004-toyoda.html` | 磐田物語 豊田 地区別入口ページ | region_entrance | 豊田 |  | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
+| 11 | `01005-nanbu.html` | 磐田物語 南部 地区別入口ページ | region_entrance | 南部 |  | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
+| 12 | `01006-koyo.html` | 磐田物語 向陽 地区別入口ページ | region_entrance | 向陽 |  | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
+| 13 | `01007-ryuyo.html` | 磐田物語 竜洋 地区別入口ページ | region_entrance | 竜洋 |  | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
+| 14 | `01008-fukude.html` | 磐田物語 福田 地区別入口ページ | region_entrance | 福田 |  | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
+| 15 | `01009-toyooka.html` | 磐田物語 豊岡 地区別入口ページ | region_entrance | 豊岡 |  | `` | confirmed |  |  | `` | 9地区分類の入口ページ。ファイル名は固定推奨。 |
+| 16 | `index.html` | 磐田物語 トップページ | home | 磐田共通 |  | `` | confirmed |  |  | `` |  |
+| 17 | `c002.html` | 磐田物語の地域分類 | reference | 磐田共通 | 資料 | `index.html` | confirmed |  | 2026-06-25 | `000-school-d.html` | 学校区・大字の一覧系と思われる。内容確認後、名称確定。 リネーム第4弾：旧ファイル 000-school-d.html から新ファイル c002.html へ変更。旧URLは案内ページとして残す。 |
+| 18 | `README.md` | リポジトリ説明 | document | 分類対象外 |  | `` | confirmed |  |  | `` | GitHub用説明文。サイト公開ページではない。 |
+| 19 | `admin-bbs.html` | 掲示板 管理ページ | admin_tool | 分類対象外 |  | `` | confirmed |  |  | `` | 管理者用。sitemap掲載対象外推奨。 |
+| 20 | `bbs.html` | みんなの掲示板 | community_tool | 磐田共通 |  | `` | confirmed |  |  | `` | 地域横断の投稿ページ。sitemap掲載は運用判断。 |
+| 21 | `bunkazai-guide.md` | 文化財ページ作成ガイド | document | 分類対象外 |  | `` | confirmed |  |  | `` | 制作・運用ガイド。 |
+| 22 | `bunkazai-guide_1.md` | 文化財ページ作成ガイド 重複候補 | document | 分類対象外 |  | `` | confirmed |  |  | `` | 大石社長確認（2026-06-25）：削除せず残す。ただし分類対象外。 |
+| 23 | `c003.html` | 磐田市の文化財 | category | 磐田共通 | 文化財 | `index.html` | confirmed |  | 2026-06-25 | `bunkazai.html` | リネーム第4弾：旧ファイル bunkazai.html から新ファイル c003.html へ変更。旧URLは案内ページとして残す。 |
+| 24 | `bunkazai.json` | 文化財データ | data | 分類対象外 |  | `` | confirmed |  |  | `` | ページではなくデータ。data/配下への移動候補。 |
+| 25 | `c004.html` | 地図・古地図 | category | 磐田共通 | 地図・古地図 | `index.html` | confirmed |  | 2026-06-25 | `chizu.html` | リネーム第4弾：旧ファイル chizu.html から新ファイル c004.html へ変更。旧URLは案内ページとして残す。 |
+| 26 | `t001.html` | 銚子塚古墳 | reading | 豊田 | 遺跡・古墳 | `01004-toyoda.html` | confirmed |  | 2026-06-25 | `choshizuka-kofun.html` | 大石社長確認（2026-06-25）：豊田分類で確定。 リネーム第4弾：旧ファイル choshizuka-kofun.html から新ファイル t001.html へ変更。旧URLは案内ページとして残す。 |
+| 27 | `c005.html` | 磐田物語だより | news_or_note | 磐田共通 | お知らせ | `index.html` | confirmed |  | 2026-06-25 | `dayori.html` | リネーム第4弾：旧ファイル dayori.html から新ファイル c005.html へ変更。旧URLは案内ページとして残す。 |
+| 28 | `c006.html` | 遠州弁 | reading | 磐田共通 | 読み物 | `index.html` | confirmed |  | 2026-06-25 | `enshu-ben.html` | リネーム第4弾：旧ファイル enshu-ben.html から新ファイル c006.html へ変更。旧URLは案内ページとして残す。 |
+| 29 | `n011.html` | 遠江国分寺 年表 | feature_child | 中泉 |  | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-chronology.html` | 大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-chronology.html から新ファイル n011.html へ変更。旧URLは案内ページとして残す。 |
+| 30 | `n014.html` | 遠江国分寺 復興 | feature_child | 中泉 |  | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-fukko.html` | 大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-fukko.html から新ファイル n014.html へ変更。旧URLは案内ページとして残す。 |
+| 31 | `n008.html` | 遠江国分寺 伽藍・回廊 | feature_child | 中泉 |  | `n004.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-garan-kairo.html` | 大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-kairo.html から新ファイル n008.html へ変更。旧URLは案内ページとして残す。 |
+| 32 | `n007.html` | 遠江国分寺 伽藍・講堂 | feature_child | 中泉 |  | `n004.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-garan-kodo.html` | 大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-kodo.html から新ファイル n007.html へ変更。旧URLは案内ページとして残す。 |
+| 33 | `n005.html` | 遠江国分寺 伽藍・金堂 | feature_child | 中泉 |  | `n004.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-garan-kondo.html` | 大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-kondo.html から新ファイル n005.html へ変更。旧URLは案内ページとして残す。 |
+| 34 | `n009.html` | 遠江国分寺 伽藍・僧坊 | feature_child | 中泉 |  | `n004.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-garan-sobo.html` | 大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-sobo.html から新ファイル n009.html へ変更。旧URLは案内ページとして残す。 |
+| 35 | `n006.html` | 遠江国分寺 伽藍・塔 | feature_child | 中泉 |  | `n004.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-garan-tower.html` | 大石社長確認（2026-06-25）：地域分類を中泉に修正。 リネーム第2弾：旧ファイル enshu-kokubunji-garan-tower.html から新ファイル n006.html へ変更。旧URLは案内ページとして残す。 |
+| 36 | `n004.html` | 遠江国分寺 伽藍 | feature_child | 中泉 |  | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-garan.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-garan.html から新ファイル n004.html へ変更。旧URLは案内ページとして残す。 |
+| 37 | `n015.html` | 遠江国分寺 用語集 | feature_child | 中泉 |  | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-glossary.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-glossary.html から新ファイル n015.html へ変更。旧URLは案内ページとして残す。 |
+| 38 | `n012.html` | 遠江国分寺と人々の暮らし | feature_child | 中泉 |  | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-life.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-life.html から新ファイル n012.html へ変更。旧URLは案内ページとして残す。 |
+| 39 | `n003.html` | 遠江国分寺の位置 | feature_child | 中泉 |  | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-location.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-location.html から新ファイル n003.html へ変更。旧URLは案内ページとして残す。 |
+| 40 | `n010.html` | 遠江国分寺の瓦 | feature_child | 中泉 |  | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-tiles.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-tiles.html から新ファイル n010.html へ変更。旧URLは案内ページとして残す。 |
+| 41 | `n013.html` | 遠江国分寺を歩く | feature_child | 中泉 |  | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-walk.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-walk.html から新ファイル n013.html へ変更。旧URLは案内ページとして残す。 |
+| 42 | `n002.html` | 遠江国分寺とは何か | feature_child | 中泉 |  | `n001.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji-what.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji-what.html から新ファイル n002.html へ変更。旧URLは案内ページとして残す。 |
+| 43 | `n001.html` | 遠江国分寺 特集親ページ | feature_parent | 中泉 |  | `01002-nakaizumi.html` | confirmed |  | 2026-06-25 | `enshu-kokubunji.html` | 大石社長確認（2026-06-25）：遠江国分寺系は中泉分類で確定。 リネーム第2弾：旧ファイル enshu-kokubunji.html から新ファイル n001.html へ変更。旧URLは案内ページとして残す。 |
+| 44 | `favicon-16.png` | favicon 16px | asset_or_system | 分類対象外 |  | `` | confirmed |  |  | `` | サイトアイコン。分類対象外。 |
+| 45 | `favicon-180.png` | favicon 180px | asset_or_system | 分類対象外 |  | `` | confirmed |  |  | `` | サイトアイコン。分類対象外。 |
+| 46 | `favicon-180_1.png` | favicon 180px 重複候補 | asset_or_system | 分類対象外 |  | `` | confirmed |  |  | `` | 重複候補。削除判断は表示確認後。 大石社長確認（2026-06-25）：削除せず残す。分類対象外。 |
+| 47 | `favicon-192.png` | favicon 192px | asset_or_system | 分類対象外 |  | `` | confirmed |  |  | `` | サイトアイコン。分類対象外。 |
+| 48 | `favicon-32.png` | favicon 32px | asset_or_system | 分類対象外 |  | `` | confirmed |  |  | `` | サイトアイコン。分類対象外。 |
+| 49 | `favicon-512.png` | favicon 512px | asset_or_system | 分類対象外 |  | `` | confirmed |  |  | `` | サイトアイコン。分類対象外。 |
+| 50 | `favicon.ico` | favicon ico | asset_or_system | 分類対象外 |  | `` | confirmed |  |  | `` | サイトアイコン。分類対象外。 |
+| 51 | `n017.html` | 府八幡宮 | reading | 中泉 | 寺社 | `01002-nakaizumi.html` | confirmed |  | 2026-06-25 | `fu-hachimangu.html` | 大石社長確認（2026-06-25）：中泉分類で確定。 リネーム第4弾：旧ファイル fu-hachimangu.html から新ファイル n017.html へ変更。旧URLは案内ページとして残す。 |
+| 52 | `googlea3467099ea123f53.html` | Google Search Console 認証ファイル | asset_or_system | 分類対象外 |  | `` | confirmed |  |  | `` | 削除禁止。分類対象外。 |
+| 53 | `n018.html` | 御殿・二之宮遺跡 | reading | 中泉 | 遺跡・古墳 | `01002-nakaizumi.html` | confirmed |  | 2026-06-25 | `goten-ninomiya-iseki.html` | 大石社長確認（2026-06-25）：中泉分類で確定。 リネーム第4弾：旧ファイル goten-ninomiya-iseki.html から新ファイル n018.html へ変更。旧URLは案内ページとして残す。 |
+| 54 | `t002.html` | 行興寺の藤 | reading | 豊田 | 寺社 | `01004-toyoda.html` | confirmed |  | 2026-06-25 | `gyokoji-fuji.html` | 大石社長確認（2026-06-25）：豊田分類で確定。 リネーム第4弾：旧ファイル gyokoji-fuji.html から新ファイル t002.html へ変更。旧URLは案内ページとして残す。 |
+| 55 | `m009.html` | 見付天神裸祭 保存 | feature_child | 見付 | 特集内ページ | `m006.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri-hozon.html` | リネーム第3弾：旧ファイル hadaka-matsuri-hozon.html から新ファイル m009.html へ変更。旧URLは案内ページとして残す。 |
+| 56 | `m007.html` | 見付天神裸祭 起源 | feature_child | 見付 | 特集内ページ | `m006.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri-kigen.html` | リネーム第3弾：旧ファイル hadaka-matsuri-kigen.html から新ファイル m007.html へ変更。旧URLは案内ページとして残す。 |
+| 57 | `m008.html` | 見付天神裸祭 神事 | feature_child | 見付 | 特集内ページ | `m006.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri-shinji.html` | リネーム第3弾：旧ファイル hadaka-matsuri-shinji.html から新ファイル m008.html へ変更。旧URLは案内ページとして残す。 |
+| 58 | `m010.html` | 見付天神裸祭 しっぺい | feature_child | 見付 | 特集内ページ | `m006.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri-shippei.html` | リネーム第3弾：旧ファイル hadaka-matsuri-shippei.html から新ファイル m010.html へ変更。旧URLは案内ページとして残す。 |
+| 59 | `m006.html` | 見付天神裸祭 特集親ページ | feature_parent | 見付 | 特集 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `hadaka-matsuri.html` | リネーム第3弾：旧ファイル hadaka-matsuri.html から新ファイル m006.html へ変更。旧URLは案内ページとして残す。 |
+| 60 | `c007.html` | はじめに | about | 磐田共通 | 運営方針 | `index.html` | confirmed |  | 2026-06-25 | `hajimeni.html` | リネーム第4弾：旧ファイル hajimeni.html から新ファイル c007.html へ変更。旧URLは案内ページとして残す。 |
+| 61 | `c008.html` | 遠州弁変換ツール | tool | 磐田共通 | ツール | `index.html` | confirmed |  | 2026-06-25 | `henkan.html` | リネーム第4弾：旧ファイル henkan.html から新ファイル c008.html へ変更。旧URLは案内ページとして残す。 |
+| 62 | `hero-mitsuke.jpg` | 見付ヒーロー画像 | asset_or_system | 分類対象外 |  | `` | confirmed |  |  | `` | 見付関連画像。ページではない。 |
+| 63 | `m013.html` | 姫街道 | reading | 見付 | 街道・交通 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `hime-kaido.html` | 大石社長確認（2026-06-25）：見付分類で確定。姫街道全体ではなく、見付から分かれる道として扱う。 リネーム第4弾：旧ファイル hime-kaido.html から新ファイル m013.html へ変更。旧URLは案内ページとして残す。 |
+| 64 | `t003.html` | 一言坂 | reading | 豊田 | 歴史解説 | `01004-toyoda.html` | confirmed |  | 2026-06-25 | `hitokotozaka.html` | 大石社長確認（2026-06-25）：豊田分類で確定。 リネーム第4弾：旧ファイル hitokotozaka.html から新ファイル t003.html へ変更。旧URLは案内ページとして残す。 |
+| 65 | `t004.html` | 池田の渡し | reading | 豊田 | 街道・交通 | `01004-toyoda.html` | confirmed |  | 2026-06-25 | `ikeda-watashi.html` | 大石社長確認（2026-06-25）：豊田分類で確定。 リネーム第4弾：旧ファイル ikeda-watashi.html から新ファイル t004.html へ変更。旧URLは案内ページとして残す。 |
+| 66 | `c009.html` | 磐田の地名 | category | 磐田共通 | 地名 | `index.html` | confirmed |  | 2026-06-25 | `iwata-chimei.html` | リネーム第4弾：旧ファイル iwata-chimei.html から新ファイル c009.html へ変更。旧URLは案内ページとして残す。 |
+| 67 | `c010.html` | 磐田郡 | reading | 磐田共通 | 歴史解説 | `index.html` | confirmed |  | 2026-06-25 | `iwata-gun.html` | リネーム第4弾：旧ファイル iwata-gun.html から新ファイル c010.html へ変更。旧URLは案内ページとして残す。 |
+| 68 | `m001.html` | 見付古地図散歩 第1回 見付の土地と記憶 | feature_child | 見付 |  | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `kai1.html` | 大石社長確認（2026-06-25）：見付分類で確定。内容確認済み：明治42年の見付町戸別明細図を読む「見付古地図散歩」第1回。リネーム候補あり。 短い地域別連番方式のリネーム候補：m001.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai1.html から新ファイル m001.html へ変更。旧URLはリダイレクト控え |
+| 69 | `m002.html` | 見付古地図散歩 第2回 相続される土地 | feature_child | 見付 |  | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `kai2.html` | 大石社長確認（2026-06-25）：見付分類で確定。リネーム候補は継続。 短い地域別連番方式のリネーム候補：m002.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai2.html から新ファイル m002.html へ変更。旧URLはリダイレクト控えとして残す。 |
+| 70 | `m003.html` | 見付古地図散歩 第3回 道と調査 | feature_child | 見付 |  | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `kai3.html` | 大石社長確認（2026-06-25）：見付分類で確定。リネーム候補は継続。 短い地域別連番方式のリネーム候補：m003.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai3.html から新ファイル m003.html へ変更。旧URLはリダイレクト控えとして残す。 |
+| 71 | `m004.html` | 見付古地図散歩 第4回 町の中枢 | feature_child | 見付 |  | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `kai4.html` | 大石社長確認（2026-06-25）：見付分類で確定。リネーム候補は継続。 短い地域別連番方式のリネーム候補：m004.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai4.html から新ファイル m004.html へ変更。旧URLはリダイレクト控えとして残す。 |
+| 72 | `m005.html` | 見付古地図散歩 第5回 手放す前に | feature_child | 見付 |  | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `kai5.html` | 大石社長確認（2026-06-25）：見付分類で確定。リネーム候補は継続。 短い地域別連番方式のリネーム候補：m005.html。作成日はファイル名に入れず台帳で管理。 リネーム第1弾：旧ファイル kai5.html から新ファイル m005.html へ変更。旧URLはリダイレクト控えとして残す。 |
+| 73 | `u001.html` | 貝塚の地名 | reading | 御厨 | 地名 | `01003-mikuriya.html` | confirmed |  | 2026-06-25 | `kaizuka-chimei.html` | 大石社長確認（2026-06-25）：御厨分類で確定。 リネーム第4弾：旧ファイル kaizuka-chimei.html から新ファイル u001.html へ変更。旧URLは案内ページとして残す。 |
+| 74 | `r001.html` | 掛塚湊 | reading | 竜洋 | 暮らし・産業 | `01007-ryuyo.html` | confirmed |  | 2026-06-25 | `kaketsuka-minato.html` | リネーム第4弾：旧ファイル kaketsuka-minato.html から新ファイル r001.html へ変更。旧URLは案内ページとして残す。 |
+| 75 | `u002.html` | 鎌田と御厨 | reading | 御厨 | 歴史解説 | `01003-mikuriya.html` | confirmed |  | 2026-06-25 | `kamada-mikuriya.html` | リネーム第4弾：旧ファイル kamada-mikuriya.html から新ファイル u002.html へ変更。旧URLは案内ページとして残す。 |
+| 76 | `u003.html` | 鎌田神明宮 | reading | 御厨 | 寺社 | `01003-mikuriya.html` | confirmed |  | 2026-06-25 | `kamada-shinmei.html` | リネーム第4弾：旧ファイル kamada-shinmei.html から新ファイル u003.html へ変更。旧URLは案内ページとして残す。 |
+| 77 | `t005.html` | 加茂 | reading | 豊田 | 地名 | `01004-toyoda.html` | confirmed |  | 2026-06-25 | `kamo.html` | リネーム第4弾：旧ファイル kamo.html から新ファイル t005.html へ変更。旧URLは案内ページとして残す。 |
+| 78 | `c011.html` | 古地図と村名 | reading | 磐田共通 | 地図・古地図 | `index.html` | confirmed |  | 2026-06-25 | `kochizu-murana.html` | リネーム第4弾：旧ファイル kochizu-murana.html から新ファイル c011.html へ変更。旧URLは案内ページとして残す。 |
+| 79 | `c012.html` | 古墳 | category | 磐田共通 | 遺跡・古墳 | `index.html` | confirmed |  | 2026-06-25 | `kofun.html` | リネーム第4弾：旧ファイル kofun.html から新ファイル c012.html へ変更。旧URLは案内ページとして残す。 |
+| 80 | `n019.html` | 国府台 | reading | 中泉 | 地名 | `01002-nakaizumi.html` | confirmed |  | 2026-06-25 | `kounodai.html` | 大石社長確認（2026-06-25）：中泉分類で確定。 リネーム第4弾：旧ファイル kounodai.html から新ファイル n019.html へ変更。旧URLは案内ページとして残す。 |
+| 81 | `c013.html` | 国指定文化財 | category | 磐田共通 | 文化財 | `c003.html` | confirmed |  | 2026-06-25 | `kuni-shitei.html` | リネーム第4弾：旧ファイル kuni-shitei.html から新ファイル c013.html へ変更。旧URLは案内ページとして残す。 |
+| 82 | `m014.html` | 旧赤松家 | reading | 見付 | 読み物 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `kyu-akamatsuke.html` | 大石社長確認（2026-06-25）：見付分類で確定。 リネーム第4弾：旧ファイル kyu-akamatsuke.html から新ファイル m014.html へ変更。旧URLは案内ページとして残す。 |
+| 83 | `m015.html` | 旧見付学校 | reading | 見付 | 文化財 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `kyu-mitsuke-gakko.html` | リネーム第4弾：旧ファイル kyu-mitsuke-gakko.html から新ファイル m015.html へ変更。旧URLは案内ページとして残す。 |
+| 84 | `c014.html` | 旧磐田市 | history | 磐田共通 | 歴史解説 | `index.html` | confirmed |  | 2026-06-25 | `kyuiwata.html` | リネーム第4弾：旧ファイル kyuiwata.html から新ファイル c014.html へ変更。旧URLは案内ページとして残す。 |
+| 85 | `t006.html` | 旧豊田町 | history | 豊田 | 歴史解説 | `01004-toyoda.html` | confirmed |  | 2026-06-25 | `kyutoyoda.html` | リネーム第4弾：旧ファイル kyutoyoda.html から新ファイル t006.html へ変更。旧URLは案内ページとして残す。 |
+| 86 | `c015.html` | 埋蔵文化財 | category | 磐田共通 | 文化財 | `c003.html` | confirmed |  | 2026-06-25 | `maizobunkazai.html` | リネーム第4弾：旧ファイル maizobunkazai.html から新ファイル c015.html へ変更。旧URLは案内ページとして残す。 |
+| 87 | `c016.html` | 祭りと暮らし | category | 磐田共通 | 祭り・民俗 | `index.html` | confirmed |  | 2026-06-25 | `matsuri-kurashi.html` | リネーム第4弾：旧ファイル matsuri-kurashi.html から新ファイル c016.html へ変更。旧URLは案内ページとして残す。 |
+| 88 | `m016.html` | 東海道と見付宿 | reading | 見付 | 街道・交通 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `mitsuke-shuku-tokaido.html` | リネーム第4弾：旧ファイル mitsuke-shuku-tokaido.html から新ファイル m016.html へ変更。旧URLは案内ページとして残す。 |
+| 89 | `m017.html` | 見付宿 | reading | 見付 | 歴史解説 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `mitsuke-shuku.html` | リネーム第4弾：旧ファイル mitsuke-shuku.html から新ファイル m017.html へ変更。旧URLは案内ページとして残す。 |
+| 90 | `m011.html` | 見付天神裸祭 特集 | feature_child | 見付 | 特集内ページ | `m006.html` | confirmed |  | 2026-06-25 | `mitsuke-tenjin-hadaka-matsuri.html` | リネーム第3弾：旧ファイル mitsuke-tenjin-hadaka-matsuri.html から新ファイル m011.html へ変更。旧URLは案内ページとして残す。 |
+| 91 | `m012.html` | 見付天神 矢奈比賣神社 | reading | 見付 | 寺社 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `mitsuke-tenjin.html` | リネーム第3弾：旧ファイル mitsuke-tenjin.html から新ファイル m012.html へ変更。旧URLは案内ページとして残す。 |
+| 92 | `m018.html` | 見付 | reading | 見付 | 読み物 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `mitsuke.html` | リネーム第4弾：旧ファイル mitsuke.html から新ファイル m018.html へ変更。旧URLは案内ページとして残す。 |
+| 93 | `c017.html` | 村から町へ | reading | 磐田共通 | 歴史解説 | `index.html` | confirmed |  | 2026-06-25 | `mura-kara-machi.html` | リネーム第4弾：旧ファイル mura-kara-machi.html から新ファイル c017.html へ変更。旧URLは案内ページとして残す。 |
+| 94 | `n020.html` | 中泉代官 | reading | 中泉 | 歴史解説 | `01002-nakaizumi.html` | confirmed |  | 2026-06-25 | `nakaizumi-daikan.html` | リネーム第4弾：旧ファイル nakaizumi-daikan.html から新ファイル n020.html へ変更。旧URLは案内ページとして残す。 |
+| 95 | `n021.html` | 中泉御殿 | reading | 中泉 | 歴史解説 | `01002-nakaizumi.html` | confirmed |  | 2026-06-25 | `nakaizumi-goten.html` | リネーム第4弾：旧ファイル nakaizumi-goten.html から新ファイル n021.html へ変更。旧URLは案内ページとして残す。 |
+| 96 | `n022.html` | 二之宮村 | reading | 中泉 | 歴史解説 | `01002-nakaizumi.html` | confirmed |  | 2026-06-25 | `ninomiya-mura.html` | 大石社長確認（2026-06-25）：中泉分類で確定。 リネーム第4弾：旧ファイル ninomiya-mura.html から新ファイル n022.html へ変更。旧URLは案内ページとして残す。 |
+| 97 | `oishi.jpg` | 運営者画像 | asset_or_system | 分類対象外 |  | `` | confirmed |  |  | `` | 運営者・プロフィール用画像。ページではない。 |
+| 98 | `m019.html` | 淡海國玉神社 | reading | 見付 | 寺社 | `01001-mitsuke.html` | confirmed |  | 2026-06-25 | `oumikunitama-jinja.html` | リネーム第4弾：旧ファイル oumikunitama-jinja.html から新ファイル m019.html へ変更。旧URLは案内ページとして残す。 |
+| 99 | `c018.html` | 調査ノート | notes | 磐田共通 | 調査ノート | `index.html` | confirmed |  | 2026-06-25 | `research-notes.html` | リネーム第4弾：旧ファイル research-notes.html から新ファイル c018.html へ変更。旧URLは案内ページとして残す。 |
+| 100 | `robots.txt` | robots.txt | asset_or_system | 分類対象外 |  | `` | confirmed |  |  | `` | 検索エンジン向け制御ファイル。削除禁止。 |
+| 101 | `robots.txt.txt` | robots.txt.txt 重複候補 | asset_or_system | 分類対象外 |  | `` | confirmed |  |  | `` | robots.txtと内容が同一系。公開上は不要の可能性が高い。 大石社長確認（2026-06-25）：削除せず残す。ただし分類対象外。 |
+| 102 | `k001.html` | 匂坂と磐田 | reading | 向陽 | 歴史解説 | `01006-koyo.html` | confirmed |  | 2026-06-25 | `sagisaka-iwata.html` | 大石社長確認（2026-06-25）：向陽分類で確定。 リネーム第4弾：旧ファイル sagisaka-iwata.html から新ファイル k001.html へ変更。旧URLは案内ページとして残す。 |
+| 103 | `c019.html` | 佐口行正氏所蔵史料 目録 | source_catalog | 磐田共通 | 史料目録 | `c020.html` | confirmed |  | 2026-06-25 | `saguchi-shiryo-catalog.html` | リネーム第4弾：旧ファイル saguchi-shiryo-catalog.html から新ファイル c019.html へ変更。旧URLは案内ページとして残す。 |
+| 104 | `c020.html` | 佐口行正氏所蔵史料 | source_parent | 磐田共通 | 史料 | `index.html` | confirmed |  | 2026-06-25 | `saguchi-shiryo.html` | リネーム第4弾：旧ファイル saguchi-shiryo.html から新ファイル c020.html へ変更。旧URLは案内ページとして残す。 |
+| 105 | `t007.html` | 新田の地名 | reading | 豊田 | 地名 | `01004-toyoda.html` | confirmed |  | 2026-06-25 | `shinden-chimei.html` | 大石社長確認（2026-06-25）：豊田分類で確定。 リネーム第4弾：旧ファイル shinden-chimei.html から新ファイル t007.html へ変更。旧URLは案内ページとして残す。 |
+| 106 | `t008.html` | 新田 | reading | 豊田 | 歴史解説 | `01004-toyoda.html` | confirmed |  | 2026-06-25 | `shinden.html` | 大石社長確認（2026-06-25）：豊田分類で確定。 リネーム第4弾：旧ファイル shinden.html から新ファイル t008.html へ変更。旧URLは案内ページとして残す。 |
+| 107 | `c021.html` | 指定文化財 | category | 磐田共通 | 文化財 | `c003.html` | confirmed |  | 2026-06-25 | `shitei.html` | リネーム第4弾：旧ファイル shitei.html から新ファイル c021.html へ変更。旧URLは案内ページとして残す。 |
+| 108 | `sitemap.xml` | sitemap.xml | asset_or_system | 分類対象外 |  | `` | confirmed |  |  | `` | 検索エンジン向けサイトマップ。リネーム不可。 |
+| 109 | `s001.html` | 天竜川村 | reading | 南部 | 歴史解説 | `01005-nanbu.html` | confirmed |  | 2026-06-25 | `tenryugawa-mura.html` | 大石社長確認（2026-06-25）：南部分類で確定。 リネーム第4弾：旧ファイル tenryugawa-mura.html から新ファイル s001.html へ変更。旧URLは案内ページとして残す。 |
+| 110 | `c022.html` | 東海道宿場 | reading | 磐田共通 | 街道・交通 | `index.html` | confirmed |  | 2026-06-25 | `tokaido-shuku.html` | リネーム第4弾：旧ファイル tokaido-shuku.html から新ファイル c022.html へ変更。旧URLは案内ページとして残す。 |
+| 111 | `totoumi-kokubunji-hi.jpg` | 遠江国分寺碑 画像 | asset_or_system | 分類対象外 |  | `` | confirmed |  |  | `` | 遠江国分寺関連画像。ページではない。 |
+| 112 | `n016.html` | 遠江国分寺 関連ページ | feature_parent | 中泉 |  | `01002-nakaizumi.html` | confirmed |  | 2026-06-25 | `totoumi-kokubunji.html` | 大石社長確認（2026-06-25）：遠江国分寺系に合わせ、中泉分類で確定。enshu-kokubunji.htmlとの重複・統合候補は継続。 リネーム第2弾：旧ファイル totoumi-kokubunji.html から新ファイル n016.html へ変更。旧URLは案内ページとして残す。 |
+| 113 | `c023.html` | 遠江国府 | reading | 磐田共通 | 歴史解説 | `index.html` | confirmed |  | 2026-06-25 | `totoumi-kokufu.html` | 大石社長確認（2026-06-25）：見付・中泉・豊田をまたぐ古代磐田の共通テーマとして、磐田共通分類で確定。 リネーム第4弾：旧ファイル totoumi-kokufu.html から新ファイル c023.html へ変更。旧URLは案内ページとして残す。 |

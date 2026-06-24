@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>府八幡宮と、国府のまちの守り神 ｜ 磐田物語</title>
-<meta name="description" content="府八幡宮は、磐田市中泉に鎮まる古社。遠江国府の守護として奈良時代に勧請され、寛永の楼門は静岡県指定文化財。国府のまちの守り神として続く、古代磐田の記憶をたどる。">
-<meta property="og:title" content="府八幡宮と、国府のまちの守り神 ｜ 磐田物語">
-<meta property="og:description" content="遠江国府の守り神として奈良時代に祀られた古社。寛永の楼門が今に伝える、国府のまちの記憶。">
-<meta property="og:type" content="article">
+<title>磐田市の指定文化財一覧 ｜ 磐田物語</title>
+<meta name="description" content="磐田市の国・県・市・国登録・無形民俗の指定文化財を横断的に一覧する。国指定8件・県指定18件を、指定区分・時代・種別・キーワードで絞り込み。指定情報は磐田市公式に基づき、各公式ページへ確実にリンクする。">
+<meta property="og:title" content="磐田市の指定文化財一覧 ｜ 磐田物語">
+<meta property="og:description" content="磐田市の指定文化財を区分・時代・種別で横断検索できる一覧。国指定・県指定を全件掲載。">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -17,24 +17,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --kinari:#fffdf7;
-    --cha:#2f7fa3;
-    --matsu:#356f88;
-    --sumi:#22303a;
-    --usuzumi:#5b6b74;
-    --waku:#d8e8ef;
-    --paper:#fffdf7;
-  }
+  :root{--kinari:#fffdf7;--cha:#2f7fa3;--brown-deep:#1f4f6f;--matsu:#356f88;--sumi:#22303a;--usuzumi:#5b6b74;--waku:#d8e8ef;--paper:#fffdf7;}
   *{box-sizing:border-box;margin:0;padding:0;}
-  body{
-    font-family:"Zen Kaku Gothic New",sans-serif;
-    color:var(--sumi);
-    background:var(--kinari);
-    line-height:1.95;
-    font-size:17px;
-    -webkit-font-smoothing:antialiased;
-  }
+  body{font-family:"Zen Kaku Gothic New",sans-serif;color:var(--sumi);background:var(--kinari);line-height:1.9;font-size:17px;-webkit-font-smoothing:antialiased;}
   a{color:var(--cha);text-decoration:none;}
   a:hover{text-decoration:underline;}
   .mincho{font-family:"Shippori Mincho",serif;}
@@ -46,30 +31,61 @@
   nav.global ul{max-width:880px;margin:0 auto;padding:0 22px;list-style:none;display:flex;flex-wrap:wrap;gap:4px 26px;}
   nav.global a{color:#eef6fb;display:inline-block;padding:11px 0;font-size:14px;letter-spacing:.03em;}
   nav.global a:hover{color:#fff;text-decoration:none;}
-  main{max-width:760px;margin:0 auto;padding:0 22px;}
+  main{max-width:980px;margin:0 auto;padding:0 22px;}
   .crumb{font-size:13px;color:var(--usuzumi);padding:20px 0 6px;}
   .crumb a{color:var(--usuzumi);}
-  .cat{display:inline-block;font-size:13px;color:var(--matsu);border-left:3px solid var(--cha);padding-left:9px;margin:18px 0 10px;letter-spacing:.04em;}
-  h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:31px;line-height:1.5;color:var(--sumi);margin:6px 0 28px;letter-spacing:.02em;}
-  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#3a4750;margin-bottom:34px;}
-  figure{margin:32px 0;}
-  .fig-box{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:26px 20px;text-align:center;}
-  figcaption{font-size:13.5px;color:var(--usuzumi);margin-top:12px;line-height:1.8;text-align:left;}
-  svg{max-width:100%;height:auto;}
-  .svg-label{font-family:"Zen Kaku Gothic New",sans-serif;fill:var(--sumi);}
-  .svg-sub{fill:var(--usuzumi);}
-  h2{font-family:"Shippori Mincho",serif;font-weight:600;font-size:22px;color:var(--matsu);margin:40px 0 16px;padding-bottom:9px;border-bottom:2px solid var(--waku);letter-spacing:.02em;}
-  p{margin:0 0 20px;}
-  h3{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--sumi);margin:34px 0 12px;}
-  .refs{font-size:14px;color:var(--usuzumi);}
-  .refs li{margin:0 0 6px 1.2em;line-height:1.8;}
-  .related{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 8px;}
-  .related a{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:10px 15px;font-size:14px;color:var(--matsu);}
-  .related a:hover{background:#f4fafc;text-decoration:none;}
-  .pager{display:flex;justify-content:space-between;gap:12px;margin:40px 0 10px;flex-wrap:wrap;}
+  .eyebrow{font-size:13px;color:var(--cha);letter-spacing:.12em;font-weight:700;margin-top:18px;}
+  h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:29px;line-height:1.5;color:var(--sumi);margin:6px 0 20px;letter-spacing:.02em;}
+  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#3a4750;margin-bottom:26px;}
+  h2{font-family:"Shippori Mincho",serif;font-weight:600;font-size:21px;color:var(--matsu);margin:38px 0 14px;padding-bottom:9px;border-bottom:2px solid var(--waku);letter-spacing:.02em;}
+  p{margin:0 0 18px;}
+  /* フィルタ */
+  .finder{background:var(--paper);border:1px solid var(--waku);border-radius:5px;padding:18px 20px;margin:22px 0;}
+  .search-wrap{position:relative;margin-bottom:14px;}
+  #cpSearch{width:100%;font-family:inherit;font-size:15px;color:var(--sumi);background:var(--kinari);border:1px solid var(--waku);border-radius:4px;padding:11px 14px;}
+  #cpSearch:focus{outline:none;border-color:var(--cha);box-shadow:0 0 0 3px rgba(166,113,62,.12);}
+  .facet{margin-bottom:10px;}
+  .facet-label{font-size:12px;font-weight:700;color:var(--matsu);letter-spacing:.04em;margin-bottom:6px;display:block;}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;}
+  .chip{font-family:inherit;font-size:13px;color:var(--usuzumi);background:var(--kinari);border:1px solid var(--waku);border-radius:999px;padding:6px 14px;cursor:pointer;transition:.16s;}
+  .chip:hover{border-color:var(--cha);color:var(--brown-deep);}
+  .chip.on{background:var(--matsu);border-color:var(--matsu);color:#fff;}
+  .chip.on.kuni{background:var(--brown-deep);border-color:var(--brown-deep);}
+  .result-count{font-size:13px;color:var(--usuzumi);margin-top:10px;}
+  /* テーブル */
+  .table-wrap{overflow-x:auto;margin:18px 0;border:1px solid var(--waku);border-radius:5px;}
+  table.cp{width:100%;border-collapse:collapse;font-size:14px;min-width:680px;}
+  table.cp thead th{background:var(--matsu);color:#fff;font-weight:600;font-size:13px;padding:11px 12px;text-align:left;white-space:nowrap;position:sticky;top:0;}
+  table.cp td{border-bottom:1px solid var(--waku);padding:11px 12px;vertical-align:top;background:var(--paper);}
+  table.cp tr:hover td{background:#f4fafc;}
+  .c-name{font-weight:700;color:var(--sumi);min-width:200px;}
+  .c-name .rd{display:inline-block;font-size:11px;font-weight:500;color:#fff;background:var(--cha);border-radius:3px;padding:2px 7px;margin-left:7px;vertical-align:middle;}
+  .c-name .rd:hover{background:var(--brown-deep);text-decoration:none;}
+  .bdg{display:inline-block;font-size:11px;font-weight:700;color:#fff;border-radius:3px;padding:3px 9px;white-space:nowrap;}
+  .bdg.kuni{background:var(--brown-deep);}
+  .bdg.ken{background:var(--matsu);}
+  .bdg.shi{background:var(--usuzumi);}
+  .c-cat,.c-era,.c-loc,.c-date{color:#3a4750;white-space:nowrap;}
+  .off{font-size:12.5px;color:var(--usuzumi);white-space:nowrap;}
+  .no-result{padding:24px;text-align:center;font-family:"Shippori Mincho",serif;color:var(--usuzumi);}
+  /* 他区分カード */
+  .otherbox{background:var(--paper);border:1px solid var(--waku);border-radius:5px;padding:20px 24px;margin:16px 0;}
+  .otherbox h3{font-family:"Shippori Mincho",serif;font-size:17px;color:var(--sumi);margin:0 0 8px;}
+  .otherbox .meta{font-size:12.5px;color:var(--usuzumi);margin-bottom:10px;}
+  .otherbox p{font-size:14.5px;margin:0 0 12px;}
+  .otherbox a.official{display:inline-block;background:var(--kinari);border:1px solid var(--waku);border-radius:4px;padding:8px 15px;font-size:13.5px;color:var(--matsu);}
+  .otherbox a.official:hover{background:#eef6fb;text-decoration:none;}
+  .mukei-list{columns:2;column-gap:24px;font-size:14px;margin:4px 0 0;padding-left:1.2em;}
+  .mukei-list li{margin-bottom:5px;break-inside:avoid;}
+  .sourcebox{background:#eef6fb;border:1px solid var(--waku);border-radius:4px;padding:20px 24px;margin:30px 0;font-size:14px;color:#3a4750;}
+  .sourcebox h3{font-family:"Shippori Mincho",serif;font-size:16px;color:var(--matsu);margin:0 0 10px;}
+  .sourcebox ul{margin:0 0 12px 1.3em;}
+  .sourcebox li{margin-bottom:5px;line-height:1.7;}
+  .sourcebox .disclaimer{font-size:13px;color:var(--usuzumi);border-top:1px dashed var(--waku);padding-top:12px;margin-top:4px;}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 10px;flex-wrap:wrap;}
   .pager a{font-size:14px;}
   footer.site{background:var(--matsu);color:#eee;margin-top:54px;}
-  .foot-inner{max-width:760px;margin:0 auto;padding:34px 22px;}
+  .foot-inner{max-width:980px;margin:0 auto;padding:34px 22px;}
   .foot-inner .mincho{font-size:18px;color:#fff;display:block;margin-bottom:12px;}
   .foot-inner p{font-size:13.5px;color:#e9f3fa;line-height:1.85;margin-bottom:18px;}
   .foot-inner h4{font-size:13px;color:#cfe2ec;font-weight:500;margin:16px 0 8px;letter-spacing:.05em;}
@@ -77,9 +93,9 @@
   .foot-links li{margin-bottom:7px;font-size:14px;}
   .foot-links a{color:#eef6fb;}
   .copy{font-size:12px;color:#a9c6d2;margin-top:22px;}
-  @media(max-width:600px){h1{font-size:25px;}body{font-size:16px;}h2{font-size:19px;}}
+  @media(max-width:600px){h1{font-size:23px;}body{font-size:16px;}h2{font-size:19px;}.mukei-list{columns:1;}}
 </style>
-  <link rel="canonical" href="https://iwata-monogatari.pages.dev/fu-hachimangu.html">
+  <link rel="canonical" href="https://iwata-monogatari.pages.dev/c021.html">
 <style id="reno-blocks">
 .article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
 .article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
@@ -108,9 +124,9 @@
       <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
     </a>
     <nav class="gh-menu" aria-label="主要ナビゲーション">
-      <a href="/hajimeni.html">はじめに</a>
-      <a href="/000-kensho.html">憲章</a>
-      <a href="/saguchi-shiryo-catalog.html">佐口史料室</a>
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
       <a href="/#new">新着</a>
       <a href="/bbs.html">掲示板</a>
     </nav>
@@ -118,93 +134,380 @@
 </header>
 
 <main>
-  <div class="crumb"><a href="https://iwata-monogatari.pages.dev/">磐田物語</a> ／ 府八幡宮と、国府のまちの守り神</div>
+  <div class="crumb"><a href="https://iwata-monogatari.pages.dev/">磐田物語</a> ／ <a href="https://iwata-monogatari.pages.dev/c003.html">文化財</a> ／ 指定文化財一覧</div>
 
-  <span class="cat">古代の磐田 ｜ 国府と信仰の記憶</span>
-
-  <h1>府八幡宮と、<br>国府のまちの守り神</h1>
+  <p class="eyebrow">DESIGNATED CULTURAL PROPERTIES</p>
+  <h1>磐田市の指定文化財一覧</h1>
 
   <div class="lead">
-    遠江国分寺跡から、天平通りをはさんだ向かい側。木の鳥居をくぐると、黒ずんだ楼門が静かに構えている。府八幡宮である。「中泉の八幡さま」と親しまれてきたこの古社は、古代、このまちが遠江国の中心だったころ、その守り神として祀られた。国府のまちの記憶を、ここにたどってみたい。
+    磐田市には、国・県・市・国登録・無形民俗と、さまざまな区分の指定文化財がある。このページでは、それらを一つの表に束ね、指定区分・時代・種別・キーワードで横断的に絞り込めるようにした。まず、件数を確実に確認できた国指定（8件）と県指定（18件）を全件掲載する。指定区分・年代・所在地は磐田市公式情報にもとづく事実情報であり、各文化財の公式ページへ直接リンクしている。
   </div>
 
-  <figure>
-    <div class="fig-box">
-      <svg viewBox="0 0 520 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="天平通りをはさんで国分寺跡と府八幡宮が向かい合う位置関係の図">
-        <rect x="0" y="0" width="520" height="240" fill="#fffdf7"/>
-        <!-- 天平通り -->
-        <rect x="240" y="20" width="40" height="200" fill="#eaf4fa"/>
-        <text x="260" y="135" text-anchor="middle" font-size="11" class="svg-sub" transform="rotate(90 260 130)">天平通り（旧東海道へ続く道）</text>
-        <!-- 国分寺跡 -->
-        <rect x="60" y="70" width="150" height="100" fill="none" stroke="#2f7fa3" stroke-width="1.3" stroke-dasharray="5 4"/>
-        <text x="135" y="115" text-anchor="middle" font-size="13" class="svg-label">遠江国分寺跡</text>
-        <text x="135" y="135" text-anchor="middle" font-size="10" class="svg-sub">（西側）</text>
-        <!-- 府八幡宮 -->
-        <rect x="310" y="70" width="150" height="100" fill="none" stroke="#356f88" stroke-width="1.5"/>
-        <text x="385" y="115" text-anchor="middle" font-size="13" class="svg-label">府八幡宮</text>
-        <text x="385" y="135" text-anchor="middle" font-size="10" class="svg-sub">（東側）</text>
-        <!-- 南へ -->
-        <text x="260" y="232" text-anchor="middle" font-size="10" class="svg-sub">↓ 南・JR磐田駅へ</text>
-      </svg>
-      <figcaption>遠江国分寺跡と府八幡宮は、天平通りをはさんで向かい合うように位置している。古代の磐田は、寺と社と役所が一体となった、遠江国の中心だった。（位置関係をもとにした模式図）</figcaption>
+  <div class="finder">
+    <div class="search-wrap">
+      <input type="text" id="cpSearch" placeholder="名称・所在地・種別でさがす（例：古墳、見付、神社、彫刻…）" autocomplete="off" aria-label="文化財を検索">
     </div>
-  </figure>
+    <div class="facet">
+      <span class="facet-label">指定区分</span>
+      <div class="chips" id="clsChips">
+        <button type="button" class="chip on" data-f="cls" data-v="all">すべて</button>
+        <button type="button" class="chip" data-f="cls" data-v="国指定">国指定</button>
+        <button type="button" class="chip" data-f="cls" data-v="県指定">県指定</button>
+      </div>
+    </div>
+    <div class="facet">
+      <span class="facet-label">時代</span>
+      <div class="chips" id="eraChips">
+        <button type="button" class="chip on" data-f="era" data-v="all">すべて</button>
+        <button type="button" class="chip" data-f="era" data-v="古墳時代">古墳時代</button>
+        <button type="button" class="chip" data-f="era" data-v="奈良時代">奈良時代</button>
+        <button type="button" class="chip" data-f="era" data-v="平安時代">平安時代</button>
+        <button type="button" class="chip" data-f="era" data-v="鎌倉時代">鎌倉時代</button>
+        <button type="button" class="chip" data-f="era" data-v="南北朝時代">南北朝</button>
+        <button type="button" class="chip" data-f="era" data-v="室町時代">室町時代</button>
+        <button type="button" class="chip" data-f="era" data-v="江戸時代">江戸時代</button>
+        <button type="button" class="chip" data-f="era" data-v="明治時代">明治時代</button>
+      </div>
+    </div>
+    <p class="result-count" id="cpCount"></p>
+  </div>
 
-  <p>JR磐田駅の北口から、天平通りをまっすぐ北へ歩く。十五分ほどで、左手に遠江国分寺跡の芝生が広がり、その道をはさんだ向かい側、東側に、こんもりとした森が見えてくる。府八幡宮である。聖武天皇の命でつくられた国分寺と、国府の守り神として祀られた八幡宮とが、一本の道をへだてて向かい合っている。この配置そのものが、古代の磐田の姿を今に伝えている。</p>
+  <div class="table-wrap">
+    <table class="cp">
+      <thead>
+        <tr><th>名称</th><th>指定</th><th>種別</th><th>時代</th><th>所在地</th><th>指定年月日</th><th>公式</th></tr>
+      </thead>
+      <tbody id="cpBody">
+    <tr class="cpr" data-cls="国指定" data-cat="重要文化財" data-era="古墳時代" data-key="明ヶ島古墳群出土土製品 附 土製品残欠 見付 重要文化財 古墳時代">
+      <td class="c-name">明ヶ島古墳群出土土製品 附 土製品残欠</td>
+      <td><span class="bdg kuni">国指定</span></td>
+      <td class="c-cat">重要文化財</td>
+      <td class="c-era">古墳時代</td>
+      <td class="c-loc">見付</td>
+      <td class="c-date">平成25年6月19日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kunishitei/1002061.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="国指定" data-cat="特別史跡" data-era="奈良時代" data-key="遠江国分寺跡 見付 特別史跡 奈良時代">
+      <td class="c-name">遠江国分寺跡<a class="rd" href="https://iwata-monogatari.pages.dev/n016.html">読みもの</a></td>
+      <td><span class="bdg kuni">国指定</span></td>
+      <td class="c-cat">特別史跡</td>
+      <td class="c-era">奈良時代</td>
+      <td class="c-loc">見付</td>
+      <td class="c-date">昭和27年3月29日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kunishitei/1002046.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="国指定" data-cat="史跡" data-era="古墳時代" data-key="銚子塚古墳 附 小銚子塚古墳 寺谷 史跡 古墳時代">
+      <td class="c-name">銚子塚古墳 附 小銚子塚古墳<a class="rd" href="https://iwata-monogatari.pages.dev/t001.html">読みもの</a></td>
+      <td><span class="bdg kuni">国指定</span></td>
+      <td class="c-cat">史跡</td>
+      <td class="c-era">古墳時代</td>
+      <td class="c-loc">寺谷</td>
+      <td class="c-date">昭和31年11月7日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kunishitei/1002047.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="国指定" data-cat="史跡" data-era="古墳時代" data-key="新豊院山古墳群 向笠竹之内 史跡 古墳時代">
+      <td class="c-name">新豊院山古墳群</td>
+      <td><span class="bdg kuni">国指定</span></td>
+      <td class="c-cat">史跡</td>
+      <td class="c-era">古墳時代</td>
+      <td class="c-loc">向笠竹之内</td>
+      <td class="c-date">昭和62年7月3日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kunishitei/1002048.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="国指定" data-cat="史跡" data-era="古墳時代" data-key="御厨古墳群 新貝・鎌田 史跡 古墳時代">
+      <td class="c-name">御厨古墳群</td>
+      <td><span class="bdg kuni">国指定</span></td>
+      <td class="c-cat">史跡</td>
+      <td class="c-era">古墳時代</td>
+      <td class="c-loc">新貝・鎌田</td>
+      <td class="c-date">平成13年3月26日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kunishitei/1002049.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="国指定" data-cat="史跡" data-era="明治時代" data-key="旧見付学校 附 磐田文庫 見付 史跡 明治時代">
+      <td class="c-name">旧見付学校 附 磐田文庫<a class="rd" href="https://iwata-monogatari.pages.dev/m015.html">読みもの</a></td>
+      <td><span class="bdg kuni">国指定</span></td>
+      <td class="c-cat">史跡</td>
+      <td class="c-era">明治時代</td>
+      <td class="c-loc">見付</td>
+      <td class="c-date">昭和44年4月12日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kunishitei/1002050.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="国指定" data-cat="天然記念物" data-era="—" data-key="熊野の長フジ 池田 天然記念物 —">
+      <td class="c-name">熊野の長フジ</td>
+      <td><span class="bdg kuni">国指定</span></td>
+      <td class="c-cat">天然記念物</td>
+      <td class="c-era">—</td>
+      <td class="c-loc">池田</td>
+      <td class="c-date">昭和7年7月25日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kunishitei/1002051.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="国指定" data-cat="重要無形民俗文化財" data-era="—" data-key="見付天神裸祭 見付 重要無形民俗文化財 —">
+      <td class="c-name">見付天神裸祭<a class="rd" href="https://iwata-monogatari.pages.dev/m011.html">読みもの</a></td>
+      <td><span class="bdg kuni">国指定</span></td>
+      <td class="c-cat">重要無形民俗文化財</td>
+      <td class="c-era">—</td>
+      <td class="c-loc">見付</td>
+      <td class="c-date">平成12年12月27日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kunishitei/1002052.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="建造物" data-era="江戸時代" data-key="府八幡宮楼門 中泉 建造物 江戸時代">
+      <td class="c-name">府八幡宮楼門</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">建造物</td>
+      <td class="c-era">江戸時代</td>
+      <td class="c-loc">中泉</td>
+      <td class="c-date">昭和30年2月25日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002054.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="建造物" data-era="明治時代" data-key="旧赤松家門・塀 見付 建造物 明治時代">
+      <td class="c-name">旧赤松家門・塀</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">建造物</td>
+      <td class="c-era">明治時代</td>
+      <td class="c-loc">見付</td>
+      <td class="c-date">平成4年3月17日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002055.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="彫刻" data-era="平安時代" data-key="木造地蔵菩薩坐像 見付 彫刻 平安時代">
+      <td class="c-name">木造地蔵菩薩坐像</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">彫刻</td>
+      <td class="c-era">平安時代</td>
+      <td class="c-loc">見付</td>
+      <td class="c-date">昭和59年11月30日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002056.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="彫刻" data-era="平安時代" data-key="木造毘沙門天立像 見付 彫刻 平安時代">
+      <td class="c-name">木造毘沙門天立像</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">彫刻</td>
+      <td class="c-era">平安時代</td>
+      <td class="c-loc">見付</td>
+      <td class="c-date">昭和59年11月30日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002056.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="絵画" data-era="鎌倉時代" data-key="絹本着色釈迦十六善神画像 豊浜中野 絵画 鎌倉時代">
+      <td class="c-name">絹本着色釈迦十六善神画像</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">絵画</td>
+      <td class="c-era">鎌倉時代</td>
+      <td class="c-loc">豊浜中野</td>
+      <td class="c-date">昭和57年2月26日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002057.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="絵画" data-era="室町時代" data-key="熊野絵巻 池田 絵画 室町時代">
+      <td class="c-name">熊野絵巻</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">絵画</td>
+      <td class="c-era">室町時代</td>
+      <td class="c-loc">池田</td>
+      <td class="c-date">令和2年12月8日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1008998.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="工芸" data-era="南北朝時代" data-key="鰐口 大島 工芸 南北朝時代">
+      <td class="c-name">鰐口</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">工芸</td>
+      <td class="c-era">南北朝時代</td>
+      <td class="c-loc">大島</td>
+      <td class="c-date">昭和31年10月17日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002058.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="考古資料" data-era="古墳時代" data-key="三角縁四神四獣鏡 新貝 考古資料 古墳時代">
+      <td class="c-name">三角縁四神四獣鏡</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">考古資料</td>
+      <td class="c-era">古墳時代</td>
+      <td class="c-loc">新貝</td>
+      <td class="c-date">昭和33年9月2日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002059.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="考古資料" data-era="古墳時代" data-key="堂山古墳出土遺物 見付 考古資料 古墳時代">
+      <td class="c-name">堂山古墳出土遺物</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">考古資料</td>
+      <td class="c-era">古墳時代</td>
+      <td class="c-loc">見付</td>
+      <td class="c-date">平成8年3月22日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002060.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="工芸" data-era="鎌倉時代" data-key="太刀 銘成高 見付 工芸 鎌倉時代">
+      <td class="c-name">太刀 銘成高</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">工芸</td>
+      <td class="c-era">鎌倉時代</td>
+      <td class="c-loc">見付</td>
+      <td class="c-date">平成26年3月14日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002068.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="建造物" data-era="平安時代" data-key="淡海国玉神社本殿 附棟札5枚 見付 建造物 平安時代">
+      <td class="c-name">淡海国玉神社本殿 附棟札5枚</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">建造物</td>
+      <td class="c-era">平安時代</td>
+      <td class="c-loc">見付</td>
+      <td class="c-date">平成27年12月8日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002069.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="史跡" data-era="古墳時代" data-key="米塚古墳群 寺谷 史跡 古墳時代">
+      <td class="c-name">米塚古墳群</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">史跡</td>
+      <td class="c-era">古墳時代</td>
+      <td class="c-loc">寺谷</td>
+      <td class="c-date">昭和49年4月18日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002062.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="史跡" data-era="奈良時代" data-key="長者屋敷遺跡 寺谷 史跡 奈良時代">
+      <td class="c-name">長者屋敷遺跡</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">史跡</td>
+      <td class="c-era">奈良時代</td>
+      <td class="c-loc">寺谷</td>
+      <td class="c-date">昭和54年11月19日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002063.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="史跡" data-era="古墳時代" data-key="土器塚古墳 中泉 史跡 古墳時代">
+      <td class="c-name">土器塚古墳</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">史跡</td>
+      <td class="c-era">古墳時代</td>
+      <td class="c-loc">中泉</td>
+      <td class="c-date">平成14年12月10日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002064.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="天然記念物" data-era="—" data-key="善導寺大クス 中泉 天然記念物 —">
+      <td class="c-name">善導寺大クス</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">天然記念物</td>
+      <td class="c-era">—</td>
+      <td class="c-loc">中泉</td>
+      <td class="c-date">昭和34年4月14日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002065.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="天然記念物" data-era="—" data-key="甲塚のクロガネモチ 見付 天然記念物 —">
+      <td class="c-name">甲塚のクロガネモチ</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">天然記念物</td>
+      <td class="c-era">—</td>
+      <td class="c-loc">見付</td>
+      <td class="c-date">昭和59年3月23日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002066.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="天然記念物" data-era="—" data-key="熊野の長フジ（県指定・天然記念物） 池田 天然記念物 —">
+      <td class="c-name">熊野の長フジ（県指定・天然記念物）</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">天然記念物</td>
+      <td class="c-era">—</td>
+      <td class="c-loc">池田</td>
+      <td class="c-date">昭和47年9月26日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kunishitei/1002051.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+    <tr class="cpr" data-cls="県指定" data-cat="無形民俗文化財" data-era="—" data-key="掛塚祭屋台囃子 掛塚 無形民俗文化財 —">
+      <td class="c-name">掛塚祭屋台囃子</td>
+      <td><span class="bdg ken">県指定</span></td>
+      <td class="c-cat">無形民俗文化財</td>
+      <td class="c-era">—</td>
+      <td class="c-loc">掛塚</td>
+      <td class="c-date">昭和45年6月2日</td>
+      <td><a class="off" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/kenshitei/1002067.html" target="_blank" rel="noopener">公式 ↗</a></td>
+    </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="no-result" id="cpNoResult" hidden>該当する文化財が見つからなかった。別の条件でさがしてほしい。</p>
 
-  <h2>黒ずんだ楼門の前で</h2>
+  <h2>無形民俗文化財</h2>
+  <p>祭礼や年中行事などの無形民俗文化財は、上の表とは別に整理した。国指定の見付天神裸祭、県指定の掛塚祭屋台囃子に加え、市指定の無形民俗文化財が次のように受け継がれている。</p>
+  <div class="otherbox">
+    <h3>市指定・無形民俗文化財</h3>
+    <div class="meta">出典：磐田市公式「無形民俗文化財」（2025年2月27日更新）</div>
+    <ul class="mukei-list">
+      <li>八王子神社米とぎまつり（下太）</li>
+      <li>中野白山神社十日祭（お箱）（豊浜中野）</li>
+      <li>中野白山神社例祭（白酒）（豊浜中野）</li>
+      <li>氏神様の年始回り（豊浜）</li>
+      <li>賀茂神社特殊神饌（加茂）</li>
+      <li>池田やかた祭り（池田）</li>
+      <li>大めし祭り（富里）</li>
+      <li>加茂大念仏（加茂）</li>
+      <li>豊岡の遠州大念仏（豊岡地区各所）</li>
+      <li>掛塚祭竹馬（掛塚）</li>
+    </ul>
+    <p style="margin:12px 0 0;"><a class="official" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/bunkazainitsuite/1002041.html" target="_blank" rel="noopener">無形民俗文化財の公式ページ ↗</a></p>
+  </div>
 
-  <p>木の鳥居をくぐると、参道の奥に楼門が構えている。長い年月を経て黒ずんだその姿は、簡素でありながら、どっしりとした風格をたたえている。この楼門は、江戸時代の寛永12年（1635年）に建てられたもので、静岡県の指定文化財になっている。桃山の様式を残す二階建ての門で、府八幡宮を訪れる人が、まず心をひかれる建物である。</p>
+  <h2>市指定（有形）・国登録有形文化財</h2>
+  <p>市指定の有形文化財（建造物・彫刻・絵画・古文書・考古資料など）は数十件にのぼり、また国登録有形文化財も含めて、市が随時更新している。これらは件数が多く、正確を期すため、本ページでは全件の転記を行わず、磐田市公式の最新一覧へ確実につなぐかたちとした。今後、公式情報を確認しながら、順次このページに反映していく予定である。</p>
+  <div class="otherbox">
+    <h3>市指定文化財（有形ほか）</h3>
+    <div class="meta">磐田市公式「市指定文化財」（2025年8月19日更新）。建造物・彫刻・絵画・工芸・書跡・典籍・歴史資料・古文書・考古資料・有形民俗・無形民俗・史跡・名勝・天然記念物の各区分がある。</div>
+    <p style="margin:0;"><a class="official" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/bunkazainitsuite/1002039.html" target="_blank" rel="noopener">市指定文化財の公式ページ ↗</a></p>
+  </div>
+  <div class="otherbox">
+    <h3>国登録有形文化財</h3>
+    <div class="meta">磐田市公式「国登録有形文化財」（2025年11月19日更新）。</div>
+    <p style="margin:0;"><a class="official" href="https://www.city.iwata.shizuoka.jp/sports_midokoro/c003.html/bunkazainitsuite/1002040.html" target="_blank" rel="noopener">国登録有形文化財の公式ページ ↗</a></p>
+  </div>
 
-  <p>楼門の奥には、本殿、拝殿、中門が連なる。本殿はさらに古く、元和3年（1617年）の造営と伝えられ、こちらは磐田市の指定文化財である。中門や拝殿もまた市の文化財に指定されており、境内の建物の多くが、江戸時代に建てられたまま、今に伝えられている。ひとつの神社に、これほど多くの古い建物がまとまって残っているのは、それだけこのまちが、この社を大切に守ってきたということだろう。</p>
-
-  <p>祭神は、誉田別命――応神天皇である。あわせて、その父にあたる仲哀天皇（足仲彦命）、母にあたる神功皇后（気長足姫命）の三柱が祀られている。八幡さまは、古くから国や地域を守る神として、全国で広く信仰されてきた。この府八幡宮も、まさに「国を守る」という願いを担って建てられた社であった。</p>
-
-  <h2>国府の守り神として</h2>
-
-  <p>府八幡宮の創建は、奈良時代の天平年間（729〜748年）にさかのぼると伝えられている。向かいの国分寺が建てられたのと、ほぼ同じころである。この社を祀ったとされるのが、桜井王という人物だ。天武天皇の曽孫、聖武天皇の曽孫とも伝えられる皇族で、遠江国司として、この地に赴任してきた。今でいえば、県知事のような立場である。</p>
-
-  <p>遠い都から、遠江という国を治めるためにやってきた桜井王は、この国がよく治まるようにと願って、国府の守りとして八幡神を祀った。「国府のあるところの八幡宮」であるから、もともとは「国府八幡宮」とも呼ばれ、それが縮まって「府八幡宮」となったと伝えられる。地元の人々は、今も親しみをこめて「八幡さま」「中泉の八幡さま」と呼ぶ。社の名そのものに、ここが国府のまちであった記憶が、刻みこまれているのである。</p>
-
-  <p>興味深い言い伝えもある。遠江国府は、最初は二之宮・御殿のあたりに置かれ、のちに見付地区へ移っていったとされるが、その移転までの間、一時、この府八幡宮の境内に国府が置かれていた、とも伝えられているのである。真偽を確かめる手立ては乏しいが、もしそうであれば、この森のどこかに、かつて遠江国の役所があり、役人たちが行き交っていたことになる。社の静けさの底に、古代の喧騒が眠っているのかもしれない。</p>
-
-  <h2>まちの記憶が集まる森</h2>
-
-  <p>府八幡宮の境内は、およそ四万平方メートルにおよぶ。そのほとんどが、豊かな自然林におおわれている。クスノキやスギの大木が空をふさぎ、まちのただなかにいることを忘れさせるほどの静けさがある。この森は、静岡県の「ふるさと自然百選」にも選ばれている。古代から続く信仰の場が、同時に、まちに残された貴重な緑の島でもあるのだ。</p>
-
-  <p>秋になると、この境内は一年でいちばんのにぎわいを見せる。府八幡宮祭典である。見付や中泉の各地区から、山車や屋台がくり出し、囃子の音とともに境内に集まってくる。ふだんは静かな森が、人の声と祭りの熱気に満ちる。古代の国司が国の平安を願って祀った社が、千数百年を経た今も、まちの人々が一年の節目に集まる場であり続けている。これは、なかなかに得がたいことだと思う。</p>
-
-  <p>厄除けや安産、合格祈願にと、府八幡宮は今も日々、人々の願いを受けとめている。古代には国の安泰を、今は一人ひとりの暮らしの安らぎを。祈りの中身は時代とともに変わっても、ここで手を合わせるという営みそのものは、ずっと変わらずに続いてきた。</p>
-
-  <h2>次の世代へ、手渡したいもの</h2>
-
-  <p>府八幡宮は、ただ古い神社なのではない。向かいの国分寺跡とあわせて見るとき、はじめてその意味が立ちあがってくる。聖武天皇の命でつくられた寺と、国司が祀った社。寺と社が道をはさんで向かい合うこの一帯は、まるごと、遠江国の中心だった古代磐田の姿そのものなのである。</p>
-
-  <p>国分寺は建物を失い、芝の広場となった。けれど府八幡宮は、楼門も本殿も、江戸時代の姿のまま、今も生きて建っている。失われたものと、受け継がれたもの。その両方が、天平通りをはさんで隣り合っている。だからこそ、この二つはあわせて歩いてほしい場所だと思う。一方だけでは見えないものが、二つを行き来することで見えてくる。</p>
-
-  <p>休日に、この森を子どもと歩くとき、ひとこと伝えてみる。「この八幡さまはね、昔このまちが遠江でいちばんえらい場所だったころ、まちを守るために建てられたんだよ」と。黒ずんだ楼門が、急に違って見えてくるかもしれない。次の世代へ残したいのは、立派な建物そのものというより、この森とこの道が、千年をこえてまちの記憶を抱えているのだ、という感覚なのだと思う。</p>
-
-  <h3>主な参考</h3>
-  <ul class="refs">
-    <li>磐田市公式ウェブサイト「府八幡宮楼門」（県指定文化財）</li>
-    <li>府八幡宮 公式ウェブサイト「府八幡宮について」</li>
-    <li>磐田市観光協会「府八幡宮」／静岡新聞アットエス／Wikipedia「府八幡宮」</li>
-  </ul>
-
-  <h3>あわせて読みたい</h3>
-  <div class="related">
-    <a href="https://iwata-monogatari.pages.dev/n016.html">遠江国分寺跡と、古代磐田のはじまり</a>
-    <a href="https://iwata-monogatari.pages.dev/kyu-mitsuke-gakko">旧見付学校と、学びのまち磐田</a>
-    <a href="https://iwata-monogatari.pages.dev/chizu.html">磐田タイムトラベル地図</a>
+  <div class="sourcebox">
+    <h3>主な参考資料</h3>
+    <ul>
+      <li>磐田市公式ウェブサイト「国指定文化財」（1002037・2023年3月20日更新）</li>
+      <li>磐田市公式ウェブサイト「県指定文化財」（1002038・2023年3月20日更新）</li>
+      <li>磐田市公式ウェブサイト「市指定文化財」（1002039・2025年8月19日更新）</li>
+      <li>磐田市公式ウェブサイト「国登録有形文化財」（1002040・2025年11月19日更新）</li>
+      <li>磐田市公式ウェブサイト「無形民俗文化財」（1002041・2025年2月27日更新）</li>
+    </ul>
+    <p class="disclaimer">本ページの文化財名・指定区分・種別・指定年月日・年代・所在地は、磐田市公式ウェブサイトの公開情報にもとづく事実情報である。国指定・県指定は全件、無形民俗は区分ごとに掲載した。市指定（有形）・国登録有形は、件数が多く随時更新されるため、本ページでは公式一覧への導線とした。最新・正確な指定内容は、必ず各公式ページを確認されたい。出典：磐田市公式ウェブサイト。</p>
   </div>
 
   <div class="pager">
-    <a href="https://iwata-monogatari.pages.dev/">← トップへ戻る</a>
-    <a href="https://iwata-monogatari.pages.dev/n016.html">関連記事 ── 遠江国分寺跡と、古代磐田のはじまり →</a>
+    <a href="https://iwata-monogatari.pages.dev/c003.html">← 文化財トップへ</a>
+    <a href="https://iwata-monogatari.pages.dev/c013.html">国指定文化財の解説へ →</a>
   </div>
 </main>
 
 
+
+<script>
+(function(){
+  var input=document.getElementById('cpSearch');
+  var rows=Array.prototype.slice.call(document.querySelectorAll('#cpBody .cpr'));
+  var countEl=document.getElementById('cpCount');
+  var noResult=document.getElementById('cpNoResult');
+  var total=rows.length;
+  var state={cls:'all',era:'all',q:''};
+
+  function norm(s){return (s||'').toLowerCase();}
+  function apply(){
+    var shown=0;
+    rows.forEach(function(r){
+      var okCls=(state.cls==='all')||(r.getAttribute('data-cls')===state.cls);
+      var okEra=(state.era==='all')||(r.getAttribute('data-era')===state.era);
+      var okQ=(state.q==='')||(norm(r.getAttribute('data-key')).indexOf(state.q)!==-1);
+      if(okCls&&okEra&&okQ){r.style.display='';shown++;}else{r.style.display='none';}
+    });
+    noResult.hidden=(shown!==0);
+    if(state.cls==='all'&&state.era==='all'&&state.q===''){
+      countEl.textContent='全'+total+'件（国指定8件・県指定18件）';
+    }else{
+      countEl.textContent=shown+'件が該当';
+    }
+  }
+  input.addEventListener('input',function(){state.q=norm(input.value).trim();apply();});
+  document.querySelectorAll('.chip').forEach(function(chip){
+    chip.addEventListener('click',function(){
+      var f=chip.getAttribute('data-f'),v=chip.getAttribute('data-v');
+      var group=chip.parentNode;
+      group.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on');});
+      chip.classList.add('on');
+      state[f]=v;apply();
+    });
+  });
+  apply();
+})();
+</script>
 
 <section class="article-policy">
   <h2>この記事について</h2>
