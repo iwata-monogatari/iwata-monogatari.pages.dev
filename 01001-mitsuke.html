@@ -1,123 +1,17 @@
-# 磐田物語 リネーム第3弾 実装指示書
-
-作成日：2026-06-25  
-対象リポジトリ：`iwata-monogatari/iwata-monogatari.pages.dev`  
-作業ID：`rename-batch-003`
-
-## Claude coworkへ渡す4ファイルと配置先
-
-この作業では、以下の4ファイルを使用する。  
-Claude coworkは、作業開始前に下記のGitHubリポジトリ内パスへ配置・反映すること。
-
-| No | この出力内のファイル | GitHubリポジトリ内の配置先 | 役割 |
-|---:|---|---|---|
-| 1 | `work/rename-batch03/instruction.md` | `work/rename-batch03/instruction.md` | 本作業指示書 |
-| 2 | `work/rename-batch03/rename-plan.json` | `work/rename-batch03/rename-plan.json` | リネーム対応表 |
-| 3 | `data/pages.json` | `data/pages.json` | 正式ページ台帳 |
-| 4 | `docs/pages-ledger.md` | `docs/pages-ledger.md` | 人間確認用の台帳 |
-
-## ChatGPT出力先パス
-
-ChatGPTからダウンロードしたファイル一式は、次の構成で出力している。
-
-```text
-iwata_rename_batch03_handoff/
-├─ data/
-│  └─ pages.json
-├─ docs/
-│  └─ pages-ledger.md
-└─ work/
-   └─ rename-batch03/
-      ├─ instruction.md
-      └─ rename-plan.json
-```
-
-## 前提条件
-
-- `rename-batch-001` が反映済みであること。
-  - `m001.html`〜`m005.html` が正式ページとして存在すること。
-- `rename-batch-002` が反映済みであること。
-  - `n001.html`〜`n016.html` が正式ページとして存在すること。
-- 未実施の場合は、第1弾・第2弾を先に実行してから第3弾に進むこと。
-
-## 目的
-
-見付天神・裸祭系ページを、見付分類の短い地域別連番ファイル名へ変更する。  
-ファイル名には作成日や長い英語説明を入れず、意味・正式タイトル・作成日・更新日・地域分類・内容分類は `data/pages.json` で管理する。
-
-## リネーム対象
-
-| 旧ファイル名 | 新ファイル名 | 親ページ | 内容 |
-|---|---|---|---|
-| `hadaka-matsuri.html` | `m006.html` | `01001-mitsuke.html` | 見付天神裸祭 特集親ページ |
-| `hadaka-matsuri-kigen.html` | `m007.html` | `m006.html` | 見付天神裸祭の起源 |
-| `hadaka-matsuri-shinji.html` | `m008.html` | `m006.html` | 見付天神裸祭の神事 |
-| `hadaka-matsuri-hozon.html` | `m009.html` | `m006.html` | 見付天神裸祭の保存と継承 |
-| `hadaka-matsuri-shippei.html` | `m010.html` | `m006.html` | 見付天神裸祭としっぺい伝説 |
-| `mitsuke-tenjin-hadaka-matsuri.html` | `m011.html` | `m006.html` | 見付天神裸祭 関連ページ |
-| `mitsuke-tenjin.html` | `m012.html` | `01001-mitsuke.html` | 見付天神 矢奈比賣神社 |
-
-
-## 実装方針
-
-1. 旧ファイルの本文を新ファイルへ移す。
-2. 新ファイル名を正式URLとして扱う。
-3. 旧ファイルは削除しない。
-4. 旧ファイルには、新URLへの移転案内を表示するHTMLを残す。
-5. 可能であれば、旧ファイルに `<meta http-equiv="refresh">` を設定して新URLへ誘導する。
-6. `sitemap.xml` には新ファイル `m006.html`〜`m012.html` のみ掲載する。
-7. `sitemap.xml` から旧ファイル名を削除する。
-8. `index.html`、`01001-mitsuke.html`、各記事内の内部リンクをすべて新ファイル名へ更新する。
-9. `data/pages.json` をこの出力の `data/pages.json` で更新する。
-10. `docs/pages-ledger.md` をこの出力の `docs/pages-ledger.md` で更新する。
-
-## 親子関係
-
-- `m006.html`：見付天神裸祭系の親ページ。
-- `m007.html`〜`m011.html`：`m006.html` の子ページ。
-- `m012.html`：見付天神・矢奈比賣神社ページ。`01001-mitsuke.html` に紐づける。
-
-## 旧URL案内ページの文例
-
-旧ファイルには、以下のような案内を入れる。
-
-```html
 <!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=新ファイル名.html">
+  <meta name="robots" content="noindex, follow">
+  <meta http-equiv="refresh" content="0; url=c002.html">
+  <link rel="canonical" href="https://iwata-monogatari.pages.dev/c002.html">
   <title>ページ移転のお知らせ｜磐田物語</title>
 </head>
 <body>
   <main>
     <h1>ページを移転しました</h1>
     <p>このページは新しいURLへ移転しました。</p>
-    <p><a href="新ファイル名.html">新しいページを開く</a></p>
+    <p><a href="c002.html">新しいページを開く</a></p>
   </main>
 </body>
 </html>
-```
-
-## 確認項目
-
-作業後、次を確認する。
-
-- `m006.html`〜`m012.html` が表示できる。
-- 旧URLから新URLへ移動できる。
-- `01001-mitsuke.html` から見付天神・裸祭系ページへ移動できる。
-- 見付天神・裸祭系ページ内の相互リンクが旧ファイル名を参照していない。
-- `sitemap.xml` に旧ファイル名が残っていない。
-- `sitemap.xml` に新ファイル名が入っている。
-- `data/pages.json` が正式台帳として更新されている。
-- `docs/pages-ledger.md` で人間確認できる。
-- `work/rename-batch03/rename-plan.json` の内容と実ファイルのリネーム結果が一致している。
-
-## 注意
-
-- 旧ファイルを削除しないこと。
-- ファイル名に作成日を入れないこと。
-- 長い英語スラッグへ戻さないこと。
-- 地区入口ページ `01001-mitsuke.html` はリネームしないこと。
-- 第1弾の `m001.html`〜`m005.html` を変更しないこと。
-- 第2弾の `n001.html`〜`n016.html` を変更しないこと。
