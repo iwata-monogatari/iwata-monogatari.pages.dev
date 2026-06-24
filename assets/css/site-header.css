@@ -36,3 +36,8 @@
   .gh-menu{ display:none; }
   .gh-sub{ display:none; }
 }
+
+/* === 高齢者配慮：既定の本文サイズ（site-header.css を読み込む全ページ共通） === */
+/* 各ページのインライン body{font-size:..} より優先させるため !important を付与 */
+body{ font-size:20px !important; }
+@media(max-width:680px){ body{ font-size:19px !important; } }

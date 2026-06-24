@@ -209,3 +209,7 @@
   .bbs-head h1 { font-size: 1.3rem; }
   .bbs-wrap { padding: 16px 12px 48px; }
 }
+
+/* === 高齢者配慮：掲示板の既定文字サイズを拡大（rem基準のため html を拡大） === */
+html{ font-size:125%; }
+@media(max-width:680px){ html{ font-size:119%; } }
