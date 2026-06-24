@@ -2,12 +2,22 @@ name = "iwata-monogatari"
 compatibility_date = "2026-06-24"
 pages_build_output_dir = "."
 
+# ============================================================
 # Cloudflare D1（掲示板の保存先）
-# database_id は `wrangler d1 create iwata_monogatari_bbs` の出力に差し替える。
-[[d1_databases]]
-binding = "DB"
-database_name = "iwata_monogatari_bbs"
-database_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+# 重要: D1作成までは下のブロックをコメントアウトのままにしてください。
+#       仮の database_id のままだと Pages のビルドが失敗します。
+#
+# 手順:
+#   1) wrangler d1 create iwata_monogatari_bbs
+#   2) 出力された database_id を下に貼り付ける
+#   3) 下4行の先頭 "# " を外して有効化し、コミット
+#   （または Cloudflare ダッシュボードの Pages → Settings → Functions →
+#     D1 database bindings で binding 名 "DB" として設定してもよい）
+# ============================================================
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "iwata_monogatari_bbs"
+# database_id = "ここに実際のIDを貼る"
 
 # 環境変数（Secrets はダッシュボードまたは `wrangler pages secret put` で設定する。
 # wrangler.toml には秘密情報を直接書かないこと）
