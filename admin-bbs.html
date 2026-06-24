@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>磐田物語 掲示板 管理画面</title>
+  <style>
+    :root {
+      --ink:#2b2118; --sub:#6c5f4c; --bg:#f3ede1; --paper:#fffdf7;
+      --border:#d8c7a3; --accent:#4a6d8c; --danger:#9c4a3a; --warn:#a9762a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; padding:24px 16px 64px; background:var(--bg); color:var(--ink);
+      font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",sans-serif; line-height:1.7;
+    }
+    .wrap { max-width:1000px; margin:0 auto; }
+    h1 { font-size:1.4rem; margin:0 0 4px; }
+    .note { color:var(--sub); font-size:0.88rem; margin:0 0 20px; }
+    .auth, .toolbar { background:var(--paper); border:1px solid var(--border); border-radius:10px; padding:14px 16px; margin-bottom:18px; }
+    .auth label { display:block; font-size:0.85rem; color:var(--sub); margin-bottom:6px; }
+    .auth input { width:100%; max-width:420px; font:inherit; padding:9px 11px; border:1px solid var(--border); border-radius:8px; }
+    button { font:inherit; cursor:pointer; border:none; border-radius:8px; padding:8px 16px; color:#fff; background:var(--accent); }
+    button.ghost { background:#fff; color:var(--accent); border:1px solid var(--accent); }
+    button.danger { background:var(--danger); }
+    button.warn { background:var(--warn); }
+    button:disabled { opacity:.5; cursor:not-allowed; }
+    .toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:10px; }
+    .toolbar select { font:inherit; padding:7px 10px; border:1px solid var(--border); border-radius:8px; }
+    .status-msg { font-size:0.88rem; color:var(--sub); margin-left:auto; }
+    .post { background:var(--paper); border:1px solid var(--border); border-left:5px solid var(--border); border-radius:10px; padding:12px 14px; margin-bottom:12px; }
+    .post.published { border-left-color:var(--accent); }
+    .post.hidden { border-left-color:var(--warn); opacity:.85; }
+    .post.deleted { border-left-color:var(--danger); opacity:.6; }
+    .post-meta { display:flex; flex-wrap:wrap; gap:8px; align-items:baseline; font-size:0.8rem; color:var(--sub); margin-bottom:6px; }
+    .badge { font-size:0.72rem; padding:2px 8px; border-radius:999px; color:#fff; }
+    .badge.published { background:var(--accent); }
+    .badge.hidden { background:var(--warn); }
+    .badge.deleted { background:var(--danger); }
+    .post-no { font-weight:700; }
+    .post-body { white-space:pre-wrap; word-break:break-word; margin:6px 0; font-size:0.96rem; }
+    .post-extra { font-size:0.78rem; color:var(--sub); margin:6px 0 0; word-break:break-all; }
+    .post-actions { display:flex; gap:8px; margin-top:10px; flex-wrap:wrap; }
+    .hidden-box { display:none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>磐田物語 掲示板 管理画面</h1>
+    <p class="note">
+      この画面は <strong>Cloudflare Access</strong> での保護を推奨します。簡易運用の場合は
+      <code>BBS_ADMIN_TOKEN</code> を入力して操作します。トークンはこの端末のみで一時保持され、サーバーには送信時のヘッダーでのみ使われます。
+    </p>
+
+    <div class="auth">
+      <label for="token">管理トークン（BBS_ADMIN_TOKEN）</label>
+      <input type="password" id="token" placeholder="管理トークンを入力" autocomplete="off">
+      <div style="margin-top:10px; display:flex; gap:8px;">
+        <button id="load-btn">投稿を読み込む</button>
+        <button class="ghost" id="forget-btn" type="button">トークンを消去</button>
+      </div>
+    </div>
+
+    <div class="toolbar hidden-box" id="toolbar">
+      <label>表示:
+        <select id="filter">
+          <option value="all">すべて</option>
+          <option value="published">公開中</option>
+          <option value="hidden">非表示</option>
+          <option value="deleted">削除扱い</option>
+        </select>
+      </label>
+      <button class="ghost" id="reload-btn" type="button">再読み込み</button>
+      <span class="status-msg" id="status-msg"></span>
+    </div>
+
+    <div id="posts"></div>
+  </div>
+
+  <script>
+  (function () {
+    "use strict";
+    var tokenEl = document.getElementById("token");
+    var loadBtn = document.getElementById("load-btn");
+    var forgetBtn = document.getElementById("forget-btn");
+    var reloadBtn = document.getElementById("reload-btn");
+    var toolbar = document.getElementById("toolbar");
+    var filterEl = document.getElementById("filter");
+    var statusMsg = document.getElementById("status-msg");
+    var postsEl = document.getElementById("posts");
+    var allPosts = [];
+
+    // セッション中のみトークン保持（永続化しない）
+    try {
+      var saved = sessionStorage.getItem("bbs_admin_token");
+      if (saved) tokenEl.value = saved;
+    } catch (e) {}
+
+    function token() { return tokenEl.value.trim(); }
+    function headers() {
+      return { "Authorization": "Bearer " + token(), "Accept": "application/json", "Content-Type": "application/json" };
+    }
+    function setStatus(t) { statusMsg.textContent = t || ""; }
+
+    function fmt(iso) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d.getTime())) return iso;
+      return d.getFullYear() + "/" + (d.getMonth()+1) + "/" + d.getDate() + " " +
+        ("0"+d.getHours()).slice(-2) + ":" + ("0"+d.getMinutes()).slice(-2);
+    }
+
+    function loadPosts() {
+      if (!token()) { setStatus("トークンを入力してください。"); return; }
+      try { sessionStorage.setItem("bbs_admin_token", token()); } catch (e) {}
+      setStatus("読み込み中…");
+      fetch("/api/bbs/admin-list", { headers: headers() })
+        .then(function (r) { return r.json().then(function (d){ return {ok:r.ok, d:d}; }); })
+        .then(function (r) {
+          if (!r.ok || !r.d.ok) { setStatus(r.d.error || "認証に失敗しました。"); return; }
+          allPosts = r.d.posts || [];
+          toolbar.classList.remove("hidden-box");
+          render();
+          setStatus(allPosts.length + " 件");
+        })
+        .catch(function () { setStatus("通信エラーが発生しました。"); });
+    }
+
+    function render() {
+      var f = filterEl.value;
+      postsEl.textContent = "";
+      var list = allPosts.filter(function (p) { return f === "all" ? true : p.status === f; });
+      if (list.length === 0) { postsEl.textContent = ""; setStatus("該当する投稿はありません。"); return; }
+      list.forEach(function (p) { postsEl.appendChild(card(p)); });
+    }
+
+    function card(p) {
+      var box = document.createElement("div");
+      box.className = "post " + p.status;
+
+      var meta = document.createElement("div");
+      meta.className = "post-meta";
+      var no = el("span", "post-no", "No." + ("00000"+p.id).slice(-5));
+      var badge = el("span", "badge " + p.status,
+        p.status === "published" ? "公開中" : p.status === "hidden" ? "非表示" : "削除扱い");
+      meta.appendChild(no);
+      meta.appendChild(badge);
+      meta.appendChild(el("span", "", fmt(p.created_at)));
+      meta.appendChild(el("span", "", (p.name || "匿名") + (p.area ? "（"+p.area+"）" : "")));
+      box.appendChild(meta);
+
+      box.appendChild(el("div", "post-body", p.body || ""));
+
+      var extra = [];
+      if (p.related_url) extra.push("関連URL: " + p.related_url);
+      if (p.ip_hash) extra.push("IPハッシュ: " + String(p.ip_hash).slice(0, 12) + "…");
+      if (p.deleted_reason) extra.push("削除理由: " + p.deleted_reason);
+      if (extra.length) box.appendChild(el("div", "post-extra", extra.join("　/　")));
+
+      var actions = document.createElement("div");
+      actions.className = "post-actions";
+      if (p.status !== "hidden") actions.appendChild(actBtn("warn", "非表示にする", function(){ doHide(p.id, "hidden"); }));
+      if (p.status === "hidden") actions.appendChild(actBtn("ghost", "再公開する", function(){ doHide(p.id, "published"); }));
+      if (p.status !== "deleted") actions.appendChild(actBtn("danger", "削除扱いにする", function(){ doDelete(p.id); }));
+      box.appendChild(actions);
+      return box;
+    }
+
+    function el(tag, cls, text) {
+      var e = document.createElement(tag);
+      if (cls) e.className = cls;
+      if (text != null) e.textContent = text;
+      return e;
+    }
+    function actBtn(cls, label, fn) {
+      var b = document.createElement("button");
+      b.className = cls; b.textContent = label; b.type = "button";
+      b.addEventListener("click", fn);
+      return b;
+    }
+
+    function doHide(id, status) {
+      fetch("/api/bbs/hide", { method:"POST", headers: headers(), body: JSON.stringify({ id: id, status: status }) })
+        .then(function (r){ return r.json(); })
+        .then(function (d){ if (d.ok) loadPosts(); else setStatus(d.error || "更新に失敗しました。"); })
+        .catch(function(){ setStatus("通信エラー。"); });
+    }
+
+    function doDelete(id) {
+      var reason = window.prompt("削除理由（任意・記録用）を入力してください。", "");
+      if (reason === null) return; // キャンセル
+      if (!window.confirm("No." + ("00000"+id).slice(-5) + " を削除扱いにします。よろしいですか？")) return;
+      fetch("/api/bbs/delete", { method:"POST", headers: headers(), body: JSON.stringify({ id: id, reason: reason }) })
+        .then(function (r){ return r.json(); })
+        .then(function (d){ if (d.ok) loadPosts(); else setStatus(d.error || "更新に失敗しました。"); })
+        .catch(function(){ setStatus("通信エラー。"); });
+    }
+
+    loadBtn.addEventListener("click", loadPosts);
+    reloadBtn.addEventListener("click", loadPosts);
+    filterEl.addEventListener("change", render);
+    forgetBtn.addEventListener("click", function () {
+      tokenEl.value = "";
+      try { sessionStorage.removeItem("bbs_admin_token"); } catch (e) {}
+      allPosts = []; postsEl.textContent = ""; toolbar.classList.add("hidden-box");
+      setStatus("トークンを消去しました。");
+    });
+  })();
+  </script>
+</body>
+</html>

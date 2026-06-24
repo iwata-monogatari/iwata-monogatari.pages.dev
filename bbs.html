@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>磐田物語 みんなの掲示板</title>
+  <meta name="description" content="磐田の歴史・地名・古写真・昔の暮らし・佐口資料について、訪問された方が思い出を書き残せる掲示板です。">
+  <link rel="stylesheet" href="/assets/css/bbs.css">
+  <!-- Cloudflare Turnstile。bot対策を使う場合のみ読み込む -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+  <main class="bbs-wrap">
+    <header class="bbs-head">
+      <p class="bbs-kicker">磐田物語</p>
+      <h1>磐田の記憶を、ひとこと残す掲示板</h1>
+      <p class="bbs-lead">
+        磐田物語をご覧いただき、ありがとうございます。
+        この掲示板は、磐田の歴史、地名、古写真、昔の暮らし、佐口資料などについて、
+        訪問された方が思ったことや思い出を書き残せる場所です。
+      </p>
+      <p class="bbs-lead">
+        正確な研究発表でなくてもかまいません。
+        「昔、この道を通った」「祖父母から聞いた話がある」「この地名に覚えがある」など、
+        地域の記憶をゆるやかにつなぐための掲示板です。
+      </p>
+      <p class="bbs-back"><a href="/">← 磐田物語トップへ戻る</a></p>
+    </header>
+
+    <!-- 投稿フォーム -->
+    <section class="bbs-form-section" aria-label="掲示板への投稿">
+      <h2>掲示板に書き込む</h2>
+      <form id="bbs-form" class="bbs-form" novalidate>
+        <label>
+          お名前（任意）
+          <input type="text" name="name" maxlength="40" placeholder="匿名でも可" autocomplete="off">
+        </label>
+
+        <label>
+          お住まい・ゆかりの地域（任意）
+          <input type="text" name="area" maxlength="60" placeholder="例：見付、中泉、旧豊田町など" autocomplete="off">
+        </label>
+
+        <label>
+          投稿内容（必須）
+          <textarea name="body" required minlength="10" maxlength="800"
+            placeholder="磐田物語を読んで思ったこと、昔の記憶、補足情報などをご自由にお書きください。（10〜800文字）"></textarea>
+          <span class="bbs-counter" id="bbs-counter">0 / 800</span>
+        </label>
+
+        <label>
+          関連するページURL（任意）
+          <input type="url" name="related_url" maxlength="300" placeholder="https://iwata-monogatari.pages.dev/...">
+        </label>
+
+        <label class="bbs-agree">
+          <input type="checkbox" name="agree" required>
+          掲示板の注意事項に同意します。
+        </label>
+
+        <!-- bot対策。Cloudflare Turnstileを使う場合はサイトキーを差し替える -->
+        <div class="cf-turnstile" data-sitekey="TURNSTILE_SITE_KEY" data-theme="light"></div>
+
+        <!-- honeypot。人間には見せない -->
+        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <button type="submit" id="bbs-submit">投稿する</button>
+        <p class="bbs-message" id="bbs-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- 注意事項 -->
+    <section class="bbs-rules">
+      <h2>掲示板のご利用にあたって</h2>
+      <p>
+        この掲示板は、磐田の歴史・文化・地名・古写真・地域の記憶について、
+        訪問者の皆さまが感じたことや思い出を書き込むための場所です。
+      </p>
+      <ul>
+        <li>投稿後、内容はすぐに公開されます。</li>
+        <li>個人を傷つける投稿、誹謗中傷、差別的表現、攻撃的な投稿はご遠慮ください。</li>
+        <li>住所・電話番号・メールアドレスなど、個人情報の書き込みはお控えください。</li>
+        <li>他人の氏名、勤務先、学校名、具体的な住所などを無断で書かないでください。</li>
+        <li>事実関係が確認できない内容は、断定せず「聞いた話です」「記憶では」などの表現にしてください。</li>
+        <li>広告、宣伝、勧誘、無関係なリンク投稿は削除する場合があります。</li>
+        <li>管理者が不適切と判断した投稿は、予告なく非表示または削除することがあります。</li>
+        <li>投稿内容は、地域の記憶を残す目的で、磐田物語内の記事作成や調査の参考にさせていただく場合があります。</li>
+      </ul>
+      <p>
+        あたたかい言葉で、磐田の記憶を次の世代へつないでいく場にしたいと考えています。
+      </p>
+    </section>
+
+    <!-- 投稿一覧 -->
+    <section class="bbs-posts-section" aria-label="掲示板の投稿一覧">
+      <h2>みんなの書き込み</h2>
+      <p class="bbs-posts-status" id="bbs-posts-status">読み込み中…</p>
+      <div class="bbs-posts" id="bbs-posts"></div>
+    </section>
+  </main>
+
+  <script src="/assets/js/bbs.js" defer></script>
+</body>
+</html>

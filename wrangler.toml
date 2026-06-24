@@ -1,0 +1,20 @@
+name = "iwata-monogatari"
+compatibility_date = "2026-06-24"
+pages_build_output_dir = "."
+
+# Cloudflare D1（掲示板の保存先）
+# database_id は `wrangler d1 create iwata_monogatari_bbs` の出力に差し替える。
+[[d1_databases]]
+binding = "DB"
+database_name = "iwata_monogatari_bbs"
+database_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+
+# 環境変数（Secrets はダッシュボードまたは `wrangler pages secret put` で設定する。
+# wrangler.toml には秘密情報を直接書かないこと）
+# 必要な変数:
+#   RESEND_API_KEY        … 投稿通知メール用（Resend）
+#   BBS_NOTIFY_TO         … fudosan.fujigaokas@gmail.com
+#   BBS_NOTIFY_FROM       … 認証済み送信元アドレス（例: bbs@あなたのドメイン）
+#   TURNSTILE_SECRET_KEY  … Cloudflare Turnstile のシークレット
+#   BBS_ADMIN_TOKEN       … 管理画面/管理APIの簡易保護トークン
+#   BBS_IP_SALT           … IPハッシュ用ソルト（任意の長いランダム文字列）
