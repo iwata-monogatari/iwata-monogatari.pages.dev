@@ -1,0 +1,109 @@
+/* =========================================================================
+   district.css  ──  磐田物語 9地区別入口ページ 共通スタイル
+   - 2カラムレイアウト（本文 + indexと共通の左サイドバー）
+   - ページ上部ヒーロー図
+   - 歴史的コンテンツ入口（テーマ別絞り込み・カード）
+   - 町村沿革の年表/対応表テーブル
+   - 相談導線ボックス
+   依存トークン（各ページの :root で定義済み）:
+     --paper --paper-deep --ink --ink-soft --accent-blue --brown --brown-deep
+     --line --card --shadow
+   ========================================================================= */
+
+/* ---- 2カラムレイアウト ---- */
+.district-layout{max-width:1180px;margin:0 auto;padding:0 24px;
+  display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:40px;align-items:start;}
+.district-main{min-width:0;}
+.district-aside{min-width:0;}
+@media(max-width:960px){
+  .district-layout{grid-template-columns:1fr;gap:0;padding:0 18px;}
+  .district-aside{margin-top:24px;}
+}
+
+/* 既存 .area-section / .area-hero はカラム内で全幅にする */
+.district-layout .area-hero{max-width:none;margin:0;padding:36px 0 22px;}
+.district-layout .area-section{max-width:none;margin:0;padding:6px 0;}
+.district-layout .area-nav-bottom{max-width:none;margin:0;padding:18px 0 50px;}
+
+/* ---- ヒーロー図 ---- */
+.district-hero{margin:8px 0 30px;border:1px solid var(--line);border-radius:16px;
+  overflow:hidden;background:linear-gradient(180deg,#f4fafd,#fffdf7);box-shadow:var(--shadow);}
+.district-hero__figure{margin:0;}
+.district-hero__figure img{display:block;width:100%;height:auto;}
+.district-hero__figure figcaption{margin:0;padding:9px 16px;font-size:12.5px;
+  color:var(--ink-soft);background:#eef6fb;border-top:1px solid var(--line);letter-spacing:.04em;}
+
+/* ---- 歴史的コンテンツ入口（絞り込み + カード） ---- */
+.district-filter{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 6px;}
+.district-filter button{font-family:inherit;font-size:13px;line-height:1.3;cursor:pointer;
+  padding:7px 14px;border-radius:999px;border:1px solid var(--line);
+  background:var(--paper);color:var(--ink-soft);transition:.18s;}
+.district-filter button:hover{border-color:var(--accent-blue);color:var(--accent-blue);}
+.district-filter button[aria-pressed="true"]{background:var(--accent-blue);color:#fff;
+  border-color:var(--accent-blue);box-shadow:0 3px 9px rgba(53,111,136,.25);}
+.district-filter-count{font-size:13px;color:var(--ink-soft);margin:10px 0 4px;letter-spacing:.03em;}
+
+.content-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:10px 0 6px;}
+@media(max-width:680px){.content-cards{grid-template-columns:1fr;}}
+.content-card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+  padding:15px 17px;box-shadow:var(--shadow);transition:.18s;}
+.content-card:hover{transform:translateY(-1px);box-shadow:0 7px 18px rgba(40,70,90,.1);}
+.content-card[hidden]{display:none;}
+.content-card .card-label{display:inline-block;margin:0 0 7px;font-size:11.5px;font-weight:700;
+  letter-spacing:.06em;color:var(--accent-blue);background:#eaf4fb;border:1px solid #d4e8f5;
+  border-radius:999px;padding:2px 10px;}
+.content-card h3{font-family:"Shippori Mincho",serif;font-size:16px;line-height:1.5;
+  margin:0 0 7px;color:var(--ink);font-weight:700;}
+.content-card h3 a{color:var(--brown-deep);text-decoration:none;}
+.content-card h3 a:hover{text-decoration:underline;}
+.content-card p{margin:0;font-size:13.5px;line-height:1.75;color:var(--ink-soft);}
+.content-card .card-date{display:block;margin-top:9px;font-size:11.5px;color:#9aa9b1;letter-spacing:.04em;}
+.district-empty{margin:14px 0;padding:18px;border:1px dashed var(--line);border-radius:10px;
+  text-align:center;color:var(--ink-soft);font-size:14px;background:#fbfdff;}
+
+/* ---- 町村沿革：年表・対応表（既存 area-table を拡張利用） ---- */
+.area-table caption{caption-side:top;text-align:left;font-family:"Shippori Mincho",serif;
+  font-weight:700;font-size:14px;color:var(--brown-deep);padding:0 0 8px;}
+.status-chip{display:inline-block;font-size:11.5px;font-weight:700;border-radius:999px;
+  padding:1px 9px;white-space:nowrap;letter-spacing:.03em;}
+.status-ok{background:#e7f5ec;color:#246b41;border:1px solid #bfe3cc;}
+.status-check{background:#fdf3e3;color:#8a5a16;border:1px solid #ecd6ad;}
+.status-survey{background:#eef1f4;color:#566570;border:1px solid #d6dde2;}
+
+/* ---- indexと共通の左サイドバー（index.html から移植） ---- */
+.district-aside .side-block{background:var(--card);border:1px solid var(--line);border-radius:6px;
+  padding:18px 18px 20px;margin-bottom:20px;box-shadow:var(--shadow);}
+.district-aside .side-block h3{font-family:"Shippori Mincho",serif;font-size:16px;margin:0 0 12px;
+  color:var(--ink);border-left:4px solid var(--accent-blue);padding-left:10px;}
+.district-aside .side-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:7px;}
+.district-aside .side-list a{font-size:13px;color:var(--ink-soft);background:var(--paper);
+  border:1px solid var(--line);border-radius:4px;padding:5px 11px;text-decoration:none;transition:.2s;}
+.district-aside .side-list a:hover{background:var(--accent-blue);color:#fff;border-color:var(--accent-blue);}
+
+.district-aside .sidebar-card{background:#fff;border:1px solid #d8e8f5;border-radius:14px;
+  padding:16px;box-shadow:0 4px 14px rgba(20,74,112,.07);margin-bottom:20px;}
+.district-aside .sidebar-card h2{margin:0 0 10px;font-size:16px;color:#145c8f;
+  border-bottom:2px solid #8fc9ee;padding-bottom:6px;font-family:"Shippori Mincho",serif;font-weight:700;}
+.district-aside .sidebar-card-lead{margin:0 0 12px;font-size:12.5px;line-height:1.7;color:#4f6473;}
+.district-aside .public-link-group + .public-link-group{margin-top:14px;}
+.district-aside .public-link-group h3{margin:0 0 8px;font-size:13px;color:#285b7d;
+  border-left:4px solid #8fc9ee;padding-left:8px;font-family:"Shippori Mincho",serif;}
+.district-aside .compact-link-list,.district-aside .operator-link-list{list-style:none;margin:0;
+  padding:0;display:grid;gap:7px;}
+.district-aside .compact-link-list a,.district-aside .operator-link-list a{display:block;padding:7px 9px;
+  border-radius:8px;background:#f4f9fd;color:#1f5f8b;text-decoration:none;font-size:12.5px;
+  line-height:1.45;border:1px solid #e2eff8;transition:.2s;}
+.district-aside .compact-link-list a:hover,.district-aside .operator-link-list a:hover{
+  background:#e7f4fc;color:#0d4f7d;}
+.district-aside .operator-banner{display:block;margin:4px 0 12px;padding:16px;border-radius:16px;
+  text-decoration:none;color:#fff;background:linear-gradient(135deg,#1c78b5 0%,#62b7e8 100%);
+  box-shadow:0 8px 18px rgba(28,120,181,.22);transition:.2s;}
+.district-aside .operator-banner:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(28,120,181,.28);}
+.district-aside .operator-banner-label{display:inline-block;margin-bottom:8px;padding:3px 8px;
+  border-radius:999px;background:rgba(255,255,255,.22);font-size:11px;letter-spacing:.04em;}
+.district-aside .operator-banner strong{display:block;margin-bottom:8px;font-size:15.5px;line-height:1.45;
+  font-family:"Shippori Mincho",serif;}
+.district-aside .operator-banner span:last-child{display:block;font-size:12px;line-height:1.65;}
+
+/* サイドバーは desktop で追従、mobile では通常フロー */
+@media(min-width:961px){.district-aside{position:sticky;top:18px;}}
