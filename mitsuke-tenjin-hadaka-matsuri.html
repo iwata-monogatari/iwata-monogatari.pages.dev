@@ -68,6 +68,21 @@
   .related a:hover{background:#f4fafc;text-decoration:none;}
   .pager{display:flex;justify-content:space-between;gap:12px;margin:40px 0 10px;flex-wrap:wrap;}
   .pager a{font-size:14px;}
+  /* ── 佐口史料ギャラリー（裸祭） ── */
+  .sg-sec{margin:44px 0;}
+  .sg-lead{font-size:15px;color:#3a4750;margin-bottom:8px;line-height:1.95;}
+  .sg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 12px;}
+  .sg-grid figure{margin:0;background:var(--paper);border:1px solid var(--waku);border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(20,74,112,.06);}
+  .sg-grid a{display:block;color:inherit;}
+  .sg-grid a:hover{text-decoration:none;}
+  .sg-grid a:hover figcaption{background:#f4fafc;}
+  .sg-grid img{width:100%;height:150px;object-fit:cover;background:#eef3f6;display:block;transition:transform .3s;}
+  .sg-grid a:hover img{transform:scale(1.04);}
+  .sg-grid figcaption{padding:9px 11px 11px;font-size:11.5px;line-height:1.5;color:var(--usuzumi);text-align:left;margin:0;}
+  .sg-grid .sg-nm{display:block;font-family:"Shippori Mincho",serif;font-size:13px;color:var(--sumi);margin-bottom:2px;line-height:1.4;}
+  .sg-grid .sg-era{color:#7a8a93;}
+  .sg-credit{font-size:12px;color:var(--usuzumi);margin-top:6px;line-height:1.75;}
+  .sg-credit strong{color:var(--matsu);}
   footer.site{background:var(--matsu);color:#eee;margin-top:54px;}
   .foot-inner{max-width:760px;margin:0 auto;padding:34px 22px;}
   .foot-inner .mincho{font-size:18px;color:#fff;display:block;margin-bottom:12px;}
@@ -77,7 +92,7 @@
   .foot-links li{margin-bottom:7px;font-size:14px;}
   .foot-links a{color:#eef6fb;}
   .copy{font-size:12px;color:#a9c6d2;margin-top:22px;}
-  @media(max-width:600px){h1{font-size:24px;}body{font-size:16px;}h2{font-size:19px;}.children{grid-template-columns:1fr;}.infobox dl{grid-template-columns:1fr;}.infobox dt{border-bottom:none;padding-bottom:0;}}
+  @media(max-width:600px){h1{font-size:24px;}body{font-size:16px;}h2{font-size:19px;}.children{grid-template-columns:1fr;}.infobox dl{grid-template-columns:1fr;}.infobox dt{border-bottom:none;padding-bottom:0;}.sg-grid{grid-template-columns:1fr 1fr;}.sg-grid img{height:128px;}}
 </style>
 </head>
 <body>
@@ -172,6 +187,26 @@
       <figcaption>見付天神裸祭は、長い祓いと清め（①）、鬼踊りによる場の浄め（②）、そして漆黒の闇のなかの総社への渡御（③）という流れをもつ。鬼踊りは祭りの華だが、全体は「神を清浄な状態でお渡しする」ための神事である。（構造をもとにした模式図）</figcaption>
     </div>
   </figure>
+
+  <section class="sg-sec">
+    <h2>佐口史料に見る、裸祭の記憶</h2>
+    <p class="sg-lead">見付の旧家・佐口行正氏が遺した絵葉書や祭礼写真には、大正・昭和の裸祭がいきいきと写しとられている。腰蓑をまとった青年会の正装、浜での禊（浜垢離）、各町が競って曳いた船屋台――紙片に残る、まちの晴れ姿である。画像をクリックすると目録で大きく見られる。</p>
+    <div class="sg-grid">
+      <figure><a href="/saguchi-shiryo-catalog.html"><img src="/saguchi/img/eh-3.jpg" alt="男性的神事 裸祭ノ一 大正9年頃 佐口行正氏所蔵" loading="lazy"><figcaption><span class="sg-nm">男性的神事 裸祭ノ一</span><span class="sg-era">大正9年頃／見付町青年会</span></figcaption></a></figure>
+      <figure><a href="/saguchi-shiryo-catalog.html"><img src="/saguchi/img/eh-4.jpg" alt="男性的神事 裸祭ノ二 大正9年頃 佐口行正氏所蔵" loading="lazy"><figcaption><span class="sg-nm">男性的神事 裸祭ノ二</span><span class="sg-era">大正9年頃／見付町青年会</span></figcaption></a></figure>
+      <figure><a href="/saguchi-shiryo-catalog.html"><img src="/saguchi/img/eh-1.jpg" alt="はだか祭りに於ける青年会員の正装 大正9年頃 佐口行正氏所蔵" loading="lazy"><figcaption><span class="sg-nm">青年会員の正装</span><span class="sg-era">大正9年頃</span></figcaption></a></figure>
+      <figure><a href="/saguchi-shiryo-catalog.html"><img src="/saguchi/img/eh-24.jpg" alt="裸祭 二番觸 佐口行正氏所蔵" loading="lazy"><figcaption><span class="sg-nm">裸祭 二番觸</span><span class="sg-era">絵葉書</span></figcaption></a></figure>
+      <figure><a href="/saguchi-shiryo-catalog.html"><img src="/saguchi/img/eh-30.jpg" alt="浜垢離 神事 大正3年 佐口行正氏所蔵" loading="lazy"><figcaption><span class="sg-nm">浜垢離 神事</span><span class="sg-era">大正3年</span></figcaption></a></figure>
+      <figure><a href="/saguchi-shiryo-catalog.html"><img src="/saguchi/img/eh-34.jpg" alt="見付天神社 浜垢離の光景 佐口行正氏所蔵" loading="lazy"><figcaption><span class="sg-nm">見付天神社 浜垢離の光景</span><span class="sg-era">絵葉書</span></figcaption></a></figure>
+      <figure><a href="/saguchi-shiryo-catalog.html"><img src="/saguchi/img/eh-17.jpg" alt="浜垢離 佐口行正氏所蔵" loading="lazy"><figcaption><span class="sg-nm">浜垢離</span><span class="sg-era">絵葉書</span></figcaption></a></figure>
+      <figure><a href="/saguchi-shiryo-catalog.html"><img src="/saguchi/img/eh-5.jpg" alt="各町船屋台 佐口行正氏所蔵" loading="lazy"><figcaption><span class="sg-nm">各町 船屋台</span><span class="sg-era">絵葉書</span></figcaption></a></figure>
+      <figure><a href="/saguchi-shiryo-catalog.html"><img src="/saguchi/img/eh-7.jpg" alt="一番町 船屋台 昭和28年 佐口行正氏所蔵" loading="lazy"><figcaption><span class="sg-nm">一番町 船屋台</span><span class="sg-era">昭和28年9月</span></figcaption></a></figure>
+      <figure><a href="/saguchi-shiryo-catalog.html"><img src="/saguchi/img/eh-12.jpg" alt="元倉 船屋台 慶岩寺内 昭和26〜27年頃 佐口行正氏所蔵" loading="lazy"><figcaption><span class="sg-nm">元倉 船屋台（慶岩寺内）</span><span class="sg-era">昭和26〜27年頃</span></figcaption></a></figure>
+      <figure><a href="/saguchi-shiryo-catalog.html"><img src="/saguchi/img/eh-20.jpg" alt="西坂 船屋台 佐口行正氏所蔵" loading="lazy"><figcaption><span class="sg-nm">西坂 船屋台</span><span class="sg-era">絵葉書</span></figcaption></a></figure>
+      <figure><a href="/saguchi-shiryo-catalog.html"><img src="/saguchi/img/eh-28.jpg" alt="天神社 正面 大正3年 佐口行正氏所蔵" loading="lazy"><figcaption><span class="sg-nm">天神社 正面</span><span class="sg-era">大正3年</span></figcaption></a></figure>
+    </div>
+    <p class="sg-credit">※ 掲載史料はすべて<strong>佐口行正氏の所蔵</strong>であり、ご厚意・ご許可を得て掲載しています。画像・目録情報の無断転載および二次利用を禁じます。さらに詳しくは <a href="/saguchi-shiryo-catalog.html">佐口行正氏所蔵史料 目録（約336点）</a> をご覧ください。</p>
+  </section>
 
   <h2>この特集の構成</h2>
 
