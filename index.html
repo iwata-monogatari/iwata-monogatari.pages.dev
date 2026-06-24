@@ -230,7 +230,7 @@ nav.menu a:hover{color:var(--brown-deep);}
   .saguchi-strip::after{right:0;background:linear-gradient(270deg,#f4f9fc,rgba(244,249,252,0));}
   .ss-rows{display:flex;flex-direction:column;gap:8px;}
   .ss-track{display:flex;gap:8px;width:max-content;will-change:transform;}
-  .ss-left{animation:ssL 75s linear infinite;}
+  .ss-left{animation:ssL 160s linear infinite;}
   .ss-right{animation:ssR 90s linear infinite;}
   .saguchi-strip:hover .ss-track{animation-play-state:paused;}
   @keyframes ssL{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -256,7 +256,7 @@ nav.menu a:hover{color:var(--brown-deep);}
     track.className='ss-track '+(dir==='left'?'ss-left':'ss-right');
     list.concat(list).forEach(function(name){
       var a=document.createElement('a');
-      a.href='/saguchi-shiryo-catalog.html'; a.className='ss-item';
+      a.href='/saguchi-shiryo-catalog.html#'+name.replace(/\.[^.]+$/,''); a.className='ss-item';
       a.setAttribute('aria-label','佐口行正氏所蔵史料');
       var img=document.createElement('img');
       img.src='/saguchi/img/'+name; img.loading='lazy'; img.decoding='async';
