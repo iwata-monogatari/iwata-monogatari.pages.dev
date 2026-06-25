@@ -19,7 +19,9 @@
 .district-aside{min-width:0;}
 @media(max-width:960px){
   .district-layout{grid-template-columns:1fr;gap:0;padding:0 18px;}
-  .district-aside{margin-top:24px;}
+  .district-layout > .district-main,
+  .district-layout > .district-aside{grid-column:1;grid-row:auto;}
+  .district-aside{margin-top:28px;}
 }
 
 /* 既存 .area-section / .area-hero はカラム内で全幅にする */
