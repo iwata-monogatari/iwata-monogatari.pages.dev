@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img"
+     aria-label="御厨地区の田園・集落・神明宮（伊勢神宮領の名残）の記憶を表した模式図">
+  <defs>
+    <linearGradient id="mkrSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3fafd"/>
+      <stop offset="1" stop-color="#fffdf7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="540" fill="url(#mkrSky)"/>
+
+  <!-- 抽象的な地形の等高線（地理を正確に示すものではない模式） -->
+  <g fill="none" stroke="#dcebf3" stroke-width="2">
+    <path d="M0,150 C220,120 410,168 620,134 S900,150 960,124"/>
+    <path d="M0,206 C240,176 430,220 640,186 S910,206 960,182"/>
+  </g>
+
+  <!-- 田園（東部の農地）：抽象的な田の区画 -->
+  <g stroke="#bcd6a8" stroke-width="2" fill="#eef6e2" opacity="0.9">
+    <path d="M-20,452 L980,408 L980,540 L-20,540 Z" fill="#eef6e2" stroke="none"/>
+  </g>
+  <g stroke="#b6d09a" stroke-width="1.6" fill="none" opacity="0.85">
+    <line x1="40" y1="470" x2="900" y2="432"/>
+    <line x1="44" y1="498" x2="904" y2="462"/>
+    <line x1="48" y1="526" x2="908" y2="492"/>
+    <line x1="150" y1="460" x2="172" y2="532"/>
+    <line x1="320" y1="452" x2="342" y2="524"/>
+    <line x1="500" y1="444" x2="522" y2="516"/>
+    <line x1="680" y1="436" x2="702" y2="508"/>
+    <line x1="840" y1="430" x2="862" y2="500"/>
+  </g>
+
+  <!-- 神明宮（伊勢系の社）：神明鳥居 + 千木・鰹木のある社殿 -->
+  <g transform="translate(150,250)">
+    <path d="M-12,118 q70,-26 140,0 Z" fill="#dcecae" stroke="#b9d186" stroke-width="1.5"/>
+    <!-- 社殿（神明造の抽象） -->
+    <rect x="36" y="74" width="64" height="40" fill="#eef6fb" stroke="#5a93ad" stroke-width="2"/>
+    <path d="M30,74 L68,52 L106,74 Z" fill="#cfe3ee" stroke="#5a93ad" stroke-width="2"/>
+    <g stroke="#9c5a3c" stroke-width="3"><line x1="58" y1="44" x2="68" y2="60"/><line x1="78" y1="44" x2="68" y2="60"/></g>
+    <rect x="54" y="60" width="28" height="4" fill="#9c5a3c"/>
+    <!-- 神明鳥居（直線の笠木） -->
+    <g stroke="#9c5a3c" stroke-width="5" stroke-linecap="round">
+      <line x1="6" y1="92" x2="6" y2="120"/>
+      <line x1="50" y1="92" x2="50" y2="120"/>
+      <line x1="-4" y1="90" x2="60" y2="90"/>
+      <line x1="0" y1="102" x2="56" y2="102"/>
+    </g>
+  </g>
+
+  <!-- 集落（農村の家並み） -->
+  <g fill="#7faec9" stroke="#4f7f9b" stroke-width="1.4">
+    <g transform="translate(560,300)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+    <g transform="translate(612,308)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+    <g transform="translate(664,300)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+    <g transform="translate(640,338)"><path d="M0,15 L15,0 L30,15 Z"/><rect x="3" y="15" width="24" height="18"/></g>
+  </g>
+
+  <!-- 最小限のラベル（詳細は本文で説明） -->
+  <g font-family="'Shippori Mincho',serif" fill="#3f6175">
+    <text x="150" y="392" font-size="15" letter-spacing="2" fill="#6a7c4a">神明宮</text>
+    <text x="588" y="288" font-size="15" letter-spacing="2" fill="#4f7f9b">集落</text>
+    <text x="420" y="512" font-size="15" letter-spacing="2" fill="#6f8a52">田園</text>
+  </g>
+
+  <text x="930" y="40" text-anchor="end" font-family="sans-serif" font-size="12"
+        fill="#8aa4b3" letter-spacing="1">磐田物語 ｜ 御厨地区 記憶の模式図</text>
+</svg>
