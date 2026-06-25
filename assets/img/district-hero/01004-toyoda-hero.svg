@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img"
+     aria-label="豊田地区の天竜川・渡し・古墳・田園と集落の記憶を表した模式図">
+  <defs>
+    <linearGradient id="tyoSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3fafd"/>
+      <stop offset="1" stop-color="#fffdf7"/>
+    </linearGradient>
+    <linearGradient id="tyoRiver" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#bcdcec"/>
+      <stop offset="1" stop-color="#d8edf6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="540" fill="url(#tyoSky)"/>
+
+  <!-- 抽象的な地形の等高線 -->
+  <g fill="none" stroke="#dcebf3" stroke-width="2">
+    <path d="M260,150 C420,120 620,160 820,130 S960,150 960,140"/>
+    <path d="M300,200 C460,172 640,210 840,182 S960,200 960,190"/>
+  </g>
+
+  <!-- 天竜川（地区西側を流れる大河の抽象） -->
+  <path d="M120,-20 C170,140 90,300 170,460 C200,520 180,540 180,560 L-20,560 L-20,-20 Z"
+        fill="url(#tyoRiver)" opacity="0.9"/>
+  <g fill="none" stroke="#ffffff" stroke-width="2" opacity="0.7">
+    <path d="M70,20 C120,170 50,320 120,470"/>
+    <path d="M30,40 C80,180 20,330 80,480"/>
+  </g>
+
+  <!-- 渡し舟（池田の渡しの抽象） -->
+  <g transform="translate(96,300)">
+    <path d="M0,10 q26,16 52,0 l-6,14 q-20,8 -40,0 Z" fill="#c9a063" stroke="#8a6028" stroke-width="1.5"/>
+    <line x1="26" y1="-14" x2="26" y2="10" stroke="#8a6028" stroke-width="2"/>
+  </g>
+
+  <!-- 前方後円墳（銚子塚古墳の抽象） -->
+  <g transform="translate(440,250)">
+    <ellipse cx="70" cy="40" rx="52" ry="40" fill="#dcecae" stroke="#b9d186" stroke-width="2"/>
+    <path d="M30,40 L0,18 L0,62 Z" fill="#dcecae" stroke="#b9d186" stroke-width="2"/>
+    <ellipse cx="70" cy="40" rx="30" ry="22" fill="none" stroke="#b9d186" stroke-width="1.4"/>
+  </g>
+
+  <!-- 集落（住宅地の家並み） -->
+  <g fill="#7faec9" stroke="#4f7f9b" stroke-width="1.4">
+    <g transform="translate(700,300)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+    <g transform="translate(752,306)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+    <g transform="translate(804,300)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+  </g>
+
+  <!-- 田園 -->
+  <path d="M210,470 L980,432 L980,540 L230,540 Z" fill="#eef6e2" stroke="none"/>
+  <g stroke="#b6d09a" stroke-width="1.6" fill="none" opacity="0.85">
+    <line x1="250" y1="486" x2="900" y2="452"/>
+    <line x1="256" y1="514" x2="906" y2="480"/>
+    <line x1="400" y1="468" x2="420" y2="532"/>
+    <line x1="560" y1="460" x2="580" y2="524"/>
+    <line x1="720" y1="452" x2="740" y2="516"/>
+  </g>
+
+  <!-- 最小限のラベル -->
+  <g font-family="'Shippori Mincho',serif" fill="#3f6175">
+    <text x="36" y="160" font-size="15" letter-spacing="2" fill="#4f86a3">天竜川</text>
+    <text x="470" y="244" font-size="15" letter-spacing="2" fill="#6a7c4a">古墳</text>
+    <text x="470" y="516" font-size="15" letter-spacing="2" fill="#6f8a52">田園</text>
+  </g>
+
+  <text x="930" y="40" text-anchor="end" font-family="sans-serif" font-size="12"
+        fill="#8aa4b3" letter-spacing="1">磐田物語 ｜ 豊田地区 記憶の模式図</text>
+</svg>
