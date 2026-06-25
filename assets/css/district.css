@@ -12,7 +12,9 @@
 
 /* ---- 2カラムレイアウト ---- */
 .district-layout{max-width:1180px;margin:0 auto;padding:0 24px;
-  display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:40px;align-items:start;}
+  display:grid;grid-template-columns:300px minmax(0,1fr);gap:40px;align-items:start;}
+.district-layout > .district-main{grid-column:2;}
+.district-layout > .district-aside{grid-column:1;grid-row:1;}
 .district-main{min-width:0;}
 .district-aside{min-width:0;}
 @media(max-width:960px){
@@ -106,4 +108,17 @@
 .district-aside .operator-banner span:last-child{display:block;font-size:12px;line-height:1.65;}
 
 /* サイドバーは desktop で追従、mobile では通常フロー */
-@media(min-width:961px){.district-aside{position:sticky;top:18px;}}
+@media(min-width:961px){.district-aside{position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto;}}
+
+/* ---- 左ナビ：地域(大字)から探す（index aside#area 由来） ---- */
+.district-aside .ooaza-search-lead{font-size:13px;color:var(--ink-soft);margin:0 0 12px;line-height:1.7;}
+.district-aside .ooaza-link-list{display:flex;flex-wrap:wrap;gap:7px 8px;}
+.district-aside .ooaza-link-list a{display:inline-block;text-decoration:none;white-space:normal;word-break:break-word;max-width:100%;font-size:13.5px;line-height:1.5;color:var(--brown-deep);background:#f4f9fc;border:1px solid var(--line);border-radius:14px;padding:4px 11px;transition:.15s;}
+.district-aside .ooaza-link-list a:hover{background:#e9f3fa;border-color:#6fb7d8;}
+.district-aside .ooaza-acc{border-top:1px solid var(--line);}
+.district-aside .ooaza-acc>summary{cursor:pointer;list-style:none;padding:9px 2px;font-family:"Shippori Mincho",serif;font-weight:700;font-size:14px;color:var(--brown-deep);display:flex;align-items:center;gap:7px;}
+.district-aside .ooaza-acc>summary::-webkit-details-marker{display:none;}
+.district-aside .ooaza-acc>summary::before{content:"\25B8";color:var(--brown);font-size:12px;transition:transform .15s;}
+.district-aside .ooaza-acc[open]>summary::before{transform:rotate(90deg);}
+.district-aside .ooaza-acc .ooaza-link-list{padding:2px 0 10px;}
+.district-aside .area-link-list a:hover{background:#eef6fb;}
