@@ -10,7 +10,7 @@
 |---|---|---|---|---|---|
 | 01001 | mitsuke | 見付地区 | 01001-mitsuke.html | assets/img/district-hero/01001-mitsuke-hero.svg | ✅ 完成（基盤プレート） |
 | 01002 | nakaizumi | 中泉地区 | 01002-nakaizumi.html | assets/img/district-hero/01002-nakaizumi-hero.svg | ✅ 完成 |
-| 01003 | mikuriya | 御厨地区 | 01003-mikuriya.html | （予定） | ⏳ 未着手 |
+| 01003 | mikuriya | 御厨地区 | 01003-mikuriya.html | assets/img/district-hero/01003-mikuriya-hero.svg | ✅ 完成 |
 | 01004 | toyoda | 豊田地区 | 01004-toyoda.html | （予定） | ⏳ 未着手 |
 | 01005 | nanbu | 南部地区 | 01005-nanbu.html | （予定） | ⏳ 未着手 |
 | 01006 | koyo | 向陽地区 | 01006-koyo.html | （予定） | ⏳ 未着手 |
