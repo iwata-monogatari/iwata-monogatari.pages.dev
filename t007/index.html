@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>「新田」と名のつく土地 ── 江戸の開発が刻んだ磐田の地名【解説】 ｜ 磐田物語</title>
+<meta name="description" content="寺谷新田・源平新田・太郎馬新田・宇兵衛新田など、磐田周辺に多い「新田」「人名＋新田」の地名を解説。江戸時代の新田開発がどのように地名を生んだのか、新田・新田開発・出作・人名地名といった用語の定義、地名一覧表、旧高帳での新田高の扱いまで。事実・解釈・推測を分けて整理する。">
+<link rel="canonical" href="https://iwata-monogatari.pages.dev/t007.html">
+<meta property="og:title" content="「新田」と名のつく土地 ── 江戸の開発が刻んだ磐田の地名【解説】 ｜ 磐田物語">
+<meta property="og:description" content="寺谷新田・源平新田・太郎馬新田など「新田」地名を、江戸の新田開発と用語の定義、一覧表で解説。人名＋新田はなぜ生まれたのか。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://iwata-monogatari.pages.dev/t007.html">
+<meta property="og:image" content="https://iwata-monogatari.pages.dev/hero-mitsuke.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
+    --brown:#2f7fa3;--brown-deep:#1f4f6f;--accent-blue:#356f88;--line:#d8e8ef;
+    --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    line-height:1.95;font-size:17px;letter-spacing:.02em;
+    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(166,113,62,.035) 0, transparent 38%),
+      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);}
+  a{color:var(--brown-deep);text-underline-offset:3px;}
+
+  header.site{background:var(--card);border-bottom:1px solid var(--line);}
+  .bar{max-width:1040px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+  .brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;}
+  .brand .logo{font-family:"Shippori Mincho",serif;font-weight:800;font-size:26px;color:var(--ink);letter-spacing:.06em;}
+  .brand .logo .dot{color:var(--brown);}
+  .brand .tag{font-size:12.5px;color:var(--ink-soft);letter-spacing:.08em;}
+  nav.menu{display:flex;gap:26px;}
+  nav.menu a{text-decoration:none;color:var(--ink-soft);font-size:14.5px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
+  nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
+
+  .crumbs{max-width:760px;margin:0 auto;padding:24px 24px 0;font-size:13px;color:var(--ink-soft);}
+  .crumbs a{text-decoration:none;}
+  .crumbs a:hover{text-decoration:underline;}
+
+  .article-head{max-width:760px;margin:0 auto;padding:28px 24px 12px;}
+  .article-head .cat{font-size:13px;letter-spacing:.18em;color:var(--accent-blue);font-weight:700;margin:0 0 16px;}
+  .article-head .cat .no{color:var(--brown);}
+  .article-head h1{font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(27px,5vw,42px);line-height:1.45;margin:0 0 20px;color:var(--ink);letter-spacing:.03em;}
+  .article-head .sub{font-size:16.5px;color:var(--ink-soft);margin:0;line-height:1.95;}
+
+  .cover{max-width:760px;margin:28px auto 0;padding:0 24px;}
+  .cover svg{width:100%;height:auto;display:block;border-radius:4px;
+    border:1px solid var(--line);box-shadow:var(--shadow);background:var(--card);}
+  .cover figcaption{font-size:13px;color:var(--ink-soft);margin-top:10px;text-align:center;}
+
+  .article{max-width:760px;margin:0 auto;padding:24px 24px 56px;}
+  .article h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:23px;
+    color:var(--ink);letter-spacing:.03em;margin:52px 0 18px;
+    padding-left:16px;border-left:4px solid var(--brown);line-height:1.5;}
+  .article h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:18px;color:var(--brown-deep);margin:30px 0 12px;letter-spacing:.03em;}
+  .article p{margin:0 0 20px;color:var(--ink);}
+  .article p.lead{font-size:18px;line-height:2.05;}
+  .article .ruby{font-size:.78em;color:var(--ink-soft);}
+
+  .summary{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--brown);
+    border-radius:4px;padding:22px 28px;margin:30px 0;box-shadow:var(--shadow);}
+  .summary .sh{font-family:"Shippori Mincho",serif;font-size:17px;margin:0 0 13px;color:var(--brown-deep);letter-spacing:.04em;font-weight:700;}
+  .summary ul{margin:0;padding:0;list-style:none;}
+  .summary li{position:relative;padding-left:22px;margin-bottom:9px;font-size:15px;line-height:1.8;}
+  .summary li::before{content:"";position:absolute;left:2px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--brown);}
+  .summary li:last-child{margin-bottom:0;}
+
+  .def{background:var(--paper-deep);border-left:4px solid var(--accent-blue);border-radius:0 3px 3px 0;
+    padding:16px 22px;margin:24px 0;}
+  .def .term{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16px;color:var(--ink);margin-bottom:5px;display:block;}
+  .def .term .yomi{font-size:12.5px;color:var(--ink-soft);font-weight:500;margin-left:6px;}
+  .def p{margin:0;font-size:14.5px;line-height:1.85;color:var(--ink);}
+
+  .tablewrap{margin:26px 0;overflow-x:auto;}
+  table.kx{border-collapse:collapse;width:100%;font-size:14.5px;background:var(--card);
+    border:1px solid var(--line);box-shadow:var(--shadow);}
+  table.kx caption{caption-side:top;text-align:left;font-size:13px;color:var(--ink-soft);margin-bottom:9px;font-weight:700;letter-spacing:.03em;}
+  table.kx th,table.kx td{border:1px solid var(--line);padding:9px 13px;text-align:left;line-height:1.65;vertical-align:top;}
+  table.kx thead th{background:var(--paper-deep);color:var(--brown-deep);font-weight:700;white-space:nowrap;}
+  table.kx tbody th{background:#f4fafc;font-weight:700;white-space:nowrap;}
+  table.kx tbody tr:nth-child(even) td{background:#f8fcfe;}
+
+  .faq{margin:30px 0 8px;}
+  .faq-item{background:var(--card);border:1px solid var(--line);border-radius:4px;margin-bottom:12px;padding:17px 21px;box-shadow:var(--shadow);}
+  .faq-q{font-weight:700;color:var(--ink);font-size:15.5px;line-height:1.65;display:flex;gap:11px;align-items:flex-start;}
+  .faq-q .qb{flex:none;width:23px;height:23px;border-radius:50%;background:var(--brown);color:#fff;font-size:13px;display:inline-flex;align-items:center;justify-content:center;font-family:"Shippori Mincho",serif;margin-top:1px;}
+  .faq-a{margin:11px 0 0;padding-left:34px;font-size:14.5px;color:var(--ink-soft);line-height:1.85;}
+  .faq-a strong{color:var(--ink);}
+
+  figure.fig{margin:30px 0;padding:0;}
+  figure.fig svg{width:100%;height:auto;display:block;border-radius:4px;
+    border:1px solid var(--line);box-shadow:var(--shadow);background:var(--card);}
+  figure.fig figcaption{font-size:13px;color:var(--ink-soft);margin-top:10px;text-align:center;line-height:1.7;}
+
+  .pull{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent-blue);
+    border-radius:3px;padding:22px 28px;margin:30px 0;box-shadow:var(--shadow);}
+  .pull p{margin:0;font-family:"Shippori Mincho",serif;font-size:17.5px;color:var(--ink);line-height:1.95;}
+
+  .memo{background:var(--paper-deep);border-radius:3px;padding:24px 28px;margin:34px 0;}
+  .memo h3{font-family:"Shippori Mincho",serif;font-size:17px;color:var(--ink);margin:0 0 14px;letter-spacing:.04em;}
+  .memo dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;}
+  .memo dt{font-weight:700;color:var(--brown-deep);font-size:14.5px;white-space:nowrap;}
+  .memo dd{margin:0;font-size:14.5px;color:var(--ink);}
+
+  .sources{max-width:760px;margin:0 auto;padding:0 24px 8px;}
+  .sources h3{font-size:14px;color:var(--ink-soft);font-weight:700;letter-spacing:.06em;margin:0 0 10px;}
+  .sources ul{margin:0;padding-left:1.2em;}
+  .sources li{font-size:13px;color:var(--ink-soft);line-height:1.8;margin-bottom:4px;}
+
+  .article-nav{max-width:760px;margin:8px auto 56px;padding:0 24px;display:flex;flex-wrap:wrap;gap:14px;}
+  .article-nav a{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
+    padding:13px 26px;border-radius:2px;transition:.2s;letter-spacing:.04em;}
+  .article-nav a.primary{background:var(--brown);color:#fff;}
+  .article-nav a.primary:hover{background:var(--brown-deep);}
+  .article-nav a.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
+  .article-nav a.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
+
+  .s-paper{fill:#fffdf7;} .s-line{stroke:#cfe2ec;} .s-ink{fill:#1f3a48;}
+  .s-brown{fill:#2f7fa3;} .s-pine{fill:#356f88;} .s-soft{fill:#5b6b74;}
+  .s-water{fill:#cfe2ec;}
+
+  @media(max-width:760px){
+    nav.menu{display:none;}
+    .memo dl{grid-template-columns:1fr;gap:2px 0;}
+    .memo dt{margin-top:8px;}
+    table.kx{font-size:13.5px;}
+    table.kx th,table.kx td{padding:8px 10px;}
+  }
+</style>
+<style id="reno-blocks">
+.article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
+.article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
+.article-policy dt{font-weight:700;margin-top:16px;}
+.article-policy dd{margin:6px 0 0;line-height:1.8;color:var(--ink-soft,#4b5b66);}
+.related-materials{max-width:1180px;margin:48px auto;padding:0 4px;}
+.related-materials h2{font-size:1.4rem;margin-bottom:8px;font-family:"Shippori Mincho",serif;}
+.related-materials>p{line-height:1.8;color:var(--ink-soft,#4b5b66);}
+.related-materials .rm-note{font-size:.82rem;color:var(--ink-soft,#5b6b74);margin-top:14px;}
+.material-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px;}
+.material-grid figure{margin:0;border:1px solid var(--line,#d8e3ea);border-radius:14px;overflow:hidden;background:#fff;}
+.material-grid a{text-decoration:none;color:inherit;display:block;}
+.material-grid img{width:100%;height:180px;object-fit:cover;display:block;background:#eee;}
+.material-grid figcaption{padding:12px;font-size:.9rem;line-height:1.6;}
+@media(max-width:768px){.material-grid{grid-template-columns:1fr;}.material-grid img{height:auto;}}
+</style>
+  <link rel="stylesheet" href="/assets/css/site-header.css">
+</head>
+<body>
+
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口行正氏所蔵史料</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+    </nav>
+  </div>
+</header>
+
+<div class="crumbs"><a href="/">磐田物語</a> ／ <a href="/c014.html">まちの成り立ち</a> ／ 「新田」と名のつく土地【解説】</div>
+
+<div class="article-head">
+  <p class="cat"><span class="no">連載 まちの成り立ち 第六回</span> ｜ 旧磐田市の記憶</p>
+  <h1>「新田」と名のつく土地<br>── 江戸の開発が刻んだ磐田の地名</h1>
+  <p class="sub">磐田の地図には「寺谷新田」「源平新田」「太郎馬新田」「宇兵衛新田」のように、「新田」や「人名＋新田」のつく地名が点在する。本記事では、これらの地名がどのように生まれたのかを、江戸時代の新田開発のしくみと、新田・出作・人名地名といった用語の定義、一覧表をもとに解説する。</p>
+</div>
+
+<figure class="cover">
+  <svg viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="既存の村のまわりに、川や原野を開いてできた新しい田が広がり、開発者の名前を冠した新田の村ができていく流れの図">
+    <rect width="760" height="250" class="s-paper"></rect>
+    <path d="M0 18 C120 38 200 6 320 30 C440 54 560 14 760 36 L760 0 L0 0 Z" class="s-water" opacity="0.7"></path>
+    <text x="120" y="22" class="s-soft" font-size="11" font-family="'Shippori Mincho',serif">天竜川・支流</text>
+    <circle cx="175" cy="135" r="40" class="s-paper" stroke="#356f88" stroke-width="2"></circle>
+    <text x="175" y="132" text-anchor="middle" class="s-pine" font-size="14" font-family="'Shippori Mincho',serif" font-weight="700">本村</text>
+    <text x="175" y="150" text-anchor="middle" class="s-soft" font-size="10.5">古くからの村</text>
+    <g class="s-line" fill="none" stroke-width="1.2">
+      <rect x="300" y="95" width="34" height="22" rx="2"></rect><rect x="340" y="95" width="34" height="22" rx="2"></rect>
+      <rect x="300" y="121" width="34" height="22" rx="2"></rect><rect x="340" y="121" width="34" height="22" rx="2"></rect>
+      <rect x="300" y="147" width="34" height="22" rx="2"></rect><rect x="340" y="147" width="34" height="22" rx="2"></rect>
+    </g>
+    <text x="357" y="86" text-anchor="middle" class="s-soft" font-size="11" font-family="'Shippori Mincho',serif">新しく開いた田</text>
+    <path d="M222 135 L292 130" stroke="#2f7fa3" stroke-width="1.6" fill="none" marker-end="url(#ar)"></path>
+    <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#2f7fa3"></path></marker></defs>
+    <path d="M400 135 L470 135" stroke="#2f7fa3" stroke-width="1.6" fill="none" marker-end="url(#ar)"></path>
+    <rect x="488" y="100" width="118" height="72" rx="6" class="s-paper" stroke="#1f3a48" stroke-width="2"></rect>
+    <text x="547" y="130" text-anchor="middle" class="s-ink" font-size="15" font-family="'Shippori Mincho',serif" font-weight="800">○○新田</text>
+    <text x="547" y="152" text-anchor="middle" class="s-soft" font-size="10.5">開発者の名を冠す</text>
+    <text x="380" y="222" text-anchor="middle" class="s-soft" font-size="11.5" font-family="'Shippori Mincho',serif">本村のはずれを開き、新しい田と村ができる</text>
+  </svg>
+  <figcaption>図：古くからの本村のまわりに新しい田を開き、しばしば開発者の名を冠した「新田」が生まれる流れ（概念図）。</figcaption>
+</figure>
+
+<article class="article">
+
+  <div class="summary">
+    <p class="sh">この記事の要点</p>
+    <ul>
+      <li><strong>「新田（しんでん）」とは、江戸時代に新しく開発された田、またはその田を中心にできた村</strong>を指す地名・行政区分である。</li>
+      <li>磐田周辺の「寺谷新田」「源平新田」「太郎馬新田」「宇兵衛新田」などは、いずれも江戸期の<strong>新田開発</strong>がもとになった地名と考えられる。</li>
+      <li>「<strong>人名＋新田</strong>」は、開発を主導した人物（開発人・出資者）の名を冠したと解釈されることが多いが、個々の人物比定は慎重を要する。</li>
+      <li>新田は本村のはずれや川沿い・原野を開いて生まれることが多く、<strong>「○○新田」は近くの「○○」という本村と対になっている</strong>場合がある。</li>
+      <li>これらの新田高は、<strong>天保郷帳や旧高旧領取調帳</strong>に反映され、村の「公式の大きさ」を押し上げた。</li>
+    </ul>
+  </div>
+
+  <h2>「新田」という地名は何を語るか</h2>
+  <p>磐田市の住所や旧版地図をたどると、「新田」の二文字を含む地名がいくつも見つかる。岩田地区の<strong>寺谷新田（てらやしんでん）</strong>はその代表で、すぐ隣に「寺谷」という古い村がある。さらに天竜川の流域には「源平新田」「太郎馬新田」「宇兵衛新田」のように、人の名前らしき語に「新田」を足した地名も点在する。</p>
+  <p><strong>事実として</strong>、これらの地名の多くは江戸時代の「新田開発」と深く関わっている。新田とは、簡単にいえば「あとから新しく開かれた田」であり、その田を核にして成り立った村もまた「新田」と呼ばれた。地名に刻まれた「新田」は、その土地が比較的新しく拓かれた場所であることを、数百年の時を越えて伝えている。</p>
+  <p>この記事では、「新田」「人名＋新田」という地名がどのように生まれたのかを、用語の定義・開発のしくみ・地名の一覧という三つの角度から整理する。なお、個別の地名がいつ・誰によって開かれたかという具体的な比定は、確実な一次史料が必要な領域であり、本記事では断定を避けて「資料上は確認できるが詳細は今後の調査を要する」という立場をとる。</p>
+
+  <h2>「新田」とは何か ── 用語の整理</h2>
+  <p>まず、本記事で扱う基本の語を定義しておく。「新田」は地名であると同時に、近世の土地制度を表す用語でもある。</p>
+  <div class="def">
+    <span class="term">新田<span class="yomi">しんでん</span></span>
+    <p>江戸時代に新しく開発された田畑、またはそれを中心に成立した村・地区を指す。古くからの集落である「本村（ほんむら）」「古田（こでん）」に対する言葉で、河川敷・原野・台地・干潟などを開いて生まれた。地名としては「○○新田」「人名＋新田」の形で各地に残る。</p>
+  </div>
+  <div class="def">
+    <span class="term">新田開発<span class="yomi">しんでんかいはつ</span></span>
+    <p>耕地を増やすために、原野・河原・低湿地などを開墾して新しい田畑を拓くこと。とくに江戸時代の前期から中期にかけて、幕府や藩、村、町人・百姓などさまざまな主体によって全国で盛んに行われ、耕地面積と石高が大きく増加した。</p>
+  </div>
+  <div class="def">
+    <span class="term">本村・古田<span class="yomi">ほんむら・こでん</span></span>
+    <p>新田に対して、それ以前から存在した古い村・古い田を指す語。多くの「○○新田」は、近くにある同名の「○○」という本村と対をなし、本村の人びとが周辺を開いて成立したと考えられる。</p>
+  </div>
+  <div class="def">
+    <span class="term">出作<span class="yomi">でづくり</span></span>
+    <p>ある村の百姓が、自分の村の外（他村や原野・新開地）に出向いて耕作すること。新田開発では、本村の百姓が近隣の原野へ出作するかたちで開墾が進み、やがてそこが独立した新田村になる例があった。「入作（いりさく）」はその逆で、他村の者が入り込んで耕すこと。</p>
+  </div>
+  <div class="def">
+    <span class="term">人名地名<span class="yomi">じんめいちめい</span></span>
+    <p>人の名前（個人名・姓・通称）をもとにした地名。新田開発では、開発を出願・主導した人物や出資者の名を冠して村名・字名とすることがあり、「源平新田」「太郎馬新田」「宇兵衛新田」のような「人名＋新田」はその典型と解釈される。</p>
+  </div>
+  <p>これらの語を踏まえると、「新田」地名は単なる呼び名ではなく、<strong>「いつごろ・どんな土地を・誰が開いたか」という土地の履歴</strong>を縮めて残したものだといえる。地名のなかでも、由来が比較的たどりやすい部類に入る。</p>
+
+  <h2>なぜ江戸時代に新田が増えたのか</h2>
+  <p>新田開発が江戸時代に大きく進んだ背景には、社会の安定と、土地を石高で把握する幕藩体制のしくみがあった。</p>
+  <p><strong>事実として</strong>、戦乱の世が終わって治安が安定すると、各地で人口が増え、耕地への需要が高まった。同時に、治水技術や用水路の整備が進み、それまで手のつけられなかった河原や低湿地、原野を田に変えることが可能になった。年貢を石高で取る幕府や藩にとって、新田を増やすことは収入の増加に直結したため、開発はしばしば奨励された。</p>
+  <p>開発の担い手はさまざまだった。村ぐるみで近くの原野を開く「村請新田」、町人が資金を投じて開く「町人請負新田」、代官や藩が主導する開発などがあり、地域や時期によって形が異なる。<strong>解釈になるが</strong>、天竜川という大河の流域である磐田周辺では、川がもたらす広い氾濫原や中州・川沿いの低地が、新田開発の主要な舞台になったと考えられる。川は田を流す脅威であると同時に、新しい土地を生み出す存在でもあった。</p>
+  <div class="tablewrap">
+    <table class="kx">
+      <caption>表1：新田開発に関わる主な用語・開発の種類</caption>
+      <thead><tr><th>用語・種類</th><th>意味・特徴</th></tr></thead>
+      <tbody>
+        <tr><th>村請新田<br>（むらうけしんでん）</th><td>本村が主体となって近隣の原野などを開いた新田。本村の延長として成立し、地名も「本村名＋新田」になりやすい。</td></tr>
+        <tr><th>町人請負新田<br>（ちょうにんうけおいしんでん）</th><td>町人など有力者が資金を出して開発した新田。出資・出願した人物の名を冠することがあり、「人名＋新田」が生まれる一因と解釈される。</td></tr>
+        <tr><th>切添新田<br>（きりぞえしんでん）</th><td>既存の田畑のへりを少しずつ開き広げた、比較的小規模な新開地。</td></tr>
+        <tr><th>出作・入作<br>（でづくり・いりさく）</th><td>村の外へ出て耕す／村の外から入って耕すこと。新田の耕作関係や、村境をまたぐ土地の利用を示す。</td></tr>
+        <tr><th>表高・実高<br>（おもてだか・じつだか）</th><td>表向きの石高と、新田高などを含む実際に近い石高。新田の増加は実高を押し上げた。</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="pull">
+    <p>新田は、村の「ふち」で生まれる。本村の縁、川の縁、台地の縁――地名に「新田」とあれば、そこはかつて土地の境であり、人が土地を押し広げた最前線だった。</p>
+  </div>
+
+  <h2>磐田周辺の「新田」地名を読む</h2>
+  <p>磐田とその周辺には、「新田」を含む地名が複数残る。下の表は、代表的なものとその推定される由来、現在のおおよその所在を整理したものである。<strong>ここで重要なのは</strong>、由来欄はあくまで「新田」という語が示す一般的な成り立ちにもとづく推定であり、個々の人名の特定や開発年の断定ではない、という点である。</p>
+  <div class="tablewrap">
+    <table class="kx">
+      <caption>表2：磐田周辺の主な「新田」地名（地名・推定由来・現在の所在）</caption>
+      <thead><tr><th>地名</th><th>推定される由来（一般的な成り立ち）</th><th>現在のおおよその所在</th></tr></thead>
+      <tbody>
+        <tr><th>寺谷新田<br>（てらやしんでん）</th><td>本村「寺谷」のはずれを開いてできた新田と考えられる。台地のへりに位置する。</td><td>磐田市寺谷新田（岩田地区）。「寺谷」と隣り合う。</td></tr>
+        <tr><th>源平新田<br>（げんぺいしんでん）</th><td>「源平」という語を冠した新田。人名・通称に由来する人名地名と解釈されることが多いが、由来は確実でない。</td><td>磐田市源平新田（天竜川流域・旧豊田地区側）。</td></tr>
+        <tr><th>太郎馬新田<br>（たろうましんでん）</th><td>「太郎馬」という人名・通称を冠した人名地名と考えられる新田。</td><td>磐田市太郎馬新田（天竜川流域）。</td></tr>
+        <tr><th>宇兵衛新田<br>（うへえしんでん）</th><td>「宇兵衛」という人名を冠した人名地名と考えられる新田。開発を主導した人物名に由来する可能性がある。</td><td>磐田市宇兵衛新田（天竜川流域）。</td></tr>
+        <tr><th>○○新田（一般）</th><td>本村名や開発者名を冠した新開地。本村と対をなす場合が多い。</td><td>市内・近隣に複数。字名として残るものもある。</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>解釈になるが</strong>、この表からは二つの型が読み取れる。ひとつは<strong>「本村名＋新田」型</strong>で、寺谷新田のように、近くにある古い村の名をそのまま冠する。これは本村が主体となって周辺を開いた村請新田にふさわしい命名である。もうひとつは<strong>「人名＋新田」型</strong>で、源平・太郎馬・宇兵衛のように、人の名らしき語を冠する。こちらは開発を出願・主導した個人や出資者の名を残したものと解釈されることが多い。</p>
+  <p>ただし、<strong>これは推測の域を出ないが</strong>、「源平」のように人名とも、別の由来（地形・古い呼称など）とも解しうる語もある。地名の由来は一つに定まらないことが多く、ある語が確実に特定の開発者を指すと断じるには、開発願や検地帳といった一次史料の裏づけが要る。本記事では、由来の「型」を示すにとどめ、個々の人物比定には踏み込まない。</p>
+
+  <figure class="fig">
+    <svg viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="新田地名の二つの型を示す図。本村名を冠する型と、人名を冠する型に分かれる">
+      <rect width="760" height="220" class="s-paper"></rect>
+      <text x="380" y="34" text-anchor="middle" class="s-ink" font-size="15" font-family="'Shippori Mincho',serif" font-weight="700">「新田」地名の二つの型</text>
+      <rect x="60" y="64" width="300" height="120" rx="6" class="s-paper" stroke="#356f88" stroke-width="1.6"></rect>
+      <text x="210" y="92" text-anchor="middle" class="s-pine" font-size="14" font-family="'Shippori Mincho',serif" font-weight="700">本村名＋新田</text>
+      <text x="210" y="120" text-anchor="middle" class="s-ink" font-size="13">寺谷 ＋ 新田 → 寺谷新田</text>
+      <text x="210" y="148" text-anchor="middle" class="s-soft" font-size="11">古い村のはずれを開く（村請新田など）</text>
+      <text x="210" y="168" text-anchor="middle" class="s-soft" font-size="11">本村と対になりやすい</text>
+      <rect x="400" y="64" width="300" height="120" rx="6" class="s-paper" stroke="#2f7fa3" stroke-width="1.6"></rect>
+      <text x="550" y="92" text-anchor="middle" class="s-brown" font-size="14" font-family="'Shippori Mincho',serif" font-weight="700">人名＋新田</text>
+      <text x="550" y="120" text-anchor="middle" class="s-ink" font-size="13">宇兵衛 ＋ 新田 → 宇兵衛新田</text>
+      <text x="550" y="148" text-anchor="middle" class="s-soft" font-size="11">開発した人物・出資者の名を冠す</text>
+      <text x="550" y="168" text-anchor="middle" class="s-soft" font-size="11">（人物比定は要・一次史料）</text>
+    </svg>
+    <figcaption>図：「新田」地名は、本村名を冠する型と、人名を冠する型に大別できる（解釈）。</figcaption>
+  </figure>
+
+  <h2>新田はどこに開かれたか ── 天竜川と台地のへり</h2>
+  <p>新田が生まれる場所には、地形上の理由がある。磐田周辺では、大きく二つの「へり」が新田開発の舞台になったと考えられる。</p>
+  <h3>天竜川の流域</h3>
+  <p><strong>事実として</strong>、天竜川は流路を変えながら広い氾濫原と中州を残してきた。源平新田・太郎馬新田・宇兵衛新田など、天竜川寄りに点在する「人名＋新田」の多くは、こうした川沿いの低地・川成地を開いて生まれたと解釈される。川の近くは水が得やすく開発に向く一方、洪水のたびに田が流される危険もあり、開発と水害が背中合わせの土地だった。連載第五回で扱った池田・掛塚のように、天竜川は村を作り、また流す両面を持っていた。</p>
+  <h3>磐田原台地のへり</h3>
+  <p>もうひとつの舞台が、市域中央を南北にのびる磐田原台地のへり（縁辺部）である。寺谷新田のように、台地のすそや谷あいを開いた新田は、本村に隣接して成立した。<strong>解釈になるが</strong>、台地の上は水利が乏しく開発が難しいため、新田は台地そのものより、水の得やすいへりや谷沿いに帯状に生まれたと考えられる。匂坂・寺谷・岩田といった台地ぞいの村々の地形については、連載第七回でより詳しく扱う。</p>
+  <div class="def">
+    <span class="term">川成・川欠<span class="yomi">かわなり・かわかけ</span></span>
+    <p>洪水などで田畑が川敷になってしまうこと（川成）や、流れに削られて失われること（川欠）。天竜川流域の新田は、開発と川成・川欠を繰り返しながら維持された。年貢の減免や境界の変更がしばしば問題になった。</p>
+  </div>
+
+  <h2>新田高は帳面にどう書かれたか</h2>
+  <p>新田の存在は、地名だけでなく、村の「公式の大きさ」を記録した帳面にも反映された。連載第一回で扱った三つの村高帳のうち、新田の扱いには時代差がある。</p>
+  <div class="tablewrap">
+    <table class="kx">
+      <caption>表3：村高帳における新田高の扱い</caption>
+      <thead><tr><th>帳面</th><th>作成時期</th><th>新田高の扱い</th></tr></thead>
+      <tbody>
+        <tr><th>元禄郷帳<br>（元禄高帳）</th><td>元禄10年（1697）命〜元禄15年頃</td><td>表向きの石高（表高）が中心。この時点で把握された新田は記されるが、以後に開かれた新田は含まれない。</td></tr>
+        <tr><th>天保郷帳</th><td>天保2〜5年（1831〜34）</td><td>幕府勘定所が直接作成し、<strong>新田高を含む、より実情に近い石高（実高）</strong>を記載。元禄以降に開発された新田が高に反映された。</td></tr>
+        <tr><th>旧高旧領取調帳</th><td>明治初期</td><td>江戸末期の村名・旧高・旧領を記録。独立した「○○新田」が一個の村・地区として立項される例がある。</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>解釈になるが</strong>、ある地名が元禄郷帳には見えず、天保郷帳や旧高旧領取調帳に現れる場合、その新田は元禄と天保のあいだ（おおむね十八世紀）に開発・独立した可能性が高い。逆に、早くから帳面に村として立っていれば、開発はそれ以前にさかのぼると考えられる。<strong>ただしこれは一般的な読み方であり</strong>、磐田周辺の個々の新田がどの帳面に初めて現れるかは、現物の帳面を突き合わせて確認する必要がある。本記事では原則を示すにとどめる。</p>
+  <p>もう一点、注意したいのは「新田」が必ずしも独立村にならなかった点である。本村に付属する「枝郷（えだごう）」や、本村内の字（あざ）として残ったものもある。地名としては残っても、行政上は本村の一部だった例があり、現在の住所表記がそのまま当時の村の単位を表すとは限らない。</p>
+
+  <h2>「事実・解釈・推測」を分けて読む</h2>
+  <p>「新田」地名は由来をたどりやすい一方で、個々の開発者・開発年の特定には慎重さが要る。本記事の立場を整理しておく。</p>
+  <div class="summary">
+    <p class="sh">三つの区別（本記事の場合）</p>
+    <ul>
+      <li><strong>事実</strong>：「新田」が江戸期の新田開発に由来する地名・区分であること、磐田周辺に寺谷新田・源平新田・太郎馬新田・宇兵衛新田などの地名が現存すること、天保郷帳が新田高を含むこと。</li>
+      <li><strong>解釈</strong>：「本村名＋新田」と「人名＋新田」という二つの型、天竜川流域と台地のへりが開発の舞台だったという見立て。事実にもとづく読み。</li>
+      <li><strong>推測</strong>：個々の新田を開いた具体的な人物名や正確な開発年、「源平」などの語が人名か別の由来かの判断。一次史料（開発願・検地帳・古地図）による裏づけを要する。</li>
+    </ul>
+  </div>
+  <p>古い土地ほど、地名・地番・境界は当時の事情を引きずっている。新田由来の土地では、川沿いゆえに筆界（境界）が入り組んでいたり、本村と入り組んだ飛び地が残っていたりすることがあり、相続や空き家の整理で土地の範囲を確かめる際に、この成り立ちが手がかりになる場合がある。</p>
+
+  <div class="faq">
+    <h2>よくある疑問（FAQ）</h2>
+    <div class="faq-item">
+      <div class="faq-q"><span class="qb">Q</span>そもそも「新田」とは何ですか。</div>
+      <p class="faq-a"><strong>江戸時代に新しく開かれた田、またはその田を中心にできた村のことです。</strong>古くからの村（本村）に対する言葉で、河原・原野・低湿地などを開いて生まれました。地名として「○○新田」「人名＋新田」の形で各地に残っています。</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span class="qb">Q</span>「源平新田」「宇兵衛新田」のように、人名がつくのはなぜですか。</div>
+      <p class="faq-a"><strong>開発を主導した人物や出資者の名を冠したと解釈されることが多いです。</strong>町人や有力者が資金を出して開いた新田では、その人の名を村名・字名に残す例がありました。ただし、個々の人名が確実に特定の人物を指すかどうかは、開発願や検地帳などの一次史料で確かめる必要があり、断定はできません。</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span class="qb">Q</span>寺谷新田は、いまどこにありますか。</div>
+      <p class="faq-a"><strong>磐田市の岩田地区にあります。</strong>古くからの村「寺谷」と隣り合う場所で、磐田原台地のへりに位置します。「寺谷」と「寺谷新田」が対になっていることが、本村のはずれを開いて新田が生まれた成り立ちをよく示しています。匂坂・寺谷・岩田の地形は連載第七回でも扱います。</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span class="qb">Q</span>新田由来の土地は、境界や水利に特徴がありますか。</div>
+      <p class="faq-a"><strong>ある場合があります。</strong>天竜川流域の新田は、洪水で田が川になったり（川成）流されたり（川欠）を繰り返したため、境界が入り組んでいたり、本村との飛び地が残っていたりすることがあります。また、用水路でつながる水利の単位が、村の境界と一致しないこともあります。これらは古地図や旧版地形図で確認できる場合があります。</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span class="qb">Q</span>「○○新田」は、必ず独立した村だったのですか。</div>
+      <p class="faq-a"><strong>そうとは限りません。</strong>独立した一村になったものもあれば、本村に付属する枝郷や、本村内の字（あざ）として残ったものもあります。地名として残っていても、当時の行政上は本村の一部だった例があるため、現在の住所表記がそのまま江戸時代の村の単位を表すとは限りません。</p>
+    </div>
+  </div>
+
+  <div class="memo">
+    <h3>もっと知るための手がかり</h3>
+    <dl>
+      <dt>調べる場所</dt><dd>磐田市立図書館（『磐田市誌』、角川『日本地名大辞典22 静岡県』、平凡社『日本歴史地名大系』で「○○新田」の項を引ける）。</dd>
+      <dt>地図で見る</dt><dd>国土地理院の旧版地形図・空中写真で、新田の位置や天竜川の旧流路、本村との関係を現在と重ねられる。</dd>
+      <dt>帳面で見る</dt><dd>元禄郷帳・天保郷帳・旧高旧領取調帳に「○○新田」が立項されるかを確かめると、開発のおおよその時期がしぼれる。</dd>
+      <dt>関連記事</dt><dd><a href="/c017.html">第一回・村から町へ（村高帳）</a>／<a href="/s001.html">第五回・天竜川がつくった村</a>／<a href="/k001.html">第七回・匂坂・寺谷・岩田</a>／<a href="/c009.html">磐田の地名</a>。</dd>
+    </dl>
+  </div>
+</article>
+
+<div class="sources">
+  <h3>主な参考</h3>
+  <ul>
+    <li>磐田市公式ウェブサイト（地区・町名一覧、文化財・地域沿革に関する解説ページ）</li>
+    <li>ウィキペディア「新田開発」「新田」「磐田市」（沿革・町名・現行地名）</li>
+    <li>コトバンク（『日本大百科全書』『国史大辞典』等の「新田」「新田開発」「出作」項）</li>
+    <li>国立公文書館デジタルアーカイブ「元禄郷帳」「天保郷帳」</li>
+    <li>国立歴史民俗博物館「旧高旧領取調帳データベース」概要説明</li>
+    <li>角川『日本地名大辞典22 静岡県』／平凡社『日本歴史地名大系』（磐田市立図書館で閲覧可）</li>
+    <li>国土地理院 旧版地形図・空中写真（天竜川旧流路・新田の位置の確認）</li>
+  </ul>
+</div>
+
+<div class="article-nav">
+  <a class="primary" href="/c014.html">連載の目次へ</a>
+  <a class="ghost" href="/s001.html">第五回 天竜川がつくった村</a>
+  <a class="ghost" href="/k001.html">第七回 匂坂・寺谷・岩田</a>
+  <a class="ghost" href="/c009.html">磐田の地名をたどる</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "「新田」と名のつく土地 ── 江戸の開発が刻んだ磐田の地名",
+  "description": "寺谷新田・源平新田・太郎馬新田・宇兵衛新田など「新田」「人名＋新田」の地名を、江戸の新田開発と用語の定義、一覧表で解説する。",
+  "image": "https://iwata-monogatari.pages.dev/hero-mitsuke.jpg",
+  "inLanguage": "ja",
+  "articleSection": "まちの成り立ち",
+  "keywords": "新田, 新田開発, 寺谷新田, 源平新田, 太郎馬新田, 宇兵衛新田, 磐田 地名, 人名地名, 出作, 天保郷帳, 天竜川, 磐田原台地",
+  "isPartOf": {"@type": "WebSite", "name": "磐田物語", "url": "https://iwata-monogatari.pages.dev/"},
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://iwata-monogatari.pages.dev/t007.html"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "そもそも「新田」とは何ですか。", "acceptedAnswer": {"@type": "Answer", "text": "江戸時代に新しく開かれた田、またはその田を中心にできた村のことです。古くからの村（本村）に対する言葉で、河原・原野・低湿地などを開いて生まれ、「○○新田」「人名＋新田」の形で各地に地名が残ります。"}},
+    {"@type": "Question", "name": "源平新田や宇兵衛新田のように人名がつくのはなぜですか。", "acceptedAnswer": {"@type": "Answer", "text": "開発を主導した人物や出資者の名を冠したと解釈されることが多いです。ただし個々の人名が確実に特定の人物を指すかは、開発願や検地帳などの一次史料による裏づけが必要で、断定はできません。"}},
+    {"@type": "Question", "name": "寺谷新田はいまどこにありますか。", "acceptedAnswer": {"@type": "Answer", "text": "磐田市の岩田地区にあり、古くからの村「寺谷」と隣り合います。磐田原台地のへりに位置し、本村のはずれを開いて新田が生まれた成り立ちをよく示しています。"}},
+    {"@type": "Question", "name": "新田由来の土地は境界や水利に特徴がありますか。", "acceptedAnswer": {"@type": "Answer", "text": "天竜川流域の新田は洪水で川成・川欠を繰り返したため、境界が入り組んでいたり本村との飛び地が残っていたりする場合があります。用水でつながる水利の単位が村境と一致しないこともあります。"}},
+    {"@type": "Question", "name": "「○○新田」は必ず独立した村だったのですか。", "acceptedAnswer": {"@type": "Answer", "text": "そうとは限りません。独立した一村になったものもあれば、本村に付属する枝郷や、本村内の字として残ったものもあります。現在の住所表記が江戸時代の村の単位をそのまま表すとは限りません。"}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "磐田物語", "item": "https://iwata-monogatari.pages.dev/"},
+    {"@type": "ListItem", "position": 2, "name": "まちの成り立ち", "item": "https://iwata-monogatari.pages.dev/c014.html"},
+    {"@type": "ListItem", "position": 3, "name": "「新田」と名のつく土地", "item": "https://iwata-monogatari.pages.dev/t007.html"}
+  ]
+}
+</script>
+
+
+
+<section class="article-policy">
+  <h2>この記事について</h2>
+  <dl>
+    <dt>著者</dt>
+    <dd>大石浩之（富士ヶ丘サービス株式会社 代表取締役／磐田物語 運営者）</dd>
+    <dt>参考資料</dt>
+    <dd>佐口行正氏所蔵史料、磐田市・静岡県等の公開資料、現地確認、郷土史関連資料を参考にしています。記事ごとに主要な参考資料がある場合は、個別に追記してください。</dd>
+    <dt>作成方針</dt>
+    <dd>本記事は、資料の文章をそのまま転載するのではなく、史実・地名・地理・時代背景を確認しながら、読みやすい地域史コンテンツとして再構成しています。誤りや補足情報がある場合は、運営者までお知らせください。</dd>
+  </dl>
+</section>
+
+<footer class="im-foot">
+<style>
+.im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+.im-foot *{box-sizing:border-box;}
+.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+.im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+.im-foot .im-brand .im-dot{color:#2f7fa3;}
+.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+.im-foot .im-links{width:100%;margin-top:6px;}
+.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+.im-foot .im-links li{font-size:13px;line-height:1.6;}
+.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+.im-foot .im-sns{width:100%;margin-top:20px;}
+.im-foot .im-icons{display:flex;gap:14px;}
+.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
+.im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
+.im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
+.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+</style>
+  <div class="im-inner">
+    <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
+      </ul>
+      <div class="im-sns">
+        <p class="im-lh">大石ひろゆきのSNS</p>
+        <div class="im-icons">
+          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.92-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://x.com/HiroyukiLawAka" target="_blank" rel="noopener" aria-label="X (旧Twitter)" title="X (旧Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+</body>
+</html>
