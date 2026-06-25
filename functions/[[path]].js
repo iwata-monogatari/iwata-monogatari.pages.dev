@@ -1,5 +1,6 @@
 const CLEAN_HTML_PAGES = new Set([
   "c004",
+  "c009",
   "c010",
   "c011",
   "c017",
