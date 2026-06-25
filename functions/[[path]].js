@@ -20,9 +20,7 @@ export async function onRequest(context) {
   const cleanPath = url.pathname.replace(/^\/+|\/+$/g, "");
 
   if (CLEAN_HTML_PAGES.has(cleanPath)) {
-    const assetUrl = new URL(`/${cleanPath}.html`, url);
-    const assetRequest = new Request(assetUrl.toString(), context.request);
-    return context.env.ASSETS.fetch(assetRequest);
+    return context.env.ASSETS.fetch(context.request);
   }
 
   return context.env.ASSETS.fetch(context.request);
