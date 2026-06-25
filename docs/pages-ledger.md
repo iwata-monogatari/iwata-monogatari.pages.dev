@@ -12,36 +12,18 @@
 | 01002 | nakaizumi | 中泉地区 | 01002-nakaizumi.html | assets/img/district-hero/01002-nakaizumi-hero.svg | ✅ 完成 |
 | 01003 | mikuriya | 御厨地区 | 01003-mikuriya.html | assets/img/district-hero/01003-mikuriya-hero.svg | ✅ 完成 |
 | 01004 | toyoda | 豊田地区 | 01004-toyoda.html | assets/img/district-hero/01004-toyoda-hero.svg | ✅ 完成 |
-| 01005 | nanbu | 南部地区 | 01005-nanbu.html | （予定） | ⏳ 未着手 |
-| 01006 | koyo | 向陽地区 | 01006-koyo.html | （予定） | ⏳ 未着手 |
-| 01007 | ryuyo | 竜洋地区 | 01007-ryuyo.html | （予定） | ⏳ 未着手 |
-| 01008 | fukude | 福田地区 | 01008-fukude.html | （予定） | ⏳ 未着手 |
-| 01009 | toyooka | 豊岡地区 | 01009-toyooka.html | （予定） | ⏳ 未着手 |
+| 01005 | nanbu | 南部地区 | 01005-nanbu.html | assets/img/district-hero/01005-nanbu-hero.svg | ✅ 完成 |
+| 01006 | koyo | 向陽地区 | 01006-koyo.html | assets/img/district-hero/01006-koyo-hero.svg | ✅ 完成 |
+| 01007 | ryuyo | 竜洋地区 | 01007-ryuyo.html | assets/img/district-hero/01007-ryuyo-hero.svg | ✅ 完成 |
+| 01008 | fukude | 福田地区 | 01008-fukude.html | assets/img/district-hero/01008-fukude-hero.svg | ✅ 完成（記事準備中） |
+| 01009 | toyooka | 豊岡地区 | 01009-toyooka.html | assets/img/district-hero/01009-toyooka-hero.svg | ✅ 完成（記事準備中） |
 
 ※ 福田の地区IDは必ず `fukude`（`fukuda` にしない）。
 
 ## 見付地区（01001）に紐づく記事
 
-m018, m016, m017, m012, m019, m006, m010, m009, m015, m014, m013, m001〜m005, c020, c019（計18件）。
+m018, m016, m017, m012, m019, m006, m015, m014, m013, m001〜m005, c020, c019（計16件）。
 詳細・テーマ分類は `data/pages.json` を参照。
-
-### m009.html
-
-| ID | タイトル | 地区 | 分類 | 概要 | 状態 |
-|---|---|---|---|---|---|
-| m009 | 無形文化財としての継承 | 見付 | 見付天神裸祭 | 国指定重要無形民俗文化財としての評価、昭和期以降の変化、コロナ禍、担い手・安全・子どもへの継承活動を整理する記事 | 公開中 |
-
-- 改修内容：学術HTML化、ヒーロー図追加、文化財指定情報カード追加、継承年表追加、課題対応表追加、継承循環図追加、変えてよいもの・守るべきもの比較表追加、内部リンク整理、佐口関連表記統一
-- 参考資料：文化庁・文化遺産オンライン・芸術文化振興基金事例・谷部真吾氏研究・見付天神裸祭保存会・磐田市公開資料・佐口行正氏所蔵史料
-
-### m010.html
-
-| ID | タイトル | 地区 | 分類 | 概要 | 状態 |
-|---|---|---|---|---|---|
-| m010 | 悉平太郎伝説の考察 | 見付 | 見付天神裸祭 | 悉平太郎・早太郎・猿神退治譚を民俗学的に整理する記事 | 公開中 |
-
-- 改修内容：学術HTML化、ヒーロー図追加、悉平太郎・早太郎比較表追加、猿神退治譚の物語構造図追加、全国類型表追加、名称変遷年表追加、民俗学視点カード追加、内部リンク整理、佐口関連表記統一
-- 参考資料：大林太良・柳田國男・『磐田の民俗』・旧『磐田市誌』・駒ヶ根市／光前寺関連公開資料・磐田市公開資料・佐口行正氏所蔵史料
 
 ## 共通基盤ファイル
 
