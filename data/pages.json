@@ -40,7 +40,8 @@
       "no": "01004",
       "page": "01004-toyoda.html",
       "hero_image": "assets/img/district-hero/01004-toyoda-hero.svg",
-      "status": "pending"
+      "hero_alt": "豊田地区の天竜川・渡し・古墳・田園と集落の記憶を表した模式図",
+      "hero_caption": "豊田地区の記憶をたどる入口図"
     },
     {
       "district_id": "nanbu",
@@ -202,24 +203,6 @@
       "status": "published",
       "summary": "国の重要無形民俗文化財・見付天神裸祭の特集親ページ。",
       "parent": "01001-mitsuke.html"
-    },
-    {
-      "title": "悉平太郎伝説の考察",
-      "url": "m010.html",
-      "district": [
-        "mitsuke"
-      ],
-      "themes": [
-        "festival",
-        "shrine-temple",
-        "village-history"
-      ],
-      "content_type": "feature",
-      "published_at": "2026-06-25",
-      "date_provisional": true,
-      "status": "published",
-      "summary": "磐田市見付に伝わる霊犬・悉平太郎伝説を、信州光前寺の早太郎伝説や全国の猿神退治譚と比較し、民俗学と地域記憶の視点で読み解くページ。",
-      "parent": "m011.html"
     },
     {
       "title": "旧見付学校",
@@ -577,6 +560,143 @@
       "status": "published",
       "summary": "縄文の海と地形史から東貝塚・西貝塚の地名を読み解く。",
       "parent": "01003-mikuriya.html"
+    },
+    {
+      "title": "旧豊田町の地名と、土地の記憶",
+      "url": "t006.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "village-history",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-16",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "『豊田町地名地図』を歩き、旧豊田町の地名と土地の記憶をたどる。",
+      "parent": "01004-toyoda.html"
+    },
+    {
+      "title": "「新田」と名のつく土地 ── 江戸の開発が刻んだ地名",
+      "url": "t007.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory",
+        "road-traffic"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-15",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "江戸期の新田開発が刻んだ地名を読み解く。",
+      "parent": "01004-toyoda.html"
+    },
+    {
+      "title": "加茂・寺谷の歴史",
+      "url": "t005.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-14",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "遠江有数の農業地帯・加茂と寺谷の変遷。",
+      "parent": "01004-toyoda.html"
+    },
+    {
+      "title": "池田の渡し ── 天竜川をわたる東海道",
+      "url": "t004.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "road-traffic",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-13",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "天竜川を舟でわたった東海道の渡し場。",
+      "parent": "01004-toyoda.html"
+    },
+    {
+      "title": "東海道新田の歴史",
+      "url": "t008.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "road-traffic"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-12",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "東海道沿いに開かれた新田の歩み。",
+      "parent": "01004-toyoda.html"
+    },
+    {
+      "title": "一言坂の戦いと、本多忠勝の殿",
+      "url": "t003.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-11",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "一言坂に刻まれた戦国の殿戦の記憶。",
+      "parent": "01004-toyoda.html"
+    },
+    {
+      "title": "行興寺と熊野（ゆや）の長藤",
+      "url": "t002.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-10",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "熊野御前ゆかりの行興寺と国天然記念物の長藤。",
+      "parent": "01004-toyoda.html"
+    },
+    {
+      "title": "銚子塚古墳と、遠江を治めた王の眠り",
+      "url": "t001.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "land-memory",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-09",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "県内有数の前方後円墳・銚子塚古墳。",
+      "parent": "01004-toyoda.html"
     }
   ]
 }
