@@ -30,7 +30,8 @@
       "no": "01003",
       "page": "01003-mikuriya.html",
       "hero_image": "assets/img/district-hero/01003-mikuriya-hero.svg",
-      "status": "pending"
+      "hero_alt": "御厨地区の田園・集落・神明宮（伊勢神宮領の名残）の記憶を表した模式図",
+      "hero_caption": "御厨地区の記憶をたどる入口図"
     },
     {
       "district_id": "toyoda",
@@ -507,6 +508,57 @@
       "status": "published",
       "summary": "奈良時代に置かれた遠州国分寺の特集。",
       "parent": "01002-nakaizumi.html"
+    },
+    {
+      "title": "鎌田御厨 ── 伊勢神宮領だった村の名残",
+      "url": "u002.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "place-name",
+        "village-history",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-15",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "「御厨」の地名のなりたち。伊勢神宮領だった鎌田御厨。",
+      "parent": "01003-mikuriya.html"
+    },
+    {
+      "title": "鎌田神明宮 ── 遠州のお伊勢さま",
+      "url": "u003.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-14",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "遠州のお伊勢さまと親しまれる鎌田神明宮。",
+      "parent": "01003-mikuriya.html"
+    },
+    {
+      "title": "「貝塚」という地名 ── 西貝塚・東貝塚と消えた海岸線",
+      "url": "u001.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-13",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "縄文の海と地形史から東貝塚・西貝塚の地名を読み解く。",
+      "parent": "01003-mikuriya.html"
     }
   ]
 }
