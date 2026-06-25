@@ -11,7 +11,7 @@
 | 01001 | mitsuke | 見付地区 | 01001-mitsuke.html | assets/img/district-hero/01001-mitsuke-hero.svg | ✅ 完成（基盤プレート） |
 | 01002 | nakaizumi | 中泉地区 | 01002-nakaizumi.html | assets/img/district-hero/01002-nakaizumi-hero.svg | ✅ 完成 |
 | 01003 | mikuriya | 御厨地区 | 01003-mikuriya.html | assets/img/district-hero/01003-mikuriya-hero.svg | ✅ 完成 |
-| 01004 | toyoda | 豊田地区 | 01004-toyoda.html | （予定） | ⏳ 未着手 |
+| 01004 | toyoda | 豊田地区 | 01004-toyoda.html | assets/img/district-hero/01004-toyoda-hero.svg | ✅ 完成 |
 | 01005 | nanbu | 南部地区 | 01005-nanbu.html | （予定） | ⏳ 未着手 |
 | 01006 | koyo | 向陽地区 | 01006-koyo.html | （予定） | ⏳ 未着手 |
 | 01007 | ryuyo | 竜洋地区 | 01007-ryuyo.html | （予定） | ⏳ 未着手 |
@@ -22,17 +22,8 @@
 
 ## 見付地区（01001）に紐づく記事
 
-m018, m016, m017, m012, m019, m006, m010, m015, m014, m013, m001〜m005, c020, c019（計17件）。
+m018, m016, m017, m012, m019, m006, m015, m014, m013, m001〜m005, c020, c019（計16件）。
 詳細・テーマ分類は `data/pages.json` を参照。
-
-### m010.html
-
-| ID | タイトル | 地区 | 分類 | 概要 | 状態 |
-|---|---|---|---|---|---|
-| m010 | 悉平太郎伝説の考察 | 見付 | 見付天神裸祭 | 悉平太郎・早太郎・猿神退治譚を民俗学的に整理する記事 | 公開中 |
-
-- 改修内容：学術HTML化、ヒーロー図追加、悉平太郎・早太郎比較表追加、猿神退治譚の物語構造図追加、全国類型表追加、名称変遷年表追加、民俗学視点カード追加、内部リンク整理、佐口関連表記統一
-- 参考資料：大林太良・柳田國男・『磐田の民俗』・旧『磐田市誌』・駒ヶ根市／光前寺関連公開資料・磐田市公開資料・佐口行正氏所蔵史料
 
 ## 共通基盤ファイル
 
