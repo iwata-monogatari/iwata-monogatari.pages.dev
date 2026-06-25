@@ -379,93 +379,359 @@
     </nav>
   </main>
 
-  <!-- COMMON-LEFT-SIDEBAR START
-       index.html の左側カラムと内容・順番・リンク・表記を完全一致させる。
-       編集時は index.html の同名ブロックを正とし、9地区へ同じ内容を反映する。 -->
-  <aside class="district-aside" aria-label="サイト共通の案内">
-    <div class="side-block">
-      <h3>佐口行正氏資料室</h3>
-      <p style="font-size:13px;color:var(--ink-soft);margin:0 0 12px;">引札・浮世絵・古地図・絵葉書など約336点を公開。</p>
-      <ul class="side-list">
-        <li><a href="/c020.html">史料本編</a></li>
-        <li><a href="/c019.html">目録</a></li>
-      </ul>
-    </div>
-    <div class="side-block">
-      <h3>連載で読む磐田</h3>
-      <ul class="side-list" style="flex-direction:column;">
-        <li><a href="/m001.html">見付古地図散歩（全5回）</a></li>
-        <li><a href="/c014.html">まちの成り立ち</a></li>
-        <li><a href="/c018.html">磐田文化財研究ノート</a></li>
-        <li><a href="/t006.html">旧豊田町を歩く</a></li>
-        <li><a href="/c020.html">古写真で見る磐田</a></li>
-      </ul>
-    </div>
-    <div class="side-block">
-      <h3>地名とことば</h3>
-      <ul class="side-list">
-        <li><a href="/c009.html">地名の由来</a></li>
-        <li><a href="/c006.html">遠州弁辞典</a></li>
-        <li><a href="/c008.html">遠州弁変換</a></li>
-      </ul>
-    </div>
+  <!-- LEFT-NAV (index aside#area を踏襲) START -->
+    <aside id="area" class="district-aside" aria-label="磐田物語ナビゲーション">
+      <div class="side-row">
+      <!-- 磐田物語 宣言（憲章）バナー -->
+      <div class="side-block">
+        <a href="/c001.html" style="position:relative;display:block;padding:16px 18px;border-radius:14px;background:linear-gradient(135deg,#f3dea6 0%,#caa14f 24%,#a87c2e 52%,#e7cd7e 72%,#b8893a 100%);text-decoration:none;box-shadow:0 8px 20px rgba(120,86,24,0.28);overflow:hidden;">
+          <span style="display:block;background:linear-gradient(180deg,#fffefb 0%,#fffaf0 100%);border:1px solid rgba(138,101,38,0.55);border-radius:9px;padding:14px 16px;box-shadow:inset 0 0 0 1px rgba(255,255,255,0.7);">
+            <span style="display:block;font-size:0.72rem;letter-spacing:0.28em;color:#8a6526;font-weight:700;margin-bottom:6px;">磐田物語 宣言</span>
+            <strong style="display:block;font-family:'Shippori Mincho',serif;font-size:1.15rem;letter-spacing:0.06em;color:#3c2c10;margin-bottom:6px;">憲章・基本理念・行動指針</strong>
+            <span style="display:block;font-size:0.85rem;line-height:1.65;color:#5b4a2a;">磐田の記憶を収集・整理・公開し、未来へ継承していく。その理念を掲げます。</span>
+          </span>
+        </a>
+      </div>
 
-    <section class="sidebar-card public-links-card">
-      <h2>遠州地域の公的資料</h2>
-      <p class="sidebar-card-lead">歴史・文化財・地図・防災・都市計画を確認するための公的情報です。</p>
-      <div class="public-link-group">
-        <h3>自治体・文化財</h3>
-        <ul class="compact-link-list">
-          <li><a href="https://www.city.iwata.shizuoka.jp/" target="_blank" rel="noopener">磐田市公式サイト</a></li>
-          <li><a href="https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/index.html" target="_blank" rel="noopener">磐田市 文化財</a></li>
-          <li><a href="https://www.city.fukuroi.shizuoka.jp/" target="_blank" rel="noopener">袋井市公式サイト</a></li>
-          <li><a href="https://www.city.fukuroi.shizuoka.jp/kanko_bunka/bunka/bunkazai/index.html" target="_blank" rel="noopener">袋井市 文化財</a></li>
-          <li><a href="https://www.city.kakegawa.shizuoka.jp/" target="_blank" rel="noopener">掛川市公式サイト</a></li>
-          <li><a href="https://www.city.kakegawa.shizuoka.jp/gyosei/kankobunka/geijyutsu/bunkazai/" target="_blank" rel="noopener">掛川市 文化財</a></li>
-          <li><a href="https://www.town.morimachi.shizuoka.jp/" target="_blank" rel="noopener">森町公式サイト</a></li>
-          <li><a href="https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/shakaikyoikuka/bunkashinkogakari/1/1096.html" target="_blank" rel="noopener">森町 文化財</a></li>
-          <li><a href="https://www.city.hamamatsu.shizuoka.jp/" target="_blank" rel="noopener">浜松市公式サイト</a></li>
-          <li><a href="https://www.city.hamamatsu.shizuoka.jp/bunkazai/shitei/tenryu/list.html" target="_blank" rel="noopener">浜松市 天竜区の文化財</a></li>
+      <!-- みんなの掲示板バナー -->
+      <div class="side-block">
+        <a href="/bbs.html" style="display:block;padding:14px 16px;border:1px solid #d8c7a3;border-radius:14px;background:linear-gradient(180deg,#fffaf0 0%,#f6ead2 100%);color:#2b2118;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.06);">
+          <span style="display:block;font-size:0.8rem;margin-bottom:6px;opacity:0.8;">訪問記念にひとこと</span>
+          <strong style="display:block;font-size:1.1rem;margin-bottom:6px;color:#3a5874;">みんなの掲示板</strong>
+          <span style="display:block;font-size:0.9rem;line-height:1.6;">磐田物語を読んで思ったこと、昔の記憶をお寄せください。</span>
+        </a>
+      </div>
+
+      <div class="side-block">
+        <h3>佐口行正氏資料室</h3>
+        <p style="font-size:13px;color:var(--ink-soft);margin:0 0 12px;">引札・浮世絵・古地図・絵葉書など約336点を公開。</p>
+        <ul class="side-list">
+          <li><a href="/c020.html">史料本編</a></li>
+          <li><a href="/c019.html">目録</a></li>
         </ul>
       </div>
-      <div class="public-link-group">
-        <h3>地図・不動産調査</h3>
-        <ul class="compact-link-list">
-          <li><a href="https://maps.gsi.go.jp/" target="_blank" rel="noopener">国土地理院 地理院地図</a></li>
-          <li><a href="https://www.reinfolib.mlit.go.jp/" target="_blank" rel="noopener">国土交通省 不動産情報ライブラリ</a></li>
-          <li><a href="https://www.pref.shizuoka.jp/kankosports/bunkageijutsu/bunkazai/1002115/1020625.html" target="_blank" rel="noopener">静岡県 埋蔵文化財・遺跡確認情報</a></li>
+      <div class="side-block">
+        <h3>地名とことば</h3>
+        <ul class="side-list">
+          <li><a href="/c009.html">地名の由来</a></li>
+          <li><a href="/c006.html">遠州弁辞典</a></li>
+          <li><a href="/c008.html">遠州弁変換</a></li>
         </ul>
       </div>
-    </section>
 
-    <section class="sidebar-card archive-links-card">
-      <h2>調べものに役立つアーカイブ</h2>
-      <p class="sidebar-card-lead">古文書・古地図・浮世絵・文化財を、一次資料でたどるためのデジタルアーカイブです。</p>
-      <ul class="compact-link-list">
-        <li><a href="https://dl.ndl.go.jp/" target="_blank" rel="noopener">国立国会図書館 デジタルコレクション</a></li>
-        <li><a href="https://jpsearch.go.jp/" target="_blank" rel="noopener">ジャパンサーチ（分野横断統合検索）</a></li>
-        <li><a href="https://bunka.nii.ac.jp/" target="_blank" rel="noopener">文化遺産オンライン</a></li>
-        <li><a href="https://colbase.nich.go.jp/" target="_blank" rel="noopener">ColBase（国立文化財機構 収蔵品検索）</a></li>
-        <li><a href="https://www.digital.archives.go.jp/" target="_blank" rel="noopener">国立公文書館 デジタルアーカイブ</a></li>
-        <li><a href="https://www.tosyokan.pref.shizuoka.jp/" target="_blank" rel="noopener">静岡県立中央図書館（地域資料・歴史文化）</a></li>
-      </ul>
-    </section>
+      <!-- 磐田物語の9地区分類から探す -->
+      <div class="side-block area-classification-links">
+        <h3>磐田物語の９地区分類から探す</h3>
+        <nav class="area-link-list" aria-label="磐田物語の9地区分類" style="display:flex;flex-direction:column;gap:2px;margin-top:2px;">
+          <a href="/01001-mitsuke.html" style="display:block;padding:7px 10px;border-radius:8px;text-decoration:none;color:#1f4f6f;font-size:0.98rem;">見付<span style="color:#8a9aa4;font-size:0.8rem;margin-left:8px;">みつけ</span></a>
+          <a href="/01002-nakaizumi.html" style="display:block;padding:7px 10px;border-radius:8px;text-decoration:none;color:#1f4f6f;font-size:0.98rem;">中泉<span style="color:#8a9aa4;font-size:0.8rem;margin-left:8px;">なかいずみ</span></a>
+          <a href="/01003-mikuriya.html" style="display:block;padding:7px 10px;border-radius:8px;text-decoration:none;color:#1f4f6f;font-size:0.98rem;">御厨<span style="color:#8a9aa4;font-size:0.8rem;margin-left:8px;">みくりや</span></a>
+          <a href="/01004-toyoda.html" style="display:block;padding:7px 10px;border-radius:8px;text-decoration:none;color:#1f4f6f;font-size:0.98rem;">豊田<span style="color:#8a9aa4;font-size:0.8rem;margin-left:8px;">とよだ</span></a>
+          <a href="/01005-nanbu.html" style="display:block;padding:7px 10px;border-radius:8px;text-decoration:none;color:#1f4f6f;font-size:0.98rem;">南部<span style="color:#8a9aa4;font-size:0.8rem;margin-left:8px;">なんぶ</span></a>
+          <a href="/01006-koyo.html" style="display:block;padding:7px 10px;border-radius:8px;text-decoration:none;color:#1f4f6f;font-size:0.98rem;">向陽<span style="color:#8a9aa4;font-size:0.8rem;margin-left:8px;">こうよう</span></a>
+          <a href="/01007-ryuyo.html" style="display:block;padding:7px 10px;border-radius:8px;text-decoration:none;color:#1f4f6f;font-size:0.98rem;">竜洋<span style="color:#8a9aa4;font-size:0.8rem;margin-left:8px;">りゅうよう</span></a>
+          <a href="/01008-fukude.html" style="display:block;padding:7px 10px;border-radius:8px;text-decoration:none;color:#1f4f6f;font-size:0.98rem;">福田<span style="color:#8a9aa4;font-size:0.8rem;margin-left:8px;">ふくで</span></a>
+          <a href="/01009-toyooka.html" style="display:block;padding:7px 10px;border-radius:8px;text-decoration:none;color:#1f4f6f;font-size:0.98rem;">豊岡<span style="color:#8a9aa4;font-size:0.8rem;margin-left:8px;">とよおか</span></a>
+        </nav>
+      </div>
 
-    <section class="sidebar-card operator-guide-card">
-      <h2>運営者からのご案内</h2>
-      <a class="operator-banner" href="https://www.fujigaoka-service.info/fudosan" target="_blank" rel="noopener">
-        <span class="operator-banner-label">富士ヶ丘サービス</span>
-        <strong>地域の記憶と、家・土地のこれから</strong>
-        <span>磐田市・袋井市・掛川市・森町・浜松市天竜区の相続した実家、空き家、土地建物のご相談を承っています。</span>
+      <!-- 磐田物語の地域分類 バナー -->
+      <a href="/c002.html" class="side-block" aria-label="磐田物語の地域分類 ── 9つの地域とその成り立ちを見る" style="display:block;text-decoration:none;color:#3f2f1f;background:linear-gradient(135deg,#fffaf0 0%,#f4ead8 100%);border:1px solid rgba(120,90,50,0.25);">
+        <span style="display:inline-block;margin-bottom:6px;padding:2px 9px;border-radius:999px;background:rgba(120,90,50,0.12);font-size:0.78rem;font-weight:700;">地域分類でたどる</span>
+        <strong style="display:block;font-family:'Shippori Mincho',serif;line-height:1.45;font-size:1.02rem;color:#3a5874;">磐田物語の地域分類 ── 9つの地域</strong>
+        <small style="display:block;margin-top:6px;line-height:1.55;font-size:0.78rem;color:#6b5a44;">見付・中泉・御厨・豊田・南部・向陽・竜洋・福田・豊岡／明治と平成の旧町村でたどる</small>
       </a>
-      <ul class="operator-link-list">
-        <li><a href="https://www.fujigaoka-service.info/fudosan" target="_blank" rel="noopener">富士ヶ丘サービスの不動産相談</a></li>
-        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス公式サイト</a></li>
-        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">代表 大石浩之のnote</a></li>
-      </ul>
-    </section>
-  </aside>
-  <!-- COMMON-LEFT-SIDEBAR END -->
+                  <div class="side-block ooaza-search">
+        <h3 id="ooaza-search-title">地域（大字）から探す</h3>
+        <p class="ooaza-search-lead">お住まい・ゆかりのある地名から、磐田物語の地区別入口ページへ移動できます。下の50音（行）見出しを開くと、ほかの地名も探せます。</p>
+        <div class="ooaza-link-list">
+            <a href="/01004-toyoda.html">赤池</a>
+            <a href="/01003-mikuriya.html">安久路</a>
+            <a href="/01003-mikuriya.html">安久路一丁目</a>
+            <a href="/01003-mikuriya.html">安久路二丁目</a>
+            <a href="/01002-nakaizumi.html">旭ケ丘</a>
+            <a href="/01005-nanbu.html">新島</a>
+            <a href="/01003-mikuriya.html">新出</a>
+        </div>
+        <details class="ooaza-acc">
+          <summary>い〜お</summary>
+          <div class="ooaza-link-list">
+            <a href="/01008-fukude.html">一色</a>
+            <a href="/01002-nakaizumi.html">一言の一部（中泉）</a>
+            <a href="/01004-toyoda.html">一言の一部（豊田）</a>
+            <a href="/01009-toyooka.html">壱貫地</a>
+            <a href="/01009-toyooka.html">家田</a>
+            <a href="/01008-fukude.html">五十子</a>
+            <a href="/01001-mitsuke.html">今之浦</a>
+            <a href="/01001-mitsuke.html">今之浦一丁目</a>
+            <a href="/01001-mitsuke.html">今之浦二丁目</a>
+            <a href="/01001-mitsuke.html">今之浦三丁目</a>
+            <a href="/01001-mitsuke.html">今之浦四丁目</a>
+            <a href="/01001-mitsuke.html">今之浦五丁目</a>
+            <a href="/01006-koyo.html">岩井</a>
+            <a href="/01009-toyooka.html">岩室</a>
+            <a href="/01007-ryuyo.html">海老島</a>
+            <a href="/01004-toyoda.html">海老塚</a>
+            <a href="/01008-fukude.html">宇兵衛新田</a>
+            <a href="/01009-toyooka.html">上野部</a>
+            <a href="/01005-nanbu.html">上大之郷</a>
+            <a href="/01005-nanbu.html">上岡田</a>
+            <a href="/01009-toyooka.html">上神増</a>
+            <a href="/01004-toyoda.html">上新屋</a>
+            <a href="/01003-mikuriya.html">上南田</a>
+            <a href="/01004-toyoda.html">上万能</a>
+            <a href="/01004-toyoda.html">上本郷</a>
+            <a href="/01007-ryuyo.html">請負新田</a>
+            <a href="/01002-nakaizumi.html">大泉町</a>
+            <a href="/01006-koyo.html">大久保</a>
+            <a href="/01003-mikuriya.html">大立野</a>
+            <a href="/01009-toyooka.html">大当所</a>
+            <a href="/01007-ryuyo.html">大中瀬</a>
+            <a href="/01005-nanbu.html">大原の一部（旧磐田市側）</a>
+            <a href="/01008-fukude.html">大原の一部（旧福田町側）</a>
+            <a href="/01009-toyooka.html">大平</a>
+            <a href="/01007-ryuyo.html">岡</a>
+            <a href="/01005-nanbu.html">小島</a>
+            <a href="/01004-toyoda.html">小立野</a>
+          </div>
+        </details>
+        <details class="ooaza-acc">
+          <summary>か行</summary>
+          <div class="ooaza-link-list">
+            <a href="/01009-toyooka.html">掛下</a>
+            <a href="/01007-ryuyo.html">掛塚</a>
+            <a href="/01007-ryuyo.html">掛塚蟹町</a>
+            <a href="/01007-ryuyo.html">掛塚新町</a>
+            <a href="/01007-ryuyo.html">掛塚砂町</a>
+            <a href="/01007-ryuyo.html">掛塚大当町</a>
+            <a href="/01007-ryuyo.html">掛塚横町</a>
+            <a href="/01006-koyo.html">笠梅</a>
+            <a href="/01004-toyoda.html">加茂</a>
+            <a href="/01001-mitsuke.html">加茂川通</a>
+            <a href="/01001-mitsuke.html">河原町</a>
+            <a href="/01007-ryuyo.html">川袋</a>
+            <a href="/01004-toyoda.html">気子島</a>
+            <a href="/01005-nanbu.html">北島</a>
+            <a href="/01001-mitsuke.html">北見町</a>
+            <a href="/01005-nanbu.html">刑部島</a>
+            <a href="/01002-nakaizumi.html">国府台</a>
+            <a href="/01005-nanbu.html">草崎</a>
+            <a href="/01002-nakaizumi.html">久保町</a>
+            <a href="/01004-toyoda.html">源平新田</a>
+            <a href="/01009-toyooka.html">合代島</a>
+            <a href="/01001-mitsuke.html">幸町</a>
+            <a href="/01002-nakaizumi.html">御殿</a>
+            <a href="/01007-ryuyo.html">小中瀬</a>
+            <a href="/01007-ryuyo.html">駒場</a>
+            <a href="/01001-mitsuke.html">権現町</a>
+          </div>
+        </details>
+        <details class="ooaza-acc">
+          <summary>さ行</summary>
+          <div class="ooaza-link-list">
+            <a href="/01002-nakaizumi.html">栄町</a>
+            <a href="/01002-nakaizumi.html">坂上町</a>
+            <a href="/01005-nanbu.html">鮫島</a>
+            <a href="/01004-toyoda.html">笹原島</a>
+            <a href="/01002-nakaizumi.html">桜ケ丘</a>
+            <a href="/01009-toyooka.html">敷地</a>
+            <a href="/01006-koyo.html">篠原</a>
+            <a href="/01008-fukude.html">下太</a>
+            <a href="/01005-nanbu.html">下大之郷</a>
+            <a href="/01005-nanbu.html">下岡田</a>
+            <a href="/01009-toyooka.html">下神増</a>
+            <a href="/01009-toyooka.html">下野部</a>
+            <a href="/01004-toyoda.html">下本郷</a>
+            <a href="/01004-toyoda.html">下万能</a>
+            <a href="/01001-mitsuke.html">宿町</a>
+            <a href="/01007-ryuyo.html">十郎島</a>
+            <a href="/01003-mikuriya.html">城之崎</a>
+            <a href="/01003-mikuriya.html">城之崎一丁目</a>
+            <a href="/01003-mikuriya.html">城之崎二丁目</a>
+            <a href="/01003-mikuriya.html">城之崎三丁目</a>
+            <a href="/01003-mikuriya.html">城之崎四丁目</a>
+            <a href="/01007-ryuyo.html">白羽</a>
+            <a href="/01005-nanbu.html">白拍子</a>
+            <a href="/01009-toyooka.html">新開</a>
+            <a href="/01003-mikuriya.html">新貝</a>
+            <a href="/01003-mikuriya.html">新貝一丁目</a>
+            <a href="/01003-mikuriya.html">新貝二丁目</a>
+            <a href="/01003-mikuriya.html">新貝三丁目</a>
+            <a href="/01001-mitsuke.html">新通町</a>
+            <a href="/01007-ryuyo.html">須恵新田</a>
+            <a href="/01001-mitsuke.html">住吉町</a>
+            <a href="/01008-fukude.html">清庵新田</a>
+            <a href="/01001-mitsuke.html">清水町</a>
+            <a href="/01005-nanbu.html">千手堂</a>
+            <a href="/01009-toyooka.html">惣兵衛下新田</a>
+          </div>
+        </details>
+        <details class="ooaza-acc">
+          <summary>た行</summary>
+          <div class="ooaza-link-list">
+            <a href="/01007-ryuyo.html">高木</a>
+            <a href="/01004-toyoda.html">高見丘</a>
+            <a href="/01004-toyoda.html">立野</a>
+            <a href="/01003-mikuriya.html">玉越</a>
+            <a href="/01008-fukude.html">太郎馬新田</a>
+            <a href="/01002-nakaizumi.html">田町</a>
+            <a href="/01002-nakaizumi.html">中央町</a>
+            <a href="/01001-mitsuke.html">天王町</a>
+            <a href="/01005-nanbu.html">天龍</a>
+            <a href="/01006-koyo.html">寺谷</a>
+            <a href="/01006-koyo.html">寺谷新田</a>
+            <a href="/01003-mikuriya.html">東新町</a>
+            <a href="/01003-mikuriya.html">東新町一丁目</a>
+            <a href="/01003-mikuriya.html">東新町二丁目</a>
+            <a href="/01003-mikuriya.html">東新町三丁目</a>
+            <a href="/01004-toyoda.html">東名</a>
+            <a href="/01004-toyoda.html">富丘</a>
+            <a href="/01004-toyoda.html">富里</a>
+            <a href="/01007-ryuyo.html">豊岡</a>
+            <a href="/01007-ryuyo.html">豊岡内名</a>
+            <a href="/01007-ryuyo.html">豊岡江口</a>
+            <a href="/01007-ryuyo.html">豊岡金洗</a>
+            <a href="/01007-ryuyo.html">豊岡敷地</a>
+            <a href="/01007-ryuyo.html">豊岡西堀</a>
+            <a href="/01007-ryuyo.html">豊岡吹上</a>
+            <a href="/01005-nanbu.html">豊島</a>
+            <a href="/01004-toyoda.html">豊田</a>
+            <a href="/01004-toyoda.html">豊田西之島</a>
+            <a href="/01008-fukude.html">豊浜</a>
+            <a href="/01008-fukude.html">豊浜中野</a>
+            <a href="/01002-nakaizumi.html">鳥之瀬</a>
+          </div>
+        </details>
+        <details class="ooaza-acc">
+          <summary>な行</summary>
+          <div class="ooaza-link-list">
+            <a href="/01002-nakaizumi.html">中泉</a>
+            <a href="/01002-nakaizumi.html">中泉一丁目</a>
+            <a href="/01002-nakaizumi.html">中泉二丁目</a>
+            <a href="/01002-nakaizumi.html">中泉三丁目</a>
+            <a href="/01002-nakaizumi.html">中泉四丁目</a>
+            <a href="/01001-mitsuke.html">中川町</a>
+            <a href="/01004-toyoda.html">中田</a>
+            <a href="/01005-nanbu.html">中野</a>
+            <a href="/01007-ryuyo.html">中平松</a>
+            <a href="/01002-nakaizumi.html">中町</a>
+            <a href="/01005-nanbu.html">長須賀</a>
+            <a href="/01004-toyoda.html">長森</a>
+            <a href="/01003-mikuriya.html">西貝塚</a>
+            <a href="/01001-mitsuke.html">西坂町</a>
+            <a href="/01003-mikuriya.html">西島</a>
+            <a href="/01002-nakaizumi.html">西新町</a>
+            <a href="/01003-mikuriya.html">西之島</a>
+            <a href="/01007-ryuyo.html">西平松</a>
+            <a href="/01002-nakaizumi.html">西町</a>
+            <a href="/01002-nakaizumi.html">二之宮</a>
+            <a href="/01002-nakaizumi.html">二之宮浅間</a>
+            <a href="/01002-nakaizumi.html">二之宮東</a>
+          </div>
+        </details>
+        <details class="ooaza-acc">
+          <summary>は行</summary>
+          <div class="ooaza-link-list">
+            <a href="/01007-ryuyo.html">浜新田</a>
+            <a href="/01005-nanbu.html">浜部</a>
+            <a href="/01003-mikuriya.html">稗原</a>
+            <a href="/01003-mikuriya.html">東貝塚</a>
+            <a href="/01008-fukude.html">東小島</a>
+            <a href="/01001-mitsuke.html">東坂町</a>
+            <a href="/01003-mikuriya.html">東新屋</a>
+            <a href="/01004-toyoda.html">東原</a>
+            <a href="/01007-ryuyo.html">東平松</a>
+            <a href="/01002-nakaizumi.html">東町</a>
+            <a href="/01003-mikuriya.html">東脇</a>
+            <a href="/01009-toyooka.html">平松</a>
+            <a href="/01006-koyo.html">平松掛下入作</a>
+            <a href="/01007-ryuyo.html">平間</a>
+            <a href="/01008-fukude.html">蛭池</a>
+            <a href="/01008-fukude.html">福田</a>
+            <a href="/01008-fukude.html">福田中島</a>
+            <a href="/01006-koyo.html">藤上原</a>
+            <a href="/01001-mitsuke.html">富士見台</a>
+            <a href="/01001-mitsuke.html">富士見町</a>
+            <a href="/01001-mitsuke.html">二番町</a>
+            <a href="/01007-ryuyo.html">堀之内</a>
+            <a href="/01002-nakaizumi.html">本町</a>
+          </div>
+        </details>
+        <details class="ooaza-acc">
+          <summary>ま行</summary>
+          <div class="ooaza-link-list">
+            <a href="/01004-toyoda.html">前野</a>
+            <a href="/01009-toyooka.html">松之木島</a>
+            <a href="/01007-ryuyo.html">松本</a>
+            <a href="/01005-nanbu.html">万正寺</a>
+            <a href="/01009-toyooka.html">万瀬</a>
+            <a href="/01009-toyooka.html">三家</a>
+            <a href="/01003-mikuriya.html">三ケ野</a>
+            <a href="/01003-mikuriya.html">三ケ野台</a>
+            <a href="/01001-mitsuke.html">水堀</a>
+            <a href="/01001-mitsuke.html">見付</a>
+            <a href="/01001-mitsuke.html">緑ケ丘</a>
+            <a href="/01008-fukude.html">南島</a>
+            <a href="/01008-fukude.html">南田</a>
+            <a href="/01008-fukude.html">南田伊兵衛新田</a>
+            <a href="/01007-ryuyo.html">南平松</a>
+            <a href="/01004-toyoda.html">宮之一色</a>
+            <a href="/01007-ryuyo.html">宮本</a>
+            <a href="/01009-toyooka.html">虫生</a>
+            <a href="/01006-koyo.html">向笠新屋</a>
+            <a href="/01006-koyo.html">向笠竹之内</a>
+            <a href="/01006-koyo.html">向笠西</a>
+            <a href="/01003-mikuriya.html">明ケ島</a>
+            <a href="/01003-mikuriya.html">明ケ島原</a>
+            <a href="/01001-mitsuke.html">元倉町</a>
+            <a href="/01001-mitsuke.html">元天神町</a>
+            <a href="/01001-mitsuke.html">元宮町</a>
+            <a href="/01004-toyoda.html">森岡</a>
+            <a href="/01004-toyoda.html">森下</a>
+            <a href="/01004-toyoda.html">森本</a>
+          </div>
+        </details>
+        <details class="ooaza-acc">
+          <summary>や行</summary>
+          <div class="ooaza-link-list">
+            <a href="/01009-toyooka.html">社山</a>
+            <a href="/01004-toyoda.html">弥藤太島</a>
+          </div>
+        </details>
+        <details class="ooaza-acc">
+          <summary>わ行</summary>
+          <div class="ooaza-link-list">
+            <a href="/01003-mikuriya.html">和口</a>
+          </div>
+        </details>
+      </div>
+      </div>
+        <!-- アクセスカウンター -->
+        <div class="side-block" id="access">
+          <h3>アクセス</h3>
+          <div id="access-counter" class="access-counter">
+            <span class="ac-item"><span class="ac-lbl">本日</span><strong id="ac-today">—</strong></span>
+            <span class="ac-item"><span class="ac-lbl">昨日</span><strong id="ac-yesterday">—</strong></span>
+            <span class="ac-item"><span class="ac-lbl">累計</span><strong id="ac-total">—</strong></span>
+          </div>
+        </div>
+        <style>
+          #access .access-counter{display:flex;flex-direction:column;gap:.3em;margin-top:.2em;}
+          #access .ac-item{display:flex;justify-content:space-between;align-items:baseline;
+            font-size:.86rem;color:#6b6256;}
+          #access .ac-lbl{letter-spacing:.04em;}
+          #access .access-counter strong{font-weight:600;font-variant-numeric:tabular-nums;color:#3a352e;}
+        </style>
+        <script>
+          (function(){var f=function(n){return (n||0).toLocaleString("ja-JP");};
+            fetch("/api/counter",{credentials:"same-origin"}).then(function(r){return r.json();})
+            .then(function(d){document.getElementById("ac-today").textContent=f(d.today);
+              document.getElementById("ac-yesterday").textContent=f(d.yesterday);
+              document.getElementById("ac-total").textContent=f(d.total);})
+            .catch(function(){var e=document.getElementById("access");if(e)e.style.display="none";});})();
+        </script>
+    </aside>
+  <!-- LEFT-NAV END -->
 </div>
 
 <footer class="im-foot">
