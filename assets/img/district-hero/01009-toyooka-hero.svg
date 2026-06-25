@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img"
+     aria-label="豊岡地区の山あい・川沿い・谷の集落・田畑の記憶を表した模式図">
+  <defs>
+    <linearGradient id="tkSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3fafd"/><stop offset="1" stop-color="#fffdf7"/></linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#tkSky)"/>
+  <!-- 山あい（北側の低い山並み・重くしすぎない） -->
+  <g fill="#e3edda" stroke="#c4d6b2" stroke-width="1.6">
+    <path d="M-20,240 C120,150 240,180 360,150 C470,124 560,168 660,140 C780,108 880,168 980,140 L980,250 L-20,250 Z"/>
+  </g>
+  <g fill="#eef3e6" stroke="#cdddbd" stroke-width="1.4">
+    <path d="M-20,250 C140,196 300,236 460,210 C640,182 820,232 980,206 L980,300 L-20,300 Z"/>
+  </g>
+  <!-- 川（谷を流れる） -->
+  <path d="M-20,470 C200,430 360,470 520,440 C700,408 820,452 980,420 L980,470 C820,500 700,458 520,488 C360,516 200,478 -20,512 Z" fill="#cfe3ee" opacity="0.9"/>
+  <path d="M-20,486 C200,448 360,486 520,456 C700,424 820,468 980,436" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+  <!-- 田畑（谷あいの棚） -->
+  <g stroke="#b6d09a" stroke-width="1.6" fill="none" opacity="0.85">
+    <path d="M120,360 C280,338 440,358 600,340"/>
+    <path d="M140,388 C300,366 460,386 620,368"/>
+    <line x1="240" y1="350" x2="248" y2="392"/><line x1="400" y1="346" x2="408" y2="388"/><line x1="560" y1="344" x2="568" y2="386"/>
+  </g>
+  <!-- 谷の集落 -->
+  <g fill="#7faec9" stroke="#4f7f9b" stroke-width="1.4">
+    <g transform="translate(640,330)"><path d="M0,16 L16,0 L32,16 Z"/><rect x="3" y="16" width="26" height="20"/></g>
+    <g transform="translate(686,338)"><path d="M0,16 L16,0 L32,16 Z"/><rect x="3" y="16" width="26" height="20"/></g>
+    <g transform="translate(732,330)"><path d="M0,16 L16,0 L32,16 Z"/><rect x="3" y="16" width="26" height="20"/></g>
+  </g>
+  <g font-family="'Shippori Mincho',serif" fill="#3f6175">
+    <text x="60" y="200" font-size="15" letter-spacing="2" fill="#6f8a52">山あい</text>
+    <text x="40" y="466" font-size="15" letter-spacing="2" fill="#4f86a3">川</text>
+    <text x="300" y="356" font-size="14" letter-spacing="2" fill="#6f8a52">田畑</text>
+    <text x="660" y="320" font-size="15" letter-spacing="2" fill="#4f7f9b">集落</text>
+  </g>
+  <text x="930" y="40" text-anchor="end" font-family="sans-serif" font-size="12" fill="#8aa4b3" letter-spacing="1">磐田物語 ｜ 豊岡地区 記憶の模式図</text>
+</svg>

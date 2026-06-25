@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img"
+     aria-label="福田地区の海・漁港・砂丘・集落の記憶を表した模式図">
+  <defs>
+    <linearGradient id="fkSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3fafd"/><stop offset="1" stop-color="#fffdf7"/></linearGradient>
+    <linearGradient id="fkSea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe6f1"/><stop offset="1" stop-color="#aecfe2"/></linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#fkSky)"/>
+  <g fill="none" stroke="#dcebf3" stroke-width="2">
+    <path d="M0,130 C240,108 460,146 700,120 S960,132 960,118"/>
+  </g>
+  <!-- 海（南側） -->
+  <rect x="0" y="412" width="960" height="128" fill="url(#fkSea)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="2" opacity="0.7">
+    <path d="M0,440 q40,-10 80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0"/>
+    <path d="M0,476 q40,-10 80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0"/>
+    <path d="M0,512 q40,-10 80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0"/>
+  </g>
+  <!-- 砂丘 -->
+  <path d="M0,412 C200,372 360,400 520,382 C680,366 820,396 960,378 L960,412 Z" fill="#efe6cf" stroke="#dccfa6" stroke-width="1.6"/>
+  <!-- 漁港の堤と漁船 -->
+  <g transform="translate(150,348)">
+    <rect x="-10" y="40" width="150" height="10" fill="#cdbfa0" stroke="#a89368" stroke-width="1.4"/>
+    <g transform="translate(40,8)">
+      <path d="M0,18 q34,18 68,0 l-9,18 q-25,9 -50,0 Z" fill="#c9a063" stroke="#8a6028" stroke-width="1.6"/>
+      <line x1="34" y1="-12" x2="34" y2="18" stroke="#8a6028" stroke-width="2"/>
+      <path d="M34,-8 L60,14 L34,14 Z" fill="#fffaf0" stroke="#b8a276" stroke-width="1.2"/>
+    </g>
+  </g>
+  <!-- 集落 -->
+  <g fill="#7faec9" stroke="#4f7f9b" stroke-width="1.4">
+    <g transform="translate(560,300)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+    <g transform="translate(612,308)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+    <g transform="translate(664,300)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+  </g>
+  <g font-family="'Shippori Mincho',serif" fill="#3f6175">
+    <text x="40" y="500" font-size="16" letter-spacing="2" fill="#3f7aa0">海</text>
+    <text x="150" y="338" font-size="15" letter-spacing="2" fill="#8a6a3c">漁港</text>
+    <text x="700" y="404" font-size="14" letter-spacing="2" fill="#9a8a5a">砂丘</text>
+    <text x="588" y="290" font-size="15" letter-spacing="2" fill="#4f7f9b">集落</text>
+  </g>
+  <text x="930" y="40" text-anchor="end" font-family="sans-serif" font-size="12" fill="#8aa4b3" letter-spacing="1">磐田物語 ｜ 福田地区 記憶の模式図</text>
+</svg>

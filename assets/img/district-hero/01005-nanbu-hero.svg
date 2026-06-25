@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img"
+     aria-label="南部地区の平野・集落・天竜川下流の水辺の記憶を表した模式図">
+  <defs><linearGradient id="nbSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3fafd"/><stop offset="1" stop-color="#fffdf7"/></linearGradient></defs>
+  <rect width="960" height="540" fill="url(#nbSky)"/>
+  <g fill="none" stroke="#dcebf3" stroke-width="2">
+    <path d="M0,150 C240,124 460,166 700,134 S960,150 960,132"/>
+    <path d="M0,202 C260,176 470,214 720,184 S960,204 960,184"/>
+  </g>
+  <!-- 天竜川下流の水辺（西側） -->
+  <path d="M120,-20 C150,150 80,320 150,560 L-20,560 L-20,-20 Z" fill="#cfe3ee" opacity="0.85"/>
+  <g fill="none" stroke="#ffffff" stroke-width="2" opacity="0.7"><path d="M70,30 C100,180 40,330 100,500"/></g>
+  <!-- 平野・田園 -->
+  <path d="M150,452 L980,420 L980,540 L160,540 Z" fill="#eef6e2"/>
+  <g stroke="#b6d09a" stroke-width="1.6" fill="none" opacity="0.85">
+    <line x1="200" y1="470" x2="900" y2="442"/><line x1="206" y1="500" x2="906" y2="470"/>
+    <line x1="360" y1="458" x2="380" y2="524"/><line x1="560" y1="450" x2="580" y2="516"/><line x1="760" y1="440" x2="780" y2="506"/>
+  </g>
+  <!-- 集落 -->
+  <g fill="#7faec9" stroke="#4f7f9b" stroke-width="1.4">
+    <g transform="translate(360,330)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+    <g transform="translate(412,338)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+    <g transform="translate(560,326)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+    <g transform="translate(612,334)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+  </g>
+  <!-- 道 -->
+  <path d="M150,500 C400,470 700,486 980,452" fill="none" stroke="#cdbfa0" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <g font-family="'Shippori Mincho',serif" fill="#3f6175">
+    <text x="40" y="150" font-size="15" letter-spacing="2" fill="#4f86a3">天竜川</text>
+    <text x="560" y="316" font-size="15" letter-spacing="2" fill="#4f7f9b">集落</text>
+    <text x="470" y="520" font-size="15" letter-spacing="2" fill="#6f8a52">平野</text>
+  </g>
+  <text x="930" y="40" text-anchor="end" font-family="sans-serif" font-size="12" fill="#8aa4b3" letter-spacing="1">磐田物語 ｜ 南部地区 記憶の模式図</text>
+</svg>

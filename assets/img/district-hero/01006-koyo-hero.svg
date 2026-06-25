@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img"
+     aria-label="向陽地区の台地・坂・住宅地の記憶を表した模式図">
+  <defs><linearGradient id="kySky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3fafd"/><stop offset="1" stop-color="#fffdf7"/></linearGradient></defs>
+  <rect width="960" height="540" fill="url(#kySky)"/>
+  <!-- 台地（段丘）の抽象 -->
+  <path d="M-20,300 L300,300 L380,360 L980,360 L980,540 L-20,540 Z" fill="#eef3e6" stroke="#c9d8b6" stroke-width="2"/>
+  <path d="M-20,360 L300,360 L380,420 L980,420" fill="none" stroke="#c9d8b6" stroke-width="1.6" opacity="0.8"/>
+  <!-- 台地のへり（坂） -->
+  <path d="M300,300 L380,360" fill="none" stroke="#b7c79f" stroke-width="3"/>
+  <g fill="none" stroke="#bcd0a2" stroke-width="1.4" opacity="0.8">
+    <line x1="318" y1="312" x2="338" y2="300"/><line x1="334" y1="328" x2="356" y2="316"/><line x1="350" y1="344" x2="372" y2="332"/>
+  </g>
+  <g fill="none" stroke="#dcebf3" stroke-width="2">
+    <path d="M0,150 C240,128 460,166 700,138 S960,150 960,136"/>
+    <path d="M0,200 C260,178 470,212 720,186 S960,202 960,186"/>
+  </g>
+  <!-- 住宅地（台地の上の家並み） -->
+  <g fill="#7faec9" stroke="#4f7f9b" stroke-width="1.4">
+    <g transform="translate(470,392)"><path d="M0,16 L16,0 L32,16 Z"/><rect x="3" y="16" width="26" height="20"/></g>
+    <g transform="translate(516,392)"><path d="M0,16 L16,0 L32,16 Z"/><rect x="3" y="16" width="26" height="20"/></g>
+    <g transform="translate(562,392)"><path d="M0,16 L16,0 L32,16 Z"/><rect x="3" y="16" width="26" height="20"/></g>
+    <g transform="translate(608,392)"><path d="M0,16 L16,0 L32,16 Z"/><rect x="3" y="16" width="26" height="20"/></g>
+    <g transform="translate(493,430)"><path d="M0,16 L16,0 L32,16 Z"/><rect x="3" y="16" width="26" height="20"/></g>
+    <g transform="translate(539,430)"><path d="M0,16 L16,0 L32,16 Z"/><rect x="3" y="16" width="26" height="20"/></g>
+    <g transform="translate(585,430)"><path d="M0,16 L16,0 L32,16 Z"/><rect x="3" y="16" width="26" height="20"/></g>
+  </g>
+  <g font-family="'Shippori Mincho',serif" fill="#3f6175">
+    <text x="120" y="334" font-size="15" letter-spacing="2" fill="#6f8a52">台地</text>
+    <text x="316" y="356" font-size="14" letter-spacing="2" fill="#7a8a5a">坂</text>
+    <text x="540" y="384" font-size="15" letter-spacing="2" fill="#4f7f9b">住宅地</text>
+  </g>
+  <text x="930" y="40" text-anchor="end" font-family="sans-serif" font-size="12" fill="#8aa4b3" letter-spacing="1">磐田物語 ｜ 向陽地区 記憶の模式図</text>
+</svg>

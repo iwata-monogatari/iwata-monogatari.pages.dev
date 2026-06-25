@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img"
+     aria-label="竜洋地区の天竜川・掛塚の川湊・帆船・集落の記憶を表した模式図">
+  <defs>
+    <linearGradient id="rySky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3fafd"/><stop offset="1" stop-color="#fffdf7"/></linearGradient>
+    <linearGradient id="ryRiver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bcdcec"/><stop offset="1" stop-color="#d8edf6"/></linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#rySky)"/>
+  <g fill="none" stroke="#dcebf3" stroke-width="2">
+    <path d="M0,140 C240,116 460,156 700,128 S960,142 960,126"/>
+  </g>
+  <!-- 天竜川河口（広い川） -->
+  <path d="M250,-20 C300,160 180,330 300,560 L-20,560 L-20,-20 Z" fill="url(#ryRiver)" opacity="0.92"/>
+  <g fill="none" stroke="#ffffff" stroke-width="2" opacity="0.7">
+    <path d="M120,20 C170,180 70,340 150,520"/>
+    <path d="M60,40 C110,190 20,350 90,520"/>
+  </g>
+  <!-- 川湊の帆船（掛塚湊の抽象） -->
+  <g transform="translate(150,260)">
+    <path d="M0,40 q40,22 80,0 l-10,20 q-30,10 -60,0 Z" fill="#c9a063" stroke="#8a6028" stroke-width="1.6"/>
+    <line x1="40" y1="-18" x2="40" y2="40" stroke="#8a6028" stroke-width="2.5"/>
+    <path d="M40,-14 L74,30 L40,30 Z" fill="#f1ead8" stroke="#b8a276" stroke-width="1.4"/>
+    <path d="M40,-6 L12,30 L40,30 Z" fill="#fffaf0" stroke="#b8a276" stroke-width="1.4"/>
+  </g>
+  <!-- 集落（掛塚のまち） -->
+  <g fill="#7faec9" stroke="#4f7f9b" stroke-width="1.4">
+    <g transform="translate(520,320)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+    <g transform="translate(572,328)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+    <g transform="translate(624,320)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+    <g transform="translate(676,328)"><path d="M0,18 L18,0 L36,18 Z"/><rect x="3" y="18" width="30" height="22"/></g>
+  </g>
+  <!-- 田園 -->
+  <path d="M300,470 L980,440 L980,540 L320,540 Z" fill="#eef6e2"/>
+  <g stroke="#b6d09a" stroke-width="1.6" fill="none" opacity="0.8"><line x1="360" y1="488" x2="900" y2="462"/><line x1="366" y1="514" x2="906" y2="488"/></g>
+  <g font-family="'Shippori Mincho',serif" fill="#3f6175">
+    <text x="40" y="150" font-size="15" letter-spacing="2" fill="#4f86a3">天竜川</text>
+    <text x="150" y="246" font-size="15" letter-spacing="2" fill="#8a6a3c">川湊</text>
+    <text x="560" y="312" font-size="15" letter-spacing="2" fill="#4f7f9b">集落</text>
+  </g>
+  <text x="930" y="40" text-anchor="end" font-family="sans-serif" font-size="12" fill="#8aa4b3" letter-spacing="1">磐田物語 ｜ 竜洋地区 記憶の模式図</text>
+</svg>
