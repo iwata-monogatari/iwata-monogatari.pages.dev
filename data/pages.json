@@ -3,39 +3,510 @@
   "schema_version": 1,
   "updated_at": "2026-06-25",
   "districts": [
-    { "district_id": "mitsuke",   "name": "見付地区",   "kana": "みつけ",   "no": "01001", "page": "01001-mitsuke.html",   "hero_image": "assets/img/district-hero/01001-mitsuke-hero.svg",   "hero_alt": "見付地区の旧東海道・宿場・寺社・学校の記憶を表した模式図", "hero_caption": "見付地区の記憶をたどる入口図" },
-    { "district_id": "nakaizumi", "name": "中泉地区",   "kana": "なかいずみ", "no": "01002", "page": "01002-nakaizumi.html", "hero_image": "assets/img/district-hero/01002-nakaizumi-hero.svg", "status": "pending" },
-    { "district_id": "mikuriya",  "name": "御厨地区",   "kana": "みくりや",  "no": "01003", "page": "01003-mikuriya.html",  "hero_image": "assets/img/district-hero/01003-mikuriya-hero.svg",  "status": "pending" },
-    { "district_id": "toyoda",    "name": "豊田地区",   "kana": "とよだ",    "no": "01004", "page": "01004-toyoda.html",    "hero_image": "assets/img/district-hero/01004-toyoda-hero.svg",    "status": "pending" },
-    { "district_id": "nanbu",     "name": "南部地区",   "kana": "なんぶ",    "no": "01005", "page": "01005-nanbu.html",     "hero_image": "assets/img/district-hero/01005-nanbu-hero.svg",     "status": "pending" },
-    { "district_id": "koyo",      "name": "向陽地区",   "kana": "こうよう",  "no": "01006", "page": "01006-koyo.html",      "hero_image": "assets/img/district-hero/01006-koyo-hero.svg",      "status": "pending" },
-    { "district_id": "ryuyo",     "name": "竜洋地区",   "kana": "りゅうよう","no": "01007", "page": "01007-ryuyo.html",     "hero_image": "assets/img/district-hero/01007-ryuyo-hero.svg",     "status": "pending" },
-    { "district_id": "fukude",    "name": "福田地区",   "kana": "ふくで",    "no": "01008", "page": "01008-fukude.html",    "hero_image": "assets/img/district-hero/01008-fukude-hero.svg",    "status": "pending" },
-    { "district_id": "toyooka",   "name": "豊岡地区",   "kana": "とよおか",  "no": "01009", "page": "01009-toyooka.html",   "hero_image": "assets/img/district-hero/01009-toyooka-hero.svg",   "status": "pending" }
+    {
+      "district_id": "mitsuke",
+      "name": "見付地区",
+      "kana": "みつけ",
+      "no": "01001",
+      "page": "01001-mitsuke.html",
+      "hero_image": "assets/img/district-hero/01001-mitsuke-hero.svg",
+      "hero_alt": "見付地区の旧東海道・宿場・寺社・学校の記憶を表した模式図",
+      "hero_caption": "見付地区の記憶をたどる入口図"
+    },
+    {
+      "district_id": "nakaizumi",
+      "name": "中泉地区",
+      "kana": "なかいずみ",
+      "no": "01002",
+      "page": "01002-nakaizumi.html",
+      "hero_image": "assets/img/district-hero/01002-nakaizumi-hero.svg",
+      "hero_alt": "中泉地区の天領の陣屋・御殿、町並み、近代の駅の記憶を表した模式図",
+      "hero_caption": "中泉地区の記憶をたどる入口図"
+    },
+    {
+      "district_id": "mikuriya",
+      "name": "御厨地区",
+      "kana": "みくりや",
+      "no": "01003",
+      "page": "01003-mikuriya.html",
+      "hero_image": "assets/img/district-hero/01003-mikuriya-hero.svg",
+      "status": "pending"
+    },
+    {
+      "district_id": "toyoda",
+      "name": "豊田地区",
+      "kana": "とよだ",
+      "no": "01004",
+      "page": "01004-toyoda.html",
+      "hero_image": "assets/img/district-hero/01004-toyoda-hero.svg",
+      "status": "pending"
+    },
+    {
+      "district_id": "nanbu",
+      "name": "南部地区",
+      "kana": "なんぶ",
+      "no": "01005",
+      "page": "01005-nanbu.html",
+      "hero_image": "assets/img/district-hero/01005-nanbu-hero.svg",
+      "status": "pending"
+    },
+    {
+      "district_id": "koyo",
+      "name": "向陽地区",
+      "kana": "こうよう",
+      "no": "01006",
+      "page": "01006-koyo.html",
+      "hero_image": "assets/img/district-hero/01006-koyo-hero.svg",
+      "status": "pending"
+    },
+    {
+      "district_id": "ryuyo",
+      "name": "竜洋地区",
+      "kana": "りゅうよう",
+      "no": "01007",
+      "page": "01007-ryuyo.html",
+      "hero_image": "assets/img/district-hero/01007-ryuyo-hero.svg",
+      "status": "pending"
+    },
+    {
+      "district_id": "fukude",
+      "name": "福田地区",
+      "kana": "ふくで",
+      "no": "01008",
+      "page": "01008-fukude.html",
+      "hero_image": "assets/img/district-hero/01008-fukude-hero.svg",
+      "status": "pending"
+    },
+    {
+      "district_id": "toyooka",
+      "name": "豊岡地区",
+      "kana": "とよおか",
+      "no": "01009",
+      "page": "01009-toyooka.html",
+      "hero_image": "assets/img/district-hero/01009-toyooka-hero.svg",
+      "status": "pending"
+    }
   ],
   "themes": [
-    "shiryo", "old-photo", "old-map", "place-name", "village-history",
-    "shrine-temple", "festival", "road-traffic", "architecture",
-    "school", "person", "life", "land-memory"
+    "shiryo",
+    "old-photo",
+    "old-map",
+    "place-name",
+    "village-history",
+    "shrine-temple",
+    "festival",
+    "road-traffic",
+    "architecture",
+    "school",
+    "person",
+    "life",
+    "land-memory"
   ],
   "pages": [
-    { "title": "磐田市見付の歴史と町内案内", "url": "m018.html", "district": ["mitsuke"], "themes": ["village-history", "land-memory"], "content_type": "reading", "published_at": "2026-06-18", "date_provisional": true, "status": "published", "summary": "国府・宿場・学校と層をなす見付の歩みと、26町内の現在。", "parent": "01001-mitsuke.html" },
-    { "title": "東海道と見付宿", "url": "m016.html", "district": ["mitsuke"], "themes": ["road-traffic", "village-history"], "content_type": "reading", "published_at": "2026-06-12", "date_provisional": true, "status": "published", "summary": "東海道五十三次の宿場として栄えた見付宿。", "parent": "01001-mitsuke.html" },
-    { "title": "見付宿", "url": "m017.html", "district": ["mitsuke"], "themes": ["road-traffic"], "content_type": "reading", "published_at": "2026-06-11", "date_provisional": true, "status": "published", "summary": "本陣・脇本陣・問屋場が置かれた宿場町・見付宿。", "parent": "01001-mitsuke.html" },
-    { "title": "見付天神 矢奈比賣神社", "url": "m012.html", "district": ["mitsuke"], "themes": ["shrine-temple", "festival"], "content_type": "reading", "published_at": "2026-06-10", "date_provisional": true, "status": "published", "summary": "見付天神の名で親しまれる矢奈比賣神社。", "parent": "01001-mitsuke.html" },
-    { "title": "淡海國玉神社", "url": "m019.html", "district": ["mitsuke"], "themes": ["shrine-temple"], "content_type": "reading", "published_at": "2026-06-09", "date_provisional": true, "status": "published", "summary": "遠江国の総社と伝わる淡海國玉神社。", "parent": "01001-mitsuke.html" },
-    { "title": "見付天神裸祭 特集", "url": "m006.html", "district": ["mitsuke"], "themes": ["festival"], "content_type": "feature", "published_at": "2026-06-08", "date_provisional": true, "status": "published", "summary": "国の重要無形民俗文化財・見付天神裸祭の特集親ページ。", "parent": "01001-mitsuke.html" },
-    { "title": "神事の構造と日程 ── 八日間の祓いと、闇の渡御", "url": "m008.html", "district": ["mitsuke"], "themes": ["festival", "shrine-temple"], "content_type": "feature", "published_at": "2026-06-25", "date_provisional": true, "status": "published", "summary": "見付天神裸祭の浜垢離、清祓い、堂入り、鬼踊り、闇の渡御、還御までの神事構造を、時間・空間・清めの視点から読み解くページ。", "parent": "m011.html" },
-    { "title": "起源をめぐる三つの説 ── 歓喜・人身御供・反閇", "url": "m007.html", "district": ["mitsuke"], "themes": ["festival", "shrine-temple", "village-history"], "content_type": "feature", "published_at": "2026-06-25", "date_provisional": true, "status": "published", "summary": "見付天神裸祭の起源を、歓喜の舞説、人身御供・悉平太郎説、反閇説から、史実・伝承・口碑・学術仮説を分けて読み解くページ。", "parent": "m011.html" },
-    { "title": "旧見付学校", "url": "m015.html", "district": ["mitsuke"], "themes": ["architecture", "school"], "content_type": "reading", "published_at": "2026-06-07", "date_provisional": true, "status": "published", "summary": "現存最古級の擬洋風校舎・旧見付学校。", "parent": "01001-mitsuke.html" },
-    { "title": "旧赤松家", "url": "m014.html", "district": ["mitsuke"], "themes": ["architecture"], "content_type": "reading", "published_at": "2026-06-06", "date_provisional": true, "status": "published", "summary": "赤松則良ゆかりの旧赤松家記念館。", "parent": "01001-mitsuke.html" },
-    { "title": "姫街道", "url": "m013.html", "district": ["mitsuke"], "themes": ["road-traffic"], "content_type": "reading", "published_at": "2026-06-05", "date_provisional": true, "status": "published", "summary": "東海道の脇往還・姫街道。", "parent": "01001-mitsuke.html" },
-    { "title": "見付古地図散歩 第1回 見付の土地と記憶", "url": "m001.html", "district": ["mitsuke"], "themes": ["old-map", "land-memory", "road-traffic"], "content_type": "reading", "published_at": "2026-05-30", "date_provisional": true, "status": "published", "summary": "古地図を手がかりに、見付の土地と記憶をたどる第1回。", "parent": "01001-mitsuke.html" },
-    { "title": "見付古地図散歩 第2回 相続される土地", "url": "m002.html", "district": ["mitsuke"], "themes": ["old-map", "land-memory"], "content_type": "reading", "published_at": "2026-05-29", "date_provisional": true, "status": "published", "summary": "土地がどう受け継がれてきたかを、古地図から読み解く第2回。", "parent": "01001-mitsuke.html" },
-    { "title": "見付古地図散歩 第3回 道と調査", "url": "m003.html", "district": ["mitsuke"], "themes": ["old-map", "road-traffic"], "content_type": "reading", "published_at": "2026-05-28", "date_provisional": true, "status": "published", "summary": "道のかたちと土地調査の跡を、古地図からたどる第3回。", "parent": "01001-mitsuke.html" },
-    { "title": "見付古地図散歩 第4回 町の中枢", "url": "m004.html", "district": ["mitsuke"], "themes": ["old-map", "life"], "content_type": "reading", "published_at": "2026-05-27", "date_provisional": true, "status": "published", "summary": "町の中枢がどこにあったか。古地図から見付の中心をたどる第4回。", "parent": "01001-mitsuke.html" },
-    { "title": "見付古地図散歩 第5回 手放す前に", "url": "m005.html", "district": ["mitsuke"], "themes": ["old-map", "land-memory"], "content_type": "reading", "published_at": "2026-05-26", "date_provisional": true, "status": "published", "summary": "土地を手放す前に確かめたいこと。古地図散歩の最終回。", "parent": "01001-mitsuke.html" },
-    { "title": "佐口行正氏所蔵史料 本編", "url": "c020.html", "district": ["mitsuke"], "themes": ["shiryo", "old-photo"], "content_type": "shiryo", "published_at": "2026-05-20", "date_provisional": true, "status": "published", "summary": "引札・浮世絵・古地図・絵葉書など約336点。", "parent": "01001-mitsuke.html" },
-    { "title": "佐口行正氏所蔵史料 目録", "url": "c019.html", "district": ["mitsuke"], "themes": ["shiryo", "old-map", "old-photo"], "content_type": "shiryo", "published_at": "2026-05-19", "date_provisional": true, "status": "published", "summary": "所蔵史料を一覧から探せる目録。", "parent": "01001-mitsuke.html" }
+    {
+      "title": "磐田市見付の歴史と町内案内",
+      "url": "m018.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-18",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "国府・宿場・学校と層をなす見付の歩みと、26町内の現在。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "東海道と見付宿",
+      "url": "m016.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "road-traffic",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-12",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "東海道五十三次の宿場として栄えた見付宿。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "見付宿",
+      "url": "m017.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "road-traffic"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-11",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "本陣・脇本陣・問屋場が置かれた宿場町・見付宿。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "見付天神 矢奈比賣神社",
+      "url": "m012.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "shrine-temple",
+        "festival"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-10",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "見付天神の名で親しまれる矢奈比賣神社。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "淡海國玉神社",
+      "url": "m019.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-09",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "遠江国の総社と伝わる淡海國玉神社。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "見付天神裸祭 特集",
+      "url": "m006.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "festival"
+      ],
+      "content_type": "feature",
+      "published_at": "2026-06-08",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "国の重要無形民俗文化財・見付天神裸祭の特集親ページ。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "旧見付学校",
+      "url": "m015.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "architecture",
+        "school"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-07",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "現存最古級の擬洋風校舎・旧見付学校。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "旧赤松家",
+      "url": "m014.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "architecture"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-06",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "赤松則良ゆかりの旧赤松家記念館。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "姫街道",
+      "url": "m013.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "road-traffic"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-05",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "東海道の脇往還・姫街道。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "見付古地図散歩 第1回 見付の土地と記憶",
+      "url": "m001.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "old-map",
+        "land-memory",
+        "road-traffic"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-05-30",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "古地図を手がかりに、見付の土地と記憶をたどる第1回。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "見付古地図散歩 第2回 相続される土地",
+      "url": "m002.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "old-map",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-05-29",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "土地がどう受け継がれてきたかを、古地図から読み解く第2回。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "見付古地図散歩 第3回 道と調査",
+      "url": "m003.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "old-map",
+        "road-traffic"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-05-28",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "道のかたちと土地調査の跡を、古地図からたどる第3回。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "見付古地図散歩 第4回 町の中枢",
+      "url": "m004.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "old-map",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-05-27",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "町の中枢がどこにあったか。古地図から見付の中心をたどる第4回。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "見付古地図散歩 第5回 手放す前に",
+      "url": "m005.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "old-map",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-05-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "土地を手放す前に確かめたいこと。古地図散歩の最終回。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "佐口行正氏所蔵史料 本編",
+      "url": "c020.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "shiryo",
+        "old-photo"
+      ],
+      "content_type": "shiryo",
+      "published_at": "2026-05-20",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "引札・浮世絵・古地図・絵葉書など約336点。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "佐口行正氏所蔵史料 目録",
+      "url": "c019.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "shiryo",
+        "old-map",
+        "old-photo"
+      ],
+      "content_type": "shiryo",
+      "published_at": "2026-05-19",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "所蔵史料を一覧から探せる目録。",
+      "parent": "01001-mitsuke.html"
+    },
+    {
+      "title": "二之宮はなぜ中泉と一つになったか",
+      "url": "n022.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "village-history",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-16",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "明治の合併と鹿苑神社。二之宮村が中泉町に加わった経緯。",
+      "parent": "01002-nakaizumi.html"
+    },
+    {
+      "title": "中泉御殿のあった町",
+      "url": "n021.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory",
+        "architecture"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-15",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "天領を治めた中泉。御殿の地形と年表からまちの成り立ちを読む。",
+      "parent": "01002-nakaizumi.html"
+    },
+    {
+      "title": "中泉代官所と、徳川の天領を治めたまち",
+      "url": "n020.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-14",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "遠江・三河の天領を治めた中泉陣屋（代官所）。",
+      "parent": "01002-nakaizumi.html"
+    },
+    {
+      "title": "国府台と府八幡宮 ──「国府」を名のる土地",
+      "url": "n019.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "place-name",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-13",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "遠江国府ゆかりの国府台。地名が伝える千三百年の記憶。",
+      "parent": "01002-nakaizumi.html"
+    },
+    {
+      "title": "御殿・二之宮遺跡と、二つの時代が眠る原",
+      "url": "n018.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-12",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "御殿跡と古代の遺跡が重なる二之宮の原。",
+      "parent": "01002-nakaizumi.html"
+    },
+    {
+      "title": "府八幡宮と、国府のまちの守り神",
+      "url": "n017.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-11",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "遠江国府の守り神として祀られた府八幡宮。",
+      "parent": "01002-nakaizumi.html"
+    },
+    {
+      "title": "遠江国分寺跡と、古代磐田のはじまり",
+      "url": "n016.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "land-memory",
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-10",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "国の特別史跡・遠江国分寺跡。",
+      "parent": "01002-nakaizumi.html"
+    },
+    {
+      "title": "遠州国分寺とは何か ── 古代遠江の中心寺院",
+      "url": "n001.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "feature",
+      "published_at": "2026-06-09",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "奈良時代に置かれた遠州国分寺の特集。",
+      "parent": "01002-nakaizumi.html"
+    }
   ]
 }
