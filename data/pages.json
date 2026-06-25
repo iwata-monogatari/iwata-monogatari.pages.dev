@@ -50,7 +50,8 @@
       "no": "01005",
       "page": "01005-nanbu.html",
       "hero_image": "assets/img/district-hero/01005-nanbu-hero.svg",
-      "status": "pending"
+      "hero_alt": "南部地区の平野・集落・天竜川下流の水辺の記憶を表した模式図",
+      "hero_caption": "南部地区の記憶をたどる入口図"
     },
     {
       "district_id": "koyo",
@@ -59,7 +60,8 @@
       "no": "01006",
       "page": "01006-koyo.html",
       "hero_image": "assets/img/district-hero/01006-koyo-hero.svg",
-      "status": "pending"
+      "hero_alt": "向陽地区の台地・坂・住宅地の記憶を表した模式図",
+      "hero_caption": "向陽地区の記憶をたどる入口図"
     },
     {
       "district_id": "ryuyo",
@@ -68,7 +70,8 @@
       "no": "01007",
       "page": "01007-ryuyo.html",
       "hero_image": "assets/img/district-hero/01007-ryuyo-hero.svg",
-      "status": "pending"
+      "hero_alt": "竜洋地区の天竜川・掛塚の川湊・帆船・集落の記憶を表した模式図",
+      "hero_caption": "竜洋地区の記憶をたどる入口図"
     },
     {
       "district_id": "fukude",
@@ -77,7 +80,8 @@
       "no": "01008",
       "page": "01008-fukude.html",
       "hero_image": "assets/img/district-hero/01008-fukude-hero.svg",
-      "status": "pending"
+      "hero_alt": "福田地区の海・漁港・砂丘・集落の記憶を表した模式図",
+      "hero_caption": "福田地区の記憶をたどる入口図"
     },
     {
       "district_id": "toyooka",
@@ -86,7 +90,8 @@
       "no": "01009",
       "page": "01009-toyooka.html",
       "hero_image": "assets/img/district-hero/01009-toyooka-hero.svg",
-      "status": "pending"
+      "hero_alt": "豊岡地区の山あい・川沿い・谷の集落・田畑の記憶を表した模式図",
+      "hero_caption": "豊岡地区の記憶をたどる入口図"
     }
   ],
   "themes": [
@@ -203,42 +208,6 @@
       "status": "published",
       "summary": "国の重要無形民俗文化財・見付天神裸祭の特集親ページ。",
       "parent": "01001-mitsuke.html"
-    },
-    {
-      "title": "悉平太郎伝説の考察",
-      "url": "m010.html",
-      "district": [
-        "mitsuke"
-      ],
-      "themes": [
-        "festival",
-        "shrine-temple",
-        "village-history"
-      ],
-      "content_type": "feature",
-      "published_at": "2026-06-25",
-      "date_provisional": true,
-      "status": "published",
-      "summary": "磐田市見付に伝わる霊犬・悉平太郎伝説を、信州光前寺の早太郎伝説や全国の猿神退治譚と比較し、民俗学と地域記憶の視点で読み解くページ。",
-      "parent": "m011.html"
-    },
-    {
-      "title": "無形文化財としての継承",
-      "url": "m009.html",
-      "district": [
-        "mitsuke"
-      ],
-      "themes": [
-        "festival",
-        "life",
-        "village-history"
-      ],
-      "content_type": "feature",
-      "published_at": "2026-06-25",
-      "date_provisional": true,
-      "status": "published",
-      "summary": "見付天神裸祭が国指定重要無形民俗文化財として評価された理由、昭和期以降の変化、コロナ禍を経た再開、担い手・安全・子どもへの継承活動を整理するページ。",
-      "parent": "m011.html"
     },
     {
       "title": "旧見付学校",
@@ -733,6 +702,59 @@
       "status": "published",
       "summary": "県内有数の前方後円墳・銚子塚古墳。",
       "parent": "01004-toyoda.html"
+    },
+    {
+      "title": "天竜川がつくった村、流した村 ── 池田・掛塚と渡しの記憶",
+      "url": "s001.html",
+      "district": [
+        "nanbu"
+      ],
+      "themes": [
+        "land-memory",
+        "place-name",
+        "road-traffic"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-13",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "天竜川の河道変遷が村にもたらした歴史。",
+      "parent": "01005-nanbu.html"
+    },
+    {
+      "title": "匂坂・寺谷・岩田 ── 台地のへりに並ぶ村々",
+      "url": "k001.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-13",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "台地のへりの村々の地形と難読地名を図解で解説。",
+      "parent": "01006-koyo.html"
+    },
+    {
+      "title": "掛塚湊と、遠州の小江戸とよばれたまち",
+      "url": "r001.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "road-traffic",
+        "land-memory",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-13",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "天竜川の水運で栄えた川湊・掛塚。",
+      "parent": "01007-ryuyo.html"
     }
   ]
 }
