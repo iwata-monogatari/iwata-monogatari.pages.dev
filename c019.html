@@ -72,6 +72,7 @@
   .card .own{font-size:10.5px;color:#9a8e78;margin-top:auto;padding-top:8px;border-top:1px dashed var(--waku);}
   .badge{display:inline-block;font-size:10.5px;background:#eef0ea;color:var(--matsu);border-radius:3px;padding:1px 7px;font-weight:700;}
   .no-result{text-align:center;color:var(--usuzumi);padding:40px 0;}
+  .catalog-anchor-targets{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
   /* lightbox */
   .lb{position:fixed;inset:0;background:rgba(30,28,24,.92);display:none;align-items:center;justify-content:center;z-index:100;padding:24px;}
   .lb.open{display:flex;}
@@ -160,6 +161,13 @@
   </div>
 
   <div class="grid" id="grid"></div>
+  <div class="catalog-anchor-targets" aria-hidden="true">
+    <span id="hk-1"></span><span id="hk-2"></span><span id="hk-3"></span><span id="hk-54"></span>
+    <span id="ts-5"></span><span id="ts-6"></span><span id="ts-7"></span><span id="ts-10"></span>
+    <span id="ts-24"></span><span id="ts-27"></span><span id="ts-66"></span><span id="ts-67"></span>
+    <span id="ts-68"></span><span id="ts-76"></span><span id="ph-2"></span><span id="eh-1"></span>
+    <span id="eh-3"></span><span id="eh-4"></span>
+  </div>
   <p class="no-result" id="noResult" hidden>該当する史料が見つからなかった。別のことばで探してみてほしい。</p>
 
   <div class="sourcebox">
