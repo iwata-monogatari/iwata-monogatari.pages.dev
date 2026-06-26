@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>福田 年中行事・民俗語彙索引（資料編）｜磐田物語</title>
+<meta name="description" content="福田の年中行事を月別一覧・行事名索引・民俗語彙ミニ辞典・分類表で整理した資料編。福田町教育委員会『年中行事と昔ばなし』をもとに、行事名・月・信仰・場所から各ページへたどれる索引。">
+<meta property="og:title" content="福田 年中行事・民俗語彙索引（資料編）｜磐田物語">
+<meta property="og:description" content="月別一覧・行事名索引・民俗語彙辞典・分類表で、福田の年中行事を横断的に探せる資料編。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--kinari:#fffdf7;--cha:#2f7fa3;--matsu:#356f88;--sumi:#22303a;--usuzumi:#5b6b74;--waku:#d8e8ef;--paper:#fffdf7;
+    --paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;--brown:#2f7fa3;--brown-deep:#1f4f6f;--accent-blue:#356f88;--line:#d8e8ef;
+    --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Zen Kaku Gothic New",sans-serif;color:var(--sumi);background:var(--kinari);line-height:1.95;font-size:17px;-webkit-font-smoothing:antialiased;}
+  a{color:var(--cha);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+  header.site{background:var(--matsu);color:#fff;padding:0;}
+  main{max-width:760px;margin:0 auto;padding:0 22px;}
+  .crumbs{font-size:13px;color:var(--usuzumi);padding:20px 0 6px;}
+  .crumbs a{color:var(--usuzumi);text-decoration:none;}
+  .crumbs a:hover{text-decoration:underline;}
+  .article-head{margin-top:20px;margin-bottom:32px;}
+  .article-head .cat{display:inline-block;font-size:13px;color:var(--matsu);border-left:3px solid var(--cha);padding-left:9px;margin-bottom:12px;letter-spacing:.04em;}
+  .article-head .cat .no{font-weight:700;}
+  .article-head h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:30px;line-height:1.45;color:var(--sumi);margin-bottom:8px;letter-spacing:.02em;}
+  .article-head .sub{font-size:15px;color:var(--usuzumi);line-height:1.7;}
+  .article{font-size:17px;line-height:1.95;color:var(--sumi);}
+  .article h2{font-family:"Shippori Mincho",serif;font-weight:600;font-size:22px;color:var(--matsu);margin:42px 0 16px;padding-bottom:9px;border-bottom:2px solid var(--waku);letter-spacing:.02em;}
+  .article h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:18px;color:var(--brown-deep);margin:28px 0 10px;letter-spacing:.02em;}
+  .article p{margin:0 0 20px;color:var(--ink);}
+  .article p.lead{font-size:18px;line-height:2.05;}
+  .tbl{width:100%;overflow-x:auto;margin:18px 0;border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);-webkit-overflow-scrolling:touch;}
+  table{width:100%;min-width:640px;border-collapse:collapse;font-size:13.5px;line-height:1.6;background:#fffdf8;}
+  table th,table td{border:1px solid rgba(60,110,135,.22);padding:7px 10px;vertical-align:top;text-align:left;}
+  table thead th{background:#e7f1f7;color:#1f4f6f;font-weight:700;white-space:nowrap;}
+  table td a{font-weight:700;}
+  .mon{background:#eef6fb !important;font-weight:700;color:#1f4f6f;}
+  .idx{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:4px 14px;margin:14px 0 6px;font-size:14px;}
+  .idx a{display:block;padding:3px 0;border-bottom:1px dotted #cfe0e9;}
+  .gloss{margin:14px 0;}
+  .gloss dt{font-family:"Shippori Mincho",serif;font-weight:700;color:var(--brown-deep);font-size:16px;margin-top:14px;}
+  .gloss dd{margin:3px 0 0;font-size:14.5px;color:var(--ink);line-height:1.8;}
+  .note{background:#fffaf0;border:1px solid #e8d9bd;border-left:4px solid #caa14f;border-radius:4px;padding:15px 18px;font-size:14.5px;color:#5b4a2a;line-height:1.85;margin:20px 0;}
+  .note .nt{font-weight:700;color:#8a6526;display:block;margin-bottom:4px;font-size:13.5px;letter-spacing:.04em;}
+  .future{background:#f4fafd;border:1px solid var(--line);border-radius:6px;padding:18px 24px;margin:18px 0;}
+  .future ul{margin:6px 0 0;padding-left:1.3em;}
+  .future li{font-size:14.5px;margin-bottom:6px;line-height:1.75;}
+  .sources{max-width:760px;margin:0 auto;padding:0 24px 8px;}
+  .sources h3{font-size:14px;color:var(--ink-soft);font-weight:700;letter-spacing:.06em;margin:0 0 10px;}
+  .sources ul{margin:0;padding-left:1.2em;}
+  .sources li{font-size:13px;color:var(--ink-soft);line-height:1.8;margin-bottom:4px;}
+  .series{max-width:760px;margin:30px auto 0;padding:0 24px;}
+  .series .sh{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16px;color:var(--brown-deep);margin-bottom:12px;letter-spacing:.03em;}
+  .series ol{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .series li a{display:block;border:1px solid var(--line);border-radius:7px;padding:11px 15px;background:#fbfdff;font-size:14.5px;color:var(--ink);transition:.18s;}
+  .series li a:hover{border-color:var(--brown);color:var(--brown-deep);text-decoration:none;transform:translateY(-1px);box-shadow:var(--shadow);}
+  .series li a .n{font-weight:700;color:var(--accent-blue);margin-right:8px;}
+  .series li.here a{background:#eef6fb;border-color:var(--brown);cursor:default;}
+  .article-nav{max-width:760px;margin:30px auto 56px;padding:0 24px;display:flex;flex-wrap:wrap;gap:14px;}
+  .article-nav a{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:13px 26px;border-radius:2px;transition:.2s;letter-spacing:.04em;}
+  .article-nav a.primary{background:var(--brown);color:#fff;}
+  .article-nav a.primary:hover{background:var(--brown-deep);}
+  .article-nav a.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
+  .article-nav a.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
+  @media(max-width:760px){.article-head h1{font-size:24px;}body{font-size:16px;}}
+</style>
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="canonical" href="https://iwata-monogatari.pages.dev/f017.html">
+</head>
+<body>
+
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="crumbs"><a href="/">磐田物語</a> ／ <a href="/01008-fukude.html">福田地区</a> ／ <a href="/f011.html">福田の年中行事と昔ばなし</a> ／ 資料編・索引</div>
+
+  <div class="article-head">
+    <p class="cat"><span class="no">福田の民俗と記憶 第7回</span> ｜ 資料編・索引</p>
+    <h1>福田 年中行事・民俗語彙索引<br>── 資料編</h1>
+    <p class="sub">本特集で扱った福田の年中行事を、月別の一覧、行事名の索引、民俗語彙のミニ辞典、信仰の分類表で整理する。行事名・月・信仰・場所から、各ページへたどるための資料編である。</p>
+  </div>
+
+  <article class="article">
+
+    <p class="lead">この資料編は、本特集（全7ページ）の索引である。気になる行事や月から、それを扱った本編へすぐに移動できるようにした。「掲載ページ」は、その行事を解説した特集ページを示す。なお、ここに整理した情報はすべて福田町教育委員会『年中行事と昔ばなし』（一九八七年）の記述にもとづくが、本文を引き写したものではなく、行事名・時期・分類を独自に整理し直したものである。</p>
+
+    <h2>月別 年中行事一覧</h2>
+    <p>福田に伝わる主な年中行事を、月の順に並べた。分類は「家／寺社／農漁業／子ども・若者／講・共同体」を基本とする（複数にまたがる行事も多い）。月日は冊子の記載にもとづく目安で、新暦・旧暦・月おくれが混在し、地区や年によって前後する。</p>
+    <div class="tbl"><table>
+      <caption class="mincho" style="text-align:left;padding:8px 4px;color:#1f4f6f;font-weight:700;">福田の年中行事 月別一覧（出典：『年中行事と昔ばなし』）</caption>
+      <thead><tr><th>月</th><th>行事名</th><th>分類</th><th>関係する信仰・場所</th><th>掲載ページ</th><th>備考</th></tr></thead>
+      <tbody>
+        <tr><td class="mon" rowspan="8">一月</td><td>元旦</td><td>家・寺社</td><td>氏神・伊勢・鎌田神明宮ほか</td><td><a href="/f012.html">正月から春へ</a></td><td>しめ縄・雑煮・巡拝</td></tr>
+        <tr><td>仕事始め</td><td>農漁業</td><td>各職場・海上（南島・中野）</td><td><a href="/f012.html">正月から春へ</a></td><td>漁村は海上で豊漁祈願</td></tr>
+        <tr><td>七草</td><td>家</td><td>各家・神棚</td><td><a href="/f012.html">正月から春へ</a></td><td>1月6・7日／七草がゆ</td></tr>
+        <tr><td>裸参り</td><td>寺社</td><td>春日山ほか・浅瀬</td><td><a href="/f012.html">正月から春へ</a></td><td>水で身を清める</td></tr>
+        <tr><td>十日祭（蓬松祭）</td><td>子ども・若者</td><td>中野</td><td><a href="/f012.html">正月から春へ</a></td><td>1月10日／若者が生き神役</td></tr>
+        <tr><td>米とぎまつり</td><td>講・共同体</td><td>下太・八王子神社</td><td><a href="/f012.html">正月から春へ</a></td><td>御宜が米を集め行列参拝</td></tr>
+        <tr><td>地区初寄合・打ち初め・氏神様の年始廻り ほか</td><td>共同体・農漁業</td><td>各地区・苗代田・小島方</td><td><a href="/f012.html">正月から春へ</a></td><td>朝観音・もっちゃい休み・二十日正月・初えびす・初灯・寒行を含む</td></tr>
+        <tr><td>正五九祭（春日山祭り）</td><td>講・寺社</td><td>大原・春日山神社</td><td><a href="/f012.html">正月から春へ</a></td><td>正月・5月・9月の9日</td></tr>
+        <tr><td class="mon" rowspan="4">二月</td><td>節分</td><td>家</td><td>各家</td><td><a href="/f012.html">正月から春へ</a></td><td>2月3日／豆まき</td></tr>
+        <tr><td>初午</td><td>寺社・農漁業</td><td>稲荷の境内</td><td><a href="/f012.html">正月から春へ</a></td><td>家内安全・無病息災</td></tr>
+        <tr><td>針供養</td><td>家・寺社</td><td>観音寺ほか</td><td><a href="/f012.html">正月から春へ</a></td><td>2月8日／裁縫の上達祈願</td></tr>
+        <tr><td>花草だんご（ねはん団子）・秋葉講</td><td>寺社・講</td><td>お寺・公会堂</td><td><a href="/f012.html">正月から春へ</a> ／ <a href="/f015.html">秋から冬へ</a></td><td>秋葉講は毎月18日</td></tr>
+        <tr><td class="mon" rowspan="4">三月</td><td>ひなまつり</td><td>家・子ども</td><td>各家</td><td><a href="/f012.html">正月から春へ</a></td><td>3月3日／桃の節句</td></tr>
+        <tr><td>パン割り</td><td>子ども・若者</td><td>町内の小学校・海岸</td><td><a href="/f013.html">春から初夏へ</a></td><td>3月10日／学校行事</td></tr>
+        <tr><td>春の彼岸</td><td>家・寺社</td><td>仏前・鴫江観音（浜松）ほか</td><td><a href="/f013.html">春から初夏へ</a></td><td>中日3月21日頃</td></tr>
+        <tr><td>一色智泉庵の縁日</td><td>寺社</td><td>一色・智泉庵</td><td><a href="/f013.html">春から初夏へ</a></td><td>2・6・10月の21日</td></tr>
+        <tr><td class="mon" rowspan="3">四月</td><td>花まつり（灌仏会）</td><td>寺社</td><td>各所の寺</td><td><a href="/f013.html">春から初夏へ</a></td><td>4月8日／甘茶</td></tr>
+        <tr><td>若宮まつり</td><td>寺社・共同体</td><td>南島・八衛門の祠</td><td><a href="/f013.html">春から初夏へ</a> ／ <a href="/f016.html">昔ばなし</a></td><td>4月8日／八衛門を弔う</td></tr>
+        <tr><td>伊勢参り</td><td>農漁業</td><td>伊勢神宮（漁師）</td><td><a href="/f013.html">春から初夏へ</a></td><td>4月上旬／海上安全祈願</td></tr>
+        <tr><td class="mon" rowspan="2">五月</td><td>苗代籾まき</td><td>農漁業</td><td>苗代（田）</td><td><a href="/f013.html">春から初夏へ</a></td><td>5月上旬</td></tr>
+        <tr><td>端午の節句</td><td>家・子ども</td><td>各家・小島方（粽）</td><td><a href="/f013.html">春から初夏へ</a></td><td>5月5日／男児の成長</td></tr>
+        <tr><td class="mon" rowspan="2">六月</td><td>堀ざらい・苗供え・田植え</td><td>農漁業・共同体</td><td>用水（堀）・田・恵比須様</td><td><a href="/f013.html">春から初夏へ</a></td><td>堀ざらいは4〜5月から</td></tr>
+        <tr><td>厄除け線香焚き・農休み・苗虫とり</td><td>家・子ども</td><td>門口・苗代田</td><td><a href="/f013.html">春から初夏へ</a></td><td>厄除け線香焚きは6月1日</td></tr>
+        <tr><td class="mon" rowspan="5">七月</td><td>さなぶり</td><td>農漁業・共同体</td><td>各農家・役場</td><td><a href="/f013.html">春から初夏へ</a></td><td>田植え終了の祝い</td></tr>
+        <tr><td>雨乞い</td><td>共同体・寺社</td><td>鎌田神明宮・浜辺</td><td><a href="/f014.html">夏と盆</a></td><td>空梅雨・ひでりの時</td></tr>
+        <tr><td>大峯講</td><td>講・農漁業</td><td>福田の島・大峯さま</td><td><a href="/f015.html">秋から冬へ</a></td><td>7月第2日曜／海上安全</td></tr>
+        <tr><td>丑浜・弁天様の祭り</td><td>家・子ども・寺社</td><td>海浜・中野白山神社</td><td><a href="/f014.html">夏と盆</a></td><td>弁天様は7月14日</td></tr>
+        <tr><td>川施餓鬼</td><td>寺社・共同体</td><td>川・海・地蔵尊</td><td><a href="/f014.html">夏と盆</a></td><td>水死者の供養</td></tr>
+        <tr><td class="mon" rowspan="5">八月</td><td>七夕祭り</td><td>家・子ども</td><td>各家</td><td><a href="/f014.html">夏と盆</a></td><td>8月7日</td></tr>
+        <tr><td>お施餓鬼</td><td>寺社</td><td>各寺・三界万霊</td><td><a href="/f014.html">夏と盆</a></td><td>無縁仏の供養</td></tr>
+        <tr><td>お盆・精霊流し</td><td>家・寺社</td><td>各家・墓・川</td><td><a href="/f014.html">夏と盆</a></td><td>8月13〜16日</td></tr>
+        <tr><td>虫送り</td><td>農漁業</td><td>田の畔</td><td><a href="/f014.html">夏と盆</a></td><td>盆後／害虫除け</td></tr>
+        <tr><td>延命地蔵尊祭・百万遍</td><td>寺社・共同体</td><td>大原・中野・南田</td><td><a href="/f014.html">夏と盆</a></td><td>8月23・24日</td></tr>
+        <tr><td class="mon">九月</td><td>お道元さま・秋の彼岸</td><td>寺社・家</td><td>曹洞宗の寺・仏前</td><td><a href="/f015.html">秋から冬へ</a></td><td>9月23日</td></tr>
+        <tr><td class="mon" rowspan="4">十月</td><td>白酒祭り（どぶろく祭り）</td><td>寺社・共同体</td><td>中野・白山神社</td><td><a href="/f015.html">秋から冬へ</a></td><td>10月2日／現在も実施</td></tr>
+        <tr><td>氏神様の秋祭りと伊勢神楽</td><td>寺社・共同体</td><td>六社神社・中島神明宮</td><td><a href="/f015.html">秋から冬へ</a></td><td>10月中旬／屋台</td></tr>
+        <tr><td>お日待</td><td>家</td><td>各家・神棚</td><td><a href="/f015.html">秋から冬へ</a></td><td>10月15・16日</td></tr>
+        <tr><td>雁代秋葉山の祭礼</td><td>寺社・講</td><td>雁代・龍雲寺</td><td><a href="/f015.html">秋から冬へ</a></td><td>10月23・24日</td></tr>
+        <tr><td class="mon" rowspan="5">十一月</td><td>神様のお立ち・かやさし</td><td>家・共同体</td><td>各家・海岸堤防</td><td><a href="/f015.html">秋から冬へ</a></td><td>神様のお立ちは11月1日</td></tr>
+        <tr><td>亥の子</td><td>家・農漁業</td><td>各家・田の神</td><td><a href="/f015.html">秋から冬へ</a></td><td>11月の亥の日／収穫祝い</td></tr>
+        <tr><td>七五三・観音寺の酉の市</td><td>家・子ども・寺社</td><td>氏神・観音寺</td><td><a href="/f015.html">秋から冬へ</a></td><td>七五三11月15日／酉の市17日</td></tr>
+        <tr><td>中野五輪さま</td><td>共同体・寺社</td><td>中野・積善宝塔</td><td><a href="/f015.html">秋から冬へ</a> ／ <a href="/f016.html">昔ばなし</a></td><td>11月19日／人柱の供養</td></tr>
+        <tr><td>恵比須講・金比羅様のお日待</td><td>家・農漁業</td><td>恵比須様・船霊・金比羅</td><td><a href="/f015.html">秋から冬へ</a></td><td>恵比須講20日／金比羅23日</td></tr>
+        <tr><td class="mon" rowspan="2">十二月</td><td>庚申講</td><td>講・共同体</td><td>会所・青面金剛</td><td><a href="/f015.html">秋から冬へ</a></td><td>庚申の日／60日周期</td></tr>
+        <tr><td>地の神様（オシャガミ様）・大晦日</td><td>家</td><td>屋敷の北西隅・神前</td><td><a href="/f015.html">秋から冬へ</a></td><td>地の神12月15日／大晦日31日</td></tr>
+        <tr><td class="mon">随時</td><td>御垢離病気平癒祈願・船おろし</td><td>共同体・農漁業</td><td>太田川・白山神社・造船場</td><td><a href="/f015.html">秋から冬へ</a></td><td>病気平癒・新造船の祝い</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2>行事名索引</h2>
+    <p>本特集で取り上げた主な行事名を五十音順に並べた。リンク先は、その行事を解説したページである。</p>
+    <div class="idx">
+      <a href="/f015.html">秋祭り（氏神）</a>
+      <a href="/f012.html">朝観音</a>
+      <a href="/f014.html">雨乞い</a>
+      <a href="/f015.html">亥の子</a>
+      <a href="/f013.html">伊勢参り</a>
+      <a href="/f013.html">一色智泉庵の縁日</a>
+      <a href="/f014.html">丑浜</a>
+      <a href="/f012.html">打ち初め</a>
+      <a href="/f015.html">恵比須講</a>
+      <a href="/f015.html">御垢離病気平癒祈願</a>
+      <a href="/f012.html">お日待（初灯）</a>
+      <a href="/f015.html">お日待（10月）</a>
+      <a href="/f015.html">お道元さま</a>
+      <a href="/f014.html">お盆</a>
+      <a href="/f015.html">かやさし</a>
+      <a href="/f014.html">川施餓鬼</a>
+      <a href="/f015.html">雁代秋葉山の祭礼</a>
+      <a href="/f012.html">元旦</a>
+      <a href="/f015.html">金比羅様のお日待</a>
+      <a href="/f015.html">庚申講</a>
+      <a href="/f014.html">七夕祭り</a>
+      <a href="/f013.html">さなぶり</a>
+      <a href="/f012.html">仕事始め</a>
+      <a href="/f014.html">施餓鬼</a>
+      <a href="/f015.html">地の神様（オシャガミ）</a>
+      <a href="/f014.html">精霊流し</a>
+      <a href="/f012.html">正五九祭</a>
+      <a href="/f015.html">白酒祭り</a>
+      <a href="/f012.html">節分</a>
+      <a href="/f015.html">船おろし</a>
+      <a href="/f015.html">大晦日</a>
+      <a href="/f013.html">田植え・苗供え</a>
+      <a href="/f014.html">大原延命地蔵尊祭</a>
+      <a href="/f015.html">大峯講</a>
+      <a href="/f013.html">端午の節句</a>
+      <a href="/f014.html">中野延命地蔵尊祭</a>
+      <a href="/f015.html">中野五輪さま</a>
+      <a href="/f013.html">苗代籾まき</a>
+      <a href="/f013.html">苗虫とり</a>
+      <a href="/f012.html">七草</a>
+      <a href="/f012.html">針供養</a>
+      <a href="/f014.html">百万遍</a>
+      <a href="/f012.html">初午</a>
+      <a href="/f012.html">裸参り</a>
+      <a href="/f013.html">花まつり</a>
+      <a href="/f012.html">花草だんご</a>
+      <a href="/f015.html">氏神様の年始廻り</a>
+      <a href="/f012.html">二十日正月</a>
+      <a href="/f014.html">弁天様の祭り</a>
+      <a href="/f013.html">堀ざらい</a>
+      <a href="/f015.html">神様のお立ち</a>
+      <a href="/f012.html">米とぎまつり</a>
+      <a href="/f012.html">もっちゃい休み</a>
+      <a href="/f013.html">厄除け線香焚き</a>
+      <a href="/f012.html">十日祭</a>
+      <a href="/f012.html">地区初寄合</a>
+      <a href="/f015.html">秋葉講</a>
+      <a href="/f013.html">若宮まつり</a>
+      <a href="/f014.html">虫送り</a>
+      <a href="/f012.html">ひなまつり</a>
+      <a href="/f013.html">パン割り</a>
+      <a href="/f015.html">七五三</a>
+      <a href="/f015.html">観音寺の酉の市</a>
+    </div>
+
+    <h2>民俗語彙ミニ辞典</h2>
+    <p>本特集に出てくる、福田の民俗に関わる言葉を簡潔に説明する。いずれも冊子の記述にもとづく。</p>
+    <dl class="gloss">
+      <dt>御宜（おんぎ）</dt><dd>行事のとき神事を担う神役。米とぎまつりや氏神様の年始廻りでは、御宜・相御宜が選ばれ、村中をまわって行事を中心になって担った。</dd>
+      <dt>年番・当番</dt><dd>毎年持ち回りで行事の世話をする役。神社の祓いや祭礼の準備などを受け持った。役がまわることで、共同体の一員であることが確かめられた。</dd>
+      <dt>講（こう）</dt><dd>同じ神仏を信じる人びとの集まり、またその集会。秋葉講・庚申講・大峯講などがあり、信仰の場であると同時に、村内の親睦・情報交換・相互扶助の場でもあった。</dd>
+      <dt>さなぶり</dt><dd>田植えが終わったことを祝い、骨を休める行事。役場のさなぶり太鼓を合図に農作業を休み、手伝いに来た人へ赤飯を配った。</dd>
+      <dt>丑浜（うしはま）</dt><dd>夏の土用の丑の日に浜へ出て潮を浴び、皮膚を丈夫にする行事。海辺は遊ぶ人で賑わう一方、水難への警戒も重ねられた。</dd>
+      <dt>亥の子（いのこ）</dt><dd>旧暦十月（月おくれの十一月）の亥の日に、ぼた餅を供えて田の神を祀り、収穫を祝う行事。猪の多産にちなみ子孫繁栄も願う。</dd>
+      <dt>施餓鬼（せがき）</dt><dd>祀る縁者のない霊（無縁仏）や餓鬼を供養する仏事。五色の旗を立てて読経した。川や海で営むものを川施餓鬼という。</dd>
+      <dt>精霊流し</dt><dd>盆の終わりに、精霊棚の供物などを川へ流して先祖の霊を送る行事。現在は焼却することが多い。</dd>
+      <dt>地の神様（オシャガミ様）</dt><dd>屋敷の北西隅に祀られる家の神。十二月十五日に砂を敷き社を新しくして赤飯を供えた。亡くなった家の人が五十年を経て地の神になるという言い伝えもある。</dd>
+      <dt>御垢離（おこり）</dt><dd>川や海の水で身を清めること。御垢離病気平癒祈願では、太田川の御垢離場で身を清めて病人の平癒を祈った。</dd>
+      <dt>お日待（おひまち）</dt><dd>朝日を拝む信仰行事。十月のお日待では小餅を作って朝日に供え、親類を迎えてもてなした。</dd>
+      <dt>もっちゃい休み</dt><dd>小正月（一月十五・十六日）の休み。小豆粥を供え、若者の成人を祝った。</dd>
+      <dt>蓬松（よもまつ）／十日祭</dt><dd>中野で一月十日に営まれる祭礼。選ばれた若者が一日の「生き神」役をつとめると伝えられる神仏混淆の行事。</dd>
+    </dl>
+
+    <h2>寺社・講・家の信仰の分類表</h2>
+    <p>福田の信仰を、それが結びつく単位（寺社／講／家）で整理する。第5回「秋から冬へ」で示した三層の構造に対応する。</p>
+    <div class="tbl"><table>
+      <thead><tr><th>分類</th><th>結びつく単位</th><th>主な行事・対象</th><th>主な場所</th></tr></thead>
+      <tbody>
+        <tr><td>寺社の信仰</td><td>集落・氏子</td><td>秋祭り・白酒祭り・花まつり・施餓鬼・朝観音</td><td>六社神社・中島神明宮・白山神社・観音寺ほか</td></tr>
+        <tr><td>講の信仰</td><td>同信仰者の仲間</td><td>庚申講・秋葉講・大峯講・正五九祭</td><td>会所・公会堂・春日山・大峯さま</td></tr>
+        <tr><td>家・屋敷の信仰</td><td>家・世帯</td><td>恵比須講・地の神様・金比羅のお日待・七草・お日待</td><td>各家の神棚・屋敷の北西隅・親方の家</td></tr>
+        <tr><td>農漁業の信仰</td><td>生業（農家・漁師）</td><td>打ち初め・苗供え・伊勢参り・船おろし・雨乞い</td><td>苗代田・恵比須様・伊勢神宮・造船場・鎌田神明宮</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2>参考資料一覧</h2>
+    <div class="sources" style="max-width:none;padding:0;">
+      <ul style="padding-left:1.2em;">
+        <li>福田町教育委員会『年中行事と昔ばなし』（私たちの福田 第三集、一九八七年）</li>
+        <li>磐田市公式資料（地区別人口・町村沿革・通学区域ほか）</li>
+        <li>『福田町（静岡県）』『磐田市』ほか沿革に関する公開資料</li>
+        <li>磐田物語 <a href="/01008-fukude.html">福田地区入口ページ</a>（町村沿革・大字一覧・神社）</li>
+      </ul>
+    </div>
+
+    <h2>今後調査したい項目</h2>
+    <div class="future">
+      <p>本特集は、一冊の地域冊子を入口とした第一段階の整理である。今後、次のような点を調べ、追記していきたい。</p>
+      <ul>
+        <li>各行事の現在の継続状況（いまも続いているか、いつ途絶えたか）。</li>
+        <li>地区ごと・家ごとの行事の違いと、呼び名の差。</li>
+        <li>冊子の昔ばなしの本文と、語り手・採録の経緯。</li>
+        <li>八衛門・五輪さまなど、水害と犠牲にまつわる伝承の裏づけ。</li>
+        <li>神社の創建年代や由緒など、冊子の記述の史料的な確認。</li>
+        <li>写真・絵図資料（権利を確認のうえでの掲載）。</li>
+      </ul>
+    </div>
+
+    <div class="note"><span class="nt">この資料編について</span>掲載した行事名・時期・分類は、冊子の記述を磐田物語が整理し直したものです。冊子には史料による裏づけが取れていない年代・由緒も含まれます。誤りや補足にお気づきの方、また現在の継続状況をご存じの方は、<a href="/bbs.html">みんなの掲示板</a>などからお知らせください。</div>
+
+  </article>
+</main>
+
+<div class="sources">
+  <h3>主な参考資料・出典</h3>
+  <ul>
+    <li>福田町教育委員会『年中行事と昔ばなし』（私たちの福田 第三集、一九八七年）</li>
+    <li>磐田市公式資料／磐田物語 福田地区入口ページ</li>
+  </ul>
+</div>
+
+<nav class="series" aria-label="この特集の構成">
+  <div class="sh">この特集（福田の年中行事と昔ばなし）の他のページ</div>
+  <ol>
+    <li><a href="/f011.html"><span class="n">1</span>福田の年中行事と昔ばなし（総論）</a></li>
+    <li><a href="/f012.html"><span class="n">2</span>正月から春へ ── 福田の年始行事と村の信仰</a></li>
+    <li><a href="/f013.html"><span class="n">3</span>春から初夏へ ── 農事、寺社、講がつないだ地域共同体</a></li>
+    <li><a href="/f014.html"><span class="n">4</span>夏と盆 ── 供養、水辺、家の記憶</a></li>
+    <li><a href="/f015.html"><span class="n">5</span>秋から冬へ ── 祭礼、講、神仏への祈り</a></li>
+    <li><a href="/f016.html"><span class="n">6</span>福田の昔ばなしと語りの文化</a></li>
+    <li class="here"><a><span class="n">7</span>福田 年中行事・民俗語彙索引（資料編・このページ）</a></li>
+  </ol>
+</nav>
+
+<div class="article-nav">
+  <a class="primary" href="/01008-fukude.html">福田地区トップへ戻る</a>
+  <a class="ghost" href="/f016.html">← 昔ばなしと語りの文化</a>
+  <a class="ghost" href="/f011.html">特集の総論へ →</a>
+</div>
+
+<footer class="im-foot">
+<style>
+.im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+.im-foot *{box-sizing:border-box;}
+.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+.im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+.im-foot .im-brand .im-dot{color:#2f7fa3;}
+.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+.im-foot .im-links{width:100%;margin-top:6px;}
+.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+.im-foot .im-links li{font-size:13px;line-height:1.6;}
+.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+.im-foot .im-sns{width:100%;margin-top:20px;}
+.im-foot .im-icons{display:flex;gap:14px;}
+.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
+.im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
+.im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
+.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+</style>
+  <div class="im-inner">
+    <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
+      </ul>
+      <div class="im-sns">
+        <p class="im-lh">大石ひろゆきのSNS</p>
+        <div class="im-icons">
+          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.92-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://x.com/HiroyukiLawAka" target="_blank" rel="noopener" aria-label="X (旧Twitter)" title="X (旧Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+</body>
+</html>

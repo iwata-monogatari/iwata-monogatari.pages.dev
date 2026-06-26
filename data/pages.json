@@ -1,7 +1,7 @@
 ﻿{
     "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
     "schema_version": 1,
-    "updated_at": "2026-06-26",
+    "updated_at": "2026-06-27",
     "districts": [
         {
             "district_id": "mitsuke",
@@ -110,6 +110,133 @@
         "land-memory"
     ],
     "pages": [
+        {
+            "title": "福田の年中行事と昔ばなし ── 海・川・田畑に生きた暮らしの記憶（総論）",
+            "url": "f011.html",
+            "district": [
+                "fukude"
+            ],
+            "themes": [
+                "festival",
+                "life",
+                "shrine-temple",
+                "land-memory"
+            ],
+            "content_type": "feature",
+            "published_at": "2026-06-27",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "福田町教育委員会『年中行事と昔ばなし』を手がかりに、福田の正月・盆・秋祭り・講・家の信仰、海と田畑の暮らしを読み解く7ページ特集の総論。",
+            "parent": "01008-fukude.html"
+        },
+        {
+            "title": "正月から春へ ── 福田の年始行事と村の信仰",
+            "url": "f012.html",
+            "district": [
+                "fukude"
+            ],
+            "themes": [
+                "festival",
+                "life",
+                "shrine-temple"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-27",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "元旦・仕事始め・七草・裸参り・十日祭・米とぎまつり・節分・初午・針供養・ひなまつりまで、福田の年始から春の行事と村の信仰を読む。",
+            "parent": "01008-fukude.html"
+        },
+        {
+            "title": "春から初夏へ ── 農事、寺社、講がつないだ地域共同体",
+            "url": "f013.html",
+            "district": [
+                "fukude"
+            ],
+            "themes": [
+                "festival",
+                "life",
+                "shrine-temple"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-27",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "花まつり・若宮まつり・伊勢参り・苗代籾まき・堀ざらい・苗供え・端午の節句・さなぶり。農事と信仰が重なる福田の春から初夏を読む。",
+            "parent": "01008-fukude.html"
+        },
+        {
+            "title": "夏と盆 ── 供養、水辺、家の記憶",
+            "url": "f014.html",
+            "district": [
+                "fukude"
+            ],
+            "themes": [
+                "festival",
+                "life",
+                "shrine-temple"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-27",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "お盆・施餓鬼・精霊流し・川施餓鬼・七夕・丑浜・延命地蔵尊祭・百万遍。先祖と生者が向き合う福田の夏と盆を読む。",
+            "parent": "01008-fukude.html"
+        },
+        {
+            "title": "秋から冬へ ── 祭礼、講、神仏への祈り",
+            "url": "f015.html",
+            "district": [
+                "fukude"
+            ],
+            "themes": [
+                "festival",
+                "life",
+                "shrine-temple"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-27",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "秋祭りと伊勢神楽・白酒祭り・お日待・亥の子・七五三・酉の市・恵比須講・庚申講・地の神様。収穫と感謝の秋から冬を読む。",
+            "parent": "01008-fukude.html"
+        },
+        {
+            "title": "福田の昔ばなしと語りの文化 ── 伝承を地域史として読む",
+            "url": "f016.html",
+            "district": [
+                "fukude"
+            ],
+            "themes": [
+                "life",
+                "land-memory",
+                "festival"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-27",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "八衛門や中野五輪さまの伝承を入口に、福田の昔ばなしを地域の記憶として読み直し、これからの聞き取りを呼びかける。",
+            "parent": "01008-fukude.html"
+        },
+        {
+            "title": "福田 年中行事・民俗語彙索引（資料編）",
+            "url": "f017.html",
+            "district": [
+                "fukude"
+            ],
+            "themes": [
+                "festival",
+                "life",
+                "shrine-temple"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-27",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "月別一覧・行事名索引・民俗語彙ミニ辞典・分類表で、福田の年中行事を横断的に探せる資料編。",
+            "parent": "01008-fukude.html"
+        },
         {
             "title": "磐田市見付の歴史と町内案内",
             "url": "m018.html",
