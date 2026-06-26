@@ -30,7 +30,7 @@ export async function onRequest(context) {
 
 async function weeklyRanking(kv, limit) {
   const totals = new Map();
-  const days = Array.from({ length: 7 }, (_, i) => jstDate(-i));
+  const days = Array.from({ length: 3 }, (_, i) => jstDate(-i));
 
   for (const day of days) {
     let cursor;
