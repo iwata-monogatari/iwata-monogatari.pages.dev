@@ -1,7 +1,7 @@
 {
     "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
     "schema_version": 1,
-    "updated_at": "2026-06-25",
+    "updated_at": "2026-06-26",
     "districts": [
         {
             "district_id": "mitsuke",
@@ -962,6 +962,23 @@
             "status": "published",
             "summary": "江戸期の村名、町村制、磐田町成立、市制施行、2005年合併までを地名の記憶として読む。",
             "parent": "index.html"
+        },
+        {
+            "title": "城之崎遺跡 - 磐田原台地南部に残された弥生の住まいと古墳の記憶",
+            "url": "u004.html",
+            "district": [
+                "mikuriya"
+            ],
+            "themes": [
+                "land-memory",
+                "village-history"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-26",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "磐田市西貝塚の城之崎遺跡を、弥生時代後期の高地性集落、城之崎2号墳・3号墳、古墳封土が住居跡を守った重層性から読み直す。",
+            "parent": "01003-mikuriya.html"
         }
     ]
 }
