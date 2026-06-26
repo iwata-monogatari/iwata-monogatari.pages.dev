@@ -1,75 +1,94 @@
-// Cloudflare Pages Function — アクセスカウンター
-// 配置場所: リポジトリ直下の  functions/api/counter.js
-// 公開URL:  https://iwata-monogatari.pages.dev/api/counter
-//
-// 必要な設定: Pages プロジェクトに KV ネームスペースを「COUNTER」という
-//             変数名でバインドしてください（手順は README を参照）。
-//
-// 集計方針（Cookieベース・ユニーク訪問者）:
-//   - 同じ人は 1 日 1 回だけカウンア�（Cookie で判定）
-//   - today     = 本日のユニーク訪問者数（日本時間）
-//   - yesterday = 昨日のユニーク訪問者数
-//   - total     = 累計（日々のユニーク数の積み上げ）
+// Cloudflare Pages Function — access counter and weekly page ranking.
+// Public URLs:
+//   /api/counter
+//   /api/counter?ranking=weekly&limit=10
 
 export async function onRequest(context) {
   const { request, env } = context;
   const kv = env.COUNTER;
 
-  // KV が未設定でもページを壊しないようにエラーを返す
   if (!kv) {
-    return json({ today: 0, yesterday: 0, total: 0, error: "KV未設定" }, {});
+    return json({ today: 0, yesterday: 0, total: 0, items: [], error: "KV未設定" });
   }
 
-  // 日本時間（UTC+9）の YYYY-MM-DD を作る
-  const jst = (offsetDays = 0) =>
-    new Date(Date.now() + 9 * 3600e3 + offsetDays * 86400e3)
-      .toISOString()
-      .slice(0, 10);
-  const today = jst(0);
-  const yesterday = jst(-1);
-  const todayKey = "day:" + today;
+  const url = new URL(request.url);
+  if (url.searchParams.get("ranking") === "weekly") {
+    const limit = clampInt(url.searchParams.get("limit"), 10, 1, 50);
+    return json(await weeklyRanking(kv, limit));
+  }
 
-  // Cookie を確認（本日すでにカウント済みか）
-  const cookie = request.headers.get("Cookie") || "";
-  const m = cookie.match(/(?:^|;\s*)iv_seen=([0-9-]+)/);
-  const alreadyToday = m && m[1] === today;
-
-  // 現在値を読み込む
-  let [todayCount, yCount, total] = await Promise.all([
-    kv.get(todayKey).then((v) => parseInt(v || "0", 10) || 0),
-    kv.get("day:" + yesterday).then((v) => parseInt(v || "0", 10) || 0),
-    kv.get("total").then((v) => parseInt(v || "0", 10) || 0),
+  const today = jstDate(0);
+  const yesterday = jstDate(-1);
+  const [todayCount, yCount, total] = await Promise.all([
+    getInt(kv, `day:${today}`),
+    getInt(kv, `day:${yesterday}`),
+    getInt(kv, "total"),
   ]);
 
-  // 新規（本日初回）の訪問だけカウントアップ
-  let counted = false;
-  if (!alreadyToday) {
-    todayCount += 1;
-    total += 1;
-    counted = true;
-    await Promise.all([
-      // 日別キーは約400日で自動削除（KVを肥大化させない）
-      kv.put(todayKey, String(todayCount), { expirationTtl: 60 * 60 * 24 * 400 }),
-      kv.put("total", String(total)),
-    ]);
-  }
-
-  const extraHeaders = {};
-  if (counted) {
-    // 「本日カウント済み」の印を 2 日間保持
-    extraHeaders["Set-Cookie"] =
-      `iv_seen=${today}; Path=/; Max-Age=172800; SameSite=Lax; Secure`;
-  }
-
-  return json({ today: todayCount, yesterday: yCount, total }, extraHeaders);
+  return json({ today: todayCount, yesterday: yCount, total });
 }
 
-function json(obj, extraHeaders) {
+async function weeklyRanking(kv, limit) {
+  const totals = new Map();
+  const days = Array.from({ length: 7 }, (_, i) => jstDate(-i));
+
+  for (const day of days) {
+    let cursor;
+    do {
+      const listed = await kv.list({ prefix: `page:${day}:`, cursor });
+      cursor = listed.cursor;
+      await Promise.all(
+        listed.keys.map(async (entry) => {
+          const path = entry.name.slice(`page:${day}:`.length);
+          if (isExcludedFromRanking(path)) return;
+          const count = await getInt(kv, entry.name);
+          totals.set(path, (totals.get(path) || 0) + count);
+        })
+      );
+    } while (cursor);
+  }
+
+  const items = Array.from(totals.entries())
+    .map(([path, count]) => ({ path, count }))
+    .sort((a, b) => b.count - a.count || a.path.localeCompare(b.path))
+    .slice(0, limit);
+
+  return {
+    range: "weekly",
+    days,
+    generated_at: new Date().toISOString(),
+    items,
+  };
+}
+
+function isExcludedFromRanking(path) {
+  if (!path || path === "/" || path === "/index.html") return true;
+  if (/^\/010\d{2}-/i.test(path)) return true;
+  if (/^\/(assets|images|saguchi)\//i.test(path)) return true;
+  if (/\.(png|jpe?g|webp|avif|gif|svg|pdf|ico)$/i.test(path)) return true;
+  if (path === "/c019.html" || path === "/c020.html") return true;
+  return false;
+}
+
+function jstDate(offsetDays) {
+  return new Date(Date.now() + 9 * 3600e3 + offsetDays * 86400e3).toISOString().slice(0, 10);
+}
+
+async function getInt(kv, key) {
+  return parseInt((await kv.get(key)) || "0", 10) || 0;
+}
+
+function clampInt(value, fallback, min, max) {
+  const n = parseInt(value || "", 10);
+  if (!Number.isFinite(n)) return fallback;
+  return Math.max(min, Math.min(max, n));
+}
+
+function json(obj) {
   return new Response(JSON.stringify(obj), {
     headers: {
       "Content-Type": "application/json; charset=utf-8",
       "Cache-Control": "no-store",
-      ...extraHeaders,
     },
   });
 }
