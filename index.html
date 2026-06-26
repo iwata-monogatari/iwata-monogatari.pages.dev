@@ -293,6 +293,33 @@ nav.menu a:hover{color:var(--brown-deep);}
   </div>
 </section>
 
+<style>
+  .special-movie-banner{max-width:1180px;margin:24px auto 4px;padding:0 22px;}
+  .special-movie-banner__link{display:flex;align-items:stretch;gap:22px;text-decoration:none;color:var(--ink);background:linear-gradient(135deg,#eaf3fa 0%,#fffdf7 58%,#f6efe1 100%);border:1px solid var(--line);border-radius:16px;padding:22px 26px;box-shadow:0 1px 2px rgba(80,60,40,.06),0 10px 28px rgba(31,58,72,.08);transition:.2s;}
+  .special-movie-banner__link:hover{transform:translateY(-2px);border-color:var(--brown);box-shadow:0 14px 34px rgba(31,58,72,.13);}
+  .special-movie-banner__text{flex:1 1 auto;min-width:0;}
+  .special-movie-banner__eyebrow{font-size:11.5px;letter-spacing:.18em;color:var(--accent-blue);font-weight:700;margin:0 0 8px;}
+  .special-movie-banner__text h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:clamp(20px,3vw,27px);line-height:1.45;color:var(--ink);margin:0 0 10px;letter-spacing:.02em;border:0;padding:0;}
+  .special-movie-banner__text p{font-size:14px;color:var(--ink-soft);margin:0 0 14px;line-height:1.8;}
+  .special-movie-banner__button{display:inline-block;background:var(--brown);color:#fff;font-size:14px;font-weight:700;border-radius:999px;padding:9px 20px;}
+  .special-movie-banner__flyer{flex:0 0 132px;width:132px;height:auto;align-self:center;border-radius:8px;box-shadow:0 6px 18px rgba(31,58,72,.18);}
+  @media(max-width:680px){
+    .special-movie-banner__link{flex-direction:column-reverse;gap:16px;padding:18px 18px;}
+    .special-movie-banner__flyer{flex:0 0 auto;width:120px;align-self:flex-start;}
+  }
+</style>
+<section class="special-movie-banner" aria-label="映画『お別れの歌』特別コンテンツ">
+  <a href="/c027.html" class="special-movie-banner__link">
+    <div class="special-movie-banner__text">
+      <p class="special-movie-banner__eyebrow">SPECIAL ｜ 磐田の風景が映画に残る</p>
+      <h2>磐田の風景が、映画になった。</h2>
+      <p>映画『お別れの歌』に残された、今の磐田の記憶。映画は物語であると同時に、まちの姿を未来へ残す記録でもあります。</p>
+      <span class="special-movie-banner__button">特別ページを読む →</span>
+    </div>
+    <img src="/assets/owakarenouta/flyer-front.webp" alt="映画『お別れの歌』チラシ表面" class="special-movie-banner__flyer" loading="lazy" width="1200" height="1696">
+  </a>
+</section>
+
 <div class="portal" id="portal">
   <div class="cat-head">
     <h2>カテゴリから探す</h2>
@@ -720,6 +747,7 @@ nav.menu a:hover{color:var(--brown-deep);}
         <p class="eyebrow">NEW ｜ 新着コンテンツ</p>
         <h2 class="sectitle">新着の記事</h2>
         <div class="cards">
+          <a class="c" href="/c027.html"><div class="k"><span class="newbadge">NEW</span>特別コンテンツ</div><h4>映画『お別れの歌』と磐田の風景</h4><p>磐田市内で撮影された映画を、今の磐田が映像として残された文化的出来事として記録する特別ページ。チラシ表裏も掲載。<span class="more">読む →</span></p></a>
           <a class="c" href="/u004.html"><div class="k"><span class="newbadge">NEW</span>考古・遺跡</div><h4>城之崎遺跡</h4><p>弥生後期の高地性集落と、城之崎2号墳・3号墳。古墳の封土が古い住居跡を守った重層性を読む長編学術HTML。<span class="more">読む →</span></p></a>
           <a class="c" href="/n023.html"><div class="k"><span class="newbadge">NEW</span>中泉</div><h4>中泉の生い立ち</h4><p>国府・御殿・代官所・駅前。古代から近代まで、磐田中心部としての中泉を三層で読む。<span class="more">読む →</span></p></a>
           <a class="c" href="/c024.html"><div class="k"><span class="newbadge">NEW</span>今之浦</div><h4>今之浦と大之浦</h4><p>万葉集に見える大之浦、湿地・水田、今之浦川、区画整理を重ねて水辺の記憶をたどる。<span class="more">読む →</span></p></a>
