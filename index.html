@@ -202,15 +202,17 @@ nav.menu a:hover{color:var(--brown-deep);}
 .memory-cta-title{font-weight:700;font-size:1.12rem;margin:0 0 8px;color:var(--ink);}
 .memory-cta-box>p{font-size:14px;color:var(--ink-soft);margin:0;line-height:1.8;}
 .memory-cta-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:18px;}
-.primary-button,.secondary-button{display:inline-block;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14px;}
-.primary-button{background:var(--brown);color:#fff;}
-.primary-button:hover{background:var(--brown-deep);}
-.secondary-button{border:1px solid var(--brown);color:var(--brown-deep);background:#fff;}
-.secondary-button:hover{background:var(--paper-deep);}
+.primary-button,.secondary-button,.memory-cta-button{display:inline-block;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14px;border:1px solid transparent;}
+.memory-cta-button--inheritance{background:#2f6f9f;color:#fff;}
+.memory-cta-button--inheritance:hover{background:#255a82;color:#fff;}
+.memory-cta-button--home{background:#3f755f;color:#fff;}
+.memory-cta-button--home:hover{background:#315f4d;color:#fff;}
+.memory-cta-button--realestate{background:#8a5a2b;color:#fff;}
+.memory-cta-button--realestate:hover{background:#704720;color:#fff;}
 .area-classification-links h3{text-align:center;}
 .area-classification-links .area-link-list{align-items:center;text-align:center;}
 .area-classification-links .area-link-list a{min-width:9.5em;text-align:center;}
-@media(max-width:760px){.memory-cta-buttons .primary-button,.memory-cta-buttons .secondary-button{flex:1 1 100%;text-align:center;}}
+@media(max-width:760px){.memory-cta-buttons .primary-button,.memory-cta-buttons .secondary-button,.memory-cta-buttons .memory-cta-button{flex:1 1 100%;text-align:center;}}
 </style>
 </head>
 <body>
@@ -304,7 +306,7 @@ nav.menu a:hover{color:var(--brown-deep);}
   .special-movie-banner__eyebrow{font-size:11.5px;letter-spacing:.18em;color:var(--accent-blue);font-weight:700;margin:0 0 8px;}
   .special-movie-banner__text h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:clamp(20px,3vw,27px);line-height:1.45;color:var(--ink);margin:0 0 10px;letter-spacing:.02em;border:0;padding:0;}
   .special-movie-banner__text p{font-size:14px;color:var(--ink-soft);margin:0 0 14px;line-height:1.8;}
-  .special-movie-banner__button{display:inline-block;background:var(--brown);color:#fff;font-size:14px;font-weight:700;border-radius:999px;padding:9px 20px;}
+  .special-movie-banner__button{display:block;width:max-content;margin-inline:auto;background:var(--brown);color:#fff;font-size:14px;font-weight:700;border-radius:999px;padding:9px 20px;}
   .special-movie-banner__flyer{flex:0 0 132px;width:132px;height:auto;align-self:center;border-radius:8px;box-shadow:0 6px 18px rgba(31,58,72,.18);}
   @media(max-width:680px){
     .special-movie-banner__link{flex-direction:column-reverse;gap:16px;padding:18px 18px;}
@@ -894,9 +896,9 @@ nav.menu a:hover{color:var(--brown-deep);}
     <p class="memory-cta-title">古い家・相続した実家・空き家の相談はこちら</p>
     <p>売る・貸す・残す・解体する前に、土地と建物の背景をふまえて整理します。磐田・袋井周辺の不動産と、親の家の相談に対応しています。</p>
     <div class="memory-cta-buttons">
-      <a class="primary-button" href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/">相続・空き家相談ページへ</a>
-      <a class="secondary-button" href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/">実家じまい・空き家相談ページへ</a>
-      <a class="secondary-button" href="https://www.fujigaoka-service.info/fudosan">富士ヶ丘サービス不動産ページへ</a>
+      <a class="memory-cta-button memory-cta-button--inheritance" href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/">相続・空き家相談ページへ</a>
+      <a class="memory-cta-button memory-cta-button--home" href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/">実家じまい・空き家相談ページへ</a>
+      <a class="memory-cta-button memory-cta-button--realestate" href="https://www.fujigaoka-service.info/fudosan">富士ヶ丘サービス不動産ページへ</a>
     </div>
   </div>
 </section>
