@@ -197,28 +197,34 @@
     <figure class="fig" aria-label="福田の海・太田川・田畑・集落の関係を示す地理概念図">
       <svg viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg" role="img">
         <title>福田の地理概念図</title>
-        <rect x="0" y="0" width="520" height="260" fill="#fbfdff"/>
-        <!-- sea -->
-        <rect x="0" y="200" width="520" height="60" fill="#dcebf3" opacity="0"/>
-        <path d="M0 205 Q40 198 80 205 T160 205 T240 205 T320 205 T400 205 T480 205 T560 205 V260 H0 Z" fill="#d7ecf2" stroke="#9cc6d6" stroke-width="1"/>
-        <text x="260" y="245" font-size="13" fill="#2f6f88" font-weight="700" text-anchor="middle" font-family="'Shippori Mincho',serif">遠州灘（海）</text>
-        <!-- dune -->
-        <path d="M0 200 Q120 178 260 188 T520 196 V205 H0 Z" fill="#efe6cf" stroke="#d8c9a3" stroke-width="1"/>
-        <text x="120" y="198" font-size="10" fill="#7a5a26">砂丘・黒松防風林</text>
-        <!-- fields -->
-        <rect x="20" y="70" width="360" height="115" rx="6" fill="#eaf3e6" stroke="#bcd6b6" stroke-width="1"/>
-        <text x="120" y="120" font-size="12" fill="#3c6b3c" font-weight="700" font-family="'Shippori Mincho',serif">田畑・用水（堀）</text>
-        <text x="60" y="150" font-size="9.5" fill="#4a6b4a">苗代・田植え・堀ざらい</text>
+        <rect x="0" y="0" width="520" height="260" fill="#f7fbfa"/>
+        <!-- land and fields -->
+        <path d="M24 54 C110 34 202 44 286 36 C344 31 394 39 456 30 L456 186 C390 174 330 182 260 170 C178 156 102 172 24 158 Z" fill="#eaf3e6" stroke="#bcd6b6" stroke-width="1.2"/>
+        <path d="M48 96 C126 82 198 95 268 84 C320 76 360 82 402 74" fill="none" stroke="#c9dfc4" stroke-width="10" stroke-linecap="round" opacity=".75"/>
+        <path d="M60 132 C132 120 196 136 266 124 C320 116 356 123 394 112" fill="none" stroke="#c9dfc4" stroke-width="10" stroke-linecap="round" opacity=".75"/>
+        <text x="92" y="80" font-size="12" fill="#3c6b3c" font-weight="700" font-family="'Shippori Mincho',serif">田畑・用水（堀）</text>
+        <text x="76" y="164" font-size="9.5" fill="#4a6b4a">苗代・田植え・堀ざらい</text>
+
         <!-- villages -->
-        <g>
-          <rect x="150" y="90" width="26" height="20" rx="2" fill="#fff" stroke="#9aa9a0"/>
-          <rect x="200" y="110" width="26" height="20" rx="2" fill="#fff" stroke="#9aa9a0"/>
-          <rect x="120" y="135" width="26" height="20" rx="2" fill="#fff" stroke="#9aa9a0"/>
+        <g fill="#6f7f63" stroke="#f7fbfa" stroke-width="2">
+          <circle cx="170" cy="95" r="5"/>
+          <circle cx="202" cy="108" r="5"/>
+          <circle cx="142" cy="124" r="5"/>
+          <circle cx="226" cy="135" r="5"/>
         </g>
-        <text x="250" y="86" font-size="10" fill="#5b6b74">集落（家・氏神・寺）</text>
+        <path d="M142 124 C166 112 188 104 202 108 C212 113 220 124 226 135" fill="none" stroke="#6f7f63" stroke-width="1.4" stroke-linecap="round" opacity=".55"/>
+        <text x="238" y="111" font-size="10" fill="#5b6b74">集落（家・氏神・寺）</text>
+
         <!-- river -->
-        <path d="M420 20 Q400 90 430 150 T415 205" fill="none" stroke="#7fb6cc" stroke-width="14" stroke-linecap="round" opacity=".75"/>
+        <path d="M420 20 C398 78 432 126 418 184 C415 196 412 207 414 218" fill="none" stroke="#7fb6cc" stroke-width="15" stroke-linecap="round" opacity=".75"/>
+        <path d="M420 20 C398 78 432 126 418 184 C415 196 412 207 414 218" fill="none" stroke="#e7f6fb" stroke-width="4" stroke-linecap="round" opacity=".65"/>
         <text x="455" y="110" font-size="12" fill="#2f6f88" font-weight="700" font-family="'Shippori Mincho',serif" transform="rotate(90 455 110)">太田川</text>
+
+        <!-- dune and sea -->
+        <path d="M0 190 C98 172 196 184 286 178 C376 172 450 184 520 190 L520 210 L0 210 Z" fill="#efe6cf" stroke="#d8c9a3" stroke-width="1"/>
+        <text x="132" y="194" font-size="10" fill="#7a5a26">砂丘・黒松防風林</text>
+        <path d="M0 212 C44 203 88 212 132 205 C184 197 226 214 278 207 C332 199 382 213 432 207 C466 203 494 207 520 211 L520 260 H0 Z" fill="#d7ecf2" stroke="#9cc6d6" stroke-width="1"/>
+        <text x="260" y="245" font-size="13" fill="#2f6f88" font-weight="700" text-anchor="middle" font-family="'Shippori Mincho',serif">遠州灘（海）</text>
       </svg>
       <figcaption>海・砂丘・田畑・集落・太田川の重なりを抽象化した模式図。福田の年中行事は、この複数の生活空間にまたがって営まれた。地理を正確に示す地図ではない。</figcaption>
     </figure>
