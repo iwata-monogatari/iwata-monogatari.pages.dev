@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -147,10 +147,90 @@
       <p class="note">この地区分類は、現在の行政区分をそのまま写したものではありません。旧町村の沿革、学校区、大字、生活圏、地域の記憶をもとにした、磐田物語独自の分類です。内容は今後の資料確認により随時更新します。</p>
     </section>
 
-    <section class="area-section">
+        <section class="area-section" data-filter-scope>
       <h2>この地区の歴史を読む</h2>
-      <p>福田地区に関係する読み物・特集・史料ページを、今後ここに新着順で整理していきます。現在は準備中で、記事が追加されしだい一覧表示します。</p>
-      <div class="district-empty">この地区の歴史読み物・史料ページは、現在準備中です。確認できた史料・記憶から順に追加していきます。</div>
+      <p>福田地区に関係する読み物・特集・史料ページを、新着順に全件表示しています。テーマ別に絞り込んで探すこともできます（絞り込みは JavaScript 有効時に動作します。無効でも全件表示されます）。</p>
+
+      <div class="district-filter" aria-label="テーマ別に絞り込む">
+        <button type="button" data-filter="all" aria-pressed="true">すべて</button>
+        <button type="button" data-filter="shiryo">史料</button>
+        <button type="button" data-filter="old-photo">古写真</button>
+        <button type="button" data-filter="old-map">古地図</button>
+        <button type="button" data-filter="place-name">地名</button>
+        <button type="button" data-filter="village-history">町村沿革</button>
+        <button type="button" data-filter="shrine-temple">神社仏閣</button>
+        <button type="button" data-filter="festival">祭り</button>
+        <button type="button" data-filter="road-traffic">街道・交通</button>
+        <button type="button" data-filter="architecture">建物・古民家</button>
+        <button type="button" data-filter="school">学校</button>
+        <button type="button" data-filter="life">暮らし</button>
+        <button type="button" data-filter="land-memory">土地の記憶</button>
+      </div>
+      <p class="district-filter-count" role="status">全10件</p>
+
+      <div class="content-cards">
+        <article class="content-card" data-district="fukude" data-theme="life land-memory road-traffic" data-published="2026-06-26">
+          <p class="card-label">暮らし</p>
+          <h3><a href="/f001.html">福田湊の発展と遠州の漁業史 ── 黒潮の恵みと太田川河口の天然湊</a></h3>
+          <p>太田川河口に開け、強風を避ける避難湊として栄えた福田湊。黒潮の恵みとともに生きた漁師たちの歩み。</p>
+        </article>
+        <article class="content-card" data-district="fukude" data-theme="life land-memory" data-published="2026-06-26">
+          <p class="card-label">暮らし</p>
+          <h3><a href="/f002.html">福田港のシラス船引き網漁と沿岸漁業 ── 白いダイヤの歴史</a></h3>
+          <p>漂砂の難題を克服し近代港へ生まれ変わった福田港。二そう引き網によるシラス漁と超高速の加工リレー。</p>
+        </article>
+        <article class="content-card" data-district="fukude" data-theme="life land-memory" data-published="2026-06-26">
+          <p class="card-label">暮らし</p>
+          <h3><a href="/f003.html">別珍・コールテンと福田の織物産業 ── 「世界のコーデュロイ」を産んだ職人の技</a></h3>
+          <p>国内シェアの9割以上を占める起毛織物の聖地。伝統の綿紬から超絶技巧のカッティング技術への革新。</p>
+        </article>
+        <article class="content-card" data-district="fukude" data-theme="life land-memory" data-published="2026-06-26">
+          <p class="card-label">暮らし</p>
+          <h3><a href="/f004.html">太田川河口のウナギ養殖と淡水水産 ── 豊かな水系が育んだ養殖フロンティア</a></h3>
+          <p>太田川の豊富な淡水と地下水を活かし、浜名湖と並び栄えたウナギ養殖。泥にまみれ池を掘った人々の歴史。</p>
+        </article>
+        <article class="content-card" data-district="fukude" data-theme="village-history life" data-published="2026-06-26">
+          <p class="card-label">町村沿革</p>
+          <h3><a href="/f005.html">福島村から福田町への改称と近代行政 ── 「福の田」が紡いだ市町村沿革史</a></h3>
+          <p>明治22年の福島村から大正15年の「福田町」への昇格と改称のドラマ。自立した豊かな町としての歩み。</p>
+        </article>
+        <article class="content-card" data-district="fukude" data-theme="land-memory life" data-published="2026-06-26">
+          <p class="card-label">土地の記憶</p>
+          <h3><a href="/f006.html">豊浜の砂丘と黒松防風林 ── 海風と飛砂に挑んだ不屈の農地保全史</a></h3>
+          <p>風に舞う砂が集落や畑を呑み込む砂害。砂留めの垣を作り、手作業で松を植え続けた数百年の緑の防波堤。</p>
+        </article>
+        <article class="content-card" data-district="fukude" data-theme="festival wood-carving shrine-temple" data-published="2026-06-26">
+          <p class="card-label">祭り</p>
+          <h3><a href="/f007.html">福田まつりと華麗な中泉式屋台 ── 海を渡り届いた彫刻美術と笛の音</a></h3>
+          <p>激しくダイナミックな二輪中泉式屋台の曳き回し。名工の彫刻と夜空を揺らすお囃子の熱き伝承。</p>
+        </article>
+        <article class="content-card" data-district="fukude" data-theme="village-history land-memory life" data-published="2026-06-26">
+          <p class="card-label">町村沿革</p>
+          <h3><a href="/f008.html">太郎馬新田と清庵新田の開拓史 ── 太田川下流低地を拓いた江戸期の土木情熱</a></h3>
+          <p>太郎馬、清庵など請負人の名がついた地名。塩害と水害にさらされた泥沼を美田に変えた執念の干拓史。</p>
+        </article>
+        <article class="content-card" data-district="fukude" data-theme="shrine-temple life land-memory" data-published="2026-06-26">
+          <p class="card-label">神社仏閣</p>
+          <h3><a href="/f009.html">福田の寺社仏閣と信仰 of 歴史 ── 海上安全と家内安全を祈る海のまちの社寺</a></h3>
+          <p>津島神社をはじめとする信仰の中心。嵐を切り抜けた船乗りたちの石灯籠と、織元たちの秋葉火伏せ信仰。</p>
+        </article>
+        <article class="content-card" data-district="fukude" data-theme="life land-memory" data-published="2026-06-26">
+          <p class="card-label">暮らし</p>
+          <h3><a href="/f010.html">福田の暮らしと食文化 ── カツオ・シラスの海の幸と砂地が育んだ芋の記憶</a></h3>
+          <p>カツオや釜揚げシラス、そして砂地が産んだサツマイモと干し芋。自然のサイクルに寄り添った生活史。</p>
+        </article>
+      </div>
+      <p class="district-empty" hidden>このテーマに該当するページは、現在準備中です。</p>
+    </section>
+
+    <section class="area-section">
+      <h2>福田地区を代表するテーマ</h2>
+      <p>はじめての方に、まず見ていただきたい入口です。</p>
+      <div class="feature-strip">
+        <a href="/f001.html"><span class="ft-k">暮らし・産業</span><span class="ft-t">福田湊の発展と漁業史</span></a>
+        <a href="/f003.html"><span class="ft-k">暮らし・産業</span><span class="ft-t">別珍・コールテン織物</span></a>
+        <a href="/f006.html"><span class="ft-k">土地の記憶</span><span class="ft-t">豊浜の砂丘と防風林</span></a>
+      </div>
     </section>
 
     <section class="area-section">
