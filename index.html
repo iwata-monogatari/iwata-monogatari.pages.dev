@@ -1163,6 +1163,20 @@ nav.menu a:hover{color:var(--brown-deep);}
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
+          <li class="new-article-item news-item">
+            <a href="/matsuri.html" class="new-article-link news-link">
+              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-28">2026-06-28</time><span class="new-article-category news-tag">サイト更新</span></span>
+              <span class="new-article-title news-title">祭り特集ページの表示を改善し、全ページのデザインを統一</span>
+              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="new-article-item news-item">
+            <a href="/c034.html" class="new-article-link news-link">
+              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-28">2026-06-28</time><span class="new-article-category news-tag">サイト更新</span></span>
+              <span class="new-article-title news-title">公開記事数の表記を最新の222本に更新</span>
+              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
           <li class="new-article-item news-item" data-district="mikuriya">
             <a href="/u027.html" class="new-article-link news-link area-mikuriya">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">国指定史跡</span></span>
@@ -1683,7 +1697,7 @@ nav.menu a:hover{color:var(--brown-deep);}
     return cls.replace(/^area-/, '');
   }
 
-  fetch('/data/new-articles.json?v=20260628-matsuri')
+  fetch('/data/new-articles.json?v=20260628-matsuri2')
     .then(function(res){ return res.json(); })
     .then(function(data){
       data.sort(function(a, b){
