@@ -226,18 +226,31 @@ nav.menu a:hover{color:var(--brown-deep);}
     color: var(--c-fukude-ink);
   }
 
-  /* TOP / NEW CONTENTS */
+  /* =========================================
+     TOP / NEW CONTENTS
+     新着記事：左カラム高さ維持版
+  ========================================= */
   .news-section {
     overflow: hidden;
   }
+  /* 新着記事リスト */
   .news-list,
   .new-article-list {
     list-style: none;
-    margin: 1.2rem 0 0;
+    margin: 1rem 0 0;
     padding: 0;
     display: grid;
-    gap: 0.7rem;
+    gap: 0.42rem;
   }
+  /* 24件表示時のみ有効化する */
+  .news-list.is-scroll,
+  .new-article-list.is-scroll {
+    max-height: 34rem;
+    overflow-y: auto;
+    padding-right: 0.25rem;
+    scrollbar-width: thin;
+  }
+  /* 各記事 */
   .news-item,
   .new-article-item {
     margin: 0;
@@ -248,13 +261,13 @@ nav.menu a:hover{color:var(--brown-deep);}
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    gap: 0.65rem;
-    min-height: 44px;
-    padding: 0.85rem 1rem;
-    border: 1px solid rgba(120, 90, 50, 0.18);
-    border-radius: 14px;
-    background: rgba(255, 252, 246, 0.86);
-    color: var(--ink);
+    gap: 0.5rem;
+    min-height: 34px;
+    padding: 0.48rem 0.65rem;
+    border: 1px solid rgba(120, 90, 50, 0.16);
+    border-radius: 10px;
+    background: rgba(255, 252, 246, 0.82);
+    color: inherit;
     text-decoration: none;
     overflow: hidden;
     transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
@@ -270,16 +283,15 @@ nav.menu a:hover{color:var(--brown-deep);}
   }
   .news-meta {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 0.35rem;
+    gap: 0.32rem;
     min-width: 0;
   }
   .news-date,
   .new-article-date {
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     font-size: 0.78rem;
-    line-height: 1.2;
+    line-height: 1.45;
     color: #7d6c55;
     white-space: nowrap;
   }
@@ -287,13 +299,13 @@ nav.menu a:hover{color:var(--brown-deep);}
   .new-article-category {
     display: inline-flex;
     align-items: center;
-    max-width: 11em;
-    padding: 0.18rem 0.5rem;
-    border: 1px solid rgba(120, 90, 50, 0.24);
+    max-width: 10em;
+    padding: 0.12rem 0.42rem;
+    border: 1px solid rgba(120, 90, 50, 0.22);
     border-radius: 999px;
     background: #fff7e8;
     color: #6b4b21;
-    font-size: 0.74rem;
+    font-size: 0.70rem;
     line-height: 1.2;
     font-weight: 700;
     white-space: nowrap;
@@ -316,16 +328,17 @@ nav.menu a:hover{color:var(--brown-deep);}
     min-width: 0;
     font-family: "Zen Kaku Gothic New", sans-serif;
     color: var(--ink);
-    font-size: 0.95rem;
-    line-height: 1.55;
-    font-weight: 600;
+    font-size: 0.78rem;
+    line-height: 1.45;
+    font-weight: 500;
+    letter-spacing: 0.01em;
     overflow-wrap: anywhere;
   }
   .news-arrow,
   .new-article-arrow {
     color: var(--brown);
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.78rem;
     line-height: 1;
     white-space: nowrap;
   }
@@ -353,7 +366,11 @@ nav.menu a:hover{color:var(--brown-deep);}
   @media (max-width: 640px) {
     .news-list,
     .new-article-list {
-      gap: 0.55rem;
+      gap: 0.36rem;
+    }
+    .news-list.is-scroll,
+    .new-article-list.is-scroll {
+      max-height: 28rem;
     }
     .news-link,
     .new-article-link {
@@ -362,34 +379,36 @@ nav.menu a:hover{color:var(--brown-deep);}
         "meta arrow"
         "title arrow";
       align-items: center;
-      gap: 0.35rem 0.5rem;
-      padding: 0.78rem 0.8rem;
-      border-radius: 12px;
+      gap: 0.25rem 0.45rem;
+      min-height: 32px;
+      padding: 0.46rem 0.58rem;
+      border-radius: 9px;
     }
     .news-meta {
       grid-area: meta;
       flex-wrap: nowrap;
-      gap: 0.3rem;
+      gap: 0.26rem;
       min-width: 0;
     }
     .news-date,
     .new-article-date {
       font-size: 0.72rem;
+      line-height: 1.42;
       flex: 0 0 auto;
     }
     .news-tag,
     .new-article-category {
-      max-width: 9.5em;
-      padding: 0.14rem 0.42rem;
-      font-size: 0.68rem;
+      max-width: 8.5em;
+      padding: 0.10rem 0.36rem;
+      font-size: 0.66rem;
       flex: 0 1 auto;
     }
     .news-title,
     .new-article-title {
       grid-area: title;
-      font-size: 0.86rem;
-      line-height: 1.45;
-      font-weight: 600;
+      font-size: 0.72rem;
+      line-height: 1.42;
+      font-weight: 500;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -399,23 +418,22 @@ nav.menu a:hover{color:var(--brown-deep);}
     .new-article-arrow {
       grid-area: arrow;
       align-self: center;
-      font-size: 0.86rem;
+      font-size: 0.72rem;
       display: inline;
     }
   }
   @media (max-width: 390px) {
-    .news-link,
-    .new-article-link {
-      padding: 0.72rem 0.72rem;
-    }
+    .news-date,
     .news-title,
+    .new-article-date,
     .new-article-title {
-      font-size: 0.82rem;
-      line-height: 1.42;
+      font-size: 0.70rem;
+      line-height: 1.4;
     }
     .news-tag,
     .new-article-category {
-      max-width: 8em;
+      max-width: 7.5em;
+      font-size: 0.64rem;
     }
   }
   /* ── 障害記録ページへの案内リンク（右カラム・運営者案内の下） ── */
@@ -1077,8 +1095,9 @@ nav.menu a:hover{color:var(--brown-deep);}
 
       <section class="section news-section" id="new">
         <p class="eyebrow">NEW ｜ 新着コンテンツ</p>
-        <h2 class="sectitle">新着の記事</h2>
-        <ul class="new-article-list news-list" id="new-article-list">
+        <h2 class="sectitle">新着記事</h2>
+        <!-- 新着記事は20件まで表示 -->
+        <ul class="new-article-list news-list" id="new-article-list" aria-label="新着記事一覧">
           <li class="new-article-item news-item">
             <a href="/c035.html" class="new-article-link news-link">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-28">2026-06-28</time><span class="new-article-category news-tag">近世の磐田</span></span>
@@ -1104,6 +1123,34 @@ nav.menu a:hover{color:var(--brown-deep);}
             <a href="/c021.html" class="new-article-link news-link">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">記念物・登録文化財</span></span>
               <span class="new-article-title news-title">記念物・登録文化財16ページの読みものを公開（甲塚のクロガネモチ・善導寺大クス・医王寺庭園ほか）</span>
+              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="new-article-item news-item">
+            <a href="/c021.html" class="new-article-link news-link">
+              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">市指定無形民俗</span></span>
+              <span class="new-article-title news-title">市指定無形民俗文化財10件の読みものを公開</span>
+              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="new-article-item news-item">
+            <a href="/s019.html" class="new-article-link news-link area-nanbu">
+              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">南部・民俗</span></span>
+              <span class="new-article-title news-title">八王子神社米とぎまつり ── 下太の稲作儀礼</span>
+              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="new-article-item news-item">
+            <a href="/f019.html" class="new-article-link news-link area-fukude">
+              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">福田・民俗</span></span>
+              <span class="new-article-title news-title">中野白山神社十日祭（お箱）</span>
+              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="new-article-item news-item">
+            <a href="/t029.html" class="new-article-link news-link area-toyoda">
+              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">豊田・民俗</span></span>
+              <span class="new-article-title news-title">池田やかた祭り ── 熊野御前伝承と池田荘の記憶</span>
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
@@ -1555,7 +1602,7 @@ nav.menu a:hover{color:var(--brown-deep);}
       var list = document.getElementById('new-article-list');
       if (!list) return;
       list.innerHTML = '';
-      data.slice(0, 23).forEach(function(item){
+      data.slice(0, 20).forEach(function(item){
         var li = document.createElement('li');
         li.className = 'new-article-item news-item';
         
