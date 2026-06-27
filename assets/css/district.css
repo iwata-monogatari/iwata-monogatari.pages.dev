@@ -109,8 +109,8 @@
   font-family:"Shippori Mincho",serif;}
 .district-aside .operator-banner span:last-child{display:block;font-size:12px;line-height:1.65;}
 
-/* サイドバーは desktop で追従、mobile では通常フロー */
-@media(min-width:961px){.district-aside{position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto;}}
+/* サイドバーは固定せず、ページ全体と一緒にスクロールさせる */
+@media(min-width:961px){.district-aside{position:static;max-height:none;overflow:visible;}}
 
 /* ---- 左ナビ：地域(大字)から探す（index aside#area 由来） ---- */
 .district-aside .ooaza-search-lead{font-size:13px;color:var(--ink-soft);margin:0 0 12px;line-height:1.7;}
