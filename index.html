@@ -596,6 +596,22 @@ nav.menu a:hover{color:var(--brown-deep);}
     .special-movie-banner__link{flex-direction:column-reverse;gap:16px;padding:18px 18px;}
     .special-movie-banner__flyer{flex:0 0 auto;width:120px;align-self:flex-start;}
   }
+
+  /* 特集：磐田の祭り（右カラム ビジュアルバナー） */
+  .festival-feature{margin:0 0 22px;}
+  .festival-feature__link{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 1px 2px rgba(80,60,40,.06),0 10px 28px rgba(31,58,72,.08);transition:.2s;}
+  .festival-feature__link:hover{transform:translateY(-2px);border-color:var(--brown);box-shadow:0 14px 34px rgba(31,58,72,.14);}
+  .festival-feature__media{position:relative;line-height:0;background:linear-gradient(135deg,#A9412B 0%,#B87333 30%,#7B4BB2 55%,#1E5E9F 80%,#5F8D3B 100%);}
+  .festival-feature__img{display:block;width:100%;height:auto;aspect-ratio:8/5;object-fit:cover;}
+  .festival-feature__media.is-noimg{min-height:128px;}
+  .festival-feature__media.is-noimg::after{content:"磐田の祭り";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:"Shippori Mincho",serif;font-size:23px;font-weight:700;letter-spacing:.14em;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.35);}
+  .festival-feature__districts{position:absolute;left:0;right:0;bottom:0;display:flex;height:6px;}
+  .festival-feature__districts i{flex:1 1 0;display:block;height:100%;}
+  .festival-feature__body{padding:16px 18px 18px;}
+  .festival-feature__eyebrow{font-size:11.5px;letter-spacing:.16em;color:var(--accent-blue);font-weight:700;margin:0 0 7px;}
+  .festival-feature__title{font-family:"Shippori Mincho",serif;font-weight:700;font-size:18px;line-height:1.5;color:var(--ink);margin:0 0 9px;letter-spacing:.02em;border:0;padding:0;}
+  .festival-feature__lead{font-size:13px;color:var(--ink-soft);margin:0 0 13px;line-height:1.8;}
+  .festival-feature__button{display:block;width:max-content;background:var(--brown);color:#fff;font-size:13px;font-weight:700;border-radius:999px;padding:8px 18px;}
 </style>
 <section class="special-movie-banner" aria-label="映画『お別れの歌』特別コンテンツ">
   <a href="/c027.html" class="special-movie-banner__link">
@@ -1279,6 +1295,23 @@ nav.menu a:hover{color:var(--brown-deep);}
     </main>
 
     <aside>
+      <section class="festival-feature" aria-label="特集 磐田の祭り">
+        <a href="/matsuri.html" class="festival-feature__link">
+          <div class="festival-feature__media">
+            <img src="/assets/matsuri/feature-hero.webp" alt="掛塚まつりの屋台と提灯" class="festival-feature__img" loading="lazy" width="800" height="500"
+                 onerror="this.style.display='none';this.parentNode.classList.add('is-noimg');">
+            <span class="festival-feature__districts" aria-hidden="true">
+              <i style="background:#A9412B"></i><i style="background:#008C8C"></i><i style="background:#B87333"></i><i style="background:#7B4BB2"></i><i style="background:#5BAEC0"></i><i style="background:#5F8D3B"></i><i style="background:#1E5E9F"></i><i style="background:#D8D3C5"></i><i style="background:#7A5A36"></i>
+            </span>
+          </div>
+          <div class="festival-feature__body">
+            <p class="festival-feature__eyebrow">特集 ｜ 磐田の祭り</p>
+            <h3 class="festival-feature__title">屋台と神輿が語る、九つのまちの記憶</h3>
+            <p class="festival-feature__lead">見付天神裸祭から掛塚・福田・鎌田まで。湊の富、海の信仰、川との対峙、明治の村落再編――成り立ちで読む磐田の秋祭り。</p>
+            <span class="festival-feature__button">特集を見る →</span>
+          </div>
+        </a>
+      </section>
       <div class="side-block">
         <h3>連載で読む磐田</h3>
         <ul class="side-list" style="flex-direction:column;">
