@@ -153,16 +153,6 @@ nav.menu a:hover{color:var(--brown-deep);}
 .c h4{font-family:"Shippori Mincho",serif;font-size:15px;margin:4px 0 5px;line-height:1.38;}
 .c p{font-size:12px;line-height:1.58;color:var(--ink-soft);margin:0;}
 .c .more{color:var(--brown-deep);font-weight:700;}
-.weekly-ranking{margin-top:16px;margin-bottom:20px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 14px;box-shadow:var(--shadow);}
-.weekly-ranking h3{font-family:"Shippori Mincho",serif;font-size:16px;margin:0 0 5px;color:var(--ink);border-left:4px solid var(--accent-blue);padding-left:10px;}
-.weekly-ranking .ranking-note{font-size:12px;color:var(--ink-soft);line-height:1.7;margin:0 0 12px;}
-.ranking-list{list-style:none;margin:0;padding:0;counter-reset:rank;display:grid;gap:8px;}
-.ranking-list li{counter-increment:rank;}
-.ranking-list a,.ranking-loading{display:grid;grid-template-columns:30px 1fr;align-items:center;gap:8px;border:1px solid var(--line);border-radius:6px;background:#f8fbfd;padding:8px 9px;color:inherit;}
-.ranking-list a::before,.ranking-loading::before{content:counter(rank);display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--brown);color:#fff;font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;}
-.ranking-title{font-family:"Shippori Mincho",serif;font-size:13.5px;line-height:1.45;color:var(--ink);}
-.ranking-count{grid-column:2;font-size:11.5px;color:var(--ink-soft);font-variant-numeric:tabular-nums;white-space:nowrap;}
-.ranking-empty{font-size:12.5px;color:var(--ink-soft);margin:0;line-height:1.7;}
 .newbadge{display:inline-block;background:var(--brown);color:#fff;font-size:10.5px;font-weight:700;letter-spacing:.08em;padding:2px 8px;border-radius:3px;margin-right:6px;vertical-align:middle;}
 .gallery-band{background:var(--paper-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:10px 0 40px;}
 .gallery-band .inner{max-width:1180px;margin:0 auto;padding:34px 22px;}
@@ -800,76 +790,6 @@ nav.menu a:hover{color:var(--brown-deep);}
         </details>
       </div>
       </div>
-        <!-- アクセスカウンター -->
-        <div class="side-block" id="access">
-          <h3>アクセス</h3>
-          <div id="access-counter" class="access-counter">
-            <table class="access-table">
-              <thead>
-                <tr>
-                  <th scope="col" colspan="2">ユニークユーザ（人）</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">本日</th>
-                  <td id="ac-users-today">-</td>
-                </tr>
-                <tr>
-                  <th scope="row">昨日</th>
-                  <td id="ac-users-yesterday">-</td>
-                </tr>
-                <tr>
-                  <th scope="row">累計</th>
-                  <td id="ac-users-total">-</td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="access-table">
-              <thead>
-                <tr>
-                  <th scope="col" colspan="2">PV（PV）</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">本日</th>
-                  <td id="ac-pv-today">-</td>
-                </tr>
-                <tr>
-                  <th scope="row">昨日</th>
-                  <td id="ac-pv-yesterday">-</td>
-                </tr>
-                <tr>
-                  <th scope="row">累計</th>
-                  <td id="ac-pv-total">-</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <style>
-          #access .access-counter{margin-top:.35em;}
-          #access .access-table{width:100%;border-collapse:collapse;font-size:.78rem;line-height:1.45;color:#6b6256;}
-          #access .access-table + .access-table{margin-top:.9em;}
-          #access .access-table th,#access .access-table td{border:1px solid var(--line);padding:.45em .55em;text-align:right;white-space:nowrap;}
-          #access .access-table thead th{background:#f4f9fc;color:var(--ink);font-weight:700;text-align:center;}
-          #access .access-table tbody th{background:#fffdf7;color:var(--ink-soft);font-weight:600;text-align:left;}
-          #access .access-table td{font-weight:700;font-variant-numeric:tabular-nums;color:#3a352e;}
-        </style>
-        <script>
-          (function(){var f=function(n){return (n||0).toLocaleString("ja-JP");};
-            fetch("/api/counter",{credentials:"same-origin"}).then(function(r){return r.json();})
-            .then(function(d){
-              document.getElementById("ac-users-today").textContent=f(d.today);
-              document.getElementById("ac-users-yesterday").textContent=f(d.yesterday);
-              document.getElementById("ac-users-total").textContent=f(d.total);
-              document.getElementById("ac-pv-today").textContent=f(d.pv_today);
-              document.getElementById("ac-pv-yesterday").textContent=f(d.pv_yesterday);
-              document.getElementById("ac-pv-total").textContent=f(d.pv_total);
-            })
-            .catch(function(){var e=document.getElementById("access");if(e)e.style.display="none";});})();
-        </script>
         <div class="side-block" id="archived-titles">
           <h3>アーカイブ</h3>
           <ul class="compact-link-list archived-title-list">
@@ -1174,15 +1094,6 @@ nav.menu a:hover{color:var(--brown-deep);}
           <li><a href="/c020.html">古写真で見る磐田</a></li>
         </ul>
       </div>
-
-      <div class="weekly-ranking" aria-labelledby="weekly-ranking-title">
-        <h3 id="weekly-ranking-title">週間アクセスランキング</h3>
-        <p class="ranking-note">直近3日間のアクセス数を自動集計。トップページ・地区分類ページ・写真系ページを除いた記事を表示します。</p>
-        <ol class="ranking-list" id="weekly-ranking-list">
-          <li><span class="ranking-loading"><span class="ranking-title">ランキングを読み込み中です</span><span class="ranking-count">—</span></span></li>
-        </ol>
-      </div>
-
       <section class="sidebar-card public-links-card">
         <h2>遠州地域の公的資料</h2>
         <p class="sidebar-card-lead">歴史・文化財・地図・防災・都市計画を確認するための公的情報です。</p>
@@ -1352,57 +1263,6 @@ nav.menu a:hover{color:var(--brown-deep);}
 </footer>
 
 <script>
-(function(){
-  var list=document.getElementById('weekly-ranking-list');
-  if(!list) return;
-  function normPath(path){
-    if(!path) return '';
-    path=String(path);
-    if(path.charAt(0)!=='/') path='/'+path;
-    return path.replace(/\/index\.html$/,'/');
-  }
-  function isPhotoLike(meta){
-    var title=(meta && meta.title) || '';
-    var type=(meta && meta.content_type) || '';
-    return type==='shiryo' || /写真|古写真/.test(title);
-  }
-  function renderEmpty(message){
-    list.innerHTML='<li><p class="ranking-empty">'+message+'</p></li>';
-  }
-  Promise.all([
-    fetch('/api/counter?ranking=weekly&limit=40',{credentials:'same-origin'}).then(function(r){return r.json();}),
-    fetch('/data/pages.json',{credentials:'same-origin'}).then(function(r){return r.json();})
-  ]).then(function(values){
-    var ranking=values[0] || {};
-    var ledger=values[1] || {};
-    var pages=Array.isArray(ledger.pages) ? ledger.pages : [];
-    var metaByPath=new Map();
-    pages.forEach(function(page){
-      if(page && page.url) metaByPath.set(normPath(page.url), page);
-    });
-    var items=(ranking.items || []).map(function(item){
-      var path=normPath(item.path);
-      var meta=metaByPath.get(path);
-      if(!meta || isPhotoLike(meta)) return null;
-      return {path:path,title:meta.title || path,count:item.count || 0};
-    }).filter(Boolean).slice(0,10);
-    if(items.length===0){
-      renderEmpty('週間ランキングは集計中です。公開後、記事ページへのアクセスが入ると自動で表示されます。');
-      return;
-    }
-    list.innerHTML=items.map(function(item){
-      return '<li><a href="'+item.path+'"><span class="ranking-title">'+escapeHtml(item.title)+'</span><span class="ranking-count">'+Number(item.count).toLocaleString('ja-JP')+' view</span></a></li>';
-    }).join('');
-  }).catch(function(){
-    renderEmpty('ランキングを取得できませんでした。時間をおいて再読み込みしてください。');
-  });
-  function escapeHtml(s){
-    return String(s).replace(/[&<>"']/g,function(c){
-      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
-    });
-  }
-})();
-
 (function(){
   var ARTICLES = [
     {t:"岩田・大藤・向笠をつなぐ丘陵と水の記憶",u:"/k030.html",c:"向陽地区",k:"岩田 大藤 向笠 向陽 旧村 小字 地名 天竜川 磐田原台地 太田川 敷地川 岩田・大藤・向笠をつなぐ丘陵と水の記憶"},

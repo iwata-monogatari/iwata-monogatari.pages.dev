@@ -729,30 +729,6 @@
         </details>
       </div>
       </div>
-        <!-- アクセスカウンター -->
-        <div class="side-block" id="access">
-          <h3>アクセス</h3>
-          <div id="access-counter" class="access-counter">
-            <span class="ac-item"><span class="ac-lbl">本日</span><strong id="ac-today">—</strong></span>
-            <span class="ac-item"><span class="ac-lbl">昨日</span><strong id="ac-yesterday">—</strong></span>
-            <span class="ac-item"><span class="ac-lbl">累計</span><strong id="ac-total">—</strong></span>
-          </div>
-        </div>
-        <style>
-          #access .access-counter{display:flex;flex-direction:column;gap:.3em;margin-top:.2em;}
-          #access .ac-item{display:flex;justify-content:space-between;align-items:baseline;
-            font-size:.86rem;color:#6b6256;}
-          #access .ac-lbl{letter-spacing:.04em;}
-          #access .access-counter strong{font-weight:600;font-variant-numeric:tabular-nums;color:#3a352e;}
-        </style>
-        <script>
-          (function(){var f=function(n){return (n||0).toLocaleString("ja-JP");};
-            fetch("/api/counter",{credentials:"same-origin"}).then(function(r){return r.json();})
-            .then(function(d){document.getElementById("ac-today").textContent=f(d.today);
-              document.getElementById("ac-yesterday").textContent=f(d.yesterday);
-              document.getElementById("ac-total").textContent=f(d.total);})
-            .catch(function(){var e=document.getElementById("access");if(e)e.style.display="none";});})();
-        </script>
     </aside>
   <!-- LEFT-NAV END -->
 </div>

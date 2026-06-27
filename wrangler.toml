@@ -19,12 +19,6 @@ binding = "DB"
 database_name = "iwata_monogatari_bbs"
 database_id = "666f5bc9-49df-4ae9-b8fa-02f0d9a4e4e4"
 
-# Cloudflare KV（トップページのアクセスカウンター用）
-# /functions/api/counter.js が env.COUNTER を参照する
-[[kv_namespaces]]
-binding = "COUNTER"
-id = "1b592fba158745bcba910af3a0a42316"
-
 # 環境変数（Secrets はダッシュボードまたは `wrangler pages secret put` で設定する。
 # wrangler.toml には秘密情報を直接書かないこと）
 # 必要な変数:
