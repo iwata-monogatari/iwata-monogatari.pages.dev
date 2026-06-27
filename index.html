@@ -212,6 +212,105 @@ nav.menu a:hover{color:var(--brown-deep);}
 .area-classification-links h3{text-align:center;}
 .area-classification-links .area-link-list{align-items:center;text-align:center;}
 .area-classification-links .area-link-list a{min-width:9.5em;text-align:center;}
+
+  /* --- Renovation A & B District Card styles --- */
+  .c.area-mitsuke   { --accent: var(--c-mitsuke);   --accent-soft: #f3ece0; }
+  .c.area-nakaizumi { --accent: var(--c-nakaizumi); --accent-soft: #e9efe6; }
+  .c.area-mikuriya  { --accent: var(--c-mikuriya);  --accent-soft: #efeae2; }
+  .c.area-toyoda    { --accent: var(--c-toyoda);    --accent-soft: #f1ebdf; }
+  .c.area-nanbu     { --accent: var(--c-nanbu);     --accent-soft: #e6eef0; }
+  .c.area-koyo      { --accent: var(--c-koyo);      --accent-soft: #f0ece1; }
+  .c.area-ryuyo     { --accent: var(--c-ryuyo);     --accent-soft: #e7eef1; }
+  .c.area-fukude    { --accent: var(--c-fukude);    --accent-soft: #eef0e8; }
+  .c.area-toyooka   { --accent: var(--c-toyooka);   --accent-soft: #efe9e0; }
+
+  .c[class*="area-"] {
+    background: var(--accent-soft);
+    border-top: 3px solid var(--accent);
+    min-height: 96px; /* 160px * 0.6 = 96px */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .c[class*="area-"] .k {
+    color: var(--accent);
+  }
+  .c.area-fukude {
+    border-top-color: var(--c-fukude);
+  }
+  .c.area-fukude .k {
+    color: var(--c-fukude-ink);
+  }
+
+  /* Section C New Articles List styling */
+  .new-article-list {
+    list-style: none;
+    margin: 1.5rem 0 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .new-article-item {
+    border-bottom: 1px dotted var(--line);
+  }
+  .new-article-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 16px;
+    padding: 10px 8px;
+    color: var(--ink);
+    text-decoration: none;
+    line-height: 1.8;
+    font-size: 15.5px;
+    transition: background 0.15s ease, color 0.15s ease;
+    border-radius: 4px;
+  }
+  .new-article-link:hover {
+    background: rgba(47, 127, 163, 0.05);
+    color: var(--brown-deep);
+  }
+  .new-article-link:hover .new-article-title {
+    text-decoration: underline;
+  }
+  .new-article-date {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    flex-shrink: 0;
+    width: 90px;
+  }
+  .new-article-category {
+    font-family: "Shippori Mincho", serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--brown);
+    background: var(--paper-deep);
+    padding: 2px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .new-article-title {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    color: var(--ink);
+    flex-grow: 1;
+  }
+  .new-article-arrow {
+    color: var(--brown);
+    font-weight: 700;
+    margin-left: 4px;
+  }
+  @media (max-width: 600px) {
+    .new-article-link {
+      gap: 8px 12px;
+      padding: 12px 6px;
+      font-size: 14.5px;
+    }
+    .new-article-date {
+      width: auto;
+    }
+  }
 </style>
 <link rel="stylesheet" href="/assets/css/iwata-area-color.css">
 </head>
@@ -727,11 +826,60 @@ nav.menu a:hover{color:var(--brown-deep);}
         <p class="eyebrow">MAIN CONTENTS ｜ まず読む</p>
         <h2 class="sectitle">磐田物語の代表コンテンツ</h2>
         <div class="cards">
-          <a class="c" href="/m018.html"><div class="k">見付を読む</div><h4>見付というまち</h4><p>遠江国府、遠江国分寺、東海道・見付宿、旧見付学校、府八幡宮、見付天神裸祭。磐田の歴史文化に欠かせない、見付の総合入口。<span class="more">読む →</span></p></a>
-          <a class="c" href="/n021.html"><div class="k">中泉を読む</div><h4>中泉というまち</h4><p>中泉御殿、中泉代官所、中泉駅、現在の磐田駅前。近世から近代にかけて、磐田の重心がどう移ったのかをたどる。<span class="more">読む →</span></p></a>
-          <a class="c" href="/c004.html"><div class="k">地図でたどる</div><h4>磐田タイムトラベル地図</h4><p>古墳、国府、宿場、祭り、湊、学校。地図で見ると、磐田の歴史は一本の線ではなく、いくつもの時代が重なった土地として見えてくる。<span class="more">読む →</span></p></a>
-          <a class="c" href="/n001.html"><div class="k">古代の大型特集</div><h4>遠江国分寺とは何か</h4><p>奈良時代、なぜ遠江国分寺はこの磐田の地に置かれたのか。古代遠江の政治・信仰・交通を読み解く大型特集。<span class="more">読む →</span></p></a>
-          <a class="c" href="/c019.html"><div class="k">一次史料</div><h4>佐口行正氏所蔵史料</h4><p>引札、浮世絵、古地図、絵葉書、祭礼写真。紙片と写真に残された見付・磐田の記憶を、目録から一点ずつたどる。<span class="more">読む →</span></p></a>
+          <!-- 見付 -->
+          <a class="c area-mitsuke" href="/m018.html">
+            <div class="k">見付 ─ 代表</div>
+            <h4>見付というまち</h4>
+            <p>国府・宿場・学校と層をなす見付の歩みと、26町内の現在。佐口行正氏所蔵史料を添えてたどる総説。<span class="more">読む →</span></p>
+          </a>
+          <!-- 中泉 -->
+          <a class="c area-nakaizumi" href="/n023.html">
+            <div class="k">中泉 ─ 代表</div>
+            <h4>中泉の生い立ち</h4>
+            <p>国府・御殿・代官所・駅前。古代から近代まで、磐田中心部としての中泉を三層で読む。<span class="more">読む →</span></p>
+          </a>
+          <!-- 御厨 -->
+          <a class="c area-mikuriya" href="/u004.html">
+            <div class="k">御厨 ─ 代表</div>
+            <h4>城之崎遺跡</h4>
+            <p>弥生後期の高地性集落と、城之崎2号墳・3号墳。古墳の封土が古い住居跡を守った重層性を読む長編学術HTML。<span class="more">読む →</span></p>
+          </a>
+          <!-- 豊田 -->
+          <a class="c area-toyoda" href="/t006.html">
+            <div class="k">豊田 ─ 代表</div>
+            <h4>旧豊田町の地名と土地の記憶</h4>
+            <p>『豊田町地名地図』を歩きながら、旧豊田町の地名と土地の記憶をたどる。<span class="more">読む →</span></p>
+          </a>
+          <!-- 南部 -->
+          <a class="c area-nanbu" href="/01005-nanbu.html">
+            <div class="k">南部 ─ 代表</div>
+            <h4>南部地区の総論</h4>
+            <p>天竜川下流低地、遠州灘沿岸砂丘、旧村・学校区・生活圏の重なりとしての歴史を大きく読む。<span class="more">読む →</span></p>
+          </a>
+          <!-- 向陽 -->
+          <a class="c area-koyo" href="/k030.html">
+            <div class="k">向陽 ─ 代表</div>
+            <h4>岩田・大藤・向笠をつなぐ丘陵と水の記憶</h4>
+            <p>向陽地区を、岩田・大藤・向笠という旧村の重なりから読み直す総論ページ。<span class="more">読む →</span></p>
+          </a>
+          <!-- 竜洋 -->
+          <a class="c area-ryuyo" href="/r001.html">
+            <div class="k">竜洋 ─ 代表</div>
+            <h4>掛塚という港町</h4>
+            <p>天竜川舟運と遠州灘海運を結んだ掛塚湊。廻船問屋、伊豆石、掛塚まつり、湊町衰退後の記憶をたどる。<span class="more">読む →</span></p>
+          </a>
+          <!-- 福田 -->
+          <a class="c area-fukude" href="/f011.html">
+            <div class="k">福田 ─ 代表</div>
+            <h4>福田の年中行事と昔ばなし</h4>
+            <p>福田町教育委員会『年中行事と昔ばなし』をもとに、正月・盆・秋祭り・講・家の信仰、海と田畑の暮らしを読み解く。<span class="more">読む →</span></p>
+          </a>
+          <!-- 豊岡 -->
+          <a class="c area-toyooka" href="/01009-toyooka.html">
+            <div class="k">豊岡 ─ 代表</div>
+            <h4>豊岡地区の総論</h4>
+            <p>敷地川、敷地村・広瀬村・野部村の沿革、獅子ヶ鼻、天竜浜名湖線、祭り・社寺・里山信仰を大きく読む。<span class="more">読む →</span></p>
+          </a>
         </div>
       </section>
 
@@ -739,29 +887,148 @@ nav.menu a:hover{color:var(--brown-deep);}
         <p class="eyebrow">QUESTIONS ｜ 地元民が気になる謎</p>
         <h2 class="sectitle">磐田の「なぜ」をたどる</h2>
         <div class="cards">
-          <a class="c" href="/n023.html"><div class="k">中泉と鉄道</div><h4>なぜ、国府のまち見付ではなく、中泉に駅ができたのか</h4><p>見付が古代以来の中心であった一方、近代の鉄道駅は中泉に置かれた。その理由を、地形・交通・近代化の流れから考える。<span class="more">読む →</span></p></a>
-          <a class="c" href="/c024.html"><div class="k">地形と地名</div><h4>今之浦は本当に水辺だったのか</h4><p>今之浦、大之浦、湿地、水田、区画整理。地名に残る水辺の記憶を、現在の町並みと重ねて読む。<span class="more">読む →</span></p></a>
-          <a class="c" href="/n003.html"><div class="k">古代</div><h4>遠江国分寺は、なぜ磐田に置かれたのか</h4><p>国府、国分寺、国分尼寺、府八幡宮。古代遠江の中心が、なぜこの場所に集まったのかをたどる。<span class="more">読む →</span></p></a>
-          <a class="c" href="/m017.html"><div class="k">東海道</div><h4>見付宿はどれほど大きな宿場だったのか</h4><p>本陣、脇本陣、旅籠、問屋場。東海道五十三次の二十八番目の宿場として栄えた見付宿の規模と役割を読み解く。<span class="more">読む →</span></p></a>
-          <a class="c" href="/n021.html"><div class="k">近世</div><h4>中泉御殿とは何だったのか</h4><p>徳川家康の御殿、天領を治めた代官所、そして中泉駅。中泉という町が、なぜ行政と交通の要所になったのかを整理する。<span class="more">読む →</span></p></a>
-          <a class="c" href="/u004.html"><div class="k">考古・遺跡</div><h4>城之崎遺跡</h4><p>弥生後期の高地性集落と、城之崎2号墳・3号墳。古墳の封土が古い住居跡を守った重層性から、磐田原台地南部の土地の記憶を読む。<span class="more">読む →</span></p></a>
+          <!-- 見付 -->
+          <a class="c area-mitsuke" href="/m017.html">
+            <div class="k">見付 ─ なぜをたどる</div>
+            <h4>見付宿はどれほど大きな宿場だったのか</h4>
+            <p>本陣、問屋場、多くの旅籠。東海道五十三次の二十八番目の宿場として栄えた見付宿の規模と役割を読み解く。<span class="more">読む →</span></p>
+          </a>
+          <!-- 中泉 -->
+          <a class="c area-nakaizumi" href="/n023.html">
+            <div class="k">中泉 ─ なぜをたどる</div>
+            <h4>なぜ、見付ではなく中泉に駅ができたのか</h4>
+            <p>古代以来の中心地見付ではなく、近代の鉄道駅が中泉に置かれた理由を地形と近代化から考える。<span class="more">読む →</span></p>
+          </a>
+          <!-- 御厨 -->
+          <a class="c area-mikuriya" href="/u004.html">
+            <div class="k">御厨 ─ なぜをたどる</div>
+            <h4>城之崎遺跡にみる住まいと古墳の重なり</h4>
+            <p>弥生高地性集落の上に古墳が築かれた重層性。古い封土が語る磐田原台地南部の記憶。<span class="more">読む →</span></p>
+          </a>
+          <!-- 豊田 -->
+          <a class="c area-toyoda" href="/t007.html">
+            <div class="k">豊田 ─ なぜをたどる</div>
+            <h4>なぜ天竜川沿いに「新田」が集中するのか</h4>
+            <p>池田新田、弥藤太島新田。江戸期の大規模開発と、水害リスクを抱えながら開拓を続けた人々の知恵。<span class="more">読む →</span></p>
+          </a>
+          <!-- 南部 -->
+          <a class="c area-nanbu" href="/s001.html">
+            <div class="k">南部 ─ なぜをたどる</div>
+            <h4>天竜川は南部の地形をどう変えたのか</h4>
+            <p>幾度も流路を変えた暴れ天竜。旧河道や大池の記憶から、海と川に囲まれた低湿地の歴史を読む。<span class="more">読む →</span></p>
+          </a>
+          <!-- 向陽 -->
+          <a class="c area-koyo" href="/k001.html">
+            <div class="k">向陽 ─ なぜをたどる</div>
+            <h4>向陽地区の地名と寺社に眠る丘陵の歴史</h4>
+            <p>匂坂、寺谷、岩田。磐田原台地の東縁に位置するこの地に、難読地名や古刹が集中する理由。<span class="more">読む →</span></p>
+          </a>
+          <!-- 竜洋 -->
+          <a class="c area-ryuyo" href="/r001.html">
+            <div class="k">竜洋 ─ なぜをたどる</div>
+            <h4>なぜ掛塚は遠州灘屈指の海運湊になったのか</h4>
+            <p>天竜川の舟運と遠州灘の廻船が交わった掛塚湊。伊豆石や掛塚まつりに残る、湊町の黄金期の記憶。<span class="more">読む →</span></p>
+          </a>
+          <!-- 福田 -->
+          <a class="c area-fukude" href="/f011.html">
+            <div class="k">福田 ─ なぜをたどる</div>
+            <h4>なぜ福田には海と川の独特の信仰が残るのか</h4>
+            <p>しらす漁や塩田開発、大之浦開発。海辺の過酷な生業と暮らした人々が紡いだ年中行事と昔ばなし。<span class="more">読む →</span></p>
+          </a>
+          <!-- 豊岡 -->
+          <a class="c area-toyooka" href="/y001.html">
+            <div class="k">豊岡 ─ なぜをたどる</div>
+            <h4>豊岡の山里と敷地川はどんな記憶を持つか</h4>
+            <p>敷地川の氾濫と闘いながら築かれた里山独自の暮らしと信仰。獅子ヶ鼻公園の奇岩と山あいの集落。<span class="more">読む →</span></p>
+          </a>
         </div>
       </section>
 
       <section class="section" id="new">
         <p class="eyebrow">NEW ｜ 新着コンテンツ</p>
         <h2 class="sectitle">新着の記事</h2>
-        <div class="cards">
-          <a class="c" href="/f011.html"><div class="k"><span class="newbadge">NEW</span>福田・民俗</div><h4>福田の年中行事と昔ばなし（全7ページ）</h4><p>福田町教育委員会『年中行事と昔ばなし』をもとに、正月・盆・秋祭り・講・家の信仰、海と田畑の暮らしを季節順に読み解く学術HTML特集。<span class="more">読む →</span></p></a>
-          <a class="c" href="/k030.html"><div class="k"><span class="newbadge">NEW</span>向陽地区旧村史</div><h4>岩田・大藤・向笠をつなぐ丘陵と水の記憶</h4><p>向陽地区を、岩田・大藤・向笠という旧村の重なりから読み直す総論ページ。<span class="more">読む →</span></p></a>
-          <a class="c" href="/c028.html"><div class="k"><span class="newbadge">NEW</span>磐田用水</div><h4>磐田用水の歩み</h4><p>天竜川の水を引き、社山疏水、幹線改良、船明ダム、土地改良区へ続く水利の歴史をたどる一般記事。<span class="more">読む →</span></p></a>
-          <a class="c" href="/c027.html"><div class="k"><span class="newbadge">NEW</span>特別コンテンツ</div><h4>映画『お別れの歌』と磐田の風景</h4><p>磐田市内で撮影された映画を、今の磐田が映像として残された文化的出来事として記録する特別ページ。チラシ表裏も掲載。<span class="more">読む →</span></p></a>
-          <a class="c" href="/u004.html"><div class="k"><span class="newbadge">NEW</span>考古・遺跡</div><h4>城之崎遺跡</h4><p>弥生後期の高地性集落と、城之崎2号墳・3号墳。古墳の封土が古い住居跡を守った重層性を読む長編学術HTML。<span class="more">読む →</span></p></a>
-          <a class="c" href="/n023.html"><div class="k"><span class="newbadge">NEW</span>中泉</div><h4>中泉の生い立ち</h4><p>国府・御殿・代官所・駅前。古代から近代まで、磐田中心部としての中泉を三層で読む。<span class="more">読む →</span></p></a>
-          <a class="c" href="/c024.html"><div class="k"><span class="newbadge">NEW</span>今之浦</div><h4>今之浦と大之浦</h4><p>万葉集に見える大之浦、湿地・水田、今之浦川、区画整理を重ねて水辺の記憶をたどる。<span class="more">読む →</span></p></a>
-          <a class="c" href="/m018.html"><div class="k"><span class="newbadge">NEW</span>磐田市見付</div><h4>磐田市見付の歴史と町内案内</h4><p>国府・宿場・学校と層をなす見付の歩みと、26町内の現在。佐口行正氏所蔵史料を添えてたどる総説。<span class="more">読む →</span></p></a>
-          <a class="c" href="/t006.html"><div class="k"><span class="newbadge">NEW</span>旧豊田町</div><h4>旧豊田町の地名と、土地の記憶</h4><p>『豊田町地名地図』を歩きながら、旧豊田町の地名と土地の記憶をたどる。<span class="more">読む →</span></p></a>
-        </div>
+        <ul class="new-article-list" id="new-article-list">
+          <li class="new-article-item">
+            <a href="/c002.html" class="new-article-link">
+              <span class="new-article-date">2026-06-27</span>
+              <span class="new-article-category">磐田共通・資料</span>
+              <span class="new-article-title">磐田物語の地域分類（9地区の色彩設計を追加）</span>
+              <span class="new-article-arrow"> →</span>
+            </a>
+          </li>
+          <li class="new-article-item">
+            <a href="/f011.html" class="new-article-link">
+              <span class="new-article-date">2026-06-27</span>
+              <span class="new-article-category">福田・民俗</span>
+              <span class="new-article-title">福田の年中行事と昔ばなし（全7ページ）</span>
+              <span class="new-article-arrow"> →</span>
+            </a>
+          </li>
+          <li class="new-article-item">
+            <a href="/k030.html" class="new-article-link">
+              <span class="new-article-date">2026-06-26</span>
+              <span class="new-article-category">向陽地区旧村史</span>
+              <span class="new-article-title">岩田・大藤・向笠をつなぐ丘陵と水の記憶</span>
+              <span class="new-article-arrow"> →</span>
+            </a>
+          </li>
+          <li class="new-article-item">
+            <a href="/c028.html" class="new-article-link">
+              <span class="new-article-date">2026-06-26</span>
+              <span class="new-article-category">磐田用水</span>
+              <span class="new-article-title">磐田用水の歩み</span>
+              <span class="new-article-arrow"> →</span>
+            </a>
+          </li>
+          <li class="new-article-item">
+            <a href="/c027.html" class="new-article-link">
+              <span class="new-article-date">2026-06-26</span>
+              <span class="new-article-category">特別コンテンツ</span>
+              <span class="new-article-title">映画『お別れの歌』と磐田の風景</span>
+              <span class="new-article-arrow"> →</span>
+            </a>
+          </li>
+          <li class="new-article-item">
+            <a href="/u004.html" class="new-article-link">
+              <span class="new-article-date">2026-06-26</span>
+              <span class="new-article-category">考古・遺跡</span>
+              <span class="new-article-title">城之崎遺跡 - 磐田原台地南部に残された弥生の住まいと古墳の記憶</span>
+              <span class="new-article-arrow"> →</span>
+            </a>
+          </li>
+          <li class="new-article-item">
+            <a href="/n023.html" class="new-article-link">
+              <span class="new-article-date">2026-06-26</span>
+              <span class="new-article-category">中泉</span>
+              <span class="new-article-title">中泉の生い立ち</span>
+              <span class="new-article-arrow"> →</span>
+            </a>
+          </li>
+          <li class="new-article-item">
+            <a href="/c024.html" class="new-article-link">
+              <span class="new-article-date">2026-06-26</span>
+              <span class="new-article-category">今之浦</span>
+              <span class="new-article-title">今之浦と大之浦</span>
+              <span class="new-article-arrow"> →</span>
+            </a>
+          </li>
+          <li class="new-article-item">
+            <a href="/m018.html" class="new-article-link">
+              <span class="new-article-date">2026-06-26</span>
+              <span class="new-article-category">磐田市見付</span>
+              <span class="new-article-title">磐田市見付の歴史と町内案内</span>
+              <span class="new-article-arrow"> →</span>
+            </a>
+          </li>
+          <li class="new-article-item">
+            <a href="/t006.html" class="new-article-link">
+              <span class="new-article-date">2026-06-26</span>
+              <span class="new-article-category">旧豊田町</span>
+              <span class="new-article-title">旧豊田町の地名と、土地の記憶</span>
+              <span class="new-article-arrow"> →</span>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
 
@@ -1141,6 +1408,55 @@ nav.menu a:hover{color:var(--brown-deep);}
   var rc=document.getElementById('resClear');if(rc)rc.addEventListener('click',function(){q.value='';render('');q.focus();window.scrollTo({top:0,behavior:'smooth'});});
   document.getElementById('chips').addEventListener('click',function(e){if(e.target.classList.contains('chip')){q.value=e.target.textContent;render(q.value);window.scrollTo({top:0,behavior:'smooth'});}});
   var params=new URLSearchParams(location.search);if(params.get('q')){q.value=params.get('q');render(q.value);}
+})();
+</script>
+<script>
+(function(){
+  fetch('/data/new-articles.json')
+    .then(function(res){ return res.json(); })
+    .then(function(data){
+      data.sort(function(a, b){
+        return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0);
+      });
+      var list = document.getElementById('new-article-list');
+      if (!list) return;
+      list.innerHTML = '';
+      data.slice(0, 10).forEach(function(item){
+        var li = document.createElement('li');
+        li.className = 'new-article-item';
+        
+        var a = document.createElement('a');
+        a.href = item.url;
+        a.className = 'new-article-link';
+        
+        var dateSpan = document.createElement('span');
+        dateSpan.className = 'new-article-date';
+        dateSpan.textContent = item.date;
+        
+        var catSpan = document.createElement('span');
+        catSpan.className = 'new-article-category';
+        catSpan.textContent = item.category;
+        
+        var titleSpan = document.createElement('span');
+        titleSpan.className = 'new-article-title';
+        titleSpan.textContent = item.title;
+        
+        a.appendChild(dateSpan);
+        a.appendChild(catSpan);
+        a.appendChild(titleSpan);
+        
+        var arrow = document.createElement('span');
+        arrow.className = 'new-article-arrow';
+        arrow.textContent = ' →';
+        a.appendChild(arrow);
+        
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+    })
+    .catch(function(err){
+      console.error('Failed to load new articles:', err);
+    });
 })();
 </script>
 </body>
