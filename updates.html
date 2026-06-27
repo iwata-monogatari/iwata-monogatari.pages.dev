@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>公開履歴・更新履歴 ｜ 磐田物語</title>
+<meta name="description" content="磐田物語の公開履歴・更新履歴を一覧で確認できます。">
+<link rel="canonical" href="https://iwata-monogatari.pages.dev/updates.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+<style>
+:root{--paper:#fffaf0;--paper-deep:#f3ead8;--ink:#243b4a;--ink-soft:#667782;--brown:#a6713e;--brown-deep:#6d4726;--line:#d8e8ef;--card:#fffdf8;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.8}
+a{color:var(--brown-deep);text-underline-offset:3px}
+.wrap{max-width:920px;margin:0 auto;padding:28px 22px 64px}
+.crumbs{font-size:13px;color:var(--ink-soft);margin-bottom:22px}
+.head{border-bottom:2px solid var(--brown);padding-bottom:14px;margin-bottom:22px}
+.eyebrow{font-size:12px;letter-spacing:.18em;color:var(--brown);font-weight:700;margin:0 0 4px}
+h1{font-family:"Shippori Mincho",serif;font-size:clamp(28px,5vw,42px);line-height:1.35;margin:0}
+.lead{font-size:14px;color:var(--ink-soft);margin:10px 0 0}
+.history-list{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.history-item{border-bottom:1px dotted var(--line)}
+.history-link{display:grid;grid-template-columns:84px 118px minmax(0,1fr);align-items:center;gap:10px;padding:8px 6px;color:var(--ink);text-decoration:none;white-space:nowrap;overflow:hidden;border-radius:4px}
+.history-link:hover{background:#fff}
+.history-date{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:var(--ink-soft)}
+.history-category{font-family:"Shippori Mincho",serif;font-size:11px;font-weight:700;color:var(--brown);background:var(--paper-deep);border-radius:999px;padding:1px 8px;overflow:hidden}
+.history-link[class*="area-"] .history-category{background:var(--accent);color:#fff}
+.history-link.area-fukude .history-category{background:var(--c-fukude-accent);color:var(--c-fukude-ink)}
+.history-title{font-size:13.5px;overflow:hidden}
+.back{margin-top:28px}
+.back a{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:700;font-size:13px}
+@media(max-width:640px){
+  .history-link{grid-template-columns:70px 78px minmax(0,1fr);gap:6px}
+  .history-date{font-size:10.5px}
+  .history-category{font-size:10px;padding:1px 6px}
+  .history-title{font-size:12px}
+}
+</style>
+</head>
+<body>
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/"><span class="gh-logo">磐田物語<span class="gh-dot">。</span></span><span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span></a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション"><a href="/c007.html">はじめに</a><a href="/c001.html">憲章</a><a href="/c019.html">佐口史料室</a><a href="/#new">新着</a><a href="/bbs.html">掲示板</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="crumbs"><a href="/">磐田物語</a> ／ 公開履歴・更新履歴</div>
+  <section class="head">
+    <p class="eyebrow">UPDATES</p>
+    <h1>公開履歴・更新履歴</h1>
+    <p class="lead">最近公開・更新した記事を一覧で表示しています。</p>
+  </section>
+  <ul class="history-list" id="history-list">
+    <li class="history-item">読み込み中です。</li>
+  </ul>
+  <p class="back"><a href="/">トップページへ戻る</a></p>
+</main>
+<script>
+(function(){
+  function areaClass(item){
+    var url=item.url || '';
+    var category=item.category || '';
+    if(category==='磐田共通・資料' || category==='特別コンテンツ') return '';
+    if(url==='/c028.html') return 'area-mitsuke';
+    if(url==='/u004.html') return 'area-mikuriya';
+    if(/^\/m/.test(url)) return 'area-mitsuke';
+    if(/^\/n/.test(url)) return 'area-nakaizumi';
+    if(/^\/u/.test(url)) return 'area-mikuriya';
+    if(/^\/t/.test(url)) return 'area-toyoda';
+    if(/^\/s/.test(url)) return 'area-nanbu';
+    if(/^\/k/.test(url)) return 'area-koyo';
+    if(/^\/r/.test(url)) return 'area-ryuyo';
+    if(/^\/f/.test(url)) return 'area-fukude';
+    if(/^\/y/.test(url)) return 'area-toyooka';
+    return '';
+  }
+  fetch('/data/new-articles.json').then(function(res){return res.json();}).then(function(data){
+    data.sort(function(a,b){return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0);});
+    var list=document.getElementById('history-list');
+    list.innerHTML='';
+    data.forEach(function(item){
+      var li=document.createElement('li');
+      li.className='history-item';
+      var a=document.createElement('a');
+      a.href=item.url;
+      a.className='history-link';
+      var cls=areaClass(item);
+      if(cls) a.classList.add(cls);
+      a.innerHTML='<span class="history-date"></span><span class="history-category"></span><span class="history-title"></span>';
+      a.querySelector('.history-date').textContent=item.date;
+      a.querySelector('.history-category').textContent=item.category;
+      a.querySelector('.history-title').textContent=item.title;
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+  }).catch(function(){
+    document.getElementById('history-list').innerHTML='<li class="history-item">履歴を読み込めませんでした。</li>';
+  });
+})();
+</script>
+</body>
+</html>

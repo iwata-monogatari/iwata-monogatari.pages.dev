@@ -301,6 +301,25 @@ nav.menu a:hover{color:var(--brown-deep);}
     font-weight: 700;
     margin-left: 4px;
   }
+  .new-article-more {
+    margin: 10px 0 0;
+    text-align: right;
+  }
+  .new-article-more a {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--brown-deep);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    background: #fff;
+    border-radius: 999px;
+    padding: 6px 14px;
+  }
+  .new-article-more a:hover {
+    border-color: var(--brown);
+    background: var(--paper-deep);
+  }
   @media (max-width: 600px) {
     .new-article-link {
       grid-template-columns: 62px 70px minmax(0, 1fr);
@@ -476,8 +495,8 @@ nav.menu a:hover{color:var(--brown-deep);}
       <!-- 磐田物語の9地区分類から探す -->
       <div class="side-block area-classification-links">
         <h3>磐田物語の９地区分類から探す</h3>
-        <nav class="area-link-list" aria-label="磐田物語の9地区分類" style="display:flex;flex-direction:column;gap:7px;margin-top:2px;">
-          <a class="area-card area-mitsuke" href="/01001-mitsuke.html"><span class="area-name">見付</span><span class="area-yomi">みつけ</span></a>
+        <nav class="area-link-list" aria-label="磐田物語の9地区分類" style="display:flex;flex-direction:column;gap:5px;margin-top:2px;">
+                              <a class="area-card area-mitsuke" href="/01001-mitsuke.html"><span class="area-name">見付</span><span class="area-yomi">みつけ</span></a>
           <a class="area-card area-nakaizumi" href="/01002-nakaizumi.html"><span class="area-name">中泉</span><span class="area-yomi">なかいずみ</span></a>
           <a class="area-card area-mikuriya" href="/01003-mikuriya.html"><span class="area-name">御厨</span><span class="area-yomi">みくりや</span></a>
           <a class="area-card area-toyoda" href="/01004-toyoda.html"><span class="area-name">豊田</span><span class="area-yomi">とよだ</span></a>
@@ -1033,6 +1052,7 @@ nav.menu a:hover{color:var(--brown-deep);}
             </a>
           </li>
         </ul>
+        <p class="new-article-more"><a href="/updates.html">公開履歴・更新履歴を一覧で見る</a></p>
       </section>
     </main>
 
@@ -1443,7 +1463,7 @@ nav.menu a:hover{color:var(--brown-deep);}
       var list = document.getElementById('new-article-list');
       if (!list) return;
       list.innerHTML = '';
-      data.slice(0, 30).forEach(function(item){
+      data.slice(0, 15).forEach(function(item){
         var li = document.createElement('li');
         li.className = 'new-article-item';
         

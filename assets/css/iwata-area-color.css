@@ -151,7 +151,7 @@
 .area-card {
   background: var(--accent-soft, #f7f2e9);
   border: 1px solid rgba(0,0,0,.06);
-  border-top: 3px solid var(--accent, #a6713e);
+  border-bottom: 3px solid var(--accent, #a6713e);
   border-radius: 8px;
   padding: 14px 16px;
   color: #3a3027;                 /* カード本文は常に濃い墨茶（薄背景で可読） */
@@ -181,10 +181,13 @@
 
 .area-link-list .area-card {
   min-height: 0;
-  padding: 5px 11px;
-  gap: 1px;
+  padding: 4px 11px 5px;
+  gap: 6px;
   line-height: 1.22;
   text-decoration: none;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
 }
 .area-link-list .area-card:hover {
   transform: translateY(-1px);
