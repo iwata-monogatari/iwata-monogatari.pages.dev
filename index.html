@@ -99,10 +99,11 @@ nav.menu a:hover{color:var(--brown-deep);}
 .search-box{position:relative;max-width:680px;margin:0 auto;}
 .search-box input{width:100%;font-family:inherit;font-size:17px;color:var(--ink);background:#fff;border:2px solid var(--brown);border-radius:6px;padding:16px 52px 16px 20px;box-shadow:var(--shadow);outline:none;}
 .search-box .si{position:absolute;right:16px;top:50%;transform:translateY(-50%);width:24px;height:24px;fill:var(--brown);}
-.chips{display:grid;gap:10px;justify-items:center;margin-top:16px;}
-.chip-group{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;}
-.chip-group-label{font-size:12px;font-weight:700;color:var(--ink-soft);letter-spacing:.08em;margin-right:2px;}
-.chip{font-size:13px;color:var(--brown-deep);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer;transition:.2s;text-decoration:none;line-height:1.35;}
+.search-lead-soft{text-align:center;margin:18px 0 2px;font-size:14px;color:var(--brown);letter-spacing:.02em;}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px;}
+.chips--soft{margin-top:10px;}
+.chips--soft .chip{border-radius:999px;border-color:#e7ded0;background:#fffdf9;}
+.chip{font-size:13px;color:var(--brown-deep);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer;transition:.2s;}
 .chip:hover{background:var(--brown);color:#fff;border-color:var(--brown);}
 .chip--area{color:var(--accent-ink,var(--brown-deep));border-color:var(--accent,var(--line));background:var(--accent-soft,#fff);}
 .chip--area:hover{background:var(--accent,var(--brown));border-color:var(--accent,var(--brown));color:#fff;}
@@ -571,28 +572,12 @@ nav.menu a:hover{color:var(--brown-deep);}
       <input type="text" id="q" placeholder="見付／中泉／御厨／祭り／文化財／古地図／天竜川／寺社／地名 …" autocomplete="off" aria-label="磐田の歴史を検索">
       <svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 10-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1114 9.5 4.49 4.49 0 019.5 14z"/></svg>
     </div>
-    <div class="chips" id="chips" aria-label="地域とテーマから探す">
-      <div class="chip-group" aria-label="地域から探す">
-        <span class="chip-group-label">地域から</span>
-        <a class="chip chip--area area-mitsuke" href="/01001-mitsuke.html">見付</a>
-        <a class="chip chip--area area-nakaizumi" href="/01002-nakaizumi.html">中泉</a>
-        <a class="chip chip--area area-mikuriya" href="/01003-mikuriya.html">御厨</a>
-        <a class="chip chip--area area-toyoda" href="/01004-toyoda.html">豊田</a>
-        <a class="chip chip--area area-nanbu" href="/01005-nanbu.html">南部</a>
-        <a class="chip chip--area area-koyo" href="/01006-koyo.html">向陽</a>
-        <a class="chip chip--area area-ryuyo" href="/01007-ryuyo.html">竜洋</a>
-        <a class="chip chip--area area-fukude" href="/01008-fukude.html">福田</a>
-        <a class="chip chip--area area-toyooka" href="/01009-toyooka.html">豊岡</a>
-      </div>
-      <div class="chip-group" aria-label="テーマから探す">
-        <span class="chip-group-label">テーマから</span>
-        <span class="chip" data-q="祭り">祭り</span>
-        <span class="chip" data-q="文化財">文化財</span>
-        <span class="chip" data-q="古地図">古地図</span>
-        <span class="chip" data-q="天竜川">天竜川</span>
-        <span class="chip" data-q="神社">寺社</span>
-        <span class="chip" data-q="地名">地名</span>
-      </div>
+    <p class="search-lead-soft">気になる言葉から、ふらっと。</p>
+    <div class="chips chips--soft" id="chips" aria-label="テーマから探す">
+      <span class="chip" data-q="祭り">祭り</span><span class="chip" data-q="屋台">屋台</span><span class="chip" data-q="暮らし">暮らし</span>
+      <span class="chip" data-q="海">海</span><span class="chip" data-q="川">川</span><span class="chip" data-q="古地図">古地図</span>
+      <span class="chip" data-q="東海道">東海道</span><span class="chip" data-q="信仰">信仰</span><span class="chip" data-q="地名">地名</span>
+      <span class="chip" data-q="学校">学校</span>
     </div>
   </div>
 </section>
