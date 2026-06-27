@@ -19,13 +19,28 @@ export async function onRequest(context) {
 
   const today = jstDate(0);
   const yesterday = jstDate(-1);
-  const [todayCount, yCount, total] = await Promise.all([
+  const [todayCount, yCount, total, todayPv, yPv, totalPv] = await Promise.all([
     getInt(kv, `day:${today}`),
     getInt(kv, `day:${yesterday}`),
     getInt(kv, "total"),
+    getInt(kv, `pv:day:${today}`),
+    getInt(kv, `pv:day:${yesterday}`),
+    getInt(kv, "pv:total"),
   ]);
 
-  return json({ today: todayCount, yesterday: yCount, total });
+  return json({
+    today: todayCount,
+    yesterday: yCount,
+    total,
+    pv_today: todayPv,
+    pv_yesterday: yPv,
+    pv_total: totalPv,
+    rows: [
+      { label: "today", users: todayCount, pv: todayPv },
+      { label: "yesterday", users: yCount, pv: yPv },
+      { label: "total", users: total, pv: totalPv },
+    ],
+  });
 }
 
 async function weeklyRanking(kv, limit) {

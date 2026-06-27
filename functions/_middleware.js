@@ -18,6 +18,8 @@ export async function onRequest(context) {
 
   await Promise.all([
     increment(kv, `page:${today}:${path}`, 60 * 60 * 24 * 45),
+    increment(kv, `pv:day:${today}`, 60 * 60 * 24 * 400),
+    increment(kv, "pv:total"),
     alreadyToday ? Promise.resolve() : increment(kv, `day:${today}`, 60 * 60 * 24 * 400),
     alreadyToday ? Promise.resolve() : increment(kv, "total"),
   ]);

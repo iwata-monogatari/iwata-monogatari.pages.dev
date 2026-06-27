@@ -783,24 +783,53 @@ nav.menu a:hover{color:var(--brown-deep);}
         <div class="side-block" id="access">
           <h3>アクセス</h3>
           <div id="access-counter" class="access-counter">
-            <span class="ac-item"><span class="ac-lbl">本日</span><strong id="ac-today">—</strong></span>
-            <span class="ac-item"><span class="ac-lbl">昨日</span><strong id="ac-yesterday">—</strong></span>
-            <span class="ac-item"><span class="ac-lbl">累計</span><strong id="ac-total">—</strong></span>
+            <table class="access-table">
+              <thead>
+                <tr>
+                  <th scope="col">期間</th>
+                  <th scope="col">ユニークユーザ（人）</th>
+                  <th scope="col">PV（PV）</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">本日</th>
+                  <td id="ac-users-today">-</td>
+                  <td id="ac-pv-today">-</td>
+                </tr>
+                <tr>
+                  <th scope="row">昨日</th>
+                  <td id="ac-users-yesterday">-</td>
+                  <td id="ac-pv-yesterday">-</td>
+                </tr>
+                <tr>
+                  <th scope="row">累計</th>
+                  <td id="ac-users-total">-</td>
+                  <td id="ac-pv-total">-</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <style>
-          #access .access-counter{display:flex;flex-direction:column;gap:.3em;margin-top:.2em;}
-          #access .ac-item{display:flex;justify-content:space-between;align-items:baseline;
-            font-size:.86rem;color:#6b6256;}
-          #access .ac-lbl{letter-spacing:.04em;}
-          #access .access-counter strong{font-weight:600;font-variant-numeric:tabular-nums;color:#3a352e;}
+          #access .access-counter{margin-top:.35em;overflow-x:auto;}
+          #access .access-table{width:100%;border-collapse:collapse;font-size:.78rem;line-height:1.45;color:#6b6256;}
+          #access .access-table th,#access .access-table td{border:1px solid var(--line);padding:.45em .55em;text-align:right;white-space:nowrap;}
+          #access .access-table thead th{background:#f4f9fc;color:var(--ink);font-weight:700;text-align:center;}
+          #access .access-table tbody th{background:#fffdf7;color:var(--ink-soft);font-weight:600;text-align:left;}
+          #access .access-table td{font-weight:700;font-variant-numeric:tabular-nums;color:#3a352e;}
         </style>
         <script>
           (function(){var f=function(n){return (n||0).toLocaleString("ja-JP");};
             fetch("/api/counter",{credentials:"same-origin"}).then(function(r){return r.json();})
-            .then(function(d){document.getElementById("ac-today").textContent=f(d.today);
-              document.getElementById("ac-yesterday").textContent=f(d.yesterday);
-              document.getElementById("ac-total").textContent=f(d.total);})
+            .then(function(d){
+              document.getElementById("ac-users-today").textContent=f(d.today);
+              document.getElementById("ac-users-yesterday").textContent=f(d.yesterday);
+              document.getElementById("ac-users-total").textContent=f(d.total);
+              document.getElementById("ac-pv-today").textContent=f(d.pv_today);
+              document.getElementById("ac-pv-yesterday").textContent=f(d.pv_yesterday);
+              document.getElementById("ac-pv-total").textContent=f(d.pv_total);
+            })
             .catch(function(){var e=document.getElementById("access");if(e)e.style.display="none";});})();
         </script>
         <div class="side-block" id="archived-titles">
