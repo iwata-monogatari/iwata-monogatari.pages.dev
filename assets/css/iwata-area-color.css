@@ -179,6 +179,21 @@
 @media (max-width: 900px){ .area-card-grid { grid-template-columns: repeat(2,1fr);} }
 @media (max-width: 600px){ .area-card-grid { grid-template-columns: 1fr; } }
 
+.area-link-list .area-card {
+  min-height: 0;
+  padding: 9px 11px;
+  gap: 2px;
+  text-decoration: none;
+}
+.area-link-list .area-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(40, 30, 20, .08);
+}
+.area-link-list .area-card .area-yomi {
+  color: #6f7d84;
+  font-size: .78rem;
+}
+
 /* ----------------------------------------------------------------------------
    5. 可読性・カラーユニバーサルの原則（順守事項）
    - 色だけで地区を示さない。必ず地区名テキスト（バッジ/ラベル）を併記する。
