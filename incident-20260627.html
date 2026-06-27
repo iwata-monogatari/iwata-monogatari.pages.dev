@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年6月27日〜28日 サイト障害の記録｜磐田物語</title>
+<meta name="description" content="2026年6月27日夕方から28日未明にかけて発生した磐田物語サイトの障害（Cloudflare Workers KVの操作上限超過によるError 1101）の経緯・原因・対処の記録。">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://iwata-monogatari.pages.dev/incident-20260627.html">
+<meta name="theme-color" content="#fffdf7">
+<meta property="og:site_name" content="磐田物語">
+<meta property="og:title" content="2026年6月27日〜28日 サイト障害の記録｜磐田物語">
+<meta property="og:description" content="2026年6月27日夕方から28日未明にかけて発生した磐田物語サイトの障害の経緯・原因・対処の記録。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://iwata-monogatari.pages.dev/incident-20260627.html">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#fffdf7; --paper-deep:#e9f3fa; --ink:#1f3a48; --ink-soft:#5b6b74;
+  --brown:#2f7fa3; --brown-deep:#1f4f6f; --accent-blue:#356f88; --line:#d8e8ef;
+  --card:#fffdf7; --shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.85;font-size:17px;letter-spacing:.02em;}
+a{color:var(--brown-deep);text-decoration:none;}
+a:hover{text-decoration:underline;}
+header.site{background:#6fb7d8;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;}
+.bar{display:flex;align-items:center;justify-content:space-between;height:60px;max-width:1180px;margin:0 auto;padding:0 22px;}
+.brand{display:flex;align-items:baseline;gap:12px;text-decoration:none;}
+.brand .logo{font-family:"Shippori Mincho",serif;font-weight:800;font-size:25px;color:var(--ink);}
+.brand .sub{font-size:12px;color:var(--ink-soft);letter-spacing:.06em;}
+nav.menu{display:flex;gap:20px;flex-wrap:wrap;}
+nav.menu a{color:var(--ink);font-size:14px;font-weight:500;text-decoration:none;}
+nav.menu a:hover{color:var(--brown-deep);}
+.article-wrap{max-width:820px;margin:0 auto;padding:32px 22px 64px;}
+.crumb{font-size:12.5px;color:var(--ink-soft);margin:0 0 22px;}
+.crumb a{color:var(--brown-deep);}
+h1{font-family:"Shippori Mincho",serif;font-size:clamp(24px,4vw,34px);line-height:1.45;color:var(--ink);border-bottom:2px solid var(--brown);padding-bottom:14px;margin:0 0 24px;}
+h2{font-family:"Shippori Mincho",serif;font-size:21px;line-height:1.5;color:var(--ink);margin:40px 0 14px;border-left:5px solid var(--accent-blue);padding-left:12px;}
+p{margin:0 0 18px;}
+.lead{background:var(--paper-deep);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:0 0 28px;}
+.note{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 16px;color:var(--ink-soft);font-size:14px;}
+.table-wrap{overflow-x:auto;margin:18px 0 24px;}
+table{width:100%;border-collapse:collapse;background:#fff;}
+th,td{border:1px solid var(--line);padding:10px 12px;font-size:15px;vertical-align:top;text-align:left;}
+th{background:var(--paper-deep);white-space:nowrap;color:var(--ink);}
+.timeline{list-style:none;margin:16px 0 24px;padding:0;display:grid;gap:12px;}
+.timeline li{background:#fff;border:1px solid var(--line);border-left:5px solid var(--brown);border-radius:8px;padding:12px 14px;}
+.timeline strong{display:block;font-family:"Shippori Mincho",serif;color:var(--brown-deep);font-size:16px;margin-bottom:3px;}
+.closing{border-top:1px solid var(--line);margin-top:34px;padding-top:22px;}
+.date-note{font-size:14px;color:var(--ink-soft);}
+@media(max-width:760px){
+  body{font-size:16px;}
+  .bar{height:auto;flex-wrap:wrap;padding:8px 14px;gap:6px 14px;}
+  .brand .sub{display:none;}
+  nav.menu{gap:12px;}
+  nav.menu a{font-size:12.5px;}
+  .article-wrap{padding:24px 18px 52px;}
+  th,td{font-size:14px;}
+}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/">
+      <span class="logo">磐田物語</span>
+      <span class="sub">遠江・見付のまちの歴史と文化</span>
+    </a>
+    <nav class="menu">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c033.html">集合知</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<main class="article-wrap">
+  <nav class="crumb" aria-label="パンくず"><a href="/">ホーム</a> › サイト障害の記録</nav>
+  <article>
+    <h1>サイト障害の記録 ── 2026年6月27日夕方〜28日未明</h1>
+    <p class="lead">2026年6月27日の夕方から28日の未明にかけて、当サイト「磐田物語」が全ページにわたり表示できない状態となった。画面には Cloudflare の「Error 1101（Worker threw exception）」が表示され、閲覧が不能となった。本ページは、その障害の経緯・原因・対処を記録として残すものである。ご不便をおかけした閲覧者の方々にお詫び申し上げる。</p>
+
+    <h2>障害の概要</h2>
+    <div class="table-wrap">
+      <table>
+        <tbody>
+          <tr><th scope="row">発生日時</th><td>2026年6月27日（土）夕方ごろ（KV操作上限の超過に伴い段階的に悪化）</td></tr>
+          <tr><th scope="row">復旧日時</th><td>2026年6月28日（日）午前2時35分ごろ</td></tr>
+          <tr><th scope="row">影響範囲</th><td>サイト全ページ（トップページおよび全記事）が Error 1101 で表示不能</td></tr>
+          <tr><th scope="row">直接の原因</th><td>Cloudflare Workers KV の1日あたり書き込み（put）上限（無料枠1000回）を超過し、以降の書き込みが429エラーで失敗。これを処理が捕捉していなかったため例外が全ページに波及した。</td></tr>
+          <tr><th scope="row">真の原因</th><td>トップページ等に設置していた自前のアクセスカウンターが、1ページ閲覧ごとに最大5回 KV へ書き込んでいたため、書き込み回数が無料枠を急速に消費した。</td></tr>
+          <tr><th scope="row">対処</th><td>アクセスカウンター機能を撤去し、KV への書き込みをゼロにした。アクセス把握は Cloudflare Web Analytics へ移行した。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>時系列（経緯）</h2>
+    <ul class="timeline">
+      <li><strong>6月27日（土）14:55</strong>Cloudflareより「KV日次操作上限の50%に到達」とのアラートメール（1通目）が届いた。</li>
+      <li><strong>6月27日（土）17:25:21（UTC）</strong>トップページにアクセスした際、Error 1101（Worker threw exception）を確認した。日本時間ではおおむね6月28日未明にあたる。Cloudflareのエラー画面に表示された Ray ID の時刻は UTC 表記である点に留意する必要がある。日本時間は +9時間である。</li>
+      <li><strong>6月27日（土）17:40</strong>Cloudflareより「KV日次操作上限の90%に到達」とのアラートメール（2通目）が届いた。</li>
+      <li><strong>6月27日（土）19:21</strong>Cloudflareより「1日あたりのKV put 上限（1000回）を超過した」とのアラートメール（3通目）が届いた。以降、KVへの書き込みが429エラーで失敗し続け、サイトはError 1101で表示不能となった。上限は協定世界時の翌0時（日本時間で当日午前9時）にリセットされる仕様だが、リセットを待たずに対処することとした。</li>
+      <li><strong>6月28日（日）02:35ごろ</strong>アクセスカウンターを撤去したうえで再デプロイし、サイトの表示が回復したことを確認した。これをもって復旧とした。</li>
+    </ul>
+    <p class="note">補足として、Cloudflareのアラート3通はいずれも現地表記が6月27日（土）である。閲覧不能の状態が解消したのは、日本時間の6月28日午前2時35分ごろである。</p>
+
+    <h2>原因の詳細</h2>
+    <p>当サイトは Cloudflare Pages 上で動いており、ページ閲覧数を集計する自前のアクセスカウンターを設けていた。この集計処理（<code>functions/_middleware.js</code>）は、すべてのページ閲覧時に実行され、日付別ページビュー・累計ページビュー・ユニークユーザーなどを Cloudflare Workers KV に書き込んでいた。</p>
+    <p>この処理は、1ページの閲覧ごとに最大5回の KV 書き込み（put）を行う作りであった。Workers KV の無料枠は1日あたり1000回の書き込みであるため、おおよそ1日200〜300ページビュー程度で上限に達する計算になる。</p>
+    <p>上限を超えると、KV への書き込みは429エラーで失敗する。集計処理はこの失敗を捕捉（try/catch）していなかったため、例外がそのまま伝播し、ページの描画自体が失敗した。結果として、全ページが Error 1101 で表示されなくなった。</p>
+    <p>なお、掲示板機能は別のデータベース（Cloudflare D1）を用いており、KV は使っていない。したがって今回の障害と掲示板は無関係であり、掲示板のデータが失われたなどの事実はない。</p>
+
+    <h2>対処と再発防止</h2>
+    <p>アクセス数をサイト上に表示する必要性は高くないと判断し、KV へ書き込む自前のアクセスカウンターを完全に撤去した。あわせて、同じく KV を走査していたトップページの「人気ページランキング（週間ランキング）」も撤去した。これにより KV への書き込みはゼロとなり、上限超過は構造的に起こらなくなった。</p>
+    <p>アクセス状況の把握は、KV を使わない Cloudflare Web Analytics（無料・Cookie不使用）へ移行した。ページビュー数・訪問者数・人気ページ・流入元などは、こちらで確認できる。</p>
+    <p>今後、同種の「閲覧のたびに外部ストレージへ書き込む」仕組みを設ける場合は、第一に書き込み失敗がページ描画を巻き込まないよう必ず例外処理で保護すること、第二に書き込み回数が無料枠に収まる設計（サンプリング等）にすることを方針とする。</p>
+
+    <div class="closing">
+      <p>地域の記憶を記録し残すことを目的とした当サイトにおいて、その記録自体が一時的にであれ閲覧できなくなったことを重く受け止めている。今回の経緯を本ページに残し、再発防止と安定運用に努めていく。</p>
+      <p class="date-note">記載日：2026年6月28日</p>
+    </div>
+  </article>
+</main>
+
+<footer class="im-foot">
+<style>
+.im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+.im-foot *{box-sizing:border-box;}
+.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+.im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+.im-foot .im-brand:hover{text-decoration:none;}
+.im-foot .im-brand .im-dot{color:#2f7fa3;}
+.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+.im-foot .im-links{width:100%;margin-top:6px;}
+.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+.im-foot .im-links li{font-size:13px;line-height:1.6;}
+.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+.im-foot .im-sns{width:100%;margin-top:20px;}
+.im-foot .im-icons{display:flex;gap:14px;}
+.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
+.im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
+.im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
+.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+</style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
+      </ul>
+      <div class="im-sns">
+        <p class="im-lh">大石ひろゆきのSNS</p>
+        <div class="im-icons">
+          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.92-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://x.com/HiroyukiLawAka" target="_blank" rel="noopener" aria-label="X (旧Twitter)" title="X (旧Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+</body>
+</html>

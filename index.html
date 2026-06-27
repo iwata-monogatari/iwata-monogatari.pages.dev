@@ -418,6 +418,37 @@ nav.menu a:hover{color:var(--brown-deep);}
       max-width: 8em;
     }
   }
+  /* ── 障害記録ページへの案内リンク（右カラム・運営者案内の下） ── */
+  .incident-link-block{margin:4px 0 20px;}
+  .incident-link-block a{
+    display:flex;align-items:center;gap:11px;
+    padding:11px 13px;border-radius:12px;text-decoration:none;
+    background:#fff;border:1px solid var(--line);
+    box-shadow:0 1px 2px rgba(80,60,40,.05);
+    transition:.18s;
+  }
+  .incident-link-block a:hover{
+    border-color:var(--brown);
+    background:var(--paper-deep);
+  }
+  .incident-link-icon{
+    flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:24px;height:24px;border-radius:50%;
+    background:var(--accent-blue);color:#fff;
+    font-weight:700;font-size:14px;line-height:1;
+  }
+  .incident-link-text{flex:1 1 auto;min-width:0;line-height:1.45;}
+  .incident-link-label{
+    display:block;font-size:10.5px;letter-spacing:.12em;font-weight:700;
+    color:var(--accent-blue);
+  }
+  .incident-link-title{
+    display:block;font-size:12.5px;color:var(--ink);margin-top:2px;
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+  }
+  .incident-link-arrow{
+    flex:0 0 auto;color:var(--brown-deep);font-weight:700;font-size:14px;
+  }
 </style>
 <link rel="stylesheet" href="/assets/css/iwata-area-color.css">
 </head>
@@ -1230,6 +1261,17 @@ nav.menu a:hover{color:var(--brown-deep);}
           <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">代表 大石浩之のnote</a></li>
         </ul>
       </section>
+      <!-- 障害記録ページへのリンク（運営者案内カードの枠外・下） -->
+      <p class="incident-link-block">
+        <a href="/incident-20260627.html">
+          <span class="incident-link-icon" aria-hidden="true">!</span>
+          <span class="incident-link-text">
+            <span class="incident-link-label">サイト障害の記録</span>
+            <span class="incident-link-title">2026年6月27日夕方から28日未明の障害について</span>
+          </span>
+          <span class="incident-link-arrow" aria-hidden="true">→</span>
+        </a>
+      </p>
     </aside>
   </div>
 </div>
