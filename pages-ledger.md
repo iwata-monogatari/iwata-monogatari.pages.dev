@@ -1,4 +1,4 @@
-﻿{
+{
     "ledger_name":  "磐田物語 ページ台帳 初期版",
     "created_date":  "2026-06-25",
     "region_scheme":  [
@@ -392,7 +392,7 @@
                         "source":  "github_root",
                         "notes":  "学校区・大字の一覧系と思われる。内容確認後、名称確定。 リネーム第4弾：旧ファイル 000-school-d.html から新ファイル c002.html へ変更。旧URLは案内ページとして残す。",
                         "created_at":  "",
-                        "updated_at":  "2026-06-25",
+                        "updated_at":  "2026-06-27",
                         "first_published_at":  "",
                         "old_file":  "000-school-d.html",
                         "content_type":  "reference",
