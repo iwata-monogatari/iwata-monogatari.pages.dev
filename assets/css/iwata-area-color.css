@@ -189,6 +189,9 @@
   align-items: baseline;
   justify-content: center;
 }
+.area-link-list {
+  gap: 9px !important;
+}
 .area-link-list .area-card:hover {
   transform: translateY(-1px);
   box-shadow: 0 6px 14px rgba(40, 30, 20, .08);
