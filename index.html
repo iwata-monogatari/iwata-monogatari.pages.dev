@@ -786,25 +786,41 @@ nav.menu a:hover{color:var(--brown-deep);}
             <table class="access-table">
               <thead>
                 <tr>
-                  <th scope="col">期間</th>
-                  <th scope="col">ユニークユーザ（人）</th>
-                  <th scope="col">PV（PV）</th>
+                  <th scope="col" colspan="2">ユニークユーザ（人）</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">本日</th>
                   <td id="ac-users-today">-</td>
-                  <td id="ac-pv-today">-</td>
                 </tr>
                 <tr>
                   <th scope="row">昨日</th>
                   <td id="ac-users-yesterday">-</td>
-                  <td id="ac-pv-yesterday">-</td>
                 </tr>
                 <tr>
                   <th scope="row">累計</th>
                   <td id="ac-users-total">-</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="access-table">
+              <thead>
+                <tr>
+                  <th scope="col" colspan="2">PV（PV）</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">本日</th>
+                  <td id="ac-pv-today">-</td>
+                </tr>
+                <tr>
+                  <th scope="row">昨日</th>
+                  <td id="ac-pv-yesterday">-</td>
+                </tr>
+                <tr>
+                  <th scope="row">累計</th>
                   <td id="ac-pv-total">-</td>
                 </tr>
               </tbody>
@@ -812,8 +828,9 @@ nav.menu a:hover{color:var(--brown-deep);}
           </div>
         </div>
         <style>
-          #access .access-counter{margin-top:.35em;overflow-x:auto;}
+          #access .access-counter{margin-top:.35em;}
           #access .access-table{width:100%;border-collapse:collapse;font-size:.78rem;line-height:1.45;color:#6b6256;}
+          #access .access-table + .access-table{margin-top:.9em;}
           #access .access-table th,#access .access-table td{border:1px solid var(--line);padding:.45em .55em;text-align:right;white-space:nowrap;}
           #access .access-table thead th{background:#f4f9fc;color:var(--ink);font-weight:700;text-align:center;}
           #access .access-table tbody th{background:#fffdf7;color:var(--ink-soft);font-weight:600;text-align:left;}
