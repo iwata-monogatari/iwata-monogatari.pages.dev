@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-06-27",
+  "source": "bunka2/00_README.md ほか分割指示書",
+  "note": "c021.html の既存『読みもの』予約番号と突合し採番を確定。c021予約: n025=土器塚古墳, r013=掛塚祭屋台囃子, t028=熊野の長フジ(県), m025=甲塚のクロガネモチ(本件#12), n026=善導寺大クス(本件#11), k038=長者屋敷(誤・実体はk004)。",
+  "existing_no_new_page": [
+    { "no": 1, "name": "銚子塚古墳附小銚子塚古墳", "url": ["t001.html", "t020.html"], "district": "koyo", "c021": "t001 既リンク" },
+    { "no": 2, "name": "旧見付学校附磐田文庫", "url": ["m015.html"], "district": "mitsuke", "c021": "m015 既リンク" },
+    { "no": 3, "name": "新豊院山古墳群", "url": ["k002.html"], "district": "koyo", "c021": "リンク未→k002追加" },
+    { "no": 5, "name": "米塚古墳群", "url": ["k037.html"], "district": "koyo", "c021": "k037 既リンク" },
+    { "no": 6, "name": "長者屋敷遺跡", "url": ["k004.html"], "district": "koyo", "c021": "k038誤リンク→k004修正" }
+  ],
+  "new_pages": [
+    { "no": 12, "name": "甲塚のクロガネモチ", "kubun": "県指定", "type": "天然記念物", "url": "m025.html", "district": "mitsuke", "parent": "01001-mitsuke.html", "date": "昭和59年3月23日", "loc": "見付4075-1 かぶと塚公園内", "note": "指示書の『申塚』は公式名『甲塚(かぶとづか)』。c021予約m025に一致" },
+    { "no": 7,  "name": "阿多古山一里塚", "kubun": "市指定", "type": "史跡", "url": "m026.html", "district": "mitsuke", "parent": "01001-mitsuke.html", "loc": "見付1597-2他" },
+    { "no": 9,  "name": "見付本陣（神谷家・鈴木家）墓所", "kubun": "市指定", "type": "史跡", "url": "m027.html", "district": "mitsuke", "parent": "01001-mitsuke.html", "loc": "見付3353-1 西光寺境内" },
+    { "no": 15, "name": "西光寺大クス附ナギの木", "kubun": "市指定", "type": "天然記念物", "url": "m028.html", "district": "mitsuke", "parent": "01001-mitsuke.html", "loc": "見付3353-1 西光寺境内" },
+    { "no": 19, "name": "西光寺のイヌマキ", "kubun": "市指定", "type": "天然記念物", "url": "m029.html", "district": "mitsuke", "parent": "01001-mitsuke.html", "loc": "見付3353-1 西光寺境内" },
+    { "no": 11, "name": "善導寺大クス", "kubun": "県指定", "type": "天然記念物", "url": "n026.html", "district": "nakaizumi", "parent": "01002-nakaizumi.html", "date": "昭和34年4月14日", "loc": "中泉600" },
+    { "no": 8,  "name": "澄水山古墳", "kubun": "市指定", "type": "史跡", "url": "n027.html", "district": "nakaizumi", "parent": "01002-nakaizumi.html", "loc": "中泉168" },
+    { "no": 14, "name": "アキザキヤツシロラン群生地", "kubun": "市指定", "type": "天然記念物", "url": "n028.html", "district": "nakaizumi", "parent": "01002-nakaizumi.html", "loc": "城之崎4-2722-1 福王寺境内" },
+    { "no": 17, "name": "天御子神社のヤマモモの木", "kubun": "市指定", "type": "天然記念物", "url": "n029.html", "district": "nakaizumi", "parent": "01002-nakaizumi.html", "loc": "中央町2990-1 天御子神社境内", "district_note": "指示書は共通。中央町=旧磐田町中心のため暫定で中泉。本文に要確認明記" },
+    { "no": 18, "name": "福王寺のケヤキ", "kubun": "市指定", "type": "天然記念物", "url": "n030.html", "district": "nakaizumi", "parent": "01002-nakaizumi.html", "loc": "城之崎4-2722-1 福王寺境内" },
+    { "no": 20, "name": "福王寺のクロバイ", "kubun": "市指定", "type": "天然記念物", "url": "n031.html", "district": "nakaizumi", "parent": "01002-nakaizumi.html", "loc": "城之崎4-2722-1 福王寺境内" },
+    { "no": 21, "name": "静岡県立磐田農業高等学校記念館", "kubun": "国登録", "type": "登録有形文化財", "url": "n032.html", "district": "nakaizumi", "parent": "01002-nakaizumi.html", "loc": "中泉125-1 静岡県立磐田農業高等学校内" },
+    { "no": 4,  "name": "御厨古墳群", "kubun": "国指定", "type": "史跡", "url": "u027.html", "district": "mikuriya", "parent": "01003-mikuriya.html", "date": "平成13年3月26日", "loc": "新貝1555-1他（新貝・鎌田）", "components": "松林山・高根山・御厨堂山・秋葉山・稲荷山古墳" },
+    { "no": 10, "name": "医王寺庭園及び参道", "kubun": "市指定", "type": "名勝", "url": "u028.html", "district": "mikuriya", "parent": "01003-mikuriya.html", "loc": "鎌田2065-1 医王寺" },
+    { "no": 16, "name": "稗田家のマキ", "kubun": "市指定", "type": "天然記念物", "url": "u029.html", "district": "mikuriya", "parent": "01003-mikuriya.html", "loc": "鎌田2308-8" },
+    { "no": 13, "name": "須賀神社クス", "kubun": "市指定", "type": "天然記念物", "url": "r015.html", "district": "ryuyo", "parent": "01007-ryuyo.html", "loc": "西島 須賀神社境内", "district_note": "西島・地区要確認。r013=掛塚囃子・r014=掛塚竹馬がpages.json/c021予約のためr015" }
+  ],
+  "c021_edits": [
+    { "row": "御厨古墳群(国指定)", "action": "読みもの追加 -> u027.html" },
+    { "row": "新豊院山古墳群(国指定)", "action": "読みもの追加 -> k002.html" },
+    { "row": "長者屋敷遺跡(県指定)", "action": "誤リンク k038.html を k004.html に修正" }
+  ]
+}
