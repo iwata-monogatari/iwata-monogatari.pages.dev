@@ -1,0 +1,272 @@
+﻿/* ============================================================================
+   磐田物語 ── 9地区カラー CSS設計図（適用ルール）
+   iwata-monogatari.pages.dev
+   この1枚を全ページ共通CSSに読み込み、地区に紐づくページ／カードに適用する。
+   文体・既存配色（生成り#f7f2e9・茶#a6713e・松緑#46624a）は維持し、
+   地区色は「アクセント」として重ねる。
+   ============================================================================ */
+
+/* ----------------------------------------------------------------------------
+   1. 地区色トークン（:root に9地区を定義）
+   - --c-XXX        ：原色（見出し・帯・リンクなど“効かせる”色）
+   - --c-XXX-soft   ：薄色（カード背景など“敷く”色。原色を白に寄せた淡トーン）
+   - --c-XXX-ink    ：その地区面の上に置く文字色（可読性確保用）
+   地区番号順＝①見付②中泉③御厨④豊田⑤南部⑥向陽⑦竜洋⑧福田⑨豊岡
+   ---------------------------------------------------------------------------- */
+:root {
+  /* ① 見付 国府朱 */
+  --c-mitsuke:        #A9412B;
+  --c-mitsuke-soft:   #f4e6e2;
+  --c-mitsuke-ink:    #5e2117;
+
+  /* ② 中泉 中泉青緑 */
+  --c-nakaizumi:      #008C8C;
+  --c-nakaizumi-soft: #dcefef;
+  --c-nakaizumi-ink:  #044747;
+
+  /* ③ 御厨 古墳銅 */
+  --c-mikuriya:       #B87333;
+  --c-mikuriya-soft:  #f3e8da;
+  --c-mikuriya-ink:   #5e3a16;
+
+  /* ④ 豊田 長藤紫 */
+  --c-toyoda:         #7B4BB2;
+  --c-toyoda-soft:    #ece4f4;
+  --c-toyoda-ink:     #3d2560;
+
+  /* ⑤ 南部 大池浅葱 */
+  --c-nanbu:          #5BAEC0;
+  --c-nanbu-soft:     #e1f0f4;
+  --c-nanbu-ink:      #1f5560;
+
+  /* ⑥ 向陽 台地茶緑 */
+  --c-koyo:           #5F8D3B;
+  --c-koyo-soft:      #e7efdd;
+  --c-koyo-ink:       #2f4a1c;
+
+  /* ⑦ 竜洋 天竜群青 */
+  --c-ryuyo:          #1E5E9F;
+  --c-ryuyo-soft:     #dde8f3;
+  --c-ryuyo-ink:      #123a63;
+
+  /* ⑧ 福田 しらす銀（もともと淡いので原色とソフトを近づける） */
+  --c-fukude:         #B7AE97;   /* 帯・罫用に少し締めた銀褐 */
+  --c-fukude-accent:  #D8D3C5;   /* 指定のしらす銀（面で使う） */
+  --c-fukude-soft:    #efece3;
+  --c-fukude-ink:     #4d4636;
+
+  /* ⑨ 豊岡 獅子岩茶 */
+  --c-toyooka:        #7A5A36;
+  --c-toyooka-soft:   #ece3d6;
+  --c-toyooka-ink:    #4a3720;
+}
+
+/* ----------------------------------------------------------------------------
+   2. 適用の考え方（どこに効かせるか）
+   各ページ／カードのルート要素に「地区クラス」を1つ付け、
+   そのスコープ内で local 変数 --accent / --accent-soft / --accent-ink を束ねる。
+   → 個々のCSSは --accent を見るだけでよく、ページ追加時はクラス1個付けるだけ。
+   ---------------------------------------------------------------------------- */
+
+/* 2-1. 地区クラス（ページ<body>やカード要素に付与する） */
+.area-mitsuke   { --accent: var(--c-mitsuke);   --accent-soft: var(--c-mitsuke-soft);   --accent-ink: var(--c-mitsuke-ink); }
+.area-nakaizumi { --accent: var(--c-nakaizumi); --accent-soft: var(--c-nakaizumi-soft); --accent-ink: var(--c-nakaizumi-ink); }
+.area-mikuriya  { --accent: var(--c-mikuriya);  --accent-soft: var(--c-mikuriya-soft);  --accent-ink: var(--c-mikuriya-ink); }
+.area-toyoda    { --accent: var(--c-toyoda);    --accent-soft: var(--c-toyoda-soft);    --accent-ink: var(--c-toyoda-ink); }
+.area-nanbu     { --accent: var(--c-nanbu);     --accent-soft: var(--c-nanbu-soft);     --accent-ink: var(--c-nanbu-ink); }
+.area-koyo      { --accent: var(--c-koyo);      --accent-soft: var(--c-koyo-soft);      --accent-ink: var(--c-koyo-ink); }
+.area-ryuyo     { --accent: var(--c-ryuyo);     --accent-soft: var(--c-ryuyo-soft);     --accent-ink: var(--c-ryuyo-ink); }
+.area-fukude    { --accent: var(--c-fukude);    --accent-soft: var(--c-fukude-soft);    --accent-ink: var(--c-fukude-ink); }
+.area-toyooka   { --accent: var(--c-toyooka);   --accent-soft: var(--c-toyooka-soft);   --accent-ink: var(--c-toyooka-ink); }
+
+/*
+  複数地区にまたがるページ：地区番号が一番小さい地区の色を採用する。
+  例）見付(①)と中泉(②)の両方を扱うページ → .area-mitsuke を付ける。
+  地区に紐づかない全体ページ（憲章・佐口資料室・公的資料など）は地区クラスを付けず、
+  従来の茶/松緑のままにする（無印＝サイト基調色）。
+*/
+
+/* ----------------------------------------------------------------------------
+   3. 効かせる箇所（記事ページ内アクセント）
+   ──「見出し・帯・罫・リンク・地区バッジ」に --accent を使う。本文の地色は変えない。
+   ---------------------------------------------------------------------------- */
+
+/* 3-1. 記事タイトル下の帯（ページ冒頭の見出し） */
+.area-mitsuke, .area-nakaizumi, .area-mikuriya, .area-toyoda, .area-nanbu,
+.area-koyo, .area-ryuyo, .area-fukude, .area-toyooka {
+  /* スコープ確認用。実害なし */
+}
+.article-title {
+  border-bottom: 3px solid var(--accent, #a6713e);
+  padding-bottom: .4em;
+}
+
+/* 3-2. 本文中の見出し h2 / h3（左罫＋見出し色） */
+.article-body h2 {
+  border-left: 6px solid var(--accent, #46624a);
+  padding-left: .6em;
+  color: var(--accent-ink, #3a3027);
+}
+.article-body h3 {
+  color: var(--accent-ink, #3a3027);
+  border-bottom: 1px dotted var(--accent, #a6713e);
+  padding-bottom: .2em;
+}
+
+/* 3-3. 地区バッジ（記事冒頭やカードに付ける「見付」等のラベル） */
+.area-badge {
+  display: inline-block;
+  font-size: .8rem;
+  line-height: 1;
+  padding: .3em .7em;
+  border-radius: 999px;
+  background: var(--accent, #a6713e);
+  color: #fff;             /* 原色面の上は白文字 */
+  letter-spacing: .04em;
+}
+/* 福田だけは原色が淡く白文字が読みにくいので、面=accent・字=ink で反転 */
+.area-fukude .area-badge,
+.area-badge.is-fukude {
+  background: var(--c-fukude-accent);
+  color: var(--c-fukude-ink);
+}
+
+/* 3-4. 本文中リンク・「読む →」の色 */
+.article-body a,
+.read-more {
+  color: var(--accent, #a6713e);
+}
+
+/* 3-5. 引用・コラム枠（左帯＋ごく薄い地区色背景） */
+.note-box {
+  border-left: 4px solid var(--accent, #a6713e);
+  background: var(--accent-soft, #f7f2e9);
+  padding: .8em 1em;
+}
+
+/* ----------------------------------------------------------------------------
+   4. 敷く箇所（トップの地区カード）
+   ── カード背景は --accent-soft（薄色）、上辺に原色帯、地区名は原色。
+   ---------------------------------------------------------------------------- */
+.area-card {
+  background: var(--accent-soft, #f7f2e9);
+  border: 1px solid rgba(0,0,0,.06);
+  border-top: 3px solid var(--accent, #a6713e);
+  border-radius: 8px;
+  padding: 14px 16px;
+  color: #3a3027;                 /* カード本文は常に濃い墨茶（薄背景で可読） */
+
+  /* === A-1 改修：カードの縦幅を 0.6倍 にする ===
+     旧 min-height: 160px を 0.6倍 → 96px。コンパクトな一覧にする。
+     （※第1指示書では1.5倍としていたが、0.6倍に変更で確定） */
+  min-height: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.area-card .area-name {            /* カード内の地区名 */
+  color: var(--accent, #a6713e);
+  font-weight: 700;
+}
+.area-card.area-fukude .area-name { color: var(--c-fukude-ink); } /* 淡色対策 */
+
+/* 9枚を3×3に並べる（PC）。タブレット2列・スマホ1列 */
+.area-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+@media (max-width: 900px){ .area-card-grid { grid-template-columns: repeat(2,1fr);} }
+@media (max-width: 600px){ .area-card-grid { grid-template-columns: 1fr; } }
+
+/* ----------------------------------------------------------------------------
+   5. 可読性・カラーユニバーサルの原則（順守事項）
+   - 色だけで地区を示さない。必ず地区名テキスト（バッジ/ラベル）を併記する。
+   - 原色面の上 → 文字は白。薄色面の上 → 文字は墨茶（#3a3027）か --accent-ink。
+   - しらす銀(福田)は淡いため、帯・罫には締め色 --c-fukude を使い、
+     面で見せたいときだけ --c-fukude-accent を使う（文字は --c-fukude-ink）。
+   - 本文の“地”の色（生成り）は変えない。地区色はアクセントとして重ねるだけ。
+   ---------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+   6. 使い方（HTML側の最小手順）
+   ① ページ<body>（または記事ラッパ）に地区クラスを1つ付ける。
+      例：<body class="area-mitsuke"> … 見付に紐づく記事
+      例：<body class="area-ryuyo">   … 竜洋（掛塚など）に紐づく記事
+   ② 複数地区ページは番号最小の地区クラスを付ける（見付①と中泉②→ area-mitsuke）。
+   ③ 地区に紐づかない総合ページ（憲章・佐口資料室・公的資料・遠州弁辞典等）は
+      地区クラスを付けない（従来の茶/松緑のまま）。
+   ④ あとは既存の .article-title / .article-body h2 / .area-badge / .area-card
+      が --accent を自動参照するので、個別の色指定は不要。
+   ---------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+   7. 既存テンプレート互換
+   現行ページで使われている .article / .read / .box などにも地区色を通す。
+   ---------------------------------------------------------------------------- */
+body[class*="area-"] {
+  --brown: var(--accent, #a6713e);
+  --brown-deep: var(--accent-ink, #3a3027);
+  --accent-blue: var(--accent, #356f88);
+  --blue: var(--accent, #2f7fa3);
+  --deep: var(--accent-ink, #1f4f6f);
+}
+
+body[class*="area-"] .article-head h1,
+body[class*="area-"] .feat-head h1,
+body[class*="area-"] .article-title {
+  border-bottom-color: var(--accent, #a6713e);
+}
+
+body[class*="area-"] .article h2,
+body[class*="area-"] .read h2,
+body[class*="area-"] .article-body h2 {
+  border-left-color: var(--accent, #46624a);
+  color: var(--accent-ink, #3a3027);
+}
+
+body[class*="area-"] .article h3,
+body[class*="area-"] .read h3,
+body[class*="area-"] .article-body h3 {
+  color: var(--accent-ink, #3a3027);
+  border-bottom-color: var(--accent, #a6713e);
+}
+
+body[class*="area-"] .article a,
+body[class*="area-"] .read a,
+body[class*="area-"] .article-body a,
+body[class*="area-"] .read-more {
+  color: var(--accent, #a6713e);
+}
+
+body[class*="area-"] .box,
+body[class*="area-"] .summary,
+body[class*="area-"] .sources {
+  border-top-color: var(--accent, #a6713e);
+}
+
+body[class*="area-"] .note,
+body[class*="area-"] .note-box {
+  border-left-color: var(--accent, #a6713e);
+  background: var(--accent-soft, #f7f2e9);
+}
+
+body[class*="area-"] .cat,
+body[class*="area-"] .eyebrow,
+body[class*="area-"] .meta {
+  color: var(--accent, #a6713e);
+}
+
+body[class*="area-"] .article-nav a.primary {
+  background: var(--accent, #a6713e);
+}
+
+body.area-fukude .cat,
+body.area-fukude .eyebrow,
+body.area-fukude .meta,
+body.area-fukude .article a,
+body.area-fukude .read a,
+body.area-fukude .article-body a {
+  color: var(--c-fukude-ink);
+}
+

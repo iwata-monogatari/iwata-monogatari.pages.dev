@@ -27,6 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
 <style>
   :root{
     --paper:#fffdf7;
@@ -145,6 +146,133 @@
   @media(max-width:768px){
     .district-table{min-width:1040px;font-size:0.88rem;}
     .district-table td.area{min-width:300px;}
+  }
+
+  :root {
+    --district-mitsuke: #A9412B;
+    --district-nakaizumi: #008C8C;
+    --district-mikuriya: #B87333;
+    --district-toyoda: #7B4BB2;
+    --district-nanbu: #5BAEC0;
+    --district-koyo: #5F8D3B;
+    --district-ryuyo: #1E5E9F;
+    --district-fukude: #D8D3C5;
+    --district-toyooka: #7A5A36;
+  }
+
+  .district-color-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(120, 92, 60, 0.22);
+  }
+
+  .color-principles {
+    margin: 1.5rem 0 2rem;
+    padding: 1.25rem 1.4rem;
+    background: #fbf7ef;
+    border: 1px solid rgba(120, 92, 60, 0.18);
+    border-radius: 16px;
+  }
+
+  .color-principles h3 {
+    margin-top: 0;
+  }
+
+  .color-principles ol {
+    margin-bottom: 0;
+    padding-left: 1.25rem;
+  }
+
+  .color-principles li + li {
+    margin-top: 0.45rem;
+  }
+
+  .district-color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1.75rem 0 2rem;
+  }
+
+  .district-color-card {
+    position: relative;
+    padding: 1.1rem 1.1rem 1rem;
+    background: #fffdf8;
+    border: 1px solid rgba(120, 92, 60, 0.18);
+    border-left: 7px solid var(--district-color);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(70, 48, 28, 0.07);
+  }
+
+  .district-color-card h3 {
+    margin: 0 0 0.55rem;
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+
+  .district-color-card h3 span {
+    display: inline-block;
+    margin-left: 0.35em;
+    color: var(--district-color);
+    font-size: 0.92em;
+    font-weight: 700;
+  }
+
+  .district-color-card p {
+    margin: 0.35rem 0;
+  }
+
+  .district-color-swatch {
+    display: inline-block;
+    width: 42px;
+    height: 16px;
+    margin-bottom: 0.65rem;
+    background: var(--district-color);
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+  }
+
+  .district-color-code {
+    margin-top: 0.7rem !important;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.85rem;
+    color: #5b5145;
+  }
+
+  .district-color-table-wrap {
+    margin-top: 1.5rem;
+    overflow-x: auto;
+  }
+
+  .district-color-table caption {
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .district-color-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3.8em;
+    padding: 0.22em 0.65em;
+    border-radius: 999px;
+    background: var(--district-color);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.86rem;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+  }
+
+  .district-color-chip.pale {
+    color: #2b2b2b;
+    border-color: #9c9788;
+  }
+
+  .note {
+    margin-top: 1rem;
+    color: #6d6256;
+    font-size: 0.92rem;
   }
 </style>
 </head>
@@ -295,6 +423,127 @@
     </table>
   </div>
 
+  <section class="district-color-section" id="district-colors">
+    <h2>9分類の色彩設計 ── 地域の記憶を色で整理する</h2>
+
+    <p>
+      磐田物語では、9つの地域分類を本文・地図・カード・一覧で扱いやすくするため、各地区に対応する色を定めます。
+      この色は、単なる見た目の装飾ではありません。地名、地勢、祭礼、史跡、産業、自然景観など、その地区を説明する根拠を持った「記憶の色」として扱います。
+    </p>
+
+    <p>
+      色を決める基準は、第一にその地区固有の歴史・自然・文化に根拠があること、第二に色名を聞いたとき地区の説明につながること、第三に9地区のあいだで識別しやすいことです。
+      今後、地区入口ページ、地図、タグ、カード、年表などを作成するときは、この色体系を基本とします。
+    </p>
+
+    <div class="color-principles" aria-label="色決定の原則">
+      <h3>色決定の原則</h3>
+      <ol>
+        <li><strong>地区固有の根拠を持つこと。</strong>史跡、地形、祭礼、産業、自然景観などから選ぶ。</li>
+        <li><strong>色名が地区の説明になること。</strong>「なぜこの色か」を一文で説明できる色にする。</li>
+        <li><strong>9地区で識別しやすいこと。</strong>似た色が続かないよう、地図・カード・見出しで区別できる配色にする。</li>
+        <li><strong>磐田物語の落ち着いた世界観に合うこと。</strong>原色ではなく、歴史サイトに合う深みのある色を基本にする。</li>
+        <li><strong>色だけに依存しないこと。</strong>必ず地区名・色名・説明文を併記し、誰でも読める設計にする。</li>
+      </ol>
+    </div>
+
+    <div class="district-color-grid">
+      <article class="district-color-card" style="--district-color: #A9412B;">
+        <span class="district-color-swatch" aria-hidden="true"></span>
+        <h3>見付 <span>国府朱</span></h3>
+        <p>遠江国府、見付宿、見付天神裸祭、淡海国玉神社・矢奈比賣神社など、古代から近世までの政治・信仰・街道の中心性を表す色。</p>
+        <p class="district-color-code">#A9412B</p>
+      </article>
+
+      <article class="district-color-card" style="--district-color: #008C8C;">
+        <span class="district-color-swatch" aria-hidden="true"></span>
+        <h3>中泉 <span>府八幡青緑</span></h3>
+        <p>府八幡宮、中泉御殿、磐田駅周辺の中心市街地としての性格を表す色。杜の緑と公共性の青を重ねる。</p>
+        <p class="district-color-code">#008C8C</p>
+      </article>
+
+      <article class="district-color-card" style="--district-color: #B87333;">
+        <span class="district-color-swatch" aria-hidden="true"></span>
+        <h3>御厨 <span>古墳銅</span></h3>
+        <p>御厨古墳群、松林山古墳、出土した鏡・剣など、古墳時代の記憶を表す銅色。</p>
+        <p class="district-color-code">#B87333</p>
+      </article>
+
+      <article class="district-color-card" style="--district-color: #7B4BB2;">
+        <span class="district-color-swatch" aria-hidden="true"></span>
+        <h3>豊田 <span>長藤紫</span></h3>
+        <p>行興寺・熊野の長藤を象徴する色。紫の藤は豊田地区を説明する最も強い視覚的根拠である。</p>
+        <p class="district-color-code">#7B4BB2</p>
+      </article>
+
+      <article class="district-color-card" style="--district-color: #5BAEC0;">
+        <span class="district-color-swatch" aria-hidden="true"></span>
+        <h3>南部 <span>大池浅葱</span></h3>
+        <p>大之浦・大池・今之浦川・水田・低湿地の記憶を表す、水を含んだ浅葱色。</p>
+        <p class="district-color-code">#5BAEC0</p>
+      </article>
+
+      <article class="district-color-card" style="--district-color: #5F8D3B;">
+        <span class="district-color-swatch" aria-hidden="true"></span>
+        <h3>向陽 <span>台地茶緑</span></h3>
+        <p>磐田原台地、桶ケ谷沼、里山、茶畑・畑作の印象を重ねた、土と緑の中間色。</p>
+        <p class="district-color-code">#5F8D3B</p>
+      </article>
+
+      <article class="district-color-card" style="--district-color: #1E5E9F;">
+        <span class="district-color-swatch" aria-hidden="true"></span>
+        <h3>竜洋 <span>天竜群青</span></h3>
+        <p>天竜川、遠州灘、掛塚湊、舟運・海運の歴史を表す、深い川と海の群青。</p>
+        <p class="district-color-code">#1E5E9F</p>
+      </article>
+
+      <article class="district-color-card" style="--district-color: #D8D3C5;">
+        <span class="district-color-swatch" aria-hidden="true"></span>
+        <h3>福田 <span>しらす銀</span></h3>
+        <p>福田漁港、遠州灘、しらすを象徴する色。白ではなく、干ししらすや砂浜を思わせる銀灰色とする。</p>
+        <p class="district-color-code">#D8D3C5</p>
+      </article>
+
+      <article class="district-color-card" style="--district-color: #7A5A36;">
+        <span class="district-color-swatch" aria-hidden="true"></span>
+        <h3>豊岡 <span>獅子岩茶</span></h3>
+        <p>獅子ヶ鼻公園、岩室、山里、奇岩、森林、丘陵地の記憶を表す、岩と土の重みを持つ茶色。</p>
+        <p class="district-color-code">#7A5A36</p>
+      </article>
+    </div>
+
+    <div class="table-wrap district-color-table-wrap">
+      <table class="district-color-table">
+        <caption>磐田物語 9地区カラー一覧</caption>
+        <thead>
+          <tr>
+            <th>地区</th>
+            <th>色名</th>
+            <th>色</th>
+            <th>HEX</th>
+            <th>主な根拠</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>見付</td><td>国府朱</td><td><span class="district-color-chip" style="--district-color:#A9412B;">朱</span></td><td><code>#A9412B</code></td><td>遠江国府、見付宿、見付天神裸祭、社寺</td></tr>
+          <tr><td>中泉</td><td>府八幡青緑</td><td><span class="district-color-chip" style="--district-color:#008C8C;">青緑</span></td><td><code>#008C8C</code></td><td>府八幡宮、中泉御殿、中心市街地</td></tr>
+          <tr><td>御厨</td><td>古墳銅</td><td><span class="district-color-chip" style="--district-color:#B87333;">銅</span></td><td><code>#B87333</code></td><td>御厨古墳群、松林山古墳、鏡・剣</td></tr>
+          <tr><td>豊田</td><td>長藤紫</td><td><span class="district-color-chip" style="--district-color:#7B4BB2;">紫</span></td><td><code>#7B4BB2</code></td><td>行興寺、熊野の長藤</td></tr>
+          <tr><td>南部</td><td>大池浅葱</td><td><span class="district-color-chip" style="--district-color:#5BAEC0;">浅葱</span></td><td><code>#5BAEC0</code></td><td>大之浦、大池、今之浦川、水田</td></tr>
+          <tr><td>向陽</td><td>台地茶緑</td><td><span class="district-color-chip" style="--district-color:#5F8D3B;">茶緑</span></td><td><code>#5F8D3B</code></td><td>磐田原台地、桶ケ谷沼、里山</td></tr>
+          <tr><td>竜洋</td><td>天竜群青</td><td><span class="district-color-chip" style="--district-color:#1E5E9F;">群青</span></td><td><code>#1E5E9F</code></td><td>天竜川、遠州灘、掛塚湊</td></tr>
+          <tr><td>福田</td><td>しらす銀</td><td><span class="district-color-chip pale" style="--district-color:#D8D3C5;">銀</span></td><td><code>#D8D3C5</code></td><td>福田漁港、しらす、遠州灘</td></tr>
+          <tr><td>豊岡</td><td>獅子岩茶</td><td><span class="district-color-chip" style="--district-color:#7A5A36;">茶</span></td><td><code>#7A5A36</code></td><td>獅子ヶ鼻公園、岩室、山里、奇岩</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="note">
+      ※ 色は地域分類を覚えやすくするための補助記号です。住所・学校区・旧町村境界を厳密に判定するものではありません。
+      実際の通学区域や行政上の区分は、磐田市公式情報を確認してください。
+    </p>
+  </section>
+
   <h2>この分類について</h2>
   <p>磐田物語では、学校区を単なる通学区域としてだけでなく、地域の記憶を整理するための手がかりとして扱います。同じ町名でも「一部」とされる区域があるため、番地単位の厳密な確認が必要な場合は、磐田市公式の通学区域情報をご確認ください。</p>
   <p>今後、各分類から、見付宿、中泉、御厨、旧豊田町、竜洋、福田、豊岡などの地域史ページへリンクを広げ、旧町村ごとの沿革や、合併で閉じた学校の記憶なども、順次まとめていきます。</p>
@@ -314,6 +563,9 @@
       <li>「静岡県（市区町村変遷情報）」都道府県市区町村（uub.jp）── 明治以降の廃置分合・合併年月日を確認。</li>
       <li>ウィキペディア日本語版「磐田市」「見付町」「中泉町」「御厨村（静岡県）」「南御厨村」「西貝村」「天竜村」「福田町（静岡県）」「竜洋町」ほか各町村の項。</li>
       <li>磐田市公式ウェブサイト（市の沿革・住所表示・小学校／中学校通学区）。</li>
+      <li>見付宿たのしい文化展資料、見付天神裸祭保存会、府八幡宮由緒（見付・中泉の歴史と祭礼・社寺の確認）。</li>
+      <li>磐田市観光協会・ビジターセンター資料（御厨古墳群、熊野の長藤、桶ケ谷沼、掛塚湊、獅子ヶ鼻公園などの史跡・自然景観の確認）。</li>
+      <li>大池・大之浦の水利資料、福田漁港のしらす等に関する地勢・地域産業資料（南部・福田の記憶の確認）。</li>
     </ul>
     <p>本ページは、上記の公的情報・各種事典を参考に、磐田物語の地域史コンテンツ整理用に独自に再構成したものです。年月日は市区町村変遷情報に基づきますが、通学区域や住所表示の正確な確認は、必ず磐田市公式情報をご参照ください。</p>
     <p class="src-links">
