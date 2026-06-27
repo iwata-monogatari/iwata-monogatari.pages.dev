@@ -1,4 +1,4 @@
-﻿/* ============================================================================
+/* ============================================================================
    磐田物語 ── 9地区カラー CSS設計図（適用ルール）
    iwata-monogatari.pages.dev
    この1枚を全ページ共通CSSに読み込み、地区に紐づくページ／カードに適用する。
@@ -16,48 +16,48 @@
 :root {
   /* ① 見付 国府朱 */
   --c-mitsuke:        #A9412B;
-  --c-mitsuke-soft:   #f4e6e2;
+  --c-mitsuke-soft:   #f3ece0;
   --c-mitsuke-ink:    #5e2117;
 
   /* ② 中泉 中泉青緑 */
   --c-nakaizumi:      #008C8C;
-  --c-nakaizumi-soft: #dcefef;
+  --c-nakaizumi-soft: #e9efe6;
   --c-nakaizumi-ink:  #044747;
 
   /* ③ 御厨 古墳銅 */
   --c-mikuriya:       #B87333;
-  --c-mikuriya-soft:  #f3e8da;
+  --c-mikuriya-soft:  #efeae2;
   --c-mikuriya-ink:   #5e3a16;
 
   /* ④ 豊田 長藤紫 */
   --c-toyoda:         #7B4BB2;
-  --c-toyoda-soft:    #ece4f4;
+  --c-toyoda-soft:    #f1ebdf;
   --c-toyoda-ink:     #3d2560;
 
   /* ⑤ 南部 大池浅葱 */
   --c-nanbu:          #5BAEC0;
-  --c-nanbu-soft:     #e1f0f4;
+  --c-nanbu-soft:     #e6eef0;
   --c-nanbu-ink:      #1f5560;
 
   /* ⑥ 向陽 台地茶緑 */
   --c-koyo:           #5F8D3B;
-  --c-koyo-soft:      #e7efdd;
+  --c-koyo-soft:      #f0ece1;
   --c-koyo-ink:       #2f4a1c;
 
   /* ⑦ 竜洋 天竜群青 */
   --c-ryuyo:          #1E5E9F;
-  --c-ryuyo-soft:     #dde8f3;
+  --c-ryuyo-soft:     #e7eef1;
   --c-ryuyo-ink:      #123a63;
 
   /* ⑧ 福田 しらす銀（もともと淡いので原色とソフトを近づける） */
   --c-fukude:         #B7AE97;   /* 帯・罫用に少し締めた銀褐 */
   --c-fukude-accent:  #D8D3C5;   /* 指定のしらす銀（面で使う） */
-  --c-fukude-soft:    #efece3;
+  --c-fukude-soft:    #eef0e8;
   --c-fukude-ink:     #4d4636;
 
   /* ⑨ 豊岡 獅子岩茶 */
   --c-toyooka:        #7A5A36;
-  --c-toyooka-soft:   #ece3d6;
+  --c-toyooka-soft:   #efe9e0;
   --c-toyooka-ink:    #4a3720;
 }
 

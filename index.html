@@ -214,20 +214,10 @@ nav.menu a:hover{color:var(--brown-deep);}
 .area-classification-links .area-link-list a{min-width:9.5em;text-align:center;}
 
   /* --- Renovation A & B District Card styles --- */
-  .c.area-mitsuke   { --accent: var(--c-mitsuke);   --accent-soft: #f3ece0; }
-  .c.area-nakaizumi { --accent: var(--c-nakaizumi); --accent-soft: #e9efe6; }
-  .c.area-mikuriya  { --accent: var(--c-mikuriya);  --accent-soft: #efeae2; }
-  .c.area-toyoda    { --accent: var(--c-toyoda);    --accent-soft: #f1ebdf; }
-  .c.area-nanbu     { --accent: var(--c-nanbu);     --accent-soft: #e6eef0; }
-  .c.area-koyo      { --accent: var(--c-koyo);      --accent-soft: #f0ece1; }
-  .c.area-ryuyo     { --accent: var(--c-ryuyo);     --accent-soft: #e7eef1; }
-  .c.area-fukude    { --accent: var(--c-fukude);    --accent-soft: #eef0e8; }
-  .c.area-toyooka   { --accent: var(--c-toyooka);   --accent-soft: #efe9e0; }
-
   .c[class*="area-"] {
     background: var(--accent-soft);
     border-top: 3px solid var(--accent);
-    min-height: 76px;
+    min-height: 96px; /* 160px * 0.6 = 96px */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
