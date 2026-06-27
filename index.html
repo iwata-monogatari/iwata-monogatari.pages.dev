@@ -1177,6 +1177,13 @@ nav.menu a:hover{color:var(--brown-deep);}
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
+          <li class="new-article-item news-item">
+            <a href="/" class="new-article-link news-link">
+              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-28">2026-06-28</time><span class="new-article-category news-tag">サイト更新</span></span>
+              <span class="new-article-title news-title">トップページに「磐田の祭り」特集バナーを設置</span>
+              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
           <li class="new-article-item news-item" data-district="mikuriya">
             <a href="/u027.html" class="new-article-link news-link area-mikuriya">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">国指定史跡</span></span>
@@ -1697,7 +1704,7 @@ nav.menu a:hover{color:var(--brown-deep);}
     return cls.replace(/^area-/, '');
   }
 
-  fetch('/data/new-articles.json?v=20260628-matsuri2')
+  fetch('/data/new-articles.json?v=20260628-matsuri3')
     .then(function(res){ return res.json(); })
     .then(function(data){
       data.sort(function(a, b){
