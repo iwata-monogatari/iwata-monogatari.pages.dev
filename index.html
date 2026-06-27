@@ -619,7 +619,7 @@ nav.menu a:hover{color:var(--brown-deep);}
       <div class="side-row">
       <a class="side-block site-count-block" href="/c033.html" aria-label="磐田の集合知とは ── サイト内ページ数と理念" style="display:block;text-decoration:none;color:inherit;">
         <div class="site-count-label">磐田の集合知（公開記事）</div>
-        <div class="site-count-number"><span class="site-count-num">222</span><span class="site-count-unit">本</span></div>
+        <div class="site-count-number"><span class="site-count-num">235</span><span class="site-count-unit">本</span></div>
         <p class="site-count-summary">佐口資料・目録・関連ページを含め、磐田の記憶を300ページ規模で整理しています。</p>
         <div class="site-count-more" style="margin-top:10px;font-size:12.5px;font-weight:700;color:var(--brown-deep);letter-spacing:.02em;">〈磐田の集合知とは〉を読む →</div>
       </a>
@@ -628,7 +628,7 @@ nav.menu a:hover{color:var(--brown-deep);}
       <a class="side-block" href="/c034.html" aria-label="全記事一覧へ" style="display:flex;align-items:center;justify-content:space-between;gap:10px;text-decoration:none;color:inherit;">
         <span>
           <strong style="display:block;font-family:'Shippori Mincho',serif;font-size:1.02rem;color:#3a5874;">全記事一覧</strong>
-          <span style="display:block;font-size:0.8rem;color:var(--ink-soft);margin-top:3px;">公開記事222本を9地区＋共通で一覧</span>
+          <span style="display:block;font-size:0.8rem;color:var(--ink-soft);margin-top:3px;">公開記事235本を9地区＋共通で一覧</span>
         </span>
         <span aria-hidden="true" style="font-weight:700;color:var(--brown-deep);">→</span>
       </a>
@@ -1126,6 +1126,13 @@ nav.menu a:hover{color:var(--brown-deep);}
         <h2 class="sectitle">新着記事</h2>
         <!-- 新着記事は20件まで表示 -->
         <ul class="new-article-list news-list" id="new-article-list" aria-label="新着記事一覧">
+          <li class="new-article-item news-item" data-district="mitsuke">
+            <a href="/inotani/" class="new-article-link news-link area-mitsuke">
+              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-28">2026-06-28</time><span class="new-article-category news-tag">見付・中世墓域</span></span>
+              <span class="new-article-title news-title">一の谷中世墳墓群と見付の中世（全13ページ）</span>
+              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
           <li class="new-article-item news-item">
             <a href="/c035.html" class="new-article-link news-link">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-28">2026-06-28</time><span class="new-article-category news-tag">近世の磐田</span></span>
@@ -1464,6 +1471,7 @@ nav.menu a:hover{color:var(--brown-deep);}
 <script>
 (function(){
   var ARTICLES = [
+    {t:"一の谷中世墳墓群と見付の中世（全13ページ）",u:"/inotani/",c:"見付・中世墓域",k:"一の谷 一の谷中世墳墓群 一の谷遺跡 見付 中世都市 中世墓 土壙墓 壺棺墓 蔵骨器 火葬 礫石墓 配石墓 出土遺物 文化財保存 鎌倉時代 室町時代 遠江"},
     {t:"石高が語る、元禄の磐田 -- 数字の奥に見える土地と人",u:"/c035.html",c:"近世の磐田",k:"石高 元禄 郷帳 遠江国 豊田郡 山名郡 長上郡 寺谷用水 天竜川 見付宿 中泉代官所 掛塚湊 近世 磐田"},
     {t:"岩田・大藤・向笠をつなぐ丘陵と水の記憶",u:"/k030.html",c:"向陽地区",k:"岩田 大藤 向笠 向陽 旧村 小字 地名 天竜川 磐田原台地 太田川 敷地川 岩田・大藤・向笠をつなぐ丘陵と水の記憶"},
     {t:"岩田地区の成立と匂坂・寺谷の記憶",u:"/k031-iwata.html",c:"向陽地区",k:"岩田 大藤 向笠 向陽 旧村 小字 地名 天竜川 磐田原台地 太田川 敷地川 岩田地区の成立と匂坂・寺谷の記憶"},
@@ -1615,6 +1623,7 @@ nav.menu a:hover{color:var(--brown-deep);}
     var url = item.url || '';
     var category = item.category || '';
     if (category === '磐田共通・資料' || category === '特別コンテンツ') return '';
+    if (url === '/inotani/' || /^\/inotani\//.test(url)) return 'area-mitsuke';
     if (url === '/c028.html') return 'area-mitsuke';
     if (url === '/u004.html') return 'area-mikuriya';
     if (/^\/m/.test(url)) return 'area-mitsuke';
@@ -1634,7 +1643,7 @@ nav.menu a:hover{color:var(--brown-deep);}
     return cls.replace(/^area-/, '');
   }
 
-  fetch('/data/new-articles.json')
+  fetch('/data/new-articles.json?v=20260628-inotani')
     .then(function(res){ return res.json(); })
     .then(function(data){
       data.sort(function(a, b){
