@@ -146,12 +146,12 @@ nav.menu a:hover{color:var(--brown-deep);}
 .subcard .tagk{font-size:11px;letter-spacing:.1em;color:var(--brown);font-weight:700;}
 .subcard h4{font-family:"Shippori Mincho",serif;font-size:16px;margin:6px 0 6px;line-height:1.45;}
 .subcard p{font-size:13px;color:var(--ink-soft);margin:0;}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
-.c{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px 20px;box-shadow:var(--shadow);transition:.2s;}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.c{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:12px 14px;box-shadow:var(--shadow);transition:.2s;}
 .c:hover{transform:translateY(-2px);border-color:var(--brown);}
-.c .k{font-size:11px;letter-spacing:.1em;color:var(--brown);font-weight:700;}
-.c h4{font-family:"Shippori Mincho",serif;font-size:16.5px;margin:6px 0 7px;line-height:1.5;}
-.c p{font-size:13px;color:var(--ink-soft);margin:0;}
+.c .k{font-size:10.5px;letter-spacing:.08em;color:var(--brown);font-weight:700;}
+.c h4{font-family:"Shippori Mincho",serif;font-size:15px;margin:4px 0 5px;line-height:1.38;}
+.c p{font-size:12px;line-height:1.58;color:var(--ink-soft);margin:0;}
 .c .more{color:var(--brown-deep);font-weight:700;}
 .weekly-ranking{margin-top:16px;margin-bottom:20px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 14px;box-shadow:var(--shadow);}
 .weekly-ranking h3{font-family:"Shippori Mincho",serif;font-size:16px;margin:0 0 5px;color:var(--ink);border-left:4px solid var(--accent-blue);padding-left:10px;}
@@ -227,7 +227,7 @@ nav.menu a:hover{color:var(--brown-deep);}
   .c[class*="area-"] {
     background: var(--accent-soft);
     border-top: 3px solid var(--accent);
-    min-height: 96px; /* 160px * 0.6 = 96px */
+    min-height: 76px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -245,25 +245,27 @@ nav.menu a:hover{color:var(--brown-deep);}
   /* Section C New Articles List styling */
   .new-article-list {
     list-style: none;
-    margin: 1.5rem 0 2rem;
+    margin: 1rem 0 1.6rem;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 3px;
   }
   .new-article-item {
     border-bottom: 1px dotted var(--line);
   }
   .new-article-link {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 16px;
-    padding: 10px 8px;
+    display: grid;
+    grid-template-columns: 72px 92px minmax(0, 1fr) 18px;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 6px;
     color: var(--ink);
     text-decoration: none;
-    line-height: 1.8;
-    font-size: 15.5px;
+    line-height: 1.35;
+    font-size: 12.5px;
+    white-space: nowrap;
+    overflow: hidden;
     transition: background 0.15s ease, color 0.15s ease;
     border-radius: 4px;
   }
@@ -276,25 +278,25 @@ nav.menu a:hover{color:var(--brown-deep);}
   }
   .new-article-date {
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    font-size: 13.5px;
+    font-size: 11.5px;
     color: var(--ink-soft);
-    flex-shrink: 0;
-    width: 90px;
   }
   .new-article-category {
     font-family: "Shippori Mincho", serif;
-    font-size: 12px;
+    font-size: 10.5px;
     font-weight: 700;
     color: var(--brown);
     background: var(--paper-deep);
-    padding: 2px 10px;
+    padding: 1px 7px;
     border-radius: 999px;
     white-space: nowrap;
+    overflow: hidden;
   }
   .new-article-title {
     font-family: "Zen Kaku Gothic New", sans-serif;
     color: var(--ink);
-    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
   }
   .new-article-arrow {
     color: var(--brown);
@@ -303,12 +305,16 @@ nav.menu a:hover{color:var(--brown-deep);}
   }
   @media (max-width: 600px) {
     .new-article-link {
-      gap: 8px 12px;
-      padding: 12px 6px;
-      font-size: 14.5px;
+      grid-template-columns: 62px 70px minmax(0, 1fr);
+      gap: 6px;
+      padding: 6px 4px;
+      font-size: 11.5px;
     }
     .new-article-date {
-      width: auto;
+      font-size: 10.5px;
+    }
+    .new-article-arrow {
+      display: none;
     }
   }
 </style>
@@ -472,7 +478,7 @@ nav.menu a:hover{color:var(--brown-deep);}
       <!-- 磐田物語の9地区分類から探す -->
       <div class="side-block area-classification-links">
         <h3>磐田物語の９地区分類から探す</h3>
-        <nav class="area-link-list" aria-label="磐田物語の9地区分類" style="display:flex;flex-direction:column;gap:2px;margin-top:2px;">
+        <nav class="area-link-list" aria-label="磐田物語の9地区分類" style="display:flex;flex-direction:column;gap:7px;margin-top:2px;">
           <a class="area-card area-mitsuke" href="/01001-mitsuke.html"><span class="area-name">見付</span><span class="area-yomi">みつけ</span></a>
           <a class="area-card area-nakaizumi" href="/01002-nakaizumi.html"><span class="area-name">中泉</span><span class="area-yomi">なかいずみ</span></a>
           <a class="area-card area-mikuriya" href="/01003-mikuriya.html"><span class="area-name">御厨</span><span class="area-yomi">みくりや</span></a>
@@ -1421,7 +1427,7 @@ nav.menu a:hover{color:var(--brown-deep);}
       var list = document.getElementById('new-article-list');
       if (!list) return;
       list.innerHTML = '';
-      data.slice(0, 10).forEach(function(item){
+      data.slice(0, 15).forEach(function(item){
         var li = document.createElement('li');
         li.className = 'new-article-item';
         

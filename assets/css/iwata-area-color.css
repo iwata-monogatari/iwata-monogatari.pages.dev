@@ -181,8 +181,9 @@
 
 .area-link-list .area-card {
   min-height: 0;
-  padding: 9px 11px;
-  gap: 2px;
+  padding: 5px 11px;
+  gap: 1px;
+  line-height: 1.22;
   text-decoration: none;
 }
 .area-link-list .area-card:hover {
