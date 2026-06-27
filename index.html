@@ -16,13 +16,15 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:url" content="https://iwata-monogatari.pages.dev/">
-<meta property="og:image" content="https://iwata-monogatari.pages.dev/saguchi/img/hk-3.jpg">
+<meta property="og:image" content="https://iwata-monogatari.pages.dev/img/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="磐田物語｜磐田市の歴史・古写真・古地図・地域文化アーカイブ">
 <meta name="twitter:description" content="磐田物語は、静岡県磐田市の歴史・地名・古写真・古地図・文化財・祭り・暮らしの記憶を記録し、次の世代へ手渡す地域史アーカイブです。">
-<meta name="twitter:image" content="https://iwata-monogatari.pages.dev/saguchi/img/hk-3.jpg">
+<meta name="twitter:image" content="https://iwata-monogatari.pages.dev/img/ogp.jpg">
 
 <link rel="icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/favicon-180.png">
@@ -202,10 +204,10 @@ nav.menu a:hover{color:var(--brown-deep);}
 .memory-cta-lead{max-width:680px;margin:0 auto 8px;color:var(--ink);font-size:15px;font-weight:500;}
 .primary-button,.secondary-button{display:inline-block;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14px;border:1px solid transparent;}
 .site-count-block{text-align:center;background:#fff;border-color:#cfe2ec;padding:18px 12px;}
-.site-count-label{font-size:clamp(1.08rem,1.9vw,1.34rem);color:var(--ink-soft);font-weight:800;letter-spacing:.04em;line-height:1.25;white-space:nowrap;}
-.site-count-number{font-family:"Shippori Mincho",serif;font-size:clamp(3.45rem,7.4vw,4.55rem);font-weight:800;line-height:1.02;font-variant-numeric:tabular-nums;color:#b8892f;background:linear-gradient(180deg,#fff4b8 0%,#d7a746 36%,#8f651d 58%,#f2d27a 78%,#b8892f 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;text-shadow:0 0 10px rgba(232,190,93,.34),0 1px 0 rgba(96,63,12,.18);white-space:nowrap;}
-.site-count-number span{display:block;margin:.12em 0 0;font-size:clamp(1.12rem,2vw,1.34rem);font-family:"Zen Kaku Gothic New",system-ui,sans-serif;font-weight:800;background:none;-webkit-background-clip:border-box;background-clip:border-box;-webkit-text-fill-color:var(--ink-soft);color:var(--ink-soft);text-shadow:none;}
-.site-count-number--text{font-size:clamp(1.45rem,3vw,1.85rem);line-height:1.25;white-space:normal;}
+.site-count-label{font-family:"Zen Kaku Gothic New",system-ui,sans-serif;font-size:1rem;color:var(--ink-soft);font-weight:700;letter-spacing:.02em;line-height:1.35;white-space:normal;}
+.site-count-number{font-family:"Zen Kaku Gothic New",system-ui,sans-serif;font-weight:800;line-height:1.1;color:#a6713e;margin-top:2px;}
+.site-count-num{font-size:2.6rem;font-variant-numeric:tabular-nums;}
+.site-count-unit{font-size:1.1rem;font-weight:700;margin-left:.15em;}
 .site-count-summary{margin:8px 0 0;font-size:12.5px;line-height:1.65;color:var(--ink-soft);font-weight:600;}
 .area-classification-links h3{text-align:center;}
 .area-classification-links .area-link-list{align-items:center;text-align:center;}
@@ -257,8 +259,21 @@ nav.menu a:hover{color:var(--brown-deep);}
   /* 各記事 */
   .news-item,
   .new-article-item {
+    position: relative;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 14px;
+  }
+  .news-item::before,
+  .new-article-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    border-radius: 50%;
+    background: var(--district-color, #c9c2b4);
   }
   .news-link,
   .new-article-link {
@@ -305,10 +320,10 @@ nav.menu a:hover{color:var(--brown-deep);}
     align-items: center;
     max-width: 10em;
     padding: 0.12rem 0.42rem;
-    border: 1px solid rgba(120, 90, 50, 0.22);
+    border: 1px solid var(--district-color, #d8d3c5);
     border-radius: 999px;
-    background: #fff7e8;
-    color: #6b4b21;
+    background: rgba(244, 239, 230, 0.82);
+    color: var(--district-color, #5b6b74);
     font-size: 0.70rem;
     line-height: 1.2;
     font-weight: 700;
@@ -316,17 +331,17 @@ nav.menu a:hover{color:var(--brown-deep);}
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .news-link[class*="area-"] .news-tag,
-  .new-article-link[class*="area-"] .new-article-category {
-    color: #fff;
-    background: var(--accent);
-    border-color: transparent;
-  }
-  .news-link.area-fukude .news-tag,
-  .new-article-link.area-fukude .new-article-category {
-    color: var(--c-fukude-ink);
-    background: var(--c-fukude-accent);
-  }
+  .news-item[data-district="mitsuke"], .new-article-item[data-district="mitsuke"]{--district-color:#A9412B;}
+  .news-item[data-district="nakaizumi"], .new-article-item[data-district="nakaizumi"]{--district-color:#008C8C;}
+  .news-item[data-district="mikuriya"], .new-article-item[data-district="mikuriya"]{--district-color:#B87333;}
+  .news-item[data-district="toyoda"], .new-article-item[data-district="toyoda"]{--district-color:#7B4BB2;}
+  .news-item[data-district="nanbu"], .new-article-item[data-district="nanbu"]{--district-color:#5BAEC0;}
+  .news-item[data-district="koyo"], .new-article-item[data-district="koyo"]{--district-color:#5F8D3B;}
+  .news-item[data-district="ryuyo"], .new-article-item[data-district="ryuyo"]{--district-color:#1E5E9F;}
+  .news-item[data-district="fukude"], .new-article-item[data-district="fukude"]{--district-color:#D8D3C5;}
+  .news-item[data-district="toyooka"], .new-article-item[data-district="toyooka"]{--district-color:#7A5A36;}
+  .news-item[data-district="fukude"] .news-tag,
+  .new-article-item[data-district="fukude"] .new-article-category{color:#6b6452;}
   .news-title,
   .new-article-title {
     min-width: 0;
@@ -596,8 +611,8 @@ nav.menu a:hover{color:var(--brown-deep);}
     <aside id="area">
       <div class="side-row">
       <a class="side-block site-count-block" href="/c033.html" aria-label="磐田の集合知とは ── サイト内ページ数と理念" style="display:block;text-decoration:none;color:inherit;">
-        <div class="site-count-label">磐田の集合知</div>
-        <div class="site-count-number site-count-number--text">公開記事222本</div>
+        <div class="site-count-label">磐田の集合知（公開記事）</div>
+        <div class="site-count-number"><span class="site-count-num">222</span><span class="site-count-unit">本</span></div>
         <p class="site-count-summary">佐口資料・目録・関連ページを含め、磐田の記憶を300ページ規模で整理しています。</p>
         <div class="site-count-more" style="margin-top:10px;font-size:12.5px;font-weight:700;color:var(--brown-deep);letter-spacing:.02em;">〈磐田の集合知とは〉を読む →</div>
       </a>
@@ -1111,14 +1126,14 @@ nav.menu a:hover{color:var(--brown-deep);}
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-          <li class="new-article-item news-item">
+          <li class="new-article-item news-item" data-district="mikuriya">
             <a href="/u027.html" class="new-article-link news-link area-mikuriya">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">国指定史跡</span></span>
               <span class="new-article-title news-title">御厨古墳群 ── 松林山古墳に始まる大型古墳群</span>
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-          <li class="new-article-item news-item">
+          <li class="new-article-item news-item" data-district="nakaizumi">
             <a href="/n032.html" class="new-article-link news-link area-nakaizumi">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">国登録有形文化財</span></span>
               <span class="new-article-title news-title">静岡県立磐田農業高等学校記念館 ── 中泉の農業教育</span>
@@ -1139,21 +1154,21 @@ nav.menu a:hover{color:var(--brown-deep);}
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-          <li class="new-article-item news-item">
+          <li class="new-article-item news-item" data-district="nanbu">
             <a href="/s019.html" class="new-article-link news-link area-nanbu">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">南部・民俗</span></span>
               <span class="new-article-title news-title">八王子神社米とぎまつり ── 下太の稲作儀礼</span>
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-          <li class="new-article-item news-item">
+          <li class="new-article-item news-item" data-district="fukude">
             <a href="/f019.html" class="new-article-link news-link area-fukude">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">福田・民俗</span></span>
               <span class="new-article-title news-title">中野白山神社十日祭（お箱）</span>
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-          <li class="new-article-item news-item">
+          <li class="new-article-item news-item" data-district="toyoda">
             <a href="/t029.html" class="new-article-link news-link area-toyoda">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">豊田・民俗</span></span>
               <span class="new-article-title news-title">池田やかた祭り ── 熊野御前伝承と池田荘の記憶</span>
@@ -1181,21 +1196,21 @@ nav.menu a:hover{color:var(--brown-deep);}
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-          <li class="new-article-item news-item">
+          <li class="new-article-item news-item" data-district="fukude">
             <a href="/f011.html" class="new-article-link news-link area-fukude">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">福田・民俗</span></span>
               <span class="new-article-title news-title">福田の年中行事と昔ばなし（全7ページ）</span>
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-          <li class="new-article-item news-item">
+          <li class="new-article-item news-item" data-district="koyo">
             <a href="/k030.html" class="new-article-link news-link area-koyo">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-26">2026-06-26</time><span class="new-article-category news-tag">向陽地区旧村史</span></span>
               <span class="new-article-title news-title">岩田・大藤・向笠をつなぐ丘陵と水の記憶</span>
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-          <li class="new-article-item news-item">
+          <li class="new-article-item news-item" data-district="mitsuke">
             <a href="/c028.html" class="new-article-link news-link area-mitsuke">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-26">2026-06-26</time><span class="new-article-category news-tag">磐田用水</span></span>
               <span class="new-article-title news-title">磐田用水の歩み</span>
@@ -1209,35 +1224,35 @@ nav.menu a:hover{color:var(--brown-deep);}
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-          <li class="new-article-item news-item">
+          <li class="new-article-item news-item" data-district="mikuriya">
             <a href="/u004.html" class="new-article-link news-link area-mikuriya">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-26">2026-06-26</time><span class="new-article-category news-tag">考古・遺跡</span></span>
               <span class="new-article-title news-title">城之崎遺跡 - 磐田原台地南部に残された弥生の住まいと古墳の記憶</span>
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-          <li class="new-article-item news-item">
+          <li class="new-article-item news-item" data-district="nakaizumi">
             <a href="/n023.html" class="new-article-link news-link area-nakaizumi">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-26">2026-06-26</time><span class="new-article-category news-tag">中泉</span></span>
               <span class="new-article-title news-title">中泉の生い立ち</span>
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-          <li class="new-article-item news-item">
+          <li class="new-article-item news-item" data-district="mitsuke">
             <a href="/c024.html" class="new-article-link news-link area-mitsuke">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-26">2026-06-26</time><span class="new-article-category news-tag">今之浦</span></span>
               <span class="new-article-title news-title">今之浦と大之浦</span>
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-          <li class="new-article-item news-item">
+          <li class="new-article-item news-item" data-district="mitsuke">
             <a href="/m018.html" class="new-article-link news-link area-mitsuke">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-26">2026-06-26</time><span class="new-article-category news-tag">磐田市見付</span></span>
               <span class="new-article-title news-title">磐田市見付の歴史と町内案内</span>
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-          <li class="new-article-item news-item">
+          <li class="new-article-item news-item" data-district="toyoda">
             <a href="/t006.html" class="new-article-link news-link area-toyoda">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-26">2026-06-26</time><span class="new-article-category news-tag">旧豊田町</span></span>
               <span class="new-article-title news-title">旧豊田町の地名と、土地の記憶</span>
@@ -1598,6 +1613,11 @@ nav.menu a:hover{color:var(--brown-deep);}
     if (/^\/y/.test(url)) return 'area-toyooka';
     return '';
   }
+  function newArticleDistrict(item){
+    var cls = newArticleAreaClass(item);
+    if (!cls) return '';
+    return cls.replace(/^area-/, '');
+  }
 
   fetch('/data/new-articles.json')
     .then(function(res){ return res.json(); })
@@ -1611,6 +1631,8 @@ nav.menu a:hover{color:var(--brown-deep);}
       data.slice(0, 20).forEach(function(item){
         var li = document.createElement('li');
         li.className = 'new-article-item news-item';
+        var district = newArticleDistrict(item);
+        if (district) li.setAttribute('data-district', district);
         
         var a = document.createElement('a');
         a.href = item.url;
