@@ -292,6 +292,14 @@ nav.menu a:hover{color:var(--brown-deep);}
     white-space: nowrap;
     overflow: hidden;
   }
+  .new-article-link[class*="area-"] .new-article-category {
+    color: #fff;
+    background: var(--accent);
+  }
+  .new-article-link.area-fukude .new-article-category {
+    color: var(--c-fukude-ink);
+    background: var(--c-fukude-accent);
+  }
   .new-article-title {
     font-family: "Zen Kaku Gothic New", sans-serif;
     color: var(--ink);
@@ -963,7 +971,7 @@ nav.menu a:hover{color:var(--brown-deep);}
             </a>
           </li>
           <li class="new-article-item">
-            <a href="/f011.html" class="new-article-link">
+            <a href="/f011.html" class="new-article-link area-fukude">
               <span class="new-article-date">2026-06-27</span>
               <span class="new-article-category">福田・民俗</span>
               <span class="new-article-title">福田の年中行事と昔ばなし（全7ページ）</span>
@@ -971,7 +979,7 @@ nav.menu a:hover{color:var(--brown-deep);}
             </a>
           </li>
           <li class="new-article-item">
-            <a href="/k030.html" class="new-article-link">
+            <a href="/k030.html" class="new-article-link area-koyo">
               <span class="new-article-date">2026-06-26</span>
               <span class="new-article-category">向陽地区旧村史</span>
               <span class="new-article-title">岩田・大藤・向笠をつなぐ丘陵と水の記憶</span>
@@ -979,7 +987,7 @@ nav.menu a:hover{color:var(--brown-deep);}
             </a>
           </li>
           <li class="new-article-item">
-            <a href="/c028.html" class="new-article-link">
+            <a href="/c028.html" class="new-article-link area-mitsuke">
               <span class="new-article-date">2026-06-26</span>
               <span class="new-article-category">磐田用水</span>
               <span class="new-article-title">磐田用水の歩み</span>
@@ -995,7 +1003,7 @@ nav.menu a:hover{color:var(--brown-deep);}
             </a>
           </li>
           <li class="new-article-item">
-            <a href="/u004.html" class="new-article-link">
+            <a href="/u004.html" class="new-article-link area-mikuriya">
               <span class="new-article-date">2026-06-26</span>
               <span class="new-article-category">考古・遺跡</span>
               <span class="new-article-title">城之崎遺跡 - 磐田原台地南部に残された弥生の住まいと古墳の記憶</span>
@@ -1003,7 +1011,7 @@ nav.menu a:hover{color:var(--brown-deep);}
             </a>
           </li>
           <li class="new-article-item">
-            <a href="/n023.html" class="new-article-link">
+            <a href="/n023.html" class="new-article-link area-nakaizumi">
               <span class="new-article-date">2026-06-26</span>
               <span class="new-article-category">中泉</span>
               <span class="new-article-title">中泉の生い立ち</span>
@@ -1011,7 +1019,7 @@ nav.menu a:hover{color:var(--brown-deep);}
             </a>
           </li>
           <li class="new-article-item">
-            <a href="/c024.html" class="new-article-link">
+            <a href="/c024.html" class="new-article-link area-mitsuke">
               <span class="new-article-date">2026-06-26</span>
               <span class="new-article-category">今之浦</span>
               <span class="new-article-title">今之浦と大之浦</span>
@@ -1019,7 +1027,7 @@ nav.menu a:hover{color:var(--brown-deep);}
             </a>
           </li>
           <li class="new-article-item">
-            <a href="/m018.html" class="new-article-link">
+            <a href="/m018.html" class="new-article-link area-mitsuke">
               <span class="new-article-date">2026-06-26</span>
               <span class="new-article-category">磐田市見付</span>
               <span class="new-article-title">磐田市見付の歴史と町内案内</span>
@@ -1027,7 +1035,7 @@ nav.menu a:hover{color:var(--brown-deep);}
             </a>
           </li>
           <li class="new-article-item">
-            <a href="/t006.html" class="new-article-link">
+            <a href="/t006.html" class="new-article-link area-toyoda">
               <span class="new-article-date">2026-06-26</span>
               <span class="new-article-category">旧豊田町</span>
               <span class="new-article-title">旧豊田町の地名と、土地の記憶</span>
@@ -1418,6 +1426,24 @@ nav.menu a:hover{color:var(--brown-deep);}
 </script>
 <script>
 (function(){
+  function newArticleAreaClass(item){
+    var url = item.url || '';
+    var category = item.category || '';
+    if (category === '磐田共通・資料' || category === '特別コンテンツ') return '';
+    if (url === '/c028.html') return 'area-mitsuke';
+    if (url === '/u004.html') return 'area-mikuriya';
+    if (/^\/m/.test(url)) return 'area-mitsuke';
+    if (/^\/n/.test(url)) return 'area-nakaizumi';
+    if (/^\/u/.test(url)) return 'area-mikuriya';
+    if (/^\/t/.test(url)) return 'area-toyoda';
+    if (/^\/s/.test(url)) return 'area-nanbu';
+    if (/^\/k/.test(url)) return 'area-koyo';
+    if (/^\/r/.test(url)) return 'area-ryuyo';
+    if (/^\/f/.test(url)) return 'area-fukude';
+    if (/^\/y/.test(url)) return 'area-toyooka';
+    return '';
+  }
+
   fetch('/data/new-articles.json')
     .then(function(res){ return res.json(); })
     .then(function(data){
@@ -1434,6 +1460,8 @@ nav.menu a:hover{color:var(--brown-deep);}
         var a = document.createElement('a');
         a.href = item.url;
         a.className = 'new-article-link';
+        var areaClass = newArticleAreaClass(item);
+        if (areaClass) a.classList.add(areaClass);
         
         var dateSpan = document.createElement('span');
         dateSpan.className = 'new-article-date';
