@@ -22,7 +22,9 @@ a{color:var(--brown-deep);text-underline-offset:3px}
 .eyebrow{font-size:12px;letter-spacing:.18em;color:var(--brown);font-weight:700;margin:0 0 4px}
 h1{font-family:"Shippori Mincho",serif;font-size:clamp(28px,5vw,42px);line-height:1.35;margin:0}
 .lead{font-size:14px;color:var(--ink-soft);margin:10px 0 0}
-.history-list{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.update-section{margin:28px 0 0}
+.update-section h2{font-family:"Shippori Mincho",serif;font-size:22px;line-height:1.45;margin:0 0 12px;color:var(--ink)}
+.history-list,.update-list{list-style:none;margin:0;padding:0;display:grid;gap:6px}
 .history-item{border-bottom:1px dotted var(--line)}
 .history-link{display:grid;grid-template-columns:84px 118px minmax(0,1fr);align-items:center;gap:10px;padding:8px 6px;color:var(--ink);text-decoration:none;white-space:nowrap;overflow:hidden;border-radius:4px}
 .history-link:hover{background:#fff}
@@ -31,6 +33,8 @@ h1{font-family:"Shippori Mincho",serif;font-size:clamp(28px,5vw,42px);line-heigh
 .history-link[class*="area-"] .history-category{background:var(--accent);color:#fff}
 .history-link.area-fukude .history-category{background:var(--c-fukude-accent);color:var(--c-fukude-ink)}
 .history-title{font-size:13.5px;overflow:hidden}
+.update-static .history-link{white-space:normal}
+.update-static .history-title{overflow:visible}
 .back{margin-top:28px}
 .back a{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:700;font-size:13px}
 @media(max-width:640px){
@@ -53,11 +57,39 @@ h1{font-family:"Shippori Mincho",serif;font-size:clamp(28px,5vw,42px);line-heigh
   <section class="head">
     <p class="eyebrow">UPDATES</p>
     <h1>公開履歴・更新履歴</h1>
-    <p class="lead">最近公開・更新した記事を一覧で表示しています。</p>
+    <p class="lead">磐田物語で公開・更新した主な記事を、新しい順に記録しています。</p>
   </section>
-  <ul class="history-list" id="history-list">
-    <li class="history-item">読み込み中です。</li>
-  </ul>
+  <section class="update-section update-static" aria-labelledby="latest-updates-title">
+    <h2 id="latest-updates-title">最新の更新</h2>
+    <ul class="update-list">
+      <li class="history-item"><a class="history-link" href="/c035.html"><time class="history-date" datetime="2026-06-28">2026-06-28</time><span class="history-category">近世の磐田</span><span class="history-title">石高が語る、元禄の磐田 -- 数字の奥に見える土地と人</span></a></li>
+      <li class="history-item"><a class="history-link" href="/u023.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">西貝地区</span><span class="history-title">西貝地区総論 ── 旧集落・寺社・開発が重なる磐田の東側</span></a></li>
+      <li class="history-item"><a class="history-link" href="/u024.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">西貝地区</span><span class="history-title">西貝塚から安久路・城之崎へ — 田園から市街地へ変わった地域の記憶</span></a></li>
+      <li class="history-item"><a class="history-link" href="/s013.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">天竜地区</span><span class="history-title">天竜地区総論 — 川と低地がつくった暮らしの記憶</span></a></li>
+      <li class="history-item"><a class="history-link" href="/u020.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">御厨地区</span><span class="history-title">御厨地区総論 ── 古い地名と新しい暮らしが重なる磐田東部</span></a></li>
+      <li class="history-item"><a class="history-link" href="/u021.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">南御厨地区</span><span class="history-title">南御厨地区総論 — 低地・農地・道がつくった南側の生活圏</span></a></li>
+      <li class="history-item"><a class="history-link" href="/u022.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">御厨・南御厨</span><span class="history-title">御厨と南御厨を分けるもの、つなぐもの ── 地名・水・道・暮らしの比較史</span></a></li>
+      <li class="history-item"><a class="history-link" href="/s017.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">於保・長野</span><span class="history-title">於保と長野を分けるもの、つなぐもの ── 水利・農地・集落の南部史</span></a></li>
+      <li class="history-item"><a class="history-link" href="/c002.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">磐田共通・資料</span><span class="history-title">磐田物語の地域分類（9地区の色彩設計を追加）</span></a></li>
+      <li class="history-item"><a class="history-link" href="/f011.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">福田・民俗</span><span class="history-title">福田の年中行事と昔ばなし（全7ページ）</span></a></li>
+      <li class="history-item"><a class="history-link" href="/s014.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">天竜地区</span><span class="history-title">川の恵みと怖さ ── 天竜地区に残る水辺の生活史</span></a></li>
+      <li class="history-item"><a class="history-link" href="/s015.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">於保地区</span><span class="history-title">於保地区総論 — 大池・低地・農地が支えた南の集落</span></a></li>
+      <li class="history-item"><a class="history-link" href="/s016.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">長野地区</span><span class="history-title">長野地区総論 — 水田の広がりと旧集落の輪郭を読む</span></a></li>
+      <li class="history-item"><a class="history-link" href="/c021.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">市指定無形民俗</span><span class="history-title">市指定無形民俗文化財10件の読みものを公開</span></a></li>
+      <li class="history-item"><a class="history-link" href="/s019.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">南部・民俗</span><span class="history-title">八王子神社米とぎまつり ── 下太の稲作儀礼</span></a></li>
+      <li class="history-item"><a class="history-link" href="/f019.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">福田・民俗</span><span class="history-title">中野白山神社十日祭（お箱）</span></a></li>
+      <li class="history-item"><a class="history-link" href="/u027.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">国指定史跡</span><span class="history-title">御厨古墳群 ── 松林山古墳に始まる大型古墳群</span></a></li>
+      <li class="history-item"><a class="history-link" href="/n032.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">国登録有形文化財</span><span class="history-title">静岡県立磐田農業高等学校記念館 ── 中泉の農業教育</span></a></li>
+      <li class="history-item"><a class="history-link" href="/c021.html"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">記念物・登録文化財</span><span class="history-title">記念物・登録文化財16ページの読みものを公開（甲塚のクロガネモチ・善導寺大クス・医王寺庭園ほか）</span></a></li>
+      <li class="history-item"><a class="history-link" href="/"><time class="history-date" datetime="2026-06-27">2026-06-27</time><span class="history-category">サイト更新</span><span class="history-title">アクセス表示をユニークユーザとPVの2表に分けて表示</span></a></li>
+    </ul>
+  </section>
+  <section class="update-section update-dynamic" aria-labelledby="all-updates-title">
+    <h2 id="all-updates-title">すべての更新履歴</h2>
+    <ul class="history-list" id="all-history-list">
+      <li class="history-item">更新履歴を読み込み中です。表示されない場合でも、上記の最新更新は確認できます。</li>
+    </ul>
+  </section>
   <p class="back"><a href="/">トップページへ戻る</a></p>
 </main>
 <footer class="im-foot">
@@ -129,7 +161,7 @@ h1{font-family:"Shippori Mincho",serif;font-size:clamp(28px,5vw,42px);line-heigh
   }
   fetch('/data/new-articles.json').then(function(res){return res.json();}).then(function(data){
     data.sort(function(a,b){return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0);});
-    var list=document.getElementById('history-list');
+    var list=document.getElementById('all-history-list');
     list.innerHTML='';
     data.forEach(function(item){
       var li=document.createElement('li');
@@ -147,7 +179,7 @@ h1{font-family:"Shippori Mincho",serif;font-size:clamp(28px,5vw,42px);line-heigh
       list.appendChild(li);
     });
   }).catch(function(){
-    document.getElementById('history-list').innerHTML='<li class="history-item">履歴を読み込めませんでした。</li>';
+    document.getElementById('all-history-list').innerHTML='<li class="history-item">履歴を読み込めませんでした。上記の最新更新は確認できます。</li>';
   });
 })();
 </script>
