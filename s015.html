@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>於保地区総論 — 大池・低地・農地が支えた南の集落 ｜ 磐田物語</title>
+<meta name="description" content="磐田市南部の於保地区を、地形・水利・旧村・寺社から読み直す総論。大池や水路がつくる低地の農村で、なぜここに集落が根を下ろしたのか、水を引き・逃がし・田を守る暮らしの仕組みと、農地維持・空き家・防災といった今後の課題までを、史実と推定を分けて丁寧に整理します。">
+<link rel="canonical" href="https://iwata-monogatari.pages.dev/s015.html">
+<meta property="og:title" content="於保地区総論 — 大池・低地・農地が支えた南の集落 ｜ 磐田物語">
+<meta property="og:description" content="磐田市南部の於保地区を、大池・低地・水利・農地・寺社の重なりから読み直す総論。なぜここに集落ができたのかを、地形と水の視点から考えます。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://iwata-monogatari.pages.dev/s015.html">
+<meta property="og:image" content="https://iwata-monogatari.pages.dev/hero-mitsuke.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
+    --brown:#2f7fa3;--brown-deep:#1f4f6f;--accent-blue:#356f88;--line:#d8e8ef;
+    --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    line-height:1.95;font-size:17px;letter-spacing:.02em;
+    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(166,113,62,.035) 0, transparent 38%),
+      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);}
+  a{color:var(--brown-deep);text-underline-offset:3px;}
+
+  header.site{background:var(--card);border-bottom:1px solid var(--line);}
+  .bar{max-width:1040px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+  .brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;}
+  .brand .logo{font-family:"Shippori Mincho",serif;font-weight:800;font-size:26px;color:var(--ink);letter-spacing:.06em;}
+  .brand .logo .dot{color:var(--brown);}
+  .brand .tag{font-size:12.5px;color:var(--ink-soft);letter-spacing:.08em;}
+  nav.menu{display:flex;gap:26px;}
+  nav.menu a{text-decoration:none;color:var(--ink-soft);font-size:14.5px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
+  nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
+
+  .crumbs{max-width:760px;margin:0 auto;padding:24px 24px 0;font-size:13px;color:var(--ink-soft);}
+  .crumbs a{text-decoration:none;}
+  .crumbs a:hover{text-decoration:underline;}
+
+  .article-head{max-width:760px;margin:0 auto;padding:28px 24px 12px;}
+  .article-head .cat{font-size:13px;letter-spacing:.18em;color:var(--accent-blue);font-weight:700;margin:0 0 16px;}
+  .article-head .cat .no{color:var(--brown);}
+  .article-head h1{font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(27px,5vw,42px);line-height:1.45;margin:0 0 20px;color:var(--ink);letter-spacing:.03em;}
+  .article-head .sub{font-size:16.5px;color:var(--ink-soft);margin:0;line-height:1.95;}
+
+  .article{max-width:760px;margin:0 auto;padding:24px 24px 56px;}
+  .article h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:23px;
+    color:var(--ink);letter-spacing:.03em;margin:52px 0 18px;
+    padding-left:16px;border-left:4px solid var(--brown);line-height:1.5;}
+  .article h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:18px;color:var(--brown-deep);margin:30px 0 12px;letter-spacing:.03em;}
+  .article p{margin:0 0 20px;color:var(--ink);}
+  .article p.lead{font-size:18px;line-height:2.05;}
+
+  .summary{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--brown);
+    border-radius:4px;padding:22px 28px;margin:30px 0;box-shadow:var(--shadow);}
+  .summary .sh{font-family:"Shippori Mincho",serif;font-size:17px;margin:0 0 13px;color:var(--brown-deep);letter-spacing:.04em;font-weight:700;}
+  .summary ul{margin:0;padding:0;list-style:none;}
+  .summary li{position:relative;padding-left:22px;margin-bottom:9px;font-size:15px;line-height:1.8;}
+  .summary li::before{content:"";position:absolute;left:2px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--brown);}
+  .summary li:last-child{margin-bottom:0;}
+
+  .def{background:var(--paper-deep);border-left:4px solid var(--accent-blue);border-radius:0 3px 3px 0;
+    padding:16px 22px;margin:24px 0;}
+  .def .term{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16px;color:var(--ink);margin-bottom:5px;display:block;}
+  .def .term .yomi{font-size:12.5px;color:var(--ink-soft);font-weight:500;margin-left:6px;}
+  .def p{margin:0;font-size:14.5px;line-height:1.85;color:var(--ink);}
+
+  .tablewrap{margin:26px 0;overflow-x:auto;}
+  table.kx{border-collapse:collapse;width:100%;font-size:14.5px;background:var(--card);
+    border:1px solid var(--line);box-shadow:var(--shadow);}
+  table.kx caption{caption-side:top;text-align:left;font-size:13px;color:var(--ink-soft);margin-bottom:9px;font-weight:700;letter-spacing:.03em;}
+  table.kx th,table.kx td{border:1px solid var(--line);padding:9px 13px;text-align:left;line-height:1.65;vertical-align:top;}
+  table.kx thead th{background:var(--paper-deep);color:var(--brown-deep);font-weight:700;white-space:nowrap;}
+
+  .faq{margin:30px 0 8px;}
+  .faq-item{background:var(--card);border:1px solid var(--line);border-radius:4px;margin-bottom:12px;padding:17px 21px;box-shadow:var(--shadow);}
+  .faq-q{font-weight:700;color:var(--ink);font-size:15.5px;line-height:1.65;display:flex;gap:11px;align-items:flex-start;}
+  .faq-q .qb{flex:none;width:23px;height:23px;border-radius:50%;background:var(--brown);color:#fff;font-size:13px;display:inline-flex;align-items:center;justify-content:center;font-family:"Shippori Mincho",serif;margin-top:1px;}
+  .faq-a{margin:11px 0 0;padding-left:34px;font-size:14.5px;color:var(--ink-soft);line-height:1.85;}
+  .faq-a strong{color:var(--ink);}
+
+  .pull{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent-blue);
+    border-radius:3px;padding:22px 28px;margin:30px 0;box-shadow:var(--shadow);}
+  .pull p{margin:0;font-family:"Shippori Mincho",serif;font-size:17.5px;color:var(--ink);line-height:1.95;}
+
+  .sources{max-width:760px;margin:0 auto;padding:0 24px 8px;}
+  .sources h3{font-size:14px;color:var(--ink-soft);font-weight:700;letter-spacing:.06em;margin:0 0 10px;}
+  .sources ul{margin:0;padding-left:1.2em;}
+  .sources li{font-size:13px;color:var(--ink-soft);line-height:1.8;margin-bottom:4px;}
+
+  .article-nav{max-width:760px;margin:8px auto 56px;padding:0 24px;display:flex;flex-wrap:wrap;gap:14px;}
+  .article-nav a{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
+    padding:13px 26px;border-radius:2px;transition:.2s;letter-spacing:.04em;}
+  .article-nav a.primary{background:var(--brown);color:#fff;}
+  .article-nav a.primary:hover{background:var(--brown-deep);}
+  .article-nav a.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
+  .article-nav a.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
+
+  .hero-fig{margin:30px 0 8px;}
+  .hero-fig svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:4px;background:var(--card);box-shadow:var(--shadow);}
+  .hero-fig figcaption{font-size:12.5px;color:var(--ink-soft);margin-top:8px;letter-spacing:.02em;}
+
+  @media(max-width:760px){
+    table.kx{font-size:13.5px;}
+    table.kx th,table.kx td{padding:8px 10px;}
+  }
+</style>
+<link rel="stylesheet" href="/assets/css/site-header.css">
+</head>
+<body>
+
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+    </nav>
+  </div>
+</header>
+
+<div class="crumbs"><a href="/">磐田物語</a> ／ <a href="/01005-nanbu.html">南部地区</a> ／ 於保地区総論</div>
+
+<div class="article-head">
+  <p class="cat"><span class="no">南部地区の記憶 第十五回</span> ｜ 低地の水利と集落形成論</p>
+  <h1>於保地区総論<br>── 大池・低地・農地が支えた南の集落</h1>
+  <p class="sub">磐田市の南に広がる於保（おぼ）地区は、低地と農地、そして水をめぐる工夫の上に成り立ってきた地域である。水を引くこと、水を逃がすこと、田を守ること。その三つが集落のかたちを決め、寺社と旧村の共同体がその暮らしを支えてきた。本稿では、地名の羅列ではなく「なぜここに人が住み、田を開いたのか」という問いから、於保地区を読み直す。</p>
+</div>
+
+<article class="article">
+
+  <p class="lead">於保地区は、派手な城跡や宿場を持つ地域ではない。けれども、低地に水田を開き、水路で水を分け合い、わずかな微高地に家と寺社を寄せて暮らしてきた、磐田南部の農村の典型的な姿をいまも残している。水が多すぎても少なすぎても困る低地で、人びとがどのように土地と折り合いをつけてきたのか。地形・水利・旧村・寺社という確かな土台から、於保の成り立ちと今後を考えていきたい。</p>
+
+  <div class="summary">
+    <div class="sh">本稿の要点</div>
+    <ul>
+      <li><strong>水が集落のかたちを決めた地域：</strong> 於保は天竜川下流域の低地に位置し、水を引く用水と水を逃がす排水の両方が、田と集落の配置を左右してきたと考えられる。</li>
+      <li><strong>微高地に寄り添う集落：</strong> 低地のなかでもわずかに高い自然堤防状の土地や微高地に、家・寺社・墓地が寄って立地する傾向がうかがえる。</li>
+      <li><strong>農地維持と防災が今後の鍵：</strong> 近代以降の道路整備や宅地化で生活圏は変わりつつあり、農地維持・空き家・低地の水害備え・地域記憶の継承が、これからの課題として重なってくる。</li>
+    </ul>
+  </div>
+
+  <figure class="hero-fig">
+    <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="於保地区の地形と水利の模式図">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f3f9fc"/><stop offset="1" stop-color="#e9f3fa"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="760" height="300" fill="url(#sky)"/>
+      <!-- 後背湿地・低地（淡い塗り） -->
+      <rect x="0" y="150" width="760" height="150" fill="#d8e8ef" opacity="0.7"/>
+      <!-- 大池 -->
+      <ellipse cx="150" cy="120" rx="95" ry="40" fill="#2f7fa3" opacity="0.30"/>
+      <ellipse cx="150" cy="120" rx="95" ry="40" fill="none" stroke="#356f88" stroke-width="1.5"/>
+      <text x="150" y="124" text-anchor="middle" font-size="14" fill="#1f3a48" font-family="serif">大池（溜池）</text>
+      <!-- 用水路（池から田へ） -->
+      <path d="M230 135 C 320 160, 420 175, 560 180" fill="none" stroke="#356f88" stroke-width="2.5" stroke-dasharray="1 0"/>
+      <text x="395" y="166" text-anchor="middle" font-size="11.5" fill="#356f88">用水（水を引く）</text>
+      <!-- 排水路（田から下流へ） -->
+      <path d="M560 245 C 420 255, 300 250, 90 255" fill="none" stroke="#1f4f6f" stroke-width="2.5"/>
+      <text x="330" y="275" text-anchor="middle" font-size="11.5" fill="#1f4f6f">排水（水を逃がす）</text>
+      <!-- 水田の区画 -->
+      <g stroke="#356f88" stroke-width="1" opacity="0.55" fill="none">
+        <rect x="300" y="195" width="46" height="30"/><rect x="350" y="195" width="46" height="30"/>
+        <rect x="400" y="195" width="46" height="30"/><rect x="450" y="195" width="46" height="30"/>
+        <rect x="500" y="195" width="46" height="30"/><rect x="550" y="195" width="46" height="30"/>
+      </g>
+      <text x="423" y="240" text-anchor="middle" font-size="11.5" fill="#5b6b74">水田（低地）</text>
+      <!-- 微高地と集落・寺社 -->
+      <path d="M590 175 q 60 -38 130 0 l 0 30 l -130 0 Z" fill="#e9f3fa" stroke="#356f88" stroke-width="1.3"/>
+      <rect x="618" y="150" width="16" height="14" fill="#fffdf7" stroke="#1f3a48" stroke-width="1.2"/>
+      <rect x="642" y="146" width="18" height="18" fill="#fffdf7" stroke="#1f3a48" stroke-width="1.2"/>
+      <rect x="668" y="150" width="16" height="14" fill="#fffdf7" stroke="#1f3a48" stroke-width="1.2"/>
+      <!-- 寺社の象徴（鳥居風） -->
+      <g stroke="#1f4f6f" stroke-width="1.6">
+        <line x1="700" y1="150" x2="700" y2="164"/><line x1="712" y1="150" x2="712" y2="164"/>
+        <line x1="695" y1="150" x2="717" y2="150"/><line x1="697" y1="154" x2="715" y2="154"/>
+      </g>
+      <text x="655" y="200" text-anchor="middle" font-size="11.5" fill="#1f3a48">微高地の集落・寺社</text>
+    </svg>
+    <figcaption>図1：於保地区の地形と水利の関係を象徴的に示した模式図（独自作成）。大池などの溜池から用水で水を引き、低地の水田を潤し、余った水を排水路で下流へ逃がす。家と寺社は、水につかりにくいわずかな微高地に寄って立地したと考えられる。位置や形状は実測ではなく概念を示すもの。</figcaption>
+  </figure>
+
+  <h2>於保はどこにあるのか ── 南部低地の地域として</h2>
+  <p>於保地区は、磐田市の中心市街（見付・中泉）から南へ下った、天竜川下流域に広がる平坦な低地に位置する。北に台地や市街地、南に海岸平野、東に天竜川という地理のなかで、於保はおおむね「水田が広がる低地の農村」という性格を強く持ってきた地域である。本稿では地区分類上、磐田物語の<a href="/01005-nanbu.html">南部地区</a>の一つとして扱う。</p>
+  <p>南部の低地を歩くと、目立つ高台や崖はほとんどない。代わりに、わずかな高低差、水路の網の目、そして集落が点在する様子が見えてくる。この「平らに見えて、実は少しずつ高さが違う」という地形こそが、於保の集落と農地の配置を理解する鍵である。低地であるがゆえに、水をどう扱うかが暮らしの根本的な前提になってきたと考えられる。</p>
+
+  <div class="def">
+    <span class="term">於保（おぼ）<span class="yomi">おぼ</span></span>
+    <p>磐田市南部の地域名・地区名。天竜川下流域の低地にあたり、近世には複数の村落から成る農村地帯であったとされる。読みや漢字表記の由来については諸説あり、本稿では断定を避ける。現在は磐田市の行政上の地区区分・自治会区分などで用いられる呼称である。</p>
+  </div>
+
+  <h2>地形と水利 ── 大池・水路・低地が暮らしの土台</h2>
+  <p>於保地区を考えるうえで最初に押さえたいのは、ここが「水に恵まれ、同時に水に悩まされる」低地だという点である。天竜川下流域の低地は、もともと川が運んだ土砂が堆積してできた肥沃な土地であり、稲作には適している。一方で、標高が低く水はけが悪いため、大雨のときには水が抜けにくく、浸水しやすいという弱点も併せ持つ。</p>
+  <p>この相反する条件に対して、人びとは二つの工夫を重ねてきたと考えられる。ひとつは「水を引く」工夫、すなわち溜池や用水路によって、田に必要な水を安定して届けることである。もうひとつは「水を逃がす」工夫、すなわち排水路によって、余った水や雨水を速やかに下流へ送り出すことである。地区名にも結びつく「大池」のような溜池は、前者の水を引く仕組みの象徴と位置づけられる。ただし、個々の溜池の築造年代や規模、現存状況については、本稿では確認できた範囲を超えて断定しない。</p>
+
+  <div class="def">
+    <span class="term">後背湿地（こうはいしっち）<span class="yomi">こうはいしっち</span></span>
+    <p>河川がつくった自然堤防の背後に広がる、水はけの悪い低い土地。粘土質で水がたまりやすく、古くは水田として利用される一方、浸水しやすい場所でもある。低地集落の立地を考えるうえで重要な地形区分で、治水地形分類図などで確認できる。</p>
+  </div>
+
+  <p>水を引く・逃がすという二面性は、図2の断面イメージで捉えると分かりやすい。低地のなかでもわずかに高い自然堤防状の土地（微高地）と、その背後の一段低い後背湿地という、ささやかな高低差が、田と家の配置を静かに決めてきたと考えられる。</p>
+
+  <figure class="hero-fig">
+    <svg viewBox="0 0 760 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="低地の微高地と後背湿地の断面模式図">
+      <rect x="0" y="0" width="760" height="240" fill="#f3f9fc"/>
+      <!-- 地表ライン -->
+      <path d="M0 150 L120 150 Q190 110 260 150 L420 150 Q500 100 580 150 L760 150" fill="#e9f3fa" stroke="#356f88" stroke-width="1.5"/>
+      <path d="M0 150 L120 150 Q190 110 260 150 L420 150 Q500 100 580 150 L760 150 L760 240 L0 240 Z" fill="#d8e8ef" opacity="0.6"/>
+      <!-- 川 -->
+      <rect x="0" y="150" width="60" height="90" fill="#2f7fa3" opacity="0.35"/>
+      <text x="30" y="200" text-anchor="middle" font-size="11" fill="#1f4f6f">川</text>
+      <!-- ラベル：微高地 -->
+      <text x="190" y="100" text-anchor="middle" font-size="12.5" fill="#1f3a48" font-family="serif">微高地（自然堤防）</text>
+      <line x1="190" y1="106" x2="190" y2="124" stroke="#1f3a48" stroke-width="1"/>
+      <!-- 家 -->
+      <rect x="172" y="126" width="14" height="12" fill="#fffdf7" stroke="#1f3a48" stroke-width="1"/>
+      <rect x="194" y="128" width="12" height="10" fill="#fffdf7" stroke="#1f3a48" stroke-width="1"/>
+      <!-- 後背湿地ラベル -->
+      <text x="340" y="186" text-anchor="middle" font-size="12.5" fill="#356f88">後背湿地（水田・低い土地）</text>
+      <!-- もう一つの微高地 -->
+      <text x="500" y="92" text-anchor="middle" font-size="12.5" fill="#1f3a48" font-family="serif">微高地</text>
+      <rect x="486" y="126" width="14" height="12" fill="#fffdf7" stroke="#1f3a48" stroke-width="1"/>
+      <!-- 寺社 -->
+      <g stroke="#1f4f6f" stroke-width="1.4">
+        <line x1="508" y1="124" x2="508" y2="138"/><line x1="520" y1="124" x2="520" y2="138"/>
+        <line x1="503" y1="124" x2="525" y2="124"/><line x1="505" y1="128" x2="523" y2="128"/>
+      </g>
+      <!-- 矢印：水の流れ -->
+      <text x="660" y="186" text-anchor="middle" font-size="11.5" fill="#1f4f6f">水は低い所へ集まる</text>
+      <path d="M620 196 L700 196" stroke="#1f4f6f" stroke-width="1.5" marker-end="url(#arr)"/>
+      <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#1f4f6f"/></marker></defs>
+    </svg>
+    <figcaption>図2：低地における微高地と後背湿地の関係を示した断面模式図（独自作成）。家や寺社はわずかに高い微高地へ、水田は一段低い後背湿地へ。高低差はわずかでも、浸水のしやすさには大きな差が生まれる。誇張した概念図であり、実際の標高差を示すものではない。</figcaption>
+  </figure>
+
+  <h2>なぜここに集落ができたのか ── 微高地・水・寺社の三点</h2>
+  <p>「水田が広がる低地」と聞くと、人びとは田のなかに均等に住んでいたように思いがちだが、実際はそうではない。低地集落の多くは、わずかに高い微高地や自然堤防の上に、家を寄せ合うようにして立地する傾向がある。理由は単純で、平時の生活のしやすさと、増水時に水をかぶりにくいことの両方を満たすからである。於保の集落も、この一般的な低地集落の論理から外れないものと考えられる。</p>
+  <p>集落の核には、しばしば神社や寺、墓地が置かれる。これらは信仰の場であると同時に、共同体の集まる場所であり、水利の取り決めや農作業の段取りを話し合う実務の舞台でもあったとみられる。寺社が微高地に立地していることが多いのも、洪水時に最後まで水につからない安全な場所だったからだと推測できる。ここでは個別の寺社名を断定的に列挙することは避けるが、「集落・微高地・寺社が一体で立地する」という構造そのものが、於保のような低地農村を読む手がかりになる。</p>
+  <p>つまり、於保に集落ができた理由を一言でまとめれば、「水を引いて田を開ける肥沃な低地でありながら、水をかぶりにくい微高地という逃げ場もあった場所」だからだと整理できる。豊かさとリスクが隣り合わせの土地で、人びとは微妙な高低差を読み、最も合理的な場所に暮らしの拠点を構えてきたのである。</p>
+
+  <div class="pull">
+    <p>低地の集落は、田の真ん中ではなく、わずかに高い土地の縁に立つ。その数十センチの高さの差が、何百年もの暮らしを支えてきた。</p>
+  </div>
+
+  <h2>旧村・大字と現在 ── 慎重に対応を読む</h2>
+  <p>於保地区は、近代以前には複数の村落から成る地域であり、明治以降の町村制や、その後の合併を経て、現在の磐田市の地区区分に至っている。地域史を読むうえでは、近世の村名、近代の大字、そして現在の住所表示が、必ずしも一対一で対応しないことに注意したい。「むかしの村名」と「いまの町名」を安易に重ねてしまうと、範囲や性格を誤って受け取ってしまう恐れがある。</p>
+  <p>そこで本稿では、旧村名・大字・現在の地名の対応について、断定ではなく「整理の枠組み」として示すにとどめる。下の表は、地域でしばしば言及される地名を、確認できる事項と注意点に分けて並べたものである。個々の地名の範囲・由来・対応関係については、磐田市史や治水地形分類図、今昔マップなどで現地に即して確認する必要がある。</p>
+
+  <div class="tablewrap">
+    <table class="kx">
+      <caption>表1：於保地区にかかわる地名・水利・旧村の整理（対応は暫定。要確認）</caption>
+      <thead>
+        <tr>
+          <th>観点</th>
+          <th>確認・整理できること</th>
+          <th>断定を避ける点・注意</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>地区名「於保」</td>
+          <td>磐田市南部の低地農村地帯を指す地区・地域名として用いられている。</td>
+          <td>漢字表記・読みの由来には諸説があり、特定の説に断定しない。</td>
+        </tr>
+        <tr>
+          <td>旧村・大字</td>
+          <td>近世の複数村落 → 近代の大字 → 現在の地区区分という重層構造がうかがえる。</td>
+          <td>旧村名と現在の町名・丁目を一対一で対応させない。範囲のズレを前提に読む。</td>
+        </tr>
+        <tr>
+          <td>大池・溜池</td>
+          <td>用水（水を引く）の核として、溜池が地域の水利に関わってきたと考えられる。</td>
+          <td>個々の池の築造年代・規模・現存状況は、公的資料での確認が必要。</td>
+        </tr>
+        <tr>
+          <td>用水・排水路</td>
+          <td>水を引く用水と、水を逃がす排水の両系統が低地農業を支えてきた。</td>
+          <td>現在の水路と近世の水路が同じ経路とは限らない。改修の履歴を考慮する。</td>
+        </tr>
+        <tr>
+          <td>微高地・後背湿地</td>
+          <td>集落・寺社は微高地、水田は後背湿地という立地傾向が読み取れる。</td>
+          <td>具体的な地点の比定は、治水地形分類図・現地確認に拠る。</td>
+        </tr>
+        <tr>
+          <td>寺社・墓地</td>
+          <td>集落の核として共同体をまとめる役割を担ってきたと考えられる。</td>
+          <td>個別の寺社名・祭礼・創建年代は確認できた範囲を超えて記さない。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>SEO上よく検索される「大原」「大之郷」「浜部」といった南部の地名も、於保や周辺地域を読むうえで言及されることがある。しかし、これらの地名がどの旧村・大字・現在の住所に対応するのかは、地域や時期によって扱いが異なり得るため、本稿では確実な対応を主張しない。むしろ、地名そのものより、「水を引き、田を守り、微高地に寄って住む」という構造の共通性に注目したい。</p>
+
+  <h2>水を得る・逃がす ── 低地農業の二つの顔</h2>
+  <p>於保のような低地で稲作を続けるには、相反する二つの作業を年間を通じて回し続ける必要がある。田植えの季節には十分な水を引き入れ、稲を育てる。一方で、梅雨や台風の時季には、降りすぎた雨を速やかに排水しなければ、稲も家も水につかってしまう。「水を得る」と「水を逃がす」は、低地農業の表裏一体の二つの顔である。</p>
+  <p>この二面性は、共同体のあり方にも影響したと考えられる。用水の配分は、上流の田と下流の田の利害が対立しやすく、公平に水を分けるための取り決めや、水番（みずばん）と呼ばれる見回りの役割が必要になる。排水も同様で、自分の田だけを守ろうとすると下流に負担が集中するため、地域全体での調整が欠かせない。低地の村に強い結びつきが生まれやすいのは、この「水を分け合う」必然があったからだと推測できる。</p>
+
+  <div class="def">
+    <span class="term">用水と排水<span class="yomi">ようすい・はいすい</span></span>
+    <p>用水は田へ水を引き入れる仕組み、排水は余った水を下流へ送り出す仕組み。低地の水田は、この両方が機能して初めて安定して耕作できる。溜池・堰・水路・樋門などが組み合わさって地域の水管理を担ってきた。</p>
+  </div>
+
+  <h2>近代以降 ── 道路・宅地化と生活圏の変化</h2>
+  <p>近代から現代にかけて、於保地区の暮らしは大きく変わってきた。かつては徒歩や荷車で結ばれていた集落と農地が、自動車道路の整備によって広い生活圏のなかに組み込まれていった。買い物や通勤、通学の行き先は、地域内で完結するものから、市街地や幹線道路沿いの施設へと広がってきたと考えられる。</p>
+  <p>同時に、農地の一部が宅地や事業用地へ転換され、田のなかに新しい住宅が点在する景観も生まれてきた。こうした変化は利便性を高める一方で、旧来の集落と農地の境界、小字の呼び名、水路の意味といった「土地の記憶」を見えにくくする側面も持つ。便利さと引き換えに失われやすいものがあることを、地域史の視点からは見落とせない。</p>
+  <p>於保の発展要因を整理すれば、肥沃な低地の農業生産力、水利を分け合う共同体の力、そして近代以降の交通整備による生活圏の拡大、ということになる。一方で、これらの強みは、担い手の減少や土地利用の転換によって、そのまま弱点へ転じうる二面性を持っている。</p>
+
+  <h2>今後の課題 ── 衰退ではなく「どう続けるか」</h2>
+  <p>於保地区のこれからを考えるとき、「衰退する」と決めつけるのは早計である。むしろ、いくつかの条件が重なったときに弱くなりうる点を見きわめ、どうすれば暮らしと記憶を続けられるかを考えることが大切だ。低地農村に共通する課題として、次のような点が挙げられる。</p>
+  <p>第一に、農地の維持である。担い手の高齢化が進み、後継者が確保されなければ、水田の管理が難しくなり、用水・排水の共同管理も揺らぎかねない。第二に、空き家・相続未整理地の問題である。家が空き、土地の権利関係が整理されないまま放置されると、集落の景観と防災の両面で課題が生じうる。第三に、低地ゆえの水害への備えである。気候の変化により大雨の頻度が増すと、排水の能力や避難の体制が改めて問われることになる。</p>
+  <p>もっとも、これらは一方的な暗い未来を意味しない。静かな農地景観、水と暮らしてきた地域の知恵、そして集落に残る記憶は、これからの時代にむしろ価値を増す可能性がある。条件が続くなら弱くなりうる点を直視しつつ、記録され、語り継がれることで、於保は「衰退」ではなく「再定義」へと向かいうる地域である。</p>
+
+  <div class="def">
+    <span class="term">相続未整理地<span class="yomi">そうぞくみせいりち</span></span>
+    <p>所有者が亡くなった後、相続の登記や話し合いが行われないまま放置された土地。所有者がたどりにくくなり、農地の集約や空き家対策、災害時の対応を難しくする要因となる。低地農村の将来を考えるうえで見過ごせない論点である。</p>
+  </div>
+
+  <p>地域の土地・家・空き家には、その家族と集落が積み重ねてきた記憶が宿っている。もし、親から受け継いだ田や家のこと、これからの管理や整理に迷いがあるなら、急いで結論を出す前に、まず土地の来歴と地域の文脈を一緒に整理しておくことが、後悔の少ない選択につながると考えている。記録を残すことは、土地の価値を守ることでもある。</p>
+
+  <div class="faq">
+    <div class="faq-item">
+      <div class="faq-q"><span class="qb">Q</span>於保地区は、なぜ低地なのに集落が続いてきたのですか。</div>
+      <p class="faq-a"><strong>肥沃な低地で水田を開ける一方、わずかに高い微高地という「水をかぶりにくい逃げ場」があったためと考えられます。</strong>豊かさとリスクが隣り合う土地で、人びとは微妙な高低差を読み、最も合理的な場所に家と寺社を寄せて暮らしてきました。水を分け合う必要から、共同体の結びつきも強まったとみられます。</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span class="qb">Q</span>「大池」や旧村名は、現在のどの地名にあたりますか。</div>
+      <p class="faq-a"><strong>旧村名・大字と現在の住所は一対一で対応しないため、本稿では断定を避けています。</strong>溜池や用水は地域の水利の核であったと考えられますが、個々の池や旧村の範囲・由来は、磐田市史・治水地形分類図・今昔マップなどで現地に即して確認する必要があります。地名より、水を引き田を守る構造の共通性に注目するのが安全です。</p>
+    </div>
+  </div>
+
+  <h2>於保を「水と農地の地域」として読む</h2>
+  <p>於保地区は、磐田南部の低地・水利・農地・共同体を読むうえで、わかりやすい手本のような地域である。派手な歴史の主役ではないが、水を引き、田を守り、微高地に寄って住むという、低地農村のもっとも基本的な営みを、いまも景観のなかに残している。地名の由来や旧村の範囲を断定するより、この「水と土地と人の関係」をていねいに読み解くことが、於保を理解する近道である。</p>
+  <p>本稿は、地形・水利・旧村・寺社という確かな土台から於保を再構成し、史実・推定・独自考察を分けて記すよう努めた。隣接する長野地区との比較や、南部全体のなかでの位置づけは、関連ページとあわせて読むことで、より立体的に見えてくるはずである。</p>
+
+  <div class="tablewrap"><table class="kx"><caption>表2：於保地区を読む観点の整理</caption><thead><tr><th>観点</th><th>確認できること</th><th>注意点</th></tr></thead><tbody><tr><th>地形・水利</th><td>低地・微高地・後背湿地、用水と排水の二系統。</td><td>具体的地点の比定は治水地形分類図・現地確認による。</td></tr><tr><th>集落形成</th><td>微高地に集落・寺社、低地に水田という立地傾向。</td><td>個別の寺社名・年代は確認範囲を超えて記さない。</td></tr><tr><th>旧村沿革</th><td>近世村落 → 近代大字 → 現在の地区区分の重層。</td><td>旧村名と現在の町名を同一視しない。範囲のズレを前提に。</td></tr><tr><th>将来課題</th><td>農地維持、空き家・相続、低地の水害備え、記憶継承。</td><td>「衰退」と断定せず、条件付き・多面的に扱う。</td></tr></tbody></table></div>
+
+</article>
+
+<div class="sources">
+  <h3>主な参考資料</h3>
+  <ul>
+    <li>『磐田市史 通史編・地誌編』（旧村沿革・地名・地区区分の確認）</li>
+    <li>国土地理院「地理院地図」および治水地形分類図・旧版地形図（低地・微高地・後背湿地・旧河道の確認）</li>
+    <li>「今昔マップ on the web」（明治期〜現在の集落・道路・水田・水路の変化比較）</li>
+    <li>磐田市ハザードマップ・洪水浸水想定区域図（低地の浸水リスクの確認）</li>
+    <li>磐田市都市計画図・用途地域図、磐田市統計資料・国勢調査・e-Stat（人口・世帯・高齢化・土地利用の確認）</li>
+    <li>磐田市教育委員会・文化財関係の公開資料（寺社・旧村・小字の確認）</li>
+    <li>磐田物語「<a href="/01005-nanbu.html">南部地区</a>」／「<a href="/s016.html">長野地区総論</a>」／「<a href="/s017.html">於保と長野の比較</a>」（地区分類・南部低地の整理）</li>
+  </ul>
+  <h3>調査メモ・確認状況</h3>
+  <ul>
+    <li><strong>確認済み（一般的事実）：</strong>於保地区が磐田市南部の天竜川下流域の低地にあたり、水田農業を中心としてきた地域であること。低地集落が微高地・自然堤防上に立地しやすいという地形学的傾向。</li>
+    <li><strong>未確認・要現地確認：</strong>地区名「於保」の漢字・読みの由来、旧村名・大字と現在住所の正確な対応、「大池」など個々の溜池の築造年代・規模・現存状況。</li>
+    <li><strong>未確認・要確認：</strong>個別の寺社名・創建年代・祭礼、SEO語句に挙げた地名（大原・大之郷・浜部）の旧村・現在地名への正確な比定。本稿では断定を避けた。</li>
+    <li><strong>方針：</strong>固有名詞の正確性を優先し、検証できない年号・人物名・寺社名は記載しない。地形・水利・旧道・土地利用という確実な土台から論じた。</li>
+  </ul>
+</div>
+
+<div class="article-nav">
+  <a class="primary" href="/01005-nanbu.html">南部地区トップへ戻る</a>
+  <a class="ghost" href="/s016.html">長野地区総論を読む →</a>
+  <a class="ghost" href="/s017.html">於保と長野の比較史へ →</a>
+</div>
+
+<!-- ===== グローバルフッター ===== -->
+<footer class="im-foot">
+<style>
+.im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+.im-foot *{box-sizing:border-box;}
+.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+.im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+.im-foot .im-brand:hover{text-decoration:none;}
+.im-foot .im-brand .im-dot{color:#2f7fa3;}
+.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+.im-foot .im-links{width:100%;margin-top:6px;}
+.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+.im-foot .im-links li{font-size:13px;line-height:1.6;}
+.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+.im-foot .im-sns{width:100%;margin-top:20px;}
+.im-foot .im-icons{display:flex;gap:14px;}
+.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
+.im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
+.im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
+.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+</style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
+      </ul>
+      <div class="im-sns">
+        <p class="im-lh">大石ひろゆきのSNS</p>
+        <div class="im-icons">
+          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.92-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://x.com/HiroyukiLawAka" target="_blank" rel="noopener" aria-label="X (旧Twitter)" title="X (旧Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+
+</body>
+</html>
