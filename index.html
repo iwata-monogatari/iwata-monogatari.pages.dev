@@ -99,9 +99,14 @@ nav.menu a:hover{color:var(--brown-deep);}
 .search-box{position:relative;max-width:680px;margin:0 auto;}
 .search-box input{width:100%;font-family:inherit;font-size:17px;color:var(--ink);background:#fff;border:2px solid var(--brown);border-radius:6px;padding:16px 52px 16px 20px;box-shadow:var(--shadow);outline:none;}
 .search-box .si{position:absolute;right:16px;top:50%;transform:translateY(-50%);width:24px;height:24px;fill:var(--brown);}
-.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px;}
-.chip{font-size:13px;color:var(--brown-deep);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer;transition:.2s;}
+.chips{display:grid;gap:10px;justify-items:center;margin-top:16px;}
+.chip-group{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;}
+.chip-group-label{font-size:12px;font-weight:700;color:var(--ink-soft);letter-spacing:.08em;margin-right:2px;}
+.chip{font-size:13px;color:var(--brown-deep);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer;transition:.2s;text-decoration:none;line-height:1.35;}
 .chip:hover{background:var(--brown);color:#fff;border-color:var(--brown);}
+.chip--area{color:var(--accent-ink,var(--brown-deep));border-color:var(--accent,var(--line));background:var(--accent-soft,#fff);}
+.chip--area:hover{background:var(--accent,var(--brown));border-color:var(--accent,var(--brown));color:#fff;}
+.chip--area.area-fukude:hover{background:var(--c-fukude-accent);color:var(--c-fukude-ink);}
 .results{min-width:0;padding:0;}
 .res-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:4px 0 2px;}
 .res-clear{cursor:pointer;font-size:13px;color:var(--brown-deep);background:#f4f9fc;border:1px solid var(--line);border-radius:999px;padding:5px 14px;transition:.15s;}
@@ -563,14 +568,31 @@ nav.menu a:hover{color:var(--brown-deep);}
     <p class="hero-lead">見付・中泉・掛塚・豊田・福田・竜洋・御厨・向陽・豊岡。磐田市に残る歴史、地名、古写真、古地図、祭り、文化財、暮らしの記憶を記録する地域史アーカイブです。</p>
     <p class="search-title">磐田の歴史を検索</p>
     <div class="search-box">
-      <input type="text" id="q" placeholder="見付／旧豊田町／掛塚／中泉／府八幡宮／古写真／古地図／引き札／遠州弁／古民家 …" autocomplete="off" aria-label="磐田の歴史を検索">
+      <input type="text" id="q" placeholder="見付／中泉／御厨／祭り／文化財／古地図／天竜川／寺社／地名 …" autocomplete="off" aria-label="磐田の歴史を検索">
       <svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 10-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1114 9.5 4.49 4.49 0 019.5 14z"/></svg>
     </div>
-    <div class="chips" id="chips">
-      <span class="chip">見付</span><span class="chip">旧磐田市</span><span class="chip">旧豊田町</span>
-      <span class="chip">掛塚</span><span class="chip">中泉</span><span class="chip">古写真</span>
-      <span class="chip">古地図</span><span class="chip">引き札</span><span class="chip">遠州弁</span>
-      <span class="chip">古民家</span><span class="chip">歴史的建築</span>
+    <div class="chips" id="chips" aria-label="地域とテーマから探す">
+      <div class="chip-group" aria-label="地域から探す">
+        <span class="chip-group-label">地域から</span>
+        <a class="chip chip--area area-mitsuke" href="/01001-mitsuke.html">見付</a>
+        <a class="chip chip--area area-nakaizumi" href="/01002-nakaizumi.html">中泉</a>
+        <a class="chip chip--area area-mikuriya" href="/01003-mikuriya.html">御厨</a>
+        <a class="chip chip--area area-toyoda" href="/01004-toyoda.html">豊田</a>
+        <a class="chip chip--area area-nanbu" href="/01005-nanbu.html">南部</a>
+        <a class="chip chip--area area-koyo" href="/01006-koyo.html">向陽</a>
+        <a class="chip chip--area area-ryuyo" href="/01007-ryuyo.html">竜洋</a>
+        <a class="chip chip--area area-fukude" href="/01008-fukude.html">福田</a>
+        <a class="chip chip--area area-toyooka" href="/01009-toyooka.html">豊岡</a>
+      </div>
+      <div class="chip-group" aria-label="テーマから探す">
+        <span class="chip-group-label">テーマから</span>
+        <span class="chip" data-q="祭り">祭り</span>
+        <span class="chip" data-q="文化財">文化財</span>
+        <span class="chip" data-q="古地図">古地図</span>
+        <span class="chip" data-q="天竜川">天竜川</span>
+        <span class="chip" data-q="神社">寺社</span>
+        <span class="chip" data-q="地名">地名</span>
+      </div>
     </div>
   </div>
 </section>
@@ -1583,14 +1605,22 @@ nav.menu a:hover{color:var(--brown-deep);}
     if(t===''){results.classList.add('is-hidden');if(mainCol)mainCol.classList.remove('is-hidden');if(rightAside)rightAside.classList.remove('is-hidden');if(catHead)catHead.classList.remove('is-hidden');bands.forEach(function(b){b.classList.remove('is-hidden');});return;}
     var hits=ARTICLES.filter(function(a){return norm(a.t).indexOf(t)!==-1||norm(a.k).indexOf(t)!==-1||norm(a.c).indexOf(t)!==-1;});
     rgrid.innerHTML='';
-    if(hits.length===0){resTitle.textContent='「'+term+'」の検索結果';resMeta.textContent='';rgrid.innerHTML='<p class="noresult">該当する記事が見つかりませんでした。別のキーワード（例：見付、古地図、裸祭、掛塚、遠州弁）でお試しください。</p>';}
+    if(hits.length===0){resTitle.textContent='「'+term+'」の検索結果';resMeta.textContent='';rgrid.innerHTML='<p class="noresult">該当する記事が見つかりませんでした。別のキーワード（例：祭り、文化財、古地図、天竜川、寺社、地名）でお試しください。</p>';}
     else{resTitle.textContent='「'+term+'」の検索結果';resMeta.textContent=hits.length+' 件の記事が見つかりました';
       hits.forEach(function(a){var el=document.createElement('a');el.className='rcard';el.href=a.u;el.innerHTML='<div class="rc">'+a.c+'</div><h3>'+a.t+'</h3>';rgrid.appendChild(el);});}
     results.classList.remove('is-hidden');if(mainCol)mainCol.classList.add('is-hidden');if(rightAside)rightAside.classList.add('is-hidden');if(catHead)catHead.classList.add('is-hidden');bands.forEach(function(b){b.classList.add('is-hidden');});
   }
   q.addEventListener('input',function(){render(q.value);});
   var rc=document.getElementById('resClear');if(rc)rc.addEventListener('click',function(){q.value='';render('');q.focus();window.scrollTo({top:0,behavior:'smooth'});});
-  document.getElementById('chips').addEventListener('click',function(e){if(e.target.classList.contains('chip')){q.value=e.target.textContent;render(q.value);window.scrollTo({top:0,behavior:'smooth'});}});
+  document.getElementById('chips').addEventListener('click',function(e){
+    var chip=e.target.closest('.chip');
+    if(!chip||chip.tagName==='A') return;
+    var term=chip.dataset.q||chip.textContent.trim();
+    q.value=term;
+    render(term);
+    q.focus();
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
   var params=new URLSearchParams(location.search);if(params.get('q')){q.value=params.get('q');render(q.value);}
 })();
 </script>
