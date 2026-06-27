@@ -8,19 +8,30 @@
   background:#6fb7d8;
   border-bottom:1px solid #d8e8ef;
   position:sticky; top:0; z-index:50;
+  overflow:hidden;
+  min-height:72px; height:auto;
+  box-sizing:border-box;
+  box-shadow:0 1px 6px rgba(31,58,72,.12);
   font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 .gh-bar{
   display:flex; align-items:center; justify-content:space-between;
-  height:60px; max-width:1180px; margin:0 auto; padding:0 22px; gap:16px;
+  min-height:72px; height:auto; max-width:1180px; margin:0 auto; padding:8px 22px; gap:16px;
 }
-.gh-brand{ display:flex; align-items:baseline; gap:12px; text-decoration:none; min-width:0; }
+.gh-brand{ display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap:2px; text-decoration:none; min-width:0; line-height:1.15; }
 .gh-logo{ font-family:"Shippori Mincho",serif; font-weight:800; font-size:25px; color:#1f3a48; white-space:nowrap; }
 .gh-dot{ color:#2f7fa3; }
-.gh-sub{ font-size:12px; color:#5b6b74; letter-spacing:.06em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.gh-menu{ display:flex; gap:20px; flex-wrap:wrap; }
+.gh-sub{ font-size:12px; color:#5b6b74; letter-spacing:.06em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:38vw; }
+.gh-menu{ display:flex; align-items:center; gap:20px; flex-wrap:nowrap; }
 .gh-menu a{ color:#1f3a48; font-size:14px; font-weight:500; text-decoration:none; white-space:nowrap; }
 .gh-menu a:hover{ color:#1f4f6f; }
+
+:target,
+section[id],
+h2[id],
+h3[id]{
+  scroll-margin-top:88px;
+}
 
 /* パンくず（ヘッダー直下に配置されるページ向け） */
 .gh-breadcrumb{
@@ -33,10 +44,17 @@
 .gh-breadcrumb a:hover{ text-decoration:underline; }
 
 @media(max-width:760px){
-  .gh-bar{ height:auto; flex-wrap:wrap; padding:8px 14px; gap:6px 14px; }
+  .gh-site{ min-height:auto; }
+  .gh-bar{ min-height:auto; height:auto; flex-wrap:wrap; padding:8px 14px; gap:6px 14px; }
   .gh-sub{ display:none; }
   .gh-menu{ width:100%; gap:0; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; }
   .gh-menu a{ flex:0 0 auto; padding:6px 12px; white-space:nowrap; }
+  :target,
+  section[id],
+  h2[id],
+  h3[id]{
+    scroll-margin-top:96px;
+  }
 }
 
 /* === 高齢者配慮：既定の本文サイズ（site-header.css を読み込む全ページ共通） === */
