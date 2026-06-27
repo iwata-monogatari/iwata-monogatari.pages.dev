@@ -1142,6 +1142,13 @@ nav.menu a:hover{color:var(--brown-deep);}
         <h2 class="sectitle">新着記事</h2>
         <!-- 新着記事は20件まで表示 -->
         <ul class="new-article-list news-list" id="new-article-list" aria-label="新着記事一覧">
+          <li class="new-article-item news-item">
+            <a href="/matsuri.html" class="new-article-link news-link">
+              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-28">2026-06-28</time><span class="new-article-category news-tag">特集・祭り</span></span>
+              <span class="new-article-title news-title">磐田の祭り特集を公開 ── 屋台と神輿が語る、九つのまちの記憶（特集・全15ページ）</span>
+              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
           <li class="new-article-item news-item" data-district="mitsuke">
             <a href="/inotani/" class="new-article-link news-link area-mitsuke">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-28">2026-06-28</time><span class="new-article-category news-tag">見付・中世墓域</span></span>
@@ -1676,7 +1683,7 @@ nav.menu a:hover{color:var(--brown-deep);}
     return cls.replace(/^area-/, '');
   }
 
-  fetch('/data/new-articles.json?v=20260628-inotani')
+  fetch('/data/new-articles.json?v=20260628-matsuri')
     .then(function(res){ return res.json(); })
     .then(function(data){
       data.sort(function(a, b){
