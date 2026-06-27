@@ -211,8 +211,8 @@ nav.menu a:hover{color:var(--brown-deep);}
 .primary-button,.secondary-button{display:inline-block;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14px;border:1px solid transparent;}
 .site-count-block{text-align:center;background:#fff;border-color:#cfe2ec;}
 .site-count-label{font-size:.9rem;color:var(--ink-soft);font-weight:700;letter-spacing:.08em;}
-.site-count-number{font-family:"Shippori Mincho",serif;font-size:2.55rem;font-weight:800;color:var(--brown-deep);line-height:1.15;font-variant-numeric:tabular-nums;}
-.site-count-number span{margin-left:.25em;font-size:1rem;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;font-weight:700;}
+.site-count-number{font-family:"Shippori Mincho",serif;font-size:2.55rem;font-weight:800;line-height:1.15;font-variant-numeric:tabular-nums;color:#b8892f;background:linear-gradient(180deg,#fff4b8 0%,#d7a746 36%,#8f651d 58%,#f2d27a 78%,#b8892f 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;text-shadow:0 0 10px rgba(232,190,93,.34),0 1px 0 rgba(96,63,12,.18);}
+.site-count-number span{margin-left:.25em;font-size:1rem;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;font-weight:700;background:none;-webkit-background-clip:border-box;background-clip:border-box;-webkit-text-fill-color:var(--ink-soft);color:var(--ink-soft);text-shadow:none;}
 .area-classification-links h3{text-align:center;}
 .area-classification-links .area-link-list{align-items:center;text-align:center;}
 .area-classification-links .area-link-list a{min-width:9.5em;text-align:center;}
@@ -250,14 +250,14 @@ nav.menu a:hover{color:var(--brown-deep);}
   }
   .new-article-link {
     display: grid;
-    grid-template-columns: 72px 92px minmax(0, 1fr) 18px;
+    grid-template-columns: 106px 138px minmax(0, 1fr) 22px;
     align-items: center;
-    gap: 8px;
-    padding: 5px 6px;
+    gap: 12px;
+    padding: 9px 8px;
     color: var(--ink);
     text-decoration: none;
     line-height: 1.35;
-    font-size: 12.5px;
+    font-size: 18px;
     white-space: nowrap;
     overflow: hidden;
     transition: background 0.15s ease, color 0.15s ease;
@@ -272,12 +272,12 @@ nav.menu a:hover{color:var(--brown-deep);}
   }
   .new-article-date {
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    font-size: 11.5px;
+    font-size: 15px;
     color: var(--ink-soft);
   }
   .new-article-category {
     font-family: "Shippori Mincho", serif;
-    font-size: 10.5px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--brown);
     background: var(--paper-deep);
@@ -326,13 +326,13 @@ nav.menu a:hover{color:var(--brown-deep);}
   }
   @media (max-width: 600px) {
     .new-article-link {
-      grid-template-columns: 62px 70px minmax(0, 1fr);
+      grid-template-columns: 76px 84px minmax(0, 1fr);
       gap: 6px;
-      padding: 6px 4px;
-      font-size: 11.5px;
+      padding: 8px 4px;
+      font-size: 14px;
     }
     .new-article-date {
-      font-size: 10.5px;
+      font-size: 11.5px;
     }
     .new-article-arrow {
       display: none;
@@ -460,7 +460,7 @@ nav.menu a:hover{color:var(--brown-deep);}
     <aside id="area">
       <div class="side-row">
       <div class="side-block site-count-block" aria-label="サイト内ページ数">
-        <div class="site-count-label">みんなの集合知</div>
+        <div class="site-count-label">磐田の集合知</div>
         <div class="site-count-number">330<span>ページ</span></div>
       </div>
 
@@ -1030,7 +1030,7 @@ nav.menu a:hover{color:var(--brown-deep);}
             <a href="/" class="new-article-link">
               <span class="new-article-date">2026-06-27</span>
               <span class="new-article-category">サイト更新</span>
-              <span class="new-article-title">トップページに「みんなの集合知」ページ数表示を追加</span>
+              <span class="new-article-title">トップページに「磐田の集合知」ページ数表示を追加</span>
               <span class="new-article-arrow"> →</span>
             </a>
           </li>
