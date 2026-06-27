@@ -1011,99 +1011,58 @@ nav.menu a:hover{color:var(--brown-deep);}
             box-shadow: var(--shadow);
             margin-top: 14px;
           }
-          .home-feature-dual-center__diagram-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .home-feature-dual-center__diagram {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: #faf7f0;
-            border: 1px dashed var(--brown);
-            border-radius: 8px;
-            padding: 20px;
-            width: 100%;
-            position: relative;
-          }
-          .home-feature-dual-center__diagram-title {
-            font-family: "Shippori Mincho", serif;
-            font-size: 13px;
-            font-weight: 700;
-            color: var(--brown-deep);
-            letter-spacing: 0.1em;
-            margin-bottom: 16px;
-            text-align: center;
-            border-bottom: 1px solid var(--line);
-            padding-bottom: 6px;
-            width: 100%;
-          }
-          .home-feature-dual-center__diagram-nodes {
+          .home-feature-dual-center__photos {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            width: 100%;
+            gap: 14px;
+            align-content: center;
           }
-          .home-feature-dual-center__diagram-node {
+          .home-feature-dual-center__photo {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
             background: #fff;
             border: 1px solid var(--line);
-            border-radius: 6px;
-            padding: 12px;
+            border-radius: 8px;
+            overflow: hidden;
             box-shadow: 0 2px 5px rgba(0,0,0,0.03);
-            text-align: center;
+            transition: all 0.2s ease;
           }
-          .home-feature-dual-center__diagram-node.is-mitsuke {
+          .home-feature-dual-center__photo:hover {
+            border-color: var(--brown);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(47,127,163,0.12);
+          }
+          .home-feature-dual-center__photo.is-mitsuke {
             border-top: 4px solid var(--c-mitsuke, #A9412B);
           }
-          .home-feature-dual-center__diagram-node.is-nakaizumi {
+          .home-feature-dual-center__photo.is-nakaizumi {
             border-top: 4px solid var(--c-nakaizumi, #008C8C);
           }
-          .home-feature-dual-center__node-title {
-            font-family: "Shippori Mincho", serif;
-            font-size: 15px;
-            font-weight: 700;
-            color: var(--ink);
-            margin-bottom: 6px;
-          }
-          .home-feature-dual-center__node-desc {
-            font-size: 11px;
-            line-height: 1.45;
-            color: var(--ink-soft);
-            text-align: left;
-            margin: 0;
-            padding: 0 0 0 10px;
-          }
-          .home-feature-dual-center__node-desc li {
-            margin-bottom: 2px;
-          }
-          .home-feature-dual-center__diagram-arrows {
-            display: flex;
-            justify-content: space-around;
+          .home-feature-dual-center__photo img {
+            display: block;
             width: 100%;
-            margin: 8px 0;
-            color: var(--brown);
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 1;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
           }
-          .home-feature-dual-center__diagram-node.is-unified {
-            grid-column: 1 / -1;
-            justify-self: center;
-            width: 85%;
-            border-top: 4px solid var(--brown);
-            padding: 10px 16px;
-          }
-          .home-feature-dual-center__diagram-node.is-unified .home-feature-dual-center__node-title {
-            font-size: 14.5px;
-            color: var(--brown-deep);
-            margin-bottom: 2px;
-          }
-          .home-feature-dual-center__diagram-node.is-unified .home-feature-dual-center__node-desc-text {
-            font-size: 11.5px;
+          .home-feature-dual-center__photo .photo-cap {
+            font-size: 10.5px;
             color: var(--ink-soft);
-            margin: 0;
-            text-align: center;
+            line-height: 1.5;
+            padding: 9px 12px 0;
+          }
+          .home-feature-dual-center__photo .photo-tag {
+            font-family: "Shippori Mincho", serif;
+            font-weight: 700;
+            font-size: 13px;
+            color: var(--ink);
+            padding: 6px 12px 0;
+          }
+          .home-feature-dual-center__photo .photo-sub {
+            font-size: 11px;
+            color: var(--ink-soft);
+            line-height: 1.5;
+            padding: 3px 12px 12px;
           }
           .home-feature-dual-center__content {
             display: flex;
@@ -1167,44 +1126,47 @@ nav.menu a:hover{color:var(--brown-deep);}
             font-weight: 700;
             letter-spacing: 0.05em;
           }
-          .home-feature-dual-center__pair {
+          .home-feature-dual-center__merge {
+            margin-bottom: 16px;
+          }
+          .home-feature-dual-center__merge-label {
+            display: block;
+            font-size: 11px;
+            letter-spacing: 0.04em;
+            color: var(--ink-soft);
+            margin-bottom: 8px;
+          }
+          .home-feature-dual-center__merge-links {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            margin-bottom: 14px;
+            gap: 8px;
           }
-          .home-feature-dual-center__mini-card {
+          .home-feature-dual-center__merge-links a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             background: #fff;
             border: 1px solid var(--line);
             border-radius: 6px;
-            padding: 12px;
-            display: flex;
-            flex-direction: column;
-            transition: all 0.2s ease;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-          }
-          .home-feature-dual-center__mini-card:hover {
-            border-color: var(--brown);
-            transform: translateY(-1px);
-            box-shadow: 0 4px 10px rgba(47,127,163,0.08);
-          }
-          .home-feature-dual-center__mini-card.is-mitsuke {
-            border-left: 4px solid var(--c-mitsuke, #A9412B);
-          }
-          .home-feature-dual-center__mini-card.is-nakaizumi {
-            border-left: 4px solid var(--c-nakaizumi, #008C8C);
-          }
-          .home-feature-dual-center__mini-card .mini-card-tag {
+            padding: 8px 12px;
             font-family: "Shippori Mincho", serif;
             font-weight: 700;
-            font-size: 12px;
+            font-size: 13px;
             color: var(--ink);
-            margin-bottom: 3px;
+            text-decoration: none;
+            transition: all 0.15s ease;
           }
-          .home-feature-dual-center__mini-card .mini-card-text {
-            font-size: 10.5px;
-            line-height: 1.45;
-            color: var(--ink-soft);
+          .home-feature-dual-center__merge-links a::after {
+            content: "→";
+            font-size: 11px;
+            color: var(--brown);
+            opacity: 0.8;
+          }
+          .home-feature-dual-center__merge-links a:hover {
+            border-color: var(--brown);
+            background: #fffaf2;
+            transform: translateY(-1px);
+            box-shadow: 0 3px 8px rgba(47,127,163,0.08);
           }
           .home-feature-dual-center__footer {
             text-align: center;
@@ -1232,68 +1194,24 @@ nav.menu a:hover{color:var(--brown-deep);}
             }
           }
           @media (max-width: 480px) {
-            .home-feature-dual-center__diagram-nodes {
-              grid-template-columns: 1fr;
-              gap: 12px;
+            .home-feature-dual-center__photos {
+              gap: 10px;
             }
-            .home-feature-dual-center__diagram-arrows {
+            .home-feature-dual-center__photo .photo-cap {
               display: none;
-            }
-            .home-feature-dual-center__diagram-node.is-unified {
-              width: 100%;
-            }
-            .home-feature-dual-center__pair {
-              grid-template-columns: 1fr;
-              gap: 8px;
             }
           }
         </style>
 
         <div class="home-feature-dual-center">
-          <!-- Left Column: Visual (Conceptual Diagram) -->
-          <div class="home-feature-dual-center__diagram-wrapper">
-            <div class="home-feature-dual-center__diagram" role="img" aria-label="見付と中泉という二つの中心が、磐田町・磐田市へまとまっていく流れを示す概念図">
-              <div class="home-feature-dual-center__diagram-title">二つの中心の変遷</div>
-
-              <div class="home-feature-dual-center__diagram-nodes">
-                <div class="home-feature-dual-center__diagram-node is-mitsuke">
-                  <div class="home-feature-dual-center__node-title">見付</div>
-                  <ul class="home-feature-dual-center__node-desc">
-                    <li>遠江国府・総社</li>
-                    <li>東海道見付宿</li>
-                    <li>旧見付学校 (学び)</li>
-                  </ul>
-                </div>
-
-                <div class="home-feature-dual-center__diagram-node is-nakaizumi">
-                  <div class="home-feature-dual-center__node-title">中泉</div>
-                  <ul class="home-feature-dual-center__node-desc">
-                    <li>中泉御殿・代官所</li>
-                    <li>東海道本線 鉄道駅</li>
-                    <li>駅前商業の発展</li>
-                  </ul>
-                </div>
-
-                <div class="home-feature-dual-center__diagram-arrows">
-                  <span>↓</span>
-                  <span>↓</span>
-                </div>
-
-                <div class="home-feature-dual-center__diagram-node is-unified">
-                  <div class="home-feature-dual-center__node-title">磐田町 ── 磐田市へ</div>
-                  <p class="home-feature-dual-center__node-desc-text">二つの中心が重なり合い、現代の都市へ</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Column: Content & CTAs -->
+          <!-- Left Column: Copy & main CTA -->
           <div class="home-feature-dual-center__content">
             <h2>見付と中泉。<br class="home-feature-dual-center__br-pc">二つの中心が、磐田をつくった。</h2>
 
             <div class="home-feature-dual-center__lead">
               <p>見付には、国府・東海道・総社・旧見付学校の記憶があります。中泉には、御殿・代官所・鉄道駅・駅前商業の記憶があります。</p>
-              <p>街道の時代から鉄道の時代へ。二つの中心が重なり、役割を変えながら、磐田町・磐田市へまとまっていく流れをたどります。</p>
+              <p>街道の時代から鉄道の時代へ。二つの中心が重なり、役割を変えながら、磐田町から磐田市へとまとまっていきました。</p>
+              <p>そして平成の大合併では、豊田・竜洋・福田・豊岡が新たな仲間に加わります。見付と中泉を核にはじまったまちは、丘へ、川へ、海へと輪を広げ、現在の新しい磐田市へとまとまっていきました。</p>
             </div>
 
             <div class="home-feature-dual-center__cta">
@@ -1303,20 +1221,39 @@ nav.menu a:hover{color:var(--brown-deep);}
               </a>
             </div>
 
-            <div class="home-feature-dual-center__pair">
-              <a href="/m018.html" class="home-feature-dual-center__mini-card is-mitsuke">
-                <span class="mini-card-tag">見付の中心性</span>
-                <span class="mini-card-text">街道・信仰・学びの記憶を見る</span>
-              </a>
-              <a href="/n023.html" class="home-feature-dual-center__mini-card is-nakaizumi">
-                <span class="mini-card-tag">中泉の中心性</span>
-                <span class="mini-card-text">御殿・代官所・駅前の記憶を見る</span>
-              </a>
+            <div class="home-feature-dual-center__merge">
+              <span class="home-feature-dual-center__merge-label">平成の大合併で加わったまち</span>
+              <div class="home-feature-dual-center__merge-links">
+                <a href="/01004-toyoda.html">豊田</a>
+                <a href="/01007-ryuyo.html">竜洋</a>
+                <a href="/01008-fukude.html">福田</a>
+                <a href="/01009-toyooka.html">豊岡</a>
+              </div>
             </div>
 
             <div class="home-feature-dual-center__footer">
               <a href="/c014.html" class="home-feature-dual-center__link-toc">全十一回の連載目次へ</a>
             </div>
+          </div>
+
+          <!-- Right Column: 見付・中泉の代表風景を横並びの同格カードに -->
+          <div class="home-feature-dual-center__photos" aria-label="見付と中泉の代表風景">
+            <a href="/m018.html" class="home-feature-dual-center__photo is-mitsuke">
+              <img src="/images/home/feature-mitsuke-school-torii.jpg"
+                   alt="旧見付学校と淡海國玉神社の鳥居。見付のまちに残る学びと信仰の記憶"
+                   loading="lazy" width="640" height="480">
+              <span class="photo-cap">見付｜国府・東海道・総社・学びの記憶</span>
+              <span class="photo-tag">見付の中心性</span>
+              <span class="photo-sub">街道・信仰・学びの記憶を見る</span>
+            </a>
+            <a href="/n023.html" class="home-feature-dual-center__photo is-nakaizumi">
+              <img src="/images/home/feature-nakaizumi-iwata-station.jpg"
+                   alt="JR磐田駅。中泉に広がった鉄道と駅前商業の記憶"
+                   loading="lazy" width="640" height="427">
+              <span class="photo-cap">中泉｜御殿・代官所・鉄道駅・駅前商業の記憶</span>
+              <span class="photo-tag">中泉の中心性</span>
+              <span class="photo-sub">御殿・代官所・駅前の記憶を見る</span>
+            </a>
           </div>
         </div>
       </section>
