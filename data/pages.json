@@ -1,7 +1,7 @@
 ﻿{
     "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
     "schema_version": 1,
-    "updated_at": "2026-06-27",
+    "updated_at": "2026-06-28",
     "districts": [
         {
             "district_id": "mitsuke",
@@ -110,6 +110,25 @@
         "land-memory"
     ],
     "pages": [
+        {
+            "title": "磐田原から今之浦へ――台地と入り江がつくった磐田の暮らし",
+            "url": "c036.html",
+            "district": [
+                "koyo",
+                "mitsuke"
+            ],
+            "themes": [
+                "archaeology",
+                "terrain",
+                "land-memory"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-28",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "磐田市歴史セミナー資料「磐田原から今之浦へ」をもとに、磐田原台地、今之浦、旧石器時代、縄文時代、黒曜石、天竜川・太田川をつなぎ、向陽と見付の地形から磐田のはじまりを読む。",
+            "parent": "c034.html"
+        },
         {
             "title": "福田の年中行事と昔ばなし ── 海・川・田畑に生きた暮らしの記憶（総論）",
             "url": "f011.html",
