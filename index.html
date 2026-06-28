@@ -52,6 +52,16 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "磐田物語",
+  "url": "https://iwata-monogatari.pages.dev/",
+  "logo": "https://iwata-monogatari.pages.dev/img/ogp.jpg",
+  "description": "静岡県磐田市の歴史・文化・地域史アーカイブ"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "磐田物語｜磐田市の歴史・地域文化アーカイブ",
   "url": "https://iwata-monogatari.pages.dev/",
@@ -93,7 +103,8 @@ nav.menu a:hover{color:var(--brown-deep);}
 :target,section[id],h2[id],h3[id]{scroll-margin-top:88px;}
 .searchhero{background:linear-gradient(180deg,var(--paper-deep),var(--paper));border-bottom:1px solid var(--line);}
 .searchhero .inner{max-width:1180px;margin:0 auto;padding:40px 22px 34px;text-align:center;}
-.searchhero h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:clamp(26px,4.4vw,40px);line-height:1.3;margin:0 0 10px;color:var(--ink);letter-spacing:.04em;}
+.searchhero h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:clamp(34px,6vw,56px);line-height:1.2;margin:0 0 8px;color:var(--ink);letter-spacing:.08em;}
+.searchhero .hero-subtitle{max-width:780px;margin:0 auto 14px;font-family:"Shippori Mincho",serif;font-size:clamp(14px,2.2vw,18px);font-weight:500;color:var(--brown-deep);line-height:1.8;letter-spacing:.03em;}
 .searchhero .hero-lead{max-width:760px;margin:0 auto 18px;font-size:15px;color:var(--ink-soft);line-height:1.9;}
 .searchhero .search-title{font-weight:700;font-size:13px;color:var(--brown-deep);letter-spacing:.08em;margin:0 0 10px;}
 .search-box{position:relative;max-width:680px;margin:0 auto;}
@@ -565,7 +576,8 @@ nav.menu a:hover{color:var(--brown-deep);}
 
 <section class="searchhero">
   <div class="inner">
-    <h1>磐田の歴史・地名・古写真を検索</h1>
+    <h1>磐田物語</h1>
+    <p class="hero-subtitle">静岡県磐田市の歴史・文化・人物・古写真・古地図・地域の記憶を未来へ伝える地域史アーカイブ</p>
     <p class="hero-lead">見付・中泉・掛塚・豊田・福田・竜洋・御厨・向陽・豊岡。磐田市に残る歴史、地名、古写真、古地図、祭り、文化財、暮らしの記憶を記録し、次の世代へ手渡す地域史アーカイブです。</p>
     <p class="search-title">キーワードで探す</p>
     <div class="search-box">
@@ -582,7 +594,26 @@ nav.menu a:hover{color:var(--brown-deep);}
   </div>
 </section>
 
+<section class="about-monogatari" aria-label="磐田物語とは">
+  <div class="about-monogatari__inner">
+    <h2 class="about-monogatari__title">磐田物語とは</h2>
+    <p class="about-monogatari__lead">磐田物語は、静岡県磐田市の歴史・文化・人物・古写真・古地図・地名・地域の記憶を後世へ伝えることを目的とした地域史アーカイブです。行政資料や郷土史、現地調査などをもとに、一つひとつの地域の物語を積み重ねています。</p>
+    <div class="about-monogatari__links">
+      <a href="#portal" class="about-monogatari__link">歴史を調べる →</a>
+      <a href="/c034.html" class="about-monogatari__link">全記事一覧 →</a>
+      <a href="/c033.html" class="about-monogatari__link">磐田の集合知とは →</a>
+    </div>
+  </div>
+</section>
+
 <style>
+  .about-monogatari{border-bottom:1px solid var(--line);background:var(--paper);}
+  .about-monogatari__inner{max-width:880px;margin:0 auto;padding:30px 22px 28px;text-align:center;}
+  .about-monogatari__title{font-family:"Shippori Mincho",serif;font-weight:700;font-size:clamp(20px,3vw,26px);color:var(--ink);margin:0 0 14px;letter-spacing:.06em;border:0;padding:0;}
+  .about-monogatari__lead{font-size:15px;color:var(--ink-soft);line-height:2;margin:0 auto 18px;text-align:left;max-width:760px;}
+  .about-monogatari__links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+  .about-monogatari__link{font-size:14px;font-weight:700;color:var(--brown-deep);background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 18px;transition:.2s;}
+  .about-monogatari__link:hover{background:var(--brown);color:#fff;border-color:var(--brown);}
   .special-movie-banner{max-width:1180px;margin:24px auto 4px;padding:0 22px;}
   .special-movie-banner__link{display:flex;align-items:stretch;gap:22px;text-decoration:none;color:var(--ink);background:linear-gradient(135deg,#eaf3fa 0%,#fffdf7 58%,#f6efe1 100%);border:1px solid var(--line);border-radius:16px;padding:22px 26px;box-shadow:0 1px 2px rgba(80,60,40,.06),0 10px 28px rgba(31,58,72,.08);transition:.2s;}
   .special-movie-banner__link:hover{transform:translateY(-2px);border-color:var(--brown);box-shadow:0 14px 34px rgba(31,58,72,.13);}
@@ -1812,7 +1843,7 @@ nav.menu a:hover{color:var(--brown-deep);}
         </div>
       </div>
     </div>
-    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
   </div>
 </footer>
 
