@@ -1777,8 +1777,14 @@ nav.menu a:hover{color:var(--brown-deep);}
   </div>
 </section>
 <style>
-  #saguchi-gallery .gcard{transition:opacity .55s ease;}
+  /* ギャラリーは横スクロールさせず、画面幅に収まる折り返しグリッドにする */
+  #saguchi-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;overflow:visible;scroll-snap-type:none;padding-bottom:0;}
+  #saguchi-gallery .gcard{flex:initial;width:auto;min-width:0;scroll-snap-align:none;transition:opacity .55s ease;}
   #saguchi-gallery .gcard.is-fade{opacity:0;}
+  #saguchi-gallery .gt{overflow-wrap:anywhere;}
+  @media(max-width:880px){#saguchi-gallery{grid-template-columns:repeat(3,1fr);}}
+  @media(max-width:600px){#saguchi-gallery{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:400px){#saguchi-gallery{grid-template-columns:1fr;}}
 </style>
 <script>
 /* 佐口史料ギャラリー：10秒ごとに別の所蔵資料へ差し替え（画像・見出し・説明・リンクを目録データと一致させる） */
