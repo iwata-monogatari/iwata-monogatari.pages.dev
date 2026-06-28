@@ -2,7 +2,7 @@
    district-filter.js ── 地区ページ 歴史的コンテンツのテーマ別絞り込み
    方針:
    - JavaScript 無効時は、HTML に静的出力されたカードが全件表示される。
-   - JS 有効時のみ、テーマ別絞り込み・件数表示・新着固定＋ランダム整列・出現アニメを行う。
+   - JS 有効時のみ、テーマ別絞り込み・件数表示・新着固定＋日替わりランダム整列・出現アニメを行う。
    - 絞り込みボタンは aria-pressed を切り替える。
    - 複数の絞り込みブロックが1ページにあっても動作する（data-filter-scope 単位）。
    ========================================================================= */
@@ -19,8 +19,8 @@
     var emptyEl = scope.querySelector(".district-empty");
 
     var PIN_COUNT = 3;   // 上部に固定する新着件数
-    var STAGGER = 45;    // 出現アニメーションの時間差(ms)
-    var STAGGER_CAP = 14; // 時間差を頭打ちにするカード数（全体が間延びしないように）
+    var STAGGER = 40;    // 出現アニメーションの時間差(ms)
+    var STAGGER_CAP = 12; // 時間差を頭打ちにするカード数（全体が間延びしないように）
 
     /* --- 新着順（data-published 降順・同日は元の順序）を基準配列として保持 --- */
     var byDate = cards
@@ -35,10 +35,30 @@
         return o.card;
       });
 
-    /* --- Fisher–Yates シャッフル（毎回ランダムに並べ替える） --- */
+    /* --- 日替わりシード付き乱数（その日のうちは同じ並び、日付が変わると変わる） --- */
+    function hashStr(s) {
+      var h = 2166136261;
+      for (var i = 0; i < s.length; i++) {
+        h ^= s.charCodeAt(i);
+        h = Math.imul(h, 16777619);
+      }
+      return h >>> 0;
+    }
+    function mulberry32(a) {
+      return function () {
+        a = (a + 0x6d2b79f5) | 0;
+        var t = Math.imul(a ^ (a >>> 15), 1 | a);
+        t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+      };
+    }
+    var now = new Date();
+    var rng = mulberry32(hashStr(now.getFullYear() + "-" + (now.getMonth() + 1) + "-" + now.getDate()));
+
+    /* --- Fisher–Yates シャッフル（日替わりシードを使用） --- */
     function shuffle(arr) {
       for (var i = arr.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
+        var j = Math.floor(rng() * (i + 1));
         var t = arr[i];
         arr[i] = arr[j];
         arr[j] = t;
@@ -46,19 +66,21 @@
       return arr;
     }
 
-    /* --- 表示：新着 PIN_COUNT 件を上に固定し、残りをランダムに並べて順番に出現させる --- */
-    function apply(theme) {
-      var matching = byDate.filter(function (card) {
-        var themes = (card.getAttribute("data-theme") || "").split(/\s+/);
-        return theme === "all" || themes.indexOf(theme) !== -1;
-      });
-      var order = matching.slice(0, PIN_COUNT).concat(shuffle(matching.slice(PIN_COUNT)));
+    /* --- 表示順は一度だけ確定：新着 PIN_COUNT 件を上に固定し、残りを日替わりでシャッフル --- */
+    var displayOrder = byDate.slice(0, PIN_COUNT).concat(shuffle(byDate.slice(PIN_COUNT)));
 
-      // 非該当カードを隠し、DOM順を新しい並びに合わせ、アニメーションを一旦リセット
-      cards.forEach(function (card) {
-        card.hidden = order.indexOf(card) === -1;
+    /* --- 絞り込み：確定済みの並びを保ったまま該当カードを出し、順番に出現させる --- */
+    function apply(theme) {
+      var visible = [];
+      displayOrder.forEach(function (card) {
+        var themes = (card.getAttribute("data-theme") || "").split(/\s+/);
+        var ok = theme === "all" || themes.indexOf(theme) !== -1;
+        card.hidden = !ok;
+        if (ok) visible.push(card);
       });
-      order.forEach(function (card) {
+
+      // DOM順を確定済みの並びに合わせ、アニメーションを一旦リセット
+      displayOrder.forEach(function (card) {
         card.classList.remove("is-enter");
         card.style.animationDelay = "";
         list.appendChild(card);
@@ -67,13 +89,13 @@
       // 一度だけリフローして、付け直したアニメーションを確実に再生させる
       void list.offsetWidth;
 
-      order.forEach(function (card, i) {
+      visible.forEach(function (card, i) {
         card.style.animationDelay = Math.min(i, STAGGER_CAP) * STAGGER + "ms";
         card.classList.add("is-enter");
       });
 
-      if (countEl) countEl.textContent = "表示中：" + order.length + "件 / 全" + cards.length + "件";
-      if (emptyEl) emptyEl.hidden = order.length !== 0;
+      if (countEl) countEl.textContent = "表示中：" + visible.length + "件 / 全" + cards.length + "件";
+      if (emptyEl) emptyEl.hidden = visible.length !== 0;
     }
 
     if (filterBar) {

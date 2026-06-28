@@ -54,8 +54,8 @@
   padding:15px 17px;box-shadow:var(--shadow);transition:.18s;}
 .content-card:hover{transform:translateY(-1px);box-shadow:0 7px 18px rgba(40,70,90,.1);}
 .content-card[hidden]{display:none;}
-@keyframes card-enter{from{opacity:0;transform:translateY(14px) scale(.985);}to{opacity:1;transform:translateY(0) scale(1);}}
-.content-card.is-enter{animation:card-enter .5s cubic-bezier(.22,.61,.36,1) backwards;}
+@keyframes card-enter{from{opacity:0;transform:translateY(11px) scale(.99);}to{opacity:1;transform:translateY(0) scale(1);}}
+.content-card.is-enter{animation:card-enter .55s cubic-bezier(.22,.61,.36,1) backwards;}
 @media(prefers-reduced-motion:reduce){.content-card.is-enter{animation:none;}}
 .content-card .card-label{display:inline-block;margin:0 0 7px;font-size:11.5px;font-weight:700;
   letter-spacing:.06em;color:var(--accent-blue);background:#eaf4fb;border:1px solid #d4e8f5;
