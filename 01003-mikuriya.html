@@ -506,22 +506,60 @@
         </a>
       </div>
 
-      <div class="side-block">
-        <h3>佐口行正氏資料室</h3>
-        <p style="font-size:13px;color:var(--ink-soft);margin:0 0 12px;">引札・浮世絵・古地図・絵葉書など約336点を公開。</p>
-        <ul class="side-list">
-          <li><a href="/c020.html">史料本編</a></li>
-          <li><a href="/c019.html">目録</a></li>
-        </ul>
+      <div class="side-block saguchi-card">
+        <div class="saguchi-slideshow">
+          <img src="/saguchi/img/ts-7.jpg" class="slide active" alt="浮世絵 美人東海道 見附駅">
+          <img src="/saguchi/img/hk-3.jpg" class="slide" alt="引き札 内山栄吉">
+          <img src="/saguchi/img/hk-2.jpg" class="slide" alt="引き札 久野米吉">
+          <img src="/saguchi/img/hk-1.jpg" class="slide" alt="引き札 川島幸三郎">
+          <img src="/saguchi/img/ph-2.jpg" class="slide" alt="中川町 屋台彫刻">
+          <img src="/saguchi/img/eh-1.jpg" class="slide" alt="見付の祭礼 絵葉書">
+        </div>
+        <div class="saguchi-card-content">
+          <h3 class="font-mincho">佐口行正氏資料室</h3>
+          <p>引札・浮世絵・古地図・絵葉書・古写真など約336点を公開。</p>
+          <div class="saguchi-card-buttons">
+            <a href="/c020.html" class="saguchi-card-btn font-mincho">史料本編</a>
+            <a href="/c019.html" class="saguchi-card-btn font-mincho">目録</a>
+          </div>
+        </div>
       </div>
-      <div class="side-block">
-        <h3>地名とことば</h3>
-        <ul class="side-list">
-          <li><a href="/c009.html">地名の由来</a></li>
-          <li><a href="/c006.html">遠州弁辞典</a></li>
-          <li><a href="/c008.html">遠州弁変換</a></li>
-        </ul>
+      <div class="side-block chimei-kotoba-card">
+        <h3 class="chimei-kotoba-title font-mincho">地名とことば</h3>
+        <p class="chimei-kotoba-desc">磐田の歴史が息づく地名の由来と、温かみのある方言（遠州弁）の世界。</p>
+        <div class="chimei-kotoba-links">
+          <a href="/c009.html" class="chimei-kotoba-link-item">
+            <span class="link-label font-mincho">地名の由来</span>
+            <span class="link-arrow">→</span>
+          </a>
+          <a href="/c006.html" class="chimei-kotoba-link-item">
+            <span class="link-label font-mincho">遠州弁辞典</span>
+            <span class="link-arrow">→</span>
+          </a>
+          <a href="/c008.html" class="chimei-kotoba-link-item">
+            <span class="link-label font-mincho">遠州弁変換</span>
+            <span class="link-arrow">→</span>
+          </a>
+        </div>
       </div>
+      <script>
+      (function() {
+        var cards = document.querySelectorAll('.saguchi-card');
+        cards.forEach(function(card) {
+          if (card.dataset.slideshowInitialized) return;
+          card.dataset.slideshowInitialized = "true";
+          var slides = card.querySelectorAll('.saguchi-slideshow .slide');
+          if (slides.length > 1) {
+            var index = 0;
+            setInterval(function() {
+              slides[index].classList.remove('active');
+              index = (index + 1) % slides.length;
+              slides[index].classList.add('active');
+            }, 5000);
+          }
+        });
+      })();
+      </script>
 
       <!-- 磐田物語の9地区分類から探す -->
       <div class="side-block area-classification-links">

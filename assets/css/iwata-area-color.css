@@ -364,4 +364,156 @@ body.area-fukude .article-body a {
   }
 }
 
+/* ============================================================================
+   佐口行正氏資料室 & 地名とことば 新ビジュアルカード
+   ============================================================================ */
+
+/* 1. 佐口行正氏資料室 カード */
+.side-block.saguchi-card {
+  padding: 0 !important;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.side-block.saguchi-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--brown);
+}
+
+.saguchi-slideshow {
+  position: relative;
+  height: 140px;
+  background: #111;
+  overflow: hidden;
+}
+
+.saguchi-slideshow .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.saguchi-slideshow .slide.active {
+  opacity: 0.9;
+}
+
+.saguchi-card-content {
+  padding: 16px 16px 18px;
+}
+
+.saguchi-card-content h3 {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-size: 15.5px !important;
+  margin: 0 0 8px !important;
+  color: var(--ink);
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+
+.saguchi-card-content p {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+
+.saguchi-card-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.saguchi-card-btn {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 0;
+  border-radius: 6px;
+  text-decoration: none;
+  background: var(--brown-deep);
+  color: #fff !important;
+  box-shadow: 0 2px 5px rgba(31, 79, 111, 0.15);
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.saguchi-card-btn:hover {
+  background: var(--brown);
+  transform: translateY(-1px);
+}
+
+/* 2. 地名とことば カード */
+.side-block.chimei-kotoba-card {
+  padding: 18px !important;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fffdf7 0%, #f6efe2 100%);
+  border: 1px solid rgba(190, 160, 120, 0.3);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.side-block.chimei-kotoba-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--brown);
+}
+
+.chimei-kotoba-card h3.chimei-kotoba-title {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-size: 15.5px !important;
+  margin: 0 0 8px !important;
+  color: var(--ink);
+  border-left: 4px solid var(--brown) !important;
+  padding-left: 8px !important;
+}
+
+.chimei-kotoba-desc {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+
+.chimei-kotoba-links {
+  display: grid;
+  gap: 8px;
+}
+
+.chimei-kotoba-link-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #fff;
+  border: 1px solid rgba(190, 160, 120, 0.2);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--ink) !important;
+  font-size: 13.5px;
+  font-weight: 600;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.chimei-kotoba-link-item:hover {
+  background: #fbf9f4;
+  border-color: var(--brown);
+  transform: translateX(2px);
+}
+
+.chimei-kotoba-link-item .link-arrow {
+  color: var(--brown);
+  font-weight: 700;
+}
+
+
 
