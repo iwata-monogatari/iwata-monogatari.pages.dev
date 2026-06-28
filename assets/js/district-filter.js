@@ -49,6 +49,18 @@
 
     if (filterBar) {
       var buttons = Array.prototype.slice.call(filterBar.querySelectorAll("button[data-filter]"));
+
+      /* --- 該当カードが0件のテーマボタンは表示しない（「すべて」は常に表示） --- */
+      buttons.forEach(function (btn) {
+        var theme = btn.getAttribute("data-filter");
+        if (theme === "all") return;
+        var hasMatch = cards.some(function (card) {
+          var themes = (card.getAttribute("data-theme") || "").split(/\s+/);
+          return themes.indexOf(theme) !== -1;
+        });
+        if (!hasMatch) btn.hidden = true;
+      });
+
       filterBar.addEventListener("click", function (e) {
         var btn = e.target.closest("button[data-filter]");
         if (!btn) return;
