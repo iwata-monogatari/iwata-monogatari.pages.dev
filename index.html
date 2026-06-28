@@ -1473,13 +1473,6 @@ nav.menu a:hover{color:var(--brown-deep);}
             </a>
           </li>
           <li class="new-article-item news-item">
-            <a href="/matsuri.html" class="new-article-link news-link">
-              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-28">2026-06-28</time><span class="new-article-category news-tag">サイト更新</span></span>
-              <span class="new-article-title news-title">祭り特集ページの表示を改善し、全ページのデザインを統一</span>
-              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-          <li class="new-article-item news-item">
             <a href="/c034.html" class="new-article-link news-link">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-28">2026-06-28</time><span class="new-article-category news-tag">サイト更新</span></span>
               <span class="new-article-title news-title">全記事一覧に未掲載だった文化財ページ等21本を追加し、公開記事数を実数の243本に更新</span>
@@ -1514,13 +1507,6 @@ nav.menu a:hover{color:var(--brown-deep);}
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-          <li class="new-article-item news-item">
-            <a href="/c021.html" class="new-article-link news-link">
-              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">市指定無形民俗</span></span>
-              <span class="new-article-title news-title">市指定無形民俗文化財10件の読みものを公開</span>
-              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
           <li class="new-article-item news-item" data-district="nanbu">
             <a href="/s019.html" class="new-article-link news-link area-nanbu">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">南部・民俗</span></span>
@@ -1539,20 +1525,6 @@ nav.menu a:hover{color:var(--brown-deep);}
             <a href="/t029.html" class="new-article-link news-link area-toyoda">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">豊田・民俗</span></span>
               <span class="new-article-title news-title">池田やかた祭り ── 熊野御前伝承と池田荘の記憶</span>
-              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-          <li class="new-article-item news-item">
-            <a href="/" class="new-article-link news-link">
-              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">サイト更新</span></span>
-              <span class="new-article-title news-title">トップページに「磐田の集合知」ページ数表示を追加</span>
-              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-          <li class="new-article-item news-item">
-            <a href="/" class="new-article-link news-link">
-              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-27">2026-06-27</time><span class="new-article-category news-tag">サイト更新</span></span>
-              <span class="new-article-title news-title">アクセス表示をユニークユーザとPVの2表に分けて表示</span>
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
@@ -2034,6 +2006,13 @@ nav.menu a:hover{color:var(--brown-deep);}
     .then(function(data){
       data.sort(function(a, b){
         return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0);
+      });
+      // 新着は1ページにつき1件に（同じリンク先の重複を除外）
+      var seenUrls = {};
+      data = data.filter(function(item){
+        if (!item || !item.url || seenUrls[item.url]) return false;
+        seenUrls[item.url] = true;
+        return true;
       });
       var list = document.getElementById('new-article-list');
       if (!list) return;
