@@ -152,6 +152,11 @@ nav.menu a:hover{color:var(--brown-deep);}
 .ooaza-acc>summary::before{content:"▸";color:var(--brown);font-size:12px;transition:transform .15s;}
 .ooaza-acc[open]>summary::before{transform:rotate(90deg);}
 .ooaza-acc .ooaza-link-list{padding:2px 0 10px;}
+.ooaza-acc.ooaza-all{border-top:none;}
+.ooaza-acc.ooaza-all>summary{background:#f4f9fc;border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:13.5px;justify-content:center;}
+.ooaza-acc.ooaza-all>summary:hover{background:#e9f3fa;border-color:#6fb7d8;}
+.ooaza-acc.ooaza-all[open]>summary{margin-bottom:10px;}
+.ooaza-acc.ooaza-all>.ooaza-link-list{padding-top:0;}
 .side-list a{font-size:13px;color:var(--ink-soft);background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:5px 11px;transition:.2s;}
 .side-list a:hover{background:var(--accent-blue);color:#fff;border-color:var(--accent-blue);}
 .feature{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
@@ -759,7 +764,9 @@ nav.menu a:hover{color:var(--brown-deep);}
       </a>
                   <div class="side-block ooaza-search">
         <h3 id="ooaza-search-title">地域（大字）から探す</h3>
-        <p class="ooaza-search-lead">お住まい・ゆかりのある地名から、磐田物語の地区別入口ページへ移動できます。下の50音（行）見出しを開くと、ほかの地名も探せます。</p>
+        <p class="ooaza-search-lead">お住まい・ゆかりのある地名から、磐田物語の地区別入口ページへ移動できます。</p>
+        <details class="ooaza-acc ooaza-all">
+          <summary>地名（大字）の一覧を開く ── 50音から探す</summary>
         <div class="ooaza-link-list">
             <a href="/01004-toyoda.html">赤池</a>
             <a href="/01003-mikuriya.html">安久路</a>
@@ -1019,6 +1026,7 @@ nav.menu a:hover{color:var(--brown-deep);}
           <div class="ooaza-link-list">
             <a href="/01003-mikuriya.html">和口</a>
           </div>
+        </details>
         </details>
       </div>
       </div>
@@ -1393,7 +1401,7 @@ nav.menu a:hover{color:var(--brown-deep);}
             <a href="/m038.html" class="new-article-link news-link area-mitsuke">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-06-28">2026-06-28</time><span class="new-article-category news-tag">遠州の南画家</span></span>
               <span class="new-article-title news-title">石川鴻斎 — 見付に晩年を置いた遠州の文人画家</span>
-              <span class="news-arrow" aria-hidden="true">?</span>
+              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
           <li class="new-article-item news-item" data-district="fukude">
@@ -1783,6 +1791,22 @@ nav.menu a:hover{color:var(--brown-deep);}
   </div>
 </section>
 
+<!-- 地域アーカイブの文脈に沿った、控えめな相談導線（実家じまい・空き家相談室） -->
+<style>
+  .archive-soudan{max-width:1180px;margin:6px auto 40px;padding:0 22px;}
+  .archive-soudan__inner{background:var(--paper-deep);border:1px solid var(--line);border-radius:12px;padding:20px 24px;text-align:center;}
+  .archive-soudan__lead{margin:0 0 13px;font-size:14px;color:var(--ink-soft);line-height:1.85;}
+  .archive-soudan__link{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:var(--brown-deep);background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 20px;text-decoration:none;transition:.2s;}
+  .archive-soudan__link:hover{border-color:var(--brown);transform:translateY(-1px);}
+  .archive-soudan__arrow{color:var(--brown);}
+</style>
+<section class="archive-soudan" aria-label="実家じまい・空き家のご相談">
+  <div class="archive-soudan__inner">
+    <p class="archive-soudan__lead">磐田の記録をたどるうちに、ご自身の家や土地、相続した実家のことが気になった方へ。歴史や地域の記憶を大切にしながら、これからの活かし方を一緒に考えます。</p>
+    <a class="archive-soudan__link" href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">家・土地・相続・空き家のご相談 ──〈実家じまい・空き家相談室〉<span class="archive-soudan__arrow" aria-hidden="true">→</span></a>
+  </div>
+</section>
+
 <section class="band-soft">
   <div class="inner">
     <p class="eyebrow">ARCHITECTURE ｜ 未来へ残したい建物</p>
@@ -1858,7 +1882,7 @@ nav.menu a:hover{color:var(--brown-deep);}
         </div>
       </div>
     </div>
-    <div class="im-copy">© 2026 磐田物語 ｜ © 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
   </div>
 </footer>
 
