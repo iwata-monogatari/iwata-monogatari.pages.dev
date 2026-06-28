@@ -1,0 +1,356 @@
+/* ============================================================================
+   磐田物語 特集「遠州の南画家たち」専用スタイル
+   ============================================================================ */
+
+:root {
+  --nanga-bg-washi: #f8f7f4;       /* 和紙の白 */
+  --nanga-text-ink: #1a1a1a;       /* 生墨 */
+  --nanga-text-muted: #5a6268;     /* 薄墨 */
+  --nanga-accent-seal: #8d3c26;    /* 落款朱 */
+  --nanga-border-ink: #d2cbb8;     /* 古紙金泥 */
+  --nanga-bg-panel: #efece5;       /* 泥絵具（コラム背景） */
+}
+
+/* 特集ページ全体のレイアウト上書き */
+body.nanga-feature-page {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: var(--nanga-text-ink);
+  background: var(--nanga-bg-washi);
+  line-height: 1.95;
+  font-size: 20px !important;
+  letter-spacing: 0.04em;
+}
+
+body.nanga-feature-page a {
+  color: var(--nanga-accent-seal);
+}
+
+body.nanga-feature-page main {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 22px 64px;
+}
+
+/* 記事ヘッダー */
+.nanga-header {
+  margin: 32px 0 44px;
+  text-align: center;
+}
+.nanga-eyebrow {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--nanga-accent-seal);
+  border: 1px solid var(--nanga-accent-seal);
+  padding: 3px 12px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+.nanga-title {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.45;
+  color: var(--nanga-text-ink);
+  margin-bottom: 12px;
+  letter-spacing: 0.03em;
+}
+.nanga-meta {
+  font-size: 14px;
+  color: var(--nanga-text-muted);
+}
+
+/* 記事本文 */
+.nanga-article {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.nanga-article h2 {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--nanga-text-ink);
+  margin: 48px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--nanga-border-ink);
+  position: relative;
+}
+.nanga-article h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 40px;
+  height: 2px;
+  background-color: var(--nanga-accent-seal);
+}
+.nanga-article h3 {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--nanga-text-ink);
+  margin: 36px 0 16px;
+  border-left: 3px solid var(--nanga-accent-seal);
+  padding-left: 10px;
+}
+.nanga-article p {
+  margin-bottom: 24px;
+  text-align: justify;
+}
+.nanga-article p.lead {
+  font-size: 21px;
+  line-height: 2.0;
+  color: var(--nanga-text-ink);
+  border-top: 1px solid var(--nanga-border-ink);
+  border-bottom: 1px solid var(--nanga-border-ink);
+  padding: 16px 0;
+  margin-bottom: 36px;
+}
+
+/* 落款マーク */
+.seal-stamp {
+  display: inline-block;
+  border: 2px solid var(--nanga-accent-seal);
+  color: var(--nanga-accent-seal);
+  font-family: "Shippori Mincho", serif;
+  font-weight: bold;
+  padding: 4px 6px;
+  line-height: 1;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  transform: rotate(-2deg);
+  margin: 0 4px;
+}
+
+/* 掛軸風図版ギャラリー */
+.nanga-gallery-item {
+  margin: 36px 0;
+  text-align: center;
+}
+.kakejiku-frame {
+  border: 8px solid var(--nanga-border-ink);
+  background-color: #ffffff;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  margin-bottom: 14px;
+  display: inline-block;
+  max-width: 100%;
+}
+.kakejiku-frame img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.nanga-caption {
+  font-size: 0.88rem;
+  color: var(--nanga-text-muted);
+  border-left: 2px solid var(--nanga-accent-seal);
+  padding-left: 12px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+.artwork-title {
+  font-weight: bold;
+  color: var(--nanga-text-ink);
+  font-size: 1rem;
+}
+.artwork-meta {
+  display: block;
+  margin: 4px 0;
+}
+.artwork-desc {
+  margin-top: 6px;
+}
+
+/* 特集コラム：.rnote */
+aside.nanga-note {
+  background: var(--nanga-bg-panel);
+  border: 1px solid var(--nanga-border-ink);
+  border-left: 4px solid var(--nanga-accent-seal);
+  border-radius: 4px;
+  padding: 20px 24px;
+  margin: 36px 0;
+}
+.nanga-note-title {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--nanga-text-ink);
+  margin-bottom: 10px;
+}
+
+/* 年表 */
+.nanga-timeline-container {
+  background: #ffffff;
+  border: 1px solid var(--nanga-border-ink);
+  padding: 24px;
+  margin: 36px 0;
+  border-radius: 4px;
+}
+.nanga-timeline-title {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--nanga-text-ink);
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--nanga-border-ink);
+  padding-bottom: 6px;
+}
+.nanga-timeline {
+  width: 100%;
+  border-collapse: collapse;
+}
+.nanga-timeline td {
+  padding: 8px 12px;
+  border-bottom: 1px dashed var(--nanga-border-ink);
+  font-size: 15px;
+}
+.nanga-timeline tr:last-child td {
+  border-bottom: none;
+}
+.time-year {
+  font-weight: 700;
+  color: var(--nanga-accent-seal);
+  width: 100px;
+  white-space: nowrap;
+}
+
+/* 記事フッター・出典 */
+.nanga-footer {
+  margin-top: 48px;
+}
+.nanga-sourcebox {
+  background: var(--nanga-bg-panel);
+  border: 1px solid var(--nanga-border-ink);
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 14.5px;
+  color: var(--nanga-text-muted);
+}
+.nanga-sourcebox h5 {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--nanga-text-ink);
+  margin-bottom: 10px;
+}
+.nanga-sourcebox ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+.nanga-sourcebox li {
+  margin-bottom: 6px;
+}
+
+/* パンくず */
+.nanga-crumbs {
+  font-size: 13.5px;
+  color: var(--nanga-text-muted);
+  padding: 20px 0 10px;
+}
+.nanga-crumbs a {
+  color: var(--nanga-text-muted);
+  text-decoration: none;
+}
+.nanga-crumbs a:hover {
+  text-decoration: underline;
+  color: var(--nanga-accent-seal);
+}
+
+/* 特集トップページ（インデックス）用スタイル */
+.nanga-hero {
+  text-align: center;
+  padding: 44px 20px;
+  border-bottom: 1px solid var(--nanga-border-ink);
+  margin-bottom: 36px;
+}
+.nanga-hero-lead {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: var(--nanga-text-muted);
+  line-height: 1.8;
+}
+.nanga-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 36px 0;
+}
+.nanga-card {
+  background: #ffffff;
+  border: 1px solid var(--nanga-border-ink);
+  border-bottom: 4px solid var(--nanga-accent-seal);
+  border-radius: 6px;
+  padding: 24px;
+  text-decoration: none !important;
+  color: var(--nanga-text-ink) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+.nanga-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+.nanga-card-num {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--nanga-accent-seal);
+  margin-bottom: 6px;
+  letter-spacing: 0.1em;
+}
+.nanga-card-title {
+  font-family: "Shippori Mincho", serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.nanga-card-desc {
+  font-size: 15px;
+  color: var(--nanga-text-muted);
+  line-height: 1.7;
+}
+
+/* 下部遷移ナビ */
+.nanga-nav-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  border-top: 1px solid var(--nanga-border-ink);
+  padding-top: 24px;
+}
+.nanga-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid var(--nanga-border-ink);
+  border-radius: 4px;
+  text-decoration: none !important;
+  font-size: 15px;
+  font-weight: 700;
+}
+.nanga-btn:hover {
+  background: var(--nanga-bg-panel);
+  color: var(--nanga-accent-seal) !important;
+}
+
+@media(max-width: 760px) {
+  body.nanga-feature-page {
+    font-size: 18px !important;
+  }
+  .nanga-title {
+    font-size: 26px;
+  }
+  .nanga-grid {
+    grid-template-columns: 1fr;
+  }
+  .nanga-nav-box {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

@@ -1,4 +1,4 @@
-﻿{
+{
     "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
     "schema_version": 1,
     "updated_at": "2026-06-28",
@@ -3040,7 +3040,96 @@
             "date_provisional": false,
             "status": "published",
             "summary": "市指定・天然記念物。西島・須賀神社のクスを、公式指定情報と地域史から読み直す（地区分類は要確認）。",
-            "parent": "01007-ryuyo.html"
+        },
+        {
+            "title": "遠州の南画家たち ─ 豪商が支えた美 of ネットワーク",
+            "url": "nanga-index.html",
+            "district": [
+                "fukude"
+            ],
+            "themes": [
+                "person",
+                "life",
+                "land-memory"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-28",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "江戸後期から明治にかけ、磐田・中遠地域で花開いた文人画（南画）の世界。福田半香や平井顕斎の足跡と、彼らを支えた豪商たちのパトロンネットワークをたどる。",
+            "parent": "01008-fukude.html"
+        },
+        {
+            "title": "福田半香 ─ 福田が生んだ文人画の巨星と崋山門下の系譜",
+            "url": "f023.html",
+            "district": [
+                "fukude"
+            ],
+            "themes": [
+                "person",
+                "life",
+                "land-memory"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-28",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "磐田市福田が生んだ江戸後期の文人画家・福田半香の生涯と画業。渡辺崋山に師事し、幕末の江戸画壇で独自の地歩を築いた足跡をたどる。",
+            "parent": "01008-fukude.html"
+        },
+        {
+            "title": "平井顕斎 ─ 乱世を描いた文人と遠州の志士たち",
+            "url": "f024.html",
+            "district": [
+                "fukude"
+            ],
+            "themes": [
+                "person",
+                "life",
+                "land-memory"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-28",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "幕末の中遠・福田地域で活躍した南画家・平井顕斎の画業と生涯。尊王攘夷の志士たちと交わり、激動の時代を筆と信念で生き抜いた足跡を追う。",
+            "parent": "01008-fukude.html"
+        },
+        {
+            "title": "遠州文人サロン ─ 掛塚・見付の豪商が支えた芸術",
+            "url": "f025.html",
+            "district": [
+                "fukude"
+            ],
+            "themes": [
+                "person",
+                "life",
+                "land-memory"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-28",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "江戸後期の中遠地域における芸術支援とパトロンネットワーク。天竜川の木材交易で栄えた掛塚や、見付宿の豪商たちが形成した文人サロンの実態に迫る。",
+            "parent": "01008-fukude.html"
+        },
+        {
+            "title": "南画家ゆかりの地を歩く ─ 記念碑と現地の面影",
+            "url": "f026.html",
+            "district": [
+                "fukude"
+            ],
+            "themes": [
+                "person",
+                "life",
+                "land-memory"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-28",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "磐田市内に残る福田半香や平井顕斎ゆかりの歴史スポットを訪ねるウォーキングガイド。福田の生家跡、豊浜中野の妙法寺、掛塚の豪商跡を歩く。",
+            "parent": "01008-fukude.html"
         }
     ]
 }
