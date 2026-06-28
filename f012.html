@@ -217,29 +217,31 @@
 </div>
 
 <footer class="im-foot">
-<style>
-.im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
-.im-foot *{box-sizing:border-box;}
-.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
-.im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-.im-foot .im-brand .im-dot{color:#2f7fa3;}
-.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
-.im-foot .im-links{width:100%;margin-top:6px;}
-.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
-.im-foot .im-links li{font-size:13px;line-height:1.6;}
-.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
-.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
-.im-foot .im-sns{width:100%;margin-top:20px;}
-.im-foot .im-icons{display:flex;gap:14px;}
-.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#cfe2ec;transition:.2s;}
-.im-foot .im-icons a:hover{color:#eef6fb;border-color:#6fb7d8;background:rgba(231,201,163,.08);}
-.im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
-.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
-</style>
+  <style>
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand:hover{text-decoration:none;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  .im-foot .im-sns{margin-top:20px;width:100%;border-top:1px solid rgba(255,255,255,.08);padding-top:16px;}
+  .im-foot .im-icons{display:flex;gap:16px;margin-top:8px;}
+  .im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.08);color:#cfe2ec;transition:.2s;}
+  .im-foot .im-icons a:hover{background:rgba(255,255,255,0.18);color:#fff;}
+  .im-foot .im-icons svg{width:18px;height:18px;fill:currentColor;}
+  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
+  </style>
   <div class="im-inner">
-    <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
     <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
     <div class="im-links">
       <p class="im-lh">大石ひろゆきの別活動</p>
@@ -247,6 +249,7 @@
         <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
         <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
         <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
         <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
         <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
       </ul>
@@ -259,7 +262,7 @@
         </div>
       </div>
     </div>
-    <div class="im-copy">© 2026 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+    <div class="im-copy">© 2026 磐田物語 ｜ © 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
   </div>
 </footer>
 </body>
