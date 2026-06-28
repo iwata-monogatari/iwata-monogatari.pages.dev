@@ -1764,18 +1764,68 @@ nav.menu a:hover{color:var(--brown-deep);}
     <p class="eyebrow">GALLERY ｜ 絵で見る磐田の記憶</p>
     <h2 class="sectitle" style="border-bottom:none;padding-bottom:0;">引き札・古写真・絵葉書ギャラリー</h2>
     <p class="lead-sm">郷土史研究家・佐口行正氏が収集された古写真・古地図・引き札・絵葉書・商店資料。歴史に詳しくない方でも楽しめる、絵で見る磐田の入口です。</p>
-    <div class="hscroll">
+    <div class="hscroll" id="saguchi-gallery">
       <a class="gcard" href="/c019.html#ts-7"><img src="/saguchi/img/ts-7.jpg" alt="浮世絵 美人東海道 見附駅 渓斎英泉 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">美人東海道 見附駅</p><p class="gm">渓斎英泉／見付を描いた浮世絵</p></div></a>
       <a class="gcard" href="/c019.html#hk-3"><img src="/saguchi/img/hk-3.jpg" alt="引き札 内山栄吉 明治42年 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">引札 内山栄吉</p><p class="gm">明治42年／色刷りの広告</p></div></a>
       <a class="gcard" href="/c019.html#hk-2"><img src="/saguchi/img/hk-2.jpg" alt="引き札 久野米吉 明治34年 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">引札 久野米吉</p><p class="gm">明治34年</p></div></a>
       <a class="gcard" href="/c019.html#hk-1"><img src="/saguchi/img/hk-1.jpg" alt="引き札 川島幸三郎 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">引札 川島幸三郎</p><p class="gm">武者と美人の図</p></div></a>
       <a class="gcard" href="/c019.html#ph-2"><img src="/saguchi/img/ph-2.jpg" alt="中川町 屋台彫刻 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">中川町 屋台</p><p class="gm">絢爛な祭屋台の彫刻</p></div></a>
       <a class="gcard" href="/c019.html#eh-1"><img src="/saguchi/img/eh-1.jpg" alt="見付の祭礼を伝える絵葉書 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">祭礼の絵葉書</p><p class="gm">大正期の見付</p></div></a>
-      <a class="gcard" href="/c019.html"><img src="/saguchi/img/eh-10.jpg" alt="絵葉書 見付のまちなみ 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">まちなみの絵葉書</p><p class="gm">目録から探す →</p></div></a>
+      <a class="gcard gcard--more" href="/c019.html"><img src="/saguchi/img/eh-10.jpg" alt="絵葉書 見付のまちなみ 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">まちなみの絵葉書</p><p class="gm">目録から探す →</p></div></a>
     </div>
     <p style="font-size:12px;color:var(--ink-soft);margin:14px 0 0;">※ 掲載資料はすべて佐口行正氏の所蔵であり、ご厚意・ご許可を得て公開しています。無断転載・二次利用を禁じます。</p>
   </div>
 </section>
+<style>
+  #saguchi-gallery .gcard{transition:opacity .55s ease;}
+  #saguchi-gallery .gcard.is-fade{opacity:0;}
+</style>
+<script>
+/* 佐口史料ギャラリー：10秒ごとに別の所蔵資料へ差し替え（画像・見出し・説明・リンクを目録データと一致させる） */
+(function(){
+  var wrap=document.getElementById('saguchi-gallery');
+  if(!wrap) return;
+  var cards=Array.prototype.slice.call(wrap.querySelectorAll('.gcard:not(.gcard--more)'));
+  if(!cards.length) return;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+  function metaOf(it){
+    var parts=[];
+    var lab=it.typ||it.cat||it.group||'';
+    if(lab) parts.push(lab);
+    var era=(it.grps&&it.grps['年代'])||'';
+    if(!era||era==='年代不明'){ era=(it.era&&it.era.length<=10)?it.era:''; }
+    if(era&&era!=='年代不明') parts.push(era);
+    return parts.join('／');
+  }
+  function apply(card,it){
+    var img=card.querySelector('img'),
+        gt=card.querySelector('.gt'), gm=card.querySelector('.gm');
+    card.setAttribute('href','/c019.html#'+it.id);
+    if(img){ img.src='/'+it.img; img.alt=(it.name||'佐口行正氏所蔵史料')+' 佐口行正氏所蔵資料'; img.loading='lazy'; img.decoding='async'; }
+    if(gt) gt.textContent=it.name||'佐口行正氏所蔵史料';
+    if(gm) gm.textContent=metaOf(it)||'佐口行正氏所蔵資料';
+  }
+  fetch('/data/saguchi-shiryo.json').then(function(r){return r.json();}).then(function(d){
+    var pool=(d.items||[]).filter(function(it){return it&&it.img&&it.id&&it.id!=='hk-20';});
+    if(pool.length<=cards.length) return;
+    shuffle(pool);
+    var idx=0;
+    function nextBatch(){
+      for(var k=0;k<cards.length;k++){
+        if(idx>=pool.length){ shuffle(pool); idx=0; }
+        apply(cards[k],pool[idx++]);
+      }
+    }
+    function tick(){
+      if(reduce){ nextBatch(); return; }
+      cards.forEach(function(c){c.classList.add('is-fade');});
+      setTimeout(function(){ nextBatch(); cards.forEach(function(c){c.classList.remove('is-fade');}); },550);
+    }
+    setInterval(tick,10000);
+  }).catch(function(){});
+})();
+</script>
 
 <section class="portal">
   <p class="eyebrow">READ ｜ 磐田を好きになる</p>
