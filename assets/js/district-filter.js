@@ -19,8 +19,8 @@
     var emptyEl = scope.querySelector(".district-empty");
 
     var PIN_COUNT = 3;   // 上部に固定する新着件数
-    var STAGGER = 40;    // 出現アニメーションの時間差(ms)
-    var STAGGER_CAP = 12; // 時間差を頭打ちにするカード数（全体が間延びしないように）
+    var STAGGER = 65;    // 出現アニメーションの時間差(ms)
+    var STAGGER_CAP = 16; // 時間差を頭打ちにするカード数（全体が間延びしないように）
 
     /* --- 新着順（data-published 降順・同日は元の順序）を基準配列として保持 --- */
     var byDate = cards
@@ -69,6 +69,29 @@
     /* --- 表示順は一度だけ確定：新着 PIN_COUNT 件を上に固定し、残りを日替わりでシャッフル --- */
     var displayOrder = byDate.slice(0, PIN_COUNT).concat(shuffle(byDate.slice(PIN_COUNT)));
 
+    /* --- スクロールで見えたタイミングでも順番に出現させる（動きを分かりやすく） ---
+       動きを減らす設定 / IntersectionObserver 非対応時は io=null とし、その場で表示する。 */
+    var reduceMotion =
+      window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var io = null;
+    if (!reduceMotion && "IntersectionObserver" in window) {
+      list.classList.add("reveal"); // 出現前のカードを opacity:0 で伏せておく（CSS側）
+      io = new IntersectionObserver(
+        function (entries) {
+          var k = 0;
+          entries.forEach(function (en) {
+            if (!en.isIntersecting) return;
+            var card = en.target;
+            card.style.animationDelay = Math.min(k, STAGGER_CAP) * STAGGER + "ms";
+            card.classList.add("is-enter");
+            io.unobserve(card);
+            k++;
+          });
+        },
+        { threshold: 0.12 }
+      );
+    }
+
     /* --- 絞り込み：確定済みの並びを保ったまま該当カードを出し、順番に出現させる --- */
     function apply(theme) {
       var visible = [];
@@ -81,6 +104,7 @@
 
       // DOM順を確定済みの並びに合わせ、アニメーションを一旦リセット
       displayOrder.forEach(function (card) {
+        if (io) io.unobserve(card);
         card.classList.remove("is-enter");
         card.style.animationDelay = "";
         list.appendChild(card);
@@ -89,10 +113,17 @@
       // 一度だけリフローして、付け直したアニメーションを確実に再生させる
       void list.offsetWidth;
 
-      visible.forEach(function (card, i) {
-        card.style.animationDelay = Math.min(i, STAGGER_CAP) * STAGGER + "ms";
-        card.classList.add("is-enter");
-      });
+      if (io) {
+        // 画面内のカードはすぐ、画面外のカードはスクロールで見えた時に出現
+        visible.forEach(function (card) {
+          io.observe(card);
+        });
+      } else {
+        visible.forEach(function (card, i) {
+          card.style.animationDelay = Math.min(i, STAGGER_CAP) * STAGGER + "ms";
+          card.classList.add("is-enter");
+        });
+      }
 
       if (countEl) countEl.textContent = "表示中：" + visible.length + "件 / 全" + cards.length + "件";
       if (emptyEl) emptyEl.hidden = visible.length !== 0;
