@@ -110,23 +110,23 @@
         "land-memory"
     ],
     "pages": [
-          {
-              "title": "石川鴻斎 — 見付に晩年を置いた遠州の文人画家",
-              "url": "m038.html",
-              "district": [
-                  "mitsuke"
-              ],
-              "themes": [
-                  "person",
-                  "art",
-                  "land-memory"
-              ],
-              "content_type": "reading",
-              "published_at": "2026-06-28",
-              "date_provisional": false,
-              "status": "published",
-              "summary": "石川鴻斎を、漢詩・書・画に通じた明治期の文人画家として整理し、東京での活動、作品目録、見付に閑居した晩年を読む。"
-          },
+        {
+            "title": "石川鴻斎 — 見付に晩年を置いた遠州の文人画家",
+            "url": "m038.html",
+            "district": [
+                "mitsuke"
+            ],
+            "themes": [
+                "person",
+                "art",
+                "land-memory"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-28",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "石川鴻斎を、漢詩・書・画に通じた明治期の文人画家として整理し、東京での活動、作品目録、見付に閑居した晩年を読む。"
+        },
         {
             "title": "平井顕斎の生涯年表 — 江戸遊学から晩年まで",
             "url": "hirai-kensai-timeline.html",
@@ -182,7 +182,7 @@
             "parent": "m032.html"
         },
         {
-            "title": "平井顕斎と画友たち — 福田半香・華山・椿山・琴谷を結ぶ線",
+            "title": "福田半香と平井顕斎を比較して読む — 遠州の南画は一つではなかった",
             "url": "hirai-kensai-gayuu.html",
             "district": [
                 "fukude"
@@ -196,7 +196,7 @@
             "published_at": "2026-06-28",
             "date_provisional": false,
             "status": "published",
-            "summary": "福田半香、渡辺華山、椿山、山本琴谷らとの関係を、師弟・画友・後進の違いに注意して整理する。",
+            "summary": "福田半香と平井顕斎、遠州の二人の南画家を出自・移動・崋山との関係・門人圏から比較して読む。",
             "parent": "m032.html"
         },
         {
@@ -332,7 +332,7 @@
             "parent": "01001-mitsuke.html"
         },
         {
-            "title": "ええじゃないか — 見付のお札ふり",
+            "title": "遠州画人伝を読む — 磐田・遠州の絵と文人の世界",
             "url": "c037.html",
             "district": [
                 "mitsuke"
@@ -347,11 +347,11 @@
             "published_at": "2026-06-28",
             "date_provisional": false,
             "status": "published",
-            "summary": "平成6年度磐田市歴史セミナー資料集をもとに、幕末の見付宿で語られたお札ふりを、宿場の町並み、社寺、史料、磐田地方の状勢から読み解く。",
+            "summary": "福田半香を中心に遠州の画人と文人画をたどるシリーズの入口・総合ポータル。",
             "parent": "01001-mitsuke.html"
         },
         {
-            "title": "見付宿で「お札が降る」とは何だったのか",
+            "title": "遠州の文人画ネットワーク — 見付・掛川・浜松・田原を結ぶ道",
             "url": "c038.html",
             "district": [
                 "mitsuke"
@@ -366,7 +366,7 @@
             "published_at": "2026-06-28",
             "date_provisional": false,
             "status": "published",
-            "summary": "東海道の宿場としての見付、町内と若者、社寺の結びつきから、お札ふりが町全体の出来事として記録された理由を読む。",
+            "summary": "見付・掛川・浜松・田原・江戸を結んだ文人画の往来とパトロンのネットワークを読む広域文化史。",
             "parent": "01001-mitsuke.html"
         },
         {
@@ -3414,24 +3414,6 @@
             "parent": "01008-fukude.html"
         },
         {
-            "title": "福田半香と福田地区 of 誤伝 ─ 姓と地名が織りなした歴史の謎",
-            "url": "m031.html",
-            "district": [
-                "mitsuke"
-            ],
-            "themes": [
-                "person",
-                "life",
-                "land-memory"
-            ],
-            "content_type": "reading",
-            "published_at": "2026-06-28",
-            "date_provisional": false,
-            "status": "published",
-            "summary": "南画家・福田半香の出自をめぐり、かつて「福田村の酒造・吉野家出身」と誤伝された背景を検証し、福田地区の門人・大竹蘆逕など実際の美術交流をひもとく。",
-            "parent": "01008-fukude.html"
-        },
-        {
             "title": "平井顕斎 — 豊浜中野に生きた遠州の南画家",
             "url": "m032.html",
             "district": [
@@ -3487,7 +3469,7 @@
             "parent": "01008-fukude.html"
         },
         {
-            "title": "福田半香とは誰か — 遠州が生んだ文人画家の生涯",
+            "title": "福田半香とは誰か — 遠州見付が生んだ文人画家の生涯",
             "url": "m043.html",
             "district": [
                 "mitsuke"
@@ -3501,29 +3483,11 @@
             "published_at": "2026-06-28",
             "date_provisional": false,
             "status": "published",
-            "summary": "見付宿に生まれ、写生修行を経て江戸で独自の地歩を築いた福田半香の生涯と画業の総説。",
+            "summary": "見付宿に生まれ渡辺崋山に学んだ文人画家・福田半香の生涯。姓と地名の混同、名・字・号、半香義会、詩書画、晩年と生涯年表までを統合した本編。",
             "parent": "01001-mitsuke.html"
         },
         {
-            "title": "福田半香の生涯年表 — 遠州から江戸へ、そして晩年まで",
-            "url": "m044.html",
-            "district": [
-                "mitsuke"
-            ],
-            "themes": [
-                "person",
-                "life",
-                "land-memory"
-            ],
-            "content_type": "reading",
-            "published_at": "2026-06-28",
-            "date_provisional": false,
-            "status": "published",
-            "summary": "福田半香の誕生から京都修行、崋山への入門、晩年までの歩みを時代背景とともに整理した年表。",
-            "parent": "01001-mitsuke.html"
-        },
-        {
-            "title": "福田半香と渡辺崋山 — 師友のあいだにあったもの",
+            "title": "福田半香と渡辺崋山、そして半香義会",
             "url": "m045.html",
             "district": [
                 "mitsuke"
@@ -3537,25 +3501,7 @@
             "published_at": "2026-06-28",
             "date_provisional": false,
             "status": "published",
-            "summary": "崋山十哲の筆頭格として師を支え、没後も遺族への支援に奔走した半香と崋山の固い絆。",
-            "parent": "01001-mitsuke.html"
-        },
-        {
-            "title": "半香義会とは何か — 崋山没後に動いた人々",
-            "url": "m046.html",
-            "district": [
-                "mitsuke"
-            ],
-            "themes": [
-                "person",
-                "life",
-                "land-memory"
-            ],
-            "content_type": "reading",
-            "published_at": "2026-06-28",
-            "date_provisional": false,
-            "status": "published",
-            "summary": "非業の死を遂げた渡辺崋山の遺族を救うため、半香が中心となって資金を集めた「半香義会」の活動史。",
+            "summary": "福田半香と渡辺崋山の師友関係、蛮社の獄、崋山生前の支援だった半香義会、崋山の死と半香が背負ったものを読む。",
             "parent": "01001-mitsuke.html"
         },
         {
@@ -3573,29 +3519,11 @@
             "published_at": "2026-06-28",
             "date_provisional": false,
             "status": "published",
-            "summary": "代表作『秋景山水図』の構図や、水墨の中にそっと置かれた色彩など、余白と皴法（しゅんぽう）の美学。",
+            "summary": "文人画・南画の視点から、福田半香の山水画を代表作とともに読み解く。形似と伝神、余白、点景人物。",
             "parent": "01001-mitsuke.html"
         },
         {
-            "title": "福田半香の詩と文人のことば — 絵だけでは読めない人物像",
-            "url": "m048.html",
-            "district": [
-                "mitsuke"
-            ],
-            "themes": [
-                "person",
-                "life",
-                "land-memory"
-            ],
-            "content_type": "reading",
-            "published_at": "2026-06-28",
-            "date_provisional": false,
-            "status": "published",
-            "summary": "漢詩や書状のやり取りから浮かび上がる半香の精神性や、若き日に毎日100羽の鳥を描いた写生修行の逸話。",
-            "parent": "01001-mitsuke.html"
-        },
-        {
-            "title": "福田半香の門人と画脈 — 遠州に残った学びの道",
+            "title": "福田半香の門人と遠州画脈 — 名が残る人、残らなかった人",
             "url": "m049.html",
             "district": [
                 "mitsuke"
@@ -3609,97 +3537,7 @@
             "published_at": "2026-06-28",
             "date_provisional": false,
             "status": "published",
-            "summary": "村松小洲や小栗松靄など、遠州の地に残った半香の学びと画脈の系譜の整理。",
-            "parent": "01001-mitsuke.html"
-        },
-        {
-            "title": "小栗松靄 ─ 詩書画三絶と庄屋の気概",
-            "url": "m050.html",
-            "district": [
-                "mitsuke"
-            ],
-            "themes": [
-                "person",
-                "life",
-                "land-memory"
-            ],
-            "content_type": "reading",
-            "published_at": "2026-06-28",
-            "date_provisional": false,
-            "status": "published",
-            "summary": "恒武村の庄屋であり浜松藩勘定方として活躍しながら、高久靄崖や栗本鋤雲と交わった風流の歩みをたどる。",
-            "parent": "01001-mitsuke.html"
-        },
-        {
-            "title": "熊谷青城 ─ 西之島の草分けと小学校創立の功労者",
-            "url": "m051.html",
-            "district": [
-                "mitsuke"
-            ],
-            "themes": [
-                "person",
-                "life",
-                "land-memory"
-            ],
-            "content_type": "reading",
-            "published_at": "2026-06-28",
-            "date_provisional": false,
-            "status": "published",
-            "summary": "福田半香に学んだ南画家であり、維新後に西之島小学校（現在の井通小学校）の創立を主導した地域の指導者・熊谷青城の生涯。",
-            "parent": "01001-mitsuke.html"
-        },
-        {
-            "title": "武田桜園 ─ 掛川広楽寺の多芸な酒仙住職",
-            "url": "m052.html",
-            "district": [
-                "mitsuke"
-            ],
-            "themes": [
-                "person",
-                "life",
-                "land-memory"
-            ],
-            "content_type": "reading",
-            "published_at": "2026-06-28",
-            "date_provisional": false,
-            "status": "published",
-            "summary": "掛川の真宗広楽寺住職であり、福田半香や釈思玄に学んで書画・詩文・音楽に優れた多芸の酒仙・武田桜園の風雅な生涯。",
-            "parent": "01001-mitsuke.html"
-        },
-        {
-            "title": "藤田松湖と樋口思斎 ─ 浜松を彩った半香の門人たち",
-            "url": "m053.html",
-            "district": [
-                "mitsuke"
-            ],
-            "themes": [
-                "person",
-                "life",
-                "land-memory"
-            ],
-            "content_type": "reading",
-            "published_at": "2026-06-28",
-            "date_provisional": false,
-            "status": "published",
-            "summary": "福田半香に学び、江戸と浜松を結びながら書画サロンを支えた藤田松湖と樋口思斎の交流史。",
-            "parent": "01001-mitsuke.html"
-        },
-        {
-            "title": "遠州・駿河の半香門人たち ─ 足立雪山、木村半雨、大竹蘆逕らの足跡",
-            "url": "m054.html",
-            "district": [
-                "mitsuke"
-            ],
-            "themes": [
-                "person",
-                "life",
-                "land-memory"
-            ],
-            "content_type": "reading",
-            "published_at": "2026-06-28",
-            "date_provisional": false,
-            "status": "published",
-            "summary": "山梨の足立雪山、金谷の木村半雨、福田の大竹蘆逕、見付の鵜川竹外など、遠州・駿河各地で活躍した福田半香ゆかりの門人たちの記録。",
+            "summary": "小栗松靄・熊谷青城・武田桜園・樋口思斎・藤田松湖ら、福田半香の門人と遠州画脈を一本に統合してたどる。",
             "parent": "01001-mitsuke.html"
         }
     ]
