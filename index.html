@@ -2245,6 +2245,16 @@ nav.menu a:hover{color:var(--brown-deep);}
         seenUrls[item.url] = true;
         return true;
       });
+      // お祭りごとにまとめる：子ページ（/matsuri-<祭り>-<項目>.html）は
+      // 特集トップ（親 /matsuri-<祭り>.html）が新着内にあれば一覧から隠し、親1件に集約する
+      var festivalChild = /^(\/matsuri-[^-]+)-.+\.html$/;
+      var presentUrls = {};
+      data.forEach(function(item){ if (item && item.url) presentUrls[item.url] = true; });
+      data = data.filter(function(item){
+        var m = festivalChild.exec(item.url);
+        if (m && presentUrls[m[1] + '.html']) return false;
+        return true;
+      });
       var list = document.getElementById('new-article-list');
       if (!list) return;
       list.innerHTML = '';
