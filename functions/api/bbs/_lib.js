@@ -98,7 +98,7 @@ export async function sendNotifyMail(env, post) {
     "投稿日時：" + (post.created_at || "") + "\n" +
     "関連URL：" + (post.related_url || "（なし）") + "\n\n" +
     "投稿内容：\n" + (post.body || "") + "\n\n" +
-    "管理画面：\nhttps://iwata-monogatari.pages.dev/admin-bbs.html\n";
+    "管理画面：\nhttps://iwata-monogatari.net/admin-bbs.html\n";
 
   try {
     const res = await fetch("https://api.resend.com/emails", {
