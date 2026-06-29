@@ -1896,6 +1896,17 @@ nav.menu a:hover{color:var(--brown-deep);}
           <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">代表 大石浩之のnote</a></li>
         </ul>
       </section>
+      <!-- 独自ドメイン移行のお知らせ（障害記録リンクの上） -->
+      <p class="incident-link-block">
+        <a href="/domain-20260630.html">
+          <span class="incident-link-icon" aria-hidden="true">新</span>
+          <span class="incident-link-text">
+            <span class="incident-link-label">新着・お知らせ</span>
+            <span class="incident-link-title">独自ドメイン iwata-monogatari.net へ移行しました（2026年6月30日）</span>
+          </span>
+          <span class="incident-link-arrow" aria-hidden="true">→</span>
+        </a>
+      </p>
       <!-- 障害記録ページへのリンク（運営者案内カードの枠外・下） -->
       <p class="incident-link-block">
         <a href="/incident-20260627.html">
@@ -2095,6 +2106,7 @@ nav.menu a:hover{color:var(--brown-deep);}
 <script>
 (function(){
   var ARTICLES = [
+    {t:"独自ドメイン移行のご報告（2026年6月30日）",u:"/domain-20260630.html",c:"お知らせ",k:"独自ドメイン iwata-monogatari.net 移行 pages.dev お知らせ 友引 ドメイン 2026年6月30日"},
     {t:"磐田農業高等学校の歴史",u:"/iwata-nogyo-high-school-history.html",c:"教育・学校史",k:"磐田農業高等学校 磐農 中遠簡易農学校 明治29年 農業教育 記念館 登録有形文化財 一言農場 大日山演習林 食品科学 環境科学 中泉 高品性重労働 クラウンメロン 高校"},
     {t:"磐田北高等学校の歴史",u:"/iwata-kita-high-school-history.html",c:"教育・学校史",k:"磐田北高等学校 磐北 実践高等女学校 明治42年 女子教育 保育科 衛生看護科 福祉科 共生共育 介護福祉士 見付 男女共学 さみどり祭 高校"},
     {t:"磐田南高等学校の歴史",u:"/iwata-minami-high-school-history.html",c:"教育・学校史",k:"磐田南高等学校 磐南 見付中学校 大正11年 旧制中学 旧見付学校 遠江国分寺跡 おだわらやま 水泳 ベルリンオリンピック SSH はぐま祭 進学校 見付 高校"},
@@ -2283,7 +2295,7 @@ nav.menu a:hover{color:var(--brown-deep);}
     return cls.replace(/^area-/, '');
   }
 
-  fetch('/data/new-articles.json?v=20260630-count289')
+  fetch('/data/new-articles.json?v=20260630b-domain')
     .then(function(res){ return res.json(); })
     .then(function(data){
       data.sort(function(a, b){
