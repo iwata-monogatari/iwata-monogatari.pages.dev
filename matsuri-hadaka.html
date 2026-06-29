@@ -66,6 +66,14 @@ h1,h2,h3{font-family:"Shippori Mincho",serif;color:var(--ink);letter-spacing:.02
   nav.menu a{flex:0 0 auto;padding:6px 12px;}
 }
 </style>
+<style>
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:1080px;margin:0 auto}
+.two .box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 20px;box-shadow:var(--shadow);max-width:none}
+.two .box h2{font-family:"Shippori Mincho",serif;font-size:22px;line-height:1.5;margin:0 0 14px;color:var(--ink);letter-spacing:.02em;display:block}
+.two .box ul{margin:0;padding-left:1.2em;list-style:disc}
+.two .box li{font-size:15px;color:var(--ink-soft);line-height:1.9;margin:0}
+@media(max-width:760px){.two{grid-template-columns:1fr}}
+</style>
 </head>
 <body><style>
 .dchip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;color:#fff;background:var(--dc);border-radius:999px;padding:3px 12px;letter-spacing:.04em;}
@@ -213,17 +221,8 @@ h1,h2,h3{font-family:"Shippori Mincho",serif;color:var(--ink);letter-spacing:.02
     </div>
   </section>
 
-  <section class="fsec">
-    <h2><span class="fsec__mark">史</span>確かなこと（史実）</h2>
-    <ul class="flist"><li>矢奈比賣神社から遠江国の総社・淡海国玉神社へ、神輿による神霊渡御が行われる。</li><li>国の重要無形民俗文化財に指定されている。</li><li>大祭に先立ち、御斯葉おろし（地区の潔斎）・浜垢離（心身の潔斎）・御池の清祓（社殿境内と氏子の潔斎）という一連の神事が営まれる。</li><li>渡御は深夜に行われ、出御の煙火から着御まで沿道は消灯する慣わしがある。</li></ul>
-  </section>
+  <section class="section"><div class="two"><div class="box"><h2>確かなこと</h2><ul><li>矢奈比賣神社から遠江国の総社・淡海国玉神社へ、神輿による神霊渡御が行われる。</li><li>国の重要無形民俗文化財に指定されている。</li><li>大祭に先立ち、御斯葉おろし（地区の潔斎）・浜垢離（心身の潔斎）・御池の清祓（社殿境内と氏子の潔斎）という一連の神事が営まれる。</li><li>渡御は深夜に行われ、出御の煙火から着御まで沿道は消灯する慣わしがある。</li></ul></div><div class="box"><h2>伝承として扱うこと</h2><ul><li>境内の参道には、人身御供と悉平太郎（しっぺいたろう）の怪物退治伝説が伝わる。</li><li>これは地域に伝わる言い伝えであり、史実として確認されたものではない。</li></ul></div></div></section>
   
-    <section class="fsec">
-      <h2><span class="fsec__mark legend">伝</span>伝承として語られること</h2>
-      <ul class="flist legend"><li>境内の参道には、人身御供と悉平太郎（しっぺいたろう）の怪物退治伝説が伝わる。</li></ul>
-      <p class="fsec__cap">以下は地域に伝わる言い伝えであり、史実として確認されたものではない。</p>
-    </section>
-
   <div class="fnote">
     <div class="fnote__box">
       <h3>編集メモ</h3>
