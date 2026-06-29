@@ -1,4 +1,4 @@
-{
+﻿{
     "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
     "schema_version": 1,
     "updated_at": "2026-06-28",
@@ -733,7 +733,7 @@
         },
         {
             "title": "見付天神裸祭【特集】",
-            "url": "m011.html",
+            "url": "matsuri-hadaka.html",
             "district": [
                 "mitsuke"
             ],
@@ -762,7 +762,7 @@
             "date_provisional": false,
             "status": "published",
             "summary": "見付天神裸祭の核心である鬼踊りと飛蘇鞠を、動と静の二つの極として読み解く。",
-            "parent": "m011.html"
+            "parent": "matsuri-hadaka.html"
         },
         {
             "title": "旧見付学校と、学びのまち磐田",
