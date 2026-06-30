@@ -2061,7 +2061,7 @@ nav.menu a:hover{color:var(--brown-deep);}
     return cls.replace(/^area-/, '');
   }
 
-  fetch('/data/new-articles.json?v=20260630b-domain')
+  fetch('/data/new-articles.json?t=' + new Date().getTime())
     .then(function(res){ return res.json(); })
     .then(function(data){
       data.sort(function(a, b){

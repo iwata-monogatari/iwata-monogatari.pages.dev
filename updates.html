@@ -201,7 +201,7 @@ h1{font-family:"Shippori Mincho",serif;font-size:clamp(28px,5vw,42px);line-heigh
     if(/^\/y/.test(url)) return 'area-toyooka';
     return '';
   }
-  fetch('/data/new-articles.json').then(function(res){return res.json();}).then(function(data){
+  fetch('/data/new-articles.json?t=' + new Date().getTime()).then(function(res){return res.json();}).then(function(data){
     data.sort(function(a,b){return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0);});
     var list=document.getElementById('all-history-list');
     list.innerHTML='';
