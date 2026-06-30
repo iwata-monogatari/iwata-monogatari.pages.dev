@@ -2041,6 +2041,30 @@ nav.menu a:hover{color:var(--brown-deep);}
     var url = item.url || '';
     var category = item.category || '';
     if (category === '磐田共通・資料' || category === '特別コンテンツ') return '';
+    var specialUrls = {
+      "/iwata-nogyo-high-school-history.html": "area-nakaizumi",
+      "/iwata-nishi-high-school-history.html": "area-nakaizumi",
+      "/iwata-kita-high-school-history.html": "area-mitsuke",
+      "/iwata-minami-high-school-history.html": "area-mitsuke",
+      "/iwata-higashi-high-school-history.html": "area-mitsuke"
+    };
+    if (specialUrls[url]) return specialUrls[url];
+    var categoryAreas = [
+      ["見付", "area-mitsuke"],
+      ["中泉", "area-nakaizumi"],
+      ["御厨", "area-mikuriya"],
+      ["豊田", "area-toyoda"],
+      ["南部", "area-nanbu"],
+      ["向陽", "area-koyo"],
+      ["竜洋", "area-ryuyo"],
+      ["福田", "area-fukude"],
+      ["豊岡", "area-toyooka"]
+    ];
+    for (var i = 0; i < categoryAreas.length; i++) {
+      if (category.indexOf(categoryAreas[i][0]) === 0) {
+        return categoryAreas[i][1];
+      }
+    }
     if (url === '/inotani/' || /^\/inotani\//.test(url)) return 'area-mitsuke';
     if (url === '/c028.html') return 'area-mitsuke';
     if (url === '/u004.html') return 'area-mikuriya';
@@ -2050,7 +2074,7 @@ nav.menu a:hover{color:var(--brown-deep);}
     if (/^\/t/.test(url)) return 'area-toyoda';
     if (/^\/s/.test(url)) return 'area-nanbu';
     if (/^\/k/.test(url)) return 'area-koyo';
-    if (/^\/r/.test(url)) return 'area-ryuyo';
+    if (/^\/r/.test(url) || /^\/area\/ryuyo/.test(url)) return 'area-ryuyo';
     if (/^\/f/.test(url)) return 'area-fukude';
     if (/^\/y/.test(url)) return 'area-toyooka';
     return '';
