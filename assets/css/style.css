@@ -1,0 +1,326 @@
+:root {
+  --kinari: #fffdf7;
+  --cha: #2f7fa3;
+  --matsu: #356f88;
+  --sumi: #22303a;
+  --usuzumi: #5b6b74;
+  --waku: #d8e8ef;
+  --paper: #fffdf7;
+  --gold: #b8924b;
+  --gold-bg: #fffcf4;
+  --gold-border: #ead9ad;
+  
+  /* Ryuyo district color (used in index.html and updates.html) */
+  --district-color: #1e5e9f;
+  --district-soft: #f4f8fc;
+  --district-line: #d8e6f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Zen Kaku Gothic New", system-ui, sans-serif;
+  color: var(--sumi);
+  background: var(--kinari);
+  line-height: 1.95;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--cha);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.article-layout {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 22px 64px;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: var(--usuzumi);
+  padding: 22px 0 8px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.breadcrumb a {
+  color: var(--usuzumi);
+}
+
+.academic-article {
+  margin-top: 10px;
+}
+
+.article-header {
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--waku);
+  padding-bottom: 24px;
+}
+
+.kicker {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--district-color);
+  border-left: 3px solid var(--district-color);
+  padding-left: 9px;
+  margin: 10px 0;
+  letter-spacing: .04em;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-size: clamp(28px, 5vw, 38px);
+  line-height: 1.45;
+  color: var(--sumi);
+  margin: 8px 0 16px;
+  letter-spacing: .02em;
+}
+
+.lead {
+  font-size: 17px;
+  line-height: 1.95;
+  color: #34424a;
+  margin-top: 16px;
+}
+
+.academic-article h2 {
+  font-family: "Shippori Mincho", serif;
+  font-size: clamp(20px, 3.5vw, 24px);
+  line-height: 1.5;
+  margin: 44px 0 18px;
+  border-bottom: 2px solid var(--waku);
+  padding-bottom: 8px;
+  color: var(--sumi);
+}
+
+.academic-article h3 {
+  font-family: "Shippori Mincho", serif;
+  font-size: 19px;
+  margin: 32px 0 12px;
+  color: var(--matsu);
+}
+
+.academic-article p {
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 1.95;
+  text-align: justify;
+}
+
+/* Tables styling */
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  margin: 24px 0;
+  border: 1px solid var(--waku);
+  border-radius: 8px;
+}
+
+table.academic-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+  font-size: 14.5px;
+  background: #fffdf8;
+}
+
+table.academic-table th,
+table.academic-table td {
+  border: 1px solid var(--waku);
+  padding: 12px 14px;
+  vertical-align: top;
+  text-align: left;
+}
+
+table.academic-table th {
+  background: var(--district-soft);
+  color: var(--district-color);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+table.academic-table td {
+  color: var(--sumi);
+}
+
+/* Note box */
+.note-box {
+  background: #fffdf4;
+  border: 1px solid var(--gold-border);
+  border-left: 4px solid var(--gold);
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin: 36px 0;
+}
+
+.note-box h2 {
+  font-family: "Shippori Mincho", serif;
+  font-size: 17px;
+  margin: 0 0 10px;
+  border-bottom: none;
+  padding-bottom: 0;
+  color: var(--gold);
+}
+
+.note-box p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #5c4a2a;
+}
+
+/* Related links (cards) */
+.related-links {
+  background: var(--district-soft);
+  border: 1px solid var(--district-line);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 40px 0;
+}
+
+.related-links h2 {
+  font-family: "Shippori Mincho", serif;
+  font-size: 18px;
+  margin: 0 0 16px;
+  border-bottom: none;
+  padding-bottom: 0;
+  color: var(--district-color);
+}
+
+.related-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.related-card {
+  background: #fff;
+  border: 1px solid var(--district-line);
+  border-radius: 6px;
+  padding: 16px 18px;
+  transition: transform 0.2s, border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.related-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--cha);
+}
+
+.related-card .card-cat {
+  font-size: 11px;
+  color: var(--district-color);
+  font-weight: 700;
+  letter-spacing: .08em;
+  margin-bottom: 6px;
+}
+
+.related-card h3 {
+  font-family: "Shippori Mincho", serif;
+  font-size: 15px;
+  line-height: 1.45;
+  margin: 0 0 8px;
+  color: var(--sumi);
+}
+
+.related-card p {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--usuzumi);
+  margin: 0;
+}
+
+/* Reference box */
+.reference-box {
+  background: var(--paper);
+  border: 1px solid var(--waku);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 44px 0 0;
+}
+
+.reference-box h2 {
+  font-family: "Shippori Mincho", serif;
+  font-size: 18px;
+  margin: 0 0 12px;
+  border-bottom: none;
+  padding-bottom: 0;
+  color: var(--sumi);
+}
+
+.reference-box ul {
+  padding-left: 20px;
+  margin-bottom: 14px;
+}
+
+.reference-box li {
+  font-size: 14.5px;
+  color: var(--usuzumi);
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+.reference-box .note {
+  font-size: 12.5px;
+  color: var(--usuzumi);
+  margin: 0;
+  line-height: 1.6;
+  border-left: 2px solid var(--waku);
+  padding-left: 10px;
+}
+
+/* Back to top links */
+.back-to-top {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 32px;
+}
+
+.back-to-top a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--matsu);
+  padding: 8px 16px;
+  border: 1px solid var(--waku);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.back-to-top a:hover {
+  background: var(--district-soft);
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  body {
+    font-size: 15.5px;
+  }
+  .article-layout {
+    padding: 0 16px 48px;
+  }
+  .related-links {
+    padding: 18px;
+  }
+  .related-links-grid {
+    grid-template-columns: 1fr;
+  }
+  .reference-box {
+    padding: 18px;
+  }
+}
