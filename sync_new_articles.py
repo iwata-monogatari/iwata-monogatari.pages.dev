@@ -79,7 +79,7 @@ def discover_articles():
 
 def should_skip_html(path):
     rel = path.relative_to(ROOT)
-    if rel.name in SKIP_FILES:
+    if len(rel.parts) == 1 and rel.name in SKIP_FILES:
         return True
     if any(part in SKIP_DIRS for part in rel.parts[:-1]):
         return True
