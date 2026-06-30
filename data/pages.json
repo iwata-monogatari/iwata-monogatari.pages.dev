@@ -1,7 +1,7 @@
 ﻿{
     "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
     "schema_version": 1,
-    "updated_at": "2026-06-28",
+    "updated_at": "2026-06-30",
     "districts": [
         {
             "district_id": "mitsuke",
@@ -110,6 +110,141 @@
         "land-memory"
     ],
     "pages": [
+        {
+            "title": "竜洋地区年表 — 天竜川・掛塚・袖浦・十束の歩み",
+            "url": "r023.html",
+            "district": [
+                "ryuyo"
+            ],
+            "themes": [
+                "shiryo",
+                "land-memory"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-30",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "主要事項を網羅した年表と、本稿で参照した各種歴史資料の一覧。",
+            "parent": "r016.html"
+        },
+        {
+            "title": "天竜川の変遷と竜洋 — 川の流れが土地をつくり、暮らしを変えた",
+            "url": "r022.html",
+            "district": [
+                "ryuyo"
+            ],
+            "themes": [
+                "land-memory",
+                "life"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-30",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "流れを変え続けた天竜川の歴史と、砂と水に対峙し続けた人々の物語。",
+            "parent": "r016.html"
+        },
+        {
+            "title": "町や村を背負った人達 — 竜洋の地域運営を支えた人びと",
+            "url": "r021.html",
+            "district": [
+                "ryuyo"
+            ],
+            "themes": [
+                "person",
+                "life"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-30",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "代官や庄屋、近代の自治体リーダーなど、合議と共同体を支えた先人たちの軌跡。",
+            "parent": "r016.html"
+        },
+        {
+            "title": "室町時代以降の竜洋 — 戦乱・支配・村のまとまり",
+            "url": "r020.html",
+            "district": [
+                "ryuyo"
+            ],
+            "themes": [
+                "land-memory",
+                "village-history"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-30",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "戦乱期の変遷、荘園「池田荘」との関わり、天領（江戸幕府直轄地）時代の統治をたどります。",
+            "parent": "r016.html"
+        },
+        {
+            "title": "掛塚・袖浦・十束 — 竜洋を形づくった村と集落の歩み",
+            "url": "r019.html",
+            "district": [
+                "ryuyo"
+            ],
+            "themes": [
+                "village-history",
+                "life"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-30",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "合併前の3町村の特徴と集落名の由来、現在の大字との対照を整理します。",
+            "parent": "r016.html"
+        },
+        {
+            "title": "太古の竜洋と大の浦 ── 海と砂地がつくった土地の記憶",
+            "url": "r018.html",
+            "district": [
+                "ryuyo"
+            ],
+            "themes": [
+                "land-memory"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-30",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "かつての巨大な汽水湖「大の浦」と海底の隆起、砂丘形成の歴史に迫ります。",
+            "parent": "r016.html"
+        },
+        {
+            "title": "竜洋町の沿革 — 川と海に向き合ってきた町の成り立ち",
+            "url": "r017.html",
+            "district": [
+                "ryuyo"
+            ],
+            "themes": [
+                "village-history",
+                "land-memory"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-30",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "昭和30年の合併から現代にいたる竜洋の形成史と、地形的特徴を解説します。",
+            "parent": "r016.html"
+        },
+        {
+            "title": "竜洋地区の歴史を歩く ── 天竜川・掛塚・袖浦・十束の記憶（特集・全8ページ公開）",
+            "url": "r016.html",
+            "district": [
+                "ryuyo"
+            ],
+            "themes": [
+                "land-memory",
+                "village-history",
+                "life"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-06-30",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "天竜川河口の歴史地理から、大の浦の変遷、掛塚・袖浦・十束の集落史、江戸期の天領支配と代官、天竜川の治水史までを系統的にまとめた総合学術特集。"
+        },
         {
             "title": "石川鴻斎 — 見付に晩年を置いた遠州の文人画家",
             "url": "m038.html",

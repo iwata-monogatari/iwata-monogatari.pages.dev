@@ -81,6 +81,10 @@ def should_skip_html(path):
     rel = path.relative_to(ROOT)
     if len(rel.parts) == 1 and rel.name in SKIP_FILES:
         return True
+    if len(rel.parts) == 2 and rel.name == "index.html":
+        parent_html = ROOT / (rel.parts[0] + ".html")
+        if parent_html.exists():
+            return True
     if any(part in SKIP_DIRS for part in rel.parts[:-1]):
         return True
     return False
