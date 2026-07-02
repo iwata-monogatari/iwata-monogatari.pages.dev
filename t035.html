@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>熊野絵巻の成立をめぐる論争 ── 室町か、江戸か ｜ 磐田物語</title>
+<meta name="description" content="県指定文化財として室町時代に位置づけられる熊野絵巻だが、絵の様式や紙質からは江戸期に描かれたとする見方もある。t027の指定情報を否定せず、年代論争と熊野御前の実在性をめぐる史料批判を補う学術史編。">
+<link rel="canonical" href="https://iwata-monogatari.net/t035.html">
+<meta property="og:title" content="熊野絵巻の成立をめぐる論争 ── 室町か、江戸か ｜ 磐田物語">
+<meta property="og:description" content="熊野絵巻の制作年代をめぐる室町期説・江戸期説と、熊野御前の実在性をめぐる史料批判を紹介する。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
+    --brown:#2f7fa3;--brown-deep:#1f4f6f;--accent-blue:#356f88;--line:#d8e8ef;
+    --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    line-height:1.95;font-size:17px;letter-spacing:.02em;
+    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+  a{color:var(--brown-deep);text-underline-offset:3px;}
+  .crumbs{max-width:760px;margin:0 auto;padding:24px 24px 0;font-size:13px;color:var(--ink-soft);}
+  .crumbs a{text-decoration:none;}
+  .crumbs a:hover{text-decoration:underline;}
+  .article-head{max-width:760px;margin:0 auto;padding:28px 24px 12px;}
+  .article-head .cat{font-size:13px;letter-spacing:.18em;color:var(--accent-blue);font-weight:700;margin:0 0 16px;}
+  .article-head .cat .no{color:var(--brown);}
+  .article-head h1{font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(27px,5vw,42px);line-height:1.45;margin:0 0 20px;color:var(--ink);letter-spacing:.03em;}
+  .article-head .sub{font-size:16.5px;color:var(--ink-soft);margin:0;line-height:1.95;}
+  .article{max-width:760px;margin:0 auto;padding:24px 24px 56px;}
+  .article h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:23px;
+    color:var(--ink);letter-spacing:.03em;margin:52px 0 18px;
+    padding-left:16px;border-left:4px solid var(--brown);line-height:1.5;}
+  .article h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:18px;color:var(--brown-deep);margin:30px 0 12px;letter-spacing:.03em;}
+  .article p{margin:0 0 20px;color:var(--ink);}
+  .article p.lead{font-size:18px;line-height:2.05;}
+  .summary{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--brown);
+    border-radius:4px;padding:22px 28px;margin:30px 0;box-shadow:var(--shadow);}
+  .summary .sh{font-family:"Shippori Mincho",serif;font-size:17px;margin:0 0 13px;color:var(--brown-deep);letter-spacing:.04em;font-weight:700;}
+  .summary ul{margin:0;padding:0;list-style:none;}
+  .summary li{position:relative;padding-left:22px;margin-bottom:9px;font-size:15px;line-height:1.8;}
+  .summary li::before{content:"";position:absolute;left:2px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--brown);}
+  .summary li:last-child{margin-bottom:0;}
+  .tablewrap{margin:26px 0;overflow-x:auto;}
+  table.kx{border-collapse:collapse;width:100%;font-size:14.5px;background:var(--card);
+    border:1px solid var(--line);box-shadow:var(--shadow);min-width:560px;}
+  table.kx caption{caption-side:top;text-align:left;font-size:13px;color:var(--ink-soft);margin-bottom:9px;font-weight:700;letter-spacing:.03em;}
+  table.kx th,table.kx td{border:1px solid var(--line);padding:9px 13px;text-align:left;line-height:1.65;vertical-align:top;}
+  table.kx thead th{background:var(--paper-deep);color:var(--brown-deep);font-weight:700;white-space:nowrap;}
+  .note{background:#f4fafc;border:1px solid var(--line);border-left:3px solid var(--brown);border-radius:0 4px 4px 0;padding:16px 20px;font-size:14.5px;color:#3a4750;margin:24px 0;}
+  .memo{background:var(--paper-deep);border-radius:3px;padding:26px 30px;margin:34px 0;}
+  .memo h3{font-family:"Shippori Mincho",serif;font-size:17px;color:var(--ink);margin:0 0 14px;letter-spacing:.04em;}
+  .memo dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;}
+  .memo dt{font-weight:700;color:var(--brown-deep);font-size:14.5px;white-space:nowrap;}
+  .memo dd{margin:0;font-size:14.5px;color:var(--ink);}
+  .sources{max-width:760px;margin:0 auto;padding:0 24px 8px;}
+  .sources h3{font-size:14px;color:var(--ink-soft);font-weight:700;letter-spacing:.06em;margin:0 0 10px;}
+  .sources ul{margin:0;padding-left:1.2em;}
+  .sources li{font-size:13px;color:var(--ink-soft);line-height:1.8;margin-bottom:4px;}
+  .article-nav{max-width:760px;margin:8px auto 56px;padding:0 24px;display:flex;flex-wrap:wrap;gap:14px;}
+  .article-nav a{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
+    padding:13px 26px;border-radius:2px;transition:.2s;letter-spacing:.04em;}
+  .article-nav a.primary{background:var(--brown);color:#fff;}
+  .article-nav a.primary:hover{background:var(--brown-deep);}
+  .article-nav a.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
+  .article-nav a.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
+  @media(max-width:760px){table.kx{font-size:13.5px;}table.kx th,table.kx td{padding:8px 10px;}}
+</style>
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+</head>
+<body class="area-toyoda">
+
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<div class="crumbs"><a href="/">磐田物語</a> ／ <a href="/01004-toyoda.html">豊田地区</a> ／ 熊野絵巻の成立をめぐる論争</div>
+
+<div class="article-head">
+  <p class="cat"><span class="no">豊田地区の記憶 第三十五回</span> ｜ 学術史・文化財</p>
+  <h1>熊野絵巻の成立をめぐる論争 ── 室町か、江戸か</h1>
+  <p class="sub">t027（熊野絵巻・県指定文化財ページ）は、県指定文化財としての公式情報を「室町時代」と整理している。本記事はその指定を否定するものではない。絵巻の制作年代や熊野御前の実在性をめぐって、資料の中でどのような学術的議論があるのかを補うのが、本記事の位置づけである。</p>
+</div>
+
+<article class="article">
+
+  <p class="lead">磐田市の指定文化財情報では、熊野絵巻は「県指定・絵画」「年代：室町時代」として整理されている（t027参照）。これは指定にあたって公式に採用された年代であり、本記事もこの指定情報を覆すものではない。一方で、地元の郷土研究者が編纂した『熊野ものがたり』は、絵巻の制作年代について、室町期にさかのぼるという説と、絵の様式や紙質から江戸期に描かれたと考える見方の両方を紹介し、「いずれの説にも確定的な根拠はない」という留保つきの記述をしている。t033もこの留保をそのまま引いている。本記事では、この年代論争の背景と、熊野御前という人物そのものの実在性をめぐる史料批判の視点を紹介する。</p>
+
+  <div class="summary">
+    <div class="sh">本稿の要点</div>
+    <ul>
+      <li>t027の指定情報「室町時代」は、文化財指定における公式な整理であり、本記事はこれを否定しない。</li>
+      <li>提供資料は、絵巻の制作年代について室町期説・江戸期説の両方を紹介し、確定的な根拠はないとしている。</li>
+      <li>熊野御前という人物が実在したかどうかについても、史料批判の観点から慎重に扱う必要がある。</li>
+    </ul>
+  </div>
+
+  <h2>熊野絵巻とは何か（t027との関係）</h2>
+
+  <p>熊野絵巻は、行興寺に伝わる巻子本（かんすぼん）で、令和2年（2020年）12月8日に静岡県指定文化財（絵画）に指定された（t027参照）。文化財としての指定にあたっては、指定区分・種別・年代・所在地が公式情報として整理される必要があり、その年代は「室町時代」とされている。この指定情報は、行政上の手続きを経て確定した事実情報であり、本記事はこれを事実として尊重する。</p>
+
+  <p>一方で、指定文化財としての整理と、絵巻そのものの制作年代をめぐる学術的な議論とは、必ずしも同じ次元の話ではない。指定は、ある時点での調査・評価に基づいて行われるものであり、その後も研究や新資料の発見によって議論が続くことは、文化財の世界では珍しくない。本記事は、t027が整理する指定情報を前提としつつ、なぜ絵巻の年代をめぐって議論が存在するのか、その学術的背景を補うものである。</p>
+
+  <h2>制作年代をめぐる二つの説（室町期説と江戸期説）</h2>
+
+  <p>『熊野ものがたり』は、熊野絵巻の制作年代について、次のような留保つきの記述をしている。制作年代については室町期にさかのぼるという説がある一方、絵の様式や紙質からは江戸期に描かれたと考える見方も示されており、いずれの説にも確定的な根拠はない、というものである。</p>
+
+  <div class="tablewrap">
+    <table class="kx">
+      <caption>熊野絵巻の年代をめぐる二つの見方（提供資料による）</caption>
+      <thead><tr><th>説</th><th>根拠とされる視点</th><th>留意点</th></tr></thead>
+      <tbody>
+        <tr><td>室町期説</td><td>物語の内容・様式が中世的な性格を持つとする見方。文化財指定における「室町時代」という区分もこの系統に立つ</td><td>指定文化財としての公式な位置づけと一致する</td></tr>
+        <tr><td>江戸期説</td><td>絵の様式・紙質など、物理的な特徴から、より新しい時代の制作と考える見方</td><td>絵巻の詞書の内容が古い物語を伝えていても、現存する巻子本自体は後世の写しである可能性を示唆する</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>この二つの説が両立する背景には、絵巻という文化財の特性がある。物語の内容そのものが古い時代に成立していたとしても、現存する巻子本が、後の時代に書き写された「写本」である可能性は常に考慮する必要がある。物語の古さと、現存する物の古さは、必ずしも一致しない。この点を踏まえると、室町期説と江戸期説は、必ずしも矛盾するものではなく、「物語の成立」と「現存する巻子本の制作」という異なる次元を指している可能性もある。ただし、この整理自体も本ページの推測であり、提供資料が明示的にそう述べているわけではないことを断っておく。</p>
+
+  <h2>世阿弥・土佐光起との関わり</h2>
+
+  <p>t033は、熊野絵巻について「世阿弥自筆と伝わる能楽書『熊野道場』に由来する名だともいわれ」と紹介している。世阿弥（ぜあみ）は、謡曲「熊野」の作者と伝えられる室町期の能楽師であり、絵巻の名がこの由来を持つとされることは、室町期説を補強する伝承の一つといえる。ただし、これも「〜ともいわれ」という伝聞の域を出ない。</p>
+
+  <p>提供資料は、絵巻の成立をめぐって土佐光起（とさ みつおき）ら絵師との関わりにも触れているとされるが、具体的にどのような関わりが指摘されているのか、本ページで参照できる資料の範囲では詳細を確認できていない。土佐光起は江戸期に活躍した土佐派の絵師であり、もしこの関わりが実際に指摘されているとすれば、それは江戸期説を補強する材料の一つになりうるが、断定は避ける。</p>
+
+  <h2>サントリー美術館での展示と補修の記録</h2>
+
+  <p>提供資料には、熊野絵巻がサントリー美術館で展示された記録や、補修の経緯についての記述があるとされる。こうした展示・補修の記録は、文化財としての熊野絵巻が、地域の枠を超えて評価され、保存の対象として扱われてきたことを示す資料になりうる。しかし、展示の時期や補修の具体的な内容については、本ページで参照できる資料の範囲では確認できておらず、今後の追加調査が必要である。</p>
+
+  <h2>熊野は実在したのか ── 史料批判の視点</h2>
+
+  <p>『熊野ものがたり』は「熊野物語覚書」と題する章で、熊野という人物が実在したかどうかを、史料批判の観点から検討しているとされる。具体的には、『源平盛衰記』と『平家物語』のどちらが原典に近いかという文献学的な問題や、行興寺境内に伝わる熊野の墓とされる宝篋印塔の年代と、伝承上の熊野の生没年との整合性が論点になっていると考えられる。</p>
+
+  <p>t033も「彼女の本名がはっきりしないというのが実情である」「熊野という単純な音読みでよいのか、くまの、ゆまののように読むべきかを含め、決着していない」と記しており、熊野という人物像そのものに、確定していない部分が多いことを示している。史料批判の細かな論点（源平盛衰記と平家物語の先後関係、宝篋印塔の年代測定の具体的な結果など）については、本ページで参照できる資料の範囲では十分に確認できておらず、断定を避ける。</p>
+
+  <h2>伝承と史実を分けて読むということ</h2>
+
+  <p>熊野絵巻の年代論争と、熊野御前の実在性をめぐる議論に共通するのは、「確定できないことを、確定できないまま扱う」という姿勢の大切さである。t027が指定情報を事実として整理する一方で、本記事のような学術的議論を補うページを別に設けるのは、指定情報と学術的議論という異なる性格の情報を混同しないためである。</p>
+
+  <p>文化財の指定年代を「事実」として尊重しつつ、その背後にある学術的な議論の存在を「もう一つの事実」として併記すること。これが、伝承と史実を分けて読むという、磐田物語がこれまでの記事（t033・t027）でも大切にしてきた姿勢である。</p>
+
+  <div class="memo">
+    <h3>本稿で扱った主な用語</h3>
+    <dl>
+      <dt>巻子本（かんすぼん）</dt><dd>横に長く巻いて保管する形式の書物。熊野絵巻もこの形式で伝わる。</dd>
+      <dt>世阿弥</dt><dd>室町期の能楽師。謡曲「熊野」の作者と伝えられ、熊野絵巻の名の由来とも関わるとされる。</dd>
+      <dt>土佐光起</dt><dd>江戸期に活躍した土佐派の絵師。熊野絵巻との関わりが指摘されるとされるが、詳細は資料上確認できていない。</dd>
+      <dt>史料批判</dt><dd>史料の成立過程・信憑性を検討し、史実と伝承・後世の付加を区別しようとする歴史学の方法。</dd>
+    </dl>
+  </div>
+
+  <h2>むすび</h2>
+
+  <p>熊野絵巻をめぐる年代論争と、熊野御前の実在性をめぐる史料批判は、いずれも「分からないことを、分からないまま大切に扱う」という姿勢を要求する。t027が示す「室町時代」という指定情報は、文化財としての公式な位置づけとして尊重しつつ、本記事で紹介したような学術的な議論の余地があることも、あわせて知っておきたい。熊野絵巻の詞書そのものが語る物語については「<a href="/t034.html">熊野絵巻を読む</a>」を、行興寺の草創縁起については「<a href="/t036.html">熊野道場由来記と熊野寺旧跡之畧縁起</a>」をあわせて読んでいただきたい。</p>
+
+  <section class="local-property-note" aria-labelledby="local-property-note-title">
+    <h2 id="local-property-note-title">この地域の家・土地・空き家について</h2>
+    <p>
+      古い文化財の年代や由来を調べていると、
+      家や土地にも、登記簿だけでは分からない来歴があることに気づかされます。
+    </p>
+    <p>
+      相続した家、空き家、使わなくなった土地について、
+      「売る・貸す・残す」の前に、一度整理して考えたい方は、
+      富士ヶ丘サービス株式会社までご相談ください。
+    </p>
+    <p class="local-property-note__link-wrap">
+      <a class="local-property-note__link" href="https://www.fujigaoka-service.info/fudosan" target="_blank" rel="noopener">
+        家・土地・空き家の整理について相談する
+      </a>
+    </p>
+  </section>
+
+</article>
+
+<div class="sources">
+  <h3>主な参考資料</h3>
+  <ul>
+    <li>『熊野ものがたり』豊田郷土を研究する会編、平成21年（2009年）3月31日発行（「熊野絵巻について」pp.24-25、「熊野物語覚書」pp.52-53）。</li>
+    <li>磐田市公式ウェブサイト「県指定文化財」該当ページ。</li>
+    <li>磐田物語「熊野絵巻」（t027）、「熊野御前ものがたり」（t033）。</li>
+  </ul>
+</div>
+
+<div class="article-nav">
+  <a class="primary" href="/01004-toyoda.html">豊田地区トップへ戻る</a>
+  <a class="ghost" href="/t027.html">熊野絵巻</a>
+  <a class="ghost" href="/t034.html">熊野絵巻を読む</a>
+  <a class="ghost" href="/t033.html">熊野御前ものがたり</a>
+</div>
+
+<section class="article-policy" style="max-width:760px;margin:48px auto 32px;padding:24px;border:1px solid var(--line);border-radius:16px;background:var(--paper-deep);">
+  <h2 style="margin-top:0;font-size:1.25rem;font-family:'Shippori Mincho',serif;border:none;padding-left:0;">この記事について</h2>
+  <dl>
+    <dt style="font-weight:700;margin-top:16px;">著者</dt>
+    <dd style="margin:6px 0 0;line-height:1.8;color:var(--ink-soft);">大石浩之（富士ヶ丘サービス株式会社 代表取締役／磐田物語 運営者）</dd>
+    <dt style="font-weight:700;margin-top:16px;">参考資料</dt>
+    <dd style="margin:6px 0 0;line-height:1.8;color:var(--ink-soft);">『熊野ものがたり』（豊田郷土を研究する会編、平成21年）、磐田市公式の指定文化財情報を参考にしています。</dd>
+    <dt style="font-weight:700;margin-top:16px;">作成方針</dt>
+    <dd style="margin:6px 0 0;line-height:1.8;color:var(--ink-soft);">本記事は、t027が整理する文化財指定情報を否定するものではなく、絵巻の年代や熊野御前の実在性をめぐる学術的な議論を補うものです。断定できない論点は断定を避けて明記しています。誤りや補足情報がある場合は、運営者までお知らせください。</dd>
+  </dl>
+</section>
+
+<footer class="im-foot">
+  <style>
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand:hover{text-decoration:none;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  .im-foot .im-sns{margin-top:20px;width:100%;border-top:1px solid rgba(255,255,255,.08);padding-top:16px;}
+  .im-foot .im-icons{display:flex;gap:16px;margin-top:8px;}
+  .im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.08);color:#cfe2ec;transition:.2s;}
+  .im-foot .im-icons a:hover{background:rgba(255,255,255,0.18);color:#fff;}
+  .im-foot .im-icons svg{width:18px;height:18px;fill:currentColor;}
+  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
+  </style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
+      </ul>
+    </div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>熊野道場由来記と熊野寺旧跡之畧縁起 ｜ 磐田物語</title>
+<meta name="description" content="行興寺には、建久元年の翁の霊験譚を伝える熊野道場由来記と、熊野の生涯を詳しく語る熊野寺旧跡之畧縁起という、内容の食い違う二つの草創縁起が伝わる。二つを読み比べる寺院縁起編。">
+<link rel="canonical" href="https://iwata-monogatari.net/t036.html">
+<meta property="og:title" content="熊野道場由来記と熊野寺旧跡之畧縁起 ── 行興寺草創の二つの物語 ｜ 磐田物語">
+<meta property="og:description" content="行興寺に伝わる二つの草創縁起を読み比べ、食い違いをどう読むかを考える。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
+    --brown:#2f7fa3;--brown-deep:#1f4f6f;--accent-blue:#356f88;--line:#d8e8ef;
+    --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    line-height:1.95;font-size:17px;letter-spacing:.02em;
+    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+  a{color:var(--brown-deep);text-underline-offset:3px;}
+  .crumbs{max-width:760px;margin:0 auto;padding:24px 24px 0;font-size:13px;color:var(--ink-soft);}
+  .crumbs a{text-decoration:none;}
+  .crumbs a:hover{text-decoration:underline;}
+  .article-head{max-width:760px;margin:0 auto;padding:28px 24px 12px;}
+  .article-head .cat{font-size:13px;letter-spacing:.18em;color:var(--accent-blue);font-weight:700;margin:0 0 16px;}
+  .article-head .cat .no{color:var(--brown);}
+  .article-head h1{font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(27px,5vw,42px);line-height:1.45;margin:0 0 20px;color:var(--ink);letter-spacing:.03em;}
+  .article-head .sub{font-size:16.5px;color:var(--ink-soft);margin:0;line-height:1.95;}
+  .article{max-width:760px;margin:0 auto;padding:24px 24px 56px;}
+  .article h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:23px;
+    color:var(--ink);letter-spacing:.03em;margin:52px 0 18px;
+    padding-left:16px;border-left:4px solid var(--brown);line-height:1.5;}
+  .article h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:18px;color:var(--brown-deep);margin:30px 0 12px;letter-spacing:.03em;}
+  .article p{margin:0 0 20px;color:var(--ink);}
+  .article p.lead{font-size:18px;line-height:2.05;}
+  .summary{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--brown);
+    border-radius:4px;padding:22px 28px;margin:30px 0;box-shadow:var(--shadow);}
+  .summary .sh{font-family:"Shippori Mincho",serif;font-size:17px;margin:0 0 13px;color:var(--brown-deep);letter-spacing:.04em;font-weight:700;}
+  .summary ul{margin:0;padding:0;list-style:none;}
+  .summary li{position:relative;padding-left:22px;margin-bottom:9px;font-size:15px;line-height:1.8;}
+  .summary li::before{content:"";position:absolute;left:2px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--brown);}
+  .summary li:last-child{margin-bottom:0;}
+  .tablewrap{margin:26px 0;overflow-x:auto;}
+  table.kx{border-collapse:collapse;width:100%;font-size:14.5px;background:var(--card);
+    border:1px solid var(--line);box-shadow:var(--shadow);min-width:560px;}
+  table.kx caption{caption-side:top;text-align:left;font-size:13px;color:var(--ink-soft);margin-bottom:9px;font-weight:700;letter-spacing:.03em;}
+  table.kx th,table.kx td{border:1px solid var(--line);padding:9px 13px;text-align:left;line-height:1.65;vertical-align:top;}
+  table.kx thead th{background:var(--paper-deep);color:var(--brown-deep);font-weight:700;white-space:nowrap;}
+  .memo{background:var(--paper-deep);border-radius:3px;padding:26px 30px;margin:34px 0;}
+  .memo h3{font-family:"Shippori Mincho",serif;font-size:17px;color:var(--ink);margin:0 0 14px;letter-spacing:.04em;}
+  .memo dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;}
+  .memo dt{font-weight:700;color:var(--brown-deep);font-size:14.5px;white-space:nowrap;}
+  .memo dd{margin:0;font-size:14.5px;color:var(--ink);}
+  .sources{max-width:760px;margin:0 auto;padding:0 24px 8px;}
+  .sources h3{font-size:14px;color:var(--ink-soft);font-weight:700;letter-spacing:.06em;margin:0 0 10px;}
+  .sources ul{margin:0;padding-left:1.2em;}
+  .sources li{font-size:13px;color:var(--ink-soft);line-height:1.8;margin-bottom:4px;}
+  .article-nav{max-width:760px;margin:8px auto 56px;padding:0 24px;display:flex;flex-wrap:wrap;gap:14px;}
+  .article-nav a{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
+    padding:13px 26px;border-radius:2px;transition:.2s;letter-spacing:.04em;}
+  .article-nav a.primary{background:var(--brown);color:#fff;}
+  .article-nav a.primary:hover{background:var(--brown-deep);}
+  .article-nav a.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
+  .article-nav a.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
+  @media(max-width:760px){table.kx{font-size:13.5px;}table.kx th,table.kx td{padding:8px 10px;}}
+</style>
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+</head>
+<body class="area-toyoda">
+
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<div class="crumbs"><a href="/">磐田物語</a> ／ <a href="/01004-toyoda.html">豊田地区</a> ／ 熊野道場由来記と熊野寺旧跡之畧縁起</div>
+
+<div class="article-head">
+  <p class="cat"><span class="no">豊田地区の記憶 第三十六回</span> ｜ 寺院縁起</p>
+  <h1>熊野道場由来記と熊野寺旧跡之畧縁起 ── 行興寺草創の二つの物語</h1>
+  <p class="sub">t033は「行興寺の草創は熊野御前の菩提を弔うための草庵にさかのぼるとされ」と一文で紹介した。行興寺には、この草創を伝える二つの縁起──熊野道場由来記と熊野寺旧跡之畧縁起──が残っており、内容には食い違う部分もある。二つを読み比べながら、行興寺の草創伝承を掘り下げる。</p>
+</div>
+
+<article class="article">
+
+  <p class="lead">行興寺（磐田市池田）には、寺の草創を伝える古文書が二つ残っている。一つは「熊野道場由来記」、もう一つは「熊野寺旧跡之畧縁起」である。t033ではこれらを「行興寺の草創は熊野御前の菩提を弔うための草庵にさかのぼるとされ、正応3年（1290年）には本堂が建てられたと伝えられている」という一文にまとめて紹介した。ここでは、この二つの原資料に基づいて、草創の物語をより具体的に掘り下げる。二つの縁起には内容が食い違う部分もあり、どちらが史実に近いかは断定できない。</p>
+
+  <div class="summary">
+    <div class="sh">本稿の要点</div>
+    <ul>
+      <li>行興寺には、草創を伝える二つの異なる縁起「熊野道場由来記」と「熊野寺旧跡之畧縁起」が残る。</li>
+      <li>熊野道場由来記は、建久元年（1190年）の翁の霊験譚を中心に草創を語る。</li>
+      <li>熊野寺旧跡之畧縁起は、熊野の生涯（15歳での上京、母との文通、建久9年の病死など）を、より詳しく伝える。</li>
+    </ul>
+  </div>
+
+  <h2>行興寺に伝わる二つの縁起</h2>
+
+  <p>行興寺は時宗（じしゅう）の寺院である。時宗は鎌倉時代に一遍上人（いっぺんしょうにん）が開いた念仏の教えで、諸国を遊行して念仏をすすめた僧たちの活動とともに各地に道場が営まれた（t033参照）。行興寺の草創を伝える文書が二つ残されているのは、時宗の道場としての性格や、寺が長い年月の中で幾度も再興・整備されてきた歴史と関わっていると考えられる。</p>
+
+  <p>この二つの縁起は、書かれた時期も、内容の力点も異なっている。熊野道場由来記は、寺の起こりを霊験譚（不思議な奇跡の物語）として語る性格が強く、熊野寺旧跡之畧縁起は、熊野個人の生涯をより詳しく物語る性格が強い。二つを読み比べることで、行興寺という寺が、どのような伝承の重なりの上に成り立っているかが見えてくる。</p>
+
+  <h2>熊野道場由来記が語る建久元年の草創譚</h2>
+
+  <p>熊野道場由来記は、建久元年（1190年）にまつわる、一人の翁（老人）の霊験譚を伝えているとされる。霊験譚とは、神仏や霊的な存在の不思議な力によって、ある出来事が起きたと語る物語の形式である。熊野道場由来記における翁の霊験譚の具体的な内容（翁が何者であったか、どのような奇跡が起きたか）については、本ページで参照できる資料の範囲では詳細を確認できていないが、この建久元年という年が、行興寺の草創伝承における一つの起点として位置づけられていると考えられる。</p>
+
+  <p>t033が紹介する年表では、正応3年（1290年）に本堂が建てられたとされており、建久元年（1190年）の草創譚から、実際に本堂が建立されるまで、約100年の隔たりがあることになる。この間、熊野御前の菩提を弔うための草庵としての営みが、正式な寺としての形を整えるまでにどのような経緯をたどったのかは、資料上明確ではない。</p>
+
+  <h2>熊野寺旧跡之畧縁起が語る熊野の生涯</h2>
+
+  <p>熊野寺旧跡之畧縁起は、熊野道場由来記とは異なる角度から、熊野の生涯そのものをより詳しく伝える文書とされる。この縁起には、熊野が15歳で上京したこと、都にいる間も故郷の母と文通を続けていたこと、そして建久9年（1198年）に病で亡くなったことなど、熊野の一生を追った具体的な記述が含まれているとされる。</p>
+
+  <p>この年代を見ると、建久元年（1190年）の翁の霊験譚（熊野道場由来記）と、建久9年（1198年）とされる熊野の病死（熊野寺旧跡之畧縁起）との間には、8年の隔たりがある。両者を単純に組み合わせれば、翁の霊験譚が起きたとされる時点で、熊野本人はまだ存命であったことになり、二つの縁起が描く時系列には整合しない部分がある。この食い違いをどう解釈するかについて、本ページでは断定的な結論を出さない。</p>
+
+  <h2>二つの縁起の食い違いをどう読むか</h2>
+
+  <p>二つの縁起の間に見られる食い違い──建久元年の霊験譚と建久9年の熊野の病死との時系列の齟齬、あるいは草創の主体（翁による霊験か、熊野の菩提を弔う営みか）の違い──は、どちらか一方が「正しい」歴史記録で、もう一方が「誤った」伝承である、と単純に切り分けられるものではない。</p>
+
+  <p>むしろ、こうした食い違いは、行興寺という寺の草創が、単一の出来事としてではなく、複数の由来伝承が時代を経て積み重なった結果として現在の形になっていることを示していると考えられる。熊野道場由来記が伝える霊験譚と、熊野寺旧跡之畧縁起が伝える熊野個人の生涯の物語は、それぞれ異なる文脈・異なる時代に、行興寺という同じ場所をめぐって語られてきたものなのだろう。二つの資料に「〜と伝える」「〜による」という留保をつけて、どちらが史実によるかを断定しないという扱いは、t033・t035が採ってきた姿勢とも一致する。</p>
+
+  <h2>時宗の寺としての歩み</h2>
+
+  <p>行興寺は、正応3年（1290年）の本堂建立ののち、応仁元年（1467年）ごろには、他阿真教（たあしんきょう）ら時宗の僧たちによって再興されたと伝えられる（t033参照）。この再興の記録は、二つの草創縁起よりも後の時代の出来事であり、行興寺が草創以来、途切れることなく存続してきたわけではなく、幾度かの整備・再興を経てきたことをうかがわせる。</p>
+
+  <p>草創から再興、そして近世の徳川家康による朱印地寄進（慶長8年〈1603年〉と伝わる）まで、行興寺は熊野御前の伝承を核としながらも、時宗の寺院として独自の歩みを重ねてきた。近世以降の行興寺の歩みについては「<a href="/t037.html">行興寺の近世史</a>」で詳しく扱う。</p>
+
+  <div class="tablewrap">
+    <table class="kx">
+      <caption>行興寺草創をめぐる年表（二つの縁起・提供資料による）</caption>
+      <thead><tr><th>年</th><th>できごと</th><th>典拠</th></tr></thead>
+      <tbody>
+        <tr><td>建久元年（1190年）</td><td>翁の霊験譚。行興寺草創の起点とされる</td><td>熊野道場由来記</td></tr>
+        <tr><td>建久9年（1198年）</td><td>熊野の病死と伝えられる</td><td>熊野寺旧跡之畧縁起</td></tr>
+        <tr><td>正応3年（1290年）</td><td>本堂が建てられたと伝えられる</td><td>熊野道場由来記</td></tr>
+        <tr><td>応仁元年（1467年）ごろ</td><td>他阿真教ら時宗の僧による再興と伝わる</td><td>t033本文参照</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="memo">
+    <h3>本稿で扱った主な用語</h3>
+    <dl>
+      <dt>熊野道場由来記</dt><dd>行興寺に伝わる縁起の一つ。建久元年（1190年）の翁の霊験譚を中心に草創を語る。</dd>
+      <dt>熊野寺旧跡之畧縁起</dt><dd>行興寺に伝わるもう一つの縁起。熊野の生涯（15歳での上京、母との文通、建久9年の病死）を詳しく伝える。</dd>
+      <dt>霊験譚（れいげんたん）</dt><dd>神仏や霊的な存在の不思議な力によって出来事が起きたと語る物語の形式。</dd>
+      <dt>他阿真教（たあしんきょう）</dt><dd>時宗の僧。応仁元年（1467年）ごろの行興寺再興に関わったと伝えられる。</dd>
+    </dl>
+  </div>
+
+  <h2>むすび</h2>
+
+  <p>熊野道場由来記と熊野寺旧跡之畧縁起、二つの縁起を読み比べると、行興寺の草創が、単一のきれいな物語ではなく、複数の伝承が重なり合ってできた、厚みのある記憶であることが分かる。年代の食い違いを無理に一本化するのではなく、それぞれの縁起が何を語ろうとしているのかを、そのまま受け止めることが、この寺の歴史を誠実に読む態度だと考える。行興寺の近世以降の歩みについては「<a href="/t037.html">行興寺の近世史</a>」を、熊野絵巻の詞書そのものについては「<a href="/t034.html">熊野絵巻を読む</a>」をあわせて読んでいただきたい。</p>
+
+  <section class="local-property-note" aria-labelledby="local-property-note-title">
+    <h2 id="local-property-note-title">この地域の家・土地・空き家について</h2>
+    <p>
+      古い寺院の縁起を読み解いていると、
+      家や土地にも、一つの由来だけでは語りきれない歴史が積み重なっていることに気づかされます。
+    </p>
+    <p>
+      相続した家、空き家、使わなくなった土地について、
+      「売る・貸す・残す」の前に、一度整理して考えたい方は、
+      富士ヶ丘サービス株式会社までご相談ください。
+    </p>
+    <p class="local-property-note__link-wrap">
+      <a class="local-property-note__link" href="https://www.fujigaoka-service.info/fudosan" target="_blank" rel="noopener">
+        家・土地・空き家の整理について相談する
+      </a>
+    </p>
+  </section>
+
+</article>
+
+<div class="sources">
+  <h3>主な参考資料</h3>
+  <ul>
+    <li>『熊野ものがたり』豊田郷土を研究する会編、平成21年（2009年）3月31日発行（「熊野道場由来記」pp.26-35、「熊野寺旧跡之畧縁起」pp.36-39）。</li>
+    <li>行興寺蔵「熊野道場由来記」「熊野寺旧跡之畧縁起」。</li>
+    <li>磐田物語「熊野御前ものがたり」（t033）。</li>
+  </ul>
+</div>
+
+<div class="article-nav">
+  <a class="primary" href="/01004-toyoda.html">豊田地区トップへ戻る</a>
+  <a class="ghost" href="/t033.html">熊野御前ものがたり</a>
+  <a class="ghost" href="/t037.html">行興寺の近世史</a>
+  <a class="ghost" href="/t002.html">行興寺と熊野の長藤</a>
+</div>
+
+<section class="article-policy" style="max-width:760px;margin:48px auto 32px;padding:24px;border:1px solid var(--line);border-radius:16px;background:var(--paper-deep);">
+  <h2 style="margin-top:0;font-size:1.25rem;font-family:'Shippori Mincho',serif;border:none;padding-left:0;">この記事について</h2>
+  <dl>
+    <dt style="font-weight:700;margin-top:16px;">著者</dt>
+    <dd style="margin:6px 0 0;line-height:1.8;color:var(--ink-soft);">大石浩之（富士ヶ丘サービス株式会社 代表取締役／磐田物語 運営者）</dd>
+    <dt style="font-weight:700;margin-top:16px;">参考資料</dt>
+    <dd style="margin:6px 0 0;line-height:1.8;color:var(--ink-soft);">『熊野ものがたり』（豊田郷土を研究する会編、平成21年）を主な参考資料としています。</dd>
+    <dt style="font-weight:700;margin-top:16px;">作成方針</dt>
+    <dd style="margin:6px 0 0;line-height:1.8;color:var(--ink-soft);">本記事は、二つの原資料を丸写しにせず、内容の食い違いを断定せずに読み比べる形で再構成しています。誤りや補足情報がある場合は、運営者までお知らせください。</dd>
+  </dl>
+</section>
+
+<footer class="im-foot">
+  <style>
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand:hover{text-decoration:none;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  .im-foot .im-sns{margin-top:20px;width:100%;border-top:1px solid rgba(255,255,255,.08);padding-top:16px;}
+  .im-foot .im-icons{display:flex;gap:16px;margin-top:8px;}
+  .im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.08);color:#cfe2ec;transition:.2s;}
+  .im-foot .im-icons a:hover{background:rgba(255,255,255,0.18);color:#fff;}
+  .im-foot .im-icons svg{width:18px;height:18px;fill:currentColor;}
+  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
+  </style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
+      </ul>
+    </div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+  </div>
+</footer>
+
+</body>
+</html>

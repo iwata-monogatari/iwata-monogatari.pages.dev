@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>熊野絵巻を読む ── 熊野・千手・朝顔、三人の女性たちの物語 ｜ 磐田物語</title>
+<meta name="description" content="行興寺に伝わる熊野絵巻の詞書は、熊野だけでなく千手・朝顔という二人の女性も描く物語である。清水寺の花見、牛車の場面、東山への道行きを、t033・t002とは重ならない詞書そのものの構造からたどる。">
+<link rel="canonical" href="https://iwata-monogatari.net/t034.html">
+<meta property="og:title" content="熊野絵巻を読む ── 熊野・千手・朝顔、三人の女性たちの物語 ｜ 磐田物語">
+<meta property="og:description" content="行興寺の熊野絵巻に描かれた、熊野・千手・朝顔、三人の女性と平宗盛の物語をたどる。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
+    --brown:#2f7fa3;--brown-deep:#1f4f6f;--accent-blue:#356f88;--line:#d8e8ef;
+    --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    line-height:1.95;font-size:17px;letter-spacing:.02em;
+    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+  a{color:var(--brown-deep);text-underline-offset:3px;}
+  .crumbs{max-width:760px;margin:0 auto;padding:24px 24px 0;font-size:13px;color:var(--ink-soft);}
+  .crumbs a{text-decoration:none;}
+  .crumbs a:hover{text-decoration:underline;}
+  .article-head{max-width:760px;margin:0 auto;padding:28px 24px 12px;}
+  .article-head .cat{font-size:13px;letter-spacing:.18em;color:var(--accent-blue);font-weight:700;margin:0 0 16px;}
+  .article-head .cat .no{color:var(--brown);}
+  .article-head h1{font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(27px,5vw,42px);line-height:1.45;margin:0 0 20px;color:var(--ink);letter-spacing:.03em;}
+  .article-head .sub{font-size:16.5px;color:var(--ink-soft);margin:0;line-height:1.95;}
+  .article{max-width:760px;margin:0 auto;padding:24px 24px 56px;}
+  .article h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:23px;
+    color:var(--ink);letter-spacing:.03em;margin:52px 0 18px;
+    padding-left:16px;border-left:4px solid var(--brown);line-height:1.5;}
+  .article h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:18px;color:var(--brown-deep);margin:30px 0 12px;letter-spacing:.03em;}
+  .article p{margin:0 0 20px;color:var(--ink);}
+  .article p.lead{font-size:18px;line-height:2.05;}
+  .summary{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--brown);
+    border-radius:4px;padding:22px 28px;margin:30px 0;box-shadow:var(--shadow);}
+  .summary .sh{font-family:"Shippori Mincho",serif;font-size:17px;margin:0 0 13px;color:var(--brown-deep);letter-spacing:.04em;font-weight:700;}
+  .summary ul{margin:0;padding:0;list-style:none;}
+  .summary li{position:relative;padding-left:22px;margin-bottom:9px;font-size:15px;line-height:1.8;}
+  .summary li::before{content:"";position:absolute;left:2px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--brown);}
+  .summary li:last-child{margin-bottom:0;}
+  .def{background:var(--paper-deep);border-left:4px solid var(--accent-blue);border-radius:0 3px 3px 0;
+    padding:16px 22px;margin:24px 0;}
+  .def .term{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16px;color:var(--ink);margin-bottom:5px;display:block;}
+  .def p{margin:0;font-size:14.5px;line-height:1.85;color:var(--ink);}
+  .pull{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent-blue);
+    border-radius:3px;padding:22px 28px;margin:30px 0;box-shadow:var(--shadow);}
+  .pull p{margin:0;font-family:"Shippori Mincho",serif;font-size:17.5px;color:var(--ink);line-height:1.95;}
+  .pull .yaku{margin-top:10px;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;color:var(--ink-soft);}
+  .memo{background:var(--paper-deep);border-radius:3px;padding:26px 30px;margin:34px 0;}
+  .memo h3{font-family:"Shippori Mincho",serif;font-size:17px;color:var(--ink);margin:0 0 14px;letter-spacing:.04em;}
+  .memo dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;}
+  .memo dt{font-weight:700;color:var(--brown-deep);font-size:14.5px;white-space:nowrap;}
+  .memo dd{margin:0;font-size:14.5px;color:var(--ink);}
+  .sources{max-width:760px;margin:0 auto;padding:0 24px 8px;}
+  .sources h3{font-size:14px;color:var(--ink-soft);font-weight:700;letter-spacing:.06em;margin:0 0 10px;}
+  .sources ul{margin:0;padding-left:1.2em;}
+  .sources li{font-size:13px;color:var(--ink-soft);line-height:1.8;margin-bottom:4px;}
+  .article-nav{max-width:760px;margin:8px auto 56px;padding:0 24px;display:flex;flex-wrap:wrap;gap:14px;}
+  .article-nav a{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
+    padding:13px 26px;border-radius:2px;transition:.2s;letter-spacing:.04em;}
+  .article-nav a.primary{background:var(--brown);color:#fff;}
+  .article-nav a.primary:hover{background:var(--brown-deep);}
+  .article-nav a.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
+  .article-nav a.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
+  @media(max-width:760px){
+    nav.menu{display:none;}
+  }
+</style>
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+</head>
+<body class="area-toyoda">
+
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<div class="crumbs"><a href="/">磐田物語</a> ／ <a href="/01004-toyoda.html">豊田地区</a> ／ 熊野絵巻を読む</div>
+
+<div class="article-head">
+  <p class="cat"><span class="no">豊田地区の記憶 第三十四回</span> ｜ 文学・伝承</p>
+  <h1>熊野絵巻を読む ── 熊野・千手・朝顔、三人の女性たちの物語</h1>
+  <p class="sub">「熊野御前ものがたり」（t033）で紹介した熊野の物語は、母を思う和歌を軸とした一場面に重心があった。しかし行興寺に伝わる熊野絵巻の詞書は、熊野だけでなく、千手・朝顔という二人の女性も登場する、より大きな構造を持つ物語である。ここでは、t033・t002ではほぼ触れられなかった詞書全体の物語構造を、絵巻という形式の性格に注意しながら紹介する。</p>
+</div>
+
+<article class="article">
+
+  <p class="lead">行興寺の熊野絵巻（巻子本）には、詞書（ことばがき）と呼ばれる本文が添えられている。これまで磐田物語では、この詞書のうち、熊野が老いた母を思って詠んだ和歌の場面を中心に紹介してきた（t033・t002）。しかし提供資料『熊野ものがたり』が収める詞書全文を見ると、物語には熊野のほかに、千手（せんじゅ）・朝顔（あさがお）という二人の女性が描かれており、平宗盛（たいらのむねもり）をめぐる三人の女性たちの物語として構成されていることが分かる。ここでは、この詞書全体の骨格を、t033・t002と重複しない範囲でたどってみたい。</p>
+
+  <div class="summary">
+    <div class="sh">本稿の要点</div>
+    <ul>
+      <li>行興寺の熊野絵巻の詞書は、熊野だけでなく、千手・朝顔という二人の女性も含めた物語として構成されている。</li>
+      <li>清水寺の花見、牛車の場面、東山への道行き、和歌の応酬など、複数の場面が積み重なって物語を形づくっている。</li>
+      <li>t033・t002が紹介した「母を思う和歌」の場面は、この物語全体の中の一つの山場として位置づけられる。</li>
+    </ul>
+  </div>
+
+  <h2>絵巻という形式について</h2>
+
+  <p>絵巻とは、絵と文章（詞書）を交互に配し、右から左へと巻物を繰りながら読み進める形式の書物である。行興寺の熊野絵巻も、この形式にならい、場面ごとの絵と詞書を組み合わせて物語を語る構成になっていると考えられる。詞書は、物語の筋を文章で伝える役割を持ち、絵は詞書が語る場面を視覚的に補う。</p>
+
+  <p>t027（熊野絵巻・県指定文化財ページ）が整理しているとおり、この絵巻の制作年代については室町期説と江戸期説の両方があり、確定していない。本ページは、絵巻の成立年代そのものを論じるのではなく、詞書が語る物語の内容に焦点をあてる。年代論争についてくわしくは「<a href="/t035.html">熊野絵巻の成立をめぐる論争</a>」を参照いただきたい。</p>
+
+  <h2>熊野と千手 ── 二人の女性と宗盛</h2>
+
+  <p>t033で紹介したとおり、御伽草子「烏帽子折」には、当時の日本で美人の誉れが高かった5人の女性の名が並んで語られており、その一番が手越（駿河国）の長者の娘・千手の前、二番が遠江国池田の熊野であった。熊野絵巻の詞書は、この烏帽子折の枠組みとは別に、熊野と千手という二人の女性を、平宗盛をめぐる物語の登場人物として描いている。詞書における千手の具体的な役回り（熊野との関係、宗盛とのやりとりの詳細）については、提供資料の要旨から詳細な文言までは本ページで確認できておらず、断定的な記述は避ける。ただし、千手が熊野と並んで物語の重要な登場人物として位置づけられていることは、提供資料の構成から読み取れる。</p>
+
+  <h2>朝顔という三人目の女性</h2>
+
+  <p>詞書にはさらに、朝顔という三人目の女性が登場する。朝顔がどのような立場で物語に加わるのか、熊野・千手との関係がどのようなものかについても、本ページで参照できる資料の範囲では詳細を確認できていない。t033・t002がこれまで紹介してこなかったこの人物の存在は、熊野の物語が単独の悲話ではなく、複数の女性が織りなす、より重層的な物語であったことを示している。</p>
+
+  <p>資料が伝える限りで言えるのは、熊野絵巻の詞書が、熊野一人の視点だけでなく、千手・朝顔を含む複数の女性の視点や境遇を織り込んだ構成を持っていたと考えられる、ということである。この点は、母を思う和歌の場面のみを取り上げてきたt033・t002の紹介では十分に伝えられていなかった側面であり、本ページで補っておきたい。</p>
+
+  <h2>清水寺の花見と和歌の応酬</h2>
+
+  <p>t033が紹介したとおり、物語の山場の一つは、都で宗盛に仕えていた熊野が、故郷・池田の老母の病を案じて帰郷を願い出るが、宗盛はにわかに許さず、折しも催された京都東山・清水寺の花見の宴に同行するよう命じる場面である。舞ううちに時雨が桜を散らすのを見た熊野は、老いた母の姿と重ね合わせ、次の和歌を詠んだと伝わる。</p>
+
+  <div class="pull">
+    <p>いかにせん都の春も惜しけれど　馴れし東（あづま）の花や散るらん</p>
+    <p class="yaku">（都の春も名残惜しいけれど、住み慣れた東国の花＝母もまた、散ってしまうのではないでしょうか）</p>
+  </div>
+
+  <p>詞書全体の構成では、この和歌の場面が単独で置かれているのではなく、清水寺の花見という宴の場そのものの描写や、宴に連なる人々とのやりとりの中に位置づけられていると考えられる。花見の宴という華やかな場と、母を思う熊野の心情との対比が、物語の緊張感を生んでいる。</p>
+
+  <h2>東山への道行き</h2>
+
+  <p>謡曲「熊野」では、都から東国（池田）への帰郷の道のりが、車宿・逢坂の関・四条五条の橋・清水寺・地主権現などの名所を織り込みながら謡われる「道行（みちゆき）」という形式で描かれることがt033で紹介されている。熊野絵巻の詞書にも、都と東山、あるいは都から遠江へと至る道のりの描写が含まれていたと考えられるが、道行の具体的な文言・順序については、本ページで参照できる資料からは確認できていない。</p>
+
+  <p>道行という形式そのものは、中世文学に広く見られる技法で、地名を連ねながら旅の情景と心情を重ね合わせて描く。熊野の物語における道行は、都の華やかさから遠江の鄙びた風景へと移り変わる情景の変化を通じて、熊野の心の動きを表現するものであったと推測される。</p>
+
+  <h2>牛車の場面に見る中世の旅</h2>
+
+  <p>提供資料の詞書には、牛車（ぎっしゃ）の場面が含まれているとされる。牛車は、平安期から中世にかけて貴族が用いた乗り物であり、熊野のような身分の女性が都で移動する際に用いられたと考えられる。牛車の場面が詞書のどの段階に配置され、どのような情景を描いているかについては、本ページで参照できる資料の範囲では具体的な内容を確認できていない。</p>
+
+  <p>ただし、牛車という中世の交通手段が物語に登場すること自体は、熊野の物語が、都の貴族社会における移動の様式を背景に描かれていることを示している。これは、後の道行の場面で描かれる、徒歩や馬による東海道の旅とは対照的な、都での暮らしの一場面であったと考えられる。</p>
+
+  <h2>絵巻の詞書が伝える情景</h2>
+
+  <p>以上見てきたように、行興寺の熊野絵巻の詞書は、熊野一人の悲話としてではなく、千手・朝顔を含む複数の女性、清水寺の花見、牛車の場面、東山への道行きといった、複数の場面が積み重なった物語として構成されている。t033・t002が紹介してきた「母を思う和歌」の場面は、この物語全体の中の一つの、しかし印象的な山場であったと理解できる。</p>
+
+  <p>詞書の細部（千手・朝顔の具体的な役回り、牛車の場面の詳しい情景、道行の正確な文言）については、本ページで参照できる資料の範囲では十分に確認できておらず、今後、原文により踏み込んだ確認ができれば、このページを更新したい。中世文学作品の詞書を扱う以上、現代語訳や要約は、原文のニュアンスを損なわない範囲にとどめ、断定的な解釈は避けるよう努めた。</p>
+
+  <div class="memo">
+    <h3>熊野絵巻の詞書・登場人物</h3>
+    <dl>
+      <dt>熊野</dt><dd>遠江国池田の生まれと伝わる女性。平宗盛に寵愛され、母の病を案じて帰郷を願う。</dd>
+      <dt>千手</dt><dd>詞書に登場する女性。御伽草子「烏帽子折」では手越（駿河国）の長者の娘・千手の前として、5人の美女の一番に数えられる。詞書における具体的な役回りは資料上確認できていない。</dd>
+      <dt>朝顔</dt><dd>詞書に登場する三人目の女性。t033・t002ではこれまで触れられていなかった人物で、詳細は資料上確認できていない。</dd>
+      <dt>道行（みちゆき）</dt><dd>地名を連ねながら旅の情景と心情を重ね合わせて描く、中世文学の技法。謡曲「熊野」にも用いられている。</dd>
+    </dl>
+  </div>
+
+  <h2>むすび</h2>
+
+  <p>熊野絵巻の詞書を、母を思う和歌の場面だけでなく、千手・朝顔を含む物語全体として見直すと、行興寺に伝わるこの物語が、単純な孝行譚以上の広がりを持っていたことがうかがえる。詞書のすべてを本ページで解き明かせたわけではないが、t033・t002が扱ってこなかった側面に光をあてることで、熊野の物語をより立体的に理解する手がかりになればと考える。絵巻の成立年代をめぐる学術的な議論については「<a href="/t035.html">熊野絵巻の成立をめぐる論争</a>」を、行興寺の草創縁起については「<a href="/t036.html">熊野道場由来記と熊野寺旧跡之畧縁起</a>」をあわせて読んでいただきたい。</p>
+
+  <section class="local-property-note" aria-labelledby="local-property-note-title">
+    <h2 id="local-property-note-title">この地域の家・土地・空き家について</h2>
+    <p>
+      古い物語や絵巻を読み解いていると、
+      家や土地には、文字だけでは伝わらない地域の記憶が残っていることがあります。
+    </p>
+    <p>
+      相続した家、空き家、使わなくなった土地について、
+      「売る・貸す・残す」の前に、一度整理して考えたい方は、
+      富士ヶ丘サービス株式会社までご相談ください。
+    </p>
+    <p class="local-property-note__link-wrap">
+      <a class="local-property-note__link" href="https://www.fujigaoka-service.info/fudosan" target="_blank" rel="noopener">
+        家・土地・空き家の整理について相談する
+      </a>
+    </p>
+  </section>
+
+</article>
+
+<div class="sources">
+  <h3>主な参考資料</h3>
+  <ul>
+    <li>『熊野ものがたり』豊田郷土を研究する会編、平成21年（2009年）3月31日発行（熊野絵巻の詞書全文を収録した「熊野絵巻（巻子本、詞書全文）」pp.3〜23）。</li>
+    <li>行興寺蔵「熊野絵巻」（巻子本）。</li>
+    <li>御伽草子「烏帽子折」、謡曲「熊野（ゆや）」。</li>
+    <li>磐田物語「熊野御前ものがたり」（t033）、「行興寺と熊野（ゆや）の長藤」（t002）、「熊野絵巻」（t027）。</li>
+  </ul>
+</div>
+
+<div class="article-nav">
+  <a class="primary" href="/01004-toyoda.html">豊田地区トップへ戻る</a>
+  <a class="ghost" href="/t033.html">熊野御前ものがたり</a>
+  <a class="ghost" href="/t035.html">熊野絵巻の成立をめぐる論争</a>
+  <a class="ghost" href="/t027.html">熊野絵巻</a>
+</div>
+
+<section class="article-policy" style="max-width:760px;margin:48px auto 32px;padding:24px;border:1px solid var(--line);border-radius:16px;background:var(--paper-deep);">
+  <h2 style="margin-top:0;font-size:1.25rem;font-family:'Shippori Mincho',serif;border:none;padding-left:0;">この記事について</h2>
+  <dl>
+    <dt style="font-weight:700;margin-top:16px;">著者</dt>
+    <dd style="margin:6px 0 0;line-height:1.8;color:var(--ink-soft);">大石浩之（富士ヶ丘サービス株式会社 代表取締役／磐田物語 運営者）</dd>
+    <dt style="font-weight:700;margin-top:16px;">参考資料</dt>
+    <dd style="margin:6px 0 0;line-height:1.8;color:var(--ink-soft);">『熊野ものがたり』（豊田郷土を研究する会編、平成21年）を主な参考資料としています。</dd>
+    <dt style="font-weight:700;margin-top:16px;">作成方針</dt>
+    <dd style="margin:6px 0 0;line-height:1.8;color:var(--ink-soft);">本記事は、資料の文章をそのまま転載するのではなく、既存ページ（t033・t002）と重複しない詞書全体の物語構造に焦点をあてて再構成しています。詳細を確認できていない箇所は、その旨を明記しています。誤りや補足情報がある場合は、運営者までお知らせください。</dd>
+  </dl>
+</section>
+
+<footer class="im-foot">
+  <style>
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand:hover{text-decoration:none;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  .im-foot .im-sns{margin-top:20px;width:100%;border-top:1px solid rgba(255,255,255,.08);padding-top:16px;}
+  .im-foot .im-icons{display:flex;gap:16px;margin-top:8px;}
+  .im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.08);color:#cfe2ec;transition:.2s;}
+  .im-foot .im-icons a:hover{background:rgba(255,255,255,0.18);color:#fff;}
+  .im-foot .im-icons svg{width:18px;height:18px;fill:currentColor;}
+  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
+  </style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
+      </ul>
+    </div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+  </div>
+</footer>
+
+</body>
+</html>
