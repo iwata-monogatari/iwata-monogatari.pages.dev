@@ -1,7 +1,7 @@
 ﻿{
     "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
     "schema_version": 1,
-    "updated_at": "2026-06-30",
+    "updated_at": "2026-07-02",
     "districts": [
         {
             "district_id": "mitsuke",
@@ -110,6 +110,27 @@
         "land-memory"
     ],
     "pages": [
+        {
+            "title": "天竜川の地形と歴史 ── 平地の生い立ちと川筋の移りかわり",
+            "url": "g001.html",
+            "district": [
+                "toyoda",
+                "nanbu",
+                "ryuyo"
+            ],
+            "themes": [
+                "land-memory",
+                "village-history"
+            ],
+            "content_type": "reading",
+            "published_at": "2026-07-02",
+            "date_provisional": false,
+            "status": "published",
+            "summary": "天竜川平地の地形・地質と生い立ち、江戸期以降の川筋の西遷、金原明善らの治水事業までを一本にまとめた地理・自然の基礎資料。",
+            "parent": "index.html",
+            "count_as_knowledge": true,
+            "show_in_updates": true
+        },
         {
             "title": "竜洋地区年表 — 天竜川・掛塚・袖浦・十束の歩み",
             "url": "r023.html",
