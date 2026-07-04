@@ -299,7 +299,9 @@ body.area-fukude .article-body a {
    以後はこの共通CSSを参照するため、記事側は class="article-policy" を付けるだけでよい。
    ============================================================================ */
 .article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
-.article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
+/* 記事本文側の汎用 h2{border-bottom;padding-bottom;letter-spacing;color 等} が
+   specificityで負けずに残り、見出し下に不要な罫線が残る事故があったため明示的に打ち消す */
+.article-policy h2{margin:0 0 8px;padding-bottom:0;border-bottom:none;font-size:1.25rem;font-family:"Shippori Mincho",serif;font-weight:700;color:var(--ink,#22303a);letter-spacing:normal;}
 .article-policy dt{font-weight:700;margin-top:16px;}
 .article-policy dd{margin:6px 0 0;line-height:1.8;color:var(--ink-soft,#4b5b66);}
 
