@@ -21,6 +21,12 @@
 3. **`<head>`**：title（`｜磐田物語`）／meta description／og:title・description・type=article・locale／canonical／favicon一式／`<link rel="stylesheet" href="/assets/css/site-header.css">`／`<link rel="stylesheet" href="/assets/css/iwata-area-color.css">`。ページ固有の演出以外のCSSは、既存記事の`<style>`を丸ごとコピーする前に「これは共通CSS（iwata-area-color.css等）に定義済みか」を確認する。定義済みならページ側に再定義しない（重複・引き継ぎ漏れの温床になる）。
 4. **`<body class="area-{slug}">`**：地区に紐づく記事には地区クラスを1つ付与（複数地区にまたがる場合は地区番号が最小の地区）。
 5. **ヘッダー・フッター**：`<header class="gh-site">`・`<footer class="im-foot">`の中身はCloudflare Pages Functionsが配信時に`partials/`の内容へ差し替えるため、新規ページでは**中身を空にしてよい**（`<footer class="im-foot"></footer>`）。既存記事の多くは旧来のフォールバック用ナビ・フッターHTMLをそのまま持っているが、新規作成時にそれを律儀にコピーする必要はない。
-6. **記事末尾の定型ブロック**：`<section class="local-property-note">`（不動産導線）と`<section class="article-policy">`（著者・参考資料・作成方針）を記事本文の後に配置。両方とも`iwata-area-color.css`にスタイル定義済みなので、クラス名を付けるだけでよい。**注意**：2026-07-04、`.article-policy h2`（「この記事について」見出し）が、ページ自前の`<style>`内にある汎用`h2{border-bottom;padding-bottom;letter-spacing;color 等}`ルールを完全には打ち消せず、見出し下に不要な罫線が残る事故が発生した（CSSの上書きは「宣言したプロパティだけ」が対象で、宣言していないプロパティは特異度が高い側でも下位ルールから漏れて適用され続けるため）。共通CSS側で`border-bottom:none`等を明示して解決済みだが、**共通クラスを新設・流用する際は、そのページの汎用タグ用スタイル（無印`h2`・`p`等）が同じ要素に効いてしまわないか、border/padding/color/letter-spacingまで含めて必ず確認する**こと。「一部のプロパティだけ上書きすれば残りは初期値に戻る」という思い込みは誤り。
+6. **記事末尾の定型ブロック（2026-07-04〜: content呼び出し方式に変更）**：`<section class="local-property-note">`（不動産導線）と`<section class="article-policy">`（著者・参考資料・作成方針）は、header/footerと同じ仕組みで`partials/local-property-note.html`・`partials/article-policy.html`から配信時に中身を差し込む。**新規記事では中身を空にして`data-common`属性を付けるだけでよい**：
+   ```html
+   <section class="local-property-note" aria-labelledby="local-property-note-title" data-common></section>
+   <section class="article-policy" data-common></section>
+   ```
+   `functions/_middleware.js`が`section.article-policy[data-common]`・`section.local-property-note[data-common]`を検出したときだけ中身を差し替える（`data-common`が無いセクションには手を出さない）。これは、既存記事の一部が参考資料・作成方針を記事ごとにカスタマイズしている（丸写し不可・重複回避の観点で個別の断り書きが要ることがある）ため、header/footerのように無条件で上書きしてしまうと過去の記事の個別カスタム文言を消してしまうからである。**記事固有の参考資料・作成方針を書きたい場合だけ、`data-common`を付けずに中身を直接書く**（この場合は必要なCSSが`iwata-area-color.css`の`.article-policy`/`.local-property-note`で足りているか確認する）。
+   - 背景：スタイルだけを共通CSS化しても、コピペのたびにCSSの引き継ぎ漏れ（r036.html, 2026-07-04）や特異度の低い汎用ルールとの衝突（見出し下の罫線残り）が繰り返し発生したため、**中身ごと呼び出す方式**に変更した。
 7. **関連記事の自動挿入位置**：`<!-- im-related:start -->`が無い状態で公開し、`local-property-note`の直前（無ければ`footer.im-foot`の直前、それも無ければ`</body>`の直前）に挿入される前提で構造を作る。手書きで「関連記事」という見出しを入れると自動生成の対象から外れるので注意。
 8. **公開後に更新する一式**：`data/pages.json`（新規エントリ or 統合時は旧エントリのurl/titleを上書き）／`sitemap.xml`／該当地区ポータル（`0100X-*.html`）／`c034.html`全記事一覧／`theme.html`／必要なら`data/new-articles.json`／`python tools/generate_related_articles.py`の再実行。
