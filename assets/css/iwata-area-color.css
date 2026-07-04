@@ -293,6 +293,17 @@ body.area-fukude .article-body a {
 }
 
 /* ============================================================================
+   記事末尾「この記事について」ブロック（article-policy）
+   従来は記事ごとに個別の<style>でベタ書きされていたため、新規記事作成時に
+   スタイル定義そのものを引き継ぎ忘れる事故が起きた（例: r036.html, 2026-07-04）。
+   以後はこの共通CSSを参照するため、記事側は class="article-policy" を付けるだけでよい。
+   ============================================================================ */
+.article-policy{max-width:1180px;margin:48px auto 32px;padding:24px;border:1px solid var(--line,#d8e3ea);border-radius:16px;background:var(--paper-deep,#f8fbfd);}
+.article-policy h2{margin-top:0;font-size:1.25rem;font-family:"Shippori Mincho",serif;}
+.article-policy dt{font-weight:700;margin-top:16px;}
+.article-policy dd{margin:6px 0 0;line-height:1.8;color:var(--ink-soft,#4b5b66);}
+
+/* ============================================================================
    嫌がられにくい不動産相談導線（local-property-note）
    ============================================================================ */
 .local-property-note {
