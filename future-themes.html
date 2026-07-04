@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今後読み物化するテーマ一覧・進捗ダッシュボード ｜ 磐田物語</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<meta name="theme-color" content="#fffdf7">
+<meta name="description" content="磐田物語が今後調査・記事化していく120の地域史テーマを、地区・分野・進捗・優先度で一覧できる進捗管理ダッシュボードです。見付・中泉・御厨・豊田・南部・向陽・竜洋・福田・豊岡の9地区にわたる調査計画を公開しています。">
+<meta property="og:site_name" content="磐田物語">
+<meta property="og:title" content="今後読み物化するテーマ一覧・進捗ダッシュボード ｜ 磐田物語">
+<meta property="og:description" content="磐田物語が今後調査・記事化していく120の地域史テーマを、地区・分野・進捗・優先度で一覧できる進捗管理ダッシュボードです。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://iwata-monogatari.net/future-themes.html">
+<meta property="og:image" content="https://iwata-monogatari.net/img/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://iwata-monogatari.net/future-themes.html">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "磐田物語 今後読み物化するテーマ一覧・進捗ダッシュボード",
+  "url": "https://iwata-monogatari.net/future-themes.html",
+  "inLanguage": "ja",
+  "isPartOf": { "@type": "WebSite", "url": "https://iwata-monogatari.net/" },
+  "description": "磐田物語が今後調査・記事化していく120の地域史テーマの進捗管理ダッシュボード。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://iwata-monogatari.net/" },
+    { "@type": "ListItem", "position": 2, "name": "今後読み物化するテーマ", "item": "https://iwata-monogatari.net/future-themes.html" }
+  ]
+}
+</script>
+<style>
+:root{
+  --paper:#fffdf7; --paper-deep:#e9f3fa; --ink:#1f3a48; --ink-soft:#5b6b74;
+  --brown:#2f7fa3; --brown-deep:#1f4f6f; --accent-blue:#356f88; --line:#d8e8ef;
+  --card:#fffdf7; --shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;font-size:16.5px;letter-spacing:.02em;}
+a{color:var(--brown-deep);}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px;}
+
+.rm-head{max-width:900px;margin:0 auto;padding:56px 22px 28px;}
+.rm-head .eyebrow{font-size:12.5px;letter-spacing:.2em;color:var(--accent-blue);font-weight:700;margin:0 0 16px;}
+.rm-head h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:clamp(26px,4.6vw,38px);line-height:1.5;margin:0 0 18px;color:var(--ink);letter-spacing:.03em;}
+.rm-head p{font-size:15px;color:var(--ink-soft);margin:0 0 12px;line-height:1.9;}
+.rm-head .rm-note{font-size:13px;color:var(--accent-blue);background:var(--paper-deep);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin-top:14px;}
+
+.rm-stats{max-width:1180px;margin:0 auto;padding:0 22px 10px;}
+.rm-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px;}
+.rm-stat-card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;box-shadow:var(--shadow);text-align:center;}
+.rm-stat-card .num{font-family:"Shippori Mincho",serif;font-size:30px;font-weight:800;color:var(--brown-deep);line-height:1;}
+.rm-stat-card .lbl{font-size:12px;color:var(--ink-soft);margin-top:6px;}
+
+.rm-area-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:24px;}
+.rm-area-card{display:block;text-align:left;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--area-c,var(--brown));border-radius:8px;padding:12px 14px;cursor:pointer;font:inherit;color:inherit;}
+.rm-area-card:hover{border-color:var(--area-c,var(--brown));box-shadow:var(--shadow);}
+.rm-area-card.is-active{background:var(--paper-deep);}
+.rm-area-card .an{font-weight:700;font-size:14.5px;color:var(--area-c,var(--brown-deep));}
+.rm-area-card .ac{font-size:12px;color:var(--ink-soft);margin-top:3px;}
+
+.rm-filter{max-width:1180px;margin:0 auto 18px;padding:16px 22px;background:var(--paper-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.rm-filter-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+.rm-filter-row label{font-size:12px;color:var(--ink-soft);display:flex;flex-direction:column;gap:4px;}
+.rm-filter-row select,.rm-filter-row input[type="text"]{font-family:inherit;font-size:13.5px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink);min-width:120px;}
+.rm-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+.rm-chip{font-size:12.5px;color:var(--brown-deep);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer;transition:.15s;}
+.rm-chip:hover{background:var(--brown);color:#fff;border-color:var(--brown);}
+.rm-chip.is-active{background:var(--brown);color:#fff;border-color:var(--brown);}
+.rm-count{font-size:13px;color:var(--ink-soft);margin:0 0 12px;}
+
+.rm-table-wrap{max-width:1180px;margin:0 auto;padding:0 22px 60px;overflow-x:auto;}
+table.rm-table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;}
+table.rm-table th,table.rm-table td{border-bottom:1px solid var(--line);padding:10px 10px;text-align:left;vertical-align:top;}
+table.rm-table th{background:var(--paper-deep);font-size:12px;color:var(--brown-deep);letter-spacing:.04em;white-space:nowrap;position:sticky;top:0;}
+table.rm-table tr:hover td{background:#fbfaf4;}
+.rm-badge{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;color:#fff;background:var(--area-c,var(--brown));white-space:nowrap;}
+.rm-badge.is-common{background:#8a97a0;}
+.rm-pri{font-weight:700;}
+.rm-pri-A{color:#a9412b;}
+.rm-pri-B{color:#356f88;}
+.rm-pri-C{color:#8a97a0;}
+.rm-status{display:inline-block;font-size:11.5px;padding:3px 10px;border-radius:999px;background:#eef2f4;color:var(--ink-soft);white-space:nowrap;}
+.rm-status.is-published{background:#e3f3e6;color:#276b3f;}
+.rm-status.is-soon{background:#fdeecd;color:#8a5a10;}
+.rm-status.is-progress{background:#e6f0f7;color:#1f5f8b;}
+.rm-empty{padding:30px 4px;color:var(--ink-soft);text-align:center;}
+.rm-loading{padding:40px 4px;color:var(--ink-soft);text-align:center;font-size:14px;}
+.rm-th-sortable{cursor:default;}
+.rm-title-cell{max-width:340px;}
+
+.rm-back{max-width:1180px;margin:0 auto 50px;padding:0 22px;}
+.rm-back a{display:inline-block;text-decoration:none;font-weight:700;font-size:14px;padding:11px 22px;border-radius:999px;background:var(--brown);color:#fff;}
+.rm-back a:hover{background:var(--brown-deep);}
+
+[data-area-c="mitsuke"]{--area-c:#A9412B;}
+[data-area-c="nakaizumi"]{--area-c:#008C8C;}
+[data-area-c="mikuriya"]{--area-c:#B87333;}
+[data-area-c="toyoda"]{--area-c:#7B4BB2;}
+[data-area-c="nanbu"]{--area-c:#5BAEC0;}
+[data-area-c="koyo"]{--area-c:#5F8D3B;}
+[data-area-c="ryuyo"]{--area-c:#1E5E9F;}
+[data-area-c="fukude"]{--area-c:#8a8163;}
+[data-area-c="toyooka"]{--area-c:#7A5A36;}
+[data-area-c="common"]{--area-c:#5b6b74;}
+
+@media(max-width:980px){ .rm-stat-grid{grid-template-columns:repeat(2,1fr);} .rm-area-grid{grid-template-columns:repeat(3,1fr);} }
+@media(max-width:640px){ .rm-area-grid{grid-template-columns:repeat(2,1fr);} table.rm-table{font-size:12.5px;} .rm-title-cell{max-width:220px;} }
+</style>
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+</head>
+<body>
+
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#districts">地区から探す</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<div class="rm-head">
+  <p class="eyebrow">ROADMAP ｜ 磐田の記憶を計画的に残す</p>
+  <h1>今後読み物化する磐田のテーマ</h1>
+  <p>磐田物語では、見付宿、遠江国府、城之崎城、中泉御殿、天竜川水運、掛塚湊、旧東海道、古墳、地名、古写真など、磐田市内の地域史テーマを順次調査し、読み物として公開していきます。</p>
+  <p>このページは、磐田の記憶を後世に残すための「公開予定テーマ台帳」です。調査中・準備中のものも含め、今後の磐田物語の方向性を可視化しています。</p>
+  <p class="rm-note">表示は「近日公開」を約束するものではなく、あくまで今後の調査・読み物化の計画です。地区・分野・進捗・優先度で絞り込んでご覧いただけます。</p>
+</div>
+
+<div class="rm-stats">
+  <div class="rm-stat-grid" id="rm-stat-grid">
+    <div class="rm-stat-card"><div class="num" id="stat-total">―</div><div class="lbl">計画テーマ数</div></div>
+    <div class="rm-stat-card"><div class="num" id="stat-published">―</div><div class="lbl">公開中</div></div>
+    <div class="rm-stat-card"><div class="num" id="stat-progress">―</div><div class="lbl">調査・執筆が進行中</div></div>
+    <div class="rm-stat-card"><div class="num" id="stat-planned">―</div><div class="lbl">構想中・調査予定</div></div>
+  </div>
+
+  <div class="rm-area-grid" id="rm-area-grid" aria-label="地区別の内訳"></div>
+</div>
+
+<div class="rm-filter">
+  <div class="rm-filter-row">
+    <label>キーワード
+      <input type="text" id="f-q" placeholder="テーマ名・分野で検索" autocomplete="off">
+    </label>
+    <label>地区
+      <select id="f-area"><option value="">すべての地区</option></select>
+    </label>
+    <label>分野
+      <select id="f-category"><option value="">すべての分野</option></select>
+    </label>
+    <label>優先度
+      <select id="f-priority"><option value="">すべての優先度</option><option value="A">A</option><option value="B">B</option><option value="C">C</option></select>
+    </label>
+    <label>進捗
+      <select id="f-status"><option value="">すべての進捗</option></select>
+    </label>
+  </div>
+  <div class="rm-chips">
+    <span class="rm-chip" data-quick="published">公開済みのみ</span>
+    <span class="rm-chip" data-quick="researching">調査中のみ</span>
+    <span class="rm-chip" data-quick="soon">近日公開予定のみ</span>
+    <span class="rm-chip" data-quick="reset">絞り込みをリセット</span>
+  </div>
+</div>
+
+<div class="rm-table-wrap">
+  <p class="rm-count" id="rm-count"></p>
+  <div id="rm-table-holder">
+    <p class="rm-loading">テーマ一覧を読み込んでいます…</p>
+  </div>
+</div>
+
+<div class="rm-back">
+  <a href="/">磐田物語トップへ戻る</a>
+</div>
+
+<footer class="im-foot"></footer>
+
+<script>
+(function(){
+  var AREA_NAME = {mitsuke:'見付',nakaizumi:'中泉',mikuriya:'御厨',toyoda:'豊田',nanbu:'南部',koyo:'向陽',ryuyo:'竜洋',fukude:'福田',toyooka:'豊岡',common:'磐田共通'};
+  var STATUS_NAME = {
+    planned:'構想中', research_queued:'調査予定', researching:'調査中', research_done:'読み物化準備中',
+    outline_done:'構成中', html_draft:'近日公開予定', reviewing:'最終確認中', published:'公開中',
+    hold:'保留中', merged:'関連テーマへ統合'
+  };
+  var STATUS_ORDER = ['planned','research_queued','researching','research_done','outline_done','html_draft','reviewing','published','hold','merged'];
+
+  var state = { data: [], area:'', category:'', priority:'', status:'', q:'' };
+
+  function statusClass(s){
+    if (s === 'published') return 'is-published';
+    if (s === 'html_draft' || s === 'reviewing') return 'is-soon';
+    if (s === 'researching' || s === 'research_done' || s === 'outline_done' || s === 'research_queued') return 'is-progress';
+    return '';
+  }
+
+  function escapeHtml(str){
+    return String(str).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  function renderStats(data){
+    document.getElementById('stat-total').textContent = data.length;
+    var published = data.filter(function(t){ return t.deepreach_status === 'published' || t.article_status === 'published'; }).length;
+    var progress = data.filter(function(t){ return ['researching','research_done','outline_done','html_draft','reviewing'].indexOf(t.deepreach_status) !== -1; }).length;
+    var planned = data.filter(function(t){ return ['planned','research_queued'].indexOf(t.deepreach_status) !== -1; }).length;
+    document.getElementById('stat-published').textContent = published;
+    document.getElementById('stat-progress').textContent = progress;
+    document.getElementById('stat-planned').textContent = planned;
+
+    var areaCounts = {};
+    data.forEach(function(t){ areaCounts[t.primary_area] = (areaCounts[t.primary_area]||0) + 1; });
+    var order = ['mitsuke','nakaizumi','mikuriya','toyoda','nanbu','koyo','ryuyo','fukude','toyooka','common'];
+    var grid = document.getElementById('rm-area-grid');
+    grid.innerHTML = order.filter(function(a){ return areaCounts[a]; }).map(function(a){
+      return '<button type="button" class="rm-area-card" data-area-c="'+a+'" data-area="'+a+'"><div class="an">'+AREA_NAME[a]+'</div><div class="ac">'+areaCounts[a]+'テーマ</div></button>';
+    }).join('');
+    grid.querySelectorAll('.rm-area-card').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var a = btn.getAttribute('data-area');
+        state.area = (state.area === a) ? '' : a;
+        document.getElementById('f-area').value = state.area;
+        applyFilters();
+      });
+    });
+  }
+
+  function populateSelects(data){
+    var areaSel = document.getElementById('f-area');
+    ['mitsuke','nakaizumi','mikuriya','toyoda','nanbu','koyo','ryuyo','fukude','toyooka','common'].forEach(function(a){
+      if (!data.some(function(t){ return t.primary_area === a; })) return;
+      var opt = document.createElement('option');
+      opt.value = a; opt.textContent = AREA_NAME[a];
+      areaSel.appendChild(opt);
+    });
+
+    var cats = Array.from(new Set(data.map(function(t){ return t.category; }))).sort();
+    var catSel = document.getElementById('f-category');
+    cats.forEach(function(c){
+      var opt = document.createElement('option');
+      opt.value = c; opt.textContent = c;
+      catSel.appendChild(opt);
+    });
+
+    var statuses = Array.from(new Set(data.map(function(t){ return t.deepreach_status; })));
+    var statusSel = document.getElementById('f-status');
+    STATUS_ORDER.filter(function(s){ return statuses.indexOf(s) !== -1; }).forEach(function(s){
+      var opt = document.createElement('option');
+      opt.value = s; opt.textContent = STATUS_NAME[s];
+      statusSel.appendChild(opt);
+    });
+  }
+
+  function renderTable(){
+    var data = state.data.filter(function(t){
+      if (state.area && t.primary_area !== state.area) return false;
+      if (state.category && t.category !== state.category) return false;
+      if (state.priority && t.priority !== state.priority) return false;
+      if (state.status && t.deepreach_status !== state.status) return false;
+      if (state.q){
+        var q = state.q.toLowerCase();
+        if (t.title.toLowerCase().indexOf(q) === -1 && t.category.toLowerCase().indexOf(q) === -1) return false;
+      }
+      return true;
+    });
+
+    document.getElementById('rm-count').textContent = '全' + state.data.length + 'テーマ中 ' + data.length + '件を表示';
+
+    var holder = document.getElementById('rm-table-holder');
+    if (!data.length){
+      holder.innerHTML = '<p class="rm-empty">条件に一致するテーマがありません。</p>';
+      return;
+    }
+
+    var rows = data.map(function(t){
+      var relatedNames = (t.related_areas||[]).map(function(a){ return AREA_NAME[a]; }).join('・');
+      var badgeCls = t.primary_area === 'common' ? ' is-common' : '';
+      var urlCell = t.article_url ? '<a href="'+escapeHtml(t.article_url)+'">記事を読む →</a>' : '<span style="color:var(--ink-soft);">準備中</span>';
+      return '<tr>'
+        + '<td>'+escapeHtml(t.id)+'</td>'
+        + '<td><span class="rm-badge'+badgeCls+'" data-area-c="'+t.primary_area+'">'+AREA_NAME[t.primary_area]+'</span></td>'
+        + '<td class="rm-title-cell">'+escapeHtml(t.title)+'<div style="color:var(--ink-soft);font-size:11.5px;margin-top:3px;">'+escapeHtml(relatedNames)+'</div></td>'
+        + '<td>'+escapeHtml(t.category)+'</td>'
+        + '<td><span class="rm-status '+statusClass(t.deepreach_status)+'">'+escapeHtml(STATUS_NAME[t.deepreach_status]||t.deepreach_status)+'</span></td>'
+        + '<td class="rm-pri rm-pri-'+escapeHtml(t.priority)+'">'+escapeHtml(t.priority)+'</td>'
+        + '<td>'+urlCell+'</td>'
+        + '</tr>';
+    }).join('');
+
+    holder.innerHTML = '<table class="rm-table">'
+      + '<thead><tr><th>ID</th><th>地区</th><th>テーマ</th><th>分野</th><th>進捗</th><th>優先度</th><th>公開状況</th></tr></thead>'
+      + '<tbody>' + rows + '</tbody></table>';
+  }
+
+  function applyFilters(){
+    state.area = document.getElementById('f-area').value;
+    state.category = document.getElementById('f-category').value;
+    state.priority = document.getElementById('f-priority').value;
+    state.status = document.getElementById('f-status').value;
+    state.q = document.getElementById('f-q').value;
+
+    document.querySelectorAll('.rm-area-card').forEach(function(btn){
+      btn.classList.toggle('is-active', btn.getAttribute('data-area') === state.area && !!state.area);
+    });
+
+    renderTable();
+  }
+
+  ['f-area','f-category','f-priority','f-status'].forEach(function(id){
+    document.getElementById(id).addEventListener('change', applyFilters);
+  });
+  document.getElementById('f-q').addEventListener('input', applyFilters);
+
+  document.querySelectorAll('.rm-chip').forEach(function(chip){
+    chip.addEventListener('click', function(){
+      var quick = chip.getAttribute('data-quick');
+      document.querySelectorAll('.rm-chip').forEach(function(c){ c.classList.remove('is-active'); });
+      if (quick === 'reset'){
+        document.getElementById('f-area').value = '';
+        document.getElementById('f-category').value = '';
+        document.getElementById('f-priority').value = '';
+        document.getElementById('f-status').value = '';
+        document.getElementById('f-q').value = '';
+        state.area = state.category = state.priority = state.status = state.q = '';
+        document.querySelectorAll('.rm-area-card').forEach(function(btn){ btn.classList.remove('is-active'); });
+      } else {
+        chip.classList.add('is-active');
+        document.getElementById('f-status').value = '';
+        if (quick === 'published') state.status = 'published';
+        if (quick === 'researching') state.status = 'researching';
+        if (quick === 'soon') state.status = 'html_draft';
+        document.getElementById('f-status').value = state.status;
+      }
+      renderTable();
+    });
+  });
+
+  fetch('/data/future-themes.json?v=20260704')
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      state.data = data;
+      renderStats(data);
+      populateSelects(data);
+      renderTable();
+    })
+    .catch(function(err){
+      document.getElementById('rm-table-holder').innerHTML = '<p class="rm-empty">テーマ一覧の読み込みに失敗しました。時間をおいて再度お試しください。</p>';
+      console.error(err);
+    });
+})();
+</script>
+
+</body>
+</html>
