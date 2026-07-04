@@ -75,11 +75,8 @@ a{color:var(--brown-deep);}
 .rm-area-card .an{font-weight:700;font-size:14.5px;color:var(--area-c,var(--brown-deep));}
 .rm-area-card .ac{font-size:12px;color:var(--ink-soft);margin-top:3px;}
 
-.rm-filter{max-width:1180px;margin:0 auto 18px;padding:16px 22px;background:var(--paper-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-.rm-filter-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
-.rm-filter-row label{font-size:12px;color:var(--ink-soft);display:flex;flex-direction:column;gap:4px;}
-.rm-filter-row select,.rm-filter-row input[type="text"]{font-family:inherit;font-size:13.5px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink);min-width:120px;}
-.rm-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+.rm-filter{max-width:1180px;margin:0 auto 14px;padding:0 22px;}
+.rm-chips{display:flex;flex-wrap:wrap;gap:8px;}
 .rm-chip{font-size:12.5px;color:var(--brown-deep);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer;transition:.15s;}
 .rm-chip:hover{background:var(--brown);color:#fff;border-color:var(--brown);}
 .rm-chip.is-active{background:var(--brown);color:#fff;border-color:var(--brown);}
@@ -88,8 +85,11 @@ a{color:var(--brown-deep);}
 .rm-table-wrap{max-width:1180px;margin:0 auto;padding:0 22px 60px;overflow-x:auto;}
 table.rm-table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;}
 table.rm-table th,table.rm-table td{border-bottom:1px solid var(--line);padding:10px 10px;text-align:left;vertical-align:top;}
-table.rm-table th{background:var(--paper-deep);font-size:12px;color:var(--brown-deep);letter-spacing:.04em;white-space:nowrap;position:sticky;top:0;}
+table.rm-table thead th{background:var(--paper-deep);font-size:12px;color:var(--brown-deep);letter-spacing:.04em;white-space:nowrap;}
 table.rm-table tr:hover td{background:#fbfaf4;}
+tr.rm-filter-th-row th{background:#fff;padding:6px 8px 10px;vertical-align:middle;}
+tr.rm-filter-th-row select,tr.rm-filter-th-row input[type="text"]{width:100%;min-width:88px;font-family:inherit;font-size:12px;padding:6px 7px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink);}
+tr.rm-filter-th-row select:focus,tr.rm-filter-th-row input[type="text"]:focus{outline:2px solid var(--brown);outline-offset:-1px;}
 .rm-badge{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;color:#fff;background:var(--area-c,var(--brown));white-space:nowrap;}
 .rm-badge.is-common{background:#8a97a0;}
 .rm-pri{font-weight:700;}
@@ -165,23 +165,7 @@ table.rm-table tr:hover td{background:#fbfaf4;}
 </div>
 
 <div class="rm-filter">
-  <div class="rm-filter-row">
-    <label>キーワード
-      <input type="text" id="f-q" placeholder="テーマ名・分野で検索" autocomplete="off">
-    </label>
-    <label>地区
-      <select id="f-area"><option value="">すべての地区</option></select>
-    </label>
-    <label>分野
-      <select id="f-category"><option value="">すべての分野</option></select>
-    </label>
-    <label>優先度
-      <select id="f-priority"><option value="">すべての優先度</option><option value="A">A</option><option value="B">B</option><option value="C">C</option></select>
-    </label>
-    <label>進捗
-      <select id="f-status"><option value="">すべての進捗</option></select>
-    </label>
-  </div>
+  <p class="rm-count" id="rm-count"></p>
   <div class="rm-chips">
     <span class="rm-chip" data-quick="published">公開済みのみ</span>
     <span class="rm-chip" data-quick="researching">調査中のみ</span>
@@ -191,10 +175,25 @@ table.rm-table tr:hover td{background:#fbfaf4;}
 </div>
 
 <div class="rm-table-wrap">
-  <p class="rm-count" id="rm-count"></p>
-  <div id="rm-table-holder">
-    <p class="rm-loading">テーマ一覧を読み込んでいます…</p>
-  </div>
+  <table class="rm-table">
+    <thead>
+      <tr>
+        <th>ID</th><th>地区</th><th>テーマ</th><th>分野</th><th>進捗</th><th>優先度</th><th>公開状況</th>
+      </tr>
+      <tr class="rm-filter-th-row" aria-label="列で絞り込む">
+        <th></th>
+        <th><select id="f-area" aria-label="地区で絞り込む"><option value="">すべて</option></select></th>
+        <th><input type="text" id="f-q" placeholder="テーマ名で検索" autocomplete="off" aria-label="テーマ名で絞り込む"></th>
+        <th><select id="f-category" aria-label="分野で絞り込む"><option value="">すべて</option></select></th>
+        <th><select id="f-status" aria-label="進捗で絞り込む"><option value="">すべて</option></select></th>
+        <th><select id="f-priority" aria-label="優先度で絞り込む"><option value="">すべて</option><option value="A">A</option><option value="B">B</option><option value="C">C</option></select></th>
+        <th><select id="f-pub" aria-label="公開状況で絞り込む"><option value="">すべて</option><option value="published">公開中</option><option value="unpublished">準備中</option></select></th>
+      </tr>
+    </thead>
+    <tbody id="rm-tbody">
+      <tr><td colspan="7" class="rm-loading">テーマ一覧を読み込んでいます…</td></tr>
+    </tbody>
+  </table>
 </div>
 
 <div class="rm-back">
@@ -213,7 +212,9 @@ table.rm-table tr:hover td{background:#fbfaf4;}
   };
   var STATUS_ORDER = ['planned','research_queued','researching','research_done','outline_done','html_draft','reviewing','published','hold','merged'];
 
-  var state = { data: [], area:'', category:'', priority:'', status:'', q:'' };
+  var state = { data: [], area:'', category:'', priority:'', status:'', q:'', pub:'' };
+
+  function isPublished(t){ return !!(t.article_url && String(t.article_url).trim()); }
 
   function statusClass(s){
     if (s === 'published') return 'is-published';
@@ -286,25 +287,27 @@ table.rm-table tr:hover td{background:#fbfaf4;}
       if (state.category && t.category !== state.category) return false;
       if (state.priority && t.priority !== state.priority) return false;
       if (state.status && t.deepreach_status !== state.status) return false;
+      if (state.pub === 'published' && !isPublished(t)) return false;
+      if (state.pub === 'unpublished' && isPublished(t)) return false;
       if (state.q){
         var q = state.q.toLowerCase();
-        if (t.title.toLowerCase().indexOf(q) === -1 && t.category.toLowerCase().indexOf(q) === -1) return false;
+        if (t.title.toLowerCase().indexOf(q) === -1) return false;
       }
       return true;
     });
 
     document.getElementById('rm-count').textContent = '全' + state.data.length + 'テーマ中 ' + data.length + '件を表示';
 
-    var holder = document.getElementById('rm-table-holder');
+    var tbody = document.getElementById('rm-tbody');
     if (!data.length){
-      holder.innerHTML = '<p class="rm-empty">条件に一致するテーマがありません。</p>';
+      tbody.innerHTML = '<tr><td colspan="7" class="rm-empty">条件に一致するテーマがありません。</td></tr>';
       return;
     }
 
-    var rows = data.map(function(t){
+    tbody.innerHTML = data.map(function(t){
       var relatedNames = (t.related_areas||[]).map(function(a){ return AREA_NAME[a]; }).join('・');
       var badgeCls = t.primary_area === 'common' ? ' is-common' : '';
-      var urlCell = t.article_url ? '<a href="'+escapeHtml(t.article_url)+'">記事を読む →</a>' : '<span style="color:var(--ink-soft);">準備中</span>';
+      var urlCell = isPublished(t) ? '<a href="'+escapeHtml(t.article_url)+'">記事を読む →</a>' : '<span style="color:var(--ink-soft);">準備中</span>';
       return '<tr>'
         + '<td>'+escapeHtml(t.id)+'</td>'
         + '<td><span class="rm-badge'+badgeCls+'" data-area-c="'+t.primary_area+'">'+AREA_NAME[t.primary_area]+'</span></td>'
@@ -315,10 +318,6 @@ table.rm-table tr:hover td{background:#fbfaf4;}
         + '<td>'+urlCell+'</td>'
         + '</tr>';
     }).join('');
-
-    holder.innerHTML = '<table class="rm-table">'
-      + '<thead><tr><th>ID</th><th>地区</th><th>テーマ</th><th>分野</th><th>進捗</th><th>優先度</th><th>公開状況</th></tr></thead>'
-      + '<tbody>' + rows + '</tbody></table>';
   }
 
   function applyFilters(){
@@ -326,6 +325,7 @@ table.rm-table tr:hover td{background:#fbfaf4;}
     state.category = document.getElementById('f-category').value;
     state.priority = document.getElementById('f-priority').value;
     state.status = document.getElementById('f-status').value;
+    state.pub = document.getElementById('f-pub').value;
     state.q = document.getElementById('f-q').value;
 
     document.querySelectorAll('.rm-area-card').forEach(function(btn){
@@ -335,7 +335,7 @@ table.rm-table tr:hover td{background:#fbfaf4;}
     renderTable();
   }
 
-  ['f-area','f-category','f-priority','f-status'].forEach(function(id){
+  ['f-area','f-category','f-priority','f-status','f-pub'].forEach(function(id){
     document.getElementById(id).addEventListener('change', applyFilters);
   });
   document.getElementById('f-q').addEventListener('input', applyFilters);
@@ -349,16 +349,20 @@ table.rm-table tr:hover td{background:#fbfaf4;}
         document.getElementById('f-category').value = '';
         document.getElementById('f-priority').value = '';
         document.getElementById('f-status').value = '';
+        document.getElementById('f-pub').value = '';
         document.getElementById('f-q').value = '';
-        state.area = state.category = state.priority = state.status = state.q = '';
+        state.area = state.category = state.priority = state.status = state.pub = state.q = '';
         document.querySelectorAll('.rm-area-card').forEach(function(btn){ btn.classList.remove('is-active'); });
       } else {
         chip.classList.add('is-active');
         document.getElementById('f-status').value = '';
-        if (quick === 'published') state.status = 'published';
+        document.getElementById('f-pub').value = '';
+        state.status = ''; state.pub = '';
+        if (quick === 'published') state.pub = 'published';
         if (quick === 'researching') state.status = 'researching';
         if (quick === 'soon') state.status = 'html_draft';
         document.getElementById('f-status').value = state.status;
+        document.getElementById('f-pub').value = state.pub;
       }
       renderTable();
     });
@@ -373,7 +377,7 @@ table.rm-table tr:hover td{background:#fbfaf4;}
       renderTable();
     })
     .catch(function(err){
-      document.getElementById('rm-table-holder').innerHTML = '<p class="rm-empty">テーマ一覧の読み込みに失敗しました。時間をおいて再度お試しください。</p>';
+      document.getElementById('rm-tbody').innerHTML = '<tr><td colspan="7" class="rm-empty">テーマ一覧の読み込みに失敗しました。時間をおいて再度お試しください。</td></tr>';
       console.error(err);
     });
 })();
