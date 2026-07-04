@@ -15,8 +15,8 @@
   font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 .gh-bar{
-  display:flex; align-items:center; justify-content:space-between;
-  min-height:72px; height:auto; max-width:1180px; margin:0 auto; padding:8px 22px; gap:16px;
+  display:flex; align-items:center; justify-content:flex-start;
+  min-height:72px; height:auto; max-width:1180px; margin:0 auto; padding:8px 22px; gap:36px;
 }
 .gh-brand{ display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap:2px; text-decoration:none; min-width:0; line-height:1.15; }
 .gh-logo{ font-family:"Shippori Mincho",serif; font-weight:800; font-size:25px; color:#1f3a48; white-space:nowrap; }
