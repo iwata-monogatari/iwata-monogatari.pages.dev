@@ -544,13 +544,13 @@ img{max-width:100%;display:block;}
   .festival-feature__button{display:block;width:max-content;background:var(--brown);color:#fff;font-size:13px;font-weight:700;border-radius:999px;padding:8px 18px;}
 
   /* メインFEATURE：幻の鉄路、磐田駅から。 */
-  .phantom-railway-banner{max-width:1180px;margin:24px auto 0;padding:0 22px;}
-  .phantom-railway-banner__link{display:block;color:var(--ink);background:linear-gradient(135deg,#2a3f4d 0%,#1f3a48 55%,#3a5874 100%);border:1px solid #16262f;border-radius:16px;padding:26px 28px 24px;box-shadow:0 1px 2px rgba(0,0,0,.12),0 10px 28px rgba(15,25,32,.28);}
+  .phantom-railway-banner{max-width:1180px;margin:24px auto 0;padding:0 22px;height:100%;}
+  .phantom-railway-banner__link{display:flex;flex-direction:column;height:100%;color:var(--ink);background:linear-gradient(135deg,#2a3f4d 0%,#1f3a48 55%,#3a5874 100%);border:1px solid #16262f;border-radius:16px;padding:26px 28px 24px;box-shadow:0 1px 2px rgba(0,0,0,.12),0 10px 28px rgba(15,25,32,.28);}
   .phantom-railway-banner__eyebrow{font-size:11.5px;letter-spacing:.18em;color:#8fd0e8;font-weight:700;margin:0 0 8px;}
   .phantom-railway-banner__link h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:clamp(21px,3vw,28px);line-height:1.5;color:#fdfaf2;margin:0 0 10px;letter-spacing:.03em;}
   .phantom-railway-banner__link h2 a{color:inherit;text-decoration:none;}
   .phantom-railway-banner__link p.lead{font-size:14px;color:#cfe0e8;margin:0 0 18px;line-height:1.8;}
-  .phantom-railway-banner__links{display:flex;flex-wrap:wrap;gap:10px;}
+  .phantom-railway-banner__links{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;}
   .phantom-railway-banner__links a{display:inline-flex;align-items:center;background:#d6b06c;color:#2b2118;font-size:13.5px;font-weight:700;border-radius:999px;padding:9px 18px;text-decoration:none;transition:.2s;}
   .phantom-railway-banner__links a:hover{background:#e4c17d;}
   @media(max-width:680px){.phantom-railway-banner__link{padding:20px 20px;}}
@@ -566,42 +566,47 @@ img{max-width:100%;display:block;}
   @media(max-width:860px){.entry-grid{grid-template-columns:1fr 1fr;}}
   @media(max-width:480px){.entry-grid{grid-template-columns:1fr;}}
 
-  /* 進捗管理ダッシュボード（今後読み物化するテーマ）バナー */
-  .roadmap-banner{max-width:1180px;margin:24px auto 0;padding:0 22px;}
-  .roadmap-banner__link{display:block;color:#fff;text-decoration:none;background:linear-gradient(135deg,#145c8f 0%,#1c78b5 55%,#3fa0c9 100%);border:1px solid #0e3f61;border-radius:16px;padding:24px 28px 22px;box-shadow:0 1px 2px rgba(0,0,0,.1),0 10px 26px rgba(20,74,112,.25);}
+  /* 進捗管理ダッシュボード（今後読み物化するテーマ）バナー＋鉄路特集バナー：左右2カラム */
+  .feature-banners{max-width:1180px;margin:24px auto 0;padding:0 22px;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch;}
+  .feature-banners .roadmap-banner,
+  .feature-banners .phantom-railway-banner{margin:0;padding:0;max-width:none;}
+  .roadmap-banner__link{display:flex;flex-direction:column;height:100%;color:#fff;text-decoration:none;background:linear-gradient(135deg,#145c8f 0%,#1c78b5 55%,#3fa0c9 100%);border:1px solid #0e3f61;border-radius:16px;padding:24px 28px 22px;box-shadow:0 1px 2px rgba(0,0,0,.1),0 10px 26px rgba(20,74,112,.25);}
   .roadmap-banner__eyebrow{font-size:11.5px;letter-spacing:.18em;color:#cdeaf9;font-weight:700;margin:0 0 8px;}
   .roadmap-banner__link h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:clamp(20px,2.8vw,26px);line-height:1.5;color:#fff;margin:0 0 8px;letter-spacing:.02em;}
-  .roadmap-banner__lead{font-size:13.5px;color:#e4f2f9;margin:0 0 16px;line-height:1.85;max-width:760px;}
-  .roadmap-banner__meta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+  .roadmap-banner__lead{font-size:13.5px;color:#e4f2f9;margin:0 0 16px;line-height:1.85;}
+  .roadmap-banner__meta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:auto;}
   .roadmap-banner__cta{display:inline-flex;align-items:center;background:#fff;color:#145c8f;font-size:13.5px;font-weight:700;border-radius:999px;padding:9px 20px;text-decoration:none;transition:.2s;}
   .roadmap-banner__cta:hover{background:#eaf6fc;}
   .roadmap-banner__stat{font-size:12.5px;color:#cdeaf9;}
   @media(max-width:680px){.roadmap-banner__link{padding:20px 20px;}}
+  @media(max-width:900px){.feature-banners{grid-template-columns:1fr;}}
 </style>
-<section class="roadmap-banner" aria-label="今後読み物化するテーマ一覧・進捗ダッシュボード">
-  <a class="roadmap-banner__link" href="/future-themes.html">
-    <p class="roadmap-banner__eyebrow">ROADMAP ｜ 進捗管理ダッシュボード</p>
-    <h2>今後読み物化する磐田のテーマ、120本を公開中</h2>
-    <p class="roadmap-banner__lead">見付宿、遠江国府、城之崎城、中泉御殿、天竜川水運、掛塚湊、旧東海道、古墳、地名、古写真――磐田物語がこれから調査・記事化していくテーマを、地区・分野・進捗・優先度で一覧できます。</p>
-    <div class="roadmap-banner__meta">
-      <span class="roadmap-banner__cta">進捗ダッシュボードを見る →</span>
-      <span class="roadmap-banner__stat">9地区・120テーマの調査計画を公開中</span>
-    </div>
-  </a>
-</section>
+<div class="feature-banners">
+  <section class="roadmap-banner" aria-label="今後読み物化するテーマ一覧・進捗ダッシュボード">
+    <a class="roadmap-banner__link" href="/future-themes.html">
+      <p class="roadmap-banner__eyebrow">ROADMAP ｜ 進捗管理ダッシュボード</p>
+      <h2>今後読み物化する磐田のテーマ、120本を公開中</h2>
+      <p class="roadmap-banner__lead">見付宿、遠江国府、城之崎城、中泉御殿、天竜川水運、掛塚湊、旧東海道、古墳、地名、古写真――磐田物語がこれから調査・記事化していくテーマを、地区・分野・進捗・優先度で一覧できます。</p>
+      <div class="roadmap-banner__meta">
+        <span class="roadmap-banner__cta">進捗ダッシュボードを見る →</span>
+        <span class="roadmap-banner__stat">9地区・120テーマの調査計画を公開中</span>
+      </div>
+    </a>
+  </section>
 
-<section class="phantom-railway-banner" aria-label="特集：磐田駅から消えた二つの鉄路――中泉軌道と光明電気鉄道">
-  <div class="phantom-railway-banner__link">
-    <p class="phantom-railway-banner__eyebrow">FEATURE ｜ 総論・近代交通史（全8ページ公開）</p>
-    <h2><a href="/c051.html">幻の鉄路、磐田駅から。</a></h2>
-    <p class="lead">いまの磐田駅の北へ、かつて中泉軌道と光明電気鉄道が伸びていた。天竜川水運と見付・二俣を結ぼうとした二つの鉄路の記憶を、駅一覧や現存遺構までたどる特集です。</p>
-    <div class="phantom-railway-banner__links">
-      <a href="/c051.html">磐田駅から伸びた幻の鉄路を読む</a>
-      <a href="/c052.html">中泉軌道と光明電気鉄道の特集を見る</a>
-      <a href="/c055.html">駅一覧と現存遺構をたどる</a>
+  <section class="phantom-railway-banner" aria-label="特集：磐田駅から消えた二つの鉄路――中泉軌道と光明電気鉄道">
+    <div class="phantom-railway-banner__link">
+      <p class="phantom-railway-banner__eyebrow">FEATURE ｜ 総論・近代交通史（全8ページ公開）</p>
+      <h2><a href="/c051.html">幻の鉄路、磐田駅から。</a></h2>
+      <p class="lead">いまの磐田駅の北へ、かつて中泉軌道と光明電気鉄道が伸びていた。天竜川水運と見付・二俣を結ぼうとした二つの鉄路の記憶を、駅一覧や現存遺構までたどる特集です。</p>
+      <div class="phantom-railway-banner__links">
+        <a href="/c051.html">磐田駅から伸びた幻の鉄路を読む</a>
+        <a href="/c052.html">中泉軌道と光明電気鉄道の特集を見る</a>
+        <a href="/c055.html">駅一覧と現存遺構をたどる</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
 <section class="entry-section" aria-label="磐田物語の入口">
   <h2>磐田物語の入口</h2>
@@ -610,7 +615,6 @@ img{max-width:100%;display:block;}
     <a class="entry-card" href="#districts"><h3>地区から探す</h3><p>見付・中泉・竜洋・福田・豊田など、地域ごとに記事をたどれます。</p></a>
     <a class="entry-card" href="/theme.html"><h3>テーマから探す</h3><p>交通史、学校、祭り、戦争の記憶、地名、古写真などから探せます。</p></a>
     <a class="entry-card" href="/c019.html"><h3>佐口史料室を見る</h3><p>引札・浮世絵・古地図・絵葉書・古写真などの史料を公開しています。</p></a>
-    <a class="entry-card" href="/future-themes.html"><h3>今後読み物化するテーマ</h3><p>調査・記事化を計画中の120テーマを進捗ダッシュボードで確認できます。</p></a>
   </div>
 </section>
 
@@ -795,10 +799,10 @@ img{max-width:100%;display:block;}
           @media(max-width:680px){.feature-list-grid{grid-template-columns:1fr;}}
         </style>
         <div class="feature-list-grid">
-          <a class="feature-list-card" href="/c051.html">
-            <div class="tagk">総論・近代交通史／全8ページ</div>
-            <h3>幻の鉄路、磐田駅から。</h3>
-            <p>中泉軌道と光明電気鉄道。天竜川水運と見付・二俣を結ぼうとした二つの鉄路の記憶をたどる特集。</p>
+          <a class="feature-list-card" href="/c037.html">
+            <div class="tagk">SPECIAL｜遠州の文人画をたどる</div>
+            <h3>遠州画人伝を読む</h3>
+            <p>福田半香を中心に、見付・掛川・浜松・田原・江戸を結ぶ遠州文人画の世界を読む特集。</p>
           </a>
           <a class="feature-list-card" href="/c027.html">
             <div class="tagk">SPECIAL｜磐田の風景が映画に残る</div>
