@@ -901,7 +901,7 @@ nav.menu a:hover{color:var(--brown-deep);}
       <section class="section news-section" id="new">
         <p class="eyebrow">UPDATE ｜ 公開履歴・更新履歴</p>
         <h2 class="sectitle">新着記事</h2>
-        <!-- 新着記事は13件まで表示。同日公開の連続特集は代表ページ1件にまとめて表示する -->
+        <!-- 新着記事は10件まで表示。同日公開の連続特集は代表ページ1件にまとめて表示する -->
         <ul class="new-article-list news-list" id="new-article-list" aria-label="新着記事一覧">
 
           <li class="new-article-item news-item" data-district="soron">
@@ -971,27 +971,6 @@ nav.menu a:hover{color:var(--brown-deep);}
             <a href="/t034.html" class="new-article-link news-link area-toyoda">
               <span class="news-meta"><time class="new-article-date news-date" datetime="2026-07-03">2026-07-03</time><span class="new-article-category news-tag">豊田・文学・伝承</span></span>
               <span class="new-article-title news-title">熊野絵巻を読む ── 熊野・千手・朝顔、三人の女性たちの物語</span>
-              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-          <li class="new-article-item news-item" data-district="ryuyo">
-            <a href="/r031.html" class="new-article-link news-link area-ryuyo">
-              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-07-03">2026-07-03</time><span class="new-article-category news-tag">竜洋・教育史・前史</span></span>
-              <span class="new-article-title news-title">遠州の学問の土壌 ── 杉浦真崎・報徳運動と竜洋の寺子屋</span>
-              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-          <li class="new-article-item news-item" data-district="ryuyo">
-            <a href="/r030.html" class="new-article-link news-link area-ryuyo">
-              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-07-03">2026-07-03</time><span class="new-article-category news-tag">竜洋・教育史・震災</span></span>
-              <span class="new-article-title news-title">東南海地震と竜洋の学校 ── 空襲下の震災と学びの再開</span>
-              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-          <li class="new-article-item news-item" data-district="ryuyo">
-            <a href="/r029.html" class="new-article-link news-link area-ryuyo">
-              <span class="news-meta"><time class="new-article-date news-date" datetime="2026-07-03">2026-07-03</time><span class="new-article-category news-tag">竜洋・教育史・戦時下</span></span>
-              <span class="new-article-title news-title">天竜飛行場と竜洋の学童 ── 学徒動員・疎開・「勝つまでは」の記憶</span>
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
@@ -1559,7 +1538,7 @@ nav.menu a:hover{color:var(--brown-deep);}
       var list = document.getElementById('new-article-list');
       if (!list) return;
       list.innerHTML = '';
-      data.slice(0, 13).forEach(function(item){
+      data.slice(0, 10).forEach(function(item){
         var li = document.createElement('li');
         li.className = 'new-article-item news-item';
         var district = newArticleDistrict(item);
