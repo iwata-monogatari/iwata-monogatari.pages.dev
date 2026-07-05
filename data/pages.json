@@ -1,7 +1,7 @@
 ﻿{
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-07-03",
+  "updated_at": "2026-07-05",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -4453,8 +4453,13 @@
     {
       "title": "遠江国府はどこにあったのか ── 古代遠江の政治の中心をめぐって",
       "url": "n033.html",
-      "district": ["nakaizumi"],
-      "themes": ["land-memory", "place-name"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "land-memory",
+        "place-name"
+      ],
       "content_type": "reading",
       "published_at": "2026-06-28",
       "updated_at": "2026-06-28",
@@ -4469,8 +4474,14 @@
     {
       "title": "国分寺ものがたり ── 天平の寺はどう生き続けたか（特集・全12ページ公開）",
       "url": "n034.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "land-memory", "village-history"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory",
+        "village-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4485,8 +4496,13 @@
     {
       "title": "講堂が倒れた日 ── 治安2年の大風と太政官への嘆願",
       "url": "n035.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "land-memory"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4502,8 +4518,13 @@
     {
       "title": "鎌倉時代の国分寺 ── 釈迦から薬師へ、本尊が変わるとき",
       "url": "n036.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "land-memory"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4519,8 +4540,13 @@
     {
       "title": "記録が消えた理由 ── 東海道と国分寺の前を通らなくなった道",
       "url": "n037.html",
-      "district": ["nakaizumi"],
-      "themes": ["land-memory", "village-history"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "land-memory",
+        "village-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4536,8 +4562,14 @@
     {
       "title": "堀越氏延の鰐口 ── 大永2年、見付端城主の寄進",
       "url": "n038.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "cultural-property", "person"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "cultural-property",
+        "person"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4553,8 +4585,14 @@
     {
       "title": "中泉代官と薬師堂の再興 ── 中野七蔵・高室昌重と憲能和尚",
       "url": "n039.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "person", "village-history"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "person",
+        "village-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4570,8 +4608,14 @@
     {
       "title": "卵塔墓が語る260年 ── 国分寺住職たちの墓碑を読む",
       "url": "n040.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "person", "land-memory"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "person",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4587,8 +4631,13 @@
     {
       "title": "遠江四十九薬師霊場と庶民の信仰 ── 絵馬・巡礼・木喰上人",
       "url": "n041.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "land-memory"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4604,8 +4653,14 @@
     {
       "title": "境松の門前町 ── 東海道の立場と饅頭屋のあった風景",
       "url": "n042.html",
-      "district": ["nakaizumi"],
-      "themes": ["village-history", "place-name", "land-memory"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "village-history",
+        "place-name",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4621,8 +4676,13 @@
     {
       "title": "明治の廃寺 ── 上知令と国分寺の断絶",
       "url": "n043.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "land-memory"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4638,8 +4698,13 @@
     {
       "title": "森本善苗尼と近藤文六 ── 昭和の国分寺復興",
       "url": "n044.html",
-      "district": ["nakaizumi"],
-      "themes": ["person", "shrine-temple"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "person",
+        "shrine-temple"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4655,8 +4720,13 @@
     {
       "title": "令和の薬師堂移築 ── 国分寺奉賛会と2度目の史跡公園",
       "url": "n045.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "land-memory"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4672,8 +4742,13 @@
     {
       "title": "磐田駅前・中泉の近代商業 ── 中泉駅開業から「天平のまち」まで",
       "url": "n046.html",
-      "district": ["nakaizumi"],
-      "themes": ["road-traffic", "land-memory"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "road-traffic",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4689,8 +4764,17 @@
     {
       "title": "磐田駅から消えた二つの鉄路 ── 中泉軌道と光明電気鉄道",
       "url": "c051.html",
-      "district": ["nakaizumi", "mitsuke", "toyoda"],
-      "themes": ["railway", "transportation", "modern-history", "land-memory"],
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "transportation",
+        "modern-history",
+        "land-memory"
+      ],
       "content_type": "feature",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4705,8 +4789,16 @@
     {
       "title": "中泉軌道とは何だったのか ── 天竜川水運と磐田駅を結んだ細い鉄路",
       "url": "c052.html",
-      "district": ["nakaizumi", "mitsuke", "toyoda"],
-      "themes": ["railway", "transportation", "modern-history"],
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "transportation",
+        "modern-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4722,8 +4814,16 @@
     {
       "title": "旧東海道を走った軌道 ── 中泉軌道のルートと松並木の記憶",
       "url": "c053.html",
-      "district": ["nakaizumi", "mitsuke", "toyoda"],
-      "themes": ["railway", "transportation", "land-memory"],
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "transportation",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4739,8 +4839,16 @@
     {
       "title": "光明電気鉄道の夢 ── 見付と二俣を結ぼうとした高速電車",
       "url": "c054.html",
-      "district": ["nakaizumi", "mitsuke", "toyoda"],
-      "themes": ["railway", "transportation", "modern-history"],
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "transportation",
+        "modern-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4756,8 +4864,16 @@
     {
       "title": "光明電鉄19駅一覧 ── 新中泉から二俣町までをたどる",
       "url": "c055.html",
-      "district": ["nakaizumi", "mitsuke", "toyoda"],
-      "themes": ["railway", "transportation", "reference-list"],
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "transportation",
+        "reference-list"
+      ],
       "content_type": "reference",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4773,8 +4889,16 @@
     {
       "title": "いま残る光明電鉄の痕跡 ── 平松駅、二俣口、トンネル、マンホール",
       "url": "c056.html",
-      "district": ["nakaizumi", "mitsuke", "toyoda"],
-      "themes": ["railway", "land-memory", "ruins"],
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "land-memory",
+        "ruins"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4790,8 +4914,16 @@
     {
       "title": "久根鉱山、木材、天竜川 ── 鉄道が運ぼうとしたもの",
       "url": "c057.html",
-      "district": ["nakaizumi", "mitsuke", "toyoda"],
-      "themes": ["railway", "industry", "land-memory"],
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "industry",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4807,8 +4939,16 @@
     {
       "title": "なぜ鉄路は消えたのか ── バス、三信鉄道、過剰投資の時代",
       "url": "c058.html",
-      "district": ["nakaizumi", "mitsuke", "toyoda"],
-      "themes": ["railway", "transportation", "modern-history"],
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "transportation",
+        "modern-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4824,8 +4964,14 @@
     {
       "title": "中泉軌道の会社史 ── 地域資本が敷いた5.8kmの人車軌道",
       "url": "c059.html",
-      "district": ["nakaizumi"],
-      "themes": ["railway", "industry", "modern-history"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "railway",
+        "industry",
+        "modern-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4841,8 +4987,14 @@
     {
       "title": "車丁が押した鉄路 ── 中泉軌道の人車・馬力運行と旅客利用",
       "url": "c060.html",
-      "district": ["nakaizumi"],
-      "themes": ["railway", "industry", "modern-history"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "railway",
+        "industry",
+        "modern-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4858,8 +5010,14 @@
     {
       "title": "中泉駅北の歴史地層 ── 御林・赤煉瓦・中泉御殿のそばを通った軌道",
       "url": "c061.html",
-      "district": ["nakaizumi"],
-      "themes": ["railway", "land-memory", "modern-history"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "railway",
+        "land-memory",
+        "modern-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4875,8 +5033,14 @@
     {
       "title": "廃線後の中泉軌道 ── 遠足・祭り・石碑に残った細い鉄路",
       "url": "c062.html",
-      "district": ["nakaizumi"],
-      "themes": ["railway", "land-memory", "ruins"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "railway",
+        "land-memory",
+        "ruins"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4892,8 +5056,15 @@
     {
       "title": "見付に残る幻の城 ── 徳川家康の築城伝説と城之崎城",
       "url": "m055.html",
-      "district": ["mitsuke"],
-      "themes": ["castle", "person", "military-history", "land-memory"],
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "castle",
+        "person",
+        "military-history",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4908,8 +5079,14 @@
     {
       "title": "城之崎城とは何か ── 城山球場・城山中学校に眠る未完の城",
       "url": "m056.html",
-      "district": ["mitsuke"],
-      "themes": ["castle", "military-history", "land-memory"],
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "castle",
+        "military-history",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4925,8 +5102,15 @@
     {
       "title": "なぜ家康は見付を選んだのか ── 国府・東海道・今之浦の地政学",
       "url": "m057.html",
-      "district": ["mitsuke"],
-      "themes": ["castle", "military-history", "road-traffic", "land-memory"],
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "castle",
+        "military-history",
+        "road-traffic",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4942,8 +5126,14 @@
     {
       "title": "城之崎城はなぜ未完に終わったのか ── 武田信玄・天竜川・水不足",
       "url": "m058.html",
-      "district": ["mitsuke"],
-      "themes": ["castle", "military-history", "land-memory"],
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "castle",
+        "military-history",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4959,8 +5149,16 @@
     {
       "title": "磐田が戦場になった時代 ── 一言坂・三ケ野・社山城・匂坂城",
       "url": "m059.html",
-      "district": ["mitsuke", "koyo", "toyoda"],
-      "themes": ["castle", "military-history", "land-memory"],
+      "district": [
+        "mitsuke",
+        "koyo",
+        "toyoda"
+      ],
+      "themes": [
+        "castle",
+        "military-history",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4976,8 +5174,15 @@
     {
       "title": "「秀吉に配慮した城」の正体 ── 中泉御殿との混同を解く",
       "url": "m060.html",
-      "district": ["mitsuke", "nakaizumi"],
-      "themes": ["castle", "military-history", "land-memory"],
+      "district": [
+        "mitsuke",
+        "nakaizumi"
+      ],
+      "themes": [
+        "castle",
+        "military-history",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -4993,8 +5198,14 @@
     {
       "title": "伝承はなぜ生まれるのか ── 城之崎城と中泉御殿が一つの物語になるまで",
       "url": "m061.html",
-      "district": ["mitsuke"],
-      "themes": ["castle", "military-history", "land-memory"],
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "castle",
+        "military-history",
+        "land-memory"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
@@ -5006,6 +5217,310 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "section": "見付"
+    },
+    {
+      "title": "見付宿の東木戸・西木戸・高札場 ── 宿場の境界と掟が置かれた場所",
+      "url": "m062.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "東海道見付宿の東木戸・西木戸・高札場。宿場の東西の範囲、木戸の役割、高札に掲げられた幕府の法令を、公的資料と現地の手がかりからたどる。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付"
+    },
+    {
+      "title": "見付の坂道・辻・曲がり角 ── 台地の縁が刻んだ宿場の道すじ",
+      "url": "m082.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "東坂・西坂という地名、宿場の曲がり角、木戸に挟まれた約626間の宿内。磐田原台地の縁という地形が見付の道すじにどう刻まれているかをたどる。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付"
+    },
+    {
+      "title": "見付の路地裏と生活道路 ── 拡幅された本通りと、残された小路の記憶",
+      "url": "m083.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "昭和期に拡幅された見付宿場通りの本通りと、今も蔵や明治期建築が残る裏路地。見付の十七小路を生活道路として読み直す。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付"
+    },
+    {
+      "title": "見付の水路・井戸・生活用水 ── 台地の縁の町が水とどう向き合ってきたか",
+      "url": "m084.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "明治42年の戸別明細図に描かれた水路、磐田原台地の縁という立地、昭和30年の上水道給水開始。見付の生活用水史をたどる。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付"
+    },
+    {
+      "title": "見付の旧家・屋号・家並み ── 名で語られる商家の記憶",
+      "url": "m085.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "見付宿本陣を務めた神谷家・鈴木家、明治の引札に残る商家の名前を手がかりに、宿場の家並みの記憶をたどる。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付"
+    },
+    {
+      "title": "見付の町家・蔵・商家建築 ── 宿場のかたちが今も残るところ",
+      "url": "m086.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "間口の狭い「うなぎの寝床」型の町家、通り土間、土蔵。見付宿場通りに残る建築様式と、大三河屋の薬医門などから商家建築をたどる。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付"
+    },
+    {
+      "title": "見付の寺町と寺院配置 ── 総社・天神・宗派の異なる寺々が重なる町",
+      "url": "m087.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "淡海国玉神社と見付天神の役割分担、日蓮宗・浄土宗・時宗という宗派の異なる寺院群。見付になぜ寺社が集まったのかを読み解く。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付"
+    },
+    {
+      "title": "見付の古写真・絵葉書から消えた建物を復元する",
+      "url": "m088.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "明治42年の戸別明細図に記された郡役所・登記所・製造所。古い絵葉書・引札という窓から、見付の町で今は見えなくなった建物を考える。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付"
+    },
+    {
+      "title": "矢奈比賣神社と見付天神 ── 女神と学問の神が重なる社",
+      "url": "m102.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "女神・矢奈比賣命を祀る古社でありながら「見付天神」として菅原道真を配し、二つの信仰が重なる矢奈比賣神社を、境内の末社・石造物から読む。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付"
+    },
+    {
+      "title": "磐田文庫と幕末・明治の地域知性 ── 大久保忠尚がつくった見付の文庫",
+      "url": "m112.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "元治元年、見付の神官・大久保忠尚が私財を投じて設立した磐田文庫。国学者ネットワーク、蔵書、旧見付学校への継承をたどる。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付"
+    },
+    {
+      "title": "旧見付学校以前の寺子屋教育 ── 宣光寺・省光寺と見付の手習い",
+      "url": "m113.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "明治8年の旧見付学校ができる前、見付の子どもたちはどこで学んでいたのか。宣光寺・省光寺の仮校舎と寺子屋教育をたどる。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付"
+    },
+    {
+      "title": "見付地区の学校史と地域教育 ── 見付学校から磐田北小学校へ",
+      "url": "m114.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "見付学校、見付尋常高等小学校、見付国民学校、磐田北小学校。校名変遷と幻の見付中学校まで、見付の学校の歩みをたどる。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付"
+    },
+    {
+      "title": "校歌・学校区から見る見付の地域意識",
+      "url": "m115.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "見付尋常高等小学校の男女合併、国民学校への改称、磐田北小学校への統一。校名・学校区の変遷が映す地域意識の移り変わりを読む。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付"
+    },
+    {
+      "title": "古墳と川・海・道 ── 磐田海・大乃浦と、東海道以前の水運の記憶",
+      "url": "u032.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田原台地に古墳を築いた有力者は何を通じて鉄や鏡を得たのか。磐田海・大乃浦、東海道以前の道「二見の道」、天竜川の水運から読む。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "御厨"
+    },
+    {
+      "title": "消えた古墳・塚地名の調査 ── 経塚古墳・堂山古墳と、名だけが残る塚",
+      "url": "u033.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "東海道線工事や明治の土取りで失われた古墳がある。経塚古墳・堂山古墳の記録と、「塚」という地名が語ること・語れないことを読む。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "御厨"
+    },
+    {
+      "title": "発掘調査報告書から読む磐田の古代 ── 一次資料の探し方と読み方",
+      "url": "u034.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-05",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田の古墳を語る記事の多くは発掘調査報告書という一次資料に支えられている。全国遺跡報告総覧の使い方、報告書と伝承の違いを読む。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "御厨"
     }
   ]
 }
