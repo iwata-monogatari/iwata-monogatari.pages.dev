@@ -924,7 +924,7 @@ img{max-width:100%;display:block;}
       <section class="section news-section" id="new">
         <p class="eyebrow">UPDATE ｜ 公開履歴・更新履歴</p>
         <h2 class="sectitle">新着記事</h2>
-        <!-- 新着記事は10件まで表示。同日公開の連続特集は代表ページ1件にまとめて表示する -->
+        <!-- 新着記事は14件まで表示。同日公開の連続特集は代表ページ1件にまとめて表示する -->
         <ul class="new-article-list news-list" id="new-article-list" aria-label="新着記事一覧">
 
           <li class="new-article-item news-item" data-district="mitsuke">
@@ -1554,14 +1554,17 @@ img{max-width:100%;display:block;}
   fetch('/data/new-articles.json?t=' + new Date().getTime())
     .then(function(res){ return res.json(); })
     .then(function(data){
+      data.forEach(function(item, i){ item.__idx = i; });
       data.sort(function(a, b){
-        return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0);
+        if (a.date < b.date) return 1;
+        if (a.date > b.date) return -1;
+        return b.__idx - a.__idx;
       });
       data = collapseSeries(data);
       var list = document.getElementById('new-article-list');
       if (!list) return;
       list.innerHTML = '';
-      data.slice(0, 10).forEach(function(item){
+      data.slice(0, 14).forEach(function(item){
         var li = document.createElement('li');
         li.className = 'new-article-item news-item';
         var district = newArticleDistrict(item);
