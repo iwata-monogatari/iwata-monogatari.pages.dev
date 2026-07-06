@@ -1,7 +1,7 @@
 ﻿{
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-07-05",
+  "updated_at": "2026-07-06",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -6220,6 +6220,44 @@
       "date_provisional": false,
       "status": "published",
       "summary": "大の浦の水運を担った丸木舟(スギ・マキ材)、80cmの木製鋤、井戸枠へのリサイクル。磐田の低湿地に奇跡的に残った古墳時代の木の道具をたどる。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通"
+    },
+    {
+      "title": "古墳が神社になった土地 ── 磐田の信仰空間の継承と地名の記憶",
+      "url": "c085.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-06",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "御厨古墳群の真上に建つ鎌田神明宮、葬送氏族・土師氏の末裔が菅原道真として祀られた見付天神、古墳→神社→城と変転した社山。古墳(死者の空間)が神社・寺院へ、そして地名へと受け継がれた磐田の信仰空間をたどる。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通"
+    },
+    {
+      "title": "敷地・岩室廃寺と古代の灯台 ── 山あいの密教寺院が照らした大之浦",
+      "url": "c086.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-06",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "空海開基と伝わる山岳寺院・岩室廃寺。海抜80mの高台に残る口燈明台・奥燈明台は、大之浦の船を導いた古代の灯台だったと伝わる。敷地地区の密教と山王信仰(野辺神社)をたどる。",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
