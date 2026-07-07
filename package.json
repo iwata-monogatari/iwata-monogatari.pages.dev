@@ -1,5 +1,7 @@
 {
   "scripts": {
-    "build": "python sync_new_articles.py"
+    "build": "python sync_new_articles.py",
+    "guard": "python scripts/predeploy_guard.py",
+    "deploy": "npm run guard && wrangler pages deploy . --project-name iwata-monogatari --branch main"
   }
 }
