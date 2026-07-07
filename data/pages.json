@@ -1,7 +1,7 @@
-﻿{
+{
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-07-06",
+  "updated_at": "2026-07-07",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -110,6 +110,80 @@
     "land-memory"
   ],
   "pages": [
+    {
+      "title": "磐田市の旧映画館を歩く — 見付・中泉から郊外型シネコンまで",
+      "url": "c090.html",
+      "district": [
+        "mitsuke",
+        "nakaizumi",
+        "ryuyo",
+        "fukude",
+        "mikuriya"
+      ],
+      "themes": [
+        "life",
+        "land-memory",
+        "road-traffic",
+        "architecture"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-07",
+      "updated_at": "2026-07-07",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "見付・中泉・掛塚・福田・豊浜にあった芝居小屋と映画館の記憶を、駅前、商店街、テレビ、車社会、郊外型シネコンへの移り変わりから読み解く地域史記事です。",
+      "parent": "c034.html"
+    },
+    {
+      "title": "磐田市の閉鎖したボウリング場を読む — 日活ゴールデンハイツと磐田グランドボウル",
+      "url": "c091.html",
+      "district": [
+        "mikuriya",
+        "nakaizumi",
+        "mitsuke"
+      ],
+      "themes": [
+        "life",
+        "land-memory",
+        "road-traffic",
+        "architecture"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-07",
+      "updated_at": "2026-07-07",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "三ヶ野の日活ゴールデンハイツと中野の磐田グランドボウルを手がかりに、ボウリングブーム、車社会、施設老朽化、袋井・浜松へのレジャー需要の移動を読む地域史記事です。",
+      "parent": "c034.html"
+    },
+    {
+      "title": "見付宿西側の追分と池田近道 — 東海道・姫街道が分かれる西坂町を読む",
+      "url": "m121.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "road-traffic",
+        "land-memory",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-07",
+      "updated_at": "2026-07-07",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "見付宿西側の西坂町で東海道と池田近道が分かれた理由を、伝馬制度、池田の渡し、姫街道への連なりから読み解く磐田物語の地域史記事です。",
+      "parent": "01001-mitsuke.html"
+    },
     {
       "title": "熊野御前ものがたり ── 池田に生きた伝説の女性と行興寺",
       "url": "t033.html",
