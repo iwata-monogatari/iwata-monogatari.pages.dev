@@ -54,6 +54,7 @@ def main():
     pages = pages_data["pages"]
     latest = load_json("data/new-articles.json")
     index_html = read_text("index.html")
+    middleware_js = read_text("functions/_middleware.js")
 
     urls = [normalize_url(item.get("url", "")) for item in pages]
     duplicates = sorted({url for url in urls if urls.count(url) > 1})
@@ -90,6 +91,12 @@ def main():
     home_count = int(count_match.group(1))
     if home_count < MIN_HOME_COUNT:
         return fail(f"home article count went backwards: {home_count} < {MIN_HOME_COUNT}")
+
+    if "site_fragments" not in middleware_js or "fetchFooterFromDb" not in middleware_js:
+        return fail("footer middleware is not reading from DB")
+
+    if not (ROOT / "partials" / "footer.html").exists():
+        return fail("footer fallback partial is missing")
 
     suspect_texts = ["????????", "??????????", "???"]
     for relative_path in ["index.html", "updates.html", "data/pages.json"]:
