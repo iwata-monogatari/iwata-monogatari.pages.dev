@@ -1,5 +1,6 @@
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -82,7 +83,7 @@ def main():
         return fail("latest articles missing from home: " + ", ".join(missing_from_home))
 
     count_match = re.search(
-        r'class="philosophy-band__count">\s*<span class="num">(\d+)</span>',
+        r'class="philosophy-band__count">\s*<span class="num"[^>]*>(\d+)</span>',
         index_html,
     )
     if not count_match:
@@ -91,6 +92,21 @@ def main():
     home_count = int(count_match.group(1))
     if home_count < MIN_HOME_COUNT:
         return fail(f"home article count went backwards: {home_count} < {MIN_HOME_COUNT}")
+
+    knowledge_check = subprocess.run(
+        ["node", str(ROOT / "tools" / "sync-knowledge-count.mjs"), "--check"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+    )
+    if knowledge_check.returncode != 0:
+        print(knowledge_check.stdout, file=sys.stderr)
+        print(knowledge_check.stderr, file=sys.stderr)
+        return fail(
+            "knowledge count is out of sync (data/pages.json vs displayed count / "
+            "全記事一覧); run `node tools/sync-knowledge-count.mjs` and commit the result"
+        )
 
     if "site_fragments" not in middleware_js or "fetchFooterFromDb" not in middleware_js:
         return fail("footer middleware is not reading from DB")

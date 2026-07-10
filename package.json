@@ -1,6 +1,8 @@
 {
   "scripts": {
     "build": "python sync_new_articles.py",
+    "knowledge-count": "node tools/sync-knowledge-count.mjs",
+    "knowledge-count:audit": "node tools/sync-knowledge-count.mjs --audit",
     "guard": "python scripts/predeploy_guard.py",
     "footer:sql": "node scripts/seed_footer_fragment.mjs",
     "deploy": "npm run guard && wrangler pages deploy . --project-name iwata-monogatari --branch main"

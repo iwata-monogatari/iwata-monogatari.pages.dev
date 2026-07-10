@@ -13,6 +13,23 @@
 ## 関連記事セクション（内部リンク）
 番号付き記事ページ（`m001.html` 等）末尾の「関連記事」欄は `tools/generate_related_articles.py` による自動生成。`data/pages.json` の地区・テーマとタイトル・説明文のキーワード一致で最大6件を選定し、`<!-- im-related:start -->`〜`<!-- im-related:end -->` のマーカー内に静的HTMLとして埋め込む（再実行で置き換わる冪等仕様）。**新規記事を公開したら `data/pages.json` を更新後に `python tools/generate_related_articles.py` を再実行**し、既存記事側の関連リンクにも新記事を行き渡らせること。手書きの「関連記事」見出しを持つページ・機能ページ・移転スタブは自動対象外。
 
+## 公開記事数（磐田の集合知）の同期
+トップページ（`index.html`）の「磐田の集合知（公開記事）」の数字は、`data/pages.json` の `count_as_knowledge: true` 件数を唯一の根拠とする（2026-07-10、`c034.html` との全件突き合わせにより一本化。詳細は `docs/pages-ledger.md` の同日エントリを参照）。
+
+数字の更新・整合性チェックは `tools/sync-knowledge-count.mjs` が行う。
+
+```bash
+npm run knowledge-count          # data/pages.json の件数を数え、index.html の表示を更新する
+npm run knowledge-count:audit    # 更新はせず、監査レポートのみ表示する（c034.html との突き合わせ）
+node tools/sync-knowledge-count.mjs --check   # 更新はせず、ズレがあれば exit code 1（CI/デプロイ前チェック向け）
+```
+
+監査レポートは、`c034.html`（全記事一覧）に実際に載っているのに `data/pages.json` に未登録、または `count_as_knowledge` が `true` になっていないページを検出する。**新規記事を作成したら、`data/pages.json` への登録と同時に `npm run knowledge-count` を実行**し、表示を最新化すること。
+
+`npm run guard`（`scripts/predeploy_guard.py`、`npm run deploy` から自動実行）は内部で `node tools/sync-knowledge-count.mjs --check` を呼び出しており、件数がズレたままでは通らない。ズレを検出したら `npm run knowledge-count` で解消してからコミットする。
+
+表示先を増やしたい場合（例：集合知説明ページ `c033.html` にも数字を出す）は、対象要素に `data-knowledge-count` 属性を付け、`tools/sync-knowledge-count.mjs` の `DISPLAY_TARGETS` にファイルパスを追加すればよい。
+
 ## 新規記事ページ作成チェックリスト
 既存記事をテンプレートにコピーして新規ページを作るときに漏れがちな項目。2026-07-04、r036.html作成時に `.article-policy` のスタイル定義（旧記事側の`<style>`に個別ベタ書きされていた）を引き継ぎ忘れて見た目が崩れる事故があったため、共通CSS化とあわせてルール化した。
 
