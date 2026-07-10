@@ -1,3 +1,11 @@
+## 2026-07-10 直接アップロードで公開されGitに未反映だった12ページ（n051/n052/c093/f023〜f028/大石浩之の磐田土地記憶録3ページ）を復元
+
+- 事故の経緯：本日のトップページ統合カード改修作業で、Claude Codeが`git push`を複数回実行した。Cloudflare Pagesの本番環境は「直近のデプロイ」を採用するため、Git連携によるpushトリガーのデプロイが、Gitを介さない「直接アップロード」によるデプロイ（7/9〜7/10にかけて作成されたn051・n052・c093・f023〜f028・大石浩之の磐田土地記憶録シリーズを含む）を上書きし、本番サイトから該当ページへのアクセス経路が失われた。`wrangler pages deployment list`で直前の直接アップロードデプロイ（Source欄が空のデプロイ）を特定し、そのデプロイのURL（`https://6692dd6c.iwata-monogatari.pages.dev`）から各ページのHTMLをそのまま取得して復元した。
+- 復元した9ページ：`n051.html`（なぜ見付ではなく中泉に駅ができたのか）、`n052.html`（資料で読む中泉御殿の史実）、`c093.html`（見付と中泉、二つの中心から磐田へ）、`f023.html`〜`f028.html`（福田・東西屋台と祭りの記憶シリーズ6本）。
+- 復元した連載3ページ：`oishi-iwata-tochi-kiokuroku/`（大石浩之の磐田土地記憶録・全10回シリーズの目次ポータル）、`oishi-iwata-tochi-kiokuroku/01/`（第1回）、`oishi-iwata-tochi-kiokuroku/02/`（第2回）。第3回以降は「近日公開」で本文未作成。
+- `data/pages.json`（12ページをcount_as_knowledge/show_in_updates/show_in_all_articles付与で新規登録。連載はcontent_type: essay、districtなし〔02のみnakaizumi〕）、`data/new-articles.json`（12件を該当日付の位置に追加）、`sitemap.xml`（12URL追加）、`updates.html`（新着記事欄に12件追加）、`c034.html`（中泉欄・福田欄・共通欄にそれぞれ追加）、`01002-nakaizumi.html`・`01008-fukude.html`（content-cards一覧に追加、件数表記を実カード数の35件／41件に是正）、`index.html`（新着記事欄フォールバック12件追加、公開記事数423→435、MEMORYセクションに連載への窓口リンクを追加）を更新。
+- 再発防止：Cloudflare Pagesの「直接アップロード」と「Git連携push」を同じproductionブランチに対して混在させると、後勝ちで一方が他方を消し得る。今後、直接アップロードで公開した記事は、可及的速やかに同内容をGitへコミット・pushして、git履歴を正とする状態に揃えることが望ましい。
+
 ## 2026-07-10 s023（南部代表記事）・y012（豊岡代表記事）を新規作成、トップページ統合カードの単一CTAを解消
 
 | ID | ファイル | タイトル | 分類 | 状態 |
