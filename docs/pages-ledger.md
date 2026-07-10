@@ -843,3 +843,11 @@ New articles found in direct-deploy IDs c053.html / m056.html were preserved as 
 | y014 | y014.html | 社山城跡 ── 磐田市指定史跡に残る、遠江争奪の山城 | 豊岡・戦国史 | published |
 
 更新対象：01009-toyooka.html（文化財表・道しるべ）、t024.html（史実訂正・関連記事リンク追加）、data/pages.json、sitemap.xml、docs/pages-ledger.md、c034.html（豊岡セクション）、data/new-articles.json。
+
+## 2026-07-10 トップページ「磐田の集合知」記事数を更新
+
+トップページ（index.html）の `.philosophy-band__count` に固定表示されている公開記事数が「436」のまま古くなっていたため、更新した。
+
+- data/pages.json の `count_as_knowledge: true` 件数は155件だが、登録漏れが多く（本スキルの「pages.jsonだけを根拠にしてはならない」との注意どおり）実態と大きく乖離していたため、従来どおり c034.html（全記事一覧）に実際に掲載されているユニークな記事href数を根拠とした（2026-07-07時点の349本と同じ算出方法。地区ポータル9件・bbs.htmlは対象外）。
+- 算出結果：455本。436 → 455 に更新。
+- 今回はトップページの表示数値のみを対象とし、data/pages.json 側の登録漏れの是正（count_as_knowledge の一括見直し）は行っていない。数字の根拠を将来的に data/pages.json に一本化する場合は、別途、登録漏れの洗い出しが必要。
