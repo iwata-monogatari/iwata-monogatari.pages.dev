@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fffdf7">
+<title>大字さくいん ── 地名から探す磐田物語｜磐田物語</title>
+<meta name="description" content="磐田市の大字・町名を50音順に整理した地名さくいん。お住まいやゆかりの地名から、見付・中泉・御厨・豊田・南部・向陽・竜洋・福田・豊岡の地区別歴史ページへ移動できます。">
+<link rel="canonical" href="https://iwata-monogatari.net/c095.html">
+<meta name="robots" content="index,follow">
+<meta property="og:site_name" content="磐田物語">
+<meta property="og:title" content="大字さくいん ── 地名から探す磐田物語｜磐田物語">
+<meta property="og:description" content="磐田市の大字・町名を50音順に整理した地名さくいん。お住まいやゆかりの地名から、地区別歴史ページへ移動できます。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://iwata-monogatari.net/c095.html">
+<meta property="og:image" content="https://iwata-monogatari.net/img/hk-3.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<style>
+:root{
+  --paper:#fffdf7; --ink:#1f3a48; --ink-soft:#5b6b74;
+  --blue:#2f7fa3; --blue-deep:#1f4f6f; --blue-pale:#e9f3fa; --line:#d8e8ef;
+  --card:#fffdf7; --radius:10px;
+  --district:#2f7fa3; --district-pale:#eef3f8;
+}
+*{box-sizing:border-box}
+body{font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;background:var(--paper);color:var(--ink);line-height:1.85;font-feature-settings:"palt"}
+a{color:var(--blue-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+main{max-width:960px;margin:0 auto;padding:0 1em 3em}
+.breadcrumb{font-size:.78rem;color:var(--ink-soft);padding:1em 0 .4em}
+.breadcrumb a{color:var(--ink-soft)}
+
+.page-head{padding:.4em 0 1.2em;border-bottom:1px solid var(--line)}
+h1{font-size:1.9rem;letter-spacing:.06em;margin:.35em 0 .1em;color:var(--blue-deep);font-family:"Shippori Mincho",serif}
+h1 .h1-bar{display:inline-block;width:.5em;height:1em;background:var(--district);margin-right:.3em;border-radius:2px;transform:translateY(.1em)}
+.page-lead{margin-top:.7em;font-size:.95rem;color:var(--ink-soft)}
+
+h2{font-size:1.25rem;color:var(--blue-deep);letter-spacing:.04em;margin:2.2em 0 .9em;padding-left:.55em;border-left:5px solid var(--district);font-family:"Shippori Mincho",serif}
+.section-lead{font-size:.88rem;color:var(--ink-soft);margin-bottom:1em}
+
+.district-legend{display:flex;flex-wrap:wrap;gap:.5em;margin-top:.8em}
+.district-legend a{font-size:.8rem;font-weight:700;border-radius:999px;padding:.3em 1.1em;color:#fff}
+
+.jump-nav{position:sticky;top:0;background:var(--paper);z-index:5;display:flex;flex-wrap:wrap;gap:.4em;padding:.8em 0;border-bottom:1px solid var(--line);margin-top:1em}
+.jump-nav a{font-size:.85rem;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:.25em 1em;color:var(--blue-deep);background:var(--card)}
+.jump-nav a:hover{background:var(--blue-pale);text-decoration:none}
+
+.filter-box{margin:1em 0}
+.filter-box input{width:100%;font-size:.95rem;padding:.6em .9em;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+.filter-count{font-size:.78rem;color:var(--ink-soft);margin-top:.4em}
+
+.oaza-row{display:flex;flex-wrap:wrap;gap:.5em;margin-bottom:1.6em}
+.oaza-chip{display:inline-block;font-size:.85rem;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:.4em .9em;color:var(--ink)}
+.oaza-chip:hover{background:var(--blue-pale);text-decoration:none}
+.oaza-chip.hidden{display:none}
+
+.note-box{margin-top:1em;background:var(--blue-pale);border-left:4px solid var(--blue);border-radius:0 6px 6px 0;padding:.7em 1em;font-size:.82rem;color:var(--ink-soft)}
+
+.cta-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.3em 1.2em;text-align:center;margin-top:1.2em}
+.cta-box p{font-size:.88rem;color:var(--ink-soft)}
+.cta-btns{display:flex;flex-wrap:wrap;gap:.6em;justify-content:center;margin-top:.9em}
+.btn{display:inline-block;border-radius:6px;padding:.55em 1.4em;font-size:.85rem;font-weight:700;background:var(--blue);color:#fff}
+.btn:hover{opacity:.9;text-decoration:none}
+.btn.sub{background:#fff;color:var(--blue);border:1px solid var(--blue)}
+
+.district-chips{display:flex;flex-wrap:wrap;gap:.4em;margin-top:.7em;justify-content:center}
+.district-chips a{font-size:.78rem;border-radius:999px;padding:.2em .9em;color:#fff}
+
+.footer-blocks{max-width:960px;margin:3em auto 0;padding:0 1em;display:grid;grid-template-columns:1fr 1fr;gap:1em}
+.fb{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.2em 1.1em;text-align:center}
+.fb h4{font-size:.95rem;color:var(--blue-deep);margin-bottom:.4em}
+.fb p{font-size:.8rem;color:var(--ink-soft)}
+.fb .links{display:flex;flex-wrap:wrap;gap:.4em;margin-top:.7em;justify-content:center}
+.fb .links a{font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:.2em .9em;background:#fff}
+
+@media(max-width:720px){
+  .footer-blocks{grid-template-columns:1fr}
+  h1{font-size:1.55rem}
+}
+</style>
+</head>
+<body>
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/"><span class="gh-logo">磐田物語<span class="gh-dot">。</span></span><span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span></a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション"><a href="/c007.html">はじめに</a><a href="/c001.html">憲章</a><a href="/c019.html">佐口史料室</a><a href="/#new">新着</a><a href="/bbs.html">掲示板</a><a href="/c034.html">全記事一覧</a></nav>
+  </div>
+</header>
+
+<main>
+
+<nav class="breadcrumb"><a href="/">磐田物語</a> ／ 大字さくいん</nav>
+
+<section class="page-head">
+  <h1><span class="h1-bar"></span>大字さくいん ── 地名から磐田物語を探す</h1>
+  <p class="page-lead">お住まいの地名、実家のあった地名、ゆかりのある地名から、磐田物語の地区別入口ページへ移動できます。地名は50音順に並べています。</p>
+  <div class="district-legend">
+    <a style="background:#A9412B" href="/01001-mitsuke.html">見付</a>
+    <a style="background:#008C8C" href="/01002-nakaizumi.html">中泉</a>
+    <a style="background:#B87333" href="/01003-mikuriya.html">御厨</a>
+    <a style="background:#7B4BB2" href="/01004-toyoda.html">豊田</a>
+    <a style="background:#5BAEC0" href="/01005-nanbu.html">南部</a>
+    <a style="background:#5F8D3B" href="/01006-koyo.html">向陽</a>
+    <a style="background:#1E5E9F" href="/01007-ryuyo.html">竜洋</a>
+    <a style="background:#D8D3C5;color:#4d4636" href="/01008-fukude.html">福田</a>
+    <a style="background:#7A5A36" href="/01009-toyooka.html">豊岡</a>
+  </div>
+</section>
+
+<nav class="jump-nav" aria-label="50音ジャンプナビ">
+<a href="#row-あ">あ</a><a href="#row-か">か</a><a href="#row-さ">さ</a><a href="#row-た">た</a><a href="#row-な">な</a><a href="#row-は">は</a><a href="#row-ま">ま</a><a href="#row-や">や</a><a href="#row-わ">わ</a>
+</nav>
+
+<div class="filter-box">
+  <input type="text" id="oaza-filter" placeholder="地名で絞り込む（例：見付、掛塚、中泉）">
+  <p class="filter-count" id="oaza-filter-count"></p>
+</div>
+
+<h2>50音別インデックス</h2>
+<p class="section-lead">213件の大字・町名を、50音順に並べています。チップの左の色が、リンク先の地区を示します。</p>
+
+<h2 id="row-あ">あ行</h2>
+<div class="oaza-row">
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="赤池">赤池</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="安久路">安久路</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="安久路一丁目">安久路一丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="安久路二丁目">安久路二丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="旭ケ丘">旭ケ丘</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="新島">新島</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="新出">新出</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="一色">一色</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="一言の一部（中泉）">一言の一部（中泉）</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="一言の一部（豊田）">一言の一部（豊田）</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="壱貫地">壱貫地</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="家田">家田</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="五十子">五十子</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="今之浦">今之浦</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="今之浦一丁目">今之浦一丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="今之浦二丁目">今之浦二丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="今之浦三丁目">今之浦三丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="今之浦四丁目">今之浦四丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="今之浦五丁目">今之浦五丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #5F8D3B" href="/01006-koyo.html" data-name="岩井">岩井</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="岩室">岩室</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="海老島">海老島</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="海老塚">海老塚</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="宇兵衛新田">宇兵衛新田</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="上野部">上野部</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="上大之郷">上大之郷</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="上岡田">上岡田</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="上神増">上神増</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="上新屋">上新屋</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="上南田">上南田</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="上万能">上万能</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="上本郷">上本郷</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="請負新田">請負新田</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="大泉町">大泉町</a>
+<a class="oaza-chip" style="border-left:4px solid #5F8D3B" href="/01006-koyo.html" data-name="大久保">大久保</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="大立野">大立野</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="大当所">大当所</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="大中瀬">大中瀬</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="大原の一部（旧磐田市側）">大原の一部（旧磐田市側）</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="大原の一部（旧福田町側）">大原の一部（旧福田町側）</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="大平">大平</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="岡">岡</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="小島">小島</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="小立野">小立野</a>
+</div>
+
+<h2 id="row-か">か行</h2>
+<div class="oaza-row">
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="掛下">掛下</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="掛塚">掛塚</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="掛塚蟹町">掛塚蟹町</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="掛塚新町">掛塚新町</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="掛塚砂町">掛塚砂町</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="掛塚大当町">掛塚大当町</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="掛塚横町">掛塚横町</a>
+<a class="oaza-chip" style="border-left:4px solid #5F8D3B" href="/01006-koyo.html" data-name="笠梅">笠梅</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="加茂">加茂</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="加茂川通">加茂川通</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="河原町">河原町</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="川袋">川袋</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="気子島">気子島</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="北島">北島</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="北見町">北見町</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="刑部島">刑部島</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="国府台">国府台</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="草崎">草崎</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="久保町">久保町</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="源平新田">源平新田</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="合代島">合代島</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="幸町">幸町</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="御殿">御殿</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="小中瀬">小中瀬</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="駒場">駒場</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="権現町">権現町</a>
+</div>
+
+<h2 id="row-さ">さ行</h2>
+<div class="oaza-row">
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="栄町">栄町</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="坂上町">坂上町</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="鮫島">鮫島</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="笹原島">笹原島</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="桜ケ丘">桜ケ丘</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="敷地">敷地</a>
+<a class="oaza-chip" style="border-left:4px solid #5F8D3B" href="/01006-koyo.html" data-name="篠原">篠原</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="下太">下太</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="下大之郷">下大之郷</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="下岡田">下岡田</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="下神増">下神増</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="下野部">下野部</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="下本郷">下本郷</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="下万能">下万能</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="宿町">宿町</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="十郎島">十郎島</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="城之崎">城之崎</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="城之崎一丁目">城之崎一丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="城之崎二丁目">城之崎二丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="城之崎三丁目">城之崎三丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="城之崎四丁目">城之崎四丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="白羽">白羽</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="白拍子">白拍子</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="新開">新開</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="新貝">新貝</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="新貝一丁目">新貝一丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="新貝二丁目">新貝二丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="新貝三丁目">新貝三丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="新通町">新通町</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="須恵新田">須恵新田</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="住吉町">住吉町</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="清庵新田">清庵新田</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="清水町">清水町</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="千手堂">千手堂</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="惣兵衛下新田">惣兵衛下新田</a>
+</div>
+
+<h2 id="row-た">た行</h2>
+<div class="oaza-row">
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="高木">高木</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="高見丘">高見丘</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="立野">立野</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="玉越">玉越</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="太郎馬新田">太郎馬新田</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="田町">田町</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="中央町">中央町</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="天王町">天王町</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="天龍">天龍</a>
+<a class="oaza-chip" style="border-left:4px solid #5F8D3B" href="/01006-koyo.html" data-name="寺谷">寺谷</a>
+<a class="oaza-chip" style="border-left:4px solid #5F8D3B" href="/01006-koyo.html" data-name="寺谷新田">寺谷新田</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="東新町">東新町</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="東新町一丁目">東新町一丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="東新町二丁目">東新町二丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="東新町三丁目">東新町三丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="東名">東名</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="富丘">富丘</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="富里">富里</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="豊岡">豊岡</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="豊岡内名">豊岡内名</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="豊岡江口">豊岡江口</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="豊岡金洗">豊岡金洗</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="豊岡敷地">豊岡敷地</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="豊岡西堀">豊岡西堀</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="豊岡吹上">豊岡吹上</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="豊島">豊島</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="豊田">豊田</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="豊田西之島">豊田西之島</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="豊浜">豊浜</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="豊浜中野">豊浜中野</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="鳥之瀬">鳥之瀬</a>
+</div>
+
+<h2 id="row-な">な行</h2>
+<div class="oaza-row">
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="中泉">中泉</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="中泉一丁目">中泉一丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="中泉二丁目">中泉二丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="中泉三丁目">中泉三丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="中泉四丁目">中泉四丁目</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="中川町">中川町</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="中田">中田</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="中野">中野</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="中平松">中平松</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="中町">中町</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="長須賀">長須賀</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="長森">長森</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="西貝塚">西貝塚</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="西坂町">西坂町</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="西島">西島</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="西新町">西新町</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="西之島">西之島</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="西平松">西平松</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="西町">西町</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="二之宮">二之宮</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="二之宮浅間">二之宮浅間</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="二之宮東">二之宮東</a>
+</div>
+
+<h2 id="row-は">は行</h2>
+<div class="oaza-row">
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="浜新田">浜新田</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="浜部">浜部</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="稗原">稗原</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="東貝塚">東貝塚</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="東小島">東小島</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="東坂町">東坂町</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="東新屋">東新屋</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="東原">東原</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="東平松">東平松</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="東町">東町</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="東脇">東脇</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="平松">平松</a>
+<a class="oaza-chip" style="border-left:4px solid #5F8D3B" href="/01006-koyo.html" data-name="平松掛下入作">平松掛下入作</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="平間">平間</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="蛭池">蛭池</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="福田">福田</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="福田中島">福田中島</a>
+<a class="oaza-chip" style="border-left:4px solid #5F8D3B" href="/01006-koyo.html" data-name="藤上原">藤上原</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="富士見台">富士見台</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="富士見町">富士見町</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="二番町">二番町</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="堀之内">堀之内</a>
+<a class="oaza-chip" style="border-left:4px solid #008C8C" href="/01002-nakaizumi.html" data-name="本町">本町</a>
+</div>
+
+<h2 id="row-ま">ま行</h2>
+<div class="oaza-row">
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="前野">前野</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="松之木島">松之木島</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="松本">松本</a>
+<a class="oaza-chip" style="border-left:4px solid #5BAEC0" href="/01005-nanbu.html" data-name="万正寺">万正寺</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="万瀬">万瀬</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="三家">三家</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="三ケ野">三ケ野</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="三ケ野台">三ケ野台</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="水堀">水堀</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="見付">見付</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="緑ケ丘">緑ケ丘</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="南島">南島</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="南田">南田</a>
+<a class="oaza-chip" style="border-left:4px solid #D8D3C5;color:#4d4636" href="/01008-fukude.html" data-name="南田伊兵衛新田">南田伊兵衛新田</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="南平松">南平松</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="宮之一色">宮之一色</a>
+<a class="oaza-chip" style="border-left:4px solid #1E5E9F" href="/01007-ryuyo.html" data-name="宮本">宮本</a>
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="虫生">虫生</a>
+<a class="oaza-chip" style="border-left:4px solid #5F8D3B" href="/01006-koyo.html" data-name="向笠新屋">向笠新屋</a>
+<a class="oaza-chip" style="border-left:4px solid #5F8D3B" href="/01006-koyo.html" data-name="向笠竹之内">向笠竹之内</a>
+<a class="oaza-chip" style="border-left:4px solid #5F8D3B" href="/01006-koyo.html" data-name="向笠西">向笠西</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="明ケ島">明ケ島</a>
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="明ケ島原">明ケ島原</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="元倉町">元倉町</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="元天神町">元天神町</a>
+<a class="oaza-chip" style="border-left:4px solid #A9412B" href="/01001-mitsuke.html" data-name="元宮町">元宮町</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="森岡">森岡</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="森下">森下</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="森本">森本</a>
+</div>
+
+<h2 id="row-や">や行</h2>
+<div class="oaza-row">
+<a class="oaza-chip" style="border-left:4px solid #7A5A36" href="/01009-toyooka.html" data-name="社山">社山</a>
+<a class="oaza-chip" style="border-left:4px solid #7B4BB2" href="/01004-toyoda.html" data-name="弥藤太島">弥藤太島</a>
+</div>
+
+<h2 id="row-わ">わ行</h2>
+<div class="oaza-row">
+<a class="oaza-chip" style="border-left:4px solid #B87333" href="/01003-mikuriya.html" data-name="和口">和口</a>
+</div>
+
+<p class="note-box">地名と地区の対応は、旧町村の沿革・学校区・生活圏をもとにした磐田物語独自の分類です。対応を確認中の地名には「確認中」を付しています。</p>
+
+<h2>磐田物語の9地区分類から探す</h2>
+<div class="district-chips">
+  <a style="background:#A9412B" href="/01001-mitsuke.html">見付</a>
+  <a style="background:#008C8C" href="/01002-nakaizumi.html">中泉</a>
+  <a style="background:#B87333" href="/01003-mikuriya.html">御厨</a>
+  <a style="background:#7B4BB2" href="/01004-toyoda.html">豊田</a>
+  <a style="background:#5BAEC0" href="/01005-nanbu.html">南部</a>
+  <a style="background:#5F8D3B" href="/01006-koyo.html">向陽</a>
+  <a style="background:#1E5E9F" href="/01007-ryuyo.html">竜洋</a>
+  <a style="background:#D8D3C5;color:#4d4636" href="/01008-fukude.html">福田</a>
+  <a style="background:#7A5A36" href="/01009-toyooka.html">豊岡</a>
+</div>
+
+<div class="cta-box">
+  <p>古い地名や集落の成り立ちを調べていると、家や土地には、登記簿だけでは分からない地域の記憶が残っていることがあります。相続した家、空き家、使わなくなった土地について、「売る・貸す・残す」の前に、一度整理して考えたい方は、富士ヶ丘サービス株式会社までご相談ください。</p>
+  <div class="cta-btns"><a class="btn" href="https://www.fujigaoka-service.info/fudosan" target="_blank" rel="noopener">家・土地・空き家の整理について相談する</a></div>
+</div>
+
+</main>
+
+<div class="footer-blocks">
+  <div class="fb">
+    <h4>佐口行正氏資料室</h4>
+    <p>引札・浮世絵・古地図・絵葉書など、見付を中心に約336点を公開。</p>
+    <div class="links"><a href="/c020.html">史料本編</a><a href="/c019.html">目録</a></div>
+  </div>
+  <div class="fb">
+    <h4>地名とことば</h4>
+    <p>磐田の歴史が息づく地名の由来と、温かみのある遠州弁の世界。</p>
+    <div class="links"><a href="/c009.html">地名の由来</a><a href="/c006.html">遠州弁辞典</a><a href="/c008.html">遠州弁変換</a></div>
+  </div>
+  <div class="fb">
+    <h4>磐田物語の9地区分類から探す</h4>
+    <div class="district-chips">
+      <a style="background:#A9412B" href="/01001-mitsuke.html">見付</a>
+      <a style="background:#008C8C" href="/01002-nakaizumi.html">中泉</a>
+      <a style="background:#B87333" href="/01003-mikuriya.html">御厨</a>
+      <a style="background:#7B4BB2" href="/01004-toyoda.html">豊田</a>
+      <a style="background:#5BAEC0" href="/01005-nanbu.html">南部</a>
+      <a style="background:#5F8D3B" href="/01006-koyo.html">向陽</a>
+      <a style="background:#1E5E9F" href="/01007-ryuyo.html">竜洋</a>
+      <a style="background:#D8D3C5;color:#4d4636" href="/01008-fukude.html">福田</a>
+      <a style="background:#7A5A36" href="/01009-toyooka.html">豊岡</a>
+    </div>
+  </div>
+  <div class="fb">
+    <h4>地域（大字）から探す</h4>
+    <p>このページです。地名は上の50音インデックスからお探しいただけます。</p>
+  </div>
+</div>
+
+<footer class="im-foot">
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://oishi-hiroyuki.org/" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+      </ul>
+    </div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+  </div>
+</footer>
+<script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="iwata-monogatari" data-fujigaoka-analytics="true"></script>
+<script>
+(function(){
+  var input = document.getElementById('oaza-filter');
+  var countEl = document.getElementById('oaza-filter-count');
+  var chips = document.querySelectorAll('.oaza-chip');
+  if (!input) return;
+  input.addEventListener('input', function(){
+    var q = input.value.trim();
+    var n = 0;
+    chips.forEach(function(c){
+      var show = !q || c.dataset.name.indexOf(q) !== -1;
+      c.classList.toggle('hidden', !show);
+      if (show) n++;
+    });
+    countEl.textContent = q ? (n + '件ヒットしました') : '';
+  });
+})();
+</script>
+</body>
+</html>

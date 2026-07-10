@@ -8,12 +8,12 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-<meta name="description" content="磐田物語の御厨地区入口ページ。伊勢神宮領「鎌田御厨」に由来する地名、鎌田神明宮、東部の田園・集落の生活圏の歴史読み物、町村の誕生から磐田市編入までの沿革（年表・対応表）、現在の中学校区・小学校区・大字・統計をまとめた地区ポータルです。">
+<meta name="description" content="磐田物語の御厨地区入口ページ。伊勢神宮領「鎌田御厨」に由来する地名、鎌田神明宮、御厨古墳群など、御厨地区の歴史読み物・記事一覧と、文化財・史跡、村の成り立ちへの入口をまとめた地区ポータルです。">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#fffdf7">
 <link rel="canonical" href="https://iwata-monogatari.net/01003-mikuriya.html">
 <meta property="og:title" content="御厨地区｜磐田物語">
-<meta property="og:description" content="伊勢神宮領 鎌田御厨に由来する御厨地区の歴史読み物・町村沿革・学校区・大字・統計をまとめた地区ポータル。">
+<meta property="og:description" content="伊勢神宮領 鎌田御厨に由来する御厨地区の歴史読み物・文化財・史跡・成り立ちをまとめた地区ポータル。">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="磐田物語">
@@ -21,870 +21,335 @@
 <meta property="og:image" content="https://iwata-monogatari.net/saguchi/img/hk-3.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="御厨地区｜磐田物語">
-<meta name="twitter:description" content="伊勢神宮領 鎌田御厨に由来する御厨地区の歴史読み物・町村沿革・学校区・大字・統計をまとめた地区ポータル。">
+<meta name="twitter:description" content="伊勢神宮領 鎌田御厨に由来する御厨地区の歴史読み物・文化財・史跡・成り立ちをまとめた地区ポータル。">
 <meta name="twitter:image" content="https://iwata-monogatari.net/saguchi/img/hk-3.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/site-header.css">
-<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
-<link rel="stylesheet" href="/assets/css/district.css">
 <style>
-  :root{
-    --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
-    --brown:#2f7fa3;--brown-deep:#1f4f6f;--accent-blue:#356f88;--line:#d8e8ef;
-    --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{margin:0;background:var(--paper);color:var(--ink);
-    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
-    line-height:1.95;font-size:17px;letter-spacing:.02em;
-    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
-  .mincho{font-family:"Shippori Mincho",serif;}
-  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-    background-image:radial-gradient(circle at 20% 30%, rgba(166,113,62,.035) 0, transparent 38%),
-      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);}
-  a{color:var(--brown-deep);text-underline-offset:3px;}
+:root{
+  --paper:#fffdf7; --ink:#1f3a48; --ink-soft:#5b6b74;
+  --blue:#2f7fa3; --blue-deep:#1f4f6f; --blue-pale:#e9f3fa; --line:#d8e8ef;
+  --card:#fffdf7; --radius:10px;
+  --district:#B87333; --district-pale:#eef3f8;
+}
+*{box-sizing:border-box}
+body{font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;background:var(--paper);color:var(--ink);line-height:1.85;font-feature-settings:"palt"}
+a{color:var(--blue-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+main{max-width:960px;margin:0 auto;padding:0 1em 3em}
+.breadcrumb{font-size:.78rem;color:var(--ink-soft);padding:1em 0 .4em}
+.breadcrumb a{color:var(--ink-soft)}
 
-  .area-hero{padding:36px 0 22px;}
-  .area-hero .area-label{font-size:13px;letter-spacing:.22em;color:var(--accent-blue);font-weight:700;margin:0 0 14px;}
-  .area-hero h1{font-family:"Shippori Mincho",serif;font-weight:800;
-    font-size:clamp(28px,5vw,40px);line-height:1.45;margin:0 0 16px;color:var(--ink);letter-spacing:.04em;}
-  .area-hero .area-lead{font-size:16px;color:var(--ink-soft);margin:0;line-height:2;}
+.district-head{padding:.4em 0 1.2em;border-bottom:1px solid var(--line)}
+.district-label{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;color:#fff;background:var(--district);border-radius:3px;padding:.15em .8em}
+h1{font-size:1.9rem;letter-spacing:.06em;margin:.35em 0 .1em;color:var(--blue-deep);font-family:"Shippori Mincho",serif}
+h1 .h1-bar{display:inline-block;width:.5em;height:1em;background:var(--district);margin-right:.3em;border-radius:2px;transform:translateY(.1em)}
+.district-meta{font-size:.85rem;color:var(--ink-soft)}
+.district-lead{margin-top:.7em;font-size:.95rem}
 
-  .area-section h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:22px;
-    color:var(--ink);letter-spacing:.03em;margin:40px 0 14px;padding-left:16px;
-    border-left:4px solid var(--brown);line-height:1.5;}
-  .area-section h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:17.5px;
-    color:var(--brown-deep);margin:24px 0 10px;letter-spacing:.03em;}
-  .area-section p{margin:0 0 16px;color:var(--ink);}
-  .area-section .note{background:#fffaf0;border:1px solid #e8d9bd;border-left:4px solid #caa14f;
-    border-radius:4px;padding:15px 18px;font-size:14.5px;color:#5b4a2a;line-height:1.85;margin:16px 0;}
+.hero{margin:1.4em 0 0}
+.hero figure{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1em}
+.hero figcaption{font-size:.78rem;color:var(--ink-soft);margin-top:.6em}
+.notice{margin-top:1em;background:var(--blue-pale);border-left:4px solid var(--blue);border-radius:0 6px 6px 0;padding:.7em 1em;font-size:.82rem;color:var(--ink-soft)}
 
-  .table-scroll{width:100%;overflow-x:auto;margin:12px 0 8px;border:1px solid var(--line);
-    border-radius:8px;box-shadow:var(--shadow);-webkit-overflow-scrolling:touch;}
-  table.area-table{width:100%;min-width:560px;border-collapse:collapse;font-size:0.9rem;
-    line-height:1.7;background:#fffdf8;}
-  table.area-table th,table.area-table td{border:1px solid rgba(120,90,50,0.22);
-    padding:10px 12px;vertical-align:top;text-align:left;}
-  table.area-table thead th{background:#e7f1f7;color:#1f4f6f;font-weight:700;white-space:nowrap;}
-  table.area-table td{color:var(--ink);}
+.intro{margin-top:1.6em;font-size:.95rem}
 
-  .ooaza-box{background:#fffdf8;border:1px solid var(--line);border-radius:8px;
-    padding:16px 18px;font-size:0.95rem;line-height:2.05;color:var(--ink);box-shadow:var(--shadow);}
+h2{font-size:1.25rem;color:var(--blue-deep);letter-spacing:.04em;margin:2.6em 0 .9em;padding-left:.55em;border-left:5px solid var(--district);font-family:"Shippori Mincho",serif}
+h3{font-size:1rem;color:var(--blue-deep);margin:1.6em 0 .6em}
+.section-lead{font-size:.88rem;color:var(--ink-soft);margin-bottom:1em}
 
-  .feature-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0 4px;}
-  .feature-strip a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:10px;
-    padding:14px 16px;background:linear-gradient(180deg,#f6fbfe,#fffdf7);box-shadow:var(--shadow);transition:.18s;}
-  .feature-strip a:hover{transform:translateY(-1px);box-shadow:0 7px 18px rgba(40,70,90,.1);}
-  .feature-strip .ft-k{font-size:11.5px;font-weight:700;color:var(--accent-blue);letter-spacing:.06em;}
-  .feature-strip .ft-t{display:block;margin-top:5px;font-family:"Shippori Mincho",serif;font-weight:700;
-    font-size:15px;color:var(--ink);line-height:1.5;}
-  @media(max-width:680px){.feature-strip{grid-template-columns:1fr;}}
+.theme-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:.9em}
+.theme-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.theme-card .cat{background:var(--district);color:#fff;font-size:.72rem;font-weight:700;padding:.25em .9em;letter-spacing:.06em}
+.theme-card .body{padding:.8em .9em 1em}
+.theme-card .body a{font-weight:700;font-size:.95rem}
+.theme-card .body p{font-size:.8rem;color:var(--ink-soft);margin-top:.35em}
 
-  .memory-call{background:linear-gradient(180deg,#fbfdff,#fffdf7);border:1px solid var(--line);
-    border-radius:10px;padding:6px 24px 18px;margin-top:28px;}
-  .policy ul{margin:0 0 16px;padding-left:1.3em;}
-  .policy li{margin:0 0 7px;color:var(--ink);font-size:15px;line-height:1.85;}
+.waymark{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:.4em 1em}
+.waymark .row{display:flex;gap:.9em;align-items:baseline;padding:.65em 0;border-top:1px solid var(--line);font-size:.9rem}
+.waymark .row:first-child{border-top:none}
+.waymark .era{flex:0 0 7.5em;font-size:.75rem;font-weight:700;color:var(--district);border:1px solid var(--district);border-radius:999px;text-align:center;padding:.1em .4em;white-space:nowrap}
+@media(max-width:720px){.waymark .row{flex-direction:column;gap:.3em}.waymark .era{flex:none;align-self:flex-start}}
 
-  .soudan-box{margin:26px 0 8px;border:1px solid #d6e7f1;border-radius:12px;overflow:hidden;
-    background:linear-gradient(135deg,#eef7fc,#f8fcfe);box-shadow:var(--shadow);}
-  .soudan-box .sb-in{padding:18px 20px;}
-  .soudan-box h3{margin:0 0 8px;font-family:"Shippori Mincho",serif;font-size:16px;color:#1f5f8b;}
-  .soudan-box p{margin:0 0 12px;font-size:13.5px;color:var(--ink-soft);line-height:1.8;}
-  .soudan-box .sb-links{display:flex;flex-wrap:wrap;gap:9px;}
-  .soudan-box .sb-links a{font-size:13px;text-decoration:none;color:#1f5f8b;background:#fff;
-    border:1px solid #d6e7f1;border-radius:999px;padding:7px 15px;transition:.18s;}
-  .soudan-box .sb-links a:hover{background:#1c78b5;color:#fff;border-color:#1c78b5;}
+.table-scroll{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:var(--radius)}
+table{border-collapse:collapse;width:100%;font-size:.84rem;min-width:640px}
+caption{caption-side:top;text-align:left;font-size:.78rem;color:var(--ink-soft);padding:.6em .8em 0}
+th,td{border-top:1px solid var(--line);padding:.55em .8em;text-align:left;vertical-align:top}
+thead th{background:var(--blue-pale);color:var(--blue-deep);border-top:none;font-size:.8rem;white-space:nowrap}
+tbody tr:nth-child(even){background:#fafbf7}
 
-  .area-nav-bottom{padding:18px 0 50px;display:flex;gap:12px;flex-wrap:wrap;}
-  .area-nav-bottom a{display:inline-block;padding:11px 24px;border-radius:999px;text-decoration:none;
-    font-size:14.5px;font-weight:600;color:var(--brown-deep);
-    background:linear-gradient(180deg,#fffaf0,#f6ead2);border:1px solid #d8c7a3;
-    box-shadow:0 4px 12px rgba(0,0,0,.06);transition:.2s;}
-  .area-nav-bottom a:hover{transform:translateY(-1px);box-shadow:0 7px 16px rgba(0,0,0,.1);}
+.st{display:inline-block;font-size:.72rem;font-weight:700;border-radius:999px;padding:.05em .8em;white-space:nowrap}
+.st-link{background:var(--district-pale);color:var(--district);border:1px solid var(--district)}
+.st-plan{background:#f1f3f5;color:#7a828c;border:1px dashed #b9c0c9}
+.st-work{background:#eef6ee;color:#3e7a4a;border:1px solid #9cc4a4}
+.table-note{font-size:.78rem;color:var(--ink-soft);margin-top:.6em}
+
+details.acc{margin-top:.8em}
+details.acc summary{list-style:none;cursor:pointer;text-align:center;font-size:.85rem;font-weight:700;color:var(--blue);border:1px solid var(--blue);border-radius:6px;padding:.5em 1em;background:#fff}
+details.acc summary::-webkit-details-marker{display:none}
+details.acc summary:hover{background:var(--blue-pale)}
+details.acc[open] summary{margin-bottom:.8em}
+.enkaku-flow{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1em 1.2em;font-size:.92rem}
+.enkaku-flow .flow{font-weight:700;color:var(--blue-deep);line-height:2.1}
+.enkaku-flow .flow .yr{font-weight:400;font-size:.78rem;color:var(--ink-soft)}
+.more-center{text-align:center;margin-top:1em}
+
+.filter-chips{display:flex;flex-wrap:wrap;gap:.4em;margin:0 0 1.1em}
+.chip{font-size:.78rem;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:.25em 1em;cursor:pointer;color:var(--ink-soft)}
+.chip.active{background:var(--district);border-color:var(--district);color:#fff;font-weight:700}
+.article-count{font-size:.8rem;color:var(--ink-soft);margin-bottom:.8em}
+.article-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9em}
+.article-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:.9em 1em;display:flex;flex-direction:column;gap:.3em}
+.article-card .tag{font-size:.7rem;font-weight:700;color:var(--district)}
+.article-card a{font-weight:700;font-size:.92rem;line-height:1.6}
+.article-card p{font-size:.78rem;color:var(--ink-soft)}
+.article-card.hidden{display:none}
+.article-loading{font-size:.85rem;color:var(--ink-soft)}
+
+.cta-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.3em 1.2em;text-align:center;margin-top:1.2em}
+.cta-box p{font-size:.88rem;color:var(--ink-soft)}
+.cta-btns{display:flex;flex-wrap:wrap;gap:.6em;justify-content:center;margin-top:.9em}
+.btn{display:inline-block;border-radius:6px;padding:.55em 1.4em;font-size:.85rem;font-weight:700;background:var(--blue);color:#fff}
+.btn:hover{opacity:.9;text-decoration:none}
+.btn.sub{background:#fff;color:var(--blue);border:1px solid var(--blue)}
+
+.footer-blocks{max-width:960px;margin:3em auto 0;padding:0 1em;display:grid;grid-template-columns:1fr 1fr;gap:1em}
+.fb{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.2em 1.1em;text-align:center}
+.fb h4{font-size:.95rem;color:var(--blue-deep);margin-bottom:.4em}
+.fb p{font-size:.8rem;color:var(--ink-soft)}
+.fb .links{display:flex;flex-wrap:wrap;gap:.4em;margin-top:.7em;justify-content:center}
+.fb .links a{font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:.2em .9em;background:#fff}
+.district-chips{display:flex;flex-wrap:wrap;gap:.4em;margin-top:.7em;justify-content:center}
+.district-chips a{font-size:.78rem;border-radius:999px;padding:.2em .9em;color:#fff}
+
+.im-foot{background:#1f3a48;color:#eaf4fa;margin-top:2.5em}
+.im-foot *{box-sizing:border-box}
+.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end}
+.im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em}
+.im-foot .im-brand:hover{text-decoration:none}
+.im-foot .im-brand .im-dot{color:#2f7fa3}
+.im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px}
+.im-foot .im-links{width:100%;margin-top:6px}
+.im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700}
+.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px}
+.im-foot .im-links li{font-size:13px;line-height:1.6}
+.im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s}
+.im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8}
+.im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px}
+.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em}
+
+@media(max-width:720px){
+  .theme-cards{grid-template-columns:1fr}
+  .article-grid{grid-template-columns:1fr}
+  .footer-blocks{grid-template-columns:1fr}
+  h1{font-size:1.55rem}
+}
 </style>
 </head>
-<body class="area-mikuriya">
+<body>
 
 <header class="gh-site">
   <div class="gh-bar">
-    <a class="gh-brand" href="/">
-      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
-      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
-    </a>
-    <nav class="gh-menu" aria-label="主要ナビゲーション">
-      <a href="/c007.html">はじめに</a>
-      <a href="/c001.html">憲章</a>
-      <a href="/c019.html">佐口史料室</a>
-      <a href="/#new">新着</a>
-      <a href="/bbs.html">掲示板</a>
-      <a href="/c034.html">全記事一覧</a>
-    </nav>
+    <a class="gh-brand" href="/"><span class="gh-logo">磐田物語<span class="gh-dot">。</span></span><span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span></a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション"><a href="/c007.html">はじめに</a><a href="/c001.html">憲章</a><a href="/c019.html">佐口史料室</a><a href="/#new">新着</a><a href="/bbs.html">掲示板</a><a href="/c034.html">全記事一覧</a></nav>
   </div>
 </header>
-<nav class="gh-breadcrumb" aria-label="パンくず"><a href="/">磐田物語</a> ／ <a href="/c002.html">地域分類</a> ／ 御厨地区</nav>
 
-<div class="district-layout">
-  <main class="district-main area-page">
+<main>
 
-    <!-- (1) 地区ヘッダー + ヒーロー図 -->
-    <header class="area-hero">
-      <p class="area-label">磐田物語 地区別入口ページ</p>
-      <h1>御厨地区</h1>
-      <p class="area-lead">よみがな：みくりや ／ 磐田物語 地区分類番号 01003<br>
-        「御厨」は伊勢神宮の神領（御厨）に由来する地名で、鎌田御厨の名残を伝えます。鎌田神明宮（遠州のお伊勢さま）を中心に、東部の田園・集落・暮らしの記憶が重なる、磐田市東部の地区です。</p>
-    </header>
+<nav class="breadcrumb">
+  <a href="/">磐田物語</a> ／
+  <a href="/c002.html">地域分類</a> ／ 御厨地区
+</nav>
 
-    <section class="district-hero" aria-label="御厨地区の記憶をたどる入口図">
-      <figure class="district-hero__figure">
-        <img src="/assets/img/district-hero/01003-mikuriya-hero.svg"
-             alt="御厨地区の田園・集落・神明宮（伊勢神宮領の名残）の記憶を表した模式図"
-             width="960" height="540" loading="eager">
-        <figcaption>御厨地区の記憶をたどる入口図 ── 伊勢系の神明宮、集落、東部の田園の重なりを表した模式図です（地理を正確に示す地図ではありません）。</figcaption>
-      </figure>
-    </section>
+<!-- 地区ヘッダー -->
+<section class="district-head">
+  <span class="district-label">磐田物語 地区別入口ページ</span>
+  <h1><span class="h1-bar"></span>御厨地区</h1>
+  <p class="district-meta">よみがな：みくりや ／ 磐田物語 地区分類番号 01003</p>
+  <p class="district-lead">「御厨」は伊勢神宮の神領（御厨）に由来する地名で、鎌田御厨の名残を伝えます。鎌田神明宮（遠州のお伊勢さま）を中心に、東部の田園・集落・暮らしの記憶が重なる、磐田市東部の地区です。</p>
+</section>
 
-    <section class="area-section">
-      <p class="note">この地区分類は、現在の行政区分をそのまま写したものではありません。旧町村の沿革、学校区、大字、生活圏、地域の記憶をもとにした、磐田物語独自の分類です。内容は今後の資料確認により随時更新します。</p>
-    </section><!-- (3) 代表テーマ・特集導線 -->
-    <section class="area-section">
-      <h2>御厨を代表するテーマ</h2>
-      <p>はじめての方に、まず見ていただきたい入口です。</p>
-      <div class="feature-strip">
-        <a href="/u014.html"><span class="ft-k">街道・交通</span><span class="ft-t">令和の新駅と御厨の地名復活</span></a>
-        <a href="/u015.html"><span class="ft-k">町村沿革</span><span class="ft-t">明治27年の分村と自立の道</span></a>
-        <a href="/u004.html"><span class="ft-k">土地の記憶</span><span class="ft-t">城之崎遺跡の重層的な歴史</span></a>
-      </div>
-    </section>
+<!-- ヒーロー模式図 -->
+<section class="hero">
+  <figure>
+    <img src="/assets/img/district-hero/01003-mikuriya-hero.svg" alt="御厨地区の田園・集落・神明宮（伊勢神宮領の名残）の記憶を表した模式図" width="960" height="540" loading="eager">
+    <figcaption>御厨地区の記憶をたどる入口図 ── 伊勢系の神明宮、集落、東部の田園の重なりを表した模式図です（地理を正確に示す地図ではありません）。</figcaption>
+  </figure>
+  <div class="notice">この地区分類は、現在の行政区分をそのまま写したものではありません。旧町村の沿革、学校区、大字、生活圏、地域の記憶をもとにした、磐田物語独自の分類です。内容は今後の資料確認により随時更新します。</div>
+</section>
 
+<!-- 導入：御厨という土地 -->
+<section class="intro">
+  <p>御厨は、磐田原台地の東縁に広がる町です。平安時代以降、伊勢神宮の荘園「鎌田御厨」として成立し、地名の由来ともなりました。国史跡の御厨古墳群や、弥生時代の高地性集落である城之崎遺跡など、古代から中世にかけての記憶が台地の縁に幾重にも積み重なっています。鎌田神明宮を総鎮守とし、二子塚古墳や堂山古墳など、御厨古墳群につらなる古墳が点在します。このページは、その御厨の記憶をたどるための入口です。まずは三つの扉から、どうぞ。</p>
+</section>
 
-    <!-- (2) 歴史的コンテンツ入口（全件表示 + テーマ別絞り込み） -->
-    <section class="area-section" data-filter-scope>
-      <h2>この地区の歴史を読む</h2>
-      <p>御厨地区に関係する読み物・特集・史料ページを、新着の記事を上に、ほかはランダムに並べて全件表示しています。テーマ別に絞り込んで探すこともできます。</p>
+<!-- 優先1：三つの入口 -->
+<h2>はじめて御厨を読む方へ ── 三つの入口</h2>
+<div class="theme-cards">
+  <div class="theme-card">
+    <div class="cat">総論</div>
+    <div class="body">
+      <a href="/u004.html">城之崎遺跡</a>
+      <p>弥生後期の竪穴住居跡と後期古墳が重なる城之崎遺跡。重層的な土地の時間を読む。</p>
+    </div>
+  </div>
+  <div class="theme-card">
+    <div class="cat">神社仏閣</div>
+    <div class="body">
+      <a href="/u003.html">鎌田神明宮 ── 遠州のお伊勢さま</a>
+      <p>「遠州のお伊勢さま」と親しまれる鎌田神明宮。御厨の信仰の中心をたどる。</p>
+    </div>
+  </div>
+  <div class="theme-card">
+    <div class="cat">土地の記憶</div>
+    <div class="body">
+      <a href="/u027.html">御厨古墳群 ── 松林山古墳に始まる新貝・鎌田の記憶</a>
+      <p>国指定史跡。松林山古墳に始まる新貝・鎌田の大型古墳群。</p>
+    </div>
+  </div>
+</div>
 
-      <div class="district-filter" aria-label="テーマ別に絞り込む">
-        <button type="button" data-filter="all" aria-pressed="true">すべて</button>
-        <button type="button" data-filter="shiryo">史料</button>
-        <button type="button" data-filter="old-photo">古写真</button>
-        <button type="button" data-filter="old-map">古地図</button>
-        <button type="button" data-filter="place-name">地名</button>
-        <button type="button" data-filter="village-history">町村沿革</button>
-        <button type="button" data-filter="shrine-temple">神社仏閣</button>
-        <button type="button" data-filter="festival">祭り</button>
-        <button type="button" data-filter="road-traffic">街道・交通</button>
-        <button type="button" data-filter="architecture">建物・古民家</button>
-        <button type="button" data-filter="school">学校</button>
-        <button type="button" data-filter="life">暮らし</button>
-        <button type="button" data-filter="land-memory">土地の記憶</button>
-      </div>
-      <p class="district-filter-count" role="status">全27件</p>
+<!-- 優先2：記事を探す -->
+<h2>御厨の記事を探す</h2>
+<p class="section-lead">御厨地区に関係する読み物・特集・史料ページを、新着を上にして並べています。テーマ別に絞り込むこともできます。</p>
 
-      <div class="content-cards">
-        <article class="content-card" data-district="mikuriya" data-theme="cultural-property land-memory" data-published="2026-06-27">
-          <p class="card-label">史跡</p>
-          <h3><a href="/u027.html">御厨古墳群</a></h3>
-          <p>国指定史跡。松林山古墳に始まる新貝・鎌田の大型古墳群。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="cultural-property shrine-temple land-memory" data-published="2026-06-27">
-          <p class="card-label">名勝</p>
-          <h3><a href="/u028.html">医王寺庭園及び参道</a></h3>
-          <p>市指定名勝。鎌田の名勝庭園と参道空間を歩く。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="cultural-property land-memory" data-published="2026-06-27">
-          <p class="card-label">天然記念物</p>
-          <h3><a href="/u029.html">袴田家のマキ</a></h3>
-          <p>市指定天然記念物。鎌田の屋敷林に立つイヌマキと遠州の風土。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="place-name village-history land-memory" data-published="2026-06-15">
-          <p class="card-label">地名</p>
-          <h3><a href="/u002.html">鎌田御厨 ── 伊勢神宮領だった村の名残</a></h3>
-          <p>「御厨」という地名のなりたち。伊勢神宮領だった鎌田御厨の歴史を解説する。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="shrine-temple" data-published="2026-06-14">
-          <p class="card-label">神社仏閣</p>
-          <h3><a href="/u003.html">鎌田神明宮 ── 遠州のお伊勢さま</a></h3>
-          <p>「遠州のお伊勢さま」と親しまれる鎌田神明宮。御厨の信仰の中心をたどる。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="place-name land-memory" data-published="2026-06-13">
-          <p class="card-label">地名</p>
-          <h3><a href="/u001.html">「貝塚」という地名 ── 西貝塚・東貝塚と消えた海岸線</a></h3>
-          <p>縄文の海と地形史から、東貝塚・西貝塚の地名と土地のなりたちを読み解く解説。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="land-memory" data-published="2026-06-26">
-          <p class="card-label">土地の記憶</p>
-          <h3><a href="/u004.html">城之崎遺跡 ── 弥生後期高地性集落と後期古墳群</a></h3>
-          <p>弥生後期の竪穴住居跡と後期古墳が重なる城之崎遺跡。重層的な土地の時間を読む。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="land-memory place-name" data-published="2026-06-26">
-          <p class="card-label">土地の記憶</p>
-          <h3><a href="/u005.html">新貝 ── 古代国分寺窯跡の記憶と中世新貝庄の開発史</a></h3>
-          <p>遠江国分寺を支えた瓦窯跡と、中世神領庄園としての新貝庄の開発史をたどる。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="village-history land-memory" data-published="2026-06-26">
-          <p class="card-label">町村沿革</p>
-          <h3><a href="/u006.html">東脇・新出 ── 今之浦東岸の干拓と近世新田の誕生</a></h3>
-          <p>かつての今之浦潟の東岸。泥炭と湿地に立ち向かった近世の人々の干拓史。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="land-memory place-name" data-published="2026-06-26">
-          <p class="card-label">土地の記憶</p>
-          <h3><a href="/u007.html">稗原 ── 雑穀の原野から豊かな水田地帯への歩みと水利</a></h3>
-          <p>不毛の雑穀地から、太田川水系等の用水路開削によって実り豊かな美田へと変わった歩み。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="land-memory place-name" data-published="2026-06-26">
-          <p class="card-label">土地の記憶</p>
-          <h3><a href="/u008.html">大立野 ── 中世の名主開発と名残を留める古い郷割</a></h3>
-          <p>中世の開拓名主による開発史と、現代の道路や境界線に息づく「郷割」の美しい区画。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="land-memory place-name" data-published="2026-06-26">
-          <p class="card-label">土地の記憶</p>
-          <h3><a href="/u009.html">安久路 ── 湿地帯「悪路」から美しき田園「阿久路」への土木史</a></h3>
-          <p>不名誉な「悪路」から、瑞祥地名「安久路」へ。近代耕地整理の金字塔を追う。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="road-traffic land-memory" data-published="2026-06-26">
-          <p class="card-label">街道・交通</p>
-          <h3><a href="/u010.html">三ケ野・三ケ野坂 ── 東海道の難所・坂越えの賑わいと一里塚</a></h3>
-          <p>急峻な車坂、富士見の茶屋の賑わい、そして国指定史跡「三ケ野一里塚」の記憶。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="land-memory place-name" data-published="2026-06-26">
-          <p class="card-label">土地の記憶</p>
-          <h3><a href="/u011.html">富士見台 ── 磐田原台地南端の景勝地と近代開拓の歴史</a></h3>
-          <p>台地南端からの富士の絶景と、明治期の士族授産による茶園開墾のフロンティア精神。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="place-name land-memory" data-published="2026-06-26">
-          <p class="card-label">地名</p>
-          <h3><a href="/u012.html">東新屋 ── 新たな入植地「新屋」の成立と近世の生活圏</a></h3>
-          <p>本村から枝郷への人口移動。自立した農村としての東新屋村の成立史。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="life land-memory" data-published="2026-06-26">
-          <p class="card-label">暮らし</p>
-          <h3><a href="/u013.html">和口 ── 河川の合流点に拓かれた「和の口」の民俗と治水</a></h3>
-          <p>水害多発の合流点。水神信仰を心の支えとし、周囲と「和」をもって共同治水にあたった歴史。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="road-traffic place-name" data-published="2026-06-26">
-          <p class="card-label">街道・交通</p>
-          <h3><a href="/u014.html">御厨駅と現代の御厨 ── 令和に蘇った古代「神領」の地名</a></h3>
-          <p>2020年のJR新駅開業。千年の眠りから冷め、地域アイデンティティとして復活した御厨の地名。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="village-history" data-published="2026-06-26">
-          <p class="card-label">町村沿革</p>
-          <h3><a href="/u015.html">御厨村の分立と再編 ── 明治27年、伊勢神領の村々が選択した自立の道</a></h3>
-          <p>明治の大合併による摩擦。北部の伝統的鎌田エリアと、南部の実利的な平野エリアの分村。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="village-history" data-published="2026-06-26">
-          <p class="card-label">町村沿革</p>
-          <h3><a href="/u016.html">南御厨村の誕生 ── 明治27年、南部平野への展開と独立村落の生活圏</a></h3>
-          <p>分村によって生まれた南御厨村。共同治水と独自の学校運営が育んだ強固な南部生活圏。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="village-history" data-published="2026-06-26">
-          <p class="card-label">町村沿革</p>
-          <h3><a href="/u017.html">田原村の誕生 ── 磐田原台地東端の開墾と近代農村コミュニティの形成</a></h3>
-          <p>明治22年に誕生した田原村。台地開墾とお茶の増産、そして御厨地区との深い学校・生活協同関係。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="land-memory village-history" data-published="2026-06-27">
-          <p class="card-label">土地の記憶</p>
-          <h3><a href="/u018.html">田原地区総論 ── 台地・旧道・田園がつくった磐田東部の暮らし</a></h3>
-          <p>台地縁・谷筋・旧道・水の得やすさが重なった場所に集落が寄った、田原地区を地形から読み直す総論。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="road-traffic place-name" data-published="2026-06-27">
-          <p class="card-label">街道・交通</p>
-          <h3><a href="/u019.html">三ヶ野坂から西島・明ヶ島へ ── 道と寺社で読む田原地区の記憶</a></h3>
-          <p>坂・「島」地名・寺社・旧道を手がかりに、移動と信仰と農地の関係を読み解く田原地区の深掘り。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="land-memory place-name" data-published="2026-06-27">
-          <p class="card-label">土地の記憶</p>
-          <h3><a href="/u020.html">御厨地区総論 ── 古い地名と新しい暮らしが重なる磐田東部</a></h3>
-          <p>古い地名の重みと、御厨駅・住宅地・生活圏が重なる現代の御厨を、地形・寺社・道から読む総論。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="land-memory village-history" data-published="2026-06-27">
-          <p class="card-label">土地の記憶</p>
-          <h3><a href="/u021.html">南御厨地区総論 ── 低地・農地・道がつくった南側の生活圏</a></h3>
-          <p>御厨の付属ではなく、低地・水利・農地・寺社のまとまりを持つ独立した生活圏として南御厨を描く。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="land-memory place-name" data-published="2026-06-27">
-          <p class="card-label">地域比較</p>
-          <h3><a href="/u022.html">御厨と南御厨を分けるもの、つなぐもの ── 地名・水・道・暮らしの比較史</a></h3>
-          <p>同じ地名圏にある差異と連続性を、地形・水利・交通・生活圏から比較する横断ページ。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="land-memory village-history" data-published="2026-06-27">
-          <p class="card-label">土地の記憶</p>
-          <h3><a href="/u023.html">西貝地区総論 ── 旧集落・寺社・開発が重なる磐田の東側</a></h3>
-          <p>西貝塚・西之島・上南田・安久路・城之崎。旧農村と近代の都市化・工業化が重なる西貝を読む総論。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="land-memory place-name" data-published="2026-06-27">
-          <p class="card-label">土地の記憶</p>
-          <h3><a href="/u024.html">西貝塚から安久路・城之崎へ ── 田園から市街地へ変わった地域の記憶</a></h3>
-          <p>変化の速い地域ほど記憶は失われやすい。開発・宅地化の層が重なる西貝塚・安久路・城之崎の深掘り。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="archaeology ancient land-memory" data-published="2026-07-04">
-          <p class="card-label">遺跡・考古</p>
-          <h3><a href="/u031.html">西貝塚・明ヶ島・大原周辺の遺跡群 ── 磐田原台地南東縁の考古学的景観</a></h3>
-          <p>縄文の貝塚群・西貝塚を中心に、城之崎遺跡・御厨古墳群へつながる遺跡群を俯瞰する。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="land-memory" data-published="2026-07-05">
-          <p class="card-label">古墳・地形</p>
-          <h3><a href="/u032.html">古墳と川・海・道 ── 磐田海・大乃浦と、東海道以前の水運の記憶</a></h3>
-          <p>磐田原台地に古墳を築いた有力者は何を通じて鉄や鏡を得たのか。磐田海・大乃浦と天竜川の水運から読む。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="place-name land-memory" data-published="2026-07-05">
-          <p class="card-label">古墳・地名</p>
-          <h3><a href="/u033.html">消えた古墳・塚地名の調査 ── 経塚古墳・堂山古墳と、名だけが残る塚</a></h3>
-          <p>東海道線工事や明治の土取りで失われた古墳がある。「塚」という地名が語ること・語れないことを読む。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="shiryo" data-published="2026-07-05">
-          <p class="card-label">考古資料</p>
-          <h3><a href="/u034.html">発掘調査報告書から読む磐田の古代 ── 一次資料の探し方と読み方</a></h3>
-          <p>磐田の古墳を語る記事の多くは発掘調査報告書という一次資料に支えられている。報告書と伝承の違いを読む。</p>
-        </article>
-        <article class="content-card" data-district="mikuriya" data-theme="land-memory" data-published="2026-07-05">
-          <p class="card-label">戦国・伝承</p>
-          <h3><a href="/u035.html">三ヶ野坂・物見の松・本多忠勝伝承 ── 七つの時代の道が重なる坂</a></h3>
-          <p>三ケ野坂には鎌倉から平成まで七つの時代の道が重なって残る。物見の松と本多忠勝の言い伝えも読む。</p>
-        </article>
-      </div>
-      <p class="district-empty" hidden>このテーマに該当するページは、現在準備中です。</p>
-    </section>
-    <!-- (4) 村の誕生から磐田市編入まで -->
-    <section class="area-section">
-      <h2>村の誕生から磐田市編入まで</h2>
-      <p>御厨は、見付や中泉とは異なり、昭和30年に磐田市へ編入されるまで独立した村として歩みました。ここでは、明治の町村制から南御厨村の分立、磐田市への編入、平成の磐田市合併までの流れを、年表と対応表で整理します。各行に出典または確認状況を添えています。</p>
+<div class="filter-chips" id="chips">
+  <button class="chip active" data-f="all">すべて</button>
+  <button class="chip" data-f="史料">史料</button>
+  <button class="chip" data-f="古地図">古地図</button>
+  <button class="chip" data-f="町村沿革">町村沿革</button>
+  <button class="chip" data-f="神社仏閣">神社仏閣</button>
+  <button class="chip" data-f="祭り">祭り</button>
+  <button class="chip" data-f="街道・交通">街道・交通</button>
+  <button class="chip" data-f="建物・古民家">建物・古民家</button>
+  <button class="chip" data-f="学校">学校</button>
+  <button class="chip" data-f="暮らし">暮らし</button>
+  <button class="chip" data-f="土地の記憶">土地の記憶</button>
+</div>
+<p class="article-count">表示中：<span id="count">0</span>件</p>
+<div class="article-grid" id="grid"><p class="article-loading">記事一覧を読み込んでいます…</p></div>
 
-      <h3>年表</h3>
-      <div class="table-scroll"><table class="area-table">
-        <caption>御厨地区の町村沿革年表</caption>
-        <thead><tr><th>年月日</th><th>出来事</th><th>関係する旧町村・地区</th><th>現在の地名・地区との関係</th><th>出典</th><th>確認状況</th></tr></thead>
-        <tbody>
-          <tr><td>中世</td><td>伊勢神宮の神領（御厨）として「鎌田御厨」が営まれる。地名「御厨」の由来。</td><td>鎌田御厨</td><td>御厨地区の名のもと</td><td>一般史／鎌田御厨ほか</td><td><span class="status-chip status-check">要確認</span></td></tr>
-          <tr><td>1889(明治22).4.1</td><td>町村制施行。鎌田・新貝・新出・稗原・東脇・和口・東新屋・大立野・東貝塚・南島・小島・蛭池の各村が合併し、<strong>山名郡御厨村</strong>が発足。</td><td>御厨村</td><td>御厨地区の母体</td><td>『御厨村』ほか</td><td><span class="status-chip status-ok">確認済</span></td></tr>
-          <tr><td>1894(明治27).5.31</td><td>東脇・新出・和口・東新屋・大立野・蛭池・南島・小島の各大字が<strong>南御厨村</strong>として分立。御厨村は鎌田・新貝・稗原・東貝塚のみとなる。</td><td>御厨村・南御厨村</td><td>南御厨は南部地区とも関係</td><td>『御厨村』ほか</td><td><span class="status-chip status-ok">確認済</span></td></tr>
-          <tr><td>1896(明治29).4.1</td><td>郡の廃置により、所属が山名郡から<strong>磐田郡</strong>に変更。</td><td>御厨村</td><td>—</td><td>『御厨村』『磐田郡』</td><td><span class="status-chip status-ok">確認済</span></td></tr>
-          <tr><td>1955(昭和30).1.1</td><td>御厨村・大藤村・向笠村および南御厨村の一部が<strong>磐田市</strong>に編入。</td><td>御厨村ほか</td><td>旧磐田市の一部に</td><td>『御厨村』『磐田市』</td><td><span class="status-chip status-ok">確認済</span></td></tr>
-          <tr><td>2005(平成17).4.1</td><td>旧磐田市・豊田町・竜洋町・福田町・豊岡村が新設合併し、現在の<strong>磐田市</strong>が発足。</td><td>旧磐田市ほか4町村</td><td>現在の磐田市</td><td>『磐田市』ほか</td><td><span class="status-chip status-ok">確認済</span></td></tr>
-          <tr><td>現在</td><td>磐田物語では、旧御厨村域を中心に「御厨地区」として整理。</td><td>御厨地区</td><td>当ページの対象範囲</td><td>磐田物語</td><td><span class="status-chip status-survey">分類方針</span></td></tr>
-        </tbody>
-      </table></div>
-      <p class="note">南御厨村として分立した区域は、現在の南部地区（01005）とも関係します。各大字がどの地区に該当するかの詳細は、出典の追加確認中です（調査中）。</p>
+<!-- 優先3：時間の道しるべ -->
+<h2>どこから読むか迷ったら ── 時間の道しるべ</h2>
+<p class="section-lead">時代の流れに沿って読みたい方は、この順でどうぞ。</p>
+<div class="waymark">
+  <div class="row"><span class="era">全体像と古墳群</span><span><a href="/u004.html">城之崎遺跡</a> → <a href="/u027.html">御厨古墳群</a> → <a href="/u026.html">堂山古墳出土遺物</a></span></div>
+  <div class="row"><span class="era">鎌田御厨と信仰</span><span><a href="/u002.html">鎌田御厨</a> → <a href="/u003.html">鎌田神明宮</a> → <a href="/u028.html">医王寺庭園及び参道</a></span></div>
+  <div class="row"><span class="era">土地の記憶</span><span><a href="/u001.html">「貝塚」という地名</a> → <a href="/u031.html">西貝塚・明ヶ島・大原周辺の遺跡群</a></span></div>
+  <div class="row"><span class="era">街道と伝承</span><span><a href="/u035.html">三ヶ野坂・物見の松・本多忠勝伝承</a></span></div>
+</div>
 
-      <h3>旧町村・大字対応表</h3>
-      <div class="table-scroll"><table class="area-table">
-        <caption>旧地域名から現在の地区分類への対応</caption>
-        <thead><tr><th>旧町村・旧地域名</th><th>成立・変遷</th><th>現在の主な大字・町名</th><th>磐田物語での分類</th><th>備考・確認状況</th></tr></thead>
-        <tbody>
-          <tr><td>鎌田御厨（中世）</td><td>伊勢神宮領の御厨</td><td>鎌田 ほか</td><td>御厨地区</td><td><span class="status-chip status-check">要確認</span></td></tr>
-          <tr><td>御厨村（1889成立）</td><td>1894 南御厨村を分立 → 1955 磐田市へ編入</td><td>鎌田・新貝・稗原・東貝塚 ほか</td><td>御厨地区</td><td><span class="status-chip status-ok">確認済</span></td></tr>
-          <tr><td>南御厨村（1894分立）</td><td>1955 一部が磐田市へ編入</td><td>東脇・和口・新出・東新屋・大立野 ほか</td><td>一部が御厨地区／南部地区</td><td><span class="status-chip status-check">要再確認</span></td></tr>
-        </tbody>
-      </table></div>
-    </section>
+<!-- 優先4：文化財・史跡（現地への送客） -->
+<h2>歩いて出会える記憶 ── 御厨の主な文化財・史跡</h2>
+<p class="section-lead">読み物でたどった記憶の多くは、いまも町のあちこちに形として残っています。『ふるさと散歩』（磐田市教育委員会文化財課）ほかをもとに整理しました。指定内容は変更されることがあります。</p>
+<div class="table-scroll">
+<table>
+<caption>御厨を代表する文化財・史跡（5件）</caption>
+<thead><tr><th>名称</th><th>指定区分</th><th>ひとこと</th><th>磐田物語の記事</th></tr></thead>
+<tbody>
+<tr><td>御厨古墳群（松林山・高根山・稲荷山・秋葉山・御厨堂山）</td><td>国指定史跡</td><td>松林山古墳に始まる、新貝・鎌田に連なる大型古墳群。</td><td><a class="st st-link" href="/u027.html">記事を読む</a></td></tr>
+<tr><td>明ヶ島古墳群出土土製品（約6,000点）</td><td>国指定重要文化財</td><td>明ヶ島古墳群から出土した、約6,000点にのぼる埴輪等の一括資料。</td><td><span class="st st-plan">調査予定</span></td></tr>
+<tr><td>堂山古墳（形象埴輪ほか）</td><td>県指定（出土品）</td><td>御厨古墳群に連なる古墳。形象埴輪など出土品が県指定。</td><td><a class="st st-link" href="/u026.html">記事を読む</a></td></tr>
+<tr><td>鎌田神明宮</td><td>鎌田御厨の総鎮守</td><td>「遠州のお伊勢さま」と親しまれる、御厨・鎌田御厨の総鎮守。</td><td><a class="st st-link" href="/u003.html">記事を読む</a></td></tr>
+<tr><td>医王寺の庭園</td><td>市指定</td><td>鎌田に伝わる市指定名勝の庭園と、参道の空間。</td><td><a class="st st-link" href="/u028.html">記事を読む</a></td></tr>
+</tbody>
+</table>
+</div>
 
-    <!-- (5) 地名・大字・学校区 -->
-    <section class="area-section">
-      <h2>地名・大字・学校区</h2>
-      <p class="note">中学校区・小学校区は、現在の生活圏を知るための目安です。住所や番地によって異なる場合があります。正確な通学区域は、磐田市の最新情報をご確認ください。</p>
+<details class="acc">
+<summary>残り7件の文化財・史跡を見る</summary>
+<div class="table-scroll">
+<table>
+<thead><tr><th>名称</th><th>指定区分</th><th>ひとこと</th><th>磐田物語の記事</th></tr></thead>
+<tbody>
+<tr><td>二子塚古墳（馬形埴輪）</td><td>市指定（出土品）</td><td>御厨古墳群に連なる古墳。馬形埴輪など出土品が市指定。</td><td><span class="st st-plan">調査予定</span></td></tr>
+<tr><td>連城寺（平清盛・重盛供養塔）</td><td>伝承地</td><td>平清盛・重盛の供養塔と伝わる、御厨に残る伝承地。</td><td><span class="st st-plan">調査予定</span></td></tr>
+<tr><td>西貝塚遺跡</td><td>縄文のムラ・貝塚</td><td>縄文海進期の貝塚が残る、西貝塚一帯の遺跡。</td><td><a class="st st-link" href="/u001.html">記事を読む</a></td></tr>
+<tr><td>須賀神社の大クス</td><td>市天然記念物</td><td>須賀神社の境内に育つ、市天然記念物のクスノキ。</td><td><span class="st st-plan">調査予定</span></td></tr>
+<tr><td>大日堂と本多平八郎</td><td>伝承地</td><td>本多忠勝ゆかりと伝わる大日堂。三ケ野坂に残る戦国伝承。</td><td><span class="st st-plan">調査予定</span></td></tr>
+<tr><td>甑塚古墳</td><td>遠江最後の前方後円墳</td><td>遠江地方で最後期とされる、御厨に残る前方後円墳。</td><td><span class="st st-plan">調査予定</span></td></tr>
+<tr><td>三ケ野の七つ道</td><td>鎌倉〜現代の古道群</td><td>三ケ野坂に鎌倉から現代までの、七つの時代の道が重なる。</td><td><a class="st st-link" href="/u035.html">記事を読む</a></td></tr>
+</tbody>
+</table>
+</div>
+</details>
+<p class="table-note">「調査予定」の項目は、資料確認・現地確認ののち、順次読み物として公開します。この一覧は地区の記憶の目次を兼ねており、記事が増えるたびにリンクへ置き換わります。</p>
 
-      <h3>現在の中学校区</h3>
-      <div class="table-scroll"><table class="area-table">
-        <thead><tr><th>中学校</th><th>関係する地域</th><th>備考</th></tr></thead>
-        <tbody><tr><td>神明中学校</td><td>御厨地区</td><td>—</td></tr></tbody>
-      </table></div>
+<!-- 優先5：成り立ち（要約＋子ページへ） -->
+<h2>御厨の成り立ち ── 鎌田御厨から磐田市へ</h2>
+<p class="section-lead">こうした記憶を生んだ御厨という土地が、行政のうえでどう歩んできたか。おおまかな流れは次のとおりです。</p>
+<div class="enkaku-flow">
+  <p class="flow">鎌田御厨 <span class="yr">中世</span> → 御厨村 <span class="yr">明治22年（1889年）</span> → 磐田市へ編入 <span class="yr">昭和30年（1955年）</span> → 新・磐田市 <span class="yr">平成17年（2005年）</span></p>
+  <p style="font-size:.86rem;color:var(--ink-soft);margin-top:.5em">伊勢神宮領「鎌田御厨」に由来し、明治22年の町村制で御厨村となり、昭和30年に磐田市へ編入されました。平成の大合併で現在の磐田市の一部となっています。沿革の年表、旧町村・大字の対応、現在の学校区と大字は、別ページで詳しく整理しています。</p>
+</div>
+<p class="more-center"><a class="btn sub" href="/u036.html">御厨の成り立ちを詳しく ── 沿革年表・学校区・大字</a></p>
 
-      <h3>現在の小学校区</h3>
-      <div class="table-scroll"><table class="area-table">
-        <thead><tr><th>小学校</th><th>関係する地域</th><th>備考</th></tr></thead>
-        <tbody>
-          <tr><td>東部小学校</td><td>御厨地区</td><td>校区の一部が当地区に該当</td></tr>
-          <tr><td>田原小学校</td><td>御厨地区</td><td>—</td></tr>
-        </tbody>
-      </table></div>
+<!-- 優先6：記憶を託す -->
+<h2>御厨の記憶を、次の世代へ</h2>
+<p style="font-size:.9rem">この地区に関する古写真、古い地図、昔の屋号、商店、学校、祭り、建物、地名、言い伝えなどの情報を募集しています。確実な史料だけでなく、「昔こう聞いた」という記憶も、地域を記録する大切な手がかりです。確実な史料と地域の記憶は分けて整理し、次の世代へ手渡していきます。</p>
+<div class="cta-box">
+  <h3 style="margin-top:0">この土地・家の記憶を残したい方へ</h3>
+  <p>御厨をはじめ磐田市・袋井市で、相続した実家・空き家・土地建物のご相談を、地域で暮らし不動産に関わる立場から承っています。</p>
+  <div class="cta-btns">
+    <a class="btn" href="https://www.fujigaoka-service.co.jp/">不動産売却の相談</a>
+    <a class="btn sub" href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/">実家じまい・空き家相談室</a>
+    <a class="btn sub" href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/">相続はじめ・空き家相談室</a>
+  </div>
+</div>
 
-      <h3>主な大字・町名</h3>
-      <p>御厨地区に関係する主な大字・町名は次のとおりです。「〜の一部」とあるものは、町の一部のみが当地区に該当します。</p>
-      <div class="ooaza-box">西之島、上南田、安久路一丁目、安久路二丁目、城之崎、鎌田、新貝、新貝一丁目、新貝二丁目、新貝三丁目、東貝塚、稗原、東脇、新出、和口、東新屋、大立野、東新町、西貝塚の一部、富士見台の一部、見付の一部、明ケ島の一部、玉越、西島、三ケ野、三ケ野台、明ケ島原、彦島、岩井の一部</div>
-    </section>
+<!-- 作成方針・参考資料 -->
+<h2>作成方針・参考資料</h2>
+<h3>作成方針</h3>
+<p style="font-size:.86rem">資料をそのまま転載せず、事実関係を確認したうえで独自に整理する。旧町村の沿革、現在の学校区、大字、生活圏を総合して分類する。断定できない情報は「要確認」「調査中」と明記する。地域の記憶は史実と分け、集合知として集めて随時更新する。</p>
+<h3>参考資料・出典</h3>
+<p style="font-size:.86rem">磐田市公式資料（地区別人口・通学区域ほか）／『御厨村』『磐田市』ほか沿革に関する公開資料／磐田市教育委員会文化財課『ふるさと散歩 東部編』／磐田市史・旧町村史・地域資料</p>
 
-    <!-- (6) 現在の統計・公共施設 -->
-    <section class="area-section">
-      <h2>現在の統計・公共施設</h2>
-      <p>磐田市は人口を<strong>磐田・福田・竜洋・豊田・豊岡の5地区</strong>で集計しています。見付・中泉・御厨・南部・向陽の各地区は、統計上は旧磐田市域にあたる<strong>「磐田地区」</strong>として一括集計されます。ここでは御厨地区を含む磐田地区の数値を示します。</p>
-      <div class="table-scroll"><table class="area-table">
-        <thead><tr><th>項目</th><th>内容</th><th>出典・確認状況</th></tr></thead>
-        <tbody>
-          <tr><td>人口（磐田地区）</td><td>89,868人（男 45,396／女 44,472）</td><td>磐田市「地区別人口」令和8年5月末現在</td></tr>
-          <tr><td>世帯数（磐田地区）</td><td>40,596世帯</td><td>同上</td></tr>
-          <tr><td>位置づけ</td><td>磐田地区（旧磐田市域）に含まれる地区</td><td>磐田市</td></tr>
-          <tr><td>交流センター・包括支援センター等</td><td>調査中（磐田市資料を確認のうえ追記）</td><td><span class="status-chip status-survey">調査中</span></td></tr>
-          <tr><td>磐田市全体（参考）</td><td>163,503人／72,414世帯</td><td>磐田市 令和8年5月末現在</td></tr>
-        </tbody>
-      </table></div>
-      <p class="note">御厨地区単独の人口・世帯数は、磐田市の統計では旧磐田市域（磐田地区）に合算されており、地区単独の数値は公表されていません。地区単独のおおよその規模は、今後、磐田市「大字別人口表」「町別人口表」をもとに整理して追記します。</p>
-    </section>
-<section class="area-section">
-      <h2>御厨地区の歴史をたどる ── 古代から現代まで</h2>
-      <p>御厨地区は、ひとつの時代だけで説明できる地域ではありません。縄文海進のころの海岸線と貝塚、古代遠江国分寺を支えた瓦窯、弥生後期から古墳時代にかけての城之崎遺跡、中世の伊勢神宮領「鎌田御厨」、東海道三ケ野坂、明治の御厨村・南御厨村・田原村、そして令和の御厨駅まで、時代の層が非常に厚く重なっています。</p>
-      <p>この地区を読む鍵は、台地・低地・神領・交通の四つです。磐田原台地の縁には貝塚や古墳、坂道や一里塚の記憶が残り、低地には今之浦潟や水田開発、用水・排水の歴史が刻まれています。鎌田神明宮と「御厨」の名は、伊勢神宮領としての中世の記憶を現在へつなぎ、御厨駅はその古い地名を現代の交通結節点として再び可視化しました。</p>
-      <p>記事群では、地名の語感だけで由来を断定せず、考古資料、地形、旧村名、町村沿革、寺社・伝承、現代の駅・学校区を照合します。確認できる事実、地域に伝わる記憶、そこから導く解釈を分けて読むことで、御厨地区の歴史を厚みのある形で整理します。</p>
+<!-- 下部相談導線 -->
+<div class="cta-box">
+  <p>古い地名や集落の成り立ちを調べていると、家や土地には、登記簿だけでは分からない地域の記憶が残っていることがあります。相続した家、空き家、使わなくなった土地について、「売る・貸す・残す」の前に、一度整理して考えたい方は、富士ヶ丘サービス株式会社までご相談ください。</p>
+  <div class="cta-btns"><a class="btn" href="https://www.fujigaoka-service.info/fudosan">家・土地・空き家の整理について相談する</a></div>
+</div>
 
-      <h3>御厨地区の記事群で使う根拠</h3>
-      <div class="table-scroll"><table class="area-table">
-        <thead><tr><th>根拠・資料</th><th>分かること</th><th>本文での扱い</th></tr></thead>
-        <tbody>
-          <tr><td>磐田市史、旧御厨村・南御厨村・田原村関連資料、町村沿革資料</td><td>明治22年の御厨村成立、明治27年の南御厨村分立、昭和30年の磐田市編入など。</td><td>行政上の変遷を整理する根拠にする。生活圏や古い神領範囲とは区別する。</td></tr>
-          <tr><td>磐田市教育委員会の発掘調査報告・文化財資料</td><td>城之崎遺跡、貝塚、国分寺瓦窯、古墳、埋蔵文化財包蔵地の確認。</td><td>考古資料で確認できる範囲を明示し、伝承や推測と混同しない。</td></tr>
-          <tr><td>国土地理院の地理院地図、旧版地形図、治水地形分類図</td><td>磐田原台地、低地、今之浦潟、旧海岸線、坂道、集落立地の読み取り。</td><td>地形の説明に使う。ただし特定時期の海岸線や語源を地図だけで断定しない。</td></tr>
-          <tr><td>鎌田神明宮、伊勢神宮領「御厨」、東海道三ケ野坂・一里塚の関連資料</td><td>信仰、神領、街道交通、地名継承の背景。</td><td>確認資料と地域伝承を分け、地名の由来は慎重に扱う。</td></tr>
-        </tbody>
-      </table></div>
+</main>
 
-      <h3>記事の読み順</h3>
-      <p>まず <a href="/u001.html">西貝塚・東貝塚</a> と <a href="/u004.html">城之崎遺跡</a> で古い海岸線・弥生後期集落・古墳の層を押さえ、次に <a href="/u002.html">鎌田御厨</a> と <a href="/u003.html">鎌田神明宮</a> で中世神領と信仰の中心を読みます。その後、<a href="/u005.html">新貝</a>、<a href="/u006.html">東脇・新出</a>、<a href="/u007.html">稗原</a>、<a href="/u009.html">安久路</a> で低地開発と水利を見て、<a href="/u010.html">三ケ野・三ケ野坂</a>、<a href="/u014.html">御厨駅</a> で交通の層へ進むと、最後に <a href="/u015.html">御厨村</a>、<a href="/u016.html">南御厨村</a>、<a href="/u017.html">田原村</a> の町村沿革が理解しやすくなります。</p>
-    </section>
-
-
-    <!-- (7) この地区の記憶を募集 -->
-    <section class="area-section memory-call">
-      <h2>この地区の記憶を募集</h2>
-      <p>この地区に関する古写真、古い地図、昔の屋号、商店、学校、祭り、建物、地名、言い伝えなどの情報を募集しています。</p>
-      <p>確実な史料だけでなく、「昔こう聞いた」「この場所にこんな建物があった」という記憶も、地域を記録する大切な手がかりです。確実な史料と地域の記憶は分けて整理し、次の世代へ手渡していきます。</p>
-    </section>
-
-    <!-- 相談導線（控えめに） -->
-    <section class="area-section">
-      <div class="soudan-box"><div class="sb-in">
-        <h3>この土地・家の記憶を残したい方へ</h3>
-        <p>御厨をはじめ磐田市・袋井市で、相続した実家・空き家・土地建物のご相談を、地域で暮らし不動産に関わる立場から承っています。歴史を記録する活動の延長として、土地や家のこれからを一緒に考えます。</p>
-        <div class="sb-links">
-          <a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">不動産売却の相談</a>
-          <a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室</a>
-          <a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室</a>
-        </div>
-      </div></div>
-    </section>
-
-    <!-- (8) 作成方針・参考資料 -->
-    <section class="area-section policy">
-      <h2>作成方針・参考資料</h2>
-      <p>このページは、磐田物語における地区別入口ページです。旧町村沿革、学校区、大字、地域資料、佐口行正氏所蔵史料などをもとに、今後内容を整理・更新していきます。</p>
-      <h3>作成方針</h3>
-      <ul>
-        <li>資料をそのまま転載せず、事実関係を確認したうえで独自に整理する。</li>
-        <li>旧町村の沿革、現在の学校区、大字、生活圏を総合して分類する。</li>
-        <li>断定できない情報は「要確認」「調査中」と明記する。</li>
-        <li>地域の記憶は史実と分け、集合知として集めて随時更新する。</li>
-      </ul>
-      <h3>参考資料・出典</h3>
-      <ul>
-        <li>磐田市公式資料（地区別人口・通学区域ほか）</li>
-        <li>『御厨村（静岡県）』『磐田郡』『磐田市』ほか沿革に関する公開資料（町村制施行・南御厨村分立・郡変更・磐田市編入の年月）</li>
-        <li>磐田市史・旧町村史・地域資料</li>
-        <li>佐口行正氏所蔵史料</li>
-        <li>その他、今後確認する地域資料</li>
-      </ul>
-    </section>
-
-    
-  <section class="local-property-note" aria-labelledby="local-property-note-title" data-common></section>
-
-<nav class="area-nav-bottom">
-      <a href="/">磐田物語トップへ戻る</a>
-      <a href="/c002.html">9地区分類の一覧へ</a>
-    </nav>
-  </main>
-
-  <!-- LEFT-NAV (index aside#area を踏襲) START -->
-    <aside id="area" class="district-aside" aria-label="磐田物語ナビゲーション">
-      <div class="side-row">
-      <!-- 磐田物語 宣言（憲章）バナー -->
-      <div class="side-block">
-        <a href="/c001.html" style="position:relative;display:block;padding:16px 18px;border-radius:14px;background:linear-gradient(135deg,#f3dea6 0%,#caa14f 24%,#a87c2e 52%,#e7cd7e 72%,#b8893a 100%);text-decoration:none;box-shadow:0 8px 20px rgba(120,86,24,0.28);overflow:hidden;">
-          <span style="display:block;background:linear-gradient(180deg,#fffefb 0%,#fffaf0 100%);border:1px solid rgba(138,101,38,0.55);border-radius:9px;padding:14px 16px;box-shadow:inset 0 0 0 1px rgba(255,255,255,0.7);">
-            <span style="display:block;font-size:0.72rem;letter-spacing:0.28em;color:#8a6526;font-weight:700;margin-bottom:6px;">磐田物語 宣言</span>
-            <strong style="display:block;font-family:'Shippori Mincho',serif;font-size:1.15rem;letter-spacing:0.06em;color:#3c2c10;margin-bottom:6px;">憲章・基本理念・行動指針</strong>
-            <span style="display:block;font-size:0.85rem;line-height:1.65;color:#5b4a2a;">磐田の記憶を収集・整理・公開し、未来へ継承していく。その理念を掲げます。</span>
-          </span>
-        </a>
-      </div>
-
-      <!-- みんなの掲示板バナー -->
-      <div class="side-block">
-        <a href="/bbs.html" style="display:block;padding:14px 16px;border:1px solid #d8c7a3;border-radius:14px;background:linear-gradient(180deg,#fffaf0 0%,#f6ead2 100%);color:#2b2118;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.06);">
-          <span style="display:block;font-size:0.8rem;margin-bottom:6px;opacity:0.8;">訪問記念にひとこと</span>
-          <strong style="display:block;font-size:1.1rem;margin-bottom:6px;color:#3a5874;">みんなの掲示板</strong>
-          <span style="display:block;font-size:0.9rem;line-height:1.6;">磐田物語を読んで思ったこと、昔の記憶をお寄せください。</span>
-        </a>
-      </div>
-
-      <div class="side-block saguchi-card">
-        <div class="saguchi-slideshow">
-          <img src="/saguchi/img/ts-7.jpg" class="slide active" alt="浮世絵 美人東海道 見附駅">
-          <img src="/saguchi/img/hk-3.jpg" class="slide" alt="引き札 内山栄吉">
-          <img src="/saguchi/img/hk-2.jpg" class="slide" alt="引き札 久野米吉">
-          <img src="/saguchi/img/hk-1.jpg" class="slide" alt="引き札 川島幸三郎">
-          <img src="/saguchi/img/ph-2.jpg" class="slide" alt="中川町 屋台彫刻">
-          <img src="/saguchi/img/eh-1.jpg" class="slide" alt="見付の祭礼 絵葉書">
-        </div>
-        <div class="saguchi-card-content">
-          <h3 class="font-mincho">佐口行正氏資料室</h3>
-          <p>引札・浮世絵・古地図・絵葉書・古写真など約336点を公開。</p>
-          <div class="saguchi-card-buttons">
-            <a href="/c020.html" class="saguchi-card-btn font-mincho">史料本編</a>
-            <a href="/c019.html" class="saguchi-card-btn font-mincho">目録</a>
-          </div>
-        </div>
-      </div>
-      <div class="side-block chimei-kotoba-card">
-        <h3 class="chimei-kotoba-title font-mincho">地名とことば</h3>
-        <p class="chimei-kotoba-desc">磐田の歴史が息づく地名の由来と、温かみのある方言（遠州弁）の世界。</p>
-        <div class="chimei-kotoba-links">
-          <a href="/c009.html" class="chimei-kotoba-link-item">
-            <span class="link-label font-mincho">地名の由来</span>
-            <span class="link-arrow">→</span>
-          </a>
-          <a href="/c006.html" class="chimei-kotoba-link-item">
-            <span class="link-label font-mincho">遠州弁辞典</span>
-            <span class="link-arrow">→</span>
-          </a>
-          <a href="/c008.html" class="chimei-kotoba-link-item">
-            <span class="link-label font-mincho">遠州弁変換</span>
-            <span class="link-arrow">→</span>
-          </a>
-        </div>
-      </div>
-      <script>
-      (function() {
-        var cards = document.querySelectorAll('.saguchi-card');
-        cards.forEach(function(card) {
-          if (card.dataset.slideshowInitialized) return;
-          card.dataset.slideshowInitialized = "true";
-          var slides = card.querySelectorAll('.saguchi-slideshow .slide');
-          if (slides.length > 1) {
-            var index = 0;
-            setInterval(function() {
-              slides[index].classList.remove('active');
-              index = (index + 1) % slides.length;
-              slides[index].classList.add('active');
-            }, 5000);
-          }
-        });
-      })();
-      </script>
-
-      <!-- 磐田物語の9地区分類から探す -->
-      <div class="side-block area-classification-links">
-        <h3>磐田物語の9地区分類から探す</h3>
-        <nav class="area-link-list" aria-label="磐田物語の9地区分類" style="display:flex;flex-direction:column;gap:9px;margin-top:2px;">
-                              <a class="area-card area-mitsuke" href="/01001-mitsuke.html"><span class="area-name">見付</span><span class="area-yomi">みつけ</span></a>
-          <a class="area-card area-nakaizumi" href="/01002-nakaizumi.html"><span class="area-name">中泉</span><span class="area-yomi">なかいずみ</span></a>
-          <a class="area-card area-mikuriya" href="/01003-mikuriya.html"><span class="area-name">御厨</span><span class="area-yomi">みくりや</span></a>
-          <a class="area-card area-toyoda" href="/01004-toyoda.html"><span class="area-name">豊田</span><span class="area-yomi">とよだ</span></a>
-          <a class="area-card area-nanbu" href="/01005-nanbu.html"><span class="area-name">南部</span><span class="area-yomi">なんぶ</span></a>
-          <a class="area-card area-koyo" href="/01006-koyo.html"><span class="area-name">向陽</span><span class="area-yomi">こうよう</span></a>
-          <a class="area-card area-ryuyo" href="/01007-ryuyo.html"><span class="area-name">竜洋</span><span class="area-yomi">りゅうよう</span></a>
-          <a class="area-card area-fukude" href="/01008-fukude.html"><span class="area-name">福田</span><span class="area-yomi">ふくで</span></a>
-          <a class="area-card area-toyooka" href="/01009-toyooka.html"><span class="area-name">豊岡</span><span class="area-yomi">とよおか</span></a>
-        </nav>
-      </div>
-
-      <!-- 磐田物語の地域分類 バナー -->
-      <a href="/c002.html" class="side-block" aria-label="磐田物語の地域分類 ── 9つの地域とその成り立ちを見る" style="display:block;text-decoration:none;color:#3f2f1f;background:linear-gradient(135deg,#fffaf0 0%,#f4ead8 100%);border:1px solid rgba(120,90,50,0.25);">
-        <span style="display:inline-block;margin-bottom:6px;padding:2px 9px;border-radius:999px;background:rgba(120,90,50,0.12);font-size:0.78rem;font-weight:700;">地域分類でたどる</span>
-        <strong style="display:block;font-family:'Shippori Mincho',serif;line-height:1.45;font-size:1.02rem;color:#3a5874;">磐田物語の地域分類 ── 9つの地域</strong>
-        <small style="display:block;margin-top:6px;line-height:1.55;font-size:0.78rem;color:#6b5a44;">見付・中泉・御厨・豊田・南部・向陽・竜洋・福田・豊岡／明治と平成の旧町村でたどる</small>
-      </a>
-                  <div class="side-block ooaza-search">
-        <h3 id="ooaza-search-title">地域（大字）から探す</h3>
-        <p class="ooaza-search-lead">お住まい・ゆかりのある地名から、磐田物語の地区別入口ページへ移動できます。下の50音（行）見出しを開くと、ほかの地名も探せます。</p>
-        <div class="ooaza-link-list">
-            <a href="/01004-toyoda.html">赤池</a>
-            <a href="/01003-mikuriya.html">安久路</a>
-            <a href="/01003-mikuriya.html">安久路一丁目</a>
-            <a href="/01003-mikuriya.html">安久路二丁目</a>
-            <a href="/01002-nakaizumi.html">旭ケ丘</a>
-            <a href="/01005-nanbu.html">新島</a>
-            <a href="/01003-mikuriya.html">新出</a>
-        </div>
-        <details class="ooaza-acc">
-          <summary>い〜お</summary>
-          <div class="ooaza-link-list">
-            <a href="/01008-fukude.html">一色</a>
-            <a href="/01002-nakaizumi.html">一言の一部（中泉）</a>
-            <a href="/01004-toyoda.html">一言の一部（豊田）</a>
-            <a href="/01009-toyooka.html">壱貫地</a>
-            <a href="/01009-toyooka.html">家田</a>
-            <a href="/01008-fukude.html">五十子</a>
-            <a href="/01001-mitsuke.html">今之浦</a>
-            <a href="/01001-mitsuke.html">今之浦一丁目</a>
-            <a href="/01001-mitsuke.html">今之浦二丁目</a>
-            <a href="/01001-mitsuke.html">今之浦三丁目</a>
-            <a href="/01001-mitsuke.html">今之浦四丁目</a>
-            <a href="/01001-mitsuke.html">今之浦五丁目</a>
-            <a href="/01006-koyo.html">岩井</a>
-            <a href="/01009-toyooka.html">岩室</a>
-            <a href="/01007-ryuyo.html">海老島</a>
-            <a href="/01004-toyoda.html">海老塚</a>
-            <a href="/01008-fukude.html">宇兵衛新田</a>
-            <a href="/01009-toyooka.html">上野部</a>
-            <a href="/01005-nanbu.html">上大之郷</a>
-            <a href="/01005-nanbu.html">上岡田</a>
-            <a href="/01009-toyooka.html">上神増</a>
-            <a href="/01004-toyoda.html">上新屋</a>
-            <a href="/01003-mikuriya.html">上南田</a>
-            <a href="/01004-toyoda.html">上万能</a>
-            <a href="/01004-toyoda.html">上本郷</a>
-            <a href="/01007-ryuyo.html">請負新田</a>
-            <a href="/01002-nakaizumi.html">大泉町</a>
-            <a href="/01006-koyo.html">大久保</a>
-            <a href="/01003-mikuriya.html">大立野</a>
-            <a href="/01009-toyooka.html">大当所</a>
-            <a href="/01007-ryuyo.html">大中瀬</a>
-            <a href="/01005-nanbu.html">大原の一部（旧磐田市側）</a>
-            <a href="/01008-fukude.html">大原の一部（旧福田町側）</a>
-            <a href="/01009-toyooka.html">大平</a>
-            <a href="/01007-ryuyo.html">岡</a>
-            <a href="/01005-nanbu.html">小島</a>
-            <a href="/01004-toyoda.html">小立野</a>
-          </div>
-        </details>
-        <details class="ooaza-acc">
-          <summary>か行</summary>
-          <div class="ooaza-link-list">
-            <a href="/01009-toyooka.html">掛下</a>
-            <a href="/01007-ryuyo.html">掛塚</a>
-            <a href="/01007-ryuyo.html">掛塚蟹町</a>
-            <a href="/01007-ryuyo.html">掛塚新町</a>
-            <a href="/01007-ryuyo.html">掛塚砂町</a>
-            <a href="/01007-ryuyo.html">掛塚大当町</a>
-            <a href="/01007-ryuyo.html">掛塚横町</a>
-            <a href="/01006-koyo.html">笠梅</a>
-            <a href="/01004-toyoda.html">加茂</a>
-            <a href="/01001-mitsuke.html">加茂川通</a>
-            <a href="/01001-mitsuke.html">河原町</a>
-            <a href="/01007-ryuyo.html">川袋</a>
-            <a href="/01004-toyoda.html">気子島</a>
-            <a href="/01005-nanbu.html">北島</a>
-            <a href="/01001-mitsuke.html">北見町</a>
-            <a href="/01005-nanbu.html">刑部島</a>
-            <a href="/01002-nakaizumi.html">国府台</a>
-            <a href="/01005-nanbu.html">草崎</a>
-            <a href="/01002-nakaizumi.html">久保町</a>
-            <a href="/01004-toyoda.html">源平新田</a>
-            <a href="/01009-toyooka.html">合代島</a>
-            <a href="/01001-mitsuke.html">幸町</a>
-            <a href="/01002-nakaizumi.html">御殿</a>
-            <a href="/01007-ryuyo.html">小中瀬</a>
-            <a href="/01007-ryuyo.html">駒場</a>
-            <a href="/01001-mitsuke.html">権現町</a>
-          </div>
-        </details>
-        <details class="ooaza-acc">
-          <summary>さ行</summary>
-          <div class="ooaza-link-list">
-            <a href="/01002-nakaizumi.html">栄町</a>
-            <a href="/01002-nakaizumi.html">坂上町</a>
-            <a href="/01005-nanbu.html">鮫島</a>
-            <a href="/01004-toyoda.html">笹原島</a>
-            <a href="/01002-nakaizumi.html">桜ケ丘</a>
-            <a href="/01009-toyooka.html">敷地</a>
-            <a href="/01006-koyo.html">篠原</a>
-            <a href="/01008-fukude.html">下太</a>
-            <a href="/01005-nanbu.html">下大之郷</a>
-            <a href="/01005-nanbu.html">下岡田</a>
-            <a href="/01009-toyooka.html">下神増</a>
-            <a href="/01009-toyooka.html">下野部</a>
-            <a href="/01004-toyoda.html">下本郷</a>
-            <a href="/01004-toyoda.html">下万能</a>
-            <a href="/01001-mitsuke.html">宿町</a>
-            <a href="/01007-ryuyo.html">十郎島</a>
-            <a href="/01003-mikuriya.html">城之崎</a>
-            <a href="/01003-mikuriya.html">城之崎一丁目</a>
-            <a href="/01003-mikuriya.html">城之崎二丁目</a>
-            <a href="/01003-mikuriya.html">城之崎三丁目</a>
-            <a href="/01003-mikuriya.html">城之崎四丁目</a>
-            <a href="/01007-ryuyo.html">白羽</a>
-            <a href="/01005-nanbu.html">白拍子</a>
-            <a href="/01009-toyooka.html">新開</a>
-            <a href="/01003-mikuriya.html">新貝</a>
-            <a href="/01003-mikuriya.html">新貝一丁目</a>
-            <a href="/01003-mikuriya.html">新貝二丁目</a>
-            <a href="/01003-mikuriya.html">新貝三丁目</a>
-            <a href="/01001-mitsuke.html">新通町</a>
-            <a href="/01007-ryuyo.html">須恵新田</a>
-            <a href="/01001-mitsuke.html">住吉町</a>
-            <a href="/01008-fukude.html">清庵新田</a>
-            <a href="/01001-mitsuke.html">清水町</a>
-            <a href="/01005-nanbu.html">千手堂</a>
-            <a href="/01009-toyooka.html">惣兵衛下新田</a>
-          </div>
-        </details>
-        <details class="ooaza-acc">
-          <summary>た行</summary>
-          <div class="ooaza-link-list">
-            <a href="/01007-ryuyo.html">高木</a>
-            <a href="/01004-toyoda.html">高見丘</a>
-            <a href="/01004-toyoda.html">立野</a>
-            <a href="/01003-mikuriya.html">玉越</a>
-            <a href="/01008-fukude.html">太郎馬新田</a>
-            <a href="/01002-nakaizumi.html">田町</a>
-            <a href="/01002-nakaizumi.html">中央町</a>
-            <a href="/01001-mitsuke.html">天王町</a>
-            <a href="/01005-nanbu.html">天龍</a>
-            <a href="/01006-koyo.html">寺谷</a>
-            <a href="/01006-koyo.html">寺谷新田</a>
-            <a href="/01003-mikuriya.html">東新町</a>
-            <a href="/01003-mikuriya.html">東新町一丁目</a>
-            <a href="/01003-mikuriya.html">東新町二丁目</a>
-            <a href="/01003-mikuriya.html">東新町三丁目</a>
-            <a href="/01004-toyoda.html">東名</a>
-            <a href="/01004-toyoda.html">富丘</a>
-            <a href="/01004-toyoda.html">富里</a>
-            <a href="/01007-ryuyo.html">豊岡</a>
-            <a href="/01007-ryuyo.html">豊岡内名</a>
-            <a href="/01007-ryuyo.html">豊岡江口</a>
-            <a href="/01007-ryuyo.html">豊岡金洗</a>
-            <a href="/01007-ryuyo.html">豊岡敷地</a>
-            <a href="/01007-ryuyo.html">豊岡西堀</a>
-            <a href="/01007-ryuyo.html">豊岡吹上</a>
-            <a href="/01005-nanbu.html">豊島</a>
-            <a href="/01004-toyoda.html">豊田</a>
-            <a href="/01004-toyoda.html">豊田西之島</a>
-            <a href="/01008-fukude.html">豊浜</a>
-            <a href="/01008-fukude.html">豊浜中野</a>
-            <a href="/01002-nakaizumi.html">鳥之瀬</a>
-          </div>
-        </details>
-        <details class="ooaza-acc">
-          <summary>な行</summary>
-          <div class="ooaza-link-list">
-            <a href="/01002-nakaizumi.html">中泉</a>
-            <a href="/01002-nakaizumi.html">中泉一丁目</a>
-            <a href="/01002-nakaizumi.html">中泉二丁目</a>
-            <a href="/01002-nakaizumi.html">中泉三丁目</a>
-            <a href="/01002-nakaizumi.html">中泉四丁目</a>
-            <a href="/01001-mitsuke.html">中川町</a>
-            <a href="/01004-toyoda.html">中田</a>
-            <a href="/01005-nanbu.html">中野</a>
-            <a href="/01007-ryuyo.html">中平松</a>
-            <a href="/01002-nakaizumi.html">中町</a>
-            <a href="/01005-nanbu.html">長須賀</a>
-            <a href="/01004-toyoda.html">長森</a>
-            <a href="/01003-mikuriya.html">西貝塚</a>
-            <a href="/01001-mitsuke.html">西坂町</a>
-            <a href="/01003-mikuriya.html">西島</a>
-            <a href="/01002-nakaizumi.html">西新町</a>
-            <a href="/01003-mikuriya.html">西之島</a>
-            <a href="/01007-ryuyo.html">西平松</a>
-            <a href="/01002-nakaizumi.html">西町</a>
-            <a href="/01002-nakaizumi.html">二之宮</a>
-            <a href="/01002-nakaizumi.html">二之宮浅間</a>
-            <a href="/01002-nakaizumi.html">二之宮東</a>
-          </div>
-        </details>
-        <details class="ooaza-acc">
-          <summary>は行</summary>
-          <div class="ooaza-link-list">
-            <a href="/01007-ryuyo.html">浜新田</a>
-            <a href="/01005-nanbu.html">浜部</a>
-            <a href="/01003-mikuriya.html">稗原</a>
-            <a href="/01003-mikuriya.html">東貝塚</a>
-            <a href="/01008-fukude.html">東小島</a>
-            <a href="/01001-mitsuke.html">東坂町</a>
-            <a href="/01003-mikuriya.html">東新屋</a>
-            <a href="/01004-toyoda.html">東原</a>
-            <a href="/01007-ryuyo.html">東平松</a>
-            <a href="/01002-nakaizumi.html">東町</a>
-            <a href="/01003-mikuriya.html">東脇</a>
-            <a href="/01009-toyooka.html">平松</a>
-            <a href="/01006-koyo.html">平松掛下入作</a>
-            <a href="/01007-ryuyo.html">平間</a>
-            <a href="/01008-fukude.html">蛭池</a>
-            <a href="/01008-fukude.html">福田</a>
-            <a href="/01008-fukude.html">福田中島</a>
-            <a href="/01006-koyo.html">藤上原</a>
-            <a href="/01001-mitsuke.html">富士見台</a>
-            <a href="/01001-mitsuke.html">富士見町</a>
-            <a href="/01001-mitsuke.html">二番町</a>
-            <a href="/01007-ryuyo.html">堀之内</a>
-            <a href="/01002-nakaizumi.html">本町</a>
-          </div>
-        </details>
-        <details class="ooaza-acc">
-          <summary>ま行</summary>
-          <div class="ooaza-link-list">
-            <a href="/01004-toyoda.html">前野</a>
-            <a href="/01009-toyooka.html">松之木島</a>
-            <a href="/01007-ryuyo.html">松本</a>
-            <a href="/01005-nanbu.html">万正寺</a>
-            <a href="/01009-toyooka.html">万瀬</a>
-            <a href="/01009-toyooka.html">三家</a>
-            <a href="/01003-mikuriya.html">三ケ野</a>
-            <a href="/01003-mikuriya.html">三ケ野台</a>
-            <a href="/01001-mitsuke.html">水堀</a>
-            <a href="/01001-mitsuke.html">見付</a>
-            <a href="/01001-mitsuke.html">緑ケ丘</a>
-            <a href="/01008-fukude.html">南島</a>
-            <a href="/01008-fukude.html">南田</a>
-            <a href="/01008-fukude.html">南田伊兵衛新田</a>
-            <a href="/01007-ryuyo.html">南平松</a>
-            <a href="/01004-toyoda.html">宮之一色</a>
-            <a href="/01007-ryuyo.html">宮本</a>
-            <a href="/01009-toyooka.html">虫生</a>
-            <a href="/01006-koyo.html">向笠新屋</a>
-            <a href="/01006-koyo.html">向笠竹之内</a>
-            <a href="/01006-koyo.html">向笠西</a>
-            <a href="/01003-mikuriya.html">明ケ島</a>
-            <a href="/01003-mikuriya.html">明ケ島原</a>
-            <a href="/01001-mitsuke.html">元倉町</a>
-            <a href="/01001-mitsuke.html">元天神町</a>
-            <a href="/01001-mitsuke.html">元宮町</a>
-            <a href="/01004-toyoda.html">森岡</a>
-            <a href="/01004-toyoda.html">森下</a>
-            <a href="/01004-toyoda.html">森本</a>
-          </div>
-        </details>
-        <details class="ooaza-acc">
-          <summary>や行</summary>
-          <div class="ooaza-link-list">
-            <a href="/01009-toyooka.html">社山</a>
-            <a href="/01004-toyoda.html">弥藤太島</a>
-          </div>
-        </details>
-        <details class="ooaza-acc">
-          <summary>わ行</summary>
-          <div class="ooaza-link-list">
-            <a href="/01003-mikuriya.html">和口</a>
-          </div>
-        </details>
-      </div>
-      </div>
-    </aside>
-  <!-- LEFT-NAV END -->
+<!-- 共通末尾ブロック -->
+<div class="footer-blocks">
+  <div class="fb">
+    <h4>佐口行正氏資料室</h4>
+    <p>引札・浮世絵・古地図・絵葉書など、見付を中心に約336点を公開。</p>
+    <div class="links"><a href="/c020.html">史料本編</a><a href="/c019.html">目録</a></div>
+  </div>
+  <div class="fb">
+    <h4>地名とことば</h4>
+    <p>磐田の歴史が息づく地名の由来と、温かみのある遠州弁の世界。</p>
+    <div class="links"><a href="/c009.html">地名の由来</a><a href="/c006.html">遠州弁辞典</a><a href="/c008.html">遠州弁変換</a></div>
+  </div>
+  <div class="fb">
+    <h4>磐田物語の9地区分類から探す</h4>
+    <div class="district-chips">
+      <a style="background:#A9412B" href="/01001-mitsuke.html">見付</a>
+      <a style="background:#008C8C" href="/01002-nakaizumi.html">中泉</a>
+      <a style="background:#B87333" href="/01003-mikuriya.html">御厨</a>
+      <a style="background:#7B4BB2" href="/01004-toyoda.html">豊田</a>
+      <a style="background:#5BAEC0" href="/01005-nanbu.html">南部</a>
+      <a style="background:#5F8D3B" href="/01006-koyo.html">向陽</a>
+      <a style="background:#1E5E9F" href="/01007-ryuyo.html">竜洋</a>
+      <a style="background:#D8D3C5;color:#4d4636" href="/01008-fukude.html">福田</a>
+      <a style="background:#7A5A36" href="/01009-toyooka.html">豊岡</a>
+    </div>
+  </div>
+  <div class="fb">
+    <h4>地域（大字）から探す</h4>
+    <p>お住まい・ゆかりのある地名から、地区別入口ページへ移動できます。</p>
+    <div class="links"><a href="/c095.html">大字さくいんを開く（50音順）</a></div>
+  </div>
 </div>
 
 <footer class="im-foot">
-  <style>
-  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
-  .im-foot *{box-sizing:border-box;}
-  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
-  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-  .im-foot .im-brand:hover{text-decoration:none;}
-  .im-foot .im-brand .im-dot{color:#2f7fa3;}
-  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
-  .im-foot .im-links{width:100%;margin-top:6px;}
-  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
-  .im-foot .im-links li{font-size:13px;line-height:1.6;}
-  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
-  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
-  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
-  .im-foot .im-sns{margin-top:20px;width:100%;border-top:1px solid rgba(255,255,255,.08);padding-top:16px;}
-  .im-foot .im-icons{display:flex;gap:16px;margin-top:8px;}
-  .im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.08);color:#cfe2ec;transition:.2s;}
-  .im-foot .im-icons a:hover{background:rgba(255,255,255,0.18);color:#fff;}
-  .im-foot .im-icons svg{width:18px;height:18px;fill:currentColor;}
-  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
-  </style>
   <div class="im-inner">
     <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
     <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
@@ -895,24 +360,100 @@
         <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
         <li><a href="https://oishi-hiroyuki.org/" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
         <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
       </ul>
-      <div class="im-sns">
-        <p class="im-lh">大石ひろゆきのSNS</p>
-        <div class="im-icons">
-          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
-          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.92-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-          <a href="https://x.com/HiroyukiLawAka" target="_blank" rel="noopener" aria-label="X (旧Twitter)" title="X (旧Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-        </div>
-      </div>
     </div>
-    <div class="im-copy">© 2026 磐田物語 ｜ © 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
   </div>
 </footer>
 
-<section id="c024-parent-link" class="related-materials"><h2>関連読み物</h2><p><a href="c024.html">今之浦と大之浦｜海の記憶が残るまち</a></p></section>
-<script src="/assets/js/district-filter.js" defer></script>
+<script>
+(function(){
+  var DISTRICT_ID = 'mikuriya';
+  var THEME_MAP = {
+    'shiryo':'史料','reference-list':'史料',
+    'old-map':'古地図','old-photo':'古地図',
+    'village-history':'町村沿革',
+    'shrine-temple':'神社仏閣','temple':'神社仏閣',
+    'festival':'祭り',
+    'road-traffic':'街道・交通','railway':'街道・交通','transportation':'街道・交通',
+    'architecture':'建物・古民家',
+    'school':'学校','education':'学校',
+    'life':'暮らし','agriculture':'暮らし','industry':'暮らし','water':'暮らし','craft':'暮らし','mingei':'暮らし',
+    'land-memory':'土地の記憶','place-name':'土地の記憶','terrain':'土地の記憶','archaeology':'土地の記憶'
+  };
+
+  function shuffle(arr){
+    for (var i = arr.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+    }
+    return arr;
+  }
+
+  fetch('/data/pages.json?t=' + new Date().getTime())
+    .then(function(res){ return res.json(); })
+    .then(function(data){
+      var all = (data.pages || []).filter(function(p){
+        return (p.district || []).indexOf(DISTRICT_ID) !== -1 && p.status === 'published';
+      });
+      var withDate = all.filter(function(p){ return p.published_at; });
+      var withoutDate = all.filter(function(p){ return !p.published_at; });
+      withDate.sort(function(a,b){ return a.published_at < b.published_at ? 1 : (a.published_at > b.published_at ? -1 : 0); });
+      var newest = withDate.slice(0, 3);
+      var rest = withDate.slice(3).concat(withoutDate);
+      shuffle(rest);
+      var articles = newest.concat(rest);
+
+      function chipFor(p){
+        var themes = p.themes || [];
+        for (var i=0;i<themes.length;i++){
+          if (THEME_MAP[themes[i]]) return THEME_MAP[themes[i]];
+        }
+        return null;
+      }
+
+      var grid = document.getElementById('grid');
+      var count = document.getElementById('count');
+      if (!grid) return;
+      grid.innerHTML = '';
+      articles.forEach(function(p){
+        var cat = chipFor(p);
+        var div = document.createElement('div');
+        div.className = 'article-card';
+        if (cat) div.setAttribute('data-cat', cat);
+        var tagText = (p.section || cat || '');
+        div.innerHTML = '<span class="tag">'+ (tagText ? tagText : '') +'</span>' +
+          '<a href="/' + p.url + '">' + p.title + '</a>' +
+          (p.summary ? '<p>' + p.summary + '</p>' : '');
+        grid.appendChild(div);
+      });
+      if (count) count.textContent = articles.length;
+
+      var chipsWrap = document.getElementById('chips');
+      if (chipsWrap) {
+        var chipEls = chipsWrap.querySelectorAll('.chip');
+        chipEls.forEach(function(c){
+          c.addEventListener('click', function(){
+            chipEls.forEach(function(x){ x.classList.remove('active'); });
+            c.classList.add('active');
+            var f = c.dataset.f;
+            var n = 0;
+            grid.querySelectorAll('.article-card').forEach(function(card){
+              var show = (f === 'all' || card.getAttribute('data-cat') === f);
+              card.classList.toggle('hidden', !show);
+              if (show) n++;
+            });
+            if (count) count.textContent = n;
+          });
+        });
+      }
+    })
+    .catch(function(){
+      var grid = document.getElementById('grid');
+      if (grid) grid.innerHTML = '<p class="article-loading">記事一覧の読み込みに失敗しました。時間をおいて再度お試しください。</p>';
+    });
+})();
+</script>
 <script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="iwata-monogatari" data-fujigaoka-analytics="true"></script>
 </body>
 </html>
