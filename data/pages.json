@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-07-07",
+  "updated_at": "2026-07-10",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -6462,6 +6462,50 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "section": "磐田共通"
+    },
+    {
+      "title": "南部地区の生い立ち ── 天竜川がつくった村、人が守った村",
+      "url": "s023.html",
+      "district": [
+        "nanbu"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-10",
+      "updated_at": "2026-07-10",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "天竜地区・於保地区・長野地区という三つの旧村の重なりから、南部地区の生い立ちを読む代表記事。",
+      "parent": "01005-nanbu.html"
+    },
+    {
+      "title": "豊岡地区の生い立ち ── 三つの村が一つになった山あいのまち",
+      "url": "y012.html",
+      "district": [
+        "toyooka"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-10",
+      "updated_at": "2026-07-10",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "敷地村・広瀬村・野部村が合併して豊岡村になり、磐田市へ合流するまでの生い立ちを読む代表記事。",
+      "parent": "01009-toyooka.html"
     }
   ]
 }
