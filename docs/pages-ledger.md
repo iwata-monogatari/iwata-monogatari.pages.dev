@@ -851,3 +851,22 @@ New articles found in direct-deploy IDs c053.html / m056.html were preserved as 
 - data/pages.json の `count_as_knowledge: true` 件数は155件だが、登録漏れが多く（本スキルの「pages.jsonだけを根拠にしてはならない」との注意どおり）実態と大きく乖離していたため、従来どおり c034.html（全記事一覧）に実際に掲載されているユニークな記事href数を根拠とした（2026-07-07時点の349本と同じ算出方法。地区ポータル9件・bbs.htmlは対象外）。
 - 算出結果：455本。436 → 455 に更新。
 - 今回はトップページの表示数値のみを対象とし、data/pages.json 側の登録漏れの是正（count_as_knowledge の一括見直し）は行っていない。数字の根拠を将来的に data/pages.json に一本化する場合は、別途、登録漏れの洗い出しが必要。
+
+## 2026-07-10 data/pages.json を公開記事数の唯一の根拠に一本化
+
+c034.html（全記事一覧）とdata/pages.jsonを全件突き合わせ、登録漏れ・count_as_knowledge未設定を解消。以後は「トップページの表示数値のみ」ではなく、data/pages.jsonのcount_as_knowledge:trueを唯一の根拠とする運用に一本化した。
+
+- 突き合わせ手順：c034.htmlの`<li><a href>`一覧（455件、ユニーク）と、data/pages.jsonの`pages`配列（当時355件）をURLで突き合わせ。
+  - c034にあるがpages.jsonに存在しない：110件 → うち8件は`/area/ryuyo/...`という実体のないリンク切れ（r016〜r023.htmlへの旧URL）、残り102件は実在する記事の登録漏れ。
+  - pages.jsonに存在するがcount_as_knowledgeが未設定（None）：190件 → うち189件はstatus:publishedのため`true`に、1件（c025.html「鈴木繁男と磐田窯」）はstatus:archived・meta robots noindex・本文非公開のスタブ記事のため`false`のまま維持。
+  - count_as_knowledge:trueだがc034に未掲載：0件（該当なし）。
+- 対応：
+  1. c034.htmlの`/area/ryuyo/`系8リンクを、実体である`/r016.html`〜`/r023.html`に修正（リンク切れ解消）。
+  2. 上記189件と、リンク修正後にc034と一致したr016〜r023.htmlの計8件（合計197件）のcount_as_knowledge・show_in_updates・show_in_all_articlesを`true`に設定。
+  3. 登録漏れの102件をdata/pages.jsonへ新規登録。title・urlはc034.htmlの表記から採用、districtは掲載セクションから判定、published_at/updated_atは各記事の実ファイルのgit初回コミット日、summaryは各記事のmeta description（またはog:description）から取得。count_as_knowledge/show_in_updates/show_in_all_articlesはいずれも`true`。sitemap.xmlは102件とも既に掲載済みのため変更不要。
+  4. c025.htmlのみ、明示的に`count_as_knowledge: false`・`show_in_updates: false`・`show_in_all_articles: false`とし、archived状態を正しく反映。
+- 最終結果：data/pages.json の `pages` 配列は355件→457件、`count_as_knowledge: true` は155件→454件。c034.htmlのユニーク記事リンク455件のうち、454件がcount_as_knowledge、1件（c025.html、意図的なarchivedスタブ）のみ除外という状態で完全に一致することを確認。
+- トップページ（index.html）の `.philosophy-band__count` を455→454に更新（c025.html除外分の差分を反映）。
+- 新規登録102件・カウント反映197件については、いずれも既存の実在記事の登録漏れ是正であり、新規公開ではないため、data/new-articles.json（新着記事欄）への追加は行っていない。
+
+これにより、公開記事数の根拠は data/pages.json の `count_as_knowledge: true` に一本化された。今後、新規ページ作成時は本スキルの手順どおり data/pages.json への登録を徹底すれば、トップページの数字は data/pages.json から機械的に算出できる状態になっている（現時点では手動更新だが、`tools/sync-knowledge-count.mjs` のような同期スクリプトを設置すれば自動化できる）。
