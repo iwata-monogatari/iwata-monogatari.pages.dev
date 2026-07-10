@@ -612,6 +612,9 @@ img{max-width:100%;display:block;}
   .entry-card:hover{transform:translateY(-2px);border-color:var(--brown);}
   .entry-card h3{font-family:"Shippori Mincho",serif;font-size:16px;margin:0 0 8px;color:var(--ink);}
   .entry-card p{font-size:12.5px;color:var(--ink-soft);margin:0;line-height:1.7;}
+  .entry-card--beginner{border:2px solid #3E9B4F;}
+  .entry-card--beginner:hover{border-color:#3E9B4F;}
+  .entry-card--beginner h3::before{content:"🔰 ";}
   @media(max-width:860px){.entry-grid{grid-template-columns:1fr 1fr;}}
   @media(max-width:480px){.entry-grid{grid-template-columns:1fr;}}
 
@@ -660,7 +663,7 @@ img{max-width:100%;display:block;}
 <section class="entry-section" aria-label="磐田物語の入口">
   <h2>磐田物語の入口</h2>
   <div class="entry-grid">
-    <a class="entry-card" href="/c007.html"><h3>初めての方へ</h3><p>磐田物語の考え方と読み方を紹介します。</p></a>
+    <a class="entry-card entry-card--beginner" href="/c007.html"><h3>初めての方へ</h3><p>磐田物語の考え方と読み方を紹介します。</p></a>
     <a class="entry-card" href="#districts"><h3>地区から探す</h3><p>見付・中泉・竜洋・福田・豊田など、地域ごとに記事をたどれます。</p></a>
     <a class="entry-card" href="/theme.html"><h3>テーマから探す</h3><p>交通史、学校、祭り、戦争の記憶、地名、古写真などから探せます。</p></a>
     <a class="entry-card" href="/c019.html"><h3>佐口史料室を見る</h3><p>引札・浮世絵・古地図・絵葉書・古写真などの史料を公開しています。</p></a>
