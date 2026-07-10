@@ -226,6 +226,72 @@ img{max-width:100%;display:block;}
     color: var(--c-fukude-ink);
   }
 
+  /* --- DISTRICTS × MAIN CONTENTS 統合カード (2026-07-10) --- */
+  .district-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .district-card__name {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    font-size: 17px;
+    margin: 0;
+    padding-bottom: 6px;
+    color: var(--ink);
+    border-bottom: 2px solid var(--accent, var(--brown));
+    display: inline-block;
+  }
+  .district-card .district-card__flagship-label {
+    display: block;
+    font-size: 10.5px;
+    letter-spacing: .08em;
+    font-weight: 700;
+    color: var(--ink-soft);
+    margin: 0 0 4px;
+  }
+  .district-card__flagship {
+    padding-top: 10px;
+    border-top: 1px dashed rgba(31,58,72,.12);
+  }
+  .district-card__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .district-card__cta-primary,
+  .district-card__cta-secondary {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 12.5px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: .2s;
+  }
+  .district-card__cta-primary {
+    background: var(--brown-deep);
+    color: #fff;
+    border: 1px solid var(--brown-deep);
+  }
+  .district-card__cta-primary:hover {
+    opacity: .88;
+  }
+  .district-card__cta-secondary {
+    background: transparent;
+    color: var(--brown-deep);
+    border: 1px solid var(--line);
+  }
+  .district-card__cta-secondary:hover {
+    background: #fff;
+    border-color: var(--brown-deep);
+  }
+  .district-card__actions--single .district-card__cta-primary {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
   /* =========================================
      TOP / NEW CONTENTS
      新着記事：左カラム高さ維持版
@@ -821,103 +887,121 @@ img{max-width:100%;display:block;}
         <p class="eyebrow">DISTRICTS ｜ 磐田物語の9地区分類から探す</p>
         <h2 class="sectitle">地区から探す</h2>
         <div class="cards">
-          <a class="c area-mitsuke" href="/01001-mitsuke.html">
-            <div class="k">見付</div>
-            <p>国府・東海道・府八幡宮・旧見付学校<span class="more">見る →</span></p>
-          </a>
-          <a class="c area-nakaizumi" href="/01002-nakaizumi.html">
-            <div class="k">中泉</div>
-            <p>御殿・代官所・鉄道駅・駅前商業<span class="more">見る →</span></p>
-          </a>
-          <a class="c area-mikuriya" href="/01003-mikuriya.html">
-            <div class="k">御厨</div>
-            <p>城之崎遺跡・鎌田神明宮・弥生の集落<span class="more">見る →</span></p>
-          </a>
-          <a class="c area-toyoda" href="/01004-toyoda.html">
-            <div class="k">豊田</div>
-            <p>地名地図・池田新田・行興寺の熊野伝説<span class="more">見る →</span></p>
-          </a>
-          <a class="c area-nanbu" href="/01005-nanbu.html">
-            <div class="k">南部</div>
-            <p>天竜川低地・遠州灘砂丘・旧村の暮らし<span class="more">見る →</span></p>
-          </a>
-          <a class="c area-koyo" href="/01006-koyo.html">
-            <div class="k">向陽</div>
-            <p>岩田・大藤・向笠の丘陵と水の記憶<span class="more">見る →</span></p>
-          </a>
-          <a class="c area-ryuyo" href="/01007-ryuyo.html">
-            <div class="k">竜洋</div>
-            <p>天竜川舟運・掛塚湊・近代交通<span class="more">見る →</span></p>
-          </a>
-          <a class="c area-fukude" href="/01008-fukude.html">
-            <div class="k">福田</div>
-            <p>海・漁業・年中行事・昔ばなし<span class="more">見る →</span></p>
-          </a>
-          <a class="c area-toyooka" href="/01009-toyooka.html">
-            <div class="k">豊岡</div>
-            <p>敷地川・里山信仰・天竜浜名湖線<span class="more">見る →</span></p>
-          </a>
-        </div>
-      </section>
-
-      <section class="section">
-        <p class="eyebrow">MAIN CONTENTS ｜ まず読む</p>
-        <h2 class="sectitle">磐田物語の代表コンテンツ</h2>
-        <div class="cards">
-          <!-- 見付 -->
-          <a class="c area-mitsuke" href="/m018.html">
-            <div class="k">見付 ─ 代表</div>
-            <h4>見付というまち</h4>
-            <p>国府・宿場・学校と層をなす見付の歩みと、26町内の現在。佐口行正氏所蔵史料を添えてたどる総説。<span class="more">読む →</span></p>
-          </a>
-          <!-- 中泉 -->
-          <a class="c area-nakaizumi" href="/n023.html">
-            <div class="k">中泉 ─ 代表</div>
-            <h4>中泉の生い立ち</h4>
-            <p>国府・御殿・代官所・駅前。古代から近代まで、磐田中心部としての中泉を三層で読む。<span class="more">読む →</span></p>
-          </a>
-          <!-- 御厨 -->
-          <a class="c area-mikuriya" href="/u004.html">
-            <div class="k">御厨 ─ 代表</div>
-            <h4>城之崎遺跡</h4>
-            <p>弥生後期の高地性集落と、城之崎2号墳・3号墳。住居跡と古墳の関係を、磐田原台地南部の地形からたどる長編学術HTML。<span class="more">読む →</span></p>
-          </a>
-          <!-- 豊田 -->
-          <a class="c area-toyoda" href="/t006.html">
-            <div class="k">豊田 ─ 代表</div>
-            <h4>旧豊田町の地名と土地の記憶</h4>
-            <p>『豊田町地名地図』を手がかりに、池田・加茂・森下など旧豊田町の地名と土地利用をたどる。<span class="more">読む →</span></p>
-          </a>
-          <!-- 南部 -->
-          <a class="c area-nanbu" href="/01005-nanbu.html">
-            <div class="k">南部 ─ 代表</div>
-            <h4>南部地区の総論</h4>
-            <p>天竜川下流低地、遠州灘沿岸砂丘、旧村・学校区・生活圏の重なりとしての歴史を大きく読む。<span class="more">読む →</span></p>
-          </a>
-          <!-- 向陽 -->
-          <a class="c area-koyo" href="/k030.html">
-            <div class="k">向陽 ─ 代表</div>
-            <h4>岩田・大藤・向笠をつなぐ丘陵と水の記憶</h4>
-            <p>向陽地区を、岩田・大藤・向笠という旧村の重なりから読み直す総論ページ。<span class="more">読む →</span></p>
-          </a>
-          <!-- 竜洋 -->
-          <a class="c area-ryuyo" href="/r001.html">
-            <div class="k">竜洋 ─ 代表</div>
-            <h4>掛塚という港町</h4>
-            <p>天竜川舟運と遠州灘海運を結んだ掛塚湊。廻船問屋、伊豆石、掛塚まつり、湊町衰退後の記憶をたどる。<span class="more">読む →</span></p>
-          </a>
-          <!-- 福田 -->
-          <a class="c area-fukude" href="/f011.html">
-            <div class="k">福田 ─ 代表</div>
-            <h4>福田の年中行事と昔ばなし</h4>
-            <p>福田町教育委員会『年中行事と昔ばなし』をもとに、正月・盆・秋祭り・講・家の信仰、海と田畑の暮らしを整理する。<span class="more">読む →</span></p>
-          </a>
-          <!-- 豊岡 -->
-          <a class="c area-toyooka" href="/01009-toyooka.html">
-            <div class="k">豊岡 ─ 代表</div>
-            <h4>豊岡地区の総論</h4>
-            <p>敷地川、敷地村・広瀬村・野部村の沿革、獅子ヶ鼻、天竜浜名湖線、祭り・社寺・里山信仰を大きく読む。<span class="more">読む →</span></p>
-          </a>
+          <article class="c district-card area-mitsuke">
+            <h3 class="district-card__name">見付</h3>
+            <p>国府・東海道・府八幡宮・旧見付学校</p>
+            <div class="district-card__flagship">
+              <p class="district-card__flagship-label">代表記事</p>
+              <h4>見付というまち</h4>
+              <p>国府・宿場・学校と層をなす見付の歩みと、26町内の現在。佐口行正氏所蔵史料を添えてたどる総説。</p>
+            </div>
+            <div class="district-card__actions">
+              <a href="/m018.html" class="district-card__cta-primary">代表記事を読む →</a>
+              <a href="/01001-mitsuke.html" class="district-card__cta-secondary">地区ページを見る →</a>
+            </div>
+          </article>
+          <article class="c district-card area-nakaizumi">
+            <h3 class="district-card__name">中泉</h3>
+            <p>御殿・代官所・鉄道駅・駅前商業</p>
+            <div class="district-card__flagship">
+              <p class="district-card__flagship-label">代表記事</p>
+              <h4>中泉の生い立ち</h4>
+              <p>国府・御殿・代官所・駅前。古代から近代まで、磐田中心部としての中泉を三層で読む。</p>
+            </div>
+            <div class="district-card__actions">
+              <a href="/n023.html" class="district-card__cta-primary">代表記事を読む →</a>
+              <a href="/01002-nakaizumi.html" class="district-card__cta-secondary">地区ページを見る →</a>
+            </div>
+          </article>
+          <article class="c district-card area-mikuriya">
+            <h3 class="district-card__name">御厨</h3>
+            <p>城之崎遺跡・鎌田神明宮・弥生の集落</p>
+            <div class="district-card__flagship">
+              <p class="district-card__flagship-label">代表記事</p>
+              <h4>城之崎遺跡</h4>
+              <p>弥生後期の高地性集落と、城之崎2号墳・3号墳。住居跡と古墳の関係を、磐田原台地南部の地形からたどる長編学術HTML。</p>
+            </div>
+            <div class="district-card__actions">
+              <a href="/u004.html" class="district-card__cta-primary">代表記事を読む →</a>
+              <a href="/01003-mikuriya.html" class="district-card__cta-secondary">地区ページを見る →</a>
+            </div>
+          </article>
+          <article class="c district-card area-toyoda">
+            <h3 class="district-card__name">豊田</h3>
+            <p>地名地図・池田新田・行興寺の熊野伝説</p>
+            <div class="district-card__flagship">
+              <p class="district-card__flagship-label">代表記事</p>
+              <h4>旧豊田町の地名と土地の記憶</h4>
+              <p>『豊田町地名地図』を手がかりに、池田・加茂・森下など旧豊田町の地名と土地利用をたどる。</p>
+            </div>
+            <div class="district-card__actions">
+              <a href="/t006.html" class="district-card__cta-primary">代表記事を読む →</a>
+              <a href="/01004-toyoda.html" class="district-card__cta-secondary">地区ページを見る →</a>
+            </div>
+          </article>
+          <article class="c district-card area-nanbu">
+            <h3 class="district-card__name">南部</h3>
+            <p>天竜川低地・遠州灘砂丘・旧村の暮らし</p>
+            <div class="district-card__flagship">
+              <p class="district-card__flagship-label">地区の総論</p>
+              <h4>南部地区の総論</h4>
+              <p>天竜川下流低地、遠州灘沿岸砂丘、旧村・学校区・生活圏の重なりとしての歴史を大きく読む。</p>
+            </div>
+            <div class="district-card__actions district-card__actions--single">
+              <a href="/01005-nanbu.html" class="district-card__cta-primary">地区ページ（総論）を見る →</a>
+            </div>
+          </article>
+          <article class="c district-card area-koyo">
+            <h3 class="district-card__name">向陽</h3>
+            <p>岩田・大藤・向笠の丘陵と水の記憶</p>
+            <div class="district-card__flagship">
+              <p class="district-card__flagship-label">代表記事</p>
+              <h4>岩田・大藤・向笠をつなぐ丘陵と水の記憶</h4>
+              <p>向陽地区を、岩田・大藤・向笠という旧村の重なりから読み直す総論ページ。</p>
+            </div>
+            <div class="district-card__actions">
+              <a href="/k030.html" class="district-card__cta-primary">代表記事を読む →</a>
+              <a href="/01006-koyo.html" class="district-card__cta-secondary">地区ページを見る →</a>
+            </div>
+          </article>
+          <article class="c district-card area-ryuyo">
+            <h3 class="district-card__name">竜洋</h3>
+            <p>天竜川舟運・掛塚湊・近代交通</p>
+            <div class="district-card__flagship">
+              <p class="district-card__flagship-label">代表記事</p>
+              <h4>掛塚という港町</h4>
+              <p>天竜川舟運と遠州灘海運を結んだ掛塚湊。廻船問屋、伊豆石、掛塚まつり、湊町衰退後の記憶をたどる。</p>
+            </div>
+            <div class="district-card__actions">
+              <a href="/r001.html" class="district-card__cta-primary">代表記事を読む →</a>
+              <a href="/01007-ryuyo.html" class="district-card__cta-secondary">地区ページを見る →</a>
+            </div>
+          </article>
+          <article class="c district-card area-fukude">
+            <h3 class="district-card__name">福田</h3>
+            <p>海・漁業・年中行事・昔ばなし</p>
+            <div class="district-card__flagship">
+              <p class="district-card__flagship-label">代表記事</p>
+              <h4>福田の年中行事と昔ばなし</h4>
+              <p>福田町教育委員会『年中行事と昔ばなし』をもとに、正月・盆・秋祭り・講・家の信仰、海と田畑の暮らしを整理する。</p>
+            </div>
+            <div class="district-card__actions">
+              <a href="/f011.html" class="district-card__cta-primary">代表記事を読む →</a>
+              <a href="/01008-fukude.html" class="district-card__cta-secondary">地区ページを見る →</a>
+            </div>
+          </article>
+          <article class="c district-card area-toyooka">
+            <h3 class="district-card__name">豊岡</h3>
+            <p>敷地川・里山信仰・天竜浜名湖線</p>
+            <div class="district-card__flagship">
+              <p class="district-card__flagship-label">地区の総論</p>
+              <h4>豊岡地区の総論</h4>
+              <p>敷地川、敷地村・広瀬村・野部村の沿革、獅子ヶ鼻、天竜浜名湖線、祭り・社寺・里山信仰を大きく読む。</p>
+            </div>
+            <div class="district-card__actions district-card__actions--single">
+              <a href="/01009-toyooka.html" class="district-card__cta-primary">地区ページ（総論）を見る →</a>
+            </div>
+          </article>
         </div>
       </section>
 
