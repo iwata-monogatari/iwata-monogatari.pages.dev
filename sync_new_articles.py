@@ -1,7 +1,7 @@
 import html
 import json
 import re
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 
 
@@ -31,6 +31,8 @@ def load_articles():
     data = load_json_array(DATA_PATH)
     data.extend(discover_articles())
 
+    now_iso = datetime.now().astimezone().isoformat(timespec="seconds")
+
     normalized = []
     seen = set()
     for item in data:
@@ -42,15 +44,34 @@ def load_articles():
         url = str(item.get("url", "")).strip()
         if not (date and category and title and url):
             continue
-        key = (date, category, title, url)
+        # (date, url) で重複排除する。同じ記事が再スキャンで別表記の
+        # category/title を持って再登録され、二重掲載になるのを防ぐため。
+        # 既存分を先に処理するため、手作業で整えた表記が優先して残る。
+        key = (date, url)
         if key in seen:
             continue
         seen.add(key)
+        # published_at: 同日内の並び順を決める実投稿時刻。既存分は温存し、
+        # 新規発見分のみ「今回の同期実行時刻」を暫定値として付与する。
+        published_at = str(item.get("published_at", "")).strip() or (
+            date + "T00:00:00+09:00"
+        )
         normalized.append(
-            {"date": date, "category": category, "title": title, "url": url}
+            {
+                "date": date,
+                "category": category,
+                "title": title,
+                "url": url,
+                "published_at": published_at,
+            }
         )
 
-    normalized.sort(key=lambda item: item["date"], reverse=True)
+    known_urls = {str(item.get("url", "")).strip() for item in load_json_array(DATA_PATH)}
+    for item in normalized:
+        if item["url"] not in known_urls:
+            item["published_at"] = now_iso
+
+    normalized.sort(key=lambda item: (item["date"], item["published_at"]), reverse=True)
     return normalized
 
 
@@ -246,6 +267,7 @@ def write_discovered(discovered):
         DISCOVERED_PATH.write_text(
             json.dumps(discovered, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
+            newline="\n",
         )
     except PermissionError:
         print(f"Warning: could not write {DISCOVERED_PATH}")
@@ -376,11 +398,11 @@ def sync_index(articles):
     items = "\n" + "\n".join(render_index_item(item) for item in articles[:INDEX_LIMIT]) + "\n"
     html_text = replace_between(
         html_text,
-        r'(<ul class="new-article-list news-list" id="new-article-list" aria-label="最新の更新一覧">\n)',
+        r'(<ul class="new-article-list news-list" id="new-article-list" aria-label="新着記事一覧">\n)',
         r"        </ul>",
         items,
     )
-    INDEX_PATH.write_text(html_text, encoding="utf-8")
+    INDEX_PATH.write_text(html_text, encoding="utf-8", newline="\n")
 
 
 def sync_updates(articles):
@@ -392,13 +414,14 @@ def sync_updates(articles):
         r"    </ul>",
         items,
     )
-    UPDATES_PATH.write_text(html_text, encoding="utf-8")
+    UPDATES_PATH.write_text(html_text, encoding="utf-8", newline="\n")
 
 
 def sync_data(articles):
     DATA_PATH.write_text(
         json.dumps(articles, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
+        newline="\n",
     )
 
 
