@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-07-10",
+  "updated_at": "2026-07-11",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -9560,6 +9560,27 @@
       "show_in_all_articles": true,
       "summary": "万里集九の紀行文、今川氏真の掛塚脱出から、江戸期の廻船業・樽木輸送、明治の港湾近代化と水難救済会、人口推移、掛塚祭りの屋台まで。天竜川河口の湊町・掛塚が「遠州の小江戸」と呼ばれた繁栄の軌跡を整理する。",
       "parent": "r037.html"
+    },
+    {
+      "title": "秋鹿氏という土地の記憶｜大石浩之の磐田土地記憶録 第3回",
+      "url": "oishi-iwata-tochi-kiokuroku/03/",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "life",
+        "land-memory"
+      ],
+      "content_type": "essay",
+      "published_at": "2026-07-11",
+      "updated_at": "2026-07-11",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "中泉の地頭・府八幡宮の神職であった秋鹿氏。天正元年(1573)に屋敷を家康に献上し、その地は中泉御殿となった。江戸期の代官・神職、近代の遊興街・料亭「海燕楼」、そして現在の中泉歴史公園へ。土地と家の継承を考える第3回。",
+      "parent": "oishi-iwata-tochi-kiokuroku/"
     }
   ]
 }
