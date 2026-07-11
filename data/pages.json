@@ -418,7 +418,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-03",
-      "updated_at": "2026-07-03",
+      "updated_at": "2026-07-11",
       "date_provisional": false,
       "status": "published",
       "summary": "金原明善の事業から内務省直轄の第一次・第二次・第三次改修まで、工費・区間・主要工事を表形式で整理した治水年表・資料編。",
@@ -426,7 +426,8 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "竜洋"
+      "section": "竜洋",
+      "level": "L2"
     },
     {
       "title": "島畑の景観を歩く ── 天竜川平地に残る土地利用の記憶",
@@ -2367,7 +2368,9 @@
       "parent": "01007-ryuyo.html",
       "count_as_knowledge": true,
       "show_in_updates": true,
-      "show_in_all_articles": true
+      "show_in_all_articles": true,
+      "updated_at": "2026-07-11",
+      "level": "L3"
     },
     {
       "title": "掛塚まつりと遠州屈指の豪華屋台",
@@ -10008,8 +10011,13 @@
     {
       "title": "こひめっこの墓 ── 赤池に400年伝わる、真田の姫の言い伝え",
       "url": "t054.html",
-      "district": ["toyoda"],
-      "themes": ["legend", "village-history"],
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "legend",
+        "village-history"
+      ],
       "content_type": "article",
       "published_at": "2026-07-11",
       "updated_at": "2026-07-11",
@@ -10023,8 +10031,13 @@
     {
       "title": "帯金家長屋門 ── 家康を助けた恩義に由来する姓",
       "url": "t055.html",
-      "district": ["toyoda"],
-      "themes": ["legend", "architecture"],
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "legend",
+        "architecture"
+      ],
       "content_type": "article",
       "published_at": "2026-07-11",
       "updated_at": "2026-07-11",
@@ -10038,8 +10051,13 @@
     {
       "title": "少林寺跡の大イチョウ ── 廃寺に残る樹齢300年の巡礼の記憶",
       "url": "t056.html",
-      "district": ["toyoda"],
-      "themes": ["temple-history", "nature"],
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "temple-history",
+        "nature"
+      ],
       "content_type": "article",
       "published_at": "2026-07-11",
       "updated_at": "2026-07-11",
@@ -10053,8 +10071,13 @@
     {
       "title": "万能橋と十分一税一揆 ── 安政4年、3千余人が集結した大騒動",
       "url": "t057.html",
-      "district": ["toyoda"],
-      "themes": ["edo-period", "peasant-uprising"],
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "edo-period",
+        "peasant-uprising"
+      ],
       "content_type": "article",
       "published_at": "2026-07-11",
       "updated_at": "2026-07-11",
@@ -10068,8 +10091,13 @@
     {
       "title": "西之島学校跡 ── 「遠州の三大学校」に数えられた洋風校舎",
       "url": "t058.html",
-      "district": ["toyoda"],
-      "themes": ["education-history", "meiji-era"],
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "education-history",
+        "meiji-era"
+      ],
       "content_type": "article",
       "published_at": "2026-07-11",
       "updated_at": "2026-07-11",
@@ -10083,8 +10111,13 @@
     {
       "title": "皆川陣屋跡と稲荷山 ── 1800石を治めた旗本、皆川氏の記憶",
       "url": "t059.html",
-      "district": ["toyoda"],
-      "themes": ["edo-period", "hatamoto"],
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "edo-period",
+        "hatamoto"
+      ],
       "content_type": "article",
       "published_at": "2026-07-11",
       "updated_at": "2026-07-11",
@@ -10098,8 +10131,13 @@
     {
       "title": "水汲坂と禁酒地蔵 ── 一言に伝わる、日本で唯一つの受験地蔵",
       "url": "t060.html",
-      "district": ["toyoda"],
-      "themes": ["folk-belief", "showa-era"],
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "folk-belief",
+        "showa-era"
+      ],
       "content_type": "article",
       "published_at": "2026-07-11",
       "updated_at": "2026-07-11",
@@ -10113,8 +10151,13 @@
     {
       "title": "長森こうやく ── 山田与左衛門家に伝わる、東海道みやげの妙薬",
       "url": "t061.html",
-      "district": ["toyoda"],
-      "themes": ["edo-period", "folk-medicine"],
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "edo-period",
+        "folk-medicine"
+      ],
       "content_type": "article",
       "published_at": "2026-07-11",
       "updated_at": "2026-07-11",
@@ -10128,8 +10171,13 @@
     {
       "title": "天竜橋跡 ── 60年にわたり天竜川を渡した木橋の記憶",
       "url": "t062.html",
-      "district": ["toyoda"],
-      "themes": ["transportation", "meiji-era"],
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "transportation",
+        "meiji-era"
+      ],
       "content_type": "article",
       "published_at": "2026-07-11",
       "updated_at": "2026-07-11",
@@ -10143,8 +10191,13 @@
     {
       "title": "静大農学部跡 ── 一言・富丘に残る、旧制農林専門学校の記憶",
       "url": "t063.html",
-      "district": ["toyoda"],
-      "themes": ["education-history", "showa-era"],
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "education-history",
+        "showa-era"
+      ],
       "content_type": "article",
       "published_at": "2026-07-11",
       "updated_at": "2026-07-11",
@@ -10158,8 +10211,13 @@
     {
       "title": "豊田山薬師堂 ── 坂上田村麻呂の伝承と40石の朱印地",
       "url": "t064.html",
-      "district": ["toyoda"],
-      "themes": ["temple-history", "legend"],
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "temple-history",
+        "legend"
+      ],
       "content_type": "article",
       "published_at": "2026-07-11",
       "updated_at": "2026-07-11",
@@ -10173,8 +10231,13 @@
     {
       "title": "神宮山松向寺 ── 浅間山噴火の記録を伝える豊田町最古最大の木造建築",
       "url": "t065.html",
-      "district": ["toyoda"],
-      "themes": ["temple-history", "disaster-record"],
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "temple-history",
+        "disaster-record"
+      ],
       "content_type": "article",
       "published_at": "2026-07-11",
       "updated_at": "2026-07-11",
@@ -10188,8 +10251,13 @@
     {
       "title": "若宮八幡宮と佐藤繁蔵 ── 28か村を合祀した郷社と、力士になった一言の若者",
       "url": "t066.html",
-      "district": ["toyoda"],
-      "themes": ["shrine-history", "biography"],
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "shrine-history",
+        "biography"
+      ],
       "content_type": "article",
       "published_at": "2026-07-11",
       "updated_at": "2026-07-11",
@@ -10199,6 +10267,75 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "明治6年、28か村の神社を合祀して郷社となった森下の若宮八幡宮。奉納相撲の記憶と、一言村に生まれ江戸で「和田の森」の四股名で活躍し立浪親方にまで出世した佐藤繁蔵の生涯を読む。"
+    },
+    {
+      "title": "天竜川の橋と渡船 ── 池田の渡しから掛塚橋・長豊橋へ",
+      "url": "r039.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "bridge",
+        "ferry",
+        "transport"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-11",
+      "updated_at": "2026-07-11",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "橋のなかった天竜川を人はどう渡ったか。池田の渡しと家康の伝承、明治の渡船賃銭表と橋銭、板橋から鉄筋の掛塚橋・長豊橋まで、竜洋側の視点でたどる。",
+      "parent": "r016.html",
+      "level": "L2"
+    },
+    {
+      "title": "竜洋を襲った地震 ── 宝永・安政・東南海と『一代咄』の記憶",
+      "url": "r040.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "earthquake",
+        "disaster",
+        "ichidaibanashi"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-11",
+      "updated_at": "2026-07-11",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "宝永・安政・東南海。竜洋をくりかえし襲った巨大地震の記録を、駒場村の石川多喜蔵が残した体験記『一代咄』とともに読み直す。",
+      "parent": "r016.html",
+      "level": "L3"
+    },
+    {
+      "title": "掛塚の火災と消防 ── 大火の記録と秋葉信仰、消防組のはじまり",
+      "url": "r041.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "fire",
+        "fire-brigade",
+        "akiba-faith"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-11",
+      "updated_at": "2026-07-11",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "葦葺きの家並みと木材、遠州のからっ風。湊町・掛塚をくりかえし襲った大火の記録と、秋葉信仰・五人組の掟・明治17年に生まれた消防組のあゆみをたどる。",
+      "parent": "r016.html",
+      "level": "L2"
     }
   ]
 }
