@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>渡船を支えた助郷たち ── 定助郷・大助郷と助船・助人足制度｜磐田物語</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<meta name="description" content="池田村・船越一色村は渡船に専業し、他の諸役を免除される代わりに、周辺の村々が助郷として人足・船を出す仕組みが定められていた。定助郷・大助郷の区分、手伝人足・野道人足・築出役・簑火人足など5種の仕事、村ごとの負担割合を、郷土研究資料『天竜川池田の渡船』からたどる。">
+<meta property="og:title" content="渡船を支えた助郷たち ── 定助郷・大助郷と助船・助人足制度｜磐田物語">
+<meta property="og:description" content="渡船場を陰で支えた周辺村々の助郷負担と、その組織のしくみをたどる。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fffdf7;--paper-deep:#e9f3fa;--ink:#1f3a48;--ink-soft:#5b6b74;
+    --brown:#2f7fa3;--brown-deep:#1f4f6f;--accent-blue:#356f88;--line:#d8e8ef;
+    --card:#fffdf7;--shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    line-height:1.95;font-size:17px;letter-spacing:.02em;
+    text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(166,113,62,.035) 0, transparent 38%),
+      radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);}
+  a{color:var(--brown-deep);text-underline-offset:3px;}
+
+  .crumbs{max-width:840px;margin:0 auto;padding:24px 24px 0;font-size:13px;color:var(--ink-soft);}
+  .crumbs a{text-decoration:none;}
+  .crumbs a:hover{text-decoration:underline;}
+
+  .article-head{max-width:840px;margin:0 auto;padding:28px 24px 12px;}
+  .article-head .cat{font-size:13px;letter-spacing:.18em;color:var(--accent-blue);font-weight:700;margin:0 0 16px;}
+  .article-head .cat .no{color:var(--brown);}
+  .article-head h1{font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(26px,4.6vw,42px);line-height:1.5;margin:0 0 20px;color:var(--ink);letter-spacing:.03em;}
+  .article-head .sub{font-size:16.5px;color:var(--ink-soft);margin:0;line-height:1.95;}
+
+  .article{max-width:840px;margin:0 auto;padding:24px 24px 56px;}
+  .article h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:23px;
+    color:var(--ink);letter-spacing:.03em;margin:52px 0 20px;
+    padding-left:16px;border-left:4px solid var(--brown);line-height:1.5;}
+  .article h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:18px;color:var(--brown-deep);margin:34px 0 14px;}
+  .article p{margin:0 0 22px;color:var(--ink);}
+  .article p.lead{font-size:18.5px;line-height:2.1;}
+
+  .summary{background:var(--paper-deep);border-radius:8px;padding:24px 28px;margin:28px 0;}
+  .summary h2{margin:0 0 12px;font-size:17px;border:none;padding:0;}
+  .summary ul{margin:0;padding-left:1.3em;}
+  .summary li{margin-bottom:8px;font-size:15px;}
+
+  .infobox{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px 26px;margin:30px 0;}
+  .infobox dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;}
+  .infobox dt{font-weight:700;color:var(--brown-deep);font-size:14.5px;white-space:nowrap;}
+  .infobox dd{margin:0;font-size:14.5px;color:var(--ink);}
+
+  .tablewrap{overflow-x:auto;margin:26px 0;border:1px solid var(--line);border-radius:8px;}
+  table.kx{border-collapse:collapse;width:100%;font-size:14px;min-width:560px;}
+  table.kx caption{caption-side:top;text-align:left;font-size:13px;color:var(--ink-soft);padding:10px 14px 0;}
+  table.kx th,table.kx td{border-top:1px solid var(--line);padding:8px 12px;text-align:left;vertical-align:top;}
+  table.kx thead th{background:var(--paper-deep);color:var(--brown-deep);border-top:none;white-space:nowrap;}
+  table.kx tbody tr:nth-child(even){background:#fafbf7;}
+
+  .pull{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent-blue);
+    border-radius:3px;padding:24px 30px;margin:32px 0;box-shadow:var(--shadow);}
+  .pull p{margin:0;font-family:"Shippori Mincho",serif;font-size:18px;color:var(--ink);line-height:2;}
+
+  .sources{max-width:840px;margin:0 auto;padding:0 24px 8px;}
+  .sources h3{font-size:14px;color:var(--ink-soft);font-weight:700;letter-spacing:.06em;margin:0 0 10px;}
+  .sources ul{margin:0;padding-left:1.2em;}
+  .sources li{font-size:13px;color:var(--ink-soft);line-height:1.8;margin-bottom:4px;}
+
+  .article-nav{max-width:840px;margin:0 auto 56px;padding:0 24px;display:flex;flex-wrap:wrap;gap:14px;}
+  .article-nav a{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
+    padding:13px 26px;border-radius:2px;transition:.2s;letter-spacing:.04em;}
+  .article-nav a.primary{background:var(--brown);color:#fff;}
+  .article-nav a.primary:hover{background:var(--brown-deep);}
+  .article-nav a.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
+  .article-nav a.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
+
+  @media(max-width:760px){
+    table.kx{font-size:13px;}
+  }
+</style>
+  <link rel="canonical" href="https://iwata-monogatari.net/t047.html">
+  <link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+</head>
+<body class="area-toyoda">
+
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<div class="crumbs"><a href="/">磐田物語</a> ／ <a href="/01004-toyoda.html">豊田地区</a> ／ 渡船を支えた助郷たち</div>
+
+<div class="article-head">
+  <p class="cat"><span class="no">資料</span> ｜ 豊田地区・池田・江戸時代の交通史</p>
+  <h1>渡船を支えた助郷たち ──<br>定助郷・大助郷と助船・助人足制度</h1>
+  <p class="sub">池田村と船越一色村は、渡船を専業とする代わりに他の諸役を免除される特権を持っていたが、その分、日々の渡船だけで街道の莫大な交通需要をまかなうことはできなかった。この不足を補ったのが、周辺の村々が人足や船を出す「助郷（すけごう）」の仕組みである。<a href="/t045.html">天竜川池田の渡船</a>を陰で支えた村々の負担と組織を、資料からたどる。</p>
+</div>
+
+<article class="article">
+  <p class="lead">渡船場のにぎわいは、池田村だけの力で保たれていたのではない。天正元年（1573年）、徳川家康は池田村・船越一色村に対し、今切渡船（浜名湖）と同様に渡船以外の諸役を免除する朱印状を与えた。その代わり、渡船だけに専念するこの両村は、大通行など交通需要が一時的にふくれ上がる場面には対応しきれない。そこで生まれたのが、周辺の村々に人足・船を分担させる助郷の制度である。</p>
+
+  <div class="summary">
+    <h2>この記事の要点</h2>
+    <ul>
+      <li>池田村・船越一色村は渡船に専業する代わり、他の諸役を免除されていた。</li>
+      <li>その不足を補うため、周辺の村々が「助郷」として人足・船を出す制度が定められた。</li>
+      <li>助郷は日常の渡船を担う「定助郷」と、将軍上洛など大通行時の増員を担う「大助郷」に分かれていた。</li>
+      <li>助郷の仕事は、手伝人足・野道人足役・渡船場築出役・簑火人足・薦鋪人足の5種に分かれていた。</li>
+      <li>村ごとの負担割合には大きな差があり、勤高の割合は平均5割7分にも達したという。</li>
+    </ul>
+  </div>
+
+  <h2>寄せ船制度の起源</h2>
+  <p>助郷制度の起源をたどると、宝永4年（1707年）5月の天竜川高札に「往還通行人多キ時ハ寄せ船を出し、人馬荷物等滞りなく相わたすべし」という一条があり、これが助船制度の早い時期の証明であるとされる。『近世交通史論』の「今切渡船（浜名湖）と寄せ船制度」の項にも、後にあきらせ船と称して助船制度が行なわれたと記されており、天竜川においても今切の渡船制度と軌を一にする形で、寄せ船（助船）が整えられていったことがわかる。</p>
+  <p>正徳元年（1711年）5月の天竜川高札には、より具体的な心得が記されている。「役船は御定めのごとく懈怠なく、昼夜相勤むべき事。附、往来の旅人に対しかさつな事すべからず、無礼悪口等の事あるべからず。たとえかるき旅人たりといふとも」というもので、助郷から出る役船には、旅人への丁寧な応対まで求められていたことがわかる。</p>
+
+  <h2>定助郷と大助郷</h2>
+  <p>助郷は、日常的な渡船業務を分担する「定助郷（じょうすけごう）」と、将軍上洛や大通行など、渡船の需要が一時的にふくれ上がる際に増員を出す「大助郷（おおすけごう）」に大きく分かれていた。寛政4年（1792年）の『天竜川渡船勤方並役助郷定助大助船手伝人足書上帳』によれば、定助船郷は高瀬船・小船を出す中野町村・国吉村・常光村・禅地村・神増村・平松村・掛下村・寺谷村などの村々からなり、定助人足郷は立野村（長森を含む）・森本村・前野村であった。大助船郷・大助人足郷にはさらに多くの村が名を連ねている。</p>
+  <p>定助人足郷が実際に出勤するのは、日光宮様、御公家様、御名代、御老中様、御所司代様、御城代様といった、格の高い通行がある時であった。これに加え、急な増水や大風で川越えが不自由な時にも、臨時の船役として出勤したという。天竜川の渡船場には、常時、大番船・早船といった御用船6艘のほか、渡船方が造立した小番船22艘・高瀬船11艘が配備され、日常の通切渡船をまかなっていたが、それだけでは莫大な交通需要をまかないきれなかったことが、助郷の必要性の背景にあった。</p>
+
+  <h2>5種の助郷仕事</h2>
+  <p>資料によれば、助郷の仕事は大きく5つに分かれていた。ひとつは「手伝人足」で、渡船場に着岸する船の安全な通行や、格式の高い通行に出勤し、荷物の積み下ろしなどを手伝う仕事である。二つめは「河原之内野道人足役」で、同じく重要な通行に出勤するとともに、急な増水や大風で徒歩渡り（越立）が不自由な時にも臨時の船役として出動した。三つめは「渡船場築出役」で、旅人が安全に渡船場から乗船したり、舟から桟橋（さん橋）へ降りられるよう、桟橋を築く仕事であった。</p>
+  <p>四つめは「簑火（みのび）人足」で、池田村地方から19人が動員された。夜になっても渡船に支障が出ないよう、渡船場に篝火（かがりび）を焚いて照明を確保し、渡し舟を船着場に容易に寄せられるよう手伝う役目である。五つめは「薦鋪（こもしき）人足」で、将軍への献上物である茶壺道中の際に、渡船場に薦（こも）を敷いて荷物が汚れないようにする仕事であった。将軍の権威をもって運ばれる茶に対しても、渡船場は細やかな配慮を求められていたことがわかる。</p>
+
+  <h2>負担の重さと村ごとの格差</h2>
+  <p>助郷の負担は、決して均等ではなかった。嘉永4年（1851年）頃とみられる「渡船場築出橋（桟橋）掛役定助船役大助船役差村表」（服部晴代・柿澤佐江子論文より）を見ると、村高に対する勤高の割合には大きな差がある。茅場村は村高176石のうち勤高5石（割合0.2）にとどまる一方、駒場村は村高604石のうち勤高338石（割合5.5）、向新田は村高98石のうち勤高91石（割合9.2）にも達しており、村の規模と実際の負担の重さは必ずしも比例していなかった。全22村の合計では、村高4,192石に対し勤高2,394石、平均で5割7分もの高い割合が助郷役として課せられていたことになる。</p>
+  <p>このように負担の重い村は、渡船場と近接するために、勤役においてはとりわけ重要な位置を占めていたと考えられている一方、負担の少ない村は、その代償として一定の賃銭を支給されていたとみられるが、詳しい史料が残っていないため不明な点も多いと資料は述べている。将軍の上洛は江戸幕府草創期と幕末に集中しており、文久4年（1864年）正月からの上洛のように大通行が重なる年には、助人足の負担はいっそう重くなった。農民は家業に差し支えがあっても、極めて低廉な賃銭で強制的に夫役を課されたと資料は伝えている。</p>
+  <p>負担のあまりの重さに、天竜川を渡る時の渡船場の混雑ぶりは想像に余りあるものであった、と資料は記す。あまりに重い課役を課された村々の農民が、中泉代官所へ訴え出たこともあったといい、十五歳から六十歳までの男が昼夜の別なく、約一ヶ月もの間、同一賃銭で助人足に勤めさせられたこともあったという。あまりの課役の厳しさに、宿駅から逃げ出す人さえあったといわれる、と資料は結んでいる。</p>
+
+  <div class="pull">
+    <p>渡船場のにぎわいの裏には、日光宮様の通行から将軍の上洛まで、格式の高い通行のたびに出役を命じられた助郷村々の労苦があった。渡し場の記憶は、池田村だけでなく、周辺の村々の記憶でもある。</p>
+  </div>
+
+  <div class="infobox">
+    <dl>
+      <dt>助郷の5つの仕事</dt>
+      <dd>手伝人足（荷物の積み下ろし）／野道人足役（越立不能時の船役）／渡船場築出役（桟橋の設置）／簑火人足（夜間の照明・19人）／薦鋪人足（茶壺道中の荷物養生）</dd>
+      <dt>関連する既存記事</dt>
+      <dd><a href="/t045.html">天竜川池田の渡船</a>／<a href="/t046.html">天竜川に架けられた船橋</a>／<a href="/t048.html">渡船経済のしくみ</a></dd>
+    </dl>
+  </div>
+
+  <!-- im-related:start -->
+<section class="im-related" aria-labelledby="im-related-title">
+  <style>
+  .im-related{margin:56px auto 0;max-width:860px;padding:0 20px;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;}
+  .im-related h2#im-related-title{font-family:"Shippori Mincho",serif;font-size:22px;letter-spacing:.08em;color:#1f3a48;margin:0 0 6px;padding-left:14px;border-left:4px solid #2f7fa3;background:none;}
+  .im-related .im-related-lead{margin:0 0 18px;font-size:13.5px;color:#5c7482;letter-spacing:.03em;}
+  .im-related ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+  .im-related li{margin:0;}
+  .im-related a{display:block;height:100%;background:#fff;border:1px solid #d9e4ea;border-radius:10px;padding:14px 16px;text-decoration:none;transition:border-color .2s,box-shadow .2s;}
+  .im-related a:hover{border-color:#2f7fa3;box-shadow:0 3px 10px rgba(31,58,72,.08);}
+  .im-related .im-related-t{display:block;font-size:15px;font-weight:700;line-height:1.6;color:#1f3a48;}
+  .im-related a:hover .im-related-t{color:#2f7fa3;}
+  .im-related .im-related-d{display:block;margin-top:6px;font-size:12.5px;line-height:1.7;color:#5c7482;}
+  @media(max-width:640px){.im-related ul{grid-template-columns:1fr;}.im-related h2{font-size:20px;}}
+  </style>
+  <h2 id="im-related-title">関連記事</h2>
+  <p class="im-related-lead">この記事とあわせて読みたい、磐田物語の読みものです。</p>
+  <ul>
+    <li><a href="/t045.html"><span class="im-related-t">天竜川池田の渡船 ── 家康の証文から始まった渡し場300年の記憶</span><span class="im-related-d">池田渡船の起源・組織・むすびまでをたどる総論。</span></a></li>
+    <li><a href="/t046.html"><span class="im-related-t">天竜川に架けられた船橋 ── 新田義貞から朝鮮通信使まで</span><span class="im-related-d">臨時の架橋として天竜川に架けられた船橋の歴史。</span></a></li>
+    <li><a href="/t048.html"><span class="im-related-t">渡船経済のしくみ ── 船賃の分配と船勧進物、堤防修理</span><span class="im-related-d">渡船方の収入と、堤防を守り続けた費用負担の実態。</span></a></li>
+    <li><a href="/t044.html"><span class="im-related-t">「町内史跡めぐり」60選</span><span class="im-related-d">渡船場跡・三国堤・池田橋跡など、旧豊田町の史跡60か所を紹介。</span></a></li>
+    <li><a href="/t023.html"><span class="im-related-t">天竜川の「暴れ天竜」と決壊の歴史</span><span class="im-related-d">豊田地区に刻まれた水害の記憶。</span></a></li>
+    <li><a href="/01004-toyoda.html"><span class="im-related-t">豊田地区の入口ページ</span><span class="im-related-d">豊田地区の記事一覧・地図・関連情報。</span></a></li>
+  </ul>
+</section>
+<!-- im-related:end -->
+
+<section class="local-property-note" aria-labelledby="local-property-note-title" data-common></section>
+
+</article>
+
+<div class="sources">
+  <h3>主な参考</h3>
+  <ul>
+    <li>豊田町郷土を研究する会編『郷土研究資料第二集 天竜川池田の渡船』（豊田町教育委員会発行、昭和51年/1976年3月）</li>
+    <li>服部晴代・柿澤佐江子論文（渡船場築出橋掛役定助船役大助船役差村表の出典）</li>
+  </ul>
+</div>
+
+<div class="article-nav">
+  <a class="primary" href="/">トップへ戻る</a>
+  <a class="ghost" href="/t045.html">天竜川池田の渡船（総論）へ</a>
+</div>
+
+<section class="article-policy" data-common></section>
+
+<footer class="im-foot">
+  <style>
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand:hover{text-decoration:none;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  .im-foot .im-sns{margin-top:20px;width:100%;border-top:1px solid rgba(255,255,255,.08);padding-top:16px;}
+  .im-foot .im-icons{display:flex;gap:16px;margin-top:8px;}
+  .im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.08);color:#cfe2ec;transition:.2s;}
+  .im-foot .im-icons a:hover{background:rgba(255,255,255,0.18);color:#fff;}
+  .im-foot .im-icons svg{width:18px;height:18px;fill:currentColor;}
+  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
+  </style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://oishi-hiroyuki.org/" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
+      </ul>
+      <div class="im-sns">
+        <p class="im-lh">大石ひろゆきのSNS</p>
+        <div class="im-icons">
+          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.92-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://x.com/HiroyukiLawAka" target="_blank" rel="noopener" aria-label="X (旧Twitter)" title="X (旧Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+  </div>
+</footer>
+<script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="iwata-monogatari" data-fujigaoka-analytics="true"></script>
+</body>
+</html>
