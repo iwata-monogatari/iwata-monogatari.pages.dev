@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-07-11",
+  "updated_at": "2026-07-12",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -7953,13 +7953,13 @@
       "themes": [],
       "content_type": "reading",
       "published_at": "2026-06-30",
-      "updated_at": "2026-06-30",
+      "updated_at": "2026-07-12",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "磐田南高等学校の歴史を、大正11年創立の静岡県立見付中学校を起点にたどる。旧見付学校の仮校舎、おだわらやまと手作りのプール、ベルリン五輪の水泳メダリスト、戦後の磐田南高への改称と男女共学化、遠江国分寺跡の上に立つ立地、SSHやはぐま祭まで、磐田の知の拠点としての歩みを地域史として整理する。"
+      "summary": "磐田南高等学校の歴史を、大正11年創立の静岡県立見付中学校を起点にたどる。旧見付学校の仮校舎、おだわらやまと手作りのプール、戦後の磐田南高への改称と男女共学化、遠江国分寺跡の上に立つ立地、創立80周年記念誌が伝える国際交流・自然科学活動まで、磐田の知の拠点として整理する。"
     },
     {
       "title": "磐田西高等学校の歴史 ── 中泉商業学校を源流とする実学教育",
@@ -10337,14 +10337,287 @@
       "parent": "r016.html",
       "level": "L2"
     },
-    {"title":"風祭山福王寺 ── 国府の丘と江月堂に残る千年の寺史","url":"n055.html","district":["nakaizumi"],"themes":["shrine-temple","village-history","school","land-memory"],"content_type":"reading","published_at":"2026-07-12","updated_at":"2026-07-12","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"城之崎の古刹・風祭山福王寺を、寺史年表、案内資料、江月堂展示目録、資料館常設展示目録から読む。寺伝、徳川家康朱印地、江月堂の寺子屋、境内の自然を分けて整理する。","parent":"01002-nakaizumi.html","level":"L2","section":"神社仏閣"},
-    {"title":"平氏と遠江国司 ── 平重盛の一族と磐田","url":"c100.html","district":["nakaizumi","mikuriya","toyoda"],"themes":["heian-period","political-history","temple-history"],"content_type":"article","published_at":"2026-07-12","updated_at":"2026-07-12","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"平重盛の遠江国司就任を軸に、蓮光寺・連城寺・熊野御前へ残る平氏の記憶を、政治史と寺伝・文学に分けて読む。","level":"L2"},
-    {"title":"源平争乱と遠江 ── 頼朝の挙兵から遠江支配へ","url":"c101.html","district":["mikuriya","nanbu"],"themes":["heian-period","genpei-war","political-history"],"content_type":"article","published_at":"2026-07-12","updated_at":"2026-07-12","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"治承4年の頼朝挙兵から安田義定の遠江国司就任、鎌田御厨をめぐる争い、千手前伝承までを整理する。","level":"L2"},
-    {"title":"見付守護所 ── 遠江支配をめぐる攻防","url":"m130.html","district":["mitsuke"],"themes":["medieval-history","shugo","castle"],"content_type":"article","published_at":"2026-07-12","updated_at":"2026-07-12","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"鎌倉から戦国まで、今川・斯波らが争った見付守護所の位置、権限、府八幡宮免状と鐘の伝承を読む。","parent":"01001-mitsuke.html","level":"L2"},
-    {"title":"戦国期の見付自治 ── 町人・桝座・大久保氏","url":"m131.html","district":["mitsuke"],"themes":["medieval-history","self-government","commerce"],"content_type":"article","published_at":"2026-07-12","updated_at":"2026-07-12","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"祭礼・徴税・裁判を担った町役人と桝座、天文10年に今川義元が認めた見付自治の仕組みを読む。","parent":"01001-mitsuke.html","level":"L2"},
-    {"title":"舞車と磁石 ── 中世見付の謡曲と狂言","url":"m132.html","district":["mitsuke"],"themes":["performing-arts","festival","road-traffic"],"content_type":"article","published_at":"2026-07-12","updated_at":"2026-07-12","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"謡曲『舞車』と狂言『磁石』に描かれた見付宿から、中世の祇園祭、東海道、都と地方の距離感を読む。","parent":"01001-mitsuke.html","level":"L2"},
-    {"title":"徳川家康と三方原合戦 ── 見付を通った遠江攻略","url":"m133.html","district":["mitsuke"],"themes":["sengoku-period","tokugawa-ieyasu","battle"],"content_type":"article","published_at":"2026-07-12","updated_at":"2026-07-12","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"永禄11年の家康遠江侵攻から元亀3年の武田軍西進と三方原合戦まで、見付を通る軍事経路を読む。","parent":"01001-mitsuke.html","level":"L2"},
-    {"title":"長州征伐と見付宿 ── 幕府軍通行の負担","url":"m134.html","district":["mitsuke"],"themes":["bakumatsu","post-town","military-transport"],"content_type":"article","published_at":"2026-07-12","updated_at":"2026-07-12","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"将軍上洛と長州征伐で見付宿・助郷が負った人馬、宿泊、物資調達の負担と政権交代を読む。","parent":"01001-mitsuke.html","level":"L2"},
-    {"title":"地租改正 ── 地券が変えた磐田の土地所有","url":"c102.html","district":["mitsuke","mikuriya"],"themes":["meiji-era","land-system","industry"],"content_type":"article","published_at":"2026-07-12","updated_at":"2026-07-12","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"地券発行、土地丈量、地租改正反対運動、松方デフレから、近代的土地所有と磐田経済の変化を読む。","level":"L2"}
+    {
+      "title": "風祭山福王寺 ── 国府の丘と江月堂に残る千年の寺史",
+      "url": "n055.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "village-history",
+        "school",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-12",
+      "updated_at": "2026-07-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "城之崎の古刹・風祭山福王寺を、寺史年表、案内資料、江月堂展示目録、資料館常設展示目録から読む。寺伝、徳川家康朱印地、江月堂の寺子屋、境内の自然を分けて整理する。",
+      "parent": "01002-nakaizumi.html",
+      "level": "L2",
+      "section": "神社仏閣"
+    },
+    {
+      "title": "平氏と遠江国司 ── 平重盛の一族と磐田",
+      "url": "c100.html",
+      "district": [
+        "nakaizumi",
+        "mikuriya",
+        "toyoda"
+      ],
+      "themes": [
+        "heian-period",
+        "political-history",
+        "temple-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-12",
+      "updated_at": "2026-07-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "平重盛の遠江国司就任を軸に、蓮光寺・連城寺・熊野御前へ残る平氏の記憶を、政治史と寺伝・文学に分けて読む。",
+      "level": "L2"
+    },
+    {
+      "title": "源平争乱と遠江 ── 頼朝の挙兵から遠江支配へ",
+      "url": "c101.html",
+      "district": [
+        "mikuriya",
+        "nanbu"
+      ],
+      "themes": [
+        "heian-period",
+        "genpei-war",
+        "political-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-12",
+      "updated_at": "2026-07-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "治承4年の頼朝挙兵から安田義定の遠江国司就任、鎌田御厨をめぐる争い、千手前伝承までを整理する。",
+      "level": "L2"
+    },
+    {
+      "title": "見付守護所 ── 遠江支配をめぐる攻防",
+      "url": "m130.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "medieval-history",
+        "shugo",
+        "castle"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-12",
+      "updated_at": "2026-07-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "鎌倉から戦国まで、今川・斯波らが争った見付守護所の位置、権限、府八幡宮免状と鐘の伝承を読む。",
+      "parent": "01001-mitsuke.html",
+      "level": "L2"
+    },
+    {
+      "title": "戦国期の見付自治 ── 町人・桝座・大久保氏",
+      "url": "m131.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "medieval-history",
+        "self-government",
+        "commerce"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-12",
+      "updated_at": "2026-07-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "祭礼・徴税・裁判を担った町役人と桝座、天文10年に今川義元が認めた見付自治の仕組みを読む。",
+      "parent": "01001-mitsuke.html",
+      "level": "L2"
+    },
+    {
+      "title": "舞車と磁石 ── 中世見付の謡曲と狂言",
+      "url": "m132.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "performing-arts",
+        "festival",
+        "road-traffic"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-12",
+      "updated_at": "2026-07-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "謡曲『舞車』と狂言『磁石』に描かれた見付宿から、中世の祇園祭、東海道、都と地方の距離感を読む。",
+      "parent": "01001-mitsuke.html",
+      "level": "L2"
+    },
+    {
+      "title": "徳川家康と三方原合戦 ── 見付を通った遠江攻略",
+      "url": "m133.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "sengoku-period",
+        "tokugawa-ieyasu",
+        "battle"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-12",
+      "updated_at": "2026-07-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "永禄11年の家康遠江侵攻から元亀3年の武田軍西進と三方原合戦まで、見付を通る軍事経路を読む。",
+      "parent": "01001-mitsuke.html",
+      "level": "L2"
+    },
+    {
+      "title": "長州征伐と見付宿 ── 幕府軍通行の負担",
+      "url": "m134.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "bakumatsu",
+        "post-town",
+        "military-transport"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-12",
+      "updated_at": "2026-07-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "将軍上洛と長州征伐で見付宿・助郷が負った人馬、宿泊、物資調達の負担と政権交代を読む。",
+      "parent": "01001-mitsuke.html",
+      "level": "L2"
+    },
+    {
+      "title": "地租改正 ── 地券が変えた磐田の土地所有",
+      "url": "c102.html",
+      "district": [
+        "mitsuke",
+        "mikuriya"
+      ],
+      "themes": [
+        "meiji-era",
+        "land-system",
+        "industry"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-12",
+      "updated_at": "2026-07-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "地券発行、土地丈量、地租改正反対運動、松方デフレから、近代的土地所有と磐田経済の変化を読む。",
+      "level": "L2"
+    },
+    {
+      "title": "見付中学校の創立と校風 ── 五階堂仮校舎・労作教育・校歌",
+      "url": "c103.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "school-history",
+        "education",
+        "old-system-middle-school",
+        "iwata-minami"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-12",
+      "updated_at": "2026-07-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "創立80周年記念誌から、前身の県立見付中学校の創立、五階堂仮校舎、労作教育、防風堤、50mプール、初期校風、校歌の位置づけを読む。",
+      "parent": "iwata-minami-high-school-history.html",
+      "level": "L2"
+    },
+    {
+      "title": "戦後の磐田南高校と男女共学化 ── 磐田第一高校から女子生徒の入学へ",
+      "url": "c104.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "school-history",
+        "postwar",
+        "coeducation",
+        "iwata-minami"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-12",
+      "updated_at": "2026-07-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "見付中学校が新制高校となり、磐田第一高校、磐田南高校、男女共学へ移る時期を、年表と第一期女子生徒の回想から読む。",
+      "parent": "iwata-minami-high-school-history.html",
+      "level": "L2"
+    },
+    {
+      "title": "創立80周年記念誌に見る1990年代の磐南 ── 国際交流・自然科学・部活動",
+      "url": "c105.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "school-history",
+        "international-exchange",
+        "science-education",
+        "club-activities"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-12",
+      "updated_at": "2026-07-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "創立70周年から80周年までの10年を、マウンテンビュー高校交流、桶ケ谷沼・天竜川下流中州での自然科学研究、部活動、理数教育から読む。",
+      "parent": "iwata-minami-high-school-history.html",
+      "level": "L2"
+    }
   ]
 }
