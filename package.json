@@ -6,6 +6,6 @@
     "guard": "python scripts/predeploy_guard.py",
     "guard:deploy": "python scripts/predeploy_guard.py --strict-deploy",
     "footer:sql": "node scripts/seed_footer_fragment.mjs",
-    "deploy": "npm run build && npm run knowledge-count && npm run guard:deploy && wrangler pages deploy . --project-name iwata-monogatari --branch main"
+    "deploy": "npm run build && npm run knowledge-count && npm run guard:deploy && npm exec wrangler@latest -- pages deploy . --project-name iwata-monogatari --branch main"
   }
 }
