@@ -9,7 +9,7 @@
 - 新着記事と公開履歴の正本は `data/new-articles.json` とする。
 - `index.html` と `updates.html` の直書きフォールバックは手で編集しない。
 - 新規ページの公開時は、ページの `<head>` に新着登録用メタタグを入れる。
-- デプロイ前に `python sync_new_articles.py` または `npm run build` を実行する。
+- デプロイ前に `python sync_new_articles.py` または `npm run build` を実行する。`wrangler pages deploy .` の直接実行は禁止し、公開は必ず `npm.cmd run deploy` から行う。
 - Cloudflare Pages では Build command に `npm run build` を設定する。
 
 ## 新規ページに必ず入れるメタタグ
@@ -43,7 +43,9 @@
 5. `python sync_new_articles.py` を実行する。
 6. `data/new-articles.json` の先頭付近に新規ページが入っているか確認する。
 7. `index.html` と `updates.html` が更新されていることを確認する。
-8. デプロイする。
+8. `npm.cmd run knowledge-count` を実行し、公開記事数を同期する。`n055.html` など最近公開した記事が `data/new-articles.json` と `updates.html` に残っていることを確認する。`n053.html` のような既存番号と衝突しないことも確認する。
+9. コミットして push する。
+10. `npm.cmd run deploy` でデプロイする。
 
 ## 実行コマンド
 
@@ -51,6 +53,14 @@ PowerShellでは次を使う。
 
 ```powershell
 python sync_new_articles.py
+npm.cmd run knowledge-count
+npm.cmd run guard
+```
+
+公開時は、コミット・push 後に次を使う。
+
+```powershell
+npm.cmd run deploy
 ```
 
 または、Cloudflare Pages と同じ経路で確認する場合は次を使う。
@@ -89,6 +99,7 @@ Build output directory:
 - `index.html` の新着リストを手で直書き更新しない。
 - `updates.html` の「最新の更新」を手で直書き更新しない。
 - 公開後に `data/new-articles.json` だけを更新して、同期コマンドを実行しない状態で放置しない。
+- `wrangler pages deploy .` を直接実行しない。古い作業コピーや未同期の新着データをそのまま公開してしまうため、必ず `npm.cmd run deploy` を使う。
 - 新規ページに `iwata:published`、`iwata:category`、`iwata:title` を入れ忘れない。
 
 ## 既知の注意点
