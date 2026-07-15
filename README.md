@@ -1,5 +1,6 @@
 # iwata-monogatari.pages.dev
 
+<!-- credential-scope-test -->
 ## 作業を始める前に必ず（2026-07-15）
 `npm.cmd run check-live-sync` を実行し、ローカルの `data/pages.json`・`data/new-articles.json` が今の本番（`https://iwata-monogatari.net`）と一致しているか確認する。**`git status`が「origin/mainと同期」と言っていても、本番はそれと無関係に食い違っていることがある**（Gitを経由しない直接デプロイが別経路から入る場合があるため）。一致していなければ、編集を始める前にまず差分の原因を調べる。2026-07-15、この確認をせずに作業を始めたため、本番にしか無かった108記事に気づかず上書きしかけた事故があった。
 
