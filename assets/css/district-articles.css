@@ -37,10 +37,6 @@
 .district-articles .article-table .col-desc{color:var(--ink-soft);font-size:.8rem}
 .district-articles .article-table .col-date{width:6.5em;text-align:right;white-space:nowrap;color:var(--ink-soft)}
 
-@media(min-width:721px){
-  .district-articles .article-table thead th{position:sticky;top:72px;z-index:1}
-}
-
 .district-articles .article-placeholder{
   background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
   padding:1.4em 1.2em;text-align:center;font-size:.9rem;color:var(--ink-soft);
