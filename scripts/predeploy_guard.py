@@ -25,16 +25,19 @@ REQUIRED_URLS = [
 ]
 
 # These floors make a stale working copy fail before it can publish an older site.
-MIN_HOME_COUNT = 513
-MIN_PAGES_COUNT = 516
-MIN_NEW_ARTICLE_COUNT = 504
+# Raised 2026-07-15 after recovering 108 articles (incl. the Ryuyo r042-r084 series,
+# and the Oishi Iwata land-memory column) that had only ever been deployed ad-hoc
+# from outside this repo and were nearly lost to a stale-deploy overwrite.
+MIN_HOME_COUNT = 620
+MIN_PAGES_COUNT = 625
+MIN_NEW_ARTICLE_COUNT = 600
 
 # Recent articles that must not disappear from new-articles/updates again.
 RECENT_REQUIRED_UPDATE_URLS = [
-    "/n055.html",
-    "/r039.html",
-    "/t054.html",
-    "/n054.html",
+    "/oishi-iwata-tochi-kiokuroku/04",
+    "/oishi-iwata-tochi-kiokuroku/03",
+    "/y015.html",
+    "/y030.html",
 ]
 
 PROTECTED_TITLE_FRAGMENTS = {
