@@ -106,8 +106,15 @@ OLD_INLINE_CSS_BLOCK_RE = re.compile(
 )
 OLD_INLINE_CSS_MEDIA_LINE_RE = re.compile(r"[ \t]*\.article-grid\{grid-template-columns:1fr\}\n")
 
-CSS_LINK = '<link rel="stylesheet" href="/assets/css/district-articles.css">'
-JS_TAG = '<script defer src="/assets/js/district-articles.js"></script>'
+# district-articles.css / .js の内容を変更するたびに繰り上げる。Cloudflare側の
+# Cache-Control: max-age=14400 とブラウザキャッシュにより、バージョンを上げない
+# 限り既存訪問者に最大4時間、更新前のCSS/JSが配信され続けてしまうため
+# （2026-07-15、テーマ列の折り返し修正が反映されない不具合の実因になった）。
+ASSET_VERSION = 4
+CSS_LINK = f'<link rel="stylesheet" href="/assets/css/district-articles.css?v={ASSET_VERSION}">'
+JS_TAG = f'<script defer src="/assets/js/district-articles.js?v={ASSET_VERSION}"></script>'
+OLD_CSS_LINK_RE = re.compile(r'<link rel="stylesheet" href="/assets/css/district-articles\.css(?:\?v=\d+)?">\n?')
+OLD_JS_TAG_RE = re.compile(r'<script defer src="/assets/js/district-articles\.js(?:\?v=\d+)?"></script>\n?')
 
 
 class BuildError(RuntimeError):
@@ -331,14 +338,17 @@ def inject(html, section_html):
     html = OLD_INLINE_CSS_BLOCK_RE.sub("", html)
     html = OLD_INLINE_CSS_MEDIA_LINE_RE.sub("", html)
 
-    if CSS_LINK not in html:
-        html = html.replace(
-            '<link rel="stylesheet" href="/assets/css/site-header.css">',
-            '<link rel="stylesheet" href="/assets/css/site-header.css">\n' + CSS_LINK,
-            1,
-        )
-    if JS_TAG not in html:
-        html = html.replace("</body>", JS_TAG + "\n</body>", 1)
+    # 既存のバージョン違いリンクを一旦除去してから、現在のASSET_VERSIONで入れ直す
+    # （冪等・かつバージョン番号を上げたときに確実に更新されるようにする）。
+    html = OLD_CSS_LINK_RE.sub("", html)
+    html = OLD_JS_TAG_RE.sub("", html)
+
+    html = html.replace(
+        '<link rel="stylesheet" href="/assets/css/site-header.css">',
+        '<link rel="stylesheet" href="/assets/css/site-header.css">\n' + CSS_LINK,
+        1,
+    )
+    html = html.replace("</body>", JS_TAG + "\n</body>", 1)
 
     return html
 
