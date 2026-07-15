@@ -57,6 +57,13 @@ npm.cmd run deploy
 
 記事作成中の通常確認は従来通り `npm.cmd run guard` を使う。これは Git 同期までは要求しない。公開直前だけ `npm.cmd run guard:deploy` が必須になる。
 
+## 本番の巻き戻り・記事消失を防ぐ二重の安全装置（2026-07-15）
+
+過去に、このリポジトリの別クローン（別マシン／別ツールの作業コピー）から `wrangler pages deploy .` を直接実行し、Git に見えない形で本番が古い版に巻き戻る事故が繰り返し起きた。`npm run deploy` の guard は「このリポジトリで手動デプロイするとき」しか守れないため、根本対策として次の二つを追加した。**どちらも `git push` 自体をブロックしない**（pushは常に成功する。誰の作業も止めない）。
+
+1. **Cloudflare Pages の Build Command に `predeploy_guard.py` を設定済み**（プロジェクト設定、Cloudflareダッシュボード側）。`main` へ `git push` すると Cloudflare Pages が自動ビルドするが、そのビルドコマンドが `python scripts/predeploy_guard.py` を実行する。必須記事の欠落・公開記事数の後退・`data/new-articles.json` 等の同期崩れがあれば**そのビルドだけが失敗し、本番は直前の正常な版のまま残る**（pushしたコミット自体は履歴に残るが、公開はされない）。動作確認済み（正常内容→ビルド成功、意図的に記事を1件消した内容→ビルド失敗を確認）。
+2. **`iwata-monogatari-deploy-watchdog` スケジュールタスク**（Claude Code側、20分毎）。Git を経由しない直接アップロード（`wrangler pages deploy` を別クローンから直接実行するケース）で本番がGitの最新版と食い違っていないかを継続監視し、ずれていれば自動で `npm run deploy` を再実行して正規の状態に復旧する。
+
 ## 新規記事ページ作成チェックリスト
 既存記事をテンプレートにコピーして新規ページを作るときに漏れがちな項目。2026-07-04、r036.html作成時に `.article-policy` のスタイル定義（旧記事側の`<style>`に個別ベタ書きされていた）を引き継ぎ忘れて見た目が崩れる事故があったため、共通CSS化とあわせてルール化した。
 
