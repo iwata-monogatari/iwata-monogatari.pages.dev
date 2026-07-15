@@ -1,0 +1,77 @@
+/* 地区別入口ページ「記事を探す」ブロック（表形式一覧＋フィルタ＋ページャ）
+   全9地区共通。地区色は各ページの <style> で定義された --district / --blue 系変数を利用する。 */
+
+.district-articles{margin:2.6em 0}
+.district-articles .visually-hidden{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
+
+.district-articles .article-filter{display:flex;flex-wrap:wrap;gap:.4em;margin:0 0 1.1em}
+.district-articles .article-filter button{
+  font-size:.78rem;border:1px solid var(--line);background:var(--card);border-radius:999px;
+  padding:.25em 1em;cursor:pointer;color:var(--ink-soft);
+}
+.district-articles .article-filter button.is-active{
+  background:var(--district);border-color:var(--district);color:#fff;font-weight:700;
+}
+
+.district-articles .article-count{font-size:.8rem;color:var(--ink-soft);margin-bottom:.8em}
+
+.district-articles .article-table-wrap{
+  overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+}
+.district-articles .article-table{border-collapse:collapse;width:100%;font-size:.84rem;min-width:640px}
+.district-articles .article-table caption{caption-side:top}
+.district-articles .article-table th,
+.district-articles .article-table td{border-bottom:1px solid var(--line);padding:.6em .8em;text-align:left;vertical-align:top}
+.district-articles .article-table thead th{
+  background:var(--blue-pale);color:var(--blue-deep);font-size:.8rem;white-space:nowrap;
+  border-bottom:2px solid var(--district);
+}
+.district-articles .article-table tbody tr:hover{background:var(--blue-pale)}
+.district-articles .article-table tbody tr[hidden]{display:none}
+.district-articles .article-table .col-no{width:4em;color:var(--ink-soft)}
+.district-articles .article-table .col-title a{font-weight:700}
+.district-articles .article-table .col-theme{width:8em;font-size:.78rem;color:var(--district)}
+.district-articles .article-table .col-desc{color:var(--ink-soft);font-size:.8rem}
+.district-articles .article-table .col-date{width:6.5em;text-align:right;white-space:nowrap;color:var(--ink-soft)}
+
+@media(min-width:721px){
+  .district-articles .article-table thead th{position:sticky;top:72px;z-index:1}
+}
+
+.district-articles .article-placeholder{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.4em 1.2em;text-align:center;font-size:.9rem;color:var(--ink-soft);
+}
+
+.district-articles .article-pager{
+  display:flex;align-items:center;justify-content:center;gap:.6em;flex-wrap:wrap;margin-top:1em;
+}
+.district-articles .article-pager[hidden]{display:none}
+.district-articles .article-pager button{
+  font-size:.82rem;border:1px solid var(--blue);background:#fff;color:var(--blue);
+  border-radius:6px;padding:.4em 1em;cursor:pointer;
+}
+.district-articles .article-pager button:disabled{opacity:.4;cursor:default}
+.district-articles .article-pager .pager-nums{display:flex;gap:.35em;list-style:none;margin:0;padding:0}
+.district-articles .article-pager .pager-nums button{
+  min-width:2.2em;border-radius:999px;padding:.35em .6em;
+}
+.district-articles .article-pager .pager-nums button.is-current{
+  background:var(--district);border-color:var(--district);color:#fff;font-weight:700;
+}
+.district-articles .article-pager .pager-status{
+  width:100%;text-align:center;font-size:.78rem;color:var(--ink-soft);margin:.4em 0 0;
+}
+
+@media(max-width:899px){
+  .district-articles .article-table .col-desc{display:none}
+}
+@media(max-width:599px){
+  .district-articles .article-table .col-no,
+  .district-articles .article-table .col-desc{display:none}
+  .district-articles .article-table{min-width:0}
+  .district-articles .article-table .col-theme{width:6em;font-size:.72rem}
+}
