@@ -63,6 +63,8 @@ npm.cmd run deploy
 
 1. **Cloudflare Pages の Build Command に `predeploy_guard.py` を設定済み**（プロジェクト設定、Cloudflareダッシュボード側）。`main` へ `git push` すると Cloudflare Pages が自動ビルドするが、そのビルドコマンドが `python scripts/predeploy_guard.py` を実行する。必須記事の欠落・公開記事数の後退・`data/new-articles.json` 等の同期崩れがあれば**そのビルドだけが失敗し、本番は直前の正常な版のまま残る**（pushしたコミット自体は履歴に残るが、公開はされない）。動作確認済み（正常内容→ビルド成功、意図的に記事を1件消した内容→ビルド失敗を確認）。
 2. **`iwata-monogatari-deploy-watchdog` スケジュールタスク**（Claude Code側、20分毎）。Git を経由しない直接アップロード（`wrangler pages deploy` を別クローンから直接実行するケース）で本番がGitの最新版と食い違っていないかを継続監視し、ずれていれば自動で `npm run deploy` を再実行して正規の状態に復旧する。
+3. **`verify_no_silent_removal()`（2026-07-15追加）**: Cloudflare Pages のビルドはシャロークローン（`git rev-parse --is-shallow-repository` → `true`、親コミットにアクセスできない）で動くため、コミット単体では「前より記事が減っていないか」を判定できない。そこで `predeploy_guard.py` は本番の `data/pages.json` / `data/new-articles.json` を直接fetchし、**現在ライブで公開中のURLが、今回のビルドに1件でも欠けていたら（`_redirects`で明示的に301されている場合を除き）ビルドを失敗させる**。これにより「最近のN件」のような手動更新が必要な固定リストはもう無く、何を公開しても自動的にチェックされる。GitHubリポジトリの`main`ブランチはforce-push・削除を禁止（branch protection）済み。
+4. **GitHub branch protection（main）**: force-push・ブランチ削除を禁止済み（2026-07-15）。
 
 ## 新規記事ページ作成チェックリスト
 既存記事をテンプレートにコピーして新規ページを作るときに漏れがちな項目。2026-07-04、r036.html作成時に `.article-policy` のスタイル定義（旧記事側の`<style>`に個別ベタ書きされていた）を引き継ぎ忘れて見た目が崩れる事故があったため、共通CSS化とあわせてルール化した。

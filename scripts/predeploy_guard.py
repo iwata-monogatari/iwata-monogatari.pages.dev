@@ -3,6 +3,8 @@ import json
 import re
 import subprocess
 import sys
+import urllib.error
+import urllib.request
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -24,21 +26,13 @@ REQUIRED_URLS = [
     "/m122.html",
 ]
 
-# These floors make a stale working copy fail before it can publish an older site.
-# Raised 2026-07-15 after recovering 108 articles (incl. the Ryuyo r042-r084 series,
-# and the Oishi Iwata land-memory column) that had only ever been deployed ad-hoc
-# from outside this repo and were nearly lost to a stale-deploy overwrite.
+# Low-water-mark floors, kept only as a fallback for when the live-production
+# comparison below can't run (e.g. no network). The primary defense against
+# silently dropping a published page is verify_no_silent_removal(), which
+# diffs against what's actually live and never needs manual updating.
 MIN_HOME_COUNT = 620
 MIN_PAGES_COUNT = 625
 MIN_NEW_ARTICLE_COUNT = 600
-
-# Recent articles that must not disappear from new-articles/updates again.
-RECENT_REQUIRED_UPDATE_URLS = [
-    "/oishi-iwata-tochi-kiokuroku/04",
-    "/oishi-iwata-tochi-kiokuroku/03",
-    "/y015.html",
-    "/y030.html",
-]
 
 PROTECTED_TITLE_FRAGMENTS = {
     "/c051.html": "磐田駅から消えた二つの鉄路",
@@ -150,6 +144,63 @@ def page_declared_urls(html_text):
     return [path for value in values if (path := url_path_from_absolute(value))]
 
 
+def fetch_live_json(path):
+    """Fetch a JSON file from the currently-live production site.
+
+    Cloudflare Pages builds run against a *shallow* clone (verified
+    2026-07-15: `git rev-parse --is-shallow-repository` -> true, `git log`
+    shows only the commit being built), so there is no parent commit to
+    diff against locally. Comparing against what is actually live is the
+    only way, at build time, to notice that a change would silently drop
+    an already-published page.
+    """
+    url = SITE_ORIGIN + "/" + path.lstrip("/") + "?cachebust=predeploy-guard"
+    req = urllib.request.Request(url, headers={"User-Agent": "predeploy-guard"})
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
+def parse_redirect_sources(redirects_text):
+    sources = set()
+    for line in redirects_text.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = line.split()
+        if len(parts) >= 2:
+            src = normalize_url(parts[0]).rstrip("/")
+            sources.add(src)
+            sources.add(src + ".html")
+    return sources
+
+
+def verify_no_silent_removal(label, live_urls, new_urls, redirect_sources):
+    """Fail if any URL that is live in production has vanished from the
+    incoming build, unless it is explicitly retired via `_redirects`.
+
+    This replaces hand-maintained "recent required URL" lists and count
+    floors, which need updating every time new content ships (a real
+    source of the busywork this check exists to end) -- comparing against
+    what is actually live needs no maintenance and never goes stale.
+    """
+    new_norm = {normalize_url(u).rstrip("/") for u in new_urls}
+    missing = []
+    for u in live_urls:
+        norm = normalize_url(u).rstrip("/")
+        if norm in new_norm:
+            continue
+        if norm in redirect_sources or (norm + ".html") in redirect_sources:
+            continue
+        missing.append(u)
+    if missing:
+        return fail(
+            f"{label}: {len(missing)} page(s) live in production would disappear "
+            "and have no matching _redirects entry: " + ", ".join(sorted(missing)[:20])
+            + (" ..." if len(missing) > 20 else "")
+        )
+    return 0
+
+
 def verify_strict_git_state():
     if not (ROOT / ".git").exists():
         raise GuardError("strict deploy requires the canonical Git checkout")
@@ -213,9 +264,6 @@ def verify_latest_sync(pages, latest, index_html, updates_html):
         )
 
     latest_url_set = set(latest_urls)
-    missing_recent = [url for url in RECENT_REQUIRED_UPDATE_URLS if url not in latest_url_set]
-    if missing_recent:
-        return fail("recent required articles missing from data/new-articles.json: " + ", ".join(missing_recent))
 
     page_dates = sorted(
         {
@@ -258,10 +306,6 @@ def verify_latest_sync(pages, latest, index_html, updates_html):
                 )
         return fail("updates.html is out of sync with data/new-articles.json; run `npm run build`")
 
-    missing_from_updates = [url for url in RECENT_REQUIRED_UPDATE_URLS if url not in update_urls]
-    if missing_from_updates:
-        return fail("recent required articles missing from updates.html: " + ", ".join(missing_from_updates))
-
     latest_urls_top = latest_urls[:5]
     missing_from_home = [url for url in latest_urls_top if url not in index_html]
     if missing_from_home:
@@ -303,6 +347,36 @@ def main():
     index_html = read_text("index.html")
     updates_html = read_text("updates.html")
     middleware_js = read_text("functions/_middleware.js")
+    redirects_text = read_text("_redirects") if (ROOT / "_redirects").exists() else ""
+    redirect_sources = parse_redirect_sources(redirects_text)
+
+    try:
+        live_pages = fetch_live_json("data/pages.json")
+        live_latest = fetch_live_json("data/new-articles.json")
+    except (urllib.error.URLError, TimeoutError, ValueError) as exc:
+        return fail(
+            "could not fetch live production data/pages.json or data/new-articles.json "
+            f"to check for silent content loss ({exc}); re-run the build once network "
+            "is available rather than skipping this check"
+        )
+
+    live_page_urls = [
+        p.get("url", "") for p in live_pages.get("pages", []) if p.get("status") == "published"
+    ]
+    new_page_urls = [p.get("url", "") for p in pages if p.get("status") == "published"]
+    result = verify_no_silent_removal(
+        "data/pages.json (published pages)", live_page_urls, new_page_urls, redirect_sources
+    )
+    if result != 0:
+        return result
+
+    live_article_urls = [a.get("url", "") for a in live_latest]
+    new_article_urls = [a.get("url", "") for a in latest]
+    result = verify_no_silent_removal(
+        "data/new-articles.json", live_article_urls, new_article_urls, redirect_sources
+    )
+    if result != 0:
+        return result
 
     urls = [normalize_url(item.get("url", "")) for item in pages]
     duplicates = sorted({url for url in urls if urls.count(url) > 1})
