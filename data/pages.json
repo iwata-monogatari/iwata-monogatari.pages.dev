@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-07-12",
+  "updated_at": "2026-07-13",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -10617,6 +10617,127 @@
       "show_in_all_articles": true,
       "summary": "創立70周年から80周年までの10年を、マウンテンビュー高校交流、桶ケ谷沼・天竜川下流中州での自然科学研究、部活動、理数教育から読む。",
       "parent": "iwata-minami-high-school-history.html",
+      "level": "L2"
+
+    },
+    {
+      "title": "田原地区のお宮とお寺 ── 集落のまとまりを映す神社・寺院",
+      "url": "u039.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "shrine-temple",
+        "village-history",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-13",
+      "updated_at": "2026-07-13",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "神社仏閣",
+      "summary": "『田原の史話』をもとに、田原・玉越・西島など旧田原村域の神社と寺院を、集落のまとまりを映す記憶として整理する。",
+      "parent": "01003-mikuriya.html",
+      "level": "L2"
+    },
+    {
+      "title": "田原地区の集落と地名 ── 田原・玉越・西島・彦島・三ケ野・明ケ島を読む",
+      "url": "u040.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "village-history",
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-13",
+      "updated_at": "2026-07-13",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "町村沿革",
+      "summary": "『田原の史話』をもとに、田原・玉越・西島・彦島・三ケ野・明ケ島の各集落を、旧田原村域の地名と暮らしのまとまりとして整理する。",
+      "parent": "01003-mikuriya.html",
+      "level": "L2"
+    },
+    {
+      "title": "田原地区の学校史 ── 寺子屋・西島学校から田原小学校へ",
+      "url": "u041.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "school",
+        "village-history",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-13",
+      "updated_at": "2026-07-13",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "学校",
+      "summary": "『田原の史話』をもとに、田原地区の寺子屋、明治初期の仮校舎、西島学校、田原小学校へ続く学校史を整理する。",
+      "parent": "01003-mikuriya.html",
+      "level": "L2"
+    },
+    {
+      "title": "旧田原小学校の記憶 ── 校舎火災・校庭・ピアノ・飛行機見物",
+      "url": "u042.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "school",
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-13",
+      "updated_at": "2026-07-13",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "学校",
+      "summary": "『田原の史話』に残る旧田原小学校の回想をもとに、校舎火災、校庭、ピアノ、初めての飛行機見物など学校生活の記憶を整理する。",
+      "parent": "01003-mikuriya.html",
+      "level": "L2"
+    },
+    {
+      "title": "田原の地震と戦争の記憶 ── 東南海地震・艦砲射撃・機銃掃射",
+      "url": "u043.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "life",
+        "land-memory",
+        "school"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-13",
+      "updated_at": "2026-07-13",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "暮らし",
+      "summary": "『田原の史話』に残る東南海地震、艦砲射撃、機銃掃射の回想から、田原小学校と地域の戦時・災害記憶を整理する。",
+      "parent": "01003-mikuriya.html",
       "level": "L2"
     }
   ]

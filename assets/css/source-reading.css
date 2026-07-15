@@ -1,0 +1,85 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:#fffdf7;
+  color:#382613;
+  font-family:"Zen Kaku Gothic New",system-ui,-apple-system,"Segoe UI",sans-serif;
+  line-height:1.95;
+  letter-spacing:.02em;
+  text-rendering:optimizeLegibility;
+}
+a{color:#5e3a16;text-underline-offset:3px}
+.crumbs,.article-head,.article,.article-nav,.source-foot .inner{max-width:800px;margin:0 auto;padding-left:24px;padding-right:24px}
+.crumbs{padding-top:24px;font-size:13px;color:#6b5b4a}
+.crumbs a{text-decoration:none}
+.crumbs a:hover{text-decoration:underline}
+.article-head{padding-top:28px;padding-bottom:12px}
+.article-head .cat{margin:0 0 14px;font-size:13px;font-weight:700;letter-spacing:.14em;color:#8a5a22}
+.article-head h1{
+  margin:0 0 18px;
+  font-family:"Shippori Mincho",serif;
+  font-weight:800;
+  font-size:clamp(28px,5vw,43px);
+  line-height:1.42;
+  letter-spacing:.03em;
+}
+.article-head .sub{margin:0;color:#6b5b4a;font-size:16.5px}
+.article{padding-top:24px;padding-bottom:56px}
+.article p{margin:0 0 20px}
+.article .lead{font-size:18px;line-height:2.05}
+.article h2{
+  margin:52px 0 18px;
+  padding-left:16px;
+  border-left:4px solid var(--accent,#B87333);
+  font-family:"Shippori Mincho",serif;
+  font-size:23px;
+  line-height:1.5;
+  letter-spacing:.03em;
+}
+.article h3{
+  margin:30px 0 12px;
+  font-family:"Shippori Mincho",serif;
+  font-size:18px;
+  color:#5e3a16;
+}
+.summary,.pull,.related,.source-box,.record-table{
+  background:#fff;
+  border:1px solid #e3d5c2;
+  border-radius:6px;
+  box-shadow:0 1px 2px rgba(90,60,20,.05),0 8px 24px rgba(90,60,20,.06);
+}
+.summary{margin:30px 0;padding:22px 26px;border-top:3px solid var(--accent,#B87333)}
+.summary .sh{margin:0 0 12px;font-family:"Shippori Mincho",serif;font-weight:700;color:#5e3a16}
+.summary ul{margin:0;padding:0;list-style:none}
+.summary li{position:relative;margin:0 0 9px;padding-left:22px;font-size:15px;line-height:1.8}
+.summary li::before{content:"";position:absolute;left:2px;top:11px;width:8px;height:8px;border-radius:50%;background:var(--accent,#B87333)}
+.record-table{width:100%;border-collapse:collapse;margin:26px 0;overflow:hidden;font-size:14.5px}
+.record-table caption{caption-side:top;text-align:left;margin-bottom:8px;color:#6b5b4a;font-size:13px;font-weight:700}
+.record-table th,.record-table td{border:1px solid #e3d5c2;padding:10px 12px;text-align:left;vertical-align:top;line-height:1.65}
+.record-table th{background:#efeae2;color:#5e3a16;white-space:nowrap}
+.pull{margin:30px 0;padding:22px 26px;border-left:4px solid #8a5a22}
+.pull p{margin:0;font-family:"Shippori Mincho",serif;font-size:17.5px;line-height:1.95}
+.source-box{margin:34px 0 0;padding:18px 22px}
+.source-box h2{margin:0 0 10px;padding:0;border:0;font-family:inherit;font-size:14px;color:#6b5b4a;letter-spacing:.06em}
+.source-box ul{margin:0;padding-left:1.2em}
+.source-box li{font-size:13.5px;color:#6b5b4a;line-height:1.8}
+.related{margin:46px 0 0;padding:20px 22px}
+.related h2{margin:0 0 12px;padding:0;border:0;font-family:"Shippori Mincho",serif;font-size:20px}
+.related ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.related a{display:block;height:100%;padding:12px 14px;border:1px solid #e3d5c2;border-radius:6px;text-decoration:none;background:#fffdf7;font-size:14px;font-weight:700;line-height:1.6}
+.related a:hover{border-color:var(--accent,#B87333);background:#fbf6ee}
+.article-nav{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px;margin-bottom:54px}
+.article-nav a{display:inline-block;border:1.5px solid #e3d5c2;border-radius:6px;padding:12px 22px;background:#fff;text-decoration:none;font-weight:700;font-size:14.5px}
+.article-nav a:hover{border-color:var(--accent,#B87333)}
+.source-foot{border-top:1px solid #e3d5c2;background:#f7f2e9;color:#6b5b4a}
+.source-foot .inner{padding-top:28px;padding-bottom:34px}
+.source-foot .brand{display:inline-block;margin-bottom:10px;font-family:"Shippori Mincho",serif;font-weight:800;font-size:22px;color:#382613;text-decoration:none}
+.source-foot p{margin:0;font-size:13.5px;line-height:1.8}
+@media(max-width:640px){
+  .crumbs,.article-head,.article,.article-nav,.source-foot .inner{padding-left:18px;padding-right:18px}
+  .summary,.pull,.related,.source-box{padding:18px}
+  .record-table{font-size:13.5px}
+  .record-table th,.record-table td{padding:8px 9px}
+  .related ul{grid-template-columns:1fr}
+}
