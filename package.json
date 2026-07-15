@@ -3,6 +3,7 @@
     "build": "python sync_new_articles.py",
     "knowledge-count": "node tools/sync-knowledge-count.mjs",
     "knowledge-count:audit": "node tools/sync-knowledge-count.mjs --audit",
+    "check-live-sync": "python scripts/check_live_sync.py",
     "guard": "python scripts/predeploy_guard.py",
     "guard:deploy": "python scripts/predeploy_guard.py --strict-deploy",
     "footer:sql": "node scripts/seed_footer_fragment.mjs",
