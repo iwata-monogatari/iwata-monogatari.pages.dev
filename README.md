@@ -68,7 +68,7 @@ pushすると、Cloudflare Pages側のGit連携が自動でビルド・デプロ
 1. **このマシンのwranglerログインから、Cloudflare Pagesの権限を完全に除去済み（2026-07-15）**。`wrangler login --scopes ...`で`pages:write`スコープを含めずに再認証したため、**このマシンのどのツール・どのフォルダから`wrangler pages deploy`を叩いても、Cloudflare API側で認証エラーになり物理的に失敗する**（`wrangler pages deployment list`等の閲覧も同様に失敗する）。Workers・D1・KV等、他プロジェクトで使う権限は維持したまま動作確認済み。これにより「直接アップロードで本番が巻き戻る」という事故の経路そのものが無くなったため、常時監視タスク（watchdog）は不要と判断し削除した（旧SKILL.mdは`C:\Users\fujig\.claude\scheduled-tasks\iwata-monogatari-deploy-watchdog\`に退避してある）。**Pages関連の操作は今後、Cloudflareダッシュボードから行うか、必要な作業のためだけに一時的に`wrangler login --scopes ... pages:write ...`で再認証すること。**
 2. **Cloudflare Pages の Build Command に `predeploy_guard.py` を設定済み**（プロジェクト設定、Cloudflareダッシュボード側）。`main` へ `git push` すると Cloudflare Pages が自動ビルドするが、そのビルドコマンドが `python scripts/predeploy_guard.py` を実行する。必須記事の欠落・公開記事数の後退・`data/new-articles.json` 等の同期崩れがあれば**そのビルドだけが失敗し、本番は直前の正常な版のまま残る**（pushしたコミット自体は履歴に残るが、公開はされない）。動作確認済み（正常内容→ビルド成功、意図的に記事を1件消した内容→ビルド失敗を確認）。
 3. **`verify_no_silent_removal()`**: Cloudflare Pages のビルドはシャロークローン（`git rev-parse --is-shallow-repository` → `true`、親コミットにアクセスできない）で動くため、コミット単体では「前より記事が減っていないか」を判定できない。そこで `predeploy_guard.py` は本番の `data/pages.json` / `data/new-articles.json` を直接fetchし、**現在ライブで公開中のURLが、今回のビルドに1件でも欠けていたら（`_redirects`で明示的に301されている場合を除き）ビルドを失敗させる**。手動更新が必要な固定リストは無く、何を公開しても自動的にチェックされる。
-4. **GitHub branch protection（main）**: force-push・ブランチ削除を禁止済み。
+4. **GitHub branch protection（main）**: force-push・ブランチ削除を禁止済み。2026-07-15、管理者権限アカウントにも適用されるようを有効化（通常のpushには影響なし・確認済み）。
 
 ## 新規記事ページ作成チェックリスト
 既存記事をテンプレートにコピーして新規ページを作るときに漏れがちな項目。2026-07-04、r036.html作成時に `.article-policy` のスタイル定義（旧記事側の`<style>`に個別ベタ書きされていた）を引き継ぎ忘れて見た目が崩れる事故があったため、共通CSS化とあわせてルール化した。
