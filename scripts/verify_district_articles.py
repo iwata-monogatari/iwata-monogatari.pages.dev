@@ -52,6 +52,10 @@ def verify_district(district, data, errors):
         labels = bda.theme_labels_for(p)
         if any(l not in bda.THEME_ORDER for l in labels):
             errors.append(f"[{district_id}] 表示テーマ語彙の範囲外: {p.get('url')} labels={labels}")
+        if not labels:
+            errors.append(
+                f"[{district_id}] テーマが空欄です（THEME_MAPかTHEME_OVERRIDEに追加してください）: {p.get('url')}"
+            )
 
     if not page_path.exists():
         errors.append(f"[{district_id}] 地区ページが存在しません: {district['page']}")

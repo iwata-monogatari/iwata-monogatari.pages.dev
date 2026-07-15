@@ -33,7 +33,10 @@
 .district-articles .article-table tbody tr[hidden]{display:none}
 .district-articles .article-table .col-no{width:4em;color:var(--ink-soft)}
 .district-articles .article-table .col-title a{font-weight:700}
-.district-articles .article-table .col-theme{width:8em;font-size:.78rem;color:var(--district)}
+.district-articles .article-table .col-theme{
+  width:9em;max-width:9em;font-size:.78rem;color:var(--district);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
 .district-articles .article-table .col-desc{color:var(--ink-soft);font-size:.8rem}
 .district-articles .article-table .col-date{width:6.5em;text-align:right;white-space:nowrap;color:var(--ink-soft)}
 
@@ -69,5 +72,5 @@
   .district-articles .article-table .col-no,
   .district-articles .article-table .col-desc{display:none}
   .district-articles .article-table{min-width:0}
-  .district-articles .article-table .col-theme{width:6em;font-size:.72rem}
+  .district-articles .article-table .col-theme{width:6em;max-width:6em;font-size:.72rem}
 }

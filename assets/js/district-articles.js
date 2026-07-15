@@ -2,7 +2,7 @@
    静的に全行出力済みのテーブルに対し、フィルタ・ページ送りだけを行う（プログレッシブ・エンハンスメント）。
    JS無効時はビルド時に埋め込まれる <noscript> の上書きスタイルで全行が見える。 */
 (function () {
-  var PER_PAGE = 100;
+  var PER_PAGE = 50;
 
   document.querySelectorAll('.district-articles[data-district]').forEach(function (section) {
     var tbody = section.querySelector('.article-table tbody');

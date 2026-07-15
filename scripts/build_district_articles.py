@@ -17,22 +17,27 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES_JSON = ROOT / "data" / "pages.json"
-PER_PAGE = 100
+PER_PAGE = 50
 SUMMARY_MAX = 40
 
 # 生の themes 値 -> 表示ラベル。既存の地区ページ内スクリプト（カード表示時代）の
-# THEME_MAP をそのまま踏襲する（サイト全体で既に使われている実データの語彙）。
+# THEME_MAP をそのまま踏襲しつつ、pages.json に実在するのに未対応だった値
+# （shrine, archives, shugo 等）を追加した（2026-07-15 テーマ空欄解消対応）。
 THEME_MAP = {
-    "shiryo": "史料", "reference-list": "史料",
+    "shiryo": "史料", "reference-list": "史料", "archives": "史料",
     "old-map": "古地図", "old-photo": "古地図",
-    "village-history": "町村沿革",
-    "shrine-temple": "神社仏閣", "temple": "神社仏閣",
+    "village-history": "町村沿革", "shugo": "町村沿革", "self-government": "町村沿革",
+    "shrine-temple": "神社仏閣", "temple": "神社仏閣", "shrine": "神社仏閣",
     "festival": "祭り",
     "road-traffic": "街道・交通", "railway": "街道・交通", "transportation": "街道・交通",
+    "post-town": "街道・交通", "military-transport": "街道・交通",
     "architecture": "建物・古民家",
-    "school": "学校", "education": "学校",
+    "school": "学校", "education": "学校", "school-history": "学校",
+    "old-system-middle-school": "学校", "coeducation": "学校",
+    "international-exchange": "学校", "science-education": "学校",
+    "club-activities": "学校", "iwata-minami": "学校",
     "life": "暮らし", "agriculture": "暮らし", "industry": "暮らし",
-    "water": "暮らし", "craft": "暮らし", "mingei": "暮らし",
+    "water": "暮らし", "craft": "暮らし", "mingei": "暮らし", "commerce": "暮らし",
     "land-memory": "土地の記憶", "place-name": "土地の記憶",
     "terrain": "土地の記憶", "archaeology": "土地の記憶",
 }
@@ -40,6 +45,41 @@ THEME_ORDER = [
     "史料", "古地図", "町村沿革", "神社仏閣", "祭り",
     "街道・交通", "建物・古民家", "学校", "暮らし", "土地の記憶",
 ]
+
+# テーブルの「テーマ」列専用の短縮表記（折り返し防止）。フィルターボタンの
+# 正式名称はそのまま使い、この短縮形は表示テキストにのみ用いる。
+SHORT_LABEL = {
+    "史料": "史料", "古地図": "地図", "町村沿革": "沿革", "神社仏閣": "社寺",
+    "祭り": "祭り", "街道・交通": "交通", "建物・古民家": "建物",
+    "学校": "学校", "暮らし": "暮らし", "土地の記憶": "記憶",
+}
+
+# themes に手がかりが無い（"reading" のみ／空）記事向けの個別テーマ指定。
+# タイトル・meta descriptionを確認したうえで設定（2026-07-15）。
+THEME_OVERRIDE = {
+    "m007.html": ["祭り"],   # 見付天神裸祭・起源をめぐる三つの説
+    "m008.html": ["祭り"],   # 見付天神裸祭・神事の構造と日程
+    "m009.html": ["祭り"],   # 見付天神裸祭・無形文化財としての継承
+    "m062.html": ["街道・交通"],  # 見付宿の東木戸・西木戸・高札場
+    "m082.html": ["街道・交通"],  # 見付の坂道・辻・曲がり角
+    "m083.html": ["街道・交通"],  # 見付の路地裏と生活道路
+    "m084.html": ["暮らし"],      # 見付の水路・井戸・生活用水
+    "m085.html": ["建物・古民家"],  # 見付の旧家・屋号・家並み
+    "m086.html": ["建物・古民家"],  # 見付の町家・蔵・商家建築
+    "m087.html": ["神社仏閣"],    # 見付の寺町と寺院配置
+    "m088.html": ["建物・古民家"],  # 見付の古写真・絵葉書から消えた建物を復元する
+    "m102.html": ["神社仏閣"],    # 矢奈比賣神社と見付天神
+    "m112.html": ["史料"],        # 磐田文庫と幕末・明治の地域知性
+    "m113.html": ["学校"],        # 旧見付学校以前の寺子屋教育
+    "m114.html": ["学校"],        # 見付地区の学校史と地域教育
+    "m115.html": ["学校"],        # 校歌・学校区から見る見付の地域意識
+    "m116.html": ["土地の記憶"],  # 家康が見付から浜松へ移った理由
+    "m117.html": ["土地の記憶"],  # 城之崎城が完成していた場合の歴史IF
+    "m118.html": ["街道・交通"],  # 見付宿の助郷制度と周辺村の負担
+    "m119.html": ["街道・交通"],  # 見付宿の成立と宿場範囲
+    "m120.html": ["古地図"],      # 見付宿を愛宕神社から俯瞰する（絵葉書）
+    "m133.html": ["街道・交通"],  # 徳川家康と三方原合戦 ── 見付を通った遠江攻略
+}
 
 START_MARK = "<!-- district-articles:start -->"
 END_MARK = "<!-- district-articles:end -->"
@@ -92,8 +132,14 @@ def theme_labels_for(page):
         label = THEME_MAP.get(raw)
         if label and label not in labels:
             labels.append(label)
+    if not labels:
+        labels = list(THEME_OVERRIDE.get(page.get("url") or "", []))
     labels.sort(key=lambda l: THEME_ORDER.index(l))
     return labels
+
+
+def short_theme_display(labels):
+    return "／".join(SHORT_LABEL.get(l, l) for l in labels)
 
 
 def collect_district_pages(data, district_id):
@@ -125,10 +171,11 @@ def build_rows_html(pages):
         page_no = idx // PER_PAGE + 1
         hidden_attr = " hidden" if page_no > 1 else ""
         labels = theme_labels_for(p)
-        data_themes = esc(" ".join(labels))
-        # 表示区切りは「／」を使う（「街道・交通」「建物・古民家」等の表示名自体に
-        # 「・」を含むため、「・」で連結すると複数テーマの境界が曖昧になるのを避ける）。
-        theme_display = esc("／".join(labels))
+        data_themes = esc(" ".join(labels))  # フィルターボタンとの突合は正式名称のまま
+        # 表示は列幅に収まる短縮形を「／」区切りで連結する（「街道・交通」等の
+        # 正式名称自体に「・」を含むため、正式名称のまま連結すると境界が曖昧になる
+        # うえ、複数テーマが並ぶと折り返してしまうため）。
+        theme_display = esc(short_theme_display(labels))
         title = esc(p.get("title") or "")
         url = esc(p.get("url") or "")
         summary = esc(truncate_summary(p.get("summary") or ""))
