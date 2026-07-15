@@ -14,6 +14,7 @@ pre-flight gate, not just a printout.
 """
 
 import json
+import subprocess
 import sys
 import urllib.error
 import urllib.request
@@ -21,6 +22,40 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE_ORIGIN = "https://iwata-monogatari.net"
+
+
+def check_wrangler_pages_scope():
+    """2026-07-15: this machine's wrangler login was deliberately re-authenticated
+    without the `pages` OAuth scope, so `wrangler pages deploy` can no longer
+    bypass git. That restriction isn't a lock -- anything (a future session,
+    Codex, a plain `wrangler login`) can silently restore it by logging in
+    again with the default scope set. Warn loudly if that happened, since
+    nothing else will notice.
+    """
+    try:
+        result = subprocess.run(
+            ["npx", "wrangler", "whoami"],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=30,
+            shell=True,
+        )
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        print(f"(wrangler権限チェックをスキップ: {exc})", file=sys.stderr)
+        return True
+
+    output = (result.stdout or "") + (result.stderr or "")
+    if "- pages (" in output:
+        print(
+            "!! 警告: このマシンのwranglerがCloudflare Pagesの権限(pages)を持っています。"
+            "2026-07-15に意図的に外した制限が、誰かの`wrangler login`で復活しています。"
+            "`wrangler pages deploy`によるGit非経由の直接デプロイが再び可能な状態です。",
+            file=sys.stderr,
+        )
+        return False
+    return True
 
 
 def normalize_url(url):
@@ -66,6 +101,8 @@ def report(label, local_only, live_only):
 
 
 def main():
+    scope_ok = check_wrangler_pages_scope()
+
     try:
         live_pages = fetch_live_json("data/pages.json")
         live_articles = fetch_live_json("data/new-articles.json")
@@ -92,9 +129,12 @@ def main():
         live_article_urls - local_article_urls,
     )
 
-    if ok1 and ok2:
+    if ok1 and ok2 and scope_ok:
         print("\nローカルと本番は一致しています。作業を始めて問題ありません。")
         return 0
+
+    if ok1 and ok2 and not scope_ok:
+        return 1
 
     print(
         "\n食い違いがあります。編集・上書きを始める前に、この差分の原因を先に調べてください"
