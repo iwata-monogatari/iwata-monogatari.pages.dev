@@ -7,13 +7,13 @@
 <title>福田地区｜磐田物語 ── 旧福田町・海と漁港のまち・町村沿革・学校区・大字</title>
 <meta name="description" content="磐田物語の福田地区入口ページ。遠州灘に面した海・漁港・砂丘のまち、旧福田町（ふくで）の歴史を、代表的なテーマ、記事一覧、文化財、町村沿革でたどる地区ポータルです。">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://iwata-monogatari.net/01008-fukude.html">
+<link rel="canonical" href="https://iwata-monogatari.net/01008-fukude">
 <meta property="og:site_name" content="磐田物語">
 <meta property="og:title" content="福田地区｜磐田物語">
 <meta property="og:description" content="遠州灘の海・漁港・別珍コールテンの旧福田町、福田地区の歴史・テーマ・文化財・町村沿革をまとめた地区ポータル。">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:url" content="https://iwata-monogatari.net/01008-fukude.html">
+<meta property="og:url" content="https://iwata-monogatari.net/01008-fukude">
 <meta property="og:image" content="https://iwata-monogatari.net/saguchi/img/hk-3.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="福田地区｜磐田物語">
@@ -27,6 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/district-articles.css?v=7">
 <style>
 :root{
   --paper:#fffdf7; --ink:#1f3a48; --ink-soft:#5b6b74;
@@ -97,17 +98,6 @@ details.acc[open] summary{margin-bottom:.8em}
 .enkaku-flow .flow .yr{font-weight:400;font-size:.78rem;color:var(--ink-soft)}
 .more-center{text-align:center;margin-top:1em}
 
-.filter-chips{display:flex;flex-wrap:wrap;gap:.4em;margin:0 0 1.1em}
-.chip{font-size:.78rem;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:.25em 1em;cursor:pointer;color:var(--ink-soft)}
-.chip.active{background:var(--district);border-color:var(--district);color:#4d4636;font-weight:700}
-.article-count{font-size:.8rem;color:var(--ink-soft);margin-bottom:.8em}
-.article-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9em}
-.article-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:.9em 1em;display:flex;flex-direction:column;gap:.3em}
-.article-card .tag{font-size:.7rem;font-weight:700;color:#8a7f5e}
-.article-card a{font-weight:700;font-size:.92rem;line-height:1.6}
-.article-card p{font-size:.78rem;color:var(--ink-soft)}
-.article-card.hidden{display:none}
-.article-loading{font-size:.85rem;color:var(--ink-soft)}
 
 .cta-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.3em 1.2em;text-align:center;margin-top:1.2em}
 .cta-box p{font-size:.88rem;color:var(--ink-soft)}
@@ -127,7 +117,6 @@ details.acc[open] summary{margin-bottom:.8em}
 
 @media(max-width:720px){
   .theme-cards{grid-template-columns:1fr}
-  .article-grid{grid-template-columns:1fr}
   .footer-blocks{grid-template-columns:1fr}
   h1{font-size:1.55rem}
 }
@@ -197,25 +186,122 @@ details.acc[open] summary{margin-bottom:.8em}
   </div>
 </div>
 
-<!-- 優先2：記事を探す -->
+<!-- district-articles:start -->
 <h2>福田の記事を探す</h2>
 <p class="section-lead">福田地区に関係する読み物・特集・史料ページを、新着を上にして並べています。テーマ別に絞り込むこともできます。</p>
 
-<div class="filter-chips" id="chips">
-  <button class="chip active" data-f="all">すべて</button>
-  <button class="chip" data-f="史料">史料</button>
-  <button class="chip" data-f="古地図">古地図</button>
-  <button class="chip" data-f="町村沿革">町村沿革</button>
-  <button class="chip" data-f="神社仏閣">神社仏閣</button>
-  <button class="chip" data-f="祭り">祭り</button>
-  <button class="chip" data-f="街道・交通">街道・交通</button>
-  <button class="chip" data-f="建物・古民家">建物・古民家</button>
-  <button class="chip" data-f="学校">学校</button>
-  <button class="chip" data-f="暮らし">暮らし</button>
-  <button class="chip" data-f="土地の記憶">土地の記憶</button>
-</div>
-<p class="article-count">表示中：<span id="count">0</span>件</p>
-<div class="article-grid" id="grid"><p class="article-loading">記事一覧を読み込んでいます…</p></div>
+<section class="district-articles" id="articles" data-district="fukude">
+  <div class="article-filter" role="group" aria-label="テーマで絞り込む">
+    <button type="button" class="is-active" data-theme="all" aria-pressed="true">すべて</button>
+    <button type="button" data-theme="史料" aria-pressed="false">史料</button>
+    <button type="button" data-theme="古地図" aria-pressed="false">古地図</button>
+    <button type="button" data-theme="町村沿革" aria-pressed="false">町村沿革</button>
+    <button type="button" data-theme="神社仏閣" aria-pressed="false">神社仏閣</button>
+    <button type="button" data-theme="祭り" aria-pressed="false">祭り</button>
+    <button type="button" data-theme="街道・交通" aria-pressed="false">街道・交通</button>
+    <button type="button" data-theme="建物・古民家" aria-pressed="false">建物・古民家</button>
+    <button type="button" data-theme="学校" aria-pressed="false">学校</button>
+    <button type="button" data-theme="暮らし" aria-pressed="false">暮らし</button>
+    <button type="button" data-theme="土地の記憶" aria-pressed="false">土地の記憶</button>
+  </div>
+
+  <p class="article-count" aria-live="polite">表示中：<span data-count>72</span>件</p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <caption class="visually-hidden">福田地区の記事一覧</caption>
+      <thead>
+        <tr><th scope="col" class="col-no">No.</th><th scope="col" class="col-title">タイトル</th><th scope="col" class="col-theme">テーマ</th><th scope="col" class="col-desc">概要</th><th scope="col" class="col-date">公開日</th></tr>
+      </thead>
+      <tbody>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">1</td><td class="col-title"><a href="/f038.html">福田地域の秋葉山常夜燈を地域の記憶として読む</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">福田地区の福田地域の秋葉山常夜燈(通称:秋葉灯籠)を、歴史・史跡の記憶として読み…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="街道・交通 暮らし 土地の記憶" data-page="1"><td class="col-no">2</td><td class="col-title"><a href="/f039.html">横須賀街道の松並木を地域の記憶として読む</a></td><td class="col-theme">交通／暮らし／記憶</td><td class="col-desc">福田地区の横須賀街道の松並木を、歴史・史跡の記憶として読み直す。場所、資料から確…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">3</td><td class="col-title"><a href="/f040.html">次郎長漆喰画像に残る信仰と文化の記憶</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">福田地区の次郎長漆喰画像を、文化・信仰の記憶として読み直す。場所、資料から確認で…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="神社仏閣 暮らし 土地の記憶" data-page="1"><td class="col-no">4</td><td class="col-title"><a href="/f041.html">DOLCE倉庫から産業の記憶を読む</a></td><td class="col-theme">社寺／暮らし／記憶</td><td class="col-desc">福田地区のDOLCE倉庫(ドルチェ倉庫)を、産業・なりわいの記憶として読み直す。…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="祭り 学校 土地の記憶" data-page="1"><td class="col-no">5</td><td class="col-title"><a href="/f042.html">福田地区の音楽活動に残る信仰と文化の記憶</a></td><td class="col-theme">祭り／学校／記憶</td><td class="col-desc">福田地区の福田地区の音楽活動を、文化・信仰の記憶として読み直す。場所、資料から確…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="神社仏閣 暮らし 土地の記憶" data-page="1"><td class="col-no">6</td><td class="col-title"><a href="/f043.html">虹文庫から産業の記憶を読む</a></td><td class="col-theme">社寺／暮らし／記憶</td><td class="col-desc">福田地区の虹文庫を、産業・なりわいの記憶として読み直す。場所、資料から確認できる…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="神社仏閣 暮らし 土地の記憶" data-page="1"><td class="col-no">7</td><td class="col-title"><a href="/f044.html">のこぎり屋根から産業の記憶を読む</a></td><td class="col-theme">社寺／暮らし／記憶</td><td class="col-desc">福田地区ののこぎり屋根を、産業・なりわいの記憶として読み直す。場所、資料から確認…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">8</td><td class="col-title"><a href="/f045.html">コーデュロイハウスから産業の記憶を読む</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">福田地区のコーデュロイハウスを、産業・なりわいの記憶として読み直す。場所、資料か…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">9</td><td class="col-title"><a href="/f046.html">新素材「ソルブレベコ」から産業の記憶を読む</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">福田地区の新素材「ソルブレベコ」を、産業・なりわいの記憶として読み直す。場所、資…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">10</td><td class="col-title"><a href="/f047.html">温室メロン発祥の地から産業の記憶を読む</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">福田地区の温室メロン発祥の地を、産業・なりわいの記憶として読み直す。場所、資料か…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">11</td><td class="col-title"><a href="/f048.html">福田産 シラスから産業の記憶を読む</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">福田地区の福田産 シラスを、産業・なりわいの記憶として読み直す。場所、資料から確…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">12</td><td class="col-title"><a href="/f049.html">福田漁港から産業の記憶を読む</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">福田地区の福田漁港を、産業・なりわいの記憶として読み直す。場所、資料から確認でき…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="神社仏閣 暮らし 土地の記憶" data-page="1"><td class="col-no">13</td><td class="col-title"><a href="/f050.html">亀塚に残る信仰と文化の記憶</a></td><td class="col-theme">社寺／暮らし／記憶</td><td class="col-desc">福田地区の亀塚を、文化・信仰の記憶として読み直す。場所、資料から確認できる要素、…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="史料" data-page="1"><td class="col-no">14</td><td class="col-title"><a href="/f031.html">福田村五人組帳 ── 江戸時代の村掟34ヶ条と、300年前の家々の記憶</a></td><td class="col-theme">史料</td><td class="col-desc">天和4年(1684年)・宝永3年(1706年)・宝永5年(1708年)、福田村に…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="史料" data-page="1"><td class="col-no">15</td><td class="col-title"><a href="/f032.html">慶長9年検地帳と「福田の二十五苗」 ── 400年前の名請人と、今日の家々</a></td><td class="col-theme">史料</td><td class="col-desc">慶長9年(1604年)、徳川家康の命により行われた福田村検地の帳面。太郎馬・太郎…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="史料" data-page="1"><td class="col-no">16</td><td class="col-title"><a href="/f033.html">福田村村役人表 ── 庄屋・組頭・百姓代、慶長9年から慶応4年へ</a></td><td class="col-theme">史料</td><td class="col-desc">慶長9年(1604年)から慶応4年(1868年)まで、福田村を治めた庄屋・組頭・…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="史料" data-page="1"><td class="col-no">17</td><td class="col-title"><a href="/f034.html">五人組頭の名でたどる福田村 ── 天和4年・宝永の五人組帳と破船の掟</a></td><td class="col-theme">史料</td><td class="col-desc">天和4年(1684年)・宝永5年(1708年)の福田村五人組帳に記された五人組頭…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="史料" data-page="1"><td class="col-no">18</td><td class="col-title"><a href="/f035.html">五人組制度の起源と福田村の編成 ── 中国の五保制度から福田の六軒組まで</a></td><td class="col-theme">史料</td><td class="col-desc">五人組制度の源流とされる中国古代の五保制度と大化改新、秀吉の五人組十人組から、天…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="史料" data-page="1"><td class="col-no">19</td><td class="col-title"><a href="/f036.html">火事・竹木・田畑をめぐる村掟の細部 ── 福田村五人組帳を読む</a></td><td class="col-theme">史料</td><td class="col-desc">火事の消火の心得、竹木の無断伐採禁止、そして寛永20年の永代売買禁止令のもとで実…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="史料" data-page="1"><td class="col-no">20</td><td class="col-title"><a href="/f037.html">逃散・欠落・不審者をめぐる村の掟 ── 福田村五人組帳を読む</a></td><td class="col-theme">史料</td><td class="col-desc">浪人・出家・山伏・行者・念仏衆・乞食を村に泊めてはならないという掟、年貢を納めら…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="町村沿革" data-page="1"><td class="col-no">21</td><td class="col-title"><a href="/f029.html">福田の成り立ち ── 沿革年表・学校区・大字</a></td><td class="col-theme">沿革</td><td class="col-desc">福田地区の沿革年表・旧町村と大字の対応・現在の学校区と主な大字をまとめた資料ペー…</td><td class="col-date"><time datetime="2026-07-10">2026.07.10</time></td></tr>
+        <tr data-themes="街道・交通 土地の記憶" data-page="1"><td class="col-no">22</td><td class="col-title"><a href="/f030.html">元島遺跡 ── 太田川河口に眠る、福田の湊の原点</a></td><td class="col-theme">交通／記憶</td><td class="col-desc">弥生時代から江戸時代まで続いた太田川河口の複合遺跡・元島遺跡。明応の大地震による…</td><td class="col-date"><time datetime="2026-07-10">2026.07.10</time></td></tr>
+        <tr data-themes="町村沿革 祭り 暮らし" data-page="1"><td class="col-no">23</td><td class="col-title"><a href="/f023.html">東屋台と西屋台 - 六社神社の秋祭りを支えた福田の二つの屋台</a></td><td class="col-theme">沿革／祭り／暮らし</td><td class="col-desc">寺田勝彦『東屋台と西屋台』をもとに、六社神社の秋祭り、西組・東組、屋台引きまわし…</td><td class="col-date"><time datetime="2026-07-09">2026.07.09</time></td></tr>
+        <tr data-themes="祭り 暮らし" data-page="1"><td class="col-no">24</td><td class="col-title"><a href="/f024.html">寺田勝彦『東屋台と西屋台』を読む - 福田の祭りを記録した小冊子</a></td><td class="col-theme">祭り／暮らし</td><td class="col-desc">昭和60年発行の小冊子『東屋台と西屋台』が、福田の秋祭りをどう記録しようとしたの…</td><td class="col-date"><time datetime="2026-07-09">2026.07.09</time></td></tr>
+        <tr data-themes="祭り 暮らし" data-page="1"><td class="col-no">25</td><td class="col-title"><a href="/f025.html">福田の祭りと戦時記憶 - 伊東金平氏の体験記から読む</a></td><td class="col-theme">祭り／暮らし</td><td class="col-desc">伊東金平氏の戦争体験記を、福田の祭りの記憶が戦場でどう現れるかという視点から読む…</td><td class="col-date"><time datetime="2026-07-09">2026.07.09</time></td></tr>
+        <tr data-themes="祭り 暮らし" data-page="1"><td class="col-no">26</td><td class="col-title"><a href="/f026.html">屋台以前の福田の秋祭り - 田遊び・舞台・農村の収穫祭</a></td><td class="col-theme">祭り／暮らし</td><td class="col-desc">東屋台・西屋台以前の福田の秋祭りを、田遊び、境内の舞台、農村の収穫祭という視点で…</td><td class="col-date"><time datetime="2026-07-09">2026.07.09</time></td></tr>
+        <tr data-themes="町村沿革 祭り" data-page="1"><td class="col-no">27</td><td class="col-title"><a href="/f027.html">掛塚屋台と福田の東西組 - 二つの屋台が生まれた背景</a></td><td class="col-theme">沿革／祭り</td><td class="col-desc">掛塚屋台へのまなざし、西組・東組の成立、福田で二つの屋台が求められた背景を読む。</td><td class="col-date"><time datetime="2026-07-09">2026.07.09</time></td></tr>
+        <tr data-themes="町村沿革 祭り 暮らし" data-page="1"><td class="col-no">28</td><td class="col-title"><a href="/f028.html">福田の屋台を支えた若者と町内運営 - 東西屋台から本町連へ</a></td><td class="col-theme">沿革／祭り／暮らし</td><td class="col-desc">屋台の存続をめぐる議論、青年たちの曳き回し、昭和期の屋台名一覧から、福田まつりの…</td><td class="col-date"><time datetime="2026-07-09">2026.07.09</time></td></tr>
+        <tr data-themes="街道・交通 建物・古民家 暮らし 土地の記憶" data-page="1"><td class="col-no">29</td><td class="col-title"><a href="/c090.html">磐田市の旧映画館を歩く — 見付・中泉から郊外型シネコンまで</a></td><td class="col-theme">交通／建物／暮らし／記憶</td><td class="col-desc">見付・中泉・掛塚・福田・豊浜にあった芝居小屋と映画館の記憶を、駅前、商店街、テレ…</td><td class="col-date"><time datetime="2026-07-07">2026.07.07</time></td></tr>
+        <tr data-themes="建物・古民家 暮らし 土地の記憶" data-page="1"><td class="col-no">30</td><td class="col-title"><a href="/c092.html">磐田市の閉鎖プールを読む - 市民プールから温水・防災インフラへ</a></td><td class="col-theme">建物／暮らし／記憶</td><td class="col-desc">磐田市民プール、旧磐田グランドホテルのプール、学校プールや民間施設の閉鎖から、遊…</td><td class="col-date"><time datetime="2026-07-07">2026.07.07</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">31</td><td class="col-title"><a href="/f022.html">遠州灘の砂丘・海岸線・防潮堤 ── 令和の「静岡モデル」がつなぐ防災の記憶</a></td><td class="col-theme">記憶</td><td class="col-desc">明治以来の黒松防風林の伝統から、南海トラフ地震に備える令和の防潮堤「静岡モデル」…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="街道・交通 土地の記憶" data-page="1"><td class="col-no">32</td><td class="col-title"><a href="/s020.html">見付から福田・掛塚方面へ向かう旧道 ── 南部の低地を渡る道</a></td><td class="col-theme">交通／記憶</td><td class="col-desc">内陸の見付と、沿岸の福田・掛塚を結んだ道を、南部の低地地形から考える。微高地づた…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">33</td><td class="col-title"><a href="/hirai-kensai-edo-yugaku.html">平井顕斎の江戸遊学 — 遠州の画人は何を学びに出たのか</a></td><td class="col-theme">記憶</td><td class="col-desc">遠州から江戸へ出る重み、文晁・華山周辺の画人との接点、学ぶ場としての江戸を読む。</td><td class="col-date"><time datetime="2026-06-28">2026.06.28</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">34</td><td class="col-title"><a href="/hirai-kensai-ga-fu.html">平井顕斎の画風を読む — 武陵桃源図に見る山水の世界</a></td><td class="col-theme">記憶</td><td class="col-desc">武陵桃源図を手がかりに、文人画・南画の見方、桃源郷の主題、山水の構図、筆致と余白…</td><td class="col-date"><time datetime="2026-06-28">2026.06.28</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">35</td><td class="col-title"><a href="/hirai-kensai-gayuu.html">福田半香と平井顕斎を比較して読む — 遠州の南画は一つではなかった</a></td><td class="col-theme">記憶</td><td class="col-desc">福田半香と平井顕斎、遠州の二人の南画家を出自・移動・崋山との関係・門人圏から比較…</td><td class="col-date"><time datetime="2026-06-28">2026.06.28</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">36</td><td class="col-title"><a href="/hirai-kensai-monjin.html">平井顕斎の門人たち — 遠州に残った画の学び</a></td><td class="col-theme">記憶</td><td class="col-desc">平井顕斎の門人情報をもとに、遠州に残った画の学び、地方文化の受け渡し、失われた画…</td><td class="col-date"><time datetime="2026-06-28">2026.06.28</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">37</td><td class="col-title"><a href="/hirai-kensai-timeline.html">平井顕斎の生涯年表 — 江戸遊学から晩年まで</a></td><td class="col-theme">記憶</td><td class="col-desc">平井顕斎の生涯を、江戸遊学、画友との出会い、豊浜中野での活動、作品制作、門人、晩…</td><td class="col-date"><time datetime="2026-06-28">2026.06.28</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">38</td><td class="col-title"><a href="/m032.html">平井顕斎 — 豊浜中野に生きた遠州の南画家</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">幕末の中遠・福田地域で活躍した南画家・平井顕斎の画業と生涯。尊王攘夷の志士たちと…</td><td class="col-date"><time datetime="2026-06-28">2026.06.28</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">39</td><td class="col-title"><a href="/m033.html">遠州文人サロン ─ 掛塚・見付の豪商が支えた芸術</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">江戸後期の中遠地域における芸術支援とパトロンネットワーク。天竜川の木材交易で栄え…</td><td class="col-date"><time datetime="2026-06-28">2026.06.28</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">40</td><td class="col-title"><a href="/m034.html">南画家ゆかりの地を歩く ─ 記念碑と現地の面影</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">磐田市内に残る福田半香や平井顕斎ゆかりの歴史スポットを訪ねるウォーキングガイド。…</td><td class="col-date"><time datetime="2026-06-28">2026.06.28</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">41</td><td class="col-title"><a href="/nanga-index.html">遠州の南画家たち ─ 豪商が支えた美のネットワーク</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">江戸後期から明治にかけ、磐田・中遠地域で花開いた文人画（南画）の世界。福田半香や…</td><td class="col-date"><time datetime="2026-06-28">2026.06.28</time></td></tr>
+        <tr data-themes="神社仏閣 祭り 暮らし 土地の記憶" data-page="1"><td class="col-no">42</td><td class="col-title"><a href="/f011.html">福田の年中行事と昔ばなし ── 海・川・田畑に生きた暮らしの記憶（総論）</a></td><td class="col-theme">社寺／祭り／暮らし／記憶</td><td class="col-desc">福田町教育委員会『年中行事と昔ばなし』を手がかりに、福田の正月・盆・秋祭り・講・…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="神社仏閣 祭り 暮らし" data-page="1"><td class="col-no">43</td><td class="col-title"><a href="/f012.html">正月から春へ ── 福田の年始行事と村の信仰</a></td><td class="col-theme">社寺／祭り／暮らし</td><td class="col-desc">元旦・仕事始め・七草・裸参り・十日祭・米とぎまつり・節分・初午・針供養・ひなまつ…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="神社仏閣 祭り 暮らし" data-page="1"><td class="col-no">44</td><td class="col-title"><a href="/f013.html">春から初夏へ ── 農事、寺社、講がつないだ地域共同体</a></td><td class="col-theme">社寺／祭り／暮らし</td><td class="col-desc">花まつり・若宮まつり・伊勢参り・苗代籾まき・堀ざらい・苗供え・端午の節句・さなぶ…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="神社仏閣 祭り 暮らし" data-page="1"><td class="col-no">45</td><td class="col-title"><a href="/f014.html">夏と盆 ── 供養、水辺、家の記憶</a></td><td class="col-theme">社寺／祭り／暮らし</td><td class="col-desc">お盆・施餓鬼・精霊流し・川施餓鬼・七夕・丑浜・延命地蔵尊祭・百万遍。先祖と生者が…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="神社仏閣 祭り 暮らし" data-page="1"><td class="col-no">46</td><td class="col-title"><a href="/f015.html">秋から冬へ ── 祭礼、講、神仏への祈り</a></td><td class="col-theme">社寺／祭り／暮らし</td><td class="col-desc">秋祭りと伊勢神楽・白酒祭り・お日待・亥の子・七五三・酉の市・恵比須講・庚申講・地…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="祭り 暮らし 土地の記憶" data-page="1"><td class="col-no">47</td><td class="col-title"><a href="/f016.html">福田の昔ばなしと語りの文化 ── 伝承を地域史として読む</a></td><td class="col-theme">祭り／暮らし／記憶</td><td class="col-desc">八衛門や中野五輪さまの伝承を入口に、福田の昔ばなしを地域の記憶として読み直し、こ…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="神社仏閣 祭り 暮らし" data-page="1"><td class="col-no">48</td><td class="col-title"><a href="/f017.html">福田 年中行事・民俗語彙索引（資料編）</a></td><td class="col-theme">社寺／祭り／暮らし</td><td class="col-desc">月別一覧・行事名索引・民俗語彙ミニ辞典・分類表で、福田の年中行事を横断的に探せる…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="神社仏閣 土地の記憶" data-page="1"><td class="col-no">49</td><td class="col-title"><a href="/f018.html">絹本着色釈迦十六善神画像 ── 遠州灘に近い集落に伝わる中世仏画から、海辺の信仰を読み直す</a></td><td class="col-theme">社寺／記憶</td><td class="col-desc">県指定・絵画。豊浜中野に伝わる文化財を、公式指定情報と福田地区の地域史から読み直…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="祭り 暮らし" data-page="1"><td class="col-no">50</td><td class="col-title"><a href="/f019.html">中野白山神社十日祭（お箱） ── お箱をめぐる年中行事から、豊浜中野の信仰と集落の秩序を読む</a></td><td class="col-theme">祭り／暮らし</td><td class="col-desc">市指定・無形民俗文化財。豊浜中野に伝わる行事を、公式指定情報と福田地区の地域史か…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="祭り 暮らし" data-page="2" hidden><td class="col-no">51</td><td class="col-title"><a href="/f020.html">中野白山神社例祭（白酒） ── 白酒を供える祭礼食から、海辺の集落に残る祈りの形を読む</a></td><td class="col-theme">祭り／暮らし</td><td class="col-desc">市指定・無形民俗文化財。豊浜中野に伝わる行事を、公式指定情報と福田地区の地域史か…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="祭り 暮らし" data-page="2" hidden><td class="col-no">52</td><td class="col-title"><a href="/f021.html">氏神様の年始回り ── 年始に氏神をめぐる行事から、豊浜の家と集落共同体を読む</a></td><td class="col-theme">祭り／暮らし</td><td class="col-desc">市指定・無形民俗文化財。豊浜に伝わる行事を、公式指定情報と福田地区の地域史から読…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">53</td><td class="col-title"><a href="/c027.html">映画『お別れの歌』と磐田の風景</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市内で撮影された映画『お別れの歌』を、今の磐田が映像として残された文化的出来…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 暮らし 土地の記憶" data-page="2" hidden><td class="col-no">54</td><td class="col-title"><a href="/c028.html">磐田用水の歩み</a></td><td class="col-theme">沿革／暮らし／記憶</td><td class="col-desc">磐田用水を天竜川、社山疏水、幹線改良、農地、土地改良区の流れで読む総論ページ。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 暮らし 土地の記憶" data-page="2" hidden><td class="col-no">55</td><td class="col-title"><a href="/c029.html">社山疏水の構想</a></td><td class="col-theme">沿革／暮らし／記憶</td><td class="col-desc">社山疏水の構想と犬塚祐一郎、明治期の水利計画、地域有志の調整を読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 暮らし 土地の記憶" data-page="2" hidden><td class="col-no">56</td><td class="col-title"><a href="/c030.html">磐田用水幹線改良事業</a></td><td class="col-theme">沿革／暮らし／記憶</td><td class="col-desc">昭和期の幹線改良事業を、取水難、突貫工事、昭和19年の初通水、用水安定化の流れで…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 暮らし 土地の記憶" data-page="2" hidden><td class="col-no">57</td><td class="col-title"><a href="/c031.html">天竜川下流農業水利事業</a></td><td class="col-theme">沿革／暮らし／記憶</td><td class="col-desc">船明ダム、河口頭首工、パイプライン化、国営・県営・団体営事業を整理する。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 暮らし 土地の記憶" data-page="2" hidden><td class="col-no">58</td><td class="col-title"><a href="/c032.html">磐田用水東部土地改良区</a></td><td class="col-theme">沿革／暮らし／記憶</td><td class="col-desc">磐田用水東部土地改良区の設立、管理区域、年表、連合、現代的意義を整理する。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="街道・交通 暮らし 土地の記憶" data-page="2" hidden><td class="col-no">59</td><td class="col-title"><a href="/f001.html">福田湊の発展と遠州の漁業史</a></td><td class="col-theme">交通／暮らし／記憶</td><td class="col-desc">太田川河口の福田湊を、遠州灘の漁業・港・流通の記憶として読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="2" hidden><td class="col-no">60</td><td class="col-title"><a href="/f002.html">福田港のシラス船引き網漁と沿岸漁業</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">福田港のシラス漁と加工・流通を、遠州灘の沿岸漁業として読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="2" hidden><td class="col-no">61</td><td class="col-title"><a href="/f003.html">別珍・コールテンと福田の織物産業</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">別珍・コールテンの起毛加工と職人の分業から、福田の織物産業を読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="2" hidden><td class="col-no">62</td><td class="col-title"><a href="/f004.html">太田川河口のウナギ養殖と淡水水産</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">太田川河口の水系と低地利用から、ウナギ養殖と淡水水産を読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 暮らし 土地の記憶" data-page="2" hidden><td class="col-no">63</td><td class="col-title"><a href="/f005.html">福島村から福田町への改称と近代行政</a></td><td class="col-theme">沿革／暮らし／記憶</td><td class="col-desc">福島村から福田町へ至る町制施行と改称を、町村沿革から読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="2" hidden><td class="col-no">64</td><td class="col-title"><a href="/f006.html">豊浜の砂丘と黒松防風林</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">豊浜の砂丘、飛砂、潮風、黒松防風林を、海岸低地の環境史として読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="神社仏閣 祭り 建物・古民家" data-page="2" hidden><td class="col-no">65</td><td class="col-title"><a href="/f007.html">福田まつりと華麗な中泉式屋台</a></td><td class="col-theme">社寺／祭り／建物</td><td class="col-desc">福田まつりを、屋台、彫刻、囃子、町内組織の記憶として読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 暮らし 土地の記憶" data-page="2" hidden><td class="col-no">66</td><td class="col-title"><a href="/f008.html">太郎馬新田と清庵新田の開拓史</a></td><td class="col-theme">沿革／暮らし／記憶</td><td class="col-desc">太郎馬新田・清庵新田を、太田川下流低地の新田開発として読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="神社仏閣 暮らし 土地の記憶" data-page="2" hidden><td class="col-no">67</td><td class="col-title"><a href="/f009.html">福田の寺社仏閣と信仰の歴史</a></td><td class="col-theme">社寺／暮らし／記憶</td><td class="col-desc">海上安全、火伏せ、商売繁盛を願った福田の社寺信仰を読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="2" hidden><td class="col-no">68</td><td class="col-title"><a href="/f010.html">福田の暮らしと食文化</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">カツオ、シラス、砂地の芋を通じて、福田の暮らしと食文化を読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="古地図 神社仏閣 祭り 街道・交通 土地の記憶" data-page="2" hidden><td class="col-no">69</td><td class="col-title"><a href="/c004.html">磐田タイムトラベル地図</a></td><td class="col-theme">地図／社寺／祭り／交通／記憶</td><td class="col-desc">古墳、遠江国府、国分寺、見付宿、祭礼、湊、学校を固定SVG地図と時代別カードでた…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">70</td><td class="col-title"><a href="/c010.html">磐田郡という広がり ── 旧磐田市の外側にあった村々</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">古代の郡、明治の郡制、昭和の編入合併をつなぎ、旧磐田市の外側にあった村々を整理す…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="古地図 町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">71</td><td class="col-title"><a href="/c011.html">古地図に村の名を探す ── 戸別明細図と旧高帳の読み合わせ</a></td><td class="col-theme">地図／沿革／記憶</td><td class="col-desc">旧高帳、戸別明細図、現在の公図を読み合わせ、消えた村名や字名を調べる方法を整理す…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">72</td><td class="col-title"><a href="/c017.html">旧磐田市の成り立ち ── 村から町、町から市へ</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">江戸期の村名、町村制、磐田町成立、市制施行、2005年合併までを地名の記憶として…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <noscript><style>.district-articles tr[hidden]{display:table-row !important}</style></noscript>
+
+  <nav class="article-pager" aria-label="記事一覧のページ送り">
+    <button type="button" data-page-prev disabled>前へ</button>
+    <ol class="pager-nums"><li><button type="button" class="is-current" aria-current="page" data-page-to="1">1</button></li><li><button type="button" data-page-to="2">2</button></li></ol>
+    <button type="button" data-page-next>次へ</button>
+    <p class="pager-status">1〜50件目／全72件（1／2ページ）</p>
+  </nav>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"福田の記事一覧","itemListElement":[{"@type":"ListItem","position":1,"url":"https://iwata-monogatari.net/f038.html","name":"福田地域の秋葉山常夜燈を地域の記憶として読む"},{"@type":"ListItem","position":2,"url":"https://iwata-monogatari.net/f039.html","name":"横須賀街道の松並木を地域の記憶として読む"},{"@type":"ListItem","position":3,"url":"https://iwata-monogatari.net/f040.html","name":"次郎長漆喰画像に残る信仰と文化の記憶"},{"@type":"ListItem","position":4,"url":"https://iwata-monogatari.net/f041.html","name":"DOLCE倉庫から産業の記憶を読む"},{"@type":"ListItem","position":5,"url":"https://iwata-monogatari.net/f042.html","name":"福田地区の音楽活動に残る信仰と文化の記憶"},{"@type":"ListItem","position":6,"url":"https://iwata-monogatari.net/f043.html","name":"虹文庫から産業の記憶を読む"},{"@type":"ListItem","position":7,"url":"https://iwata-monogatari.net/f044.html","name":"のこぎり屋根から産業の記憶を読む"},{"@type":"ListItem","position":8,"url":"https://iwata-monogatari.net/f045.html","name":"コーデュロイハウスから産業の記憶を読む"},{"@type":"ListItem","position":9,"url":"https://iwata-monogatari.net/f046.html","name":"新素材「ソルブレベコ」から産業の記憶を読む"},{"@type":"ListItem","position":10,"url":"https://iwata-monogatari.net/f047.html","name":"温室メロン発祥の地から産業の記憶を読む"},{"@type":"ListItem","position":11,"url":"https://iwata-monogatari.net/f048.html","name":"福田産 シラスから産業の記憶を読む"},{"@type":"ListItem","position":12,"url":"https://iwata-monogatari.net/f049.html","name":"福田漁港から産業の記憶を読む"},{"@type":"ListItem","position":13,"url":"https://iwata-monogatari.net/f050.html","name":"亀塚に残る信仰と文化の記憶"},{"@type":"ListItem","position":14,"url":"https://iwata-monogatari.net/f031.html","name":"福田村五人組帳 ── 江戸時代の村掟34ヶ条と、300年前の家々の記憶"},{"@type":"ListItem","position":15,"url":"https://iwata-monogatari.net/f032.html","name":"慶長9年検地帳と「福田の二十五苗」 ── 400年前の名請人と、今日の家々"},{"@type":"ListItem","position":16,"url":"https://iwata-monogatari.net/f033.html","name":"福田村村役人表 ── 庄屋・組頭・百姓代、慶長9年から慶応4年へ"},{"@type":"ListItem","position":17,"url":"https://iwata-monogatari.net/f034.html","name":"五人組頭の名でたどる福田村 ── 天和4年・宝永の五人組帳と破船の掟"},{"@type":"ListItem","position":18,"url":"https://iwata-monogatari.net/f035.html","name":"五人組制度の起源と福田村の編成 ── 中国の五保制度から福田の六軒組まで"},{"@type":"ListItem","position":19,"url":"https://iwata-monogatari.net/f036.html","name":"火事・竹木・田畑をめぐる村掟の細部 ── 福田村五人組帳を読む"},{"@type":"ListItem","position":20,"url":"https://iwata-monogatari.net/f037.html","name":"逃散・欠落・不審者をめぐる村の掟 ── 福田村五人組帳を読む"}]}</script>
+</section>
+<!-- district-articles:end -->
+
 
 <!-- 優先3：時間の道しるべ -->
 <h2>どこから読むか迷ったら ── 時間の道しるべ</h2>
@@ -353,93 +439,6 @@ details.acc[open] summary{margin-bottom:.8em}
 </footer>
 <script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="iwata-monogatari" data-fujigaoka-analytics="true"></script>
 
-<script>
-(function(){
-  var DISTRICT_ID = 'fukude';
-  var THEME_MAP = {
-    'shiryo':'史料','reference-list':'史料',
-    'old-map':'古地図','old-photo':'古地図',
-    'village-history':'町村沿革',
-    'shrine-temple':'神社仏閣','temple':'神社仏閣',
-    'festival':'祭り',
-    'road-traffic':'街道・交通','railway':'街道・交通','transportation':'街道・交通',
-    'architecture':'建物・古民家',
-    'school':'学校','education':'学校',
-    'life':'暮らし','agriculture':'暮らし','industry':'暮らし','water':'暮らし','craft':'暮らし','mingei':'暮らし',
-    'land-memory':'土地の記憶','place-name':'土地の記憶','terrain':'土地の記憶','archaeology':'土地の記憶'
-  };
-
-  function shuffle(arr){
-    for (var i = arr.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
-    }
-    return arr;
-  }
-
-  fetch('/data/pages.json?t=' + new Date().getTime())
-    .then(function(res){ return res.json(); })
-    .then(function(data){
-      var all = (data.pages || []).filter(function(p){
-        return (p.district || []).indexOf(DISTRICT_ID) !== -1 && p.status === 'published';
-      });
-      var withDate = all.filter(function(p){ return p.published_at; });
-      var withoutDate = all.filter(function(p){ return !p.published_at; });
-      withDate.sort(function(a,b){ return a.published_at < b.published_at ? 1 : (a.published_at > b.published_at ? -1 : 0); });
-      var newest = withDate.slice(0, 3);
-      var rest = withDate.slice(3).concat(withoutDate);
-      shuffle(rest);
-      var articles = newest.concat(rest);
-
-      function chipFor(p){
-        var themes = p.themes || [];
-        for (var i=0;i<themes.length;i++){
-          if (THEME_MAP[themes[i]]) return THEME_MAP[themes[i]];
-        }
-        return null;
-      }
-
-      var grid = document.getElementById('grid');
-      var count = document.getElementById('count');
-      if (!grid) return;
-      grid.innerHTML = '';
-      articles.forEach(function(p){
-        var cat = chipFor(p);
-        var div = document.createElement('div');
-        div.className = 'article-card';
-        if (cat) div.setAttribute('data-cat', cat);
-        var tagText = (p.section || cat || '');
-        div.innerHTML = '<span class="tag">'+ (tagText ? tagText : '') +'</span>' +
-          '<a href="/' + p.url + '">' + p.title + '</a>' +
-          (p.summary ? '<p>' + p.summary + '</p>' : '');
-        grid.appendChild(div);
-      });
-      if (count) count.textContent = articles.length;
-
-      var chipsWrap = document.getElementById('chips');
-      if (chipsWrap) {
-        var chipEls = chipsWrap.querySelectorAll('.chip');
-        chipEls.forEach(function(c){
-          c.addEventListener('click', function(){
-            chipEls.forEach(function(x){ x.classList.remove('active'); });
-            c.classList.add('active');
-            var f = c.dataset.f;
-            var n = 0;
-            grid.querySelectorAll('.article-card').forEach(function(card){
-              var show = (f === 'all' || card.getAttribute('data-cat') === f);
-              card.classList.toggle('hidden', !show);
-              if (show) n++;
-            });
-            if (count) count.textContent = n;
-          });
-        });
-      }
-    })
-    .catch(function(){
-      var grid = document.getElementById('grid');
-      if (grid) grid.innerHTML = '<p class="article-loading">記事一覧の読み込みに失敗しました。時間をおいて再度お試しください。</p>';
-    });
-})();
-</script>
+<script defer src="/assets/js/district-articles.js?v=7"></script>
 </body>
 </html>

@@ -7,13 +7,13 @@
 <title>豊田地区｜磐田物語 ── 旧豊田町・天竜川流域のまち・町村沿革・学校区・大字</title>
 <meta name="description" content="磐田物語の豊田地区入口ページ。旧豊田町域・天竜川東岸の田園と集落、銚子塚古墳・池田の渡し・行興寺の長藤などの歴史読み物、村の誕生から磐田市合併までの沿革（年表・対応表）、現在の中学校区・小学校区・大字をまとめた地区ポータルです。">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://iwata-monogatari.net/01004-toyoda.html">
+<link rel="canonical" href="https://iwata-monogatari.net/01004-toyoda">
 <meta property="og:site_name" content="磐田物語">
 <meta property="og:title" content="豊田地区｜磐田物語">
 <meta property="og:description" content="旧豊田町・天竜川流域の豊田地区の歴史読み物・町村沿革・学校区・大字をまとめた地区ポータル。">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:url" content="https://iwata-monogatari.net/01004-toyoda.html">
+<meta property="og:url" content="https://iwata-monogatari.net/01004-toyoda">
 <meta property="og:image" content="https://iwata-monogatari.net/saguchi/img/hk-3.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="豊田地区｜磐田物語">
@@ -27,6 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/district-articles.css?v=7">
 <style>
 :root{
   --bg:#fffdf7;
@@ -127,23 +128,6 @@ details.acc[open] summary{margin-bottom:.8em}
 .enkaku-flow .flow .yr{font-weight:400;font-size:.78rem;color:var(--ink-soft)}
 .more-center{text-align:center;margin-top:1em}
 
-.filter-chips{display:flex;flex-wrap:wrap;gap:.4em;margin:0 0 1.1em}
-.chip{
-  font-size:.78rem;border:1px solid var(--line);background:var(--card);
-  border-radius:999px;padding:.25em 1em;cursor:pointer;color:var(--ink-soft);
-}
-.chip.active{background:var(--district);border-color:var(--district);color:#fff;font-weight:700}
-.article-count{font-size:.8rem;color:var(--ink-soft);margin-bottom:.8em}
-.article-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9em}
-.article-card{
-  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-  padding:.9em 1em;display:flex;flex-direction:column;gap:.3em;
-}
-.article-card .tag{font-size:.7rem;font-weight:700;color:var(--district)}
-.article-card a{font-weight:700;font-size:.92rem;line-height:1.6}
-.article-card p{font-size:.78rem;color:var(--ink-soft)}
-.article-card.hidden{display:none}
-.article-loading{font-size:.85rem;color:var(--ink-soft)}
 
 .cta-box{
   background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
@@ -169,7 +153,6 @@ details.acc[open] summary{margin-bottom:.8em}
 
 @media(max-width:720px){
   .theme-cards{grid-template-columns:1fr}
-  .article-grid{grid-template-columns:1fr}
   .footer-blocks{grid-template-columns:1fr}
   h1{font-size:1.55rem}
 }
@@ -248,25 +231,136 @@ details.acc[open] summary{margin-bottom:.8em}
   </div>
 </div>
 
-<!-- 優先2：記事を探す -->
+<!-- district-articles:start -->
 <h2>豊田の記事を探す</h2>
 <p class="section-lead">豊田地区に関係する読み物・特集・史料ページを、新着を上にして並べています。テーマ別に絞り込むこともできます。</p>
 
-<div class="filter-chips" id="chips">
-  <button class="chip active" data-f="all">すべて</button>
-  <button class="chip" data-f="史料">史料</button>
-  <button class="chip" data-f="古地図">古地図</button>
-  <button class="chip" data-f="町村沿革">町村沿革</button>
-  <button class="chip" data-f="神社仏閣">神社仏閣</button>
-  <button class="chip" data-f="祭り">祭り</button>
-  <button class="chip" data-f="街道・交通">街道・交通</button>
-  <button class="chip" data-f="建物・古民家">建物・古民家</button>
-  <button class="chip" data-f="学校">学校</button>
-  <button class="chip" data-f="暮らし">暮らし</button>
-  <button class="chip" data-f="土地の記憶">土地の記憶</button>
-</div>
-<p class="article-count">表示中：<span id="count">0</span>件</p>
-<div class="article-grid" id="grid"><p class="article-loading">記事一覧を読み込んでいます…</p></div>
+<section class="district-articles" id="articles" data-district="toyoda">
+  <div class="article-filter" role="group" aria-label="テーマで絞り込む">
+    <button type="button" class="is-active" data-theme="all" aria-pressed="true">すべて</button>
+    <button type="button" data-theme="史料" aria-pressed="false">史料</button>
+    <button type="button" data-theme="古地図" aria-pressed="false">古地図</button>
+    <button type="button" data-theme="町村沿革" aria-pressed="false">町村沿革</button>
+    <button type="button" data-theme="神社仏閣" aria-pressed="false">神社仏閣</button>
+    <button type="button" data-theme="祭り" aria-pressed="false">祭り</button>
+    <button type="button" data-theme="街道・交通" aria-pressed="false">街道・交通</button>
+    <button type="button" data-theme="建物・古民家" aria-pressed="false">建物・古民家</button>
+    <button type="button" data-theme="学校" aria-pressed="false">学校</button>
+    <button type="button" data-theme="暮らし" aria-pressed="false">暮らし</button>
+    <button type="button" data-theme="土地の記憶" aria-pressed="false">土地の記憶</button>
+  </div>
+
+  <p class="article-count" aria-live="polite">表示中：<span data-count>86</span>件</p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <caption class="visually-hidden">豊田地区の記事一覧</caption>
+      <thead>
+        <tr><th scope="col" class="col-no">No.</th><th scope="col" class="col-title">タイトル</th><th scope="col" class="col-theme">テーマ</th><th scope="col" class="col-desc">概要</th><th scope="col" class="col-date">公開日</th></tr>
+      </thead>
+      <tbody>
+        <tr data-themes="街道・交通 土地の記憶" data-page="1"><td class="col-no">1</td><td class="col-title"><a href="/oishi-iwata-tochi-kiokuroku/04">一言坂の撤退戦を土地から読む - 坂・沼・提灯野が家康を救った日</a></td><td class="col-theme">交通／記憶</td><td class="col-desc">一言坂の戦いを、武将の武勇伝だけでなく、坂、沼、道、提灯野、一言観音という土地の…</td><td class="col-date"><time datetime="2026-07-15">2026.07.15</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">2</td><td class="col-title"><a href="/t067.html">磐田で生まれたプチヴェールから産業の記憶を読む</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">豊田地区の磐田で生まれたプチヴェールを、産業・なりわいの記憶として読み直す。場所…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="祭り 暮らし 土地の記憶" data-page="1"><td class="col-no">3</td><td class="col-title"><a href="/t068.html">熊野伝統芸能館に残る信仰と文化の記憶</a></td><td class="col-theme">祭り／暮らし／記憶</td><td class="col-desc">豊田地区の熊野伝統芸能館を、文化・信仰の記憶として読み直す。場所、資料から確認で…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="神社仏閣" data-page="1"><td class="col-no">4</td><td class="col-title"><a href="/c100.html">平氏と遠江国司 ── 平重盛の一族と磐田</a></td><td class="col-theme">社寺</td><td class="col-desc">平重盛の遠江国司就任を軸に、蓮光寺・連城寺・熊野御前へ残る平氏の記憶を、政治史と…</td><td class="col-date"><time datetime="2026-07-12">2026.07.12</time></td></tr>
+        <tr data-themes="町村沿革 神社仏閣" data-page="1"><td class="col-no">5</td><td class="col-title"><a href="/t044.html">「町内史跡めぐり」60選 ── 昭和53年、豊田町郷土を研究する会が歩いた記憶の地図</a></td><td class="col-theme">沿革／社寺</td><td class="col-desc">昭和53年発行『郷土研究資料第四集 町内史跡めぐり』が記録した旧豊田町全域60か…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="町村沿革 街道・交通" data-page="1"><td class="col-no">6</td><td class="col-title"><a href="/t045.html">天竜川池田の渡船 ── 家康の証文から始まった渡し場300年の記憶</a></td><td class="col-theme">沿革／交通</td><td class="col-desc">昭和51年発行『郷土研究資料第二集 天竜川池田の渡船』をもとに、池田渡船の起源、…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="町村沿革 街道・交通" data-page="1"><td class="col-no">7</td><td class="col-title"><a href="/t046.html">天竜川に架けられた船橋 ── 新田義貞から朝鮮通信使まで</a></td><td class="col-theme">沿革／交通</td><td class="col-desc">新田義貞の敗走、今川氏親・徳川家康・織田信長の軍勢、大坂冬の陣、そして朝鮮通信使…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="町村沿革 街道・交通" data-page="1"><td class="col-no">8</td><td class="col-title"><a href="/t047.html">渡船を支えた助郷たち ── 定助郷・大助郷と助船・助人足制度</a></td><td class="col-theme">沿革／交通</td><td class="col-desc">池田村・船越一色村の渡船専業を支えた周辺村々の助郷制度。定助郷・大助郷の区分、手…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="町村沿革 街道・交通" data-page="1"><td class="col-no">9</td><td class="col-title"><a href="/t048.html">渡船経済のしくみ ── 船賃の分配と船勧進物、堤防修理</a></td><td class="col-theme">沿革／交通</td><td class="col-desc">船名敷という持分による収益配分、池田村・船越村が遠江国中から集めた船勧進物、天保…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="町村沿革 街道・交通" data-page="1"><td class="col-no">10</td><td class="col-title"><a href="/t049.html">大名と渡船の特約 ── 紀州藩・尾張藩・仙台藩と池田村渡船方</a></td><td class="col-theme">沿革／交通</td><td class="col-desc">紀州藩・尾張藩、奥州仙台藩が池田村渡船方の特定の家と結んだ渡船特約の実態。宝暦1…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="町村沿革 街道・交通" data-page="1"><td class="col-no">11</td><td class="col-title"><a href="/t050.html">大通行と池田の渡船場 ── 琉球使節から見付宿の歎願まで</a></td><td class="col-theme">沿革／交通</td><td class="col-desc">参勤交代や将軍上洛、琉球使節の参府など、東海道の大通行が池田渡船場と助郷にもたら…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="町村沿革 街道・交通" data-page="1"><td class="col-no">12</td><td class="col-title"><a href="/t051.html">外国船の来日と渡船への影響 ── ラクスマンから幕末の動揺まで</a></td><td class="col-theme">沿革／交通</td><td class="col-desc">寛政4年のラクスマン来航から嘉永6年のペリー来航、日米和親条約を経て、幕末の動揺…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="町村沿革 街道・交通" data-page="1"><td class="col-no">13</td><td class="col-title"><a href="/t052.html">天竜川の氾濫と仮渡船 ── 文化13年・文政11年の大洪水</a></td><td class="col-theme">沿革／交通</td><td class="col-desc">文化13年・文政11年の大洪水で流失した渡船場と、中泉代官所が取り決めた仮渡船の…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">14</td><td class="col-title"><a href="/t053.html">池田荘の条里制と立券文書 ── 微高地から復元する荘域</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">松尾神社領・池田荘の立券文書に記された地名と、谷岡武雄博士グループによる航空写真…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">15</td><td class="col-title"><a href="/t054.html">こひめっこの墓 ── 赤池に400年伝わる、真田の姫の言い伝え</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">赤池の墓地に伝わる「こひめっこの墓」。信州上田城主・真田幸村が徳川秀忠に攻められ…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="建物・古民家 土地の記憶" data-page="1"><td class="col-no">16</td><td class="col-title"><a href="/t055.html">帯金家長屋門 ── 家康を助けた恩義に由来する姓</a></td><td class="col-theme">建物／記憶</td><td class="col-desc">上本郷の帯金家に伝わる、元亀年間の徳川家康逃避行の言い伝え。帯の間から財布を出し…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="神社仏閣 土地の記憶" data-page="1"><td class="col-no">17</td><td class="col-title"><a href="/t056.html">少林寺跡の大イチョウ ── 廃寺に残る樹齢300年の巡礼の記憶</a></td><td class="col-theme">社寺／記憶</td><td class="col-desc">海老塚の少林寺跡に残る樹齢300年以上の大イチョウ。遠江四十九薬師めぐり第四番札…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="暮らし" data-page="1"><td class="col-no">18</td><td class="col-title"><a href="/t057.html">万能橋と十分一税一揆 ── 安政4年、3千余人が集結した大騒動</a></td><td class="col-theme">暮らし</td><td class="col-desc">天正16年、寺谷用水の工事にあわせて架けられた下万能の万能橋。天竜川を下る物資へ…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="学校" data-page="1"><td class="col-no">19</td><td class="col-title"><a href="/t058.html">西之島学校跡 ── 「遠州の三大学校」に数えられた洋風校舎</a></td><td class="col-theme">学校</td><td class="col-desc">明治8年、若宮八幡宮西側に建てられた洋風三階建ての西之島学校。見付小学校・坊中学…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">20</td><td class="col-title"><a href="/t059.html">皆川陣屋跡と稲荷山 ── 1800石を治めた旗本、皆川氏の記憶</a></td><td class="col-theme">記憶</td><td class="col-desc">一言村・西之島村・匂坂中村・下岡田村にまたがり1800石余を治めた旗本・皆川氏。…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="神社仏閣" data-page="1"><td class="col-no">21</td><td class="col-title"><a href="/t060.html">水汲坂と禁酒地蔵 ── 一言に伝わる、日本で唯一つの受験地蔵</a></td><td class="col-theme">社寺</td><td class="col-desc">一言南原から一言の里へくだる水汲坂。昭和4年、松本一可氏が恩師の遺志を継いで祭っ…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="暮らし" data-page="1"><td class="col-no">22</td><td class="col-title"><a href="/t061.html">長森こうやく ── 山田与左衛門家に伝わる、東海道みやげの妙薬</a></td><td class="col-theme">暮らし</td><td class="col-desc">江戸時代初期から長森の山田与左衛門家が代々製造した「長森こうやく」。あかぎれ・ひ…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="街道・交通" data-page="1"><td class="col-no">23</td><td class="col-title"><a href="/t062.html">天竜橋跡 ── 60年にわたり天竜川を渡した木橋の記憶</a></td><td class="col-theme">交通</td><td class="col-desc">明治7年、源平新田と中野町の間に架けられた幅3.6m・延長1175mの木橋「天竜…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="学校" data-page="1"><td class="col-no">24</td><td class="col-title"><a href="/t063.html">静大農学部跡 ── 一言・富丘に残る、旧制農林専門学校の記憶</a></td><td class="col-theme">学校</td><td class="col-desc">戦時中は129部隊が置かれ、戦後は師範学校仮校舎、県立農林専門学校を経て静岡大学…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="神社仏閣 土地の記憶" data-page="1"><td class="col-no">25</td><td class="col-title"><a href="/t064.html">豊田山薬師堂 ── 坂上田村麻呂の伝承と40石の朱印地</a></td><td class="col-theme">社寺／記憶</td><td class="col-desc">延暦22年、坂上田村麻呂が東日本征討の際に建てたと伝わる気子島の豊田山薬師堂。徳…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="神社仏閣 土地の記憶" data-page="1"><td class="col-no">26</td><td class="col-title"><a href="/t065.html">神宮山松向寺 ── 浅間山噴火の記録を伝える豊田町最古最大の木造建築</a></td><td class="col-theme">社寺／記憶</td><td class="col-desc">元和5年創立、元禄14年建立の本堂が280年の歴史を持つ豊田町最古最大の木造建築…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="神社仏閣" data-page="1"><td class="col-no">27</td><td class="col-title"><a href="/t066.html">若宮八幡宮と佐藤繁蔵 ── 28か村を合祀した郷社と、力士になった一言の若者</a></td><td class="col-theme">社寺</td><td class="col-desc">明治6年、28か村の神社を合祀して郷社となった森下の若宮八幡宮。奉納相撲の記憶と…</td><td class="col-date"><time datetime="2026-07-11">2026.07.11</time></td></tr>
+        <tr data-themes="町村沿革" data-page="1"><td class="col-no">28</td><td class="col-title"><a href="/t043.html">豊田の成り立ち ── 沿革年表・学校区・大字</a></td><td class="col-theme">沿革</td><td class="col-desc">豊田地区の沿革年表・旧町村と大字の対応・現在の学校区と主な大字をまとめた資料ペー…</td><td class="col-date"><time datetime="2026-07-10">2026.07.10</time></td></tr>
+        <tr data-themes="建物・古民家 暮らし 土地の記憶" data-page="1"><td class="col-no">29</td><td class="col-title"><a href="/c092.html">磐田市の閉鎖プールを読む - 市民プールから温水・防災インフラへ</a></td><td class="col-theme">建物／暮らし／記憶</td><td class="col-desc">磐田市民プール、旧磐田グランドホテルのプール、学校プールや民間施設の閉鎖から、遊…</td><td class="col-date"><time datetime="2026-07-07">2026.07.07</time></td></tr>
+        <tr data-themes="街道・交通" data-page="1"><td class="col-no">30</td><td class="col-title"><a href="/t039.html">旧東海道の一里塚・松並木・木戸 ── 1420本から370本へ</a></td><td class="col-theme">交通</td><td class="col-desc">正徳2年には1420本あった東海道の松並木は、今は三ケ野・森下・下万能に約370…</td><td class="col-date"><time datetime="2026-07-05">2026.07.05</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">31</td><td class="col-title"><a href="/t040.html">一言坂の戦いと磐田の戦場地形 ── 姫街道・県道413号・宮之一色一里塚</a></td><td class="col-theme">記憶</td><td class="col-desc">一言坂の戦跡は旧東海道ではなく姫街道系統の坂道にある。現代の「東海道と歴史の道」…</td><td class="col-date"><time datetime="2026-07-05">2026.07.05</time></td></tr>
+        <tr data-themes="街道・交通" data-page="1"><td class="col-no">32</td><td class="col-title"><a href="/t041.html">天竜川の筏流しと木材流通 ── 東大寺のための浚渫から、ダムによる終焉まで</a></td><td class="col-theme">交通</td><td class="col-desc">慶長11年、角倉了以が東大寺再建材木のため天竜川を浚渫し筏流しが始まった。舟運へ…</td><td class="col-date"><time datetime="2026-07-05">2026.07.05</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">33</td><td class="col-title"><a href="/t042.html">天竜川の堤防・洪水碑・水害記録 ── 昭和49年七夕洪水の記憶</a></td><td class="col-theme">記憶</td><td class="col-desc">明治の改修後もなお続いた天竜川の水害。昭和49年七夕洪水の総雨量・浸水戸数の記録…</td><td class="col-date"><time datetime="2026-07-05">2026.07.05</time></td></tr>
+        <tr data-themes="街道・交通 土地の記憶" data-page="1"><td class="col-no">34</td><td class="col-title"><a href="/c051.html">磐田駅から消えた二つの鉄路 ── 中泉軌道と光明電気鉄道</a></td><td class="col-theme">交通／記憶</td><td class="col-desc">磐田駅、かつての中泉駅を起点に、天竜川水運と地域の産業を支えようとした中泉軌道と…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="街道・交通" data-page="1"><td class="col-no">35</td><td class="col-title"><a href="/c052.html">中泉軌道とは何だったのか ── 天竜川水運と磐田駅を結んだ細い鉄路</a></td><td class="col-theme">交通</td><td class="col-desc">1909年に中泉停車場から池田橋方面へ開通した中泉軌道。天竜川水運と東海道本線を…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="街道・交通 土地の記憶" data-page="1"><td class="col-no">36</td><td class="col-title"><a href="/c053.html">旧東海道を走った軌道 ── 中泉軌道のルートと松並木の記憶</a></td><td class="col-theme">交通／記憶</td><td class="col-desc">中泉駅付近から旧東海道、一言橋、森下、池田橋へ。中泉軌道が通ったとされるルートを…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="街道・交通" data-page="1"><td class="col-no">37</td><td class="col-title"><a href="/c054.html">光明電気鉄道の夢 ── 見付と二俣を結ぼうとした高速電車</a></td><td class="col-theme">交通</td><td class="col-desc">新中泉から見付、岩田、上野部を経て二俣町へ。地方鉄道として異例の電化規格を持った…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="史料 街道・交通" data-page="1"><td class="col-no">38</td><td class="col-title"><a href="/c055.html">光明電鉄19駅一覧 ── 新中泉から二俣町までをたどる</a></td><td class="col-theme">史料／交通</td><td class="col-desc">光明電気鉄道の停留所を含む19駅を、新中泉からの距離とともに一覧表にまとめる。現…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="街道・交通 土地の記憶" data-page="1"><td class="col-no">39</td><td class="col-title"><a href="/c056.html">いま残る光明電鉄の痕跡 ── 平松駅、二俣口、トンネル、マンホール</a></td><td class="col-theme">交通／記憶</td><td class="col-desc">平松駅跡のホーム跡、二俣口駅跡と阿蔵トンネル、駅前で見つかった光明電鉄のマンホー…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="街道・交通 暮らし 土地の記憶" data-page="1"><td class="col-no">40</td><td class="col-title"><a href="/c057.html">久根鉱山、木材、天竜川 ── 鉄道が運ぼうとしたもの</a></td><td class="col-theme">交通／暮らし／記憶</td><td class="col-desc">天竜川の水運、久根鉱山の鉱石輸送、木材と地域産品。中泉軌道と光明電気鉄道が支えよ…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="街道・交通" data-page="1"><td class="col-no">41</td><td class="col-title"><a href="/c058.html">なぜ鉄路は消えたのか ── バス、三信鉄道、過剰投資の時代</a></td><td class="col-theme">交通</td><td class="col-desc">自動車輸送の普及、三信鉄道の整備による鉱山輸送ルートの変化、重い設備投資。中泉軌…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">42</td><td class="col-title"><a href="/m059.html">磐田が戦場になった時代 ── 一言坂・三ケ野・社山城・匂坂城</a></td><td class="col-theme">記憶</td><td class="col-desc">元亀3年の武田信玄による遠江侵攻。一言坂の戦い、本多忠勝の殿、三ケ野坂、社山城・…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="街道・交通 土地の記憶" data-page="1"><td class="col-no">43</td><td class="col-title"><a href="/t038.html">旧東海道と国道1号・県道の主役交代 ── 磐田バイパスが変えた道の地図</a></td><td class="col-theme">交通／記憶</td><td class="col-desc">見付の旧東海道が国道1号として拡幅され、渋滞に悩んだ末に磐田バイパスへ主役を譲る…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">44</td><td class="col-title"><a href="/t034.html">熊野絵巻を読む ── 熊野・千手・朝顔、三人の女性たちの物語</a></td><td class="col-theme">記憶</td><td class="col-desc">行興寺の熊野絵巻の詞書に基づき、熊野だけでなく千手・朝顔を含む三人の女性と平宗盛…</td><td class="col-date"><time datetime="2026-07-03">2026.07.03</time></td></tr>
+        <tr data-themes="神社仏閣 土地の記憶" data-page="1"><td class="col-no">45</td><td class="col-title"><a href="/t035.html">熊野絵巻の成立をめぐる論争 ── 室町か、江戸か</a></td><td class="col-theme">社寺／記憶</td><td class="col-desc">県指定文化財としての「室町時代」という指定を否定せず、熊野絵巻の制作年代をめぐる…</td><td class="col-date"><time datetime="2026-07-03">2026.07.03</time></td></tr>
+        <tr data-themes="神社仏閣 土地の記憶" data-page="1"><td class="col-no">46</td><td class="col-title"><a href="/t036.html">熊野道場由来記と熊野寺旧跡之畧縁起 ── 行興寺草創の二つの物語</a></td><td class="col-theme">社寺／記憶</td><td class="col-desc">行興寺に伝わる内容の食い違う二つの草創縁起を、断定せずに読み比べる寺院縁起編。</td><td class="col-date"><time datetime="2026-07-03">2026.07.03</time></td></tr>
+        <tr data-themes="町村沿革 神社仏閣" data-page="1"><td class="col-no">47</td><td class="col-title"><a href="/t037.html">行興寺の近世史 ── 徳川家康の伝承と朱印地の古文書</a></td><td class="col-theme">沿革／社寺</td><td class="col-desc">慶長8年の朱印地寄進伝承を、江戸期の嘆願書・減免願という実際の古文書に基づいて掘…</td><td class="col-date"><time datetime="2026-07-03">2026.07.03</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">48</td><td class="col-title"><a href="/r024.html">天竜川の地形と歴史 ── 平地の生い立ちと川筋の移りかわり</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">天竜川平地の地形・地質と生い立ち、江戸期以降の川筋の西遷、金原明善らの治水事業ま…</td><td class="col-date"><time datetime="2026-07-02">2026.07.02</time></td></tr>
+        <tr data-themes="神社仏閣 土地の記憶" data-page="1"><td class="col-no">49</td><td class="col-title"><a href="/t033.html">熊野御前ものがたり ── 池田に生きた伝説の女性と行興寺</a></td><td class="col-theme">社寺／記憶</td><td class="col-desc">磐田市池田に伝わる熊野御前の伝説を、行興寺の熊野道場由来記や謡曲「熊野」、地名「…</td><td class="col-date"><time datetime="2026-07-02">2026.07.02</time></td></tr>
+        <tr data-themes="神社仏閣 土地の記憶" data-page="1"><td class="col-no">50</td><td class="col-title"><a href="/t027.html">熊野絵巻 ── 池田の熊野信仰と中世交通を、絵巻という語りの形式から読む</a></td><td class="col-theme">社寺／記憶</td><td class="col-desc">県指定・絵画。池田に伝わる文化財を、公式指定情報と豊田地区の地域史から読み直す。</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="2" hidden><td class="col-no">51</td><td class="col-title"><a href="/t028.html">熊野の長フジ ── 国指定とも関わる長フジを、池田の熊野御前伝承と文化的景観から読み直す</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">県指定・天然記念物。池田に伝わる文化財を、公式指定情報と豊田地区の地域史から読み…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="祭り 暮らし" data-page="2" hidden><td class="col-no">52</td><td class="col-title"><a href="/t029.html">池田やかた祭り ── 熊野御前伝承と池田荘の記憶を、祭りのかたちから読み直す</a></td><td class="col-theme">祭り／暮らし</td><td class="col-desc">市指定・無形民俗文化財。池田に伝わる行事を、公式指定情報と豊田地区の地域史から読…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="祭り 暮らし" data-page="2" hidden><td class="col-no">53</td><td class="col-title"><a href="/t030.html">大めし祭り ── 大飯を供える農村祭礼から、富里の生産と共同体を読む</a></td><td class="col-theme">祭り／暮らし</td><td class="col-desc">市指定・無形民俗文化財。富里に伝わる行事を、公式指定情報と豊田地区の地域史から読…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="祭り 暮らし" data-page="2" hidden><td class="col-no">54</td><td class="col-title"><a href="/t031.html">加茂大念仏 ── 盆の念仏行事から、加茂に残る供養と集落の記憶を読む</a></td><td class="col-theme">祭り／暮らし</td><td class="col-desc">市指定・無形民俗文化財。加茂に伝わる行事を、公式指定情報と豊田地区の地域史から読…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="祭り 暮らし" data-page="2" hidden><td class="col-no">55</td><td class="col-title"><a href="/t032.html">賀茂神社特殊神饌 ── 神饌のかたちから、加茂の食と信仰を地域史として読む</a></td><td class="col-theme">祭り／暮らし</td><td class="col-desc">市指定・無形民俗文化財。加茂に伝わる行事を、公式指定情報と豊田地区の地域史から読…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">56</td><td class="col-title"><a href="/c027.html">映画『お別れの歌』と磐田の風景</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市内で撮影された映画『お別れの歌』を、今の磐田が映像として残された文化的出来…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">57</td><td class="col-title"><a href="/t009.html">池田荘と「葛巻」 ── 地名に残る中世の荘園</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">小立野・西之島の「葛巻」と松尾大社領・池田荘の記憶を読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">58</td><td class="col-title"><a href="/t010.html">「堤外」と「内郷堤」 ── 天竜川の堤が分けた土地</a></td><td class="col-theme">記憶</td><td class="col-desc">旧豊田町にくり返し現れる「堤外」の地名から、川と堤の境を読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">59</td><td class="col-title"><a href="/t011.html">弥藤太島・気子島 ── 「島」のつく地名と低地の暮らし</a></td><td class="col-theme">記憶</td><td class="col-desc">「島」のつく地名から、天竜川低地の微高地と暮らしを読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">60</td><td class="col-title"><a href="/t012.html">上新屋「半場名」と、天竜川左岸の新田開発</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">上新屋の小字「半場名」から、新田開発と人名由来地名を読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">61</td><td class="col-title"><a href="/t013.html">上万能「挑燈野」 ── 古戦場と伝わる野の名</a></td><td class="col-theme">記憶</td><td class="col-desc">上万能に伝わる「挑燈野」を、一言坂の戦いとあわせて読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="神社仏閣 土地の記憶" data-page="2" hidden><td class="col-no">62</td><td class="col-title"><a href="/t014.html">森下・森本・立野 ── 「森」と「立野」の地名を歩く</a></td><td class="col-theme">社寺／記憶</td><td class="col-desc">森下・森本・立野に残る森、野、寺跡の記憶を読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">63</td><td class="col-title"><a href="/t015.html">富丘・東原 ── 台地に開けた「原」と「丘」のまち</a></td><td class="col-theme">記憶</td><td class="col-desc">富丘・東原・高見丘から、旧豊田町北部の台地利用を読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="街道・交通" data-page="2" hidden><td class="col-no">64</td><td class="col-title"><a href="/t016.html">池田宿の賑わいと本陣の記憶 ── 天竜川東岸の宿場と東海道の玄関口</a></td><td class="col-theme">交通</td><td class="col-desc">天竜川の渡船を控えた東海道の交通の要衝であり、多くの旅人や大名が滞在した「池田宿…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="街道・交通" data-page="2" hidden><td class="col-no">65</td><td class="col-title"><a href="/t017.html">船頭自治と徳川家康の朱印状 ── 天竜川左岸・池田船頭衆の特権と自立史</a></td><td class="col-theme">交通</td><td class="col-desc">天竜川の激流を渡る高度な技術を持ち、徳川家康から数々の特権（朱印状）を与えられた…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">66</td><td class="col-title"><a href="/t018.html">金原明善と天竜川治水の足跡 ── 「暴れ天竜」に挑んだ治水開拓者と森林保護の思想</a></td><td class="col-theme">記憶</td><td class="col-desc">「暴れ天竜」と恐れられた大河の治水に生涯と全財産を捧げた「金原明善」。上流部の植…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">67</td><td class="col-title"><a href="/t020.html">小銚子塚古墳と周辺の古墳群 ── 銚子塚に連なる巨大古墳の系譜と古代の首長系譜</a></td><td class="col-theme">記憶</td><td class="col-desc">国指定史跡である銚子塚古墳に隣接する「小銚子塚古墳」と、磐田原台地西縁に築かれた…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革" data-page="2" hidden><td class="col-no">68</td><td class="col-title"><a href="/t021.html">井通村の成立と近代の教育・水利 ── 天竜川左岸の豊かな低地を拓いた近代農村の歩み</a></td><td class="col-theme">沿革</td><td class="col-desc">明治22年（1889年）、低地の農業地帯である小立野、西之島、宮之一色などの村々…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革" data-page="2" hidden><td class="col-no">69</td><td class="col-title"><a href="/t022.html">富岡村の開拓と磐田原台地西縁の農業 ── 水なき台地を緑の茶園に変えたフロンティアの歴史</a></td><td class="col-theme">沿革</td><td class="col-desc">磐田原台地の西の縁に位置する加茂、岩井、明ケ島などのエリアが合併して生まれた「富…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">70</td><td class="col-title"><a href="/t023.html">天竜川の「暴れ天竜」と決壊の歴史 ── 洪水との戦いと、豊田地区に刻まれた水害の記憶</a></td><td class="col-theme">記憶</td><td class="col-desc">数十回にわたり周囲の村々を呑み込ん込んできた「暴れ天竜」の歴史。明治16年の大洪…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="神社仏閣 土地の記憶" data-page="2" hidden><td class="col-no">71</td><td class="col-title"><a href="/t024.html">社山と古代・中世の山岳信仰・砦の記憶 ── 豊田地区北端の霊峰と戦国乱世の砦跡</a></td><td class="col-theme">社寺／記憶</td><td class="col-desc">豊田地区の北端に聳え、古くから修験道や山岳信仰の対象とされてきた「社山（やしろや…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="祭り" data-page="2" hidden><td class="col-no">72</td><td class="col-title"><a href="/t025.html">池田やかた祭りと天白神社の祭礼 ── 天竜川の渡しの里に伝わる厄流し</a></td><td class="col-theme">祭り</td><td class="col-desc">磐田市豊田地区・池田に伝わる市指定無形民俗文化財「池田やかた祭り」と、鎮守・天白…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革" data-page="2" hidden><td class="col-no">73</td><td class="col-title"><a href="/t026.html">豊田町への合併と近代行政のあゆみ ── 井通・池田・富岡の三村が紡いだ合併の歴史</a></td><td class="col-theme">沿革</td><td class="col-desc">明治から大正、昭和にかけて、天竜川流域の村々がどのように統合し、かつての「豊田町…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="古地図 神社仏閣 祭り 街道・交通 土地の記憶" data-page="2" hidden><td class="col-no">74</td><td class="col-title"><a href="/c004.html">磐田タイムトラベル地図</a></td><td class="col-theme">地図／社寺／祭り／交通／記憶</td><td class="col-desc">古墳、遠江国府、国分寺、見付宿、祭礼、湊、学校を固定SVG地図と時代別カードでた…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">75</td><td class="col-title"><a href="/c010.html">磐田郡という広がり ── 旧磐田市の外側にあった村々</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">古代の郡、明治の郡制、昭和の編入合併をつなぎ、旧磐田市の外側にあった村々を整理す…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="古地図 町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">76</td><td class="col-title"><a href="/c011.html">古地図に村の名を探す ── 戸別明細図と旧高帳の読み合わせ</a></td><td class="col-theme">地図／沿革／記憶</td><td class="col-desc">旧高帳、戸別明細図、現在の公図を読み合わせ、消えた村名や字名を調べる方法を整理す…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">77</td><td class="col-title"><a href="/c017.html">旧磐田市の成り立ち ── 村から町、町から市へ</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">江戸期の村名、町村制、磐田町成立、市制施行、2005年合併までを地名の記憶として…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 街道・交通 土地の記憶" data-page="2" hidden><td class="col-no">78</td><td class="col-title"><a href="/s001.html">天竜川がつくった村、流した村 ── 池田・掛塚と渡しの記憶</a></td><td class="col-theme">沿革／交通／記憶</td><td class="col-desc">暴れ天竜、旧河道、池田の渡し、掛塚湊を通して、川がつくった村と流した村の記憶を読…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">79</td><td class="col-title"><a href="/t007.html">「新田」と名のつく土地 ── 江戸の開発が刻んだ磐田の地名</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">寺谷新田、源平新田、太郎馬新田、宇兵衛新田など、江戸期の新田開発が残した地名を読…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">80</td><td class="col-title"><a href="/t006.html">旧豊田町の地名と、土地の記憶</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">『豊田町地名地図』を歩き、旧豊田町の地名と土地の記憶をたどる。</td><td class="col-date"><time datetime="2026-06-16">2026.06.16</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">81</td><td class="col-title"><a href="/t005.html">加茂・寺谷の歴史</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">遠江有数の農業地帯・加茂と寺谷の変遷。</td><td class="col-date"><time datetime="2026-06-14">2026.06.14</time></td></tr>
+        <tr data-themes="街道・交通 土地の記憶" data-page="2" hidden><td class="col-no">82</td><td class="col-title"><a href="/t004.html">池田の渡し ── 天竜川をわたる東海道</a></td><td class="col-theme">交通／記憶</td><td class="col-desc">天竜川を舟でわたった東海道の渡し場。</td><td class="col-date"><time datetime="2026-06-13">2026.06.13</time></td></tr>
+        <tr data-themes="街道・交通 土地の記憶" data-page="2" hidden><td class="col-no">83</td><td class="col-title"><a href="/t008.html">東海道新田の歴史</a></td><td class="col-theme">交通／記憶</td><td class="col-desc">東海道沿いに開かれた新田の歩み。</td><td class="col-date"><time datetime="2026-06-12">2026.06.12</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">84</td><td class="col-title"><a href="/t003.html">一言坂の戦いと、本多忠勝の殿</a></td><td class="col-theme">記憶</td><td class="col-desc">一言坂に刻まれた戦国の殿戦の記憶。</td><td class="col-date"><time datetime="2026-06-11">2026.06.11</time></td></tr>
+        <tr data-themes="神社仏閣" data-page="2" hidden><td class="col-no">85</td><td class="col-title"><a href="/t002.html">行興寺と熊野（ゆや）の長藤</a></td><td class="col-theme">社寺</td><td class="col-desc">熊野御前ゆかりの行興寺と国天然記念物の長藤。</td><td class="col-date"><time datetime="2026-06-10">2026.06.10</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">86</td><td class="col-title"><a href="/t001.html">銚子塚古墳と、遠江を治めた王の眠り</a></td><td class="col-theme">記憶</td><td class="col-desc">県内有数の前方後円墳・銚子塚古墳。</td><td class="col-date"><time datetime="2026-06-09">2026.06.09</time></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <noscript><style>.district-articles tr[hidden]{display:table-row !important}</style></noscript>
+
+  <nav class="article-pager" aria-label="記事一覧のページ送り">
+    <button type="button" data-page-prev disabled>前へ</button>
+    <ol class="pager-nums"><li><button type="button" class="is-current" aria-current="page" data-page-to="1">1</button></li><li><button type="button" data-page-to="2">2</button></li></ol>
+    <button type="button" data-page-next>次へ</button>
+    <p class="pager-status">1〜50件目／全86件（1／2ページ）</p>
+  </nav>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"豊田の記事一覧","itemListElement":[{"@type":"ListItem","position":1,"url":"https://iwata-monogatari.net/oishi-iwata-tochi-kiokuroku/04","name":"一言坂の撤退戦を土地から読む - 坂・沼・提灯野が家康を救った日"},{"@type":"ListItem","position":2,"url":"https://iwata-monogatari.net/t067.html","name":"磐田で生まれたプチヴェールから産業の記憶を読む"},{"@type":"ListItem","position":3,"url":"https://iwata-monogatari.net/t068.html","name":"熊野伝統芸能館に残る信仰と文化の記憶"},{"@type":"ListItem","position":4,"url":"https://iwata-monogatari.net/c100.html","name":"平氏と遠江国司 ── 平重盛の一族と磐田"},{"@type":"ListItem","position":5,"url":"https://iwata-monogatari.net/t044.html","name":"「町内史跡めぐり」60選 ── 昭和53年、豊田町郷土を研究する会が歩いた記憶の地図"},{"@type":"ListItem","position":6,"url":"https://iwata-monogatari.net/t045.html","name":"天竜川池田の渡船 ── 家康の証文から始まった渡し場300年の記憶"},{"@type":"ListItem","position":7,"url":"https://iwata-monogatari.net/t046.html","name":"天竜川に架けられた船橋 ── 新田義貞から朝鮮通信使まで"},{"@type":"ListItem","position":8,"url":"https://iwata-monogatari.net/t047.html","name":"渡船を支えた助郷たち ── 定助郷・大助郷と助船・助人足制度"},{"@type":"ListItem","position":9,"url":"https://iwata-monogatari.net/t048.html","name":"渡船経済のしくみ ── 船賃の分配と船勧進物、堤防修理"},{"@type":"ListItem","position":10,"url":"https://iwata-monogatari.net/t049.html","name":"大名と渡船の特約 ── 紀州藩・尾張藩・仙台藩と池田村渡船方"},{"@type":"ListItem","position":11,"url":"https://iwata-monogatari.net/t050.html","name":"大通行と池田の渡船場 ── 琉球使節から見付宿の歎願まで"},{"@type":"ListItem","position":12,"url":"https://iwata-monogatari.net/t051.html","name":"外国船の来日と渡船への影響 ── ラクスマンから幕末の動揺まで"},{"@type":"ListItem","position":13,"url":"https://iwata-monogatari.net/t052.html","name":"天竜川の氾濫と仮渡船 ── 文化13年・文政11年の大洪水"},{"@type":"ListItem","position":14,"url":"https://iwata-monogatari.net/t053.html","name":"池田荘の条里制と立券文書 ── 微高地から復元する荘域"},{"@type":"ListItem","position":15,"url":"https://iwata-monogatari.net/t054.html","name":"こひめっこの墓 ── 赤池に400年伝わる、真田の姫の言い伝え"},{"@type":"ListItem","position":16,"url":"https://iwata-monogatari.net/t055.html","name":"帯金家長屋門 ── 家康を助けた恩義に由来する姓"},{"@type":"ListItem","position":17,"url":"https://iwata-monogatari.net/t056.html","name":"少林寺跡の大イチョウ ── 廃寺に残る樹齢300年の巡礼の記憶"},{"@type":"ListItem","position":18,"url":"https://iwata-monogatari.net/t057.html","name":"万能橋と十分一税一揆 ── 安政4年、3千余人が集結した大騒動"},{"@type":"ListItem","position":19,"url":"https://iwata-monogatari.net/t058.html","name":"西之島学校跡 ── 「遠州の三大学校」に数えられた洋風校舎"},{"@type":"ListItem","position":20,"url":"https://iwata-monogatari.net/t059.html","name":"皆川陣屋跡と稲荷山 ── 1800石を治めた旗本、皆川氏の記憶"}]}</script>
+</section>
+<!-- district-articles:end -->
+
 
 <!-- 優先3：時間の道しるべ -->
 <h2>どこから読むか迷ったら ── 時間の道しるべ</h2>
@@ -449,95 +543,7 @@ details.acc[open] summary{margin-bottom:.8em}
   </div>
 </footer>
 
-<script>
-(function(){
-  var DISTRICT_ID = 'toyoda';
-  var THEME_MAP = {
-    'shiryo':'史料','reference-list':'史料',
-    'old-map':'古地図','old-photo':'古地図',
-    'village-history':'町村沿革',
-    'shrine-temple':'神社仏閣','temple':'神社仏閣',
-    'festival':'祭り',
-    'road-traffic':'街道・交通','railway':'街道・交通','transportation':'街道・交通',
-    'architecture':'建物・古民家',
-    'school':'学校','education':'学校',
-    'life':'暮らし','agriculture':'暮らし','industry':'暮らし','water':'暮らし','craft':'暮らし','mingei':'暮らし',
-    'land-memory':'土地の記憶','place-name':'土地の記憶','terrain':'土地の記憶','archaeology':'土地の記憶'
-  };
-  var CHIPS = ['すべて','史料','古地図','町村沿革','神社仏閣','祭り','街道・交通','建物・古民家','学校','暮らし','土地の記憶'];
-
-  function shuffle(arr){
-    for (var i = arr.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
-    }
-    return arr;
-  }
-
-  fetch('/data/pages.json?t=' + new Date().getTime())
-    .then(function(res){ return res.json(); })
-    .then(function(data){
-      var all = (data.pages || []).filter(function(p){
-        return (p.district || []).indexOf(DISTRICT_ID) !== -1 && p.status === 'published';
-      });
-      var withDate = all.filter(function(p){ return p.published_at; });
-      var withoutDate = all.filter(function(p){ return !p.published_at; });
-      withDate.sort(function(a,b){ return a.published_at < b.published_at ? 1 : (a.published_at > b.published_at ? -1 : 0); });
-      var newest = withDate.slice(0, 3);
-      var rest = withDate.slice(3).concat(withoutDate);
-      shuffle(rest);
-      var articles = newest.concat(rest);
-
-      function chipFor(p){
-        var themes = p.themes || [];
-        for (var i=0;i<themes.length;i++){
-          if (THEME_MAP[themes[i]]) return THEME_MAP[themes[i]];
-        }
-        return null;
-      }
-
-      var grid = document.getElementById('grid');
-      var count = document.getElementById('count');
-      if (!grid) return;
-      grid.innerHTML = '';
-      articles.forEach(function(p){
-        var cat = chipFor(p);
-        var div = document.createElement('div');
-        div.className = 'article-card';
-        if (cat) div.setAttribute('data-cat', cat);
-        var tagText = (p.section || cat || '');
-        div.innerHTML = '<span class="tag">'+ (tagText ? tagText : '') +'</span>' +
-          '<a href="/' + p.url + '">' + p.title + '</a>' +
-          (p.summary ? '<p>' + p.summary + '</p>' : '');
-        grid.appendChild(div);
-      });
-      if (count) count.textContent = articles.length;
-
-      var chipsWrap = document.getElementById('chips');
-      if (chipsWrap) {
-        var chipEls = chipsWrap.querySelectorAll('.chip');
-        chipEls.forEach(function(c){
-          c.addEventListener('click', function(){
-            chipEls.forEach(function(x){ x.classList.remove('active'); });
-            c.classList.add('active');
-            var f = c.dataset.f;
-            var n = 0;
-            grid.querySelectorAll('.article-card').forEach(function(card){
-              var show = (f === 'all' || card.getAttribute('data-cat') === f);
-              card.classList.toggle('hidden', !show);
-              if (show) n++;
-            });
-            if (count) count.textContent = n;
-          });
-        });
-      }
-    })
-    .catch(function(){
-      var grid = document.getElementById('grid');
-      if (grid) grid.innerHTML = '<p class="article-loading">記事一覧の読み込みに失敗しました。時間をおいて再度お試しください。</p>';
-    });
-})();
-</script>
 <script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="iwata-monogatari" data-fujigaoka-analytics="true"></script>
+<script defer src="/assets/js/district-articles.js?v=7"></script>
 </body>
 </html>

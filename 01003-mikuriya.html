@@ -11,13 +11,13 @@
 <meta name="description" content="磐田物語の御厨地区入口ページ。伊勢神宮領「鎌田御厨」に由来する地名、鎌田神明宮、御厨古墳群など、御厨地区の歴史読み物・記事一覧と、文化財・史跡、村の成り立ちへの入口をまとめた地区ポータルです。">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#fffdf7">
-<link rel="canonical" href="https://iwata-monogatari.net/01003-mikuriya.html">
+<link rel="canonical" href="https://iwata-monogatari.net/01003-mikuriya">
 <meta property="og:title" content="御厨地区｜磐田物語">
 <meta property="og:description" content="伊勢神宮領 鎌田御厨に由来する御厨地区の歴史読み物・文化財・史跡・成り立ちをまとめた地区ポータル。">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="磐田物語">
-<meta property="og:url" content="https://iwata-monogatari.net/01003-mikuriya.html">
+<meta property="og:url" content="https://iwata-monogatari.net/01003-mikuriya">
 <meta property="og:image" content="https://iwata-monogatari.net/saguchi/img/hk-3.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="御厨地区｜磐田物語">
@@ -27,6 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/district-articles.css?v=7">
 <style>
 :root{
   --paper:#fffdf7; --ink:#1f3a48; --ink-soft:#5b6b74;
@@ -97,17 +98,6 @@ details.acc[open] summary{margin-bottom:.8em}
 .enkaku-flow .flow .yr{font-weight:400;font-size:.78rem;color:var(--ink-soft)}
 .more-center{text-align:center;margin-top:1em}
 
-.filter-chips{display:flex;flex-wrap:wrap;gap:.4em;margin:0 0 1.1em}
-.chip{font-size:.78rem;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:.25em 1em;cursor:pointer;color:var(--ink-soft)}
-.chip.active{background:var(--district);border-color:var(--district);color:#fff;font-weight:700}
-.article-count{font-size:.8rem;color:var(--ink-soft);margin-bottom:.8em}
-.article-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9em}
-.article-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:.9em 1em;display:flex;flex-direction:column;gap:.3em}
-.article-card .tag{font-size:.7rem;font-weight:700;color:var(--district)}
-.article-card a{font-weight:700;font-size:.92rem;line-height:1.6}
-.article-card p{font-size:.78rem;color:var(--ink-soft)}
-.article-card.hidden{display:none}
-.article-loading{font-size:.85rem;color:var(--ink-soft)}
 
 .cta-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.3em 1.2em;text-align:center;margin-top:1.2em}
 .cta-box p{font-size:.88rem;color:var(--ink-soft)}
@@ -143,7 +133,6 @@ details.acc[open] summary{margin-bottom:.8em}
 
 @media(max-width:720px){
   .theme-cards{grid-template-columns:1fr}
-  .article-grid{grid-template-columns:1fr}
   .footer-blocks{grid-template-columns:1fr}
   h1{font-size:1.55rem}
 }
@@ -213,25 +202,116 @@ details.acc[open] summary{margin-bottom:.8em}
   </div>
 </div>
 
-<!-- 優先2：記事を探す -->
+<!-- district-articles:start -->
 <h2>御厨の記事を探す</h2>
 <p class="section-lead">御厨地区に関係する読み物・特集・史料ページを、新着を上にして並べています。テーマ別に絞り込むこともできます。</p>
 
-<div class="filter-chips" id="chips">
-  <button class="chip active" data-f="all">すべて</button>
-  <button class="chip" data-f="史料">史料</button>
-  <button class="chip" data-f="古地図">古地図</button>
-  <button class="chip" data-f="町村沿革">町村沿革</button>
-  <button class="chip" data-f="神社仏閣">神社仏閣</button>
-  <button class="chip" data-f="祭り">祭り</button>
-  <button class="chip" data-f="街道・交通">街道・交通</button>
-  <button class="chip" data-f="建物・古民家">建物・古民家</button>
-  <button class="chip" data-f="学校">学校</button>
-  <button class="chip" data-f="暮らし">暮らし</button>
-  <button class="chip" data-f="土地の記憶">土地の記憶</button>
-</div>
-<p class="article-count">表示中：<span id="count">0</span>件</p>
-<div class="article-grid" id="grid"><p class="article-loading">記事一覧を読み込んでいます…</p></div>
+<section class="district-articles" id="articles" data-district="mikuriya">
+  <div class="article-filter" role="group" aria-label="テーマで絞り込む">
+    <button type="button" class="is-active" data-theme="all" aria-pressed="true">すべて</button>
+    <button type="button" data-theme="史料" aria-pressed="false">史料</button>
+    <button type="button" data-theme="古地図" aria-pressed="false">古地図</button>
+    <button type="button" data-theme="町村沿革" aria-pressed="false">町村沿革</button>
+    <button type="button" data-theme="神社仏閣" aria-pressed="false">神社仏閣</button>
+    <button type="button" data-theme="祭り" aria-pressed="false">祭り</button>
+    <button type="button" data-theme="街道・交通" aria-pressed="false">街道・交通</button>
+    <button type="button" data-theme="建物・古民家" aria-pressed="false">建物・古民家</button>
+    <button type="button" data-theme="学校" aria-pressed="false">学校</button>
+    <button type="button" data-theme="暮らし" aria-pressed="false">暮らし</button>
+    <button type="button" data-theme="土地の記憶" aria-pressed="false">土地の記憶</button>
+  </div>
+
+  <p class="article-count" aria-live="polite">表示中：<span data-count>66</span>件</p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <caption class="visually-hidden">御厨地区の記事一覧</caption>
+      <thead>
+        <tr><th scope="col" class="col-no">No.</th><th scope="col" class="col-title">タイトル</th><th scope="col" class="col-theme">テーマ</th><th scope="col" class="col-desc">概要</th><th scope="col" class="col-date">公開日</th></tr>
+      </thead>
+      <tbody>
+        <tr data-themes="町村沿革 神社仏閣 土地の記憶" data-page="1"><td class="col-no">1</td><td class="col-title"><a href="/u039.html">田原地区のお宮とお寺 ── 集落のまとまりを映す神社・寺院</a></td><td class="col-theme">沿革／社寺／記憶</td><td class="col-desc">『田原の史話』をもとに、田原・玉越・西島など旧田原村域の神社と寺院を、集落のまと…</td><td class="col-date"><time datetime="2026-07-13">2026.07.13</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">2</td><td class="col-title"><a href="/u040.html">田原地区の集落と地名 ── 田原・玉越・西島・彦島・三ケ野・明ケ島を読む</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">『田原の史話』をもとに、田原・玉越・西島・彦島・三ケ野・明ケ島の各集落を、旧田原…</td><td class="col-date"><time datetime="2026-07-13">2026.07.13</time></td></tr>
+        <tr data-themes="町村沿革 学校 暮らし" data-page="1"><td class="col-no">3</td><td class="col-title"><a href="/u041.html">田原地区の学校史 ── 寺子屋・西島学校から田原小学校へ</a></td><td class="col-theme">沿革／学校／暮らし</td><td class="col-desc">『田原の史話』をもとに、田原地区の寺子屋、明治初期の仮校舎、西島学校、田原小学校…</td><td class="col-date"><time datetime="2026-07-13">2026.07.13</time></td></tr>
+        <tr data-themes="学校 暮らし 土地の記憶" data-page="1"><td class="col-no">4</td><td class="col-title"><a href="/u042.html">旧田原小学校の記憶 ── 校舎火災・校庭・ピアノ・飛行機見物</a></td><td class="col-theme">学校／暮らし／記憶</td><td class="col-desc">『田原の史話』に残る旧田原小学校の回想をもとに、校舎火災、校庭、ピアノ、初めての…</td><td class="col-date"><time datetime="2026-07-13">2026.07.13</time></td></tr>
+        <tr data-themes="学校 暮らし 土地の記憶" data-page="1"><td class="col-no">5</td><td class="col-title"><a href="/u043.html">田原の地震と戦争の記憶 ── 東南海地震・艦砲射撃・機銃掃射</a></td><td class="col-theme">学校／暮らし／記憶</td><td class="col-desc">『田原の史話』に残る東南海地震、艦砲射撃、機銃掃射の回想から、田原小学校と地域の…</td><td class="col-date"><time datetime="2026-07-13">2026.07.13</time></td></tr>
+        <tr data-themes="神社仏閣" data-page="1"><td class="col-no">6</td><td class="col-title"><a href="/c100.html">平氏と遠江国司 ── 平重盛の一族と磐田</a></td><td class="col-theme">社寺</td><td class="col-desc">平重盛の遠江国司就任を軸に、蓮光寺・連城寺・熊野御前へ残る平氏の記憶を、政治史と…</td><td class="col-date"><time datetime="2026-07-12">2026.07.12</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">7</td><td class="col-title"><a href="/c101.html">源平争乱と遠江 ── 頼朝の挙兵から遠江支配へ</a></td><td class="col-theme">記憶</td><td class="col-desc">治承4年の頼朝挙兵から安田義定の遠江国司就任、鎌田御厨をめぐる争い、千手前伝承ま…</td><td class="col-date"><time datetime="2026-07-12">2026.07.12</time></td></tr>
+        <tr data-themes="町村沿革 暮らし" data-page="1"><td class="col-no">8</td><td class="col-title"><a href="/c102.html">地租改正 ── 地券が変えた磐田の土地所有</a></td><td class="col-theme">沿革／暮らし</td><td class="col-desc">地券発行、土地丈量、地租改正反対運動、松方デフレから、近代的土地所有と磐田経済の…</td><td class="col-date"><time datetime="2026-07-12">2026.07.12</time></td></tr>
+        <tr data-themes="町村沿革" data-page="1"><td class="col-no">9</td><td class="col-title"><a href="/u036.html">御厨の成り立ち ── 沿革年表・学校区・大字</a></td><td class="col-theme">沿革</td><td class="col-desc">御厨地区の沿革年表・旧町村と大字の対応・現在の学校区と主な大字をまとめた資料ペー…</td><td class="col-date"><time datetime="2026-07-10">2026.07.10</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">10</td><td class="col-title"><a href="/u037.html">堂山古墳 ── 全長110m、静岡県最大級の前方後円墳</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市御厨・東貝塚の堂山古墳。古墳時代中期、全長約110mの静岡県最大級の前方後…</td><td class="col-date"><time datetime="2026-07-10">2026.07.10</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">11</td><td class="col-title"><a href="/u038.html">二子塚古墳 ── 三ケ野台に残る、市指定の馬具と馬形埴輪</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市三ケ野台の二子塚古墳。古墳時代中期末に築かれ、朝鮮半島から伝わった馬の飼育…</td><td class="col-date"><time datetime="2026-07-10">2026.07.10</time></td></tr>
+        <tr data-themes="街道・交通 建物・古民家 暮らし 土地の記憶" data-page="1"><td class="col-no">12</td><td class="col-title"><a href="/c090.html">磐田市の旧映画館を歩く — 見付・中泉から郊外型シネコンまで</a></td><td class="col-theme">交通／建物／暮らし／記憶</td><td class="col-desc">見付・中泉・掛塚・福田・豊浜にあった芝居小屋と映画館の記憶を、駅前、商店街、テレ…</td><td class="col-date"><time datetime="2026-07-07">2026.07.07</time></td></tr>
+        <tr data-themes="街道・交通 建物・古民家 暮らし 土地の記憶" data-page="1"><td class="col-no">13</td><td class="col-title"><a href="/c091.html">磐田市の閉鎖したボウリング場を読む — 日活ゴールデンハイツと磐田グランドボウル</a></td><td class="col-theme">交通／建物／暮らし／記憶</td><td class="col-desc">三ヶ野の日活ゴールデンハイツと中野の磐田グランドボウルを手がかりに、ボウリングブ…</td><td class="col-date"><time datetime="2026-07-07">2026.07.07</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">14</td><td class="col-title"><a href="/u032.html">古墳と川・海・道 ── 磐田海・大乃浦と、東海道以前の水運の記憶</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田原台地に古墳を築いた有力者は何を通じて鉄や鏡を得たのか。磐田海・大乃浦、東海…</td><td class="col-date"><time datetime="2026-07-05">2026.07.05</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">15</td><td class="col-title"><a href="/u033.html">消えた古墳・塚地名の調査 ── 経塚古墳・堂山古墳と、名だけが残る塚</a></td><td class="col-theme">記憶</td><td class="col-desc">東海道線工事や明治の土取りで失われた古墳がある。経塚古墳・堂山古墳の記録と、「塚…</td><td class="col-date"><time datetime="2026-07-05">2026.07.05</time></td></tr>
+        <tr data-themes="史料" data-page="1"><td class="col-no">16</td><td class="col-title"><a href="/u034.html">発掘調査報告書から読む磐田の古代 ── 一次資料の探し方と読み方</a></td><td class="col-theme">史料</td><td class="col-desc">磐田の古墳を語る記事の多くは発掘調査報告書という一次資料に支えられている。全国遺…</td><td class="col-date"><time datetime="2026-07-05">2026.07.05</time></td></tr>
+        <tr data-themes="街道・交通" data-page="1"><td class="col-no">17</td><td class="col-title"><a href="/u035.html">三ヶ野坂・物見の松・本多忠勝伝承 ── 七つの時代の道が重なる坂</a></td><td class="col-theme">交通</td><td class="col-desc">三ケ野坂には鎌倉から平成まで七つの時代の道筋が重なって残る。全国的にも珍しい「七…</td><td class="col-date"><time datetime="2026-07-05">2026.07.05</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">18</td><td class="col-title"><a href="/k044.html">磐田原台地と古墳分布 ── 台地の縁に眠る、時代の異なる王たち</a></td><td class="col-theme">記憶</td><td class="col-desc">新豊院山古墳群・御厨古墳群・兜塚古墳など、磐田原台地の縁に点在する古墳群を俯瞰し…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">19</td><td class="col-title"><a href="/u031.html">西貝塚・明ヶ島・大原周辺の遺跡群 ── 磐田原台地南東縁の考古学的景観</a></td><td class="col-theme">記憶</td><td class="col-desc">縄文の貝塚群・西貝塚を中心に、磐田原台地南東縁に広がる遺跡群を俯瞰する。城之崎遺…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="祭り" data-page="1"><td class="col-no">20</td><td class="col-title"><a href="/matsuri-kamada-mushifuji.html">幼児の虫封じ</a></td><td class="col-theme">祭り</td><td class="col-desc">鎌田神明宮に伝わる幼児の虫封じを、人型、川へ流す作法、満願の鎌奉納から読む。</td><td class="col-date"><time datetime="2026-06-29">2026.06.29</time></td></tr>
+        <tr data-themes="祭り" data-page="1"><td class="col-no">21</td><td class="col-title"><a href="/matsuri-kamada-sengu.html">御厨十七郷十九社と式年遷宮</a></td><td class="col-theme">祭り</td><td class="col-desc">鎌田神明宮大祭を、御厨十七郷十九社、十月の摂社祭、式年遷宮、御厨古墳群の重層性か…</td><td class="col-date"><time datetime="2026-06-29">2026.06.29</time></td></tr>
+        <tr data-themes="祭り" data-page="1"><td class="col-no">22</td><td class="col-title"><a href="/matsuri-kamada-urayasu.html">浦安の舞</a></td><td class="col-theme">祭り</td><td class="col-desc">鎌田神明宮大祭で奉納される浦安の舞を、昭和15年の近代神楽、装束、檜扇・鈴、児童…</td><td class="col-date"><time datetime="2026-06-29">2026.06.29</time></td></tr>
+        <tr data-themes="祭り" data-page="1"><td class="col-no">23</td><td class="col-title"><a href="/matsuri-kamada-yatai.html">御厨六地区の屋台と囃子</a></td><td class="col-theme">祭り</td><td class="col-desc">鎌田神明宮大祭に集う御厨六地区の屋台と囃子を、地区、形態、彫刻、練習、餅投げから…</td><td class="col-date"><time datetime="2026-06-29">2026.06.29</time></td></tr>
+        <tr data-themes="祭り" data-page="1"><td class="col-no">24</td><td class="col-title"><a href="/matsuri-kamada.html">鎌田神明宮大祭【特集】</a></td><td class="col-theme">祭り</td><td class="col-desc">鎌田神明宮大祭を、鎌田御厨、十七郷十九社、式年遷宮、虫封じ、御厨六地区の屋台、浦…</td><td class="col-date"><time datetime="2026-06-28">2026.06.28</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">25</td><td class="col-title"><a href="/u030.html">磐田の米作りのはじまり｜弥生のムラはどこに田を開いたのか</a></td><td class="col-theme">記憶</td><td class="col-desc">平成6年度磐田市歴史セミナー資料集 第2回「磐田の米作のはじまり」をもとに、弥生…</td><td class="col-date"><time datetime="2026-06-28">2026.06.28</time></td></tr>
+        <tr data-themes="町村沿革 街道・交通 土地の記憶" data-page="1"><td class="col-no">26</td><td class="col-title"><a href="/u018.html">田原地区総論 ── 台地・旧道・田園がつくった磐田東部の暮らし</a></td><td class="col-theme">沿革／交通／記憶</td><td class="col-desc">台地縁・谷筋・旧道・水の得やすさが重なった場所に集落が寄った、田原地区を地形・水…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="神社仏閣 街道・交通 土地の記憶" data-page="1"><td class="col-no">27</td><td class="col-title"><a href="/u019.html">三ヶ野坂から西島・明ヶ島へ ── 道と寺社で読む田原地区の記憶</a></td><td class="col-theme">社寺／交通／記憶</td><td class="col-desc">坂・「島」地名・寺社・旧道を手がかりに、移動と信仰と農地の関係を読み解く田原地区…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="町村沿革 街道・交通 土地の記憶" data-page="1"><td class="col-no">28</td><td class="col-title"><a href="/u020.html">御厨地区総論 ── 古い地名と新しい暮らしが重なる磐田東部</a></td><td class="col-theme">沿革／交通／記憶</td><td class="col-desc">古い地名の重みと、御厨駅・住宅地・生活圏が重なる現代の御厨を、地形・寺社・道から…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">29</td><td class="col-title"><a href="/u021.html">南御厨地区総論 ── 低地・農地・道がつくった南側の生活圏</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">御厨の付属ではなく、低地・水利・農地・寺社のまとまりを持つ独立した生活圏として南…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">30</td><td class="col-title"><a href="/u022.html">御厨と南御厨を分けるもの、つなぐもの ── 地名・水・道・暮らしの比較史</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">同じ地名圏にある差異と連続性を、地形・水利・交通・生活圏から比較する横断ページ。</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="町村沿革 神社仏閣 土地の記憶" data-page="1"><td class="col-no">31</td><td class="col-title"><a href="/u023.html">西貝地区総論 ── 旧集落・寺社・開発が重なる磐田の東側</a></td><td class="col-theme">沿革／社寺／記憶</td><td class="col-desc">西貝塚・西之島・上南田・安久路・城之崎。旧農村と近代の都市化・工業化が重なる西貝…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">32</td><td class="col-title"><a href="/u024.html">西貝塚から安久路・城之崎へ ── 田園から市街地へ変わった地域の記憶</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">変化の速い地域ほど記憶は失われやすい。開発・宅地化の層が重なる西貝塚・安久路・城…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">33</td><td class="col-title"><a href="/u025.html">三角縁四神四獣鏡 ── 新貝の鏡を、御厨古墳群とヤマト王権の接点として読み直す</a></td><td class="col-theme">記憶</td><td class="col-desc">県指定・考古資料。新貝に伝わる文化財を、公式指定情報と御厨地区の地域史から読み直…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">34</td><td class="col-title"><a href="/u026.html">堂山古墳出土遺物 ── 堂山古墳の副葬品から、御厨の古墳群と地域首長の姿をたどる</a></td><td class="col-theme">記憶</td><td class="col-desc">県指定・考古資料。堂山古墳周辺（c021所在地表記は見付）に伝わる文化財を、公式…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">35</td><td class="col-title"><a href="/u027.html">御厨古墳群 ── 全長107mの松林山古墳と、卑弥呼の鏡と呼ばれる三角縁神獣鏡</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市新貝・鎌田の御厨古墳群。全長107m・県内第4位の松林山古墳をはじめ、高根…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="神社仏閣 土地の記憶" data-page="1"><td class="col-no">36</td><td class="col-title"><a href="/u028.html">医王寺庭園及び参道 ── 鎌田の名勝庭園と参道空間を歩く</a></td><td class="col-theme">社寺／記憶</td><td class="col-desc">市指定・名勝。鎌田・医王寺の庭園と参道を、公式指定情報と御厨地区の地域史から読み…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">37</td><td class="col-title"><a href="/u029.html">袴田家のマキ ── 鎌田の屋敷林に立つイヌマキと遠州の風土</a></td><td class="col-theme">記憶</td><td class="col-desc">市指定・天然記念物。鎌田・袴田家の屋敷木マキを、公式指定情報と御厨地区の地域史か…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">38</td><td class="col-title"><a href="/c027.html">映画『お別れの歌』と磐田の風景</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市内で撮影された映画『お別れの歌』を、今の磐田が映像として残された文化的出来…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 暮らし 土地の記憶" data-page="1"><td class="col-no">39</td><td class="col-title"><a href="/c028.html">磐田用水の歩み</a></td><td class="col-theme">沿革／暮らし／記憶</td><td class="col-desc">磐田用水を天竜川、社山疏水、幹線改良、農地、土地改良区の流れで読む総論ページ。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 暮らし 土地の記憶" data-page="1"><td class="col-no">40</td><td class="col-title"><a href="/c029.html">社山疏水の構想</a></td><td class="col-theme">沿革／暮らし／記憶</td><td class="col-desc">社山疏水の構想と犬塚祐一郎、明治期の水利計画、地域有志の調整を読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 暮らし 土地の記憶" data-page="1"><td class="col-no">41</td><td class="col-title"><a href="/c030.html">磐田用水幹線改良事業</a></td><td class="col-theme">沿革／暮らし／記憶</td><td class="col-desc">昭和期の幹線改良事業を、取水難、突貫工事、昭和19年の初通水、用水安定化の流れで…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 暮らし 土地の記憶" data-page="1"><td class="col-no">42</td><td class="col-title"><a href="/c031.html">天竜川下流農業水利事業</a></td><td class="col-theme">沿革／暮らし／記憶</td><td class="col-desc">船明ダム、河口頭首工、パイプライン化、国営・県営・団体営事業を整理する。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 暮らし 土地の記憶" data-page="1"><td class="col-no">43</td><td class="col-title"><a href="/c032.html">磐田用水東部土地改良区</a></td><td class="col-theme">沿革／暮らし／記憶</td><td class="col-desc">磐田用水東部土地改良区の設立、管理区域、年表、連合、現代的意義を整理する。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">44</td><td class="col-title"><a href="/u004.html">城之崎遺跡 - 磐田原台地南部に残された弥生の住まいと古墳の記憶</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">磐田市西貝塚の城之崎遺跡を、弥生時代後期の高地性集落、城之崎2号墳・3号墳、古墳…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">45</td><td class="col-title"><a href="/u005.html">新貝 ── 古代国分寺窯跡の記憶と中世新貝庄の開発史</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市御厨地区の「新貝（しんがい）」の歴史を深掘り。奈良時代に聖武天皇が発願した…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">46</td><td class="col-title"><a href="/u006.html">東脇・新出 ── 今之浦東岸の干拓と近世新田の誕生</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市御厨地区の「東脇」「新出」の歴史を解説。かつて今之浦潟（潟湖）の東岸に位置…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">47</td><td class="col-title"><a href="/u007.html">稗原 ── 雑穀の原野から豊かな水田地帯への歩みと水利</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市御厨地区の「稗原（ひえばら）」の歴史を解説。かつて水利が得られず雑穀の稗（…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">48</td><td class="col-title"><a href="/u008.html">大立野 ── 中世の名主開発と名残を留める古い郷割</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市御厨・田原地区の「大立野（おおたちの）」の歴史を解説。中世における有力名主…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">49</td><td class="col-title"><a href="/u009.html">安久路 ── 湿地帯「悪路」から美しき田園「阿久路」への土木史</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市御厨地区の「安久路（あくじ）」の歴史を解説。平安・鎌倉期の古文書に登場する…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="街道・交通" data-page="1"><td class="col-no">50</td><td class="col-title"><a href="/u010.html">三ケ野・三ケ野坂 ── 東海道の難所・坂越えの賑わいと一里塚の記憶</a></td><td class="col-theme">交通</td><td class="col-desc">磐田市東部の「三ケ野（みかの）」「三ケ野坂（みかのざか）」の歴史を解説。江戸時代…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">51</td><td class="col-title"><a href="/u011.html">富士見台 ── 磐田原台地南端の景勝地と近代開拓の歴史</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市東部に位置する「富士見台（ふじみだい）」の歴史を解説。磐田原台地の最南端に…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">52</td><td class="col-title"><a href="/u012.html">東新屋 ── 新たな入植地「新屋」の成立と近世の生活圏</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市御厨地区の「東新屋（ひがしあらや）」の歴史を解説。「新屋（あらや＝新しい家…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">53</td><td class="col-title"><a href="/u013.html">和口 ── 河川の合流点に拓かれた「和の口」の民俗と治水</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市御厨地区の「和口（わぐち）」の歴史を解説。今之浦川と太田川の支流が複雑に交…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="2" hidden><td class="col-no">54</td><td class="col-title"><a href="/u014.html">御厨駅と現代の御厨 ── 令和に蘇った古代「神領」の地名と未来への継承</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市御厨地区に2020年に開業した「JR御厨駅（みくりやえき）」。駅名として令…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革" data-page="2" hidden><td class="col-no">55</td><td class="col-title"><a href="/u015.html">御厨村の分立と再編 ── 明治27年、伊勢神領の村々が選択した自立の道</a></td><td class="col-theme">沿革</td><td class="col-desc">磐田市御厨地区の明治期の行政史を解説。明治22年（1889年）の町村制施行により…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革" data-page="2" hidden><td class="col-no">56</td><td class="col-title"><a href="/u016.html">南御厨村の誕生 ── 明治27年、南部平野への展開と独立村落の生活圏</a></td><td class="col-theme">沿革</td><td class="col-desc">磐田市南部の明治・大正期の行政史を解説。明治27年（1894年）、御厨村の南北対…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革" data-page="2" hidden><td class="col-no">57</td><td class="col-title"><a href="/u017.html">田原村の誕生 ── 磐田原台地東端の開墾と近代農村コミュニティの形成</a></td><td class="col-theme">沿革</td><td class="col-desc">磐田市東部の旧田原地区の明治・大正期の行政史を解説。明治22年（1889年）、磐…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="古地図 神社仏閣 祭り 街道・交通 土地の記憶" data-page="2" hidden><td class="col-no">58</td><td class="col-title"><a href="/c004.html">磐田タイムトラベル地図</a></td><td class="col-theme">地図／社寺／祭り／交通／記憶</td><td class="col-desc">古墳、遠江国府、国分寺、見付宿、祭礼、湊、学校を固定SVG地図と時代別カードでた…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 神社仏閣 街道・交通 土地の記憶" data-page="2" hidden><td class="col-no">59</td><td class="col-title"><a href="/c009.html">磐田の地名をたどる</a></td><td class="col-theme">沿革／社寺／交通／記憶</td><td class="col-desc">見付、国府台、中泉、二之宮、鎌田、御厨など、磐田の地名に残る国府・街道・水・信仰…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">60</td><td class="col-title"><a href="/c010.html">磐田郡という広がり ── 旧磐田市の外側にあった村々</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">古代の郡、明治の郡制、昭和の編入合併をつなぎ、旧磐田市の外側にあった村々を整理す…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="古地図 町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">61</td><td class="col-title"><a href="/c011.html">古地図に村の名を探す ── 戸別明細図と旧高帳の読み合わせ</a></td><td class="col-theme">地図／沿革／記憶</td><td class="col-desc">旧高帳、戸別明細図、現在の公図を読み合わせ、消えた村名や字名を調べる方法を整理す…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">62</td><td class="col-title"><a href="/c017.html">旧磐田市の成り立ち ── 村から町、町から市へ</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">江戸期の村名、町村制、磐田町成立、市制施行、2005年合併までを地名の記憶として…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">63</td><td class="col-title"><a href="/c024.html">今之浦と大之浦</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">今之浦を、大之浦、万葉集、湿地・水田、今之浦川、土地区画整理が重なる水辺の記憶と…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="2" hidden><td class="col-no">64</td><td class="col-title"><a href="/u001.html">「貝塚」という地名 ── 西貝塚・東貝塚と消えた海岸線</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">縄文海進、磐田原台地、埋蔵文化財から、西貝塚・東貝塚という地名の記憶を読む。</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 神社仏閣 土地の記憶" data-page="2" hidden><td class="col-no">65</td><td class="col-title"><a href="/u002.html">鎌田御厨 ── 伊勢神宮領だった村の名残</a></td><td class="col-theme">沿革／社寺／記憶</td><td class="col-desc">御厨地名、伊勢神宮領、鎌田神明宮、御厨地区の旧村と現代地名を読み解く。</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="神社仏閣" data-page="2" hidden><td class="col-no">66</td><td class="col-title"><a href="/u003.html">鎌田神明宮 ── 遠州のお伊勢さま</a></td><td class="col-theme">社寺</td><td class="col-desc">遠州のお伊勢さまと親しまれる鎌田神明宮。</td><td class="col-date"><time datetime="2026-06-14">2026.06.14</time></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <noscript><style>.district-articles tr[hidden]{display:table-row !important}</style></noscript>
+
+  <nav class="article-pager" aria-label="記事一覧のページ送り">
+    <button type="button" data-page-prev disabled>前へ</button>
+    <ol class="pager-nums"><li><button type="button" class="is-current" aria-current="page" data-page-to="1">1</button></li><li><button type="button" data-page-to="2">2</button></li></ol>
+    <button type="button" data-page-next>次へ</button>
+    <p class="pager-status">1〜50件目／全66件（1／2ページ）</p>
+  </nav>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"御厨の記事一覧","itemListElement":[{"@type":"ListItem","position":1,"url":"https://iwata-monogatari.net/u039.html","name":"田原地区のお宮とお寺 ── 集落のまとまりを映す神社・寺院"},{"@type":"ListItem","position":2,"url":"https://iwata-monogatari.net/u040.html","name":"田原地区の集落と地名 ── 田原・玉越・西島・彦島・三ケ野・明ケ島を読む"},{"@type":"ListItem","position":3,"url":"https://iwata-monogatari.net/u041.html","name":"田原地区の学校史 ── 寺子屋・西島学校から田原小学校へ"},{"@type":"ListItem","position":4,"url":"https://iwata-monogatari.net/u042.html","name":"旧田原小学校の記憶 ── 校舎火災・校庭・ピアノ・飛行機見物"},{"@type":"ListItem","position":5,"url":"https://iwata-monogatari.net/u043.html","name":"田原の地震と戦争の記憶 ── 東南海地震・艦砲射撃・機銃掃射"},{"@type":"ListItem","position":6,"url":"https://iwata-monogatari.net/c100.html","name":"平氏と遠江国司 ── 平重盛の一族と磐田"},{"@type":"ListItem","position":7,"url":"https://iwata-monogatari.net/c101.html","name":"源平争乱と遠江 ── 頼朝の挙兵から遠江支配へ"},{"@type":"ListItem","position":8,"url":"https://iwata-monogatari.net/c102.html","name":"地租改正 ── 地券が変えた磐田の土地所有"},{"@type":"ListItem","position":9,"url":"https://iwata-monogatari.net/u036.html","name":"御厨の成り立ち ── 沿革年表・学校区・大字"},{"@type":"ListItem","position":10,"url":"https://iwata-monogatari.net/u037.html","name":"堂山古墳 ── 全長110m、静岡県最大級の前方後円墳"},{"@type":"ListItem","position":11,"url":"https://iwata-monogatari.net/u038.html","name":"二子塚古墳 ── 三ケ野台に残る、市指定の馬具と馬形埴輪"},{"@type":"ListItem","position":12,"url":"https://iwata-monogatari.net/c090.html","name":"磐田市の旧映画館を歩く — 見付・中泉から郊外型シネコンまで"},{"@type":"ListItem","position":13,"url":"https://iwata-monogatari.net/c091.html","name":"磐田市の閉鎖したボウリング場を読む — 日活ゴールデンハイツと磐田グランドボウル"},{"@type":"ListItem","position":14,"url":"https://iwata-monogatari.net/u032.html","name":"古墳と川・海・道 ── 磐田海・大乃浦と、東海道以前の水運の記憶"},{"@type":"ListItem","position":15,"url":"https://iwata-monogatari.net/u033.html","name":"消えた古墳・塚地名の調査 ── 経塚古墳・堂山古墳と、名だけが残る塚"},{"@type":"ListItem","position":16,"url":"https://iwata-monogatari.net/u034.html","name":"発掘調査報告書から読む磐田の古代 ── 一次資料の探し方と読み方"},{"@type":"ListItem","position":17,"url":"https://iwata-monogatari.net/u035.html","name":"三ヶ野坂・物見の松・本多忠勝伝承 ── 七つの時代の道が重なる坂"},{"@type":"ListItem","position":18,"url":"https://iwata-monogatari.net/k044.html","name":"磐田原台地と古墳分布 ── 台地の縁に眠る、時代の異なる王たち"},{"@type":"ListItem","position":19,"url":"https://iwata-monogatari.net/u031.html","name":"西貝塚・明ヶ島・大原周辺の遺跡群 ── 磐田原台地南東縁の考古学的景観"},{"@type":"ListItem","position":20,"url":"https://iwata-monogatari.net/matsuri-kamada-mushifuji.html","name":"幼児の虫封じ"}]}</script>
+</section>
+<!-- district-articles:end -->
+
 
 <!-- 優先3：時間の道しるべ -->
 <h2>どこから読むか迷ったら ── 時間の道しるべ</h2>
@@ -366,94 +446,7 @@ details.acc[open] summary{margin-bottom:.8em}
   </div>
 </footer>
 
-<script>
-(function(){
-  var DISTRICT_ID = 'mikuriya';
-  var THEME_MAP = {
-    'shiryo':'史料','reference-list':'史料',
-    'old-map':'古地図','old-photo':'古地図',
-    'village-history':'町村沿革',
-    'shrine-temple':'神社仏閣','temple':'神社仏閣',
-    'festival':'祭り',
-    'road-traffic':'街道・交通','railway':'街道・交通','transportation':'街道・交通',
-    'architecture':'建物・古民家',
-    'school':'学校','education':'学校',
-    'life':'暮らし','agriculture':'暮らし','industry':'暮らし','water':'暮らし','craft':'暮らし','mingei':'暮らし',
-    'land-memory':'土地の記憶','place-name':'土地の記憶','terrain':'土地の記憶','archaeology':'土地の記憶'
-  };
-
-  function shuffle(arr){
-    for (var i = arr.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
-    }
-    return arr;
-  }
-
-  fetch('/data/pages.json?t=' + new Date().getTime())
-    .then(function(res){ return res.json(); })
-    .then(function(data){
-      var all = (data.pages || []).filter(function(p){
-        return (p.district || []).indexOf(DISTRICT_ID) !== -1 && p.status === 'published';
-      });
-      var withDate = all.filter(function(p){ return p.published_at; });
-      var withoutDate = all.filter(function(p){ return !p.published_at; });
-      withDate.sort(function(a,b){ return a.published_at < b.published_at ? 1 : (a.published_at > b.published_at ? -1 : 0); });
-      var newest = withDate.slice(0, 3);
-      var rest = withDate.slice(3).concat(withoutDate);
-      shuffle(rest);
-      var articles = newest.concat(rest);
-
-      function chipFor(p){
-        var themes = p.themes || [];
-        for (var i=0;i<themes.length;i++){
-          if (THEME_MAP[themes[i]]) return THEME_MAP[themes[i]];
-        }
-        return null;
-      }
-
-      var grid = document.getElementById('grid');
-      var count = document.getElementById('count');
-      if (!grid) return;
-      grid.innerHTML = '';
-      articles.forEach(function(p){
-        var cat = chipFor(p);
-        var div = document.createElement('div');
-        div.className = 'article-card';
-        if (cat) div.setAttribute('data-cat', cat);
-        var tagText = (p.section || cat || '');
-        div.innerHTML = '<span class="tag">'+ (tagText ? tagText : '') +'</span>' +
-          '<a href="/' + p.url + '">' + p.title + '</a>' +
-          (p.summary ? '<p>' + p.summary + '</p>' : '');
-        grid.appendChild(div);
-      });
-      if (count) count.textContent = articles.length;
-
-      var chipsWrap = document.getElementById('chips');
-      if (chipsWrap) {
-        var chipEls = chipsWrap.querySelectorAll('.chip');
-        chipEls.forEach(function(c){
-          c.addEventListener('click', function(){
-            chipEls.forEach(function(x){ x.classList.remove('active'); });
-            c.classList.add('active');
-            var f = c.dataset.f;
-            var n = 0;
-            grid.querySelectorAll('.article-card').forEach(function(card){
-              var show = (f === 'all' || card.getAttribute('data-cat') === f);
-              card.classList.toggle('hidden', !show);
-              if (show) n++;
-            });
-            if (count) count.textContent = n;
-          });
-        });
-      }
-    })
-    .catch(function(){
-      var grid = document.getElementById('grid');
-      if (grid) grid.innerHTML = '<p class="article-loading">記事一覧の読み込みに失敗しました。時間をおいて再度お試しください。</p>';
-    });
-})();
-</script>
 <script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="iwata-monogatari" data-fujigaoka-analytics="true"></script>
+<script defer src="/assets/js/district-articles.js?v=7"></script>
 </body>
 </html>

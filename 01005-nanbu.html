@@ -6,14 +6,14 @@
 <meta name="theme-color" content="#fffdf7">
 <title>南部地区｜磐田物語 ── 天竜川下流のまち・町村沿革・学校区・大字</title>
 <meta name="description" content="磐田物語の南部地区入口ページ。天竜川下流の平野に開けた、海寄りの暮らし・農地・集落・交通の歴史読み物、村の沿革、現在の学校区・大字をまとめた地区ポータルです。">
-<link rel="canonical" href="https://iwata-monogatari.net/01005-nanbu.html">
+<link rel="canonical" href="https://iwata-monogatari.net/01005-nanbu">
 <meta name="robots" content="index,follow">
 <meta property="og:site_name" content="磐田物語">
 <meta property="og:title" content="南部地区｜磐田物語">
 <meta property="og:description" content="天竜川下流の平野に開けた南部地区の歴史読み物・村の沿革・学校区・大字をまとめた地区ポータル。">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:url" content="https://iwata-monogatari.net/01005-nanbu.html">
+<meta property="og:url" content="https://iwata-monogatari.net/01005-nanbu">
 <meta property="og:image" content="https://iwata-monogatari.net/saguchi/img/hk-3.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico">
@@ -22,6 +22,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/district-articles.css?v=7">
 <style>
 :root{
   --paper:#fffdf7; --ink:#1f3a48; --ink-soft:#5b6b74;
@@ -92,17 +93,6 @@ details.acc[open] summary{margin-bottom:.8em}
 .enkaku-flow .flow .yr{font-weight:400;font-size:.78rem;color:var(--ink-soft)}
 .more-center{text-align:center;margin-top:1em}
 
-.filter-chips{display:flex;flex-wrap:wrap;gap:.4em;margin:0 0 1.1em}
-.chip{font-size:.78rem;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:.25em 1em;cursor:pointer;color:var(--ink-soft)}
-.chip.active{background:var(--district);border-color:var(--district);color:#fff;font-weight:700}
-.article-count{font-size:.8rem;color:var(--ink-soft);margin-bottom:.8em}
-.article-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9em}
-.article-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:.9em 1em;display:flex;flex-direction:column;gap:.3em}
-.article-card .tag{font-size:.7rem;font-weight:700;color:var(--district)}
-.article-card a{font-weight:700;font-size:.92rem;line-height:1.6}
-.article-card p{font-size:.78rem;color:var(--ink-soft)}
-.article-card.hidden{display:none}
-.article-loading{font-size:.85rem;color:var(--ink-soft)}
 
 .cta-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.3em 1.2em;text-align:center;margin-top:1.2em}
 .cta-box p{font-size:.88rem;color:var(--ink-soft)}
@@ -122,7 +112,6 @@ details.acc[open] summary{margin-bottom:.8em}
 
 @media(max-width:720px){
   .theme-cards{grid-template-columns:1fr}
-  .article-grid{grid-template-columns:1fr}
   .footer-blocks{grid-template-columns:1fr}
   h1{font-size:1.55rem}
 }
@@ -183,23 +172,83 @@ details.acc[open] summary{margin-bottom:.8em}
   </div>
 </div>
 
+<!-- district-articles:start -->
 <h2>南部の記事を探す</h2>
 <p class="section-lead">南部地区に関係する読み物・特集・史料ページを、新着を上にして並べています。テーマ別に絞り込むこともできます。</p>
-<div class="filter-chips" id="chips">
-  <button class="chip active" data-f="all">すべて</button>
-  <button class="chip" data-f="史料">史料</button>
-  <button class="chip" data-f="古地図">古地図</button>
-  <button class="chip" data-f="町村沿革">町村沿革</button>
-  <button class="chip" data-f="神社仏閣">神社仏閣</button>
-  <button class="chip" data-f="祭り">祭り</button>
-  <button class="chip" data-f="街道・交通">街道・交通</button>
-  <button class="chip" data-f="建物・古民家">建物・古民家</button>
-  <button class="chip" data-f="学校">学校</button>
-  <button class="chip" data-f="暮らし">暮らし</button>
-  <button class="chip" data-f="土地の記憶">土地の記憶</button>
-</div>
-<p class="article-count">表示中：<span id="count">0</span>件</p>
-<div class="article-grid" id="grid"><p class="article-loading">記事一覧を読み込んでいます…</p></div>
+
+<section class="district-articles" id="articles" data-district="nanbu">
+  <div class="article-filter" role="group" aria-label="テーマで絞り込む">
+    <button type="button" class="is-active" data-theme="all" aria-pressed="true">すべて</button>
+    <button type="button" data-theme="史料" aria-pressed="false">史料</button>
+    <button type="button" data-theme="古地図" aria-pressed="false">古地図</button>
+    <button type="button" data-theme="町村沿革" aria-pressed="false">町村沿革</button>
+    <button type="button" data-theme="神社仏閣" aria-pressed="false">神社仏閣</button>
+    <button type="button" data-theme="祭り" aria-pressed="false">祭り</button>
+    <button type="button" data-theme="街道・交通" aria-pressed="false">街道・交通</button>
+    <button type="button" data-theme="建物・古民家" aria-pressed="false">建物・古民家</button>
+    <button type="button" data-theme="学校" aria-pressed="false">学校</button>
+    <button type="button" data-theme="暮らし" aria-pressed="false">暮らし</button>
+    <button type="button" data-theme="土地の記憶" aria-pressed="false">土地の記憶</button>
+  </div>
+
+  <p class="article-count" aria-live="polite">表示中：<span data-count>34</span>件</p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <caption class="visually-hidden">南部地区の記事一覧</caption>
+      <thead>
+        <tr><th scope="col" class="col-no">No.</th><th scope="col" class="col-title">タイトル</th><th scope="col" class="col-theme">テーマ</th><th scope="col" class="col-desc">概要</th><th scope="col" class="col-date">公開日</th></tr>
+      </thead>
+      <tbody>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">1</td><td class="col-title"><a href="/c101.html">源平争乱と遠江 ── 頼朝の挙兵から遠江支配へ</a></td><td class="col-theme">記憶</td><td class="col-desc">治承4年の頼朝挙兵から安田義定の遠江国司就任、鎌田御厨をめぐる争い、千手前伝承ま…</td><td class="col-date"><time datetime="2026-07-12">2026.07.12</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">2</td><td class="col-title"><a href="/s023.html">南部地区の生い立ち ── 天竜川がつくった村、人が守った村</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">天竜地区・於保地区・長野地区という三つの旧村の重なりから、南部地区の生い立ちを読…</td><td class="col-date"><time datetime="2026-07-10">2026.07.10</time></td></tr>
+        <tr data-themes="町村沿革" data-page="1"><td class="col-no">3</td><td class="col-title"><a href="/s024.html">南部の成り立ち ── 沿革年表・学校区・大字</a></td><td class="col-theme">沿革</td><td class="col-desc">南部地区の沿革年表・旧町村と大字の対応・現在の学校区と主な大字をまとめた資料ペー…</td><td class="col-date"><time datetime="2026-07-10">2026.07.10</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">4</td><td class="col-title"><a href="/s025.html">浜部遺跡・浜部古墳群 ── 砂地に築かれた、磐田市最南端の古墳と中世集落</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市南部から福田地区にかけて広がる浜部遺跡・浜部古墳群。市内で2例しかない砂地…</td><td class="col-date"><time datetime="2026-07-10">2026.07.10</time></td></tr>
+        <tr data-themes="建物・古民家 暮らし 土地の記憶" data-page="1"><td class="col-no">5</td><td class="col-title"><a href="/c092.html">磐田市の閉鎖プールを読む - 市民プールから温水・防災インフラへ</a></td><td class="col-theme">建物／暮らし／記憶</td><td class="col-desc">磐田市民プール、旧磐田グランドホテルのプール、学校プールや民間施設の閉鎖から、遊…</td><td class="col-date"><time datetime="2026-07-07">2026.07.07</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">6</td><td class="col-title"><a href="/s021.html">今之浦と大池の消滅・埋立て ── 生き残った調整池と、失われた旧河道</a></td><td class="col-theme">記憶</td><td class="col-desc">大池は今も現存し湛水対策の調整池として使われている。埋め立てられたのは旧今之浦川…</td><td class="col-date"><time datetime="2026-07-05">2026.07.05</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">7</td><td class="col-title"><a href="/s022.html">今之浦が磐田の都市形成に与えた影響 ── 低地の空白が、新しい市街地に変わるまで</a></td><td class="col-theme">記憶</td><td class="col-desc">見付・中泉という台地上の中心地に挟まれ長く空白だった今之浦の低地。1966年から…</td><td class="col-date"><time datetime="2026-07-05">2026.07.05</time></td></tr>
+        <tr data-themes="街道・交通 土地の記憶" data-page="1"><td class="col-no">8</td><td class="col-title"><a href="/s020.html">見付から福田・掛塚方面へ向かう旧道 ── 南部の低地を渡る道</a></td><td class="col-theme">交通／記憶</td><td class="col-desc">内陸の見付と、沿岸の福田・掛塚を結んだ道を、南部の低地地形から考える。微高地づた…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">9</td><td class="col-title"><a href="/u031.html">西貝塚・明ヶ島・大原周辺の遺跡群 ── 磐田原台地南東縁の考古学的景観</a></td><td class="col-theme">記憶</td><td class="col-desc">縄文の貝塚群・西貝塚を中心に、磐田原台地南東縁に広がる遺跡群を俯瞰する。城之崎遺…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">10</td><td class="col-title"><a href="/r024.html">天竜川の地形と歴史 ── 平地の生い立ちと川筋の移りかわり</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">天竜川平地の地形・地質と生い立ち、江戸期以降の川筋の西遷、金原明善らの治水事業ま…</td><td class="col-date"><time datetime="2026-07-02">2026.07.02</time></td></tr>
+        <tr data-themes="町村沿革 神社仏閣 土地の記憶" data-page="1"><td class="col-no">11</td><td class="col-title"><a href="/s013.html">天竜地区総論 ── 川と低地がつくった暮らしの記憶</a></td><td class="col-theme">沿革／社寺／記憶</td><td class="col-desc">天竜川の恵みとリスクのあいだで続いてきた集落を、低地・水利・旧道・寺社から読む総…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="町村沿革 暮らし 土地の記憶" data-page="1"><td class="col-no">12</td><td class="col-title"><a href="/s014.html">川の恵みと怖さ ── 天竜地区に残る水辺の生活史</a></td><td class="col-theme">沿革／暮らし／記憶</td><td class="col-desc">旧河道・自然堤防・後背湿地と治水、農地・水路・橋の動線から、水辺の生活史と将来課…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">13</td><td class="col-title"><a href="/s015.html">於保地区総論 ── 大池・低地・農地が支えた南の集落</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">水を得ること、逃がすこと、田を守ること。水と農地の関係から於保の集落形成を読む総…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="町村沿革 神社仏閣 土地の記憶" data-page="1"><td class="col-no">14</td><td class="col-title"><a href="/s016.html">長野地区総論 ── 水田の広がりと旧集落の輪郭を読む</a></td><td class="col-theme">沿革／社寺／記憶</td><td class="col-desc">長野・小島・前野・鮫島・白拍子など、水田のなかに点在する旧集落を水利と農地から読…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">15</td><td class="col-title"><a href="/s017.html">於保と長野を分けるもの、つなぐもの ── 水利・農地・集落の南部史</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">南部低地の集落を、水利・農地・共同体・将来課題から横断的に比較する。衰退ではなく…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="神社仏閣 土地の記憶" data-page="1"><td class="col-no">16</td><td class="col-title"><a href="/s018.html">鰐口 ── 大島の低地に伝わる金属の響きから、南北朝期の信仰と水辺の集落を読む</a></td><td class="col-theme">社寺／記憶</td><td class="col-desc">県指定・工芸。大島に伝わる文化財を、公式指定情報と南部地区の地域史から読み直す。</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="祭り 暮らし" data-page="1"><td class="col-no">17</td><td class="col-title"><a href="/s019.html">八王子神社米とぎまつり ── 米をとぐ所作から、南部低地の稲作儀礼と集落の祈りを読む</a></td><td class="col-theme">祭り／暮らし</td><td class="col-desc">市指定・無形民俗文化財。下太に伝わる行事を、公式指定情報と南部地区の地域史から読…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">18</td><td class="col-title"><a href="/c027.html">映画『お別れの歌』と磐田の風景</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市内で撮影された映画『お別れの歌』を、今の磐田が映像として残された文化的出来…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">19</td><td class="col-title"><a href="/s002.html">豊島・北島 ── 天竜川の氾濫原に開かれた川辺の開拓地と水害防除の知恵</a></td><td class="col-theme">記憶</td><td class="col-desc">天竜川下流の東岸に位置する豊島（とよしま）と北島（きたじま）の開拓史と水害防除の…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="神社仏閣" data-page="1"><td class="col-no">20</td><td class="col-title"><a href="/s003.html">千手堂・万正寺 ── 寺院名が語る中世の信仰空間と消えた伽藍の謎</a></td><td class="col-theme">社寺</td><td class="col-desc">磐田市南部地区にある千手堂（せんじゅどう）と万正寺（まんしょうじ）の歴史を解説。…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">21</td><td class="col-title"><a href="/s004.html">上大之郷・下大之郷 ── 古代大郷の記憶と庄園開発の歴史</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市南部地区の「上大之郷」「下大之郷」の歴史を紐解く。律令制下の古代「大郷（お…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">22</td><td class="col-title"><a href="/s005.html">上岡田・下岡田 ── 砂丘と湿地を拓いた開墾の軌跡と岡田の神々</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市南部地区の「上岡田」「下岡田」の歴史を解説。天竜川がもたらした砂質土壌や湿…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">23</td><td class="col-title"><a href="/s006.html">鮫島・小島 ── 遠州灘の潮風を防ぐ防風林と砂丘地の過酷な開拓史</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市最南部に位置する「鮫島」「小島」の歴史を解説。遠州灘から吹き荒れる強風と飛…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">24</td><td class="col-title"><a href="/s007.html">野箱・白拍子 ── 中世の芸能者白拍子の足跡と地域に息づく伝承</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市南部地区にある「野箱」「白拍子」という非常にユニークな地名の歴史と伝承を紐…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="暮らし" data-page="1"><td class="col-no">25</td><td class="col-title"><a href="/s008.html">浜部 ── 遠州灘の塩害に抗い塩を産み出した塩田と沿岸漁業の記憶</a></td><td class="col-theme">暮らし</td><td class="col-desc">磐田市南部地区の「浜部（はまべ）」の歴史を解説。かつて遠州灘に面した砂浜と砂丘地…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">26</td><td class="col-title"><a href="/s009.html">新島・長須賀 ── 天竜川がもたらした砂州の変遷と新田開発の軌跡</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市南部地区にある「新島」「長須賀」の歴史を解き明かします。暴れ天竜と呼ばれる…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">27</td><td class="col-title"><a href="/s010.html">刑部島 ── 古代刑部部と天竜川の中州に挑んだ開拓者たちの闘い</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市南部地区の「刑部島（おさかじま）」の歴史を深掘りします。古墳〜古代律令期に…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革" data-page="1"><td class="col-no">28</td><td class="col-title"><a href="/s011.html">長野村 ── 南部町村合併が描いた生活圏の移り変わりと近代化の歩み</a></td><td class="col-theme">沿革</td><td class="col-desc">磐田市南部地区にかつて存在した「長野村（ながのむら）」の歴史を振り返ります。明治…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革" data-page="1"><td class="col-no">29</td><td class="col-title"><a href="/s012.html">於保村 ── 於保庄の栄華から昭和の分村編入、福田町との分割合併史</a></td><td class="col-theme">沿革</td><td class="col-desc">磐田市南部平野の東部にかつて存在した「於保村（おほむら）」の波乱に満ちた歴史を詳…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="古地図 神社仏閣 祭り 街道・交通 土地の記憶" data-page="1"><td class="col-no">30</td><td class="col-title"><a href="/c004.html">磐田タイムトラベル地図</a></td><td class="col-theme">地図／社寺／祭り／交通／記憶</td><td class="col-desc">古墳、遠江国府、国分寺、見付宿、祭礼、湊、学校を固定SVG地図と時代別カードでた…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">31</td><td class="col-title"><a href="/c010.html">磐田郡という広がり ── 旧磐田市の外側にあった村々</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">古代の郡、明治の郡制、昭和の編入合併をつなぎ、旧磐田市の外側にあった村々を整理す…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="古地図 町村沿革 土地の記憶" data-page="1"><td class="col-no">32</td><td class="col-title"><a href="/c011.html">古地図に村の名を探す ── 戸別明細図と旧高帳の読み合わせ</a></td><td class="col-theme">地図／沿革／記憶</td><td class="col-desc">旧高帳、戸別明細図、現在の公図を読み合わせ、消えた村名や字名を調べる方法を整理す…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">33</td><td class="col-title"><a href="/c017.html">旧磐田市の成り立ち ── 村から町、町から市へ</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">江戸期の村名、町村制、磐田町成立、市制施行、2005年合併までを地名の記憶として…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 街道・交通 土地の記憶" data-page="1"><td class="col-no">34</td><td class="col-title"><a href="/s001.html">天竜川がつくった村、流した村 ── 池田・掛塚と渡しの記憶</a></td><td class="col-theme">沿革／交通／記憶</td><td class="col-desc">暴れ天竜、旧河道、池田の渡し、掛塚湊を通して、川がつくった村と流した村の記憶を読…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <noscript><style>.district-articles tr[hidden]{display:table-row !important}</style></noscript>
+
+  <nav class="article-pager" aria-label="記事一覧のページ送り" hidden>
+    <button type="button" data-page-prev disabled>前へ</button>
+    <ol class="pager-nums"><li><button type="button" class="is-current" data-page-to="1" aria-current="page">1</button></li></ol>
+    <button type="button" data-page-next disabled>次へ</button>
+    <p class="pager-status">1〜34件目／全34件（1／1ページ）</p>
+  </nav>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"南部の記事一覧","itemListElement":[{"@type":"ListItem","position":1,"url":"https://iwata-monogatari.net/c101.html","name":"源平争乱と遠江 ── 頼朝の挙兵から遠江支配へ"},{"@type":"ListItem","position":2,"url":"https://iwata-monogatari.net/s023.html","name":"南部地区の生い立ち ── 天竜川がつくった村、人が守った村"},{"@type":"ListItem","position":3,"url":"https://iwata-monogatari.net/s024.html","name":"南部の成り立ち ── 沿革年表・学校区・大字"},{"@type":"ListItem","position":4,"url":"https://iwata-monogatari.net/s025.html","name":"浜部遺跡・浜部古墳群 ── 砂地に築かれた、磐田市最南端の古墳と中世集落"},{"@type":"ListItem","position":5,"url":"https://iwata-monogatari.net/c092.html","name":"磐田市の閉鎖プールを読む - 市民プールから温水・防災インフラへ"},{"@type":"ListItem","position":6,"url":"https://iwata-monogatari.net/s021.html","name":"今之浦と大池の消滅・埋立て ── 生き残った調整池と、失われた旧河道"},{"@type":"ListItem","position":7,"url":"https://iwata-monogatari.net/s022.html","name":"今之浦が磐田の都市形成に与えた影響 ── 低地の空白が、新しい市街地に変わるまで"},{"@type":"ListItem","position":8,"url":"https://iwata-monogatari.net/s020.html","name":"見付から福田・掛塚方面へ向かう旧道 ── 南部の低地を渡る道"},{"@type":"ListItem","position":9,"url":"https://iwata-monogatari.net/u031.html","name":"西貝塚・明ヶ島・大原周辺の遺跡群 ── 磐田原台地南東縁の考古学的景観"},{"@type":"ListItem","position":10,"url":"https://iwata-monogatari.net/r024.html","name":"天竜川の地形と歴史 ── 平地の生い立ちと川筋の移りかわり"},{"@type":"ListItem","position":11,"url":"https://iwata-monogatari.net/s013.html","name":"天竜地区総論 ── 川と低地がつくった暮らしの記憶"},{"@type":"ListItem","position":12,"url":"https://iwata-monogatari.net/s014.html","name":"川の恵みと怖さ ── 天竜地区に残る水辺の生活史"},{"@type":"ListItem","position":13,"url":"https://iwata-monogatari.net/s015.html","name":"於保地区総論 ── 大池・低地・農地が支えた南の集落"},{"@type":"ListItem","position":14,"url":"https://iwata-monogatari.net/s016.html","name":"長野地区総論 ── 水田の広がりと旧集落の輪郭を読む"},{"@type":"ListItem","position":15,"url":"https://iwata-monogatari.net/s017.html","name":"於保と長野を分けるもの、つなぐもの ── 水利・農地・集落の南部史"},{"@type":"ListItem","position":16,"url":"https://iwata-monogatari.net/s018.html","name":"鰐口 ── 大島の低地に伝わる金属の響きから、南北朝期の信仰と水辺の集落を読む"},{"@type":"ListItem","position":17,"url":"https://iwata-monogatari.net/s019.html","name":"八王子神社米とぎまつり ── 米をとぐ所作から、南部低地の稲作儀礼と集落の祈りを読む"},{"@type":"ListItem","position":18,"url":"https://iwata-monogatari.net/c027.html","name":"映画『お別れの歌』と磐田の風景"},{"@type":"ListItem","position":19,"url":"https://iwata-monogatari.net/s002.html","name":"豊島・北島 ── 天竜川の氾濫原に開かれた川辺の開拓地と水害防除の知恵"},{"@type":"ListItem","position":20,"url":"https://iwata-monogatari.net/s003.html","name":"千手堂・万正寺 ── 寺院名が語る中世の信仰空間と消えた伽藍の謎"}]}</script>
+</section>
+<!-- district-articles:end -->
 
 <h2>どこから読むか迷ったら ── 時間の道しるべ</h2>
 <p class="section-lead">時代の流れに沿って読みたい方は、この順でどうぞ。</p>
@@ -330,94 +379,6 @@ details.acc[open] summary{margin-bottom:.8em}
 </footer>
 <script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="iwata-monogatari" data-fujigaoka-analytics="true"></script>
 
-<script>
-(function(){
-  var DISTRICT_ID = 'nanbu';
-  var THEME_MAP = {
-    'shiryo':'史料','reference-list':'史料',
-    'old-map':'古地図','old-photo':'古地図',
-    'village-history':'町村沿革',
-    'shrine-temple':'神社仏閣','temple':'神社仏閣',
-    'festival':'祭り',
-    'road-traffic':'街道・交通','railway':'街道・交通','transportation':'街道・交通',
-    'architecture':'建物・古民家',
-    'school':'学校','education':'学校',
-    'life':'暮らし','agriculture':'暮らし','industry':'暮らし','water':'暮らし','craft':'暮らし','mingei':'暮らし',
-    'land-memory':'土地の記憶','place-name':'土地の記憶','terrain':'土地の記憶','archaeology':'土地の記憶'
-  };
-  var CHIPS = ['すべて','史料','古地図','町村沿革','神社仏閣','祭り','街道・交通','建物・古民家','学校','暮らし','土地の記憶'];
-
-  function shuffle(arr){
-    for (var i = arr.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
-    }
-    return arr;
-  }
-
-  fetch('/data/pages.json?t=' + new Date().getTime())
-    .then(function(res){ return res.json(); })
-    .then(function(data){
-      var all = (data.pages || []).filter(function(p){
-        return (p.district || []).indexOf(DISTRICT_ID) !== -1 && p.status === 'published';
-      });
-      var withDate = all.filter(function(p){ return p.published_at; });
-      var withoutDate = all.filter(function(p){ return !p.published_at; });
-      withDate.sort(function(a,b){ return a.published_at < b.published_at ? 1 : (a.published_at > b.published_at ? -1 : 0); });
-      var newest = withDate.slice(0, 3);
-      var rest = withDate.slice(3).concat(withoutDate);
-      shuffle(rest);
-      var articles = newest.concat(rest);
-
-      function chipFor(p){
-        var themes = p.themes || [];
-        for (var i=0;i<themes.length;i++){
-          if (THEME_MAP[themes[i]]) return THEME_MAP[themes[i]];
-        }
-        return null;
-      }
-
-      var grid = document.getElementById('grid');
-      var count = document.getElementById('count');
-      if (!grid) return;
-      grid.innerHTML = '';
-      articles.forEach(function(p){
-        var cat = chipFor(p);
-        var div = document.createElement('div');
-        div.className = 'article-card';
-        if (cat) div.setAttribute('data-cat', cat);
-        var tagText = (p.section || cat || '');
-        div.innerHTML = '<span class="tag">'+ (tagText ? tagText : '') +'</span>' +
-          '<a href="/' + p.url + '">' + p.title + '</a>' +
-          (p.summary ? '<p>' + p.summary + '</p>' : '');
-        grid.appendChild(div);
-      });
-      if (count) count.textContent = articles.length;
-
-      var chipsWrap = document.getElementById('chips');
-      if (chipsWrap) {
-        var chipEls = chipsWrap.querySelectorAll('.chip');
-        chipEls.forEach(function(c){
-          c.addEventListener('click', function(){
-            chipEls.forEach(function(x){ x.classList.remove('active'); });
-            c.classList.add('active');
-            var f = c.dataset.f;
-            var n = 0;
-            grid.querySelectorAll('.article-card').forEach(function(card){
-              var show = (f === 'all' || card.getAttribute('data-cat') === f);
-              card.classList.toggle('hidden', !show);
-              if (show) n++;
-            });
-            if (count) count.textContent = n;
-          });
-        });
-      }
-    })
-    .catch(function(){
-      var grid = document.getElementById('grid');
-      if (grid) grid.innerHTML = '<p class="article-loading">記事一覧の読み込みに失敗しました。時間をおいて再度お試しください。</p>';
-    });
-})();
-</script>
+<script defer src="/assets/js/district-articles.js?v=7"></script>
 </body>
 </html>

@@ -17,6 +17,9 @@
     var prevBtn = pager ? pager.querySelector('[data-page-prev]') : null;
     var nextBtn = pager ? pager.querySelector('[data-page-next]') : null;
     var statusEl = pager ? pager.querySelector('.pager-status') : null;
+    var buttons = filterWrap
+      ? Array.prototype.slice.call(filterWrap.querySelectorAll('button[data-theme]'))
+      : [];
 
     var state = { theme: 'all', page: 1 };
 
@@ -25,7 +28,35 @@
       var n = m ? parseInt(m[1], 10) : 1;
       return n > 0 ? n : 1;
     }
+
+    // URL の theme パラメータ（日本語テーマ名。URLエンコード済みを想定）を読む。
+    // 該当するフィルターボタンが無い／all／未指定なら 'all' 扱いにする
+    // （共有URLの取り違えや語彙変更に強くする）。
+    function paramTheme() {
+      var raw = null;
+      try {
+        raw = new URLSearchParams(window.location.search).get('theme');
+      } catch (e) {
+        var m = /[?&]theme=([^&]*)/.exec(window.location.search);
+        raw = m ? decodeURIComponent(m[1].replace(/\+/g, ' ')) : null;
+      }
+      if (!raw || raw === 'all') return 'all';
+      var exists = buttons.some(function (b) { return b.getAttribute('data-theme') === raw; });
+      return exists ? raw : 'all';
+    }
+
+    // フィルターボタンの見た目・aria 状態を state.theme に同期する。
+    function syncButtons() {
+      buttons.forEach(function (b) {
+        var on = b.getAttribute('data-theme') === state.theme;
+        b.classList.toggle('is-active', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+    }
+
     state.page = paramPage();
+    state.theme = paramTheme();
+    syncButtons();
 
     function themesOf(row) {
       var raw = row.getAttribute('data-themes') || '';
@@ -90,6 +121,12 @@
     function syncUrl() {
       if (!window.history || !window.history.replaceState) return;
       var url = new URL(window.location.href);
+      // テーマ絞り込み状態を共有・再訪できるよう URL に残す。all／未指定は消す。
+      if (state.theme && state.theme !== 'all') {
+        url.searchParams.set('theme', state.theme);
+      } else {
+        url.searchParams.delete('theme');
+      }
       if (state.page > 1) {
         url.searchParams.set('page', String(state.page));
       } else {
@@ -98,23 +135,15 @@
       window.history.replaceState(null, '', url.pathname + url.search + url.hash);
     }
 
-    if (filterWrap) {
-      var buttons = Array.prototype.slice.call(filterWrap.querySelectorAll('button[data-theme]'));
-      buttons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          buttons.forEach(function (b) {
-            b.classList.remove('is-active');
-            b.setAttribute('aria-pressed', 'false');
-          });
-          btn.classList.add('is-active');
-          btn.setAttribute('aria-pressed', 'true');
-          state.theme = btn.getAttribute('data-theme');
-          state.page = 1;
-          syncUrl();
-          render();
-        });
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        state.theme = btn.getAttribute('data-theme');
+        state.page = 1; // テーマ変更時はページを1に戻す
+        syncButtons();
+        syncUrl();
+        render();
       });
-    }
+    });
 
     if (prevBtn) {
       prevBtn.addEventListener('click', function () {
@@ -132,5 +161,8 @@
     }
 
     render();
+    // 初期表示後に URL を正規化する（無効な theme を除去し、絞り込みで
+    // ページ数が減ってクランプされた page を実際の値に合わせる）。
+    syncUrl();
   });
 })();

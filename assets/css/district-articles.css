@@ -78,5 +78,11 @@
   .district-articles .article-table .col-desc{display:none}
   .district-articles .article-table{min-width:0}
   .district-articles .article-table .col-theme{width:6em;max-width:6em;font-size:.72rem}
-  .district-articles .article-table td.col-title{max-width:11em}
+  .district-articles .article-table td.col-title{max-width:none}
+  /* スマホでは歴史・史料系の長いタイトルが多く、1行省略だと似たタイトルを
+     見分けにくい。最大2行まで見せて可読性・探しやすさを優先する（PCは1行維持）。 */
+  .district-articles .article-table .col-title a{
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+    white-space:normal;overflow:hidden;text-overflow:ellipsis;line-height:1.55;
+  }
 }

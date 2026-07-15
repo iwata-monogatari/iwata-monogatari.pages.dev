@@ -6,14 +6,14 @@
 <meta name="theme-color" content="#fffdf7">
 <title>豊岡地区｜磐田物語 ── 旧豊岡村・山あいの記憶をたどる入口</title>
 <meta name="description" content="磐田物語の豊岡地区入口ページ。天竜川上流の山あいと川沿いに、谷の集落と田畑が点在する旧豊岡村の記憶をたどる。代表記事・記事一覧・文化財史跡・成り立ちをまとめた地区ポータルです。">
-<link rel="canonical" href="https://iwata-monogatari.net/01009-toyooka.html">
+<link rel="canonical" href="https://iwata-monogatari.net/01009-toyooka">
 <meta name="robots" content="index,follow">
 <meta property="og:site_name" content="磐田物語">
 <meta property="og:title" content="豊岡地区｜磐田物語">
 <meta property="og:description" content="磐田物語の豊岡地区入口ページ。天竜川上流の山あいと川沿いに、谷の集落と田畑が点在する旧豊岡村の記憶をたどる。代表記事・記事一覧・文化財史跡・成り立ちをまとめた地区ポータルです。">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:url" content="https://iwata-monogatari.net/01009-toyooka.html">
+<meta property="og:url" content="https://iwata-monogatari.net/01009-toyooka">
 <meta property="og:image" content="https://iwata-monogatari.net/saguchi/img/hk-3.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="豊岡地区｜磐田物語">
@@ -27,6 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/district-articles.css?v=7">
 <style>
 :root{
   --paper:#fffdf7; --ink:#1f3a48; --ink-soft:#5b6b74;
@@ -97,17 +98,6 @@ details.acc[open] summary{margin-bottom:.8em}
 .enkaku-flow .flow .yr{font-weight:400;font-size:.78rem;color:var(--ink-soft)}
 .more-center{text-align:center;margin-top:1em}
 
-.filter-chips{display:flex;flex-wrap:wrap;gap:.4em;margin:0 0 1.1em}
-.chip{font-size:.78rem;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:.25em 1em;cursor:pointer;color:var(--ink-soft)}
-.chip.active{background:var(--district);border-color:var(--district);color:#fff;font-weight:700}
-.article-count{font-size:.8rem;color:var(--ink-soft);margin-bottom:.8em}
-.article-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9em}
-.article-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:.9em 1em;display:flex;flex-direction:column;gap:.3em}
-.article-card .tag{font-size:.7rem;font-weight:700;color:var(--district)}
-.article-card a{font-weight:700;font-size:.92rem;line-height:1.6}
-.article-card p{font-size:.78rem;color:var(--ink-soft)}
-.article-card.hidden{display:none}
-.article-loading{font-size:.85rem;color:var(--ink-soft)}
 
 .cta-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.3em 1.2em;text-align:center;margin-top:1.2em}
 .cta-box p{font-size:.88rem;color:var(--ink-soft)}
@@ -127,7 +117,6 @@ details.acc[open] summary{margin-bottom:.8em}
 
 @media(max-width:720px){
   .theme-cards{grid-template-columns:1fr}
-  .article-grid{grid-template-columns:1fr}
   .footer-blocks{grid-template-columns:1fr}
   h1{font-size:1.55rem}
 }
@@ -193,23 +182,87 @@ details.acc[open] summary{margin-bottom:.8em}
   </div>
 </div>
 
+<!-- district-articles:start -->
 <h2>豊岡の記事を探す</h2>
 <p class="section-lead">豊岡地区に関係する読み物・特集・史料ページを、新着を上にして並べています。テーマ別に絞り込むこともできます。</p>
-<div class="filter-chips" id="chips">
-  <button class="chip active" data-f="all">すべて</button>
-  <button class="chip" data-f="史料">史料</button>
-  <button class="chip" data-f="古地図">古地図</button>
-  <button class="chip" data-f="町村沿革">町村沿革</button>
-  <button class="chip" data-f="神社仏閣">神社仏閣</button>
-  <button class="chip" data-f="祭り">祭り</button>
-  <button class="chip" data-f="街道・交通">街道・交通</button>
-  <button class="chip" data-f="建物・古民家">建物・古民家</button>
-  <button class="chip" data-f="学校">学校</button>
-  <button class="chip" data-f="暮らし">暮らし</button>
-  <button class="chip" data-f="土地の記憶">土地の記憶</button>
-</div>
-<p class="article-count">表示中：<span id="count">0</span>件</p>
-<div class="article-grid" id="grid"><p class="article-loading">記事一覧を読み込んでいます…</p></div>
+
+<section class="district-articles" id="articles" data-district="toyooka">
+  <div class="article-filter" role="group" aria-label="テーマで絞り込む">
+    <button type="button" class="is-active" data-theme="all" aria-pressed="true">すべて</button>
+    <button type="button" data-theme="史料" aria-pressed="false">史料</button>
+    <button type="button" data-theme="古地図" aria-pressed="false">古地図</button>
+    <button type="button" data-theme="町村沿革" aria-pressed="false">町村沿革</button>
+    <button type="button" data-theme="神社仏閣" aria-pressed="false">神社仏閣</button>
+    <button type="button" data-theme="祭り" aria-pressed="false">祭り</button>
+    <button type="button" data-theme="街道・交通" aria-pressed="false">街道・交通</button>
+    <button type="button" data-theme="建物・古民家" aria-pressed="false">建物・古民家</button>
+    <button type="button" data-theme="学校" aria-pressed="false">学校</button>
+    <button type="button" data-theme="暮らし" aria-pressed="false">暮らし</button>
+    <button type="button" data-theme="土地の記憶" aria-pressed="false">土地の記憶</button>
+  </div>
+
+  <p class="article-count" aria-live="polite">表示中：<span data-count>38</span>件</p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <caption class="visually-hidden">豊岡地区の記事一覧</caption>
+      <thead>
+        <tr><th scope="col" class="col-no">No.</th><th scope="col" class="col-title">タイトル</th><th scope="col" class="col-theme">テーマ</th><th scope="col" class="col-desc">概要</th><th scope="col" class="col-date">公開日</th></tr>
+      </thead>
+      <tbody>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">1</td><td class="col-title"><a href="/y015.html">大平社山の茶園から産業の記憶を読む</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">豊岡地区の大平(おいだいら)社山(やしろやま)の茶園を、産業・なりわいの記憶とし…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">2</td><td class="col-title"><a href="/y016.html">のんべ道草の里と自然と土地の記憶を読む</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">豊岡地区ののんべ道草の里を、自然・景観の記憶として読み直す。場所、資料から確認で…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="神社仏閣 暮らし 土地の記憶" data-page="1"><td class="col-no">3</td><td class="col-title"><a href="/y017.html">獅子ヶ鼻公園と自然と土地の記憶を読む</a></td><td class="col-theme">社寺／暮らし／記憶</td><td class="col-desc">豊岡地区の獅子ヶ鼻公園を、自然・景観の記憶として読み直す。場所、資料から確認でき…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">4</td><td class="col-title"><a href="/y018.html">新平山遺跡を地域の記憶として読む</a></td><td class="col-theme">記憶</td><td class="col-desc">豊岡地区の新平山(しんぺいやま)遺跡（古墳群）を、歴史・史跡の記憶として読み直す…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">5</td><td class="col-title"><a href="/y019.html">血松塚古墳を地域の記憶として読む</a></td><td class="col-theme">記憶</td><td class="col-desc">豊岡地区の血松塚(ちまつづか)古墳を、歴史・史跡の記憶として読み直す。場所、資料…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">6</td><td class="col-title"><a href="/y020.html">三遠式銅鐸を地域の記憶として読む</a></td><td class="col-theme">記憶</td><td class="col-desc">豊岡地区の三遠式銅鐸を、歴史・史跡の記憶として読み直す。場所、資料から確認できる…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="神社仏閣 土地の記憶" data-page="1"><td class="col-no">7</td><td class="col-title"><a href="/y021.html">岩室廃寺跡を地域の記憶として読む</a></td><td class="col-theme">社寺／記憶</td><td class="col-desc">豊岡地区の岩室廃寺跡を、歴史・史跡の記憶として読み直す。場所、資料から確認できる…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="神社仏閣 暮らし 土地の記憶" data-page="1"><td class="col-no">8</td><td class="col-title"><a href="/y022.html">萬世山一雲斎を地域の記憶として読む</a></td><td class="col-theme">社寺／暮らし／記憶</td><td class="col-desc">豊岡地区の萬世山(まんせいやま)一雲斎を、歴史・史跡の記憶として読み直す。場所、…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="神社仏閣 学校 暮らし 土地の記憶" data-page="1"><td class="col-no">9</td><td class="col-title"><a href="/y023.html">社山城址の歴史と自然を地域の記憶として読む</a></td><td class="col-theme">社寺／学校／暮らし／記憶</td><td class="col-desc">豊岡地区の社山(やしろやま)城址の歴史と自然を、歴史・史跡の記憶として読み直す。…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">10</td><td class="col-title"><a href="/y024.html">造り酒屋 花咲乃庄を地域の記憶として読む</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">豊岡地区の造り酒屋 花咲乃庄(はなさかのしょう)を、歴史・史跡の記憶として読み直…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="神社仏閣 暮らし 土地の記憶" data-page="1"><td class="col-no">11</td><td class="col-title"><a href="/y025.html">宮下歴史庫を地域の記憶として読む</a></td><td class="col-theme">社寺／暮らし／記憶</td><td class="col-desc">豊岡地区の宮下歴史庫を、歴史・史跡の記憶として読み直す。場所、資料から確認できる…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">12</td><td class="col-title"><a href="/y026.html">黒立トンネルを地域の記憶として読む</a></td><td class="col-theme">記憶</td><td class="col-desc">豊岡地区の黒立(くろたて)トンネルを、歴史・史跡の記憶として読み直す。場所、資料…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="学校 土地の記憶" data-page="1"><td class="col-no">13</td><td class="col-title"><a href="/y027.html">ヒマラヤシーダのクリスマスイルミネーションに残る信仰と文化の記憶</a></td><td class="col-theme">学校／記憶</td><td class="col-desc">豊岡地区のヒマラヤシーダのクリスマスイルミネーションを、文化・信仰の記憶として読…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="街道・交通 学校 暮らし 土地の記憶" data-page="1"><td class="col-no">14</td><td class="col-title"><a href="/y028.html">松下大三郎の足跡を読む</a></td><td class="col-theme">交通／学校／暮らし／記憶</td><td class="col-desc">豊岡地区の松下大三郎 (まつした だいざぶろう)を、人物・地域の記憶の記憶として…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">15</td><td class="col-title"><a href="/y029.html">ころ柿から産業の記憶を読む</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">豊岡地区のころ柿を、産業・なりわいの記憶として読み直す。場所、資料から確認できる…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">16</td><td class="col-title"><a href="/y030.html">敷地米から産業の記憶を読む</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">豊岡地区の敷地米を、産業・なりわいの記憶として読み直す。場所、資料から確認できる…</td><td class="col-date"><time datetime="2026-07-14">2026.07.14</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">17</td><td class="col-title"><a href="/y012.html">豊岡地区の生い立ち ── 三つの村が一つになった山あいのまち</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">敷地村・広瀬村・野部村が合併して豊岡村になり、磐田市へ合流するまでの生い立ちを読…</td><td class="col-date"><time datetime="2026-07-10">2026.07.10</time></td></tr>
+        <tr data-themes="町村沿革" data-page="1"><td class="col-no">18</td><td class="col-title"><a href="/y013.html">豊岡の成り立ち ── 沿革年表・学校区・大字</a></td><td class="col-theme">沿革</td><td class="col-desc">豊岡地区の沿革年表・旧町村と大字の対応・現在の学校区と主な大字をまとめた資料ペー…</td><td class="col-date"><time datetime="2026-07-10">2026.07.10</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">19</td><td class="col-title"><a href="/y014.html">社山城跡 ── 磐田市指定史跡に残る、遠江争奪の山城</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市豊岡地区、社山の丘陵に築かれた磐田市指定史跡・社山城跡。斯波氏・今川氏の抗…</td><td class="col-date"><time datetime="2026-07-10">2026.07.10</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">20</td><td class="col-title"><a href="/k044.html">磐田原台地と古墳分布 ── 台地の縁に眠る、時代の異なる王たち</a></td><td class="col-theme">記憶</td><td class="col-desc">新豊院山古墳群・御厨古墳群・兜塚古墳など、磐田原台地の縁に点在する古墳群を俯瞰し…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">21</td><td class="col-title"><a href="/k045.html">磐田原の水不足と開発史 ── 水に恵まれなかった台地の記憶</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田原台地の水不足の背景と、寺谷用水・磐田用水・赤松則良の茶園開拓という複数の対…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">22</td><td class="col-title"><a href="/y011.html">新豊院山古墳群と台地上の支配者 ── 弥生から古墳へ、向笠の丘に眠る記憶</a></td><td class="col-theme">記憶</td><td class="col-desc">国指定史跡・新豊院山古墳群。弥生時代の土器棺墓から古墳時代前期の前方後円墳まで、…</td><td class="col-date"><time datetime="2026-07-04">2026.07.04</time></td></tr>
+        <tr data-themes="祭り 暮らし" data-page="1"><td class="col-no">23</td><td class="col-title"><a href="/o001.html">豊岡の遠州大念仏 ── 複数集落にまたがる大念仏から、豊岡の広域民俗を記録する</a></td><td class="col-theme">祭り／暮らし</td><td class="col-desc">市指定・無形民俗文化財。豊岡地区各所に伝わる行事を、公式指定情報と豊岡地区の地域…</td><td class="col-date"><time datetime="2026-06-27">2026.06.27</time></td></tr>
+        <tr data-themes="土地の記憶" data-page="1"><td class="col-no">24</td><td class="col-title"><a href="/c027.html">映画『お別れの歌』と磐田の風景</a></td><td class="col-theme">記憶</td><td class="col-desc">磐田市内で撮影された映画『お別れの歌』を、今の磐田が映像として残された文化的出来…</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">25</td><td class="col-title"><a href="/y001.html">敷地川と谷の集落</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">山あいの水がつくった豊岡の暮らしを、敷地川と谷筋から読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">26</td><td class="col-title"><a href="/y002.html">敷地村の成立と山村の記憶</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">岩室・大平・家田・万瀬・虫生をつなぐ旧敷地村のまとまりを読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 神社仏閣 土地の記憶" data-page="1"><td class="col-no">27</td><td class="col-title"><a href="/y003.html">広瀬村と神増・社山</a></td><td class="col-theme">沿革／社寺／記憶</td><td class="col-desc">山すその集落と旧村のまとまりを、神増・社山から読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 街道・交通 土地の記憶" data-page="1"><td class="col-no">28</td><td class="col-title"><a href="/y004.html">野部村と上野部・下野部</a></td><td class="col-theme">沿革／交通／記憶</td><td class="col-desc">野部村の記憶を、上野部・下野部・天浜線沿いの交通から読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="神社仏閣 暮らし 土地の記憶" data-page="1"><td class="col-no">29</td><td class="col-title"><a href="/y005.html">獅子ヶ鼻と豊岡の山の景観</a></td><td class="col-theme">社寺／暮らし／記憶</td><td class="col-desc">岩山・公園・山の信仰を、里山利用と景観の記憶から読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="暮らし 土地の記憶" data-page="1"><td class="col-no">30</td><td class="col-title"><a href="/y006.html">万瀬・虫生・大平</a></td><td class="col-theme">暮らし／記憶</td><td class="col-desc">山あいの小集落と暮らしの技術を、谷・水・道・山林から読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">31</td><td class="col-title"><a href="/y007.html">合代島・新開・惣兵衛下新田</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">川沿いの低地、新開、新田地名から開発の記憶を読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">32</td><td class="col-title"><a href="/y008.html">豊岡村の誕生と2005年合併</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">広瀬・野部・敷地が一つになった豊岡村の成立と、磐田市合併を整理する。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="街道・交通 暮らし 土地の記憶" data-page="1"><td class="col-no">33</td><td class="col-title"><a href="/y009.html">天竜浜名湖線と豊岡</a></td><td class="col-theme">交通／暮らし／記憶</td><td class="col-desc">豊岡駅・敷地駅・上野部駅を、二俣線から天浜線への交通史として読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="神社仏閣 祭り 暮らし" data-page="1"><td class="col-no">34</td><td class="col-title"><a href="/y010.html">豊岡の祭り・寺社・里山信仰</a></td><td class="col-theme">社寺／祭り／暮らし</td><td class="col-desc">山と川に祈る暮らしを、寺社・祭礼・講の記憶から読む。</td><td class="col-date"><time datetime="2026-06-26">2026.06.26</time></td></tr>
+        <tr data-themes="古地図 神社仏閣 祭り 街道・交通 土地の記憶" data-page="1"><td class="col-no">35</td><td class="col-title"><a href="/c004.html">磐田タイムトラベル地図</a></td><td class="col-theme">地図／社寺／祭り／交通／記憶</td><td class="col-desc">古墳、遠江国府、国分寺、見付宿、祭礼、湊、学校を固定SVG地図と時代別カードでた…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">36</td><td class="col-title"><a href="/c010.html">磐田郡という広がり ── 旧磐田市の外側にあった村々</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">古代の郡、明治の郡制、昭和の編入合併をつなぎ、旧磐田市の外側にあった村々を整理す…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="古地図 町村沿革 土地の記憶" data-page="1"><td class="col-no">37</td><td class="col-title"><a href="/c011.html">古地図に村の名を探す ── 戸別明細図と旧高帳の読み合わせ</a></td><td class="col-theme">地図／沿革／記憶</td><td class="col-desc">旧高帳、戸別明細図、現在の公図を読み合わせ、消えた村名や字名を調べる方法を整理す…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+        <tr data-themes="町村沿革 土地の記憶" data-page="1"><td class="col-no">38</td><td class="col-title"><a href="/c017.html">旧磐田市の成り立ち ── 村から町、町から市へ</a></td><td class="col-theme">沿革／記憶</td><td class="col-desc">江戸期の村名、町村制、磐田町成立、市制施行、2005年合併までを地名の記憶として…</td><td class="col-date"><time datetime="2026-06-25">2026.06.25</time></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <noscript><style>.district-articles tr[hidden]{display:table-row !important}</style></noscript>
+
+  <nav class="article-pager" aria-label="記事一覧のページ送り" hidden>
+    <button type="button" data-page-prev disabled>前へ</button>
+    <ol class="pager-nums"><li><button type="button" class="is-current" data-page-to="1" aria-current="page">1</button></li></ol>
+    <button type="button" data-page-next disabled>次へ</button>
+    <p class="pager-status">1〜38件目／全38件（1／1ページ）</p>
+  </nav>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"豊岡の記事一覧","itemListElement":[{"@type":"ListItem","position":1,"url":"https://iwata-monogatari.net/y015.html","name":"大平社山の茶園から産業の記憶を読む"},{"@type":"ListItem","position":2,"url":"https://iwata-monogatari.net/y016.html","name":"のんべ道草の里と自然と土地の記憶を読む"},{"@type":"ListItem","position":3,"url":"https://iwata-monogatari.net/y017.html","name":"獅子ヶ鼻公園と自然と土地の記憶を読む"},{"@type":"ListItem","position":4,"url":"https://iwata-monogatari.net/y018.html","name":"新平山遺跡を地域の記憶として読む"},{"@type":"ListItem","position":5,"url":"https://iwata-monogatari.net/y019.html","name":"血松塚古墳を地域の記憶として読む"},{"@type":"ListItem","position":6,"url":"https://iwata-monogatari.net/y020.html","name":"三遠式銅鐸を地域の記憶として読む"},{"@type":"ListItem","position":7,"url":"https://iwata-monogatari.net/y021.html","name":"岩室廃寺跡を地域の記憶として読む"},{"@type":"ListItem","position":8,"url":"https://iwata-monogatari.net/y022.html","name":"萬世山一雲斎を地域の記憶として読む"},{"@type":"ListItem","position":9,"url":"https://iwata-monogatari.net/y023.html","name":"社山城址の歴史と自然を地域の記憶として読む"},{"@type":"ListItem","position":10,"url":"https://iwata-monogatari.net/y024.html","name":"造り酒屋 花咲乃庄を地域の記憶として読む"},{"@type":"ListItem","position":11,"url":"https://iwata-monogatari.net/y025.html","name":"宮下歴史庫を地域の記憶として読む"},{"@type":"ListItem","position":12,"url":"https://iwata-monogatari.net/y026.html","name":"黒立トンネルを地域の記憶として読む"},{"@type":"ListItem","position":13,"url":"https://iwata-monogatari.net/y027.html","name":"ヒマラヤシーダのクリスマスイルミネーションに残る信仰と文化の記憶"},{"@type":"ListItem","position":14,"url":"https://iwata-monogatari.net/y028.html","name":"松下大三郎の足跡を読む"},{"@type":"ListItem","position":15,"url":"https://iwata-monogatari.net/y029.html","name":"ころ柿から産業の記憶を読む"},{"@type":"ListItem","position":16,"url":"https://iwata-monogatari.net/y030.html","name":"敷地米から産業の記憶を読む"},{"@type":"ListItem","position":17,"url":"https://iwata-monogatari.net/y012.html","name":"豊岡地区の生い立ち ── 三つの村が一つになった山あいのまち"},{"@type":"ListItem","position":18,"url":"https://iwata-monogatari.net/y013.html","name":"豊岡の成り立ち ── 沿革年表・学校区・大字"},{"@type":"ListItem","position":19,"url":"https://iwata-monogatari.net/y014.html","name":"社山城跡 ── 磐田市指定史跡に残る、遠江争奪の山城"},{"@type":"ListItem","position":20,"url":"https://iwata-monogatari.net/k044.html","name":"磐田原台地と古墳分布 ── 台地の縁に眠る、時代の異なる王たち"}]}</script>
+</section>
+<!-- district-articles:end -->
 
 <h2>どこから読むか迷ったら ── 時間の道しるべ</h2>
 <p class="section-lead">時代の流れに沿って読みたい方は、この順でどうぞ。</p>
@@ -375,94 +428,7 @@ details.acc[open] summary{margin-bottom:.8em}
   </div>
 </footer>
 
-<script>
-(function(){
-  var DISTRICT_ID = 'toyooka';
-  var THEME_MAP = {
-    'shiryo':'史料','reference-list':'史料',
-    'old-map':'古地図','old-photo':'古地図',
-    'village-history':'町村沿革',
-    'shrine-temple':'神社仏閣','temple':'神社仏閣',
-    'festival':'祭り',
-    'road-traffic':'街道・交通','railway':'街道・交通','transportation':'街道・交通',
-    'architecture':'建物・古民家',
-    'school':'学校','education':'学校',
-    'life':'暮らし','agriculture':'暮らし','industry':'暮らし','water':'暮らし','craft':'暮らし','mingei':'暮らし',
-    'land-memory':'土地の記憶','place-name':'土地の記憶','terrain':'土地の記憶','archaeology':'土地の記憶'
-  };
-
-  function shuffle(arr){
-    for (var i = arr.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
-    }
-    return arr;
-  }
-
-  fetch('/data/pages.json?t=' + new Date().getTime())
-    .then(function(res){ return res.json(); })
-    .then(function(data){
-      var all = (data.pages || []).filter(function(p){
-        return (p.district || []).indexOf(DISTRICT_ID) !== -1 && p.status === 'published';
-      });
-      var withDate = all.filter(function(p){ return p.published_at; });
-      var withoutDate = all.filter(function(p){ return !p.published_at; });
-      withDate.sort(function(a,b){ return a.published_at < b.published_at ? 1 : (a.published_at > b.published_at ? -1 : 0); });
-      var newest = withDate.slice(0, 3);
-      var rest = withDate.slice(3).concat(withoutDate);
-      shuffle(rest);
-      var articles = newest.concat(rest);
-
-      function chipFor(p){
-        var themes = p.themes || [];
-        for (var i=0;i<themes.length;i++){
-          if (THEME_MAP[themes[i]]) return THEME_MAP[themes[i]];
-        }
-        return null;
-      }
-
-      var grid = document.getElementById('grid');
-      var count = document.getElementById('count');
-      if (!grid) return;
-      grid.innerHTML = '';
-      articles.forEach(function(p){
-        var cat = chipFor(p);
-        var div = document.createElement('div');
-        div.className = 'article-card';
-        if (cat) div.setAttribute('data-cat', cat);
-        var tagText = (p.section || cat || '');
-        div.innerHTML = '<span class="tag">'+ (tagText ? tagText : '') +'</span>' +
-          '<a href="/' + p.url + '">' + p.title + '</a>' +
-          (p.summary ? '<p>' + p.summary + '</p>' : '');
-        grid.appendChild(div);
-      });
-      if (count) count.textContent = articles.length;
-
-      var chipsWrap = document.getElementById('chips');
-      if (chipsWrap) {
-        var chipEls = chipsWrap.querySelectorAll('.chip');
-        chipEls.forEach(function(c){
-          c.addEventListener('click', function(){
-            chipEls.forEach(function(x){ x.classList.remove('active'); });
-            c.classList.add('active');
-            var f = c.dataset.f;
-            var n = 0;
-            grid.querySelectorAll('.article-card').forEach(function(card){
-              var show = (f === 'all' || card.getAttribute('data-cat') === f);
-              card.classList.toggle('hidden', !show);
-              if (show) n++;
-            });
-            if (count) count.textContent = n;
-          });
-        });
-      }
-    })
-    .catch(function(){
-      var grid = document.getElementById('grid');
-      if (grid) grid.innerHTML = '<p class="article-loading">記事一覧の読み込みに失敗しました。時間をおいて再度お試しください。</p>';
-    });
-})();
-</script>
 <script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="iwata-monogatari" data-fujigaoka-analytics="true"></script>
+<script defer src="/assets/js/district-articles.js?v=7"></script>
 </body>
 </html>
