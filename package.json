@@ -7,6 +7,6 @@
     "guard": "python scripts/predeploy_guard.py",
     "guard:deploy": "python scripts/predeploy_guard.py --strict-deploy",
     "footer:sql": "node scripts/seed_footer_fragment.mjs",
-    "deploy": "npm run build && npm run knowledge-count && npm run guard:deploy && npm exec wrangler@latest -- pages deploy . --project-name iwata-monogatari --branch main"
+    "deploy": "echo '2026-07-15: this machine cannot wrangler pages deploy anymore (Pages scope removed on purpose). Publish via git push instead -- Cloudflare Pages Git integration builds/deploys it.' && exit 1"
   }
 }
