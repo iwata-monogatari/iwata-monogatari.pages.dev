@@ -110,7 +110,7 @@ OLD_INLINE_CSS_MEDIA_LINE_RE = re.compile(r"[ \t]*\.article-grid\{grid-template-
 # Cache-Control: max-age=14400 とブラウザキャッシュにより、バージョンを上げない
 # 限り既存訪問者に最大4時間、更新前のCSS/JSが配信され続けてしまうため
 # （2026-07-15、テーマ列の折り返し修正が反映されない不具合の実因になった）。
-ASSET_VERSION = 4
+ASSET_VERSION = 5
 CSS_LINK = f'<link rel="stylesheet" href="/assets/css/district-articles.css?v={ASSET_VERSION}">'
 JS_TAG = f'<script defer src="/assets/js/district-articles.js?v={ASSET_VERSION}"></script>'
 OLD_CSS_LINK_RE = re.compile(r'<link rel="stylesheet" href="/assets/css/district-articles\.css(?:\?v=\d+)?">\n?')
