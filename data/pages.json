@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-07-16",
+  "updated_at": "2026-07-17",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -14260,6 +14260,79 @@
       "count_as_knowledge": true
     },
     {
+      "title": "豊田東小学校と広野北遺跡 ── 台地の上の学び舎",
+      "url": "t069.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "school-history",
+        "modern-education",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-17",
+      "updated_at": "2026-07-17",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "磐田市高見丘の豊田東小学校を、磐田原台地、広野北遺跡、豊田北部小からの分離新設、校訓、ながふじ学府の記憶から整理する。",
+      "parent": "01004-toyoda.html",
+      "topics": [
+        "豊田東小学校",
+        "高見丘",
+        "広野北遺跡",
+        "磐田原台地",
+        "豊田北部小学校",
+        "ながふじ学府",
+        "熊野の長フジ",
+        "校訓"
+      ],
+      "level": "L2",
+      "source_refs": [
+        "pdf:磐田市立豊田東小学校の調査"
+      ]
+    },
+    {
+      "title": "豊田中学校の戦後史 ── 組合立からながふじ学府へ",
+      "url": "t070.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "school-history",
+        "modern-education",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-17",
+      "updated_at": "2026-07-17",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "1948年の組合立豊田中学校から、岩田中学校との統合、青春の塔、豊田南中学校の分離、ながふじ学府小中一体校までを整理する。",
+      "parent": "01004-toyoda.html",
+      "topics": [
+        "豊田中学校",
+        "組合立豊田中学校",
+        "岩田中学校",
+        "旧129部隊",
+        "青春の塔",
+        "立志式",
+        "豊田南中学校",
+        "ながふじ学府",
+        "向陽中学校"
+      ],
+      "level": "L2",
+      "source_refs": [
+        "pdf:磐田市立豊田中学校の調査"
+      ]
+    },
+    {
       "title": "松岡 萬の足跡を読む",
       "url": "k055.html",
       "district": [
@@ -14932,6 +15005,115 @@
       "summary": "明治初年頃まで東海道より北には大八車の通れる道がなかった。向笠村の高塚太郎平が全私財を投じ独力で明治20年に完成させた新道。県が認めた13年間の通行料を一切取らなかった道づくりと、すべてを失った生涯をたどる。",
       "parent": "k030.html",
       "level": "L2"
+    },
+    {
+      "title": "向笠小学校の153年 ── 新豊院から向陽小学校へ",
+      "url": "k057.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "school-history",
+        "modern-education",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-17",
+      "updated_at": "2026-07-17",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "明治6年、新豊院を仮校舎とする磐田学校から始まった向笠小学校の153年。寺院校舎、校地移転、戦後復興、環境教育、2026年の閉校と向陽小学校への継承までを整理する。",
+      "parent": "k033-mukasa.html",
+      "topics": [
+        "向笠小学校",
+        "磐田学校",
+        "新豊院",
+        "向陽小学校",
+        "向陽学府",
+        "環境教育",
+        "ビオトープ",
+        "閉校"
+      ],
+      "level": "L2",
+      "source_refs": [
+        "pdf:向笠小学校の歴史調査"
+      ]
+    },
+    {
+      "title": "岩田小学校の153年 ── 匂坂学校から向陽小学校へ",
+      "url": "k058.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "school-history",
+        "modern-education",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-17",
+      "updated_at": "2026-07-17",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "明治6年、平松学校の分校「匂坂学校」として始まった岩田小学校の153年。匂坂中の校地、一輪車教育、校歌、ホタルの活動、閉校行事、向陽小学校への継承までを整理する。",
+      "parent": "k031-iwata.html",
+      "topics": [
+        "岩田小学校",
+        "匂坂学校",
+        "岩田村",
+        "一輪車",
+        "ホタル",
+        "向陽小学校",
+        "向陽学府",
+        "閉校"
+      ],
+      "level": "L2",
+      "source_refs": [
+        "pdf:磐田市の岩田小学校調査"
+      ]
+    },
+    {
+      "title": "大藤小学校の133年 ── 以和拓原から向陽小学校へ",
+      "url": "k059.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "school-history",
+        "modern-education",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-17",
+      "updated_at": "2026-07-17",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "明治25年、大藤尋常小学校として独立した大藤小学校の133年。以和拓原の精神、なわとび、藤っ子茶園、地域と閉校行事、向陽小学校への継承までを整理する。",
+      "parent": "k032-ofuji.html",
+      "topics": [
+        "大藤小学校",
+        "大藤尋常小学校",
+        "以和拓原",
+        "なわとび",
+        "藤っ子茶園",
+        "ふじっちゃ",
+        "向陽小学校",
+        "向陽学府",
+        "閉校"
+      ],
+      "level": "L2",
+      "source_refs": [
+        "pdf:磐田市立大藤小学校の調査"
+      ]
     },
     {
       "title": "中泉陣屋と、町を支えた二人の代官 - 伊奈忠次と林鶴梁から読む",
