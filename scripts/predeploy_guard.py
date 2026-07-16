@@ -84,6 +84,16 @@ def page_path_for_url(url):
     return ROOT / rel
 
 
+def is_archived_stub(page):
+    if page.get("status") != "archived":
+        return False
+    path = page_path_for_url(page.get("url", ""))
+    if not path.exists():
+        return False
+    html = path.read_text(encoding="utf-8", errors="ignore").lower()
+    return "noindex" in html
+
+
 def command(args):
     return subprocess.run(
         args,
@@ -363,7 +373,11 @@ def main():
     live_page_urls = [
         p.get("url", "") for p in live_pages.get("pages", []) if p.get("status") == "published"
     ]
-    new_page_urls = [p.get("url", "") for p in pages if p.get("status") == "published"]
+    new_page_urls = [
+        p.get("url", "")
+        for p in pages
+        if p.get("status") == "published" or is_archived_stub(p)
+    ]
     result = verify_no_silent_removal(
         "data/pages.json (published pages)", live_page_urls, new_page_urls, redirect_sources
     )
