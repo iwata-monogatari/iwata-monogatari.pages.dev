@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -14886,6 +14886,29 @@
       "source_refs": [
         "provided_md:20260709ren-071204-episode4-hitokotozaka"
       ]
+    },
+    {
+      "title": "高塚太郎平新道 ── 全財産を投じて拓いた、東海道より北の道",
+      "url": "k056.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "road-traffic",
+        "meiji-era",
+        "person"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-16",
+      "updated_at": "2026-07-16",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "明治初年頃まで東海道より北には大八車の通れる道がなかった。向笠村の高塚太郎平が全私財を投じ独力で明治20年に完成させた新道。県が認めた13年間の通行料を一切取らなかった道づくりと、すべてを失った生涯をたどる。",
+      "parent": "k030.html",
+      "level": "L2"
     }
   ]
 }
