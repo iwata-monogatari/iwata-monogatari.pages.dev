@@ -71,7 +71,11 @@ def sha256_bytes(data):
 
 
 def sha256_file(path):
-    return sha256_bytes(path.read_bytes())
+    data = path.read_bytes()
+    # The same checkout is LF on Cloudflare/Linux and often CRLF on Windows.
+    # Normalize text line endings so startup checks do not fail on checkout style.
+    data = data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return sha256_bytes(data)
 
 
 def load_json(path):
