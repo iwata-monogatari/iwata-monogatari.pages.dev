@@ -118,6 +118,9 @@ def normalize_url(url):
 
 
 def check_release_guard_live():
+    # check-live now also fetches every protected URL from production to
+    # compare page *content* (rollback detection), so it needs a real timeout
+    # and must fail closed -- a skipped check is exactly how rollbacks hide.
     try:
         result = subprocess.run(
             [sys.executable, str(ROOT / "scripts" / "release_guard.py"), "check-live"],
@@ -126,11 +129,18 @@ def check_release_guard_live():
             text=True,
             encoding="utf-8",
             errors="replace",
-            timeout=30,
+            timeout=240,
         )
-    except (OSError, subprocess.TimeoutExpired) as exc:
+    except OSError as exc:
         print(f"(release guard check skipped: {exc})", file=sys.stderr)
         return True
+    except subprocess.TimeoutExpired:
+        print(
+            "release guard check-live timed out; treat as failure and re-run "
+            "(do not start editing until it passes)",
+            file=sys.stderr,
+        )
+        return False
 
     if result.stdout.strip():
         print(result.stdout.strip())

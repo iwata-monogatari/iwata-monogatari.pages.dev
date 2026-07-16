@@ -7,6 +7,7 @@
     "release:stamp": "python scripts/release_guard.py stamp",
     "release:check": "python scripts/release_guard.py check-local",
     "release:check-live": "python scripts/release_guard.py check-live",
+    "release:check-live-content": "python scripts/release_guard.py check-live-content",
     "guard": "python scripts/predeploy_guard.py",
     "guard:deploy": "python scripts/predeploy_guard.py --strict-deploy",
     "footer:sql": "node scripts/seed_footer_fragment.mjs",

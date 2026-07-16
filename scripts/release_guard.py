@@ -1,6 +1,8 @@
 import argparse
+import concurrent.futures
 import hashlib
 import json
+import re
 import subprocess
 import sys
 import time
@@ -29,6 +31,15 @@ PROTECTED_FILES = [
     "scripts/release_guard.py",
     "sitemap.xml",
     "updates.html",
+]
+
+# Core pages whose *content* must never silently roll back to an older
+# version. URL-set checks (check_live_sync / verify_no_silent_removal)
+# cannot see a page whose URL survives but whose body reverts.
+CORE_URLS = [
+    "/",
+    "/updates.html",
+    "/c034.html",
 ]
 
 # These URLs are the post-recovery canaries. They protect the current
@@ -80,6 +91,87 @@ def sha256_file(path):
     return sha256_bytes(data)
 
 
+# functions/_middleware.js rewrites the inner content of exactly these four
+# elements at serve time (partials / D1 footer), so the served HTML never
+# byte-matches the checked-in file there. Strip the whole element from BOTH
+# sides before hashing so the rest of the page can be compared exactly.
+INJECTED_BLOCKS = [
+    ("header", "gh-site", None),
+    ("footer", "im-foot", None),
+    ("section", "article-policy", "data-common"),
+    ("section", "local-property-note", "data-common"),
+]
+
+
+def _next_injected_open(html, tag, class_token, extra_attr):
+    tag_re = re.compile(r"<" + tag + r"\b[^>]*>", re.IGNORECASE)
+    for match in tag_re.finditer(html):
+        tag_text = match.group(0)
+        cls = re.search(r'class="([^"]*)"', tag_text, re.IGNORECASE)
+        if not cls or class_token not in cls.group(1).split():
+            continue
+        if extra_attr and not re.search(r"\b" + re.escape(extra_attr) + r"\b", tag_text):
+            continue
+        return match
+    return None
+
+
+def _find_block_end(html, tag, search_from):
+    open_re = re.compile(r"<" + tag + r"\b", re.IGNORECASE)
+    close_re = re.compile(r"</" + tag + r"\s*>", re.IGNORECASE)
+    depth = 1
+    pos = search_from
+    while depth > 0:
+        next_open = open_re.search(html, pos)
+        next_close = close_re.search(html, pos)
+        if next_close is None:
+            return None
+        if next_open is not None and next_open.start() < next_close.start():
+            depth += 1
+            pos = next_open.end()
+        else:
+            depth -= 1
+            pos = next_close.end()
+    return pos
+
+
+def strip_injected_blocks(html):
+    for tag, class_token, extra_attr in INJECTED_BLOCKS:
+        while True:
+            opened = _next_injected_open(html, tag, class_token, extra_attr)
+            if opened is None:
+                break
+            end = _find_block_end(html, tag, opened.end())
+            if end is None:
+                # Unbalanced markup: cut deterministically so local and live
+                # normalize the same way instead of looping forever.
+                html = html[: opened.start()]
+                break
+            html = html[: opened.start()] + "<!--im-injected-->" + html[end:]
+    return html
+
+
+# Cloudflare Pages auto-injects the Web Analytics beacon before </body> on
+# the live site only; drop it so it never counts as a content difference.
+CF_BEACON_RE = re.compile(
+    r"(<!-- Cloudflare Pages Analytics -->)?"
+    r"<script[^>]*static\.cloudflareinsights\.com/beacon\.min\.js[^>]*>\s*</script>"
+    r"(<!-- Cloudflare Pages Analytics -->)?",
+    re.IGNORECASE,
+)
+
+
+def content_sha256_text(text):
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = CF_BEACON_RE.sub("", text)
+    text = strip_injected_blocks(text)
+    return sha256_bytes(text.encode("utf-8"))
+
+
+def content_sha256_path(path):
+    return content_sha256_text(path.read_text(encoding="utf-8", errors="replace"))
+
+
 def load_json(path):
     with path.open("r", encoding="utf-8") as handle:
         return json.load(handle)
@@ -125,7 +217,11 @@ def unique_in_order(items):
 
 
 def required_policy_urls():
-    return unique_in_order([normalize_url(u) for u in PINNED_URLS] + latest_article_urls())
+    return unique_in_order(
+        [normalize_url(u) for u in CORE_URLS]
+        + [normalize_url(u) for u in PINNED_URLS]
+        + latest_article_urls()
+    )
 
 
 def git_commit():
@@ -187,6 +283,7 @@ def protected_url_entries(urls):
             "url": display_url(url),
             "path": rel_path(path.relative_to(ROOT)),
             "sha256": sha256_file(path),
+            "content_sha256": content_sha256_path(path),
         })
     return entries
 
@@ -327,6 +424,80 @@ def check_live():
         )
     if live.get("state_hash") != local.get("state_hash"):
         raise ReleaseGuardError("live release guard hash does not match local")
+    check_live_content(local)
+
+
+def live_url_for(url):
+    """Map a stamped URL to the canonical live URL (.net serves clean URLs;
+    /xxx.html 308s to /xxx, so fetch the final form directly)."""
+    url = display_url(url)
+    if url in ("/", "/index.html"):
+        return "/"
+    if url.endswith(".html"):
+        return url[: -len(".html")]
+    return url
+
+
+def fetch_live_text(path_url, cachebust):
+    sep = "&" if "?" in path_url else "?"
+    full = SITE_ORIGIN + path_url + sep + "cachebust=" + cachebust
+    req = urllib.request.Request(full, headers={"User-Agent": "release-guard-content"})
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        return resp.read().decode("utf-8", errors="replace")
+
+
+def check_live_content(local=None):
+    """Detect content rollback: a page whose URL still exists but whose live
+    body no longer matches the stamped local file (URL-set checks are blind
+    to this). Compares every protected URL plus the data registries."""
+    if local is None:
+        local = verify_local_state()
+
+    entries = local["protected_urls"]
+    missing = [e["url"] for e in entries if not e.get("content_sha256")]
+    if missing:
+        raise ReleaseGuardError(
+            "stamp has no content hashes yet (old schema); run `npm run release:stamp`"
+        )
+
+    cachebust = f"release-guard-content-{int(time.time())}"
+
+    def check_entry(entry):
+        try:
+            live_text = fetch_live_text(live_url_for(entry["url"]), cachebust)
+        except (urllib.error.URLError, TimeoutError, ValueError, OSError) as exc:
+            return (entry["url"], f"fetch failed: {exc}")
+        if content_sha256_text(live_text) != entry["content_sha256"]:
+            return (entry["url"], "live content differs from stamped local file")
+        return None
+
+    problems = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as pool:
+        for outcome in pool.map(check_entry, entries):
+            if outcome is not None:
+                problems.append(outcome)
+
+    for rel, expected in [
+        ("data/pages.json", local["summary"]["pages_sha256"]),
+        ("data/new-articles.json", local["summary"]["new_articles_sha256"]),
+    ]:
+        try:
+            live_text = fetch_live_text("/" + rel, cachebust)
+        except (urllib.error.URLError, TimeoutError, ValueError, OSError) as exc:
+            problems.append(("/" + rel, f"fetch failed: {exc}"))
+            continue
+        normalized = live_text.replace("\r\n", "\n").replace("\r", "\n")
+        if sha256_bytes(normalized.encode("utf-8")) != expected:
+            problems.append(("/" + rel, "live content differs from stamped local file"))
+
+    if problems:
+        detail = "; ".join(f"{url}: {why}" for url, why in sorted(problems)[:10])
+        raise ReleaseGuardError(
+            f"live content check failed on {len(problems)} page(s) "
+            f"(本番の中身がローカルのスタンプと食い違っています): {detail}"
+            + (" ..." if len(problems) > 10 else "")
+        )
+    print(f"release guard content OK: {len(entries)} URLs + 2 data files match live")
 
 
 def stamp():
@@ -346,7 +517,10 @@ def stamp():
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("command", choices=["stamp", "check-local", "check-build", "check-live"])
+    parser.add_argument(
+        "command",
+        choices=["stamp", "check-local", "check-build", "check-live", "check-live-content"],
+    )
     args = parser.parse_args()
     try:
         if args.command == "stamp":
@@ -360,6 +534,8 @@ def main():
         elif args.command == "check-live":
             check_live()
             print("release guard live OK")
+        elif args.command == "check-live-content":
+            check_live_content()
     except ReleaseGuardError as exc:
         print(f"release guard failed: {exc}", file=sys.stderr)
         return 1
