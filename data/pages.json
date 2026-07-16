@@ -3214,12 +3214,12 @@
       "content_type": "reading",
       "published_at": "2026-06-26",
       "date_provisional": false,
-      "status": "archived",
+      "status": "published",
       "summary": "本文は非公開化。いつの日か復活できるよう、タイトルのみ記録しています。",
       "parent": "01002-nakaizumi.html",
-      "count_as_knowledge": false,
-      "show_in_updates": false,
-      "show_in_all_articles": false
+      "count_as_knowledge": true,
+      "show_in_all_articles": true,
+      "updated_at": "2026-07-14"
     },
     {
       "title": "旧磐田市の成り立ち ── 村から町、町から市へ",
@@ -14909,6 +14909,96 @@
       "summary": "明治初年頃まで東海道より北には大八車の通れる道がなかった。向笠村の高塚太郎平が全私財を投じ独力で明治20年に完成させた新道。県が認めた13年間の通行料を一切取らなかった道づくりと、すべてを失った生涯をたどる。",
       "parent": "k030.html",
       "level": "L2"
+    },
+    {
+      "title": "熊野御前の伝説と行興寺の長藤 ── 平家物語に刻まれた孝心と遠州の美しい花の名所",
+      "url": "t019.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-14",
+      "updated_at": "2026-07-14",
+      "date_provisional": true,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": false,
+      "show_in_all_articles": true,
+      "summary": "熊野御前の伝説と行興寺の長藤 ── 平家物語に刻まれた孝心と遠州の美しい花の名所を磐田物語の公開記事として整理。",
+      "parent": "01004-toyoda.html",
+      "section": "豊田",
+      "topics": [
+        "熊野御前の伝説と行興寺の長藤 ── 平家物語に刻まれた孝心と遠州の美しい花の名所"
+      ],
+      "level": "L1"
+    },
+    {
+      "title": "中泉陣屋と、町を支えた二人の代官 - 伊奈忠次と林鶴梁から読む",
+      "url": "oishi-iwata-tochi-kiokuroku/05",
+      "district": [
+        "common",
+        "nakaizumi"
+      ],
+      "themes": [
+        "land-memory",
+        "tokugawa",
+        "water",
+        "disaster",
+        "real-estate",
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-16",
+      "updated_at": "2026-07-16",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "大石浩之の磐田土地記憶録 第5回。中泉陣屋を、伊奈忠次の土地整備と林鶴梁の災害救済から読み、町を支えた行政の記憶として整理する。",
+      "parent": "oishi-iwata-tochi-kiokuroku/",
+      "section": "磐田共通",
+      "topics": [
+        "中泉陣屋",
+        "中泉代官所",
+        "中泉御殿",
+        "伊奈忠次",
+        "林鶴梁",
+        "寺谷用水",
+        "恵済倉",
+        "天領",
+        "土地の記憶",
+        "不動産",
+        "災害救済"
+      ],
+      "level": "L2",
+      "source_refs": [
+        "provided_pdf:20260709-05-nakaizumi-ina-hayashi",
+        "provided_pdf:20260709-05-nakaizumi-jinya-research"
+      ]
+    },
+    {
+      "title": "掛塚湊と、遠州の小江戸とよばれたまち",
+      "url": "r001.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-08",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "天竜川河口に栄えた掛塚湊を、材木輸送、廻船問屋、遠州の小江戸、伊豆石の蔵、掛塚まつりの屋台に残る記憶から読む。",
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "竜洋地区",
+      "count_as_knowledge": false,
+      "updated_at": "2026-07-14"
     }
   ]
 }
