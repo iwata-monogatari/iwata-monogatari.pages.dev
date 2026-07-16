@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1784214210,
-  "generation": 20260717000330,
-  "git_commit_at_stamp": "ce05982a607de52f347dc799a74dc1fac5ac7387",
+  "generated_at_unix": 1784214530,
+  "generation": 20260717000850,
+  "git_commit_at_stamp": "4efc0ccef0f45273a16b5a9226dfd4720914d7ac",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -21,6 +21,10 @@
     {
       "path": "_redirects",
       "sha256": "aabe1269ca1062210ef5feddd149ba5c69b3d359e569ff52fd2552d50205d9b5"
+    },
+    {
+      "path": "_headers",
+      "sha256": "ef963463cef6bc7669844461eb27b1a96886ea37056b88597ad5293b20a0b4eb"
     },
     {
       "path": "c034.html",
@@ -44,7 +48,7 @@
     },
     {
       "path": "scripts/check_live_sync.py",
-      "sha256": "108a51f821ef3461e6a45f4c79c294659a3b637a1eab9135e377c93cf0c2395e"
+      "sha256": "823517b930a04e71de8946f5d66acc7d9804c7c5b4e278e440badb1e3af0e57b"
     },
     {
       "path": "scripts/predeploy_guard.py",
@@ -52,7 +56,7 @@
     },
     {
       "path": "scripts/release_guard.py",
-      "sha256": "21da3ca092412c7fc1856a76d75181ae7a42075c7aee7869bab3d52c1fbde9f7"
+      "sha256": "0d429b6619465a43cc68dfa35d814ff43e8c84250a9aae8a8320118424977d4e"
     },
     {
       "path": "sitemap.xml",
@@ -696,7 +700,7 @@
     }
   ],
   "schema": 1,
-  "state_hash": "faf58104db6fc49db787bd6bf62cbe4df1dbcaa71f87295275b850f8c6f7e909",
+  "state_hash": "812d832940be7c01f5aa24fa5649374b4f11f6012db3090465aa66a4a92ffbe3",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 631,

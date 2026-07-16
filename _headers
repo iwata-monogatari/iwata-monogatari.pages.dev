@@ -3,3 +3,12 @@
 
 /archive/*
   X-Robots-Tag: noindex
+
+/data/pages.json
+  Cache-Control: no-store, no-cache, must-revalidate
+
+/data/new-articles.json
+  Cache-Control: no-store, no-cache, must-revalidate
+
+/data/release-guard.json
+  Cache-Control: no-store, no-cache, must-revalidate

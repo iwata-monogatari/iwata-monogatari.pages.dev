@@ -17,6 +17,7 @@ LATEST_ARTICLE_LIMIT = 120
 
 PROTECTED_FILES = [
     "_redirects",
+    "_headers",
     "c034.html",
     "data/new-articles.json",
     "data/pages.json",

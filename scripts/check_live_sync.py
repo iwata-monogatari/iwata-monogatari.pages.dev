@@ -22,6 +22,61 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE_ORIGIN = "https://iwata-monogatari.net"
+EXPECTED_REMOTE_SLUG = "iwata-monogatari/iwata-monogatari.pages.dev"
+
+
+def git_output(args):
+    result = subprocess.run(
+        ["git", *args],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+    )
+    if result.returncode != 0:
+        raise RuntimeError((result.stderr or result.stdout or "git command failed").strip())
+    return result.stdout.strip()
+
+
+def check_git_preflight():
+    try:
+        if not (ROOT / ".git").exists():
+            raise RuntimeError("not a git checkout")
+
+        remote_url = git_output(["config", "--get", "remote.origin.url"])
+        if EXPECTED_REMOTE_SLUG not in remote_url.replace("\\", "/"):
+            raise RuntimeError(f"unexpected origin: {remote_url}")
+
+        branch = git_output(["rev-parse", "--abbrev-ref", "HEAD"])
+        if branch != "main":
+            raise RuntimeError(f"not on main branch: {branch}")
+
+        fetch = subprocess.run(
+            ["git", "fetch", "--quiet", "origin", "main"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+        )
+        if fetch.returncode != 0:
+            raise RuntimeError("could not fetch origin/main: " + (fetch.stderr or fetch.stdout).strip())
+
+        head = git_output(["rev-parse", "HEAD"])
+        origin_main = git_output(["rev-parse", "origin/main"])
+        if head != origin_main:
+            raise RuntimeError("local HEAD is not origin/main; run `git pull --ff-only` first")
+
+        tracked_status = git_output(["status", "--porcelain", "--untracked-files=no"])
+        if tracked_status.strip():
+            raise RuntimeError("tracked files have uncommitted changes:\n" + tracked_status)
+    except RuntimeError as exc:
+        print(f"git preflight failed: {exc}", file=sys.stderr)
+        return False
+
+    print("git preflight OK")
+    return True
 
 
 def check_wrangler_pages_scope():
@@ -125,6 +180,7 @@ def report(label, local_only, live_only):
 
 
 def main():
+    git_ok = check_git_preflight()
     scope_ok = check_wrangler_pages_scope()
     release_ok = check_release_guard_live()
 
@@ -154,11 +210,11 @@ def main():
         live_article_urls - local_article_urls,
     )
 
-    if ok1 and ok2 and scope_ok and release_ok:
+    if ok1 and ok2 and git_ok and scope_ok and release_ok:
         print("\nローカルと本番は一致しています。作業を始めて問題ありません。")
         return 0
 
-    if ok1 and ok2 and (not scope_ok or not release_ok):
+    if ok1 and ok2 and (not git_ok or not scope_ok or not release_ok):
         return 1
 
     print(

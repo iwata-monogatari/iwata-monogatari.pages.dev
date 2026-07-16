@@ -6,6 +6,7 @@
 
 - `data/pages.json` と `data/new-articles.json` の件数とハッシュ
 - トップ、更新一覧、全記事一覧、sitemap、redirect 設定
+- `_headers` の JSON no-store 設定
 - 直近120件の新着記事 URL
 - 2026-07-16 復旧時点で必ず守る記事:
   - `/m056.html`
@@ -44,6 +45,7 @@ Cloudflare Pages のビルドでは `scripts/predeploy_guard.py` が `scripts/re
 - 本番にまだ世代ファイルがない初回導入だけ: 許可
 
 起動時チェックとして `npm.cmd run check-live-sync` を実行すると、`main` 側の世代ファイルと本番の世代ファイルが一致しているかも確認する。
+同時に、ローカルの Git checkout が `origin/main` と一致しているかも確認する。
 
 ## 手元確認
 
@@ -54,3 +56,4 @@ npm.cmd run check-live-sync
 ```
 
 `check-live-sync` も世代ファイルを確認する。データ件数が同じでも、本文や一覧が古い場合は検出できる。
+`data/pages.json`、`data/new-articles.json`、`data/release-guard.json` は `_headers` で `Cache-Control: no-store` を指定し、起動時チェックが古い JSON を読まないようにする。
