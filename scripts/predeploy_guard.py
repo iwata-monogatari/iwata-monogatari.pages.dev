@@ -245,6 +245,24 @@ def verify_strict_git_state():
         )
 
 
+def verify_release_guard_state():
+    result = subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "release_guard.py"), "check-build"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+    )
+    if result.stdout.strip():
+        print(result.stdout.strip())
+    if result.returncode != 0:
+        if result.stderr.strip():
+            print(result.stderr.strip(), file=sys.stderr)
+        return fail("release generation guard blocked this build")
+    return 0
+
+
 def verify_latest_sync(pages, latest, index_html, updates_html):
     if len(pages) < MIN_PAGES_COUNT:
         return fail(f"page registry count went backwards: {len(pages)} < {MIN_PAGES_COUNT}")
@@ -350,6 +368,10 @@ def main():
             verify_strict_git_state()
         except GuardError as exc:
             return fail(str(exc))
+
+    release_guard = verify_release_guard_state()
+    if release_guard != 0:
+        return release_guard
 
     pages_data = load_json("data/pages.json")
     pages = pages_data["pages"]

@@ -62,6 +62,30 @@ def normalize_url(url):
     return "/" + str(url or "").lstrip("/")
 
 
+def check_release_guard_live():
+    try:
+        result = subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "release_guard.py"), "check-live"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=30,
+        )
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        print(f"(release guard check skipped: {exc})", file=sys.stderr)
+        return True
+
+    if result.stdout.strip():
+        print(result.stdout.strip())
+    if result.returncode != 0:
+        if result.stderr.strip():
+            print(result.stderr.strip(), file=sys.stderr)
+        return False
+    return True
+
+
 def fetch_live_json(path):
     url = SITE_ORIGIN + "/" + path.lstrip("/") + "?cachebust=check-live-sync"
     req = urllib.request.Request(url, headers={"User-Agent": "check-live-sync"})
@@ -102,6 +126,7 @@ def report(label, local_only, live_only):
 
 def main():
     scope_ok = check_wrangler_pages_scope()
+    release_ok = check_release_guard_live()
 
     try:
         live_pages = fetch_live_json("data/pages.json")
@@ -129,11 +154,11 @@ def main():
         live_article_urls - local_article_urls,
     )
 
-    if ok1 and ok2 and scope_ok:
+    if ok1 and ok2 and scope_ok and release_ok:
         print("\nローカルと本番は一致しています。作業を始めて問題ありません。")
         return 0
 
-    if ok1 and ok2 and not scope_ok:
+    if ok1 and ok2 and (not scope_ok or not release_ok):
         return 1
 
     print(
