@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1784214530,
-  "generation": 20260717000850,
-  "git_commit_at_stamp": "4efc0ccef0f45273a16b5a9226dfd4720914d7ac",
+  "generated_at_unix": 1784214781,
+  "generation": 20260717001301,
+  "git_commit_at_stamp": "3c1a2756d00cdd9a69a3f8d9f95f41d484b41fe5",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -18,6 +18,10 @@
     ]
   },
   "protected_files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "366d1804b48160f01664b4aa8a24b553ea5bccfa68f4f21e8ae6255835c521ef"
+    },
     {
       "path": "_redirects",
       "sha256": "aabe1269ca1062210ef5feddd149ba5c69b3d359e569ff52fd2552d50205d9b5"
@@ -56,7 +60,7 @@
     },
     {
       "path": "scripts/release_guard.py",
-      "sha256": "0d429b6619465a43cc68dfa35d814ff43e8c84250a9aae8a8320118424977d4e"
+      "sha256": "5898c513809a8ef8b2f58537671554fa83b2354a90536deb1d181dbd8ea5dede"
     },
     {
       "path": "sitemap.xml",
@@ -700,7 +704,7 @@
     }
   ],
   "schema": 1,
-  "state_hash": "812d832940be7c01f5aa24fa5649374b4f11f6012db3090465aa66a4a92ffbe3",
+  "state_hash": "f498d0bc15b2a0fd228321c3fa86761c1201d744af2273864ca000db110d7389",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 631,

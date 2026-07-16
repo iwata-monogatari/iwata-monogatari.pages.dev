@@ -16,6 +16,7 @@ SCHEMA_VERSION = 1
 LATEST_ARTICLE_LIMIT = 120
 
 PROTECTED_FILES = [
+    "AGENTS.md",
     "_redirects",
     "_headers",
     "c034.html",
