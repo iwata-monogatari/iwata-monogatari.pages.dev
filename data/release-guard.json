@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1784215980,
-  "generation": 20260717003300,
-  "git_commit_at_stamp": "03599dcf61c996f691d114bb4cac2c8f75536f4e",
+  "generated_at_unix": 1784216250,
+  "generation": 20260717003730,
+  "git_commit_at_stamp": "76f05599b52b47b6c979bdcdffde8788bf52fa4a",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -36,15 +36,15 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "4f95067968ef9d240952443a39629f8a7e5f630571d4e555ec5ec3058d4cfab0"
+      "sha256": "d60e5dcc7705fdc3dffa43b8f49f5c97d43e6566e3675c8ea6684dc6cf97af33"
     },
     {
       "path": "data/pages.json",
-      "sha256": "6868a1de9d2bd990b6e1a51629b0028504e002e74106ef2ffae4e756be91b1f4"
+      "sha256": "4c7ef4798321eda64d3c939f51970a150950e3ac9b61608ca5069fbc74508ba6"
     },
     {
       "path": "index.html",
-      "sha256": "26ca9b5a28be60a50fd5d35048f9a2ce62e4f4989fa28bf2628543bb4091c78e"
+      "sha256": "7840ce6a11179e567c6611ba85d62161cec7000a32d6ccc4b208e2afef040ce9"
     },
     {
       "path": "package.json",
@@ -64,24 +64,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "ab76aff9820a3374b3a1a8b92393ca26637cb459dabf6ed9749b9287015c8396"
+      "sha256": "31153b170c175c0934e6f5204c66b84541e0c6a4653d88cb1507f26439345f0c"
     },
     {
       "path": "updates.html",
-      "sha256": "ee278c9fa61f3eae7b3c3f509669c0e7e414c1a0d1accdf5bc9c2636aa8dd455"
+      "sha256": "5bdd5e3022e099ec4a5d05a07223d454071ce1194629f3f7c7c3188041e17629"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "a8b72f1a07f4aaac0423b56f0a089e52d97217d3e1b0b22885d8cdb413e85d62",
+      "content_sha256": "ef7e23f8aa6d8f2b1dce72d220a12a97ca966fdf4aaedf6f13c8b6d6f64ddde7",
       "path": "index.html",
-      "sha256": "26ca9b5a28be60a50fd5d35048f9a2ce62e4f4989fa28bf2628543bb4091c78e",
+      "sha256": "7840ce6a11179e567c6611ba85d62161cec7000a32d6ccc4b208e2afef040ce9",
       "url": "/"
     },
     {
-      "content_sha256": "28e66bb2695d894137ff73b5a4d93e120ecb4eac209cc3e241af85abb45b0f89",
+      "content_sha256": "5f38ce413843482e9b84fe92d01576817e118a6a6f2d74684d37b3d5f081ebd0",
       "path": "updates.html",
-      "sha256": "ee278c9fa61f3eae7b3c3f509669c0e7e414c1a0d1accdf5bc9c2636aa8dd455",
+      "sha256": "5bdd5e3022e099ec4a5d05a07223d454071ce1194629f3f7c7c3188041e17629",
       "url": "/updates.html"
     },
     {
@@ -149,6 +149,12 @@
       "path": "oishi-iwata-tochi-kiokuroku/05/index.html",
       "sha256": "9b2bd8eedaa5fa2bfdbce1bb85800478061e0d25ac662e64f58fe7bec7d8a9cb",
       "url": "/oishi-iwata-tochi-kiokuroku/05"
+    },
+    {
+      "content_sha256": "920e09de694d506e29793bec5b299b2279357e54e31a826d9bfb3ee8135970f9",
+      "path": "c056.html",
+      "sha256": "7d603d4baec4911c5257edd2f915ba6ce92e6205ee1ea0fd6eb67e324093400b",
+      "url": "/c056.html"
     },
     {
       "content_sha256": "6d375e1e12ce14a106409f064947f3da6df15444c7f6b513d3ad84bab78c144e",
@@ -839,22 +845,16 @@
       "path": "c104.html",
       "sha256": "49258a6d12f1b426a22d2b38d2e4b8dbac5fc3f57228db1d56d2e2c3e1ec1896",
       "url": "/c104.html"
-    },
-    {
-      "content_sha256": "931dac855b4c736a8a09b44a69d2116d0358bbc148c1547e6d599ac78d52b430",
-      "path": "c105.html",
-      "sha256": "d412b2386dc6c4f77a80c1854635040bcfc09d33d227e0757331231eca85a9d5",
-      "url": "/c105.html"
     }
   ],
   "schema": 1,
-  "state_hash": "0616cccaa95d9ddbb03881e6ca41c8eb30210848c99e1eab9a2a0a7d920c20a7",
+  "state_hash": "31af0f58c14268b4eb26c81dbf27bbc76e26c53eeb5e946119b69c19912d06f5",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 631,
-    "new_articles": 625,
-    "new_articles_sha256": "4f95067968ef9d240952443a39629f8a7e5f630571d4e555ec5ec3058d4cfab0",
-    "pages_sha256": "6868a1de9d2bd990b6e1a51629b0028504e002e74106ef2ffae4e756be91b1f4",
+    "new_articles": 626,
+    "new_articles_sha256": "d60e5dcc7705fdc3dffa43b8f49f5c97d43e6566e3675c8ea6684dc6cf97af33",
+    "pages_sha256": "4c7ef4798321eda64d3c939f51970a150950e3ac9b61608ca5069fbc74508ba6",
     "pages_total": 634,
     "published_pages": 633
   }
