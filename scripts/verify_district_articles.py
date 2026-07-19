@@ -15,7 +15,7 @@ PAGES_JSON = ROOT / "data" / "pages.json"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import build_district_articles as bda  # noqa: E402
 
-MITSUKE_EXPECTED_COUNT = 114
+MITSUKE_EXPECTED_COUNT = 115
 
 
 def load_pages_json():
