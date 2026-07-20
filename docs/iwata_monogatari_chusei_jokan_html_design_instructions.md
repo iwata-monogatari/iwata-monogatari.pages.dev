@@ -181,7 +181,7 @@
         <div class="local-property-note">
           <h4>磐田での「家と土地」の相続・空き家相談</h4>
           <p>見付や中泉など、古い歴史を持つ地区では、先代から受け継いだ土地の売却・境界調査・実家の片付けについてのご相談を専門家チームがお受けしています。お気軽にお問い合わせください。</p>
-          <a href="/fujigaoka-souzoku-soudan/" class="cta-button">相続・不動産相談窓口へ</a>
+          <a href="https://fudosan.atawi.link/souzoku/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=context_link" class="cta-button">相続・不動産相談窓口へ</a>
         </div>
       </footer>
     </article>

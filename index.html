@@ -783,13 +783,13 @@ img{max-width:100%;display:block;}
       </div>
         <section class="sidebar-card operator-guide-card">
           <h2>運営者からのご案内</h2>
-          <a class="operator-banner" href="https://www.fujigaoka-service.info/fudosan" target="_blank" rel="noopener">
+          <a class="operator-banner" href="https://fudosan.atawi.link/areas/iwata/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=context_link" target="_blank" rel="noopener">
             <span class="operator-banner-label">富士ヶ丘サービス</span>
             <strong>地域の記憶と、家・土地のこれから</strong>
             <span>磐田市・袋井市・掛川市・森町・浜松市天竜区の相続した実家、空き家、土地建物のご相談を承っています。</span>
           </a>
           <ul class="operator-link-list">
-            <li><a href="https://www.fujigaoka-service.info/fudosan" target="_blank" rel="noopener">富士ヶ丘サービスの不動産相談</a></li>
+            <li><a href="https://fudosan.atawi.link/areas/iwata/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=context_link" target="_blank" rel="noopener">富士ヶ丘サービスの不動産相談</a></li>
             <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービスの介護相談</a></li>
             <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">代表 大石浩之のnote</a></li>
           </ul>
@@ -1305,7 +1305,7 @@ img{max-width:100%;display:block;}
   <div class="archive-soudan__inner">
     <h2>地域の記憶と、家・土地のこれから</h2>
     <p class="archive-soudan__lead">古い家、相続した土地、空き家には、その地域で積み重ねられてきた記憶があります。磐田物語では、歴史を記録するだけでなく、家や土地のこれからを考える入口も用意しています。</p>
-    <a class="archive-soudan__link" href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">相続した実家・空き家・土地の整理について読む<span class="archive-soudan__arrow" aria-hidden="true">→</span></a>
+    <a class="archive-soudan__link" href="https://fudosan.atawi.link/jikka/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=context_link" target="_blank" rel="noopener">相続した実家・空き家・土地の整理について読む<span class="archive-soudan__arrow" aria-hidden="true">→</span></a>
   </div>
 </section>
 
@@ -1391,8 +1391,8 @@ img{max-width:100%;display:block;}
         <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
         <li><a href="https://oishi-hiroyuki.org/" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
         <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
+        <li><a href="https://fudosan.atawi.link/jikka/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=context_link" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
+        <li><a href="https://fudosan.atawi.link/souzoku/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=context_link" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
       </ul>
       <div class="im-sns">
         <p class="im-lh">大石ひろゆきのSNS</p>
@@ -1681,7 +1681,7 @@ img{max-width:100%;display:block;}
         li.className = 'new-article-item news-item';
         var district = newArticleDistrict(item);
         if (district) li.setAttribute('data-district', district);
-        
+
         var a = document.createElement('a');
         a.href = item.url;
         a.className = 'new-article-link news-link';
@@ -1690,31 +1690,31 @@ img{max-width:100%;display:block;}
 
         var metaSpan = document.createElement('span');
         metaSpan.className = 'news-meta';
-        
+
         var dateSpan = document.createElement('time');
         dateSpan.className = 'new-article-date news-date';
         dateSpan.dateTime = item.date;
         dateSpan.textContent = item.date;
-        
+
         var catSpan = document.createElement('span');
         catSpan.className = 'new-article-category news-tag';
         catSpan.textContent = item.category;
-        
+
         var titleSpan = document.createElement('span');
         titleSpan.className = 'new-article-title news-title';
         titleSpan.textContent = item.title;
-        
+
         metaSpan.appendChild(dateSpan);
         metaSpan.appendChild(catSpan);
         a.appendChild(metaSpan);
         a.appendChild(titleSpan);
-        
+
         var arrow = document.createElement('span');
         arrow.className = 'new-article-arrow news-arrow';
         arrow.setAttribute('aria-hidden', 'true');
         arrow.textContent = '→';
         a.appendChild(arrow);
-        
+
         li.appendChild(a);
         list.appendChild(li);
       });
