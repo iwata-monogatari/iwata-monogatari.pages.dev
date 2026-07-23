@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-23",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -6398,7 +6398,16 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "豊田"
+      "section": "豊田",
+      "updated_at": "2026-07-23",
+      "topics": [
+        "天竜川",
+        "七夕洪水",
+        "洪水碑",
+        "自然災害伝承碑",
+        "堤防"
+      ],
+      "level": "L2"
     },
     {
       "title": "三ヶ野坂・物見の松・本多忠勝伝承 ── 七つの時代の道が重なる坂",
@@ -6455,7 +6464,16 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "中泉"
+      "section": "中泉",
+      "updated_at": "2026-07-23",
+      "topics": [
+        "中泉御殿",
+        "関ヶ原の戦い",
+        "徳川家康",
+        "慶長年中卜斎記",
+        "板坂卜斎"
+      ],
+      "level": "L3"
     },
     {
       "title": "家康が見付から浜松へ移った理由 ── 信長の助言と「引馬」の改名",
@@ -6474,7 +6492,16 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "見付"
+      "section": "見付",
+      "updated_at": "2026-07-23",
+      "topics": [
+        "徳川家康",
+        "浜松城",
+        "引馬城",
+        "当代記",
+        "浜松御在城記"
+      ],
+      "level": "L3"
     },
     {
       "title": "城之崎城が完成していた場合の歴史IF ── 思考実験としての磐田",
@@ -6493,7 +6520,15 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "見付"
+      "section": "見付",
+      "updated_at": "2026-07-23",
+      "topics": [
+        "城之崎城",
+        "歴史IF",
+        "陣城説",
+        "徳川家康"
+      ],
+      "level": "L2"
     },
     {
       "title": "遠江国分尼寺 ── 語られてこなかった、もうひとつの国家寺院",
@@ -6588,7 +6623,16 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "磐田共通"
+      "section": "磐田共通",
+      "updated_at": "2026-07-23",
+      "topics": [
+        "バス交通",
+        "ユーバス",
+        "ユーバスカード",
+        "コミュニティバス",
+        "豊田町"
+      ],
+      "level": "L2"
     },
     {
       "title": "ヤマハ発動機と企業城下町としての磐田 ── 1955年の分離独立から御厨へ",
@@ -6607,7 +6651,17 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "磐田共通"
+      "section": "磐田共通",
+      "updated_at": "2026-07-23",
+      "topics": [
+        "ヤマハ発動機",
+        "企業城下町",
+        "YA-1",
+        "トヨタ2000GT",
+        "磐田工場",
+        "御厨"
+      ],
+      "level": "L2"
     },
     {
       "title": "磐田の農業特産品と土地利用 ── 台地の茶、温室のメロン、低地の畑",
@@ -6664,7 +6718,16 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "磐田共通"
+      "section": "磐田共通",
+      "updated_at": "2026-07-23",
+      "topics": [
+        "調査手法",
+        "古写真",
+        "住宅地図",
+        "聞き取り",
+        "歴史文書館"
+      ],
+      "level": "L2"
     },
     {
       "title": "秋葉信仰・常夜灯・旧東海道の石造物 ── 竜洋14基が伝える火伏せの祈り",
@@ -6683,7 +6746,16 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "磐田共通"
+      "section": "磐田共通",
+      "updated_at": "2026-07-23",
+      "topics": [
+        "秋葉信仰",
+        "秋葉常夜灯",
+        "可睡斎",
+        "秋葉講",
+        "石造物"
+      ],
+      "level": "L2"
     },
     {
       "title": "庚申塔・馬頭観音・道祖神から見る民俗信仰 ── 路傍に刻まれた祈りの形",
@@ -6702,7 +6774,16 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "磐田共通"
+      "section": "磐田共通",
+      "updated_at": "2026-07-23",
+      "topics": [
+        "庚申塔",
+        "馬頭観音",
+        "道祖神",
+        "庚申講",
+        "民俗信仰"
+      ],
+      "level": "L2"
     },
     {
       "title": "古代磐田郡・山名郡・豊田郡 ── 遠江国を分けた郡の境界線",
@@ -6778,7 +6859,16 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "見付"
+      "section": "見付",
+      "updated_at": "2026-07-23",
+      "topics": [
+        "見付宿",
+        "宿駅制度",
+        "伝馬朱印状",
+        "東海道宿村大概帳",
+        "十六夜日記"
+      ],
+      "level": "L3"
     },
     {
       "title": "見付宿を愛宕神社から俯瞰する ── 一枚の絵葉書が伝える宿場の家並み",
