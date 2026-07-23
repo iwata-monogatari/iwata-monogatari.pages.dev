@@ -1276,3 +1276,7 @@ future-themes経由で公開済みの記事のうち本文が薄い10本（2,500
 | c110 | c110.html | 紀行文学に見る磐田 | L3 |
 
 更新対象：各記事HTML、data/pages.json、data/new-articles.json、data/future-themes.json(T121〜T125)、sitemap.xml、c034.html、index.html、updates.html、集合知カウント(644)。
+
+## 2026-07-23 新規5本公開（戦国・近世テーマ第2弾 T126〜T130）
+
+遠州忩劇(c111)・見付と時宗(m136)・相給村(c112)・寺請制度と宗門人別帳(c113)・江戸の旅ブームと見付宿(m137)。いずれもL2。m135に遠州忩劇への内部リンクを追加。
