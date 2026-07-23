@@ -1261,3 +1261,18 @@ future-themes経由で公開済みの記事のうち本文が薄い10本（2,500
 | c070.html | 三年十八回の満願・浜北庚申寺・馬頭観音と助郷の接続・用語小辞典 | L2 |
 
 更新対象：各記事HTML、data/pages.json（updated_at・topics・level）、sitemap.xml（lastmod）、updates.html（「更新」10件）、docs/pages-ledger.md。
+
+## 2026-07-23 新規5本公開（古代・中世テーマ第1弾 T121〜T125）＋c034誤リンク修正
+
+空白領域から起こした新テーマバッチ(T121〜T150)の第1弾。万葉集(c108)・遠江国司(n071)・延喜式内社(c109)・遠江今川氏と見付端城(m135)・紀行文学(c110)の5本を新設(いずれもL2以上、c108/c110はL3)。
+あわせてc034全記事一覧の既存バグを修正：c094〜c105の12本に実在しないタイトル(お宝見聞帳系)の誤リンクが付いており、実記事タイトルに置き換えた。
+
+| ID | File | Title | Level |
+| --- | --- | --- | --- |
+| c108 | c108.html | 万葉集の遠江歌と磐田 | L3 |
+| n071 | n071.html | 遠江国司の人々 | L2 |
+| c109 | c109.html | 延喜式内社と磐田 | L2 |
+| m135 | m135.html | 遠江今川氏と見付端城 | L2 |
+| c110 | c110.html | 紀行文学に見る磐田 | L3 |
+
+更新対象：各記事HTML、data/pages.json、data/new-articles.json、data/future-themes.json(T121〜T125)、sitemap.xml、c034.html、index.html、updates.html、集合知カウント(644)。
