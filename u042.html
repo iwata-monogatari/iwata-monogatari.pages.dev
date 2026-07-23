@@ -20,68 +20,201 @@
 <link rel="icon" href="/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--kinari:#fffdf7;--cha:#2f7fa3;--matsu:#356f88;--sumi:#22303a;--usuzumi:#5b6b74;--waku:#d8e8ef;--paper:#fffdf7;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Zen Kaku Gothic New",sans-serif;color:var(--sumi);background:var(--kinari);line-height:1.95;font-size:17px;-webkit-font-smoothing:antialiased;}
+  a{color:var(--cha);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  main{max-width:760px;margin:0 auto;padding:0 22px;}
+  .crumb{font-size:13px;color:var(--usuzumi);padding:20px 0 6px;}
+  .crumb a{color:var(--usuzumi);}
+  .cat{display:inline-block;font-size:13px;color:var(--matsu);border-left:3px solid var(--cha);padding-left:9px;margin:18px 0 10px;letter-spacing:.04em;}
+  h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:27px;line-height:1.5;color:var(--sumi);margin:6px 0 28px;letter-spacing:.02em;}
+  .lead{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:22px 24px;font-size:16px;color:#3a4750;margin-bottom:34px;}
+  figure{margin:30px 0;}
+  figure svg{display:block;width:100%;height:auto;border:1px solid var(--waku);border-radius:4px;background:#fff;}
+  figcaption{font-size:13px;color:var(--usuzumi);margin-top:8px;text-align:center;letter-spacing:.02em;line-height:1.7;}
+  h2{font-family:"Shippori Mincho",serif;font-weight:600;font-size:22px;color:var(--matsu);margin:40px 0 16px;padding-bottom:9px;border-bottom:2px solid var(--waku);letter-spacing:.02em;}
+  p{margin:0 0 20px;}
+  h3{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--sumi);margin:34px 0 12px;}
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--waku);margin:24px 0 30px;font-size:14px;}
+  th,td{border:1px solid var(--waku);padding:9px 10px;vertical-align:top;line-height:1.7;}
+  th{background:#eef6fb;color:var(--matsu);white-space:nowrap;}
+  .refs{font-size:14px;color:var(--usuzumi);}
+  .refs li{margin:0 0 6px 1.2em;line-height:1.8;}
+  .related{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 8px;}
+  .related a{background:var(--paper);border:1px solid var(--waku);border-radius:4px;padding:10px 15px;font-size:14px;color:var(--matsu);}
+  .related a:hover{background:#f4fafc;text-decoration:none;}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:40px 0 10px;flex-wrap:wrap;}
+  .pager a{font-size:14px;}
+  .note{font-size:14px;color:var(--usuzumi);line-height:1.8;}
+  .note-box{border-left:4px solid var(--matsu);background:#eef6fb;padding:.8em 1em;margin:0 0 22px;font-size:14.5px;}
+  @media(max-width:600px){h1{font-size:22px;}body{font-size:16px;}h2{font-size:19px;}table{font-size:13px;}}
+</style>
 <link rel="stylesheet" href="/assets/css/site-header.css">
 <link rel="stylesheet" href="/assets/css/iwata-area-color.css">
-<link rel="stylesheet" href="/assets/css/source-reading.css">
 </head>
 <body class="area-mikuriya">
-<header class="gh-site"><div class="gh-bar"><a class="gh-brand" href="/"><span class="gh-logo">磐田物語<span class="gh-dot">。</span></span><span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span></a><nav class="gh-menu" aria-label="主要ナビゲーション"><a href="/c007.html">はじめに</a><a href="/c001.html">憲章</a><a href="/c019.html">佐口史料室</a><a href="/#new">新着</a><a href="/bbs.html">掲示板</a><a href="/c034.html">全記事一覧</a></nav></div></header>
-<div class="crumbs"><a href="/">磐田物語</a> ／ <a href="/01003-mikuriya.html">御厨地区</a> ／ 旧田原小学校の記憶</div>
-<div class="article-head">
-  <p class="cat">御厨・田原の史話 ｜ 学校と暮らし</p>
-  <h1>旧田原小学校の記憶<br>── 校舎火災・校庭・ピアノ・飛行機見物</h1>
-  <p class="sub">『田原の史話』には、沿革とは別に、旧田原小学校で過ごした人々の回想が収められている。校舎、校庭、西門、ピアノ、飛行機見物。制度史だけでは残りにくい、子どもの目線の学校風景を読む。</p>
-</div>
-<article class="article">
-  <p class="lead">学校の記憶は、年表だけでは伝わらない。どこに門があり、どこに運動場があり、どんな音が聞こえ、何を見に行ったのか。旧田原小学校の回想は、地域の学校が子どもたちの身体感覚と結びついていたことを教えてくれる。</p>
 
-  <div class="summary">
-    <div class="sh">本稿の要点</div>
-    <ul>
-      <li>旧田原小学校の記憶は、校舎配置や校庭の風景と結びついている。</li>
-      <li>校舎火災の記録は、学校が地域全体の財産だったことを示す。</li>
-      <li>ピアノや飛行機見物の回想は、近代的な音・乗り物が子どもに与えた驚きを伝える。</li>
-    </ul>
+<header class="gh-site"><div class="gh-bar"><a class="gh-brand" href="/"><span class="gh-logo">磐田物語<span class="gh-dot">。</span></span><span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span></a><nav class="gh-menu" aria-label="主要ナビゲーション"><a href="/c007.html">はじめに</a><a href="/c001.html">憲章</a><a href="/c019.html">佐口史料室</a><a href="/#new">新着</a><a href="/bbs.html">掲示板</a><a href="/c034.html">全記事一覧</a></nav></div></header>
+
+<main>
+  <div class="crumb"><a href="https://iwata-monogatari.net/">磐田物語</a> ／ <a href="/01003-mikuriya.html">御厨地区</a> ／ 旧田原小学校の記憶</div>
+
+  <span class="cat">御厨・田原の史話 ｜ 学校と暮らし</span>
+
+  <h1>旧田原小学校の記憶 ──<br>校舎火災・校庭・ピアノ・飛行機見物</h1>
+
+  <div class="lead">
+    学校の記憶は、年表だけでは伝わらない。どこに門があり、どこに運動場があり、どんな音が聞こえ、何を見に行ったのか。『田原の史話』に収められた旧田原小学校の回想は、地域の学校が子どもたちの身体感覚と深く結びついていたことを教えてくれる。
   </div>
 
+  <h2>学校の記憶を残すということ</h2>
+
+  <p>学校の歴史というと、たいていは「明治◯年開校」「昭和◯年校舎改築」といった沿革の年表が思い浮かぶ。それは確かに大切な記録である。しかし、その学校に通った子どもたちが実際に何を見て、何を感じ、何に心を躍らせたのかは、そうした年表からはこぼれ落ちてしまう。<a href="/u041.html">田原地区の学校史</a>で制度としての歩みをたどったのに対して、この記事で読みたいのは、そこに通った人々の側の記憶である。</p>
+
+  <p>『田原の史話』には、沿革とは別に、旧田原小学校で過ごした人々の回想がいくつも収められている。「学校火災の記録」「旧田原小学校」「古きを訪ねて」「武八さんのピアノ」「小学校の想い出」「始めての飛行機見物」── その表題を眺めるだけでも、書き手にとってその出来事がいかに鮮やかに残っていたかが伝わってくる。校舎、校庭、西門、ピアノ、そして空を飛ぶ機械。制度史だけでは残りにくい、子どもの目線の学校風景を、ここから読み取ってみたい。</p>
+
   <h2>校舎と校庭がつくった記憶</h2>
+
   <p>旧田原小学校の回想には、校舎の位置、門、校庭、運動場、体育館など、場所の記憶が細かく残っている。学校は教室の内側だけで成り立っていたのではなく、門をくぐる、校庭を走る、運動場に並ぶ、校舎の前を通るという一連の動きのなかで記憶された。</p>
+
+  <p>ここに、場所の記憶というものの性質がよくあらわれている。人は、学校を建物の名前や住所として覚えているのではない。毎朝どの門から入り、どの道を通って教室へ向かい、休み時間にどこで遊んだか ── 体を動かした道筋そのものとして覚えているのである。だから、何十年たっても「あの門を入ると右手に」というふうに、細部までよみがえってくる。学校とは、子どもにとって、一日の大半を過ごす小さな世界だった。その世界の隅々までを、体が覚えていたのだ。</p>
+
   <p>こうした記憶は、校舎が建て替わったり、敷地の使い方が変わったりすると失われやすい。だからこそ、旧校舎の位置や門の写真、思い出の文章は、地域の土地を読み直す手がかりになる。学校は、地図上の公共施設である以前に、何世代もの子どもが同じ動きを繰り返した場所だった。</p>
 
+  <figure>
+    <svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="門から校庭、運動場、校舎へと続く子どもの動線が学校の記憶を形づくったことを示す図。">
+      <rect x="0" y="0" width="700" height="200" fill="#f7fbfd"/>
+      <text x="350" y="30" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="15" fill="#356f88">体が覚えていた、学校という世界</text>
+      <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="12.5">
+        <rect x="40" y="80" width="130" height="46" rx="8" fill="#dcecf3" stroke="#8fbcd0"/>
+        <text x="105" y="108" text-anchor="middle" fill="#22303a">門をくぐる</text>
+        <rect x="200" y="80" width="130" height="46" rx="8" fill="#bcd6e2"/>
+        <text x="265" y="108" text-anchor="middle" fill="#22303a">校庭を走る</text>
+        <rect x="360" y="80" width="140" height="46" rx="8" fill="#8fbcd0"/>
+        <text x="430" y="108" text-anchor="middle" fill="#22303a">運動場に並ぶ</text>
+        <rect x="530" y="80" width="130" height="46" rx="8" fill="#2f7fa3"/>
+        <text x="595" y="108" text-anchor="middle" fill="#fff">校舎・教室へ</text>
+        <path d="M170 103 L198 103" stroke="#356f88" stroke-width="1.8" marker-end="url(#u042a)"/>
+        <path d="M330 103 L358 103" stroke="#356f88" stroke-width="1.8" marker-end="url(#u042b)"/>
+        <path d="M500 103 L528 103" stroke="#356f88" stroke-width="1.8" marker-end="url(#u042c)"/>
+      </g>
+      <text x="350" y="172" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11.5" fill="#5b6b74">学校は、建物の名ではなく「体を動かした道筋」として記憶された</text>
+      <defs>
+        <marker id="u042a" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#356f88"/></marker>
+        <marker id="u042b" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#356f88"/></marker>
+        <marker id="u042c" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#356f88"/></marker>
+      </defs>
+    </svg>
+    <figcaption>図1　体が覚えていた学校という世界。門・校庭・運動場・校舎という道筋の連なりが、そのまま学校の記憶を形づくった。</figcaption>
+  </figure>
+
   <h2>校舎火災が示す「地域の学校」</h2>
+
   <p>『田原の史話』には、学校火災の記録も置かれている。校舎が失われることは、授業を行う建物がなくなるだけではない。机、教材、記録、地域の寄付で整えた備品、子どもたちの居場所が一度に失われる出来事だった。</p>
-  <p>火災後の学校再建は、行政だけで完結するものではない。地域の人々がどのように受け止め、どこで授業を続け、どのように校舎を戻していったのかが問われる。学校火災の記録は、田原小学校が地域の共同財産であったことをはっきり示している。</p>
+
+  <p>とりわけ重いのは、記録が失われるということである。学校には、開校以来の沿革誌や、卒業生の名簿、地域から寄せられた品々の記録などが蓄えられている。火災は、そうした積み重ねを一夜にして灰にしてしまう。地域の学校の歩みをたどろうとするとき、どうしても分からない部分が残るのは、こうした火災が関わっている場合も少なくない。学校火災は、建物の損失であると同時に、地域の記憶そのものの損失でもあったのだ。『田原の史話』が、火災の記録をわざわざ一編として立てているのは、その出来事が地域にとっていかに大きかったかを示している。</p>
+
+  <p>火災後の学校再建は、行政だけで完結するものではない。地域の人々がどのように受け止め、どこで授業を続け、どのように校舎を戻していったのかが問われる。学校火災の記録は、田原小学校が地域の共同財産であったことをはっきり示している。当時、学校を建てるということは、村を挙げての大事業だった。土地を提供し、材木を出し、寄付を募り、人手を出す ── そうやって築き上げた校舎だからこそ、それを失ったときの衝撃は大きく、そして再建へ向かう人々の意志もまた、強かったのである。</p>
+
+  <h2>村にとっての学校とは</h2>
+
+  <p>いまの感覚では、学校は行政が設置し、運営する公共施設である。しかし、明治から昭和の初めにかけての農村では、学校はもっと村に近い存在だった。校舎の敷地は村人が差し出した土地であり、建築の費用は寄付でまかなわれ、普請には村人自身が汗を流す。オルガンや掛図といった教材・備品の類も、地域の有志の寄付によって整えられることが多かった。つまり学校は、村の人々が自分たちの手で築き、支え続ける施設だったのである。行政から与えられたものではなく、自分たちで作り上げたもの ── その意識の違いは、決して小さくない。</p>
+
+  <p>だからこそ、村人にとって学校は「うちの学校」だった。運動会があれば村じゅうの人が集まり、学芸会があれば大人たちが仕事を休んで総出で見に行く。学校は、子どもの教育の場であると同時に、村の集会所であり、催しの舞台であり、そして地域の誇りそのものでもあった。旧田原小学校の回想に、子どもの目線だけでなく、地域の人々の関わりの気配が濃く漂うのは、そうした背景があるからだろう。校舎火災の記録が、単なる事故の記録以上の重みをもって語られるのも、同じ理由である。学校を失うことは、村が自分たちの手で築いた大切なものを失うことにほかならなかった。</p>
 
   <h2>ピアノと飛行機見物</h2>
-  <p>「武八さんのピアノ」や「始めての飛行機見物」といった回想は、学校史のなかでも特に生活感が濃い。ピアノは、音楽教育の道具であると同時に、当時の子どもにとっては新しい音の象徴だった。校舎のなかに響くピアノの音は、村の学校に近代が入り込んできた感覚を残している。</p>
-  <p>飛行機見物の回想も同じである。空を飛ぶ機械を見に行くという体験は、現在の感覚では想像しにくいほど大きな出来事だった。学校の授業や行事は、地域の外から入ってくる新しい技術や情報を、子どもたちが最初に受け止める場でもあった。</p>
 
-  <table class="record-table">
-    <caption>旧田原小学校の回想が伝える主な記憶</caption>
-    <thead><tr><th>記憶</th><th>読みどころ</th></tr></thead>
+  <p>「武八さんのピアノ」や「始めての飛行機見物」といった回想は、学校史のなかでも特に生活感が濃い。ピアノは、音楽教育の道具であると同時に、当時の子どもにとっては新しい音の象徴だった。校舎のなかに響くピアノの音は、村の学校に近代が入り込んできた感覚を残している。</p>
+
+  <p>いまでは、どの学校にもピアノがあるのが当たり前である。しかし当時の農村の子どもたちにとって、それは初めて耳にする、まったく新しい種類の音だった。誰かが鍵盤に触れると、聞いたこともない澄んだ響きが校舎に広がる。その驚きが、何十年もたって回想に書きとめられるほど鮮明に残っている ── そこに、当時の暮らしと近代との出会いの、生々しい手ざわりがある。</p>
+
+  <p>飛行機見物の回想も同じである。空を飛ぶ機械を見に行くという体験は、現在の感覚では想像しにくいほど大きな出来事だった。学校の授業や行事は、地域の外から入ってくる新しい技術や情報を、子どもたちが最初に受け止める場でもあった。空を仰いで飛行機を探した子どもたちの興奮は、時代が大きく動いていることを、体で感じ取った瞬間だったのだろう。</p>
+
+  <p>ピアノにせよ、飛行機にせよ、こうした新しいものが、たいてい学校を通じて子どもたちに届いたという点は、注目に値する。農村の日常のなかに、外の世界の新しさが入り込んでくる窓口 ── それが学校だった。教科書や先生の話、備品として運び込まれる道具、そして学校行事として組まれる見物。学校は、村と外の世界とを結ぶ、細いけれども確かな通路だったのである。田原の子どもたちは、その細い通路を通って、少しずつ外の広い世界を知っていったのである。</p>
+
+  <figure>
+    <svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ピアノの音と飛行機という新しい技術が、学校を通じて子どもたちに届いたことを示す図。">
+      <rect x="0" y="0" width="700" height="200" fill="#f7fbfd"/>
+      <text x="350" y="30" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="15" fill="#356f88">学校に入ってきた「新しい時代」</text>
+      <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="12.5">
+        <rect x="55" y="70" width="180" height="60" rx="8" fill="#8fbcd0"/>
+        <text x="145" y="96" text-anchor="middle" fill="#22303a">ピアノ</text>
+        <text x="145" y="116" text-anchor="middle" fill="#22303a" font-size="10.5">聞いたことのない音</text>
+        <rect x="465" y="70" width="180" height="60" rx="8" fill="#8fbcd0"/>
+        <text x="555" y="96" text-anchor="middle" fill="#22303a">飛行機</text>
+        <text x="555" y="116" text-anchor="middle" fill="#22303a" font-size="10.5">空を飛ぶ機械</text>
+        <rect x="275" y="72" width="150" height="56" rx="8" fill="#2f7fa3"/>
+        <text x="350" y="96" text-anchor="middle" fill="#fff">学校</text>
+        <text x="350" y="115" text-anchor="middle" fill="#dfeef5" font-size="10.5">最初に出会う場</text>
+        <path d="M235 100 L272 100" stroke="#356f88" stroke-width="1.8" marker-end="url(#u042d)"/>
+        <path d="M463 100 L427 100" stroke="#356f88" stroke-width="1.8" marker-end="url(#u042e)"/>
+      </g>
+      <text x="350" y="172" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11.5" fill="#5b6b74">村の子どもが「近代」に出会う窓口が、学校だった</text>
+      <defs>
+        <marker id="u042d" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#356f88"/></marker>
+        <marker id="u042e" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#356f88"/></marker>
+      </defs>
+    </svg>
+    <figcaption>図2　学校に入ってきた「新しい時代」。ピアノの音も、空飛ぶ機械も、子どもたちは学校を通じて最初に出会った。</figcaption>
+  </figure>
+
+  <h2>旧田原小学校の回想 ── 主な記憶</h2>
+
+  <table>
+    <thead>
+      <tr><th>記憶</th><th>読みどころ</th></tr>
+    </thead>
     <tbody>
-      <tr><td>校舎・校庭</td><td>学校の空間配置と、子どもたちの身体感覚が結びつく。</td></tr>
-      <tr><td>校舎火災</td><td>学校が地域共有の財産であり、再建が共同の課題だったことを示す。</td></tr>
-      <tr><td>ピアノ</td><td>音楽教育と近代的な音への驚きを伝える。</td></tr>
-      <tr><td>飛行機見物</td><td>新しい技術や乗り物が、学校行事や子どもの記憶に入ってくる場面を示す。</td></tr>
+      <tr><td>校舎・校庭</td><td>学校の空間配置と、子どもたちの身体感覚が結びつく</td></tr>
+      <tr><td>校舎火災</td><td>学校が地域共有の財産であり、再建が共同の課題だったことを示す</td></tr>
+      <tr><td>ピアノ</td><td>音楽教育と、近代的な音への驚きを伝える</td></tr>
+      <tr><td>飛行機見物</td><td>新しい技術や乗り物が、学校行事や子どもの記憶に入ってくる場面を示す</td></tr>
     </tbody>
   </table>
 
-  <div class="pull"><p>旧田原小学校の回想は、学校を「建物」ではなく、子どもたちが見て、聞いて、歩いた場所として残している。</p></div>
+  <div class="note-box">
+    <strong>確認できること・できないこと</strong><br>
+    本稿は『田原の史話』に収められた回想文（本文19〜25頁）にもとづく。回想は書き手の記憶によるものであり、校舎火災の年次や被害の詳細、ピアノの導入時期などを一次史料で確定したものではない。ここでは個々の年代を断定せず、回想が伝える体験の質を読み取ることに重きを置いた。
+  </div>
 
-  <section class="source-box">
-    <h2>参考資料</h2>
-    <ul>
-      <li>『田原の史話』本文19〜25頁「学校火災の記録」「旧田原小学校」「古きを訪ねて」「武八さんのピアノ」「小学校の想い出」「始めての飛行機見物」（PDF: 20260713154825296.pdf）</li>
-      <li>磐田物語「田原地区の学校史」u041</li>
-    </ul>
-  </section>
+  <h2>回想が伝えてくれるもの</h2>
 
-  <section class="related"><h2>関連記事</h2><ul><li><a href="/u041.html">田原地区の学校史</a></li><li><a href="/u017.html">田原村の誕生</a></li><li><a href="/u036.html">御厨の成り立ち</a></li><li><a href="/01003-mikuriya.html">御厨地区の入口ページ</a></li></ul></section>
-</article>
-<div class="article-nav"><a href="/01003-mikuriya.html">← 御厨地区の入口ページへ戻る</a><a href="/c034.html">全記事一覧を見る</a></div>
-<footer class="source-foot"><div class="inner"><a class="brand" href="/">磐田物語<span class="gh-dot">。</span></a><p>静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。</p></div></footer>
+  <p>旧田原小学校の回想は、学校を「建物」ではなく、子どもたちが見て、聞いて、歩いた場所として残している。そこには、統計にも沿革誌にもあらわれない、暮らしの手ざわりがある。門をくぐる感覚、校庭の土の匂い、初めて聞いたピアノの響き、空を見上げた日の興奮 ── そうした一つ一つは、書きとめられなければ、その人の一代限りで消えてしまうものばかりである。</p>
+
+  <p>『田原の史話』のような地域の記録集が、沿革の年表とあわせてこうした回想を収めていることには、大きな意味がある。制度の歴史と、体験の記憶。その両方がそろってはじめて、一つの学校の姿は立体的に浮かび上がる。旧田原小学校の校舎はすでになく、その風景を知る人も少なくなっていく。だからこそ、この回想の一編一編は、田原という土地の記憶を次の世代へ手渡す、かけがえのない証言なのである。</p>
+
+  <p>いま、田原の地を歩いても、旧校舎の姿を見ることはできない。しかし、この回想を手に土地を歩けば、風景の見え方は変わってくる。あのあたりに門があり、その先に校庭が広がり、校舎からはピアノの音が聞こえていた ── そう思い描きながら歩くとき、何の変哲もない一角が、かつて何百人もの子どもたちが駆け回った、賑やかな場所として立ちあらわれてくる。地域史の記録は、失われた風景を、読む人の心のなかにもう一度立ち上げるための手がかりでもある。学校という、誰もが通り、誰もが自分なりの記憶を持っている場所の記録は、とりわけ多くの人の心に、深く響くにちがいない。</p>
+
+  <h3>主な参考資料</h3>
+  <ul class="refs">
+    <li>『田原の史話』本文19〜25頁「学校火災の記録」「旧田原小学校」「古きを訪ねて」「武八さんのピアノ」「小学校の想い出」「始めての飛行機見物」</li>
+    <li>磐田物語「<a href="/u041.html">田原地区の学校史</a>」「<a href="/u017.html">田原村の誕生</a>」「<a href="/u036.html">御厨の成り立ち</a>」</li>
+  </ul>
+  <p class="note">回想文にもとづくため、年次・細部は確定事項として扱っていない。その旨を本文中に明示している。</p>
+
+  <h3>あわせて読みたい</h3>
+  <div class="related">
+    <a href="https://iwata-monogatari.net/u041.html">田原地区の学校史</a>
+    <a href="https://iwata-monogatari.net/u017.html">田原村の誕生</a>
+    <a href="https://iwata-monogatari.net/u036.html">御厨の成り立ち</a>
+  </div>
+
+  <div class="pager">
+    <a href="https://iwata-monogatari.net/01003-mikuriya.html">← 御厨地区の入口ページへ</a>
+    <a href="https://iwata-monogatari.net/u041.html">関連記事 ── 田原地区の学校史 →</a>
+  </div>
+
+  <section class="local-property-note" aria-labelledby="local-property-note-title" data-common></section>
+
+</main>
+
+<section class="article-policy" data-common></section>
+
+<footer class="im-foot"></footer>
 <script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="iwata-monogatari" data-fujigaoka-analytics="true"></script>
 </body>
 </html>
