@@ -115,6 +115,8 @@
 
   .figc{font-size:12.5px;color:var(--ink-soft);text-align:center;margin:8px 0 0;letter-spacing:.02em;}
   figure.hero{margin:26px 0 8px;}
+  figure.hero svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:6px;background:var(--card);box-shadow:var(--shadow);}
+  figure figcaption{font-size:12.5px;color:var(--ink-soft);margin-top:8px;line-height:1.7;letter-spacing:.02em;}
 
   @media(max-width:760px){
     table.kx{font-size:13.5px;}
@@ -225,6 +227,32 @@
   <p>両地区を分ける最も分かりやすい軸は、水との付き合い方である。ここでは確認できる事実と、地形から導かれる推定とを分けながら述べたい。</p>
   <p>於保地区については、「大池」と呼ばれる溜池の存在が地域の記憶として伝わっている。低地でありながら安定して水を得るために、池に水を溜め、必要なときに田へ配るという仕組みは、水源が天水や小河川に偏る土地でよく見られる工夫である。もし大池がそうした農業用水の要であったとすれば、於保の集落と水田は、この「溜めて配る」拠点を中心に編成されていた可能性がある。これは確定した断定ではなく、溜池という地名・地物から導かれる見立てとして提示しておく。</p>
   <p>一方の長野地区は、小島・前野・鮫島・白拍子などの旧集落が低地に点在し、水田が面的に広がる景観が読み取りやすい。ここでは、特定の一つの水源に依存するというより、用水路と排水路の網の中で「水を引く・逃がす」連続的な調整が、暮らしの中心にあったと考えられる。低地の水田は、水が足りなくても困るが、抜けなくても困る。長野のような広い低地では、この排水（水を逃がす）側の難しさが、より前面に出やすい。</p>
+
+  <figure class="hero">
+    <svg viewBox="0 0 720 245" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="於保の溜めて配る水利と、長野の引く・逃がすを連続調整する水利という二つの性格を対比した図">
+      <rect x="0" y="0" width="720" height="245" fill="#fffdf7"/>
+      <text x="360" y="32" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="16" font-weight="700" fill="#1f4f6f">「溜める於保」と「流す長野」という見立て</text>
+      <rect x="40" y="60" width="310" height="132" rx="8" fill="#e9f3fa" stroke="#8fbcd0"/>
+      <text x="195" y="86" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="13" fill="#1f4f6f">於保 ── 溜めて配る</text>
+      <ellipse cx="195" cy="126" rx="52" ry="24" fill="#7fb4cc" stroke="#2e6e8e"/>
+      <text x="195" y="131" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11.5" fill="#123">大池（溜池）</text>
+      <g stroke="#5a94ac" stroke-width="2">
+        <path d="M143 138 L100 162"/><path d="M195 150 L195 168"/><path d="M247 138 L290 162"/>
+      </g>
+      <text x="195" y="184" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10.5" fill="#5b6b74">必要なときに田へ配る</text>
+      <rect x="370" y="60" width="310" height="132" rx="8" fill="#eef4f8" stroke="#8fbcd0"/>
+      <text x="525" y="86" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="13" fill="#1f4f6f">長野 ── 引いて、逃がす</text>
+      <g stroke="#5a94ac" stroke-width="2.4" fill="none">
+        <path d="M392 110 Q470 122 658 108"/>
+        <path d="M392 138 Q480 126 658 142"/>
+        <path d="M392 164 Q470 176 658 162"/>
+      </g>
+      <text x="525" y="184" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10.5" fill="#5b6b74">用水と排水の網のなかで連続的に調整</text>
+      <text x="360" y="220" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11" fill="#a9412b">水が足りなくても困り、抜けなくても困る ── 広い低地では排水側の難しさが前に出る</text>
+      <text x="360" y="238" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10.5" fill="#5b6b74">やや図式的な整理であり、確定した断定ではない</text>
+    </svg>
+    <figcaption>模式図（独自作成）：両地区の水との付き合い方の性格の違いを、やや図式的に対比したもの。溜池という地名・地物から導かれる見立てであり、確定した事実として示すものではない。実際の位置・規模を表すものでもない。</figcaption>
+  </figure>
   <p>つまり、やや図式的に言えば、於保は「溜める」性格が、長野は「流す（引き・逃がす）」性格が読み取りやすい、という違いである。もちろん実際には両者は重なり合っており、於保にも水路はあり、長野にも溜め水の工夫はあったはずだ。あくまで重心の置き方の違いとして理解してほしい。</p>
 
   <div class="tablewrap">
@@ -303,6 +331,29 @@
   <p>於保は、北側の天竜地区や、中泉・見付といった磐田の市街地方面への道とのつながりが想像しやすい位置にある。市街地に近いということは、生活物資や仕事、学校・商業施設へのアクセスがよい一方で、市街地化・宅地化の波が及びやすいということでもある。長野は、より南——竜洋・福田方面の低地や海寄りの地域、そして天竜地区方面との横のつながりの中に置かれている。南部低地の中での「位置」が、それぞれの生活圏の向きを決めてきた面がある。</p>
   <p>近現代に入り、自動車が主役になり幹線道路や橋が整備されると、この「向き」は大きく組み替えられた。徒歩や舟で動いていた時代の生活圏と、車で動く現在の生活圏は同じではない。便利な道ができることは発展の条件だが、同時に、旧道や水路沿いの古い動線が忘れられ、地名や小字が見えにくくなる原因にもなる。道は、集落を発展させる力であると同時に、古い記憶を覆い隠す力でもある。</p>
 
+  <figure class="hero">
+    <svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="於保が市街地方面へ、長野が南の低地方面へと開いていた生活圏の向きの違いを示す図">
+      <rect x="0" y="0" width="720" height="250" fill="#fffdf7"/>
+      <text x="360" y="32" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="16" font-weight="700" fill="#1f4f6f">どちらを向いて開いていたか</text>
+      <rect x="255" y="62" width="210" height="38" rx="7" fill="#f3ece2" stroke="#d8c6ae"/>
+      <text x="360" y="86" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="12" fill="#7a5a34">中泉・見付 ── 市街地方面</text>
+      <rect x="70" y="128" width="200" height="46" rx="8" fill="#e9f3fa" stroke="#8fbcd0"/>
+      <text x="170" y="148" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="12.5" fill="#1f4f6f">於保</text>
+      <text x="170" y="166" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10" fill="#5b6b74">市街地に近い＝波も及びやすい</text>
+      <rect x="450" y="128" width="200" height="46" rx="8" fill="#e9f3fa" stroke="#8fbcd0"/>
+      <text x="550" y="148" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="12.5" fill="#1f4f6f">長野</text>
+      <text x="550" y="166" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10" fill="#5b6b74">南部低地の横のつながりのなか</text>
+      <rect x="450" y="200" width="200" height="36" rx="7" fill="#f3ece2" stroke="#d8c6ae"/>
+      <text x="550" y="223" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="12" fill="#7a5a34">竜洋・福田 ── 海寄りの低地</text>
+      <path d="M200 126 L300 102" stroke="#356f88" stroke-width="1.8"/>
+      <path d="M550 176 L550 198" stroke="#356f88" stroke-width="1.8"/>
+      <path d="M275 150 L445 150" stroke="#8fbcd0" stroke-width="1.4" stroke-dasharray="5 4"/>
+      <text x="360" y="144" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10" fill="#5b6b74">天竜川左岸の低地という共通の土台</text>
+      <text x="360" y="244" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10.5" fill="#a9412b">自動車の時代に、この「向き」は大きく組み替えられた</text>
+    </svg>
+    <figcaption>模式図（独自作成）：両地区が外の世界へ向かう「向き」のゆるやかな違いを示したもの。方角と関係の傾向を象徴的に表した概念図であり、実際の位置・道筋を表すものではない。</figcaption>
+  </figure>
+
   <h2>災害 ── 浸水想定を歴史と未来の両面で読む</h2>
   <p>低地に暮らすということは、水の恵みと、水のリスクを同時に引き受けるということである。於保・長野はともに天竜川左岸の低地にあり、過去の氾濫がつくった地形そのものの上に成り立っている。だからこそ、浸水のリスクは煽るべき恐怖ではなく、この土地が持つ歴史的な条件として、冷静に受け止める対象である。</p>
   <p>かつての人々は、微高地に住み、低地を田にし、水神や地蔵といった信仰を水辺に置くことで、水と折り合いをつけてきた。集落の位置取りそのものが、長い経験に裏打ちされた防災の知恵だったとも言える。現在では、磐田市のハザードマップや治水地形分類図によって、どこがどの程度浸水しうるかを具体的に確認できる。古い集落がなぜそこに固まったのかを地形から読むことと、現在の浸水想定を確認することは、別々の作業ではなく、地続きの理解である。</p>
@@ -316,6 +367,30 @@
   <h2>結論 ── 南部低地は「衰退」ではなく「再定義」を問われている</h2>
   <p>於保と長野を並べて見えてきたのは、「分けるもの」と「つなぐもの」の両方であった。分けるものは、水を溜めるか流すか、集落を寄せるか点在させるか、どの方角へ開いているか、といった土地ごとの答え方の違いである。つなぐものは、天竜川左岸の低地という共通の土台と、田を守ることが人を結ぶという原理、そして農地維持・空き家・相続・防災・記憶継承という、共通の将来課題である。</p>
   <p>これらの課題を前にして、「南部低地は衰退する」と一言で片づけるのは、正確でも誠実でもない。確かに、担い手が減り続け、記録されなければ、地名も水利の知恵も静かに失われていくだろう。それは条件付きの、しかし現実的な懸念である。だが同時に、静かな水田景観、微高地に守られた集落、水と折り合ってきた暮らしの記憶には、これからむしろ価値が高まりうる側面がある。市街地の喧噪から距離を置いた住環境、受け継がれた農地景観、そして「この土地がなぜここにあるのか」を語れる地域の記憶は、人口の多寡だけでは測れない財産である。</p>
+
+  <figure class="hero">
+    <svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="於保と長野を分けるものと、両者に共通してつなぐものを整理した図">
+      <rect x="0" y="0" width="720" height="250" fill="#fffdf7"/>
+      <text x="360" y="32" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="16" font-weight="700" fill="#1f4f6f">分けるもの、つなぐもの</text>
+      <rect x="40" y="58" width="310" height="128" rx="8" fill="#f3ece2" stroke="#d8c6ae"/>
+      <text x="195" y="84" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="12.5" fill="#7a5a34">分けるもの ── 答え方の違い</text>
+      <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="11" fill="#5b6b74">
+        <text x="195" y="110" text-anchor="middle">水を溜めるか、流すか</text>
+        <text x="195" y="134" text-anchor="middle">集落を寄せるか、点在させるか</text>
+        <text x="195" y="158" text-anchor="middle">どの方角へ開いているか</text>
+      </g>
+      <rect x="370" y="58" width="310" height="128" rx="8" fill="#e9f3fa" stroke="#8fbcd0"/>
+      <text x="525" y="84" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="12.5" fill="#1f4f6f">つなぐもの ── 共通の土台と課題</text>
+      <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="11" fill="#5b6b74">
+        <text x="525" y="110" text-anchor="middle">天竜川左岸の低地という土台</text>
+        <text x="525" y="134" text-anchor="middle">田を守ることが人を結ぶ原理</text>
+        <text x="525" y="158" text-anchor="middle">農地・空き家・相続・防災・記憶</text>
+      </g>
+      <text x="360" y="216" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="12" fill="#a9412b">問われているのは「衰退か存続か」の二択ではない</text>
+      <text x="360" y="240" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11" fill="#5b6b74">それぞれの条件を見極めたうえでの「再定義」である</text>
+    </svg>
+    <figcaption>模式図（独自作成）：於保と長野を並べて見えてきた相違点と共通点を整理したもの。本稿の結論を要約した概念図であり、地区の範囲や優劣を示すものではない。</figcaption>
+  </figure>
   <p>必要なのは、衰退か存続かという二択ではなく、それぞれの地区が持つ条件——於保の溜める力、長野の広がる水田、両者に共通する低地の知恵——を見極めたうえで、これからの暮らしの形を地区ごとに「再定義」していく作業である。本稿の比較が、その再定義のための、ささやかな見取り図になればと願う。</p>
 
   <div class="tablewrap">
