@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今之浦と大之浦 ── 見付の水辺がつくった地形と地名｜大石浩之の磐田論考｜磐田物語</title>
+<meta name="description" content="磐田市今之浦と古名・大之浦という水辺の地名を手がかりに、かつての入江・潟湖・低湿地の地形と、その干拓・土地区画整理による変遷を、史実・資料に基づく説明・伝承・推定の層に分けて検討する学術論考。万葉集の『大の浦』比定は地名論と切り離し、台地上の国府・国分寺と低地とを一つの地形単位として読む。">
+<meta property="og:title" content="今之浦と大之浦 ── 見付の水辺がつくった地形と地名｜大石浩之の磐田論考">
+<meta property="og:description" content="消えた入江の記憶と地名の変遷を、確度の層を分けて読む郷土史研究者向けの学術論考。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://iwata-monogatari.net/oishi-ronko/026/">
+<meta property="og:locale" content="ja_JP">
+<meta name="iwata:title" content="今之浦と大之浦 水辺の地形と地名">
+<meta name="iwata:published" content="2026-07-25">
+<meta name="iwata:category" content="見付・論考">
+<meta name="iwata:new-article" content="1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#20292e;--accent:#2f6079;--accent2:#356f88;--sub:#586873;--rule:#c8d5dc;--rule2:#dfe8ec;--paper:#fffdf8;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Shippori Mincho",serif;color:var(--ink);background:var(--paper);line-height:2.0;font-size:16.5px;-webkit-font-smoothing:antialiased;text-align:justify;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .gothic{font-family:"Zen Kaku Gothic New",sans-serif;}
+  main{max-width:720px;margin:0 auto;padding:0 24px 40px;}
+  .crumb{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--sub);padding:18px 0 4px;text-align:left;letter-spacing:.02em;}
+  .crumb a{color:var(--sub);}
+  /* ===== 論文タイトル・ヘッダー ===== */
+  .kiyo-hero{text-align:center;padding:26px 0 0;margin:6px 0 0;border:0;background:none;box-shadow:none;}
+  .kiyo-journal{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--accent);font-weight:700;letter-spacing:.22em;margin:0 0 6px;}
+  .kiyo-series{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.08em;margin:0 0 22px;}
+  .kiyo-hero h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:27px;line-height:1.6;color:var(--ink);margin:0 auto 12px;letter-spacing:.02em;max-width:22em;}
+  .kiyo-subtitle{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--accent2);margin:0 0 24px;line-height:1.7;}
+  .kiyo-author{font-size:16.5px;color:var(--ink);margin:0 0 3px;letter-spacing:.04em;}
+  .kiyo-author sup{font-size:10px;}
+  .kiyo-affil{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);margin:0 0 20px;}
+  .kiyo-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;margin-top:6px;font-family:"Zen Kaku Gothic New",sans-serif;}
+  .kiyo-meta div{font-size:12.5px;}
+  .kiyo-meta dt{display:inline;color:var(--sub);font-weight:500;}
+  .kiyo-meta dd{display:inline;color:var(--ink);margin-left:6px;font-weight:700;}
+  /* ===== 要旨・キーワード ===== */
+  .abstract{border-top:none;padding:6px 0 0;margin:30px 0 0;}
+  .abstract h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--accent);letter-spacing:.28em;text-align:center;font-weight:700;}
+  .abstract p{font-size:15px;margin:0;color:#33424b;line-height:1.95;padding:16px 22px;border:1px solid var(--rule2);background:#fbfdfe;border-radius:2px;}
+  .keywords{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;color:var(--sub);margin:14px 0 0;padding-bottom:16px;border-bottom:1px solid var(--rule);text-align:left;line-height:1.8;}
+  .keywords strong{color:var(--accent);}
+  /* ===== 目次 ===== */
+  .toc{margin:26px 0;padding:14px 0;border-top:1px solid var(--rule2);border-bottom:1px solid var(--rule2);}
+  .toc h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.2em;text-align:center;}
+  .toc ol{margin:0 auto;max-width:30em;padding-left:1.6em;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:var(--ink);text-align:left;}
+  .toc li{margin:6px 0;line-height:1.7;}
+  .toc a{color:var(--ink);}
+  /* ===== 見出し ===== */
+  h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;color:var(--ink);margin:48px 0 18px;padding-bottom:8px;border-bottom:1.5px solid var(--accent2);letter-spacing:.02em;text-align:left;}
+  h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16.5px;color:var(--accent2);margin:30px 0 10px;text-align:left;}
+  p{margin:0 0 16px;text-indent:1em;}
+  .abstract p,.keywords,.verdict,figcaption,.cta-note,.refs li,.fn-list li,.pager,.crumb{text-indent:0;}
+  /* ===== 学説節（論文体） ===== */
+  .setsu{background:none;border:0;border-radius:0;padding:0;margin:22px 0;}
+  .setsu-tag{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:11.5px;font-weight:700;color:var(--accent);background:none;padding:0;margin:22px 0 2px;letter-spacing:.12em;}
+  .setsu-tag.denshou{color:var(--accent2);}
+  .setsu h3{font-family:"Shippori Mincho",serif;font-size:17.5px;color:var(--ink);margin:2px 0 12px;border-bottom:1px dotted var(--rule);padding-bottom:8px;}
+  .setsu p{margin:0 0 14px;font-size:16px;text-indent:1em;}
+  .verdict{font-size:14.5px;color:#33424b;background:none;border-left:3px solid var(--accent2);border-radius:0;padding:2px 0 2px 16px;margin:14px 0 0;line-height:1.85;}
+  .verdict strong{color:var(--accent2);}
+  /* ===== 図版 ===== */
+  figure{margin:32px 0;}
+  .fig-box{background:#fff;border:1px solid var(--rule);border-radius:2px;padding:20px 16px;text-align:center;}
+  figcaption{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-top:10px;line-height:1.8;text-align:left;}
+  svg{max-width:100%;height:auto;}
+  .svg-label{fill:var(--ink);}.svg-sub{fill:var(--sub);}
+  /* ===== 表 ===== */
+  .table-wrap{overflow-x:auto;margin:24px 0;}
+  table.academic-table{width:100%;border-collapse:collapse;min-width:700px;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;line-height:1.7;border-top:2px solid var(--accent2);border-bottom:2px solid var(--accent2);}
+  .academic-table th{background:none;color:var(--accent);text-align:left;font-weight:700;border-bottom:1px solid var(--accent2);}
+  .academic-table th,.academic-table td{border-bottom:1px solid var(--rule2);padding:10px 12px;vertical-align:top;text-indent:0;}
+  .academic-table caption{caption-side:top;text-align:left;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-bottom:8px;}
+  /* ===== 脚注・参考文献 ===== */
+  sup.fnref{font-size:.68em;font-family:"Zen Kaku Gothic New",sans-serif;line-height:0;}
+  sup.fnref a{color:var(--accent);}
+  .notes,.references{margin-top:40px;}
+  .notes h2,.references h2{font-size:16px;}
+  .fn-list,.refs{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);}
+  .fn-list li,.refs li{margin:0 0 8px 1.6em;line-height:1.8;padding-left:.2em;}
+  .fn-list li{list-style:decimal;}
+  .cta-note{background:#fbfdfe;border:1px solid var(--rule2);border-radius:2px;padding:18px 20px;margin:36px 0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:#33424b;line-height:1.9;}
+  .cta-note a{font-weight:700;}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:42px 0 10px;flex-wrap:wrap;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;}
+  @media(max-width:600px){.kiyo-hero h1{font-size:22px;}body{font-size:16px;}h2{font-size:18px;}.kiyo-subtitle{font-size:15.5px;}}
+</style>
+<link rel="canonical" href="https://iwata-monogatari.net/oishi-ronko/026/">
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+</head>
+<body class="area-mitsuke">
+
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="crumb"><a href="https://iwata-monogatari.net/">磐田物語</a> ／ <a href="https://iwata-monogatari.net/oishi-ronko/">大石浩之の磐田論考</a> ／ 今之浦と大之浦</div>
+
+  <article>
+  <header class="kiyo-hero">
+    <p class="kiyo-journal">磐田郷土史研究紀要</p>
+    <p class="kiyo-series">大石浩之の磐田論考　第26号（見付・水辺地名研究　一）</p>
+    <h1>今之浦と大之浦 ── 見付の水辺がつくった地形と地名</h1>
+    <p class="kiyo-subtitle">消えた入江の記憶と地名の変遷</p>
+    <p class="kiyo-author">大石浩之<sup>1</sup></p>
+    <p class="kiyo-affil"><sup>1</sup> 富士ヶ丘サービス株式会社 代表取締役</p>
+    <dl class="kiyo-meta">
+      <div><dt>公開日</dt><dd>2026.07.25</dd></div>
+      <div><dt>資料検証</dt><dd>公開資料による検証済み</dd></div>
+      <div><dt>対象地区</dt><dd>磐田市見付</dd></div>
+    </dl>
+  </header>
+
+  <section class="abstract" aria-label="要旨">
+    <h2>要旨</h2>
+    <p>現在の磐田市今之浦は、市の中心部に連なる住宅地・商業地として見える。だが「浦」という水辺を指す字がこの内陸の地に残ること自体が、かつての地形を語る手がかりである。本稿は、今之浦および古名「大之浦」という二つの水辺の地名を出発点に、遠江の入江・潟湖・低湿地の地形と、その干拓・土地区画整理による変遷を、見付と御厨のあいだの水辺として読み解く。万葉集に見える「大の浦」の比定は、旧福田町周辺の湖沼とする説明と、大池・今之浦・中泉周辺に記憶を置く磐田側の語りとが併存し、一点に固定しがたい。本稿はこの比定問題を地名変遷の議論とは切り離し、既刊の論考に委ねたうえで、今之浦を「消えた水辺の記憶を保存する地名」として、史実・資料に基づく説明・伝承・推定の層を分けて記述する立場をとる。あわせて、台地上の国府・国分寺と、その下に広がる低地とを、一つの地形単位の上下関係として結ぶ視点を示す。</p>
+  </section>
+  <p class="keywords"><strong>キーワード：</strong>今之浦／大之浦／浦（潟湖・低湿地）／今之浦川／土地区画整理／地名変遷／磐田原台地</p>
+
+  <nav class="toc" aria-label="目次">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#s1">問題設定 ── 海から離れた地になぜ「浦」の字が残るのか</a></li>
+      <li><a href="#s2">「浦」という語 ── 水辺の低地を指す地名の語義</a></li>
+      <li><a href="#s3">大之浦をめぐる比定と資料の異同</a></li>
+      <li><a href="#s4">地名変遷を三層に読む ── 大之浦・低湿地・市街地</a></li>
+      <li><a href="#s5">台地と低地 ── 国府・国分寺跡と今之浦低地の地形</a></li>
+      <li><a href="#s6">低湿地を市街地へ ── 土地区画整理と治水</a></li>
+      <li><a href="#s7">見付と御厨のあいだ ── 水辺の結節点としての今之浦</a></li>
+      <li><a href="#s8">結論 ── 「今之浦」を地形の記憶として読む</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1">1. 問題設定 ── 海から離れた地になぜ「浦」の字が残るのか</h2>
+  <p>現在の地図を開くと、磐田市今之浦は海岸線から数キロメートル内陸に位置し、市の中心部に連なる住宅地・商業地として広がっている。ところがその地名には「浦」という、本来は水辺を指す文字が用いられている。海から離れたこの地に、なぜ水辺の字が残るのか。本稿はこの素朴な違和感を出発点に据える。地名は、いま目に見える景観だけでなく、その土地がかつてどのような地形であったかを、しばしば文字のかたちで保存する。今之浦もまた、その一例として読むことができる。</p>
+  <p>結論を先取りしていえば、今之浦の「浦」は、海岸線そのものを指すのではなく、かつてこの一帯に広がっていた潟湖・入江・低湿地の記憶を引き受けた字であると考えられる。今之浦川、大池、そして近年まで残っていた葦の沼地や水田といった要素を重ねると、この地名が新興住宅地に付された新しい名ではなく、水辺の地形を背景にもつ古い名であることが見えてくる。地名を地形の証言として読む──これが本稿全体を貫く方法である。</p>
+  <p>ただし、ここで注意を要するのは、地名の由来を一つの物語に還元してしまう危うさである。「今之浦は大之浦の名残である」「大きな浦が縮んで今の浦になった」といった語りは魅力的だが、それを確定した語源として断定できる史料は、本稿の調査範囲では確認できていない。ここでいう「確認できていない」とは、そうした由来を裏づける一次史料に管見の限り突き当たっていないという意味であって、由来そのものが史料に否定されている（＝記載として無い）という意味ではない。この「未確認」と「記載なし」の区別を保つことが、水辺の地名を扱ううえでの前提となる。</p>
+  <p>本稿の構成は次のとおりである。まず「浦」という語がどのような地形を指してきたかを確認し（第2節）、次に古名「大之浦」をめぐる比定の異同を整理する（第3節）。そのうえで、大之浦・低湿地・市街地という地名変遷の層を確度ごとに腑分けし（第4節）、台地と低地の地形的な上下関係（第5節）、近現代の土地区画整理と治水（第6節）、見付と御厨のあいだの結節点としての性格（第7節）を順に検討し、結論に至る。なお、万葉集の「大の浦」を桜井王の歌からどう比定するかという問いは、地名変遷の議論とは論点の性格が異なるため、既刊の<a href="/oishi-ronko/003/">大の浦比定をめぐる論考</a>に委ね、本稿ではその成果を前提として参照するにとどめる。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="大之浦から今之浦への土地利用の三段変化を示す概念図">
+        <defs>
+          <marker id="fig26-a1" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2f7fa3"/></marker>
+        </defs>
+        <rect x="10" y="12" width="620" height="406" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="320" y="46" text-anchor="middle" font-size="16" class="svg-label">大之浦から今之浦へ ── 水辺の三段変遷</text>
+        <g transform="translate(70 78)" font-family="'Zen Kaku Gothic New',sans-serif">
+          <rect x="0" y="0" width="500" height="80" rx="10" fill="#eaf6f9" stroke="#2f7fa3" stroke-width="1.6"/>
+          <text x="20" y="34" font-size="16" font-weight="700" fill="#2f7fa3">古代 ── 浦・潟湖</text>
+          <path d="M250 40 C300 18 342 62 400 38 S470 20 486 42" fill="none" stroke="#2f7fa3" stroke-width="6" stroke-linecap="round"/>
+          <text x="20" y="60" font-size="12.5" fill="#5b6b74">大之浦・万葉に見える遠江の水辺の記憶</text>
+        </g>
+        <g transform="translate(70 178)" font-family="'Zen Kaku Gothic New',sans-serif">
+          <rect x="0" y="0" width="500" height="80" rx="10" fill="#f3f8e9" stroke="#6f9a4f" stroke-width="1.6"/>
+          <text x="20" y="34" font-size="16" font-weight="700" fill="#3f6a2a">近世・近代 ── 湿地・水田</text>
+          <path d="M255 40 C305 22 345 60 400 40 S465 26 486 44" fill="none" stroke="#80a6b2" stroke-width="4.5" stroke-linecap="round"/>
+          <text x="20" y="60" font-size="12.5" fill="#5b6b74">大池・今之浦川・葦の沼地と水を含む低地</text>
+        </g>
+        <g transform="translate(70 278)" font-family="'Zen Kaku Gothic New',sans-serif">
+          <rect x="0" y="0" width="500" height="80" rx="10" fill="#fff8e7" stroke="#d28a41" stroke-width="1.6"/>
+          <text x="20" y="34" font-size="16" font-weight="700" fill="#8a5a22">現代 ── 市街地</text>
+          <g stroke="#d8b66a" stroke-width="2.2">
+            <line x1="255" y1="20" x2="486" y2="20"/><line x1="255" y1="40" x2="486" y2="40"/><line x1="255" y1="60" x2="486" y2="60"/>
+            <line x1="300" y1="12" x2="300" y2="68"/><line x1="360" y1="12" x2="360" y2="68"/><line x1="420" y1="12" x2="420" y2="68"/>
+          </g>
+          <text x="20" y="60" font-size="12.5" fill="#5b6b74">土地区画整理後の住宅地・商業地</text>
+        </g>
+        <line x1="320" y1="158" x2="320" y2="176" stroke="#2f7fa3" stroke-width="2.6" marker-end="url(#fig26-a1)" transform="translate(70 0)"/>
+        <line x1="320" y1="258" x2="320" y2="276" stroke="#2f7fa3" stroke-width="2.6" marker-end="url(#fig26-a1)" transform="translate(70 0)"/>
+      </svg>
+    </div>
+    <figcaption>図1　大之浦から今之浦への水辺の三段変遷。古代の浦・潟湖、近世・近代の湿地・水田、現代の市街地を模式的に示す。地形変化を厳密に復元した図ではなく、本文理解のための概念図である。</figcaption>
+  </figure>
+
+  <h2 id="s2">2. 「浦」という語 ── 水辺の低地を指す地名の語義</h2>
+  <p>今之浦の読み解きは、まず「浦」という語がどのような地形を指してきたかを確認することから始めたい。現代語では「浦」は海辺の入り江を連想させるが、地名として用いられる場合、その指す範囲はより広い。入り江、湖沼、潟湖、そして水を含む低地一般が、いずれも「浦」と呼ばれてきた。海に面していない内陸の水辺にこの字が付くのは、けっして例外ではない。したがって、今之浦が現在の海岸線から離れていることをもって、「浦」の字を不自然とみなすのは早計である。</p>
+  <p>この観点に立てば、今之浦の地名は、海岸線そのものを指すというより、海や潟湖の記憶を引き受けた低湿地の名として読むほうが自然である。遠州の海岸平野は、天竜川をはじめとする河川が運ぶ土砂の堆積と、砂州の発達、そして人の手による干拓によって、長い時間をかけて形を変えてきた。かつて水を湛えていた低地が、しだいに湿地となり、水田となり、やがて宅地へと転じていく。その過程のどこかで、水辺であった記憶が「浦」の字として地名に固着したと考えるのが、地形の実態に即した読みである。</p>
+  <p>ここで、地形と地名の対応を一般化しておきたい。潟湖とは、砂州によって外海から半ば切り離された浅い水域を指し、遠州灘沿いには古くからこうした水域が点在していた。潟湖は、河川の堆積や砂州の前進によって縮小し、やがて葦の茂る低湿地へと移ろう。低湿地はさらに、排水と盛土によって耕地や宅地へと変えられていく。この一連の変化を地名の側から見れば、「浦」から「湿地」「田」を経て市街地名へと至る変遷が、しばしば古い層の名を残したまま進行する。今之浦の「浦」は、この最も古い水辺の層を今日に伝える文字だと位置づけられる。</p>
+  <p>もっとも、語義から地形を復元する作業には限界もある。「浦」を含む地名がすべて潟湖に由来すると断ずることはできず、地形との対応は個別に検証を要する。今之浦の場合、後述する今之浦川・大池・低湿地という具体的な水辺の要素が同じ土地に揃っている点が、この地名を水辺起源として読むことを支える。語義だけを根拠に断定するのではなく、地名・地形・水系の三者が整合するかどうかを確かめること──それが、水辺の地名を扱う際の手続きである。</p>
+  <p>遠州平野には、海岸から離れた内陸にも「浦」「潟」「池」「沼」といった水辺を語る地名や小字が点在する。これらは、かつての水域が後退したのちも、旧地形の記憶として土地に残ったものと考えられる。今之浦の場合、隣接する大池がなお水域として現存する点で、水辺の記憶がひときわ辿りやすい。地名が指し示す過去の地形と、現に残る水系とを照らし合わせられる土地は、地名研究にとって恵まれた対象である。「浦」の一字を、単なる美称や瑞祥地名として片付けるのではなく、地形の証言として吟味しうる条件が、今之浦にはそろっている。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="潟湖から低湿地を経て市街地へ移り変わる地形断面の模式図">
+        <rect x="10" y="12" width="620" height="276" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="320" y="42" text-anchor="middle" font-size="15" class="svg-label">「浦」が指す地形 ── 潟湖・低湿地・低地</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif">
+          <path d="M40 200 Q120 150 210 200 T400 200 T590 200" fill="none" stroke="#2f7fa3" stroke-width="2"/>
+          <rect x="40" y="200" width="550" height="52" fill="#eaf6f9"/>
+          <path d="M40 200 Q120 150 210 200 T400 200 T590 200 L590 252 L40 252 Z" fill="#d7ecf3" stroke="none" opacity="0.7"/>
+          <rect x="440" y="150" width="150" height="102" fill="#efe3c8" opacity="0.6"/>
+          <text x="120" y="150" text-anchor="middle" font-size="13" fill="#1f4f6f">潟湖・入江</text>
+          <text x="120" y="170" text-anchor="middle" font-size="10.5" fill="#5b6b74">外海と砂州で隔てられた水域</text>
+          <text x="300" y="150" text-anchor="middle" font-size="13" fill="#3f6a2a">葦の低湿地</text>
+          <text x="300" y="170" text-anchor="middle" font-size="10.5" fill="#5b6b74">堆積・砂州前進で縮小</text>
+          <text x="515" y="140" text-anchor="middle" font-size="13" fill="#8a5a22">水田・宅地</text>
+          <text x="515" y="180" text-anchor="middle" font-size="10.5" fill="#5b6b74">排水・盛土による転用</text>
+          <line x1="220" y1="272" x2="250" y2="272" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig26-a1)"/>
+          <line x1="400" y1="272" x2="430" y2="272" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig26-a1)"/>
+          <text x="130" y="278" text-anchor="middle" font-size="10.5" class="svg-sub">水域</text>
+          <text x="320" y="278" text-anchor="middle" font-size="10.5" class="svg-sub">湿地化</text>
+          <text x="510" y="278" text-anchor="middle" font-size="10.5" class="svg-sub">陸化</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>図2　「浦」が指す地形の推移。潟湖・入江が堆積と砂州前進によって葦の低湿地へ縮小し、排水・盛土によって水田・宅地へ転用される一般過程。今之浦の「浦」は、この最も古い水域の層を伝える字と位置づけられる。</figcaption>
+  </figure>
+
+  <h2 id="s3">3. 大之浦をめぐる比定と資料の異同</h2>
+  <p>今之浦の「浦」を古い水辺の層と読むとき、避けて通れないのが「大之浦」という古名との関係である。万葉集には「大の浦」と読まれる歌があり、遠江国の海浜の名として説明されてきた<sup class="fnref" id="r1"><a href="#fn1">1</a></sup>。奈良県立万葉文化館の万葉百科では、巻8-1615に「大の浦のその長浜に寄する波ゆたけく君を思ふこのころ」と読まれる歌が掲げられ、聖武天皇の歌として、遠江国司であった桜井王との贈答歌の文脈に置かれている。ここまでは、万葉集という古典籍に依拠する範囲で確認できる事柄である。</p>
+  <p>問題は、この「大の浦」を現在のどの地点に比定するかという点にある。同じ万葉百科は、「大の浦」の現在地名として旧磐田郡福田町にあった湖沼を挙げる説明を併記している<sup class="fnref" id="r2"><a href="#fn2">2</a></sup>。一方、磐田側の地域資料や磐田市文化協会の解説では、大池・今之浦・中泉周辺を含む古代遠江の水辺の記憶として「大の浦」を語る傾向がある。両者は、遠江灘沿いの福田方面に比定する立場と、内陸寄りの今之浦・中泉方面に記憶を置く立場とに分かれており、一点に収束していない。</p>
+  <p>この比定差をどう扱うかについて、本稿の立場をあらかじめ一文で示しておく。<strong>本稿は「大之浦＝今之浦」と断定せず、今之浦を「大之浦をめぐる遠江の水辺の記憶を受け継ぐ場所の一つ」として位置づける。</strong>その理由は、古代の海浜名や湖沼名が、現在の町名や行政区画にそのまま一対一で対応するとは限らないからである。河川の堆積、砂州の発達、地盤の変動、湿地化、そして近代の開発によって、水辺の形と広がりは時代ごとに変わる。したがって「大の浦」は、現在の一地点に固定できる地名というより、遠江国の海浜・湖沼・潟湖の広がりをもつ古地名として、慎重に扱うべきものである。</p>
+  <p>ここで、比定という作業の性格そのものにも触れておきたい。福田方面説と今之浦・中泉方面説は、どちらか一方を単純に否定して済む関係にない。福田方面説は万葉百科という有力な公的資料に依拠する強みをもつが、古代の「大の浦」が福田周辺の一湖沼に限られていたと断ずる根拠までは、そこから直ちには導けない。他方、今之浦・中泉方面に記憶を置く語りは、大池・今之浦川という現存する水辺の要素に支えられる強みをもつが、それが万葉の「大の浦」そのものであることを示す一次史料は確認できない。両説はいずれも決定的な証拠を欠いたまま、それぞれ別の資料層に立脚している。歌そのものの比定という論点は、地名変遷を扱う本稿の主題を超えるため、前述のとおり<a href="/oishi-ronko/003/">桜井王の歌の比定をめぐる既刊論考</a>に検討を譲る。</p>
+  <p>本稿が「大之浦」に注目するのは、比定の当否を裁定するためではない。むしろ、比定が定まらないという事実そのものが、古代の水辺が広く、かつ流動的であったことを逆に照らし出す点に、地名変遷を読むうえでの手がかりがある。大きく、輪郭の定まらない水辺があったからこそ、後世の複数の地点がそれぞれ「大之浦の記憶」を主張しうる。今之浦もまた、その記憶を引き受けた地の一つとして読むことができる。</p>
+  <p>付言すれば、贈答歌という歌の性格も、比定を一義に定めがたくする一因である。桜井王と天皇のあいだで交わされた歌は、特定の一地点を測量のように精確に指し示すために詠まれたのではなく、遠江という国と、そこに赴任した人物との関わりを背景に読まれている。歌に現れた「大の浦」は、地理上の座標というより、遠江の海辺を象徴する呼び名として機能していた可能性がある。歌の解釈と地名の比定とを直結させることには、この点でも慎重さが求められる。古代の歌に詠まれた地名を、後世の行政地名へと一対一で移し替える作業は、しばしば歌の含みを痩せ細らせる危うさをともなう。本稿が比定の裁定を控え、今之浦を記憶を受け継ぐ地の一つと位置づけるのは、この危うさを避けるためでもある。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="大之浦の比定をめぐる福田方面説と今之浦・中泉方面説の対比図">
+        <rect x="10" y="12" width="620" height="226" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="320" y="42" text-anchor="middle" font-size="15" class="svg-label">「大の浦」比定の異同 ── 二つの立場</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif">
+          <rect x="44" y="70" width="248" height="128" rx="10" fill="#eaf6f9" stroke="#2f7fa3" stroke-width="1.8"/>
+          <text x="168" y="98" text-anchor="middle" font-size="14" fill="#1f4f6f">福田方面説</text>
+          <text x="168" y="124" text-anchor="middle" font-size="11.5" fill="#5b6b74">万葉百科の「現在地名」</text>
+          <text x="168" y="146" text-anchor="middle" font-size="11.5" fill="#5b6b74">旧福田町周辺の湖沼</text>
+          <text x="168" y="176" text-anchor="middle" font-size="10.5" fill="#356f88">公的資料に依拠する強み</text>
+          <rect x="348" y="70" width="248" height="128" rx="10" fill="#fff8e7" stroke="#d28a41" stroke-width="1.8"/>
+          <text x="472" y="98" text-anchor="middle" font-size="14" fill="#8a5a22">今之浦・中泉方面説</text>
+          <text x="472" y="124" text-anchor="middle" font-size="11.5" fill="#5b6b74">磐田側の地域資料・解説</text>
+          <text x="472" y="146" text-anchor="middle" font-size="11.5" fill="#5b6b74">大池・今之浦・中泉周辺</text>
+          <text x="472" y="176" text-anchor="middle" font-size="10.5" fill="#d28a41">現存する水辺に支えられる強み</text>
+          <text x="320" y="138" text-anchor="middle" font-size="16" fill="#586873">⇔</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>図3　「大の浦」比定の異同。旧福田町周辺の湖沼とする万葉百科の説明と、大池・今之浦・中泉周辺に記憶を置く磐田側の語りが併存する。本稿はいずれか一方への断定を避け、今之浦を記憶を受け継ぐ地の一つと位置づける。</figcaption>
+  </figure>
+
+  <h2 id="s4">4. 地名変遷を三層に読む ── 大之浦・低湿地・市街地</h2>
+  <p>ここまでの検討を、地名変遷の層として整理しておきたい。今之浦という土地には、大きく分けて三つの時間の層が重なっている。第一に、古代の広い水辺としての層。第二に、近世から近代にかけての湿地・水田としての層。第三に、近現代の土地区画整理を経た市街地としての層である。これらは互いに無関係な別々の歴史ではなく、同じ地形単位の上に順に堆積した層として、連続的に読むことができる。</p>
+  <p>第一の層、古代の水辺については、前節で見たとおり「大之浦」の比定に幅があるものの、この一帯が遠江の水辺記憶と結びついてきたこと自体は、複数の資料と歌碑の存在によって裏づけられる。第二の層、湿地・水田については、後述する自治会資料が「近年まで葦の生える沼地・水田であった」と明記しており、これは比較的近い時代の土地の姿として確度が高い。第三の層、市街地化は、土地区画整理事業という具体的な行政過程を伴うため、最も確実に跡づけられる。層が新しいほど資料的な裏づけが厚くなるという、地名研究に一般的な傾向がここにも現れている。</p>
+  <p>これらの層を確度の水準に沿って腑分けすると、次のようになる。史料や公的資料で確認できる事柄は「史実」として、公的資料が示す説明のうち解釈の幅を残すものは「資料に基づく説明」として、地域で語り継がれてきた語りは「伝承」として、地形と地名から導かれる読みは「推定」として、それぞれ別の層に置く。層をまたいだ断定を避けることで、確度の低い読みを史実のように語る誤りと、価値ある伝承を根拠薄弱として切り捨てる誤りの、双方を回避できる。以下の表は、この腑分けを一覧のかたちで示したものである。</p>
+
+  <div class="table-wrap">
+    <table class="academic-table">
+      <caption>表1　今之浦・大之浦をめぐる情報の確度層 ── 区分・内容・依拠する資料・扱い方</caption>
+      <thead><tr><th>区分</th><th>主な内容</th><th>依拠する資料</th><th>扱い方（史料批判）</th></tr></thead>
+      <tbody>
+        <tr><td>史実</td><td>万葉集巻8-1615に「大の浦」が見えること。今之浦公園内に歌碑が建つこと。今之浦川・大池周辺の低地、土地区画整理による市街地化。</td><td>万葉百科、自治会・文化財資料。</td><td>古典籍・公的資料で確認できる層として扱う。</td></tr>
+        <tr><td>資料に基づく説明</td><td>万葉百科は「大の浦」の現在地名を旧福田町周辺の湖沼とする。磐田側資料は大池・今之浦・中泉周辺に記憶を置く。</td><td>万葉百科、磐田市文化協会等の解説。</td><td>比定差として明記し、いずれか一方に断定しない。</td></tr>
+        <tr><td>伝承</td><td>今之浦周辺を「大之浦の名残」と結びつける地域的な語り。</td><td>地域の歴史意識・口碑。</td><td>地域の記憶として尊重するが、同一地点とは断定しない。</td></tr>
+        <tr><td>推定</td><td>大きな浦が縮小・湿地化し、「今なお残る浦」として今之浦の名が意識された可能性。</td><td>地形解釈・語源説。</td><td>読みとして提示し、確定した語源表現は避ける。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>この表から読み取るべきは、四つの区分が対立しているのではなく、同じ土地の別々の側面を、それぞれ異なる確度で証言しているという点である。史実は資料で確認できる骨格を、資料に基づく説明は比定の幅を、伝承は地域が選び取ってきた記憶を、推定は地形からの読みを、それぞれ担う。どの区分も単独で今之浦の全体像を語り尽くすことはできず、また確度が相対的に低いことをもって、その情報の価値が否定されるわけでもない。地名変遷を記述するとは、こうした層を混同せず、それぞれの位置を保ったまま書き留める作業にほかならない。</p>
+  <p>とりわけ「今」という文字の読みには、慎重を期したい。「今之浦」の「今」を、単に「現在の浦」と読むだけでは足りない。地名は、過去の地形が変化した後に、なお残った記憶を名づけることがある。大きな浦が湿地となり、水田となり、さらに市街地へと転じていく過程で、「今なお残る浦」として今之浦が意識された、という読みは十分にありうる。ただし、これは推定の層に属する読みであって、確定した語源として提示すべきものではない。低湿地・今之浦川・歌碑・土地区画整理・台地上の国府という複数の材料を重ねたとき、「浦」の字がこの土地の水辺性をよく伝えていること──ここまでは確度をもって言えるが、「今」の一字の由来を一義に決めることは、資料の許す範囲を超える。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="史実・資料に基づく説明・伝承・推定の四つの確度層を示す弁別図">
+        <rect x="10" y="12" width="600" height="216" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="320" y="42" text-anchor="middle" font-size="14" class="svg-label">確度の四層 ── 混同しないための弁別</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif">
+          <rect x="34" y="66" width="132" height="100" rx="10" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="2"/>
+          <text x="100" y="104" text-anchor="middle" font-size="14" fill="#1f4f6f">史実</text>
+          <text x="100" y="128" text-anchor="middle" font-size="10.5" fill="#5b6b74">古典籍・公的資料</text>
+          <text x="100" y="146" text-anchor="middle" font-size="10.5" fill="#5b6b74">で確認</text>
+          <rect x="178" y="66" width="132" height="100" rx="10" fill="#eef7ec" stroke="#6f9a4f" stroke-width="2"/>
+          <text x="244" y="104" text-anchor="middle" font-size="14" fill="#3f6a2a">資料に基づく説明</text>
+          <text x="244" y="128" text-anchor="middle" font-size="10.5" fill="#5b6b74">比定に幅が残る</text>
+          <rect x="322" y="66" width="132" height="100" rx="10" fill="#fbf3e6" stroke="#d28a41" stroke-width="2"/>
+          <text x="388" y="104" text-anchor="middle" font-size="14" fill="#8a5a1f">伝承</text>
+          <text x="388" y="128" text-anchor="middle" font-size="10.5" fill="#5b6b74">地域で語り継ぐ</text>
+          <rect x="466" y="66" width="132" height="100" rx="10" fill="#fbecec" stroke="#b85b5b" stroke-width="2"/>
+          <text x="532" y="104" text-anchor="middle" font-size="14" fill="#7a3030">推定</text>
+          <text x="532" y="128" text-anchor="middle" font-size="10.5" fill="#5b6b74">地形からの読み</text>
+        </g>
+        <text x="320" y="204" text-anchor="middle" font-size="11" class="svg-sub">今之浦・大之浦の情報を四層に腑分けし、層をまたぐ断定を避ける。</text>
+      </svg>
+    </div>
+    <figcaption>図4　確度の四層。史実・資料に基づく説明・伝承・推定を語の水準で書き分けることが、地名変遷を読む前提となる。今之浦をめぐる情報は、それぞれ異なる層に属する。</figcaption>
+  </figure>
+
+  <h2 id="s5">5. 台地と低地 ── 国府・国分寺跡と今之浦低地の地形</h2>
+  <p>今之浦を地形の記憶として読むうえで欠かせないのが、台地と低地の関係である。磐田市の遠江国分寺跡に関する説明では、奈良時代に「大之浦に臨む台地上」に、遠江国府、遠江国分寺、遠江国分尼寺、大宝院廃寺などが建てられたとされる<sup class="fnref" id="r3"><a href="#fn3">3</a></sup>。ここで注目すべきは、古代の政治・宗教施設が、水辺の低地そのものではなく、水辺を見下ろす台地の上に配置されたという点である。国府や国分寺は、水を湛えた低地を眼下に望む高みに営まれた。</p>
+  <p>この配置は、今之浦を読むための鍵になる。見付・国府台・国分寺跡が「上の古代中心」だとすれば、今之浦・大池周辺は「下の水辺の記憶」を担う場所である。両者は別々の歴史ではなく、同じ地形単位の上下関係として結びついている。<a href="/n019.html">遠江国府</a>とその周辺の官衙・寺院が台地の縁に置かれ、その麓に大之浦へと続く水辺が広がっていた──この上下二層の景観こそ、古代の見付一帯の地形の骨格であったと考えられる。台地の縁は、水運や漁撈といった低地側の営みを見晴らし、統べる位置にあった。</p>
+  <p>考古学の側からも、台地と低地の結びつきをうかがわせる材料がある。奈良文化財研究所の全国文化財総覧には、今之浦周辺の瓦を出土した遺跡に関する報告が収められており、その瓦と遠江国分寺跡出土瓦との関係が論点として挙げられている。ただし、瓦の出土は「ここが大之浦そのものであった」ことを証明するものではない。むしろ、台地上の官衙・寺院という中心施設と、低地側の水辺・交通・生産地とが結びついていた可能性を示す材料として扱うべきである。瓦という物質が台地と低地のあいだを移動していたとすれば、それは両者が一つの経済圏・生活圏を成していたことをうかがわせる。</p>
+  <p>ここで、地形と歴史の一般的な関係を確認しておきたい。古代の地域社会は、しばしば台地と低地の組み合わせの上に成り立った。台地上は、洪水を免れる安全な居住地・施設用地であり、低地は水田・水運・漁撈の場であった。両者を一体として利用することで、地域は成り立つ。今之浦低地は、見付・国府台という台地上の中心にとって、まさにこの低地の役割を担う場所であったと考えられる。国府が「大之浦に臨む台地上」に置かれたという説明は、この台地と低地の一体性を、古代の資料の側から裏づけるものと読める。</p>
+  <p>台地と低地の高低差は、そのまま治水と居住の条件を分けた。台地上は洪水の難を免れる一方で、水の便には乏しい。低地は水に恵まれるが、増水のたびに冠水の危険にさらされる。古代の国府・国分寺が台地上に営まれたのは、この高低差を踏まえた選地であったと考えられる。水辺を見下ろす高みに中心施設を置き、麓の低地を生産と交通の場として用いる──この配置は、地形の制約を読み切ったうえでの土地利用であった。今之浦低地を、台地上の中心から切り離して単独に語ることができないのは、両者がはじめから一体の景観として設計されていたからにほかならない。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="磐田原台地上の国府・国分寺と今之浦低地・大之浦の上下関係を示す地形断面図">
+        <rect x="10" y="12" width="620" height="256" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="320" y="40" text-anchor="middle" font-size="15" class="svg-label">台地と低地 ── 「大之浦に臨む台地上」の景観</text>
+        <path d="M40 210 L40 120 Q60 100 130 96 L330 96 Q360 98 380 140 L400 210 Z" fill="#efe3c8" stroke="#d28a41" stroke-width="1.6"/>
+        <path d="M380 140 L400 210 L600 210 L600 168 Q520 150 440 158 Q405 150 380 140 Z" fill="#dfeef4" stroke="#2f7fa3" stroke-width="1.4"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif">
+          <circle cx="150" cy="94" r="4" fill="#8a5a22"/><text x="150" y="80" text-anchor="middle" font-size="11.5" fill="#8a5a22">遠江国府</text>
+          <circle cx="250" cy="94" r="4" fill="#8a5a22"/><text x="250" y="80" text-anchor="middle" font-size="11.5" fill="#8a5a22">国分寺・国分尼寺</text>
+          <text x="200" y="150" text-anchor="middle" font-size="13" fill="#8a5a22">磐田原台地（見付・国府台）</text>
+          <text x="200" y="172" text-anchor="middle" font-size="10.5" fill="#5b6b74">上 ── 古代の中心施設</text>
+          <text x="510" y="192" text-anchor="middle" font-size="13" fill="#1f4f6f">今之浦低地・大池</text>
+          <text x="510" y="150" text-anchor="middle" font-size="11.5" fill="#2f7fa3">大之浦へ続く水辺</text>
+          <text x="510" y="210" text-anchor="middle" font-size="10.5" fill="#5b6b74">下 ── 水辺の記憶</text>
+          <path d="M330 118 C360 128 375 138 392 152" fill="none" stroke="#356f88" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#fig26-a1)"/>
+          <text x="360" y="120" text-anchor="middle" font-size="10" fill="#356f88">臨む</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>図5　台地と低地の上下関係。遠江国府・国分寺が営まれた磐田原台地（上）と、大之浦へ続く今之浦低地・大池（下）は、一つの地形単位を成す。国府が「大之浦に臨む台地上」に置かれたという説明が、この一体性を裏づける。</figcaption>
+  </figure>
+
+  <h2 id="s6">6. 低湿地を市街地へ ── 土地区画整理と治水</h2>
+  <p>今之浦の歴史を、古代の水辺だけで語ることはできない。近現代の今之浦は、軟弱な低湿地を人が暮らせる市街地へと変えていった、土木と自治の歴史でもある。磐田市自治会連合会の今之浦地区自治会に関する説明は、今之浦を「東・西・北の三方を磐田原台地に囲まれた低湿地地域」と述べ、近年まで葦の生える沼地・水田であった場所を、土地区画整理事業によって整備した地域としている<sup class="fnref" id="r4"><a href="#fn4">4</a></sup>。三方を台地に囲まれた低みという地形は、周囲から水が集まりやすく、排水の乏しい湿地となりやすい。</p>
+  <p>この地形条件は、今之浦が水と切り離せない土地であったことを端的に語る。低湿地は、水田としての恵みをもたらす一方で、排水・治水・水害対策を絶えず必要とする。同じ自治会の説明には、中央を流れる今之浦川で満潮時に河川水が逆流すること、集中豪雨による河川氾濫が危惧されることも記されている。満潮時の逆流という現象は、この土地が海水面の高さに近い低地であることを示しており、「浦」の字が伝える水辺性が、現在もなお地形として生きていることを物語る。</p>
+  <p>土地区画整理事業は、こうした低湿地を、排水路・道路・宅地・商業地として再編する事業である。ここで強調しておきたいのは、区画整理が地名の歴史を消し去るものではない、という点である。むしろ、水を含む土地を人の暮らす市街地へと変えていった過程そのものが、今之浦の近現代史を成す。排水と盛土によって地盤を締め、道路を通し、宅地を割り、商業地を整えることで、古い浦の記憶は、消えたのではなく都市の内部に折り込まれた。地表からは水辺が見えなくなっても、地名と地形条件のうちに、その記憶は保存され続けている。</p>
+  <p>現在の住宅地化は、水辺の記憶を否定したのではなく、治水と区画整理の上に成り立った新しい土地利用である。この理解は、磐田の歴史を読むうえで一つの視座を与える。台地上の見付や国府といった「高みの歴史」だけでなく、その下に広がる水辺の低地にも目を向けること。今之浦は、まさにその視点を要求する地名である。低地に住むということは、水の恵みと水の脅威の双方を引き受けることであり、区画整理と治水の営みは、その引き受けを世代を越えて続けてきた地域自治の記録でもある。</p>
+  <p>低湿地を市街地へと変える事業は、一度の工事で完結するものではない。造成の後も、排水路の維持、河川の浚渫、堤の管理といった営みが世代を越えて続けられて初めて、宅地は宅地でありつづける。今之浦地区の自治組織が水害への危惧を今日なお記録に留めているのは、この土地が本来もつ低さと水との近さが、区画整理によっても解消しきれないことを、当事者が知っているからである。地名の「浦」は、そうした地形条件が現在まで持続していることを、遠回しに言い当てている。市街地の下に低湿地の時間が重なっているという事実は、地名のうえにも、治水の実務のうえにも、なお生きている。</p>
+
+  <h2 id="s7">7. 見付と御厨のあいだ ── 水辺の結節点としての今之浦</h2>
+  <p>今之浦を地形の記憶として読み終えるにあたり、その地理的な位置づけを確認しておきたい。今之浦は、見付地区と御厨地区の双方にまたがる文脈のなかで読む必要がある。見付の東海道・国府台、御厨の鎌田御厨・西貝塚方面、そして大池周辺の低地が交わる場所に、今之浦は位置している。行政区画の一つとして今之浦を見るだけでは、この土地の意味は十分に捉えられない。</p>
+  <p>地名としての今之浦は、複数の地理的文脈が接する結節点として捉えると、その意味が立体的になる。古代の水辺、国府周辺の交通、御厨の荘園的な景観、そして近代以降の市街地化──これらが一つの場所で重なり合う。見付が台地上の政治・信仰の中心であり、御厨が神饌を貢進する荘園的な土地であったとすれば、今之浦低地は、その両者のあいだに横たわる水辺として、人と物の移動を媒介する位置にあった。台地と台地のあいだの低みは、しばしば境界であると同時に通路でもある。</p>
+  <p>この結節点としての性格は、今之浦を単独の地名としてではなく、周辺の地名群との関係のなかで読むことを促す。<a href="/n023.html">中泉</a>の水辺、大池の低地、御厨の水田地帯は、いずれも今之浦低地と地形的に連続している。<a href="/c009.html">磐田の地名を読む</a>という作業のなかで今之浦を位置づけるなら、それは「見付と御厨のあいだに開けた水辺の低地」であり、両地区の歴史を地形の側から結び合わせる蝶番のような場所だと言える。地名を個別に読むのではなく、地形単位として束ねて読むこと──今之浦は、その方法の有効性を示す好個の事例である。</p>
+  <p>低地が境界であると同時に通路でもあるという性格は、今之浦の交通上の位置にも表れている。台地の縁を縫って走る東海道と、低地を流れる水系とが交わる付近に、人と物の往来は集まる。見付宿の賑わいと、御厨の生産地と、中泉方面の低地とを、今之浦は地形の上で媒介してきた。地名を結節点として読むとは、その土地を単独の点としてではなく、周囲との関係が織りなす面のなかに置き直して読むことにほかならない。今之浦を「見付の水辺」と呼ぶとき、そこには見付という台地上の中心と、それを支えた低地の水辺とが、一つの名のもとに結ばれている。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="今之浦を結節点として見付・御厨・中泉が結びつく地理関係の模式図">
+        <rect x="10" y="12" width="600" height="276" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="42" text-anchor="middle" font-size="15" class="svg-label">水辺の結節点としての今之浦</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <circle cx="310" cy="160" r="58" fill="#eaf6f9" stroke="#2f7fa3" stroke-width="2.4"/>
+          <text x="310" y="154" font-size="15" fill="#1f4f6f">今之浦低地</text>
+          <text x="310" y="176" font-size="11" fill="#5b6b74">大池・今之浦川</text>
+          <circle cx="130" cy="100" r="48" fill="#fff8e7" stroke="#d28a41" stroke-width="1.8"/>
+          <text x="130" y="96" font-size="12.5" fill="#8a5a22">見付・国府台</text>
+          <text x="130" y="116" font-size="10.5" fill="#5b6b74">東海道・台地</text>
+          <circle cx="490" cy="100" r="48" fill="#f3f8e9" stroke="#6f9a4f" stroke-width="1.8"/>
+          <text x="490" y="96" font-size="12.5" fill="#3f6a2a">御厨</text>
+          <text x="490" y="116" font-size="10.5" fill="#5b6b74">鎌田御厨・西貝塚</text>
+          <circle cx="310" cy="252" r="42" fill="#eef2f6" stroke="#356f88" stroke-width="1.8"/>
+          <text x="310" y="250" font-size="12.5" fill="#22303a">中泉方面</text>
+          <text x="310" y="268" font-size="10.5" fill="#5b6b74">低地の連続</text>
+          <line x1="168" y1="128" x2="262" y2="145" stroke="#356f88" stroke-width="2" stroke-dasharray="5 4"/>
+          <line x1="452" y1="128" x2="358" y2="145" stroke="#356f88" stroke-width="2" stroke-dasharray="5 4"/>
+          <line x1="310" y1="218" x2="310" y2="210" stroke="#356f88" stroke-width="2" stroke-dasharray="5 4"/>
+        </g>
+      </svg>
+    </div>
+    <figcaption>図6　水辺の結節点としての今之浦。見付・国府台（台地）、御厨、中泉方面の低地が、今之浦低地を介して地形的に結びつく。今之浦は、両地区の歴史を地形の側から結ぶ蝶番の位置にある。</figcaption>
+  </figure>
+  <p>二つの歌碑の存在は、この結節点に古代の記憶が置き直されてきたことを、目に見えるかたちで示している。万葉百科の歌碑詳細によれば、磐田市立今之浦公園内に歌碑があり、設置者は磐田市教育委員会、設置年は昭和58年（1983年）とされる<sup class="fnref" id="r5"><a href="#fn5">5</a></sup>。一方、磐田市文化協会は、ワークピア駐車場入口にある「大の浦万葉歌碑」を紹介し、遠江国司桜井王と天皇の歌が刻まれていると説明している。これらの歌碑は、考古学的な比定の証拠そのものではないが、地域が「大の浦」の記憶をどこに受け止めてきたかを示す文化的な資料であり、古代の歌が現在の都市空間に置き直された事例として読むことができる。</p>
+
+  <h2 id="s8">8. 結論 ── 「今之浦」を地形の記憶として読む</h2>
+  <p>本稿は、今之浦および古名「大之浦」という二つの水辺の地名を手がかりに、かつての入江・潟湖・低湿地の地形と、その干拓・土地区画整理による変遷を検討してきた。得られた見取り図は次のとおりである。今之浦の「浦」は、海岸線そのものではなく、この一帯に広がっていた水辺の低地の記憶を引き受けた字である。その水辺は、古代の「大之浦」に連なる広く流動的な水域として始まり、近世・近代に葦の茂る湿地・水田となり、近現代の土地区画整理を経て市街地へと転じた。三つの層は、同じ地形単位の上に順に堆積してきた連続する時間である。</p>
+  <p>「大の浦」の比定については、旧福田町周辺の湖沼とする万葉百科の説明と、大池・今之浦・中泉周辺に記憶を置く磐田側の語りとが併存し、一点に固定できない。本稿はこの比定差を無理に裁定せず、今之浦を「大之浦をめぐる遠江の水辺記憶を受け継ぐ場所の一つ」として位置づけた。歌そのものの比定という論点は、地名変遷とは性格を異にするため、既刊の論考に検討を譲った。比定が定まらないことは、この地名の弱みではない。むしろ、古代の水辺が広く輪郭の定まらないものであったことを、逆に照らし出している。</p>
+  <p>本稿の方法上の立場は明確である。地名変遷の記述は、「本当の由来を一つ選び出す作業」からではなく、「地形の記憶の層を分離し、それぞれの確度を書き分ける作業」から始めるべきである。史実・資料に基づく説明・伝承・推定を混同せず、「未確認」と「記載なし」を区別し、伝承を史実の劣位に置かず、地形からの読みを確定した語源と偽らない。この禁欲的な手続きこそが、水辺の地名を後世の調べものに耐える形で残す方途であると考える。今之浦の「今」の一字の由来を一義に決めることは資料の許す範囲を超えるが、「浦」の字がこの土地の水辺性を確かに伝えていることは、複数の材料の整合によって言える。</p>
+  <p>最後に、本稿が扱いえなかった課題を記しておく。第一に、大之浦の比定は、地質・堆積の調査と古地図・絵図の博捜によって、なお前進の余地がある。第二に、今之浦周辺の遺跡と遠江国分寺跡出土瓦との関係は、台地と低地を結ぶ生産・流通の実態を描く手がかりとなりうる。第三に、低湿地の干拓と土地区画整理の過程は、近世・近代の治水史・自治史として、独立に跡づけられるべき主題である。これらはいずれも、本稿が設定した確度の層の枠組みのなかで、未確認を史実へ、推定を資料に基づく説明へと押し上げていく作業に属する。台地の高みと水辺の低みを一つの地形単位として読む視点の先に、見付と御厨のあいだに開けた今之浦という土地の全体像が、少しずつ像を結んでいくはずである。</p>
+  <p>あらためて確認すれば、本稿の関心は正しい語源を一つ突き止めることにはない。地名は、過去の地形を一枚の写真のように保存するのではなく、変化の履歴を圧縮したかたちで伝える。海・潟湖・湿地・水田・住宅地という変化の連なりのなかで、なお「浦」という一字が土地の記憶を担いつづけている──今之浦が教えるのは、この地名の粘り強さである。地形が変わっても、名は残る。そして名が残るかぎり、私たちは失われた地形をなお読み解くことができる。水辺の地名を丁寧に読むことは、消えた入江の記憶を、次の世代が辿りうるかたちで書き留めていく作業でもある。</p>
+
+  <div class="cta-note">
+    本稿の舞台である今之浦や見付・中泉の低地には、水辺とともに暮らしを重ねてきた古い家や土地が数多く残る。筆者は磐田・袋井で不動産と介護の実務に携わる立場から、こうした土地の記憶にも向き合ってきた。<a href="https://fudosan.atawi.link/jikka/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=oishi_ronko" target="_blank" rel="noopener">家・土地・空き家の整理について相談する</a>ことができる。地名に刻まれた地形の記憶を書き留めることと、その舞台となった土地を次の世代へ手渡すことは、地続きの営みだと考えている。
+  </div>
+
+  <section class="notes" aria-label="注">
+    <h2>注</h2>
+    <ol class="fn-list">
+      <li id="fn1">万葉集巻8-1615「大の浦のその長浜に寄する波ゆたけく君を思ふこのころ」。奈良県立万葉文化館「万葉百科」の歌詳細では、聖武天皇の歌とし、遠江国司桜井王との贈答歌の文脈に置いて「大の浦は遠江国の海浜の名」と説明する。<a href="#r1" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn2">同じ「万葉百科」は、「大の浦」の現在地名として旧磐田郡福田町にあった湖沼を挙げる説明を併記する。これに対し磐田側の地域資料・文化協会解説は、大池・今之浦・中泉周辺に記憶を置く。両者は比定差として併存する。<a href="#r2" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn3">磐田市公式ウェブサイト「遠江国分寺跡」の説明による。奈良時代に「大之浦に臨む台地上」に遠江国府・国分寺・国分尼寺・大宝院廃寺などが営まれたとする。<a href="#r3" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn4">磐田市自治会連合会「今之浦地区自治会」の説明による。今之浦を三方を磐田原台地に囲まれた低湿地とし、葦の沼地・水田を土地区画整理事業で整備した地域とする。今之浦川の満潮時逆流・集中豪雨時の氾濫危惧にも言及がある。<a href="#r4" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn5">奈良県立万葉文化館「万葉百科」の歌碑詳細では、磐田市立今之浦公園内の歌碑を、設置者・磐田市教育委員会、設置年・昭和58年（1983年）とする。別に磐田市文化協会が、ワークピア駐車場入口の「大の浦万葉歌碑」を紹介する。<a href="#r5" aria-label="本文へ戻る">&#8617;</a></li>
+    </ol>
+    <p class="fn-editorial" style="font-family:'Zen Kaku Gothic New',sans-serif;font-size:12.5px;color:var(--sub);text-indent:0;margin-top:14px;line-height:1.85;">付記：本稿は一般読者向け記事 c024「今之浦と大之浦 ── 海の記憶が残るまち」の内容を、郷土史研究者向けに確度の層を明示して再構成した論考版である。万葉集の「大の浦」を桜井王の歌からどう比定するかという論点は、性格を異にするため既刊の第3号に検討を譲り、本稿では地名変遷と地形の記憶に主題を絞った。</p>
+  </section>
+
+  <section class="references" aria-label="参考文献">
+    <h2>参考文献・参考資料</h2>
+    <ul class="refs">
+      <li>『万葉集』巻8-1615。</li>
+      <li>奈良県立万葉文化館「万葉百科」歌詳細「巻8-1615 大の浦」　https://manyo-hyakka.pref.nara.jp/db/detailLink?cls=db_manyo&amp;pkey=1615　（最終閲覧：2026年7月25日）。</li>
+      <li>奈良県立万葉文化館「万葉百科」歌碑詳細「今之浦公園内の歌碑」　https://manyo-hyakka.pref.nara.jp/db/detailLink?cls=db_kahi&amp;pkey=1808　（最終閲覧：2026年7月25日）。</li>
+      <li>磐田市文化協会「大の浦万葉歌碑」　https://iwatabunkyo.com/town-art/1584/　（最終閲覧：2026年7月25日）。</li>
+      <li>磐田市自治会連合会「今之浦地区自治会」　https://iwatashi-jichikai.jp/area/c00104.html　（最終閲覧：2026年7月25日）。</li>
+      <li>磐田市公式ウェブサイト「遠江国分寺跡」　https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002046.html　（最終閲覧：2026年7月25日）。</li>
+      <li>奈良文化財研究所「全国文化財総覧」今之浦周辺の瓦を出土した遺跡に関する報告　https://sitereports.nabunken.go.jp/article/124968　（最終閲覧：2026年7月25日）。</li>
+      <li>磐田市『磐田市史』通史編（磐田市、該当章）。</li>
+      <li>磐田市教育委員会編『磐田の地名・地誌関係資料』（該当項）。</li>
+      <li>大石浩之の磐田論考 第3号「万葉集の遠江歌と『大の浦』 ── 桜井王の歌の比定」　https://iwata-monogatari.net/oishi-ronko/003/　（最終閲覧：2026年7月25日）。</li>
+      <li>磐田物語 c024「今之浦と大之浦 ── 海の記憶が残るまち」　https://iwata-monogatari.net/c024.html　（最終閲覧：2026年7月25日）。</li>
+      <li>磐田物語 n019「遠江国府」、n023「中泉の生い立ち」、c009「磐田の地名を読む」（本文参照）。</li>
+    </ul>
+  </section>
+
+  <div class="pager">
+    <a href="https://iwata-monogatari.net/oishi-ronko/">← 大石浩之の磐田論考 一覧へ</a>
+    <a href="https://iwata-monogatari.net/c024.html">一般向け記事版（c024）を読む →</a>
+  </div>
+  </article>
+</main>
+
+<footer class="im-foot">
+  <style>
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand:hover{text-decoration:none;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
+  </style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。本論考は個人の調査・覚え書きをもとに、確度の層を区別しながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://oishi-hiroyuki.org/" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+      </ul>
+    </div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+  </div>
+</footer>
+</body>
+</html>
