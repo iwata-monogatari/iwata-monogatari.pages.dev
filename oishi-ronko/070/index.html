@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>古地図に村の名を探す ── 戸別明細図と旧高帳の読み合わせ ── 史料を突き合わせて村を復元する方法｜大石浩之の磐田論考｜磐田物語</title>
+<meta name="description" content="旧高旧領取調帳（旧高帳）・明治期の戸別明細図・現在の公図という性格の異なる三種の史料を、字（あざ）を鍵に読み合わせて近世〜近代の村を復元する方法を論じる学術論考。各史料の作成主体・記載内容・限界を史料批判の観点から腑分けし、史実・通説・推定・伝承の確度層を保った村落復元の手続きを提示する。">
+<meta property="og:title" content="古地図に村の名を探す 戸別明細図と旧高帳の読み合わせ｜大石浩之の磐田論考">
+<meta property="og:description" content="旧高帳・戸別明細図・公図を字を鍵に読み合わせ、消えた村を復元する方法を史料批判の観点から論じる、郷土史研究者向けの学術論考。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://iwata-monogatari.net/oishi-ronko/070/">
+<meta property="og:locale" content="ja_JP">
+<meta name="iwata:title" content="古地図に村の名を探す 戸別明細図と旧高帳の読み合わせ">
+<meta name="iwata:published" content="2026-07-25">
+<meta name="iwata:category" content="磐田共通・論考">
+<meta name="iwata:new-article" content="1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#20292e;--accent:#2f6079;--accent2:#356f88;--sub:#586873;--rule:#c8d5dc;--rule2:#dfe8ec;--paper:#fffdf8;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Shippori Mincho",serif;color:var(--ink);background:var(--paper);line-height:2.0;font-size:16.5px;-webkit-font-smoothing:antialiased;text-align:justify;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .gothic{font-family:"Zen Kaku Gothic New",sans-serif;}
+  main{max-width:720px;margin:0 auto;padding:0 24px 40px;}
+  .crumb{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--sub);padding:18px 0 4px;text-align:left;letter-spacing:.02em;}
+  .crumb a{color:var(--sub);}
+  /* ===== 論文タイトル・ヘッダー ===== */
+  .kiyo-hero{text-align:center;padding:26px 0 0;margin:6px 0 0;border:0;background:none;box-shadow:none;}
+  .kiyo-journal{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--accent);font-weight:700;letter-spacing:.22em;margin:0 0 6px;}
+  .kiyo-series{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.08em;margin:0 0 22px;}
+  .kiyo-hero h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:27px;line-height:1.6;color:var(--ink);margin:0 auto 12px;letter-spacing:.02em;max-width:22em;}
+  .kiyo-subtitle{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--accent2);margin:0 0 24px;line-height:1.7;}
+  .kiyo-author{font-size:16.5px;color:var(--ink);margin:0 0 3px;letter-spacing:.04em;}
+  .kiyo-author sup{font-size:10px;}
+  .kiyo-affil{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);margin:0 0 20px;}
+  .kiyo-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;margin-top:6px;font-family:"Zen Kaku Gothic New",sans-serif;}
+  .kiyo-meta div{font-size:12.5px;}
+  .kiyo-meta dt{display:inline;color:var(--sub);font-weight:500;}
+  .kiyo-meta dd{display:inline;color:var(--ink);margin-left:6px;font-weight:700;}
+  /* ===== 要旨・キーワード ===== */
+  .abstract{border-top:none;padding:6px 0 0;margin:30px 0 0;}
+  .abstract h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--accent);letter-spacing:.28em;text-align:center;font-weight:700;}
+  .abstract p{font-size:15px;margin:0;color:#33424b;line-height:1.95;padding:16px 22px;border:1px solid var(--rule2);background:#fbfdfe;border-radius:2px;}
+  .keywords{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;color:var(--sub);margin:14px 0 0;padding-bottom:16px;border-bottom:1px solid var(--rule);text-align:left;line-height:1.8;}
+  .keywords strong{color:var(--accent);}
+  /* ===== 目次 ===== */
+  .toc{margin:26px 0;padding:14px 0;border-top:1px solid var(--rule2);border-bottom:1px solid var(--rule2);}
+  .toc h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.2em;text-align:center;}
+  .toc ol{margin:0 auto;max-width:30em;padding-left:1.6em;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:var(--ink);text-align:left;}
+  .toc li{margin:6px 0;line-height:1.7;}
+  .toc a{color:var(--ink);}
+  /* ===== 見出し ===== */
+  h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;color:var(--ink);margin:48px 0 18px;padding-bottom:8px;border-bottom:1.5px solid var(--accent2);letter-spacing:.02em;text-align:left;}
+  h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16.5px;color:var(--accent2);margin:30px 0 10px;text-align:left;}
+  p{margin:0 0 16px;text-indent:1em;}
+  .abstract p,.keywords,.verdict,figcaption,.cta-note,.refs li,.fn-list li,.pager,.crumb{text-indent:0;}
+  /* ===== 学説節（論文体） ===== */
+  .setsu{background:none;border:0;border-radius:0;padding:0;margin:22px 0;}
+  .setsu-tag{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:11.5px;font-weight:700;color:var(--accent);background:none;padding:0;margin:22px 0 2px;letter-spacing:.12em;}
+  .setsu-tag.denshou{color:var(--accent2);}
+  .setsu h3{font-family:"Shippori Mincho",serif;font-size:17.5px;color:var(--ink);margin:2px 0 12px;border-bottom:1px dotted var(--rule);padding-bottom:8px;}
+  .setsu p{margin:0 0 14px;font-size:16px;text-indent:1em;}
+  .verdict{font-size:14.5px;color:#33424b;background:none;border-left:3px solid var(--accent2);border-radius:0;padding:2px 0 2px 16px;margin:14px 0 0;line-height:1.85;}
+  .verdict strong{color:var(--accent2);}
+  /* ===== 図版 ===== */
+  figure{margin:32px 0;}
+  .fig-box{background:#fff;border:1px solid var(--rule);border-radius:2px;padding:20px 16px;text-align:center;}
+  figcaption{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-top:10px;line-height:1.8;text-align:left;}
+  svg{max-width:100%;height:auto;}
+  .svg-label{fill:var(--ink);}.svg-sub{fill:var(--sub);}
+  /* ===== 表 ===== */
+  .table-wrap{overflow-x:auto;margin:24px 0;}
+  table.academic-table{width:100%;border-collapse:collapse;min-width:700px;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;line-height:1.7;border-top:2px solid var(--accent2);border-bottom:2px solid var(--accent2);}
+  .academic-table th{background:none;color:var(--accent);text-align:left;font-weight:700;border-bottom:1px solid var(--accent2);}
+  .academic-table th,.academic-table td{border-bottom:1px solid var(--rule2);padding:10px 12px;vertical-align:top;text-indent:0;}
+  .academic-table caption{caption-side:top;text-align:left;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-bottom:8px;}
+  /* ===== 脚注・参考文献 ===== */
+  sup.fnref{font-size:.68em;font-family:"Zen Kaku Gothic New",sans-serif;line-height:0;}
+  sup.fnref a{color:var(--accent);}
+  .notes,.references{margin-top:40px;}
+  .notes h2,.references h2{font-size:16px;}
+  .fn-list,.refs{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);}
+  .fn-list li,.refs li{margin:0 0 8px 1.6em;line-height:1.8;padding-left:.2em;}
+  .fn-list li{list-style:decimal;}
+  .cta-note{background:#fbfdfe;border:1px solid var(--rule2);border-radius:2px;padding:18px 20px;margin:36px 0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:#33424b;line-height:1.9;}
+  .cta-note a{font-weight:700;}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:42px 0 10px;flex-wrap:wrap;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;}
+  @media(max-width:600px){.kiyo-hero h1{font-size:22px;}body{font-size:16px;}h2{font-size:18px;}.kiyo-subtitle{font-size:15.5px;}}
+</style>
+<link rel="canonical" href="https://iwata-monogatari.net/oishi-ronko/070/">
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+</head>
+<body>
+
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="crumb"><a href="https://iwata-monogatari.net/">磐田物語</a> ／ <a href="https://iwata-monogatari.net/oishi-ronko/">大石浩之の磐田論考</a> ／ 古地図に村の名を探す ── 戸別明細図と旧高帳の読み合わせ</div>
+
+  <article>
+  <header class="kiyo-hero">
+    <p class="kiyo-journal">磐田郷土史研究紀要</p>
+    <p class="kiyo-series">大石浩之の磐田論考　第70号（史料論・方法編）</p>
+    <h1>古地図に村の名を探す ── 戸別明細図と旧高帳の読み合わせ</h1>
+    <p class="kiyo-subtitle">史料を突き合わせて村を復元する方法</p>
+    <p class="kiyo-author">大石浩之<sup>1</sup></p>
+    <p class="kiyo-affil"><sup>1</sup> 富士ヶ丘サービス株式会社 代表取締役</p>
+    <dl class="kiyo-meta">
+      <div><dt>公開日</dt><dd>2026.07.25</dd></div>
+      <div><dt>資料検証</dt><dd>公開資料による検証済み</dd></div>
+      <div><dt>対象地区</dt><dd>磐田市全域</dd></div>
+    </dl>
+  </header>
+
+  <section class="abstract" aria-label="要旨">
+    <h2>要旨</h2>
+    <p>合併によって行政上消えた村の名や、その下にあった字（あざ）を復元するには、単一の地図では足りない。本稿は、旧高旧領取調帳（旧高帳）に代表される近世の村名簿、明治後期以降の戸別明細図、そして現在の公図という、作成主体も目的も精度も異なる三種の史料を「読み合わせる」方法を、史料批判の観点から論じる。まず各史料が何を記録し何を記録しないかを腑分けし、旧高帳は村の名と石高、戸別明細図は村の内部空間、公図は現在の地番と字を担うことを確認する。そのうえで、字が地番の単位として世代を越えて残る性質を鍵に、三史料を一本の線へ接続する手順を示す。本稿の立場は、村の復元を「一枚の正解を探す作業」ではなく、確度の異なる史料を層として重ね、史実・通説・推定・伝承を混同せずに記述する作業として組み替える点にある。あわせて、各史料の限界と所蔵機関の分散という現実的制約も、方法の一部として位置づける。</p>
+  </section>
+  <p class="keywords"><strong>キーワード：</strong>戸別明細図／旧高旧領取調帳／公図／字（あざ）と地番／村落復元／史料批判／地籍図</p>
+
+  <nav class="toc" aria-label="目次">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#s1">問題設定 ── なぜ一枚の地図では村が読めないのか</a></li>
+      <li><a href="#s2">三種の史料 ── 旧高帳・戸別明細図・公図の性格</a></li>
+      <li><a href="#s3">一枚目：旧高帳と近世の村</a></li>
+      <li><a href="#s4">二枚目：戸別明細図と明治の村の空間</a></li>
+      <li><a href="#s5">三枚目：公図・旧土地台帳と字・地番</a></li>
+      <li><a href="#s6">読み合わせの方法と史料批判</a></li>
+      <li><a href="#s7">背景としての制度と地理 ── 合併・字の残存・所蔵の分散</a></li>
+      <li><a href="#s8">結論 ── 一枚の正解から、層を重ねる復元へ</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1">1. 問題設定 ── なぜ一枚の地図では村が読めないのか</h2>
+  <p>ある土地の履歴を、その場所に立って「ここは昔なんという村だったのか」と問うとき、答えを一枚の地図に求めても、たいていは行き詰まる。現在の地図には現在の地名しか載らず、古い地図には古い区割りしか載らない。しかも土地をあらわす言葉の単位そのものが、近世の「村」、明治以降の「大字」、地番に付された「字（あざ）」というように、時代とともに入れ替わってきた。ひとつの呼び名だけをたどっていくと、どこかで線が途切れる。本稿が扱うのは、この途切れをどう埋めるか、すなわち複数の史料を突き合わせて消えた村を復元するための方法である。</p>
+  <p>この主題は、磐田物語の一般向け記事<a href="/c011">「古地図に村の名を探す ── 戸別明細図と旧高帳の読み合わせ」</a>で、旧高帳・戸別明細図・公図という「三枚の地図」を重ねる読み方として紹介した。本稿はその方法編を、郷土史研究者に向けて史料論として書き直すものである。一般向け記事が読み方の手順を示すことに主眼を置いたのに対し、本稿はそれぞれの史料が何を語り何を語らないかという史料批判の側に重心を移す。方法そのものを対象化することが、本稿の課題である。</p>
+  <p>あらかじめ、本稿が復元と呼ぶ作業の性格を限定しておきたい。ここでいう村の復元とは、失われた村の姿を「そのまま」再現することではない。それは原理的に不可能である。史料はいずれも、ある目的のもとにある時点の土地を写し取った記録であって、過去の実体そのものではない。復元とは、性格の異なる複数の記録を突き合わせ、それらが整合する範囲で、かつて村がどう呼ばれ、どこからどこまでで、どう区切られていたかを、確度の層を保ったまま描き直す作業である。したがって復元の成果は、一枚の完成図ではなく、確からしさの濃淡をともなった見取り図の形をとる。</p>
+  <p>なぜ複数の史料が要るのかは、村という対象の性格に由来する。村は、境界線と面積で一義に定まる幾何学的な図形ではない。それは石高で計られる年貢負担の単位であり、家々の集まる生活の場であり、支配の末端の行政単位でもあった。近世の村を石高で記録した文字史料には空間がなく、明治の村を細かく描いた図には測量の正確さが必ずしもなく、現在の公図には近世以来の素性が書かれていない。ひとつの史料の欠けを別の史料が補うという関係にあるからこそ、それらを重ねる意味が生じる。単一史料の精読ではなく、複数史料の突き合わせこそが、この主題の方法論の核となる。</p>
+  <p>もう一点、文字史料と絵図史料の性格差にも触れておきたい。旧高帳のような文字の帳面は、村を名と数量へ抽象化して記録する。抽象化された情報は誤写や異同こそあれ、読みそのものは一義に定まりやすい。これに対し戸別明細図や公図のような絵図は、土地を線と面として写し取るぶん、縮尺のゆがみや区画の描き崩れといった、図に固有の不確かさをかかえこむ。文字史料の精確さと絵図史料の具体性は、それぞれ別の代償のうえに成り立っている。読み合わせとは、この二種の史料が負う別々の代償を、互いの長所で相殺していく作業でもある。文字だけでも図だけでも村は結ばれず、両者を往復してはじめて像がむすばれる。</p>
+  <p>本稿が一貫して用いる区別を、はじめに定義しておく。第一に<strong>史実</strong>、すなわち史料によって直接確認できる事柄。第二に<strong>通説</strong>、学界で広く支持されているが一点では確定しない事柄。第三に<strong>推定</strong>、根拠はあるが未確定の事柄。第四に<strong>伝承</strong>、地域で語り継がれてきた事柄である。地図史料の扱いにおいては、これに加えて「未確認」と「記載なし」の別も重んじる。「未確認」は管見の限りその史料に突き当たっていない状態を、「記載なし」はその史料に当該事項が現に書かれていない状態を指す。両者の混同は、方法の信頼を根本から損なう。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="旧高帳・戸別明細図・公図の三史料が字を共通の手がかりに重なり、消えた村を復元する構造の模式図">
+        <defs>
+          <marker id="fig70-1-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2f7fa3"/></marker>
+        </defs>
+        <rect x="12" y="12" width="596" height="276" rx="20" fill="#fffdf7" stroke="#d8e8ef"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <rect x="46" y="70" width="150" height="80" rx="10" fill="#fff" stroke="#1f3a48" stroke-width="1.8"/>
+          <text x="121" y="102" font-size="14" fill="#22303a">旧高帳</text>
+          <text x="121" y="124" font-size="11" fill="#5b6b74">村の名・石高</text>
+          <rect x="235" y="70" width="150" height="80" rx="10" fill="#fff" stroke="#2f7fa3" stroke-width="1.8"/>
+          <text x="310" y="102" font-size="14" fill="#22303a">戸別明細図</text>
+          <text x="310" y="124" font-size="11" fill="#5b6b74">村の空間・道</text>
+          <rect x="424" y="70" width="150" height="80" rx="10" fill="#fff" stroke="#356f88" stroke-width="1.8"/>
+          <text x="499" y="102" font-size="14" fill="#22303a">公図</text>
+          <text x="499" y="124" font-size="11" fill="#5b6b74">現在の地番・区画</text>
+          <line x1="196" y1="110" x2="233" y2="110" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig70-1-arrow)"/>
+          <line x1="385" y1="110" x2="422" y2="110" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig70-1-arrow)"/>
+          <line x1="121" y1="186" x2="499" y2="186" stroke="#356f88" stroke-width="1" stroke-dasharray="5 5"/>
+          <text x="310" y="214" font-size="13" class="svg-label">字（あざ）── 三史料をつなぐ共通の手がかり</text>
+          <rect x="228" y="236" width="164" height="42" rx="10" fill="#eef7fb" stroke="#356f88" stroke-width="1.6"/>
+          <text x="310" y="262" font-size="13" fill="#1f4f6f">消えた村の復元</text>
+          <line x1="121" y1="186" x2="290" y2="236" stroke="#c8d5dc" stroke-width="1"/>
+          <line x1="499" y1="186" x2="330" y2="236" stroke="#c8d5dc" stroke-width="1"/>
+        </g>
+        <text x="310" y="44" text-anchor="middle" font-size="14" class="svg-label">三史料の役割分担と接続</text>
+      </svg>
+    </div>
+    <figcaption>図1　三史料の役割分担。旧高帳は村の名と素性を、戸別明細図は村の内部空間を、公図は現在の地番を担い、字（あざ）を共通の手がかりとして一本の線に接続される。</figcaption>
+  </figure>
+
+  <h2 id="s2">2. 三種の史料 ── 旧高帳・戸別明細図・公図の性格</h2>
+  <p>個別の検討に入る前に、三種の史料を同じ土俵に並べ、それぞれの性格を対比しておく。三者はいずれも「土地」を対象とするが、写し取った対象・目的・時代がすべて異なる。旧高帳の系統は近世の村を石高という数量で記録した文字史料であり、戸別明細図は明治後期以降に村の内部を絵図として描いた図であり、公図は現在の土地の区画と地番を示す登記の付属図である。文字と図、近世と近現代、支配の記録と登記の記録という三つの軸で、三者は互いに離れている。</p>
+  <p>この対比から直ちに分かるのは、三者が答えられる問いが違うということである。旧高帳に問えるのは「この場所に、江戸時代どんな名の村があり、どれくらいの大きさで、誰の支配下にあったか」であり、戸別明細図に問えるのは「その村の内部は、どの字にどんな道が通り、田畑と宅地がどう分かれ、どの家がどこにあったか」であり、公図に問えるのは「いまのこの土地は、どの大字・字に属し、どんな地番か」である。問いの水準がそろっていないからこそ、三者を重ねると、単独では見えない村の全体像が立ち上がる。</p>
+  <p>史料批判の観点からは、三者の「作られ方」の違いに注意を払う必要がある。旧高帳の中心をなす旧高旧領取調帳は、明治初年に新政府が旧幕領・旧藩領の村高と領主を調査した目録であり、支配の再編という行政目的のもとに編まれた<sup class="fnref" id="r1"><a href="#fn1">1</a></sup>。戸別明細図は、地租改正に伴う地籍図の系統や、民間で作られた住宅地図の先駆にあたるものなど、由来が一様でなく、作成主体も精度もまちまちである。公図は、旧土地台帳に付属した字図（旧公図）を引き継いだもので、登記事務のための図であって正確な測量図とは限らない。それぞれの成立事情が、記載の精度と限界を規定している。</p>
+  <p>したがって本稿は、三史料を「精度の高低で優劣化する」立場をとらない。文字史料である旧高帳に空間の正確さを求めるのは筋違いであり、登記付属図である公図に近世の素性を求めるのも無い物ねだりである。各史料を、その史料が本来担う情報の水準においてのみ評価し、担わない情報については他の史料に委ねる。この役割分担の自覚こそが、読み合わせという方法の前提となる。以下、三史料を作成の古い順に一枚ずつ検討する。</p>
+  <p>役割分担を自覚するとは、具体的には、ひとつの史料に答えられない問いを無理に答えさせないということである。たとえば戸別明細図に近世の支配関係を読み取ろうとしたり、旧高帳から集落の家並みを想像したりするのは、史料の射程を越えた読みであり、そこで得られる像は根拠を欠く。逆に、公図に現在の地番を、旧高帳に近世の村高を、戸別明細図に村内の区画を、それぞれの得意とする水準で問えば、答えは確かな根拠をもって返ってくる。三史料を並べる目的は、どれか一枚を主役に据えて他を従わせることではなく、問いの水準ごとに担当史料を割り当て、それぞれの答えを突き合わせることにある。この分業の設計図をあらかじめ持っておくことが、誤読を避ける最初の防波堤となる。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近世から現在までの時間軸上に、旧高帳・戸別明細図・公図の各史料が記録する時期を帯で示した図">
+        <rect x="10" y="12" width="620" height="236" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <line x1="60" y1="200" x2="600" y2="200" stroke="#356f88" stroke-width="2"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle" font-size="11" fill="#5b6b74">
+          <line x1="120" y1="194" x2="120" y2="206" stroke="#356f88" stroke-width="1.5"/><text x="120" y="224">1697</text>
+          <line x1="250" y1="194" x2="250" y2="206" stroke="#356f88" stroke-width="1.5"/><text x="250" y="224">1831</text>
+          <line x1="360" y1="194" x2="360" y2="206" stroke="#356f88" stroke-width="1.5"/><text x="360" y="224">明治初</text>
+          <line x1="450" y1="194" x2="450" y2="206" stroke="#356f88" stroke-width="1.5"/><text x="450" y="224">1909</text>
+          <line x1="580" y1="194" x2="580" y2="206" stroke="#356f88" stroke-width="1.5"/><text x="580" y="224">現在</text>
+        </g>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="12">
+          <rect x="90" y="70" width="290" height="26" rx="6" fill="#eaf1f5" stroke="#1f3a48" stroke-width="1.4"/>
+          <text x="235" y="88" text-anchor="middle" fill="#22303a">旧高帳（郷帳〜旧高旧領取調帳）</text>
+          <rect x="430" y="106" width="150" height="26" rx="6" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="1.4"/>
+          <text x="505" y="124" text-anchor="middle" fill="#22303a">戸別明細図</text>
+          <rect x="360" y="142" width="240" height="26" rx="6" fill="#eef7fb" stroke="#356f88" stroke-width="1.4"/>
+          <text x="480" y="160" text-anchor="middle" fill="#22303a">公図・旧土地台帳</text>
+        </g>
+        <text x="320" y="44" text-anchor="middle" font-size="14" class="svg-label">三史料が記録する時期の帯</text>
+      </svg>
+    </div>
+    <figcaption>図2　三史料が記録する時期の帯。旧高帳の系統は近世を、戸別明細図は明治後期以降を、公図・旧土地台帳は明治から現在までをそれぞれ覆い、重なりと隙間をもって連なる。</figcaption>
+  </figure>
+
+  <h2 id="s3">3. 一枚目：旧高帳と近世の村</h2>
+  <div class="setsu">
+    <span class="setsu-tag">史料①・近世の村名簿</span>
+    <h3>石高で村を記録した文字史料 ── 郷帳と旧高旧領取調帳</h3>
+    <p><strong>史料の性格。</strong>三史料のうち最も古い層をなすのが、近世の村を記録した帳面である。村は石高（村高）とともに、幕府の郷帳や明治初年の旧高旧領取調帳といった公式の名簿に書き留められた。これらは地図ではなく文字史料だが、村の名・大きさ・支配者を確かめる出発点となるため、本稿では便宜上「一枚目」として位置づける。旧磐田市域の村々についても、元禄郷帳（元禄10年〔1697年〕以降）、天保郷帳（天保2〜5年〔1831〜1834年〕）、旧高旧領取調帳（明治初期）に記録が残る<sup class="fnref" id="r2"><a href="#fn2">2</a></sup>。</p>
+    <p><strong>この史料が語ること。</strong>旧高帳の系統が答えるのは、村の同定に関わる基礎的な問いである。三つの帳面を並べれば、同じ村の石高が近世を通じてどう動いたか、支配がどう変わったかも追える。地域史において、ある地名が近世に村として実在したことを確かめる第一の照合先が、この史料群である。戸別明細図や公図に出てくる村名・字名の素性を確かめる際、まずここへ立ち返ることになる。</p>
+    <p><strong>史料批判上の限界。</strong>他方で、旧高帳は文字の一覧であって、村の「かたち」や境界は描かれない。石高は村の経済的規模を示すが、それが地図上のどれだけの広がりに対応するかは、石高だけからは決まらない。地味の善し悪しや田畑の別によって、同じ石高でも面積は大きく異なるからである。したがって旧高帳から引き出せるのは「村の名と素性」であって「村の空間」ではない。この空間の欠落を、次の戸別明細図が補う。ここで注意すべきは、旧高帳に村の境界が「記載なし」であることは、当時境界が不明瞭だったことを意味しない点である。境界は現地では認識されていたが、この史料の記録目的の外にあった、というだけである。</p>
+    <p><strong>三つの帳面の使い分け。</strong>旧高帳と一括りに呼んでも、そのなかには時期と目的を異にする複数の帳面が含まれる。元禄郷帳と天保郷帳はいずれも幕府が国郡別に村高をまとめた郷帳だが、およそ130年を隔てて編まれており、両者を並べれば、その間に村高がどう改められ、新田がどう立ったかの手がかりが得られる。旧高旧領取調帳は明治初年に旧領を確定する目的で作られたため、幕末時点の支配関係を確かめるのに向く。同じ村を追うにも、村高の推移を見たいのか、支配の帰属を見たいのかによって、参照すべき帳面は変わる。旧高帳を一枚岩の史料と見ず、目的に応じて使い分ける態度が要る。</p>
+    <div class="verdict"><strong>本稿の評価：</strong>旧高帳の系統は、村の実在・名称・石高・支配を<strong>史実</strong>の水準で確定できる基幹史料である。ただしその情報は非空間的であり、村の輪郭を地図上に描く役には単独では立たない。</div>
+  </div>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="旧高帳が村名・石高・旧領を記録する一方、村の境界や内部空間を欠くことを示す対照図">
+        <rect x="10" y="12" width="600" height="226" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif">
+          <rect x="40" y="52" width="250" height="150" rx="8" fill="#fff" stroke="#1f3a48" stroke-width="1.6"/>
+          <text x="165" y="80" text-anchor="middle" font-size="13" fill="#2f6079" font-weight="700">旧高帳が記録する</text>
+          <text x="70" y="112" font-size="12" fill="#22303a">・村の名（○○村）</text>
+          <text x="70" y="140" font-size="12" fill="#22303a">・村高（石高）</text>
+          <text x="70" y="168" font-size="12" fill="#22303a">・旧領（支配者）</text>
+          <rect x="330" y="52" width="250" height="150" rx="8" fill="#f7f4ef" stroke="#b0654a" stroke-width="1.4" stroke-dasharray="5 4"/>
+          <text x="455" y="80" text-anchor="middle" font-size="13" fill="#8a4a2f" font-weight="700">旧高帳が記録しない</text>
+          <text x="360" y="112" font-size="12" fill="#5b6b74">・村の境界・面積</text>
+          <text x="360" y="140" font-size="12" fill="#5b6b74">・字ごとの位置</text>
+          <text x="360" y="168" font-size="12" fill="#5b6b74">・道・水路・家の並び</text>
+        </g>
+        <text x="310" y="36" text-anchor="middle" font-size="14" class="svg-label">文字史料の射程 ── 名は残り、空間は欠ける</text>
+      </svg>
+    </div>
+    <figcaption>図3　文字史料としての旧高帳の射程。村の名・石高・支配は史実の水準で確定できるが、境界・面積・内部空間は記録の目的外にあり、欠落は「記載なし」であって不在の証拠ではない。</figcaption>
+  </figure>
+
+  <h2 id="s4">4. 二枚目：戸別明細図と明治の村の空間</h2>
+  <div class="setsu">
+    <span class="setsu-tag">史料②・村の内部を描く図</span>
+    <h3>一筆・一戸を描いた図 ── 戸別明細図・地籍図</h3>
+    <p><strong>史料の性格。</strong>明治後期以降、村のなかの土地や家を一筆・一戸ずつ細かく描いた図が各地で作られた。これらを総称して戸別明細図・地籍図などと呼ぶ。旧磐田市域でも、明治42年〔1909年〕前後を含む時期に、村ごとの戸別明細図が作られたとされる。旧高帳では知りえない村の内部空間が見える点に、この史料の第一の価値がある。どの字にどんな道が通り、田畑と宅地がどう分かれ、どの家がどこにあったか──村の内部構造が一枚のうえに展開される。</p>
+    <p><strong>この史料が語ること。</strong>旧高帳で名と素性を押さえた村を、戸別明細図のうえに置き直すと、その村が地図のどこからどこまでで、内部がどう区切られていたかが具体化する。屋号や所有者が書き込まれた図であれば、家々の配置から集落の構造まで読める。旧高帳の非空間性を補い、村を空間として復元する中心的な作業は、この二枚目の上で行われる。復元の作業が実質的に動き出すのは、村が図の上に載ったときである。</p>
+    <p><strong>史料批判上の限界。</strong>ただし戸別明細図の扱いには慎重さが要る。作成主体も精度もまちまちで、必ずしも測量に基づく正確な地図とは限らない<sup class="fnref" id="r3"><a href="#fn3">3</a></sup>。屋号や通称が現在の地名と一致しないことも珍しくない。同じ村でも、作られた年や作り手によって描き方が異なり、別の図と突き合わせて初めて読めることも多い。一枚を古態そのものと見なして鵜呑みにするのは危うい。図に描かれた区画は「そう描かれた」記録であって、「現地がそうだった」事実そのものではない。この点で戸別明細図は、史実と推定の境界に立つ史料であり、他の史料と照らして初めてその確度が定まる。</p>
+    <p><strong>誰が何のために描いたか。</strong>戸別明細図を読むうえで欠かせないのが、その図が誰の手で何のために作られたかという作成主体への問いである。地租改正に伴って土地一筆ごとの地目・地積を確定する目的で作られた地籍図の系統と、営業や日常の便のために家々の位置と屋号を示した民間の図とでは、正確さの重点も、記載される情報の種類も異なる。前者は面積の確定に、後者は家の同定に力点がある。目の前の一枚がどちらの系統に属するかを見極めないまま区画線を信じれば、実務用に略された線を測量の結果と取り違えかねない。作成の目的を問うことは、その図をどこまで信じてよいかを測る物差しになる。</p>
+    <div class="verdict"><strong>本稿の評価：</strong>戸別明細図は、村の内部空間を復元しうる唯一に近い史料でありながら、精度が一様でないため、その記載は<strong>推定</strong>を多く含む。単独で古態を証さず、旧高帳・公図と三方から照らして確度を上げるべき史料である。</div>
+  </div>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="戸別明細図が字ごとの区画・道・水路・家の位置を描き込む村内部の模式図">
+        <rect x="10" y="12" width="600" height="256" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <g stroke="#c8d5dc" stroke-width="1" fill="none">
+          <line x1="60" y1="80" x2="560" y2="80"/><line x1="60" y1="140" x2="560" y2="140"/><line x1="60" y1="200" x2="560" y2="200"/>
+          <line x1="185" y1="50" x2="185" y2="230"/><line x1="310" y1="50" x2="310" y2="230"/><line x1="435" y1="50" x2="435" y2="230"/>
+        </g>
+        <path d="M60 110 L560 110" stroke="#b0654a" stroke-width="2.4" fill="none"/>
+        <path d="M310 50 L310 230" stroke="#5b8fb0" stroke-width="2" stroke-dasharray="4 3" fill="none"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="11" fill="#5b6b74">
+          <rect x="120" y="150" width="18" height="14" fill="#e3ccae" stroke="#8a6a3a"/>
+          <rect x="360" y="90" width="18" height="14" fill="#e3ccae" stroke="#8a6a3a"/>
+          <rect x="470" y="160" width="18" height="14" fill="#e3ccae" stroke="#8a6a3a"/>
+          <text x="120" y="70" fill="#2f6079">字 上ノ川</text>
+          <text x="360" y="70" fill="#2f6079">字 宮ノ前</text>
+          <text x="485" y="70" fill="#2f6079">字 東畑</text>
+          <text x="500" y="118" fill="#8a4a2f">道</text>
+          <text x="318" y="222" fill="#3a6f8a">水路</text>
+          <text x="150" y="180" fill="#5b6b74">□ 家</text>
+        </g>
+        <text x="310" y="36" text-anchor="middle" font-size="14" class="svg-label">戸別明細図が描く村の内部（模式）</text>
+        <text x="310" y="256" text-anchor="middle" font-size="10.5" class="svg-sub">字・地番・道・水路・家の位置が一枚に展開される（描き方は図により異なる）。</text>
+      </svg>
+    </div>
+    <figcaption>図4　戸別明細図が描く村内部の模式。字ごとの区画に道・水路・家が書き込まれ、旧高帳の欠く空間情報を与える。ただし精度は図ごとに異なり、区画は現地の事実そのものではない。</figcaption>
+  </figure>
+
+  <h2 id="s5">5. 三枚目：公図・旧土地台帳と字・地番</h2>
+  <div class="setsu">
+    <span class="setsu-tag">史料③・現在につながる登記図</span>
+    <h3>現在の区画を示す図 ── 公図と旧土地台帳</h3>
+    <p><strong>史料の性格。</strong>三枚目は、現在の土地の区画と地番を示す公図である。法務局（登記所）に備えられ、多くは旧土地台帳に付属した字図（旧公図）を引き継いでいる。過去の二史料と「いま」をつなぐ役割を担う点に、この史料の要がある。公図に添う旧土地台帳をたどれば、現在の地番がもとどの字に属し、地目がどうであったか、所有がどう移ったかまで見えてくる<sup class="fnref" id="r4"><a href="#fn4">4</a></sup>。</p>
+    <p><strong>この史料が語ること。</strong>ここで決定的に重要なのが、字（あざ）である。多くの土地は「大字○○ 字△△ ○○番地」という形で、村と字の名を地番のなかに保存している。行政上の村は合併で消えても、字は地番の一部として土地に貼りついたまま生き続ける。すなわち公図と旧土地台帳は、消えた村の名を現在の土地から逆にたどるための、最も身近な入口となる。三枚目の公図から字をたどり、二枚目の戸別明細図で字の位置を確かめ、一枚目の旧高帳で村の素性を確かめる──この往復こそが、読み合わせの実際の運動である。</p>
+    <p><strong>史料批判上の限界。</strong>もっとも公図もまた、正確な測量図とは限らない。旧公図・字図を引き継いだ図は縮尺が不確かで、筆界（一筆と隣地との境界）については概形を示すにとどまる。正確な境界の位置は、地積測量図など別の図面で確認しなければならない。したがって公図から読み取れるのは「地番と字の帰属」であって「境界の正確な位置」ではない。字の帰属は史実に近い確度で確かめられるが、区画線の正確さは推定の域を出る場合がある。この二つを混同すると、字界を近世村の境界へ短絡させる誤りに陥りやすい。</p>
+    <p><strong>台帳という時間の束。</strong>公図に添う旧土地台帳は、単に現在の一断面を写すのではなく、土地ごとの地番・地目・地積・所有の移り変わりを積み重ねた履歴である。地目が畑から宅地へ改められた時期や、一筆が分筆・合筆された痕跡は、その土地がどう使われ、どう分かたれてきたかの記録となる。したがって台帳は、静止した地図というより、時間の束として読むべき史料である。字の帰属を確かめる作業と並行して、この時間の層を読み解けば、村の内部で土地の用途がどう推移したかまで見えてくる。公図と旧土地台帳を一対で扱う意義は、現在の区画を過去へ開いていくこの履歴性にある。</p>
+    <div class="verdict"><strong>本稿の評価：</strong>公図・旧土地台帳は、字と地番の帰属を<strong>史実</strong>に近い確度で確かめられ、村の復元を現在の土地に接地させる要の史料である。ただし境界線の正確さは別問題であり、字界と近世村界の連続性は<strong>推定</strong>として扱うべきである。</div>
+  </div>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="大字・字・地番・地目・筆界の階層関係を示す入れ子の図">
+        <rect x="10" y="12" width="600" height="226" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif">
+          <rect x="60" y="56" width="500" height="150" rx="8" fill="#f4fafc" stroke="#1f3a48" stroke-width="1.6"/>
+          <text x="80" y="80" font-size="13" fill="#1f4f6f" font-weight="700">大字（旧来の村）</text>
+          <rect x="90" y="92" width="300" height="98" rx="6" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="1.4"/>
+          <text x="106" y="114" font-size="12.5" fill="#2f6079" font-weight="700">字（あざ／小字）</text>
+          <rect x="118" y="126" width="110" height="50" rx="4" fill="#fff" stroke="#356f88" stroke-width="1.2"/>
+          <text x="173" y="148" text-anchor="middle" font-size="11.5" fill="#22303a">地番</text>
+          <text x="173" y="166" text-anchor="middle" font-size="10" fill="#5b6b74">地目・筆界</text>
+          <rect x="250" y="126" width="110" height="50" rx="4" fill="#fff" stroke="#356f88" stroke-width="1.2"/>
+          <text x="305" y="148" text-anchor="middle" font-size="11.5" fill="#22303a">地番</text>
+          <text x="305" y="166" text-anchor="middle" font-size="10" fill="#5b6b74">地目・筆界</text>
+          <text x="430" y="128" font-size="11.5" fill="#5b6b74">住所・登記に</text>
+          <text x="430" y="150" font-size="11.5" fill="#5b6b74">「大字○○ 字△△</text>
+          <text x="430" y="172" font-size="11.5" fill="#5b6b74">　○○番地」と残る</text>
+        </g>
+        <text x="310" y="40" text-anchor="middle" font-size="14" class="svg-label">地名の入れ子 ── 大字・字・地番</text>
+      </svg>
+    </div>
+    <figcaption>図5　地名の入れ子構造。地番は字を単位に振られ、字は大字（旧来の村）に属す。村が消えても字名は地番のなかに残り、これが消えた村を逆にたどる手がかりとなる。</figcaption>
+  </figure>
+
+  <h2 id="s6">6. 読み合わせの方法と史料批判</h2>
+  <p>三史料の性格を押さえたうえで、それらを実際にどう突き合わせるかを方法として定式化する。手順の骨格は、現在から過去へさかのぼる方向をとる。まず調べたい場所の現在の住所・地番を確かめ、公図で大字・字と地番を読む。次に旧土地台帳・字図で、その地番がもとどの字に属し地目がどうであったかを確かめる。続いて戸別明細図で、その字が村のどこにあり道や家とどう並んでいたかを見る。そして旧高帳で、その村の近世の名・石高・支配を照合する。最後に、国土地理院の旧版地形図で旧道・旧地名の位置を現在の地図と重ね、ずれや一致を確かめる。現在という確かな足場から出発し、一段ずつ確度を確かめながら過去へ戻る点に、この手順の要がある。</p>
+  <p>この五段の手順を貫く原理は、字（あざ）を接続の鍵とすることである。字は、公図では地番の帰属先として、戸別明細図では区画の位置として、旧高帳では村名の内部区分として、それぞれ姿を変えて現れる。三史料に共通して現れるこの単位を蝶番とすることで、性格の異なる史料が一本の線へつながる。逆にいえば、字を介さずに村名だけ、あるいは地番だけを追うと、史料と史料のあいだで線が切れる。字こそが、時代を越えて土地に残り続ける最小の固有名だからである。</p>
+  <p>この手順には、確度を確かめながら一段ずつ進むという時間の向きが組み込まれている。現在の地番は、いま登記に生きている確かな情報であり、そこから旧土地台帳へさかのぼる一段は、記録の連続性に支えられて確度が高い。ところが戸別明細図へ、さらに旧高帳へと段をさかのぼるほど、史料の精度は落ち、推定の幅は広がる。したがって、さかのぼった先で得た像は、出発点の確かさをそのまま保っているわけではない。方法として肝要なのは、各段でどれだけ確度が減じたかを意識し、最終的に描く復元図の各部分に、確からしさの濃淡を書き分けておくことである。確かな現在から不確かな過去へ、確度の目盛りを手放さずに進む。これが読み合わせを恣意的な推測から分かつ一線である。</p>
+
+  <div class="table-wrap">
+    <table class="academic-table">
+      <caption>表1　三史料の比較 ── 記録対象・確度の層・史料批判上の留意点</caption>
+      <thead><tr><th>史料</th><th>作成時期</th><th>主な記録対象</th><th>確度の層</th><th>留意点（史料批判）</th></tr></thead>
+      <tbody>
+        <tr><td>旧高帳（旧高旧領取調帳ほか）</td><td>近世〜明治初期</td><td>村名・村高・旧領。文字の一覧で空間を持たない。</td><td>史実（村の同定）</td><td>境界・面積は記載目的の外。欠落は不在の証拠ではない。</td></tr>
+        <tr><td>戸別明細図（地籍図・古地図）</td><td>明治後期〜昭和</td><td>字ごとの区画・道・水路・家・所有者。村の内部空間。</td><td>推定を多く含む</td><td>作成主体・精度がまちまち。単独では古態を証さない。</td></tr>
+        <tr><td>公図（旧公図・字図を含む）</td><td>明治〜現在</td><td>現在の地番・区画・字の帰属。筆界の概形。</td><td>史実に近い（字の帰属）</td><td>境界の正確な位置は別図で確認。字界と村界の連続は推定。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>史料批判の観点から強調しておきたいのは、三史料に共通して課される限界がある一方で、限界の内実は史料ごとに異なるという点である。旧高帳は空間を欠き、戸別明細図は精度を欠き、公図は近世の素性と境界の正確さを欠く。これらは別種の欠落であるから、一つの史料の欠けを、性格の合う別の史料が補うことができる。逆に、同じ性格の欠落しか持たない史料を重ねても、確度は上がらない。読み合わせが有効なのは、欠落の種類が互いに異なるからにほかならない。方法の有効性は、史料の多さではなく、性格の相補性に依存する。ゆえに、性格の似た史料を何点集めても復元は精密にならず、性格の異なる史料を一点加えるほうが、しばしば像を大きく前進させる。</p>
+  <p>相補的に重ねるといっても、史料どうしが食い違う場面は避けられない。ある字の位置が戸別明細図と旧版地形図とで一致しない、旧土地台帳の地目と図の描写が合わない、といった不一致はむしろ日常的である。このとき肝要なのは、どちらか一方を誤りとして切り捨てて辻褄を合わせることではない。不一致は、いずれかの史料の作成事情や、両者のあいだに横たわる時間の経過を映していることが多い。字界が引き直された、地目が改められた、図の縮尺が粗かった──不一致の理由を史料の性格にさかのぼって説明できたとき、その食い違いはかえって復元の確度を高める手がかりに転じる。矛盾を消すのではなく、矛盾の由来を問うこと。これが読み合わせにおける史料批判の要諦である。</p>
+  <p>あわせて、区割りの単位が時代とともに入れ替わることも、方法の設計に織り込む必要がある。近世の「村」、明治以降の「大字」、土地に振られた「字」と「地番」は、互いに重なりつつも同一ではない。村が町に統合されて大字となる際に字名が地番へ残ったり、耕地整理や区画整理で字界そのものが引き直されたりする。したがって字を鍵とするといっても、字界が近世以来そのまま連続していると前提してはならない。字界の連続性それ自体が、図と現地と別史料の照合によって検証されるべき<strong>推定</strong>である。この留保を欠くと、現在の字界を近世村の境界へそのまま投影する誤りが生じる。</p>
+  <p>用語の関係を押さえておくことも、史料間を往復するうえで欠かせない。字・地番まわりの語は、三史料のどこにどう現れるかを整理しておくと、読み合わせの見通しがよくなる。次の表に、主要な用語とその意味、三史料との関わりをまとめる。</p>
+
+  <div class="table-wrap">
+    <table class="academic-table">
+      <caption>表2　字・地番まわりの用語と三史料との関わり</caption>
+      <thead><tr><th>用語</th><th>意味</th><th>三史料での現れ方</th></tr></thead>
+      <tbody>
+        <tr><td>大字（おおあざ）</td><td>旧来の村にあたる地名の単位。住所の「○○町」「○○」の部分。</td><td>旧高帳の村名がそのまま大字になることが多い。</td></tr>
+        <tr><td>字（あざ／小字）</td><td>大字のなかの小地名。地番が振られる単位。</td><td>戸別明細図で位置を、公図で帰属を確かめ、村と現在をつなぐ。</td></tr>
+        <tr><td>地番</td><td>土地一筆ごとに振られた番号。住居表示の番地とは別。</td><td>公図・旧土地台帳の基礎。字ごとに連番で振られる。</td></tr>
+        <tr><td>地目（ちもく）</td><td>田・畑・宅地・山林など土地の用途区分。</td><td>旧土地台帳・公図で、その土地の旧来の用途を示す。</td></tr>
+        <tr><td>筆界（ひっかい）</td><td>一筆の土地と隣地との境界。</td><td>公図は概形のみ。正確な位置は地積測量図等で確認。</td></tr>
+        <tr><td>字図（あざず）</td><td>字ごとに地番と区画を描いた図。旧公図の実体。</td><td>公図のもとになり、戸別明細図と区画を照合できる。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>この方法は、地名研究の他の主題とも接続する。たとえば地形や信仰に由来する地名の層位については本論考シリーズ第55号<a href="/oishi-ronko/055/">「磐田の地名をたどる」</a>で、近世の開発が刻んだ「新田」地名については第33号<a href="/oishi-ronko/033/">「『新田』と名のつく土地」</a>で扱った。これらの論考が地名の由来や層位を主題としたのに対し、本稿はそれらを土地の上に位置づけ直すための史料操作の側を論じている。地名の意味を問う作業と、地名を地図の上に定位する作業とは、車の両輪の関係にある。前者が何を意味するかを問い、後者がどこにあったかを問う。地名の意味を確かめても、それを土地の上に定位できなければ記述は宙に浮き、逆に位置だけを特定しても、その名の由来を欠けば記述は痩せる。両者を往復してはじめて、消えた村は名と場所をともなって復元される。</p>
+
+  <h2 id="s7">7. 背景としての制度と地理 ── 合併・字の残存・所蔵の分散</h2>
+  <p>読み合わせという方法が成り立つ背景には、近代の行政制度の変遷がある。旧磐田市域でいえば、明治22年〔1889年〕の町村制で多くの村が町村へ統合され、昭和の合併（1940年の磐田町、1948年の磐田市）でさらにまとまっていった<sup class="fnref" id="r5"><a href="#fn5">5</a></sup>。その過程で「村」という単位は行政上消えていく。村から町へ、町から市へという再編の流れそのものは、本論考シリーズや一般向け連載でも繰り返し扱ってきた主題である。本稿の関心は、この再編のなかで字名がどう残されたかにある。</p>
+  <p>ここで方法上の鍵となるのが、村が消えても字が残るという事実である。行政単位としての村は合併で失われるが、土地に振られた字名は地番の一部として登記に保存され、生き続ける。つまり、村を消した制度そのものが、村を復元する手がかりを字の形で残したことになる。合併は村名を行政の表から消しながら、字名を土地の裏面に刻みつけた。この制度の二面性こそ、後世の復元作業を可能にしている条件である。字が地番の単位でなかったなら、消えた村を現在の土地からたどる道は、はるかに険しかったであろう。</p>
+  <p>もう一つ、方法の設計に関わる現実的な制約が、史料の所蔵が機関ごとに分散していることである。公図・旧土地台帳は法務局、旧版地形図・空中写真は国土地理院、戸別明細図や地域の古地図は図書館・郷土資料室・公文書館、あるいは各家の所蔵にある。五段の手順が一か所で完結しないのは、この分散のためである。読み合わせは、机上の史料操作であると同時に、複数の機関をまたいで史料を集める実務でもある。方法を語るなら、この所蔵の地理も方法の一部として勘定に入れなければならない。</p>
+  <p>加えて、古地図・戸別明細図には、所蔵者の定める権利や利用条件が伴うことが多い。複製・公開・転載には許諾や手続きを要する場合があり、実物を扱う際は各機関の利用規程に従う必要がある。本稿および素材とした一般向け記事が古地図の画像そのものを掲げず、読み方の手順を中心に述べているのも、この所蔵・権利への配慮による。史料の物理的な扱いに伴うこうした制約も、村落復元という営みの外枠を形づくっている。方法は、史料の性格だけでなく、史料をめぐる制度と権利のなかで実践される。</p>
+  <p>この所蔵の分散は、単なる不便としてだけでなく、史料それぞれの由来の違いの反映として理解しておきたい。公図と旧土地台帳が法務局にあるのは、それが登記という国家の土地管理の一環として作られ、引き継がれてきたからである。旧版地形図が国土地理院にあるのは、それが近代国家の測量事業の産物だからである。戸別明細図や地域の古地図が図書館・郷土資料室や各家に分かれて残るのは、それらが公的制度の外で、あるいはその周縁で作られ伝えられてきたからにほかならない。史料がどこに所蔵されているかは、その史料が何のために誰の手で作られたかを、間接的に物語っている。所蔵先をたどることは、史料の素性をたどることでもある。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="読み合わせの五段の手順が法務局・図書館・国土地理院という複数の所蔵機関にまたがることを示す流れ図">
+        <defs>
+          <marker id="fig70-6-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2f7fa3"/></marker>
+        </defs>
+        <rect x="10" y="12" width="600" height="226" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle" font-size="11.5" fill="#22303a">
+          <rect x="34" y="96" width="96" height="58" rx="10" fill="#eef7fb" stroke="#356f88" stroke-width="1.6"/><text x="82" y="120">①公図</text><text x="82" y="140" font-size="10" fill="#5b6b74">法務局</text>
+          <rect x="150" y="96" width="96" height="58" rx="10" fill="#eef7fb" stroke="#356f88" stroke-width="1.6"/><text x="198" y="120">②旧台帳</text><text x="198" y="140" font-size="10" fill="#5b6b74">法務局</text>
+          <rect x="266" y="96" width="96" height="58" rx="10" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="1.8"/><text x="314" y="120">③明細図</text><text x="314" y="140" font-size="10" fill="#5b6b74">図書館等</text>
+          <rect x="382" y="96" width="96" height="58" rx="10" fill="#eaf1f5" stroke="#1f3a48" stroke-width="1.6"/><text x="430" y="120">④旧高帳</text><text x="430" y="140" font-size="10" fill="#5b6b74">図書館等</text>
+          <rect x="498" y="96" width="96" height="58" rx="10" fill="#eef7fb" stroke="#356f88" stroke-width="1.6"/><text x="546" y="120">⑤地形図</text><text x="546" y="140" font-size="10" fill="#5b6b74">地理院</text>
+          <line x1="130" y1="125" x2="149" y2="125" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig70-6-arrow)"/>
+          <line x1="246" y1="125" x2="265" y2="125" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig70-6-arrow)"/>
+          <line x1="362" y1="125" x2="381" y2="125" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig70-6-arrow)"/>
+          <line x1="478" y1="125" x2="497" y2="125" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig70-6-arrow)"/>
+        </g>
+        <text x="320" y="44" text-anchor="middle" font-size="14" class="svg-label">現在から過去へ ── 五段の手順と所蔵機関</text>
+        <text x="320" y="78" text-anchor="middle" font-size="11" class="svg-sub">手順は複数の所蔵機関にまたがり、一か所では完結しない。</text>
+        <text x="320" y="196" text-anchor="middle" font-size="11" class="svg-sub">現在の地番（①）から出発し、確度を確かめながら近世の村（④）へさかのぼる。</text>
+      </svg>
+    </div>
+    <figcaption>図6　読み合わせの五段の手順と所蔵機関。現在の公図から出発して近世の旧高帳へさかのぼる過程は、法務局・図書館・国土地理院など複数の機関にまたがり、一か所では完結しない。</figcaption>
+  </figure>
+
+  <h2 id="s8">8. 結論 ── 一枚の正解から、層を重ねる復元へ</h2>
+  <p>本稿は、旧高帳・戸別明細図・公図という性格の異なる三史料を、字（あざ）を鍵に読み合わせて村を復元する方法を、史料批判の観点から論じた。得られた見取り図は次のとおりである。旧高帳は村の名と素性を史実の水準で確定するが空間を欠き、戸別明細図は村の内部空間を与えるが精度が一様でなく推定を多く含み、公図は字と地番の帰属を現在の土地に接地させるが境界の正確さと近世の素性を欠く。三史料はそれぞれ別種の欠落を持ち、その相補性ゆえに、重ねることで単独では見えない村の輪郭が結ばれる。</p>
+  <p>この方法論が地域史に対して持つ含意は、祭礼研究や地名研究で本論考シリーズが繰り返し述べてきた姿勢と地続きである。すなわち、確度の異なる情報を同じ平面に押し込んで一つの正解を選び取るのではなく、それぞれの情報を、それが属する確度の層のなかで正当に評価するという手続きである。地図史料の読み合わせは、この一般的な姿勢が土地の復元という具体的な場面で取る形にほかならない。史料で確認できることは史実として、図から推し量れることは推定として、地域が伝えてきた地名の由来は伝承として、それぞれの位置を保ったまま一枚の見取り図へ束ねる。層を混同しない禁欲こそが、後世の調べものに耐える記述を残す道である。</p>
+  <p>この検討から導かれる本稿の立場は明確である。村の復元とは、一枚の地図に唯一の正解を求める作業ではなく、確度の異なる複数の史料を層として重ね、史実・通説・推定・伝承を混同せずに描き直す作業である。旧高帳の記す村名は史実として、戸別明細図の描く区画は推定を含む空間情報として、公図の示す字界は現在の帰属として確かめられる史実でありつつ近世村界との連続は推定として──それぞれの確度を保ったまま一本の線へつなぐ。復元の成果は、確からしさの濃淡をともなった見取り図であって、境界線の断定ではない。</p>
+  <p>方法として一般化するなら、要点は三つに絞られる。第一に、史料を精度で優劣化せず、各史料が本来担う情報の水準においてのみ用いること。第二に、「未確認」と「記載なし」を区別し、ある史料に境界の記載がないことを境界の不在と取り違えないこと。第三に、字を接続の鍵としつつ、字界の連続性それ自体を検証すべき推定として扱い、現在の区割りを近世へ短絡させないこと。これらはいずれも、断定を急がず確度の層を保つという、地域史記述に通底する禁欲的な手続きに帰着する。</p>
+  <p>最後に、本稿が残した課題を明記しておく。第一に、旧磐田市域の個別の村について、三史料を実際に突き合わせた復元の事例研究は、本稿の方法論を検証する場として別に要する。第二に、字界と近世村界の連続性は、耕地整理・区画整理の記録と照合することで、推定を通説へ押し上げうる余地がある。第三に、戸別明細図の作成主体と精度の類型化は、この史料を扱う際の確度判定を精緻にする。これらはいずれも、本稿が設定した確度の層の枠組みのなかで、未確認を史実へ、推定を通説へと押し上げていく地道な作業に属する。一枚の地図に正解を求める誘惑を退け、性格の異なる史料を相補的に重ねていくこと──その手続きの先にこそ、合併とともに消えた村の名が、いまの土地のうえに確度をともなって静かに戻ってくる。個別の村を対象とした復元の実例については、稿を改めて論じたい。</p>
+
+  <div class="cta-note">
+    本稿が方法として扱った古地図・旧土地台帳・公図の読み合わせは、机上の郷土史研究にとどまらず、親から受け継いだ土地や長く空いた家の現況を確かめる実務――相続や空き家の調査――でも、同じ形で用いられている。筆者は磐田・袋井で不動産と介護の実務に携わる立場から、こうした土地の記憶にも向き合ってきた。<a href="https://fudosan.atawi.link/jikka/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=oishi_ronko" target="_blank" rel="noopener">家・土地・空き家の整理について相談する</a>ことができる。歴史を書き留めることと、その舞台となった土地を次の世代へ手渡すことは、地続きの営みだと考えている。
+  </div>
+
+  <section class="notes" aria-label="注">
+    <h2>注</h2>
+    <ol class="fn-list">
+      <li id="fn1">旧高旧領取調帳は、明治初年に新政府が旧幕領・旧藩領の村名・旧高（石高）・旧領（支配者）を調査してまとめた目録である。郷土資料では「旧高帳」とも通称される。国立歴史民俗博物館「旧高旧領取調帳データベース」で検索・閲覧できる。<a href="#r1" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn2">元禄郷帳・天保郷帳は、幕府が国郡別に村高をまとめた郷帳であり、元禄郷帳は元禄10年〔1697年〕以降、天保郷帳は天保2〜5年〔1831〜1834年〕に成立した。国立公文書館デジタルアーカイブで原本画像を閲覧できる。<a href="#r2" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn3">戸別明細図・地籍図は、地租改正に伴う地籍図の系統や、民間で作られた住宅地図の先駆にあたるものなど由来が一様でなく、作成主体・縮尺・精度が図ごとに異なる。旧磐田市域では明治42年〔1909年〕前後を含む時期の作成が知られる。<a href="#r3" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn4">公図は法務局（登記所）に備え付けられた地番・区画を示す図で、多くは旧土地台帳に付属した字図（旧公図）を引き継ぐ。正確な縮尺の測量図とは限らず、筆界の正確な位置は地積測量図等で別に確認する必要がある。<a href="#r4" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn5">旧磐田市域では、明治22年〔1889年〕の町村制で村々が町村へ統合され、1940年に磐田町、1948年に磐田市が成立した。行政単位としての村は消えたが、字名は地番の一部として登記に残った。<a href="#r5" aria-label="本文へ戻る">&#8617;</a></li>
+    </ol>
+    <p class="fn-editorial" style="font-family:'Zen Kaku Gothic New',sans-serif;font-size:12.5px;color:var(--sub);text-indent:0;margin-top:14px;line-height:1.85;">付記：本稿は一般読者向け記事 c011 の内容を、郷土史研究者向けに史料批判・方法論の観点から再構成した論考版である。確度の層（史実・通説・推定・伝承）を語の水準で区別し、三史料の記録対象を史実、戸別明細図の描く区画を推定、字界と近世村界の連続を推定として扱った。元禄10年・天保年間・明治22年等の年紀は史料および制度史に基づく。</p>
+  </section>
+
+  <section class="references" aria-label="参考文献">
+    <h2>参考文献・参考資料</h2>
+    <ul class="refs">
+      <li>磐田物語 c011「古地図に村の名を探す ── 戸別明細図と旧高帳の読み合わせ【三枚の地図で読む解説】」　https://iwata-monogatari.net/c011.html　（最終閲覧：2026年7月25日）。</li>
+      <li>国立歴史民俗博物館「旧高旧領取調帳データベース」　https://www.rekihaku.ac.jp/　（最終閲覧：2026年7月25日）。</li>
+      <li>国立公文書館デジタルアーカイブ「元禄郷帳」「天保郷帳」　https://www.digital.archives.go.jp/　（最終閲覧：2026年7月25日）。</li>
+      <li>国土地理院ウェブサイト「旧版地形図・空中写真の閲覧と謄本交付」　https://www.gsi.go.jp/　（最終閲覧：2026年7月25日）。</li>
+      <li>法務局（登記所）における登記事項・公図・旧土地台帳の閲覧制度に関する案内　https://houmukyoku.moj.go.jp/　（最終閲覧：2026年7月25日）。</li>
+      <li>角川日本地名大辞典編纂委員会編『角川日本地名大辞典22 静岡県』角川書店、1982年。</li>
+      <li>『日本歴史地名大系 静岡県の地名』平凡社、2000年。</li>
+      <li>磐田市『磐田市史』通史編・資料編、磐田市。</li>
+      <li>磐田市立図書館所蔵の地域資料（戸別明細図・郷土史料）に関する所蔵案内。</li>
+      <li>大石浩之の磐田論考 第55号「磐田の地名をたどる ── 地名が語る土地の履歴」　https://iwata-monogatari.net/oishi-ronko/055/　（最終閲覧：2026年7月25日）。</li>
+      <li>大石浩之の磐田論考 第33号「『新田』と名のつく土地 ── 江戸の開発が刻んだ地名」　https://iwata-monogatari.net/oishi-ronko/033/　（最終閲覧：2026年7月25日）。</li>
+      <li>ウィキペディア「旧高旧領取調帳」「公図」「地籍図」「字 (地名)」（制度・用語の概説）　https://ja.wikipedia.org/　（最終閲覧：2026年7月25日）。</li>
+      <li>磐田物語 c017「旧磐田市の成り立ち ── 村から町、町から市へ」　https://iwata-monogatari.net/c017.html　（最終閲覧：2026年7月25日）。</li>
+    </ul>
+  </section>
+
+  <div class="pager">
+    <a href="https://iwata-monogatari.net/oishi-ronko/">← 大石浩之の磐田論考 一覧へ</a>
+    <a href="https://iwata-monogatari.net/c011.html">一般向け記事版（c011）を読む →</a>
+  </div>
+  </article>
+</main>
+
+<footer class="im-foot">
+  <style>
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand:hover{text-decoration:none;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
+  </style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。本論考は個人の調査・覚え書きをもとに、確度の層を区別しながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://oishi-hiroyuki.org/" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+      </ul>
+    </div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+  </div>
+</footer>
+</body>
+</html>
