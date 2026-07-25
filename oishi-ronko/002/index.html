@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>見付守護所 ── 遠江守護支配の拠点をめぐって｜大石浩之の磐田論考｜磐田物語</title>
+<meta name="description" content="遠江国の守護所が見付に置かれた経緯と、その位置比定・機能をめぐる論点を史料批判の観点から検討する学術論考。安田義定から今川・斯波氏らへ至る守護の変遷、今川範国免状・蓮光寺鐘が示す守護所の権限、古絵図・地名・地割・地形からの位置推定を、史実・通説・推定・伝承の四層に腑分けして整理する。">
+<meta property="og:title" content="見付守護所 遠江守護支配の拠点をめぐって｜大石浩之の磐田論考">
+<meta property="og:description" content="遠江守護所の位置・機能と守護の変遷を、史料批判の観点から検討する郷土史研究者向けの学術論考。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://iwata-monogatari.net/oishi-ronko/002/">
+<meta property="og:locale" content="ja_JP">
+<meta name="iwata:title" content="見付守護所 遠江守護支配の拠点をめぐって">
+<meta name="iwata:published" content="2026-07-25">
+<meta name="iwata:category" content="見付・論考">
+<meta name="iwata:new-article" content="1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#20292e;--accent:#2f6079;--accent2:#356f88;--sub:#586873;--rule:#c8d5dc;--rule2:#dfe8ec;--paper:#fffdf8;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Shippori Mincho",serif;color:var(--ink);background:var(--paper);line-height:2.0;font-size:16.5px;-webkit-font-smoothing:antialiased;text-align:justify;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .gothic{font-family:"Zen Kaku Gothic New",sans-serif;}
+  main{max-width:720px;margin:0 auto;padding:0 24px 40px;}
+  .crumb{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--sub);padding:18px 0 4px;text-align:left;letter-spacing:.02em;}
+  .crumb a{color:var(--sub);}
+  /* ===== 論文タイトル・ヘッダー ===== */
+  .kiyo-hero{text-align:center;padding:26px 0 0;margin:6px 0 0;border:0;background:none;box-shadow:none;}
+  .kiyo-journal{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--accent);font-weight:700;letter-spacing:.22em;margin:0 0 6px;}
+  .kiyo-series{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.08em;margin:0 0 22px;}
+  .kiyo-hero h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:27px;line-height:1.6;color:var(--ink);margin:0 auto 12px;letter-spacing:.02em;max-width:22em;}
+  .kiyo-subtitle{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--accent2);margin:0 0 24px;line-height:1.7;}
+  .kiyo-author{font-size:16.5px;color:var(--ink);margin:0 0 3px;letter-spacing:.04em;}
+  .kiyo-author sup{font-size:10px;}
+  .kiyo-affil{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);margin:0 0 20px;}
+  .kiyo-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;margin-top:6px;font-family:"Zen Kaku Gothic New",sans-serif;}
+  .kiyo-meta div{font-size:12.5px;}
+  .kiyo-meta dt{display:inline;color:var(--sub);font-weight:500;}
+  .kiyo-meta dd{display:inline;color:var(--ink);margin-left:6px;font-weight:700;}
+  /* ===== 要旨・キーワード ===== */
+  .abstract{border-top:none;padding:6px 0 0;margin:30px 0 0;}
+  .abstract h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--accent);letter-spacing:.28em;text-align:center;font-weight:700;}
+  .abstract p{font-size:15px;margin:0;color:#33424b;line-height:1.95;padding:16px 22px;border:1px solid var(--rule2);background:#fbfdfe;border-radius:2px;}
+  .keywords{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;color:var(--sub);margin:14px 0 0;padding-bottom:16px;border-bottom:1px solid var(--rule);text-align:left;line-height:1.8;}
+  .keywords strong{color:var(--accent);}
+  /* ===== 目次 ===== */
+  .toc{margin:26px 0;padding:14px 0;border-top:1px solid var(--rule2);border-bottom:1px solid var(--rule2);}
+  .toc h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.2em;text-align:center;}
+  .toc ol{margin:0 auto;max-width:30em;padding-left:1.6em;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:var(--ink);text-align:left;}
+  .toc li{margin:6px 0;line-height:1.7;}
+  .toc a{color:var(--ink);}
+  /* ===== 見出し ===== */
+  h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;color:var(--ink);margin:48px 0 18px;padding-bottom:8px;border-bottom:1.5px solid var(--accent2);letter-spacing:.02em;text-align:left;}
+  h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16.5px;color:var(--accent2);margin:30px 0 10px;text-align:left;}
+  p{margin:0 0 16px;text-indent:1em;}
+  .abstract p,.keywords,.verdict,figcaption,.cta-note,.refs li,.fn-list li,.pager,.crumb{text-indent:0;}
+  /* ===== 学説節（論文体） ===== */
+  .setsu{background:none;border:0;border-radius:0;padding:0;margin:22px 0;}
+  .setsu-tag{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:11.5px;font-weight:700;color:var(--accent);background:none;padding:0;margin:22px 0 2px;letter-spacing:.12em;}
+  .setsu-tag.denshou{color:var(--accent2);}
+  .setsu h3{font-family:"Shippori Mincho",serif;font-size:17.5px;color:var(--ink);margin:2px 0 12px;border-bottom:1px dotted var(--rule);padding-bottom:8px;}
+  .setsu p{margin:0 0 14px;font-size:16px;text-indent:1em;}
+  .verdict{font-size:14.5px;color:#33424b;background:none;border-left:3px solid var(--accent2);border-radius:0;padding:2px 0 2px 16px;margin:14px 0 0;line-height:1.85;}
+  .verdict strong{color:var(--accent2);}
+  /* ===== 図版 ===== */
+  figure{margin:32px 0;}
+  .fig-box{background:#fff;border:1px solid var(--rule);border-radius:2px;padding:20px 16px;text-align:center;}
+  figcaption{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-top:10px;line-height:1.8;text-align:left;}
+  svg{max-width:100%;height:auto;}
+  .svg-label{fill:var(--ink);}.svg-sub{fill:var(--sub);}
+  /* ===== 表 ===== */
+  .table-wrap{overflow-x:auto;margin:24px 0;}
+  table.academic-table{width:100%;border-collapse:collapse;min-width:700px;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;line-height:1.7;border-top:2px solid var(--accent2);border-bottom:2px solid var(--accent2);}
+  .academic-table th{background:none;color:var(--accent);text-align:left;font-weight:700;border-bottom:1px solid var(--accent2);}
+  .academic-table th,.academic-table td{border-bottom:1px solid var(--rule2);padding:10px 12px;vertical-align:top;text-indent:0;}
+  .academic-table caption{caption-side:top;text-align:left;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-bottom:8px;}
+  /* ===== 脚注・参考文献 ===== */
+  sup.fnref{font-size:.68em;font-family:"Zen Kaku Gothic New",sans-serif;line-height:0;}
+  sup.fnref a{color:var(--accent);}
+  .notes,.references{margin-top:40px;}
+  .notes h2,.references h2{font-size:16px;}
+  .fn-list,.refs{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);}
+  .fn-list li,.refs li{margin:0 0 8px 1.6em;line-height:1.8;padding-left:.2em;}
+  .fn-list li{list-style:decimal;}
+  .cta-note{background:#fbfdfe;border:1px solid var(--rule2);border-radius:2px;padding:18px 20px;margin:36px 0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:#33424b;line-height:1.9;}
+  .cta-note a{font-weight:700;}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:42px 0 10px;flex-wrap:wrap;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;}
+  @media(max-width:600px){.kiyo-hero h1{font-size:22px;}body{font-size:16px;}h2{font-size:18px;}.kiyo-subtitle{font-size:15.5px;}}
+</style>
+<link rel="canonical" href="https://iwata-monogatari.net/oishi-ronko/002/">
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+</head>
+<body class="area-mitsuke">
+
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="crumb"><a href="https://iwata-monogatari.net/">磐田物語</a> ／ <a href="https://iwata-monogatari.net/oishi-ronko/">大石浩之の磐田論考</a> ／ 見付守護所 ── 遠江守護支配の拠点をめぐって</div>
+
+  <article>
+  <header class="kiyo-hero">
+    <p class="kiyo-journal">磐田郷土史研究紀要</p>
+    <p class="kiyo-series">大石浩之の磐田論考　第2号（中世見付研究　一）</p>
+    <h1>見付守護所 ── 遠江守護支配の拠点をめぐって</h1>
+    <p class="kiyo-subtitle">守護所の位置・機能と「守護所」の記憶</p>
+    <p class="kiyo-author">大石浩之<sup>1</sup></p>
+    <p class="kiyo-affil"><sup>1</sup> 富士ヶ丘サービス株式会社 代表取締役</p>
+    <dl class="kiyo-meta">
+      <div><dt>公開日</dt><dd>2026.07.25</dd></div>
+      <div><dt>資料検証</dt><dd>公開資料による検証済み</dd></div>
+      <div><dt>対象地区</dt><dd>磐田市見付</dd></div>
+    </dl>
+  </header>
+
+  <section class="abstract" aria-label="要旨">
+    <h2>要旨</h2>
+    <p>遠江国の守護所は、中世を通じて見付に置かれたと伝えられ、遠江支配の政治・軍事の拠点として機能した。本稿は、この見付守護所をめぐる二つの問い──すなわち「守護所はどこにあったのか」という位置比定の問いと、「守護所は何をなしたのか」という機能の問い──を、史実・通説・推定・伝承の四つの確度層に腑分けして検討する。『図説 磐田市史』は、鎌倉幕府成立後に甲斐源氏の安田義定が見付へ入って守護所を開いたと整理し、その候補域を大見寺から旧田北小学校付近にかけての一帯とするが、これは寺社配置・古絵図・地名から導かれた推定であって、発掘によって確定した地点ではない。一方、建武元年（1334年）の今川範国免状や貞治3年（1364年）の蓮光寺鐘の銘は、守護所の権限と存在を史料の側から裏づける。本稿は位置の断定を避けつつ、古代の国衙から中世の守護所、近世の宿場へと連続した見付の中心性のなかに守護所を位置づけ、「記憶としての守護所」を含めて記述する立場をとる。</p>
+  </section>
+  <p class="keywords"><strong>キーワード：</strong>見付守護所／遠江守護／安田義定／今川範国／国衙・国府／位置比定／史料批判</p>
+
+  <nav class="toc" aria-label="目次">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#s1">問題設定 ── 位置と機能を分けて問う</a></li>
+      <li><a href="#s2">守護所とは何か ── 制度史的背景</a></li>
+      <li><a href="#s3">なぜ見付だったのか ── 国衙からの連続</a></li>
+      <li><a href="#s4">位置比定をめぐる論点 ── 古絵図・地名・地割・地形</a></li>
+      <li><a href="#s5">守護の変遷 ── 安田義定から今川・斯波へ</a></li>
+      <li><a href="#s6">守護所の機能 ── 免状と鐘が語る権限</a></li>
+      <li><a href="#s7">比較と史料批判 ── 確度の層を分ける</a></li>
+      <li><a href="#s8">結論 ── 場所の断定から記憶の記述へ</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1">1. 問題設定 ── 位置と機能を分けて問う</h2>
+  <p>静岡県磐田市見付には、中世に遠江国の守護所が置かれたと伝えられる。守護所とは、幕府が国ごとに任じた守護が、任国を治めるための拠点とした役所である。遠江の守護所が見付に営まれたということは、この町が遠江一国を動かす政治・軍事の中枢であったことを意味する。近世に東海道の宿場町として知られた穏やかな見付とは異なり、中世の見付は、遠江の主導権をめぐる争いの舞台であった。</p>
+  <p>ところが、この守護所について問いを立てると、答えはただちに二つの水準に分かれる。一つは「守護所はどこにあったのか」という位置の問いであり、もう一つは「守護所は何をなし、どのような権限をもったのか」という機能の問いである。本稿の出発点は、この二つの問いを混同せずに扱う点にある。位置の問いは、いまなお確たる遺構によって答えられていない。これに対し機能の問いは、府八幡宮に伝わった免状や梵鐘の銘といった史料から、ある程度まで具体的に答えることができる。同じ「守護所」を論じても、位置と機能とでは、われわれが立ちうる資料の足場がまるで異なるのである。</p>
+  <p>この差を意識せずに書くと、位置の不確かさが機能の記述まで曖昧にし、あるいは逆に、機能を語る史料の確かさが位置の推定まで確定的に見せてしまう。地域史の叙述では、こうした確度の混線がしばしば起こる。本稿は、位置については推定の域を出ないことを率直に認め、機能については史料の語りうる範囲を丁寧に確定する、という二本立ての姿勢をとる。前号の裸祭論<sup class="fnref" id="r1"><a href="#fn1">1</a></sup>で用いた史実・通説・推定・伝承の四層区分は、本稿でもそのまま踏襲する。すなわち、史料で確認できることは史実として、学界で広く支持されるが一点で確定しがたいことは通説として、根拠はあるが未確定のことは推定として、地域で語り継がれてきたことは伝承として、語の水準で書き分ける。</p>
+  <p>あわせて、本稿では「未確認」と「記載なし」を区別する。守護所の建物の輪郭を直接に描いた同時代の絵図や、その正確な位置を記した一次史料に、筆者は管見の限り突き当たっていない。これは「そのような史料がこの世に存在しないと断定できる（＝記載がない）」ことを意味しない。あくまで「筆者が把握していない（＝未確認）」という状態である。史料が現に伝わらないのか、伝わっているが未見なのか、そもそも作られなかったのかは、それぞれ別個に検証を要する。この区別を保つことは、位置比定という不確かな主題を扱ううえで欠かせない。以下ではまず守護所という制度の背景を押さえ、次いで見付が選ばれた理由、位置比定の論点、守護の変遷、守護所の機能を順に検討し、比較と史料批判を経て結論に至る。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="守護所をめぐる二つの問い（位置と機能）が依拠する資料の足場の違いを示した模式図">
+        <defs>
+          <marker id="fig1-arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2f7fa3"/></marker>
+        </defs>
+        <rect x="12" y="12" width="616" height="276" rx="20" fill="#fffdf7" stroke="#d8e8ef"/>
+        <circle cx="320" cy="150" r="52" fill="#eef7fb" stroke="#356f88" stroke-width="2.4"/>
+        <text x="320" y="146" text-anchor="middle" font-size="15" class="svg-label">見付守護所</text>
+        <text x="320" y="166" text-anchor="middle" font-size="11" class="svg-sub">中世遠江の拠点</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <rect x="60" y="94" width="150" height="112" rx="12" fill="#fbf3e6" stroke="#d28a41" stroke-width="2"/>
+          <text x="135" y="126" font-size="14" fill="#8a5a1f">位置の問い</text>
+          <text x="135" y="150" font-size="11" fill="#5b6b74">どこにあったか</text>
+          <text x="135" y="172" font-size="10.5" fill="#5b6b74">古絵図・地名・地割</text>
+          <text x="135" y="190" font-size="10.5" fill="#b06a20">＝推定にとどまる</text>
+          <rect x="430" y="94" width="150" height="112" rx="12" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="2"/>
+          <text x="505" y="126" font-size="14" fill="#1f4f6f">機能の問い</text>
+          <text x="505" y="150" font-size="11" fill="#5b6b74">何をなしたか</text>
+          <text x="505" y="172" font-size="10.5" fill="#5b6b74">免状・梵鐘の銘</text>
+          <text x="505" y="190" font-size="10.5" fill="#1f5f7f">＝史料で確認可</text>
+        </g>
+        <line x1="210" y1="150" x2="264" y2="150" stroke="#2f7fa3" stroke-width="2.6" marker-end="url(#fig1-arr)"/>
+        <line x1="430" y1="150" x2="376" y2="150" stroke="#2f7fa3" stroke-width="2.6" marker-end="url(#fig1-arr)"/>
+        <text x="320" y="44" text-anchor="middle" font-size="14" class="svg-label">一つの守護所、二つの問い</text>
+        <text x="320" y="278" text-anchor="middle" font-size="11" class="svg-sub">位置と機能は、依拠できる資料の確かさが根本的に異なる。</text>
+      </svg>
+    </div>
+    <figcaption>図1　守護所をめぐる二つの問い。位置の問いは推定にとどまるが、機能の問いは免状や梵鐘の銘という史料から具体的に答えうる。両者の確度を分けて記述するのが本稿の方針である。</figcaption>
+  </figure>
+
+  <h2 id="s2">2. 守護所とは何か ── 制度史的背景</h2>
+  <p>守護所を論じる前に、まず「守護」という職の性格を押さえておく。守護は、鎌倉幕府が国ごとに置いた軍事・警察の長官である<sup class="fnref" id="r2"><a href="#fn2">2</a></sup>。当初その任務は、謀反人・殺害人の追捕と、御家人の京都大番役の催促を柱とする、いわゆる大犯三箇条に限定されていた。すなわち発足時の守護は、国内の治安維持を担う軍事的な役職であって、国の行政全般を握る領主ではなかった。国衙の行政や国司の権限とは、なお別の系統に属する存在だったのである。</p>
+  <p>ところが時代が下るにつれ、守護の権限は着実に膨張していく。鎌倉後期から南北朝の動乱を経て、守護は税の徴収や訴訟の裁定、寺社領の保護にまで手を伸ばし、やがて国内の武士を家臣として組織し、一国を実質的に支配する領主へと成長した。室町期に整えられた刈田狼藉の取り締まりや使節遵行、半済の権限などは、守護が単なる軍事長官から地域統治者へと転じたことを制度の面から示している。この過程の到達点が、戦国大名という一円的な領国支配者であった。守護所は、こうして肥大していく守護権力が、任国を治めるために構えた拠点である。それは軍事の司令部であると同時に、徴税や裁許を行う統治の役所でもあった。</p>
+  <p>ここで一点、方法上の注意を述べておきたい。「守護所」という語は、制度としての実態と、後世に語られる象徴的な呼称との、二つの水準をもつ。実態としての守護所は、守護またはその代官である守護代が政務を執った具体的な施設であり、堀や土塁で囲まれた館を中核としたと考えられる。他方、地域の記憶のなかの「守護所」は、必ずしも一棟の建物を指すのではなく、「この町が遠江支配の中心であった」という歴史意識そのものを担う語として働くことがある。見付における守護所を論じるとき、われわれはしばしばこの二つの水準を往復している。本稿は、実態としての守護所を史料から追いつつ、記憶としての守護所がなぜこれほど長く語り継がれてきたのかにも目を配る。</p>
+  <p>もう一点、守護と守護所の関係にも触れておきたい。守護は必ずしも常に任国に在ったわけではなく、中央の政務に関わって在京することも多かった。その場合、任国の政務を現地で執ったのは、守護が任じた守護代である。したがって「守護所」で日常の統治にあたったのは、守護その人よりむしろ守護代やその配下の在地の役人であったと考えられる。守護所を、守護個人の居館としてではなく、守護権力を代行する統治機構の所在として捉えておくことは、位置や機能を論じるうえでも意味をもつ。誰がそこに常駐したかという問いは、守護所が単なる軍事拠点ではなく、継続的な行政の場であったことを裏づけるからである。</p>
+
+  <h2 id="s3">3. なぜ見付だったのか ── 国衙からの連続</h2>
+  <p>遠江の守護所が見付に置かれた理由は、古代にさかのぼる。見付の一帯には、律令国家が置いた遠江の<a href="/m057">国府（国衙）</a>、すなわち地方行政の中心があったと考えられている<sup class="fnref" id="r3"><a href="#fn3">3</a></sup>。国衙には役所と寺社が集まり、人と物と情報が行き交った。見付は、古代からこの地方の「都」というべき位置を占めていたのである。中世の武士が新たに支配の拠点を築こうとしたとき、すでに行政の伝統と都市の基盤が整っていた見付を選んだのは、自然な流れであった。</p>
+  <p>この連続性は、単なる立地の便宜にとどまらない。古代の国衙が担った地方統治の機能は、律令制の弛緩とともに衰えつつも、在庁官人と呼ばれる現地の実務者層や、国府に集まった寺社の組織として、中世まで一定の連続をもって残った。守護が見付に拠点を構えるということは、こうした既存の統治の基盤を引き継ぎ、その上に武家の支配を重ねることを意味した。まったくの更地に一から町を築くよりも、既存の都市の蓄積を活用するほうが、はるかに効率がよい。古代の国衙から中世の守護所へ──支配の担い手が貴族から武士へ替わっても、遠江を治める中心はこの見付にあり続けたのである。</p>
+  <p>もっとも、国衙から守護所への移行が、施設の同一地点における連続だったのか、それとも近接する別地点への遷移だったのかは、慎重に扱うべき論点である。国衙の所在地そのものが確定していない以上、国衙と守護所の位置関係を厳密に論じることはできない。ここで言いうるのは、両者が同じ見付という都市域のなかにあり、機能の面で連続していたという水準までである。施設としての国衙が守護所へそのまま転用されたと断ずるには、それを裏づける史料も遺構も、本稿の範囲では確認できていない。国衙・守護所・宿場という三段の連続は、施設の連続ではなく、都市としての見付が繰り返し中心であり続けたという、より大きな連続として理解しておくのが穏当である。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="中世見付の中心と守護所想定域、周囲の寺社の位置関係を示す模式図">
+        <rect x="8" y="10" width="684" height="230" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="350" y="36" text-anchor="middle" font-size="15" class="svg-label">中世見付の中心 ── 守護所想定域と寺社（模式図）</text>
+        <rect x="270" y="100" width="160" height="70" rx="8" fill="#f0d9d2" stroke="#a9412b" stroke-width="1.6" stroke-dasharray="6 4"/>
+        <text x="350" y="130" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="13" fill="#a9412b">守護所</text>
+        <text x="350" y="150" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10.5" fill="#7d2f1f">大見寺〜旧田北小付近（想定域）</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="11.5" fill="#22303a" text-anchor="middle">
+          <circle cx="150" cy="86" r="5" fill="#356f88"/><text x="150" y="74">府八幡宮</text>
+          <circle cx="560" cy="86" r="5" fill="#356f88"/><text x="560" y="74">見付天神</text>
+          <circle cx="160" cy="196" r="5" fill="#356f88"/><text x="160" y="214">淡海国玉神社</text>
+          <circle cx="560" cy="196" r="5" fill="#356f88"/><text x="560" y="214">新田寺・大見寺</text>
+        </g>
+        <text x="350" y="235" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11" class="svg-sub">寺社に囲まれた一帯に守護所があったと推定される（確定地点ではない）</text>
+      </svg>
+    </div>
+    <figcaption>図2　中世見付の中心。府八幡宮・見付天神・淡海国玉神社・新田寺・大見寺といった寺社に囲まれた一帯に守護所の想定域がある。位置は推定であり、確定した遺構ではない。</figcaption>
+  </figure>
+
+  <h2 id="s4">4. 位置比定をめぐる論点 ── 古絵図・地名・地割・地形</h2>
+  <p>守護所の位置について、『図説 磐田市史』は、大見寺から旧田北小学校付近にかけての一帯を候補域として整理する<sup class="fnref" id="r4"><a href="#fn4">4</a></sup>。ただしこれは、周辺の寺社の配置や地形から推定された範囲であって、確たる遺構が発掘されたわけではない。以下では、位置比定がどのような手がかりに立脚しているのかを、資料の性格ごとに腑分けして検討する。位置論を「どこか一点」に決める作業としてではなく、それぞれの手がかりが何を語りうるのかを見きわめる作業として扱いたい。</p>
+  <div class="setsu">
+    <span class="setsu-tag">論点①・絵図資料</span>
+    <h3>見付古絵図による比定</h3>
+    <p>見付古絵図には、淡海国玉神社・見付天神・府八幡宮・新田寺などの寺社とともに、守護所の想定地が描かれている。絵図は、寺社と守護所のおおよその位置関係を伝える点で貴重な手がかりである。しかし、絵図がいつ、どのような目的で、どの程度の正確さをもって描かれたのかを見きわめないまま、そこに記された想定地を実測地点のように扱うことはできない。近世以降に描かれた絵図であれば、それは中世の守護所を直接見た者の記録ではなく、後世の理解を反映した図像である可能性が高い。絵図は位置の「記憶」を伝えるが、位置の「実測」を保証するものではない。</p>
+  </div>
+  <div class="setsu">
+    <span class="setsu-tag">論点②・寺社配置</span>
+    <h3>寺社の配置からの推定</h3>
+    <p>守護所の候補域を、周囲の寺社が取り囲む中心として読む方法がある。中世の都市では、有力な寺社が権力の拠点の周辺に配置される傾向があり、寺社の分布から中心の所在を逆算することには一定の合理性がある。府八幡宮・淡海国玉神社・見付天神・大見寺といった寺社に囲まれた一帯を守護所の場と見るのは、この推論に立つ。ただしこの方法は、寺社と守護所が同時代に併存し、意図的に配置されたという前提に依存する。寺社の草創年代や移転の履歴を一つずつ確かめなければ、配置から中心を読む推論はなお仮説の域にとどまる。</p>
+  </div>
+  <div class="setsu">
+    <span class="setsu-tag denshou">論点③・地名／地割</span>
+    <h3>地名と地割からの推定</h3>
+    <p>土地に残る地名や、区画の形（地割）から、かつての施設の痕跡を読む方法もある。館を囲んだ堀や土塁の痕跡が、後世の道路や地境として残ることは各地で知られており、方形の地割が武家の館跡を示唆する例は少なくない。見付においても、地名や地割にそうした手がかりを求めることは有効でありうる。ただし、地名は時代とともに移動・変化し、地割は近世・近代の開発によって大きく改変される。地名・地割からの推定は、他の手がかりと突き合わせて初めて意味をもつ補助的な指標であり、これ単独で位置を確定する根拠とはしがたい。</p>
+    <div class="verdict"><strong>本稿の評価：</strong>絵図・寺社配置・地名・地割は、いずれも守護所の候補域を絞り込む有力な手がかりであるが、そのどれもが単独では位置を確定しない。これらは相互に補い合う<strong>推定</strong>の材料であって、発掘による確定に代わるものではない。</div>
+  </div>
+  <p>これらの手がかりを重ねてもなお、守護所の位置を一点に定めることはできない。その理由は、対象そのものの性格にもある。中世の武家の館は、堀や土塁で囲まれてはいても、多くは木造であり、火災・戦乱・後世の開発によって失われやすい。石垣で固めた近世の城郭とは違い、地表に痕跡をとどめにくいのである。加えて見付は、古代から人が住み続けてきた土地であり、幾層にも重なった時代の遺構が地下に眠っている。そのなかから中世の守護所だけを明確に取り出すのは、容易ではない。「わからない」ことを「わからない」と正直に書き記すこともまた、地域史の作法である。本稿は、候補域を大見寺〜旧田北小学校付近と推定しつつ、その建物の輪郭までは断定しない立場をとる。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="位置比定が古絵図・寺社配置・地名地割・発掘の四つの手がかりに支えられる構造を示す図">
+        <defs>
+          <marker id="fig3-arr" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#2f7fa3"/></marker>
+        </defs>
+        <rect x="10" y="10" width="620" height="260" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <rect x="248" y="118" width="144" height="64" rx="10" fill="#f0d9d2" stroke="#a9412b" stroke-width="2" stroke-dasharray="6 4"/>
+        <text x="320" y="146" text-anchor="middle" font-size="14" fill="#a9412b" font-family="'Zen Kaku Gothic New',sans-serif">守護所の位置</text>
+        <text x="320" y="166" text-anchor="middle" font-size="10.5" fill="#7d2f1f" font-family="'Zen Kaku Gothic New',sans-serif">＝なお推定</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle" font-size="11.5">
+          <rect x="60" y="52" width="130" height="52" rx="9" fill="#fbf3e6" stroke="#d28a41" stroke-width="1.6"/><text x="125" y="76" fill="#22303a">古絵図</text><text x="125" y="94" font-size="10" fill="#5b6b74">記憶を伝える</text>
+          <rect x="450" y="52" width="130" height="52" rx="9" fill="#eef7ec" stroke="#6f9a4f" stroke-width="1.6"/><text x="515" y="76" fill="#22303a">寺社配置</text><text x="515" y="94" font-size="10" fill="#5b6b74">中心を逆算</text>
+          <rect x="60" y="196" width="130" height="52" rx="9" fill="#fbecec" stroke="#b85b5b" stroke-width="1.6"/><text x="125" y="220" fill="#22303a">地名・地割</text><text x="125" y="238" font-size="10" fill="#5b6b74">痕跡の補助線</text>
+          <rect x="450" y="196" width="130" height="52" rx="9" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="1.6"/><text x="515" y="220" fill="#22303a">発掘</text><text x="515" y="238" font-size="10" fill="#5b6b74">未確認</text>
+        </g>
+        <line x1="180" y1="88" x2="250" y2="126" stroke="#2f7fa3" stroke-width="2.2" marker-end="url(#fig3-arr)"/>
+        <line x1="460" y1="88" x2="390" y2="126" stroke="#2f7fa3" stroke-width="2.2" marker-end="url(#fig3-arr)"/>
+        <line x1="180" y1="212" x2="250" y2="174" stroke="#2f7fa3" stroke-width="2.2" marker-end="url(#fig3-arr)"/>
+        <line x1="460" y1="212" x2="390" y2="174" stroke="#8aa0ab" stroke-width="2.2" stroke-dasharray="5 4" marker-end="url(#fig3-arr)"/>
+        <text x="320" y="34" text-anchor="middle" font-size="14" class="svg-label">位置比定を支える四つの手がかり</text>
+      </svg>
+    </div>
+    <figcaption>図3　位置比定の構造。古絵図・寺社配置・地名地割の三つが候補域を絞り込むが、いずれも推定であり、位置を確定する発掘（点線）はなお未確認である。</figcaption>
+  </figure>
+
+  <h2 id="s5">5. 守護の変遷 ── 安田義定から今川・斯波へ</h2>
+  <p>位置の問いを離れ、守護所を担った人々の変遷に目を移そう。『図説 磐田市史』によれば、見付に守護所を開いたのは、甲斐源氏の安田義定であったとされる<sup class="fnref" id="r5"><a href="#fn5">5</a></sup>。安田義定は、源頼朝の挙兵に呼応して活躍し、その功によって遠江守護に任じられたと伝えられる武将である。平安末から鎌倉初期の動乱のなかで、彼が遠江支配の拠点として選んだのが、古代以来の中心地・見付であった。もっとも義定は、のちに頼朝と対立して悲劇的な最期をとげたと伝わる。頼朝の挙兵を助けた功臣が、やがて主君に警戒されて滅ぼされていく経緯は、守護という地位が鎌倉幕府の権力争いと分かちがたく結びついていたことをうかがわせる。ただし、義定の見付入部の具体的な時期や守護所の初期の姿については、確かな史料に乏しく、伝承的な性格を含むことを押さえておきたい。</p>
+  <p>鎌倉幕府の滅亡後、後醍醐天皇と足利尊氏の対立によって南北朝の争乱が始まると、遠江もまた争いの渦中に入った。『図説 磐田市史』は、建武2年（1335年）に見付で合戦があったと記す。守護所という支配の拠点があったからこそ、そこを奪い合う戦いが、ほかならぬ見付を舞台に起きたのである。やがて足利方の今川範国が遠江を治め、見付を拠点とした。範国の後は、今川氏・斯波氏・狩野氏・堀越氏らが見付をめぐって争ったと整理される。</p>
+  <p>南北朝から室町にかけての遠江は、まさに争奪の舞台であった。中央では足利将軍家の権威が揺らぎ、地方では有力な武家が勢力を競い合う。遠江の守護職は、今川氏と斯波氏のあいだをめまぐるしく行き来した。守護所のある見付を押さえることは、遠江一国の支配権を握ることと同義であり、だからこそ諸氏はこぞってこの町の争奪に力を注いだ。一つの町の名が、これほど繰り返し合戦や争いの記録に現れること自体が、見付のもった政治的な重みを物語っている。近世の穏やかな一宿場町としての見付とは異なり、中世の見付は、遠江の覇権をめぐる緊張の中心に置かれていたのである。この争奪の記憶は、のちに<a href="/m131">戦国期の見付の自治</a>や、周辺に伝わる築城伝承へとつながっていく。</p>
+  <p>ここで史料批判の観点から留意しておきたいのは、これら守護の交替に関する記述の多くが、後世に編まれた地誌や、断片的な文書の突き合わせによって復元されている点である。守護職の帰属が誰から誰へ、いつ移ったのかを、同時代の一次史料によって連続的に跡づけることは、必ずしも容易ではない。したがって「安田義定→今川範国→今川・斯波・狩野・堀越の争奪」という筋書きは、大枠として通説的に受け入れられているものの、個々の年次や在職期間の細部には、なお確定を要する部分が残る。本稿はこの筋書きを<strong>通説</strong>として採りつつ、その細部が一次史料で一様に裏づけられているわけではないことを明記しておく。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 660 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="安田義定から今川・斯波氏らへ至る遠江守護の変遷を示す年表">
+        <defs>
+          <marker id="fig4-arr" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#356f88"/></marker>
+        </defs>
+        <rect x="10" y="10" width="640" height="190" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="330" y="36" text-anchor="middle" font-size="14" class="svg-label">遠江守護の変遷 ── 見付守護所をめぐって</text>
+        <line x1="70" y1="112" x2="600" y2="112" stroke="#356f88" stroke-width="2"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <circle cx="110" cy="112" r="6" fill="#d28a41"/><text x="110" y="92" font-size="12" class="svg-label">鎌倉初期</text><text x="110" y="140" font-size="10.5" class="svg-sub">安田義定（伝）</text>
+          <circle cx="250" cy="112" r="6" fill="#b85b5b"/><text x="250" y="92" font-size="12" class="svg-label">1335</text><text x="250" y="140" font-size="10.5" class="svg-sub">見付で合戦</text>
+          <circle cx="390" cy="112" r="6" fill="#2f7fa3"/><text x="390" y="92" font-size="12" class="svg-label">南北朝</text><text x="390" y="140" font-size="10.5" class="svg-sub">今川範国が拠点</text>
+          <circle cx="540" cy="112" r="6" fill="#2f7fa3"/><text x="540" y="92" font-size="12" class="svg-label">室町〜戦国</text><text x="540" y="140" font-size="10.5" class="svg-sub">今川・斯波ら争奪</text>
+          <path d="M116 112 L244 112" stroke="#8aa0ab" stroke-width="1.4" marker-end="url(#fig4-arr)"/>
+          <path d="M256 112 L384 112" stroke="#8aa0ab" stroke-width="1.4" marker-end="url(#fig4-arr)"/>
+          <path d="M396 112 L534 112" stroke="#8aa0ab" stroke-width="1.4" marker-end="url(#fig4-arr)"/>
+        </g>
+        <text x="330" y="180" text-anchor="middle" font-size="11" class="svg-sub">橙は伝承的な草創、赤は合戦の記録、青は史料で追える守護の交替を示す。</text>
+      </svg>
+    </div>
+    <figcaption>図4　遠江守護の変遷。安田義定の草創（伝承）から、南北朝の合戦、今川・斯波氏らによる争奪へ。守護職は今川と斯波のあいだを行き来した。</figcaption>
+  </figure>
+
+  <h2 id="s6">6. 守護所の機能 ── 免状と鐘が語る権限</h2>
+  <p>位置と担い手を見たうえで、守護所が実際に何をなしたのかを、二つの史料から具体的に検討する。位置が推定にとどまるのに対し、機能については、府八幡宮に伝わった文書と、梵鐘の銘という物的な手がかりが、比較的確かな足場を与えてくれる。</p>
+  <div class="setsu">
+    <span class="setsu-tag">機能①・文書</span>
+    <h3>今川範国免状 ── 課税免除を承認する権限</h3>
+    <p>建武元年（1334年）、今川範国が府八幡宮へ出したと伝わる免状には、税を納めなくてよいことを守護所が認めた趣旨が記される。寺社領への課税免除を承認するという行為は、その税を課す権限を、そもそも守護所が握っていたことを裏返しに示している。守護所は、武力で押さえつける軍事機関であるだけでなく、寺社の訴えを聞き、その領地を保護し、地域社会の利害を調整する統治機関でもあった。文書のやり取りを通じて寺社や在地の有力者との関係を結び直す──そうした地道な統治の営みの積み重ねが、守護による一国支配を支えていた。府八幡宮に伝わったこの免状は、中世の見付が統治の中枢として機能していたことを、いまに伝える手がかりである。</p>
+  </div>
+  <div class="setsu">
+    <span class="setsu-tag denshou">機能②・物的史料</span>
+    <h3>蓮光寺の鐘 ── 威信を示す奉納</h3>
+    <p>沼津市の霊山寺に伝わる梵鐘は、もと見付の蓮光寺にあり、貞治3年（1364年）に今川貞世（了俊）が鋳造させたとの銘をもつという。中世において、寺に鐘を寄進することは、単なる信心のあらわれではなかった。大きな梵鐘を鋳造するには多大な費用と、それを動かせる権威が要る。有力者による鐘の奉納は、自らの富と力を、目に見え耳に聞こえる形で地域に示す行為でもあった。今川氏が見付の寺へ鐘を奉納したとすれば、それは、この町における今川の支配を、鐘の音とともに人々の心に刻む営みだったと読める。もっとも、その鐘が掛川・森町を経て遠く沼津の霊山寺へ移ったとされる経路には、伝承の色合いが濃く、移動の全過程を事実と断ずることはできない。奉納が今川氏の威信を示した可能性は高いが、来歴の細部は史料批判を要する。</p>
+    <div class="verdict"><strong>本稿の評価：</strong>免状と鐘は、守護所が課税・裁許・寺社保護といった統治機能を担い、その権威を地域に可視化していたことを示す。ただし鐘の移動経路のように、物的史料に付随する<strong>伝承</strong>的な来歴は、機能の確かさとは分けて扱うべきである。</div>
+  </div>
+  <p>これら二つの史料から見えてくるのは、守護所が軍事の拠点であると同時に、文書行政と信仰の統合をも担う複合的な中枢だったという像である。免状は統治の「文」の側面を、梵鐘の奉納は権威の「象徴」の側面を、それぞれ照らし出す。文書が乏しい中世にあって、梵鐘や仏像、石造物といった「モノ」は、しばしば文字史料を補う貴重な手がかりとなる。銘文に刻まれた年号や寄進者の名は、その時代に確かに人がいて営みがあったことを、時代をこえて静かに証言する。位置は定かでなくとも、守護所が何をなしたかについては、こうした断片から像を結ぶことができるのである。</p>
+  <p>ただし、これらの史料を機能の証拠として用いるにも、なお慎重さが要る。免状に見える課税免除は、守護所が寺社領へ関与しえたことを示す一方で、その関与がどこまで恒常的な権限として制度化されていたのか、あるいは個別の政治的判断にとどまっていたのかまでは、一通の文書からは読み取りきれない。梵鐘の奉納もまた、今川氏の威信の表現と読むのが自然ではあるが、奉納の主体・時期・動機を銘文だけから確定するには限界がある。史料が語る事実と、そこから引き出す解釈とのあいだには、つねに一定の距離がある。本稿は、免状の存在とその趣旨、梵鐘の鋳造銘といった事実の水準を史実として確定しつつ、そこから守護所の統治像を描く部分は解釈であることを、あらためて区別しておきたい。</p>
+
+  <h2 id="s7">7. 比較と史料批判 ── 確度の層を分ける</h2>
+  <p>ここまでの検討を、確度の層に沿って整理しておく。守護所をめぐる知見は、同じ「守護所」という対象を論じていても、依拠する資料の性格によって確かさが大きく異なる。以下の表は、位置・草創・変遷・機能という論点ごとに、依拠する資料と確度の層、そして史料批判上の留意点を対等の粒度で並べ、どこまでが史料で確認でき、どこからが推定・伝承にとどまるのかを可視化することを目的とする。特定の論点を優位に置く書式を避け、各行の情報量をそろえることで、読者が自ら確度を判断できる状態をつくることを心がけた。</p>
+
+  <div class="table-wrap">
+    <table class="academic-table">
+      <caption>表1　見付守護所をめぐる論点の比較 ── 確度の層・内容・資料・史料批判上の留意点</caption>
+      <thead><tr><th>論点</th><th>確度の層</th><th>主な内容</th><th>依拠する資料</th><th>留意点（史料批判）</th></tr></thead>
+      <tbody>
+        <tr><td>守護所の位置</td><td>推定</td><td>大見寺〜旧田北小学校付近を候補域とする。</td><td>見付古絵図、寺社配置、地名・地割。</td><td>発掘による確定地点ではない。建物の輪郭は断定しない。</td></tr>
+        <tr><td>守護所の草創</td><td>通説・伝承</td><td>甲斐源氏の安田義定が見付に守護所を開いたとする。</td><td>『図説 磐田市史』の整理、諸伝承。</td><td>入部時期・初期の姿は史料に乏しく伝承的性格を含む。</td></tr>
+        <tr><td>守護の変遷</td><td>通説</td><td>今川範国の後、今川・斯波・狩野・堀越各氏が争奪。</td><td>地誌・断片的文書の突合。</td><td>大枠は通説だが、個々の年次・在職の細部は要確定。</td></tr>
+        <tr><td>守護所の機能</td><td>史実</td><td>課税免除の承認など統治機能を担った。</td><td>今川範国免状（1334年）、府八幡宮所蔵。</td><td>免状の存在・趣旨は史料で確認可。文書の性格に留意。</td></tr>
+        <tr><td>威信の可視化</td><td>史実＋伝承</td><td>蓮光寺鐘の奉納が今川氏の威信を示す。</td><td>貞治3年（1364年）の梵鐘銘。</td><td>鋳造銘は史料。移動経路は伝承を含み断定しない。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>この比較から見えてくるのは、守護所をめぐる知見が一様な確かさをもつのではなく、論点ごとに確度の層を異にしているという事実である。機能は史実の層で語りうるのに対し、位置は推定の層にとどまり、草創は通説と伝承の境にある。これらを同じ調子で書き並べると、確かなことと不確かなことの境界が読者に伝わらなくなる。史料批判の要点は、各論点がどの資料層に立脚し、その層の資料がどこまでを語りうるのかを明示することにある。免状は守護所の権限を語りうるが、その所在地までは語らない。古絵図は位置の記憶を伝えるが、実測を保証しない。梵鐘の銘は年代と寄進者を語るが、移動の全経路は語らない。それぞれの史料が語りうる範囲を超えて情報を引き出すことは、確度の水増しにほかならない。</p>
+  <p>ここで、位置比定という主題に固有の困難をあらためて確認しておきたい。中世の守護所は、近世城郭のように石垣や天守を残さず、木造の館を中核とした。その痕跡は地表にとどまりにくく、しかも見付は幾層もの時代の遺構が積み重なった土地である。したがって「位置が未確認である」という状態は、研究の怠慢の結果ではなく、対象そのものの性格に由来する構造的な限界である。この限界を、あたかも近い将来に一次史料や発掘で必ず解消されるかのように語ることも、逆に永遠に解決不能と決めつけることも、いずれも誠実ではない。言いうるのは、現時点で位置は推定にとどまり、将来の発掘や史料の発見によって推定が史実へ押し上げられる余地が残されている、という水準までである。</p>
+  <p>あわせて、記憶としての守護所という主題にも触れておく。位置が確定しなくとも、「見付に守護所があった」という歴史意識は、地域のなかで長く語り継がれてきた。この記憶は、古代の国衙、中世の守護所、近世の<a href="/m129">宿場町</a>という三段の中心性を、一本の連続した物語として束ねる働きをする。守護所は、実態としての施設であると同時に、見付という町が繰り返し遠江の中心であり続けたことの象徴でもある。位置の不確かさは、この象徴としての守護所の重みを、いささかも損なわない。むしろ、確たる遺構を欠きながらこれほど強く語り継がれてきたこと自体が、見付の中心性の記憶がいかに深く根を張っているかを示している。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="守護所をめぐる論点を史実・通説・推定・伝承の四段階の確度に弁別する図">
+        <rect x="10" y="12" width="620" height="216" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif">
+          <rect x="46" y="72" width="128" height="96" rx="10" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="2"/>
+          <text x="110" y="110" text-anchor="middle" font-size="14" fill="#1f4f6f">史実</text>
+          <text x="110" y="132" text-anchor="middle" font-size="10" fill="#5b6b74">免状・梵鐘銘</text>
+          <rect x="190" y="72" width="128" height="96" rx="10" fill="#eef7ec" stroke="#6f9a4f" stroke-width="2"/>
+          <text x="254" y="110" text-anchor="middle" font-size="14" fill="#3f6a2a">通説</text>
+          <text x="254" y="132" text-anchor="middle" font-size="10" fill="#5b6b74">守護の変遷</text>
+          <rect x="334" y="72" width="128" height="96" rx="10" fill="#fbf3e6" stroke="#d28a41" stroke-width="2"/>
+          <text x="398" y="110" text-anchor="middle" font-size="14" fill="#8a5a1f">推定</text>
+          <text x="398" y="132" text-anchor="middle" font-size="10" fill="#5b6b74">守護所の位置</text>
+          <rect x="478" y="72" width="128" height="96" rx="10" fill="#fbecec" stroke="#b85b5b" stroke-width="2"/>
+          <text x="542" y="110" text-anchor="middle" font-size="14" fill="#7a3030">伝承</text>
+          <text x="542" y="132" text-anchor="middle" font-size="10" fill="#5b6b74">草創・鐘の移動</text>
+        </g>
+        <text x="320" y="46" text-anchor="middle" font-size="14" class="svg-label">確度の四段階 ── 論点ごとに層は異なる</text>
+        <text x="320" y="204" text-anchor="middle" font-size="11" class="svg-sub">同じ守護所を論じても、機能は史実、位置は推定、草創は伝承の層にある。</text>
+      </svg>
+    </div>
+    <figcaption>図5　確度の四段階。守護所をめぐる論点は、機能（史実）・変遷（通説）・位置（推定）・草創や鐘の移動（伝承）と、それぞれ異なる層に属する。層をまたいだ断定を避ける。</figcaption>
+  </figure>
+
+  <h2 id="s8">8. 結論 ── 場所の断定から記憶の記述へ</h2>
+  <p>本稿は、見付守護所をめぐる問いを位置と機能の二つに分け、史実・通説・推定・伝承の四層に腑分けして検討した。得られた見取り図は次のとおりである。守護所の機能──課税免除の承認に見える統治権限や、梵鐘奉納に見える威信の可視化──は、府八幡宮の免状や貞治3年の鐘の銘といった史料から、比較的確かに語ることができる。守護の変遷は、安田義定の草創から今川・斯波氏らの争奪まで、大枠として通説的に跡づけられる。これに対し守護所の位置は、古絵図・寺社配置・地名・地割という手がかりを重ねてもなお推定にとどまり、発掘による確定は本稿の範囲では未確認である。</p>
+  <p>この確度の落差は、研究の未熟ゆえではなく、対象の性格に由来する。木造の中世館は地表に痕跡を残しにくく、見付は幾層もの時代が重なった土地である。したがって位置比定を性急に一点へ決めることは、かえって史料の語りうる範囲を超えた断定に陥る。本稿の立場は明確である。守護所研究は、「場所を一点に決める作業」から、「論点ごとに確度の層を分け、それぞれの資料が語りうる範囲を記述する作業」へと組み替えられるべきである。史実・通説・推定・伝承を混同せず、「未確認」と「記載なし」を区別し、免状の確かさを位置の推定にまで及ぼさず、鐘の来歴の伝承を機能の史実と取り違えない。この禁欲的な手続きこそが、守護所という主題を後世の調べものに耐える形で残す方途である。</p>
+  <p>同時に本稿は、位置が定まらないことをもって守護所の重みが減じるわけではないことを強調しておきたい。見付が古代の国衙、中世の守護所、近世の宿場町として、担い手を替えながら遠江の中心であり続けたという連続性は、東海道が通り、平野が開け、古くから人と情報が集まったこの土地の地理的な優位に根ざす。守護所は、その長い連続のなかの、中世という一時代を担った結び目であった。確たる遺構こそ残らないが、この町の地面の下には、遠江を治めた武士たちの営みの記憶が、いまも静かに眠っている。位置の不確かさと、記憶の確かさとは、両立するのである。</p>
+  <p>最後に、本稿が扱いえなかった課題を記しておく。第一に、守護所の位置については、今後の発掘調査や、近世地誌・古絵図の年代比定を進めることで、推定を史実へ一歩近づけられる余地がある。第二に、守護の交替の細部は、断片的な文書を系統的に突き合わせることで、通説の骨格に確かな年次を与えていく作業が残されている。第三に、国衙・守護所・宿場という三段の連続を、施設の連続としてではなく都市の連続として実証的に描くことは、遠江の中世都市史に関わる大きな主題である。これらはいずれも、本稿が設定した四層の枠組みのなかで、未確認を史実へ、推定を通説へと押し上げていく作業に属する。場所を一つに決める誘惑を退け、確度の層を保ったまま資料を積み上げていくこと──その地道な手続きの先にこそ、見付守護所という中世遠江の中枢の像が、少しずつ結ばれていくはずである。守護所の位置比定の詳細や、今川・斯波両氏の抗争の具体相については、本論考シリーズの続編で稿を改めて論じたい。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="見付が古代の国衙から中世の守護所、近世の宿場へと役割を替えながら遠江の中心であり続けたことを示す図">
+        <defs>
+          <marker id="fig6-arr" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#356f88"/></marker>
+        </defs>
+        <rect x="8" y="10" width="684" height="160" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="350" y="36" text-anchor="middle" font-size="15" class="svg-label">遠江の中心であり続けた見付</text>
+        <line x1="80" y1="98" x2="620" y2="98" stroke="#356f88" stroke-width="2"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="12.5" text-anchor="middle">
+          <rect x="90" y="78" width="150" height="40" rx="6" fill="#8fbcd0"/><text x="165" y="96" fill="#22303a">古代</text><text x="165" y="111" fill="#22303a" font-size="10.5">国衙（律令国家）</text>
+          <rect x="275" y="78" width="150" height="40" rx="6" fill="#a9412b"/><text x="350" y="96" fill="#fff">中世</text><text x="350" y="111" fill="#fbe9e4" font-size="10.5">守護所（武士）</text>
+          <rect x="460" y="78" width="150" height="40" rx="6" fill="#5a94ac"/><text x="535" y="96" fill="#fff">近世</text><text x="535" y="111" fill="#eef6fb" font-size="10.5">宿場町（東海道）</text>
+          <path d="M240 98 L273 98" stroke="#356f88" stroke-width="1.8" marker-end="url(#fig6-arr)"/>
+          <path d="M425 98 L458 98" stroke="#356f88" stroke-width="1.8" marker-end="url(#fig6-arr)"/>
+        </g>
+        <text x="350" y="152" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11.5" class="svg-sub">担い手は替わっても、遠江の中心はこの見付にあり続けた。</text>
+      </svg>
+    </div>
+    <figcaption>図6　遠江の中心であり続けた見付。古代の国衙から中世の守護所、近世の宿場へと、担い手を替えながら要であり続けた。守護所は、この長い連続のなかの中世という結び目にあたる。</figcaption>
+  </figure>
+
+  <div class="cta-note">
+    本稿の舞台である見付には、古代・中世からの記憶を刻んだ古い家や土地が数多く残る。筆者は磐田・袋井で不動産と介護の実務に携わる立場から、こうした土地の記憶にも向き合ってきた。<a href="https://fudosan.atawi.link/jikka/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=oishi_ronko" target="_blank" rel="noopener">家・土地・空き家の整理について相談する</a>ことができる。歴史を書き留めることと、その舞台となった土地を次の世代へ手渡すことは、地続きの営みだと考えている。
+  </div>
+
+  <section class="notes" aria-label="注">
+    <h2>注</h2>
+    <ol class="fn-list">
+      <li id="fn1">前号（大石浩之の磐田論考 第1号）「見付天神裸祭 起源三説の学史的検討」で用いた、史実・通説・推定・伝承の四つの確度層による記述法を、本稿でも踏襲する。<a href="#r1" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn2">守護は鎌倉幕府が国ごとに置いた軍事・警察の長官であり、当初の任務は大犯三箇条（謀反人・殺害人の追捕、京都大番役の催促）に限られた。制度史の概要は佐藤進一の研究などによる。<a href="#r2" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn3">見付一帯に遠江国府（国衙）が置かれたとする見方は有力であるが、その具体的な所在地については複数の説があり、一点には確定していない。関連する検討は磐田物語 m057 を参照。<a href="#r3" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn4">守護所の候補域を大見寺〜旧田北小学校付近とする整理は、磐田市史編さん委員会編『図説 磐田市史』（磐田市、1995年）項目19「守護所をめぐる攻防」による。発掘による確定地点ではない。<a href="#r4" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn5">安田義定による守護所草創、建武元年（1334年）の今川範国免状、建武2年（1335年）の見付合戦、貞治3年（1364年）の蓮光寺鐘については、いずれも前掲『図説 磐田市史』項目19の記述による。<a href="#r5" aria-label="本文へ戻る">&#8617;</a></li>
+    </ol>
+    <p class="fn-editorial" style="font-family:'Zen Kaku Gothic New',sans-serif;font-size:12.5px;color:var(--sub);text-indent:0;margin-top:14px;line-height:1.85;">付記：本稿は一般読者向け記事 m130「見付守護所 ── 遠江支配をめぐる攻防」の内容を、郷土史研究者向けに史料批判の観点から再構成した論考版である。位置比定は推定、守護の変遷は通説、免状・梵鐘銘に基づく機能は史実、草創および鐘の移動経路は伝承として、確度の層を語の水準で区別した。</p>
+  </section>
+
+  <section class="references" aria-label="参考文献">
+    <h2>参考文献・参考資料</h2>
+    <ul class="refs">
+      <li>磐田市史編さん委員会編『図説 磐田市史』磐田市、1995年、項目19「守護所をめぐる攻防」、冊子37〜38頁。</li>
+      <li>磐田市誌編纂委員会編『磐田市誌』磐田市、通史編（中世の章）。</li>
+      <li>静岡県編『静岡県史』通史編2 中世、静岡県、1997年。</li>
+      <li>佐藤進一『増補 鎌倉幕府守護制度の研究』東京大学出版会、1971年。</li>
+      <li>見付古絵図（『図説 磐田市史』所収）。</li>
+      <li>府八幡宮所蔵「今川範国免状」建武元年（1334年）。</li>
+      <li>沼津市霊山寺 梵鐘銘 貞治3年（1364年）今川貞世鋳造。</li>
+      <li>淡海国玉神社（遠江総社）由緒書。</li>
+      <li>府八幡宮 由緒書。</li>
+      <li>『吾妻鏡』（安田義定関連記事）。</li>
+      <li>磐田市「磐田市の指定文化財」　https://www.city.iwata.shizuoka.jp/　（最終閲覧：2026年7月25日）。</li>
+      <li>磐田物語 m130「見付守護所 ── 遠江支配をめぐる攻防」　https://iwata-monogatari.net/m130　（最終閲覧：2026年7月25日）。</li>
+    </ul>
+  </section>
+
+  <div class="pager">
+    <a href="https://iwata-monogatari.net/oishi-ronko/">← 大石浩之の磐田論考 一覧へ</a>
+    <a href="https://iwata-monogatari.net/m130">一般向け記事版（m130）を読む →</a>
+  </div>
+  </article>
+</main>
+
+<footer class="im-foot">
+  <style>
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand:hover{text-decoration:none;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
+  </style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。本論考は個人の調査・覚え書きをもとに、確度の層を区別しながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://oishi-hiroyuki.org/" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+      </ul>
+    </div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+  </div>
+</footer>
+</body>
+</html>
