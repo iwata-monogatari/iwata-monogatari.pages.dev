@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>長野地区の成り立ち ── 水田の広がりと旧集落の輪郭｜大石浩之の磐田論考｜磐田物語</title>
+<meta name="description" content="磐田市南部・旧長野地区の成り立ちを、南部低地の地形形成・微高地への集落立地・水利共同体・旧集落の地名という四つの視点から読み解く学術論考。長野・小島・前野・鮫島・白拍子の地名を史実・通説・推定・伝承の四層に腑分けし、成立年代の確定できる範囲と未確認の範囲を区別して記述する。">
+<meta property="og:title" content="長野地区の成り立ち ── 水田の広がりと旧集落の輪郭｜大石浩之の磐田論考">
+<meta property="og:description" content="南部低地に開けた村々を、地形・水利・地名の重なりから読む。史実・推定・伝承を書き分ける郷土史研究者向けの学術論考。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://iwata-monogatari.net/oishi-ronko/119/">
+<meta property="og:locale" content="ja_JP">
+<meta name="iwata:title" content="長野地区の成り立ち">
+<meta name="iwata:published" content="2026-07-25">
+<meta name="iwata:category" content="南部・論考">
+<meta name="iwata:new-article" content="1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#20292e;--accent:#2f6079;--accent2:#356f88;--sub:#586873;--rule:#c8d5dc;--rule2:#dfe8ec;--paper:#fffdf8;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Shippori Mincho",serif;color:var(--ink);background:var(--paper);line-height:2.0;font-size:16.5px;-webkit-font-smoothing:antialiased;text-align:justify;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .gothic{font-family:"Zen Kaku Gothic New",sans-serif;}
+  main{max-width:720px;margin:0 auto;padding:0 24px 40px;}
+  .crumb{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--sub);padding:18px 0 4px;text-align:left;letter-spacing:.02em;}
+  .crumb a{color:var(--sub);}
+  /* ===== 論文タイトル・ヘッダー ===== */
+  .kiyo-hero{text-align:center;padding:26px 0 0;margin:6px 0 0;border:0;background:none;box-shadow:none;}
+  .kiyo-journal{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--accent);font-weight:700;letter-spacing:.22em;margin:0 0 6px;}
+  .kiyo-series{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.08em;margin:0 0 22px;}
+  .kiyo-hero h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:27px;line-height:1.6;color:var(--ink);margin:0 auto 12px;letter-spacing:.02em;max-width:22em;}
+  .kiyo-subtitle{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--accent2);margin:0 0 24px;line-height:1.7;}
+  .kiyo-author{font-size:16.5px;color:var(--ink);margin:0 0 3px;letter-spacing:.04em;}
+  .kiyo-author sup{font-size:10px;}
+  .kiyo-affil{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);margin:0 0 20px;}
+  .kiyo-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;margin-top:6px;font-family:"Zen Kaku Gothic New",sans-serif;}
+  .kiyo-meta div{font-size:12.5px;}
+  .kiyo-meta dt{display:inline;color:var(--sub);font-weight:500;}
+  .kiyo-meta dd{display:inline;color:var(--ink);margin-left:6px;font-weight:700;}
+  /* ===== 要旨・キーワード ===== */
+  .abstract{border-top:none;padding:6px 0 0;margin:30px 0 0;}
+  .abstract h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--accent);letter-spacing:.28em;text-align:center;font-weight:700;}
+  .abstract p{font-size:15px;margin:0;color:#33424b;line-height:1.95;padding:16px 22px;border:1px solid var(--rule2);background:#fbfdfe;border-radius:2px;}
+  .keywords{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;color:var(--sub);margin:14px 0 0;padding-bottom:16px;border-bottom:1px solid var(--rule);text-align:left;line-height:1.8;}
+  .keywords strong{color:var(--accent);}
+  /* ===== 目次 ===== */
+  .toc{margin:26px 0;padding:14px 0;border-top:1px solid var(--rule2);border-bottom:1px solid var(--rule2);}
+  .toc h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.2em;text-align:center;}
+  .toc ol{margin:0 auto;max-width:30em;padding-left:1.6em;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:var(--ink);text-align:left;}
+  .toc li{margin:6px 0;line-height:1.7;}
+  .toc a{color:var(--ink);}
+  /* ===== 見出し ===== */
+  h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;color:var(--ink);margin:48px 0 18px;padding-bottom:8px;border-bottom:1.5px solid var(--accent2);letter-spacing:.02em;text-align:left;}
+  h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16.5px;color:var(--accent2);margin:30px 0 10px;text-align:left;}
+  p{margin:0 0 16px;text-indent:1em;}
+  .abstract p,.keywords,.verdict,figcaption,.cta-note,.refs li,.fn-list li,.pager,.crumb{text-indent:0;}
+  /* ===== 学説節（論文体） ===== */
+  .setsu{background:none;border:0;border-radius:0;padding:0;margin:22px 0;}
+  .setsu-tag{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:11.5px;font-weight:700;color:var(--accent);background:none;padding:0;margin:22px 0 2px;letter-spacing:.12em;}
+  .setsu-tag.denshou{color:var(--accent2);}
+  .setsu h3{font-family:"Shippori Mincho",serif;font-size:17.5px;color:var(--ink);margin:2px 0 12px;border-bottom:1px dotted var(--rule);padding-bottom:8px;}
+  .setsu p{margin:0 0 14px;font-size:16px;text-indent:1em;}
+  .verdict{font-size:14.5px;color:#33424b;background:none;border-left:3px solid var(--accent2);border-radius:0;padding:2px 0 2px 16px;margin:14px 0 0;line-height:1.85;}
+  .verdict strong{color:var(--accent2);}
+  /* ===== 図版 ===== */
+  figure{margin:32px 0;}
+  .fig-box{background:#fff;border:1px solid var(--rule);border-radius:2px;padding:20px 16px;text-align:center;}
+  figcaption{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-top:10px;line-height:1.8;text-align:left;}
+  svg{max-width:100%;height:auto;}
+  .svg-label{fill:var(--ink);}.svg-sub{fill:var(--sub);}
+  /* ===== 表 ===== */
+  .table-wrap{overflow-x:auto;margin:24px 0;}
+  table.academic-table{width:100%;border-collapse:collapse;min-width:700px;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;line-height:1.7;border-top:2px solid var(--accent2);border-bottom:2px solid var(--accent2);}
+  .academic-table th{background:none;color:var(--accent);text-align:left;font-weight:700;border-bottom:1px solid var(--accent2);}
+  .academic-table th,.academic-table td{border-bottom:1px solid var(--rule2);padding:10px 12px;vertical-align:top;text-indent:0;}
+  .academic-table caption{caption-side:top;text-align:left;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-bottom:8px;}
+  /* ===== 脚注・参考文献 ===== */
+  sup.fnref{font-size:.68em;font-family:"Zen Kaku Gothic New",sans-serif;line-height:0;}
+  sup.fnref a{color:var(--accent);}
+  .notes,.references{margin-top:40px;}
+  .notes h2,.references h2{font-size:16px;}
+  .fn-list,.refs{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);}
+  .fn-list li,.refs li{margin:0 0 8px 1.6em;line-height:1.8;padding-left:.2em;}
+  .fn-list li{list-style:decimal;}
+  .cta-note{background:#fbfdfe;border:1px solid var(--rule2);border-radius:2px;padding:18px 20px;margin:36px 0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:#33424b;line-height:1.9;}
+  .cta-note a{font-weight:700;}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:42px 0 10px;flex-wrap:wrap;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;}
+  @media(max-width:600px){.kiyo-hero h1{font-size:22px;}body{font-size:16px;}h2{font-size:18px;}.kiyo-subtitle{font-size:15.5px;}}
+</style>
+<link rel="canonical" href="https://iwata-monogatari.net/oishi-ronko/119/">
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+</head>
+<body class="area-nanbu">
+
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="crumb"><a href="https://iwata-monogatari.net/">磐田物語</a> ／ <a href="https://iwata-monogatari.net/oishi-ronko/">大石浩之の磐田論考</a> ／ 長野地区の成り立ち</div>
+
+  <article>
+  <header class="kiyo-hero">
+    <p class="kiyo-journal">磐田郷土史研究紀要</p>
+    <p class="kiyo-series">大石浩之の磐田論考　第119号（南部低地の集落形成研究　一）</p>
+    <h1>長野地区の成り立ち ── 水田の広がりと旧集落の輪郭</h1>
+    <p class="kiyo-subtitle">南部低地に開けた村々を読む</p>
+    <p class="kiyo-author">大石浩之<sup>1</sup></p>
+    <p class="kiyo-affil"><sup>1</sup> 富士ヶ丘サービス株式会社 代表取締役</p>
+    <dl class="kiyo-meta">
+      <div><dt>公開日</dt><dd>2026.07.25</dd></div>
+      <div><dt>資料検証</dt><dd>公開資料による検証済み</dd></div>
+      <div><dt>対象地区</dt><dd>磐田市南部（旧長野地区）</dd></div>
+    </dl>
+  </header>
+
+  <section class="abstract" aria-label="要旨">
+    <h2>要旨</h2>
+    <p>磐田市南部の旧長野地区は、低地に開けた一面の水田と、そのなかに点在する旧集落からなる。本稿は、この地区の成り立ちを、地名の羅列ではなく「なぜそこに人が住んだのか」という立地の問いから読み直す。検討の柱は四つである。第一に、天竜川の乱流が形づくった南部低地の地形形成。第二に、そのなかのわずかな微高地に集落・寺社・墓地が寄り集まる立地の論理。第三に、水を引き水を逃がす水利の共同管理が村の持続を支えた構造。第四に、長野・小島・前野・鮫島・白拍子という旧集落の地名が土地の条件と響き合う関係である。低地形成は地質学的過程として推定できる一方、個々の集落の成立年代や水路の開削年代を直接記す一次史料は、本稿の調査範囲では確認できていない。この「未確認」と「史料に記載がない」ことの区別を保ちつつ、確定できる地形・水利の土台と、伝承・推定にとどまる地名由来とを腑分けして、南部低地の村々の骨格を描く。</p>
+  </section>
+  <p class="keywords"><strong>キーワード：</strong>長野地区／南部低地／微高地／自然堤防／水利共同体／小字／地名論</p>
+
+  <nav class="toc" aria-label="目次">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#s1">問題設定 ── 地名の羅列から立地の論理へ</a></li>
+      <li><a href="#s2">南部低地の成り立ち ── 天竜川の乱流と沖積地形</a></li>
+      <li><a href="#s3">微高地と集落 ── なぜ水田のなかに点在するのか</a></li>
+      <li><a href="#s4">地名の輪郭 ── 長野・小島・前野・鮫島・白拍子</a></li>
+      <li><a href="#s5">水を引き、水を逃がす ── 水利共同体という土台</a></li>
+      <li><a href="#s6">三つの読みの比較と史料批判</a></li>
+      <li><a href="#s7">背景としての地理 ── 南部低地のなかの長野</a></li>
+      <li><a href="#s8">結論 ── 確度の層を保った成り立ちの記述へ</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1">1. 問題設定 ── 地名の羅列から立地の論理へ</h2>
+  <p>長野地区は、磐田市の南部、低地が広く開けた一帯に位置する。現在も水田と農村集落が暮らしの基調をなし、隣接する於保地区とともに、磐田南部の水田景観を代表する地域である。本サイトでは地区分類上、長野を南部地区に置いて整理してきた<sup class="fnref" id="r1"><a href="#fn1">1</a></sup>。だが、この地区の「成り立ち」を問おうとすると、たちまち手がかりの薄さに突き当たる。城下町でも宿場町でもなく、著名な社寺や合戦の舞台でもない低地の農村は、まとまった編纂史料を残しにくい。地名だけが、いくつか伝わっている。</p>
+  <p>そこで本稿は、方法をあらかじめ切り替えておきたい。すなわち、長野・小島・前野・鮫島・白拍子といった地名を並べ、その一つひとつの由来を詮索することを目的にはしない。地名の由来譚は、多くの場合、後世の付会と区別しがたく、確度の低い推定に議論が流れやすいからである。かわりに本稿がとるのは、「なぜここに人が住み、田を開き、暮らしを続けてきたのか」という立地の問いである。この問いは、地形と水という、地名よりもはるかに確かな土台の上に立てることができる。</p>
+  <p>一見して平らに見える磐田南部の低地も、実際には旧河道や自然堤防状の微高地、水のたまりやすい後背の低地が複雑に入り組んでいる。集落はその微高地の上を選んで根を下ろし、その周囲の低い土地を田として開いてきた。長野地区の旧集落が水田のなかに点々と固まって見えるのは、この立地の論理の帰結である。地名は、その論理が土地に刻んだ痕跡として、あとから読み解かれるべきものであって、議論の出発点に据えるべきものではない。</p>
+  <p>もう一点、本稿の姿勢を先に述べておく。地域史の記述では、確かめられることと確かめられないことを、同じ平面で語ってはならない。低地の地形形成は地質学的な過程として一般的に推定でき、水利の共同管理は低地農村に広く共通する構造として説明できる。これに対し、個々の集落がいつ成立したか、どの地名がどのような由来をもつかは、一次史料の裏づけを欠くことが多い。本稿では、こうした確度の異なる情報を、史実・通説・推定・伝承という四つの層に腑分けし、語の水準で書き分ける。層をまたいだ断定を避けることが、以下の検討の基本姿勢である。</p>
+  <p>あわせて、二つの語を区別して用いる。「未確認」とは、そのような史料に管見の限り突き当たっていない状態を指し、史料が現に存在しないと断ずるものではない。「記載なし」とは、参照した史料のなかに当該の記述が見あたらないことを指す。低地農村の成り立ちを論じるとき、この区別はとりわけ重要になる。編纂史料に集落の起源が書かれていないことは、その集落が新しいことを意味しないし、古いことを意味するわけでもない。書かれなかったという事実そのものが、まず腑分けの対象となる。以下ではまず南部低地の地形形成を押さえ、続いて微高地への立地、地名、水利を順に検討し、比較と背景を経て結論に至る。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="水田の広がる低地のなかで微高地の上に集落が点在し、旧道が縁を通り、用水と排水が低い側を流れる長野地区の立地構造を示した模式図">
+        <defs>
+          <linearGradient id="fig119-1-low" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef6fb"/><stop offset="1" stop-color="#d8e8ef"/></linearGradient>
+        </defs>
+        <rect x="10" y="12" width="600" height="336" rx="18" fill="url(#fig119-1-low)" stroke="#d8e8ef"/>
+        <g stroke="#bcd6e3" stroke-width="1" opacity="0.7">
+          <line x1="40" y1="120" x2="580" y2="120"/><line x1="40" y1="170" x2="580" y2="170"/>
+          <line x1="40" y1="220" x2="580" y2="220"/><line x1="40" y1="270" x2="580" y2="270"/>
+          <line x1="150" y1="96" x2="150" y2="300"/><line x1="290" y1="96" x2="290" y2="300"/>
+          <line x1="430" y1="96" x2="430" y2="300"/><line x1="520" y1="96" x2="520" y2="300"/>
+        </g>
+        <path d="M50,210 C180,168 330,178 470,150 C540,136 580,146 600,140 L600,176 C580,184 540,176 470,192 C330,222 180,210 50,246 Z" fill="#cfe6c9" opacity="0.6" stroke="#9cc59a"/>
+        <path d="M40,300 C160,286 220,306 320,292 C430,278 470,300 560,286 C600,280 600,288 600,286" fill="none" stroke="#2f7fa3" stroke-width="5" opacity="0.85" stroke-linecap="round"/>
+        <path d="M40,196 C180,182 330,204 470,176 C540,162 580,172 600,168" fill="none" stroke="#a6713e" stroke-width="2.5" opacity="0.6" stroke-dasharray="9 5"/>
+        <g fill="#1f3a48">
+          <circle cx="160" cy="188" r="7"/><circle cx="300" cy="184" r="7"/><circle cx="430" cy="168" r="7"/><circle cx="520" cy="160" r="7"/>
+        </g>
+        <g fill="#1f3a48" font-family="'Shippori Mincho',serif" font-size="13" text-anchor="middle">
+          <text x="160" y="212">集落</text><text x="300" y="208">集落</text><text x="430" y="192">集落</text>
+        </g>
+        <g fill="#5b6b74" font-family="'Zen Kaku Gothic New',sans-serif" font-size="12">
+          <text x="56" y="112">水田の広がる低地</text>
+          <text x="56" y="322" fill="#2f7fa3">用水・排水路（蛇行）</text>
+          <text x="430" y="128" fill="#4a7a47">微高地（自然堤防状）</text>
+          <text x="430" y="204" fill="#a6713e">旧道</text>
+        </g>
+        <text x="310" y="46" text-anchor="middle" font-size="15" class="svg-label">長野地区の立地構造 ── 微高地に住み、低地に田を開く</text>
+      </svg>
+    </div>
+    <figcaption>図1　長野地区の立地構造。水田の広がる低地のなかで、わずかに高い微高地の上に集落が点在し、その縁を旧道が通り、低い側を用水・排水路が蛇行する。実際の地形・位置とは異なる概念図である。</figcaption>
+  </figure>
+
+  <h2 id="s2">2. 南部低地の成り立ち ── 天竜川の乱流と沖積地形</h2>
+  <p>長野地区の立地を論じる前に、その舞台である南部低地そのものの成り立ちを確認しておく。磐田市の南部一帯は、遠い過去に河川がたびたび流路を変えながら土砂を運び、形づくってきた沖積の低地であると考えられている。とりわけ天竜川は、近世に治水が進むまで幾筋にも分かれて乱流し、洪水のたびに流路を移してきた暴れ川であった。この乱流と堆積のくり返しが、南部低地の下地をつくったとみるのが、地形形成の一般的な理解である<sup class="fnref" id="r2"><a href="#fn2">2</a></sup>。</p>
+  <p>河川が流路を変えるたび、低地には規則的でない起伏が残される。かつて川が流れていた跡である旧河道、その流路沿いに砂や粗い土が堆積してできた自然堤防状の微高地、そして流路から離れた後背に取り残された水のたまりやすい低い土地──これらが帯状・斑状に入り組んで分布することになる。長野地区の水田地帯も、こうした低地の一部にあたる。平らに見える田の下には、数十センチメートルから一メートル程度の高低差が、複雑な模様を描いて隠れている。</p>
+  <p>ここで、確度の腑分けを一つ明示しておきたい。南部低地が天竜川水系の乱流と堆積によって形成された沖積低地であるという理解は、地質学・地形学の一般的な知見に照らして<strong>推定</strong>として堅い。しかし、その形成が具体的にどの時代の、どの洪水によって進んだのかを、長野地区の各地点について特定することは、治水地形分類図等の精査を経なければできない。本稿はこの点に立ち入らず、「乱流する河川が微高地と低地を入り組ませた」という一般的な成り立ちを、以下の立地論の前提として置くにとどめる。</p>
+  <p>この地形の性格は、そこに住もうとする人々に、あらかじめ選択肢を限定していた。最も低く水のたまりやすい後背湿地は、稲作には向くが家を建てるには不安が残る。旧河道の跡は、地盤が軟らかく、雨が降れば水がまた集まりやすい。これに対し、自然堤防状の微高地は、周囲よりわずかに高く水はけがよいうえ、砂質のため井戸も得やすい。低地に暮らそうとする者は、この微高地を選ばざるをえなかった。集落の位置は、人の意思である以前に、まず土地の条件が下書きしていたのである。次章では、この微高地への立地を、より立ち入って読む。</p>
+  <p>なお、南部低地の地形をこのように読むことは、天竜川の治水史とも切り離せない。近世を通じて堤防の築造や流路の固定が段階的に進み、近代には本格的な河川改修がなされて、天竜川はようやく一筋の川へと落ち着いた。それ以前の乱流の記憶こそが、旧河道と微高地の入り組む地割として低地に残されたのである。したがって、いま目にする長野地区の平らな水田景観は、乱流の時代の起伏を人の手で均し、田として整えてきた長い営みの到達点でもある。地形は自然が与えた与件であると同時に、その与件と折り合いをつけてきた人の労働の堆積でもある――この二重の性格を見落とすと、低地の成り立ちは半分しか読めない。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="河川が流路を変えるたびに旧河道・自然堤防状の微高地・後背の低地が入り組んで分布した南部低地の成り立ちを示す模式断面図">
+        <rect x="10" y="12" width="620" height="256" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="320" y="40" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="15" font-weight="700" fill="#1f4f6f">流路が変わるたび、土地は入り組んだ</text>
+        <rect x="40" y="70" width="560" height="150" fill="#dce9f2" stroke="#8fbcd0"/>
+        <path d="M60 108 Q200 90 340 116 Q470 140 590 118" fill="none" stroke="#a98d5a" stroke-width="16" opacity="0.75"/>
+        <path d="M60 176 Q210 194 350 168 Q490 144 590 172" fill="none" stroke="#a98d5a" stroke-width="13" opacity="0.6"/>
+        <path d="M60 142 Q220 158 360 142 Q500 126 590 148" fill="none" stroke="#5a94ac" stroke-width="9" opacity="0.55"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="11.5">
+          <text x="120" y="98" fill="#6b4f2a">自然堤防状の微高地</text>
+          <text x="120" y="202" fill="#6b4f2a">微高地</text>
+          <text x="450" y="136" fill="#2c4d5e">旧河道（かつての流路）</text>
+          <text x="300" y="238" text-anchor="middle" fill="#4a6472">水のたまりやすい後背の低地</text>
+        </g>
+        <text x="320" y="260" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11" fill="#5b6b74">帯状・斑状に入り組んで分布する ── 住む場所の選択肢は限られていた</text>
+      </svg>
+    </div>
+    <figcaption>図2　南部低地の成り立ち。天竜川水系の乱流と堆積により、微高地と低地が入り組んで分布したという一般的な成り立ちを示す模式図であり、個別地点を測量・特定したものではない。</figcaption>
+  </figure>
+
+  <h2 id="s3">3. 微高地と集落 ── なぜ水田のなかに点在するのか</h2>
+  <p>低地の集落を読むうえで、まず押さえておきたいのが「微高地」という考え方である。微高地とは、低地のなかで周囲よりわずかに標高が高い土地をいう。河川がかつて運んだ砂や土が堆積してできた自然堤防や、旧河道沿いの高まりなどがこれにあたる。水はけがよく洪水時にも浸かりにくいため、低地農村では、しばしば集落や寺社、墓地がこうした場所に集まる<sup class="fnref" id="r3"><a href="#fn3">3</a></sup>。一面の水田に見える土地でも、この数十センチメートルの高低差が、住む場所と田にする場所を分けてきた。</p>
+  <p>長野地区の旧集落が、水田のなかに点々と固まって見えるのは、この微高地の分布に対応していると読むのが自然である。人々が無秩序に散らばったのではない。住むのに適したわずかな高みを選び、その周囲の低い土地を田として開いていった結果、集落は微高地の上に斑状に並び、そのあいだを田が埋めることになった。集落と水田のこの配置は、土地の条件を人がていねいに読み分けた痕跡であり、南部低地の景観の基本文法をなしている。</p>
+  <p>この立地の論理は、集落が単に「高いところ」に寄っただけではないことも示している。微高地は水はけがよいと同時に、田に引く水の取り口や、生活に使う井戸へも近い。高すぎれば水利に不便であり、低すぎれば水害に弱い。集落が選び取ったのは、この二つの条件が折り合う帯であった。田と住まいと水路が、微高地を軸にほどよい距離で組み合わされる――低地農村の集落は、この均衡の上に成り立っている。長野地区の集落もまた、この均衡を長い時間をかけて探り当ててきたものと考えられる。</p>
+  <p>この均衡は、いちど定まれば動かないというものではない。微高地の縁は、出水のたびに削られたり、逆に新たな堆積で広がったりする。井戸の水位も、周囲の水田の作付けや水路の引き回しによって上下する。集落は、こうした小さな変動に応じて屋敷地を少しずつ移し、田の境を引き直しながら、長い年月をかけて現在の姿へ落ち着いてきたとみるのが、低地農村の実態に照らして妥当である。とすれば、長野地区の集落の輪郭も、ある一時点に一挙に定まったのではなく、微高地と水と人の営みが折り合いを探り続けた過程の、いまのところの断面として読むべきものである。集落の位置に「なぜここか」という問いを立てるとき、その答えは単一の起点にではなく、この持続的な調整のうちに求められる。</p>
+  <p>ただし、ここでも確度には注意を要する。長野地区の個々の集落が、具体的にどの微高地の上に、いつ成立したのかを直接記す一次史料は、本稿の調査範囲では<strong>確認できていない</strong>。したがって「微高地の上に集落がある」という対応関係は、低地農村一般に広く見られる<strong>通説</strong>的な構造として述べるものであって、長野地区の各集落についてその通りだと測量的に実証したものではない。個別地点の標高や旧河道の位置は、国土地理院の治水地形分類図・土地条件図等での確認を経て、はじめて確定できる事柄である。本稿の記述は、その確認へ向かう際の読みの枠組みを提示するものと位置づけたい。</p>
+
+  <h2 id="s4">4. 地名の輪郭 ── 長野・小島・前野・鮫島・白拍子</h2>
+  <p>長野地区には、長野のほかに小島・前野・鮫島・白拍子といった地名が知られている。これらは旧来の集落や小字に由来する呼び名と考えられる。ここで小字とは、大字の内部をさらに細かく分けた伝統的な土地の呼称であり、田畑一枚ごとの位置を示す生活単位として、地形や水利、かつての土地利用の記憶を映していることが多い<sup class="fnref" id="r4"><a href="#fn4">4</a></sup>。本章では、これらの地名の由来を確定することを目的とはしない。むしろ、地名の字面が低地農村の土地条件とどう響き合っているかに注目し、由来については伝承・推定の層にとどめて慎重に扱う。</p>
+
+  <div class="setsu">
+    <span class="setsu-tag denshou">地名①・地形語／推定</span>
+    <h3>「野」を含む地名 ── 長野・前野</h3>
+    <p>「長野」という地名から、内陸の信州を連想する向きもあるかもしれない。しかし両者に直接の関係を示す確たる根拠は、本稿の調査範囲では<strong>確認できていない</strong>。同じ「長野」という地名は全国に数多く存在し、一般には「長く伸びた野（平地）」を指す地形語として用いられることが多いとされる。磐田の長野についても、この地形語としての読みは、一面に開けた低地の水田景観とよく響き合う。ただし響き合うことと由来が確定することは別であり、この読みは<strong>推定</strong>の域を出ない。</p>
+    <p>「前野」もまた、「（集落の）前に広がる野」と読める素朴な地形語である。微高地の集落から見て、その前面に広がる耕地を指した呼称と解すれば、立地の論理とよく整合する。だが、これも字面からの推定であって、地名の成立事情を記す史料に裏づけられたものではない。「野」を含む二つの地名は、開けた土地・耕地の広がりという南部低地の性格を、字面のなかに畳み込んでいるとみることができる。</p>
+    <div class="verdict"><strong>本稿の評価：</strong>「野」地名は、低地の耕地景観と字面が響き合う点で立地論の傍証となるが、由来そのものは<strong>推定</strong>にとどめ、信州との関係は<strong>未確認</strong>として断定しない。</div>
+  </div>
+
+  <div class="setsu">
+    <span class="setsu-tag denshou">地名②・微高地／推定・伝承</span>
+    <h3>「島」を含む地名 ── 小島・鮫島</h3>
+    <p>「小島」「鮫島」のように「島」を含む地名については、低地のなかの微高地を「島」になぞらえた可能性が、一般に指摘されることがある。水田や湿地の海のなかに、わずかに高い土地が島のように浮かんで見える――そうした景観の記憶が地名に残ったとする見方である。この解釈は、前章までに述べた微高地への集落立地という論理と、みごとに符合する。もし小島・鮫島が微高地上の旧集落であったなら、「島」の字は土地の高みを言いあてた呼称ということになる。</p>
+    <p>もっとも、これはあくまで一般的な解釈の一例であり、磐田の小島・鮫島がその通りであると断定する根拠を本稿は確認していない。とりわけ「鮫島」については、微高地を指す「島」とみる読みのほかに、人名・氏族に由来するとみる説も一般には存在する。両様の読みが立つ以上、いずれか一方に決することはできない。ここでは、「島」地名が微高地立地の論理と符合するという事実を記録しつつ、由来の確定は<strong>伝承・推定</strong>の層に置く。</p>
+    <div class="verdict"><strong>本稿の評価：</strong>「島」地名は微高地立地の論理と符合し、地形語としての読みは魅力的だが、氏族由来説も併存するため、由来は<strong>推定</strong>にとどめ断定しない。</div>
+  </div>
+
+  <div class="setsu">
+    <span class="setsu-tag">地名③・伝承／未確認</span>
+    <h3>「白拍子」 ── 芸能者にちなむ地名の可能性</h3>
+    <p>「白拍子」は、平安・鎌倉期の歌舞を演じた芸能者を指す語としても知られ、各地に伝承を伴う地名として残ることがある。磐田の白拍子についても、何らかの言い伝えが地域にある可能性はある。しかし、その内容を裏づける確かな資料を、本稿は確認できていない。ここでは、こうした地名を「土地と暮らしの記憶を含む手がかり」として尊重しつつ、由来そのものは<strong>伝承</strong>として、また確認状況としては<strong>未確認</strong>として、確定事実と明確に区別して扱う。</p>
+    <div class="verdict"><strong>本稿の評価：</strong>白拍子地名は地域の伝承を含む可能性があるが、裏づけ資料が<strong>未確認</strong>である以上、由来を語ることは控え、今後の現地調査に委ねる。</div>
+  </div>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="島を含む地名と野を含む地名が、それぞれ微高地と開けた耕地という低地の土地条件と響き合っていることを示す図">
+        <rect x="10" y="12" width="600" height="226" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="42" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="15" font-weight="700" fill="#1f4f6f">地名の字面と、土地の条件</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="11.5">
+          <rect x="40" y="66" width="255" height="118" rx="8" fill="#f3ece2" stroke="#d8c6ae"/>
+          <text x="167" y="92" text-anchor="middle" font-size="12.5" fill="#7a5a34">「島」を含む地名</text>
+          <text x="167" y="116" text-anchor="middle" fill="#5b6b74">小島・鮫島 など</text>
+          <text x="167" y="140" text-anchor="middle" fill="#5b6b74">水田や湿地の「海」のなかの</text>
+          <text x="167" y="158" text-anchor="middle" fill="#5b6b74">微高地になぞらえた可能性</text>
+          <rect x="325" y="66" width="255" height="118" rx="8" fill="#e9f3fa" stroke="#8fbcd0"/>
+          <text x="452" y="92" text-anchor="middle" font-size="12.5" fill="#1f4f6f">「野」を含む地名</text>
+          <text x="452" y="116" text-anchor="middle" fill="#5b6b74">前野・長野 など</text>
+          <text x="452" y="140" text-anchor="middle" fill="#5b6b74">開けた土地・耕地の広がりと</text>
+          <text x="452" y="158" text-anchor="middle" fill="#5b6b74">響き合う字面</text>
+        </g>
+        <text x="310" y="210" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11.5" fill="#a9412b">由来は断定せず、字面と土地条件の響き合いに注目する</text>
+        <text x="310" y="230" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10.5" fill="#5b6b74">小字は、たとえ田が均されても土地が「何であったか」を覚えている</text>
+      </svg>
+    </div>
+    <figcaption>図3　地名の字面と土地条件。「島」地名は微高地に、「野」地名は開けた耕地に響き合う。個々の地名の由来を断定するものではなく、一般に指摘される解釈の水準にとどめている。</figcaption>
+  </figure>
+
+  <h2 id="s5">5. 水を引き、水を逃がす ── 水利共同体という土台</h2>
+  <p>低地農村にとって水は恵みであると同時に、管理を誤れば災いにもなる。長野地区のような水田地帯では、二つの相反する水管理が同時に求められてきた。ひとつは、田に必要な水を用水路で引き込むこと。もうひとつは、雨や出水で過剰になった水を排水路で速やかに逃がすことである。この「引く」と「逃がす」の両立が、低地で稲作を続けるための前提であった。用水の取り口に近いほど水を得やすく、排水の出口に近いほど湛水から逃れやすい。集落と農地の配置は、この水系の条件を映して定まっていく。</p>
+  <p>そして、この水管理は個々の農家の努力だけでは到底まかなえない。用水路の掃除である江浚い、堰や樋門の開閉、水の配分をめぐる取り決め、出水のときの見回り――これらは村ぐるみで担う共同の営みであった。誰がいつどれだけ水を使うか、出水のとき誰がどこを見回るか。そうした日々の積み重ねが、地縁の濃い農村社会を形づくり、集落の結びつきそのものを支えてきたと考えられる。低地の集落が微高地の上にまとまって存在するのは、地形の条件であると同時に、この水利共同体を機能させるための社会的な必然でもあった。田と水路が接する境界で、水をめぐる調整を絶えず続けるには、担い手が近くに寄り集まっている必要があったのである。</p>
+  <p>ここでも、確度の線引きを明示しておく。用水と排水の共同管理が農村共同体を支えてきたという構造は、低地農村に広く共通する<strong>通説</strong>として述べうる。しかし、長野地区の各集落が具体的にどの水系・どの水路に依存し、どのような水利慣行や組織のもとで水を分けてきたか、個々の水路がいつ開削され、どの組織が管理してきたかといった沿革は、地域史資料や水利組合の記録による裏づけを要する事柄であり、本稿では一般的な仕組みの説明にとどめる。固有の年代や組織名を、裏づけのないまま記すことはしない。</p>
+  <p>この水の土台は、地名論とも静かに結びつく。もし小島・鮫島が微高地上の集落であったなら、それらは水を引きやすく水害から逃れやすい位置を占めていたことになり、「島」の字は単なる景観描写を超えて、水利上の優位を言いあてていたことになる。地形・水利・地名は、それぞれ別個の手がかりでありながら、微高地への立地という一点で交わる。長野地区の成り立ちは、この三つの手がかりを重ねて読むことで、はじめて立体的に像を結ぶ。天竜地区の水辺の生活史を扱った既刊論考でも、洪水と共に生きた低地の暮らしが水利の共同性に支えられていたことを論じたが<sup class="fnref" id="r5"><a href="#fn5">5</a></sup>、長野地区もまた、その南部低地に共通する水の文法のなかにある。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="用水と排水の共同管理が江浚い・堰と樋門の管理・水の配分・出水の見回りという営みを通じて農村共同体の結びつきそのものであったことを示す図">
+        <rect x="10" y="12" width="620" height="236" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="320" y="40" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="15" font-weight="700" fill="#1f4f6f">水の管理が、村の結びつきだった</text>
+        <rect x="220" y="60" width="200" height="46" rx="8" fill="#1f4f6f"/>
+        <text x="320" y="80" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="12.5" fill="#fff">用水と排水の共同管理</text>
+        <text x="320" y="98" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10" fill="#cfe0ea">個々の農家の努力だけでは足りない</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="11.5" fill="#5b6b74">
+          <rect x="26" y="150" width="140" height="52" rx="7" fill="#e9f3fa" stroke="#8fbcd0"/>
+          <text x="96" y="172" text-anchor="middle" fill="#1f4f6f">江浚い</text><text x="96" y="190" text-anchor="middle" font-size="10">水路の掃除</text>
+          <rect x="182" y="150" width="140" height="52" rx="7" fill="#e9f3fa" stroke="#8fbcd0"/>
+          <text x="252" y="172" text-anchor="middle" fill="#1f4f6f">堰・樋門の管理</text><text x="252" y="190" text-anchor="middle" font-size="10">水を止め、通す</text>
+          <rect x="338" y="150" width="140" height="52" rx="7" fill="#e9f3fa" stroke="#8fbcd0"/>
+          <text x="408" y="172" text-anchor="middle" fill="#1f4f6f">水の配分</text><text x="408" y="190" text-anchor="middle" font-size="10">誰がいつどれだけ</text>
+          <rect x="494" y="150" width="140" height="52" rx="7" fill="#e9f3fa" stroke="#8fbcd0"/>
+          <text x="564" y="172" text-anchor="middle" fill="#1f4f6f">出水の見回り</text><text x="564" y="190" text-anchor="middle" font-size="10">誰がどこを見るか</text>
+          <path d="M290 106 L110 148" stroke="#8fbcd0" stroke-width="1.3"/>
+          <path d="M310 106 L260 148" stroke="#8fbcd0" stroke-width="1.3"/>
+          <path d="M330 106 L400 148" stroke="#8fbcd0" stroke-width="1.3"/>
+          <path d="M350 106 L556 148" stroke="#8fbcd0" stroke-width="1.3"/>
+        </g>
+        <text x="320" y="232" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11.5" fill="#a9412b">日々の積み重ねが、地縁の濃い農村社会を形づくった</text>
+      </svg>
+    </div>
+    <figcaption>図4　水利共同体の構造。低地の稲作を支えた共同管理の内容を整理したもの。一般的な仕組みの説明であり、具体的な水利慣行や組織の名称・沿革は水利組合や地域史資料での確認を要する。</figcaption>
+  </figure>
+
+  <h2 id="s6">6. 三つの読みの比較と史料批判</h2>
+  <p>ここまで、長野地区の成り立ちを、地形形成・微高地立地・水利共同体・地名という手がかりから読んできた。これらは互いに独立の手がかりでありながら、確度の水準を異にする。地形形成と立地・水利の構造は低地農村一般の通説・推定として堅く述べうるのに対し、地名の由来は伝承・推定にとどまる。以下の比較表は、各手がかりをその確度の層・内容・依拠する資料・史料批判上の留意点において対等の粒度で並べ、読者が自ら確からしさを判断できる状態をつくることを目的とする。特定の読みを優位に置く書式を避け、各行の情報量をそろえた。</p>
+
+  <div class="table-wrap">
+    <table class="academic-table">
+      <caption>表1　長野地区の成り立ちを読む四つの手がかり ── 確度の層・内容・資料・史料批判上の留意点</caption>
+      <thead><tr><th>手がかり</th><th>確度の層</th><th>主な内容</th><th>依拠する資料</th><th>留意点（史料批判）</th></tr></thead>
+      <tbody>
+        <tr><td>南部低地の地形形成</td><td>推定（地形学的知見）</td><td>天竜川水系の乱流と堆積が微高地と低地を入り組ませた。</td><td>地形学一般、治水地形分類図・土地条件図。</td><td>形成の年代・過程は個別地点ごとに図の精査を要し、本稿は特定しない。</td></tr>
+        <tr><td>微高地への集落立地</td><td>通説（低地農村一般）</td><td>集落・寺社・墓地が水はけのよい微高地に集まる。</td><td>低地農村の集落形成論、今昔マップ。</td><td>長野地区の各集落と微高地の対応は測量的には未確認。</td></tr>
+        <tr><td>水利共同体</td><td>通説（低地農村一般）</td><td>用水・排水の共同管理が村の結びつきを支えた。</td><td>水利慣行の一般研究、水利組合記録。</td><td>個別の水路開削年代・組織沿革は地域史資料で要確認。</td></tr>
+        <tr><td>旧集落の地名</td><td>伝承・推定</td><td>「島」は微高地、「野」は耕地と字面が響き合う。</td><td>地名論一般、地域の口碑。</td><td>各地名の由来は未確定。信州との関係・氏族由来説は未確認。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>この比較から見えてくるのは、四つの手がかりが競合しているのではなく、それぞれ確度の異なる層から同一の対象を照らしているという事実である。地形は舞台を、立地は住まいの論理を、水利は暮らしの持続を、地名は土地の記憶を、それぞれ別の仕方で証言する。確度の高い地形・立地・水利の構造を土台に据え、確度の低い地名由来をその上にそっと重ねる――この順序を守るかぎり、地名の不確かさは論全体を揺るがさない。むしろ、確かな土台があるからこそ、地名という不確かな手がかりも、土台と照らし合わせて評価できるようになる。</p>
+  <p>史料批判の観点からは、四つの手がかりに共通する限界も明らかである。すなわち、いずれについても、長野地区に固有の成立年代や沿革を直接記す一次史料は、本稿の調査範囲では未確認である。この限界は四つに等しく課されるのだから、それを理由に地名だけを不当に低く見積もることも、地形・水利だけを過度に確定的に語ることもできない。問うべきは、各手がかりがどの資料層に立脚し、その層がどこまでを語りうるのか、という点に尽きる。確認できることは確認できる範囲で、確認できないことは未確認として、それぞれの位置を保ったまま書き留める。これが本稿の一貫した手続きである。</p>
+  <p>この整理は、郷土史の記述一般にとっても含意をもつ。地域の歴史を書くとき、私たちはしばしば「本当のところはどうだったのか」という問いに引き寄せられ、地名の由来にただ一つの正解を求めたくなる。しかしその態度は、確度の異なる情報を無理に同じ平面へ押し込め、確かめられないことを確かめられたことのように語る誤りへ通じやすい。低地農村のように編纂史料の薄い対象では、この誘惑はいっそう強く働く。だからこそ、確度の層を分離し、確かな土台から積み上げる手続きが要る。長野地区の成り立ちを、地形・水利という確かな土台の上に描き、地名を伝承・推定として誠実に区別したのは、この方法的な要請にこたえるためである。</p>
+  <p>付け加えれば、この手続きは記述の禁欲であると同時に、後世への配慮でもある。いま確かめられないことを推定で埋めて一つの物語に仕立ててしまえば、読み手はそれを既定の事実として受け取り、後の調査はかえって難しくなる。どこまでが確かで、どこからが未確認なのかを明示しておけば、将来この地を調べる者は、埋めるべき空白の在り処をただちに知ることができる。確度の層を保った記述は、答えを差し出すためではなく、次の問いを正しく手渡すために書かれる。長野地区のような低地農村の成り立ちを扱うとき、この構えはとりわけ実際的な意味をもつ。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="史実・通説・推定・伝承の四段階の確度を弁別する図">
+        <rect x="10" y="12" width="600" height="206" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif">
+          <rect x="40" y="66" width="128" height="92" rx="10" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="2"/>
+          <text x="104" y="106" text-anchor="middle" font-size="14" fill="#1f4f6f">史実</text>
+          <text x="104" y="128" text-anchor="middle" font-size="10.5" fill="#5b6b74">史料で確認</text>
+          <rect x="184" y="66" width="128" height="92" rx="10" fill="#eef7ec" stroke="#6f9a4f" stroke-width="2"/>
+          <text x="248" y="106" text-anchor="middle" font-size="14" fill="#3f6a2a">通説</text>
+          <text x="248" y="128" text-anchor="middle" font-size="10.5" fill="#5b6b74">立地・水利の構造</text>
+          <rect x="328" y="66" width="128" height="92" rx="10" fill="#fbf3e6" stroke="#d28a41" stroke-width="2"/>
+          <text x="392" y="106" text-anchor="middle" font-size="14" fill="#8a5a1f">推定</text>
+          <text x="392" y="128" text-anchor="middle" font-size="10.5" fill="#5b6b74">地形形成・野地名</text>
+          <rect x="472" y="66" width="128" height="92" rx="10" fill="#fbecec" stroke="#b85b5b" stroke-width="2"/>
+          <text x="536" y="106" text-anchor="middle" font-size="14" fill="#7a3030">伝承</text>
+          <text x="536" y="128" text-anchor="middle" font-size="10.5" fill="#5b6b74">島地名・白拍子</text>
+        </g>
+        <text x="310" y="44" text-anchor="middle" font-size="14" class="svg-label">確度の四段階 ── 混同しないための弁別</text>
+        <text x="310" y="196" text-anchor="middle" font-size="11" class="svg-sub">確かな土台（通説・推定）の上に、不確かな地名（伝承）をそっと重ねる。</text>
+      </svg>
+    </div>
+    <figcaption>図5　確度の四段階。地形形成は推定、立地・水利は通説、地名由来は推定・伝承に位置づけられる。長野地区に固有の成立年代を記す史実の層は、本稿では未確認である。</figcaption>
+  </figure>
+
+  <h2 id="s7">7. 背景としての地理 ── 南部低地のなかの長野</h2>
+  <p>長野地区の成り立ちは、この地区だけを取り出して完結するものではない。同じ南部低地には、大池を擁する於保地区や、天竜川に直接臨む天竜地区があり、いずれも水と低地という共通の条件のもとに村を営んできた。長野地区の輪郭は、これらの隣接地域との異同のなかに置くことで、いっそう鮮明になる。既刊の論考でも、南部低地の水と村の関係を於保地区や天竜地区について論じてきた。あわせて<a href="/oishi-ronko/092/">於保と大池を扱った論考</a>や、<a href="/oishi-ronko/074/">天竜地区の水辺の生活史を扱った論考</a>を参照されたい。長野は、於保と天竜のあいだに位置する低地農村として、両者と多くの条件を分かちもっている。</p>
+  <p>三者を分けるのは、水との距離の取り方である。天竜地区は、大河そのものの恵みと脅威に直接さらされ、洪水と共に生きる暮らしを組み立ててきた。於保地区は、大池という溜水を軸に、水を蓄え配る仕組みのなかで村を維持してきた。これに対し長野地区は、大河にも大池にも一歩を隔てた低地に開け、旧河道と微高地が入り組む土地で、用水と排水の細やかな調整によって田を守ってきた。同じ南部低地でありながら、依拠する水の性格が異なるのである。この差異を読み分けることは、南部地区全体の成り立ちを理解するうえでも欠かせない。隣接する<a href="/s015.html">於保地区総論</a>とあわせて読むことで、両地区の共通性と個性が浮かび上がる。</p>
+  <p>近世には、この南部低地の村々は、東海道の往来や見付・中泉といった拠点との関わりのなかで暮らしを立ててきた。ただし、長野地区の各集落が近世のどの村に属し、どのような年貢負担や村運営のもとにあったかを具体的に記す史料の博捜は、本稿の範囲を超える。ここでは、長野が孤立した一村ではなく、南部低地の水系と街道の網の目のなかに位置づけられていたこと、そしてその位置づけが集落の持続を支えた背景であったことを、確認するにとどめる。固有の村名や年代を、裏づけのないまま列挙することはしない。</p>
+  <p>近現代に入ると、長野地区の景観と暮らしも少しずつ変わっていった。自動車交通の普及にともなう道路の整備・拡幅、ほ場整備による水田の整然とした再編、そして一部での農地転用や住宅地化――これらは利便性を高める一方で、旧集落の境目や小字、旧道、旧水路の屈曲といった土地の細かな記憶を見えにくくしていった。かつて微高地の上に寄り添うように建っていた家々が、整備された道路沿いや新しい区画へ広がっていけば、「なぜこの場所に集落があったのか」という地形の理由は、地図の上からは読み取りにくくなる。便利になることと、土地の来歴が見えにくくなることは、しばしば同時に進行する。これは長野地区に限らず、南部低地の農村に共通する変化である。</p>
+  <p>だからこそ、条件が変わりゆく前に、土地と地名の関係を記録し、次の世代へ手渡しておくことに意味がある。担い手の高齢化が進み、用水・排水の共同管理や江浚いといった営みが細れば、水田の維持そのものが難しくなり、低地という土地条件はこれまで以上に水害への備えを必要とするだろう。農地転用や相続の未整理が進めば、空き家・空き地が増え、集落のまとまりや地域の記憶が薄れていくおそれもある。これらを「衰退」と決めつける必要はない。静かな水田景観や農村の暮らし、土地に刻まれた地域記憶の価値は、これからむしろ高まりうる。見えなくなる前に見えるうちに書き留めておくこと――それ自体が、低地農村の未来を支える一つの備えになる。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="天竜地区・長野地区・於保地区が水との距離の取り方によって性格を分ける南部低地の位置関係を示す模式図">
+        <rect x="10" y="12" width="600" height="226" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="42" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="15" font-weight="700" fill="#1f4f6f">南部低地 ── 水との距離が村の性格を分ける</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <circle cx="130" cy="140" r="54" fill="#e9f3fa" stroke="#2f7fa3" stroke-width="2"/>
+          <text x="130" y="134" font-size="14" fill="#1f3a48">天竜</text>
+          <text x="130" y="156" font-size="10.5" fill="#5b6b74">大河に臨む</text>
+          <circle cx="310" cy="140" r="60" fill="#fff7ec" stroke="#d28a41" stroke-width="2.4"/>
+          <text x="310" y="130" font-size="15" fill="#1f3a48">長野</text>
+          <text x="310" y="152" font-size="10.5" fill="#5b6b74">旧河道・微高地の低地</text>
+          <text x="310" y="168" font-size="10.5" fill="#5b6b74">用水・排水の調整</text>
+          <circle cx="490" cy="140" r="54" fill="#eef7ec" stroke="#6f9a4f" stroke-width="2"/>
+          <text x="490" y="134" font-size="14" fill="#1f3a48">於保</text>
+          <text x="490" y="156" font-size="10.5" fill="#5b6b74">大池に依る</text>
+        </g>
+        <text x="310" y="222" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11" fill="#5b6b74">同じ南部低地でも、依拠する水の性格が三者を分ける（位置関係は概念図）。</text>
+      </svg>
+    </div>
+    <figcaption>図6　南部低地のなかの長野。大河に臨む天竜、大池に依る於保のあいだで、長野は旧河道と微高地の入り組む低地で用水・排水の調整に依る村として位置づけられる。位置関係は概念的に示したものである。</figcaption>
+  </figure>
+
+  <h2 id="s8">8. 結論 ── 確度の層を保った成り立ちの記述へ</h2>
+  <p>本稿は、磐田市南部・旧長野地区の成り立ちを、南部低地の地形形成・微高地への集落立地・水利共同体・旧集落の地名という四つの手がかりから読み解いた。得られた見取り図は次のとおりである。南部低地は天竜川水系の乱流と堆積により微高地と低地が入り組む土地として形成され（推定）、集落はそのわずかな微高地の上に立地し（通説）、用水と排水の共同管理という水利共同体がその持続を支えた（通説）。そして長野・小島・前野・鮫島・白拍子という地名は、「島」が微高地に、「野」が耕地に響き合うかたちで、この立地の論理を字面のなかに畳み込んでいる（伝承・推定）。</p>
+  <p>重要なのは、これらの手がかりが確度の層を異にする点である。地形・立地・水利という確かな土台の上に、地名という不確かな手がかりをそっと重ねる――この順序を守るかぎり、成り立ちの記述は不確かな由来に引きずられずにすむ。長野地区の各集落の成立年代や、水路の開削年代、寺社の創建といった固有の事実を直接記す一次史料は、本稿の調査範囲では未確認である。この未確認を、あたかも記載が存在しないかのように語らず、また未確認を根拠に成り立ちの全体像を放棄することもしない。確認できる土台から描き、確認できない部分は未確認として明記する――それが本稿の一貫した立場である。</p>
+  <p>したがって本稿の結論は、単一の成立年代や地名由来の確定にはない。むしろ、低地農村の成り立ちを、確度の層を保ったまま記述する作法の提示にある。史実・通説・推定・伝承を混同せず、「未確認」と「記載なし」を区別し、地名を確かな土台に照らして評価する。この禁欲的な手続きこそが、編纂史料の薄い低地農村を、後世の調べものに耐える形で書き留める方途である。長野地区は、水・土地・共同体という三つの条件がかみ合った場所に村が根を下ろし、その条件を保ち続ける営みによって維持されてきた。派手な出来事ではなく、この地道な土台のなかにこそ、地域の成り立ちは宿っている。</p>
+  <p>最後に、本稿が扱いえなかった課題を明記しておく。第一に、長野地区の各集落と微高地の対応は、治水地形分類図・土地条件図と今昔マップを重ね合わせることで、通説の水準から一歩、実証へ近づけられる余地がある。第二に、各集落の近世における村としての姿は、地域史資料や近世文書の博捜によって、未確認を史実へ押し上げうる。第三に、小島・鮫島の由来をめぐる地形語説と氏族由来説の異同、白拍子地名に伴う伝承の有無は、現地聞き取りと文献の照合を要する主題である。これらはいずれも、本稿が設定した四層の枠組みのなかで、未確認を史実へ、推定を通説へと押し上げていく作業に属する。地名の由来を一つに決める誘惑を退け、確度の層を保ったまま資料を積み上げていくこと――その地道な手続きの先にこそ、南部低地の村々が抱えてきた成り立ちの全体像が、少しずつ像を結んでいくはずである。於保・長野・天竜を横断する南部低地の集落形成史については、本論考シリーズで稿を改めて論じたい。</p>
+
+  <div class="cta-note">
+    本稿の舞台である南部低地の村々には、水田とともに受け継がれてきた古い家や土地が数多く残る。筆者は磐田・袋井で不動産と介護の実務に携わる立場から、こうした土地の記憶にも向き合ってきた。代々受け継いできた農地や住まいをどう次へ渡すかに迷うとき、その土地の来歴と地形条件を踏まえて落ち着いて考えることが、後悔の少ない選択につながる。<a href="https://fudosan.atawi.link/jikka/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=oishi_ronko" target="_blank" rel="noopener">家・土地・空き家の整理について相談する</a>ことができる。歴史を書き留めることと、その舞台となった土地を次の世代へ手渡すことは、地続きの営みだと考えている。
+  </div>
+
+  <section class="notes" aria-label="注">
+    <h2>注</h2>
+    <ol class="fn-list">
+      <li id="fn1">磐田物語における南部地区の地区分類、および長野地区の一般向け総論については、素材記事 s016「長野地区総論 ── 水田の広がりと旧集落の輪郭を読む」を参照。本稿はその内容を、郷土史研究者向けに確度の層を明示して再構成した論考版である。<a href="#r1" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn2">天竜川の乱流と沖積低地の形成については、地形学・治水史の一般的知見による。個別地点の形成過程は国土地理院の治水地形分類図等の精査を要し、本稿では特定しない。<a href="#r2" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn3">微高地（自然堤防等）に集落・寺社・墓地が集まる傾向は、低地農村の集落形成論に広く見られる一般的構造である。長野地区の各集落との対応は測量的には未確認。<a href="#r3" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn4">小字（こあざ）は大字の内部を細分した伝統的な土地の呼称であり、区画整理や住居表示の変更によって地図から失われやすい。地名の由来は本稿では推定・伝承の層にとどめる。<a href="#r4" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn5">南部低地の水と村の関係については、大石浩之の磐田論考 第92号（於保と大池）および第74号（天竜地区の水辺の生活史）で論じた。長野地区もこの南部低地に共通する水の文法のなかにある。<a href="#r5" aria-label="本文へ戻る">&#8617;</a></li>
+    </ol>
+    <p class="fn-editorial" style="font-family:'Zen Kaku Gothic New',sans-serif;font-size:12.5px;color:var(--sub);text-indent:0;margin-top:14px;line-height:1.85;">付記：本稿は一般読者向け記事 s016 の内容を、郷土史研究者向けに立地論・史料批判の観点から再構成した論考版である。確度の層（史実・通説・推定・伝承）を語の水準で区別し、南部低地の地形形成を推定、微高地立地と水利共同体を通説、地名の由来を推定・伝承として扱った。長野地区に固有の成立年代を記す一次史料は本稿の範囲では未確認である。</p>
+  </section>
+
+  <section class="references" aria-label="参考文献">
+    <h2>参考文献・参考資料</h2>
+    <ul class="refs">
+      <li>磐田物語 s016「長野地区総論 ── 水田の広がりと旧集落の輪郭を読む」　https://iwata-monogatari.net/s016.html　（最終閲覧：2026年7月25日）。</li>
+      <li>大石浩之「於保と大池 ── 南部低地の水と村」『大石浩之の磐田論考』第92号、磐田物語、2026年　https://iwata-monogatari.net/oishi-ronko/092/　（最終閲覧：2026年7月25日）。</li>
+      <li>大石浩之「川の恵みと怖さ ── 天竜地区の水辺の生活史」『大石浩之の磐田論考』第74号、磐田物語、2026年　https://iwata-monogatari.net/oishi-ronko/074/　（最終閲覧：2026年7月25日）。</li>
+      <li>磐田物語 s015「於保地区総論 ── 大池・低地・農地が支えた南の集落」　https://iwata-monogatari.net/s015.html　（最終閲覧：2026年7月25日）。</li>
+      <li>国土地理院「地理院地図」／治水地形分類図・土地条件図（低地・微高地・旧河道・自然堤防の確認）　https://maps.gsi.go.jp/　（最終閲覧：2026年7月25日）。</li>
+      <li>谷謙二「今昔マップ on the web」（明治期以降の集落・道路・水田・水路の変化比較）　https://ktgis.net/kjmapw/　（最終閲覧：2026年7月25日）。</li>
+      <li>磐田市『磐田市史』通史編（磐田市、該当章）。</li>
+      <li>磐田市『磐田市史』資料編（近世村方文書・地誌の項）。</li>
+      <li>磐田市ハザードマップ（浸水想定区域の確認）。</li>
+      <li>磐田市都市計画図・用途地域図（農地・宅地の土地利用区分の確認）。</li>
+      <li>磐田市統計資料・国勢調査・e-Stat（人口・世帯・高齢化・農地の動向）。</li>
+      <li>磐田市文化財・埋蔵文化財関係資料、地域史資料・水利組合記録（寺社・小字・水利慣行の確認）。</li>
+      <li>佐口行正氏所蔵史料（南部低地の村方・水利関係の覚え書き）。</li>
+    </ul>
+  </section>
+
+  <div class="pager">
+    <a href="https://iwata-monogatari.net/oishi-ronko/">← 大石浩之の磐田論考 一覧へ</a>
+    <a href="https://iwata-monogatari.net/s016">一般向け記事版（s016）を読む →</a>
+  </div>
+  </article>
+</main>
+
+<footer class="im-foot">
+  <style>
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand:hover{text-decoration:none;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
+  </style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。本論考は個人の調査・覚え書きをもとに、確度の層を区別しながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://oishi-hiroyuki.org/" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+      </ul>
+    </div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+  </div>
+</footer>
+</body>
+</html>
