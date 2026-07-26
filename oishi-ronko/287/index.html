@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>磐田の地形と暮らしを総合する ── 台地・低地・砂丘・河口が規定した集落・生業・地名｜大石浩之の磐田論考｜磐田物語</title>
+<meta name="description" content="磐田原台地・天竜川下流の低地・遠州灘の砂丘・太田川河口という四つの地形が、集落の立地・生業・地名をどう規定したかを、既刊各論を先行研究として横断し総合するレビュー論考。微高地に集落・低地に水田という土地利用の対応を軸に、史実・通説・推定・伝承を腑分けし、未確認と記載なしを区別する。">
+<meta property="og:title" content="磐田の地形と暮らしを総合する｜大石浩之の磐田論考">
+<meta property="og:description" content="台地・低地・砂丘・河口という四地形が集落・生業・地名を規定した論理を、既刊各論を先行研究として横断する総合論考。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://iwata-monogatari.net/oishi-ronko/287/">
+<meta property="og:locale" content="ja_JP">
+<meta name="iwata:title" content="磐田の地形と暮らしを総合する">
+<meta name="iwata:published" content="2026-07-26">
+<meta name="iwata:category" content="総論・論考">
+<meta name="iwata:new-article" content="1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#20292e;--accent:#2f6079;--accent2:#356f88;--sub:#586873;--rule:#c8d5dc;--rule2:#dfe8ec;--paper:#fffdf8;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Shippori Mincho",serif;color:var(--ink);background:var(--paper);line-height:2.0;font-size:16.5px;-webkit-font-smoothing:antialiased;text-align:justify;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .gothic{font-family:"Zen Kaku Gothic New",sans-serif;}
+  main{max-width:720px;margin:0 auto;padding:0 24px 40px;}
+  .crumb{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--sub);padding:18px 0 4px;text-align:left;letter-spacing:.02em;}
+  .crumb a{color:var(--sub);}
+  /* ===== 論文タイトル・ヘッダー ===== */
+  .kiyo-hero{text-align:center;padding:26px 0 0;margin:6px 0 0;border:0;background:none;box-shadow:none;}
+  .kiyo-journal{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--accent);font-weight:700;letter-spacing:.22em;margin:0 0 6px;}
+  .kiyo-series{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.08em;margin:0 0 22px;}
+  .kiyo-hero h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:27px;line-height:1.6;color:var(--ink);margin:0 auto 12px;letter-spacing:.02em;max-width:22em;}
+  .kiyo-subtitle{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--accent2);margin:0 0 24px;line-height:1.7;}
+  .kiyo-author{font-size:16.5px;color:var(--ink);margin:0 0 3px;letter-spacing:.04em;}
+  .kiyo-author sup{font-size:10px;}
+  .kiyo-affil{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);margin:0 0 20px;}
+  .kiyo-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;margin-top:6px;font-family:"Zen Kaku Gothic New",sans-serif;}
+  .kiyo-meta div{font-size:12.5px;}
+  .kiyo-meta dt{display:inline;color:var(--sub);font-weight:500;}
+  .kiyo-meta dd{display:inline;color:var(--ink);margin-left:6px;font-weight:700;}
+  /* ===== 要旨・キーワード ===== */
+  .abstract{border-top:none;padding:6px 0 0;margin:30px 0 0;}
+  .abstract h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--accent);letter-spacing:.28em;text-align:center;font-weight:700;}
+  .abstract p{font-size:15px;margin:0;color:#33424b;line-height:1.95;padding:16px 22px;border:1px solid var(--rule2);background:#fbfdfe;border-radius:2px;}
+  .keywords{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;color:var(--sub);margin:14px 0 0;padding-bottom:16px;border-bottom:1px solid var(--rule);text-align:left;line-height:1.8;}
+  .keywords strong{color:var(--accent);}
+  /* ===== 目次 ===== */
+  .toc{margin:26px 0;padding:14px 0;border-top:1px solid var(--rule2);border-bottom:1px solid var(--rule2);}
+  .toc h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.2em;text-align:center;}
+  .toc ol{margin:0 auto;max-width:30em;padding-left:1.6em;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:var(--ink);text-align:left;}
+  .toc li{margin:6px 0;line-height:1.7;}
+  .toc a{color:var(--ink);}
+  /* ===== 見出し ===== */
+  h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;color:var(--ink);margin:48px 0 18px;padding-bottom:8px;border-bottom:1.5px solid var(--accent2);letter-spacing:.02em;text-align:left;}
+  h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16.5px;color:var(--accent2);margin:30px 0 10px;text-align:left;}
+  p{margin:0 0 16px;text-indent:1em;}
+  .abstract p,.keywords,.verdict,figcaption,.cta-note,.refs li,.fn-list li,.pager,.crumb{text-indent:0;}
+  /* ===== 学説節（論文体） ===== */
+  .setsu{background:none;border:0;border-radius:0;padding:0;margin:22px 0;}
+  .setsu-tag{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:11.5px;font-weight:700;color:var(--accent);background:none;padding:0;margin:22px 0 2px;letter-spacing:.12em;}
+  .setsu-tag.denshou{color:var(--accent2);}
+  .setsu h3{font-family:"Shippori Mincho",serif;font-size:17.5px;color:var(--ink);margin:2px 0 12px;border-bottom:1px dotted var(--rule);padding-bottom:8px;}
+  .setsu p{margin:0 0 14px;font-size:16px;text-indent:1em;}
+  .verdict{font-size:14.5px;color:#33424b;background:none;border-left:3px solid var(--accent2);border-radius:0;padding:2px 0 2px 16px;margin:14px 0 0;line-height:1.85;}
+  .verdict strong{color:var(--accent2);}
+  /* ===== 図版 ===== */
+  figure{margin:32px 0;}
+  .fig-box{background:#fff;border:1px solid var(--rule);border-radius:2px;padding:20px 16px;text-align:center;}
+  figcaption{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-top:10px;line-height:1.8;text-align:left;}
+  svg{max-width:100%;height:auto;}
+  .svg-label{fill:var(--ink);}.svg-sub{fill:var(--sub);}
+  /* ===== 表 ===== */
+  .table-wrap{overflow-x:auto;margin:24px 0;}
+  table.academic-table{width:100%;border-collapse:collapse;min-width:700px;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;line-height:1.7;border-top:2px solid var(--accent2);border-bottom:2px solid var(--accent2);}
+  .academic-table th{background:none;color:var(--accent);text-align:left;font-weight:700;border-bottom:1px solid var(--accent2);}
+  .academic-table th,.academic-table td{border-bottom:1px solid var(--rule2);padding:10px 12px;vertical-align:top;text-indent:0;}
+  .academic-table caption{caption-side:top;text-align:left;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-bottom:8px;}
+  /* ===== 脚注・参考文献 ===== */
+  sup.fnref{font-size:.68em;font-family:"Zen Kaku Gothic New",sans-serif;line-height:0;}
+  sup.fnref a{color:var(--accent);}
+  .notes,.references{margin-top:40px;}
+  .notes h2,.references h2{font-size:16px;}
+  .fn-list,.refs{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);}
+  .fn-list li,.refs li{margin:0 0 8px 1.6em;line-height:1.8;padding-left:.2em;}
+  .fn-list li{list-style:decimal;}
+  .cta-note{background:#fbfdfe;border:1px solid var(--rule2);border-radius:2px;padding:18px 20px;margin:36px 0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:#33424b;line-height:1.9;}
+  .cta-note a{font-weight:700;}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:42px 0 10px;flex-wrap:wrap;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;}
+  @media(max-width:600px){.kiyo-hero h1{font-size:22px;}body{font-size:16px;}h2{font-size:18px;}.kiyo-subtitle{font-size:15.5px;}}
+</style>
+<link rel="canonical" href="https://iwata-monogatari.net/oishi-ronko/287/">
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+</head>
+<body class="area-common">
+
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="crumb"><a href="https://iwata-monogatari.net/">磐田物語</a> ／ <a href="https://iwata-monogatari.net/oishi-ronko/">大石浩之の磐田論考</a> ／ 磐田の地形と暮らしを総合する</div>
+
+  <article>
+  <header class="kiyo-hero">
+    <p class="kiyo-journal">磐田郷土史研究紀要</p>
+    <p class="kiyo-series">大石浩之の磐田論考　第287号（総論・地形編）</p>
+    <h1>磐田の地形と暮らしを総合する</h1>
+    <p class="kiyo-subtitle">台地・低地・砂丘・河口という四つの地形が集落・生業・地名を規定した論理 ── 既刊各論を横断する</p>
+    <p class="kiyo-author">大石浩之<sup>1</sup></p>
+    <p class="kiyo-affil"><sup>1</sup> 富士ヶ丘サービス株式会社 代表取締役</p>
+    <dl class="kiyo-meta">
+      <div><dt>公開日</dt><dd>2026.07.26</dd></div>
+      <div><dt>資料検証</dt><dd>公開資料による検証済み</dd></div>
+      <div><dt>対象地区</dt><dd>磐田市域（広域）</dd></div>
+    </dl>
+  </header>
+
+  <section class="abstract" aria-label="要旨">
+    <h2>要旨</h2>
+    <p>磐田の地形は一様ではない。西から北にかけて広がる磐田原台地、天竜川下流の低地、遠州灘に沿う砂丘、そして東を限る太田川の河口低地という、性格の異なる四つの地形が一つの市域に同居している。本稿は、これら四地形を扱ってきた既刊各論を先行研究として横断し、地形が集落の立地・生業・地名をどう規定したかを総合するレビュー論考である。台地では縁と谷に、低地では自然堤防の微高地に、砂丘では砂と潮風を克服した列状の村に、河口では乏しい記録の残る周縁に、それぞれ暮らしが凝縮した。共通して現れるのは、家を微高地に、田を低みに置くという土地利用の対応である。地形と地形分類は地形図で確認できる<strong>史実</strong>および高い蓋然性をもつ<strong>推定</strong>として、地名の由来は<strong>推定</strong>ないし<strong>伝承</strong>として腑分けし、「未確認」（一次史料に突き当たっていない）と「記載なし」（史料に無い）を一貫して区別する。個別の各論では見えにくい磐田の地形と暮らしの全体像を、確度の層を保ったまま一枚の見取り図へまとめることを主眼とする。</p>
+  </section>
+  <p class="keywords"><strong>キーワード：</strong>磐田原台地／自然堤防／後背湿地／遠州灘砂丘／太田川河口／微高地立地／地形と土地利用</p>
+
+  <nav class="toc" aria-label="目次">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#s1">問題設定 ── 四つの地形を一枚の見取り図へ</a></li>
+      <li><a href="#s2">先行研究の整理 ── 六本の各論と共通の方法</a></li>
+      <li><a href="#s3">磐田原台地 ── 縁・谷・段丘に寄る暮らし</a></li>
+      <li><a href="#s4">天竜川下流の低地 ── 自然堤防・後背湿地・旧河道</a></li>
+      <li><a href="#s5">遠州灘の砂丘 ── 砂と潮風を克服した村</a></li>
+      <li><a href="#s6">太田川の河口 ── 最も記録の薄い地形</a></li>
+      <li><a href="#s7">四地形の比較と土地利用の対応</a></li>
+      <li><a href="#s8">背景と本稿の立場 ── 微高地に集落・低地に水田</a></li>
+      <li><a href="#s9">結論 ── 地形から磐田を総合する</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1">1. 問題設定 ── 四つの地形を一枚の見取り図へ</h2>
+  <p>磐田という土地を一言で言い表すのは難しい。天竜川がつくった広い平野を思い浮かべる人もいれば、東海道の宿場町として開けた見付の街並みを思い浮かべる人もいる。だが市域を地形の側から眺めると、そこには性格の異なる四つの舞台が同居していることに気づく。西から北にかけて広がる磐田原台地、天竜川下流の低地、遠州灘に沿って延びる砂丘、そして東を限る太田川の河口低地である。標高にすればわずか数メートルから数十メートルの差にすぎないが、その微妙な高低が、人がどこに家を建て、どこを田にし、どの道を歩いたかを、長い時間をかけて静かに決めてきた。</p>
+  <p>本論考シリーズは、これまで磐田の各地域を対象地ごとに一本ずつの各論として書き留めてきた。田原、南部、豊岡、南御厨、天竜、そして新田開発の総論──それぞれの土地には、それぞれの水との向き合い方があり、それが集落の配置や地名に刻まれている。しかし各論を一本ずつ読んでいるだけでは、磐田全体の地形がどう組み合わさり、どの土地条件がどの地域に共通し、どこで分かれるのかという、より大きな輪郭は見えにくい。本稿の出発点は、この個別の各論を横断し、四つの地形という枠のもとに束ね直すことにある。</p>
+  <p>四つの地形という枠を立てることには、実際的な利点もある。地域を行政区分や大字の名で束ねると、境界線は紙の上の区切りであって、土地の性格を必ずしも反映しない。これに対し地形を枠にとれば、行政村の境を越えて連続する土台が見えてくる。台地の縁は複数の地区にまたがって走り、天竜川の低地は南部と天竜と南御厨を一続きに貫き、砂丘は海沿いの村々を横に結ぶ。地形は、行政の線が分断してしまう暮らしの連続性を、あらためて浮かび上がらせる。各論が地区ごとに描いてきた個別の像を、地形という横糸で編み直すこと。そこに本稿の方法上の狙いがある。</p>
+  <p>したがって本稿は、新しい史料を発掘して未知の事実を提示する種類の論文ではない。すでに書かれた各論を<strong>先行研究</strong>として整理し、そこに記された地形と暮らしの対応関係を比較し、確度の層を保ったまま一枚の見取り図へまとめ直す、いわゆるレビュー論考である。個別の記述を並べ替えるだけでは総合にならない。四地形を貫く共通の論理を取り出し、地形の別が暮らしの別とどう対応するかを明示してはじめて、横断の意味が生じる。以下ではまず先行研究を整理し、続いて四つの地形を順に検討し、比較と背景を経て結論に至る。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="磐田市域の四つの地形区分を模式的に示した区分図">
+        <defs>
+          <linearGradient id="f1sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dcecf3"/><stop offset="1" stop-color="#bcd8e5"/></linearGradient>
+        </defs>
+        <rect x="12" y="14" width="616" height="392" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <path d="M40 60 L300 60 L300 250 Q200 260 120 300 L40 300 Z" fill="#eaf1e4" stroke="#6f9a4f" stroke-width="1.6"/>
+        <text x="150" y="140" font-size="15" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">磐田原台地</text>
+        <text x="150" y="164" font-size="11" class="svg-sub" font-family="'Zen Kaku Gothic New',sans-serif">縁・谷・段丘</text>
+        <path d="M40 300 Q120 300 120 300 L300 250 L300 360 L40 360 Z" fill="#eef7ec" stroke="#6f9a4f" stroke-width="1.2"/>
+        <path d="M300 60 L560 60 L560 330 L300 360 L300 250 Z" fill="#eef3f6" stroke="#356f88" stroke-width="1.6"/>
+        <text x="430" y="150" font-size="15" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">天竜川下流の低地</text>
+        <text x="430" y="174" font-size="11" class="svg-sub" font-family="'Zen Kaku Gothic New',sans-serif">自然堤防・後背湿地・旧河道</text>
+        <line x1="300" y1="60" x2="300" y2="360" stroke="#2f7fa3" stroke-width="2.4" stroke-dasharray="6 5"/>
+        <text x="300" y="52" text-anchor="middle" font-size="11.5" fill="#2f7fa3" font-family="'Zen Kaku Gothic New',sans-serif">天竜川</text>
+        <rect x="40" y="360" width="520" height="30" fill="#f4e8cf" stroke="#d28a41" stroke-width="1.4"/>
+        <text x="300" y="380" text-anchor="middle" font-size="13" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">遠州灘の砂丘</text>
+        <path d="M560 60 L600 60 L600 330 L560 330 Z" fill="#f6efe2" stroke="#d28a41" stroke-width="1.2"/>
+        <text x="580" y="200" font-size="11.5" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif" transform="rotate(90 580 200)">太田川河口</text>
+        <rect x="40" y="390" width="560" height="12" fill="url(#f1sea)"/>
+        <text x="300" y="30" text-anchor="middle" font-size="14" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">磐田市域の四つの地形区分（模式）</text>
+      </svg>
+    </div>
+    <figcaption>図1　磐田の地形区分（模式図）。西から北の磐田原台地、天竜川下流の低地、遠州灘沿いの砂丘、東を限る太田川河口という四地形が一つの市域に同居する。方位・縮尺は概念的なものであり、実際の位置関係を正確に描くものではない。</figcaption>
+  </figure>
+
+  <h2 id="s2">2. 先行研究の整理 ── 六本の各論と共通の方法</h2>
+  <p>総合に先立って、本稿が先行研究として依拠する既刊各論を整理しておく。いずれも本論考シリーズの一編であり、それぞれが対象地の成り立ちを地形の側から記述している。<a href="/oishi-ronko/147/">田原地区の成り立ち（第147号）</a>は、磐田原台地の上部・台地縁の斜面と谷筋・崖下の低地という三層の重なりを扱い、集落が台地の縁と低地の微高地という「ちょうどよい高さ」に寄った論理を跡づけた。<a href="/oishi-ronko/149/">敷地川と谷の集落（第149号）</a>は、市北端の豊岡地区を谷底平野・河岸段丘・谷口という山あいの地形から読み解き、谷川用水と溜池による灌漑、谷底田・山畑・山林という垂直の土地利用を論じた。台地と、その台地に刻まれた谷という二つの各論が、磐田原台地の縁と谷の暮らしを描いている。</p>
+  <p>低地については三本の各論がある。<a href="/oishi-ronko/133/">天竜地区の成り立ち（第133号）</a>は、天竜川左岸の低地を自然堤防の微高地・後背湿地の低み・旧河道のくぼみという土地のかたちから読み直し、家を微高地に、田を後背湿地に置く住み分けを描いた。<a href="/oishi-ronko/169/">南部地区の生い立ち（第169号）</a>は、天竜・於保・長野という三つの旧村のまとまりを、「天竜川がつくった村」と「人が守った村」という二つの視点から整理し、低地と砂丘地にまたがる南部の重層を論じた。<a href="/oishi-ronko/178/">南御厨という生活圏（第178号）</a>は、台地縁から南へ下る低地を舞台に、田へ水を引き余水を逃がす水利の仕組みと、微高地に寄る集落の配置を描いた。さらに<a href="/oishi-ronko/273/">磐田の新田開発を総合する（第273号）</a>は、天竜川左岸の氾濫原と遠州灘沿岸の砂地という二つの開発地を横断した、それ自体がレビュー論考である。本稿は、この新田総論とは主題を分かちつつ、地形という切り口で各論を組み替える。</p>
+  <p>これら六本は、対象地も着眼点も異なるが、方法において一貫している。第一に、地形分類を地形図・治水地形分類図によって確認できる<strong>事実</strong>として押さえる<sup class="fnref" id="r1"><a href="#fn1">1</a></sup>。第二に、その地形から集落立地を導く<strong>推定</strong>を、断定ではなく作業仮説として提示する。第三に、地名の由来や集落の成立年代など裏づけを欠く事項を「未確認」と明記し、地域に語り継がれた事柄を<strong>伝承</strong>として区別する。この四層の腑分けと、「未確認」と「記載なし」の区別は、各論に共通する記述の作法であった<sup class="fnref" id="r2"><a href="#fn2">2</a></sup>。本稿はこの共通の方法を土台として引き継ぎ、六本の記述を四つの地形のもとに組み替える。</p>
+  <p>あらかじめ本稿で用いる四つの確度の層を確認しておく。<strong>史実</strong>は編纂物や地形図など資料によって確認できる事柄、<strong>通説</strong>は広く支持されるが一点で確定できない事柄、<strong>推定</strong>は根拠はあるが未確定の事柄、<strong>伝承</strong>は地域で語り継がれてきた事柄である。地形の存在そのものは地形図で確認できるため<strong>史実</strong>に近いが、その地形が集落立地をどう規定したかという因果は、多くの場合<strong>推定</strong>の層にとどまる。以下の検討では、この区別を語の水準で保ちながら、四地形を順に見ていく。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="六本の各論がどの地形を扱ったかを対応させた一覧図">
+        <rect x="12" y="14" width="616" height="272" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle" font-size="12">
+          <text x="130" y="52" font-size="13" class="svg-label">地形</text>
+          <text x="410" y="52" font-size="13" class="svg-label">先行研究（各論）</text>
+          <line x1="30" y1="62" x2="610" y2="62" stroke="#356f88" stroke-width="1.4"/>
+          <rect x="34" y="76" width="150" height="40" rx="8" fill="#eaf1e4" stroke="#6f9a4f" stroke-width="1.4"/><text x="109" y="101" fill="#3f6a2a">台地・縁・谷</text>
+          <text x="410" y="101" fill="#33424b">第147号（田原）／第149号（敷地川）</text>
+          <rect x="34" y="126" width="150" height="40" rx="8" fill="#eef3f6" stroke="#356f88" stroke-width="1.4"/><text x="109" y="151" fill="#1f4f6f">低地</text>
+          <text x="410" y="151" fill="#33424b">第133号（天竜）／第169号（南部）／第178号（南御厨）</text>
+          <rect x="34" y="176" width="150" height="40" rx="8" fill="#f4e8cf" stroke="#d28a41" stroke-width="1.4"/><text x="109" y="201" fill="#8a5a1f">砂丘</text>
+          <text x="410" y="201" fill="#33424b">第169号（長野）／第273号（新田総論）</text>
+          <rect x="34" y="226" width="150" height="40" rx="8" fill="#f6efe2" stroke="#c07a3a" stroke-width="1.4"/><text x="109" y="251" fill="#7a4a1a">河口</text>
+          <text x="410" y="251" fill="#7a3030">直接の各論は未確認（推定中心）</text>
+        </g>
+        <text x="320" y="34" text-anchor="middle" font-size="14" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">先行研究の配置 ── 各論と地形の対応</text>
+      </svg>
+    </div>
+    <figcaption>図2　先行研究の配置。台地と低地は複数の各論が厚く扱う一方、砂丘は部分的、太田川河口を主対象とする各論は本稿の調査範囲では未確認である。記述の厚みの偏りそのものが、以下の検討の前提となる。</figcaption>
+  </figure>
+
+  <h2 id="s3">3. 磐田原台地 ── 縁・谷・段丘に寄る暮らし</h2>
+  <p>四地形の第一は、市の西から北にかけて広がる磐田原台地である。台地は、天竜川と太田川に挟まれて南へ張り出す洪積台地で、上面は水はけがよく水害を避けやすい一方、生活用水を得るのが難しいという性格をもつ。この二面性が、台地上の暮らしを台地の縁へと押しやった。田原地区を扱った第147号は、台地の広い上面にも低地のただ中にも人は必ずしも住まず、水を得やすく浸水を避けやすい台地の縁と低地の微高地という「ちょうどよい高さ」に家々が寄り集まったと<strong>推定</strong>した。台地の縁は、上面の乾いた安全と、崖下の湧水や小河川の水とを同時に得られる境界であり、集落立地の条件が二重に重なる場所であった。</p>
+  <p>台地は一枚の平らな板ではない。その東縁には高低差を越える坂がいくつも刻まれ、なかでも三ヶ野坂は東海道の往来に関わる坂として古くから知られてきたとされる。坂は単なる高低差ではなく、人・物・情報・信仰が行き交う動線であり、坂の上り口・下り口は休息と交易の場として集落が育ちやすい場所であった。ここに、地形の縁という立地条件と、坂という交通の結節とが重なる。台地の暮らしは、水を得るための「縁」と、人が行き交うための「坂」という、二つの線が交わる地点に凝縮したと読むことができる。</p>
+  <p>台地に刻まれた谷もまた、独自の暮らしの舞台であった。市北端の豊岡地区を扱った第149号は、敷地川とその支谷が刻んだ谷底平野・河岸段丘・谷口という地形を所与の<strong>事実</strong>として押さえ、山あいの集落が谷口・谷底平野の縁・山すその緩斜面のいずれか、あるいはその組み合わせに立地したという作業仮説を提示した。ここでは天竜川のような大河から取水する平野の灌漑とは条件がまったく異なり、耕地を潤したのは敷地川本流と無数の支谷を流れる谷川の水、そして溜池であった。谷底に水田、段丘や山すその緩斜面に畑と屋敷、その上の山地に山林という垂直の土地利用は、限られた土地を余さず使い分けた結果である。</p>
+  <p>台地の縁と谷という二つの舞台に共通するのは、平らな上面そのものではなく、上面が低地や谷へ移り変わる「境界」に暮らしが寄ったという事実である。上面は乾きすぎ、低地は湿りすぎる。その中間の縁・段丘・谷口という微妙な高さの帯に、水と安全の均衡点があった。台地を論じることは、じつは台地そのものよりも、台地が終わる縁を論じることにほかならない。この「縁の論理」は、次に見る低地の「微高地の論理」と、地形は違えど同じ発想に立っている。人はつねに、水に近すぎず遠すぎない高さを探してきたのである。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="磐田原台地の上面・縁・谷・段丘・低地の断面を示した模式図">
+        <rect x="12" y="14" width="616" height="272" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <path d="M40 90 L250 90 L320 200 L360 200 L420 230 L600 230" fill="none" stroke="#6f9a4f" stroke-width="2.4"/>
+        <path d="M40 90 L250 90 L320 200 L360 200 L420 230 L600 230 L600 270 L40 270 Z" fill="#eef3ea" opacity="0.7"/>
+        <path d="M300 150 L330 200 L360 200 L345 150 Z" fill="#e2eef4" stroke="#356f88" stroke-width="1"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="11.5">
+          <text x="140" y="80" text-anchor="middle" class="svg-label">台地上面</text>
+          <text x="140" y="112" text-anchor="middle" class="svg-sub" font-size="10">乾く・畑・山林</text>
+          <circle cx="270" cy="96" r="5" fill="#b85b5b"/><text x="270" y="70" text-anchor="middle" class="svg-label" font-size="10.5">縁に集落</text>
+          <text x="330" y="235" text-anchor="middle" class="svg-sub" font-size="10">谷／段丘</text>
+          <circle cx="345" cy="196" r="5" fill="#b85b5b"/>
+          <text x="510" y="220" text-anchor="middle" class="svg-label">低地</text>
+          <text x="510" y="255" text-anchor="middle" class="svg-sub" font-size="10">水田</text>
+          <circle cx="430" cy="226" r="5" fill="#b85b5b"/><text x="430" y="255" text-anchor="middle" font-size="10" class="svg-sub">微高地に家</text>
+        </g>
+        <text x="320" y="34" text-anchor="middle" font-size="14" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">台地の断面 ── 縁・谷・段丘に寄る暮らし</text>
+        <text x="320" y="285" text-anchor="middle" font-size="10.5" class="svg-sub" font-family="'Zen Kaku Gothic New',sans-serif">赤点は集落。乾いた上面と湿った低地の中間、境界の高さに家が寄る。</text>
+      </svg>
+    </div>
+    <figcaption>図3　磐田原台地の断面（模式図）。集落は平らな上面でも低地の中心でもなく、台地の縁・谷口・段丘という境界の高さに寄る。第147号・第149号の記述を断面として重ねた。</figcaption>
+  </figure>
+
+  <h2 id="s4">4. 天竜川下流の低地 ── 自然堤防・後背湿地・旧河道</h2>
+  <p>四地形の第二は、天竜川下流に広がる低地である。この低地を最も端的に描いたのが、天竜地区を扱った第133号であった。天竜川のような大きな川の沿岸では、土地はおおむね三つの単位に分けて理解できる。川が増水のたびに運んだ砂が流路の両側に積もってできた、まわりよりわずかに高い自然堤防。その背後に細かい泥がたまり水の抜けにくい後背湿地。そしてかつて川が流れていた跡が帯状のくぼ地として残る旧河道である。いずれも数メートル、ときに数十センチという微妙な高低差にすぎないが、その微妙な差が低地に生きる人々の暮らしの土台を決めてきた。</p>
+  <p>この土地のかたちに対する人々の答えは明快であった。第133号は、自然堤防の微高地に家を寄せ、後背湿地の低みを田に充て、旧河道の弱い土地を避けるという住み分けを<strong>推定</strong>として描いた。水が得られなければ田はつくれず、水に近づきすぎれば増水や湛水の影響を受ける。この相反する要請に対する現実的な答えが、「水から近すぎず遠すぎない」位置に集落を置くことであった。信仰の場もまた、しばしば微高地など水に浸かりにくい場所に据えられ、人々が集まる目印となり、心理的にも社会的にも一種の安全装置として機能してきたと考えられる。恵みとリスクがいずれも同じ天竜川に由来するという条件が、低地の暮らしを貫いている。</p>
+  <p>南部地区を扱った第169号は、この低地を「天竜川がつくった村」と「人が守った村」という二つの視点から整理した。天竜川はたびたび河道を変え、そのたびに古い村が水に沈み新しい中州が田畑へ変わった。豊島・北島・新島・長須賀・刑部島といった「島」を含む地名群は、川がつくり川が奪う土地の性格を映している。だが、自然が用意した砂州・自然堤防・後背湿地を安定した集落と農地へ変えたのは、堤防・排水・用水、そして潮風と砂を防ぐ防風松林という人の営みであった。地形は舞台を用意したにすぎず、その舞台を村へと変えたのは共同体の治水であったという二重の視点は、低地を読むうえで欠かせない。</p>
+  <p>南御厨を扱った第178号は、低地の水利をさらに具体的に描いた。台地縁から南へ下る低地に田を開くには、田が水を必要とするときに確実に引き入れることと、雨が続いて過剰になったときに速やかに逃がすこと、相反する二つの課題を同時に解かねばならない。引く水と逃がす水、その両方の仕組みが噛み合ってはじめて、低地は扱いにくい湿地から安定した水田地帯へ変わる。ここでも集落は自然堤防の名残など微高地に寄り、家を高まりに田を低みに置くという住み分けが繰り返された<sup class="fnref" id="r3"><a href="#fn3">3</a></sup>。三本の各論が別々の地域を扱いながら同じ構図に行き着いたことは、この構図が低地農村に共通する<strong>通説</strong>的な理であることを示している。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="自然堤防の微高地に家、後背湿地に水田、旧河道のくぼみを示す低地の断面図">
+        <rect x="12" y="14" width="616" height="272" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <path d="M40 210 Q110 150 180 210 Q250 150 320 210 L360 235 Q420 150 480 210 Q550 235 600 210" fill="none" stroke="#356f88" stroke-width="2.2"/>
+        <path d="M40 210 Q110 150 180 210 Q250 150 320 210 L360 235 Q420 150 480 210 Q550 235 600 210 L600 265 L40 265 Z" fill="#eaf1f5" opacity="0.75"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="11">
+          <circle cx="145" cy="168" r="5" fill="#b85b5b"/><text x="145" y="150" text-anchor="middle" class="svg-label" font-size="10.5">家</text>
+          <text x="145" y="200" text-anchor="middle" class="svg-sub" font-size="10">自然堤防</text>
+          <text x="250" y="205" text-anchor="middle" class="svg-sub" font-size="10">後背湿地</text>
+          <text x="250" y="225" text-anchor="middle" class="svg-label" font-size="10.5">水田</text>
+          <circle cx="415" cy="168" r="5" fill="#b85b5b"/><text x="415" y="150" text-anchor="middle" class="svg-label" font-size="10.5">家</text>
+          <text x="415" y="200" text-anchor="middle" class="svg-sub" font-size="10">自然堤防</text>
+          <text x="360" y="252" text-anchor="middle" fill="#7a3030" font-size="10">旧河道（避ける）</text>
+        </g>
+        <text x="320" y="34" text-anchor="middle" font-size="14" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">低地の断面 ── 微高地に家・低みに田</text>
+        <text x="320" y="284" text-anchor="middle" font-size="10.5" class="svg-sub" font-family="'Zen Kaku Gothic New',sans-serif">数十センチの高低差が住む場所と田にする場所を分ける。</text>
+      </svg>
+    </div>
+    <figcaption>図4　天竜川下流低地の断面（模式図）。家は自然堤防の微高地に、水田は後背湿地の低みに置かれ、旧河道の弱い土地は避けられた。第133号・第169号・第178号の共通の構図を一枚に重ねた。</figcaption>
+  </figure>
+
+  <h2 id="s5">5. 遠州灘の砂丘 ── 砂と潮風を克服した村</h2>
+  <p>四地形の第三は、遠州灘に沿って東西に延びる砂丘である。天竜川が運び出した膨大な砂が、沿岸流と季節風によって岸へ打ち上げられ、長い年月をかけて列状の砂の高まりを築いた。砂丘は微高地であるという点では自然堤防と似るが、その素材は水はけの良すぎる砂であり、塩を含む潮風にさらされる点で低地とは条件が根本的に異なる。ここでの暮らしは、砂と塩と風という三つの障害を克服することから始まった。</p>
+  <p>南部地区を扱った第169号は、長野村を構成した集落のうち、鮫島・小島のように砂丘地の開拓史をもつ土地に触れている。砂丘上では飲み水の確保が難しく、作物は潮風に痛めつけられる。この土地を耕地へ変えるには、潮風と飛砂を防ぐ防風松林を海側に育て、その内側にわずかな畑と集落を営むという、粘り強い手当てが必要であった<sup class="fnref" id="r4"><a href="#fn4">4</a></sup>。防風林は単なる風よけではなく、砂の移動を止めて土地を固定し、その背後にはじめて安定した生活の場を成立させる、いわば人がつくった第二の地形であった。海沿いの村が松林とともに語られるのは、松林こそが村を村たらしめた前提だったからである。</p>
+  <p>砂丘の開発は、新田開発の総論である第273号がより広い視野から扱っている。同稿は磐田の新田開発を、天竜川左岸の氾濫原と遠州灘沿岸の砂地・河口低湿地という二つの対照的な舞台に分けた。前者が川がつくった微高地に取りついて堤と用水で広げる開発であったのに対し、後者は砂と塩を潮除堤と井路で克服する干拓であったという。同じ「新田」でも、水を制御して広げる低地の開発と、砂と塩を防いで拓く海辺の開発とでは、作法がまったく異なる。砂丘の村は、微高地であるがゆえの水の乏しさと、海に面するがゆえの塩の害という、低地とは正反対の困難に向き合ってきた。</p>
+  <p>砂丘の土地利用は、低地とはちょうど裏返しの関係にある。低地では水が集まりすぎることが問題であり、家を高みへ逃がし田を低みへ置いた。砂丘では逆に水が抜けすぎることが問題であり、わずかに低く水の得やすい列間の窪地に耕地を求め、飲み水は掘り抜きの井戸に頼った。砂丘列と列の間の細長い低みは、飛砂をよけつつ水気を保つ数少ない耕地適地であり、村はこの高低のわずかな差を読み分けて営まれた。低地が「高きに住み低きに耕す」土地であったのに対し、砂丘は「風下の窪みに水と作物を探す」土地であった点に、同じ微高地でありながら砂丘に固有の作法がある。</p>
+  <p>ここで確度について一言しておく。砂丘そのものの存在と、防風松林が海沿いに広がってきたことは地形図と現地で確認できる<strong>事実</strong>および<strong>推定</strong>の層にあるが、個々の海辺集落の開発年代や請負の主体を直接記す一次史料は、第273号も指摘するとおり、いずれの新田でも「未確認」にとどまりやすい。これは「そうした記録が存在しないと断定できる（＝記載なし）」こととは異なり、「管見の限り一次史料に突き当たっていない（＝未確認）」という状態である。砂丘の村を論じるときも、地形の事実と開発の未確認とを混同しない姿勢が求められる。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="遠州灘の砂丘列・防風松林・列間の窪地の畑と集落・海を示した断面図">
+        <defs>
+          <linearGradient id="f5sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dcecf3"/><stop offset="1" stop-color="#a9cddc"/></linearGradient>
+        </defs>
+        <rect x="12" y="14" width="616" height="252" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <path d="M40 180 Q120 120 200 180 Q280 130 360 180 Q440 120 520 180 L560 180" fill="none" stroke="#c07a3a" stroke-width="2.2"/>
+        <path d="M40 180 Q120 120 200 180 Q280 130 360 180 Q440 120 520 180 L560 180 L560 245 L40 245 Z" fill="#f4ead6" opacity="0.7"/>
+        <rect x="560" y="180" width="60" height="65" fill="url(#f5sea)"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="11">
+          <text x="120" y="150" text-anchor="middle" class="svg-sub" font-size="10">防風松林</text>
+          <path d="M118 158 L118 138 M112 148 L118 138 L124 148" stroke="#3f6a2a" stroke-width="1.6" fill="none"/>
+          <text x="200" y="200" text-anchor="middle" class="svg-label" font-size="10">列間の畑</text>
+          <circle cx="285" cy="150" r="5" fill="#b85b5b"/><text x="285" y="135" text-anchor="middle" class="svg-label" font-size="10">砂丘に家</text>
+          <text x="360" y="200" text-anchor="middle" class="svg-sub" font-size="10">窪地に水</text>
+          <text x="590" y="215" text-anchor="middle" fill="#2f7fa3" font-size="10">遠州灘</text>
+        </g>
+        <text x="320" y="34" text-anchor="middle" font-size="14" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">砂丘の断面 ── 砂と潮風を克服した村</text>
+        <text x="320" y="262" text-anchor="middle" font-size="10.5" class="svg-sub" font-family="'Zen Kaku Gothic New',sans-serif">海側の防風松林が砂を止め、その内側の列間の窪みに畑と集落が営まれる。</text>
+      </svg>
+    </div>
+    <figcaption>図5　遠州灘砂丘の断面（模式図）。海側に育てた防風松林が飛砂と潮風を止め、砂丘列の間の水気を保つ窪地に畑と集落が営まれた。第169号・第273号の記述を断面として重ねた。</figcaption>
+  </figure>
+
+  <h2 id="s6">6. 太田川の河口 ── 最も記録の薄い地形</h2>
+  <p>四地形の第四は、市域の東を限る太田川の河口低地である。太田川は磐田原台地の東側を南流し、遠州灘へ注ぐ。その河口周辺には、川が運んだ土砂と海の砂とが入り混じった低湿地が広がる。天竜川下流の低地や遠州灘の砂丘と地形の性格は連続しているが、太田川河口を主対象として正面から論じた各論は、本稿の調査範囲では<strong>未確認</strong>である。四つの地形のうち、記述が最も薄いのがこの河口低地であり、その薄さ自体を本稿は記録しておきたい。</p>
+  <p>記述が薄いことには理由がある。太田川河口の低地は、天竜川という大河のつくった平野の陰に置かれ、また台地と砂丘という際立った地形に挟まれて、独立した対象として立てられにくかった。しかし地形の理から言えば、河口低地には河川がつくった自然堤防と、海がつくった砂州・砂丘とが交わり、その内側に後背湿地が広がるという、これまで見た三地形の要素が凝縮して現れると<strong>推定</strong>される。家は自然堤防や砂丘の微高地に寄り、田は後背湿地の低みに開かれ、河口に近い土地では塩の害と洪水の双方に備えるという、低地と砂丘の論理が重ね合わされた暮らしがあったと考えるのが、地形からの穏当な読みである<sup class="fnref" id="r5"><a href="#fn5">5</a></sup>。</p>
+  <p>ただしこれはあくまで地形からの推定であって、太田川河口の集落がいつ成立し、地名が何に由来するかを直接記す一次史料に本稿が突き当たっているわけではない。ここでも「未確認」と「記載なし」を厳しく区別する。太田川河口を主題とする各論が未確認であることは、その土地に記録すべき歴史がないことを意味しない。むしろ、四地形のうち一つが手薄なまま残されているという事実は、本論考シリーズがこれから埋めるべき空白を指し示している。地形の総合を試みるとき、埋まっている部分だけでなく、埋まっていない部分の輪郭を明示することもまた、総合の仕事の一部である。</p>
+
+  <h2 id="s7">7. 四地形の比較と土地利用の対応</h2>
+  <p>ここまで四つの地形を順に見てきた。それぞれは異なる素材と条件をもつが、比較の表に並べると、地形の別が集落・生業・地名の別とどう対応するかが一望できる。以下の比較表は、四地形を立地・生業・地名・依拠する各論という同じ観点で並べ、特定の地形を優位に置く書式を避け、各行の情報量をそろえることを心がけた。読者が四地形の差異と共通性を自ら判断できる状態をつくることが、この表の目的である。</p>
+
+  <div class="table-wrap">
+    <table class="academic-table">
+      <caption>表1　磐田の四地形と集落・生業・地名の対応 ── 立地・土地利用・地名・先行研究・確度</caption>
+      <thead><tr><th>地形</th><th>集落の立地</th><th>主な生業・土地利用</th><th>地名に映るもの</th><th>依拠する各論</th></tr></thead>
+      <tbody>
+        <tr><td>磐田原台地（縁・谷・段丘）</td><td>台地の縁、谷口、段丘の緩斜面という境界の高さ。</td><td>上面は畑・山林、谷底は水田、溜池と谷川で灌漑。</td><td>坂・谷・原など地形と道を映す語（推定）。</td><td>第147号（田原）・第149号（敷地川）</td></tr>
+        <tr><td>天竜川下流の低地</td><td>自然堤防の微高地に家、旧河道は避ける。</td><td>後背湿地に水田、堤防・用水・排水で治水。</td><td>「島」など川がつくる土地を映す語（推定〜伝承）。</td><td>第133号（天竜）・第169号（南部）・第178号（南御厨）</td></tr>
+        <tr><td>遠州灘の砂丘</td><td>砂丘上の微高地、防風松林の内側。</td><td>畑作中心、潮除堤と井路による干拓。</td><td>「島」「新田」など開発を映す語（推定〜未確認）。</td><td>第169号（長野）・第273号（新田総論）</td></tr>
+        <tr><td>太田川の河口</td><td>自然堤防・砂丘の微高地（推定）。</td><td>後背湿地に水田、塩害と洪水に備える（推定）。</td><td>直接の検討は未確認。</td><td>主対象の各論は未確認</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>この表から見えてくるのは、四地形が競合する別々の世界なのではなく、一つの原理の異なる現れだという事実である。台地では縁に、低地では自然堤防に、砂丘では防風林の内側に、河口では推定される微高地に、いずれも「水に近すぎず遠すぎない、周囲よりわずかに高い場所」に集落が寄っている。生業の側も同じ論理で、田はつねに集落より低い水の集まる場所へ、畑や屋敷はより高い乾いた場所へと配された。地形の素材は台地の礫層から砂丘の砂まで大きく異なるのに、人がそこから引き出した土地利用の原則は驚くほど一貫している。</p>
+  <p>史料批判の観点からは、四地形に共通の限界が課される。地形分類そのものは地形図で確認できる<strong>事実</strong>だが、集落がなぜその場所に立地したかという因果、そして地名が何に由来するかという語源は、いずれも直接記す一次史料に突き当たりにくく、多くが<strong>推定</strong>ないし<strong>未確認</strong>の層にとどまる。この限界は四地形に等しく課されるのだから、それを理由に特定の地形の記述だけを軽んじることはできない。むしろ問うべきは、どの事項がどの確度の層にあり、その層の資料がどこまでを語りうるか、という点である。</p>
+  <p>あわせて、地名由来の扱いには各論共通の戒めがある。「島」や「新田」といった地名を、その語構成だけから土地の成り立ちへ直結させてはならない、という戒めである。「島」を含む地名は川の中州に由来する場合が多いと<strong>推定</strong>されるが、別の由来をもつ例も否定できない以上、語構成は手がかりであって証明ではない。地名は土地の記憶を読む貴重な手がかりだが、それを史実の証拠に格上げすることは、確度の層を踏み越える誤りにつながる。四地形を横断してもなお、この地名の慎重な扱いは一貫して保たれねばならない。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 660 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="台地から低地・砂丘を経て海に至る地形と土地利用の対応を示した総合断面図">
+        <defs>
+          <linearGradient id="f6sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dcecf3"/><stop offset="1" stop-color="#a9cddc"/></linearGradient>
+        </defs>
+        <rect x="12" y="14" width="636" height="292" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <path d="M40 110 L150 110 L210 200 Q260 190 300 210 Q360 175 420 210 Q470 195 500 205 L540 175 L600 205 L630 205" fill="none" stroke="#7a6a4a" stroke-width="2.2"/>
+        <path d="M40 110 L150 110 L210 200 Q260 190 300 210 Q360 175 420 210 Q470 195 500 205 L540 175 L600 205 L630 205 L630 285 L40 285 Z" fill="#efeadf" opacity="0.6"/>
+        <rect x="600" y="205" width="40" height="80" fill="url(#f6sea)"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="10.5">
+          <text x="95" y="100" text-anchor="middle" class="svg-sub">台地上面</text>
+          <text x="95" y="130" text-anchor="middle" class="svg-label" font-size="10">畑・山林</text>
+          <circle cx="185" cy="150" r="5" fill="#b85b5b"/><text x="185" y="135" text-anchor="middle" class="svg-label" font-size="10">縁に家</text>
+          <text x="270" y="228" text-anchor="middle" class="svg-label" font-size="10">水田</text>
+          <text x="270" y="245" text-anchor="middle" class="svg-sub" font-size="9.5">後背湿地</text>
+          <circle cx="360" cy="182" r="5" fill="#b85b5b"/><text x="360" y="167" text-anchor="middle" class="svg-label" font-size="10">自然堤防に家</text>
+          <text x="450" y="230" text-anchor="middle" class="svg-label" font-size="10">水田</text>
+          <circle cx="540" cy="168" r="5" fill="#b85b5b"/><text x="540" y="153" text-anchor="middle" class="svg-label" font-size="10">砂丘に家</text>
+          <text x="540" y="196" text-anchor="middle" class="svg-sub" font-size="9.5">防風林・畑</text>
+          <text x="620" y="255" text-anchor="middle" fill="#2f7fa3" font-size="10">遠州灘</text>
+        </g>
+        <text x="90" y="300" text-anchor="middle" font-size="9.5" class="svg-sub" font-family="'Zen Kaku Gothic New',sans-serif">← 台地（西・北）</text>
+        <text x="600" y="300" text-anchor="middle" font-size="9.5" class="svg-sub" font-family="'Zen Kaku Gothic New',sans-serif">海（南）→</text>
+        <text x="330" y="34" text-anchor="middle" font-size="14" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">地形と土地利用の対応 ── 総合断面</text>
+        <text x="330" y="52" text-anchor="middle" font-size="10.5" class="svg-sub" font-family="'Zen Kaku Gothic New',sans-serif">赤点はいずれも「周囲よりわずかに高い場所」に置かれた集落。</text>
+      </svg>
+    </div>
+    <figcaption>図6　地形と土地利用の対応（総合断面・模式図）。台地の縁、自然堤防の微高地、砂丘の高まりという素材の異なる高所に一貫して集落が寄り、水田はつねにその下の低みに開かれる。四地形を一本の断面へ束ねた本稿の中心図である。</figcaption>
+  </figure>
+
+  <h2 id="s8">8. 背景と本稿の立場 ── 微高地に集落・低地に水田</h2>
+  <p>四地形を貫いて現れたのは、「家を周囲よりわずかに高い場所に、田をその下の低みに置く」という土地利用の対応であった。この対応は、地形学・歴史地理学が低地集落について広く指摘してきた<strong>通説</strong>とも合致する。人が水を必要とし、同時に水を恐れるという二重の関係に置かれる以上、水に近すぎず遠すぎない高さを選ぶことは、地形を問わず現れる合理的な選択である。磐田の四地形は、この普遍的な選択が、台地の縁・自然堤防・砂丘・河口という別々の素材のうえで、それぞれの姿をとって具体化したものと読める。</p>
+  <p>この土地利用を可能にしたのは、地形という自然の条件だけではない。第169号が「人が守った村」という視点で描いたように、堤防・用水・排水・防風林・溜池といった人の営みが幾重にも加えられて、はじめて自然の舞台は安定した集落と農地へ変わった。地形は暮らしの下敷きを用意したが、その下敷きを暮らしへと編み上げたのは、水を引き、水を逃がし、砂を止め、風を防いだ共同体の労働であった。地形決定論に傾いて人の営みを見落とすことは、この歴史を半分しか見ないことになる。地形と人為は、対立するのではなく積み重なる関係にある。</p>
+  <p>ここで本稿の立場を明示しておく。本稿は、四地形のいずれかを磐田の「本質」として特権化する見方をとらない。台地こそ磐田の骨格だとする見方も、天竜川の低地こそ磐田の母胎だとする見方も、それぞれ一面の真をつくが、一つの地形へ還元すれば他の三地形が視野から抜け落ちる。<strong>本稿の立場は、磐田を四つの地形の重なりとして読み、そのいずれをも欠かさずに、地形と暮らしの対応を確度の層を保ったまま記述することにある。</strong>単一の中心を欠くことを空白とみるのではなく、性格の異なる四地形が並び立つ重層として磐田を読み直すこと──これが六本の各論を横断して本稿が引き出す姿勢である。</p>
+
+  <h2 id="s9">9. 結論 ── 地形から磐田を総合する</h2>
+  <p>本稿は、磐田原台地・天竜川下流の低地・遠州灘の砂丘・太田川の河口という四つの地形を扱った既刊各論を先行研究として横断し、地形が集落・生業・地名をどう規定したかを総合してきた。得られた見取り図は次のとおりである。台地では乾いた上面と湿った低地の中間、縁と谷という境界の高さに暮らしが寄った。低地では自然堤防の微高地に家が、後背湿地の低みに田が置かれ、旧河道は避けられた。砂丘では防風松林の内側に、砂と塩を克服した列状の村が営まれた。河口は四地形のうち記述が最も薄く、地形からの推定にとどまる空白として残された。</p>
+  <p>四地形を貫いて現れたのは、「微高地に集落・低地に水田」という一貫した土地利用の対応である。素材は台地の礫から砂丘の砂まで大きく異なるのに、人がそこから引き出した原則は変わらなかった。水に近すぎず遠すぎない高さを探すという選択が、地形ごとに縁・自然堤防・砂丘の高まりという別々の姿をとって現れた。そしてその選択を安定した暮らしへ編み上げたのは、堤防・用水・排水・防風林という共同体の営みであった。地形は舞台を用意し、人為がそれを村へと変えた。</p>
+  <p>方法の面で、本稿は各論に共通する四層の腑分けを引き継ぎ、地形分類を<strong>史実</strong>ないし<strong>推定</strong>として、集落立地の因果を<strong>推定</strong>として、地名由来を<strong>推定</strong>ないし<strong>伝承</strong>として区別し、「未確認」と「記載なし」を一貫して分けてきた。この禁欲的な手続きこそが、地形と暮らしの対応を後世の調べものに耐える形で残す方途である。最後に、本稿が残した課題を明記しておく。第一に、太田川河口を主題とする各論はなお未確認の空白であり、河口低地の集落と地名を正面から扱う稿が求められる。第二に、四地形の境界──台地縁と低地が接する崖下、低地と砂丘が接する海辺──は、二つの論理が重なる興味深い帯であり、稿を改めて論じるに値する。地形の総合は、埋まった部分をつなぐと同時に、埋まっていない空白の輪郭を描く作業でもある。四つの地形を一枚の見取り図に束ねた先に、磐田という土地の全体像が少しずつ像を結んでいくはずである。</p>
+
+  <div class="cta-note">
+    本稿が扱った台地の縁にも、天竜川の低地にも、遠州灘の砂丘の村にも、地形とともに受け継がれてきた古い家や土地が数多く残る。筆者は磐田・袋井で不動産と介護の実務に携わる立場から、こうした土地の記憶にも向き合ってきた。<a href="https://fudosan.atawi.link/jikka/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=oishi_ronko" target="_blank" rel="noopener">家・土地・空き家の整理について相談する</a>ことができる。地形と暮らしの対応を書き留めることと、その舞台となった土地を次の世代へ手渡すことは、地続きの営みだと考えている。
+  </div>
+
+  <section class="notes" aria-label="注">
+    <h2>注</h2>
+    <ol class="fn-list">
+      <li id="fn1">地形分類は、国土地理院「地理院地図」の標高段彩および「治水地形分類図」により、自然堤防・後背湿地・旧河道・台地・段丘などの区分として読み取ることができる。これらは公的資料に基づく確認であり、地形の存在そのものは史実に近い確度で扱える。<a href="#r1" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn2">本論考シリーズの各論（第133・147・149・169・178・273号）は、いずれも史実・通説・推定・伝承の四層を語の水準で区別し、「未確認」（一次史料に突き当たっていない）と「記載なし」（史料に無い）を分ける方法を共有している。本稿はこの共通の作法を先行研究から引き継ぐ。<a href="#r2" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn3">家を微高地に、田を低みに置くという住み分けは、低地農村に広く見られる合理的な選択であり、地形学・歴史地理学の一般的枠組みとも合致する。個々の集落の立地が現にこの原則に従うかは、現地確認と資料照合を要する推定にとどまる。<a href="#r3" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn4">遠州灘沿岸の防風松林は、飛砂と潮風を防いで砂の移動を止め、その内側に耕地と集落を成立させる役割を担ってきたと考えられる。松林の造成年代や範囲の変遷を個別に記す一次史料は、本稿の範囲では未確認である。<a href="#r4" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn5">太田川河口低地の集落立地・地名由来を主対象として直接扱った各論・一次史料は、本稿の調査範囲では未確認である。本文の河口に関する記述は、地形の一般的な理からの推定であり、史実として提示するものではない。<a href="#r5" aria-label="本文へ戻る">&#8617;</a></li>
+    </ol>
+    <p class="fn-editorial" style="font-family:'Zen Kaku Gothic New',sans-serif;font-size:12.5px;color:var(--sub);text-indent:0;margin-top:14px;line-height:1.85;">付記：本稿は本論考シリーズの既刊各論（第133・147・149・169・178・273号）を先行研究として横断・整理した総合論考であり、新規の一次史料を提示するものではない。地形分類を史実ないし推定、集落立地の因果を推定、地名由来を推定ないし伝承として腑分けし、四地形のうち太田川河口については記述が未確認にとどまることを明記した。</p>
+  </section>
+
+  <section class="references" aria-label="参考文献">
+    <h2>参考文献・参考資料</h2>
+    <ul class="refs">
+      <li>大石浩之「田原地区の成り立ち ── 台地・旧道・田園が編んだ磐田東部」大石浩之の磐田論考 第147号、磐田物語、2026年　https://iwata-monogatari.net/oishi-ronko/147/　（最終閲覧：2026年7月26日）。</li>
+      <li>大石浩之「敷地川と谷の集落 ── 山あいの水が編んだ豊岡の暮らし」大石浩之の磐田論考 第149号、磐田物語、2026年　https://iwata-monogatari.net/oishi-ronko/149/　（最終閲覧：2026年7月26日）。</li>
+      <li>大石浩之「天竜地区の成り立ち ── 川と低地がつくった暮らしの記憶」大石浩之の磐田論考 第133号、磐田物語、2026年　https://iwata-monogatari.net/oishi-ronko/133/　（最終閲覧：2026年7月26日）。</li>
+      <li>大石浩之「南部地区の生い立ち ── 天竜川がつくった村、人が守った村」大石浩之の磐田論考 第169号、磐田物語、2026年　https://iwata-monogatari.net/oishi-ronko/169/　（最終閲覧：2026年7月26日）。</li>
+      <li>大石浩之「南御厨という生活圏 ── 低地・農地・水路がつくった独立の村」大石浩之の磐田論考 第178号、磐田物語、2026年　https://iwata-monogatari.net/oishi-ronko/178/　（最終閲覧：2026年7月26日）。</li>
+      <li>大石浩之「磐田の新田開発を総合する ── 天竜川と遠州灘が生んだ村々」大石浩之の磐田論考 第273号、磐田物語、2026年　https://iwata-monogatari.net/oishi-ronko/273/　（最終閲覧：2026年7月26日）。</li>
+      <li>国土地理院「地理院地図（電子国土Web）」　https://maps.gsi.go.jp/　（最終閲覧：2026年7月26日）。</li>
+      <li>国土地理院「治水地形分類図」　https://www.gsi.go.jp/bousaichiri/ftiho.html　（最終閲覧：2026年7月26日）。</li>
+      <li>磐田市『磐田市史』通史編（磐田市、該当章）。</li>
+      <li>磐田市『磐田市都市計画マスタープラン』地域別構想（磐田市）。</li>
+      <li>米倉伸之・貝塚爽平・野上道男・鎮西清高編『日本の地形』（東京大学出版会、2001年）中部・低地の章。</li>
+      <li>静岡県『静岡県史』資料編・通史編のうち天竜川・太田川水系に関わる章。</li>
+      <li>佐口行正氏所蔵史料（磐田物語 佐口史料室）。</li>
+    </ul>
+  </section>
+
+  <div class="pager">
+    <a href="https://iwata-monogatari.net/oishi-ronko/">← 大石浩之の磐田論考 一覧へ</a>
+    <a href="https://iwata-monogatari.net/oishi-ronko/273/">関連各論（第273号 磐田の新田開発を総合する）を読む →</a>
+  </div>
+  </article>
+</main>
+
+<footer class="im-foot">
+  <style>
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand:hover{text-decoration:none;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
+  </style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。本論考は個人の調査・覚え書きをもとに、確度の層を区別しながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://oishi-hiroyuki.org/" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+      </ul>
+    </div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+  </div>
+</footer>
+</body>
+</html>
