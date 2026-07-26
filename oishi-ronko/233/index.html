@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>渡船経済のしくみ ── 船賃の分配・船勧進・堤防修理の経済史｜大石浩之の磐田論考｜磐田物語</title>
+<meta name="description" content="天竜川池田の渡船を、船賃の分配・船勧進物・堤防修理費という金の流れから読む経済史。船名敷という持分による収益分配、遠江国中から集める勧進の徴収権、天保11年勘定辻調帳の収支、天保9年洪水後の仙台藩救済を、勘定帳・勧進帳という近世経済史料の性格に留意して史料批判的に検討する。">
+<meta property="og:title" content="渡船経済のしくみ ── 船賃の分配・船勧進・堤防修理の経済史｜大石浩之の磐田論考">
+<meta property="og:description" content="渡船を単なる交通ではなく、船頭・村・領主のあいだで金が循環する経済システムとして読む郷土史論考。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://iwata-monogatari.net/oishi-ronko/233/">
+<meta property="og:locale" content="ja_JP">
+<meta name="iwata:title" content="渡船経済のしくみ">
+<meta name="iwata:published" content="2026-07-26">
+<meta name="iwata:category" content="豊田・論考">
+<meta name="iwata:new-article" content="1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#20292e;--accent:#2f6079;--accent2:#356f88;--sub:#586873;--rule:#c8d5dc;--rule2:#dfe8ec;--paper:#fffdf8;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Shippori Mincho",serif;color:var(--ink);background:var(--paper);line-height:2.0;font-size:16.5px;-webkit-font-smoothing:antialiased;text-align:justify;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .gothic{font-family:"Zen Kaku Gothic New",sans-serif;}
+  main{max-width:720px;margin:0 auto;padding:0 24px 40px;}
+  .crumb{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--sub);padding:18px 0 4px;text-align:left;letter-spacing:.02em;}
+  .crumb a{color:var(--sub);}
+  /* ===== 論文タイトル・ヘッダー ===== */
+  .kiyo-hero{text-align:center;padding:26px 0 0;margin:6px 0 0;border:0;background:none;box-shadow:none;}
+  .kiyo-journal{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--accent);font-weight:700;letter-spacing:.22em;margin:0 0 6px;}
+  .kiyo-series{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.08em;margin:0 0 22px;}
+  .kiyo-hero h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:27px;line-height:1.6;color:var(--ink);margin:0 auto 12px;letter-spacing:.02em;max-width:22em;}
+  .kiyo-subtitle{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--accent2);margin:0 0 24px;line-height:1.7;}
+  .kiyo-author{font-size:16.5px;color:var(--ink);margin:0 0 3px;letter-spacing:.04em;}
+  .kiyo-author sup{font-size:10px;}
+  .kiyo-affil{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);margin:0 0 20px;}
+  .kiyo-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;margin-top:6px;font-family:"Zen Kaku Gothic New",sans-serif;}
+  .kiyo-meta div{font-size:12.5px;}
+  .kiyo-meta dt{display:inline;color:var(--sub);font-weight:500;}
+  .kiyo-meta dd{display:inline;color:var(--ink);margin-left:6px;font-weight:700;}
+  /* ===== 要旨・キーワード ===== */
+  .abstract{border-top:none;padding:6px 0 0;margin:30px 0 0;}
+  .abstract h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--accent);letter-spacing:.28em;text-align:center;font-weight:700;}
+  .abstract p{font-size:15px;margin:0;color:#33424b;line-height:1.95;padding:16px 22px;border:1px solid var(--rule2);background:#fbfdfe;border-radius:2px;}
+  .keywords{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;color:var(--sub);margin:14px 0 0;padding-bottom:16px;border-bottom:1px solid var(--rule);text-align:left;line-height:1.8;}
+  .keywords strong{color:var(--accent);}
+  /* ===== 目次 ===== */
+  .toc{margin:26px 0;padding:14px 0;border-top:1px solid var(--rule2);border-bottom:1px solid var(--rule2);}
+  .toc h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.2em;text-align:center;}
+  .toc ol{margin:0 auto;max-width:30em;padding-left:1.6em;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:var(--ink);text-align:left;}
+  .toc li{margin:6px 0;line-height:1.7;}
+  .toc a{color:var(--ink);}
+  /* ===== 見出し ===== */
+  h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;color:var(--ink);margin:48px 0 18px;padding-bottom:8px;border-bottom:1.5px solid var(--accent2);letter-spacing:.02em;text-align:left;}
+  h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16.5px;color:var(--accent2);margin:30px 0 10px;text-align:left;}
+  p{margin:0 0 16px;text-indent:1em;}
+  .abstract p,.keywords,.verdict,figcaption,.cta-note,.refs li,.fn-list li,.pager,.crumb{text-indent:0;}
+  /* ===== 学説節（論文体） ===== */
+  .setsu{background:none;border:0;border-radius:0;padding:0;margin:22px 0;}
+  .setsu-tag{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:11.5px;font-weight:700;color:var(--accent);background:none;padding:0;margin:22px 0 2px;letter-spacing:.12em;}
+  .setsu-tag.denshou{color:var(--accent2);}
+  .setsu h3{font-family:"Shippori Mincho",serif;font-size:17.5px;color:var(--ink);margin:2px 0 12px;border-bottom:1px dotted var(--rule);padding-bottom:8px;}
+  .setsu p{margin:0 0 14px;font-size:16px;text-indent:1em;}
+  .verdict{font-size:14.5px;color:#33424b;background:none;border-left:3px solid var(--accent2);border-radius:0;padding:2px 0 2px 16px;margin:14px 0 0;line-height:1.85;}
+  .verdict strong{color:var(--accent2);}
+  /* ===== 図版 ===== */
+  figure{margin:32px 0;}
+  .fig-box{background:#fff;border:1px solid var(--rule);border-radius:2px;padding:20px 16px;text-align:center;}
+  figcaption{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-top:10px;line-height:1.8;text-align:left;}
+  svg{max-width:100%;height:auto;}
+  .svg-label{fill:var(--ink);}.svg-sub{fill:var(--sub);}
+  /* ===== 表 ===== */
+  .table-wrap{overflow-x:auto;margin:24px 0;}
+  table.academic-table{width:100%;border-collapse:collapse;min-width:700px;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;line-height:1.7;border-top:2px solid var(--accent2);border-bottom:2px solid var(--accent2);}
+  .academic-table th{background:none;color:var(--accent);text-align:left;font-weight:700;border-bottom:1px solid var(--accent2);}
+  .academic-table th,.academic-table td{border-bottom:1px solid var(--rule2);padding:10px 12px;vertical-align:top;text-indent:0;}
+  .academic-table caption{caption-side:top;text-align:left;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-bottom:8px;}
+  /* ===== 脚注・参考文献 ===== */
+  sup.fnref{font-size:.68em;font-family:"Zen Kaku Gothic New",sans-serif;line-height:0;}
+  sup.fnref a{color:var(--accent);}
+  .notes,.references{margin-top:40px;}
+  .notes h2,.references h2{font-size:16px;}
+  .fn-list,.refs{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);}
+  .fn-list li,.refs li{margin:0 0 8px 1.6em;line-height:1.8;padding-left:.2em;}
+  .fn-list li{list-style:decimal;}
+  .cta-note{background:#fbfdfe;border:1px solid var(--rule2);border-radius:2px;padding:18px 20px;margin:36px 0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:#33424b;line-height:1.9;}
+  .cta-note a{font-weight:700;}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:42px 0 10px;flex-wrap:wrap;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;}
+  @media(max-width:600px){.kiyo-hero h1{font-size:22px;}body{font-size:16px;}h2{font-size:18px;}.kiyo-subtitle{font-size:15.5px;}}
+</style>
+<link rel="canonical" href="https://iwata-monogatari.net/oishi-ronko/233/">
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+</head>
+<body class="area-toyoda">
+
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="crumb"><a href="https://iwata-monogatari.net/">磐田物語</a> ／ <a href="https://iwata-monogatari.net/oishi-ronko/">大石浩之の磐田論考</a> ／ 渡船経済のしくみ</div>
+
+  <article>
+  <header class="kiyo-hero">
+    <p class="kiyo-journal">磐田郷土史研究紀要</p>
+    <p class="kiyo-series">大石浩之の磐田論考　第233号（天竜川池田の渡船研究　三）</p>
+    <h1>渡船経済のしくみ</h1>
+    <p class="kiyo-subtitle">船賃の分配・船勧進・堤防修理の経済史</p>
+    <p class="kiyo-author">大石浩之<sup>1</sup></p>
+    <p class="kiyo-affil"><sup>1</sup> 富士ヶ丘サービス株式会社 代表取締役</p>
+    <dl class="kiyo-meta">
+      <div><dt>公開日</dt><dd>2026.07.26</dd></div>
+      <div><dt>資料検証</dt><dd>公開資料による検証済み</dd></div>
+      <div><dt>対象地区</dt><dd>磐田市池田・豊田地区</dd></div>
+    </dl>
+  </header>
+
+  <section class="abstract" aria-label="要旨">
+    <h2>要旨</h2>
+    <p>天竜川池田の渡船は、東海道の交通を支えた施設であると同時に、船頭・村・領主のあいだで金と物が循環する一個の経済体でもあった。本稿は渡船を交通史の対象としてではなく、船賃の分配・船勧進物の徴収・堤防修理費の負担という三つの金の流れから読み直す。収益を受け取る権利は「船名敷」と呼ばれる持分として相続・売買され、池田村・船越村は遠江国中から夏秋二度の勧進を集める徴収権をもっていた。天保11年（1840年）の勘定辻調帳には、その収入と支出が具体的な数字で残る。ただし帳簿や勧進帳という近世経済史料は、記された数字がそのまま実収益を意味するとは限らない。本稿は、帳簿にそう記される水準を史実として扱い、運営の実態や収益性は推定として腑分けし、「未確認」と「記載なし」を区別しながら、渡船経済の内部構造を史料批判的に描く。</p>
+  </section>
+  <p class="keywords"><strong>キーワード：</strong>天竜川池田渡船／船名敷／船勧進物／勘定辻調帳／堤防普請／公儀御入用／近世経済史料</p>
+
+  <nav class="toc" aria-label="目次">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#s1">問題設定 ── 渡船を「金の流れ」から読む</a></li>
+      <li><a href="#s2">史料の性格 ── 勘定帳・勧進帳は何を語り、何を語らないか</a></li>
+      <li><a href="#s3">船名敷 ── 収益を受け取る権利の分配構造</a></li>
+      <li><a href="#s4">船勧進 ── 遠江国中から集める寄進の経済</a></li>
+      <li><a href="#s5">天保11年勘定辻調帳の収支</a></li>
+      <li><a href="#s6">堤防修理と船造替 ── 費用負担の主体別構造</a></li>
+      <li><a href="#s7">天保9年洪水と仙台藩救済 ── 非常時の資金調達</a></li>
+      <li><a href="#s8">結論 ── 循環する渡船経済</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1">1. 問題設定 ── 渡船を「金の流れ」から読む</h2>
+  <p>天竜川の池田渡船については、これまで本論考シリーズでも、渡し場の起源と運営組織を扱った<a href="https://iwata-monogatari.net/oishi-ronko/190/">池田の渡船に関する稿</a>、周辺村々の負担を論じた<a href="https://iwata-monogatari.net/oishi-ronko/228/">助郷に関する稿</a>で取り上げてきた。本稿はそれらと主題を分け、渡船を一個の経済体として、すなわち金と物がどこから入り、どのように分けられ、どこへ出ていくのかという収支の側面から読み直すことを課題とする。</p>
+  <p>渡船を経済の対象として見ると、その像は交通史のそれとはかなり異なってくる。旅人が川を渡るための施設という表の顔の裏に、渡船から生じる収益を誰がどの割合で受け取るのか、その収益を生み出すために誰がどれだけの費用を負担するのかという、もう一つの構造が横たわっている。池田村・船越村の人々にとって、渡船は日々の稼ぎの場であるだけでなく、代々受け継ぐべき財産であり、また絶えず費用の工面を迫る重荷でもあった。</p>
+  <p>本稿が着目するのは、三つの金の流れである。第一に、渡船が生み出す賃銭がどのような持分に応じて分配されたか。第二に、渡船とは別に池田村・船越村がもっていた「船勧進物」という寄進の徴収がどのように営まれたか。第三に、堤防や船を維持するための費用が誰の負担でまかなわれたかである。これら三つは互いに独立しているのではなく、勧進が渡船の収益を補い、その収益が普請の費用へ回されるという具合に、一つの循環を形づくっていたと考えられる。</p>
+  <p>ただし、この循環の全体を数量的に復原することはできない。残されている史料は、ある年の勘定を書き留めた帳面や、権利の譲渡を証する証文など、断片的なものにとどまる。そこで本稿は、数字が残る部分についてはその数字を尊重しつつ、数字の背後にある運営の実態や収益性については、あくまで推定として慎重に扱う。渡船経済の内側を、確実に言えることと推し量るにとどまることとに腑分けしながら描き出すことが、本稿の方法である。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="渡船収益・船勧進・堤防普請の三つが循環する渡船経済の全体構造図">
+        <defs>
+          <marker id="f1ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2f7fa3"/></marker>
+        </defs>
+        <rect x="12" y="14" width="596" height="312" rx="20" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="44" text-anchor="middle" font-size="15" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">渡船経済の循環 ── 三つの金の流れ</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <circle cx="310" cy="180" r="58" fill="#eef7fb" stroke="#356f88" stroke-width="2.4"/>
+          <text x="310" y="176" font-size="14" fill="#22303a">渡船方</text>
+          <text x="310" y="196" font-size="10.5" fill="#5b6b74">池田村・船越村</text>
+          <circle cx="130" cy="120" r="50" fill="#fff7ec" stroke="#d28a41" stroke-width="2"/>
+          <text x="130" y="114" font-size="12.5" fill="#22303a">賃銭</text>
+          <text x="130" y="134" font-size="10" fill="#5b6b74">旅人・大通行</text>
+          <circle cx="490" cy="120" r="50" fill="#eef7ec" stroke="#6f9a4f" stroke-width="2"/>
+          <text x="490" y="114" font-size="12.5" fill="#22303a">船勧進</text>
+          <text x="490" y="134" font-size="10" fill="#5b6b74">遠江国中</text>
+          <circle cx="310" cy="292" r="34" fill="#fbecec" stroke="#b85b5b" stroke-width="2"/>
+          <text x="310" y="290" font-size="11.5" fill="#22303a">堤防・船</text>
+          <text x="310" y="306" font-size="9.5" fill="#5b6b74">維持費</text>
+        </g>
+        <path d="M168 138 C210 158,232 162,258 168" fill="none" stroke="#2f7fa3" stroke-width="2.6" marker-end="url(#f1ar)"/>
+        <path d="M452 138 C410 158,388 162,362 168" fill="none" stroke="#2f7fa3" stroke-width="2.6" marker-end="url(#f1ar)"/>
+        <path d="M310 238 L310 256" stroke="#2f7fa3" stroke-width="2.6" marker-end="url(#f1ar)"/>
+        <text x="310" y="330" text-anchor="middle" font-size="10.5" class="svg-sub" font-family="'Zen Kaku Gothic New',sans-serif">賃銭と勧進が渡船方へ入り、船名敷の持高で分配され、一部が普請費へ回る。</text>
+      </svg>
+    </div>
+    <figcaption>図1　渡船経済の循環模式図。旅人からの賃銭と遠江国中からの船勧進が渡船方へ入り、船名敷の持高に応じて分配される一方、その一部は堤防・船の維持費として流出する。矢印は金と物のおおよその流れを示す。</figcaption>
+  </figure>
+
+  <h2 id="s2">2. 史料の性格 ── 勘定帳・勧進帳は何を語り、何を語らないか</h2>
+  <p>渡船経済を数字で語ろうとするとき、まず立ち止まって考えておくべきは、その数字がどのような性格の史料に由来するのかという点である。本稿が依拠する主な史料は、豊田町郷土を研究する会が編んだ『郷土研究資料第二集 天竜川池田の渡船』<sup class="fnref" id="r1"><a href="#fn1">1</a></sup>に収載・紹介された、勘定辻調帳・船名敷割・譲渡証文・指出帳といった近世文書である。これらはいずれも渡船方が実務のために作成した帳面であり、後世の読者に向けて経済の全体像を説明するために書かれたものではない。</p>
+  <p>近世の勘定帳は、収入と支出を項目ごとに書き上げて残高を締める形式をとる。だが帳簿に記された数字は、必ずしもその年に実際に動いた金額のすべてを写し取っているとは限らない。勘定帳はしばしば、上位の役所へ提出したり、内部で分配の根拠としたりするために作られる。その目的に応じて、計上される項目や換算の仕方が調整されることがありうる。したがって帳簿の数字は、「そう記された」という水準では確実であっても、「実際にそれだけの利益があった」という水準まで直ちに引き上げることはできない。本稿では前者を史実として扱い、後者は推定の領域にとどめる。</p>
+  <p>勧進帳もまた独特の性格をもつ。勧進とは本来、寺社の造営などのために広く寄進を募る行為であり、勧進帳はその寄進を記録する帳面である。渡船方が集めた「船勧進物」の帳面も、各村がいくらを差し出したかを書き留める形式をとっていたと考えられる。ただし勧進の記録は、集めるべき額の目安を示す帳面なのか、実際に集まった額を写した帳面なのかで、その意味が大きく変わる。両者が混在している場合、記載された総額を実収と読むと過大評価に陥りかねない。</p>
+  <p>さらに、近世の貨幣制度そのものが史料の読み方を難しくする。金（両・分・朱）と銭（貫・文）が併用され、両者の交換比率は時期によって変動した。加えて米・大豆・麦・塩・紙といった現物が金銭に換算されて計上される。勘定辻調帳に見える換算率、たとえば米は勧進物の一両につき一石三斗といった比率は、その時々の相場や慣行を反映した帳簿上の約束事であり、市場の実勢価格とは別のものでありうる。異なる単位が入り混じった帳面を単純に合算して現代の通貨感覚へ引き直すことには、慎重でなければならない。</p>
+  <p>こうした史料の性格をあらかじめ確認しておくのは、数字を軽んじるためではない。むしろ逆で、残された数字を正しく重んじるためである。帳簿が語りうるのは、分配の構造・費目の内訳・費用負担の主体といった、経済の骨格である。語りえないのは、実際の手取りや利益率といった、運営の実態にかかわる部分である。この境界を意識しながら、以下では骨格の側から渡船経済を組み立てていく。</p>
+
+  <h2 id="s3">3. 船名敷 ── 収益を受け取る権利の分配構造</h2>
+  <p>渡船経済の中核をなすのは、渡船から生じる収益を受け取る権利、すなわち「船名敷（ふななじき）」である。船名敷は、棹（さお）の持ち日数に応じて賃銭の分配を受ける仕組みであったと史料は伝える。渡船を漕ぐ労働そのものに対する日当ではなく、渡船の収益にあずかる持分としての性格をもつ点に、この権利の特徴がある。船名敷を持つ者は、その持分に応じて分配を受ける立場に立った。</p>
+  <p>この持分は財産として扱われ、相続の対象であるとともに、売買の対象でもあった。『郷土研究資料第二集 天竜川池田の渡船』が引く『譲渡申御船役之事』（安政6年〔1859年〕12月）には、池田大橋家に伝わる証文として、大番役の一か月片川についての一月二分五厘の舟役を、金二十三両で譲渡した記録が残る<sup class="fnref" id="r2"><a href="#fn2">2</a></sup>。渡船の収益にあずかる権利が、具体的な金額をもって取引されていたことが、ここから確認できる。船名敷はまさに換金可能な財であった。</p>
+  <p>船名敷の口数は、時代とともに細分化していった。文化3年（1806年）の「船名敷割」では、持高23.925名敷（およそ24名敷）を47人で分け合っていたのに対し、明治4年（1871年）の「船名敷割」では、ほぼ同じ規模の持高を50人で分け合うようになっている<sup class="fnref" id="r3"><a href="#fn3">3</a></sup>。船名敷はもともと24に分けられていたと考えられているが、その持高が売買・譲渡の対象となり、また分家などの際にさらに分割されることで、次第に細分化が進んでいったとみられる。この史料の出典については『史潮』44号（松井秀次）が関わっている。</p>
+  <p>持分が細分化するという現象は、経済史の観点から見ると、いくつかの含意をもつ。一つの権利が多人数に分割されていくことは、渡船収益を分かち合う世帯が増えることを意味し、一人あたりの取り分が薄まっていく方向に働く。同時に、細かく分けられた持分は市場で取引しやすくなり、権利の流動性を高める。渡船という共同の資源が、私的に相続・売買される財産へと性格を強めていった過程を、船名敷の細分化は映している。ただし、細分化が実際に各世帯の暮らしをどの程度圧迫したのか、あるいは持分の集約が並行して起こっていたのかまでは、現存する二時点の史料からは断定できず、この点は推定にとどまる。</p>
+  <p>船名敷が持ち日数に基づく持分であったことは、渡船方の内部が均質な集団ではなかったことをも示す。多くの持分を握る家と、わずかな持分しかもたない家とのあいだには、渡船収益の配分に差があったはずである。文政12年（1829年）の史料が、船勧進をめぐって池田村渡船方が有利な立場に立ち、両村のあいだに格差が生じたと伝えることも、この内部の不均衡と無縁ではない。渡船経済は、村と村、家と家のあいだの力関係を映す鏡でもあった。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="賃銭が船名敷の持ち日数に応じて各持分保有者へ分配される流れ図">
+        <defs>
+          <marker id="f2ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2f7fa3"/></marker>
+        </defs>
+        <rect x="12" y="14" width="596" height="272" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="42" text-anchor="middle" font-size="14.5" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">船名敷による賃銭の分配</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <rect x="238" y="66" width="144" height="52" rx="10" fill="#eef7fb" stroke="#356f88" stroke-width="2"/>
+          <text x="310" y="90" font-size="13" fill="#22303a">渡船の賃銭総額</text>
+          <text x="310" y="108" font-size="10" fill="#5b6b74">棹の持ち日数で按分</text>
+          <rect x="60" y="180" width="120" height="66" rx="10" fill="#fff7ec" stroke="#d28a41" stroke-width="2"/>
+          <text x="120" y="208" font-size="12" fill="#22303a">大高持</text>
+          <text x="120" y="228" font-size="10" fill="#5b6b74">多くの名敷</text>
+          <rect x="250" y="180" width="120" height="66" rx="10" fill="#f7fbfd" stroke="#356f88" stroke-width="1.8"/>
+          <text x="310" y="208" font-size="12" fill="#22303a">中位の持分</text>
+          <text x="310" y="228" font-size="10" fill="#5b6b74">一月二分五厘等</text>
+          <rect x="440" y="180" width="120" height="66" rx="10" fill="#fbecec" stroke="#b85b5b" stroke-width="1.8"/>
+          <text x="500" y="208" font-size="12" fill="#22303a">小高持</text>
+          <text x="500" y="228" font-size="10" fill="#5b6b74">細分化した持分</text>
+        </g>
+        <path d="M290 118 L150 178" stroke="#2f7fa3" stroke-width="2.2" marker-end="url(#f2ar)"/>
+        <path d="M310 118 L310 178" stroke="#2f7fa3" stroke-width="2.2" marker-end="url(#f2ar)"/>
+        <path d="M330 118 L470 178" stroke="#2f7fa3" stroke-width="2.2" marker-end="url(#f2ar)"/>
+        <text x="310" y="276" text-anchor="middle" font-size="10.5" class="svg-sub" font-family="'Zen Kaku Gothic New',sans-serif">持分は相続・売買・分割の対象となり、時代とともに細分化した（1806年47人→1871年50人）。</text>
+      </svg>
+    </div>
+    <figcaption>図2　船名敷による分配の流れ。渡船の賃銭総額は棹の持ち日数に応じて各持分保有者へ按分される。持分は換金可能な財として相続・売買され、細分化が進んだ。各層の呼称は説明のための便宜的な区分である。</figcaption>
+  </figure>
+
+  <h2 id="s4">4. 船勧進 ── 遠江国中から集める寄進の経済</h2>
+  <p>渡船の賃銭とならぶもう一つの収入の柱が、「船勧進物」であった。池田村・船越村には、往古から続くとされるこの独自の収入源があり、遠江国中の村々を対象に、米・金銭を中心とする寄進を取り集める慣行をもっていた。渡船が旅人から得る賃銭とは別に、いわば国全体から渡船の維持を支える負担を募る仕組みであった点に、この制度の特異さがある。</p>
+  <p>文政12年（1829年）の史料によれば、この船勧進物を徴収する権利は、もとは池田村・船越村の両村に平等に与えられたものであったが、その後、池田村渡船方が有利な立場に立ち、両村のあいだにかなりの格差が生じていったという<sup class="fnref" id="r4"><a href="#fn4">4</a></sup>。徴収権もまた、船名敷と同じく村々のあいだで配分される権益であり、その配分が時とともに偏っていったことがうかがえる。集められた勧進物の収益は、船名敷の持高に応じて渡船関係者へ分配された。</p>
+  <p>勧進物を集める段取りも、史料から具体的にたどれる。池田村の場合、居番十一名に名主一名を加えた十二組を編成し、一組ごとに三つの地域を割り当てて取り集めた。船越村の場合はさらに広く、遠江国内を四十三の地域に分けて取り集めており、各村の名主が捺印した控帳が、徴収の確認の証として保存されていたという。集める時期は基本的に夏・秋の二度であったが、必ずしもすべての村が年に二度集められたわけではなく、また米・金銭のほかに、大豆・麦・紙・塩といった、その村の産物で都合のよいものを差し出せばよいことも多かったと伝えられる。</p>
+  <p>この徴収のかたちは、渡船勧進が単なる任意の喜捨ではなく、地域割りと帳簿によって管理された、恒常的な収取の制度であったことを示している。四十三の地域に分け、名主の捺印した控帳で確認するという方式は、租税の徴収に近い組織性をもつ。もっとも、勧進はあくまで寄進の名目をとる以上、強制力の裏づけがどこまであったのかは判然としない。名目上は自発的な寄進でありながら、実態としては慣行化した負担であったという二重性を、この制度は抱えていたと考えられる。名目と実態のこの隔たりこそが、勧進という語の含意である。</p>
+  <p>勧進物を現物で受け取り、それを金銭に換算して計上する方式は、渡船方に一定の裁量を与えたと推定される。どの品をどの換算率で受け入れるかによって、帳簿上の総額は変わりうる。前章で述べた勘定帳・勧進帳の性格をふまえれば、勧進の記録に見える総額は、集めるべき目安と実際に集まった額とのあいだのどこかに位置すると読むのが穏当であり、これを額面どおりの実収と即断することはできない。勧進物が渡船経済に占めた比重を正確に測るには、なお史料の精査を要する。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="遠江国中を地域割りして船勧進物を集める徴収組織の模式図">
+        <defs>
+          <marker id="f3ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2f7fa3"/></marker>
+        </defs>
+        <rect x="12" y="14" width="596" height="272" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="42" text-anchor="middle" font-size="14.5" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">船勧進物の徴収組織 ── 遠江国中を地域割り</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <rect x="234" y="120" width="152" height="60" rx="10" fill="#eef7fb" stroke="#356f88" stroke-width="2.2"/>
+          <text x="310" y="146" font-size="13" fill="#22303a">渡船方の控帳</text>
+          <text x="310" y="165" font-size="10" fill="#5b6b74">名主捺印で確認</text>
+          <g fill="#22303a">
+            <rect x="60" y="70" width="118" height="40" rx="8" fill="#eef7ec" stroke="#6f9a4f" stroke-width="1.8"/><text x="119" y="95" font-size="11">池田村 十二組</text>
+            <rect x="60" y="190" width="118" height="40" rx="8" fill="#eef7ec" stroke="#6f9a4f" stroke-width="1.8"/><text x="119" y="215" font-size="11">船越村 43地域</text>
+            <rect x="442" y="70" width="118" height="40" rx="8" fill="#fff7ec" stroke="#d28a41" stroke-width="1.8"/><text x="501" y="88" font-size="11">米・金銭</text><text x="501" y="103" font-size="9.5" fill="#5b6b74">中心の品</text>
+            <rect x="442" y="190" width="118" height="40" rx="8" fill="#fff7ec" stroke="#d28a41" stroke-width="1.8"/><text x="501" y="208" font-size="11">大豆・麦・紙・塩</text><text x="501" y="223" font-size="9.5" fill="#5b6b74">村の産物で代替</text>
+          </g>
+        </g>
+        <path d="M178 92 C210 108,222 120,238 130" fill="none" stroke="#2f7fa3" stroke-width="2.2" marker-end="url(#f3ar)"/>
+        <path d="M178 210 C210 194,222 182,238 170" fill="none" stroke="#2f7fa3" stroke-width="2.2" marker-end="url(#f3ar)"/>
+        <path d="M386 138 C410 122,420 110,440 96" fill="none" stroke="#2f7fa3" stroke-width="2.2" marker-end="url(#f3ar)"/>
+        <path d="M386 162 C410 178,420 190,440 204" fill="none" stroke="#2f7fa3" stroke-width="2.2" marker-end="url(#f3ar)"/>
+        <text x="310" y="276" text-anchor="middle" font-size="10.5" class="svg-sub" font-family="'Zen Kaku Gothic New',sans-serif">夏・秋の二度、地域割りで取り集め、現物は金銭に換算して計上された。</text>
+      </svg>
+    </div>
+    <figcaption>図3　船勧進物の徴収組織。池田村は十二組、船越村は遠江国内の四十三地域に分けて取り集め、名主の捺印した控帳で確認した。米・金銭を中心に、大豆・麦・紙・塩など村の産物での代替が認められた。</figcaption>
+  </figure>
+
+  <h2 id="s5">5. 天保11年勘定辻調帳の収支</h2>
+  <p>渡船勧進の収支を具体的な数字で示す史料が、天保11年（1840年）12月の「賃銭〆高国中勧物村方勘定辻調帳」である。ここには収入の部と支出の部が項目ごとに書き上げられており、渡船経済の一年をのぞく数少ない窓口となっている。以下ではまず収入の側を確認し、続いて支出の側を検討する。ただし前述のとおり、これらの数字は帳簿にそう記されたという水準の事実であり、実収益の記録として即座に読むことはできない。</p>
+  <p>収入の部では、現物と金銭が混在して計上されている。米は15石1斗1升4合で11両2分2朱と7文に換算され、その際の比率は国中勧物の一両につき一石三斗とされる。大豆は15石2斗3升4合で16両と242文、比率は一両につき九斗五升。麦は16石3斗3升4合で5両1分2朱と471文、比率は一両につき三石。塩は2石6斗5升で6貫624文、一升の代を24文とする。紙は17束で760文。金・銭が1両と44貫742文、これに元賃銭の船越分338貫294文、二割増の船越村分56貫382文が加わり、収入の惣メは34両と447貫522文と記されている。現物の種類ごとに換算率が異なることが、この帳面の特徴である<sup class="fnref" id="r5"><a href="#fn5">5</a></sup>。</p>
+  <p>支出の部を見ると、渡船を動かすための人件費が大きな比重を占める。最も大きな支出は「大番役十一人・日数百七十七、水主九百四十七人・一人につき百七十二文」で340貫724文にのぼる。渡船を実際に漕ぐ水主への支払いが、支出の中心をなしていたことがわかる。このほか、飯料（食事代）に141貫600文、会所の薪代に17貫700文、会所の油茶代に7貫372文が充てられ、役人二人分の給金として5両3分2朱と163文、網三十筋の代として4貫500文が計上されている。国中の勧進物を集める際の宿払・小遣いに2両と9貫932文、川場の諸入用として池田村へ渡した16貫779文なども記録されている。勧進物代の中から差し引かれるかたちで、遠方への出張には泊まりがけの手当が支給され、小遣・酒手・茶代などの諸経費もまかなわれていたという。</p>
+  <p>これらの費目を眺めると、渡船経済の支出構造がおおまかに見えてくる。第一に、水主への支払いという直接の労働費が最大の項目である。第二に、飯料・薪代・油茶代といった、会所の運営と人足の食事にかかる経費が続く。第三に、勧進物を集めに出る際の旅費・雑費がある。そして渡船関係者への分配は、すべて船名敷の持高に応じてなされた。収入を勧進と賃銭で確保し、労働費と運営費を差し引いたうえで、残りを持分に応じて分けるという構造が、ここから読み取れる。</p>
+  <p>次の表は、勘定辻調帳の収入の部を項目ごとに整理したものである。現物の量、金銭への換算高、換算の比率を並べることで、異なる単位が一つの帳面に集約されていく様子を可視化した。数値はいずれも史料に記された値であり、実勢価格や実収を示すものではないことを、あらためて断っておく。</p>
+
+  <div class="table-wrap">
+    <table class="academic-table">
+      <caption>表1　天保11年（1840年）12月「賃銭〆高国中勧物村方勘定辻調帳」収入の部 ── 種類・量・換算高・比率</caption>
+      <thead><tr><th>種類</th><th>量</th><th>金銭換算高</th><th>換算の比率・備考</th><th>確度</th></tr></thead>
+      <tbody>
+        <tr><td>米</td><td>15石1斗1升4合</td><td>11両2分2朱と7文</td><td>国中勧物 1両につき1石3斗</td><td>史料記載</td></tr>
+        <tr><td>大豆</td><td>15石2斗3升4合</td><td>16両と242文</td><td>1両につき9斗5升</td><td>史料記載</td></tr>
+        <tr><td>麦</td><td>16石3斗3升4合</td><td>5両1分2朱と471文</td><td>1両につき3石</td><td>史料記載</td></tr>
+        <tr><td>塩</td><td>2石6斗5升</td><td>6貫624文</td><td>1升の代24文</td><td>史料記載</td></tr>
+        <tr><td>紙</td><td>17束</td><td>760文</td><td>同断</td><td>史料記載</td></tr>
+        <tr><td>金・銭</td><td>―</td><td>1両と44貫742文</td><td>同断</td><td>史料記載</td></tr>
+        <tr><td>銭（元賃銭）</td><td>―</td><td>338貫294文</td><td>船越分</td><td>史料記載</td></tr>
+        <tr><td>銭（2割増）</td><td>―</td><td>56貫382文</td><td>船越村分</td><td>史料記載</td></tr>
+        <tr><td>惣メ</td><td>―</td><td>34両と447貫522文</td><td>収入の部 合計</td><td>史料記載</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>この表から、勧進物の中で米・大豆・麦という穀物の比重が大きいこと、そして賃銭（船越分の元賃銭とその二割増）が銭建てで相当額を占めることが読み取れる。ただし、金建ての項目と銭建ての項目が混在しているため、惣メの「34両と447貫522文」という表記も、金と銭を単純に足し合わせたものではなく、両者を併記した締めである。現物・金・銭という三つの価値尺度が一つの帳面に同居しているこの状態こそ、近世の村方勘定の実像であり、これを現代の単一通貨に引き直して総額を云々することの危うさを、表はかえってよく示している。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="天保11年勘定辻調帳の主な支出費目を銭建てで相対比較した棒図">
+        <rect x="12" y="14" width="596" height="272" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="42" text-anchor="middle" font-size="14.5" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">勘定辻調帳 支出の部 ── 主な費目（銭建て）</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" font-size="11" fill="#22303a">
+          <text x="196" y="78" text-anchor="end">大番役・水主</text>
+          <rect x="206" y="66" width="360" height="18" rx="3" fill="#356f88"/>
+          <text x="572" y="80" font-size="10" fill="#5b6b74">340貫724文</text>
+          <text x="196" y="110" text-anchor="end">飯料</text>
+          <rect x="206" y="98" width="150" height="18" rx="3" fill="#6f9a4f"/>
+          <text x="362" y="112" font-size="10" fill="#5b6b74">141貫600文</text>
+          <text x="196" y="142" text-anchor="end">会所薪代</text>
+          <rect x="206" y="130" width="19" height="18" rx="3" fill="#d28a41"/>
+          <text x="231" y="144" font-size="10" fill="#5b6b74">17貫700文</text>
+          <text x="196" y="174" text-anchor="end">川場諸入用</text>
+          <rect x="206" y="162" width="18" height="18" rx="3" fill="#d28a41"/>
+          <text x="230" y="176" font-size="10" fill="#5b6b74">16貫779文</text>
+          <text x="196" y="206" text-anchor="end">会所油茶代</text>
+          <rect x="206" y="194" width="8" height="18" rx="3" fill="#b85b5b"/>
+          <text x="220" y="208" font-size="10" fill="#5b6b74">7貫372文</text>
+          <text x="196" y="238" text-anchor="end">網30筋代</text>
+          <rect x="206" y="226" width="5" height="18" rx="3" fill="#b85b5b"/>
+          <text x="217" y="240" font-size="10" fill="#5b6b74">4貫500文</text>
+        </g>
+        <text x="310" y="274" text-anchor="middle" font-size="10.5" class="svg-sub" font-family="'Zen Kaku Gothic New',sans-serif">水主への支払いが支出の中心をなす。棒の長さは銭建て額の相対比を示す（金建て費目は除く）。</text>
+      </svg>
+    </div>
+    <figcaption>図4　勘定辻調帳・支出の部の主な費目。銭建ての費目を相対比較すると、渡船を漕ぐ水主への支払いが支出の中心を占めることがわかる。給金など金建ての費目は尺度が異なるため除いた。数値は史料記載による。</figcaption>
+  </figure>
+
+  <h2 id="s6">6. 堤防修理と船造替 ── 費用負担の主体別構造</h2>
+  <p>渡船経済は、収入を分配して終わるものではなかった。渡し場を維持するためには、堤防を守り、船を造り替え続けなければならず、その費用負担が経済のもう一方の側面をなした。池田村を守る堤防は、大天竜（天竜川の東川）の東を南北に流れる三国堤、大囲堤、そして小立野村境から一言坂にかけて、家康を守るために築かれたと伝わる内郷堤の三つからなっていたという。渡し場の安全は、これらの堤防の維持にかかっていた。</p>
+  <p>堤防の維持費用は、その規模と性格に応じて負担の主体が分かれていた。定期的な修理である定式普請は、流域の村々が費用を負担した。文化14年（1817年）の『出来形帳』によれば、普請にあたる村々には交付金が支給され、宿泊の費用が細かく記録されている。堤防の普請は一般に、定式普請と国役普請とに分けられ、これらの費用を負担することは村々にとって大きな重荷であったと思われる。日常的な維持は地元の村々が、より大規模な普請は国役として広域が担うという、負担の階層構造がここに見える。</p>
+  <p>渡船場そのものの仮橋や船の修理費用については、公儀（幕府）の御入用でまかなわれることが多かった。延享元年（1744年）の『池田村渡船方指出帳』によれば、渡船場の仮橋板などの造り替えは、代々中泉御役所に願書を提出して許可を得たうえで行われていた。安政2年（1855年）には、池田村渡船方がもつ渡船十一組のうち、大番船・早船の造り替えは公儀御入用で行われ、小番船二十二艘は各組の自費で造立されたという。大型で公共性の高い船は公儀が、小型の船は各組が負担するという、船の格に応じた費用分担がなされていたことがわかる。</p>
+  <p>船を造るための用材の調達経路も、史料からたどれる。船の建造用材は、大久保村（磐田市大久保）にある中泉代官所の御用林から調達され、天竜川の上流から筏で運ばれてきた材木を、村々が入札で調達していたと記録されている。御用林という幕府の資源を起点に、筏流しという天竜川ならではの運材を経て、入札という手続きで村々へ配分されるこの経路は、渡船の維持が地域の林政・河川運用と結びついていたことを示している。渡船経済は、渡し場の内部で完結するものではなく、上流の山や代官所の役所とつながる、広がりをもった仕組みであった。</p>
+  <p>費用負担の主体別構造を整理すると、渡船の維持がいくつもの主体の分担によって支えられていたことが浮かび上がる。定式普請は流域の村々、大規模普請は国役、仮橋と大型船の造替は公儀御入用、小型船は各組の自費という具合に、負担は性格ごとに切り分けられていた。この切り分けは、それぞれの施設・船がもつ公共性の度合いに応じたものと解される。渡船が東海道の通行を支える公的な性格をもつがゆえに、その維持費の一部を幕府が負担する構造が成り立っていた一方、細かな部分は地元の負担に委ねられていた。この負担の配分そのものが、渡船という施設の公私にまたがる性格を映している。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="堤防普請と船造替の費用を負担主体ごとに区分した図">
+        <rect x="12" y="14" width="596" height="272" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="42" text-anchor="middle" font-size="14.5" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">維持費の負担 ── 主体別の区分</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif">
+          <rect x="44" y="70" width="250" height="46" rx="8" fill="#eef7ec" stroke="#6f9a4f" stroke-width="1.8"/>
+          <text x="60" y="90" font-size="12" fill="#22303a">流域の村々</text>
+          <text x="60" y="108" font-size="10.5" fill="#5b6b74">定式普請（堤防の定期修理）</text>
+          <rect x="44" y="126" width="250" height="46" rx="8" fill="#f2f7ec" stroke="#6f9a4f" stroke-width="1.6"/>
+          <text x="60" y="146" font-size="12" fill="#22303a">国役（広域）</text>
+          <text x="60" y="164" font-size="10.5" fill="#5b6b74">国役普請（大規模な堤防修理）</text>
+          <rect x="326" y="70" width="250" height="46" rx="8" fill="#eef7fb" stroke="#356f88" stroke-width="1.8"/>
+          <text x="342" y="90" font-size="12" fill="#22303a">公儀御入用（幕府）</text>
+          <text x="342" y="108" font-size="10.5" fill="#5b6b74">仮橋・大番船・早船の造替</text>
+          <rect x="326" y="126" width="250" height="46" rx="8" fill="#fbecec" stroke="#b85b5b" stroke-width="1.6"/>
+          <text x="342" y="146" font-size="12" fill="#22303a">各組の自費</text>
+          <text x="342" y="164" font-size="10.5" fill="#5b6b74">小番船22艘の造立</text>
+          <rect x="44" y="196" width="532" height="60" rx="10" fill="#fff7ec" stroke="#d28a41" stroke-width="1.8"/>
+          <text x="310" y="220" text-anchor="middle" font-size="12" fill="#22303a">用材の調達経路</text>
+          <text x="310" y="240" text-anchor="middle" font-size="10.5" fill="#5b6b74">中泉代官所 御用林（大久保村）→ 天竜川を筏流し → 村々が入札で調達</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>図5　維持費の負担主体別区分。堤防の定式普請は流域の村々、大規模普請は国役、仮橋・大型船の造替は公儀御入用、小型船は各組の自費と、施設・船の公共性に応じて負担が切り分けられていた。下段は船用材の調達経路を示す。</figcaption>
+  </figure>
+
+  <h2 id="s7">7. 天保9年洪水と仙台藩救済 ── 非常時の資金調達</h2>
+  <p>渡船経済の平常の循環を大きく揺るがしたのが、洪水という非常時であった。天保9年（1838年）、池田村をはじめ天竜川沿いの各村々を大水害が襲い、七百八十軒もの家々が浜松宿へ流れ着き、乞食同然となったという記録が残る。文字通り天竜川流域における甚大な被害であり、森本村では堤防が押し切られて収穫が皆無になるほどの惨状であったと伝えられる。この被害の大きさを物語る年貢割付帳や立毛検見帳が、今に伝わっている。平常の収支の枠内では到底まかないきれない打撃が、渡船経済を直撃したのである。</p>
+  <p>この窮状を救うために渡船方がとった手段が、注目に値する。渡船方の居番であった中田家は、渡船の特約先であった仙台藩（伊達家）を頼り、借金と救恤物を願い出た。<a href="https://iwata-monogatari.net/t048.html">天竜川池田の渡船</a>で触れたように、池田村の渡船役人と奥州の大藩とのあいだには個別の特約関係があり、こうした特約は日ごろの渡船の請負にとどまらず、非常時の頼みの綱としても機能していたことがうかがえる。仙台藩は渡船方の重なる洪水被害に同情し、格別の慈悲をもって救済に応じたと伝わる。</p>
+  <p>この事例は、渡船経済の資金調達が、平常時と非常時とで異なる回路をもっていたことを示している。平常時には、賃銭と勧進物という自前の収入で運営がまわされ、堤防や船の維持費は村・国役・公儀の分担でまかなわれた。ところが平常の枠を超える災害に見舞われたとき、渡船方は特約先の大名や、中泉御役所への借入金、御救物の御願状といった、外部の力にすがるほかなかった。堤を強く丈夫にしなければならないという住民の願いは切実であったが、そのためには堤防の普請に多額の費用がかかり、公儀や大名の救済を仰ぐ道が現実の選択肢となった。</p>
+  <p>特約先の大名を非常時の資金源とする回路は、渡船方が長年かけて築いた大名との関係が、経済的な意味をもっていたことを裏づける。大名の渡河を優先的に請け負う代わりに、非常時には救済を期待できるという相互の関係は、単なる交通上の便宜を超えた、一種の信用の蓄積であった。渡船方にとって大名との特約は、平常時の収入源であると同時に、災害時の保険としても働いていたと解することができる。ただし、仙台藩が実際にどれだけの額を貸与・給付したのか、その返済がどうなったのかを記す帳簿は、本稿の調査範囲では確認できていない。救済があったという伝えは残るが、その規模と条件は未確認にとどまる。</p>
+  <p>非常時の資金調達をめぐるこの事例は、渡船経済の脆さと粘り強さを同時に映している。脆さとは、平常の収支が災害に対して極めて無防備であったことである。堤防に囲まれた低地に営まれる渡し場は、ひとたび堤が切れれば経済の基盤ごと流されかねなかった。粘り強さとは、それでも渡船方が特約や願書という手段を駆使して復興の資金をかき集め、渡し場を維持し続けたことである。渡船経済は、この脆さと粘り強さのあいだで、洪水のたびに再建をくり返しながら近世を通じて存続した。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="洪水被害から渡船方が外部へ資金と救済を求める非常時の調達経路の図">
+        <defs>
+          <marker id="f5ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#b85b5b"/></marker>
+        </defs>
+        <rect x="12" y="14" width="596" height="232" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="42" text-anchor="middle" font-size="14.5" class="svg-label" font-family="'Zen Kaku Gothic New',sans-serif">非常時の資金調達 ── 天保9年洪水後</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <rect x="228" y="96" width="164" height="60" rx="10" fill="#fbecec" stroke="#b85b5b" stroke-width="2.2"/>
+          <text x="310" y="120" font-size="13" fill="#22303a">渡船方（中田家）</text>
+          <text x="310" y="139" font-size="10" fill="#5b6b74">洪水で運営破綻</text>
+          <rect x="40" y="100" width="150" height="52" rx="10" fill="#eef7fb" stroke="#356f88" stroke-width="1.8"/>
+          <text x="115" y="122" font-size="12" fill="#22303a">仙台藩（伊達家）</text>
+          <text x="115" y="140" font-size="10" fill="#5b6b74">特約先・借金と救恤</text>
+          <rect x="430" y="100" width="150" height="52" rx="10" fill="#eef7ec" stroke="#6f9a4f" stroke-width="1.8"/>
+          <text x="505" y="122" font-size="12" fill="#22303a">中泉御役所</text>
+          <text x="505" y="140" font-size="10" fill="#5b6b74">借入金・御救物願状</text>
+        </g>
+        <path d="M228 126 L192 126" stroke="#b85b5b" stroke-width="2.4" marker-end="url(#f5ar)"/>
+        <path d="M392 126 L428 126" stroke="#b85b5b" stroke-width="2.4" marker-end="url(#f5ar)"/>
+        <text x="310" y="210" text-anchor="middle" font-size="10.5" class="svg-sub" font-family="'Zen Kaku Gothic New',sans-serif">平常の賃銭・勧進では足りず、特約大名と役所へ救済を願い出た（規模は未確認）。</text>
+      </svg>
+    </div>
+    <figcaption>図6　非常時の資金調達経路。天保9年（1838年）の大洪水で平常の収支が破綻すると、渡船方は特約先の仙台藩と中泉御役所へ借金・救済を願い出た。救済の伝えは残るが、貸与額や返済条件は未確認である。</figcaption>
+  </figure>
+
+  <h2 id="s8">8. 結論 ── 循環する渡船経済</h2>
+  <p>本稿は、天竜川池田の渡船を、船賃の分配・船勧進物の徴収・堤防修理費の負担という三つの金の流れから読み直してきた。得られた見取り図は次のとおりである。渡船の収益は船名敷という持分に応じて分配され、その持分は相続・売買・分割の対象となる財産であった。渡船とは別に、池田村・船越村は遠江国中から夏秋二度の勧進を集める徴収権をもち、これを地域割りと控帳によって組織的に運用した。そして渡し場の維持費は、村・国役・公儀・各組という主体の性格に応じて分担され、非常時には特約大名や役所への救済願いによってまかなわれた。渡船は、賃銭・勧進が入り、持分に応じて分けられ、その一部が普請費として流出するという循環をなす、一個の経済体であった。</p>
+  <p>この経済体を史料から復原するにあたって、本稿は帳簿にそう記される水準を史実として尊重する一方、実収益や運営の実態は推定として腑分けする姿勢を保った。天保11年の勘定辻調帳に見える収支の項目・換算率・費目の内訳は、そう記されたという水準で確実な史実である。しかしそれらの数字を現代の通貨感覚に引き直して実利益を云々することはできない。勘定帳・勧進帳という近世経済史料は、経済の骨格を語りうるが、手取りや利益率という実態までは語らない。この境界を守ることが、渡船経済を誠実に記述するための条件であった。</p>
+  <p>あわせて本稿は、「未確認」と「記載なし」を区別することにも努めた。船名敷の細分化が各世帯の暮らしに及ぼした影響、勧進物の総額が実収にどれだけ対応するか、仙台藩の救済がどれほどの規模であったか──これらはいずれも、現存する史料からは断定できず、未確認として留保した。これは「そうした事実がなかった」ことを意味しない。あくまで、それを裏づける史料に本稿が突き当たっていないという状態である。この禁欲を守ることで、推し量りを史実と偽らずに済む。</p>
+  <p>渡船経済という視点は、渡し場を交通の結節点としてだけでなく、人と村と領主が金を介して結びつく場として見ることを可能にする。船名敷という財産権、勧進という徴収権、そして普請という費用負担──この三つは、渡船を漕ぐという一つの営みのまわりに集まった、経済の三つの面であった。旅人を渡すという素朴な行為の背後で、権利が取引され、寄進が集められ、費用が分担され、災害のたびに資金がかき集められていた。渡船とは、その全体を指す言葉であったと言ってよい。</p>
+  <p>最後に、本稿が残した課題を記しておく。第一に、勘定辻調帳を複数年にわたって突き合わせることで、渡船経済の変動と趨勢をより精確に描きうる余地がある。第二に、船名敷の売買価格を時系列で追えば、渡船収益への期待がどう推移したかを間接的に測れるかもしれない。第三に、仙台藩をはじめとする特約大名との金銭のやりとりを、大名側の史料と突き合わせて検証する作業が残されている。これらはいずれも、本稿が設定した「史実／推定」「未確認／記載なし」の腑分けを踏まえ、未確認を史実へと押し上げていく地道な手続きに属する。渡船経済の全体像は、こうした一次史料の積み重ねの先に、少しずつ像を結んでいくはずである。渡船の運営組織と大名特約の詳細については、本論考シリーズの他稿ならびに<a href="https://iwata-monogatari.net/t048.html">一般向け記事版</a>で扱っており、あわせて参照されたい。</p>
+
+  <div class="cta-note">
+    本稿の舞台である池田や豊田地区には、渡船とともに川と生きてきた古い家や土地が数多く残る。筆者は磐田・袋井で不動産と介護の実務に携わる立場から、こうした土地の記憶にも向き合ってきた。<a href="https://fudosan.atawi.link/jikka/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=oishi_ronko" target="_blank" rel="noopener">家・土地・空き家の整理について相談する</a>ことができる。歴史を書き留めることと、その舞台となった土地を次の世代へ手渡すことは、地続きの営みだと考えている。
+  </div>
+
+  <section class="notes" aria-label="注">
+    <h2>注</h2>
+    <ol class="fn-list">
+      <li id="fn1">本稿の史料はいずれも、豊田町郷土を研究する会編『郷土研究資料第二集 天竜川池田の渡船』（豊田町教育委員会発行、昭和51年〔1976年〕3月）に収載・紹介されたものに拠る。以下、個別史料の年紀・数値は同書による。<a href="#r1" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn2">『譲渡申御船役之事』安政6年（1859年）12月。池田大橋家伝来の証文で、大番役の一か月片川についての一月二分五厘の舟役を金二十三両で譲渡した旨を記す。金額・日付は史料記載の水準の事実であり、当時の実勢価値への換算は別途の検討を要する。<a href="#r2" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn3">文化3年（1806年）「船名敷割」は持高23.925名敷を47人で、明治4年（1871年）「船名敷割」は同規模を50人で分けたとする。船名敷割に関する史料の出典には『史潮』44号（松井秀次）が関わる。細分化の程度が各世帯へ及ぼした影響は本稿では未確認とする。<a href="#r3" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn4">文政12年（1829年）の史料による。船勧進物の徴収権がもと両村平等であったものが、池田村渡船方に有利に傾いたと伝える。<a href="#r4" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn5">天保11年（1840年）12月「賃銭〆高国中勧物村方勘定辻調帳」。収入・支出の各費目および換算率は同帳の記載による。ここに示す数値は帳簿記載の水準の事実であり、実収益・実勢価格を示すものではない。<a href="#r5" aria-label="本文へ戻る">&#8617;</a></li>
+    </ol>
+    <p class="fn-editorial" style="font-family:'Zen Kaku Gothic New',sans-serif;font-size:12.5px;color:var(--sub);text-indent:0;margin-top:14px;line-height:1.85;">付記：本稿は一般読者向け記事 t048 の内容を、郷土史研究者向けに経済史・史料批判の観点から再構成した論考版である。帳簿・証文に記された数値は「そう記された」水準の史実として扱い、実収益・運営の実態・救済の規模は推定または未確認として区別した。</p>
+  </section>
+
+  <section class="references" aria-label="参考文献">
+    <h2>参考文献・参考資料</h2>
+    <ul class="refs">
+      <li>豊田町郷土を研究する会編『郷土研究資料第二集 天竜川池田の渡船』豊田町教育委員会、昭和51年（1976年）3月。</li>
+      <li>『賃銭〆高国中勧物村方勘定辻調帳』天保11年（1840年）12月（前掲『天竜川池田の渡船』所収）。</li>
+      <li>『譲渡申御船役之事』安政6年（1859年）12月、池田大橋家文書（前掲書所収）。</li>
+      <li>「船名敷割」文化3年（1806年）・明治4年（1871年）（前掲書所収）。</li>
+      <li>『池田村渡船方指出帳』延享元年（1744年）（前掲書所収）。</li>
+      <li>『出来形帳』文化14年（1817年）（前掲書所収）。</li>
+      <li>松井秀次「船名敷割に関する史料」『史潮』44号。</li>
+      <li>磐田市『磐田市史』通史編（磐田市、該当章）。</li>
+      <li>豊田町誌編さん委員会編『豊田町誌』（該当章）。</li>
+      <li>大石浩之の磐田論考 第190号「天竜川池田の渡船（運営組織）」　https://iwata-monogatari.net/oishi-ronko/190/　（最終閲覧：2026年7月26日）。</li>
+      <li>大石浩之の磐田論考 第228号「渡船を支えた助郷」　https://iwata-monogatari.net/oishi-ronko/228/　（最終閲覧：2026年7月26日）。</li>
+      <li>磐田物語 t048「渡船経済のしくみ ── 船賃の分配と船勧進物、堤防修理」　https://iwata-monogatari.net/t048.html　（最終閲覧：2026年7月26日）。</li>
+      <li>文化庁「国指定文化財等データベース」　https://kunishitei.bunka.go.jp/　（最終閲覧：2026年7月26日）。</li>
+    </ul>
+  </section>
+
+  <div class="pager">
+    <a href="https://iwata-monogatari.net/oishi-ronko/">← 大石浩之の磐田論考 一覧へ</a>
+    <a href="https://iwata-monogatari.net/t048.html">一般向け記事版（t048）を読む →</a>
+  </div>
+  </article>
+</main>
+
+<footer class="im-foot">
+  <style>
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand:hover{text-decoration:none;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
+  </style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。本論考は個人の調査・覚え書きをもとに、確度の層を区別しながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://oishi-hiroyuki.org/" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+      </ul>
+    </div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+  </div>
+</footer>
+</body>
+</html>
