@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1785025770,
-  "generation": 20260726092930,
-  "git_commit_at_stamp": "ebab44b6a010dd0c27eca8321ae513c26854409d",
+  "generated_at_unix": 1785026858,
+  "generation": 20260726094738,
+  "git_commit_at_stamp": "7ebbd29b9aa64d8f18264983742aaa1a6f3e3e11",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -32,19 +32,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "1c8aa886e7691a4cc76ad8d9b4a7225170b3d70a0e58760a7b1eafc38a234be1"
+      "sha256": "81fabaa5d12e9cda4005c9c6a4bd6cac677484517d7f9310f5bdf7cfe8a97fa1"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "2ff3a4532e90c4cebb3baeeeaf448e6374a7574ef5a9c24df3e4ebbf5da33567"
+      "sha256": "baf16692cd8b911f666a8fd994e6d006d03c5eb695714ac7ab5caa57ba309bf5"
     },
     {
       "path": "data/pages.json",
-      "sha256": "51d40897b2a5e7d46b0cea65e255a2d138c555da5fddeb6b8693995a4c0d139d"
+      "sha256": "8e7e6215b1c3b27dd87c5ae55b46d192c7ac485c9e53c74cfd1456efa2ab1b93"
     },
     {
       "path": "index.html",
-      "sha256": "8cab21246c5aee4954fd5380d7eefa6d9798e518b82531671b4ed95a26669f29"
+      "sha256": "e004923fa8356d9abcbebfd00a0e3f5d3b22fbf5aabe0c36d231fff8958cf630"
     },
     {
       "path": "package.json",
@@ -64,30 +64,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "18256cab5f8f25ba10487629032202d5a36bb32f34d5444b42d17ddd35340292"
+      "sha256": "f0ae45355579bee00e933341f62abd096490969f142671b1c2530371416d19ee"
     },
     {
       "path": "updates.html",
-      "sha256": "bd5cd0b1aee3eb15d6fd8523e6a690f83a476f9e2f028960515f8f6227d44a61"
+      "sha256": "f97af3ee9d2f4e3b08ea77656b459b3c2a270b8c0c45a0275f87d4d7aedc5ebb"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "d590e501ecfb93f6dadbc051fa890e4d56fe159cf65c37f34a24b4750aa5c31f",
+      "content_sha256": "2a90f86af203e3a43b95165f0220b4b9bb4675ce256533cee411d04e2aaa7964",
       "path": "index.html",
-      "sha256": "8cab21246c5aee4954fd5380d7eefa6d9798e518b82531671b4ed95a26669f29",
+      "sha256": "e004923fa8356d9abcbebfd00a0e3f5d3b22fbf5aabe0c36d231fff8958cf630",
       "url": "/"
     },
     {
-      "content_sha256": "57c1e1fc6dda9433b1bd900d183197a58f0fa606853c5fb56043baaf81b76fb8",
+      "content_sha256": "5f380e168839b61c5cafa471af24cf8c36f9c67b723078c5ecd21fddd06aa5b4",
       "path": "updates.html",
-      "sha256": "bd5cd0b1aee3eb15d6fd8523e6a690f83a476f9e2f028960515f8f6227d44a61",
+      "sha256": "f97af3ee9d2f4e3b08ea77656b459b3c2a270b8c0c45a0275f87d4d7aedc5ebb",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "0f8ed9d380557e96af492136494778407114e7bbff5a5606fa8e0c126dcee422",
+      "content_sha256": "db4d1250864bb292488d9739910a0883957e5351f7eda6523fc69b09da36cfe4",
       "path": "c034.html",
-      "sha256": "1c8aa886e7691a4cc76ad8d9b4a7225170b3d70a0e58760a7b1eafc38a234be1",
+      "sha256": "81fabaa5d12e9cda4005c9c6a4bd6cac677484517d7f9310f5bdf7cfe8a97fa1",
       "url": "/c034.html"
     },
     {
@@ -149,6 +149,36 @@
       "path": "oishi-iwata-tochi-kiokuroku/05/index.html",
       "sha256": "9b2bd8eedaa5fa2bfdbce1bb85800478061e0d25ac662e64f58fe7bec7d8a9cb",
       "url": "/oishi-iwata-tochi-kiokuroku/05"
+    },
+    {
+      "content_sha256": "27dabd7b1d0eb20069ea3de0396c17acdcd2671654580bab10455793e8081b4a",
+      "path": "oishi-ronko/146/index.html",
+      "sha256": "1f9d7b51524ec95de3b4d1335571223f95ed668c800e35f31964784e1d8c3fd3",
+      "url": "/oishi-ronko/146"
+    },
+    {
+      "content_sha256": "fbb1ada9d23ea8f2dc07af88c9f46b1923d8f24ecc06cd34590c457d97c5a237",
+      "path": "oishi-ronko/147/index.html",
+      "sha256": "a6feecece8590fc1454a6d9fe2f45d45ec11a265bbb56f4c4d21fa74ed782402",
+      "url": "/oishi-ronko/147"
+    },
+    {
+      "content_sha256": "e96aa369658d217e765ba071bb5dfb726b39f7dd8f717a749173f85a56156a6e",
+      "path": "oishi-ronko/148/index.html",
+      "sha256": "8cbb1f05d6707f45fac5ef47103315b705c5b6d803a8ad52e55ca35337b03a96",
+      "url": "/oishi-ronko/148"
+    },
+    {
+      "content_sha256": "1320a4c7660e612ddc8dde46d0542e616fa74bd6d89791b6e1260173b8a1886f",
+      "path": "oishi-ronko/149/index.html",
+      "sha256": "2c037da155acce20c5adc9235d7c43b0ed0f570108f7763cbed2fc3069094016",
+      "url": "/oishi-ronko/149"
+    },
+    {
+      "content_sha256": "1ec7964615e9e3726f104d40a74770c28147dbaf27e87d585fd8d80bd87bfdce",
+      "path": "oishi-ronko/150/index.html",
+      "sha256": "447773177fc2873e570495bc41fff5816c9219aafdfe19ba5a665cd61c917039",
+      "url": "/oishi-ronko/150"
     },
     {
       "content_sha256": "17e537ae000278ac5cde7ec1e8d12364bef5d31f3581a3b36867595d36fd02f2",
@@ -839,47 +869,17 @@
       "path": "oishi-ronko/035/index.html",
       "sha256": "2e90b944c229915527e03a5a7095bbbbe841f978b98e45e5089346a4533ba715",
       "url": "/oishi-ronko/035"
-    },
-    {
-      "content_sha256": "ccce77bac481417a150bb697e5470f964113fe1115f0edfb0aa3d43896f0ddb2",
-      "path": "oishi-ronko/026/index.html",
-      "sha256": "e6b4fd927e7649c1e59dd8d5d5b275fc8dfc1fe5a66979b4bb3a351c50d31684",
-      "url": "/oishi-ronko/026"
-    },
-    {
-      "content_sha256": "3fad240268bfa4479f927dddd19706b18fcd57661012a5e84c8ce463a2a37cac",
-      "path": "oishi-ronko/027/index.html",
-      "sha256": "c42f695f22efbb14cf7b9eb410443888be637fa91e8323b2650682a9e5201171",
-      "url": "/oishi-ronko/027"
-    },
-    {
-      "content_sha256": "2630720fca45450394b2cfb94a03898e8c05a0ccdba0fa43839f1d1fdeb03a9d",
-      "path": "oishi-ronko/028/index.html",
-      "sha256": "b1735099d58e4dddbf64f4f935b3435fc676414c2ef33ec98ebdb553eb7ef35a",
-      "url": "/oishi-ronko/028"
-    },
-    {
-      "content_sha256": "b3bb09a2185e1c4c8b77ad4cf805d3035399e83fcded6c0cf812ec2cb1d6d10f",
-      "path": "oishi-ronko/029/index.html",
-      "sha256": "0fcd030f2baab7a54aae45fe70439ac316f2472577b927886ea1175618847c14",
-      "url": "/oishi-ronko/029"
-    },
-    {
-      "content_sha256": "b566ba4e71cec91e71687820dd954785e644c9ebe2ca4576428f93bca0c6629e",
-      "path": "oishi-ronko/030/index.html",
-      "sha256": "dbca2ccaec8b4a068c97d6a5a6018c7fb3709ad03dbf21411a884df754f34b5e",
-      "url": "/oishi-ronko/030"
     }
   ],
   "schema": 1,
-  "state_hash": "5044c2f39b2e51821f2d0bd49e59bd918f622818aa6f6df096d09be3f585a9c1",
+  "state_hash": "0460d8d3e338ff725b75580f1737f755b92a65baf0d9a8a15d0e878103393ef2",
   "summary": {
     "archived_pages": 1,
-    "knowledge_pages": 812,
-    "new_articles": 819,
-    "new_articles_sha256": "2ff3a4532e90c4cebb3baeeeaf448e6374a7574ef5a9c24df3e4ebbf5da33567",
-    "pages_sha256": "51d40897b2a5e7d46b0cea65e255a2d138c555da5fddeb6b8693995a4c0d139d",
-    "pages_total": 815,
-    "published_pages": 814
+    "knowledge_pages": 817,
+    "new_articles": 824,
+    "new_articles_sha256": "baf16692cd8b911f666a8fd994e6d006d03c5eb695714ac7ab5caa57ba309bf5",
+    "pages_sha256": "8e7e6215b1c3b27dd87c5ae55b46d192c7ac485c9e53c74cfd1456efa2ab1b93",
+    "pages_total": 820,
+    "published_pages": 819
   }
 }
