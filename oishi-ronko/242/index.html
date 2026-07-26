@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>のこぎり屋根を読む ── 繊維の記憶を刻む産業遺構｜大石浩之の磐田論考｜磐田物語</title>
+<meta name="description" content="福田に伝わる「のこぎり屋根」を産業遺構として読む学術論考。北窓採光の工場建築様式が遠州織物の記憶をいかに刻むかを、形態と用途・年代・主体の確度層に腑分けし、史料批判の観点から検討する。「未確認」と「記載なし」を区別しつつ、産業遺構の読み方を提示する。">
+<meta property="og:title" content="のこぎり屋根を読む ── 繊維の記憶を刻む産業遺構｜大石浩之の磐田論考">
+<meta property="og:description" content="のこぎり屋根＝北窓採光の工場建築様式を産業遺構として読み、遠州織物の記憶との結びつきを史料批判的に検討する学術論考。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://iwata-monogatari.net/oishi-ronko/242/">
+<meta property="og:locale" content="ja_JP">
+<meta name="iwata:title" content="のこぎり屋根を読む">
+<meta name="iwata:published" content="2026-07-26">
+<meta name="iwata:category" content="福田・論考">
+<meta name="iwata:new-article" content="1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#20292e;--accent:#2f6079;--accent2:#356f88;--sub:#586873;--rule:#c8d5dc;--rule2:#dfe8ec;--paper:#fffdf8;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Shippori Mincho",serif;color:var(--ink);background:var(--paper);line-height:2.0;font-size:16.5px;-webkit-font-smoothing:antialiased;text-align:justify;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .gothic{font-family:"Zen Kaku Gothic New",sans-serif;}
+  main{max-width:720px;margin:0 auto;padding:0 24px 40px;}
+  .crumb{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--sub);padding:18px 0 4px;text-align:left;letter-spacing:.02em;}
+  .crumb a{color:var(--sub);}
+  /* ===== 論文タイトル・ヘッダー ===== */
+  .kiyo-hero{text-align:center;padding:26px 0 0;margin:6px 0 0;border:0;background:none;box-shadow:none;}
+  .kiyo-journal{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--accent);font-weight:700;letter-spacing:.22em;margin:0 0 6px;}
+  .kiyo-series{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.08em;margin:0 0 22px;}
+  .kiyo-hero h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:27px;line-height:1.6;color:var(--ink);margin:0 auto 12px;letter-spacing:.02em;max-width:22em;}
+  .kiyo-subtitle{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--accent2);margin:0 0 24px;line-height:1.7;}
+  .kiyo-author{font-size:16.5px;color:var(--ink);margin:0 0 3px;letter-spacing:.04em;}
+  .kiyo-author sup{font-size:10px;}
+  .kiyo-affil{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);margin:0 0 20px;}
+  .kiyo-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;margin-top:6px;font-family:"Zen Kaku Gothic New",sans-serif;}
+  .kiyo-meta div{font-size:12.5px;}
+  .kiyo-meta dt{display:inline;color:var(--sub);font-weight:500;}
+  .kiyo-meta dd{display:inline;color:var(--ink);margin-left:6px;font-weight:700;}
+  /* ===== 要旨・キーワード ===== */
+  .abstract{border-top:none;padding:6px 0 0;margin:30px 0 0;}
+  .abstract h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--accent);letter-spacing:.28em;text-align:center;font-weight:700;}
+  .abstract p{font-size:15px;margin:0;color:#33424b;line-height:1.95;padding:16px 22px;border:1px solid var(--rule2);background:#fbfdfe;border-radius:2px;}
+  .keywords{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;color:var(--sub);margin:14px 0 0;padding-bottom:16px;border-bottom:1px solid var(--rule);text-align:left;line-height:1.8;}
+  .keywords strong{color:var(--accent);}
+  /* ===== 目次 ===== */
+  .toc{margin:26px 0;padding:14px 0;border-top:1px solid var(--rule2);border-bottom:1px solid var(--rule2);}
+  .toc h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.2em;text-align:center;}
+  .toc ol{margin:0 auto;max-width:30em;padding-left:1.6em;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:var(--ink);text-align:left;}
+  .toc li{margin:6px 0;line-height:1.7;}
+  .toc a{color:var(--ink);}
+  /* ===== 見出し ===== */
+  h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;color:var(--ink);margin:48px 0 18px;padding-bottom:8px;border-bottom:1.5px solid var(--accent2);letter-spacing:.02em;text-align:left;}
+  h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16.5px;color:var(--accent2);margin:30px 0 10px;text-align:left;}
+  p{margin:0 0 16px;text-indent:1em;}
+  .abstract p,.keywords,.verdict,figcaption,.cta-note,.refs li,.fn-list li,.pager,.crumb{text-indent:0;}
+  /* ===== 学説節（論文体） ===== */
+  .setsu{background:none;border:0;border-radius:0;padding:0;margin:22px 0;}
+  .setsu-tag{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:11.5px;font-weight:700;color:var(--accent);background:none;padding:0;margin:22px 0 2px;letter-spacing:.12em;}
+  .setsu-tag.denshou{color:var(--accent2);}
+  .setsu h3{font-family:"Shippori Mincho",serif;font-size:17.5px;color:var(--ink);margin:2px 0 12px;border-bottom:1px dotted var(--rule);padding-bottom:8px;}
+  .setsu p{margin:0 0 14px;font-size:16px;text-indent:1em;}
+  .verdict{font-size:14.5px;color:#33424b;background:none;border-left:3px solid var(--accent2);border-radius:0;padding:2px 0 2px 16px;margin:14px 0 0;line-height:1.85;}
+  .verdict strong{color:var(--accent2);}
+  /* ===== 図版 ===== */
+  figure{margin:32px 0;}
+  .fig-box{background:#fff;border:1px solid var(--rule);border-radius:2px;padding:20px 16px;text-align:center;}
+  figcaption{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-top:10px;line-height:1.8;text-align:left;}
+  svg{max-width:100%;height:auto;}
+  .svg-label{fill:var(--ink);}.svg-sub{fill:var(--sub);}
+  /* ===== 表 ===== */
+  .table-wrap{overflow-x:auto;margin:24px 0;}
+  table.academic-table{width:100%;border-collapse:collapse;min-width:700px;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;line-height:1.7;border-top:2px solid var(--accent2);border-bottom:2px solid var(--accent2);}
+  .academic-table th{background:none;color:var(--accent);text-align:left;font-weight:700;border-bottom:1px solid var(--accent2);}
+  .academic-table th,.academic-table td{border-bottom:1px solid var(--rule2);padding:10px 12px;vertical-align:top;text-indent:0;}
+  .academic-table caption{caption-side:top;text-align:left;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-bottom:8px;}
+  /* ===== 脚注・参考文献 ===== */
+  sup.fnref{font-size:.68em;font-family:"Zen Kaku Gothic New",sans-serif;line-height:0;}
+  sup.fnref a{color:var(--accent);}
+  .notes,.references{margin-top:40px;}
+  .notes h2,.references h2{font-size:16px;}
+  .fn-list,.refs{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);}
+  .fn-list li,.refs li{margin:0 0 8px 1.6em;line-height:1.8;padding-left:.2em;}
+  .fn-list li{list-style:decimal;}
+  .cta-note{background:#fbfdfe;border:1px solid var(--rule2);border-radius:2px;padding:18px 20px;margin:36px 0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:#33424b;line-height:1.9;}
+  .cta-note a{font-weight:700;}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:42px 0 10px;flex-wrap:wrap;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;}
+  @media(max-width:600px){.kiyo-hero h1{font-size:22px;}body{font-size:16px;}h2{font-size:18px;}.kiyo-subtitle{font-size:15.5px;}}
+</style>
+<link rel="canonical" href="https://iwata-monogatari.net/oishi-ronko/242/">
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+</head>
+<body class="area-fukude">
+
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="crumb"><a href="https://iwata-monogatari.net/">磐田物語</a> ／ <a href="https://iwata-monogatari.net/oishi-ronko/">大石浩之の磐田論考</a> ／ のこぎり屋根を読む</div>
+
+  <article>
+  <header class="kiyo-hero">
+    <p class="kiyo-journal">磐田郷土史研究紀要</p>
+    <p class="kiyo-series">大石浩之の磐田論考　第242号（福田産業遺構研究　一）</p>
+    <h1>のこぎり屋根を読む</h1>
+    <p class="kiyo-subtitle">繊維の記憶を刻む産業遺構 ── 北窓採光の工場建築を史料批判的に読む</p>
+    <p class="kiyo-author">大石浩之<sup>1</sup></p>
+    <p class="kiyo-affil"><sup>1</sup> 富士ヶ丘サービス株式会社 代表取締役</p>
+    <dl class="kiyo-meta">
+      <div><dt>公開日</dt><dd>2026.07.26</dd></div>
+      <div><dt>資料検証</dt><dd>公開資料による検証済み</dd></div>
+      <div><dt>対象地区</dt><dd>磐田市福田</dd></div>
+    </dl>
+  </header>
+
+  <section class="abstract" aria-label="要旨">
+    <h2>要旨</h2>
+    <p>のこぎり屋根（鋸屋根）は、片流れの屋根面を鋸の歯状に連続させ、その立ち上がりに設けた高窓から採光する工場建築の様式である。窓を北へ向ければ直射日光を避けた均質な光が終日得られるため、糸や布の色を見分ける必要のある繊維工場に適し、近代の織物産地に広く用いられてきた。本稿は、福田の地域資料に「のこぎり屋根」として登録された産業の記憶を手がかりに、この形態が繊維産業の記憶をいかに刻むかを、産業遺構の読み方として史料批判的に論じる。建築様式としての形態と採光原理は建築史のうえで確認できる事柄である一方、個別の建物の用途・建設年代・営んだ主体については、素材とする資料の情報が薄く、本稿の範囲では推定または未確認にとどまる。本稿は「未確認」と「記載なし」を区別し、形態から用途を一足飛びに断ずる推論を戒めつつ、のこぎり屋根を遠州織物の産業景観のなかに置き直して読む方法を提示する。</p>
+  </section>
+  <p class="keywords"><strong>キーワード：</strong>のこぎり屋根／北窓採光／遠州織物／産業遺構／近代化遺産／福田／史料批判</p>
+
+  <nav class="toc" aria-label="目次">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#s1">問題設定 ── のこぎり屋根は何を読む対象か</a></li>
+      <li><a href="#s2">形態の原理 ── 北窓採光と工場空間</a></li>
+      <li><a href="#s3">背景としての遠州織物と福田</a></li>
+      <li><a href="#s4">形態は史実、用途は推定 ── 確度の層を分ける</a></li>
+      <li><a href="#s5">「未確認」と「記載なし」── 素材の限界</a></li>
+      <li><a href="#s6">産業遺構としての読み方 ── 方法の提示</a></li>
+      <li><a href="#s7">保存・転用・滅失 ── 近代化遺産の現在</a></li>
+      <li><a href="#s8">結論 ── 形が記憶を刻むということ</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1">1. 問題設定 ── のこぎり屋根は何を読む対象か</h2>
+  <p>福田の産業を語る資料のなかに、「のこぎり屋根」という項目がある<sup class="fnref" id="r1"><a href="#fn1">1</a></sup>。屋根の形そのものが記録の見出しになるという事態は、一見すると奇妙に映る。神社や城郭であれば祭神や城主が主題になるのに対し、のこぎり屋根では、建物の用途でも所有者でもなく、屋根の断面形状が記憶の名前として選ばれている。本稿はまず、この選ばれ方それ自体を出発点に据える。屋根の形が地域の記憶の見出しになるのは、その形が特定の産業と分かちがたく結びついているからにほかならない。</p>
+  <p>のこぎり屋根とは、片流れの屋根を横に何枚も連ね、鋸の歯のような鋭い立ち上がりを反復させた屋根形式を指す。その立ち上がりの垂直に近い面にガラス窓を設け、そこから採光する。屋根面が波打つように連続するこの外観は、近代の工場を象徴する景観として、繊維産地をはじめとする各地の工業地帯に残されてきた。すなわちのこぎり屋根は、単なる意匠ではなく、内部で営まれた作業の性格を外形に刻み込んだ建築である。形を読むことが、そのまま産業を読むことにつながる──これがのこぎり屋根を産業遺構として扱う根拠である。</p>
+  <p>付け加えれば、屋根の形が記憶の見出しになるという事態は、産業建築ならではの特徴でもある。人物や事件が記憶の核になる社寺・城郭とは異なり、工場では、そこで営まれた作業の性格が建物の外形に刻まれ、その形がそのまま産業の記号として読まれる。のこぎり屋根という見出しは、内部の織機や働き手の姿が失われたのちも、屋根の断面だけで繊維のなりわいを喚起しうる。形が記憶の運び手になるというこの性質は、本稿全体を貫く着眼点であり、以下の各節はこの一点をさまざまな角度から確かめていく作業でもある。</p>
+  <p>ただし、ここで慎重を期さねばならない。素材とした地域資料が伝えるのは、「福田にのこぎり屋根に関わる産業の記憶がある」という事実の登録であって、特定の一棟の建物について、その所在・建設年・営んだ企業・現在の姿までを詳細に語るものではない。資料の情報量は薄く、そこから確実に取り出せる事実は限られている。したがって本稿は、素材から確定できる範囲と、建築史・産業史の一般的知見から補える範囲と、なお未確認にとどまる範囲とを、意識的に切り分けながら論を進める。素材が薄いことを、憶測で埋めてはならない。むしろ薄さそのものを、産業遺構をどう読むかという方法上の問いへと転じることが、本稿の企図である。</p>
+  <p>本稿の構成を述べておく。まず第2節でのこぎり屋根という形態の建築的原理を確認し、第3節で遠州織物と福田の産業的背景を押さえる。続く第4節と第5節で、形態・用途・年代・主体という要素を確度の層に腑分けし、「未確認」と「記載なし」の区別を立てる。第6節で産業遺構としての読み方を方法として提示し、第7節で保存・転用・滅失という近代化遺産の現在に触れ、第8節を結論とする。全体を貫く姿勢は一つである。確実に言えることだけを史実として述べ、そうでないものは確度を明示して推定・未確認と記す。この禁欲的な手続きこそが、素材の薄い産業遺構を後世の調べものに耐える形で書き留める方途だと考える。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="のこぎり屋根の断面と北向き高窓からの採光を示す模式図">
+        <defs>
+          <marker id="fig01-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#d28a41"/></marker>
+        </defs>
+        <rect x="10" y="12" width="600" height="276" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="42" text-anchor="middle" font-size="14" class="svg-label">のこぎり屋根の断面 ── 北窓から均質な光を採る</text>
+        <line x1="60" y1="240" x2="560" y2="240" stroke="#356f88" stroke-width="2"/>
+        <g fill="none" stroke="#2f6079" stroke-width="2.4">
+          <path d="M80 240 L80 150 L200 200"/>
+          <path d="M200 240 L200 150 L320 200"/>
+          <path d="M320 240 L320 150 L440 200"/>
+          <path d="M440 240 L440 150 L520 175"/>
+        </g>
+        <g stroke="#6fb7d8" stroke-width="4">
+          <line x1="82" y1="152" x2="82" y2="196"/>
+          <line x1="202" y1="152" x2="202" y2="196"/>
+          <line x1="322" y1="152" x2="322" y2="196"/>
+        </g>
+        <g stroke="#d28a41" stroke-width="2" marker-end="url(#fig01-arrow)">
+          <line x1="40" y1="90" x2="86" y2="150"/>
+          <line x1="160" y1="90" x2="206" y2="150"/>
+          <line x1="280" y1="90" x2="326" y2="150"/>
+        </g>
+        <text x="70" y="80" font-size="11.5" class="svg-sub">北からの拡散光</text>
+        <text x="470" y="150" font-size="12" fill="#2f6079">緩い勾配（受光面）</text>
+        <text x="120" y="228" font-size="11.5" class="svg-sub">窓（急勾配・北面）＝青</text>
+        <text x="310" y="270" text-anchor="middle" font-size="11" class="svg-sub">急な面に窓を立て、緩い面で屋根を葺く。窓を北へ向けると直射を避けた光が終日得られる。</text>
+      </svg>
+    </div>
+    <figcaption>図1　のこぎり屋根の断面模式図。急勾配の面に窓（青）を立て、そこを北へ向けることで、直射日光による影やむらを避けた均質な採光が得られる。緩勾配の面が屋根として働く。</figcaption>
+  </figure>
+
+  <h2 id="s2">2. 形態の原理 ── 北窓採光と工場空間</h2>
+  <p>のこぎり屋根がなぜあの形をとるのかは、採光の理屈から説明できる。屋根を鋸歯状に連続させると、一枚ごとに緩い面と急な面が交互に現れる。緩い面は雨をしのぐ屋根として働き、急な面──ほぼ垂直に立ち上がる面──に窓を設ける。この窓を北に向けると、直射日光が室内へ差し込まず、天空全体から回り込む拡散光だけを採り入れることができる。直射光は時刻とともに角度を変え、強い影とむらを生むが、北からの拡散光は一日を通じて安定し、光の質がほとんど変わらない。</p>
+  <p>この均質な光が決定的な意味をもつのが、繊維の作業である。糸の太さや撚りの具合、布の織り目、そして染めた色の微妙な差は、光の当たり方が変われば見え方も変わってしまう。時刻によって明るさや色味の揺れる作業場では、品質の判断が安定しない。のこぎり屋根の北窓採光は、この揺れを抑え、朝から夕まで同じ条件で糸と布を見続けられる環境をつくる。加えて、屋根の高い位置から光を落とす頂側採光は、壁の窓に頼る側面採光とは違い、建物を横にいくら広げても奥まで光が届く。広い床に多くの織機を並べ、その全体を均一な明るさで満たすという工場の要求に、この形式は的確に応えた。</p>
+  <p>構造の面でも、のこぎり屋根には利点があった。屋根の荷重を負う小屋組を鋸歯の反復に合わせて規則的に架け、柱の少ない広い内部空間を確保できる。天井が高くとられることで、綿ぼこりのこもりやすい紡織の現場に一定の換気空間も生まれた。電灯が高価で照明が乏しかった時代、日中の作業を自然光でまかなえることは、燃料費・電力費を抑えるうえでも合理的だった。すなわちのこぎり屋根は、採光・空間・構造・費用という複数の条件が、繊維工場の要求のもとで一つの形へ収束した帰結である。あの波打つ屋根は、意匠として選ばれたのではなく、作業の必要が形になったものと理解するのが正しい。</p>
+  <p>のこぎり屋根そのものは、福田や遠州に固有の発明ではない。工場の頂側採光を目的とする鋸歯状の屋根は、産業革命期の英国で綿工場などに用いられたのが早い例として知られ、近代の工業化とともに各国へ広まった様式である。日本でも、明治期以降に近代的な工場建築が導入される過程で、繊維工場を中心にこの形式が取り入れられていったと考えられている。したがって福田ののこぎり屋根も、地域に孤立した特異な建物ではなく、近代工業の国際的な建築様式が、遠州織物という地場産業の現場へ根を下ろした一例として位置づけられる。形態の来歴を押さえておくことは、個別の建物を過度に神話化せず、産業史の大きな流れのなかで読むための足場になる。</p>
+  <p>もっとも、のこぎり屋根が繊維工場だけのものだったと断じるのは行き過ぎである。均質な採光を要する作業は織物に限らず、機械加工や組立、印刷、あるいは製材や食品の一部の工程にも同様の需要があった。のこぎり屋根はそうした工場一般に用いられうる汎用性をもつ。したがって、ある建物がのこぎり屋根であることは、それが繊維工場であったことを直ちには意味しない。形態は用途を強く示唆するが、決定はしない。この含意と限界の距離を測ることが、次節以降で扱う確度の腑分けの前提となる。形が語りうるのはどこまでで、どこから先は別の資料を要するのか──産業遺構を読むとは、まずこの境界を見定める作業である。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="のこぎり屋根の連続する平面と広い工場空間を示す模式図">
+        <rect x="10" y="12" width="600" height="236" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="40" text-anchor="middle" font-size="14" class="svg-label">連続する鋸歯と広い工場空間</text>
+        <g fill="#eef7fb" stroke="#356f88" stroke-width="1.6">
+          <path d="M60 150 L60 100 L110 150 Z"/>
+          <path d="M110 150 L110 100 L160 150 Z"/>
+          <path d="M160 150 L160 100 L210 150 Z"/>
+          <path d="M210 150 L210 100 L260 150 Z"/>
+          <path d="M260 150 L260 100 L310 150 Z"/>
+          <path d="M310 150 L310 100 L360 150 Z"/>
+          <path d="M360 150 L360 100 L410 150 Z"/>
+          <path d="M410 150 L410 100 L460 150 Z"/>
+          <path d="M460 150 L460 100 L510 150 Z"/>
+          <path d="M510 150 L510 100 L560 150 Z"/>
+        </g>
+        <rect x="60" y="150" width="500" height="70" fill="#fff" stroke="#356f88" stroke-width="1.6"/>
+        <g stroke="#586873" stroke-width="1"><line x1="120" y1="160" x2="120" y2="210"/><line x1="200" y1="160" x2="200" y2="210"/><line x1="280" y1="160" x2="280" y2="210"/><line x1="360" y1="160" x2="360" y2="210"/><line x1="440" y1="160" x2="440" y2="210"/><line x1="500" y1="160" x2="500" y2="210"/></g>
+        <text x="310" y="192" text-anchor="middle" font-size="11.5" class="svg-sub">柱の少ない広い床に織機を並べる</text>
+        <text x="310" y="242" text-anchor="middle" font-size="11" class="svg-sub">鋸歯を横へ反復させれば、床をいくら広げても頂側から均一な光が届く。</text>
+      </svg>
+    </div>
+    <figcaption>図2　のこぎり屋根の平面連続。鋸歯を横方向へ反復することで、広い床の奥まで頂側採光が届き、多数の織機を均質な明るさで満たす工場空間が成り立つ。</figcaption>
+  </figure>
+
+  <h2 id="s3">3. 背景としての遠州織物と福田</h2>
+  <p>のこぎり屋根を福田の文脈で読むには、遠州織物という産業の地理を押さえておく必要がある。遠州──天竜川下流域を中心とする静岡県西部一帯は、綿の栽培と綿織物の生産で知られた地域であり、近代以降は綿織物・別珍・コール天（コーデュロイ）などの産地として発展した。豊田佐吉が織機の改良に取り組んだ地としても記憶され、動力織機の普及とともに、家内工業から工場生産への移行が進んだ。この移行の局面で、多数の織機を据える工場建築が各地に建てられ、その屋根の一部にのこぎり屋根が採用された。遠州は、のこぎり屋根が現れる条件を備えた産業地帯であった。</p>
+  <p>福田の繊維がどのような性格をもったかについては、素材とした資料からは細部まで踏み込めない。遠州が別珍・コール天といったパイル織物の産地として知られたことを踏まえれば、福田の織物もその系譜のいずれかに連なった可能性は考えられるが、これは地域産業の大枠からの推測であって、福田の工場が何を織り、どの市場へ出荷したかを一次史料で確認したものではない。品目・出荷先・雇用の規模といった具体は、商工名鑑や企業の記録に当たって初めて像を結ぶ。本稿はこの点を推定の段にとどめ、断定を避ける。産地の一般像から個別の工場の実態へ降りていくには、なお別系統の資料を要することを、ここで確認しておきたい。</p>
+  <p>福田は、この遠州織物地帯の南端、遠州灘に面した太田川下流の地に位置する。海と川に挟まれたこの地は、漁業とともに織物のなりわいを重ねてきた土地として語られる。福田の織物がどの品目を主力とし、どの規模の工場を擁したかを一次史料で網羅的に確認する作業は本稿の範囲を超えるが、遠州の綿織物地帯の一角として繊維のなりわいが営まれてきたこと自体は、地域の産業史のうえで確認できる大きな枠組みである<sup class="fnref" id="r2"><a href="#fn2">2</a></sup>。福田にのこぎり屋根の記憶が残ることは、この枠組みのなかに置けば、遠州織物という広い地層の一つの露頭として理解できる。</p>
+  <p>ここで、福田の産業遺構をめぐる既刊の論考との関係を述べておきたい。本シリーズでは、福田の産業の記憶として<a href="/oishi-ronko/229/">ドルチェ倉庫をめぐる産業遺構の論考</a>を別稿で扱った。倉庫という保管・物流の施設が産業の裏方を語るのに対し、のこぎり屋根の工場は生産の現場を語る。両者は同じ福田の産業景観を、流通と生産という異なる側面から照らす関係にある。本稿はしたがって、倉庫論と重複を避け、あくまで「のこぎり屋根＝北窓採光の工場建築」という形態と、それが刻む繊維の記憶に軸を置く。一般向けの記事版として<a href="/f044.html">のこぎり屋根から産業の記憶を読む</a>を公開しているが、本稿はそれを郷土史研究者向けに、確度の層を明示して再構成したものである。</p>
+  <p>もう一点、遠州織物の盛衰という時間軸にも触れておきたい。綿織物・別珍コール天の産地としての遠州は、戦後の一時期に活況を呈したのち、化学繊維の台頭、安価な輸入品との競合、産業構造の転換のなかで、生産の縮小を経験したと考えられている。工場の統廃合や廃業が進めば、のこぎり屋根の建物は役割を終え、取り壊されるか、別の用途へ転用されるか、あるいは空き家として残される。すなわち福田に残るのこぎり屋根の記憶は、産業が盛んだった時期だけでなく、それが退いたのちの土地の使われ方までを含む、産業のライフサイクル全体の痕跡でもある。産業遺構を読むとは、興隆の記録を読むと同時に、その後をも読むことである。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="天竜川・遠州灘・太田川と福田の位置を示す遠州織物地帯の模式地図">
+        <rect x="10" y="12" width="600" height="256" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="40" text-anchor="middle" font-size="14" class="svg-label">遠州織物地帯の模式 ── 福田の位置</text>
+        <path d="M10 210 Q160 200 320 214 T610 216 L610 268 L10 268 Z" fill="#e6f2f8" stroke="#6fb7d8" stroke-width="1.2"/>
+        <text x="90" y="252" font-size="12" fill="#2f6079">遠州灘</text>
+        <path d="M150 60 C160 120,150 170,140 210" fill="none" stroke="#6fb7d8" stroke-width="4"/>
+        <text x="118" y="80" font-size="11.5" class="svg-sub">天竜川</text>
+        <path d="M430 70 C420 120,415 170,405 214" fill="none" stroke="#6fb7d8" stroke-width="3"/>
+        <text x="440" y="92" font-size="11.5" class="svg-sub">太田川</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <circle cx="250" cy="120" r="7" fill="#d28a41"/><text x="250" y="104" font-size="11.5" fill="#8a5a1f">遠州織物地帯</text>
+          <circle cx="405" cy="196" r="8" fill="#b85b5b"/><text x="405" y="180" font-size="12" fill="#7a3030">福田</text>
+        </g>
+        <text x="310" y="255" text-anchor="middle" font-size="10.5" class="svg-sub">福田は遠州織物地帯の南端、太田川下流・遠州灘沿いに位置する（位置関係は概念図）。</text>
+      </svg>
+    </div>
+    <figcaption>図3　遠州織物地帯における福田の位置の概念図。天竜川下流域を中心とする綿織物地帯の南端、太田川下流・遠州灘沿いに福田は位置する。縮尺・形状は正確な地図ではなく関係を示す模式である。</figcaption>
+  </figure>
+
+  <h2 id="s4">4. 形態は史実、用途は推定 ── 確度の層を分ける</h2>
+  <p>ここから、産業遺構を読むうえで最も重要な手続きに入る。一棟の建物を前にしたとき、そこから読み取れる情報は一様の確からしさをもつわけではない。形態・用途・建設年代・営んだ主体・現況といった要素は、それぞれ確認の難易度が異なり、確度の層を異にする。これらを同じ平面で語ると、確実なことと推測にすぎないことが混ざり、結果として全体の信頼性が損なわれる。産業遺構の記述では、この層を一つずつ分離することが出発点になる。</p>
+  <p>まず<strong>形態</strong>。屋根が鋸歯状であること、窓がどちらを向いているか、鋸歯が何連あるか、構造がどのような小屋組かといった外形の情報は、建物が現存するなら観察によって確認でき、写真や図面が残るなら記録によっても裏づけられる。のこぎり屋根という様式それ自体は建築史のうえで確立した概念であり、北窓採光の原理も物理的に説明がつく。この水準は、確認できる範囲において<strong>史実</strong>として扱ってよい。</p>
+  <p>次に<strong>用途</strong>。のこぎり屋根であることは繊維工場であったことを強く示唆するが、前節で述べたとおり、この形式は繊維以外の工場にも用いられうる。したがって「のこぎり屋根だから織物工場だ」という推論は、蓋然性は高いものの、それ自体では<strong>推定</strong>の域を出ない。用途を確定するには、操業を伝える文書、企業の記録、地図上の工場表記、あるいは関係者の証言など、形態とは別系統の資料が要る。形から用途への飛躍を、確実な事実であるかのように語ってはならない。</p>
+  <p>さらに<strong>建設年代</strong>と<strong>営んだ主体</strong>は、いっそう確認が難しい。のこぎり屋根が近代の工場に多いという一般的傾向から、おおよその時代を推し量ることはできても、特定の一棟がいつ、誰の手で建てられたかは、登記・図面・社史・古地図といった固有の史料に当たらなければ確定しない。素材とした地域資料にこれらの情報が乏しい以上、本稿では建設年代・主体を<strong>未確認</strong>として留保する。最後に<strong>現況</strong>──現存するか、改修されたか、取り壊されたか──も、資料採取時と現在とで変わりうるため、現地確認を経ない限り確定はできない。以下の表に、この確度の腑分けを整理する。</p>
+
+  <div class="table-wrap">
+    <table class="academic-table">
+      <caption>表1　のこぎり屋根の産業遺構をめぐる要素の確度層 ── 何が確認でき、何が推定・未確認にとどまるか</caption>
+      <thead><tr><th>要素</th><th>確度の層</th><th>確認の手だて</th><th>本稿での扱い</th></tr></thead>
+      <tbody>
+        <tr><td>屋根形態（鋸歯・北窓・小屋組）</td><td>史実（確認できる範囲）</td><td>現地観察、写真・図面</td><td>のこぎり屋根様式・北窓採光の原理は建築史上確認できる事実として扱う。</td></tr>
+        <tr><td>採光と繊維作業の適合</td><td>通説</td><td>建築史・産業史の一般的知見</td><td>均質採光が繊維の色・織り目の判別に適することは広く支持される。</td></tr>
+        <tr><td>個別建物の用途（織物工場か）</td><td>推定</td><td>操業記録、地図の工場表記、証言</td><td>形態は繊維工場を強く示唆するが、他用途もありうるため断定しない。</td></tr>
+        <tr><td>建設年代</td><td>未確認</td><td>登記・図面・社史・古地図</td><td>近代の様式という傾向は言えるが、特定の年代は資料を要し留保する。</td></tr>
+        <tr><td>営んだ主体（企業・個人）</td><td>未確認</td><td>社史・商工名鑑・聞き取り</td><td>素材に記載が乏しく、本稿の範囲では突き止められていない。</td></tr>
+        <tr><td>現況（現存・改修・滅失）</td><td>要確認</td><td>現地確認、最新の地図・空中写真</td><td>採取時から変化しうるため、現地確認を経ない限り確定しない。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>この表が示すのは、一つの産業遺構のなかに複数の確度層が同居しているという事実である。形態は確認でき、用途は推定でき、年代と主体は未確認にとどまる。この落差を無視して均一に語れば、確実な観察も曖昧な憶測も同じ調子の断定文になってしまう。逆に、層ごとに語の水準を変え、「確認できる」「示唆される」「推定される」「未確認である」と書き分ければ、読者は各情報の重みを自分で測れる。産業遺構の記述における誠実さとは、分からないことを分からないと明記し、確からしさの階梯を保つことにほかならない。</p>
+
+  <h2 id="s5">5. 「未確認」と「記載なし」── 素材の限界</h2>
+  <p>前節で「未確認」という語をくり返し用いた。ここで、この語を「記載なし」から厳密に区別しておきたい。両者はしばしば混同されるが、含意はまったく異なる。「記載なし」とは、ある事柄が史料に書かれていないこと、すなわち史料の側の欠如を指す。これに対し「未確認」とは、筆者がその事柄を裏づける史料に、いまだ突き当たっていないこと、すなわち調査の側の状態を指す。前者は対象についての判断であり、後者は調査についての判断である<sup class="fnref" id="r5"><a href="#fn5">5</a></sup>。</p>
+  <p>この区別が実践上どう効くかを、本稿の題材で考えてみる。福田のあるのこぎり屋根について「建設年代は未確認である」と書くとき、それは「その建物の建設年を記した史料が存在しないと確定した」という意味ではない。あくまで「筆者の調査範囲では、建設年を裏づける史料に到達していない」という状態を述べているにすぎない。建設年を記した図面や登記が現に存在し、ただ筆者が把握していないだけかもしれない。逆に「記載なし」と書けるのは、当該の史料群を博捜したうえで、そこに記述が欠けていることを積極的に確認した場合に限られる。この二つを取り違えると、単に調べ足りないだけの状態を、あたかも史料そのものの欠如であるかのように語る誤りに陥る。</p>
+  <p>素材とした地域資料の薄さは、まさにこの区別を要請する。資料が短いために分からないことの大半は、「記載がないから存在しない」のではなく、「この資料には載っていないので、別の資料で確かめる必要がある＝未確認」の状態にある。したがって本稿が用途・年代・主体を留保するのは、それらが存在しないと断じているのではなく、確かめる作業がこれからだと述べているのである。この姿勢を明示しておくことには実益がある。後日、社史や商工名鑑、古地図、あるいは地域の方の証言といった別系統の資料が持ち寄られたとき、未確認の項目は確認へと更新されうる。記述を断定で閉じず、確度を明示して開いておくことが、追記によって育つ地域史の土台になる。</p>
+  <p>具体的な線引きの例を挙げておく。福田ののこぎり屋根について、本稿が「経営主体は未確認」と記すのは、商工名鑑や社史をまだ突き合わせていないからであって、そうした記録が存在しないと確かめたからではない。もし将来、当時の商工名鑑に該当する織物業者の記載が見つかれば、この項目は一挙に確認へと転じる。逆に、複数の名鑑や地図を博捜してなお該当が見あたらなければ、そのとき初めて「記載なし」と書ける。未確認から記載なしへ、あるいは未確認から確認へ──どちらへ動くにせよ、それは新たな資料との突き合わせを経て決まる。現時点で言えるのは未確認までであり、その一語に調査の現在地が正直に映し出されている。</p>
+  <p>この区別の作法は、のこぎり屋根に限らず、産業遺構一般に適用できる。近代の工場や倉庫は、社寺や城郭に比べて記録が残りにくい。実用の建物ゆえに由緒書のような文書が編まれることが少なく、企業の記録は廃業とともに散逸しやすい。それだけに、確認できたことと未確認のことを取り違えない禁欲が、いっそう重く求められる。分からないことを正直に未確認と記し、記載なしとの区別を保つ──この一見地味な手続きが、記録の乏しい産業遺構を後世の検証に耐える形で残す、最も確かな方法である。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="確認できる範囲と未確認・記載なしの区別を示す確度層の図">
+        <rect x="10" y="12" width="600" height="226" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="42" text-anchor="middle" font-size="14" class="svg-label">確度の層と「未確認／記載なし」の区別</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif">
+          <rect x="40" y="70" width="150" height="90" rx="10" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="2"/>
+          <text x="115" y="106" text-anchor="middle" font-size="13" fill="#1f4f6f">確認できる</text>
+          <text x="115" y="128" text-anchor="middle" font-size="10.5" fill="#5b6b74">形態・採光原理</text>
+          <rect x="200" y="70" width="150" height="90" rx="10" fill="#fbf3e6" stroke="#d28a41" stroke-width="2"/>
+          <text x="275" y="106" text-anchor="middle" font-size="13" fill="#8a5a1f">推定</text>
+          <text x="275" y="128" text-anchor="middle" font-size="10.5" fill="#5b6b74">用途（繊維か）</text>
+          <rect x="360" y="70" width="220" height="90" rx="10" fill="#fbecec" stroke="#b85b5b" stroke-width="2"/>
+          <text x="470" y="100" text-anchor="middle" font-size="13" fill="#7a3030">未確認 ≠ 記載なし</text>
+          <text x="470" y="122" text-anchor="middle" font-size="10.5" fill="#5b6b74">年代・主体は調査未到達</text>
+          <text x="470" y="140" text-anchor="middle" font-size="10.5" fill="#5b6b74">（史料の欠如ではない）</text>
+        </g>
+        <text x="310" y="206" text-anchor="middle" font-size="11" class="svg-sub">「未確認」は調査の状態、「記載なし」は史料の欠如。両者を取り違えない。</text>
+      </svg>
+    </div>
+    <figcaption>図4　確度の層と語の区別。形態は確認でき、用途は推定、年代・主体は未確認にとどまる。「未確認」は調査が到達していない状態であり、史料そのものの欠如を示す「記載なし」とは区別される。</figcaption>
+  </figure>
+
+  <h2 id="s6">6. 産業遺構としての読み方 ── 方法の提示</h2>
+  <p>以上を踏まえ、のこぎり屋根を産業遺構として読む手順を、方法として整理しておきたい。ここでいう「読む」とは、建物の形から出発して、それが属した産業と地域の記憶へ確度を保ちながら遡っていく作業を指す。手順は概ね四つの段階に分けられる<sup class="fnref" id="r3"><a href="#fn3">3</a></sup>。</p>
+  <p>第一に、<strong>形態を記述する</strong>。屋根が鋸歯状か、窓はどちらを向くか、鋸歯は何連か、構造はどうか。これは現地観察と記録に基づく、最も確実な層である。写真や実測が可能なら、この段階で形態の史実を固める。第二に、<strong>形態から用途を推定する</strong>。北窓採光であれば繊維をはじめとする視作業の工場が想定されるが、これは推定であり、他用途の可能性を排除しない。推定であることを明示したまま、次の段階で検証にかける。</p>
+  <p>第三に、<strong>別系統の資料で照合する</strong>。地図の工場表記、商工名鑑、社史、新聞記事、古写真、そして地域の方の証言。形態と用途の推定を、これら固有の史料と突き合わせることで、用途を確定へ近づけ、年代と主体という未確認の層を埋めていく。ここで重要なのは、資料ごとに信頼性が異なることへの目配りである。当事者の一次記録と、後年の紹介記事とでは、証言としての重みが違う。第四に、<strong>地域の産業史へ接続する</strong>。個別の建物を、遠州織物という広い地層のなかに置き直し、興隆と衰退、転用と滅失という時間軸のうえで意味づける。孤立した一棟としてではなく、地域のなりわいの履歴の一部として読むのである。</p>
+  <p>この四段階を貫く原則は、確度を落とさないことである。形態の記述を用途の推定にすり替えず、推定を照合抜きに確定と偽らず、未確認を記載なしと混同しない。一足飛びに「こののこぎり屋根は明治期の織物工場だ」と語る誘惑を退け、「鋸歯状で北窓をもつ工場建築である（確認）／繊維工場であった可能性が高い（推定）／建設年と経営主体は未確認」と段階を刻んで述べる。遠回りに見えるこの手続きこそ、産業遺構を後の検証に開いたまま記録する方法である。福田ののこぎり屋根も、この階梯に沿って読めば、素材の薄さに引きずられて憶測へ流れることなく、確かめられた分だけを確かに書き留められる。</p>
+  <p>この四段階の手順には、あらかじめ断っておくべき限界もある。手順は確度を保つための枠組みであって、それ自体が新たな史料を生み出すわけではない。照合すべき別系統の資料が現に残っていなければ、用途の推定も年代の未確認も、そのまま留保され続ける。産業建築は記録が散逸しやすく、この留保が長く解けないことも珍しくない。それでもなお、確度を明示して段階を刻むことには意味がある。どの層まで確かめられ、どこから先が未確認なのかが記録に残れば、後日その空白を埋めるべき資料の見当がつく。方法は答えを与えるのではなく、問いの所在を正確に指し示す。産業遺構の読み方とは、確かめられたことと確かめるべきことを、はっきり分けて次へ手渡す技術である。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="形態記述から用途推定・資料照合・産業史接続へ至る読み方の流れ図">
+        <defs>
+          <marker id="fig05-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2f7fa3"/></marker>
+        </defs>
+        <rect x="10" y="12" width="620" height="186" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="320" y="42" text-anchor="middle" font-size="14" class="svg-label">産業遺構の読み方 ── 確度を落とさない四段階</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle" font-size="12" fill="#22303a">
+          <rect x="30" y="90" width="128" height="58" rx="10" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="1.8"/><text x="94" y="114">形態記述</text><text x="94" y="132" font-size="10" fill="#5b6b74">確認</text>
+          <rect x="178" y="90" width="128" height="58" rx="10" fill="#fbf3e6" stroke="#d28a41" stroke-width="1.8"/><text x="242" y="114">用途推定</text><text x="242" y="132" font-size="10" fill="#5b6b74">推定</text>
+          <rect x="326" y="90" width="128" height="58" rx="10" fill="#eef7ec" stroke="#6f9a4f" stroke-width="1.8"/><text x="390" y="114">資料照合</text><text x="390" y="132" font-size="10" fill="#5b6b74">検証</text>
+          <rect x="474" y="90" width="136" height="58" rx="10" fill="#fbecec" stroke="#b85b5b" stroke-width="1.8"/><text x="542" y="114">産業史へ接続</text><text x="542" y="132" font-size="10" fill="#5b6b74">位置づけ</text>
+          <path d="M158 119 L177 119" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig05-arrow)"/>
+          <path d="M306 119 L325 119" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig05-arrow)"/>
+          <path d="M454 119 L473 119" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig05-arrow)"/>
+        </g>
+        <text x="320" y="182" text-anchor="middle" font-size="11" class="svg-sub">各段階の確度を混同せず、形態→用途→検証→位置づけの順に確かめる。</text>
+      </svg>
+    </div>
+    <figcaption>図5　産業遺構の読み方の四段階。形態の記述（確認）から用途の推定、別系統資料による照合、地域産業史への接続へと、確度を落とさずに進む手順を示す。</figcaption>
+  </figure>
+
+  <h2 id="s7">7. 保存・転用・滅失 ── 近代化遺産の現在</h2>
+  <p>のこぎり屋根の工場は、いま多くが岐路に立っている。繊維産業が縮小し、建物が本来の役割を終えたとき、その後の道は大きく三つに分かれる。保存されるか、別の用途へ転用されるか、あるいは取り壊されて滅失するか。この分岐は、のこぎり屋根に限らず、近代化遺産と呼ばれる産業建築が共通して直面する現実である<sup class="fnref" id="r4"><a href="#fn4">4</a></sup>。</p>
+  <p>保存の道は、文化財としての指定や登録、あるいは所有者の意志によって建物が現状のまま維持される場合を指す。近代の産業建築については、国の登録有形文化財の制度が保存の一つの受け皿となってきた。ただし、実用を終えた大きな建物を維持するには費用がかかり、老朽化や耐震の問題も重い。保存が選ばれる例は、必ずしも多数派ではない。転用の道は、のこぎり屋根の特徴──広い無柱空間と頂側からの均質な採光──を活かし、工場を別の機能へ読み替える方向である。均質な光と開放的な空間は、工房やギャラリー、店舗、集会施設などへの転用と相性がよい。屋根の形をそのまま残しながら中身を入れ替えることで、産業の記憶を景観として継承しつつ、建物に新たな役割を与えられる。</p>
+  <p>滅失の道は、老朽化や土地利用の転換によって建物が取り壊される場合である。産業建築は所有者にとって維持の負担が大きく、更地にして別の用途へ転じるほうが経済的に合理的と判断されやすい。のこぎり屋根の工場が一棟また一棟と消えていくのは、この判断の積み重ねの結果である。滅失してしまえば、形態という最も確実な史実の層すら失われ、残るのは写真と記憶と、地域資料に登録された項目名だけになる。福田の資料に「のこぎり屋根」という見出しが立てられていること自体が、こうした滅失に先んじて記憶を書き留めようとする営みの一環だと読むこともできる。</p>
+  <p>ここで、本稿の筆者としての立場を一言述べておきたい。産業遺構をどう扱うかは、所有者の事情、費用、安全、地域の合意といった現実の条件のなかで決まる事柄であり、外から一律に保存を説くことはできない。しかし、たとえ建物が転用や滅失の道をたどるとしても、その前に形態を記録し、用途と年代を確認できる範囲で書き留めておくことには、確かな意味がある。建物が失われても、確度を明示した記録が残れば、のこぎり屋根が刻んでいた繊維の記憶は、後の世代がたどり直せる形で残る。記録することと、土地や建物の行く末に向き合うことは、地続きの営みである。関連して<a href="/f041.html">福田の別の産業遺構をめぐる記事</a>もあわせて読めば、福田の産業景観をより広く見渡せるだろう。</p>
+  <p>のこぎり屋根の記録を誰が担うのかも、近代化遺産に共通する課題である。社寺や城郭には由緒を守る主体があるのに対し、実用の工場や倉庫には、その歴史を書き留める仕組みが乏しい。操業していた企業が廃業すれば記録は散り、建物が個人の所有に移れば、その来歴は所有者の記憶のうちにしか残らないこともある。だからこそ、地域資料に「のこぎり屋根」という項目が立てられ、写真や証言が持ち寄られることには、公的な文化財の指定とは別の、地域自身による記録という価値がある。滅失に先んじて形態と記憶を書き留めておく営みは、制度の外側で産業の記憶を支える、もう一つの保存のかたちだと言える。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="のこぎり屋根の工場が保存・転用・滅失へ分岐する図">
+        <defs>
+          <marker id="fig06-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#586873"/></marker>
+        </defs>
+        <rect x="10" y="12" width="600" height="216" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="42" text-anchor="middle" font-size="14" class="svg-label">役割を終えた工場の三つの道</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <rect x="234" y="66" width="152" height="46" rx="10" fill="#eef7fb" stroke="#356f88" stroke-width="1.8"/>
+          <text x="310" y="94" font-size="12.5" fill="#22303a">役割を終えた工場</text>
+          <rect x="40" y="160" width="150" height="52" rx="10" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="1.8"/><text x="115" y="184" font-size="12.5" fill="#1f4f6f">保存</text><text x="115" y="202" font-size="10" fill="#5b6b74">文化財・登録</text>
+          <rect x="235" y="160" width="150" height="52" rx="10" fill="#eef7ec" stroke="#6f9a4f" stroke-width="1.8"/><text x="310" y="184" font-size="12.5" fill="#3f6a2a">転用</text><text x="310" y="202" font-size="10" fill="#5b6b74">工房・店舗ほか</text>
+          <rect x="430" y="160" width="150" height="52" rx="10" fill="#fbecec" stroke="#b85b5b" stroke-width="1.8"/><text x="505" y="184" font-size="12.5" fill="#7a3030">滅失</text><text x="505" y="202" font-size="10" fill="#5b6b74">取り壊し</text>
+          <path d="M280 112 L140 158" stroke="#586873" stroke-width="2" marker-end="url(#fig06-arrow)"/>
+          <path d="M310 112 L310 158" stroke="#586873" stroke-width="2" marker-end="url(#fig06-arrow)"/>
+          <path d="M340 112 L480 158" stroke="#586873" stroke-width="2" marker-end="url(#fig06-arrow)"/>
+        </g>
+        <text x="310" y="150" text-anchor="middle" font-size="10.5" class="svg-sub">いずれの道でも、事前に形態を記録すれば記憶は残せる。</text>
+      </svg>
+    </div>
+    <figcaption>図6　役割を終えた工場の分岐。保存・転用・滅失のいずれをたどるにせよ、事前に形態を記録し確度を明示して書き留めておけば、のこぎり屋根が刻む繊維の記憶は後世へ残せる。</figcaption>
+  </figure>
+
+  <h2 id="s8">8. 結論 ── 形が記憶を刻むということ</h2>
+  <p>本稿は、福田の地域資料に登録された「のこぎり屋根」を手がかりに、この形態が繊維産業の記憶をいかに刻むかを、産業遺構の読み方として検討してきた。得られた見取り図は次のとおりである。のこぎり屋根は、北へ向けた高窓から均質な光を採り入れる工場建築の様式であり、その形態と採光の原理は建築史のうえで確認できる史実である。均質な採光が糸や布の色・織り目の判別に適することは通説として広く支持され、遠州織物という綿織物地帯の一角に福田が位置することも、産業史の枠組みとして確認できる。他方で、福田の個別のこぎり屋根について、その用途は繊維工場であった可能性が高いという推定にとどまり、建設年代と営んだ主体は本稿の範囲では未確認である。</p>
+  <p>この結論の眼目は、確度の層を混同しなかった点にある。素材とした資料は薄く、そこから憶測で建物の歴史を組み立てることは容易であった。だが本稿は、確認できる形態を史実として述べ、繊維工場という用途を推定と明示し、年代と主体を未確認として留保し、そして「未確認」を「記載なし」から一貫して区別した。分からないことを分からないと記すこの禁欲は、記述を貧しくするものではない。むしろ、後日の資料によって未確認を確認へ更新できる余地を残し、地域史を追記に開いておく積極的な手続きである。</p>
+  <p>そのうえで、本稿の立場を一文で示す。のこぎり屋根とは、繊維という産業の必要が建築の形へ結晶したものであり、その形が現に残るかぎり、たとえ用途や年代の記録が失われても、繊維のなりわいがそこにあったことを、形態そのものが証言し続ける。すなわちのこぎり屋根は、文書に代わって記憶を刻む物言わぬ史料である。屋根の断面が語るのは、光を求めた作業の理屈であり、その理屈の背後には、糸と布に向き合った人々の労働がある。形を読むとは、その労働の痕跡を読むことにほかならない。</p>
+  <p>最後に、本稿が残した課題を明記しておく。第一に、福田の個別のこぎり屋根の所在・現況は、現地確認と最新の地図・空中写真の照合によって確かめられるべき事柄である。第二に、その用途・建設年代・経営主体は、商工名鑑・社史・古地図・聞き取りといった別系統の資料を博捜することで、未確認から確認へ押し上げられる余地がある。第三に、福田を含む遠州織物地帯におけるのこぎり屋根の分布と盛衰は、より広い産業景観論として、倉庫や住宅を含む他の産業遺構とあわせて論じられるべき主題である。<a href="/oishi-ronko/229/">ドルチェ倉庫をめぐる既刊の論考</a>と本稿とを接続し、生産と流通の両面から福田の産業を読み直す作業は、稿を改めて続編で扱いたい。形が記憶を刻むという本稿の見立てを、個々の建物へ丁寧に当てはめていくこと──その地道な積み重ねの先に、福田の産業のなりわいが、確度を保ったまま像を結んでいくはずである。</p>
+
+  <div class="cta-note">
+    本稿の主題である福田には、繊維のなりわいとともに受け継がれてきた工場や倉庫、そして古い家や土地が数多く残る。筆者は磐田・袋井で不動産と介護の実務に携わる立場から、こうした産業建築や土地の行く末にも向き合ってきた。<a href="https://fudosan.atawi.link/jikka/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=oishi_ronko" target="_blank" rel="noopener">家・土地・空き家の整理について相談する</a>ことができる。産業の記憶を書き留めることと、その舞台となった建物や土地を次の世代へ手渡すことは、地続きの営みだと考えている。
+  </div>
+
+  <section class="notes" aria-label="注">
+    <h2>注</h2>
+    <ol class="fn-list">
+      <li id="fn1">「のこぎり屋根」は、福田地区の産業・なりわいに関わる記憶として地域資料に登録された項目である。素材とした一般向け記事版 f044「のこぎり屋根から産業の記憶を読む」を参照。同資料は項目の登録を伝えるが、特定の建物の所在・現況を詳細には記さない。<a href="#r1" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn2">遠州（静岡県西部・天竜川下流域）が綿織物・別珍・コール天の産地として発展したことは、地域の産業史のうえで広く知られる。福田の織物の品目・規模を一次史料で網羅的に確定する作業は本稿の範囲を超えるため、ここでは産地としての大枠を通説として述べるにとどめる。<a href="#r2" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn3">ここで示す四段階（形態記述・用途推定・資料照合・産業史接続）は、確度の層を保ちながら産業遺構を読むための本稿の作業手順であり、特定の先行研究の定式を引くものではない。産業考古学・近代化遺産研究の一般的方法を、本稿の題材に即して整理したものである。<a href="#r3" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn4">近代の産業建築の保存・転用については、国の登録有形文化財制度が一つの受け皿となってきた。制度の概要は文化庁の関連資料を参照。個別建物の指定・登録の有無は、本稿では確認していない。<a href="#r4" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn5">本稿における「未確認」と「記載なし」の区別は、本論考シリーズ全体で採用する史料批判の基本姿勢である。前者は調査が到達していない状態、後者は史料そのものの欠如を指し、両者を混同しないことを一貫した方針とする。<a href="#r5" aria-label="本文へ戻る">&#8617;</a></li>
+    </ol>
+    <p class="fn-editorial" style="font-family:'Zen Kaku Gothic New',sans-serif;font-size:12.5px;color:var(--sub);text-indent:0;margin-top:14px;line-height:1.85;">付記：本稿は一般読者向け記事 f044「のこぎり屋根から産業の記憶を読む」の内容を、郷土史研究者向けに史料批判の観点から再構成した論考版である。確度の層（史実・通説・推定・未確認）を語の水準で区別し、のこぎり屋根様式と北窓採光の原理を確認できる史実、個別建物の用途を推定、建設年代・経営主体を未確認として扱った。</p>
+  </section>
+
+  <section class="references" aria-label="参考文献">
+    <h2>参考文献・参考資料</h2>
+    <ul class="refs">
+      <li>磐田物語 f044「のこぎり屋根から産業の記憶を読む」　https://iwata-monogatari.net/f044.html　（最終閲覧：2026年7月26日）。</li>
+      <li>大石浩之「ドルチェ倉庫を読む ── 産業遺構としての倉庫」大石浩之の磐田論考 第229号　https://iwata-monogatari.net/oishi-ronko/229/　（最終閲覧：2026年7月26日）。</li>
+      <li>文化庁「登録有形文化財（建造物）」制度の概要　https://www.bunka.go.jp/　（最終閲覧：2026年7月26日）。</li>
+      <li>文化庁「国指定文化財等データベース」　https://kunishitei.bunka.go.jp/　（最終閲覧：2026年7月26日）。</li>
+      <li>静岡県『静岡県史』通史編（近代・現代の産業に関する章）、静岡県。</li>
+      <li>磐田市『磐田市史』通史編（産業・織物に関する章）、磐田市。</li>
+      <li>日本産業考古学会 編『産業遺産』関連論集（近代工場建築の項）。</li>
+      <li>近代建築史・工場建築に関する一般的概説（のこぎり屋根・頂側採光の項）。</li>
+      <li>遠州織物・遠州綿紬に関する地域産業資料（別珍・コール天を含む）。</li>
+      <li>豊田佐吉と遠州の織機改良に関する伝記・地域資料。</li>
+      <li>磐田物語「<a href="/f041.html">福田の産業遺構をめぐる記事</a>」　https://iwata-monogatari.net/f041.html　（最終閲覧：2026年7月26日）。</li>
+      <li>磐田物語「<a href="/01008-fukude.html">福田地区トップ</a>」　https://iwata-monogatari.net/01008-fukude.html　（最終閲覧：2026年7月26日）。</li>
+    </ul>
+  </section>
+
+  <div class="pager">
+    <a href="https://iwata-monogatari.net/oishi-ronko/">← 大石浩之の磐田論考 一覧へ</a>
+    <a href="https://iwata-monogatari.net/f044.html">一般向け記事版（f044）を読む →</a>
+  </div>
+  </article>
+</main>
+
+<footer class="im-foot">
+  <style>
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand:hover{text-decoration:none;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
+  </style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。本論考は個人の調査・覚え書きをもとに、確度の層を区別しながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://oishi-hiroyuki.org/" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+      </ul>
+    </div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+  </div>
+</footer>
+</body>
+</html>
