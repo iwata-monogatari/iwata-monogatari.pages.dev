@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>地名から磐田を読む ── 大字という単位と地名学の方法｜大石浩之の磐田論考｜磐田物語</title>
+<meta name="description" content="磐田市の大字（おおあざ）という行政・地理上の単位を入口に、地名から地域を読む地名学の方法を論じる方法論的論考。大字の記載・境界は史実、地名の由来は推定・伝承に腑分けし、地形・開発・信仰・人名という四類型と確度の対応を検討する。於保・二之宮・半場名・城之崎など既刊論考で扱った地名を横断し、地名を史料として扱うことの可能性と限界を史料批判的に問う。">
+<meta property="og:title" content="地名から磐田を読む ── 大字という単位と地名学の方法｜大石浩之の磐田論考">
+<meta property="og:description" content="大字という単位を入口に、地名から地域を読む方法とその限界を史料批判の観点から論じる、郷土史研究者向けの方法論的論考。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://iwata-monogatari.net/oishi-ronko/250/">
+<meta property="og:locale" content="ja_JP">
+<meta name="iwata:title" content="地名から磐田を読む ── 大字と地名学の方法">
+<meta name="iwata:published" content="2026-07-26">
+<meta name="iwata:category" content="総論・論考">
+<meta name="iwata:new-article" content="1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#20292e;--accent:#2f6079;--accent2:#356f88;--sub:#586873;--rule:#c8d5dc;--rule2:#dfe8ec;--paper:#fffdf8;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Shippori Mincho",serif;color:var(--ink);background:var(--paper);line-height:2.0;font-size:16.5px;-webkit-font-smoothing:antialiased;text-align:justify;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .gothic{font-family:"Zen Kaku Gothic New",sans-serif;}
+  main{max-width:720px;margin:0 auto;padding:0 24px 40px;}
+  .crumb{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--sub);padding:18px 0 4px;text-align:left;letter-spacing:.02em;}
+  .crumb a{color:var(--sub);}
+  /* ===== 論文タイトル・ヘッダー ===== */
+  .kiyo-hero{text-align:center;padding:26px 0 0;margin:6px 0 0;border:0;background:none;box-shadow:none;}
+  .kiyo-journal{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--accent);font-weight:700;letter-spacing:.22em;margin:0 0 6px;}
+  .kiyo-series{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.08em;margin:0 0 22px;}
+  .kiyo-hero h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:27px;line-height:1.6;color:var(--ink);margin:0 auto 12px;letter-spacing:.02em;max-width:22em;}
+  .kiyo-subtitle{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--accent2);margin:0 0 24px;line-height:1.7;}
+  .kiyo-author{font-size:16.5px;color:var(--ink);margin:0 0 3px;letter-spacing:.04em;}
+  .kiyo-author sup{font-size:10px;}
+  .kiyo-affil{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);margin:0 0 20px;}
+  .kiyo-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;margin-top:6px;font-family:"Zen Kaku Gothic New",sans-serif;}
+  .kiyo-meta div{font-size:12.5px;}
+  .kiyo-meta dt{display:inline;color:var(--sub);font-weight:500;}
+  .kiyo-meta dd{display:inline;color:var(--ink);margin-left:6px;font-weight:700;}
+  /* ===== 要旨・キーワード ===== */
+  .abstract{border-top:none;padding:6px 0 0;margin:30px 0 0;}
+  .abstract h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--accent);letter-spacing:.28em;text-align:center;font-weight:700;}
+  .abstract p{font-size:15px;margin:0;color:#33424b;line-height:1.95;padding:16px 22px;border:1px solid var(--rule2);background:#fbfdfe;border-radius:2px;}
+  .keywords{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;color:var(--sub);margin:14px 0 0;padding-bottom:16px;border-bottom:1px solid var(--rule);text-align:left;line-height:1.8;}
+  .keywords strong{color:var(--accent);}
+  /* ===== 目次 ===== */
+  .toc{margin:26px 0;padding:14px 0;border-top:1px solid var(--rule2);border-bottom:1px solid var(--rule2);}
+  .toc h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.2em;text-align:center;}
+  .toc ol{margin:0 auto;max-width:30em;padding-left:1.6em;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:var(--ink);text-align:left;}
+  .toc li{margin:6px 0;line-height:1.7;}
+  .toc a{color:var(--ink);}
+  /* ===== 見出し ===== */
+  h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;color:var(--ink);margin:48px 0 18px;padding-bottom:8px;border-bottom:1.5px solid var(--accent2);letter-spacing:.02em;text-align:left;}
+  h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16.5px;color:var(--accent2);margin:30px 0 10px;text-align:left;}
+  p{margin:0 0 16px;text-indent:1em;}
+  .abstract p,.keywords,.verdict,figcaption,.cta-note,.refs li,.fn-list li,.pager,.crumb{text-indent:0;}
+  /* ===== 学説節（論文体） ===== */
+  .setsu{background:none;border:0;border-radius:0;padding:0;margin:22px 0;}
+  .setsu-tag{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:11.5px;font-weight:700;color:var(--accent);background:none;padding:0;margin:22px 0 2px;letter-spacing:.12em;}
+  .setsu-tag.denshou{color:var(--accent2);}
+  .setsu h3{font-family:"Shippori Mincho",serif;font-size:17.5px;color:var(--ink);margin:2px 0 12px;border-bottom:1px dotted var(--rule);padding-bottom:8px;}
+  .setsu p{margin:0 0 14px;font-size:16px;text-indent:1em;}
+  .verdict{font-size:14.5px;color:#33424b;background:none;border-left:3px solid var(--accent2);border-radius:0;padding:2px 0 2px 16px;margin:14px 0 0;line-height:1.85;}
+  .verdict strong{color:var(--accent2);}
+  /* ===== 図版 ===== */
+  figure{margin:32px 0;}
+  .fig-box{background:#fff;border:1px solid var(--rule);border-radius:2px;padding:20px 16px;text-align:center;}
+  figcaption{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-top:10px;line-height:1.8;text-align:left;}
+  svg{max-width:100%;height:auto;}
+  .svg-label{fill:var(--ink);}.svg-sub{fill:var(--sub);}
+  /* ===== 表 ===== */
+  .table-wrap{overflow-x:auto;margin:24px 0;}
+  table.academic-table{width:100%;border-collapse:collapse;min-width:700px;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;line-height:1.7;border-top:2px solid var(--accent2);border-bottom:2px solid var(--accent2);}
+  .academic-table th{background:none;color:var(--accent);text-align:left;font-weight:700;border-bottom:1px solid var(--accent2);}
+  .academic-table th,.academic-table td{border-bottom:1px solid var(--rule2);padding:10px 12px;vertical-align:top;text-indent:0;}
+  .academic-table caption{caption-side:top;text-align:left;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-bottom:8px;}
+  /* ===== 脚注・参考文献 ===== */
+  sup.fnref{font-size:.68em;font-family:"Zen Kaku Gothic New",sans-serif;line-height:0;}
+  sup.fnref a{color:var(--accent);}
+  .notes,.references{margin-top:40px;}
+  .notes h2,.references h2{font-size:16px;}
+  .fn-list,.refs{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);}
+  .fn-list li,.refs li{margin:0 0 8px 1.6em;line-height:1.8;padding-left:.2em;}
+  .fn-list li{list-style:decimal;}
+  .cta-note{background:#fbfdfe;border:1px solid var(--rule2);border-radius:2px;padding:18px 20px;margin:36px 0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:#33424b;line-height:1.9;}
+  .cta-note a{font-weight:700;}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:42px 0 10px;flex-wrap:wrap;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;}
+  @media(max-width:600px){.kiyo-hero h1{font-size:22px;}body{font-size:16px;}h2{font-size:18px;}.kiyo-subtitle{font-size:15.5px;}}
+</style>
+<link rel="canonical" href="https://iwata-monogatari.net/oishi-ronko/250/">
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+</head>
+<body class="area-common">
+
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="crumb"><a href="https://iwata-monogatari.net/">磐田物語</a> ／ <a href="https://iwata-monogatari.net/oishi-ronko/">大石浩之の磐田論考</a> ／ 地名から磐田を読む</div>
+
+  <article>
+  <header class="kiyo-hero">
+    <p class="kiyo-journal">磐田郷土史研究紀要</p>
+    <p class="kiyo-series">大石浩之の磐田論考　第250号（地名学方法論　一）</p>
+    <h1>地名から磐田を読む</h1>
+    <p class="kiyo-subtitle">大字という単位と地名学の方法 ── 由来の類型・確度・史料批判</p>
+    <p class="kiyo-author">大石浩之<sup>1</sup></p>
+    <p class="kiyo-affil"><sup>1</sup> 富士ヶ丘サービス株式会社 代表取締役</p>
+    <dl class="kiyo-meta">
+      <div><dt>公開日</dt><dd>2026.07.26</dd></div>
+      <div><dt>資料検証</dt><dd>公開資料による検証済み</dd></div>
+      <div><dt>対象地区</dt><dd>磐田市全域（総論）</dd></div>
+    </dl>
+  </header>
+
+  <section class="abstract" aria-label="要旨">
+    <h2>要旨</h2>
+    <p>地名は、しばしば地域史を読み解く手がかりとして持ち出される。本稿は、磐田市の「大字（おおあざ）」という行政上・地理上の単位を入口に、地名から地域を読む地名学の方法とその限界を、方法論の水準で検討する。まず、大字の名称・記載・帰属といった水準は、公的記録に基づく史実として扱いうることを確認する。一方で、その地名がなぜその名を得たのかという由来は、多くの場合、推定または伝承の層に属する。本稿は地名の由来を地形・開発・信仰・人名の四類型に整理し、各類型が到達しうる確度の水準を比較したうえで、当て字・後付け・語呂合わせといった由来説に固有の落とし穴を史料批判の観点から点検する。あわせて、これまでの磐田論考が扱った於保・二之宮・半場名・城之崎などの地名を横断的に振り返り、地名から歴史は読めるが、地名だけで歴史は決められないという節度を、本稿の一貫した立場として提示する。「未確認」と「記載なし」の区別も終始保持する。</p>
+  </section>
+  <p class="keywords"><strong>キーワード：</strong>地名学／大字／小字／地名由来の類型／史料批判／当て字／磐田</p>
+
+  <nav class="toc" aria-label="目次">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#s1">問題設定 ── 地名から歴史は読めるか</a></li>
+      <li><a href="#s2">大字という単位 ── 記載と境界の水準</a></li>
+      <li><a href="#s3">地名の由来はどう分類できるか ── 四類型と確度</a></li>
+      <li><a href="#s4">地名を史料として使う ── 何が読めるのか</a></li>
+      <li><a href="#s5">地名研究の方法 ── 分布・古文献・地形照合</a></li>
+      <li><a href="#s6">由来説の限界 ── 当て字・後付け・恣意性</a></li>
+      <li><a href="#s7">磐田の地名を横断する ── 既刊論考からの検証</a></li>
+      <li><a href="#s8">結論 ── 読めることと、決められないこと</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1">1. 問題設定 ── 地名から歴史は読めるか</h2>
+  <p>地域の歴史を調べていると、地名が最初の入口になることが多い。ある土地がなぜその名で呼ばれるのかを問うことは、そこにかつて何があったのか、どのような地形の上に人が暮らしを営んだのかを問うことに、しばしば直結する。地名は土地に貼りついた最古の記録の一つであり、文字史料が乏しい土地にあっても、名そのものが過去を証言することがある。本稿の出発点は、この地名という手がかりを、どこまで史料として信頼してよいのか、という問いにある。</p>
+  <p>結論を先に一言で述べておく。地名からは確かに歴史の一端が読める。しかし地名「だけ」で歴史を決めることはできない。この二つの命題は矛盾しない。地名は過去へ通じる窓であると同時に、恣意的な解釈を招き寄せる罠でもある。読めることと決められることは別の水準の話であり、両者を混同したところに、地名をめぐる議論の多くの躓きがある。本稿は、その二つの水準を注意深く分けることを課題とする。</p>
+  <p>この問題は、これまでの磐田論考が個々の地名を扱うたびに、繰り返し背後に現れてきた。半場名を論じたときも、二之宮を論じたときも、城之崎を論じたときも、そのつど「この地名の由来はどの程度確からしいのか」という判断が問われた。本稿は、個々の地名論から一歩退いて、地名を読むという営みそのものを方法の水準で整理し直す。いわば、これまでの地名論考を貫いてきた作法を、明示的な手続きとして書き出す試みである。</p>
+  <p>地名を史料として扱う態度は、決して郷土史に特有の趣味ではない。文字に書かれた史料が乏しい前近代の地方において、地名は、その土地が経てきた履歴を今日まで運んでくる数少ない媒体である。土地の所有者は代わり、建物は失われ、文書は散逸しても、名だけは呼び継がれて残ることが多い。地名研究が地域史の基礎作業として重んじられてきたのは、この名の残存力のためである。ただし残存力があることと、名が正確な由来を保っていることとは別であり、名は伝わるうちに音を変え、字を替え、意味を忘れられていく。地名を読むとは、この変形の履歴を遡って、もとの意味に近づこうとする作業でもある。</p>
+  <p>方法を論じるにあたって、まず一つの単位を足場にしたい。磐田市の「大字」である。大字は行政上・地理上のまとまりとして公的に記載される単位であり、その名称や帰属は記録によって確かめられる。この確かめられる水準を土台に置いてはじめて、確かめにくい由来の水準を、それと区別しながら論じることができる。以下ではまず大字という単位の性格を押さえ、次に由来の類型と確度を整理し、地名研究の方法とその限界を検討したうえで、磐田の具体的な地名に立ち返る。</p>
+  <p>あらかじめ、本稿が一貫して用いる区別を二つ示しておく。第一に、確度の層である。土地の名称や帰属が公的記録に確認できる水準を<strong>史実</strong>、由来について根拠はあるが未確定のものを<strong>推定</strong>、地域で語り継がれてきたものを<strong>伝承</strong>、学界で広く受け入れられているが一点では確定しがたいものを<strong>通説</strong>として書き分ける。第二に、「未確認」と「記載なし」の区別である。ある由来を裏づける史料に筆者が突き当たっていない状態（未確認）と、史料を博捜した結果それが存在しないと言える状態（記載なし）とは、まったく別の事柄であり、両者を取り違えないことが、地名を読むうえでの最低限の禁欲となる。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="一つの地名に地形・開発・信仰・人名の痕跡が層として堆積する様子を示した模式図">
+        <defs>
+          <marker id="fig1-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2f7fa3"/></marker>
+        </defs>
+        <rect x="12" y="14" width="596" height="292" rx="20" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="46" text-anchor="middle" font-size="15" class="svg-label">一つの地名に堆積する記憶の層</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <rect x="150" y="66" width="320" height="34" rx="7" fill="#eef7ec" stroke="#6f9a4f" stroke-width="1.6"/><text x="310" y="89" font-size="13" fill="#3f6a2a">地形 ── 土地の形・水・高低</text>
+          <rect x="150" y="108" width="320" height="34" rx="7" fill="#fbf3e6" stroke="#d28a41" stroke-width="1.6"/><text x="310" y="131" font-size="13" fill="#8a5a1f">開発 ── 新田・入植・区画</text>
+          <rect x="150" y="150" width="320" height="34" rx="7" fill="#eef7fb" stroke="#356f88" stroke-width="1.6"/><text x="310" y="173" font-size="13" fill="#1f4f6f">信仰 ── 社寺・祭祀・霊地</text>
+          <rect x="150" y="192" width="320" height="34" rx="7" fill="#fbecec" stroke="#b85b5b" stroke-width="1.6"/><text x="310" y="215" font-size="13" fill="#7a3030">人名 ── 開発者・領主・屋号</text>
+          <rect x="235" y="250" width="150" height="40" rx="9" fill="#fff" stroke="#2f7fa3" stroke-width="2"/><text x="310" y="275" font-size="14" class="svg-label">地名</text>
+          <line x1="310" y1="226" x2="310" y2="248" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig1-arrow)"/>
+        </g>
+        <text x="60" y="160" font-size="12" fill="#5b6b74" writing-mode="tb" font-family="'Zen Kaku Gothic New',sans-serif">古　→　新</text>
+      </svg>
+    </div>
+    <figcaption>図1　地名に堆積する記憶の層。一つの地名には、地形・開発・信仰・人名といった異なる由来が重なりうる。地名を読むとは、この層を腑分けする作業にほかならない。</figcaption>
+  </figure>
+
+  <h2 id="s2">2. 大字という単位 ── 記載と境界の水準</h2>
+  <p>大字とは、市町村のなかに置かれた地理上の区画の名であり、多くはその市町村が成立する以前の旧村（近世の村）を引き継いだ単位である。1889年（明治22年）の町村制施行にあたり、いくつもの近世村が合併して新しい行政村がつくられたとき、それまでの村の名は、新しい村のなかの「大字」として残された。大字はさらに小さな「小字（こあざ）」に分かれ、市街地では「丁目」に区画し直された地区も多い。磐田市の場合、旧見付宿・旧中泉をはじめ、周辺の旧町村が幾度かの合併を経て現在の市域を形づくっており、大字の名の多くは、その合併以前の集落名を今日に伝えている<sup class="fnref" id="r1"><a href="#fn1">1</a></sup>。</p>
+  <p>ここで方法上、決定的に重要な区別がある。大字の「名称・記載・帰属・おおよその境界」は、公的記録によって確かめられる水準にある、という点である。ある地名が磐田市の大字として現に用いられていること、それがどの旧村を引き継ぐこと、どの地区に属することは、市の告示や地籍、地形図、そして磐田物語が公開する<a href="/c095.html">大字さくいん</a>のような整理を通じて、記録として確認できる。この水準は<strong>史実</strong>として扱ってよい。地名を論じるとき、まずこの確かめられる土台の上に立つことが、以降の議論の前提となる。</p>
+  <p>問題は、その大字が「なぜその名なのか」を問うた途端に、足場が記録の外へ出てしまうことである。名称そのものは記録に残るが、その名の起こりを記した同時代の一次史料は、多くの地名について存在しない。近世の村名は、多くが中世やそれ以前に遡る古い呼称を引き継いでおり、命名の瞬間を書き留めた文書が伝わることは稀である。したがって、大字の記載は史実の層に、その由来は推定または伝承の層に属するという腑分けが、つねに必要になる。この二つを同じ平面で語ると、記録で確かめられる帰属の話と、確かめようのない語源の話とが、いつのまにか同じ確からしさをまとって流通してしまう。</p>
+  <p>大字が近世村を引き継ぐという性格は、地名から歴史を読むうえで大きな利点になる。近世の村は、検地帳・年貢の記録・村絵図といった文書を残しており、大字の名を手がかりにその村へ遡れば、名称の背後にある土地の実態へ近づける。つまり大字は、それ自体が近世文書という一群の史料への索引として機能する。逆に言えば、大字の名だけを取り出して由来を云々するより、その名が指す近世村の記録へ分け入るほうが、はるかに確かな歴史が読める。地名を入口とし、そこから文書へ進むというこの順序は、本稿が繰り返し強調する作法の、最も基本的な形である。ただし、明治以降の合併や町名の再編によって、近世村と現在の大字とが単純に一対一で対応しない場合もあり、一つの旧村が分割され、あるいは複数の旧村が一つの町名に括られた例もある。名の連続を追うときは、この再編の履歴を併せて確かめる必要がある。</p>
+  <p>境界についても一言しておきたい。大字の境界は、地籍や地形図に線として引かれており、その意味では明確である。しかしその境界線がいつ、どのような経緯で引かれたのかという歴史は、線そのものからは読めない。旧村の耕地と入会地の配分、河川の付け替え、近代の耕地整理などが、境界の形に痕跡を残していることは多いが、それを読み取るには地形と土地利用の履歴を照合する別の作業が要る。境界は「現状として確かめられる」ことと「その来歴が分かる」こととが、やはり別の水準にあるのである。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="郡・旧村・大字・小字・丁目という地名の階層関係を示した図">
+        <rect x="12" y="14" width="596" height="232" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="44" text-anchor="middle" font-size="14" class="svg-label">地名の入れ子構造 ── 大字はどこにあるか</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <rect x="40" y="70" width="120" height="150" rx="10" fill="#eef7fb" stroke="#356f88" stroke-width="1.6"/>
+          <text x="100" y="96" font-size="12.5" fill="#1f4f6f">市（旧郡）</text>
+          <rect x="58" y="110" width="84" height="98" rx="8" fill="#fff" stroke="#6f9a4f" stroke-width="1.4"/>
+          <text x="100" y="132" font-size="11.5" fill="#3f6a2a">旧村</text>
+          <text x="100" y="150" font-size="10" fill="#5b6b74">（近世村）</text>
+          <text x="290" y="96" font-size="12.5" fill="#8a5a1f" text-anchor="start">町村制（1889年）による合併で</text>
+          <text x="290" y="118" font-size="12.5" fill="#8a5a1f" text-anchor="start">旧村名が「大字」として残る</text>
+          <rect x="300" y="140" width="120" height="34" rx="7" fill="#fbf3e6" stroke="#d28a41" stroke-width="1.6"/><text x="360" y="163" font-size="13" fill="#8a5a1f">大字</text>
+          <rect x="300" y="184" width="56" height="30" rx="6" fill="#fbecec" stroke="#b85b5b" stroke-width="1.4"/><text x="328" y="204" font-size="11" fill="#7a3030">小字</text>
+          <rect x="364" y="184" width="56" height="30" rx="6" fill="#fbecec" stroke="#b85b5b" stroke-width="1.4"/><text x="392" y="204" font-size="11" fill="#7a3030">丁目</text>
+          <line x1="360" y1="174" x2="360" y2="182" stroke="#b85b5b" stroke-width="1.6"/>
+          <rect x="460" y="140" width="130" height="74" rx="8" fill="#fff" stroke="#2f7fa3" stroke-width="1.6"/>
+          <text x="525" y="166" font-size="11" fill="#1f4f6f">記載・帰属</text>
+          <text x="525" y="186" font-size="11" fill="#1f4f6f">＝史実</text>
+          <text x="525" y="205" font-size="10.5" fill="#b85b5b">由来＝推定/伝承</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>図2　地名の入れ子構造。大字は近世村を引き継ぐ単位であり、その記載・帰属は史実として確かめられる。一方、名の由来は推定または伝承の層に属し、水準が異なる。</figcaption>
+  </figure>
+
+  <h2 id="s3">3. 地名の由来はどう分類できるか ── 四類型と確度</h2>
+  <p>地名の由来を論じるにあたり、まず由来のタイプを整理しておくと見通しがよい。地名学では地名の成り立ちをさまざまに分類するが、本稿は磐田の地名を読むという実用の観点から、地形・開発・信仰・人名の四類型を立てる。これは網羅的な分類ではなく、確度を論じるための作業仮説である<sup class="fnref" id="r2"><a href="#fn2">2</a></sup>。重要なのは、類型が異なれば、由来説がどこまで確からしくなりうるかという到達点も異なる、という点である。</p>
+  <div class="setsu">
+    <span class="setsu-tag">類型①・地形由来</span>
+    <h3>土地の形・水・高低が名になる</h3>
+    <p><strong>骨子。</strong>崎・谷・原・島・浦・田といった語を含む地名は、土地の地形や水利を写していることが多い。崎は台地や尾根の突き出た先端を、島は低湿地のなかの微高地を、浦は入り込んだ水辺を指す例が知られる。地形由来は、現地の地形と地名とを照合できるため、他の類型に比べて<strong>推定</strong>の確度を高めやすい。地形は容易には動かないからである。ただし、地形語を含むからといって必ず地形由来だと即断はできず、後述する当て字の可能性はつねに残る。</p>
+  </div>
+  <div class="setsu">
+    <span class="setsu-tag">類型②・開発由来</span>
+    <h3>新田・入植・区画が名になる</h3>
+    <p><strong>骨子。</strong>「新田」「新開」「新出」といった語を含む地名は、近世以降の耕地開発を示すことが多い。磐田市域にも新田を冠する大字は複数あり、これらは近世の開発の記憶を比較的明瞭に伝える。開発由来は、検地帳・新田開発の記録・絵図といった近世文書と突き合わせられる場合、<strong>史実</strong>に近い水準まで確度を上げられることがある点で、地名研究にとって扱いやすい類型である。</p>
+  </div>
+  <div class="setsu">
+    <span class="setsu-tag denshou">類型③・信仰由来</span>
+    <h3>社寺・祭祀・霊地が名になる</h3>
+    <p><strong>骨子。</strong>宮・堂・権現・天神といった語を含む地名は、社寺や祭祀に由来することが多い。二之宮は遠江国の二宮に、権現町や元天神町は勧請された神への信仰に、それぞれ結びつくと考えられる。信仰由来は、対応する社寺の沿革史料が残っていれば確度を上げられるが、社寺そのものの創建年代が<strong>伝承</strong>の層にとどまる場合、地名の由来もまた伝承の確からしさを超えにくい。</p>
+  </div>
+  <div class="setsu">
+    <span class="setsu-tag denshou">類型④・人名由来</span>
+    <h3>開発者・領主・屋号が名になる</h3>
+    <p><strong>骨子。</strong>人名や屋号が地名に残ることも多い。惣兵衛・太郎馬・弥藤太といった人名を冠する新田や島の名、あるいは中世の「名（みょう）」に由来する半場名のような地名がこれにあたる。人名由来は、その人物を裏づける文書が残っていれば強い根拠になるが、多くは口碑として伝わるにとどまり、同名異人の混同や後世の付会も起きやすい。したがって<strong>伝承</strong>から<strong>推定</strong>への引き上げには、慎重な人物比定を要する。</p>
+    <p><strong>補足。</strong>これら四類型のほかに、方位や位置関係を示す地名（上・下・東・西・中などを冠する名）も磐田には多い。上岡田と下岡田、東平松・西平松・南平松・中平松のように、一つの母村が方位で分かれた地名群は、その土地が分村や新田開発を経て広がっていった履歴を、名の対として今日に伝える。これらは単独では地形とも人名とも判じにくいが、対を成す地名として分布を見れば、母村とその展開という構造が読める。方位地名は、個々の名ではなく地名群として読むべき典型であり、地名を面として扱うことの有効性をよく示す。</p>
+    <div class="verdict"><strong>本稿の見立て：</strong>四類型は排他的ではない。一つの地名が地形と信仰の両方を映すこともある。類型は正解を当てる枠ではなく、由来説がどの資料と照合でき、どこまで確度を上げうるかを見積もるための道具である。</div>
+  </div>
+
+  <div class="table-wrap">
+    <table class="academic-table">
+      <caption>表1　地名由来の四類型と、到達しうる確度の対応</caption>
+      <thead><tr><th>類型</th><th>語の例</th><th>照合できる資料</th><th>到達しうる確度</th><th>固有の弱点</th></tr></thead>
+      <tbody>
+        <tr><td>地形由来</td><td>崎・谷・原・島・浦・田</td><td>地形図・地質・現地の高低</td><td>推定（現地照合で高めやすい）</td><td>当て字で地形語が紛れ込む</td></tr>
+        <tr><td>開発由来</td><td>新田・新開・新出</td><td>検地帳・新田記録・絵図</td><td>史実に近づきうる</td><td>開発年代の特定が困難な例</td></tr>
+        <tr><td>信仰由来</td><td>宮・堂・権現・天神</td><td>社寺の沿革・棟札・縁起</td><td>社寺史料があれば推定</td><td>創建伝承の確度に上限が縛られる</td></tr>
+        <tr><td>人名由来</td><td>人名・屋号・中世の名</td><td>検地帳・古文書・系図</td><td>人物比定に成否が依存</td><td>同名異人・後世の付会</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="地形・開発・信仰・人名の四類型と、それぞれの語の例および到達しうる確度を示した図">
+        <rect x="12" y="14" width="596" height="272" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="44" text-anchor="middle" font-size="14" class="svg-label">地名由来の四類型 ── 語の例と確度</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <rect x="46" y="66" width="252" height="96" rx="10" fill="#eef7ec" stroke="#6f9a4f" stroke-width="1.8"/>
+          <text x="172" y="94" font-size="14" fill="#3f6a2a">地形由来</text>
+          <text x="172" y="118" font-size="11.5" fill="#22303a">崎・谷・原・島・浦・田</text>
+          <text x="172" y="140" font-size="10.5" fill="#5b6b74">現地照合で推定へ</text>
+          <rect x="322" y="66" width="252" height="96" rx="10" fill="#fbf3e6" stroke="#d28a41" stroke-width="1.8"/>
+          <text x="448" y="94" font-size="14" fill="#8a5a1f">開発由来</text>
+          <text x="448" y="118" font-size="11.5" fill="#22303a">新田・新開・新出</text>
+          <text x="448" y="140" font-size="10.5" fill="#5b6b74">近世文書で史実に近づく</text>
+          <rect x="46" y="174" width="252" height="96" rx="10" fill="#eef7fb" stroke="#356f88" stroke-width="1.8"/>
+          <text x="172" y="202" font-size="14" fill="#1f4f6f">信仰由来</text>
+          <text x="172" y="226" font-size="11.5" fill="#22303a">宮・堂・権現・天神</text>
+          <text x="172" y="248" font-size="10.5" fill="#5b6b74">社寺沿革に確度を縛られる</text>
+          <rect x="322" y="174" width="252" height="96" rx="10" fill="#fbecec" stroke="#b85b5b" stroke-width="1.8"/>
+          <text x="448" y="202" font-size="14" fill="#7a3030">人名由来</text>
+          <text x="448" y="226" font-size="11.5" fill="#22303a">人名・屋号・中世の名</text>
+          <text x="448" y="248" font-size="10.5" fill="#5b6b74">人物比定に成否が依存</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>図3　地名由来の四類型。同じ地名でも類型が異なれば、照合できる資料も、到達しうる確度の上限も異なる。類型は正解を当てる枠ではなく、確度を見積もる道具である。</figcaption>
+  </figure>
+
+  <h2 id="s4">4. 地名を史料として使う ── 何が読めるのか</h2>
+  <p>類型を押さえたうえで、地名を史料として使うと具体的に何が読めるのかを整理したい。地名の強みは、文字史料が乏しい土地にあっても、名それ自体が過去の情報を運んでいる点にある。第一に読めるのは、地形と水の履歴である。低湿地に浮かぶ微高地を示す「島」の付く地名が集まる一帯は、かつて水に囲まれた土地であったことを推測させる。磐田市南部の沖積低地に島の付く地名が多いことは、この地が河川と海に接する低湿の環境であった記憶を、地名として今日にとどめていると読める。</p>
+  <p>第二に読めるのは、開発の歴史である。新田を冠する地名は、それが近世の耕地開発によって生まれた土地であることを示す。地名の分布を地図の上に並べると、開発がどの方向へ、どの時期に及んだのかという面的な広がりが見えてくることがある。個々の新田がいつ開かれたかは文書で確かめる必要があるが、地名は、その文書を探す手がかりを与える索引の役割を果たす。</p>
+  <p>第三に読めるのは、信仰の配置である。宮・堂・権現といった語を含む地名は、そこに社寺や祭祀の場があったことを示す。現在は社殿が失われていても、地名だけが霊地の記憶を伝えている場合がある。地名は、失われた信仰の痕跡を地表に残す標識でもある。</p>
+  <p>第四に読めるのは、人の営みの痕跡である。人名や屋号を含む地名は、その土地を開き、あるいは領した人物の存在を伝える。中世の「名」に由来する地名は、荘園制のもとで土地が名を単位に把握されていた時代の記憶を、今日の地図の上に残している。こうして地名は、地形・開発・信仰・人という四つの層について、それぞれ断片的ながら過去を証言する。ただし、ここで読めるのはいずれも「手がかり」であって「結論」ではない。地名が指し示す方向へ、別の史料を探しに行くための出発点として、地名は最も有効に働く。</p>
+  <p>もう一点、地名が史料として持つ独特の性格を挙げておきたい。それは、地名が面として分布する情報だという点である。個々の文書が点の情報であるのに対し、地名は地図の上に広がりをもって存在する。この広がりを読むことで、一つひとつの文書からは見えにくい、面的な傾向をつかむことができる。島の付く地名がどの標高帯に集まるか、新田の付く地名がどの方角へ帯を成すか、宮や堂を含む地名が水系や街道とどう関わるか──こうした分布の型は、地名が集団として存在するからこそ読めるものであり、単独の地名を眺めていては見えてこない。地名を史料として使うとは、個々の地名の語源を当てることよりも、むしろこの面的な分布から地域の構造を読み取ることに、その本領がある。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="地名を手がかりに現地・古文献・地形へと検証を進める地名研究の方法の流れ図">
+        <defs>
+          <marker id="fig4-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2f7fa3"/></marker>
+        </defs>
+        <rect x="10" y="12" width="620" height="216" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="320" y="42" text-anchor="middle" font-size="14" class="svg-label">地名研究の手続き ── 一つの由来説を鍛える</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle" font-size="12" fill="#22303a">
+          <rect x="34" y="92" width="108" height="58" rx="10" fill="#eef7fb" stroke="#356f88" stroke-width="1.6"/><text x="88" y="116">地名（仮説）</text><text x="88" y="136" font-size="10" fill="#5b6b74">なぜこの名か</text>
+          <rect x="168" y="92" width="108" height="58" rx="10" fill="#eef7ec" stroke="#6f9a4f" stroke-width="1.6"/><text x="222" y="116">分布を見る</text><text x="222" y="136" font-size="10" fill="#5b6b74">同型地名の広がり</text>
+          <rect x="302" y="92" width="108" height="58" rx="10" fill="#fbf3e6" stroke="#d28a41" stroke-width="1.6"/><text x="356" y="116">古文献照合</text><text x="356" y="136" font-size="10" fill="#5b6b74">検地帳・古地図</text>
+          <rect x="436" y="92" width="108" height="58" rx="10" fill="#eef7fb" stroke="#356f88" stroke-width="1.6"/><text x="490" y="116">地形照合</text><text x="490" y="136" font-size="10" fill="#5b6b74">高低・水・地質</text>
+          <rect x="556" y="92" width="66" height="58" rx="10" fill="#fff" stroke="#2f7fa3" stroke-width="1.8"/><text x="589" y="116" font-size="11">確度</text><text x="589" y="136" font-size="10" fill="#5b6b74">の判定</text>
+          <path d="M142 121 L166 121" stroke="#2f7fa3" stroke-width="2.2" marker-end="url(#fig4-arrow)"/>
+          <path d="M276 121 L300 121" stroke="#2f7fa3" stroke-width="2.2" marker-end="url(#fig4-arrow)"/>
+          <path d="M410 121 L434 121" stroke="#2f7fa3" stroke-width="2.2" marker-end="url(#fig4-arrow)"/>
+          <path d="M544 121 L554 121" stroke="#2f7fa3" stroke-width="2.2" marker-end="url(#fig4-arrow)"/>
+        </g>
+        <text x="320" y="200" text-anchor="middle" font-size="11" class="svg-sub">地名は出発点であり、複数の資料と照合してはじめて由来説は確度を得る。</text>
+      </svg>
+    </div>
+    <figcaption>図4　地名研究の手続き。地名はそれ自体では仮説にすぎず、分布・古文献・地形との照合を経てはじめて確度が定まる。単独の地名から結論へ飛ばないことが要諦である。</figcaption>
+  </figure>
+
+  <h2 id="s5">5. 地名研究の方法 ── 分布・古文献・地形照合</h2>
+  <p>地名から確からしい由来を導くには、いくつかの手続きを踏む必要がある。第一は、分布を見ることである。ある型の地名が一つだけ孤立して存在するのか、周辺に同型の地名が群れているのかで、その解釈の確からしさは大きく変わる。島の付く地名が沖積低地に集中し、新田の付く地名が開発の前線に帯状に並ぶといった分布の規則性は、個々の地名の由来を単独で論じるよりも、はるかに強い根拠を与える。分布は、偶然の一致と地形的な必然とを見分ける手がかりになる。</p>
+  <p>第二は、古文献との照合である。近世の検地帳や名寄帳、村絵図、地誌類には、地名が当時どの表記で、どの範囲を指して用いられていたかが記録されている。現在の地名を過去へ遡らせ、いつからその名が、どの字で書かれていたかを追うことで、後世の当て字や表記の変化を峻別できる。古い表記が残っていれば、現在の漢字が原義を覆い隠している場合でも、もとの意味に近づける。</p>
+  <p>第三は、地形との照合である。地形図や地質、標高、旧河道の跡と地名とを重ね合わせることで、地形由来の地名は現地の実態と突き合わせて検証できる。「崎」を名乗る土地が実際に台地の突端に位置するか、「島」を名乗る土地が周囲より高い微高地であるかを確かめれば、由来説は現地の地形という動かしがたい証拠を得る。逆に、地形と地名が食い違う場合には、当て字や移転地名の可能性を疑う手がかりになる<sup class="fnref" id="r3"><a href="#fn3">3</a></sup>。</p>
+  <p>これら三つの手続きに加えて、地名研究では音韻の変化にも注意が要る。地名は長く口で呼び継がれるあいだに、発音が縮まり、濁り、隣り合う音に引かれて変わっていく。現在の呼び方が、古い時代の呼び方とは相当に隔たっている場合があり、現在の音だけを頼りに語源を推し量ると、変化の途中の姿を出発点と取り違えかねない。古い文献に残る仮名書きの表記は、その時代の音を写している点で貴重であり、漢字表記と併せて音の履歴をたどる手がかりになる。音・字・地形・分布という複数の系列を、それぞれ独立に遡らせて突き合わせること──地名研究の慎重さは、この多重の照合に表れる。</p>
+  <p>これら三つの手続きは、一つでも欠けると由来説は脆くなる。分布だけでは規則性の理由が分からず、古文献だけでは現地の実態と切れ、地形だけでは表記の履歴を見落とす。三者を突き合わせ、互いに矛盾しないことを確かめてはじめて、由来説は<strong>伝承</strong>や思いつきの水準を超えて<strong>推定</strong>へ、さらに古文献の裏づけを得て一部は<strong>史実</strong>へと、確度を段階的に上げていく。地名研究とは、この確度を一段ずつ引き上げる地道な照合の作業にほかならない。近道はなく、一つの語源の思いつきを、複数の独立した証拠で支えることだけが、確からしさを担保する。</p>
+  <p>ここで、これまでの磐田論考が実際にこの手続きを踏んできたことを確認しておきたい。二之宮を論じた際には、地名を鹿苑神社という具体的な社の沿革と照合し、信仰由来の地名がどこまで確度を上げられるかを検討した。半場名を論じた際には、中世の「名」という土地把握の単位に遡り、人名・屋号が地名に残るしくみを、制度史の文脈のなかで裏づけた。いずれも、地名の思いつきの語源に飛びつくのではなく、対応する制度や史料へと照合を広げることで、由来説を鍛えている。</p>
+
+  <h2 id="s6">6. 由来説の限界 ── 当て字・後付け・恣意性</h2>
+  <p>地名研究には、他の史料研究にはない固有の落とし穴がある。ここを踏まえずに地名を語ると、確からしく見える由来説が、実は根拠の乏しい思いつきであった、ということが起こる。以下、代表的な三つの落とし穴を挙げる。</p>
+  <p>第一は、<strong>当て字</strong>の問題である。日本の地名の多くは、もともと音で呼ばれていた土地に、後から漢字が当てられたものである。したがって、いま用いられている漢字の意味から由来を推し量ることは、しばしば危うい。めでたい字や分かりやすい字が、もとの意味とは無関係に選ばれている場合があるからである。現在の表記が原義を覆い隠していることは珍しくなく、漢字の字面だけで由来を断ずるのは、地名研究において最も陥りやすい誤りである。古い表記を古文献に遡って確かめる手続きが要るのは、この当て字を見抜くためである<sup class="fnref" id="r4"><a href="#fn4">4</a></sup>。</p>
+  <p>第二は、<strong>後付け</strong>の問題である。地名の由来として語られる物語のなかには、地名が先にあって、その名を説明するために後から作られた話が少なくない。ある地名に立派な人物や事件を結びつける由来譚は、地域の誇りとして語り継がれるうちに、あたかも史実であるかのような重みを帯びていく。しかし、地名を説明するために作られた物語は、地名の由来を証明する史料にはならない。順序が逆だからである。城之崎城をめぐる築城伝説を検証した論考でも、地名や城跡の存在と、それに結びつけられた人物譚とは、確度の層を分けて扱う必要があった。</p>
+  <p>第三は、<strong>恣意性</strong>の問題である。地名の音は、少し崩せば別の語にも似てくる。そのため、一つの地名に対して、地形説・人名説・信仰説・語呂合わせと、いくつもの由来説を立てることができてしまう。どの説も部分的にはもっともらしく響くために、証拠の重みではなく語り手の好みで説が選ばれる危険がつねにある。この恣意性を抑えるには、前章で述べた分布・古文献・地形の照合を機械的に適用し、思いつきの説得力ではなく、複数の独立した証拠に支えられているかどうかで説を評価するほかない。</p>
+  <p>これら三つの落とし穴に加えて、記録そのものの偏りにも触れておきたい。地名の由来を伝える文書は、書き残す動機のあった事柄に偏る。立派な由緒や著名な人物にまつわる由来は好んで書き留められ、繰り返し引かれるうちに広く知られていく。一方、ありふれた地形語や、卑近な生業に由来する地名は、わざわざ由来を書き残されることが少ない。その結果、文献に由来が残る地名ほど華やかな物語をまとい、残らない地名は無名のまま置かれる、という偏りが生じる。文献の有無を、そのまま由来の確からしさや土地の重要さと取り違えないことも、史料批判の一部である。書かれなかったこと（記載なし）は、存在しなかったこと（不在）を意味しない。</p>
+  <p>これら三つの落とし穴に共通するのは、地名が「語れてしまう」ことの危うさである。地名は誰にでも解釈でき、その解釈はしばしば魅力的な物語になる。だからこそ、地名研究には他の史料研究以上に厳格な自己抑制が求められる。ここで再び「未確認」と「記載なし」の区別が効いてくる。ある由来を裏づける史料に突き当たっていないこと（未確認）を、その由来が誤りである証拠（記載なしに近い断定）と取り違えれば、価値ある伝承を不当に切り捨てることになる。逆に、未確認の由来説を確定した史実のように語れば、後付けの物語を史実に格上げしてしまう。どちらの過ちも、確度の層を正しく保持することでのみ避けられる。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="思いつき・伝承・推定・史実へと確度が上がる地名由来説のスペクトルと、当て字・後付け・恣意性の落とし穴を示す図">
+        <rect x="10" y="12" width="600" height="226" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="42" text-anchor="middle" font-size="14" class="svg-label">由来説の確度スペクトルと、三つの落とし穴</text>
+        <defs>
+          <linearGradient id="fig5-grad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fbecec"/><stop offset=".5" stop-color="#fbf3e6"/><stop offset="1" stop-color="#e6f2f8"/></linearGradient>
+        </defs>
+        <rect x="46" y="120" width="528" height="34" rx="6" fill="url(#fig5-grad)" stroke="#c8d5dc"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle" font-size="12" fill="#22303a">
+          <text x="96" y="142">思いつき</text>
+          <text x="230" y="142">伝承</text>
+          <text x="378" y="142">推定</text>
+          <text x="524" y="142">史実</text>
+          <text x="46" y="180" font-size="10.5" fill="#5b6b74" text-anchor="start">照合なし</text>
+          <text x="574" y="180" font-size="10.5" fill="#5b6b74" text-anchor="end">複数資料で裏づけ</text>
+        </g>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle" font-size="11" fill="#7a3030">
+          <text x="140" y="96">当て字</text>
+          <text x="300" y="96">後付け</text>
+          <text x="460" y="96">恣意性</text>
+          <path d="M140 100 L140 118" stroke="#b85b5b" stroke-width="1.4"/>
+          <path d="M300 100 L300 118" stroke="#b85b5b" stroke-width="1.4"/>
+          <path d="M460 100 L460 118" stroke="#b85b5b" stroke-width="1.4"/>
+        </g>
+        <text x="310" y="212" text-anchor="middle" font-size="11" class="svg-sub">落とし穴を避け、照合を重ねることでのみ、由来説は左から右へ確度を上げられる。</text>
+      </svg>
+    </div>
+    <figcaption>図5　由来説の確度スペクトル。地名の由来は、思いつきから史実まで連続した確度の帯の上にある。当て字・後付け・恣意性という落とし穴が、確度の上昇を妨げる。</figcaption>
+  </figure>
+
+  <h2 id="s7">7. 磐田の地名を横断する ── 既刊論考からの検証</h2>
+  <p>ここまで論じた方法を、これまでの磐田論考が扱った具体的な地名に当てはめて振り返っておきたい。個々の論考では一つの地名を深く掘ったが、本稿の四類型と確度の枠組みを通して見直すと、それぞれが地名学のどの局面を例証していたかが見えてくる。</p>
+  <p>まず<a href="/oishi-ronko/196/">城之崎</a>は、地形由来と後付けの両面を示す好例である。「崎」は台地の突端を示す地形語であり、城之崎の地名はその地形的な立地を映していると読める。この地形由来の部分は、現地の地形と照合できるため<strong>推定</strong>の確度をもつ。一方、そこに結びつけられた城と築城の人物譚は、地名や城跡の存在とは確度の層を異にする<strong>伝承</strong>であり、地形由来の確からしさをそのまま人物譚へ及ぼすことはできない。一つの地名のなかに、確度の異なる複数の層が同居していることを、この例はよく示す。</p>
+  <p>次に<a href="/oishi-ronko/166/">二之宮</a>は、信仰由来の典型である。二之宮は遠江国の二宮すなわち序列第二の官社に由来すると考えられ、その確度は対応する社の沿革史料にどこまで支えられるかに縛られる。二之宮を論じた論考では、この地名が明治の合併によって中泉と一つの行政単位に組み込まれていく過程も扱った。地名の由来（信仰）と、地名の帰属の変遷（行政）とは別の水準にあり、前者は伝承から推定の層に、後者は記録で確かめられる史実の層にある。信仰由来の地名を読むとは、この二つの水準を混同しないことでもある。</p>
+  <p>そして<a href="/oishi-ronko/153/">半場名</a>は、人名由来と中世の制度史とをつなぐ例である。「名」は中世の荘園制のもとで土地を把握する単位であり、半場名の地名は、その名の単位が近世・近代を越えて地名として残ったものと考えられる。人名・屋号が地名に残るしくみを、制度史の文脈に据えて論じたこの論考は、人名由来の地名が単なる口碑にとどまらず、土地把握の歴史そのものを証言しうることを示している。人名由来を<strong>伝承</strong>から<strong>推定</strong>へ引き上げるには、このように対応する制度や文書へ照合を広げることが要る。</p>
+  <p>あわせて、於保のように古代の郷名に遡ると考えられる地名も、磐田には残る<sup class="fnref" id="r5"><a href="#fn5">5</a></sup>。『和名類聚抄』に見える郷の名が、後世の地名に痕跡をとどめている可能性については、古代の郷名と近世以降の地名との対応をたどる別個の検討を要し、その系譜を一次史料で連続的に裏づけられるかは、なお<strong>未確認</strong>の部分が大きい。ここでも、古代からの連続を安易に断定せず、確かめられた部分と未確認の部分とを分けて記すことが、方法上の要となる。これらの地名を横断して見えてくるのは、磐田の地名が地形・開発・信仰・人名・古代の郷という複数の層を、一枚の地図の上に重ねて保存しているという事実である。地名の一つひとつが、確度の異なる過去の断片を、それぞれの仕方で今日に手渡している。</p>
+  <p>この横断的な振り返りは、確度の判定が地名ごとに一様ではないことも教える。城之崎は地形という動かしにくい証拠に支えられるため、由来の中核部分は比較的高い確度に達する。二之宮は対応する社の沿革に確度が縛られ、社伝の部分が伝承にとどまれば地名の由来もそこで頭打ちになる。半場名は中世の制度史という強固な文脈をもつ一方、どの人物・どの名の単位に対応するかの比定には慎重を要する。於保に至っては、古代からの連続そのものが未確認である。同じ「推定」という語で括られる由来説のなかにも、こうした確度の濃淡があり、それを一律に扱わないことが、地名を精確に読むうえでの最後の目配りとなる。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="城之崎・二之宮・半場名・於保という磐田の地名を四類型と確度の層に配置した図">
+        <rect x="10" y="12" width="600" height="246" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <text x="310" y="42" text-anchor="middle" font-size="14" class="svg-label">磐田の地名を類型と確度に配置する</text>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <line x1="70" y1="70" x2="70" y2="230" stroke="#c8d5dc" stroke-width="1.4"/>
+          <line x1="70" y1="230" x2="590" y2="230" stroke="#c8d5dc" stroke-width="1.4"/>
+          <text x="40" y="150" font-size="11" fill="#5b6b74" writing-mode="tb">確度 高 ↑</text>
+          <text x="150" y="250" font-size="11" fill="#5b6b74">地形</text>
+          <text x="290" y="250" font-size="11" fill="#5b6b74">信仰</text>
+          <text x="430" y="250" font-size="11" fill="#5b6b74">人名</text>
+          <text x="545" y="250" font-size="11" fill="#5b6b74">古代郷</text>
+          <circle cx="150" cy="120" r="34" fill="#eef7ec" stroke="#6f9a4f" stroke-width="1.8"/><text x="150" y="118" font-size="12.5" fill="#3f6a2a">城之崎</text><text x="150" y="136" font-size="9.5" fill="#5b6b74">地形＝推定</text>
+          <circle cx="290" cy="140" r="34" fill="#eef7fb" stroke="#356f88" stroke-width="1.8"/><text x="290" y="138" font-size="12.5" fill="#1f4f6f">二之宮</text><text x="290" y="156" font-size="9.5" fill="#5b6b74">信仰＝推定</text>
+          <circle cx="430" cy="150" r="34" fill="#fbecec" stroke="#b85b5b" stroke-width="1.8"/><text x="430" y="148" font-size="12.5" fill="#7a3030">半場名</text><text x="430" y="166" font-size="9.5" fill="#5b6b74">人名＝推定</text>
+          <circle cx="545" cy="188" r="32" fill="#fbf3e6" stroke="#d28a41" stroke-width="1.8"/><text x="545" y="186" font-size="12.5" fill="#8a5a1f">於保</text><text x="545" y="204" font-size="9.5" fill="#5b6b74">郷名＝未確認</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>図6　磐田の地名の配置図。横軸は由来の類型、縦軸は到達しうる確度を示す。城之崎（地形）・二之宮（信仰）・半場名（人名）は照合により推定へ、於保（古代郷）は連続性がなお未確認である。</figcaption>
+  </figure>
+
+  <p>この横断からもう一つ確認できるのは、確度を上げる作業がつねに地名の外部の資料を必要とする、という点である。城之崎は地形図によって、二之宮は社の沿革によって、半場名は中世の制度史によって、それぞれ確度を得た。地名は単独では推定の入口に立つにとどまり、外部の独立した証拠と結びついたときにだけ、確からしさを増す。磐田の地名を読むという営みは、地名という索引から出発して、地形・古文献・制度史という別々の書架へ手を伸ばし、そこで得た証拠を地名へ持ち帰る往復運動なのである。</p>
+
+  <h2 id="s8">8. 結論 ── 読めることと、決められないこと</h2>
+  <p>本稿は、磐田市の大字という単位を入口に、地名から地域を読む方法とその限界を検討した。得られた見取り図は次のとおりである。大字の名称・記載・帰属・境界は、公的記録によって確かめられる史実の水準にある。一方、その地名がなぜその名を得たのかという由来は、多くの場合、推定または伝承の層に属する。地名の由来は地形・開発・信仰・人名の四類型に整理でき、類型ごとに到達しうる確度の上限は異なる。そして地名研究には、当て字・後付け・恣意性という固有の落とし穴があり、これを避けるには分布・古文献・地形の照合を機械的に重ねるほかない。</p>
+  <p>ここから本稿の立場は明確に導かれる。地名から歴史は読める。しかし地名だけで歴史は決められない。地名は過去へ通じる索引であり、地形・開発・信仰・人の営みという四つの層について、断片的ながら確かな証言を残している。だが地名は、その証言を証明する史料ではない。地名が指し示す方向へ別の史料を探しに行き、そこで得た独立の証拠と突き合わせてはじめて、由来説は確度を得る。読めることと決められることを混同せず、確度の層を保ったまま記述すること──それが、地名を後世の調べものに耐える形で残す唯一の方途である。</p>
+  <p>この節度は、決して地名研究を萎縮させるものではない。むしろ逆である。確度の層を正しく分けるからこそ、確かめられた史実は史実として確信をもって示せるし、伝承は伝承として、その価値を損なうことなく書き留められる。地名の由来を安易に断定する態度は、一見すると地名を豊かに語っているように見えて、実は史実と伝承を無差別に混ぜ合わせ、どちらの信頼性も損なってしまう。地名を大切にするとは、地名を饒舌に語ることではなく、地名が語りうる範囲と語りえない範囲とを見極めることである。</p>
+  <p>最後に、本稿が残した課題を三点記しておく。第一に、磐田市の大字全体を四類型に分類し、その分布を地図の上に落として面的に読む作業は、本稿では方法の提示にとどめた。個々の大字について古文献との照合を積み重ねることで、推定を史実へ、未確認を推定へと押し上げていく余地は大きい。第二に、於保のような古代の郷名と近世以降の地名との連続性は、一次史料による裏づけがなお未確認であり、古代地名研究の枠組みで別に検討されるべき主題である。第三に、小字の名は大字以上に細かな土地の記憶をとどめており、市街地化のなかで急速に失われつつある。小字を記録し類型化する作業は、地名から地域を読むというこの営みの、最も緊急を要する部分である。地名を一つの語源へ還元する誘惑を退け、確度の層を保ったまま資料を積み上げていくこと──その地道な手続きの先にこそ、磐田という土地が地名として保存してきた記憶の全体像が、少しずつ像を結んでいくはずである。</p>
+
+  <div class="cta-note">
+    地名を調べていくと、家や土地には、登記簿だけでは分からない土地の履歴が刻まれていることに気づく。筆者は磐田・袋井で不動産と介護の実務に携わる立場から、こうした土地の記憶にも向き合ってきた。相続した家、空き家、使わなくなった土地について、<a href="https://fudosan.atawi.link/jikka/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=oishi_ronko" target="_blank" rel="noopener">家・土地・空き家の整理について相談する</a>ことができる。地名を書き留めることと、その土地を次の世代へ手渡すことは、地続きの営みだと考えている。
+  </div>
+
+  <section class="notes" aria-label="注">
+    <h2>注</h2>
+    <ol class="fn-list">
+      <li id="fn1">1889年（明治22年）の町村制施行により、多くの近世村が合併して新たな行政村となり、旧村名は大字として引き継がれた。磐田市域の大字・町名の整理は、磐田物語「大字さくいん」（c095）に示した独自分類を参照。<a href="#r1" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn2">本稿の地形・開発・信仰・人名という四類型は、地名学における命名論の諸分類を、磐田の地名を読むための作業仮説として簡略化したものであり、網羅的・排他的な分類ではない。<a href="#r2" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn3">地名と現地地形が食い違う場合、当て字のほか、他所の地名が移住とともに持ち込まれる移転地名の可能性も考慮を要する。本稿ではこの点は指摘にとどめる。<a href="#r3" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn4">当て字の峻別には近世の検地帳・名寄帳など古い表記を残す文書との照合が不可欠である。現在の漢字表記のみを根拠とする語源説は、確度の低い推定にとどまる。<a href="#r4" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn5">於保は『和名類聚抄』に見える遠江国の郷名に遡ると考えられるが、古代の郷名と近世以降の地名との連続を一次史料で裏づける作業は、本稿の範囲では未確認である。<a href="#r5" aria-label="本文へ戻る">&#8617;</a></li>
+    </ol>
+    <p class="fn-editorial" style="font-family:'Zen Kaku Gothic New',sans-serif;font-size:12.5px;color:var(--sub);text-indent:0;margin-top:14px;line-height:1.85;">付記：本稿は磐田物語「大字さくいん」（c095）を素材に、地名から地域を読む方法を郷土史研究者向けに再構成した方法論的論考である。大字の記載・帰属を史実、地名の由来を推定・伝承として書き分け、「未確認」と「記載なし」の区別を終始保持した。</p>
+  </section>
+
+  <section class="references" aria-label="参考文献">
+    <h2>参考文献・参考資料</h2>
+    <ul class="refs">
+      <li>柳田国男『地名の研究』古今書院、1936年（のち各種文庫版）。</li>
+      <li>鏡味完二『日本地名学』日本地名学研究所、1957年。</li>
+      <li>鏡味明克『地名の語源』（地名研究の基礎文献）。</li>
+      <li>吉田茂樹『日本地名学入門』。</li>
+      <li>『和名類聚抄』（郷名の項）遠江国条。</li>
+      <li>『角川日本地名大辞典 22 静岡県』角川書店、1982年。</li>
+      <li>『静岡県の地名』（日本歴史地名大系）平凡社。</li>
+      <li>磐田市『磐田市史』通史編・資料編（磐田市）。</li>
+      <li>磐田市『磐田市の地名』（自治体刊行の地名資料）。</li>
+      <li>国土地理院 地形図・地理院地図　https://maps.gsi.go.jp/　（最終閲覧：2026年7月26日）。</li>
+      <li>大石浩之「上新屋『半場名』を読む ── 人名・屋号が地名に残るしくみ」大石浩之の磐田論考 第153号　https://iwata-monogatari.net/oishi-ronko/153/　（最終閲覧：2026年7月26日）。</li>
+      <li>大石浩之「二之宮はなぜ中泉と一つになったか ── 明治の合併と鹿苑神社」大石浩之の磐田論考 第166号　https://iwata-monogatari.net/oishi-ronko/166/　（最終閲覧：2026年7月26日）。</li>
+      <li>大石浩之「見付に残る幻の城 ── 城之崎城と徳川家康の築城伝説を検証する」大石浩之の磐田論考 第196号　https://iwata-monogatari.net/oishi-ronko/196/　（最終閲覧：2026年7月26日）。</li>
+      <li>磐田物語「大字さくいん ── 地名から探す磐田物語」（c095）　https://iwata-monogatari.net/c095.html　（最終閲覧：2026年7月26日）。</li>
+    </ul>
+  </section>
+
+  <div class="pager">
+    <a href="https://iwata-monogatari.net/oishi-ronko/">← 大石浩之の磐田論考 一覧へ</a>
+    <a href="https://iwata-monogatari.net/c095.html">一般向け記事版（大字さくいん）を読む →</a>
+  </div>
+  </article>
+</main>
+
+<footer class="im-foot">
+  <style>
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand:hover{text-decoration:none;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
+  </style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。本論考は個人の調査・覚え書きをもとに、確度の層を区別しながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://oishi-hiroyuki.org/" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+      </ul>
+    </div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+  </div>
+</footer>
+</body>
+</html>
