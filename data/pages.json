@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-07-28",
+  "updated_at": "2026-07-23",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -110,76 +110,6 @@
     "land-memory"
   ],
   "pages": [
-    {
-      "title": "国立能楽堂上演資料集から読む『舞車』─ 諸本・節付・復曲上演",
-      "url": "m139.html",
-      "district": [
-        "mitsuke"
-      ],
-      "themes": [
-        "performing-arts",
-        "festival",
-        "academic"
-      ],
-      "content_type": "article",
-      "published_at": "2026-07-28",
-      "updated_at": "2026-07-28",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "国立能楽堂上演資料集〈2〉をもとに、渋田虎頼等節付本・光悦流書体六十番綴本・江戸初期節付十三冊本、笛付・仕舞付・参詣曼荼羅、1989年の復曲上演を史料批判的に読む。",
-      "topics": [
-        "舞車",
-        "国立能楽堂",
-        "復曲",
-        "諸本対照",
-        "節付",
-        "渋田虎頼",
-        "光悦流",
-        "森田流笛付",
-        "妙佐本仕舞付",
-        "多賀社参詣曼荼羅"
-      ],
-      "level": "L3",
-      "parent": "m132.html"
-    },
-    {
-      "title": "『舞車』から深掘りする12の研究キーワード",
-      "url": "m138.html",
-      "district": [
-        "mitsuke"
-      ],
-      "themes": [
-        "performing-arts",
-        "festival",
-        "research-guide"
-      ],
-      "content_type": "article",
-      "published_at": "2026-07-28",
-      "updated_at": "2026-07-28",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "国立能楽堂上演資料集『舞車』から、見付宿、東坂・西坂、舞車神事、伝本、復曲、作り物、地域への還流など12の研究キーワードを抽出し、次に確認すべき資料と問いを案内する。",
-      "topics": [
-        "舞車",
-        "見付宿",
-        "東坂",
-        "西坂",
-        "舞車神事",
-        "伝本",
-        "諸本対照",
-        "復曲",
-        "作り物",
-        "国立能楽堂"
-      ],
-      "level": "L2",
-      "parent": "01001-mitsuke.html"
-    },
     {
       "title": "伝承と史実のあいだを総合する ── 家康・真田姫・幻の城をめぐって",
       "url": "oishi-ronko/291/",
@@ -11060,9 +10990,20 @@
       ],
       "content_type": "reading",
       "published_at": "2026-06-25",
+      "updated_at": "2026-07-31",
       "date_provisional": true,
       "status": "published",
-      "summary": "磐田市中泉の府八幡宮を、遠江国府・遠江国分寺跡・御殿二之宮遺跡・淡海國玉神社・神宮寺跡・例大祭から読み解くページ。",
+      "summary": "磐田市中泉の府八幡宮を、遠江国府・遠江国分寺跡・絵馬・社宝・棟札・氏子区域・例大祭から読み解くページ。",
+      "topics": [
+        "府八幡宮",
+        "遠江国府",
+        "絵馬",
+        "社宝",
+        "棟札",
+        "氏子区域",
+        "府八幡宮例大祭"
+      ],
+      "level": "L3",
       "parent": "01002-nakaizumi.html",
       "count_as_knowledge": true,
       "show_in_updates": true,
@@ -17502,13 +17443,15 @@
       "themes": [],
       "content_type": "reading",
       "published_at": "2026-06-29",
-      "updated_at": "2026-06-29",
+      "updated_at": "2026-07-31",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "府八幡宮例大祭の二十町の山車を、町名・組名・形式・特徴の一覧と、年番、地番、渡しの仕組みから整理する。"
+      "summary": "府八幡宮例大祭の二十町の山車を、一覧、成立史、二輪・四輪、町内役職、八朔集会、引廻し、年番・渡しから整理する。",
+      "topics": ["府八幡宮例大祭", "山車", "屋台", "八朔", "年番", "渡し", "町内組織"],
+      "level": "L3"
     },
     {
       "title": "府八幡宮例大祭 山車祭りの近代史",
@@ -17553,13 +17496,15 @@
       "themes": [],
       "content_type": "reading",
       "published_at": "2026-06-29",
-      "updated_at": "2026-06-29",
+      "updated_at": "2026-07-31",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "府八幡宮例大祭の浜垢離、前夜祭・抽選祭、例祭、夕祭、発御祭、還御祭、御幣返しを、神事の流れとして整理する。"
+      "summary": "府八幡宮例大祭の浜垢離、祭典委員会、神輿巡行の役列、前夜祭から御幣返しまでを資料に基づいて整理する。",
+      "topics": ["府八幡宮例大祭", "浜垢離", "神輿巡行", "祭典委員会", "命魚奉献", "御幣返し"],
+      "level": "L3"
     },
     {
       "title": "府八幡宮例大祭【特集】",
@@ -17570,13 +17515,15 @@
       "themes": [],
       "content_type": "reading",
       "published_at": "2026-06-28",
-      "updated_at": "2026-06-28",
+      "updated_at": "2026-07-31",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "府八幡宮例大祭を、国府守護の社伝、二十町の山車、浜垢離から御幣返しまでの神事、命魚奉献の儀から読む親特集。中泉地区の祭礼を史実・伝承・推察に分けて整理する。"
+      "summary": "府八幡宮例大祭を、二十町の山車、浜垢離から御幣返しまでの神事、年中行事から読む親特集。史実・伝承・推察を分けて整理する。",
+      "topics": ["府八幡宮", "例大祭", "年中行事", "正月", "節分", "児童祈願祭", "七五三", "初宮詣"],
+      "level": "L3"
     },
     {
       "title": "幼児の虫封じ",
@@ -19749,25 +19696,15 @@
       ],
       "content_type": "article",
       "published_at": "2026-07-12",
-      "updated_at": "2026-07-28",
+      "updated_at": "2026-07-12",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "謡曲『舞車』と狂言『磁石』に描かれた見付宿を読み、国立能楽堂上演資料集から諸本対照と1989年の復曲工程までたどる。",
+      "summary": "謡曲『舞車』と狂言『磁石』に描かれた見付宿から、中世の祇園祭、東海道、都と地方の距離感を読む。",
       "parent": "01001-mitsuke.html",
-      "level": "L3",
-      "topics": [
-        "舞車",
-        "磁石",
-        "見付宿",
-        "見付祇園祭",
-        "国立能楽堂",
-        "復曲",
-        "伝本",
-        "諸本対照"
-      ]
+      "level": "L2"
     },
     {
       "title": "徳川家康と三方原合戦 ── 見付を通った遠江攻略",
@@ -24607,6 +24544,47 @@
       ],
       "level": "L2"
     },
+    {"title":"国立能楽堂上演資料集から読む『舞車』─ 諸本・節付・復曲上演","url":"m139.html","district":["mitsuke"],"themes":["performing-arts","festival","academic"],"content_type":"article","published_at":"2026-07-28","updated_at":"2026-07-28","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"国立能楽堂上演資料集〈2〉をもとに、渋田虎頼等節付本・光悦流書体六十番綴本・江戸初期節付十三冊本、笛付・仕舞付・参詣曼荼羅、1989年の復曲上演を史料批判的に読む。","topics":["舞車","国立能楽堂","復曲","諸本対照","節付","渋田虎頼","光悦流","森田流笛付","妙佐本仕舞付","多賀社参詣曼荼羅"],"level":"L3","parent":"m132.html"},
+    {"title":"『舞車』から深掘りする12の研究キーワード","url":"m138.html","district":["mitsuke"],"themes":["performing-arts","festival","research-guide"],"content_type":"article","published_at":"2026-07-28","updated_at":"2026-07-28","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"国立能楽堂上演資料集『舞車』から、見付宿、東坂・西坂、舞車神事、伝本、復曲、作り物、地域への還流など12の研究キーワードを抽出し、次に確認すべき資料と問いを案内する。","topics":["舞車","見付宿","東坂","西坂","舞車神事","伝本","諸本対照","復曲","作り物","国立能楽堂"],"level":"L2","parent":"01001-mitsuke.html"},
+    {
+      "title": "府八幡宮の大場家 ── 大禰宜・神仏習合・大場重光",
+      "url": "n072.html",
+      "district": ["nakaizumi"],
+      "themes": ["shrine-temple", "person", "village-history"],
+      "content_type": "reading",
+      "published_at": "2026-07-31",
+      "updated_at": "2026-07-31",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "府八幡宮に代々仕えた大場家を、大禰宜、秋鹿家との役割分担、食い違う2種類の系図、神仏習合、橘園翁・大場重光の学問と寺子屋から読み解く。",
+      "topics": ["大場家", "大場重光", "大場図書", "府八幡宮", "大禰宜", "神仏習合", "寺子屋"],
+      "level": "L3"
+    },
+    {
+      "title": "府八幡宮神主・秋鹿家 ── 地頭・神職・代官の系譜",
+      "url": "n073.html",
+      "district": ["nakaizumi"],
+      "themes": ["shrine-temple", "person", "village-history"],
+      "content_type": "reading",
+      "published_at": "2026-07-31",
+      "updated_at": "2026-07-31",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "府八幡宮の神主を世襲した秋鹿家を、出雲起源の由緒、建武期の地頭職、朱印高250石、中泉代官、幕末の文化活動、明治維新から読み解く。",
+      "topics": ["秋鹿家", "府八幡宮", "中泉御殿", "地頭", "代官", "朱印高", "遠州報国隊"],
+      "level": "L3"
+    },
+    {"title":"府八幡宮の奉納絵馬 ── 祈りと町の絵画史","url":"n074.html","district":["nakaizumi"],"themes":["shrine-temple","arts","village-history"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"府八幡宮に伝わる45面の絵馬を、富士の巻狩、寛永期の絵馬、秋鹿神主寄進の6面、二十四孝、近代絵馬から読み解く。","topics":["府八幡宮","絵馬","奉納","富士の巻狩","秋鹿家","二十四孝"],"level":"L3"},
+    {"title":"府八幡宮の社宝と棟札 ── 物から読む神社史","url":"n075.html","district":["nakaizumi"],"themes":["shrine-temple","cultural-assets","village-history"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"府八幡宮に伝わる獅子頭、王舞面、神像、和鏡、棟札を、神仏習合・祭礼・造営の記録として読む。","topics":["府八幡宮","社宝","棟札","獅子頭","王舞","僧形八幡像","和鏡"],"level":"L3"},
+    {"title":"府八幡宮の神宮寺と神仏分離 ── 境内にあった寺","url":"n076.html","district":["nakaizumi"],"themes":["shrine-temple","religion","village-history"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"府八幡宮境内にあった神宮寺、本地堂、阿弥陀三尊、神宮寺僧、慶応4年の神仏判然令と仏像移送を読み解く。","topics":["府八幡宮","神宮寺","神仏習合","神仏分離","本地堂","西楽寺","阿弥陀三尊"],"level":"L3"},
+    {"title":"府八幡宮の鳥居講 ── 安政地震からの再建","url":"n077.html","district":["nakaizumi"],"themes":["shrine-temple","social-history","disaster"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"安政東海地震で倒壊した府八幡宮石鳥居を、17人の鳥居講が講金・貸付・石材輸送によって再建した過程を追う。","topics":["府八幡宮","鳥居講","安政東海地震","講","地域金融","災害復興","中泉小学校"],"level":"L3"},
+    {"title":"府八幡宮境内を物から歩く ── 建築・石造物・末社","url":"n078.html","district":["nakaizumi"],"themes":["shrine-temple","cultural-assets","architecture"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"楼門、本殿、石灯籠、狛犬、手水鉢、東照宮と末社をたどり、境内の物が伝える造営・奉納・信仰の層を読む。","topics":["府八幡宮","境内建築","石造物","石灯籠","狛犬","東照宮","末社","手水鉢"],"level":"L3"},
     {
       "title": "延喜式内社と磐田 ── 千年前の台帳に載った神社たち",
       "url": "c109.html",
