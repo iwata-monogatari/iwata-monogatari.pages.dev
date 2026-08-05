@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-08-01",
+  "updated_at": "2026-07-23",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -8935,6 +8935,211 @@
       "series": "大石浩之の磐田論考"
     },
     {
+      "title": "見付の引札 ── 明治の商店・図柄・版元を一枚の広告から読む",
+      "url": "m140.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "shiryo",
+        "life",
+        "road-traffic"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-05",
+      "updated_at": "2026-08-05",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "佐口行正氏所蔵史料と磐田市教育委員会文化財課資料をもとに、見付の引札を商店名・図柄・版元・印刷技法・宿内配置から読む。",
+      "topics": [
+        "引札",
+        "引き札",
+        "見付宿",
+        "近代商業",
+        "広告",
+        "印刷史",
+        "古島竹次郎",
+        "古島德次郎",
+        "中遠日進社",
+        "佐口行正氏所蔵史料"
+      ],
+      "level": "L3",
+      "parent": "c020.html"
+    },
+    {
+      "title": "府八幡宮の鎮座地と天平通り",
+      "url": "n079.html",
+      "district": ["nakaizumi"],
+      "themes": ["shrine-temple", "place-name", "village-history"],
+      "content_type": "reading",
+      "published_at": "2026-08-01",
+      "updated_at": "2026-08-01",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "『府八幡宮ものがたり』をもとに鎮座地と天平通りを史料批判的に読み、確認できる事実・由緒・推定を分けて整理する。",
+      "topics": ["府八幡宮", "鎮座地", "天平通り", "遠江国府"],
+      "level": "L2"
+    },
+    {
+      "title": "府八幡宮の由緒をどう読むか",
+      "url": "n080.html",
+      "district": ["nakaizumi"],
+      "themes": ["shrine-temple", "source-criticism", "village-history"],
+      "content_type": "reading",
+      "published_at": "2026-08-01",
+      "updated_at": "2026-08-01",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "『府八幡宮ものがたり』をもとに由緒を史料批判的に読み、確認できる事実・由緒・推定を分けて整理する。",
+      "topics": ["府八幡宮", "由緒", "社伝", "棟札", "史料批判"],
+      "level": "L2"
+    },
+    {
+      "title": "府八幡宮の祭神を読む",
+      "url": "n081.html",
+      "district": ["nakaizumi"],
+      "themes": ["shrine-temple", "religion", "village-history"],
+      "content_type": "reading",
+      "published_at": "2026-08-01",
+      "updated_at": "2026-08-01",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "『府八幡宮ものがたり』をもとに祭神を史料批判的に読み、確認できる事実・由緒・推定を分けて整理する。",
+      "topics": ["府八幡宮", "祭神", "八幡三神", "誉田別命"],
+      "level": "L2"
+    },
+    {
+      "title": "府八幡宮本殿の造営史",
+      "url": "n082.html",
+      "district": ["nakaizumi"],
+      "themes": ["shrine-temple", "architecture", "cultural-assets"],
+      "content_type": "reading",
+      "published_at": "2026-08-01",
+      "updated_at": "2026-08-01",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "『府八幡宮ものがたり』をもとに本殿の造営史を史料批判的に読み、棟札・屋根材・修理履歴を整理する。",
+      "topics": ["府八幡宮", "本殿", "造営", "棟札", "屋根材"],
+      "level": "L2"
+    },
+    {
+      "title": "桜井王と「桜井の里」",
+      "url": "n083.html",
+      "district": ["nakaizumi"],
+      "themes": ["shrine-temple", "person", "place-name"],
+      "content_type": "reading",
+      "published_at": "2026-08-01",
+      "updated_at": "2026-08-01",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "『府八幡宮ものがたり』をもとに桜井王と「桜井の里」の伝承を史料批判的に読み、事実・由緒・推定を分ける。",
+      "topics": ["府八幡宮", "桜井王", "桜井の里", "伝承"],
+      "level": "L2"
+    },
+    {
+      "title": "府八幡宮の中門",
+      "url": "n084.html",
+      "district": ["nakaizumi"],
+      "themes": ["shrine-temple", "architecture", "cultural-assets"],
+      "content_type": "reading",
+      "published_at": "2026-08-01",
+      "updated_at": "2026-08-01",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "『府八幡宮ものがたり』をもとに中門の建築と境内での役割を史料批判的に整理する。",
+      "topics": ["府八幡宮", "中門", "境内建築", "造営"],
+      "level": "L2"
+    },
+    {
+      "title": "府八幡宮の末社群",
+      "url": "n085.html",
+      "district": ["nakaizumi"],
+      "themes": ["shrine-temple", "religion", "cultural-assets"],
+      "content_type": "reading",
+      "published_at": "2026-08-01",
+      "updated_at": "2026-08-01",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "『府八幡宮ものがたり』をもとに境内の末社群を読み、祭神・配置・地域信仰の層を整理する。",
+      "topics": ["府八幡宮", "末社", "境内", "地域信仰"],
+      "level": "L2"
+    },
+    {
+      "title": "府八幡宮の社殿彫刻",
+      "url": "n086.html",
+      "district": ["nakaizumi"],
+      "themes": ["shrine-temple", "arts", "architecture"],
+      "content_type": "reading",
+      "published_at": "2026-08-01",
+      "updated_at": "2026-08-01",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "『府八幡宮ものがたり』をもとに社殿彫刻を史料批判的に読み、意匠・配置・造営との関係を整理する。",
+      "topics": ["府八幡宮", "社殿彫刻", "意匠", "建築"],
+      "level": "L2"
+    },
+    {
+      "title": "府八幡宮の社務所と境内運営",
+      "url": "n087.html",
+      "district": ["nakaizumi"],
+      "themes": ["shrine-temple", "social-history", "village-history"],
+      "content_type": "reading",
+      "published_at": "2026-08-01",
+      "updated_at": "2026-08-01",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "『府八幡宮ものがたり』をもとに社務所を読み、祭祀・文書管理・参拝者対応を支える境内運営を整理する。",
+      "topics": ["府八幡宮", "社務所", "境内運営", "神職"],
+      "level": "L2"
+    },
+    {
+      "title": "府八幡宮の境内景観はどう変わったか",
+      "url": "n088.html",
+      "district": ["nakaizumi"],
+      "themes": ["shrine-temple", "land-memory", "environment"],
+      "content_type": "reading",
+      "published_at": "2026-08-01",
+      "updated_at": "2026-08-01",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "江戸後期・昭和初期・現在の境内を、絵図・写真・配置図から比較し、建物・樹木・参道・周辺道路の変化を読む。",
+      "topics": ["府八幡宮", "境内景観", "絵図", "古写真", "景観変化"],
+      "level": "L2"
+    },
+    {
       "title": "延喜式内社と磐田 ── 千年前の台帳に載った神社たち",
       "url": "oishi-ronko/009/",
       "district": [
@@ -10955,7 +11160,3932 @@
       "parent": "01002-nakaizumi.html",
       "count_as_knowledge": true,
       "show_in_updates": true,
-      "show׾w���(�+my�tory"
+      "show_in_all_articles": true
+    },
+    {
+      "title": "御殿・二之宮遺跡と、二つの時代が眠る原",
+      "url": "n018.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-12",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "御殿跡と古代の遺跡が重なる二之宮の原。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "府八幡宮と遠江国府の記憶",
+      "url": "n017.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "festival",
+        "architecture",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-25",
+      "updated_at": "2026-07-31",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "磐田市中泉の府八幡宮を、遠江国府・遠江国分寺跡・絵馬・社宝・棟札・氏子区域・例大祭から読み解くページ。",
+      "topics": [
+        "府八幡宮",
+        "遠江国府",
+        "絵馬",
+        "社宝",
+        "棟札",
+        "氏子区域",
+        "府八幡宮例大祭"
+      ],
+      "level": "L3",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "遠江国分寺跡と、古代磐田のはじまり",
+      "url": "n016.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "land-memory",
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-10",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "国の特別史跡・遠江国分寺跡。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "遠江国分寺とは何か ── 古代遠江の中心寺院",
+      "url": "n001.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "feature",
+      "published_at": "2026-06-09",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "奈良時代に置かれた遠江国分寺の特集。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "鎌田御厨 ── 伊勢神宮領だった村の名残",
+      "url": "u002.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "place-name",
+        "village-history",
+        "land-memory",
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-25",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "御厨地名、伊勢神宮領、鎌田神明宮、御厨地区の旧村と現代地名を読み解く。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "updated_at": "2026-07-10"
+    },
+    {
+      "title": "鎌田神明宮 ── 遠州のお伊勢さま",
+      "url": "u003.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-14",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "遠州のお伊勢さまと親しまれる鎌田神明宮。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "「貝塚」という地名 ── 西貝塚・東貝塚と消えた海岸線",
+      "url": "u001.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-25",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "縄文海進、磐田原台地、埋蔵文化財から、西貝塚・東貝塚という地名の記憶を読む。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "旧豊田町の地名と、土地の記憶",
+      "url": "t006.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "village-history",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-16",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "『豊田町地名地図』を歩き、旧豊田町の地名と土地の記憶をたどる。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "updated_at": "2026-07-10"
+    },
+    {
+      "title": "池田荘と「葛巻」 ── 地名に残る中世の荘園",
+      "url": "t009.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "小立野・西之島の「葛巻」と松尾大社領・池田荘の記憶を読む。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "「堤外」と「内郷堤」 ── 天竜川の堤が分けた土地",
+      "url": "t010.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "旧豊田町にくり返し現れる「堤外」の地名から、川と堤の境を読む。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "弥藤太島・気子島 ── 「島」のつく地名と低地の暮らし",
+      "url": "t011.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "「島」のつく地名から、天竜川低地の微高地と暮らしを読む。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "上新屋「半場名」と、天竜川左岸の新田開発",
+      "url": "t012.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "上新屋の小字「半場名」から、新田開発と人名由来地名を読む。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "上万能「挑燈野」 ── 古戦場と伝わる野の名",
+      "url": "t013.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "上万能に伝わる「挑燈野」を、一言坂の戦いとあわせて読む。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "森下・森本・立野 ── 「森」と「立野」の地名を歩く",
+      "url": "t014.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory",
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "森下・森本・立野に残る森、野、寺跡の記憶を読む。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "富丘・東原 ── 台地に開けた「原」と「丘」のまち",
+      "url": "t015.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "富丘・東原・高見丘から、旧豊田町北部の台地利用を読む。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "「新田」と名のつく土地 ── 江戸の開発が刻んだ磐田の地名",
+      "url": "t007.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-25",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "寺谷新田、源平新田、太郎馬新田、宇兵衛新田など、江戸期の新田開発が残した地名を読む。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "加茂・寺谷の歴史",
+      "url": "t005.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-14",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "遠江有数の農業地帯・加茂と寺谷の変遷。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "池田の渡し ── 天竜川をわたる東海道",
+      "url": "t004.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "road-traffic",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-13",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "天竜川を舟でわたった東海道の渡し場。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "東海道新田の歴史",
+      "url": "t008.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "road-traffic"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-12",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "東海道沿いに開かれた新田の歩み。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "一言坂の戦いと、本多忠勝の殿",
+      "url": "t003.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-11",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "一言坂に刻まれた戦国の殿戦の記憶。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "行興寺と熊野（ゆや）の長藤",
+      "url": "t002.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-10",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "熊野御前ゆかりの行興寺と国天然記念物の長藤。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "銚子塚古墳と、遠江を治めた王の眠り",
+      "url": "t001.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "land-memory",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-09",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "県内有数の前方後円墳・銚子塚古墳。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "天竜川がつくった村、流した村 ── 池田・掛塚と渡しの記憶",
+      "url": "s001.html",
+      "district": [
+        "nanbu",
+        "ryuyo",
+        "toyoda"
+      ],
+      "themes": [
+        "land-memory",
+        "place-name",
+        "road-traffic",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-25",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "暴れ天竜、旧河道、池田の渡し、掛塚湊を通して、川がつくった村と流した村の記憶を読む。",
+      "parent": "01005-nanbu.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "匂坂・寺谷・岩田 ── 台地のへりに並ぶ村々の地形読み",
+      "url": "k001.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-25",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "岩田地区の難読地名、崖線、旧村の記憶を、磐田原台地の縁辺地形から読み解く。",
+      "parent": "01006-koyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "掛塚湊の成立と廻船問屋 ── 材木輸送から御用米輸送、「遠州の小江戸」の最盛期へ",
+      "url": "r036.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "road-traffic",
+        "land-memory",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "天竜川河口の湊町・掛塚の成立史と廻船問屋。材木輸送から御用米輸送への転換、明治25年の最盛期、行政沿革までをたどる。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "updated_at": "2026-07-11",
+      "level": "L3"
+    },
+    {
+      "title": "掛塚まつりと遠州屈指の豪華屋台",
+      "url": "r002.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "festival",
+        "shrine-temple",
+        "architecture"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "貴船神社の秋季大祭と、廻船文化が育んだ屋台彫刻の美を読む。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "貴船神社と海の安全を祈る水神信仰",
+      "url": "r003.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "shrine-temple",
+        "festival",
+        "road-traffic",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "掛塚湊の船頭・廻船問屋が祈った貴船神社を、錨・石灯籠・屋台文化から読む。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "十束村の成立と平松・中島の新田開拓史",
+      "url": "r004.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "河口低地を美田へ変えた新田開発と、十束村の成立をたどる。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "袖浦村の塩づくり",
+      "url": "r005.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "life",
+        "land-memory",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "遠州灘の潮風と砂浜を活かした製塩業から、沿岸集落の知恵を読む。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "白羽の風と凧揚げ文化の起源",
+      "url": "r006.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "festival",
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "強い風を地域文化へ転じた白羽の凧揚げと、遠州の風土をたどる。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "天竜川河口のシラスウナギ漁とウナギ養殖の源流",
+      "url": "r007.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "汽水域の恵みと、河口の漁労・養殖の記憶を読む。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "十郎島と川袋",
+      "url": "r008.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "land-memory",
+        "village-history",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "天竜川旧流路、輪中集落、水塚、防災の知恵から河口低地の暮らしを読む。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "掛塚の豪商・吉岡家と廻船問屋の繁栄",
+      "url": "r009.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "road-traffic",
+        "architecture",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "木材流通と掛塚湊の経済を支えた廻船問屋の記憶を読む。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "竜洋大砂丘と防風林の維持管理",
+      "url": "r010.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "land-memory",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "飛砂・潮風・防潮の課題と黒松防風林を守ってきた地域の環境史。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "竜洋町の誕生と近代行政のあゆみ",
+      "url": "r011.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "掛塚・十束・袖浦が一つになった昭和30年の合併史と近代行政を読む。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "旧竜洋町になるまでの変遷",
+      "url": "r012.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "江戸・明治・大正期の町村沿革と生活圏から、竜洋町成立までをたどる。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "福田湊の発展と遠州の漁業史",
+      "url": "f001.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "life",
+        "land-memory",
+        "road-traffic"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "太田川河口の福田湊を、遠州灘の漁業・港・流通の記憶として読む。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "福田港のシラス船引き網漁と沿岸漁業",
+      "url": "f002.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "福田港のシラス漁と加工・流通を、遠州灘の沿岸漁業として読む。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "別珍・コールテンと福田の織物産業",
+      "url": "f003.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "別珍・コールテンの起毛加工と職人の分業から、福田の織物産業を読む。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "太田川河口のウナギ養殖と淡水水産",
+      "url": "f004.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "太田川河口の水系と低地利用から、ウナギ養殖と淡水水産を読む。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "福島村から福田町への改称と近代行政",
+      "url": "f005.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "village-history",
+        "life",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "福島村から福田町へ至る町制施行と改称を、町村沿革から読む。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "豊浜の砂丘と黒松防風林",
+      "url": "f006.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "land-memory",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "豊浜の砂丘、飛砂、潮風、黒松防風林を、海岸低地の環境史として読む。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "福田まつりと華麗な中泉式屋台",
+      "url": "f007.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "festival",
+        "shrine-temple",
+        "architecture"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "福田まつりを、屋台、彫刻、囃子、町内組織の記憶として読む。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "太郎馬新田と清庵新田の開拓史",
+      "url": "f008.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "太郎馬新田・清庵新田を、太田川下流低地の新田開発として読む。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "福田の寺社仏閣と信仰の歴史",
+      "url": "f009.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "shrine-temple",
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "海上安全、火伏せ、商売繁盛を願った福田の社寺信仰を読む。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "福田の暮らしと食文化",
+      "url": "f010.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "カツオ、シラス、砂地の芋を通じて、福田の暮らしと食文化を読む。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "敷地川と谷の集落",
+      "url": "y001.html",
+      "district": [
+        "toyooka"
+      ],
+      "themes": [
+        "land-memory",
+        "life",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "山あいの水がつくった豊岡の暮らしを、敷地川と谷筋から読む。",
+      "parent": "01009-toyooka.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "敷地村の成立と山村の記憶",
+      "url": "y002.html",
+      "district": [
+        "toyooka"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "岩室・大平・家田・万瀬・虫生をつなぐ旧敷地村のまとまりを読む。",
+      "parent": "01009-toyooka.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "広瀬村と神増・社山",
+      "url": "y003.html",
+      "district": [
+        "toyooka"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory",
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "山すその集落と旧村のまとまりを、神増・社山から読む。",
+      "parent": "01009-toyooka.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "野部村と上野部・下野部",
+      "url": "y004.html",
+      "district": [
+        "toyooka"
+      ],
+      "themes": [
+        "village-history",
+        "road-traffic",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "野部村の記憶を、上野部・下野部・天浜線沿いの交通から読む。",
+      "parent": "01009-toyooka.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "獅子ヶ鼻と豊岡の山の景観",
+      "url": "y005.html",
+      "district": [
+        "toyooka"
+      ],
+      "themes": [
+        "land-memory",
+        "shrine-temple",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "岩山・公園・山の信仰を、里山利用と景観の記憶から読む。",
+      "parent": "01009-toyooka.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "万瀬・虫生・大平",
+      "url": "y006.html",
+      "district": [
+        "toyooka"
+      ],
+      "themes": [
+        "life",
+        "land-memory",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "山あいの小集落と暮らしの技術を、谷・水・道・山林から読む。",
+      "parent": "01009-toyooka.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "合代島・新開・惣兵衛下新田",
+      "url": "y007.html",
+      "district": [
+        "toyooka"
+      ],
+      "themes": [
+        "land-memory",
+        "village-history",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "川沿いの低地、新開、新田地名から開発の記憶を読む。",
+      "parent": "01009-toyooka.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "豊岡村の誕生と2005年合併",
+      "url": "y008.html",
+      "district": [
+        "toyooka"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "広瀬・野部・敷地が一つになった豊岡村の成立と、磐田市合併を整理する。",
+      "parent": "01009-toyooka.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "天竜浜名湖線と豊岡",
+      "url": "y009.html",
+      "district": [
+        "toyooka"
+      ],
+      "themes": [
+        "road-traffic",
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "豊岡駅・敷地駅・上野部駅を、二俣線から天浜線への交通史として読む。",
+      "parent": "01009-toyooka.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "豊岡の祭り・寺社・里山信仰",
+      "url": "y010.html",
+      "district": [
+        "toyooka"
+      ],
+      "themes": [
+        "festival",
+        "shrine-temple",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "山と川に祈る暮らしを、寺社・祭礼・講の記憶から読む。",
+      "parent": "01009-toyooka.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "新豊院山古墳群と台地上の支配者 ── 弥生から古墳へ、向笠の丘に眠る記憶",
+      "url": "y011.html",
+      "district": [
+        "toyooka",
+        "koyo"
+      ],
+      "themes": [
+        "archaeology",
+        "ancient",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "国指定史跡・新豊院山古墳群。弥生時代の土器棺墓から古墳時代前期の前方後円墳まで、一つの丘に積み重なった墓制の変化と、三角縁神獣鏡が語る台地上の支配者の姿をたどる。",
+      "parent": "01009-toyooka.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "豊岡"
+    },
+    {
+      "title": "磐田タイムトラベル地図",
+      "url": "c004.html",
+      "district": [
+        "mitsuke",
+        "nakaizumi",
+        "mikuriya",
+        "toyoda",
+        "nanbu",
+        "koyo",
+        "ryuyo",
+        "fukude",
+        "toyooka"
+      ],
+      "themes": [
+        "land-memory",
+        "old-map",
+        "road-traffic",
+        "shrine-temple",
+        "festival"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-25",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "古墳、遠江国府、国分寺、見付宿、祭礼、湊、学校を固定SVG地図と時代別カードでたどる磐田市全体の歴史入口。",
+      "parent": "index.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "磐田郡という広がり ── 旧磐田市の外側にあった村々",
+      "url": "c010.html",
+      "district": [
+        "mitsuke",
+        "nakaizumi",
+        "mikuriya",
+        "toyoda",
+        "nanbu",
+        "koyo",
+        "ryuyo",
+        "fukude",
+        "toyooka"
+      ],
+      "themes": [
+        "village-history",
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-25",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "古代の郡、明治の郡制、昭和の編入合併をつなぎ、旧磐田市の外側にあった村々を整理する。",
+      "parent": "c017.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "古地図に村の名を探す ── 戸別明細図と旧高帳の読み合わせ",
+      "url": "c011.html",
+      "district": [
+        "mitsuke",
+        "nakaizumi",
+        "mikuriya",
+        "toyoda",
+        "nanbu",
+        "koyo",
+        "ryuyo",
+        "fukude",
+        "toyooka"
+      ],
+      "themes": [
+        "old-map",
+        "place-name",
+        "village-history",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-25",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "旧高帳、戸別明細図、現在の公図を読み合わせ、消えた村名や字名を調べる方法を整理する。",
+      "parent": "c017.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "磐田の地名をたどる",
+      "url": "c009.html",
+      "district": [
+        "mitsuke",
+        "nakaizumi",
+        "mikuriya"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory",
+        "village-history",
+        "road-traffic",
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-25",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "見付、国府台、中泉、二之宮、鎌田、御厨など、磐田の地名に残る国府・街道・水・信仰の記憶を読む。",
+      "parent": "index.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "中泉の生い立ち",
+      "url": "n023.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "place-name",
+        "village-history",
+        "land-memory",
+        "road-traffic"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-25",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "中泉を、遠江国府・国分寺、中泉御殿・代官所、中泉駅から磐田駅前へ続く三層の中心地として読む。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "今之浦と大之浦",
+      "url": "c024.html",
+      "district": [
+        "mitsuke",
+        "mikuriya"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-25",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "今之浦を、大之浦、万葉集、湿地・水田、今之浦川、土地区画整理が重なる水辺の記憶として読む。",
+      "parent": "index.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "鈴木繁男と磐田窯",
+      "url": "c025.html",
+      "district": [
+        "nakaizumi",
+        "mitsuke"
+      ],
+      "themes": [
+        "people",
+        "craft",
+        "mingei",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "archived",
+      "summary": "本文は非公開化。いつの日か復活できるよう、タイトルのみ記録しています。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": false,
+      "show_in_all_articles": false,
+      "show_in_updates": false
+    },
+    {
+      "title": "旧磐田市の成り立ち ── 村から町、町から市へ",
+      "url": "c017.html",
+      "district": [
+        "mitsuke",
+        "nakaizumi",
+        "mikuriya",
+        "toyoda",
+        "nanbu",
+        "koyo",
+        "ryuyo",
+        "fukude",
+        "toyooka"
+      ],
+      "themes": [
+        "village-history",
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-25",
+      "date_provisional": true,
+      "status": "published",
+      "summary": "江戸期の村名、町村制、磐田町成立、市制施行、2005年合併までを地名の記憶として読む。",
+      "parent": "index.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "城之崎遺跡 - 磐田原台地南部に残された弥生の住まいと古墳の記憶",
+      "url": "u004.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "land-memory",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田市西貝塚の城之崎遺跡を、弥生時代後期の高地性集落、城之崎2号墳・3号墳、古墳封土が住居跡を守った重層性から読み直す。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "映画『お別れの歌』と磐田の風景",
+      "url": "c027.html",
+      "district": [
+        "mitsuke",
+        "nakaizumi",
+        "mikuriya",
+        "toyoda",
+        "nanbu",
+        "koyo",
+        "ryuyo",
+        "fukude",
+        "toyooka"
+      ],
+      "themes": [
+        "land-memory"
+      ],
+      "content_type": "special",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田市内で撮影された映画『お別れの歌』を、今の磐田が映像として残された文化的出来事として記録する特別ページ。チラシ表裏も掲載。",
+      "parent": "index.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "磐田用水の歩み",
+      "url": "c028.html",
+      "district": [
+        "koyo",
+        "mikuriya",
+        "fukude"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory",
+        "water",
+        "agriculture"
+      ],
+      "content_type": "feature",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田用水を天竜川、社山疏水、幹線改良、農地、土地改良区の流れで読む総論ページ。",
+      "parent": "index.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "社山疏水の構想",
+      "url": "c029.html",
+      "district": [
+        "koyo",
+        "mikuriya",
+        "fukude"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory",
+        "water",
+        "agriculture"
+      ],
+      "content_type": "feature",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "社山疏水の構想と犬塚祐一郎、明治期の水利計画、地域有志の調整を読む。",
+      "parent": "c028.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "磐田用水幹線改良事業",
+      "url": "c030.html",
+      "district": [
+        "koyo",
+        "mikuriya",
+        "fukude"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory",
+        "water",
+        "agriculture"
+      ],
+      "content_type": "feature",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "昭和期の幹線改良事業を、取水難、突貫工事、昭和19年の初通水、用水安定化の流れで整理。",
+      "parent": "c028.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "天竜川下流農業水利事業",
+      "url": "c031.html",
+      "district": [
+        "koyo",
+        "mikuriya",
+        "fukude"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory",
+        "water",
+        "agriculture"
+      ],
+      "content_type": "feature",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "船明ダム、河口頭首工、パイプライン化、国営・県営・団体営事業を整理する。",
+      "parent": "c028.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "磐田用水東部土地改良区",
+      "url": "c032.html",
+      "district": [
+        "koyo",
+        "mikuriya",
+        "fukude"
+      ],
+      "themes": [
+        "village-history",
+        "land-memory",
+        "water",
+        "agriculture"
+      ],
+      "content_type": "feature",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田用水東部土地改良区の設立、管理区域、年表、連合、現代的意義を整理する。",
+      "parent": "c028.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "岩田・大藤・向笠をつなぐ丘陵と水の記憶",
+      "url": "k030.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "village-history",
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "article",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "向陽地区を、現在の学校区や生活圏だけでなく、岩田・大藤・向笠という旧村の重なりから読み直す導入ページ。",
+      "parent": "01006-koyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "岩田地区の成立と匂坂・寺谷の記憶",
+      "url": "k031-iwata.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "village-history",
+        "place-name",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "article",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "天竜川に接する岩田地区を、匂坂・寺谷・新田・寺社・水の記憶から整理する本編ページ。",
+      "parent": "01006-koyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "大藤地区の成立と磐田原台地の暮らし",
+      "url": "k032-ofuji.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "village-history",
+        "place-name",
+        "life",
+        "land-memory"
+      ],
+      "content_type": "article",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田原台地上の大藤地区を、大久保・藤上原・藤野・原、水利、畑作、茶園の記憶から整理する本編ページ。",
+      "parent": "01006-koyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "向笠地区の成立と太田川・敷地川の記憶",
+      "url": "k033-mukasa.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "village-history",
+        "place-name",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "article",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "向笠地区を、笠梅・向笠上中下・向笠西・向笠新屋と、太田川・敷地川・小藪川の水系から読む本編ページ。",
+      "parent": "01006-koyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "岩田地区 小字・地名資料",
+      "url": "k034-iwata-koaza.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "place-name",
+        "shiryo",
+        "land-memory"
+      ],
+      "content_type": "shiryo",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "岩田地区の大字・小字・難読地名を、資料画像で判読できる範囲から整理する資料ページ。",
+      "parent": "01006-koyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "大藤地区 小字・地名資料",
+      "url": "k035-ofuji-koaza.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "place-name",
+        "shiryo",
+        "land-memory"
+      ],
+      "content_type": "shiryo",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "大藤地区の大久保・藤上原・藤野・原・平松掛下入作などを、台地開拓と水の記憶から整理する資料ページ。",
+      "parent": "01006-koyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "向笠地区 小字・地名資料",
+      "url": "k036-mukasa-koaza.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "place-name",
+        "shiryo",
+        "land-memory"
+      ],
+      "content_type": "shiryo",
+      "published_at": "2026-06-26",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "向笠地区の笠梅・向笠上中下・向笠竹之内・向笠西・向笠新屋などを、水系と丘陵の記憶から整理する資料ページ。",
+      "parent": "01006-koyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "田原地区総論 ── 台地・旧道・田園がつくった磐田東部の暮らし",
+      "url": "u018.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "land-memory",
+        "village-history",
+        "place-name",
+        "road-traffic"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "台地縁・谷筋・旧道・水の得やすさが重なった場所に集落が寄った、田原地区を地形・水利・旧道・寺社から読み直す総論。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "三ヶ野坂から西島・明ヶ島へ ── 道と寺社で読む田原地区の記憶",
+      "url": "u019.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "road-traffic",
+        "place-name",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "坂・「島」地名・寺社・旧道を手がかりに、移動と信仰と農地の関係を読み解く田原地区の深掘り。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "御厨地区総論 ── 古い地名と新しい暮らしが重なる磐田東部",
+      "url": "u020.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "land-memory",
+        "place-name",
+        "village-history",
+        "road-traffic"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "古い地名の重みと、御厨駅・住宅地・生活圏が重なる現代の御厨を、地形・寺社・道から読む総論。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "南御厨地区総論 ── 低地・農地・道がつくった南側の生活圏",
+      "url": "u021.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "land-memory",
+        "village-history",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "御厨の付属ではなく、低地・水利・農地・寺社のまとまりを持つ独立した生活圏として南御厨を描く総論。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "御厨と南御厨を分けるもの、つなぐもの ── 地名・水・道・暮らしの比較史",
+      "url": "u022.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "land-memory",
+        "place-name",
+        "village-history"
+      ],
+      "content_type": "feature",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "同じ地名圏にある差異と連続性を、地形・水利・交通・生活圏から比較する横断ページ。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "西貝地区総論 ── 旧集落・寺社・開発が重なる磐田の東側",
+      "url": "u023.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "land-memory",
+        "village-history",
+        "place-name",
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "西貝塚・西之島・上南田・安久路・城之崎。旧農村と近代の都市化・工業化が重なる西貝を読む総論。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "西貝塚から安久路・城之崎へ ── 田園から市街地へ変わった地域の記憶",
+      "url": "u024.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "land-memory",
+        "place-name",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "変化の速い地域ほど記憶は失われやすい。開発・宅地化の層が重なる西貝塚・安久路・城之崎の深掘り。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "天竜地区総論 ── 川と低地がつくった暮らしの記憶",
+      "url": "s013.html",
+      "district": [
+        "nanbu"
+      ],
+      "themes": [
+        "land-memory",
+        "village-history",
+        "shrine-temple",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "天竜川の恵みとリスクのあいだで続いてきた集落を、低地・水利・旧道・寺社から読む総論。",
+      "parent": "01005-nanbu.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "川の恵みと怖さ ── 天竜地区に残る水辺の生活史",
+      "url": "s014.html",
+      "district": [
+        "nanbu"
+      ],
+      "themes": [
+        "land-memory",
+        "life",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "旧河道・自然堤防・後背湿地と治水、農地・水路・橋の動線から、水辺の生活史と将来課題を深掘りする。",
+      "parent": "01005-nanbu.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "於保地区総論 ── 大池・低地・農地が支えた南の集落",
+      "url": "s015.html",
+      "district": [
+        "nanbu"
+      ],
+      "themes": [
+        "land-memory",
+        "place-name",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "水を得ること、逃がすこと、田を守ること。水と農地の関係から於保の集落形成を読む総論。",
+      "parent": "01005-nanbu.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "長野地区総論 ── 水田の広がりと旧集落の輪郭を読む",
+      "url": "s016.html",
+      "district": [
+        "nanbu"
+      ],
+      "themes": [
+        "land-memory",
+        "place-name",
+        "shrine-temple",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "長野・小島・前野・鮫島・白拍子など、水田のなかに点在する旧集落を水利と農地から読む総論。",
+      "parent": "01005-nanbu.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "於保と長野を分けるもの、つなぐもの ── 水利・農地・集落の南部史",
+      "url": "s017.html",
+      "district": [
+        "nanbu"
+      ],
+      "themes": [
+        "land-memory",
+        "place-name",
+        "village-history"
+      ],
+      "content_type": "feature",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "南部低地の集落を、水利・農地・共同体・将来課題から横断的に比較する。衰退ではなく再定義を問う。",
+      "parent": "01005-nanbu.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "府八幡宮楼門 ── 遠江国府の記憶を受け継ぐ中泉で、神社建築と町の中心性を同時に語る楼門",
+      "url": "n024.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・建造物。中泉に伝わる文化財を、公式指定情報と中泉地区の地域史から読み直す。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "旧赤松家門・塀 ── 赤松則良の足跡と、近代磐田の町並みの記憶をつなぐ門と塀",
+      "url": "m020.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・建造物。見付に伝わる文化財を、公式指定情報と見付地区の地域史から読み直す。",
+      "parent": "01001-mitsuke.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "木造地蔵菩薩坐像 ── 見付の寺院文化の奥に、平安仏の静かな時間を読む",
+      "url": "m021.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・彫刻。見付に伝わる文化財を、公式指定情報と見付地区の地域史から読み直す。",
+      "parent": "01001-mitsuke.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "木造毘沙門天立像 ── 武神信仰の像から、見付の寺院と道の記憶をたどる",
+      "url": "m022.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・彫刻。見付に伝わる文化財を、公式指定情報と見付地区の地域史から読み直す。",
+      "parent": "01001-mitsuke.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "絹本着色釈迦十六善神画像 ── 遠州灘に近い集落に伝わる中世仏画から、海辺の信仰を読み直す",
+      "url": "f018.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・絵画。豊浜中野に伝わる文化財を、公式指定情報と福田地区の地域史から読み直す。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "熊野絵巻 ── 池田の熊野信仰と中世交通を、絵巻という語りの形式から読む",
+      "url": "t027.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・絵画。池田に伝わる文化財を、公式指定情報と豊田地区の地域史から読み直す。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "鰐口 ── 大島の低地に伝わる金属の響きから、南北朝期の信仰と水辺の集落を読む",
+      "url": "s018.html",
+      "district": [
+        "nanbu"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・工芸。大島に伝わる文化財を、公式指定情報と南部地区の地域史から読み直す。",
+      "parent": "01005-nanbu.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "三角縁四神四獣鏡 ── 新貝の鏡を、御厨古墳群とヤマト王権の接点として読み直す",
+      "url": "u025.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・考古資料。新貝に伝わる文化財を、公式指定情報と御厨地区の地域史から読み直す。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "堂山古墳出土遺物 ── 堂山古墳の副葬品から、御厨の古墳群と地域首長の姿をたどる",
+      "url": "u026.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・考古資料。堂山古墳周辺（c021所在地表記は見付）に伝わる文化財を、公式指定情報と御厨地区の地域史から読み直す。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "太刀 銘成高 ── 刀剣一振りを、見付に残る中世遠江の武家文化の入口として読む",
+      "url": "m023.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・工芸。見付に伝わる文化財を、公式指定情報と見付地区の地域史から読み直す。",
+      "parent": "01001-mitsuke.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "淡海国玉神社本殿 附棟札5枚 ── 遠江総社の本殿と棟札から、見付が国の中心だった記憶を読む",
+      "url": "m024.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・建造物。見付に伝わる文化財を、公式指定情報と見付地区の地域史から読み直す。",
+      "parent": "01001-mitsuke.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "米塚古墳群 ── 12基の円墳が連なる、寺谷・磐田原台地西縁の群集墳",
+      "url": "k037.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田市寺谷、磐田原台地西縁の米塚古墳群（県指定史跡）。12基の円墳で構成され、中心の米塚古墳は直径40m・高さ6mの2段築成。古墳時代中期・5世紀の築造と、消滅した3基の記録を整理する。",
+      "parent": "01006-koyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "updated_at": "2026-07-10"
+    },
+    {
+      "title": "長者屋敷遺跡 ── 東西100m・南北80mの二重土塁に囲まれた奈良時代の遺跡",
+      "url": "k038.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory",
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田市寺谷、磐田原台地西縁の長者屋敷遺跡（県指定史跡）。東西約100m・南北約80m、高さ3mの長方形の土塁と、内側の大規模な掘立柱建物跡。奈良時代の役所的施設か豪族の屋敷跡と考えられる遺構を整理する。",
+      "parent": "01006-koyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "updated_at": "2026-07-10"
+    },
+    {
+      "title": "磐田原台地と古墳分布 ── 台地の縁に眠る、時代の異なる王たち",
+      "url": "k044.html",
+      "district": [
+        "koyo",
+        "mikuriya",
+        "toyooka"
+      ],
+      "themes": [
+        "archaeology",
+        "ancient",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "新豊院山古墳群・御厨古墳群・兜塚古墳など、磐田原台地の縁に点在する古墳群を俯瞰し、弥生末から古墳中期までの分布と時代の推移をたどる。",
+      "parent": "01006-koyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "向陽"
+    },
+    {
+      "title": "磐田原の水不足と開発史 ── 水に恵まれなかった台地の記憶",
+      "url": "k045.html",
+      "district": [
+        "koyo",
+        "toyooka"
+      ],
+      "themes": [
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田原台地の水不足の背景と、寺谷用水・磐田用水・赤松則良の茶園開拓という複数の対応策を俯瞰する。",
+      "parent": "01006-koyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "向陽"
+    },
+    {
+      "title": "土器塚古墳 ── 中泉・国府台に残る直径36mの円墳、通称「丸山」",
+      "url": "n025.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory",
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田市中泉・国府台に残る土器塚古墳。直径36m・高さ5mの円墳で、通称「丸山」。平成12年度の発掘調査でわかった構造・出土品と、戒成皇子伝説、京見塚古墳との関係を整理する。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "updated_at": "2026-07-10"
+    },
+    {
+      "title": "善導寺大クス ── 寺の境内に立つ老樹を、中泉のまちが重ねてきた時間の目印として読む",
+      "url": "n026.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・天然記念物。中泉に伝わる文化財を、公式指定情報と中泉地区の地域史から読み直す。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "甲塚のクロガネモチ ── 旧東海道のまち見付に残る樹木から、甲塚周辺の自然記憶を読む",
+      "url": "m025.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・天然記念物。見付に伝わる文化財を、公式指定情報と見付地区の地域史から読み直す。",
+      "parent": "01001-mitsuke.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "熊野の長フジ ── 国指定とも関わる長フジを、池田の熊野御前伝承と文化的景観から読み直す",
+      "url": "t028.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・天然記念物。池田に伝わる文化財を、公式指定情報と豊田地区の地域史から読み直す。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "掛塚祭屋台囃子 ── 天竜川河口の湊町に響く囃子から、掛塚祭の町場文化を読む",
+      "url": "r013.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "cultural-property",
+        "festival",
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "県指定・無形民俗文化財。掛塚に伝わる文化財を、公式指定情報と竜洋地区の地域史から読み直す。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "池田やかた祭り ── 熊野御前伝承と池田荘の記憶を、祭りのかたちから読み直す",
+      "url": "t029.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "cultural-property",
+        "festival",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・無形民俗文化財。池田に伝わる行事を、公式指定情報と豊田地区の地域史から読み直す。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "大めし祭り ── 大飯を供える農村祭礼から、富里の生産と共同体を読む",
+      "url": "t030.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "cultural-property",
+        "festival",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・無形民俗文化財。富里に伝わる行事を、公式指定情報と豊田地区の地域史から読み直す。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "加茂大念仏 ── 盆の念仏行事から、加茂に残る供養と集落の記憶を読む",
+      "url": "t031.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "cultural-property",
+        "festival",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・無形民俗文化財。加茂に伝わる行事を、公式指定情報と豊田地区の地域史から読み直す。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "豊岡の遠州大念仏 ── 複数集落にまたがる大念仏から、豊岡の広域民俗を記録する",
+      "url": "o001.html",
+      "district": [
+        "toyooka"
+      ],
+      "themes": [
+        "cultural-property",
+        "festival",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・無形民俗文化財。豊岡地区各所に伝わる行事を、公式指定情報と豊岡地区の地域史から読み直す。",
+      "parent": "01009-toyooka.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "掛塚祭竹馬 ── 掛塚祭の竹馬から、天竜川河口の湊町文化を読む",
+      "url": "r014.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "cultural-property",
+        "festival",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・無形民俗文化財。掛塚に伝わる行事を、公式指定情報と竜洋地区の地域史から読み直す。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "八王子神社米とぎまつり ── 米をとぐ所作から、南部低地の稲作儀礼と集落の祈りを読む",
+      "url": "s019.html",
+      "district": [
+        "nanbu"
+      ],
+      "themes": [
+        "cultural-property",
+        "festival",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・無形民俗文化財。下太に伝わる行事を、公式指定情報と南部地区の地域史から読み直す。",
+      "parent": "01005-nanbu.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "見付から福田・掛塚方面へ向かう旧道 ── 南部の低地を渡る道",
+      "url": "s020.html",
+      "district": [
+        "nanbu",
+        "mitsuke",
+        "fukude",
+        "ryuyo"
+      ],
+      "themes": [
+        "road-traffic",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "内陸の見付と、沿岸の福田・掛塚を結んだ道を、南部の低地地形から考える。微高地づたいの旧道という原則を手がかりに、確認できることとできないことを分けて読む。",
+      "parent": "01005-nanbu.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "中野白山神社十日祭（お箱） ── お箱をめぐる年中行事から、豊浜中野の信仰と集落の秩序を読む",
+      "url": "f019.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "cultural-property",
+        "festival",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・無形民俗文化財。豊浜中野に伝わる行事を、公式指定情報と福田地区の地域史から読み直す。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "中野白山神社例祭（白酒） ── 白酒を供える祭礼食から、海辺の集落に残る祈りの形を読む",
+      "url": "f020.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "cultural-property",
+        "festival",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・無形民俗文化財。豊浜中野に伝わる行事を、公式指定情報と福田地区の地域史から読み直す。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "氏神様の年始回り ── 年始に氏神をめぐる行事から、豊浜の家と集落共同体を読む",
+      "url": "f021.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "cultural-property",
+        "festival",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・無形民俗文化財。豊浜に伝わる行事を、公式指定情報と福田地区の地域史から読み直す。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "遠州灘の砂丘・海岸線・防潮堤 ── 令和の「静岡モデル」がつなぐ防災の記憶",
+      "url": "f022.html",
+      "district": [
+        "fukude",
+        "ryuyo"
+      ],
+      "themes": [
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "明治以来の黒松防風林の伝統から、南海トラフ地震に備える令和の防潮堤「静岡モデル」まで。福田・竜洋の海岸線と防災の歴史を俯瞰する。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "福田"
+    },
+    {
+      "title": "賀茂神社特殊神饌 ── 神饌のかたちから、加茂の食と信仰を地域史として読む",
+      "url": "t032.html",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "cultural-property",
+        "festival",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・無形民俗文化財。加茂に伝わる行事を、公式指定情報と豊田地区の地域史から読み直す。",
+      "parent": "01004-toyoda.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "阿多古山一里塚 ── 東海道見付宿の一里塚から、街道と道中の記憶を読む",
+      "url": "m026.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・史跡。見付の東海道一里塚を、公式指定情報と見付地区の地域史から読み直す。",
+      "parent": "01001-mitsuke.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "見付本陣（神谷家・鈴木家）墓所 ── 西光寺に眠る本陣の家から、宿場の運営を読む",
+      "url": "m027.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・史跡。見付宿本陣を務めた家の墓所を、公式指定情報と見付地区の地域史から読み直す。",
+      "parent": "01001-mitsuke.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "西光寺大クス附ナギの木 ── 見付宿西端の寺に育つ社寺林の巨木",
+      "url": "m028.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・天然記念物。西光寺境内の大クスとナギを、公式指定情報と見付地区の地域史から読み直す。",
+      "parent": "01001-mitsuke.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "西光寺のイヌマキ ── 時宗の寺に立つイヌマキと見付の社寺林",
+      "url": "m029.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・天然記念物。西光寺境内のイヌマキを、公式指定情報と見付地区の地域史から読み直す。",
+      "parent": "01001-mitsuke.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "澄水山古墳 ── 磐田農業高校に残る古墳から、台地縁辺の首長墓を読む",
+      "url": "n027.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・史跡。中泉・磐田農業高校内の古墳を、公式指定情報と中泉地区の地域史から読み直す。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "アキザキヤツシロラン群生地 ── 福王寺の林床に生きる腐生植物と社寺林",
+      "url": "n028.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・天然記念物。福王寺境内の稀少植物群生地を、公式指定情報と中泉地区の地域史から読み直す。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "天御子神社のヤマモモの木 ── 中央町の鎮守に育つ平地最大級のヤマモモ",
+      "url": "n029.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・天然記念物。中央町・天御子神社のヤマモモを、公式指定情報と地域史から読み直す（地区分類は要確認）。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "福王寺のケヤキ ── 城之崎の古刹に立つ平地最大級のケヤキ",
+      "url": "n030.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・天然記念物。福王寺境内のケヤキを、公式指定情報と中泉地区の地域史から読み直す。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "福王寺のクロバイ ── 染めの媒染に使われた常緑樹と境内の植生",
+      "url": "n031.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・天然記念物。福王寺境内のクロバイを、公式指定情報と中泉地区の地域史から読み直す。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "静岡県立磐田農業高等学校記念館 ── 中泉に移った農業教育と登録文化財の校舎",
+      "url": "n032.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "国登録・有形文化財。磐田農業高校記念館を、登録制度の説明とともに中泉地区の近代教育史から読み直す。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "御厨古墳群 ── 全長107mの松林山古墳と、卑弥呼の鏡と呼ばれる三角縁神獣鏡",
+      "url": "u027.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田市新貝・鎌田の御厨古墳群。全長107m・県内第4位の松林山古墳をはじめ、高根山・御厨堂山・秋葉山・稲荷山の5基の規模と出土品、新貝17号墳・経塚古墳・目隠山古墳との関係を整理する。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "updated_at": "2026-07-10"
+    },
+    {
+      "title": "医王寺庭園及び参道 ── 鎌田の名勝庭園と参道空間を歩く",
+      "url": "u028.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・名勝。鎌田・医王寺の庭園と参道を、公式指定情報と御厨地区の地域史から読み直す。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "袴田家のマキ ── 鎌田の屋敷林に立つイヌマキと遠州の風土",
+      "url": "u029.html",
+      "district": [
+        "mikuriya"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・天然記念物。鎌田・袴田家の屋敷木マキを、公式指定情報と御厨地区の地域史から読み直す。",
+      "parent": "01003-mikuriya.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "須賀神社クス ── 西島の鎮守に育つ低地のクスと水辺の信仰",
+      "url": "r015.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "cultural-property",
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-27",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "市指定・天然記念物。西島・須賀神社のクスを、公式指定情報と地域史から読み直す（地区分類は要確認）。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "遠州の南画家たち ─ 豪商が支えた美のネットワーク",
+      "url": "nanga-index.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "person",
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-28",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "江戸後期から明治にかけ、磐田・中遠地域で花開いた文人画（南画）の世界。福田半香や平井顕斎の足跡と、彼らを支えた豪商たちのパトロンネットワークをたどる。",
+      "parent": "01008-fukude.html"
+    },
+    {
+      "title": "平井顕斎 — 豊浜中野に生きた遠州の南画家",
+      "url": "m032.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "person",
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-28",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "幕末の中遠・福田地域で活躍した南画家・平井顕斎の画業と生涯。尊王攘夷の志士たちと交わり、激動の時代を筆と信念で生き抜いた足跡を追う。",
+      "parent": "01008-fukude.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "遠州文人サロン ─ 掛塚・見付の豪商が支えた芸術",
+      "url": "m033.html",
+      "district": [
+        "fukude",
+        "ryuyo"
+      ],
+      "themes": [
+        "person",
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-28",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "江戸後期の中遠地域における芸術支援とパトロンネットワーク。天竜川の木材交易で栄えた掛塚や、見付宿の豪商たちが形成した文人サロンの実態に迫る。",
+      "parent": "01007-ryuyo.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "南画家ゆかりの地を歩く ─ 記念碑と現地の面影",
+      "url": "m034.html",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "person",
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-28",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田市内に残る福田半香や平井顕斎ゆかりの歴史スポットを訪ねるウォーキングガイド。福田の生家跡、豊浜中野の妙法寺、掛塚の豪商跡を歩く。",
+      "parent": "01008-fukude.html"
+    },
+    {
+      "title": "福田半香とは誰か — 遠州見付が生んだ文人画家の生涯",
+      "url": "m043.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "person",
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-28",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "見付宿に生まれ渡辺崋山に学んだ文人画家・福田半香の生涯。姓と地名の混同、名・字・号、半香義会、詩書画、晩年と生涯年表までを統合した本編。",
+      "parent": "01001-mitsuke.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "福田半香と渡辺崋山、そして半香義会",
+      "url": "m045.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "person",
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-28",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "福田半香と渡辺崋山の師友関係、蛮社の獄、崋山生前の支援だった半香義会、崋山の死と半香が背負ったものを読む。",
+      "parent": "01001-mitsuke.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "福田半香の画風を読む — 山水図に残る静けさと気骨",
+      "url": "m047.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "person",
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-28",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "文人画・南画の視点から、福田半香の山水画を代表作とともに読み解く。形似と伝神、余白、点景人物。",
+      "parent": "01001-mitsuke.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "title": "福田半香の門人と遠州画脈 — 名が残る人、残らなかった人",
+      "url": "m049.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "person",
+        "life",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-28",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "小栗松靄・熊谷青城・武田桜園・樋口思斎・藤田松湖ら、福田半香の門人と遠州画脈を一本に統合してたどる。",
+      "parent": "01001-mitsuke.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true
+    },
+    {
+      "slug": "h001",
+      "title": "二十一世紀に伝えたい戦争体験 ── 磐田市民39人の記憶",
+      "url": "h001.html",
+      "district": [],
+      "themes": [
+        "war-memory",
+        "oral-history",
+        "peace"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-02",
+      "updated_at": "2026-07-02",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "戦争・平和",
+      "summary": "磐田市が平成14年に刊行した体験記集をもとにした特集ポータル。全10ページ公開。"
+    },
+    {
+      "slug": "h002",
+      "title": "空襲の記憶 ── 浜松大空襲と磐田・見付の空",
+      "url": "h002.html",
+      "district": [],
+      "themes": [
+        "war-memory",
+        "oral-history",
+        "peace"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-02",
+      "updated_at": "2026-07-02",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "戦争・平和",
+      "summary": "空襲の記憶 ── 浜松大空襲と磐田・見付の空",
+      "parent": "h001.html"
+    },
+    {
+      "slug": "h003",
+      "title": "学徒動員と対空戦 ── 見付中学生と少年たちの戦争",
+      "url": "h003.html",
+      "district": [],
+      "themes": [
+        "war-memory",
+        "oral-history",
+        "peace"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-02",
+      "updated_at": "2026-07-02",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "戦争・平和",
+      "summary": "学徒動員と対空戦 ── 見付中学生と少年たちの戦争",
+      "parent": "h001.html"
+    },
+    {
+      "slug": "h004",
+      "title": "銃後を守る ── 疎開・勤労動員・女性たちの戦時生活",
+      "url": "h004.html",
+      "district": [],
+      "themes": [
+        "war-memory",
+        "oral-history",
+        "peace"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-02",
+      "updated_at": "2026-07-02",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "戦争・平和",
+      "summary": "銃後を守る ── 疎開・勤労動員・女性たちの戦時生活",
+      "parent": "h001.html"
+    },
+    {
+      "slug": "h005",
+      "title": "出征兵士の記録 ── 「山内哲手記」にみるマニラへの道",
+      "url": "h005.html",
+      "district": [],
+      "themes": [
+        "war-memory",
+        "oral-history",
+        "peace"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-02",
+      "updated_at": "2026-07-02",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "戦争・平和",
+      "summary": "出征兵士の記録 ── 「山内哲手記」にみるマニラへの道",
+      "parent": "h001.html"
+    },
+    {
+      "slug": "h006",
+      "title": "戦地からの証言 ── 中国戦線と軍隊生活の記憶",
+      "url": "h006.html",
+      "district": [],
+      "themes": [
+        "war-memory",
+        "oral-history",
+        "peace"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-02",
+      "updated_at": "2026-07-02",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "戦争・平和",
+      "summary": "戦地からの証言 ── 中国戦線と軍隊生活の記憶",
+      "parent": "h001.html"
+    },
+    {
+      "slug": "h007",
+      "title": "東南海地震と戦時下の岩田村",
+      "url": "h007.html",
+      "district": [],
+      "themes": [
+        "war-memory",
+        "oral-history",
+        "peace"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-02",
+      "updated_at": "2026-07-02",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "戦争・平和",
+      "summary": "東南海地震と戦時下の岩田村",
+      "parent": "h001.html"
+    },
+    {
+      "slug": "h008",
+      "title": "終戦の日 ── 玉音放送とその後",
+      "url": "h008.html",
+      "district": [],
+      "themes": [
+        "war-memory",
+        "oral-history",
+        "peace"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-02",
+      "updated_at": "2026-07-02",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "戦争・平和",
+      "summary": "終戦の日 ── 玉音放送とその後",
+      "parent": "h001.html"
+    },
+    {
+      "slug": "h009",
+      "title": "原爆と平和への願い ── 磐田の中学生が聞いた被爆者の声",
+      "url": "h009.html",
+      "district": [],
+      "themes": [
+        "war-memory",
+        "oral-history",
+        "peace"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-02",
+      "updated_at": "2026-07-02",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "戦争・平和",
+      "summary": "原爆と平和への願い ── 磐田の中学生が聞いた被爆者の声",
+      "parent": "h001.html"
+    },
+    {
+      "slug": "h010",
+      "title": "二十一世紀へ ── 記憶を継ぐ、磐田市非核平和都市宣言と慰霊",
+      "url": "h010.html",
+      "district": [],
+      "themes": [
+        "war-memory",
+        "oral-history",
+        "peace"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-02",
+      "updated_at": "2026-07-02",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "戦争・平和",
+      "summary": "二十一世紀へ ── 記憶を継ぐ、磐田市非核平和都市宣言と慰霊",
+      "parent": "h001.html"
+    },
+    {
+      "title": "遠江国府はどこにあったのか ── 古代遠江の政治の中心をめぐって",
+      "url": "n033.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "land-memory",
+        "place-name"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-06-28",
+      "updated_at": "2026-06-28",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "役所＝国府はいまの磐田のどこにあったのか。所在地の諸説、総社・府八幡宮との関係、その後までを読み解く特集。",
+      "count_as_knowledge": true,
+      "show_in_updates": false,
+      "show_in_all_articles": true,
+      "section": "中泉"
+    },
+    {
+      "title": "国分寺ものがたり ── 天平の寺はどう生き続けたか（特集・全12ページ公開）",
+      "url": "n034.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "遠江国分寺跡に隣接する薬師堂を軸に、平安中期の講堂倒壊から令和4年の移築落慶まで、約千年続いた信仰の歴史をたどる総合学術特集。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉"
+    },
+    {
+      "title": "講堂が倒れた日 ── 治安2年の大風と太政官への嘆願",
+      "url": "n035.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "治安2年（1022年）の大風で倒壊した遠江国分寺講堂。太政官への修復申請と勘査の手続きから、摂関政治期の地方国分寺の実態を読む。",
+      "parent": "n034.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉"
+    },
+    {
+      "title": "鎌倉時代の国分寺 ── 釈迦から薬師へ、本尊が変わるとき",
+      "url": "n036.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "建久2年の源頼朝による国分二寺修造令と、承元3年の「薬師堂」表記の史料から、本尊信仰の変化と国分寺から薬師堂への転換を読む。",
+      "parent": "n034.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉"
+    },
+    {
+      "title": "記録が消えた理由 ── 東海道と国分寺の前を通らなくなった道",
+      "url": "n037.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "land-memory",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "鎌倉・室町期の紀行文に国分寺が登場しない理由を、中世東海道のルート変更と発掘成果から読み解く。",
+      "parent": "n034.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉"
+    },
+    {
+      "title": "堀越氏延の鰐口 ── 大永2年、見付端城主の寄進",
+      "url": "n038.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "cultural-property",
+        "person"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "大永2年（1522年）、見付端城主・堀越氏延が国分寺薬師堂に奉納した鰐口。現存する薬師如来坐像との関係から、戦国期の薬師堂再興を読む。",
+      "parent": "n034.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉"
+    },
+    {
+      "title": "中泉代官と薬師堂の再興 ── 中野七蔵・高室昌重と憲能和尚",
+      "url": "n039.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "person",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "元亀3年の焼失を経て、江戸初期の中泉代官・中野七蔵と高室昌重による本堂再建と、初代住職・憲能和尚の事績を読む。",
+      "parent": "n034.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉"
+    },
+    {
+      "title": "卵塔墓が語る260年 ── 国分寺住職たちの墓碑を読む",
+      "url": "n040.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "person",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "江戸初期から明治初期まで14基の墓塔が伝える国分寺住職たちの歩みと、寺子屋を開いた住職・真浄の記憶を読む。",
+      "parent": "n034.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉"
+    },
+    {
+      "title": "遠江四十九薬師霊場と庶民の信仰 ── 絵馬・巡礼・木喰上人",
+      "url": "n041.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "遠江四十九薬師霊場第一番札所としての国分寺薬師堂。享保期に始まった霊場巡りと、病気平癒を願った人々の絵馬を読む。",
+      "parent": "n034.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉"
+    },
+    {
+      "title": "境松の門前町 ── 東海道の立場と饅頭屋のあった風景",
+      "url": "n042.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "village-history",
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "見付と中泉の境にあたる境松。東海道の立場として栄えた門前町の家並みと、饅頭屋・鍛冶屋の記憶を絵図と発掘成果からたどる。",
+      "parent": "n034.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉"
+    },
+    {
+      "title": "明治の廃寺 ── 上知令と国分寺の断絶",
+      "url": "n043.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "明治の上知令による寺社領没収と、最後の住職の死去による廃寺。無住職・無檀家となった薬師堂を境松の人々が守り続けた経緯を読む。",
+      "parent": "n034.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉"
+    },
+    {
+      "title": "森本善苗尼と近藤文六 ── 昭和の国分寺復興",
+      "url": "n044.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "person",
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "廃寺から80年、境松の招請で入寺した森本善苗尼と、それを支えた近藤文六。昭和17年の国分寺認可までの復興の歩みを読む。",
+      "parent": "n034.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉"
+    },
+    {
+      "title": "令和の薬師堂移築 ── 国分寺奉賛会と2度目の史跡公園",
+      "url": "n045.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "国分寺奉賛会の歩みと、令和4年の薬師堂移築落慶までの経緯。史跡公園整備が進む現在の遠江国分寺跡と、信仰の現在地としての薬師堂を読む。",
+      "parent": "n034.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉"
+    },
+    {
+      "title": "磐田駅前・中泉の近代商業 ── 中泉駅開業から「天平のまち」まで",
+      "url": "n046.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "road-traffic",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "明治22年の中泉駅開業から、見付との合併・磐田駅への改称、駅舎の変遷、令和の複合施設「天平のまち」まで。磐田駅前・中泉の近代商業と町の移り変わりをたどる。",
+      "parent": "01002-nakaizumi.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉"
+    },
+    {
+      "title": "磐田駅から消えた二つの鉄路 ── 中泉軌道と光明電気鉄道",
+      "url": "c051.html",
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "transportation",
+        "modern-history",
+        "land-memory"
+      ],
+      "content_type": "feature",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-10",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田駅、かつての中泉駅を起点に、天竜川水運と地域の産業を支えようとした中泉軌道と光明電気鉄道。二つの鉄路の記憶をたどる特集の入口。",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "総論"
+    },
+    {
+      "title": "中泉軌道とは何だったのか ── 天竜川水運と磐田駅を結んだ細い鉄路",
+      "url": "c052.html",
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "transportation",
+        "modern-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "1909年に中泉停車場から池田橋方面へ開通した中泉軌道。天竜川水運と東海道本線を結んだ細い軌道の役割と、人車から馬力へ、旅客も担った歩みをたどる。",
+      "parent": "c051.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "総論"
+    },
+    {
+      "title": "旧東海道を走った軌道 ── 中泉軌道のルートと松並木の記憶",
+      "url": "c053.html",
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "transportation",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "中泉駅付近から旧東海道、一言橋、森下、池田橋へ。中泉軌道が通ったとされるルートを現在の地名でたどり、松並木伐採の伝承についても書き分けて整理する。",
+      "parent": "c051.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "総論"
+    },
+    {
+      "title": "光明電気鉄道の夢 ── 見付と二俣を結ぼうとした高速電車",
+      "url": "c054.html",
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "transportation",
+        "modern-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-10",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "新中泉から見付、岩田、上野部を経て二俣町へ。地方鉄道として異例の電化規格を持った光明電気鉄道の構想と、見付・中泉間を結ぼうとした背景を読む。",
+      "parent": "c051.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "総論"
+    },
+    {
+      "title": "光明電鉄19駅一覧 ── 新中泉から二俣町までをたどる",
+      "url": "c055.html",
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "transportation",
+        "reference-list"
+      ],
+      "content_type": "reference",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-17",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "光明電気鉄道の停留所を含む19駅を、新中泉からの距離とともに一覧表にまとめる。現在の地名・見える痕跡・確認方針を添えた、地図上でたどるための資料ページ。",
+      "parent": "c051.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "総論",
+      "topics": [
+        "光明電気鉄道",
+        "光明電鉄",
+        "駅一覧",
+        "新中泉",
+        "遠州見付",
+        "二俣町",
+        "廃線跡",
+        "現地確認"
+      ],
+      "level": "L2"
+    },
+    {
+      "title": "いま残る光明電鉄の痕跡 ── 平松駅、二俣口、トンネル、マンホール",
+      "url": "c056.html",
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "land-memory",
+        "ruins"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-17",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "平松駅跡のホーム跡、二俣口駅跡と阿蔵トンネル、駅前で見つかった光明電鉄のマンホール蓋。光明電気鉄道が残した痕跡を、安全に確認できる範囲で記録する。",
+      "parent": "c051.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "総論",
+      "topics": [
+        "光明電気鉄道",
+        "光明電鉄",
+        "現存遺構",
+        "マンホール",
+        "平松駅",
+        "二俣口駅",
+        "阿蔵トンネル",
+        "神田トンネル",
+        "伊折トンネル"
+      ],
+      "level": "L3"
+    },
+    {
+      "title": "久根鉱山、木材、天竜川 ── 鉄道が運ぼうとしたもの",
+      "url": "c057.html",
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "industry",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "天竜川の水運、久根鉱山の鉱石輸送、木材と地域産品。中泉軌道と光明電気鉄道が支えようとした天竜川流域の産業と、磐田駅が果たした積み替えの役割を読む。",
+      "parent": "c051.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "総論"
+    },
+    {
+      "title": "なぜ鉄路は消えたのか ── バス、三信鉄道、過剰投資の時代",
+      "url": "c058.html",
+      "district": [
+        "nakaizumi",
+        "mitsuke",
+        "toyoda"
+      ],
+      "themes": [
+        "railway",
+        "transportation",
+        "modern-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-10",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "自動車輸送の普及、三信鉄道の整備による鉱山輸送ルートの変化、重い設備投資。中泉軌道と光明電気鉄道が短命に終わった背景を考える、特集の結び。",
+      "parent": "c051.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "総論"
+    },
+    {
+      "title": "中泉軌道の会社史 ── 地域資本が敷いた5.8kmの人車軌道",
+      "url": "c059.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "railway",
+        "industry",
+        "modern-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "1907年の株式会社中泉軌道設立、地域有力者による発起、資本金5万円、人車軌道という選択、中泉軌道運送・中泉合同運送への変遷を、会社史として整理する。",
+      "parent": "c051.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "総論"
+    },
+    {
+      "title": "車丁が押した鉄路 ── 中泉軌道の人車・馬力運行と旅客利用",
+      "url": "c060.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "railway",
+        "industry",
+        "modern-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "軌間762mmの人車軌道、車丁による2人がかりの手押し運行、貨物と旅客の輸送実態、1925年の馬力化申請から、中泉軌道の運行を読む。",
+      "parent": "c051.html",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "総論"
+    },
+    {
+      "title": "中泉駅北の歴史地層 ── 御林・赤煉瓦・中泉御殿のそばを通った軌道",
+      "url": "c061.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "railway",
+        "land-memory",
+        "modern-history"
       ],
       "content_type": "reading",
       "published_at": "2026-07-04",
@@ -13525,15 +17655,7 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "府八幡宮例大祭の二十町の山車を、一覧、成立史、二輪・四輪、町内役職、八朔集会、引廻し、年番・渡しから整理する。",
-      "topics": [
-        "府八幡宮例大祭",
-        "山車",
-        "屋台",
-        "八朔",
-        "年番",
-        "渡し",
-        "町内組織"
-      ],
+      "topics": ["府八幡宮例大祭", "山車", "屋台", "八朔", "年番", "渡し", "町内組織"],
       "level": "L3"
     },
     {
@@ -13586,14 +17708,7 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "府八幡宮例大祭の浜垢離、祭典委員会、神輿巡行の役列、前夜祭から御幣返しまでを資料に基づいて整理する。",
-      "topics": [
-        "府八幡宮例大祭",
-        "浜垢離",
-        "神輿巡行",
-        "祭典委員会",
-        "命魚奉献",
-        "御幣返し"
-      ],
+      "topics": ["府八幡宮例大祭", "浜垢離", "神輿巡行", "祭典委員会", "命魚奉献", "御幣返し"],
       "level": "L3"
     },
     {
@@ -13612,16 +17727,7 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "府八幡宮例大祭を、二十町の山車、浜垢離から御幣返しまでの神事、年中行事から読む親特集。史実・伝承・推察を分けて整理する。",
-      "topics": [
-        "府八幡宮",
-        "例大祭",
-        "年中行事",
-        "正月",
-        "節分",
-        "児童祈願祭",
-        "七五三",
-        "初宮詣"
-      ],
+      "topics": ["府八幡宮", "例大祭", "年中行事", "正月", "節分", "児童祈願祭", "七五三", "初宮詣"],
       "level": "L3"
     },
     {
@@ -20643,87 +24749,13 @@
       ],
       "level": "L2"
     },
-    {
-      "title": "国立能楽堂上演資料集から読む『舞車』─ 諸本・節付・復曲上演",
-      "url": "m139.html",
-      "district": [
-        "mitsuke"
-      ],
-      "themes": [
-        "performing-arts",
-        "festival",
-        "academic"
-      ],
-      "content_type": "article",
-      "published_at": "2026-07-28",
-      "updated_at": "2026-07-28",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "国立能楽堂上演資料集〈2〉をもとに、渋田虎頼等節付本・光悦流書体六十番綴本・江戸初期節付十三冊本、笛付・仕舞付・参詣曼荼羅、1989年の復曲上演を史料批判的に読む。",
-      "topics": [
-        "舞車",
-        "国立能楽堂",
-        "復曲",
-        "諸本対照",
-        "節付",
-        "渋田虎頼",
-        "光悦流",
-        "森田流笛付",
-        "妙佐本仕舞付",
-        "多賀社参詣曼荼羅"
-      ],
-      "level": "L3",
-      "parent": "m132.html"
-    },
-    {
-      "title": "『舞車』から深掘りする12の研究キーワード",
-      "url": "m138.html",
-      "district": [
-        "mitsuke"
-      ],
-      "themes": [
-        "performing-arts",
-        "festival",
-        "research-guide"
-      ],
-      "content_type": "article",
-      "published_at": "2026-07-28",
-      "updated_at": "2026-07-28",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "国立能楽堂上演資料集『舞車』から、見付宿、東坂・西坂、舞車神事、伝本、復曲、作り物、地域への還流など12の研究キーワードを抽出し、次に確認すべき資料と問いを案内する。",
-      "topics": [
-        "舞車",
-        "見付宿",
-        "東坂",
-        "西坂",
-        "舞車神事",
-        "伝本",
-        "諸本対照",
-        "復曲",
-        "作り物",
-        "国立能楽堂"
-      ],
-      "level": "L2",
-      "parent": "01001-mitsuke.html"
-    },
+    {"title":"国立能楽堂上演資料集から読む『舞車』─ 諸本・節付・復曲上演","url":"m139.html","district":["mitsuke"],"themes":["performing-arts","festival","academic"],"content_type":"article","published_at":"2026-07-28","updated_at":"2026-07-28","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"国立能楽堂上演資料集〈2〉をもとに、渋田虎頼等節付本・光悦流書体六十番綴本・江戸初期節付十三冊本、笛付・仕舞付・参詣曼荼羅、1989年の復曲上演を史料批判的に読む。","topics":["舞車","国立能楽堂","復曲","諸本対照","節付","渋田虎頼","光悦流","森田流笛付","妙佐本仕舞付","多賀社参詣曼荼羅"],"level":"L3","parent":"m132.html"},
+    {"title":"『舞車』から深掘りする12の研究キーワード","url":"m138.html","district":["mitsuke"],"themes":["performing-arts","festival","research-guide"],"content_type":"article","published_at":"2026-07-28","updated_at":"2026-07-28","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"国立能楽堂上演資料集『舞車』から、見付宿、東坂・西坂、舞車神事、伝本、復曲、作り物、地域への還流など12の研究キーワードを抽出し、次に確認すべき資料と問いを案内する。","topics":["舞車","見付宿","東坂","西坂","舞車神事","伝本","諸本対照","復曲","作り物","国立能楽堂"],"level":"L2","parent":"01001-mitsuke.html"},
     {
       "title": "府八幡宮の大場家 ── 大禰宜・神仏習合・大場重光",
       "url": "n072.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "person",
-        "village-history"
-      ],
+      "district": ["nakaizumi"],
+      "themes": ["shrine-temple", "person", "village-history"],
       "content_type": "reading",
       "published_at": "2026-07-31",
       "updated_at": "2026-07-31",
@@ -20733,28 +24765,14 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "府八幡宮に代々仕えた大場家を、大禰宜、秋鹿家との役割分担、食い違う2種類の系図、神仏習合、橘園翁・大場重光の学問と寺子屋から読み解く。",
-      "topics": [
-        "大場家",
-        "大場重光",
-        "大場図書",
-        "府八幡宮",
-        "大禰宜",
-        "神仏習合",
-        "寺子屋"
-      ],
+      "topics": ["大場家", "大場重光", "大場図書", "府八幡宮", "大禰宜", "神仏習合", "寺子屋"],
       "level": "L3"
     },
     {
       "title": "府八幡宮神主・秋鹿家 ── 地頭・神職・代官の系譜",
       "url": "n073.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "person",
-        "village-history"
-      ],
+      "district": ["nakaizumi"],
+      "themes": ["shrine-temple", "person", "village-history"],
       "content_type": "reading",
       "published_at": "2026-07-31",
       "updated_at": "2026-07-31",
@@ -20764,172 +24782,14 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "府八幡宮の神主を世襲した秋鹿家を、出雲起源の由緒、建武期の地頭職、朱印高250石、中泉代官、幕末の文化活動、明治維新から読み解く。",
-      "topics": [
-        "秋鹿家",
-        "府八幡宮",
-        "中泉御殿",
-        "地頭",
-        "代官",
-        "朱印高",
-        "遠州報国隊"
-      ],
+      "topics": ["秋鹿家", "府八幡宮", "中泉御殿", "地頭", "代官", "朱印高", "遠州報国隊"],
       "level": "L3"
     },
-    {
-      "title": "府八幡宮の奉納絵馬 ── 祈りと町の絵画史",
-      "url": "n074.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "arts",
-        "village-history"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-07-31",
-      "updated_at": "2026-07-31",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "府八幡宮に伝わる45面の絵馬を、富士の巻狩、寛永期の絵馬、秋鹿神主寄進の6面、二十四孝、近代絵馬から読み解く。",
-      "topics": [
-        "府八幡宮",
-        "絵馬",
-        "奉納",
-        "富士の巻狩",
-        "秋鹿家",
-        "二十四孝"
-      ],
-      "level": "L3"
-    },
-    {
-      "title": "府八幡宮の社宝と棟札 ── 物から読む神社史",
-      "url": "n075.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "cultural-assets",
-        "village-history"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-07-31",
-      "updated_at": "2026-07-31",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "府八幡宮に伝わる獅子頭、王舞面、神像、和鏡、棟札を、神仏習合・祭礼・造営の記録として読む。",
-      "topics": [
-        "府八幡宮",
-        "社宝",
-        "棟札",
-        "獅子頭",
-        "王舞",
-        "僧形八幡像",
-        "和鏡"
-      ],
-      "level": "L3"
-    },
-    {
-      "title": "府八幡宮の神宮寺と神仏分離 ── 境内にあった寺",
-      "url": "n076.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "religion",
-        "village-history"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-07-31",
-      "updated_at": "2026-07-31",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "府八幡宮境内にあった神宮寺、本地堂、阿弥陀三尊、神宮寺僧、慶応4年の神仏判然令と仏像移送を読み解く。",
-      "topics": [
-        "府八幡宮",
-        "神宮寺",
-        "神仏習合",
-        "神仏分離",
-        "本地堂",
-        "西楽寺",
-        "阿弥陀三尊"
-      ],
-      "level": "L3"
-    },
-    {
-      "title": "府八幡宮の鳥居講 ── 安政地震からの再建",
-      "url": "n077.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "social-history",
-        "disaster"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-07-31",
-      "updated_at": "2026-07-31",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "安政東海地震で倒壊した府八幡宮石鳥居を、17人の鳥居講が講金・貸付・石材輸送によって再建した過程を追う。",
-      "topics": [
-        "府八幡宮",
-        "鳥居講",
-        "安政東海地震",
-        "講",
-        "地域金融",
-        "災害復興",
-        "中泉小学校"
-      ],
-      "level": "L3"
-    },
-    {
-      "title": "府八幡宮境内を物から歩く ── 建築・石造物・末社",
-      "url": "n078.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "cultural-assets",
-        "architecture"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-07-31",
-      "updated_at": "2026-07-31",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "楼門、本殿、石灯籠、狛犬、手水鉢、東照宮と末社をたどり、境内の物が伝える造営・奉納・信仰の層を読む。",
-      "topics": [
-        "府八幡宮",
-        "境内建築",
-        "石造物",
-        "石灯籠",
-        "狛犬",
-        "東照宮",
-        "末社",
-        "手水鉢"
-      ],
-      "level": "L3"
-    },
+    {"title":"府八幡宮の奉納絵馬 ── 祈りと町の絵画史","url":"n074.html","district":["nakaizumi"],"themes":["shrine-temple","arts","village-history"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"府八幡宮に伝わる45面の絵馬を、富士の巻狩、寛永期の絵馬、秋鹿神主寄進の6面、二十四孝、近代絵馬から読み解く。","topics":["府八幡宮","絵馬","奉納","富士の巻狩","秋鹿家","二十四孝"],"level":"L3"},
+    {"title":"府八幡宮の社宝と棟札 ── 物から読む神社史","url":"n075.html","district":["nakaizumi"],"themes":["shrine-temple","cultural-assets","village-history"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"府八幡宮に伝わる獅子頭、王舞面、神像、和鏡、棟札を、神仏習合・祭礼・造営の記録として読む。","topics":["府八幡宮","社宝","棟札","獅子頭","王舞","僧形八幡像","和鏡"],"level":"L3"},
+    {"title":"府八幡宮の神宮寺と神仏分離 ── 境内にあった寺","url":"n076.html","district":["nakaizumi"],"themes":["shrine-temple","religion","village-history"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"府八幡宮境内にあった神宮寺、本地堂、阿弥陀三尊、神宮寺僧、慶応4年の神仏判然令と仏像移送を読み解く。","topics":["府八幡宮","神宮寺","神仏習合","神仏分離","本地堂","西楽寺","阿弥陀三尊"],"level":"L3"},
+    {"title":"府八幡宮の鳥居講 ── 安政地震からの再建","url":"n077.html","district":["nakaizumi"],"themes":["shrine-temple","social-history","disaster"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"安政東海地震で倒壊した府八幡宮石鳥居を、17人の鳥居講が講金・貸付・石材輸送によって再建した過程を追う。","topics":["府八幡宮","鳥居講","安政東海地震","講","地域金融","災害復興","中泉小学校"],"level":"L3"},
+    {"title":"府八幡宮境内を物から歩く ── 建築・石造物・末社","url":"n078.html","district":["nakaizumi"],"themes":["shrine-temple","cultural-assets","architecture"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"楼門、本殿、石灯籠、狛犬、手水鉢、東照宮と末社をたどり、境内の物が伝える造営・奉納・信仰の層を読む。","topics":["府八幡宮","境内建築","石造物","石灯籠","狛犬","東照宮","末社","手水鉢"],"level":"L3"},
     {
       "title": "延喜式内社と磐田 ── 千年前の台帳に載った神社たち",
       "url": "c109.html",
@@ -21761,276 +25621,6 @@
         "蟻の戸渡り",
         "鐘掛岩",
         "修験"
-      ],
-      "level": "L2"
-    },
-    {
-      "title": "府八幡宮の鎮座地と天平通り",
-      "url": "n079.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "village-history"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-08-01",
-      "updated_at": "2026-08-01",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "『府八幡宮ものがたり』を主資料に、鎮座地を記録・由緒・推定に分けて読む学術的地域史。",
-      "topics": [
-        "府八幡宮",
-        "鎮座地",
-        "中泉",
-        "府八幡宮ものがたり"
-      ],
-      "level": "L2"
-    },
-    {
-      "title": "府八幡宮の由緒をどう読むか",
-      "url": "n080.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "village-history"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-08-01",
-      "updated_at": "2026-08-01",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "『府八幡宮ものがたり』を主資料に、由緒を記録・由緒・推定に分けて読む学術的地域史。",
-      "topics": [
-        "府八幡宮",
-        "由緒",
-        "中泉",
-        "府八幡宮ものがたり"
-      ],
-      "level": "L2"
-    },
-    {
-      "title": "府八幡宮の祭神を読む",
-      "url": "n081.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "village-history"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-08-01",
-      "updated_at": "2026-08-01",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "『府八幡宮ものがたり』を主資料に、祭神を記録・由緒・推定に分けて読む学術的地域史。",
-      "topics": [
-        "府八幡宮",
-        "祭神",
-        "中泉",
-        "府八幡宮ものがたり"
-      ],
-      "level": "L2"
-    },
-    {
-      "title": "府八幡宮本殿の造営史",
-      "url": "n082.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "village-history"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-08-01",
-      "updated_at": "2026-08-01",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "『府八幡宮ものがたり』を主資料に、本殿を記録・由緒・推定に分けて読む学術的地域史。",
-      "topics": [
-        "府八幡宮",
-        "本殿",
-        "中泉",
-        "府八幡宮ものがたり"
-      ],
-      "level": "L2"
-    },
-    {
-      "title": "桜井王と「桜井の里」",
-      "url": "n083.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "village-history"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-08-01",
-      "updated_at": "2026-08-01",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "『府八幡宮ものがたり』を主資料に、桜井王を記録・由緒・推定に分けて読む学術的地域史。",
-      "topics": [
-        "府八幡宮",
-        "桜井王",
-        "中泉",
-        "府八幡宮ものがたり"
-      ],
-      "level": "L2"
-    },
-    {
-      "title": "府八幡宮の中門",
-      "url": "n084.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "village-history"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-08-01",
-      "updated_at": "2026-08-01",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "『府八幡宮ものがたり』を主資料に、中門を記録・由緒・推定に分けて読む学術的地域史。",
-      "topics": [
-        "府八幡宮",
-        "中門",
-        "中泉",
-        "府八幡宮ものがたり"
-      ],
-      "level": "L2"
-    },
-    {
-      "title": "府八幡宮の末社群",
-      "url": "n085.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "village-history"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-08-01",
-      "updated_at": "2026-08-01",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "『府八幡宮ものがたり』を主資料に、末社を記録・由緒・推定に分けて読む学術的地域史。",
-      "topics": [
-        "府八幡宮",
-        "末社",
-        "中泉",
-        "府八幡宮ものがたり"
-      ],
-      "level": "L2"
-    },
-    {
-      "title": "府八幡宮の社殿彫刻",
-      "url": "n086.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "village-history"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-08-01",
-      "updated_at": "2026-08-01",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "『府八幡宮ものがたり』を主資料に、彫刻を記録・由緒・推定に分けて読む学術的地域史。",
-      "topics": [
-        "府八幡宮",
-        "彫刻",
-        "中泉",
-        "府八幡宮ものがたり"
-      ],
-      "level": "L2"
-    },
-    {
-      "title": "府八幡宮の社務所と境内運営",
-      "url": "n087.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "village-history"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-08-01",
-      "updated_at": "2026-08-01",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "『府八幡宮ものがたり』を主資料に、社務所を記録・由緒・推定に分けて読む学術的地域史。",
-      "topics": [
-        "府八幡宮",
-        "社務所",
-        "中泉",
-        "府八幡宮ものがたり"
-      ],
-      "level": "L2"
-    },
-    {
-      "title": "府八幡宮の境内景観はどう変わったか",
-      "url": "n088.html",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "shrine-temple",
-        "village-history"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-08-01",
-      "updated_at": "2026-08-01",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "『府八幡宮ものがたり』を主資料に、境内景観を記録・由緒・推定に分けて読む学術的地域史。",
-      "topics": [
-        "府八幡宮",
-        "境内景観",
-        "中泉",
-        "府八幡宮ものがたり"
       ],
       "level": "L2"
     }
