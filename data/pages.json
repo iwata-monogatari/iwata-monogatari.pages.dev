@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-07-23",
+  "updated_at": "2026-08-06",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -8970,10 +8970,177 @@
       "parent": "c020.html"
     },
     {
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-06",
+      "updated_at": "2026-08-06",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "01001-mitsuke.html",
+      "level": "L2",
+      "series": "tokaido-enshu-mitsuke-shuku",
+      "title": "『東海道遠州見付宿』を読む ── 昭和20年に擱筆された見付宿研究（特集）",
+      "url": "m141.html",
+      "summary": "磐田市誌シリーズ第二冊（田中友次郎編著、1974年刊）の来歴・構成・史料を紹介し、全5ページの特集へ案内する。",
+      "topics": [
+        "東海道遠州見付宿",
+        "田中友次郎",
+        "磐田市誌シリーズ",
+        "見付宿",
+        "宿方文書"
+      ]
+    },
+    {
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-06",
+      "updated_at": "2026-08-06",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "01001-mitsuke.html",
+      "level": "L2",
+      "series": "tokaido-enshu-mitsuke-shuku",
+      "title": "見付宿のすがたと戸口 ── 木戸から木戸まで、家数と人口を数える",
+      "url": "m142.html",
+      "summary": "天保13年の絵図で宿を東から西へ歩き、寛永15年の225軒から明治12年の1,440戸まで戸口の変遷を数える。",
+      "topics": [
+        "見付宿",
+        "戸口",
+        "景観",
+        "総石高",
+        "新田開発",
+        "東海道"
+      ]
+    },
+    {
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-06",
+      "updated_at": "2026-08-06",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "01001-mitsuke.html",
+      "level": "L2",
+      "series": "tokaido-enshu-mitsuke-shuku",
+      "title": "宿を動かした人々 ── 名主・問屋・年寄・組頭と伝馬役の負担",
+      "url": "m143.html",
+      "summary": "天保13年の名前帳に残る宿役人9名の顔ぶれ、問屋給米、間口で決まる伝馬役の負担を読む。",
+      "topics": [
+        "宿役人",
+        "名主",
+        "問屋",
+        "年寄",
+        "組頭",
+        "伝馬役",
+        "問屋給米"
+      ]
+    },
+    {
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-06",
+      "updated_at": "2026-08-06",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "01001-mitsuke.html",
+      "level": "L2",
+      "series": "tokaido-enshu-mitsuke-shuku",
+      "title": "中泉代官と見付宿の年貢 ── 安政3年の年貢割付を読む",
+      "url": "m144.html",
+      "summary": "中泉代官所の来歴と、今川氏以来の永高で計算された見付宿の年貢、附加税、御囲蔵の備荒貯穀を読む。",
+      "topics": [
+        "中泉代官",
+        "年貢",
+        "永高",
+        "林鶴梁",
+        "備荒貯穀",
+        "附加税"
+      ]
+    },
+    {
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-06",
+      "updated_at": "2026-08-06",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "01001-mitsuke.html",
+      "level": "L2",
+      "series": "tokaido-enshu-mitsuke-shuku",
+      "title": "火事・洪水・祭礼 ── 見付宿の災害史と天神祭の拝殿踊",
+      "url": "m145.html",
+      "summary": "見付宿の災害史年表、中川・加茂川の治水と橋の掛替普請、祇園と天神の祭礼、文化14年の拝殿踊順争いを読む。",
+      "topics": [
+        "災害史",
+        "大火",
+        "治水",
+        "橋掛替",
+        "見付天神裸祭",
+        "祇園祭",
+        "若者組"
+      ]
+    },
+    {
       "title": "府八幡宮の鎮座地と天平通り",
       "url": "n079.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "place-name", "village-history"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "place-name",
+        "village-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-01",
       "updated_at": "2026-08-01",
@@ -8983,14 +9150,25 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "『府八幡宮ものがたり』をもとに鎮座地と天平通りを史料批判的に読み、確認できる事実・由緒・推定を分けて整理する。",
-      "topics": ["府八幡宮", "鎮座地", "天平通り", "遠江国府"],
+      "topics": [
+        "府八幡宮",
+        "鎮座地",
+        "天平通り",
+        "遠江国府"
+      ],
       "level": "L2"
     },
     {
       "title": "府八幡宮の由緒をどう読むか",
       "url": "n080.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "source-criticism", "village-history"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "source-criticism",
+        "village-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-01",
       "updated_at": "2026-08-01",
@@ -9000,14 +9178,26 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "『府八幡宮ものがたり』をもとに由緒を史料批判的に読み、確認できる事実・由緒・推定を分けて整理する。",
-      "topics": ["府八幡宮", "由緒", "社伝", "棟札", "史料批判"],
+      "topics": [
+        "府八幡宮",
+        "由緒",
+        "社伝",
+        "棟札",
+        "史料批判"
+      ],
       "level": "L2"
     },
     {
       "title": "府八幡宮の祭神を読む",
       "url": "n081.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "religion", "village-history"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "religion",
+        "village-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-01",
       "updated_at": "2026-08-01",
@@ -9017,14 +9207,25 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "『府八幡宮ものがたり』をもとに祭神を史料批判的に読み、確認できる事実・由緒・推定を分けて整理する。",
-      "topics": ["府八幡宮", "祭神", "八幡三神", "誉田別命"],
+      "topics": [
+        "府八幡宮",
+        "祭神",
+        "八幡三神",
+        "誉田別命"
+      ],
       "level": "L2"
     },
     {
       "title": "府八幡宮本殿の造営史",
       "url": "n082.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "architecture", "cultural-assets"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "architecture",
+        "cultural-assets"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-01",
       "updated_at": "2026-08-01",
@@ -9034,14 +9235,26 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "『府八幡宮ものがたり』をもとに本殿の造営史を史料批判的に読み、棟札・屋根材・修理履歴を整理する。",
-      "topics": ["府八幡宮", "本殿", "造営", "棟札", "屋根材"],
+      "topics": [
+        "府八幡宮",
+        "本殿",
+        "造営",
+        "棟札",
+        "屋根材"
+      ],
       "level": "L2"
     },
     {
       "title": "桜井王と「桜井の里」",
       "url": "n083.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "person", "place-name"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "person",
+        "place-name"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-01",
       "updated_at": "2026-08-01",
@@ -9051,14 +9264,25 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "『府八幡宮ものがたり』をもとに桜井王と「桜井の里」の伝承を史料批判的に読み、事実・由緒・推定を分ける。",
-      "topics": ["府八幡宮", "桜井王", "桜井の里", "伝承"],
+      "topics": [
+        "府八幡宮",
+        "桜井王",
+        "桜井の里",
+        "伝承"
+      ],
       "level": "L2"
     },
     {
       "title": "府八幡宮の中門",
       "url": "n084.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "architecture", "cultural-assets"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "architecture",
+        "cultural-assets"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-01",
       "updated_at": "2026-08-01",
@@ -9068,14 +9292,25 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "『府八幡宮ものがたり』をもとに中門の建築と境内での役割を史料批判的に整理する。",
-      "topics": ["府八幡宮", "中門", "境内建築", "造営"],
+      "topics": [
+        "府八幡宮",
+        "中門",
+        "境内建築",
+        "造営"
+      ],
       "level": "L2"
     },
     {
       "title": "府八幡宮の末社群",
       "url": "n085.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "religion", "cultural-assets"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "religion",
+        "cultural-assets"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-01",
       "updated_at": "2026-08-01",
@@ -9085,14 +9320,25 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "『府八幡宮ものがたり』をもとに境内の末社群を読み、祭神・配置・地域信仰の層を整理する。",
-      "topics": ["府八幡宮", "末社", "境内", "地域信仰"],
+      "topics": [
+        "府八幡宮",
+        "末社",
+        "境内",
+        "地域信仰"
+      ],
       "level": "L2"
     },
     {
       "title": "府八幡宮の社殿彫刻",
       "url": "n086.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "arts", "architecture"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "arts",
+        "architecture"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-01",
       "updated_at": "2026-08-01",
@@ -9102,14 +9348,25 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "『府八幡宮ものがたり』をもとに社殿彫刻を史料批判的に読み、意匠・配置・造営との関係を整理する。",
-      "topics": ["府八幡宮", "社殿彫刻", "意匠", "建築"],
+      "topics": [
+        "府八幡宮",
+        "社殿彫刻",
+        "意匠",
+        "建築"
+      ],
       "level": "L2"
     },
     {
       "title": "府八幡宮の社務所と境内運営",
       "url": "n087.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "social-history", "village-history"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "social-history",
+        "village-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-01",
       "updated_at": "2026-08-01",
@@ -9119,14 +9376,25 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "『府八幡宮ものがたり』をもとに社務所を読み、祭祀・文書管理・参拝者対応を支える境内運営を整理する。",
-      "topics": ["府八幡宮", "社務所", "境内運営", "神職"],
+      "topics": [
+        "府八幡宮",
+        "社務所",
+        "境内運営",
+        "神職"
+      ],
       "level": "L2"
     },
     {
       "title": "府八幡宮の境内景観はどう変わったか",
       "url": "n088.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "land-memory", "environment"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "land-memory",
+        "environment"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-01",
       "updated_at": "2026-08-01",
@@ -9136,7 +9404,13 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "江戸後期・昭和初期・現在の境内を、絵図・写真・配置図から比較し、建物・樹木・参道・周辺道路の変化を読む。",
-      "topics": ["府八幡宮", "境内景観", "絵図", "古写真", "景観変化"],
+      "topics": [
+        "府八幡宮",
+        "境内景観",
+        "絵図",
+        "古写真",
+        "景観変化"
+      ],
       "level": "L2"
     },
     {
@@ -17655,7 +17929,15 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "府八幡宮例大祭の二十町の山車を、一覧、成立史、二輪・四輪、町内役職、八朔集会、引廻し、年番・渡しから整理する。",
-      "topics": ["府八幡宮例大祭", "山車", "屋台", "八朔", "年番", "渡し", "町内組織"],
+      "topics": [
+        "府八幡宮例大祭",
+        "山車",
+        "屋台",
+        "八朔",
+        "年番",
+        "渡し",
+        "町内組織"
+      ],
       "level": "L3"
     },
     {
@@ -17708,7 +17990,14 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "府八幡宮例大祭の浜垢離、祭典委員会、神輿巡行の役列、前夜祭から御幣返しまでを資料に基づいて整理する。",
-      "topics": ["府八幡宮例大祭", "浜垢離", "神輿巡行", "祭典委員会", "命魚奉献", "御幣返し"],
+      "topics": [
+        "府八幡宮例大祭",
+        "浜垢離",
+        "神輿巡行",
+        "祭典委員会",
+        "命魚奉献",
+        "御幣返し"
+      ],
       "level": "L3"
     },
     {
@@ -17727,7 +18016,16 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "府八幡宮例大祭を、二十町の山車、浜垢離から御幣返しまでの神事、年中行事から読む親特集。史実・伝承・推察を分けて整理する。",
-      "topics": ["府八幡宮", "例大祭", "年中行事", "正月", "節分", "児童祈願祭", "七五三", "初宮詣"],
+      "topics": [
+        "府八幡宮",
+        "例大祭",
+        "年中行事",
+        "正月",
+        "節分",
+        "児童祈願祭",
+        "七五三",
+        "初宮詣"
+      ],
       "level": "L3"
     },
     {
@@ -24749,13 +25047,87 @@
       ],
       "level": "L2"
     },
-    {"title":"国立能楽堂上演資料集から読む『舞車』─ 諸本・節付・復曲上演","url":"m139.html","district":["mitsuke"],"themes":["performing-arts","festival","academic"],"content_type":"article","published_at":"2026-07-28","updated_at":"2026-07-28","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"国立能楽堂上演資料集〈2〉をもとに、渋田虎頼等節付本・光悦流書体六十番綴本・江戸初期節付十三冊本、笛付・仕舞付・参詣曼荼羅、1989年の復曲上演を史料批判的に読む。","topics":["舞車","国立能楽堂","復曲","諸本対照","節付","渋田虎頼","光悦流","森田流笛付","妙佐本仕舞付","多賀社参詣曼荼羅"],"level":"L3","parent":"m132.html"},
-    {"title":"『舞車』から深掘りする12の研究キーワード","url":"m138.html","district":["mitsuke"],"themes":["performing-arts","festival","research-guide"],"content_type":"article","published_at":"2026-07-28","updated_at":"2026-07-28","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"国立能楽堂上演資料集『舞車』から、見付宿、東坂・西坂、舞車神事、伝本、復曲、作り物、地域への還流など12の研究キーワードを抽出し、次に確認すべき資料と問いを案内する。","topics":["舞車","見付宿","東坂","西坂","舞車神事","伝本","諸本対照","復曲","作り物","国立能楽堂"],"level":"L2","parent":"01001-mitsuke.html"},
+    {
+      "title": "国立能楽堂上演資料集から読む『舞車』─ 諸本・節付・復曲上演",
+      "url": "m139.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "performing-arts",
+        "festival",
+        "academic"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-28",
+      "updated_at": "2026-07-28",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "国立能楽堂上演資料集〈2〉をもとに、渋田虎頼等節付本・光悦流書体六十番綴本・江戸初期節付十三冊本、笛付・仕舞付・参詣曼荼羅、1989年の復曲上演を史料批判的に読む。",
+      "topics": [
+        "舞車",
+        "国立能楽堂",
+        "復曲",
+        "諸本対照",
+        "節付",
+        "渋田虎頼",
+        "光悦流",
+        "森田流笛付",
+        "妙佐本仕舞付",
+        "多賀社参詣曼荼羅"
+      ],
+      "level": "L3",
+      "parent": "m132.html"
+    },
+    {
+      "title": "『舞車』から深掘りする12の研究キーワード",
+      "url": "m138.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "performing-arts",
+        "festival",
+        "research-guide"
+      ],
+      "content_type": "article",
+      "published_at": "2026-07-28",
+      "updated_at": "2026-07-28",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "国立能楽堂上演資料集『舞車』から、見付宿、東坂・西坂、舞車神事、伝本、復曲、作り物、地域への還流など12の研究キーワードを抽出し、次に確認すべき資料と問いを案内する。",
+      "topics": [
+        "舞車",
+        "見付宿",
+        "東坂",
+        "西坂",
+        "舞車神事",
+        "伝本",
+        "諸本対照",
+        "復曲",
+        "作り物",
+        "国立能楽堂"
+      ],
+      "level": "L2",
+      "parent": "01001-mitsuke.html"
+    },
     {
       "title": "府八幡宮の大場家 ── 大禰宜・神仏習合・大場重光",
       "url": "n072.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "person", "village-history"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "person",
+        "village-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-31",
       "updated_at": "2026-07-31",
@@ -24765,14 +25137,28 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "府八幡宮に代々仕えた大場家を、大禰宜、秋鹿家との役割分担、食い違う2種類の系図、神仏習合、橘園翁・大場重光の学問と寺子屋から読み解く。",
-      "topics": ["大場家", "大場重光", "大場図書", "府八幡宮", "大禰宜", "神仏習合", "寺子屋"],
+      "topics": [
+        "大場家",
+        "大場重光",
+        "大場図書",
+        "府八幡宮",
+        "大禰宜",
+        "神仏習合",
+        "寺子屋"
+      ],
       "level": "L3"
     },
     {
       "title": "府八幡宮神主・秋鹿家 ── 地頭・神職・代官の系譜",
       "url": "n073.html",
-      "district": ["nakaizumi"],
-      "themes": ["shrine-temple", "person", "village-history"],
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "person",
+        "village-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-07-31",
       "updated_at": "2026-07-31",
@@ -24782,14 +25168,172 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "府八幡宮の神主を世襲した秋鹿家を、出雲起源の由緒、建武期の地頭職、朱印高250石、中泉代官、幕末の文化活動、明治維新から読み解く。",
-      "topics": ["秋鹿家", "府八幡宮", "中泉御殿", "地頭", "代官", "朱印高", "遠州報国隊"],
+      "topics": [
+        "秋鹿家",
+        "府八幡宮",
+        "中泉御殿",
+        "地頭",
+        "代官",
+        "朱印高",
+        "遠州報国隊"
+      ],
       "level": "L3"
     },
-    {"title":"府八幡宮の奉納絵馬 ── 祈りと町の絵画史","url":"n074.html","district":["nakaizumi"],"themes":["shrine-temple","arts","village-history"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"府八幡宮に伝わる45面の絵馬を、富士の巻狩、寛永期の絵馬、秋鹿神主寄進の6面、二十四孝、近代絵馬から読み解く。","topics":["府八幡宮","絵馬","奉納","富士の巻狩","秋鹿家","二十四孝"],"level":"L3"},
-    {"title":"府八幡宮の社宝と棟札 ── 物から読む神社史","url":"n075.html","district":["nakaizumi"],"themes":["shrine-temple","cultural-assets","village-history"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"府八幡宮に伝わる獅子頭、王舞面、神像、和鏡、棟札を、神仏習合・祭礼・造営の記録として読む。","topics":["府八幡宮","社宝","棟札","獅子頭","王舞","僧形八幡像","和鏡"],"level":"L3"},
-    {"title":"府八幡宮の神宮寺と神仏分離 ── 境内にあった寺","url":"n076.html","district":["nakaizumi"],"themes":["shrine-temple","religion","village-history"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"府八幡宮境内にあった神宮寺、本地堂、阿弥陀三尊、神宮寺僧、慶応4年の神仏判然令と仏像移送を読み解く。","topics":["府八幡宮","神宮寺","神仏習合","神仏分離","本地堂","西楽寺","阿弥陀三尊"],"level":"L3"},
-    {"title":"府八幡宮の鳥居講 ── 安政地震からの再建","url":"n077.html","district":["nakaizumi"],"themes":["shrine-temple","social-history","disaster"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"安政東海地震で倒壊した府八幡宮石鳥居を、17人の鳥居講が講金・貸付・石材輸送によって再建した過程を追う。","topics":["府八幡宮","鳥居講","安政東海地震","講","地域金融","災害復興","中泉小学校"],"level":"L3"},
-    {"title":"府八幡宮境内を物から歩く ── 建築・石造物・末社","url":"n078.html","district":["nakaizumi"],"themes":["shrine-temple","cultural-assets","architecture"],"content_type":"reading","published_at":"2026-07-31","updated_at":"2026-07-31","date_provisional":false,"status":"published","count_as_knowledge":true,"show_in_updates":true,"show_in_all_articles":true,"summary":"楼門、本殿、石灯籠、狛犬、手水鉢、東照宮と末社をたどり、境内の物が伝える造営・奉納・信仰の層を読む。","topics":["府八幡宮","境内建築","石造物","石灯籠","狛犬","東照宮","末社","手水鉢"],"level":"L3"},
+    {
+      "title": "府八幡宮の奉納絵馬 ── 祈りと町の絵画史",
+      "url": "n074.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "arts",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-31",
+      "updated_at": "2026-07-31",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "府八幡宮に伝わる45面の絵馬を、富士の巻狩、寛永期の絵馬、秋鹿神主寄進の6面、二十四孝、近代絵馬から読み解く。",
+      "topics": [
+        "府八幡宮",
+        "絵馬",
+        "奉納",
+        "富士の巻狩",
+        "秋鹿家",
+        "二十四孝"
+      ],
+      "level": "L3"
+    },
+    {
+      "title": "府八幡宮の社宝と棟札 ── 物から読む神社史",
+      "url": "n075.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "cultural-assets",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-31",
+      "updated_at": "2026-07-31",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "府八幡宮に伝わる獅子頭、王舞面、神像、和鏡、棟札を、神仏習合・祭礼・造営の記録として読む。",
+      "topics": [
+        "府八幡宮",
+        "社宝",
+        "棟札",
+        "獅子頭",
+        "王舞",
+        "僧形八幡像",
+        "和鏡"
+      ],
+      "level": "L3"
+    },
+    {
+      "title": "府八幡宮の神宮寺と神仏分離 ── 境内にあった寺",
+      "url": "n076.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "religion",
+        "village-history"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-31",
+      "updated_at": "2026-07-31",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "府八幡宮境内にあった神宮寺、本地堂、阿弥陀三尊、神宮寺僧、慶応4年の神仏判然令と仏像移送を読み解く。",
+      "topics": [
+        "府八幡宮",
+        "神宮寺",
+        "神仏習合",
+        "神仏分離",
+        "本地堂",
+        "西楽寺",
+        "阿弥陀三尊"
+      ],
+      "level": "L3"
+    },
+    {
+      "title": "府八幡宮の鳥居講 ── 安政地震からの再建",
+      "url": "n077.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "social-history",
+        "disaster"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-31",
+      "updated_at": "2026-07-31",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "安政東海地震で倒壊した府八幡宮石鳥居を、17人の鳥居講が講金・貸付・石材輸送によって再建した過程を追う。",
+      "topics": [
+        "府八幡宮",
+        "鳥居講",
+        "安政東海地震",
+        "講",
+        "地域金融",
+        "災害復興",
+        "中泉小学校"
+      ],
+      "level": "L3"
+    },
+    {
+      "title": "府八幡宮境内を物から歩く ── 建築・石造物・末社",
+      "url": "n078.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "cultural-assets",
+        "architecture"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-07-31",
+      "updated_at": "2026-07-31",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "楼門、本殿、石灯籠、狛犬、手水鉢、東照宮と末社をたどり、境内の物が伝える造営・奉納・信仰の層を読む。",
+      "topics": [
+        "府八幡宮",
+        "境内建築",
+        "石造物",
+        "石灯籠",
+        "狛犬",
+        "東照宮",
+        "末社",
+        "手水鉢"
+      ],
+      "level": "L3"
+    },
     {
       "title": "延喜式内社と磐田 ── 千年前の台帳に載った神社たち",
       "url": "c109.html",
