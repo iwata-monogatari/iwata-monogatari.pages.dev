@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1786018292,
-  "generation": 20260806211132,
-  "git_commit_at_stamp": "ede949248a2e1dc8b1c36b9890b320d57eb15f22",
+  "generated_at_unix": 1786024254,
+  "generation": 20260806225054,
+  "git_commit_at_stamp": "9b4d343cc8b659849e52803839041f327b54deb7",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -32,19 +32,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "74c75e34cb3393045200c708752cc99f461d54805690a97699c376bf504be035"
+      "sha256": "9de237361f34c1266cde639d33b3e60fe5422953d03adaca3b54ffbb4020a95b"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "9668acbd9a1ab6727aa4addb60c79c72447f45bc593228c67f7cc31cb020597a"
+      "sha256": "77e748dd1e832fc0bd6c2be44fef30dbd380b2a03fc79d3ee4789189b2ed290e"
     },
     {
       "path": "data/pages.json",
-      "sha256": "b3776aa88a6e74058bff14c1618ad779df8030f20f1114097238922617120b93"
+      "sha256": "9c7aaa2c1361d862e23b4c03f60232c12f9c339268e7cc3a19f0244802281b81"
     },
     {
       "path": "index.html",
-      "sha256": "a437695b01781e3f8c8af90820858137868527286239e161e338345559765f43"
+      "sha256": "4458373106291e43405b6c815d0b2c1e10652ae15e6495cbf085dc62f874a34c"
     },
     {
       "path": "package.json",
@@ -64,30 +64,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "cdd9b14dfb4ca180a1143a97825986c1cbbf7b79a22beff8cb6b48cceed06c88"
+      "sha256": "71852ae3db58c1fd31220e142bcb13151a2fa5f6b0245fa0a716bc0a59834012"
     },
     {
       "path": "updates.html",
-      "sha256": "bb801a1fb570b26395e8c93aba3c7d02916239b64d2c693327aef54eae9e4843"
+      "sha256": "97e2eb2b6a37e50952a4034525dec9629c1aed475a6e2ec5673adea15aac8abe"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "90b49934b328ef5eede366799a83d8db03271db2701a9bb1bebaecdc5570cd1c",
+      "content_sha256": "e5520cc39b8ae072ffb4eb5e7d136cb130d430355a85b38b6cf5f83a8b5690ef",
       "path": "index.html",
-      "sha256": "a437695b01781e3f8c8af90820858137868527286239e161e338345559765f43",
+      "sha256": "4458373106291e43405b6c815d0b2c1e10652ae15e6495cbf085dc62f874a34c",
       "url": "/"
     },
     {
-      "content_sha256": "065d856b8c25e044e5a7c471cbc44e9c49e6c74069c49db191b3f8960d9ef005",
+      "content_sha256": "4363d56e9505347d30f8808be067c4bae72c4a7d9837783ae213d0353d73abef",
       "path": "updates.html",
-      "sha256": "bb801a1fb570b26395e8c93aba3c7d02916239b64d2c693327aef54eae9e4843",
+      "sha256": "97e2eb2b6a37e50952a4034525dec9629c1aed475a6e2ec5673adea15aac8abe",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "c5eef4dd11c12c31fb479e9b61ac57c6242d94e85ef713895f642e1cce202388",
+      "content_sha256": "85149e5bdaf6083f27cf785131f5bcdad7d3c2327e981e5611d4367814079938",
       "path": "c034.html",
-      "sha256": "74c75e34cb3393045200c708752cc99f461d54805690a97699c376bf504be035",
+      "sha256": "9de237361f34c1266cde639d33b3e60fe5422953d03adaca3b54ffbb4020a95b",
       "url": "/c034.html"
     },
     {
@@ -151,6 +151,24 @@
       "url": "/oishi-iwata-tochi-kiokuroku/05"
     },
     {
+      "content_sha256": "dd148340e3d463f06249275a81a76a0891a1aa9782e47de6f87cf5b89e85d119",
+      "path": "m150.html",
+      "sha256": "568c11280e56d898c69b6a494714fbafabc73a09ee36872b1d1324d43ced0827",
+      "url": "/m150.html"
+    },
+    {
+      "content_sha256": "cf0a142544ddc3ae234e921f6daae1588a4e375a9a73b5d240a6e842049ef8bb",
+      "path": "m151.html",
+      "sha256": "d3855d5dd2379cd13efb4d9189979f47ff98fdbcb7c8045f30a5eb5ec12f88e2",
+      "url": "/m151.html"
+    },
+    {
+      "content_sha256": "c07dbcbd69e3ea6e383e6030db148a65bc9762374552205522759db069464b01",
+      "path": "m152.html",
+      "sha256": "5dd6837d881ec0679d86151379912a3d6ad7811f4be4eef69434354d706a2fb1",
+      "url": "/m152.html"
+    },
+    {
       "content_sha256": "33722ce4888323088f161d4144832c98fdb604dfc6791fc2df5682d881e41ce6",
       "path": "m146.html",
       "sha256": "b6a174c0f9384bf32aea0bbb2d0ef721caacb1362e2e376fb06d23da47d1e46e",
@@ -175,9 +193,9 @@
       "url": "/m149.html"
     },
     {
-      "content_sha256": "7b664734839193490e5f71192344630163ee629c87c952b66b8ea27ceeda79d4",
+      "content_sha256": "eedb13c3ef39cc54f044843ceca21a43857009e5928a6097823b5220b1b4e86f",
       "path": "m141.html",
-      "sha256": "917d414e488e32fae900fabd57e8b8ca6c4c7ea88bc098f9f8afa994885fb121",
+      "sha256": "1f839639f636b780c193dfd1c89e17ed445af97507de73417a8e4c0a88cb64a8",
       "url": "/m141.html"
     },
     {
@@ -851,35 +869,17 @@
       "path": "oishi-ronko/213/index.html",
       "sha256": "192bff3645b9c0f335281e245ca7eb0806471e8c746672e1d20e34b00b9ec6bb",
       "url": "/oishi-ronko/213"
-    },
-    {
-      "content_sha256": "49da5ea5b6f89c24a8a49d0657bfff2dc388c7dde6ada26a9841cb4af9b5eac8",
-      "path": "oishi-ronko/214/index.html",
-      "sha256": "46993a30d3262898ad9b2f67f8b4a08b3e651bf459ef2d7539b004c1d41920a5",
-      "url": "/oishi-ronko/214"
-    },
-    {
-      "content_sha256": "673acfeb702b67a64af213fd0cf2778f5d61b8ac684f418e7bcdaee12ff7fbb2",
-      "path": "oishi-ronko/215/index.html",
-      "sha256": "8a8543c6aa33ccda07b3bfca268540138d3fc65abc06042fcba66d6d74d97e68",
-      "url": "/oishi-ronko/215"
-    },
-    {
-      "content_sha256": "3ecd232b2119867ed439f46c2e5e60e3537f1be7c25d39f65091e3d60f7602a3",
-      "path": "oishi-ronko/206/index.html",
-      "sha256": "20ac50ed8a7934623723e5fb17c9406498b5183f509e7ec2b10082246f9e61e7",
-      "url": "/oishi-ronko/206"
     }
   ],
   "schema": 1,
-  "state_hash": "94b3d76be1b96882192fc6b648925ab3be19339b08799698f88efc9a09332ac0",
+  "state_hash": "51aac5855e559b0d48ce771a38fe8fbaad74c09a8d4592aa2e89183adeacca29",
   "summary": {
     "archived_pages": 1,
-    "knowledge_pages": 991,
-    "new_articles": 988,
-    "new_articles_sha256": "9668acbd9a1ab6727aa4addb60c79c72447f45bc593228c67f7cc31cb020597a",
-    "pages_sha256": "b3776aa88a6e74058bff14c1618ad779df8030f20f1114097238922617120b93",
-    "pages_total": 994,
-    "published_pages": 993
+    "knowledge_pages": 994,
+    "new_articles": 991,
+    "new_articles_sha256": "77e748dd1e832fc0bd6c2be44fef30dbd380b2a03fc79d3ee4789189b2ed290e",
+    "pages_sha256": "9c7aaa2c1361d862e23b4c03f60232c12f9c339268e7cc3a19f0244802281b81",
+    "pages_total": 997,
+    "published_pages": 996
   }
 }
