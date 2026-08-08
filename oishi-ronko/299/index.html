@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>郷土史を書くということ ── 一般向けと専門のあいだで｜大石浩之の磐田論考｜磐田物語</title>
+<meta name="description" content="磐田物語には一般読者向けの読み物と郷土史研究者向けの学術論考という二つの層がある。本稿は地域史を誰のためにどう書くかを、二層の必要性・両者の往復・わかりやすさと正確さの両立という観点から論じる方法論的論考である。史実・通説・推定・伝承の確度の層を明示する手続きを、地域史叙述の倫理として位置づける。">
+<meta property="og:title" content="郷土史を書くということ ── 一般向けと専門のあいだで｜大石浩之の磐田論考">
+<meta property="og:description" content="地域史を誰のためにどう書くか。一般向けの読み物と専門の論考という二層の関係から、地域史叙述の倫理と方法を論じる方法論的論考。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://iwata-monogatari.net/oishi-ronko/299/">
+<meta property="og:locale" content="ja_JP">
+<meta name="iwata:title" content="郷土史を書くということ">
+<meta name="iwata:published" content="2026-07-26">
+<meta name="iwata:category" content="総論・論考">
+<meta name="iwata:new-article" content="1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#20292e;--accent:#2f6079;--accent2:#356f88;--sub:#586873;--rule:#c8d5dc;--rule2:#dfe8ec;--paper:#fffdf8;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Shippori Mincho",serif;color:var(--ink);background:var(--paper);line-height:2.0;font-size:16.5px;-webkit-font-smoothing:antialiased;text-align:justify;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .gothic{font-family:"Zen Kaku Gothic New",sans-serif;}
+  main{max-width:720px;margin:0 auto;padding:0 24px 40px;}
+  .crumb{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--sub);padding:18px 0 4px;text-align:left;letter-spacing:.02em;}
+  .crumb a{color:var(--sub);}
+  /* ===== 論文タイトル・ヘッダー ===== */
+  .kiyo-hero{text-align:center;padding:26px 0 0;margin:6px 0 0;border:0;background:none;box-shadow:none;}
+  .kiyo-journal{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12.5px;color:var(--accent);font-weight:700;letter-spacing:.22em;margin:0 0 6px;}
+  .kiyo-series{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.08em;margin:0 0 22px;}
+  .kiyo-hero h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:27px;line-height:1.6;color:var(--ink);margin:0 auto 12px;letter-spacing:.02em;max-width:22em;}
+  .kiyo-subtitle{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:var(--accent2);margin:0 0 24px;line-height:1.7;}
+  .kiyo-author{font-size:16.5px;color:var(--ink);margin:0 0 3px;letter-spacing:.04em;}
+  .kiyo-author sup{font-size:10px;}
+  .kiyo-affil{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);margin:0 0 20px;}
+  .kiyo-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;margin-top:6px;font-family:"Zen Kaku Gothic New",sans-serif;}
+  .kiyo-meta div{font-size:12.5px;}
+  .kiyo-meta dt{display:inline;color:var(--sub);font-weight:500;}
+  .kiyo-meta dd{display:inline;color:var(--ink);margin-left:6px;font-weight:700;}
+  /* ===== 要旨・キーワード ===== */
+  .abstract{border-top:none;padding:6px 0 0;margin:30px 0 0;}
+  .abstract h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--accent);letter-spacing:.28em;text-align:center;font-weight:700;}
+  .abstract p{font-size:15px;margin:0;color:#33424b;line-height:1.95;padding:16px 22px;border:1px solid var(--rule2);background:#fbfdfe;border-radius:2px;}
+  .keywords{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;color:var(--sub);margin:14px 0 0;padding-bottom:16px;border-bottom:1px solid var(--rule);text-align:left;line-height:1.8;}
+  .keywords strong{color:var(--accent);}
+  /* ===== 目次 ===== */
+  .toc{margin:26px 0;padding:14px 0;border-top:1px solid var(--rule2);border-bottom:1px solid var(--rule2);}
+  .toc h2{border:0;margin:0 0 8px;padding:0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--sub);letter-spacing:.2em;text-align:center;}
+  .toc ol{margin:0 auto;max-width:30em;padding-left:1.6em;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:var(--ink);text-align:left;}
+  .toc li{margin:6px 0;line-height:1.7;}
+  .toc a{color:var(--ink);}
+  /* ===== 見出し ===== */
+  h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;color:var(--ink);margin:48px 0 18px;padding-bottom:8px;border-bottom:1.5px solid var(--accent2);letter-spacing:.02em;text-align:left;}
+  h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16.5px;color:var(--accent2);margin:30px 0 10px;text-align:left;}
+  p{margin:0 0 16px;text-indent:1em;}
+  .abstract p,.keywords,.verdict,figcaption,.cta-note,.refs li,.fn-list li,.pager,.crumb{text-indent:0;}
+  /* ===== 学説節（論文体） ===== */
+  .setsu{background:none;border:0;border-radius:0;padding:0;margin:22px 0;}
+  .setsu-tag{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:11.5px;font-weight:700;color:var(--accent);background:none;padding:0;margin:22px 0 2px;letter-spacing:.12em;}
+  .setsu-tag.denshou{color:var(--accent2);}
+  .setsu h3{font-family:"Shippori Mincho",serif;font-size:17.5px;color:var(--ink);margin:2px 0 12px;border-bottom:1px dotted var(--rule);padding-bottom:8px;}
+  .setsu p{margin:0 0 14px;font-size:16px;text-indent:1em;}
+  .verdict{font-size:14.5px;color:#33424b;background:none;border-left:3px solid var(--accent2);border-radius:0;padding:2px 0 2px 16px;margin:14px 0 0;line-height:1.85;}
+  .verdict strong{color:var(--accent2);}
+  /* ===== 図版 ===== */
+  figure{margin:32px 0;}
+  .fig-box{background:#fff;border:1px solid var(--rule);border-radius:2px;padding:20px 16px;text-align:center;}
+  figcaption{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-top:10px;line-height:1.8;text-align:left;}
+  svg{max-width:100%;height:auto;}
+  .svg-label{fill:var(--ink);}.svg-sub{fill:var(--sub);}
+  /* ===== 表 ===== */
+  .table-wrap{overflow-x:auto;margin:24px 0;}
+  table.academic-table{width:100%;border-collapse:collapse;min-width:700px;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;line-height:1.7;border-top:2px solid var(--accent2);border-bottom:2px solid var(--accent2);}
+  .academic-table th{background:none;color:var(--accent);text-align:left;font-weight:700;border-bottom:1px solid var(--accent2);}
+  .academic-table th,.academic-table td{border-bottom:1px solid var(--rule2);padding:10px 12px;vertical-align:top;text-indent:0;}
+  .academic-table caption{caption-side:top;text-align:left;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);margin-bottom:8px;}
+  /* ===== 脚注・参考文献 ===== */
+  sup.fnref{font-size:.68em;font-family:"Zen Kaku Gothic New",sans-serif;line-height:0;}
+  sup.fnref a{color:var(--accent);}
+  .notes,.references{margin-top:40px;}
+  .notes h2,.references h2{font-size:16px;}
+  .fn-list,.refs{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;color:var(--sub);}
+  .fn-list li,.refs li{margin:0 0 8px 1.6em;line-height:1.8;padding-left:.2em;}
+  .fn-list li{list-style:decimal;}
+  .cta-note{background:#fbfdfe;border:1px solid var(--rule2);border-radius:2px;padding:18px 20px;margin:36px 0;font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;color:#33424b;line-height:1.9;}
+  .cta-note a{font-weight:700;}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:42px 0 10px;flex-wrap:wrap;font-family:"Zen Kaku Gothic New",sans-serif;font-size:13.5px;}
+  @media(max-width:600px){.kiyo-hero h1{font-size:22px;}body{font-size:16px;}h2{font-size:18px;}.kiyo-subtitle{font-size:15.5px;}}
+</style>
+<link rel="canonical" href="https://iwata-monogatari.net/oishi-ronko/299/">
+<link rel="stylesheet" href="/assets/css/site-header.css">
+<link rel="stylesheet" href="/assets/css/iwata-area-color.css">
+</head>
+<body class="area-common">
+
+<!-- ===== グローバルヘッダー（共通 / 自動統一） ===== -->
+<header class="gh-site">
+  <div class="gh-bar">
+    <a class="gh-brand" href="/">
+      <span class="gh-logo">磐田物語<span class="gh-dot">。</span></span>
+      <span class="gh-sub">失われる前に、磐田の記憶を記録し、次の世代へ手渡す</span>
+    </a>
+    <nav class="gh-menu" aria-label="主要ナビゲーション">
+      <a href="/c007.html">はじめに</a>
+      <a href="/c001.html">憲章</a>
+      <a href="/c019.html">佐口史料室</a>
+      <a href="/#new">新着</a>
+      <a href="/bbs.html">掲示板</a>
+      <a href="/c034.html">全記事一覧</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="crumb"><a href="https://iwata-monogatari.net/">磐田物語</a> ／ <a href="https://iwata-monogatari.net/oishi-ronko/">大石浩之の磐田論考</a> ／ 郷土史を書くということ</div>
+
+  <article>
+  <header class="kiyo-hero">
+    <p class="kiyo-journal">磐田郷土史研究紀要</p>
+    <p class="kiyo-series">大石浩之の磐田論考　第299号（地域史叙述論　一）</p>
+    <h1>郷土史を書くということ</h1>
+    <p class="kiyo-subtitle">一般向けと専門のあいだで ── 地域史叙述の倫理と方法</p>
+    <p class="kiyo-author">大石浩之<sup>1</sup></p>
+    <p class="kiyo-affil"><sup>1</sup> 富士ヶ丘サービス株式会社 代表取締役</p>
+    <dl class="kiyo-meta">
+      <div><dt>公開日</dt><dd>2026.07.26</dd></div>
+      <div><dt>資料検証</dt><dd>公開資料による検証済み</dd></div>
+      <div><dt>対象地区</dt><dd>磐田市全域（総論）</dd></div>
+    </dl>
+  </header>
+
+  <section class="abstract" aria-label="要旨">
+    <h2>要旨</h2>
+    <p>磐田物語には二つの層がある。一般の読者へ向けた読み物としての本編記事と、郷土史研究に携わる者へ向けた学術的な論考である。本稿は、地域史をどう書くかという方法上の問いを、この二層の関係から論じる。第一に、なぜ地域史に一般向けと専門の二つの層が要るのかを、入口と奥行きという観点から述べる。第二に、読み物で関心を持ち論考で確かめるという往復が、地域史の記述をどのように鍛えるかを検討する。第三に、一般向けであることは不正確であってよい理由にはならず、専門であることは難解であってよい理由にはならないことを、記述の倫理として論じる。そのうえで、わかりやすさと正確さは二律背反ではなく、確度の層を明示する手続きによって両立しうることを示す。本稿は特定の史実を主題とする論考ではなく、地域史を書くという行為そのものを対象とする方法論的な覚え書きである。断定を避け、書き手の作法として提示する。</p>
+  </section>
+  <p class="keywords"><strong>キーワード：</strong>郷土史／地域史／歴史叙述／一般向けと専門／わかりやすさと正確さ／史料批判／確度の層</p>
+
+  <nav class="toc" aria-label="目次">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#s1">問題設定 ── 郷土史は誰のために書かれるか</a></li>
+      <li><a href="#s2">二つの層 ── 読み物と論考</a></li>
+      <li><a href="#s3">なぜ二層が必要か ── 入口と奥行き</a></li>
+      <li><a href="#s4">往復するということ ── 読み物と論考の循環</a></li>
+      <li><a href="#s5">わかりやすさの倫理 ── 一般向けは不正確でよいか</a></li>
+      <li><a href="#s6">正確さの倫理 ── 専門は難解でよいか</a></li>
+      <li><a href="#s7">両立の作法 ── 確度の層を書きこむ</a></li>
+      <li><a href="#s8">結論 ── 地域史を書くということ</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1">1. 問題設定 ── 郷土史は誰のために書かれるか</h2>
+  <p>郷土史は、いったい誰のために書かれるのか。この問いは素朴に見えて、地域史を書こうとする者を最初に立ち止まらせる。専門の研究者だけを読者に想定すれば、記述は史料の厳密な扱いに向かうが、そのぶん地域に暮らす普通の読者からは遠ざかる。逆に、はじめて郷土の歴史に触れる人だけを想定すれば、記述は親しみやすくなるかわりに、確かさの担保がゆるみやすい。どちらか一方だけを選ぶと、地域史は必ず何かを失う。本稿は、この選択を迫られたときにどう構えるべきかを、書き手の側の問題として考える。</p>
+  <p>磐田物語という営みは、この問いに対して一つの答えを実践のかたちで示してきた。すなわち、読者を一つに絞らず、層を分けて書くという方法である。地域の出来事や人物、祭礼や町並みを親しみやすく綴る本編の記事があり、その一方で、史料の性格や学説の対立に立ち入って検証する「大石浩之の磐田論考」がある。前者は入口であり、後者は奥行きである。本稿は、この二層構成がなぜ地域史にとって有効なのかを、あらためて言語化する試みである。</p>
+  <p>ここで本稿の立場をあらかじめ明示しておきたい。本稿は、一般向けか専門かのいずれか一方が正しいと説くものではない。両者はどちらも地域史にとって欠くことができず、しかも互いを必要としている、というのが本稿の立場である。読み物は論考へと読者を送り出し、論考は読み物に確かさを供給する。この相互依存の関係こそが、地域史を長く残すための基盤になると考える。</p>
+  <p>断っておくと、本稿は磐田の特定の史実を検証する論考ではない。年代や人物や事件を扱うのではなく、それらをどう書くかという手続きそのものを主題とする。したがって本稿には、これまでの論考にあったような史料批判の細部は登場しない。かわりに、書くという行為の倫理と作法を、できるだけ具体的に述べていく。方法を論じる論考であるから、抽象論に流れないよう、磐田物語の実際の記事群を折にふれて参照する。</p>
+  <p>なお、地域史・郷土史・地方史といった呼称は、論者によって力点が異なる。郷土史は生まれ育った土地への愛着を含意しやすく、地方史は中央に対する地方という枠組みを帯びやすい。本稿ではおおむね中立的に「地域史」と呼び、書名や慣用に従うときにのみ「郷土史」を用いる。呼称そのものが記述の姿勢を左右する例として、この使い分け自体も本稿の主題と無縁ではない<sup class="fnref" id="r1"><a href="#fn1">1</a></sup>。</p>
+  <p>もう一つ断っておきたいのは、本稿が磐田という一地域の事例から出発しながらも、その射程を磐田に限定しない点である。一般向けと専門をどう書き分けるかという問いは、どの土地の郷土史にも共通してのしかかる。したがって本稿で述べる作法は、磐田物語に固有の運用でありながら、他の地域史の実践にも移せる部分をもつと考える。地域に根ざしつつ、地域を超えて通じる書き方を探ること。それが本稿のささやかな狙いである。ただし、他地域への一般化は本稿の検証範囲を超えるため、あくまで見通しとして述べるにとどめる。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="読み物としての本編記事と論考という二つの層が一つの地域史を支える構造の模式図">
+        <defs>
+          <marker id="fig1-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2f7fa3"/></marker>
+        </defs>
+        <rect x="12" y="12" width="596" height="276" rx="20" fill="#fffdf7" stroke="#d8e8ef"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <rect x="70" y="70" width="200" height="150" rx="14" fill="#fff7ec" stroke="#d28a41" stroke-width="2"/>
+          <text x="170" y="112" font-size="15" fill="#22303a">読み物（本編）</text>
+          <text x="170" y="140" font-size="11.5" fill="#5b6b74">一般の読者へ</text>
+          <text x="170" y="162" font-size="11.5" fill="#5b6b74">親しみ・入口</text>
+          <text x="170" y="190" font-size="11.5" fill="#5b6b74">関心を呼び起こす</text>
+          <rect x="350" y="70" width="200" height="150" rx="14" fill="#eef7fb" stroke="#356f88" stroke-width="2"/>
+          <text x="450" y="112" font-size="15" fill="#22303a">論考（磐田論考）</text>
+          <text x="450" y="140" font-size="11.5" fill="#5b6b74">研究者へ</text>
+          <text x="450" y="162" font-size="11.5" fill="#5b6b74">検証・奥行き</text>
+          <text x="450" y="190" font-size="11.5" fill="#5b6b74">確かさを担保する</text>
+          <path d="M272 128 L348 128" stroke="#2f7fa3" stroke-width="2.6" marker-end="url(#fig1-arrow)"/>
+          <path d="M348 168 L272 168" stroke="#2f7fa3" stroke-width="2.6" marker-end="url(#fig1-arrow)"/>
+          <text x="310" y="120" font-size="10.5" fill="#2f7fa3">深める</text>
+          <text x="310" y="184" font-size="10.5" fill="#2f7fa3">支える</text>
+        </g>
+        <text x="310" y="44" text-anchor="middle" font-size="14" class="svg-label">地域史を支える二つの層</text>
+        <text x="310" y="262" text-anchor="middle" font-size="11" class="svg-sub">読み物と論考は上下の優劣ではなく、入口と奥行きという役割の分担である。</text>
+      </svg>
+    </div>
+    <figcaption>図1　地域史の二層構造。読み物（本編記事）と論考（大石浩之の磐田論考）は、対立する二つの様式ではなく、入口と奥行きという役割を分担しながら一つの地域史を支える。</figcaption>
+  </figure>
+
+  <h2 id="s2">2. 二つの層 ── 読み物と論考</h2>
+  <p>二層の性格を、もう少し立ち入って整理しておきたい。読み物としての本編記事は、地域の出来事や場所を、はじめて触れる読者にも入っていける言葉で描く。難しい史料用語を避け、話の筋を通し、読後に「その場所を歩いてみたい」「もっと知りたい」と思わせることに主眼がある。ここでの善し悪しは、どれだけ多くの人の関心を呼び起こせたかで測られる。地域史がまず生き延びるためには、読まれなければならない。読まれない正確さは、書架のなかで静かに失われていく。</p>
+  <p>他方、論考としての磐田論考は、読み物が触れずにおいた足場を点検する。ある伝承はどの史料に支えられているのか、対立する学説のどちらにどれだけの根拠があるのか、通説とされてきた年代は一次史料で確認できるのか。こうした問いに答えるのが論考の役目である。ここでの善し悪しは、確かさの担保と、判断の根拠を読者に手渡せたかで測られる。論考は、読み物が語った物語の裏側を、あえて解体して見せる作業だといってよい。</p>
+  <p>この二つは、同じ題材を扱っても筆致がまるで異なる。たとえば見付天神裸祭を、読み物は祭りの熱気と町の記憶として描き、論考は起源をめぐる複数の説を史料批判の観点から腑分けする。前者は読者を祭りの現場へ誘い、後者は起源の断定を慎重に避ける。同じ祭りが、層を変えると別の顔を見せる。どちらが上ということではなく、どちらも欠けると地域史は痩せる。</p>
+  <p>両層の違いを、いくつかの軸で対照させておく。読者像、目的、文体、確からしさの示し方、そして成否をはかる尺度。次の表は、その対比を一覧にしたものである。ただし、この対比は理念型として整理したものであり、現実の記事は両者のあいだのどこかに位置する。読み物のなかにも確かさへの配慮はあり、論考のなかにも読みやすさへの気配りはある。表はあくまで、二層の力点の違いを見取るための道具として読んでいただきたい。</p>
+
+  <div class="table-wrap">
+    <table class="academic-table">
+      <caption>表1　一般向けの読み物と専門の論考 ── 力点の対比（理念型）</caption>
+      <thead><tr><th>観点</th><th>一般向けの読み物（本編記事）</th><th>専門の論考（磐田論考）</th></tr></thead>
+      <tbody>
+        <tr><td>想定読者</td><td>はじめて土地の歴史に触れる人、地域に暮らす人。</td><td>郷土史研究に携わる人、深く確かめたい人。</td></tr>
+        <tr><td>第一の目的</td><td>関心を呼び起こし、歴史への入口をひらく。</td><td>史料の性格を点検し、判断の根拠を示す。</td></tr>
+        <tr><td>文体</td><td>話の筋を通し、平易な言葉で語る。</td><td>である調で、確度の層を語で書き分ける。</td></tr>
+        <tr><td>確からしさの扱い</td><td>要点を損なわない範囲で単純化する。</td><td>史実・通説・推定・伝承を明示的に区別する。</td></tr>
+        <tr><td>断定への構え</td><td>物語の一貫性を優先し、細部の留保は控える。</td><td>断定を避け、未確認と記載なしを区別する。</td></tr>
+        <tr><td>成否の尺度</td><td>どれだけ読まれ、関心を継いだか。</td><td>どれだけ検証に耐え、根拠を手渡せたか。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>表を一覧すると、二層は対立ではなく分業の関係にあることが見えてくる。読み物が担う「読まれること」と、論考が担う「確かめられること」は、どちらも地域史に不可欠でありながら、一つの文章では同時に最大化しにくい。だからこそ層を分ける。分けることは、読者を切り分けることではなく、一人の読者が関心の深まりに応じて層を移っていけるようにすることである。次章では、この分業がなぜ地域史を豊かにするのかを、入口と奥行きという比喩でさらに掘り下げる。</p>
+
+  <h2 id="s3">3. なぜ二層が必要か ── 入口と奥行き</h2>
+  <p>二層が必要な理由の第一は、読者が一様ではないからである。地域の歴史に関心を寄せる人には、通りがかりに祭りの由来を知りたい人もいれば、古文書を読み解いて年代を確かめたい人もいる。この幅の広さを一つの文章で受け止めようとすると、どちらの読者にも中途半端になる。専門用語を説明しながら書けば研究者には冗長で、注釈を省けば初学者には難解になる。層を分けることは、この板挟みを解く現実的な方策である。</p>
+  <p>第二の理由は、関心が深まる過程そのものが段階を踏むからである。人はふつう、いきなり史料批判から歴史に入るのではない。まず土地の物語に心を動かされ、その物語の確からしさが気になりはじめ、やがて根拠を自分で確かめたくなる。読み物は最初の一歩を、論考は最後の一歩を受け持つ。両者がそろってはじめて、読者は入口から奥までを一続きに歩ける。片方だけでは、入口はあっても奥がない、あるいは奥はあっても入口がない建物のようになる。</p>
+  <p>入口と奥行きという比喩には、もう一つの含みがある。入口だけが立派で奥のない建物が人を失望させるように、奥だけが深くて入口の見えない建物には、そもそも人が入ってこない。地域史でしばしば起こるのは後者である。丹念に史料を検証した労作が、入口を欠くために読まれず、書架の奥で眠ってしまう。読み物という入口は、その労作を人目に触れさせる開口部の役割をはたす。奥行きを生かすためにこそ、入口が要る。両者は、どちらが主でどちらが従ということではない。</p>
+  <p>この段階性は、磐田物語の実際の構成にも現れている。通史として磐田の時代を歩く記事は、古墳から国府、宿場、祭りまでを一望する見取り図を与えるが、そこで示される時代区分や事件の重みづけは、それ自体が検証を要する主題でもある。<a href="/oishi-ronko/173/">通史という叙述の様式を検討した論考</a>は、まさにその通史がどのような選択と省略のうえに成り立っているかを問い直す。読み物としての通史が入口をひらき、論考がその叙述の枠組みを点検する。両者は同じ題材を、別の深さで扱っている。</p>
+  <p>第三の理由は、入口と奥行きが互いの質を高め合うことである。奥行きのある論考が背後に控えていると、読み物は安心して単純化できる。細部の留保を論考に委ねられるからこそ、読み物は筋を通すことに専念できる。逆に、多くの読者を呼び込む読み物があると、論考は孤立した専門の営みに閉じずにすむ。読まれるという手応えが、検証という地味な作業を支える。二層は、どちらか一方だけでは達しにくい水準へ、互いを押し上げる。</p>
+  <p>もっとも、二層に分けることには危うさもある。分けたことに安住して、読み物が正確さを論考に丸投げし、論考が読みやすさを読み物に丸投げすれば、読み物は不確かに、論考は難解になっていく。層を分けることは、それぞれの層が自らの責任を免れることを意味しない。この点は後の二章で立ち入る。ここではまず、二層が本来はたがいを高め合う関係にあること、そしてその関係を成立させるのが両層のあいだの往復であることを確認しておく。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="読者が関心の深まりに応じて出会いから確認へと段階を進む過程を示した図">
+        <defs>
+          <marker id="fig2-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2f7fa3"/></marker>
+        </defs>
+        <rect x="12" y="12" width="596" height="236" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle" font-size="12.5" fill="#22303a">
+          <rect x="34" y="96" width="118" height="66" rx="10" fill="#fff7ec" stroke="#d28a41" stroke-width="2"/><text x="93" y="126">出会う</text><text x="93" y="146" font-size="10" fill="#5b6b74">読み物で知る</text>
+          <rect x="180" y="96" width="118" height="66" rx="10" fill="#fbf3e6" stroke="#c98a45" stroke-width="1.8"/><text x="239" y="126">気になる</text><text x="239" y="146" font-size="10" fill="#5b6b74">確かさを問う</text>
+          <rect x="326" y="96" width="118" height="66" rx="10" fill="#eef7fb" stroke="#356f88" stroke-width="1.8"/><text x="385" y="126">確かめる</text><text x="385" y="146" font-size="10" fill="#5b6b74">論考で検証</text>
+          <rect x="472" y="96" width="118" height="66" rx="10" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="2"/><text x="531" y="126">また読む</text><text x="531" y="146" font-size="10" fill="#5b6b74">読み物へ還る</text>
+          <path d="M152 129 L179 129" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig2-arrow)"/>
+          <path d="M298 129 L325 129" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig2-arrow)"/>
+          <path d="M444 129 L471 129" stroke="#2f7fa3" stroke-width="2.4" marker-end="url(#fig2-arrow)"/>
+        </g>
+        <text x="310" y="44" text-anchor="middle" font-size="14" class="svg-label">入口から奥行きへ ── 関心の深まる段階</text>
+        <text x="310" y="216" text-anchor="middle" font-size="11" class="svg-sub">読者は一様ではなく、関心の深まりに応じて層のあいだを移動していく。</text>
+      </svg>
+    </div>
+    <figcaption>図2　関心の深まる段階。読者は「出会う」から「確かめる」へと進み、再び読み物へ還る。読み物は最初の一歩を、論考は確認の一歩を担う。</figcaption>
+  </figure>
+
+  <h2 id="s4">4. 往復するということ ── 読み物と論考の循環</h2>
+  <p>二層が地域史を豊かにするのは、両者が固定した上下ではなく、往復する循環をなすからである。読者は読み物で関心を持ち、論考で深め、そしてしばしば読み物へ戻ってくる。論考で史料の性格を知ったあとに読み物を読み返すと、同じ物語が違って見える。祭りの由来を「そう伝えられている」と読めるようになり、断定と伝承の区別が自然と身につく。往復は、読者のなかに確度を見分ける目を育てる。</p>
+  <p>この往復は、書き手の側にも働く。読み物を書くときに感じた「ここは本当だろうか」という引っかかりが、論考の主題になる。逆に、論考で確かめた成果が、次の読み物の記述を正す。書き手は二つの層を行き来しながら、一方の弱さを他方で補っていく。地域史の記述は、こうした往復のなかで少しずつ精度を上げる。一度書いて完成するのではなく、層のあいだを往還しながら書き直され続ける。</p>
+  <p>磐田論考シリーズそのものが、この往復の産物である。<a href="/oishi-ronko/250/">地名から磐田を読む方法を論じた論考</a>は、読み物で何気なく使われる地名が、実は大字という単位や地名学の手続きを踏まえてはじめて確かに扱えることを示す。読み物が地名を物語の背景として用いるのに対し、論考は地名を史料として読み解く。読み物での素朴な使用が、論考での方法的な検討を呼び、その検討がまた読み物の記述を支える。往復は、素朴さと厳密さを断絶させず、つなぐ。</p>
+  <p>往復のもう一つの効用は、地域史の担い手を広げることである。読み物だけでは、読者は受け手にとどまりやすい。だが論考が根拠の示し方まで見せると、読者のなかから「自分も確かめてみよう」という人が現れる。掲示板に寄せられる指摘、古い写真の持ち込み、家に伝わる話の照会。こうした関与は、読み物で芽生えた関心が論考で方法を得たときに生まれやすい。往復は、読む人を書く人へと近づける経路でもある。</p>
+  <p>この観点からすると、往復を妨げるものにも注意がいる。読み物と論考のあいだに落差がありすぎると、読者は途中で足を止めてしまう。読み物があまりに軽く、論考があまりに重ければ、両者のあいだに深い溝が横たわり、橋を渡る者はいない。往復を成り立たせるには、読み物にも確度への配慮を、論考にも読みやすさへの気配りを、それぞれ少しずつ持ち込んでおく必要がある。両層は截然と分かれるのではなく、なだらかに連続していることが望ましい。分けることと、つなぐことは、二層構成のなかで同時に果たされなければならない。</p>
+  <p>ただし、往復が成り立つには条件がある。読み物と論考のあいだに、相互参照の道が敷かれていなければならない。読み物から論考へ、論考から読み物へ、読者が迷わず移れる仕掛けが要る。磐田物語が各論考の末尾に一般向け記事版への導線を置き、記事から論考へも辿れるようにしているのは、この往復を絵に描いた餅にしないためである。層を分けたうえで、両者を結び直す。分離と接続は、二層構成にとって一対の作業である。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 560 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="読み物と論考のあいだを関心と確かさが循環する様子を示した図">
+        <defs>
+          <marker id="fig3-arrow" markerWidth="11" markerHeight="11" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2f7fa3"/></marker>
+        </defs>
+        <rect x="12" y="12" width="536" height="296" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <circle cx="160" cy="165" r="72" fill="#fff7ec" stroke="#d28a41" stroke-width="2"/>
+          <text x="160" y="160" font-size="15" fill="#22303a">読み物</text>
+          <text x="160" y="182" font-size="11" fill="#5b6b74">関心を生む</text>
+          <circle cx="400" cy="165" r="72" fill="#eef7fb" stroke="#356f88" stroke-width="2"/>
+          <text x="400" y="160" font-size="15" fill="#22303a">論考</text>
+          <text x="400" y="182" font-size="11" fill="#5b6b74">確かさを問う</text>
+          <path d="M228 132 C280 104,320 104,372 132" fill="none" stroke="#2f7fa3" stroke-width="2.6" marker-end="url(#fig3-arrow)"/>
+          <path d="M372 198 C320 226,280 226,228 198" fill="none" stroke="#2f7fa3" stroke-width="2.6" marker-end="url(#fig3-arrow)"/>
+          <text x="300" y="104" font-size="11.5" fill="#2f7fa3">深める</text>
+          <text x="300" y="238" font-size="11.5" fill="#2f7fa3">正す・支える</text>
+        </g>
+        <text x="280" y="44" text-anchor="middle" font-size="14" class="svg-label">読み物と論考の循環</text>
+        <text x="280" y="290" text-anchor="middle" font-size="11" class="svg-sub">往復は読者に確度を見る目を育て、書き手に記述を鍛える機会を与える。</text>
+      </svg>
+    </div>
+    <figcaption>図3　二層の循環。関心は読み物から論考へ流れ、確かさは論考から読み物へ還る。この往復が読者と書き手の双方を育てる。</figcaption>
+  </figure>
+
+  <h2 id="s5">5. わかりやすさの倫理 ── 一般向けは不正確でよいか</h2>
+  <p>ここから、二層構成が陥りやすい二つの誤解を正しておきたい。一つ目は、一般向けだからわかりやすければよく、多少不正確でも構わない、という誤解である。この考えは、わかりやすさと正確さを取り引きの関係に置く。わかりやすくするために正確さを削る、という発想である。だが地域史において、この取り引きは長い目で見ると割に合わない。不正確な読み物は、いったんは広く読まれても、やがて誤りが露見して信を失う。読者は、面白いが当てにならない話として、地域史そのものを軽んじるようになる。</p>
+  <p>単純化と不正確は、区別しなければならない。単純化とは、細部を省いても要点の骨格を保つことである。祭りの由来を語るのに、対立する三つの起源説を逐一並べなくてよい。だが「起源には諸説ある」という一言を添えるだけで、単純化は不正確に転落せずにすむ。省くことと、偽ることは違う。わかりやすさの倫理とは、削ってよい細部と、削ってはならない骨格とを見分ける判断のことである。</p>
+  <p>この見分けの実例として、伝承の扱いがある。読み物で「霊犬が怪物を退治したと伝えられる」と書くのと、「霊犬が怪物を退治した」と書くのとでは、たった数文字の差でありながら、確度の示し方がまるで違う。前者は伝承を伝承として提示し、後者は伝承を史実のように語ってしまう。わかりやすさを損なわずに確度を示すことは、こうした語尾の選択で十分に達成できる。<a href="/oishi-ronko/294/">「未確認」と「記載なし」を区別する史料批判の方法を総括した論考</a>で立てた区別は、専門の論考だけでなく、一般向けの読み物にもそのまま活きる。</p>
+  <p>誤解の根には、読者を低く見る姿勢がある。難しいことは分からないだろうから単純な話にしておこう、という配慮は、しばしば読者への軽視と裏表になっている。実際には、読者は「これは確かな話か、言い伝えか」という区別をきちんと受け取れる。むしろその区別を省かれると、あとで裏切られたと感じる。読者を信頼するとは、確度の情報を惜しまず手渡すことである。わかりやすさは、読者を子ども扱いすることではない。</p>
+  <p>この点で、磐田物語の本編記事が心がけてきたのは、確度の標識を負担に感じさせずに差し込むことである。「と伝えられる」の一語は、話の流れを止めない。むしろ、伝承を伝承として味わう余地を読者に残す。断定してしまえば消えてしまう、言い伝えならではの奥ゆかしさが、確度の標識によってかえって際立つこともある。正確に書くことと、読み物として引き込むように書くことは、ここでも背反しない。標識を惜しむ書き手は、正確さだけでなく、伝承のもつ含みまで取り落としてしまう。</p>
+  <p>したがって、わかりやすさの倫理は次のようにまとめられる。読み物は、骨格となる確からしさを保ったまま、細部を削って筋を通してよい。削ってよいのは細部であって、確度の目印ではない。「伝えられる」「という説がある」「確認されていない」といった短い標識は、わかりやすさをほとんど損なわずに、記述を不正確から守る。一般向けであることは、不正確であってよい免罪符ではない。むしろ、限られた紙幅のなかで確度をどう示すかという、より繊細な技術を要求する。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 560 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="わかりやすさと正確さを二つの軸として四つの象限に分ける図">
+        <rect x="12" y="12" width="536" height="336" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <line x1="90" y1="300" x2="500" y2="300" stroke="#356f88" stroke-width="2"/>
+        <line x1="90" y1="60" x2="90" y2="300" stroke="#356f88" stroke-width="2"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif">
+          <rect x="100" y="70" width="180" height="105" rx="10" fill="#fbecec" stroke="#b85b5b" stroke-width="1.6"/>
+          <text x="190" y="112" text-anchor="middle" font-size="12.5" fill="#7a3030">難解だが正確</text>
+          <text x="190" y="134" text-anchor="middle" font-size="10.5" fill="#5b6b74">閉じた専門・読まれにくい</text>
+          <rect x="300" y="70" width="180" height="105" rx="10" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="2"/>
+          <text x="390" y="112" text-anchor="middle" font-size="12.5" fill="#1f4f6f">わかりやすく正確</text>
+          <text x="390" y="134" text-anchor="middle" font-size="10.5" fill="#5b6b74">目指す地点</text>
+          <rect x="100" y="185" width="180" height="105" rx="10" fill="#f2eeea" stroke="#8a7f74" stroke-width="1.4"/>
+          <text x="190" y="227" text-anchor="middle" font-size="12.5" fill="#4a4038">難解で不正確</text>
+          <text x="190" y="249" text-anchor="middle" font-size="10.5" fill="#5b6b74">最も避けたい</text>
+          <rect x="300" y="185" width="180" height="105" rx="10" fill="#fbf3e6" stroke="#d28a41" stroke-width="1.6"/>
+          <text x="390" y="227" text-anchor="middle" font-size="12.5" fill="#8a5a1f">わかりやすいが不正確</text>
+          <text x="390" y="249" text-anchor="middle" font-size="10.5" fill="#5b6b74">信を失う読み物</text>
+          <text x="505" y="304" font-size="11.5" fill="#356f88">わかりやすさ →</text>
+          <text x="96" y="52" font-size="11.5" fill="#356f88">↑ 正確さ</text>
+        </g>
+        <text x="290" y="40" text-anchor="middle" font-size="14" class="svg-label">わかりやすさ×正確さの四象限</text>
+      </svg>
+    </div>
+    <figcaption>図4　わかりやすさと正確さの関係。両者は取り引きの関係ではない。目指すべきは右上、すなわちわかりやすく、かつ正確な記述である。両立は原理的に可能である。</figcaption>
+  </figure>
+
+  <h2 id="s6">6. 正確さの倫理 ── 専門は難解でよいか</h2>
+  <p>二つ目の誤解は、専門の論考だから難解でよい、正確でありさえすれば読みにくくても構わない、というものである。この考えは、正確さと読みやすさを取り引きに置く点で、一つ目の誤解と裏表をなす。厳密であるためには専門用語を積み、注を重ね、文を込み入らせてよい、という発想である。だが難解であることは、正確であることの証ではない。しばしば難解さは、書き手が論点を十分に整理しきれていない徴候にすぎない。</p>
+  <p>正確さと明晰さは、対立しない。むしろ、本当に正確に理解している事柄ほど、平明に述べられる。史料の性格を的確につかんでいれば、その限界を一文で言い切れる。学説の対立を整理しきっていれば、対立の核を短くまとめられる。読みにくい論考の多くは、正確すぎるのではなく、書き手のなかで整理が終わっていないために、材料をそのまま積み上げてしまっている。難解さを厳密さと取り違えることは、専門の側の怠慢になりうる。</p>
+  <p>専門の論考にも、読者への責任がある。論考が想定するのは研究者だとしても、その研究者もまた、限られた時間のなかで多くの文章に目を通す読者である。無用に難解な文章は、読者の時間を浪費させ、せっかくの検証成果を埋もれさせる。<a href="/oishi-ronko/268/">名から歴史を読む方法を論じた論考</a>が、人物名や地名という誰もが日々目にする素材から史料批判へ入っていくように、専門の議論も身近な入口から説き起こすことができる。専門であることは、入口を閉ざしてよい理由にはならない。</p>
+  <p>ここで注意したいのは、平明さと安易さの区別である。読みやすくするために論点を単純化しすぎれば、論考は正確さを失い、一般向けの読み物と変わらなくなる。専門の論考に求められるのは、複雑さを消すことではなく、複雑さを見通しよく提示することである。対立する説を一つに丸めるのではなく、対立の構図を明快に描く。留保を省くのではなく、留保がどこにかかるかを明確にする。明晰さとは、複雑さを保ったまま、その複雑さを読者が辿れるようにすることである。</p>
+  <p>この明晰さは、書き手が読者の歩みを想像することからしか生まれない。どの語がつまずきの石になるか、どの飛躍が読者を置き去りにするか。それを先回りして地ならしするのが、明晰に書くという作業である。専門の論考であっても、読者はしばしば初めてその論点に触れる。既知を前提に議論を始めず、必要な足場を一つずつ置いていく配慮は、正確さを損なうどころか、正確さを読者に確実に届けるための条件である。難解さに逃げ込まず、明晰さの労を引き受けること。それが専門の側の責任である。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="難解な文章と明晰な文章を対比し、明晰さは複雑さを保ったまま見通しをつけることだと示す図">
+        <rect x="12" y="12" width="596" height="236" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif">
+          <rect x="46" y="72" width="230" height="130" rx="12" fill="#f2eeea" stroke="#8a7f74" stroke-width="1.6"/>
+          <text x="161" y="100" text-anchor="middle" font-size="13.5" fill="#4a4038">難解</text>
+          <path d="M70 128 C110 112,150 150,190 126 S250 112,258 138" fill="none" stroke="#8a7f74" stroke-width="1.6"/>
+          <path d="M70 152 C120 170,160 130,200 158 S248 176,258 150" fill="none" stroke="#8a7f74" stroke-width="1.6"/>
+          <text x="161" y="190" text-anchor="middle" font-size="10.5" fill="#5b6b74">材料が整理されていない</text>
+          <rect x="344" y="72" width="230" height="130" rx="12" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="2"/>
+          <text x="459" y="100" text-anchor="middle" font-size="13.5" fill="#1f4f6f">明晰</text>
+          <line x1="368" y1="126" x2="550" y2="126" stroke="#2f7fa3" stroke-width="1.6"/>
+          <line x1="368" y1="146" x2="550" y2="146" stroke="#2f7fa3" stroke-width="1.6"/>
+          <line x1="368" y1="166" x2="512" y2="166" stroke="#2f7fa3" stroke-width="1.6"/>
+          <text x="459" y="190" text-anchor="middle" font-size="10.5" fill="#5b6b74">複雑さを保ち見通しをつける</text>
+        </g>
+        <text x="310" y="44" text-anchor="middle" font-size="14" class="svg-label">難解さと明晰さ ── 厳密さの証ではない</text>
+        <text x="310" y="228" text-anchor="middle" font-size="11" class="svg-sub">明晰さは複雑さを消すことではなく、複雑さを読者が辿れるように配列すること。</text>
+      </svg>
+    </div>
+    <figcaption>図5　難解さと明晰さ。難解さは厳密さの証ではなく、しばしば整理不足の徴候である。明晰さは複雑さを消さずに、読者が辿れるよう配列することを指す。</figcaption>
+  </figure>
+
+  <p>したがって、正確さの倫理はこう述べられる。論考は、確度の層を厳密に区別しながら、その区別を読者が追えるように明晰に書かなければならない。専門用語は、それが議論を精密にするときにのみ用い、権威づけのために積んではならない。難解さは避けるべき欠点であって、専門性の証ではない。正確であることと読みやすいことは、どちらかを選ぶ関係ではなく、ともに目指すべき二つの徳である。専門であることは、難解であってよい免罪符ではない。</p>
+
+  <h2 id="s7">7. 両立の作法 ── 確度の層を書きこむ</h2>
+  <p>前の二章で、わかりやすさと正確さは取り引きの関係にないことを見た。では、両者はどのように両立させられるのか。本稿の答えは、確度の層を記述に書きこむ、という一点に尽きる。史実・通説・推定・伝承という確からしさの段階を、語の水準で示すこと。これが、わかりやすさを損なわずに正確さを保つための、最も具体的で再現可能な作法である<sup class="fnref" id="r2"><a href="#fn2">2</a></sup>。</p>
+  <p>この作法の要点は、確度が語尾や副詞という短い標識に宿ることである。「である」は史実を、「と考えられている」は通説を、「とみられる」は推定を、「と伝えられる」は伝承を示す。読者は、この標識を手がかりに、記述の確からしさを一目で受け取れる。しかも標識は短いから、わかりやすさをほとんど損なわない。確度の表示は、長大な注釈を要さず、日本語の語尾のなかにすでに用意されている。この資源を意識して使うかどうかが、記述の質を分ける。</p>
+  <p>ただし、確度の標識は機械的に振ればよいものではない。同じ事柄でも、依拠する史料の性格によって確度は変わる。国家の編んだ正史に載る事実と、後世の地誌に一度だけ現れる記述とでは、同じ「史実」の語で括ってよいかどうかを、その都度吟味しなければならない。標識を選ぶという作業は、史料の性格をどう評価するかという判断と不可分である。だからこそ確度の表示は、単なる語尾の作法にとどまらず、史料批判そのものの表現になる。作法を身につけることと、史料を読む力を養うことは、切り離せない。</p>
+  <p>もう一つの柱は、「未確認」と「記載なし」を混同しないことである。ある事柄について一次史料に行き当たっていない状態と、史料を調べたうえで記載がないと分かった状態は、まったく別の確度をもつ。前者は「まだ確かめていない」であり、後者は「調べたが無かった」である。この区別を怠ると、単に調べ足りないだけの事柄が、あたかも史料的に否定されたかのように書かれてしまう。逆に、史料が明確に沈黙している事柄が、確かめれば分かるはずと誤解される。両者の区別は、確度の記述の背骨をなす<sup class="fnref" id="r3"><a href="#fn3">3</a></sup>。</p>
+  <p>この作法は、一般向けの読み物と専門の論考の双方に適用できる。読み物では、確度の標識を最小限に絞って筋を通す。論考では、標識に加えて、なぜその確度に落ち着くのかの根拠まで示す。同じ作法を、詳しさの度合いを変えて両層に用いる。だからこそ、読み物と論考は断絶せずにつながる。読者は読み物で確度の標識に馴染み、論考でその根拠に触れる。確度の層を書きこむことは、二層を貫く共通の文法になる。</p>
+  <p>付け加えれば、この作法は歴史叙述論の系譜のなかで理解できる。歴史を書くという行為が、事実の中立な写しではなく、選択と配列を伴う叙述であることは、早くから論じられてきた<sup class="fnref" id="r4"><a href="#fn4">4</a></sup>。だからこそ、書き手が自らの確度の判断を読者に開示することが、叙述の誠実さを支える。確度の層を明示することは、書き手が「これはここまでしか言えない」と自らの限界を読者に手渡す作法にほかならない。その意味で、わかりやすさと正確さの両立は、技術であると同時に、書き手の倫理でもある<sup class="fnref" id="r5"><a href="#fn5">5</a></sup>。</p>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="確度の四つの層とそれぞれに対応する語尾の標識を並べた図">
+        <rect x="12" y="12" width="596" height="276" rx="18" fill="#fffdf7" stroke="#d8e8ef"/>
+        <g font-family="'Zen Kaku Gothic New',sans-serif" text-anchor="middle">
+          <rect x="40" y="80" width="128" height="150" rx="10" fill="#e6f2f8" stroke="#2f7fa3" stroke-width="2"/>
+          <text x="104" y="118" font-size="15" fill="#1f4f6f">史実</text>
+          <text x="104" y="150" font-size="11" fill="#5b6b74">史料で確認</text>
+          <text x="104" y="196" font-size="12" fill="#22303a">「である」</text>
+          <rect x="184" y="80" width="128" height="150" rx="10" fill="#eef7ec" stroke="#6f9a4f" stroke-width="2"/>
+          <text x="248" y="118" font-size="15" fill="#3f6a2a">通説</text>
+          <text x="248" y="150" font-size="11" fill="#5b6b74">学界で支持</text>
+          <text x="248" y="196" font-size="11.5" fill="#22303a">「とされる」</text>
+          <rect x="328" y="80" width="128" height="150" rx="10" fill="#fbf3e6" stroke="#d28a41" stroke-width="2"/>
+          <text x="392" y="118" font-size="15" fill="#8a5a1f">推定</text>
+          <text x="392" y="150" font-size="11" fill="#5b6b74">根拠あり未確定</text>
+          <text x="392" y="196" font-size="11.5" fill="#22303a">「とみられる」</text>
+          <rect x="472" y="80" width="128" height="150" rx="10" fill="#fbecec" stroke="#b85b5b" stroke-width="2"/>
+          <text x="536" y="118" font-size="15" fill="#7a3030">伝承</text>
+          <text x="536" y="150" font-size="11" fill="#5b6b74">地域で語り継ぐ</text>
+          <text x="536" y="196" font-size="11.5" fill="#22303a">「と伝えられる」</text>
+        </g>
+        <text x="310" y="48" text-anchor="middle" font-size="14" class="svg-label">確度の層と語尾の標識</text>
+        <text x="310" y="262" text-anchor="middle" font-size="11" class="svg-sub">確からしさは短い語尾に宿る。わかりやすさを損なわずに正確さを示せる。</text>
+      </svg>
+    </div>
+    <figcaption>図6　確度の層と語の対応。史実・通説・推定・伝承は、それぞれ対応する語尾で示せる。確度の表示は長い注釈を要さず、語尾の選択で達成できる。</figcaption>
+  </figure>
+
+  <h2 id="s8">8. 結論 ── 地域史を書くということ</h2>
+  <p>本稿は、地域史を誰のためにどう書くかという問いを、磐田物語の二層構成を手がかりに論じてきた。得られた見取り図はこうである。地域史には、一般の読者へ向けた読み物と、研究者へ向けた論考という二つの層がある。両者は対立ではなく、入口と奥行きという役割の分担であり、しかも読み物で関心を持ち論考で確かめるという往復を通じて、互いを高め合う。この往復が、読者には確度を見る目を、書き手には記述を鍛える機会を与える。</p>
+  <p>そのうえで本稿は、二層構成が陥りやすい二つの誤解を退けた。一般向けだから不正確でよい、という誤解は、単純化と不正確の混同から生まれる。専門だから難解でよい、という誤解は、難解さと厳密さの取り違えから生まれる。どちらも、わかりやすさと正確さを取り引きの関係に置く点で誤っている。両者は二律背反ではない。目指すべきは、わかりやすく、かつ正確な記述である。</p>
+  <p>その両立を可能にするのが、確度の層を記述に書きこむ作法である。史実・通説・推定・伝承を語の水準で書き分け、「未確認」と「記載なし」を区別する。この作法は、短い語尾の選択によって、わかりやすさをほとんど損なわずに正確さを保つ。しかも同じ作法を、詳しさを変えて読み物にも論考にも用いることができる。確度の層を書きこむことは、二層を貫く共通の文法であり、両層を断絶させずにつなぐ結び目である。</p>
+  <p>本稿の立場を、あらためて一文で述べておく。地域史を書くとは、正しい一つの物語を確定して読者に手渡すことではなく、それぞれの記述がどれだけ確からしいかを読者が自分で判断できるように、確度の層を開示しながら書くことである。この禁欲的な作法こそが、一般向けと専門という二層を分けつつ結び、地域史を後世の調べものに耐える形で残す道であると考える。断定を急がず、しかし確かめられることは確かめ、確かめられないことは確かめられないと記す。その地味な手続きの積み重ねが、地域史の質を決める。</p>
+  <p>最後に、本稿が扱いえなかった課題を記しておく。第一に、読み物と論考のあいだをつなぐ導線の設計は、本稿では原理を述べるにとどめた。どのような相互参照の形が読者の往復を促すかは、実際の閲覧のされ方に即して別に検討を要する。第二に、確度の四層という枠組みそのものの妥当性は、個別の史料を扱う各論考のなかで繰り返し試されるべきものであり、本稿の総論だけでは検証を終えたとは言えない。第三に、地域に暮らす読者が書き手へと転じていく過程、すなわち地域史の担い手がどう広がるかは、掲示板や史料の持ち込みといった実際の関与の観察を通じて、稿を改めて論じたい。地域史を書くという営みは、書き手一人の作業ではなく、読者との往復のなかで続いていく。その往復を絶やさぬことが、磐田の記憶を次の世代へ手渡すための、最も確かな方途であると考える。</p>
+
+  <div class="cta-note">
+    地域の歴史を書き留める作業は、その舞台となった古い家や土地と向き合う作業でもある。筆者は磐田・袋井で不動産と介護の実務に携わる立場から、土地とともに受け継がれてきた記憶にも関わってきた。<a href="https://fudosan.atawi.link/jikka/?utm_source=iwata_monogatari&utm_medium=referral&utm_campaign=oishi_ronko" target="_blank" rel="noopener">家・土地・空き家の整理について相談する</a>ことができる。歴史を書くことと、その舞台を次の世代へ手渡すことは、地続きの営みだと考えている。
+  </div>
+
+  <section class="notes" aria-label="注">
+    <h2>注</h2>
+    <ol class="fn-list">
+      <li id="fn1">郷土史・地方史・地域史の呼称と含意の違いについては、地方史研究の方法論を扱う諸文献に整理がある。本稿は中立性の観点から原則として「地域史」を用いる。<a href="#r1" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn2">史実・通説・推定・伝承という確度の四層は、本論考シリーズが史料批判の枠組みとして繰り返し用いてきたものであり、第294号においてその定式化を総括した。<a href="#r2" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn3">「未確認」（管見の限り一次史料に行き当たっていない状態）と「記載なし」（史料を調べたうえで記載がないと確認できた状態）の区別については、第294号で詳述した。<a href="#r3" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn4">歴史記述が事実の中立な写しではなく、選択と配列を伴う叙述であるという視点は、E・H・カー『歴史とは何か』などに古典的な定式化がある。<a href="#r4" aria-label="本文へ戻る">&#8617;</a></li>
+      <li id="fn5">書き手が自らの確度の判断を読者に開示することを叙述の誠実さと結びつける本稿の立場は、あくまで筆者の見解であり、歴史叙述論として広く合意された定説であると主張するものではない。<a href="#r5" aria-label="本文へ戻る">&#8617;</a></li>
+    </ol>
+    <p class="fn-editorial" style="font-family:'Zen Kaku Gothic New',sans-serif;font-size:12.5px;color:var(--sub);text-indent:0;margin-top:14px;line-height:1.85;">付記：本稿は特定の史実を検証する論考ではなく、地域史を書くという行為の方法と倫理を主題とする総論である。磐田物語の二層構成（一般向けの本編記事と専門の大石浩之の磐田論考）を素材に、わかりやすさと正確さの両立を、確度の層を明示する作法として論じた。</p>
+  </section>
+
+  <section class="references" aria-label="参考文献">
+    <h2>参考文献・参考資料</h2>
+    <ul class="refs">
+      <li>柳田國男『郷土生活の研究法』刀江書院、1935年。</li>
+      <li>E・H・カー著、清水幾太郎訳『歴史とは何か』岩波新書、岩波書店、1962年。</li>
+      <li>色川大吉『ある昭和史 ── 自分史の試み』中央公論社、1975年。</li>
+      <li>網野善彦『日本の歴史をよみなおす』筑摩書房、1991年。</li>
+      <li>福田アジオ『日本の民俗学 ── 「野」の学問の二〇〇年』吉川弘文館、2009年。</li>
+      <li>地方史研究協議会編『地方史研究の方法と課題』（地方史研究の理論と実践に関する論集）。</li>
+      <li>大石浩之「『未確認』と『記載なし』 ── 磐田論考の史料批判の方法を総括する」磐田物語・大石浩之の磐田論考 第294号　https://iwata-monogatari.net/oishi-ronko/294/　（最終閲覧：2026年7月26日）。</li>
+      <li>大石浩之「磐田を時代で歩く ── 古墳・国府・宿場・祭りをつなぐ通史の試み」磐田物語・大石浩之の磐田論考 第173号　https://iwata-monogatari.net/oishi-ronko/173/　（最終閲覧：2026年7月26日）。</li>
+      <li>大石浩之「地名から磐田を読む ── 大字という単位と地名学の方法」磐田物語・大石浩之の磐田論考 第250号　https://iwata-monogatari.net/oishi-ronko/250/　（最終閲覧：2026年7月26日）。</li>
+      <li>大石浩之「名から歴史を読む ── 磐田の郷土人物と史料批判の方法を総合する」磐田物語・大石浩之の磐田論考 第268号　https://iwata-monogatari.net/oishi-ronko/268/　（最終閲覧：2026年7月26日）。</li>
+      <li>磐田物語「憲章」　https://iwata-monogatari.net/c001.html　（最終閲覧：2026年7月26日）。</li>
+      <li>磐田物語「はじめに」　https://iwata-monogatari.net/c007.html　（最終閲覧：2026年7月26日）。</li>
+    </ul>
+  </section>
+
+  <div class="pager">
+    <a href="https://iwata-monogatari.net/oishi-ronko/">← 大石浩之の磐田論考 一覧へ</a>
+    <a href="https://iwata-monogatari.net/c007.html">一般向け「はじめに」を読む →</a>
+  </div>
+  </article>
+</main>
+
+<footer class="im-foot">
+  <style>
+  .im-foot{background:#1f3a48;color:#eaf4fa;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+  .im-foot *{box-sizing:border-box;}
+  .im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+  .im-foot .im-brand{color:inherit;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+  .im-foot .im-brand:hover{text-decoration:none;}
+  .im-foot .im-brand .im-dot{color:#2f7fa3;}
+  .im-foot .im-note{font-size:13px;color:#9bb6c4;line-height:1.9;max-width:520px;}
+  .im-foot .im-links{width:100%;margin-top:6px;}
+  .im-foot .im-lh{font-size:12px;color:#8aa0ab;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+  .im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .im-foot .im-links li{font-size:13px;line-height:1.6;}
+  .im-foot .im-links a{color:#cfe2ec;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+  .im-foot .im-links a:hover{color:#eef6fb;border-color:#6fb7d8;}
+  .im-foot .im-desc{display:block;color:#8aa0ab;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+  .im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#8aa0ab;letter-spacing:.04em;}
+  @media(max-width:600px){.im-foot .im-inner{padding:30px 16px;gap:20px;} .im-foot .im-brand{font-size:20px;} .im-foot .im-note{font-size:12.5px;} .im-foot .im-links ul{flex-direction:column;gap:14px;}}
+  </style>
+  <div class="im-inner">
+    <a class="im-brand" href="/" aria-label="磐田物語トップへ">磐田物語<span class="im-dot">。</span></a>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。本論考は個人の調査・覚え書きをもとに、確度の層を区別しながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石ひろゆきの別活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://oishi-hiroyuki.org/" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+      </ul>
+    </div>
+    <div class="im-copy">© 2026 磐田物語 ｜ 磐田・見付・中泉・遠江の歴史と文化を記録する地域アーカイブ</div>
+  </div>
+</footer>
+</body>
+</html>

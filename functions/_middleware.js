@@ -30,18 +30,37 @@ async function fetchFooterHtml(context) {
   return (await fetchFooterFromDb(context)) || fetchPartial(context, "/partials/footer.html");
 }
 
+const CANONICAL_HOST = "iwata-monogatari.net";
+
 export async function onRequest(context) {
   const { request, next } = context;
   const url = new URL(request.url);
+
+  // 旧pages.devドメインはURL単位で独自ドメインへ301（SEO評価の分散防止）
+  if (url.hostname === "iwata-monogatari.pages.dev") {
+    url.hostname = CANONICAL_HOST;
+    return Response.redirect(url.toString(), 301);
+  }
+
+  // プレビュー用サブドメイン（*.iwata-monogatari.pages.dev）は検索エンジンに載せない
+  const isPreviewHost =
+    url.hostname !== CANONICAL_HOST && url.hostname.endsWith(".pages.dev");
 
   if (url.pathname.startsWith("/partials/") || url.pathname.startsWith("/api/")) {
     return next();
   }
 
+  const withHostGuard = (res) => {
+    if (!isPreviewHost) return res;
+    const guarded = new Response(res.body, res);
+    guarded.headers.set("X-Robots-Tag", "noindex");
+    return guarded;
+  };
+
   const response = await next();
   const contentType = response.headers.get("content-type") || "";
   if (!contentType.includes("text/html")) {
-    return response;
+    return withHostGuard(response);
   }
 
   const [headerHtml, footerHtml, policyHtml, propertyHtml] = await Promise.all([
@@ -52,10 +71,10 @@ export async function onRequest(context) {
   ]);
 
   if (!headerHtml || !footerHtml || !policyHtml || !propertyHtml) {
-    return response;
+    return withHostGuard(response);
   }
 
-  return new HTMLRewriter()
+  return withHostGuard(new HTMLRewriter()
     .on("header.gh-site", {
       element(el) {
         el.setInnerContent(headerHtml, { html: true });
@@ -76,5 +95,5 @@ export async function onRequest(context) {
         el.setInnerContent(propertyHtml, { html: true });
       },
     })
-    .transform(response);
+    .transform(response));
 }
