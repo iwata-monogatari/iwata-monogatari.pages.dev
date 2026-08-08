@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-08-08",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -26398,6 +26398,198 @@
         "修験"
       ],
       "level": "L2"
+    },
+    {
+      "title": "見付宿の伝馬制 ── 人馬継立はどう動いたか",
+      "url": "m153.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "road-traffic",
+        "edo-era",
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "見付宿の伝馬制 ── 人馬継立はどう動いたか。田中友次郎編著『東海道遠州見付宿』所収史料から、見付宿の交通実務を読む。",
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "伝馬制",
+        "人馬継立",
+        "宿駅制度"
+      ],
+      "level": "L2",
+      "source_refs": [
+        "book:東海道遠州見付宿:60-105"
+      ]
+    },
+    {
+      "title": "馬をどう補ったか ── 見付宿の伝馬補充と馬持の負担",
+      "url": "m154.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "road-traffic",
+        "edo-era",
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "馬をどう補ったか ── 見付宿の伝馬補充と馬持の負担。田中友次郎編著『東海道遠州見付宿』所収史料から、見付宿の交通実務を読む。",
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "伝馬",
+        "馬の補充",
+        "馬持"
+      ],
+      "level": "L2",
+      "source_refs": [
+        "book:東海道遠州見付宿:60-105"
+      ]
+    },
+    {
+      "title": "御用継立の実務 ── 証文・無賃・割増を見分ける",
+      "url": "m155.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "road-traffic",
+        "edo-era",
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "御用継立の実務 ── 証文・無賃・割増を見分ける。田中友次郎編著『東海道遠州見付宿』所収史料から、見付宿の交通実務を読む。",
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "御用継立",
+        "御朱印",
+        "公用交通"
+      ],
+      "level": "L2",
+      "source_refs": [
+        "book:東海道遠州見付宿:60-105"
+      ]
+    },
+    {
+      "title": "大通行が見付宿に来た日 ── 人馬・宿泊・助郷の総動員",
+      "url": "m156.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "road-traffic",
+        "edo-era",
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "大通行が見付宿に来た日 ── 人馬・宿泊・助郷の総動員。田中友次郎編著『東海道遠州見付宿』所収史料から、見付宿の交通実務を読む。",
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "大通行",
+        "助郷",
+        "参勤交代"
+      ],
+      "level": "L2",
+      "source_refs": [
+        "book:東海道遠州見付宿:60-105"
+      ]
+    },
+    {
+      "title": "見付宿から天竜川へ ── 池田の渡船につなぐ人馬継立",
+      "url": "m157.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "road-traffic",
+        "edo-era",
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "見付宿から天竜川へ ── 池田の渡船につなぐ人馬継立。田中友次郎編著『東海道遠州見付宿』所収史料から、見付宿の交通実務を読む。",
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "池田の渡し",
+        "天竜川",
+        "継立"
+      ],
+      "level": "L2",
+      "source_refs": [
+        "book:東海道遠州見付宿:60-105"
+      ]
+    },
+    {
+      "title": "見付宿の財政 ── 伝馬役・給米・借財から読む宿場経営",
+      "url": "m158.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "road-traffic",
+        "edo-era",
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-08-08",
+      "updated_at": "2026-08-08",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "見付宿の財政 ── 伝馬役・給米・借財から読む宿場経営。田中友次郎編著『東海道遠州見付宿』所収史料から、見付宿の交通実務を読む。",
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "宿財政",
+        "問屋給米",
+        "借財"
+      ],
+      "level": "L2",
+      "source_refs": [
+        "book:東海道遠州見付宿:60-105"
+      ]
     }
   ]
 }
