@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-08-09",
+  "updated_at": "2026-08-10",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -8980,7 +8980,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-06",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26412,7 +26412,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26432,7 +26432,10 @@
       ],
       "level": "L3",
       "source_refs": [
-        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
+        "book:東海道遠州見付宿:第三章・第一章・第二章（頁画像への再照合未了）",
+        "ndl:000001163706",
+        "cinii:BN06186100",
+        "book:児玉幸多:近世宿駅制度の研究"
       ]
     },
     {
@@ -26448,7 +26451,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26468,7 +26471,10 @@
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
+        "book:東海道遠州見付宿:第三章・第一章・第二章・第六章（頁画像への再照合未了）",
+        "ndl:000001163706",
+        "cinii:BN06186100",
+        "book:児玉幸多:近世宿駅制度の研究"
       ]
     },
     {
@@ -26484,7 +26490,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26504,7 +26510,10 @@
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
+        "book:東海道遠州見付宿:第一章・第二章（頁画像への再照合未了）",
+        "ndl:000001163706",
+        "cinii:BN06186100",
+        "book:児玉幸多:近世宿駅制度の研究"
       ]
     },
     {
@@ -26520,7 +26529,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26539,7 +26548,9 @@
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
+        "book:東海道遠州見付宿:第三章・第六章（頁画像への再照合未了）",
+        "ndl:000001163706",
+        "cinii:BN06186100"
       ]
     },
     {
@@ -26555,7 +26566,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26574,11 +26585,13 @@
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
+        "book:東海道遠州見付宿:第三章（頁画像への再照合未了）",
+        "ndl:000001163706",
+        "cinii:BN06186100"
       ]
     },
     {
-      "title": "見付宿の財政 ── 伝馬役・給米・借財から読む宿場経営",
+      "title": "見付宿の財政 ── 役金・給米・普請費から読む宿場経営",
       "url": "m158.html",
       "district": [
         "mitsuke"
@@ -26590,13 +26603,13 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "明和7年の役金182両1分余に対し、文政10年の中川橋掛替は228両2分余。宿の会計を、同書に散在する金額から性格別に組み立て直す。",
+      "summary": "明和7年の役金、問屋給米、宿役人の給料、橋の掛替費を性格別に整理し、異年次の金額を比べる限界と未確認の総収支を明示する。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
@@ -26609,7 +26622,9 @@
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
+        "book:東海道遠州見付宿:第二章、第四章は構成のみ（頁画像への再照合未了）",
+        "ndl:000001163706",
+        "cinii:BN06186100"
       ]
     },
     {
@@ -26625,7 +26640,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26642,9 +26657,11 @@
         "岩井野",
         "定数と実働数"
       ],
-      "level": "L3",
+      "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
+        "book:東海道遠州見付宿:第一章・第三章（頁画像への再照合未了）",
+        "ndl:000001163706",
+        "cinii:BN06186100"
       ]
     },
     {
@@ -26660,7 +26677,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26679,7 +26696,9 @@
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
+        "book:東海道遠州見付宿:第一章・第三章（頁画像への再照合未了）",
+        "ndl:000001163706",
+        "cinii:BN06186100"
       ]
     },
     {
@@ -26695,7 +26714,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26714,7 +26733,9 @@
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
+        "book:東海道遠州見付宿:第一章・第三章（頁画像への再照合未了）",
+        "ndl:000001163706",
+        "cinii:BN06186100"
       ]
     },
     {
@@ -26730,7 +26751,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26747,9 +26768,11 @@
         "問屋場",
         "学説の整理"
       ],
-      "level": "L3",
+      "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
+        "book:東海道遠州見付宿:第三章（頁画像への再照合未了）",
+        "ndl:000001163706",
+        "cinii:BN06186100"
       ]
     },
     {
@@ -26765,7 +26788,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26784,7 +26807,9 @@
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
+        "book:東海道遠州見付宿:第三章（頁画像への再照合未了）",
+        "ndl:000001163706",
+        "cinii:BN06186100"
       ]
     },
     {
@@ -26800,7 +26825,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26819,7 +26844,9 @@
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
+        "book:東海道遠州見付宿:第一章・第三章（頁画像への再照合未了）",
+        "ndl:000001163706",
+        "cinii:BN06186100"
       ]
     },
     {
@@ -26835,7 +26862,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26854,7 +26881,10 @@
       ],
       "level": "L3",
       "source_refs": [
-        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
+        "book:東海道遠州見付宿:第三章・所引一次史料（頁画像・原本への再照合未了）",
+        "ndl:000001163706",
+        "cinii:BN06186100",
+        "book:児玉幸多:近世宿駅制度の研究"
       ]
     },
     {
@@ -26870,7 +26900,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-09",
+      "updated_at": "2026-08-10",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26889,7 +26919,9 @@
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
+        "book:東海道遠州見付宿:第三章・第六章（頁画像への再照合未了）",
+        "ndl:000001163706",
+        "cinii:BN06186100"
       ]
     }
   ]
