@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-08-08",
+  "updated_at": "2026-08-09",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -26412,23 +26412,27 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-08",
+      "updated_at": "2026-08-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "見付宿の伝馬制 ── 人馬継立はどう動いたか。田中友次郎編著『東海道遠州見付宿』所収史料から、見付宿の交通実務を読む。",
+      "summary": "道中奉行と中泉代官という二重の支配、慶長6年から明治5年までの年表、そして宿駅制度をどう性格づけるかの学説を整理し、見付宿の人馬継立の全体像を示す。特集第2部の総論。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
         "伝馬制",
         "人馬継立",
-        "宿駅制度"
+        "宿駅制度",
+        "道中奉行",
+        "中泉代官",
+        "慶長6年",
+        "学説の整理"
       ],
-      "level": "L2",
+      "level": "L3",
       "source_refs": [
-        "book:東海道遠州見付宿:60-105"
+        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
       ]
     },
     {
@@ -26444,23 +26448,27 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-08",
+      "updated_at": "2026-08-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "馬をどう補ったか ── 見付宿の伝馬補充と馬持の負担。田中友次郎編著『東海道遠州見付宿』所収史料から、見付宿の交通実務を読む。",
+      "summary": "定数の馬と、その日歩ける馬は違う。補充の三経路、公定価格に縛られた収入と市場価格に連動した支出、そして秣場をめぐる争いから、伝馬を維持する仕事を読む。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
         "伝馬",
-        "馬の補充",
-        "馬持"
+        "馬持",
+        "伝馬役",
+        "秣場",
+        "岩井野",
+        "助郷",
+        "171軒"
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:60-105"
+        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
       ]
     },
     {
@@ -26476,23 +26484,27 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-08",
+      "updated_at": "2026-08-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "御用継立の実務 ── 証文・無賃・割増を見分ける。田中友次郎編著『東海道遠州見付宿』所収史料から、見付宿の交通実務を読む。",
+      "summary": "幕府は無賃、諸藩は御定賃銭、庶民は相対賃銭。同じ馬に三通りの値段がついた仕組みと、窓口で証文を照合した実務、そして割増率だけを動かす幕府の方式を読む。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
-        "御用継立",
+        "御定賃銭",
+        "相対賃銭",
+        "無賃継立",
         "御朱印",
-        "公用交通"
+        "引合",
+        "割増",
+        "御朱印問屋"
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:60-105"
+        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
       ]
     },
     {
@@ -26508,23 +26520,26 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-08",
+      "updated_at": "2026-08-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "大通行が見付宿に来た日 ── 人馬・宿泊・助郷の総動員。田中友次郎編著『東海道遠州見付宿』所収史料から、見付宿の交通実務を読む。",
+      "summary": "文久2年の御上洛御宿割下帳は見付宿を1,083軒と数えた。宿泊の割り当て、寺の収容、助郷への触れ ── 行列が着く前から始まっていた総動員の実務を読む。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
         "大通行",
+        "御上洛御宿割下帳",
         "助郷",
-        "参勤交代"
+        "本陣",
+        "省光寺",
+        "長州征伐"
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:60-105"
+        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
       ]
     },
     {
@@ -26540,23 +26555,26 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-08",
+      "updated_at": "2026-08-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "見付宿から天竜川へ ── 池田の渡船につなぐ人馬継立。田中友次郎編著『東海道遠州見付宿』所収史料から、見付宿の交通実務を読む。",
+      "summary": "東の袋井へ1里半、西の浜松へ4里半。賃銭を比べると距離比を1割強上回る。見付宿にとって天竜川が何であったかを、御定賃銭の数字から読む。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
-        "池田の渡し",
         "天竜川",
-        "継立"
+        "池田の渡し",
+        "渡船",
+        "橋頭宿駅",
+        "御定賃銭",
+        "川留め"
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:60-105"
+        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
       ]
     },
     {
@@ -26572,23 +26590,26 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-08",
+      "updated_at": "2026-08-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "見付宿の財政 ── 伝馬役・給米・借財から読む宿場経営。田中友次郎編著『東海道遠州見付宿』所収史料から、見付宿の交通実務を読む。",
+      "summary": "明和7年の役金182両1分余に対し、文政10年の中川橋掛替は228両2分余。宿の会計を、同書に散在する金額から性格別に組み立て直す。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
         "宿財政",
+        "役金",
         "問屋給米",
-        "借財"
+        "普請費",
+        "御囲蔵",
+        "惣間口"
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:60-105"
+        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
       ]
     },
     {
@@ -26604,23 +26625,26 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-08",
+      "updated_at": "2026-08-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "人足100人・馬100疋とは何か ── 見付宿の常備人馬を読む。『東海道遠州見付宿』の表と記録から、見付宿の人馬継立実務を読む。",
+      "summary": "百人百疋は実在の数か、負うべき義務の量か。読み方によって同じ数字の意味は変わる。見付宿の171軒という不変の枠から、定数という考え方の性格を読む。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
         "常備人馬",
-        "見付宿",
-        "人馬継立"
+        "百人百疋",
+        "伝馬役",
+        "171軒",
+        "岩井野",
+        "定数と実働数"
       ],
-      "level": "L2",
+      "level": "L3",
       "source_refs": [
-        "book:東海道遠州見付宿:60-105"
+        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
       ]
     },
     {
@@ -26636,23 +26660,26 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-08",
+      "updated_at": "2026-08-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "本馬・軽尻・人足 ── 荷物に応じて変わる継立の単位。『東海道遠州見付宿』の表と記録から、見付宿の人馬継立実務を読む。",
+      "summary": "本馬234文、軽尻151文、人足117文。二つの区間で比率がほぼ一致することから、賃銭が「距離×単位係数」で組み立てられていたことが読める。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
-        "荷物区分",
-        "見付宿",
-        "人馬継立"
+        "本馬",
+        "軽尻",
+        "人足",
+        "御定賃銭",
+        "積載規定",
+        "継立"
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:60-105"
+        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
       ]
     },
     {
@@ -26668,23 +26695,26 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-08",
+      "updated_at": "2026-08-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "見付宿の人馬割 ── 誰が何人・何疋を出したのか。『東海道遠州見付宿』の表と記録から、見付宿の人馬継立実務を読む。",
+      "summary": "間口2間の家が約2割、11間・13間は庄屋の家。伝馬役は表間口の間数で割り付けられた。171軒の分布と免除された家々から、負担配分の構造を読む。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
+        "伝馬役",
         "人馬割",
-        "見付宿",
-        "人馬継立"
+        "表間口",
+        "役金",
+        "除地",
+        "御朱印屋敷"
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:60-105"
+        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
       ]
     },
     {
@@ -26700,23 +26730,26 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-08",
+      "updated_at": "2026-08-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "先触れから出発まで ── 見付宿の継立手順をたどる。『東海道遠州見付宿』の表と記録から、見付宿の人馬継立実務を読む。",
+      "summary": "先触の到着、御朱印の照合、人馬の割当、荷の積替え、次宿への引渡し。継立一件の手順をたどり、あわせて問屋場がいつからあったのかという論点を整理する。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
+        "先触",
         "継立手順",
-        "見付宿",
-        "人馬継立"
+        "御朱印",
+        "引合",
+        "問屋場",
+        "学説の整理"
       ],
-      "level": "L2",
+      "level": "L3",
       "source_refs": [
-        "book:東海道遠州見付宿:60-105"
+        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
       ]
     },
     {
@@ -26732,23 +26765,26 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-08",
+      "updated_at": "2026-08-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "待つことも負担だった ── 人馬の待機と見付宿の日常。『東海道遠州見付宿』の表と記録から、見付宿の人馬継立実務を読む。",
+      "summary": "賃銭は区間に対して定められ、待たされた時間には欄がない。帳簿に残らないこの負担から、宿場町が引き受けていた不確実性を読む。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
-        "待機負担",
-        "見付宿",
-        "人馬継立"
+        "待機",
+        "川留め",
+        "天竜川",
+        "人足部屋",
+        "継立",
+        "不確実性"
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:60-105"
+        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
       ]
     },
     {
@@ -26764,23 +26800,26 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-08",
+      "updated_at": "2026-08-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "伝馬を飼う ── 飼料・馬具・病馬から見る宿駅の維持費。『東海道遠州見付宿』の表と記録から、見付宿の人馬継立実務を読む。",
+      "summary": "見付宿にもっとも古く残る絵図は、馬の草をめぐる訴訟の産物だった。岩井野の秣場と無税の御伝馬林から、伝馬を養うという仕事を読む。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
-        "馬の維持",
-        "見付宿",
-        "人馬継立"
+        "秣場",
+        "岩井野",
+        "御伝馬林",
+        "馬持",
+        "飼料",
+        "秣場出入絵図"
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:60-105"
+        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
       ]
     },
     {
@@ -26796,27 +26835,30 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-08",
+      "updated_at": "2026-08-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "継立帳簿は何を記録したか ── 人馬・賃銭・証文を残す実務。『東海道遠州見付宿』の表と記録から、見付宿の人馬継立実務を読む。",
+      "summary": "問屋御用留、明細差出帳、庚申帳、絵図 ── 性格の違う史料を分けて読む。数値が食い違う例と、記録されなかった領域の一覧から、見付宿研究の現在地を示す。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
-        "継立帳簿",
-        "見付宿",
-        "人馬継立"
+        "問屋御用留",
+        "明細差出帳",
+        "史料批判",
+        "庚申帳",
+        "水野日記",
+        "二次文献"
       ],
-      "level": "L2",
+      "level": "L3",
       "source_refs": [
-        "book:東海道遠州見付宿:60-105"
+        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
       ]
     },
     {
-      "title": "大通行の人馬数を比べる ── 見付宿の動員表を読む",
+      "title": "大通行の人馬数を比べる ── 動員規模と助郷の広がり",
       "url": "m166.html",
       "district": [
         "mitsuke"
@@ -26828,23 +26870,26 @@
       ],
       "content_type": "reading",
       "published_at": "2026-08-08",
-      "updated_at": "2026-08-08",
+      "updated_at": "2026-08-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "大通行の人馬数を比べる ── 見付宿の動員表を読む。『東海道遠州見付宿』の表と記録から、見付宿の人馬継立実務を読む。",
+      "summary": "定数と実働数、予定数と実績数、基準額と実徴収額。数字を比べる前に揃えるべき区別を整理し、動員表が示す助郷への広がりを読む。特集第2部の結び。",
       "parent": "m141.html",
       "section": "見付",
       "topics": [
-        "大通行表",
-        "見付宿",
-        "人馬継立"
+        "大通行",
+        "動員",
+        "助郷",
+        "数値比較",
+        "史料批判",
+        "元禄7年助郷役令"
       ],
       "level": "L2",
       "source_refs": [
-        "book:東海道遠州見付宿:60-105"
+        "book:東海道遠州見付宿:第三章ほか（頁照合未了）"
       ]
     }
   ]
