@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-08-10",
+  "updated_at": "2026-08-11",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -4308,7 +4308,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-25",
-      "updated_at": "2026-07-25",
+      "updated_at": "2026-08-11",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -4319,12 +4319,17 @@
         "見付宿",
         "東海道",
         "本陣",
+        "脇本陣",
         "旅籠",
         "宿駅制度",
         "史料批判"
       ],
       "level": "L3",
-      "series": "大石浩之の磐田論考"
+      "series": "大石浩之の磐田論考",
+      "source_refs": [
+        "book:東海道遠州見付宿:162-203頁（2026-08-11全頁画像照合）",
+        "primary-via-book:宿方文書・書上帳・絵図（原本未照合）"
+      ]
     },
     {
       "title": "府八幡宮と遠江国府の記憶 ── 国府・国分寺・総社を結ぶ中泉の空間",
@@ -8980,7 +8985,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-06",
-      "updated_at": "2026-08-10",
+      "updated_at": "2026-08-11",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -8995,9 +9000,15 @@
       "topics": [
         "東海道遠州見付宿",
         "田中友次郎",
-        "磐田市誌シリーズ",
         "見付宿",
-        "宿方文書"
+        "宿方文書",
+        "本陣",
+        "旅籠",
+        "職業分布"
+      ],
+      "source_refs": [
+        "book:東海道遠州見付宿:162-203頁（2026-08-11全頁画像照合）",
+        "primary-via-book:宿方文書・書上帳・絵図（原本未照合）"
       ]
     },
     {
@@ -16408,7 +16419,21 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "見付"
+      "section": "見付",
+      "updated_at": "2026-08-11",
+      "level": "L2",
+      "topics": [
+        "見付宿",
+        "助郷",
+        "助郷村",
+        "伝馬",
+        "宿駅制度",
+        "人馬継立"
+      ],
+      "source_refs": [
+        "book:東海道遠州見付宿:162-203頁（2026-08-11全頁画像照合）",
+        "primary-via-book:宿方文書・書上帳・絵図（原本未照合）"
+      ]
     },
     {
       "title": "磐田の水争いと村の共同体 ── 水利慣行が守った、少ない水の分けかた",
@@ -27051,6 +27076,191 @@
         "book:東海道遠州見付宿:第三章・第六章（頁画像への再照合未了）",
         "ndl:000001163706",
         "cinii:BN06186100"
+      ]
+    },
+    {
+      "title": "見付宿の本陣と脇本陣 ── 三郎右衛門・孫兵衛・新左衛門",
+      "url": "m170.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-11",
+      "updated_at": "2026-08-11",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "見付宿",
+        "本陣",
+        "脇本陣",
+        "三郎右衛門",
+        "孫兵衛",
+        "新左衛門",
+        "宿割"
+      ],
+      "level": "L3",
+      "summary": "見付宿には本陣2軒と脇本陣1軒があった。南側の本陣を三郎右衛門、北側の本陣を孫兵衛、脇本陣を大三河屋新左衛門が担ったと『東海道遠州見付宿』は記す。本陣は大名のための大きな旅籠というだけではない。宿泊者の格式を守り、先約を調整し、町内の家々まで動員する宿割の中枢であった。",
+      "source_refs": [
+        "book:東海道遠州見付宿:162〜171頁（2026-08-11全頁画像照合）",
+        "primary-via-book:宿方文書・書上帳・絵図（原本未照合）"
+      ]
+    },
+    {
+      "title": "旅籠屋の間口と奥行 ── 天保13年の39軒を測る",
+      "url": "m171.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-11",
+      "updated_at": "2026-08-11",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "見付宿",
+        "旅籠屋",
+        "天保13年",
+        "家作",
+        "建坪",
+        "宿場町",
+        "分布図"
+      ],
+      "level": "L3",
+      "summary": "天保13年（1842年）の見付宿で、書上帳が家作を伝える旅籠屋は39軒であった。同じ章には別の時点・別の集計による31軒、54軒、56軒も現れる。数が揺れるのは誤りとは限らない。開業・廃業、数え方、調査目的が異なるからである。ここでは39軒の間口・奥行・建坪と、街道沿いの分布に絞って読む。",
+      "source_refs": [
+        "book:東海道遠州見付宿:171〜181頁・186〜187頁（2026-08-11全頁画像照合）",
+        "primary-via-book:宿方文書・書上帳・絵図（原本未照合）"
+      ]
+    },
+    {
+      "title": "宿泊料と食事 ── 木銭・旅籠銭・宿割の実務",
+      "url": "m172.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-11",
+      "updated_at": "2026-08-11",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "見付宿",
+        "木銭",
+        "旅籠銭",
+        "宿泊料",
+        "食事",
+        "宿割",
+        "旅籠屋"
+      ],
+      "level": "L3",
+      "summary": "旅の宿代は、一つの定価ではなかった。木賃宿では旅人が米や薪を持ち込み、宿へ木銭を払った。旅籠では夕食と朝食を用意し、身分ある通行者には宿割が組まれた。『東海道遠州見付宿』の引用は、宿泊料が時代、客の身分、食事、部屋、御用か私用かによって変わったことを伝える。",
+      "source_refs": [
+        "book:東海道遠州見付宿:162〜174頁（2026-08-11全頁画像照合）",
+        "primary-via-book:宿方文書・書上帳・絵図（原本未照合）"
+      ]
+    },
+    {
+      "title": "飯盛女と宿場統制 ── 59人の記録をどう読むか",
+      "url": "m173.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-11",
+      "updated_at": "2026-08-11",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "見付宿",
+        "飯盛女",
+        "旅籠屋",
+        "宿場統制",
+        "道中奉行",
+        "前借",
+        "天保13年"
+      ],
+      "level": "L3",
+      "summary": "天保13年（1842年）の見付宿では、書上帳に飯盛女59人が記された。年齢は16歳から27歳ほどに分布し、19歳が多い。だがこれは生活実態の全数調査ではない。幕府が人数を制限するなかで宿側が差し出した行政上の数字であり、名を伏せられた女性たちの境遇をそのまま表すものではない。",
+      "source_refs": [
+        "book:東海道遠州見付宿:173〜186頁（2026-08-11全頁画像照合）",
+        "primary-via-book:宿方文書・書上帳・絵図（原本未照合）"
+      ]
+    },
+    {
+      "title": "見付宿の職業分布 ── 448軒の町場経済",
+      "url": "m174.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-11",
+      "updated_at": "2026-08-11",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "見付宿",
+        "職業分布",
+        "天保13年",
+        "町場経済",
+        "商業",
+        "兼業",
+        "中川水運"
+      ],
+      "level": "L3",
+      "summary": "天保13年（1842年）の見付宿職業分布は、宿内448軒におよそ71種の職業を数える。商業約269軒、農業約123軒、工業約41軒という同書の集計は、見付が旅人を泊めるだけでなく、食料・衣類・道具・運送を供給する消費都市であったことを示す。ただし一軒が複数の商売を兼ね、無職の分類も含むため、現代の就業統計とは違う。",
+      "source_refs": [
+        "book:東海道遠州見付宿:186〜201頁（2026-08-11全頁画像照合）",
+        "primary-via-book:宿方文書・書上帳・絵図（原本未照合）"
       ]
     }
   ]
