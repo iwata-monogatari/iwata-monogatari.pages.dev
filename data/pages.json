@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-08-11",
+  "updated_at": "2026-08-12",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -8985,7 +8985,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-06",
-      "updated_at": "2026-08-11",
+      "updated_at": "2026-08-12",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -9004,11 +9004,14 @@
         "宿方文書",
         "本陣",
         "旅籠",
-        "職業分布"
+        "職業分布",
+        "助郷",
+        "水野家日記",
+        "駅逓"
       ],
       "source_refs": [
-        "book:東海道遠州見付宿:162-203頁（2026-08-11全頁画像照合）",
-        "primary-via-book:宿方文書・書上帳・絵図（原本未照合）"
+        "book:東海道遠州見付宿:全7章・うち202〜266頁を2026-08-12画像照合",
+        "primary-via-book:宿方文書・助郷帳・水野家日記・駅逓関係文書（原本未照合）"
       ]
     },
     {
@@ -16415,24 +16418,26 @@
       "published_at": "2026-07-05",
       "date_provisional": false,
       "status": "published",
-      "summary": "本陣・旅籠が並ぶ宿場の内側だけでなく、周辺の村々が人馬を提供する助郷制度が見付宿を支えていた。定助郷・加助郷という区分と、村にとっての負担をたどる。",
+      "summary": "見付宿の助郷制度を、第六章202〜237頁の助郷村表、勤高、買人馬、賃銭から再構成する。第一期68ヶ村から84ヶ村、123ヶ村へ広がった供給圏と、労役が金銭へ置き換えられる構造を読む。",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
       "section": "見付",
-      "updated_at": "2026-08-11",
-      "level": "L2",
+      "updated_at": "2026-08-12",
+      "level": "L3",
       "topics": [
         "見付宿",
         "助郷",
         "助郷村",
         "伝馬",
-        "宿駅制度",
-        "人馬継立"
+        "勤高",
+        "買人馬",
+        "賃銭",
+        "宿駅制度"
       ],
       "source_refs": [
-        "book:東海道遠州見付宿:162-203頁（2026-08-11全頁画像照合）",
-        "primary-via-book:宿方文書・書上帳・絵図（原本未照合）"
+        "book:東海道遠州見付宿:202〜237頁（2026-08-12全頁画像照合）",
+        "primary-via-book:助郷帳・村高明細・雇人馬帳・分布図（原本未照合）"
       ]
     },
     {
@@ -20501,15 +20506,30 @@
       ],
       "content_type": "article",
       "published_at": "2026-07-12",
-      "updated_at": "2026-07-12",
+      "updated_at": "2026-08-12",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "将軍上洛と長州征伐で見付宿・助郷が負った人馬、宿泊、物資調達の負担と政権交代を読む。",
+      "summary": "将軍家茂の上洛と長州征伐期、見付宿と助郷が担った軍勢の宿泊、人馬、物資を『図説 磐田市史』と水野家日記等から再検討する。人数の異同、延べ数、幕府・新政府の制度差を分ける。",
       "parent": "01001-mitsuke.html",
-      "level": "L2"
+      "level": "L3",
+      "topics": [
+        "長州征伐",
+        "将軍上洛",
+        "見付宿",
+        "助郷",
+        "軍事通行",
+        "水野家日記",
+        "買人馬",
+        "駅逓"
+      ],
+      "source_refs": [
+        "book:図説磐田市史:項目35・69〜70頁",
+        "book:東海道遠州見付宿:218〜266頁（2026-08-12画像照合）",
+        "primary-via-book:水野家日記・問屋御用留・宿割帳・助郷帳（原本未照合）"
+      ]
     },
     {
       "title": "地租改正 ── 地券が変えた磐田の土地所有",
@@ -27261,6 +27281,193 @@
       "source_refs": [
         "book:東海道遠州見付宿:186〜201頁（2026-08-11全頁画像照合）",
         "primary-via-book:宿方文書・書上帳・絵図（原本未照合）"
+      ]
+    },
+    {
+      "title": "見付宿助郷68ヶ村 ── 宿の外側に広がった人馬供給圏",
+      "url": "m175.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "見付宿",
+        "助郷68ヶ村",
+        "助郷村",
+        "天保13年",
+        "文久2年",
+        "勤高",
+        "供給圏"
+      ],
+      "level": "L3",
+      "summary": "見付宿の助郷は第一期68ヶ村から84ヶ村、123ヶ村へ組み替えられた。助郷村表と分布図から宿の外側へ広がった人馬供給圏を読む。",
+      "source_refs": [
+        "book:東海道遠州見付宿:202〜219頁（2026-08-12全頁画像照合）",
+        "primary-via-book:宿方文書・助郷帳・水野家日記・駅逓関係文書（原本未照合）"
+      ]
+    },
+    {
+      "title": "助郷高と領主支配 ── 見付宿の役をどう村へ割り付けたか",
+      "url": "m176.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "見付宿",
+        "助郷高",
+        "村高",
+        "勤高",
+        "相給村",
+        "領主",
+        "掛川宿",
+        "袋井宿"
+      ],
+      "level": "L3",
+      "summary": "村高、助郷勤高、実働人馬を区別し、相給村と複数宿への割付から助郷表を行政の設計図として読む。",
+      "source_refs": [
+        "book:東海道遠州見付宿:220〜229頁（2026-08-12全頁画像照合）",
+        "primary-via-book:宿方文書・助郷帳・水野家日記・駅逓関係文書（原本未照合）"
+      ]
+    },
+    {
+      "title": "助郷人馬の賃銭と代勤 ── 労役はどこまで金で置き換えられたか",
+      "url": "m177.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "見付宿",
+        "助郷",
+        "買人馬",
+        "買人足",
+        "賃銭",
+        "助成",
+        "刎銭",
+        "天保10年"
+      ],
+      "level": "L3",
+      "summary": "天保10年の買馬約1,100疋分・買人足約6,600人分を起点に、自前出役、代勤、御定賃銭、助成と村負担を分ける。",
+      "source_refs": [
+        "book:東海道遠州見付宿:228〜237頁（2026-08-12全頁画像照合）",
+        "primary-via-book:宿方文書・助郷帳・水野家日記・駅逓関係文書（原本未照合）"
+      ]
+    },
+    {
+      "title": "水野氏記録が見た幕末の見付宿 ── 上洛・御札・橋普請",
+      "url": "m178.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "水野家日記",
+        "将軍家茂",
+        "上洛",
+        "御札降り",
+        "天竜川舟橋",
+        "見付宿",
+        "幕末"
+      ],
+      "level": "L3",
+      "summary": "水野家日記、問屋御用留、小遣帳から、将軍上洛、伊勢参宮、御札降り、舟橋普請に揺れた幕末の見付宿を読む。",
+      "source_refs": [
+        "book:東海道遠州見付宿:238〜249頁（2026-08-12全頁画像照合）",
+        "primary-via-book:宿方文書・助郷帳・水野家日記・駅逓関係文書（原本未照合）"
+      ]
+    },
+    {
+      "title": "伝馬所から駅逓へ ── 明治初年の見付宿駅制改革",
+      "url": "m179.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "post-town",
+        "edo-period",
+        "documents"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "parent": "m141.html",
+      "section": "見付",
+      "topics": [
+        "伝馬宿改革",
+        "駅逓司",
+        "駅逓役所",
+        "見付宿",
+        "新助郷",
+        "明治維新",
+        "旅行帳"
+      ],
+      "level": "L3",
+      "summary": "明治元年の伝馬宿改革、新助郷、駅逓司・駅逓役所、旅行帳から、旧宿駅が近代交通制度へ段階的に移る過程を読む。",
+      "source_refs": [
+        "book:東海道遠州見付宿:250〜266頁（2026-08-12全頁画像照合）",
+        "primary-via-book:宿方文書・助郷帳・水野家日記・駅逓関係文書（原本未照合）"
       ]
     }
   ]

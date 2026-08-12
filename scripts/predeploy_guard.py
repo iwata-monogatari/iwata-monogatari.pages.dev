@@ -375,6 +375,13 @@ def main():
 
     pages_data = load_json("data/pages.json")
     pages = pages_data["pages"]
+    heading_density = command([sys.executable, "scripts/check_heading_density.py"])
+    if heading_density.stdout.strip():
+        print(heading_density.stdout.strip())
+    if heading_density.returncode != 0:
+        if heading_density.stderr.strip():
+            print(heading_density.stderr.strip(), file=sys.stderr)
+        return fail("article heading density check failed")
     latest = load_json("data/new-articles.json")
     index_html = read_text("index.html")
     updates_html = read_text("updates.html")
