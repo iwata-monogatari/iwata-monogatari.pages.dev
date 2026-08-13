@@ -61,6 +61,37 @@ pushすると、Cloudflare Pages側のGit連携が自動でビルド・デプロ
 
 記事作成中の通常確認は従来通り `npm.cmd run guard` を使う。これは Git 同期までは要求しない。公開直前だけ `npm.cmd run guard:deploy` が必須になる。
 
+### フッターを直したときは push だけでは本番に出ない（重要）
+
+`functions/_middleware.js` は、配信時に `footer.im-foot` の中身を**まず D1 の `site_fragments`
+テーブル（`fragment_key='footer'`）から**取り、行が無いときだけ `partials/footer.html`
+にフォールバックする（2026-07-08 の `efeda113` 以降）。D1 に行がある限り、
+**`partials/footer.html` を編集して push しても本番のフッターは一切変わらない。**
+
+そのため、フッターを変更したときは push に加えて次を必ず実行する。
+
+```powershell
+npm.cmd run footer:sql
+npx wrangler d1 execute iwata_monogatari_bbs --remote --file=.tmp/seed_footer_fragment.sql
+```
+
+実際にこれを忘れた事故がある。2026-07-29 の `4a6272d4`（フッターに ATAWI SHRINE /
+ATAWI TEMPLE のリンクを追加）は D1 を更新しなかったため、本番のフッターは
+2026-07-24 の版のまま2週間放置され、2026-08-13 に発覚した（同日 D1 を再投入して復旧）。
+
+**この食い違いは既存のガードでは検知できない。** `release_guard.py` の
+`check-live-content` は、middleware が差し替える4ブロック（`header.gh-site` /
+`footer.im-foot` / `section.article-policy[data-common]` /
+`section.local-property-note[data-common]`）を両側から除去して比較するため、
+フッターだけが古いという状態は素通りする。同じ理由で、`partials/` 配下の
+他の3ファイルを変えたときも本番反映を目視で確認すること。
+
+現在の D1 の中身は次で確認できる（`d1:write` スコープはこのマシンに残してある）。
+
+```powershell
+npx wrangler d1 execute iwata_monogatari_bbs --remote --command "SELECT fragment_key, updated_at, length(html) FROM site_fragments"
+```
+
 ## 本番の巻き戻り・記事消失を防ぐ安全装置（2026-07-15）
 
 過去に、このリポジトリの別クローン（別マシン／別ツールの作業コピー）から `wrangler pages deploy .` を直接実行し、Git に見えない形で本番が古い版に巻き戻る事故が繰り返し起きた。対策は最終的に次の4つ。
