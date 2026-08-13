@@ -1,0 +1,89 @@
+{
+  "_readme": "自動生成される temple-shrine-links.json に対する手作業の調整。tools/build_temple_shrine_links.py が読み込む。",
+
+  "_exclude_readme": "磐田市内に同名の寺社があるが、磐田物語の本文では市外の社を指している語。全出現を目視して市内社を指す例が無いものだけを入れる。",
+  "exclude_surfaces": [
+    "秋葉神社",
+    "八坂神社",
+    "松尾神社"
+  ],
+
+  "_block_readme": "より長い固有名詞の一部として現れるため、内側の寺社名にリンクさせてはいけない語。マッチだけさせてリンクは付けない。",
+  "block_forms": [
+    "事任八幡宮",
+    "秋葉山本宮秋葉神社",
+    "秋葉山本宮",
+    "清浄光寺",
+    "松尾大社",
+    "石清水八幡宮",
+    "鶴岡八幡宮",
+    "小國神社",
+    "小国神社"
+  ],
+
+  "_external_readme": "直前12文字以内にこの語があれば市外の寺社を指しているとみなしてリンクしない。時代名（奈良時代・鎌倉時代）と衝突する語は入れないこと。",
+  "external_markers": [
+    "京都",
+    "浜松",
+    "愛知",
+    "信濃",
+    "藤沢",
+    "掛川",
+    "春野",
+    "天竜区",
+    "静岡市",
+    "袋井",
+    "加賀",
+    "三河",
+    "尾張",
+    "全国の",
+    "諸国の",
+    "各地の"
+  ],
+
+  "_page_hints_readme": "同名寺社を本文の地名だけでは特定できないページで、人手で対応を確定させる。キーはリポジトリからの相対パス、値は「表層形: slug」。指定するとそのページの当該語は全部この社になるので、記事全体が同じ社を指していることを本文で確かめてから書くこと。",
+  "page_hints": {
+    "01001-mitsuke.html": { "福王寺": "fukuoji-jonosaki" },
+    "01003-mikuriya.html": { "神明宮": "kamadashinmei-kamada" },
+    "01003-mikuriya/index.html": { "神明宮": "kamadashinmei-kamada" },
+    "01005-nanbu.html": { "八王子神社": "hachioji-shimofuto" },
+    "01006-koyo.html": { "岩田神社": "iwata-sagisakanaka" },
+    "01008-fukude.html": { "八王子神社": "hachioji-shimofuto", "神明宮": "shinmei-fukudenakajima" },
+    "c009.html": { "神明宮": "kamadashinmei-kamada" },
+    "c019.html": { "天神社": "yanahime-mitsuke" },
+    "c094.html": { "西光寺": "saikoji-mitsuke" },
+    "f017.html": { "神明宮": "shinmei-fukudenakajima" },
+    "k058.html": { "岩田神社": "iwata-sagisakanaka" },
+    "m036.html": { "西光寺": "saikoji-mitsuke" },
+    "m142.html": { "西光寺": "saikoji-mitsuke" },
+    "m145.html": { "西光寺": "saikoji-mitsuke", "天神社": "yanahime-mitsuke" },
+    "m147.html": { "西光寺": "saikoji-mitsuke", "天神社": "yanahime-mitsuke" },
+    "m149.html": { "天神社": "yanahime-mitsuke" },
+    "m152.html": { "西光寺": "saikoji-mitsuke", "天神社": "yanahime-mitsuke" },
+    "matsuri-fukude-rokusha.html": { "神明宮": "shinmei-fukudenakajima" },
+    "matsuri-fukude-yatai.html": { "神明宮": "shinmei-fukudenakajima" },
+    "matsuri-naritachi.html": { "天白神社": "tenpaku-ikeda" },
+    "n023.html": { "西光寺": "saikoji-mitsuke" },
+    "t024.html": { "八幡神社": "hachiman-yashiroyama" },
+    "u003.html": { "神明宮": "kamadashinmei-kamada" },
+    "u015.html": { "神明宮": "kamadashinmei-kamada" },
+    "u044.html": { "神明宮": "kamadashinmei-kamada", "西光寺": "saikoji-mitsuke" },
+    "oishi-ronko/013/index.html": { "神明宮": "kamadashinmei-kamada" },
+    "oishi-ronko/028/index.html": { "神明宮": "kamadashinmei-kamada" },
+    "oishi-ronko/032/index.html": { "福王寺": "fukuoji-jonosaki" },
+    "oishi-ronko/055/index.html": { "神明宮": "kamadashinmei-kamada" },
+    "oishi-ronko/116/index.html": { "八王子神社": "hachioji-shimofuto" },
+    "oishi-ronko/181/index.html": { "西光寺": "saikoji-mitsuke" },
+    "oishi-ronko/234/index.html": { "西光寺": "saikoji-mitsuke", "須賀神社": "suga-nishijima" },
+    "oishi-ronko/240/index.html": { "西光寺": "saikoji-mitsuke" }
+  },
+
+  "_extra_readme": "マスターに無い別称を追加したい場合に使う。「表層形: slug」。下記は磐田物語の本文で使われている新字体表記で、マスター側は旧字体で登録されているもの。",
+  "extra_surfaces": {
+    "淡海国玉神社": "omikunitama-mitsuke",
+    "矢奈比売神社": "yanahime-mitsuke",
+    "野辺神社": "nobe-shikiji",
+    "島名神社": "kamadashinmei-kamada",
+    "遠江國分寺": "kokubunji-mitsuke"
+  }
+}

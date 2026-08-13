@@ -1,0 +1,2613 @@
+{
+ "version": 2,
+ "generated_by": "tools/build_temple_shrine_links.py",
+ "source": {
+  "temples": "temples.json",
+  "shrines": "shrines.json",
+  "temple_count": 118,
+  "shrine_count": 145
+ },
+ "targets": {
+  "akiha-shinkai": {
+   "kind": "shrine",
+   "name": "秋葉神社",
+   "url": "https://shrine.atawi.link/shrines/akiha-shinkai/"
+  },
+  "anrakuji-tateno": {
+   "kind": "temple",
+   "name": "安楽寺",
+   "url": "https://temple.atawi.link/temples/anrakuji-tateno/"
+  },
+  "anzenji-iwai": {
+   "kind": "temple",
+   "name": "安全寺",
+   "url": "https://temple.atawi.link/temples/anzenji-iwai/"
+  },
+  "chikyoin-shiraha": {
+   "kind": "temple",
+   "name": "智教院",
+   "url": "https://temple.atawi.link/temples/chikyoin-shiraha/"
+  },
+  "chionsai-hitokoto": {
+   "kind": "temple",
+   "name": "智恩齋",
+   "url": "https://temple.atawi.link/temples/chionsai-hitokoto/"
+  },
+  "chosenji-fukudenakajima": {
+   "kind": "temple",
+   "name": "長泉寺",
+   "url": "https://temple.atawi.link/temples/chosenji-fukudenakajima/"
+  },
+  "chusenji-nakaizumi": {
+   "kind": "temple",
+   "name": "中泉寺",
+   "url": "https://temple.atawi.link/temples/chusenji-nakaizumi/"
+  },
+  "daienji-kamo": {
+   "kind": "temple",
+   "name": "大圓寺",
+   "url": "https://temple.atawi.link/temples/daienji-kamo/"
+  },
+  "daijoin-nakaizumi": {
+   "kind": "temple",
+   "name": "大乗院",
+   "url": "https://temple.atawi.link/temples/daijoin-nakaizumi/"
+  },
+  "daikenji-mitsuke": {
+   "kind": "temple",
+   "name": "大見寺",
+   "url": "https://temple.atawi.link/temples/daikenji-mitsuke/"
+  },
+  "daisenji-toyohamanakano": {
+   "kind": "temple",
+   "name": "大泉寺",
+   "url": "https://temple.atawi.link/temples/daisenji-toyohamanakano/"
+  },
+  "daitoryu-ohara": {
+   "kind": "shrine",
+   "name": "大頭龍神社",
+   "url": "https://shrine.atawi.link/shrines/daitoryu-ohara/"
+  },
+  "daizoji-kamiokata": {
+   "kind": "temple",
+   "name": "大蔵寺",
+   "url": "https://temple.atawi.link/temples/daizoji-kamiokata/"
+  },
+  "daizoji-tomei": {
+   "kind": "temple",
+   "name": "大蔵寺",
+   "url": "https://temple.atawi.link/temples/daizoji-tomei/"
+  },
+  "eianji-shikiji": {
+   "kind": "temple",
+   "name": "永安寺",
+   "url": "https://temple.atawi.link/temples/eianji-shikiji/"
+  },
+  "eifukuji-nishikaizuka": {
+   "kind": "temple",
+   "name": "永福寺",
+   "url": "https://temple.atawi.link/temples/eifukuji-nishikaizuka/"
+  },
+  "eimeiji-shikiji": {
+   "kind": "temple",
+   "name": "永明寺",
+   "url": "https://temple.atawi.link/temples/eimeiji-shikiji/"
+  },
+  "entsuji-ohira": {
+   "kind": "temple",
+   "name": "圓通寺",
+   "url": "https://temple.atawi.link/temples/entsuji-ohira/"
+  },
+  "fuhachiman-nakaizumi": {
+   "kind": "shrine",
+   "name": "府八幡宮",
+   "url": "https://shrine.atawi.link/shrines/fuhachiman-nakaizumi/"
+  },
+  "fukuoji-jonosaki": {
+   "kind": "temple",
+   "name": "福王寺",
+   "url": "https://temple.atawi.link/temples/fukuoji-jonosaki/"
+  },
+  "fukuoji-morimoto": {
+   "kind": "temple",
+   "name": "福王寺",
+   "url": "https://temple.atawi.link/temples/fukuoji-morimoto/"
+  },
+  "fukushoji-nishihiramatsu": {
+   "kind": "temple",
+   "name": "福生寺",
+   "url": "https://temple.atawi.link/temples/fukushoji-nishihiramatsu/"
+  },
+  "ganjoji-hirama": {
+   "kind": "temple",
+   "name": "願成寺",
+   "url": "https://temple.atawi.link/temples/ganjoji-hirama/"
+  },
+  "gasshoji-nakaizumi": {
+   "kind": "temple",
+   "name": "合掌寺",
+   "url": "https://temple.atawi.link/temples/gasshoji-nakaizumi/"
+  },
+  "genmyoji-mitsuke": {
+   "kind": "temple",
+   "name": "玄妙寺",
+   "url": "https://temple.atawi.link/temples/genmyoji-mitsuke/"
+  },
+  "gyokoji-ikeda": {
+   "kind": "temple",
+   "name": "行興寺",
+   "url": "https://temple.atawi.link/temples/gyokoji-ikeda/"
+  },
+  "gyosenji-mitsuke": {
+   "kind": "temple",
+   "name": "行泉寺",
+   "url": "https://temple.atawi.link/temples/gyosenji-mitsuke/"
+  },
+  "hachiman-higashihiramatsu": {
+   "kind": "shrine",
+   "name": "八幡神社",
+   "url": "https://shrine.atawi.link/shrines/hachiman-higashihiramatsu/"
+  },
+  "hachiman-jurojima": {
+   "kind": "shrine",
+   "name": "八幡神社",
+   "url": "https://shrine.atawi.link/shrines/hachiman-jurojima/"
+  },
+  "hachiman-kakeshita": {
+   "kind": "shrine",
+   "name": "八幡神社",
+   "url": "https://shrine.atawi.link/shrines/hachiman-kakeshita/"
+  },
+  "hachiman-kitajima": {
+   "kind": "shrine",
+   "name": "八幡神社",
+   "url": "https://shrine.atawi.link/shrines/hachiman-kitajima/"
+  },
+  "hachiman-matsunokijima": {
+   "kind": "shrine",
+   "name": "八幡神社",
+   "url": "https://shrine.atawi.link/shrines/hachiman-matsunokijima/"
+  },
+  "hachiman-minamida": {
+   "kind": "shrine",
+   "name": "八幡神社",
+   "url": "https://shrine.atawi.link/shrines/hachiman-minamida/"
+  },
+  "hachiman-mukasanishi": {
+   "kind": "shrine",
+   "name": "八幡神社",
+   "url": "https://shrine.atawi.link/shrines/hachiman-mukasanishi/"
+  },
+  "hachiman-nakano": {
+   "kind": "shrine",
+   "name": "八幡神社",
+   "url": "https://shrine.atawi.link/shrines/hachiman-nakano/"
+  },
+  "hachiman-shingai": {
+   "kind": "shrine",
+   "name": "八幡宮",
+   "url": "https://shrine.atawi.link/shrines/hachiman-shingai/"
+  },
+  "hachiman-sobeeshimoshinden": {
+   "kind": "shrine",
+   "name": "八幡神社",
+   "url": "https://shrine.atawi.link/shrines/hachiman-sobeeshimoshinden/"
+  },
+  "hachiman-teradani": {
+   "kind": "shrine",
+   "name": "八幡神社",
+   "url": "https://shrine.atawi.link/shrines/hachiman-teradani/"
+  },
+  "hachiman-toyooka": {
+   "kind": "shrine",
+   "name": "八幡神社",
+   "url": "https://shrine.atawi.link/shrines/hachiman-toyooka/"
+  },
+  "hachiman-toyooka-2": {
+   "kind": "shrine",
+   "name": "八幡神社",
+   "url": "https://shrine.atawi.link/shrines/hachiman-toyooka-2/"
+  },
+  "hachiman-yashiroyama": {
+   "kind": "shrine",
+   "name": "八幡神社",
+   "url": "https://shrine.atawi.link/shrines/hachiman-yashiroyama/"
+  },
+  "hachioji-hiebara": {
+   "kind": "shrine",
+   "name": "八王子神社",
+   "url": "https://shrine.atawi.link/shrines/hachioji-hiebara/"
+  },
+  "hachioji-maeno": {
+   "kind": "shrine",
+   "name": "東八王子神社",
+   "url": "https://shrine.atawi.link/shrines/hachioji-maeno/"
+  },
+  "hachioji-manshoji": {
+   "kind": "shrine",
+   "name": "八王子神社",
+   "url": "https://shrine.atawi.link/shrines/hachioji-manshoji/"
+  },
+  "hachioji-shimofuto": {
+   "kind": "shrine",
+   "name": "八王子神社",
+   "url": "https://shrine.atawi.link/shrines/hachioji-shimofuto/"
+  },
+  "hakusan-konodai": {
+   "kind": "shrine",
+   "name": "白山神社",
+   "url": "https://shrine.atawi.link/shrines/hakusan-konodai/"
+  },
+  "hakusan-nakaizumi": {
+   "kind": "shrine",
+   "name": "白山神社",
+   "url": "https://shrine.atawi.link/shrines/hakusan-nakaizumi/"
+  },
+  "hakusan-toyohamanakano": {
+   "kind": "shrine",
+   "name": "白山神社",
+   "url": "https://shrine.atawi.link/shrines/hakusan-toyohamanakano/"
+  },
+  "hakusan-toyooka": {
+   "kind": "shrine",
+   "name": "白山神社",
+   "url": "https://shrine.atawi.link/shrines/hakusan-toyooka/"
+  },
+  "hichisha-kusazaki": {
+   "kind": "shrine",
+   "name": "七社神社",
+   "url": "https://shrine.atawi.link/shrines/hichisha-kusazaki/"
+  },
+  "hiyoshisanno-kaminobe": {
+   "kind": "shrine",
+   "name": "日吉山王神社",
+   "url": "https://shrine.atawi.link/shrines/hiyoshisanno-kaminobe/"
+  },
+  "hofukuji-okubo": {
+   "kind": "temple",
+   "name": "保福寺",
+   "url": "https://temple.atawi.link/temples/hofukuji-okubo/"
+  },
+  "hojuin-jurojima": {
+   "kind": "temple",
+   "name": "寶珠院",
+   "url": "https://temple.atawi.link/temples/hojuin-jurojima/"
+  },
+  "hojuji-toyoshima": {
+   "kind": "temple",
+   "name": "寳珠寺",
+   "url": "https://temple.atawi.link/temples/hojuji-toyoshima/"
+  },
+  "honmyoin-iwai": {
+   "kind": "temple",
+   "name": "本妙院",
+   "url": "https://temple.atawi.link/temples/honmyoin-iwai/"
+  },
+  "honshoji-kounodai": {
+   "kind": "temple",
+   "name": "本性寺",
+   "url": "https://temple.atawi.link/temples/honshoji-kounodai/"
+  },
+  "hoonan-kaminobe": {
+   "kind": "temple",
+   "name": "法音庵",
+   "url": "https://temple.atawi.link/temples/hoonan-kaminobe/"
+  },
+  "hounji-mukasa": {
+   "kind": "temple",
+   "name": "法雲寺",
+   "url": "https://temple.atawi.link/temples/hounji-mukasa/"
+  },
+  "ibusui-mukasaaraya": {
+   "kind": "shrine",
+   "name": "飯布水神社",
+   "url": "https://shrine.atawi.link/shrines/ibusui-mukasaaraya/"
+  },
+  "ichiunsai-shimonobe": {
+   "kind": "temple",
+   "name": "一雲斉",
+   "url": "https://temple.atawi.link/temples/ichiunsai-shimonobe/"
+  },
+  "ioji-kamada": {
+   "kind": "temple",
+   "name": "醫王寺",
+   "url": "https://temple.atawi.link/temples/ioji-kamada/"
+  },
+  "ishimiya-taromashinden": {
+   "kind": "shrine",
+   "name": "石宮神社",
+   "url": "https://shrine.atawi.link/shrines/ishimiya-taromashinden/"
+  },
+  "iwata-sagisakanaka": {
+   "kind": "shrine",
+   "name": "岩田神社",
+   "url": "https://shrine.atawi.link/shrines/iwata-sagisakanaka/"
+  },
+  "iwata-tomisato": {
+   "kind": "shrine",
+   "name": "岩田神社",
+   "url": "https://shrine.atawi.link/shrines/iwata-tomisato/"
+  },
+  "iwata-toyoda": {
+   "kind": "shrine",
+   "name": "岩田神社",
+   "url": "https://shrine.atawi.link/shrines/iwata-toyoda/"
+  },
+  "jigenji-kamikandamasu": {
+   "kind": "temple",
+   "name": "慈眼寺",
+   "url": "https://temple.atawi.link/temples/jigenji-kamikandamasu/"
+  },
+  "jikeian-komaba": {
+   "kind": "temple",
+   "name": "慈慶庵",
+   "url": "https://temple.atawi.link/temples/jikeian-komaba/"
+  },
+  "jionji-mitsuke": {
+   "kind": "temple",
+   "name": "慈恩寺",
+   "url": "https://temple.atawi.link/temples/jionji-mitsuke/"
+  },
+  "jissaiji-samejima": {
+   "kind": "temple",
+   "name": "実際寺",
+   "url": "https://temple.atawi.link/temples/jissaiji-samejima/"
+  },
+  "jokoji-maeno": {
+   "kind": "temple",
+   "name": "定光寺",
+   "url": "https://temple.atawi.link/temples/jokoji-maeno/"
+  },
+  "jokoji-shikiji": {
+   "kind": "temple",
+   "name": "浄光寺",
+   "url": "https://temple.atawi.link/temples/jokoji-shikiji/"
+  },
+  "jorakuji-horinochi": {
+   "kind": "temple",
+   "name": "常楽寺",
+   "url": "https://temple.atawi.link/temples/jorakuji-horinochi/"
+  },
+  "juichisha-shimoonogo": {
+   "kind": "shrine",
+   "name": "十一社神社",
+   "url": "https://shrine.atawi.link/shrines/juichisha-shimoonogo/"
+  },
+  "jukusha-toyoda": {
+   "kind": "shrine",
+   "name": "十九社神社",
+   "url": "https://shrine.atawi.link/shrines/jukusha-toyoda/"
+  },
+  "junisha-higashiwaki": {
+   "kind": "shrine",
+   "name": "十二社神社",
+   "url": "https://shrine.atawi.link/shrines/junisha-higashiwaki/"
+  },
+  "junisha-kamionogo": {
+   "kind": "shrine",
+   "name": "十二社神社",
+   "url": "https://shrine.atawi.link/shrines/junisha-kamionogo/"
+  },
+  "jurinji-kamiohnogo": {
+   "kind": "temple",
+   "name": "十輪寺",
+   "url": "https://temple.atawi.link/temples/jurinji-kamiohnogo/"
+  },
+  "jushouji-hiruike": {
+   "kind": "temple",
+   "name": "寿正寺",
+   "url": "https://temple.atawi.link/temples/jushouji-hiruike/"
+  },
+  "jushouji-kusasaki": {
+   "kind": "temple",
+   "name": "壽正寺",
+   "url": "https://temple.atawi.link/temples/jushouji-kusasaki/"
+  },
+  "kaitaku-tobihiramatsushinden": {
+   "kind": "shrine",
+   "name": "開拓神社",
+   "url": "https://shrine.atawi.link/shrines/kaitaku-tobihiramatsushinden/"
+  },
+  "kamadashinmei-kamada": {
+   "kind": "shrine",
+   "name": "鎌田神明宮",
+   "url": "https://shrine.atawi.link/shrines/kamadashinmei-kamada/"
+  },
+  "kamitoyoshima-toyoshima": {
+   "kind": "shrine",
+   "name": "上豊島神社",
+   "url": "https://shrine.atawi.link/shrines/kamitoyoshima-toyoshima/"
+  },
+  "kamo-kamo": {
+   "kind": "shrine",
+   "name": "賀茂神社",
+   "url": "https://shrine.atawi.link/shrines/kamo-kamo/"
+  },
+  "kamo-machitomioka": {
+   "kind": "shrine",
+   "name": "加茂神社",
+   "url": "https://shrine.atawi.link/shrines/kamo-machitomioka/"
+  },
+  "kannonji-fukude": {
+   "kind": "temple",
+   "name": "観音寺",
+   "url": "https://temple.atawi.link/temples/kannonji-fukude/"
+  },
+  "kashima-iwai": {
+   "kind": "shrine",
+   "name": "鹿島神社",
+   "url": "https://shrine.atawi.link/shrines/kashima-iwai/"
+  },
+  "kasuga-kamiokada": {
+   "kind": "shrine",
+   "name": "春日神社",
+   "url": "https://shrine.atawi.link/shrines/kasuga-kamiokada/"
+  },
+  "kasuga-mukasaaraya": {
+   "kind": "shrine",
+   "name": "春日神社",
+   "url": "https://shrine.atawi.link/shrines/kasuga-mukasaaraya/"
+  },
+  "kasuga-shinde": {
+   "kind": "shrine",
+   "name": "春日神社",
+   "url": "https://shrine.atawi.link/shrines/kasuga-shinde/"
+  },
+  "kasuga-tomei": {
+   "kind": "shrine",
+   "name": "春日神社",
+   "url": "https://shrine.atawi.link/shrines/kasuga-tomei/"
+  },
+  "keiganji-mitsuke": {
+   "kind": "temple",
+   "name": "慶岩寺",
+   "url": "https://temple.atawi.link/temples/keiganji-mitsuke/"
+  },
+  "keishoji-fukude": {
+   "kind": "temple",
+   "name": "慶昌寺",
+   "url": "https://temple.atawi.link/temples/keishoji-fukude/"
+  },
+  "kenshoji-mitsuke": {
+   "kind": "temple",
+   "name": "見性寺",
+   "url": "https://temple.atawi.link/temples/kenshoji-mitsuke/"
+  },
+  "kifune-hiruike": {
+   "kind": "shrine",
+   "name": "貴布禰神社",
+   "url": "https://shrine.atawi.link/shrines/kifune-hiruike/"
+  },
+  "kifune-isshiki": {
+   "kind": "shrine",
+   "name": "貴布禰神社",
+   "url": "https://shrine.atawi.link/shrines/kifune-isshiki/"
+  },
+  "kifune-kakezuka": {
+   "kind": "shrine",
+   "name": "貴船神社",
+   "url": "https://shrine.atawi.link/shrines/kifune-kakezuka/"
+  },
+  "kifune-toyoda": {
+   "kind": "shrine",
+   "name": "木船神社",
+   "url": "https://shrine.atawi.link/shrines/kifune-toyoda/"
+  },
+  "kindaiji-tenryu": {
+   "kind": "temple",
+   "name": "金台寺",
+   "url": "https://temple.atawi.link/temples/kindaiji-tenryu/"
+  },
+  "kinzoji-toyooka": {
+   "kind": "temple",
+   "name": "金藏寺",
+   "url": "https://temple.atawi.link/temples/kinzoji-toyooka/"
+  },
+  "koganji-kusasaki": {
+   "kind": "temple",
+   "name": "光嚴寺",
+   "url": "https://temple.atawi.link/temples/koganji-kusasaki/"
+  },
+  "kokubunji-mitsuke": {
+   "kind": "temple",
+   "name": "国分寺",
+   "url": "https://temple.atawi.link/temples/kokubunji-mitsuke/"
+  },
+  "kokura-kasaume": {
+   "kind": "shrine",
+   "name": "子倉神社",
+   "url": "https://shrine.atawi.link/shrines/kokura-kasaume/"
+  },
+  "kokuseiji-kaketsuka": {
+   "kind": "temple",
+   "name": "國清寺",
+   "url": "https://temple.atawi.link/temples/kokuseiji-kaketsuka/"
+  },
+  "komaba-komaba": {
+   "kind": "shrine",
+   "name": "駒場神社",
+   "url": "https://shrine.atawi.link/shrines/komaba-komaba/"
+  },
+  "kongoji-mitsuke": {
+   "kind": "temple",
+   "name": "金剛寺",
+   "url": "https://temple.atawi.link/temples/kongoji-mitsuke/"
+  },
+  "koshuji-kaketsuka": {
+   "kind": "temple",
+   "name": "香集寺",
+   "url": "https://temple.atawi.link/temples/koshuji-kaketsuka/"
+  },
+  "kotokuji-morishita": {
+   "kind": "temple",
+   "name": "興徳寺",
+   "url": "https://temple.atawi.link/temples/kotokuji-morishita/"
+  },
+  "kumano-iwamuro": {
+   "kind": "shrine",
+   "name": "熊野神社",
+   "url": "https://shrine.atawi.link/shrines/kumano-iwamuro/"
+  },
+  "kumano-mukasatakenouchi": {
+   "kind": "shrine",
+   "name": "熊野神社",
+   "url": "https://shrine.atawi.link/shrines/kumano-mukasatakenouchi/"
+  },
+  "kumano-mushu": {
+   "kind": "shrine",
+   "name": "熊野神社",
+   "url": "https://shrine.atawi.link/shrines/kumano-mushu/"
+  },
+  "kumano-shimonobe": {
+   "kind": "shrine",
+   "name": "熊野神社",
+   "url": "https://shrine.atawi.link/shrines/kumano-shimonobe/"
+  },
+  "kumano-toyooka": {
+   "kind": "shrine",
+   "name": "熊野神社",
+   "url": "https://shrine.atawi.link/shrines/kumano-toyooka/"
+  },
+  "mannenji-kusasaki": {
+   "kind": "temple",
+   "name": "萬然寺",
+   "url": "https://temple.atawi.link/temples/mannenji-kusasaki/"
+  },
+  "manpukuji-kaketsuka-799": {
+   "kind": "temple",
+   "name": "萬福寺",
+   "url": "https://temple.atawi.link/temples/manpukuji-kaketsuka-799/"
+  },
+  "manpukuji-kaketsuka-819": {
+   "kind": "temple",
+   "name": "満福寺",
+   "url": "https://temple.atawi.link/temples/manpukuji-kaketsuka-819/"
+  },
+  "manshoji-manshoji": {
+   "kind": "temple",
+   "name": "萬勝寺",
+   "url": "https://temple.atawi.link/temples/manshoji-manshoji/"
+  },
+  "mantokuji-nakaizumi": {
+   "kind": "temple",
+   "name": "満徳寺",
+   "url": "https://temple.atawi.link/temples/mantokuji-nakaizumi/"
+  },
+  "matsuo-ebijima": {
+   "kind": "shrine",
+   "name": "松尾神社",
+   "url": "https://shrine.atawi.link/shrines/matsuo-ebijima/"
+  },
+  "matsuo-konakaze": {
+   "kind": "shrine",
+   "name": "松尾神社",
+   "url": "https://shrine.atawi.link/shrines/matsuo-konakaze/"
+  },
+  "matsuo-nagasuka": {
+   "kind": "shrine",
+   "name": "松尾神社",
+   "url": "https://shrine.atawi.link/shrines/matsuo-nagasuka/"
+  },
+  "matsuo-niijima": {
+   "kind": "shrine",
+   "name": "松尾神社",
+   "url": "https://shrine.atawi.link/shrines/matsuo-niijima/"
+  },
+  "matsuo-osakajima": {
+   "kind": "shrine",
+   "name": "松尾神社",
+   "url": "https://shrine.atawi.link/shrines/matsuo-osakajima/"
+  },
+  "matsuohachioji-maeno": {
+   "kind": "shrine",
+   "name": "松尾八王子神社",
+   "url": "https://shrine.atawi.link/shrines/matsuohachioji-maeno/"
+  },
+  "mihashira-kamo": {
+   "kind": "shrine",
+   "name": "三柱神社",
+   "url": "https://shrine.atawi.link/shrines/mihashira-kamo/"
+  },
+  "mishima-toyohama": {
+   "kind": "shrine",
+   "name": "三嶋神社",
+   "url": "https://shrine.atawi.link/shrines/mishima-toyohama/"
+  },
+  "mitsumori-manze": {
+   "kind": "shrine",
+   "name": "三森神社",
+   "url": "https://shrine.atawi.link/shrines/mitsumori-manze/"
+  },
+  "moyama-ikarugo": {
+   "kind": "shrine",
+   "name": "藻山神社",
+   "url": "https://shrine.atawi.link/shrines/moyama-ikarugo/"
+  },
+  "mushuoji-mushuo": {
+   "kind": "temple",
+   "name": "虫生寺",
+   "url": "https://temple.atawi.link/temples/mushuoji-mushuo/"
+  },
+  "myofukuji-fukude": {
+   "kind": "temple",
+   "name": "妙福寺",
+   "url": "https://temple.atawi.link/temples/myofukuji-fukude/"
+  },
+  "myohoji-ikeda": {
+   "kind": "temple",
+   "name": "妙法寺",
+   "url": "https://temple.atawi.link/temples/myohoji-ikeda/"
+  },
+  "myomanji-kaminobe": {
+   "kind": "temple",
+   "name": "妙満寺",
+   "url": "https://temple.atawi.link/temples/myomanji-kaminobe/"
+  },
+  "myooji-mitsuke": {
+   "kind": "temple",
+   "name": "明王寺",
+   "url": "https://temple.atawi.link/temples/myooji-mitsuke/"
+  },
+  "myosenji-araide": {
+   "kind": "temple",
+   "name": "明泉寺",
+   "url": "https://temple.atawi.link/temples/myosenji-araide/"
+  },
+  "nipponzan-myohoji-iwata": {
+   "kind": "temple",
+   "name": "日本山妙法寺磐田小僧伽",
+   "url": "https://temple.atawi.link/temples/nipponzan-myohoji-iwata/"
+  },
+  "nishimiya-tamakoshi": {
+   "kind": "shrine",
+   "name": "西宮神社",
+   "url": "https://shrine.atawi.link/shrines/nishimiya-tamakoshi/"
+  },
+  "nobe-kaminobe": {
+   "kind": "shrine",
+   "name": "野部神社",
+   "url": "https://shrine.atawi.link/shrines/nobe-kaminobe/"
+  },
+  "nobe-shikiji": {
+   "kind": "shrine",
+   "name": "野邊神社",
+   "url": "https://shrine.atawi.link/shrines/nobe-shikiji/"
+  },
+  "oji-myogajima": {
+   "kind": "shrine",
+   "name": "王子神社",
+   "url": "https://shrine.atawi.link/shrines/oji-myogajima/"
+  },
+  "omikunitama-mitsuke": {
+   "kind": "shrine",
+   "name": "淡海國玉神社",
+   "url": "https://shrine.atawi.link/shrines/omikunitama-mitsuke/"
+  },
+  "rendaiji-yashiroyama": {
+   "kind": "temple",
+   "name": "蓮台寺",
+   "url": "https://temple.atawi.link/temples/rendaiji-yashiroyama/"
+  },
+  "rengakuji-ryuyonakajima": {
+   "kind": "temple",
+   "name": "蓮覚寺",
+   "url": "https://temple.atawi.link/temples/rengakuji-ryuyonakajima/"
+  },
+  "renjoji-shingai": {
+   "kind": "temple",
+   "name": "連城寺",
+   "url": "https://temple.atawi.link/temples/renjoji-shingai/"
+  },
+  "renpukuji-ninomiya": {
+   "kind": "temple",
+   "name": "連福寺",
+   "url": "https://temple.atawi.link/temples/renpukuji-ninomiya/"
+  },
+  "rinpoin-nishikaizuka": {
+   "kind": "temple",
+   "name": "林宝院",
+   "url": "https://temple.atawi.link/temples/rinpoin-nishikaizuka/"
+  },
+  "rinshoji-kodateno": {
+   "kind": "temple",
+   "name": "林昌寺",
+   "url": "https://temple.atawi.link/temples/rinshoji-kodateno/"
+  },
+  "rokuon-ninomiya": {
+   "kind": "shrine",
+   "name": "鹿苑神社",
+   "url": "https://shrine.atawi.link/shrines/rokuon-ninomiya/"
+  },
+  "rokusha-fukude": {
+   "kind": "shrine",
+   "name": "六社神社",
+   "url": "https://shrine.atawi.link/shrines/rokusha-fukude/"
+  },
+  "rokusho-higashikojima": {
+   "kind": "shrine",
+   "name": "六所神社",
+   "url": "https://shrine.atawi.link/shrines/rokusho-higashikojima/"
+  },
+  "rokusho-kamada": {
+   "kind": "shrine",
+   "name": "六所神社",
+   "url": "https://shrine.atawi.link/shrines/rokusho-kamada/"
+  },
+  "rokusho-kasaume": {
+   "kind": "shrine",
+   "name": "六所神社",
+   "url": "https://shrine.atawi.link/shrines/rokusho-kasaume/"
+  },
+  "rokusho-kojima": {
+   "kind": "shrine",
+   "name": "六所神社",
+   "url": "https://shrine.atawi.link/shrines/rokusho-kojima/"
+  },
+  "rokusho-odaira": {
+   "kind": "shrine",
+   "name": "六所神社",
+   "url": "https://shrine.atawi.link/shrines/rokusho-odaira/"
+  },
+  "rokusho-senjudo": {
+   "kind": "shrine",
+   "name": "六所神社",
+   "url": "https://shrine.atawi.link/shrines/rokusho-senjudo/"
+  },
+  "rokusho-toyohama": {
+   "kind": "shrine",
+   "name": "六所神社",
+   "url": "https://shrine.atawi.link/shrines/rokusho-toyohama/"
+  },
+  "ryounan-shikiji": {
+   "kind": "temple",
+   "name": "龍雲庵",
+   "url": "https://temple.atawi.link/temples/ryounan-shikiji/"
+  },
+  "ryuhoin-ohara": {
+   "kind": "temple",
+   "name": "龍法院",
+   "url": "https://temple.atawi.link/temples/ryuhoin-ohara/"
+  },
+  "ryusenji-shiraha": {
+   "kind": "temple",
+   "name": "竜泉寺",
+   "url": "https://temple.atawi.link/temples/ryusenji-shiraha/"
+  },
+  "ryuunji-toyohama": {
+   "kind": "temple",
+   "name": "竜雲寺",
+   "url": "https://temple.atawi.link/temples/ryuunji-toyohama/"
+  },
+  "saifukuji-toyohamanakano": {
+   "kind": "temple",
+   "name": "西福寺",
+   "url": "https://temple.atawi.link/temples/saifukuji-toyohamanakano/"
+  },
+  "saiganji-nakaizumi": {
+   "kind": "temple",
+   "name": "西願寺",
+   "url": "https://temple.atawi.link/temples/saiganji-nakaizumi/"
+  },
+  "saikoji-kaketsuka": {
+   "kind": "temple",
+   "name": "西光寺",
+   "url": "https://temple.atawi.link/temples/saikoji-kaketsuka/"
+  },
+  "saikoji-matsunokijima": {
+   "kind": "temple",
+   "name": "最廣寺",
+   "url": "https://temple.atawi.link/temples/saikoji-matsunokijima/"
+  },
+  "saikoji-mitsuke": {
+   "kind": "temple",
+   "name": "西光寺",
+   "url": "https://temple.atawi.link/temples/saikoji-mitsuke/"
+  },
+  "sakamoto-shinohara": {
+   "kind": "shrine",
+   "name": "坂本神社",
+   "url": "https://shrine.atawi.link/shrines/sakamoto-shinohara/"
+  },
+  "sanno-hamabe": {
+   "kind": "shrine",
+   "name": "山王神社",
+   "url": "https://shrine.atawi.link/shrines/sanno-hamabe/"
+  },
+  "seidoin-ikeda": {
+   "kind": "temple",
+   "name": "誓渡院",
+   "url": "https://temple.atawi.link/temples/seidoin-ikeda/"
+  },
+  "seiryo-in-iwamuro": {
+   "kind": "temple",
+   "name": "清凉院",
+   "url": "https://temple.atawi.link/temples/seiryo-in-iwamuro/"
+  },
+  "sengen-kojima": {
+   "kind": "shrine",
+   "name": "浅間神社",
+   "url": "https://shrine.atawi.link/shrines/sengen-kojima/"
+  },
+  "sengen-nakaizumi": {
+   "kind": "shrine",
+   "name": "淺間神社",
+   "url": "https://shrine.atawi.link/shrines/sengen-nakaizumi/"
+  },
+  "sengen-ohara": {
+   "kind": "shrine",
+   "name": "浅間神社",
+   "url": "https://shrine.atawi.link/shrines/sengen-ohara/"
+  },
+  "senjuji-senjudou": {
+   "kind": "temple",
+   "name": "千手寺",
+   "url": "https://temple.atawi.link/temples/senjuji-senjudou/"
+  },
+  "senkoji-mitsuke": {
+   "kind": "temple",
+   "name": "宣光寺",
+   "url": "https://temple.atawi.link/temples/senkoji-mitsuke/"
+  },
+  "senryuji-kawabukuro": {
+   "kind": "temple",
+   "name": "潜龍寺",
+   "url": "https://temple.atawi.link/temples/senryuji-kawabukuro/"
+  },
+  "senshoji-iwai": {
+   "kind": "temple",
+   "name": "宣正寺",
+   "url": "https://temple.atawi.link/temples/senshoji-iwai/"
+  },
+  "senzoji-nakaizumi": {
+   "kind": "temple",
+   "name": "泉蔵寺",
+   "url": "https://temple.atawi.link/temples/senzoji-nakaizumi/"
+  },
+  "shingetsuji-ebijima": {
+   "kind": "temple",
+   "name": "心月寺",
+   "url": "https://temple.atawi.link/temples/shingetsuji-ebijima/"
+  },
+  "shinmei-fukudenakajima": {
+   "kind": "shrine",
+   "name": "神明宮",
+   "url": "https://shrine.atawi.link/shrines/shinmei-fukudenakajima/"
+  },
+  "shinmei-higashihiramatsu": {
+   "kind": "shrine",
+   "name": "神明神社",
+   "url": "https://shrine.atawi.link/shrines/shinmei-higashihiramatsu/"
+  },
+  "shinmei-mitsuke": {
+   "kind": "shrine",
+   "name": "神明神社",
+   "url": "https://shrine.atawi.link/shrines/shinmei-mitsuke/"
+  },
+  "shinmei-nakajima": {
+   "kind": "shrine",
+   "name": "神明宮",
+   "url": "https://shrine.atawi.link/shrines/shinmei-nakajima/"
+  },
+  "shinmei-seianshinden": {
+   "kind": "shrine",
+   "name": "神明神社",
+   "url": "https://shrine.atawi.link/shrines/shinmei-seianshinden/"
+  },
+  "shinmei-takagi": {
+   "kind": "shrine",
+   "name": "神明神社",
+   "url": "https://shrine.atawi.link/shrines/shinmei-takagi/"
+  },
+  "shinmei-toyooka": {
+   "kind": "shrine",
+   "name": "神明神社",
+   "url": "https://shrine.atawi.link/shrines/shinmei-toyooka/"
+  },
+  "shinnyoji-sagisaka": {
+   "kind": "temple",
+   "name": "眞如寺",
+   "url": "https://temple.atawi.link/temples/shinnyoji-sagisaka/"
+  },
+  "shinpoin-mukasa": {
+   "kind": "temple",
+   "name": "新豊院",
+   "url": "https://temple.atawi.link/temples/shinpoin-mukasa/"
+  },
+  "shinshinkyo-honbu-mitsuke": {
+   "kind": "temple",
+   "name": "神心教本部",
+   "url": "https://temple.atawi.link/temples/shinshinkyo-honbu-mitsuke/"
+  },
+  "shinshinkyo-mitsuke": {
+   "kind": "temple",
+   "name": "神心教",
+   "url": "https://temple.atawi.link/temples/shinshinkyo-mitsuke/"
+  },
+  "shiogama-nishinoshima": {
+   "kind": "shrine",
+   "name": "塩竃神社",
+   "url": "https://shrine.atawi.link/shrines/shiogama-nishinoshima/"
+  },
+  "shiraha-shirowa": {
+   "kind": "shrine",
+   "name": "白羽神社",
+   "url": "https://shrine.atawi.link/shrines/shiraha-shirowa/"
+  },
+  "shogenin-kojima": {
+   "kind": "temple",
+   "name": "正眼院",
+   "url": "https://temple.atawi.link/temples/shogenin-kojima/"
+  },
+  "shoi-ji-shimoban-no": {
+   "kind": "temple",
+   "name": "正医寺",
+   "url": "https://temple.atawi.link/temples/shoi-ji-shimoban-no/"
+  },
+  "shojuji-oka": {
+   "kind": "temple",
+   "name": "聖寿寺",
+   "url": "https://temple.atawi.link/temples/shojuji-oka/"
+  },
+  "shokoji-mitsuke": {
+   "kind": "temple",
+   "name": "省光寺",
+   "url": "https://temple.atawi.link/temples/shokoji-mitsuke/"
+  },
+  "shokoji-miyanoshiki": {
+   "kind": "temple",
+   "name": "松向寺",
+   "url": "https://temple.atawi.link/temples/shokoji-miyanoshiki/"
+  },
+  "shokoji-shirabyoshi": {
+   "kind": "temple",
+   "name": "正光寺",
+   "url": "https://temple.atawi.link/temples/shokoji-shirabyoshi/"
+  },
+  "shokyuin-mitsue": {
+   "kind": "temple",
+   "name": "松久院",
+   "url": "https://temple.atawi.link/temples/shokyuin-mitsue/"
+  },
+  "shorinji-kawabukuro": {
+   "kind": "temple",
+   "name": "松林寺",
+   "url": "https://temple.atawi.link/temples/shorinji-kawabukuro/"
+  },
+  "shuzoji-toyooka": {
+   "kind": "temple",
+   "name": "守増寺",
+   "url": "https://temple.atawi.link/temples/shuzoji-toyooka/"
+  },
+  "sojiji-minamijima": {
+   "kind": "temple",
+   "name": "宗次寺",
+   "url": "https://temple.atawi.link/temples/sojiji-minamijima/"
+  },
+  "suga-kamada": {
+   "kind": "shrine",
+   "name": "須賀神社",
+   "url": "https://shrine.atawi.link/shrines/suga-kamada/"
+  },
+  "suga-nishijima": {
+   "kind": "shrine",
+   "name": "須賀神社",
+   "url": "https://shrine.atawi.link/shrines/suga-nishijima/"
+  },
+  "suga-nishikaizuka": {
+   "kind": "shrine",
+   "name": "須賀神社",
+   "url": "https://shrine.atawi.link/shrines/suga-nishikaizuka/"
+  },
+  "suijin-machihigashihara": {
+   "kind": "shrine",
+   "name": "水神社",
+   "url": "https://shrine.atawi.link/shrines/suijin-machihigashihara/"
+  },
+  "suijin-odachino": {
+   "kind": "shrine",
+   "name": "水神社",
+   "url": "https://shrine.atawi.link/shrines/suijin-odachino/"
+  },
+  "suijin-ohara": {
+   "kind": "shrine",
+   "name": "水神社",
+   "url": "https://shrine.atawi.link/shrines/suijin-ohara/"
+  },
+  "suijin-ohara-2": {
+   "kind": "shrine",
+   "name": "水神社",
+   "url": "https://shrine.atawi.link/shrines/suijin-ohara-2/"
+  },
+  "suijin-onakaze": {
+   "kind": "shrine",
+   "name": "水神社",
+   "url": "https://shrine.atawi.link/shrines/suijin-onakaze/"
+  },
+  "suijin-sagisakakami": {
+   "kind": "shrine",
+   "name": "水神社",
+   "url": "https://shrine.atawi.link/shrines/suijin-sagisakakami/"
+  },
+  "suijin-tomisato": {
+   "kind": "shrine",
+   "name": "水神社",
+   "url": "https://shrine.atawi.link/shrines/suijin-tomisato/"
+  },
+  "suwa-hiramatsu": {
+   "kind": "shrine",
+   "name": "諏訪神社",
+   "url": "https://shrine.atawi.link/shrines/suwa-hiramatsu/"
+  },
+  "suwa-ikkanji": {
+   "kind": "shrine",
+   "name": "諏訪神社",
+   "url": "https://shrine.atawi.link/shrines/suwa-ikkanji/"
+  },
+  "suwa-kamikanzo": {
+   "kind": "shrine",
+   "name": "諏訪神社",
+   "url": "https://shrine.atawi.link/shrines/suwa-kamikanzo/"
+  },
+  "suwa-kaminobe": {
+   "kind": "shrine",
+   "name": "諏訪神社",
+   "url": "https://shrine.atawi.link/shrines/suwa-kaminobe/"
+  },
+  "suwa-mitsuya": {
+   "kind": "shrine",
+   "name": "諏訪神社",
+   "url": "https://shrine.atawi.link/shrines/suwa-mitsuya/"
+  },
+  "suwa-oatosho": {
+   "kind": "shrine",
+   "name": "諏訪神社",
+   "url": "https://shrine.atawi.link/shrines/suwa-oatosho/"
+  },
+  "suwa-shimokanzo": {
+   "kind": "shrine",
+   "name": "諏訪神社",
+   "url": "https://shrine.atawi.link/shrines/suwa-shimokanzo/"
+  },
+  "suwa-tateno": {
+   "kind": "shrine",
+   "name": "諏訪神社",
+   "url": "https://shrine.atawi.link/shrines/suwa-tateno/"
+  },
+  "suwa-tenryu": {
+   "kind": "shrine",
+   "name": "諏訪神社",
+   "url": "https://shrine.atawi.link/shrines/suwa-tenryu/"
+  },
+  "suwa-tomei": {
+   "kind": "shrine",
+   "name": "諏訪神社",
+   "url": "https://shrine.atawi.link/shrines/suwa-tomei/"
+  },
+  "suwa-tomisato": {
+   "kind": "shrine",
+   "name": "諏訪神社",
+   "url": "https://shrine.atawi.link/shrines/suwa-tomisato/"
+  },
+  "suwa-tomisato-2": {
+   "kind": "shrine",
+   "name": "諏訪神社",
+   "url": "https://shrine.atawi.link/shrines/suwa-tomisato-2/"
+  },
+  "taigetsuan-sagisaka": {
+   "kind": "temple",
+   "name": "太月庵",
+   "url": "https://temple.atawi.link/temples/taigetsuan-sagisaka/"
+  },
+  "takane-toyohama": {
+   "kind": "shrine",
+   "name": "高根神社",
+   "url": "https://shrine.atawi.link/shrines/takane-toyohama/"
+  },
+  "takane-toyooka": {
+   "kind": "shrine",
+   "name": "高根神社",
+   "url": "https://shrine.atawi.link/shrines/takane-toyooka/"
+  },
+  "takane-waguchi": {
+   "kind": "shrine",
+   "name": "高根神社",
+   "url": "https://shrine.atawi.link/shrines/takane-waguchi/"
+  },
+  "tamonji-nakano": {
+   "kind": "temple",
+   "name": "多聞寺",
+   "url": "https://temple.atawi.link/temples/tamonji-nakano/"
+  },
+  "tanaka-nakaizumi": {
+   "kind": "shrine",
+   "name": "田中神社",
+   "url": "https://shrine.atawi.link/shrines/tanaka-nakaizumi/"
+  },
+  "tenjin-higashihara": {
+   "kind": "shrine",
+   "name": "天神社",
+   "url": "https://shrine.atawi.link/shrines/tenjin-higashihara/"
+  },
+  "tenjin-kamo": {
+   "kind": "shrine",
+   "name": "天神社",
+   "url": "https://shrine.atawi.link/shrines/tenjin-kamo/"
+  },
+  "tenjin-kanzo": {
+   "kind": "shrine",
+   "name": "天神社",
+   "url": "https://shrine.atawi.link/shrines/tenjin-kanzo/"
+  },
+  "tenjin-mikano": {
+   "kind": "shrine",
+   "name": "天神社",
+   "url": "https://shrine.atawi.link/shrines/tenjin-mikano/"
+  },
+  "tenjin-minamijima": {
+   "kind": "shrine",
+   "name": "天神社",
+   "url": "https://shrine.atawi.link/shrines/tenjin-minamijima/"
+  },
+  "tenjin-samejima": {
+   "kind": "shrine",
+   "name": "天神社",
+   "url": "https://shrine.atawi.link/shrines/tenjin-samejima/"
+  },
+  "tenpaku-horinouchi": {
+   "kind": "shrine",
+   "name": "天白神社",
+   "url": "https://shrine.atawi.link/shrines/tenpaku-horinouchi/"
+  },
+  "tenpaku-ikeda": {
+   "kind": "shrine",
+   "name": "天白神社",
+   "url": "https://shrine.atawi.link/shrines/tenpaku-ikeda/"
+  },
+  "tenpaku-kojima": {
+   "kind": "shrine",
+   "name": "天白神社",
+   "url": "https://shrine.atawi.link/shrines/tenpaku-kojima/"
+  },
+  "tenryuin-kaminobe": {
+   "kind": "temple",
+   "name": "天龍院",
+   "url": "https://temple.atawi.link/temples/tenryuin-kaminobe/"
+  },
+  "tenshoji-toyoshima": {
+   "kind": "temple",
+   "name": "天正寺",
+   "url": "https://temple.atawi.link/temples/tenshoji-toyoshima/"
+  },
+  "tokuoin-mitsuke": {
+   "kind": "temple",
+   "name": "徳翁院",
+   "url": "https://temple.atawi.link/temples/tokuoin-mitsuke/"
+  },
+  "toshoji-higashikaizuka": {
+   "kind": "temple",
+   "name": "東昌寺",
+   "url": "https://temple.atawi.link/temples/toshoji-higashikaizuka/"
+  },
+  "toyodain-kegojima": {
+   "kind": "temple",
+   "name": "豊田院",
+   "url": "https://temple.atawi.link/temples/toyodain-kegojima/"
+  },
+  "tsushima-okubo": {
+   "kind": "shrine",
+   "name": "津島神社",
+   "url": "https://shrine.atawi.link/shrines/tsushima-okubo/"
+  },
+  "ukimiya-higashikaizuka": {
+   "kind": "shrine",
+   "name": "浮宮神社",
+   "url": "https://shrine.atawi.link/shrines/ukimiya-higashikaizuka/"
+  },
+  "wakamiya-godaijima": {
+   "kind": "shrine",
+   "name": "若宮神社",
+   "url": "https://shrine.atawi.link/shrines/wakamiya-godaijima/"
+  },
+  "wakamiya-ieda": {
+   "kind": "shrine",
+   "name": "若宮神社",
+   "url": "https://shrine.atawi.link/shrines/wakamiya-ieda/"
+  },
+  "wakamiyahachiman-morishita": {
+   "kind": "shrine",
+   "name": "若宮八幡宮",
+   "url": "https://shrine.atawi.link/shrines/wakamiyahachiman-morishita/"
+  },
+  "wakamiyahachiman-nobako": {
+   "kind": "shrine",
+   "name": "若宮八幡神社",
+   "url": "https://shrine.atawi.link/shrines/wakamiyahachiman-nobako/"
+  },
+  "wakamiyahachiman-shirabyoshi": {
+   "kind": "shrine",
+   "name": "若宮八幡神社",
+   "url": "https://shrine.atawi.link/shrines/wakamiyahachiman-shirabyoshi/"
+  },
+  "yagumo-kawabukuro": {
+   "kind": "shrine",
+   "name": "八雲神社",
+   "url": "https://shrine.atawi.link/shrines/yagumo-kawabukuro/"
+  },
+  "yagumo-shimookada": {
+   "kind": "shrine",
+   "name": "八雲神社",
+   "url": "https://shrine.atawi.link/shrines/yagumo-shimookada/"
+  },
+  "yamagami-tomioka": {
+   "kind": "shrine",
+   "name": "山神神社",
+   "url": "https://shrine.atawi.link/shrines/yamagami-tomioka/"
+  },
+  "yanahime-mitsuke": {
+   "kind": "shrine",
+   "name": "矢奈比賣神社",
+   "url": "https://shrine.atawi.link/shrines/yanahime-mitsuke/"
+  },
+  "yasaka-fujikanbara": {
+   "kind": "shrine",
+   "name": "八坂神社",
+   "url": "https://shrine.atawi.link/shrines/yasaka-fujikanbara/"
+  },
+  "yofukuji-shimohongo": {
+   "kind": "temple",
+   "name": "養福寺",
+   "url": "https://temple.atawi.link/temples/yofukuji-shimohongo/"
+  },
+  "yudonosan-nishihiramatsu": {
+   "kind": "shrine",
+   "name": "湯殿山神社",
+   "url": "https://shrine.atawi.link/shrines/yudonosan-nishihiramatsu/"
+  },
+  "yushoji-toyooka": {
+   "kind": "temple",
+   "name": "雄照寺",
+   "url": "https://temple.atawi.link/temples/yushoji-toyooka/"
+  },
+  "zao-oka": {
+   "kind": "shrine",
+   "name": "藏王神社",
+   "url": "https://shrine.atawi.link/shrines/zao-oka/"
+  },
+  "zendoji-mitsuke": {
+   "kind": "temple",
+   "name": "善導寺",
+   "url": "https://temple.atawi.link/temples/zendoji-mitsuke/"
+  },
+  "zenkaiji-nishijima": {
+   "kind": "temple",
+   "name": "全海寺",
+   "url": "https://temple.atawi.link/temples/zenkaiji-nishijima/"
+  },
+  "zenkyuin-kamada": {
+   "kind": "temple",
+   "name": "全久院",
+   "url": "https://temple.atawi.link/temples/zenkyuin-kamada/"
+  },
+  "zohonji-ikago": {
+   "kind": "temple",
+   "name": "蔵本寺",
+   "url": "https://temple.atawi.link/temples/zohonji-ikago/"
+  },
+  "zoritsu-higashiaraya": {
+   "kind": "shrine",
+   "name": "造立神社",
+   "url": "https://shrine.atawi.link/shrines/zoritsu-higashiaraya/"
+  },
+  "zosanji-sagisaka": {
+   "kind": "temple",
+   "name": "増参寺",
+   "url": "https://temple.atawi.link/temples/zosanji-sagisaka/"
+  }
+ },
+ "unique_surfaces": {
+  "一言観音": "chionsai-hitokoto",
+  "一雲斉": "ichiunsai-shimonobe",
+  "一雲斎": "ichiunsai-shimonobe",
+  "七社神社": "hichisha-kusazaki",
+  "万世山一雲斎": "ichiunsai-shimonobe",
+  "万然寺": "mannenji-kusasaki",
+  "三仭坊": "daijoin-nakaizumi",
+  "三嶋神社": "mishima-toyohama",
+  "三柱神社": "mihashira-kamo",
+  "三森神社": "mitsumori-manze",
+  "上豊島神社": "kamitoyoshima-toyoshima",
+  "中泉富士": "mantokuji-nakaizumi",
+  "中泉寺": "chusenji-nakaizumi",
+  "亀甲山満福寺": "manpukuji-kaketsuka-819",
+  "保福寺": "hofukuji-okubo",
+  "保福院": "hofukuji-okubo",
+  "光厳寺": "koganji-kusasaki",
+  "光嚴寺": "koganji-kusasaki",
+  "光得寺": "kotokuji-morishita",
+  "光恩山満徳寺": "mantokuji-nakaizumi",
+  "入見神社": "iwata-sagisakanaka",
+  "全久院": "zenkyuin-kamada",
+  "全明庵": "myosenji-araide",
+  "全海寺": "zenkaiji-nishijima",
+  "八幡宮": "hachiman-shingai",
+  "六社神社": "rokusha-fukude",
+  "円福山慶昌寺": "keishoji-fukude",
+  "円通山観音寺": "kannonji-fukude",
+  "円通院": "kannonji-fukude",
+  "加茂神社": "kamo-machitomioka",
+  "医王寺": "ioji-kamada",
+  "医王山大蔵寺": "daizoji-kamiokata",
+  "十一社神社": "juichisha-shimoonogo",
+  "十九社神社": "jukusha-toyoda",
+  "十輪寺": "jurinji-kamiohnogo",
+  "千手寺": "senjuji-senjudou",
+  "及光山宗次寺": "sojiji-minamijima",
+  "合掌寺": "gasshoji-nakaizumi",
+  "吉祥山多聞寺": "tamonji-nakano",
+  "善導寺": "zendoji-mitsuke",
+  "国分寺": "kokubunji-mitsuke",
+  "国清寺": "kokuseiji-kaketsuka",
+  "國清寺": "kokuseiji-kaketsuka",
+  "圓通寺": "entsuji-ohira",
+  "坂本神社": "sakamoto-shinohara",
+  "塩竃神社": "shiogama-nishinoshima",
+  "増参寺": "zosanji-sagisaka",
+  "多聞寺": "tamonji-nakano",
+  "大乗院": "daijoin-nakaizumi",
+  "大乗院三仭坊": "daijoin-nakaizumi",
+  "大円寺": "daienji-kamo",
+  "大圓寺": "daienji-kamo",
+  "大平寺": "entsuji-ohira",
+  "大月庵": "taigetsuan-sagisaka",
+  "大池山中泉寺": "chusenji-nakaizumi",
+  "大泉寺": "daisenji-toyohamanakano",
+  "大見寺": "daikenji-mitsuke",
+  "大雄山眞如寺": "shinnyoji-sagisaka",
+  "大頭龍神社": "daitoryu-ohara",
+  "天正寺": "tenshoji-toyoshima",
+  "天龍山聖寿寺": "shojuji-oka",
+  "天龍院": "tenryuin-kaminobe",
+  "太月庵": "taigetsuan-sagisaka",
+  "如意山宝珠院": "hojuin-jurojima",
+  "妙法寺": "myohoji-ikeda",
+  "妙満寺": "myomanji-kaminobe",
+  "妙福寺": "myofukuji-fukude",
+  "子倉神社": "kokura-kasaume",
+  "守増寺": "shuzoji-toyooka",
+  "安全寺": "anzenji-iwai",
+  "安楽寺": "anrakuji-tateno",
+  "宗寿寺": "sojiji-minamijima",
+  "宗次寺": "sojiji-minamijima",
+  "定光寺": "jokoji-maeno",
+  "宝喜山萬然寺": "mannenji-kusasaki",
+  "宝珠院": "hojuin-jurojima",
+  "宝用山正光寺": "shokoji-shirabyoshi",
+  "実際寺": "jissaiji-samejima",
+  "宣光寺": "senkoji-mitsuke",
+  "宣正寺": "senshoji-iwai",
+  "寳珠寺": "hojuji-toyoshima",
+  "寶珠院": "hojuin-jurojima",
+  "寿慶庵": "jikeian-komaba",
+  "寿正寺": "jushouji-hiruike",
+  "寿泉庵": "myosenji-araide",
+  "山王神社": "sanno-hamabe",
+  "山神神社": "yamagami-tomioka",
+  "岡のお寺": "shojuji-oka",
+  "岡本山弘徳寺": "kotokuji-morishita",
+  "岩井山安全寺": "anzenji-iwai",
+  "岩田大明神": "iwata-sagisakanaka",
+  "島名神社": "kamadashinmei-kamada",
+  "崗本山聖寿軒": "shojuji-oka",
+  "嶋名神社": "kamadashinmei-kamada",
+  "嶺松山金台寺": "kindaiji-tenryu",
+  "常楽寺": "jorakuji-horinochi",
+  "府八幡宮": "fuhachiman-nakaizumi",
+  "弘福密寺": "renpukuji-ninomiya",
+  "弘誓山西願寺": "saiganji-nakaizumi",
+  "得道の寺": "genmyoji-mitsuke",
+  "御殿のお寺": "chusenji-nakaizumi",
+  "徳用山福生寺": "fukushoji-nishihiramatsu",
+  "徳翁院": "tokuoin-mitsuke",
+  "心月寺": "shingetsuji-ebijima",
+  "慈恩寺": "jionji-mitsuke",
+  "慈慶庵": "jikeian-komaba",
+  "慈眼寺": "jigenji-kamikandamasu",
+  "慶岩寺": "keiganji-mitsuke",
+  "慶昌寺": "keishoji-fukude",
+  "新豊院": "shinpoin-mukasa",
+  "日吉山王神社": "hiyoshisanno-kaminobe",
+  "日本山妙法寺磐田小僧伽": "nipponzan-myohoji-iwata",
+  "日照山光明院大見寺": "daikenji-mitsuke",
+  "明光山大泉寺": "daisenji-toyohamanakano",
+  "明泉寺": "myosenji-araide",
+  "明王寺": "myooji-mitsuke",
+  "智恩斎": "chionsai-hitokoto",
+  "智恩齋": "chionsai-hitokoto",
+  "智教院": "chikyoin-shiraha",
+  "最広寺": "saikoji-matsunokijima",
+  "最廣寺": "saikoji-matsunokijima",
+  "木船神社": "kifune-toyoda",
+  "本妙院": "honmyoin-iwai",
+  "本性寺": "honshoji-kounodai",
+  "本立山玄妙寺": "genmyoji-mitsuke",
+  "東光山正醫寺": "shoi-ji-shimoban-no",
+  "東八王子神社": "hachioji-maeno",
+  "東嶺山龍雲庵": "ryounan-shikiji",
+  "東昌寺": "toshoji-higashikaizuka",
+  "東渓山最広寺": "saikoji-matsunokijima",
+  "東福山西光寺": "saikoji-mitsuke",
+  "松久院": "shokyuin-mitsue",
+  "松光山慶岩寺": "keiganji-mitsuke",
+  "松向寺": "shokoji-miyanoshiki",
+  "松向庵": "shokoji-miyanoshiki",
+  "松尾八王子神社": "matsuohachioji-maeno",
+  "松林寺": "shorinji-kawabukuro",
+  "松林山観智院国清寺": "kokuseiji-kaketsuka",
+  "松隣庵": "shorinji-kawabukuro",
+  "松龍山壽正寺": "jushouji-hiruike",
+  "松龍山寿正寺": "jushouji-hiruike",
+  "林宝院": "rinpoin-nishikaizuka",
+  "林昌寺": "rinshoji-kodateno",
+  "正光寺": "shokoji-shirabyoshi",
+  "正光庵": "shokoji-miyanoshiki",
+  "正医寺": "shoi-ji-shimoban-no",
+  "正林庵": "shorinji-kawabukuro",
+  "正眼院": "shogenin-kojima",
+  "正醫寺": "shoi-ji-shimoban-no",
+  "永安寺": "eianji-shikiji",
+  "永安禅院": "eianji-shikiji",
+  "永明寺": "eimeiji-shikiji",
+  "永福寺": "eifukuji-nishikaizuka",
+  "江東山徳翁院": "tokuoin-mitsuke",
+  "泉蔵寺": "senzoji-nakaizumi",
+  "泉藏寺": "senzoji-nakaizumi",
+  "法雲寺": "hounji-mukasa",
+  "法雲庵": "hounji-mukasa",
+  "法音庵": "hoonan-kaminobe",
+  "津島神社": "tsushima-okubo",
+  "浄光寺": "jokoji-shikiji",
+  "浮宮神社": "ukimiya-higashikaizuka",
+  "海松山心月寺": "shingetsuji-ebijima",
+  "淡海国玉神社": "omikunitama-mitsuke",
+  "淡海國玉神社": "omikunitama-mitsuke",
+  "淡海石井神": "omikunitama-mitsuke",
+  "淺間神社": "sengen-nakaizumi",
+  "清凉院": "seiryo-in-iwamuro",
+  "湯殿山神社": "yudonosan-nishihiramatsu",
+  "湯沢山光厳寺": "koganji-kusasaki",
+  "満徳寺": "mantokuji-nakaizumi",
+  "満福寺": "manpukuji-kaketsuka-819",
+  "滿福寺": "manpukuji-kaketsuka-819",
+  "潜龍寺": "senryuji-kawabukuro",
+  "潮音山龍法院": "ryuhoin-ohara",
+  "熊野の長藤の寺": "gyokoji-ikeda",
+  "特別史跡遠江国分寺跡": "kokubunji-mitsuke",
+  "玄妙寺": "genmyoji-mitsuke",
+  "玉光山称名院善導寺": "zendoji-mitsuke",
+  "玉光山稱名院善導寺": "zendoji-mitsuke",
+  "王子神社": "oji-myogajima",
+  "瑞光山長泉寺": "chosenji-fukudenakajima",
+  "瑞嶽山蓮覚寺": "rengakuji-ryuyonakajima",
+  "瑞芝山萬勝寺": "manshoji-manshoji",
+  "瑞龍山宝珠寺": "hojuji-toyoshima",
+  "田中神社": "tanaka-nakaizumi",
+  "白羽神社": "shiraha-shirowa",
+  "省光寺": "shokoji-mitsuke",
+  "眞如寺": "shinnyoji-sagisaka",
+  "真如寺": "shinnyoji-sagisaka",
+  "真如山実際寺": "jissaiji-samejima",
+  "真如庵": "shinnyoji-sagisaka",
+  "矢奈比売神社": "yanahime-mitsuke",
+  "矢奈比賣神社": "yanahime-mitsuke",
+  "石宮神社": "ishimiya-taromashinden",
+  "磐田あじさい寺": "hounji-mukasa",
+  "神心教": "shinshinkyo-mitsuke",
+  "神心教本部": "shinshinkyo-honbu-mitsuke",
+  "神谷山天龍院": "tenryuin-kaminobe",
+  "祥雲山龍泉寺": "ryusenji-shiraha",
+  "福寿山大蔵寺": "daizoji-tomei",
+  "福寿山竜雲寺": "ryuunji-toyohama",
+  "福寿山龍雲寺": "ryuunji-toyohama",
+  "福生寺": "fukushoji-nishihiramatsu",
+  "福聚山慈慶庵": "jikeian-komaba",
+  "福聚山願成寺": "ganjoji-hirama",
+  "称名山西光寺": "saikoji-kaketsuka",
+  "竜泉寺": "ryusenji-shiraha",
+  "竜雲寺": "ryuunji-toyohama",
+  "老松山宗次寺": "sojiji-minamijima",
+  "聖寿寺": "shojuji-oka",
+  "興徳寺": "kotokuji-morishita",
+  "若宮八幡宮": "wakamiyahachiman-morishita",
+  "萬世山一雲齋": "ichiunsai-shimonobe",
+  "萬勝寺": "manshoji-manshoji",
+  "萬然寺": "mannenji-kusasaki",
+  "萬福寺": "manpukuji-kaketsuka-799",
+  "萬能観音": "shoi-ji-shimoban-no",
+  "蓮台寺": "rendaiji-yashiroyama",
+  "蓮覚寺": "rengakuji-ryuyonakajima",
+  "蔵参庵": "zosanji-sagisaka",
+  "蔵本寺": "zohonji-ikago",
+  "蔵海山西福寺": "saifukuji-toyohamanakano",
+  "藏本寺": "zohonji-ikago",
+  "藏王神社": "zao-oka",
+  "藻山神社": "moyama-ikarugo",
+  "虫生寺": "mushuoji-mushuo",
+  "行泉寺": "gyosenji-mitsuke",
+  "行興寺": "gyokoji-ikeda",
+  "西宮神社": "nishimiya-tamakoshi",
+  "西福寺": "saifukuji-toyohamanakano",
+  "西願寺": "saiganji-nakaizumi",
+  "見付天神": "yanahime-mitsuke",
+  "見性寺": "kenshoji-mitsuke",
+  "観広山大乗院": "daijoin-nakaizumi",
+  "観智院": "kokuseiji-kaketsuka",
+  "観田山太月庵": "taigetsuan-sagisaka",
+  "観音寺": "kannonji-fukude",
+  "誓渡庵": "seidoin-ikeda",
+  "誓渡院": "seidoin-ikeda",
+  "豊田山松久院": "shokyuin-mitsue",
+  "豊田院": "toyodain-kegojima",
+  "貴船神社": "kifune-kakezuka",
+  "賀茂神社": "kamo-kamo",
+  "身代わり地蔵": "senkoji-mitsuke",
+  "造立神社": "zoritsu-higashiaraya",
+  "連城寺": "renjoji-shingai",
+  "連福寺": "renpukuji-ninomiya",
+  "連覚寺": "rengakuji-ryuyonakajima",
+  "道休庵": "shinnyoji-sagisaka",
+  "遠江国分寺": "kokubunji-mitsuke",
+  "遠江国分寺跡": "kokubunji-mitsuke",
+  "遠江國分寺": "kokubunji-mitsuke",
+  "遠江総社": "omikunitama-mitsuke",
+  "醫王寺": "ioji-kamada",
+  "野辺神社": "nobe-shikiji",
+  "野邊神社": "nobe-shikiji",
+  "野部神社": "nobe-kaminobe",
+  "金剛寺": "kongoji-mitsuke",
+  "金台寺": "kindaiji-tenryu",
+  "金宝山蔵本寺": "zohonji-ikago",
+  "金臺寺": "kindaiji-tenryu",
+  "金藏寺": "kinzoji-toyooka",
+  "鎌田の薬師様": "ioji-kamada",
+  "鎌田山医王寺": "ioji-kamada",
+  "鎌田山金剛院医王寺": "ioji-kamada",
+  "鎌田山金剛院醫王寺": "ioji-kamada",
+  "鎌田神明宮": "kamadashinmei-kamada",
+  "鎌田薬師": "ioji-kamada",
+  "長泉寺": "chosenji-fukudenakajima",
+  "開拓神社": "kaitaku-tobihiramatsushinden",
+  "隣浦庵": "rinpoin-nishikaizuka",
+  "雄照寺": "yushoji-toyooka",
+  "願成寺": "ganjoji-hirama",
+  "飛龍山行泉寺": "gyosenji-mitsuke",
+  "飯布水神社": "ibusui-mukasaaraya",
+  "養福寺": "yofukuji-shimohongo",
+  "香乗寺": "koshuji-kaketsuka",
+  "香集寺": "koshuji-kaketsuka",
+  "駒場神社": "komaba-komaba",
+  "鹿島神社": "kashima-iwai",
+  "鹿苑神社": "rokuon-ninomiya",
+  "龍壽山永安寺": "eianji-shikiji",
+  "龍池山明泉寺": "myosenji-araide",
+  "龍泉寺": "ryusenji-shiraha",
+  "龍法院": "ryuhoin-ohara",
+  "龍雲寺": "ryuunji-toyohama",
+  "龍雲庵": "ryounan-shikiji"
+ },
+ "ambiguous_surfaces": {
+  "八幡神社": [
+   {
+    "slug": "hachiman-kakeshita",
+    "oaza_keys": [
+     "掛下"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "hachiman-teradani",
+    "oaza_keys": [
+     "寺谷"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "hachiman-mukasanishi",
+    "oaza_keys": [
+     "向笠西"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "hachiman-nakano",
+    "oaza_keys": [
+     "中野"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "hachiman-kitajima",
+    "oaza_keys": [
+     "北島"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "hachiman-minamida",
+    "oaza_keys": [
+     "南田"
+    ],
+    "area_keys": [
+     "福田"
+    ]
+   },
+   {
+    "slug": "hachiman-higashihiramatsu",
+    "oaza_keys": [
+     "東平松"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "hachiman-toyooka",
+    "oaza_keys": [],
+    "area_keys": []
+   },
+   {
+    "slug": "hachiman-toyooka-2",
+    "oaza_keys": [],
+    "area_keys": []
+   },
+   {
+    "slug": "hachiman-jurojima",
+    "oaza_keys": [
+     "十郎島"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "hachiman-matsunokijima",
+    "oaza_keys": [
+     "松之木島"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "hachiman-sobeeshimoshinden",
+    "oaza_keys": [
+     "惣兵衛下新田"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "hachiman-yashiroyama",
+    "oaza_keys": [
+     "社山"
+    ],
+    "area_keys": []
+   }
+  ],
+  "八王子神社": [
+   {
+    "slug": "hachioji-manshoji",
+    "oaza_keys": [
+     "万正寺"
+    ],
+    "area_keys": [
+     "南部"
+    ]
+   },
+   {
+    "slug": "hachioji-hiebara",
+    "oaza_keys": [
+     "稗原"
+    ],
+    "area_keys": [
+     "御厨"
+    ]
+   },
+   {
+    "slug": "hachioji-shimofuto",
+    "oaza_keys": [
+     "下太"
+    ],
+    "area_keys": [
+     "福田"
+    ]
+   }
+  ],
+  "八雲神社": [
+   {
+    "slug": "yagumo-kawabukuro",
+    "oaza_keys": [
+     "川袋"
+    ],
+    "area_keys": [
+     "竜洋"
+    ]
+   },
+   {
+    "slug": "yagumo-shimookada",
+    "oaza_keys": [
+     "下岡田"
+    ],
+    "area_keys": [
+     "南部"
+    ]
+   }
+  ],
+  "六所神社": [
+   {
+    "slug": "rokusho-kojima",
+    "oaza_keys": [
+     "小島"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "rokusho-toyohama",
+    "oaza_keys": [
+     "豊浜"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "rokusho-kasaume",
+    "oaza_keys": [
+     "笠梅"
+    ],
+    "area_keys": [
+     "向陽"
+    ]
+   },
+   {
+    "slug": "rokusho-senjudo",
+    "oaza_keys": [
+     "千手堂"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "rokusho-kamada",
+    "oaza_keys": [
+     "鎌田"
+    ],
+    "area_keys": [
+     "御厨"
+    ]
+   },
+   {
+    "slug": "rokusho-higashikojima",
+    "oaza_keys": [
+     "東小島"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "rokusho-odaira",
+    "oaza_keys": [
+     "大平"
+    ],
+    "area_keys": [
+     "豊岡"
+    ]
+   }
+  ],
+  "十二社神社": [
+   {
+    "slug": "junisha-kamionogo",
+    "oaza_keys": [
+     "上大之郷"
+    ],
+    "area_keys": [
+     "南部"
+    ]
+   },
+   {
+    "slug": "junisha-higashiwaki",
+    "oaza_keys": [
+     "東脇"
+    ],
+    "area_keys": [
+     "御厨"
+    ]
+   }
+  ],
+  "壽正寺": [
+   {
+    "slug": "jushouji-kusasaki",
+    "oaza_keys": [
+     "草崎"
+    ],
+    "area_keys": [
+     "南部"
+    ]
+   },
+   {
+    "slug": "jushouji-hiruike",
+    "oaza_keys": [
+     "蛭池"
+    ],
+    "area_keys": [
+     "福田"
+    ]
+   }
+  ],
+  "大蔵寺": [
+   {
+    "slug": "daizoji-kamiokata",
+    "oaza_keys": [
+     "上岡田"
+    ],
+    "area_keys": [
+     "南部"
+    ]
+   },
+   {
+    "slug": "daizoji-tomei",
+    "oaza_keys": [
+     "東名"
+    ],
+    "area_keys": [
+     "豊田"
+    ]
+   }
+  ],
+  "大藏寺": [
+   {
+    "slug": "daizoji-kamiokata",
+    "oaza_keys": [
+     "上岡田"
+    ],
+    "area_keys": [
+     "南部"
+    ]
+   },
+   {
+    "slug": "daizoji-tomei",
+    "oaza_keys": [
+     "東名"
+    ],
+    "area_keys": [
+     "豊田"
+    ]
+   }
+  ],
+  "天白神社": [
+   {
+    "slug": "tenpaku-ikeda",
+    "oaza_keys": [
+     "池田"
+    ],
+    "area_keys": [
+     "豊田"
+    ]
+   },
+   {
+    "slug": "tenpaku-kojima",
+    "oaza_keys": [
+     "小島"
+    ],
+    "area_keys": [
+     "南部"
+    ]
+   },
+   {
+    "slug": "tenpaku-horinouchi",
+    "oaza_keys": [
+     "堀之内"
+    ],
+    "area_keys": [
+     "竜洋"
+    ]
+   }
+  ],
+  "天神社": [
+   {
+    "slug": "tenjin-samejima",
+    "oaza_keys": [
+     "鮫島"
+    ],
+    "area_keys": [
+     "南部"
+    ]
+   },
+   {
+    "slug": "tenjin-mikano",
+    "oaza_keys": [
+     "三ヶ野"
+    ],
+    "area_keys": [
+     "御厨"
+    ]
+   },
+   {
+    "slug": "tenjin-minamijima",
+    "oaza_keys": [
+     "南島"
+    ],
+    "area_keys": [
+     "福田"
+    ]
+   },
+   {
+    "slug": "tenjin-kamo",
+    "oaza_keys": [
+     "加茂"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "tenjin-higashihara",
+    "oaza_keys": [
+     "東原"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "tenjin-kanzo",
+    "oaza_keys": [
+     "神増"
+    ],
+    "area_keys": [
+     "豊岡"
+    ]
+   }
+  ],
+  "岩田神社": [
+   {
+    "slug": "iwata-sagisakanaka",
+    "oaza_keys": [
+     "匂坂中"
+    ],
+    "area_keys": [
+     "向陽"
+    ]
+   },
+   {
+    "slug": "iwata-toyoda",
+    "oaza_keys": [
+     "豊田"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "iwata-tomisato",
+    "oaza_keys": [
+     "富里"
+    ],
+    "area_keys": []
+   }
+  ],
+  "春日神社": [
+   {
+    "slug": "kasuga-kamiokada",
+    "oaza_keys": [
+     "上岡田"
+    ],
+    "area_keys": [
+     "南部"
+    ]
+   },
+   {
+    "slug": "kasuga-mukasaaraya",
+    "oaza_keys": [
+     "向笠新屋"
+    ],
+    "area_keys": [
+     "向陽"
+    ]
+   },
+   {
+    "slug": "kasuga-shinde",
+    "oaza_keys": [
+     "新出"
+    ],
+    "area_keys": [
+     "御厨"
+    ]
+   },
+   {
+    "slug": "kasuga-tomei",
+    "oaza_keys": [
+     "東名"
+    ],
+    "area_keys": [
+     "豊田"
+    ]
+   }
+  ],
+  "水神社": [
+   {
+    "slug": "suijin-ohara",
+    "oaza_keys": [],
+    "area_keys": []
+   },
+   {
+    "slug": "suijin-sagisakakami",
+    "oaza_keys": [
+     "匂坂上"
+    ],
+    "area_keys": [
+     "向陽"
+    ]
+   },
+   {
+    "slug": "suijin-odachino",
+    "oaza_keys": [
+     "大立野"
+    ],
+    "area_keys": [
+     "御厨"
+    ]
+   },
+   {
+    "slug": "suijin-ohara-2",
+    "oaza_keys": [],
+    "area_keys": []
+   },
+   {
+    "slug": "suijin-onakaze",
+    "oaza_keys": [
+     "大中瀬"
+    ],
+    "area_keys": [
+     "竜洋"
+    ]
+   },
+   {
+    "slug": "suijin-tomisato",
+    "oaza_keys": [
+     "富里"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "suijin-machihigashihara",
+    "oaza_keys": [
+     "東原"
+    ],
+    "area_keys": []
+   }
+  ],
+  "浅間神社": [
+   {
+    "slug": "sengen-kojima",
+    "oaza_keys": [
+     "小島"
+    ],
+    "area_keys": [
+     "南部"
+    ]
+   },
+   {
+    "slug": "sengen-ohara",
+    "oaza_keys": [
+     "大原"
+    ],
+    "area_keys": [
+     "福田"
+    ]
+   }
+  ],
+  "熊野神社": [
+   {
+    "slug": "kumano-toyooka",
+    "oaza_keys": [
+     "豊岡"
+    ],
+    "area_keys": [
+     "竜洋"
+    ]
+   },
+   {
+    "slug": "kumano-mukasatakenouchi",
+    "oaza_keys": [
+     "向笠竹之内"
+    ],
+    "area_keys": [
+     "向陽"
+    ]
+   },
+   {
+    "slug": "kumano-iwamuro",
+    "oaza_keys": [
+     "岩室"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "kumano-mushu",
+    "oaza_keys": [
+     "虫生"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "kumano-shimonobe",
+    "oaza_keys": [
+     "下野部"
+    ],
+    "area_keys": []
+   }
+  ],
+  "白山神社": [
+   {
+    "slug": "hakusan-toyohamanakano",
+    "oaza_keys": [
+     "豊浜中野",
+     "豊浜",
+     "中野"
+    ],
+    "area_keys": [
+     "福田"
+    ]
+   },
+   {
+    "slug": "hakusan-konodai",
+    "oaza_keys": [
+     "国府台"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "hakusan-nakaizumi",
+    "oaza_keys": [
+     "中泉"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "hakusan-toyooka",
+    "oaza_keys": [
+     "豊岡"
+    ],
+    "area_keys": [
+     "竜洋"
+    ]
+   }
+  ],
+  "神明宮": [
+   {
+    "slug": "shinmei-fukudenakajima",
+    "oaza_keys": [
+     "福田中島",
+     "福田"
+    ],
+    "area_keys": [
+     "福田"
+    ]
+   },
+   {
+    "slug": "shinmei-nakajima",
+    "oaza_keys": [
+     "竜洋中島",
+     "竜洋"
+    ],
+    "area_keys": [
+     "竜洋"
+    ]
+   }
+  ],
+  "神明神社": [
+   {
+    "slug": "shinmei-mitsuke",
+    "oaza_keys": [
+     "見付"
+    ],
+    "area_keys": [
+     "見付"
+    ]
+   },
+   {
+    "slug": "shinmei-seianshinden",
+    "oaza_keys": [
+     "清庵新田"
+    ],
+    "area_keys": [
+     "福田"
+    ]
+   },
+   {
+    "slug": "shinmei-toyooka",
+    "oaza_keys": [
+     "豊岡"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "shinmei-takagi",
+    "oaza_keys": [
+     "高木"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "shinmei-higashihiramatsu",
+    "oaza_keys": [
+     "東平松"
+    ],
+    "area_keys": []
+   }
+  ],
+  "福王寺": [
+   {
+    "slug": "fukuoji-jonosaki",
+    "oaza_keys": [
+     "城之崎"
+    ],
+    "area_keys": [
+     "見付"
+    ]
+   },
+   {
+    "slug": "fukuoji-morimoto",
+    "oaza_keys": [
+     "森本"
+    ],
+    "area_keys": [
+     "豊田"
+    ]
+   }
+  ],
+  "若宮八幡神社": [
+   {
+    "slug": "wakamiyahachiman-shirabyoshi",
+    "oaza_keys": [
+     "白拍子"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "wakamiyahachiman-nobako",
+    "oaza_keys": [
+     "野箱"
+    ],
+    "area_keys": []
+   }
+  ],
+  "若宮神社": [
+   {
+    "slug": "wakamiya-ieda",
+    "oaza_keys": [
+     "家田"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "wakamiya-godaijima",
+    "oaza_keys": [
+     "合代島"
+    ],
+    "area_keys": []
+   }
+  ],
+  "西光寺": [
+   {
+    "slug": "saikoji-mitsuke",
+    "oaza_keys": [
+     "見付"
+    ],
+    "area_keys": [
+     "見付"
+    ]
+   },
+   {
+    "slug": "saikoji-kaketsuka",
+    "oaza_keys": [
+     "掛塚"
+    ],
+    "area_keys": [
+     "竜洋"
+    ]
+   }
+  ],
+  "諏訪神社": [
+   {
+    "slug": "suwa-tenryu",
+    "oaza_keys": [
+     "天竜"
+    ],
+    "area_keys": [
+     "南部"
+    ]
+   },
+   {
+    "slug": "suwa-tomisato",
+    "oaza_keys": [],
+    "area_keys": []
+   },
+   {
+    "slug": "suwa-tomei",
+    "oaza_keys": [
+     "東名"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "suwa-tomisato-2",
+    "oaza_keys": [],
+    "area_keys": []
+   },
+   {
+    "slug": "suwa-tateno",
+    "oaza_keys": [
+     "立野"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "suwa-kamikanzo",
+    "oaza_keys": [
+     "上神増"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "suwa-hiramatsu",
+    "oaza_keys": [
+     "平松"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "suwa-ikkanji",
+    "oaza_keys": [
+     "壱貫地"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "suwa-mitsuya",
+    "oaza_keys": [
+     "三家"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "suwa-shimokanzo",
+    "oaza_keys": [
+     "下神増"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "suwa-oatosho",
+    "oaza_keys": [
+     "大当所"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "suwa-kaminobe",
+    "oaza_keys": [
+     "上野部"
+    ],
+    "area_keys": []
+   }
+  ],
+  "貴布禰神社": [
+   {
+    "slug": "kifune-hiruike",
+    "oaza_keys": [
+     "蛭池"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "kifune-isshiki",
+    "oaza_keys": [
+     "一色"
+    ],
+    "area_keys": []
+   }
+  ],
+  "須賀神社": [
+   {
+    "slug": "suga-nishikaizuka",
+    "oaza_keys": [
+     "西貝塚"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "suga-nishijima",
+    "oaza_keys": [
+     "西島"
+    ],
+    "area_keys": []
+   },
+   {
+    "slug": "suga-kamada",
+    "oaza_keys": [
+     "鎌田"
+    ],
+    "area_keys": []
+   }
+  ],
+  "高根神社": [
+   {
+    "slug": "takane-waguchi",
+    "oaza_keys": [
+     "和口"
+    ],
+    "area_keys": [
+     "御厨"
+    ]
+   },
+   {
+    "slug": "takane-toyohama",
+    "oaza_keys": [
+     "豊浜"
+    ],
+    "area_keys": [
+     "福田"
+    ]
+   },
+   {
+    "slug": "takane-toyooka",
+    "oaza_keys": [
+     "豊岡"
+    ],
+    "area_keys": [
+     "竜洋"
+    ]
+   }
+  ]
+ },
+ "block_forms": [
+  "事任八幡宮",
+  "秋葉山本宮秋葉神社",
+  "秋葉山本宮",
+  "清浄光寺",
+  "松尾大社",
+  "石清水八幡宮",
+  "鶴岡八幡宮",
+  "小國神社",
+  "小国神社"
+ ],
+ "external_markers": [
+  "京都",
+  "浜松",
+  "愛知",
+  "信濃",
+  "藤沢",
+  "掛川",
+  "春野",
+  "天竜区",
+  "静岡市",
+  "袋井",
+  "加賀",
+  "三河",
+  "尾張",
+  "全国の",
+  "諸国の",
+  "各地の"
+ ],
+ "page_hints": {
+  "01001-mitsuke.html": {
+   "福王寺": "fukuoji-jonosaki"
+  },
+  "01003-mikuriya.html": {
+   "神明宮": "kamadashinmei-kamada"
+  },
+  "01003-mikuriya/index.html": {
+   "神明宮": "kamadashinmei-kamada"
+  },
+  "01005-nanbu.html": {
+   "八王子神社": "hachioji-shimofuto"
+  },
+  "01006-koyo.html": {
+   "岩田神社": "iwata-sagisakanaka"
+  },
+  "01008-fukude.html": {
+   "八王子神社": "hachioji-shimofuto",
+   "神明宮": "shinmei-fukudenakajima"
+  },
+  "c009.html": {
+   "神明宮": "kamadashinmei-kamada"
+  },
+  "c019.html": {
+   "天神社": "yanahime-mitsuke"
+  },
+  "c094.html": {
+   "西光寺": "saikoji-mitsuke"
+  },
+  "f017.html": {
+   "神明宮": "shinmei-fukudenakajima"
+  },
+  "k058.html": {
+   "岩田神社": "iwata-sagisakanaka"
+  },
+  "m036.html": {
+   "西光寺": "saikoji-mitsuke"
+  },
+  "m142.html": {
+   "西光寺": "saikoji-mitsuke"
+  },
+  "m145.html": {
+   "西光寺": "saikoji-mitsuke",
+   "天神社": "yanahime-mitsuke"
+  },
+  "m147.html": {
+   "西光寺": "saikoji-mitsuke",
+   "天神社": "yanahime-mitsuke"
+  },
+  "m149.html": {
+   "天神社": "yanahime-mitsuke"
+  },
+  "m152.html": {
+   "西光寺": "saikoji-mitsuke",
+   "天神社": "yanahime-mitsuke"
+  },
+  "matsuri-fukude-rokusha.html": {
+   "神明宮": "shinmei-fukudenakajima"
+  },
+  "matsuri-fukude-yatai.html": {
+   "神明宮": "shinmei-fukudenakajima"
+  },
+  "matsuri-naritachi.html": {
+   "天白神社": "tenpaku-ikeda"
+  },
+  "n023.html": {
+   "西光寺": "saikoji-mitsuke"
+  },
+  "t024.html": {
+   "八幡神社": "hachiman-yashiroyama"
+  },
+  "u003.html": {
+   "神明宮": "kamadashinmei-kamada"
+  },
+  "u015.html": {
+   "神明宮": "kamadashinmei-kamada"
+  },
+  "u044.html": {
+   "神明宮": "kamadashinmei-kamada",
+   "西光寺": "saikoji-mitsuke"
+  },
+  "oishi-ronko/013/index.html": {
+   "神明宮": "kamadashinmei-kamada"
+  },
+  "oishi-ronko/028/index.html": {
+   "神明宮": "kamadashinmei-kamada"
+  },
+  "oishi-ronko/032/index.html": {
+   "福王寺": "fukuoji-jonosaki"
+  },
+  "oishi-ronko/055/index.html": {
+   "神明宮": "kamadashinmei-kamada"
+  },
+  "oishi-ronko/116/index.html": {
+   "八王子神社": "hachioji-shimofuto"
+  },
+  "oishi-ronko/181/index.html": {
+   "西光寺": "saikoji-mitsuke"
+  },
+  "oishi-ronko/234/index.html": {
+   "西光寺": "saikoji-mitsuke",
+   "須賀神社": "suga-nishijima"
+  },
+  "oishi-ronko/240/index.html": {
+   "西光寺": "saikoji-mitsuke"
+  }
+ }
+}

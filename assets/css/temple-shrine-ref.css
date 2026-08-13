@@ -1,0 +1,26 @@
+/* 本文中の寺社名から ATAWI TEMPLE / ATAWI SHRINE の個別ページへ渡すリンク。
+   tools/link_temple_shrine.py が挿入する <a class="ts-ref"> の見た目をここで一括管理する。
+   本文の色は変えず、点線の下線だけで「押せる語」であることを示す。 */
+
+.ts-ref {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(47, 127, 163, 0.55);
+  text-underline-offset: 0.22em;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.ts-ref:hover,
+.ts-ref:focus-visible {
+  color: #1f4f6f;
+  text-decoration-style: solid;
+  text-decoration-color: currentColor;
+}
+
+@media print {
+  .ts-ref {
+    text-decoration: none;
+  }
+}
