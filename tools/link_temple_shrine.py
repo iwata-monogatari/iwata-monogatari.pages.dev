@@ -46,6 +46,11 @@ BLOCK_TAGS = {
 COMMON_SECTION = re.compile(r'class="[^"]*\b(?:article-policy|local-property-note)\b', re.I)
 
 INJECTED = re.compile(r'<a\b[^>]*\bdata-ts-ref="[^"]*"[^>]*>(.*?)</a>', re.S)
+# 書名・史料名。『国分寺ものがたり』の「国分寺」は寺そのものではなく本の題名である
+BOOK_TITLE = re.compile(r"『[^』]{0,100}』")
+# 直後がこれらの語なら、寺社ではなく遺跡・古墳の名前（新豊院山古墳群、見性寺遺跡）
+SITE_SUFFIX = ("山古墳群", "山古墳", "古墳群", "古墳", "遺跡", "廃寺")
+H2 = re.compile(r"<h2\b", re.I)
 CSS_LINK = '<link rel="stylesheet" href="%s" data-ts-ref-css>\n' % CSS_HREF
 CSS_LINK_RE = re.compile(r'[ \t]*<link[^>]*data-ts-ref-css[^>]*>\s*\n?', re.I)
 
@@ -118,6 +123,9 @@ class Linker(object):
         self.blocked = collections.Counter()
         self.external = collections.Counter()
         self.per_target = collections.Counter()
+        self.in_book = collections.Counter()
+        self.as_site = collections.Counter()
+        self.repeat = collections.Counter()
 
     def is_external(self, html, start):
         window = html[max(0, start - 12):start]
@@ -178,6 +186,21 @@ class Linker(object):
                 'rel="noopener">%s</a>' % (t["kind"], slug, t["url"], surface))
 
     def process(self, html, rel):
+        book_spans = [(m.start(), m.end()) for m in BOOK_TITLE.finditer(html)]
+        sections = [m.start() for m in H2.finditer(html)]
+
+        def in_book(pos):
+            return any(s < pos < e for s, e in book_spans)
+
+        def section_of(pos):
+            n = 0
+            for s in sections:
+                if s < pos:
+                    n += 1
+                else:
+                    break
+            return n
+
         # 1周目: リンク候補の位置を集める
         hits = []                                   # [(start, end, surface, span_start, span_end)]
         for a, b in text_spans(html):
@@ -188,6 +211,12 @@ class Linker(object):
                     continue
                 if self.is_external(html, m.start()):
                     self.external[surface] += 1
+                    continue
+                if in_book(m.start()):
+                    self.in_book[surface] += 1
+                    continue
+                if html[m.end():m.end() + 6].startswith(SITE_SUFFIX):
+                    self.as_site[surface] += 1
                     continue
                 hits.append((m.start(), m.end(), surface, a, b))
 
@@ -204,10 +233,11 @@ class Linker(object):
                 if pos in picked:
                     decisions[idx] = picked[pos]
 
-        # 3周目: 書き出し
+        # 3周目: 書き出し。同じ寺社へは h2 セクションごとに1本だけ張る
         out = []
         cursor = 0
         n = 0
+        seen = set()
         for idx, (s, e, surface, a, b) in enumerate(hits):
             if surface in self.unique:
                 slug, how = self.unique[surface], None
@@ -219,6 +249,11 @@ class Linker(object):
                     self.unresolved[surface].append((rel, ctx))
                 self.stats["未解決"] += 1
                 continue
+            key = (section_of(s), slug)
+            if key in seen:
+                self.repeat[slug] += 1
+                continue
+            seen.add(key)
             if how:
                 self.resolved[surface].append((rel, slug, how, ctx))
             out.append(html[cursor:s])
@@ -260,7 +295,11 @@ def write_report(linker, changed, total_links, pages):
     lines.append("手作業の調整は `data/temple-shrine-links.manual.json` で行う。\n")
 
     lines.append("## リンクの付け方\n")
-    lines.append("- 本文に出てくる寺社名は、**出現するたびに毎回**リンクする（初出だけではない）。")
+    lines.append("- 同じ寺社へは **h2 セクションごとに1本だけ**リンクする。")
+    lines.append("  節が変われば張り直すので、長い論考でも「さっきの寺はどれだったか」に戻れる。")
+    lines.append("  一方、同じ節の中で同じ寺社名が何度出ても2本目以降は張らない")
+    lines.append("  （2026-08-13の初回導入時は全出現に張っており、7,366本のうち86%が")
+    lines.append("  同一ページ・同一寺社への重複だった。同日この方式へ変更した）。")
     lines.append("- リンク先は ATAWI TEMPLE / ATAWI SHRINE の**個別ページ**のみ。一覧・検索ページへは逃がさない。")
     lines.append("- 別タブで開く（`target=\"_blank\" rel=\"noopener\"`）。見た目は `assets/css/temple-shrine-ref.css` で一括管理する。")
     lines.append("- リンクを入れない場所: `<head>`、既存の `<a>` の内側、h1、`header`/`footer`/`nav`、")
@@ -270,6 +309,8 @@ def write_report(linker, changed, total_links, pages):
     lines.append("- **山号だけの別称は使わない**（「松林山」は松林山古墳、「風祭山」は地名と衝突するため）。")
     lines.append("- **長い固有名詞を優先する**（「遠江国分寺跡」を先に取り、内側の「国分寺」では切らない）。")
     lines.append("- **直前12文字に市外の地名があれば見送る**（「京都・松尾神社」「浜松・諏訪神社」「愛知県の津島神社」など）。")
+    lines.append("- **書名・史料名（『』の内側）にはリンクしない**（『国分寺ものがたり』は本の題名であって寺ではない）。")
+    lines.append("- **直後が「山古墳群」「古墳」「遺跡」「廃寺」ならリンクしない**（新豊院山古墳群は国指定史跡であって寺ではない）。")
     lines.append("- **同名の寺社は、すぐ近くに大字名があるときだけ**リンクする（「下太の八王子神社」「中野白山神社」）。")
     lines.append("  ページのどこかに地名がある、地区名が近くにある、という程度の根拠では判定しない。")
     lines.append("  近くの大字名で決まった社がページ内で1つに揃えば、同じページの残りの出現にも同じ社を当てる。")
@@ -282,6 +323,9 @@ def write_report(linker, changed, total_links, pages):
     lines.append("| リンクを挿入したページ | %d |" % changed)
     lines.append("| 挿入したリンク | %d |" % total_links)
     lines.append("| リンク先になった寺社 | %d / %d |" % (len(linker.per_target), len(linker.targets)))
+    lines.append("| 同じ節にすでに張ってあり省いた出現 | %d |" % sum(linker.repeat.values()))
+    lines.append("| 書名・史料名の中として除外 | %d |" % sum(linker.in_book.values()))
+    lines.append("| 遺跡・古墳の名前として除外 | %d |" % sum(linker.as_site.values()))
     lines.append("| 同名で特定できず見送った出現 | %d |" % linker.stats["未解決"])
     lines.append("| 市外の寺社とみて見送った出現 | %d |" % sum(linker.external.values()))
     lines.append("| より長い固有名詞の一部として除外 | %d |" % sum(linker.blocked.values()))
