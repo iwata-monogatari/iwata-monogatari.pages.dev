@@ -192,15 +192,6 @@ THEME_OVERRIDE = {
     "k010.html": ["土地の記憶"],  # 平松掛下入作（長大地名）
     "k011.html": ["町村沿革"],    # 「向陽」の誕生（昭和の合併と学校区）
 
-    # --- 竜洋（01007）特集入口（ディレクトリURL）---
-    "area/ryuyo/": ["町村沿革"],                    # 竜洋地区の歴史を歩く（特集入口）
-    "area/ryuyo/ancient-coast/": ["土地の記憶"],    # 太古の竜洋と大の浦
-    "area/ryuyo/former-villages/": ["町村沿革"],    # 掛塚・袖浦・十束
-    "area/ryuyo/history/": ["町村沿革"],            # 竜洋町の沿革
-    "area/ryuyo/local-leaders/": ["町村沿革"],      # 町や村を背負った人達
-    "area/ryuyo/medieval-early-modern/": ["土地の記憶"],  # 室町時代以降の竜洋
-    "area/ryuyo/tenryu-river/": ["土地の記憶"],     # 天竜川の変遷と竜洋
-    "area/ryuyo/timeline/": ["町村沿革"],           # 竜洋地区年表
 }
 
 START_MARK = "<!-- district-articles:start -->"

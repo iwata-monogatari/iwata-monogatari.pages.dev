@@ -1,3 +1,9 @@
+## 2026-08-15 area/ryuyo/ 配下8ページ（トップ複製）を r016〜r023 へ301統合
+
+- 経緯：SEO改修指示書（2026-08-08）の既知不具合A。`area/ryuyo/` 配下8ページはトップページの複製のまま台帳・全記事一覧に登録されていた。ユーザー指示は「本文を書く→301統合の順番で進める」。執筆前の重複チェックで、**8ページの意図されたタイトルはすべて r016〜r023 として既に本文執筆・公開済み**（タイトル完全一致。例：area/ryuyo/timeline/「竜洋地区年表 ── 天竜川・掛塚・袖浦・十束の歩み」＝ r023）と判明。書くと同一タイトルの重複記事になるため、全8ページを301統合とした。
+- 301対応：`/area/ryuyo/`→r016、`/history/`→r017、`/ancient-coast/`→r018、`/former-villages/`→r019、`/medieval-early-modern/`→r020、`/local-leaders/`→r021、`/tenryu-river/`→r022、`/timeline/`→r023（各URL末尾スラッシュあり/なし両方）。
+- 更新対象：`data/pages.json`（8件削除、1,017→1,009）、`c034.html`（竜洋欄の重複8行削除）、`scripts/build_district_articles.py`（THEME_OVERRIDEの area/ryuyo ブロック削除）、`01007-ryuyo.html`（build_district_articles.py 再実行で重複行が消え129件に）、`_redirects`（16ルール追加）、`area/` ディレクトリ削除。sitemap.xml に area/ryuyo は元々未掲載。集合知カウントは1,006本に同期。
+
 ## 2026-08-15 連載「大石浩之の磐田土地記憶録」8ページを削除（301統合）、future-themesを更新終了・アーカイブ化
 
 ユーザー指示（2026-08-15）による削除2件。
