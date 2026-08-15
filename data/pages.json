@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-08-12",
+  "updated_at": "2026-08-15",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -17283,63 +17283,6 @@
       "parent": "01008-fukude.html"
     },
     {
-      "title": "大石浩之の磐田土地記憶録｜10回シリーズ",
-      "url": "oishi-iwata-tochi-kiokuroku/",
-      "district": [],
-      "themes": [
-        "life",
-        "land-memory"
-      ],
-      "content_type": "essay",
-      "published_at": "2026-07-09",
-      "updated_at": "2026-07-10",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "土地には、価格だけでは見えない記憶がある。磐田の地名・旧道・古い家・空き家・相続した土地を、不動産と地域史の現場目線で読み解く10回完結シリーズ（目次）。"
-    },
-    {
-      "title": "なぜ不動産屋が文化なのか｜大石浩之の磐田土地記憶録 第1回",
-      "url": "oishi-iwata-tochi-kiokuroku/01/",
-      "district": [],
-      "themes": [
-        "life"
-      ],
-      "content_type": "essay",
-      "published_at": "2026-07-09",
-      "updated_at": "2026-07-09",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "磐田市で不動産と介護の現場に立つ大石浩之が、土地や古い家に残る地域の記憶を読み解く連載第1回。",
-      "parent": "oishi-iwata-tochi-kiokuroku/"
-    },
-    {
-      "title": "家康はなぜ見付ではなく中泉を選んだのか｜大石浩之の磐田土地記憶録 第2回",
-      "url": "oishi-iwata-tochi-kiokuroku/02/",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "life",
-        "land-memory"
-      ],
-      "content_type": "essay",
-      "published_at": "2026-07-10",
-      "updated_at": "2026-07-10",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "徳川家康はなぜ見付ではなく中泉を拠点として選んだのか。水・天竜川・今之浦・東海道・池田の渡し・秋鹿氏の視点から磐田の土地を読み解く連載第2回。",
-      "parent": "oishi-iwata-tochi-kiokuroku/"
-    },
-    {
       "title": "磐田の近代教育史 ── 寺子屋から、六三制の学校へ",
       "url": "c094.html",
       "district": [],
@@ -19538,27 +19481,6 @@
       "show_in_all_articles": true,
       "summary": "万里集九の紀行文、今川氏真の掛塚脱出から、江戸期の廻船業・樽木輸送、明治の港湾近代化と水難救済会、人口推移、掛塚祭りの屋台まで。天竜川河口の湊町・掛塚が「遠州の小江戸」と呼ばれた繁栄の軌跡を整理する。",
       "parent": "r037.html"
-    },
-    {
-      "title": "秋鹿氏という土地の記憶｜大石浩之の磐田土地記憶録 第3回",
-      "url": "oishi-iwata-tochi-kiokuroku/03/",
-      "district": [
-        "nakaizumi"
-      ],
-      "themes": [
-        "life",
-        "land-memory"
-      ],
-      "content_type": "essay",
-      "published_at": "2026-07-11",
-      "updated_at": "2026-07-11",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "中泉の地頭・府八幡宮の神職であった秋鹿氏。天正元年(1573)に屋敷を家康に献上し、その地は中泉御殿となった。江戸期の代官・神職、近代の遊興街・料亭「海燕楼」、そして現在の中泉歴史公園へ。土地と家の継承を考える第3回。",
-      "parent": "oishi-iwata-tochi-kiokuroku/"
     },
     {
       "title": "見付宿 ── 東海道二十八番、様々な人と物が行き交った宿場町",
@@ -24900,48 +24822,6 @@
       "level": "L1"
     },
     {
-      "title": "一言坂の撤退戦を土地から読む - 坂・沼・提灯野が家康を救った日",
-      "url": "oishi-iwata-tochi-kiokuroku/04",
-      "district": [
-        "common",
-        "toyoda"
-      ],
-      "themes": [
-        "land-memory",
-        "tokugawa",
-        "road-traffic",
-        "real-estate",
-        "reading"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-07-15",
-      "updated_at": "2026-07-15",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "一言坂の戦いを、武将の武勇伝だけでなく、坂、沼、道、提灯野、一言観音という土地の記憶から読み解きます。大石浩之の磐田土地記憶録第4回。",
-      "parent": "oishi-iwata-tochi-kiokuroku/",
-      "section": "磐田共通",
-      "topics": [
-        "一言坂",
-        "徳川家康",
-        "武田信玄",
-        "本多忠勝",
-        "提灯野",
-        "一言観音",
-        "石動の沼",
-        "土地の記憶",
-        "地形",
-        "撤退戦"
-      ],
-      "level": "L1",
-      "source_refs": [
-        "provided_md:20260709ren-071204-episode4-hitokotozaka"
-      ]
-    },
-    {
       "title": "高塚太郎平新道 ── 全財産を投じて拓いた、東海道より北の道",
       "url": "k056.html",
       "district": [
@@ -25071,153 +24951,6 @@
       "level": "L2",
       "source_refs": [
         "pdf:磐田市立大藤小学校の調査"
-      ]
-    },
-    {
-      "title": "中泉陣屋と、町を支えた二人の代官 - 伊奈忠次と林鶴梁から読む",
-      "url": "oishi-iwata-tochi-kiokuroku/05",
-      "district": [
-        "common",
-        "nakaizumi"
-      ],
-      "themes": [
-        "land-memory",
-        "tokugawa",
-        "water",
-        "disaster",
-        "real-estate",
-        "reading"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-07-16",
-      "updated_at": "2026-07-16",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "大石浩之の磐田土地記憶録 第5回。中泉陣屋を、伊奈忠次の土地整備と林鶴梁の災害救済から読み、町を支えた行政の記憶として整理する。",
-      "parent": "oishi-iwata-tochi-kiokuroku/",
-      "section": "磐田共通",
-      "topics": [
-        "中泉陣屋",
-        "中泉代官所",
-        "中泉御殿",
-        "伊奈忠次",
-        "林鶴梁",
-        "寺谷用水",
-        "恵済倉",
-        "天領",
-        "土地の記憶",
-        "不動産",
-        "災害救済"
-      ],
-      "level": "L2",
-      "source_refs": [
-        "provided_pdf:20260709-05-nakaizumi-ina-hayashi",
-        "provided_pdf:20260709-05-nakaizumi-jinya-research"
-      ]
-    },
-    {
-      "title": "見付の土地を売る前に知っておきたいこと - 間口・接道・隣地協力から読む",
-      "url": "oishi-iwata-tochi-kiokuroku/06",
-      "district": [
-        "common",
-        "mitsuke"
-      ],
-      "themes": [
-        "land-memory",
-        "post-town",
-        "road-traffic",
-        "architecture",
-        "water",
-        "real-estate",
-        "reading"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-07-20",
-      "updated_at": "2026-07-20",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "大石浩之の磐田土地記憶録 第6回。見付の宿場町に残る間口の狭い土地を、間口課税の記憶、接道、境界、隣地協力、不動産売却の実務から読み直す。",
-      "parent": "oishi-iwata-tochi-kiokuroku/",
-      "section": "磐田共通",
-      "topics": [
-        "見付",
-        "宿場町",
-        "間口",
-        "間口税",
-        "町割り",
-        "接道",
-        "境界",
-        "再建築",
-        "上下水道",
-        "隣地協力",
-        "土地売却",
-        "不動産"
-      ],
-      "level": "L2",
-      "source_refs": [
-        "local:m003.html",
-        "material:見付町戸別明細圖",
-        "web:nta-edo-tax",
-        "web:ndl-reference-maguchi-tax",
-        "web:tahara-kanejate"
-      ]
-    },
-    {
-      "title": "古い家を手放す前に、残しておきたいもの - 書類・古文書・家の記録の残し方",
-      "url": "oishi-iwata-tochi-kiokuroku/07",
-      "district": [
-        "common"
-      ],
-      "themes": [
-        "land-memory",
-        "real-estate",
-        "archives",
-        "old-photo",
-        "reading"
-      ],
-      "content_type": "reading",
-      "published_at": "2026-07-20",
-      "updated_at": "2026-07-20",
-      "date_provisional": false,
-      "status": "published",
-      "count_as_knowledge": true,
-      "show_in_updates": true,
-      "show_in_all_articles": true,
-      "summary": "大石浩之の磐田土地記憶録 第7回。権利証や検査済証など再発行できない書類、蔵や箪笥に眠る古文書・古写真、家の姿の記録。古い家を手放す前に残しておきたいものを、磐田の不動産の現場から整理する。",
-      "parent": "oishi-iwata-tochi-kiokuroku/",
-      "section": "磐田共通",
-      "topics": [
-        "古い家",
-        "実家じまい",
-        "権利証",
-        "登記済証",
-        "登記識別情報",
-        "検査済証",
-        "確認済証",
-        "境界確認書",
-        "古文書",
-        "古写真",
-        "歴史文書館",
-        "片付け",
-        "解体",
-        "相続",
-        "空き家"
-      ],
-      "level": "L2",
-      "source_refs": [
-        "local:m005.html",
-        "local:c019.html",
-        "web:iwata-city-rekishi-bunshokan",
-        "web:houmukyoku-kenrisho-pdf",
-        "web:mlit-kensazumisho-guideline",
-        "web:siryo-net-sodan",
-        "web:iwata-city-kyu-mitsuke-gakko"
       ]
     },
     {

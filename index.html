@@ -548,7 +548,6 @@ img{max-width:100%;display:block;}
       <a href="/c007.html">はじめに</a>
       <a href="/c019.html">佐口史料室</a>
       <a href="/#districts">地区から探す</a>
-      <a href="/future-themes.html">今後読み物化するテーマ</a>
       <a href="/bbs.html">掲示板</a>
     </nav>
   </div>
@@ -619,35 +618,8 @@ img{max-width:100%;display:block;}
   @media(max-width:860px){.entry-grid{grid-template-columns:1fr 1fr;}}
   @media(max-width:480px){.entry-grid{grid-template-columns:1fr;}}
 
-  /* 進捗管理ダッシュボード（今後読み物化するテーマ）バナー＋鉄路特集バナー：左右2カラム */
-  .feature-banners{max-width:1180px;margin:24px auto 0;padding:0 22px;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch;}
-  .feature-banners .roadmap-banner,
-  .feature-banners .phantom-railway-banner{margin:0;padding:0;max-width:none;}
-  .roadmap-banner__link{display:flex;flex-direction:column;height:100%;color:#fff;text-decoration:none;background:linear-gradient(135deg,#145c8f 0%,#1c78b5 55%,#3fa0c9 100%);border:1px solid #0e3f61;border-radius:16px;padding:24px 28px 22px;box-shadow:0 1px 2px rgba(0,0,0,.1),0 10px 26px rgba(20,74,112,.25);}
-  .roadmap-banner__eyebrow{font-size:11.5px;letter-spacing:.18em;color:#cdeaf9;font-weight:700;margin:0 0 8px;}
-  .roadmap-banner__link h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:clamp(20px,2.8vw,26px);line-height:1.5;color:#fff;margin:0 0 8px;letter-spacing:.02em;}
-  .roadmap-banner__lead{font-size:13.5px;color:#e4f2f9;margin:0 0 16px;line-height:1.85;}
-  .roadmap-banner__meta{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;align-items:center;margin-top:auto;}
-  .roadmap-banner__cta{display:inline-flex;align-items:center;background:#fff;color:#145c8f;font-size:13.5px;font-weight:700;border-radius:999px;padding:9px 20px;text-decoration:none;transition:.2s;}
-  .roadmap-banner__cta:hover{background:#eaf6fc;}
-  .roadmap-banner__stat{font-size:12.5px;color:#cdeaf9;}
-  @media(max-width:680px){.roadmap-banner__link{padding:20px 20px;}}
-  @media(max-width:900px){.feature-banners{grid-template-columns:1fr;}}
 </style>
-<div class="feature-banners">
-  <section class="roadmap-banner" aria-label="今後読み物化するテーマ一覧・進捗ダッシュボード">
-    <a class="roadmap-banner__link" href="/future-themes.html">
-      <p class="roadmap-banner__eyebrow">ROADMAP ｜ 進捗管理ダッシュボード</p>
-      <h2>今後読み物化する磐田のテーマ、120本を公開中</h2>
-      <p class="roadmap-banner__lead">見付宿、遠江国府、城之崎城、中泉御殿、天竜川水運、掛塚湊、旧東海道、古墳、地名、古写真――磐田物語がこれから調査・記事化していくテーマを、地区・分野・進捗・優先度で一覧できます。</p>
-      <div class="roadmap-banner__meta">
-        <span class="roadmap-banner__cta">進捗ダッシュボードを見る →</span>
-        <span class="roadmap-banner__stat">9地区・120テーマの調査計画を公開中</span>
-      </div>
-    </a>
-  </section>
-
-  <section class="phantom-railway-banner" aria-label="特集：磐田駅から消えた二つの鉄路――中泉軌道と光明電気鉄道">
+<section class="phantom-railway-banner" aria-label="特集：磐田駅から消えた二つの鉄路――中泉軌道と光明電気鉄道">
     <div class="phantom-railway-banner__link">
       <p class="phantom-railway-banner__eyebrow">FEATURE ｜ 総論・近代交通史（全8ページ公開）</p>
       <h2><a href="/c051.html">幻の鉄路、磐田駅から。</a></h2>
@@ -659,7 +631,6 @@ img{max-width:100%;display:block;}
       </div>
     </div>
   </section>
-</div>
 
 <section class="entry-section" aria-label="磐田物語の入口">
   <h2>磐田物語の入口</h2>
@@ -701,19 +672,6 @@ img{max-width:100%;display:block;}
         </a>
       </div>
 
-      <!-- 大石浩之の磐田土地記憶録バナー -->
-      <div class="side-block" style="padding:0;overflow:hidden;border-radius:14px;border:1px solid #d6e7f1;box-shadow:0 4px 12px rgba(0,0,0,0.06);">
-        <a href="/oishi-iwata-tochi-kiokuroku/" style="display:block;text-decoration:none;color:#1f3a48;background:linear-gradient(180deg,#eef7fc 0%,#f8fcfe 100%);">
-          <span style="display:block;width:100%;aspect-ratio:16/9;overflow:hidden;background:#0d1a22;">
-            <img src="/assets/images/oishi-land-memory.jpg" alt="磐田物語運営者 大石浩之" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;">
-          </span>
-          <span style="display:block;padding:14px 16px;">
-            <span style="display:block;font-size:0.8rem;margin-bottom:4px;opacity:0.8;">連載・10回シリーズ</span>
-            <strong style="display:block;font-size:1.02rem;margin-bottom:4px;color:#1f5f8b;line-height:1.4;">大石浩之の磐田土地記憶録</strong>
-            <span style="display:block;font-size:0.82rem;line-height:1.5;">土地の記憶を、不動産と地域史の現場目線で読み解く連載です。</span>
-          </span>
-        </a>
-      </div>
 
       <div class="side-block saguchi-card">
         <div class="saguchi-slideshow">
@@ -1292,7 +1250,7 @@ img{max-width:100%;display:block;}
 <section class="philosophy-band" aria-label="磐田物語の考え方">
   <div class="philosophy-band__inner">
     <h2>磐田物語の考え方</h2>
-    <div class="philosophy-band__count"><span class="num" data-knowledge-count>1022</span><span class="unit">本</span></div>
+    <div class="philosophy-band__count"><span class="num" data-knowledge-count>1014</span><span class="unit">本</span></div>
     <p>磐田の記憶を収集・整理・公開し、未来へ継承していくための地域史アーカイブです。史実と伝承を区別し、出典を明記しながら記録を積み重ねています。</p>
     <div class="philosophy-band__links">
       <a href="/c001.html">磐田物語 宣言を読む</a>
@@ -1359,9 +1317,7 @@ img{max-width:100%;display:block;}
     <a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener" style="font-weight:700;background:var(--brown-deep);color:#fff;border-color:var(--brown-deep);">介護の相談をする →</a>
   </div>
   <div class="mlinks">
-    <a href="/oishi-iwata-tochi-kiokuroku/">連載・大石浩之の磐田土地記憶録</a>
     <a href="/m005.html">古い家を手放す前に読む</a>
-    <a href="/oishi-iwata-tochi-kiokuroku/06">見付の土地を売る前に読む</a>
     <a href="/c015.html">空き家になる前に読む</a>
     <a href="/m015.html">歴史ある建物を残すという選択</a>
   </div>
@@ -1556,8 +1512,6 @@ img{max-width:100%;display:block;}
     {t:"土地と遺跡を調べる ── 埋蔵文化財と磐田",u:"/c015.html",c:"文化財",k:"埋蔵文化財 周知の埋蔵文化財包蔵地 文化財保護法 第93条 遺跡 土地 売買 建築 確認 文化財課"},
     {t:"磐田の文化財を深く読む資料集",u:"/c005.html",c:"文化財",k:"文化財だより 資料集 一次資料 旧赤松家 旧見付学校 文書館 参考文献 公式資料"},
     {t:"磐田文化財研究ノート",u:"/c018.html",c:"文化財",k:"研究ノート はがき 旧道 調査 メモ 裏づけ 参考文献 公式資料"},
-    {t:"見付の土地を売る前に知っておきたいこと",u:"/oishi-iwata-tochi-kiokuroku/06",c:"大石浩之・土地記憶録",k:"見付 土地 売却 間口 間口税 接道 境界 再建築 上下水道 隣地協力 宿場町 町割り 不動産"},
-    {t:"古い家を手放す前に、残しておきたいもの",u:"/oishi-iwata-tochi-kiokuroku/07",c:"大石浩之・土地記憶録",k:"古い家 手放す 権利証 登記済証 検査済証 古文書 古写真 歴史文書館 片付け 解体 相続 空き家 記録"},
     {t:"見付古地図散歩 第一回 ── 見付の土地と記憶",u:"/m001.html",c:"連載・見付古地図散歩",k:"見付 古地図 戸別明細図 連載 土地 記憶"},
     {t:"見付古地図散歩 第二回 ── 家並みと相続される土地",u:"/m002.html",c:"連載・見付古地図散歩",k:"見付 古地図 相続 土地 家並み 連載"},
     {t:"見付古地図散歩 第三回 ── 土地を売るとき",u:"/m003.html",c:"連載・見付古地図散歩",k:"見付 土地 売る 接道 再建築 境界 上下水道 連載"},

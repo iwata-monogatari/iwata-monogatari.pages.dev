@@ -54,7 +54,6 @@ PINNED_URLS = [
     "/s023.html",
     "/s024.html",
     "/s025.html",
-    "/oishi-iwata-tochi-kiokuroku/05",
 ]
 
 

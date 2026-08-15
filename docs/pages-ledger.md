@@ -1,3 +1,22 @@
+## 2026-08-15 連載「大石浩之の磐田土地記憶録」8ページを削除（301統合）、future-themesを更新終了・アーカイブ化
+
+ユーザー指示（2026-08-15）による削除2件。
+
+### 大石浩之の磐田土地記憶録（oishi-iwata-tochi-kiokuroku/ 全8ページ）を削除
+
+- 指示：「削除、もう更新しない」。アーカイブ指定なしのためファイルごと削除し、既存の統合手順（r001前例）に倣いURL単位で301統合した。
+- 301先：目次と第1回→`/oishi-ronko/`、第2回→`/n052`（中泉御殿）、第3回→`/n073`（秋鹿家）、第4回→`/t003`（一言坂の戦い）、第5回→`/n020`（中泉代官所）、第6回→`/m003`（見付古地図散歩・土地を売るとき）、第7回→`/m005`（同・古い家を手放す前に）。各URLは末尾スラッシュあり/なしの両方を登録。
+- 更新対象：`data/pages.json`（8件削除、1,025→1,017）、`data/new-articles.json`（8件削除）、`data/new-articles-discovered.json`（5件削除）、`sitemap.xml`（8URL削除）、`c034.html`（共通欄の連載9行削除）、`01001-mitsuke.html`・`01002-nakaizumi.html`・`01004-toyoda.html`（一覧行削除・col-no振り直し）、`index.html`（サイドバナー・MEMORY欄リンク2本・検索データ2行を削除）、`n052.html`・`n073.html`・`c126.html`（本文内リンクを文意を保って除去。c126は`/n020.html`へ差し替え）、`_redirects`（16ルール追加）。
+- release guard の保護URL `/oishi-iwata-tochi-kiokuroku/05` を `scripts/release_guard.py` と `docs/release-guard.md` から除去した。
+
+### future-themes（今後読み物化するテーマ・進捗ダッシュボード）を更新終了・アーカイブ化
+
+- 指示：「削除、もう更新しない、アーカイブ化」。r001前例に倣い、全文スナップショットを `archive/future-themes.html`（noindex・冒頭にアーカイブ告知、`_headers` の `/archive/*` X-Robots-Tag も適用）として保存し、`future-themes.html` 本体は削除。`/future-themes`・`/future-themes.html` は後継にあたる `c129.html`（磐田物語 空白地図）へ301。
+- 全ページ静的ヘッダーのナビリンク127本、記事末尾「関連して読む」の同リンク93本を一括除去。`partials/header.html`（middleware配信の実体）からも除去。
+- `index.html` のROADMAPバナー（feature-banners 2カラム）を撤去し、鉄路特集バナーを単独表示へ戻した。`c129.html` の言及はアーカイブへの案内に書き換え（アーカイブへの唯一の内部リンク）。
+- `data/future-themes.json` はアーカイブページが参照するため凍結のまま残置。
+- 残課題：`area/ryuyo/` 配下8ページ（トップ複製）にも旧ナビの future-themes リンクが残るが、同8ページは本文執筆による作り直し対象のため、そこで解消する。
+
 ## 2026-07-17 n070 新規作成：磐田駅に残る旧中泉駅の記憶
 
 
