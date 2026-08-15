@@ -27,6 +27,21 @@ def read_text(path):
     return path.read_text(encoding="utf-8-sig", errors="ignore")
 
 
+def ledger_key_url(url):
+    """台帳照合用のURL正規化。/m175 と /m175.html と /m175/ を同一記事とみなす。
+
+    2026-08-15 に canonical を拡張子なしへ統一した際、canonical 由来の
+    発見URL（/m175）が台帳の既存URL（/m175.html）と別記事扱いになり、
+    既存記事が新着へ重複再登録される事故が起きたための対策。
+    表示用の url は変えず、重複判定のキーにのみ使う。"""
+    u = str(url or "").strip()
+    if u.endswith(".html"):
+        u = u[: -len(".html")]
+    if len(u) > 1 and u.endswith("/"):
+        u = u[:-1]
+    return u
+
+
 def load_articles():
     data = load_json_array(DATA_PATH)
     data.extend(discover_articles())
@@ -44,10 +59,11 @@ def load_articles():
         url = str(item.get("url", "")).strip()
         if not (date and category and title and url):
             continue
-        # (date, url) で重複排除する。同じ記事が再スキャンで別表記の
-        # category/title を持って再登録され、二重掲載になるのを防ぐため。
+        # (date, 正規化url) で重複排除する。同じ記事が再スキャンで別表記の
+        # category/title/URL形式（.html有無）を持って再登録され、
+        # 二重掲載になるのを防ぐため。
         # 既存分を先に処理するため、手作業で整えた表記が優先して残る。
-        key = (date, url)
+        key = (date, ledger_key_url(url))
         if key in seen:
             continue
         seen.add(key)
@@ -66,9 +82,9 @@ def load_articles():
             }
         )
 
-    known_urls = {str(item.get("url", "")).strip() for item in load_json_array(DATA_PATH)}
+    known_urls = {ledger_key_url(item.get("url", "")) for item in load_json_array(DATA_PATH)}
     for item in normalized:
-        if item["url"] not in known_urls:
+        if ledger_key_url(item["url"]) not in known_urls:
             item["published_at"] = now_iso
 
     normalized.sort(key=lambda item: (item["date"], item["published_at"]), reverse=True)
@@ -332,7 +348,7 @@ def index_articles(articles):
     seen_urls = set()
     deduped = []
     for item in articles:
-        url = item["url"]
+        url = ledger_key_url(item["url"])
         if url in seen_urls:
             continue
         seen_urls.add(url)
