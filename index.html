@@ -548,6 +548,7 @@ img{max-width:100%;display:block;}
       <a href="/c007.html">はじめに</a>
       <a href="/c019.html">佐口史料室</a>
       <a href="/#districts">地区から探す</a>
+      <a href="/c137.html">テーマから調べる</a>
       <a href="/bbs.html">掲示板</a>
     </nav>
   </div>
@@ -566,12 +567,13 @@ img{max-width:100%;display:block;}
       <svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 10-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1114 9.5 4.49 4.49 0 019.5 14z"/></svg>
     </div>
     <p class="search-lead-soft">気になる地名・人物・出来事・文化財名から探せます。</p>
-    <div class="chips chips--soft" id="chips" aria-label="テーマから探す">
-      <span class="chip" data-q="見付宿">見付宿</span><span class="chip" data-q="中泉軌道">中泉軌道</span><span class="chip" data-q="光明電気鉄道">光明電気鉄道</span>
-      <span class="chip" data-q="掛塚湊">掛塚湊</span><span class="chip" data-q="古地図">古地図</span><span class="chip" data-q="祭り">祭り・屋台</span>
+    <div class="chips chips--soft" id="chips" aria-label="よく検索されるキーワード">
+      <span class="chip" data-q="見付宿">見付宿</span><span class="chip" data-q="光明電気鉄道">光明電気鉄道</span><span class="chip" data-q="祇園祭">見付祇園祭</span>
+      <span class="chip" data-q="掛塚湊">掛塚湊</span><span class="chip" data-q="古地図">昔の地図</span><span class="chip" data-q="祭り">祭り・屋台</span>
       <span class="chip" data-q="学校">学校の歴史</span><span class="chip" data-q="戦争">戦争の記憶</span><span class="chip" data-q="地名">地名の由来</span>
-      <span class="chip" data-q="空き家">空き家と土地の記憶</span>
+      <span class="chip" data-q="古墳">古墳</span><span class="chip" data-q="空き家">空き家と土地の記憶</span>
     </div>
+    <p class="hero-stat" style="text-align:center;margin:16px 0 0;font-size:13.5px;color:var(--ink-soft);letter-spacing:.03em;">磐田の集合知（公開記事）<strong data-knowledge-count style="color:var(--brown-deep);font-size:1.15em;">1014</strong> 本 ｜ 特集・連載・9地区・14のテーマハブ</p>
   </div>
 </section>
 
@@ -637,8 +639,71 @@ img{max-width:100%;display:block;}
   <div class="entry-grid">
     <a class="entry-card entry-card--beginner" href="/c007.html"><h3>初めての方へ</h3><p>磐田物語の考え方と読み方を紹介します。</p></a>
     <a class="entry-card" href="#districts"><h3>地区から探す</h3><p>見付・中泉・竜洋・福田・豊田など、地域ごとに記事をたどれます。</p></a>
-    <a class="entry-card" href="/theme.html"><h3>テーマから探す</h3><p>交通史、学校、祭り、戦争の記憶、地名、古写真などから探せます。</p></a>
+    <a class="entry-card" href="/c137.html"><h3>テーマから探す</h3><p>鉄道・学校・祭り・地名・人物など、14のテーマハブから探せます。</p></a>
     <a class="entry-card" href="/c019.html"><h3>佐口史料室を見る</h3><p>引札・浮世絵・古地図・絵葉書・古写真などの史料を公開しています。</p></a>
+  </div>
+</section>
+
+<style>
+  .theme-hub-section{max-width:1180px;margin:30px auto 0;padding:0 22px;}
+  .theme-hub-section h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:22px;margin:0 0 6px;color:var(--ink);}
+  .theme-hub-section .thx-lead{font-size:13px;color:var(--ink-soft);margin:0 0 14px;line-height:1.8;}
+  .theme-hub-featured{display:block;background:linear-gradient(135deg,#1f3a48 0%,#2f6079 60%,#3a7a99 100%);border:1px solid #16262f;border-radius:14px;padding:18px 22px;margin:0 0 14px;text-decoration:none;color:#fdfaf2;box-shadow:0 1px 2px rgba(0,0,0,.1),0 10px 26px rgba(20,60,80,.22);transition:.2s;}
+  .theme-hub-featured:hover{transform:translateY(-2px);}
+  .theme-hub-featured .thf-eyebrow{display:block;font-size:11.5px;letter-spacing:.18em;color:#9fd4e8;font-weight:700;margin:0 0 6px;}
+  .theme-hub-featured .thf-title{display:block;font-family:"Shippori Mincho",serif;font-weight:700;font-size:clamp(17px,2.4vw,21px);line-height:1.55;}
+  .theme-hub-featured .thf-desc{display:block;font-size:12.5px;color:#cfe4ee;margin-top:6px;line-height:1.7;}
+  .theme-hub-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:10px;}
+  .theme-hub-grid a{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 13px;text-decoration:none;color:var(--ink);transition:.2s;box-shadow:var(--shadow);}
+  .theme-hub-grid a:hover{transform:translateY(-2px);border-color:var(--brown);}
+  .theme-hub-grid b{display:block;font-family:"Shippori Mincho",serif;font-size:14.5px;color:#1f5f8b;margin-bottom:3px;}
+  .theme-hub-grid span{display:block;font-size:11.5px;color:var(--ink-soft);line-height:1.6;}
+  .popular-section{max-width:1180px;margin:28px auto 0;padding:0 22px;}
+  .popular-section h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:22px;margin:0 0 6px;color:var(--ink);}
+  .popular-section .pop-lead{font-size:12.5px;color:var(--ink-soft);margin:0 0 12px;}
+  .popular-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;}
+  .popular-grid a{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-decoration:none;color:var(--ink);font-size:13px;line-height:1.65;transition:.2s;box-shadow:var(--shadow);}
+  .popular-grid a:hover{transform:translateY(-2px);border-color:var(--brown);}
+  .popular-grid em{font-style:normal;display:block;font-size:11px;color:var(--brown);margin-bottom:3px;letter-spacing:.05em;}
+</style>
+<section class="theme-hub-section" aria-label="テーマから調べる">
+  <h2>テーマから調べる</h2>
+  <p class="thx-lead">磐田の歴史を、鉄道・学校・祭り・地名などのテーマごとに束ねた「入口ページ」です。各ハブから個別記事へ進めます。</p>
+  <a class="theme-hub-featured" href="/c137.html">
+    <span class="thf-eyebrow">HUB ｜ いちばん上の入口</span>
+    <span class="thf-title">磐田市の歴史 ── 2万年の歩みを、テーマと地区から読む</span>
+    <span class="thf-desc">国府のまち・宿場のまち・駅のまち。磐田の歴史の骨格をまとめ、下の14のテーマハブと9地区、公開1,000本超の記事へ案内します。</span>
+  </a>
+  <div class="theme-hub-grid">
+    <a href="/c130.html"><b>鉄道史</b><span>磐田駅・廃線・天浜線</span></a>
+    <a href="/c094.html"><b>学校史</b><span>寺子屋から小中高まで</span></a>
+    <a href="/c016.html"><b>祭り</b><span>裸祭・祇園祭・掛塚まつり</span></a>
+    <a href="/c009.html"><b>地名・町名の由来</b><span>大字さくいん・旧村名</span></a>
+    <a href="/c014.html"><b>旧村と合併</b><span>まちの成り立ち連載</span></a>
+    <a href="/c012.html"><b>古墳・遺跡</b><span>国指定史跡と埋蔵文化財</span></a>
+    <a href="/c098.html"><b>産業史</b><span>茶・煙草・織物・商店街</span></a>
+    <a href="/h001.html"><b>戦争の記憶</b><span>市民39人の体験記</span></a>
+    <a href="/c131.html"><b>古写真・古地図</b><span>昔の磐田を見る</span></a>
+    <a href="/c132.html"><b>人物</b><span>金原明善・丘浅次郎ほか</span></a>
+    <a href="/c133.html"><b>神社</b><span>総社・見付天神・府八幡宮</span></a>
+    <a href="/c134.html"><b>寺院</b><span>遠江国分寺から寺子屋まで</span></a>
+    <a href="/c135.html"><b>消えた建物</b><span>あの場所には昔、何が</span></a>
+    <a href="/c136.html"><b>道と橋</b><span>東海道・渡船・天竜川</span></a>
+  </div>
+</section>
+
+<section class="popular-section" aria-label="検索でよく読まれている記事">
+  <h2>検索でよく読まれている</h2>
+  <p class="pop-lead">検索エンジン経由でアクセスの多い記事です（Search Console 実測・直近3か月）。</p>
+  <div class="popular-grid">
+    <a href="/c055.html"><em>鉄道</em>光明電鉄19駅一覧 ── 路線図と現存する痕跡</a>
+    <a href="/m127.html"><em>祭り</em>見付祇園祭 ── 光と音の夏祭り</a>
+    <a href="/c027.html"><em>映画</em>映画『お別れの歌』と磐田の風景（ロケ地）</a>
+    <a href="/c004.html"><em>地図</em>磐田タイムトラベル地図 ── 昔の地図と重ねる</a>
+    <a href="/c116.html"><em>沿革</em>磐田郡役所と郡制 ──「磐田郡」があった時代</a>
+    <a href="/n051.html"><em>鉄道</em>なぜ見付ではなく中泉に駅ができたのか</a>
+    <a href="/k007.html"><em>用水</em>寺谷用水の開削 ── 遠州最古の用水路</a>
+    <a href="/f035.html"><em>江戸</em>五人組制度の起源と福田村の編成</a>
   </div>
 </section>
 

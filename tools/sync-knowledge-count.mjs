@@ -100,7 +100,7 @@ async function updateDisplayFile(filePath, count) {
     return { path: filePath, changed: false, found: false };
   }
 
-  const pattern = /(data-knowledge-count[^>]*>)\s*\d+\s*(<)/;
+  const pattern = /(data-knowledge-count[^>]*>)\s*\d+\s*(<)/g;
   if (!pattern.test(text)) {
     return { path: filePath, changed: false, found: false };
   }
