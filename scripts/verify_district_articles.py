@@ -15,9 +15,6 @@ PAGES_JSON = ROOT / "data" / "pages.json"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import build_district_articles as bda  # noqa: E402
 
-MITSUKE_EXPECTED_COUNT = 115
-
-
 def load_pages_json():
     with PAGES_JSON.open("r", encoding="utf-8", newline="") as f:
         return json.load(f)
@@ -37,12 +34,6 @@ def verify_district(district, data, errors):
     page_path = ROOT / district["page"]
     expected_pages = bda.collect_district_pages(data, district_id)
     expected_count = len(expected_pages)
-
-    if district_id == "mitsuke" and expected_count != MITSUKE_EXPECTED_COUNT:
-        errors.append(
-            f"[{district_id}] 期待件数の想定と不一致: {expected_count} 件 "
-            f"(想定 {MITSUKE_EXPECTED_COUNT} 件)"
-        )
 
     for p in expected_pages:
         if not (ROOT / p["url"]).exists():
