@@ -16160,23 +16160,29 @@
       "updated_at": "2026-07-10"
     },
     {
-      "title": "今之浦が磐田の都市形成に与えた影響 ── 低地の空白が、新しい市街地に変わるまで",
+      "title": "今之浦一～五丁目――低湿地から新市街地への変化",
       "url": "s022.html",
       "district": [
         "nanbu"
       ],
       "themes": [
-        "reading"
+        "place-name",
+        "land-memory",
+        "urban-history"
       ],
       "content_type": "reading",
       "published_at": "2026-07-05",
       "date_provisional": false,
       "status": "published",
-      "summary": "見付・中泉という台地上の中心地に挟まれ長く空白だった今之浦の低地。1966年からの区画整理が新しい市街地と結節点をどう生んだかを読む。",
+      "summary": "今之浦一丁目から五丁目が、低湿地・水田から排水、河川改良、土地区画整理を経て新市街地になるまでを読む。",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "南部"
+      "section": "南部",
+      "updated_at": "2026-08-18",
+      "topics": ["今之浦", "一丁目", "二丁目", "三丁目", "四丁目", "五丁目", "低湿地", "土地区画整理"],
+      "level": "L2",
+      "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:56〜58頁（2026-08-18頁画像照合）", "official:磐田市『令和7年版 磐田市統計書』"]
     },
     {
       "title": "旧東海道の一里塚・松並木・木戸 ── 1420本から370本へ",
@@ -27502,6 +27508,37 @@
         "book:磐田ことはじめ 第一編 町内の風土記:24〜25頁（2026-08-18頁画像照合）",
         "official:磐田市『土地区画整理事業 施行状況』富士見台地区"
       ]
+    },
+    {
+      "title": "中泉旧市街の町名変遷――中央町・七軒町・田町・石原町など",
+      "url": "n092.html",
+      "district": ["nakaizumi"],
+      "themes": ["place-name", "village-history", "land-memory"],
+      "content_type": "article", "published_at": "2026-08-18", "updated_at": "2026-08-18", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "中泉",
+      "topics": ["中泉", "中央町", "七軒町", "田町", "石原町", "昭和23年", "町名変遷"], "level": "L2",
+      "summary": "旧中泉の通称、昭和23年前後の町名整理、現在の自治会名を分け、中央町・七軒町・田町・石原町を横断して読む。",
+      "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:59〜90頁（2026-08-18頁画像照合）", "official:磐田市『令和7年版 磐田市統計書』"]
+    },
+    {
+      "title": "磐田寺はどこにあったのか――増参寺説と寺谷廃寺説",
+      "url": "k060.html", "district": ["koyo"], "themes": ["temple-history", "archaeology", "oral-history"], "content_type": "article", "published_at": "2026-08-18", "updated_at": "2026-08-18", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "向陽",
+      "topics": ["磐田寺", "増参寺", "寺谷廃寺", "大宝院廃寺", "遠江国分寺", "日本霊異記"], "level": "L2",
+      "summary": "増参寺の寺伝と寺谷廃寺の考古資料を分け、大宝院廃寺・遠江国分寺も含めて磐田寺の候補地を比較する。",
+      "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:97〜104頁（2026-08-18頁画像照合）", "official:磐田市文化財課『いわた文化財だより』第213号"]
+    },
+    {
+      "title": "磐田寺七重塔と「舎利を握って生まれた娘」の伝承",
+      "url": "k061.html", "district": ["koyo"], "themes": ["temple-history", "oral-history", "ancient-history"], "content_type": "article", "published_at": "2026-08-18", "updated_at": "2026-08-18", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "向陽",
+      "topics": ["磐田寺", "七重塔", "仏舎利", "丹生直弟上", "日本霊異記", "伝承"], "level": "L2",
+      "summary": "左手に仏舎利を握って生まれた娘と磐田寺七重塔の説話を、原典紹介、地域伝承、歴史的解釈に分けて読む。",
+      "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:98〜99頁（2026-08-18頁画像照合）", "official:磐田市文化財課『いわた文化財だより』第213号"]
+    },
+    {
+      "title": "明治の豊田橋――匂坂から天竜川を渡った民間有料橋",
+      "url": "k062.html", "district": ["koyo"], "themes": ["bridge", "modern-history", "archives"], "content_type": "article", "published_at": "2026-08-18", "updated_at": "2026-08-18", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "向陽",
+      "topics": ["豊田橋", "匂坂", "天竜川", "民間有料橋", "橋銭", "高塚太郎平新道", "佐口史料"], "level": "L2",
+      "summary": "明治15年の仕様帳、明治16年の架設略面、匂坂へ続く新道から、民間有料橋・豊田橋の役割と未確認点を読む。",
+      "source_refs": ["private-archive:佐口行正氏所蔵『遠江国豊田橋架設略面』『豊田橋架設仕様帳』", "internal:k056.html, t006.html, r039.html"]
     }
   ]
 }
