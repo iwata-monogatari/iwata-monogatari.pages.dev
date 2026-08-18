@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-08-15",
+  "updated_at": "2026-08-18",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -27316,6 +27316,187 @@
       "source_refs": [
         "book:東海道遠州見付宿:250〜266頁（2026-08-12全頁画像照合）",
         "primary-via-book:宿方文書・助郷帳・水野家日記・駅逓関係文書（原本未照合）"
+      ]
+    },
+    {
+      "title": "大池事件 ── 水をめぐる二之宮と下手六村の争い",
+      "url": "n089.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "water",
+        "land-memory",
+        "village-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-18",
+      "updated_at": "2026-08-18",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉",
+      "topics": [
+        "大池",
+        "二之宮",
+        "水利紛争",
+        "下手六村",
+        "板堰",
+        "量水標石",
+        "松岡萬"
+      ],
+      "level": "L2",
+      "summary": "二之宮の大池をめぐる埋立計画、養魚設備、水利訴訟、明治32年の和解と量水標石を、地域資料と静岡県資料からたどる。",
+      "source_refs": [
+        "book:磐田ことはじめ 第一編 町内の風土記:84〜91頁（2026-08-18頁画像照合）",
+        "official:静岡県『水の恵みカード』関連資料（量水標石）"
+      ]
+    },
+    {
+      "title": "国府台に生まれた四つの町名 ── 桜ヶ丘・泉町・旭ヶ丘・本町",
+      "url": "n090.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "place-name",
+        "village-history",
+        "land-system"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-18",
+      "updated_at": "2026-08-18",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉",
+      "topics": [
+        "国府台",
+        "桜ヶ丘",
+        "泉町",
+        "旭ヶ丘",
+        "本町",
+        "土地区画整理",
+        "自治会"
+      ],
+      "level": "L2",
+      "summary": "国府台土地区画整理とともに生まれた桜ヶ丘・泉町・旭ヶ丘・本町について、昭和42年の自治会成立と昭和48年の換地処分を分けて読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第一編 町内の風土記:74〜75頁（2026-08-18頁画像照合）",
+        "official:磐田市『土地区画整理事業 施行状況』国府台地区"
+      ]
+    },
+    {
+      "title": "二之宮七自治会の誕生 ── 丁目・中通・宮本・浅間通",
+      "url": "n091.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "place-name",
+        "village-history",
+        "land-memory"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-18",
+      "updated_at": "2026-08-18",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉",
+      "topics": [
+        "二之宮",
+        "浅間通",
+        "二之宮一丁目",
+        "中通",
+        "宮本",
+        "自治会",
+        "町名"
+      ],
+      "level": "L2",
+      "summary": "一つの二之宮区が昭和32年、浅間通・一丁目〜四丁目・中通・宮本の七自治会へ分かれた経緯を、町名と都市化から読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第一編 町内の風土記:84〜90頁（2026-08-18頁画像照合）",
+        "official:磐田市『自治会概要・一覧』"
+      ]
+    },
+    {
+      "title": "天保から昭和へ ── 見付26町内の町名変遷",
+      "url": "m180.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "place-name",
+        "village-history",
+        "land-memory"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-18",
+      "updated_at": "2026-08-18",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付",
+      "topics": [
+        "見付",
+        "町名変遷",
+        "26町内",
+        "遠淡海地志",
+        "昭和23年",
+        "自治会",
+        "小路"
+      ],
+      "level": "L3",
+      "summary": "天保5年頃の見付の小地名、昭和23年の町名大改正、戦後の分立と区画整理を、26町内の対照表で読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第一編 町内の風土記:22〜55頁（2026-08-18頁画像照合）",
+        "secondary-via-book:遠淡海地志（原本未照合）",
+        "official:磐田市『自治会概要・一覧』"
+      ]
+    },
+    {
+      "title": "三本松から富士見町へ ── 区画整理がつくった戦後住宅地",
+      "url": "m181.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "place-name",
+        "land-system",
+        "land-memory"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-18",
+      "updated_at": "2026-08-18",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付",
+      "topics": [
+        "三本松",
+        "富士見町",
+        "富士見台",
+        "土地区画整理",
+        "東見付",
+        "住宅地",
+        "富士見小学校"
+      ],
+      "level": "L2",
+      "summary": "見付東部の三本松が富士見町へ改称され、富士見台土地区画整理と学校建設を経て住宅地になるまでをたどる。",
+      "source_refs": [
+        "book:磐田ことはじめ 第一編 町内の風土記:24〜25頁（2026-08-18頁画像照合）",
+        "official:磐田市『土地区画整理事業 施行状況』富士見台地区"
       ]
     }
   ]
