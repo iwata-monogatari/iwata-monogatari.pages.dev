@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-08-18",
+  "updated_at": "2026-08-19",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -16179,7 +16179,7 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "section": "南部",
-      "updated_at": "2026-08-18",
+      "updated_at": "2026-08-19",
       "topics": ["今之浦", "一丁目", "二丁目", "三丁目", "四丁目", "五丁目", "低湿地", "土地区画整理"],
       "level": "L2",
       "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:56〜58頁（2026-08-18頁画像照合）", "official:磐田市『令和7年版 磐田市統計書』"]
@@ -27539,6 +27539,42 @@
       "topics": ["豊田橋", "匂坂", "天竜川", "民間有料橋", "橋銭", "高塚太郎平新道", "佐口史料"], "level": "L2",
       "summary": "明治15年の仕様帳、明治16年の架設略面、匂坂へ続く新道から、民間有料橋・豊田橋の役割と未確認点を読む。",
       "source_refs": ["private-archive:佐口行正氏所蔵『遠江国豊田橋架設略面』『豊田橋架設仕様帳』", "internal:k056.html, t006.html, r039.html"]
+    },
+    {
+      "title": "中央町はどう生まれたか――中泉・国府台・見付が接する行政中心", "url": "n093.html", "district": ["nakaizumi"], "themes": ["place-name", "village-history", "land-memory"], "content_type": "article", "published_at": "2026-08-19", "updated_at": "2026-08-19", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "中泉", "topics": ["中央町", "中泉", "国府台", "町名変遷", "行政中心", "遠江国分寺"], "level": "L2", "summary": "中泉・国府台・見付の接点にある中央町を、戦後町名、古代遺跡、官公庁集積が重なる地域として読む。", "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:64〜66頁（2026-08-19頁画像照合）"]
+    },
+    {
+      "title": "中町・東町・七軒町――旧中泉の商店街と町名再編", "url": "n094.html", "district": ["nakaizumi"], "themes": ["place-name", "commerce", "land-memory"], "content_type": "article", "published_at": "2026-08-19", "updated_at": "2026-08-19", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "中泉", "topics": ["中町", "東町", "七軒町", "商店街", "防火帯", "町名再編"], "level": "L2", "summary": "中町・東町・七軒町を、旧称整理、駅前商業、防火街路と共同店舗の記憶から横断して読む。", "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:67〜69頁（2026-08-19頁画像照合）"]
+    },
+    {
+      "title": "西町・田町・久保町――駅前西側の町並みと区画整理", "url": "n095.html", "district": ["nakaizumi"], "themes": ["place-name", "commerce", "land-system"], "content_type": "article", "published_at": "2026-08-19", "updated_at": "2026-08-19", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "中泉", "topics": ["西町", "田町", "久保町", "駅前", "商店街", "区画整理"], "level": "L2", "summary": "駅前西側の西町・田町・久保町を、商業、信仰、区画整理と生活施設の変化から読む。", "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:70〜73頁（2026-08-19頁画像照合）"]
+    },
+    {
+      "title": "諏訪町・坂上町・西新町――国府台西縁の町名と戦後市街地", "url": "n096.html", "district": ["nakaizumi"], "themes": ["place-name", "urban-history", "land-memory"], "content_type": "article", "published_at": "2026-08-19", "updated_at": "2026-08-19", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "中泉", "topics": ["諏訪町", "坂上町", "西新町", "京見塚", "道路整備", "戦後市街地"], "level": "L2", "summary": "国府台西縁の諏訪町・坂上町・西新町を、遺跡、地形名、道路・学校・工場の整備から読む。", "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:76〜79頁（2026-08-19頁画像照合）"]
+    },
+    {
+      "title": "石原町――大宝院跡・石原貝塚・旧河道が重なる町", "url": "n097.html", "district": ["nakaizumi"], "themes": ["place-name", "archaeology", "land-memory"], "content_type": "article", "published_at": "2026-08-19", "updated_at": "2026-08-19", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "中泉", "topics": ["石原町", "大宝院跡", "石原貝塚", "旧河道", "田中神社", "泉蔵寺"], "level": "L2", "summary": "石原町を、大宝院跡、石原貝塚、旧河道、寺社と生活圏が重なる町内空間史として読む。", "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:80〜81頁（2026-08-19頁画像照合）"]
+    },
+    {
+      "title": "栄町――市場・鉄道・御殿跡が重なる町", "url": "n098.html", "district": ["nakaizumi"], "themes": ["place-name", "commerce", "railway"], "content_type": "article", "published_at": "2026-08-19", "updated_at": "2026-08-19", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "中泉", "topics": ["栄町", "市場", "鉄道", "中泉御殿", "中泉代官所", "戦後町名"], "level": "L2", "summary": "栄町を、市場と商業、鉄道による町域の分節、御殿・代官所跡と戦後町名の重なりから読む。", "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:82〜83頁（2026-08-19頁画像照合）"]
+    },
+    {
+      "title": "寺谷廃寺遺跡――白鳳期の瓦が語る岩田の古代寺院", "url": "k063.html", "district": ["koyo"], "themes": ["temple-history", "archaeology", "land-memory"], "content_type": "article", "published_at": "2026-08-19", "updated_at": "2026-08-19", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "向陽", "topics": ["寺谷廃寺", "白鳳時代", "古代瓦", "寺谷瓦窯", "磐田寺", "古代寺院"], "level": "L2", "summary": "寺谷廃寺を、白鳳期の瓦と立地から古代寺院遺跡として読み、磐田寺比定説の射程と限界を整理する。", "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:103頁（2026-08-19頁画像照合）", "official:磐田市『遠江国分寺跡整備基本計画』"]
+    },
+    {
+      "title": "岩田神社――人見神社伝承と近代の合祀", "url": "k064.html", "district": ["koyo"], "themes": ["shrine-history", "oral-history", "village-history"], "content_type": "article", "published_at": "2026-08-19", "updated_at": "2026-08-19", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "向陽", "topics": ["岩田神社", "匂坂中", "人見神社", "式内社", "合祀", "旧郷社"], "level": "L2", "summary": "匂坂中の岩田神社を、地域資料の由緒、人見神社・式内社比定の伝承、近代の合祀を分けて読む。", "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:96頁（2026-08-19頁画像照合）"]
+    },
+    {
+      "title": "匂坂五自治会――上原・上・中上・中下・新の成り立ち", "url": "k065.html", "district": ["koyo"], "themes": ["place-name", "self-government", "village-history"], "content_type": "article", "published_at": "2026-08-19", "updated_at": "2026-08-19", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "向陽", "topics": ["匂坂上原", "匂坂上", "匂坂中上", "匂坂中下", "匂坂新", "自治会"], "level": "L2", "summary": "旧匂坂系地名から現在の五自治会へ至る関係を、法定住所と自治会名、資料時点を分けて整理する。", "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:91〜102頁（2026-08-19頁画像照合）", "official:磐田市『自治会概要・一覧』"]
+    },
+    {
+      "title": "寺谷三自治会――圦上・圦下・寺谷新田の成り立ち", "url": "k066.html", "district": ["koyo"], "themes": ["place-name", "self-government", "water"], "content_type": "article", "published_at": "2026-08-19", "updated_at": "2026-08-19", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "向陽", "topics": ["寺谷圦上", "寺谷圦下", "寺谷新田", "寺谷用水", "自治会", "新田"], "level": "L2", "summary": "寺谷圦上・寺谷圦下・寺谷新田の三自治会を、水利地名、近世新田、現代の生活単位を分けて読む。", "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:102〜105頁（2026-08-19頁画像照合）", "official:磐田市『自治会概要・一覧』"]
+    },
+    {
+      "title": "今之浦用排水組合から悪水組合へ――低湿地を管理した明治の制度", "url": "s027.html", "district": ["nanbu"], "themes": ["water", "self-government", "modern-history"], "content_type": "article", "published_at": "2026-08-19", "updated_at": "2026-08-19", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "南部", "topics": ["今之浦用排水組合", "今之浦悪水組合", "低湿地", "排水", "明治24年", "明治45年"], "level": "L2", "summary": "明治24年の用排水組合規約から明治45年の悪水組合設置まで、低湿地を共同管理した制度を読む。", "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:56〜57頁（2026-08-19頁画像照合）"]
+    },
+    {
+      "title": "今之浦地区の成立前史――今之浦新田・田久保村請所・西瀬新田", "url": "s028.html", "district": ["nanbu"], "themes": ["village-history", "place-name", "land-system"], "content_type": "article", "published_at": "2026-08-19", "updated_at": "2026-08-19", "date_provisional": false, "status": "published", "count_as_knowledge": true, "show_in_updates": true, "show_in_all_articles": true, "section": "南部", "topics": ["今之浦新田", "田久保村請所", "西瀬新田", "川尻", "西川尻", "鳥之瀬"], "level": "L2", "summary": "今之浦地区成立以前の今之浦新田・田久保村請所・西瀬新田を、近世検地、明治9年編入、後の町名から読む。", "source_refs": ["book:磐田ことはじめ 第一編 町内の風土記:56・58頁（2026-08-19頁画像照合）", "internal:m142.html,m145.html,m149.html"]
     }
   ]
 }
