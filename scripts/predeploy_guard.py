@@ -389,6 +389,13 @@ def main():
         if content_quality.stderr.strip():
             print(content_quality.stderr.strip(), file=sys.stderr)
         return fail("content quality check failed")
+    objective_quality = command([sys.executable, "scripts/check_objective_quality.py"])
+    if objective_quality.stdout.strip():
+        print(objective_quality.stdout.strip())
+    if objective_quality.returncode != 0:
+        if objective_quality.stderr.strip():
+            print(objective_quality.stderr.strip(), file=sys.stderr)
+        return fail("objective quality check failed")
     latest = load_json("data/new-articles.json")
     index_html = read_text("index.html")
     updates_html = read_text("updates.html")
