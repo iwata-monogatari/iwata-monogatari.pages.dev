@@ -382,6 +382,13 @@ def main():
         if heading_density.stderr.strip():
             print(heading_density.stderr.strip(), file=sys.stderr)
         return fail("article heading density check failed")
+    content_quality = command([sys.executable, "scripts/check_content_quality.py"])
+    if content_quality.stdout.strip():
+        print(content_quality.stdout.strip())
+    if content_quality.returncode != 0:
+        if content_quality.stderr.strip():
+            print(content_quality.stderr.strip(), file=sys.stderr)
+        return fail("content quality check failed")
     latest = load_json("data/new-articles.json")
     index_html = read_text("index.html")
     updates_html = read_text("updates.html")

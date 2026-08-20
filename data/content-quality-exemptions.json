@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "pages": {
+    "c001.html": {
+      "kind": "site-policy",
+      "reason": "サイトの編集憲章であり、記事本文ではなく短い原則を参照する固定ページ。"
+    },
+    "c004.html": {
+      "kind": "interactive-map",
+      "reason": "地点を選択して時代・地域・関連記事を探索する対話型地図であり、単独の読み物記事ではないため。"
+    },
+    "c008.html": {
+      "kind": "interactive-tool",
+      "reason": "標準語と遠州弁を変換する操作ツールであり、長文記事ではなく入力UIが中心。"
+    },
+    "c033.html": {
+      "kind": "site-explainer",
+      "reason": "集合知プロジェクトの参加方法を簡潔に示す案内ページで、歴史記事ではない。"
+    },
+    "c034.html": {
+      "kind": "all-articles-index",
+      "reason": "公開記事を地区・テーマ別に探す全記事索引であり、本文を通読する読み物記事ではないため。"
+    },
+    "c095.html": {
+      "kind": "index",
+      "reason": "大字名から該当記事を検索する索引であり、本文量より検索性を優先するページ。"
+    },
+    "representative-articles.html": {
+      "kind": "portal",
+      "reason": "代表記事10本へ誘導するポータルであり、各項目の詳説はリンク先の記事が担う。"
+    }
+  }
+}
