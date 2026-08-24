@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-08-19",
+  "updated_at": "2026-08-24",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -11414,7 +11414,10 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "updated_at": "2026-07-10"
+      "updated_at": "2026-08-24",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
+      ]
     },
     {
       "title": "旧赤松家",
@@ -13094,7 +13097,11 @@
       "parent": "index.html",
       "count_as_knowledge": true,
       "show_in_updates": true,
-      "show_in_all_articles": true
+      "show_in_all_articles": true,
+      "updated_at": "2026-08-24",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
+      ]
     },
     {
       "title": "城之崎遺跡 - 磐田原台地南部に残された弥生の住まいと古墳の記憶",
@@ -17328,7 +17335,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-10",
-      "updated_at": "2026-08-15",
+      "updated_at": "2026-08-24",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -17346,7 +17353,10 @@
         "校務日誌",
         "高校"
       ],
-      "level": "L2"
+      "level": "L2",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
+      ]
     },
     {
       "title": "見付の成り立ち ── 沿革年表・学校区・大字",
@@ -17883,13 +17893,16 @@
       "themes": [],
       "content_type": "reading",
       "published_at": "2026-06-30",
-      "updated_at": "2026-06-30",
+      "updated_at": "2026-08-24",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "磐田唯一の私立全日制高校・磐田東高等学校の歴史を、地域史の視点から整理。昭和34年（1959年）に女子校として創立し、西貝塚から見付へ移転、昭和59年の科学技術コースと共学化、2003年の磐田東中学校開校による中高一貫化までをたどる。校訓「中庸の道」、剣道部・サッカー部とジュビロ磐田U-18など、磐田の私学とスポーツ文化の歩みを解説する。"
+      "summary": "磐田唯一の私立全日制高校・磐田東高等学校の歴史を、地域史の視点から整理。昭和34年（1959年）に女子校として創立し、西貝塚から見付へ移転、昭和59年の科学技術コースと共学化、2003年の磐田東中学校開校による中高一貫化までをたどる。校訓「中庸の道」、剣道部・サッカー部とジュビロ磐田U-18など、磐田の私学とスポーツ文化の歩みを解説する。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
+      ]
     },
     {
       "title": "磐田北高等学校の歴史 ── 高等女学校から福祉科・共生共育へ",
@@ -17898,13 +17911,16 @@
       "themes": [],
       "content_type": "reading",
       "published_at": "2026-06-30",
-      "updated_at": "2026-06-30",
+      "updated_at": "2026-08-24",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "磐田北高等学校の歴史を、明治42年に見付で開校した磐田郡立実践高等女学校から読み解く。保育科・衛生看護科・県立附設幼稚園、平成11年の男女共学化、福祉科と介護福祉士、袋井特別支援学校磐田見付分校との共生共育まで、磐田の女子教育と「人を支える学び」の歩みを地域史として整理する。"
+      "summary": "磐田北高等学校の歴史を、明治42年に見付で開校した磐田郡立実践高等女学校から読み解く。保育科・衛生看護科・県立附設幼稚園、平成11年の男女共学化、福祉科と介護福祉士、袋井特別支援学校磐田見付分校との共生共育まで、磐田の女子教育と「人を支える学び」の歩みを地域史として整理する。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
+      ]
     },
     {
       "title": "磐田南高等学校の歴史 ── 見付中学校と遠江国分寺跡",
@@ -17913,13 +17929,16 @@
       "themes": [],
       "content_type": "reading",
       "published_at": "2026-06-30",
-      "updated_at": "2026-07-12",
+      "updated_at": "2026-08-24",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "磐田南高等学校の歴史を、大正11年創立の静岡県立見付中学校を起点にたどる。旧見付学校の仮校舎、おだわらやまと手作りのプール、戦後の磐田南高への改称と男女共学化、遠江国分寺跡の上に立つ立地、創立80周年記念誌が伝える国際交流・自然科学活動まで、磐田の知の拠点として整理する。"
+      "summary": "磐田南高等学校の歴史を、大正11年創立の静岡県立見付中学校を起点にたどる。旧見付学校の仮校舎、おだわらやまと手作りのプール、戦後の磐田南高への改称と男女共学化、遠江国分寺跡の上に立つ立地、創立80周年記念誌が伝える国際交流・自然科学活動まで、磐田の知の拠点として整理する。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
+      ]
     },
     {
       "title": "磐田西高等学校の歴史 ── 中泉商業学校を源流とする実学教育",
@@ -17928,13 +17947,16 @@
       "themes": [],
       "content_type": "reading",
       "published_at": "2026-06-30",
-      "updated_at": "2026-06-30",
+      "updated_at": "2026-08-24",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "磐田西高等学校の歴史を、昭和14年（1939）の中泉町立中泉商業学校を源流とする磐田の商業教育・実学教育の歩みとして整理。戦時下の工業学校転換、戦後の商業学校復元、磐田商業からの分離独立、平成3年の磐田西への改称、総合ビジネス科までを地域史の視点でたどる。"
+      "summary": "磐田西高等学校の歴史を、昭和14年（1939）の中泉町立中泉商業学校を源流とする磐田の商業教育・実学教育の歩みとして整理。戦時下の工業学校転換、戦後の商業学校復元、磐田商業からの分離独立、平成3年の磐田西への改称、総合ビジネス科までを地域史の視点でたどる。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
+      ]
     },
     {
       "title": "磐田農業高等学校の歴史 ── 明治29年の中遠簡易農学校から",
@@ -17943,13 +17965,16 @@
       "themes": [],
       "content_type": "reading",
       "published_at": "2026-06-30",
-      "updated_at": "2026-06-30",
+      "updated_at": "2026-08-24",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "磐田農業高等学校の歴史を、明治29年創立の中遠簡易農学校から読み解く。校訓「高品性、重労働」、中泉に残る登録有形文化財の記念館、生産・流通・環境・食品・生活の五学科、一言農場や糀ベジあんまで、磐田の食・農・環境の近代化を支えた学校の歩みを地域史としてたどる。"
+      "summary": "磐田農業高等学校の歴史を、明治29年創立の中遠簡易農学校から読み解く。校訓「高品性、重労働」、中泉に残る登録有形文化財の記念館、生産・流通・環境・食品・生活の五学科、一言農場や糀ベジあんまで、磐田の食・農・環境の近代化を支えた学校の歩みを地域史としてたどる。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
+      ]
     },
     {
       "title": "新豊院山古墳群 ── 台地東縁に築かれた前期古墳群【国指定史跡】",
@@ -20835,7 +20860,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-12",
-      "updated_at": "2026-07-12",
+      "updated_at": "2026-08-24",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -20843,7 +20868,10 @@
       "show_in_all_articles": true,
       "summary": "創立80周年記念誌から、前身の県立見付中学校の創立、五階堂仮校舎、労作教育、防風堤、50mプール、初期校風、校歌の位置づけを読む。",
       "parent": "iwata-minami-high-school-history.html",
-      "level": "L2"
+      "level": "L2",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
+      ]
     },
     {
       "title": "戦後の磐田南高校と男女共学化 ── 磐田第一高校から女子生徒の入学へ",
@@ -25801,7 +25829,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-23",
-      "updated_at": "2026-07-23",
+      "updated_at": "2026-08-24",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -25815,7 +25843,10 @@
         "町村制",
         "連合戸長役場"
       ],
-      "level": "L2"
+      "level": "L2",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
+      ]
     },
     {
       "title": "磐田郡役所と郡制 ── 「磐田郡」があった時代",
@@ -25830,7 +25861,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-23",
-      "updated_at": "2026-07-23",
+      "updated_at": "2026-08-24",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -25845,7 +25876,10 @@
         "豊田郡",
         "郡再編"
       ],
-      "level": "L2"
+      "level": "L2",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
+      ]
     },
     {
       "title": "日清・日露戦争と磐田 ── 忠魂碑が建てられた時代",
@@ -26097,7 +26131,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-23",
-      "updated_at": "2026-07-23",
+      "updated_at": "2026-08-24",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26112,7 +26146,10 @@
         "太田川ダム",
         "敷地川"
       ],
-      "level": "L2"
+      "level": "L2",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
+      ]
     },
     {
       "title": "静岡藩時代の磐田 ── 徳川家とともに来た人々",
@@ -26187,7 +26224,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-23",
-      "updated_at": "2026-07-23",
+      "updated_at": "2026-08-24",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26201,7 +26238,10 @@
         "市制施行",
         "合併"
       ],
-      "level": "L2"
+      "level": "L2",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
+      ]
     },
     {
       "title": "磐田物語 空白地図 ── 何が、まだ書かれていないか",
@@ -27692,7 +27732,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-18",
-      "updated_at": "2026-08-19",
+      "updated_at": "2026-08-24",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -27712,7 +27752,8 @@
       "summary": "一つの二之宮区が昭和32年、浅間通・一丁目〜四丁目・中通・宮本の七自治会へ分かれた経緯を、町名と都市化から読む。",
       "source_refs": [
         "book:磐田ことはじめ 第一編 町内の風土記:84〜90頁（2026-08-18頁画像照合）",
-        "official:磐田市『自治会概要・一覧』"
+        "official:磐田市『自治会概要・一覧』",
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
       ]
     },
     {
@@ -27728,7 +27769,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-18",
-      "updated_at": "2026-08-19",
+      "updated_at": "2026-08-24",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -27749,7 +27790,8 @@
       "source_refs": [
         "book:磐田ことはじめ 第一編 町内の風土記:22〜55頁（2026-08-18頁画像照合）",
         "secondary-via-book:遠淡海地志（原本未照合）",
-        "official:磐田市『自治会概要・一覧』"
+        "official:磐田市『自治会概要・一覧』",
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
       ]
     },
     {
@@ -29131,6 +29173,649 @@
       "summary": "長須賀の町内資料が池田庄立券文書を村名の古い確認例として参照する意味を読み、荘域復元一般とは分けて検証課題を整理する。",
       "source_refs": [
         "book:磐田ことはじめ 第一編 町内の風土記:242～243頁（PDF画像26枚目）"
+      ]
+    },
+    {
+      "title": "近代地方議会と「1％の代表」 ── 磐田の議会政治はどう始まったか",
+      "url": "c138.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "political-history",
+        "self-government"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "地方議会",
+        "県会議員選挙",
+        "衆議院議員選挙",
+        "行政振興調査",
+        "二之宮区会",
+        "普通選挙"
+      ],
+      "level": "L2",
+      "summary": "明治22年（1889年）、選挙で代表を選ぶ制度が磐田地方にも根を下ろし始めた。しかし投票できたのは人口のごく一部である。県会・国会・町村会、行政振興調査、二之宮区会をたどり、限定された代表制が生活上の自治へ広がる過程を読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:19〜22頁"
+      ]
+    },
+    {
+      "title": "町村財政の成立 ── 共有財産・寄付金・予算が支えた地域経営",
+      "url": "c139.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "administration",
+        "self-government"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "町村財政",
+        "共有財産",
+        "学校寄付",
+        "道路寄付",
+        "予算",
+        "決算",
+        "例規"
+      ],
+      "level": "L2",
+      "summary": "町村合併で区域が一つになっても、旧村の野場や火葬場まで直ちに一つにはならなかった。学校・道路を支えた寄付、予算書式、帳簿、例規をたどり、近代町村が「地域の財布」を作るまでを読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:22〜26頁"
+      ]
+    },
+    {
+      "title": "磐田から北海道へ ── 明治期の移住奨励と家族の決断",
+      "url": "c140.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "social-history",
+        "people"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "北海道移住",
+        "開拓",
+        "中泉町",
+        "人口移動",
+        "移住証明",
+        "家族史"
+      ],
+      "level": "L2",
+      "summary": "明治34年（1901年）、静岡県は北海道移住を奨励した。磐田地方からも家屋と家財を整理して北へ向かった家族がいた。行政文書の「一戸五人」という数字と、個々の家族の移動を分けて考える。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:26〜27頁"
+      ]
+    },
+    {
+      "title": "磐田の幼稚園教育 ── 園付設から就学前教育の広がりへ",
+      "url": "c152.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "school",
+        "modern-education"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "幼稚園",
+        "見付",
+        "幼児教育",
+        "付属幼稚園",
+        "戦後教育",
+        "保育"
+      ],
+      "level": "L2",
+      "summary": "見付では明治28年（1895年）に幼児教育が始まったとされる。小学校への付属、戦時期の中断、戦後の再開をたどり、就学前教育が家庭だけの仕事から地域の制度へ変わる過程を読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:72〜73頁"
+      ]
+    },
+    {
+      "title": "PTAの成立 ── 占領期の指導と磐田の父母と先生の会",
+      "url": "c153.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "postwar",
+        "school",
+        "self-government"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "PTA",
+        "父母と先生の会",
+        "岩田小学校",
+        "磐田市PTA連絡会",
+        "戦後教育",
+        "学校支援"
+      ],
+      "level": "L2",
+      "summary": "戦後の学校に登場したPTAは、占領軍の指導を受けながら地域ごとに組織された。磐田では比較的早く結成が進んだという。結成年月、目的、会員資格を確認し、現在のPTA像を過去へ重ねずに読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:73頁"
+      ]
+    },
+    {
+      "title": "青年訓練所・青年会・青年団旗 ── 教育と軍事化のはざま",
+      "url": "c154.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "modern-education",
+        "social-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "青年訓練所",
+        "青年学校",
+        "青年会",
+        "見付町青年団旗",
+        "和田三造",
+        "軍事教練",
+        "社会教育"
+      ],
+      "level": "L2",
+      "summary": "青年訓練所は青年の教育機会であると同時に軍事訓練の場だった。青年会は図書館や実業研究にも取り組み、見付町青年団は団旗を作った。教育・自治・軍事化が交差した青年組織を一枚の成功物語にしない。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:82〜85頁"
+      ]
+    },
+    {
+      "title": "組合役場と役場実務 ── 戸長の仕事から近代町村行政へ",
+      "url": "c141.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "administration",
+        "village-governance"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "組合役場",
+        "役場実務",
+        "戸長",
+        "服務規程",
+        "組長申合せ規定"
+      ],
+      "level": "L2",
+      "summary": "明治の町村役場は、現在の市役所を小さくしただけの組織ではない。戸籍、徴税、兵事、学校、土木、財産管理を少人数で担い、町村によっては隣村と組合役場を置いた。磐田地方の役場が、地域の寄り合いから規程と簿冊で動く行政へ移る過程をたどる。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:28〜33頁"
+      ]
+    },
+    {
+      "title": "部落会・町内会から自治会へ ── 統制と住民自治のあいだ",
+      "url": "c142.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "self-government",
+        "life"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "部落会",
+        "町内会",
+        "隣組",
+        "自治会",
+        "住民自治"
+      ],
+      "level": "L2",
+      "summary": "現在の自治会は、昔から同じ名称・性格で続いた組織ではない。戦時下の部落会・町内会、占領期の解体、戦後の再編を経て、行政協力と住民自治の二つの顔を持つようになった。磐田町と中泉町の記録から、その断絶と継承を読み直す。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:45〜47頁"
+      ]
+    },
+    {
+      "title": "税務署・県財務事務所と地方行政 ── 国税と地方税の窓口ができるまで",
+      "url": "c143.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "administration",
+        "municipal-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "磐田税務署",
+        "県財務事務所",
+        "郡役所",
+        "国税",
+        "県税"
+      ],
+      "level": "L2",
+      "summary": "見付に税務署が置かれたのは、全国で国税徴収を一元化する明治29年（1896年）の再編と重なる。郡役所、県財務事務所も含め、国・県・町村の出先機関が磐田地方でどの税と行政を担ったかを整理する。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:34〜37頁"
+      ]
+    },
+    {
+      "title": "不景気・匡救事業・ドッジライン ── 二つの緊縮期を地域から読む",
+      "url": "c144.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "social-history",
+        "industry"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "昭和恐慌",
+        "時局匡救事業",
+        "救農土木",
+        "ドッジ・ライン",
+        "シャウプ勧告"
+      ],
+      "level": "L2",
+      "summary": "昭和恐慌の農村不況には公共土木による「匡救」が、戦後インフレにはドッジ・ラインの緊縮が処方された。国の経済政策が、磐田地方の税、道路、雇用、学校へどう届いたかを、異なる二時期を混同せずに読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:38、42、52頁"
+      ]
+    },
+    {
+      "title": "奉祝行事と翼賛選挙 ── 祝祭・動員・投票が重なった時代",
+      "url": "c145.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "political-history",
+        "war-memory"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "紀元二千六百年",
+        "奉祝行事",
+        "大政翼賛会",
+        "翼賛選挙",
+        "戦時動員"
+      ],
+      "level": "L2",
+      "summary": "紀元二千六百年の奉祝行事と昭和17年（1942年）の翼賛選挙は、別々の出来事ではない。旗、式典、記念事業、推薦候補、町内組織を通じて、祝祭と政治動員が日常へ入り込んだ過程を磐田地方の記録から読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:39〜43頁"
+      ]
+    },
+    {
+      "title": "回覧板から『広報いわた』へ ── 行政情報が家庭へ届くまで",
+      "url": "c146.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "communication",
+        "self-government"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "回覧板",
+        "回状",
+        "弘報いわた",
+        "広報いわた",
+        "行政広報"
+      ],
+      "level": "L2",
+      "summary": "回覧板は、隣家へ板を回す素朴な道具に見える。しかし戦時下には物価統制と動員を伝え、戦後は市政広報へ姿を変えた。昭和14年（1939年）の回覧板と昭和24年（1949年）創刊の『弘報いわた』を起点に、情報の送り手と受け手の関係を考える。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:40〜41、54〜55頁"
+      ]
+    },
+    {
+      "title": "中泉町章・磐田市章・市の木 ── 自治体の印は何を表したか",
+      "url": "c147.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "municipal-history",
+        "culture"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "中泉町章",
+        "旧磐田市章",
+        "磐田市章",
+        "市の木",
+        "マキ",
+        "クスノキ"
+      ],
+      "level": "L2",
+      "summary": "町章、市章、市の木は、自治体が自分たちを一つの地域として見せるための印である。中泉町章の募集、旧磐田市章の制定、マキからクスノキへの市の木の変化を通して、合併と時代ごとに「磐田らしさ」が選び直された過程をたどる。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:32、53〜55頁"
+      ]
+    },
+    {
+      "title": "中泉学校の成立と旧校舎 ── 仮校舎・寄付・学区再編の記憶",
+      "url": "n099.html",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "school",
+        "modern-education",
+        "architecture"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "中泉",
+      "topics": [
+        "中泉学校",
+        "中泉小学校",
+        "旧校舎",
+        "学校建設",
+        "学校寄付",
+        "学区再編"
+      ],
+      "level": "L2",
+      "summary": "明治6年（1873年）、中泉では神社境内の仮校舎から学校づくりが始まった。児童を収める校舎、住民の拠金、学区の再編、戦時の転用をたどると、学校が一棟の建物ではなく、地域が長く負担して育てた制度だったことが見えてくる。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:58・62頁"
+      ]
+    },
+    {
+      "title": "龍門館と山岡鉄舟 ── 長野小学校に伝わった扁額を読む",
+      "url": "s035.html",
+      "district": [
+        "nanbu"
+      ],
+      "themes": [
+        "school",
+        "modern-education",
+        "person",
+        "source-criticism"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "南部",
+      "topics": [
+        "龍門館",
+        "山岡鉄舟",
+        "長野小学校",
+        "扁額",
+        "登竜門",
+        "船板"
+      ],
+      "level": "L2",
+      "summary": "長野地区の学校に『龍門館』と書かれた扁額が伝わったという。山岡鉄舟の名声、黄河の登竜門故事、地域の学校記憶を分けて読むと、一枚の書が教育に託された期待と、由緒を検証する難しさの双方を映し出す。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:59〜60頁"
+      ]
+    },
+    {
+      "title": "明治・大正期の学校生活 ── 授業料・規則・試験・机から読む教室",
+      "url": "c148.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "school",
+        "modern-education"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "学校生活",
+        "授業料",
+        "学校規則",
+        "考査",
+        "学校机",
+        "国定教科書"
+      ],
+      "level": "L2",
+      "summary": "学校の歴史は校名と創立年だけではない。授業料を納め、規則に従い、試験を受け、机に座り、教科書を読む子どもの一日から、明治・大正期の磐田の教室を組み立て直す。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:60〜65頁"
+      ]
+    },
+    {
+      "title": "学校組合と教育財政 ── 境界を越えて学校を支えた町村",
+      "url": "c149.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "school",
+        "administration"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "学校組合",
+        "教育財政",
+        "学校費",
+        "見付町",
+        "泉町",
+        "学校統合"
+      ],
+      "level": "L2",
+      "summary": "一つの町村だけでは学校を維持できないとき、隣接町村が学校組合をつくった。校地、校舎、教員給与を共同で負担する仕組みから、学区と行政境界が必ずしも一致しなかった近代の教育財政を読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:67〜68頁"
+      ]
+    },
+    {
+      "title": "就学・体格検査・給食・貧困児童支援 ── 学校が子どもの暮らしへ入った時代",
+      "url": "c150.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "school",
+        "life"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "就学率",
+        "体格検査",
+        "学校給食",
+        "貧困児童",
+        "就学奨励",
+        "分散授業"
+      ],
+      "level": "L2",
+      "summary": "学校は文字を教えるだけの場所ではなかった。就学率を調べ、身体を測り、空襲時には分散させ、給食を届け、授業料や学用品を支えた記録から、教育と福祉が交わる磐田の百年を読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:66・68〜71頁"
+      ]
+    },
+    {
+      "title": "空襲下の分散授業 ── 1945年、磐田の子どもはどこで学んだか",
+      "url": "c151.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "war-memory",
+        "school",
+        "peace"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-24",
+      "updated_at": "2026-08-24",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "分散授業",
+        "磐田空襲",
+        "国民学校",
+        "学区変更",
+        "戦時教育",
+        "中泉"
+      ],
+      "level": "L2",
+      "summary": "昭和20年（1945年）、空襲が通学路を危険にし、磐田の学校は児童を地区・男女別に分けて授業を続けた。分散授業の記録から、学校を守る工夫と、日常が壊れていく過程を同時に読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:68〜69頁"
       ]
     }
   ]
