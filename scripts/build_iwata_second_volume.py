@@ -48,10 +48,26 @@ def article_html(a: dict) -> str:
     sections = []
     for group in grouped_sections(a["sections"]):
         group_parts = []
+        lengths = [sum(len(plain(p)) for p in paragraphs) for _, paragraphs in group]
+        total_length = sum(lengths)
+        subheading_index = None
+        if len(group) > 1:
+            boundaries = [sum(lengths[:index]) for index in range(1, len(group))]
+            subheading_index = min(
+                range(1, len(group)),
+                key=lambda index: abs(boundaries[index - 1] - total_length / 2),
+            )
         for index, (heading, paragraphs) in enumerate(group):
-            label = f"  <h2>{heading}</h2>" if index == 0 else f'  <p class="subheading"><strong>{heading}</strong></p>'
+            # One small heading near the midpoint of each substantial section
+            # orients the reader without fragmenting the prose.
+            if index == 0:
+                label = f"  <h2>{heading}</h2>"
+            elif index == subheading_index:
+                label = f'  <p class="subheading"><strong>{heading}</strong></p>'
+            else:
+                label = ""
             body = "\n".join(f"    <p>{p}</p>" for p in paragraphs)
-            group_parts.append(f"{label}\n{body}")
+            group_parts.append(f"{label}\n{body}" if label else body)
         sections.append("\n".join(group_parts))
     rows = "\n".join(
         f"<tr><th>{esc(year)}</th><td>{text}</td></tr>" for year, text in a["timeline"]
