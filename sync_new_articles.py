@@ -44,7 +44,15 @@ def ledger_key_url(url):
 
 def load_articles():
     data = load_json_array(DATA_PATH)
-    data.extend(discover_articles())
+    # 発見一覧は台帳の欠落を補うためのフォールバックである。同じURLが手動台帳に
+    # ある場合、公開日が異なっても旧メタデータを別の新着記事として復活させない。
+    # 更新掲載（例: /c138.html, 2026-08-25）と初版メタデータ（/c138,
+    # 2026-08-24）が同時表示され、release guard が拡張子なしの実体を要求する事故を防ぐ。
+    manual_urls = {ledger_key_url(item.get("url", "")) for item in data if isinstance(item, dict)}
+    data.extend(
+        item for item in discover_articles()
+        if ledger_key_url(item.get("url", "")) not in manual_urls
+    )
 
     now_iso = datetime.now().astimezone().isoformat(timespec="seconds")
 
