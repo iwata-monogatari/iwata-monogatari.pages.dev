@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-08-24",
+  "updated_at": "2026-08-25",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -14897,7 +14897,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-07-02",
-      "updated_at": "2026-07-02",
+      "updated_at": "2026-08-25",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -14905,7 +14905,10 @@
       "show_in_all_articles": true,
       "section": "戦争・平和",
       "summary": "銃後を守る ── 疎開・勤労動員・女性たちの戦時生活",
-      "parent": "h001.html"
+      "parent": "h001.html",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:89〜149頁"
+      ]
     },
     {
       "slug": "h005",
@@ -14985,7 +14988,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-07-02",
-      "updated_at": "2026-07-02",
+      "updated_at": "2026-08-25",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -14993,7 +14996,10 @@
       "show_in_all_articles": true,
       "section": "戦争・平和",
       "summary": "終戦の日 ── 玉音放送とその後",
-      "parent": "h001.html"
+      "parent": "h001.html",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:89〜149頁"
+      ]
     },
     {
       "slug": "h009",
@@ -16820,7 +16826,11 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "磐田共通"
+      "section": "磐田共通",
+      "updated_at": "2026-08-25",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:89〜149頁"
+      ]
     },
     {
       "title": "御厨駅周辺の道路網・区画整理 ── 新駅が変えた線路の南北",
@@ -16972,7 +16982,11 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "磐田共通"
+      "section": "磐田共通",
+      "updated_at": "2026-08-25",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:89〜149頁"
+      ]
     },
     {
       "title": "磐田の低湿地に残った木の道具 ── 見性寺遺跡の丸木舟と、野際遺跡の木製農具",
@@ -25924,7 +25938,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-23",
-      "updated_at": "2026-07-23",
+      "updated_at": "2026-08-25",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -25938,7 +25952,10 @@
         "報徳社",
         "大日本報徳社"
       ],
-      "level": "L2"
+      "level": "L2",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:89〜149頁"
+      ]
     },
     {
       "title": "磐田から北へ ── 秋葉道・二俣街道の記憶",
@@ -26072,7 +26089,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-23",
-      "updated_at": "2026-07-23",
+      "updated_at": "2026-08-25",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26087,7 +26104,10 @@
         "消防団",
         "火消し"
       ],
-      "level": "L2"
+      "level": "L2",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:89〜149頁"
+      ]
     },
     {
       "title": "安政東海地震と磐田 ── 嘉永7年11月4日の記憶",
@@ -27660,7 +27680,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-18",
-      "updated_at": "2026-08-19",
+      "updated_at": "2026-08-25",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -27680,7 +27700,8 @@
       "summary": "二之宮の大池をめぐる埋立計画、養魚設備、水利訴訟、明治32年の和解と量水標石を、地域資料と静岡県資料からたどる。",
       "source_refs": [
         "book:磐田ことはじめ 第一編 町内の風土記:84〜91頁（2026-08-18頁画像照合）",
-        "official:静岡県『水の恵みカード』関連資料（量水標石）"
+        "official:静岡県『水の恵みカード』関連資料（量水標石）",
+        "book:磐田ことはじめ 第二編・現代編:89〜149頁"
       ]
     },
     {
@@ -28845,7 +28866,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-19",
-      "updated_at": "2026-08-19",
+      "updated_at": "2026-08-25",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -28863,7 +28884,8 @@
       "level": "L2",
       "summary": "新貝から西貝塚へ広がった東部台地工場群を、工場誘致、用地取得、開発組合、環境問題の地域記録から読む。",
       "source_refs": [
-        "book:磐田ことはじめ 第一編 町内の風土記:168・184〜186頁（2026-08-19頁画像照合）"
+        "book:磐田ことはじめ 第一編 町内の風土記:168・184〜186頁（2026-08-19頁画像照合）",
+        "book:磐田ことはじめ 第二編・現代編:89〜149頁"
       ]
     },
     {
@@ -29493,7 +29515,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-24",
-      "updated_at": "2026-08-24",
+      "updated_at": "2026-08-25",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -29510,7 +29532,8 @@
       "level": "L2",
       "summary": "昭和恐慌の農村不況には公共土木による「匡救」が、戦後インフレにはドッジ・ラインの緊縮が処方された。国の経済政策が、磐田地方の税、道路、雇用、学校へどう届いたかを、異なる二時期を混同せずに読む。",
       "source_refs": [
-        "book:磐田ことはじめ 第二編・現代編:38、42、52頁"
+        "book:磐田ことはじめ 第二編・現代編:38、42、52頁",
+        "book:磐田ことはじめ 第二編・現代編:89〜149頁"
       ]
     },
     {
@@ -29763,7 +29786,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-24",
-      "updated_at": "2026-08-24",
+      "updated_at": "2026-08-25",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -29781,7 +29804,8 @@
       "level": "L2",
       "summary": "学校は文字を教えるだけの場所ではなかった。就学率を調べ、身体を測り、空襲時には分散させ、給食を届け、授業料や学用品を支えた記録から、教育と福祉が交わる磐田の百年を読む。",
       "source_refs": [
-        "book:磐田ことはじめ 第二編・現代編:66・68〜71頁"
+        "book:磐田ことはじめ 第二編・現代編:66・68〜71頁",
+        "book:磐田ことはじめ 第二編・現代編:89〜149頁"
       ]
     },
     {
@@ -29816,6 +29840,351 @@
       "summary": "昭和20年（1945年）、空襲が通学路を危険にし、磐田の学校は児童を地区・男女別に分けて授業を続けた。分散授業の記録から、学校を守る工夫と、日常が壊れていく過程を同時に読む。",
       "source_refs": [
         "book:磐田ことはじめ 第二編・現代編:68〜69頁"
+      ]
+    },
+    {
+      "title": "中部第129部隊 ── 磐田原に置かれた電波警戒部隊を検証する",
+      "url": "c155.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "war-memory",
+        "military-history",
+        "peace"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-25",
+      "updated_at": "2026-08-25",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "中部第129部隊",
+        "第一航空情報連隊",
+        "電波警戒",
+        "磐田原",
+        "戦争遺跡"
+      ],
+      "level": "L2",
+      "summary": "磐田原に置かれた中部第129部隊は、磐田市の最新の平和資料が「第一航空情報連隊」「日本で最初の電波警戒機部隊」と説明する。部隊の存在、土地利用、出動、戦後の記憶を分け、地域の誇りにも恐怖の物語にも寄せず検証する。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:94〜95頁",
+        "web:https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/016/021/heiwa_book.pdf"
+      ]
+    },
+    {
+      "title": "占領軍と地方軍政部 ── 敗戦後の磐田行政はどう監督されたか",
+      "url": "c156.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "postwar",
+        "administration",
+        "occupation-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-25",
+      "updated_at": "2026-08-25",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "占領軍",
+        "地方軍政部",
+        "地方民事部",
+        "行政視察",
+        "戦後改革"
+      ],
+      "level": "L2",
+      "summary": "終戦後の磐田では占領軍の進駐と地方軍政部の行政視察が別の局面として現れた。ジープを見た住民の記憶と、学校・役所へ届いた命令を分け、占領が地域行政の日常へ入った経路を検証する。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:102〜107頁",
+        "web:https://www.jacar.archives.go.jp/das/meta/B17070003600",
+        "web:https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/016/021/heiwa_book.pdf"
+      ]
+    },
+    {
+      "title": "引揚者住宅 ── 外地から戻った人びとの生活再建",
+      "url": "c157.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "postwar",
+        "social-history",
+        "welfare"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-25",
+      "updated_at": "2026-08-25",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "引揚者",
+        "引揚者住宅",
+        "復員",
+        "定着援護",
+        "戦後生活"
+      ],
+      "level": "L2",
+      "summary": "戦後、外地から磐田地方へ戻った引揚者は、住まい、仕事、戸籍、就学を同時に立て直した。地域資料の『引揚者住宅』を入口に、全国の援護制度と地域の受け入れを照合し、帰還を一日の出来事で終わらせない。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:106頁",
+        "web:https://www.mhlw.go.jp/toukei_hakusho/hakusho/kousei/1956/dl/03.pdf",
+        "web:https://www.pref.shizuoka.jp/kenkofukushi/shakaifukushi/senbotsusha/1022368.html"
+      ]
+    },
+    {
+      "title": "満蒙開拓と磐田 ── 国策移民・青少年義勇軍・引揚げを一続きに読む",
+      "url": "c158.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "war-memory",
+        "migration",
+        "colonial-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-25",
+      "updated_at": "2026-08-25",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "満蒙開拓",
+        "国策移民",
+        "青少年義勇軍",
+        "引揚げ",
+        "植民地支配"
+      ],
+      "level": "L2",
+      "summary": "磐田地方から満州へ渡った開拓民と青少年義勇軍を、農村振興の成功談でも苦難の引揚げだけでもなく、国策による送出、現地の土地、敗戦、残留、帰国まで一続きの歴史として読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:108頁",
+        "web:https://www.tosyokan.pref.shizuoka.jp/contents/t-search/kensimokuji/tusihen6.html",
+        "web:https://www.pref.shizuoka.jp/kenkofukushi/shakaifukushi/senbotsusha/1022368.html",
+        "web:https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/016/021/heiwa_book.pdf"
+      ]
+    },
+    {
+      "title": "1918年米騒動と磐田 ── 米価高騰は地域社会へどう届いたか",
+      "url": "c159.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "social-history",
+        "economic-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-25",
+      "updated_at": "2026-08-25",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "米騒動",
+        "米価",
+        "1918年",
+        "生活経済",
+        "社会運動"
+      ],
+      "level": "L2",
+      "summary": "1918年の米騒動は富山だけの事件ではない。磐田地方でも米価高騰、買占めへの疑い、生活不安、警察と行政の対応が重なった。全国史と地域資料を照合し、騒動の有無と生活危機を分けて読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:110頁",
+        "web:https://www.ndl.go.jp/nikki/citeid/mizuno_19180826"
+      ]
+    },
+    {
+      "title": "救護法から生活保護へ ── 磐田の困窮者支援と生存権",
+      "url": "c160.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "welfare",
+        "social-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-25",
+      "updated_at": "2026-08-25",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "救護法",
+        "方面委員",
+        "生活保護法",
+        "生存権",
+        "社会福祉"
+      ],
+      "level": "L2",
+      "summary": "昭和恐慌下の救護法は、困窮者支援を市町村の行政実務に組み込んだ。戦後の生活保護法までをたどり、慈善、救貧、権利保障の違いと、地域の支援が届かなかった人びとを検証する。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:116〜117頁",
+        "web:https://www.mhlw.go.jp/web/t_doc?dataId=00ta8426&dataType=1&pageNo=1"
+      ]
+    },
+    {
+      "title": "磐田の農地改革 ── 小作地から自作地へ、村の権力はどう変わったか",
+      "url": "c161.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "postwar",
+        "agriculture",
+        "land-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-25",
+      "updated_at": "2026-08-25",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "農地改革",
+        "自作農",
+        "小作農",
+        "農地委員会",
+        "戦後農業"
+      ],
+      "level": "L2",
+      "summary": "戦後農地改革は、地主の土地を国が買収し小作農へ売り渡した制度変更だった。磐田地方の自作・小作比率、農地委員会、価格、地域差を全国制度と照合し、単純な成功物語にしない。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:128〜131頁",
+        "web:https://www.maff.go.jp/j/keiei/koukai/kaikaku/pdf/kaisei_sh.pdf"
+      ]
+    },
+    {
+      "title": "産業組合から農協へ ── 磐田の共同購入・信用・営農指導",
+      "url": "c162.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "agriculture",
+        "economic-history",
+        "cooperative-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-25",
+      "updated_at": "2026-08-25",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "産業組合",
+        "農会",
+        "農業協同組合",
+        "営農指導",
+        "協同組合"
+      ],
+      "level": "L2",
+      "summary": "磐田地方の産業組合と農会は、戦後の農業協同組合へそのまま改名されたわけではない。共同購入、販売、信用、技術指導の機能を分け、制度の断絶と人・施設の継承を検証する。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:130〜133頁",
+        "web:https://www.maff.go.jp/j/keiei/koukai/kaikaku/pdf/kaisei_sh.pdf",
+        "web:https://www.maff.go.jp/j/kokuji_tuti/tuti/t0000291.html"
+      ]
+    },
+    {
+      "title": "新円切替と磐田 ── 預金封鎖は暮らしと地域金融をどう変えたか",
+      "url": "c163.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "postwar",
+        "economic-history",
+        "financial-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-25",
+      "updated_at": "2026-08-25",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "新円切替",
+        "預金封鎖",
+        "戦後インフレ",
+        "地域金融",
+        "日本銀行券"
+      ],
+      "level": "L2",
+      "summary": "1946年の新円切替は、紙幣のデザイン変更ではなく、旧紙幣の強制預入と預金封鎖を伴うインフレ対策だった。磐田の銀行・郵便局・家計に起きた混乱を日本銀行資料と地域記録で検証する。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:136〜139頁",
+        "web:https://www.boj.or.jp/about/education/oshiete/money/c23.htm"
+      ]
+    },
+    {
+      "title": "職業紹介と戦後雇用 ── 磐田で仕事を探す仕組みの成立",
+      "url": "c164.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "postwar",
+        "labor-history",
+        "industry"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-25",
+      "updated_at": "2026-08-25",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "職業紹介所",
+        "公共職業安定所",
+        "職業安定法",
+        "戦後雇用",
+        "労働市場"
+      ],
+      "level": "L2",
+      "summary": "職業紹介所は求人と求職を結ぶ窓口であると同時に、失業、引揚げ、復員、女性就労、産業転換を映す場所だった。磐田の職業紹介から公共職業安定所への変化を、法制度と地域経済の両側から読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:144〜147頁",
+        "web:https://www.mhlw.go.jp/web/t_doc?dataId=75001000&dataType=0"
       ]
     }
   ]
