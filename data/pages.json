@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-08-25",
+  "updated_at": "2026-08-26",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -10004,14 +10004,17 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-07",
-      "updated_at": "2026-07-07",
+      "updated_at": "2026-08-26",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
       "summary": "見付・中泉・掛塚・福田・豊浜にあった芝居小屋と映画館の記憶を、駅前、商店街、テレビ、車社会、郊外型シネコンへの移り変わりから読み解く地域史記事です。",
-      "parent": "c034.html"
+      "parent": "c034.html",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:214頁"
+      ]
     },
     {
       "title": "磐田市の閉鎖したボウリング場を読む — 日活ゴールデンハイツと磐田グランドボウル",
@@ -15921,7 +15924,11 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "section": "見付"
+      "section": "見付",
+      "updated_at": "2026-08-26",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:199〜201頁"
+      ]
     },
     {
       "title": "見付の旧家・屋号・家並み ── 名で語られる商家の記憶",
@@ -17349,7 +17356,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-10",
-      "updated_at": "2026-08-24",
+      "updated_at": "2026-08-26",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -17369,7 +17376,8 @@
       ],
       "level": "L2",
       "source_refs": [
-        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁"
+        "book:磐田ことはじめ 第二編・現代編:行政・自治会17〜55頁／学校・教育56〜88頁",
+        "book:磐田ことはじめ 第二編・現代編:150〜153頁"
       ]
     },
     {
@@ -17599,13 +17607,16 @@
       "themes": [],
       "content_type": "reading",
       "published_at": "2026-06-28",
-      "updated_at": "2026-06-28",
+      "updated_at": "2026-08-26",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "磐南文化協会の郷土史研究発表会、市民聴講座、郷土誌『磐南文化』など、磐南地域の文化活動を支えてきた歩みに敬意と感謝を表し、地域の記録を受け継ぐ意味を考えます。"
+      "summary": "磐南文化協会の郷土史研究発表会、市民聴講座、郷土誌『磐南文化』など、磐南地域の文化活動を支えてきた歩みに敬意と感謝を表し、地域の記録を受け継ぐ意味を考えます。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:209〜211頁"
+      ]
     },
     {
       "title": "磐田物語 憲章",
@@ -26000,7 +26011,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-23",
-      "updated_at": "2026-07-23",
+      "updated_at": "2026-08-26",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26015,7 +26026,10 @@
         "磐田病院",
         "長森こうやく"
       ],
-      "level": "L2"
+      "level": "L2",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:150〜161頁"
+      ]
     },
     {
       "title": "磐田の郵便史 ── 中泉奉行だった前島密と、飛脚から郵便へ",
@@ -26030,7 +26044,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-23",
-      "updated_at": "2026-07-23",
+      "updated_at": "2026-08-26",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26045,7 +26059,10 @@
         "中泉救院",
         "鉄道郵便"
       ],
-      "level": "L3"
+      "level": "L3",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:187〜189頁"
+      ]
     },
     {
       "title": "磐田に電灯がともった日 ── 天竜電力と電気の来た道",
@@ -26060,7 +26077,7 @@
       ],
       "content_type": "reading",
       "published_at": "2026-07-23",
-      "updated_at": "2026-07-23",
+      "updated_at": "2026-08-26",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26074,7 +26091,10 @@
         "電化",
         "水力発電"
       ],
-      "level": "L2"
+      "level": "L2",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:190〜193頁"
+      ]
     },
     {
       "title": "磐田の消防史 ── 火消し・消防組・火の見櫓の記憶",
@@ -26476,7 +26496,7 @@
       ],
       "content_type": "feature",
       "published_at": "2026-08-15",
-      "updated_at": "2026-08-18",
+      "updated_at": "2026-08-26",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -26491,7 +26511,10 @@
         "掛塚橋",
         "旧道"
       ],
-      "level": "L2"
+      "level": "L2",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:182〜187頁"
+      ]
     },
     {
       "title": "磐田市の歴史 ── 2万年の歩みを、テーマと地区から読む",
@@ -30055,7 +30078,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-25",
-      "updated_at": "2026-08-25",
+      "updated_at": "2026-08-26",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -30073,7 +30096,8 @@
       "summary": "昭和恐慌下の救護法は、困窮者支援を市町村の行政実務に組み込んだ。戦後の生活保護法までをたどり、慈善、救貧、権利保障の違いと、地域の支援が届かなかった人びとを検証する。",
       "source_refs": [
         "book:磐田ことはじめ 第二編・現代編:116〜117頁",
-        "web:https://www.mhlw.go.jp/web/t_doc?dataId=00ta8426&dataType=1&pageNo=1"
+        "web:https://www.mhlw.go.jp/web/t_doc?dataId=00ta8426&dataType=1&pageNo=1",
+        "book:磐田ことはじめ 第二編・現代編:162〜167頁"
       ]
     },
     {
@@ -30211,6 +30235,113 @@
       "source_refs": [
         "book:磐田ことはじめ 第二編・現代編:144〜147頁",
         "web:https://www.mhlw.go.jp/web/t_doc?dataId=75001000&dataType=0"
+      ]
+    },
+    {
+      "title": "病を防ぐ町へ ── 磐田の感染症対策と公衆衛生の近代",
+      "url": "c165.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "modern-history",
+        "public-health",
+        "social-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-26",
+      "updated_at": "2026-08-26",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "感染症",
+        "衛生組合",
+        "環境衛生",
+        "避病舎",
+        "検診"
+      ],
+      "level": "L2",
+      "summary": "病院で患者を治すことだけが、地域の健康を守ったのではない。流行性感冒、トラホーム、結核、寄生虫をめぐる検診と予防、衛生組合の大掃除、避病舎、火葬、ごみ・し尿処理までをつなぎ、近代磐田で『衛生』が家庭と行政の共同課題になった過程を読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:150〜161頁",
+        "web:https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/column35.html",
+        "web:https://hourei.ndl.go.jp/simple/detail?lawId=0000004040",
+        "web:https://www.ndl.go.jp/portrait/pickup/006/",
+        "web:https://www.mhlw.go.jp/web/t_doc?dataId=00ta0054&dataType=1&pageNo=1"
+      ]
+    },
+    {
+      "title": "配給下の磐田 ── 米・木炭・国民服・代用品の生活史",
+      "url": "c166.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "war-memory",
+        "daily-life",
+        "economic-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-26",
+      "updated_at": "2026-08-26",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "配給",
+        "食糧統制",
+        "国民服",
+        "代用品",
+        "戦時生活"
+      ],
+      "level": "L2",
+      "summary": "戦時下の配給は、物が足りないため順番に分けるだけの仕組みではなかった。生産・流通・価格・衣食を国家が統制し、町村、組合、商店、家庭がその末端を担った。木炭、米、塩、衣料、国民服、代用品の記録から、統制と日々の工夫を一続きに読む。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:192〜198頁",
+        "web:https://www.archives.go.jp/exhibition/jousetsu_26_2.html",
+        "web:https://ndlsearch.ndl.go.jp/books/R100000002-I000000683159"
+      ]
+    },
+    {
+      "title": "磐田の子どもの遊び ── 昭和30年代までの路地・原っぱ・手作り玩具",
+      "url": "c167.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "daily-life",
+        "folklore",
+        "children-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-08-26",
+      "updated_at": "2026-08-26",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・資料",
+      "topics": [
+        "子どもの遊び",
+        "手作り玩具",
+        "路地",
+        "民俗",
+        "昭和30年代"
+      ],
+      "level": "L2",
+      "summary": "遊びは懐かしい名前の一覧ではない。車の少ない路地、田畑や川、身近な竹・紙・木の実、年上から年下へ伝わる規則がそろって成立した子どもの社会である。昭和30年代までの記録を、場所、材料、仲間、季節の四つから読み直す。",
+      "source_refs": [
+        "book:磐田ことはじめ 第二編・現代編:222〜231頁",
+        "web:https://khirin-a.rekihaku.ac.jp/nmjh_nishikie/h-22-1-21-17",
+        "web:https://ndlsearch.ndl.go.jp/books/R100000002-I000001008513"
       ]
     }
   ]

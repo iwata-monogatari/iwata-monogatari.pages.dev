@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">配給の計画と家庭の食卓の間</title>
+  <desc id="desc">生産、割当、配給所、家庭の間に輸送、在庫、現金、燃料という条件があったことを示す。</desc>
+  <rect width="960" height="520" rx="24" fill="#fcf7ec"/>
+  <g font-family="sans-serif">
+    <text x="480" y="55" text-anchor="middle" font-size="30" font-weight="700" fill="#4d5b51">制度上の割当と、実際に使える量は同じではない</text>
+    <g fill="#fff" stroke-width="4">
+      <rect x="55" y="125" width="180" height="120" rx="18" stroke="#6f8c57"/><rect x="285" y="125" width="180" height="120" rx="18" stroke="#9a7a42"/><rect x="515" y="125" width="180" height="120" rx="18" stroke="#8b6b73"/><rect x="745" y="125" width="160" height="120" rx="18" stroke="#47798a"/>
+    </g>
+    <g text-anchor="middle" font-size="25" fill="#2d3d40"><text x="145" y="185">生産・供出</text><text x="375" y="185">町村の割当</text><text x="605" y="185">配給所・商店</text><text x="825" y="185">家庭</text></g>
+    <g stroke="#b59a6b" stroke-width="7" fill="none"><path d="M235 185h42"/><path d="M465 185h42"/><path d="M695 185h42"/></g>
+    <g text-anchor="middle"><rect x="110" y="320" width="170" height="80" rx="40" fill="#efe2bd"/><rect x="300" y="320" width="170" height="80" rx="40" fill="#e8d7c9"/><rect x="490" y="320" width="170" height="80" rx="40" fill="#dce8e4"/><rect x="680" y="320" width="170" height="80" rx="40" fill="#d8e6eb"/><text x="195" y="370" font-size="24">輸送・遅配</text><text x="385" y="370" font-size="24">在庫・欠配</text><text x="575" y="370" font-size="24">現金・価格</text><text x="765" y="370" font-size="24">燃料・調理</text></g>
+    <text x="480" y="470" text-anchor="middle" font-size="21" fill="#58635d">切符があっても、品物・代金・炊く燃料がそろわなければ食卓には届かない</text>
+  </g>
+</svg>
