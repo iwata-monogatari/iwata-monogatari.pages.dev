@@ -1,0 +1,29 @@
+﻿{
+  "_comment": "磐田物語ブログ 台帳。/blog/<slug>/index.html の実体と1対1で対応する。記事の追加は必ずこの台帳への追記と同時に行い、python scripts/build_blog.py で /blog/index.html を再生成する。",
+  "_policy": "このブログは新しい史実を主張しない。既存ページの読み解き・現在の風景との対比・資料の探し方・既存ページへの導線に限る。詳細は docs/BLOG-SKILL.md。",
+  "_url_convention": "/blog/<slug>/ （末尾スラッシュ付きディレクトリ。canonical・og:url もこの形に揃える）",
+  "_kinds": {
+    "reading": "既存ページの読み解き（既存記事を紹介・関連づける）",
+    "now-and-then": "現在の磐田の風景と、既存ページに書かれている過去との対比",
+    "how-to-research": "資料の探し方・郷土史の調べ方",
+    "guide": "地区・地名など、既存ページに既に書かれている内容への導線"
+  },
+  "posts": [
+    {
+      "slug": "20260827-iwata-monogatari-no-arukikata",
+      "date": "2026-08-27",
+      "kind": "guide",
+      "title": "磐田物語の歩き方 ── 地区・テーマ・史料室という三つの入口",
+      "description": "千本を超える記事の中から、読みたい一本にたどり着くための入口を整理する。地区から降りる、テーマから横に読む、史料そのものから入る。三つの入口の使い分けを、実際のページを示しながら案内する。",
+      "internal_links": [
+        "/c007.html",
+        "/c137.html",
+        "/c034.html",
+        "/c019.html",
+        "/c015.html",
+        "/u034.html",
+        "/01001-mitsuke.html"
+      ]
+    }
+  ]
+}

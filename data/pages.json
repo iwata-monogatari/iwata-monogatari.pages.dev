@@ -30343,6 +30343,26 @@
         "web:https://khirin-a.rekihaku.ac.jp/nmjh_nishikie/h-22-1-21-17",
         "web:https://ndlsearch.ndl.go.jp/books/R100000002-I000001008513"
       ]
+    },
+    {
+      "title": "ブログ",
+      "url": "blog/",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "life"
+      ],
+      "content_type": "index",
+      "published_at": "2026-08-27",
+      "updated_at": "2026-08-27",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "サイト内案内",
+      "summary": "磐田物語のブログ。既存ページの読み解き、いまの磐田の風景と記録の対比、郷土史の調べ方を書く。新しい史実はここでは主張しない。実体は data/blog-posts.json と scripts/build_blog.py が管理する。"
     }
   ]
 }

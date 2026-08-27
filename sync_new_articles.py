@@ -14,7 +14,17 @@ UPDATES_PATH = ROOT / "updates.html"
 INDEX_LIMIT = 22
 UPDATES_STATIC_LIMIT = 60
 SITE_ORIGIN = "https://iwata-monogatari.net"
-SKIP_DIRS = {".git", "assets", "data", "docs", "functions", "images", "img", "saguchi", "work"}
+# "blog" は意図的に除外する。/blog/ は毎日自動生成されるブログであり、
+# 資料にあたって書いた本編記事の「新着」フィード（data/new-articles.json →
+# updates.html・トップの新着欄）へ混ぜない。ブログの一覧は
+# scripts/build_blog.py が data/blog-posts.json から別に生成する。
+#
+# ".claude" も除外する。ここには Claude Code の worktree（サイト全体の複製）が
+# 作られることがあり、除外しないと同じ記事が2回発見されて
+# data/new-articles-discovered.json が重複だらけになる（実測: 468件→944件、
+# うち468件が worktree 由来の重複）。.git/info/exclude では Git から隠せても
+# rglob は素通りするため、ここで明示的に止める。
+SKIP_DIRS = {".git", ".claude", "assets", "blog", "data", "docs", "functions", "images", "img", "saguchi", "work"}
 SKIP_FILES = {
     "admin-bbs.html",
     "bbs.html",

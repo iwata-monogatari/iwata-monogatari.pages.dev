@@ -1,0 +1,167 @@
+/* 磐田物語ブログ（/blog/）専用スタイル。
+   本編記事（c*.html 等）の配色・字面に揃えつつ、一覧と記事本文の体裁だけを定義する。
+   本編の共通CSS（site-header.css / iwata-area-color.css）に定義済みのものは再定義しない。 */
+
+:root {
+  --blog-kinari: #fffdf7;
+  --blog-cha: #2f7fa3;
+  --blog-matsu: #356f88;
+  --blog-sumi: #22303a;
+  --blog-usuzumi: #5b6b74;
+  --blog-waku: #d8e8ef;
+}
+
+body {
+  margin: 0;
+  background: var(--blog-kinari);
+  color: var(--blog-sumi);
+  font: 17px/1.95 "Zen Kaku Gothic New", sans-serif;
+}
+
+.blog-main {
+  max-width: 820px;
+  margin: auto;
+  padding: 0 22px 40px;
+}
+
+.blog-main a { color: var(--blog-cha); text-decoration: none; }
+.blog-main a:hover { text-decoration: underline; }
+
+.blog-main .crumb {
+  font-size: 13px;
+  color: var(--blog-usuzumi);
+  padding: 20px 0 6px;
+}
+
+.blog-main h1 {
+  font-family: "Shippori Mincho", serif;
+  font-size: 28px;
+  line-height: 1.5;
+  margin: 6px 0 24px;
+}
+
+.blog-main h2 {
+  font-family: "Shippori Mincho", serif;
+  font-size: 22px;
+  color: var(--blog-matsu);
+  margin: 42px 0 16px;
+  padding-bottom: 9px;
+  border-bottom: 2px solid var(--blog-waku);
+}
+
+.blog-main p { margin: 0 0 20px; }
+
+.blog-main .lead,
+.blog-main .note,
+.blog-main .post-scope {
+  background: #fff;
+  border: 1px solid var(--blog-waku);
+  border-radius: 8px;
+  padding: 20px 22px;
+  margin-bottom: 30px;
+}
+
+.blog-main .note,
+.blog-main .post-scope { font-size: 15px; }
+
+.blog-main .post-scope {
+  border-left: 4px solid var(--blog-cha);
+  color: var(--blog-usuzumi);
+}
+
+.blog-main .post-meta {
+  font-size: 13px;
+  color: var(--blog-usuzumi);
+  margin: 0 0 18px;
+}
+
+.blog-main .post-kind {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--blog-matsu);
+  background: #eef6fa;
+  border: 1px solid var(--blog-waku);
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-left: 8px;
+}
+
+.blog-main .post-author { color: var(--blog-usuzumi); }
+
+/* 一覧 */
+.blog-main .post-list { list-style: none; margin: 0; padding: 0; }
+
+.blog-main .post-item { margin: 0 0 14px; }
+
+.blog-main .post-item-link {
+  display: block;
+  background: #fff;
+  border: 1px solid var(--blog-waku);
+  border-radius: 10px;
+  padding: 18px 20px;
+  color: inherit;
+}
+
+.blog-main .post-item-link:hover {
+  border-color: var(--blog-cha);
+  text-decoration: none;
+}
+
+.blog-main .post-item-meta {
+  display: block;
+  font-size: 13px;
+  color: var(--blog-usuzumi);
+  margin-bottom: 6px;
+}
+
+.blog-main .post-item-title {
+  display: block;
+  font-family: "Shippori Mincho", serif;
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--blog-matsu);
+  margin-bottom: 6px;
+}
+
+.blog-main .post-item-desc {
+  display: block;
+  font-size: 15px;
+  color: var(--blog-usuzumi);
+  line-height: 1.8;
+}
+
+/* 記事本文 */
+.blog-main .post-body ul,
+.blog-main .post-sources ul { padding-left: 1.4em; }
+
+.blog-main .post-body li,
+.blog-main .post-sources li { margin: 0 0 10px; }
+
+.blog-main .section-label {
+  margin-top: 30px;
+  color: var(--blog-matsu);
+  font-size: 18px;
+}
+
+.blog-main .post-sources,
+.blog-main .revision-history { margin: 38px 0; }
+
+.blog-main .related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 16px 0 34px;
+}
+
+.blog-main .related a {
+  border: 1px solid var(--blog-waku);
+  background: #fff;
+  border-radius: 5px;
+  padding: 9px 13px;
+}
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .blog-main h1 { font-size: 23px; }
+  .blog-main h2 { font-size: 20px; }
+}
