@@ -87,6 +87,9 @@ body {
 }
 
 .blog-main .post-author { color: var(--blog-usuzumi); }
+.blog-main .post-cover { margin: 26px 0 30px; }
+.blog-main .post-cover img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; }
+.blog-main .post-cover figcaption { margin-top: 8px; color: var(--blog-usuzumi); font-size: 12px; line-height: 1.7; }
 
 /* 一覧 */
 .blog-main .post-list { list-style: none; margin: 0; padding: 0; }
