@@ -441,8 +441,8 @@ def build_index(posts: list[dict]) -> str:
   <div class="lead">{LEAD}</div>
   <div class="note">
     このブログは既存ページへの案内役です。史実そのものは本編の記事に書いてあります。
-    まとまった記録を読みたい方は<a href="/c034.html">全記事一覧</a>、
-    テーマから探す方は<a href="/c137.html">テーマから調べる</a>をご覧ください。
+    まとまった記録を読みたい方は<a href="/c034">全記事一覧</a>、
+    テーマから探す方は<a href="/c137">テーマから調べる</a>をご覧ください。
   </div>
 {body}
 </main>

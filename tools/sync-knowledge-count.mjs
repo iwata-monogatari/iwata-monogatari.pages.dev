@@ -5,6 +5,7 @@
 //   node tools/sync-knowledge-count.mjs --check   反映せず、ズレがあれば exit code 1（CI向け）
 //   node tools/sync-knowledge-count.mjs --audit   反映せず、監査レポートのみ表示
 
+import { existsSync } from "node:fs";
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -50,12 +51,12 @@ async function auditAgainstArticleIndex(pages) {
   } catch {
     return null; // c034.html が見つからない環境では監査をスキップする
   }
-  const hrefs = [...html.matchAll(/<li><a href="([^"]+)">/g)].map((m) =>
-    m[1].replace(/^\//, "")
-  );
+  const hrefs = [...html.matchAll(/<li><a href="([^"]+)">/g)].map((m) => urlKey(m[1]));
   const indexUrls = new Set(hrefs);
 
-  const byUrl = new Map(pages.map((p) => [p.url, p]));
+  // pages.json は url を "c094.html" 形式で持つ一方、一覧のリンクは公開形（拡張子なし）。
+  // 突き合わせは urlKey で正規化した形で行う。
+  const byUrl = new Map(pages.map((p) => [urlKey(p.url), p]));
 
   const missing = []; // 一覧にあるが pages.json に存在しない
   const notCounted = []; // pages.json にはあるが count_as_knowledge が true でない
@@ -79,16 +80,28 @@ async function auditAgainstArticleIndex(pages) {
   }
 
   const orphaned = pages
-    .filter((p) => p.count_as_knowledge === true && !indexUrls.has(p.url))
+    .filter((p) => p.count_as_knowledge === true && !indexUrls.has(urlKey(p.url)))
     .map((p) => p.url);
 
   return { totalIndexed: indexUrls.size, missing, notCounted, orphaned, brokenLinks };
 }
 
+// "/c094.html"、"c094"、"/oishi-ronko/165/" のような表記ゆれを1つのキーに揃える。
+function urlKey(url) {
+  let u = String(url ?? "").replace(/^\//, "");
+  u = u.replace(/index\.html$/, "").replace(/\.html$/, "");
+  return u.replace(/\/$/, "");
+}
+
 function resolveLocalPath(url) {
   let u = url.replace(/^\//, "");
   if (u === "" || u.endsWith("/")) return u + "index.html";
-  if (!u.endsWith(".html")) return u + "/index.html";
+  if (!u.endsWith(".html")) {
+    // 公開URLは拡張子なしに統一してあるので、/c034 のような形は
+    // c034.html と c034/index.html のどちらでも配信されうる。実在するほうを返す。
+    if (existsSync(path.join(ROOT, u + ".html"))) return u + ".html";
+    return u + "/index.html";
+  }
   return u;
 }
 

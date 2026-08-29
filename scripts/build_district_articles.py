@@ -293,6 +293,22 @@ def esc(text):
     )
 
 
+def clean_url(url):
+    """pages.json の url（例 o001.html）を公開URLの形へ揃える。
+
+    Cloudflare Pages は .html 付きURLを拡張子なしへ 308 リダイレクトするため、
+    リンクは最初から拡張子なしで出力して余計な1ホップを作らない。
+    ディレクトリの index.html は末尾スラッシュ形式にする。
+    """
+    if url.endswith("/index.html"):
+        return url[: -len("index.html")]
+    if url == "index.html":
+        return ""
+    if url.endswith(".html"):
+        return url[: -len(".html")]
+    return url
+
+
 def build_rows_html(pages):
     rows = []
     for idx, p in enumerate(pages):
@@ -306,7 +322,7 @@ def build_rows_html(pages):
         # うえ、複数テーマが並ぶと折り返してしまうため）。
         theme_display = esc(short_theme_display(labels))
         title = esc(p.get("title") or "")
-        url = esc(p.get("url") or "")
+        url = esc(clean_url(p.get("url") or ""))
         summary = esc(truncate_summary(p.get("summary") or ""))
         published = p.get("published_at") or ""
         date_disp = published.replace("-", ".")

@@ -324,10 +324,15 @@ def verify_latest_sync(pages, latest, index_html, updates_html):
 
     update_urls = hrefs_from_updates(updates_html)
     expected_update_urls = latest_urls[: min(60, len(latest_urls))]
-    if update_urls[: len(expected_update_urls)] != expected_update_urls:
+    # 台帳に .html 付きで残っているURLと、公開形（拡張子なし）で出力されたリンクは
+    # 同じ記事を指す。ここで見たいのは並び順と欠落なので equivalent_url で照合する。
+    if not all(
+        idx < len(update_urls) and equivalent_url(update_urls[idx], expected)
+        for idx, expected in enumerate(expected_update_urls)
+    ):
         for idx, expected in enumerate(expected_update_urls):
             actual = update_urls[idx] if idx < len(update_urls) else "(missing)"
-            if actual != expected:
+            if not equivalent_url(actual, expected):
                 return fail(
                     "updates.html is out of sync with data/new-articles.json at item "
                     f"{idx + 1}: expected {expected}, got {actual}; run `npm run build`"
@@ -335,7 +340,12 @@ def verify_latest_sync(pages, latest, index_html, updates_html):
         return fail("updates.html is out of sync with data/new-articles.json; run `npm run build`")
 
     latest_urls_top = latest_urls[:5]
-    missing_from_home = [url for url in latest_urls_top if url not in index_html]
+    # トップに載っているかどうかも、.html の有無で取りこぼさないように両形で確かめる。
+    missing_from_home = [
+        url for url in latest_urls_top
+        if f'href="{url}"' not in index_html
+        and f'href="{url.removesuffix(".html")}"' not in index_html
+    ]
     if missing_from_home:
         return fail("latest articles missing from home: " + ", ".join(missing_from_home))
 

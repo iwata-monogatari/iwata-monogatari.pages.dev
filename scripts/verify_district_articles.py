@@ -72,9 +72,10 @@ def verify_district(district, data, errors):
         errors.append(f"[{district_id}] 「表示中：N件」の初期値が不一致")
 
     # ビルド時に埋め込んだ全URLがHTML中に存在するか
+    # （リンクは拡張子なしで出力するので、比較も bda.clean_url を通した形で行う）
     missing_links = [
         p["url"] for p in expected_pages
-        if f'href="/{p["url"]}"' not in html
+        if f'href="/{bda.clean_url(p["url"])}"' not in html
     ]
     if missing_links:
         errors.append(f"[{district_id}] 一覧に現れないURL: {missing_links[:10]}")

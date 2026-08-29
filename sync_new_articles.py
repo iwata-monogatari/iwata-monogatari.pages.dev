@@ -52,6 +52,20 @@ def ledger_key_url(url):
     return u
 
 
+def display_url(url):
+    """表示（リンク）用URLを公開形へ揃える。
+
+    Cloudflare Pages は .html 付きURLを拡張子なしへ 308 リダイレクトするため、
+    台帳側に .html 付きで残っている記事も、出力するリンクは拡張子なしにする。
+    末尾スラッシュのディレクトリURL（/oishi-ronko/165/ など）はそのまま扱う。"""
+    u = str(url or "").strip()
+    if u.endswith("/index.html"):
+        return u[: -len("index.html")]
+    if u.endswith(".html"):
+        return u[: -len(".html")]
+    return u
+
+
 def load_articles():
     data = load_json_array(DATA_PATH)
     # 発見一覧は台帳の欠落を補うためのフォールバックである。同じURLが手動台帳に
@@ -395,7 +409,7 @@ def render_index_item(item):
     return "\n".join(
         [
             f'          <li class="new-article-item news-item"{li_attr}>',
-            f'            <a href="{esc(item["url"])}" class="{esc(a_cls)}">',
+            f'            <a href="{esc(display_url(item["url"]))}" class="{esc(a_cls)}">',
             f'              <span class="news-meta"><time class="new-article-date news-date" datetime="{esc(item["date"])}">{esc(item["date"])}</time><span class="new-article-category news-tag">{esc(item["category"])}</span></span>',
             f'              <span class="new-article-title news-title">{esc(item["title"])}</span>',
             '              <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>',
@@ -409,7 +423,7 @@ def render_update_item(item):
     cls = area_class(item)
     a_cls = f"history-link {cls}" if cls else "history-link"
     return (
-        f'      <li class="history-item"><a class="{esc(a_cls)}" href="{esc(item["url"])}">'
+        f'      <li class="history-item"><a class="{esc(a_cls)}" href="{esc(display_url(item["url"]))}">'
         f'<time class="history-date" datetime="{esc(item["date"])}">{esc(item["date"])}</time>'
         f'<span class="history-category">{esc(item["category"])}</span>'
         f'<span class="history-title">{esc(item["title"])}</span></a></li>'

@@ -190,6 +190,13 @@ def page_path_for_url(url):
     if url.endswith("/"):
         return ROOT / rel / "index.html"
     if not rel.endswith(".html"):
+        # 公開URLは拡張子なしに統一されている。/c165 のような形は
+        # c165.html と c165/index.html のどちらでも配信されうるため、
+        # 実在するほうを返す（見つからなければ従来どおり index.html を返して
+        # 呼び出し側にエラーを出させる）。
+        direct = ROOT / f"{rel}.html"
+        if direct.is_file():
+            return direct
         return ROOT / rel / "index.html"
     return ROOT / rel
 
