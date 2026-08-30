@@ -1,4 +1,4 @@
-﻿{
+{
   "_comment": "磐田物語ブログ 台帳。/blog/<slug>/index.html の実体と1対1で対応する。記事の追加は必ずこの台帳への追記と同時に行い、python scripts/build_blog.py で /blog/index.html を再生成する。",
   "_policy": "このブログは新しい史実を主張しない。既存ページの読み解き・現在の風景との対比・資料の探し方・既存ページへの導線に限る。詳細は docs/BLOG-SKILL.md。",
   "_url_convention": "/blog/<slug>/ （末尾スラッシュ付きディレクトリ。canonical・og:url もこの形に揃える）",
@@ -51,6 +51,20 @@
         "/t042.html",
         "/r045.html",
         "/oishi-ronko/141/"
+      ]
+    },
+    {
+      "slug": "20260830-kaketsuka-matsuri-nittei",
+      "date": "2026-08-30",
+      "kind": "guide",
+      "title": "掛塚まつりの日程2026 ── 磐田論考でたどる湊町の記録",
+      "description": "磐田市は2026年10月17日・18日に掛塚まつりが行われると公表した。会場は貴船神社周辺。日付だけでは見えてこない9台の屋台、県指定の屋台囃子、2024年に市指定となった竹馬について、磐田物語の既存ページから案内する。",
+      "internal_links": [
+        "/oishi-ronko/015/",
+        "/oishi-ronko/167/",
+        "/oishi-ronko/175/",
+        "/oishi-ronko/054/",
+        "/oishi-ronko/029/"
       ]
     }
   ]
