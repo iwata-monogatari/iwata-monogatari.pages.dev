@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-08-26",
+  "updated_at": "2026-08-30",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -30493,6 +30493,100 @@
       "level": "L3",
       "summary": "冊子終盤の系図と慶長9年検地帳の姓名対照を、原史料、人物同定、家の比定、系譜の連続という四層へ分け、私家版郷土史を再検証する方法を示す。",
       "source_refs": ["book:寺田勝彦『福田の寺田一族』:1984-07-15:14～17頁", "internal:f032.html:慶長9年検地帳と福田の二十五苗"]
+    },
+    {
+      "title": "『米軍機の遠州地方空襲記』を読む ── 鈴木翰が見た工場・空・海の戦争",
+      "url": "c168.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "war-history",
+        "air-raids",
+        "testimony",
+        "source-criticism"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-08-30",
+      "updated_at": "2026-08-30",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・戦争体験資料",
+      "topics": [
+        "鈴木翰",
+        "米軍機の遠州地方空襲記",
+        "浜松空襲",
+        "遠州灘",
+        "軍需工場",
+        "機銃掃射"
+      ],
+      "level": "L3",
+      "summary": "鈴木翰の私家版全20頁を読み、軍需生産の現場、警報と機銃掃射、遠州灘の漁船被害、敗戦後の戦争観を、回想・地域的背景・未確認事項に分けて検討する。",
+      "source_refs": [
+        "book:鈴木翰『米軍機の遠州地方空襲記』:1984:全20頁",
+        "internal:h001.html:二十一世紀に伝えたい戦争体験",
+        "internal:h002.html:浜松大空襲と磐田・見付の空"
+      ]
+    },
+    {
+      "title": "日本楽器の戦時生産と工場空襲 ── 鈴木翰の回想から",
+      "url": "c169.html",
+      "district": ["common"],
+      "themes": ["war-history", "industry-history", "air-raids", "testimony", "source-criticism"],
+      "content_type": "reading",
+      "published_at": "2026-08-30",
+      "updated_at": "2026-08-30",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・戦争体験資料",
+      "topics": ["日本楽器製造", "軍需工場", "工場空襲", "学徒動員", "鈴木翰", "B29", "B24"],
+      "level": "L3",
+      "summary": "鈴木翰の回想から、楽器工場が軍需生産へ組み込まれた現場、警報と退避、若い働き手、米軍機の記憶を、企業史料との照合課題とともに読む。",
+      "source_refs": ["book:鈴木翰『米軍機の遠州地方空襲記』:1984:1～10頁", "internal:c065.html:ヤマハ発動機と企業城下町としての磐田", "internal:h003.html:学徒動員と対空戦"]
+    },
+    {
+      "title": "遠州灘の漁船機銃掃射 ── 海で働く人びとの戦争",
+      "url": "c170.html",
+      "district": ["common", "fukude", "ryuyo"],
+      "themes": ["war-history", "fishing", "air-raids", "testimony", "source-criticism"],
+      "content_type": "reading",
+      "published_at": "2026-08-30",
+      "updated_at": "2026-08-30",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・戦争体験資料",
+      "topics": ["遠州灘", "漁船", "機銃掃射", "漂流", "救助", "福田港", "鈴木翰"],
+      "level": "L3",
+      "summary": "遠州灘の小型漁船が攻撃され、乗組員が漂流・救助されたという鈴木翰の記録を、港・操業域・攻撃地点・帰着地を分けて検討する。",
+      "source_refs": ["book:鈴木翰『米軍機の遠州地方空襲記』:1984:11～17頁", "internal:f001.html:福田湊の発展と遠州の漁業史", "internal:r061.html:天竜川河口付近での遭難船の歴史"]
+    },
+    {
+      "title": "鈴木翰は敗戦をどう受け止めたか ── 空襲体験から戦後思想へ",
+      "url": "c171.html",
+      "district": ["common"],
+      "themes": ["war-history", "memory-history", "political-thought", "testimony", "source-criticism"],
+      "content_type": "reading",
+      "published_at": "2026-08-30",
+      "updated_at": "2026-08-30",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・戦争体験資料",
+      "topics": ["鈴木翰", "敗戦", "軍国主義", "戦争責任", "反戦思想", "私家版", "記憶史"],
+      "level": "L3",
+      "summary": "『米軍機の遠州地方空襲記』終盤を、1945年の体験、敗戦後の解釈、1984年の政治的意見に分け、一人の戦後思想として読む。",
+      "source_refs": ["book:鈴木翰『米軍機の遠州地方空襲記』:1984:16～20頁", "internal:h001.html:二十一世紀に伝えたい戦争体験", "internal:c156.html:占領軍と地方軍政部"]
     },
     {
       "title": "ブログ",
