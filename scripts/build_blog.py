@@ -74,6 +74,7 @@ ALLOWED_EXTERNAL_HOST_SUFFIXES = (
     ".ac.jp",
     "city.iwata.shizuoka.jp",
     "pref.shizuoka.jp",
+    "lega-shizu.com",  # 静岡県「しずおか無形民俗文化財ナビ」
     "rekihaku.ac.jp",
     "ndl.go.jp",
     "bunka.go.jp",
@@ -421,6 +422,7 @@ def build_index(posts: list[dict]) -> str:
 <meta property="og:url" content="{SITE}/blog/">
 <meta property="og:locale" content="ja_JP">
 <link rel="canonical" href="{SITE}/blog/">
+<link rel="alternate" type="application/atom+xml" title="磐田物語ブログ" href="{SITE}/feed.xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
@@ -456,6 +458,7 @@ def build_index(posts: list[dict]) -> str:
 SITEMAP = ROOT / "sitemap.xml"
 SITEMAP_START = "  <!-- blog:start scripts/build_blog.py が自動生成する区画。手で編集しない。 -->"
 SITEMAP_END = "  <!-- blog:end -->"
+FEED = ROOT / "feed.xml"
 
 
 def build_sitemap_block(posts: list[dict]) -> str:
@@ -496,6 +499,50 @@ def update_sitemap(posts: list[dict]) -> str:
     return "sitemap.xml: 変更なし"
 
 
+def build_feed(posts: list[dict]) -> str:
+    """ブログ台帳からAtomフィードを生成する。"""
+    ordered = sorted(posts, key=lambda p: (p["date"], p["slug"]), reverse=True)
+    newest = ordered[0]["date"] if ordered else "1970-01-01"
+    entries = []
+    for post in ordered:
+        url = f'{SITE}/blog/{post["slug"]}/'
+        title = html.escape(post["title"])
+        summary = html.escape(post["description"])
+        stamp = f'{post["date"]}T00:00:00+09:00'
+        entries.append(
+            "  <entry>\n"
+            f"    <title>{title}</title>\n"
+            f'    <link href="{url}"/>\n'
+            f"    <id>{url}</id>\n"
+            f"    <published>{stamp}</published>\n"
+            f"    <updated>{stamp}</updated>\n"
+            f"    <summary>{summary}</summary>\n"
+            "  </entry>"
+        )
+    body = "\n".join(entries)
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">\n'
+        '  <title>磐田物語ブログ</title>\n'
+        f'  <link href="{SITE}/blog/"/>\n'
+        f'  <link href="{SITE}/feed.xml" rel="self" type="application/atom+xml"/>\n'
+        f'  <id>{SITE}/blog/</id>\n'
+        f'  <updated>{newest}T00:00:00+09:00</updated>\n'
+        '  <author><name>大石浩之</name></author>\n'
+        f'{body}\n'
+        '</feed>\n'
+    )
+
+
+def update_feed(posts: list[dict]) -> str:
+    updated = build_feed(posts)
+    previous = FEED.read_text(encoding="utf-8") if FEED.exists() else ""
+    if updated != previous:
+        FEED.write_text(updated, encoding="utf-8", newline="")
+        return "feed.xml: 更新"
+    return "feed.xml: 変更なし"
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true", help="検査のみ（書き込まない）")
@@ -513,16 +560,19 @@ def main() -> int:
     BLOG_DIR.mkdir(parents=True, exist_ok=True)
     out = BLOG_DIR / "index.html"
     sitemap_note = "sitemap.xml: 未更新（--check）"
+    feed_note = "feed.xml: 未更新（--check）"
     if not args.check:
         out.write_text(build_index(posts), encoding="utf-8", newline="")
         sitemap_note = update_sitemap(posts)
+        feed_note = update_feed(posts)
 
     print(
-        "記事 %d 件 / 品質ゲート未達 0 / 一覧: blog/index.html%s / %s"
+        "記事 %d 件 / 品質ゲート未達 0 / 一覧: blog/index.html%s / %s / %s"
         % (
             len(posts),
             "（未書き込み: --check）" if args.check else "",
             sitemap_note,
+            feed_note,
         )
     )
     return 0
