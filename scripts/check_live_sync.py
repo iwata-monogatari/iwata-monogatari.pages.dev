@@ -52,8 +52,10 @@ def check_git_preflight():
         if branch != "main":
             raise RuntimeError(f"not on main branch: {branch}")
 
+        # この端末では .git/FETCH_HEAD が別ユーザー所有のため書き込めないことがある。
+        # FETCH_HEAD はこのチェックに不要で、remote-tracking ref の更新だけで足りる。
         fetch = subprocess.run(
-            ["git", "fetch", "--quiet", "origin", "main"],
+            ["git", "fetch", "--no-write-fetch-head", "--quiet", "origin", "main"],
             cwd=ROOT,
             capture_output=True,
             text=True,
