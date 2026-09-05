@@ -92,8 +92,9 @@ git commit -m "..."
 git push                    # Cloudflare Pages が自動でビルド・デプロイする
 ```
 
-`wrangler pages deploy` はこのマシンでは実行できない（意図的に権限を外してある）。
-公開は `git push` のみ。詳細は `README.md`。
+`wrangler pages deploy` は使用禁止。`npm run deploy` も機械的に失敗するようにしてある。
+`check-live-sync` が端末共通の Pages 権限を警告しても、その警告だけなら終了コードは0であり、
+同期確認は合格として続行する。公開は `git push` のみ。詳細は `README.md`。
 
 ### 記事HTMLの必須要素
 

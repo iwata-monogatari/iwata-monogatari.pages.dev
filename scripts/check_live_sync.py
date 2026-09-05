@@ -81,13 +81,15 @@ def check_git_preflight():
     return True
 
 
-def check_wrangler_pages_scope():
+def warn_wrangler_pages_scope():
     """2026-07-15: this machine's wrangler login was deliberately re-authenticated
     without the `pages` OAuth scope, so `wrangler pages deploy` can no longer
     bypass git. That restriction isn't a lock -- anything (a future session,
     Codex, a plain `wrangler login`) can silently restore it by logging in
     again with the default scope set. Warn loudly if that happened, since
-    nothing else will notice.
+    nothing else will notice. This is a machine-security warning, not evidence
+    that the repository and production have diverged, so it must not turn an
+    otherwise successful synchronization check into a failed blog update.
     """
     try:
         result = subprocess.run(
@@ -101,18 +103,17 @@ def check_wrangler_pages_scope():
         )
     except (OSError, subprocess.TimeoutExpired) as exc:
         print(f"(wrangler権限チェックをスキップ: {exc})", file=sys.stderr)
-        return True
+        return
 
     output = (result.stdout or "") + (result.stderr or "")
     if "- pages (" in output:
         print(
             "!! 警告: このマシンのwranglerがCloudflare Pagesの権限(pages)を持っています。"
             "2026-07-15に意図的に外した制限が、誰かの`wrangler login`で復活しています。"
-            "`wrangler pages deploy`によるGit非経由の直接デプロイが再び可能な状態です。",
+            "`wrangler pages deploy`によるGit非経由の直接デプロイが再び可能な状態です。"
+            "この警告だけでは同期確認を失敗にしません。公開は必ずgit pushを使ってください。",
             file=sys.stderr,
         )
-        return False
-    return True
 
 
 def normalize_url(url):
@@ -193,7 +194,7 @@ def report(label, local_only, live_only):
 
 def main():
     git_ok = check_git_preflight()
-    scope_ok = check_wrangler_pages_scope()
+    warn_wrangler_pages_scope()
     release_ok = check_release_guard_live()
 
     try:
@@ -222,11 +223,11 @@ def main():
         live_article_urls - local_article_urls,
     )
 
-    if ok1 and ok2 and git_ok and scope_ok and release_ok:
+    if ok1 and ok2 and git_ok and release_ok:
         print("\nローカルと本番は一致しています。作業を始めて問題ありません。")
         return 0
 
-    if ok1 and ok2 and (not git_ok or not scope_ok or not release_ok):
+    if ok1 and ok2 and (not git_ok or not release_ok):
         return 1
 
     print(
