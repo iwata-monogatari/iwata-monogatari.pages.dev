@@ -52,6 +52,7 @@ BLOG_DIR = ROOT / "blog"
 
 SITE = "https://iwata-monogatari.net"
 SITE_NAME = "磐田物語"
+BLOG_CSS_VERSION = "20260908-thumbnails"
 
 MIN_BODY_CHARS = 1200
 MAX_BODY_CHARS = 9000
@@ -474,7 +475,7 @@ def build_index(posts: list[dict]) -> str:
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/site-header.css">
 <link rel="stylesheet" href="/assets/css/iwata-area-color.css">
-<link rel="stylesheet" href="/assets/css/blog.css">
+<link rel="stylesheet" href="/assets/css/blog.css?v={BLOG_CSS_VERSION}">
 <script type="application/ld+json">{breadcrumb_ld}</script>
 </head>
 <body>
