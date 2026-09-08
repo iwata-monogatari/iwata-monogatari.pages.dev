@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-08-30",
+  "updated_at": "2026-09-08",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -30696,6 +30696,40 @@
       "show_in_all_articles": false,
       "section": "サイト内案内",
       "summary": "磐田物語のブログ。既存ページの読み解き、いまの磐田の風景と記録の対比、郷土史の調べ方を書く。新しい史実はここでは主張しない。実体は data/blog-posts.json と scripts/build_blog.py が管理する。"
+    },
+    {
+      "title": "アキザキヤツシロランとは｜磐田の秋咲き希少種（ブログ記事）",
+      "url": "blog/20260908-akizaki-yatsushiroran/",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "shrine-temple",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-09-08",
+      "updated_at": "2026-09-08",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "ブログ・文化財案内",
+      "topics": [
+        "アキザキヤツシロラン",
+        "天然記念物",
+        "希少植物",
+        "福王寺",
+        "城之崎"
+      ],
+      "summary": "2026年8月21日更新の磐田市指定文化財一覧と既存3ページをもとに、アキザキヤツシロラン群生地の指定記録、生態、見頃を断定できない理由を案内するブログ記事。",
+      "source_refs": [
+        "web:https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1002039.html",
+        "internal:n028.html",
+        "internal:oishi-ronko/177/",
+        "internal:oishi-ronko/266/"
+      ]
     }
   ]
 }
