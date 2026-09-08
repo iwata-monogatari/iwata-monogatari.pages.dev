@@ -52,7 +52,7 @@ BLOG_DIR = ROOT / "blog"
 
 SITE = "https://iwata-monogatari.net"
 SITE_NAME = "磐田物語"
-BLOG_CSS_VERSION = "20260908-thumbnails"
+BLOG_ASSET_VERSION = "20260908-search"
 
 MIN_BODY_CHARS = 1200
 MAX_BODY_CHARS = 9000
@@ -244,6 +244,13 @@ def audit(posts: list[dict]) -> list[tuple[str, str]]:
                 add(f"台帳の必須項目『{field}』が空")
         if post.get("kind") and post["kind"] not in KIND_LABEL:
             add(f"kind『{post['kind']}』は未定義（{'/'.join(KIND_LABEL)}）")
+        tags = post.get("tags")
+        if not isinstance(tags, list) or not tags:
+            add("検索用の tags が無い")
+        else:
+            cleaned_tags = [str(tag).strip() for tag in tags]
+            if not all(cleaned_tags) or len(cleaned_tags) != len(set(cleaned_tags)):
+                add("tags に空欄または重複がある")
 
         index_path = BLOG_DIR / slug / "index.html"
         if not index_path.is_file():
@@ -388,6 +395,35 @@ LEAD = (
 
 def build_index(posts: list[dict]) -> str:
     items = []
+    all_tags = sorted(
+        {
+            str(tag).strip()
+            for post in posts
+            for tag in post.get("tags", [])
+            if str(tag).strip()
+        }
+    )
+    all_months = sorted({post["date"][:7] for post in posts}, reverse=True)
+    used_kinds = {post.get("kind", "") for post in posts}
+
+    kind_options = "".join(
+        f'<option value="{html.escape(kind, quote=True)}">{html.escape(label)}</option>'
+        for kind, label in KIND_LABEL.items()
+        if kind in used_kinds
+    )
+    tag_options = "".join(
+        f'<option value="{html.escape(tag, quote=True)}">{html.escape(tag)}</option>'
+        for tag in all_tags
+    )
+    month_options = "".join(
+        '<option value="{month}">{year}年{month_number}月</option>'.format(
+            month=month,
+            year=int(month[:4]),
+            month_number=int(month[5:7]),
+        )
+        for month in all_months
+    )
+
     for post in sorted(posts, key=lambda p: (p["date"], p["slug"]), reverse=True):
         label = KIND_LABEL.get(post.get("kind", ""), "")
         badge = (
@@ -411,14 +447,46 @@ def build_index(posts: list[dict]) -> str:
         link_class = (
             "post-item-link post-item-link--with-thumb" if cover else "post-item-link"
         )
+        tags = [str(tag).strip() for tag in post.get("tags", []) if str(tag).strip()]
+        tag_chips = (
+            '<span class="post-item-tags">'
+            + "".join(
+                f'<span class="post-tag">{html.escape(tag)}</span>' for tag in tags
+            )
+            + "</span>"
+        )
+        article_src = (BLOG_DIR / post["slug"] / "index.html").read_text(
+            encoding="utf-8"
+        )
+        article_body = post_body(article_src) or ""
+        search_text = re.sub(
+            r"\s+",
+            " ",
+            " ".join(
+                (
+                    post["title"],
+                    post["description"],
+                    label,
+                    " ".join(tags),
+                    strip_tags(article_body),
+                )
+            ),
+        ).strip()
         items.append(
-            '<li class="post-item"><a class="{link_class}" href="/blog/{slug}/">'
+            '<li class="post-item" data-search="{search_text}" data-kind="{kind}" '
+            'data-tags="{tags}" data-month="{month}">'
+            '<a class="{link_class}" href="/blog/{slug}/">'
             '{thumbnail}'
             '<span class="post-item-meta"><time datetime="{date}">{shown}</time>{badge}</span>'
             '<span class="post-item-title">{title}</span>'
             '<span class="post-item-desc">{desc}</span>'
+            '{tag_chips}'
             "</a></li>".format(
                 slug=post["slug"],
+                search_text=html.escape(search_text, quote=True),
+                kind=html.escape(post.get("kind", ""), quote=True),
+                tags=html.escape("|".join(tags), quote=True),
+                month=html.escape(post["date"][:7], quote=True),
                 link_class=link_class,
                 thumbnail=thumbnail,
                 date=post["date"],
@@ -426,6 +494,7 @@ def build_index(posts: list[dict]) -> str:
                 badge=badge,
                 title=html.escape(post["title"]),
                 desc=html.escape(post["description"]),
+                tag_chips=tag_chips,
             )
         )
 
@@ -434,6 +503,35 @@ def build_index(posts: list[dict]) -> str:
         if items
         else '<p class="note">記事はまだありません。</p>'
     )
+    search_panel = f"""  <section class="blog-search" aria-labelledby="blog-search-title" data-blog-search>
+    <div class="blog-search-heading">
+      <h2 id="blog-search-title">記事を探す</h2>
+      <p>キーワード、分類、タグ、投稿月を組み合わせて絞り込めます。</p>
+    </div>
+    <div class="blog-search-controls">
+      <label class="blog-search-field blog-search-field--query" for="blog-search-query">
+        <span>キーワード</span>
+        <input type="search" id="blog-search-query" placeholder="例：古墳、防災、見付" autocomplete="off">
+      </label>
+      <label class="blog-search-field" for="blog-search-kind">
+        <span>分類</span>
+        <select id="blog-search-kind"><option value="">すべての分類</option>{kind_options}</select>
+      </label>
+      <label class="blog-search-field" for="blog-search-tag">
+        <span>タグ</span>
+        <select id="blog-search-tag"><option value="">すべてのタグ</option>{tag_options}</select>
+      </label>
+      <label class="blog-search-field" for="blog-search-month">
+        <span>投稿月</span>
+        <select id="blog-search-month"><option value="">すべての月</option>{month_options}</select>
+      </label>
+    </div>
+    <div class="blog-search-summary">
+      <p id="blog-search-status" aria-live="polite">{len(posts)}件の記事</p>
+      <button type="button" id="blog-search-clear" hidden>条件をクリア</button>
+    </div>
+  </section>
+  <p class="blog-search-empty" id="blog-search-empty" hidden>条件に合う記事がありません。キーワードや絞り込み条件を変えてお試しください。</p>"""
     title = "ブログ｜磐田物語"
     desc = (
         "磐田物語のブログ。既存ページの読み解き、いまの磐田の風景と記録の対比、"
@@ -475,7 +573,7 @@ def build_index(posts: list[dict]) -> str:
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/site-header.css">
 <link rel="stylesheet" href="/assets/css/iwata-area-color.css">
-<link rel="stylesheet" href="/assets/css/blog.css?v={BLOG_CSS_VERSION}">
+<link rel="stylesheet" href="/assets/css/blog.css?v={BLOG_ASSET_VERSION}">
 <script type="application/ld+json">{breadcrumb_ld}</script>
 </head>
 <body>
@@ -489,10 +587,12 @@ def build_index(posts: list[dict]) -> str:
     まとまった記録を読みたい方は<a href="/c034">全記事一覧</a>、
     テーマから探す方は<a href="/c137">テーマから調べる</a>をご覧ください。
   </div>
+{search_panel}
 {body}
 </main>
 <section class="article-policy" data-common></section>
 <footer class="im-foot"></footer>
+<script defer src="/assets/js/blog-search.js?v={BLOG_ASSET_VERSION}"></script>
 <script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="iwata-monogatari" data-fujigaoka-analytics="true"></script>
 </body></html>
 """

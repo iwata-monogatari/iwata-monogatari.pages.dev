@@ -61,6 +61,10 @@
 
 `slug` は `YYYYMMDD-英小文字ハイフン` 形式。URLは `/blog/<slug>/`（末尾スラッシュ）。
 
+台帳の各記事には、一覧検索に使う `tags` を1件以上設定する。読者が同じ話題の
+記事を横断できる語（例：`防災`、`祭り`、`古墳・遺跡`）を選び、表記を既存記事と
+そろえる。分類を示す `kind` と同じ語を重ねる必要はない。
+
 ---
 
 ## 3. 記事を1本書いて公開するまでの手順
@@ -75,7 +79,7 @@ npm.cmd run check-live-sync
 # 2. 記事を書く： blog/<slug>/index.html
 #    既存記事（例 c167.html）ではなく、既存のブログ記事をテンプレートにする
 
-# 3. 台帳に追記： data/blog-posts.json の posts[] に1件足す
+# 3. 台帳に追記： data/blog-posts.json の posts[] に1件足し、検索用 tags も設定する
 
 # 4. 検査＋生成（品質ゲートを通らなければ一覧は生成されない）
 python scripts/build_blog.py
