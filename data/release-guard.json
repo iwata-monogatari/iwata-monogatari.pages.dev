@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1788836682,
-  "generation": 20260908120442,
-  "git_commit_at_stamp": "a82a6240427f96e999dbb5c625c6b09ce55a1295",
+  "generated_at_unix": 1788837668,
+  "generation": 20260908122108,
+  "git_commit_at_stamp": "14c0355fdad4d5c5b548712f1911eaa6567f70eb",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,7 +35,7 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "237e5b3b2ff4d0c2d6c80cf1836119868de6766ea649ea55be31bc8f694e5913"
+      "sha256": "b7f74c06ec408712c995b0057bb8f064bfcfc3f3133dfd17c297bfa1f4d8f09c"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "53171fb4e322a68d79b551f1adfc2947acb3f4a3a75b7ac56fdcd9696baf7458"
+      "sha256": "dfff579246977d2a1e0d54aba6a8adce7e6988ed3a4e6c6cc08efc6caf5c461d"
     },
     {
       "path": "package.json",
@@ -67,20 +67,20 @@
     },
     {
       "path": "updates.html",
-      "sha256": "cc0adb27e23e1b2eb5f70766e1cf554d4dc10c998f321e65306e7155d7170d63"
+      "sha256": "a4be2c8f2692c90b564f34c952e9bfa203ea21f1d36cb4a1c58e77dbcc008091"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "8556496f8bf46b2bad430dba38a79e37ae41a08c2360716800dc908a1ffc7334",
+      "content_sha256": "fbba443015e6ed7ba289c197fb098f06953006cf57fa60c04ef72744ecfdcbb8",
       "path": "index.html",
-      "sha256": "53171fb4e322a68d79b551f1adfc2947acb3f4a3a75b7ac56fdcd9696baf7458",
+      "sha256": "dfff579246977d2a1e0d54aba6a8adce7e6988ed3a4e6c6cc08efc6caf5c461d",
       "url": "/"
     },
     {
-      "content_sha256": "9826f0c27335fdfc480dcb5fac2e02224b938195139437c272d29994d76c031d",
+      "content_sha256": "cf22c8b1bd5823709bd01f0fb47d734b50263e1bcffc5ab7596b01b4ebbcd9e2",
       "path": "updates.html",
-      "sha256": "cc0adb27e23e1b2eb5f70766e1cf554d4dc10c998f321e65306e7155d7170d63",
+      "sha256": "a4be2c8f2692c90b564f34c952e9bfa203ea21f1d36cb4a1c58e77dbcc008091",
       "url": "/updates.html"
     },
     {
@@ -144,6 +144,90 @@
       "url": "/s025.html"
     },
     {
+      "content_sha256": "bbc6cd7a14d7b1b77166c3ea63da8d0cbd5986d5e67089045958fb1372753c0e",
+      "path": "blog/20260908-two-theories-kinosaki-castle/index.html",
+      "sha256": "75589815c31e5d7a14e07f879f6afe183d07c29ef68f3e0a6a522fc98de207b5",
+      "url": "/blog/20260908-two-theories-kinosaki-castle"
+    },
+    {
+      "content_sha256": "7877a79151b5c1ef4ab5c86a5c2bce9035688408f06fbce36260e11e97da9a9d",
+      "path": "blog/20260908-ndl-kotenseki-fulltext/index.html",
+      "sha256": "790fbbbabea73f5748560950eea1259f99e2d012e20431973e23eb63335bab58",
+      "url": "/blog/20260908-ndl-kotenseki-fulltext"
+    },
+    {
+      "content_sha256": "958fa240b14e58518b1480efa40fb0fc69bcf87a68a26679b7b50d0f1f4bc308",
+      "path": "blog/20260907-iwata-rice-history-hakuro/index.html",
+      "sha256": "907ac1cfd50ba76350af7ca597938bea893d5b1d4d79ea43b4413d66a8daf5a2",
+      "url": "/blog/20260907-iwata-rice-history-hakuro"
+    },
+    {
+      "content_sha256": "58fc9be575162578bc8f334b48d14775f6b91464f5539cecb14fe90fd287a2a5",
+      "path": "blog/20260907-iwata-water-shortage-2026/index.html",
+      "sha256": "10e3c73fe53b20edc1c00659d659465322d50f9b1f788cfe3a975b3fe33097e7",
+      "url": "/blog/20260907-iwata-water-shortage-2026"
+    },
+    {
+      "content_sha256": "ffdbfc16deec37013aed5bf0f09e8a6bc7046d968cb0439fe31c1784dc6f64ef",
+      "path": "blog/20260906-iwata-old-newspapers/index.html",
+      "sha256": "ebb192cd771116d16aa4223a2b91f5dca957ce1ee14e07872676a401cee7ceb6",
+      "url": "/blog/20260906-iwata-old-newspapers"
+    },
+    {
+      "content_sha256": "73770a315f2cb0b8b6eae74eae6f3c0560c2be8e8592d4dabf429d0af8fbc505",
+      "path": "blog/20260906-iwata-hospital-history/index.html",
+      "sha256": "9ab2369c7a7501dae831f8ec467573b42add8c25eafeb51f81ca0df16687f994",
+      "url": "/blog/20260906-iwata-hospital-history"
+    },
+    {
+      "content_sha256": "01404e9373ca72c0a527ca855c92b10a149dfa46f7f71464434205b7854fc742",
+      "path": "blog/20260906-iwata-bousai-kunren-tonankai/index.html",
+      "sha256": "fc92f134a303dec8acd484a636e5c2b013e662e74b16416b05165c0d1e7a81f7",
+      "url": "/blog/20260906-iwata-bousai-kunren-tonankai"
+    },
+    {
+      "content_sha256": "3da2bbdac00a9bfb90151c2bc4798a49fce99d9205722b92a41a600f349ffa10",
+      "path": "blog/20260905-showa-elementary-school-exhibition/index.html",
+      "sha256": "162ae38afb1682619d89ca3805d7e452ba2d7f23dad6c1b607b8930ee5214b82",
+      "url": "/blog/20260905-showa-elementary-school-exhibition"
+    },
+    {
+      "content_sha256": "fe9e9c899eec663717f2daa71916e54b16f74cb9d74af2a2fd9f38045c2c850a",
+      "path": "blog/20260905-totomi-kokubunji-2026/index.html",
+      "sha256": "b1456bc3d18eaa90bcd9fc5cfc602df5374faf6e28c109a80e05f4ccf3bd7dc0",
+      "url": "/blog/20260905-totomi-kokubunji-2026"
+    },
+    {
+      "content_sha256": "a3d0c68a24bf5f38802ddca3f80ccb340558f602be78c35319d363ef59f87399",
+      "path": "blog/20260902-nakahara-b-kofun-exhibition/index.html",
+      "sha256": "f35a56c7366b7afce0c44c324ac99587346a42e3242b197c2a4eba0bccd85923",
+      "url": "/blog/20260902-nakahara-b-kofun-exhibition"
+    },
+    {
+      "content_sha256": "361177e96fc8ef0f8d01323822eb022c271a6611e3991759f89b5fe88042a92c",
+      "path": "blog/20260901-mitsuke-tenjin-hadaka-matsuri-2026/index.html",
+      "sha256": "07a2f260272c71f69166d378ac7617e00b7a3f4e970f5ce2985e0b62c4081ce5",
+      "url": "/blog/20260901-mitsuke-tenjin-hadaka-matsuri-2026"
+    },
+    {
+      "content_sha256": "66711234cb1965cf748ed245f0c4c2c3b342c44e54d0de6e854200bd2736cb45",
+      "path": "blog/20260901-showa-100-iwata-map/index.html",
+      "sha256": "ee767a072632ea8ca4cfa0b051d831e06325942fcb9b879aee336dc4c0515abf",
+      "url": "/blog/20260901-showa-100-iwata-map"
+    },
+    {
+      "content_sha256": "0a846b4bb0590ae863c19a32571938fca4fdacea87485fd77e63a54bf452fc89",
+      "path": "blog/20260831-mitsuke-nakaizumi-jinko/index.html",
+      "sha256": "30034065972e745f148f7aa142fdcff9b1d2d8d7e4c4be0fb113104264584a48",
+      "url": "/blog/20260831-mitsuke-nakaizumi-jinko"
+    },
+    {
+      "content_sha256": "6ee51b4d4508013c36e92c42fb8f859c6a663df6d2f419b1351b9ffb444ad60e",
+      "path": "blog/20260831-iwata-kofun-naze-ooi/index.html",
+      "sha256": "b888cefb029f3fb24be17769b2205f7fb76d8e02eb37938fcd57c83a637685f6",
+      "url": "/blog/20260831-iwata-kofun-naze-ooi"
+    },
+    {
       "content_sha256": "6777ff5bbd3fbfd97de45f5feeaf42430702bb2d106c37c187e6f6cc13f85e21",
       "path": "c171.html",
       "sha256": "c19ebdffdd0d25aa46e81e77d406ddcf79f1500ac9070ebda08ab3fd09aa3409",
@@ -160,6 +244,12 @@
       "path": "c169.html",
       "sha256": "a9443edd5f272f498062e24f233f73f505111feb46517df824f07873fe1dfbd4",
       "url": "/c169.html"
+    },
+    {
+      "content_sha256": "0e689fd2a7bf218f0d54da690c6e33c02eeb371cc4cbc9030a774ba01f2e55b6",
+      "path": "blog/20260830-kaketsuka-matsuri-nittei/index.html",
+      "sha256": "52e4af566d671d5620a4a280147319db7aac713edd23dc06ffaaaae0612a5971",
+      "url": "/blog/20260830-kaketsuka-matsuri-nittei"
     },
     {
       "content_sha256": "b5e41d4a9fa5843e18a0005bb462ba3bc7eb6b9ada412636ec85910524d53b81",
@@ -202,6 +292,24 @@
       "path": "oishi-ronko/301/index.html",
       "sha256": "d7aa8715fb06ab2fedcecbf2530a2184442f59def7a1532424ba0bd2ef51bf61",
       "url": "/oishi-ronko/301"
+    },
+    {
+      "content_sha256": "bc4b565024963f595a6dff90a4752f6b6baaf8e1d5312bd92e4b77db75ed74bb",
+      "path": "blog/20260828-tenryugawa-hanran-hazardmap/index.html",
+      "sha256": "23035367a7225ae02f55b554c1ec718348e70b94fdfbe78294355a21d1032ea4",
+      "url": "/blog/20260828-tenryugawa-hanran-hazardmap"
+    },
+    {
+      "content_sha256": "1615763cb5e8aa9d067cfdb156aa23907c2411c02894e28ac2bcff1802093345",
+      "path": "blog/20260827-iwata-kyodo-shiryo-shirabekata/index.html",
+      "sha256": "5333d01468c273675d368172c74da8594737c54896287a621267b25e0f0cbe6e",
+      "url": "/blog/20260827-iwata-kyodo-shiryo-shirabekata"
+    },
+    {
+      "content_sha256": "35fe6b3efdbbe9ffc7adc888a3b5bea31ef919ea035b0875bfeb225299eb9266",
+      "path": "blog/20260827-iwata-monogatari-no-arukikata/index.html",
+      "sha256": "14595414b0e96f9b975a8729bdfc2a889677a41008be72a36fbc904a40d4cfa7",
+      "url": "/blog/20260827-iwata-monogatari-no-arukikata"
     },
     {
       "content_sha256": "cb759bbad4cac7a65c132f141e04c25a3027a7c1cb7c3bb7533b0b7fcbf77dfe",
@@ -754,123 +862,15 @@
       "path": "k066.html",
       "sha256": "b28882d7c1f1bc37c479061fad1e1101a146cffeee6e8faadb7941ff5d4fc2f5",
       "url": "/k066.html"
-    },
-    {
-      "content_sha256": "c179ba9c7f12b461e43e6433ebb3ba78b950677ddc715c77abdfb877d29d1893",
-      "path": "s027.html",
-      "sha256": "5609fc831226463f4452d8bd01d887f2c6f7d3adcf391e7b41208be59f12c416",
-      "url": "/s027.html"
-    },
-    {
-      "content_sha256": "82b4f0ca51621b0cad1c1bf0438d68ab4892f52b430e504c901c1559f3254cf0",
-      "path": "s028.html",
-      "sha256": "4944d529028a5c08dc91e08bd5b5ba46990c314fc6cf45e82896d3e0a291ef9a",
-      "url": "/s028.html"
-    },
-    {
-      "content_sha256": "ad50d9e060f12b725e62e1109c8a7f927f4b3d587d8920e8b2fab9301669b66d",
-      "path": "n092.html",
-      "sha256": "3730afcc71916ace99d72945764f048d717eb99d1d96fa81b753b7bc4ef9faf7",
-      "url": "/n092.html"
-    },
-    {
-      "content_sha256": "65b07760270ea71917307c8b0ec428f0a7ca1dadb610175d7480e5ddf26bd8b2",
-      "path": "k060.html",
-      "sha256": "7bb63cf228523dc0c15b1e82154b42c823895f192270950e3d52ce280c23c810",
-      "url": "/k060.html"
-    },
-    {
-      "content_sha256": "865702002f9d9e3ab80aaac6fcd11a0f63fa65e30f34ea9cdbb93a7805ae9532",
-      "path": "k061.html",
-      "sha256": "c468ac82612158fdc205f37b5124bec0191809777fb02b473dd10196b88f781c",
-      "url": "/k061.html"
-    },
-    {
-      "content_sha256": "0f4d7c7d9241401d981f3c9983bb88a85ecd6155533810ab504c4985b3e6bbe2",
-      "path": "k062.html",
-      "sha256": "3d737d1f659d2aebd2ab642f293c41428507511ecc9ee9083a7f7e2ccad1ca13",
-      "url": "/k062.html"
-    },
-    {
-      "content_sha256": "4d2f2d6f2dd4ed636f0e1d3e79558376147cd8de56b766550fa5f704fb13dd1f",
-      "path": "s022.html",
-      "sha256": "f432a042fd691c48c4b367da4a719149b9aea0af1ae57b2dc7d784458c358105",
-      "url": "/s022.html"
-    },
-    {
-      "content_sha256": "97fe73730d3e569f821e321bb397b9f2dc2030fff9e2fbe942d9c65b854c6509",
-      "path": "c009.html",
-      "sha256": "87f6f2d3c1aa9f51fba7c285f4a59454ed67c23d5a1daf9c6551a57ea455684b",
-      "url": "/c009.html"
-    },
-    {
-      "content_sha256": "48b49b5e6360c1bd71b2addd58def83ecbf90d0aebf27338ff2555c20e1ab3e0",
-      "path": "c014.html",
-      "sha256": "e41ba86cf0e3f360af8e787528ec530537992d866d46437b6fea0bd5e64c2c73",
-      "url": "/c014.html"
-    },
-    {
-      "content_sha256": "66d46c4aa03d1d2df8f9b8b28f7fcef44a8f386c85a953a32533a0cf56a97dbe",
-      "path": "c016.html",
-      "sha256": "a51676b49d09c349c97172b641a09d182748ba9b4f76ae63bfa23b5f95e1bc6e",
-      "url": "/c016.html"
-    },
-    {
-      "content_sha256": "690c64515ca1ee95ce9886a83a5c5e6957a5606093e33979d7db2ea208178e61",
-      "path": "h001.html",
-      "sha256": "5876fc48121358444da14c2923df60a175f9b5e760282e0a12e32db9aa75b0b5",
-      "url": "/h001.html"
-    },
-    {
-      "content_sha256": "541d0891099a1312daf0fa4244bf566afd053fc5945d74e9826401bd90718620",
-      "path": "c129.html",
-      "sha256": "5a663b0cca3d2d763c9e2ffd15ea229a4dd71c28a373d7e91d026cd5baa6cbc0",
-      "url": "/c129.html"
-    },
-    {
-      "content_sha256": "e401d096a5a87f25e59fa41d5aba58ff433c15b32f23c0d510536a069489cf9d",
-      "path": "c131.html",
-      "sha256": "9f211d865daab4c1f90b409fb177d54a9267c5bb14e74f622ec0d1d76400dbb3",
-      "url": "/c131.html"
-    },
-    {
-      "content_sha256": "c79a5eb0bc4ad43d209ff30f2ffc6f946e5d0d47f33ec06260f0fc8cd5e8caa6",
-      "path": "c132.html",
-      "sha256": "a54d451c91e468acf44e10e2c023eb960b3d4b11bc792cf5820c15c588e3b5bb",
-      "url": "/c132.html"
-    },
-    {
-      "content_sha256": "15f4dc1660151a0f68f862373ecb8eb350b208e3ec6aef6cb26a99565f72cd0b",
-      "path": "c133.html",
-      "sha256": "f7b00c83d94b53f84d680313d1b101d9ae2e415ccda46da601cbd9c6dd434f45",
-      "url": "/c133.html"
-    },
-    {
-      "content_sha256": "e7794a9f0c2bf15e768bc173ea96554aa6ff0f7ef030049f8058f531fda1b636",
-      "path": "c134.html",
-      "sha256": "8b0af473858f97293e906a052cf92e090fa3a07418bf87e966d4da460f57768c",
-      "url": "/c134.html"
-    },
-    {
-      "content_sha256": "9b706029d72ceba2b36fced9f4fca58fe825eb82f531886572c4aaaee0eaab2e",
-      "path": "c135.html",
-      "sha256": "8c037a990eee09513f723c1c8a740a769d48d05f7bcccbb329b1806ba130ddb3",
-      "url": "/c135.html"
-    },
-    {
-      "content_sha256": "1fbb5427fb1335afc387319ec107fc48a691ec97eea98b5972402ebd6747ade5",
-      "path": "c137.html",
-      "sha256": "befa5ccae3a5d18ba39f9df77c866330345596e7fa92094a1576be180411bbf0",
-      "url": "/c137.html"
     }
   ],
   "schema": 1,
-  "state_hash": "448abf93757ec6e803bcea58fa1eea8ebf6d8a77cb56b3df7c0edc57b1bc84be",
+  "state_hash": "77c9b12b51d25f0a29631699b9d15e40a74d9c150de0405b8075f35c0f0053f9",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1101,
-    "new_articles": 1148,
-    "new_articles_sha256": "237e5b3b2ff4d0c2d6c80cf1836119868de6766ea649ea55be31bc8f694e5913",
+    "new_articles": 1166,
+    "new_articles_sha256": "b7f74c06ec408712c995b0057bb8f064bfcfc3f3133dfd17c297bfa1f4d8f09c",
     "pages_sha256": "1faa91761c1c98c9dbeb047c300d3f6f63856318aa0de8d75107e55b8fbfd1a7",
     "pages_total": 1105,
     "published_pages": 1104

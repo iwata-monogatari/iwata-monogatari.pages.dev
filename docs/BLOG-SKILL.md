@@ -129,7 +129,7 @@ git push                    # Cloudflare Pages が自動でビルド・デプロ
 | G3 | 内部リンクがリポジトリに実在すること | デッドリンク・存在しないページの捏造を防ぐ |
 | G15 | タイトルが既存1,000超ページおよび他ブログ記事と重複しないこと | 既存記事と紛らわしい重複記事を防ぐ |
 | G11 | `<p class="post-scope">` が存在すること | 読者にも「ここでは新史実を主張しない」と明示させる |
-| G16 | 新着収集用の `meta` を持たないこと | 本編の新着フィードを汚さない |
+| G16 | 新着収集用の `meta` を持たないこと | HTML走査とブログ台帳からの二重登録を防ぐ |
 
 ほかに、本文分量（G2）、出典2件以上（G8）、canonical/og:url一致（G13）、
 公開日と台帳の一致（G14）、著者表記（G12）、台帳の必須項目（G0）を検査する。
@@ -157,9 +157,11 @@ git push                    # Cloudflare Pages が自動でビルド・デプロ
   `show_in_updates: false`、`show_in_all_articles: false`）。個々の記事は登録しない。
 - `sitemap.xml` … `<!-- blog:start -->`〜`<!-- blog:end -->` を
   `scripts/build_blog.py` が毎回上書きする。区画の外には触れない。
-- `data/new-articles.json` / `updates.html` / `c034.html` … **ブログは載せない**。
-  本編記事の新着だけを扱う場所である。`sync_new_articles.py` の `SKIP_DIRS` に
-  `blog` を追加して機械的に保証してある。
+- `data/new-articles.json` / `updates.html` / トップの新着欄 … ブログ記事も掲載する。
+  `sync_new_articles.py` が `data/blog-posts.json` から読み込み、本編記事と公開日順に
+  統合する。ブログHTML自体は `SKIP_DIRS` の対象に残し、二重登録を防ぐ。
+- `c034.html` … ブログは載せない。本編の全記事一覧であり、ブログは
+  `/blog/` の一覧から探す。
 
 ---
 

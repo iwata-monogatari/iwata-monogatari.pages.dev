@@ -1,7 +1,7 @@
 import html
 import json
 import re
-from datetime import date, datetime
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 
@@ -10,14 +10,14 @@ DATA_PATH = ROOT / "data" / "new-articles.json"
 DISCOVERED_PATH = ROOT / "data" / "new-articles-discovered.json"
 INDEX_PATH = ROOT / "index.html"
 UPDATES_PATH = ROOT / "updates.html"
+BLOG_POSTS_PATH = ROOT / "data" / "blog-posts.json"
 
 INDEX_LIMIT = 22
 UPDATES_STATIC_LIMIT = 60
 SITE_ORIGIN = "https://iwata-monogatari.net"
-# "blog" は意図的に除外する。/blog/ は毎日自動生成されるブログであり、
-# 資料にあたって書いた本編記事の「新着」フィード（data/new-articles.json →
-# updates.html・トップの新着欄）へ混ぜない。ブログの一覧は
-# scripts/build_blog.py が data/blog-posts.json から別に生成する。
+# "blog" はHTML走査から除外する。ブログ記事は本文メタデータではなく、
+# 正本 data/blog-posts.json から load_blog_articles() で新着一覧へ合流させる。
+# 二経路で拾うと重複するため、ディレクトリ走査側では引き続き除外する。
 #
 # ".claude" も除外する。ここには Claude Code の worktree（サイト全体の複製）が
 # 作られることがあり、除外しないと同じ記事が2回発見されて
@@ -68,6 +68,16 @@ def display_url(url):
 
 def load_articles():
     data = load_json_array(DATA_PATH)
+    blog_articles = load_blog_articles()
+    blog_urls = {ledger_key_url(item["url"]) for item in blog_articles}
+    # ブログ台帳を正本にする。過去の同期結果が data/new-articles.json にあっても
+    # いったん除き、タイトル・日付を台帳の現在値で入れ直す。
+    data = [
+        item
+        for item in data
+        if ledger_key_url(item.get("url", "")) not in blog_urls
+    ]
+    data.extend(blog_articles)
     # 発見一覧は台帳の欠落を補うためのフォールバックである。同じURLが手動台帳に
     # ある場合、公開日が異なっても旧メタデータを別の新着記事として復活させない。
     # 更新掲載（例: /c138.html, 2026-08-25）と初版メタデータ（/c138,
@@ -116,11 +126,48 @@ def load_articles():
 
     known_urls = {ledger_key_url(item.get("url", "")) for item in load_json_array(DATA_PATH)}
     for item in normalized:
-        if ledger_key_url(item["url"]) not in known_urls:
+        item_url = ledger_key_url(item["url"])
+        if item_url not in known_urls and item_url not in blog_urls:
             item["published_at"] = now_iso
 
     normalized.sort(key=lambda item: (item["date"], item["published_at"]), reverse=True)
     return normalized
+
+
+def load_blog_articles():
+    if not BLOG_POSTS_PATH.exists():
+        return []
+    with BLOG_POSTS_PATH.open(encoding="utf-8-sig") as f:
+        ledger = json.load(f)
+
+    posts = ledger.get("posts", []) if isinstance(ledger, dict) else []
+    jst = timezone(timedelta(hours=9))
+    articles = []
+    for order, post in enumerate(posts):
+        if not isinstance(post, dict):
+            continue
+        published = str(post.get("date", "")).strip()
+        slug = str(post.get("slug", "")).strip()
+        title = str(post.get("title", "")).strip()
+        if not (published and slug and title):
+            continue
+        try:
+            stamp = datetime.strptime(published, "%Y-%m-%d").replace(
+                hour=12, tzinfo=jst
+            ) + timedelta(seconds=order)
+        except ValueError:
+            continue
+        articles.append(
+            {
+                "date": published,
+                "category": "ブログ",
+                "title": title,
+                "url": f"/blog/{slug}/",
+                # 同日分は台帳への追記順（後のものほど新しい）で並べる。
+                "published_at": stamp.isoformat(timespec="seconds"),
+            }
+        )
+    return articles
 
 
 def load_json_array(path):
