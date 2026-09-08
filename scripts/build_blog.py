@@ -180,6 +180,27 @@ def post_body(src: str) -> str | None:
     return m.group(1) if m else None
 
 
+def post_cover(slug: str) -> dict[str, str] | None:
+    """記事のカバー画像を、一覧用サムネイルの属性として返す。"""
+    src = (BLOG_DIR / slug / "index.html").read_text(encoding="utf-8")
+    figure = re.search(
+        r'<figure\b[^>]*class="[^"]*\bpost-cover\b[^"]*"[^>]*>'
+        r'.*?<img\b([^>]*)>',
+        src,
+        re.S | re.I,
+    )
+    if not figure:
+        return None
+
+    attrs = figure.group(1)
+    values: dict[str, str] = {}
+    for name in ("src", "width", "height"):
+        match = re.search(rf'\b{name}="([^"]+)"', attrs, re.I)
+        if match:
+            values[name] = match.group(1)
+    return values if values.get("src") else None
+
+
 def links_in(fragment: str) -> list[str]:
     return re.findall(r'<a\b[^>]*\bhref="([^"]+)"', fragment)
 
@@ -371,13 +392,34 @@ def build_index(posts: list[dict]) -> str:
         badge = (
             f'<span class="post-kind">{html.escape(label)}</span>' if label else ""
         )
+        cover = post_cover(post["slug"])
+        thumbnail = ""
+        if cover:
+            size = ""
+            if cover.get("width") and cover.get("height"):
+                size = (
+                    f' width="{html.escape(cover["width"], quote=True)}"'
+                    f' height="{html.escape(cover["height"], quote=True)}"'
+                )
+            thumbnail = (
+                '<span class="post-item-thumb">'
+                f'<img src="{html.escape(cover["src"], quote=True)}" alt=""{size} '
+                'loading="lazy" decoding="async">'
+                '</span>'
+            )
+        link_class = (
+            "post-item-link post-item-link--with-thumb" if cover else "post-item-link"
+        )
         items.append(
-            '<li class="post-item"><a class="post-item-link" href="/blog/{slug}/">'
+            '<li class="post-item"><a class="{link_class}" href="/blog/{slug}/">'
+            '{thumbnail}'
             '<span class="post-item-meta"><time datetime="{date}">{shown}</time>{badge}</span>'
             '<span class="post-item-title">{title}</span>'
             '<span class="post-item-desc">{desc}</span>'
             "</a></li>".format(
                 slug=post["slug"],
+                link_class=link_class,
+                thumbnail=thumbnail,
                 date=post["date"],
                 shown=post["date"].replace("-", "."),
                 badge=badge,

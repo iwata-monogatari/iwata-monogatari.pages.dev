@@ -105,12 +105,36 @@ body {
   color: inherit;
 }
 
+.blog-main .post-item-link--with-thumb {
+  display: grid;
+  grid-template-columns: minmax(140px, 180px) minmax(0, 1fr);
+  column-gap: 18px;
+}
+
 .blog-main .post-item-link:hover {
   border-color: var(--blog-cha);
   text-decoration: none;
 }
 
+.blog-main .post-item-thumb {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  align-self: start;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #eef6fa;
+}
+
+.blog-main .post-item-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .blog-main .post-item-meta {
+  grid-column: 2;
   display: block;
   font-size: 13px;
   color: var(--blog-usuzumi);
@@ -118,6 +142,7 @@ body {
 }
 
 .blog-main .post-item-title {
+  grid-column: 2;
   display: block;
   font-family: "Shippori Mincho", serif;
   font-size: 19px;
@@ -127,6 +152,7 @@ body {
 }
 
 .blog-main .post-item-desc {
+  grid-column: 2;
   display: block;
   font-size: 15px;
   color: var(--blog-usuzumi);
@@ -167,4 +193,10 @@ body {
   body { font-size: 16px; }
   .blog-main h1 { font-size: 23px; }
   .blog-main h2 { font-size: 20px; }
+  .blog-main .post-item-link--with-thumb { grid-template-columns: minmax(0, 1fr); row-gap: 8px; }
+  .blog-main .post-item-thumb,
+  .blog-main .post-item-meta,
+  .blog-main .post-item-title,
+  .blog-main .post-item-desc { grid-column: 1; }
+  .blog-main .post-item-thumb { grid-row: auto; margin-bottom: 2px; }
 }
