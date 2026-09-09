@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-09-08",
+  "updated_at": "2026-09-09",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -532,7 +532,7 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "明野陸軍飛行学校天竜分教所跡・福田の祭りと戦時記憶・近代の政策による廃寺を扱った各論を横断し、戦争や近代の力が地域に刻んだ記憶を、物言わぬ跡地と回想という史料の性格を批判しつつ総合する学術論考。大石浩之の磐田論考 第284号。",
+      "summary": "明野陸軍飛行学校天竜分教所跡・福田の祭りと戦時記憶・近代の制度による廃寺を扱った各論を横断し、戦争や近代の力が地域に刻んだ記憶を、物言わぬ跡地と回想という史料の性格を批判しつつ総合する学術論考。大石浩之の磐田論考 第284号。",
       "topics": [
         "戦争の記憶",
         "分教所",
@@ -4968,7 +4968,7 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "明治の上知令などの近代政策によって遠江国分寺が廃寺・断絶した経緯を、制度・災害・人の三要因に腑分けし、廃仏毀釈を主因でなく背景と位置づけて検討する学術論考。大石浩之の磐田論考 第137号。",
+      "summary": "明治の上知令などの近代制度によって遠江国分寺が廃寺・断絶した経緯を、制度・災害・人の三要因に腑分けし、廃仏毀釈を主因でなく背景と位置づけて検討する学術論考。大石浩之の磐田論考 第137号。",
       "topics": [
         "廃寺",
         "上知令",
@@ -29654,7 +29654,7 @@
         "シャウプ勧告"
       ],
       "level": "L3",
-      "summary": "昭和恐慌の農村不況には公共土木による「匡救」が、戦後インフレにはドッジ・ラインの緊縮が処方された。国の経済政策が、磐田地方の税、道路、雇用、学校へどう届いたかを、異なる二時期を混同せずに読む。",
+      "summary": "昭和恐慌の農村不況には公共土木による「匡救」が、戦後インフレにはドッジ・ラインの緊縮が処方された。国の経済運営が、磐田地方の税、道路、雇用、学校へどう届いたかを、異なる二時期を混同せずに読む。",
       "source_refs": [
         "book:磐田ことはじめ 第二編・現代編:38、42、52頁",
         "book:磐田ことはじめ 第二編・現代編:89〜149頁",
@@ -30688,7 +30688,7 @@
       ],
       "content_type": "index",
       "published_at": "2026-08-27",
-      "updated_at": "2026-09-08",
+      "updated_at": "2026-09-09",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": false,
@@ -30763,6 +30763,43 @@
         "internal:c005.html",
         "internal:u034.html",
         "internal:c019.html"
+      ]
+    },
+    {
+      "title": "磐田の旧東海道道標｜秋に歩く4つの見方（ブログ記事）",
+      "url": "blog/20260909-iwata-old-tokaido-guideposts/",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "road-traffic",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-09-09",
+      "updated_at": "2026-09-09",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "ブログ・街道案内",
+      "topics": [
+        "旧東海道",
+        "道標",
+        "一里塚",
+        "松並木",
+        "生活道路",
+        "歩行安全"
+      ],
+      "summary": "磐田の旧東海道で石造物を見る順序を、役割、道筋、現在位置、歩行安全の4面に整理し、生活道路の法定速度変更と秋の交通安全運動を踏まえた確認方法を案内するブログ記事。",
+      "source_refs": [
+        "web:https://www8.cao.go.jp/koutu/keihatsu/undou/r08_aki/youkou.html",
+        "web:https://www.npa.go.jp/bureau/traffic/seikatsudouro/seikatsudoro.html",
+        "internal:c088.html",
+        "internal:t039.html",
+        "internal:m026.html",
+        "internal:c136.html"
       ]
     }
   ]
