@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1788913723,
-  "generation": 20260909092843,
-  "git_commit_at_stamp": "009dac1a0390ae4df98a3042e85bb5c987668620",
+  "generated_at_unix": 1788921523,
+  "generation": 20260909113843,
+  "git_commit_at_stamp": "2380848363e6dba53b53266d5508121d55866d20",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,15 +35,15 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "e2a30da52a97ec6929d78297d3a5f557b5886acfafff254f8af2a2701be1f4db"
+      "sha256": "c343f374520497ccf9f638132f98d342e4cca51cd1f9077bff91c8e2067b7c61"
     },
     {
       "path": "data/pages.json",
-      "sha256": "549d7bb4209abf4db7962008f9f1bb4f149dfc316b4e01a3037e1c182e151ce8"
+      "sha256": "c70f663e56ac104fdb3cc30f0f0c3f32a924d8b9ea0119a1771c83f452c59854"
     },
     {
       "path": "index.html",
-      "sha256": "418dee1dc7a355250f7ad400ca1984f4a3e840889a3df6db474ef77692e5f33c"
+      "sha256": "3d5532234a6971bd9b2df53434794f713126ccef4cc2e0ba03fb0460f7e85f8b"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "29e7ed31428b3e1933acfd8ec540a9c27080d11effea1e72b97101d45d3a7136"
+      "sha256": "f82a00eb257ce546aa33337b3140f1687e2ce23862d22b346e3309bdc7c0c2a2"
     },
     {
       "path": "updates.html",
-      "sha256": "f1f1c849e2c1db918ce9abf8d403d08c42ac089cee1bcc7da8c45f758f351ccb"
+      "sha256": "bd51d0ee72fdf8b10f1f4506f95603d01e6164edde90b2ac768db468ca8e45f3"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "861a61bb30853e08845511376cfb6704209ecd0c230b614e1cb3b0123e1133b4",
+      "content_sha256": "47a49f8965fe37c41cb617a5abb41acfe5e59d96399a3e6606d48d724dab8c9b",
       "path": "index.html",
-      "sha256": "418dee1dc7a355250f7ad400ca1984f4a3e840889a3df6db474ef77692e5f33c",
+      "sha256": "3d5532234a6971bd9b2df53434794f713126ccef4cc2e0ba03fb0460f7e85f8b",
       "url": "/"
     },
     {
-      "content_sha256": "3ef2623434560f864a63ec1b2ce89eec0afff18a02118b956135d8e81d9d373c",
+      "content_sha256": "418b1cf1b4ad8144b12c9d361c7a3388abf12342f64cbba755d6d38c5b5d957d",
       "path": "updates.html",
-      "sha256": "f1f1c849e2c1db918ce9abf8d403d08c42ac089cee1bcc7da8c45f758f351ccb",
+      "sha256": "bd51d0ee72fdf8b10f1f4506f95603d01e6164edde90b2ac768db468ca8e45f3",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "fa03ca3f25a656ef8257c979cbf626c512b1094eb9dfd25cee89d6dc03393d8a",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "06586c49ba6e8f544946dc5839cbf43d4a4de5405a90d5d4397cc6dd708632fc",
+      "path": "blog/20260909-mitsuke-school-iwata-bunko-difference/index.html",
+      "sha256": "99b387f20bfabac60a8aeab9ba811a6d5efa9b639b9afacbca14e490a8e8cc5b",
+      "url": "/blog/20260909-mitsuke-school-iwata-bunko-difference"
     },
     {
       "content_sha256": "9ab45d91587d0bf85335466bb353342f66455a464df18c7e1be8bb8aec1bcf12",
@@ -856,23 +862,17 @@
       "path": "n096.html",
       "sha256": "85779a68cd1b0db453b06cc97464d92d95fcfddfe9ded698c6089835288bc4b0",
       "url": "/n096.html"
-    },
-    {
-      "content_sha256": "c7ed7c4de75f45e488499e0b3a7db01023dbd24daa19edad5e2a1deeb79f80db",
-      "path": "n097.html",
-      "sha256": "db46e68e64e642aa56b8e0c23846cc3cd8fafae0f7121d25706fbda295ff3a5d",
-      "url": "/n097.html"
     }
   ],
   "schema": 1,
-  "state_hash": "a2bfcb88c9bd9152cafb20b3f2edcd6c27754bbaf2d3eebc512d04db86924ac8",
+  "state_hash": "9c918dc375d8f177e5ba724085c8b21799ca570c378f18fa5ec023fafccb3807",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1103,
-    "new_articles": 1171,
-    "new_articles_sha256": "e2a30da52a97ec6929d78297d3a5f557b5886acfafff254f8af2a2701be1f4db",
-    "pages_sha256": "549d7bb4209abf4db7962008f9f1bb4f149dfc316b4e01a3037e1c182e151ce8",
-    "pages_total": 1110,
-    "published_pages": 1109
+    "new_articles": 1172,
+    "new_articles_sha256": "c343f374520497ccf9f638132f98d342e4cca51cd1f9077bff91c8e2067b7c61",
+    "pages_sha256": "c70f663e56ac104fdb3cc30f0f0c3f32a924d8b9ea0119a1771c83f452c59854",
+    "pages_total": 1111,
+    "published_pages": 1110
   }
 }
