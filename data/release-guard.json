@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1789101218,
-  "generation": 20260911133338,
-  "git_commit_at_stamp": "d8642b7233cb25d5d2541530b89273550bc72ae6",
+  "generated_at_unix": 1789115384,
+  "generation": 20260911172944,
+  "git_commit_at_stamp": "b5fa7ea4ccacce150e89241bb2c0348dec40afc9",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,7 +35,7 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "c343f374520497ccf9f638132f98d342e4cca51cd1f9077bff91c8e2067b7c61"
+      "sha256": "486ad28b56a765b16518af31fa2f35b8ba0eb191d8445d75401b4b42b31163ab"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "3d5532234a6971bd9b2df53434794f713126ccef4cc2e0ba03fb0460f7e85f8b"
+      "sha256": "5aa968f752696e0a16eac65ca7a2b9b8b85d090f8f27271b4323cb9b300890d8"
     },
     {
       "path": "package.json",
@@ -67,20 +67,20 @@
     },
     {
       "path": "updates.html",
-      "sha256": "bd51d0ee72fdf8b10f1f4506f95603d01e6164edde90b2ac768db468ca8e45f3"
+      "sha256": "f37aec812604926d74d194869ad0b4f7b7e166ededd6c039f5634172ab509a73"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "47a49f8965fe37c41cb617a5abb41acfe5e59d96399a3e6606d48d724dab8c9b",
+      "content_sha256": "43f5bbf33255a66d624d32764acb0c3f0199bd39a64f3ba447a06773d45ecc36",
       "path": "index.html",
-      "sha256": "3d5532234a6971bd9b2df53434794f713126ccef4cc2e0ba03fb0460f7e85f8b",
+      "sha256": "5aa968f752696e0a16eac65ca7a2b9b8b85d090f8f27271b4323cb9b300890d8",
       "url": "/"
     },
     {
-      "content_sha256": "418b1cf1b4ad8144b12c9d361c7a3388abf12342f64cbba755d6d38c5b5d957d",
+      "content_sha256": "5bae1b3d2ae225de30f91a7fb6f21d158c023e521a96e32592bb2c522b63e41f",
       "path": "updates.html",
-      "sha256": "bd51d0ee72fdf8b10f1f4506f95603d01e6164edde90b2ac768db468ca8e45f3",
+      "sha256": "f37aec812604926d74d194869ad0b4f7b7e166ededd6c039f5634172ab509a73",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "fa03ca3f25a656ef8257c979cbf626c512b1094eb9dfd25cee89d6dc03393d8a",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "38a783be0b7128f10e6b6e917507f1d4134510240592b18028cdb2369dabd03b",
+      "path": "blog/20260911-kyu-akamatsuke-mon-hei/index.html",
+      "sha256": "692c797aff6817fc4461892674897d014ee41acd4802acd4b3f99d38f2a3ede5",
+      "url": "/blog/20260911-kyu-akamatsuke-mon-hei"
     },
     {
       "content_sha256": "06586c49ba6e8f544946dc5839cbf43d4a4de5405a90d5d4397cc6dd708632fc",
@@ -856,21 +862,15 @@
       "path": "n095.html",
       "sha256": "a4c209aba0628e2b14dc47c7a531eb079abc64b30508aa8f0666fb588e6c49c8",
       "url": "/n095.html"
-    },
-    {
-      "content_sha256": "c94f28d4bc0b31d33415678f78d847ea01b496508ecdd18cca84d6f24c0b4894",
-      "path": "n096.html",
-      "sha256": "85779a68cd1b0db453b06cc97464d92d95fcfddfe9ded698c6089835288bc4b0",
-      "url": "/n096.html"
     }
   ],
   "schema": 1,
-  "state_hash": "b683a011d9441a01a0cff83f18092fa48c9a1fe8569ea1969f41463ce1ff3668",
+  "state_hash": "fdf956af6ff225cd35ac29a62b03aa00091f861d64238d5ff8f4357194bc1c59",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1103,
-    "new_articles": 1172,
-    "new_articles_sha256": "c343f374520497ccf9f638132f98d342e4cca51cd1f9077bff91c8e2067b7c61",
+    "new_articles": 1173,
+    "new_articles_sha256": "486ad28b56a765b16518af31fa2f35b8ba0eb191d8445d75401b4b42b31163ab",
     "pages_sha256": "c70f663e56ac104fdb3cc30f0f0c3f32a924d8b9ea0119a1771c83f452c59854",
     "pages_total": 1111,
     "published_pages": 1110
