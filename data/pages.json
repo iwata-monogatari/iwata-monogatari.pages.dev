@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-09-09",
+  "updated_at": "2026-09-12",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -23970,37 +23970,41 @@
       "count_as_knowledge": true
     },
     {
-      "title": "鶴ケ池と自然と土地の記憶を読む",
+      "title": "鶴ケ池の頼朝放生会伝説と池の主――和歌・怪異・姉妹校が結ぶ水辺の記憶",
       "url": "k049.html",
       "district": [
         "koyo"
       ],
       "themes": [
-        "land-memory",
-        "nature",
-        "terrain",
+        "legend",
+        "folklore",
         "water",
-        "reading"
+        "school-history",
+        "nature"
       ],
       "content_type": "reading",
       "published_at": "2026-07-14",
-      "updated_at": "2026-07-14",
+      "updated_at": "2026-09-12",
       "date_provisional": false,
       "status": "published",
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "summary": "向陽地区の鶴ケ池を、自然・景観の記憶として読み直す。場所、資料から確認できる要素、今後の確認点を画像なしで整理。",
+      "summary": "磐田市岩井の鶴ケ池に伝わる源頼朝の放生会伝説、黄金の短冊、『吾妻鏡』の日程照合、池の主（大蛇・怪異）の民間説話、愛知・野間小学校との姉妹校交流まで、水辺の歴史と伝承を読み直す。",
       "parent": "01006-koyo.html",
       "section": "向陽",
       "topics": [
         "鶴ケ池",
-        "岩井",
-        "池",
-        "沼"
+        "源頼朝",
+        "放生会",
+        "源朝長",
+        "源義朝",
+        "難波江",
+        "池の主",
+        "野間小学校"
       ],
       "level": "L2",
       "source_refs": [
-        "otakara_iwata:147"
+        "book:向笠史談会『ふる里向笠』:113, 124〜127, 130頁（2026-09-12画像照合）"
       ],
       "count_as_knowledge": true
     },
@@ -30510,8 +30514,14 @@
     {
       "title": "寺田姓と寺田村 ── 福田に同じ名字が集まった理由",
       "url": "oishi-ronko/303/",
-      "district": ["fukude"],
-      "themes": ["genealogy", "local-history", "archives"],
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "genealogy",
+        "local-history",
+        "archives"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-29",
       "updated_at": "2026-08-30",
@@ -30521,16 +30531,31 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "section": "福田・論考",
-      "topics": ["福田", "寺田姓", "寺田村", "二十五苗", "地名姓"],
+      "topics": [
+        "福田",
+        "寺田姓",
+        "寺田村",
+        "二十五苗",
+        "地名姓"
+      ],
       "level": "L3",
       "summary": "福田で寺田姓が多い理由を、1937年の名字別戸数、二十五苗、掛川側の寺田村と地名姓の観点からたどり、名字の集中と移住伝承の関係を紹介する。",
-      "source_refs": ["book:寺田勝彦『福田の寺田一族』:1984-07-15:1～3頁", "internal:f032.html:慶長9年検地帳と福田の二十五苗"]
+      "source_refs": [
+        "book:寺田勝彦『福田の寺田一族』:1984-07-15:1～3頁",
+        "internal:f032.html:慶長9年検地帳と福田の二十五苗"
+      ]
     },
     {
       "title": "原氏と戦国期の移動伝承 ── 寺田村から福田へ",
       "url": "oishi-ronko/304/",
-      "district": ["fukude"],
-      "themes": ["genealogy", "war-history", "local-history"],
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "genealogy",
+        "war-history",
+        "local-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-29",
       "updated_at": "2026-08-30",
@@ -30540,16 +30565,30 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "section": "福田・論考",
-      "topics": ["福田", "原氏", "寺田村", "戦国期", "移住伝承"],
+      "topics": [
+        "福田",
+        "原氏",
+        "寺田村",
+        "戦国期",
+        "移住伝承"
+      ],
       "level": "L3",
       "summary": "原氏の系譜、原野谷川流域の城、戦国期の合戦と離散、福田への定着という冊子の筋道から、寺田一族に伝わる敗戦と移住の記憶を紹介する。",
-      "source_refs": ["book:寺田勝彦『福田の寺田一族』:1984-07-15:3～8頁"]
+      "source_refs": [
+        "book:寺田勝彦『福田の寺田一族』:1984-07-15:3～8頁"
+      ]
     },
     {
       "title": "円通院と観音寺 ── 寺院に残る寺田一族の記憶",
       "url": "oishi-ronko/305/",
-      "district": ["fukude"],
-      "themes": ["genealogy", "temples", "local-history"],
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "genealogy",
+        "temples",
+        "local-history"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-29",
       "updated_at": "2026-08-30",
@@ -30559,16 +30598,32 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "section": "福田・論考",
-      "topics": ["福田", "円通院", "観音寺", "五輪塔", "墓地", "洪水伝承"],
+      "topics": [
+        "福田",
+        "円通院",
+        "観音寺",
+        "五輪塔",
+        "墓地",
+        "洪水伝承"
+      ],
       "level": "L3",
       "summary": "旧円通院と円通山観音寺、墓、五輪塔、観音像の伝承から、寺田一族の系譜と福田の水害の記憶が寺院に託されてきた歴史を紹介する。",
-      "source_refs": ["book:寺田勝彦『福田の寺田一族』:1984-07-15:8～13頁", "external:temple.atawi.link/temples/kannonji-fukude/:円通山観音寺"]
+      "source_refs": [
+        "book:寺田勝彦『福田の寺田一族』:1984-07-15:8～13頁",
+        "external:temple.atawi.link/temples/kannonji-fukude/:円通山観音寺"
+      ]
     },
     {
       "title": "系図と検地帳をどう読むか ── 私家版『福田の寺田一族』の史料批判",
       "url": "oishi-ronko/306/",
-      "district": ["fukude"],
-      "themes": ["genealogy", "archives", "source-criticism"],
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "genealogy",
+        "archives",
+        "source-criticism"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-29",
       "updated_at": "2026-08-30",
@@ -30578,10 +30633,20 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "section": "福田・論考",
-      "topics": ["福田", "系図", "慶長9年検地帳", "二十五苗", "私家版", "史料批判"],
+      "topics": [
+        "福田",
+        "系図",
+        "慶長9年検地帳",
+        "二十五苗",
+        "私家版",
+        "史料批判"
+      ],
       "level": "L3",
       "summary": "冊子終盤の系図と慶長9年検地帳の姓名対照から、原史料、人物の比定、後世の家、長期系譜という異なる時代の記録が一つに結ばれた背景を紹介する。",
-      "source_refs": ["book:寺田勝彦『福田の寺田一族』:1984-07-15:14～17頁", "internal:f032.html:慶長9年検地帳と福田の二十五苗"]
+      "source_refs": [
+        "book:寺田勝彦『福田の寺田一族』:1984-07-15:14～17頁",
+        "internal:f032.html:慶長9年検地帳と福田の二十五苗"
+      ]
     },
     {
       "title": "『米軍機の遠州地方空襲記』を読む ── 鈴木翰が見た工場・空・海の戦争",
@@ -30623,8 +30688,16 @@
     {
       "title": "日本楽器の戦時生産と工場空襲 ── 鈴木翰の回想から",
       "url": "c169.html",
-      "district": ["common"],
-      "themes": ["war-history", "industry-history", "air-raids", "testimony", "source-criticism"],
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "war-history",
+        "industry-history",
+        "air-raids",
+        "testimony",
+        "source-criticism"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-30",
       "updated_at": "2026-08-30",
@@ -30634,16 +30707,38 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "section": "磐田共通・戦争体験資料",
-      "topics": ["日本楽器製造", "軍需工場", "工場空襲", "学徒動員", "鈴木翰", "B29", "B24"],
+      "topics": [
+        "日本楽器製造",
+        "軍需工場",
+        "工場空襲",
+        "学徒動員",
+        "鈴木翰",
+        "B29",
+        "B24"
+      ],
       "level": "L3",
       "summary": "鈴木翰の回想から、楽器工場が軍需生産へ組み込まれた現場、警報と退避、若い働き手が経験した空襲をたどる。",
-      "source_refs": ["book:鈴木翰『米軍機の遠州地方空襲記』:1984:1～10頁", "internal:c065.html:ヤマハ発動機と企業城下町としての磐田", "internal:h003.html:学徒動員と対空戦"]
+      "source_refs": [
+        "book:鈴木翰『米軍機の遠州地方空襲記』:1984:1～10頁",
+        "internal:c065.html:ヤマハ発動機と企業城下町としての磐田",
+        "internal:h003.html:学徒動員と対空戦"
+      ]
     },
     {
       "title": "遠州灘の漁船機銃掃射 ── 海で働く人びとの戦争",
       "url": "c170.html",
-      "district": ["common", "fukude", "ryuyo"],
-      "themes": ["war-history", "fishing", "air-raids", "testimony", "source-criticism"],
+      "district": [
+        "common",
+        "fukude",
+        "ryuyo"
+      ],
+      "themes": [
+        "war-history",
+        "fishing",
+        "air-raids",
+        "testimony",
+        "source-criticism"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-30",
       "updated_at": "2026-08-30",
@@ -30653,16 +30748,36 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "section": "磐田共通・戦争体験資料",
-      "topics": ["遠州灘", "漁船", "機銃掃射", "漂流", "救助", "福田港", "鈴木翰"],
+      "topics": [
+        "遠州灘",
+        "漁船",
+        "機銃掃射",
+        "漂流",
+        "救助",
+        "福田港",
+        "鈴木翰"
+      ],
       "level": "L3",
       "summary": "遠州灘の小型漁船が攻撃され、乗組員が漂流・救助されたという鈴木翰の記録から、海で働く人びとの戦争をたどる。",
-      "source_refs": ["book:鈴木翰『米軍機の遠州地方空襲記』:1984:11～17頁", "internal:f001.html:福田湊の発展と遠州の漁業史", "internal:r061.html:天竜川河口付近での遭難船の歴史"]
+      "source_refs": [
+        "book:鈴木翰『米軍機の遠州地方空襲記』:1984:11～17頁",
+        "internal:f001.html:福田湊の発展と遠州の漁業史",
+        "internal:r061.html:天竜川河口付近での遭難船の歴史"
+      ]
     },
     {
       "title": "鈴木翰は敗戦をどう受け止めたか ── 空襲体験から戦後思想へ",
       "url": "c171.html",
-      "district": ["common"],
-      "themes": ["war-history", "memory-history", "political-thought", "testimony", "source-criticism"],
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "war-history",
+        "memory-history",
+        "political-thought",
+        "testimony",
+        "source-criticism"
+      ],
       "content_type": "reading",
       "published_at": "2026-08-30",
       "updated_at": "2026-08-30",
@@ -30672,10 +30787,22 @@
       "show_in_updates": true,
       "show_in_all_articles": true,
       "section": "磐田共通・戦争体験資料",
-      "topics": ["鈴木翰", "敗戦", "軍国主義", "戦争責任", "反戦思想", "私家版", "記憶史"],
+      "topics": [
+        "鈴木翰",
+        "敗戦",
+        "軍国主義",
+        "戦争責任",
+        "反戦思想",
+        "私家版",
+        "記憶史"
+      ],
       "level": "L3",
       "summary": "『米軍機の遠州地方空襲記』終盤から、1945年の空襲体験を約40年後の鈴木翰がどう受け止め、平和への考えへ結んだかをたどる。",
-      "source_refs": ["book:鈴木翰『米軍機の遠州地方空襲記』:1984:16～20頁", "internal:h001.html:二十一世紀に伝えたい戦争体験", "internal:c156.html:占領軍と地方軍政部"]
+      "source_refs": [
+        "book:鈴木翰『米軍機の遠州地方空襲記』:1984:16～20頁",
+        "internal:h001.html:二十一世紀に伝えたい戦争体験",
+        "internal:c156.html:占領軍と地方軍政部"
+      ]
     },
     {
       "title": "ブログ",
@@ -30836,6 +30963,117 @@
         "internal:oishi-ronko/040/",
         "internal:m112.html",
         "internal:m015.html"
+      ]
+    },
+    {
+      "title": "笠梅の中沢川改修――安政地震の沈下から挑んだ排水トンネルと新水路",
+      "url": "k074.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "flood-control",
+        "disaster",
+        "village-history",
+        "land-system"
+      ],
+      "content_type": "article",
+      "published_at": "2026-09-12",
+      "updated_at": "2026-09-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "向陽",
+      "topics": [
+        "笠梅",
+        "中沢川",
+        "大海",
+        "安政東海地震",
+        "敷地川",
+        "保六寺山",
+        "隧道",
+        "治水"
+      ],
+      "level": "L2",
+      "summary": "安政元年の大地震で地盤沈下し20年水没した笠梅・大海集落。明治7年の保六寺山トンネル崩落、11棟移転と新水路開削、明治39年完済までの住民13戸の苦闘を辿る。",
+      "source_refs": [
+        "book:向笠史談会『ふる里向笠』:99〜101頁（2026-09-12画像照合）"
+      ]
+    },
+    {
+      "title": "馬坂有料道路――明治17年、民間人が山を開削した有料道と「抜け道」の顛末",
+      "url": "k075.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "roads",
+        "transport",
+        "village-history",
+        "folk-faith"
+      ],
+      "content_type": "article",
+      "published_at": "2026-09-12",
+      "updated_at": "2026-09-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "向陽",
+      "topics": [
+        "馬坂",
+        "見付山梨街道",
+        "有料道路",
+        "高塚太郎平",
+        "杉田源蔵",
+        "桜の谷",
+        "柿の木様",
+        "道銭"
+      ],
+      "level": "L2",
+      "summary": "明治中期、見付山梨街道の難所・馬坂に作られた民間有料道路。有志8名による開削、坂上番所の「鬼ばば」による徴収、「桜の谷」抜け道による破綻と県道化の顛末を記録する。",
+      "source_refs": [
+        "book:向笠史談会『ふる里向笠』:102〜110頁（2026-09-12画像照合）"
+      ]
+    },
+    {
+      "title": "向笠竹之内の池之谷新田――大身旗本加々爪氏の開発と「深田」に挑んだ三百年",
+      "url": "k076.html",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "reclamation",
+        "agriculture",
+        "land-system",
+        "village-history"
+      ],
+      "content_type": "article",
+      "published_at": "2026-09-12",
+      "updated_at": "2026-09-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "向陽",
+      "topics": [
+        "向笠竹之内",
+        "池之谷",
+        "加々爪甲斐守",
+        "新田開発",
+        "中井用水",
+        "深田",
+        "黒ブク",
+        "土地改良"
+      ],
+      "level": "L2",
+      "summary": "磐田原台地東縁の谷筋・池之谷。明暦2年、大身旗本・加々爪甲斐守による用水池干拓から、腰まで沈む「黒ブク」の深泥に松丸太を敷いて耕作した苦難、昭和の土地改良と現代への変貌をたどる。",
+      "source_refs": [
+        "book:向笠史談会『ふる里向笠』:116〜123頁（2026-09-12画像照合）"
       ]
     }
   ]
