@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1789115384,
-  "generation": 20260911172944,
-  "git_commit_at_stamp": "b5fa7ea4ccacce150e89241bb2c0348dec40afc9",
+  "generated_at_unix": 1789173411,
+  "generation": 20260912093651,
+  "git_commit_at_stamp": "6fb23ef48e7deac6ea59f67f0f988dadfb3eb984",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,7 +35,7 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "486ad28b56a765b16518af31fa2f35b8ba0eb191d8445d75401b4b42b31163ab"
+      "sha256": "7eda95c6f4c4158cb9f8b823461af735e82307c53c774e9f29b27cff5e309cc3"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "5aa968f752696e0a16eac65ca7a2b9b8b85d090f8f27271b4323cb9b300890d8"
+      "sha256": "47b85642afb2793d35bbe61a7904304664a7413e46036966c60395fd174be1a6"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "1a167e92e10a11ddfb240fcc403422e48c9b7054d09a856f43e5df562ee07275"
+      "sha256": "81932b4957a55521cde56315eb90cdc3f21cca1db83f172733ad6aec386bc0f7"
     },
     {
       "path": "updates.html",
-      "sha256": "f37aec812604926d74d194869ad0b4f7b7e166ededd6c039f5634172ab509a73"
+      "sha256": "ba6ef71eb51232ae9a6969f89b845a90b97e1826b6578dc86ac4009307fc0ebe"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "43f5bbf33255a66d624d32764acb0c3f0199bd39a64f3ba447a06773d45ecc36",
+      "content_sha256": "61bd05e0cded12212461ae46e7238192fd3d567df7ff519fdc4a4a708341f188",
       "path": "index.html",
-      "sha256": "5aa968f752696e0a16eac65ca7a2b9b8b85d090f8f27271b4323cb9b300890d8",
+      "sha256": "47b85642afb2793d35bbe61a7904304664a7413e46036966c60395fd174be1a6",
       "url": "/"
     },
     {
-      "content_sha256": "5bae1b3d2ae225de30f91a7fb6f21d158c023e521a96e32592bb2c522b63e41f",
+      "content_sha256": "032f12e9f1398e5585c223b64170d33d5f80ee6ac3709c7144bce3399961ef98",
       "path": "updates.html",
-      "sha256": "f37aec812604926d74d194869ad0b4f7b7e166ededd6c039f5634172ab509a73",
+      "sha256": "ba6ef71eb51232ae9a6969f89b845a90b97e1826b6578dc86ac4009307fc0ebe",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "fa03ca3f25a656ef8257c979cbf626c512b1094eb9dfd25cee89d6dc03393d8a",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "2357938993d0574891cb5bbc8a4b1b62e94a367f4d9ed97fd53c1c48a9d75a0f",
+      "path": "blog/20260912-mitsuke-wakihonjin-tonyaba/index.html",
+      "sha256": "7126cf7b07092474a9de45c798c8be1e15b4a7dcf99995585dc97a6e611bff7c",
+      "url": "/blog/20260912-mitsuke-wakihonjin-tonyaba"
     },
     {
       "content_sha256": "38a783be0b7128f10e6b6e917507f1d4134510240592b18028cdb2369dabd03b",
@@ -856,21 +862,15 @@
       "path": "n094.html",
       "sha256": "1ad9c83261cda9dbf392d94174417a331d227b487032b7c15dbe0bbbaa4cf39e",
       "url": "/n094.html"
-    },
-    {
-      "content_sha256": "5306f1981a1aea3dae361994a513726b10a15592a3f9e5ee2a0dab9aa984a767",
-      "path": "n095.html",
-      "sha256": "a4c209aba0628e2b14dc47c7a531eb079abc64b30508aa8f0666fb588e6c49c8",
-      "url": "/n095.html"
     }
   ],
   "schema": 1,
-  "state_hash": "fdf956af6ff225cd35ac29a62b03aa00091f861d64238d5ff8f4357194bc1c59",
+  "state_hash": "e9b000e5ccf95ff3ec3aa2a81f1d137d7ba37f070eb3b862639d264bf8e6d9d3",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1103,
-    "new_articles": 1173,
-    "new_articles_sha256": "486ad28b56a765b16518af31fa2f35b8ba0eb191d8445d75401b4b42b31163ab",
+    "new_articles": 1174,
+    "new_articles_sha256": "7eda95c6f4c4158cb9f8b823461af735e82307c53c774e9f29b27cff5e309cc3",
     "pages_sha256": "c70f663e56ac104fdb3cc30f0f0c3f32a924d8b9ea0119a1771c83f452c59854",
     "pages_total": 1111,
     "published_pages": 1110
