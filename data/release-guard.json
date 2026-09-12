@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1789174196,
-  "generation": 20260912094956,
-  "git_commit_at_stamp": "f12597b3cbaebbf6fb5bba19a1095665195fc2d3",
+  "generated_at_unix": 1789175427,
+  "generation": 20260912101027,
+  "git_commit_at_stamp": "daba9b2cc2e7751eeddc879f36e3b02419b7d02e",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,7 +35,7 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "7eda95c6f4c4158cb9f8b823461af735e82307c53c774e9f29b27cff5e309cc3"
+      "sha256": "9af2ad7c5beb42bd125195aa76521d2c9f711072c0239fafedb2a991b755243b"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "47b85642afb2793d35bbe61a7904304664a7413e46036966c60395fd174be1a6"
+      "sha256": "ac044831d68e42a8a96ed57a7b9e60a0a57862719d69a80e1ced4b6163fa6138"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "81932b4957a55521cde56315eb90cdc3f21cca1db83f172733ad6aec386bc0f7"
+      "sha256": "fa342f384dd76b56c1f368702f29c423c44841bc10a3f27303ca1be093d5598a"
     },
     {
       "path": "updates.html",
-      "sha256": "ba6ef71eb51232ae9a6969f89b845a90b97e1826b6578dc86ac4009307fc0ebe"
+      "sha256": "2af88dc6df37ed17857c3dcc93b7bfbde2797dd739ac0dd3e285d99fa2166022"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "61bd05e0cded12212461ae46e7238192fd3d567df7ff519fdc4a4a708341f188",
+      "content_sha256": "3ccf75f6c0681dada93689c8285864f1e991ace913340bfff1ab38f87f00b2df",
       "path": "index.html",
-      "sha256": "47b85642afb2793d35bbe61a7904304664a7413e46036966c60395fd174be1a6",
+      "sha256": "ac044831d68e42a8a96ed57a7b9e60a0a57862719d69a80e1ced4b6163fa6138",
       "url": "/"
     },
     {
-      "content_sha256": "032f12e9f1398e5585c223b64170d33d5f80ee6ac3709c7144bce3399961ef98",
+      "content_sha256": "d82a97903161fef52fb11004131b413edbbd158d57040070fc094d642a6bce8b",
       "path": "updates.html",
-      "sha256": "ba6ef71eb51232ae9a6969f89b845a90b97e1826b6578dc86ac4009307fc0ebe",
+      "sha256": "2af88dc6df37ed17857c3dcc93b7bfbde2797dd739ac0dd3e285d99fa2166022",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "fa03ca3f25a656ef8257c979cbf626c512b1094eb9dfd25cee89d6dc03393d8a",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "b19f967bdba74d3430d18ff240764c059d82b77081f7d445ffc394d074b1a9d3",
+      "path": "blog/20260912-mitsuke-tenjin-hadaka-matsuri-rekishi/index.html",
+      "sha256": "3e1a591183e78acfa51223ecbbb1fc97f47ed87c33f08b832143993d1e1fe714",
+      "url": "/blog/20260912-mitsuke-tenjin-hadaka-matsuri-rekishi"
     },
     {
       "content_sha256": "2357938993d0574891cb5bbc8a4b1b62e94a367f4d9ed97fd53c1c48a9d75a0f",
@@ -856,21 +862,15 @@
       "path": "n093.html",
       "sha256": "5c2189d662bec5347e67b2ae664dee025e8e50d8f3cd9c0dcab94378a15b90d0",
       "url": "/n093.html"
-    },
-    {
-      "content_sha256": "8579a67150d4509d6922f118673e773ea3aa8153b7b691b819fa90340ef3c4ea",
-      "path": "n094.html",
-      "sha256": "1ad9c83261cda9dbf392d94174417a331d227b487032b7c15dbe0bbbaa4cf39e",
-      "url": "/n094.html"
     }
   ],
   "schema": 1,
-  "state_hash": "02fc32bcb8c3b95135c9624674d86222bb04e0c1bc5775f8b95217208751ffe9",
+  "state_hash": "e13d2bc3fda881534dc8be8bee39060801be706a16fb54dfaf647a242e0b540a",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1103,
-    "new_articles": 1174,
-    "new_articles_sha256": "7eda95c6f4c4158cb9f8b823461af735e82307c53c774e9f29b27cff5e309cc3",
+    "new_articles": 1175,
+    "new_articles_sha256": "9af2ad7c5beb42bd125195aa76521d2c9f711072c0239fafedb2a991b755243b",
     "pages_sha256": "c70f663e56ac104fdb3cc30f0f0c3f32a924d8b9ea0119a1771c83f452c59854",
     "pages_total": 1111,
     "published_pages": 1110
