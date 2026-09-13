@@ -1,0 +1,14 @@
+# 記事設計：磐田の月見団子｜向笠の十三夜を本編で読む
+- 公開日：2026-09-13（Get-Date確認）
+- クエリ：磐田 月見団子／know
+- 原則5：読者に「まだ決めない自由」を残す。一言メモ空欄のため選定
+- 体験：なし。意見として記述
+- 主張の段落：私なら、地域名と時点を一緒に残す。「家の記憶を、一冊の記録に合わせて直す必要はありません」
+- 結論（122字）：磐田物語の本編には、向笠の十三夜に、中央をくぼませた「へそ団子」をすすきや季節の作物と供えた記録があります。『ふる里向笠』をもとにした地域の記録で、市内共通の現行習慣とは言えません。2026年の中秋の名月は9月25日、十三夜は10月23日です。
+- h2：中秋と十三夜／へそ団子と供え物／採録地域と刊行時点／福田の聞き書き論考／私なら地域名と時点を残す／FAQ
+- FAQ：磐田のへそ団子は、どんな団子ですか。／2026年の中秋の名月と十三夜は、いつですか。／向笠の記録は、いまの磐田全体の習慣ですか。
+- 内部リンク：/k073.html、/oishi-ronko/269/、/oishi-ronko/283/、著者/c007.html
+- 逆リンク：k073.html十三夜の段落直後
+- 確認：国立天文台の中秋9月25日・満月9月27日・十三夜10月23日。本編の団子の材料と形・すすき・季節の作物。書籍原本未照合
+- 画像：built-in image_gen、保存先 /assets/blog/20260913-iwata-tsukimi-dango-mukasa-cover.webp、1440×810 WebP
+- Prompt: Photo-style editorial still life illustrating reading records of Mukasa moon-viewing offerings, not a documentary reconstruction. White flattened rice dumplings with shallow central depressions, susuki grass, seasonal produce and blank notebook on wooden tabletop. Soft autumn evening light, horizontal 16:9, no people, identifiable location, text, logo or watermark.
