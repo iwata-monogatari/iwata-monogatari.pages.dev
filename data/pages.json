@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-09-12",
+  "updated_at": "2026-09-13",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -31105,6 +31105,39 @@
         "internal:c019.html",
         "internal:c020.html",
         "internal:c068.html"
+      ]
+    },
+    {
+      "title": "磐田の鈴鹿8耐展示｜見学前に読む工場の記憶（ブログ記事）",
+      "url": "blog/20260913-iwata-suzuka-eight-hours-factory/",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-09-13",
+      "updated_at": "2026-09-13",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "ブログ・産業史案内",
+      "topics": [
+        "鈴鹿8耐",
+        "ヤマハ発動機",
+        "新貝",
+        "西貝塚",
+        "工場"
+      ],
+      "summary": "磐田の鈴鹿8耐関連展示は、ヤマハのYZF-R1を9月18〜23日に磐田市情報館で見学できる予定です。申込不要・無料。9月13日は期間外です。見学前に読む本編3ページから、新貝・西貝塚の工場と用地交渉、土地の記録への入口を案内します。",
+      "source_refs": [
+        "web:https://www.city.iwata.shizuoka.jp/event/tenji_kanshou_concert/1016891.html",
+        "internal:c065.html",
+        "internal:u053.html",
+        "internal:u005.html"
       ]
     }
   ]
