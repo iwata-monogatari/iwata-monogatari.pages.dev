@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-09-13",
+  "updated_at": "2026-09-14",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -31170,6 +31170,38 @@
         "internal:k073.html",
         "internal:oishi-ronko/269/",
         "internal:oishi-ronko/283/"
+      ]
+    },
+    {
+      "title": "磐田と馬の歴史｜埴輪・鉄路・供養を読む（ブログ記事）",
+      "url": "blog/20260914-iwata-horse-history/",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-09-14",
+      "updated_at": "2026-09-14",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "ブログ・馬の歴史案内",
+      "topics": [
+        "馬",
+        "古墳・遺跡",
+        "中泉軌道",
+        "民俗信仰"
+      ],
+      "summary": "磐田と馬の歴史は、二子塚古墳の馬具と馬形埴輪、中泉軌道の馬力化申請、馬頭観音の解説という本編3本から読めます。9月20〜26日の動物愛護週間を前に、飾り・輸送・供養と暮らしの接点を整理。時代をまたぐ連続性や、未確認の石塔の場所・年代は決めつけません。",
+      "source_refs": [
+        "web:https://www.env.go.jp/nature/dobutsu/aigo/pickup/week.html",
+        "internal:u038.html",
+        "internal:c060.html",
+        "internal:c070.html"
       ]
     }
   ]

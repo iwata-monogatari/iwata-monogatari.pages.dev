@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1789276478,
-  "generation": 20260913141438,
-  "git_commit_at_stamp": "a62c85fe103bb6e0ee98dc47f27b6bbf181aca84",
+  "generated_at_unix": 1789344332,
+  "generation": 20260914090531,
+  "git_commit_at_stamp": "43b1e51a36de6b60ddb9748b275824378f05da60",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,15 +35,15 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "b7800ea52193d961ba1f80cebf1c17721b18ec87ca27936a5204706a7a09fc70"
+      "sha256": "610f777c3a7c95652ab5f83a6692b37366a008124e2eee31ad86af45f7b63529"
     },
     {
       "path": "data/pages.json",
-      "sha256": "7a37172525f8632d39f9a920c949f1eb86c9dde65be50a30c0eaab3769f83c61"
+      "sha256": "eebb883cd9fadbfd4d001df30856ff2aa13907fd0e243849fec846987b0afcc8"
     },
     {
       "path": "index.html",
-      "sha256": "56b9d454a73fe9e647ac89043f875920583d3455eaa4be2eb741d48a2b99d2b1"
+      "sha256": "9128c81b1f914276405b986eb76fa8f92ad7e1de7abd1ac2a6186fcfcaed39db"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "bc0db96ad48062928f474bb1be58c0d62d5ea979a2de9bfd0fa2fe698b86433e"
+      "sha256": "e96e83ab414757083292d648bf467b0782c035ffabb383b25bd6705aebc58254"
     },
     {
       "path": "updates.html",
-      "sha256": "3ee5d0dbeb5777cfa11c7330f26b5d6590098853e3203a2f91e85dc009e5ff50"
+      "sha256": "2a962bbebea4c067b34c15e1bd6cdd8d6f1b56e9e2ad3525ebf6920a045b3fe9"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "49fa21fc11ebbb758784001fcc791f770b96015fce6e6265fe57f3d1807a75e0",
+      "content_sha256": "4e4c960ae014623a1d607c9dec002196c86f3c3cc57dc215b441a243082b74f2",
       "path": "index.html",
-      "sha256": "56b9d454a73fe9e647ac89043f875920583d3455eaa4be2eb741d48a2b99d2b1",
+      "sha256": "9128c81b1f914276405b986eb76fa8f92ad7e1de7abd1ac2a6186fcfcaed39db",
       "url": "/"
     },
     {
-      "content_sha256": "5ca3b676d9b6ba979365e2ea59860916d17735bad8161870c6c2603b99f53b07",
+      "content_sha256": "b67024608eb24a9120c5180f1d9a045ed00d99fcd4cf938171f9c26b16a7a843",
       "path": "updates.html",
-      "sha256": "3ee5d0dbeb5777cfa11c7330f26b5d6590098853e3203a2f91e85dc009e5ff50",
+      "sha256": "2a962bbebea4c067b34c15e1bd6cdd8d6f1b56e9e2ad3525ebf6920a045b3fe9",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "fa03ca3f25a656ef8257c979cbf626c512b1094eb9dfd25cee89d6dc03393d8a",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "f6d21b6fbb61d7b88d4365abacafd0a061c9bfcf284f93887e94e4b8b72cf47f",
+      "path": "blog/20260914-iwata-horse-history/index.html",
+      "sha256": "c4e7bce062b47fb2130d96e8018200971515f45ac40cdbef9f9bcb0cbdab400d",
+      "url": "/blog/20260914-iwata-horse-history"
     },
     {
       "content_sha256": "bc00de2e5c5f5afbdd783e7c57f04acea444fcca4db25d8001271b3d18991307",
@@ -856,23 +862,17 @@
       "path": "u006.html",
       "sha256": "9f51c021305edc636259f1386624b8cad3f8315cf86494729a203fed9072eaed",
       "url": "/u006.html"
-    },
-    {
-      "content_sha256": "23935b67af3693f39d1492e07ea2776e514c84149b6d3542e2d67dd0cf89dfdf",
-      "path": "u007.html",
-      "sha256": "f8a4851604256fb8e018843602707ec4ccd32a05a0a68d345f6fa9a169d055c8",
-      "url": "/u007.html"
     }
   ],
   "schema": 1,
-  "state_hash": "d2514c370b401d449039b5e4b419dd38325c2e4084087603f61399fe8d1d08ed",
+  "state_hash": "4e5713f31d261646a5179197d1399a76aba5f2d456061ebc03957912c5719f6d",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1181,
-    "new_articles_sha256": "b7800ea52193d961ba1f80cebf1c17721b18ec87ca27936a5204706a7a09fc70",
-    "pages_sha256": "7a37172525f8632d39f9a920c949f1eb86c9dde65be50a30c0eaab3769f83c61",
-    "pages_total": 1117,
-    "published_pages": 1116
+    "new_articles": 1182,
+    "new_articles_sha256": "610f777c3a7c95652ab5f83a6692b37366a008124e2eee31ad86af45f7b63529",
+    "pages_sha256": "eebb883cd9fadbfd4d001df30856ff2aa13907fd0e243849fec846987b0afcc8",
+    "pages_total": 1118,
+    "published_pages": 1117
   }
 }
