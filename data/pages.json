@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-09-15",
+  "updated_at": "2026-09-17",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -31335,6 +31335,40 @@
         "internal:u042.html",
         "internal:r029.html",
         "web:https://www.mlit.go.jp/koku/15_bf_000222.html"
+      ]
+    },
+    {
+      "title": "池田の渡し歴史風景館｜秋の見学前に読む本編（ブログ記事）",
+      "url": "blog/20260917-ikeda-ferry-museum-visit/",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "life",
+        "road-traffic"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-09-17",
+      "updated_at": "2026-09-17",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "ブログ・池田の渡しの見学準備",
+      "topics": [
+        "池田の渡し",
+        "船賃",
+        "池田宿",
+        "歴史風景館"
+      ],
+      "summary": "池田の渡し歴史風景館の見学前に、船賃の分配・宿で待つ時間・渡河の判断を本編3本から読みます。無料・9〜17時という市の案内と、9月21〜23日の個別の開館日は分けて確認。問い合わせ先と、展示の資料名・年代を控える手順をまとめた秋の見学準備です。",
+      "source_refs": [
+        "internal:t004.html",
+        "internal:t048.html",
+        "internal:t016.html",
+        "web:https://www.city.iwata.shizuoka.jp/shisetsu_guide/toshokan_bunka/tenji/1003510.html",
+        "web:https://www.nao.ac.jp/news/topics/2025/20250203-rekiyoko.html"
       ]
     }
   ]

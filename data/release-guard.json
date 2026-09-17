@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1789516564,
-  "generation": 20260916085604,
-  "git_commit_at_stamp": "518b5dd316e28639b919ec62e5aa706bd636c55d",
+  "generated_at_unix": 1789615822,
+  "generation": 20260917123022,
+  "git_commit_at_stamp": "99336a7a9fa29462d3417c7d4e8963cf856786d9",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,15 +35,15 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "aac209192896ac13fade90fe70baacf9a87f10e93e881c10784c8e29b0f216c8"
+      "sha256": "f440615f16878c1307c29c5041e8206430124bb65b5b59d8f2f4354b0d9ee212"
     },
     {
       "path": "data/pages.json",
-      "sha256": "a7e1656964035d1bb52e5a9a375d0d5dafa891a326897c938399371fdb50f439"
+      "sha256": "7b984b647c3bfb293bfdbf1cee28db7b0167c8a1c951dd0c09e2e6702f695c3c"
     },
     {
       "path": "index.html",
-      "sha256": "689108a28ee03f675a7c64e6fa09628681c0805f82aabd62778d036476117b31"
+      "sha256": "8c002c249ca46c8df30695461793b28cc8710aceb751558b70ba717370ec92eb"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "89ed6f3fee5afde034c95c02eeaabab81110db8840f3e79c9b4a0c9cf89692d9"
+      "sha256": "71b7b57acbcdf9735084d9a660429fe8da68af93f7ac46aa990c52674b08cc66"
     },
     {
       "path": "updates.html",
-      "sha256": "d34b2d3bb66bec52d822e7d9cc85782d7b93de4399ecd8bf98e18207f5d47b70"
+      "sha256": "85d39b53650d69d7d9abd042c4a5f81ac5e22cf38b6699b98e63e9215daee410"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "2d78ec4d58719ecc351723494ede13e1ba544470d612a80db7947d105a20ba28",
+      "content_sha256": "9e72bce49e16ddb4743a48b0dbf7f9d9d62cad67a03296a8132a03bbf6c2ff1e",
       "path": "index.html",
-      "sha256": "689108a28ee03f675a7c64e6fa09628681c0805f82aabd62778d036476117b31",
+      "sha256": "8c002c249ca46c8df30695461793b28cc8710aceb751558b70ba717370ec92eb",
       "url": "/"
     },
     {
-      "content_sha256": "dbff3edc1f06e91c4b2565d101a6579180c632067a1475635a208af7afdbeb51",
+      "content_sha256": "45a4f67e7431f778a00ea214a1087884ff946c05e5b73c0b1e7813e9398cb647",
       "path": "updates.html",
-      "sha256": "d34b2d3bb66bec52d822e7d9cc85782d7b93de4399ecd8bf98e18207f5d47b70",
+      "sha256": "85d39b53650d69d7d9abd042c4a5f81ac5e22cf38b6699b98e63e9215daee410",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "fa03ca3f25a656ef8257c979cbf626c512b1094eb9dfd25cee89d6dc03393d8a",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "ee80b8860872dff71979fbd2e8f075369fa45b71010ebe51cc2b15be4d98cac5",
+      "path": "blog/20260917-ikeda-ferry-museum-visit/index.html",
+      "sha256": "ad921e4a26dbf5cb8290923f9c27dc7d3446bc3f29cf0aaf24805e3360b33a0c",
+      "url": "/blog/20260917-ikeda-ferry-museum-visit"
     },
     {
       "content_sha256": "fff35b824d8153cfe6891d57c546e5228201dd229bf2c97ed912c8e69da9e4cc",
@@ -856,23 +862,17 @@
       "path": "u051.html",
       "sha256": "4d4442882db4b4e2c214b416d11ee5a17aefde44d9fdb17b88ff830a6c830a98",
       "url": "/u051.html"
-    },
-    {
-      "content_sha256": "28a79923dc5b33ad72a79d52a08c26e1987e7853e25fdefc8de4b0c7451f078e",
-      "path": "u052.html",
-      "sha256": "56c6cac1ed5eed0b9ccbe87cb6d38f877f6ade158c5444a9608f404650c4d328",
-      "url": "/u052.html"
     }
   ],
   "schema": 1,
-  "state_hash": "2440af11aa017fa09e0f24746388925f2b37d12e667523cca082d9cd546c0daa",
+  "state_hash": "3dae347b252fa0f9ee2a1100a3e98baf246dee71ed8d6647f215ab378b122c8f",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1186,
-    "new_articles_sha256": "aac209192896ac13fade90fe70baacf9a87f10e93e881c10784c8e29b0f216c8",
-    "pages_sha256": "a7e1656964035d1bb52e5a9a375d0d5dafa891a326897c938399371fdb50f439",
-    "pages_total": 1122,
-    "published_pages": 1121
+    "new_articles": 1187,
+    "new_articles_sha256": "f440615f16878c1307c29c5041e8206430124bb65b5b59d8f2f4354b0d9ee212",
+    "pages_sha256": "7b984b647c3bfb293bfdbf1cee28db7b0167c8a1c951dd0c09e2e6702f695c3c",
+    "pages_total": 1123,
+    "published_pages": 1122
   }
 }
