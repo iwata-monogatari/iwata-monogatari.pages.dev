@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1789615822,
-  "generation": 20260917123022,
-  "git_commit_at_stamp": "99336a7a9fa29462d3417c7d4e8963cf856786d9",
+  "generated_at_unix": 1789732771,
+  "generation": 20260918205931,
+  "git_commit_at_stamp": "702989f07ac7a048b8521148f7fbb58ed60642ce",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,7 +35,7 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "f440615f16878c1307c29c5041e8206430124bb65b5b59d8f2f4354b0d9ee212"
+      "sha256": "cc74e108360a7e7733bb48723183f62b69c5442cddad75da16e0faeb86424e1d"
     },
     {
       "path": "data/pages.json",
@@ -63,7 +63,7 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "71b7b57acbcdf9735084d9a660429fe8da68af93f7ac46aa990c52674b08cc66"
+      "sha256": "ba7c1bc67c5901f24cc0c696b9cc80079a35a1e4f2eaae720f67e53a2a708d83"
     },
     {
       "path": "updates.html",
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "fa03ca3f25a656ef8257c979cbf626c512b1094eb9dfd25cee89d6dc03393d8a",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "f312330e785310d07da9ac15ec7996281338786144ce524263bbba49d375161f",
+      "path": "blog/20260918-mitsuke-school-autumn-visit/index.html",
+      "sha256": "ce2b3b7c2a334e327dcd94cd9d78098e8c28927b27f7088a5edd27e1042bd890",
+      "url": "/blog/20260918-mitsuke-school-autumn-visit"
     },
     {
       "content_sha256": "ee80b8860872dff71979fbd2e8f075369fa45b71010ebe51cc2b15be4d98cac5",
@@ -856,21 +862,15 @@
       "path": "u050.html",
       "sha256": "d22e566454a438922e8259442024c570cc0c941c97e7f17e82044fb42c08cf59",
       "url": "/u050.html"
-    },
-    {
-      "content_sha256": "749080bb8d927284bbe6c1688512c7725c86678d9d4bb0058ee6778df71cacf4",
-      "path": "u051.html",
-      "sha256": "4d4442882db4b4e2c214b416d11ee5a17aefde44d9fdb17b88ff830a6c830a98",
-      "url": "/u051.html"
     }
   ],
   "schema": 1,
-  "state_hash": "3dae347b252fa0f9ee2a1100a3e98baf246dee71ed8d6647f215ab378b122c8f",
+  "state_hash": "c648df8e46fb9d978873915df677f496d5cb3da9a85cf46d74422cd252587dc4",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1187,
-    "new_articles_sha256": "f440615f16878c1307c29c5041e8206430124bb65b5b59d8f2f4354b0d9ee212",
+    "new_articles": 1188,
+    "new_articles_sha256": "cc74e108360a7e7733bb48723183f62b69c5442cddad75da16e0faeb86424e1d",
     "pages_sha256": "7b984b647c3bfb293bfdbf1cee28db7b0167c8a1c951dd0c09e2e6702f695c3c",
     "pages_total": 1123,
     "published_pages": 1122
