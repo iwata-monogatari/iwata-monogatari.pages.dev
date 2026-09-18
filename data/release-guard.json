@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1789732771,
-  "generation": 20260918205931,
-  "git_commit_at_stamp": "702989f07ac7a048b8521148f7fbb58ed60642ce",
+  "generated_at_unix": 1789773204,
+  "generation": 20260919081324,
+  "git_commit_at_stamp": "729df24268a27ebd48df50b407f3efe05b76917c",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,7 +35,7 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "cc74e108360a7e7733bb48723183f62b69c5442cddad75da16e0faeb86424e1d"
+      "sha256": "2d54a69906e998e75bc441d39850c4ab02b4d5004cd8d76a8d3071f5462e5b71"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "8c002c249ca46c8df30695461793b28cc8710aceb751558b70ba717370ec92eb"
+      "sha256": "c5ddae6323328d11ec51c7b9b56560c17fbe2413fddbba290d72cf449c8173e9"
     },
     {
       "path": "package.json",
@@ -63,7 +63,7 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "ba7c1bc67c5901f24cc0c696b9cc80079a35a1e4f2eaae720f67e53a2a708d83"
+      "sha256": "f3c6f1df34ed693d6fa47597b77564f72f2db25b49611f769d705db86eab679f"
     },
     {
       "path": "updates.html",
@@ -72,9 +72,9 @@
   ],
   "protected_urls": [
     {
-      "content_sha256": "9e72bce49e16ddb4743a48b0dbf7f9d9d62cad67a03296a8132a03bbf6c2ff1e",
+      "content_sha256": "5e6e81cc0c7be2e7d444058f96a9df163a2559c8b2b9fe299ab12c40a9fa51a0",
       "path": "index.html",
-      "sha256": "8c002c249ca46c8df30695461793b28cc8710aceb751558b70ba717370ec92eb",
+      "sha256": "c5ddae6323328d11ec51c7b9b56560c17fbe2413fddbba290d72cf449c8173e9",
       "url": "/"
     },
     {
@@ -144,9 +144,15 @@
       "url": "/s025.html"
     },
     {
-      "content_sha256": "f312330e785310d07da9ac15ec7996281338786144ce524263bbba49d375161f",
+      "content_sha256": "bf4366bdad3281bff7925ed6d8c7333ad40f0edfbe88adf686f3026c9b8505af",
+      "path": "blog/20260919-mitsuke-post-station-walk/index.html",
+      "sha256": "ae6ca911537cf1794900d043a56fb715c398ac2f46e5642b790e2f0661ae7e28",
+      "url": "/blog/20260919-mitsuke-post-station-walk"
+    },
+    {
+      "content_sha256": "25551806734fca7046421d84692ef53fdf248e69bd36a0c26a53f88bd2b4ccc5",
       "path": "blog/20260918-mitsuke-school-autumn-visit/index.html",
-      "sha256": "ce2b3b7c2a334e327dcd94cd9d78098e8c28927b27f7088a5edd27e1042bd890",
+      "sha256": "689b2e996ffbd991f01cd7bf5db0879238613b4c94c4de73aa3eed9bc85a890d",
       "url": "/blog/20260918-mitsuke-school-autumn-visit"
     },
     {
@@ -856,21 +862,15 @@
       "path": "u049.html",
       "sha256": "98f199462202c8fde6d0c1ed6a0bb2d9c8f0671a6d251cf35bc3ba34aa34303b",
       "url": "/u049.html"
-    },
-    {
-      "content_sha256": "a33141ffd60b35afade23c7b519f92ad7e24356b7d9d664dbdd9d93470bcbe35",
-      "path": "u050.html",
-      "sha256": "d22e566454a438922e8259442024c570cc0c941c97e7f17e82044fb42c08cf59",
-      "url": "/u050.html"
     }
   ],
   "schema": 1,
-  "state_hash": "c648df8e46fb9d978873915df677f496d5cb3da9a85cf46d74422cd252587dc4",
+  "state_hash": "3579b331b4d1f7d421e2ab927b4b64a91779a825eaa7352c81c20d26081b6a84",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1188,
-    "new_articles_sha256": "cc74e108360a7e7733bb48723183f62b69c5442cddad75da16e0faeb86424e1d",
+    "new_articles": 1189,
+    "new_articles_sha256": "2d54a69906e998e75bc441d39850c4ab02b4d5004cd8d76a8d3071f5462e5b71",
     "pages_sha256": "7b984b647c3bfb293bfdbf1cee28db7b0167c8a1c951dd0c09e2e6702f695c3c",
     "pages_total": 1123,
     "published_pages": 1122
