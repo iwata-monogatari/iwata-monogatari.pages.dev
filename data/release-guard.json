@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1789773204,
-  "generation": 20260919081324,
-  "git_commit_at_stamp": "729df24268a27ebd48df50b407f3efe05b76917c",
+  "generated_at_unix": 1789780000,
+  "generation": 20260919100640,
+  "git_commit_at_stamp": "96d330bd69a40da276fa9b23185a946b788acbf4",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,7 +35,7 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "2d54a69906e998e75bc441d39850c4ab02b4d5004cd8d76a8d3071f5462e5b71"
+      "sha256": "0236eac4b151e0b832c2b6e40da733df0824ae2a1d47bf7c9792819c1de18189"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "c5ddae6323328d11ec51c7b9b56560c17fbe2413fddbba290d72cf449c8173e9"
+      "sha256": "4fc704aca5962f6e651ae2c96f619ea5c8b435f7b944ee2174b3f8dda907a650"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "f3c6f1df34ed693d6fa47597b77564f72f2db25b49611f769d705db86eab679f"
+      "sha256": "3ac36af1e6d4f2494dda16f6a4349c7e665c256d11965103759186d7dfda4ccb"
     },
     {
       "path": "updates.html",
-      "sha256": "85d39b53650d69d7d9abd042c4a5f81ac5e22cf38b6699b98e63e9215daee410"
+      "sha256": "3584ce82c21c30c52f89d3aaf85adefe14c82c5c1bb733dfaea03280e53a1454"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "5e6e81cc0c7be2e7d444058f96a9df163a2559c8b2b9fe299ab12c40a9fa51a0",
+      "content_sha256": "9ea2a2952a33f783826042eddca7b74803fa7f127bc376e66993ed1a2eaedf44",
       "path": "index.html",
-      "sha256": "c5ddae6323328d11ec51c7b9b56560c17fbe2413fddbba290d72cf449c8173e9",
+      "sha256": "4fc704aca5962f6e651ae2c96f619ea5c8b435f7b944ee2174b3f8dda907a650",
       "url": "/"
     },
     {
-      "content_sha256": "45a4f67e7431f778a00ea214a1087884ff946c05e5b73c0b1e7813e9398cb647",
+      "content_sha256": "8ba543d149eee2529679669e117f99e2b1d4044a85f91471cd2d7c3b068377c9",
       "path": "updates.html",
-      "sha256": "85d39b53650d69d7d9abd042c4a5f81ac5e22cf38b6699b98e63e9215daee410",
+      "sha256": "3584ce82c21c30c52f89d3aaf85adefe14c82c5c1bb733dfaea03280e53a1454",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "fa03ca3f25a656ef8257c979cbf626c512b1094eb9dfd25cee89d6dc03393d8a",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "0212c0ab195b470a6af624eebb7487578fc5cc4bab1ca104630cea4daf507ba6",
+      "path": "blog/20260919-2-kakezuka-kaiun-rekishi-walk/index.html",
+      "sha256": "0212c0ab195b470a6af624eebb7487578fc5cc4bab1ca104630cea4daf507ba6",
+      "url": "/blog/20260919-2-kakezuka-kaiun-rekishi-walk"
     },
     {
       "content_sha256": "bf4366bdad3281bff7925ed6d8c7333ad40f0edfbe88adf686f3026c9b8505af",
@@ -856,21 +862,15 @@
       "path": "u048.html",
       "sha256": "2c6e4e6cad6e01c450b423cfe8f24bdb543cbca76e5c7b311fcf1a7c193b6e54",
       "url": "/u048.html"
-    },
-    {
-      "content_sha256": "383f215a531809127f671372844aac8ce4622ee83b5948a5c2f2b339454a072b",
-      "path": "u049.html",
-      "sha256": "98f199462202c8fde6d0c1ed6a0bb2d9c8f0671a6d251cf35bc3ba34aa34303b",
-      "url": "/u049.html"
     }
   ],
   "schema": 1,
-  "state_hash": "3579b331b4d1f7d421e2ab927b4b64a91779a825eaa7352c81c20d26081b6a84",
+  "state_hash": "29194a148f64c98d9e1f7fefd4d31860b14a9cb43da14f63018b349a2d272ba4",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1189,
-    "new_articles_sha256": "2d54a69906e998e75bc441d39850c4ab02b4d5004cd8d76a8d3071f5462e5b71",
+    "new_articles": 1190,
+    "new_articles_sha256": "0236eac4b151e0b832c2b6e40da733df0824ae2a1d47bf7c9792819c1de18189",
     "pages_sha256": "7b984b647c3bfb293bfdbf1cee28db7b0167c8a1c951dd0c09e2e6702f695c3c",
     "pages_total": 1123,
     "published_pages": 1122
