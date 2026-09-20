@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-09-17",
+  "updated_at": "2026-09-20",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -31403,6 +31403,38 @@
         "internal:oishi-ronko/269/",
         "web:https://eco.mtk.nao.ac.jp/koyomi/yoko/2026/rekiyou262.html",
         "web:https://eco.mtk.nao.ac.jp/koyomi/wiki/B5A8C0E12FBBA8C0E1A4C8A4CFA1A9.html"
+      ]
+    },
+    {
+      "title": "磐田の昔のバス路線｜本編から調べる3手順（ブログ記事）",
+      "url": "blog/20260920-iwata-old-bus-routes/",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "road-traffic",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-09-20",
+      "updated_at": "2026-09-20",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "ブログ・交通史の調べ方",
+      "topics": [
+        "バス",
+        "交通史",
+        "路線",
+        "調査・資料"
+      ],
+      "summary": "磐田の昔のバス路線は、本編で路線名を拾い、年代の意味を分け、出典付きの照会メモを作る3手順で調べます。9月20日のバスの日に、向笠原線などの名前を入口にして、記憶と記録を分ける方法を案内。停留所や運行期間が分からない欄は未確認のまま残します。",
+      "source_refs": [
+        "web:https://wwwtb.mlit.go.jp/chubu/press/pdf/jikou2026091601.pdf",
+        "internal:c064.html",
+        "internal:c058.html"
       ]
     }
   ]
