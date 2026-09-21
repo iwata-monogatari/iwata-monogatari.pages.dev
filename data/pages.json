@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-09-21",
+  "updated_at": "2026-09-22",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -31497,6 +31497,41 @@
         "internal:n032.html",
         "internal:c021.html",
         "internal:oishi-ronko/206/"
+      ]
+    },
+    {
+      "title": "磐田の酒の歴史｜商いと祭りを本編で読む（ブログ記事）",
+      "url": "blog/20260922-iwata-sake-history/",
+      "district": [
+        "common",
+        "toyooka",
+        "fukude"
+      ],
+      "themes": [
+        "life",
+        "festival"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-09-22",
+      "updated_at": "2026-09-22",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "ブログ・酒と暮らしの読書案内",
+      "topics": [
+        "酒",
+        "産業",
+        "祭り",
+        "調査・資料"
+      ],
+      "summary": "磐田の酒の歴史は、酒造業・屋敷・祭礼の記録を分けて読むと暮らしとの接点を探せます。千寿酒造、花咲乃庄、中野白山神社の白酒を扱う本編3本へ案内。10月1日の日本酒の日を前に、商いと供え物を混同せず、資料で分かることと未確認の関係を読み分けます。",
+      "source_refs": [
+        "web:https://www.nta.go.jp/about/organization/tokyo/sake/abc/abc-sake.htm",
+        "internal:c067.html",
+        "internal:y024.html",
+        "internal:f020.html"
       ]
     }
   ]
