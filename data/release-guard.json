@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1789960868,
-  "generation": 20260921122108,
-  "git_commit_at_stamp": "0a6dd329b9ae488046780a66364c323d6118e52d",
+  "generated_at_unix": 1789984748,
+  "generation": 20260921185908,
+  "git_commit_at_stamp": "b550cd02fd363fd34506a97c3eaf47a416e93135",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,15 +35,15 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "6792474cb8ed56805e2878ade1fd9ed35ae4b37000bbc5983fdf8d9219b4422b"
+      "sha256": "3ae1f4edb07cd1ae0a54cdd5029de10701febc5a9e68514b8ffe1e8657c17892"
     },
     {
       "path": "data/pages.json",
-      "sha256": "be6e1c369218602696f0d169d07ff54d840b9370526c22963b5e4bd5f4a6f6df"
+      "sha256": "4b9a4d3928788262b4bf7d9b3f1e01fb4b982bdc7c1b414151470e71aa191764"
     },
     {
       "path": "index.html",
-      "sha256": "82ad0de01746cabaa97b8781799f177b8a84b8d6b1f2ae1deb460ad3650d1070"
+      "sha256": "011ffdd8689b7abbacc4424254dccef55a0cb438d1c6039e3712616b6066b4ca"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "326d913e676f126466eaa19fc19445c6cd22156d63920dcaa248006b59dde0c0"
+      "sha256": "d532366481f3d19d68548550a4d9d00908b2a1ca66f32b2bb37ecad65627a7f9"
     },
     {
       "path": "updates.html",
-      "sha256": "1a79348e23ca1acc800049e35faf701be442c0d25a0f781345dad92143275228"
+      "sha256": "0bf852861bb85669a4cb1d70218c8a2163f13df2fb52a199776f2b3ce34a61bc"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "a28a2f1aab40ab4a31ea96a2874b5390364110b8d9d414043692b00675adb838",
+      "content_sha256": "fc6a215ac6ee51d0522cf805866ec4845b46a919ad76d3d6f633881cf9662515",
       "path": "index.html",
-      "sha256": "82ad0de01746cabaa97b8781799f177b8a84b8d6b1f2ae1deb460ad3650d1070",
+      "sha256": "011ffdd8689b7abbacc4424254dccef55a0cb438d1c6039e3712616b6066b4ca",
       "url": "/"
     },
     {
-      "content_sha256": "89a4495977ebe176e41bcc40cc3de740f9ca4fcb5c5027fb29d58f1003756bed",
+      "content_sha256": "46b1b7bf36b4b6865d7bf31c274ab04870c0aad424c15ac2f804cc9712789d35",
       "path": "updates.html",
-      "sha256": "1a79348e23ca1acc800049e35faf701be442c0d25a0f781345dad92143275228",
+      "sha256": "0bf852861bb85669a4cb1d70218c8a2163f13df2fb52a199776f2b3ce34a61bc",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "fa03ca3f25a656ef8257c979cbf626c512b1094eb9dfd25cee89d6dc03393d8a",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "54d467020df540a0130a76e2b65df19bcb4ab1832ec3020ceae75ef984d1a299",
+      "path": "blog/20260921-cultural-property-designation-registration/index.html",
+      "sha256": "3c5292cf891f6838ada44e9fe4a522922155c8f634e887b044c10a96e6993e15",
+      "url": "/blog/20260921-cultural-property-designation-registration"
     },
     {
       "content_sha256": "fca77939ecb5bf981d18016e51a2e630c171c8bea724d8fecd9554f4d79ed829",
@@ -856,23 +862,17 @@
       "path": "k071.html",
       "sha256": "408dfed8cbe5d2c77851196b4c6c504a421ef3143d46be98b3e8c539df3ce06d",
       "url": "/k071.html"
-    },
-    {
-      "content_sha256": "86032a84cff7eadaaa85b6949028ffd859dcdd6fd4bb306fcfa464f16dc747bf",
-      "path": "u045.html",
-      "sha256": "d6d4cfb225dbf6433bba2ca8a4cd348803a4a39283ca767a061721a5286c30c8",
-      "url": "/u045.html"
     }
   ],
   "schema": 1,
-  "state_hash": "8b7fde22baababcf8b6fbb30ebd568c97b6bea92c89752726fafc50927fcde23",
+  "state_hash": "9e65c0e6db40e77844cfb0b98671703e9d50c47dcf00435c326f6d21ead02adc",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1193,
-    "new_articles_sha256": "6792474cb8ed56805e2878ade1fd9ed35ae4b37000bbc5983fdf8d9219b4422b",
-    "pages_sha256": "be6e1c369218602696f0d169d07ff54d840b9370526c22963b5e4bd5f4a6f6df",
-    "pages_total": 1126,
-    "published_pages": 1125
+    "new_articles": 1194,
+    "new_articles_sha256": "3ae1f4edb07cd1ae0a54cdd5029de10701febc5a9e68514b8ffe1e8657c17892",
+    "pages_sha256": "4b9a4d3928788262b4bf7d9b3f1e01fb4b982bdc7c1b414151470e71aa191764",
+    "pages_total": 1127,
+    "published_pages": 1126
   }
 }
