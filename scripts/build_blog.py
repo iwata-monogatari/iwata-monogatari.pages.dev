@@ -212,6 +212,10 @@ def external_host(href: str) -> str | None:
 
 
 def host_allowed(host: str) -> bool:
+    # Universal Postal Union: UN specialized agency; exact official host only.
+    # https://www.mofa.go.jp/mofaj/gaiko/page22_000758.html
+    if host == "www.upu.int":
+        return True
     return any(
         host == suffix.lstrip(".") or host.endswith(suffix)
         for suffix in ALLOWED_EXTERNAL_HOST_SUFFIXES
