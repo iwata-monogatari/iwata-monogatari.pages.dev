@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-09-22",
+  "updated_at": "2026-09-23",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -31598,6 +31598,39 @@
         "internal:n016.html",
         "web:https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002046.html",
         "web:https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002054.html"
+      ]
+    },
+    {
+      "title": "中泉駅と新中泉駅の違い｜磐田の本編で読み分ける（ブログ記事）",
+      "url": "blog/20260923-nakaizumi-shin-nakaizumi/",
+      "district": [
+        "nakaizumi"
+      ],
+      "themes": [
+        "road-traffic",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-09-23",
+      "updated_at": "2026-09-23",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "ブログ・鉄道資料案内",
+      "topics": [
+        "中泉駅",
+        "新中泉駅",
+        "磐田駅",
+        "光明電気鉄道"
+      ],
+      "summary": "中泉駅は現在の磐田駅の旧称、新中泉は光明電気鉄道の起点として本編に記されています。駅名・所属路線・開業と改称の年月日を3本の本編で照合。10月14日の鉄道の日を前に、似た名前を同じ駅の改称と取り違えず、位置関係は資料で確かめる読み方を案内します。",
+      "source_refs": [
+        "web:https://www.mlit.go.jp/tetudo/tetudo_tk1_000004.html",
+        "internal:n070.html",
+        "internal:c055.html",
+        "internal:c130.html"
       ]
     }
   ]
