@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-09-24",
+  "updated_at": "2026-09-25",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -31729,6 +31729,39 @@
         "internal:matsuri-fuhachiman-dashi.html",
         "internal:oishi-ronko/044/",
         "web:https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/016/256/2026_schedule.pdf"
+      ]
+    },
+    {
+      "title": "福田の織物を読む｜衣替えから入る本編3本（ブログ記事）",
+      "url": "blog/20260925-fukude-textiles-koromogae/",
+      "district": [
+        "fukude",
+        "nakaizumi"
+      ],
+      "themes": [
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-09-25",
+      "updated_at": "2026-09-25",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "ブログ・織物の読書案内",
+      "topics": [
+        "福田",
+        "織物",
+        "衣替え",
+        "北窓採光"
+      ],
+      "summary": "福田の織物は、加工・分業と労働・工場建築を扱う本編3本から読み解けます。10月初めの衣替えを入口に、起毛をつくる仕事、働く人、北窓採光へ視線を広げる読書案内です。服の産地や建物の来歴を外観で決めず、本編の記述と未確認の範囲を分けて確かめます。",
+      "source_refs": [
+        "internal:f003.html",
+        "internal:c075.html",
+        "internal:oishi-ronko/242/",
+        "web:https://sydney.jpf.go.jp/senseis-voices/koromogae/"
       ]
     }
   ]

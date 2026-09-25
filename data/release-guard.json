@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1790226937,
-  "generation": 20260924141537,
-  "git_commit_at_stamp": "5a2acfe400e6753989395f61ccdaffb233f2fd1f",
+  "generated_at_unix": 1790296457,
+  "generation": 20260925093417,
+  "git_commit_at_stamp": "b84918596fd9c510083d2ab84781b8438ecf4a9e",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,15 +35,15 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "279641ba99edbaf841740d80f6e26da6012abfa33828d5180bfcc2a780eeeb6b"
+      "sha256": "c50f0fdc48e942498f2c393f31a57ca5f6a4d3289f0bf02be593d45120ee1b8c"
     },
     {
       "path": "data/pages.json",
-      "sha256": "3deb3de71d09f9e4993880b843bceeda589347078f0fb3131ac2c858b85341b6"
+      "sha256": "26ee54c71d953bb6a4f749716a5330aa58dc88b43764b27230e433cb9ebef131"
     },
     {
       "path": "index.html",
-      "sha256": "48eebba3252b21c8b023a0d24c1c022efc79bb240f37d043e54d3a93162f2458"
+      "sha256": "0401e8e20a9e27e86dd581ebbcb5bb652e823cb7e7e594a2c3f30ec37a9cbdcb"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "34c31c8e4bfb53e5eec7c4179789972ef3f4e0e68d60adf5098fa78c2e406280"
+      "sha256": "b3740483bfc5a75297605d0ea023b32b29c7df969df792dd3059de3dcfcf7e71"
     },
     {
       "path": "updates.html",
-      "sha256": "40649f9c07d4d97f3d8ab13c30756c2fcc204498099e3572c51ccdd96ad03e5b"
+      "sha256": "b9bfe155649448829e91309ef8fbc12671f47500bce76627001b6052dad1c82c"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "31f58a18678ed2df19b802c58bc2c17ef5a65292a6507d730cd0df2eca808e63",
+      "content_sha256": "95f305547384f26644d00617dd576ced4d8947444e4306d127a829589191626b",
       "path": "index.html",
-      "sha256": "48eebba3252b21c8b023a0d24c1c022efc79bb240f37d043e54d3a93162f2458",
+      "sha256": "0401e8e20a9e27e86dd581ebbcb5bb652e823cb7e7e594a2c3f30ec37a9cbdcb",
       "url": "/"
     },
     {
-      "content_sha256": "5e47ada194caa5d71741705d9c53536c54b516354781026df46ef86f12648b6d",
+      "content_sha256": "5adf05ccaf1e22b87b0cf11715012bc669f46b81e80f3838445d66790d263bd4",
       "path": "updates.html",
-      "sha256": "40649f9c07d4d97f3d8ab13c30756c2fcc204498099e3572c51ccdd96ad03e5b",
+      "sha256": "b9bfe155649448829e91309ef8fbc12671f47500bce76627001b6052dad1c82c",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "fa03ca3f25a656ef8257c979cbf626c512b1094eb9dfd25cee89d6dc03393d8a",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "4a8f8a9c7c6190ba2d75eb1349f7d45b19eca80a6d232ef93221ee02f54aa2ca",
+      "path": "blog/20260925-fukude-textiles-koromogae/index.html",
+      "sha256": "19d36eadc0b8309f39ab4f23dfe5077b8f22cbfc7d106fd8e2772ba0bf95b515",
+      "url": "/blog/20260925-fukude-textiles-koromogae"
     },
     {
       "content_sha256": "2395f386f462a85579ff3aaf0ce3097966482f895fad4a12ed344fef644b94bd",
@@ -856,23 +862,17 @@
       "path": "s030.html",
       "sha256": "b82fd62ddc445e6a3d283795094443250608e4ced0c42100ba1f8b2943fa11b8",
       "url": "/s030.html"
-    },
-    {
-      "content_sha256": "bd454d4d29da72efde82026517a600aec5a028a86962dc6f10347a8a6143d623",
-      "path": "s031.html",
-      "sha256": "3515cbf4737cd51f3ff0a67afd8f89c7ab7ef9bed844794798f57bb4b440cf87",
-      "url": "/s031.html"
     }
   ],
   "schema": 1,
-  "state_hash": "81de33586be3375b65473a887a69b9a03a269ebc6cb6d1857178e8ddb9aa47d4",
+  "state_hash": "373392abbe7c096b4b7ec1607da0fe345c4b90b6e972358fe56aa43412399da3",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1201,
-    "new_articles_sha256": "279641ba99edbaf841740d80f6e26da6012abfa33828d5180bfcc2a780eeeb6b",
-    "pages_sha256": "3deb3de71d09f9e4993880b843bceeda589347078f0fb3131ac2c858b85341b6",
-    "pages_total": 1134,
-    "published_pages": 1133
+    "new_articles": 1202,
+    "new_articles_sha256": "c50f0fdc48e942498f2c393f31a57ca5f6a4d3289f0bf02be593d45120ee1b8c",
+    "pages_sha256": "26ee54c71d953bb6a4f749716a5330aa58dc88b43764b27230e433cb9ebef131",
+    "pages_total": 1135,
+    "published_pages": 1134
   }
 }
