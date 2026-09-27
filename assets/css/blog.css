@@ -328,3 +328,16 @@ body {
   .blog-main .blog-search-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .blog-main .blog-search-field--query { grid-column: 1 / -1; }
 }
+
+/* 著者欄（2026-09-27 個人サイト Profile へ統一。scripts/normalize_author_profile.py） */
+main .author-box, .blog-main .author-box { display: flex; gap: 14px; align-items: flex-start; margin: 32px 0 0; padding: 14px 16px; border: 1px solid #d9e4ea; border-radius: 10px; background: #fff; }
+main .author-box img, .blog-main .author-box img { flex: 0 0 64px; width: 64px; height: 64px; border-radius: 50%; object-fit: cover; }
+main .author-box p, .blog-main .author-box p { margin: 0 0 6px; font-size: 13.5px; line-height: 1.8; }
+main .author-box .author-name strong, .blog-main .author-box .author-name strong { font-size: 15px; }
+main .author-box .author-role, .blog-main .author-box .author-role { display: inline-block; margin-left: .6em; color: var(--blog-usuzumi, #5b6770); font-size: 12.5px; }
+main .author-box .author-profile, .blog-main .author-box .author-profile { margin: 0; }
+@media (max-width: 480px) {
+  main.blog-main .author-box, main .author-box { gap: 10px; padding: 12px; }
+  main.blog-main .author-box img, main .author-box img { flex-basis: 44px; width: 44px; height: 44px; }
+  main .author-box .author-role { display: block; margin-left: 0; }
+}

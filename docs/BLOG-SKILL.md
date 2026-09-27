@@ -107,6 +107,8 @@ git push                    # Cloudflare Pages が自動でビルド・デプロ
 - `<div class="post-body">` … `<!-- /post-body -->` で囲まれた本文（1,200〜9,000字）
 - `<p class="post-scope">` … この記事が新しい史実を主張しないことの明示
 - `<span class="post-author">` … 著者表記
+- 末尾の著者欄 `<div class="author-box">` … 文面は `scripts/normalize_author_profile.py` の標準形（大石浩之／磐田市／富士ヶ丘サービス株式会社 代表、「プロフィールを見る」→ `https://oishi-hiroyuki.org/profile`）。独自の肩書・実績・営業CTAを書き足さない。生成後に `python scripts/normalize_author_profile.py` を流せば標準形にそろう
+- JSON-LD の `author` は `{"@type":"Person","@id":"https://oishi-hiroyuki.org/#person","name":"大石浩之","url":"https://oishi-hiroyuki.org/profile"}` に固定（人物情報の正本は個人サイト。サイト側で Person を定義する場合も sameAs に運営サイトを並べない）
 - `<section class="post-sources">` … 出典（`<li>` 2件以上）
 - `canonical` と `og:url` が `https://iwata-monogatari.net/blog/<slug>/` に一致
 - **サイト内の既存ページへのリンク2本以上**

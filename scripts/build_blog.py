@@ -74,6 +74,7 @@ ALLOWED_EXTERNAL_HOST_SUFFIXES = (
     ".lg.jp",
     ".ac.jp",
     "city.iwata.shizuoka.jp",
+    "oishi-hiroyuki.org",  # 著者欄の「プロフィールを見る」（人物情報の正本）
     "pref.shizuoka.jp",
     "lega-shizu.com",  # 静岡県「しずおか無形民俗文化財ナビ」
     "rekihaku.ac.jp",
@@ -349,6 +350,12 @@ def audit(posts: list[dict]) -> list[tuple[str, str]]:
         # G12: 著者表記
         if 'class="post-author"' not in src:
             add('著者表記 <span class="post-author"> が無い')
+        # G12b: 末尾著者欄と JSON-LD author を個人サイトの Profile（正本）にそろえる（2026-09-27）
+        if 'href="https://oishi-hiroyuki.org/profile"' not in src or 'class="author-box"' not in src:
+            add('末尾著者欄 <div class="author-box"> に https://oishi-hiroyuki.org/profile への「プロフィールを見る」が無い'
+                '（python scripts/normalize_author_profile.py で標準形にできる）')
+        if '"author"' in src and '"@id":"https://oishi-hiroyuki.org/#person"' not in src.replace(" ", ""):
+            add('JSON-LD の author が正本 @id https://oishi-hiroyuki.org/#person を指していない')
 
         # G13: canonical / og:url が /blog/<slug>/ に一致
         expected = f"{SITE}/blog/{slug}/"
