@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-09-27",
+  "updated_at": "2026-09-28",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -31891,6 +31891,39 @@
         "internal:blog/20260831-mitsuke-nakaizumi-jinko/",
         "internal:blog/20260827-iwata-kyodo-shiryo-shirabekata/",
         "web:https://www.stat.go.jp/info/today/013.html"
+      ]
+    },
+    {
+      "title": "磐田の音楽史はどこまで分かる｜本編3本への案内（ブログ記事）",
+      "url": "blog/20260928-iwata-music-history/",
+      "district": [
+        "fukude",
+        "ryuyo"
+      ],
+      "themes": [
+        "culture",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-09-28",
+      "updated_at": "2026-09-28",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "ブログ・音楽史案内",
+      "topics": [
+        "音楽史",
+        "福田",
+        "竜洋",
+        "資料の読み方"
+      ],
+      "summary": "磐田の音楽史は、記録の存在と演奏内容の確認を分けて読むところから始めます。福田の論考232・f042と竜洋のr075へ案内。10月1日の国際音楽の日を前に、地区名や資料中の語を手がかりにし、結成年・人数・曲目の未確認事項を残す読み方を整理します。",
+      "source_refs": [
+        "internal:oishi-ronko/232/",
+        "internal:f042.html",
+        "internal:r075.html"
       ]
     }
   ]
