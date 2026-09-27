@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1790421631,
-  "generation": 20260926202031,
-  "git_commit_at_stamp": "95caf9a7be76c12adba9b2811b36794b43bf3366",
+  "generated_at_unix": 1790477999,
+  "generation": 20260927115959,
+  "git_commit_at_stamp": "aeaf0c815861dc28925b5b274e1659aed043bdb9",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,15 +35,15 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "3256b0fe78b5b4cb7e383779cc01973179c4898daef5885a1b6c8f456f15f58b"
+      "sha256": "fd69d6343843446df75ebb2da3321107b868c4b518b7e7105a1007e63e5cd966"
     },
     {
       "path": "data/pages.json",
-      "sha256": "6a12205b65677d674b2d8f73e1e09f32a969b9b84f2d2c413892930c4493bf4c"
+      "sha256": "bdc6dc60351821d3d10b7b3a4249bc845168aa9bf7d90e4075ac68f51d7be943"
     },
     {
       "path": "index.html",
-      "sha256": "fae5f949502580dd98ff7ca5f895ecf294fb9b8ce6b6910c19c175d7b30e391e"
+      "sha256": "e04ead6b9e59909f22e2bb0e3f00f73d10e865c008f153ce86c1c3f751363c2d"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "062e6902ab2865d0ddcfa0b04f3ff7c0e6685d47770bc97562a1c97bc6a20084"
+      "sha256": "c44cb47c635849b3d9697cf0ba983c36d43c145a2e2f8ace4bc03be34fe423de"
     },
     {
       "path": "updates.html",
-      "sha256": "9a13a0f75a350c1b2ff0a9723990ee2c4f192881e0a7ec1244682973f14a1a98"
+      "sha256": "7cf3816c767888a91f7b40c983e3d59d80b72b9241ee7d214f61bbac46ad059a"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "768c5f403fd6654e77e3678a39d787f5f6b71af655189ce5af74b13944a2734f",
+      "content_sha256": "ad71499288651f62cd25ccb46e63d0b0bb2ec1957bedc77515dc0cc1929dd03d",
       "path": "index.html",
-      "sha256": "fae5f949502580dd98ff7ca5f895ecf294fb9b8ce6b6910c19c175d7b30e391e",
+      "sha256": "e04ead6b9e59909f22e2bb0e3f00f73d10e865c008f153ce86c1c3f751363c2d",
       "url": "/"
     },
     {
-      "content_sha256": "4d9e83202a7880f6fff17f13d7a0ec91e6d931e0db4fc1228b8c42adc8288966",
+      "content_sha256": "42cd30cfe7c3db43a40a20a71256b8ec4a410f3c537b2a3f2332eba9bb972419",
       "path": "updates.html",
-      "sha256": "9a13a0f75a350c1b2ff0a9723990ee2c4f192881e0a7ec1244682973f14a1a98",
+      "sha256": "7cf3816c767888a91f7b40c983e3d59d80b72b9241ee7d214f61bbac46ad059a",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "fa03ca3f25a656ef8257c979cbf626c512b1094eb9dfd25cee89d6dc03393d8a",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "f58b9f3b6ac4f6e637be9fad5c8f9c9b95386620862488a14b9efe6b54d8197c",
+      "path": "blog/20260927-iwata-athlete-research/index.html",
+      "sha256": "6a852f5ee6321f64143ed88c451aa5465eaaaebbb59c494e660d6e2153304b55",
+      "url": "/blog/20260927-iwata-athlete-research"
     },
     {
       "content_sha256": "eb11e016cbddb9b30659d12899094700fc4260c38532e10745d3558839b5a327",
@@ -856,23 +862,17 @@
       "path": "s010.html",
       "sha256": "c107f7be4dc9223e4b74e44437162c2dbc249b4ca65163f5edfd5985685aa54f",
       "url": "/s010.html"
-    },
-    {
-      "content_sha256": "ce0c4baa7f24ce4b37730810f774d30e56b8d5289334ae58502dec37a0fbee9e",
-      "path": "s011.html",
-      "sha256": "06e1f7a30056f022e0216a2fdd685c6a35ede6818f6f611e70f4cfa1446ae59b",
-      "url": "/s011.html"
     }
   ],
   "schema": 1,
-  "state_hash": "1767e808f0b0f407b3c9e985ada0d0047474c754112bdc1f4112468e2af4377c",
+  "state_hash": "a12441c6b1062efec788a2db00e182ff64aa5ee306556e6671066cef05ff2455",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1205,
-    "new_articles_sha256": "3256b0fe78b5b4cb7e383779cc01973179c4898daef5885a1b6c8f456f15f58b",
-    "pages_sha256": "6a12205b65677d674b2d8f73e1e09f32a969b9b84f2d2c413892930c4493bf4c",
-    "pages_total": 1137,
-    "published_pages": 1136
+    "new_articles": 1206,
+    "new_articles_sha256": "fd69d6343843446df75ebb2da3321107b868c4b518b7e7105a1007e63e5cd966",
+    "pages_sha256": "bdc6dc60351821d3d10b7b3a4249bc845168aa9bf7d90e4075ac68f51d7be943",
+    "pages_total": 1138,
+    "published_pages": 1137
   }
 }

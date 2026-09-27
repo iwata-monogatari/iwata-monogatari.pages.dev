@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-09-25",
+  "updated_at": "2026-09-27",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -31825,6 +31825,39 @@
         "internal:y002.html",
         "internal:oishi-ronko/149/",
         "web:https://www.city.iwata.shizuoka.jp/sports_midokoro/kankou/1002006.html"
+      ]
+    },
+    {
+      "title": "磐田ゆかりの選手の調べ方｜本編から作る確認メモ（ブログ記事）",
+      "url": "blog/20260927-iwata-athlete-research/",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "life"
+      ],
+      "content_type": "how-to-research",
+      "published_at": "2026-09-27",
+      "updated_at": "2026-09-27",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "ブログ・資料の探し方",
+      "topics": [
+        "スポーツ",
+        "選手",
+        "学校",
+        "資料の探し方"
+      ],
+      "summary": "磐田ゆかりの選手は、競技実績と学校・地域との接点を別々に確かめます。本編から手がかりを拾い、資料名・該当箇所・確認日を残す親子向けの調べ方を案内。10月12日のスポーツ体験行事を入口に、出身と所属を混同せず、未確認の欄を残せる確認メモを作ります。",
+      "source_refs": [
+        "internal:oishi-ronko/245/",
+        "internal:c107.html",
+        "internal:iwata-higashi-high-school-history.html",
+        "internal:blog/20260827-iwata-kyodo-shiryo-shirabekata/",
+        "web:https://www.city.iwata.shizuoka.jp/sports_midokoro/sports_machizukuri/1008986/1016416.html"
       ]
     }
   ]
