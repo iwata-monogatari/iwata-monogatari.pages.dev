@@ -99,6 +99,9 @@ INJECTED_BLOCKS = [
     ("footer", "im-foot", None),
     ("section", "article-policy", "data-common"),
     ("section", "local-property-note", "data-common"),
+    # This block is inserted by functions/_middleware.js and has no matching
+    # placeholder in the checked-in article HTML. Remove it entirely below.
+    ("section", "im-react", None),
 ]
 
 
@@ -146,7 +149,15 @@ def strip_injected_blocks(html):
                 # normalize the same way instead of looping forever.
                 html = html[: opened.start()]
                 break
-            html = html[: opened.start()] + "<!--im-injected-->" + html[end:]
+            if class_token == "im-react":
+                replacement = ""
+                # The partial ends with a newline. HTMLRewriter inserts that
+                # newline with the block, so remove it from the live side too.
+                if html.startswith("\n", end):
+                    end += 1
+            else:
+                replacement = "<!--im-injected-->"
+            html = html[: opened.start()] + replacement + html[end:]
     return html
 
 
