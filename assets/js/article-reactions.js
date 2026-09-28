@@ -8,6 +8,9 @@
   var path = location.pathname.replace(/\/index\.html$/, "/").replace(/\.html$/, "");
   if (path.length > 1) path = path.replace(/\/+$/, "");
   var title = (document.title || "").slice(0, 200);
+  // 他サイトに置くときは部品に data-api（送り先）と data-site（サイト名）を付ける
+  var api = (root.dataset.api || "").replace(/\/$/, "");
+  var site = root.dataset.site || "iwata";
   var btns = root.querySelectorAll(".im-react-btns button");
   var after = root.querySelector(".im-react-after");
   var thanks = root.querySelector(".im-react-thanks");
@@ -36,7 +39,7 @@
     var q = new URLSearchParams(location.search);
     var v = q.get("fga_internal") || q.get("atawi_internal");
     if (v === "1" || v === "true") return true;
-    return store("fujigaokaAnalyticsInternal") === "1" || store("fujigaokaAnalyticsIgnore") === "1";
+    return store("fujigaokaAnalyticsInternal") === "1" || store("fujigaokaAnalyticsIgnore") === "1" || store("fga_internal") === "1";
   }
 
   var key = "imReact:" + path;
@@ -50,8 +53,8 @@
   }
 
   function post(url, data) {
-    data.path = path; data.title = title; data.vid = vid; data.internal = isInternal();
-    return fetch(url, {
+    data.path = path; data.title = title; data.vid = vid; data.internal = isInternal(); data.site = site;
+    return fetch(api + url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

@@ -1,6 +1,6 @@
 // 配置先: /functions/api/reactions/note.js
 // 反応ボタンを押したあとの任意の一言（非公開）。IPごとに1日10件まで。
-import { json, nowIso, sanitizeText, hashIp, REACTIONS, normalizePath, validVisitorId, readJson, ensureTables } from "./_lib.js";
+import { json, nowIso, sanitizeText, hashIp, REACTIONS, storedPath, validVisitorId, readJson, ensureTables } from "./_lib.js";
 
 const DAILY_LIMIT = 10;
 
@@ -9,7 +9,7 @@ export async function onRequestPost({ request, env }) {
   const body = await readJson(request);
   if (!body) return json({ ok: false, error: "不正なリクエストです。" }, 400);
 
-  const path = normalizePath(body.path);
+  const path = storedPath(body, request);
   const note = sanitizeText(body.note || "", 200);
   if (!path || !validVisitorId(body.vid) || !note) {
     return json({ ok: false, error: "一言を入力してください。" }, 400);

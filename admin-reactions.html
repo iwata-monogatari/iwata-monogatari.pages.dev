@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>磐田物語 反応ダッシュボード</title>
+  <title>読者の反応ダッシュボード</title>
   <style>
     :root {
       --ink:#2b2118; --sub:#6c5f4c; --bg:#f3ede1; --paper:#fffdf7;
@@ -55,7 +55,7 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>磐田物語 反応ダッシュボード</h1>
+  <h1>読者の反応ダッシュボード</h1>
   <p class="note">記事末尾の反応ボタン（1端末1記事1票）と、届いた一言（非公開）の集計です。運営者のアクセス（<code>?fga_internal=1</code>）は既定で除外しています。　<a href="/admin-bbs.html">掲示板の管理画面へ</a></p>
 
   <div class="box auth" id="auth">
@@ -69,6 +69,13 @@
 
   <div id="dash" class="hide">
     <div class="box toolbar">
+      <label>サイト:
+        <select id="site">
+          <option value="iwata" selected>磐田物語</option>
+          <option value="oishi">大石浩之（oishi-hiroyuki.org）</option>
+          <option value="all">すべて</option>
+        </select>
+      </label>
       <label>期間:
         <select id="days">
           <option value="7">直近7日</option>
@@ -85,7 +92,7 @@
     <div class="tiles">
       <div class="tile"><div class="k">反応の合計</div><div class="v" id="t-total">0</div></div>
       <div class="tile"><div class="k"><span class="dot" style="background:var(--c-learned)"></span>📖 知らなかった</div><div class="v" id="t-learned">0</div></div>
-      <div class="tile"><div class="k"><span class="dot" style="background:var(--c-local)"></span>🏠 見覚え・行きたい</div><div class="v" id="t-local">0</div></div>
+      <div class="tile"><div class="k"><span class="dot" style="background:var(--c-local)"></span><span id="lbl-local">🏠 見覚え・行きたい</span></div><div class="v" id="t-local">0</div></div>
       <div class="tile"><div class="k"><span class="dot" style="background:var(--c-more)"></span>✍️ もっと知りたい</div><div class="v" id="t-more">0</div></div>
       <div class="tile"><div class="k">反応した人（端末）</div><div class="v" id="t-visitors">0</div></div>
       <div class="tile"><div class="k">届いた一言</div><div class="v" id="t-notes">0</div></div>
@@ -104,7 +111,7 @@
           <th data-k="title">記事</th>
           <th data-k="total" class="num">合計</th>
           <th data-k="learned" class="num">📖</th>
-          <th data-k="local" class="num">🏠</th>
+          <th data-k="local" class="num" id="th-local">🏠</th>
           <th data-k="more" class="num">✍️</th>
           <th>内訳</th>
           <th data-k="last_at">最終</th>
@@ -123,7 +130,11 @@
   "use strict";
   var $ = function (id) { return document.getElementById(id); };
   var tokenEl = $("token"), statusEl = $("status");
-  var LABEL = { learned:"📖 知らなかった", local:"🏠 見覚え・行きたい", more:"✍️ もっと知りたい" };
+  var LABEL_IWATA = { learned:"📖 知らなかった", local:"🏠 見覚え・行きたい", more:"✍️ もっと知りたい" };
+  // oishi-hiroyuki.org では2番目のボタンを「共感した」として使っている（記録上の種類は local）
+  var LABEL_OISHI = { learned:"📖 知らなかった", local:"👍 共感した", more:"✍️ もっと知りたい" };
+  var LABEL = LABEL_IWATA;
+  function labelsFor(path) { return /^https?:/.test(path || "") ? LABEL_OISHI : LABEL_IWATA; }
   var COLOR = { learned:"var(--c-learned)", local:"var(--c-local)", more:"var(--c-more)" };
   var pages = [], sortKey = "total", sortDesc = true;
 
@@ -139,14 +150,14 @@
     var d = new Date(iso); if (isNaN(d)) return iso || "";
     return (d.getMonth()+1) + "/" + d.getDate() + " " + ("0"+d.getHours()).slice(-2) + ":" + ("0"+d.getMinutes()).slice(-2);
   }
-  function cleanTitle(t) { return (t || "").replace(/\s*[|｜–-]\s*磐田物語.*$/, "") || "（無題）"; }
+  function cleanTitle(t) { return (t || "").replace(/\s*[|｜–-]\s*(磐田物語|大石浩之).*$/, "") || "（無題）"; }
 
   function load() {
     var t = tokenEl.value.trim();
     if (!t) { tokenEl.focus(); return; }
     try { sessionStorage.setItem("bbs_admin_token", t); } catch (e) {}
     statusEl.textContent = "読み込み中…";
-    var q = "?days=" + $("days").value + ($("internal").checked ? "&internal=1" : "");
+    var q = "?site=" + $("site").value + "&days=" + $("days").value + ($("internal").checked ? "&internal=1" : "");
     fetch("/api/reactions/admin-summary" + q, { headers: { "Authorization": "Bearer " + t } })
       .then(function (r) { return r.json(); })
       .then(function (d) {
@@ -161,6 +172,9 @@
 
   function render(d) {
     pages = d.pages || [];
+    LABEL = d.site === "oishi" ? LABEL_OISHI : LABEL_IWATA;
+    $("lbl-local").textContent = d.site === "all" ? "🏠 見覚え／👍 共感" : LABEL.local;
+    $("th-local").textContent = d.site === "oishi" ? "👍" : d.site === "all" ? "🏠👍" : "🏠";
     var sum = { learned:0, local:0, more:0 };
     pages.forEach(function (p) { sum.learned += p.learned; sum.local += p.local; sum.more += p.more; });
     $("t-total").textContent = d.totals.reactions || 0;
@@ -216,7 +230,7 @@
       ["learned","local","more"].forEach(function (k) {
         if (!p[k]) return;
         var seg = el("div"); seg.style.flex = p[k]; seg.style.background = COLOR[k];
-        seg.title = LABEL[k] + " " + p[k]; mix.appendChild(seg);
+        seg.title = labelsFor(p.path)[k] + " " + p[k]; mix.appendChild(seg);
       });
       mixTd.appendChild(mix); tr.appendChild(mixTd);
       tr.appendChild(el("td", "", fmt(p.last_at)));
@@ -233,7 +247,7 @@
       var a = el("a", "", cleanTitle(n.title)); a.href = n.path; a.target = "_blank"; a.rel = "noopener"; a.style.color = "inherit";
       meta.appendChild(a);
       if (n.reaction && LABEL[n.reaction]) {
-        var tag = el("span", "tag", LABEL[n.reaction]); tag.style.background = COLOR[n.reaction]; meta.appendChild(tag);
+        var tag = el("span", "tag", labelsFor(n.path)[n.reaction]); tag.style.background = COLOR[n.reaction]; meta.appendChild(tag);
       }
       if (n.internal) { var it = el("span", "tag", "自分"); it.style.background = "#999"; meta.appendChild(it); }
       row.appendChild(meta);
@@ -253,6 +267,8 @@
   tokenEl.addEventListener("keydown", function (e) { if (e.key === "Enter") load(); });
   $("reload-btn").addEventListener("click", load);
   $("days").addEventListener("change", load);
+  $("site").addEventListener("change", load);
+  try { var qs = new URLSearchParams(location.search).get("site"); if (qs) $("site").value = qs; } catch (e) {}
   $("internal").addEventListener("change", load);
   $("forget-btn").addEventListener("click", function () {
     tokenEl.value = ""; try { sessionStorage.removeItem("bbs_admin_token"); } catch (e) {}

@@ -1,7 +1,7 @@
 // 配置先: /functions/api/reactions/admin-summary.js
 // 管理者用: 記事別の反応数・日別推移・届いた一言。BBS_ADMIN_TOKEN で保護。
-// ?days=7|30|90|0(全期間)  ?internal=1 で自分のアクセスも含める
-import { json, checkAdminToken, ensureTables } from "./_lib.js";
+// ?days=7|30|90|0(全期間)  ?internal=1 で自分のアクセスも含める  ?site=iwata|oishi|all
+import { json, checkAdminToken, ensureTables, PARTNER_SITES } from "./_lib.js";
 
 export async function onRequestGet({ request, env }) {
   if (!checkAdminToken(request, env)) return json({ ok: false, error: "認証が必要です。" }, 401);
@@ -11,7 +11,12 @@ export async function onRequestGet({ request, env }) {
   const days = Math.max(0, Math.min(3650, parseInt(url.searchParams.get("days") || "30", 10) || 0));
   const includeInternal = url.searchParams.get("internal") === "1";
   const since = days ? new Date(Date.now() - days * 86400000).toISOString() : "0000";
-  const internalCond = includeInternal ? "" : " AND internal = 0";
+  const site = url.searchParams.get("site") || "iwata";
+  // 磐田物語はパスのまま、他サイトはオリジン付きURLで保存している
+  const siteCond = site === "all" ? ""
+    : PARTNER_SITES[site] ? ` AND path LIKE '${PARTNER_SITES[site]}/%'`
+    : " AND path LIKE '/%'";
+  const internalCond = (includeInternal ? "" : " AND internal = 0") + siteCond;
 
   try {
     await ensureTables(env.DB);
@@ -51,6 +56,7 @@ export async function onRequestGet({ request, env }) {
     return json({
       ok: true,
       days,
+      site,
       totals: totals || {},
       pages: pages.results || [],
       daily: daily.results || [],

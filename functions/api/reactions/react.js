@@ -1,13 +1,13 @@
 // 配置先: /functions/api/reactions/react.js
 // 反応ボタンの記録。1端末1記事1票で、押し直しは上書き。
-import { json, nowIso, sanitizeText, hashIp, REACTIONS, normalizePath, validVisitorId, readJson, ensureTables } from "./_lib.js";
+import { json, nowIso, sanitizeText, hashIp, REACTIONS, storedPath, validVisitorId, readJson, ensureTables } from "./_lib.js";
 
 export async function onRequestPost({ request, env }) {
   if (!env.DB) return json({ ok: false, error: "データベース未設定です。" }, 500);
   const body = await readJson(request);
   if (!body) return json({ ok: false, error: "不正なリクエストです。" }, 400);
 
-  const path = normalizePath(body.path);
+  const path = storedPath(body, request);
   const reaction = body.reaction;
   if (!path || !REACTIONS.includes(reaction) || !validVisitorId(body.vid)) {
     return json({ ok: false, error: "不正なリクエストです。" }, 400);

@@ -14,6 +14,20 @@ export function normalizePath(input) {
   return /^[\w\-\/.%]+$/.test(p) ? p : "";
 }
 
+// 他サイトの記事も同じ表に記録する。磐田物語はパスのまま、他サイトはオリジン付きの完全URLで保存して区別する。
+export const PARTNER_SITES = { oishi: "https://oishi-hiroyuki.org" };
+
+export function storedPath(body, request) {
+  const path = normalizePath(body && body.path);
+  if (!path) return "";
+  const site = body.site;
+  if (!site || site === "iwata") return path;
+  const origin = PARTNER_SITES[site];
+  // 他サイト名義の記録は、そのサイトのページから送られたものだけ受け付ける
+  if (!origin || request.headers.get("Origin") !== origin) return "";
+  return origin + path;
+}
+
 // 端末ごとの匿名ID（ブラウザで生成したランダム値）
 export function validVisitorId(v) {
   return typeof v === "string" && /^[a-z0-9]{16,40}$/i.test(v);
