@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>磐田物語 反応ダッシュボード</title>
+  <style>
+    :root {
+      --ink:#2b2118; --sub:#6c5f4c; --bg:#f3ede1; --paper:#fffdf7;
+      --border:#d8c7a3; --accent:#4a6d8c;
+      --c-learned:#4a6d8c; --c-local:#a9762a; --c-more:#5f7f4f;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; padding:24px 16px 64px; background:var(--bg); color:var(--ink);
+      font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",sans-serif; line-height:1.6; }
+    .wrap { max-width:1100px; margin:0 auto; }
+    h1 { font-size:1.4rem; margin:0 0 4px; }
+    h2 { font-size:1.05rem; margin:28px 0 10px; }
+    .note { color:var(--sub); font-size:.86rem; margin:0 0 18px; }
+    .note a { color:var(--accent); }
+    .box { background:var(--paper); border:1px solid var(--border); border-radius:10px; padding:14px 16px; margin-bottom:16px; }
+    .auth label { display:block; font-size:.85rem; color:var(--sub); margin-bottom:6px; }
+    .auth input { width:100%; max-width:420px; font:inherit; padding:9px 11px; border:1px solid var(--border); border-radius:8px; }
+    button { font:inherit; cursor:pointer; border:none; border-radius:8px; padding:8px 16px; color:#fff; background:var(--accent); }
+    button.ghost { background:#fff; color:var(--accent); border:1px solid var(--accent); }
+    .toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+    .toolbar select { font:inherit; padding:7px 10px; border:1px solid var(--border); border-radius:8px; }
+    .status { font-size:.88rem; color:var(--sub); margin-left:auto; }
+    .hide { display:none !important; }
+    .tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; }
+    .tile { background:var(--paper); border:1px solid var(--border); border-radius:10px; padding:12px 14px; }
+    .tile .k { font-size:.8rem; color:var(--sub); }
+    .tile .v { font-size:1.6rem; font-weight:700; font-variant-numeric:tabular-nums; }
+    .dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px; vertical-align:middle; }
+    .chart { display:flex; align-items:flex-end; gap:2px; height:120px; padding-top:8px; }
+    .chart .bar { flex:1; background:var(--accent); border-radius:3px 3px 0 0; min-height:2px; position:relative; }
+    .chart-axis { display:flex; justify-content:space-between; font-size:.75rem; color:var(--sub); margin-top:4px; }
+    .tbl-wrap { overflow-x:auto; }
+    table { width:100%; border-collapse:collapse; font-size:.9rem; background:var(--paper); }
+    th, td { padding:8px 10px; border-bottom:1px solid #eadfc8; text-align:left; vertical-align:top; }
+    th { font-size:.8rem; color:var(--sub); cursor:pointer; white-space:nowrap; user-select:none; background:#f8f2e4; }
+    th.num, td.num { text-align:right; font-variant-numeric:tabular-nums; }
+    td a { color:var(--ink); text-decoration:none; }
+    td a:hover { text-decoration:underline; }
+    td .path { display:block; font-size:.75rem; color:var(--sub); }
+    .mix { display:flex; height:8px; border-radius:4px; overflow:hidden; min-width:80px; background:#eee; }
+    .notes .n { border-bottom:1px solid #eadfc8; padding:10px 0; }
+    .notes .n:last-child { border-bottom:0; }
+    .notes .meta { font-size:.78rem; color:var(--sub); }
+    .notes .body { white-space:pre-wrap; word-break:break-word; margin-top:4px; }
+    .tag { font-size:.72rem; padding:1px 7px; border-radius:999px; color:#fff; margin-left:6px; }
+    .empty { color:var(--sub); font-size:.9rem; padding:8px 0; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h1>磐田物語 反応ダッシュボード</h1>
+  <p class="note">記事末尾の反応ボタン（1端末1記事1票）と、届いた一言（非公開）の集計です。運営者のアクセス（<code>?fga_internal=1</code>）は既定で除外しています。　<a href="/admin-bbs.html">掲示板の管理画面へ</a></p>
+
+  <div class="box auth" id="auth">
+    <label for="token">管理トークン（掲示板と共通の BBS_ADMIN_TOKEN）</label>
+    <input type="password" id="token" placeholder="管理トークンを入力" autocomplete="off">
+    <div style="margin-top:10px; display:flex; gap:8px;">
+      <button id="load-btn" type="button">表示する</button>
+      <button class="ghost" id="forget-btn" type="button">トークンを消去</button>
+    </div>
+  </div>
+
+  <div id="dash" class="hide">
+    <div class="box toolbar">
+      <label>期間:
+        <select id="days">
+          <option value="7">直近7日</option>
+          <option value="30" selected>直近30日</option>
+          <option value="90">直近90日</option>
+          <option value="0">全期間</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="internal"> 自分のアクセスも含める</label>
+      <button class="ghost" id="reload-btn" type="button">再読み込み</button>
+      <span class="status" id="status"></span>
+    </div>
+
+    <div class="tiles">
+      <div class="tile"><div class="k">反応の合計</div><div class="v" id="t-total">0</div></div>
+      <div class="tile"><div class="k"><span class="dot" style="background:var(--c-learned)"></span>📖 知らなかった</div><div class="v" id="t-learned">0</div></div>
+      <div class="tile"><div class="k"><span class="dot" style="background:var(--c-local)"></span>🏠 見覚え・行きたい</div><div class="v" id="t-local">0</div></div>
+      <div class="tile"><div class="k"><span class="dot" style="background:var(--c-more)"></span>✍️ もっと知りたい</div><div class="v" id="t-more">0</div></div>
+      <div class="tile"><div class="k">反応した人（端末）</div><div class="v" id="t-visitors">0</div></div>
+      <div class="tile"><div class="k">届いた一言</div><div class="v" id="t-notes">0</div></div>
+    </div>
+
+    <h2>日別の反応数</h2>
+    <div class="box">
+      <div class="chart" id="chart"></div>
+      <div class="chart-axis"><span id="ax-from"></span><span id="ax-to"></span></div>
+    </div>
+
+    <h2>記事別の反応（見出しを押すと並べ替え）</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr>
+          <th data-k="title">記事</th>
+          <th data-k="total" class="num">合計</th>
+          <th data-k="learned" class="num">📖</th>
+          <th data-k="local" class="num">🏠</th>
+          <th data-k="more" class="num">✍️</th>
+          <th>内訳</th>
+          <th data-k="last_at">最終</th>
+        </tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+
+    <h2>届いた一言</h2>
+    <div class="box notes" id="notes"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var tokenEl = $("token"), statusEl = $("status");
+  var LABEL = { learned:"📖 知らなかった", local:"🏠 見覚え・行きたい", more:"✍️ もっと知りたい" };
+  var COLOR = { learned:"var(--c-learned)", local:"var(--c-local)", more:"var(--c-more)" };
+  var pages = [], sortKey = "total", sortDesc = true;
+
+  try { var s = sessionStorage.getItem("bbs_admin_token"); if (s) tokenEl.value = s; } catch (e) {}
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function fmt(iso) {
+    var d = new Date(iso); if (isNaN(d)) return iso || "";
+    return (d.getMonth()+1) + "/" + d.getDate() + " " + ("0"+d.getHours()).slice(-2) + ":" + ("0"+d.getMinutes()).slice(-2);
+  }
+  function cleanTitle(t) { return (t || "").replace(/\s*[|｜–-]\s*磐田物語.*$/, "") || "（無題）"; }
+
+  function load() {
+    var t = tokenEl.value.trim();
+    if (!t) { tokenEl.focus(); return; }
+    try { sessionStorage.setItem("bbs_admin_token", t); } catch (e) {}
+    statusEl.textContent = "読み込み中…";
+    var q = "?days=" + $("days").value + ($("internal").checked ? "&internal=1" : "");
+    fetch("/api/reactions/admin-summary" + q, { headers: { "Authorization": "Bearer " + t } })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (!d.ok) { $("dash").classList.add("hide"); alert(d.error || "認証に失敗しました。"); statusEl.textContent = ""; return; }
+        $("auth").classList.add("hide");
+        $("dash").classList.remove("hide");
+        render(d);
+        statusEl.textContent = "更新 " + fmt(new Date().toISOString());
+      })
+      .catch(function () { statusEl.textContent = "通信エラーが発生しました。"; });
+  }
+
+  function render(d) {
+    pages = d.pages || [];
+    var sum = { learned:0, local:0, more:0 };
+    pages.forEach(function (p) { sum.learned += p.learned; sum.local += p.local; sum.more += p.more; });
+    $("t-total").textContent = d.totals.reactions || 0;
+    $("t-learned").textContent = sum.learned;
+    $("t-local").textContent = sum.local;
+    $("t-more").textContent = sum.more;
+    $("t-visitors").textContent = d.totals.visitors || 0;
+    $("t-notes").textContent = d.totals.notes || 0;
+    renderChart(d.daily || [], d.days);
+    renderRows();
+    renderNotes(d.notes || []);
+  }
+
+  function renderChart(daily, days) {
+    var chart = $("chart"); chart.textContent = "";
+    var map = {}; daily.forEach(function (r) { map[r.day] = r.n; });
+    var n = days || Math.max(daily.length ? Math.ceil((Date.now() - new Date(daily[0].day)) / 86400000) + 1 : 30, 7);
+    var list = [];
+    for (var i = n - 1; i >= 0; i--) {
+      var key = new Date(Date.now() - i * 86400000).toISOString().slice(0, 10);
+      list.push({ day:key, n:map[key] || 0 });
+    }
+    var max = Math.max.apply(null, list.map(function (x) { return x.n; }).concat([1]));
+    list.forEach(function (x) {
+      var b = el("div", "bar");
+      b.style.height = (x.n / max * 100) + "%";
+      if (!x.n) b.style.background = "#e3d8c2";
+      b.title = x.day + "：" + x.n + " 件";
+      chart.appendChild(b);
+    });
+    $("ax-from").textContent = list[0].day;
+    $("ax-to").textContent = list[list.length-1].day;
+  }
+
+  function renderRows() {
+    var tb = $("rows"); tb.textContent = "";
+    if (!pages.length) {
+      var tr = el("tr"), td = el("td", "empty", "まだ反応はありません。");
+      td.colSpan = 7; tr.appendChild(td); tb.appendChild(tr); return;
+    }
+    var list = pages.slice().sort(function (a, b) {
+      var x = a[sortKey], y = b[sortKey];
+      if (sortKey === "title") { x = cleanTitle(x); y = cleanTitle(y); }
+      return (x > y ? 1 : x < y ? -1 : 0) * (sortDesc ? -1 : 1);
+    });
+    list.forEach(function (p) {
+      var tr = el("tr");
+      var td = el("td"), a = el("a", "", cleanTitle(p.title));
+      a.href = p.path; a.target = "_blank"; a.rel = "noopener";
+      td.appendChild(a); td.appendChild(el("span", "path", p.path)); tr.appendChild(td);
+      ["total","learned","local","more"].forEach(function (k) { tr.appendChild(el("td", "num", String(p[k]))); });
+      var mixTd = el("td"), mix = el("div", "mix");
+      ["learned","local","more"].forEach(function (k) {
+        if (!p[k]) return;
+        var seg = el("div"); seg.style.flex = p[k]; seg.style.background = COLOR[k];
+        seg.title = LABEL[k] + " " + p[k]; mix.appendChild(seg);
+      });
+      mixTd.appendChild(mix); tr.appendChild(mixTd);
+      tr.appendChild(el("td", "", fmt(p.last_at)));
+      tb.appendChild(tr);
+    });
+  }
+
+  function renderNotes(notes) {
+    var box = $("notes"); box.textContent = "";
+    if (!notes.length) { box.appendChild(el("div", "empty", "まだ一言は届いていません。")); return; }
+    notes.forEach(function (n) {
+      var row = el("div", "n"), meta = el("div", "meta");
+      meta.appendChild(document.createTextNode(fmt(n.created_at) + "　"));
+      var a = el("a", "", cleanTitle(n.title)); a.href = n.path; a.target = "_blank"; a.rel = "noopener"; a.style.color = "inherit";
+      meta.appendChild(a);
+      if (n.reaction && LABEL[n.reaction]) {
+        var tag = el("span", "tag", LABEL[n.reaction]); tag.style.background = COLOR[n.reaction]; meta.appendChild(tag);
+      }
+      if (n.internal) { var it = el("span", "tag", "自分"); it.style.background = "#999"; meta.appendChild(it); }
+      row.appendChild(meta);
+      row.appendChild(el("div", "body", n.note));
+      box.appendChild(row);
+    });
+  }
+
+  document.querySelectorAll("th[data-k]").forEach(function (th) {
+    th.addEventListener("click", function () {
+      var k = th.dataset.k;
+      if (sortKey === k) sortDesc = !sortDesc; else { sortKey = k; sortDesc = k !== "title"; }
+      renderRows();
+    });
+  });
+  $("load-btn").addEventListener("click", load);
+  tokenEl.addEventListener("keydown", function (e) { if (e.key === "Enter") load(); });
+  $("reload-btn").addEventListener("click", load);
+  $("days").addEventListener("change", load);
+  $("internal").addEventListener("change", load);
+  $("forget-btn").addEventListener("click", function () {
+    tokenEl.value = ""; try { sessionStorage.removeItem("bbs_admin_token"); } catch (e) {}
+  });
+  if (tokenEl.value) load();
+})();
+</script>
+</body>
+</html>

@@ -27,6 +27,7 @@ SITE_ORIGIN = "https://iwata-monogatari.net"
 SKIP_DIRS = {".git", ".claude", "assets", "blog", "data", "docs", "functions", "images", "img", "saguchi", "work"}
 SKIP_FILES = {
     "admin-bbs.html",
+    "admin-reactions.html",
     "bbs.html",
     "index.html",
     "updates.html",

@@ -1,0 +1,29 @@
+<section class="im-react" aria-labelledby="im-react-h">
+<style>
+.im-react{box-sizing:border-box;width:calc(100% - 32px);max-width:760px;margin:40px auto 24px;padding:20px 18px;background:#fffdf7;border:1px solid #d8c7a3;border-radius:12px;text-align:center;font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",sans-serif;color:#2b2118}
+.im-react h2{font-size:1.05rem;margin:0 0 14px;border:0;padding:0;background:none;color:#2b2118}
+.im-react-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.im-react-btns button{font:inherit;font-size:.95rem;cursor:pointer;padding:10px 16px;border-radius:999px;border:1px solid #c9b58c;background:#fff;color:#2b2118;min-width:9.5em;transition:background .15s,border-color .15s}
+.im-react-btns button:hover{border-color:#4a6d8c}
+.im-react-btns button[aria-pressed="true"]{background:#4a6d8c;border-color:#4a6d8c;color:#fff}
+.im-react-after{margin-top:16px;text-align:left}
+.im-react-after[hidden]{display:none}
+.im-react-thanks{margin:0 0 8px;font-size:.92rem;color:#6c5f4c;text-align:center}
+.im-react-after textarea{width:100%;box-sizing:border-box;min-height:4.5em;font:inherit;font-size:.95rem;padding:9px 11px;border:1px solid #d8c7a3;border-radius:8px;resize:vertical}
+.im-react-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:8px;font-size:.8rem;color:#6c5f4c}
+.im-react-row button{font:inherit;font-size:.9rem;cursor:pointer;border:0;border-radius:8px;padding:8px 18px;background:#4a6d8c;color:#fff}
+.im-react-row button:disabled{opacity:.5;cursor:default}
+</style>
+<h2 id="im-react-h">この記事はいかがでしたか？</h2>
+<div class="im-react-btns" role="group" aria-label="記事への反応">
+<button type="button" data-r="learned" aria-pressed="false">📖 知らなかった</button>
+<button type="button" data-r="local" aria-pressed="false">🏠 見覚えがある・行ってみたい</button>
+<button type="button" data-r="more" aria-pressed="false">✍️ もっと知りたい</button>
+</div>
+<div class="im-react-after" hidden>
+<p class="im-react-thanks">ありがとうございます。よければ一言どうぞ（公開されません）</p>
+<textarea maxlength="200" aria-label="一言（公開されません）" placeholder="思い出、場所の情報、知りたいことなど"></textarea>
+<div class="im-react-row"><span class="im-react-count">0 / 200</span><button type="button" class="im-react-send">送る</button></div>
+</div>
+<script src="/assets/js/article-reactions.js" defer></script>
+</section>

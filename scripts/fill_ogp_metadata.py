@@ -28,7 +28,7 @@ DEFAULT_IMAGE = f"{BASE}/img/ogp.jpg"
 EXCLUDE_DIRS = {".git", ".github", ".claude", ".tmp", ".wrangler", "node_modules",
                 "archive", "partials", "docs", "scripts", "functions", "migrations",
                 "assets", "images", "img", "data"}
-EXCLUDE_FILES = {"404.html", "admin-bbs.html", "googlea3467099ea123f53.html"}
+EXCLUDE_FILES = {"404.html", "admin-bbs.html", "admin-reactions.html", "googlea3467099ea123f53.html"}
 
 NOINDEX_RE = re.compile(r'<meta[^>]*name=["\']robots["\'][^>]*content=["\'][^"\']*noindex', re.I)
 CANONICAL_RE = re.compile(r'<link[^>]*rel=["\']canonical["\'][^>]*href=["\']([^"\']+)["\']', re.I)
