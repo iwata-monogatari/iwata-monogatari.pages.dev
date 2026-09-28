@@ -4,15 +4,20 @@
 import { PARTNER_SITES } from "./_lib.js";
 
 const ALLOWED = new Set(Object.values(PARTNER_SITES));
+// 件数だけの counts はアクセスダッシュボードからも読む
+const DASHBOARD_ORIGIN = "https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev";
 
 export async function onRequest({ request, next }) {
   const origin = request.headers.get("Origin") || "";
   const path = new URL(request.url).pathname;
-  const corsOk = ALLOWED.has(origin) && !path.endsWith("/admin-summary");
+  const isCounts = path.endsWith("/counts");
+  const corsOk = isCounts
+    ? origin === DASHBOARD_ORIGIN
+    : ALLOWED.has(origin) && !path.endsWith("/admin-summary");
   const corsHeaders = corsOk
     ? {
         "Access-Control-Allow-Origin": origin,
-        "Access-Control-Allow-Methods": "POST, OPTIONS",
+        "Access-Control-Allow-Methods": isCounts ? "GET, OPTIONS" : "POST, OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type",
         "Access-Control-Max-Age": "86400",
         "Vary": "Origin",
