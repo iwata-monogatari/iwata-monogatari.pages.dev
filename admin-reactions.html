@@ -56,18 +56,9 @@
 <body>
 <div class="wrap">
   <h1>読者の反応ダッシュボード</h1>
-  <p class="note">記事末尾の反応ボタン（1端末1記事1票）と、届いた一言（非公開）の集計です。運営者のアクセス（<code>?fga_internal=1</code>）は既定で除外しています。　<a href="/admin-bbs.html">掲示板の管理画面へ</a></p>
+  <p class="note">反応件数・種類・記事別の内訳は、トークン入力なしで確認できます。自分のアクセスは除外しています。一言の本文は非公開で、下の管理者向け欄から確認できます。　<a href="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/">アクセス状況へ戻る</a></p>
 
-  <div class="box auth" id="auth">
-    <label for="token">管理トークン（掲示板と共通の BBS_ADMIN_TOKEN）</label>
-    <input type="password" id="token" placeholder="管理トークンを入力" autocomplete="off">
-    <div style="margin-top:10px; display:flex; gap:8px;">
-      <button id="load-btn" type="button">表示する</button>
-      <button class="ghost" id="forget-btn" type="button">トークンを消去</button>
-    </div>
-  </div>
-
-  <div id="dash" class="hide">
+  <div id="dash">
     <div class="box toolbar">
       <label>サイト:
         <select id="site">
@@ -84,9 +75,9 @@
           <option value="0">全期間</option>
         </select>
       </label>
-      <label><input type="checkbox" id="internal"> 自分のアクセスも含める</label>
+      <label id="internal-control" class="hide"><input type="checkbox" id="internal"> 自分のアクセスも含める</label>
       <button class="ghost" id="reload-btn" type="button">再読み込み</button>
-      <span class="status" id="status"></span>
+      <span class="status" id="status" role="status" aria-live="polite">読み込み中…</span>
     </div>
 
     <div class="tiles">
@@ -94,7 +85,7 @@
       <div class="tile"><div class="k"><span class="dot" style="background:var(--c-learned)"></span>📖 知らなかった</div><div class="v" id="t-learned">0</div></div>
       <div class="tile"><div class="k"><span class="dot" style="background:var(--c-local)"></span><span id="lbl-local">🏠 見覚え・行きたい</span></div><div class="v" id="t-local">0</div></div>
       <div class="tile"><div class="k"><span class="dot" style="background:var(--c-more)"></span>✍️ もっと知りたい</div><div class="v" id="t-more">0</div></div>
-      <div class="tile"><div class="k">反応した人（端末）</div><div class="v" id="t-visitors">0</div></div>
+      <div class="tile hide" id="visitors-tile"><div class="k">反応した人（端末）</div><div class="v" id="t-visitors">0</div></div>
       <div class="tile"><div class="k">届いた一言</div><div class="v" id="t-notes">0</div></div>
     </div>
 
@@ -120,8 +111,18 @@
       </table>
     </div>
 
-    <h2>届いた一言</h2>
+    <h2>届いた一言（本文は非公開）</h2>
     <div class="box notes" id="notes"></div>
+    <details class="box auth" id="auth">
+      <summary>管理者向け：一言の本文を確認する</summary>
+      <label for="token">管理トークン（掲示板と共通の BBS_ADMIN_TOKEN）</label>
+      <input type="password" id="token" placeholder="管理トークンを入力" autocomplete="off">
+      <div style="margin-top:10px; display:flex; gap:8px;">
+        <button id="load-btn" type="button">一言の本文を表示する</button>
+        <button class="ghost" id="forget-btn" type="button">トークンを消去</button>
+      </div>
+      <p id="auth-status" role="status" aria-live="polite"></p>
+    </details>
   </div>
 </div>
 
@@ -137,6 +138,7 @@
   function labelsFor(path) { return /^https?:/.test(path || "") ? LABEL_OISHI : LABEL_IWATA; }
   var COLOR = { learned:"var(--c-learned)", local:"var(--c-local)", more:"var(--c-more)" };
   var pages = [], sortKey = "total", sortDesc = true;
+  var adminMode = false, requestId = 0;
 
   try { var s = sessionStorage.getItem("bbs_admin_token"); if (s) tokenEl.value = s; } catch (e) {}
 
@@ -153,24 +155,47 @@
   function cleanTitle(t) { return (t || "").replace(/\s*[|｜–-]\s*(磐田物語|大石浩之|磐田市政、ちょっと一言).*$/, "") || "（無題）"; }
 
   function load() {
-    var t = tokenEl.value.trim();
-    if (!t) { tokenEl.focus(); return; }
-    try { sessionStorage.setItem("bbs_admin_token", t); } catch (e) {}
+    var currentRequest = ++requestId;
+    var t = adminMode ? tokenEl.value.trim() : "";
+    var authenticated = adminMode;
     statusEl.textContent = "読み込み中…";
-    var q = "?site=" + $("site").value + "&days=" + $("days").value + ($("internal").checked ? "&internal=1" : "");
-    fetch("/api/reactions/admin-summary" + q, { headers: { "Authorization": "Bearer " + t } })
-      .then(function (r) { return r.json(); })
+    ["t-total", "t-learned", "t-local", "t-more", "t-visitors", "t-notes"].forEach(function (id) { $(id).textContent = "—"; });
+    $("rows").textContent = "";
+    $("chart").textContent = "";
+    $("notes").textContent = "読み込み中…";
+    var q = "?site=" + $("site").value + "&days=" + $("days").value + (authenticated && $("internal").checked ? "&internal=1" : "");
+    fetch("/api/reactions/" + (authenticated ? "admin-summary" : "summary") + q,
+      { cache: "no-store", headers: authenticated ? { "Authorization": "Bearer " + t } : {} })
+      .then(function (r) { return r.json().then(function (d) {
+        if (!r.ok || !d.ok) throw new Error(d.error || "反応の取得に失敗しました。");
+        return d;
+      }); })
       .then(function (d) {
-        if (!d.ok) { $("dash").classList.add("hide"); alert(d.error || "認証に失敗しました。"); statusEl.textContent = ""; return; }
-        $("auth").classList.add("hide");
-        $("dash").classList.remove("hide");
-        render(d);
+        if (currentRequest !== requestId) return;
+        if (authenticated) {
+          try { sessionStorage.setItem("bbs_admin_token", t); } catch (e) {}
+          $("auth-status").textContent = "管理者として表示しています。";
+        }
+        $("internal-control").classList.toggle("hide", !authenticated);
+        $("visitors-tile").classList.toggle("hide", !authenticated);
+        render(d, authenticated);
         statusEl.textContent = "更新 " + fmt(new Date().toISOString());
       })
-      .catch(function () { statusEl.textContent = "通信エラーが発生しました。"; });
+      .catch(function (error) {
+        if (currentRequest !== requestId) return;
+        if (authenticated) {
+          adminMode = false;
+          $("internal").checked = false;
+          $("auth-status").textContent = error.message + " 反応の集計はトークンなしで表示します。";
+          clearPrivateView();
+          load();
+        } else {
+          statusEl.textContent = "反応を取得できませんでした。再読み込みしてください。";
+        }
+      });
   }
 
-  function render(d) {
+  function render(d, authenticated) {
     pages = d.pages || [];
     LABEL = d.site === "oishi" ? LABEL_OISHI : LABEL_IWATA;
     $("lbl-local").textContent = d.site === "all" ? "🏠 見覚え／👍 共感" : LABEL.local;
@@ -178,23 +203,25 @@
     var sum = { learned:0, local:0, more:0 };
     pages.forEach(function (p) { sum.learned += p.learned; sum.local += p.local; sum.more += p.more; });
     $("t-total").textContent = d.totals.reactions || 0;
-    $("t-learned").textContent = sum.learned;
-    $("t-local").textContent = sum.local;
-    $("t-more").textContent = sum.more;
+    $("t-learned").textContent = d.totals.learned == null ? sum.learned : d.totals.learned;
+    $("t-local").textContent = d.totals.local == null ? sum.local : d.totals.local;
+    $("t-more").textContent = d.totals.more == null ? sum.more : d.totals.more;
     $("t-visitors").textContent = d.totals.visitors || 0;
     $("t-notes").textContent = d.totals.notes || 0;
-    renderChart(d.daily || [], d.days);
+    renderChart(d.daily || [], d.days, d.today);
     renderRows();
-    renderNotes(d.notes || []);
+    if (authenticated) renderNotes(d.notes || []);
+    else $("notes").textContent = d.totals.notes ? "一言が " + d.totals.notes + " 件届いています。本文は管理者向け欄から確認できます。" : "まだ一言は届いていません。";
   }
 
-  function renderChart(daily, days) {
+  function renderChart(daily, days, today) {
     var chart = $("chart"); chart.textContent = "";
+    var end = today ? Date.parse(today + "T00:00:00Z") : Date.now();
     var map = {}; daily.forEach(function (r) { map[r.day] = r.n; });
     var n = days || Math.max(daily.length ? Math.ceil((Date.now() - new Date(daily[0].day)) / 86400000) + 1 : 30, 7);
     var list = [];
     for (var i = n - 1; i >= 0; i--) {
-      var key = new Date(Date.now() - i * 86400000).toISOString().slice(0, 10);
+      var key = new Date(end - i * 86400000).toISOString().slice(0, 10);
       list.push({ day:key, n:map[key] || 0 });
     }
     var max = Math.max.apply(null, list.map(function (x) { return x.n; }).concat([1]));
@@ -263,17 +290,33 @@
       renderRows();
     });
   });
-  $("load-btn").addEventListener("click", load);
-  tokenEl.addEventListener("keydown", function (e) { if (e.key === "Enter") load(); });
+  function clearPrivateView() {
+    $("notes").textContent = "一言の本文は非公開です。";
+    $("internal-control").classList.add("hide");
+    $("visitors-tile").classList.add("hide");
+    $("t-visitors").textContent = "";
+  }
+  function loadPrivate() {
+    if (!tokenEl.value.trim()) { $("auth-status").textContent = "一言の本文を見るには管理トークンを入力してください。"; tokenEl.focus(); return; }
+    adminMode = true;
+    load();
+  }
+  $("load-btn").addEventListener("click", loadPrivate);
+  tokenEl.addEventListener("keydown", function (e) { if (e.key === "Enter") loadPrivate(); });
   $("reload-btn").addEventListener("click", load);
   $("days").addEventListener("change", load);
   $("site").addEventListener("change", load);
-  try { var qs = new URLSearchParams(location.search).get("site"); if (qs) $("site").value = qs; } catch (e) {}
+  try { var qs = new URLSearchParams(location.search).get("site"); if (["iwata", "oishi", "all"].indexOf(qs) !== -1) $("site").value = qs; } catch (e) {}
   $("internal").addEventListener("change", load);
   $("forget-btn").addEventListener("click", function () {
     tokenEl.value = ""; try { sessionStorage.removeItem("bbs_admin_token"); } catch (e) {}
+    adminMode = false;
+    $("internal").checked = false;
+    $("auth-status").textContent = "トークンを消去しました。";
+    clearPrivateView();
+    load();
   });
-  if (tokenEl.value) load();
+  load();
 })();
 </script>
 </body>
