@@ -56,7 +56,7 @@
 <body>
 <div class="wrap">
   <h1>読者の反応ダッシュボード</h1>
-  <p class="note">反応件数・種類・記事別の内訳は、トークン入力なしで確認できます。自分のアクセスは除外しています。一言の本文は非公開で、下の管理者向け欄から確認できます。　<a href="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/">アクセス状況へ戻る</a></p>
+  <p class="note">反応件数・種類・記事別の内訳は、トークン入力なしで確認できます。自分のアクセスは除外しています。一言の本文は非公開で、登録済みの管理者端末でだけ自動で表示されます。　<a href="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/">アクセス状況へ戻る</a></p>
 
   <div id="dash">
     <div class="box toolbar">
@@ -114,12 +114,17 @@
     <h2>届いた一言（本文は非公開）</h2>
     <div class="box notes" id="notes"></div>
     <details class="box auth" id="auth">
-      <summary>管理者向け：一言の本文を確認する</summary>
-      <label for="token">管理トークン（掲示板と共通の BBS_ADMIN_TOKEN）</label>
-      <input type="password" id="token" placeholder="管理トークンを入力" autocomplete="off">
-      <div style="margin-top:10px; display:flex; gap:8px;">
-        <button id="load-btn" type="button">一言の本文を表示する</button>
-        <button class="ghost" id="forget-btn" type="button">トークンを消去</button>
+      <summary id="auth-summary">管理者向け：この端末を登録する（初回のみ）</summary>
+      <div id="register-area">
+        <p class="note" style="margin:8px 0">この端末で一度だけ管理トークン（掲示板と共通の BBS_ADMIN_TOKEN）を入れると、以後この端末では入力なしで一言の本文が表示されます（1年間有効）。</p>
+        <label for="token">管理トークン</label>
+        <input type="password" id="token" placeholder="管理トークンを入力" autocomplete="off">
+        <div style="margin-top:10px; display:flex; gap:8px;">
+          <button id="load-btn" type="button">この端末を登録して本文を表示</button>
+        </div>
+      </div>
+      <div id="registered-area" class="hide" style="margin-top:10px">
+        <button class="ghost" id="forget-btn" type="button">この端末の登録を解除</button>
       </div>
       <p id="auth-status" role="status" aria-live="polite"></p>
     </details>
@@ -140,7 +145,6 @@
   var pages = [], sortKey = "total", sortDesc = true;
   var adminMode = false, requestId = 0;
 
-  try { var s = sessionStorage.getItem("bbs_admin_token"); if (s) tokenEl.value = s; } catch (e) {}
 
   function el(tag, cls, text) {
     var e = document.createElement(tag);
@@ -156,7 +160,6 @@
 
   function load() {
     var currentRequest = ++requestId;
-    var t = adminMode ? tokenEl.value.trim() : "";
     var authenticated = adminMode;
     statusEl.textContent = "読み込み中…";
     ["t-total", "t-learned", "t-local", "t-more", "t-visitors", "t-notes"].forEach(function (id) { $(id).textContent = "—"; });
@@ -165,17 +168,14 @@
     $("notes").textContent = "読み込み中…";
     var q = "?site=" + $("site").value + "&days=" + $("days").value + (authenticated && $("internal").checked ? "&internal=1" : "");
     fetch("/api/reactions/" + (authenticated ? "admin-summary" : "summary") + q,
-      { cache: "no-store", headers: authenticated ? { "Authorization": "Bearer " + t } : {} })
+      { cache: "no-store", credentials: "same-origin" })
       .then(function (r) { return r.json().then(function (d) {
         if (!r.ok || !d.ok) throw new Error(d.error || "反応の取得に失敗しました。");
         return d;
       }); })
       .then(function (d) {
         if (currentRequest !== requestId) return;
-        if (authenticated) {
-          try { sessionStorage.setItem("bbs_admin_token", t); } catch (e) {}
-          $("auth-status").textContent = "管理者として表示しています。";
-        }
+        showRegistered(authenticated);
         $("internal-control").classList.toggle("hide", !authenticated);
         $("visitors-tile").classList.toggle("hide", !authenticated);
         render(d, authenticated);
@@ -186,7 +186,8 @@
         if (authenticated) {
           adminMode = false;
           $("internal").checked = false;
-          $("auth-status").textContent = error.message + " 反応の集計はトークンなしで表示します。";
+          showRegistered(false);
+          $("auth-status").textContent = "この端末の登録が無効になりました（トークン変更など）。もう一度登録してください。";
           clearPrivateView();
           load();
         } else {
@@ -211,7 +212,7 @@
     renderChart(d.daily || [], d.days, d.today);
     renderRows();
     if (authenticated) renderNotes(d.notes || []);
-    else $("notes").textContent = d.totals.notes ? "一言が " + d.totals.notes + " 件届いています。本文は管理者向け欄から確認できます。" : "まだ一言は届いていません。";
+    else $("notes").textContent = d.totals.notes ? "一言が " + d.totals.notes + " 件届いています。本文は登録済みの管理者端末でだけ表示されます。" : "まだ一言は届いていません。";
   }
 
   function renderChart(daily, days, today) {
@@ -296,10 +297,30 @@
     $("visitors-tile").classList.add("hide");
     $("t-visitors").textContent = "";
   }
+  function showRegistered(on) {
+    $("register-area").classList.toggle("hide", on);
+    $("registered-area").classList.toggle("hide", !on);
+    $("auth-summary").textContent = on ? "管理者端末として登録済み（一言の本文を表示中）" : "管理者向け：この端末を登録する（初回のみ）";
+    if (on) $("auth-status").textContent = "";
+  }
+  function register(token) {
+    return fetch("/api/reactions/admin-session", {
+      method: "POST", cache: "no-store", credentials: "same-origin",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ token: token })
+    }).then(function (r) { return r.json().then(function (d) { return r.ok && d.ok; }); })
+      .catch(function () { return false; });
+  }
   function loadPrivate() {
-    if (!tokenEl.value.trim()) { $("auth-status").textContent = "一言の本文を見るには管理トークンを入力してください。"; tokenEl.focus(); return; }
-    adminMode = true;
-    load();
+    var t = tokenEl.value.trim();
+    if (!t) { $("auth-status").textContent = "管理トークンを入力してください（この端末で初回のみ）。"; tokenEl.focus(); return; }
+    $("auth-status").textContent = "登録中…";
+    register(t).then(function (ok) {
+      tokenEl.value = "";
+      if (!ok) { $("auth-status").textContent = "トークンが正しくありません。"; return; }
+      adminMode = true;
+      load();
+    });
   }
   $("load-btn").addEventListener("click", loadPrivate);
   tokenEl.addEventListener("keydown", function (e) { if (e.key === "Enter") loadPrivate(); });
@@ -309,14 +330,36 @@
   try { var qs = new URLSearchParams(location.search).get("site"); if (["iwata", "oishi", "all"].indexOf(qs) !== -1) $("site").value = qs; } catch (e) {}
   $("internal").addEventListener("change", load);
   $("forget-btn").addEventListener("click", function () {
-    tokenEl.value = ""; try { sessionStorage.removeItem("bbs_admin_token"); } catch (e) {}
-    adminMode = false;
-    $("internal").checked = false;
-    $("auth-status").textContent = "トークンを消去しました。";
-    clearPrivateView();
-    load();
+    fetch("/api/reactions/admin-session", { method: "DELETE", cache: "no-store", credentials: "same-origin" })
+      .catch(function () {})
+      .then(function () {
+        adminMode = false;
+        $("internal").checked = false;
+        showRegistered(false);
+        $("auth-status").textContent = "この端末の登録を解除しました。";
+        clearPrivateView();
+        load();
+      });
   });
-  load();
+  // 起動時：この端末が登録済みなら、入力なしで一言の本文まで表示する。
+  // 以前の方式でこのタブにトークンが残っていれば、それを使って自動で登録に切り替える。
+  function start() {
+    fetch("/api/reactions/admin-session", { cache: "no-store", credentials: "same-origin" })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (d && d.admin) return true;
+        var old = "";
+        try { old = sessionStorage.getItem("bbs_admin_token") || ""; sessionStorage.removeItem("bbs_admin_token"); } catch (e) {}
+        return old ? register(old) : false;
+      })
+      .catch(function () { return false; })
+      .then(function (ok) {
+        adminMode = !!ok;
+        if (ok) $("auth").open = false;
+        load();
+      });
+  }
+  start();
 })();
 </script>
 </body>

@@ -1,5 +1,6 @@
 // 配置先: /functions/api/reactions/_lib.js
 // 記事の反応ボタンAPIの共通処理。掲示板の共通関数を流用する。
+import { checkAdminToken } from "../bbs/_lib.js";
 export { json, nowIso, sanitizeText, hashIp, checkAdminToken } from "../bbs/_lib.js";
 
 export const REACTIONS = ["learned", "local", "more"];
@@ -62,4 +63,35 @@ export async function readJson(request) {
   } catch (e) {
     return null;
   }
+}
+
+// ── 管理者端末の登録（Cookie）──────────────────────────────
+// 一度トークンで登録した端末には、トークンそのものではなくハッシュ値を
+// HttpOnly Cookie として保存し、以後は入力なしで一言の本文を表示する。
+// BBS_ADMIN_TOKEN を変更すると、登録済みの端末はすべて自動的に無効になる。
+export const ADMIN_COOKIE = "im_admin";
+
+export async function adminCookieValue(env) {
+  const token = env.BBS_ADMIN_TOKEN;
+  if (!token) return "";
+  const data = new TextEncoder().encode("iwata-monogatari-admin-v1:" + token);
+  const buf = await crypto.subtle.digest("SHA-256", data);
+  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+function readCookie(request, name) {
+  const raw = request.headers.get("Cookie") || "";
+  for (const part of raw.split(/;\s*/)) {
+    const i = part.indexOf("=");
+    if (i > 0 && part.slice(0, i) === name) return part.slice(i + 1);
+  }
+  return "";
+}
+
+// トークン（Authorization ヘッダー）または登録済み端末の Cookie で管理者と判定する
+export async function isAdmin(request, env) {
+  if (checkAdminToken(request, env)) return true;
+  const expected = await adminCookieValue(env);
+  const got = readCookie(request, ADMIN_COOKIE);
+  return !!expected && got.length === expected.length && got === expected;
 }

@@ -13,7 +13,7 @@ export async function onRequest({ request, next }) {
   const isCounts = path.endsWith("/counts");
   const corsOk = isCounts
     ? origin === DASHBOARD_ORIGIN
-    : ALLOWED.has(origin) && !path.endsWith("/admin-summary");
+    : ALLOWED.has(origin) && !path.endsWith("/admin-summary") && !path.endsWith("/admin-session");
   const corsHeaders = corsOk
     ? {
         "Access-Control-Allow-Origin": origin,
