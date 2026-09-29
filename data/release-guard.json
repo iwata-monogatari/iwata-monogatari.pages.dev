@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1790598037,
-  "generation": 20260928212037,
-  "git_commit_at_stamp": "73ea28b60f2dc289a96064028b5db3fa88535649",
+  "generated_at_unix": 1790645810,
+  "generation": 20260929103650,
+  "git_commit_at_stamp": "8d73bcfae0881f2b7ec2412c644e3e2ff2dc2961",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,7 +35,7 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "7f05551ddc9a0c83158d822a09b300c36f60c02a9525d7ad726cde59fab69cde"
+      "sha256": "afcb03b8d7ec8c04d88525a6166613dd449215bfc94cd0251242ac03590cede0"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "4a2d41e3f0fade4fd9f84931082139047dca754262c9107860451229167c84fd"
+      "sha256": "0072e57cd3fff767eb81b83124546cf038bd35b9737ee2980219ef9656b213fe"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "9d4a95e7e6b4709b7d090da594749495e9d79905ed67351bd7455f3bd41c40f5"
+      "sha256": "ab1ee516ca04015f2a6397d60002da2caae1d497c6a38c1adc6495076f432db7"
     },
     {
       "path": "updates.html",
-      "sha256": "a7283ec4557954ef55e946097f933ea5daf1c8a74d2bcbf9d4369f60a06dbc13"
+      "sha256": "08818ded3f6a33f61bb2079a636131260ab72d12b0c65b99243ea73ba448aeba"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "c5f6f757742c5cef8f03f144251cf778bd3c81087a1ac0219e323e5ad1d495a7",
+      "content_sha256": "e15f397240b3d14bb41be572acb45d47ec13ea8c44012921af9e2a7571070890",
       "path": "index.html",
-      "sha256": "4a2d41e3f0fade4fd9f84931082139047dca754262c9107860451229167c84fd",
+      "sha256": "0072e57cd3fff767eb81b83124546cf038bd35b9737ee2980219ef9656b213fe",
       "url": "/"
     },
     {
-      "content_sha256": "fa7c7456c99f12c968fcc67eab13ec8679899f82534bfd6d44a9082fcced3619",
+      "content_sha256": "392b9a8f3e2d7617346eeb07da6157991c18bc2110d12ee83333477bf9c73c73",
       "path": "updates.html",
-      "sha256": "a7283ec4557954ef55e946097f933ea5daf1c8a74d2bcbf9d4369f60a06dbc13",
+      "sha256": "08818ded3f6a33f61bb2079a636131260ab72d12b0c65b99243ea73ba448aeba",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "8cb5b02b3d795b3a14f7cacf9d878dc7cc0682f56a6b6d12036cf30b0879933c",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "9814ec4e2191e6915c36f901130cbe02f555e14081d8f8e2627425d422f0e0f8",
+      "path": "blog/20260929-iwata-aerial-photo-reading/index.html",
+      "sha256": "f1c082e7863183893cd947a469a9f46cbcca846b88e31c4100ee1339ae5d465a",
+      "url": "/blog/20260929-iwata-aerial-photo-reading"
     },
     {
       "content_sha256": "d897a9325ad0e7295484d2b9a1d372af92b9cadcceffe1dc64ae33cd0137fc1a",
@@ -856,21 +862,15 @@
       "path": "s007.html",
       "sha256": "301511f7ac86689af11a9f03cdf75e4754c0797ce7b75fa84a61c34caa97e406",
       "url": "/s007.html"
-    },
-    {
-      "content_sha256": "c55643c6fcc530e84333b27dfaccc54fef06307c85bde6fffa1280e0800fc64f",
-      "path": "s008.html",
-      "sha256": "50c35e6c92168bf92ecd35868ca5e690e88c28620ee5e34d832892422762e6a4",
-      "url": "/s008.html"
     }
   ],
   "schema": 1,
-  "state_hash": "12f3ba68d4c6240a9b7b877ee43b204c05c920a9fdcf2f0f7c3ea9ce3c0bed18",
+  "state_hash": "66df46ccaf5e359b284dd9fecb180ed30f1ae26b71183dc6acc4a30781358331",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1208,
-    "new_articles_sha256": "7f05551ddc9a0c83158d822a09b300c36f60c02a9525d7ad726cde59fab69cde",
+    "new_articles": 1209,
+    "new_articles_sha256": "afcb03b8d7ec8c04d88525a6166613dd449215bfc94cd0251242ac03590cede0",
     "pages_sha256": "f4fcde71e7f89c130e79a66aa52fc025ea59e712fd7b0588f1ac086414cd47a2",
     "pages_total": 1140,
     "published_pages": 1139
