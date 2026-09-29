@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-09-28",
+  "updated_at": "2026-09-30",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -31959,6 +31959,40 @@
         "internal:blog/20260908-ndl-kotenseki-fulltext/",
         "web:https://ndlsearch.ndl.go.jp/rnavi/humanities/post_1006",
         "web:https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1015553.html"
+      ]
+    },
+    {
+      "title": "福田のシラス｜秋の食卓から読む本編3本（ブログ記事）",
+      "url": "blog/20260930-fukude-shirasu/",
+      "district": [
+        "fukude"
+      ],
+      "themes": [
+        "industry",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-09-30",
+      "updated_at": "2026-09-30",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "ブログ",
+      "summary": "福田のシラスの食文化は、漁と加工・食卓・港を扱う本編3本から読めます。県と市の公式解説で二艘曳きや加工の流れを確かめ、季節の案内と当日の入荷を区別。釜揚げとしらす干しを入口に、地域の商いと暮らしを資料の範囲でたどる読み方を大石浩之が案内します。",
+      "topics": [
+        "福田",
+        "シラス",
+        "食文化",
+        "漁業"
+      ],
+      "source_refs": [
+        "internal:f002.html",
+        "internal:f010.html",
+        "internal:f001.html",
+        "web:https://fujinokuni.shokunomiyako-shizuoka.pref.shizuoka.jp/culture/article/1868",
+        "web:https://www.city.iwata.shizuoka.jp/sangyou_business/nougyou/1011391/1011926.html"
       ]
     }
   ]
