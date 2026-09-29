@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1790649527,
-  "generation": 20260929113847,
-  "git_commit_at_stamp": "942327e0fce90a6102f6bfd304aa61a63502d870",
+  "generated_at_unix": 1790656188,
+  "generation": 20260929132948,
+  "git_commit_at_stamp": "c3eef96d7bf7a88d3bf616871a64d619a1eebedb",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,15 +35,15 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "aaa794f61e40effedbcfa6b1de169e45069b3e10087fb2feff4a68880302dbca"
+      "sha256": "0b3a6272c6842e5fbe62b0d13e794cc5020578066aa24610cb556d2ec56c0745"
     },
     {
       "path": "data/pages.json",
-      "sha256": "7186b3abb429fe5b3829d11e52224f69a015e6a2d389fd412afebcf4bd9ff660"
+      "sha256": "7aaad01301ac265c6f4ad334989af36e203e63dccbb9bfd94a2231cf6b583a78"
     },
     {
       "path": "index.html",
-      "sha256": "0d72564f5c47714070422d83b05505c6a7035f71d2f826f555540457a2c2ea92"
+      "sha256": "de9b3811a9011fc4f7c90c440aae3e67fd0a2bd967645a50d08188c3753ccbb1"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "f69e2dad1d0c0fbc78ce610661eeb374e0e10f6fa6f711fb797c0eaaa5aa696f"
+      "sha256": "667da600ace072552604b767bd4e6fdda07750d977c98c381e25d519920f17f8"
     },
     {
       "path": "updates.html",
-      "sha256": "b012b3149a50f507c88d699bd0a9d9d6bbdc1767718fb224784f72a6095c7ee2"
+      "sha256": "afa8c0b1430de658a5db235101bb4cc733f7d53e2964c66a5181b11b8bac914e"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "58a91cc119ca1e55c9d09aba6e03483d24d261ee5af1ea2dc54c87c7fef2ff2e",
+      "content_sha256": "a9945fac40ace134a88a01e7473de0e05b28dbc40175f446fe9b5c116dd1961b",
       "path": "index.html",
-      "sha256": "0d72564f5c47714070422d83b05505c6a7035f71d2f826f555540457a2c2ea92",
+      "sha256": "de9b3811a9011fc4f7c90c440aae3e67fd0a2bd967645a50d08188c3753ccbb1",
       "url": "/"
     },
     {
-      "content_sha256": "89a502c5e2d2987380b852ff07b660f428510180ee2d16ec219f05ce8bae6a56",
+      "content_sha256": "fbafe77211e8fb6fa946794dc416803e5a6466bdd77e04bf2926c4bcc58f8ae8",
       "path": "updates.html",
-      "sha256": "b012b3149a50f507c88d699bd0a9d9d6bbdc1767718fb224784f72a6095c7ee2",
+      "sha256": "afa8c0b1430de658a5db235101bb4cc733f7d53e2964c66a5181b11b8bac914e",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "8cb5b02b3d795b3a14f7cacf9d878dc7cc0682f56a6b6d12036cf30b0879933c",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "d77164ac896ff10c1000312625c055a182046908f0eb18825ae5af47ac020543",
+      "path": "c006.html",
+      "sha256": "d26674f8d81bd910193b9db77319d1121783463dad994cb0f9240b25d78f9fb9",
+      "url": "/c006"
     },
     {
       "content_sha256": "251356fb5649851af253eba0bc34ebc27779dddfc3982f7824937e7dbab00993",
@@ -856,22 +862,16 @@
       "path": "s005.html",
       "sha256": "e6522621367f1bf3bb738c71afd07e33b75da4e3c59e4c0e8ba2978b0f5fea92",
       "url": "/s005.html"
-    },
-    {
-      "content_sha256": "16cea07680c0fcc33dade7cac01a9ccc30c6187d0fc3030c899cd069d87e6f80",
-      "path": "s006.html",
-      "sha256": "5c5ab0b1ce7c993219672d3ca0bbfe096cc7441f38745630f890864602076607",
-      "url": "/s006.html"
     }
   ],
   "schema": 1,
-  "state_hash": "423d4d58ff7a6989cc444da26047583e0a6f10227bb6739be5e660399e5d1ae1",
+  "state_hash": "e9844f9092557a9eaff8f3c64445d887a62e276baf9abb37a3bf53925ec85754",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1210,
-    "new_articles_sha256": "aaa794f61e40effedbcfa6b1de169e45069b3e10087fb2feff4a68880302dbca",
-    "pages_sha256": "7186b3abb429fe5b3829d11e52224f69a015e6a2d389fd412afebcf4bd9ff660",
+    "new_articles": 1211,
+    "new_articles_sha256": "0b3a6272c6842e5fbe62b0d13e794cc5020578066aa24610cb556d2ec56c0745",
+    "pages_sha256": "7aaad01301ac265c6f4ad334989af36e203e63dccbb9bfd94a2231cf6b583a78",
     "pages_total": 1141,
     "published_pages": 1140
   }
