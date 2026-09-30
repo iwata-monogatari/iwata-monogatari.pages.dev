@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1790724888,
-  "generation": 20260930083448,
-  "git_commit_at_stamp": "0debd4d59b79fedc692e323ca31abc116385c6a2",
+  "generated_at_unix": 1790762896,
+  "generation": 20260930190816,
+  "git_commit_at_stamp": "718018adae3d659632bc42b3dff503946c0d4cb3",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,15 +35,15 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "084d6ed558483e108c4167155ab9b965f7bc11207f279835ea0370dac651b2a8"
+      "sha256": "4682db170605ea6aa954b9cce221153ad5cd82d2facaaa04197d3d4300e72ca7"
     },
     {
       "path": "data/pages.json",
-      "sha256": "b16126bf71e750c5faa21759f642b98bc4e57f236cd6359885f020129d7a5945"
+      "sha256": "623283380ce34d8d6b82e000fb40d5be679f1da561e7bed4478cc71e15e87bcf"
     },
     {
       "path": "index.html",
-      "sha256": "805b1ab34d0bc92376736271969cb902b2d64f33628db50371ac2b8795cbf561"
+      "sha256": "c93f83fd712298a55aff06fe20ef5a829d3c42d16a5f902d99924934896426c9"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "879527aef065e87560b5efc6542ec9661e2b4c506c96368904e807fc41c6ebaf"
+      "sha256": "54f3597a9fd9771225b353d8dacae187b79ab18c9f8f0e60c4220657d02c07d9"
     },
     {
       "path": "updates.html",
-      "sha256": "35f092e9287c63a25a80a411f1d22e319b84b9f23731a908bc80a82ea89a74fd"
+      "sha256": "fb30cc5dc116203478947ac920f2e895706d6ea2d0c388129371c0021d1d3649"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "804fec4b6819cf66889d636f75dbca8e309921cd4a6eae13d4dc24ec5c45b4ea",
+      "content_sha256": "975282a36987c9bbc61edfcbb7dadd6e3ac2446dcd94384a89eb27c186fa1118",
       "path": "index.html",
-      "sha256": "805b1ab34d0bc92376736271969cb902b2d64f33628db50371ac2b8795cbf561",
+      "sha256": "c93f83fd712298a55aff06fe20ef5a829d3c42d16a5f902d99924934896426c9",
       "url": "/"
     },
     {
-      "content_sha256": "b2befe73f40dfdfbb414207ddb55714c2a741fed7617ef993f5fdfea9aa97866",
+      "content_sha256": "9cd223d3528385b4277de7017c84f67b8ebd99b90b36f873be86ad25c1e19497",
       "path": "updates.html",
-      "sha256": "35f092e9287c63a25a80a411f1d22e319b84b9f23731a908bc80a82ea89a74fd",
+      "sha256": "fb30cc5dc116203478947ac920f2e895706d6ea2d0c388129371c0021d1d3649",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "8cb5b02b3d795b3a14f7cacf9d878dc7cc0682f56a6b6d12036cf30b0879933c",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "0f54f532050303bb262b98d8b861f84a5a7d106634b9f2fdfaead0f7e72c9a49",
+      "path": "blog/20260930-kenchicho-chiken-difference/index.html",
+      "sha256": "884a8d21cbf9e4ca0f3c4f5af2fb5a9675d86844567d06487a6433fb04b0eafe",
+      "url": "/blog/20260930-kenchicho-chiken-difference"
     },
     {
       "content_sha256": "769fa64f5b7a025fc650ea44a0bc3e5f5405bc9167f03ed467e349d8931fa9be",
@@ -856,23 +862,17 @@
       "path": "s003.html",
       "sha256": "e7b5596c88e523f96631cafd0307c80e9cee318f6e8fd7db71e2b14dd70dbfa3",
       "url": "/s003.html"
-    },
-    {
-      "content_sha256": "33dbcea51c41b2b9331afc243e76145b76f591cab20594143990c1cfbc0bea7c",
-      "path": "s004.html",
-      "sha256": "4eb290cb7ba6379381539fa9d715521870654231c8807302f00d8a8015b6a774",
-      "url": "/s004.html"
     }
   ],
   "schema": 1,
-  "state_hash": "5bb3d2b5b412806b1e3d2b26eca22303d028b861a425f923c29a041f4c224788",
+  "state_hash": "0fcc7c92406e8bb80ce6e852b3ee42dc6a1026cde29ae3a898c41ad93510e89e",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1212,
-    "new_articles_sha256": "084d6ed558483e108c4167155ab9b965f7bc11207f279835ea0370dac651b2a8",
-    "pages_sha256": "b16126bf71e750c5faa21759f642b98bc4e57f236cd6359885f020129d7a5945",
-    "pages_total": 1142,
-    "published_pages": 1141
+    "new_articles": 1213,
+    "new_articles_sha256": "4682db170605ea6aa954b9cce221153ad5cd82d2facaaa04197d3d4300e72ca7",
+    "pages_sha256": "623283380ce34d8d6b82e000fb40d5be679f1da561e7bed4478cc71e15e87bcf",
+    "pages_total": 1143,
+    "published_pages": 1142
   }
 }
