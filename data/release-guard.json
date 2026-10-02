@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1790905642,
-  "generation": 20261002104722,
-  "git_commit_at_stamp": "6683a7cad561adf6ab305ea1456c5fea0d6402c0",
+  "generated_at_unix": 1790905930,
+  "generation": 20261002105210,
+  "git_commit_at_stamp": "ec750a2aa5bf5716f2e4df23cca6770f563a3f58",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,15 +35,15 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "fc91c116a5c748c82561b9c140e9ac5137a293a84b3b896c59bb7349762da026"
+      "sha256": "e76c7fd422613699573b8cae410328c72f28f5531b83368ebe77bdc7a1cb5c18"
     },
     {
       "path": "data/pages.json",
-      "sha256": "7a0531421d95830765db26d00439bb4befb964bf792fb447dd656d34c46f82e1"
+      "sha256": "afe1c8b7d2407cf73310dbad09ffc3c8cf16aae92bc321d8cda1d91c53df2560"
     },
     {
       "path": "index.html",
-      "sha256": "6c543fe98df0fba0375bba89bbc5632dbec03fef3b3e22fe6d60543ca4c1f6e6"
+      "sha256": "5ad58b6c261f8f8602a04cfd018e0fac77059dc7429caec8d2ef96088e9e033c"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "698dc29b41415cd9fb0b5f1c989f0efa2f5e4769b2e2d2a8cf42e0901ea77641"
+      "sha256": "d2f854fa73e8d01c24160ec1168b95ec330f9c12ac181cf021a5505bd5e1d9be"
     },
     {
       "path": "updates.html",
-      "sha256": "2b103b63f17402b0beb81618beaf259f44672cd58b4e8c517895d0fb46dc96d6"
+      "sha256": "ab29e454e26101cd0329692f23f19b9738ab46f376342672ac576163b0fb9147"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "3fbb86d8c36ebd91ba82838dcfffaf85cdd7c9c2cb0df85b3c1dd753172d2821",
+      "content_sha256": "432386791789341591f5d7cd9e2c133a1bb8eca17829c482e68bad82b0f71b94",
       "path": "index.html",
-      "sha256": "6c543fe98df0fba0375bba89bbc5632dbec03fef3b3e22fe6d60543ca4c1f6e6",
+      "sha256": "5ad58b6c261f8f8602a04cfd018e0fac77059dc7429caec8d2ef96088e9e033c",
       "url": "/"
     },
     {
-      "content_sha256": "125391d53e9a5c9bf88a902362b55ca96f3a917325916539c4b7d66e5978ee68",
+      "content_sha256": "efe042d459b7c688eb941bae92bdc393d6f4d02665a42eb5e1ffc33f433f9007",
       "path": "updates.html",
-      "sha256": "2b103b63f17402b0beb81618beaf259f44672cd58b4e8c517895d0fb46dc96d6",
+      "sha256": "ab29e454e26101cd0329692f23f19b9738ab46f376342672ac576163b0fb9147",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "8cb5b02b3d795b3a14f7cacf9d878dc7cc0682f56a6b6d12036cf30b0879933c",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "d3cd679b97461770b92504163ade0a230446e679d63396e277f41f465b70acfe",
+      "path": "blog/20261002-ryuyo-kaiyo-autumn-walk/index.html",
+      "sha256": "b73b10a8458a3c1b2d841ec08ee644525a93da011f7e9bce708cce64791b1e9a",
+      "url": "/blog/20261002-ryuyo-kaiyo-autumn-walk"
     },
     {
       "content_sha256": "678e806b0463fd9684126eb2b73667b6a91db41c4896ce36be9fa48efa136d8b",
@@ -856,23 +862,17 @@
       "path": "s034.html",
       "sha256": "8e75be26e32b0d12fcbf06c1e03a3f36d8061a1a1e8d08eb64b044ae1291769f",
       "url": "/s034.html"
-    },
-    {
-      "content_sha256": "676a401942bdafaf50f2fccc860b7f06337bb70a8f595d28b8d6b96663f4ac43",
-      "path": "s002.html",
-      "sha256": "29b66eff4bb948cbd1b1268aa62606af2b40c41fa7d8f1f6f67eb7e15fbe66db",
-      "url": "/s002.html"
     }
   ],
   "schema": 1,
-  "state_hash": "fd59b0ce58bf8ad6eebf4c47f862cd8d940545e41f546e9005211046a6c0dbbf",
+  "state_hash": "e7420f094b59303ce108bc1b416c708ed360bb77a04c8bcc8ada23af8451d766",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1214,
-    "new_articles_sha256": "fc91c116a5c748c82561b9c140e9ac5137a293a84b3b896c59bb7349762da026",
-    "pages_sha256": "7a0531421d95830765db26d00439bb4befb964bf792fb447dd656d34c46f82e1",
-    "pages_total": 1144,
-    "published_pages": 1143
+    "new_articles": 1215,
+    "new_articles_sha256": "e76c7fd422613699573b8cae410328c72f28f5531b83368ebe77bdc7a1cb5c18",
+    "pages_sha256": "afe1c8b7d2407cf73310dbad09ffc3c8cf16aae92bc321d8cda1d91c53df2560",
+    "pages_total": 1145,
+    "published_pages": 1144
   }
 }
