@@ -7,10 +7,10 @@
   <meta name="iwata:category" content="総論・資料・史料">
   <meta name="iwata:title" content="光明電鉄19駅一覧――新中泉から二俣町までをたどる">
   <title>光明電鉄19駅一覧――新中泉から二俣町までをたどる｜磐田物語</title>
-  <meta name="description" content="光明電気鉄道の停留所を含む19駅を、新中泉からの距離とともに一覧表にまとめる。2026年7月の現地確認メモを反映し、現在の地名・見える痕跡・確認方針を整理する。">
+  <meta name="description" content="光明電気鉄道の停留所を含む19駅を、新中泉からの距離、駅順をたどる模式路線図、現在の地名・見える痕跡とともに整理する。">
   <link rel="canonical" href="https://iwata-monogatari.net/c055">
   <meta property="og:title" content="光明電鉄19駅一覧――新中泉から二俣町までをたどる｜磐田物語">
-  <meta property="og:description" content="光明電気鉄道の停留所を含む19駅を、新中泉からの距離とともに一覧表にまとめる。2026年7月の現地確認メモを反映し、現在の地名・見える痕跡・確認方針を整理する。">
+  <meta property="og:description" content="光明電気鉄道の停留所を含む19駅を、新中泉からの距離、駅順をたどる模式路線図、現在の地名・見える痕跡とともに整理する。">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:url" content="https://iwata-monogatari.net/c055">
@@ -26,6 +26,16 @@
     .feature-nav{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 8px;}
     .feature-nav a{display:inline-flex;align-items:center;font-size:13.5px;font-weight:700;color:var(--matsu);padding:8px 14px;border:1px solid var(--waku);border-radius:6px;background:#fff;}
     .feature-nav a:hover{background:var(--district-soft);text-decoration:none;}
+    .route-schematic{max-width:680px;margin:24px auto;padding:22px 22px 18px;border:1px solid var(--district-line);border-radius:10px;background:var(--district-soft);}
+    .route-schematic .route-overview{display:block;width:100%;height:auto;margin:0 0 16px;}
+    .route-schematic ol{position:relative;list-style:none;margin:0;padding:0 0 0 26px;}
+    .route-schematic ol::before{content:"";position:absolute;left:7px;top:12px;bottom:12px;width:3px;background:var(--district-color);border-radius:3px;}
+    .route-schematic li{position:relative;display:flex;justify-content:space-between;gap:16px;padding:5px 0;font-size:14px;line-height:1.45;}
+    .route-schematic li::before{content:"";position:absolute;left:-24px;top:11px;width:11px;height:11px;border:3px solid var(--district-color);border-radius:50%;background:#fff;box-sizing:border-box;}
+    .route-schematic .station{font-weight:700;}
+    .route-schematic .distance{flex:0 0 auto;color:#52616b;font-variant-numeric:tabular-nums;}
+    .route-schematic figcaption{margin-top:14px;font-size:13px;color:#52616b;}
+    @media (max-width:520px){.route-schematic{padding:18px 16px 15px}.route-schematic li{font-size:13px;gap:10px}}
   </style>
 <!-- structured-data:auto -->
 <script type="application/ld+json">
@@ -33,7 +43,7 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "光明電鉄19駅一覧 ── 新中泉から二俣町までをたどる",
-  "description": "光明電気鉄道の停留所を含む19駅を、新中泉からの距離とともに一覧表にまとめる。現在の地名・見える痕跡・確認方針を添えた、地図上でたどるための資料ページ。",
+  "description": "光明電気鉄道の停留所を含む19駅を、新中泉からの距離、駅順をたどる模式路線図、現在の地名・見える痕跡とともに整理する。",
   "image": "https://iwata-monogatari.net/img/ogp.jpg",
   "inLanguage": "ja",
   "author": {"@type":"Person","@id":"https://oishi-hiroyuki.org/#person","name":"大石浩之","url":"https://oishi-hiroyuki.org/profile"},
@@ -56,7 +66,7 @@
     "@id": "https://iwata-monogatari.net/c055"
   },
   "datePublished": "2026-07-04",
-  "dateModified": "2026-07-17",
+  "dateModified": "2026-10-03",
   "articleSection": "総論",
   "keywords": "光明電気鉄道, 光明電鉄, 駅一覧, 新中泉, 遠州見付, 二俣町, 廃線跡, 現地確認"
 }
@@ -134,6 +144,43 @@
 
 <section class="figure-block">
   <p>中泉駅と新中泉の名前を読み分けるには、<a href="/blog/20260923-nakaizumi-shin-nakaizumi/">中泉駅と新中泉駅の違い｜磐田の本編で読み分ける</a>で所属路線と開業・改称の記述を照合できます。</p>
+  <p class="section-label" id="komyo-route-diagram" role="heading" aria-level="2"><strong>光明電気鉄道の路線図――19駅の順番と距離</strong></p>
+  <p>磐田市教育委員会の「いわた文化財だより」第126号は、新中泉から二俣町までを19駅・19.79kmと説明している。以下は、資料と駅一覧で確認した駅順、新中泉からの概数を直線上に並べた模式図である。</p>
+  <figure class="route-schematic" aria-labelledby="komyo-route-diagram">
+    <svg class="route-overview" viewBox="0 0 680 92" role="img" aria-labelledby="route-overview-title route-overview-desc">
+      <title id="route-overview-title">新中泉から二俣町まで全19駅の模式図</title>
+      <desc id="route-overview-desc">新中泉を起点、二俣町を終点として、途中17駅を含む全19駅を一本の線上に示す。</desc>
+      <line x1="46" y1="39" x2="634" y2="39" stroke="var(--district-color)" stroke-width="4" stroke-linecap="round"/>
+      <g fill="#fff" stroke="var(--district-color)" stroke-width="3">
+        <circle cx="46" cy="39" r="8"/><circle cx="79" cy="39" r="5"/><circle cx="111" cy="39" r="5"/><circle cx="144" cy="39" r="5"/><circle cx="177" cy="39" r="5"/><circle cx="209" cy="39" r="5"/><circle cx="242" cy="39" r="5"/><circle cx="274" cy="39" r="5"/><circle cx="307" cy="39" r="5"/><circle cx="340" cy="39" r="5"/><circle cx="373" cy="39" r="5"/><circle cx="405" cy="39" r="5"/><circle cx="438" cy="39" r="5"/><circle cx="470" cy="39" r="5"/><circle cx="503" cy="39" r="5"/><circle cx="536" cy="39" r="5"/><circle cx="568" cy="39" r="5"/><circle cx="601" cy="39" r="5"/><circle cx="634" cy="39" r="8"/>
+      </g>
+      <g fill="#263842" font-size="13" font-weight="700" font-family="system-ui, sans-serif">
+        <text x="46" y="70" text-anchor="start">新中泉</text><text x="340" y="17" text-anchor="middle">全19駅</text><text x="634" y="70" text-anchor="end">二俣町</text>
+      </g>
+    </svg>
+    <ol>
+      <li><span class="station">1　新中泉</span><span class="distance">0.0km</span></li>
+      <li><span class="station">2　中泉二之宮</span><span class="distance">0.5km</span></li>
+      <li><span class="station">3　遠州見付</span><span class="distance">1.7km</span></li>
+      <li><span class="station">4　川原</span><span class="distance">2.6km</span></li>
+      <li><span class="station">5　加茂東</span><span class="distance">4.6km</span></li>
+      <li><span class="station">6　三ツ入</span><span class="distance">5.6km</span></li>
+      <li><span class="station">7　遠州岩田</span><span class="distance">6.6km</span></li>
+      <li><span class="station">8　匂坂</span><span class="distance">7.7km</span></li>
+      <li><span class="station">9　入下</span><span class="distance">8.4km</span></li>
+      <li><span class="station">10　寺谷</span><span class="distance">9.6km</span></li>
+      <li><span class="station">11　掛下</span><span class="distance">10.6km</span></li>
+      <li><span class="station">12　平松</span><span class="distance">11.7km</span></li>
+      <li><span class="station">13　神増</span><span class="distance">13.2km</span></li>
+      <li><span class="station">14　上神増</span><span class="distance">13.9km</span></li>
+      <li><span class="station">15　田川</span><span class="distance">15.3km</span></li>
+      <li><span class="station">16　上野部</span><span class="distance">16.4km</span></li>
+      <li><span class="station">17　神田公園前</span><span class="distance">17.2km</span></li>
+      <li><span class="station">18　二俣口（旧阿蔵）</span><span class="distance">19.1km</span></li>
+      <li><span class="station">19　二俣町</span><span class="distance">19.8km</span></li>
+    </ol>
+    <figcaption>駅順と起点からの距離を直線化した模式図。地理上の曲線、正確な駅位置、徒歩経路を示す地図ではありません。</figcaption>
+  </figure>
   <p class="section-label"><strong>光明電気鉄道 駅一覧</strong></p>
   <div class="table-scroll">
     <table class="academic-table">
@@ -180,7 +227,7 @@
   <ul>
     <li>アップロード資料「磐田駅発の廃線調査」</li>
     <li>2026年7月17日提供「光明電鉄現地確認メモ」</li>
-    <li>いわた文化財だより掲載資料(光明電鉄関連)</li>
+    <li>磐田市教育委員会「いわた文化財だより」第126号「磐田市の近代化遺産 幻の光明電鉄を追え！①」、第135号「光明電鉄の消長」（<a href="https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html">磐田市公式バックナンバー</a>）</li>
     <li>磐田市歴史文書館 第17回企画展「光明電鉄の消長〜大正期前後の地域開発構想〜」パンフレット(平成28年/2016年)</li>
     <li>磐田市立図書館所蔵資料(光明電気鉄道関係)</li>
     <li>天竜浜名湖鉄道沿線資料</li>
@@ -196,6 +243,7 @@
   <p class="section-label"><strong>更新履歴</strong></p>
   <ul>
     <li><time datetime="2026-07-17">2026年7月17日</time> 現地確認メモを反映し、駅別の痕跡・確認方針を補強。</li>
+    <li><time datetime="2026-10-03">2026年10月3日</time> 実測検索語「光明電気鉄道 路線 図」への回答として、19駅の順番と新中泉からの距離を示す模式路線図を追加。正確な地理図・徒歩経路ではないことを明示。</li>
   </ul>
 </section>
 
