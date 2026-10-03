@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-09-30",
+  "updated_at": "2026-10-03",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -32136,6 +32136,40 @@
         "internal:k051.html",
         "internal:k032-ofuji.html",
         "internal:c066.html"
+      ]
+    },
+    {
+      "title": "磐田の家康伝承の調べ方｜本編から作る確認メモ（ブログ記事）",
+      "url": "blog/20261003-iwata-ieyasu-source-memo/",
+      "district": [
+        "nakaizumi",
+        "toyoda"
+      ],
+      "themes": [
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-10-03",
+      "updated_at": "2026-10-03",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "ブログ・資料の調べ方",
+      "topics": [
+        "徳川家康",
+        "伝承",
+        "中泉御殿",
+        "行興寺",
+        "資料・調査"
+      ],
+      "summary": "磐田の家康伝承は、本編で資料名・書き手・成立時期を拾い、記録と伝承を分けて調べます。中泉御殿と行興寺の本編3本から、原資料へ戻れる確認メモを作成。10月10日開幕の家康企画展を前に、出来事の年と資料の成立年を混同せず、未確認欄を残す手順を案内します。",
+      "source_refs": [
+        "web:https://www.city.shizuoka.lg.jp/s6725/s013125.html",
+        "internal:n048.html",
+        "internal:n052.html",
+        "internal:t037.html"
       ]
     }
   ]
