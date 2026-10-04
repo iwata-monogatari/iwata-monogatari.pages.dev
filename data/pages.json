@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-10-03",
+  "updated_at": "2026-10-04",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -32170,6 +32170,40 @@
         "internal:n048.html",
         "internal:n052.html",
         "internal:t037.html"
+      ]
+    },
+    {
+      "title": "豊田香りの公園の秋散策｜立野を読む本編案内（ブログ記事）",
+      "url": "blog/20261004-toyoda-kaori-autumn-walk/",
+      "district": [
+        "toyoda"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-10-04",
+      "updated_at": "2026-10-04",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "section": "ブログ・散策案内",
+      "topics": [
+        "豊田香りの公園",
+        "立野",
+        "地名",
+        "散策"
+      ],
+      "summary": "豊田香りの公園の秋散策は、豊田町駅北口から徒歩3分の立野を入口に、本編3本へつながります。市広報のキンモクセイの見頃と当日の開花を区別し、地名資料・旧豊田町の沿革・史跡の記録を読む手順を紹介。地名の由来を急いで決めず、散策と読書を楽しむ案内です。",
+      "source_refs": [
+        "web:https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/014/065/01_2312_koho_iwata_PDF/koho202409/12asobo.pdf",
+        "web:https://www.city.iwata.shizuoka.jp/shisetsu_guide/koen_shisetsu/kouen/1003411.html",
+        "internal:t006.html",
+        "internal:t043.html",
+        "internal:t044.html"
       ]
     }
   ]
