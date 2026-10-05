@@ -27,3 +27,24 @@
 
 /data/search/bodies/*
   Cache-Control: public, max-age=31536000, immutable
+
+/assets/js/article-search.js
+  Cache-Control: no-cache
+
+/assets/js/search-core.js
+  Cache-Control: no-cache
+
+/assets/js/search-worker.js
+  Cache-Control: no-cache
+
+/assets/js/search-preferences.js
+  Cache-Control: no-cache
+
+/assets/js/home-search.js
+  Cache-Control: no-cache
+
+/assets/css/article-search.css
+  Cache-Control: no-cache
+
+/assets/css/site-header.css
+  Cache-Control: no-cache
