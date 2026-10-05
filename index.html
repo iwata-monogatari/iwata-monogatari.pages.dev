@@ -540,6 +540,19 @@ img{max-width:100%;display:block;}
 <style>.home-index .searchhero .hero-subtitle,.home-index .searchhero .hero-lead{font-size:1em}.home-index .searchhero .inner{padding:1.5rem 1.25rem}.home-index .hero-stat{font-size:.9em!important}.cols>.home-feature-main{min-width:0}.home-index .fh-referral{margin:2rem auto;max-width:62rem}.home-index .popular-section{max-width:62rem}.home-index .popular-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-index .popular-grid a{font-size:1em;line-height:1.7}@media(max-width:40rem){.home-index .popular-grid{grid-template-columns:1fr}}</style>
 </head>
 <style>
+
+/* Give the main collection a prominent place within a narrower page. */
+.home-index #home-main {max-width:54rem;margin:0 auto;}
+.home-index #saguchi {margin:12px 22px 24px;border:2px solid #b9cbd0;border-radius:16px;background:#f1f5f3;}
+.home-index #saguchi .inner {padding:24px;}
+.home-index #saguchi .sectitle {font-size:clamp(24px,4vw,32px);margin:0 0 12px;}
+.home-index #saguchi-gallery {grid-template-columns:repeat(2,minmax(0,1fr));}
+.home-index #saguchi-gallery .gcard img {height:240px;object-fit:contain;background:#e9e4d8;}
+.home-index #saguchi-gallery .gt {font-size:1em;}
+.home-index #saguchi-gallery .gm {font-size:.8em;}
+@media(max-width:40rem){.home-index #saguchi {margin-left:12px;margin-right:12px;}.home-index #saguchi .inner {padding:16px;}}
+@media(max-width:30rem){.home-index #saguchi-gallery {grid-template-columns:minmax(0,1fr);}}
+
 /* Keep the lower home sections in one full-width reading flow. */
 .home-index #portal {padding-top:12px;}
 .home-index #portal .cols {grid-template-columns:minmax(0,1fr);gap:24px;}
@@ -590,6 +603,81 @@ img{max-width:100%;display:block;}
     <p class="hero-stat" style="text-align:center;margin:16px 0 0;font-size:13.5px;color:var(--ink-soft);letter-spacing:.03em;">磐田の集合知（公開記事）<strong data-knowledge-count style="color:var(--brown-deep);font-size:1.15em;">1106</strong> 本 ｜ 特集・連載・9地区・14のテーマハブ</p>
   </div>
 </section>
+<section class="gallery-band" id="saguchi">
+  <div class="inner">
+    <p class="eyebrow">MAIN COLLECTION ｜ 磐田の記憶を伝える約336点</p>
+    <h2 class="sectitle" style="border-bottom:none;padding-bottom:0;">佐口行正コレクション</h2>
+    <p class="lead-sm">郷土史研究家・佐口行正氏が収集された古写真・古地図・引き札・絵葉書・商店資料。歴史に詳しくない方でも楽しめる、絵で見る磐田の入口です。</p>
+    <div class="hscroll" id="saguchi-gallery">
+      <a class="gcard" href="/c019#ts-7"><img src="/saguchi/img/ts-7.jpg" alt="浮世絵 美人東海道 見附駅 渓斎英泉 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">美人東海道 見附駅</p><p class="gm">渓斎英泉／見付を描いた浮世絵</p></div></a>
+      <a class="gcard" href="/c019#hk-3"><img src="/saguchi/img/hk-3.jpg" alt="引き札 内山栄吉 明治42年 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">引札 内山栄吉</p><p class="gm">明治42年／色刷りの広告</p></div></a>
+      <a class="gcard" href="/c019#eh-1"><img src="/saguchi/img/eh-1.jpg" alt="見付の祭礼を伝える絵葉書 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">祭礼の絵葉書</p><p class="gm">大正期の見付</p></div></a>
+      <a class="gcard" href="/c019#eh-10"><img src="/saguchi/img/eh-10.jpg" alt="絵葉書 見付のまちなみ 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">まちなみの絵葉書</p><p class="gm">絵葉書</p></div></a>
+    </div>
+    <p style="text-align:right;margin:14px 0 0;display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;">
+      <a href="/c020" style="font-size:13px;font-weight:700;color:#fff;background:var(--brown);border-radius:999px;padding:8px 16px;">史料本編を見る →</a>
+      <a href="/c019" style="font-size:13px;font-weight:700;color:var(--brown-deep);border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 16px;">目録を見る →</a>
+    </p>
+    <p style="font-size:12px;color:var(--ink-soft);margin:8px 0 0;">※ 掲載資料はすべて佐口行正氏の所蔵であり、ご厚意・ご許可を得て公開しています。無断転載・二次利用を禁じます。</p>
+  </div>
+</section>
+<style>
+  /* ギャラリーは横スクロールさせず、画面幅に収まる折り返しグリッドにする */
+  #saguchi-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;overflow:visible;scroll-snap-type:none;padding-bottom:0;}
+  #saguchi-gallery .gcard{flex:initial;width:auto;min-width:0;scroll-snap-align:none;transition:opacity .55s ease;}
+  #saguchi-gallery .gcard.is-fade{opacity:0;}
+  #saguchi-gallery .gt{overflow-wrap:anywhere;}
+  @media(max-width:880px){#saguchi-gallery{grid-template-columns:repeat(3,1fr);}}
+  @media(max-width:600px){#saguchi-gallery{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:400px){#saguchi-gallery{grid-template-columns:1fr;}}
+</style>
+<script>
+/* 佐口史料ギャラリー：10秒ごとに別の所蔵資料へ差し替え（画像・見出し・説明・リンクを目録データと一致させる） */
+(function(){
+  var wrap=document.getElementById('saguchi-gallery');
+  if(!wrap) return;
+  var cards=Array.prototype.slice.call(wrap.querySelectorAll('.gcard:not(.gcard--more)'));
+  if(!cards.length) return;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+  function metaOf(it){
+    var parts=[];
+    var lab=it.typ||it.cat||it.group||'';
+    if(lab) parts.push(lab);
+    var era=(it.grps&&it.grps['年代'])||'';
+    if(!era||era==='年代不明'){ era=(it.era&&it.era.length<=10)?it.era:''; }
+    if(era&&era!=='年代不明') parts.push(era);
+    return parts.join('／');
+  }
+  function apply(card,it){
+    var img=card.querySelector('img'),
+        gt=card.querySelector('.gt'), gm=card.querySelector('.gm');
+    card.setAttribute('href','/c019.html#'+it.id);
+    if(img){ img.src='/'+it.img; img.alt=(it.name||'佐口行正氏所蔵史料')+' 佐口行正氏所蔵資料'; img.loading='lazy'; img.decoding='async'; }
+    if(gt) gt.textContent=it.name||'佐口行正氏所蔵史料';
+    if(gm) gm.textContent=metaOf(it)||'佐口行正氏所蔵資料';
+  }
+  fetch('/data/saguchi-shiryo.json').then(function(r){return r.json();}).then(function(d){
+    var pool=(d.items||[]).filter(function(it){return it&&it.img&&it.id&&it.id!=='hk-20';});
+    if(pool.length<=cards.length) return;
+    shuffle(pool);
+    var idx=0;
+    function nextBatch(){
+      for(var k=0;k<cards.length;k++){
+        if(idx>=pool.length){ shuffle(pool); idx=0; }
+        apply(cards[k],pool[idx++]);
+      }
+    }
+    function tick(){
+      if(reduce){ nextBatch(); return; }
+      cards.forEach(function(c){c.classList.add('is-fade');});
+      setTimeout(function(){ nextBatch(); cards.forEach(function(c){c.classList.remove('is-fade');}); },550);
+    }
+    setInterval(tick,10000);
+  }).catch(function(){});
+})();
+</script>
+
 <section class="entry-section home-explore" aria-label="磐田物語の入口">
   <h2>磐田物語の入口</h2>
   <div class="entry-grid">
@@ -1130,80 +1218,6 @@ img{max-width:100%;display:block;}
   </div>
 </section>
 
-<section class="gallery-band" id="saguchi">
-  <div class="inner">
-    <p class="eyebrow">GALLERY ｜ 絵で見る磐田の記憶</p>
-    <h2 class="sectitle" style="border-bottom:none;padding-bottom:0;">引き札・古写真・絵葉書ギャラリー</h2>
-    <p class="lead-sm">郷土史研究家・佐口行正氏が収集された古写真・古地図・引き札・絵葉書・商店資料。歴史に詳しくない方でも楽しめる、絵で見る磐田の入口です。</p>
-    <div class="hscroll" id="saguchi-gallery">
-      <a class="gcard" href="/c019#ts-7"><img src="/saguchi/img/ts-7.jpg" alt="浮世絵 美人東海道 見附駅 渓斎英泉 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">美人東海道 見附駅</p><p class="gm">渓斎英泉／見付を描いた浮世絵</p></div></a>
-      <a class="gcard" href="/c019#hk-3"><img src="/saguchi/img/hk-3.jpg" alt="引き札 内山栄吉 明治42年 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">引札 内山栄吉</p><p class="gm">明治42年／色刷りの広告</p></div></a>
-      <a class="gcard" href="/c019#eh-1"><img src="/saguchi/img/eh-1.jpg" alt="見付の祭礼を伝える絵葉書 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">祭礼の絵葉書</p><p class="gm">大正期の見付</p></div></a>
-      <a class="gcard" href="/c019#eh-10"><img src="/saguchi/img/eh-10.jpg" alt="絵葉書 見付のまちなみ 佐口行正氏所蔵資料" loading="lazy"><div class="gc"><p class="gt">まちなみの絵葉書</p><p class="gm">絵葉書</p></div></a>
-    </div>
-    <p style="text-align:right;margin:14px 0 0;display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;">
-      <a href="/c020" style="font-size:13px;font-weight:700;color:#fff;background:var(--brown);border-radius:999px;padding:8px 16px;">史料本編を見る →</a>
-      <a href="/c019" style="font-size:13px;font-weight:700;color:var(--brown-deep);border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 16px;">目録を見る →</a>
-    </p>
-    <p style="font-size:12px;color:var(--ink-soft);margin:8px 0 0;">※ 掲載資料はすべて佐口行正氏の所蔵であり、ご厚意・ご許可を得て公開しています。無断転載・二次利用を禁じます。</p>
-  </div>
-</section>
-<style>
-  /* ギャラリーは横スクロールさせず、画面幅に収まる折り返しグリッドにする */
-  #saguchi-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;overflow:visible;scroll-snap-type:none;padding-bottom:0;}
-  #saguchi-gallery .gcard{flex:initial;width:auto;min-width:0;scroll-snap-align:none;transition:opacity .55s ease;}
-  #saguchi-gallery .gcard.is-fade{opacity:0;}
-  #saguchi-gallery .gt{overflow-wrap:anywhere;}
-  @media(max-width:880px){#saguchi-gallery{grid-template-columns:repeat(3,1fr);}}
-  @media(max-width:600px){#saguchi-gallery{grid-template-columns:repeat(2,1fr);}}
-  @media(max-width:400px){#saguchi-gallery{grid-template-columns:1fr;}}
-</style>
-<script>
-/* 佐口史料ギャラリー：10秒ごとに別の所蔵資料へ差し替え（画像・見出し・説明・リンクを目録データと一致させる） */
-(function(){
-  var wrap=document.getElementById('saguchi-gallery');
-  if(!wrap) return;
-  var cards=Array.prototype.slice.call(wrap.querySelectorAll('.gcard:not(.gcard--more)'));
-  if(!cards.length) return;
-  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
-  function metaOf(it){
-    var parts=[];
-    var lab=it.typ||it.cat||it.group||'';
-    if(lab) parts.push(lab);
-    var era=(it.grps&&it.grps['年代'])||'';
-    if(!era||era==='年代不明'){ era=(it.era&&it.era.length<=10)?it.era:''; }
-    if(era&&era!=='年代不明') parts.push(era);
-    return parts.join('／');
-  }
-  function apply(card,it){
-    var img=card.querySelector('img'),
-        gt=card.querySelector('.gt'), gm=card.querySelector('.gm');
-    card.setAttribute('href','/c019.html#'+it.id);
-    if(img){ img.src='/'+it.img; img.alt=(it.name||'佐口行正氏所蔵史料')+' 佐口行正氏所蔵資料'; img.loading='lazy'; img.decoding='async'; }
-    if(gt) gt.textContent=it.name||'佐口行正氏所蔵史料';
-    if(gm) gm.textContent=metaOf(it)||'佐口行正氏所蔵資料';
-  }
-  fetch('/data/saguchi-shiryo.json').then(function(r){return r.json();}).then(function(d){
-    var pool=(d.items||[]).filter(function(it){return it&&it.img&&it.id&&it.id!=='hk-20';});
-    if(pool.length<=cards.length) return;
-    shuffle(pool);
-    var idx=0;
-    function nextBatch(){
-      for(var k=0;k<cards.length;k++){
-        if(idx>=pool.length){ shuffle(pool); idx=0; }
-        apply(cards[k],pool[idx++]);
-      }
-    }
-    function tick(){
-      if(reduce){ nextBatch(); return; }
-      cards.forEach(function(c){c.classList.add('is-fade');});
-      setTimeout(function(){ nextBatch(); cards.forEach(function(c){c.classList.remove('is-fade');}); },550);
-    }
-    setInterval(tick,10000);
-  }).catch(function(){});
-})();
-</script>
 
 <style>
   .philosophy-band{max-width:1180px;margin:6px auto 0;padding:0 22px;}
