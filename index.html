@@ -593,6 +593,21 @@ img{max-width:100%;display:block;}
 .home-short .im-foot .fgo-managed-footer__note{font-size:13px}
 .home-short a:focus-visible,.home-short summary:focus-visible{outline:3px solid #793b06;outline-offset:3px}
 @media(max-width:40rem){.home-short #home-main{padding:0 14px}.home-short .gh-bar{padding:8px 14px}.home-short .short-hero{padding-top:12px}.home-short #saguchi .inner{padding:14px}.home-short #saguchi .sectitle{font-size:1.2em}.home-short #saguchi-gallery img{height:150px}.home-short #saguchi-gallery .gc{padding:8px}.home-short #saguchi-gallery .gt{font-size:.8em}.home-short .popular-grid{grid-template-columns:1fr}.home-short .home-nav{gap:4px 12px}.home-short .guide-links{grid-template-columns:1fr}}
+
+/* Keep real article titles visible while secondary update history stays compact. */
+.home-short .article-topics{scroll-margin-top:16px}
+.home-short .topics-intro{margin:0 0 12px;font-size:.85em}
+.home-short .topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.home-short .topic-card{min-width:0;padding:10px 14px;background:#fff;border:1px solid #ccdadd;border-left:4px solid #356079;border-radius:8px}
+.home-short .topic-card h3{margin:0 0 2px;font-size:.85em;line-height:1.5;color:#4a5e68}
+.home-short .topic-card ul{list-style:none;padding:0;margin:0}
+.home-short .topic-card li{margin:0}
+.home-short .topic-card a{display:block;min-height:44px;padding:8px 0;color:#194e70;font-size:.9em;line-height:1.5;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.home-short .topic-card li+li{border-top:1px solid #e7edef}
+.home-short .recent-updates{border-block:1px solid #b9cbd0;padding:8px 0}
+.home-short .recent-updates>summary{font-weight:700;font-size:1em;min-height:48px;padding:10px 0}
+.home-short .recent-updates[open]>summary{margin-bottom:8px}
+@media(max-width:40rem){.home-short .topic-grid{grid-template-columns:1fr}.home-short .topic-card{padding:8px 12px}.home-short .home-nav{gap:4px 12px}}
 </style></head><body class="home-index home-short"><a class="skip-link" href="#home-main">本文へ移動</a><header class="gh-site">
 <div class="gh-bar">
 <a class="gh-brand" href="/">
@@ -612,10 +627,10 @@ img{max-width:100%;display:block;}
 </nav>
 </div>
 </header><main id="home-main">
-<section class="short-hero"><h1>磐田の歴史を探す</h1><p>まちの記憶を、資料と物語で次の世代へ。</p>
+<section class="short-hero"><h1>磐田の歴史を探す</h1><p>祭り・鉄道・地名・学校・古写真から、磐田の歴史を読む。</p>
 <div class="home-search"><form id="home-search-form" action="/search/" method="get"><label for="q">地名・人物名・言葉で検索</label><div class="query-row"><input type="search" id="q" name="q" autocomplete="off" placeholder="例：見付宿、光明電気鉄道"><button type="submit">検索</button></div><p id="home-search-error" role="alert" hidden></p></form>
 <details class="search-options"><summary>検索例・文字サイズ</summary><div class="chips" id="chips" aria-label="検索語の例"><button type="button" class="chip" data-q="見付宿">見付宿</button><button type="button" class="chip" data-q="光明電気鉄道">光明電気鉄道</button><button type="button" class="chip" data-q="古地図">古地図</button></div><div class="text-size" role="group" aria-label="文字サイズ"><span>文字サイズ</span><button type="button" data-text-size="standard" aria-pressed="true">標準</button><button type="button" data-text-size="large" aria-pressed="false">大</button><button type="button" data-text-size="largest" aria-pressed="false">特大</button></div><a href="/search/help/">記事の探し方</a></details></div>
-<span id="results"></span><nav class="home-nav" aria-label="トップの案内"><a href="#districts">地区・テーマ</a><a href="/c034">全記事一覧</a><a href="/guide/">ご案内</a></nav></section>
+<span id="results"></span><nav class="home-nav" aria-label="トップの案内"><a href="#article-topics">記事の種類</a><a href="#districts">地区</a><a href="/c034">全記事一覧</a><a href="/guide/">ご案内</a></nav></section>
 <section class="gallery-band" id="saguchi">
 <div class="inner">
 <p class="eyebrow">古写真・古地図・引札など 約336点</p>
@@ -634,8 +649,14 @@ img{max-width:100%;display:block;}
 <p style="font-size:12px;color:var(--ink-soft);margin:8px 0 0;">※ 掲載資料はすべて佐口行正氏の所蔵であり、ご厚意・ご許可を得て公開しています。無断転載・二次利用を禁じます。</p>
 </div>
 </section>
-<section class="short-section" id="districts"><h2>地区・テーマから探す</h2><div class="district-links"><a href="/01001-mitsuke">見付</a><a href="/01002-nakaizumi">中泉</a><a href="/01003-mikuriya">御厨</a><a href="/01004-toyoda">豊田</a><a href="/01005-nanbu">南部</a><a href="/01006-koyo">向陽</a><a href="/01007-ryuyo">竜洋</a><a href="/01008-fukude">福田</a><a href="/01009-toyooka">豊岡</a></div><div class="explore-links" id="themes"><a href="/c137">14のテーマを見る →</a><a href="/places">地名・大字から探す →</a></div></section>
-<section class="short-section" id="new"><h2>最近追加・更新した記事</h2><ul class="new-article-list news-list" id="new-article-list" aria-label="新着記事一覧">
+<section class="short-section article-topics" id="article-topics" aria-labelledby="article-topics-title">
+<span id="recommended"></span><h2 id="article-topics-title">こんな記事が読めます</h2>
+<p class="topics-intro">祭りから廃線、地名、暮らしまで。気になる記事からどうぞ。</p>
+<div class="topic-grid"><article class="topic-card"><h3>鉄道・道と橋</h3><ul><li><a href="/c055">光明電鉄19駅一覧<span aria-hidden="true"> →</span></a></li><li><a href="/t004">池田の渡し<span aria-hidden="true"> →</span></a></li></ul></article><article class="topic-card"><h3>祭り・伝統</h3><ul><li><a href="/matsuri-hadaka">見付天神裸祭【特集】<span aria-hidden="true"> →</span></a></li><li><a href="/m127">見付祇園祭<span aria-hidden="true"> →</span></a></li></ul></article><article class="topic-card"><h3>地名・村の成り立ち</h3><ul><li><a href="/c009">磐田市の地名と町名の由来<span aria-hidden="true"> →</span></a></li><li><a href="/f035">五人組制度の起源と福田村の編成<span aria-hidden="true"> →</span></a></li></ul></article><article class="topic-card"><h3>学校・人物</h3><ul><li><a href="/m015">旧見付学校と、学びのまち磐田<span aria-hidden="true"> →</span></a></li><li><a href="/r026">金原明善<span aria-hidden="true"> →</span></a></li></ul></article><article class="topic-card"><h3>古墳・古代の磐田</h3><ul><li><a href="/t001">銚子塚古墳と、遠江を治めた王の眠り<span aria-hidden="true"> →</span></a></li><li><a href="/n016">遠江国分寺跡と、古代磐田のはじまり<span aria-hidden="true"> →</span></a></li></ul></article><article class="topic-card"><h3>神社・寺院</h3><ul><li><a href="/c134">磐田市の寺院<span aria-hidden="true"> →</span></a></li><li><a href="/m019">淡海國玉神社<span aria-hidden="true"> →</span></a></li></ul></article><article class="topic-card"><h3>産業・用水</h3><ul><li><a href="/f003">別珍・コールテンと福田の織物産業<span aria-hidden="true"> →</span></a></li><li><a href="/k007">寺谷用水の開削<span aria-hidden="true"> →</span></a></li></ul></article><article class="topic-card"><h3>戦争の記憶</h3><ul><li><a href="/h002">空襲の記憶<span aria-hidden="true"> →</span></a></li><li><a href="/h003">学徒動員と対空戦<span aria-hidden="true"> →</span></a></li></ul></article></div>
+<div class="explore-links" id="themes"><a href="/c137">14のテーマをすべて見る →</a><a href="/tokushu">特集一覧 →</a></div>
+</section>
+<section class="short-section" id="districts"><h2>住んでいる地区から探す</h2><div class="district-links"><a href="/01001-mitsuke">見付</a><a href="/01002-nakaizumi">中泉</a><a href="/01003-mikuriya">御厨</a><a href="/01004-toyoda">豊田</a><a href="/01005-nanbu">南部</a><a href="/01006-koyo">向陽</a><a href="/01007-ryuyo">竜洋</a><a href="/01008-fukude">福田</a><a href="/01009-toyooka">豊岡</a></div><div class="explore-links"><a href="/places">地名・大字から探す →</a></div></section>
+<section class="short-section" id="new"><details class="recent-updates"><summary>最近追加・更新した記事を見る</summary><ul class="new-article-list news-list" id="new-article-list" aria-label="新着記事一覧">
 
           <li class="new-article-item news-item">
             <a href="/blog/20261005-iwata-history-source-notes/" class="new-article-link news-link">
@@ -679,8 +700,8 @@ img{max-width:100%;display:block;}
               <span class="new-article-arrow news-arrow" aria-hidden="true">→</span>
             </a>
           </li>
-        </ul><p><a href="/updates">更新履歴をすべて見る →</a></p></section>
-<section class="short-section" id="recommended"><h2>おすすめの記事</h2><div class="popular-grid"><a href="/c055"><em>鉄道</em>光明電鉄19駅一覧 ── 路線図と現存する痕跡</a><a href="/m127"><em>祭り</em>見付祇園祭 ── 光と音の夏祭り</a><a href="/k007"><em>用水</em>寺谷用水の開削 ── 遠州最古の用水路</a><a href="/f035"><em>江戸</em>五人組制度の起源と福田村の編成</a></div><p><a href="/tokushu">特集一覧を見る →</a> ／ <a href="/blog/">ブログ</a></p></section>
+        </ul><p><a href="/updates">更新履歴をすべて見る →</a> ／ <a href="/blog/">ブログ</a></p></details></section>
+
 <section class="short-section" id="portal"><h2>ご案内・資料リンク</h2><div class="guide-links"><a href="/guide/#public-resources">公的資料・調べもの</a><a href="/guide/#schools">学校史・地域の読み物</a><a href="/guide/#services">暮らしの相談・関連サービス</a><a href="/guide/#related-sites">運営者・関連サイト</a></div><p><a href="/c007">初めての方へ</a> ／ <a href="/bbs">掲示板</a></p><div class="philosophy-band__count"><span class="num" data-knowledge-count>1106</span> 本の公開記事を、<a href="/c001">磐田物語の方針</a>に沿って記録しています。</div></section>
 </main><footer class="im-foot">
 <style>
