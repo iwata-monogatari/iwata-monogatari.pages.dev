@@ -36,12 +36,15 @@ const CANONICAL_HOST = "iwata-monogatari.net";
 const NO_REACTION_PATHS = new Set(["/", "/index", "/bbs", "/c034", "/404", "/updates", "/blog"]);
 function wantsReactions(pathname) {
   const p = pathname.replace(/\/index\.html$/, "/").replace(/\.html$/, "").replace(/(.)\/+$/, "$1");
-  return !NO_REACTION_PATHS.has(p) && !p.startsWith("/admin");
+  return !NO_REACTION_PATHS.has(p) && !p.startsWith("/admin") && p !== "/search" && !p.startsWith("/search/");
 }
 
 export async function onRequest(context) {
   const { request, next } = context;
   const url = new URL(request.url);
+  const legacySearch = url.pathname === "/" && ["q", "district", "theme", "sort", "page"].some(key => url.searchParams.has(key));
+  const searchContext = legacySearch || url.pathname === "/search" || url.pathname.startsWith("/search/");
+  const protectLinks = html => searchContext ? html.replace(/<a\b[^>]*>/gi, tag => tag.replace(/\sreferrerpolicy=(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, "").replace(/^<a\b/i, '<a referrerpolicy="origin"')) : html;
 
   // 旧pages.devドメインはURL単位で独自ドメインへ301（SEO評価の分散防止）
   if (url.hostname === "iwata-monogatari.pages.dev") {
@@ -58,9 +61,12 @@ export async function onRequest(context) {
   }
 
   const withHostGuard = (res) => {
-    if (!isPreviewHost) return res;
     const guarded = new Response(res.body, res);
-    guarded.headers.set("X-Robots-Tag", "noindex");
+    guarded.headers.set("Referrer-Policy", searchContext ? "origin" : "same-origin");
+    if (url.pathname === "/data/search/manifest.json") guarded.headers.set("Cache-Control", "no-store");
+    else if (/^\/data\/search\/(?:metadata\.[a-f0-9]+\.json|grams\/\d+\.[a-f0-9]+\.json|bodies\/[a-f0-9]+\.json)$/.test(url.pathname)) guarded.headers.set("Cache-Control", "public, max-age=31536000, immutable");
+    if (/^\/assets\/js\/(?:article-search|search-core|search-worker|search-preferences|home-search)\.js$/.test(url.pathname)) guarded.headers.set("Cache-Control", "no-cache");
+    if (isPreviewHost || /^\/search\/?$/.test(url.pathname)) guarded.headers.set("X-Robots-Tag", "noindex");
     return guarded;
   };
 
@@ -91,15 +97,20 @@ export async function onRequest(context) {
   };
 
   return withHostGuard(new HTMLRewriter()
+    .on("a", {
+      element(el) {
+        if (searchContext) el.setAttribute("referrerpolicy", "origin");
+      },
+    })
     .on("header.gh-site", {
       element(el) {
-        el.setInnerContent(headerHtml, { html: true });
+        el.setInnerContent(protectLinks(headerHtml), { html: true });
       },
     })
     .on("footer.im-foot", {
       element(el) {
         placeReactions(el);
-        el.setInnerContent(footerHtml, { html: true });
+        el.setInnerContent(protectLinks(footerHtml), { html: true });
       },
     })
     .on("section.article-policy[data-common]", {

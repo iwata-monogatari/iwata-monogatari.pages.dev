@@ -133,3 +133,17 @@ body{ font-size:20px !important; }
     text-align: center;
   }
 }
+
+/* Article discovery: wrap all links, keep focus targets clear at 400% zoom. */
+:root{--reader-size:1.25rem}
+:root[data-text-size="large"]{--reader-size:1.375rem}
+:root[data-text-size="largest"]{--reader-size:1.5rem}
+body{font-size:var(--reader-size)!important}
+.gh-site{position:relative;overflow:visible}
+.gh-bar{flex-wrap:wrap;gap:.5rem 1.25rem}
+.gh-menu{flex-wrap:wrap;gap:.25rem .75rem;overflow:visible;white-space:normal}
+.gh-menu a{font-size:.9em;min-height:3rem;display:inline-flex;align-items:center;white-space:normal;padding:.4em .3em;text-decoration:underline}
+.gh-menu a:focus-visible{outline:3px solid #793b06;outline-offset:3px}
+.gh-sub{white-space:normal;overflow:visible;max-width:40rem;color:#284b60}
+.gh-search-return{font-weight:700;border:2px solid #225872;padding:.4em!important}
+@media(max-width:760px){.gh-menu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.2rem .5rem;width:100%;overflow:visible}.gh-menu a{font-size:.9em;padding:.4em}.gh-logo{white-space:normal}.gh-bar{padding:.7rem}}

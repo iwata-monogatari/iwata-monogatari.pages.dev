@@ -1,0 +1,75 @@
+磐田物語 Index・検索 修正版の編集・復旧手順（2026-10-05）
+
+対象正本
+GitHub: iwata-monogatari/iwata-monogatari.pages.dev
+作業開始および納品前の同期確認SHA: 89066bebe928c23856809ac5cf26ac2a66075e48
+本番の公開・mainへのpushはこの作業では行っていません。
+
+記事追加・修正
+1. 最新のclean mainで npm run check-live-sync を成功させます。他者の変更を破棄しません。
+2. 本文・出典・画像・権利・canonicalを確認し、data/pages.json の公開台帳へ登録します。
+   ブログは data/blog-posts.json も正本です。下書きは公開台帳にpublishedで登録しません。
+   published_at / updated_at は確認できる日付だけを記録し、推定日はdate_provisionalを保ちます。
+   新着用HTMLのiwata:published等と、台帳のURL・canonicalの整合も確認します。
+3. npm run build を実行します。新着6件・更新履歴・検索索引・59ページからなる静的一覧・全記事一覧の補完・公開記事数を同期します。
+   ページ数は記事数に従い変化します。記事追加による知識記事の一覧漏れも補完します。
+4. npm run search:check と npm run search:test を実行します。変更内容を見て、記事とURLに意図しない差分がないことを確認します。
+5. npm run release:stamp → npm run release:check → npm run guard の順に、新しいgenerationを作って検査します。
+   この候補へcheck-live-syncの本番一致を要求しません。公開は別途承認された経路で行います。
+   確認した本番設定はGit integration、build commandは python scripts/predeploy_guard.py です。
+
+索引の仕様
+scripts/build_search.py が公開台帳とブログ台帳だけを読んで生成します。
+canonical・確定301を統合し、下書き・非公開・archive・noindex・機能ページを除外します。
+検索用NFKC・かな統一は検索キーだけです。表示と原文を書き換えません。
+説明・見出し・キーワード・本文をAND検索します。1文字は題名・ID・確認済みentityに限定します。
+本文は128分割のbigram索引で候補を絞り、原文由来の全文で連続一致を確認します。
+頻度ヒントは候補の読込み順のためだけで、検索の正解を変更しません。
+最大20MBのworker内キャッシュ、本文の同時読込み6件、各取得15秒のtimeoutです。
+空検索は全件、新しい順に20件ずつ。未確認の日付は末尾になります。
+明示的な「・更新」新着台帳の更新日も使い、c056の2026-10-04訂正を新しい順へ反映します。
+manifestは最後に切替えます。生成済みの古いデータだけを削除し、非公開化した本文を古い索引に残しません。
+古いタブで取得に失敗した場合は0件にせず、再試行で最新manifestを取得します。
+metadata/本文/gramはhash付き、manifestはno-store。FunctionsでもこのHTTPヘッダーを設定します。
+
+読み・別名・分類の変更
+地区の読みはpages.jsonのdistricts[].kanaを根拠にしています。
+人物の追加はbuild_search.pyのdictionaryでentity、対応記事ID、根拠URL、確認者・日付・範囲を明記し、テストへ加えます。
+福田地区ふくでと福田半香の姓ふくだは別entityです。未確認の「半香」の全文読みは追加していません。
+現在は、既存14テーマハブ本文のリンクをフィルターへ対応させています。台帳の約150コードを推測して統合しません。
+テーマ未分類985件・地区未分類66件も全件検索と静的一覧に含めています。対応表で確認してから分類を補います。
+旧題名と旧IDは正本・redirect由来のものを保持します。異体字や同姓別人を根拠なく同一視しません。
+
+索引失敗
+npm run buildで再生成し、search:checkとguardを通します。manifestだけを手で更新しません。
+画面の「もう一度試す」と、全記事一覧・20件ずつの通常リンクは失敗時にも利用できます。
+D1の掲示板や反応データは検索データへ取り込みません。
+検索ページには解析scriptを追加せず、旧/?q経由も解析を抑止します。
+検索ページから出る参照元はoriginだけです。検索語はsessionStorage/URLに保存する必要範囲に限定します。
+サーバーのアクセスログ等にはURLのqueryが残り得ます。providerログの保存期間・閲覧権限は運営者確認が残っています。
+
+UIだけの前向き復旧
+担当者: 運営者ご本人。Cloudflare Pages Git連携と現在のD1を使用します。
+古いdeploymentの再選択、古いDBの上書き、guard無効化は行いません。
+1. 障害時の最新記事・assets・台帳・D1・設定を、指定C:と別媒体E:に再保存し、hashを照合します。
+   D1 exportに伴う短時間の停止は今回のバックアップについて許可済みです。事故時の停止範囲は再確認します。
+2. clean latest mainでcheck-live-syncを成功させます。
+3. python scripts/restore_search_home.py は読み取りだけの復旧計画です。
+   --apply はclean mainと同期成功を確認した上で、以前のトップ構成と現在の検索へ送るフォームを作ります。
+   最新の記事・資料・台帳・検索・DBは保持します。新着一覧と公開件数の更新は許容し、他のトップ変更が並行していれば上書きせず停止します。
+   旧手書きARTICLESは使いません。旧構成のフォームから現在の検索ページへ進む互換方式です。
+   復旧版トップの旧解析scriptは外し、検索URLからの第三者送信を防ぎます。
+4. 再生成→新generationのstamp→release:check→guardを実行し、復旧候補をレビューします。
+5. 承認済みのGit公開経路で公開し、配信完了後のclean mainでcheck-live-syncを実行します。
+   c056・新規記事・資料・共通4ブロック、特にD1 footerを確認します。実顧客への試験通知はしません。
+6. DBは現在の内容を維持します。事故時にDB全復元が必要なら、新規差分の再適用・衝突解決・明示承認を別途用意します。
+隔離リハーサルは追加記事1件・SQLite投稿1件を保持し、release:checkとguardに合格しました。
+Cloudflareの実配信切替は未実施です。旧deploymentの保持期限を保証せず、前向き復旧を使用します。
+バックアップは運営者が置換・削除を承認するまで保持します。無期限の復旧保証ではありません。
+
+公開前に残る判断
+guard:deployはclean/pushed mainを要求します。確認時はmain pushで自動productionが起動する設定です。
+したがって事前のstrict検査と公開開始の順序・権限を、運営者が自動公開の制御を含めて確定する必要があります。
+今回はmain pushもCloudflare設定変更も行っていません。通常guard合格を公開許可と同一視しません。
+NVDA、VoiceOver/Safari、実IME、実機の200/400%拡大、低速回線、実利用者6〜8人は未検証です。
+サイト全体・外部PDFのWCAG適合や実利用者のCore Web Vitalsを宣言しません。

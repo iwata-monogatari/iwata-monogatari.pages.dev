@@ -507,6 +507,9 @@ def main():
         if any(suspect in text for suspect in suspect_texts):
             return fail(f"mojibake-like question marks found in {relative_path}")
 
+    search_check = subprocess.run([sys.executable, str(ROOT / "scripts" / "build_search.py"), "--check"], cwd=ROOT)
+    if search_check.returncode != 0:
+        return fail("public search artifacts are stale; run npm run build")
     print("publish guard passed")
     return 0
 

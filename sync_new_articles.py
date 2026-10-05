@@ -12,7 +12,7 @@ INDEX_PATH = ROOT / "index.html"
 UPDATES_PATH = ROOT / "updates.html"
 BLOG_POSTS_PATH = ROOT / "data" / "blog-posts.json"
 
-INDEX_LIMIT = 22
+INDEX_LIMIT = 6
 UPDATES_STATIC_LIMIT = 60
 SITE_ORIGIN = "https://iwata-monogatari.net"
 # "blog" はHTML走査から除外する。ブログ記事は本文メタデータではなく、
@@ -24,7 +24,7 @@ SITE_ORIGIN = "https://iwata-monogatari.net"
 # data/new-articles-discovered.json が重複だらけになる（実測: 468件→944件、
 # うち468件が worktree 由来の重複）。.git/info/exclude では Git から隠せても
 # rglob は素通りするため、ここで明示的に止める。
-SKIP_DIRS = {".git", ".claude", "assets", "blog", "data", "docs", "functions", "images", "img", "saguchi", "work"}
+SKIP_DIRS = {".git", ".claude", "assets", "blog", "data", "docs", "functions", "search", "images", "img", "saguchi", "work"}
 SKIP_FILES = {
     "admin-bbs.html",
     "admin-reactions.html",

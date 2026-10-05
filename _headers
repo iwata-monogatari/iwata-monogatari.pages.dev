@@ -12,3 +12,18 @@
 
 /data/release-guard.json
   Cache-Control: no-store, no-cache, must-revalidate
+
+/*
+  Referrer-Policy: same-origin
+
+/data/search/manifest.json
+  Cache-Control: no-store, no-cache, must-revalidate
+
+/data/search/metadata.*.json
+  Cache-Control: public, max-age=31536000, immutable
+
+/data/search/grams/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/data/search/bodies/*
+  Cache-Control: public, max-age=31536000, immutable

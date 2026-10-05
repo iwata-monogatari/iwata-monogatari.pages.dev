@@ -1,0 +1,84 @@
+:root { --reader-size: 1.25rem; }
+:root[data-text-size="large"] { --reader-size: 1.375rem; }
+:root[data-text-size="largest"] { --reader-size: 1.5rem; }
+.search-page { margin: 0; color: #203947; background: #fffdf7; font-family: system-ui, sans-serif; line-height: 1.8; font-size: var(--reader-size); }
+.search-page *, .home-search *, .home-explore * { box-sizing: border-box; }
+.search-main { max-width: 62rem; margin: auto; padding: 1.25rem; overflow-wrap: anywhere; }
+.search-main h1 { font-size: 1.6em; line-height: 1.5; margin: 1.25em 0 .8em; }
+.search-main h2 { font-size: 1.3em; line-height: 1.5; scroll-margin-top: 1rem; }
+.search-main a, .home-search a, .home-explore a, .idx-list a { color: #194e70; text-decoration: underline; text-underline-offset: .18em; }
+.search-nav, .search-pagination, .text-size, #search-recovery { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; }
+.search-nav a, .search-pagination a { display: inline-flex; align-items: center; min-height: 3rem; padding: .4em .7em; border: 1px solid #4d7186; border-radius: .3rem; }
+.search-main button, .home-search button, .text-size button { font: inherit; line-height: 1.4; min-height: 3rem; padding: .6em 1em; border: 2px solid #285f7b; border-radius: .35rem; color: #19465f; background: #fff; cursor: pointer; overflow-wrap: anywhere; }
+.search-main button[type="submit"], .home-search button[type="submit"] { background: #225872; color: #fff; font-weight: 700; }
+button[aria-pressed="true"] { background: #225872; color: #fff; }
+.search-main :focus-visible, .home-search :focus-visible, .home-explore :focus-visible, .text-size :focus-visible { outline: .2rem solid #793b06; outline-offset: .25rem; }
+.skip-link { position: absolute; z-index: 100; top: .5rem; left: .5rem; transform: translateY(-250%); background: #fff; color: #173b51; padding: .75rem; }
+.skip-link:focus { transform: none; }
+#search-form, .home-search form { padding: 1em; background: #f1f6f8; border: 1px solid #7c919c; border-radius: .45rem; }
+#search-form label, .home-search label { display: block; font-weight: 700; }
+.query-row { display: flex; gap: .75rem; margin: .5rem 0; align-items: stretch; }
+.query-row input { flex: 1; width: 100%; min-width: 0; font: inherit; line-height: 1.5; padding: .65em; border: 2px solid #285f7b; border-radius: .3rem; background: #fff; }
+.filter-row { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; margin: 1.25rem 0 .75rem; }
+.filter-row select { display: block; width: 100%; min-width: 0; font: inherit; min-height: 3rem; padding: .6em .2em; background: #fff; color: #203947; border: 2px solid #587789; border-radius: .3rem; }
+.small, #search-hint, .search-meta, .search-reason { font-size: .9em; color: #385465; }
+.search-list { list-style: none; padding: 0; margin: 1.25rem 0; }
+.search-item { padding: 1.2em 0; border-bottom: 1px solid #91a6b1; }
+.search-item h3 { font-size: 1.1em; line-height: 1.6; margin: 0 0 .5em; font-family: inherit; }
+.search-item p { margin: .5em 0; }
+.search-item p:not(.search-meta):not(.search-reason) { max-width: 44em; }
+#search-results { margin-top: 1.75em; }
+#search-status { padding: .7em; border-left: .25rem solid #225872; background: #edf5f8; }
+#search-error { padding: 1em; border: 2px solid #9b3925; color: #6d2517; background: #fff4ee; }
+[hidden] { display: none !important; }
+.text-size { margin: 1rem 0; font-size: .9em; }
+.text-size button[aria-pressed="true"] { border-bottom-width: .35rem; font-weight: 700; }
+.home-search { max-width: 56rem; margin: 1.25rem auto 0; text-align: left; }
+.home-search h2 { font: 700 1.35em/1.6 system-ui, sans-serif; }
+.home-search .chips { justify-content: flex-start; }
+.home-search .chip { font-size: .9em; min-height: 3rem; padding: .5em .8em; }
+.home-search .text-size { justify-content: flex-end; }
+.home-explore { max-width: 62rem; margin: 1.5rem auto; padding: 0 1.25rem; }
+.home-explore h2 { font-size: 1.25em; }
+.home-explore .entry-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.home-explore .entry-card h3 { font-size: 1.1em; }
+.home-explore .entry-card p { font-size: .9em; }
+.home-explore .entry-card, .theme-hub-grid a, .district-card__cta-primary { min-height: 3rem; }
+.home-explore .theme-hub-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.home-explore .theme-hub-grid a { font-size: .9em; padding: 1em; }
+.home-explore .theme-hub-grid b { font-size: 1.1em; }
+.home-explore .theme-hub-grid span { font-size: .95em; }
+.home-explore .district-card__name { font-size: 1.1em; }
+.home-explore .district-card__cta-primary { font-size: .9em; white-space: normal; padding: .7em; }
+.home-explore .district-grid, .home-explore .catgrid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.home-explore .news-title, .home-explore .new-article-title { font-size: 1.1em; }
+.home-explore .news-date, .home-explore .news-tag { font-size: .9em; }
+.home-explore .news-link { align-items: flex-start; gap: .6em; }
+.home-explore .news-meta { flex-wrap: wrap; white-space: normal; }
+.home-explore .news-list { max-width: none; }
+.idx-list { grid-template-columns: 1fr !important; }
+.idx-list a { font-size: 1.1em !important; padding: .65em !important; line-height: 1.7 !important; }
+.idx-count, .idx-lead, .idx-jump a { font-size: .95em !important; }
+.idx-jump a { min-height: 3rem; padding: .5em; }
+@media (max-width: 48rem) {
+  .filter-row { grid-template-columns: 1fr; }
+  .home-explore .entry-grid, .home-explore .theme-hub-grid, .home-explore .district-grid, .home-explore .catgrid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 30rem) {
+  .query-row { flex-direction: column; }
+  .search-main { padding: 1rem; }
+  .home-explore .entry-grid, .home-explore .theme-hub-grid, .home-explore .district-grid, .home-explore .catgrid { grid-template-columns: 1fr; }
+  .search-pagination a { flex: 1 1 100%; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto !important; } * { transition: none !important; animation: none !important; } }
+
+/* Secondary home sections follow the selected reading size, too. */
+.home-index p, .home-index .c p, .home-index .lead-sm, .home-index .feat-main p, .home-index .subcard p, .home-index .gallery-card__caption { font-size:1em; }
+.home-index .side-block h3, .home-index .subcard h4, .home-index .c h3 { font-size:1.1em; }
+.home-index .eyebrow, .home-index .tagk, .home-index .c .k, .home-index .side-list a, .home-index .tilemeta, .home-index .note, .home-index .pop-lead { font-size:.9em; }
+.home-index .cols { grid-template-columns: 1fr; max-width:62rem; margin:auto; }
+.home-index .cols > * { grid-column:1; }
+.home-index .catgrid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.home-index .c h3, .home-index .side-list a { text-decoration:underline; text-underline-offset:.15em; }
+@media(max-width:48rem){.home-index .catgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:30rem){.home-index .catgrid{grid-template-columns:1fr}}
