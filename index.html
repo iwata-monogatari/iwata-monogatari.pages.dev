@@ -539,6 +539,13 @@ img{max-width:100%;display:block;}
 <link rel="stylesheet" href="/assets/css/article-search.css">
 <style>.home-index .searchhero .hero-subtitle,.home-index .searchhero .hero-lead{font-size:1em}.home-index .searchhero .inner{padding:1.5rem 1.25rem}.home-index .hero-stat{font-size:.9em!important}.cols>.home-feature-main{min-width:0}.home-index .fh-referral{margin:2rem auto;max-width:62rem}.home-index .popular-section{max-width:62rem}.home-index .popular-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-index .popular-grid a{font-size:1em;line-height:1.7}@media(max-width:40rem){.home-index .popular-grid{grid-template-columns:1fr}}</style>
 </head>
+<style>
+/* Keep the lower home sections in one full-width reading flow. */
+.home-index #portal {padding-top:12px;}
+.home-index #portal .cols {grid-template-columns:minmax(0,1fr);gap:24px;}
+.home-index #portal .cols > * {grid-column:1;min-width:0;}
+.home-index #portal .home-feature-main > .section {margin:0;}
+</style>
 <body class="home-index"><a class="skip-link" href="#home-main">本文へ移動</a>
 
 <header class="gh-site">
@@ -856,6 +863,51 @@ img{max-width:100%;display:block;}
 
 <div class="portal" id="portal">
   <div class="cols">
+    <div class="home-feature-main">
+      <section class="section">
+        <p class="eyebrow">FEATURE ｜ 磐田の記憶を深く読む</p>
+        <h2 class="sectitle">特集で読む磐田物語</h2>
+        <style>
+          .feature-list-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:14px;}
+          .feature-list-card{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 22px;box-shadow:var(--shadow);text-decoration:none;color:var(--ink);transition:.2s;}
+          .feature-list-card:hover{transform:translateY(-2px);border-color:var(--brown);}
+          .feature-list-card .tagk{font-size:11px;letter-spacing:.1em;color:var(--brown);font-weight:700;}
+          .feature-list-card h3{font-family:"Shippori Mincho",serif;font-size:18px;margin:7px 0 8px;line-height:1.5;}
+          .feature-list-card p{font-size:13px;color:var(--ink-soft);margin:0;line-height:1.75;}
+          .feature-list-more{text-align:right;margin:14px 0 0;}
+          .feature-list-more a{font-size:13px;font-weight:700;color:var(--brown-deep);}
+          @media(max-width:680px){.feature-list-grid{grid-template-columns:1fr;}}
+        </style>
+        <div class="feature-list-grid">
+          <a class="feature-list-card" href="/c037">
+            <div class="tagk">SPECIAL｜遠州の文人画をたどる</div>
+            <h3>遠州画人伝を読む</h3>
+            <p>福田半香を中心に、見付・掛川・浜松・田原・江戸を結ぶ遠州文人画の世界を読む特集。</p>
+          </a>
+          <a class="feature-list-card" href="/c027">
+            <div class="tagk">SPECIAL｜磐田の風景が映画に残る</div>
+            <h3>磐田の風景が、映画になった。</h3>
+            <p>映画『お別れの歌』に残された、今の磐田の記憶。まちの姿を未来へ残す記録でもあります。</p>
+          </a>
+          <a class="feature-list-card" href="/h001">
+            <div class="tagk">戦争・平和・学術特集／全10ページ</div>
+            <h3>二十一世紀に伝えたい戦争体験</h3>
+            <p>磐田市民39人の記憶。空襲、学徒動員、出征、終戦、そして記憶の継承までをたどります。</p>
+          </a>
+          <a class="feature-list-card" href="/c017">
+            <div class="tagk">まちの成り立ち／全11回連載</div>
+            <h3>二つの中心がつくった磐田</h3>
+            <p>見付と中泉。二つの中心が重なりながら、旧磐田市、そして現在の磐田市へまとまっていく歩み。</p>
+          </a>
+        </div>
+        <p class="feature-list-more"><a href="/tokushu">特集一覧をすべて見る →</a></p>
+      </section>
+
+      
+
+      
+    </div>
+
     <aside id="area">
       <div class="side-row">
       <!-- 全記事一覧ボタン -->
@@ -988,51 +1040,6 @@ img{max-width:100%;display:block;}
     </aside>
 
     
-
-    <div class="home-feature-main">
-      <section class="section">
-        <p class="eyebrow">FEATURE ｜ 磐田の記憶を深く読む</p>
-        <h2 class="sectitle">特集で読む磐田物語</h2>
-        <style>
-          .feature-list-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:14px;}
-          .feature-list-card{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 22px;box-shadow:var(--shadow);text-decoration:none;color:var(--ink);transition:.2s;}
-          .feature-list-card:hover{transform:translateY(-2px);border-color:var(--brown);}
-          .feature-list-card .tagk{font-size:11px;letter-spacing:.1em;color:var(--brown);font-weight:700;}
-          .feature-list-card h3{font-family:"Shippori Mincho",serif;font-size:18px;margin:7px 0 8px;line-height:1.5;}
-          .feature-list-card p{font-size:13px;color:var(--ink-soft);margin:0;line-height:1.75;}
-          .feature-list-more{text-align:right;margin:14px 0 0;}
-          .feature-list-more a{font-size:13px;font-weight:700;color:var(--brown-deep);}
-          @media(max-width:680px){.feature-list-grid{grid-template-columns:1fr;}}
-        </style>
-        <div class="feature-list-grid">
-          <a class="feature-list-card" href="/c037">
-            <div class="tagk">SPECIAL｜遠州の文人画をたどる</div>
-            <h3>遠州画人伝を読む</h3>
-            <p>福田半香を中心に、見付・掛川・浜松・田原・江戸を結ぶ遠州文人画の世界を読む特集。</p>
-          </a>
-          <a class="feature-list-card" href="/c027">
-            <div class="tagk">SPECIAL｜磐田の風景が映画に残る</div>
-            <h3>磐田の風景が、映画になった。</h3>
-            <p>映画『お別れの歌』に残された、今の磐田の記憶。まちの姿を未来へ残す記録でもあります。</p>
-          </a>
-          <a class="feature-list-card" href="/h001">
-            <div class="tagk">戦争・平和・学術特集／全10ページ</div>
-            <h3>二十一世紀に伝えたい戦争体験</h3>
-            <p>磐田市民39人の記憶。空襲、学徒動員、出征、終戦、そして記憶の継承までをたどります。</p>
-          </a>
-          <a class="feature-list-card" href="/c017">
-            <div class="tagk">まちの成り立ち／全11回連載</div>
-            <h3>二つの中心がつくった磐田</h3>
-            <p>見付と中泉。二つの中心が重なりながら、旧磐田市、そして現在の磐田市へまとまっていく歩み。</p>
-          </a>
-        </div>
-        <p class="feature-list-more"><a href="/tokushu">特集一覧をすべて見る →</a></p>
-      </section>
-
-      
-
-      
-    </div>
 
     <aside>
       <section class="festival-feature" aria-label="特集 磐田の祭り">
