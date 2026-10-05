@@ -510,6 +510,9 @@ def main():
     search_check = subprocess.run([sys.executable, str(ROOT / "scripts" / "build_search.py"), "--check"], cwd=ROOT)
     if search_check.returncode != 0:
         return fail("public search artifacts are stale; run npm run build")
+    saguchi_check = subprocess.run([sys.executable, str(ROOT / "scripts" / "build_saguchi_related.py"), "--check"], cwd=ROOT)
+    if saguchi_check.returncode != 0:
+        return fail("Saguchi related reading is stale; run npm run build")
     print("publish guard passed")
     return 0
 

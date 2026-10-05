@@ -73,18 +73,30 @@
   .badge{display:inline-block;font-size:10.5px;background:#eef0ea;color:var(--matsu);border-radius:3px;padding:1px 7px;font-weight:700;}
   .no-result{text-align:center;color:var(--usuzumi);padding:40px 0;}
   .catalog-anchor-targets{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
-  /* lightbox */
-  .lb{position:fixed;inset:0;background:rgba(30,28,24,.92);display:none;align-items:center;justify-content:center;z-index:100;padding:24px;}
-  .lb.open{display:flex;}
-  .lb-inner{max-width:1000px;max-height:92vh;text-align:center;}
-  .lb-inner img{max-width:100%;max-height:74vh;border-radius:4px;box-shadow:0 8px 40px rgba(0,0,0,.5);}
-  .lb-cap{color:#eef6fb;font-size:14px;margin-top:16px;line-height:1.7;}
-  .lb-cap .lb-name{font-family:"Shippori Mincho",serif;font-size:17px;color:#fff;display:block;margin-bottom:4px;}
-  .lb-cap .lb-own{font-size:12px;color:#c7bfae;margin-top:8px;}
-  .lb-close{position:fixed;top:18px;right:24px;color:#fff;font-size:34px;cursor:pointer;line-height:1;background:none;border:none;}
-  .lb-nav{position:fixed;top:50%;transform:translateY(-50%);color:#fff;font-size:40px;cursor:pointer;background:none;border:none;padding:10px 18px;opacity:.7;}
-  .lb-nav:hover{opacity:1;}
-  .lb-prev{left:10px;} .lb-next{right:10px;}
+  /* Material viewer: image, catalogue information and related reading. */
+  .lb{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;border:0;padding:54px;background:rgba(30,28,24,.92);color:var(--sumi);display:none;box-sizing:border-box;}
+  .lb[open]{display:flex;align-items:center;justify-content:center;}
+  .lb::backdrop{background:rgba(30,28,24,.8);}
+  .lb-inner{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,1fr);gap:24px;max-width:1080px;width:100%;max-height:100%;overflow:auto;overscroll-behavior:contain;background:#fffdf7;border-radius:10px;padding:20px;box-sizing:border-box;text-align:left;}
+  .lb-visual{min-width:0;text-align:center;align-self:center;}
+  .lb-inner img{max-width:100%;max-height:65vh;object-fit:contain;display:block;margin:auto;}
+  .lb-full-image{display:inline-block;min-height:44px;padding:8px 0;font-size:14px;color:#194e70;text-decoration:underline;}
+  .lb-details{min-width:0;}
+  .lb-cap{font-size:14px;line-height:1.7;}
+  .lb-cap .lb-name{font-family:"Shippori Mincho",serif;font-size:20px;color:#22303a;display:block;margin:0 0 8px;line-height:1.5;overflow-wrap:anywhere;}
+  .lb-cap .lb-own{display:block;font-size:12px;color:#53616a;margin-top:8px;}
+  .lb-related{margin-top:20px;border-top:1px solid #cad9dd;padding-top:14px;}
+  .lb-related h2{font-size:18px;margin:0 0 4px;color:#22303a;}
+  .lb-related p{font-size:13px;line-height:1.6;margin:0 0 8px;color:#53616a;}
+  .lb-related ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .lb-related a{display:block;padding:10px 12px;min-height:44px;box-sizing:border-box;border:1px solid #b9cbd0;border-radius:6px;background:#eef6f8;color:#194e70;text-decoration:underline;font-size:16px;line-height:1.6;overflow-wrap:anywhere;}
+  .lb button{min-width:44px;min-height:44px;cursor:pointer;color:#fff;border:0;border-radius:6px;background:#1f4f6f;}
+  .lb-close{position:absolute;top:6px;right:12px;font-size:28px;line-height:1;}
+  .lb-nav{position:absolute;top:50%;transform:translateY(-50%);font-size:32px;line-height:1;}
+  .lb-prev{left:4px;}.lb-next{right:4px;}
+  .lb :focus-visible,.card .thumb:focus-visible{outline:3px solid #ac580a;outline-offset:3px;}
+  .card button.thumb{width:100%;padding:0;border:0;font:inherit;}
+  @media(max-width:680px){.lb{padding:56px 10px 10px;}.lb-inner{display:block;padding:14px;}.lb-inner img{max-height:30vh;}.lb-close{right:10px;}.lb-nav{top:6px;transform:none;font-size:26px;}.lb-prev{left:10px;}.lb-next{left:62px;right:auto;}.lb-cap .lb-name{font-size:18px;}.lb-related{margin-top:14px;}}
   .sourcebox{background:#eef6fb;border:1px solid var(--waku);border-radius:4px;padding:20px 24px;margin:10px 0 30px;font-size:14px;color:#3a4750;}
   .sourcebox h3{font-family:"Shippori Mincho",serif;font-size:16px;color:var(--matsu);margin:0 0 10px;}
   .sourcebox .disclaimer{font-size:13px;color:var(--usuzumi);line-height:1.75;}
@@ -319,21 +331,26 @@
 </main>
 
 <!-- lightbox -->
-<div class="lb" id="lb">
-  <button class="lb-close" id="lbClose" aria-label="閉じる">×</button>
-  <button class="lb-nav lb-prev" id="lbPrev" aria-label="前へ">‹</button>
-  <button class="lb-nav lb-next" id="lbNext" aria-label="次へ">›</button>
+<dialog class="lb" id="lb" aria-labelledby="lbName">
+  <button type="button" class="lb-close" id="lbClose" aria-label="閉じる">×</button>
+  <button type="button" class="lb-nav lb-prev" id="lbPrev" aria-label="前の資料">‹</button>
+  <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="次の資料">›</button>
   <div class="lb-inner">
-    <img id="lbImg" src="" alt="">
-    <div class="lb-cap">
-      <span class="lb-name" id="lbName"></span>
-      <span id="lbMeta"></span>
-      <span class="lb-own" id="lbOwn"></span>
+    <div class="lb-visual"><img id="lbImg" src="" alt=""><a class="lb-full-image" id="lbFullImage" href="#" target="_blank" rel="noopener">画像を大きく見る（別タブ）</a></div>
+    <div class="lb-details">
+      <div class="lb-cap">
+        <h2 class="lb-name" id="lbName"></h2>
+        <span id="lbMeta"></span>
+        <span class="lb-own" id="lbOwn"></span>
+      </div>
+      <section class="lb-related" aria-labelledby="lbRelatedTitle">
+        <h2 id="lbRelatedTitle">この資料に関連する記事</h2>
+        <p>資料の題材・地域・種類に関連する読みものです。</p>
+        <ul id="lbRelated"></ul>
+      </section>
     </div>
   </div>
-</div>
-
-
+</dialog>
 
 <script>
 // 種別の表示順（データに無い種別は自動で末尾に追加される）
@@ -350,10 +367,10 @@ fetch('data/saguchi-shiryo.json').then(r=>r.json()).then(d=>{
 
 // 個別アイテムへのディープリンク（例: ...catalog.html#hk-3 でその史料を開く）
 function openFromHash(){
-  var id=decodeURIComponent((location.hash||'').replace('#','')).trim();
+  var id;try{id=decodeURIComponent((location.hash||'').replace('#','')).trim();}catch(e){return;}
   if(!id) return;
-  var idx=view.findIndex(function(it){return it.id===id;});
-  if(idx>=0){ openLB(idx); }
+  var item=ITEMS.find(function(it){return it.id===id&&it.img;});
+  if(item){ openMaterial(item,ITEMS); }
 }
 window.addEventListener('hashchange', openFromHash);
 
@@ -441,7 +458,7 @@ function render(){
   noRes.hidden=view.length>0;
   grid.innerHTML=view.map((i,idx)=>{
     const thumb=i.img
-      ? `<div class="thumb" data-idx="${idx}"><img src="${i.img}" alt="${esc(i.name)}" loading="lazy"></div>`
+      ? `<button type="button" class="thumb" data-idx="${idx}" aria-label="${esc(i.name)}：画像と関連記事を開く"><img src="${i.img}" alt="${esc(i.name)}" loading="lazy"></button>`
       : `<div class="thumb"><span class="noimg">画像準備中</span></div>`;
     const meta=[i.era,i.size].filter(Boolean).map(esc).join('　');
     const pub=i.pub?`<div class="meta">${esc(i.pub)}</div>`:'';
@@ -458,24 +475,58 @@ function render(){
 q.addEventListener('input',()=>{kw=q.value.trim().toLowerCase(); qClear.hidden=!q.value; render();});
 qClear.onclick=()=>{q.value='';kw='';qClear.hidden=true;render();q.focus();};
 
-// lightbox
+// Material-specific related reading is independent of image loading.
+let relatedData=null;
+const fallbackArticles=[{url:'/c020',title:'佐口行正氏所蔵史料 本編'},{url:'/c131',title:'磐田市の古写真・古地図 ── 昔の磐田を見る'}];
+fetch('/data/saguchi-related.json').then(r=>{if(!r.ok)throw new Error('related');return r.json();}).then(d=>{
+  relatedData=d;if(lb.open)renderRelated(lbList[lbi]);
+}).catch(()=>{});
+function renderRelated(item){
+  const ids=relatedData&&relatedData.items&&relatedData.items[item.id];
+  const links=ids?ids.map(id=>relatedData.articles[id]).filter(Boolean):fallbackArticles;
+  const list=document.getElementById('lbRelated');list.replaceChildren();
+  (links.length?links:fallbackArticles).forEach(article=>{
+    if(!/^\/(?!\/)/.test(article.url))return;
+    const li=document.createElement('li'),a=document.createElement('a');
+    a.href=article.url;a.textContent=article.title;li.appendChild(a);list.appendChild(li);
+  });
+}
+// Native dialog keeps keyboard focus inside the image and reading panel.
 const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),
       lbName=document.getElementById('lbName'),lbMeta=document.getElementById('lbMeta'),
-      lbOwn=document.getElementById('lbOwn'); let lbi=0, lbList=[];
-function openLB(idx){
-  lbList=view.filter(it=>it.img); lbi=lbList.findIndex(it=>it===view[idx]); if(lbi<0)lbi=0; showLB(); lb.classList.add('open'); }
-function showLB(){ const i=lbList[lbi]; if(!i)return; lbImg.src=i.img; lbImg.alt=i.name;
+      lbOwn=document.getElementById('lbOwn');
+let lbi=0,lbList=[],previousOverflow='';
+function openLB(idx){openMaterial(view[idx],view);}
+function openMaterial(item,items){
+  if(!item||!item.img)return;
+  lbList=items.filter(it=>it.img);lbi=lbList.findIndex(it=>it.id===item.id);
+  if(lbi<0)return;
+  showLB();
+  if(!lb.open){previousOverflow=document.body.style.overflow;document.body.style.overflow='hidden';lb.showModal();}
+}
+function showLB(){
+  const i=lbList[lbi];if(!i)return;
+  lbImg.src=i.img;lbImg.alt=i.name;document.getElementById('lbFullImage').href=i.img;
   lbName.textContent='No.'+i.no+'　'+i.name;
   lbMeta.textContent=[i.cat,(i.grp&&i.grp!==i.cat?i.grp:''),i.pub,i.era,i.size].filter(Boolean).join('　／　');
-  lbOwn.textContent='所蔵：佐口行正氏（掲載許可済み）／無断転載・二次利用を禁じます'; }
-document.getElementById('lbClose').onclick=()=>lb.classList.remove('open');
-document.getElementById('lbPrev').onclick=e=>{e.stopPropagation();lbi=(lbi-1+lbList.length)%lbList.length;showLB();};
-document.getElementById('lbNext').onclick=e=>{e.stopPropagation();lbi=(lbi+1)%lbList.length;showLB();};
-lb.onclick=e=>{if(e.target===lb)lb.classList.remove('open');};
-document.addEventListener('keydown',e=>{ if(!lb.classList.contains('open'))return;
-  if(e.key==='Escape')lb.classList.remove('open');
-  if(e.key==='ArrowLeft')document.getElementById('lbPrev').click();
-  if(e.key==='ArrowRight')document.getElementById('lbNext').click(); });
+  lbOwn.textContent='所蔵：佐口行正氏（掲載許可済み）／無断転載・二次利用を禁じます';
+  renderRelated(i);document.querySelector('.lb-inner').scrollTop=0;
+  // Preserve the selected material when returning from a related article.
+  history.replaceState(history.state,'',location.pathname+location.search+'#'+encodeURIComponent(i.id));
+}
+function closeLB(){
+  lb.close();document.body.style.overflow=previousOverflow;
+  history.replaceState(history.state,'',location.pathname+location.search);
+}
+document.getElementById('lbClose').onclick=closeLB;
+document.getElementById('lbPrev').onclick=()=>{lbi=(lbi-1+lbList.length)%lbList.length;showLB();};
+document.getElementById('lbNext').onclick=()=>{lbi=(lbi+1)%lbList.length;showLB();};
+lb.addEventListener('cancel',e=>{e.preventDefault();closeLB();});
+lb.addEventListener('click',e=>{if(e.target===lb)closeLB();});
+lb.addEventListener('keydown',e=>{
+  if(e.key==='ArrowLeft'){e.preventDefault();document.getElementById('lbPrev').click();}
+  if(e.key==='ArrowRight'){e.preventDefault();document.getElementById('lbNext').click();}
+});
 </script>
 <section class="article-policy" data-common></section>
 
