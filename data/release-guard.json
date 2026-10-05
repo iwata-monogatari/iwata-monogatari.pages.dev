@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1791160430,
-  "generation": 20261005093350,
-  "git_commit_at_stamp": "750a36f9de703b0e51d5b3593744f338db8c97c4",
+  "generated_at_unix": 1791163733,
+  "generation": 20261005102853,
+  "git_commit_at_stamp": "c83db276439cd9e9109aeba3a240813de1f5aeb3",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,15 +35,15 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "64a05dba75ae6fb0576897a7fb8a1c9be2934231c268dab4ad72b63d883828b1"
+      "sha256": "c5ce348bdda12c6e79c664bd19b0d3daba48ad8c9f256a416f02f4fd58f3136d"
     },
     {
       "path": "data/pages.json",
-      "sha256": "2c037a8035adcbefac8bf0c1cc51b21808074a34bdf7c0a8a47e88f154d95324"
+      "sha256": "5303ccc388490c440d4032c426f6f93217a0a5569b20ee044419000fd03085af"
     },
     {
       "path": "index.html",
-      "sha256": "2524d9de8d13b4ae4dcb70399939f86e0556970a4fc55435df45c559d4109308"
+      "sha256": "2894c2678105a35e8d089f18bb54b654e5e9103d53321d8f599b98cc0494d8c1"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "45c6e14c24cdbd56ee59b73687f63f1bf63dae60441b27d2781d82c0e9dceace"
+      "sha256": "b23baccf60e1459a5432e18d7b01230fac56dc44b8c138c0851458c5a15f39fc"
     },
     {
       "path": "updates.html",
-      "sha256": "210101e65489fac500b73711c83ae137ae45259e092b6def40a015daba32e93f"
+      "sha256": "648830c284019b146c87eeb11eba6a9992ddaaebf27e257a9129208ee6d08065"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "b638c765e87199b26de9d2d59028cd2dd61dde72743ada8def7cce7f89d021ca",
+      "content_sha256": "e0233726f58c796d9365dba9bf9351ee73ef0e018668632037d028b8a3aacd28",
       "path": "index.html",
-      "sha256": "2524d9de8d13b4ae4dcb70399939f86e0556970a4fc55435df45c559d4109308",
+      "sha256": "2894c2678105a35e8d089f18bb54b654e5e9103d53321d8f599b98cc0494d8c1",
       "url": "/"
     },
     {
-      "content_sha256": "51770ca93985b8c003d26b3dc405e89f6a4a09c0513bf8dc3a786b2024da421c",
+      "content_sha256": "e3cb90ac52cfbc5959bd7655de9d1d2058ecb13d6c60a6026ee756c774f1eefb",
       "path": "updates.html",
-      "sha256": "210101e65489fac500b73711c83ae137ae45259e092b6def40a015daba32e93f",
+      "sha256": "648830c284019b146c87eeb11eba6a9992ddaaebf27e257a9129208ee6d08065",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "8cb5b02b3d795b3a14f7cacf9d878dc7cc0682f56a6b6d12036cf30b0879933c",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "afc701bdd94ca0d5bea8de314d43d38fcffd6d12922811f91c5856372ac24b9e",
+      "path": "blog/20261005-iwata-history-source-notes/index.html",
+      "sha256": "69c92da695fc85735a3bc1830ef4ae3bce85e40a1699eb8d54959be828483ed5",
+      "url": "/blog/20261005-iwata-history-source-notes"
     },
     {
       "content_sha256": "9e0b5df0c7f7146e40566b58197c27ae7dcdbaf19bda56ff19efedefa06c78fa",
@@ -856,23 +862,17 @@
       "path": "c161.html",
       "sha256": "e591dcd149e576add1d1279d1e5a54289bb66c3f02a0984e4103150519cf75ec",
       "url": "/c161.html"
-    },
-    {
-      "content_sha256": "d5382a549bf9c337990ade05485b19e08013d9429cf3419fc1729a0cf713006a",
-      "path": "c162.html",
-      "sha256": "05fd941d225e33238cca486db47505f4872f601d5c614d73b51436fa4f86af9d",
-      "url": "/c162.html"
     }
   ],
   "schema": 1,
-  "state_hash": "3515852d0c9841e0f08761de36a5f58bd48a71ab55ea333a84ce342e8bd9bfcc",
+  "state_hash": "68f5cf5a67e6fa399e3889f3e897b569ba013bea8b4804fda2879725eea2c7c0",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1220,
-    "new_articles_sha256": "64a05dba75ae6fb0576897a7fb8a1c9be2934231c268dab4ad72b63d883828b1",
-    "pages_sha256": "2c037a8035adcbefac8bf0c1cc51b21808074a34bdf7c0a8a47e88f154d95324",
-    "pages_total": 1149,
-    "published_pages": 1148
+    "new_articles": 1221,
+    "new_articles_sha256": "c5ce348bdda12c6e79c664bd19b0d3daba48ad8c9f256a416f02f4fd58f3136d",
+    "pages_sha256": "5303ccc388490c440d4032c426f6f93217a0a5569b20ee044419000fd03085af",
+    "pages_total": 1150,
+    "published_pages": 1149
   }
 }
