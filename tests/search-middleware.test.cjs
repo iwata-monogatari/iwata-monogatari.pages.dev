@@ -16,6 +16,7 @@ global.HTMLRewriter=class{constructor(){hooks=new Map()}on(selector,hook){hooks.
  assert.match((await request('/data/search/bodies/abcd.json','application/json')).headers.get('Cache-Control'),/immutable/);
  assert.equal((await request('/assets/js/search-worker.js','text/javascript')).headers.get('Cache-Control'),'no-store');
  assert.equal((await request('/assets/css/article-search.css','text/css')).headers.get('Cache-Control'),'no-store');
+ await request('/guide/');assert.equal(beforeCount,0);
  const article=await request('/c056');assert.equal(beforeCount,1);assert.equal(article.headers.get('Referrer-Policy'),'same-origin');
  assert.equal((await request('/','text/html','abc.iwata-monogatari.pages.dev')).headers.get('X-Robots-Tag'),'noindex');
  const redirect=await request('/c056','text/html','iwata-monogatari.pages.dev');assert.equal(redirect.status,301);assert.equal(redirect.headers.get('Location'),'https://iwata-monogatari.net/c056');

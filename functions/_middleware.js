@@ -33,7 +33,7 @@ async function fetchFooterHtml(context) {
 const CANONICAL_HOST = "iwata-monogatari.net";
 
 // 反応ボタンを出さないページ（トップ・一覧・掲示板・管理画面など）
-const NO_REACTION_PATHS = new Set(["/", "/index", "/bbs", "/c034", "/404", "/updates", "/blog"]);
+const NO_REACTION_PATHS = new Set(["/", "/index", "/bbs", "/c034", "/404", "/updates", "/blog", "/guide"]);
 function wantsReactions(pathname) {
   const p = pathname.replace(/\/index\.html$/, "/").replace(/\.html$/, "").replace(/(.)\/+$/, "$1");
   return !NO_REACTION_PATHS.has(p) && !p.startsWith("/admin") && p !== "/search" && !p.startsWith("/search/");
