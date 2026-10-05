@@ -30,7 +30,7 @@ canonical・確定301を統合し、下書き・非公開・archive・noindex・
 明示的な「・更新」新着台帳の更新日も使い、c056の2026-10-04訂正を新しい順へ反映します。
 manifestは最後に切替えます。生成済みの古いデータだけを削除し、非公開化した本文を古い索引に残しません。
 古いタブで取得に失敗した場合は0件にせず、再試行で最新manifestを取得します。
-metadata/本文/gramはhash付き、manifestはno-store。FunctionsでもこのHTTPヘッダーを設定します。
+metadata/本文/gramはhash付き、manifestはno-store。検索JSと共通ヘッダー・検索CSSはno-store。Functionsと静的_headers双方に指定し、独自ドメインでも配信確認します。
 
 読み・別名・分類の変更
 地区の読みはpages.jsonのdistricts[].kanaを根拠にしています。

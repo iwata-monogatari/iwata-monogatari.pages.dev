@@ -65,7 +65,7 @@ export async function onRequest(context) {
     guarded.headers.set("Referrer-Policy", searchContext ? "origin" : "same-origin");
     if (url.pathname === "/data/search/manifest.json") guarded.headers.set("Cache-Control", "no-store");
     else if (/^\/data\/search\/(?:metadata\.[a-f0-9]+\.json|grams\/\d+\.[a-f0-9]+\.json|bodies\/[a-f0-9]+\.json)$/.test(url.pathname)) guarded.headers.set("Cache-Control", "public, max-age=31536000, immutable");
-    if (/^\/assets\/js\/(?:article-search|search-core|search-worker|search-preferences|home-search)\.js$/.test(url.pathname)) guarded.headers.set("Cache-Control", "no-cache");
+    if (/^\/assets\/js\/(?:article-search|search-core|search-worker|search-preferences|home-search)\.js$/.test(url.pathname) || /^\/assets\/css\/(?:article-search|site-header)\.css$/.test(url.pathname)) guarded.headers.set("Cache-Control", "no-store");
     if (isPreviewHost || /^\/search\/?$/.test(url.pathname)) guarded.headers.set("X-Robots-Tag", "noindex");
     return guarded;
   };
