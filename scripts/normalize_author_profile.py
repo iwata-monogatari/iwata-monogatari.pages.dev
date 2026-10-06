@@ -32,7 +32,7 @@ AUTHOR_BOX_BODY = (
     '<span class="author-role">磐田市／富士ヶ丘サービス株式会社 代表</span></p>'
     "<p>磐田市で不動産・介護事業を営みながら、地域の歴史・地名・寺社・暮らしの記録を調べています。"
     "磐田物語では、公開資料と現地情報を確認しながら、地域の記憶をWeb上に残しています。</p>"
-    f'<p class="author-profile"><a href="{PROFILE_URL}">プロフィールを見る</a></p>'
+    f'<p class="author-profile"><a href="{PROFILE_URL}" rel="author">プロフィールを見る</a></p>'
     "</div>"
 )
 DEFAULT_IMG = '<img alt="大石浩之" height="84" loading="lazy" src="/author-oishi.jpg" width="84"/>'
@@ -82,6 +82,8 @@ def clean_person(node):
 def fix_ld(html):
     def repl(m):
         head, block, tail = m.groups()
+        if 'id="site-identity"' in head:  # add_site_identity.py の共通ノードは正本定義なので触らない
+            return m.group(0)
         new = fix_author_values(block)
         data = json.loads(new)
         if clean_person(data):
