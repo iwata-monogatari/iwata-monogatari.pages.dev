@@ -23,6 +23,11 @@
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
     :root{--district-color:#3a5874;--district-soft:#eaf0f4;--district-line:#cbd8e2;}
+    /* c055 prose follows the existing reader-size preference. */
+    .academic-article > .article-header > p.lead,
+    .academic-article > section > p:not(.section-label):not(.note){
+      font-size:var(--reader-size,1.25rem);
+    }
     .feature-nav{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 8px;}
     .feature-nav a{display:inline-flex;align-items:center;font-size:13.5px;font-weight:700;color:var(--matsu);padding:8px 14px;border:1px solid var(--waku);border-radius:6px;background:#fff;}
     .feature-nav a:hover{background:var(--district-soft);text-decoration:none;}
