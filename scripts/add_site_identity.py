@@ -92,6 +92,7 @@ GRAPH = {
                 "https://www.facebook.com/realestatefujigaokaservice/",
                 "https://www.homes.co.jp/realtor/mid-144301hQA24Pw1v0pM/",
                 "https://iqrafudosan.com/companies/7405",
+                "https://share.google/JvfsXQE82HymM6k8k",
             ],
         },
         {
@@ -105,6 +106,7 @@ GRAPH = {
             "sameAs": [
                 "https://oishi-hiroyuki.org/",
                 "https://oishi-hiroyuki.org/profile",
+                "https://www.instagram.com/hiroyuki.oishi.fujigaoka/",
             ],
         },
     ],
