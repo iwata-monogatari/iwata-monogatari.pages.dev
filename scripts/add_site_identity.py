@@ -68,6 +68,7 @@ GRAPH = {
             "name": "富士ヶ丘サービス株式会社",
             "alternateName": ["ふじがおか", "ATAWI FUDOSAN"],
             "url": "https://www.fujigaoka-service.co.jp/",
+            "logo": "https://fudosan.atawi.link/assets/logo-fujigaoka-service.jpg",
             "description": "磐田市・袋井市で、介護・相続・空き家に特化した不動産売却支援。2011年創業の介護事業者が2018年から不動産仲介を行う。",
             "foundingDate": "2011-03",
             "founder": {"@id": PERSON_ID},
