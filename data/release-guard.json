@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1791250743,
-  "generation": 20261006103903,
-  "git_commit_at_stamp": "aa779bcfb24c69a49d03eee9ab165967226c1798",
+  "generated_at_unix": 1791269050,
+  "generation": 20261006154410,
+  "git_commit_at_stamp": "bf5a3ec705d712f7a92bee1c8d5b28517fb9a9a4",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "033e0725a40687684b5bfaaeb2571afa1ddae03bc1c0f7c00d7b5bef97dcc208"
+      "sha256": "cc3ed82a156fb67ba65127fdcc1186bbea111fd62bd5fd102492c18f4f7d8157"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "db61f4708509b2a2df33fed33daeff507206bc8b51b89b6a6825390e01a2dedd"
+      "sha256": "a28554126f7547ae2c1d2e110ee753c42f2cbc901fcc82c5c9a8dab8bcafcc4c"
     },
     {
       "path": "data/pages.json",
-      "sha256": "5303ccc388490c440d4032c426f6f93217a0a5569b20ee044419000fd03085af"
+      "sha256": "421868fbc996b1e6f6a5fa4ab6468a6f87b3a464b59f800804aa0358f48837a9"
     },
     {
       "path": "index.html",
-      "sha256": "30778d0ddb12a72b8fcbe43f20b0ba961d6ff9277c168fe520cadef65314ba3a"
+      "sha256": "732ac230fe35c23ebf54247cefa7b653849d48aa52474851d0e5f1d9852b328e"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "b1d24b66e6b5a065b3707342e9d8c8fdc65dbd0848f0fa5afba3f58c34ca255e"
+      "sha256": "0c1de731888e5a8b00f1587e07bc5783c617dd1d6ebe80476f4351a1462c3886"
     },
     {
       "path": "updates.html",
-      "sha256": "a3bf8251df64f2f3cff081ccaeab1f95313fce3645cd9b58d59fccaaf5d9859a"
+      "sha256": "df20f62b1fb0d0e4d9ed0b44ace62dd67e6f0c207e6426c9b2220e4f26ca27c6"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "8e37ab1176ba894790532106c874e19b332e13670b6eec2e50edba6ba1776483",
+      "content_sha256": "c1f5b1755d1b19bdc95b0cd28177cedca3da75e4e5543daa3a0cdd52c5dca152",
       "path": "index.html",
-      "sha256": "30778d0ddb12a72b8fcbe43f20b0ba961d6ff9277c168fe520cadef65314ba3a",
+      "sha256": "732ac230fe35c23ebf54247cefa7b653849d48aa52474851d0e5f1d9852b328e",
       "url": "/"
     },
     {
-      "content_sha256": "fa1e65cad33c523e5d362f5e7b815e6db7914844ac1a604477d71a7789ce6b65",
+      "content_sha256": "7e49a5d92b4d768979345cb53b8f2f47d0e9789601e5d829d381848d64f55b88",
       "path": "updates.html",
-      "sha256": "a3bf8251df64f2f3cff081ccaeab1f95313fce3645cd9b58d59fccaaf5d9859a",
+      "sha256": "df20f62b1fb0d0e4d9ed0b44ace62dd67e6f0c207e6426c9b2220e4f26ca27c6",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "9ec12cc46a0e86a80ca1a4a56fa5aac2da669e8e000cf4cd18258a599827191d",
+      "content_sha256": "131b419acd590ad17196803ce3d6038db9a94b049710b22f5705d8c633e385ed",
       "path": "c034.html",
-      "sha256": "033e0725a40687684b5bfaaeb2571afa1ddae03bc1c0f7c00d7b5bef97dcc208",
+      "sha256": "cc3ed82a156fb67ba65127fdcc1186bbea111fd62bd5fd102492c18f4f7d8157",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "8cb5b02b3d795b3a14f7cacf9d878dc7cc0682f56a6b6d12036cf30b0879933c",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "2223f94422d488776831f5f856061066078b7408bd4850676c6cfaf7262f7e70",
+      "path": "blog/20261006-hikifuda-postcard-mitsuke/index.html",
+      "sha256": "bc71966d314385c0aa44b75ddf65957aff2b5c4c8cd853d85bc62f7790f79521",
+      "url": "/blog/20261006-hikifuda-postcard-mitsuke"
     },
     {
       "content_sha256": "e526c90a4a4d1d818b2e035377b9af0741a649d441473946ae06c9e911f26a17",
@@ -856,23 +862,17 @@
       "path": "c158.html",
       "sha256": "887fbb3c60ebe2b82fd42557747b9576a04ae39ba3eb3c3d37b0353457a3d0f9",
       "url": "/c158.html"
-    },
-    {
-      "content_sha256": "d7976f91a277e79023b47520469cd41d12b7a9d7db37d3d671481e03abe2aacc",
-      "path": "c159.html",
-      "sha256": "f09da8d47671808a52ccb7f11a2dfea6e7c02d7ed6b6cd8dacaddfd1a1591060",
-      "url": "/c159.html"
     }
   ],
   "schema": 1,
-  "state_hash": "1170f007ac56a35cc169dfe0a71fdce5afe982428657a95cfc577695f88f3721",
+  "state_hash": "48ab83815f29578f4bacaeea78c88f85e4380cf71cb10b5f21da49ff53b112c7",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1222,
-    "new_articles_sha256": "db61f4708509b2a2df33fed33daeff507206bc8b51b89b6a6825390e01a2dedd",
-    "pages_sha256": "5303ccc388490c440d4032c426f6f93217a0a5569b20ee044419000fd03085af",
-    "pages_total": 1150,
-    "published_pages": 1149
+    "new_articles": 1223,
+    "new_articles_sha256": "a28554126f7547ae2c1d2e110ee753c42f2cbc901fcc82c5c9a8dab8bcafcc4c",
+    "pages_sha256": "421868fbc996b1e6f6a5fa4ab6468a6f87b3a464b59f800804aa0358f48837a9",
+    "pages_total": 1151,
+    "published_pages": 1150
   }
 }
