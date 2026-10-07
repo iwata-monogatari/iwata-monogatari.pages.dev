@@ -95,6 +95,6 @@ test("search, category filtering, empty results and reset preserve dictionary be
     )
   );
 
-  assert.deepEqual(filteredWords("すべて", "存在しない検索語"), []);
+  assert.equal(filteredWords("すべて", "存在しない検索語").length, 0);
   assert.equal(filteredWords("すべて", "").length, 79);
 });
