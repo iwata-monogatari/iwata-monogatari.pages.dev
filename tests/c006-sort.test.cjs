@@ -31,6 +31,21 @@ function sortedWords() {
     .map((entry) => entry.w);
 }
 
+function filteredWords(activeCat = "すべて", keyword = "") {
+  const normalizedKeyword = keyword.trim().toLowerCase();
+  return DATA.filter((entry) => {
+    const categoryMatches = activeCat === "すべて" || entry.cat === activeCat;
+    const searchableText = entry.w + entry.k + entry.m + entry.ex + entry.std;
+    const keywordMatches =
+      !normalizedKeyword || searchableText.toLowerCase().includes(normalizedKeyword);
+    return categoryMatches && keywordMatches;
+  })
+    .sort((a, b) =>
+      dictionarySortKey(a.k).localeCompare(dictionarySortKey(b.k), "ja")
+    )
+    .map((entry) => entry.w);
+}
+
 test("comparison keys ignore leading wave dashes and secondary readings", () => {
   assert.equal(dictionarySortKey("〜ごう"), "ごう");
   assert.equal(dictionarySortKey("～まい／～まいか"), "まい");
@@ -66,4 +81,20 @@ test("existing variants with marks, voiced sounds and small kana keep stable pos
   assert.ok(position("とぶ") < position("どべ"));
   assert.ok(position("ぼっかける") < position("ぽんぽん"));
   assert.ok(position("ぽんぽん") < position("まい"));
+});
+
+test("search, category filtering, empty results and reset preserve dictionary behavior", () => {
+  const searched = filteredWords("すべて", "餅");
+  assert.ok(searched.includes("あんも"));
+
+  const endings = filteredWords("語尾・あいさつ", "");
+  assert.ok(endings.length > 0);
+  assert.ok(
+    endings.every(
+      (word) => DATA.find((entry) => entry.w === word).cat === "語尾・あいさつ"
+    )
+  );
+
+  assert.deepEqual(filteredWords("すべて", "存在しない検索語"), []);
+  assert.equal(filteredWords("すべて", "").length, 79);
 });
