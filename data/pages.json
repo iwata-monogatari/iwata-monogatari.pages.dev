@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-10-06",
+  "updated_at": "2026-10-07",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -32286,6 +32286,31 @@
       "topics": [
         "引札",
         "絵葉書",
+        "資料の読み方"
+      ]
+    },
+    {
+      "title": "ブログ：磐田のお金の歴史｜貯蓄の日に読む本編3本",
+      "url": "blog/20261007-iwata-money-history-reading/",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-10-07",
+      "updated_at": "2026-10-07",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "summary": "磐田のお金の歴史は、見付宿の貸付利子、産業と銀行、新円切替と預金封鎖を扱う本編3本から読めます。10月17日の貯蓄の日を前に、元金と利子、銀行の記録、預金の利用条件を読み分ける案内です。大石浩之が本編の留保も示し、暮らしと商いの支払いから読む手順を紹介します。",
+      "topics": [
+        "金融",
+        "産業史",
+        "見付",
         "資料の読み方"
       ]
     }
