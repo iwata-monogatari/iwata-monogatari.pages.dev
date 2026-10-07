@@ -209,7 +209,7 @@
     "@id": "https://iwata-monogatari.net/c006"
   },
   "datePublished": "2026-06-25",
-  "dateModified": "2026-10-02"
+  "dateModified": "2026-10-07"
 }
 </script>
 <script type="application/ld+json">
@@ -643,6 +643,7 @@
     <li><time datetime="2026-09-29">2026年9月29日</time> 読者の「もっと知りたい」を受けて増強。辞典に26語を追加（79語）、「だに」に逆接の用法を補足。タブ「もっと知る」を新設し、方言区画・東西の指標・アクセント・打消しと逆接・市内の方言集・研究の歩み・用語解説、学説の整理2本を加筆。ジュビロ磐田の注記の年次を訂正。参考資料を書誌つきに改めた。</li>
     <li><time datetime="2026-10-01">2026年10月1日</time> 「遠州弁 一覧」の実測検索に合わせ、一覧・意味・使い方の入口と、用例が作例である旨を辞典上部に明示。検索結果用の題名と説明も、79語の一覧・分類・検索という実際の内容に合わせた。</li>
     <li><time datetime="2026-10-02">2026年10月2日</time> 磐田市立図書館の解説シートと国立国語研究所の方言地図へ直接リンクし、確認できる範囲を資料名・案内区分と該当図番号に限定して明示。さらに、公開された『静岡県磐田郡誌』方言章と全国方言分布調査の磐田市地点を照合し、確認できた語形と資料の限界を追記。</li>
+    <li><time datetime="2026-10-07">2026年10月7日</time> 読みの先頭に付く「〜」などを並び替えの比較対象から外し、別表記がある語は最初の読みで比較するよう修正。79語の表示内容は変えず、案内どおり五十音順で探せるようにした。</li>
   </ul>
 </section>
 </div>
@@ -774,6 +775,11 @@ searchEl.addEventListener("input",e=>{ keyword=e.target.value.trim(); render(); 
 
 function esc(s){return s.replace(/[&<>]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[m]));}
 
+function dictionarySortKey(reading){
+  const primaryReading = reading.split(/[／/]/u, 1)[0];
+  return primaryReading.replace(/^[〜～~]+/u, "");
+}
+
 function render(){
   let list=DATA.filter(d=>{
     const catOk = activeCat==="すべて" || d.cat===activeCat;
@@ -781,7 +787,7 @@ function render(){
     const kwOk = !kw || (d.w+d.k+d.m+d.ex+d.std).toLowerCase().includes(kw);
     return catOk && kwOk;
   });
-  list.sort((a,b)=>a.k.localeCompare(b.k,"ja"));
+  list.sort((a,b)=>dictionarySortKey(a.k).localeCompare(dictionarySortKey(b.k),"ja"));
   countEl.textContent = list.length+" 語";
 
   if(list.length===0){
