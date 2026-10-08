@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-10-07",
+  "updated_at": "2026-10-08",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -32311,6 +32311,30 @@
         "金融",
         "産業史",
         "見付",
+        "資料の読み方"
+      ]
+    },
+    {
+      "title": "ブログ：旧赤松家記念館の秋展示｜見学前の本編案内",
+      "url": "blog/20261008-akamatsu-autumn-exhibition-guide/",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-10-08",
+      "updated_at": "2026-10-08",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "summary": "旧赤松家記念館の米蔵では、赤松浪江と掛川松ヶ岡・山﨑家を扱う秋展示が案内されています。会期は2026年10月1日〜12月27日。人物・施設・資料案内の本編3本を読む順番と、無料見学の開館時間・休館日の確認手順を大石浩之が整理します。",
+      "topics": [
+        "旧赤松家",
+        "展示",
         "資料の読み方"
       ]
     }

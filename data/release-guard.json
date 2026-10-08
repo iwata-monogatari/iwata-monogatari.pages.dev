@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1791365059,
-  "generation": 20261007182419,
-  "git_commit_at_stamp": "ad4e5b105625900716186cf994c29adb0635ee5a",
+  "generated_at_unix": 1791419721,
+  "generation": 20261008093521,
+  "git_commit_at_stamp": "fdb96d86000b1bbdcc3a54cc7c5e03d0e3e53d2a",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "9a4089dc67a47f8e00ef7ea29650855727dfb785dc64d7ba20a4f54831ecc739"
+      "sha256": "865bea82c094898dddc20fce59767f33bc69340d04efad3b51ac4013d6f52e53"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "bb7438b75bf0c264d48b7b2b8fffe4a419878e769c03218d4469e618b9d1108c"
+      "sha256": "731fa02d0f7e00119a598b55348963cf1cd275eb50d0eea0a995ba6b081f0091"
     },
     {
       "path": "data/pages.json",
-      "sha256": "0ff655c3b799d2dc9fb7dfd3ea688432f7e1795e355d590d04501b6d7651997b"
+      "sha256": "eb9f7f1406bd78f7236a8edd2d4ac7683ea863e8f40aafc5e62317a945fad992"
     },
     {
       "path": "index.html",
-      "sha256": "0c1a2c1ae1969989fb22acd21146e4b4e56ebdb71355e9f6e4143504bbd9041b"
+      "sha256": "3ca0c65522769e780fb0b2f7f99e5eaebd267e5af74d392d2c499338b2092da7"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "85decfa6cd335bfc06941c016e4831482bc5a0c7f9787785d67dcf9129089626"
+      "sha256": "a9bcf5080f76010a683b58c515b810b95a1d74997367e8f5fe31b0df1867031c"
     },
     {
       "path": "updates.html",
-      "sha256": "7c3821c376886807a86ae614de226be0512c338c4b7fd9d50ed2895615eaee13"
+      "sha256": "5583e85852a4df5e85615fe80af9bee0e88c1380c84dc002d7b5a9c6b24aad03"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "5b27a091eb5b30dc6a50d64d64bac1f6649b83aa6709c964cff1b13c49a323ed",
+      "content_sha256": "03a422905f451a61553820da69edca3bfaf8a9d7c9de1b59ebaf46e99106c9a1",
       "path": "index.html",
-      "sha256": "0c1a2c1ae1969989fb22acd21146e4b4e56ebdb71355e9f6e4143504bbd9041b",
+      "sha256": "3ca0c65522769e780fb0b2f7f99e5eaebd267e5af74d392d2c499338b2092da7",
       "url": "/"
     },
     {
-      "content_sha256": "db59bc89fb878b83c1e6d70285755de29bb0e557c6ba682c3aab7b9d0e9b1fed",
+      "content_sha256": "26f2b3bf1e299bdd3b3d41d24f53293e945336f5b07c5dbc0a37cb086c94e680",
       "path": "updates.html",
-      "sha256": "7c3821c376886807a86ae614de226be0512c338c4b7fd9d50ed2895615eaee13",
+      "sha256": "5583e85852a4df5e85615fe80af9bee0e88c1380c84dc002d7b5a9c6b24aad03",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "57115e98d22ffd78e17e6987140487a9f1bbf6645c4c0fab441f32a9c85210a4",
+      "content_sha256": "a500052a3b234fb542e90b956dc7dd62de9242e71e6833a4cbe4a14ecb81a8c8",
       "path": "c034.html",
-      "sha256": "9a4089dc67a47f8e00ef7ea29650855727dfb785dc64d7ba20a4f54831ecc739",
+      "sha256": "865bea82c094898dddc20fce59767f33bc69340d04efad3b51ac4013d6f52e53",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "1a80025c4758b2d4821f12432f1621f5aa0512ad55d0f15ae437418d7b255c6e",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "06d711083b7298ba8a894622fc16ef1c5e0f3a37a10ab316a1274f613de17f0f",
+      "path": "blog/20261008-akamatsu-autumn-exhibition-guide/index.html",
+      "sha256": "acca293340f39d74ecd75e6c5ceb89706a8b64130dafd1b4a920cffc43478bb4",
+      "url": "/blog/20261008-akamatsu-autumn-exhibition-guide"
     },
     {
       "content_sha256": "cccb6ff4024952f2282891cc9304175cae666773f719b2fe64c9a9880eb76043",
@@ -856,23 +862,17 @@
       "path": "c155.html",
       "sha256": "a3b3f25e229c2d9140080997fd0bda5a61f9a84ab3308eea781d27d01ee0f8eb",
       "url": "/c155.html"
-    },
-    {
-      "content_sha256": "3d3dda28f6747719ae7bfa31bdbe20460074e12cdad03f6077f34e5c60f678ba",
-      "path": "c156.html",
-      "sha256": "175ebb09faaffff2e68556860bcefa6080f01bda21af51803c60e7ecf399b035",
-      "url": "/c156.html"
     }
   ],
   "schema": 1,
-  "state_hash": "5a2950259740a321cf2cd70185ce4bcce24fde02539675028a299d773889ce85",
+  "state_hash": "274cdedec5df9823b68352a705af7434ffaae099614793d7fa153fed0dd885fc",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1225,
-    "new_articles_sha256": "bb7438b75bf0c264d48b7b2b8fffe4a419878e769c03218d4469e618b9d1108c",
-    "pages_sha256": "0ff655c3b799d2dc9fb7dfd3ea688432f7e1795e355d590d04501b6d7651997b",
-    "pages_total": 1152,
-    "published_pages": 1151
+    "new_articles": 1226,
+    "new_articles_sha256": "731fa02d0f7e00119a598b55348963cf1cd275eb50d0eea0a995ba6b081f0091",
+    "pages_sha256": "eb9f7f1406bd78f7236a8edd2d4ac7683ea863e8f40aafc5e62317a945fad992",
+    "pages_total": 1153,
+    "published_pages": 1152
   }
 }
