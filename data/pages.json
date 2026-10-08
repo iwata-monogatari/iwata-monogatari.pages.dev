@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-10-08",
+  "updated_at": "2026-10-09",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -32335,6 +32335,30 @@
       "topics": [
         "旧赤松家",
         "展示",
+        "資料の読み方"
+      ]
+    },
+    {
+      "title": "ブログ：磐田の銭湯の記憶｜見付の本編2本への案内",
+      "url": "blog/20261009-mitsuke-sento-memory-reading/",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-10-09",
+      "updated_at": "2026-10-09",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "summary": "磐田・見付の銭湯の記憶は、本編m122と論考216で読めます。店の存在を伝える記録・回想と、閉店理由の推定を分け、軒数の幅や未確認の留保を残す読書案内です。10月10日の銭湯の日を前に、大石浩之が本編2本の読む順番と資料の確かめ方を紹介します。",
+      "topics": [
+        "見付",
+        "銭湯",
         "資料の読み方"
       ]
     }
