@@ -1,5 +1,30 @@
 磐田物語 Index・検索 修正版の編集・復旧手順（2026-10-05）
 
+2026-10-09追記: 開始時同期とc006生成
+check-live-syncはcleanな最新mainと本番を比較する開始時ゲートです。
+古いコピーで不一致になった場合は、失敗出力を報告し、原因調査・同期の承認範囲を確認します。
+本番にしか見えない記事を削除せず、git status、HEAD..origin/mainの履歴と対象記事を読み取り照合します。
+同期前にリポジトリ外へ開始ファイル・SHA・差分・ハッシュを保存します。他者差分がある場合は破棄しません。
+未コミット差分がなく、欠落が最新mainに存在することを確認した場合はfast-forwardで同期します。
+FETCH_HEADの書込み制約がある環境では、既存ガードと同じ git fetch --no-write-fetch-head origin main の後、
+git merge --ff-only origin/main を実行できます。分岐があれば強制せず原因を解決します。
+その後 npm.cmd run check-live-sync を再実行し、記事集合だけでなく保護本文とrelease世代の一致も確認します。
+wrangler whoamiが取得待ち・ログ保存権限で確認できない場合は未検証とし、権限を確認できる環境で読み取り検査します。
+2026-10-09は npx.cmd --yes wrangler@4.149.0 whoami で未認証を確認。ログイン・Pages権限の追加は不要でした。
+今回の原因は古い作業コピーであり、同期ガードの失敗条件を変更する必要はありません。
+
+c006の語彙の正本はc006.html内のDATA、並び順の正本はdictionarySortKeyです。
+npm run buildは最初に node tools/build_c006_dictionary.mjs を実行してから新着・検索を生成します。
+生成一覧を手編集せず、node tools/build_c006_dictionary.mjs --check と
+node --test tests/c006-sort.test.cjs tests/c006-static.test.cjs で正本との一致を確認します。
+レビュー中の候補は未コミット差分と新release世代があるので、開始時check-live-syncの本番一致を要求しません。
+候補の検査はrelease:checkと通常guardを使い、公開承認・Git push・本番反映後の同期確認とは区別します。
+
+この改修の前向き復旧は、障害時の最新main上でc006の今回の実装、生成器、追加テスト、build先頭の追加処理だけを戻し、
+最新の台帳から新着・検索を再生成します。履歴・更新日には復旧を追記し、release stampとguardを再実施します。
+古い索引・台帳・release-guardを丸ごと戻しません。新着記事・m122・D1を保持し、reset --hard・force pushを使いません。
+公開は別途承認を得た通常のGit連携だけで行います。
+
 対象正本
 GitHub: iwata-monogatari/iwata-monogatari.pages.dev
 作業開始および納品前の同期確認SHA: 89066bebe928c23856809ac5cf26ac2a66075e48
