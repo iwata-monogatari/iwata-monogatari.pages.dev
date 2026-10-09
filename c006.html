@@ -60,8 +60,10 @@
   .tab:hover{color:var(--brown-deep);}
   .tab.active{color:var(--brown-deep);border-color:var(--brown);}
 
-  .panel{display:none;}
-  .panel.active{display:block;}
+  [hidden]{display:none!important;}
+  .panel{display:block;}
+  .dictionary-ready .panel{display:none;}
+  .dictionary-ready .panel.active{display:block;}
 
   .tools{max-width:900px;margin:0 auto;padding:22px 24px 0;}
   .intent-guide{margin:0 0 22px;padding:20px 22px;background:var(--paper-deep);border:1px solid var(--line);border-radius:5px;}
@@ -209,7 +211,7 @@
     "@id": "https://iwata-monogatari.net/c006"
   },
   "datePublished": "2026-06-25",
-  "dateModified": "2026-10-07"
+  "dateModified": "2026-10-09"
 }
 </script>
 <script type="application/ld+json">
@@ -350,7 +352,7 @@
   <p>「だら」「だに」「やぶせったい」── 磐田を中心とする中遠地域で受け継がれてきた方言、遠州弁。何気なく使っている言葉も、外の人には通じない、このまちならではのことばかもしれない。語彙と、その使い方、そして文法の特徴を集めた覚え書きである。</p>
 </section>
 
-<div class="tabs">
+<div class="tabs" hidden>
   <button class="tab active" data-tab="dict">ことばを引く</button>
   <button class="tab" data-tab="grammar">文法と語法</button>
   <button class="tab" data-tab="more">もっと知る</button>
@@ -367,14 +369,966 @@
       </ul>
       <p class="intent-note">用例は、掲載した意味・用法をもとに編集部が作成した作例です。実際の話者の発話を引用したものではなく、地域や世代によって使い方が異なる場合があります。</p>
     </section>
-    <div class="search-box">
+    <p class="intent-note" id="dictionary-offline-note">遠州弁79語を五十音順で掲載しています。JavaScriptが使えない場合も、このまま意味・作例・標準語訳を読めます。ページ内検索も利用できます。</p>
+    <div class="search-box" hidden>
       <span class="icon">🔍</span>
-      <input type="text" id="search" placeholder="ことばを検索（例：だら、やぶせったい、意味の言葉でも）" autocomplete="off">
+      <input type="text" id="search" aria-label="遠州弁や意味を検索" placeholder="ことばを検索（例：だら、やぶせったい、意味の言葉でも）" autocomplete="off">
     </div>
-    <div class="filters" id="filters"></div>
-    <p class="count" id="count"></p>
+    <div class="filters" id="filters" hidden></div>
+    <p class="count" id="count" role="status">79 語</p>
   </div>
-  <div class="dict" id="dict"></div>
+  <div class="dict" id="dict">
+  <!-- c006-dictionary:start -->
+    <div class="entry">
+      <div class="top">
+        <span class="word">あいさ</span>
+        <span class="kana">あいさ</span>
+        <span class="cat">名詞・もの</span>
+      </div>
+      <p class="mean">間、すきま。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">たんすと壁のあいさに落ちた。</span>
+        <span class="std">＝ たんすと壁のあいだに落ちた。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">頭を切る</span>
+        <span class="kana">あたまをきる</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">髪を切る、散髪する。頭そのものではなく、髪の意。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">そろそろ頭切ってこんと。</span>
+        <span class="std">＝ そろそろ髪を切ってこないと。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">あんも</span>
+        <span class="kana">あんも／あんもう</span>
+        <span class="cat">名詞・もの</span>
+      </div>
+      <p class="mean">餅。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">あんも焼けたに。</span>
+        <span class="std">＝ お餅が焼けたよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">いいにする</span>
+        <span class="kana">いいにする</span>
+        <span class="cat">気持ち</span>
+      </div>
+      <p class="mean">〜にしておく、やめておく、これで良しとする。対立を避け、穏やかに物事を収めるときの言葉。中止・妥協・許容・中断と幅広く使う。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">雨だで、今日のジョギングはいいにするか。</span>
+        <span class="std">＝ 雨だから、今日のジョギングはやめておくか。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">いずようない</span>
+        <span class="kana">いずようない</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">居づらい、居心地が悪い、居場所がない。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">あの場はいずようなかったわ。</span>
+        <span class="std">＝ あの場は居づらかったよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">いっちょ</span>
+        <span class="kana">いっちょ</span>
+        <span class="cat">程度・量</span>
+      </div>
+      <p class="mean">とても、たくさん、いっぱい。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">今日はいっちょ働いたわ。</span>
+        <span class="std">＝ 今日はたくさん働いたよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">いのく</span>
+        <span class="kana">いのく／いぬく</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">動く。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">写真撮るで、いのかんで。</span>
+        <span class="std">＝ 写真を撮るから、動かないで。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">いぼる</span>
+        <span class="kana">いぼる</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">ぬかるみなどに足を取られてはまる、めり込む。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">田んぼでいぼっちゃった。</span>
+        <span class="std">＝ 田んぼでぬかるみにはまってしまった。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">うっちゃる</span>
+        <span class="kana">うっちゃる</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">捨てる、放っておく。「うっちゃっとく」で放置する。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">いらんもんは、うっちゃっといて。</span>
+        <span class="std">＝ いらない物は、捨てておいて。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">えいかん</span>
+        <span class="kana">えいかん</span>
+        <span class="cat">程度・量</span>
+      </div>
+      <p class="mean">たくさん、いっぱい。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">みかん、えいかんもらった。</span>
+        <span class="std">＝ みかんをたくさんもらった。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">えらい</span>
+        <span class="kana">えらい</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">疲れた、しんどい。立派の意ではなく、体がきつい意で使う。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">今日は歩きすぎてえらいわ。</span>
+        <span class="std">＝ 今日は歩きすぎて疲れたよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">おぞい</span>
+        <span class="kana">おぞい</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">粗悪な、品質が悪い、みすぼらしい。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">おぞい品物つかまされた。</span>
+        <span class="std">＝ 粗悪な品物を買わされた。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">おちゃっぴい</span>
+        <span class="kana">おちゃっぴい</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">おしゃべりで活発な（女の子）。お転婆。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">あの子はおちゃっぴいだなあ。</span>
+        <span class="std">＝ あの子はお転婆だなあ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">おっしー</span>
+        <span class="kana">おっしー</span>
+        <span class="cat">名詞・もの</span>
+      </div>
+      <p class="mean">味噌汁。やや古い言い方。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">おっしー、もう一杯。</span>
+        <span class="std">＝ 味噌汁、もう一杯。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">かじる</span>
+        <span class="kana">かじる</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">引っ掻く。歯で噛むだけでなく、爪で皮膚を掻くことも指す。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">かさぶたかじっちゃいかんに。</span>
+        <span class="std">＝ かさぶたを掻いちゃだめだよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">がんこ</span>
+        <span class="kana">がんこ</span>
+        <span class="cat">程度・量</span>
+      </div>
+      <p class="mean">とても、すごく。頑固の意ではなく、程度を強める。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">がんこ混んどったわ。</span>
+        <span class="std">＝ すごく混んでいたよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">くろ</span>
+        <span class="kana">くろ</span>
+        <span class="cat">名詞・もの</span>
+      </div>
+      <p class="mean">端、隅、へり。色の黒ではなく、空間的な境界を指す。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">車来るで、道のくろに寄んな。</span>
+        <span class="std">＝ 車が来るから、道の端に寄りなさい。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">け</span>
+        <span class="kana">け</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜か。「〜か？」の角を取って、やわらかく問う。体言にも用言にも付く。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">これけ？</span>
+        <span class="std">＝ これなの？</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">けっこい</span>
+        <span class="kana">けっこい</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">きれいな、美しい。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">けっこい花が咲いとる。</span>
+        <span class="std">＝ きれいな花が咲いている。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">けった</span>
+        <span class="kana">けった／けったあ</span>
+        <span class="cat">名詞・もの</span>
+      </div>
+      <p class="mean">自転車。浜松など天竜川以西で多く聞かれ、川の東では少ないとされる。磐田から見ると「川向こう」のことばでもある。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">けったで駅まで行ってくる。</span>
+        <span class="std">＝ 自転車で駅まで行ってくる。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">けんが</span>
+        <span class="kana">けんが／けえが／けん</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜けれど、〜けど。逆接。中遠・東遠で使われるとされる。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">行きたいけんが、暇がないだよ。</span>
+        <span class="std">＝ 行きたいけれど、時間がないんだよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ごう</span>
+        <span class="kana">〜ごう</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜してごらん。「〜てごう」の形で、軽くうながす。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">これ、食べてごう。</span>
+        <span class="std">＝ これ、食べてごらん。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">こさえる</span>
+        <span class="kana">こさえる</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">作る、こしらえる。全国の話しことばにも見られるが、遠州の暮らしのなかで今もよく耳にする。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">弁当こさえといたでね。</span>
+        <span class="std">＝ 弁当を作っておいたからね。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">こすい</span>
+        <span class="kana">こすい</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">ずるい、せこい。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">あいつ、こすいことするなあ。</span>
+        <span class="std">＝ あいつ、ずるいことをするなあ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">こずむ</span>
+        <span class="kana">こずむ</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">（粉や沈殿物が）底にたまる、沈む。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">片栗粉がこずんどる。</span>
+        <span class="std">＝ 片栗粉が底に沈んでいる。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">こわい</span>
+        <span class="kana">こわい</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">（食べ物などが）硬い。恐怖の意ではなく、餅などの物理的な硬さを指す。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">このお餅、まだこわいわ。</span>
+        <span class="std">＝ このお餅、まだ硬いよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">在所</span>
+        <span class="kana">ざいしょ</span>
+        <span class="cat">名詞・もの</span>
+      </div>
+      <p class="mean">実家、生まれ育った家やその土地。「お在所」とも。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">盆は在所へ帰るでね。</span>
+        <span class="std">＝ お盆は実家へ帰るからね。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">さら</span>
+        <span class="kana">〜さら</span>
+        <span class="cat">程度・量</span>
+      </div>
+      <p class="mean">〜ごと、〜全部。残さず全体を、の意。「まるさら」で丸ごと。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">りんご、皮さら食べる。</span>
+        <span class="std">＝ りんご、皮ごと食べる。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">じゃんね</span>
+        <span class="kana">じゃんね</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜じゃない、〜だよね。同意を求めたり、話を次へ繋いだりする。「じゃんか」は念押し・詰問。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">昨日さ、雨だったじゃんね。</span>
+        <span class="std">＝ 昨日、雨だったよね。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">衆ら</span>
+        <span class="kana">しゅうら</span>
+        <span class="cat">名詞・もの</span>
+      </div>
+      <p class="mean">〜の人たち、〜の連中。「若い衆ら」「町内の衆ら」のように、集団をまとめて呼ぶ。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">町内の衆らで草刈りやるに。</span>
+        <span class="std">＝ 町内の人たちで草刈りをするよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">じゅるい</span>
+        <span class="kana">じゅるい</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">水気が多い、汁気が多い。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">このみかん、じゅるくてうまいなあ。</span>
+        <span class="std">＝ このみかん、果汁が多くておいしいなあ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">しょんない</span>
+        <span class="kana">しょんない</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">しょうがない、仕方がない。諦めの気持ちから、軽い非難まで幅広く使う。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">見つからんもんはしょんないら。</span>
+        <span class="std">＝ 見つからない物は仕方ないよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ずっこい</span>
+        <span class="kana">ずっこい</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">ずるい。「こすい」と近い意味で使う。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">先に食べるなんてずっこいら。</span>
+        <span class="std">＝ 先に食べるなんてずるいでしょ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ずら</span>
+        <span class="kana">ずら</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜だろう。古くからの推量表現。「だら」より古風で、今は高齢層中心。衰退傾向にある。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">そうずらなあ。</span>
+        <span class="std">＝ そうだろうなあ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">せんひき</span>
+        <span class="kana">せんひき</span>
+        <span class="cat">名詞・もの</span>
+      </div>
+      <p class="mean">定規、物差し。「線引き」から。静岡で広く使われる。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">せんひき取って。</span>
+        <span class="std">＝ 定規を取って。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">だで</span>
+        <span class="kana">だで／で</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜だから。理由を述べる。名詞・形容動詞には「だで」、動詞・形容詞には「で」が付く。「だもんで」より短い形。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">雨だで、傘持ってきな。</span>
+        <span class="std">＝ 雨だから、傘を持っていきなさい。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">だに</span>
+        <span class="kana">だに</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜だよ、〜なんだよ。断定や情報提供。名詞・形容動詞に付く。「に」より主張や念押しが強い。文の途中に置くと「〜のに」という逆接になり、「違うだに、なんで直さんだ（違うのに、なぜ直さないの）」のように使う。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">明日から10月だに。</span>
+        <span class="std">＝ 明日から10月だよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ため</span>
+        <span class="kana">ため</span>
+        <span class="cat">名詞・もの</span>
+      </div>
+      <p class="mean">同い年、同級。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">あいつとはためだに。</span>
+        <span class="std">＝ あいつとは同い年だよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">だもんで</span>
+        <span class="kana">だもんで</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜だから、〜なので。理由を、押しつけずやわらかく述べる。静岡・遠州を代表する接続表現。形容詞には「もんで」。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">寝不足だもんで、眠いわ。</span>
+        <span class="std">＝ 寝不足だから、眠いよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">だら</span>
+        <span class="kana">だら</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜だろう、〜でしょう。推量や確認を求めるときの語尾。遠州弁を代表する言い回し。古い「ずら」に代わって若い世代まで広く使う。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">今日の夜ご飯カレーだら？</span>
+        <span class="std">＝ 今夜はカレーでしょ？</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">血が死ぬ</span>
+        <span class="kana">ちがしぬ</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">内出血する。打撲などで皮膚の下が鬱血し、変色した状態。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">ぶつけて血が死んじゃった。</span>
+        <span class="std">＝ ぶつけて内出血してしまった。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ちゃっと</span>
+        <span class="kana">ちゃっと</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">急いで、さっと。迅速な行動を促すときに。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">塩切れたで、ちゃっと買ってくるに。</span>
+        <span class="std">＝ 塩が切れたから、急いで買ってくるよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ちょっくら</span>
+        <span class="kana">ちょっくら</span>
+        <span class="cat">程度・量</span>
+      </div>
+      <p class="mean">少し、ちょっと。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">ちょっくら出てくるで。</span>
+        <span class="std">＝ ちょっと出かけてくるね。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ちょびちょびする</span>
+        <span class="kana">ちょびちょびする</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">ふざける、調子に乗る。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">授業中にちょびちょびしとったら怒られた。</span>
+        <span class="std">＝ 授業中にふざけていたら怒られた。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ちんちん</span>
+        <span class="kana">ちんちん</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">（お湯などが）とても熱いこと。やかんが沸いた状態など。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">お湯がちんちんだに、気いつけて。</span>
+        <span class="std">＝ お湯がすごく熱いから、気をつけて。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ちんぷりかえる</span>
+        <span class="kana">ちんぷりかえる</span>
+        <span class="cat">気持ち</span>
+      </div>
+      <p class="mean">ふてくされる、すねる、へそを曲げる。激しい怒りではなく、どこか愛嬌のあるすね方。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">ちょっと言われてちんぷりかえっとる。</span>
+        <span class="std">＝ 少し言われてふてくされている。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">っち</span>
+        <span class="kana">っち</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜のところ、〜の家。親しい人や集団を表す接尾辞。「オレっち」で自分の家・自分たち。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">今度、〇〇っち行ってみる？</span>
+        <span class="std">＝ 今度、〇〇の家に行ってみる？</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">っちゅう</span>
+        <span class="kana">っちゅう</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜という。「〜という」がつづまった形。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">田中っちゅう人、知っとる？</span>
+        <span class="std">＝ 田中という人、知ってる？</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">つぶれる</span>
+        <span class="kana">つぶれる</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">（機械などが）壊れる、動かなくなる。形がつぶれる意に限らない。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">洗濯機がつぶれちゃった。</span>
+        <span class="std">＝ 洗濯機が壊れてしまった。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">つる</span>
+        <span class="kana">つる</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">（机などを）持ち上げて運ぶ。「机をつる」で机を運ぶ。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">みんなで机つって。</span>
+        <span class="std">＝ みんなで机を運んで。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">連れ</span>
+        <span class="kana">つれ</span>
+        <span class="cat">名詞・もの</span>
+      </div>
+      <p class="mean">友だち、仲間。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">連れと釣り行ってくる。</span>
+        <span class="std">＝ 友だちと釣りに行ってくる。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">てんこちょ</span>
+        <span class="kana">てんこちょ</span>
+        <span class="cat">名詞・もの</span>
+      </div>
+      <p class="mean">てっぺん、頂上。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">山のてんこちょまで登った。</span>
+        <span class="std">＝ 山のてっぺんまで登った。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ど</span>
+        <span class="kana">ど〜</span>
+        <span class="cat">程度・量</span>
+      </div>
+      <p class="mean">ものすごく、超。強める接頭辞。「どでかい」など。やや乱暴できつい印象。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">どでかい荷物が届いた。</span>
+        <span class="std">＝ ものすごく大きい荷物が届いた。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">とぶ</span>
+        <span class="kana">とぶ</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">走る、走っていく。飛行ではなく地上を急いで駆けること。「とんでく」とも。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">急ぐで、とんでいきな。</span>
+        <span class="std">＝ 急ぐから、走っていきなさい。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">どべ</span>
+        <span class="kana">どべ</span>
+        <span class="cat">程度・量</span>
+      </div>
+      <p class="mean">最下位、びり。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">かけっこでどべだったわ。</span>
+        <span class="std">＝ かけっこでびりだったよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">とる</span>
+        <span class="kana">〜とる／〜どる</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜ている。動作の進行や結果の状態を表す。湖西・西遠で優勢で、東遠ではあまり使われないとされる。磐田では「〜てる」と併存しているとみられる。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">雨、まだ降っとる？</span>
+        <span class="std">＝ 雨、まだ降ってる？</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">とろい</span>
+        <span class="kana">とろい／とろくさい</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">のろい、鈍い、気が利かない。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">そんなとろくさいことしとったら日が暮れるに。</span>
+        <span class="std">＝ そんなのろいことをしていたら日が暮れるよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">とんます</span>
+        <span class="kana">とんます</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">捕まえる。虫などを捕獲すること。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">てんとう虫とんました。</span>
+        <span class="std">＝ てんとう虫を捕まえた。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ない</span>
+        <span class="kana">〜ない</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜しなさい。動詞の連用形に付く（「書きない」「起きない」）。否定の「ない」ではなく、やわらかな命令。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">早く起きない。</span>
+        <span class="std">＝ 早く起きなさい。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">なんだ</span>
+        <span class="kana">〜なんだ</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜なかった。古くからの過去否定の形。新しい「〜んかった」と世代によって使い分けられている（文法欄参照）。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">昨日は雨、降らなんだ。</span>
+        <span class="std">＝ 昨日は雨が降らなかった。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">に</span>
+        <span class="kana">に／にぃ</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜よ、〜ね。動詞・形容詞に直接付いて、やわらかく事実を伝える。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">早いに。</span>
+        <span class="std">＝ 早いよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ねち</span>
+        <span class="kana">ねち</span>
+        <span class="cat">名詞・もの</span>
+      </div>
+      <p class="mean">歯ぐき、歯茎。高齢層に残る言い方。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">ねちが腫れてまった。</span>
+        <span class="std">＝ 歯ぐきが腫れてしまった。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">のうなる</span>
+        <span class="kana">のうなる</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">無くなる。「無う(のう)なる」から。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">財布がのうなった。</span>
+        <span class="std">＝ 財布が無くなった。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ばか</span>
+        <span class="kana">ばか</span>
+        <span class="cat">程度・量</span>
+      </div>
+      <p class="mean">とても、すごく。程度を強める。けなす意味ではない。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">今日はばか暑いなあ。</span>
+        <span class="std">＝ 今日はすごく暑いなあ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">はならかす</span>
+        <span class="kana">はならかす</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">離す、間を空ける。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">洗濯物ははならかして干さんと。</span>
+        <span class="std">＝ 洗濯物は離して干さないと。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ひずるしい</span>
+        <span class="kana">ひずるしい</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">まぶしい。日照の強い遠州の、夏のカンカン照りの眩しさを表す。「ひどろしい」とも。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">今日はひずるしくって目が開けれん。</span>
+        <span class="std">＝ 今日はまぶしくて目が開けられない。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ぶしょったい</span>
+        <span class="kana">ぶしょったい</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">だらしない、無精な感じでみっともない。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">そんなぶしょったい格好で行くの。</span>
+        <span class="std">＝ そんなだらしない格好で行くの。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ぼっかける</span>
+        <span class="kana">ぼう／ぼっかける</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">追う、追いかける。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">犬にぼっかけられた。</span>
+        <span class="std">＝ 犬に追いかけられた。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ほかる</span>
+        <span class="kana">ほかる</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">捨てる。「ほかっといて」で捨てておいて。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">その紙、ほかっといて。</span>
+        <span class="std">＝ その紙、捨てておいて。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ほっぽかす</span>
+        <span class="kana">ほっぽかす</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">ほったらかす、放置する、無視する。軽い非難を含む。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">あたしのことほっぽかしてどこ行ってたの。</span>
+        <span class="std">＝ 私のことほったらかしてどこ行ってたの。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ぽんぽん</span>
+        <span class="kana">ぽんぽん</span>
+        <span class="cat">名詞・もの</span>
+      </div>
+      <p class="mean">オートバイ、原動機付自転車。エンジン音を写したことばとみられる。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">ぽんぽんで畑まで行く。</span>
+        <span class="std">＝ バイクで畑まで行く。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">まい</span>
+        <span class="kana">〜まい／〜まいか</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜しよう、〜しようじゃないか。相手を誘う形。「行かまい」「やらまいか」。駿河の「〜ざあ」に対する、遠州の誘いの形である。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">ちゃっと片付けて、お茶にしまい。</span>
+        <span class="std">＝ 急いで片付けて、お茶にしよう。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">みるい</span>
+        <span class="kana">みるい</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">幼い、未熟な。元は茶業で、摘む前の柔らかい新芽を指した言葉。転じて人の若さ・未熟さに。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">1年生はみるくて可愛いなあ。</span>
+        <span class="std">＝ 1年生は幼くて可愛いなあ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">やい</span>
+        <span class="kana">やい</span>
+        <span class="cat">気持ち</span>
+      </div>
+      <p class="mean">おい。人を呼び止めるときの呼びかけ。重ねた「やいやい」は嘆きの声になる。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">やい、忘れもんだに。</span>
+        <span class="std">＝ おい、忘れ物だよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">やいやい</span>
+        <span class="kana">やいやい</span>
+        <span class="cat">気持ち</span>
+      </div>
+      <p class="mean">やれやれ、いやはや。がっかりした時や呆れた時に発する言葉。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">やいやい、もっと気いつけて話なよ。</span>
+        <span class="std">＝ やれやれ、もっと気をつけて話しなよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">やっきりこく</span>
+        <span class="kana">やっきりこく</span>
+        <span class="cat">気持ち</span>
+      </div>
+      <p class="mean">腹が立つ、いらいらする。直接ぶつけられず、諦めまじりに愚痴としてこぼすような、鬱屈した怒り。「やっきりする」とも。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">あの人またサボってて、やっきりするわ。</span>
+        <span class="std">＝ あの人またサボってて、腹が立つよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">やぶせったい</span>
+        <span class="kana">やぶせったい</span>
+        <span class="cat">形容・ようす</span>
+      </div>
+      <p class="mean">うっとうしい、わずらわしい、じれったい。髪が目にかかるような、もどかしい不快感にも使う。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">前髪が伸びてやぶせったい。</span>
+        <span class="std">＝ 前髪が伸びてうっとうしい。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">よさりかかる</span>
+        <span class="kana">よさりかかる</span>
+        <span class="cat">動作・行い</span>
+      </div>
+      <p class="mean">寄りかかる、体重を預ける。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">壁によさりかかったらいかんに。</span>
+        <span class="std">＝ 壁に寄りかかったらだめだよ。</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="top">
+        <span class="word">ら</span>
+        <span class="kana">ら／らぁ</span>
+        <span class="cat">語尾・あいさつ</span>
+      </div>
+      <p class="mean">〜だろう、〜でしょ。「だら」と同じく確認・同意を求める。語尾を伸ばして「らぁ」とも。動詞・形容詞に付きやすい。</p>
+      <div class="ex">
+        <span class="label">例</span><span class="example">飲むら？</span>
+        <span class="std">＝ 飲むでしょ？／飲む？</span>
+      </div>
+    </div>
+  <!-- c006-dictionary:end -->
+  </div>
 </div>
 
 <div class="panel" id="panel-grammar">
@@ -644,6 +1598,7 @@
     <li><time datetime="2026-10-01">2026年10月1日</time> 「遠州弁 一覧」の実測検索に合わせ、一覧・意味・使い方の入口と、用例が作例である旨を辞典上部に明示。検索結果用の題名と説明も、79語の一覧・分類・検索という実際の内容に合わせた。</li>
     <li><time datetime="2026-10-02">2026年10月2日</time> 磐田市立図書館の解説シートと国立国語研究所の方言地図へ直接リンクし、確認できる範囲を資料名・案内区分と該当図番号に限定して明示。さらに、公開された『静岡県磐田郡誌』方言章と全国方言分布調査の磐田市地点を照合し、確認できた語形と資料の限界を追記。</li>
     <li><time datetime="2026-10-07">2026年10月7日</time> 読みの先頭に付く「〜」などを並び替えの比較対象から外し、別表記がある語は最初の読みで比較するよう修正。79語の表示内容は変えず、案内どおり五十音順で探せるようにした。</li>
+    <li><time datetime="2026-10-09">2026年10月9日</time> 既存79語の一覧を初期HTMLにも出力し、JavaScriptが使えない場合も意味・作例・標準語訳を読めるようにした。語句と五十音順は保持。</li>
   </ul>
 </section>
 </div>
@@ -748,6 +1703,15 @@ const dictEl = document.getElementById("dict");
 const countEl = document.getElementById("count");
 const filtersEl = document.getElementById("filters");
 const searchEl = document.getElementById("search");
+// Reuse the initial HTML. Filtering never clears or duplicates the list.
+const entryEls = new Map(Array.from(dictEl.querySelectorAll(".entry"), entry =>
+  [entry.querySelector(".word").textContent, entry]
+));
+const emptyEl = document.createElement("div");
+emptyEl.className = "empty";
+emptyEl.hidden = true;
+emptyEl.innerHTML = '<span class="mincho">見つからんかったわ。</span>別のことばで探してみてごぅ。';
+dictEl.appendChild(emptyEl);
 
 document.querySelectorAll(".tab").forEach(t=>{
   t.onclick=()=>{
@@ -773,8 +1737,6 @@ CATS.forEach(c=>{
 
 searchEl.addEventListener("input",e=>{ keyword=e.target.value.trim(); render(); });
 
-function esc(s){return s.replace(/[&<>]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[m]));}
-
 function dictionarySortKey(reading){
   const primaryReading = reading.split(/[／/]/u, 1)[0];
   return primaryReading.replace(/^[〜～~]+/u, "");
@@ -790,26 +1752,17 @@ function render(){
   list.sort((a,b)=>dictionarySortKey(a.k).localeCompare(dictionarySortKey(b.k),"ja"));
   countEl.textContent = list.length+" 語";
 
-  if(list.length===0){
-    dictEl.innerHTML='<div class="empty"><span class="mincho">見つからんかったわ。</span>別のことばで探してみてごぅ。</div>';
-    return;
-  }
-  dictEl.innerHTML = list.map(d=>`
-    <div class="entry">
-      <div class="top">
-        <span class="word">${esc(d.w)}</span>
-        <span class="kana">${esc(d.k)}</span>
-        <span class="cat">${esc(d.cat)}</span>
-      </div>
-      <p class="mean">${esc(d.m)}</p>
-      <div class="ex">
-        <span class="label">例</span>${esc(d.ex)}
-        <span class="std">＝ ${esc(d.std)}</span>
-      </div>
-    </div>`).join("");
+  const visibleWords = new Set(list.map(d=>d.w));
+  entryEls.forEach((entry, word)=>{ entry.hidden = !visibleWords.has(word); });
+  emptyEl.hidden = list.length !== 0;
 }
 
 render();
+document.documentElement.classList.add("dictionary-ready");
+document.querySelector(".tabs").hidden = false;
+document.querySelector(".search-box").hidden = false;
+filtersEl.hidden = false;
+document.getElementById("dictionary-offline-note").hidden = true;
 </script>
 
 <section class="article-policy" data-common></section>
