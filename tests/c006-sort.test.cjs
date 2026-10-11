@@ -54,19 +54,12 @@ test("comparison keys ignore leading wave dashes and secondary readings", () => 
   assert.equal(dictionarySortKey("ぼう／ぼっかける"), "ぼう");
 });
 
-test("all 79 entries remain and begin in Japanese syllabary order", () => {
+test("all 122 entries remain and begin in Japanese syllabary order", () => {
   const words = sortedWords();
-  assert.equal(DATA.length, 79);
-  assert.equal(new Set(words).size, 79);
+  assert.equal(DATA.length, 122);
+  assert.equal(new Set(words).size, 122);
   assert.deepEqual(words.slice(0, 8), [
-    "あいさ",
-    "頭を切る",
-    "あんも",
-    "いいにする",
-    "いずようない",
-    "いっちょ",
-    "いのく",
-    "いぼる",
+    "あいさ", "あおたえる", "頭を切る", "あっこ", "あわくい", "あんき", "あんも", "いいにする",
   ]);
 });
 
@@ -96,5 +89,5 @@ test("search, category filtering, empty results and reset preserve dictionary be
   );
 
   assert.equal(filteredWords("すべて", "存在しない検索語").length, 0);
-  assert.equal(filteredWords("すべて", "").length, 79);
+  assert.equal(filteredWords("すべて", "").length, 122);
 });

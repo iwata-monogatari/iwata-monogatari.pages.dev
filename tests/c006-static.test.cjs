@@ -15,7 +15,7 @@ function decode(text) {
   return text.replace(/&(amp|lt|gt|quot|#39);/g, (_, name) => entities[name]);
 }
 function parseEntries(block) {
-  return block.split('<div class="entry">').slice(1).map(entry => {
+  return block.split(/<div class="entry"[^>]*>/).slice(1).map(entry => {
     const result = {};
     for (const [cls, key] of Object.entries(fields)) {
       const matches = [...entry.matchAll(new RegExp(`<(?:span|p) class="${cls}">([^<]*)<\/(?:span|p)>`, 'g'))];
@@ -31,19 +31,19 @@ function expectedEntries() {
   // Independent extraction and comparison against the original page source.
   const data = vm.runInNewContext(html.match(/const DATA = (\[[\s\S]*?\r?\n\]);/)[1]);
   const key = vm.runInNewContext(`${html.match(/(function dictionarySortKey\(reading\)\{[\s\S]*?\r?\n\})/)[1]}; dictionarySortKey`);
-  return JSON.parse(JSON.stringify(Array.from(data).sort((a,b)=>key(a.k).localeCompare(key(b.k),'ja'))));
+  return JSON.parse(JSON.stringify(Array.from(data).sort((a,b)=>key(a.k).localeCompare(key(b.k),'ja')).map(d=>Object.fromEntries(Object.values(fields).map(k=>[k,d[k]])))));
 }
 
-test('initial HTML contains all 79 unique entries, all six original fields and the existing order', async () => {
+test('initial HTML contains all 122 unique entries, all six original fields and the existing order', async () => {
   const { START, END } = await generator;
   const block = html.split(START)[1].split(END)[0];
   const actual = parseEntries(block);
-  assert.equal(actual.length, 79);
-  assert.equal(new Set(actual.map(d=>d.w)).size, 79);
+  assert.equal(actual.length, 122);
+  assert.equal(new Set(actual.map(d=>d.w)).size, 122);
   assert.deepEqual(actual, expectedEntries());
-  assert.deepEqual(actual.slice(0,8).map(d=>d.w), ['あいさ','頭を切る','あんも','いいにする','いずようない','いっちょ','いのく','いぼる']);
-  assert.equal((html.match(/<div class="entry">/g)||[]).length,79);
-  assert.match(html, /id="count"[^>]*>79 語<\/p>/);
+  assert.deepEqual(actual.slice(0,8).map(d=>d.w), ['あいさ','あおたえる','頭を切る','あっこ','あわくい','あんき','あんも','いいにする']);
+  assert.equal((html.match(/<div class="entry" id="w-[^"]+">/g)||[]).length,122);
+  assert.match(html, /id="count"[^>]*>122 語<\/p>/);
   assert.match(html, /<div class="dict" id="dict">\s*<!-- c006-dictionary:start -->/);
 });
 
@@ -53,7 +53,7 @@ test('all fields round trip HTML metacharacters, whitespace and reading variants
   const fixture = Object.fromEntries(Object.values(fields).map(k=>[k,value]));
   const markup = renderEntries([fixture]);
   assert.deepEqual(parseEntries(markup), [fixture]);
-  assert.equal((markup.match(/&amp;&lt;&gt;&quot;&#39;/g)||[]).length,6);
+  assert.equal((markup.match(/&amp;&lt;&gt;&quot;&#39;/g)||[]).length,7); // six fields + entry id
   assert.ok(!markup.includes(value));
 });
 
@@ -98,7 +98,7 @@ test('JavaScript enhancement is opt-in and build generates the dictionary before
   assert.match(html,/<div class="tabs" hidden>/);
   assert.match(html,/<div class="search-box" hidden>/);
   assert.match(html,/id="filters" hidden/);
-  assert.match(html,/id="dictionary-offline-note">[^<]*79語/);
+  assert.match(html,/id="dictionary-offline-note">[^<]*122語/);
   assert.match(html,/\.panel\{display:block;\}/);
   assert.doesNotMatch(html,/dictEl\.innerHTML\s*=/);
   const build=JSON.parse(fs.readFileSync(path.join(ROOT,'package.json'),'utf8')).scripts.build;

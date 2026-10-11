@@ -7,6 +7,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const START = '<!-- c006-dictionary:start -->';
 export const END = '<!-- c006-dictionary:end -->';
 const FIELDS = ['w', 'k', 'cat', 'm', 'ex', 'std'];
+const OPTIONAL_FIELDS = ['n', 'syn'];
 
 function extractOnce(html, pattern, label) {
   const matches = [...html.matchAll(pattern)];
@@ -21,11 +22,14 @@ export function readDictionary(html) {
   const sortSource = extractOnce(html,
     /(function dictionarySortKey\(reading\)\{[\s\S]*?\r?\n\})/g, 'dictionarySortKey');
   const data = vm.runInNewContext(source, Object.create(null), { timeout: 1000 });
-  if (!Array.isArray(data) || data.length !== 79) throw new Error('Expected exactly 79 dictionary entries');
+  if (!Array.isArray(data) || data.length < 79) throw new Error('Expected at least 79 dictionary entries');
   const words = new Set();
   for (const entry of data) {
     if (!entry || FIELDS.some(field => typeof entry[field] !== 'string' || !entry[field].length)) {
       throw new Error('Every dictionary entry must have six non-empty string fields');
+    }
+    if (OPTIONAL_FIELDS.some(field => field in entry && (typeof entry[field] !== 'string' || !entry[field].length))) {
+      throw new Error(`Optional fields must be non-empty strings: ${entry.w}`);
     }
     if (words.has(entry.w)) throw new Error(`Duplicate dictionary word: ${entry.w}`);
     words.add(entry.w);
@@ -45,7 +49,7 @@ export function escapeHtml(value) {
 }
 
 export function renderEntries(entries) {
-  return entries.map(d => `    <div class="entry">
+  return entries.map(d => `    <div class="entry" id="w-${escapeHtml(d.w)}">
       <div class="top">
         <span class="word">${escapeHtml(d.w)}</span>
         <span class="kana">${escapeHtml(d.k)}</span>
@@ -55,7 +59,8 @@ export function renderEntries(entries) {
       <div class="ex">
         <span class="label">例</span><span class="example">${escapeHtml(d.ex)}</span>
         <span class="std">＝ ${escapeHtml(d.std)}</span>
-      </div>
+      </div>${d.n ? `
+      <p class="note-word"><span class="label">解説</span>${escapeHtml(d.n)}</p>` : ''}
     </div>`).join('\n');
 }
 
@@ -84,7 +89,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     if (process.argv.slice(2).some(arg => arg !== '--check')) throw new Error('Usage: node tools/build_c006_dictionary.mjs [--check]');
     const check = process.argv.includes('--check');
     const changed = buildDictionary({ check });
-    console.log(`c006 dictionary: 79 entries ${check ? 'verified' : changed ? 'generated' : 'unchanged'}`);
+    console.log(`c006 dictionary: ${readDictionary(fs.readFileSync(path.join(ROOT, 'c006.html'), 'utf8')).length} entries ${check ? 'verified' : changed ? 'generated' : 'unchanged'}`);
   } catch (error) {
     console.error(error.message);
     process.exitCode = 1;
