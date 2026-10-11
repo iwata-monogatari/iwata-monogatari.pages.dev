@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-10-09",
+  "updated_at": "2026-10-11",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -32414,6 +32414,29 @@
         "仏像",
         "鑑賞メモ",
         "資料の読み方"
+      ]
+    },
+    {
+      "title": "祭りは、なぜ続くのか。── 人と地域をつなぐ、それぞれの関わり方",
+      "url": "matsuri-community.html",
+      "district": [],
+      "themes": [
+        "festival",
+        "life"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-10-11",
+      "updated_at": "2026-10-11",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "summary": "同じ法被を着て過ごす時間、受け継がれる祈り、日々の暮らしにつながる記憶。祭りを支える人々への感謝と、それぞれの関わり方を大切にしながら、磐田の祭りの風景から考える随想。",
+      "topics": [
+        "祭り",
+        "地域のつながり",
+        "随想"
       ]
     }
   ]
