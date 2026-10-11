@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1791719936,
-  "generation": 20261011205856,
-  "git_commit_at_stamp": "ced5590e8736becf5530cfa5ecd8bd2f05c56c90",
+  "generated_at_unix": 1791735998,
+  "generation": 20261012012638,
+  "git_commit_at_stamp": "018351ae7d3caccca8afa01ad76a1b2b5b28a902",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "3cedb1eccbdb9cbc67c84e37c9816293079ab2dd577f9739142a7d89005b2868"
+      "sha256": "dabea5b38cee79a2a3d91e499ba15a56ae9fbc18b2e20d4273626a4b6f84efa8"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "81328e24cdd1933b01fc3f3d33069300fbcb997a71597c9fee607590701d77b2"
+      "sha256": "fdc2aeb325dc19ab7ffe59684f7c496a1b2658bffc6b6feddb31d0311cb6e054"
     },
     {
       "path": "data/pages.json",
-      "sha256": "6b39d102ca262f655ce1137db73c356283ede578ef4aaebfc1af9d289d10bdad"
+      "sha256": "1eecee89b852936856d66bc5e6b24143016bed83ad0b01757998b50a6857b121"
     },
     {
       "path": "index.html",
-      "sha256": "abf51db827314e1aaa5ec84380c617138332617cfe9c949cc14957ec60cd14e7"
+      "sha256": "b27d8d160069c97edfd71caaabadc9645d30ded8b84efe4078a29148cb505d9a"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "379100e3dbdc6338909c2d4f57654ab0db84993214f40a03157d714f1c93da61"
+      "sha256": "58d999d3272aca279fddab763d14c74283f5a8ef69d61156432e32380d355ce6"
     },
     {
       "path": "updates.html",
-      "sha256": "2a2ad08b9cff121044715bdc98a186ec5d1366c279ccae5a37b962a864cdf44c"
+      "sha256": "f1f7de563de76f92741cc709b6fa341c8c0bdf6d234ef754b121111ce73f0613"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "adabe2b2b75946ab37cec6272cdc36401bf125a974d1dd4c0b5ad48a73446493",
+      "content_sha256": "770ad7a12326f9b76c3b5eb68527ce92a34676fe4c40eb2f75944ae9ee29092a",
       "path": "index.html",
-      "sha256": "abf51db827314e1aaa5ec84380c617138332617cfe9c949cc14957ec60cd14e7",
+      "sha256": "b27d8d160069c97edfd71caaabadc9645d30ded8b84efe4078a29148cb505d9a",
       "url": "/"
     },
     {
-      "content_sha256": "5c5b51e41b08a6d696ae0780754528efc5c828c0f7f53d7844c39bf33e609c4e",
+      "content_sha256": "9f1a18d9b76400ba62e5b5a8d9c3097d50fdd4f7abbaa9b2a6ee373ab7b3a522",
       "path": "updates.html",
-      "sha256": "2a2ad08b9cff121044715bdc98a186ec5d1366c279ccae5a37b962a864cdf44c",
+      "sha256": "f1f7de563de76f92741cc709b6fa341c8c0bdf6d234ef754b121111ce73f0613",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "346c82cc2077426cd98220385cb2beb27fb839fe703eb83688bdbfeb855098b9",
+      "content_sha256": "29477d335d31bca11e34df6c83aea0e7ddc5409eea53e1f4cb73adf78c167329",
       "path": "c034.html",
-      "sha256": "3cedb1eccbdb9cbc67c84e37c9816293079ab2dd577f9739142a7d89005b2868",
+      "sha256": "dabea5b38cee79a2a3d91e499ba15a56ae9fbc18b2e20d4273626a4b6f84efa8",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "79c9c30ebcda0ee861f17013af3f98f1ea0c794d1b15c782d690b5789494f639",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "c10089494aec2ae786c4cda05ef12d03420febe6d8e22ff6d8dd31f6aa8be11f",
+      "path": "blog/20261012-local-history-reading-circle/index.html",
+      "sha256": "cca2c27ddf5657a21d59e46b012ee23ae6b00e6e4457c65665dcf9a0c9610c55",
+      "url": "/blog/20261012-local-history-reading-circle"
     },
     {
       "content_sha256": "c2ba8cc54454a7b08b02f85a7eac36373d9dc7ff698495fa1301792b3a32ddb2",
@@ -844,23 +850,17 @@
       "path": "c146.html",
       "sha256": "02620797f4396edb9e5f0be6360f9a0f3e39238b0368a3913a670a21a474c134",
       "url": "/c146.html"
-    },
-    {
-      "content_sha256": "aefd4448124115539204b20ab29fbc8412cce991b5e1bfc4a1982484b5ba6f85",
-      "path": "c147.html",
-      "sha256": "ae250e09839b2a83d0246e05f768a9324e6048d0b4ccbae4655c37dc60c50221",
-      "url": "/c147.html"
     }
   ],
   "schema": 1,
-  "state_hash": "97439df0c9b87d886d86342f23c22e970f8add22241930ac4e88d94fd89937dc",
+  "state_hash": "f26fcd64a23508fb79a895a9e8147ca8b916f2c96727319882b9a96b5e3eb3ea",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
-    "new_articles": 1233,
-    "new_articles_sha256": "81328e24cdd1933b01fc3f3d33069300fbcb997a71597c9fee607590701d77b2",
-    "pages_sha256": "6b39d102ca262f655ce1137db73c356283ede578ef4aaebfc1af9d289d10bdad",
-    "pages_total": 1158,
-    "published_pages": 1157
+    "new_articles": 1234,
+    "new_articles_sha256": "fdc2aeb325dc19ab7ffe59684f7c496a1b2658bffc6b6feddb31d0311cb6e054",
+    "pages_sha256": "1eecee89b852936856d66bc5e6b24143016bed83ad0b01757998b50a6857b121",
+    "pages_total": 1159,
+    "published_pages": 1158
   }
 }

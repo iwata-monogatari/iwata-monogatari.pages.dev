@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-10-11",
+  "updated_at": "2026-10-12",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -32461,6 +32461,30 @@
       "topics": [
         "火の見櫓",
         "防災",
+        "資料の読み方"
+      ]
+    },
+    {
+      "title": "ブログ：郷土史読書会の開き方｜磐田の本編で始める",
+      "url": "blog/20261012-local-history-reading-circle/",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-10-12",
+      "updated_at": "2026-10-12",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "summary": "郷土史読書会は、家族や知人2〜4人で本編の一節を45分読む形から。磐田の堂山古墳・新豊院山古墳群・発掘調査報告書の本編を使い、記載と感想、未確認の疑問を分ける進め方を提案します。読む範囲の決め方、役割分担、持ち帰るメモまで大石浩之が案内します。",
+      "topics": [
+        "読書会",
+        "古墳・遺跡",
         "資料の読み方"
       ]
     }
