@@ -26,7 +26,7 @@ HUBS = [('c130', '鉄道史'), ('c094', '学校史'), ('c016', '祭り'),
         ('c009', '地名・町名の由来'), ('c014', '旧村と合併'), ('c012', '古墳・遺跡'),
         ('c098', '産業史'), ('h001', '戦争の記憶'), ('c131', '古写真・古地図'),
         ('c132', '人物'), ('c133', '神社'), ('c134', '寺院'),
-        ('c135', '消えた建物'), ('c136', '道と橋')]
+        ('c135', '消えた建物'), ('c136', '道と橋'), ('c006', 'ことば')]
 EXCLUDED_PATHS = {'/', '/c034', '/bbs', '/updates', '/404', '/blog/', '/oishi-ronko/'}
 
 
@@ -429,7 +429,7 @@ def build(check=False):
               'gram_total_gzip_bytes': sum(len(gzip.compress(encoded(g), mtime=0)) for g in grams),
               'exclusions': excluded, 'inventory': inventory,
               'unknown_ledger_themes': sorted({t for r in records for t in r['ledgerThemes']} - set(ledger['themes'])),
-              'classification_policy': '14 hub body links are separate from ledger themes; no semantic inference',
+              'classification_policy': '15 hub body links are separate from ledger themes; no semantic inference',
               'body_extraction': 'main/article else body, excluding scripts/styles/nav/header/footer/aside/common policy/property/reactions/related/pager/crumb. All original file hashes and references preserved separately.'}
     print(json.dumps({k: v for k, v in report.items() if k not in {'inventory', 'exclusions', 'unknown_ledger_themes'}}, ensure_ascii=False))
     return report

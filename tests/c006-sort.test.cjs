@@ -6,6 +6,9 @@ const vm = require("node:vm");
 
 const ROOT = path.resolve(__dirname, "..");
 const html = fs.readFileSync(path.join(ROOT, "c006.html"), "utf8");
+// 語数は正本の JSON から読む（語を追加するたびにテストを書き換えない）。
+const JSON_ENTRIES = JSON.parse(fs.readFileSync(path.join(ROOT, "data/c006-dictionary.json"), "utf8")).entries;
+const COUNT = JSON_ENTRIES.length;
 
 function extract(pattern, label) {
   const match = html.match(pattern);
@@ -13,9 +16,9 @@ function extract(pattern, label) {
   return match[1];
 }
 
-const dataSource = extract(/const DATA = (\[[\s\S]*?\n\]);/, "dictionary data");
+const dataSource = extract(/const DATA = (\[[\s\S]*?\r?\n\]);/, "dictionary data");
 const sortKeySource = extract(
-  /(function dictionarySortKey\(reading\)\{[\s\S]*?\n\})/,
+  /(function dictionarySortKey\(reading\)\{[\s\S]*?\r?\n\})/,
   "dictionarySortKey"
 );
 const DATA = vm.runInNewContext(dataSource);
@@ -54,10 +57,13 @@ test("comparison keys ignore leading wave dashes and secondary readings", () => 
   assert.equal(dictionarySortKey("ぼう／ぼっかける"), "ぼう");
 });
 
-test("all 122 entries remain and begin in Japanese syllabary order", () => {
+test("the page data matches the JSON source and begins in Japanese syllabary order", () => {
   const words = sortedWords();
-  assert.equal(DATA.length, 122);
-  assert.equal(new Set(words).size, 122);
+  assert.equal(DATA.length, COUNT);
+  assert.ok(COUNT >= 122, "the dictionary never shrinks below the published 122 words");
+  assert.equal(new Set(words).size, COUNT);
+  assert.deepEqual(Array.from(DATA, (d) => d.w), JSON_ENTRIES.map((e) => e.w));
+  assert.deepEqual(Array.from(DATA, (d) => d.id), JSON_ENTRIES.map((e) => e.id));
   assert.deepEqual(words.slice(0, 8), [
     "あいさ", "あおたえる", "頭を切る", "あっこ", "あわくい", "あんき", "あんも", "いいにする",
   ]);
@@ -89,5 +95,5 @@ test("search, category filtering, empty results and reset preserve dictionary be
   );
 
   assert.equal(filteredWords("すべて", "存在しない検索語").length, 0);
-  assert.equal(filteredWords("すべて", "").length, 122);
+  assert.equal(filteredWords("すべて", "").length, COUNT);
 });

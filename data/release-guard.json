@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1791763165,
-  "generation": 20261012085925,
-  "git_commit_at_stamp": "95df368636b8ebed41bb594f38e074bbf1690628",
+  "generated_at_unix": 1791770760,
+  "generation": 20261012110600,
+  "git_commit_at_stamp": "9d3334843b051a1c625140b98bcabc3ec5237381",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,15 +35,15 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "d783d3cbe6f31d5463a83c18c3f422cf5850332ad738b17744f9a54c2a99e3cc"
+      "sha256": "c60bcf0005c047920dea47752cfc3575b8483b2bef519725c43005f24c2cd2d8"
     },
     {
       "path": "data/pages.json",
-      "sha256": "2e07b47a0de878a03963c3681a17e84ca0e9dfaf5a5d41722e77a8945f862d23"
+      "sha256": "18a6c20624b617203c67e1fde2e0203c5e5c47d4f3675115e66dae01571d4a4c"
     },
     {
       "path": "index.html",
-      "sha256": "2df07e41d6c0e4595ba6761c31ae39544d1f0546e83c7d12e2a87fd097da9dc7"
+      "sha256": "d195c7c5755298bb6a991e82d4c87f9ceb62c5ec81dc28ae1380f2f138062c20"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "a5893a7a4d79e22449657d93f292d1306b8a674bc21ea20f55c1792a194934c6"
+      "sha256": "eb649a95ca6fd793408f65d7682b2a1625596be24e5b2deeb5a6a34400a8fb96"
     },
     {
       "path": "updates.html",
-      "sha256": "39536bf80efaa0d47cd6bb2653363309a9155a424476fe96b07c67dd3d4eff6f"
+      "sha256": "86cffca6fa81e8ac0020528eee9edb4f358dc48df16feae9525bb3fb7299258a"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "0c59c2e6f71fc61af3d2b09f89e41522962e7eac47860c7059784ef1f6eda116",
+      "content_sha256": "941033b80096beedcf0fe55e314f8f44091d47402ad340d3df786142aa415714",
       "path": "index.html",
-      "sha256": "2df07e41d6c0e4595ba6761c31ae39544d1f0546e83c7d12e2a87fd097da9dc7",
+      "sha256": "d195c7c5755298bb6a991e82d4c87f9ceb62c5ec81dc28ae1380f2f138062c20",
       "url": "/"
     },
     {
-      "content_sha256": "00bc960132601b5a6f6d38fecf668c35b437c53d5d558834da0f471dfdc19a2a",
+      "content_sha256": "fe1674b6fbbe8ebe0dabba8de7e43ed90b142788aeadbdaab8f4614ae042f7a2",
       "path": "updates.html",
-      "sha256": "39536bf80efaa0d47cd6bb2653363309a9155a424476fe96b07c67dd3d4eff6f",
+      "sha256": "86cffca6fa81e8ac0020528eee9edb4f358dc48df16feae9525bb3fb7299258a",
       "url": "/updates.html"
     },
     {
@@ -150,9 +150,9 @@
       "url": "/blog/20261012-local-history-reading-circle"
     },
     {
-      "content_sha256": "231ecc41596dfe964de115923763c23008b27b6cc03ac8915eb228ad4aaa4537",
+      "content_sha256": "7e5fbb678550178d988a88e3993ade578f459c44dc41b1d265f3e50041f41ce7",
       "path": "c006.html",
-      "sha256": "bee074b7b009ab9fc202722b58ad5ebb11e6a01e7df8397c9117b672cd88e58e",
+      "sha256": "ab0c955fbcd023edce30ad3351b4e717a183a8c2da73f1ad629ddf4a97873736",
       "url": "/c006"
     },
     {
@@ -192,9 +192,9 @@
       "url": "/blog/20261008-akamatsu-autumn-exhibition-guide"
     },
     {
-      "content_sha256": "231ecc41596dfe964de115923763c23008b27b6cc03ac8915eb228ad4aaa4537",
+      "content_sha256": "7e5fbb678550178d988a88e3993ade578f459c44dc41b1d265f3e50041f41ce7",
       "path": "c006.html",
-      "sha256": "bee074b7b009ab9fc202722b58ad5ebb11e6a01e7df8397c9117b672cd88e58e",
+      "sha256": "ab0c955fbcd023edce30ad3351b4e717a183a8c2da73f1ad629ddf4a97873736",
       "url": "/c006.html"
     },
     {
@@ -847,13 +847,13 @@
     }
   ],
   "schema": 1,
-  "state_hash": "0ffd2eb81f747d3dd35dc98166a04f78d41514a48355bef92e89b072476cb5c3",
+  "state_hash": "3437fe64a5106b01ca3ffd31341474f8e08157bb07ddf09de5ca43bddaf6ce2b",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1106,
     "new_articles": 1235,
-    "new_articles_sha256": "d783d3cbe6f31d5463a83c18c3f422cf5850332ad738b17744f9a54c2a99e3cc",
-    "pages_sha256": "2e07b47a0de878a03963c3681a17e84ca0e9dfaf5a5d41722e77a8945f862d23",
+    "new_articles_sha256": "c60bcf0005c047920dea47752cfc3575b8483b2bef519725c43005f24c2cd2d8",
+    "pages_sha256": "18a6c20624b617203c67e1fde2e0203c5e5c47d4f3675115e66dae01571d4a4c",
     "pages_total": 1159,
     "published_pages": 1158
   }

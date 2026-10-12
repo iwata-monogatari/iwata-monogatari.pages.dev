@@ -94,3 +94,15 @@
 - release stampの保護対象は131 URLになった。既存の「最新120履歴」窓からc151が外れたためで、記事削除ではない。ガードの実装・基準を変えていない。
 - 保存先: `C:\Users\Owner\Documents\Codex\2026-10-09\10-9-codex-c006-79-html\work\backup-before-sync` と `work\backup-start-98d4005`。差分・画面・監査結果は同チャットの `outputs`。
 - 公開状態: レビュー候補の作成まで。commit・push・mainへの新規コミットのマージ・本番公開は未実施。mainへのpushは本番公開を開始し、guard:deployはclean/pushed mainを要求するため、通常guard成功を公開許可とみなさない。9月のGSC旧値を効果予測に流用せず、順位・アクセス増加を成果としていない。
+
+## 2026-10-12（JST）c006 拡充企画書の第0期・第1期の実装
+
+- 開始確認: `main` を `git pull --ff-only` で `9d333484`（c006の出典訂正を含む5コミット）へ早送り。`npm.cmd run check-live-sync` は終了コード0（129保護URLと索引データ2件、release guard が本番と一致）。未コミット変更なし。
+- 根拠: 依頼者の企画書「遠州弁辞典（c006）拡充企画書」。検索需要は既存記録の Search Console 実測（2026-09-01〜09-28）を引き継ぎ、新しい値は取得していない。
+- 実施: 語データの正本を `data/c006-dictionary.json` へ移し、`tools/build_c006_dictionary.mjs` で辞典一覧・検索用データ・DefinedTermSet・調査用語ID・絵札制作表を生成。移行前後で122語の6項目・解説・並び順・生成範囲外の本文が一致することを照合した。語ID（ローマ字）を付け、従来の `#w-語` も維持。
+- かるた: 各語に絵札の欄（未制作は頭の字の札）、「絵札で並べる」表示、拡大表示を追加。`assets/karuta/c006/` に300px・900pxのWebPがそろった語だけ自動で切り替わる。変換は `tools/build_c006_karuta.py`、手順は `docs/karuta/README.md`。絵札そのものは未制作。
+- 資料の印: 既存の解説と10-02・10-12の確認記録で裏付けた5語（fpjd：だら・ずら・ら・せんひき、gunshi1921：あんも）のみ。語義・地域差・用例は追加していない。
+- 読者調査: `functions/api/kotoba/answer.js`・`stats.js`、D1新表 `kotoba_survey`（初回リクエストで作成、`migrations/0003_kotoba_survey.sql`）。記事の反応ボタンの共通部分は変更なし。氏名・連絡先なし、語ごと30件・内訳5件未満は割合を返さない、1IP1日400件まで、運営者アクセス除外。
+- 記事との接続: 語→記事13語（公開検索レコードに限定）。記事→辞典の逆リンクを c008・c118・m029・f035 に追加。検索のテーマ絞り込みに「ことば」（c006）を加え、c137・トップ・ご案内の「14のテーマ」を15に改めた。
+- 検証: `npm.cmd run build`、`search:check`、`search:test`（1,180件）、Nodeテスト29件（c006・調査API・反応集計）、Python 6件（絵札変換）、`build_c006_karuta.py --check`、`knowledge-count:audit`（1,106本）、`release:stamp`→`release:check`→`guard`（1,106本・17規則すべて合格）。ローカル確認用サーバー（本物の調査API関数＋SQLite）でPC幅・375px幅の表示、調査の初回質問・取り消し・答え直し、絵札一覧、拡大表示、語IDリンクを確認した。確認用の仮の絵札画像は削除済み。
+- 未着手（人手が必要）: 絵札の作画、郡誌方言章の翻刻、市内方言集の閲覧と許諾、聞き書き、解説記事、c019・c020を含む Search Console 基準値の取得、OGP画像の差し替え（絵札40語後）、上部ナビの「ことば資料室」（第4期）。
