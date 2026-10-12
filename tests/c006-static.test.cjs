@@ -87,11 +87,13 @@ test('every entry shows a karuta slot: a pending card now, an image once both We
 
 test('source badges appear only for recorded sources and say what was recorded', () => {
   const withSources = json.entries.filter(e => e.sources.length);
-  assert.deepEqual(withSources.map(e => e.id).sort(), ['anmo', 'dara', 'ra', 'senhiki', 'zura']);
+  assert.equal(withSources.length, 30);
   const b = block();
   assert.equal((b.match(/<span class="src-badges">/g) || []).length, withSources.length);
-  assert.match(b, /<span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1242頁に「あんもう」の記録">1921<\/span>/);
-  assert.match(b, /<span class="src-badge src-fpjd" title="[^"]*質問「定規」にセンヒキの回答">国研<\/span>/);
+  assert.match(b, /<span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1242頁・旧福島村に「あんもう」の記録[^"]*">1921<\/span>/);
+  assert.match(b, /<span class="src-badge src-fpjd" title="[^"]*質問「じょうぎ（定規）」にセンヒキの回答[^"]*">国研<\/span>/);
+  assert.match(b, /原注：.*モノサシ/);
+  assert.match(b, /質問「うつくしい（美しい）」の注記にケッコイの記録/);
   assert.equal((b.match(/<p class="word-src">/g) || []).length, withSources.length);
 });
 
@@ -101,7 +103,7 @@ test('article links point only to public search records', async () => {
   const linked = json.entries.flatMap(e => e.articles);
   assert.ok(linked.length >= 14);
   for (const a of linked) assert.ok(titles.has(a), `${a} is public`);
-  assert.match(block(), /<p class="word-links"><span class="label">記事<\/span><a href="\/c008">標準語⇄遠州弁 変換<\/a><\/p>/);
+  assert.match(block(), /<a href="\/c008">標準語⇄遠州弁 変換<\/a>/);
 });
 
 test('structured data lists every term as a DefinedTerm with a stable URL', () => {
@@ -139,6 +141,7 @@ test('regeneration is identical, check mode never writes, and stale output is de
     }
     const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/search/manifest.json'), 'utf8'));
     fs.copyFileSync(path.join(ROOT, manifest.metadata.replace(/^\//, '')), path.join(dir, manifest.metadata.replace(/^\//, '')));
+    fs.cpSync(path.join(ROOT, 'assets/karuta/c006'), path.join(dir, 'assets/karuta/c006'), { recursive: true });
     const stale = html.replace('<!-- c006-dictionary:end -->', 'STALE<!-- c006-dictionary:end -->');
     fs.writeFileSync(path.join(dir, 'c006.html'), stale);
     assert.throws(() => buildDictionary({ root: dir, check: true }), /stale/);

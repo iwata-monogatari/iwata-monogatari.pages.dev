@@ -140,8 +140,8 @@ export function karutaAlt(e) {
 }
 
 function sourceText(s) {
-  if (s.type === 'fpjd') return `${SOURCE_TYPES.fpjd.name}：質問「${s.item}」に${s.forms}の回答`;
-  if (s.type === 'gunshi1921') return `${SOURCE_TYPES.gunshi1921.name}、${s.page}頁に「${s.forms}」の記録`;
+  if (s.type === 'fpjd') return `${SOURCE_TYPES.fpjd.name}：質問「${s.item}」${s.recordKind === 'note' ? 'の注記に' : 'に'}${s.forms}${s.recordKind === 'note' ? 'の記録' : 'の回答'}${s.dataId ? `（data-ID ${s.dataId}）` : ''}${s.note ? `。原注：${s.note}` : ''}`;
+  if (s.type === 'gunshi1921') return `${SOURCE_TYPES.gunshi1921.name}、${s.page}頁${s.village ? `・旧${s.village}` : ''}に「${s.forms}」の記録${s.note ? `。${s.note}` : ''}`;
   if (s.type === 'hogenshu') return `${s.book}に「${s.forms}」の記載`;
   return `${SOURCE_TYPES.reader.name}：${s.forms}`;
 }
@@ -156,6 +156,7 @@ export function renderEntry(e, { ready = false, headChar, articleTitles = null }
   const karuta = ready
     ? `      <figure class="karuta karuta-ready">
         <a class="karuta-zoom" href="${files.large}"><img src="${files.thumb}" width="300" height="400" loading="lazy" decoding="async" alt="${escapeHtml(karutaAlt(e))}"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>`
     : `      <figure class="karuta karuta-pending" role="img" aria-label="${escapeHtml(`遠州弁かるた「${e.w}」の絵札（準備中）`)}">
         <span class="karuta-kana" aria-hidden="true">${escapeHtml(headChar)}</span>

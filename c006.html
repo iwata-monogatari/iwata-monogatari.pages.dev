@@ -186,6 +186,7 @@
   .entry-body{min-width:0;}
   .karuta{margin:2px 0 0;width:92px;}
   .karuta-ready img{display:block;width:100%;height:auto;border-radius:6px;box-shadow:0 1px 3px rgba(31,58,72,.18);background:var(--paper-deep);}
+  .karuta-credit{margin-top:4px;font-size:10px;line-height:1.5;color:var(--ink-soft);text-align:center;}
   .karuta-zoom{display:block;border-radius:6px;}
   .karuta-zoom:focus-visible{outline:3px solid var(--brown);outline-offset:2px;}
   .karuta-pending{aspect-ratio:3/4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
@@ -274,7 +275,7 @@
   "@type": "Article",
   "headline": "遠州弁辞典",
   "description": "磐田・中遠地域を中心とした遠州弁122語を、五十音・分類・標準語から引ける辞典。意味・作例・解説・語尾・地域差・出典も確認できる。",
-  "image": "https://iwata-monogatari.net/img/ogp.jpg",
+  "image": "https://iwata-monogatari.net/img/c006-karuta-ogp.webp",
   "inLanguage": "ja",
   "author": {"@type":"Person","@id":"https://oishi-hiroyuki.org/#person","name":"大石浩之","url":"https://oishi-hiroyuki.org/profile"},
   "publisher": {
@@ -283,7 +284,7 @@
     "url": "https://iwata-monogatari.net/",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://iwata-monogatari.net/img/ogp.jpg"
+      "url": "https://iwata-monogatari.net/img/c006-karuta-ogp.webp"
     }
   },
   "isPartOf": {
@@ -1047,7 +1048,7 @@
    "@type": "DefinedTerm",
    "@id": "https://iwata-monogatari.net/c006#zura",
    "name": "ずら",
-   "description": "〜だろう。古くからの推量表現。「だら」より古風で、今は高齢層中心。衰退傾向にある。",
+   "description": "〜だろう。古くから記録のある推量表現。「だら」「ら」と並ぶ言い方。",
    "termCode": "zura",
    "url": "https://iwata-monogatari.net/c006#zura",
    "inDefinedTermSet": {
@@ -1141,7 +1142,7 @@
    "@type": "DefinedTerm",
    "@id": "https://iwata-monogatari.net/c006#dara",
    "name": "だら",
-   "description": "〜だろう、〜でしょう。推量や確認を求めるときの語尾。遠州弁を代表する言い回し。古い「ずら」に代わって若い世代まで広く使う。",
+   "description": "〜だろう、〜でしょう。推量や確認を求めるときの語尾。遠州弁を代表する言い回し。",
    "termCode": "dara",
    "url": "https://iwata-monogatari.net/c006#dara",
    "inDefinedTermSet": {
@@ -1438,7 +1439,7 @@
    "alternateName": [
     "〜なんだ"
    ],
-   "description": "〜なかった。古くからの過去否定の形。新しい「〜んかった」と世代によって使い分けられている（文法欄参照）。",
+   "description": "〜なかった。過去の否定を表す形。「行かなかった」に対する国研の磐田市地点の回答に「イカナンダ」がある。",
    "termCode": "nanda",
    "url": "https://iwata-monogatari.net/c006#nanda",
    "inDefinedTermSet": {
@@ -1649,7 +1650,7 @@
     "〜まい",
     "〜まいか"
    ],
-   "description": "〜しよう、〜しようじゃないか。相手を誘う形。「行かまい」「やらまいか」。駿河の「〜ざあ」に対する、遠州の誘いの形である。",
+   "description": "〜しよう、〜しようじゃないか。相手を誘う形。「行かまい」「やらまいか」。",
    "termCode": "mai",
    "url": "https://iwata-monogatari.net/c006#mai",
    "inDefinedTermSet": {
@@ -1777,7 +1778,7 @@
 </script>
 <!-- c006-terms:end -->
 <meta property="og:url" content="https://iwata-monogatari.net/c006">
-<meta property="og:image" content="https://iwata-monogatari.net/img/ogp.jpg">
+<meta property="og:image" content="https://iwata-monogatari.net/img/c006-karuta-ogp.webp">
 <meta property="og:site_name" content="磐田物語">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json" id="site-identity">
@@ -1911,11 +1912,12 @@
       </ul>
       <p class="intent-note">用例は、掲載した意味・用法をもとに編集部が作成した作例です。実際の話者の発話を引用したものではなく、地域や世代によって使い方が異なる場合があります。</p>
       <div class="kotoba-legend" id="kotoba-legend">
-        <p><strong>資料の印</strong>語の横の印は、公開資料で磐田の記録を確かめられることを示します。<span class="src-badge src-gunshi1921">1921</span>は『静岡県磐田郡誌』（1921年）の方言の記録、<span class="src-badge src-fpjd">国研</span>は国立国語研究所「全国方言分布調査」（2010〜2015年）の磐田市地点の回答です。印のない語は、県内の方言辞典類・概説との照合によって載せています。</p>
-        <p><strong>遠州弁かるた</strong>各語の横に、磐田物語が制作する「遠州弁かるた」の絵札を順に掲げます。絵札がまだの語には、頭の字の札を置いています。絵は作例の場面を描いたものです。学校などでの非営利の利用は、出典を明記すれば自由です（<a href="#karuta-use">利用について</a>）。</p>
+        <p><strong>資料の印</strong>語の横の印は、公開資料で語形や意味の記録を確かめられることを示します（現在30語）。<span class="src-badge src-gunshi1921">1921</span>は『静岡県磐田郡誌』（1921年）の方言の記録、<span class="src-badge src-fpjd">国研</span>は国立国語研究所「全国方言分布調査」（2010〜2015年）の磐田市地点の回答です。郡誌の旧町村名は現在の市域と一致しません。印のない語には、現時点で個別の一次資料との対応を示していません。原表記・回答の注記は<a href="/c172">磐田ことば資料室</a>で確認できます。</p>
+        <p><strong>遠州弁かるた</strong>122語すべてに引札風の絵札を添えました。「絵札で並べる」で一覧でき、絵を押すと拡大できます。絵は生成AIを用い、作例の場面から新規制作したものです。<a href="/downloads/enshu-karuta-122.pdf">絵札・読み札を印刷する（PDF）</a>／<a href="/c176">制作と遊び方</a>。学校などでの非営利の利用は、出典を明記すれば自由です（<a href="#karuta-use">利用について</a>）。</p>
         <p><strong>磐田ことば調査</strong>各語の「使う／聞いたことがある／知らない」に答えると、語ごとの集計に加わります。氏名や連絡先は聞きません。割合は回答が30件に達した語から表示します。読者の自己申告による参考値で、学術調査の結果ではありません。辞典にないことばや家での言い方は、<a href="/bbs">掲示板</a>で教えてください。</p>
       </div>
     </section>
+<nav class="intent-guide" aria-label="ことばの読み物"><strong>ことばを深く読む</strong><p><a href="/c172">郡誌・国研の資料室</a> ／ <a href="/c173">だら・ずら・ら</a> ／ <a href="/c174">家と屋敷のことば</a> ／ <a href="/c175">気づかない方言</a> ／ <a href="/c176">かるたの制作と遊び方</a></p></nav>
     <p class="intent-note" id="dictionary-offline-note">遠州弁122語を五十音順で掲載しています。JavaScriptが使えない場合も、このまま意味・作例・標準語訳を読めます。ページ内検索も利用できます。</p>
     <div class="search-box" hidden>
       <span class="icon">🔍</span>
@@ -1938,14 +1940,15 @@
   <!-- c006-dictionary:start -->
     <div class="entry" id="w-あいさ" data-id="aisa">
       <span class="word-anchor" id="aisa" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「あいさ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">あ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/aisa-900.webp"><img src="/assets/karuta/c006/aisa-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「あいさ」の絵札：たんすと壁のすきまをのぞき込み、落ちた物を探す子ども"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">あいさ</span>
           <span class="kana">あいさ</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1243頁・旧袋井町に「あいさ」の記録。原資料の意味「あひだ」。原注「間」。">1921</span></span>
           <span class="cat">名詞・もの</span>
         </div>
         <p class="mean">間、すきま。</p>
@@ -1953,13 +1956,15 @@
           <span class="label">例</span><span class="example">たんすと壁のあいさに落ちた。</span>
           <span class="std">＝ たんすと壁のあいだに落ちた。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1243-aisa" rel="noopener">『静岡県磐田郡誌』1921年、1243頁・旧袋井町に「あいさ」の記録。原資料の意味「あひだ」。原注「間」。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a>、<a href="/c174">家と屋敷のことば</a></p>
       </div>
     </div>
     <div class="entry" id="w-あおたえる" data-id="aotaeru">
       <span class="word-anchor" id="aotaeru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「あおたえる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">あ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/aotaeru-900.webp"><img src="/assets/karuta/c006/aotaeru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「あおたえる」の絵札：急に名前を呼ばれて、うろたえる人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -1976,9 +1981,9 @@
     </div>
     <div class="entry" id="w-頭を切る" data-id="atamaokiru">
       <span class="word-anchor" id="atamaokiru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「頭を切る」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">あ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/atamaokiru-900.webp"><img src="/assets/karuta/c006/atamaokiru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「頭を切る」の絵札：床屋の椅子で髪を切ってもらう人（頭そのものを切る絵にはしない）"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -1995,9 +2000,9 @@
     </div>
     <div class="entry" id="w-あっこ" data-id="akko">
       <span class="word-anchor" id="akko" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「あっこ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">あ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/akko-900.webp"><img src="/assets/karuta/c006/akko-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「あっこ」の絵札：道の先の角を指さして道案内をする人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2014,9 +2019,9 @@
     </div>
     <div class="entry" id="w-あわくい" data-id="awakui">
       <span class="word-anchor" id="awakui" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「あわくい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">あ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/awakui-900.webp"><img src="/assets/karuta/c006/awakui-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「あわくい」の絵札：玄関で鍵を忘れたことに気づいて慌てる人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2033,9 +2038,9 @@
     </div>
     <div class="entry" id="w-あんき" data-id="anki">
       <span class="word-anchor" id="anki" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「あんき」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">あ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/anki-900.webp"><img src="/assets/karuta/c006/anki-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「あんき」の絵札：仕事を片付けて、縁側でくつろぐ人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2053,15 +2058,15 @@
     </div>
     <div class="entry" id="w-あんも" data-id="anmo">
       <span class="word-anchor" id="anmo" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「あんも」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">あ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/anmo-900.webp"><img src="/assets/karuta/c006/anmo-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「あんも」の絵札：網の上でふくらんで焼けた餅"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">あんも</span>
           <span class="kana">あんも／あんもう</span>
-          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1242頁に「あんもう」の記録">1921</span></span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1242頁・旧福島村に「あんもう」の記録。原資料の意味「餅。又は萩の餅」。原注「餡餅」。辞典の「あんも」と語形が異なる。">1921</span></span>
           <span class="cat">名詞・もの</span>
         </div>
         <p class="mean">餅。</p>
@@ -2070,14 +2075,15 @@
           <span class="std">＝ お餅が焼けたよ。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>静岡県磐田郡教育会編『静岡県磐田郡誌』（1921年）1242頁には、「あんもう」の語形で餅を指す記録がある。ここに掲げた「あんも」とは表記が異なる。</p>
-        <p class="word-src"><span class="label">資料</span><a href="https://dl.ndl.go.jp/pid/965680/1/740" rel="noopener">『静岡県磐田郡誌』1921年、1242頁に「あんもう」の記録</a></p>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1242-anmo" rel="noopener">『静岡県磐田郡誌』1921年、1242頁・旧福島村に「あんもう」の記録。原資料の意味「餅。又は萩の餅」。原注「餡餅」。辞典の「あんも」と語形が異なる。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-いいにする" data-id="iinisuru">
       <span class="word-anchor" id="iinisuru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「いいにする」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">い</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/iinisuru-900.webp"><img src="/assets/karuta/c006/iinisuru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「いいにする」の絵札：雨の窓辺で、ジョギング靴を見ながら今日はやめておこうと考える人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2095,14 +2101,15 @@
     </div>
     <div class="entry" id="w-いがむ" data-id="igamu">
       <span class="word-anchor" id="igamu" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「いがむ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">い</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/igamu-900.webp"><img src="/assets/karuta/c006/igamu-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「いがむ」の絵札：ゆがんだ棚を見上げる人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">いがむ</span>
           <span class="kana">いがむ／えがむ</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1243頁・旧福島村に「いがむ」の記録。原資料の意味「ゆがむ（歪む）」。">1921</span></span>
           <span class="cat">動作・行い</span>
         </div>
         <p class="mean">曲がる、ゆがむ。</p>
@@ -2110,13 +2117,15 @@
           <span class="label">例</span><span class="example">棚がいがんどる。</span>
           <span class="std">＝ 棚がゆがんでいる。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1243-igamu" rel="noopener">『静岡県磐田郡誌』1921年、1243頁・旧福島村に「いがむ」の記録。原資料の意味「ゆがむ（歪む）」。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-いきれる" data-id="ikireru">
       <span class="word-anchor" id="ikireru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「いきれる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">い</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/ikireru-900.webp"><img src="/assets/karuta/c006/ikireru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「いきれる」の絵札：閉め切った蒸し暑い部屋で、汗だくでうちわをあおぐ人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2134,9 +2143,9 @@
     </div>
     <div class="entry" id="w-いずようない" data-id="izuyounai">
       <span class="word-anchor" id="izuyounai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「いずようない」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">い</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/izuyounai-900.webp"><img src="/assets/karuta/c006/izuyounai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「いずようない」の絵札：寄り合いの席の端で、居心地悪そうに座る人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2153,14 +2162,15 @@
     </div>
     <div class="entry" id="w-いぜる" data-id="izeru">
       <span class="word-anchor" id="izeru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「いぜる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">い</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/izeru-900.webp"><img src="/assets/karuta/c006/izeru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「いぜる」の絵札：機械のつまみを勝手にいじろうとする子どもと、止める大人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">いぜる</span>
           <span class="kana">いぜる／えぜる</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1243頁・旧福島村に「いぜる」の記録。原資料の意味「いぢる」。">1921</span></span>
           <span class="cat">動作・行い</span>
         </div>
         <p class="mean">いじる、触る。</p>
@@ -2168,13 +2178,15 @@
           <span class="label">例</span><span class="example">機械、勝手にいぜっちゃいかんに。</span>
           <span class="std">＝ 機械を勝手にいじってはだめだよ。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1243-izeru" rel="noopener">『静岡県磐田郡誌』1921年、1243頁・旧福島村に「いぜる」の記録。原資料の意味「いぢる」。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-いっちょ" data-id="iccho">
       <span class="word-anchor" id="iccho" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「いっちょ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">い</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/iccho-900.webp"><img src="/assets/karuta/c006/iccho-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「いっちょ」の絵札：一日よく働き、汗をぬぐってひと息つく人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2191,14 +2203,15 @@
     </div>
     <div class="entry" id="w-いのく" data-id="inoku">
       <span class="word-anchor" id="inoku" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「いのく」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">い</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/inoku-900.webp"><img src="/assets/karuta/c006/inoku-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「いのく」の絵札：写真を撮るカメラの前で、じっとするよう言われる家族"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">いのく</span>
           <span class="kana">いのく／いぬく</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1243頁・旧袋井町に「いのく」の記録。原資料の意味「動く」。">1921</span></span>
           <span class="cat">動作・行い</span>
         </div>
         <p class="mean">動く。</p>
@@ -2206,13 +2219,15 @@
           <span class="label">例</span><span class="example">写真撮るで、いのかんで。</span>
           <span class="std">＝ 写真を撮るから、動かないで。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1243-inoku" rel="noopener">『静岡県磐田郡誌』1921年、1243頁・旧袋井町に「いのく」の記録。原資料の意味「動く」。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-いぼる" data-id="iboru">
       <span class="word-anchor" id="iboru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「いぼる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">い</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/iboru-900.webp"><img src="/assets/karuta/c006/iboru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「いぼる」の絵札：田んぼのぬかるみに足をとられた人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2229,9 +2244,9 @@
     </div>
     <div class="entry" id="w-いみ" data-id="imi">
       <span class="word-anchor" id="imi" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「いみ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">い</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/imi-900.webp"><img src="/assets/karuta/c006/imi-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「いみ」の絵札：ひびの入った茶碗を手に取って見る人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2248,9 +2263,9 @@
     </div>
     <div class="entry" id="w-いやったい" data-id="iyattai">
       <span class="word-anchor" id="iyattai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「いやったい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">い</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/iyattai-900.webp"><img src="/assets/karuta/c006/iyattai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「いやったい」の絵札：雨の窓の外を見て、出かけるのをためらう人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2267,9 +2282,9 @@
     </div>
     <div class="entry" id="w-いらんこん" data-id="irankon">
       <span class="word-anchor" id="irankon" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「いらんこん」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">い</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/irankon-900.webp"><img src="/assets/karuta/c006/irankon-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「いらんこん」の絵札：口をはさもうとする人を、手で制する人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2286,9 +2301,9 @@
     </div>
     <div class="entry" id="w-うっちゃる" data-id="uccharu">
       <span class="word-anchor" id="uccharu" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「うっちゃる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">う</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/uccharu-900.webp"><img src="/assets/karuta/c006/uccharu-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「うっちゃる」の絵札：いらない物をごみ袋に入れる手"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2305,9 +2320,9 @@
     </div>
     <div class="entry" id="w-えいかん" data-id="eikan">
       <span class="word-anchor" id="eikan" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「えいかん」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">え</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/eikan-900.webp"><img src="/assets/karuta/c006/eikan-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「えいかん」の絵札：両手いっぱいにみかんをもらった人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2324,9 +2339,9 @@
     </div>
     <div class="entry" id="w-えらい" data-id="erai">
       <span class="word-anchor" id="erai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「えらい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">え</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/erai-900.webp"><img src="/assets/karuta/c006/erai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「えらい」の絵札：長く歩いたあと、汗をふいて腰を下ろす人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2344,14 +2359,15 @@
     </div>
     <div class="entry" id="w-おえん" data-id="oen">
       <span class="word-anchor" id="oen" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「おえん」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">お</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/oen-900.webp"><img src="/assets/karuta/c006/oen-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「おえん」の絵札：壊れた道具を前に、お手上げの身ぶりをする人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">おえん</span>
           <span class="kana">おえん</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1244頁・旧袋井町に「おえん」の記録。原資料の意味「いかん」。原注は原画像を参照。">1921</span></span>
           <span class="cat">気持ち</span>
         </div>
         <p class="mean">だめだ、いけない、手に負えない。「いかん」と近い。</p>
@@ -2359,13 +2375,15 @@
           <span class="label">例</span><span class="example">こりゃもう、おえんわ。</span>
           <span class="std">＝ これはもう、だめだよ。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1244-oen" rel="noopener">『静岡県磐田郡誌』1921年、1244頁・旧袋井町に「おえん」の記録。原資料の意味「いかん」。原注は原画像を参照。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-おおぼったい" data-id="oobottai">
       <span class="word-anchor" id="oobottai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「おおぼったい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">お</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/oobottai-900.webp"><img src="/assets/karuta/c006/oobottai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「おおぼったい」の絵札：寝不足で、まぶたが腫れぼったい人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2383,14 +2401,15 @@
     </div>
     <div class="entry" id="w-おぞい" data-id="ozoi">
       <span class="word-anchor" id="ozoi" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「おぞい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">お</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/ozoi-900.webp"><img src="/assets/karuta/c006/ozoi-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「おぞい」の絵札：買ってきた品物の粗末さにがっかりする人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">おぞい</span>
           <span class="kana">おぞい</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1244頁・旧浦川村に「おぞい」の記録。原資料の意味「わるい」。現在の磐田市域の記録として扱わない。">1921</span></span>
           <span class="cat">形容・ようす</span>
         </div>
         <p class="mean">粗悪な、品質が悪い、みすぼらしい。</p>
@@ -2399,13 +2418,15 @@
           <span class="std">＝ 粗悪な品物を買わされた。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>古語の「おぞし」に連なる語とみられる。静岡県内で広く使われ、「おぞい家」「おぞい服」のように物の粗末さを言うことが多い。</p>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1244-ozoi" rel="noopener">『静岡県磐田郡誌』1921年、1244頁・旧浦川村に「おぞい」の記録。原資料の意味「わるい」。現在の磐田市域の記録として扱わない。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-おだっくい" data-id="odakkui">
       <span class="word-anchor" id="odakkui" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「おだっくい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">お</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/odakkui-900.webp"><img src="/assets/karuta/c006/odakkui-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「おだっくい」の絵札：おだてられてすぐその気になる人と、それを見て笑う仲間"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2423,9 +2444,9 @@
     </div>
     <div class="entry" id="w-おちゃっぴい" data-id="ochappii">
       <span class="word-anchor" id="ochappii" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「おちゃっぴい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">お</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/ochappii-900.webp"><img src="/assets/karuta/c006/ochappii-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「おちゃっぴい」の絵札：よくしゃべり、元気に駆け回る女の子"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2442,9 +2463,9 @@
     </div>
     <div class="entry" id="w-おっさま" data-id="ossama">
       <span class="word-anchor" id="ossama" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「おっさま」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">お</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/ossama-900.webp"><img src="/assets/karuta/c006/ossama-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「おっさま」の絵札：お盆に家を訪れ、仏壇の前でお経をあげるお坊さん"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2462,9 +2483,9 @@
     </div>
     <div class="entry" id="w-おっしー" data-id="osshii">
       <span class="word-anchor" id="osshii" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「おっしー」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">お</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/osshii-900.webp"><img src="/assets/karuta/c006/osshii-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「おっしー」の絵札：湯気の立つ味噌汁のおかわりを頼む人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2481,9 +2502,9 @@
     </div>
     <div class="entry" id="w-おとび" data-id="otobi">
       <span class="word-anchor" id="otobi" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「おとび」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">お</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/otobi-900.webp"><img src="/assets/karuta/c006/otobi-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「おとび」の絵札：草むらを歩いて、服にひっつき虫がたくさん付いた子ども"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2500,9 +2521,9 @@
     </div>
     <div class="entry" id="w-かえち" data-id="kaechi">
       <span class="word-anchor" id="kaechi" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「かえち」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">か</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/kaechi-900.webp"><img src="/assets/karuta/c006/kaechi-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「かえち」の絵札：泊まりがけのかばんに着替えを詰める人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2519,14 +2540,15 @@
     </div>
     <div class="entry" id="w-かじくる" data-id="kajikuru">
       <span class="word-anchor" id="kajikuru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「かじくる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">か</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/kajikuru-900.webp"><img src="/assets/karuta/c006/kajikuru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「かじくる」の絵札：蚊に刺された腕をかこうとする子どもと、止める大人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">かじくる</span>
           <span class="kana">かじくる</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1245頁・旧袋井町に「かじくる」の記録。原資料の意味「かく」。原注「引掻く」。">1921</span></span>
           <span class="cat">動作・行い</span>
         </div>
         <p class="mean">引っかく、かきむしる。「かじる」を強めた形。</p>
@@ -2534,13 +2556,15 @@
           <span class="label">例</span><span class="example">蚊に刺されたとこ、かじくっちゃいかん。</span>
           <span class="std">＝ 蚊に刺されたところを、かきむしってはいけない。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1245-kajikuru" rel="noopener">『静岡県磐田郡誌』1921年、1245頁・旧袋井町に「かじくる」の記録。原資料の意味「かく」。原注「引掻く」。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-かじる" data-id="kajiru">
       <span class="word-anchor" id="kajiru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「かじる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">か</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/kajiru-900.webp"><img src="/assets/karuta/c006/kajiru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「かじる」の絵札：かさぶたを爪でかこうとする子どもと、止める大人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2557,9 +2581,9 @@
     </div>
     <div class="entry" id="w-がんこ" data-id="ganko">
       <span class="word-anchor" id="ganko" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「がんこ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">が</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/ganko-900.webp"><img src="/assets/karuta/c006/ganko-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「がんこ」の絵札：人でごった返す店の中"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2577,9 +2601,9 @@
     </div>
     <div class="entry" id="w-くっちゃべる" data-id="kucchaberu">
       <span class="word-anchor" id="kucchaberu" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「くっちゃべる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">く</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/kucchaberu-900.webp"><img src="/assets/karuta/c006/kucchaberu-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「くっちゃべる」の絵札：縁側でおしゃべりが止まらない人たち"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2596,9 +2620,9 @@
     </div>
     <div class="entry" id="w-くろ" data-id="kuro">
       <span class="word-anchor" id="kuro" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「くろ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">く</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/kuro-900.webp"><img src="/assets/karuta/c006/kuro-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「くろ」の絵札：車が近づく道で、子どもを道の端へ寄らせる大人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2611,13 +2635,14 @@
           <span class="label">例</span><span class="example">車来るで、道のくろに寄んな。</span>
           <span class="std">＝ 車が来るから、道の端に寄りなさい。</span>
         </div>
+        <p class="word-links"><span class="label">記事</span><a href="/c174">家と屋敷のことば</a></p>
       </div>
     </div>
     <div class="entry" id="w-け" data-id="ke">
       <span class="word-anchor" id="ke" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「け」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">け</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/ke-900.webp"><img src="/assets/karuta/c006/ke-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「け」の絵札：店先で品物を指さしてたずねる人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2634,9 +2659,9 @@
     </div>
     <div class="entry" id="w-けっからかす" data-id="kekkarakasu">
       <span class="word-anchor" id="kekkarakasu" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「けっからかす」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">け</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/kekkarakasu-900.webp"><img src="/assets/karuta/c006/kekkarakasu-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「けっからかす」の絵札：足に当たって転がるバケツ"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2653,14 +2678,15 @@
     </div>
     <div class="entry" id="w-けっこい" data-id="kekkoi">
       <span class="word-anchor" id="kekkoi" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「けっこい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">け</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/kekkoi-900.webp"><img src="/assets/karuta/c006/kekkoi-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「けっこい」の絵札：庭に咲いたきれいな花"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">けっこい</span>
           <span class="kana">けっこい</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1246頁・旧於保村に「けつこい」の記録。原資料の意味「けつかうな」。小さい「っ」に統一せず原表記を残す。">1921</span><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「うつくしい（美しい）」の注記にケッコイの記録（data-ID 51041）。原注：〈晴着はケッコイと言う。年寄りなら虹でもケッコイと言うかもしれない〉">国研</span></span>
           <span class="cat">形容・ようす</span>
         </div>
         <p class="mean">きれいな、美しい。</p>
@@ -2668,13 +2694,15 @@
           <span class="label">例</span><span class="example">けっこい花が咲いとる。</span>
           <span class="std">＝ きれいな花が咲いている。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1246-kekkoi" rel="noopener">『静岡県磐田郡誌』1921年、1246頁・旧於保村に「けつこい」の記録。原資料の意味「けつかうな」。小さい「っ」に統一せず原表記を残す。</a>／<a href="https://iwata-monogatari.net/c172#fpjd-51041" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「うつくしい（美しい）」の注記にケッコイの記録（data-ID 51041）。原注：〈晴着はケッコイと言う。年寄りなら虹でもケッコイと言うかもしれない〉</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-けった" data-id="ketta">
       <span class="word-anchor" id="ketta" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「けった」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">け</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/ketta-900.webp"><img src="/assets/karuta/c006/ketta-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「けった」の絵札：自転車で駅へ向かう人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2693,9 +2721,9 @@
     </div>
     <div class="entry" id="w-けんが" data-id="kenga">
       <span class="word-anchor" id="kenga" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「けんが」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">け</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/kenga-900.webp"><img src="/assets/karuta/c006/kenga-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「けんが」の絵札：カレンダーを前に、行きたいけれど時間がないと悩む人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2712,9 +2740,9 @@
     </div>
     <div class="entry" id="w-ごう" data-id="gou">
       <span class="word-anchor" id="gou" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ごう」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ご</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/gou-900.webp"><img src="/assets/karuta/c006/gou-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ごう」の絵札：料理を差し出して、食べてみるよう勧める人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2731,14 +2759,15 @@
     </div>
     <div class="entry" id="w-こく" data-id="koku">
       <span class="word-anchor" id="koku" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「こく」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">こ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/koku-900.webp"><img src="/assets/karuta/c006/koku-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「こく」の絵札：うそを言わないで、と人差し指を立てる人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">こく</span>
           <span class="kana">こく</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1246頁・旧袋井町に「こく」の記録。原資料の意味「いふ」。原注は「言ふ」の意味と、罵言的な用い方を説明する。">1921</span></span>
           <span class="cat">動作・行い</span>
         </div>
         <p class="mean">言う。やや乱暴な言い方。「やっきりこく」「うそこく」のように他の語とも結びつく。</p>
@@ -2746,13 +2775,15 @@
           <span class="label">例</span><span class="example">うそこかんで。</span>
           <span class="std">＝ うそを言わないで。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1246-koku" rel="noopener">『静岡県磐田郡誌』1921年、1246頁・旧袋井町に「こく」の記録。原資料の意味「いふ」。原注は「言ふ」の意味と、罵言的な用い方を説明する。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-こさえる" data-id="kosaeru">
       <span class="word-anchor" id="kosaeru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「こさえる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">こ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/kosaeru-900.webp"><img src="/assets/karuta/c006/kosaeru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「こさえる」の絵札：弁当箱におかずを詰める手"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2769,9 +2800,9 @@
     </div>
     <div class="entry" id="w-こすい" data-id="kosui">
       <span class="word-anchor" id="kosui" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「こすい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">こ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/kosui-900.webp"><img src="/assets/karuta/c006/kosui-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「こすい」の絵札：先回りして得をしようとする子どもを、ほかの子があきれて見る"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2788,14 +2819,15 @@
     </div>
     <div class="entry" id="w-こずむ" data-id="kozumu">
       <span class="word-anchor" id="kozumu" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「こずむ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">こ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/kozumu-900.webp"><img src="/assets/karuta/c006/kozumu-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「こずむ」の絵札：器の底に片栗粉が沈んでいる台所"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">こずむ</span>
           <span class="kana">こずむ</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1246頁・旧於保村に「こぞむ」の記録。原資料の意味「しづむ」。辞典の「こずむ」と語形が異なる。原表記の濁点を確認。">1921</span></span>
           <span class="cat">動作・行い</span>
         </div>
         <p class="mean">（粉や沈殿物が）底にたまる、沈む。</p>
@@ -2803,18 +2835,21 @@
           <span class="label">例</span><span class="example">片栗粉がこずんどる。</span>
           <span class="std">＝ 片栗粉が底に沈んでいる。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1246-kozumu" rel="noopener">『静岡県磐田郡誌』1921年、1246頁・旧於保村に「こぞむ」の記録。原資料の意味「しづむ」。辞典の「こずむ」と語形が異なる。原表記の濁点を確認。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-ごせっぽい" data-id="goseppoi">
       <span class="word-anchor" id="goseppoi" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ごせっぽい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ご</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/goseppoi-900.webp"><img src="/assets/karuta/c006/goseppoi-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ごせっぽい」の絵札：片付いた部屋で背伸びをして、すっきりした顔の人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">ごせっぽい</span>
           <span class="kana">ごせっぽい</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1246頁・旧於保村に「ごせつぽい」の記録。原資料の意味「すが／＼し」。原文の繰返し記号を「／＼」で表した。原注は安心したさまを表す説明。">1921</span></span>
           <span class="cat">気持ち</span>
         </div>
         <p class="mean">せいせいする、気分がすっきりする。</p>
@@ -2823,13 +2858,15 @@
           <span class="std">＝ 部屋を片付けたら、せいせいしたよ。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>『えーらしぞーか』（2007年）は「〜ぽい」で終わる静岡の方言を一群として取り上げている。</p>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1246-goseppoi" rel="noopener">『静岡県磐田郡誌』1921年、1246頁・旧於保村に「ごせつぽい」の記録。原資料の意味「すが／＼し」。原文の繰返し記号を「／＼」で表した。原注は安心したさまを表す説明。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-ころ" data-id="koro">
       <span class="word-anchor" id="koro" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ころ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">こ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/koro-900.webp"><img src="/assets/karuta/c006/koro-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ころ」の絵札：キャスター付きの椅子を軽々と動かす人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2846,9 +2883,9 @@
     </div>
     <div class="entry" id="w-こわい" data-id="kowai">
       <span class="word-anchor" id="kowai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「こわい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">こ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/kowai-900.webp"><img src="/assets/karuta/c006/kowai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「こわい」の絵札：硬くなった餅を割ろうと苦戦する手"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2866,9 +2903,9 @@
     </div>
     <div class="entry" id="w-こん" data-id="kon">
       <span class="word-anchor" id="kon" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「こん」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">こ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/kon-900.webp"><img src="/assets/karuta/c006/kon-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「こん」の絵札：話を聞いて、知らなかったと驚く人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2885,9 +2922,9 @@
     </div>
     <div class="entry" id="w-ごんど" data-id="gondo">
       <span class="word-anchor" id="gondo" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ごんど」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ご</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/gondo-900.webp"><img src="/assets/karuta/c006/gondo-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ごんど」の絵札：ごみの日の朝、ごみ袋を集積所へ出す人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2904,14 +2941,15 @@
     </div>
     <div class="entry" id="w-在所" data-id="zaisho">
       <span class="word-anchor" id="zaisho" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「在所」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ざ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/zaisho-900.webp"><img src="/assets/karuta/c006/zaisho-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「在所」の絵札：お盆に荷物を持って実家の玄関へ帰る家族"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">在所</span>
           <span class="kana">ざいしょ</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1246頁・旧袋井町に「ざいしよ」の記録。原資料の意味「さと」。原注「實家」。">1921</span></span>
           <span class="cat">名詞・もの</span>
         </div>
         <p class="mean">実家、生まれ育った家やその土地。「お在所」とも。</p>
@@ -2920,18 +2958,21 @@
           <span class="std">＝ お盆は実家へ帰るからね。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>本来は「住んでいる所・故郷」を意味する語で、古くから文献に見える。遠州では、実家やふるさとの意で日常的に使う。</p>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1246-zaisho" rel="noopener">『静岡県磐田郡誌』1921年、1246頁・旧袋井町に「ざいしよ」の記録。原資料の意味「さと」。原注「實家」。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a>、<a href="/c174">家と屋敷のことば</a></p>
       </div>
     </div>
     <div class="entry" id="w-さら" data-id="sara">
       <span class="word-anchor" id="sara" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「さら」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">さ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/sara-900.webp"><img src="/assets/karuta/c006/sara-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「さら」の絵札：りんごを皮ごとかじる子ども"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">さら</span>
           <span class="kana">〜さら</span>
+          <span class="src-badges"><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「ごと：皮ごと〈食べた〉（対象の包括化）」にカワサラの回答（data-ID 89328）。原注：（ゆ）">国研</span></span>
           <span class="cat">程度・量</span>
         </div>
         <p class="mean">〜ごと、〜全部。残さず全体を、の意。「まるさら」で丸ごと。</p>
@@ -2939,13 +2980,15 @@
           <span class="label">例</span><span class="example">りんご、皮さら食べる。</span>
           <span class="std">＝ りんご、皮ごと食べる。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-89328" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「ごと：皮ごと〈食べた〉（対象の包括化）」にカワサラの回答（data-ID 89328）。原注：（ゆ）</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a>、<a href="/c175">気づかない方言</a></p>
       </div>
     </div>
     <div class="entry" id="w-舌べろ" data-id="shitabero">
       <span class="word-anchor" id="shitabero" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「舌べろ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">し</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/shitabero-900.webp"><img src="/assets/karuta/c006/shitabero-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「舌べろ」の絵札：熱いお茶で舌をやけどし、顔をしかめる人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2962,9 +3005,9 @@
     </div>
     <div class="entry" id="w-じゃんね" data-id="janne">
       <span class="word-anchor" id="janne" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「じゃんね」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">じ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/janne-900.webp"><img src="/assets/karuta/c006/janne-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「じゃんね」の絵札：雨上がりの道で、昨日の雨の話をする友だち二人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -2981,9 +3024,9 @@
     </div>
     <div class="entry" id="w-衆ら" data-id="shuura">
       <span class="word-anchor" id="shuura" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「衆ら」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">し</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/shuura-900.webp"><img src="/assets/karuta/c006/shuura-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「衆ら」の絵札：近所の仲間たちが手で草を取り、袋に集めながら声を掛け合う"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3000,14 +3043,15 @@
     </div>
     <div class="entry" id="w-じゅるい" data-id="jurui">
       <span class="word-anchor" id="jurui" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「じゅるい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">じ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/jurui-900.webp"><img src="/assets/karuta/c006/jurui-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「じゅるい」の絵札：汁気たっぷりのみかんをほおばる人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">じゅるい</span>
           <span class="kana">じゅるい</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1246頁・旧袋井町に「じるい」の記録。原資料の意味「やはらかい」。道の泥濘にも使う旨の原注。辞典の「じゅるい」と語形が異なる。">1921</span></span>
           <span class="cat">形容・ようす</span>
         </div>
         <p class="mean">水気が多い、汁気が多い。</p>
@@ -3015,13 +3059,15 @@
           <span class="label">例</span><span class="example">このみかん、じゅるくてうまいなあ。</span>
           <span class="std">＝ このみかん、果汁が多くておいしいなあ。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1246-jurui" rel="noopener">『静岡県磐田郡誌』1921年、1246頁・旧袋井町に「じるい」の記録。原資料の意味「やはらかい」。道の泥濘にも使う旨の原注。辞典の「じゅるい」と語形が異なる。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-しょろしょろする" data-id="shoroshorosuru">
       <span class="word-anchor" id="shoroshorosuru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「しょろしょろする」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">し</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/shoroshorosuru-900.webp"><img src="/assets/karuta/c006/shoroshorosuru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「しょろしょろする」の絵札：のろのろ支度する子どもを、急かす大人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3038,9 +3084,9 @@
     </div>
     <div class="entry" id="w-しょんない" data-id="shonnai">
       <span class="word-anchor" id="shonnai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「しょんない」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">し</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/shonnai-900.webp"><img src="/assets/karuta/c006/shonnai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「しょんない」の絵札：探し物が見つからず、肩をすくめてあきらめる二人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3058,14 +3104,15 @@
     </div>
     <div class="entry" id="w-新家" data-id="shin-ya">
       <span class="word-anchor" id="shin-ya" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「新家」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">し</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/shin-ya-900.webp"><img src="/assets/karuta/c006/shin-ya-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「新家」の絵札：通りをはさんで向かい合う本家と分家の家"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">新家</span>
           <span class="kana">しんや</span>
+          <span class="src-badges"><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「ぶんけ（分家）」にシンヤの回答（data-ID 36223）">国研</span></span>
           <span class="cat">名詞・もの</span>
         </div>
         <p class="mean">分家。本家（ほんや）から分かれて建てた家。家の呼び名として集落の会話に残る。</p>
@@ -3074,14 +3121,15 @@
           <span class="std">＝ うちは分家で、本家は通りの向こうだよ。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>対になる語は「本家（ほんや）」。家の続柄が日常の呼び名になっていたことを示す語である。</p>
-        <p class="word-links"><span class="label">記事</span><a href="/f035">五人組制度の起源と福田村の編成</a></p>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-36223" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「ぶんけ（分家）」にシンヤの回答（data-ID 36223）</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/f035">五人組制度の起源と福田村の編成</a>、<a href="/c172">磐田ことば資料室</a>、<a href="/c174">家と屋敷のことば</a></p>
       </div>
     </div>
     <div class="entry" id="w-ずっこい" data-id="zukkoi">
       <span class="word-anchor" id="zukkoi" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ずっこい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ず</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/zukkoi-900.webp"><img src="/assets/karuta/c006/zukkoi-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ずっこい」の絵札：先におやつを食べてしまった子どもを指さすきょうだい"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3098,31 +3146,32 @@
     </div>
     <div class="entry" id="w-ずら" data-id="zura">
       <span class="word-anchor" id="zura" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ずら」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ず</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/zura-900.webp"><img src="/assets/karuta/c006/zura-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ずら」の絵札：縁側で年配の二人が空を見上げ、うなずき合う"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">ずら</span>
           <span class="kana">ずら</span>
-          <span class="src-badges"><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「先生だろう／行くのだろう」にセンセーズラ、イクズラの回答">国研</span></span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1247頁・旧袋井町に「ずら」の記録。原資料の意味「だらう」。原注には「さうだらう」を「さうずら」とする用例。">1921</span><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「先生だろう」にセンセーズラの回答（data-ID 119897）。原注：（ゆ）〈少〉">国研</span><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行くのだろう」にイクズラの回答（data-ID 121427）">国研</span></span>
           <span class="cat">語尾・あいさつ</span>
         </div>
-        <p class="mean">〜だろう。古くからの推量表現。「だら」より古風で、今は高齢層中心。衰退傾向にある。</p>
+        <p class="mean">〜だろう。古くから記録のある推量表現。「だら」「ら」と並ぶ言い方。</p>
         <div class="ex">
           <span class="label">例</span><span class="example">そうずらなあ。</span>
           <span class="std">＝ そうだろうなあ。</span>
         </div>
-        <p class="word-src"><span class="label">資料</span><a href="https://www2.ninjal.ac.jp/hogen/dp/fpjd/fpjd_index.html" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「先生だろう／行くのだろう」にセンセーズラ、イクズラの回答</a></p>
-        <p class="word-links"><span class="label">記事</span><a href="/c008">標準語⇄遠州弁 変換</a></p>
+        <p class="note-word"><span class="label">解説</span>郡誌では1921年の袋井町に「ずら」の記録がある。国研の磐田市地点の「センセーズラ」には、調査者が語形を示した回答で、話者が使うことは少ないという注記が付く。市全域の世代別使用率を示すものではない。</p>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1247-zura" rel="noopener">『静岡県磐田郡誌』1921年、1247頁・旧袋井町に「ずら」の記録。原資料の意味「だらう」。原注には「さうだらう」を「さうずら」とする用例。</a>／<a href="https://iwata-monogatari.net/c172#fpjd-119897" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「先生だろう」にセンセーズラの回答（data-ID 119897）。原注：（ゆ）〈少〉</a>／<a href="https://iwata-monogatari.net/c172#fpjd-121427" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行くのだろう」にイクズラの回答（data-ID 121427）</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c008">標準語⇄遠州弁 変換</a>、<a href="/c172">磐田ことば資料室</a>、<a href="/c173">だら・ずら・らを記録から読む</a></p>
       </div>
     </div>
     <div class="entry" id="w-せせる" data-id="seseru">
       <span class="word-anchor" id="seseru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「せせる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">せ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/seseru-900.webp"><img src="/assets/karuta/c006/seseru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「せせる」の絵札：かさぶたを指先でつつこうとする子どもと、止める大人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3140,9 +3189,9 @@
     </div>
     <div class="entry" id="w-せんしょったい" data-id="senshottai">
       <span class="word-anchor" id="senshottai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「せんしょったい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">せ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/senshottai-900.webp"><img src="/assets/karuta/c006/senshottai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「せんしょったい」の絵札：あれこれ聞いてくる人に、困り顔の人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3159,15 +3208,15 @@
     </div>
     <div class="entry" id="w-せんひき" data-id="senhiki">
       <span class="word-anchor" id="senhiki" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「せんひき」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">せ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/senhiki-900.webp"><img src="/assets/karuta/c006/senhiki-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「せんひき」の絵札：机の上の定規を手渡す子ども"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">せんひき</span>
           <span class="kana">せんひき</span>
-          <span class="src-badges"><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「定規」にセンヒキの回答">国研</span></span>
+          <span class="src-badges"><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「じょうぎ（定規）」にセンヒキの回答（data-ID 25230）。原注：〈子供の頃はモノサシと言った〉">国研</span></span>
           <span class="cat">名詞・もの</span>
         </div>
         <p class="mean">定規、物差し。「線引き」から。静岡で広く使われる。</p>
@@ -3175,20 +3224,22 @@
           <span class="label">例</span><span class="example">せんひき取って。</span>
           <span class="std">＝ 定規を取って。</span>
         </div>
-        <p class="note-word"><span class="label">解説</span>国立国語研究所の全国方言分布調査（2010〜2015年）では、磐田市の地点で質問「定規」に「センヒキ」の回答が記録されている。本人は標準語だと思って使っていることの多い、いわゆる「気づかない方言」の代表である。</p>
-        <p class="word-src"><span class="label">資料</span><a href="https://www2.ninjal.ac.jp/hogen/dp/fpjd/fpjd_index.html" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「定規」にセンヒキの回答</a></p>
+        <p class="note-word"><span class="label">解説</span>国研の磐田市地点では「定規」に「センヒキ」と回答し、話者は子供の頃には「モノサシ」と言ったと注記している。一つの地点の回答から、市全体の学校や世代別の使用率は判断できない。</p>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-25230" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「じょうぎ（定規）」にセンヒキの回答（data-ID 25230）。原注：〈子供の頃はモノサシと言った〉</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a>、<a href="/c175">気づかない方言</a></p>
       </div>
     </div>
     <div class="entry" id="w-だで" data-id="dade">
       <span class="word-anchor" id="dade" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「だで」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">だ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/dade-900.webp"><img src="/assets/karuta/c006/dade-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「だで」の絵札：雨の玄関で傘を手渡す家族"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">だで</span>
           <span class="kana">だで／で</span>
+          <span class="src-badges"><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「降っているから」にフッテルデの回答（data-ID 90680）">国研</span></span>
           <span class="cat">語尾・あいさつ</span>
         </div>
         <p class="mean">〜だから。理由を述べる。名詞・形容動詞には「だで」、動詞・形容詞には「で」が付く。「だもんで」より短い形。</p>
@@ -3196,13 +3247,15 @@
           <span class="label">例</span><span class="example">雨だで、傘持ってきな。</span>
           <span class="std">＝ 雨だから、傘を持っていきなさい。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-90680" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「降っているから」にフッテルデの回答（data-ID 90680）</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-だに" data-id="dani">
       <span class="word-anchor" id="dani" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「だに」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">だ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/dani-900.webp"><img src="/assets/karuta/c006/dani-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「だに」の絵札：壁のカレンダーを10月にめくる手"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3220,9 +3273,9 @@
     </div>
     <div class="entry" id="w-ため" data-id="tame">
       <span class="word-anchor" id="tame" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ため」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">た</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/tame-900.webp"><img src="/assets/karuta/c006/tame-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ため」の絵札：同い年の二人が肩を並べて笑う"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3239,9 +3292,9 @@
     </div>
     <div class="entry" id="w-だもんで" data-id="damonde">
       <span class="word-anchor" id="damonde" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「だもんで」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">だ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/damonde-900.webp"><img src="/assets/karuta/c006/damonde-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「だもんで」の絵札：寝不足で目をこすり、あくびをする人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3259,37 +3312,38 @@
     </div>
     <div class="entry" id="w-だら" data-id="dara">
       <span class="word-anchor" id="dara" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「だら」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">だ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/dara-900.webp"><img src="/assets/karuta/c006/dara-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「だら」の絵札：夕方の台所。カレーのにおいに気づいた子どもが鍋をのぞき込む"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">だら</span>
           <span class="kana">だら</span>
-          <span class="src-badges"><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「先生だろう／行くのだろう」にセンセーダラ、イクダラの回答">国研</span></span>
+          <span class="src-badges"><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「先生だろう」にセンセーダラの回答（data-ID 119895）">国研</span><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行くのだろう」にイクダラの回答（data-ID 121426）">国研</span></span>
           <span class="cat">語尾・あいさつ</span>
         </div>
-        <p class="mean">〜だろう、〜でしょう。推量や確認を求めるときの語尾。遠州弁を代表する言い回し。古い「ずら」に代わって若い世代まで広く使う。</p>
+        <p class="mean">〜だろう、〜でしょう。推量や確認を求めるときの語尾。遠州弁を代表する言い回し。</p>
         <div class="ex">
           <span class="label">例</span><span class="example">今日の夜ご飯カレーだら？</span>
           <span class="std">＝ 今夜はカレーでしょ？</span>
         </div>
-        <p class="note-word"><span class="label">解説</span>国立国語研究所の全国方言分布調査では、磐田市の地点で「先生だろう」に「センセーダラ」「センセーズラ」、「行くのだろう」に「イクラ」「イクダラ」「イクズラ」が記録されている。</p>
-        <p class="word-src"><span class="label">資料</span><a href="https://www2.ninjal.ac.jp/hogen/dp/fpjd/fpjd_index.html" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「先生だろう／行くのだろう」にセンセーダラ、イクダラの回答</a></p>
-        <p class="word-links"><span class="label">記事</span><a href="/c008">標準語⇄遠州弁 変換</a></p>
+        <p class="note-word"><span class="label">解説</span>国研の磐田市1地点では「先生だろう」に「センセーダラ」「センセーズラ」、「行くのだろう」に「イクラ」「イクダラ」「イクズラ」が記録されている。回答条件は下の資料欄と本編の原注を参照。</p>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-119895" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「先生だろう」にセンセーダラの回答（data-ID 119895）</a>／<a href="https://iwata-monogatari.net/c172#fpjd-121426" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行くのだろう」にイクダラの回答（data-ID 121426）</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c008">標準語⇄遠州弁 変換</a>、<a href="/c172">磐田ことば資料室</a>、<a href="/c173">だら・ずら・らを記録から読む</a></p>
       </div>
     </div>
     <div class="entry" id="w-血が死ぬ" data-id="chigashinu">
       <span class="word-anchor" id="chigashinu" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「血が死ぬ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ち</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/chigashinu-900.webp"><img src="/assets/karuta/c006/chigashinu-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「血が死ぬ」の絵札：ぶつけた腕にできた青あざを見せる子ども"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">血が死ぬ</span>
           <span class="kana">ちがしぬ</span>
+          <span class="src-badges"><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「あざ（痣）：内出血」にチカ゜シンダの回答（data-ID 23106）">国研</span></span>
           <span class="cat">動作・行い</span>
         </div>
         <p class="mean">内出血する。打撲などで皮膚の下が鬱血し、変色した状態。</p>
@@ -3297,13 +3351,15 @@
           <span class="label">例</span><span class="example">ぶつけて血が死んじゃった。</span>
           <span class="std">＝ ぶつけて内出血してしまった。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-23106" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「あざ（痣）：内出血」にチカ゜シンダの回答（data-ID 23106）</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a>、<a href="/c175">気づかない方言</a></p>
       </div>
     </div>
     <div class="entry" id="w-ちゃっと" data-id="chatto">
       <span class="word-anchor" id="chatto" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ちゃっと」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ち</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/chatto-900.webp"><img src="/assets/karuta/c006/chatto-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ちゃっと」の絵札：塩が切れた台所から、急いで買い物に出る人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3320,14 +3376,15 @@
     </div>
     <div class="entry" id="w-ちょうける" data-id="choukeru">
       <span class="word-anchor" id="choukeru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ちょうける」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ち</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/choukeru-900.webp"><img src="/assets/karuta/c006/choukeru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ちょうける」の絵札：記念写真で一人だけおどけたポーズをとる子ども"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">ちょうける</span>
           <span class="kana">ちょうける</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1249頁・旧於保村に「ちようける」の記録。原資料の意味「ふざける」。小書き仮名を使わない原表記。">1921</span></span>
           <span class="cat">動作・行い</span>
         </div>
         <p class="mean">ふざける、おどける。</p>
@@ -3335,13 +3392,15 @@
           <span class="label">例</span><span class="example">写真撮るときにちょうけるな。</span>
           <span class="std">＝ 写真を撮るときにふざけるな。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1249-choukeru" rel="noopener">『静岡県磐田郡誌』1921年、1249頁・旧於保村に「ちようける」の記録。原資料の意味「ふざける」。小書き仮名を使わない原表記。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-ちょっくら" data-id="chokkura">
       <span class="word-anchor" id="chokkura" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ちょっくら」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ち</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/chokkura-900.webp"><img src="/assets/karuta/c006/chokkura-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ちょっくら」の絵札：玄関で声をかけて、ちょっと出かける人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3358,9 +3417,9 @@
     </div>
     <div class="entry" id="w-ちょびちょびする" data-id="chobichobisuru">
       <span class="word-anchor" id="chobichobisuru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ちょびちょびする」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ち</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/chobichobisuru-900.webp"><img src="/assets/karuta/c006/chobichobisuru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ちょびちょびする」の絵札：授業中にふざけて、先生に注意される子ども"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3377,9 +3436,9 @@
     </div>
     <div class="entry" id="w-ちんちん" data-id="chinchin">
       <span class="word-anchor" id="chinchin" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ちんちん」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ち</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/chinchin-900.webp"><img src="/assets/karuta/c006/chinchin-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ちんちん」の絵札：湯気を上げて沸き立つやかん"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3396,9 +3455,9 @@
     </div>
     <div class="entry" id="w-ちんぷりかえる" data-id="chinpurikaeru">
       <span class="word-anchor" id="chinpurikaeru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ちんぷりかえる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ち</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/chinpurikaeru-900.webp"><img src="/assets/karuta/c006/chinpurikaeru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ちんぷりかえる」の絵札：小言を言われ、ほおをふくらませてそっぽを向く子ども"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3415,9 +3474,9 @@
     </div>
     <div class="entry" id="w-っち" data-id="cchi">
       <span class="word-anchor" id="cchi" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「っち」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">っ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/cchi-900.webp"><img src="/assets/karuta/c006/cchi-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「っち」の絵札：友だちの家の前に自転車で集まる子どもたち"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3434,9 +3493,9 @@
     </div>
     <div class="entry" id="w-っちゅう" data-id="cchuu">
       <span class="word-anchor" id="cchuu" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「っちゅう」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">っ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/cchuu-900.webp"><img src="/assets/karuta/c006/cchuu-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「っちゅう」の絵札：人の名前を思い出そうと首をかしげる二人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3453,9 +3512,9 @@
     </div>
     <div class="entry" id="w-つっからかす" data-id="tsukkarakasu">
       <span class="word-anchor" id="tsukkarakasu" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「つっからかす」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">つ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/tsukkarakasu-900.webp"><img src="/assets/karuta/c006/tsukkarakasu-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「つっからかす」の絵札：押し合う子どもたちを止める大人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3472,9 +3531,9 @@
     </div>
     <div class="entry" id="w-つぶれる" data-id="tsubureru">
       <span class="word-anchor" id="tsubureru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「つぶれる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">つ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/tsubureru-900.webp"><img src="/assets/karuta/c006/tsubureru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「つぶれる」の絵札：動かなくなった洗濯機の前で困る人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3491,9 +3550,9 @@
     </div>
     <div class="entry" id="w-つる" data-id="tsuru">
       <span class="word-anchor" id="tsuru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「つる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">つ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/tsuru-900.webp"><img src="/assets/karuta/c006/tsuru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「つる」の絵札：教室で数人が机を持ち上げて運ぶ"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3510,9 +3569,9 @@
     </div>
     <div class="entry" id="w-連れ" data-id="tsure">
       <span class="word-anchor" id="tsure" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「連れ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">つ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/tsure-900.webp"><img src="/assets/karuta/c006/tsure-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「連れ」の絵札：友だちと釣りざおを持って出かける"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3529,9 +3588,9 @@
     </div>
     <div class="entry" id="w-てんこちょ" data-id="tenkocho">
       <span class="word-anchor" id="tenkocho" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「てんこちょ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">て</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/tenkocho-900.webp"><img src="/assets/karuta/c006/tenkocho-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「てんこちょ」の絵札：山のてっぺんにたどり着き、手を挙げる人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3548,9 +3607,9 @@
     </div>
     <div class="entry" id="w-ど" data-id="do">
       <span class="word-anchor" id="do" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ど」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ど</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/do-900.webp"><img src="/assets/karuta/c006/do-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ど」の絵札：玄関に届いた、ものすごく大きな荷物"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3567,9 +3626,9 @@
     </div>
     <div class="entry" id="w-とぶ" data-id="tobu">
       <span class="word-anchor" id="tobu" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「とぶ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">と</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/tobu-900.webp"><img src="/assets/karuta/c006/tobu-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「とぶ」の絵札：急いで駆けていく子ども（空を飛ぶ絵にはしない）"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3586,9 +3645,9 @@
     </div>
     <div class="entry" id="w-どべ" data-id="dobe">
       <span class="word-anchor" id="dobe" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「どべ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ど</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/dobe-900.webp"><img src="/assets/karuta/c006/dobe-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「どべ」の絵札：運動会のかけっこで最後にゴールする子ども"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3605,9 +3664,9 @@
     </div>
     <div class="entry" id="w-とる" data-id="toru">
       <span class="word-anchor" id="toru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「とる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">と</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/toru-900.webp"><img src="/assets/karuta/c006/toru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「とる」の絵札：窓の外の雨を確かめる人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3625,14 +3684,15 @@
     </div>
     <div class="entry" id="w-とろい" data-id="toroi">
       <span class="word-anchor" id="toroi" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「とろい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">と</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/toroi-900.webp"><img src="/assets/karuta/c006/toroi-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「とろい」の絵札：のんびり作業する人と、傾いていく日"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">とろい</span>
           <span class="kana">とろい／とろくさい</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1249頁・旧福島村に「とろい」の記録。原資料の意味「のろい」。">1921</span></span>
           <span class="cat">形容・ようす</span>
         </div>
         <p class="mean">のろい、鈍い、気が利かない。</p>
@@ -3640,13 +3700,15 @@
           <span class="label">例</span><span class="example">そんなとろくさいことしとったら日が暮れるに。</span>
           <span class="std">＝ そんなのろいことをしていたら日が暮れるよ。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1249-toroi" rel="noopener">『静岡県磐田郡誌』1921年、1249頁・旧福島村に「とろい」の記録。原資料の意味「のろい」。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-とんじゃかない" data-id="tonjakanai">
       <span class="word-anchor" id="tonjakanai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「とんじゃかない」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">と</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/tonjakanai-900.webp"><img src="/assets/karuta/c006/tonjakanai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「とんじゃかない」の絵札：服装を気にせず出かける、のんきな人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3663,9 +3725,9 @@
     </div>
     <div class="entry" id="w-とんます" data-id="tonmasu">
       <span class="word-anchor" id="tonmasu" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「とんます」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">と</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/tonmasu-900.webp"><img src="/assets/karuta/c006/tonmasu-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「とんます」の絵札：てんとう虫を手のひらで捕まえた子ども"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3682,14 +3744,15 @@
     </div>
     <div class="entry" id="w-ない" data-id="nai">
       <span class="word-anchor" id="nai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ない」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">な</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/nai-900.webp"><img src="/assets/karuta/c006/nai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ない」の絵札：朝、布団の中の子どもを起こす家族"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">ない</span>
           <span class="kana">〜ない</span>
+          <span class="src-badges"><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「起きろ」にオキナナイの回答（data-ID 70018）。原注：〈オキョー（ゆ）とは言わない〉">国研</span></span>
           <span class="cat">語尾・あいさつ</span>
         </div>
         <p class="mean">〜しなさい。動詞の連用形に付く（「書きない」「起きない」）。否定の「ない」ではなく、やわらかな命令。</p>
@@ -3697,13 +3760,15 @@
           <span class="label">例</span><span class="example">早く起きない。</span>
           <span class="std">＝ 早く起きなさい。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-70018" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「起きろ」にオキナナイの回答（data-ID 70018）。原注：〈オキョー（ゆ）とは言わない〉</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-ながらみ" data-id="nagarami">
       <span class="word-anchor" id="nagarami" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ながらみ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">な</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/nagarami-900.webp"><img src="/assets/karuta/c006/nagarami-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ながらみ」の絵札：浜で拾った巻き貝（ダンベイキサゴ）と、塩ゆでの鍋"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3721,9 +3786,9 @@
     </div>
     <div class="entry" id="w-なんしょ" data-id="nansho">
       <span class="word-anchor" id="nansho" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「なんしょ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">な</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/nansho-900.webp"><img src="/assets/karuta/c006/nansho-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「なんしょ」の絵札：買い物袋から食べきれないほどの食べ物があふれる台所"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3740,29 +3805,31 @@
     </div>
     <div class="entry" id="w-なんだ" data-id="nanda">
       <span class="word-anchor" id="nanda" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「なんだ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">な</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/nanda-900.webp"><img src="/assets/karuta/c006/nanda-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「なんだ」の絵札：晴れた空と、雨の降らなかった乾いた畑"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">なんだ</span>
           <span class="kana">〜なんだ</span>
+          <span class="src-badges"><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行かなかった」にイカナンダの回答（data-ID 64329）">国研</span></span>
           <span class="cat">語尾・あいさつ</span>
         </div>
-        <p class="mean">〜なかった。古くからの過去否定の形。新しい「〜んかった」と世代によって使い分けられている（文法欄参照）。</p>
+        <p class="mean">〜なかった。過去の否定を表す形。「行かなかった」に対する国研の磐田市地点の回答に「イカナンダ」がある。</p>
         <div class="ex">
           <span class="label">例</span><span class="example">昨日は雨、降らなんだ。</span>
           <span class="std">＝ 昨日は雨が降らなかった。</span>
         </div>
-        <p class="word-links"><span class="label">記事</span><a href="/c008">標準語⇄遠州弁 変換</a></p>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-64329" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行かなかった」にイカナンダの回答（data-ID 64329）</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c008">標準語⇄遠州弁 変換</a>、<a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-に" data-id="ni">
       <span class="word-anchor" id="ni" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「に」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">に</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/ni-900.webp"><img src="/assets/karuta/c006/ni-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「に」の絵札：時計を見て、時間の早さに驚く人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3779,9 +3846,9 @@
     </div>
     <div class="entry" id="w-ねち" data-id="nechi">
       <span class="word-anchor" id="nechi" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ねち」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ね</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/nechi-900.webp"><img src="/assets/karuta/c006/nechi-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ねち」の絵札：頬に手を当て、歯ぐきの腫れを気にする人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3798,9 +3865,9 @@
     </div>
     <div class="entry" id="w-のうなる" data-id="nounaru">
       <span class="word-anchor" id="nounaru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「のうなる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">の</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/nounaru-900.webp"><img src="/assets/karuta/c006/nounaru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「のうなる」の絵札：ポケットを探って、財布がないことに気づく人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3817,14 +3884,15 @@
     </div>
     <div class="entry" id="w-はいぼ" data-id="haibo">
       <span class="word-anchor" id="haibo" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「はいぼ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">は</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/haibo-900.webp"><img src="/assets/karuta/c006/haibo-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「はいぼ」の絵札：たき火の灰を畑にまく人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">はいぼ</span>
           <span class="kana">はいぼ</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1250頁・旧袋井町に「はいぼ」の記録。原資料の意味「はひ」。原注「灰」。">1921</span></span>
           <span class="cat">名詞・もの</span>
         </div>
         <p class="mean">灰。</p>
@@ -3832,13 +3900,15 @@
           <span class="label">例</span><span class="example">たき火のはいぼを畑にまく。</span>
           <span class="std">＝ たき火の灰を畑にまく。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1250-haibo" rel="noopener">『静岡県磐田郡誌』1921年、1250頁・旧袋井町に「はいぼ」の記録。原資料の意味「はひ」。原注「灰」。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-ばか" data-id="baka">
       <span class="word-anchor" id="baka" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ばか」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ば</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/baka-900.webp"><img src="/assets/karuta/c006/baka-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ばか」の絵札：照りつける日差しにうだる人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3855,9 +3925,9 @@
     </div>
     <div class="entry" id="w-はならかす" data-id="hanarakasu">
       <span class="word-anchor" id="hanarakasu" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「はならかす」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">は</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/hanarakasu-900.webp"><img src="/assets/karuta/c006/hanarakasu-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「はならかす」の絵札：洗濯物を間をあけて物干しに干す人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3874,9 +3944,9 @@
     </div>
     <div class="entry" id="w-ひずるしい" data-id="hizurushii">
       <span class="word-anchor" id="hizurushii" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ひずるしい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ひ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/hizurushii-900.webp"><img src="/assets/karuta/c006/hizurushii-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ひずるしい」の絵札：夏のかんかん照りの下、手をかざして目を細める人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3893,9 +3963,9 @@
     </div>
     <div class="entry" id="w-ひぼ" data-id="hibo">
       <span class="word-anchor" id="hibo" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ひぼ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ひ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/hibo-900.webp"><img src="/assets/karuta/c006/hibo-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ひぼ」の絵札：新聞の束をひもで縛る手"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3912,9 +3982,9 @@
     </div>
     <div class="entry" id="w-ぶしょったい" data-id="bushottai">
       <span class="word-anchor" id="bushottai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ぶしょったい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ぶ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/bushottai-900.webp"><img src="/assets/karuta/c006/bushottai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ぶしょったい」の絵札：だらしない格好で出かけようとする人と、それを止める家族"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3931,9 +4001,9 @@
     </div>
     <div class="entry" id="w-ふんずばす" data-id="funzubasu">
       <span class="word-anchor" id="funzubasu" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ふんずばす」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ふ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/funzubasu-900.webp"><img src="/assets/karuta/c006/funzubasu-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ふんずばす」の絵札：足元の虫を踏んでしまい、はっとする人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3950,9 +4020,9 @@
     </div>
     <div class="entry" id="w-ぼっかける" data-id="bokkakeru">
       <span class="word-anchor" id="bokkakeru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ぼっかける」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ぼ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/bokkakeru-900.webp"><img src="/assets/karuta/c006/bokkakeru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ぼっかける」の絵札：犬に追いかけられて走る子ども"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3969,9 +4039,9 @@
     </div>
     <div class="entry" id="w-ほかる" data-id="hokaru">
       <span class="word-anchor" id="hokaru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ほかる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ほ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/hokaru-900.webp"><img src="/assets/karuta/c006/hokaru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ほかる」の絵札：紙くずを丸めてくずかごに捨てる手"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -3988,9 +4058,9 @@
     </div>
     <div class="entry" id="w-ほそば" data-id="hosoba">
       <span class="word-anchor" id="hosoba" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ほそば」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ほ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/hosoba-900.webp"><img src="/assets/karuta/c006/hosoba-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ほそば」の絵札：屋敷を囲むイヌマキの生垣を刈り込む人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -4009,9 +4079,9 @@
     </div>
     <div class="entry" id="w-ぼっちょ" data-id="boccho">
       <span class="word-anchor" id="boccho" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ぼっちょ」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ぼ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/boccho-900.webp"><img src="/assets/karuta/c006/boccho-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ぼっちょ」の絵札：壁のスイッチを押して明かりをつける指"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -4028,14 +4098,15 @@
     </div>
     <div class="entry" id="w-ほっぽかす" data-id="hoppokasu">
       <span class="word-anchor" id="hoppokasu" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ほっぽかす」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ほ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/hoppokasu-900.webp"><img src="/assets/karuta/c006/hoppokasu-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ほっぽかす」の絵札：ほったらかしにされ、帰ってきた相手に詰め寄る人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">ほっぽかす</span>
           <span class="kana">ほっぽかす</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1252頁・旧於保村に「ほつぽかす」の記録。原資料の意味「ほうりだす」。原注「投出す」。辞典に掲げる「放置する」との意味の違いに注意。">1921</span></span>
           <span class="cat">動作・行い</span>
         </div>
         <p class="mean">ほったらかす、放置する、無視する。軽い非難を含む。</p>
@@ -4043,13 +4114,15 @@
           <span class="label">例</span><span class="example">あたしのことほっぽかしてどこ行ってたの。</span>
           <span class="std">＝ 私のことほったらかしてどこ行ってたの。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1252-hoppokasu" rel="noopener">『静岡県磐田郡誌』1921年、1252頁・旧於保村に「ほつぽかす」の記録。原資料の意味「ほうりだす」。原注「投出す」。辞典に掲げる「放置する」との意味の違いに注意。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-ぽんぽん" data-id="ponpon">
       <span class="word-anchor" id="ponpon" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ぽんぽん」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ぽ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/ponpon-900.webp"><img src="/assets/karuta/c006/ponpon-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ぽんぽん」の絵札：原付バイクで畑へ向かう人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -4066,14 +4139,15 @@
     </div>
     <div class="entry" id="w-本家" data-id="hon-ya">
       <span class="word-anchor" id="hon-ya" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「本家」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ほ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/hon-ya-900.webp"><img src="/assets/karuta/c006/hon-ya-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「本家」の絵札：正月に本家の玄関へあいさつに訪れる家族"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">本家</span>
           <span class="kana">ほんや</span>
+          <span class="src-badges"><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「ほんけ（本家）」にホンヤの回答（data-ID 35523）">国研</span></span>
           <span class="cat">名詞・もの</span>
         </div>
         <p class="mean">本家。「新家（しんや）」の対。標準語と同じ字だが、読みが「ほんや」となる。</p>
@@ -4081,14 +4155,15 @@
           <span class="label">例</span><span class="example">正月はまず本家へあいさつに行く。</span>
           <span class="std">＝ 正月はまず本家へあいさつに行く。</span>
         </div>
-        <p class="word-links"><span class="label">記事</span><a href="/f035">五人組制度の起源と福田村の編成</a></p>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-35523" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「ほんけ（本家）」にホンヤの回答（data-ID 35523）</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/f035">五人組制度の起源と福田村の編成</a>、<a href="/c172">磐田ことば資料室</a>、<a href="/c174">家と屋敷のことば</a></p>
       </div>
     </div>
     <div class="entry" id="w-まい" data-id="mai">
       <span class="word-anchor" id="mai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「まい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ま</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/mai-900.webp"><img src="/assets/karuta/c006/mai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「まい」の絵札：片付けを終え、湯のみを並べてお茶に誘う人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -4096,19 +4171,20 @@
           <span class="kana">〜まい／〜まいか</span>
           <span class="cat">語尾・あいさつ</span>
         </div>
-        <p class="mean">〜しよう、〜しようじゃないか。相手を誘う形。「行かまい」「やらまいか」。駿河の「〜ざあ」に対する、遠州の誘いの形である。</p>
+        <p class="mean">〜しよう、〜しようじゃないか。相手を誘う形。「行かまい」「やらまいか」。</p>
         <div class="ex">
           <span class="label">例</span><span class="example">ちゃっと片付けて、お茶にしまい。</span>
           <span class="std">＝ 急いで片付けて、お茶にしよう。</span>
         </div>
+        <p class="note-word"><span class="label">解説</span>誘いの言い方は一つではない。国研の磐田市地点では「行こうよ」に「イコーヨ」「イカザー」が記録され、後者には強く誘う場合に使うという注記がある。「まい」と「ざあ」を県内の地域だけで一律に区切らない。</p>
         <p class="word-links"><span class="label">記事</span><a href="/c065">ヤマハ発動機と企業城下町としての磐田</a>、<a href="/c127">ジュビロ磐田前史</a>、<a href="/c118">遠州報徳運動と磐田</a></p>
       </div>
     </div>
     <div class="entry" id="w-まめったい" data-id="mamettai">
       <span class="word-anchor" id="mamettai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「まめったい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ま</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/mamettai-900.webp"><img src="/assets/karuta/c006/mamettai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「まめったい」の絵札：家の手伝いをこまめにこなす子ども"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -4126,9 +4202,9 @@
     </div>
     <div class="entry" id="w-みるい" data-id="mirui">
       <span class="word-anchor" id="mirui" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「みるい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">み</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/mirui-900.webp"><img src="/assets/karuta/c006/mirui-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「みるい」の絵札：入学したばかりの1年生が並んで歩く姿"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -4146,9 +4222,9 @@
     </div>
     <div class="entry" id="w-もじかる" data-id="mojikaru">
       <span class="word-anchor" id="mojikaru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「もじかる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">も</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/mojikaru-900.webp"><img src="/assets/karuta/c006/mojikaru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「もじかる」の絵札：からまった釣り糸をほどこうとする人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -4165,9 +4241,9 @@
     </div>
     <div class="entry" id="w-やい" data-id="yai">
       <span class="word-anchor" id="yai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「やい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">や</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/yai-900.webp"><img src="/assets/karuta/c006/yai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「やい」の絵札：忘れ物を手に、出かける人を呼び止める人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -4184,9 +4260,9 @@
     </div>
     <div class="entry" id="w-やいやい" data-id="yaiyai">
       <span class="word-anchor" id="yaiyai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「やいやい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">や</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/yaiyai-900.webp"><img src="/assets/karuta/c006/yaiyai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「やいやい」の絵札：うっかり口をすべらせた人を前に、額に手を当てる人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -4203,14 +4279,15 @@
     </div>
     <div class="entry" id="w-やっきりこく" data-id="yakkirikoku">
       <span class="word-anchor" id="yakkirikoku" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「やっきりこく」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">や</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/yakkirikoku-900.webp"><img src="/assets/karuta/c006/yakkirikoku-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「やっきりこく」の絵札：仕事をさぼる人を見ながら、ぶつぶつ愚痴をこぼす人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">やっきりこく</span>
           <span class="kana">やっきりこく</span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1253頁・旧袋井町に「やつきりする」の記録。原資料の意味「ぢれつたくおもふ」。辞典の別形「やっきりする」と比較できる。">1921</span></span>
           <span class="cat">気持ち</span>
         </div>
         <p class="mean">腹が立つ、いらいらする。直接ぶつけられず、諦めまじりに愚痴としてこぼすような、鬱屈した怒り。「やっきりする」とも。</p>
@@ -4218,13 +4295,15 @@
           <span class="label">例</span><span class="example">あの人またサボってて、やっきりするわ。</span>
           <span class="std">＝ あの人またサボってて、腹が立つよ。</span>
         </div>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1253-yakkirikoku" rel="noopener">『静岡県磐田郡誌』1921年、1253頁・旧袋井町に「やつきりする」の記録。原資料の意味「ぢれつたくおもふ」。辞典の別形「やっきりする」と比較できる。</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c172">磐田ことば資料室</a></p>
       </div>
     </div>
     <div class="entry" id="w-やぶせったい" data-id="yabusettai">
       <span class="word-anchor" id="yabusettai" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「やぶせったい」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">や</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/yabusettai-900.webp"><img src="/assets/karuta/c006/yabusettai-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「やぶせったい」の絵札：伸びた前髪が目にかかり、手で払う子ども"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -4241,9 +4320,9 @@
     </div>
     <div class="entry" id="w-よさりかかる" data-id="yosarikakaru">
       <span class="word-anchor" id="yosarikakaru" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「よさりかかる」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">よ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/yosarikakaru-900.webp"><img src="/assets/karuta/c006/yosarikakaru-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「よさりかかる」の絵札：壁に寄りかかろうとする子どもと、たしなめる大人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -4260,15 +4339,15 @@
     </div>
     <div class="entry" id="w-ら" data-id="ra">
       <span class="word-anchor" id="ra" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「ら」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">ら</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/ra-900.webp"><img src="/assets/karuta/c006/ra-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「ら」の絵札：湯のみを差し出して、飲むかとたずねる人"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
           <span class="word">ら</span>
           <span class="kana">ら／らぁ</span>
-          <span class="src-badges"><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行くのだろう」にイクラの回答">国研</span></span>
+          <span class="src-badges"><span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1253頁・旧袋井町に「ら」の記録。原資料の意味「だらう」。">1921</span><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行くだろう」にイクラの回答（data-ID 120660）。原注：〈多〉">国研</span><span class="src-badge src-fpjd" title="国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行くのだろう」にイクラの回答（data-ID 121425）">国研</span></span>
           <span class="cat">語尾・あいさつ</span>
         </div>
         <p class="mean">〜だろう、〜でしょ。「だら」と同じく確認・同意を求める。語尾を伸ばして「らぁ」とも。動詞・形容詞に付きやすい。</p>
@@ -4276,15 +4355,15 @@
           <span class="label">例</span><span class="example">飲むら？</span>
           <span class="std">＝ 飲むでしょ？／飲む？</span>
         </div>
-        <p class="word-src"><span class="label">資料</span><a href="https://www2.ninjal.ac.jp/hogen/dp/fpjd/fpjd_index.html" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行くのだろう」にイクラの回答</a></p>
-        <p class="word-links"><span class="label">記事</span><a href="/c008">標準語⇄遠州弁 変換</a></p>
+        <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1253-ra" rel="noopener">『静岡県磐田郡誌』1921年、1253頁・旧袋井町に「ら」の記録。原資料の意味「だらう」。</a>／<a href="https://iwata-monogatari.net/c172#fpjd-120660" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行くだろう」にイクラの回答（data-ID 120660）。原注：〈多〉</a>／<a href="https://iwata-monogatari.net/c172#fpjd-121425" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行くのだろう」にイクラの回答（data-ID 121425）</a></p>
+        <p class="word-links"><span class="label">記事</span><a href="/c008">標準語⇄遠州弁 変換</a>、<a href="/c172">磐田ことば資料室</a>、<a href="/c173">だら・ずら・らを記録から読む</a></p>
       </div>
     </div>
     <div class="entry" id="w-悪さん坊" data-id="warusanbou">
       <span class="word-anchor" id="warusanbou" aria-hidden="true"></span>
-      <figure class="karuta karuta-pending" role="img" aria-label="遠州弁かるた「悪さん坊」の絵札（準備中）">
-        <span class="karuta-kana" aria-hidden="true">わ</span>
-        <figcaption class="karuta-status" aria-hidden="true">絵札準備中</figcaption>
+      <figure class="karuta karuta-ready">
+        <a class="karuta-zoom" href="/assets/karuta/c006/warusanbou-900.webp"><img src="/assets/karuta/c006/warusanbou-300.webp" width="300" height="400" loading="lazy" decoding="async" alt="遠州弁かるた「悪さん坊」の絵札：破れた障子の前で、いたずら顔の子ども"></a>
+        <figcaption class="karuta-credit">絵札：磐田物語</figcaption>
       </figure>
       <div class="entry-body">
         <div class="top">
@@ -4313,11 +4392,11 @@
 
     <div class="gsec">
 
-      <p><strong>語尾でわかる、遠州弁。</strong> 遠州弁らしさは、文末に最もよく表れる。同じ「〜だろう」でも、確信の度合いや相手への配慮によって「ずら・だら・ら」を使い分け、さらにイントネーションでニュアンスが変わる。近年は古い「ずら」が衰退し、「だら」「ら」が若い世代まで広く使われている。</p>
+      <p><strong>語尾でわかる、遠州弁。</strong> 遠州弁らしさは、文末に最もよく表れる。同じ「〜だろう」でも、確信の度合いや相手への配慮によって「ずら・だら・ら」を使い分け、さらにイントネーションでニュアンスが変わる。国研の磐田市1地点には三つの形が記録されている。これだけで現在の世代別使用率は判断できない（<a href="/c173">原回答と注記を読む</a>）。</p>
       <table class="gtable">
         <tr><th>言い方</th><th>意味・はたらき</th><th>例</th></tr>
         <tr><td>だら／ら</td><td>〜だろう、〜でしょ。推量・確認を求める。遠州弁の代表格。</td><td>行くら？<span class="ex">＝行くでしょ？</span></td></tr>
-        <tr><td>ずら</td><td>〜だろう。古くからの推量表現。今は高齢層中心で衰退傾向。</td><td>そうずらなあ。<span class="ex">＝そうだろうなあ。</span></td></tr>
+        <tr><td>ずら</td><td>〜だろう。古くからの推量表現。郡誌と国研の記録があり、回答には提示語形や使用頻度の注記も付く。</td><td>そうずらなあ。<span class="ex">＝そうだろうなあ。</span></td></tr>
         <tr><td>だに／に</td><td>〜だよ、〜なんだよ。断定・念押し。名詞・形容動詞には「だに」、動詞・形容詞には「に」。</td><td>明日から10月だに。／早いに。</td></tr>
         <tr><td>だもんで</td><td>〜だから。理由を、押しつけずやわらかく述べる。静岡を代表する接続表現。</td><td>雨だもんで、傘持ってきな。</td></tr>
         <tr><td>じゃんね／じゃんか</td><td>〜じゃない。同意を求めたり、話を次へ繋ぐ。「じゃんか」は念押し・詰問。</td><td>昨日さ、〜だったじゃんね。</td></tr>
@@ -4328,7 +4407,7 @@
 
     <div class="gsec">
 
-      <p><strong>否定・推量・命令・誘い。</strong> 文法の核は、否定・推量・勧誘・命令にある。否定は西日本ふうの「〜ん」。過去否定には古い「〜なんだ」と新しい「〜んかった」が、世代で競合する。誘いの「〜まい」、やわらかい命令の「〜りん／〜きん」「〜ない」「〜ごう」も特徴的である。</p>
+      <p><strong>否定・推量・命令・誘い。</strong> 文法の核は、否定・推量・勧誘・命令にある。否定は西日本ふうの「〜ん」。過去否定には「〜なんだ」「〜んかった」などの形がある。国研の磐田市地点には「イカナンダ」が記録されている。誘いの「〜まい」、やわらかい命令の「〜りん／〜きん」「〜ない」「〜ごう」も特徴的である。</p>
       <table class="gtable">
         <tr><th>はたらき</th><th>遠州弁</th><th>例</th></tr>
         <tr><td>否定</td><td>〜ん</td><td>行かん<span class="ex">＝行かない</span></td></tr>
@@ -4476,7 +4555,7 @@
 <tbody>
 <tr><th>はたらき</th><th>形</th><th>例と注</th></tr>
 <tr><td rowspan="3">過去の打消し</td><td>〜なんだ</td><td>降らなんだ。古い形で、高齢層に多い</td></tr>
-<tr><td>〜んかった</td><td>降らんかった。新しい形で、若い世代に広がる</td></tr>
+<tr><td>〜んかった</td><td>降らんかった。現在の世代別の広がりには別途調査が必要</td></tr>
 <tr><td>〜んけ</td><td>降らんけ。中遠・東遠で使われるとされる</td></tr>
 <tr><td rowspan="2">できない</td><td>行けん／見れん</td><td>五段動詞は「行けん」、一段動詞は「見れん」（ら抜き）</td></tr>
 <tr><td>見れれん</td><td>「れ足す」形の打消し</td></tr>
@@ -4582,8 +4661,8 @@
 <div class="note">
   <div class="inner">
     この辞典は、磐田・中遠地域を中心とした遠州弁を集めたものである。遠州弁は浜松・袋井・磐田など地域によって、また世代によって使い方や意味に違いがあり、ここに載せた意味や用例は一例である。用例は作例である。土地や人によって異なる場合があり、お気づきの点は少しずつ書き加え、直していきたい。
-    <p class="karuta-credit">遠州弁かるたの絵札：磐田物語（制作中）。絵札は作例の場面を描いたもので、語の使われ方や地域を示す資料ではない。「磐田ことば調査」の集計は読者の自己申告による参考値である。</p>
-    <p class="karuta-credit" id="karuta-use"><strong>絵札の利用について</strong>　学校・公民館・図書館・介護施設・地域の集まりなどでの非営利の利用（授業の教材、かるた会、掲示、印刷して配る など）は、申し出なしで自由に使ってよい。その際は「出典：磐田物語 遠州弁辞典（https://iwata-monogatari.net/c006）」と明記してほしい。販売・商品化・有料の講座や催しなど営利での利用は、事前に運営者（富士ヶ丘サービス株式会社　0538-31-3308）へ相談されたい。この条件は遠州弁かるたの絵札に限り、佐口行正氏所蔵史料には適用されない。</p>
+    <p class="karuta-credit">遠州弁かるた122枚：磐田物語（2026年10月12日公開、生成AIを用いて新規制作）。絵札は作例の場面を描いたもので、語の使われ方や地域を示す資料ではない。「磐田ことば調査」の集計は読者の自己申告による参考値である。</p>
+    <p class="karuta-credit" id="karuta-use"><strong>絵札の利用について</strong>　学校・公民館・図書館・介護施設・地域の集まりなどでの非営利の利用（授業の教材、かるた会、掲示、印刷して配る など）は、申し出なしで自由に使ってよい。その際は「出典：磐田物語 遠州弁辞典（https://iwata-monogatari.net/c006）」と明記してほしい。販売・商品化・有料の講座や催しなど営利での利用は、事前に運営者（富士ヶ丘サービス株式会社　0538-31-3308）へ相談されたい。この条件は遠州弁かるたの絵札・読み札に限り、佐口行正氏所蔵史料には適用されない。</p>
     <div class="src">
 <p class="note-ref"><strong>主な参考資料</strong></p>
 <ul class="note-ref-list">
@@ -4624,6 +4703,7 @@
     <li><time datetime="2026-10-11">2026年10月11日</time> 辞典に43語を追加（122語）。「しんや・ほんや」「ほそば」「ながらみ」など家・屋敷・浜の語を含む。検索を強化し、ひらがな・カタカナの区別なし、標準語の類義語からの検索、複数語の絞り込み、五十音の行での絞り込み、一致箇所の強調、関連度順の並び、該当なしの候補表示、検索条件のアドレス共有、語ごとの直接リンクに対応した。「みるい」「こわい」「せんひき」「いいにする」など21語に語源・調査記録の解説を付け、「もっと知る」に「語彙の成り立ち」「気づかない方言と、ことばの継承」「この辞典の引き方」の3節と用語3つを加筆。県内の方言辞典類と静岡新聞の調査報道を参考資料に加えた。</li>
     <li><time datetime="2026-10-12">2026年10月12日</time> 「みるい」の茶業から人への意味変化を断定する説明を改め、産地資料で確認できる用法と語源の解釈を区別した。追加語のうち5語について公開史料の該当頁・調査項目を示し、『静岡県磐田郡誌』の章節・頁・リンクを訂正。語への直接リンクはWebフォント読込後に位置を合わせるよう調整。122語と検索条件は保持。</li>
     <li><time datetime="2026-10-12">2026年10月12日</time> 辞典を資料室として育てるための拡充。語のデータを一つの台帳にまとめ、各語に固定の語ID（例：<a href="#aisa">#aisa</a>）を付けた。従来の語へのリンクも引き続き使える。各語の横に「遠州弁かるた」の絵札の欄を設け、完成した語から絵札を掲げる（現在は制作中のため頭の字の札）。「絵札で並べる」表示を加えた。国立国語研究所の全国方言分布調査と『静岡県磐田郡誌』で記録を確かめられる5語（だら・ずら・ら・せんひき・あんも）に資料の印と資料欄を付けた。語ごとに「使う／聞いたことがある／知らない」を答えられる「磐田ことば調査」を始めた。関連記事への案内を14語に付け、語の一覧を検索エンジン向けの構造化データにした。122語の見出し・意味・作例・解説は変えていない。</li>
+    <li><time datetime="2026-10-12">2026年10月12日</time> 引札風の絵札122枚と印刷用の読み札を公開。国研287回答・郡誌24項目の資料室、4本の解説記事を追加し、30語に確認した出典を明示した。</li>
     <li><time datetime="2026-10-12">2026年10月12日</time> 遠州弁かるたの絵札について、学校・公民館などでの非営利の利用を出典明記で自由とし、営利での利用は事前相談とする利用条件を掲げた。</li>
   </ul>
 </section>
@@ -4634,8 +4714,8 @@
 <script>
 /* c006-data:start */
 const DATA = [
-  {"id":"dara","w":"だら","k":"だら","cat":"語尾・あいさつ","m":"〜だろう、〜でしょう。推量や確認を求めるときの語尾。遠州弁を代表する言い回し。古い「ずら」に代わって若い世代まで広く使う。","ex":"今日の夜ご飯カレーだら？","std":"今夜はカレーでしょ？","n":"国立国語研究所の全国方言分布調査では、磐田市の地点で「先生だろう」に「センセーダラ」「センセーズラ」、「行くのだろう」に「イクラ」「イクダラ」「イクズラ」が記録されている。"},
-  {"id":"zura","w":"ずら","k":"ずら","cat":"語尾・あいさつ","m":"〜だろう。古くからの推量表現。「だら」より古風で、今は高齢層中心。衰退傾向にある。","ex":"そうずらなあ。","std":"そうだろうなあ。"},
+  {"id":"dara","w":"だら","k":"だら","cat":"語尾・あいさつ","m":"〜だろう、〜でしょう。推量や確認を求めるときの語尾。遠州弁を代表する言い回し。","ex":"今日の夜ご飯カレーだら？","std":"今夜はカレーでしょ？","n":"国研の磐田市1地点では「先生だろう」に「センセーダラ」「センセーズラ」、「行くのだろう」に「イクラ」「イクダラ」「イクズラ」が記録されている。回答条件は下の資料欄と本編の原注を参照。"},
+  {"id":"zura","w":"ずら","k":"ずら","cat":"語尾・あいさつ","m":"〜だろう。古くから記録のある推量表現。「だら」「ら」と並ぶ言い方。","ex":"そうずらなあ。","std":"そうだろうなあ。","n":"郡誌では1921年の袋井町に「ずら」の記録がある。国研の磐田市地点の「センセーズラ」には、調査者が語形を示した回答で、話者が使うことは少ないという注記が付く。市全域の世代別使用率を示すものではない。"},
   {"id":"ra","w":"ら","k":"ら／らぁ","cat":"語尾・あいさつ","m":"〜だろう、〜でしょ。「だら」と同じく確認・同意を求める。語尾を伸ばして「らぁ」とも。動詞・形容詞に付きやすい。","ex":"飲むら？","std":"飲むでしょ？／飲む？"},
   {"id":"dani","w":"だに","k":"だに","cat":"語尾・あいさつ","m":"〜だよ、〜なんだよ。断定や情報提供。名詞・形容動詞に付く。「に」より主張や念押しが強い。文の途中に置くと「〜のに」という逆接になり、「違うだに、なんで直さんだ（違うのに、なぜ直さないの）」のように使う。","ex":"明日から10月だに。","std":"明日から10月だよ。"},
   {"id":"ni","w":"に","k":"に／にぃ","cat":"語尾・あいさつ","m":"〜よ、〜ね。動詞・形容詞に直接付いて、やわらかく事実を伝える。","ex":"早いに。","std":"早いよ。"},
@@ -4682,7 +4762,7 @@ const DATA = [
   {"id":"chigashinu","w":"血が死ぬ","k":"ちがしぬ","cat":"動作・行い","m":"内出血する。打撲などで皮膚の下が鬱血し、変色した状態。","ex":"ぶつけて血が死んじゃった。","std":"ぶつけて内出血してしまった。"},
   {"id":"atamaokiru","w":"頭を切る","k":"あたまをきる","cat":"動作・行い","m":"髪を切る、散髪する。頭そのものではなく、髪の意。","ex":"そろそろ頭切ってこんと。","std":"そろそろ髪を切ってこないと。"},
   {"id":"kuro","w":"くろ","k":"くろ","cat":"名詞・もの","m":"端、隅、へり。色の黒ではなく、空間的な境界を指す。","ex":"車来るで、道のくろに寄んな。","std":"車が来るから、道の端に寄りなさい。"},
-  {"id":"senhiki","w":"せんひき","k":"せんひき","cat":"名詞・もの","m":"定規、物差し。「線引き」から。静岡で広く使われる。","ex":"せんひき取って。","std":"定規を取って。","n":"国立国語研究所の全国方言分布調査（2010〜2015年）では、磐田市の地点で質問「定規」に「センヒキ」の回答が記録されている。本人は標準語だと思って使っていることの多い、いわゆる「気づかない方言」の代表である。","syn":"じょうぎ ものさし 定規"},
+  {"id":"senhiki","w":"せんひき","k":"せんひき","cat":"名詞・もの","m":"定規、物差し。「線引き」から。静岡で広く使われる。","ex":"せんひき取って。","std":"定規を取って。","n":"国研の磐田市地点では「定規」に「センヒキ」と回答し、話者は子供の頃には「モノサシ」と言ったと注記している。一つの地点の回答から、市全体の学校や世代別の使用率は判断できない。","syn":"じょうぎ ものさし 定規"},
   {"id":"aisa","w":"あいさ","k":"あいさ","cat":"名詞・もの","m":"間、すきま。","ex":"たんすと壁のあいさに落ちた。","std":"たんすと壁のあいだに落ちた。"},
   {"id":"tenkocho","w":"てんこちょ","k":"てんこちょ","cat":"名詞・もの","m":"てっぺん、頂上。","ex":"山のてんこちょまで登った。","std":"山のてっぺんまで登った。"},
   {"id":"nechi","w":"ねち","k":"ねち","cat":"名詞・もの","m":"歯ぐき、歯茎。高齢層に残る言い方。","ex":"ねちが腫れてまった。","std":"歯ぐきが腫れてしまった。"},
@@ -4707,12 +4787,12 @@ const DATA = [
   {"id":"chokkura","w":"ちょっくら","k":"ちょっくら","cat":"程度・量","m":"少し、ちょっと。","ex":"ちょっくら出てくるで。","std":"ちょっと出かけてくるね。"},
   {"id":"yai","w":"やい","k":"やい","cat":"気持ち","m":"おい。人を呼び止めるときの呼びかけ。重ねた「やいやい」は嘆きの声になる。","ex":"やい、忘れもんだに。","std":"おい、忘れ物だよ。"},
   {"id":"toru","w":"とる","k":"〜とる／〜どる","cat":"語尾・あいさつ","m":"〜ている。動作の進行や結果の状態を表す。湖西・西遠で優勢で、東遠ではあまり使われないとされる。磐田では「〜てる」と併存しているとみられる。","ex":"雨、まだ降っとる？","std":"雨、まだ降ってる？"},
-  {"id":"mai","w":"まい","k":"〜まい／〜まいか","cat":"語尾・あいさつ","m":"〜しよう、〜しようじゃないか。相手を誘う形。「行かまい」「やらまいか」。駿河の「〜ざあ」に対する、遠州の誘いの形である。","ex":"ちゃっと片付けて、お茶にしまい。","std":"急いで片付けて、お茶にしよう。"},
+  {"id":"mai","w":"まい","k":"〜まい／〜まいか","cat":"語尾・あいさつ","m":"〜しよう、〜しようじゃないか。相手を誘う形。「行かまい」「やらまいか」。","ex":"ちゃっと片付けて、お茶にしまい。","std":"急いで片付けて、お茶にしよう。","n":"誘いの言い方は一つではない。国研の磐田市地点では「行こうよ」に「イコーヨ」「イカザー」が記録され、後者には強く誘う場合に使うという注記がある。「まい」と「ざあ」を県内の地域だけで一律に区切らない。"},
   {"id":"gou","w":"ごう","k":"〜ごう","cat":"語尾・あいさつ","m":"〜してごらん。「〜てごう」の形で、軽くうながす。","ex":"これ、食べてごう。","std":"これ、食べてごらん。"},
   {"id":"nai","w":"ない","k":"〜ない","cat":"語尾・あいさつ","m":"〜しなさい。動詞の連用形に付く（「書きない」「起きない」）。否定の「ない」ではなく、やわらかな命令。","ex":"早く起きない。","std":"早く起きなさい。"},
   {"id":"dade","w":"だで","k":"だで／で","cat":"語尾・あいさつ","m":"〜だから。理由を述べる。名詞・形容動詞には「だで」、動詞・形容詞には「で」が付く。「だもんで」より短い形。","ex":"雨だで、傘持ってきな。","std":"雨だから、傘を持っていきなさい。"},
   {"id":"kenga","w":"けんが","k":"けんが／けえが／けん","cat":"語尾・あいさつ","m":"〜けれど、〜けど。逆接。中遠・東遠で使われるとされる。","ex":"行きたいけんが、暇がないだよ。","std":"行きたいけれど、時間がないんだよ。"},
-  {"id":"nanda","w":"なんだ","k":"〜なんだ","cat":"語尾・あいさつ","m":"〜なかった。古くからの過去否定の形。新しい「〜んかった」と世代によって使い分けられている（文法欄参照）。","ex":"昨日は雨、降らなんだ。","std":"昨日は雨が降らなかった。"},
+  {"id":"nanda","w":"なんだ","k":"〜なんだ","cat":"語尾・あいさつ","m":"〜なかった。過去の否定を表す形。「行かなかった」に対する国研の磐田市地点の回答に「イカナンダ」がある。","ex":"昨日は雨、降らなんだ。","std":"昨日は雨が降らなかった。"},
   {"id":"akko","w":"あっこ","k":"あっこ／あっこら","cat":"名詞・もの","m":"あそこ。「あっこら」「あっこいら」で、あそこらへん。","ex":"あっこの角を曲がったとこだに。","std":"あそこの角を曲がったところだよ。","syn":"あそこ あそこら"},
   {"id":"awakui","w":"あわくい","k":"あわくい／あわっくい","cat":"名詞・もの","m":"慌て者、そそっかしい人。","ex":"あわくいだもんで、また鍵忘れた。","std":"慌て者だから、また鍵を忘れた。","syn":"慌てん坊 そそっかしい 粗忽者"},
   {"id":"irankon","w":"いらんこん","k":"いらんこん","cat":"名詞・もの","m":"余計なこと、おせっかい。「こん」は「こと」の意。","ex":"いらんこん言わんどいて。","std":"余計なことを言わないでおいて。","syn":"余計なこと おせっかい"},
