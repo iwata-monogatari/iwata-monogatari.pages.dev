@@ -187,7 +187,7 @@ ${karuta}
         </div>
         <p class="mean">${escapeHtml(e.m)}</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">${escapeHtml(e.ex)}</span>
+          <span class="label">使用例</span><span class="example">${escapeHtml(e.ex)}</span>
           <span class="std">＝ ${escapeHtml(e.std)}</span>
         </div>${note}${sources}${articles}
       </div>

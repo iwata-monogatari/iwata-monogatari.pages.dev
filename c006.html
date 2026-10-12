@@ -226,16 +226,34 @@
   dialog.c006-dialog .btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
   dialog.c006-dialog .btns button{padding:9px 16px;font-size:14px;font-weight:700;font-family:inherit;border:1.5px solid var(--brown);border-radius:4px;background:var(--card);color:var(--brown-deep);cursor:pointer;}
   dialog.c006-dialog .btns button.primary{background:var(--brown);color:#fff;}
-  dialog.karuta-lightbox{padding:14px;max-width:min(94vw,560px);max-height:94vh;}
-  dialog.karuta-lightbox img{display:block;width:auto;height:auto;max-width:100%;max-height:calc(94vh - 150px);margin:0 auto;border-radius:6px;}
-  dialog.karuta-lightbox p{margin:10px 0 0;}
-  .dict.karuta-view{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:14px;}
-  .dict.karuta-view .entry{display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 12px;margin:0;cursor:pointer;}
-  .dict.karuta-view .karuta{width:100%;max-width:150px;}
+  dialog.karuta-lightbox{padding:20px;width:680px;max-width:94vw;max-height:90vh;max-height:90dvh;overflow-y:auto;overscroll-behavior:contain;}
+  .karuta-lightbox .lightbox-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px;}
+  .karuta-lightbox .lightbox-heading h2{margin:0;font-size:24px;overflow-wrap:anywhere;}
+  .karuta-lightbox .lightbox-heading button{flex-shrink:0;padding:8px 14px;font-family:inherit;font-size:14px;font-weight:700;border:1px solid var(--brown);border-radius:4px;background:var(--brown);color:#fff;cursor:pointer;}
+  .karuta-lightbox .lightbox-content{display:grid;grid-template-columns:160px minmax(0,1fr);gap:20px;align-items:start;}
+  .karuta-lightbox figure{margin:0;}
+  .karuta-lightbox img{display:block;width:100%;height:auto;border-radius:6px;}
+  .karuta-lightbox figcaption{margin-top:6px;font-size:11px;line-height:1.6;color:var(--ink-soft);text-align:center;}
+  .karuta-lightbox .karuta-full-size{display:block;margin-top:8px;font-size:12px;line-height:1.6;}
+  .karuta-lightbox .top{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin-bottom:10px;}
+  .karuta-lightbox .kana,.karuta-lightbox .cat{font-size:12px;color:var(--ink-soft);}
+  .karuta-lightbox .mean{margin:0 0 14px;font-size:16px;line-height:1.8;color:var(--ink);}
+  .karuta-lightbox .ex{padding:12px 14px;border-radius:4px;background:var(--paper-deep);font-size:15px;line-height:1.8;}
+  .karuta-lightbox .ex .label{display:block;margin-bottom:4px;font-size:12px;font-weight:700;color:var(--brown-deep);}
+  .karuta-lightbox .std{display:block;margin-top:6px;font-size:13.5px;color:var(--ink-soft);}
+  .karuta-lightbox .note-word,.karuta-lightbox .word-src,.karuta-lightbox .word-links{margin:14px 0 0;font-size:13px;line-height:1.85;overflow-wrap:anywhere;}
+  .karuta-lightbox .note-word .label,.karuta-lightbox .word-src .label,.karuta-lightbox .word-links .label{font-weight:700;color:var(--accent-blue);margin-right:8px;}
+  .dict.karuta-view{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;}
+  .dict.karuta-view .entry{display:grid;grid-template-columns:76px minmax(0,1fr);align-items:start;gap:14px;padding:16px;margin:0;cursor:pointer;}
+  .dict.karuta-view .karuta{width:76px;}
+  .dict.karuta-view .karuta-credit{font-size:10px;margin-top:4px;}
   .dict.karuta-view .karuta-kana{width:64px;height:64px;font-size:44px;}
-  .dict.karuta-view .top{justify-content:center;margin:0;}
-  .dict.karuta-view .word{font-size:18px;}
-  .dict.karuta-view .kana,.dict.karuta-view .cat,.dict.karuta-view .src-badges,.dict.karuta-view .mean,.dict.karuta-view .ex,
+  .dict.karuta-view .top{gap:6px;margin:0 0 8px;}
+  .dict.karuta-view .word{font-size:20px;}
+  .dict.karuta-view .mean{font-size:14px;line-height:1.75;margin-bottom:10px;}
+  .dict.karuta-view .ex{font-size:13.5px;padding:10px 12px;}
+  .dict.karuta-view .ex .std{font-size:12.5px;}
+  .dict.karuta-view .kana,.dict.karuta-view .cat,.dict.karuta-view .src-badges,
   .dict.karuta-view .note-word,.dict.karuta-view .word-src,.dict.karuta-view .word-links,.dict.karuta-view .survey{display:none;}
   .dict.karuta-view .empty{grid-column:1/-1;}
   .karuta-credit{font-size:12.5px;color:var(--ink-soft);margin:8px 0 0;line-height:1.75;}
@@ -245,8 +263,16 @@
     .entry .karuta{float:right;width:62px;margin:2px 0 8px 12px;}
     .karuta-kana{width:40px;height:40px;font-size:27px;}
     .karuta-status{font-size:9.5px;}
-    .dict.karuta-view{grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:10px;}
-    .dict.karuta-view .karuta{width:100%;}
+    .dict.karuta-view{grid-template-columns:minmax(0,1fr);gap:10px;}
+    .dict.karuta-view .entry{grid-template-columns:64px minmax(0,1fr);gap:12px;}
+    .dict.karuta-view .karuta{float:none;width:64px;margin:0;}
+  }
+  @media(max-width:520px){
+    dialog.karuta-lightbox{padding:16px;}
+    .karuta-lightbox .lightbox-content{grid-template-columns:96px minmax(0,1fr);gap:12px;}
+    .karuta-lightbox .lightbox-heading h2{font-size:22px;}
+    .karuta-lightbox .mean{font-size:14px;}
+    .karuta-lightbox .ex{font-size:14px;padding:10px;}
   }
 </style>
   <link rel="canonical" href="https://iwata-monogatari.net/c006">
@@ -1913,7 +1939,7 @@
       <p class="intent-note">用例は、掲載した意味・用法をもとに編集部が作成した作例です。実際の話者の発話を引用したものではなく、地域や世代によって使い方が異なる場合があります。</p>
       <div class="kotoba-legend" id="kotoba-legend">
         <p><strong>資料の印</strong>語の横の印は、公開資料で語形や意味の記録を確かめられることを示します（現在30語）。<span class="src-badge src-gunshi1921">1921</span>は『静岡県磐田郡誌』（1921年）の方言の記録、<span class="src-badge src-fpjd">国研</span>は国立国語研究所「全国方言分布調査」（2010〜2015年）の磐田市地点の回答です。郡誌の旧町村名は現在の市域と一致しません。印のない語には、現時点で個別の一次資料との対応を示していません。原表記・回答の注記は<a href="/c172">磐田ことば資料室</a>で確認できます。</p>
-        <p><strong>遠州弁かるた</strong>122語すべてに引札風の絵札を添えました。「絵札で並べる」で一覧でき、絵を押すと拡大できます。絵は生成AIを用い、作例の場面から新規制作したものです。<a href="/downloads/enshu-karuta-122.pdf">絵札・読み札を印刷する（PDF）</a>／<a href="/c176">制作と遊び方</a>。学校などでの非営利の利用は、出典を明記すれば自由です（<a href="#karuta-use">利用について</a>）。</p>
+        <p><strong>遠州弁かるた</strong>122語すべてに引札風の絵札を添えました。「絵札で並べる」では、小さな絵札と意味・使用例・標準語訳を一緒に読めます。絵札を押すと解説と資料も開きます。絵は生成AIを用い、作例の場面から新規制作したものです。<a href="/downloads/enshu-karuta-122.pdf">絵札・読み札を印刷する（PDF）</a>／<a href="/c176">制作と遊び方</a>。学校などでの非営利の利用は、出典を明記すれば自由です（<a href="#karuta-use">利用について</a>）。</p>
         <p><strong>磐田ことば調査</strong>各語の「使う／聞いたことがある／知らない」に答えると、語ごとの集計に加わります。氏名や連絡先は聞きません。割合は回答が30件に達した語から表示します。読者の自己申告による参考値で、学術調査の結果ではありません。辞典にないことばや家での言い方は、<a href="/bbs">掲示板</a>で教えてください。</p>
       </div>
     </section>
@@ -1953,7 +1979,7 @@
         </div>
         <p class="mean">間、すきま。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">たんすと壁のあいさに落ちた。</span>
+          <span class="label">使用例</span><span class="example">たんすと壁のあいさに落ちた。</span>
           <span class="std">＝ たんすと壁のあいだに落ちた。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1243-aisa" rel="noopener">『静岡県磐田郡誌』1921年、1243頁・旧袋井町に「あいさ」の記録。原資料の意味「あひだ」。原注「間」。</a></p>
@@ -1974,7 +2000,7 @@
         </div>
         <p class="mean">うろたえる、慌てる。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">急に呼ばれて、あおたえちゃった。</span>
+          <span class="label">使用例</span><span class="example">急に呼ばれて、あおたえちゃった。</span>
           <span class="std">＝ 急に呼ばれて、うろたえてしまった。</span>
         </div>
       </div>
@@ -1993,7 +2019,7 @@
         </div>
         <p class="mean">髪を切る、散髪する。頭そのものではなく、髪の意。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">そろそろ頭切ってこんと。</span>
+          <span class="label">使用例</span><span class="example">そろそろ頭切ってこんと。</span>
           <span class="std">＝ そろそろ髪を切ってこないと。</span>
         </div>
       </div>
@@ -2012,7 +2038,7 @@
         </div>
         <p class="mean">あそこ。「あっこら」「あっこいら」で、あそこらへん。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">あっこの角を曲がったとこだに。</span>
+          <span class="label">使用例</span><span class="example">あっこの角を曲がったとこだに。</span>
           <span class="std">＝ あそこの角を曲がったところだよ。</span>
         </div>
       </div>
@@ -2031,7 +2057,7 @@
         </div>
         <p class="mean">慌て者、そそっかしい人。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">あわくいだもんで、また鍵忘れた。</span>
+          <span class="label">使用例</span><span class="example">あわくいだもんで、また鍵忘れた。</span>
           <span class="std">＝ 慌て者だから、また鍵を忘れた。</span>
         </div>
       </div>
@@ -2050,7 +2076,7 @@
         </div>
         <p class="mean">安心、気楽。「あんきだ」で、のんびりしている、気が楽だ。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">仕事が片付いて、あんきになった。</span>
+          <span class="label">使用例</span><span class="example">仕事が片付いて、あんきになった。</span>
           <span class="std">＝ 仕事が片付いて、気が楽になった。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>漢字では「安気」と書く。遠州に限らず各地の方言に見られる語である。</p>
@@ -2071,7 +2097,7 @@
         </div>
         <p class="mean">餅。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">あんも焼けたに。</span>
+          <span class="label">使用例</span><span class="example">あんも焼けたに。</span>
           <span class="std">＝ お餅が焼けたよ。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>静岡県磐田郡教育会編『静岡県磐田郡誌』（1921年）1242頁には、「あんもう」の語形で餅を指す記録がある。ここに掲げた「あんも」とは表記が異なる。</p>
@@ -2093,7 +2119,7 @@
         </div>
         <p class="mean">〜にしておく、やめておく、これで良しとする。対立を避け、穏やかに物事を収めるときの言葉。中止・妥協・許容・中断と幅広く使う。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">雨だで、今日のジョギングはいいにするか。</span>
+          <span class="label">使用例</span><span class="example">雨だで、今日のジョギングはいいにするか。</span>
           <span class="std">＝ 雨だから、今日のジョギングはやめておくか。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>静岡新聞の報道によれば、静岡県立大学の谷口ジョイ教授の研究室による2024年の県内調査（1,770人）で、中止・妥協・許容・中断の4つの意味のすべてについて9割以上が「使う」または「わかる」と答えた。県外ではほとんど知られていない語とされる。</p>
@@ -2114,7 +2140,7 @@
         </div>
         <p class="mean">曲がる、ゆがむ。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">棚がいがんどる。</span>
+          <span class="label">使用例</span><span class="example">棚がいがんどる。</span>
           <span class="std">＝ 棚がゆがんでいる。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1243-igamu" rel="noopener">『静岡県磐田郡誌』1921年、1243頁・旧福島村に「いがむ」の記録。原資料の意味「ゆがむ（歪む）」。</a></p>
@@ -2135,7 +2161,7 @@
         </div>
         <p class="mean">蒸し暑さにまいる、むっとする。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">締め切った部屋でいきれちゃった。</span>
+          <span class="label">使用例</span><span class="example">締め切った部屋でいきれちゃった。</span>
           <span class="std">＝ 閉め切った部屋で蒸し暑さにまいってしまった。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>標準語の「草いきれ」「人いきれ」の「いきれ」と同じ語根をもつ動詞である。</p>
@@ -2155,7 +2181,7 @@
         </div>
         <p class="mean">居づらい、居心地が悪い、居場所がない。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">あの場はいずようなかったわ。</span>
+          <span class="label">使用例</span><span class="example">あの場はいずようなかったわ。</span>
           <span class="std">＝ あの場は居づらかったよ。</span>
         </div>
       </div>
@@ -2175,7 +2201,7 @@
         </div>
         <p class="mean">いじる、触る。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">機械、勝手にいぜっちゃいかんに。</span>
+          <span class="label">使用例</span><span class="example">機械、勝手にいぜっちゃいかんに。</span>
           <span class="std">＝ 機械を勝手にいじってはだめだよ。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1243-izeru" rel="noopener">『静岡県磐田郡誌』1921年、1243頁・旧福島村に「いぜる」の記録。原資料の意味「いぢる」。</a></p>
@@ -2196,7 +2222,7 @@
         </div>
         <p class="mean">とても、たくさん、いっぱい。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">今日はいっちょ働いたわ。</span>
+          <span class="label">使用例</span><span class="example">今日はいっちょ働いたわ。</span>
           <span class="std">＝ 今日はたくさん働いたよ。</span>
         </div>
       </div>
@@ -2216,7 +2242,7 @@
         </div>
         <p class="mean">動く。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">写真撮るで、いのかんで。</span>
+          <span class="label">使用例</span><span class="example">写真撮るで、いのかんで。</span>
           <span class="std">＝ 写真を撮るから、動かないで。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1243-inoku" rel="noopener">『静岡県磐田郡誌』1921年、1243頁・旧袋井町に「いのく」の記録。原資料の意味「動く」。</a></p>
@@ -2237,7 +2263,7 @@
         </div>
         <p class="mean">ぬかるみなどに足を取られてはまる、めり込む。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">田んぼでいぼっちゃった。</span>
+          <span class="label">使用例</span><span class="example">田んぼでいぼっちゃった。</span>
           <span class="std">＝ 田んぼでぬかるみにはまってしまった。</span>
         </div>
       </div>
@@ -2256,7 +2282,7 @@
         </div>
         <p class="mean">陶磁器などのひび、ひび割れ。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">この茶碗、いみが入っとる。</span>
+          <span class="label">使用例</span><span class="example">この茶碗、いみが入っとる。</span>
           <span class="std">＝ この茶碗、ひびが入っている。</span>
         </div>
       </div>
@@ -2275,7 +2301,7 @@
         </div>
         <p class="mean">いやだ、気が進まない、不愉快だ。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">雨ん中出かけるのはいやったいなあ。</span>
+          <span class="label">使用例</span><span class="example">雨ん中出かけるのはいやったいなあ。</span>
           <span class="std">＝ 雨の中出かけるのは気が進まないなあ。</span>
         </div>
       </div>
@@ -2294,7 +2320,7 @@
         </div>
         <p class="mean">余計なこと、おせっかい。「こん」は「こと」の意。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">いらんこん言わんどいて。</span>
+          <span class="label">使用例</span><span class="example">いらんこん言わんどいて。</span>
           <span class="std">＝ 余計なことを言わないでおいて。</span>
         </div>
       </div>
@@ -2313,7 +2339,7 @@
         </div>
         <p class="mean">捨てる、放っておく。「うっちゃっとく」で放置する。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">いらんもんは、うっちゃっといて。</span>
+          <span class="label">使用例</span><span class="example">いらんもんは、うっちゃっといて。</span>
           <span class="std">＝ いらない物は、捨てておいて。</span>
         </div>
       </div>
@@ -2332,7 +2358,7 @@
         </div>
         <p class="mean">たくさん、いっぱい。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">みかん、えいかんもらった。</span>
+          <span class="label">使用例</span><span class="example">みかん、えいかんもらった。</span>
           <span class="std">＝ みかんをたくさんもらった。</span>
         </div>
       </div>
@@ -2351,7 +2377,7 @@
         </div>
         <p class="mean">疲れた、しんどい。立派の意ではなく、体がきつい意で使う。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">今日は歩きすぎてえらいわ。</span>
+          <span class="label">使用例</span><span class="example">今日は歩きすぎてえらいわ。</span>
           <span class="std">＝ 今日は歩きすぎて疲れたよ。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>「疲れた・つらい」の意の「えらい」は、東海地方から近畿にかけて広く使われる。遠州のことばが西日本と連続している例の一つである。</p>
@@ -2372,7 +2398,7 @@
         </div>
         <p class="mean">だめだ、いけない、手に負えない。「いかん」と近い。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">こりゃもう、おえんわ。</span>
+          <span class="label">使用例</span><span class="example">こりゃもう、おえんわ。</span>
           <span class="std">＝ これはもう、だめだよ。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1244-oen" rel="noopener">『静岡県磐田郡誌』1921年、1244頁・旧袋井町に「おえん」の記録。原資料の意味「いかん」。原注は原画像を参照。</a></p>
@@ -2393,7 +2419,7 @@
         </div>
         <p class="mean">（まぶたなどが）重い、腫れぼったい。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">寝不足で目がおおぼったい。</span>
+          <span class="label">使用例</span><span class="example">寝不足で目がおおぼったい。</span>
           <span class="std">＝ 寝不足で目が腫れぼったい。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>「〜ったい」で終わる形容詞は静岡方言に多く、「やぶせったい」「ぶしょったい」と同じ型である。</p>
@@ -2414,7 +2440,7 @@
         </div>
         <p class="mean">粗悪な、品質が悪い、みすぼらしい。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">おぞい品物つかまされた。</span>
+          <span class="label">使用例</span><span class="example">おぞい品物つかまされた。</span>
           <span class="std">＝ 粗悪な品物を買わされた。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>古語の「おぞし」に連なる語とみられる。静岡県内で広く使われ、「おぞい家」「おぞい服」のように物の粗末さを言うことが多い。</p>
@@ -2436,7 +2462,7 @@
         </div>
         <p class="mean">お調子者、すぐ調子に乗る人。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">あいつはおだっくいだもんで、すぐ乗せられる。</span>
+          <span class="label">使用例</span><span class="example">あいつはおだっくいだもんで、すぐ乗せられる。</span>
           <span class="std">＝ あいつはお調子者だから、すぐ乗せられる。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>静岡県内で広く聞かれる語。近年の調査報道では、若い世代では使われにくくなっている語の一つとして挙げられている。</p>
@@ -2456,7 +2482,7 @@
         </div>
         <p class="mean">おしゃべりで活発な（女の子）。お転婆。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">あの子はおちゃっぴいだなあ。</span>
+          <span class="label">使用例</span><span class="example">あの子はおちゃっぴいだなあ。</span>
           <span class="std">＝ あの子はお転婆だなあ。</span>
         </div>
       </div>
@@ -2475,7 +2501,7 @@
         </div>
         <p class="mean">お坊さん、僧侶。寺の住職を親しみをこめて呼ぶ。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">盆にはおっさまがお経あげに来るに。</span>
+          <span class="label">使用例</span><span class="example">盆にはおっさまがお経あげに来るに。</span>
           <span class="std">＝ お盆にはお坊さんがお経をあげに来るよ。</span>
         </div>
         <p class="word-links"><span class="label">記事</span><a href="/c134">磐田市の寺院</a></p>
@@ -2495,7 +2521,7 @@
         </div>
         <p class="mean">味噌汁。やや古い言い方。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">おっしー、もう一杯。</span>
+          <span class="label">使用例</span><span class="example">おっしー、もう一杯。</span>
           <span class="std">＝ 味噌汁、もう一杯。</span>
         </div>
       </div>
@@ -2514,7 +2540,7 @@
         </div>
         <p class="mean">ひっつき虫。服に付くセンダングサ類などの種。「とびつか」とも。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">草むら歩いたら、おとびがいっぱい付いた。</span>
+          <span class="label">使用例</span><span class="example">草むら歩いたら、おとびがいっぱい付いた。</span>
           <span class="std">＝ 草むらを歩いたら、ひっつき虫がたくさん付いた。</span>
         </div>
       </div>
@@ -2533,7 +2559,7 @@
         </div>
         <p class="mean">着替え用の衣類。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">泊まりだで、かえち持ってきな。</span>
+          <span class="label">使用例</span><span class="example">泊まりだで、かえち持ってきな。</span>
           <span class="std">＝ 泊まりだから、着替えを持ってきなさい。</span>
         </div>
       </div>
@@ -2553,7 +2579,7 @@
         </div>
         <p class="mean">引っかく、かきむしる。「かじる」を強めた形。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">蚊に刺されたとこ、かじくっちゃいかん。</span>
+          <span class="label">使用例</span><span class="example">蚊に刺されたとこ、かじくっちゃいかん。</span>
           <span class="std">＝ 蚊に刺されたところを、かきむしってはいけない。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1245-kajikuru" rel="noopener">『静岡県磐田郡誌』1921年、1245頁・旧袋井町に「かじくる」の記録。原資料の意味「かく」。原注「引掻く」。</a></p>
@@ -2574,7 +2600,7 @@
         </div>
         <p class="mean">引っ掻く。歯で噛むだけでなく、爪で皮膚を掻くことも指す。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">かさぶたかじっちゃいかんに。</span>
+          <span class="label">使用例</span><span class="example">かさぶたかじっちゃいかんに。</span>
           <span class="std">＝ かさぶたを掻いちゃだめだよ。</span>
         </div>
       </div>
@@ -2593,7 +2619,7 @@
         </div>
         <p class="mean">とても、すごく。頑固の意ではなく、程度を強める。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">がんこ混んどったわ。</span>
+          <span class="label">使用例</span><span class="example">がんこ混んどったわ。</span>
           <span class="std">＝ すごく混んでいたよ。</span>
         </div>
         <p class="word-links"><span class="label">記事</span><a href="/c008">標準語⇄遠州弁 変換</a></p>
@@ -2613,7 +2639,7 @@
         </div>
         <p class="mean">しゃべる、おしゃべりをする。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">いつまでくっちゃべっとるだ。</span>
+          <span class="label">使用例</span><span class="example">いつまでくっちゃべっとるだ。</span>
           <span class="std">＝ いつまでおしゃべりしているの。</span>
         </div>
       </div>
@@ -2632,7 +2658,7 @@
         </div>
         <p class="mean">端、隅、へり。色の黒ではなく、空間的な境界を指す。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">車来るで、道のくろに寄んな。</span>
+          <span class="label">使用例</span><span class="example">車来るで、道のくろに寄んな。</span>
           <span class="std">＝ 車が来るから、道の端に寄りなさい。</span>
         </div>
         <p class="word-links"><span class="label">記事</span><a href="/c174">家と屋敷のことば</a></p>
@@ -2652,7 +2678,7 @@
         </div>
         <p class="mean">〜か。「〜か？」の角を取って、やわらかく問う。体言にも用言にも付く。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">これけ？</span>
+          <span class="label">使用例</span><span class="example">これけ？</span>
           <span class="std">＝ これなの？</span>
         </div>
       </div>
@@ -2671,7 +2697,7 @@
         </div>
         <p class="mean">蹴飛ばす。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">バケツけっからかしちゃった。</span>
+          <span class="label">使用例</span><span class="example">バケツけっからかしちゃった。</span>
           <span class="std">＝ バケツを蹴飛ばしてしまった。</span>
         </div>
       </div>
@@ -2691,7 +2717,7 @@
         </div>
         <p class="mean">きれいな、美しい。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">けっこい花が咲いとる。</span>
+          <span class="label">使用例</span><span class="example">けっこい花が咲いとる。</span>
           <span class="std">＝ きれいな花が咲いている。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1246-kekkoi" rel="noopener">『静岡県磐田郡誌』1921年、1246頁・旧於保村に「けつこい」の記録。原資料の意味「けつかうな」。小さい「っ」に統一せず原表記を残す。</a>／<a href="https://iwata-monogatari.net/c172#fpjd-51041" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「うつくしい（美しい）」の注記にケッコイの記録（data-ID 51041）。原注：〈晴着はケッコイと言う。年寄りなら虹でもケッコイと言うかもしれない〉</a></p>
@@ -2712,7 +2738,7 @@
         </div>
         <p class="mean">自転車。浜松など天竜川以西で多く聞かれ、川の東では少ないとされる。磐田から見ると「川向こう」のことばでもある。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">けったで駅まで行ってくる。</span>
+          <span class="label">使用例</span><span class="example">けったで駅まで行ってくる。</span>
           <span class="std">＝ 自転車で駅まで行ってくる。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>名古屋方言から広がった比較的新しい語（新方言）とする説明が多い。天竜川の西で多く東で少ないとされるのは、名古屋・三河からの伝わり方を反映している可能性がある。</p>
@@ -2733,7 +2759,7 @@
         </div>
         <p class="mean">〜けれど、〜けど。逆接。中遠・東遠で使われるとされる。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">行きたいけんが、暇がないだよ。</span>
+          <span class="label">使用例</span><span class="example">行きたいけんが、暇がないだよ。</span>
           <span class="std">＝ 行きたいけれど、時間がないんだよ。</span>
         </div>
       </div>
@@ -2752,7 +2778,7 @@
         </div>
         <p class="mean">〜してごらん。「〜てごう」の形で、軽くうながす。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">これ、食べてごう。</span>
+          <span class="label">使用例</span><span class="example">これ、食べてごう。</span>
           <span class="std">＝ これ、食べてごらん。</span>
         </div>
       </div>
@@ -2772,7 +2798,7 @@
         </div>
         <p class="mean">言う。やや乱暴な言い方。「やっきりこく」「うそこく」のように他の語とも結びつく。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">うそこかんで。</span>
+          <span class="label">使用例</span><span class="example">うそこかんで。</span>
           <span class="std">＝ うそを言わないで。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1246-koku" rel="noopener">『静岡県磐田郡誌』1921年、1246頁・旧袋井町に「こく」の記録。原資料の意味「いふ」。原注は「言ふ」の意味と、罵言的な用い方を説明する。</a></p>
@@ -2793,7 +2819,7 @@
         </div>
         <p class="mean">作る、こしらえる。全国の話しことばにも見られるが、遠州の暮らしのなかで今もよく耳にする。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">弁当こさえといたでね。</span>
+          <span class="label">使用例</span><span class="example">弁当こさえといたでね。</span>
           <span class="std">＝ 弁当を作っておいたからね。</span>
         </div>
       </div>
@@ -2812,7 +2838,7 @@
         </div>
         <p class="mean">ずるい、せこい。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">あいつ、こすいことするなあ。</span>
+          <span class="label">使用例</span><span class="example">あいつ、こすいことするなあ。</span>
           <span class="std">＝ あいつ、ずるいことをするなあ。</span>
         </div>
       </div>
@@ -2832,7 +2858,7 @@
         </div>
         <p class="mean">（粉や沈殿物が）底にたまる、沈む。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">片栗粉がこずんどる。</span>
+          <span class="label">使用例</span><span class="example">片栗粉がこずんどる。</span>
           <span class="std">＝ 片栗粉が底に沈んでいる。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1246-kozumu" rel="noopener">『静岡県磐田郡誌』1921年、1246頁・旧於保村に「こぞむ」の記録。原資料の意味「しづむ」。辞典の「こずむ」と語形が異なる。原表記の濁点を確認。</a></p>
@@ -2854,7 +2880,7 @@
         </div>
         <p class="mean">せいせいする、気分がすっきりする。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">部屋片付けたら、ごせっぽいわ。</span>
+          <span class="label">使用例</span><span class="example">部屋片付けたら、ごせっぽいわ。</span>
           <span class="std">＝ 部屋を片付けたら、せいせいしたよ。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>『えーらしぞーか』（2007年）は「〜ぽい」で終わる静岡の方言を一群として取り上げている。</p>
@@ -2876,7 +2902,7 @@
         </div>
         <p class="mean">小さな車輪。キャスターや自転車の補助輪を指す。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">このいすは、ころが付いとるで動かしやすい。</span>
+          <span class="label">使用例</span><span class="example">このいすは、ころが付いとるで動かしやすい。</span>
           <span class="std">＝ この椅子はキャスターが付いているから動かしやすい。</span>
         </div>
       </div>
@@ -2895,7 +2921,7 @@
         </div>
         <p class="mean">（食べ物などが）硬い。恐怖の意ではなく、餅などの物理的な硬さを指す。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">このお餅、まだこわいわ。</span>
+          <span class="label">使用例</span><span class="example">このお餅、まだこわいわ。</span>
           <span class="std">＝ このお餅、まだ硬いよ。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>古語の「こはし（強し）」に連なる語で、「こわめし（強飯）」の「こわ」と同じである。古い意味が方言に残った例とされる。</p>
@@ -2915,7 +2941,7 @@
         </div>
         <p class="mean">こと（事）。「そんなこん」「いらんこん」のように、ほかの語のあとに付く。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">そんなこん、知らんかった。</span>
+          <span class="label">使用例</span><span class="example">そんなこん、知らんかった。</span>
           <span class="std">＝ そんなこと、知らなかった。</span>
         </div>
       </div>
@@ -2934,7 +2960,7 @@
         </div>
         <p class="mean">ごみ、くず。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">ごんどは火曜に出すだよ。</span>
+          <span class="label">使用例</span><span class="example">ごんどは火曜に出すだよ。</span>
           <span class="std">＝ ごみは火曜日に出すんだよ。</span>
         </div>
       </div>
@@ -2954,7 +2980,7 @@
         </div>
         <p class="mean">実家、生まれ育った家やその土地。「お在所」とも。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">盆は在所へ帰るでね。</span>
+          <span class="label">使用例</span><span class="example">盆は在所へ帰るでね。</span>
           <span class="std">＝ お盆は実家へ帰るからね。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>本来は「住んでいる所・故郷」を意味する語で、古くから文献に見える。遠州では、実家やふるさとの意で日常的に使う。</p>
@@ -2977,7 +3003,7 @@
         </div>
         <p class="mean">〜ごと、〜全部。残さず全体を、の意。「まるさら」で丸ごと。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">りんご、皮さら食べる。</span>
+          <span class="label">使用例</span><span class="example">りんご、皮さら食べる。</span>
           <span class="std">＝ りんご、皮ごと食べる。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-89328" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「ごと：皮ごと〈食べた〉（対象の包括化）」にカワサラの回答（data-ID 89328）。原注：（ゆ）</a></p>
@@ -2998,7 +3024,7 @@
         </div>
         <p class="mean">舌。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">熱いお茶で舌べろやけどした。</span>
+          <span class="label">使用例</span><span class="example">熱いお茶で舌べろやけどした。</span>
           <span class="std">＝ 熱いお茶で舌をやけどした。</span>
         </div>
       </div>
@@ -3017,7 +3043,7 @@
         </div>
         <p class="mean">〜じゃない、〜だよね。同意を求めたり、話を次へ繋いだりする。「じゃんか」は念押し・詰問。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">昨日さ、雨だったじゃんね。</span>
+          <span class="label">使用例</span><span class="example">昨日さ、雨だったじゃんね。</span>
           <span class="std">＝ 昨日、雨だったよね。</span>
         </div>
       </div>
@@ -3036,7 +3062,7 @@
         </div>
         <p class="mean">〜の人たち、〜の連中。「若い衆ら」「町内の衆ら」のように、集団をまとめて呼ぶ。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">町内の衆らで草刈りやるに。</span>
+          <span class="label">使用例</span><span class="example">町内の衆らで草刈りやるに。</span>
           <span class="std">＝ 町内の人たちで草刈りをするよ。</span>
         </div>
       </div>
@@ -3056,7 +3082,7 @@
         </div>
         <p class="mean">水気が多い、汁気が多い。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">このみかん、じゅるくてうまいなあ。</span>
+          <span class="label">使用例</span><span class="example">このみかん、じゅるくてうまいなあ。</span>
           <span class="std">＝ このみかん、果汁が多くておいしいなあ。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1246-jurui" rel="noopener">『静岡県磐田郡誌』1921年、1246頁・旧袋井町に「じるい」の記録。原資料の意味「やはらかい」。道の泥濘にも使う旨の原注。辞典の「じゅるい」と語形が異なる。</a></p>
@@ -3077,7 +3103,7 @@
         </div>
         <p class="mean">ぐずぐずする、のろのろ動く。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">しょろしょろしとらんで、ちゃっとしない。</span>
+          <span class="label">使用例</span><span class="example">しょろしょろしとらんで、ちゃっとしない。</span>
           <span class="std">＝ ぐずぐずしていないで、早くしなさい。</span>
         </div>
       </div>
@@ -3096,7 +3122,7 @@
         </div>
         <p class="mean">しょうがない、仕方がない。諦めの気持ちから、軽い非難まで幅広く使う。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">見つからんもんはしょんないら。</span>
+          <span class="label">使用例</span><span class="example">見つからんもんはしょんないら。</span>
           <span class="std">＝ 見つからない物は仕方ないよ。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>「しょうがない」がつづまった形。静岡県全体で使われ、県民がよく自覚している方言の一つである。</p>
@@ -3117,7 +3143,7 @@
         </div>
         <p class="mean">分家。本家（ほんや）から分かれて建てた家。家の呼び名として集落の会話に残る。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">うちは新家で、本家は通りの向こうだに。</span>
+          <span class="label">使用例</span><span class="example">うちは新家で、本家は通りの向こうだに。</span>
           <span class="std">＝ うちは分家で、本家は通りの向こうだよ。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>対になる語は「本家（ほんや）」。家の続柄が日常の呼び名になっていたことを示す語である。</p>
@@ -3139,7 +3165,7 @@
         </div>
         <p class="mean">ずるい。「こすい」と近い意味で使う。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">先に食べるなんてずっこいら。</span>
+          <span class="label">使用例</span><span class="example">先に食べるなんてずっこいら。</span>
           <span class="std">＝ 先に食べるなんてずるいでしょ。</span>
         </div>
       </div>
@@ -3159,7 +3185,7 @@
         </div>
         <p class="mean">〜だろう。古くから記録のある推量表現。「だら」「ら」と並ぶ言い方。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">そうずらなあ。</span>
+          <span class="label">使用例</span><span class="example">そうずらなあ。</span>
           <span class="std">＝ そうだろうなあ。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>郡誌では1921年の袋井町に「ずら」の記録がある。国研の磐田市地点の「センセーズラ」には、調査者が語形を示した回答で、話者が使うことは少ないという注記が付く。市全域の世代別使用率を示すものではない。</p>
@@ -3181,7 +3207,7 @@
         </div>
         <p class="mean">つつく、いじる、触る。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">かさぶた、せせらんどきな。</span>
+          <span class="label">使用例</span><span class="example">かさぶた、せせらんどきな。</span>
           <span class="std">＝ かさぶたは、いじらないでおきなさい。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>古語の「せせる（つつく・ほじる）」に連なる語で、全国の方言に広く残る。</p>
@@ -3201,7 +3227,7 @@
         </div>
         <p class="mean">詮索好きだ、人のことに首を突っこみたがる。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">せんしょったいこと聞かんどいて。</span>
+          <span class="label">使用例</span><span class="example">せんしょったいこと聞かんどいて。</span>
           <span class="std">＝ 詮索するようなことは聞かないでおいて。</span>
         </div>
       </div>
@@ -3221,7 +3247,7 @@
         </div>
         <p class="mean">定規、物差し。「線引き」から。静岡で広く使われる。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">せんひき取って。</span>
+          <span class="label">使用例</span><span class="example">せんひき取って。</span>
           <span class="std">＝ 定規を取って。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>国研の磐田市地点では「定規」に「センヒキ」と回答し、話者は子供の頃には「モノサシ」と言ったと注記している。一つの地点の回答から、市全体の学校や世代別の使用率は判断できない。</p>
@@ -3244,7 +3270,7 @@
         </div>
         <p class="mean">〜だから。理由を述べる。名詞・形容動詞には「だで」、動詞・形容詞には「で」が付く。「だもんで」より短い形。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">雨だで、傘持ってきな。</span>
+          <span class="label">使用例</span><span class="example">雨だで、傘持ってきな。</span>
           <span class="std">＝ 雨だから、傘を持っていきなさい。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-90680" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「降っているから」にフッテルデの回答（data-ID 90680）</a></p>
@@ -3265,7 +3291,7 @@
         </div>
         <p class="mean">〜だよ、〜なんだよ。断定や情報提供。名詞・形容動詞に付く。「に」より主張や念押しが強い。文の途中に置くと「〜のに」という逆接になり、「違うだに、なんで直さんだ（違うのに、なぜ直さないの）」のように使う。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">明日から10月だに。</span>
+          <span class="label">使用例</span><span class="example">明日から10月だに。</span>
           <span class="std">＝ 明日から10月だよ。</span>
         </div>
         <p class="word-links"><span class="label">記事</span><a href="/c008">標準語⇄遠州弁 変換</a></p>
@@ -3285,7 +3311,7 @@
         </div>
         <p class="mean">同い年、同級。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">あいつとはためだに。</span>
+          <span class="label">使用例</span><span class="example">あいつとはためだに。</span>
           <span class="std">＝ あいつとは同い年だよ。</span>
         </div>
       </div>
@@ -3304,7 +3330,7 @@
         </div>
         <p class="mean">〜だから、〜なので。理由を、押しつけずやわらかく述べる。静岡・遠州を代表する接続表現。形容詞には「もんで」。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">寝不足だもんで、眠いわ。</span>
+          <span class="label">使用例</span><span class="example">寝不足だもんで、眠いわ。</span>
           <span class="std">＝ 寝不足だから、眠いよ。</span>
         </div>
         <p class="word-links"><span class="label">記事</span><a href="/c008">標準語⇄遠州弁 変換</a></p>
@@ -3325,7 +3351,7 @@
         </div>
         <p class="mean">〜だろう、〜でしょう。推量や確認を求めるときの語尾。遠州弁を代表する言い回し。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">今日の夜ご飯カレーだら？</span>
+          <span class="label">使用例</span><span class="example">今日の夜ご飯カレーだら？</span>
           <span class="std">＝ 今夜はカレーでしょ？</span>
         </div>
         <p class="note-word"><span class="label">解説</span>国研の磐田市1地点では「先生だろう」に「センセーダラ」「センセーズラ」、「行くのだろう」に「イクラ」「イクダラ」「イクズラ」が記録されている。回答条件は下の資料欄と本編の原注を参照。</p>
@@ -3348,7 +3374,7 @@
         </div>
         <p class="mean">内出血する。打撲などで皮膚の下が鬱血し、変色した状態。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">ぶつけて血が死んじゃった。</span>
+          <span class="label">使用例</span><span class="example">ぶつけて血が死んじゃった。</span>
           <span class="std">＝ ぶつけて内出血してしまった。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-23106" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「あざ（痣）：内出血」にチカ゜シンダの回答（data-ID 23106）</a></p>
@@ -3369,7 +3395,7 @@
         </div>
         <p class="mean">急いで、さっと。迅速な行動を促すときに。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">塩切れたで、ちゃっと買ってくるに。</span>
+          <span class="label">使用例</span><span class="example">塩切れたで、ちゃっと買ってくるに。</span>
           <span class="std">＝ 塩が切れたから、急いで買ってくるよ。</span>
         </div>
       </div>
@@ -3389,7 +3415,7 @@
         </div>
         <p class="mean">ふざける、おどける。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">写真撮るときにちょうけるな。</span>
+          <span class="label">使用例</span><span class="example">写真撮るときにちょうけるな。</span>
           <span class="std">＝ 写真を撮るときにふざけるな。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1249-choukeru" rel="noopener">『静岡県磐田郡誌』1921年、1249頁・旧於保村に「ちようける」の記録。原資料の意味「ふざける」。小書き仮名を使わない原表記。</a></p>
@@ -3410,7 +3436,7 @@
         </div>
         <p class="mean">少し、ちょっと。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">ちょっくら出てくるで。</span>
+          <span class="label">使用例</span><span class="example">ちょっくら出てくるで。</span>
           <span class="std">＝ ちょっと出かけてくるね。</span>
         </div>
       </div>
@@ -3429,7 +3455,7 @@
         </div>
         <p class="mean">ふざける、調子に乗る。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">授業中にちょびちょびしとったら怒られた。</span>
+          <span class="label">使用例</span><span class="example">授業中にちょびちょびしとったら怒られた。</span>
           <span class="std">＝ 授業中にふざけていたら怒られた。</span>
         </div>
       </div>
@@ -3448,7 +3474,7 @@
         </div>
         <p class="mean">（お湯などが）とても熱いこと。やかんが沸いた状態など。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">お湯がちんちんだに、気いつけて。</span>
+          <span class="label">使用例</span><span class="example">お湯がちんちんだに、気いつけて。</span>
           <span class="std">＝ お湯がすごく熱いから、気をつけて。</span>
         </div>
       </div>
@@ -3467,7 +3493,7 @@
         </div>
         <p class="mean">ふてくされる、すねる、へそを曲げる。激しい怒りではなく、どこか愛嬌のあるすね方。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">ちょっと言われてちんぷりかえっとる。</span>
+          <span class="label">使用例</span><span class="example">ちょっと言われてちんぷりかえっとる。</span>
           <span class="std">＝ 少し言われてふてくされている。</span>
         </div>
       </div>
@@ -3486,7 +3512,7 @@
         </div>
         <p class="mean">〜のところ、〜の家。親しい人や集団を表す接尾辞。「オレっち」で自分の家・自分たち。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">今度、〇〇っち行ってみる？</span>
+          <span class="label">使用例</span><span class="example">今度、〇〇っち行ってみる？</span>
           <span class="std">＝ 今度、〇〇の家に行ってみる？</span>
         </div>
       </div>
@@ -3505,7 +3531,7 @@
         </div>
         <p class="mean">〜という。「〜という」がつづまった形。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">田中っちゅう人、知っとる？</span>
+          <span class="label">使用例</span><span class="example">田中っちゅう人、知っとる？</span>
           <span class="std">＝ 田中という人、知ってる？</span>
         </div>
       </div>
@@ -3524,7 +3550,7 @@
         </div>
         <p class="mean">突き飛ばす。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">人をつっからかしちゃいかんに。</span>
+          <span class="label">使用例</span><span class="example">人をつっからかしちゃいかんに。</span>
           <span class="std">＝ 人を突き飛ばしてはいけないよ。</span>
         </div>
       </div>
@@ -3543,7 +3569,7 @@
         </div>
         <p class="mean">（機械などが）壊れる、動かなくなる。形がつぶれる意に限らない。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">洗濯機がつぶれちゃった。</span>
+          <span class="label">使用例</span><span class="example">洗濯機がつぶれちゃった。</span>
           <span class="std">＝ 洗濯機が壊れてしまった。</span>
         </div>
       </div>
@@ -3562,7 +3588,7 @@
         </div>
         <p class="mean">（机などを）持ち上げて運ぶ。「机をつる」で机を運ぶ。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">みんなで机つって。</span>
+          <span class="label">使用例</span><span class="example">みんなで机つって。</span>
           <span class="std">＝ みんなで机を運んで。</span>
         </div>
       </div>
@@ -3581,7 +3607,7 @@
         </div>
         <p class="mean">友だち、仲間。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">連れと釣り行ってくる。</span>
+          <span class="label">使用例</span><span class="example">連れと釣り行ってくる。</span>
           <span class="std">＝ 友だちと釣りに行ってくる。</span>
         </div>
       </div>
@@ -3600,7 +3626,7 @@
         </div>
         <p class="mean">てっぺん、頂上。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">山のてんこちょまで登った。</span>
+          <span class="label">使用例</span><span class="example">山のてんこちょまで登った。</span>
           <span class="std">＝ 山のてっぺんまで登った。</span>
         </div>
       </div>
@@ -3619,7 +3645,7 @@
         </div>
         <p class="mean">ものすごく、超。強める接頭辞。「どでかい」など。やや乱暴できつい印象。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">どでかい荷物が届いた。</span>
+          <span class="label">使用例</span><span class="example">どでかい荷物が届いた。</span>
           <span class="std">＝ ものすごく大きい荷物が届いた。</span>
         </div>
       </div>
@@ -3638,7 +3664,7 @@
         </div>
         <p class="mean">走る、走っていく。飛行ではなく地上を急いで駆けること。「とんでく」とも。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">急ぐで、とんでいきな。</span>
+          <span class="label">使用例</span><span class="example">急ぐで、とんでいきな。</span>
           <span class="std">＝ 急ぐから、走っていきなさい。</span>
         </div>
       </div>
@@ -3657,7 +3683,7 @@
         </div>
         <p class="mean">最下位、びり。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">かけっこでどべだったわ。</span>
+          <span class="label">使用例</span><span class="example">かけっこでどべだったわ。</span>
           <span class="std">＝ かけっこでびりだったよ。</span>
         </div>
       </div>
@@ -3676,7 +3702,7 @@
         </div>
         <p class="mean">〜ている。動作の進行や結果の状態を表す。湖西・西遠で優勢で、東遠ではあまり使われないとされる。磐田では「〜てる」と併存しているとみられる。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">雨、まだ降っとる？</span>
+          <span class="label">使用例</span><span class="example">雨、まだ降っとる？</span>
           <span class="std">＝ 雨、まだ降ってる？</span>
         </div>
         <p class="word-links"><span class="label">記事</span><a href="/c008">標準語⇄遠州弁 変換</a></p>
@@ -3697,7 +3723,7 @@
         </div>
         <p class="mean">のろい、鈍い、気が利かない。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">そんなとろくさいことしとったら日が暮れるに。</span>
+          <span class="label">使用例</span><span class="example">そんなとろくさいことしとったら日が暮れるに。</span>
           <span class="std">＝ そんなのろいことをしていたら日が暮れるよ。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1249-toroi" rel="noopener">『静岡県磐田郡誌』1921年、1249頁・旧福島村に「とろい」の記録。原資料の意味「のろい」。</a></p>
@@ -3718,7 +3744,7 @@
         </div>
         <p class="mean">頓着しない、気にしない、無頓着だ。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">あの人は服装にはとんじゃかないでね。</span>
+          <span class="label">使用例</span><span class="example">あの人は服装にはとんじゃかないでね。</span>
           <span class="std">＝ あの人は服装には無頓着だからね。</span>
         </div>
       </div>
@@ -3737,7 +3763,7 @@
         </div>
         <p class="mean">捕まえる。虫などを捕獲すること。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">てんとう虫とんました。</span>
+          <span class="label">使用例</span><span class="example">てんとう虫とんました。</span>
           <span class="std">＝ てんとう虫を捕まえた。</span>
         </div>
       </div>
@@ -3757,7 +3783,7 @@
         </div>
         <p class="mean">〜しなさい。動詞の連用形に付く（「書きない」「起きない」）。否定の「ない」ではなく、やわらかな命令。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">早く起きない。</span>
+          <span class="label">使用例</span><span class="example">早く起きない。</span>
           <span class="std">＝ 早く起きなさい。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-70018" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「起きろ」にオキナナイの回答（data-ID 70018）。原注：〈オキョー（ゆ）とは言わない〉</a></p>
@@ -3778,7 +3804,7 @@
         </div>
         <p class="mean">ダンベイキサゴ。遠州灘の砂浜にすむ食用の巻き貝。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">ながらみ、塩ゆでにするとうまいに。</span>
+          <span class="label">使用例</span><span class="example">ながらみ、塩ゆでにするとうまいに。</span>
           <span class="std">＝ ダンベイキサゴは、塩ゆでにするとおいしいよ。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>千葉県の九十九里などでも同じ呼び名がある。遠州灘に面した福田・竜洋の浜の暮らしとかかわる語である。</p>
@@ -3798,7 +3824,7 @@
         </div>
         <p class="mean">やたらに、むやみに。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">なんしょ買ってきても食べきれんに。</span>
+          <span class="label">使用例</span><span class="example">なんしょ買ってきても食べきれんに。</span>
           <span class="std">＝ やたらに買ってきても食べきれないよ。</span>
         </div>
       </div>
@@ -3818,7 +3844,7 @@
         </div>
         <p class="mean">〜なかった。過去の否定を表す形。「行かなかった」に対する国研の磐田市地点の回答に「イカナンダ」がある。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">昨日は雨、降らなんだ。</span>
+          <span class="label">使用例</span><span class="example">昨日は雨、降らなんだ。</span>
           <span class="std">＝ 昨日は雨が降らなかった。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-64329" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行かなかった」にイカナンダの回答（data-ID 64329）</a></p>
@@ -3839,7 +3865,7 @@
         </div>
         <p class="mean">〜よ、〜ね。動詞・形容詞に直接付いて、やわらかく事実を伝える。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">早いに。</span>
+          <span class="label">使用例</span><span class="example">早いに。</span>
           <span class="std">＝ 早いよ。</span>
         </div>
       </div>
@@ -3858,7 +3884,7 @@
         </div>
         <p class="mean">歯ぐき、歯茎。高齢層に残る言い方。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">ねちが腫れてまった。</span>
+          <span class="label">使用例</span><span class="example">ねちが腫れてまった。</span>
           <span class="std">＝ 歯ぐきが腫れてしまった。</span>
         </div>
       </div>
@@ -3877,7 +3903,7 @@
         </div>
         <p class="mean">無くなる。「無う(のう)なる」から。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">財布がのうなった。</span>
+          <span class="label">使用例</span><span class="example">財布がのうなった。</span>
           <span class="std">＝ 財布が無くなった。</span>
         </div>
       </div>
@@ -3897,7 +3923,7 @@
         </div>
         <p class="mean">灰。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">たき火のはいぼを畑にまく。</span>
+          <span class="label">使用例</span><span class="example">たき火のはいぼを畑にまく。</span>
           <span class="std">＝ たき火の灰を畑にまく。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1250-haibo" rel="noopener">『静岡県磐田郡誌』1921年、1250頁・旧袋井町に「はいぼ」の記録。原資料の意味「はひ」。原注「灰」。</a></p>
@@ -3918,7 +3944,7 @@
         </div>
         <p class="mean">とても、すごく。程度を強める。けなす意味ではない。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">今日はばか暑いなあ。</span>
+          <span class="label">使用例</span><span class="example">今日はばか暑いなあ。</span>
           <span class="std">＝ 今日はすごく暑いなあ。</span>
         </div>
       </div>
@@ -3937,7 +3963,7 @@
         </div>
         <p class="mean">離す、間を空ける。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">洗濯物ははならかして干さんと。</span>
+          <span class="label">使用例</span><span class="example">洗濯物ははならかして干さんと。</span>
           <span class="std">＝ 洗濯物は離して干さないと。</span>
         </div>
       </div>
@@ -3956,7 +3982,7 @@
         </div>
         <p class="mean">まぶしい。日照の強い遠州の、夏のカンカン照りの眩しさを表す。「ひどろしい」とも。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">今日はひずるしくって目が開けれん。</span>
+          <span class="label">使用例</span><span class="example">今日はひずるしくって目が開けれん。</span>
           <span class="std">＝ 今日はまぶしくて目が開けられない。</span>
         </div>
       </div>
@@ -3975,7 +4001,7 @@
         </div>
         <p class="mean">ひも（紐）。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">新聞はひぼで縛って出しない。</span>
+          <span class="label">使用例</span><span class="example">新聞はひぼで縛って出しない。</span>
           <span class="std">＝ 新聞はひもで縛って出しなさい。</span>
         </div>
       </div>
@@ -3994,7 +4020,7 @@
         </div>
         <p class="mean">だらしない、無精な感じでみっともない。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">そんなぶしょったい格好で行くの。</span>
+          <span class="label">使用例</span><span class="example">そんなぶしょったい格好で行くの。</span>
           <span class="std">＝ そんなだらしない格好で行くの。</span>
         </div>
       </div>
@@ -4013,7 +4039,7 @@
         </div>
         <p class="mean">踏みつぶす、強く踏む。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">虫、ふんずばしちゃった。</span>
+          <span class="label">使用例</span><span class="example">虫、ふんずばしちゃった。</span>
           <span class="std">＝ 虫を踏みつぶしてしまった。</span>
         </div>
       </div>
@@ -4032,7 +4058,7 @@
         </div>
         <p class="mean">追う、追いかける。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">犬にぼっかけられた。</span>
+          <span class="label">使用例</span><span class="example">犬にぼっかけられた。</span>
           <span class="std">＝ 犬に追いかけられた。</span>
         </div>
       </div>
@@ -4051,7 +4077,7 @@
         </div>
         <p class="mean">捨てる。「ほかっといて」で捨てておいて。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">その紙、ほかっといて。</span>
+          <span class="label">使用例</span><span class="example">その紙、ほかっといて。</span>
           <span class="std">＝ その紙、捨てておいて。</span>
         </div>
       </div>
@@ -4070,7 +4096,7 @@
         </div>
         <p class="mean">イヌマキ（犬槙）。細い葉からの呼び名とみられる。遠州の屋敷の生垣・防風垣に多い木。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">ほそばの垣根、そろそろ刈らんと。</span>
+          <span class="label">使用例</span><span class="example">ほそばの垣根、そろそろ刈らんと。</span>
           <span class="std">＝ イヌマキの生垣、そろそろ刈らないと。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>遠州の平野部では、冬の西風（からっ風）を防ぐ槙の垣根が屋敷を囲む景観が見られる。暮らしの景色がそのまま語彙に残った例といえる。その赤い実を「やんぞうこんぞう」と呼ぶこともあるとされる。</p>
@@ -4091,7 +4117,7 @@
         </div>
         <p class="mean">出っ張り。転じて、押しボタンやスイッチ。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">そのぼっちょ押すと電気がつくで。</span>
+          <span class="label">使用例</span><span class="example">そのぼっちょ押すと電気がつくで。</span>
           <span class="std">＝ そのボタンを押すと電気がつくよ。</span>
         </div>
       </div>
@@ -4111,7 +4137,7 @@
         </div>
         <p class="mean">ほったらかす、放置する、無視する。軽い非難を含む。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">あたしのことほっぽかしてどこ行ってたの。</span>
+          <span class="label">使用例</span><span class="example">あたしのことほっぽかしてどこ行ってたの。</span>
           <span class="std">＝ 私のことほったらかしてどこ行ってたの。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1252-hoppokasu" rel="noopener">『静岡県磐田郡誌』1921年、1252頁・旧於保村に「ほつぽかす」の記録。原資料の意味「ほうりだす」。原注「投出す」。辞典に掲げる「放置する」との意味の違いに注意。</a></p>
@@ -4132,7 +4158,7 @@
         </div>
         <p class="mean">オートバイ、原動機付自転車。エンジン音を写したことばとみられる。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">ぽんぽんで畑まで行く。</span>
+          <span class="label">使用例</span><span class="example">ぽんぽんで畑まで行く。</span>
           <span class="std">＝ バイクで畑まで行く。</span>
         </div>
       </div>
@@ -4152,7 +4178,7 @@
         </div>
         <p class="mean">本家。「新家（しんや）」の対。標準語と同じ字だが、読みが「ほんや」となる。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">正月はまず本家へあいさつに行く。</span>
+          <span class="label">使用例</span><span class="example">正月はまず本家へあいさつに行く。</span>
           <span class="std">＝ 正月はまず本家へあいさつに行く。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#fpjd-35523" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「ほんけ（本家）」にホンヤの回答（data-ID 35523）</a></p>
@@ -4173,7 +4199,7 @@
         </div>
         <p class="mean">〜しよう、〜しようじゃないか。相手を誘う形。「行かまい」「やらまいか」。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">ちゃっと片付けて、お茶にしまい。</span>
+          <span class="label">使用例</span><span class="example">ちゃっと片付けて、お茶にしまい。</span>
           <span class="std">＝ 急いで片付けて、お茶にしよう。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>誘いの言い方は一つではない。国研の磐田市地点では「行こうよ」に「イコーヨ」「イカザー」が記録され、後者には強く誘う場合に使うという注記がある。「まい」と「ざあ」を県内の地域だけで一律に区切らない。</p>
@@ -4194,7 +4220,7 @@
         </div>
         <p class="mean">まめだ、労をいとわずよく働く、こまめだ。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">あの子はまめったいで、よう手伝ってくれる。</span>
+          <span class="label">使用例</span><span class="example">あの子はまめったいで、よう手伝ってくれる。</span>
           <span class="std">＝ あの子はまめだから、よく手伝ってくれる。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>静岡方言の「まめったい」は、語の意味の移り変わりが研究の対象にもなってきた。人により意味の幅があるため、文脈で判断したい。</p>
@@ -4214,7 +4240,7 @@
         </div>
         <p class="mean">幼い、未熟な。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">1年生はみるくて可愛いなあ。</span>
+          <span class="label">使用例</span><span class="example">1年生はみるくて可愛いなあ。</span>
           <span class="std">＝ 1年生は幼くて可愛いなあ。</span>
         </div>
         <p class="note-word"><span class="label">解説</span>川根茶の産地資料では、若く柔らかい新芽を「みる芽」と呼び、「若い・未熟」を意味する方言「みるい」と結びつけて説明している。茶の用法と人の幼さを表す用法の、どちらが先かは、この資料だけでは確定できない。</p>
@@ -4234,7 +4260,7 @@
         </div>
         <p class="mean">からまる、もつれる。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">釣り糸がもじかっちゃった。</span>
+          <span class="label">使用例</span><span class="example">釣り糸がもじかっちゃった。</span>
           <span class="std">＝ 釣り糸がからまってしまった。</span>
         </div>
       </div>
@@ -4253,7 +4279,7 @@
         </div>
         <p class="mean">おい。人を呼び止めるときの呼びかけ。重ねた「やいやい」は嘆きの声になる。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">やい、忘れもんだに。</span>
+          <span class="label">使用例</span><span class="example">やい、忘れもんだに。</span>
           <span class="std">＝ おい、忘れ物だよ。</span>
         </div>
       </div>
@@ -4272,7 +4298,7 @@
         </div>
         <p class="mean">やれやれ、いやはや。がっかりした時や呆れた時に発する言葉。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">やいやい、もっと気いつけて話なよ。</span>
+          <span class="label">使用例</span><span class="example">やいやい、もっと気いつけて話なよ。</span>
           <span class="std">＝ やれやれ、もっと気をつけて話しなよ。</span>
         </div>
       </div>
@@ -4292,7 +4318,7 @@
         </div>
         <p class="mean">腹が立つ、いらいらする。直接ぶつけられず、諦めまじりに愚痴としてこぼすような、鬱屈した怒り。「やっきりする」とも。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">あの人またサボってて、やっきりするわ。</span>
+          <span class="label">使用例</span><span class="example">あの人またサボってて、やっきりするわ。</span>
           <span class="std">＝ あの人またサボってて、腹が立つよ。</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1253-yakkirikoku" rel="noopener">『静岡県磐田郡誌』1921年、1253頁・旧袋井町に「やつきりする」の記録。原資料の意味「ぢれつたくおもふ」。辞典の別形「やっきりする」と比較できる。</a></p>
@@ -4313,7 +4339,7 @@
         </div>
         <p class="mean">うっとうしい、わずらわしい、じれったい。髪が目にかかるような、もどかしい不快感にも使う。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">前髪が伸びてやぶせったい。</span>
+          <span class="label">使用例</span><span class="example">前髪が伸びてやぶせったい。</span>
           <span class="std">＝ 前髪が伸びてうっとうしい。</span>
         </div>
       </div>
@@ -4332,7 +4358,7 @@
         </div>
         <p class="mean">寄りかかる、体重を預ける。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">壁によさりかかったらいかんに。</span>
+          <span class="label">使用例</span><span class="example">壁によさりかかったらいかんに。</span>
           <span class="std">＝ 壁に寄りかかったらだめだよ。</span>
         </div>
       </div>
@@ -4352,7 +4378,7 @@
         </div>
         <p class="mean">〜だろう、〜でしょ。「だら」と同じく確認・同意を求める。語尾を伸ばして「らぁ」とも。動詞・形容詞に付きやすい。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">飲むら？</span>
+          <span class="label">使用例</span><span class="example">飲むら？</span>
           <span class="std">＝ 飲むでしょ？／飲む？</span>
         </div>
         <p class="word-src"><span class="label">資料</span><a href="https://iwata-monogatari.net/c172#g1253-ra" rel="noopener">『静岡県磐田郡誌』1921年、1253頁・旧袋井町に「ら」の記録。原資料の意味「だらう」。</a>／<a href="https://iwata-monogatari.net/c172#fpjd-120660" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行くだろう」にイクラの回答（data-ID 120660）。原注：〈多〉</a>／<a href="https://iwata-monogatari.net/c172#fpjd-121425" rel="noopener">国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点：質問「行くのだろう」にイクラの回答（data-ID 121425）</a></p>
@@ -4373,7 +4399,7 @@
         </div>
         <p class="mean">いたずらっ子、わんぱく。</p>
         <div class="ex">
-          <span class="label">例</span><span class="example">うちの悪さん坊がまた障子破った。</span>
+          <span class="label">使用例</span><span class="example">うちの悪さん坊がまた障子破った。</span>
           <span class="std">＝ うちのいたずらっ子がまた障子を破った。</span>
         </div>
       </div>
@@ -4705,6 +4731,7 @@
     <li><time datetime="2026-10-12">2026年10月12日</time> 辞典を資料室として育てるための拡充。語のデータを一つの台帳にまとめ、各語に固定の語ID（例：<a href="#aisa">#aisa</a>）を付けた。従来の語へのリンクも引き続き使える。各語の横に「遠州弁かるた」の絵札の欄を設け、完成した語から絵札を掲げる（現在は制作中のため頭の字の札）。「絵札で並べる」表示を加えた。国立国語研究所の全国方言分布調査と『静岡県磐田郡誌』で記録を確かめられる5語（だら・ずら・ら・せんひき・あんも）に資料の印と資料欄を付けた。語ごとに「使う／聞いたことがある／知らない」を答えられる「磐田ことば調査」を始めた。関連記事への案内を14語に付け、語の一覧を検索エンジン向けの構造化データにした。122語の見出し・意味・作例・解説は変えていない。</li>
     <li><time datetime="2026-10-12">2026年10月12日</time> 引札風の絵札122枚と印刷用の読み札を公開。国研287回答・郡誌24項目の資料室、4本の解説記事を追加し、30語に確認した出典を明示した。</li>
     <li><time datetime="2026-10-12">2026年10月12日</time> 遠州弁かるたの絵札について、学校・公民館などでの非営利の利用を出典明記で自由とし、営利での利用は事前相談とする利用条件を掲げた。</li>
+    <li><time datetime="2026-10-12">2026年10月12日</time> 絵札一覧の画像を小さくし、以前からある意味・使用例・標準語訳を併記。絵札を開いた画面にも同じ文例・解説・資料を表示するよう改めた。</li>
   </ul>
 </section>
 </div>
@@ -5030,26 +5057,39 @@ function setKarutaView(on){
   });
 }
 function openEntryFromKaruta(entry){
+  const link = entry.querySelector(".karuta-zoom");
+  if (link && openLightbox(link)) return;
   setKarutaView(false); syncUrl();
   entry.scrollIntoView({block:"start"});
   entry.classList.remove("flash"); void entry.offsetWidth; entry.classList.add("flash");
 }
 const lightbox = document.createElement("dialog");
 lightbox.className = "c006-dialog karuta-lightbox";
-lightbox.setAttribute("aria-label", "遠州弁かるたの絵札");
-// 画像要素は DOM で作る（拡大する絵札の src はクリック時に入れる）
-lightbox.appendChild(document.createElement("img"));
-lightbox.insertAdjacentHTML("beforeend", '<p class="cap"></p><div class="btns"><button type="button" class="primary">閉じる</button></div>');
+lightbox.setAttribute("aria-labelledby", "karuta-detail-title");
+lightbox.insertAdjacentHTML("beforeend", '<div class="lightbox-heading"><h2 id="karuta-detail-title"></h2><button type="button" autofocus>閉じる</button></div><div class="lightbox-content"><figure><figcaption>絵札：磐田物語</figcaption><a class="karuta-full-size" target="_blank" rel="noopener">絵札を大きく表示</a></figure><div class="karuta-details"></div></div>');
+const lightboxImage = document.createElement("img");
+lightboxImage.width = 900; lightboxImage.height = 1200;
+lightbox.querySelector("figure").prepend(lightboxImage);
 document.body.appendChild(lightbox);
 lightbox.querySelector("button").onclick=()=>lightbox.close();
 lightbox.addEventListener("click", e=>{ if (e.target===lightbox) lightbox.close(); });
 function openLightbox(link){
   if (typeof lightbox.showModal !== "function") return false;
+  const entry = link.closest(".entry");
+  if (!entry) return false;
   const thumb = link.querySelector("img");
   const big = lightbox.querySelector("img");
   big.src = link.getAttribute("href"); big.alt = thumb ? thumb.alt : "";
-  lightbox.querySelector(".cap").textContent = thumb ? thumb.alt : "";
+  lightbox.querySelector(".karuta-full-size").href = link.getAttribute("href");
+  lightbox.querySelector("h2").textContent = entry.querySelector(".word").textContent;
+  // 辞典と同じ本文を使い、語を切り替えるたびに文例・訳・解説も入れ替える。
+  const details = entry.querySelector(".entry-body").cloneNode(true);
+  details.querySelector(".word").remove();
+  details.querySelectorAll(".survey").forEach(el=>el.remove());
+  details.querySelector(".ex .label").textContent = "使用例（作例）";
+  lightbox.querySelector(".karuta-details").replaceChildren(details);
   lightbox.showModal();
+  lightbox.scrollTop = 0;
   return true;
 }
 karutaBtn.onclick=()=>{ setKarutaView(!karutaView); syncUrl(); };
