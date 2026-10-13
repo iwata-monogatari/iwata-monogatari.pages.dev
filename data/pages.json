@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-10-12",
+  "updated_at": "2026-10-13",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -32703,6 +32703,40 @@
         "internal:r034.html",
         "internal:oishi-ronko/223/",
         "web:https://www.stat.go.jp/info/today/013.html"
+      ]
+    },
+    {
+      "title": "掛塚まつり2026見学案内｜時刻・交通・旧津倉家",
+      "url": "r085.html",
+      "district": [
+        "ryuyo"
+      ],
+      "themes": [
+        "festival",
+        "shrine-temple"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-10-13",
+      "updated_at": "2026-10-13",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "竜洋",
+      "parent": "01007-ryuyo.html",
+      "summary": "2026年の掛塚まつりは10月17日・18日。屋台の神社集合時刻、旧津倉家の公開、予約制ツアーを区別して案内する。磐田駅からの掛塚磐田駅線は通常ダイヤで日曜運休。公式マップ・時刻表と既存の祭礼記事をつなぐ。",
+      "topics": [
+        "掛塚まつり",
+        "2026年",
+        "貴船神社",
+        "旧津倉家",
+        "掛塚磐田駅線"
+      ],
+      "source_refs": [
+        "https://kanko-iwata.jp/2026/10/post-16281/",
+        "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koutsuu/1016044/1016046.html",
+        "https://iwata-onpaku.jp/program/program-1942/"
       ]
     }
   ]

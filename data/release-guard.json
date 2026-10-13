@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1791867082,
-  "generation": 20261013135122,
-  "git_commit_at_stamp": "bc1e2da46b58950234934c65b64586479b4c9d35",
+  "generated_at_unix": 1791895412,
+  "generation": 20261013214332,
+  "git_commit_at_stamp": "35923ce8e8204ee597bfec4636534676690f9b3b",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "f5c7bd2885d8dff543b94e197a7f08d25f0e62e520ebedd8d86d6c2afe7b442c"
+      "sha256": "e55f9d66b8a32d5c92ee190976193cd9f3c357bb69329015c3c88cd5381992e2"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "3ce33f11ceab246c8a4795f02d26fa952d525110286654e6a96d170b1f81296a"
+      "sha256": "12d7349d1778c6a23a1c274970ce64a6154356840cff81595ddad7bd06d3c704"
     },
     {
       "path": "data/pages.json",
-      "sha256": "1591d45c0e614a4479ca0b47cf110e2b19ede4bdeabe7911297396ef17be5d93"
+      "sha256": "5f9a352c050200217d0bbbad7fed8f19415563291cd2233057bc99c6cfa1c8ab"
     },
     {
       "path": "index.html",
-      "sha256": "fa3589a7c155e7c8c80d981ff0eced6a6db989cec72e261f060a79a6211a67f9"
+      "sha256": "8331bef41d5d4e6886199b6dcede8457ca109b5f144268a4e7ab11cd2bc4a8cd"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "b7c4c7afec18d953785aeb5a107c0156def4fec581e376752320d9b3f5f10506"
+      "sha256": "0fd9d20ed5b516c044c7f1aa17d150a2c4e70347f3162830e6d4a99da5858aac"
     },
     {
       "path": "updates.html",
-      "sha256": "58fc66f704f8f6984c36d5ec351e39ace1eca8adf612a6d3cde79cdf074e63f9"
+      "sha256": "c1dcf4a8e90eb4a0b3704999b82ca52e2a49274604258cf446b7ce254d9d2b90"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "4b83c51714218698bb095dd901694ffc5278fe175891b3010a42164669f1e5e7",
+      "content_sha256": "248f0a2f79554ee70be7e87e786dd22e1a33ae13374ab748f4c09563fc0f5748",
       "path": "index.html",
-      "sha256": "fa3589a7c155e7c8c80d981ff0eced6a6db989cec72e261f060a79a6211a67f9",
+      "sha256": "8331bef41d5d4e6886199b6dcede8457ca109b5f144268a4e7ab11cd2bc4a8cd",
       "url": "/"
     },
     {
-      "content_sha256": "d40fc737c2ac6f4d35dad9641f9234cdb13ddaded2e85817bfaea3da56983b4f",
+      "content_sha256": "1b73ef9868ca0f03c67708c30f394ce16cbe20123adf98cbe06122de6e063669",
       "path": "updates.html",
-      "sha256": "58fc66f704f8f6984c36d5ec351e39ace1eca8adf612a6d3cde79cdf074e63f9",
+      "sha256": "c1dcf4a8e90eb4a0b3704999b82ca52e2a49274604258cf446b7ce254d9d2b90",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "05cbd55fc0a79f8fa706e4e3b2188e979a334a9a5941c5b615a6261fa1ac11eb",
+      "content_sha256": "998fb239a7ef19f026f7b4d9b300f87faf7e00292a4cb8bf3aa50a87718bbea7",
       "path": "c034.html",
-      "sha256": "f5c7bd2885d8dff543b94e197a7f08d25f0e62e520ebedd8d86d6c2afe7b442c",
+      "sha256": "e55f9d66b8a32d5c92ee190976193cd9f3c357bb69329015c3c88cd5381992e2",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "79c9c30ebcda0ee861f17013af3f98f1ea0c794d1b15c782d690b5789494f639",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "31a434074064e6cb6ebabdfc334cdb2911752b836bf0875f104734b0224c7e24",
+      "path": "r085.html",
+      "sha256": "767f695a6a697c0398d5009e4bc594198d77fea220bca021aa6bd150e56f758b",
+      "url": "/r085.html"
     },
     {
       "content_sha256": "1f9ce9a38653265f2603d3464cb0339164cdfcbd564679d27d49e1cd3cfcacdc",
@@ -684,9 +690,9 @@
       "url": "/c169.html"
     },
     {
-      "content_sha256": "481dc406834918f35359798b641f540b55bec38e87a8c50ee83465b9b1377489",
+      "content_sha256": "395b402372c7bbac3bb39e4a7fc92cdcaee2cddcff5d8d293783baa022cbcebc",
       "path": "blog/20260830-kaketsuka-matsuri-nittei/index.html",
-      "sha256": "4fecaf00fd45e671b013d1b202887438f715aac1df648a3c4180ae52686f50b6",
+      "sha256": "6a8d5739ed07335e9a198145303220cf18622035423c320dd62e470d8c264c97",
       "url": "/blog/20260830-kaketsuka-matsuri-nittei"
     },
     {
@@ -832,23 +838,17 @@
       "path": "c139.html",
       "sha256": "d56e5d9d2b0f67802c302ef1b2e3e692691646a9f39650b73ae04e24801fc3a5",
       "url": "/c139.html"
-    },
-    {
-      "content_sha256": "33bd223284e4ddb269d735f0d518a5daf95d84d9897e930d6ff1992330bad149",
-      "path": "c140.html",
-      "sha256": "92266101400dc61dbd8e266eeb2d0ca104b4eafbd7c33a596c299c6db2308a54",
-      "url": "/c140.html"
     }
   ],
   "schema": 1,
-  "state_hash": "41a24b7cac61396c9e6ba99173215e3800d834c2bb0c4f69519a3cf5bd85a3dc",
+  "state_hash": "41d89d84b70c4594d858c92a2efef558dc025e878e901b2227c19ce06c6a7d3a",
   "summary": {
     "archived_pages": 1,
-    "knowledge_pages": 1111,
-    "new_articles": 1243,
-    "new_articles_sha256": "3ce33f11ceab246c8a4795f02d26fa952d525110286654e6a96d170b1f81296a",
-    "pages_sha256": "1591d45c0e614a4479ca0b47cf110e2b19ede4bdeabe7911297396ef17be5d93",
-    "pages_total": 1166,
-    "published_pages": 1165
+    "knowledge_pages": 1112,
+    "new_articles": 1244,
+    "new_articles_sha256": "12d7349d1778c6a23a1c274970ce64a6154356840cff81595ddad7bd06d3c704",
+    "pages_sha256": "5f9a352c050200217d0bbbad7fed8f19415563291cd2233057bc99c6cfa1c8ab",
+    "pages_total": 1167,
+    "published_pages": 1166
   }
 }
