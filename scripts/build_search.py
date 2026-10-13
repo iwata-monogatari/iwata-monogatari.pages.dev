@@ -169,7 +169,8 @@ def corpus():
     redirects = redirect_map()
     rows = list(ledger['pages']) + [dict(title=p['title'], url='/blog/' + p['slug'] + '/',
                  summary=p.get('description', ''), status=p.get('status', 'published'), district=[], themes=[],
-                 published_at=p['date'], date_provisional=False, source='blog-posts', content_type='blog') for p in blogs]
+                 published_at=p['date'], updated_at=p.get('updated_at', ''), date_provisional=False,
+                 aliases=p.get('aliases', []), source='blog-posts', content_type='blog') for p in blogs]
     blocked_urls = {key(row['url']) for row in rows if row.get('status') != 'published'}
     excluded, inventory, records, bodies = [], [], {}, {}
     for row in rows:
@@ -204,7 +205,7 @@ def corpus():
                  'description': row.get('summary') or page.description,
                  'headings': page.headings, 'districts': row.get('district', []),
                  'themes': [], 'ledgerThemes': row.get('themes', []),
-                 'keywords': row.get('topics', []), 'aliases': [], 'sourceIds': [url_key.strip('/')],
+                 'keywords': row.get('topics', []), 'aliases': list(row.get('aliases', [])), 'sourceIds': [url_key.strip('/')],
                  'kind': row.get('content_type', 'reading'),
                  'dateProvisional': bool(row.get('date_provisional', True)),
                  'published': row.get('published_at', '') if not row.get('date_provisional', True) else '',
@@ -367,10 +368,12 @@ def build(check=False):
         links = (f'<a href="/search/catalog/{page - 1}/">前の20件</a>' if page > 1 else '')
         links += (f'<a href="/search/catalog/{page + 1}/">次の20件</a>' if page < page_count else '')
         content = f'<h1>全記事を20件ずつ読む</h1><p>全{len(records)}件中 {(page - 1) * 20 + 1}〜{min(page * 20, len(records))}件（{page} / {page_count}ページ）</p><ol class="search-list">' + ''.join(card(r, ledger['districts']) for r in rows) + f'</ol><nav class="search-pagination" aria-label="一覧のページ送り">{links}</nav>'
-        artifacts[f'search/catalog/{page}/index.html'] = shell(f'全記事一覧 {page}ページ', content, f'/search/catalog/{page}/').encode()
+        # The complete indexable article directory is c034; retain these pages
+        # as accessible, JS-free navigation without duplicate search listings.
+        artifacts[f'search/catalog/{page}/index.html'] = shell(f'全記事一覧 {page}ページ', content, f'/search/catalog/{page}/', noindex=True).encode()
     sitemap = (ROOT / 'sitemap.xml').read_text(encoding='utf-8')
     sitemap = re.sub(r'\s*<!-- search:start -->.*?<!-- search:end -->', '', sitemap, flags=re.S)
-    entries = [f'  <url><loc>{ORIGIN}/search/help/</loc></url>'] + [f'  <url><loc>{ORIGIN}/search/catalog/{page}/</loc></url>' for page in range(1, page_count + 1)]
+    entries = [f'  <url><loc>{ORIGIN}/search/help/</loc></url>']
     sitemap = sitemap.replace('</urlset>', '<!-- search:start -->\n' + '\n'.join(entries) + '\n<!-- search:end -->\n</urlset>')
     artifacts['sitemap.xml'] = sitemap.encode()
     # Keep the full legacy directory and its anchors; only remove explicitly archived entries.

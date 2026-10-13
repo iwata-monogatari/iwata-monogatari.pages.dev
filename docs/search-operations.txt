@@ -48,6 +48,9 @@ GitHub: iwata-monogatari/iwata-monogatari.pages.dev
    確認した本番設定はGit integration、build commandは python scripts/predeploy_guard.py です。
 
 索引の仕様
+2026-10-14追記：検索補助の /search/catalog/ 全ページは noindex,follow とし、検索管理区画のsitemapから除外します。
+通常リンクによる20件ずつの閲覧・ページ送りと記事本文は保持します。検索対象の本文を減らさず、c034の全記事への導線を維持します。
+ブログの公開日dateは変更せず、実際に改稿した記事だけupdated_atを指定します。本文dateModified・sitemap lastmod・Atom updated・本文索引に反映します。
 scripts/build_search.py が公開台帳とブログ台帳だけを読んで生成します。
 canonical・確定301を統合し、下書き・非公開・archive・noindex・機能ページを除外します。
 検索用NFKC・かな統一は検索キーだけです。表示と原文を書き換えません。

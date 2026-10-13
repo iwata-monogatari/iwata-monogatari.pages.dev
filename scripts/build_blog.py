@@ -39,6 +39,7 @@
 from __future__ import annotations
 
 import argparse
+from datetime import datetime
 import html
 import json
 import re
@@ -249,6 +250,14 @@ def audit(posts: list[dict]) -> list[tuple[str, str]]:
                 add(f"台帳の必須項目『{field}』が空")
         if post.get("kind") and post["kind"] not in KIND_LABEL:
             add(f"kind『{post['kind']}』は未定義（{'/'.join(KIND_LABEL)}）")
+        if "updated_at" in post:
+            try:
+                modified = datetime.strptime(post["updated_at"], "%Y-%m-%d")
+                published = datetime.strptime(post["date"], "%Y-%m-%d")
+                if modified < published:
+                    add("updated_at が公開日より前になっている")
+            except (TypeError, ValueError):
+                add("updated_at は実際の更新日を YYYY-MM-DD で指定する")
         tags = post.get("tags")
         if not isinstance(tags, list) or not tags:
             add("検索用の tags が無い")
@@ -615,13 +624,18 @@ SITEMAP_END = "  <!-- blog:end -->"
 FEED = ROOT / "feed.xml"
 
 
+def post_updated(post: dict) -> str:
+    """Keep original publication dates when an existing article is revised."""
+    return post.get("updated_at") or post["date"]
+
+
 def build_sitemap_block(posts: list[dict]) -> str:
     """/blog/ 配下のURLだけを sitemap.xml のマーカー区画へ冪等に書き出す。
 
     毎日の自動生成で5,000行超の sitemap.xml を手編集させないための処置。
     マーカーの外側には一切触れない。
     """
-    newest = max((p["date"] for p in posts), default="")
+    newest = max((post_updated(p) for p in posts), default="")
     lines = [SITEMAP_START]
     lines.append(
         f'  <url><loc>{SITE}/blog/</loc><lastmod>{newest}</lastmod>'
@@ -630,7 +644,7 @@ def build_sitemap_block(posts: list[dict]) -> str:
     for post in sorted(posts, key=lambda p: (p["date"], p["slug"])):
         lines.append(
             f'  <url><loc>{SITE}/blog/{post["slug"]}/</loc>'
-            f'<lastmod>{post["date"]}</lastmod>'
+            f'<lastmod>{post_updated(post)}</lastmod>'
             "<changefreq>monthly</changefreq><priority>0.5</priority></url>"
         )
     lines.append(SITEMAP_END)
@@ -656,20 +670,21 @@ def update_sitemap(posts: list[dict]) -> str:
 def build_feed(posts: list[dict]) -> str:
     """ブログ台帳からAtomフィードを生成する。"""
     ordered = sorted(posts, key=lambda p: (p["date"], p["slug"]), reverse=True)
-    newest = ordered[0]["date"] if ordered else "1970-01-01"
+    newest = max((post_updated(post) for post in ordered), default="1970-01-01")
     entries = []
     for post in ordered:
         url = f'{SITE}/blog/{post["slug"]}/'
         title = html.escape(post["title"])
         summary = html.escape(post["description"])
         stamp = f'{post["date"]}T00:00:00+09:00'
+        modified_stamp = f'{post_updated(post)}T00:00:00+09:00'
         entries.append(
             "  <entry>\n"
             f"    <title>{title}</title>\n"
             f'    <link href="{url}"/>\n'
             f"    <id>{url}</id>\n"
             f"    <published>{stamp}</published>\n"
-            f"    <updated>{stamp}</updated>\n"
+            f"    <updated>{modified_stamp}</updated>\n"
             f"    <summary>{summary}</summary>\n"
             "  </entry>"
         )
