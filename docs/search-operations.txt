@@ -15,6 +15,10 @@ wrangler whoamiが取得待ち・ログ保存権限で確認できない場合�
 
 c006の語彙の正本はc006.html内のDATA、並び順の正本はdictionarySortKeyです。
 npm run buildは最初に node tools/build_c006_dictionary.mjs を実行してから新着・検索を生成します。
+新着同期後、検索生成前に scripts/build_sitemap.py --add-missing --write で未掲載の自己canonicalだけを補完します。
+既存URL・lastmod・ブログ／検索管理区画を保ち、noindex・管理画面・別canonical・作業用ディレクトリは追加しません。
+npm run sitemap:check で欠落を検出し、npm run sitemap:test で5ページの登録・既存内容保持・再実行一致を検査します。
+通常の全体再生成（--writeのみ）は既存日付も計算し直すため、日々のbuildには使いません。
 生成一覧を手編集せず、node tools/build_c006_dictionary.mjs --check と
 node --test tests/c006-sort.test.cjs tests/c006-static.test.cjs で正本との一致を確認します。
 レビュー中の候補は未コミット差分と新release世代があるので、開始時check-live-syncの本番一致を要求しません。

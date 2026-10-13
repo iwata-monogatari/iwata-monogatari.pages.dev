@@ -13,6 +13,8 @@
 使い方
   python scripts/build_sitemap.py          # 差分だけ表示（書き込まない）
   python scripts/build_sitemap.py --write  # sitemap.xml を書き換える
+  python scripts/build_sitemap.py --add-missing --write  # build用：未掲載URLだけ補完
+  python scripts/build_sitemap.py --add-missing --check  # 未掲載URLを検出
 """
 from __future__ import annotations
 
@@ -20,7 +22,10 @@ import argparse
 import re
 import subprocess
 import sys
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from html import escape
+from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -31,7 +36,7 @@ BASE = "https://iwata-monogatari.net"
 EXCLUDE_DIRS = {
     ".git", ".github", ".claude", ".tmp", ".wrangler", "node_modules",
     "archive", "partials", "docs", "scripts", "functions", "migrations",
-    "assets", "images", "img", "data", "blog",
+    "assets", "images", "img", "data", "blog", "tools", "tests", "work",
 }
 # 掲載しないファイル
 EXCLUDE_FILES = {"404.html", "admin-bbs.html", "admin-reactions.html", "googlea3467099ea123f53.html"}
@@ -39,6 +44,51 @@ EXCLUDE_FILES = {"404.html", "admin-bbs.html", "admin-reactions.html", "googlea3
 NOINDEX_RE = re.compile(r'<meta[^>]*name=["\']robots["\'][^>]*content=["\'][^"\']*noindex', re.I)
 CANONICAL_RE = re.compile(r'<link[^>]*rel=["\']canonical["\'][^>]*href=["\']([^"\']+)["\']', re.I)
 BLOG_BLOCK_RE = re.compile(r"[ \t]*<!-- blog:start.*?<!-- blog:end -->", re.S)
+
+
+class PageHead(HTMLParser):
+    """属性の順序や引用符に依存せず canonical と robots を読む。"""
+    def __init__(self):
+        super().__init__()
+        self.canonicals = []
+        self.noindex = False
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "link" and "canonical" in (attrs.get("rel") or "").lower().split():
+            self.canonicals.append((attrs.get("href") or "").strip())
+        if tag == "meta" and (attrs.get("name") or "").lower() in {"robots", "googlebot"}:
+            self.noindex |= "noindex" in re.split(r"[\s,]+", (attrs.get("content") or "").lower())
+
+
+def append_missing(xml: str, pages: list[Path], lastmods: dict[Path, str]) -> tuple[str, list[str]]:
+    """未掲載の自己canonicalだけ補完し、既存URL・日付・管理区画は変更しない。"""
+    ns = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+    tree = ET.fromstring(xml)
+    if tree.tag != ns + "urlset":
+        raise ValueError("sitemap must be a urlset")
+    urls = [node.text for node in tree.findall(f"{ns}url/{ns}loc")]
+    if len(urls) != len(set(urls)):
+        raise ValueError("duplicate sitemap URLs")
+    known = set(urls)
+    additions = []
+    for page in sorted(pages):
+        head = PageHead()
+        head.feed(page.read_text(encoding="utf-8"))
+        url = url_for(page)
+        if head.noindex or head.canonicals != [url] or url in known:
+            continue
+        # 新規登録のlastmodも既存の生成規則に従う。既存URLの日付は触らない。
+        date = lastmods.get(page) or datetime.fromtimestamp(page.stat().st_mtime, timezone.utc).strftime("%Y-%m-%d")
+        freq, prio = ("daily", "1.0") if url == BASE + "/" else ("monthly", "0.7")
+        additions.append((url, f"  <url><loc>{escape(url)}</loc><lastmod>{date}</lastmod><changefreq>{freq}</changefreq><priority>{prio}</priority></url>"))
+        known.add(url)
+    if not additions:
+        return xml, []
+    if xml.count("</urlset>") != 1:
+        raise ValueError("sitemap closing marker is not unique")
+    newline = "\r\n" if "\r\n" in xml else "\n"
+    return xml.replace("</urlset>", newline.join(row for _, row in additions) + newline + "</urlset>"), [url for url, _ in additions]
 
 
 def url_for(path: Path) -> str:
@@ -73,7 +123,11 @@ def git_lastmod(paths: list[Path]) -> dict[Path, str]:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--write", action="store_true", help="sitemap.xml を書き換える")
+    ap.add_argument("--add-missing", action="store_true", help="既存URL・日付を保ち、未掲載の自己canonicalのみ補完する")
+    ap.add_argument("--check", action="store_true", help="--add-missing の未反映があれば終了コード1")
     args = ap.parse_args()
+    if args.check and (not args.add_missing or args.write):
+        ap.error("--check requires --add-missing and cannot be used with --write")
 
     pages: list[Path] = []
     for p in ROOT.rglob("*.html"):
@@ -84,6 +138,15 @@ def main() -> int:
         pages.append(p)
 
     lastmods = git_lastmod(pages)
+    if args.add_missing:
+        original = SITEMAP.read_bytes().decode("utf-8")
+        xml, added = append_missing(original, pages, lastmods)
+        print(f"sitemap missing self-canonicals: {len(added)}")
+        for url in added:
+            print(f"  {url}")
+        if args.write and xml != original:
+            SITEMAP.write_bytes(xml.encode("utf-8"))
+        return 1 if args.check and added else 0
     entries: list[tuple[str, str]] = []
     skipped_noindex = 0
     skipped_dup: list[str] = []

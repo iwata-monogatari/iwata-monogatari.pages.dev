@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "build": "node tools/build_c006_dictionary.mjs && node tools/build_c006_sources.mjs && python sync_new_articles.py && python scripts/build_search.py && python scripts/build_saguchi_related.py && node tools/sync-knowledge-count.mjs",
+    "build": "node tools/build_c006_dictionary.mjs && node tools/build_c006_sources.mjs && python sync_new_articles.py && python scripts/build_sitemap.py --add-missing --write && python scripts/build_search.py && python scripts/build_saguchi_related.py && node tools/sync-knowledge-count.mjs",
+    "sitemap:check": "python scripts/build_sitemap.py --add-missing --check",
+    "sitemap:test": "python -m unittest discover -s tests -p test_sitemap.py",
     "knowledge-count": "node tools/sync-knowledge-count.mjs",
     "knowledge-count:audit": "node tools/sync-knowledge-count.mjs --audit",
     "check-live-sync": "python scripts/check_live_sync.py",
