@@ -11,9 +11,10 @@ export async function onRequest({ request, next }) {
   const origin = request.headers.get("Origin") || "";
   const path = new URL(request.url).pathname;
   const isCounts = path.endsWith("/counts");
+  const isAdminRoute = /\/admin(?:-|\/|$)/.test(path);
   const corsOk = isCounts
     ? origin === DASHBOARD_ORIGIN
-    : ALLOWED.has(origin) && !path.endsWith("/admin-summary") && !path.endsWith("/admin-session");
+    : ALLOWED.has(origin) && !isAdminRoute;
   const corsHeaders = corsOk
     ? {
         "Access-Control-Allow-Origin": origin,

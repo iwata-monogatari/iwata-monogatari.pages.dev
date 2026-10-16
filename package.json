@@ -6,6 +6,7 @@
     "knowledge-count": "node tools/sync-knowledge-count.mjs",
     "knowledge-count:audit": "node tools/sync-knowledge-count.mjs --audit",
     "check-live-sync": "python scripts/check_live_sync.py",
+    "test:article-feedback": "node --test tests/article-feedback.test.mjs tests/reactions-summary.test.mjs",
     "release:stamp": "python scripts/release_guard.py stamp",
     "release:check": "python scripts/release_guard.py check-local",
     "release:check-live": "python scripts/release_guard.py check-live",
