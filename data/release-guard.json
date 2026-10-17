@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1792154217,
-  "generation": 20261016213657,
-  "git_commit_at_stamp": "3c80f9e26fe2ec8a3727029e9f714d3c5b39b68f",
+  "generated_at_unix": 1792199864,
+  "generation": 20261017101744,
+  "git_commit_at_stamp": "754ddfcf2b21cc3c491881c070add44572beaece",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "d6172f374b00d84c2c9056cef1edb10a0b3a59ee232e2fdf5d63e7af9e162d95"
+      "sha256": "645235f582b4951b75ef54bca14ed6d59801b240723fb93c45728997d49548a6"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "c3172cba432c12194dae10317851d444c602b73b131d00ee3fc8540a2d6257ab"
+      "sha256": "4e96ec7646801c387e99c45a8de4b9164b66698f5a1805c517290c4127cd2996"
     },
     {
       "path": "data/pages.json",
-      "sha256": "cf513607a42b1c39f0c97171a3f7b2946c579d02c942e2f1cc4e03c59d0fb413"
+      "sha256": "b7ba98f915c50a93fe59d4d923acf55ab8c135d0e4240fab850e1ca781752d1c"
     },
     {
       "path": "index.html",
-      "sha256": "416af428af514c879b50e6391a196d3a0ab1deaa47e1a4138271894a30fb1ec8"
+      "sha256": "913f86a4b08e6f20212858073ff35e87af55dfcdc223ff12d3fcf02f6b1ab2cb"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "21c00f6df8949e4af71815ca7a62efe17145845b96e7c89d16f6dead1500fbfb"
+      "sha256": "f990ed2dcc681d64179f87f0158f85d10805ddc564bd93b07655c6baca806158"
     },
     {
       "path": "updates.html",
-      "sha256": "c14565da571d69a6e9b2653ada6eb102cd5a8bf86e5783b5382528369167430f"
+      "sha256": "64b41dc46a71b247d6e15c897c1feeaafe3004ccadde97dd57d602f71ccd8269"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "c2a30e233a8cc46dcf578e1a36e6c5ef5f98158850fd68cce5433c1a940f10b7",
+      "content_sha256": "0d3cb534c012787afc0b2bda2782ddece3c3986dcf4a34c7724663e56512412d",
       "path": "index.html",
-      "sha256": "416af428af514c879b50e6391a196d3a0ab1deaa47e1a4138271894a30fb1ec8",
+      "sha256": "913f86a4b08e6f20212858073ff35e87af55dfcdc223ff12d3fcf02f6b1ab2cb",
       "url": "/"
     },
     {
-      "content_sha256": "1f90bd3aa1bdde71027a0d29a3b95930847e82658220cd552d927443d939ff4e",
+      "content_sha256": "d43792754ee8ed82b33e71710d96b7571acd4b761978c6b9ddd670de0745157d",
       "path": "updates.html",
-      "sha256": "c14565da571d69a6e9b2653ada6eb102cd5a8bf86e5783b5382528369167430f",
+      "sha256": "64b41dc46a71b247d6e15c897c1feeaafe3004ccadde97dd57d602f71ccd8269",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "c79f41cb07b7aa1ee6824a3dffcdf46e77bd69fee8298b2e1b7e2ba3ab25c1dc",
+      "content_sha256": "1797fb56b27138a71039ecc8d681337599c7d131924cce0110587142fbe1fd2b",
       "path": "c034.html",
-      "sha256": "d6172f374b00d84c2c9056cef1edb10a0b3a59ee232e2fdf5d63e7af9e162d95",
+      "sha256": "645235f582b4951b75ef54bca14ed6d59801b240723fb93c45728997d49548a6",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "79c9c30ebcda0ee861f17013af3f98f1ea0c794d1b15c782d690b5789494f639",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "6f6d50931dd4d05a9986434bf5930678e78406683cfd68f9d0acdc1db254968b",
+      "path": "blog/20261017-kyureki-shinreki-reading/index.html",
+      "sha256": "e3ad521337e26c1cda379a7a5b43a85d2670bc8505b4408ab600bc809687d753",
+      "url": "/blog/20261017-kyureki-shinreki-reading"
     },
     {
       "content_sha256": "2df83e7a056bf5261c0163a9a3c106d4485ce63854bb409235ac69afc21370bd",
@@ -826,23 +832,17 @@
       "path": "c166.html",
       "sha256": "268beb0dc22b9e17d9d3934962be43851f01cae6f09abedf02c4ccc51ff8ee1b",
       "url": "/c166.html"
-    },
-    {
-      "content_sha256": "310acade7b57df54643c5a6734885749a940b6f86bc9635fe0b7513aa364c4d7",
-      "path": "c167.html",
-      "sha256": "b8d9bdc3788ea19d6d76ccc211021a64e4e2cf61a75e6489e2fe4667749ac5c3",
-      "url": "/c167.html"
     }
   ],
   "schema": 1,
-  "state_hash": "1b1cc2206b71cf1eb96e77044217d879109f91e865ee8c83c5000dcf4459119f",
+  "state_hash": "fb946a566dcb677a7117e6eed72f057d3f91f77c22d19643ee29f6d34024738d",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1112,
-    "new_articles": 1255,
-    "new_articles_sha256": "c3172cba432c12194dae10317851d444c602b73b131d00ee3fc8540a2d6257ab",
-    "pages_sha256": "cf513607a42b1c39f0c97171a3f7b2946c579d02c942e2f1cc4e03c59d0fb413",
-    "pages_total": 1171,
-    "published_pages": 1170
+    "new_articles": 1256,
+    "new_articles_sha256": "4e96ec7646801c387e99c45a8de4b9164b66698f5a1805c517290c4127cd2996",
+    "pages_sha256": "b7ba98f915c50a93fe59d4d923acf55ab8c135d0e4240fab850e1ca781752d1c",
+    "pages_total": 1172,
+    "published_pages": 1171
   }
 }

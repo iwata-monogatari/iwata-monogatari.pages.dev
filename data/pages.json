@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-10-14",
+  "updated_at": "2026-10-17",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -32831,6 +32831,27 @@
       "show_in_updates": false,
       "show_in_all_articles": false,
       "summary": "文化財説明板は、名称・年号が指す出来事・説明の根拠の順で読みます。磐田の指定文化財一覧、旧見付学校、寺院の本編を使い、落成や指定を混同しない確認メモの作り方を案内。分からない箇所は未確認と残し、次に調べる問いを一つ持ち帰ります。"
+    },
+    {
+      "title": "ブログ：旧暦と新暦の違い｜磐田の行事記録を読む",
+      "url": "/blog/20261017-kyureki-shinreki-reading/",
+      "district": [
+        "fukude",
+        "koyo"
+      ],
+      "themes": [
+        "life",
+        "festival"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-10-17",
+      "updated_at": "2026-10-17",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": false,
+      "show_in_updates": false,
+      "show_in_all_articles": false,
+      "summary": "旧暦と新暦は、日付を決める仕組みが違います。福田と向笠の本編を案内し、月遅れとの混同を避けながら行事記録を読み比べます。十三夜の日付を入口に、資料の月日、地域と採録時点、現在の開催案内を分け、分からない点を残す読み方を紹介します。"
     }
   ]
 }
