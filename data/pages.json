@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-10-18",
+  "updated_at": "2026-10-19",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -33063,7 +33063,7 @@
       "type": "article",
       "content_type": "article",
       "published_at": "2026-10-18",
-      "updated_at": "2026-10-18",
+      "updated_at": "2026-10-19",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -33086,7 +33086,8 @@
         "book:松下正「近代教育の黎明期に学校を支えた人々」『磐田人物往来』2001年:68頁",
         "web:https://www.lib-iwata-shizuoka.jp/person/5070/",
         "web:https://d-archive.u-gakugei.ac.jp/item/10681374",
-        "web:https://ci.nii.ac.jp/ncid/BB1376592X"
+        "web:https://ci.nii.ac.jp/ncid/BB1376592X",
+        "web:https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/015/981/mituke-shiryo.pdf#page=36"
       ]
     }
   ]
