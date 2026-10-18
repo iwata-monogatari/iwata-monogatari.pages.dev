@@ -1,0 +1,18 @@
+/* Scoped article treatment: shared blue palette and readable mobile tables. */
+:root{--paper:#f8fbfd;--soft:#eaf3f8;--ink:#243c4b;--muted:#5b6e7b;--accent:#25628a;--deep:#194d70;--blue:#25628a;--line:#d5e3ed;--card:#fff}
+body{background:var(--paper)}
+body.area-koyo{--accent:#25628a;--accent-soft:#eaf3f8;--accent-ink:#194d70}
+.article-toc{margin:28px 0;padding:20px 24px;background:#edf5fa;border:1px solid #d5e3ed;border-radius:10px;font-size:.95rem}
+.article-toc ol{margin:10px 0 0;padding-left:1.6em}.article-toc li{margin:5px 0}
+.article a,.academic-content a{color:#194d70;text-underline-offset:3px}
+.article .source-note{font-size:.86em;white-space:normal}
+.article img,.academic-content img{max-width:100%;height:auto}
+.article h2,.academic-content h2{scroll-margin-top:90px}
+.article .sources{padding-left:0;padding-right:0}.sources li{overflow-wrap:anywhere}
+.article .tablewrap,.article .table-wrap,.academic-content .tablewrap{overflow-x:auto;max-width:100%;margin:28px 0}
+caption{text-align:left;font-weight:700;color:#194d70;padding:0 0 10px;line-height:1.6}
+.article-consultation{margin:38px 0 12px;padding:22px;border:1px solid #d5e3ed;background:#eef5f9;border-radius:10px;font-size:.9rem}
+.article-consultation p{margin:0 0 10px}.article-consultation a{font-weight:700}
+.revision-history,.history{font-size:.85rem;color:#5b6e7b}
+.academic-content .meta,.academic-content .crumb,.academic-content .crumb a{color:#35647f}
+@media(max-width:600px){.article-toc{padding:18px}.article h2,.academic-content h2{font-size:22px}.article table,.academic-content table{min-width:520px}.article-consultation{padding:18px}}

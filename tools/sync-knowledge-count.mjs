@@ -16,7 +16,7 @@ const ARTICLE_INDEX = path.join(ROOT, "c034.html");
 
 // data-knowledge-count 属性を持つ要素の数字だけを書き換える。
 // 対象ファイルを増やしたい場合はここに追記する（例: c033.html に表示を追加したら追加する）。
-const DISPLAY_TARGETS = [path.join(ROOT, "index.html")];
+const DISPLAY_TARGETS = ["index.html", "c034.html", "c033.html"].map((name) => path.join(ROOT, name));
 
 const args = new Set(process.argv.slice(2));
 const CHECK_MODE = args.has("--check");

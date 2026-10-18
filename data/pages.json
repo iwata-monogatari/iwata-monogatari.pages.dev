@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-10-17",
+  "updated_at": "2026-10-18",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -27762,7 +27762,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-18",
-      "updated_at": "2026-08-25",
+      "updated_at": "2026-10-18",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -27776,14 +27776,18 @@
         "下手六村",
         "板堰",
         "量水標石",
-        "松岡萬"
+        "松岡萬",
+        "水利地役権",
+        "基準標石",
+        "熊谷光博"
       ],
-      "level": "L2",
-      "summary": "二之宮の大池をめぐる埋立計画、養魚設備、水利訴訟、明治32年の和解と量水標石を、地域資料と静岡県資料からたどる。",
+      "level": "L3",
+      "summary": "六段階の裁判、水門管理、量水標と基準標を区別して読む大池の水利史。熊谷光博の論考と県資料を照合し、計画・判決・和解・標石建設の年代を分ける。",
       "source_refs": [
         "book:磐田ことはじめ 第一編 町内の風土記:84〜91頁（2026-08-18頁画像照合）",
         "official:静岡県『水の恵みカード』関連資料（量水標石）",
-        "book:磐田ことはじめ 第二編・現代編:89〜149頁"
+        "book:磐田ことはじめ 第二編・現代編:89〜149頁",
+        "book:熊谷光博「大池をめぐる水争いの顛末」『磐田人物往来』2001年:9–23頁"
       ]
     },
     {
@@ -28052,7 +28056,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-18",
-      "updated_at": "2026-08-19",
+      "updated_at": "2026-10-18",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -28066,13 +28070,18 @@
         "民間有料橋",
         "橋銭",
         "高塚太郎平新道",
-        "佐口史料"
+        "佐口史料",
+        "豊田社",
+        "松島吉平",
+        "青島佐七",
+        "年期貸借"
       ],
-      "level": "L2",
-      "summary": "明治15年の仕様帳、明治16年の架設略面、匂坂へ続く新道から、民間有料橋・豊田橋の役割と未確認点を読む。",
+      "level": "L3",
+      "summary": "1883年2月28日の開橋、計画段階の橋長と橋銭、洪水後の貸借契約を市川恒「豊田橋始末記」から補い、民間有料橋の収益と修繕責任を読む。",
       "source_refs": [
         "private-archive:佐口行正氏所蔵『遠江国豊田橋架設略面』『豊田橋架設仕様帳』",
-        "internal:k056.html, t006.html, r039.html"
+        "internal:k056.html, t006.html, r039.html",
+        "book:市川恒「豊田橋始末記」『磐田人物往来』2001年:25–41頁"
       ]
     },
     {
@@ -29816,7 +29825,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-24",
-      "updated_at": "2026-08-25",
+      "updated_at": "2026-10-18",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -29829,14 +29838,19 @@
         "旧校舎",
         "学校建設",
         "学校寄付",
-        "学区再編"
+        "学区再編",
+        "塚原重応",
+        "青山宙平",
+        "仮教場",
+        "学校維持費"
       ],
       "level": "L3",
-      "summary": "明治6年（1873年）、中泉では神社境内の仮校舎から学校づくりが始まった。児童を収める校舎、住民の拠金、学区の再編、戦時の転用をたどると、学校が一棟の建物ではなく、地域が長く負担して育てた制度だったことが見えてくる。",
+      "summary": "中泉学校の仮校舎、住民の拠金、学区再編と校舎転用を読む。塚原重応・青山宙平の役割と、仮教場・校長就任・設立費・維持費の区別を加える。",
       "source_refs": [
         "book:磐田ことはじめ 第二編・現代編:58・62頁",
         "web:https://www.city.iwata.shizuoka.jp/kosodate_kyouiku/shougakkou_chuugakkou/index.html",
-        "web:https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002050.html"
+        "web:https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002050.html",
+        "book:松下正「近代教育の黎明期に学校を支えた人々」『磐田人物往来』2001年:43–71頁"
       ]
     },
     {
@@ -32872,6 +32886,46 @@
       "show_in_updates": false,
       "show_in_all_articles": false,
       "summary": "磐田市敷地の次郎柿は、県公式情報で10月下旬～12月上旬が旬の目安です。ころ柿・敷地米・旧敷地村の本編3本を案内し、秋の味覚から地域の生業へ読み進めます。今年の収穫状況と過去の記録を分け、資料で分からない点を残す読み方を紹介します。"
+    },
+    {
+      "slug": "c177",
+      "title": "磐南の教育者たち ── 実習・食卓・音楽・地域の学び",
+      "url": "c177.html",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "school",
+        "modern-education",
+        "village-history"
+      ],
+      "type": "article",
+      "content_type": "article",
+      "published_at": "2026-10-18",
+      "updated_at": "2026-10-18",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "磐田共通・教育史",
+      "topics": [
+        "教育者",
+        "磐南",
+        "細田多次郎",
+        "農業実習",
+        "古田文",
+        "家庭科",
+        "労作教育",
+        "合唱",
+        "寺子町研修寮"
+      ],
+      "level": "L3",
+      "summary": "農学校の実習、家庭科と食生活、労作教育、音楽、自然観察、大学生の学習支援。『磐田人物往来』から、磐南の教師と地域の学びを資料の限界も含めて読む。",
+      "source_refs": [
+        "book:寺田伊勢男「磐南地域の教育の先駆者たち」『磐田人物往来』2001年:73–115頁",
+        "web:https://www.lib-iwata-shizuoka.jp/person/5071/"
+      ]
     }
   ]
 }
