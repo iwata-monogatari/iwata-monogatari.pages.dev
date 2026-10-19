@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1792406083,
-  "generation": 20261019193443,
-  "git_commit_at_stamp": "f62c87b7ed023ccf40c96994785cfa349525c9b4",
+  "generated_at_unix": 1792454128,
+  "generation": 20261020085528,
+  "git_commit_at_stamp": "1e5429bbc145e802ea3340c6f81242cde30d4804",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -39,7 +39,7 @@
     },
     {
       "path": "data/pages.json",
-      "sha256": "85c5f2aa32890eedb31c5fd2441783df085e9ec2cf2cf644fd85e351725591e6"
+      "sha256": "a09522b1d3af0799e6626987ec978a5de6a6bf094f402cc7aa32869edf87b8ed"
     },
     {
       "path": "index.html",
@@ -63,11 +63,11 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "9389e28952b9c60c7f40dbc67370cb57d5a9bde93b307e41ddd4dcfda7591c13"
+      "sha256": "2af9d7cf5c63e1212d11a3cf6fba2beffb6ab4ae2a7f22823f3e84f65d925886"
     },
     {
       "path": "updates.html",
-      "sha256": "d1139a983503f04fa13d2a24b8addba023da594c4467066bf613b15dca563af2"
+      "sha256": "b7a1af2f9dcdfbe8480382b92446a5f8f7a8c25dcbcaef66c517655a5fc8a25f"
     }
   ],
   "protected_urls": [
@@ -78,9 +78,9 @@
       "url": "/"
     },
     {
-      "content_sha256": "a21758bdc2d6caa8b6eadd7c59bd3d5a0471f07baedef174131497e11ed4afff",
+      "content_sha256": "fb4af56973d34508a3a67df736cff33d35f0da611605b0fd579ec4ae17bb6a75",
       "path": "updates.html",
-      "sha256": "d1139a983503f04fa13d2a24b8addba023da594c4467066bf613b15dca563af2",
+      "sha256": "b7a1af2f9dcdfbe8480382b92446a5f8f7a8c25dcbcaef66c517655a5fc8a25f",
       "url": "/updates.html"
     },
     {
@@ -835,13 +835,13 @@
     }
   ],
   "schema": 1,
-  "state_hash": "01006e00b9aaf06add0142d5fc16aea1a3bfaea9a5890afa3c87cd0ddf08d9a3",
+  "state_hash": "82735c8ef08841e8c437c15e3439835d0d9ffe0d53879604ecaf8f7b1f79889d",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1117,
     "new_articles": 1267,
     "new_articles_sha256": "320815ab763bb8c02b9bb6a20c0f7df58998256bf3211fc69eb15e7a80888dce",
-    "pages_sha256": "85c5f2aa32890eedb31c5fd2441783df085e9ec2cf2cf644fd85e351725591e6",
+    "pages_sha256": "a09522b1d3af0799e6626987ec978a5de6a6bf094f402cc7aa32869edf87b8ed",
     "pages_total": 1180,
     "published_pages": 1179
   }
