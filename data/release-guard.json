@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1792454128,
-  "generation": 20261020085528,
-  "git_commit_at_stamp": "1e5429bbc145e802ea3340c6f81242cde30d4804",
+  "generated_at_unix": 1792459786,
+  "generation": 20261020102946,
+  "git_commit_at_stamp": "fd8dda468144a1ba562816ee3cce867b65628f01",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "9f8bf6550450e47fa8fabb1c1bcbf0346c61103808759b7cba8a553bb3c815f1"
+      "sha256": "d83ee0f91b690297839c1bce3aeedced498e952b21b0c398b3c14d086f8ec819"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "320815ab763bb8c02b9bb6a20c0f7df58998256bf3211fc69eb15e7a80888dce"
+      "sha256": "2c1183212b4e733462b14650fefc7db5e211700a01ec15ac1cdea0ec998d7191"
     },
     {
       "path": "data/pages.json",
-      "sha256": "a09522b1d3af0799e6626987ec978a5de6a6bf094f402cc7aa32869edf87b8ed"
+      "sha256": "ada2f59cf057df3fe50a8fbbe2bccebff4587c28325f8e6c8b621a5e9c9415e1"
     },
     {
       "path": "index.html",
-      "sha256": "871f00bdae43d2f371a3d2bbc377c8596a75431d7da4dc8e7f111c045dcba7a4"
+      "sha256": "a35f6c715d95d9eff6de41c12d23b8c7d36cccd5cb6a847c1e299430c8949354"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "2af9d7cf5c63e1212d11a3cf6fba2beffb6ab4ae2a7f22823f3e84f65d925886"
+      "sha256": "c2c1ef6da56e626ebc7f3070cfe8ebed88b3b3dbe07058ffe5675b31e6424663"
     },
     {
       "path": "updates.html",
-      "sha256": "b7a1af2f9dcdfbe8480382b92446a5f8f7a8c25dcbcaef66c517655a5fc8a25f"
+      "sha256": "c456cf162bbc61ecaf8eae9afa6554090d33dd5e5e550dfb187606754603355c"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "a8e9cf233fdb29b1cc91cbdd320b7ef978c55fe05c2a0ceba0dd9fa999721e80",
+      "content_sha256": "7e12fb27c38dc13669d8f69ea51b3d15f396652801c9feb224fa2456b1436ed8",
       "path": "index.html",
-      "sha256": "871f00bdae43d2f371a3d2bbc377c8596a75431d7da4dc8e7f111c045dcba7a4",
+      "sha256": "a35f6c715d95d9eff6de41c12d23b8c7d36cccd5cb6a847c1e299430c8949354",
       "url": "/"
     },
     {
-      "content_sha256": "fb4af56973d34508a3a67df736cff33d35f0da611605b0fd579ec4ae17bb6a75",
+      "content_sha256": "6ba8229225d35391886d24b9040208d8536a0813a1beb4f2a4bfe136b3bb5ce8",
       "path": "updates.html",
-      "sha256": "b7a1af2f9dcdfbe8480382b92446a5f8f7a8c25dcbcaef66c517655a5fc8a25f",
+      "sha256": "c456cf162bbc61ecaf8eae9afa6554090d33dd5e5e550dfb187606754603355c",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "a22d21efff4d0dc730083f634aec5d1a5b3153d25671e2056f42c6fb8bf08bfa",
+      "content_sha256": "f24815e8fcc880db02320f4b31892d30f5902f73a88b1b258672f42a66e16823",
       "path": "c034.html",
-      "sha256": "9f8bf6550450e47fa8fabb1c1bcbf0346c61103808759b7cba8a553bb3c815f1",
+      "sha256": "d83ee0f91b690297839c1bce3aeedced498e952b21b0c398b3c14d086f8ec819",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "79c9c30ebcda0ee861f17013af3f98f1ea0c794d1b15c782d690b5789494f639",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "b2ba35b1e26e25e6018a43490f52ec3cc0bba26db0e37caa0a6530c39bb0f07b",
+      "path": "blog/20261020-terakoya-modern-school-comparison/index.html",
+      "sha256": "a41eb2c681b33905473e5bc6e8420e0ad2114df7d4c79a6c87e153ef6d8461de",
+      "url": "/blog/20261020-terakoya-modern-school-comparison"
     },
     {
       "content_sha256": "ec016599147dae4c93003489ff498488999172c77ad6914a3c79f03eb7e488e3",
@@ -826,23 +832,17 @@
       "path": "c170.html",
       "sha256": "f463f50a8dd0db0bb22a8055a4669ed978e9fd59f63d6d94010ed21aa264e5d0",
       "url": "/c170.html"
-    },
-    {
-      "content_sha256": "4c3865fc4088ced0c4e409676ece7c0db0215d6625fa9506a342b24d4e6a73db",
-      "path": "c169.html",
-      "sha256": "58db4e52b90526c309c63decaabb8d33f2f6de3bc6e692a19aded36681b60a60",
-      "url": "/c169.html"
     }
   ],
   "schema": 1,
-  "state_hash": "82735c8ef08841e8c437c15e3439835d0d9ffe0d53879604ecaf8f7b1f79889d",
+  "state_hash": "5c4cbd0be2ca9b9b7d37d0ffdf9132240abc31bdd1f3baff8d251691e078aa2a",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1117,
-    "new_articles": 1267,
-    "new_articles_sha256": "320815ab763bb8c02b9bb6a20c0f7df58998256bf3211fc69eb15e7a80888dce",
-    "pages_sha256": "a09522b1d3af0799e6626987ec978a5de6a6bf094f402cc7aa32869edf87b8ed",
-    "pages_total": 1180,
-    "published_pages": 1179
+    "new_articles": 1268,
+    "new_articles_sha256": "2c1183212b4e733462b14650fefc7db5e211700a01ec15ac1cdea0ec998d7191",
+    "pages_sha256": "ada2f59cf057df3fe50a8fbbe2bccebff4587c28325f8e6c8b621a5e9c9415e1",
+    "pages_total": 1181,
+    "published_pages": 1180
   }
 }
