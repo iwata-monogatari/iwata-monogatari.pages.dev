@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1792656028,
-  "generation": 20261022170028,
-  "git_commit_at_stamp": "fe66a382b4e972493b095eb251555c056d43884e",
+  "generated_at_unix": 1792739120,
+  "generation": 20261023160520,
+  "git_commit_at_stamp": "f3b7d8bccfe139076e68e0c6ac9934bb8039d0ba",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "807ae5efb2b43188b57379929b676e2137daf4630d3f8b97d8de57e1bcd6f550"
+      "sha256": "d500fc63a5903e8a5b3604ce3521d8c32477f5423c2dc35bad9bdfcf01ed0670"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "aaa6c1f736c983bf43172600512342b322f1e0b1cd3e83bb0a2304bad34a013b"
+      "sha256": "6c4442a811b173ba40fc9a3b3287966df3af69581cf17c1e0ceb6379c7fc8047"
     },
     {
       "path": "data/pages.json",
-      "sha256": "3a18dd6dd2dc0ce3405593d1c5c0c913a13a80322aec84c589dd718b7adc3e85"
+      "sha256": "feeb2849212161f135cec455199f708b0aac6cdc53e04c1f382a8af3dbb6a767"
     },
     {
       "path": "index.html",
-      "sha256": "b1098770b4a0271e078cafb8bc1b8823c494672f5e203487f1618935ae799885"
+      "sha256": "dc61f18f30414fdbb211fdb28f74af0af613aebaa1abd94f45e3732d57d78be3"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "76e118b2c2d9d5869e1b469ad8985fce9cb18528ce9a32330a035c478c3c9e7b"
+      "sha256": "0ec5f4bfdde2b7a97a8a316d9fe6d4c375f7a1058c43c7163cf42d54d2d49987"
     },
     {
       "path": "updates.html",
-      "sha256": "2bd889bb41fe195a6f62b6f0dc71a9b44a63f7ab5f0c478009d6268bfc51ed9b"
+      "sha256": "66f44ee30acba60c201fac839d5d542beae7a96df35ad092eded4e8efd451801"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "4dad13348ee5ffaef419f87274e6bbb740232367aa4206c3f1fb5bcd2d8ed7ed",
+      "content_sha256": "c49fc3414d70c725f31bf55678da6c8f1d356eae022213ce41ad95fbb1506d53",
       "path": "index.html",
-      "sha256": "b1098770b4a0271e078cafb8bc1b8823c494672f5e203487f1618935ae799885",
+      "sha256": "dc61f18f30414fdbb211fdb28f74af0af613aebaa1abd94f45e3732d57d78be3",
       "url": "/"
     },
     {
-      "content_sha256": "c9ab87048641379c8d0d389f59c3450338b7c61dbfceefe8159c91cb00471ed3",
+      "content_sha256": "9e22e7cf77f5c3d78b4d417c42d5878d31699053314d57f8a2aee470aa7e5abf",
       "path": "updates.html",
-      "sha256": "2bd889bb41fe195a6f62b6f0dc71a9b44a63f7ab5f0c478009d6268bfc51ed9b",
+      "sha256": "66f44ee30acba60c201fac839d5d542beae7a96df35ad092eded4e8efd451801",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "a0c3fbd6976fb6c3a3a5207ab21e8ff6f06c6c787101b2e498ef98211d35e39b",
+      "content_sha256": "50dd3dca111015ca6cfe5f4bac1832672b35c6b99407cf4d49563fdfd5de8a9f",
       "path": "c034.html",
-      "sha256": "807ae5efb2b43188b57379929b676e2137daf4630d3f8b97d8de57e1bcd6f550",
+      "sha256": "d500fc63a5903e8a5b3604ce3521d8c32477f5423c2dc35bad9bdfcf01ed0670",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "79c9c30ebcda0ee861f17013af3f98f1ea0c794d1b15c782d690b5789494f639",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "67a73d7ad1ee96d367791435bcf12e85ec537fa2c4130d98e154ff34a0958f1e",
+      "path": "blog/20261023-choshizuka-autumn-reading/index.html",
+      "sha256": "6905427469719fef54e102e95159d0675224e65cefb5eb55f28b2237cca5da71",
+      "url": "/blog/20261023-choshizuka-autumn-reading"
     },
     {
       "content_sha256": "8a643af16be06aec1d4c921b8865780ef8071d75a67023788534be92b8ab660d",
@@ -826,23 +832,17 @@
       "path": "blog/20260831-mitsuke-nakaizumi-jinko/index.html",
       "sha256": "2f84f46691b45eb9ddc3acaad28d97077faf90a432cbfb76a4087874437ac851",
       "url": "/blog/20260831-mitsuke-nakaizumi-jinko"
-    },
-    {
-      "content_sha256": "30820585f89fccede9b9d7691c57c63ac026d8ef159f5403163f39417dd738e8",
-      "path": "blog/20260831-iwata-kofun-naze-ooi/index.html",
-      "sha256": "5e0d2245b5600706b7ea8d88a1f486db9a933d23d3612c97a7bb74f1643e0837",
-      "url": "/blog/20260831-iwata-kofun-naze-ooi"
     }
   ],
   "schema": 1,
-  "state_hash": "f732ef30c905b32232bdf59c96799724d45db7363afee0f5f6e6ce21b3e72c70",
+  "state_hash": "b85f1230078deedfb830ef9fb614b7fcc77ae45f2205938e6f7bdc6fe69672d1",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1117,
-    "new_articles": 1270,
-    "new_articles_sha256": "aaa6c1f736c983bf43172600512342b322f1e0b1cd3e83bb0a2304bad34a013b",
-    "pages_sha256": "3a18dd6dd2dc0ce3405593d1c5c0c913a13a80322aec84c589dd718b7adc3e85",
-    "pages_total": 1183,
-    "published_pages": 1182
+    "new_articles": 1271,
+    "new_articles_sha256": "6c4442a811b173ba40fc9a3b3287966df3af69581cf17c1e0ceb6379c7fc8047",
+    "pages_sha256": "feeb2849212161f135cec455199f708b0aac6cdc53e04c1f382a8af3dbb6a767",
+    "pages_total": 1184,
+    "published_pages": 1183
   }
 }

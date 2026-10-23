@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-10-20",
+  "updated_at": "2026-10-23",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -33248,6 +33248,26 @@
         "internal:c068.html",
         "web:https://www.bunka.go.jp/seisaku/bunkazai/hogofukyu/hogoweek/"
       ]
+    },
+    {
+      "title": "銚子塚古墳周辺の秋散策｜本編3本への案内（ブログ記事）",
+      "url": "blog/20261023-choshizuka-autumn-reading/",
+      "district": [
+        "koyo"
+      ],
+      "themes": [
+        "cultural-property",
+        "land-memory"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-10-23",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "銚子塚古墳周辺の散策前に、両古墳の形、被葬者像の推定、長者屋敷遺跡を扱う本編3本を案内します。寺谷の史跡を同じ時代や人物の物語にまとめず、記録と解釈を読み分けます。秋の文化財保護強調週間を前に、一つの問いを持って歩くための読書案内です。",
+      "parent": "blog/",
+      "count_as_knowledge": false,
+      "show_in_updates": true,
+      "show_in_all_articles": false
     }
   ]
 }
