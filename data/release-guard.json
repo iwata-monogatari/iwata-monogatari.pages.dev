@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1792739120,
-  "generation": 20261023160520,
-  "git_commit_at_stamp": "f3b7d8bccfe139076e68e0c6ac9934bb8039d0ba",
+  "generated_at_unix": 1792802414,
+  "generation": 20261024094014,
+  "git_commit_at_stamp": "5f535dd16315951f149a8ce6b7a5ba29f94118ac",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "d500fc63a5903e8a5b3604ce3521d8c32477f5423c2dc35bad9bdfcf01ed0670"
+      "sha256": "da2682a65e1e40a75177b5b6878fa73a4723583047e2283af2c62baa385286f4"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "6c4442a811b173ba40fc9a3b3287966df3af69581cf17c1e0ceb6379c7fc8047"
+      "sha256": "9ae9694f7e1644c5d919f9cb3a156860dffc3091c351c88464d493aae484558a"
     },
     {
       "path": "data/pages.json",
-      "sha256": "feeb2849212161f135cec455199f708b0aac6cdc53e04c1f382a8af3dbb6a767"
+      "sha256": "407e4f20ecdbbcf94906e7640a12597863d837083ca81475561a3779088bea3f"
     },
     {
       "path": "index.html",
-      "sha256": "dc61f18f30414fdbb211fdb28f74af0af613aebaa1abd94f45e3732d57d78be3"
+      "sha256": "2ec976448b1bba00632a60c29b0f75b368d1b1817fa9ed6fd6c241adff64ece1"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "0ec5f4bfdde2b7a97a8a316d9fe6d4c375f7a1058c43c7163cf42d54d2d49987"
+      "sha256": "2a524d738252d45356d7bc6bc62050b125b7de20e20b0eaf1a70e70ae4c0d12e"
     },
     {
       "path": "updates.html",
-      "sha256": "66f44ee30acba60c201fac839d5d542beae7a96df35ad092eded4e8efd451801"
+      "sha256": "c9b30bfaadf910c022ad1d18d56fe0f6ab7f45057d70c2970cda8de2dc21bcea"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "c49fc3414d70c725f31bf55678da6c8f1d356eae022213ce41ad95fbb1506d53",
+      "content_sha256": "c87c1a89d3cef6008b93a8eb125a2cf4490b096767c8ea597a65ab2da8d148a6",
       "path": "index.html",
-      "sha256": "dc61f18f30414fdbb211fdb28f74af0af613aebaa1abd94f45e3732d57d78be3",
+      "sha256": "2ec976448b1bba00632a60c29b0f75b368d1b1817fa9ed6fd6c241adff64ece1",
       "url": "/"
     },
     {
-      "content_sha256": "9e22e7cf77f5c3d78b4d417c42d5878d31699053314d57f8a2aee470aa7e5abf",
+      "content_sha256": "7e24c76dd35cab4b190eee68225d55fb4405b1e3ab4f3e8827fadc0f1105775c",
       "path": "updates.html",
-      "sha256": "66f44ee30acba60c201fac839d5d542beae7a96df35ad092eded4e8efd451801",
+      "sha256": "c9b30bfaadf910c022ad1d18d56fe0f6ab7f45057d70c2970cda8de2dc21bcea",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "50dd3dca111015ca6cfe5f4bac1832672b35c6b99407cf4d49563fdfd5de8a9f",
+      "content_sha256": "3caea15accd2ac8b831476f5729734bedc3eddc77e0dbed98955109bae74eaf5",
       "path": "c034.html",
-      "sha256": "d500fc63a5903e8a5b3604ce3521d8c32477f5423c2dc35bad9bdfcf01ed0670",
+      "sha256": "da2682a65e1e40a75177b5b6878fa73a4723583047e2283af2c62baa385286f4",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "79c9c30ebcda0ee861f17013af3f98f1ea0c794d1b15c782d690b5789494f639",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "1611d3fda53f55a6ca5d7650d6bd1956238d32ffc5cb53964a6752fb0465bdfa",
+      "path": "blog/20261024-shiseki-iseki-difference/index.html",
+      "sha256": "84552af3a9b116ce0c2abe889f44b7325812abafc76903083160c8fdbc8954c8",
+      "url": "/blog/20261024-shiseki-iseki-difference"
     },
     {
       "content_sha256": "67a73d7ad1ee96d367791435bcf12e85ec537fa2c4130d98e154ff34a0958f1e",
@@ -826,23 +832,17 @@
       "path": "blog/20260901-showa-100-iwata-map/index.html",
       "sha256": "5705d6c7505ad4f9480bc540166f9315b982c141622954f0b2050b2b306ab217",
       "url": "/blog/20260901-showa-100-iwata-map"
-    },
-    {
-      "content_sha256": "78ca39bb0e6391bfa124e790cb80a08e2ac5c640d9981723aa1e9a4e43ad5e46",
-      "path": "blog/20260831-mitsuke-nakaizumi-jinko/index.html",
-      "sha256": "2f84f46691b45eb9ddc3acaad28d97077faf90a432cbfb76a4087874437ac851",
-      "url": "/blog/20260831-mitsuke-nakaizumi-jinko"
     }
   ],
   "schema": 1,
-  "state_hash": "b85f1230078deedfb830ef9fb614b7fcc77ae45f2205938e6f7bdc6fe69672d1",
+  "state_hash": "d38e7b8c0f53dc630d6c8b7790eda2e358f7c952cab1f12bb381032353d379b3",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1117,
-    "new_articles": 1271,
-    "new_articles_sha256": "6c4442a811b173ba40fc9a3b3287966df3af69581cf17c1e0ceb6379c7fc8047",
-    "pages_sha256": "feeb2849212161f135cec455199f708b0aac6cdc53e04c1f382a8af3dbb6a767",
-    "pages_total": 1184,
-    "published_pages": 1183
+    "new_articles": 1272,
+    "new_articles_sha256": "9ae9694f7e1644c5d919f9cb3a156860dffc3091c351c88464d493aae484558a",
+    "pages_sha256": "407e4f20ecdbbcf94906e7640a12597863d837083ca81475561a3779088bea3f",
+    "pages_total": 1185,
+    "published_pages": 1184
   }
 }
