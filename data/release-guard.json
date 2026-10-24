@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1792802414,
-  "generation": 20261024094014,
-  "git_commit_at_stamp": "5f535dd16315951f149a8ce6b7a5ba29f94118ac",
+  "generated_at_unix": 1792886203,
+  "generation": 20261025085643,
+  "git_commit_at_stamp": "cd5d47753a832782b57fd05c43dd4caba0c999d8",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "da2682a65e1e40a75177b5b6878fa73a4723583047e2283af2c62baa385286f4"
+      "sha256": "51f2877c47d4d6f6adfc3c2add8bb09404db265814157e30ca8bd36af864d67e"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "9ae9694f7e1644c5d919f9cb3a156860dffc3091c351c88464d493aae484558a"
+      "sha256": "72d7e76e160dcd9118123c7daa104319165aaf6d6bab34516c55bc1c0e2dbf4f"
     },
     {
       "path": "data/pages.json",
-      "sha256": "407e4f20ecdbbcf94906e7640a12597863d837083ca81475561a3779088bea3f"
+      "sha256": "a7cde03647eb629a5fa79f2cc0876beb10bbfd5480736a54787eaf7c09058dbe"
     },
     {
       "path": "index.html",
-      "sha256": "2ec976448b1bba00632a60c29b0f75b368d1b1817fa9ed6fd6c241adff64ece1"
+      "sha256": "1811a6ddadaf7ef3f220a5210a3be13f5fe7879186c4943ba0a014438c129049"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "2a524d738252d45356d7bc6bc62050b125b7de20e20b0eaf1a70e70ae4c0d12e"
+      "sha256": "462c106296072b02275b37502e721517a7ff50e6aa81464700dd97f29cb0ff46"
     },
     {
       "path": "updates.html",
-      "sha256": "c9b30bfaadf910c022ad1d18d56fe0f6ab7f45057d70c2970cda8de2dc21bcea"
+      "sha256": "87ba7460724431bd1c70dfec95af0e3842b8d575516ea81b0e8d805dacca9628"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "c87c1a89d3cef6008b93a8eb125a2cf4490b096767c8ea597a65ab2da8d148a6",
+      "content_sha256": "0640c234eb3a903d344d3b79a0d4162adc96313787dde0d1b2bec138bd6b3b9b",
       "path": "index.html",
-      "sha256": "2ec976448b1bba00632a60c29b0f75b368d1b1817fa9ed6fd6c241adff64ece1",
+      "sha256": "1811a6ddadaf7ef3f220a5210a3be13f5fe7879186c4943ba0a014438c129049",
       "url": "/"
     },
     {
-      "content_sha256": "7e24c76dd35cab4b190eee68225d55fb4405b1e3ab4f3e8827fadc0f1105775c",
+      "content_sha256": "c89f1f2fbea80c91364f41a72362072d694b9acd2aa44f5ad34def62f0af2e09",
       "path": "updates.html",
-      "sha256": "c9b30bfaadf910c022ad1d18d56fe0f6ab7f45057d70c2970cda8de2dc21bcea",
+      "sha256": "87ba7460724431bd1c70dfec95af0e3842b8d575516ea81b0e8d805dacca9628",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "3caea15accd2ac8b831476f5729734bedc3eddc77e0dbed98955109bae74eaf5",
+      "content_sha256": "ddc5d56aa06fdabe0044e340f960c09c7745aafd2bdc85a5f9562efee502acc3",
       "path": "c034.html",
-      "sha256": "da2682a65e1e40a75177b5b6878fa73a4723583047e2283af2c62baa385286f4",
+      "sha256": "51f2877c47d4d6f6adfc3c2add8bb09404db265814157e30ca8bd36af864d67e",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "79c9c30ebcda0ee861f17013af3f98f1ea0c794d1b15c782d690b5789494f639",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "43a64b8be8ac23862f4b868538daf239565548fd8e18e4cbdc884b28427b41c1",
+      "path": "blog/20261025-kakezuka-lighthouse-reading/index.html",
+      "sha256": "487d06096707c06d384509ca16117aa66ad91a7cfe8143deda5f08ec335412a8",
+      "url": "/blog/20261025-kakezuka-lighthouse-reading"
     },
     {
       "content_sha256": "1611d3fda53f55a6ca5d7650d6bd1956238d32ffc5cb53964a6752fb0465bdfa",
@@ -826,23 +832,17 @@
       "path": "blog/20260901-mitsuke-tenjin-hadaka-matsuri-2026/index.html",
       "sha256": "8142355d7538ef78b13b44ea12949faec883d2df577cacfdcb9d1d37bfd03ef1",
       "url": "/blog/20260901-mitsuke-tenjin-hadaka-matsuri-2026"
-    },
-    {
-      "content_sha256": "7f2883df69cb1b09a3df49b6169bc76b302d67e428684978945388237af5559f",
-      "path": "blog/20260901-showa-100-iwata-map/index.html",
-      "sha256": "5705d6c7505ad4f9480bc540166f9315b982c141622954f0b2050b2b306ab217",
-      "url": "/blog/20260901-showa-100-iwata-map"
     }
   ],
   "schema": 1,
-  "state_hash": "d38e7b8c0f53dc630d6c8b7790eda2e358f7c952cab1f12bb381032353d379b3",
+  "state_hash": "00f5698cad4c33ba158bb875e837a39dc7092f71344e69a3987359c8170afb00",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1117,
-    "new_articles": 1272,
-    "new_articles_sha256": "9ae9694f7e1644c5d919f9cb3a156860dffc3091c351c88464d493aae484558a",
-    "pages_sha256": "407e4f20ecdbbcf94906e7640a12597863d837083ca81475561a3779088bea3f",
-    "pages_total": 1185,
-    "published_pages": 1184
+    "new_articles": 1273,
+    "new_articles_sha256": "72d7e76e160dcd9118123c7daa104319165aaf6d6bab34516c55bc1c0e2dbf4f",
+    "pages_sha256": "a7cde03647eb629a5fa79f2cc0876beb10bbfd5480736a54787eaf7c09058dbe",
+    "pages_total": 1186,
+    "published_pages": 1185
   }
 }
