@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1792915699,
-  "generation": 20261025170819,
-  "git_commit_at_stamp": "b39fdea84a4546ab05d043bc936766bccaf16e29",
+  "generated_at_unix": 1792919736,
+  "generation": 20261025181536,
+  "git_commit_at_stamp": "1d92882b7c653a8727363e43a584a3c77c95b3f1",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,7 +35,7 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "5df32875c7344256844c179cdc32b58dbee7a559a5c64d6540e39d5e1483bb6c"
+      "sha256": "eee8a064bff89d449cafc7683a2416953534aa910544a30665c80c10cb544722"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "17c7a966c8593b64aa7a99328663a29ec54ba5fe0a9fd40d3703d778005a7af3"
+      "sha256": "20d625100e678b17029f0193095ca53baf25a05efc845bcbb97a4c59d4162f75"
     },
     {
       "path": "package.json",
@@ -67,20 +67,20 @@
     },
     {
       "path": "updates.html",
-      "sha256": "ecb8cfe7e1294739c6c8f3f25272921c388231658b170f6ab3b5361a3561f8bd"
+      "sha256": "69669ba9198786a2932a55c5846b7d3be2ab3b2ebd004fd0bf1df265c121fc1d"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "8695e60d83af0b5013bb816dd3beb08fbcc7ffeefa2568fd534dfc650926a02b",
+      "content_sha256": "d883fb5b3c771d6339bd4cf75837d37c7d1ba4f3af8d8c7d158dbcf53f98b2c4",
       "path": "index.html",
-      "sha256": "17c7a966c8593b64aa7a99328663a29ec54ba5fe0a9fd40d3703d778005a7af3",
+      "sha256": "20d625100e678b17029f0193095ca53baf25a05efc845bcbb97a4c59d4162f75",
       "url": "/"
     },
     {
-      "content_sha256": "2048648e9912dd7c953fe017cb0aad4e9f0392a16d58ffe03644d20ccecbdd46",
+      "content_sha256": "312260b32dea13f8d9e968387ac837bd3f93d7d8ab35a5033984c0656ba4102d",
       "path": "updates.html",
-      "sha256": "ecb8cfe7e1294739c6c8f3f25272921c388231658b170f6ab3b5361a3561f8bd",
+      "sha256": "69669ba9198786a2932a55c5846b7d3be2ab3b2ebd004fd0bf1df265c121fc1d",
       "url": "/updates.html"
     },
     {
@@ -144,9 +144,9 @@
       "url": "/s025.html"
     },
     {
-      "content_sha256": "5d7bc806045f857c9191ee35da1325d0127b15fc990316fcd35ce736cfa7a816",
+      "content_sha256": "9c617f4e4348b62eff3029fbe36a1fba2a884e095405b059123fc5b40fe7e690",
       "path": "c006.html",
-      "sha256": "0db00662b7a175b3bd9eac4a81df03e2579e5499ed340dfacaf383261af1f8a0",
+      "sha256": "17fe06110a65db5f42a62d918d1ddb978030dd9341d173e35e39a6d6520fce59",
       "url": "/c006"
     },
     {
@@ -342,9 +342,9 @@
       "url": "/blog/20261013-kokudaka-harvest-difference"
     },
     {
-      "content_sha256": "5d7bc806045f857c9191ee35da1325d0127b15fc990316fcd35ce736cfa7a816",
+      "content_sha256": "9c617f4e4348b62eff3029fbe36a1fba2a884e095405b059123fc5b40fe7e690",
       "path": "c006.html",
-      "sha256": "0db00662b7a175b3bd9eac4a81df03e2579e5499ed340dfacaf383261af1f8a0",
+      "sha256": "17fe06110a65db5f42a62d918d1ddb978030dd9341d173e35e39a6d6520fce59",
       "url": "/c006.html"
     },
     {
@@ -829,12 +829,12 @@
     }
   ],
   "schema": 1,
-  "state_hash": "5ca5bbf10d2bc6747010d51467e5a102d14f544db1be321a638dd36bd67235cf",
+  "state_hash": "aeea8cb5126a7fa6804534ff4dd0f3a8b2a31bb7c72927c32d785efe472c2345",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1117,
     "new_articles": 1274,
-    "new_articles_sha256": "5df32875c7344256844c179cdc32b58dbee7a559a5c64d6540e39d5e1483bb6c",
+    "new_articles_sha256": "eee8a064bff89d449cafc7683a2416953534aa910544a30665c80c10cb544722",
     "pages_sha256": "b6c05ad49624b5bc6480b45afe9962fb70a293e287185b7c682d48f3f3c888ac",
     "pages_total": 1186,
     "published_pages": 1185

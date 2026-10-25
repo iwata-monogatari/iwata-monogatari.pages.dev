@@ -201,3 +201,45 @@ test('generated companion files are current: survey word list and karuta product
   assert.equal(sheet.trim().split('\r\n').length, COUNT + 1);
   assert.ok(sheet.startsWith('﻿id,語,読み,分類,頭の字,読み札（作例）,絵の場面,alt,'));
 });
+
+test('mamettai keeps its example and paper beside one semantic four-sense table in initial HTML', () => {
+  const entry = json.entries.find(e => e.id === 'mamettai');
+  const markup = block().split('<div class="entry" id="w-まめったい"')[1].split('<div class="entry"')[0];
+  assert.equal((block().match(/<table class="word-context">/g) || []).length, 1);
+  assert.deepEqual(entry.contextTable.rows.map(r => r.meaning), ['体を動かしてよく働く', '健康だ', '落ち着きがない', '性格的に几帳面だ']);
+  const rows = [...markup.matchAll(/<tr><th scope="row"><span class="txt">([^<]*)<\/span><\/th><td><span class="txt">([^<]*)<\/span><\/td><\/tr>/g)]
+    .map(m => ({ meaning: decode(m[1]), scene: decode(m[2]) }));
+  assert.deepEqual(rows, entry.contextTable.rows);
+  assert.match(markup, /<caption><span class="txt">「まめったい」4義の場面別整理<\/span><\/caption>/);
+  assert.equal((markup.match(/<th scope="col">/g) || []).length, 2);
+  assert.ok(markup.includes('あの子はまめったいで、よう手伝ってくれる。'));
+  assert.ok(markup.includes('あの子はまめだから、よく手伝ってくれる。'));
+  assert.ok(markup.includes(`href="${entry.reference.url}"`));
+  assert.match(entry.n, /編集上の整理.*採集用例ではありません/);
+  assert.match(entry.n, /判断できなければ話し手へ意味を確認/);
+  assert.match(entry.n, /年齢だけで判定する資料ではありません/);
+});
+
+test('context table content is escaped, searchable and rejected when rows or source are incomplete', async () => {
+  const { renderEntry, renderData, validateDictionary } = await generator;
+  const entry = structuredClone(json.entries.find(e => e.id === 'mamettai'));
+  const value = ' &<>"\'〜／ぁ\n';
+  entry.contextTable = { caption: value, rows: [{ meaning: value, scene: value }] };
+  const markup = renderEntry(entry, { headChar: 'ま' });
+  assert.ok(!markup.includes(value));
+  const cells = [...markup.matchAll(/<span class="txt">([^<]*)<\/span>/g)].slice(-3).map(m => decode(m[1]));
+  assert.deepEqual(cells, [value, value, value]);
+  const data = vm.runInNewContext(`${renderData([entry])}; JSON.stringify(DATA)`);
+  assert.deepEqual(JSON.parse(data)[0].contextTable, entry.contextTable);
+  assert.match(html, /rest: normalize\([^\n]*d\.contextTable\.rows\.map/);
+  for (const mutate of [
+    e => { e.contextTable.rows = []; },
+    e => { e.contextTable.rows[0].scene = ''; },
+    e => { e.contextTable.rows.push(e.contextTable.rows[0]); },
+    e => { e.contextTable.caption = ''; },
+    e => { delete e.reference; },
+  ]) {
+    const doc = structuredClone(json); mutate(doc.entries.find(e => e.id === 'mamettai'));
+    assert.throws(() => validateDictionary(doc), /contextTable/);
+  }
+});

@@ -90,6 +90,17 @@ export function validateDictionary(json, { articleTitles = null } = {}) {
         if (!articleTitles.has(a)) throw new Error(`Article is not a public search record: ${a} (${e.w})`);
       }
     }
+    if ('contextTable' in e) {
+      const table = e.contextTable;
+      if (!table || !isNonEmptyString(table.caption) || !Array.isArray(table.rows) || !table.rows.length ||
+          table.rows.some(row => !row || !isNonEmptyString(row.meaning) || !isNonEmptyString(row.scene)) ||
+          new Set(table.rows.map(row => row.meaning)).size !== table.rows.length) {
+        throw new Error(`contextTable needs a caption and unique, non-empty meaning/scene rows: ${e.w}`);
+      }
+      if (!e.reference || !isNonEmptyString(e.reference.title) || !/^https:\/\//.test(e.reference.url || '')) {
+        throw new Error(`contextTable needs a named https reference: ${e.w}`);
+      }
+    }
     if (!e.karuta || !isNonEmptyString(e.karuta.scene)) throw new Error(`karuta.scene is required: ${e.w}`);
     if ('alt' in e.karuta && !isNonEmptyString(e.karuta.alt)) throw new Error(`karuta.alt must be non-empty: ${e.w}`);
   }
@@ -166,6 +177,14 @@ export function renderEntry(e, { ready = false, headChar, articleTitles = null }
           <span class="src-badges">${e.sources.map(s => `<span class="src-badge src-${escapeHtml(s.type)}" title="${escapeHtml(sourceText(s))}">${escapeHtml(SOURCE_TYPES[s.type].label)}</span>`).join('')}</span>` : '';
   const note = e.n ? `
         <p class="note-word"><span class="label">解説</span><span class="txt">${escapeHtml(e.n)}</span>${e.reference ? ` <a href="${escapeHtml(e.reference.url)}">${escapeHtml(e.reference.title)}</a>（2026年10月25日確認）` : ''}</p>` : '';
+  const context = e.contextTable ? `
+        <table class="word-context">
+          <caption><span class="txt">${escapeHtml(e.contextTable.caption)}</span></caption>
+          <thead><tr><th scope="col">論文に挙げられた意味</th><th scope="col">場面を確かめる手がかり（編集上の整理）</th></tr></thead>
+          <tbody>${e.contextTable.rows.map(row => `
+            <tr><th scope="row"><span class="txt">${escapeHtml(row.meaning)}</span></th><td><span class="txt">${escapeHtml(row.scene)}</span></td></tr>`).join('')}
+          </tbody>
+        </table>` : '';
   const sources = e.sources.length ? `
         <p class="word-src"><span class="label">資料</span>${e.sources.map(s => s.url
     ? `<a href="${escapeHtml(s.url)}" rel="noopener">${escapeHtml(sourceText(s))}</a>`
@@ -189,7 +208,7 @@ ${karuta}
         <div class="ex">
           <span class="label">使用例</span><span class="example">${escapeHtml(e.ex)}</span>
           <span class="std">＝ ${escapeHtml(e.std)}</span>
-        </div>${note}${sources}${articles}
+        </div>${note}${context}${sources}${articles}
       </div>
     </div>`;
 }
@@ -208,7 +227,7 @@ export function renderEntries(entries, { sortKey, ready = new Set(), articleTitl
     .join('\n');
 }
 
-const JS_FIELDS = ['id', ...FIELDS, ...OPTIONAL_FIELDS];
+const JS_FIELDS = ['id', ...FIELDS, ...OPTIONAL_FIELDS, 'contextTable'];
 export function renderData(entries) {
   // ページの検索・絞り込みが使う項目だけを、元の並び（JSONの並び）で書き出す。
   const lines = entries.map(e => '  ' + JSON.stringify(Object.fromEntries(JS_FIELDS.filter(f => f in e).map(f => [f, e[f]]))).replace(/</g, '\\u003c'));

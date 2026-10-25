@@ -180,6 +180,18 @@
   .entry.flash{animation:c006flash 1.6s ease;}
   @keyframes c006flash{0%,40%{border-color:var(--brown);box-shadow:0 0 0 4px rgba(47,127,163,.2);}100%{}}
   .wordtable td:first-child{white-space:nowrap;font-weight:700;}
+  /* 場面の整理表は静的一覧と絵札の詳細で共用する。 */
+  .word-context{width:100%;table-layout:fixed;border-collapse:collapse;margin:16px 0 0;font-size:14px;line-height:1.8;overflow-wrap:anywhere;}
+  .word-context caption{text-align:left;font-weight:700;color:var(--brown-deep);margin-bottom:8px;}
+  .word-context th,.word-context td{padding:9px 10px;border:1px solid var(--line);text-align:left;vertical-align:top;}
+  .word-context thead th{background:var(--paper-deep);}
+  .word-context th:first-child{width:40%;}
+  .word-context tbody th{font-weight:500;}
+  @media(max-width:520px){
+    .karuta-lightbox:has(.word-context) .lightbox-content{grid-template-columns:minmax(0,1fr);}
+    .karuta-lightbox:has(.word-context) .lightbox-content>figure{max-width:96px;}
+    .word-context th,.word-context td{padding:7px;}
+  }
   /* ▼ 2026-10-12 拡充（かるた絵札・資料の印・読者調査） */
   .entry{position:relative;display:grid;grid-template-columns:92px minmax(0,1fr);gap:0 22px;align-items:start;}
   .entry .word-anchor{position:absolute;top:0;left:0;width:1px;height:1px;scroll-margin-top:16px;}
@@ -254,7 +266,7 @@
   .dict.karuta-view .ex{font-size:13.5px;padding:10px 12px;}
   .dict.karuta-view .ex .std{font-size:12.5px;}
   .dict.karuta-view .kana,.dict.karuta-view .cat,.dict.karuta-view .src-badges,
-  .dict.karuta-view .note-word,.dict.karuta-view .word-src,.dict.karuta-view .word-links,.dict.karuta-view .survey{display:none;}
+  .dict.karuta-view .note-word,.dict.karuta-view .word-context,.dict.karuta-view .word-src,.dict.karuta-view .word-links,.dict.karuta-view .survey{display:none;}
   .dict.karuta-view .empty{grid-column:1/-1;}
   .karuta-credit{font-size:12.5px;color:var(--ink-soft);margin:8px 0 0;line-height:1.75;}
   @media(max-width:760px){
@@ -4223,7 +4235,17 @@
           <span class="label">使用例</span><span class="example">あの子はまめったいで、よう手伝ってくれる。</span>
           <span class="std">＝ あの子はまめだから、よく手伝ってくれる。</span>
         </div>
-        <p class="note-word"><span class="label">解説</span><span class="txt">「褒め言葉か」は一つに決まりません。2023年の研究論文は、静岡方言の「まめったい」に、体を動かしてよく働く・健康だ・落ち着きがない・性格的に几帳面だ、という4義を挙げています。読み分けでは、仕事ぶり、体調、動作の落ち着き、物事の整え方のどれを評しているかを確かめます。この場面整理は論文の4義に基づく編集上の整理で、方言の採集用例ではありません。語だけで肯定・否定を決めず、判断できなければ話し手へ意味を確認します。調査は静岡方言を母方言とする1,544名を対象とし、短文作成は852名の回答です。現在の磐田市全域の使用率や、個人の意味を年齢だけで判定する資料ではありません。</span> <a href="https://anlp.jp/proceedings/annual_meeting/2023/pdf_dir/D4-4.pdf">峯尾海成ほか「回答者の生年に基づく語の意味変化の検出」（2023年、947・949–950頁）</a>（2026年10月25日確認）</p>
+        <p class="note-word"><span class="label">解説</span><span class="txt">「褒め言葉か」は一つに決まりません。2023年の研究論文は、静岡方言の「まめったい」に4つの意味を挙げています。下表の場面は論文の4義に基づく編集上の整理で、方言の採集用例ではありません。語だけで肯定・否定を決めず、判断できなければ話し手へ意味を確認します。調査は静岡方言を母方言とする1,544名を対象とし、短文作成は852名の回答です。現在の磐田市全域の使用率や、個人の意味を年齢だけで判定する資料ではありません。</span> <a href="https://anlp.jp/proceedings/annual_meeting/2023/pdf_dir/D4-4.pdf">峯尾海成ほか「回答者の生年に基づく語の意味変化の検出」（2023年、947・949–950頁）</a>（2026年10月25日確認）</p>
+        <table class="word-context">
+          <caption><span class="txt">「まめったい」4義の場面別整理</span></caption>
+          <thead><tr><th scope="col">論文に挙げられた意味</th><th scope="col">場面を確かめる手がかり（編集上の整理）</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><span class="txt">体を動かしてよく働く</span></th><td><span class="txt">仕事や手伝いなど、働きぶりを評している場面。</span></td></tr>
+            <tr><th scope="row"><span class="txt">健康だ</span></th><td><span class="txt">体調や元気さなど、体の状態を話している場面。</span></td></tr>
+            <tr><th scope="row"><span class="txt">落ち着きがない</span></th><td><span class="txt">動きや振る舞いについて、落ち着きのなさを評している場面。</span></td></tr>
+            <tr><th scope="row"><span class="txt">性格的に几帳面だ</span></th><td><span class="txt">整理や物事の整え方など、性格を評している場面。</span></td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
     <div class="entry" id="w-みるい" data-id="mirui">
@@ -4733,7 +4755,7 @@
     <li><time datetime="2026-10-12">2026年10月12日</time> 遠州弁かるたの絵札について、学校・公民館などでの非営利の利用を出典明記で自由とし、営利での利用は事前相談とする利用条件を掲げた。</li>
     <li><time datetime="2026-10-12">2026年10月12日</time> 絵札一覧の画像を小さくし、以前からある意味・使用例・標準語訳を併記。絵札を開いた画面にも同じ文例・解説・資料を表示するよう改めた。</li>
     <li><time datetime="2026-10-13">2026年10月13日</time> 狭い画面で文字を拡大した際の、分類名と絵札の利用案内の折り返しを調整した。122語・資料・絵札は保持。</li>
-    <li><time datetime="2026-10-25">2026年10月25日</time> 「まめったい」の4義と場面の読み分け、調査対象の範囲、原論文への導線を追加した。既存作例は保持。</li>
+    <li><time datetime="2026-10-25">2026年10月25日</time> 「まめったい」の4義を場面別の整理表にし、読み分けの注意と調査対象の範囲、原論文への導線を掲げた。既存作例は保持。</li>
   </ul>
 </section>
 </div>
@@ -4848,7 +4870,7 @@ const DATA = [
   {"id":"oobottai","w":"おおぼったい","k":"おおぼったい","cat":"形容・ようす","m":"（まぶたなどが）重い、腫れぼったい。","ex":"寝不足で目がおおぼったい。","std":"寝不足で目が腫れぼったい。","n":"「〜ったい」で終わる形容詞は静岡方言に多く、「やぶせったい」「ぶしょったい」と同じ型である。","syn":"腫れぼったい 重い まぶた"},
   {"id":"senshottai","w":"せんしょったい","k":"せんしょったい","cat":"形容・ようす","m":"詮索好きだ、人のことに首を突っこみたがる。","ex":"せんしょったいこと聞かんどいて。","std":"詮索するようなことは聞かないでおいて。","syn":"詮索好き おせっかい"},
   {"id":"tonjakanai","w":"とんじゃかない","k":"とんじゃかない","cat":"形容・ようす","m":"頓着しない、気にしない、無頓着だ。","ex":"あの人は服装にはとんじゃかないでね。","std":"あの人は服装には無頓着だからね。","syn":"無頓着 気にしない"},
-  {"id":"mamettai","w":"まめったい","k":"まめったい","cat":"形容・ようす","m":"まめだ、労をいとわずよく働く、こまめだ。","ex":"あの子はまめったいで、よう手伝ってくれる。","std":"あの子はまめだから、よく手伝ってくれる。","n":"「褒め言葉か」は一つに決まりません。2023年の研究論文は、静岡方言の「まめったい」に、体を動かしてよく働く・健康だ・落ち着きがない・性格的に几帳面だ、という4義を挙げています。読み分けでは、仕事ぶり、体調、動作の落ち着き、物事の整え方のどれを評しているかを確かめます。この場面整理は論文の4義に基づく編集上の整理で、方言の採集用例ではありません。語だけで肯定・否定を決めず、判断できなければ話し手へ意味を確認します。調査は静岡方言を母方言とする1,544名を対象とし、短文作成は852名の回答です。現在の磐田市全域の使用率や、個人の意味を年齢だけで判定する資料ではありません。","syn":"まめ 働き者 こまめ 勤勉"},
+  {"id":"mamettai","w":"まめったい","k":"まめったい","cat":"形容・ようす","m":"まめだ、労をいとわずよく働く、こまめだ。","ex":"あの子はまめったいで、よう手伝ってくれる。","std":"あの子はまめだから、よく手伝ってくれる。","n":"「褒め言葉か」は一つに決まりません。2023年の研究論文は、静岡方言の「まめったい」に4つの意味を挙げています。下表の場面は論文の4義に基づく編集上の整理で、方言の採集用例ではありません。語だけで肯定・否定を決めず、判断できなければ話し手へ意味を確認します。調査は静岡方言を母方言とする1,544名を対象とし、短文作成は852名の回答です。現在の磐田市全域の使用率や、個人の意味を年齢だけで判定する資料ではありません。","syn":"まめ 働き者 こまめ 勤勉","contextTable":{"caption":"「まめったい」4義の場面別整理","rows":[{"meaning":"体を動かしてよく働く","scene":"仕事や手伝いなど、働きぶりを評している場面。"},{"meaning":"健康だ","scene":"体調や元気さなど、体の状態を話している場面。"},{"meaning":"落ち着きがない","scene":"動きや振る舞いについて、落ち着きのなさを評している場面。"},{"meaning":"性格的に几帳面だ","scene":"整理や物事の整え方など、性格を評している場面。"}]}},
   {"id":"nansho","w":"なんしょ","k":"なんしょ","cat":"程度・量","m":"やたらに、むやみに。","ex":"なんしょ買ってきても食べきれんに。","std":"やたらに買ってきても食べきれないよ。","syn":"やたら むやみに"},
   {"id":"oen","w":"おえん","k":"おえん","cat":"気持ち","m":"だめだ、いけない、手に負えない。「いかん」と近い。","ex":"こりゃもう、おえんわ。","std":"これはもう、だめだよ。","syn":"だめ いけない 手に負えない"},
   {"id":"aotaeru","w":"あおたえる","k":"あおたえる","cat":"動作・行い","m":"うろたえる、慌てる。","ex":"急に呼ばれて、あおたえちゃった。","std":"急に呼ばれて、うろたえてしまった。","syn":"うろたえる 慌てる"},
@@ -4886,7 +4908,7 @@ const entryEls = new Map(Array.from(dictEl.querySelectorAll(".entry"), entry =>
   [entry.querySelector(".word").textContent, entry]
 ));
 const BY_WORD = new Map(DATA.map(d=>[d.w,d]));
-const HL_SELECTORS = [".word",".kana",".mean",".example",".std",".note-word .txt"];
+const HL_SELECTORS = [".word",".kana",".mean",".example",".std",".note-word .txt",".word-context .txt"];
 entryEls.forEach(entry=>{
   const note = entry.querySelector(".note-word");
   if (note && !note.querySelector(".txt")) {
@@ -4898,7 +4920,7 @@ entryEls.forEach(entry=>{
     if (label) note.appendChild(label);
     note.appendChild(span);
   }
-  HL_SELECTORS.forEach(sel=>{ const el = entry.querySelector(sel); if (el) el.dataset.raw = el.textContent; });
+  HL_SELECTORS.forEach(sel=>entry.querySelectorAll(sel).forEach(el=>{ el.dataset.raw = el.textContent; }));
 });
 const emptyEl = document.createElement("div");
 emptyEl.className = "empty";
@@ -4945,7 +4967,7 @@ const INDEX = DATA.map(d=>({
   head: [d.w, ...d.k.split(/[／/]/u)].map(normalize),
   syn: normalize(d.syn||""),
   mean: normalize(d.m+" "+d.std),
-  rest: normalize(d.ex+" "+(d.n||"")+" "+d.cat),
+  rest: normalize(d.ex+" "+(d.n||"")+" "+(d.contextTable ? d.contextTable.rows.map(row=>row.meaning+" "+row.scene).join(" ") : "")+" "+d.cat),
   row: normalize(dictionarySortKey(d.k)).charAt(0)
 }));
 
@@ -4993,8 +5015,7 @@ function render(){
   entryEls.forEach((entry, word)=>{
     entry.hidden = !visible.has(word);
     if (!entry.hidden) HL_SELECTORS.forEach(sel=>{
-      const el = entry.querySelector(sel);
-      if (el) el.innerHTML = highlight(el.dataset.raw, rawTerms);
+      entry.querySelectorAll(sel).forEach(el=>{ el.innerHTML = highlight(el.dataset.raw, rawTerms); });
     });
   });
   // 並び順：検索中は関連度順、そうでなければ五十音順
