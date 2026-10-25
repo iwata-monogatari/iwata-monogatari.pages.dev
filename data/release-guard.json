@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1792886203,
-  "generation": 20261025085643,
-  "git_commit_at_stamp": "cd5d47753a832782b57fd05c43dd4caba0c999d8",
+  "generated_at_unix": 1792915699,
+  "generation": 20261025170819,
+  "git_commit_at_stamp": "b39fdea84a4546ab05d043bc936766bccaf16e29",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,15 +35,15 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "72d7e76e160dcd9118123c7daa104319165aaf6d6bab34516c55bc1c0e2dbf4f"
+      "sha256": "5df32875c7344256844c179cdc32b58dbee7a559a5c64d6540e39d5e1483bb6c"
     },
     {
       "path": "data/pages.json",
-      "sha256": "a7cde03647eb629a5fa79f2cc0876beb10bbfd5480736a54787eaf7c09058dbe"
+      "sha256": "b6c05ad49624b5bc6480b45afe9962fb70a293e287185b7c682d48f3f3c888ac"
     },
     {
       "path": "index.html",
-      "sha256": "1811a6ddadaf7ef3f220a5210a3be13f5fe7879186c4943ba0a014438c129049"
+      "sha256": "17c7a966c8593b64aa7a99328663a29ec54ba5fe0a9fd40d3703d778005a7af3"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "462c106296072b02275b37502e721517a7ff50e6aa81464700dd97f29cb0ff46"
+      "sha256": "3aaed2c3c19266b242cbd7cfdca5ffe03fb734853dcde305e0c79ecf2c32962f"
     },
     {
       "path": "updates.html",
-      "sha256": "87ba7460724431bd1c70dfec95af0e3842b8d575516ea81b0e8d805dacca9628"
+      "sha256": "ecb8cfe7e1294739c6c8f3f25272921c388231658b170f6ab3b5361a3561f8bd"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "0640c234eb3a903d344d3b79a0d4162adc96313787dde0d1b2bec138bd6b3b9b",
+      "content_sha256": "8695e60d83af0b5013bb816dd3beb08fbcc7ffeefa2568fd534dfc650926a02b",
       "path": "index.html",
-      "sha256": "1811a6ddadaf7ef3f220a5210a3be13f5fe7879186c4943ba0a014438c129049",
+      "sha256": "17c7a966c8593b64aa7a99328663a29ec54ba5fe0a9fd40d3703d778005a7af3",
       "url": "/"
     },
     {
-      "content_sha256": "c89f1f2fbea80c91364f41a72362072d694b9acd2aa44f5ad34def62f0af2e09",
+      "content_sha256": "2048648e9912dd7c953fe017cb0aad4e9f0392a16d58ffe03644d20ccecbdd46",
       "path": "updates.html",
-      "sha256": "87ba7460724431bd1c70dfec95af0e3842b8d575516ea81b0e8d805dacca9628",
+      "sha256": "ecb8cfe7e1294739c6c8f3f25272921c388231658b170f6ab3b5361a3561f8bd",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "79c9c30ebcda0ee861f17013af3f98f1ea0c794d1b15c782d690b5789494f639",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "5d7bc806045f857c9191ee35da1325d0127b15fc990316fcd35ce736cfa7a816",
+      "path": "c006.html",
+      "sha256": "0db00662b7a175b3bd9eac4a81df03e2579e5499ed340dfacaf383261af1f8a0",
+      "url": "/c006"
     },
     {
       "content_sha256": "43a64b8be8ac23862f4b868538daf239565548fd8e18e4cbdc884b28427b41c1",
@@ -336,9 +342,9 @@
       "url": "/blog/20261013-kokudaka-harvest-difference"
     },
     {
-      "content_sha256": "beb502f2f13f4d9759c248efebba352573a39ea36acb8df6c77dd778b7455bbe",
+      "content_sha256": "5d7bc806045f857c9191ee35da1325d0127b15fc990316fcd35ce736cfa7a816",
       "path": "c006.html",
-      "sha256": "c025572fa09d5bdbe8dbcd0f841459fc2ee2f3cb4069a28d3c3a78a6d912e02b",
+      "sha256": "0db00662b7a175b3bd9eac4a81df03e2579e5499ed340dfacaf383261af1f8a0",
       "url": "/c006.html"
     },
     {
@@ -382,12 +388,6 @@
       "path": "blog/20261012-local-history-reading-circle/index.html",
       "sha256": "cca2c27ddf5657a21d59e46b012ee23ae6b00e6e4457c65665dcf9a0c9610c55",
       "url": "/blog/20261012-local-history-reading-circle"
-    },
-    {
-      "content_sha256": "beb502f2f13f4d9759c248efebba352573a39ea36acb8df6c77dd778b7455bbe",
-      "path": "c006.html",
-      "sha256": "c025572fa09d5bdbe8dbcd0f841459fc2ee2f3cb4069a28d3c3a78a6d912e02b",
-      "url": "/c006"
     },
     {
       "content_sha256": "c2ba8cc54454a7b08b02f85a7eac36373d9dc7ff698495fa1301792b3a32ddb2",
@@ -826,22 +826,16 @@
       "path": "blog/20260902-nakahara-b-kofun-exhibition/index.html",
       "sha256": "1aacc15127fed610fc3dbde8030048284921e8d3c5bcf54502717a085e0aca98",
       "url": "/blog/20260902-nakahara-b-kofun-exhibition"
-    },
-    {
-      "content_sha256": "3ff37c52cef1537db829757185085d094e1ac859964e4e2f76b1e6c180f0197b",
-      "path": "blog/20260901-mitsuke-tenjin-hadaka-matsuri-2026/index.html",
-      "sha256": "8142355d7538ef78b13b44ea12949faec883d2df577cacfdcb9d1d37bfd03ef1",
-      "url": "/blog/20260901-mitsuke-tenjin-hadaka-matsuri-2026"
     }
   ],
   "schema": 1,
-  "state_hash": "00f5698cad4c33ba158bb875e837a39dc7092f71344e69a3987359c8170afb00",
+  "state_hash": "5ca5bbf10d2bc6747010d51467e5a102d14f544db1be321a638dd36bd67235cf",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1117,
-    "new_articles": 1273,
-    "new_articles_sha256": "72d7e76e160dcd9118123c7daa104319165aaf6d6bab34516c55bc1c0e2dbf4f",
-    "pages_sha256": "a7cde03647eb629a5fa79f2cc0876beb10bbfd5480736a54787eaf7c09058dbe",
+    "new_articles": 1274,
+    "new_articles_sha256": "5df32875c7344256844c179cdc32b58dbee7a559a5c64d6540e39d5e1483bb6c",
+    "pages_sha256": "b6c05ad49624b5bc6480b45afe9962fb70a293e287185b7c682d48f3f3c888ac",
     "pages_total": 1186,
     "published_pages": 1185
   }

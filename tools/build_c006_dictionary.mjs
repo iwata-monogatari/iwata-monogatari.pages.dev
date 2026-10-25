@@ -165,7 +165,7 @@ export function renderEntry(e, { ready = false, headChar, articleTitles = null }
   const badges = e.sources.length ? `
           <span class="src-badges">${e.sources.map(s => `<span class="src-badge src-${escapeHtml(s.type)}" title="${escapeHtml(sourceText(s))}">${escapeHtml(SOURCE_TYPES[s.type].label)}</span>`).join('')}</span>` : '';
   const note = e.n ? `
-        <p class="note-word"><span class="label">解説</span>${escapeHtml(e.n)}</p>` : '';
+        <p class="note-word"><span class="label">解説</span><span class="txt">${escapeHtml(e.n)}</span>${e.reference ? ` <a href="${escapeHtml(e.reference.url)}">${escapeHtml(e.reference.title)}</a>（2026年10月25日確認）` : ''}</p>` : '';
   const sources = e.sources.length ? `
         <p class="word-src"><span class="label">資料</span>${e.sources.map(s => s.url
     ? `<a href="${escapeHtml(s.url)}" rel="noopener">${escapeHtml(sourceText(s))}</a>`
