@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1793062399,
-  "generation": 20261027095319,
-  "git_commit_at_stamp": "89bf71f6c39edb19f35b822587dfe6bf4fcf27bc",
+  "generated_at_unix": 1793094217,
+  "generation": 20261027184337,
+  "git_commit_at_stamp": "61cc591aae09e3fdcc3f9096aec68e8f13cfb0d1",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,11 +31,11 @@
     },
     {
       "path": "c034.html",
-      "sha256": "51f2877c47d4d6f6adfc3c2add8bb09404db265814157e30ca8bd36af864d67e"
+      "sha256": "ff6fed6f03032022065e7c3ff8a16443af6f6d80fb2ad4cad82b607b826dd884"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "eee8a064bff89d449cafc7683a2416953534aa910544a30665c80c10cb544722"
+      "sha256": "89e7bafbb7a5f48e7bd645a389b3b019cdb274df4c8eeb0f6bb29ce985fb6542"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "20d625100e678b17029f0193095ca53baf25a05efc845bcbb97a4c59d4162f75"
+      "sha256": "6fb68a53d8e91075c8bf26f82c05d166ca06a39bef96297cff8b512c5572597b"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "78010df67261027de3092fc0a6f872f5fba5010d4a7b645fe48fd333bb34e9f2"
+      "sha256": "938bd64fd043e447bd04083bcf5908a91f1b8d8f24dccfd5a4b7b17ddb66e4e8"
     },
     {
       "path": "updates.html",
-      "sha256": "5bd10253293a6dcd61048168ef6b14e3e0c50bb478cc400a254cf3727e8aa187"
+      "sha256": "d61b7147492583a096a1b9cb64667748379691cbbf9c00a74e55a5610371e666"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "d883fb5b3c771d6339bd4cf75837d37c7d1ba4f3af8d8c7d158dbcf53f98b2c4",
+      "content_sha256": "f6a9d89341c2e7fa9530874774e9fec0fdcf547ae7782f416638632485d04f9d",
       "path": "index.html",
-      "sha256": "20d625100e678b17029f0193095ca53baf25a05efc845bcbb97a4c59d4162f75",
+      "sha256": "6fb68a53d8e91075c8bf26f82c05d166ca06a39bef96297cff8b512c5572597b",
       "url": "/"
     },
     {
-      "content_sha256": "7ed0766255f4bcc47611d945635a19d7c1cdc0a13fd5eae5b45a88dee8954d8a",
+      "content_sha256": "831860f1377729bb077b65ad2911715f21931144da65b08e40a8e339b892e8e0",
       "path": "updates.html",
-      "sha256": "5bd10253293a6dcd61048168ef6b14e3e0c50bb478cc400a254cf3727e8aa187",
+      "sha256": "d61b7147492583a096a1b9cb64667748379691cbbf9c00a74e55a5610371e666",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "ddc5d56aa06fdabe0044e340f960c09c7745aafd2bdc85a5f9562efee502acc3",
+      "content_sha256": "26a2213240d391e5bfa42e81ce3f6dea411b99b6f978b5f6036154b998f5a34f",
       "path": "c034.html",
-      "sha256": "51f2877c47d4d6f6adfc3c2add8bb09404db265814157e30ca8bd36af864d67e",
+      "sha256": "ff6fed6f03032022065e7c3ff8a16443af6f6d80fb2ad4cad82b607b826dd884",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,18 @@
       "path": "s025.html",
       "sha256": "79c9c30ebcda0ee861f17013af3f98f1ea0c794d1b15c782d690b5789494f639",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "d1b65085f63a01e0a8ebf4b75931cf658ccdad23205598bf5047ec937ec4d8da",
+      "path": "blog/20261027-iwata-dialect-reading-route/index.html",
+      "sha256": "54771bce2876245e42431dfdc5120ae41407630929d2525131fed89ef684e4ea",
+      "url": "/blog/20261027-iwata-dialect-reading-route"
+    },
+    {
+      "content_sha256": "b3f63197fa97cd32b3dee2d6eb9ef912a1058ee7ab2ba41d2c16bc7d0c1ab011",
+      "path": "blog/20261026-iwata-old-tree-walk/index.html",
+      "sha256": "1e67daf01f3fe7eb13cedac804e971b062173cbe3317d2aae20171e0903fa002",
+      "url": "/blog/20261026-iwata-old-tree-walk"
     },
     {
       "content_sha256": "9c617f4e4348b62eff3029fbe36a1fba2a884e095405b059123fc5b40fe7e690",
@@ -366,9 +378,9 @@
       "url": "/c174.html"
     },
     {
-      "content_sha256": "a1ed082f7b343f1c0342b04e76f99d746e74bb0fa2c70732178b3e2f55493e67",
+      "content_sha256": "3ec977435682c60c3144bbeb4489d9c5ec29110a7571b5400c7ca5894eeff5f9",
       "path": "c175.html",
-      "sha256": "967677b11cc705ff73f9daecf1dfe3a4c29832ed1b1ce5edb69cfb29c308a397",
+      "sha256": "3b4b6e35b748e37a87a22d909fe94b7de5a2905ab29b4b34657084913ee198f6",
       "url": "/c175.html"
     },
     {
@@ -814,27 +826,15 @@
       "path": "blog/20260905-showa-elementary-school-exhibition/index.html",
       "sha256": "5937a5d5ffc7e9049de0620a73bd34aa4a2426b1215ebdfa686d4a1b1f0af751",
       "url": "/blog/20260905-showa-elementary-school-exhibition"
-    },
-    {
-      "content_sha256": "321b9f6391b4d1b7f9d7f8b8a5848b01b26de968bb60e189b8dec8b8b933eab0",
-      "path": "blog/20260905-totomi-kokubunji-2026/index.html",
-      "sha256": "5209a4161a2c3c96f97117149dc2b569c8f1b9d6c01aac1820d5295299f68349",
-      "url": "/blog/20260905-totomi-kokubunji-2026"
-    },
-    {
-      "content_sha256": "83a0a855fbf972643de88a009cb8e2dc8d95c30a9f14ce94a117f6d193e0b02e",
-      "path": "blog/20260902-nakahara-b-kofun-exhibition/index.html",
-      "sha256": "1aacc15127fed610fc3dbde8030048284921e8d3c5bcf54502717a085e0aca98",
-      "url": "/blog/20260902-nakahara-b-kofun-exhibition"
     }
   ],
   "schema": 1,
-  "state_hash": "9126a7ce165373dc81f5023defb7e9f32dcc5a0fdea80a3ae2e025c98407374d",
+  "state_hash": "e00b21219fc92bcf808cb95a94d243d80f2360a72d326ca3eecdc7c379efd4cc",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1117,
-    "new_articles": 1274,
-    "new_articles_sha256": "eee8a064bff89d449cafc7683a2416953534aa910544a30665c80c10cb544722",
+    "new_articles": 1276,
+    "new_articles_sha256": "89e7bafbb7a5f48e7bd645a389b3b019cdb274df4c8eeb0f6bb29ce985fb6542",
     "pages_sha256": "cc17d988af30fc95e2de6f31dc2aab8aa3763d67b7c920326ba1f79d368cfd50",
     "pages_total": 1186,
     "published_pages": 1185
