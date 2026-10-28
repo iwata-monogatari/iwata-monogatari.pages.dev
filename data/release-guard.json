@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1793198534,
-  "generation": 20261028234214,
-  "git_commit_at_stamp": "a56a3468b25c61d3778deb79a2b79cbccd35eb9f",
+  "generated_at_unix": 1793199450,
+  "generation": 20261028235730,
+  "git_commit_at_stamp": "3482d5a3ca432a87b0dee935d9e48c920df93dcf",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "cf5c3b36c21c2ec4bd1b1810d5833e3dd84178d44891c716ffe5b9f5835f4213"
+      "sha256": "f04844de5d64a1001aef48cef05a169980e996944b1dc4a4466d29d83957ffa5"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "5746821156f100a0e0bd1f5278bea3ff1b6d89f71ba4466f09d72fd6e8a20d61"
+      "sha256": "2821ae24b24f5e34838dfaf0b06b6c496741a0af6908f8f82c065c25f7607c9d"
     },
     {
       "path": "data/pages.json",
-      "sha256": "cc17d988af30fc95e2de6f31dc2aab8aa3763d67b7c920326ba1f79d368cfd50"
+      "sha256": "6fcb584975869fd0b7286eb7d349bd461ef4a4f56d0deff627e4f27a134f2848"
     },
     {
       "path": "index.html",
-      "sha256": "beb6dcac657bbcfd634d11ba88bafc842baa89f72d8ee19b2553018b3111942f"
+      "sha256": "c65ae1f16c41d742961cffe05b4e3c058be0ea6250fba0bcd2d652151ec596e9"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "f8de7260f2da242689b53195b7db0d279017cce7f90b8550379f5f9b72562a3f"
+      "sha256": "7b7170fb71baf3c9bbe47261a5225120be782c39b6cd8fbbaa62267f61740e2c"
     },
     {
       "path": "updates.html",
-      "sha256": "865555bd2393d33ac53a2c2c40d2f494350cf55b9ae73dbf3218348b465c09e1"
+      "sha256": "033b025a91533ce8449074334aab07dcce59450772ec19694b5b41bac2aa0050"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "e63641a199918c02bf0fed538e9dc0d345fa4c3c11e1eea75a9152f626ca55d2",
+      "content_sha256": "3bafda9e5ccf45213cfd256403c63b9b0b1ed52eb7a8e672da3403bf7f3331ff",
       "path": "index.html",
-      "sha256": "beb6dcac657bbcfd634d11ba88bafc842baa89f72d8ee19b2553018b3111942f",
+      "sha256": "c65ae1f16c41d742961cffe05b4e3c058be0ea6250fba0bcd2d652151ec596e9",
       "url": "/"
     },
     {
-      "content_sha256": "676eca20381d3c9e822be2ab18f507f502d92e84adbfec610175b1c191865d93",
+      "content_sha256": "537ce42125bc4cc44ffd70f4a115417fd2efa1a01474183c66bc3add3f004673",
       "path": "updates.html",
-      "sha256": "865555bd2393d33ac53a2c2c40d2f494350cf55b9ae73dbf3218348b465c09e1",
+      "sha256": "033b025a91533ce8449074334aab07dcce59450772ec19694b5b41bac2aa0050",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "7ff195998801c7e22c412d4c73231c8729f1a762c14623a10ff23221c8c7bc20",
+      "content_sha256": "70b709f34eb4c594b9a0a26324ae2cfa805637cba22982606e19fc08bdb2f04a",
       "path": "c034.html",
-      "sha256": "cf5c3b36c21c2ec4bd1b1810d5833e3dd84178d44891c716ffe5b9f5835f4213",
+      "sha256": "f04844de5d64a1001aef48cef05a169980e996944b1dc4a4466d29d83957ffa5",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "79c9c30ebcda0ee861f17013af3f98f1ea0c794d1b15c782d690b5789494f639",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "f8d6567ef2bfe3ec1529571e112e0c4fa94f60ff010e4df57f1624e1e7313df7",
+      "path": "blog/20261028-iwata-timber-reading/index.html",
+      "sha256": "527e327331a49f41076da3f5e0ecbaa29c9d2da5f905264d4b2492dc60d58c54",
+      "url": "/blog/20261028-iwata-timber-reading"
     },
     {
       "content_sha256": "61a693b6848096db358d80097837d29bbcc8ea3d3e11e106fa66adb897785c6c",
@@ -820,23 +826,17 @@
       "path": "blog/20260906-iwata-hospital-history/index.html",
       "sha256": "1abeb5bed00c8856435ded3e17307d57c966b09213dc02cc7355f69c5cb87c4b",
       "url": "/blog/20260906-iwata-hospital-history"
-    },
-    {
-      "content_sha256": "d56c9413da46ef50c69bdc914e998657a44fce3ea7a3b3cff2fb979e8c417578",
-      "path": "blog/20260906-iwata-bousai-kunren-tonankai/index.html",
-      "sha256": "c4a6ffafb7bd9e5fbce5ede05ea1cc4c5de8e412c875e6c6043949384d614ac0",
-      "url": "/blog/20260906-iwata-bousai-kunren-tonankai"
     }
   ],
   "schema": 1,
-  "state_hash": "24acfba28b09d1b56b41dc1bcc4e0ae73ff0041c8605b3a47cdb861bec7346f5",
+  "state_hash": "60c62fe36cfe323fa1b155abf4e4bb3a4045ee30dc009d4862e839d78e6df26d",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1117,
-    "new_articles": 1277,
-    "new_articles_sha256": "5746821156f100a0e0bd1f5278bea3ff1b6d89f71ba4466f09d72fd6e8a20d61",
-    "pages_sha256": "cc17d988af30fc95e2de6f31dc2aab8aa3763d67b7c920326ba1f79d368cfd50",
-    "pages_total": 1186,
-    "published_pages": 1185
+    "new_articles": 1278,
+    "new_articles_sha256": "2821ae24b24f5e34838dfaf0b06b6c496741a0af6908f8f82c065c25f7607c9d",
+    "pages_sha256": "6fcb584975869fd0b7286eb7d349bd461ef4a4f56d0deff627e4f27a134f2848",
+    "pages_total": 1187,
+    "published_pages": 1186
   }
 }
