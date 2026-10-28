@@ -271,6 +271,7 @@
   ]
 }
 </script>
+<link rel="stylesheet" href="/assets/css/emaki-v5.css">
 </head>
 <body>
 
@@ -305,41 +306,43 @@
   <p class="lead">天竜地区の暮らしは、つねに「水」とともにあった。豊かな水は田を潤し、舟運や砂利、伏流水の恵みをもたらした。一方で、堤防が切れれば一帯が水に浸かる低地でもある。恵みと怖さは、別々のものではなく、同じ川の二つの顔である。本稿では、地図に残る地形の痕跡を出発点に、なぜここに集落ができたのかを考え、そのうえで将来の防災・農地・空き家・記憶継承の課題を、断定を避けながら整理したい。</p>
 
   <figure class="hero">
-    <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="天竜川と低地の集落の模式断面図">
+    <svg viewBox="0 0 760 300" role="img" aria-label="天竜川と低地の集落の模式断面図" data-emaki-zoom-target="Sc1a497711d2d5509" data-emaki-repair="Sc1a497711d2d5509" font-family="Meiryo,sans-serif">
       <defs>
         <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#fffdf7"/>
-          <stop offset="1" stop-color="#e9f3fa"/>
+          <stop offset="0" stop-color="#fffdf7" />
+          <stop offset="1" stop-color="#e9f3fa" />
         </linearGradient>
       </defs>
-      <rect x="0" y="0" width="760" height="300" fill="url(#sky)"/>
-      <!-- 天竜川 -->
-      <path d="M0,210 C90,200 140,225 220,218 C300,211 320,200 400,205 L400,300 L0,300 Z" fill="#d8e8ef"/>
-      <path d="M0,210 C90,200 140,225 220,218 C300,211 320,200 400,205" fill="none" stroke="#2f7fa3" stroke-width="2"/>
-      <text x="120" y="262" font-size="14" fill="#1f4f6f" font-family="'Shippori Mincho',serif">天竜川</text>
-      <!-- 堤防 -->
-      <path d="M400,205 L420,168 L445,205 Z" fill="#356f88" opacity=".85"/>
+      <rect x="0" y="0" width="760" height="300" fill="url(#sky)" />
+      
+      <path d="M0,210 C90,200 140,225 220,218 C300,211 320,200 400,205 L400,300 L0,300 Z" fill="#d8e8ef" />
+      <path d="M0,210 C90,200 140,225 220,218 C300,211 320,200 400,205" fill="none" stroke="#2f7fa3" stroke-width="2" />
+      <text x="120" y="262" font-size="14" fill="#1f4f6f" font-family="Meiryo,sans-serif">天竜川</text>
+      
+      <path d="M400,205 L420,168 L445,205 Z" fill="#356f88" opacity=".85" />
       <text x="408" y="160" font-size="11" fill="#1f3a48">堤防</text>
-      <!-- 自然堤防（微高地）と集落 -->
-      <path d="M445,205 C500,196 540,194 590,200 C620,204 660,205 700,210 L760,212 L760,300 L445,300 Z" fill="#e9f3fa"/>
-      <path d="M520,201 q40,-22 90,-2" fill="none" stroke="#356f88" stroke-width="1.6" stroke-dasharray="2 4"/>
-      <!-- 集落（家） -->
+      
+      <path d="M445,205 C500,196 540,194 590,200 C620,204 660,205 700,210 L760,212 L760,300 L445,300 Z" fill="#e9f3fa" />
+      <path d="M520,201 q40,-22 90,-2" fill="none" stroke="#356f88" stroke-width="1.6" stroke-dasharray="2 4" />
+      
       <g fill="#1f3a48">
-        <path d="M540,196 l12,-12 l12,12 l0,14 l-24,0 Z" opacity=".85"/>
-        <path d="M575,198 l10,-10 l10,10 l0,12 l-20,0 Z" opacity=".75"/>
+        <path d="M540,196 l12,-12 l12,12 l0,14 l-24,0 Z" opacity=".85" />
+        <path d="M575,198 l10,-10 l10,10 l0,12 l-20,0 Z" opacity=".75" />
       </g>
-      <text x="520" y="232" font-size="13" fill="#1f4f6f" font-family="'Shippori Mincho',serif">自然堤防上の集落</text>
-      <!-- 後背湿地・水田 -->
-      <path d="M700,210 C720,214 740,222 760,228 L760,300 L700,300 Z" fill="#d8e8ef" opacity=".7"/>
-      <text x="690" y="250" font-size="12" fill="#1f4f6f">後背湿地・水田</text>
-      <!-- 旧河道 -->
-      <path d="M460,212 q30,18 0,40" fill="none" stroke="#2f7fa3" stroke-width="2" stroke-dasharray="5 5" opacity=".7"/>
+      <text x="520" y="232" font-size="13" fill="#1f4f6f" font-family="Meiryo,sans-serif">自然堤防上の集落</text>
+      
+      <path d="M700,210 C720,214 740,222 760,228 L760,300 L700,300 Z" fill="#d8e8ef" opacity=".7" />
+      <text x="650" y="250" font-size="12" fill="#1f4f6f">後背湿地・水田</text>
+      
+      <path d="M460,212 q30,18 0,40" fill="none" stroke="#2f7fa3" stroke-width="2" stroke-dasharray="5 5" opacity=".7" />
       <text x="455" y="284" font-size="11" fill="#1f4f6f">旧河道のなごり</text>
-      <!-- 地面ライン -->
-      <path d="M0,300 L760,300" stroke="#d8e8ef" stroke-width="2"/>
-    </svg>
+      
+      <path d="M0,300 L760,300" stroke="#d8e8ef" stroke-width="2" />
+    </svg><button class="im-diagram-zoom" type="button" data-emaki-zoom="Sc1a497711d2d5509">図を拡大して読む</button>
     <figcaption>模式図（独自作成）。天竜川・堤防・自然堤防上の集落・後背湿地・旧河道の関係を象徴的に示したもので、実際の縮尺・位置を表すものではない。集落が川から近すぎず遠すぎない微高地（自然堤防）に寄った様子を表現している。</figcaption>
-  </figure>
+  
+<details class="im-svg-transcript" data-emaki-transcript="Sc1a497711d2d5509"><summary>図の文字情報・注記を読む</summary><ul><li>天竜川</li><li>堤防</li><li>自然堤防上の集落</li><li>後背湿地・水田</li><li>旧河道のなごり</li></ul></details>
+</figure>
 
   <div class="summary">
     <div class="sh">本稿の要点</div>
@@ -383,7 +386,7 @@
   <p>このことは、現在の磐田市が公開する洪水ハザードマップでも確認できる。浸水想定区域は、おおむね旧河道や後背湿地といった低い土地と重なる傾向がある。つまり、昔の人が経験的に避けたり、田にしたりしてきた土地と、現代の科学的な想定が、しばしば一致するのである。地形は、過去の記憶と未来の備えをつなぐ共通言語になっている。</p>
 
   <figure class="diagram">
-    <svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="水害・治水・農地の三層を示す概念図">
+    <svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="水害・治水・農地の三層を示す概念図" data-emaki-zoom-target="S63381d686013c9a6">
       <rect x="0" y="0" width="760" height="320" fill="#fffdf7"/>
       <!-- 三層の帯 -->
       <g font-family="'Shippori Mincho',serif">
@@ -404,7 +407,7 @@
         <line x1="380" y1="106" x2="380" y2="120" /><path d="M380,124 l-5,-8 l10,0 Z"/>
         <line x1="380" y1="198" x2="380" y2="212" /><path d="M380,216 l-5,-8 l10,0 Z"/>
       </g>
-    </svg>
+    </svg><button class="im-diagram-zoom" type="button" data-emaki-zoom="S63381d686013c9a6">図を拡大して読む</button>
     <figcaption>模式図（独自作成）。天竜地区の暮らしを「水の流れ」「治水・人の手」「農地と暮らし」の三層として整理した概念図。三つは上から下へ影響し合い、どれか一つだけでは地域を理解できないことを示す。</figcaption>
   </figure>
 
@@ -634,5 +637,5 @@
 </footer>
 
 <script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="iwata-monogatari" data-fujigaoka-analytics="true"></script>
-</body>
+<script src="/assets/js/emaki-diagram-zoom.js" defer></script></body>
 </html>

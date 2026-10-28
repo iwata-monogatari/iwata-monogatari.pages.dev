@@ -158,7 +158,8 @@ def main() -> int:
                 broken_images.append((key, "missing src"))
                 continue
             image_owners[src].add(key)
-            if not attr(tag, "alt"):
+            decorative = (re.search(r'\balt=["\']["\']', tag) and attr(tag, "role") == "presentation" and attr(tag, "aria-hidden") == "true")
+            if not attr(tag, "alt") and not decorative:
                 missing_alt.append((key, src))
             if src.startswith("/") and not src.startswith("//"):
                 image_path = ROOT / src.lstrip("/")

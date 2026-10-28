@@ -270,6 +270,7 @@
   ]
 }
 </script>
+<link rel="stylesheet" href="/assets/css/emaki-v5.css">
 </head>
 <body>
 
@@ -304,51 +305,53 @@
   <p class="lead">同じ「御厨」という名を抱きながら、御厨と南御厨では土地のなりたちが少しずつ違う。北側は東海道本線の御厨駅を中心に台地の縁と低地が接する利便の地、南側は太田川水系の低地に水田と旧集落が広がる農の地である。本稿では、二つの地区を比較という方法で並べることで、それぞれを単独で見ていたのでは気づきにくい「磐田東部の骨格」を浮かび上がらせたい。</p>
 
   <figure>
-    <svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="御厨と南御厨を二層に分けて比較する模式図">
+    <svg viewBox="0 0 760 360" role="img" aria-label="御厨と南御厨を二層に分けて比較する模式図" data-emaki-zoom-target="S432187485885fef5" data-emaki-repair="S432187485885fef5">
       <defs>
         <linearGradient id="g-upland" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#e9f3fa"/><stop offset="1" stop-color="#d8e8ef"/>
+          <stop offset="0" stop-color="#e9f3fa" /><stop offset="1" stop-color="#d8e8ef" />
         </linearGradient>
         <linearGradient id="g-low" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#eef6fb"/><stop offset="1" stop-color="#dcebf2"/>
+          <stop offset="0" stop-color="#eef6fb" /><stop offset="1" stop-color="#dcebf2" />
         </linearGradient>
       </defs>
-      <rect x="0" y="0" width="760" height="360" fill="#fffdf7"/>
-      <!-- 上層：御厨（北・台地縁＋駅） -->
-      <rect x="24" y="22" width="712" height="140" rx="6" fill="url(#g-upland)" stroke="#d8e8ef"/>
+      <rect x="0" y="0" width="760" height="360" fill="#fffdf7" />
+      
+      <rect x="24" y="22" width="712" height="140" rx="6" fill="url(#g-upland)" stroke="#d8e8ef" />
       <text x="40" y="46" font-family="'Shippori Mincho',serif" font-size="16" font-weight="700" fill="#1f4f6f">北：御厨 ── 台地の縁と駅の地</text>
-      <!-- 台地縁の起伏 -->
-      <path d="M40 132 Q150 96 260 120 T480 110 T700 124" fill="none" stroke="#356f88" stroke-width="2.2"/>
-      <!-- 鉄道 -->
-      <line x1="40" y1="148" x2="700" y2="148" stroke="#2f7fa3" stroke-width="3" stroke-dasharray="2 6"/>
-      <circle cx="430" cy="148" r="6" fill="#2f7fa3"/>
+      
+      <path d="M40 132 Q150 96 260 120 T480 110 T700 124" fill="none" stroke="#356f88" stroke-width="2.2" />
+      
+      <line x1="40" y1="148" x2="700" y2="148" stroke="#2f7fa3" stroke-width="3" stroke-dasharray="2 6" />
+      <circle cx="430" cy="148" r="6" fill="#2f7fa3" />
       <text x="430" y="142" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11" fill="#1f3a48" text-anchor="middle">御厨駅</text>
-      <!-- 集落のブロック -->
-      <rect x="360" y="98" width="22" height="16" fill="#356f88" opacity=".5"/>
-      <rect x="392" y="92" width="22" height="22" fill="#356f88" opacity=".5"/>
-      <rect x="470" y="100" width="22" height="14" fill="#356f88" opacity=".5"/>
-      <text x="56" y="118" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11" fill="#5b6b74">旧集落・寺社</text>
-      <!-- 下層：南御厨（南・低地＋水田） -->
-      <rect x="24" y="198" width="712" height="140" rx="6" fill="url(#g-low)" stroke="#d8e8ef"/>
+      
+      <rect x="360" y="98" width="22" height="16" fill="#356f88" opacity=".5" />
+      <rect x="392" y="92" width="22" height="22" fill="#356f88" opacity=".5" />
+      <rect x="470" y="100" width="22" height="14" fill="#356f88" opacity=".5" />
+      <text x="56" y="84" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11" fill="#5b6b74">旧集落・寺社</text>
+      
+      <rect x="24" y="198" width="712" height="140" rx="6" fill="url(#g-low)" stroke="#d8e8ef" />
       <text x="40" y="222" font-family="'Shippori Mincho',serif" font-size="16" font-weight="700" fill="#1f4f6f">南：南御厨 ── 低地と水田の地</text>
-      <!-- 水田の区画 -->
+      
       <g stroke="#2f7fa3" stroke-width="1" opacity=".45" fill="none">
-        <rect x="48" y="252" width="60" height="34"/><rect x="112" y="252" width="60" height="34"/>
-        <rect x="176" y="252" width="60" height="34"/><rect x="240" y="252" width="60" height="34"/>
-        <rect x="304" y="252" width="60" height="34"/><rect x="368" y="252" width="60" height="34"/>
-        <rect x="432" y="252" width="60" height="34"/><rect x="496" y="252" width="60" height="34"/>
-        <rect x="560" y="252" width="60" height="34"/><rect x="624" y="252" width="60" height="34"/>
+        <rect x="48" y="252" width="60" height="34" /><rect x="112" y="252" width="60" height="34" />
+        <rect x="176" y="252" width="60" height="34" /><rect x="240" y="252" width="60" height="34" />
+        <rect x="304" y="252" width="60" height="34" /><rect x="368" y="252" width="60" height="34" />
+        <rect x="432" y="252" width="60" height="34" /><rect x="496" y="252" width="60" height="34" />
+        <rect x="560" y="252" width="60" height="34" /><rect x="624" y="252" width="60" height="34" />
       </g>
-      <!-- 用水・排水 -->
-      <path d="M40 300 Q200 312 360 300 T700 306" fill="none" stroke="#2f7fa3" stroke-width="2.6"/>
+      
+      <path d="M40 300 Q200 312 360 300 T700 306" fill="none" stroke="#2f7fa3" stroke-width="2.6" />
       <text x="56" y="244" font-family="'Zen Kaku Gothic New',sans-serif" font-size="11" fill="#5b6b74">水田・用排水路</text>
-      <text x="660" y="298" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10.5" fill="#5b6b74" text-anchor="end">太田川水系へ</text>
-      <!-- つなぐ縦の矢印 -->
-      <line x1="380" y1="162" x2="380" y2="198" stroke="#1f4f6f" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <text x="660" y="326" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10.5" fill="#5b6b74" text-anchor="end">太田川水系へ</text>
+      
+      <line x1="380" y1="162" x2="380" y2="198" stroke="#1f4f6f" stroke-width="1.5" stroke-dasharray="4 4" />
       <text x="392" y="186" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10.5" fill="#1f4f6f">道・水・名でつながる</text>
-    </svg>
+    </svg><button class="im-diagram-zoom" type="button" data-emaki-zoom="S432187485885fef5">図を拡大して読む</button>
     <figcaption>模式図（独自作成）：御厨（北・台地縁と駅の地）と南御厨（南・低地と水田の地）を上下二層に置き、地形差と、両者をつなぐ道・水・地名の関係を象徴的に示したもの。縮尺・位置は正確な地図ではなく概念的な表現である。</figcaption>
-  </figure>
+  
+<details class="im-svg-transcript" data-emaki-transcript="S432187485885fef5"><summary>図の文字情報・注記を読む</summary><ul><li>北：御厨 ── 台地の縁と駅の地</li><li>御厨駅</li><li>旧集落・寺社</li><li>南：南御厨 ── 低地と水田の地</li><li>水田・用排水路</li><li>太田川水系へ</li><li>道・水・名でつながる</li></ul></details>
+</figure>
 
   <div class="summary">
     <div class="sh">本稿の要点</div>
@@ -379,33 +382,35 @@
   <p>この地形差は、地表の高低という静的な違いにとどまらない。御厨側では「土地の縁に沿って人が住み、低地を田として使う」構図が、南御厨側では「低地全体を水田として活かし、その中の安全な場所に住む」構図が成立する。同じ磐田東部でありながら、人と土地と水の関係の組み立て方が異なるのである。</p>
 
   <figure>
-    <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="台地縁から低地へ向かう地形断面の模式図">
-      <rect x="0" y="0" width="760" height="300" fill="#fffdf7"/>
-      <!-- 地形断面 -->
-      <path d="M20 90 L200 90 Q260 96 300 150 L740 230 L740 280 L20 280 Z" fill="#d8e8ef" stroke="#356f88" stroke-width="1.6"/>
-      <!-- 台地上面の薄塗り -->
-      <path d="M20 90 L200 90 Q230 92 250 110 L20 110 Z" fill="#e9f3fa"/>
-      <!-- 注記ライン -->
+    <svg viewBox="0 0 760 300" role="img" aria-label="台地縁から低地へ向かう地形断面の模式図" data-emaki-zoom-target="Secf6ed9b21788168" data-emaki-repair="Secf6ed9b21788168">
+      <rect x="0" y="0" width="760" height="300" fill="#fffdf7" />
+      
+      <path d="M20 90 L200 90 Q260 96 300 150 L740 230 L740 280 L20 280 Z" fill="#d8e8ef" stroke="#356f88" stroke-width="1.6" />
+      
+      <path d="M20 90 L200 90 Q230 92 250 110 L20 110 Z" fill="#e9f3fa" />
+      
       <text x="90" y="80" font-family="'Zen Kaku Gothic New',sans-serif" font-size="12" fill="#1f3a48">磐田原台地（高）</text>
-      <text x="300" y="138" font-family="'Zen Kaku Gothic New',sans-serif" font-size="12" fill="#1f4f6f">台地の縁＝御厨の集落・寺社が寄る</text>
-      <text x="560" y="216" font-family="'Zen Kaku Gothic New',sans-serif" font-size="12" fill="#1f3a48">低地・水田＝南御厨（低）</text>
-      <!-- 集落マーク（台地縁） -->
-      <rect x="280" y="132" width="16" height="14" fill="#2f7fa3" opacity=".6"/>
-      <rect x="304" y="128" width="14" height="18" fill="#2f7fa3" opacity=".6"/>
-      <!-- 水田の区画（低地） -->
+      <text x="350" y="114" font-family="'Zen Kaku Gothic New',sans-serif" font-size="12" fill="#1f4f6f">台地の縁＝御厨の集落・寺社が寄る</text>
+      <text x="550" y="177" font-family="'Zen Kaku Gothic New',sans-serif" font-size="12" fill="#1f3a48">低地・水田＝南御厨（低）</text>
+      
+      <rect x="280" y="132" width="16" height="14" fill="#2f7fa3" opacity=".6" />
+      <rect x="304" y="128" width="14" height="18" fill="#2f7fa3" opacity=".6" />
+      
       <g stroke="#2f7fa3" stroke-width="1" opacity=".5" fill="none">
-        <rect x="470" y="244" width="50" height="22"/><rect x="524" y="246" width="50" height="20"/>
-        <rect x="578" y="248" width="50" height="18"/><rect x="632" y="250" width="50" height="16"/>
+        <rect x="470" y="244" width="50" height="22" /><rect x="524" y="246" width="50" height="20" />
+        <rect x="578" y="248" width="50" height="18" /><rect x="632" y="250" width="50" height="16" />
       </g>
-      <!-- 用水路 -->
-      <path d="M260 168 Q420 200 700 246" fill="none" stroke="#2f7fa3" stroke-width="2.4" stroke-dasharray="6 4"/>
-      <text x="420" y="196" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10.5" fill="#356f88">用排水路</text>
-      <!-- 矢印（台地から低地へ水が落ちる） -->
-      <line x1="250" y1="118" x2="250" y2="150" stroke="#1f4f6f" stroke-width="1.4"/>
-      <polygon points="250,156 246,148 254,148" fill="#1f4f6f"/>
-    </svg>
+      
+      <path d="M260 168 Q420 200 700 246" fill="none" stroke="#2f7fa3" stroke-width="2.4" stroke-dasharray="6 4" />
+      <text x="420" y="225" font-family="'Zen Kaku Gothic New',sans-serif" font-size="10.5" fill="#356f88">用排水路</text>
+      
+      <line x1="250" y1="118" x2="250" y2="150" stroke="#1f4f6f" stroke-width="1.4" />
+      <polygon points="250,156 246,148 254,148" fill="#1f4f6f" />
+    </svg><button class="im-diagram-zoom" type="button" data-emaki-zoom="Secf6ed9b21788168">図を拡大して読む</button>
     <figcaption>模式図（独自作成）：磐田原台地の縁から太田川水系の低地へ下る地形断面のイメージ。御厨の集落・寺社は台地の縁の高まりに寄り、南御厨の水田は低地に広がる。高低差と水の流れの方向を象徴的に示したもので、実測の断面ではない。</figcaption>
-  </figure>
+  
+<details class="im-svg-transcript" data-emaki-transcript="Secf6ed9b21788168"><summary>図の文字情報・注記を読む</summary><ul><li>磐田原台地（高）</li><li>台地の縁＝御厨の集落・寺社が寄る</li><li>低地・水田＝南御厨（低）</li><li>用排水路</li></ul></details>
+</figure>
 
 
   <p><strong>道 ── 鉄道・旧道・幹線が生活圏をどう変えたか。</strong> 地形が土地の素地を決めるとすれば、道はその上で人と物の流れをつくり、地区の重心を動かしてきた。御厨側の決定的な要素は、東海道本線の御厨駅である。駅という近代の交通結節点は、台地の縁という古くからの立地条件の上に新しい重心を加え、駅周辺に住宅地と生活サービスを集める力を持つ。御厨が「古い名を抱きながら、いまも変わり続ける」地域だと言えるのは、この駅の存在が大きい。</p>
@@ -661,5 +666,5 @@
 </footer>
 
 <script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="iwata-monogatari" data-fujigaoka-analytics="true"></script>
-</body>
+<script src="/assets/js/emaki-diagram-zoom.js" defer></script></body>
 </html>

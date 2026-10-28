@@ -407,6 +407,22 @@ def build(check=False):
         c034 = c034.replace('</head>', '<link rel="stylesheet" href="/assets/css/article-search.css">\n</head>', 1)
     artifacts['c034.html'] = c034.encode()
     artifacts['data/search/manifest.json'] = manifest_bytes
+    # Retain approved emaki on generated search pages across local/Pages builds.
+    emaki_path = ROOT / 'data/emaki-generated-pages.json'
+    if emaki_path.exists():
+        emaki = json.loads(emaki_path.read_text(encoding='utf-8'))
+        for path, entry in emaki['records'].items():
+            if not path.startswith('search/') or path not in artifacts:
+                raise ValueError('Unexpected generated emaki page: ' + path)
+            figure = entry['figure']
+            if figure.count('<figure') != 1 or not figure.endswith('</figure>') or '<script' in figure:
+                raise ValueError('Invalid emaki fragment: ' + path)
+            page_html = artifacts[path].decode('utf-8')
+            page_html, count = re.subn(r'(<h1\b[^>]*>.*?</h1>)', lambda m: m[1] + figure, page_html, count=1, flags=re.S)
+            if count != 1:
+                raise ValueError('Missing emaki insertion heading: ' + path)
+            page_html = page_html.replace('</head>', '<link rel="stylesheet" href="/assets/css/emaki-v5.css">\n</head>', 1)
+            artifacts[path] = page_html.encode('utf-8')
     failures = [path for path, data in artifacts.items() if not (ROOT / path).exists() or (ROOT / path).read_bytes() != data]
     managed = list((ROOT / 'data/search').glob('metadata.*.json')) + list((ROOT / 'data/search/grams').glob('*.json')) + list((ROOT / 'data/search/bodies').glob('*.json')) + list((ROOT / 'search/catalog').glob('*/index.html'))
     obsolete = [p for p in managed if p.relative_to(ROOT).as_posix() not in artifacts]

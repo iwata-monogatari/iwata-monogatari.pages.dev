@@ -316,6 +316,7 @@
   ]
 }
 </script>
+<link rel="stylesheet" href="/assets/css/emaki-v5.css">
 </head>
 <body class="area-nakaizumi">
 
@@ -355,7 +356,7 @@
 
   <figure>
     <div class="fig-box">
-      <svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="遠江国分寺の伽藍配置の模式図">
+      <svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="遠江国分寺の伽藍配置の模式図" data-emaki-zoom-target="Sb4876e89153d1f46">
         <rect x="0" y="0" width="520" height="300" fill="#fffdf7"/>
         <!-- 寺域の枠 -->
         <rect x="70" y="28" width="380" height="244" fill="none" stroke="#cfe2ec" stroke-width="1.4" stroke-dasharray="5 4"/>
@@ -380,10 +381,12 @@
         <text x="137" y="172" text-anchor="middle" font-size="10" class="svg-sub">七重塔</text>
         <!-- 方位 -->
         <text x="95" y="44" text-anchor="middle" font-size="11" class="svg-sub">北 ↑</text>
-      </svg>
+      </svg><button class="im-diagram-zoom" type="button" data-emaki-zoom="Sb4876e89153d1f46">図を拡大して読む</button>
       <figcaption>発掘調査で確認された伽藍配置をもとにした模式図。南北の中軸に南大門・中門・金堂・講堂を並べ、金堂と中門を回廊で結び、その西外側に七重と推定される塔が建っていた。（位置関係をもとにした模式図）</figcaption>
     </div>
-  </figure>
+  
+<details class="im-svg-transcript" data-emaki-transcript="Sb4876e89153d1f46"><summary>図の文字情報・注記を読む</summary><ul><li>寺域（およそ一町四方）</li><li>南大門</li><li>中門</li><li>金堂</li><li>講堂</li><li>塔</li><li>七重塔</li><li>北 ↑</li></ul></details>
+</figure>
 
   <p>JR磐田駅の北口から、まっすぐ北へのびる通りがある。地元では「ジュビロ通り」とも呼ばれるが、正式な名は「天平通り」という。十五分ほど歩くと、市役所の北側に、芝生のひろがる公園に行き当たる。これが遠江国分寺跡である。通りの名が「天平」であるのは、伊達ではない。この道の先に、奈良時代――天平の世の、遠江国の中心があったからである。</p>
 
@@ -532,5 +535,5 @@
   </div>
 </footer>
 <script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="iwata-monogatari" data-fujigaoka-analytics="true"></script>
-</body>
+<script src="/assets/js/emaki-diagram-zoom.js" defer></script></body>
 </html>

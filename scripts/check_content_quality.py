@@ -84,7 +84,10 @@ def main():
         if body is None:
             errors.append(f"{key}: 本文コンテナを判定できない")
             continue
-        text = plain(body)
+        # Disclosure transcripts repeat diagram labels for accessibility;
+        # their duplicated text must not push an article over visual thresholds.
+        metric_body = re.sub(r'<details\b[^>]*class="[^"]*\bim-svg-transcript\b[^"]*"[^>]*>.*?</details>', '', body, flags=re.I | re.S)
+        text = plain(metric_body)
         paragraphs = [plain(p) for p in re.findall(r"<p\b[^>]*>(.*?)</p>", body, re.I | re.S)]
         paragraphs = [p for p in paragraphs if len(p) >= 80]
         hashes = [sha1(p.encode()).hexdigest() for p in paragraphs]
@@ -100,6 +103,21 @@ def main():
             continue
         chars = len(text)
         visuals = len(re.findall(r"<(?:img|svg)\b", body, re.I))
+        # The approved hero may be a sibling of the single article, inside main.
+        # Count that actual image once, without inflating article text length.
+        for figure in re.findall(r'<figure\b[^>]*class="[^"]*\bim-emaki\b[^"]*"[^>]*>.*?</figure>', raw, re.I | re.S):
+            if figure not in body and re.search(r'<img\b', figure, re.I):
+                visuals += 1
+        # Accessible comparison/data tables replace former SVG diagrams.
+        # Only structured, multirow tables without already-counted imagery qualify.
+        for table in re.findall(r'<table\b[^>]*>.*?</table>', body, re.I | re.S):
+            if (re.search(r'<th\b', table, re.I)
+                    and len(re.findall(r'<tr\b', table, re.I)) >= 3
+                    and not re.search(r'<(?:img|svg)\b', table, re.I)):
+                visuals += 1
+        for guide in re.findall(r'<div\b[^>]*class="[^"]*\bim-reading-guide\b[^"]*"[^>]*>.*?</div>', body, re.I | re.S):
+            if re.search(r'<ol\b', guide, re.I) and len(re.findall(r'<li\b', guide, re.I)) >= 3:
+                visuals += 1
         if chars < MIN_ARTICLE_CHARS:
             errors.append(f"{key}: 本文{chars}字（最低{MIN_ARTICLE_CHARS}字）")
         if chars >= VISUAL_REQUIRED_CHARS and visuals < 1:

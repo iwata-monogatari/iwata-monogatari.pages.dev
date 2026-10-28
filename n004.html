@@ -273,6 +273,7 @@
   ]
 }
 </script>
+<link rel="stylesheet" href="/assets/css/emaki-v5.css">
 </head>
 <body class="area-nakaizumi">
 
@@ -334,7 +335,7 @@
 
   <figure>
     <div class="fig-box">
-      <svg viewBox="0 0 720 320" role="img" aria-label="金堂・七重塔・講堂・中門・回廊・僧坊それぞれの役割を一覧する説明図">
+      <svg viewBox="0 0 720 320" role="img" aria-label="金堂・七重塔・講堂・中門・回廊・僧坊それぞれの役割を一覧する説明図" data-emaki-zoom-target="S59176f947e0f9284">
         <rect x="0" y="0" width="720" height="320" fill="#fbfdfe"/>
         <text x="360" y="34" text-anchor="middle" class="svg-label mincho" font-size="16" fill="#356f88">伽藍を構成する六つの空間と、その役割</text>
         <g class="svg-label" font-size="14">
@@ -371,7 +372,7 @@
         </g>
         <text x="360" y="270" text-anchor="middle" class="svg-sub" font-size="12.5">祈り（金堂）・象徴（塔）・学び（講堂）・結界（回廊・中門）・日常（僧坊）</text>
         <text x="360" y="292" text-anchor="middle" class="svg-sub" font-size="12.5">これらが一体となって、ひとつの「伽藍」を成していました</text>
-      </svg>
+      </svg><button class="im-diagram-zoom" type="button" data-emaki-zoom="S59176f947e0f9284">図を拡大して読む</button>
       <figcaption>伽藍を構成する六つの空間と、その役割を整理した説明図（模式図）。役割の対応を分かりやすく示すために作成したもので、建物の大きさ・位置関係は表していません（WEB説明用の模式図。実測図ではありません）。</figcaption>
     </div>
   </figure>
@@ -396,7 +397,7 @@
 
   <figure>
     <div class="fig-box">
-      <svg viewBox="0 0 520 440" role="img" aria-label="遠江国分寺の伽藍配置の概念図。金堂・講堂・中門・南大門・回廊・七重塔・築地塀を上を北として示す">
+      <svg viewBox="0 0 520 440" role="img" aria-label="遠江国分寺の伽藍配置の概念図。金堂・講堂・中門・南大門・回廊・七重塔・築地塀を上を北として示す" data-emaki-zoom-target="S557f49890df6da99">
         <rect x="0" y="0" width="520" height="440" fill="#fbfdfe"/>
         <!-- 方位 -->
         <g>
@@ -430,10 +431,12 @@
         <line x1="262" y1="246" x2="298" y2="246" stroke="#356f88" stroke-width="2.5"/>
         <text x="360" y="252" text-anchor="start" class="svg-sub" font-size="10.5">金堂正面に石階段</text>
         <text x="280" y="420" text-anchor="middle" class="svg-sub" font-size="12">上が北　／　南北の中軸に講堂・金堂・中門・南大門を並べる</text>
-      </svg>
+      </svg><button class="im-diagram-zoom" type="button" data-emaki-zoom="S557f49890df6da99">図を拡大して読む</button>
       <figcaption>遠江国分寺の伽藍配置の概念図（模式図）。発掘調査で確認された配置関係をもとに、上が北となるように各建物のおおよその位置を示しました。建物の形・大きさ・南大門の位置などには推定を含み、距離・縮尺は正確ではありません（WEB説明用の模式図。実測図ではありません）。</figcaption>
     </div>
-  </figure>
+  
+<details class="im-svg-transcript" data-emaki-transcript="S557f49890df6da99"><summary>図の文字情報・注記を読む</summary><ul><li>N（北）</li><li>築地塀で区画された寺域（東西約180m × 南北約250m）</li><li>回廊</li><li>講堂</li><li>金堂</li><li>中門</li><li>南大門</li><li>七重塔</li><li>回廊の西外側</li><li>金堂正面に石階段</li><li>上が北　／　南北の中軸に講堂・金堂・中門・南大門を並べる</li></ul></details>
+</figure>
 
 
   <p><strong><span class="num">5</span>確定部分と推定部分を分けて読む。</strong> 伽藍を読むうえで最も大切なのは、<strong>「確かめられたこと」と「推し量ったこと」を混ぜない</strong>ことです。発掘によって地中から確認された配置や基壇は事実ですが、地上の建物の高さや姿は、残された跡から推定するほかありません。ここをきちんと区別しておかないと、想像が事実のように一人歩きしてしまいます。</p>
@@ -565,5 +568,5 @@
 </footer>
 
 <script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="iwata-monogatari" data-fujigaoka-analytics="true"></script>
-</body>
+<script src="/assets/js/emaki-diagram-zoom.js" defer></script></body>
 </html>
