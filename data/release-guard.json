@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1793239243,
-  "generation": 20261029110043,
-  "git_commit_at_stamp": "f9794111d92615d6f71cdfa0b70b1aede9a71c8f",
+  "generated_at_unix": 1793240647,
+  "generation": 20261029112407,
+  "git_commit_at_stamp": "fe2442ce13f6026c089af8a4f34373566dc1e211",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,7 +35,7 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "2821ae24b24f5e34838dfaf0b06b6c496741a0af6908f8f82c065c25f7607c9d"
+      "sha256": "e2d49d8254b7afdde3fa15aaa16b185f6f6a81274d9d1338b16b509bac94e16f"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "c65ae1f16c41d742961cffe05b4e3c058be0ea6250fba0bcd2d652151ec596e9"
+      "sha256": "453218970bcbe4da56fda368d9d05d9d0d9f1e1fd9d49ce3e891032532ef877a"
     },
     {
       "path": "package.json",
@@ -67,20 +67,20 @@
     },
     {
       "path": "updates.html",
-      "sha256": "033b025a91533ce8449074334aab07dcce59450772ec19694b5b41bac2aa0050"
+      "sha256": "4df329cc83db3a3f60b1804f43df3301162ccdde051d02f8b1a0fd0b9f90f04d"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "3bafda9e5ccf45213cfd256403c63b9b0b1ed52eb7a8e672da3403bf7f3331ff",
+      "content_sha256": "5d86d21a0ac66ff4ce2d7ac3d885d802d5ccc3daafe1e3f119abed996a339538",
       "path": "index.html",
-      "sha256": "c65ae1f16c41d742961cffe05b4e3c058be0ea6250fba0bcd2d652151ec596e9",
+      "sha256": "453218970bcbe4da56fda368d9d05d9d0d9f1e1fd9d49ce3e891032532ef877a",
       "url": "/"
     },
     {
-      "content_sha256": "537ce42125bc4cc44ffd70f4a115417fd2efa1a01474183c66bc3add3f004673",
+      "content_sha256": "297d09230d0fea657dfbb2222f03bb8e63f304f068c5f5605bbec0c3ebd0a241",
       "path": "updates.html",
-      "sha256": "033b025a91533ce8449074334aab07dcce59450772ec19694b5b41bac2aa0050",
+      "sha256": "4df329cc83db3a3f60b1804f43df3301162ccdde051d02f8b1a0fd0b9f90f04d",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "79c9c30ebcda0ee861f17013af3f98f1ea0c794d1b15c782d690b5789494f639",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "3e46067b5f35d1e2a86e94e3fa78dad8a1ee4fb5ecccd2e6ddb071f1b0e94d8f",
+      "path": "c055.html",
+      "sha256": "09e20c94182fb8df0402ee58596449fb4c90ab1dd8a98a0c99639986869f052f",
+      "url": "/c055.html"
     },
     {
       "content_sha256": "f8d6567ef2bfe3ec1529571e112e0c4fa94f60ff010e4df57f1624e1e7313df7",
@@ -460,12 +466,6 @@
       "path": "blog/20261006-hikifuda-postcard-mitsuke/index.html",
       "sha256": "c1b263c8a6ba9d1e318492f55ae4c47c87d04d66f0ed62b3a95b0018662c3a19",
       "url": "/blog/20261006-hikifuda-postcard-mitsuke"
-    },
-    {
-      "content_sha256": "4a18bf047f539058718f321616bd9e4b9bd999036931a3c661d3f2b4a62b1c58",
-      "path": "c055.html",
-      "sha256": "50ecaaa1f6f50c5e4bf89cb25f5bab0c40d22abf5087eb291cb263222d19c1ae",
-      "url": "/c055.html"
     },
     {
       "content_sha256": "105999e83caaa2c268794d9c469d52465f3392efc0ffcc3bc2f634919983925e",
@@ -820,21 +820,15 @@
       "path": "blog/20260906-iwata-old-newspapers/index.html",
       "sha256": "96825af188d31823777506a820f656cd959e3b1e9dc0b8af536eedd02964bf24",
       "url": "/blog/20260906-iwata-old-newspapers"
-    },
-    {
-      "content_sha256": "d39e5d3d3956ea24b98b8fb17ab45a4ffb5b8b3759510ea99aeb3dd835e96a65",
-      "path": "blog/20260906-iwata-hospital-history/index.html",
-      "sha256": "1abeb5bed00c8856435ded3e17307d57c966b09213dc02cc7355f69c5cb87c4b",
-      "url": "/blog/20260906-iwata-hospital-history"
     }
   ],
   "schema": 1,
-  "state_hash": "e44f66f80a61ec6cffa95062443520ff0c1e69d12195a2c78d5a574a301a36ef",
+  "state_hash": "f39ecb48ea6d2c87e39810ce1d09c98549787d1c8e0e57100405aac67fdb6f73",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1117,
-    "new_articles": 1278,
-    "new_articles_sha256": "2821ae24b24f5e34838dfaf0b06b6c496741a0af6908f8f82c065c25f7607c9d",
+    "new_articles": 1279,
+    "new_articles_sha256": "e2d49d8254b7afdde3fa15aaa16b185f6f6a81274d9d1338b16b509bac94e16f",
     "pages_sha256": "6fcb584975869fd0b7286eb7d349bd461ef4a4f56d0deff627e4f27a134f2848",
     "pages_total": 1187,
     "published_pages": 1186
