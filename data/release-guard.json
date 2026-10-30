@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1793320647,
-  "generation": 20261030093727,
-  "git_commit_at_stamp": "69f7a107b6e4f1779f205940c1ad1b6d6235ec4c",
+  "generated_at_unix": 1793353440,
+  "generation": 20261030184400,
+  "git_commit_at_stamp": "59cbf4e733a1b034431a1ff0640ddda3f99e6a11",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "f04844de5d64a1001aef48cef05a169980e996944b1dc4a4466d29d83957ffa5"
+      "sha256": "08d0713ba9c3f2927a482eb5277cfd5f7dc715f0654289f0e449e365dc1fef67"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "e2d49d8254b7afdde3fa15aaa16b185f6f6a81274d9d1338b16b509bac94e16f"
+      "sha256": "16f8208402c829f7c96ef9b6adbaa34c0b972f6c0aaec6d32c301e916a1e61fa"
     },
     {
       "path": "data/pages.json",
-      "sha256": "6fcb584975869fd0b7286eb7d349bd461ef4a4f56d0deff627e4f27a134f2848"
+      "sha256": "d4d60b04165f9775e2d22621a3f07ca52bf9e71c89d700083fab2793f06732ef"
     },
     {
       "path": "index.html",
-      "sha256": "453218970bcbe4da56fda368d9d05d9d0d9f1e1fd9d49ce3e891032532ef877a"
+      "sha256": "e8f0ea9eb6ab6516d2735bfd9b788917fa4b2f55bca18c7e2552c07c045768af"
     },
     {
       "path": "package.json",
@@ -67,26 +67,26 @@
     },
     {
       "path": "updates.html",
-      "sha256": "4df329cc83db3a3f60b1804f43df3301162ccdde051d02f8b1a0fd0b9f90f04d"
+      "sha256": "16ce21f76bc7fa7d154ee5e7e4ed3cc873896ed5b80cf1bdcee4d5302c0d1d05"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "5d86d21a0ac66ff4ce2d7ac3d885d802d5ccc3daafe1e3f119abed996a339538",
+      "content_sha256": "1add089b8781baa4a2307abca6d292f8d9a113e756163175283b7a3b6b479ff7",
       "path": "index.html",
-      "sha256": "453218970bcbe4da56fda368d9d05d9d0d9f1e1fd9d49ce3e891032532ef877a",
+      "sha256": "e8f0ea9eb6ab6516d2735bfd9b788917fa4b2f55bca18c7e2552c07c045768af",
       "url": "/"
     },
     {
-      "content_sha256": "297d09230d0fea657dfbb2222f03bb8e63f304f068c5f5605bbec0c3ebd0a241",
+      "content_sha256": "13adc532cbb622ce3a069a57956fa94e4dbfbf27c5f3c1fdac53491a2da259c6",
       "path": "updates.html",
-      "sha256": "4df329cc83db3a3f60b1804f43df3301162ccdde051d02f8b1a0fd0b9f90f04d",
+      "sha256": "16ce21f76bc7fa7d154ee5e7e4ed3cc873896ed5b80cf1bdcee4d5302c0d1d05",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "70b709f34eb4c594b9a0a26324ae2cfa805637cba22982606e19fc08bdb2f04a",
+      "content_sha256": "4048effea47391b7b07f5655fb739965bc98e1a0fb27743734989d8b6cce040e",
       "path": "c034.html",
-      "sha256": "f04844de5d64a1001aef48cef05a169980e996944b1dc4a4466d29d83957ffa5",
+      "sha256": "08d0713ba9c3f2927a482eb5277cfd5f7dc715f0654289f0e449e365dc1fef67",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "79c9c30ebcda0ee861f17013af3f98f1ea0c794d1b15c782d690b5789494f639",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "a85f17efe8d9506c8c515c789dd5b18a564307896e1a0bb52f523a454212ba10",
+      "path": "blog/20261030-iwata-sumo-history-reading/index.html",
+      "sha256": "b598c56cc528194a0b6f9c75c4249c7b23492f5f254b7cd338c20a3e8f29cc9e",
+      "url": "/blog/20261030-iwata-sumo-history-reading"
     },
     {
       "content_sha256": "e13a29741ceeeecbf2c888adeb1f964167add7ec5d369afb26da552bf37d6292",
@@ -222,9 +228,9 @@
       "url": "/blog/20261019-local-history-timeline-notes"
     },
     {
-      "content_sha256": "befc8fa0d458161eae5096ac679fd80ece4099cc8460ccceaedb8dd60971a38a",
+      "content_sha256": "aca452cf5c1b1f6b20196b9015cdf348600df3c523d39dc2af6a97e2ec3fa278",
       "path": "blog/20261019-iwata-cultural-heritage-festival/index.html",
-      "sha256": "c19ecdf409258b08a19e74f1bf1be0bbc3066f58ea7e64015e36bd58ba73bc35",
+      "sha256": "6f8ba4fda42d9da5005527284c629599eb015788d866648ab996e846b0be5163",
       "url": "/blog/20261019-iwata-cultural-heritage-festival"
     },
     {
@@ -814,23 +820,17 @@
       "path": "blog/20260907-iwata-water-shortage-2026/index.html",
       "sha256": "406dcc07b60ea483e2408655f8c0322fbcada0351fcfb5ddf605c69c790fdbc8",
       "url": "/blog/20260907-iwata-water-shortage-2026"
-    },
-    {
-      "content_sha256": "4846c48429638bb3eb926eb3e73c4d86f4dd3b07dff7f5ec5ee37306107e4f30",
-      "path": "blog/20260906-iwata-old-newspapers/index.html",
-      "sha256": "96825af188d31823777506a820f656cd959e3b1e9dc0b8af536eedd02964bf24",
-      "url": "/blog/20260906-iwata-old-newspapers"
     }
   ],
   "schema": 1,
-  "state_hash": "0fbe08b632af40cf4212789f7ddd5f35efbe1843516822f481c57f600f2144a0",
+  "state_hash": "edd5a704c70d2d324f415b455c92ada0f835c392e457bc7dc33dc7b18a75a4a1",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1117,
-    "new_articles": 1279,
-    "new_articles_sha256": "e2d49d8254b7afdde3fa15aaa16b185f6f6a81274d9d1338b16b509bac94e16f",
-    "pages_sha256": "6fcb584975869fd0b7286eb7d349bd461ef4a4f56d0deff627e4f27a134f2848",
-    "pages_total": 1187,
-    "published_pages": 1186
+    "new_articles": 1280,
+    "new_articles_sha256": "16f8208402c829f7c96ef9b6adbaa34c0b972f6c0aaec6d32c301e916a1e61fa",
+    "pages_sha256": "d4d60b04165f9775e2d22621a3f07ca52bf9e71c89d700083fab2793f06732ef",
+    "pages_total": 1188,
+    "published_pages": 1187
   }
 }
