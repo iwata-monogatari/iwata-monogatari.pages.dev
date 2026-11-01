@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1793494023,
-  "generation": 20261101094703,
-  "git_commit_at_stamp": "cf7e17bf60e3dcadb1b0e97e198031093e06abb9",
+  "generated_at_unix": 1793508678,
+  "generation": 20261101135118,
+  "git_commit_at_stamp": "55dcc1e1c72219fd405c98ddcb36d7aaf138f7c7",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "db2e954e20fa4388616e0769cf7e4c9469ceebbee94800d3489d63804e990d6e"
+      "sha256": "9a0a795e6c4c42cfcde2042f7a6e6941725a7608b7cd69ac808def0f2f131579"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "a97a7acc40c5d5a1a9a01be7d35ff9430ac7d28de01642473b279d823c3d8c63"
+      "sha256": "734478902e7b3b93c5d060aac9aa6f1e2a8d3bd256897ef686376e58fd03242f"
     },
     {
       "path": "data/pages.json",
-      "sha256": "815a0b27af70d8dfb47d9319c5711a4d6ea535cdc5d9a2bdb2def51e8bc49fbb"
+      "sha256": "5818b2fc625bd799b6c04b25c7d0be4d44f8d9a6bd6c2be4120da9270583854b"
     },
     {
       "path": "index.html",
-      "sha256": "65e7d0c7d65466816c2ebf4f111ae5c111eb2a852597e242d90e19cfdfc3fa39"
+      "sha256": "1a68a4a23ad4cac53525981af4a233100cee0d1207c7f2491b84151fe1fb75d2"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "a597a837b88e54993e31e4420f87c8e872b86dff458f2e53ace73704c6c8eb20"
+      "sha256": "41f2f2f42ec81969552003584ac4fb3a9e6ed7819ef1296f9ef8ac6fa0b70f4b"
     },
     {
       "path": "updates.html",
-      "sha256": "c320c8708c83ea8ee52c9736f629f438f638d280da9e68be4b60fa7d071088df"
+      "sha256": "6b7c13adf45debd16c97c620703c16aded0f9f01c81b812997e993d6d0e98a5e"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "b892f09ec4a8fe9ea60ab530f337dd73cec8bb1f1084746b175e9f1f3af97585",
+      "content_sha256": "16f72a00d5e76e0da10e757e6171dc9110cac51240c3a6f3077328e618b14281",
       "path": "index.html",
-      "sha256": "65e7d0c7d65466816c2ebf4f111ae5c111eb2a852597e242d90e19cfdfc3fa39",
+      "sha256": "1a68a4a23ad4cac53525981af4a233100cee0d1207c7f2491b84151fe1fb75d2",
       "url": "/"
     },
     {
-      "content_sha256": "a114eccc2353620ce9af8bcb0cc191ccccfce086011ee2f97112c63291eb9441",
+      "content_sha256": "4a37c2b43f0e9ec106c2cf7949e2aca5e87c34badeb4ea7a656ff2bac9212787",
       "path": "updates.html",
-      "sha256": "c320c8708c83ea8ee52c9736f629f438f638d280da9e68be4b60fa7d071088df",
+      "sha256": "6b7c13adf45debd16c97c620703c16aded0f9f01c81b812997e993d6d0e98a5e",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "ce7e9d66e474bbfa00af6c20a20511643ae87cf8f5ba656a0293be1b7614b4c9",
+      "content_sha256": "e0a3748cf322f246e34811c37f54f7bfe391e66e10bf9bad955c0354e1d8537a",
       "path": "c034.html",
-      "sha256": "db2e954e20fa4388616e0769cf7e4c9469ceebbee94800d3489d63804e990d6e",
+      "sha256": "9a0a795e6c4c42cfcde2042f7a6e6941725a7608b7cd69ac808def0f2f131579",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "2ca283a5b3ca1e344c1e5e89e96f6f9e8a028e38e07bf4efd266ee7ea440f9e9",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "e0a7ccaf19a1c0935f088f5356041fc04f8a31029f9e0c2eafcfbc766701a2d3",
+      "path": "blog/20261101-iwata-kikobun-reading/index.html",
+      "sha256": "cda2c4393973efefbdf941a2d7e661b9e49f376569e22efa78a747f4116ae9d1",
+      "url": "/blog/20261101-iwata-kikobun-reading"
     },
     {
       "content_sha256": "87e8dd899607b02e7f8e755f47748c1b5020790064b044cb3a93d930122a7fc7",
@@ -814,23 +820,17 @@
       "path": "blog/20260908-ndl-kotenseki-fulltext/index.html",
       "sha256": "23cf1a5bf9d557655dce46b59b92040ff8271c440f9daee1b0f16d513c864423",
       "url": "/blog/20260908-ndl-kotenseki-fulltext"
-    },
-    {
-      "content_sha256": "6b355f8b9fddb5bf0c6186ec2a4ccdd56a819dcbf7d0a2e918b25d4e73750173",
-      "path": "blog/20260907-iwata-rice-history-hakuro/index.html",
-      "sha256": "62d1c0634770d386ce02985c4101c212eaf05ac108a81ec92b3653114b23b351",
-      "url": "/blog/20260907-iwata-rice-history-hakuro"
     }
   ],
   "schema": 1,
-  "state_hash": "696d1cdb9e79515bedc8a789231548111d1106f75328204f640682ab0498cc54",
+  "state_hash": "45f06b2e88f46e5780276154793196a310951974cf4121b5877a2f955c232718",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1117,
-    "new_articles": 1281,
-    "new_articles_sha256": "a97a7acc40c5d5a1a9a01be7d35ff9430ac7d28de01642473b279d823c3d8c63",
-    "pages_sha256": "815a0b27af70d8dfb47d9319c5711a4d6ea535cdc5d9a2bdb2def51e8bc49fbb",
-    "pages_total": 1189,
-    "published_pages": 1188
+    "new_articles": 1282,
+    "new_articles_sha256": "734478902e7b3b93c5d060aac9aa6f1e2a8d3bd256897ef686376e58fd03242f",
+    "pages_sha256": "5818b2fc625bd799b6c04b25c7d0be4d44f8d9a6bd6c2be4120da9270583854b",
+    "pages_total": 1190,
+    "published_pages": 1189
   }
 }
