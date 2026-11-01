@@ -1,4 +1,6 @@
 /* V5 emaki: technical delivery and readable diagram transcripts. */
+/* Long reference URLs must wrap inside the article at mobile widths. */
+main a[href^="http"]{overflow-wrap:anywhere}
 .im-emaki{margin:2rem 0;padding:0;background:#f4eee3;border-block:1px solid #a56e48}
 .im-emaki picture,.im-emaki img{display:block;width:100%;height:auto}
 .im-emaki figcaption{padding:.75rem 1rem;color:#654a37;font-size:.88rem;line-height:1.8}
