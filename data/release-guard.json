@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1793517780,
-  "generation": 20261101162300,
-  "git_commit_at_stamp": "f7d6fc738f9460d8debebcaaed0281b2f6462ff6",
+  "generated_at_unix": 1793592440,
+  "generation": 20261102130720,
+  "git_commit_at_stamp": "0f490ab54d540dc5c748086e49911a7b7137e1f0",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "06a5773c497ebe91921a360a250fe0e467689aa033ab76905442433ae009cd04"
+      "sha256": "987c1c178637672f65d5fbaeb64a7b8a97a7000be941031655aa34ff47eecf38"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "734478902e7b3b93c5d060aac9aa6f1e2a8d3bd256897ef686376e58fd03242f"
+      "sha256": "d75cfc6c62b82bd2de57da32a5a42781a501ee1bb5d520e25d9c5ab56f1fcfbe"
     },
     {
       "path": "data/pages.json",
-      "sha256": "d526d0e8cbfbe77ed0b002b9f80684550bebbeacaa58105702fd9ce3e9029324"
+      "sha256": "d6acf726b64f8afd541c697a6ec048ea45215a45d536e27419719723a6b4fc78"
     },
     {
       "path": "index.html",
-      "sha256": "a26fb160509c8041b0e1434f33bd5562810e6883dccaf973e0a4955b179bd8bc"
+      "sha256": "306c7d7c551f0e93f7b9e622fa81b5161fb2a13a1e7bc0ec5255579ed8611562"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "41f2f2f42ec81969552003584ac4fb3a9e6ed7819ef1296f9ef8ac6fa0b70f4b"
+      "sha256": "6bd16be4c3fdfd9a5e86dd75c494d355a90715a67ea6e849832ed9d600b774df"
     },
     {
       "path": "updates.html",
-      "sha256": "8ad3bf275677d91888577605ff4dc3ca555db42875af99bc4e7d2408d1702cd0"
+      "sha256": "1df8d0d755dfd861d94e5ed4fa2703b6b9246cffd543932560c327d0543bf16c"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "419f96ac257a9d37826ac1834ac20a1154254998cdee4acf684c507273d9d5c0",
+      "content_sha256": "67321b2f8906b917444f231561cfea6d48797ff56be29a8e1beac2cc7d60e2a2",
       "path": "index.html",
-      "sha256": "a26fb160509c8041b0e1434f33bd5562810e6883dccaf973e0a4955b179bd8bc",
+      "sha256": "306c7d7c551f0e93f7b9e622fa81b5161fb2a13a1e7bc0ec5255579ed8611562",
       "url": "/"
     },
     {
-      "content_sha256": "220bd9eb335a95cb2a8250bda35659150f5a553e3822e9fdfcd316bf86e8cafa",
+      "content_sha256": "b32850709b76804c02e7d12a4cad2a0b6c45dfbaf12792a27b3ca1ad69b14052",
       "path": "updates.html",
-      "sha256": "8ad3bf275677d91888577605ff4dc3ca555db42875af99bc4e7d2408d1702cd0",
+      "sha256": "1df8d0d755dfd861d94e5ed4fa2703b6b9246cffd543932560c327d0543bf16c",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "7283861579214d7c72919ec8e2de4f0a32f1d0fef0c0a5bd770ee42d34b5baf8",
+      "content_sha256": "9fd272b98379bbec5d90f3238859595b48f1adac678550249965eb7254e9d037",
       "path": "c034.html",
-      "sha256": "06a5773c497ebe91921a360a250fe0e467689aa033ab76905442433ae009cd04",
+      "sha256": "987c1c178637672f65d5fbaeb64a7b8a97a7000be941031655aa34ff47eecf38",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "9f64c5aa65e5b81afc1f760b73b17640b9aa21b2f5881b3358a0586cc1e1bc20",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "b9d9faff1a08f847ab4c4feb744d4a2a56f95799cca0c8e38b6239b946bdcdcc",
+      "path": "blog/20261102-iwata-shaden-date-notes/index.html",
+      "sha256": "1883fb8f1322c457d7d7dc99963e0d50380446245e206c405051020a2e9c9799",
+      "url": "/blog/20261102-iwata-shaden-date-notes"
     },
     {
       "content_sha256": "e0a7ccaf19a1c0935f088f5356041fc04f8a31029f9e0c2eafcfbc766701a2d3",
@@ -814,23 +820,17 @@
       "path": "blog/20260908-two-theories-kinosaki-castle/index.html",
       "sha256": "03dbd18429da8a26b64672fcc7f7788df414bae9ac9b3302ef3338e1dd24b648",
       "url": "/blog/20260908-two-theories-kinosaki-castle"
-    },
-    {
-      "content_sha256": "3d76b930da9fae0c7ce7b3c436148496f27a0c9eacb7d5e7543f8162346d1a0d",
-      "path": "blog/20260908-ndl-kotenseki-fulltext/index.html",
-      "sha256": "3477601a99de3b1e1ab88508c58c23f9770f7e15da20a446feb8ebb82fcd1f98",
-      "url": "/blog/20260908-ndl-kotenseki-fulltext"
     }
   ],
   "schema": 1,
-  "state_hash": "3f950a14b959bcec387c5230c04f7ea279557c969ff79a59f0e965bceed71180",
+  "state_hash": "771c1149db4d46ea6df99e5b6396d710a689db9a9b11489ab16366b1eaf0214f",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1117,
-    "new_articles": 1282,
-    "new_articles_sha256": "734478902e7b3b93c5d060aac9aa6f1e2a8d3bd256897ef686376e58fd03242f",
-    "pages_sha256": "d526d0e8cbfbe77ed0b002b9f80684550bebbeacaa58105702fd9ce3e9029324",
-    "pages_total": 1190,
-    "published_pages": 1189
+    "new_articles": 1283,
+    "new_articles_sha256": "d75cfc6c62b82bd2de57da32a5a42781a501ee1bb5d520e25d9c5ab56f1fcfbe",
+    "pages_sha256": "d6acf726b64f8afd541c697a6ec048ea45215a45d536e27419719723a6b4fc78",
+    "pages_total": 1191,
+    "published_pages": 1190
   }
 }
