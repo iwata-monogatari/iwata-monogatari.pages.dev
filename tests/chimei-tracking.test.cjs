@@ -1,10 +1,10 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const source=fs.readFileSync('assets/js/chimei.js','utf8');
-function run(search,hostname='iwata-monogatari.net'){
+function run(search,hostname='iwata-monogatari.net',entry='hub_bottom'){
  const fields=[],events=[],handlers={};
  const form={appendChild(x){fields.push(x);},addEventListener(type,fn){handlers[type]=fn;}};
  const link={href:'https://fudosan.atawi.link/karte/?area=磐田市&chimei=hub_bottom',addEventListener(){}};
- const element={dataset:{chimeiEntry:'hub_bottom'},querySelector(s){return s==='form'?form:link;}};
+ const element={dataset:{chimeiEntry:entry},querySelector(s){return s==='form'?form:link;}};
  vm.runInNewContext(source,{URL,URLSearchParams,location:{search,hostname},navigator:{webdriver:false},window:{fgaTrack(name){events.push(name);}},document:{querySelectorAll(){return [element];},createElement(){return {};}}});
  handlers.submit();return {fields,events,link};
 }
@@ -16,4 +16,10 @@ test('QA uses the receiver-supported ignore flag and cannot count source clicks'
 });
 test('ordinary click only records a fixed public entry code without selected address data',()=>{
  const s=run('');assert.deepEqual(s.events,['chimei_hub_bottom_click']);assert.equal(s.fields.length,0);
+});
+test('expanded guide and region entries count fixed codes while rejecting an arbitrary source',()=>{
+ for(const entry of ['fukude_bottom','toyooka_early','missing-aza_bottom','similar-names_early']){
+  assert.deepEqual(run('','iwata-monogatari.net',entry).events,['chimei_'+entry.replace(/-/g,'_')+'_click']);
+ }
+ assert.deepEqual(run('','iwata-monogatari.net','private_person_bottom').events,[]);
 });
