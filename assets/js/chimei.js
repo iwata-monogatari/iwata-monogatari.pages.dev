@@ -1,7 +1,7 @@
 /* Public campaign codes only. No parcel, contact value, or new persistent identifier. */
 (function(){'use strict';
 var p=new URLSearchParams(location.search),qa=p.get('fga_internal')==='1'||p.get('fga_ignore')==='1'||navigator.webdriver||/^(localhost|127\.0\.0\.1)$/.test(location.hostname)||location.hostname.endsWith('.pages.dev');
-var ids=['hub','aza-chiban','kazei-meisaisho','old-address','m149','n053','r019','t006','u045','u049','u055','u056','fukude','toyooka','missing-aza','similar-names','iwata-area','ofuji','mukasa','ikago','ikkanji'];
+var ids=['hub','aza-chiban','kazei-meisaisho','old-address','m149','n053','r019','t006','u045','u049','u055','u056','fukude','toyooka','missing-aza','similar-names','iwata-area','ofuji','mukasa','ikago','ikkanji','tenryu','tahara','imanoura','hiramatsu-kakeshita-irisaku','oidaira'];
 function track(el){var entry=el.dataset.chimeiEntry;if(qa||!entry||!ids.some(function(id){return ['early','document','bottom'].some(function(pos){return entry===id+'_'+pos;});}))return;if(typeof window.fgaTrack==='function')window.fgaTrack('chimei_'+entry.replace(/-/g,'_')+'_click');}
 document.querySelectorAll('[data-chimei-entry]').forEach(function(el){var form=el.querySelector('form'),link=el.querySelector('[data-chimei-link]');if(qa){if(form){var input=document.createElement('input');input.type='hidden';input.name='fga_ignore';input.value='1';form.appendChild(input);}if(link){var u=new URL(link.href);u.searchParams.set('fga_ignore','1');link.href=u.href;}}if(form)form.addEventListener('submit',function(){track(el);});if(link)link.addEventListener('click',function(){track(el);});});
 })();

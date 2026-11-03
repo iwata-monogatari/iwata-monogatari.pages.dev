@@ -1,0 +1,247 @@
+{
+  "tenryu": {
+    "town": "磐田市天龍",
+    "geocoder_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A3%90%E7%94%B0%E5%B8%82%E5%A4%A9%E9%BE%8D",
+    "geocoder_result": [
+      {
+        "geometry": {
+          "coordinates": [
+            137.84256,
+            34.706367
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {
+          "addressCode": "",
+          "title": "静岡県磐田市天龍"
+        }
+      }
+    ],
+    "center": [
+      137.84256,
+      34.706367
+    ],
+    "zoom": 16,
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57859/26022.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57860/26022.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57861/26022.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57862/26022.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57859/26023.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57860/26023.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57861/26023.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57862/26023.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57859/26024.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57860/26024.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57861/26024.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57862/26024.jpg"
+    ],
+    "source": "https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto",
+    "terms": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "retrieved": "2026-11-03",
+    "changes": "タイル結合・縮小・WebP変換。北が上。色調・内容の変更なし。",
+    "capture_date": "撮影時期は画像によって異なる。取得日を撮影日として表示しない。",
+    "outputs": [
+      "assets/chimei/photos/tenryu-480.webp",
+      "assets/chimei/photos/tenryu-960.webp",
+      "assets/chimei/photos/tenryu-1024.webp"
+    ]
+  },
+  "tahara": {
+    "town": "磐田市三ケ野",
+    "geocoder_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A3%90%E7%94%B0%E5%B8%82%E4%B8%89%E3%82%B1%E9%87%8E",
+    "geocoder_result": [
+      {
+        "geometry": {
+          "coordinates": [
+            137.887421,
+            34.735416
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {
+          "addressCode": "",
+          "title": "静岡県磐田市三ケ野"
+        }
+      }
+    ],
+    "center": [
+      137.887421,
+      34.735416
+    ],
+    "zoom": 16,
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57867/26016.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57868/26016.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57869/26016.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57870/26016.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57867/26017.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57868/26017.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57869/26017.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57870/26017.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57867/26018.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57868/26018.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57869/26018.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57870/26018.jpg"
+    ],
+    "source": "https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto",
+    "terms": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "retrieved": "2026-11-03",
+    "changes": "タイル結合・縮小・WebP変換。北が上。色調・内容の変更なし。",
+    "capture_date": "撮影時期は画像によって異なる。取得日を撮影日として表示しない。",
+    "outputs": [
+      "assets/chimei/photos/tahara-480.webp",
+      "assets/chimei/photos/tahara-960.webp",
+      "assets/chimei/photos/tahara-1024.webp"
+    ]
+  },
+  "imanoura": {
+    "town": "磐田市今之浦三丁目",
+    "geocoder_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A3%90%E7%94%B0%E5%B8%82%E4%BB%8A%E4%B9%8B%E6%B5%A6%E4%B8%89%E4%B8%81%E7%9B%AE",
+    "geocoder_result": [
+      {
+        "geometry": {
+          "coordinates": [
+            137.858154,
+            34.71912
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {
+          "addressCode": "",
+          "title": "静岡県磐田市今之浦三丁目"
+        }
+      }
+    ],
+    "center": [
+      137.858154,
+      34.71912
+    ],
+    "zoom": 16,
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57862/26019.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57863/26019.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57864/26019.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57865/26019.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57862/26020.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57863/26020.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57864/26020.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57865/26020.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57862/26021.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57863/26021.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57864/26021.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57865/26021.jpg"
+    ],
+    "source": "https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto",
+    "terms": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "retrieved": "2026-11-03",
+    "changes": "タイル結合・縮小・WebP変換。北が上。色調・内容の変更なし。",
+    "capture_date": "撮影時期は画像によって異なる。取得日を撮影日として表示しない。",
+    "outputs": [
+      "assets/chimei/photos/imanoura-480.webp",
+      "assets/chimei/photos/imanoura-960.webp",
+      "assets/chimei/photos/imanoura-1024.webp"
+    ]
+  },
+  "hiramatsu-kakeshita-irisaku": {
+    "town": "磐田市平松掛下入作",
+    "geocoder_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A3%90%E7%94%B0%E5%B8%82%E5%B9%B3%E6%9D%BE%E6%8E%9B%E4%B8%8B%E5%85%A5%E4%BD%9C",
+    "geocoder_result": [
+      {
+        "geometry": {
+          "coordinates": [
+            137.847214,
+            34.792999
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {
+          "addressCode": "",
+          "title": "静岡県磐田市平松掛下入作"
+        }
+      }
+    ],
+    "center": [
+      137.847214,
+      34.792999
+    ],
+    "zoom": 16,
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57860/26003.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57861/26003.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57862/26003.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57863/26003.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57860/26004.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57861/26004.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57862/26004.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57863/26004.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57860/26005.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57861/26005.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57862/26005.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57863/26005.jpg"
+    ],
+    "source": "https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto",
+    "terms": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "retrieved": "2026-11-03",
+    "changes": "タイル結合・縮小・WebP変換。北が上。色調・内容の変更なし。",
+    "capture_date": "撮影時期は画像によって異なる。取得日を撮影日として表示しない。",
+    "outputs": [
+      "assets/chimei/photos/hiramatsu-kakeshita-irisaku-480.webp",
+      "assets/chimei/photos/hiramatsu-kakeshita-irisaku-960.webp",
+      "assets/chimei/photos/hiramatsu-kakeshita-irisaku-1024.webp"
+    ]
+  },
+  "oidaira": {
+    "town": "磐田市大平",
+    "geocoder_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A3%90%E7%94%B0%E5%B8%82%E5%A4%A7%E5%B9%B3",
+    "geocoder_result": [
+      {
+        "geometry": {
+          "coordinates": [
+            137.871948,
+            34.859097
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {
+          "addressCode": "",
+          "title": "静岡県磐田市大平"
+        }
+      }
+    ],
+    "center": [
+      137.871948,
+      34.859097
+    ],
+    "zoom": 16,
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57864/25988.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57865/25988.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57866/25988.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57867/25988.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57864/25989.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57865/25989.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57866/25989.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57867/25989.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57864/25990.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57865/25990.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57866/25990.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57867/25990.jpg"
+    ],
+    "source": "https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto",
+    "terms": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "retrieved": "2026-11-03",
+    "changes": "タイル結合・縮小・WebP変換。北が上。色調・内容の変更なし。",
+    "capture_date": "撮影時期は画像によって異なる。取得日を撮影日として表示しない。",
+    "outputs": [
+      "assets/chimei/photos/oidaira-480.webp",
+      "assets/chimei/photos/oidaira-960.webp",
+      "assets/chimei/photos/oidaira-1024.webp"
+    ]
+  }
+}

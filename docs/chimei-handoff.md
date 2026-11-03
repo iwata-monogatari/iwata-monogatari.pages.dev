@@ -31,3 +31,7 @@ m149＝旧見付学校、n053＝府八幡宮楼門、r019＝旧掛塚郵便局�
 ## さらに5ページの追加（2026-11-03）
 
 `/chimei/iwata-area/`（岩田・匂坂・寺谷）、`/chimei/ofuji/`（大藤・大久保・藤上原）、`/chimei/mukasa/`（向笠）を地域別に追加し、地域別は13ページ。個別地名の入口として `/chimei/ikago/`（五十子）と `/chimei/ikkanji/`（壱貫地）を追加。手引き5ページは保持。5点の航空写真と位置照合は `assets/chimei/photos/expansion2-credits.json`。五十子・壱貫地の由来は市立図書館の公開回答を紹介した範囲であり、原資料を直接検証したと扱わない。町名コード11件（匂坂上・中・新、寺谷、大久保、藤上原、向笠新屋・竹之内・西、五十子、壱貫地）を受信側と対で追加し、計45件。これらの記事・写真・固定コードも保持し、同じ記事や更新履歴を重複させない。作業証拠は元の依頼フォルダー `outputs/expansion2/` と `outputs/future-reference.json` を参照。
+
+## 追加の5ページ：天竜・田原・今之浦ほか（2026-11-03）
+
+`/chimei/tenryu/`、`/chimei/tahara/`、`/chimei/imanoura/` を地域別に追加し計16ページ。`/chimei/hiramatsu-kakeshita-irisaku/`、`/chimei/oidaira/` を個別地名に追加し計4ページ。手引き5ページは保持。各1点の航空写真・位置照合・出典は `assets/chimei/photos/expansion3-credits.json`。天竜地区と大字天龍を区別し、平松掛下入作は六文字一つの大字名として保持。大平はおいだいら。今之浦の一〜五丁目も省略せず引き継ぐ。固定コード13件を受信側と対で追加し計58件。町名だけの申込みを認めず番地・地番必須を維持。既存地域記事の原文・公開日・写真を変更せず、追記や同義記事の重複を避ける。証拠は依頼フォルダー `outputs/expansion3/verification.json` と `outputs/future-reference.json`。
