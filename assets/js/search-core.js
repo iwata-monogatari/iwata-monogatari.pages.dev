@@ -38,7 +38,9 @@
   }
   function metadataMatch(doc, term) {
     if (doc.ids.includes(idKey(term))) return { score: 2000, reason: '記事IDに一致' };
-    if (doc.title.includes(term)) return { score: 500, reason: '題名に一致' };
+    if (doc.title.includes(term)) return partialReadingTitleMatch(doc.title, term)
+      ? { score: 180, reason: '題名の読みの一部に一致' }
+      : { score: 500, reason: '題名に一致' };
     if (doc.aliases.some(t => t.includes(term))) return { score: 140, reason: '旧題名に一致' };
     const reading = doc.readings.find(r => r.value === term);
     if (reading) return { score: doc.title.includes(normalize(reading.entity.preferredLabel)) ? 400 : 120, reason: `読み（${reading.entity.entityType === 'district' ? '地区' : '人物'}：${reading.entity.preferredLabel}）に一致` };
@@ -49,10 +51,18 @@
     if (doc.description.includes(term)) return { score: 30, reason: '説明に一致' };
     return null;
   }
+  // A short kana query inside a longer parenthesized reading is a prefix match,
+  // not the whole place-name. Keep exact/confirmed readings ahead of it.
+  function partialReadingTitleMatch(title, term) {
+    if (!/^[ぁ-ゖー]+$/.test(term)) return false;
+    const pattern = /\(([ぁ-ゖー0-9]+)\)/g;
+    if (title.replace(pattern, '').includes(term)) return false;
+    return [...title.matchAll(pattern)].some(match => match[1] !== term && match[1].includes(term));
+  }
   function score(doc, query, matches) {
     let score = matches.reduce((sum, match) => sum + match.score, 0);
     if (doc.title === normalize(query.q) || doc.aliases.includes(normalize(query.q)) || doc.ids.includes(idKey(query.q))) score += 100000;
-    else if (doc.title.includes(normalize(query.q)) && query.q) score += 500;
+    else if (doc.title.includes(normalize(query.q)) && query.q && !partialReadingTitleMatch(doc.title, normalize(query.q))) score += 500;
     return { ...doc.record, score, reasons: [...new Set(matches.map(m => m.reason))] };
   }
   function sort(results, query) {

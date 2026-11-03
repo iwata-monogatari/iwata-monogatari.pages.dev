@@ -15,7 +15,11 @@ def render(data):
   for r in subset:
    labels=' '.join(x['label'] for x in r['address_sources']);search=r['name']+' '+r['reading']+' '+r['kana']
    related=r['related'] or '/search/?q='+__import__('urllib.parse',fromlist=['quote']).quote(r['name'])
-   pieces.append('<li class="town-record" id="town-'+r['id']+'" data-town-id="'+r['id']+'" data-town-search="'+esc(search)+'" data-town-areas="'+esc(labels)+'"><p class="town-name"><strong>'+esc(r['name'])+'</strong></p><p class="town-reading">'+esc(r['reading'])+'</p><p><a href="'+esc(related)+'">'+esc(r['related_label'])+'</a></p><p class="town-transfer" data-chimei-entry="towns_document"><a data-chimei-link referrerpolicy="origin" href="https://fudosan.atawi.link/karte/?area=%E7%A3%90%E7%94%B0%E5%B8%82&amp;chimei=towns_document&amp;chimei_town='+r['code']+'">この町名で実家カルテへ</a></p>')
+   detail=r.get('detail')
+   name_html=('<a href="'+esc(detail)+'">'+esc(r['name'])+'</a>') if detail else esc(r['name'])
+   detail_link=('<p><a class="town-detail-link" href="'+esc(detail)+'">個別解説を読む</a></p>') if detail else ''
+   related_link=('<p><a href="'+esc(related)+'">'+esc(r['related_label'])+'</a></p>') if related!=detail else ''
+   pieces.append('<li class="town-record" id="town-'+r['id']+'" data-town-id="'+r['id']+'" data-town-search="'+esc(search)+'" data-town-areas="'+esc(labels)+'"><p class="town-name"><strong>'+name_html+'</strong></p><p class="town-reading">'+esc(r['reading'])+'</p>'+detail_link+related_link+'<p class="town-transfer" data-chimei-entry="towns_document"><a data-chimei-link referrerpolicy="origin" href="https://fudosan.atawi.link/karte/?area=%E7%A3%90%E7%94%B0%E5%B8%82&amp;chimei=towns_document&amp;chimei_town='+r['code']+'">この町名で実家カルテへ</a></p>')
    if labels:pieces.append('<p class="town-source-links">住所の照合先：'+' ／ '.join('<a href="'+esc(x['url'])+'">'+x['label']+'</a>' for x in r['address_sources'])+'</p>')
    pieces.append('</li>')
   pieces.append('</ul></section>')
