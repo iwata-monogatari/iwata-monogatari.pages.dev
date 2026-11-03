@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-10-25",
+  "updated_at": "2026-11-03",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -9257,7 +9257,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-06",
-      "updated_at": "2026-08-06",
+      "updated_at": "2026-11-03",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -10554,7 +10554,8 @@
       "parent": "r016.html",
       "count_as_knowledge": true,
       "show_in_updates": true,
-      "show_in_all_articles": true
+      "show_in_all_articles": true,
+      "updated_at": "2026-11-03"
     },
     {
       "title": "太古の竜洋と大の浦 ── 海と砂地がつくった土地の記憶",
@@ -11865,7 +11866,7 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "updated_at": "2026-07-10"
+      "updated_at": "2026-11-03"
     },
     {
       "title": "池田荘と「葛巻」 ── 地名に残る中世の荘園",
@@ -12999,7 +13000,7 @@
       "count_as_knowledge": true,
       "show_in_updates": true,
       "show_in_all_articles": true,
-      "updated_at": "2026-08-19",
+      "updated_at": "2026-11-03",
       "topics": [
         "地名",
         "町名の由来",
@@ -17435,7 +17436,7 @@
       ],
       "content_type": "reference",
       "published_at": "2026-07-10",
-      "updated_at": "2026-07-10",
+      "updated_at": "2026-11-03",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -17593,7 +17594,7 @@
       ],
       "content_type": "index",
       "published_at": "2026-07-10",
-      "updated_at": "2026-07-10",
+      "updated_at": "2026-11-03",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -28747,7 +28748,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-19",
-      "updated_at": "2026-08-19",
+      "updated_at": "2026-11-03",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -28884,7 +28885,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-19",
-      "updated_at": "2026-08-19",
+      "updated_at": "2026-11-03",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -29197,7 +29198,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-19",
-      "updated_at": "2026-08-19",
+      "updated_at": "2026-11-03",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -29231,7 +29232,7 @@
       ],
       "content_type": "article",
       "published_at": "2026-08-19",
-      "updated_at": "2026-08-19",
+      "updated_at": "2026-11-03",
       "date_provisional": false,
       "status": "published",
       "count_as_knowledge": true,
@@ -33466,6 +33467,130 @@
       "count_as_knowledge": false,
       "show_in_updates": true,
       "show_in_all_articles": false
+    },
+    {
+      "title": "磐田の地名解説",
+      "url": "chimei/",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "index",
+      "published_at": "2026-11-03",
+      "updated_at": "2026-11-03",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田の地名の読み方・小字・旧村名を既存の郷土資料から調べ、実家の課税明細書や登記書類の所在・地番を確認する入口。",
+      "parent": "index.html",
+      "count_as_knowledge": false,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "topics": [
+        "地名",
+        "読み方",
+        "大字",
+        "小字",
+        "地番",
+        "課税明細書",
+        "旧住所"
+      ],
+      "level": "L2"
+    },
+    {
+      "title": "大字・小字・地番の違い｜磐田の地名解説",
+      "url": "chimei/aza-chiban/",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reference",
+      "published_at": "2026-11-03",
+      "updated_at": "2026-11-03",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "大字・小字・地番を分けて読み、磐田の実家や土地の書類で現在の所在地を確認するための手引き。",
+      "parent": "chimei/",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "topics": [
+        "地名",
+        "読み方",
+        "大字",
+        "小字",
+        "地番",
+        "課税明細書",
+        "旧住所"
+      ],
+      "level": "L2"
+    },
+    {
+      "title": "課税明細書で所在・地番を確認する｜磐田の地名解説",
+      "url": "chimei/kazei-meisaisho/",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reference",
+      "published_at": "2026-11-03",
+      "updated_at": "2026-11-03",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "課税明細書の土地の所在・地番を確認する順番を、架空の記載例で説明。通知書の宛先・家屋番号との違いも整理。",
+      "parent": "chimei/",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "topics": [
+        "地名",
+        "読み方",
+        "大字",
+        "小字",
+        "地番",
+        "課税明細書",
+        "旧住所"
+      ],
+      "level": "L2"
+    },
+    {
+      "title": "古い住所と現在の町名を照合する｜磐田の地名解説",
+      "url": "chimei/old-address/",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "place-name",
+        "land-memory"
+      ],
+      "content_type": "reference",
+      "published_at": "2026-11-03",
+      "updated_at": "2026-11-03",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "磐田の合併前の住所を調べる手引き。竜洋中島・竜洋稗原・豊田西之島などの変更と、個別の地番確認を分けて案内。",
+      "parent": "chimei/",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "topics": [
+        "地名",
+        "読み方",
+        "大字",
+        "小字",
+        "地番",
+        "課税明細書",
+        "旧住所"
+      ],
+      "level": "L2"
     }
   ]
 }
