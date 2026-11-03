@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1793701506,
-  "generation": 20261103192506,
-  "git_commit_at_stamp": "757046d2e558762bc99c2dd7447cbe7265096dc2",
+  "generated_at_unix": 1793704033,
+  "generation": 20261103200713,
+  "git_commit_at_stamp": "45ab27fb96a61c26660fa201ea32178b10476f9a",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -27,27 +27,27 @@
     },
     {
       "path": "_headers",
-      "sha256": "b5d6106cc09759b1c26007af9380236667be6d0275b063beeb3244944dfcad57"
+      "sha256": "60809b4f3f69f947a88d96093bd3a227f95ee381d1b059e49e451dca2c3c367b"
     },
     {
       "path": "c034.html",
-      "sha256": "983c5d2e6104649e1b071bdaaa54fd6b3783436a7598fac814f12d5a58ad842a"
+      "sha256": "ce2a4d6ca7ee2266c05076731e6366bbf57fb30a80a41c9b489e927868e57341"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "8eece43156e3db017d096c4d3cd5e125db698fc5e8b3dc1c94f7a6401d274bd4"
+      "sha256": "cd3487216032831d5797a306720187dbb5b91096b567809fbb1db37228e4dba9"
     },
     {
       "path": "data/pages.json",
-      "sha256": "76d58daeee875b2c54f94422139c0586f254d35135a51eff647b8d8a1d921ad0"
+      "sha256": "59ba962b4b614383c325a46a1bca36e640dc61e54d073ce90b4429894df65a9d"
     },
     {
       "path": "index.html",
-      "sha256": "aa51be58b6622e968d4afb5a7a3c1746bf0406b9ca1a9ea625c8ac441c8cb004"
+      "sha256": "5abb493ecf50b67742ac296d8a32023892c991ddf0cf774ae2471e873f7cf720"
     },
     {
       "path": "package.json",
-      "sha256": "68351c893c9fd5f6ded7709ae33d9c2f8d64441559f9eaea385d6714487cccc8"
+      "sha256": "c4b95a9e845f9d36c851e132b4f3305c043bc97072075d609a5e4438c03c0808"
     },
     {
       "path": "scripts/check_live_sync.py",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "20d680b446a2ef24e843c9b2f96984cce61b9fe4025e0f9e2c710315c756bb09"
+      "sha256": "0750b1c7dfa09f529df068f8f0422b72ba83f23f9362de651ac432114e03e5e5"
     },
     {
       "path": "updates.html",
-      "sha256": "d45b6a8aa9978147bc94220521dfb5c8f8b4f672ecc738ecd41abce254d3df3e"
+      "sha256": "98da7e64223b75105e9018c462a75391f0779b2178ec953ea3dfd48a24d26413"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "3afca59109e3b8a082a37a3128a14df3476a6e27bc6f43a3a9962d20103b72d4",
+      "content_sha256": "79c7e5581cb6fd52d7b446070f08ba56ffc725b5aedd4352d257ececff0520f0",
       "path": "index.html",
-      "sha256": "aa51be58b6622e968d4afb5a7a3c1746bf0406b9ca1a9ea625c8ac441c8cb004",
+      "sha256": "5abb493ecf50b67742ac296d8a32023892c991ddf0cf774ae2471e873f7cf720",
       "url": "/"
     },
     {
-      "content_sha256": "fad285af74578fc4447e927f9a87dfc996961143872990906823cb2987d58037",
+      "content_sha256": "dc58e2b6da5530ea5408c0db58a60d1778c61ccb99b43676f0cfd1a533151cef",
       "path": "updates.html",
-      "sha256": "d45b6a8aa9978147bc94220521dfb5c8f8b4f672ecc738ecd41abce254d3df3e",
+      "sha256": "98da7e64223b75105e9018c462a75391f0779b2178ec953ea3dfd48a24d26413",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "3b7dc8c3eefd4f4c5d7643de47b016943543d6f31e6595b1cbf9bb4d4f30efe0",
+      "content_sha256": "9c12ad069066c73b0063e98eb386388943a32257e7f1002bd8d2ee3ab8369cc4",
       "path": "c034.html",
-      "sha256": "983c5d2e6104649e1b071bdaaa54fd6b3783436a7598fac814f12d5a58ad842a",
+      "sha256": "ce2a4d6ca7ee2266c05076731e6366bbf57fb30a80a41c9b489e927868e57341",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,42 @@
       "path": "s025.html",
       "sha256": "9f64c5aa65e5b81afc1f760b73b17640b9aa21b2f5881b3358a0586cc1e1bc20",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "3ac503d983f97424cba3276009cce265f9c312e1ec087b7a9cdd15b72bb42a7b",
+      "path": "chimei/hitokoto/index.html",
+      "sha256": "3f9ba63e158184540c7c5d37dedc814f26a1baa7c3f38498db095254c7f3e5dc",
+      "url": "/chimei/hitokoto"
+    },
+    {
+      "content_sha256": "a8b070766155d35f84192ce64d713051c60cba26ff11c0504d2f556106d494e6",
+      "path": "chimei/ikeda/index.html",
+      "sha256": "c2c982a6ff001ff555d03b8b473dd423dea8afbd384afc1bc7f747733c318ef9",
+      "url": "/chimei/ikeda"
+    },
+    {
+      "content_sha256": "c7456db6d3ebbe156ec53bc2a23ec02ae2c7cd67ea03f6c39e631c2500ca407e",
+      "path": "chimei/manze/index.html",
+      "sha256": "b405955128557396fa884ae8b9c377feb221993db729ce9bb31744fd9327568e",
+      "url": "/chimei/manze"
+    },
+    {
+      "content_sha256": "d585c8a9632b6a9a3c170fbd30be1af7da56e792e74b27975381db9ff821c9d7",
+      "path": "chimei/minami-mikuriya/index.html",
+      "sha256": "9fb30625c0e9d67ef21e89c444017d8a10d45c2b0278a9a1a04a86b20c35506a",
+      "url": "/chimei/minami-mikuriya"
+    },
+    {
+      "content_sha256": "ad565dad8961e957fccf1b304e722479903f6a2f42d002e0ce68e33dc0316ce2",
+      "path": "chimei/tomioka/index.html",
+      "sha256": "684243421a75d9264dbff4e62daf8445bac57e5a03c0d218da4fdbbd4d14a52c",
+      "url": "/chimei/tomioka"
+    },
+    {
+      "content_sha256": "b71c5a0f63545cf0a56b287b681caa20fa0d8b5782bd974b826a09b8e5456a84",
+      "path": "chimei/towns/index.html",
+      "sha256": "47489163252ed9eda0de5b1ca72cab02fa461a089d3f8b121f556b90fe402ef4",
+      "url": "/chimei/towns"
     },
     {
       "content_sha256": "42a1f70a90a391a9151bf1a808ed31cd0fdd07ec75eeee0f2b70dcb89723ad25",
@@ -228,9 +264,9 @@
       "url": "/chimei/toyooka"
     },
     {
-      "content_sha256": "d11040659507fbd5943e2c7eb7c442481d875304a5a448ed042b8b6f38deee14",
+      "content_sha256": "6a0c9c46230d56723be25498425d2ce3b7024c5640f13c7e2a6f8732955b2a08",
       "path": "chimei/index.html",
-      "sha256": "eb7de2e071e5a73552ca7e7382a91931a525212ec1dc9cfd0ca023e5ab2803e6",
+      "sha256": "ddbca2d3186f97bac926fbf5e6c7d1cea6817346b9e3c39c2a9122d8a6c6b549",
       "url": "/chimei"
     },
     {
@@ -784,53 +820,17 @@
       "path": "blog/20260920-iwata-old-bus-routes/index.html",
       "sha256": "f7d296a07e60293e45f094a725f5c67db8c53ddf611c1408bbe26c243a9087bd",
       "url": "/blog/20260920-iwata-old-bus-routes"
-    },
-    {
-      "content_sha256": "877c35ad0a2ac37134c81cfdf0970c6649fb064c3c4f34683b88562fce4e8f97",
-      "path": "blog/20260920-shubun-higan-difference/index.html",
-      "sha256": "d6aaf9833ab8fd0e1737b5841ca86273f92d4e2acebf0bc3cd9cfc873c43e8e6",
-      "url": "/blog/20260920-shubun-higan-difference"
-    },
-    {
-      "content_sha256": "5856b34839239984e9952820b4f69e420ccb68d0ada020bb84e5b3809c961aa3",
-      "path": "blog/20260919-2-kakezuka-kaiun-rekishi-walk/index.html",
-      "sha256": "5856b34839239984e9952820b4f69e420ccb68d0ada020bb84e5b3809c961aa3",
-      "url": "/blog/20260919-2-kakezuka-kaiun-rekishi-walk"
-    },
-    {
-      "content_sha256": "cb18892c96258334665bf19180f64bdeebf6d986dcabf2a40abb95165ca2f519",
-      "path": "blog/20260919-mitsuke-post-station-walk/index.html",
-      "sha256": "3b154802c0db4513435ff2d95689bc795d398a1fb0aed45ed87e37b76fab16a0",
-      "url": "/blog/20260919-mitsuke-post-station-walk"
-    },
-    {
-      "content_sha256": "d6b0e1e3ddec57bfc7b9cc5850d46b5879a81dacdd83f52271dc59c2ed6e3c0b",
-      "path": "blog/20260918-mitsuke-school-autumn-visit/index.html",
-      "sha256": "242167473fd3b1218e0b24f4df3698b235d04fd45dd8762323d04e6a2db4c787",
-      "url": "/blog/20260918-mitsuke-school-autumn-visit"
-    },
-    {
-      "content_sha256": "fc4e2e38afb01e2a0634391ba9e2c0f30f70d04a611d8dbd1e58242f973c5859",
-      "path": "blog/20260917-ikeda-ferry-museum-visit/index.html",
-      "sha256": "494a7a9860f3ec8e4539b81a844fb126a99bd8db2d685ee0b4cc15e671a8601a",
-      "url": "/blog/20260917-ikeda-ferry-museum-visit"
-    },
-    {
-      "content_sha256": "244cb6fd5d34317b1437302cf5d21fb8de2336224818fc19f8293cf366864723",
-      "path": "blog/20260916-iwata-aviation-history/index.html",
-      "sha256": "8f57ea74a07676c1b784a165e610e16d32e4c977eb1c2fd2d54ec1fe95d1e4ee",
-      "url": "/blog/20260916-iwata-aviation-history"
     }
   ],
   "schema": 1,
-  "state_hash": "b98538ab1a4e0093ddb5ba31bd778f1c899d49716c808d8a50a08407c3b00f76",
+  "state_hash": "35c59061b552d3fbf04a3b910b78cb2b29b6b6633c3d326c0543927a7cb2faea",
   "summary": {
     "archived_pages": 1,
-    "knowledge_pages": 1134,
-    "new_articles": 1303,
-    "new_articles_sha256": "8eece43156e3db017d096c4d3cd5e125db698fc5e8b3dc1c94f7a6401d274bd4",
-    "pages_sha256": "76d58daeee875b2c54f94422139c0586f254d35135a51eff647b8d8a1d921ad0",
-    "pages_total": 1211,
-    "published_pages": 1210
+    "knowledge_pages": 1139,
+    "new_articles": 1309,
+    "new_articles_sha256": "cd3487216032831d5797a306720187dbb5b91096b567809fbb1db37228e4dba9",
+    "pages_sha256": "59ba962b4b614383c325a46a1bca36e640dc61e54d073ce90b4429894df65a9d",
+    "pages_total": 1217,
+    "published_pages": 1216
   }
 }

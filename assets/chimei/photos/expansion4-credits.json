@@ -1,0 +1,247 @@
+{
+  "minami-mikuriya": {
+    "town": "磐田市東新屋",
+    "geocoder_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A3%90%E7%94%B0%E5%B8%82%E6%9D%B1%E6%96%B0%E5%B1%8B",
+    "geocoder_result": [
+      {
+        "geometry": {
+          "coordinates": [
+            137.886993,
+            34.699833
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {
+          "addressCode": "",
+          "title": "静岡県磐田市東新屋"
+        }
+      }
+    ],
+    "center": [
+      137.886993,
+      34.699833
+    ],
+    "zoom": 16,
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57867/26024.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57868/26024.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57869/26024.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57870/26024.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57867/26025.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57868/26025.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57869/26025.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57870/26025.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57867/26026.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57868/26026.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57869/26026.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57870/26026.jpg"
+    ],
+    "source": "https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto",
+    "terms": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "retrieved": "2026-11-03",
+    "changes": "タイル結合・縮小・WebP変換。北が上。色調・内容の変更なし。",
+    "capture_date": "撮影時期は画像によって異なる。取得日を撮影日として表示しない。",
+    "outputs": [
+      "assets/chimei/photos/minami-mikuriya-480.webp",
+      "assets/chimei/photos/minami-mikuriya-960.webp",
+      "assets/chimei/photos/minami-mikuriya-1024.webp"
+    ]
+  },
+  "tomioka": {
+    "town": "磐田市富里",
+    "geocoder_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A3%90%E7%94%B0%E5%B8%82%E5%AF%8C%E9%87%8C",
+    "geocoder_result": [
+      {
+        "geometry": {
+          "coordinates": [
+            137.827042,
+            34.753639
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {
+          "addressCode": "",
+          "title": "静岡県磐田市富里"
+        }
+      }
+    ],
+    "center": [
+      137.827042,
+      34.753639
+    ],
+    "zoom": 16,
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57856/26012.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57857/26012.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57858/26012.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57859/26012.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57856/26013.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57857/26013.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57858/26013.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57859/26013.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57856/26014.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57857/26014.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57858/26014.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57859/26014.jpg"
+    ],
+    "source": "https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto",
+    "terms": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "retrieved": "2026-11-03",
+    "changes": "タイル結合・縮小・WebP変換。北が上。色調・内容の変更なし。",
+    "capture_date": "撮影時期は画像によって異なる。取得日を撮影日として表示しない。",
+    "outputs": [
+      "assets/chimei/photos/tomioka-480.webp",
+      "assets/chimei/photos/tomioka-960.webp",
+      "assets/chimei/photos/tomioka-1024.webp"
+    ]
+  },
+  "ikeda": {
+    "town": "磐田市池田",
+    "geocoder_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A3%90%E7%94%B0%E5%B8%82%E6%B1%A0%E7%94%B0",
+    "geocoder_result": [
+      {
+        "geometry": {
+          "coordinates": [
+            137.81424,
+            34.736759
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {
+          "addressCode": "",
+          "title": "静岡県磐田市池田"
+        }
+      }
+    ],
+    "center": [
+      137.81424,
+      34.736759
+    ],
+    "zoom": 16,
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57854/26016.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57855/26016.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57856/26016.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57857/26016.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57854/26017.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57855/26017.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57856/26017.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57857/26017.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57854/26018.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57855/26018.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57856/26018.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57857/26018.jpg"
+    ],
+    "source": "https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto",
+    "terms": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "retrieved": "2026-11-03",
+    "changes": "タイル結合・縮小・WebP変換。北が上。色調・内容の変更なし。",
+    "capture_date": "撮影時期は画像によって異なる。取得日を撮影日として表示しない。",
+    "outputs": [
+      "assets/chimei/photos/ikeda-480.webp",
+      "assets/chimei/photos/ikeda-960.webp",
+      "assets/chimei/photos/ikeda-1024.webp"
+    ]
+  },
+  "hitokoto": {
+    "town": "磐田市一言",
+    "geocoder_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A3%90%E7%94%B0%E5%B8%82%E4%B8%80%E8%A8%80",
+    "geocoder_result": [
+      {
+        "geometry": {
+          "coordinates": [
+            137.83577,
+            34.723446
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {
+          "addressCode": "",
+          "title": "静岡県磐田市一言"
+        }
+      }
+    ],
+    "center": [
+      137.83577,
+      34.723446
+    ],
+    "zoom": 16,
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57858/26019.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57859/26019.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57860/26019.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57861/26019.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57858/26020.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57859/26020.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57860/26020.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57861/26020.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57858/26021.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57859/26021.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57860/26021.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57861/26021.jpg"
+    ],
+    "source": "https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto",
+    "terms": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "retrieved": "2026-11-03",
+    "changes": "タイル結合・縮小・WebP変換。北が上。色調・内容の変更なし。",
+    "capture_date": "撮影時期は画像によって異なる。取得日を撮影日として表示しない。",
+    "outputs": [
+      "assets/chimei/photos/hitokoto-480.webp",
+      "assets/chimei/photos/hitokoto-960.webp",
+      "assets/chimei/photos/hitokoto-1024.webp"
+    ]
+  },
+  "manze": {
+    "town": "磐田市万瀬",
+    "geocoder_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A3%90%E7%94%B0%E5%B8%82%E4%B8%87%E7%80%AC",
+    "geocoder_result": [
+      {
+        "geometry": {
+          "coordinates": [
+            137.870682,
+            34.87542
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {
+          "addressCode": "",
+          "title": "静岡県磐田市万瀬"
+        }
+      }
+    ],
+    "center": [
+      137.870682,
+      34.87542
+    ],
+    "zoom": 16,
+    "tiles": [
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57864/25985.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57865/25985.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57866/25985.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57867/25985.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57864/25986.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57865/25986.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57866/25986.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57867/25986.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57864/25987.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57865/25987.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57866/25987.jpg",
+      "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/16/57867/25987.jpg"
+    ],
+    "source": "https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto",
+    "terms": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "retrieved": "2026-11-03",
+    "changes": "タイル結合・縮小・WebP変換。北が上。色調・内容の変更なし。",
+    "capture_date": "撮影時期は画像によって異なる。取得日を撮影日として表示しない。",
+    "outputs": [
+      "assets/chimei/photos/manze-480.webp",
+      "assets/chimei/photos/manze-960.webp",
+      "assets/chimei/photos/manze-1024.webp"
+    ]
+  }
+}

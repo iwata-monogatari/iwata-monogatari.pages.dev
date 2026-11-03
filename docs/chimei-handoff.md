@@ -35,3 +35,9 @@ m149＝旧見付学校、n053＝府八幡宮楼門、r019＝旧掛塚郵便局�
 ## 追加の5ページ：天竜・田原・今之浦ほか（2026-11-03）
 
 `/chimei/tenryu/`、`/chimei/tahara/`、`/chimei/imanoura/` を地域別に追加し計16ページ。`/chimei/hiramatsu-kakeshita-irisaku/`、`/chimei/oidaira/` を個別地名に追加し計4ページ。手引き5ページは保持。各1点の航空写真・位置照合・出典は `assets/chimei/photos/expansion3-credits.json`。天竜地区と大字天龍を区別し、平松掛下入作は六文字一つの大字名として保持。大平はおいだいら。今之浦の一〜五丁目も省略せず引き継ぐ。固定コード13件を受信側と対で追加し計58件。町名だけの申込みを認めず番地・地番必須を維持。既存地域記事の原文・公開日・写真を変更せず、追記や同義記事の重複を避ける。証拠は依頼フォルダー `outputs/expansion3/verification.json` と `outputs/future-reference.json`。
+
+## 全町名掲載と追加5ページ（2026-11-03）
+
+`/chimei/minami-mikuriya/`、`/chimei/tomioka/`、`/chimei/ikeda/` を地域別に追加し計19ページ。`/chimei/hitokoto/`、`/chimei/manze/` を個別地名に追加し計6ページ。5点の写真は `assets/chimei/photos/expansion4-credits.json`。既存記事・写真・公開日を保持し、同じ追記を重ねない。全町名索引は別途この節の追記と生成元を確認する。証拠：依頼フォルダー `outputs/expansion4/`。
+
+`/chimei/towns/` は現在の大字・町名と町丁目を網羅する機能索引（知識記事数には加算しない）。2026-11-03取得のABR市別と全国版で磐田市190レコードが一致。区分1・2の186名称を全件掲載し、区分3の大原・一言の旧区域補助情報4件は住所に連結しない。正本は `data/chimei-towns.json`、生成元は `tools/build_chimei_towns.py`、buildで正規再生成。固定町名コードは既存コードを保持し、計186件を受信側と対で許可。`towns_document` は一覧内リンク共通で、町名・個人情報を計測名へ入れない。全件の由来記事を制作済みとは扱わず、実在する地域記事へのリンクと検索を区別する。データ変更時はスナップショット・公式更新・件数・旧区域扱い・受信側・全件検査を対で更新する。c095の従来213項目は通称・一部区域等も含む既存案内として保持。

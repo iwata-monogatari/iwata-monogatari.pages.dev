@@ -1,0 +1,3442 @@
+{
+  "title": "磐田市の大字・町名一覧",
+  "verified_on": "2026-11-03",
+  "scope": "通常町字マスターの町字区分1・2（大字・町名と町丁目）。区分3の旧区域用補助情報4件は別記。",
+  "city_code": "222119",
+  "count": 186,
+  "source_rows": 190,
+  "sources": {
+    "catalog": "https://dataset.address-br.digital.go.jp/documents/f76c8904a41541708576be343fc96b24",
+    "national_catalog": "https://dataset.address-br.digital.go.jp/documents/b80e77a0e2d24e5692be4af885eb3de7",
+    "city_download": {
+      "download_url": "https://data.address-br.digital.go.jp/mt_town/city/mt_town_city222119.csv.zip",
+      "catalog_id": "f76c8904a41541708576be343fc96b24",
+      "catalog_modified": 1773182028000,
+      "zip_sha256": "ff039176ebb80d34a5cf0a6f1e1328fccd6fca744ecb6252229076e4f0c725d4",
+      "bytes": 4939,
+      "csv_members": [
+        "mt_town_city222119.csv"
+      ],
+      "total_rows": 190,
+      "iwata_rows": 190,
+      "retrieved": "2026-11-03"
+    },
+    "national_download": {
+      "download_url": "https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip",
+      "catalog_id": "b80e77a0e2d24e5692be4af885eb3de7",
+      "catalog_modified": 1793312336000,
+      "zip_sha256": "024ebd27cb5468aba6f2d862afc125113019d58abbd1128fb91118b8b2f636f1",
+      "bytes": 11549826,
+      "csv_members": [
+        "mt_town_all.csv"
+      ],
+      "total_rows": 727521,
+      "iwata_rows": 190,
+      "retrieved": "2026-11-03"
+    },
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "terms": "https://www.digital.go.jp/policies/base_registry_address_tos",
+    "address_sources": [
+      {
+        "label": "旧磐田市",
+        "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html",
+        "rows": 74,
+        "sha256": "cdbc3945fa255834f3e7fc8f65e093aca34b646a46668e74f9e17b3cb7ae3501"
+      },
+      {
+        "label": "旧福田町",
+        "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html",
+        "rows": 17,
+        "sha256": "21ae32927e9c81a0dfe090a2630dcf4de5ad58d7e8fd232a1246e1cf823bade6"
+      },
+      {
+        "label": "旧竜洋町",
+        "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html",
+        "rows": 25,
+        "sha256": "59caef270d7436f24dc2b521ea5fd81c5617f09068200b53eb888f1fab33ca5e"
+      },
+      {
+        "label": "旧豊田町",
+        "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html",
+        "rows": 29,
+        "sha256": "b1ce1d6594ac868cbaabda4c993ecf14590def632392fa1307ed455f7c0413b0"
+      },
+      {
+        "label": "旧豊岡村",
+        "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html",
+        "rows": 21,
+        "sha256": "b10c8e1ee1ebb308d4c48d0d92b7577d91d6ce42b838dba86afa84ec54335324"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "0001000",
+      "name": "赤池",
+      "kana": "アカイケ",
+      "reading": "あかいけ",
+      "parent": "赤池",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0001000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0002001",
+      "name": "安久路一丁目",
+      "kana": "アクロ１チョウメ",
+      "reading": "あくろ1ちょうめ",
+      "parent": "安久路",
+      "chome": "一丁目",
+      "type": "2",
+      "code": "abr_0002001",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01003-mikuriya",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0002002",
+      "name": "安久路二丁目",
+      "kana": "アクロ２チョウメ",
+      "reading": "あくろ2ちょうめ",
+      "parent": "安久路",
+      "chome": "二丁目",
+      "type": "2",
+      "code": "abr_0002002",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01003-mikuriya",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0003000",
+      "name": "新島",
+      "kana": "アラシマ",
+      "reading": "あらしま",
+      "parent": "新島",
+      "chome": "",
+      "type": "1",
+      "code": "arashima",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u056",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0004000",
+      "name": "家田",
+      "kana": "イエタ",
+      "reading": "いえた",
+      "parent": "家田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0004000",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0005000",
+      "name": "五十子",
+      "kana": "イカゴ",
+      "reading": "いかご",
+      "parent": "五十子",
+      "chome": "",
+      "type": "1",
+      "code": "ikago",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/chimei/ikago/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0006000",
+      "name": "池田",
+      "kana": "イケダ",
+      "reading": "いけだ",
+      "parent": "池田",
+      "chome": "",
+      "type": "1",
+      "code": "ikeda",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/chimei/ikeda/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0007000",
+      "name": "壱貫地",
+      "kana": "イッカンジ",
+      "reading": "いっかんじ",
+      "parent": "壱貫地",
+      "chome": "",
+      "type": "1",
+      "code": "ikkanji",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/chimei/ikkanji/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0008000",
+      "name": "一色",
+      "kana": "イッシキ",
+      "reading": "いっしき",
+      "parent": "一色",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0008000",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/01008-fukude",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0009001",
+      "name": "今之浦一丁目",
+      "kana": "イマノウラ１チョウメ",
+      "reading": "いまのうら1ちょうめ",
+      "parent": "今之浦",
+      "chome": "一丁目",
+      "type": "2",
+      "code": "imanoura_1",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/imanoura/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0009002",
+      "name": "今之浦二丁目",
+      "kana": "イマノウラ２チョウメ",
+      "reading": "いまのうら2ちょうめ",
+      "parent": "今之浦",
+      "chome": "二丁目",
+      "type": "2",
+      "code": "imanoura_2",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/imanoura/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0009003",
+      "name": "今之浦三丁目",
+      "kana": "イマノウラ３チョウメ",
+      "reading": "いまのうら3ちょうめ",
+      "parent": "今之浦",
+      "chome": "三丁目",
+      "type": "2",
+      "code": "imanoura_3",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/imanoura/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0009004",
+      "name": "今之浦四丁目",
+      "kana": "イマノウラ４チョウメ",
+      "reading": "いまのうら4ちょうめ",
+      "parent": "今之浦",
+      "chome": "四丁目",
+      "type": "2",
+      "code": "imanoura_4",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/imanoura/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0009005",
+      "name": "今之浦五丁目",
+      "kana": "イマノウラ５チョウメ",
+      "reading": "いまのうら5ちょうめ",
+      "parent": "今之浦",
+      "chome": "五丁目",
+      "type": "2",
+      "code": "imanoura_5",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/imanoura/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0010000",
+      "name": "岩井",
+      "kana": "イワイ",
+      "reading": "いわい",
+      "parent": "岩井",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0010000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/mukasa/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0011000",
+      "name": "岩室",
+      "kana": "イワムロ",
+      "reading": "いわむろ",
+      "parent": "岩室",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0011000",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0012000",
+      "name": "請負新田",
+      "kana": "ウケオイシンデン",
+      "reading": "うけおいしんでん",
+      "parent": "請負新田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0012000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0013000",
+      "name": "宇兵衛新田",
+      "kana": "ウヘエシンデン",
+      "reading": "うへえしんでん",
+      "parent": "宇兵衛新田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0013000",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/01008-fukude",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0014000",
+      "name": "海老島",
+      "kana": "エビジマ",
+      "reading": "えびじま",
+      "parent": "海老島",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0014000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0015000",
+      "name": "海老塚",
+      "kana": "エビツカ",
+      "reading": "えびつか",
+      "parent": "海老塚",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0015000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0016000",
+      "name": "大平",
+      "kana": "オイダイラ",
+      "reading": "おいだいら",
+      "parent": "大平",
+      "chome": "",
+      "type": "1",
+      "code": "oidaira",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/chimei/oidaira/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0017000",
+      "name": "大泉町",
+      "kana": "オオイズミチョウ",
+      "reading": "おおいずみちょう",
+      "parent": "大泉町",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0017000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01002-nakaizumi",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0018000",
+      "name": "大久保",
+      "kana": "オオクボ",
+      "reading": "おおくぼ",
+      "parent": "大久保",
+      "chome": "",
+      "type": "1",
+      "code": "okubo",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/ofuji/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0019000",
+      "name": "大立野",
+      "kana": "オオダテノ",
+      "reading": "おおだての",
+      "parent": "大立野",
+      "chome": "",
+      "type": "1",
+      "code": "odateno",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/minami-mikuriya/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0020000",
+      "name": "大当所",
+      "kana": "オオトウショ",
+      "reading": "おおとうしょ",
+      "parent": "大当所",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0020000",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0021000",
+      "name": "大中瀬",
+      "kana": "オオナカゼ",
+      "reading": "おおなかぜ",
+      "parent": "大中瀬",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0021000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0177000",
+      "name": "大谷",
+      "kana": "オオヤ",
+      "reading": "おおや",
+      "parent": "大谷",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0177000",
+      "address_sources": [],
+      "related": null,
+      "related_label": "関連記事を検索"
+    },
+    {
+      "id": "0022000",
+      "name": "大原",
+      "kana": "オオワラ",
+      "reading": "おおわら",
+      "parent": "大原",
+      "chome": "",
+      "type": "1",
+      "code": "owara",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        },
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/u055",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0023000",
+      "name": "岡",
+      "kana": "オカ",
+      "reading": "おか",
+      "parent": "岡",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0023000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0024000",
+      "name": "掛下",
+      "kana": "カケシタ",
+      "reading": "かけした",
+      "parent": "掛下",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0024000",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0025000",
+      "name": "掛塚",
+      "kana": "カケツカ",
+      "reading": "かけつか",
+      "parent": "掛塚",
+      "chome": "",
+      "type": "1",
+      "code": "kakezuka",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0026000",
+      "name": "笠梅",
+      "kana": "カサウメ",
+      "reading": "かさうめ",
+      "parent": "笠梅",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0026000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/mukasa/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0027000",
+      "name": "鎌田",
+      "kana": "カマダ",
+      "reading": "かまだ",
+      "parent": "鎌田",
+      "chome": "",
+      "type": "1",
+      "code": "kamada",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u045",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0028000",
+      "name": "上新屋",
+      "kana": "カミアラヤ",
+      "reading": "かみあらや",
+      "parent": "上新屋",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0028000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0029000",
+      "name": "上大之郷",
+      "kana": "カミオオノゴウ",
+      "reading": "かみおおのごう",
+      "parent": "上大之郷",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0029000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tenryu/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0030000",
+      "name": "上岡田",
+      "kana": "カミオカタ",
+      "reading": "かみおかた",
+      "parent": "上岡田",
+      "chome": "",
+      "type": "1",
+      "code": "kamiokata",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tenryu/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0031000",
+      "name": "上神増",
+      "kana": "カミカンゾ",
+      "reading": "かみかんぞ",
+      "parent": "上神増",
+      "chome": "",
+      "type": "1",
+      "code": "kamikanzo",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0032000",
+      "name": "上野部",
+      "kana": "カミノベ",
+      "reading": "かみのべ",
+      "parent": "上野部",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0032000",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0033000",
+      "name": "上本郷",
+      "kana": "カミホンゴウ",
+      "reading": "かみほんごう",
+      "parent": "上本郷",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0033000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0034000",
+      "name": "上万能",
+      "kana": "カミマンノウ",
+      "reading": "かみまんのう",
+      "parent": "上万能",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0034000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0035000",
+      "name": "上南田",
+      "kana": "カミミナミダ",
+      "reading": "かみみなみだ",
+      "parent": "上南田",
+      "chome": "",
+      "type": "1",
+      "code": "kamiminamida",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u049",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0036000",
+      "name": "加茂",
+      "kana": "カモ",
+      "reading": "かも",
+      "parent": "加茂",
+      "chome": "",
+      "type": "1",
+      "code": "kamo",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/chimei/tomioka/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0037000",
+      "name": "川袋",
+      "kana": "カワブクロ",
+      "reading": "かわぶくろ",
+      "parent": "川袋",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0037000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0038000",
+      "name": "神増",
+      "kana": "カンゾ",
+      "reading": "かんぞ",
+      "parent": "神増",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0038000",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/chimei/toyooka/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0039000",
+      "name": "北島",
+      "kana": "キタジマ",
+      "reading": "きたじま",
+      "parent": "北島",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0039000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tenryu/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0040001",
+      "name": "城之崎一丁目",
+      "kana": "キノサキ１チョウメ",
+      "reading": "きのさき1ちょうめ",
+      "parent": "城之崎",
+      "chome": "一丁目",
+      "type": "2",
+      "code": "abr_0040001",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01003-mikuriya",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0040002",
+      "name": "城之崎二丁目",
+      "kana": "キノサキ２チョウメ",
+      "reading": "きのさき2ちょうめ",
+      "parent": "城之崎",
+      "chome": "二丁目",
+      "type": "2",
+      "code": "abr_0040002",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01003-mikuriya",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0040003",
+      "name": "城之崎三丁目",
+      "kana": "キノサキ３チョウメ",
+      "reading": "きのさき3ちょうめ",
+      "parent": "城之崎",
+      "chome": "三丁目",
+      "type": "2",
+      "code": "abr_0040003",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01003-mikuriya",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0040004",
+      "name": "城之崎四丁目",
+      "kana": "キノサキ４チョウメ",
+      "reading": "きのさき4ちょうめ",
+      "parent": "城之崎",
+      "chome": "四丁目",
+      "type": "2",
+      "code": "abr_0040004",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01003-mikuriya",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0041000",
+      "name": "刑部島",
+      "kana": "ギョウブジマ",
+      "reading": "ぎょうぶじま",
+      "parent": "刑部島",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0041000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u056",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0042000",
+      "name": "草崎",
+      "kana": "クササキ",
+      "reading": "くささき",
+      "parent": "草崎",
+      "chome": "",
+      "type": "1",
+      "code": "kusasaki",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u056",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0043000",
+      "name": "気子島",
+      "kana": "ケゴジマ",
+      "reading": "けごじま",
+      "parent": "気子島",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0043000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0044000",
+      "name": "源平新田",
+      "kana": "ゲンベイシンデン",
+      "reading": "げんべいしんでん",
+      "parent": "源平新田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0044000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0046000",
+      "name": "国府台",
+      "kana": "コウノダイ",
+      "reading": "こうのだい",
+      "parent": "国府台",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0046000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01002-nakaizumi",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0047000",
+      "name": "小島",
+      "kana": "コジマ",
+      "reading": "こじま",
+      "parent": "小島",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0047000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u056",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0048000",
+      "name": "小立野",
+      "kana": "コダテノ",
+      "reading": "こだての",
+      "parent": "小立野",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0048000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0049000",
+      "name": "小中瀬",
+      "kana": "コナカゼ",
+      "reading": "こなかぜ",
+      "parent": "小中瀬",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0049000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0050000",
+      "name": "駒場",
+      "kana": "コマバ",
+      "reading": "こまば",
+      "parent": "駒場",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0050000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0045000",
+      "name": "合代島",
+      "kana": "ゴウダイジマ",
+      "reading": "ごうだいじま",
+      "parent": "合代島",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0045000",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0051000",
+      "name": "匂坂上",
+      "kana": "サギサカカミ",
+      "reading": "さぎさかかみ",
+      "parent": "匂坂上",
+      "chome": "",
+      "type": "1",
+      "code": "sagisaka_kami",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/iwata-area/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0052000",
+      "name": "匂坂新",
+      "kana": "サギサカシン",
+      "reading": "さぎさかしん",
+      "parent": "匂坂新",
+      "chome": "",
+      "type": "1",
+      "code": "sagisaka_shin",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/iwata-area/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0053000",
+      "name": "匂坂中",
+      "kana": "サギサカナカ",
+      "reading": "さぎさかなか",
+      "parent": "匂坂中",
+      "chome": "",
+      "type": "1",
+      "code": "sagisaka_naka",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/iwata-area/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0054000",
+      "name": "笹原島",
+      "kana": "ササハラジマ",
+      "reading": "ささはらじま",
+      "parent": "笹原島",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0054000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0055000",
+      "name": "鮫島",
+      "kana": "サメジマ",
+      "reading": "さめじま",
+      "parent": "鮫島",
+      "chome": "",
+      "type": "1",
+      "code": "samejima",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u056",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0056000",
+      "name": "塩新田",
+      "kana": "シオシンデン",
+      "reading": "しおしんでん",
+      "parent": "塩新田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0056000",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/chimei/fukude/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0057000",
+      "name": "敷地",
+      "kana": "シキジ",
+      "reading": "しきじ",
+      "parent": "敷地",
+      "chome": "",
+      "type": "1",
+      "code": "shikiji",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0058000",
+      "name": "篠原",
+      "kana": "シノワラ",
+      "reading": "しのわら",
+      "parent": "篠原",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0058000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/mukasa/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0059000",
+      "name": "下大之郷",
+      "kana": "シモオオノゴウ",
+      "reading": "しもおおのごう",
+      "parent": "下大之郷",
+      "chome": "",
+      "type": "1",
+      "code": "shimo_onogo",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u055",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0060000",
+      "name": "下岡田",
+      "kana": "シモオカタ",
+      "reading": "しもおかた",
+      "parent": "下岡田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0060000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tenryu/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0061000",
+      "name": "下神増",
+      "kana": "シモカンゾ",
+      "reading": "しもかんぞ",
+      "parent": "下神増",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0061000",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0062000",
+      "name": "下野部",
+      "kana": "シモノベ",
+      "reading": "しものべ",
+      "parent": "下野部",
+      "chome": "",
+      "type": "1",
+      "code": "shimonobe",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0063000",
+      "name": "下太",
+      "kana": "シモフト",
+      "reading": "しもふと",
+      "parent": "下太",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0063000",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/01008-fukude",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0064000",
+      "name": "下本郷",
+      "kana": "シモホンゴウ",
+      "reading": "しもほんごう",
+      "parent": "下本郷",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0064000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0065000",
+      "name": "下万能",
+      "kana": "シモマンノウ",
+      "reading": "しもまんのう",
+      "parent": "下万能",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0065000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0067000",
+      "name": "白拍子",
+      "kana": "シラビョウシ",
+      "reading": "しらびょうし",
+      "parent": "白拍子",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0067000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u056",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0068000",
+      "name": "白羽",
+      "kana": "シロワ",
+      "reading": "しろわ",
+      "parent": "白羽",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0068000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0069000",
+      "name": "新開",
+      "kana": "シンカイ",
+      "reading": "しんかい",
+      "parent": "新開",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0069000",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0070000",
+      "name": "新貝",
+      "kana": "シンガイ",
+      "reading": "しんがい",
+      "parent": "新貝",
+      "chome": "",
+      "type": "1",
+      "code": "shingai",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u045",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0070001",
+      "name": "新貝一丁目",
+      "kana": "シンガイ１チョウメ",
+      "reading": "しんがい1ちょうめ",
+      "parent": "新貝",
+      "chome": "一丁目",
+      "type": "2",
+      "code": "abr_0070001",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u045",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0070002",
+      "name": "新貝二丁目",
+      "kana": "シンガイ２チョウメ",
+      "reading": "しんがい2ちょうめ",
+      "parent": "新貝",
+      "chome": "二丁目",
+      "type": "2",
+      "code": "abr_0070002",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u045",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0070003",
+      "name": "新貝三丁目",
+      "kana": "シンガイ３チョウメ",
+      "reading": "しんがい3ちょうめ",
+      "parent": "新貝",
+      "chome": "三丁目",
+      "type": "2",
+      "code": "abr_0070003",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u045",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0071000",
+      "name": "真光寺",
+      "kana": "シンコウジ",
+      "reading": "しんこうじ",
+      "parent": "真光寺",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0071000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": null,
+      "related_label": "関連記事を検索"
+    },
+    {
+      "id": "0072000",
+      "name": "新出",
+      "kana": "シンデ",
+      "reading": "しんで",
+      "parent": "新出",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0072000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/minami-mikuriya/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0066000",
+      "name": "十郎島",
+      "kana": "ジュウロウジマ",
+      "reading": "じゅうろうじま",
+      "parent": "十郎島",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0066000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0073000",
+      "name": "須恵新田",
+      "kana": "スエシンデン",
+      "reading": "すえしんでん",
+      "parent": "須恵新田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0073000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0074000",
+      "name": "清庵新田",
+      "kana": "セイアンシンデン",
+      "reading": "せいあんしんでん",
+      "parent": "清庵新田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0074000",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/01008-fukude",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0075000",
+      "name": "清庵浜請負新田",
+      "kana": "セイアンハマウケオイシンデン",
+      "reading": "せいあんはまうけおいしんでん",
+      "parent": "清庵浜請負新田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0075000",
+      "address_sources": [],
+      "related": null,
+      "related_label": "関連記事を検索"
+    },
+    {
+      "id": "0076000",
+      "name": "千手堂",
+      "kana": "センズドウ",
+      "reading": "せんずどう",
+      "parent": "千手堂",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0076000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tenryu/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0077000",
+      "name": "惣兵衛下新田",
+      "kana": "ソウベエシモシンデン",
+      "reading": "そうべえしもしんでん",
+      "parent": "惣兵衛下新田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0077000",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0078000",
+      "name": "高木",
+      "kana": "タカギ",
+      "reading": "たかぎ",
+      "parent": "高木",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0078000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0079000",
+      "name": "高見丘",
+      "kana": "タカミガオカ",
+      "reading": "たかみがおか",
+      "parent": "高見丘",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0079000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0080000",
+      "name": "立野",
+      "kana": "タテノ",
+      "reading": "たての",
+      "parent": "立野",
+      "chome": "",
+      "type": "1",
+      "code": "tateno",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0081000",
+      "name": "玉越",
+      "kana": "タマコシ",
+      "reading": "たまこし",
+      "parent": "玉越",
+      "chome": "",
+      "type": "1",
+      "code": "tamakoshi",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tahara/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0082000",
+      "name": "太郎馬新田",
+      "kana": "タロマシンデン",
+      "reading": "たろましんでん",
+      "parent": "太郎馬新田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0082000",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/01008-fukude",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0083000",
+      "name": "寺谷",
+      "kana": "テラダニ",
+      "reading": "てらだに",
+      "parent": "寺谷",
+      "chome": "",
+      "type": "1",
+      "code": "teradani",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/iwata-area/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0084000",
+      "name": "寺谷新田",
+      "kana": "テラダニシンデン",
+      "reading": "てらだにしんでん",
+      "parent": "寺谷新田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0084000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/iwata-area/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0085000",
+      "name": "天龍",
+      "kana": "テンリュウ",
+      "reading": "てんりゅう",
+      "parent": "天龍",
+      "chome": "",
+      "type": "1",
+      "code": "tenryu",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tenryu/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0086001",
+      "name": "東新町一丁目",
+      "kana": "トウシンチョウ１チョウメ",
+      "reading": "とうしんちょう1ちょうめ",
+      "parent": "東新町",
+      "chome": "一丁目",
+      "type": "2",
+      "code": "abr_0086001",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/minami-mikuriya/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0086002",
+      "name": "東新町二丁目",
+      "kana": "トウシンチョウ２チョウメ",
+      "reading": "とうしんちょう2ちょうめ",
+      "parent": "東新町",
+      "chome": "二丁目",
+      "type": "2",
+      "code": "abr_0086002",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/minami-mikuriya/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0086003",
+      "name": "東新町三丁目",
+      "kana": "トウシンチョウ３チョウメ",
+      "reading": "とうしんちょう3ちょうめ",
+      "parent": "東新町",
+      "chome": "三丁目",
+      "type": "2",
+      "code": "abr_0086003",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/minami-mikuriya/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0087000",
+      "name": "東名",
+      "kana": "トウメイ",
+      "reading": "とうめい",
+      "parent": "東名",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0087000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0088000",
+      "name": "飛平松",
+      "kana": "トビヒラマツ",
+      "reading": "とびひらまつ",
+      "parent": "飛平松",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0088000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/r019",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0089000",
+      "name": "富丘",
+      "kana": "トミガオカ",
+      "reading": "とみがおか",
+      "parent": "富丘",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0089000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0090000",
+      "name": "富里",
+      "kana": "トミサト",
+      "reading": "とみさと",
+      "parent": "富里",
+      "chome": "",
+      "type": "1",
+      "code": "tomisato",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/chimei/tomioka/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0091000",
+      "name": "豊岡",
+      "kana": "トヨオカ",
+      "reading": "とよおか",
+      "parent": "豊岡",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0091000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0092000",
+      "name": "豊島",
+      "kana": "トヨシマ",
+      "reading": "とよしま",
+      "parent": "豊島",
+      "chome": "",
+      "type": "1",
+      "code": "toyoshima",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tenryu/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0093000",
+      "name": "豊田",
+      "kana": "トヨダ",
+      "reading": "とよだ",
+      "parent": "豊田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0093000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0094000",
+      "name": "豊田西之島",
+      "kana": "トヨダニシノシマ",
+      "reading": "とよだにしのしま",
+      "parent": "豊田西之島",
+      "chome": "",
+      "type": "1",
+      "code": "toyoda_nishinoshima",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0095000",
+      "name": "豊浜",
+      "kana": "トヨハマ",
+      "reading": "とよはま",
+      "parent": "豊浜",
+      "chome": "",
+      "type": "1",
+      "code": "toyohama",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/chimei/fukude/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0096000",
+      "name": "豊浜中野",
+      "kana": "トヨハマナカノ",
+      "reading": "とよはまなかの",
+      "parent": "豊浜中野",
+      "chome": "",
+      "type": "1",
+      "code": "toyohama_nakano",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/chimei/fukude/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0097000",
+      "name": "鳥之瀬",
+      "kana": "トリノセ",
+      "reading": "とりのせ",
+      "parent": "鳥之瀬",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0097000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01002-nakaizumi",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0099000",
+      "name": "中泉",
+      "kana": "ナカイズミ",
+      "reading": "なかいずみ",
+      "parent": "中泉",
+      "chome": "",
+      "type": "1",
+      "code": "nakaizumi",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/n053",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0099001",
+      "name": "中泉一丁目",
+      "kana": "ナカイズミ１チョウメ",
+      "reading": "なかいずみ1ちょうめ",
+      "parent": "中泉",
+      "chome": "一丁目",
+      "type": "2",
+      "code": "abr_0099001",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/n053",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0099002",
+      "name": "中泉二丁目",
+      "kana": "ナカイズミ２チョウメ",
+      "reading": "なかいずみ2ちょうめ",
+      "parent": "中泉",
+      "chome": "二丁目",
+      "type": "2",
+      "code": "abr_0099002",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/n053",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0099003",
+      "name": "中泉三丁目",
+      "kana": "ナカイズミ３チョウメ",
+      "reading": "なかいずみ3ちょうめ",
+      "parent": "中泉",
+      "chome": "三丁目",
+      "type": "2",
+      "code": "abr_0099003",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/n053",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0099004",
+      "name": "中泉四丁目",
+      "kana": "ナカイズミ４チョウメ",
+      "reading": "なかいずみ4ちょうめ",
+      "parent": "中泉",
+      "chome": "四丁目",
+      "type": "2",
+      "code": "abr_0099004",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/n053",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0101000",
+      "name": "中田",
+      "kana": "ナカダ",
+      "reading": "なかだ",
+      "parent": "中田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0101000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0102000",
+      "name": "中野",
+      "kana": "ナカノ",
+      "reading": "なかの",
+      "parent": "中野",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0102000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tenryu/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0103000",
+      "name": "中平松",
+      "kana": "ナカヒラマツ",
+      "reading": "なかひらまつ",
+      "parent": "中平松",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0103000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0100000",
+      "name": "長須賀",
+      "kana": "ナガスカ",
+      "reading": "ながすか",
+      "parent": "長須賀",
+      "chome": "",
+      "type": "1",
+      "code": "nagasuka",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u056",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0104000",
+      "name": "長森",
+      "kana": "ナガモリ",
+      "reading": "ながもり",
+      "parent": "長森",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0104000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0105000",
+      "name": "西貝塚",
+      "kana": "ニシカイヅカ",
+      "reading": "にしかいづか",
+      "parent": "西貝塚",
+      "chome": "",
+      "type": "1",
+      "code": "nishikaizuka",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u049",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0106000",
+      "name": "西島",
+      "kana": "ニシジマ",
+      "reading": "にしじま",
+      "parent": "西島",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0106000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tahara/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0107000",
+      "name": "西之島",
+      "kana": "ニシノシマ",
+      "reading": "にしのしま",
+      "parent": "西之島",
+      "chome": "",
+      "type": "1",
+      "code": "nishinoshima",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u049",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0108000",
+      "name": "西平松",
+      "kana": "ニシヒラマツ",
+      "reading": "にしひらまつ",
+      "parent": "西平松",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0108000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0109000",
+      "name": "二之宮",
+      "kana": "ニノミヤ",
+      "reading": "にのみや",
+      "parent": "二之宮",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0109000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01002-nakaizumi",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0110000",
+      "name": "二之宮浅間",
+      "kana": "ニノミヤセンゲン",
+      "reading": "にのみやせんげん",
+      "parent": "二之宮浅間",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0110000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01002-nakaizumi",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0111000",
+      "name": "二之宮東",
+      "kana": "ニノミヤヒガシ",
+      "reading": "にのみやひがし",
+      "parent": "二之宮東",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0111000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01002-nakaizumi",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0112000",
+      "name": "野箱",
+      "kana": "ノバコ",
+      "reading": "のばこ",
+      "parent": "野箱",
+      "chome": "",
+      "type": "1",
+      "code": "nobako",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u056",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0113000",
+      "name": "浜新田",
+      "kana": "ハマシンデン",
+      "reading": "はましんでん",
+      "parent": "浜新田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0113000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0114000",
+      "name": "浜部",
+      "kana": "ハマベ",
+      "reading": "はまべ",
+      "parent": "浜部",
+      "chome": "",
+      "type": "1",
+      "code": "hamabe",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u055",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0115000",
+      "name": "稗原",
+      "kana": "ヒエバラ",
+      "reading": "ひえばら",
+      "parent": "稗原",
+      "chome": "",
+      "type": "1",
+      "code": "hiebara",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u045",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0116000",
+      "name": "東新屋",
+      "kana": "ヒガシアラヤ",
+      "reading": "ひがしあらや",
+      "parent": "東新屋",
+      "chome": "",
+      "type": "1",
+      "code": "higashi_araya",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/minami-mikuriya/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0117000",
+      "name": "東貝塚",
+      "kana": "ヒガシカイヅカ",
+      "reading": "ひがしかいづか",
+      "parent": "東貝塚",
+      "chome": "",
+      "type": "1",
+      "code": "higashikaizuka",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u045",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0118000",
+      "name": "東小島",
+      "kana": "ヒガシコジマ",
+      "reading": "ひがしこじま",
+      "parent": "東小島",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0118000",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/chimei/fukude/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0119000",
+      "name": "東原",
+      "kana": "ヒガシバラ",
+      "reading": "ひがしばら",
+      "parent": "東原",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0119000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0120000",
+      "name": "東平松",
+      "kana": "ヒガシヒラマツ",
+      "reading": "ひがしひらまつ",
+      "parent": "東平松",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0120000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0121000",
+      "name": "東山",
+      "kana": "ヒガシヤマ",
+      "reading": "ひがしやま",
+      "parent": "東山",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0121000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": null,
+      "related_label": "関連記事を検索"
+    },
+    {
+      "id": "0122000",
+      "name": "東脇",
+      "kana": "ヒガシワキ",
+      "reading": "ひがしわき",
+      "parent": "東脇",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0122000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/minami-mikuriya/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0123000",
+      "name": "彦島",
+      "kana": "ヒコジマ",
+      "reading": "ひこじま",
+      "parent": "彦島",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0123000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tahara/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0124000",
+      "name": "一言",
+      "kana": "ヒトコト",
+      "reading": "ひとこと",
+      "parent": "一言",
+      "chome": "",
+      "type": "1",
+      "code": "hitokoto",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        },
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/chimei/hitokoto/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0125000",
+      "name": "平間",
+      "kana": "ヒラマ",
+      "reading": "ひらま",
+      "parent": "平間",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0125000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0126000",
+      "name": "平松",
+      "kana": "ヒラマツ",
+      "reading": "ひらまつ",
+      "parent": "平松",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0126000",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0127000",
+      "name": "平松掛下入作",
+      "kana": "ヒラマツカケシタイリサク",
+      "reading": "ひらまつかけしたいりさく",
+      "parent": "平松掛下入作",
+      "chome": "",
+      "type": "1",
+      "code": "hiramatsu_kakeshita_irisaku",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/hiramatsu-kakeshita-irisaku/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0128000",
+      "name": "蛭池",
+      "kana": "ヒルイケ",
+      "reading": "ひるいけ",
+      "parent": "蛭池",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0128000",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/01008-fukude",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0129000",
+      "name": "福田",
+      "kana": "フクデ",
+      "reading": "ふくで",
+      "parent": "福田",
+      "chome": "",
+      "type": "1",
+      "code": "fukude",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/chimei/fukude/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0130000",
+      "name": "福田中島",
+      "kana": "フクデナカジマ",
+      "reading": "ふくでなかじま",
+      "parent": "福田中島",
+      "chome": "",
+      "type": "1",
+      "code": "fukude_nakajima",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/chimei/fukude/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0131000",
+      "name": "藤上原",
+      "kana": "フジカンバラ",
+      "reading": "ふじかんばら",
+      "parent": "藤上原",
+      "chome": "",
+      "type": "1",
+      "code": "fujikambara",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/ofuji/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0132000",
+      "name": "富士見台",
+      "kana": "フジミダイ",
+      "reading": "ふじみだい",
+      "parent": "富士見台",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0132000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01001-mitsuke",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0133001",
+      "name": "富士見町一丁目",
+      "kana": "フジミチョウ１チョウメ",
+      "reading": "ふじみちょう1ちょうめ",
+      "parent": "富士見町",
+      "chome": "一丁目",
+      "type": "2",
+      "code": "abr_0133001",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01001-mitsuke",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0133002",
+      "name": "富士見町二丁目",
+      "kana": "フジミチョウ２チョウメ",
+      "reading": "ふじみちょう2ちょうめ",
+      "parent": "富士見町",
+      "chome": "二丁目",
+      "type": "2",
+      "code": "abr_0133002",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01001-mitsuke",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0133003",
+      "name": "富士見町三丁目",
+      "kana": "フジミチョウ３チョウメ",
+      "reading": "ふじみちょう3ちょうめ",
+      "parent": "富士見町",
+      "chome": "三丁目",
+      "type": "2",
+      "code": "abr_0133003",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01001-mitsuke",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0133004",
+      "name": "富士見町四丁目",
+      "kana": "フジミチョウ４チョウメ",
+      "reading": "ふじみちょう4ちょうめ",
+      "parent": "富士見町",
+      "chome": "四丁目",
+      "type": "2",
+      "code": "abr_0133004",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01001-mitsuke",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0134000",
+      "name": "堀之内",
+      "kana": "ホリノウチ",
+      "reading": "ほりのうち",
+      "parent": "堀之内",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0134000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0135000",
+      "name": "前野",
+      "kana": "マエノ",
+      "reading": "まえの",
+      "parent": "前野",
+      "chome": "",
+      "type": "1",
+      "code": "maeno",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/u056",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0136000",
+      "name": "松之木島",
+      "kana": "マツノキジマ",
+      "reading": "まつのきじま",
+      "parent": "松之木島",
+      "chome": "",
+      "type": "1",
+      "code": "matsunokijima",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0137000",
+      "name": "松本",
+      "kana": "マツモト",
+      "reading": "まつもと",
+      "parent": "松本",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0137000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0138000",
+      "name": "万正寺",
+      "kana": "マンショウジ",
+      "reading": "まんしょうじ",
+      "parent": "万正寺",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0138000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tenryu/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0139000",
+      "name": "万瀬",
+      "kana": "マンゼ",
+      "reading": "まんぜ",
+      "parent": "万瀬",
+      "chome": "",
+      "type": "1",
+      "code": "manze",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/chimei/manze/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0140000",
+      "name": "三ケ野",
+      "kana": "ミカノ",
+      "reading": "みかの",
+      "parent": "三ケ野",
+      "chome": "",
+      "type": "1",
+      "code": "mikano",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tahara/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0141000",
+      "name": "三ケ野台",
+      "kana": "ミカノダイ",
+      "reading": "みかのだい",
+      "parent": "三ケ野台",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0141000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tahara/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0142000",
+      "name": "水堀",
+      "kana": "ミズホリ",
+      "reading": "みずほり",
+      "parent": "水堀",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0142000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01001-mitsuke",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0143000",
+      "name": "三家",
+      "kana": "ミツエ",
+      "reading": "みつえ",
+      "parent": "三家",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0143000",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0144000",
+      "name": "見付",
+      "kana": "ミツケ",
+      "reading": "みつけ",
+      "parent": "見付",
+      "chome": "",
+      "type": "1",
+      "code": "mitsuke",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/m149",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0145000",
+      "name": "緑ケ丘",
+      "kana": "ミドリガオカ",
+      "reading": "みどりがおか",
+      "parent": "緑ケ丘",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0145000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01001-mitsuke",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0146000",
+      "name": "南島",
+      "kana": "ミナミシマ",
+      "reading": "みなみしま",
+      "parent": "南島",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0146000",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/01008-fukude",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0147000",
+      "name": "南田",
+      "kana": "ミナミダ",
+      "reading": "みなみだ",
+      "parent": "南田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0147000",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/01008-fukude",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0148000",
+      "name": "南田伊兵衛新田",
+      "kana": "ミナミダイヘエシンデン",
+      "reading": "みなみだいへえしんでん",
+      "parent": "南田伊兵衛新田",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0148000",
+      "address_sources": [
+        {
+          "label": "旧福田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001312.html"
+        }
+      ],
+      "related": "/01008-fukude",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0149000",
+      "name": "南平松",
+      "kana": "ミナミヒラマツ",
+      "reading": "みなみひらまつ",
+      "parent": "南平松",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0149000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0150000",
+      "name": "宮之一色",
+      "kana": "ミヤノイッシキ",
+      "reading": "みやのいっしき",
+      "parent": "宮之一色",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0150000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0151000",
+      "name": "宮本",
+      "kana": "ミヤモト",
+      "reading": "みやもと",
+      "parent": "宮本",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0151000",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/01007-ryuyo",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0152000",
+      "name": "明ケ島",
+      "kana": "ミョウガジマ",
+      "reading": "みょうがじま",
+      "parent": "明ケ島",
+      "chome": "",
+      "type": "1",
+      "code": "myogajima",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tahara/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0153000",
+      "name": "明ケ島原",
+      "kana": "ミョウガジマバラ",
+      "reading": "みょうがじまばら",
+      "parent": "明ケ島原",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0153000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/tahara/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0154000",
+      "name": "向笠新屋",
+      "kana": "ムカサアラヤ",
+      "reading": "むかさあらや",
+      "parent": "向笠新屋",
+      "chome": "",
+      "type": "1",
+      "code": "mukasa_araya",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/mukasa/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0155000",
+      "name": "向笠竹之内",
+      "kana": "ムカサタケノウチ",
+      "reading": "むかさたけのうち",
+      "parent": "向笠竹之内",
+      "chome": "",
+      "type": "1",
+      "code": "mukasa_takenouchi",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/mukasa/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0156000",
+      "name": "向笠西",
+      "kana": "ムカサニシ",
+      "reading": "むかさにし",
+      "parent": "向笠西",
+      "chome": "",
+      "type": "1",
+      "code": "mukasa_nishi",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/mukasa/",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0157000",
+      "name": "虫生",
+      "kana": "ムシュウ",
+      "reading": "むしゅう",
+      "parent": "虫生",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0157000",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0158000",
+      "name": "元天神町",
+      "kana": "モトテンジンチョウ",
+      "reading": "もとてんじんちょう",
+      "parent": "元天神町",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0158000",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/01001-mitsuke",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0159000",
+      "name": "森岡",
+      "kana": "モリオカ",
+      "reading": "もりおか",
+      "parent": "森岡",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0159000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0160000",
+      "name": "森下",
+      "kana": "モリシタ",
+      "reading": "もりした",
+      "parent": "森下",
+      "chome": "",
+      "type": "1",
+      "code": "morishita",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0161000",
+      "name": "森本",
+      "kana": "モリモト",
+      "reading": "もりもと",
+      "parent": "森本",
+      "chome": "",
+      "type": "1",
+      "code": "morimoto",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0162000",
+      "name": "社山",
+      "kana": "ヤシロヤマ",
+      "reading": "やしろやま",
+      "parent": "社山",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0162000",
+      "address_sources": [
+        {
+          "label": "旧豊岡村",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001315.html"
+        }
+      ],
+      "related": "/01009-toyooka",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0163000",
+      "name": "弥藤太島",
+      "kana": "ヤトウタジマ",
+      "reading": "やとうたじま",
+      "parent": "弥藤太島",
+      "chome": "",
+      "type": "1",
+      "code": "abr_0163000",
+      "address_sources": [
+        {
+          "label": "旧豊田町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001314.html"
+        }
+      ],
+      "related": "/01004-toyoda",
+      "related_label": "地区の入口"
+    },
+    {
+      "id": "0164000",
+      "name": "竜洋中島",
+      "kana": "リュウヨウナカジマ",
+      "reading": "りゅうようなかじま",
+      "parent": "竜洋中島",
+      "chome": "",
+      "type": "1",
+      "code": "ryuyo_nakajima",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/r019",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0165000",
+      "name": "竜洋稗原",
+      "kana": "リュウヨウヒエバラ",
+      "reading": "りゅうようひえばら",
+      "parent": "竜洋稗原",
+      "chome": "",
+      "type": "1",
+      "code": "ryuyo_hiebara",
+      "address_sources": [
+        {
+          "label": "旧竜洋町",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1001313.html"
+        }
+      ],
+      "related": "/r019",
+      "related_label": "地域・地名の記事"
+    },
+    {
+      "id": "0166000",
+      "name": "和口",
+      "kana": "ワグチ",
+      "reading": "わぐち",
+      "parent": "和口",
+      "chome": "",
+      "type": "1",
+      "code": "waguchi",
+      "address_sources": [
+        {
+          "label": "旧磐田市",
+          "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/koseki_juuminhyou_inkan/1001311/1004454.html"
+        }
+      ],
+      "related": "/chimei/minami-mikuriya/",
+      "related_label": "地域・地名の記事"
+    }
+  ],
+  "auxiliary_records": [
+    {
+      "id": "0022124",
+      "name": "大原",
+      "label": "旧磐田市"
+    },
+    {
+      "id": "0022125",
+      "name": "大原",
+      "label": "旧福田町"
+    },
+    {
+      "id": "0124120",
+      "name": "一言",
+      "label": "旧磐田市"
+    },
+    {
+      "id": "0124121",
+      "name": "一言",
+      "label": "旧豊田町"
+    }
+  ]
+}

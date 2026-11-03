@@ -18,7 +18,7 @@ test('ordinary click only records a fixed public entry code without selected add
  const s=run('');assert.deepEqual(s.events,['chimei_hub_bottom_click']);assert.equal(s.fields.length,0);
 });
 test('expanded guide and region entries count fixed codes while rejecting an arbitrary source',()=>{
- for(const entry of ['fukude_bottom','toyooka_early','missing-aza_bottom','similar-names_early','iwata-area_bottom','ofuji_bottom','mukasa_bottom','ikago_bottom','ikkanji_bottom','tenryu_bottom','tahara_bottom','imanoura_bottom','hiramatsu-kakeshita-irisaku_bottom','oidaira_bottom']){
+ for(const entry of ['fukude_bottom','toyooka_early','missing-aza_bottom','similar-names_early','iwata-area_bottom','ofuji_bottom','mukasa_bottom','ikago_bottom','ikkanji_bottom','tenryu_bottom','tahara_bottom','imanoura_bottom','hiramatsu-kakeshita-irisaku_bottom','ikkanji_bottom','minami-mikuriya_bottom','tomioka_bottom','ikeda_bottom','hitokoto_bottom','manze_bottom','towns_document']){
   assert.deepEqual(run('','iwata-monogatari.net',entry).events,['chimei_'+entry.replace(/-/g,'_')+'_click']);
  }
  assert.deepEqual(run('','iwata-monogatari.net','private_person_bottom').events,[]);
