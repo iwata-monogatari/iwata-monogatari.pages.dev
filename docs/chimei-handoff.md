@@ -10,7 +10,7 @@
 - `/karte/?area=磐田市&chimei=hub_bottom&chimei_town=mitsuke` のように公開コードだけを渡す。入力済み町名は上書きしない。番地・地番・個人情報を本企画で取得したり、URLや計測へ加えたりしない。
 - 町名・番地地番の必須条件を緩めない。番地不明の場合は課税明細書等で確認してから申込み。住所の補助案内・APIの既存検証を保持。
 - 計測：送客元 `chimei_<ページ>_<位置>_click`、受信側 `iwata_chimei_<ページ>_<位置>_landing / form_start / accepted`。ハイフンはイベント名のみ下線に正規化。acceptedは既存APIがHTTP成功かつok:trueで返った直後のみ。thanks表示だけでは発火しない。広告ブロック等では計測されないため、送信実績の唯一の台帳として扱わない。
-- `fga_internal=1`、localhost、preview、webdriverを検査用に除外。実相談やメール送信を伴う試験申込はしない。受信API成功・失敗分岐はモック検査で確認する。
+- 送客元の `fga_internal=1` または `fga_ignore=1` は、申込先で削除されない `fga_ignore=1` にして引き継ぐ。localhost、preview、webdriverを検査用に除外。実相談やメール送信を伴う試験申込はしない。受信API成功・失敗分岐はモック検査で確認する。
 - 更新時は通常の `npm run build`、関連テスト、release stamp/check、最新main照合、既存Git公開経路を使用。新着・検索・サイトマップは正規生成。画像や未変更記事の再生成差分を巻き込まない。
 - 既存の解析・記事更新タスクもこのファイルと本番・最新mainを照合し、実施済み導線を再追加しない。新規監視や通知の追加はしない。
 
