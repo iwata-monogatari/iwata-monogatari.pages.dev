@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1793663984,
-  "generation": 20261103085944,
-  "git_commit_at_stamp": "f4527d53a45516bef07e125e4c0e0eb1340e8635",
+  "generated_at_unix": 1793669119,
+  "generation": 20261103102519,
+  "git_commit_at_stamp": "99f0e2c3807f1cbd32eda34de0df8ca8da585d5a",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "987c1c178637672f65d5fbaeb64a7b8a97a7000be941031655aa34ff47eecf38"
+      "sha256": "a683977d7da097bfbc40ed35c0f907872c91044031ca05722f5c8538150be736"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "d75cfc6c62b82bd2de57da32a5a42781a501ee1bb5d520e25d9c5ab56f1fcfbe"
+      "sha256": "663f03879a8c7e0e946de06cc27dcf58e89f9fcc7c8bfb4155895673b87c88c4"
     },
     {
       "path": "data/pages.json",
-      "sha256": "468f779644a3071d12f0cc9d9814005c6b92990d546d392447e3d78bd8d92fc6"
+      "sha256": "db03a3f7adfd8b9a9a89a7edb7e53720b3847e58eaf45b6f09b38ee566bc4c6a"
     },
     {
       "path": "index.html",
-      "sha256": "306c7d7c551f0e93f7b9e622fa81b5161fb2a13a1e7bc0ec5255579ed8611562"
+      "sha256": "d4c9871d4f639e884706b9daedcea6090712dbc305c2120dd5e9a6c74b19dd35"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "3ae44a7f64477cde45a8f17bcea5024a37f95398a4fb1865186fdd992e7e4ba7"
+      "sha256": "020aeb9088c7c02f68c44a67d3e530714e8818e5b0048a008723d5044e0fb2e1"
     },
     {
       "path": "updates.html",
-      "sha256": "0132c9cb7ba44a29ea5a2a6b52ed4d0d616b1b0be907a3af51833bb5aaec550f"
+      "sha256": "05b855cd5b440245f4e4f16cd3c2d7adc3998fc1ce017ed69845078cd177019c"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "67321b2f8906b917444f231561cfea6d48797ff56be29a8e1beac2cc7d60e2a2",
+      "content_sha256": "8ca7d91d7ebdd38c7c3468cc0369b1126f639afae2f2f11efa5039d1b3c7188c",
       "path": "index.html",
-      "sha256": "306c7d7c551f0e93f7b9e622fa81b5161fb2a13a1e7bc0ec5255579ed8611562",
+      "sha256": "d4c9871d4f639e884706b9daedcea6090712dbc305c2120dd5e9a6c74b19dd35",
       "url": "/"
     },
     {
-      "content_sha256": "fd6f4e7989e55760a65a80d3a30dd3902f218517cf869be1d420d673e585e212",
+      "content_sha256": "f4d2c2679fa408f067e8d8f1a59a0f524a6ee7f60e916a89d16df6fd18a7174e",
       "path": "updates.html",
-      "sha256": "0132c9cb7ba44a29ea5a2a6b52ed4d0d616b1b0be907a3af51833bb5aaec550f",
+      "sha256": "05b855cd5b440245f4e4f16cd3c2d7adc3998fc1ce017ed69845078cd177019c",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "9fd272b98379bbec5d90f3238859595b48f1adac678550249965eb7254e9d037",
+      "content_sha256": "de5b33c70bbdece8096e7e0a94c2b5f83a32e5320fe73035c2f4b0951199ffa0",
       "path": "c034.html",
-      "sha256": "987c1c178637672f65d5fbaeb64a7b8a97a7000be941031655aa34ff47eecf38",
+      "sha256": "a683977d7da097bfbc40ed35c0f907872c91044031ca05722f5c8538150be736",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "9f64c5aa65e5b81afc1f760b73b17640b9aa21b2f5881b3358a0586cc1e1bc20",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "3c43675cbc903f48917fe4338f7bcf37df6e47746f10d284ac9178bb7b47e943",
+      "path": "blog/20261103-iwata-same-name-person/index.html",
+      "sha256": "f217ccd8d469b99c06d4819840c47a53aec23596f676ffd64a6bc8cadd8d7786",
+      "url": "/blog/20261103-iwata-same-name-person"
     },
     {
       "content_sha256": "b9d9faff1a08f847ab4c4feb744d4a2a56f95799cca0c8e38b6239b946bdcdcc",
@@ -814,23 +820,17 @@
       "path": "blog/20260908-akizaki-yatsushiroran/index.html",
       "sha256": "c6cd4267154f1a60ea494ab714b418ae22a94aaf6adc3755fa1943ed2ef91ac6",
       "url": "/blog/20260908-akizaki-yatsushiroran"
-    },
-    {
-      "content_sha256": "5f028d5ea7494d3e8b63bf3a070feb0511debcf534f710525ec8b85198a9dd95",
-      "path": "blog/20260908-two-theories-kinosaki-castle/index.html",
-      "sha256": "03dbd18429da8a26b64672fcc7f7788df414bae9ac9b3302ef3338e1dd24b648",
-      "url": "/blog/20260908-two-theories-kinosaki-castle"
     }
   ],
   "schema": 1,
-  "state_hash": "7ab7facf20c87b968eeec83730198dadd28f1ce07639a1cd339ae609b3d928b7",
+  "state_hash": "3a0f4a3eeb32c1ca0349a0446e9bcd1d9879f004315b9e7ef0995a9246727e18",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1117,
-    "new_articles": 1283,
-    "new_articles_sha256": "d75cfc6c62b82bd2de57da32a5a42781a501ee1bb5d520e25d9c5ab56f1fcfbe",
-    "pages_sha256": "468f779644a3071d12f0cc9d9814005c6b92990d546d392447e3d78bd8d92fc6",
-    "pages_total": 1191,
-    "published_pages": 1190
+    "new_articles": 1284,
+    "new_articles_sha256": "663f03879a8c7e0e946de06cc27dcf58e89f9fcc7c8bfb4155895673b87c88c4",
+    "pages_sha256": "db03a3f7adfd8b9a9a89a7edb7e53720b3847e58eaf45b6f09b38ee566bc4c6a",
+    "pages_total": 1192,
+    "published_pages": 1191
   }
 }
