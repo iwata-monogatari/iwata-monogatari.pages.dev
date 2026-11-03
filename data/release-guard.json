@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1793694778,
-  "generation": 20261103173258,
-  "git_commit_at_stamp": "ff68fbc0a992dead8712770f09d0e279ba59ff32",
+  "generated_at_unix": 1793695251,
+  "generation": 20261103174051,
+  "git_commit_at_stamp": "45eaddba0d90a465d4f612a4d9e47b4bad45a0d5",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "ae934df6e390ef2f36d0a72b9fcc2936b7f2ea536f932111b97528e3f9f3baaa"
+      "sha256": "5c3b9b6270621cc047d522130d81933e6896a59511cc31a1f21309117ddd28c2"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "e3ed14aa8de101359a983c1729fa1bce195b403024b7c2f56d18d013339489cb"
+      "sha256": "f5602a7f1381f7fa3ac0609a66d4f9d4f4f7fdb60868b10bb8fc6edf4a90f5b4"
     },
     {
       "path": "data/pages.json",
-      "sha256": "c7c09687f93a33e3afcbb9f5a5a9d327bd6eb6e1db20471d0793f7e5b65afeda"
+      "sha256": "d3ac63de965c494220a0b141edb0748839af3a469f7ac73ccb8bc46095272f8b"
     },
     {
       "path": "index.html",
-      "sha256": "07c498a6588f8ac7fd808b3895b712ee66afcf52c66f927f481b50d16b2cf6b0"
+      "sha256": "13f133d06d291456436a489d33b681bdfdaa87aea417bd693b6d878d2108eb0a"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "9244793eaf33e59a483bc8bbd98451e14871409c36ab33c64fdcab9d413e6ebd"
+      "sha256": "7b6a7dbfad55c829265a6696645c9058fa3bcb35ed9487c81a61fc52e475f1e5"
     },
     {
       "path": "updates.html",
-      "sha256": "6120c6356c206d5a407a4b2acb2810736c7681b6448b439a1088aae781ac7946"
+      "sha256": "e65d18014ccb144f2710b2cad4eb32bc2cea063785a5b560d7dff2f0abc34b32"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "e6e8aa9e9be691b3febbf9a2c162f4c14f1762cdf4726266601dceb4b634ca46",
+      "content_sha256": "1079510e648af7012c844660b6571568680b52df955e696432ba15645740810d",
       "path": "index.html",
-      "sha256": "07c498a6588f8ac7fd808b3895b712ee66afcf52c66f927f481b50d16b2cf6b0",
+      "sha256": "13f133d06d291456436a489d33b681bdfdaa87aea417bd693b6d878d2108eb0a",
       "url": "/"
     },
     {
-      "content_sha256": "b8165df279f6ad7eaa5b865248b92c46b5578af67672cf257d91891b7f69078b",
+      "content_sha256": "103fe4f523c7c500851de2c24ae5f277d652a4d2efeda3b5b1beb89608d564e5",
       "path": "updates.html",
-      "sha256": "6120c6356c206d5a407a4b2acb2810736c7681b6448b439a1088aae781ac7946",
+      "sha256": "e65d18014ccb144f2710b2cad4eb32bc2cea063785a5b560d7dff2f0abc34b32",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "62ca5037905e3ef7e5ec1ab9bf9a9598b90f0532b0fde4967a44673fb8ca84fd",
+      "content_sha256": "c35539afbe248ef84d85315b4b84f0296d5c9e24716514db5b5eb535027e7824",
       "path": "c034.html",
-      "sha256": "ae934df6e390ef2f36d0a72b9fcc2936b7f2ea536f932111b97528e3f9f3baaa",
+      "sha256": "5c3b9b6270621cc047d522130d81933e6896a59511cc31a1f21309117ddd28c2",
       "url": "/c034.html"
     },
     {
@@ -166,6 +166,12 @@
       "path": "chimei/old-address/index.html",
       "sha256": "4b03b1d604770f3510d1319a3a4cd657261f767261892e4eb7280159ac35f8ac",
       "url": "/chimei/old-address"
+    },
+    {
+      "content_sha256": "988634635a0b7faf13d87dbb209658997c2451ceb241ad2f66e405ae0872d644",
+      "path": "blog/20261103-honkoku-kaisetsu-difference/index.html",
+      "sha256": "467ded66bd5dee84fe78f97a0bc086d452fe0d6ea5bed9718f67cc1500120593",
+      "url": "/blog/20261103-honkoku-kaisetsu-difference"
     },
     {
       "content_sha256": "3c43675cbc903f48917fe4338f7bcf37df6e47746f10d284ac9178bb7b47e943",
@@ -582,9 +588,9 @@
       "url": "/blog/20260930-fukude-shirasu"
     },
     {
-      "content_sha256": "c91b38c9425fb856146a97512a27886f3767b50c0852096c2bb02419080c76d6",
+      "content_sha256": "7f2ca626593e7aa57c24020ae41b65a4bbe42db1f3a7aecdd13bb928f4e7be57",
       "path": "blog/20260929-iwata-kuzushiji-check/index.html",
-      "sha256": "6b333f195476735971dbc839579bfe6c3ea45c1d0e2c6d6af1154e9e13ec36a3",
+      "sha256": "f487f63bd0678a1309295438b67c29dd8868e01a6a29148e2deea68887c35dad",
       "url": "/blog/20260929-iwata-kuzushiji-check"
     },
     {
@@ -814,23 +820,17 @@
       "path": "blog/20260909-mitsuke-school-iwata-bunko-difference/index.html",
       "sha256": "3f06d66eef2e72fad057c4c15d8579bb1ce488c70c992e2c5c5f31be682b31cc",
       "url": "/blog/20260909-mitsuke-school-iwata-bunko-difference"
-    },
-    {
-      "content_sha256": "adb4c7faa8ebf15239303d61a5f718b18f2bbd9fc2375fb0072a72a41f5313ef",
-      "path": "blog/20260909-iwata-old-tokaido-guideposts/index.html",
-      "sha256": "381d348310574fcb65619b5b889afc3733afdaf46e56e49f534eaad0d7178d8c",
-      "url": "/blog/20260909-iwata-old-tokaido-guideposts"
     }
   ],
   "schema": 1,
-  "state_hash": "72a150bd95e43b2d585fedb586cf4d80830ff6cde110ce81844893876e626f67",
+  "state_hash": "77c8b54fb284be798203b3fd8bbc295e46344747f1c5e3fbe3bcdf67a0a64f64",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1120,
-    "new_articles": 1288,
-    "new_articles_sha256": "e3ed14aa8de101359a983c1729fa1bce195b403024b7c2f56d18d013339489cb",
-    "pages_sha256": "c7c09687f93a33e3afcbb9f5a5a9d327bd6eb6e1db20471d0793f7e5b65afeda",
-    "pages_total": 1196,
-    "published_pages": 1195
+    "new_articles": 1289,
+    "new_articles_sha256": "f5602a7f1381f7fa3ac0609a66d4f9d4f4f7fdb60868b10bb8fc6edf4a90f5b4",
+    "pages_sha256": "d3ac63de965c494220a0b141edb0748839af3a469f7ac73ccb8bc46095272f8b",
+    "pages_total": 1197,
+    "published_pages": 1196
   }
 }
