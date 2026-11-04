@@ -117,7 +117,7 @@ export async function onRequest(context) {
     })
     .on("footer.chimei-footer", {
       element(el) {
-        el.after('<footer class="im-foot" aria-label="関連サイト">' + siteFooter + "</footer>", { html: true });
+        el.after('<footer class="im-foot" data-chimei-portfolio aria-label="関連サイト">' + siteFooter + "</footer>", { html: true });
       },
     })
     .on("section.article-policy[data-common]", {

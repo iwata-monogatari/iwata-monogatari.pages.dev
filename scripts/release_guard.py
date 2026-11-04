@@ -96,6 +96,8 @@ def sha256_file(path):
 # sides before hashing so the rest of the page can be compared exactly.
 INJECTED_BLOCKS = [
     ("header", "gh-site", None),
+    # The extra portfolio footer follows the original chimei footer on live pages.
+    ("footer", "im-foot", "data-chimei-portfolio"),
     ("footer", "im-foot", None),
     ("section", "article-policy", "data-common"),
     ("section", "local-property-note", "data-common"),
@@ -149,7 +151,9 @@ def strip_injected_blocks(html):
                 # normalize the same way instead of looping forever.
                 html = html[: opened.start()]
                 break
-            if class_token == "im-react":
+            if extra_attr == "data-chimei-portfolio":
+                replacement = ""
+            elif class_token == "im-react":
                 replacement = ""
                 # The partial ends with a newline. HTMLRewriter inserts that
                 # newline with the block, so remove it from the live side too.
