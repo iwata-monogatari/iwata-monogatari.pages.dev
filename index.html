@@ -542,6 +542,13 @@ img{max-width:100%;display:block;}
 .home-short .gh-sub{display:none}
 .home-short .gh-site,.home-short .gh-bar{min-height:48px}
 .home-short .gh-bar{max-width:54rem;padding:8px 20px}
+@media(min-width:761px){
+  .home-short .gh-bar{
+    max-width:none;
+    margin-inline-start:max(0px,calc((100% - 54rem) / 2));
+    margin-inline-end:max(0px,calc((100% - 74rem) / 2));
+  }
+}
 .home-short #home-main{max-width:54rem;margin:auto;padding:0 20px}
 .home-short .short-hero{padding:16px 0 8px}
 .home-short .short-hero h2{font-size:1.35em;line-height:1.4;margin:0 0 6px}
