@@ -391,7 +391,9 @@ def build(check=False):
     knowledge = '<!-- search-knowledge-extra:start --><ul class="idx-list" aria-label="新しく追加された知識記事">' + ''.join(f'<li><a href="{html.escape(key(p["url"]))}">{html.escape(p["title"])}</a></li>' for p in additions) + '</ul><!-- search-knowledge-extra:end -->' if additions else ''
     c034 = re.sub(r'\s*</article>', lambda _: ('\n' + knowledge if knowledge else '') + '\n</article>', c034, count=1)
     redirects = redirect_map()
-    existing = {resolve(link, redirects) for link in Page(c034).links if link.startswith('/') and not link.startswith('//')}
+    # Navigation links do not replace entries in the article directory.
+    catalogue_body = re.sub(r'<header\b[^>]*>.*?</header>', '', c034, flags=re.S | re.I)
+    existing = {resolve(link, redirects) for link in Page(catalogue_body).links if link.startswith('/') and not link.startswith('//')}
     extras = [r for r in records if r['url'] not in existing]
     extra = '<!-- search-catalog-extra:start --><section class="article idx-group" id="search-catalog-extra"><h2>ブログ・公開記事の補完一覧</h2><p>地区別の一覧と重ならない公開記事です。<a href="/search/catalog/1/">全記事を20件ずつ読む</a>こともできます。</p><ul class="search-list">' + ''.join(card(r, ledger['districts']) for r in extras) + '</ul></section><!-- search-catalog-extra:end -->'
     if not extras:

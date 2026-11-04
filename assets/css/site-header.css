@@ -147,3 +147,23 @@ body{font-size:var(--reader-size)!important}
 .gh-sub{white-space:normal;overflow:visible;max-width:40rem;color:#284b60}
 .gh-search-return{font-weight:700;border:2px solid #225872;padding:.4em!important}
 @media(max-width:760px){.gh-menu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.2rem .5rem;width:100%;overflow:visible}.gh-menu a{font-size:.9em;padding:.4em}.gh-logo{white-space:normal}.gh-bar{padding:.7rem}}
+
+/* Shared navigation and the introduction to the managed site directory. */
+.gh-site .gh-directory{display:flex;align-items:center;flex-wrap:wrap;gap:4px 12px;overflow:visible}
+.gh-directory a,.gh-directory summary{color:#193f53;font:600 .9rem/1.45 system-ui,sans-serif}
+.gh-directory a{min-height:44px;padding:6px 3px;text-underline-offset:3px}
+.gh-directory{position:relative}
+.gh-more summary{display:list-item;cursor:pointer;border:1px solid #366b81;border-radius:5px;padding:10px 12px;background:#f4f9fa}
+.gh-more summary:focus-visible{outline:3px solid #793b06;outline-offset:2px}
+.gh-more-links{position:absolute;right:0;top:100%;z-index:5;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:22rem;padding:10px 14px;background:#fffdf8;border:1px solid #9db5be;border-radius:6px;box-shadow:0 6px 14px #173c4926}
+.im-portfolio{background:#1f3a48;color:#fff;padding:22px 16px 0;text-align:left}
+.im-portfolio-inner{max-width:62rem;margin:auto;padding-bottom:15px;border-bottom:1px solid #79919b}
+.im-portfolio h2{margin:0 0 8px;color:#fff;font:700 1.35rem/1.45 "Shippori Mincho",serif}
+.im-portfolio nav{display:flex;flex-wrap:wrap;gap:4px 18px}
+.im-portfolio nav a{display:inline-flex;align-items:center;min-height:44px;color:#fff;text-decoration:underline;text-underline-offset:3px}
+.home-short .im-portfolio-inner{max-width:52rem}
+@media(max-width:760px){
+  .gh-site .gh-directory{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px 4px}
+  .gh-site .gh-directory>a,.gh-more summary{font-size:.85rem;text-align:center;justify-content:center}
+  .gh-more-links{width:min(23rem,calc(100vw - 36px))}
+}

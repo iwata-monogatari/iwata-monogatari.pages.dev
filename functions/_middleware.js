@@ -76,12 +76,13 @@ export async function onRequest(context) {
     return withHostGuard(response);
   }
 
-  const [headerHtml, footerHtml, policyHtml, propertyHtml, reactionsHtml] = await Promise.all([
+  const [headerHtml, footerHtml, policyHtml, propertyHtml, reactionsHtml, portfolioHtml] = await Promise.all([
     fetchPartial(context, "/partials/header.html"),
     fetchFooterHtml(context),
     fetchPartial(context, "/partials/article-policy.html"),
     fetchPartial(context, "/partials/local-property-note.html"),
     fetchPartial(context, "/partials/article-reactions.html"),
+    fetchPartial(context, "/partials/portfolio.html"),
   ]);
 
   if (!headerHtml || !footerHtml || !policyHtml || !propertyHtml) {
@@ -96,6 +97,7 @@ export async function onRequest(context) {
     el.before(reactionsHtml, { html: true });
   };
 
+  const siteFooter = protectLinks((portfolioHtml || "") + footerHtml);
   return withHostGuard(new HTMLRewriter()
     .on("a", {
       element(el) {
@@ -110,7 +112,12 @@ export async function onRequest(context) {
     .on("footer.im-foot", {
       element(el) {
         placeReactions(el);
-        el.setInnerContent(protectLinks(footerHtml), { html: true });
+        el.setInnerContent(siteFooter, { html: true });
+      },
+    })
+    .on("footer.chimei-footer", {
+      element(el) {
+        el.after('<footer class="im-foot" aria-label="関連サイト">' + siteFooter + "</footer>", { html: true });
       },
     })
     .on("section.article-policy[data-common]", {
