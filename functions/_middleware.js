@@ -30,6 +30,23 @@ async function fetchFooterHtml(context) {
   return (await fetchFooterFromDb(context)) || fetchPartial(context, "/partials/footer.html");
 }
 
+// Keep the centrally managed footer and fill only entries missing from its culture list.
+function withCultureSites(html) {
+  const sites = [
+    ["kamon.atawi.link", "日本の家紋図鑑"],
+    ["koyomiuuranai.atawi.link", "こよみくんの修行部屋（ATAWI暦占い）"],
+    ["banban.atawi.link", "ATAWI 磐田南高校"],
+  ];
+  const hosts = new Set();
+  for (const match of html.matchAll(/<a\b[^>]*?\shref=["']([^"']+)["']/gi)) {
+    try { hosts.add(new URL(match[1]).hostname); } catch { /* relative link */ }
+  }
+  const rows = sites.filter(([host]) => !hosts.has(host)).map(([host, title]) =>
+    `<li><a href="https://${host}/" target="_blank" rel="noopener"><span class="fgo-managed-footer__label">${title}</span><span class="fgo-managed-footer__desc">${host}</span></a></li>`
+  ).join("");
+  return html.replace(/(<nav\b[^>]*\baria-label=["']文化・芸術["'][^>]*>(?:(?!<\/nav>)[\s\S])*?)<\/ul>/i, "$1" + rows + "</ul>");
+}
+
 const CANONICAL_HOST = "iwata-monogatari.net";
 
 // 反応ボタンを出さないページ（トップ・一覧・掲示板・管理画面など）
@@ -76,13 +93,12 @@ export async function onRequest(context) {
     return withHostGuard(response);
   }
 
-  const [headerHtml, footerHtml, policyHtml, propertyHtml, reactionsHtml, portfolioHtml] = await Promise.all([
+  const [headerHtml, footerHtml, policyHtml, propertyHtml, reactionsHtml] = await Promise.all([
     fetchPartial(context, "/partials/header.html"),
     fetchFooterHtml(context),
     fetchPartial(context, "/partials/article-policy.html"),
     fetchPartial(context, "/partials/local-property-note.html"),
     fetchPartial(context, "/partials/article-reactions.html"),
-    fetchPartial(context, "/partials/portfolio.html"),
   ]);
 
   if (!headerHtml || !footerHtml || !policyHtml || !propertyHtml) {
@@ -97,7 +113,7 @@ export async function onRequest(context) {
     el.before(reactionsHtml, { html: true });
   };
 
-  const siteFooter = protectLinks((portfolioHtml || "") + footerHtml);
+  const siteFooter = protectLinks(withCultureSites(footerHtml));
   return withHostGuard(new HTMLRewriter()
     .on("a", {
       element(el) {
