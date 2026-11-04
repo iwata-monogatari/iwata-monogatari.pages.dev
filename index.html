@@ -544,7 +544,7 @@ img{max-width:100%;display:block;}
 .home-short .gh-bar{max-width:54rem;padding:8px 20px}
 .home-short #home-main{max-width:54rem;margin:auto;padding:0 20px}
 .home-short .short-hero{padding:16px 0 8px}
-.home-short .short-hero h1{font-size:1.35em;line-height:1.4;margin:0 0 6px}
+.home-short .short-hero h2{font-size:1.35em;line-height:1.4;margin:0 0 6px}
 .home-short .short-hero>p{font-size:.85em;margin:0 0 12px;line-height:1.5}
 .home-short .home-search{margin:0;padding:0;border:0;background:none;max-width:none}
 .home-short .home-search form{padding:0;border:0;background:none}
@@ -558,16 +558,34 @@ img{max-width:100%;display:block;}
 .home-short .text-size{font-size:1em;margin:8px 0}
 .home-short .home-nav{display:flex;flex-wrap:wrap;gap:6px 16px;margin:6px 0 0;font-size:.85em}
 .home-short .home-nav a{min-height:36px;display:inline-flex;align-items:center;color:#194e70;text-decoration:underline}
+.home-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0 0 20px}
+.home-feature{--feature-ink:#76502c;display:flex;flex-direction:column;gap:10px;padding:clamp(14px,2vw,22px);color:var(--ink);background:#fffaf0;border:1px solid var(--line);border-top:4px solid var(--feature-ink);border-radius:8px;text-decoration:none}
+.home-feature-karuta{--feature-ink:#255870;background:#f4f8fa}
+.home-feature:hover,.home-feature:focus-visible{border-color:var(--feature-ink)}
+.home-feature:hover .feature-action,.home-feature:focus-visible .feature-action{text-decoration:underline}
+.home-feature p,.home-feature h2{margin:0}
+.home-feature p{font-size:.94em;line-height:1.7}
+.home-feature .feature-label,.feature-action{font-weight:700;color:var(--feature-ink)}
+.home-feature .feature-label{font-size:.8em;letter-spacing:.08em}
+.home-feature h2{font-family:"Shippori Mincho",serif;font-size:clamp(1.35rem,2.8vw,1.65rem);line-height:1.4}
+.home-feature h2 small{display:inline-block;font-size:.68em}
+.karuta-preview,.place-readings{width:100%;height:auto;aspect-ratio:1200/630;border-radius:4px}
+.place-readings{display:flex;align-items:center;justify-content:space-evenly;color:#573c25;background-color:#f3ead6;background-image:repeating-linear-gradient(0deg,transparent 0 19px,#d8caaa70 19px 20px),repeating-linear-gradient(90deg,transparent 0 19px,#d8caaa70 19px 20px);box-shadow:inset 0 0 0 1px #d9cbb3;font-family:"Shippori Mincho",serif;font-size:clamp(1.5rem,3vw,2.1rem);font-weight:700}
+.place-readings rt{font-size:.42em;letter-spacing:.08em}
+.feature-words{display:flex;flex-wrap:wrap;gap:4px 8px;margin:0;padding:0;list-style:none;font-size:.8em;color:var(--feature-ink)}
+.feature-action{margin-top:auto;padding-top:8px}
+@media(max-width:40rem){.home-features{grid-template-columns:minmax(0,1fr);gap:12px}}
 .home-short #saguchi{margin:8px 0 24px;border:2px solid #b9cbd0;border-radius:14px;background:#f1f5f3}
 .home-short #saguchi .inner{padding:20px}
 .home-short #saguchi .eyebrow{font-size:.75em;letter-spacing:.06em;margin:0 0 4px}
-.home-short #saguchi .sectitle{font-size:1.45em;line-height:1.4;margin:0 0 8px;border:0;padding:0}
+.home-short #saguchi .sectitle{font-size:clamp(1.65rem,4vw,2.15rem);line-height:1.4;margin:0 0 8px;border:0;padding:0}
 .home-short #saguchi .lead-sm{font-size:.9em;margin:0 0 14px;line-height:1.6}
 .home-short #saguchi-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;overflow:visible;padding:0}
 .home-short #saguchi-gallery .gcard{min-width:0;width:auto}
 .home-short #saguchi-gallery img{height:220px;width:100%;object-fit:contain;background:#e9e4d8}
 .home-short #saguchi-gallery .gt{font-size:.9em;overflow-wrap:anywhere}
 .home-short #saguchi-gallery .gm{font-size:.7em}
+@media(min-width:40.01rem){.home-short #saguchi-gallery{grid-template-columns:repeat(4,minmax(0,1fr))}.home-short #saguchi-gallery img{height:120px}}
 .home-short .short-section{margin:0 0 24px}
 .home-short .short-section h2{font-size:1.2em;margin:0 0 12px;line-height:1.5}
 .home-short .short-section p{font-size:.9em;line-height:1.7}
@@ -591,7 +609,7 @@ img{max-width:100%;display:block;}
 .home-short .im-foot .fgo-managed-footer__inner{max-width:54rem}
 .home-short .im-foot .fgo-managed-footer__note{font-size:13px}
 .home-short a:focus-visible,.home-short summary:focus-visible{outline:3px solid #793b06;outline-offset:3px}
-@media(max-width:40rem){.home-short #home-main{padding:0 14px}.home-short .gh-bar{padding:8px 14px}.home-short .short-hero{padding-top:12px}.home-short #saguchi .inner{padding:14px}.home-short #saguchi .sectitle{font-size:1.2em}.home-short #saguchi-gallery img{height:150px}.home-short #saguchi-gallery .gc{padding:8px}.home-short #saguchi-gallery .gt{font-size:.8em}.home-short .popular-grid{grid-template-columns:1fr}.home-short .home-nav{gap:4px 12px}.home-short .guide-links{grid-template-columns:1fr}}
+@media(max-width:40rem){.home-short #home-main{padding:0 14px}.home-short .gh-bar{padding:8px 14px}.home-short .short-hero{padding-top:12px}.home-short #saguchi .inner{padding:14px}.home-short #saguchi .sectitle{font-size:1.5em}.home-short #saguchi-gallery img{height:150px}.home-short #saguchi-gallery .gc{padding:8px}.home-short #saguchi-gallery .gt{font-size:.8em}.home-short .popular-grid{grid-template-columns:1fr}.home-short .home-nav{gap:4px 12px}.home-short .guide-links{grid-template-columns:1fr}}
 
 /* Keep real article titles visible while secondary update history stays compact. */
 .home-short .article-topics{scroll-margin-top:16px}
@@ -714,41 +732,10 @@ img{max-width:100%;display:block;}
 </nav>
 </div>
 </header><main id="home-main">
-<section class="short-hero"><h1>磐田の歴史を探す</h1><p>祭り・鉄道・地名・学校・古写真から、磐田の歴史を読む。</p>
-<div class="home-search"><form id="home-search-form" action="/search/" method="get"><label for="q">地名・人物名・言葉で検索</label><div class="query-row"><input type="search" id="q" name="q" autocomplete="off" placeholder="例：見付宿、光明電気鉄道"><button type="submit">検索</button></div><p id="home-search-error" role="alert" hidden></p></form>
-<details class="search-options"><summary>検索例・文字サイズ</summary><div class="chips" id="chips" aria-label="検索語の例"><button type="button" class="chip" data-q="見付宿">見付宿</button><button type="button" class="chip" data-q="光明電気鉄道">光明電気鉄道</button><button type="button" class="chip" data-q="古地図">古地図</button></div><div class="text-size" role="group" aria-label="文字サイズ"><span>文字サイズ</span><button type="button" data-text-size="standard" aria-pressed="true">標準</button><button type="button" data-text-size="large" aria-pressed="false">大</button><button type="button" data-text-size="largest" aria-pressed="false">特大</button></div><a href="/search/help/">記事の探し方</a></details></div>
-<span id="results"></span><nav class="home-nav" aria-label="トップの案内"><a href="/blog/">ブログを読む</a><a href="#article-topics">記事の種類</a><a href="#districts">地区</a><a href="/c034">全記事一覧</a><a href="/guide/">ご案内</a></nav></section><aside class="chimei-entry"><a href="/chimei/">磐田の地名解説</a><p>地名の読み・小字・旧住所を調べる入口。課税明細書の所在・地番を確認する手引きも掲載しています。</p></aside>
-<figure class="im-emaki im-emaki-fit-contain" data-emaki-page="10d419e66961"><picture class="im-emaki-desktop"><source media="(max-width: 47.99rem)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><img src="/assets/emaki/10d419e66961-main-1440.webp?v=33fe1bff10ad" srcset="/assets/emaki/10d419e66961-main-720.webp?v=33fe1bff10ad 720w, /assets/emaki/10d419e66961-main-960.webp?v=33fe1bff10ad 960w, /assets/emaki/10d419e66961-main-1440.webp?v=33fe1bff10ad 1440w" sizes="(min-width: 72rem) 72rem, 100vw" width="1440" height="720" decoding="async" alt="布を確かめる手、水路を見る人、荷を渡す手、学ぶ子、祭りを準備する人、記録を継ぐ手を六つの場面でつなぐ。"></picture><div class="im-emaki-mobile"><picture><source media="(min-width: 48rem)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><img src="/assets/emaki/10d419e66961-mobile-1-1170.webp" srcset="/assets/emaki/10d419e66961-mobile-1-390.webp 390w, /assets/emaki/10d419e66961-mobile-1-780.webp 780w, /assets/emaki/10d419e66961-mobile-1-1170.webp 1170w" sizes="100vw" width="1170" height="780" decoding="async" alt="布を確かめる人と用水を見守る人。2026年の二場面。"></picture><picture><source media="(min-width: 48rem)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><img src="/assets/emaki/10d419e66961-mobile-2-1170.webp" srcset="/assets/emaki/10d419e66961-mobile-2-390.webp 390w, /assets/emaki/10d419e66961-mobile-2-780.webp 780w, /assets/emaki/10d419e66961-mobile-2-1170.webp 1170w" sizes="100vw" width="1170" height="780" decoding="async" alt="江戸後期の荷の受渡しと、2026年の親子の学び。時代の違う二場面。"></picture><picture><source media="(min-width: 48rem)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><img src="/assets/emaki/10d419e66961-mobile-3-1170.webp?v=38348b3971d7" srcset="/assets/emaki/10d419e66961-mobile-3-390.webp?v=38348b3971d7 390w, /assets/emaki/10d419e66961-mobile-3-780.webp?v=38348b3971d7 780w, /assets/emaki/10d419e66961-mobile-3-1170.webp?v=38348b3971d7 1170w" sizes="100vw" width="1170" height="780" decoding="async" alt="祭りの準備と記録の継承。2026年の二場面。"></picture></div><figcaption>磐田物語｜静岡県磐田市の歴史・文化・地域史アーカイブを主題にした創作画。江戸後期の荷の受渡しと、2026年の布・用水・学び・祭り準備・記録継承を余白で分離する構成画。特定の実景の復元ではありません。</figcaption></figure>
-
-<section class="feature-c006" aria-labelledby="feature-c006-title">
-<style>
-.feature-c006{max-width:1040px;margin:8px auto 28px;padding:0 16px;}
-.feature-c006 a.fc-card{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;text-decoration:none;color:#1f3a48;background:linear-gradient(135deg,#e9f3fa,#fffdf7);border:2px solid #2f7fa3;border-radius:14px;padding:22px 26px;box-shadow:0 8px 24px rgba(31,79,111,.10);transition:.2s;}
-.feature-c006 a.fc-card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(31,79,111,.16);}
-.feature-c006 .fc-eyebrow{margin:0 0 4px;font-size:12.5px;font-weight:700;letter-spacing:.14em;color:#2f7fa3;}
-.feature-c006 .fc-new{display:inline-block;background:#2f7fa3;color:#fff;border-radius:999px;padding:1px 10px;margin-right:8px;letter-spacing:.06em;}
-.feature-c006 h2{margin:0 0 6px;font-family:"Shippori Mincho",serif;font-size:clamp(22px,3.4vw,30px);line-height:1.4;}
-.feature-c006 p.fc-text{margin:0 0 10px;font-size:15px;line-height:1.8;color:#4b5b66;}
-.feature-c006 .fc-words{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;}
-.feature-c006 .fc-words li{background:#fff;border:1px solid #d8e8ef;border-radius:999px;padding:2px 12px;font-size:14px;font-family:"Shippori Mincho",serif;}
-.feature-c006 .fc-btn{white-space:nowrap;background:#1f4f6f;color:#fff;border-radius:8px;padding:12px 18px;font-weight:700;font-size:15px;}
-@media(max-width:640px){.feature-c006 a.fc-card{grid-template-columns:1fr;padding:18px;}.feature-c006 .fc-btn{text-align:center;}}
-</style>
-<a class="fc-card" href="/c006?view=karuta">
-<div>
-<p class="fc-eyebrow"><span class="fc-new">更新</span>特集｜磐田・中遠のことば</p>
-<img src="/img/c006-karuta-ogp.webp" alt="引札風で描いた遠州弁かるた" width="1200" height="630" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:8px 0 14px">
-<h2 id="feature-c006-title">遠州弁かるた ── 引札風の122枚</h2>
-<p class="fc-text">絵から意味を知り、出典をたどる遠州弁辞典。122枚の絵札と印刷用PDF、郡誌・国研の資料室、4本の解説記事を公開しました。</p>
-<ul class="fc-words" aria-label="収録語の例"><li>だら</li><li>やぶせったい</li><li>ごせっぽい</li><li>しんや</li><li>みるい</li><li>ほそば</li></ul>
-</div>
-<span class="fc-btn">ことばを引く →</span>
-</a>
-</section>
 <section class="gallery-band" id="saguchi">
 <div class="inner">
 <p class="eyebrow">古写真・古地図・引札など 約336点</p>
-<h2 class="sectitle">佐口行正コレクション</h2>
+<h1 class="sectitle">佐口行正コレクション</h1>
 <p class="lead-sm">佐口行正氏が集めた、磐田の暮らしと文化の記録。</p>
 <div class="hscroll" id="saguchi-gallery">
 <a class="gcard" href="/c019#ts-7"><img alt="浮世絵 美人東海道 見附駅 渓斎英泉 佐口行正氏所蔵資料" height="300" loading="eager" src="/saguchi/img/ts-7.jpg" width="400"/><div class="gc"><p class="gt">美人東海道 見附駅</p><p class="gm">渓斎英泉／見付を描いた浮世絵</p></div></a>
@@ -763,6 +750,29 @@ img{max-width:100%;display:block;}
 <p style="font-size:12px;color:var(--ink-soft);margin:8px 0 0;">※ 掲載資料はすべて佐口行正氏の所蔵であり、ご厚意・ご許可を得て公開しています。無断転載・二次利用を禁じます。</p>
 </div>
 </section>
+<section class="home-features" aria-label="磐田の地名とことば">
+  <a class="home-feature home-feature-place" href="/chimei/" aria-labelledby="feature-chimei-title">
+    <p class="feature-label">地名資料｜磐田の町と字</p>
+    <h2 id="feature-chimei-title">磐田の地名解説</h2>
+    <div class="place-readings" aria-label="地名の読みの例"><ruby>見付<rt>みつけ</rt></ruby><ruby>中泉<rt>なかいずみ</rt></ruby><ruby>福田<rt>ふくで</rt></ruby></div>
+    <p>地名の読み・小字・旧住所を調べる入口。課税明細書の所在・地番を確認する手引きも掲載しています。</p>
+    <span class="feature-action">地名を調べる →</span>
+  </a>
+  <a class="home-feature home-feature-karuta" href="/c006?view=karuta" aria-labelledby="feature-c006-title">
+    <p class="feature-label">更新特集｜磐田・中遠のことば</p>
+    <h2 id="feature-c006-title">遠州弁かるた <small>── 引札風の122枚</small></h2>
+    <img class="karuta-preview" src="/img/c006-karuta-ogp.webp" alt="引札風で描いた遠州弁かるた" width="1200" height="630">
+    <p>絵から意味を知り、出典をたどる遠州弁辞典。122枚の絵札と印刷用PDF、郡誌・国研の資料室、4本の解説記事を公開しました。</p>
+    <ul class="feature-words" aria-label="収録語の例"><li>だら</li><li>やぶせったい</li><li>ごせっぽい</li><li>しんや</li><li>みるい</li><li>ほそば</li></ul>
+    <span class="feature-action">ことばを引く →</span>
+  </a>
+</section>
+<section class="short-hero"><h2>磐田の歴史を探す</h2><p>祭り・鉄道・地名・学校・古写真から、磐田の歴史を読む。</p>
+<div class="home-search"><form id="home-search-form" action="/search/" method="get"><label for="q">地名・人物名・言葉で検索</label><div class="query-row"><input type="search" id="q" name="q" autocomplete="off" placeholder="例：見付宿、光明電気鉄道"><button type="submit">検索</button></div><p id="home-search-error" role="alert" hidden></p></form>
+<details class="search-options"><summary>検索例・文字サイズ</summary><div class="chips" id="chips" aria-label="検索語の例"><button type="button" class="chip" data-q="見付宿">見付宿</button><button type="button" class="chip" data-q="光明電気鉄道">光明電気鉄道</button><button type="button" class="chip" data-q="古地図">古地図</button></div><div class="text-size" role="group" aria-label="文字サイズ"><span>文字サイズ</span><button type="button" data-text-size="standard" aria-pressed="true">標準</button><button type="button" data-text-size="large" aria-pressed="false">大</button><button type="button" data-text-size="largest" aria-pressed="false">特大</button></div><a href="/search/help/">記事の探し方</a></details></div>
+<span id="results"></span><nav class="home-nav" aria-label="トップの案内"><a href="/blog/">ブログを読む</a><a href="#article-topics">記事の種類</a><a href="#districts">地区</a><a href="/c034">全記事一覧</a><a href="/guide/">ご案内</a></nav></section>
+<figure class="im-emaki im-emaki-fit-contain" data-emaki-page="10d419e66961"><picture class="im-emaki-desktop"><source media="(max-width: 47.99rem)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><img src="/assets/emaki/10d419e66961-main-1440.webp?v=33fe1bff10ad" srcset="/assets/emaki/10d419e66961-main-720.webp?v=33fe1bff10ad 720w, /assets/emaki/10d419e66961-main-960.webp?v=33fe1bff10ad 960w, /assets/emaki/10d419e66961-main-1440.webp?v=33fe1bff10ad 1440w" sizes="(min-width: 72rem) 72rem, 100vw" width="1440" height="720" decoding="async" alt="布を確かめる手、水路を見る人、荷を渡す手、学ぶ子、祭りを準備する人、記録を継ぐ手を六つの場面でつなぐ。"></picture><div class="im-emaki-mobile"><picture><source media="(min-width: 48rem)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><img src="/assets/emaki/10d419e66961-mobile-1-1170.webp" srcset="/assets/emaki/10d419e66961-mobile-1-390.webp 390w, /assets/emaki/10d419e66961-mobile-1-780.webp 780w, /assets/emaki/10d419e66961-mobile-1-1170.webp 1170w" sizes="100vw" width="1170" height="780" decoding="async" alt="布を確かめる人と用水を見守る人。2026年の二場面。"></picture><picture><source media="(min-width: 48rem)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><img src="/assets/emaki/10d419e66961-mobile-2-1170.webp" srcset="/assets/emaki/10d419e66961-mobile-2-390.webp 390w, /assets/emaki/10d419e66961-mobile-2-780.webp 780w, /assets/emaki/10d419e66961-mobile-2-1170.webp 1170w" sizes="100vw" width="1170" height="780" decoding="async" alt="江戸後期の荷の受渡しと、2026年の親子の学び。時代の違う二場面。"></picture><picture><source media="(min-width: 48rem)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><img src="/assets/emaki/10d419e66961-mobile-3-1170.webp?v=38348b3971d7" srcset="/assets/emaki/10d419e66961-mobile-3-390.webp?v=38348b3971d7 390w, /assets/emaki/10d419e66961-mobile-3-780.webp?v=38348b3971d7 780w, /assets/emaki/10d419e66961-mobile-3-1170.webp?v=38348b3971d7 1170w" sizes="100vw" width="1170" height="780" decoding="async" alt="祭りの準備と記録の継承。2026年の二場面。"></picture></div><figcaption>磐田物語｜静岡県磐田市の歴史・文化・地域史アーカイブを主題にした創作画。江戸後期の荷の受渡しと、2026年の布・用水・学び・祭り準備・記録継承を余白で分離する構成画。特定の実景の復元ではありません。</figcaption></figure>
+
 <section class="short-section article-topics" id="article-topics" aria-labelledby="article-topics-title">
 <span id="recommended"></span><h2 id="article-topics-title">こんな記事が読めます</h2>
 <p class="topics-intro">祭りから廃線、地名、暮らしまで。気になる記事からどうぞ。</p>
