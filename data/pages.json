@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-11-04",
+  "updated_at": "2026-11-05",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -39413,6 +39413,23 @@
       "published_at": "2026-11-04",
       "status": "published",
       "summary": "東海道の一里は約4キロ。磐田・見付の阿多古山一里塚の模式図で、道の両側にある塚の数え方を読みます。本編に出てくる約3.9キロとの関係、往復で歩くときの距離の考え方も紹介します。",
+      "count_as_knowledge": false,
+      "show_in_updates": true,
+      "show_in_all_articles": false
+    },
+    {
+      "title": "ブログ：磐田の方言の調べ方｜「せんひき」の原回答をたどる",
+      "url": "blog/20261105-senhiki-record/",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "reading"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-11-05",
+      "status": "published",
+      "summary": "定規を「せんひき」と呼ぶ記録を、国立国語研究所の全国方言分布調査で探す手順です。磐田市地点のデータ番号25230を開き、質問項目、回答「センヒキ」、子供の頃の呼び名を記した注記を別々に控えます。",
       "count_as_knowledge": false,
       "show_in_updates": true,
       "show_in_all_articles": false
