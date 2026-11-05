@@ -24,6 +24,7 @@ const FIELDS = ['w', 'k', 'cat', 'm', 'ex', 'std'];
 const OPTIONAL_FIELDS = ['n', 'syn'];
 const CATS = ['語尾・あいさつ', '形容・ようす', '気持ち', '程度・量', '動作・行い', '名詞・もの'];
 export const SOURCE_TYPES = {
+  bannan2011: { label: '磐南2011', name: '落合博・落合ギャラン章子『遠州方言』（静岡県立磐田南高等学校同窓会関東支部、2011年11月12日）' },
   gunshi1921: { label: '1921', name: '『静岡県磐田郡誌』1921年' },
   fpjd: { label: '国研', name: '国立国語研究所 全国方言分布調査（2010〜2015年）磐田市地点' },
   hogenshu: { label: '方言集', name: '磐田市内の方言集' },
@@ -79,6 +80,7 @@ export function validateDictionary(json, { articleTitles = null } = {}) {
       if (!isNonEmptyString(s.forms)) throw new Error(`Source must name the recorded forms: ${e.w}`);
       if (s.type === 'gunshi1921' && !isNonEmptyString(s.page)) throw new Error(`gunshi1921 needs a page: ${e.w}`);
       if (s.type === 'fpjd' && !isNonEmptyString(s.item)) throw new Error(`fpjd needs a survey item: ${e.w}`);
+      if (s.type === 'bannan2011' && (!isNonEmptyString(s.page) || !isNonEmptyString(s.note))) throw new Error(`bannan2011 needs a page and note: ${e.w}`);
       if (s.type === 'hogenshu' && !isNonEmptyString(s.book)) throw new Error(`hogenshu needs a book: ${e.w}`);
       if (s.url && !/^https:\/\//.test(s.url)) throw new Error(`Source url must be https: ${e.w}`);
     }
@@ -151,6 +153,7 @@ export function karutaAlt(e) {
 }
 
 function sourceText(s) {
+  if (s.type === 'bannan2011') return `${SOURCE_TYPES.bannan2011.name}、冊子${s.page}頁（PDF ${Number(s.page) + 1}ページ）に「${s.forms}」の記録。${s.note}`;
   if (s.type === 'fpjd') return `${SOURCE_TYPES.fpjd.name}：質問「${s.item}」${s.recordKind === 'note' ? 'の注記に' : 'に'}${s.forms}${s.recordKind === 'note' ? 'の記録' : 'の回答'}${s.dataId ? `（data-ID ${s.dataId}）` : ''}${s.note ? `。原注：${s.note}` : ''}`;
   if (s.type === 'gunshi1921') return `${SOURCE_TYPES.gunshi1921.name}、${s.page}頁${s.village ? `・旧${s.village}` : ''}に「${s.forms}」の記録${s.note ? `。${s.note}` : ''}`;
   if (s.type === 'hogenshu') return `${s.book}に「${s.forms}」の記載`;

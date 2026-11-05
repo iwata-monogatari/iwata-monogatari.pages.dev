@@ -313,7 +313,7 @@ def verify_latest_sync(pages, latest, index_html, updates_html):
             and page_date in recent_dates
         ):
             recent_pages.append(page)
-            if page_url not in latest_url_set:
+            if not any(equivalent_url(page_url, item) for item in latest_url_set):
                 missing_recent_pages.append(page_url)
     if missing_recent_pages:
         return fail(

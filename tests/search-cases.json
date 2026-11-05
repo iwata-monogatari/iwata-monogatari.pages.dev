@@ -238,33 +238,39 @@
   {
     "q": "ふくで",
     "expected": [
-      "f001"
+      "f001",
+      "c181"
     ],
-    "maxRank": 5,
+    "maxRank": 6,
     "source": [
-      "/f001"
+      "/f001",
+      "/c181"
     ],
     "forbiddenReason": "人物への地名読みの無差別適用"
   },
   {
     "q": "フクデ",
     "expected": [
-      "f001"
+      "f001",
+      "c181"
     ],
-    "maxRank": 5,
+    "maxRank": 6,
     "source": [
-      "/f001"
+      "/f001",
+      "/c181"
     ],
     "forbiddenReason": "人物への地名読みの無差別適用"
   },
   {
     "q": "ﾌｸﾃﾞ",
     "expected": [
-      "f001"
+      "f001",
+      "c181"
     ],
-    "maxRank": 5,
+    "maxRank": 6,
     "source": [
-      "/f001"
+      "/f001",
+      "/c181"
     ],
     "forbiddenReason": "人物への地名読みの無差別適用"
   },
@@ -369,9 +375,10 @@
     "q": "ふくで",
     "district": "fukude",
     "expected": [
-      "f001"
+      "f001",
+      "c181"
     ],
-    "maxRank": 5,
+    "maxRank": 6,
     "source": "/data/pages.json",
     "forbiddenReason": "姓ふくだをふくでへ置換"
   }

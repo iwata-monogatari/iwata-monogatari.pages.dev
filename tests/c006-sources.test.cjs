@@ -24,8 +24,16 @@ test('FPJD preserves all 287 records, 211 questions and one point with stable de
 
 test('each badge resolves to a source record and preserves historical place or note status', () => {
   for (const e of entries) for (const s of e.sources) {
-    const anchor = new URL(s.url).hash.slice(1);
-    assert.ok(html.includes(`id="${anchor}"`), `${e.id}: ${anchor}`);
+    const sourceUrl = new URL(s.url);
+    const anchor = sourceUrl.hash.slice(1);
+    const sourceHtml = sourceUrl.pathname === '/c181' ? fs.readFileSync(path.join(root, 'c181.html'), 'utf8') : html;
+    assert.ok(sourceHtml.includes(`id="${anchor}"`), `${e.id}: ${anchor}`);
+    if (s.type === 'bannan2011') {
+      assert.equal(sourceUrl.pathname, '/c181');
+      assert.match(s.page, /^\d+$/);
+      assert.ok(s.note && sourceHtml.includes(s.note));
+      assert.ok(sourceHtml.includes('2011年11月12日'));
+    }
     if (s.type === 'gunshi1921') {
       const record = gunshi.records.find(r => r.id === anchor);
       assert.ok(record);

@@ -87,7 +87,7 @@ test('every entry shows a karuta slot: a pending card now, an image once both We
 
 test('source badges appear only for recorded sources and say what was recorded', () => {
   const withSources = json.entries.filter(e => e.sources.length);
-  assert.equal(withSources.length, 30);
+  assert.equal(withSources.length, 39);
   const b = block();
   assert.equal((b.match(/<span class="src-badges">/g) || []).length, withSources.length);
   assert.match(b, /<span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1242頁・旧福島村に「あんもう」の記録[^"]*">1921<\/span>/);
@@ -189,7 +189,8 @@ test('JavaScript enhancement is opt-in and build generates the dictionary before
   assert.doesNotMatch(html, /dictEl\.innerHTML\s*=/);
   assert.match(html, /<button type="button" class="act" id="karuta-view" aria-pressed="false">絵札で並べる<\/button>/);
   const build = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8')).scripts.build;
-  assert.ok(build.startsWith('node tools/build_c006_dictionary.mjs && '));
+  assert.ok(build.indexOf('node tools/build_c006_dictionary.mjs') >= 0);
+  assert.ok(build.indexOf('node tools/build_c006_dictionary.mjs') < build.indexOf('scripts/build_search.py'));
   for (const step of ['sync_new_articles.py', 'scripts/build_search.py', 'scripts/build_saguchi_related.py', 'tools/sync-knowledge-count.mjs']) assert.ok(build.includes(step));
 });
 
