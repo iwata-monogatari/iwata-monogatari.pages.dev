@@ -19,7 +19,7 @@ def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--font',default='C:/Windows/Fonts/YuGothR.ttc')
     ap.add_argument('--bold-font',default='C:/Windows/Fonts/YuGothB.ttc')
-    ap.add_argument('--output',type=Path,default=ROOT/'downloads/enshu-karuta-122.pdf')
+    ap.add_argument('--output',type=Path,default=ROOT/'downloads/enshu-karuta-134.pdf')
     args=ap.parse_args()
     pdfmetrics.registerFont(TTFont('JP',args.font,subfontIndex=0))
     pdfmetrics.registerFont(TTFont('JPB',args.bold_font,subfontIndex=0))
@@ -28,12 +28,12 @@ def main():
     html=(ROOT/'c006.html').read_text(encoding='utf-8')
     order=re.findall(r'<div class="entry" id="w-[^"]+" data-id="([a-z-]+)">',html)
     byid={e['id']:e for e in entries}
-    assert len(order)==len(entries)==122 and set(order)==set(byid)
+    assert len(order)==len(entries) and set(order)==set(byid)
     entries=[byid[i] for i in order]
     args.output.parent.mkdir(parents=True,exist_ok=True)
     c=canvas.Canvas(str(args.output),pagesize=A4,pageCompression=1,invariant=1)
-    c.setTitle('遠州弁かるた 122語 絵札・読み札 | 磐田物語')
-    c.setAuthor('磐田物語'); c.setSubject('2026-10-12版 / 用例は編集部作例、絵札は生成AIを用いて制作')
+    c.setTitle(f'遠州弁かるた {len(entries)}語 絵札・読み札 | 磐田物語')
+    c.setAuthor('磐田物語'); c.setSubject('2026-11-05版 / 用例は編集部作例、絵札は生成AIを用いて制作')
     W,H=A4
     def para(text,x,top,width,size=11,leading=None,bold=False,color=NAVY,maxheight=None):
         style=ParagraphStyle('p',fontName='JPB' if bold else 'JP',fontSize=size,leading=leading or size*1.65,textColor=color,wordWrap='CJK')
@@ -48,11 +48,11 @@ def main():
         c.drawImage(ImageReader(b),x,y,w,h)
     def footer(n):
         c.setFillColor(GREY);c.setFont('JP',8)
-        c.drawString(20*mm,10*mm,'磐田物語  https://iwata-monogatari.net/c006  |  2026-10-12')
+        c.drawString(20*mm,10*mm,'磐田物語  https://iwata-monogatari.net/c006  |  2026-11-05')
         c.drawRightString(W-20*mm,10*mm,str(n))
     c.setFillColor(RED);c.rect(20*mm,H-30*mm,12*mm,2*mm,fill=1,stroke=0)
     y=para('遠州弁かるた',20*mm,H-39*mm,W-40*mm,29,bold=True)
-    y=para('引札風の122語  /  絵札・読み札',20*mm,y-6*mm,W-40*mm,16)
+    y=para(f'引札風の{len(entries)}語  /  絵札・読み札',20*mm,y-6*mm,W-40*mm,16)
     for i,key in enumerate(['dara','senhiki','anmo']):picture(byid[key],(20+i*57)*mm,H-148*mm,50*mm,66.667*mm)
     y=H-158*mm
     for title,text in [
@@ -78,11 +78,14 @@ def main():
             top=para(e['k'],rx+5*mm,top-1.5*mm,cw-10*mm,9,color=GREY,maxheight=12*mm)
             top=para(e['ex'],rx+5*mm,top-5*mm,cw-10*mm,12.5,19,bold=True,maxheight=30*mm)
             top=para('標準語：'+e['std'],rx+5*mm,top-4*mm,cw-10*mm,9.5,15,color=GREY,maxheight=23*mm)
+            for source in e['sources']:
+                if source['type']=='bannan2011':
+                    top=para('出典：落合博・落合ギャラン章子『遠州方言』磐南同窓会関東支部、2011年、'+source['page']+'頁。',rx+5*mm,top-3*mm,cw-10*mm,6.8,9,color=GREY,maxheight=15*mm)
             if top<y+5*mm:raise ValueError('card overflow '+e['id'])
             label=f"{start+row+1:03d}  {e['id']}"
             c.setFont('JP',6.8);c.setFillColor(GREY)
             c.drawString(x,y-3*mm,label);c.drawString(rx,y-3*mm,label)
         footer(start//3+2);c.showPage()
     c.save()
-    print(f'{args.output}: 42 pages, {len(entries)} pairs, {args.output.stat().st_size:,} bytes')
+    print(f'{args.output}: {1+(len(entries)+2)//3} pages, {len(entries)} pairs, {args.output.stat().st_size:,} bytes')
 if __name__=='__main__':main()

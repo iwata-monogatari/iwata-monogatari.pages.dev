@@ -9,3 +9,7 @@
 - 最新mainと本番を照合してから更新し、同じ16語の出典、11月5日の履歴、新設記事を重複追加しない。新着・検索・全記事一覧・地名企画を保持し、既存生成元から再生成する。
 - 公開検証・原資料対応・差分の記録は C:/Users/Owner/Documents/Codex/2026-11-05/https-iwata-monogatari-net-c006-view/outputs/enshu-2011/ 。公開結果はverification.jsonを確認する。
 - 関連する旧automation ID 6abda1b542648191912643b56567fc8e はviewがカード描画のみを返し、現行設定本文を取得できなかった。ローカルautomation台帳に同対象は見つからず、予定・状態・通知条件を推測して上書きしていない。本書を共有生成物・既存解析の引継ぎ資料とする。新規監視は作らない。
+
+## 同日の追加依頼：挿絵と未収録語の公開
+
+12語追加し全134語。追加語はodokeru,rangoku,gankime,ooe,oodo,oyaku,go,kaabaru,mokko,tendai,amake,yurusekunai。既存choukeruは重複させず冊子4頁の出典を補足。既存122語の固定ID・作例・画像・旧PDFは保持する。冊子出典は計29語、出典印は計51語。新しい印刷PDFはdownloads/enshu-karuta-134.pdfで、旧122版も保持。c181に新作挿絵2点（座敷と庭／聞き取り）と29語の資料対応を掲載。資料の図版ではなく生成AIによる創作画である表示、書誌・該当頁・語形差を保持する。今回の検証記録は同作業フォルダーoutputs/enshu-expansion/verification.json。初回の122語という履歴を現行総数の根拠として使わず、最新データ・本番と照合する。同じ追加や履歴を重複実行しない。

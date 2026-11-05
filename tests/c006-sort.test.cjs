@@ -65,7 +65,7 @@ test("the page data matches the JSON source and begins in Japanese syllabary ord
   assert.deepEqual(Array.from(DATA, (d) => d.w), JSON_ENTRIES.map((e) => e.w));
   assert.deepEqual(Array.from(DATA, (d) => d.id), JSON_ENTRIES.map((e) => e.id));
   assert.deepEqual(words.slice(0, 8), [
-    "あいさ", "あおたえる", "頭を切る", "あっこ", "あわくい", "あんき", "あんも", "いいにする",
+    "あいさ", "あおたえる", "頭を切る", "あっこ", "あまけ", "あわくい", "あんき", "あんも",
   ]);
 });
 

@@ -48,7 +48,7 @@ test('initial HTML contains every JSON entry with its six fields, id anchor and 
   assert.equal(actual.length, COUNT);
   assert.equal(new Set(actual.map(d => d.w)).size, COUNT);
   assert.deepEqual(actual, expectedEntries());
-  assert.deepEqual(actual.slice(0, 8).map(d => d.w), ['あいさ', 'あおたえる', '頭を切る', 'あっこ', 'あわくい', 'あんき', 'あんも', 'いいにする']);
+  assert.deepEqual(actual.slice(0, 8).map(d => d.w), ['あいさ', 'あおたえる', '頭を切る', 'あっこ', 'あまけ', 'あわくい', 'あんき', 'あんも']);
   assert.equal((html.match(/<div class="entry" id="w-[^"]+" data-id="[a-z-]+">/g) || []).length, COUNT);
   for (const e of json.entries) {
     assert.ok(html.includes(`id="w-${e.w}" data-id="${e.id}"`), `old anchor kept for ${e.w}`);
@@ -87,7 +87,7 @@ test('every entry shows a karuta slot: a pending card now, an image once both We
 
 test('source badges appear only for recorded sources and say what was recorded', () => {
   const withSources = json.entries.filter(e => e.sources.length);
-  assert.equal(withSources.length, 39);
+  assert.equal(withSources.length, 51);
   const b = block();
   assert.equal((b.match(/<span class="src-badges">/g) || []).length, withSources.length);
   assert.match(b, /<span class="src-badge src-gunshi1921" title="『静岡県磐田郡誌』1921年、1242頁・旧福島村に「あんもう」の記録[^"]*">1921<\/span>/);
