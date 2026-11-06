@@ -26,6 +26,9 @@
     button.ghost { background:#fff; color:var(--accent); border:1px solid var(--accent); }
     .toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
     .toolbar select { font:inherit; padding:7px 10px; border:1px solid var(--border); border-radius:8px; }
+    .toolbar label { min-width:0; max-width:100%; }
+    .toolbar select { max-width:100%; }
+    #banban-reactions { overflow-wrap:anywhere; }
     .status { font-size:.88rem; color:var(--sub); margin-left:auto; }
     .hide { display:none !important; }
     .tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; }
@@ -56,7 +59,7 @@
 <body>
 <div class="wrap">
   <h1>読者の反応ダッシュボード</h1>
-  <p class="note">反応件数・種類・記事別の内訳は、トークン入力なしで確認できます。自分のアクセスは除外しています。一言の本文は非公開で、登録済みの管理者端末でだけ自動で表示されます。　<a href="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/">アクセス状況へ戻る</a></p>
+  <p class="note" id="dashboard-note">反応件数・種類・記事別の内訳は、トークン入力なしで確認できます。自分のアクセスは除外しています。一言の本文は非公開で、登録済みの管理者端末でだけ自動で表示されます。　<a href="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/">アクセス状況へ戻る</a></p>
 
   <div id="dash">
     <div class="box toolbar">
@@ -64,7 +67,8 @@
         <select id="site">
           <option value="iwata" selected>磐田物語</option>
           <option value="oishi">大石浩之（oishi-hiroyuki.org）</option>
-          <option value="all">すべて</option>
+          <option value="banban">ATAWI磐田南高校（私の知り合い）</option>
+          <option value="all">すべて（記事の反応）</option>
         </select>
       </label>
       <label>期間:
@@ -80,6 +84,14 @@
       <span class="status" id="status" role="status" aria-live="polite">読み込み中…</span>
     </div>
 
+    <section id="banban-reactions" class="hide" aria-labelledby="banban-title">
+      <h2 id="banban-title">磐南の人物別「私の知り合い」</h2>
+      <p class="note">全期間の登録を人物ごとに集計します。同じ人物・同じIPアドレスは1票です。同票は同順位、0票は順位なし。押した方の氏名やIPアドレスは表示しません。記事の反応・一言とは別の集計です。</p>
+      <p id="banban-total" role="status">読み込み中…</p>
+      <label>人物名で絞り込む <input type="search" id="banban-query" placeholder="例：大石" style="font:inherit;max-width:100%;padding:8px"></label>
+      <div class="tbl-wrap"><table><thead><tr><th>順位</th><th>人物</th><th class="num">登録数</th></tr></thead><tbody id="banban-rows"></tbody></table></div>
+    </section>
+    <div id="article-reactions">
     <div class="tiles">
       <div class="tile"><div class="k">反応の合計</div><div class="v" id="t-total">0</div></div>
       <div class="tile"><div class="k"><span class="dot" style="background:var(--c-learned)"></span>📖 知らなかった</div><div class="v" id="t-learned">0</div></div>
@@ -138,6 +150,7 @@
       </div>
       <p id="auth-status" role="status" aria-live="polite"></p>
     </details>
+    </div>
   </div>
 </div>
 
@@ -154,6 +167,21 @@
   var COLOR = { learned:"var(--c-learned)", local:"var(--c-local)", more:"var(--c-more)" };
   var pages = [], sortKey = "total", sortDesc = true;
   var adminMode = false, requestId = 0;
+  var banbanPeople = [];
+  var articleNote = $("dashboard-note").innerHTML;
+  var articleDays = $("days").value;
+
+  function renderBanban() {
+    var query = $("banban-query").value.normalize("NFKC").toLowerCase().replace(/\s/g, "");
+    var tbody = $("banban-rows"); tbody.textContent = "";
+    banbanPeople.filter(function(p) { return p.name.normalize("NFKC").toLowerCase().replace(/\s/g, "").indexOf(query) !== -1; }).forEach(function(p) {
+      var row = el("tr"); row.appendChild(el("td", "", p.rank == null ? "—" : String(p.rank)));
+      var cell = el("td"), link = el("a", "", p.name);
+      link.href = "https://banban.atawi.link/#" + encodeURIComponent(p.id); link.target = "_blank"; link.rel = "noopener noreferrer";
+      cell.appendChild(link); row.appendChild(cell); row.appendChild(el("td", "num", p.count + "票")); tbody.appendChild(row);
+    });
+  }
+  $("banban-query").addEventListener("input", renderBanban);
 
 
   function el(tag, cls, text) {
@@ -171,6 +199,34 @@
   function load() {
     document.dispatchEvent(new Event("reaction-summary-loading"));
     var currentRequest = ++requestId;
+    var banban = $("site").value === "banban";
+    $("dashboard-note").innerHTML = banban ? '磐南の人物別「私の知り合い」登録数を確認できます。管理者の登録も通常と同じく1IP・1人物につき1票です。押した人の身元は収集・表示しません。　<a href="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/">アクセス状況へ戻る</a>' : articleNote;
+    $("banban-reactions").classList.toggle("hide", !banban);
+    $("article-reactions").classList.toggle("hide", banban);
+    if (banban && !$("days").disabled) articleDays = $("days").value;
+    if (banban) $("days").value = "0";
+    else if ($("days").disabled) $("days").value = articleDays;
+    $("days").disabled = banban;
+    $("internal-control").classList.toggle("hide", banban || !adminMode);
+    if (banban) {
+      statusEl.textContent = "読み込み中…";
+      $("banban-total").textContent = "全期間の登録を取得中…";
+      banbanPeople = []; renderBanban();
+      fetch("https://atawi-banban-acquaintances.hiroyukio0122.workers.dev/api/ranking", {cache:"no-store", credentials:"omit", referrerPolicy:"no-referrer", signal:AbortSignal.timeout(10000)})
+        .then(function(r) { if (!r.ok) throw new Error("unavailable"); return r.json(); })
+        .then(function(d) {
+          if (currentRequest !== requestId) return;
+          if (!d.ok || d.site !== "banban" || !Array.isArray(d.people)) throw new Error("invalid");
+          banbanPeople = d.people; renderBanban();
+          $("banban-total").textContent = "合計 " + d.total + "票 ／ 登録のある人物 " + d.people.filter(function(p){return p.count > 0;}).length + "人 ／ 掲載 " + d.people.length + "人（全期間）";
+          statusEl.textContent = "更新 " + fmt(new Date().toISOString());
+        }).catch(function() {
+          if (currentRequest !== requestId) return;
+          $("banban-total").textContent = "集計を取得できませんでした。0票という意味ではありません。再読み込みしてください。";
+          statusEl.textContent = "取得できませんでした";
+        });
+      return;
+    }
     var authenticated = adminMode;
     statusEl.textContent = "読み込み中…";
     ["t-total", "t-learned", "t-local", "t-more", "t-visitors", "t-notes"].forEach(function (id) { $(id).textContent = "—"; });
@@ -338,7 +394,7 @@
   $("reload-btn").addEventListener("click", load);
   $("days").addEventListener("change", load);
   $("site").addEventListener("change", load);
-  try { var qs = new URLSearchParams(location.search).get("site"); if (["iwata", "oishi", "all"].indexOf(qs) !== -1) $("site").value = qs; } catch (e) {}
+  try { var qs = new URLSearchParams(location.search).get("site"); if (["iwata", "oishi", "banban", "all"].indexOf(qs) !== -1) $("site").value = qs; } catch (e) {}
   $("internal").addEventListener("change", load);
   $("forget-btn").addEventListener("click", function () {
     fetch("/api/reactions/admin-session", { method: "DELETE", cache: "no-store", credentials: "same-origin" })
@@ -373,6 +429,6 @@
   start();
 })();
 </script>
-<script src="/assets/js/admin-feedback.js?v=20261016-1" defer></script>
+<script src="/assets/js/admin-feedback.js?v=20261106-1" defer></script>
 </body>
 </html>

@@ -8,6 +8,10 @@
   async function load() {
     var id = ++requestId;
     rows = []; body.replaceChildren(); download.disabled = true;
+    if (document.getElementById("site").value === "banban") {
+      status.textContent = "磐南の知り合い登録は、人物別の集計で確認できます。";
+      return;
+    }
     status.textContent = "見せ方の希望を読み込んでいます…";
     var query = new URLSearchParams({ site: document.getElementById("site").value, days: document.getElementById("days").value });
     if (document.getElementById("internal").checked) query.set("internal", "1");
