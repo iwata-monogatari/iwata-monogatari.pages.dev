@@ -59,6 +59,13 @@ function wantsReactions(pathname) {
 export async function onRequest(context) {
   const { request, next } = context;
   const url = new URL(request.url);
+  // 磐南の人物別登録・集計は終了。旧リンクから他サイトの集計を表示しない。
+  if (/^\/admin-reactions(?:\.html)?\/?$/.test(url.pathname) && url.searchParams.get("site") === "banban") {
+    return new Response('<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>公開を終了しました</title><h1>この機能は公開を終了しました。</h1><p><a href="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/">アクセス状況へ戻る</a></p></html>', {
+      status: 410,
+      headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store", "X-Robots-Tag": "noindex, nofollow" },
+    });
+  }
   const legacySearch = url.pathname === "/" && ["q", "district", "theme", "sort", "page"].some(key => url.searchParams.has(key));
   const searchContext = legacySearch || url.pathname === "/search" || url.pathname.startsWith("/search/");
   const protectLinks = html => searchContext ? html.replace(/<a\b[^>]*>/gi, tag => tag.replace(/\sreferrerpolicy=(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, "").replace(/^<a\b/i, '<a referrerpolicy="origin"')) : html;
