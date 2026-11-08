@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1794037048,
-  "generation": 20261107163728,
-  "git_commit_at_stamp": "c2fbd23a2d261af74c3451d338e184a92d1bf8e6",
+  "generated_at_unix": 1794099196,
+  "generation": 20261108095316,
+  "git_commit_at_stamp": "3d99ad5a9b20f1d4be84f22cc5d08992af61e3b2",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "032d5347947b51e0bcaeb7cb1b4cfe733f5b5f1a79378cad8c3f2888e1d9fd55"
+      "sha256": "55277d07b360e830d8319256489a651181a00481c8e3879393f2714f1fe205f5"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "b2d3e06c5eb30dc3142ab4a5c92dc169d33f4ab94a88a57bdc53a5fa28958727"
+      "sha256": "31759447c9bf9f4309ff51ea23f5c25c61b95d10bfadc036dd55bde44bd227ce"
     },
     {
       "path": "data/pages.json",
-      "sha256": "fbabf865f6e7e991afb3f39f8299823c4e7f5a1bc918629cf7f2fb7666ce7238"
+      "sha256": "0f252d3f1086670983fb6ff5a35af5da6f75739cae5d72810c6d4d3367185c1d"
     },
     {
       "path": "index.html",
-      "sha256": "18dffad7590fde4ed4ceb01142b5304e579719e3163d5a7cc00d9041ee57cb7d"
+      "sha256": "c89d1495619f76fd6d2b6a0087b0f38947ad1cab1556d17418fdbb3ddf9c512b"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "d84ec5c1f1a025b9ee0b24278ce9fc36e986354985c59bddbaaf0e4c955d26dd"
+      "sha256": "b6d734dc4e89faad87126a2110ac2aa7a1e413b0a6e3d2a4e1fbde6920e9daa5"
     },
     {
       "path": "updates.html",
-      "sha256": "0c778cc118be1fbc30a7e09d4300fb7168b0880b567fd266ec33d73ca85ff2d0"
+      "sha256": "551d3fc90805b78bfa210f2b4d75a997a41073bbe99fe633ad917f6c114d3c0b"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "79624bac30910a1e811fa1a24a03e82f538aebc994c61171239859b460cd2a33",
+      "content_sha256": "6484b6ebc577446b3dfbe4d08158e796dfa17fab074eb4e7ef372d6dba39d985",
       "path": "index.html",
-      "sha256": "18dffad7590fde4ed4ceb01142b5304e579719e3163d5a7cc00d9041ee57cb7d",
+      "sha256": "c89d1495619f76fd6d2b6a0087b0f38947ad1cab1556d17418fdbb3ddf9c512b",
       "url": "/"
     },
     {
-      "content_sha256": "c1eec20011398d5f8bb35a15ec63c62d40e57174e73622dfc3b05cd6e2a18bfd",
+      "content_sha256": "3377bd20a7af0e71c14ec0407616a71a0f3015d932a13547dc42a956f7296a88",
       "path": "updates.html",
-      "sha256": "0c778cc118be1fbc30a7e09d4300fb7168b0880b567fd266ec33d73ca85ff2d0",
+      "sha256": "551d3fc90805b78bfa210f2b4d75a997a41073bbe99fe633ad917f6c114d3c0b",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "8e65212d0716bdc4ded6f60e74d1a2a6313d58743d34e3795a569c4935f3a1b1",
+      "content_sha256": "79f09c6fccd4576e6f0ebdad40f85ca27db251f5db840d59b40bb318f9e8c312",
       "path": "c034.html",
-      "sha256": "032d5347947b51e0bcaeb7cb1b4cfe733f5b5f1a79378cad8c3f2888e1d9fd55",
+      "sha256": "55277d07b360e830d8319256489a651181a00481c8e3879393f2714f1fe205f5",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "9f64c5aa65e5b81afc1f760b73b17640b9aa21b2f5881b3358a0586cc1e1bc20",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "cdcb6bfc65256991f32774a56d0725a7ca587d842dd6f0fec6ff63658d745eec",
+      "path": "blog/20261108-iwata-kinjiro-exhibition/index.html",
+      "sha256": "2bee45ed1f2818a3687bd25f4a4b4382ea699e0bec54ded53edf0f47d507e1d9",
+      "url": "/blog/20261108-iwata-kinjiro-exhibition"
     },
     {
       "content_sha256": "9d014d9fd3141895ff23c53f279357b89abe63cc151a3aad752ccbc2b4df971c",
@@ -856,23 +862,17 @@
       "path": "chimei/towns/0100000/index.html",
       "sha256": "45f14fe5a129215a680a4cdb299fa7d61a85f4fc5d5c3dfc240c782e4906a9a3",
       "url": "/chimei/towns/0100000"
-    },
-    {
-      "content_sha256": "14db1ee5bf91d4740d1533920d5f190bfc8a48005f7dd2e4c1c5047d251d729b",
-      "path": "chimei/towns/0101000/index.html",
-      "sha256": "0f5c05deb7d63d3f6f8f6d48a1744224f0a1280b28ef698037c73e3a6655c45b",
-      "url": "/chimei/towns/0101000"
     }
   ],
   "schema": 1,
-  "state_hash": "0b8a614a2083f3406f93af184407f4ab8cab4f60d0449657f28d0f0bcf7c56af",
+  "state_hash": "2807bd858e8918e5b2bd3ece68246f00a4c0126f0b6deda43f1fdae9fbbcce67",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1319,
-    "new_articles": 1495,
-    "new_articles_sha256": "b2d3e06c5eb30dc3142ab4a5c92dc169d33f4ab94a88a57bdc53a5fa28958727",
-    "pages_sha256": "fbabf865f6e7e991afb3f39f8299823c4e7f5a1bc918629cf7f2fb7666ce7238",
-    "pages_total": 1403,
-    "published_pages": 1402
+    "new_articles": 1496,
+    "new_articles_sha256": "31759447c9bf9f4309ff51ea23f5c25c61b95d10bfadc036dd55bde44bd227ce",
+    "pages_sha256": "0f252d3f1086670983fb6ff5a35af5da6f75739cae5d72810c6d4d3367185c1d",
+    "pages_total": 1404,
+    "published_pages": 1403
   }
 }
