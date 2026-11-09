@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1794099196,
-  "generation": 20261108095316,
-  "git_commit_at_stamp": "3d99ad5a9b20f1d4be84f22cc5d08992af61e3b2",
+  "generated_at_unix": 1794186386,
+  "generation": 20261109100626,
+  "git_commit_at_stamp": "366e7ff0ebfce0ccef3d36ce0168543ddbbd9c36",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,11 +31,11 @@
     },
     {
       "path": "c034.html",
-      "sha256": "55277d07b360e830d8319256489a651181a00481c8e3879393f2714f1fe205f5"
+      "sha256": "1c2f6025cb7614c279d50bf5d90a18433e7e6cc8f5bb74b7c026e21584394d38"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "31759447c9bf9f4309ff51ea23f5c25c61b95d10bfadc036dd55bde44bd227ce"
+      "sha256": "d33010b96106a7e53d9772ab419ac55e59bc5bacdf9326bd381256e6fe268d5d"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "c89d1495619f76fd6d2b6a0087b0f38947ad1cab1556d17418fdbb3ddf9c512b"
+      "sha256": "9cadc60470784d566d29c5c3bcde2de9f84c559578c4eb256db115923c4b2b73"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "b6d734dc4e89faad87126a2110ac2aa7a1e413b0a6e3d2a4e1fbde6920e9daa5"
+      "sha256": "040f1e9093c46c1ca20fd8e141c48394724d6b21a9fca23dba5f8293fcc20011"
     },
     {
       "path": "updates.html",
-      "sha256": "551d3fc90805b78bfa210f2b4d75a997a41073bbe99fe633ad917f6c114d3c0b"
+      "sha256": "8fbf6818e417e2128c9dac976ec9b1195fc8436ded54441a4ddba3166024e083"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "6484b6ebc577446b3dfbe4d08158e796dfa17fab074eb4e7ef372d6dba39d985",
+      "content_sha256": "61293c1542506af6a90900d68e6e0371b2cb33789f03a9fbd1a028bc6569058e",
       "path": "index.html",
-      "sha256": "c89d1495619f76fd6d2b6a0087b0f38947ad1cab1556d17418fdbb3ddf9c512b",
+      "sha256": "9cadc60470784d566d29c5c3bcde2de9f84c559578c4eb256db115923c4b2b73",
       "url": "/"
     },
     {
-      "content_sha256": "3377bd20a7af0e71c14ec0407616a71a0f3015d932a13547dc42a956f7296a88",
+      "content_sha256": "750cf2fae80230f0735566da1433b8826186af03af65cb3be0a6efde469250c3",
       "path": "updates.html",
-      "sha256": "551d3fc90805b78bfa210f2b4d75a997a41073bbe99fe633ad917f6c114d3c0b",
+      "sha256": "8fbf6818e417e2128c9dac976ec9b1195fc8436ded54441a4ddba3166024e083",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "79f09c6fccd4576e6f0ebdad40f85ca27db251f5db840d59b40bb318f9e8c312",
+      "content_sha256": "18b79049a4bdef0a3e11eafd1508e380a4c2e3ffbed17a4e846bffd548426d99",
       "path": "c034.html",
-      "sha256": "55277d07b360e830d8319256489a651181a00481c8e3879393f2714f1fe205f5",
+      "sha256": "1c2f6025cb7614c279d50bf5d90a18433e7e6cc8f5bb74b7c026e21584394d38",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "9f64c5aa65e5b81afc1f760b73b17640b9aa21b2f5881b3358a0586cc1e1bc20",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "f00f40e954b7a000a429116a3899b2659105a19fc52ca53548434e3234feb72a",
+      "path": "blog/20261109-shizuoka-han-prefecture-comparison/index.html",
+      "sha256": "6c13112ff84e46cd24504eba11cea2ebc796956dbb7fc59f049350c8238758e7",
+      "url": "/blog/20261109-shizuoka-han-prefecture-comparison"
     },
     {
       "content_sha256": "cdcb6bfc65256991f32774a56d0725a7ca587d842dd6f0fec6ff63658d745eec",
@@ -856,21 +862,15 @@
       "path": "chimei/towns/0099004/index.html",
       "sha256": "c0215e987535fc0da17e515cd100385ad489fdd803545e1ac31b8b07507748ef",
       "url": "/chimei/towns/0099004"
-    },
-    {
-      "content_sha256": "aa38cb7edecaceade631af56c34b3b3d422da29db714943700f66235cbe76d81",
-      "path": "chimei/towns/0100000/index.html",
-      "sha256": "45f14fe5a129215a680a4cdb299fa7d61a85f4fc5d5c3dfc240c782e4906a9a3",
-      "url": "/chimei/towns/0100000"
     }
   ],
   "schema": 1,
-  "state_hash": "2807bd858e8918e5b2bd3ece68246f00a4c0126f0b6deda43f1fdae9fbbcce67",
+  "state_hash": "ead70f002d221e8a8322bd7756ef3cf724e06de1291ee0757b32d9fad2cc1f2f",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1319,
-    "new_articles": 1496,
-    "new_articles_sha256": "31759447c9bf9f4309ff51ea23f5c25c61b95d10bfadc036dd55bde44bd227ce",
+    "new_articles": 1497,
+    "new_articles_sha256": "d33010b96106a7e53d9772ab419ac55e59bc5bacdf9326bd381256e6fe268d5d",
     "pages_sha256": "0f252d3f1086670983fb6ff5a35af5da6f75739cae5d72810c6d4d3367185c1d",
     "pages_total": 1404,
     "published_pages": 1403
