@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1794186386,
-  "generation": 20261109100626,
-  "git_commit_at_stamp": "366e7ff0ebfce0ccef3d36ce0168543ddbbd9c36",
+  "generated_at_unix": 1794273182,
+  "generation": 20261110011302,
+  "git_commit_at_stamp": "39e0fe584497e1155d71eb8f6ba838f3d6e46843",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -35,7 +35,7 @@
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "d33010b96106a7e53d9772ab419ac55e59bc5bacdf9326bd381256e6fe268d5d"
+      "sha256": "d579fd7e4dd330f9ab0fa020b13c14c2c47e1525648ef259c8525327f81e3782"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "9cadc60470784d566d29c5c3bcde2de9f84c559578c4eb256db115923c4b2b73"
+      "sha256": "eaab48cff935419d8864fb9b09ea59ce22a7566461bff0ee96c366dc1dfff623"
     },
     {
       "path": "package.json",
@@ -63,24 +63,24 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "040f1e9093c46c1ca20fd8e141c48394724d6b21a9fca23dba5f8293fcc20011"
+      "sha256": "35dcc3f75144ba5f8ffbd40e4fafada039e6ed37c517e1bdcdd6054ea14481bf"
     },
     {
       "path": "updates.html",
-      "sha256": "8fbf6818e417e2128c9dac976ec9b1195fc8436ded54441a4ddba3166024e083"
+      "sha256": "4a3a70a9d7bc1402826c7ffc3be894da869e456f83df7947a711be33f3b42c29"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "61293c1542506af6a90900d68e6e0371b2cb33789f03a9fbd1a028bc6569058e",
+      "content_sha256": "c7a6196aeb4670a6b8824f0d72af3fd7b517cce7d4d423f59ade224666ee27e5",
       "path": "index.html",
-      "sha256": "9cadc60470784d566d29c5c3bcde2de9f84c559578c4eb256db115923c4b2b73",
+      "sha256": "eaab48cff935419d8864fb9b09ea59ce22a7566461bff0ee96c366dc1dfff623",
       "url": "/"
     },
     {
-      "content_sha256": "750cf2fae80230f0735566da1433b8826186af03af65cb3be0a6efde469250c3",
+      "content_sha256": "f244ca8d7c0a9ce1db33f067b8439ddbaa32086d5ae8b29a4150023f27003af4",
       "path": "updates.html",
-      "sha256": "8fbf6818e417e2128c9dac976ec9b1195fc8436ded54441a4ddba3166024e083",
+      "sha256": "4a3a70a9d7bc1402826c7ffc3be894da869e456f83df7947a711be33f3b42c29",
       "url": "/updates.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "9f64c5aa65e5b81afc1f760b73b17640b9aa21b2f5881b3358a0586cc1e1bc20",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "07c115516be275ab2ddaf5460e7d5e1881ca5a213568895d74e7130ddd1d0f3b",
+      "path": "blog/20261109-chimei-shorui-yomikata/index.html",
+      "sha256": "807fa2dc3160053e797228d896a02b5ed898a02f411eb95dd117f29dc500c8b3",
+      "url": "/blog/20261109-chimei-shorui-yomikata"
     },
     {
       "content_sha256": "f00f40e954b7a000a429116a3899b2659105a19fc52ca53548434e3234feb72a",
@@ -856,21 +862,15 @@
       "path": "chimei/towns/0099003/index.html",
       "sha256": "1421c3d32167720511bc6f529fda40d045c4062d31740a0a15ac85a39888a85c",
       "url": "/chimei/towns/0099003"
-    },
-    {
-      "content_sha256": "6cf1850dde50d011b2456d08c78c779c39ddf1a87fc1dcf894ec79a8095b9516",
-      "path": "chimei/towns/0099004/index.html",
-      "sha256": "c0215e987535fc0da17e515cd100385ad489fdd803545e1ac31b8b07507748ef",
-      "url": "/chimei/towns/0099004"
     }
   ],
   "schema": 1,
-  "state_hash": "ead70f002d221e8a8322bd7756ef3cf724e06de1291ee0757b32d9fad2cc1f2f",
+  "state_hash": "921888e7d2131df07efe65bfd3ba1011ad9eb53d3800529c0737a7eb074637e2",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1319,
-    "new_articles": 1497,
-    "new_articles_sha256": "d33010b96106a7e53d9772ab419ac55e59bc5bacdf9326bd381256e6fe268d5d",
+    "new_articles": 1498,
+    "new_articles_sha256": "d579fd7e4dd330f9ab0fa020b13c14c2c47e1525648ef259c8525327f81e3782",
     "pages_sha256": "0f252d3f1086670983fb6ff5a35af5da6f75739cae5d72810c6d4d3367185c1d",
     "pages_total": 1404,
     "published_pages": 1403
