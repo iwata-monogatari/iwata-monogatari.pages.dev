@@ -211,7 +211,7 @@ ${karuta}
         <div class="ex">
           <span class="label">使用例</span><span class="example">${escapeHtml(e.ex)}</span>
           <span class="std">＝ ${escapeHtml(e.std)}</span>
-        </div>${note}${context}${sources}${articles}
+        </div>${e.learning ? `<details class="word-learning"><summary>もっと例文・使い分け（追加2例）</summary><p>${escapeHtml(e.learning.point)}</p>${e.learning.examples.map(x=>`<div class="learning-pair"><p class="learning-example">${escapeHtml(x.dialect)}</p><p class="learning-standard">標準語：${escapeHtml(x.standard)}</p></div>`).join('')}<small>掲載した意味に基づく編集部の作例です。実際の発話の引用ではありません。</small><p><a href="/enshu/#practice">学び舎で練習する →</a></p></details>` : ''}${note}${context}${sources}${articles}
       </div>
     </div>`;
 }
