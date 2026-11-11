@@ -39560,6 +39560,7 @@
       "title": "磐田の年越しと正月支度",
       "url": "toshikoshi-shogatsu.html",
       "district": [
+        "mitsuke",
         "koyo",
         "fukude"
       ],
@@ -39573,7 +39574,7 @@
       "updated_at": "2026-11-11",
       "date_provisional": false,
       "status": "published",
-      "summary": "福田と向笠の年中行事から、農具への感謝、地の神様、餅つき、正月飾り、田と海の仕事始めをたどる季節の特集。各章から既存の本編へ進めます。",
+      "summary": "福田・向笠・見付の年越しと正月支度を5章で読む季節特集。農具、家の神、餅つき、仕事始めに加え、見付の引札と天神への祈りをたどります。",
       "parent": "tokushu.html",
       "count_as_knowledge": false,
       "show_in_updates": true,
@@ -39584,12 +39585,54 @@
         "福田",
         "向笠",
         "餅つき",
-        "年中行事"
+        "年中行事",
+        "見付",
+        "引札",
+        "初天神"
       ],
       "source_refs": [
         "internal:k073.html",
         "internal:f015.html",
-        "internal:f012.html"
+        "internal:f012.html",
+        "internal:m183.html"
+      ]
+    },
+    {
+      "title": "見付の正月――引札の福と、天神への祈り",
+      "url": "m183.html",
+      "district": [
+        "mitsuke"
+      ],
+      "themes": [
+        "life",
+        "festival",
+        "shrine-temple",
+        "commerce"
+      ],
+      "content_type": "reading",
+      "published_at": "2026-11-11",
+      "updated_at": "2026-11-11",
+      "date_provisional": false,
+      "status": "published",
+      "count_as_knowledge": true,
+      "show_in_updates": true,
+      "show_in_all_articles": true,
+      "section": "見付",
+      "summary": "明治25年に刷られた翌年の引札暦と、見付天神の年越し・新春・初天神。見付の正月を、商いの紙と祈りの暦から読む独自記事。",
+      "topics": [
+        "正月",
+        "引札",
+        "年越し",
+        "初天神",
+        "見付天神"
+      ],
+      "level": "L2",
+      "source_refs": [
+        "internal:c019.html#hk-33",
+        "internal:c019.html#hk-3",
+        "web:https://www.mitsuke-tenjin.com/s-toshikoshi_ooharai/",
+        "web:https://www.mitsuke-tenjin.com/s-shinshun/",
+        "web:https://www.mitsuke-tenjin.com/s-hatsutenjin/"
       ]
     }
   ]
