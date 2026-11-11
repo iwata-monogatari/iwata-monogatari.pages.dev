@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-11-05",
+  "updated_at": "2026-11-11",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -39555,6 +39555,42 @@
       "count_as_knowledge": false,
       "show_in_updates": true,
       "show_in_all_articles": false
+    },
+    {
+      "title": "磐田の年越しと正月支度",
+      "url": "toshikoshi-shogatsu.html",
+      "district": [
+        "koyo",
+        "fukude"
+      ],
+      "themes": [
+        "life",
+        "festival",
+        "oral-history"
+      ],
+      "content_type": "index",
+      "published_at": "2026-11-11",
+      "updated_at": "2026-11-11",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "福田と向笠の年中行事から、農具への感謝、地の神様、餅つき、正月飾り、田と海の仕事始めをたどる季節の特集。各章から既存の本編へ進めます。",
+      "parent": "tokushu.html",
+      "count_as_knowledge": false,
+      "show_in_updates": true,
+      "show_in_all_articles": false,
+      "topics": [
+        "年越し",
+        "正月支度",
+        "福田",
+        "向笠",
+        "餅つき",
+        "年中行事"
+      ],
+      "source_refs": [
+        "internal:k073.html",
+        "internal:f015.html",
+        "internal:f012.html"
+      ]
     }
   ]
 }
