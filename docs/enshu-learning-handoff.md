@@ -17,3 +17,9 @@
 - data/c006-dictionary.jsonが正本。data/enshu-learning.jsonとenshu/index.htmlはtools/build_enshu_learning.pyで同期する。通常buildにも追加。辞典HTMLは既存build_c006_dictionary.mjsから生成。語数134、作例402、方向違いの練習268は区別し、ページ数や新語数へ読み替えない。
 - 学び舎は既存の語を再編集して練習できる機能索引で、知識記事数には加算しない。競合の全件調査はしておらず「最多」とは表示しない。今後の新語追加は実資料の照合から進める。
 - 今回の証拠は同依頼フォルダーoutputs/enshu-academy/verification.json。前回の2記事・変換の修正と今回の402作例・学習機能を保護し、重複制作しない。
+
+
+## 学び舎のデザイン改訂（2026-11-11）
+- コース一覧に既存絵札12点、コースごとの短い導入、深緑・朱色・生成りの色面と大きさの異なるカードを追加。本文は章番号・語数・二列の開閉カードで視線を整理。幅420px以下は一列の横組みカードへ切り替える。prefers-reduced-motionにも対応。
+- 生成元tools/build_enshu_learning.pyで一覧と本文の装飾を再生成。元データ134語・402作例・12コース・練習268問、元の公開日、クイズJSを保持する。画像は既存の生成AI絵札の再利用で、実景写真と扱わない。
+- 追加CSSはassets/css/enshu-academy-design.css。共通ヘッダー・他ページへ適用しない。記録は同依頼フォルダーoutputs/enshu-design/verification.json。学び舎・辞典の既存内容と導線を保護し、同じデザインを重複追加しない。
