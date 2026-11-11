@@ -2,6 +2,7 @@
 from pathlib import Path
 import json,html,re,sys
 from urllib.parse import quote
+from enshu_explorer import explorer_section
 R=Path(__file__).resolve().parents[1];E=lambda x:html.escape(str(x),quote=True)
 d=json.loads((R/'data/c006-dictionary.json').read_text(encoding='utf-8'))
 p=R/'data/enshu-learning.json';learning=json.loads(p.read_text(encoding='utf-8'));learning['entries']=d['entries']
@@ -30,6 +31,10 @@ page=R/'enshu/index.html';original=page.read_text(encoding='utf-8');result=re.su
 assert result!=original or sections in original
 course_section=f'<section id="courses"><div class="courses-heading"><div><p class="eyebrow">暮らしからひらく、12の入口</p><h2>あの場面の、<br><em>あのことば。</em></h2></div><p>今日は、どこから読みましょう。<br>気になる絵札を選んで、<br>ことばの違いを比べてみてください。</p></div><div class="courses">{cards}</div><p class="courses-credit">絵札は各語の作例をもとに制作した生成AIの創作画です。</p></section>'
 result=re.sub(r'<section id="courses">.*?</section>',lambda _:course_section,result,count=1,flags=re.S)
+result=re.sub(r'<section id="cards".*?</section>',lambda _:explorer_section(learning,by),result,count=1,flags=re.S)
+result=result.replace('enshu-academy.js?v=20261111','enshu-academy.js?v=20261112-explorer').replace('href="#cards">絵札で覚える','href="#cards">絵札でことば探し')
+if '/assets/css/enshu-word-explorer.css' not in result:
+ result=result.replace('</head>','<link rel="stylesheet" href="/assets/css/enshu-word-explorer.css?v=20261112"></head>',1)
 serialized=json.dumps(learning,ensure_ascii=False,indent=2)+'\n'
 if '--check' in sys.argv:
  assert serialized==p.read_text(encoding='utf-8') and result==original,'Run tools/build_enshu_learning.py'

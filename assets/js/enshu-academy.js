@@ -31,14 +31,51 @@
     if(missed.length){$('quiz-summary').append(node('span',' 振り返る語：'));for(const e of missed){const a=dictionary(e);a.textContent=e.w+'　';$('quiz-summary').append(a);}}
     else $('quiz-summary').append(node('span',' 全問正解です。別の方向や分類でも試せます。'));
   };
-  function flash(){const e=cards[cardIndex];const image=document.createElement('img');image.src='/assets/karuta/c006/'+e.id+'-300.webp';image.alt=e.w+'の作例を描いた創作絵札';image.width=300;image.height=400;
-    const figure=document.createElement('figure');figure.append(image,node('figcaption','生成AIによる創作画'));const answer=node('div','');answer.id='flash-answer';answer.hidden=true;answer.append(node('p',e.m),node('p',e.learning.examples[0].dialect),node('p','標準語：'+e.learning.examples[0].standard),node('p',e.learning.point),dictionary(e));
-    $('flash-card').replaceChildren(node('p',`${cardIndex+1} / ${cards.length}枚`),node('h3',e.w),figure,answer);$('flash-reveal').textContent='意味を見る';$('flash-reveal').setAttribute('aria-expanded','false');
+  let exampleIndex=0;
+  const starterButtons=[...document.querySelectorAll('.word-starter')];
+  const explorerControls=['flash-prev','flash-random','flash-next','flash-scene','flash-example-next','flash-copy'];
+  function example(){
+    const e=cards[cardIndex],pairs=[{dialect:e.ex,standard:e.std},...e.learning.examples],pair=pairs[exampleIndex];
+    $('flash-example-count').textContent=`会話の作例 ${exampleIndex+1} / ${pairs.length}`;
+    $('flash-example').textContent=pair.dialect;$('flash-standard').textContent=pair.standard;
   }
-  $('flash-reveal').onclick=()=>{const a=$('flash-answer');if(!a)return;a.hidden=!a.hidden;$('flash-reveal').textContent=a.hidden?'意味を見る':'意味を隠す';$('flash-reveal').setAttribute('aria-expanded',String(!a.hidden));};
-  $('flash-next').onclick=()=>{if(!cards.length)return;cardIndex=(cardIndex+1)%cards.length;flash();};
-  $('quiz-start').disabled=true;$('flash-next').disabled=true;$('flash-reveal').disabled=true;
+  function flash(interacted=false){
+    const e=cards[cardIndex];if(!e)return;exampleIndex=0;
+    const scenes=data.scenes.filter(s=>s.words.includes(e.id));
+    const scene=scenes.find(s=>s.id===$('flash-scene').value)||scenes[0];
+    const image=$('flash-image');image.src='/assets/karuta/c006/'+e.id+'-900.webp';
+    image.srcset=`/assets/karuta/c006/${e.id}-300.webp 300w, /assets/karuta/c006/${e.id}-900.webp 900w`;
+    image.alt=e.w+'の作例を描いた創作絵札';
+    $('flash-word').textContent=e.w;$('flash-meaning').textContent=e.m;$('flash-point').textContent=e.learning.point;
+    $('flash-scene-label').textContent=scene?scene.title:e.cat;
+    $('flash-progress').textContent=`${cardIndex+1} / ${cards.length}語`;
+    $('flash-dictionary').href='/c006?q='+encodeURIComponent(e.w)+'#'+e.id;
+    $('flash-course').href=scene?'#scene-'+scene.id:'#courses';
+    $('flash-course').textContent=scene?'この場面のことばを読む →':'12コースから読む →';
+    starterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.word===e.id)));
+    $('flash-message').textContent='';$('flash-share-fallback').hidden=true;example();
+    if(interacted){const url=new URL(location.href);url.searchParams.set('word',e.id);url.hash='cards';history.replaceState(null,'',url.pathname+url.search+url.hash);}
+  }
+  function deck(sceneId,preferred){
+    const scene=data.scenes.find(s=>s.id===sceneId),pool=scene?scene.words.map(id=>data.entries.find(e=>e.id===id)):data.entries;
+    const first=pool.find(e=>e.id===preferred)||pool[0];
+    cards=[first,...pool.filter(e=>e.id!==first.id)];cardIndex=0;
+  }
+  function focusWord(){ $('flash-word').focus({preventScroll:true});$('flash-card').scrollIntoView({block:'start'}); }
+  $('flash-next').onclick=()=>{if(!cards.length)return;cardIndex=(cardIndex+1)%cards.length;flash(true);focusWord();};
+  $('flash-prev').onclick=()=>{if(!cards.length)return;cardIndex=(cardIndex-1+cards.length)%cards.length;flash(true);focusWord();};
+  $('flash-random').onclick=()=>{if(cards.length<2)return;cardIndex=(cardIndex+1+Math.floor(Math.random()*(cards.length-1)))%cards.length;flash(true);focusWord();};
+  $('flash-example-next').onclick=()=>{if(!cards.length)return;exampleIndex=(exampleIndex+1)%(1+cards[cardIndex].learning.examples.length);example();};
+  $('flash-scene').onchange=()=>{if(!data)return;deck($('flash-scene').value);flash(true);};
+  starterButtons.forEach(b=>{b.onclick=()=>{if(!data)return;$('flash-scene').value='all';deck('all',b.dataset.word);flash(true);focusWord();};});
+  $('flash-copy').onclick=async()=>{
+    if(!cards.length)return;const url=new URL('https://iwata-monogatari.net/enshu/');url.searchParams.set('word',cards[cardIndex].id);url.hash='cards';
+    try{await navigator.clipboard.writeText(url.href);$('flash-message').textContent='この一語へのリンクをコピーしました。';}
+    catch{$('flash-message').textContent='コピーできませんでした。下のリンクを選択してコピーできます。';$('flash-share-url').value=url.href;$('flash-share-fallback').hidden=false;$('flash-share-url').focus();$('flash-share-url').select();}
+  };
+  $('quiz-start').disabled=true;explorerControls.forEach(id=>$(id).disabled=true);
   fetch('/data/enshu-learning.json').then(r=>{if(!r.ok)throw Error('data');return r.json();}).then(d=>{
-    data=d;cards=shuffled(d.entries);flash();$('quiz-start').disabled=false;$('flash-next').disabled=false;$('flash-reveal').disabled=false;
-  }).catch(()=>{$('quiz-summary').textContent='練習データを読み込めませんでした。場面別コースと辞典から引き続き学べます。';});
+    data=d;const requested=new URLSearchParams(location.search).get('word');deck('all',d.entries.some(e=>e.id===requested)?requested:'ponpon');flash();
+    $('quiz-start').disabled=false;explorerControls.forEach(id=>$(id).disabled=false);starterButtons.forEach(b=>b.disabled=false);
+  }).catch(()=>{$('quiz-summary').textContent='練習データを読み込めませんでした。場面別コースと辞典から引き続き学べます。';$('flash-message').textContent='ほかの絵札を読み込めませんでした。表示中の一語と、場面別コース・辞典はそのまま読めます。';});
 })();
