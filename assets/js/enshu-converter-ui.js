@@ -41,7 +41,7 @@
       const card=document.createElement('div');card.className='matched-word';
       addText(card,'strong',e.w);addText(card,'p',e.m);
       if (e.id==='jurui') addText(card,'p','逆変換は道の「ぬかるみ」を想定します。食べ物なら汁気の意味で読み替えてください。');
-      addLink(card,'辞典の作例・出典 →','/c006#'+encodeURIComponent(e.id));
+      addLink(card,'辞典の作例・出典 →','/c006?q='+encodeURIComponent(e.w)+'#'+encodeURIComponent(e.id));
       if (['chatto','jurui'].includes(e.id)) addLink(card,'詳しい意味と使い方 →','/enshu-'+e.id);
       if (['dara','zura','ra'].includes(e.id)) addLink(card,'語尾を記録から読む →','/c173');
       matchedWords.appendChild(card);
