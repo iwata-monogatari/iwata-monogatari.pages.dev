@@ -1,7 +1,7 @@
 {
   "_comment": "磐田物語 地区別ポータル 正式台帳。地区ページのカード一覧はこの台帳に基づいて管理する。published_at は新着順整列のための値で、未確認のものは date_provisional:true（表示はしない）。",
   "schema_version": 1,
-  "updated_at": "2026-11-11",
+  "updated_at": "2026-11-12",
   "districts": [
     {
       "district_id": "mitsuke",
@@ -39695,7 +39695,7 @@
       ]
     },
     {
-      "title": "遠州弁の学び舎｜134語・402例文・場面別12コース",
+      "title": "遠州弁の学び舎｜182学習語・546作例・24会話",
       "url": "enshu/",
       "district": [
         "mitsuke",
@@ -39708,10 +39708,10 @@
       ],
       "content_type": "index",
       "published_at": "2026-11-11",
-      "updated_at": "2026-11-11",
+      "updated_at": "2026-11-12",
       "date_provisional": false,
       "status": "published",
-      "summary": "全134語に追加2作例と使い分け。402作例、場面別12コース、268問の双方向練習と絵札で学ぶ遠州弁の学習入口。",
+      "summary": "辞典134語と歴史資料48語、546語別作例と24会話を12場面で学ぶ。資料読解8講座で文法・音声・民俗も考える学習入口。",
       "parent": "c006.html",
       "count_as_knowledge": false,
       "show_in_updates": true,
@@ -39782,6 +39782,35 @@
         "磐田郡誌",
         "郷土資料",
         "1921年"
+      ]
+    },
+    {
+      "title": "遠州弁の資料読解講座｜文法・音声・民俗を学ぶ8講",
+      "url": "enshu/seminar/",
+      "district": [
+        "common"
+      ],
+      "themes": [
+        "oral-history",
+        "life"
+      ],
+      "content_type": "index",
+      "published_at": "2026-11-12",
+      "updated_at": "2026-11-12",
+      "date_provisional": false,
+      "status": "published",
+      "summary": "郡誌・国語研の調査回答・研究本文から地域差、推量、否定と可能、音声、語義、民具、言語変化を学ぶ。比較表と8演習、出典付きの資料読解講座。",
+      "parent": "enshu/",
+      "count_as_knowledge": false,
+      "show_in_updates": true,
+      "show_in_all_articles": false,
+      "topics": [
+        "遠州弁",
+        "方言学",
+        "民俗学",
+        "文法",
+        "アクセント",
+        "資料読解"
       ]
     }
   ]
