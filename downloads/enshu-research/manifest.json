@@ -1,0 +1,27 @@
+{
+  "version": "2026-11-12",
+  "source": {
+    "title": "静岡県磐田郡誌",
+    "editor": "静岡県磐田郡教育会",
+    "year": 1921,
+    "section": "第23章「風俗」第7節「方言」",
+    "pages": "1242–1254",
+    "ndl": "https://dl.ndl.go.jp/pid/965680",
+    "image_credit": "国立国会図書館デジタルコレクション",
+    "checked": "2026-11-11"
+  },
+  "policy": "原画像を照合した選録。全文翻刻ではない。formは大きな仮名・旧仮名を含む原表記。glossは対応語と原注を読みやすく整理した意味の要約。語形数・記録数は語義の異なる独立語の数ではない。同一形でも意味または記録地が違えば別の記録。現代の全域での用法や使用率を示さない。",
+  "source_json_sha256": "ab0272fdaedf0869a3687ba903dd65adf8a5220a1d7e70d69569c15e7bec456f",
+  "source_json_hash_policy": "UTF-8 with line endings normalized to LF",
+  "csv_sha256": "c65b27e5b0daeb8bbe66d3f641c6df4d66b7951f96ac7b777c51a15493f1f8c1",
+  "transform": "One CSV row per existing record. Exact form/village strings; no spelling normalization. source_url constructed from NDL pid and frame. Repeated forms classified before other filters.",
+  "expected": {
+    "records": 380,
+    "original_forms": 376,
+    "region_labels": 13,
+    "repeated_rows": 8,
+    "top3_records": 315
+  },
+  "generated_by": "tools/build_enshu_research.py",
+  "citation": "磐田物語「遠州弁研究ノート・郡誌選録集計」2026年11月12日版。原資料：静岡県磐田郡教育会編『静岡県磐田郡誌』1921年、1242–1254頁。"
+}
