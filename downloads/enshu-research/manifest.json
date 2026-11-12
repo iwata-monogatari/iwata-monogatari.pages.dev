@@ -11,9 +11,9 @@
     "checked": "2026-11-11"
   },
   "policy": "原画像を照合した選録。全文翻刻ではない。formは大きな仮名・旧仮名を含む原表記。glossは対応語と原注を読みやすく整理した意味の要約。語形数・記録数は語義の異なる独立語の数ではない。同一形でも意味または記録地が違えば別の記録。現代の全域での用法や使用率を示さない。",
-  "source_json_sha256": "ab0272fdaedf0869a3687ba903dd65adf8a5220a1d7e70d69569c15e7bec456f",
+  "source_json_sha256": "6f66391adc60d3a789e3297fe5db1967f2e28ddcee90af70d80faa5338495a73",
   "source_json_hash_policy": "UTF-8 with line endings normalized to LF",
-  "csv_sha256": "c65b27e5b0daeb8bbe66d3f641c6df4d66b7951f96ac7b777c51a15493f1f8c1",
+  "csv_sha256": "3c45d41f6292d63494a07758a4902132b4587219172d550a1fef290eaef219b2",
   "transform": "One CSV row per existing record. Exact form/village strings; no spelling normalization. source_url constructed from NDL pid and frame. Repeated forms classified before other filters.",
   "expected": {
     "records": 380,
