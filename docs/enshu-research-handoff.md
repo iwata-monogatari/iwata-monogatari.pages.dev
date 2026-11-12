@@ -55,3 +55,12 @@
 - 本日の増分は公開サイトマップの正規URL差分で集計。着手時18ページ（遠州弁17、別ブログ1）。今回の追加12が公開された後は計30ページ（遠州弁29、別ブログ1）。ページ内の記録数・講数をページ数に加算しない。研究ページは `count_as_knowledge:false` を維持する。
 - 基点 `614cb129a7f6d36d2926bcb3eef8b16f9c835fc1`。独立作業場所で既存作業を保持。検証正本は `C:/Users/Owner/Documents/Codex/2026-11-11/https-iwata-monogatari-net-fga-internal-2/outputs/enshu-grammar/verification.json`。`source-review.json`、`fpjd-crosscheck.json`、`content-audit.json`、`today-after.json`、差分・本番画面を併読。公開・deploy・GSC再送の状態は正本を再読して照合し、同じ12本を重複追加しない。
 - 既存自動実行は実対象を照合し、無関係なタスクを変更しない。範囲・予定・通知条件を広げず、新しい監視は作らない。
+
+
+## 敬語・待遇表現と祭礼の追加8本（2026-11-12）
+- 計33本。tools/enshu_research_honorific.pyが追加原稿。既存25本の本文と教材・集計室を保持。敬語4・祭礼4のテーマ群を追加し、33本の導線を保持する。
+- FPJD G-104–117の質問文・原回答を使用。話題人物と聞き手を分け、G-108の誘導回答、G-115のNRと「特に何も言わない」を保持。文末ネの敬意を一律確定せず、調査場面の回答と分析候補を区別する。
+- 市文化財解説と県の見付天神裸祭解説を参照。指定当時の記述と更新年を区別し、祭礼名・役名をすべて遠州独自方言としない。年始の沈黙は儀礼上の規範として扱う。歌枕・念仏の歌詞や未確認の掛け声を創作しない。まんばちとマンパチの同一性・音変化を断定しない。
+- 研究解説・表・小演習は編集部による教材。現地調査・録音・研究者監修の実績を表示しない。開催予定や当年の参加条件の案内ではない。
+- 正本：C:/Users/Owner/Documents/Codex/2026-11-11/https-iwata-monogatari-net-fga-internal-2/outputs/enshu-honorific/verification.json。source-review.json・content-audit.json・change.patch・本番画面を再読し、同じ8本を重複追加しない。公開・GSCの状態は正本で確認。
+- 関連する既存自動実行の実対象を確認し、無関係なタスクや予定・通知条件を変更しない。新規監視は作らない。
