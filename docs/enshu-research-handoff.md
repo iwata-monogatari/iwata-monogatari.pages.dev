@@ -41,3 +41,17 @@
 - 平子2021の刊行頁は366–371頁（PDF6頁）。外輪式を内外輪式・外外輪式に分ける議論は発表者の提案。型・類・統合を区別し、人口移動の確証や地域の古さの順位に変えない。
 - 基点 `872469abc89cc55f0212f579f819c43465ed9d3d` から独立作業ツリーで追記。正本は `C:/Users/Owner/Documents/Codex/2026-11-11/https-iwata-monogatari-net-fga-internal-2/outputs/enshu-sound/verification.json`、出典照合は `source-review.json`、既存保護と本文・リンクは `content-audit.json`。実際の公開コミット・deploy・本番狭幅表示・GSC再送状態は正本を再読する。同じ7本を重複追加しない。
 - 既存自動実行の実対象を照合し、無関係なタスク・予定・通知条件は変更しない。新しい監視は追加しない。取得できなかった他の文献を本文確認済みの出典として追加しない。
+
+
+## 文法・語史・暮らしの追加12本（2026-11-12、次の明示依頼）
+
+- 計25本。新規生成元は `tools/enshu_research_grammar.py`。文法4・語史3・暮らし5のテーマ群を追加。既存13本の本文・従来の地域差と音声の解説、集計室、182語・546作例・24会話・12コースを保持する。本文は5節・原資料の比較表・小演習・確認範囲付き出典の構成。
+- 新規URL：negation-paradigms、conditional-contexts、potential-forms、invitation-and-intention、ranuki-history、mirui-tea-and-meaning、etymology-and-evidence、meals-work-and-hospitality、childcare-and-play、farming-and-weather、house-space-and-actions、tool-names-and-classification。
+- FPJDの公式配布ZIPと既存287回答の語形・項目名・注記を再照合し一致。質問文の分岐・文脈を確認。G-076-bはヨメレルを示しての追加確認、G-080-bは先の回答にキレレルが出たため省略。選択肢の文字を語形として朗読しない。非使用・認知・自発／誘導・未実施理由を混同しない。〈多〉を人口比にしない。
+- 中山2020は教員10名の2020年調査と、浜松市1中学校294名の2017年調査を分離。教師とその生徒の対応調査ではない。1897年『遠江文典』は同論文経由の確認であり原本確認や語の成立年としない。
+- 県公式の現行『こどもお茶小事典』は第3版2020年3月31日。165頁・奥付を画像確認。「みるい」の茶業への広がりと語源を区別し、茶から人への意味変化や最古例を確定しない。旧2018年第2版と混同しない。
+- 郡誌のせちがふ「切望の意か」、どうもん「田面か」は推測を保持。ひつちかるの袋井村を袋井町へ変えない。民俗の表は原記録から生成。複数旧町村の語を一戸・一家族・一日の実景へ合成せず、食事回数・性別役割・道具の形や素材・天候頻度を語彙のみから創作しない。
+- 笹原2007・神野2015は名称と物、地域呼称と研究分類の視点を参照。郡誌への適用・調査案は編集部の分析。聞き取りや実物調査を実施済みと表示しない。論文PDF・県の図版は公開しない。
+- 本日の増分は公開サイトマップの正規URL差分で集計。着手時18ページ（遠州弁17、別ブログ1）。今回の追加12が公開された後は計30ページ（遠州弁29、別ブログ1）。ページ内の記録数・講数をページ数に加算しない。研究ページは `count_as_knowledge:false` を維持する。
+- 基点 `614cb129a7f6d36d2926bcb3eef8b16f9c835fc1`。独立作業場所で既存作業を保持。検証正本は `C:/Users/Owner/Documents/Codex/2026-11-11/https-iwata-monogatari-net-fga-internal-2/outputs/enshu-grammar/verification.json`。`source-review.json`、`fpjd-crosscheck.json`、`content-audit.json`、`today-after.json`、差分・本番画面を併読。公開・deploy・GSC再送の状態は正本を再読して照合し、同じ12本を重複追加しない。
+- 既存自動実行は実対象を照合し、無関係なタスクを変更しない。範囲・予定・通知条件を広げず、新しい監視は作らない。

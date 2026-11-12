@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1794472135,
-  "generation": 20261112172855,
-  "git_commit_at_stamp": "872469abc89cc55f0212f579f819c43465ed9d3d",
+  "generated_at_unix": 1794479488,
+  "generation": 20261112193128,
+  "git_commit_at_stamp": "614cb129a7f6d36d2926bcb3eef8b16f9c835fc1",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -19,7 +19,7 @@
   "protected_files": [
     {
       "path": "AGENTS.md",
-      "sha256": "399b414176a801b2d8bf09ed6a3bab81732ee330b3089377460eec72562d10f3"
+      "sha256": "6408e9b56d99aad5ad0525da13e8791355c435e75718acbeab33e47a847994cf"
     },
     {
       "path": "_redirects",
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "8ca705987f1bf7525087c487cd27584258827965738924c64616147e96281faa"
+      "sha256": "0a7836304ea580a96fe41854d1b49909e48877ef1aaa2dcc8018c5d1cf2d2f83"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "91985e962f1f438e8c92ac3e140853d7bbee182f7e962c2899d3923e44bdcb47"
+      "sha256": "d0c9ae5105f11c68432db7d8e36fbee845e221abd4703d5c099b93fef5c47e6e"
     },
     {
       "path": "data/pages.json",
-      "sha256": "952a8d7be3bfe4ed9003e5c190480086ec11004b4eca3e739093c3e08084bd1e"
+      "sha256": "9e3a9b0caef7e808a2295acf13db4b11ef18129562b41bd0bdacfe45cbd5b492"
     },
     {
       "path": "index.html",
-      "sha256": "656ec887c56bc15d412fcfedbc04deb906d41e50dce2bc64ba61a6dadb98742e"
+      "sha256": "abeabce4baef99656728773924dfa2215bdd03909065da00bfce656ad6341593"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "347044e4b0cdb2cdcd7834509004987270d5fb8802c400a6601be8ec572ff2a1"
+      "sha256": "72050c57dac554cf546d2b9a1bdc7148b89dff7918a57bcd64c640f894916017"
     },
     {
       "path": "updates.html",
-      "sha256": "24ba6cb4d11483e3a5cff2cbdd14a75e338c0a71accd86365cd6eac8a4992ad3"
+      "sha256": "eaea0b2ec79816e846262a5a15c7a3df330cdd661a89bf644ba5ff9158185e5d"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "cdd9ff22a22b277b34579cb7592b2faf8c2c88dbe660a132e7c71787c85478df",
+      "content_sha256": "f058925869c6f2cf0ac9d4c6689f565a87f6d337467aa0d54b730b4803936d53",
       "path": "index.html",
-      "sha256": "656ec887c56bc15d412fcfedbc04deb906d41e50dce2bc64ba61a6dadb98742e",
+      "sha256": "abeabce4baef99656728773924dfa2215bdd03909065da00bfce656ad6341593",
       "url": "/"
     },
     {
-      "content_sha256": "6ef0b49d51fb9fec90430be0e4d6ed4a6324b7204ba0e24418adbac248f5e589",
+      "content_sha256": "3cde5aed0b7a54550025e51f2db4bde3a0acfcf7a8776e1f62529aa77f29d2da",
       "path": "updates.html",
-      "sha256": "24ba6cb4d11483e3a5cff2cbdd14a75e338c0a71accd86365cd6eac8a4992ad3",
+      "sha256": "eaea0b2ec79816e846262a5a15c7a3df330cdd661a89bf644ba5ff9158185e5d",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "00cf0f25fcf98445ada59f5e6cc9666749a96fbf82c7bd9ab56aefe13beb1273",
+      "content_sha256": "698af55749b747688b91e1a27aa16ed778b4ba9f30a09bf0fda9b3fa387c48db",
       "path": "c034.html",
-      "sha256": "8ca705987f1bf7525087c487cd27584258827965738924c64616147e96281faa",
+      "sha256": "0a7836304ea580a96fe41854d1b49909e48877ef1aaa2dcc8018c5d1cf2d2f83",
       "url": "/c034.html"
     },
     {
@@ -144,9 +144,81 @@
       "url": "/s025.html"
     },
     {
-      "content_sha256": "1217816604cd8611caf4e29416b0e37deb71060c3de57b865b14fcba32a1eef9",
+      "content_sha256": "9579b3ee59c04e75d38c422544b0990351a28f7ce58fbfef2852e854eda8d95d",
+      "path": "enshu/research/childcare-and-play/index.html",
+      "sha256": "2c133b83edc5199af53e2038f5257529f3b6ca4800f54d2078ea9792924e390e",
+      "url": "/enshu/research/childcare-and-play"
+    },
+    {
+      "content_sha256": "c5b4a48d8b55a2247575886839ba30da93cb0a9fc5aa55c575574c2a182f2e49",
+      "path": "enshu/research/conditional-contexts/index.html",
+      "sha256": "b500c9cf57d9c674170fb53db924f6ebf413dc090abf78e199f77fabdca7b5bd",
+      "url": "/enshu/research/conditional-contexts"
+    },
+    {
+      "content_sha256": "f9d78d85513f8f2ebdc43094cce6631df5954c5fbe76c794130e86cd95bbf2d3",
+      "path": "enshu/research/etymology-and-evidence/index.html",
+      "sha256": "19f76f019524f6f4be880ad965b543587954f6028fd549bb4d8309160072a538",
+      "url": "/enshu/research/etymology-and-evidence"
+    },
+    {
+      "content_sha256": "1cd786f4c040c1cdeb9246479c561a5646e4491f0bebb1b763d46465c731aa39",
+      "path": "enshu/research/farming-and-weather/index.html",
+      "sha256": "00f9d55038494d721e412d4aec90ea935ff7bd3a4cbfc4a53cd73cc9eec413eb",
+      "url": "/enshu/research/farming-and-weather"
+    },
+    {
+      "content_sha256": "eaa8d8289ec791b8e63c8c5c8ba120bedaaf0c7ba7581adb8066139f666e5803",
+      "path": "enshu/research/house-space-and-actions/index.html",
+      "sha256": "2bfc980ff876cff0e9e5bc54e496168f9f01c973327e217b710e38d9f1152781",
+      "url": "/enshu/research/house-space-and-actions"
+    },
+    {
+      "content_sha256": "84f0af9f3561a08ad5c739b284ecaa5e27cd1ee2663568557896065ff832529e",
+      "path": "enshu/research/invitation-and-intention/index.html",
+      "sha256": "eb9350d73bb160247a25afe543258068201af879fe1f1e14e9cec702c9225839",
+      "url": "/enshu/research/invitation-and-intention"
+    },
+    {
+      "content_sha256": "82d2e2554b4699f0ee76ef5c04de6e3f9616704d1916341d69e1602cb6d5022b",
+      "path": "enshu/research/meals-work-and-hospitality/index.html",
+      "sha256": "9ca1405d5b7f2d1c52f1fb924810aa3c4d8eefae51a470f92220b4fdcfc399b7",
+      "url": "/enshu/research/meals-work-and-hospitality"
+    },
+    {
+      "content_sha256": "c59f2c967d564a50c216d2e417afbe93dc7df57a015e7eca113e9be1ea8e50dc",
+      "path": "enshu/research/mirui-tea-and-meaning/index.html",
+      "sha256": "a8376e0744d33aec4183c572898504b03be99e278cbb0345290096a1d0c4a18e",
+      "url": "/enshu/research/mirui-tea-and-meaning"
+    },
+    {
+      "content_sha256": "e57bf9bb53fee829e44299b9cec2345d5a418906aa3a08f8b55e8c1cf4b784a4",
+      "path": "enshu/research/negation-paradigms/index.html",
+      "sha256": "2e942c07aeb6f5db028b8bb9f64aa146d07ea05a10da3c7e49f8bc503de837ea",
+      "url": "/enshu/research/negation-paradigms"
+    },
+    {
+      "content_sha256": "6fea3a87509611ff69ba5e3ff766b5928018e17ec0c49406ee87c6157faaaab9",
+      "path": "enshu/research/potential-forms/index.html",
+      "sha256": "9496eed0ce108bbf62d4cf8031c8d8cb8e95d7d4d56ed4c80a9a76ec26b9a882",
+      "url": "/enshu/research/potential-forms"
+    },
+    {
+      "content_sha256": "ba9a82203f1d5a083a55347b52564d3ca4292f78c5e9389d5704ff415fb9f2e3",
+      "path": "enshu/research/ranuki-history/index.html",
+      "sha256": "19cd2eb43d3771619a4b301a4dac1529a670f946a9242a4291f08e5f24882cb5",
+      "url": "/enshu/research/ranuki-history"
+    },
+    {
+      "content_sha256": "4d4bb6d2762de44d0c727cdd6d26833fcc575b8055739db627d948c33fb8030c",
+      "path": "enshu/research/tool-names-and-classification/index.html",
+      "sha256": "eb85c9035a5ca0647fdbb8753b794d78a23ea357a2ff3f31629b1ae07af42ccf",
+      "url": "/enshu/research/tool-names-and-classification"
+    },
+    {
+      "content_sha256": "355c20fc01cc0d22fcdb70004710370da8c2522f30ca5b27b27e8fd15d50c37c",
       "path": "enshu/research/accent-history/index.html",
-      "sha256": "c67505050db864beecc7011914687fa6f26ba1ff73a370723a65224f8a9d8a29",
+      "sha256": "d6592b5d6dc407ec8a9079f7f59d17aa557e3ce0f8f2b2ce3afdbac01d4ac490",
       "url": "/enshu/research/accent-history"
     },
     {
@@ -162,9 +234,9 @@
       "url": "/enshu/research/hamanako-variation"
     },
     {
-      "content_sha256": "7d38c1cd71243fb6a27486fb304651947c06d363aba1c009df08a57e56769a0f",
+      "content_sha256": "0f008740af53dd2c6f2a779909a36016da08878b6ae7ba2621469e22bd8a889b",
       "path": "enshu/research/maisaka-rhythm/index.html",
-      "sha256": "90085801cf3d1604b5e0dccafbdec8cb6220badc7602baff3d39888336ad941a",
+      "sha256": "f1f3b26100e19ddb164d9f4dc1c53fadaf54a6419d1b47ee01596baa2881f655",
       "url": "/enshu/research/maisaka-rhythm"
     },
     {
@@ -186,9 +258,9 @@
       "url": "/enshu/research/vowel-devoicing"
     },
     {
-      "content_sha256": "947fd7226e03ef2f85a4c0f90ee0ee54e0af61286bb7cec2ffd7711a7780926b",
+      "content_sha256": "3ef6a44e9a83d83153cad5188f8a49f2f1196db448111c7b93191619e3461ba7",
       "path": "enshu/research/index.html",
-      "sha256": "370d4fb1863e3e536b03a2f20503316aa9f97a46641dc7be23689976dd1432ea",
+      "sha256": "781503260922d0b7e2b029abe7554d16b66f4d75a71b02c72f025dd8e483cb11",
       "url": "/enshu/research"
     },
     {
@@ -228,9 +300,9 @@
       "url": "/enshu/research/words-and-things"
     },
     {
-      "content_sha256": "2a22a255f2b67da36d3639eecb9b52e78999035152a5a3bc3be34670e004c008",
+      "content_sha256": "07d5712bb4295973db808c8d5395413d41aa006c5e4af64458ed31b7c93e4aca",
       "path": "enshu/seminar/index.html",
-      "sha256": "0b93e7abdd8429e22de08d0a15553aeaf36ffebe2ecf2263f2c28f6e4ef6ead6",
+      "sha256": "f835cb068fea085df77101f3f5f82bed3dacc4d3dadefdfe99e253ac8e0a35cc",
       "url": "/enshu/seminar"
     },
     {
@@ -252,9 +324,9 @@
       "url": "/enshu/records"
     },
     {
-      "content_sha256": "293d3491f6de321f171156e27c61f74db4f7dddcce78edd63b9d7644745c2702",
+      "content_sha256": "fbea349733f42d48e00123fcf5aff3ffd26430d83cfad393d9750803accf020d",
       "path": "enshu/index.html",
-      "sha256": "11f7f2c8b828031a4a0d704796cafcc98728cb4bb7d012ab87e8815505c296cd",
+      "sha256": "0a9b742e10b5286346f1b399d185c99e4e6d693f181f077d6bc13f104f97ebd8",
       "url": "/enshu"
     },
     {
@@ -790,89 +862,17 @@
       "path": "chimei/towns/0069000/index.html",
       "sha256": "70660b87eef6ba6710082276fa96cae3dbdfa728c33bcda5966d869f077958d4",
       "url": "/chimei/towns/0069000"
-    },
-    {
-      "content_sha256": "5c9caa90e6b1dc4e43ecd6a2831a55ea957fc1a56961c7ce2318f733ff9cd503",
-      "path": "chimei/towns/0070000/index.html",
-      "sha256": "39add69b7234e5085fcb65b5727e5008ec4670b34a42c81101ea569077d9da8e",
-      "url": "/chimei/towns/0070000"
-    },
-    {
-      "content_sha256": "3fa7bf580d7445b894760e02b8250cf9612839130497c63d1f83e30d3b08f8cb",
-      "path": "chimei/towns/0070001/index.html",
-      "sha256": "c24a729dc4c01063b8c41193fb77fcca90512948df1a60ee08ff9ac42ea4d79e",
-      "url": "/chimei/towns/0070001"
-    },
-    {
-      "content_sha256": "fa16014118d4a246a651702bd26d5039e274ab3395a52a1570f0f75cc6156f59",
-      "path": "chimei/towns/0070002/index.html",
-      "sha256": "12c3f4aa6fde26ba917979a10134a9e20f564815e114dd81f65547b8742d6240",
-      "url": "/chimei/towns/0070002"
-    },
-    {
-      "content_sha256": "0b7c927c8b5db4b278b17c7c1a19965e7d7e1459120fb557f192b3081b3a2f59",
-      "path": "chimei/towns/0070003/index.html",
-      "sha256": "18654ede3da32fdc733ee5f6dc0cea50c14c305ce4cf349c08859652c633aa63",
-      "url": "/chimei/towns/0070003"
-    },
-    {
-      "content_sha256": "f7001d5816b8c91ec89dd2a15404560b3a16cdcced722b7fff733bfe5f6d5b80",
-      "path": "chimei/towns/0071000/index.html",
-      "sha256": "331e97b76218c351d6b1f1f37122e2186ca1d472c6978948b686087d14656e9f",
-      "url": "/chimei/towns/0071000"
-    },
-    {
-      "content_sha256": "e6e16e1173a236d1bfeb7434fa9ab5c9f545ffabffe3c4736ba12d9782d26423",
-      "path": "chimei/towns/0072000/index.html",
-      "sha256": "58eeea65fe7500b796d69c3ee13c6b596ef0132a7401d45efcb5bca2461e3ff9",
-      "url": "/chimei/towns/0072000"
-    },
-    {
-      "content_sha256": "34cae26aa4538a35daf09f4d492f59b916653e6dfdee1c12c37dc85f0e14c885",
-      "path": "chimei/towns/0073000/index.html",
-      "sha256": "a6deb3ed94159841919e61b590508507b15da193a52e7fc0e9f10a5fd32b1a8a",
-      "url": "/chimei/towns/0073000"
-    },
-    {
-      "content_sha256": "6ced21d05721a088240340c0a726abe26e7ebcd796e3751d062a5168d7a13299",
-      "path": "chimei/towns/0074000/index.html",
-      "sha256": "0c7c879fba8043468d201cd6e259cc64d5225d4cbd44d3f1ec8c858ce82ce7a9",
-      "url": "/chimei/towns/0074000"
-    },
-    {
-      "content_sha256": "9e8529b1c0f8ec06c7c01d7fd8dc95c85ad66bfab4b63cef4d06d224e19fc684",
-      "path": "chimei/towns/0075000/index.html",
-      "sha256": "5c46c063f42e24d9e6d2bf0a8a7dd0e3a2ddffdef38e20b02f832151f4497cfa",
-      "url": "/chimei/towns/0075000"
-    },
-    {
-      "content_sha256": "bc815814e9a6e582462ecfc62749d4d5359d0b47e540e8300a9c48e4cb6a8552",
-      "path": "chimei/towns/0076000/index.html",
-      "sha256": "9403c403a1a6cd6c41d490d7ed392fc679d006b52953381ddbccf94af3e4b2d4",
-      "url": "/chimei/towns/0076000"
-    },
-    {
-      "content_sha256": "83a1b65c1a491ebb55be984760027b2e1275a11492b17b7b5a2dbd7ff51f2659",
-      "path": "chimei/towns/0077000/index.html",
-      "sha256": "9cd168a57d70443f3646f631565bfc37188f2736e4428f68e8994b5cf8d396d7",
-      "url": "/chimei/towns/0077000"
-    },
-    {
-      "content_sha256": "29e8bd959fc83a216bf996ce25f291742e87b648bc5a65174e464fbf0931d85f",
-      "path": "chimei/towns/0078000/index.html",
-      "sha256": "5ddd03e94529abb334ffa8542e80328130993ac95d3f47c003fd1cef8ae212c6",
-      "url": "/chimei/towns/0078000"
     }
   ],
   "schema": 1,
-  "state_hash": "974971949dc9573be992d4f8006a8069bfb42645c03237227fe908b184de7945",
+  "state_hash": "fa2a069bf8948c878286d5034a0759bbc5c17cb3995fe0cead17c96c7987e91a",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1322,
-    "new_articles": 1523,
-    "new_articles_sha256": "91985e962f1f438e8c92ac3e140853d7bbee182f7e962c2899d3923e44bdcb47",
-    "pages_sha256": "952a8d7be3bfe4ed9003e5c190480086ec11004b4eca3e739093c3e08084bd1e",
-    "pages_total": 1426,
-    "published_pages": 1425
+    "new_articles": 1535,
+    "new_articles_sha256": "d0c9ae5105f11c68432db7d8e36fbee845e221abd4703d5c099b93fef5c47e6e",
+    "pages_sha256": "9e3a9b0caef7e808a2295acf13db4b11ef18129562b41bd0bdacfe45cbd5b492",
+    "pages_total": 1438,
+    "published_pages": 1437
   }
 }
