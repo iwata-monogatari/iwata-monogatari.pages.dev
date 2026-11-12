@@ -23,7 +23,7 @@ def explorer_section(learning, by):
 </article>
 <div class="word-controls" aria-label="絵札を選ぶ"><button type="button" id="flash-prev" disabled>← ひとつ前</button><button type="button" id="flash-random" disabled>おまかせの一語</button><button type="button" id="flash-next" disabled>次のことば →</button></div>
 <div class="word-share"><button type="button" id="flash-copy" disabled>この一語のリンクをコピー</button><p id="flash-message" role="status" aria-live="polite">ほかの絵札を準備しています。</p><label id="flash-share-fallback" hidden>このリンクを選択してコピーできます<input id="flash-share-url" type="text" readonly></label></div>
-<div class="word-trails"><a href="#practice"><strong>覚えたら、10問で試す</strong><span>意味からことばを選ぶ練習も。</span></a><a href="/c008"><strong>自分の一文を遠州弁に</strong><span>変換ツールでことばを試す。</span></a><a href="/enshu/compare/"><strong>似たことばを読み比べる</strong><span>24テーマの比較帖へ。</span></a></div>
+<div class="word-trails"><a href="#practice"><strong>覚えたら、クイズで試す</strong><span>意味からことばを選ぶ練習も。</span></a><a href="/c008"><strong>自分の一文を遠州弁に</strong><span>変換ツールでことばを試す。</span></a><a href="/enshu/compare/"><strong>似たことばを読み比べる</strong><span>24テーマの比較帖へ。</span></a></div>
 <p class="word-image-policy">絵札は意味に基づく生成AIの創作画です。実景の復元や資料の挿絵ではありません。掲載語や作例を、現在の全地域で同じように使うとは限りません。</p>
 <noscript>表示中の一語はそのまま読めます。ほかの語は、下の場面別コースや辞典で確かめられます。</noscript>
 </section>'''

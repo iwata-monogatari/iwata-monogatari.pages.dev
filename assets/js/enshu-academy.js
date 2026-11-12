@@ -5,32 +5,81 @@
   const shuffled=list=>{const a=[...list];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
   let data,round=[],position=0,score=0,answered=false,reverse=false,missed=[],cards=[],cardIndex=0;
   function dictionary(e){const a=node('a','3作例・資料を辞典で読む →');a.href='/c006?q='+encodeURIComponent(e.w)+'#'+e.id;return a;}
+  const brief=e=>e.m.split('。')[0]+'。';
+  let lastPool=[],lastLimit=5,reviewing=false,activeCourse='kitchen',allCourses=false;
+  function quizPool(){
+    if(!data)return[];const scene=data.scenes.find(s=>s.id===$('quiz-scene').value),ids=scene&&new Set(scene.words),cat=$('quiz-category').value;
+    return data.entries.filter(e=>(!ids||ids.has(e.id))&&(cat==='all'||e.cat===cat));
+  }
+  function updateQuizSetup(){
+    const n=Math.min(Number($('quiz-length').value),quizPool().length);$('quiz-start').disabled=!n;
+    $('quiz-start').textContent=n?`${n}問ではじめる`:'条件を選び直す';
+    $('quiz-setup-status').textContent=n?'同じ語は、一回の練習に一度だけ。':'該当する語がありません。場面か分類を広げてください。';
+  }
+  function progress(){
+    $('quiz-progress').textContent=`${position+1} / ${round.length}問 ・ 正解 ${score}問`;
+    $('quiz-meter').max=round.length;$('quiz-meter').value=position+(answered?1:0);
+  }
+  function focusQuestion(){ $('quiz-question').focus({preventScroll:true});$('quiz-board').scrollIntoView({block:'start'}); }
   function question(){
-    answered=false;const e=round[position];$('quiz-progress').textContent=`${position+1} / ${round.length}問　正解 ${score}問`;
-    $('quiz-question').textContent=reverse?`「${e.m}」を表す語は？`:`「${e.w}」の、この辞典での意味は？`;
-    const answer=reverse?e.w:e.m;
-    const pool=data.entries.filter(x=>x.id!==e.id&&x.cat!==e.cat&&(reverse?x.w:x.m)!==answer);
-    // Distinct word/meaning options, without claiming that other dialect synonyms do not exist.
-    const choices=shuffled([answer,...shuffled([...new Set(pool.map(x=>reverse?x.w:x.m))]).slice(0,3)]);
-    $('quiz-options').replaceChildren();$('quiz-feedback').replaceChildren();$('quiz-next').hidden=true;
-    choices.forEach(text=>{const b=node('button',text);b.onclick=()=>{
+    answered=false;const e=round[position];progress();
+    $('quiz-mode-label').textContent=(reviewing?'振り返り / ':'')+(reverse?'意味から、ことばを選ぶ':'ことばから、意味を選ぶ');
+    $('quiz-question').textContent=reverse?`「${brief(e)}」この辞典では、どのことば？`:`「${e.w}」この辞典では、どんな意味？`;
+    $('quiz-question-picture').hidden=reverse;$('quiz-question-picture').parentElement.classList.toggle('no-picture',reverse);
+    if(!reverse){$('quiz-question-image').src='/assets/karuta/c006/'+e.id+'-300.webp';$('quiz-question-image').alt=e.w+'の作例を描いた創作絵札';}
+    $('quiz-hint').hidden=true;$('quiz-hint').textContent='';$('quiz-hint-button').disabled=false;$('quiz-hint-button').textContent='ヒントを読む';$('quiz-hint-button').setAttribute('aria-expanded','false');
+    const answer=reverse?e.w:brief(e),pool=data.entries.filter(x=>x.id!==e.id&&x.cat!==e.cat&&brief(x)!==brief(e));
+    const choices=shuffled([answer,...shuffled([...new Set(pool.map(x=>reverse?x.w:brief(x)))]).slice(0,3)]);
+    $('quiz-options').replaceChildren();$('quiz-feedback').replaceChildren();$('quiz-feedback').hidden=true;$('quiz-next').hidden=true;
+    choices.forEach(text=>{const b=node('button',text);b.type='button';b.dataset.answer=String(text===answer);b.onclick=()=>{
       if(answered)return;answered=true;const correct=text===answer;if(correct)score++;else missed.push(e);
-      for(const option of $('quiz-options').children){option.disabled=true;if(option.textContent===answer)option.classList.add('correct');}
-      b.classList.add(correct?'correct':'incorrect');
-      $('quiz-feedback').append(node('strong',correct?'正解です。':'この辞典の答え：'+answer),node('p',e.learning.point),dictionary(e));
-      $('quiz-next').hidden=false;$('quiz-next').textContent=position+1===round.length?'結果を見る':'次の問題へ';
+      for(const option of $('quiz-options').children){option.disabled=true;if(option.dataset.answer==='true'){option.classList.add('correct');option.textContent='✓ '+option.textContent;}}
+      if(!correct){b.classList.add('incorrect');b.textContent='もう一度：'+b.textContent;}
+      progress();const feedback=$('quiz-feedback'),card=node('div','');card.className='quiz-answer'+(reverse?'':' without-picture');
+      if(reverse){const image=document.createElement('img');image.src='/assets/karuta/c006/'+e.id+'-300.webp';image.alt=e.w+'の作例を描いた創作絵札';image.width=90;image.height=120;card.append(image);}
+      const copy=node('div','');copy.append(node('strong',correct?'正解。会話でも確かめましょう。':'この辞典の答えを、会話で確かめましょう。'),node('h4',e.w),node('p',e.m));
+      const pair=node('blockquote',e.ex);pair.append(node('small','標準語：'+e.std));copy.append(pair,node('p',e.learning.point),dictionary(e));card.append(copy);feedback.append(card);feedback.hidden=false;
+      $('quiz-next').hidden=false;$('quiz-next').textContent=position+1===round.length?'ひと回りのまとめを見る →':'次の問題へ →';
+      feedback.scrollIntoView({block:'nearest'});
     };$('quiz-options').append(b);});
   }
-  $('quiz-start').onclick=()=>{
-    if(!data)return;const cat=$('quiz-category').value;const pool=data.entries.filter(e=>cat==='all'||e.cat===cat);
-    round=shuffled(pool).slice(0,10);position=0;score=0;missed=[];reverse=$('quiz-direction').value==='word';
-    $('quiz-board').hidden=false;$('quiz-summary').replaceChildren();question();$('quiz-question').tabIndex=-1;$('quiz-question').focus();
-  };
-  $('quiz-next').onclick=()=>{if(!answered)return;position++;if(position<round.length){question();$('quiz-question').focus();return;}
-    $('quiz-board').hidden=true;$('quiz-summary').replaceChildren(node('strong',`${round.length}問中${score}問正解。`));
-    if(missed.length){$('quiz-summary').append(node('span',' 振り返る語：'));for(const e of missed){const a=dictionary(e);a.textContent=e.w+'　';$('quiz-summary').append(a);}}
-    else $('quiz-summary').append(node('span',' 全問正解です。別の方向や分類でも試せます。'));
-  };
+  function beginQuiz(pool=quizPool(),limit=Number($('quiz-length').value),review=false,direction=$('quiz-direction').value==='word'){
+    if(!data||!pool.length)return;lastPool=[...pool];lastLimit=limit;round=shuffled(pool).slice(0,limit);position=0;score=0;missed=[];reverse=direction;reviewing=review;
+    $('quiz-summary').replaceChildren();$('quiz-board').hidden=false;question();focusQuestion();
+  }
+  function results(){
+    $('quiz-board').hidden=true;const summary=$('quiz-summary');summary.replaceChildren();
+    const title=node('h3',`${round.length}問をひと回り。`);title.tabIndex=-1;summary.append(title,node('p',`正解 ${score} / ${round.length}問。気になったことばを、絵札でもう一度。`));
+    const list=node('ul','');list.className='quiz-word-review';const wrongIds=new Set(missed.map(e=>e.id));
+    for(const e of round){const li=node('li',''),a=node('a','');a.href='/enshu/?word='+e.id+'#cards';a.dataset.exploreWord=e.id;a.append(node('span',wrongIds.has(e.id)?'↻ もう一度':'✓ 確かめた'),node('strong',e.w),node('small',brief(e)));li.append(a);list.append(li);}summary.append(list);
+    const controls=node('div','');controls.className='quiz-result-actions';const retryEntries=[...missed],samePool=[...lastPool],limit=lastLimit,direction=reverse;
+    if(retryEntries.length){const retry=node('button',`間違えた${retryEntries.length}語だけ、もう一度`);retry.type='button';retry.onclick=()=>beginQuiz(retryEntries,retryEntries.length,true,direction);controls.append(retry);}
+    const again=node('button','同じ範囲でもうひと回り');again.type='button';again.onclick=()=>beginQuiz(samePool,limit,false,direction);controls.append(again);
+    const other=node('a','別の場面を選ぶ ↑');other.href='#courses';controls.append(other);summary.append(controls);title.focus({preventScroll:true});summary.scrollIntoView({block:'start'});
+  }
+  $('quiz-start').onclick=()=>beginQuiz();
+  $('quiz-next').onclick=()=>{if(!answered)return;position++;if(position<round.length){question();focusQuestion();}else results();};
+  $('quiz-hint-button').onclick=()=>{if(!round.length)return;const e=round[position];$('quiz-hint').textContent=reverse?`${e.cat}のことば。はじめの字は「${Array.from(e.w)[0]}」です。`:'標準語の会話なら：'+e.learning.examples[0].standard;$('quiz-hint').hidden=false;$('quiz-hint-button').disabled=true;$('quiz-hint-button').textContent='ヒント表示中';$('quiz-hint-button').setAttribute('aria-expanded','true');};
+  function showCourse(id,showAll=false){
+    const scene=data.scenes.find(s=>s.id===id);if(!scene)return;activeCourse=id;allCourses=showAll;
+    document.querySelectorAll('#course-lessons .scene').forEach(s=>s.hidden=!showAll&&s.dataset.scene!==id);
+    document.querySelectorAll('.study-courses [data-course]').forEach(a=>{if(a.dataset.course===id)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');});
+    $('course-status').textContent=showAll?'12コースをまとめて表示しています。':`選択中：${scene.title} ・ ${scene.words.length}語`;
+    $('courses-show-all').textContent=showAll?'選んだコースだけ読む':'全コースをまとめて読む';$('courses-show-all').setAttribute('aria-expanded',String(showAll));
+  }
+  function setupStudy(){
+    const hash=location.hash.slice(1),initial=data.scenes.find(s=>'scene-'+s.id===hash);showCourse(initial?initial.id:data.scenes[0].id);
+    $('courses-show-all').disabled=false;$('courses-show-all').onclick=()=>showCourse(activeCourse,!allCourses);
+    for(const id of ['quiz-scene','quiz-length','quiz-direction','quiz-category'])$(id).onchange=updateQuizSetup;
+    window.addEventListener('hashchange',()=>{const scene=data.scenes.find(s=>'#scene-'+s.id===location.hash);if(scene){showCourse(scene.id);requestAnimationFrame(()=>document.getElementById('scene-'+scene.id).scrollIntoView({block:'start'}));}});
+    document.querySelector('.academy').addEventListener('click',event=>{
+      if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey||event.button!==0)return;const link=event.target.closest('a');if(!link)return;
+      if(link.dataset.course){showCourse(link.dataset.course);return;}
+      if(link.dataset.quizScene){event.preventDefault();$('quiz-scene').value=link.dataset.quizScene;$('quiz-category').value='all';$('quiz-length').value='3';updateQuizSetup();history.replaceState(null,'',location.pathname+location.search+'#practice');beginQuiz();return;}
+      if(link.dataset.exploreWord&&data.entries.some(e=>e.id===link.dataset.exploreWord)){event.preventDefault();$('flash-scene').value='all';deck('all',link.dataset.exploreWord);flash(true);focusWord();}
+    });
+    const target=location.hash&&document.getElementById(location.hash.slice(1));if(target)requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
+  }
   let exampleIndex=0;
   const starterButtons=[...document.querySelectorAll('.word-starter')];
   const explorerControls=['flash-prev','flash-random','flash-next','flash-scene','flash-example-next','flash-copy'];
@@ -76,6 +125,6 @@
   $('quiz-start').disabled=true;explorerControls.forEach(id=>$(id).disabled=true);
   fetch('/data/enshu-learning.json').then(r=>{if(!r.ok)throw Error('data');return r.json();}).then(d=>{
     data=d;const requested=new URLSearchParams(location.search).get('word');deck('all',d.entries.some(e=>e.id===requested)?requested:'ponpon');flash();
-    $('quiz-start').disabled=false;explorerControls.forEach(id=>$(id).disabled=false);starterButtons.forEach(b=>b.disabled=false);
+    setupStudy();$('quiz-start').disabled=false;updateQuizSetup();explorerControls.forEach(id=>$(id).disabled=false);starterButtons.forEach(b=>b.disabled=false);
   }).catch(()=>{$('quiz-summary').textContent='練習データを読み込めませんでした。場面別コースと辞典から引き続き学べます。';$('flash-message').textContent='ほかの絵札を読み込めませんでした。表示中の一語と、場面別コース・辞典はそのまま読めます。';});
 })();
