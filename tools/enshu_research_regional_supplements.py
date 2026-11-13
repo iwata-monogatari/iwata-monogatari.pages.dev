@@ -1,5 +1,6 @@
 """Add source-specific evidence to existing questions without replacing previous prose."""
 from enshu_research_regional import E,REGIONAL_SOURCES
+from enshu_research_diffusion import diffusion_supplements
 
 def regional_additions():
  # Each entry is an evidence unit, not a request to create another short article.
@@ -116,8 +117,30 @@ def regional_additions():
 
 def augment_regional_notes(notes,table,responses,cite):
  by={n['slug']:n for n in notes};changed={}
- for slug,(head,ps,ids) in regional_additions().items():
+ additions=regional_additions()
+ for slug,(head,ps) in diffusion_supplements().items():
+  if slug in additions:
+   oldhead,oldps,ids=additions[slug];additions[slug]=(oldhead,oldps+['<strong>'+E(head)+'</strong>']+ps,list(dict.fromkeys(ids+['inoue2022-full'])))
+  else:additions[slug]=(head,ps,['inoue2022-full'])
+ for slug,(head,ps,ids) in library_scan_supplements().items():
+  if slug in additions:
+   h,old,keys=additions[slug];additions[slug]=(h,old+['<strong>'+E(head)+'</strong>']+ps,list(dict.fromkeys(keys+ids)))
+  else:additions[slug]=(head,ps,ids)
+ for slug,(head,ps,ids) in additions.items():
   assert slug in by; n=by[slug]
   n['body']+='<section id="regional-supplement"><h2>'+E(head)+'</h2>'+''.join('<p>'+p+'</p>' for p in ps)+'<p class="research-small">今回確認した出典：'+'／'.join(cite(k,REGIONAL_SOURCES[k][0]) for k in ids)+'。原資料の所在地・年代・確認範囲は出典欄に記載しています。</p></section>'
   n['sources']=list(dict.fromkeys(n['sources']+ids));n['updated']='2026-11-13';changed[slug]=[head]
  return changed
+
+def library_scan_supplements():
+ return {
+ 'ko-machi-and-ritual-names':('民俗信仰シートの原画像を今回照合',[
+ '前回はテキストだけの確認でしたが、今回保存版の原PDF全2頁を取得しました。庚申・地の神・秋葉と、太子・道元・春埜等が別の見出しで説明され、各項目の参照先が付いています。概説の説明と、そこに挙がる町史原著を直接確認したことは区別します。',
+ '同じ講の形でも、信仰の対象、集まる機会、仕事との結び付きは異なります。誌面の古い分布の説明を、現在の遠州全体の実施率や言語の一様性へ広げません。'],['belief2014-scan']),
+ 'house-name-form-and-origin':('向陽学府シートの原画像を今回照合',[
+ '今回取得した保存版2頁で、高塚新道と太郎平新道の併記を原画像で確認しました。前回のテキストに基づく説明は維持し、二つの名が同じ道を指すという確認の根拠を画像まで広げました。家の名そのものの採録例へ数え替えることはしません。',
+ '版の令和7年度改訂表示と、本文の2026年開校記述が同居することも確認しました。保存日2026年5月10日は原資料の作成日ではありません。年の異なる情報を一つの更新年へ推測で統一しません。'],['koyo-scan']),
+ 'legend-variants-and-retelling':('伝承の呼び名と、実証の範囲',[
+ '向陽学府の保存版2頁の原画像は、柿の木さまと伝わる話を紹介します。今回確認できたのは、資料がその名と伝承を載せていることです。伝承の効果や歴史上の出来事を実証した資料として扱いません。',
+ '現行サイトの取得失敗後も保存版の版・本文を確かめることで、前回の文字情報との照合が可能になりました。保存版を現在の行事実施や現地調査の確認へ広げないことを明示して補足します。'],['koyo-scan']),
+ }

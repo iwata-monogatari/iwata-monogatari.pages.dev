@@ -40,7 +40,8 @@
       "reason": "郡誌の記録地と対応語を保ち、話し手・相手・人数・評価という別々の情報を読む。",
       "sources": [
         "gunshi",
-        "miyakoda1994"
+        "miyakoda1994",
+        "inoue2022-full"
       ]
     },
     {
@@ -62,7 +63,8 @@
       "sources": [
         "yago2024",
         "ryuyo2025",
-        "koyo2025"
+        "koyo2025",
+        "koyo-scan"
       ]
     },
     {
@@ -512,7 +514,8 @@
       "reason": "2026年の15設問調査から、確認・回想・現在の詠嘆と地域差を読み分ける。",
       "sources": [
         "ke2026",
-        "fpjd"
+        "fpjd",
+        "inoue2022-full"
       ]
     },
     {
@@ -587,7 +590,8 @@
       "sources": [
         "iwata-belief2014",
         "iwata-plan2024",
-        "shinohara1989"
+        "shinohara1989",
+        "belief2014-scan"
       ]
     },
     {
@@ -597,7 +601,8 @@
       "reason": "磐田の伝説の異名と再話から、語形の差、物語の差、方言の逐語記録の違いを解説する。",
       "sources": [
         "iwata-plan2024",
-        "shippei2025"
+        "shippei2025",
+        "koyo-scan"
       ]
     },
     {
@@ -640,7 +645,8 @@
       "reason": "三ヶ日と都田の記録から、強調の接頭要素・副詞・語全体の意味を区別する。",
       "sources": [
         "mikkabi1979",
-        "miyakoda1994"
+        "miyakoda1994",
+        "inoue2022-full"
       ]
     },
     {
@@ -659,7 +665,8 @@
       "reason": "1956年の郷土教材と1979年の町史から、言語の記述と価値判断を読み分ける。",
       "sources": [
         "nobiyuku1956",
-        "mikkabi1979"
+        "mikkabi1979",
+        "inoue2022-full"
       ]
     },
     {
@@ -707,7 +714,8 @@
       "slug": "dictionary-gaps-and-local-uniqueness",
       "reason": "三ヶ日町史の収集・文献比較と再調査から、「未掲載」と「不使用」の違いを検証する。",
       "sources": [
-        "mikkabi1979"
+        "mikkabi1979",
+        "inoue2022-full"
       ]
     },
     {
@@ -717,6 +725,33 @@
       "reason": "新たに取得したFIT2024の全文から、顕著性の仮説・短文課題・統計的結論を分ける。",
       "sources": [
         "iini2024-full"
+      ]
+    },
+    {
+      "topic": "地域と生年を重ねた図は、伝播をどう示すか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "glottograms-and-diffusion-routes",
+      "reason": "井上2022の東海道グロットグラムから、地理・世代・使用と理解の記号を読む。",
+      "sources": [
+        "inoue2022-full"
+      ]
+    },
+    {
+      "topic": "看板や商品に書かれた遠州弁は、誰のことばか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "dialect-in-public-landscapes",
+      "reason": "井上2022の方言景観から、公共の表示・商品化・自然会話という異なる資料を読む。",
+      "sources": [
+        "inoue2022-full"
+      ]
+    },
+    {
+      "topic": "ことばと所得の相関から、個人を語れるか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "regional-correlation-and-language-values",
+      "reason": "井上2022の県別図から、集計単位・標本・相関と因果の違いを深く読む。",
+      "sources": [
+        "inoue2022-full"
       ]
     },
     {
@@ -840,7 +875,19 @@
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     },
     {
+      "topic": "県東部の未読本文と、取得できた井上2022を分ける",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "dara-structure",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
       "topic": "見つけた物を示す場面と、推測を尋ねる場面",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "ra-discourse",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "ラの広がりと、相手への機能の調査",
       "disposition": "重複する既存ノートへ補足",
       "slug": "ra-discourse",
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
@@ -853,6 +900,12 @@
     },
     {
       "topic": "ケの新しい調査と、トルの変化の別経路",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "tense-aspect",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "過去の語形と、確認・回想の機能",
       "disposition": "重複する既存ノートへ補足",
       "slug": "tense-aspect",
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
@@ -978,6 +1031,12 @@
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     },
     {
+      "topic": "「ご覧」に関わる短い形と、命令依頼の場面",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "requests-and-sentence-endings",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
       "topic": "出世魚を、何段階の名前で答えたか",
       "disposition": "重複する既存ノートへ補足",
       "slug": "fish-names-growth-and-products",
@@ -1086,6 +1145,12 @@
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     },
     {
+      "topic": "れ足す形の分布と多元発生という解釈",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "potential-forms",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
       "topic": "2024年の短文作成は、何人のどの回答か",
       "disposition": "重複する既存ノートへ補足",
       "slug": "iinisuru-meaning-and-context",
@@ -1123,6 +1188,12 @@
     },
     {
       "topic": "姓・個人名から生まれた道の二つの名",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "house-name-form-and-origin",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "向陽学府シートの原画像を今回照合",
       "disposition": "重複する既存ノートへ補足",
       "slug": "house-name-form-and-origin",
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
@@ -1251,6 +1322,48 @@
       "topic": "旅行先での通じ方と、体系的な切替調査",
       "disposition": "重複する既存ノートへ補足",
       "slug": "style-shift-and-migration",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "井上2022の分布と、2026年の状況別調査",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "ke-past-and-recognition",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "原著の古い用例と、今回取得した概説を区別する",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "ranuki-history",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "県外の茶業の使用と、語源の確定を分ける",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "mirui-tea-and-meaning",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "強調の形の広がりと、個々の接続条件",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "intensifiers-and-word-formation",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "研究者が見つけなかった物も、存在しないとは限らない",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "dictionary-gaps-and-local-uniqueness",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "地域差の説明から、価値の上下を導かない",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "schoolbooks-and-language-values",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "伝承の呼び名と、実証の範囲",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "legend-variants-and-retelling",
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     }
   ],
