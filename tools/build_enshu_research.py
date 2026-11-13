@@ -9,6 +9,7 @@ from enshu_research_honorific import HONORIFIC_SOURCES, make_honorific_notes
 from enshu_research_kinship import KINSHIP_SOURCES, make_kinship_notes
 from enshu_research_extended import EXTENDED_SOURCES, make_extended_notes, augment_existing_notes
 from enshu_research_coverage import build_coverage
+from enshu_photo_layout import apply_photos
 
 R=Path(__file__).resolve().parents[1]
 E=lambda value:html.escape(str(value),quote=True)
@@ -177,6 +178,7 @@ downloads={'records.csv':csv_bytes,'reproduce.py':replay.encode('utf8'),'README.
 for name,data in downloads.items():outputs[R/'downloads/enshu-research'/name]=data
 outputs[R/'data/enshu-research-index.json']=(json.dumps({'version':DATE,'notes':[{k:n[k] for k in ['slug','field','title','deck','finding']} for n in notes]},ensure_ascii=False,indent=2)+'\n').encode('utf8')
 for path,value in outputs.items():
+    if path.suffix=='.html':value=apply_photos(value,'/'+path.parent.relative_to(R).as_posix()+'/')
     data=value.encode('utf8') if isinstance(value,str) else value
     if '--check' in sys.argv:
         assert path.exists() and path.read_bytes()==data,f'Out of date: {path}'

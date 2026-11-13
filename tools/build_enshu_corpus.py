@@ -47,6 +47,8 @@ for n,g in enumerate(groups,1):
 body=f'<div class="breadcrumbs"><a href="/enshu/">遠州弁の学び舎</a> ／ ことばの比較帖</div><header class="archive-hero compare-hero"><p class="eyebrow">ENSHU / 24 READINGS</p><h1>似ていることば。<br><em>違って見える暮らし。</em></h1><p>郷土資料を、24のテーマから読み比べる。</p>{nav}</header>{policy}<section id="themes"><p class="eyebrow">意味と記録地を、横に並べて。</p><h2>今日はどの違いを読みますか。</h2><div class="comparison-tiles">{tiles}</div></section>{sections}<section class="archive-end"><h2>原資料へ戻って確かめる</h2><p>各表の意味は原画像の対応語・原注を読みやすく整理したものです。比較のための解説は編集部によるもので、当時の話者への新しい聞き取りではありません。推測の原注は推測と明記し、使い分けを資料以上に断定していません。</p><a href="/enshu/records/">380記録の資料辞典へ →</a><p>出典：静岡県磐田郡教育会編『静岡県磐田郡誌』1921年、第23章「風俗」第7節「方言」、1242〜1254頁。原画像：国立国会図書館デジタルコレクション。</p></section>'
 outputs[R/'enshu/compare/index.html']=shell('遠州ことばの比較帖｜24テーマで郷土資料を読む','雨、食卓、家、道具、動植物、語尾。同じ意味の別形や同じ形の別の意味を、原表記・旧町村・出典で比較。','/enshu/compare/',body)
 for path,text in outputs.items():
+ from enshu_photo_layout import apply_photos
+ text=apply_photos(text,'/'+path.parent.relative_to(R).as_posix()+'/')
  if '--check' in sys.argv:assert path.exists() and path.read_text(encoding='utf-8')==text,str(path)
  else:path.parent.mkdir(exist_ok=True,parents=True);path.write_text(text,encoding='utf-8')
 print(f'Historical lexicon: {N} records; {forms} original forms; {len(villages)} recorded areas; 24 comparison themes; 13 printed pages')
