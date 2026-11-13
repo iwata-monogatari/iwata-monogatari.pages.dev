@@ -17,6 +17,9 @@ from enshu_research_new_coverage import new_source_coverage
 from enshu_research_regional import REGIONAL_SOURCES, make_regional_notes
 from enshu_research_regional_supplements import augment_regional_notes
 from enshu_research_regional_coverage import regional_coverage
+from enshu_research_systematic import SYSTEMATIC_SOURCES, make_systematic_notes
+from enshu_research_systematic_supplements import EXTRA_SOURCES, augment_systematic_notes
+from enshu_research_systematic_coverage import systematic_coverage
 
 R=Path(__file__).resolve().parents[1]
 E=lambda value:html.escape(str(value),quote=True)
@@ -50,6 +53,8 @@ SOURCES.update(LANGUAGE_SOURCES)
 SOURCES.update(NEW_SOURCES)
 SOURCES.update(COMPARATIVE_SOURCES)
 SOURCES.update(REGIONAL_SOURCES)
+SOURCES.update(SYSTEMATIC_SOURCES)
+SOURCES.update(EXTRA_SOURCES)
 
 def table(head,rows,caption='比較のための資料表'):
     return '<p class="research-table-hint">表は横にスクロールできます →</p><div class="seminar-table" tabindex="0" role="region" aria-label="'+E(caption)+'"><table><caption>'+E(caption)+'</caption><thead><tr>'+''.join(f'<th scope="col">{E(h)}</th>' for h in head)+'</tr></thead><tbody>'+''.join('<tr>'+''.join(f'<th scope="row">{v}</th>' if i==0 else f'<td>{v}</td>' for i,v in enumerate(row))+'</tr>' for row in rows)+'</tbody></table></div>'
@@ -90,9 +95,12 @@ for slug,headings in new_source_supplements.items():supplements.setdefault(slug,
 notes.extend(make_regional_notes(table,responses,cite))
 regional_supplements=augment_regional_notes(notes,table,responses,cite)
 for slug,headings in regional_supplements.items():supplements.setdefault(slug,[]).extend(headings)
+notes.extend(make_systematic_notes(table,cite))
+systematic_supplements=augment_systematic_notes(notes,table,cite)
 assert len({n['slug'] for n in notes})==len(notes)
 for n in notes:
     n['published']='2026-11-12' if n['slug'] in original_slugs else '2026-11-13'
+    if n.get('group')=='systematic':n['published']='2026-11-14'
 kin_count=sum(n.get('group')=='kinship' for n in notes)
 language_count=sum(n.get('group')=='language' for n in notes)
 new_source_count=sum(n.get('group')=='new-sources' for n in notes)
@@ -151,6 +159,13 @@ body=body.replace('<a href="#new-sources">',f'<a href="#regional">地域の原�
 body=body.replace('<div class="research-note-group" id="new-sources">','<div class="research-note-group" id="regional"><h3>地域の記録から、会話・暮らし・研究法を読む</h3><p>町史・文化誌・郷土教材の原画像と、新たに取得した論文本文を照合。重なる証拠は既存ノートへ補足しました。</p>'+cards([n for n in notes if n.get('group')=='regional'])+'</div><div class="research-note-group" id="new-sources">',1)
 outputs[R/'enshu/research/index.html']=shell(f'遠州弁研究ノート{len(notes)}本｜文法・語源・民俗・生業・発音とアクセント',f'遠州弁を{len(notes)}の問いから深く読む。文法・音声・語史・民俗から地域資料の読み方まで、出典・比較表・小演習・磐田の写真を掲載。',BASE,body,script=True,published=DATE,modified='2026-11-13')
 outputs[R/'downloads/enshu-research/regional-evidence.json']=regional_json
+systematic_html,systematic_json=systematic_coverage(notes,table)
+body=body.replace('<section id="lab"',systematic_html+'<section id="lab"',1)
+body=body.replace('<a href="#regional">','<a href="#systematic">原論文から深く読む <b>'+str(sum(n.get('group')=='systematic' for n in notes))+'本</b></a><a href="#regional">',1)
+body=body.replace('<div class="research-note-group" id="regional">','<div class="research-note-group" id="systematic"><h3>原論文から、仕組み・意味・継承を深める</h3><p>使役・疑問・取り立て否定、アクセントの体系、語義と水辺、文法変化、作品表現、調査と継承。新設と既存への統合を、資料ごとの問いから選びました。</p>'+cards([n for n in notes if n.get('group')=='systematic'])+'</div><div class="research-note-group" id="regional">',1)
+body=body.replace('資料の照合・補足：2026年11月13日','資料の照合・補足：2026年11月14日')
+outputs[R/'enshu/research/index.html']=shell(f'遠州弁研究ノート{len(notes)}本｜文法・語源・民俗・生業・発音とアクセント',f'遠州弁を{len(notes)}の問いから深く読む。原論文と地域の原資料、語義・文法・発音・民俗・研究法。出典・比較表・小演習・磐田の写真を掲載。',BASE,body,script=True,published=DATE,modified='2026-11-14')
+outputs[R/'downloads/enshu-research/systematic-evidence.json']=systematic_json
 
 
 for i,n in enumerate(notes):
@@ -158,6 +173,7 @@ for i,n in enumerate(notes):
     toc='<nav class="research-toc" aria-label="この記事の目次"><strong>このノートの道筋</strong>'+''.join(f'<a href="#{key}">{E(title)}</a>' for key,title in headings)+'<a href="#sources">出典・確認範囲</a></nav>'
     related=[notes[(i+1)%len(notes)],notes[(i+2)%len(notes)]]
     article=f'''<div class="breadcrumbs"><a href="/enshu/">学び舎</a> ／ <a href="{BASE}">遠州弁研究ノート</a> ／ {i+1:02}</div><header class="research-note-head"><p class="eyebrow">RESEARCH NOTE {i+1:02} / {E(n['field'])}</p><h1>{E(n['title'])}</h1><p class="seminar-deck">{E(n['deck'])}</p><p class="research-byline">磐田物語 編集部 ／ {n['published'].replace('-', '年', 1).replace('-', '月', 1)}日{' ／ 補足：2026年11月13日' if n.get('updated') else ''} ／ 公開資料に基づく研究解説</p><div class="research-finding"><strong>このノートで確かめること</strong><p>{E(n['finding'])}</p></div></header><div class="research-note-layout"><aside>{toc}</aside><div class="research-prose">{n['body']}{bibliography(n['sources'])}<p class="research-byline">資料の記録、先行研究の見解、編集部の分析・調査案を区別しています。研究者監修・学術査読を受けた論文や、編集部による現地調査報告ではありません。<a href="{BASE}#editorial">編集方針</a></p></div></div><section class="seminar-next"><h2>次の問いへ進む</h2>{cards(related)}{nav}</section>'''
+    if n['slug'] in systematic_supplements:article=article.replace('補足：2026年11月13日','補足：2026年11月14日')
     outputs[R/f'enshu/research/{n["slug"]}/index.html']=shell(n['title']+'｜遠州弁研究ノート',n['deck']+' '+n['finding'],BASE+n['slug']+'/',article,article=True,published=n['published'],modified=n.get('updated',n['published']))
 
 # A standard-library-only replay accompanies the frozen exported rows.
