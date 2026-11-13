@@ -124,7 +124,9 @@
       "reason": "成長段階、魚の種類、加工品という違いから、浜名湖の取引の言葉を読む。",
       "sources": [
         "market2024",
-        "hamamatsu_fishing_boats"
+        "hamamatsu_fishing_boats",
+        "fpjd_context2026",
+        "fpjd"
       ]
     },
     {
@@ -133,7 +135,9 @@
       "slug": "sericulture-house-memory",
       "reason": "岩田地区の養蚕の回想から、場所の名・家族関係・仕事の記憶が結び付く過程を読む。",
       "sources": [
-        "iwata_sericulture"
+        "iwata_sericulture",
+        "fpjd_context2026",
+        "fpjd"
       ]
     },
     {
@@ -258,13 +262,230 @@
       ]
     },
     {
+      "topic": "「鏡・知事・地図」の音を、仮名だけで読まない",
+      "disposition": "独立した問いとして掲載",
+      "slug": "sound-symbols-and-kana",
+      "reason": "鼻音・有声化・仮名の区別を、磐田市1地点の音声表記と調査目的から読む。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「きっ／ぷ」と「ふ／う／せ／ん」は、矛盾した数え方か",
+      "disposition": "独立した問いとして掲載",
+      "slug": "mora-syllable-and-counting",
+      "reason": "音のまとまりを数える課題から、拍・音節・文字意識を区別する。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「ダイタ・カセタ・カッタ」から、活用の違いを読む",
+      "disposition": "独立した問いとして掲載",
+      "slug": "past-forms-and-onbin",
+      "reason": "出す・貸す・買う・飲むの原回答を並べ、一語の音変化を全動詞へ広げない。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「高くなる」と「先生だった」は、同じ語尾の問題か",
+      "disposition": "独立した問いとして掲載",
+      "slug": "adjective-and-nominal-predicates",
+      "reason": "形容詞のク形・過去形と名詞述語を、接続先と文中の役割から読み分ける。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「大きいの・大きいやつ・俺んの」は、何を指しているか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "no-yatsu-and-reference",
+      "reason": "名詞を言わない表現と所有の言い方を、場面差を含む四設問から読む。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「見に・東京に・犬に」のニは、同じ意味か",
+      "disposition": "独立した問いとして掲載",
+      "slug": "case-particles-and-deixis",
+      "reason": "目的・到着点・所在・動作主と、行く／来るの視点を一つの資料表で比較する。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「来るって」と「雨だってよ」は、何を引用しているか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "quotation-and-information-source",
+      "reason": "発話・名前・思考・天気予報を比べ、ッテとトの接続先を読む。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「皮ごと・皮さら・皮だけ」は、何を食べることか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "focus-inclusion-and-scope",
+      "reason": "包括・限定・反復の範囲を、バッカリ・シカを含む四設問で読む。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「降ってるで」のデを、場所のデと区別する",
+      "disposition": "独立した問いとして掲載",
+      "slug": "reason-de-and-clause-linking",
+      "reason": "原因を示す節と、文末の伝達表現を混同せず、接続先から読む。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「食べかける」は、食べ残しをいうのか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "not-yet-and-beginning",
+      "reason": "まだ食べていない状態と、先に食べ始める場面を、調査票の時間軸で読む。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「いたかね」は、過去のことを尋ねるのか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "existence-past-and-recollection",
+      "reason": "目の前の存在・今はいない人物・訪問の挨拶を分け、タとッケの読みを検討する。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「殴られた・手を噛まれた」は、誰から見た出来事か",
+      "disposition": "独立した問いとして掲載",
+      "slug": "passive-and-event-viewpoint",
+      "reason": "絵を説明する受身文と、つい座ってしまう自発的な意味を、形式と役割から分ける。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「イモ」は何の芋、「ニク」は何の肉か",
+      "disposition": "独立した問いとして掲載",
+      "slug": "lexical-defaults-imo-niku",
+      "reason": "種類を尋ねる語彙調査から、広い意味と場面でまず指す対象を切り分ける。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「グラグラ言う・ぐらつく・ぐらぐらしてる」を比べる",
+      "disposition": "独立した問いとして掲載",
+      "slug": "onomatopoeia-and-predicates",
+      "reason": "同じ机の揺れを表す三回答から、擬態語を述語にする仕組みを読む。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "手袋は「はめる」、布団は「かぶる」――動詞は何で選ばれるか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "wearing-verbs-and-objects",
+      "reason": "靴下・靴・手袋・帽子・布団の五設問から、動作語と対象の組合せを読む。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「アマイ」が、塩味の薄さも表すとき",
+      "disposition": "独立した問いとして掲載",
+      "slug": "taste-smell-and-context",
+      "reason": "味覚と嗅覚の原回答を、感覚の種類・強さ・良し悪しという軸で比較する。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "「シガサッテ」は、今日から何日後か",
+      "disposition": "独立した問いとして掲載",
+      "slug": "day-names-and-reference-date",
+      "reason": "日付そのものを固定せず、基準日と順序の関係から時間の語を読む。",
+      "sources": [
+        "fpjd",
+        "fpjd_context2026",
+        "notes"
+      ]
+    },
+    {
+      "topic": "同じ人が、相手によって遠州弁を変えるとき",
+      "disposition": "独立した問いとして掲載",
+      "slug": "style-shift-and-migration",
+      "reason": "浜松への移住者の談話研究を読み、出身地・自己申告・実際の使用を切り分ける。",
+      "sources": [
+        "uda2017"
+      ]
+    },
+    {
+      "topic": "「いいにする」は、やめることか、納得することか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "iinisuru-meaning-and-context",
+      "reason": "一つの表現の複数用法を、調査の分類と実際の文脈の境界から読む。",
+      "sources": [
+        "iinisuru2023"
+      ]
+    },
+    {
       "topic": "婚姻の行為と、生活段階の呼び名も区別する",
       "disposition": "重複する既存ノートへ補足",
       "slug": "family-position-and-life-course",
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     },
     {
+      "topic": "本家・分家と、出生順位の呼び方を別にする",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "family-position-and-life-course",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
       "topic": "子どもを指す語と、世話する仕事の名",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "childcare-and-play",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "今の子どもに使う語と、覚えている育児語",
       "disposition": "重複する既存ノートへ補足",
       "slug": "childcare-and-play",
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
@@ -282,6 +503,12 @@
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     },
     {
+      "topic": "運搬する動作の名も、用具の名と分けて読む",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "tool-names-and-classification",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
       "topic": "原料・加工段階・担い手をさらに分ける",
       "disposition": "重複する既存ノートへ補足",
       "slug": "fukude-textile-vocabulary",
@@ -294,9 +521,99 @@
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     },
     {
+      "topic": "労力の貸し借りを「テツダイ」と呼んだ記録",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "livelihood-change-and-language",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
       "topic": "呼称と暮らしを、後から検証できる記録へ",
       "disposition": "重複する既存ノートへ補足",
       "slug": "words-and-things",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "囲炉裏が残ることと、使った経験があること",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "words-and-things",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "説明する「イクダ」と、初めて聞く「ソーナノ」",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "dara-structure",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "見つけた物を示す場面と、推測を尋ねる場面",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "ra-discourse",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "完了と、つい起きる行為を同じシマウで読む",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "tense-aspect",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "NR・非使用・未経験・語彙と伝説の有無を分ける",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "sampling",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "「子どもの頃」と「年寄りが使う」は、同じ年代資料か",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "generations-and-change",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "「面白くない」と「つまらない」、程度を添える語",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "negation-paradigms",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "条件の前件が、動詞・形容詞・名詞になるとき",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "conditional-contexts",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "禁止・義務・希望を、勧誘から切り分ける",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "invitation-and-intention",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "話者が知っている語源説明と、成立史の証拠",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "etymology-and-evidence",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "水が凍ることと、とても寒いこと",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "farming-and-weather",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "自分が来ることと、電話で名乗ること",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "requests-and-sentence-endings",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "出世魚を、何段階の名前で答えたか",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "fish-names-growth-and-products",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "蚕の名・桑の実の名・食べた経験を分ける",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "sericulture-house-memory",
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     }
   ],
@@ -396,5 +713,9 @@
       "disposition": "確定語源の記事は作らない",
       "reason": "市史の栽培史の本文は確認したが、語形の成立・音変化・伝播の年代を実証する資料ではない。作物の歴史だけを語源の証拠に変えない。"
     }
-  ]
+  ],
+  "language_review": {
+    "scope": "FPJD磐田市1地点の全211設問と談話・多義性の公開研究を、既掲載の問いと照合。原著未読・音声未収集の課題は別に保持。",
+    "details": "/downloads/enshu-research/language-evidence.json"
+  }
 }
