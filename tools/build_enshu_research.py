@@ -14,6 +14,9 @@ from enshu_research_language import LANGUAGE_SOURCES, make_language_notes, augme
 from enshu_research_new_sources import NEW_SOURCES, make_new_source_notes
 from enshu_research_new_supplements import COMPARATIVE_SOURCES, augment_new_source_notes
 from enshu_research_new_coverage import new_source_coverage
+from enshu_research_regional import REGIONAL_SOURCES, make_regional_notes
+from enshu_research_regional_supplements import augment_regional_notes
+from enshu_research_regional_coverage import regional_coverage
 
 R=Path(__file__).resolve().parents[1]
 E=lambda value:html.escape(str(value),quote=True)
@@ -46,6 +49,7 @@ SOURCES.update(EXTENDED_SOURCES)
 SOURCES.update(LANGUAGE_SOURCES)
 SOURCES.update(NEW_SOURCES)
 SOURCES.update(COMPARATIVE_SOURCES)
+SOURCES.update(REGIONAL_SOURCES)
 
 def table(head,rows,caption='比較のための資料表'):
     return '<p class="research-table-hint">表は横にスクロールできます →</p><div class="seminar-table" tabindex="0" role="region" aria-label="'+E(caption)+'"><table><caption>'+E(caption)+'</caption><thead><tr>'+''.join(f'<th scope="col">{E(h)}</th>' for h in head)+'</tr></thead><tbody>'+''.join('<tr>'+''.join(f'<th scope="row">{v}</th>' if i==0 else f'<td>{v}</td>' for i,v in enumerate(row))+'</tr>' for row in rows)+'</tbody></table></div>'
@@ -83,6 +87,9 @@ for slug,headings in language_supplements.items():supplements.setdefault(slug,[]
 notes.extend(make_new_source_notes(table,responses,cite))
 new_source_supplements=augment_new_source_notes(notes,table,responses,cite)
 for slug,headings in new_source_supplements.items():supplements.setdefault(slug,[]).extend(headings)
+notes.extend(make_regional_notes(table,responses,cite))
+regional_supplements=augment_regional_notes(notes,table,responses,cite)
+for slug,headings in regional_supplements.items():supplements.setdefault(slug,[]).extend(headings)
 assert len({n['slug'] for n in notes})==len(notes)
 for n in notes:
     n['published']='2026-11-12' if n['slug'] in original_slugs else '2026-11-13'
@@ -138,6 +145,13 @@ body=body.replace('<a href="#kinship">親族・人の呼び方',f'<a href="#new-
 body=body.replace('<div class="research-note-group" id="kinship">',f'<div class="research-note-group" id="new-sources"><h3>新しい研究と、近世・地域の原資料を読む <small>{new_source_count}本</small></h3><p>2026年の文法・音声技術研究、4月公開の歴史方言DB、磐田の地域資料を、既掲載の問いと照合しました。</p>{cards([n for n in notes if n.get("group")=="new-sources"])}</div><div class="research-note-group" id="kinship">',1)
 outputs[R/'enshu/research/index.html']=shell(f'遠州弁研究ノート{len(notes)}本｜文法・語源・民俗・生業・発音とアクセント',f'遠州弁を{len(notes)}の問いから深く読む研究解説。近世語彙、ケの文法、鳥の聞きなし、民俗信仰、伝説、音声とAIまで。原資料・調査条件・比較表・小演習と写真を掲載。',BASE,body,script=True,published=DATE,modified='2026-11-13')
 outputs[R/'downloads/enshu-research/new-source-evidence.json']=new_source_json
+regional_html,regional_json=regional_coverage(notes,table)
+body=body.replace('<section id="lab"',regional_html+'<section id="lab"',1)
+body=body.replace('<a href="#new-sources">',f'<a href="#regional">地域の原資料を読む <b>{sum(n.get("group")=="regional" for n in notes)}本</b></a><a href="#new-sources">',1)
+body=body.replace('<div class="research-note-group" id="new-sources">','<div class="research-note-group" id="regional"><h3>地域の記録から、会話・暮らし・研究法を読む</h3><p>町史・文化誌・郷土教材の原画像と、新たに取得した論文本文を照合。重なる証拠は既存ノートへ補足しました。</p>'+cards([n for n in notes if n.get('group')=='regional'])+'</div><div class="research-note-group" id="new-sources">',1)
+outputs[R/'enshu/research/index.html']=shell(f'遠州弁研究ノート{len(notes)}本｜文法・語源・民俗・生業・発音とアクセント',f'遠州弁を{len(notes)}の問いから深く読む。文法・音声・語史・民俗から地域資料の読み方まで、出典・比較表・小演習・磐田の写真を掲載。',BASE,body,script=True,published=DATE,modified='2026-11-13')
+outputs[R/'downloads/enshu-research/regional-evidence.json']=regional_json
+
 
 for i,n in enumerate(notes):
     headings=re.findall(r'<section id="([^"]+)"><h2>([^<]+)</h2>',n['body'])

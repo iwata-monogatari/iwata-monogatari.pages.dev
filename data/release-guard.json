@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1794548264,
-  "generation": 20261113143744,
-  "git_commit_at_stamp": "7ceb75f4f6671f631df5d4532cf52b776a6c5c31",
+  "generated_at_unix": 1794566099,
+  "generation": 20261113193459,
+  "git_commit_at_stamp": "9894f848d99f68314561b7e266e1dd83170f0962",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,19 +31,19 @@
     },
     {
       "path": "c034.html",
-      "sha256": "29e4d5c7fbca9435a70e43ed9d9b5dafd839518280a76541bd6007ac8a21cfad"
+      "sha256": "8ea11a660e512fda8dc99652998b63746c3101a31990cf2c007219a827a34118"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "db3bb02582e2bfffbd20dbde546ccd44434fedbcce9fb3bcddc3ff85684c7a55"
+      "sha256": "a466345430967060300f8328aeb7ff2447f0bbd466b18d744991944bac4c21dd"
     },
     {
       "path": "data/pages.json",
-      "sha256": "43224544481253621d1929d44a5ef34d5a4ed0a448eabd439f86032b93c693e1"
+      "sha256": "2770adba8acce7e3c6c0a61aaaf95ee70913184a2c03ff7192b76b8dcfc5c418"
     },
     {
       "path": "index.html",
-      "sha256": "e11d1b507886f5bd416c54cb693404b81c95f1f386d35185130d1b67a6dc3ccd"
+      "sha256": "09865ae8bebabc84644c389c7cd3e397124e10f8ead6802fc59ef53c41d645ea"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "bc8fdfc98bd2c1c84e22bd86df4c142d3914588234c1d3dcf77e7613dea7810d"
+      "sha256": "50395db52f43ee24e1123b14b8b3269f359e8cf1ed3d2b4bc19089fd03d0a1e6"
     },
     {
       "path": "updates.html",
-      "sha256": "63f7627f4216385d4720f5ebae02ff850c991b1a302e26c28f90bad20ca89b07"
+      "sha256": "7a89ade5b08726ea553bcab78703ea7edcda82318329b1a4083e209ef54e79a6"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "c41288675b3c34885ab12c8a92d10f5eceedece3ce086d01b77eb703c366080c",
+      "content_sha256": "597ee659fea2384dfefadb915acb4d13bc725bbe0d73a995d34a5d22f5bbf84c",
       "path": "index.html",
-      "sha256": "e11d1b507886f5bd416c54cb693404b81c95f1f386d35185130d1b67a6dc3ccd",
+      "sha256": "09865ae8bebabc84644c389c7cd3e397124e10f8ead6802fc59ef53c41d645ea",
       "url": "/"
     },
     {
-      "content_sha256": "8f67b2006df98a5bc01dba6ce6283b3f9912ae084bc7f061ec2500a6db06e395",
+      "content_sha256": "1a9cb30314e4eb73f24ff5b9fd9a475ad3505bdb19f7ec8c9229006b3340051e",
       "path": "updates.html",
-      "sha256": "63f7627f4216385d4720f5ebae02ff850c991b1a302e26c28f90bad20ca89b07",
+      "sha256": "7a89ade5b08726ea553bcab78703ea7edcda82318329b1a4083e209ef54e79a6",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "d91100e6df2c0b86c6b09a043a31f51c98c89e662dc19c8282e5e241750aad75",
+      "content_sha256": "f84fac02d27d3912d68362c42ef235eef4656f42071042dee144c38a0537e549",
       "path": "c034.html",
-      "sha256": "29e4d5c7fbca9435a70e43ed9d9b5dafd839518280a76541bd6007ac8a21cfad",
+      "sha256": "8ea11a660e512fda8dc99652998b63746c3101a31990cf2c007219a827a34118",
       "url": "/c034.html"
     },
     {
@@ -144,9 +144,63 @@
       "url": "/s025.html"
     },
     {
-      "content_sha256": "0d8fb2712fe2b06b0422c6d1106c8f3de3cef74505cd44125f8a08f443efaf9e",
+      "content_sha256": "d1a2508300573eba00a857e6a7eb53731844c0cc83c8795c033e5e6432061681",
+      "path": "enshu/research/dialect-awareness-and-salience/index.html",
+      "sha256": "3d6ac9eed73f7f554bf897a86cb4653004a23666200c7c3a5f13330145084593",
+      "url": "/enshu/research/dialect-awareness-and-salience"
+    },
+    {
+      "content_sha256": "4766b358bb7542230689abc367a21d64894aa23c4e49faa803b8e902f39b7fa5",
+      "path": "enshu/research/dictionary-gaps-and-local-uniqueness/index.html",
+      "sha256": "7448ae93fed710d6f51334b0a2363d824263f23ac5a554822cfe67716a04a137",
+      "url": "/enshu/research/dictionary-gaps-and-local-uniqueness"
+    },
+    {
+      "content_sha256": "058d80ae6d272eccb2b1dbdd93550f4b74e94fcfeece3db8e63d1b44d4058303",
+      "path": "enshu/research/g-nasals-and-phonetic-variation/index.html",
+      "sha256": "9996e46eeb550278a8380afb0d55a997f120412fcbe64272e06bd19b3e66530a",
+      "url": "/enshu/research/g-nasals-and-phonetic-variation"
+    },
+    {
+      "content_sha256": "2c6c94515d5db5bea053e800229638f6cb9918c6c0a593cc1a67b3b9a4263733",
+      "path": "enshu/research/intensifiers-and-word-formation/index.html",
+      "sha256": "f3d3d8841f21512cba7df55848705089288fcea63457acd92444c7b8a45aad8d",
+      "url": "/enshu/research/intensifiers-and-word-formation"
+    },
+    {
+      "content_sha256": "87463b66d94bf006b719ec1a3cf1f358726e734f8e61bd874188f06929c1edb2",
+      "path": "enshu/research/interjections-and-response-sequences/index.html",
+      "sha256": "059d7acdbfad0343677613dd7d1b52baac98482420cbb208dfbb07a4dd4e866a",
+      "url": "/enshu/research/interjections-and-response-sequences"
+    },
+    {
+      "content_sha256": "3b6f07dc6f1e81aa1d8f43f90b6d33c033fdabf5b6f95d5b40add54b89f01385",
+      "path": "enshu/research/play-rules-and-oral-formulas/index.html",
+      "sha256": "ff93bf9e66b7d23d962e6c7f3f3123342f4ca7278f992a30bcb09ea2d25dafe9",
+      "url": "/enshu/research/play-rules-and-oral-formulas"
+    },
+    {
+      "content_sha256": "feb8300852ebfcf76a466de328f341f9e9315f4bf6addb59e0d0975edb480312",
+      "path": "enshu/research/ritual-time-and-calendar-names/index.html",
+      "sha256": "227722f5f1a43a646386238d922c5bf05889d1f57d8afe6584ea1ba374025b93",
+      "url": "/enshu/research/ritual-time-and-calendar-names"
+    },
+    {
+      "content_sha256": "623b64cb465c6cb91203cb2e27269345867fc9c6d520897866860a65a573cbf8",
+      "path": "enshu/research/schoolbooks-and-language-values/index.html",
+      "sha256": "cf4cd87206a9d8cb1e750626839ad8f8faac78cd7880e02901e998b5ff720cbc",
+      "url": "/enshu/research/schoolbooks-and-language-values"
+    },
+    {
+      "content_sha256": "f3b2a63b4e345c09d9ecad90a35ee006207ac0c1713638341a0ad0e35063ef9e",
+      "path": "enshu/research/weather-proverbs-and-local-landmarks/index.html",
+      "sha256": "3794b77e6f3fe26a2c2bf9d3990d5bab47d19f03640adbdaf48843df15cabd76",
+      "url": "/enshu/research/weather-proverbs-and-local-landmarks"
+    },
+    {
+      "content_sha256": "d1d223066f636b05cd1bf0b917b49698c470a9c255bf369eb9118c14dc9d01f8",
       "path": "enshu/research/bird-names-and-kikinashi/index.html",
-      "sha256": "ae225a8cbae2013b3d18802391aa0915fd70efafbdea876d7c3328425f7498e1",
+      "sha256": "d64a891a6df8bbf757f03b3bff3733d033c66e04f7df5061f1adecfdee77c470",
       "url": "/enshu/research/bird-names-and-kikinashi"
     },
     {
@@ -162,9 +216,9 @@
       "url": "/enshu/research/dialect-ai-evaluation"
     },
     {
-      "content_sha256": "38b89ac08d5df0f62d2f29829be2d8ac5ec8155be8588904c4fa8860f809d9c4",
+      "content_sha256": "9c74e2112bfa63391f5fceb3861c2b8e5853f402d88c6de26b8f33a3ebb3ceed",
       "path": "enshu/research/disease-name-and-folk-etymology/index.html",
-      "sha256": "42737788fb65899ca7869daa634b55d2696620720d9c2491dfce2db1c3be48ae",
+      "sha256": "26125d82d27fe2f909c180510b9d64bc9c2e41af89f728efb1d7241156c17546",
       "url": "/enshu/research/disease-name-and-folk-etymology"
     },
     {
@@ -180,9 +234,9 @@
       "url": "/enshu/research/ke-past-and-recognition"
     },
     {
-      "content_sha256": "598cb69cf9c5af7cf4db622be45a646a46ab556b9447fec3b0cbb2a36efbece9",
+      "content_sha256": "7924d5006e59b27397d6c11195612a02bc17a5d0f1010caffdb5e2c1d4052f16",
       "path": "enshu/research/ko-machi-and-ritual-names/index.html",
-      "sha256": "ee051db98da221253baec95f86fc8ec76ac7fd8de81cec3f1bb78e74c7ffb352",
+      "sha256": "d9ad255f5902ba55449ec980296c5bfca9b8c3aebce34d7fb77c65cf4af02fe1",
       "url": "/enshu/research/ko-machi-and-ritual-names"
     },
     {
@@ -192,21 +246,21 @@
       "url": "/enshu/research/legend-variants-and-retelling"
     },
     {
-      "content_sha256": "767083c76d4875334bd493b05ede3a2c5bc74f25e7e6232eb5afe075c668973a",
+      "content_sha256": "ad5036a8767f1daa6b9937f996d52975c105c484334601a8b0512b7f9b64daed",
       "path": "enshu/research/parallel-speech-and-natural-talk/index.html",
-      "sha256": "f6642ce21444e83c442aec55a9f92b7054b8b5598be68b41b50a214c075ec7ec",
+      "sha256": "3ddbc132ded8db04cecd738a36038109666ceeb045e74926ab8eb76120d4a303",
       "url": "/enshu/research/parallel-speech-and-natural-talk"
     },
     {
-      "content_sha256": "b60e71633643311253f2399afd756be482a38fc4736d8590bf5d44f48413b1c3",
+      "content_sha256": "b5bae04ea1c8c9f80959ee10c51a043be301f9b8824b226a430545e0ad5b3d98",
       "path": "enshu/research/plant-names-and-identification/index.html",
-      "sha256": "8d50e64657dc3676c150e0eb0d94307cc25e6c4ca2acdfbb6b07192765952db5",
+      "sha256": "741eaa2dbeec22a74c3ad528e413cbd005e76578f92cb4cc5e80930b6d1d3aaf",
       "url": "/enshu/research/plant-names-and-identification"
     },
     {
-      "content_sha256": "e607f8dad1ce5f4d0bf42b0bbeab72ad881f1d6513c7077ec7f9a243fd39d93f",
+      "content_sha256": "5b46aff272d27d157b3e47646b1252be1b577d4f0784076e1626df1d80e84a1b",
       "path": "enshu/research/small-creatures-and-folk-categories/index.html",
-      "sha256": "5e6c096b12db62863e5aed55f24feedec1ed77ac93c26423284923ec11e4b8fb",
+      "sha256": "6c732b0e38da371ba5fa8b7a28e42280a952abf40cfb29f4eea48fb69e63b8f9",
       "url": "/enshu/research/small-creatures-and-folk-categories"
     },
     {
@@ -216,21 +270,21 @@
       "url": "/enshu/research/taboo-euphemism-and-ritual"
     },
     {
-      "content_sha256": "5bb0972994bd782d4516d98fa51650908badb0114180008dd9263d5950f48374",
+      "content_sha256": "326f6d82240b46bb363c068b7ddd0cc293cc4f851d7eefbd7ab126bf8b82d683",
       "path": "enshu/research/adjective-and-nominal-predicates/index.html",
-      "sha256": "87ce8683568aba316466495f3b9b15a3548812328a5d3d690c5c7ef6c97d0e22",
+      "sha256": "614a7ddfa596b864ac871e6fdad1d33a16a9ecf3fd2d688c6db6ddff80d340e5",
       "url": "/enshu/research/adjective-and-nominal-predicates"
     },
     {
-      "content_sha256": "7464c7c7f77503ad86d1b2fff56d89525a64537dfa329052a4826e73cd3bf4aa",
+      "content_sha256": "a00997d618bfb299dceafe28490b24525092c19068bd22fabf22b5e2beaa3c5b",
       "path": "enshu/research/case-particles-and-deixis/index.html",
-      "sha256": "d62a060e941d507af506fa014967b8d865ae70e85c501c917a8bff3a043d5bd5",
+      "sha256": "9cd03034ebde8edc3f69cfb6a908cbdbd80dd6ceed65e95dcbc113c95dfafc4d",
       "url": "/enshu/research/case-particles-and-deixis"
     },
     {
-      "content_sha256": "24c0e2c8e887641e0bc6a5b894e21ae39f27126d62f4395aa09e668e0de54582",
+      "content_sha256": "91595dc22f86d0c0132321c56f93b27d14137e5f76739afda8e194975a7a668b",
       "path": "enshu/research/day-names-and-reference-date/index.html",
-      "sha256": "3909e41ac616cd4b3961fa3b6b5a0b463410ebd873ae0d29fd3216d117cb93b6",
+      "sha256": "b04ec5f933d6c100759e11dd9f665f48cca569edaa0f2a4db0e4950d63635381",
       "url": "/enshu/research/day-names-and-reference-date"
     },
     {
@@ -246,9 +300,9 @@
       "url": "/enshu/research/focus-inclusion-and-scope"
     },
     {
-      "content_sha256": "10103865262ece5b438935156d5abf501b043b179957f07aeb3cc1256e7b8102",
+      "content_sha256": "2f7b5c1cb1b32a8cd3cfb2d4e7ab5665b8bdb3f78ac7376c4b24f721c8429475",
       "path": "enshu/research/iinisuru-meaning-and-context/index.html",
-      "sha256": "5e95ae4cab6d95194af34892d3906aabc08472d3773a19e0fad81a78b236c13d",
+      "sha256": "671a5f3d6240588c47a0420a632a6408d90e0f993abc49ede03fa12727497542",
       "url": "/enshu/research/iinisuru-meaning-and-context"
     },
     {
@@ -258,9 +312,9 @@
       "url": "/enshu/research/lexical-defaults-imo-niku"
     },
     {
-      "content_sha256": "0fcb0ccc6fa125e5e628e8431a69a56b2cd45ec9241ea05ade2a3fa7357dff8f",
+      "content_sha256": "375d3637fb82903edc2c31c3e177251427e35a2a1b76aaf208b431e03571add0",
       "path": "enshu/research/mora-syllable-and-counting/index.html",
-      "sha256": "6b16d967c83237214acc3eec5cdc7a1289e224c79bdbf203777ecfc167952d3c",
+      "sha256": "5eb7cd1b40085e7c71c559df67a60526e6f8c536b4745eb37d0514e5e655efbc",
       "url": "/enshu/research/mora-syllable-and-counting"
     },
     {
@@ -300,33 +354,33 @@
       "url": "/enshu/research/quotation-and-information-source"
     },
     {
-      "content_sha256": "c5d2f7a92c4d55e7445853fadb3711b12e0eef4ac38abfd29972e1be6d9cfeb3",
+      "content_sha256": "0a26f4060e981f7808190de77093b0ff00e76546dde9f007cfa348f6d554f32c",
       "path": "enshu/research/reason-de-and-clause-linking/index.html",
-      "sha256": "f60dff596469daf34da1c3721647e1efec7e27eec615994699a0a1990b27c820",
+      "sha256": "a6d1f55903f7545d332e5bb7a707d5972a65df0210b520be70f266827f3f7473",
       "url": "/enshu/research/reason-de-and-clause-linking"
     },
     {
-      "content_sha256": "f55e11005597245237d54ba36956fb4e19843205ef1df83a8d516eaec835bed4",
+      "content_sha256": "31e56222813e3168df0f3843f22abce20a35ef7f86011a74ca0e4c282029ee81",
       "path": "enshu/research/sound-symbols-and-kana/index.html",
-      "sha256": "2a6945c50499919dee717de4c64ab8c2c14c78c619366bca8326f507ff85edca",
+      "sha256": "dddf6b4d6d84f68673649c5507044c33715289fa5ceadedd4c37e79830da10ea",
       "url": "/enshu/research/sound-symbols-and-kana"
     },
     {
-      "content_sha256": "494782ca38f109c8e0b53d157a7bf54cca809a7a1cf60ce8c06d34ccad7d9884",
+      "content_sha256": "5f0d429856f4e90ea935e7b2c584f3d079072923b5b380fdfefca2b089157460",
       "path": "enshu/research/style-shift-and-migration/index.html",
-      "sha256": "8842182fad6a15f78e912019bcbe0280af1e69ce9f7f1fbcc3104a692a366de9",
+      "sha256": "8221d7223854f3abe5ebbc8c53ceeba6a70169db69a0cc97724c2bab8957bc6a",
       "url": "/enshu/research/style-shift-and-migration"
     },
     {
-      "content_sha256": "a3737242df214e4b7c3c7096ca0a459e79029eed111a689ad6440edae5c48e11",
+      "content_sha256": "f968b1a3254ad6a91b8e327ad72a15d23d4df38b0a16c13a27101002ded67b6f",
       "path": "enshu/research/taste-smell-and-context/index.html",
-      "sha256": "9cd6f0d1d020ea8466c78fe5b3728f058e723a10dbc2474f32b86bc6b0dd072a",
+      "sha256": "e729360e2344601b277023e70b5c5cb6c204e98df38c6df938ff9e06253b9fad",
       "url": "/enshu/research/taste-smell-and-context"
     },
     {
-      "content_sha256": "e1bc017db7c4c353213ce89a4e771ff536baeea9ccdb1af9875313aaee959650",
+      "content_sha256": "93631ff92fdbfa6d8011fb178f377e0495b3bbd009827053076a9531ca67f364",
       "path": "enshu/research/wearing-verbs-and-objects/index.html",
-      "sha256": "9e620b038b59e0fa0ba3f390394b8bc15a792a5ac9d1dd1366899ac76f8ef17c",
+      "sha256": "97cd2507f9759c67cf3efd5e716f25b93d4bf05f22cc3e363cdffa5a6b270692",
       "url": "/enshu/research/wearing-verbs-and-objects"
     },
     {
@@ -348,9 +402,9 @@
       "url": "/enshu/research/craft-names-and-jisshoku"
     },
     {
-      "content_sha256": "7201a6de0c5ead71f5cb22a4be2227f17133591dc1a43c0137b8a75c6fa968b0",
+      "content_sha256": "770654d486c32c8d3424c589d842fc1b229301e0c401b77f807cd516b19b9c36",
       "path": "enshu/research/crop-names-and-compounds/index.html",
-      "sha256": "235e88f6331aab1c89b2e137fa0b0cab159c455fe981c1bbaa752c5fdb1934af",
+      "sha256": "00bb197a6548109311b168a0b1c9f2e9bd065cee0d708dc22487ceb4146819cf",
       "url": "/enshu/research/crop-names-and-compounds"
     },
     {
@@ -366,9 +420,9 @@
       "url": "/enshu/research/ferry-person-role-and-right"
     },
     {
-      "content_sha256": "28e492b9b962209ab2aa6aef3771dfc8ba404b19386656c730811a7293cc5c76",
+      "content_sha256": "fc6144d20d0011f9b0598b2fc1a060912c6a2fa56f9213402ca0bfd8cf349a1e",
       "path": "enshu/research/fish-names-growth-and-products/index.html",
-      "sha256": "47c5533a580e08d5d104d40ccc7418b44b3fff14f1b7bc9c7a87e7c17366af2a",
+      "sha256": "ec18bee289f1670b8eef07fcd2fc3e47eb16702ca46ad46154219b702abe485e",
       "url": "/enshu/research/fish-names-growth-and-products"
     },
     {
@@ -432,9 +486,9 @@
       "url": "/enshu/research/parent-child-metaphor-in-taro"
     },
     {
-      "content_sha256": "dffeb7bdc1ba7466e3363c5f6c306621ddac5ea27db5e73e2dd06a86f06d35a7",
+      "content_sha256": "36e6a3a4a5f32ec025d5b0d6c8f6b7f1bd247a461aadeeae02be6bbf4cfb4221",
       "path": "enshu/research/parent-spouse-and-household-role/index.html",
-      "sha256": "9efb7d545af3c3f1b326eaa5ee15cfffb68884728fca93d014c139678679dc93",
+      "sha256": "f80f7be0ce039780de2cb02157b1467b40982dbf3f0302ec15d23ca0bad9f929",
       "url": "/enshu/research/parent-spouse-and-household-role"
     },
     {
@@ -474,9 +528,9 @@
       "url": "/enshu/research/tea-process-and-skill-language"
     },
     {
-      "content_sha256": "4190427ffdb31c91bf3298cddb5abdc780b7478d99a691ed421ab5025cb052d7",
+      "content_sha256": "156d605439c8a5bd13b87bf6ddac88237bb5a4bb0ccaa1f6aefa476eb86a2214",
       "path": "enshu/research/ura-onshi-waira/index.html",
-      "sha256": "5596d9109736af67f681a7a4cabe5260c3396eea4e713527bbc300a7221783d0",
+      "sha256": "ab42961a84fdb5ad022092c92397bf18537ad5cd1494a95a7874c273a753a07b",
       "url": "/enshu/research/ura-onshi-waira"
     },
     {
@@ -498,9 +552,9 @@
       "url": "/enshu/research/yuto-market-house-names"
     },
     {
-      "content_sha256": "8bd22dbde011c070bdce911eed0fce32af9b7c65553cf72f0865fa8e117dfc64",
+      "content_sha256": "4a9e5f199cbc445bb8dca6c9598d0f4a307ad163584993d91ccaeb2f095006de",
       "path": "enshu/research/brother-reference-and-address/index.html",
-      "sha256": "7bfc69d092f88a32615ec9404795ff01fd909cf9be3d58ff597523e5d39ba845",
+      "sha256": "ada6e0eb8e49476df341ba73053a417c4ea56dbe2c2bb0d31472218605547731",
       "url": "/enshu/research/brother-reference-and-address"
     },
     {
@@ -522,15 +576,15 @@
       "url": "/enshu/research/house-names-and-trade"
     },
     {
-      "content_sha256": "f4da588bbc793986c9f5a290fd2b3f3b3655e1b76b9d5cee871603b8fbc2851f",
+      "content_sha256": "40a84f16cab877023ef4599a3c7bbe7deb6eb1203b841e0c9723eb8c5a9e829c",
       "path": "enshu/research/kinship-beyond-relatives/index.html",
-      "sha256": "f3cf02744d9db3cc3e18aa45890c90463834a46c246e8793b48030d8bcd45c5d",
+      "sha256": "7386f9f7db7b4742a82275751df3a15e8ffb362e19071b19e44843a19915626d",
       "url": "/enshu/research/kinship-beyond-relatives"
     },
     {
-      "content_sha256": "1fcf20958bacfb762af0ecc3d2f99e55ae4806a66f93b16534fce7ae2307c563",
+      "content_sha256": "c22c9d531b915cdaf4988d90f6870fa843debc7b2b11a766248b9d58e0258245",
       "path": "enshu/research/livelihood-change-and-language/index.html",
-      "sha256": "8299b3c319622fd0868ab10c1e9c5d78d059ce1b5d1c386747166e3cc131a886",
+      "sha256": "9d73c955f6feeb3cab8e5c9ace5cc32781ac005c87f0f9a20e6669943a8d3e4f",
       "url": "/enshu/research/livelihood-change-and-language"
     },
     {
@@ -558,9 +612,9 @@
       "url": "/enshu/research/honorific-person-relations"
     },
     {
-      "content_sha256": "3b73d76e093232c596ba797981334946759d49f02b3ebbc464f7309d156b45ed",
+      "content_sha256": "48c73036b5757d926a6c760f8e7a49ecf8f192e4930e6f4e3f83451ab67f7267",
       "path": "enshu/research/new-year-silence/index.html",
-      "sha256": "92759e728d9f8360b518c9c61dd81e69582df69058eaa7ed6c9fb97f41045222",
+      "sha256": "12709e29174baa1d2938160142baedbfb5eff5ba399035cf54a2e90837f38c48",
       "url": "/enshu/research/new-year-silence"
     },
     {
@@ -576,15 +630,15 @@
       "url": "/enshu/research/requests-and-sentence-endings"
     },
     {
-      "content_sha256": "be1f6976e8fb479ec1d8751f6e4ee5a426d8be7f1f080125abfd609cb239ef75",
+      "content_sha256": "eeda996c3a77371fed746d57442770667ab8180e8e9fd440986df1f9379ffa22",
       "path": "enshu/research/ritual-tools-and-local-words/index.html",
-      "sha256": "a976fe671b2908db82d9e4d9967def2626d06b6d3d59149f8279f362ddd27297",
+      "sha256": "40c002d1246c591f1652c1ee95f2c0120005c98b18eea3aed8a393707fd8b3ef",
       "url": "/enshu/research/ritual-tools-and-local-words"
     },
     {
-      "content_sha256": "64fce4563a60015f4a05d9329e3e73a36e856f84fb67f7e1de01bf298b45eee7",
+      "content_sha256": "b7ed68eab1f0444e7a0ddfee16976ae651036770b4b5b0477bba1022efb5483a",
       "path": "enshu/research/childcare-and-play/index.html",
-      "sha256": "170db26de42792822eac04a8d4d310b51342709f4f1a9ac40822189c89491c1f",
+      "sha256": "fe4c9c77efc19200cc9dea3ebc9df719c5ea3c96d1f4caa214259ab039a6358d",
       "url": "/enshu/research/childcare-and-play"
     },
     {
@@ -594,33 +648,33 @@
       "url": "/enshu/research/conditional-contexts"
     },
     {
-      "content_sha256": "f16461ad798288d0458adfe540a08e44762bbe0105466d781f94df85293146ff",
+      "content_sha256": "a6b0dd8cfa62844a9500b920cdb721bbe69b915857ae66d0ff0dffa33f175fe4",
       "path": "enshu/research/etymology-and-evidence/index.html",
-      "sha256": "bc0e317ed8a057612810cea98ad7d1ffd87f6d24c8ab0daec01207d901e38bee",
+      "sha256": "c6813415ba000c50273e3b5e0e8d2c60e81de9815822a243b53e6d31164cb0ab",
       "url": "/enshu/research/etymology-and-evidence"
     },
     {
-      "content_sha256": "1512ca69504b1512ff0e9d2d1ab7fc2c2f6b73c2b79a10da1c3404ccaaf81f63",
+      "content_sha256": "a660b69035a505aefa74d266082f96a0ce8ae1d8aa83fc3d409c61c9eb5b5813",
       "path": "enshu/research/farming-and-weather/index.html",
-      "sha256": "7bfe18c369707de75c839fdd20ed380b773b21ff42b810eb74ea9b438e2ba463",
+      "sha256": "d639ab5025d6fc3e3a703453964dc378f8495fa3ad68e109c710a8dfd7880092",
       "url": "/enshu/research/farming-and-weather"
     },
     {
-      "content_sha256": "50d98f957228d27c9d6b95df8b090a3d3a20f7bc425ee2708a9f2bd0d8a06f6c",
+      "content_sha256": "46d1d57f404fe6465e4247013a3f7c15c878ad0f638d885a9f81497eca0b15e8",
       "path": "enshu/research/house-space-and-actions/index.html",
-      "sha256": "6a101a6373cd081faa95161c418ca40a6a496a0d82858f6626475b171b8ac5a8",
+      "sha256": "b599b05cadafbc6919f7faff8402aa3de0b05047f782fe778bf3e16f6ef4f98d",
       "url": "/enshu/research/house-space-and-actions"
     },
     {
-      "content_sha256": "83c2fd40434357bd6488e9ed41847ce91d790cf4ea197a504822f57f5a78a9b1",
+      "content_sha256": "b9a1ecd6de7c9db0ade599156ef68849c4315a3b5d91ad2b0069bc7875f79a83",
       "path": "enshu/research/invitation-and-intention/index.html",
-      "sha256": "58b85ddf6c9cfba15a4604338468e912d1bdfe41a9f102f14f4825eeffff6e02",
+      "sha256": "180c4e9a0909655913cbbe786fe1cf7ae280ea52edf92c0181dd08acf458fb46",
       "url": "/enshu/research/invitation-and-intention"
     },
     {
-      "content_sha256": "a2b8db34ee1d0e4a588842980dc4ad42ceb4f56694f58bf1e8fa272472687e98",
+      "content_sha256": "e03175427155d797cc261e22d8b8035e12c736ae04c84e859ef1b436efd6ee98",
       "path": "enshu/research/meals-work-and-hospitality/index.html",
-      "sha256": "fbf8320cc8b321ee1adb8deeaae684b03232f6d8dd2ec4de2f90508a009e2a6e",
+      "sha256": "ecd48500f35a22f151801cc375ccc35bedbce88c746d77591e4e40511528ea6e",
       "url": "/enshu/research/meals-work-and-hospitality"
     },
     {
@@ -630,9 +684,9 @@
       "url": "/enshu/research/mirui-tea-and-meaning"
     },
     {
-      "content_sha256": "64da2aefa60d7bedbc51f74c782ed2ca026690c60e39a02f30108e31480ccb8c",
+      "content_sha256": "195f489b66b7d4c5f4377c7820826efa209e5d9b12117b3069d5e3d830fc75b9",
       "path": "enshu/research/negation-paradigms/index.html",
-      "sha256": "1dc3aef346495564446250bb23c373c66b80ba5a21f524ce46df5cc960966db1",
+      "sha256": "e1da345387e29860f30c2ace81715ed00a3e56167cc3f0c88e9087b407bb3a36",
       "url": "/enshu/research/negation-paradigms"
     },
     {
@@ -648,27 +702,27 @@
       "url": "/enshu/research/ranuki-history"
     },
     {
-      "content_sha256": "071178c5cdf4127b882363f7f4075df301ac8b8ca9a9871c841baf70e7ad0c46",
+      "content_sha256": "4ed82295e4b102c96fd6909a6f7f6c66b228ee4300e388a5e612831bcd38ed8e",
       "path": "enshu/research/tool-names-and-classification/index.html",
-      "sha256": "2d0f48e7131e2728afe4437e7a4fcce457819ba7b453978017855092e16a7218",
+      "sha256": "875cb32ac7f813760d9d18a1875221ebf3edf1c0636086e6c9cb1fd44c0391b0",
       "url": "/enshu/research/tool-names-and-classification"
     },
     {
-      "content_sha256": "cf9663d69dc5a2c05d760ea23c5c2fbffe960d57c47f64f8ee447acc916a93ba",
+      "content_sha256": "fbbd29b00366a7407d6449a107157771fe5fd014798b224965d58bbccedfb7bb",
       "path": "enshu/research/accent-history/index.html",
-      "sha256": "bfc3cadf7b54ae376a96a55b8276f5b567c9a59337eb071450904b138640d6c3",
+      "sha256": "4c10aa9b6896023e8599cb973bf56f4f3b6b2bbfac1ba43868d675ac761dac54",
       "url": "/enshu/research/accent-history"
     },
     {
-      "content_sha256": "90140e722cdacb0ec768818bbc8a7c440326f0cb80082d548939c2f6b0608138",
+      "content_sha256": "786129e9c9b62f35e041b8b0934efcaf50e8d7e26baa8d50f71bfae1a304a466",
       "path": "enshu/research/generations-and-change/index.html",
-      "sha256": "2a93e0e766a06cd29193ae9fa56cfe9f334580b2c55a469973d20ed62a6da1f0",
+      "sha256": "3a719a2f2f2966a977bb816c422a7d4772a1ca96f464997e91af97999fefff97",
       "url": "/enshu/research/generations-and-change"
     },
     {
-      "content_sha256": "3e1a81f4e603c0ba56b09c589c5ba9a12c1961427dbffad9fb4f2e39c98c50cc",
+      "content_sha256": "1c20fa35261b835a14a3bcb4a5c66ffb197630ae83b6537c8e3866cea7af525c",
       "path": "enshu/research/hamanako-variation/index.html",
-      "sha256": "5698d456d040135666f9bc5ab99a7ae4f0cd5028bb1576768b35bde274aa8cb0",
+      "sha256": "ba7c578a176da6b0d07dae92955ab86e8053e6276596461217c6de1629124f01",
       "url": "/enshu/research/hamanako-variation"
     },
     {
@@ -678,9 +732,9 @@
       "url": "/enshu/research/maisaka-rhythm"
     },
     {
-      "content_sha256": "3200b55db7608aebe1f915a3404f3b377d35560e3c44e300d11b935afeea0b41",
+      "content_sha256": "449da6f8b6a5b01267754aa388e0ac7d5b1e44e568db6404403038a6289bf57e",
       "path": "enshu/research/mamettai-meaning/index.html",
-      "sha256": "7da78be3972000f78fac59555ca015e79543c02b2f2b748307a32554f7059a2f",
+      "sha256": "e543493ea46ff0c72fa02307bbc2b947f7f8239fc4127275130ba59132ca3a54",
       "url": "/enshu/research/mamettai-meaning"
     },
     {
@@ -696,9 +750,9 @@
       "url": "/enshu/research/vowel-devoicing"
     },
     {
-      "content_sha256": "bff1dd08db1bcce2fd5045c515f4536dac2b1d3820538b33024034b2a3ef9403",
+      "content_sha256": "9a8b3d2c74841c1697ef4d61d21e66fe9104bd35a268c0202de11313dadec287",
       "path": "enshu/research/index.html",
-      "sha256": "d136c13614ae57f5a48838cc2d5b06a67f6058f92bd36003bcac0de1d31e9f6b",
+      "sha256": "b47589b8bfb89f3ae1b6e166cf455b302eaa841848d287695a07c46149058ecd",
       "url": "/enshu/research"
     },
     {
@@ -720,9 +774,9 @@
       "url": "/enshu/research/same-form"
     },
     {
-      "content_sha256": "b82fdbd6822738b5c6e5517bbf2b0f0f0267c5256baf75696431362e83422fbf",
+      "content_sha256": "5845a965cd438b353f74d3bbfa599d3551144e28a2e046b3aebcd504dbe825f4",
       "path": "enshu/research/sampling/index.html",
-      "sha256": "f845082c38a3a37a66123c47acdb89bdb07fcef09dd370114718c12cceb168d3",
+      "sha256": "180ed7cde2e183fdce5f1f2028d1744fb9ce280979912408fe2aab46a66d7cad",
       "url": "/enshu/research/sampling"
     },
     {
@@ -808,71 +862,17 @@
       "path": "blog/20261109-chimei-shorui-yomikata/index.html",
       "sha256": "807fa2dc3160053e797228d896a02b5ed898a02f411eb95dd117f29dc500c8b3",
       "url": "/blog/20261109-chimei-shorui-yomikata"
-    },
-    {
-      "content_sha256": "f00f40e954b7a000a429116a3899b2659105a19fc52ca53548434e3234feb72a",
-      "path": "blog/20261109-shizuoka-han-prefecture-comparison/index.html",
-      "sha256": "6c13112ff84e46cd24504eba11cea2ebc796956dbb7fc59f049350c8238758e7",
-      "url": "/blog/20261109-shizuoka-han-prefecture-comparison"
-    },
-    {
-      "content_sha256": "cdcb6bfc65256991f32774a56d0725a7ca587d842dd6f0fec6ff63658d745eec",
-      "path": "blog/20261108-iwata-kinjiro-exhibition/index.html",
-      "sha256": "2bee45ed1f2818a3687bd25f4a4b4382ea699e0bec54ded53edf0f47d507e1d9",
-      "url": "/blog/20261108-iwata-kinjiro-exhibition"
-    },
-    {
-      "content_sha256": "9d014d9fd3141895ff23c53f279357b89abe63cc151a3aad752ccbc2b4df971c",
-      "path": "blog/20261107-iwata-winter-life-reading/index.html",
-      "sha256": "638eff942fcb46621098f32cfe611b239dfe2f5c40eb00260364936e2cf3bf4f",
-      "url": "/blog/20261107-iwata-winter-life-reading"
-    },
-    {
-      "content_sha256": "fc1ce1c7edfcbd00ba05cecabf1edff8cdd9ccdceb4ce69c425f63b20951a9db",
-      "path": "blog/20261106-legend-comparison-notes/index.html",
-      "sha256": "5c6ff3d3d875e895301c953f61393a601c80815dfbdec3a2a96cb61e3190f3a3",
-      "url": "/blog/20261106-legend-comparison-notes"
-    },
-    {
-      "content_sha256": "8bd04d75c3bb61abd77cd8bf96a437be975a8a563f1f37c15b850681733f2d73",
-      "path": "blog/20261105-kaketsuka-totsuka-shobogumi/index.html",
-      "sha256": "bc61a02d5b4ea65c7937a91d4330f2b008314a452750b1b4d1dfb571850417ab",
-      "url": "/blog/20261105-kaketsuka-totsuka-shobogumi"
-    },
-    {
-      "content_sha256": "85db49628087befc5bff09e1cc4b584b9237618f0703005a02bf5c6f09526342",
-      "path": "blog/20261105-senhiki-record/index.html",
-      "sha256": "7a7eb133ffa882cb44695cc7123ce53fbcf680d9f9d7451ae74d273f4c8c2dfb",
-      "url": "/blog/20261105-senhiki-record"
-    },
-    {
-      "content_sha256": "4009f7876d7c07dbb035d8c0495a4d28b126ed2b60adc9faa3bc9e4ebb4ecce4",
-      "path": "c181.html",
-      "sha256": "6ba9db8773c17dc627cc7530da6616425b72368200b19c035c48d757f725300d",
-      "url": "/c181"
-    },
-    {
-      "content_sha256": "e7f43cfdef0ce703ec8e4ba57b7c06e04618787c371da5f186f31c9b5e9d4b47",
-      "path": "blog/20261104-tokaido-ichiri/index.html",
-      "sha256": "6012ab66098d35799bd412d52a7ffa2cd485ec93b69a49b00a056932a6732d1a",
-      "url": "/blog/20261104-tokaido-ichiri"
-    },
-    {
-      "content_sha256": "6967b9fbb66455ff687862705ce62f297fc5eee9bc7edc40a621653ab1f66ebf",
-      "path": "blog/20261104-tsunami-bosai-day/index.html",
-      "sha256": "48c5cb77ca777062c3d7625e75be28672cbbd8bc5a8f10ad84dfb1b7b87bf8c8",
-      "url": "/blog/20261104-tsunami-bosai-day"
     }
   ],
   "schema": 1,
-  "state_hash": "e1e70e5a143fa2558bd4362c5f27403eb1d14ea51ea57e19be9342dded51fbe8",
+  "state_hash": "24ad3ec86cbe578b357d93483debaaa2ecd4d6a9ad811aca2a1c86101db37178",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1322,
-    "new_articles": 1608,
-    "new_articles_sha256": "db3bb02582e2bfffbd20dbde546ccd44434fedbcce9fb3bcddc3ff85684c7a55",
-    "pages_sha256": "43224544481253621d1929d44a5ef34d5a4ed0a448eabd439f86032b93c693e1",
-    "pages_total": 1510,
-    "published_pages": 1509
+    "new_articles": 1617,
+    "new_articles_sha256": "a466345430967060300f8328aeb7ff2447f0bbd466b18d744991944bac4c21dd",
+    "pages_sha256": "2770adba8acce7e3c6c0a61aaaf95ee70913184a2c03ff7192b76b8dcfc5c418",
+    "pages_total": 1519,
+    "published_pages": 1518
   }
 }
