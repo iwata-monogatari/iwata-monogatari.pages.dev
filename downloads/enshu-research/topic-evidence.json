@@ -1,0 +1,400 @@
+{
+  "version": "2026-11-13",
+  "scope": "親族呼称・人の呼び方・地域の仕事と生業。郡誌選録、国語研の親族語研究、公的な地域史・文化財・産業・技術資料を照合。世界中の全資料や将来の新資料を調べ尽くしたという意味ではない。",
+  "method": "先に本数を決めず、独立した問いは新設、既存の問いに重なる証拠は補足、裏付けを欠く断定は保留する。",
+  "candidates": [
+    {
+      "topic": "「オヤク・オヤコ・チルイ・イッケ・マキ」は、同じ親類か",
+      "disposition": "独立した問いとして掲載",
+      "slug": "oyaku-oyako-and-kin-groups",
+      "reason": "浜名湖の東西と水窪西浦の記述を比べ、親類の一語訳に隠れる分類の違いを読む。",
+      "sources": [
+        "gunshi",
+        "kin1970regional"
+      ]
+    },
+    {
+      "topic": "「オットー・オトッサ・オッカー」は、親か、配偶者か、家の役割か",
+      "disposition": "独立した問いとして掲載",
+      "slug": "parent-spouse-and-household-role",
+      "reason": "水窪と遠州方言集の採録を読み、父・母だけに訳し切れない語の意味の重なりを考える。",
+      "sources": [
+        "kin1979parents"
+      ]
+    },
+    {
+      "topic": "夫婦で「お父さん」と呼ぶとき、誰の視点で話しているか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "kinship-viewpoint-in-conversation",
+      "reason": "子どもの同席と呼び方の変化を先行研究から読み、遠州の家族語を調べるための視点を整える。",
+      "sources": [
+        "kin1970viewpoint",
+        "kin1979parents"
+      ]
+    },
+    {
+      "topic": "「うら・おんし・わいら」を、一人称・二人称だけで訳せるか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "ura-onshi-waira",
+      "reason": "郡誌の記録地と対応語を保ち、話し手・相手・人数・評価という別々の情報を読む。",
+      "sources": [
+        "gunshi"
+      ]
+    },
+    {
+      "topic": "人を呼ぶ語に、当時の評価や身分観をどう読むか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "historical-person-labels",
+      "reason": "おだい・なまかあ・やごめ等の分類を比べ、人の状態と採録者の評価を切り分ける。",
+      "sources": [
+        "gunshi"
+      ]
+    },
+    {
+      "topic": "人名に見える屋号は、本当に昔の当主名から来たのか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "house-name-form-and-origin",
+      "reason": "掛塚の屋号の読解を、新潟の屋号研究と比較し、形・由来・命名時期を別々に確かめる。",
+      "sources": [
+        "yago2024",
+        "ryuyo2025"
+      ]
+    },
+    {
+      "topic": "雄踏市場では、屋号が紙札から声へ移る",
+      "disposition": "独立した問いとして掲載",
+      "slug": "yuto-market-house-names",
+      "reason": "県の市場取材を読み、書く・渡す・読み上げるという取引の順序の中で、人の呼び方を考える。",
+      "sources": [
+        "market2024"
+      ]
+    },
+    {
+      "topic": "「キンマ・ガンリキ」は、山から川への仕事をどう分けるか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "sakuma-forest-transport",
+      "reason": "佐久間の文化財解説を工程に沿って読み、運ぶ道具・身に着ける道具・仕事の担い手を区別する。",
+      "sources": [
+        "sakuma2012"
+      ]
+    },
+    {
+      "topic": "「ヤマツクリ」は山を造ることか――佐久間の焼畑を読む",
+      "disposition": "独立した問いとして掲載",
+      "slug": "yamatsukuri-and-toguwa",
+      "reason": "普通の語の組合せに見える呼称を、地域の用法と傾斜地の作業から読み解く。",
+      "sources": [
+        "sakuma2012"
+      ]
+    },
+    {
+      "topic": "「うげ・はぜかご・囲目網・はえまわし網」を、何で分類するか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "hamanako-gear-and-fishing-method",
+      "reason": "実物・捕り方・対象の魚という三つの軸から、浜名湖の仕事の言葉を読む。",
+      "sources": [
+        "oku_hamana_museum",
+        "hamamatsu_fishing_history"
+      ]
+    },
+    {
+      "topic": "「遠州表・備後藺・琉球藺・イチビトカシ」は、何の名か",
+      "disposition": "独立した問いとして掲載",
+      "slug": "enshu-tatami-and-fibre-names",
+      "reason": "奥浜名湖の資料館の説明から、産地を示す製品名、原料名、加工の道具名を区別する。",
+      "sources": [
+        "oku_hamana_museum"
+      ]
+    },
+    {
+      "topic": "「さつぱ」と「シラス船」は、同じ尺度の船名か",
+      "disposition": "独立した問いとして掲載",
+      "slug": "sappa-and-boat-classification",
+      "reason": "郡誌の小舟と市の漁業別分類を比べ、船体・用途・操業の単位を読み分ける。",
+      "sources": [
+        "gunshi",
+        "hamamatsu_fishing_boats",
+        "hamamatsu_fishing_history"
+      ]
+    },
+    {
+      "topic": "シンコ・コハダ・コノシロ――魚の名は、種類だけを分けるか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "fish-names-growth-and-products",
+      "reason": "成長段階、魚の種類、加工品という違いから、浜名湖の取引の言葉を読む。",
+      "sources": [
+        "market2024",
+        "hamamatsu_fishing_boats"
+      ]
+    },
+    {
+      "topic": "長屋で蚕を飼った記憶を、誰の言葉として読むか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "sericulture-house-memory",
+      "reason": "岩田地区の養蚕の回想から、場所の名・家族関係・仕事の記憶が結び付く過程を読む。",
+      "sources": [
+        "iwata_sericulture"
+      ]
+    },
+    {
+      "topic": "「合葉・合組・こくり」は、すべて「お茶を混ぜる」ことか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "tea-process-and-skill-language",
+      "reason": "茶の加工段階と春野・森の手揉製茶の工程名を比べ、専門語が区切る仕事を読む。",
+      "sources": [
+        "tea2005",
+        "handtea2008"
+      ]
+    },
+    {
+      "topic": "「親芋・子芋・孫芋」は、人の親族関係と何が共通するか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "parent-child-metaphor-in-taro",
+      "reason": "磐田の海老芋を題材に、植物の増え方を親族語で説明する仕組みと、その限界を考える。",
+      "sources": [
+        "taro2023",
+        "ebiimo2020"
+      ]
+    },
+    {
+      "topic": "「ようたび」を夜なべと訳すと、どこまで仕事が分かるか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "yotabi-work-time",
+      "reason": "夜を表す仕事の名と、作業内容・担い手・生業の組合せを分けて読む。",
+      "sources": [
+        "gunshi"
+      ]
+    },
+    {
+      "topic": "「乗り子」は漁師の別名か――仕事の役割と兼業を読む",
+      "disposition": "独立した問いとして掲載",
+      "slug": "noriko-and-seasonal-work",
+      "reason": "浜松市の産業解説から、職業名・乗組員の役割・季節ごとの仕事を区別する。",
+      "sources": [
+        "hamamatsu_fishing_work"
+      ]
+    },
+    {
+      "topic": "「漉かにゃあ、ならんでのう」を、職人の説明の中で読む",
+      "disposition": "独立した問いとして掲載",
+      "slug": "atago-paper-craft-explanation",
+      "reason": "阿多古和紙の取材記事を、語尾だけでなく、条件と作業の基準を伝える発話として精読する。",
+      "sources": [
+        "atago_paper_voice",
+        "gunshi"
+      ]
+    },
+    {
+      "topic": "「十職」は、いつでも十種類だったのか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "craft-names-and-jisshoku",
+      "reason": "浜松の職名の一覧から、数字を含む総称と、文書ごとの分類の違いを読む。",
+      "sources": [
+        "craft_history"
+      ]
+    },
+    {
+      "topic": "「居番・船頭・舟名敷」は、同じ種類の仕事名か",
+      "disposition": "独立した問いとして掲載",
+      "slug": "ferry-person-role-and-right",
+      "reason": "船越村の渡船の記述から、指揮する役、働く人、勤務の割当と関わる持高を読み分ける。",
+      "sources": [
+        "ferry_history"
+      ]
+    },
+    {
+      "topic": "「川留・川明」は、川そのものの変化をいうのか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "kawadome-kawaake-and-signs",
+      "reason": "天竜川の渡船と川会所・立札の記述から、自然の状態と運用上の判断を区別する。",
+      "sources": [
+        "river_status_history"
+      ]
+    },
+    {
+      "topic": "「榑木・管流し・筏送り」は、同じ材をどう捉えるか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "kureki-transport-and-counting",
+      "reason": "掛塚湊の市史記述から、年貢材・運ぶ工程・数える単位を別々に読む。",
+      "sources": [
+        "kureki_history",
+        "sakuma2012"
+      ]
+    },
+    {
+      "topic": "塩の「一俵」は、入れ物の数か、決まった量か",
+      "disposition": "独立した問いとして掲載",
+      "slug": "salt-bale-and-measure",
+      "reason": "浜松塩町の取引をめぐる記述から、単位の意味と、当事者間の基準の違いを考える。",
+      "sources": [
+        "salt_capacity_history"
+      ]
+    },
+    {
+      "topic": "「傍示」の内とは、どこまでか――塩の商圏をめぐる言葉",
+      "disposition": "独立した問いとして掲載",
+      "slug": "salt-boundary-language",
+      "reason": "県立図書館の史料解説から、場所を指す表現の曖昧さと、取引の範囲の関係を読む。",
+      "sources": [
+        "salt_boundary_history"
+      ]
+    },
+    {
+      "topic": "「軒端商・店借商・大道商・中座」は、売る品物の名か",
+      "disposition": "独立した問いとして掲載",
+      "slug": "kasai-market-space-names",
+      "reason": "笠井市の三種の商いを、場所を使う関係と語の構造から読み解く。",
+      "sources": [
+        "kasai_trade_history"
+      ]
+    },
+    {
+      "topic": "「なんばん」と「なんばんきび」は、同じ作物の別名か",
+      "disposition": "独立した問いとして掲載",
+      "slug": "crop-names-and-compounds",
+      "reason": "郡誌の唐辛子・とうもろこし・じゃがいもの記録から、複合語と対象の分類を読む。",
+      "sources": [
+        "gunshi"
+      ]
+    },
+    {
+      "topic": "婚姻の行為と、生活段階の呼び名も区別する",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "family-position-and-life-course",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "子どもを指す語と、世話する仕事の名",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "childcare-and-play",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "刃物の上位語が同じでも、実物が同じとは限らない",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "tool-names-and-classification",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "身体と道具を、運ぶ動作の中へ置く",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "tool-names-and-classification",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "原料・加工段階・担い手をさらに分ける",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "fukude-textile-vocabulary",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "転業だけでなく、原料の流れでも仕事がつながる",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "livelihood-change-and-language",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "呼称と暮らしを、後から検証できる記録へ",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "words-and-things",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    }
+  ],
+  "evidence_gaps": [
+    {
+      "topic": "地域・世代ごとの親族呼称の使用率",
+      "state": "統計を示せない",
+      "reason": "郡誌と文献採録は、同条件で地域・世代を比較した代表標本ではない。現代の地域別・世代別の標本と設問が必要。",
+      "needed": "比較可能な調査設計・話者条件・全回答"
+    },
+    {
+      "topic": "親族呼称や人名のアクセント・会話の間",
+      "state": "音声資料が必要",
+      "reason": "仮名の語彙記録・編集された取材記事だけから、アクセントや発話の長さ、間を復元できない。",
+      "needed": "対象地域・話者・場面を伴う利用可能な音声と照合"
+    },
+    {
+      "topic": "各世帯の屋号の分布・現在の呼び方",
+      "state": "全体像を示せない",
+      "reason": "公開資料の個別例と他地方の研究はあるが、遠州の各集落の全世帯を同条件で確認した名簿ではない。",
+      "needed": "当事者の説明、時点、同意と公開範囲を伴う現地資料"
+    },
+    {
+      "topic": "機械音のある職場の指示・身振り・短縮語",
+      "state": "実際の会話が必要",
+      "reason": "産業の存在や機械の展示だけで、作業中の言葉や発音がどう変わるかを実証できない。",
+      "needed": "作業と発話の対応、記録・利用条件"
+    },
+    {
+      "topic": "語形の類似からの確定語源・伝播経路",
+      "state": "未確定のまま保持",
+      "reason": "似た形や原注の推測を確定へ変えない。作物・技術・材料が動くことと言葉が移ることを分ける。",
+      "needed": "年代の分かる語の実例と物・人の移動資料"
+    },
+    {
+      "topic": "生業の違いが文法や性格を生むという因果",
+      "state": "因果を断定しない",
+      "reason": "産業史や語彙の存在だけでは、職業が文法・話し方を決める証拠にならない。",
+      "needed": "比較対象と交絡条件を含む言語資料"
+    }
+  ],
+  "books": [
+    {
+      "title": "磐田地方の方言集",
+      "status": "書名の案内を確認。今回、原著本文は直接閲覧していない。"
+    },
+    {
+      "title": "ふくで方言集",
+      "status": "図書館の資料案内を確認。本文の語義を確認した出典として使わない。"
+    },
+    {
+      "title": "おらん生まれた長野ん方言",
+      "status": "資料案内を確認。今回本文に基づく新たな断定はしない。"
+    },
+    {
+      "title": "竜洋町の方言 訛集",
+      "status": "資料案内を確認。書名の確認と本文の確認を区別する。"
+    },
+    {
+      "title": "遠州方言集・水窪の語彙調査",
+      "status": "国語研1979の採録を介して該当箇所を確認。採録元原著の直接確認とは区別する。"
+    },
+    {
+      "title": "豊田町の方言",
+      "status": "県立図書館の書誌一覧で確認。今回、原著本文を直接閲覧していない。"
+    }
+  ],
+  "reviewed_collections": [
+    {
+      "name": "磐田郡誌選録",
+      "records": 380,
+      "limit": "全文翻刻ではなく、過去に原画像照合した選録。"
+    },
+    {
+      "name": "FPJD磐田市1地点",
+      "records": 287,
+      "questions": 211,
+      "limit": "親族呼称全体や職業集団を一様に調べたデータではない。既存の敬語・文法ノートとの重複を照合。"
+    }
+  ],
+  "source_comparisons": [
+    {
+      "topic": "問屋場の役割と職名",
+      "source": "https://adeac.jp/hamamatsu-city/texthtml/d100020/mp010020-100020/ht003260",
+      "disposition": "独立ページにはしない",
+      "reason": "市史の本文を確認したが、制度ごとの役名を列挙するだけでは、既掲載の渡船組織・職名分類の問いと十分に区別できない。別制度の呼称を一つの職場の会話へ合成しない。"
+    },
+    {
+      "topic": "市史の阿多古紙の短い記述",
+      "source": "https://adeac.jp/hamamatsu-city/texthtml/d100020/mp010020-100020/ht004360",
+      "disposition": "同じ題材の薄い別記事を作らない",
+      "reason": "市史の紙漉きの記述と職人の説明を比較し、工程・発話を直接検討できる取材記事を主資料にした。季節的な生産の紹介だけを別の研究ノートへ分割しない。"
+    },
+    {
+      "topic": "楮栽培から「かず」の語源を説明できるか",
+      "source": "https://adeac.jp/hamamatsu-city/texthtml/d100020/mp010020-100020/ht005180",
+      "disposition": "確定語源の記事は作らない",
+      "reason": "市史の栽培史の本文は確認したが、語形の成立・音変化・伝播の年代を実証する資料ではない。作物の歴史だけを語源の証拠に変えない。"
+    }
+  ]
+}
