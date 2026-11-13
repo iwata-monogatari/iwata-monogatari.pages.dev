@@ -47,7 +47,9 @@
       "slug": "historical-person-labels",
       "reason": "おだい・なまかあ・やごめ等の分類を比べ、人の状態と採録者の評価を切り分ける。",
       "sources": [
-        "gunshi"
+        "gunshi",
+        "brsk2026",
+        "brsk1775"
       ]
     },
     {
@@ -57,7 +59,8 @@
       "reason": "掛塚の屋号の読解を、新潟の屋号研究と比較し、形・由来・命名時期を別々に確かめる。",
       "sources": [
         "yago2024",
-        "ryuyo2025"
+        "ryuyo2025",
+        "koyo2025"
       ]
     },
     {
@@ -126,7 +129,9 @@
         "market2024",
         "hamamatsu_fishing_boats",
         "fpjd_context2026",
-        "fpjd"
+        "fpjd",
+        "brsk2026",
+        "brsk1775"
       ]
     },
     {
@@ -258,7 +263,9 @@
       "slug": "crop-names-and-compounds",
       "reason": "郡誌の唐辛子・とうもろこし・じゃがいもの記録から、複合語と対象の分類を読む。",
       "sources": [
-        "gunshi"
+        "gunshi",
+        "brsk2026",
+        "brsk1775"
       ]
     },
     {
@@ -269,7 +276,9 @@
       "sources": [
         "fpjd",
         "fpjd_context2026",
-        "notes"
+        "notes",
+        "brsk2026",
+        "brsk1775"
       ]
     },
     {
@@ -302,7 +311,9 @@
       "sources": [
         "fpjd",
         "fpjd_context2026",
-        "notes"
+        "notes",
+        "brsk2026",
+        "brsk1775"
       ]
     },
     {
@@ -379,7 +390,8 @@
       "sources": [
         "fpjd",
         "fpjd_context2026",
-        "notes"
+        "notes",
+        "ke2026"
       ]
     },
     {
@@ -390,7 +402,8 @@
       "sources": [
         "fpjd",
         "fpjd_context2026",
-        "notes"
+        "notes",
+        "kasu2026"
       ]
     },
     {
@@ -434,7 +447,9 @@
       "sources": [
         "fpjd",
         "fpjd_context2026",
-        "notes"
+        "notes",
+        "brsk2026",
+        "brsk1775"
       ]
     },
     {
@@ -463,7 +478,132 @@
       "slug": "iinisuru-meaning-and-context",
       "reason": "一つの表現の複数用法を、調査の分類と実際の文脈の境界から読む。",
       "sources": [
-        "iinisuru2023"
+        "iinisuru2023",
+        "iini2024-abstract"
+      ]
+    },
+    {
+      "topic": "「ケ」は、過去だけを表すのか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "ke-past-and-recognition",
+      "reason": "2026年の15設問調査から、確認・回想・現在の詠嘆と地域差を読み分ける。",
+      "sources": [
+        "ke2026",
+        "fpjd"
+      ]
+    },
+    {
+      "topic": "「うちめぬき・そとめぬき」は、身体をどう分けるか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "body-names-and-landmarks",
+      "reason": "1775年の遠江の身体語から、部位の指示、内外の対、語の分析と語源の違いを読む。",
+      "sources": [
+        "brsk2026",
+        "brsk1775"
+      ]
+    },
+    {
+      "topic": "鼠を「よめ」、米を「ぼさつ」と呼ぶのは、いつか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "taboo-euphemism-and-ritual",
+      "reason": "遠江の年始の呼称と天竜川上流の記述から、場面に制約された名前を読む。",
+      "sources": [
+        "brsk2026",
+        "brsk1775"
+      ]
+    },
+    {
+      "topic": "鳥の声を、なぜ人のことばで覚えるのか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "bird-names-and-kikinashi",
+      "reason": "遠江の鳥名とホオジロの聞きなしから、呼称・音声・暮らしの知識を分ける。",
+      "sources": [
+        "brsk2026",
+        "brsk1775"
+      ]
+    },
+    {
+      "topic": "メダカの二つの名は、二種類の魚を意味するか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "small-creatures-and-folk-categories",
+      "reason": "遠江のねんはち・めんぱい、水辺や家の小動物の名から、異名と分類を読む。",
+      "sources": [
+        "brsk2026",
+        "brsk1775"
+      ]
+    },
+    {
+      "topic": "植物の古い名を、現代の種名に直してよいか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "plant-names-and-identification",
+      "reason": "ちちぐさ・こうしば・ちょうせんたばこなど、遠江の記録と現代語見出しの関係を読む。",
+      "sources": [
+        "brsk2026",
+        "brsk1775"
+      ]
+    },
+    {
+      "topic": "地図の一点を「遠江の全域」に広げてよいか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "historical-map-spatial-resolution",
+      "reason": "2026年の『物類称呼』DBから、国名・川筋・代表座標と、分布図の精度を読む。",
+      "sources": [
+        "brsk2026",
+        "brsk1775",
+        "fpjd"
+      ]
+    },
+    {
+      "topic": "「講」と「待ち」は、何を名付けているか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "ko-machi-and-ritual-names",
+      "reason": "磐田の庚申待ち・秋葉講・灯籠の記述から、集まり・行為・対象の名を読む。",
+      "sources": [
+        "iwata-belief2014",
+        "iwata-plan2024"
+      ]
+    },
+    {
+      "topic": "悉平太郎・早太郎・兵坊太郎を、どう読み比べるか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "legend-variants-and-retelling",
+      "reason": "磐田の伝説の異名と再話から、語形の差、物語の差、方言の逐語記録の違いを解説する。",
+      "sources": [
+        "iwata-plan2024",
+        "shippei2025"
+      ]
+    },
+    {
+      "topic": "AIが遠州弁を「分かる」とは、何を測ることか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "dialect-ai-evaluation",
+      "reason": "2026年の音声翻訳研究から、合成音声・正解データ・評価尺度と遠州の成績を読む。",
+      "sources": [
+        "slm2026",
+        "robust2026",
+        "cpjd"
+      ]
+    },
+    {
+      "topic": "遠州弁の対訳音声と、自然な会話は何が違うか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "parallel-speech-and-natural-talk",
+      "reason": "CPJDの収録設計から、文をそろえる利点と、談話・話者・地域の条件を読む。",
+      "sources": [
+        "cpjd",
+        "slm2026",
+        "fpjd"
+      ]
+    },
+    {
+      "topic": "「ものもらい」の由来は、一つに決められるか",
+      "disposition": "独立した問いとして掲載",
+      "slug": "disease-name-and-folk-etymology",
+      "reason": "2024年の来訪神説を、磐田の調査回答と比較し、分布・物語・音変化の証拠を読む。",
+      "sources": [
+        "eye2024",
+        "fpjd",
+        "notes"
       ]
     },
     {
@@ -509,7 +649,19 @@
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     },
     {
+      "topic": "運ぶ・煮る・梳くを、同じ道具名にしない",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "tool-names-and-classification",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
       "topic": "原料・加工段階・担い手をさらに分ける",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "fukude-textile-vocabulary",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "布になる前の材料・足で動かす部品",
       "disposition": "重複する既存ノートへ補足",
       "slug": "fukude-textile-vocabulary",
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
@@ -539,7 +691,19 @@
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     },
     {
+      "topic": "雄牛の名と、対象の下位分類",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "words-and-things",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
       "topic": "説明する「イクダ」と、初めて聞く「ソーナノ」",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "dara-structure",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "2026年の県東部の公開抄録との比較",
       "disposition": "重複する既存ノートへ補足",
       "slug": "dara-structure",
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
@@ -557,7 +721,19 @@
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     },
     {
+      "topic": "ケの新しい調査と、トルの変化の別経路",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "tense-aspect",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
       "topic": "NR・非使用・未経験・語彙と伝説の有無を分ける",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "sampling",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "市の地域計画が記す、把握調査の空白",
       "disposition": "重複する既存ノートへ補足",
       "slug": "sampling",
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
@@ -569,7 +745,19 @@
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     },
     {
+      "topic": "新しいケの標本を、古い推量調査へ足さない",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "generations-and-change",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
       "topic": "「面白くない」と「つまらない」、程度を添える語",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "negation-paradigms",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "否定の形を含む語と、文法的な否定",
       "disposition": "重複する既存ノートへ補足",
       "slug": "negation-paradigms",
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
@@ -587,13 +775,31 @@
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     },
     {
+      "topic": "1775年の「ず」は、否定とは限らない",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "invitation-and-intention",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
       "topic": "話者が知っている語源説明と、成立史の証拠",
       "disposition": "重複する既存ノートへ補足",
       "slug": "etymology-and-evidence",
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     },
     {
+      "topic": "原本の著者の「按」と、2026年の新しい仮説",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "etymology-and-evidence",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
       "topic": "水が凍ることと、とても寒いこと",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "farming-and-weather",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "稲こきの名と、工程の変化",
       "disposition": "重複する既存ノートへ補足",
       "slug": "farming-and-weather",
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
@@ -611,9 +817,111 @@
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     },
     {
+      "topic": "近世の幼名と、川魚を括る名",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "fish-names-growth-and-products",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
       "topic": "蚕の名・桑の実の名・食べた経験を分ける",
       "disposition": "重複する既存ノートへ補足",
       "slug": "sericulture-house-memory",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "近世の寝室名と、座り方の呼称",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "house-space-and-actions",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "近世の身分・生活状態と人の名付け",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "historical-person-labels",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "同じ音に見える語と、異なる意味の履歴",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "same-form",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "1775年の外来・性別・材料を思わせる名",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "crop-names-and-compounds",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "程度の表現と、良し悪しの述語",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "adjective-and-nominal-predicates",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "「けゝねつ」の反復記号と、現代の音",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "sound-symbols-and-kana",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "近世の「かこくさい」と、においの対象",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "taste-smell-and-context",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "出来事の時点と、気付いた時点を分ける",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "existence-past-and-recollection",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "井川の2026年資料を、遠州の規則と混ぜない",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "potential-forms",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "2024年の短文作成は、何人のどの回答か",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "iinisuru-meaning-and-context",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "2026年の外輪様仮説を、復元音声にしない",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "accent-history",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "使役のように見える派生と、他動詞の違い",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "passive-and-event-viewpoint",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "指導の場と、継承の効果を区別する",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "dainembutsu-voice-and-transmission",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "姓・個人名から生まれた道の二つの名",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "house-name-form-and-origin",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "動物を指す親族語でも、条件を分ける",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "kinship-beyond-relatives",
+      "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
+    },
+    {
+      "topic": "神の名・集まりの名・物の名を分ける",
+      "disposition": "重複する既存ノートへ補足",
+      "slug": "ritual-tools-and-local-words",
       "reason": "同じ資料上の問いを細分化して新しいページ数を増やさず、既存の論点の中で比較。"
     }
   ],

@@ -1,0 +1,905 @@
+{
+  "reviewed_at": "2026-11-13",
+  "scope": "2026年公開の日本方言研究会122回、2024年119回の該当原稿、音声・言語モデル研究、歴史方言DB全体の遠江抽出、磐田の改訂計画・資料案内・文化財だより。調査は指定した資料群と対応する問いの範囲。将来の新資料や未読原著を含む全研究の終了を意味しない。",
+  "candidates": [
+    {
+      "label": "谷口・柴田・山岸2026：ケの15用法",
+      "disposition": "独立した問いを新設、関連する時間・世代ノートへ補足",
+      "notes": [
+        "ke-past-and-recognition",
+        "tense-aspect",
+        "existence-past-and-recollection",
+        "generations-and-change"
+      ],
+      "reason": "51–56頁を確認。確認・発見・現在の詠嘆と調査補正の条件を扱う。イタの一地点回答や既存3,177名の推量調査と別資料。個別設問の表と本文の不整合を記録し総数の断定を再掲しない。"
+    },
+    {
+      "label": "大西2026／BRSK_202604／越谷1775：全3,502行の場所列",
+      "disposition": "遠江関係60行を全件割当、新規・補足へ統合",
+      "notes": [
+        "body-names-and-landmarks",
+        "taboo-euphemism-and-ritual",
+        "bird-names-and-kikinashi",
+        "small-creatures-and-folk-categories",
+        "plant-names-and-identification",
+        "historical-map-spatial-resolution"
+      ],
+      "reason": "データの版・5巻47画像・翻字を照合。具体的な全60行の所在と掲載先はhistorical_recordsへ。注記だけでヒットする和泉・摂津2行は対象地が違うため除外。道具・作物・人の呼び方は既存の問いを保持して補足。"
+    },
+    {
+      "label": "三森ほか2026／Mizumotoほか2026",
+      "disposition": "同じ技術的問いへ統合して新設",
+      "notes": [
+        "dialect-ai-evaluation"
+      ],
+      "reason": "原PDF6頁・プレプリント7頁を確認。合成データと翻訳尺度を併せて扱い、二論文を薄い別記事に分割しない。遠州の列を平均と区別。自然さや発音の正しさを立証したとは扱わない。"
+    },
+    {
+      "label": "CPJD ver.1の原配布・設計",
+      "disposition": "資料の種類という独立した問いを新設",
+      "notes": [
+        "parallel-speech-and-natural-talk"
+      ],
+      "reason": "公式ZIP・README・話者表を確認。話者M007の公開地名を詳細な磐田市の出身情報へ補わない。対訳課題と自然談話の違いで、AIの成績評価とは問いを分ける。音声の全件聴取・音響分析は未実施。"
+    },
+    {
+      "label": "落合2024：麦粒腫と来訪神",
+      "disposition": "語源仮説と地域の名称回答を比較して新設",
+      "notes": [
+        "disease-name-and-folk-etymology"
+      ],
+      "reason": "17–24頁は文字抽出が化けるため原PDF画像で確認。FPJDの名称・NRを語源や風習の実証へ広げない。全国の意味的語群を同源の語群と取り違えず、まじないの手順は実行案内として転載しない。"
+    },
+    {
+      "label": "磐田市地域計画：2024年改訂／民俗信仰2014",
+      "disposition": "集団・行為・物の命名を新設、調査空白を既存へ補足",
+      "notes": [
+        "ko-machi-and-ritual-names",
+        "sampling",
+        "ritual-tools-and-local-words"
+      ],
+      "reason": "最新の公式リンクの計画本文34・49–54頁を確認。図書館シートは2頁の公開PDFテキストで確認、原画像の取得は未成功。全地域の現行慣行を断定する使い方を避ける。"
+    },
+    {
+      "label": "市地域計画35頁／市公式の伝説再話",
+      "disposition": "異名・再話・歴史資料を分ける問いを新設",
+      "notes": [
+        "legend-variants-and-retelling"
+      ],
+      "reason": "異名を音韻法則へ、伝説を歴史的事実へ、共通語の再話を遠州弁の逐語記録へ読み替えない。物語全文を転載しない。"
+    },
+    {
+      "label": "谷口2026：井川の可能表現",
+      "disposition": "既存の可能表現へ比較資料を補足",
+      "notes": [
+        "potential-forms"
+      ],
+      "reason": "原PDF全6頁、13名の判断と1名の翻訳課題を分離。井川は遠州ではないため、その規則を磐田へ転用する新記事にしない。表の個票と本文の世代一般化の差も保つ。"
+    },
+    {
+      "label": "田形2026：井川・女川のカス型派生",
+      "disposition": "既存のヴォイスの問いへ比較を補足",
+      "notes": [
+        "passive-and-event-viewpoint"
+      ],
+      "reason": "33–40頁の語彙・地域差と一般化の留保を確認。接尾辞を遠州の生産的規則とする証拠ではないため、単語ごとの派生ページは作らない。"
+    },
+    {
+      "label": "中村2026：外輪様のアクセント祖体系案",
+      "disposition": "既存のアクセント史へ補足",
+      "notes": [
+        "accent-history"
+      ],
+      "reason": "17–24頁を確認。現代の遠州の新しい録音調査ではなく再建仮説。他説の比較を範囲外とする注を含め、確定した祖語や復元音声にしない。"
+    },
+    {
+      "label": "鴨井2026：トルの意味拡張と言語接触",
+      "disposition": "既存の時間・アスペクトへ補足",
+      "notes": [
+        "tense-aspect"
+      ],
+      "reason": "57–64頁を確認。和歌山・三重南部などの変化を、遠州の起源の実証としない。全地域が同じ順序で変化するとの一般化を避けるための対照。"
+    },
+    {
+      "label": "佐野・菅野2026：県東部のダラ",
+      "disposition": "確認できた公式抄録の範囲で補足、本文は未読",
+      "notes": [
+        "dara-structure"
+      ],
+      "reason": "書誌と公開抄録を確認。本文URLは503、ブラウザで2026年10月28日からのJAIROメンテナンス告知。地点・話者・詳細な例文は確認済みにせず、県東部の仮説を磐田の規則へ移さない。"
+    },
+    {
+      "label": "矢板橋ほかFIT2024：いいにするの短文作成",
+      "disposition": "公式抄録で確かめた課題の違いを既存へ補足",
+      "notes": [
+        "iinisuru-meaning-and-context"
+      ],
+      "reason": "公式抄録の対象10,958・回答1,518・13.87%・4意味を確認。本文PDF403、Web取得エラー。未読の除外条件・検定量は紹介しない。2023年の1,770名へ足さない。"
+    },
+    {
+      "label": "文化財だより第253号：伝承団体",
+      "disposition": "伝承の場を既存へ補足",
+      "notes": [
+        "dainembutsu-voice-and-transmission"
+      ],
+      "reason": "3頁の団体活動を確認。学校等で指導した事実と、方言語彙の習得効果や大念仏の新しい歌詞記録を分ける。"
+    },
+    {
+      "label": "向陽学府の資料案内：高塚新道／太郎平新道",
+      "disposition": "呼称の構成を既存へ補足",
+      "notes": [
+        "house-name-form-and-origin"
+      ],
+      "reason": "公開PDF2頁のテキストを確認。版表示と本文年の差を記録。道路名を屋号の実例に数えず、姓・個人名という構成の対照に限定。柿の木さまの記述だけで新しい治病信仰の語源記事にしない。"
+    },
+    {
+      "label": "井上2022：静岡の新方言と標準語の普及過程",
+      "disposition": "本文の再開待ち、未読の図表から新記事を作らない",
+      "notes": [],
+      "reason": "公式書誌と冒頭の公開検索表示を確認。PDFは503／Web429、ブラウザでJAIROメンテナンス告知。全27頁の図表・論証は未確認。新方言・言語景観の独立性は本文取得後に検討する。記事数のために要旨から推測して執筆しない。"
+    },
+    {
+      "label": "三谷2024の授業用ポスター：認知度とインターネット",
+      "disposition": "因果関係の根拠として採用しない",
+      "notes": [],
+      "reason": "公開ポスターの39名・Xでの募集という方法を確認。ら抜きの認知拡大の因果や遠州全体の比率を支える資料としない。既存の中山2020の調査の解説を置換しない。"
+    },
+    {
+      "label": "日本方言研究会122回の他の3発表（北琉球の撥音化・肥筑壱岐語の動詞・上方落語の否定）",
+      "disposition": "目次で対象を確認し、今回の遠州の直接根拠へ採らない",
+      "notes": [],
+      "reason": "公式目次で対象地域と主題を確認。本文未読を全文査読済みとはしない。遠州の現象との対応を示す新証拠が得られた場合に再検討。"
+    },
+    {
+      "label": "2026年IPSJのケの分析抄録",
+      "disposition": "関連する同テーマの発表として照合、別の独立標本へ数えない",
+      "notes": [
+        "ke-past-and-recognition"
+      ],
+      "reason": "公式抄録の重み付け・地域／世代の分析という課題を確認。方法の詳細を読める5月の発表原稿を本文の根拠へ使用し、別研究として人数を足さない。"
+    },
+    {
+      "label": "未読の『遠江文典』・地方方言集の原著",
+      "disposition": "本文・書誌確認の範囲を分離して保留",
+      "notes": [],
+      "reason": "原本未取得のため成立年や具体的な用例の直接確認を新たに主張しない。既存の間接引用の注記を保持。刊行物の存在・引用と全文の確認を区別する。"
+    }
+  ],
+  "historical_selection": {
+    "total_database_rows": 3502,
+    "all_field_search_hits": 62,
+    "selected_place_rows": 60,
+    "excluded_nonregional_hits": 2,
+    "original_volumes": 5,
+    "original_images": 47
+  },
+  "historical_records": [
+    {
+      "id": "【1-26-1-1-1】",
+      "original": "ほそをり",
+      "form": "ほそーり",
+      "place": "遠州",
+      "volume": "一",
+      "leaf": "５オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/001/tiff/brsk001-017.tiff/full/full/0/default.jpg",
+      "note": "house-space-and-actions",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【1-42-1-3-1】",
+      "original": "つぐめ",
+      "form": "つぐめ",
+      "place": "遠江",
+      "volume": "一",
+      "leaf": "８ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/001/tiff/brsk001-024.tiff/full/full/0/default.jpg",
+      "note": "historical-person-labels",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【1-44-9-8-1】",
+      "original": "やぞう",
+      "form": "やぞー",
+      "place": "遠州",
+      "volume": "一",
+      "leaf": "１０ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/001/tiff/brsk001-028.tiff/full/full/0/default.jpg",
+      "note": "historical-person-labels",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【1-46-5-4-1】",
+      "original": "泥｛どろ｝ぼう",
+      "form": "どろぼー",
+      "place": "遠江",
+      "volume": "一",
+      "leaf": "１２オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/001/tiff/brsk001-031.tiff/full/full/0/default.jpg",
+      "note": "historical-person-labels",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【1-59-3-2-2】",
+      "original": "ぼゞけたつ",
+      "form": "ぼぼけたつ",
+      "place": "遠江辺",
+      "volume": "一",
+      "leaf": "１４ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/001/tiff/brsk001-036.tiff/full/full/0/default.jpg",
+      "note": "same-form",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【1-61-1-3-1】",
+      "original": "うちめぬき",
+      "form": "うちめぬき",
+      "place": "遠江",
+      "volume": "一",
+      "leaf": "１４ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/001/tiff/brsk001-036.tiff/full/full/0/default.jpg",
+      "note": "body-names-and-landmarks",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【1-61-1-4-1】",
+      "original": "そとめぬき",
+      "form": "そとめぬき",
+      "place": "遠江",
+      "volume": "一",
+      "leaf": "１４ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/001/tiff/brsk001-036.tiff/full/full/0/default.jpg",
+      "note": "body-names-and-landmarks",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【1-62-1-4-1】",
+      "original": "あぐつ",
+      "form": "あぐつ",
+      "place": "遠江",
+      "volume": "一",
+      "leaf": "１４ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/001/tiff/brsk001-036.tiff/full/full/0/default.jpg",
+      "note": "body-names-and-landmarks",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-2-1-3-1】",
+      "original": "あこ",
+      "form": "あこ",
+      "place": "遠江国",
+      "volume": "二",
+      "leaf": "１ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-004.tiff/full/full/0/default.jpg",
+      "note": "words-and-things",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-6-1-1-4】",
+      "original": "よめ",
+      "form": "よめ",
+      "place": "遠江国",
+      "volume": "二",
+      "leaf": "３オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-007.tiff/full/full/0/default.jpg",
+      "note": "taboo-euphemism-and-ritual",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-7-1-6-1】",
+      "original": "いぐらもち",
+      "form": "いぐらもち",
+      "place": "遠江",
+      "volume": "二",
+      "leaf": "３ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-008.tiff/full/full/0/default.jpg",
+      "note": "small-creatures-and-folk-categories",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-13-1-6-1】",
+      "original": "めうちん（「めう」に傍線）",
+      "form": "みょーちん",
+      "place": "遠州",
+      "volume": "二",
+      "leaf": "５オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-011.tiff/full/full/0/default.jpg",
+      "note": "bird-names-and-kikinashi",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-20-1-1-1】",
+      "original": "青ちゝん",
+      "form": "あおちちん",
+      "place": "遠江",
+      "volume": "二",
+      "leaf": "６ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-014.tiff/full/full/0/default.jpg",
+      "note": "bird-names-and-kikinashi",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-21-1-1-1】",
+      "original": "赤ちゝん",
+      "form": "あかちちん",
+      "place": "遠州",
+      "volume": "二",
+      "leaf": "６ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-014.tiff/full/full/0/default.jpg",
+      "note": "bird-names-and-kikinashi",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-21-2-2-1】",
+      "original": "つんと五粒｛いつゝふ｝弐朱まけた",
+      "form": "つんといつつぶにしゅまけた",
+      "place": "遠州",
+      "volume": "二",
+      "leaf": "７オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-015.tiff/full/full/0/default.jpg",
+      "note": "bird-names-and-kikinashi",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-22-1-4-1】",
+      "original": "つぎめ",
+      "form": "つぎめ",
+      "place": "遠江",
+      "volume": "二",
+      "leaf": "７オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-015.tiff/full/full/0/default.jpg",
+      "note": "bird-names-and-kikinashi",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-32-1-4-1】",
+      "original": "麥まき鳥",
+      "form": "むぎまきとり、むぎまきどり",
+      "place": "遠江",
+      "volume": "二",
+      "leaf": "８ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-018.tiff/full/full/0/default.jpg",
+      "note": "bird-names-and-kikinashi",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-36-4-1-1】",
+      "original": "はしり",
+      "form": "はしり",
+      "place": "遠州",
+      "volume": "二",
+      "leaf": "９ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-020.tiff/full/full/0/default.jpg",
+      "note": "fish-names-growth-and-products",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-46-2-1-2】",
+      "original": "水魚｛な｝",
+      "form": "みずな",
+      "place": "遠州辺の所在",
+      "volume": "二",
+      "leaf": "１１ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-024.tiff/full/full/0/default.jpg",
+      "note": "fish-names-growth-and-products",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-53-1-14-1】",
+      "original": "ねんはち",
+      "form": "ねんはち",
+      "place": "遠江",
+      "volume": "二",
+      "leaf": "１３オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-027.tiff/full/full/0/default.jpg",
+      "note": "small-creatures-and-folk-categories",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-53-1-15-1】",
+      "original": "めんぱい",
+      "form": "めんぱい",
+      "place": "遠江",
+      "volume": "二",
+      "leaf": "１３オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-027.tiff/full/full/0/default.jpg",
+      "note": "small-creatures-and-folk-categories",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-122-1-4-1】",
+      "original": "かんなご",
+      "form": "かんなご",
+      "place": "遠江",
+      "volume": "二",
+      "leaf": "２８ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-058.tiff/full/full/0/default.jpg",
+      "note": "small-creatures-and-folk-categories",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-128-1-1-3】",
+      "original": "ふくがへる",
+      "form": "ふくがえる",
+      "place": "（参）遠",
+      "volume": "二",
+      "leaf": "３０オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-061.tiff/full/full/0/default.jpg",
+      "note": "small-creatures-and-folk-categories",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【2-132-1-9-1】",
+      "original": "あめかす",
+      "form": "あめかす",
+      "place": "遠江",
+      "volume": "二",
+      "leaf": "３０ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/002/tiff/brsk002-062.tiff/full/full/0/default.jpg",
+      "note": "small-creatures-and-folk-categories",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【3-1-1-1-1】",
+      "original": "ぼさつ",
+      "form": "ぼさつ",
+      "place": "遠江国天竜の川上",
+      "volume": "三",
+      "leaf": "１オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/003/tiff/brsk003-003.tiff/full/full/0/default.jpg",
+      "note": "taboo-euphemism-and-ritual",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【3-4-1-6-1】",
+      "original": "なんばんたうのきび（「たう」に傍線）",
+      "form": "なんばんとーのきび",
+      "place": "遠州",
+      "volume": "三",
+      "leaf": "１ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/003/tiff/brsk003-004.tiff/full/full/0/default.jpg",
+      "note": "crop-names-and-compounds",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【3-6-1-4-1】",
+      "original": "とうご（「とう」に傍線）",
+      "form": "とーご",
+      "place": "遠江",
+      "volume": "三",
+      "leaf": "２オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/003/tiff/brsk003-005.tiff/full/full/0/default.jpg",
+      "note": "crop-names-and-compounds",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【3-14-2-1-1】",
+      "original": "女芋",
+      "form": "おんないも",
+      "place": "遠州",
+      "volume": "三",
+      "leaf": "３オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/003/tiff/brsk003-007.tiff/full/full/0/default.jpg",
+      "note": "crop-names-and-compounds",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【3-16-1-3-2】",
+      "original": "ぜつぷ",
+      "form": "ぜつぷ、ぜっぷ",
+      "place": "（駿）遠",
+      "volume": "三",
+      "leaf": "３ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/003/tiff/brsk003-008.tiff/full/full/0/default.jpg",
+      "note": "crop-names-and-compounds",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【3-21-1-1-1】",
+      "original": "ちゝぐさ",
+      "form": "ちちぐさ",
+      "place": "遠江国",
+      "volume": "三",
+      "leaf": "４オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/003/tiff/brsk003-009.tiff/full/full/0/default.jpg",
+      "note": "plant-names-and-identification",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【3-23-1-8-2】",
+      "original": "がんまめ",
+      "form": "がんまめ",
+      "place": "遠江",
+      "volume": "三",
+      "leaf": "４ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/003/tiff/brsk003-010.tiff/full/full/0/default.jpg",
+      "note": "crop-names-and-compounds",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【3-32-1-4-4】",
+      "original": "なんばん",
+      "form": "なんばん",
+      "place": "（参）遠",
+      "volume": "三",
+      "leaf": "５ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/003/tiff/brsk003-012.tiff/full/full/0/default.jpg",
+      "note": "crop-names-and-compounds",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【3-126-1-1-1】",
+      "original": "かうしば（「かう」に傍線）",
+      "form": "こーしば",
+      "place": "遠江",
+      "volume": "三",
+      "leaf": "１６ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/003/tiff/brsk003-036.tiff/full/full/0/default.jpg",
+      "note": "plant-names-and-identification",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【3-126-1-2-1】",
+      "original": "かうのき",
+      "form": "こーのき",
+      "place": "遠江",
+      "volume": "三",
+      "leaf": "１６ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/003/tiff/brsk003-036.tiff/full/full/0/default.jpg",
+      "note": "plant-names-and-identification",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【3-128-1-3-1】",
+      "original": "てうせんたばこ（「てう」に傍線）",
+      "form": "ちょーせんたばこ",
+      "place": "遠江",
+      "volume": "三",
+      "leaf": "１７オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/003/tiff/brsk003-037.tiff/full/full/0/default.jpg",
+      "note": "plant-names-and-identification",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【3-131-1-2-1】",
+      "original": "ぎやうぶ",
+      "form": "ぎょーぶ",
+      "place": "遠州",
+      "volume": "三",
+      "leaf": "１７ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/003/tiff/brsk003-038.tiff/full/full/0/default.jpg",
+      "note": "plant-names-and-identification",
+      "disposition": "独立した問いの資料",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【4-4-1-7-1】",
+      "original": "かなこばし",
+      "form": "かなこばし",
+      "place": "遠江",
+      "volume": "四",
+      "leaf": "１ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/004/tiff/brsk004-004.tiff/full/full/0/default.jpg",
+      "note": "farming-and-weather",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【4-7-1-8-1】",
+      "original": "になひぼう",
+      "form": "にないぼー",
+      "place": "遠州",
+      "volume": "四",
+      "leaf": "２オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/004/tiff/brsk004-005.tiff/full/full/0/default.jpg",
+      "note": "tool-names-and-classification",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【4-11-1-2-1】",
+      "original": "いのと",
+      "form": "いのと",
+      "place": "遠江",
+      "volume": "四",
+      "leaf": "２ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/004/tiff/brsk004-006.tiff/full/full/0/default.jpg",
+      "note": "fukude-textile-vocabulary",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【4-14-1-8-1】",
+      "original": "よりこ",
+      "form": "よりこ",
+      "place": "遠江",
+      "volume": "四",
+      "leaf": "３ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/004/tiff/brsk004-008.tiff/full/full/0/default.jpg",
+      "note": "fukude-textile-vocabulary",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【4-14-1-9-1】",
+      "original": "ねぢこ",
+      "form": "ねじこ",
+      "place": "遠江",
+      "volume": "四",
+      "leaf": "３ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/004/tiff/brsk004-008.tiff/full/full/0/default.jpg",
+      "note": "fukude-textile-vocabulary",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【4-21-1-7-1】",
+      "original": "ゆかけ",
+      "form": "ゆかけ",
+      "place": "遠江",
+      "volume": "四",
+      "leaf": "４オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/004/tiff/brsk004-009.tiff/full/full/0/default.jpg",
+      "note": "tool-names-and-classification",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【4-34-1-2-1】",
+      "original": "せんば",
+      "form": "せんば",
+      "place": "遠江",
+      "volume": "四",
+      "leaf": "６ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/004/tiff/brsk004-014.tiff/full/full/0/default.jpg",
+      "note": "tool-names-and-classification",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【4-40-1-2-1】",
+      "original": "とうびん（「とう」に傍線）",
+      "form": "とーびん",
+      "place": "遠江",
+      "volume": "四",
+      "leaf": "７ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/004/tiff/brsk004-016.tiff/full/full/0/default.jpg",
+      "note": "tool-names-and-classification",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【4-52-1-1-2】",
+      "original": "ほせ",
+      "form": "ほせ",
+      "place": "遠江",
+      "volume": "四",
+      "leaf": "９オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/004/tiff/brsk004-019.tiff/full/full/0/default.jpg",
+      "note": "tool-names-and-classification",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【4-69-5-2-1】",
+      "original": "やな",
+      "form": "やな",
+      "place": "遠江",
+      "volume": "四",
+      "leaf": "１１オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/004/tiff/brsk004-023.tiff/full/full/0/default.jpg",
+      "note": "tool-names-and-classification",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【5-1-1-9-3】",
+      "original": "でこ",
+      "form": "でこ",
+      "place": "遠江",
+      "volume": "五",
+      "leaf": "１ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/005/tiff/brsk005-004.tiff/full/full/0/default.jpg",
+      "note": "adjective-and-nominal-predicates",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【5-2-1-12-1】",
+      "original": "しごくだま",
+      "form": "しごくだま",
+      "place": "遠江",
+      "volume": "五",
+      "leaf": "１ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/005/tiff/brsk005-004.tiff/full/full/0/default.jpg",
+      "note": "adjective-and-nominal-predicates",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【5-9-1-5-2】",
+      "original": "をめる",
+      "form": "おめる",
+      "place": "遠州辺",
+      "volume": "五",
+      "leaf": "３オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/005/tiff/brsk005-007.tiff/full/full/0/default.jpg",
+      "note": "same-form",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【5-15-1-6-1】",
+      "original": "やにる",
+      "form": "やにる",
+      "place": "遠江",
+      "volume": "五",
+      "leaf": "５オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/005/tiff/brsk005-011.tiff/full/full/0/default.jpg",
+      "note": "same-form",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【5-21-1-4-1】",
+      "original": "をそおたい",
+      "form": "おそーたい",
+      "place": "遠江",
+      "volume": "五",
+      "leaf": "６オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/005/tiff/brsk005-013.tiff/full/full/0/default.jpg",
+      "note": "etymology-and-evidence",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【5-22-2-1-1】",
+      "original": "けゝねつ",
+      "form": "けけねつ",
+      "place": "遠江",
+      "volume": "五",
+      "leaf": "６オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/005/tiff/brsk005-013.tiff/full/full/0/default.jpg",
+      "note": "sound-symbols-and-kana",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【5-25-4-1-2】",
+      "original": "ゆかず",
+      "form": "ゆかず",
+      "place": "遠江",
+      "volume": "五",
+      "leaf": "７オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/005/tiff/brsk005-015.tiff/full/full/0/default.jpg",
+      "note": "invitation-and-intention",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【5-25-5-1-2】",
+      "original": "馬をやらず",
+      "form": "うまをやらず",
+      "place": "遠江",
+      "volume": "五",
+      "leaf": "７オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/005/tiff/brsk005-015.tiff/full/full/0/default.jpg",
+      "note": "invitation-and-intention",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【5-25-6-1-2】",
+      "original": "駕籠をやらず",
+      "form": "かごをやらず",
+      "place": "遠江",
+      "volume": "五",
+      "leaf": "７オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/005/tiff/brsk005-015.tiff/full/full/0/default.jpg",
+      "note": "invitation-and-intention",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【5-26-1-3-1】",
+      "original": "よかんな",
+      "form": "よかんな",
+      "place": "遠州",
+      "volume": "五",
+      "leaf": "７オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/005/tiff/brsk005-015.tiff/full/full/0/default.jpg",
+      "note": "adjective-and-nominal-predicates",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【5-39-1-4-4】",
+      "original": "あづくみ",
+      "form": "あずくみ",
+      "place": "遠江",
+      "volume": "五",
+      "leaf": "１０オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/005/tiff/brsk005-021.tiff/full/full/0/default.jpg",
+      "note": "house-space-and-actions",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【5-41-1-3-1】",
+      "original": "しやうくもない（「しや」に傍線）",
+      "form": "しゃーくもない、しょーくもない",
+      "place": "遠州",
+      "volume": "五",
+      "leaf": "１０ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/005/tiff/brsk005-022.tiff/full/full/0/default.jpg",
+      "note": "negation-paradigms",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【5-87-1-3-2】",
+      "original": "かこくさい",
+      "form": "かこくさい",
+      "place": "遠江辺",
+      "volume": "五",
+      "leaf": "１７ウ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/005/tiff/brsk005-036.tiff/full/full/0/default.jpg",
+      "note": "taste-smell-and-context",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    },
+    {
+      "id": "【5-102-1-17-3】",
+      "original": "ズ",
+      "form": "ず",
+      "place": "（尾参）遠（駿甲信）",
+      "volume": "五",
+      "leaf": "２０オ",
+      "image": "https://dglb01.ninjal.ac.jp/iiif/buturuisyoko/005/tiff/brsk005-041.tiff/full/full/0/default.jpg",
+      "note": "invitation-and-intention",
+      "disposition": "既存の問いへ補足",
+      "reason": "同一の語を一ページずつに分割せず、指示対象・文法・資料条件を分析する対応先へまとめる。原表記・地名を保持。"
+    }
+  ],
+  "unprocessed_feasible_candidates_in_reviewed_scope": [],
+  "open_evidence_gaps": [
+    "井上2022と佐野・菅野2026の本文、FIT2024の全文は取得未成功で未読",
+    "未収集の遠州の自然談話・同意付き音声・地区別世代別調査",
+    "未取得の地方方言集・原著を読んだとは扱わない"
+  ],
+  "completion_basis": "追加本数・時間・1回分の上限ではなく、確認した資料と論点の全件割当、公開・検査・本番確認・サイトマップ再送の実施状況を記録する。全遠州研究の終了や今後の追加不能は主張しない。"
+}

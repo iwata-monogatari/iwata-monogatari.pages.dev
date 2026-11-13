@@ -103,3 +103,13 @@
 - 宇田2017は1人を中心に8談話、各20分文字化の個人事例。峯尾・谷口2023は予備70名とウェブ1,770名を区別し、用法の境界の曖昧さを保持。後者は学会発表原稿で、査読論文と表示しない。図・会話全文・原PDFを再配布しない。別のFIT原稿の取得403を本文確認へ言い換えない。
 - 既存の本文・出典・公開日と写真を保持し、重複する証拠は#language-supplementへ追加。新規ページの写真は既存の確認済み実写と同じ配置・利用条件。知識記事1322本や学習182語・546作例等を新しいノートの数で水増ししない。
 - 正本はC:/Users/Owner/Documents/Codex/2026-11-11/https-iwata-monogatari-net-fga-internal-2/outputs/enshu-language-research/verification.json。source-review.json、candidate-review.json、content-audit.json、差分、commit・deploy・本番・GSC証拠を再読する。既存の写真生成と原記録訂正を保護。共有生成物に関わる次の作業も本書を参照し、無関係な自動実行の範囲・予定・通知を変更せず、新規監視は作らない。
+
+
+## 2026-11-13 新しい論文・地域資料の拡充
+
+- 生成元は tools/enshu_research_new_sources.py、enshu_research_new_supplements.py、enshu_research_new_coverage.py。新設12・既存28補足、計97。数は結果であり完了基準ではない。元85本の本文・出典・公開日・実写写真を保持。
+- 2026年のケ・音声技術・歴史方言DB等と地域資料を、既掲載の問いへ照合。BRSK_202604の全3,502行から原地名／整理地名で遠江関係60行を抽出し、全5巻47画像・翻字の所在と掲載先を対応させた。注記だけで出た和泉・摂津2行は除外。data/enshu-historical-records.json、data/enshu-new-source-review.jsonが生成元。公開台帳は downloads/enshu-research/new-source-evidence.json、目次 #new-source-review。
+- 新設は身体語、年始の言い換え、鳥の聞きなし、生物名と分類、植物同定、地図の精度、講と待ち、伝説再話、ケの認識と時間、AI評価、対訳音声、病名の語源仮説。語ごとの薄いページ分割をしない。重なる道具・織物・作物・呼称・文法の資料は既存へ補足。
+- 原本・研究者の推定・編集部の分析を区別。ケ／井川資料の表と本文の不整合を無批判に一般化しない。AIのBLEUを正答率としない。近世国名の座標を調査地点としない。学会原稿・プレプリントを査読済み論文と表示しない。
+- 静岡大学井上2022と筑波大学佐野・菅野2026の本文はメンテナンス、FIT2024本文は取得エラーで未読。公式抄録を全文確認と混同しない。図書館の一部PDFは公開テキストを確認したが原画像取得は未成功。未読原著と未収集音声を解決済みにせず、新しい証拠が得られた場合に再検討する。
+- 作業・公開・本番検証の証拠の正本は ../../outputs/enshu-new-sources/verification.json（公開用コピー外のROOT基準 outputs/enshu-new-sources）。source-review.json、candidate-review.json、content-audit.json、commit.json、deployment.json、production-browser.json、gsc.jsonを照合する。既存学習データ・写真レイアウト・公開経路は保持。関連する既存の編集可能なローカル自動実行は前回確認時に該当なし。新規監視や予定・権限の拡張をしない。

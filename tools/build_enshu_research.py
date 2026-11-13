@@ -11,6 +11,9 @@ from enshu_research_extended import EXTENDED_SOURCES, make_extended_notes, augme
 from enshu_research_coverage import build_coverage
 from enshu_photo_layout import apply_photos
 from enshu_research_language import LANGUAGE_SOURCES, make_language_notes, augment_language_notes, language_coverage
+from enshu_research_new_sources import NEW_SOURCES, make_new_source_notes
+from enshu_research_new_supplements import COMPARATIVE_SOURCES, augment_new_source_notes
+from enshu_research_new_coverage import new_source_coverage
 
 R=Path(__file__).resolve().parents[1]
 E=lambda value:html.escape(str(value),quote=True)
@@ -41,6 +44,8 @@ SOURCES.update(HONORIFIC_SOURCES)
 SOURCES.update(KINSHIP_SOURCES)
 SOURCES.update(EXTENDED_SOURCES)
 SOURCES.update(LANGUAGE_SOURCES)
+SOURCES.update(NEW_SOURCES)
+SOURCES.update(COMPARATIVE_SOURCES)
 
 def table(head,rows,caption='比較のための資料表'):
     return '<p class="research-table-hint">表は横にスクロールできます →</p><div class="seminar-table" tabindex="0" role="region" aria-label="'+E(caption)+'"><table><caption>'+E(caption)+'</caption><thead><tr>'+''.join(f'<th scope="col">{E(h)}</th>' for h in head)+'</tr></thead><tbody>'+''.join('<tr>'+''.join(f'<th scope="row">{v}</th>' if i==0 else f'<td>{v}</td>' for i,v in enumerate(row))+'</tr>' for row in rows)+'</tbody></table></div>'
@@ -75,11 +80,15 @@ supplements=augment_existing_notes(notes,table,gunshi,cite)
 notes.extend(make_language_notes(table,responses,cite))
 language_supplements=augment_language_notes(notes,table,responses,cite)
 for slug,headings in language_supplements.items():supplements.setdefault(slug,[]).extend(headings)
+notes.extend(make_new_source_notes(table,responses,cite))
+new_source_supplements=augment_new_source_notes(notes,table,responses,cite)
+for slug,headings in new_source_supplements.items():supplements.setdefault(slug,[]).extend(headings)
 assert len({n['slug'] for n in notes})==len(notes)
 for n in notes:
     n['published']='2026-11-12' if n['slug'] in original_slugs else '2026-11-13'
 kin_count=sum(n.get('group')=='kinship' for n in notes)
 language_count=sum(n.get('group')=='language' for n in notes)
+new_source_count=sum(n.get('group')=='new-sources' for n in notes)
 sound_count=sum(n.get('group')=='sound' for n in notes)
 variation_count=sum(n.get('group')=='variation' for n in notes)
 life_count=sum(n.get('group')=='livelihood' for n in notes)
@@ -118,11 +127,17 @@ body=f'''<div class="breadcrumbs"><a href="/enshu/">遠州弁の学び舎</a> �
 coverage_html,coverage_json=build_coverage(notes,supplements,table,cite)
 language_html,language_json=language_coverage(notes,table)
 coverage_html+=language_html
+new_source_html,new_source_json=new_source_coverage(notes,table)
+coverage_html+=new_source_html
 coverage_ledger=json.loads(coverage_json)
 coverage_ledger["language_review"]={"scope":"FPJD磐田市1地点の全211設問と談話・多義性の公開研究を、既掲載の問いと照合。原著未読・音声未収集の課題は別に保持。","details":"/downloads/enshu-research/language-evidence.json"}
 coverage_json=(json.dumps(coverage_ledger,ensure_ascii=False,indent=2)+"\n").encode("utf8")
 body=body.replace('<section id="lab"',coverage_html+'<section id="lab"',1).replace('<a href="#lab">資料を集計する</a>','<a href="#coverage">調査した範囲と未解決点</a><a href="#lab">資料を集計する</a>',1)
 outputs={R/'enshu/research/index.html':shell(f'遠州弁研究ノート{len(notes)}本｜文法・語源・民俗・生業・発音とアクセント',f'遠州弁を{len(notes)}の問いから深く読む研究解説。否定・条件・可能・勧誘、みるいの語史、食事・子育て・農業・住まい・民具、地域差と音声。原資料・調査条件・比較表・小演習と資料の集計室。',BASE,body,script=True,published=DATE,modified='2026-11-13'),R/'downloads/enshu-research/topic-evidence.json':coverage_json,R/'downloads/enshu-research/language-evidence.json':language_json}
+body=body.replace('<a href="#kinship">親族・人の呼び方',f'<a href="#new-sources">新資料から深く読む <b>{new_source_count}本</b></a><a href="#kinship">親族・人の呼び方',1)
+body=body.replace('<div class="research-note-group" id="kinship">',f'<div class="research-note-group" id="new-sources"><h3>新しい研究と、近世・地域の原資料を読む <small>{new_source_count}本</small></h3><p>2026年の文法・音声技術研究、4月公開の歴史方言DB、磐田の地域資料を、既掲載の問いと照合しました。</p>{cards([n for n in notes if n.get("group")=="new-sources"])}</div><div class="research-note-group" id="kinship">',1)
+outputs[R/'enshu/research/index.html']=shell(f'遠州弁研究ノート{len(notes)}本｜文法・語源・民俗・生業・発音とアクセント',f'遠州弁を{len(notes)}の問いから深く読む研究解説。近世語彙、ケの文法、鳥の聞きなし、民俗信仰、伝説、音声とAIまで。原資料・調査条件・比較表・小演習と写真を掲載。',BASE,body,script=True,published=DATE,modified='2026-11-13')
+outputs[R/'downloads/enshu-research/new-source-evidence.json']=new_source_json
 
 for i,n in enumerate(notes):
     headings=re.findall(r'<section id="([^"]+)"><h2>([^<]+)</h2>',n['body'])
