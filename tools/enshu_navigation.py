@@ -80,11 +80,12 @@ def split_pages(root, result, courses, lessons, practice, explorer, scenes, chec
     courses = external_activity_links(courses, scenes)
     courses = re.sub(r'<div class="course-view-controls">.*?</div>', '', courses, flags=re.S)
     outputs['enshu/courses/index.html'] = document('/enshu/courses/', '場面から読む｜遠州弁の12コース', '暮らしの場面を選び、ことばの意味と24の会話を読む。各場面は独立したページで開きます。', courses)
-    for scene in scenes:
+    for number, scene in enumerate(scenes):
         sid = scene['id']
         body = re.search(r'<section id="scene-'+re.escape(sid)+r'".*?</section>', lessons, re.S).group(0)
         body = external_activity_links(body, scenes)
-        outputs[scene_path(sid).lstrip('/')+'index.html'] = document(scene_path(sid), scene['title']+'の遠州弁', '意味・会話・資料を読み、気になることばやクイズへ進めます。', body)
+        from enshu_course_layout import course_layout
+        outputs[scene_path(sid).lstrip('/')+'index.html'] = course_layout(document(scene_path(sid), scene['title']+'の遠州弁', '意味・会話・資料を読み、気になることばやクイズへ進めます。', body),scene,number)
     back = '<p class="activity-return"><a id="quiz-course-return" href="/enshu/courses/">← 場面を選び直す</a></p>'
     practice = practice.replace('場面別の意味と作例、絵札の最初の一語はそのまま読めます。', '場面別ページと「一語ずつ探す」では、意味と作例を読めます。')
     from enshu_quiz_pages import quiz_pages
