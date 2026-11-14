@@ -46,3 +46,8 @@
 検証正本：`C:/Users/Owner/Documents/Codex/2026-11-11/https-iwata-monogatari-net-fga-internal-2/outputs/enshu-more/verification.json`。原画像照合は同フォルダー `source-review.json`、内容・内部リンク・保持対象hashは `content-audit.json`。学術資料のPDFは `work/seminar-sources/` に保存し、必要箇所をレンダリングして確認。研究PDFをサイトへ再配布しない。
 
 公開・deploy・本番確認の実際の状態はverification.jsonを再読して照合する。検索流入・順位の改善は未実証。既存作業範囲・予定を広げたり、新たな監視を作ったりしない。同じ48語・講座・履歴を重複追加しない。
+
+## 2026-11-14：各講座の磐田写真・共通案内を統一
+- 個別8講座に磐田の既存許諾済み実写真を導入と演習前の2か所へ配置。元からあった写真は保持して演習前へ移動し、撮影地・作者・出典・ライセンスを実際の掲載写真へ整合。写真は採録地点・調査や演習の実施場所を示すものではないと明示。画像原本を改変しない。
+- 上下の共通ミドルヘッダーは navigation('/enshu/seminar/') へ統一し、8講の一覧・前後講座の案内を上下へ配置。既存本文末尾の一覧リンクも同じ「← 8講の一覧へ戻る」へそろえる。本文・比較表・8演習と回答・用語集・出典と確認範囲は保持。講座一覧そのものは変更しない。
+- 生成元 tools/enshu_seminar_pages.py / tools/build_enshu_seminar.py、assets/css/enshu-seminar-layout.css。写真を重ねて挿入せず、旧案内へ巻き戻さない。公開・本番・保存証拠の実際の結果は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-seminar-photos/verification.json を参照。既存自動実行の範囲・予定・状態・通知条件を変更せず、新規監視なし。
