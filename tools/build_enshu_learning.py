@@ -50,7 +50,7 @@ for target_url in ('/c006','/c008'):
  before=target.read_text(encoding='utf8');after=middle_header(before,target_url)
  if '--check' in sys.argv:assert before==after, 'Regenerate middle header: '+target_url
  elif after!=before:target.write_text(after,encoding='utf8')
-result=split_pages(R,result,course_section,sections,practice,explorer_section(learning,by),learning['scenes'],'--check' in sys.argv)['enshu/index.html']
+result=split_pages(R,result,course_section,sections,practice,explorer_section(learning,by),learning['scenes'],'--check' in sys.argv,entries=learning['entries'])['enshu/index.html']
 if '--check' in sys.argv:
  assert serialized==p.read_text(encoding='utf-8') and result==original,'Run tools/build_enshu_learning.py'
 else:

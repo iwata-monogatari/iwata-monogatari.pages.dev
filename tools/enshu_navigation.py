@@ -46,6 +46,7 @@ def external_activity_links(markup, scenes):
         return tag.replace('href="#practice"', 'href="/enshu/practice/?'+html.escape(urlencode(params), quote=True)+'"')
     markup = re.sub(r'<a\b[^>]*data-quiz-scene="[^"]+"[^>]*>', quiz, markup)
     markup = markup.replace('/enshu/?word=', '/enshu/words/?word=').replace('#cards"', '"')
+    markup = re.sub(r'/enshu/words/\?word=([a-z][a-z0-9-]*)',r'/enshu/words/\1/',markup)
     markup = markup.replace('href="#practice"', 'href="/enshu/practice/"').replace('href="#courses"', 'href="/enshu/courses/"')
     for scene in scenes:
         markup = markup.replace(f'href="#scene-{scene["id"]}"', f'href="{scene_path(scene["id"])}"')
@@ -53,7 +54,7 @@ def external_activity_links(markup, scenes):
     return markup
 
 
-def split_pages(root, result, courses, lessons, practice, explorer, scenes, check=False):
+def split_pages(root, result, courses, lessons, practice, explorer, scenes, check=False, entries=None):
     head = re.search(r'<head>(.*?)</head>', result, re.S).group(1)
     head = re.sub(r'<script\b[^>]*enshu-academy\.js[^>]*></script>', '', head)
     head = re.sub(r'<script\b[^>]*enshu-legacy-navigation\.js[^>]*></script>', '', head)
@@ -70,7 +71,7 @@ def split_pages(root, result, courses, lessons, practice, explorer, scenes, chec
             h = re.sub(r'<meta '+attr+'="'+key+r'" content="[^"]*">', '<meta '+attr+'="'+key+'" content="'+html.escape(value, quote=True)+'">', h)
         h = re.sub(r'<link rel="canonical" href="[^"]*">', '<link rel="canonical" href="https://iwata-monogatari.net'+path+'">', h)
         if script:
-            h += '<script defer src="/assets/js/enshu-academy.js?v=20261114-pages"></script>'
+            h += '<script defer src="/assets/js/enshu-academy.js?v=20261114-word-pages"></script>'
         top = '<header class="academy-section-heading"><p>遠州弁の学び舎</p><h1>'+html.escape(title)+'</h1><p>'+html.escape(description)+'</p></header>'
         return '<!doctype html><html lang="ja"><head>'+h+'</head><body><header class="gh-site"></header><main class="academy">'+navigation(path)+top+content+notice+sources+navigation(path)+'</main><footer class="im-foot"></footer></body></html>\n'
 
@@ -86,7 +87,8 @@ def split_pages(root, result, courses, lessons, practice, explorer, scenes, chec
     back = '<p class="activity-return"><a id="quiz-course-return" href="/enshu/courses/">← 場面を選び直す</a></p>'
     practice = practice.replace('場面別の意味と作例、絵札の最初の一語はそのまま読めます。', '場面別ページと「一語ずつ探す」では、意味と作例を読めます。')
     outputs['enshu/practice/index.html'] = document('/enshu/practice/', '遠州弁クイズ｜3問から試す', '場面・語の分類・出題方向を選んで練習。答えたあとは、作例と資料で確かめます。', back+practice, True)
-    outputs['enshu/words/index.html'] = document('/enshu/words/', '一語ずつ探す｜遠州弁の絵札と資料語', '182の学習語から、意味・3つの作例・使い分け・出典へ進む。', external_activity_links(explorer, scenes), True)
+    from enshu_word_pages import word_pages
+    outputs.update(word_pages(root,document('/enshu/words/', '一語ずつ探す｜遠州弁の絵札と資料語', '182の学習語から、意味・3つの作例・使い分け・出典へ進む。', external_activity_links(explorer, scenes), True),entries,scenes))
 
     # The entrance stays an entrance; no duplicate lesson, quiz or word widgets.
     landing = re.sub(r'<!-- course-lessons:start -->.*?<!-- course-lessons:end -->', '', result, flags=re.S)

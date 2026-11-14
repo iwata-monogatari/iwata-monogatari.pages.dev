@@ -94,3 +94,9 @@
 - 各頁に共通ミドルヘッダー、一覧への戻り、前後テーマ、既存許諾済みの磐田実写真2点（撮影地・作者・出典・ライセンス付き）を配置。写真を方言の採録地点の証拠と扱わない。tools/enshu_compare_pages.py を tools/build_enshu_corpus.py から生成し、旧単一頁へ戻さない。
 - 元の24テーマの分類データ・380記録・辞典・研究ノート・公開日を保持。構造分割の機能頁を新着・知識記事数へ重複計上しない。公開と検証の実際の結果は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-compare-pagination/verification.json を参照。既存自動実行の範囲・予定・状態・通知条件は変更しない。
 - 急須・きせる・畚のテーマID tools は保持し、公開URLのみ /enshu/compare/household-tools/ とする。tools というパス要素は既存サイトの生成物除外に該当するため。旧 #compare-tools もこの正規URLへ引き継ぐ。
+
+## 2026-11-14：学習語182語を個別ページへ分割
+- /enshu/words/ は182語の一覧と語・意味・作例検索、場面・辞典134語/歴史資料48語の絞り込みを保持。各 /enshu/words/<既存語ID>/ に意味・3作例と標準語・使い分け・個別資料・元辞典/原記録へのリンク、既存の絵札/原画像を配置。共通ミドルヘッダー、一覧・検索への戻り、前後の語、既存許諾済み磐田実写真（撮影地・作者・出典・ライセンス付き）を付ける。写真は語の採録地の証拠と扱わない。
+- 正本 data/enshu-learning.json 等の182語・546作例・原注・辞典・資料・研究ノートを変更しない。作例は編集部教材であり、発話引用・当時の会話復元・全域使用の証明へ読み替えない。資料のない語へ出典を創作しない。
+- tools/enshu_word_pages.py を tools/enshu_navigation.py / tools/build_enshu_learning.py から再生成。旧 /enshu/words/?word=<ID> は既知182IDのみ個別URLへ引き継ぐ。場面・クイズからの新規リンクは個別URLへ。未知IDは推測して転送しない。機能頁を知識記事・新着へ重複計上せず、旧単一ウィジェットへ巻き戻さない。
+- 公開・検証の実際の状態は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-word-pagination/verification.json を参照。既存自動実行の範囲・予定・状態・通知条件を変更せず、新規監視は作成しない。

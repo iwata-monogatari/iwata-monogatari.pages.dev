@@ -58,7 +58,7 @@
     $('quiz-board').hidden=true;const summary=$('quiz-summary');summary.replaceChildren();
     const title=node('h3',`${round.length}問をひと回り。`);title.tabIndex=-1;summary.append(title,node('p',`正解 ${score} / ${round.length}問。気になったことばを、絵札や資料でもう一度。`));
     const list=node('ul','');list.className='quiz-word-review';const wrongIds=new Set(missed.map(e=>e.id));
-    for(const e of round){const li=node('li',''),a=node('a','');a.href='/enshu/words/?word='+e.id;a.dataset.exploreWord=e.id;a.append(node('span',wrongIds.has(e.id)?'↻ もう一度':'✓ 確かめた'),node('strong',e.w),node('small',brief(e)));li.append(a);list.append(li);}summary.append(list);
+    for(const e of round){const li=node('li',''),a=node('a','');a.href='/enshu/words/'+e.id+'/';a.dataset.exploreWord=e.id;a.append(node('span',wrongIds.has(e.id)?'↻ もう一度':'✓ 確かめた'),node('strong',e.w),node('small',brief(e)));li.append(a);list.append(li);}summary.append(list);
     const controls=node('div','');controls.className='quiz-result-actions';const retryEntries=[...missed],samePool=[...lastPool],limit=lastLimit,direction=reverse;
     if(retryEntries.length){const retry=node('button',`間違えた${retryEntries.length}語だけ、もう一度`);retry.type='button';retry.onclick=()=>beginQuiz(retryEntries,retryEntries.length,true,direction);controls.append(retry);}
     const again=node('button','同じ範囲でもうひと回り');again.type='button';again.onclick=()=>beginQuiz(samePool,limit,false,direction);controls.append(again);
