@@ -39,7 +39,10 @@ class AcademyPages(unittest.TestCase):
     def test_entrance_opens_seven_different_pages(self):
         text=(ROOT/'enshu/index.html').read_text(encoding='utf-8')
         hero=re.search(r'<header class="academy-hero">(.*?)</header>',text,re.S)[1]
-        urls=re.findall(r'<a href="([^"]+)"',hero)
+        self.assertNotIn('<nav>',hero)
+        self.assertNotIn('class="academy-paths"',text)
+        choices=re.search(r'<section class="academy-destinations">(.*?)</section>',text,re.S)[1]
+        urls=re.findall(r'<a href="([^"]+)"',choices)
         self.assertEqual(['/enshu/courses/','/enshu/practice/','/enshu/words/','/enshu/seminar/','/enshu/research/','/c006','/c008'],urls)
         for widget in ('quiz-start','flash-next','course-lessons'):
             self.assertNotIn('id="'+widget+'"',text)

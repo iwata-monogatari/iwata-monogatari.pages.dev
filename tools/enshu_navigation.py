@@ -86,9 +86,12 @@ def split_pages(root, result, courses, lessons, practice, explorer, scenes, chec
     if 'class="academy-destinations"' not in landing:
         landing = landing.replace('</header>\n', '</header>'+choices+'\n', 1)
     landing = re.sub(r'(<section class="academy-destinations">).*?(</section>)', lambda _: choices, landing, flags=re.S)
+    # The entrance uses its seven destination cards as the primary chooser.
+    landing = re.sub(r'(<header class="academy-hero">.*?)<nav>.*?</nav>', r'\1', landing, count=1, flags=re.S)
+    landing = re.sub(r'<nav class="academy-paths".*?</nav>', '', landing, flags=re.S)
     legacy = '<noscript><p>以前のページ内リンクをご利用の方も、上の学び方から各ページへ進めます。</p></noscript>'
     if legacy not in landing:
-        landing = landing.replace('</main>', legacy+navigation()+'</main>')
+        landing = landing.replace('</main>', legacy+'</main>')
     outputs['enshu/index.html'] = landing
     for path, markup in outputs.items():
         target = root/path
