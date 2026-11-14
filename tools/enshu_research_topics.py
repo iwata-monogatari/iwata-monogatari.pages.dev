@@ -3,6 +3,8 @@ import html
 import json
 import re
 from enshu_navigation import navigation
+from enshu_photo_layout import figure,credits as photo_credits
+from enshu_records_pages import PHOTO_KEYS
 
 BASE='/enshu/research/'
 TOPICS=['systematic','regional','new-sources','kinship','livelihood','honorific','festival','language','grammar','word-history','folk-life','variation','sound','foundations']
@@ -52,13 +54,17 @@ def split_research_topics(root, original, check=False):
         cards=re.findall(r'<a href="(/enshu/research/[^"#]+/)"><div class="research-card-top">',groups[key])
         schema={'@context':'https://schema.org','@type':'CollectionPage','name':title,'description':description,'url':url,'inLanguage':'ja','isPartOf':{'@type':'CollectionPage','url':'https://iwata-monogatari.net'+BASE},'hasPart':[{'@type':'Article','url':'https://iwata-monogatari.net'+c} for c in cards]}
         h=re.sub(r'<script type="application/ld\+json">.*?</script>','<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False)+'</script>',h,flags=re.S)
-        links='<nav class="academy-paths" aria-label="研究分類の前後"><a href="'+BASE+'#notebooks">← 研究ノートの分類一覧へ</a><div>'
+        h+='<link rel="stylesheet" href="/assets/css/enshu-research-topic-layout.css?v=20261114">'
+        links='<nav class="research-topic-return" aria-label="研究分類の前後"><a href="'+BASE+'#notebooks">← 研究一覧へ戻る</a><div>'
         for j,word in [(i-1,'前の分類'),(i+1,'次の分類')]:
             if 0<=j<len(TOPICS):
                 other=TOPICS[j];links+='<a href="'+path(other)+'">'+word+'：'+re.sub('<[^>]+>','',labels[other])+'</a>'
         links+='</div></nav>'
         lower='<nav class="research-nav" aria-label="調査と資料"><a href="'+BASE+'#coverage">調査した範囲と未解決点</a><a href="'+BASE+'#lab">資料を集計する</a><a href="'+BASE+'#sources">文献と確認範囲</a></nav>'
-        body=navigation()+ '<div class="breadcrumbs"><a href="/enshu/">学び舎</a> ／ <a href="'+BASE+'">研究ノート・集計室</a> ／ '+html.escape(title)+'</div><header class="academy-section-heading"><p>遠州弁研究ノート</p><h1>'+html.escape(title)+'</h1><p>'+html.escape(label)+' ／ 既存ノートを分類から読む。</p></header>'+links+groups[key]+links+lower+credits+navigation()
+        a=PHOTO_KEYS[i%len(PHOTO_KEYS)];b=PHOTO_KEYS[(i+5)%len(PHOTO_KEYS)]
+        used=[a,b]+re.findall(r'data-iwata-photo="([^"]+)"',groups[key])
+        hero='<header class="academy-section-heading research-topic-hero"><div><p>遠州弁研究ノート</p><h1>'+html.escape(title)+'</h1><p>'+html.escape(label)+' ／ 既存ノートを分類から読む。</p></div>'+figure(a)+'</header>'
+        body=navigation(BASE)+ '<div class="breadcrumbs"><a href="/enshu/">学び舎</a> ／ <a href="'+BASE+'">研究ノート・集計室</a> ／ '+html.escape(title)+'</div>'+hero+links+'<p class="research-topic-photo-policy">写真は磐田の風景です。方言の採録地点や、各研究の調査を実施した場所を示すものではありません。</p>'+groups[key]+figure(b,'middle')+links+lower+photo_credits(used)+navigation(BASE)
         outputs['enshu/research/topics/'+key+'/index.html']='<!doctype html><html lang="ja"><head>'+h+'</head>'+before_main+'<main class="academy seminar research" id="research-content">'+body+'</main>'+footer
     index=original.replace(topic_nav,new_nav)
     for group in groups.values():index=index.replace(group,'',1)

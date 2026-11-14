@@ -147,3 +147,8 @@
 ## 2026-11-14 各研究ノートのミドルヘッダーと所属分類への戻り
 - 既存全研究ノートに学び舎への戻りと7入口の共通ミドルヘッダーを追加。直下に、当該ノートを掲載する元の分類ページ /enshu/research/topics/<分類ID>/ へ戻る静的リンクを置く。生成元tools/build_enshu_research.py、middle_header()、note_category_return()を保持し、所属は元のnotes.group（基礎6本はfoundations）と分類カードで照合する。
 - 記事本文・資料・注記・写真・公開日・URL・既存目次を保持。全ノートを研究トップへの戻りだけに戻さず、トップ・14分類・集計室の構造も保持。検証・公開・本番確認の実際の結果は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-research-note-header/verification.json を参照。既存自動実行の範囲・予定・状態・通知条件を変更せず、新しい監視を作らない。
+
+## 2026-11-14：研究分類14頁の磐田写真・案内を統一
+- /enshu/research/topics/<分類ID>/ の14頁に、導入とカード一覧末尾の2か所へ既存許諾済み磐田写真を配置。撮影地・作者・出典・ライセンスと、採録地点/研究調査の場所を示すものではない注記を保持。既存のカード写真と原本画像は改変しない。
+- 共通ミドルヘッダーを navigation('/enshu/research/') とし、研究一覧(#notebooks)へ戻る案内・前後分類案内を上下に統一。各分類の原文・カード・124研究ノートへのURLと所属を保持。調査範囲・集計室・文献への下部案内も保持。研究一覧・集計室・各ノート・ダウンロードは変更しない。
+- tools/enshu_research_topics.py を tools/build_enshu_research.py から生成。写真や戻り案内を重複挿入せず、旧分類構造へ巻き戻さない。機能頁を知識記事数・新着へ重複加算しない。公開・本番・検証の実際の結果は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-research-topic-photos/verification.json を参照。既存自動実行の範囲・予定・状態・通知条件は変更せず、新規監視なし。
