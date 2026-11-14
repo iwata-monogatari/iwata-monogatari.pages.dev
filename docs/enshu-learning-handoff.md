@@ -111,3 +111,8 @@
 - 共通ミドルヘッダーを全12頁で同じnavigation('/enshu/courses/')とし、上下の一覧・同じ場面のクイズ・一語ずつ探す案内を統一。既存末尾の一覧リンクも同じ文言へ整合。場面一覧そのものと他の学習頁は保持。
 - tools/enshu_course_layout.py を tools/enshu_navigation.py / tools/build_enshu_learning.py から適用。実装済み写真を再挿入したり旧レイアウトへ戻さない。元データ・本文・24会話・546作例・出典を再制作せず、機能頁の知識記事数への加算・公開履歴重複をしない。
 - 実際の公開・本番・検証は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-course-photos/verification.json を参照。既存自動実行の予定・範囲・状態・通知条件を変更せず、新しい監視を作らない。
+
+## 2026-11-14：辞典c006の磐田写真・学び舎案内を統一
+- /c006 の導入に磐田・天平通り、ページ下部に掛塚つるや酒店の既存許諾済み実写真を配置。撮影地・作者・出典・ライセンスと、語の使用地点/採録現場ではない注記を保持。元の絵札と創作画注記は保持し、実写へ置き換えない。
+- 上部の共通ミドルヘッダーを保持し、下部も同じ navigation('/c006') と「← 学び舎の入口へ」へ統一。元の地域回答・134語の意味/402作例/解説/出典・絵札・文法/もっと知る・更新履歴・検索/分類/五十音/絵札表示/拡大のスクリプトは変更しない。
+- tools/enshu_dictionary_layout.py を tools/build_enshu_learning.py からc006だけに適用し、node tools/build_c006_dictionary.mjs の生成領域は保持。写真の二重挿入や元辞典の再制作をしない。公開・本番・検証の実際の結果は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-dictionary-photos/verification.json を参照。既存自動実行の範囲・予定・状態・通知条件は変更せず、新規監視なし。
