@@ -241,6 +241,9 @@ downloads={'records.csv':csv_bytes,'reproduce.py':replay.encode('utf8'),'README.
 for name,data in downloads.items():outputs[R/'downloads/enshu-research'/name]=data
 outputs[R/'data/enshu-research-index.json']=(json.dumps({'version':DATE,'notes':[{k:n[k] for k in ['slug','field','title','deck','finding']} for n in notes]},ensure_ascii=False,indent=2)+'\n').encode('utf8')
 for path,value in outputs.items():
+    if path==R/'enshu/research/index.html':
+        from enshu_navigation import middle_header
+        value=middle_header(value,BASE)
     if path.suffix=='.html':value=apply_photos(value,'/'+path.parent.relative_to(R).as_posix()+'/')
     data=value.encode('utf8') if isinstance(value,str) else value
     if '--check' in sys.argv:

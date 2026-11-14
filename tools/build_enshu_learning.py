@@ -44,6 +44,12 @@ if '/assets/css/enshu-study.css' not in result:
  result=result.replace('</head>','<link rel="stylesheet" href="/assets/css/enshu-study.css?v=20261112"></head>',1)
 result=result.replace('enshu-study.css?v=20261112"','enshu-study.css?v=20261112-more"')
 serialized=json.dumps(learning,ensure_ascii=False,indent=2)+'\n'
+from enshu_navigation import middle_header
+for target_url in ('/c006','/c008'):
+ target=R/(target_url.lstrip('/')+'.html')
+ before=target.read_text(encoding='utf8');after=middle_header(before,target_url)
+ if '--check' in sys.argv:assert before==after, 'Regenerate middle header: '+target_url
+ elif after!=before:target.write_text(after,encoding='utf8')
 result=split_pages(R,result,course_section,sections,practice,explorer_section(learning,by),learning['scenes'],'--check' in sys.argv)['enshu/index.html']
 if '--check' in sys.argv:
  assert serialized==p.read_text(encoding='utf-8') and result==original,'Run tools/build_enshu_learning.py'

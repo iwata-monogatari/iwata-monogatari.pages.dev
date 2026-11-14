@@ -17,6 +17,22 @@ def navigation(current=''):
     return '<nav class="academy-paths" aria-label="学び舎のページ"><a class="academy-home" href="/enshu/">← 学び舎の入口へ</a><div>'+links+'</div></nav>'
 
 
+def middle_header(markup, current):
+    """Use the same static academy navigation on the three existing hubs."""
+    block = '<!-- academy-middle:start --><div class="academy-middle-header">'+navigation(current)+'</div><!-- academy-middle:end -->'
+    if '<!-- academy-middle:start -->' in markup:
+        return re.sub(r'<!-- academy-middle:start -->.*?<!-- academy-middle:end -->',lambda _:block,markup,flags=re.S)
+    markup = re.sub(r'<nav class="converter-academy-return".*?</nav>', '', markup, flags=re.S)
+    if '/assets/css/enshu-navigation.css' not in markup:
+        markup = markup.replace('</head>', '<link rel="stylesheet" href="/assets/css/enshu-navigation.css?v=20261114-middle"></head>',1)
+    if current == '/c006':
+        markup = re.sub(r'(<header class="gh-site">.*?</header>)',lambda m:m[0]+block,markup,count=1,flags=re.S)
+    else:
+        markup = re.sub(r'<main\b[^>]*>',lambda m:m[0]+block,markup,count=1)
+    assert block in markup
+    return markup
+
+
 def external_activity_links(markup, scenes):
     """Keep real links usable with JS disabled, including course-specific quizzes."""
     def quiz(match):

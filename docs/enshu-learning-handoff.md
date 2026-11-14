@@ -70,3 +70,9 @@
 ## 2026-11-14：学び舎トップの重複案内を削除
 - 最新依頼により /enshu/ のhero内7リンクと末尾の共通7リンクを削除。「今日の学び方を選ぶ」の7カードを主案内として保持。各別ページ・資料読解8講の上部・末尾の戻り案内は保持する。tools/enshu_navigation.pyから生成し、トップに重複7リンクを再追加しない。
 - 既存教材・資料・公開日と他ページは保持。実際の公開と検証は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-enshu-home-links/verification.json を参照。既存自動実行の予定・通知条件・範囲を変更せず、新しい監視を作らない。
+
+
+## 2026-11-14：研究・辞典・変換のミドルヘッダー統一
+- /enshu/research/・/c006・/c008 の上部に、学び舎への戻りと7入口を共通navigation()で配置。middle_header()をtools/build_enshu_learning.py（辞典・変換）とtools/build_enshu_research.py（研究一覧のみ）から再生成する。変換の旧3リンク案内は置換し、本文・辞典・変換ロジック・研究ノート原文を保持。
+- assets/css/enshu-navigation.cssの同じレイアウトをacademy-middle-header内にも適用。各ページのaria-currentを正しいURLに合わせる。学び舎トップ /enshu/ には重複する7リンクを再導入しない。
+- 公開・検証の実際の状態は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-academy-middle-header/verification.json を参照。既存自動実行の予定・状態・通知条件を変えず、新しい監視を作らない。
