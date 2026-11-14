@@ -76,3 +76,9 @@
 - /enshu/research/・/c006・/c008 の上部に、学び舎への戻りと7入口を共通navigation()で配置。middle_header()をtools/build_enshu_learning.py（辞典・変換）とtools/build_enshu_research.py（研究一覧のみ）から再生成する。変換の旧3リンク案内は置換し、本文・辞典・変換ロジック・研究ノート原文を保持。
 - assets/css/enshu-navigation.cssの同じレイアウトをacademy-middle-header内にも適用。各ページのaria-currentを正しいURLに合わせる。学び舎トップ /enshu/ には重複する7リンクを再導入しない。
 - 公開・検証の実際の状態は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-academy-middle-header/verification.json を参照。既存自動実行の予定・状態・通知条件を変えず、新しい監視を作らない。
+
+
+## 2026-11-14：資料辞典・比較帖を学び方の9入口へ統合
+- 最新依頼により「今日の学び方を選ぶ」は元の7入口を保持し、380記録の資料辞典 /enshu/records/ と24テーマの比較帖 /enshu/compare/ を追加した9入口へ。独立したNEW／百年前のことばの書庫バナーは削除し、原画像13頁・原表記・旧町村の説明は同じ選択欄へ統合。旧7入口限定の指示より本節を優先し、重複バナーを戻さない。
+- 共通LINKSを9項目へ統一し、学び舎の各活動・8講・研究一覧・14分類・全研究ノート・辞典・変換へ反映。資料辞典・比較帖にも共通ミドルヘッダーと末尾案内を追加し、旧5リンク案内は置換。資料検索・380記録・24比較テーマ・本文・出典・原画像・公開日・URLと所属分類への戻りを保持する。
+- 正本 tools/enshu_navigation.py と tools/build_enshu_corpus.py から再生成。実際の検証・公開・本番表示は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-archive-integration/verification.json を参照。既存自動実行の予定・状態・通知条件・権限を変更せず、新規監視を作らない。

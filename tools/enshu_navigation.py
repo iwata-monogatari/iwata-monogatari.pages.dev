@@ -6,7 +6,8 @@ from urllib.parse import urlencode
 LINKS = [('/enshu/courses/', '場面から読む'), ('/enshu/practice/', 'クイズで試す'),
          ('/enshu/words/', '一語ずつ探す'), ('/enshu/seminar/', '資料から学ぶ8講座'),
          ('/enshu/research/', '研究ノート・集計室'), ('/c006', '辞典で調べる'),
-         ('/c008', '文を変換する')]
+         ('/c008', '文を変換する'), ('/enshu/records/', '380記録の資料辞典'),
+         ('/enshu/compare/', '24テーマの比較帖')]
 
 def scene_path(sid):
     return '/enshu/courses/'+('work-tools' if sid == 'work' else sid)+'/'
@@ -96,7 +97,8 @@ def split_pages(root, result, courses, lessons, practice, explorer, scenes, chec
     landing = landing.replace('</head>', '<link rel="stylesheet" href="/assets/css/enshu-navigation.css?v=20261114"></head>')
     for anchor, url in [('courses', '/enshu/courses/'), ('practice', '/enshu/practice/'), ('cards', '/enshu/words/')]:
         landing = landing.replace('href="#'+anchor+'"', 'href="'+url+'"')
-    choices = '<section class="academy-destinations"><h2>今日の学び方を選ぶ</h2><div>'+''.join('<a href="'+url+'"><strong>'+label+'</strong><span>ページを開く →</span></a>' for url, label in LINKS)+'</div></section>'
+    choices = '<section class="academy-destinations"><h2>今日の学び方を選ぶ</h2><p>原画像13頁を照合した380記録の資料辞典と、24テーマの比較帖も、ここから開けます。原表記と旧町村をたどりながら、今の辞典とも読み比べられます。</p><div>'+''.join('<a href="'+url+'"><strong>'+label+'</strong><span>ページを開く →</span></a>' for url, label in LINKS)+'</div></section>'
+    landing = re.sub(r'<div class="archive-banner"><div>.*?</div><div>.*?</div></div>', '', landing, flags=re.S)
     landing = landing.replace('</header>\n<section class="notice">', '</header>'+choices+'\n<section class="notice">', 1)
     # On subsequent builds the cards already exist.
     if 'class="academy-destinations"' not in landing:

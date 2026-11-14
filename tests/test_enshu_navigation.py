@@ -36,14 +36,16 @@ class AcademyPages(unittest.TestCase):
         self.assertEqual({wid for scene in self.learning['scenes'] for wid in scene['words']},seen)
         self.assertEqual(24,conversations)
 
-    def test_entrance_opens_seven_different_pages(self):
+    def test_entrance_opens_nine_different_pages(self):
         text=(ROOT/'enshu/index.html').read_text(encoding='utf-8')
         hero=re.search(r'<header class="academy-hero">(.*?)</header>',text,re.S)[1]
         self.assertNotIn('<nav>',hero)
         self.assertNotIn('class="academy-paths"',text)
         choices=re.search(r'<section class="academy-destinations">(.*?)</section>',text,re.S)[1]
         urls=re.findall(r'<a href="([^"]+)"',choices)
-        self.assertEqual(['/enshu/courses/','/enshu/practice/','/enshu/words/','/enshu/seminar/','/enshu/research/','/c006','/c008'],urls)
+        self.assertEqual(['/enshu/courses/','/enshu/practice/','/enshu/words/','/enshu/seminar/','/enshu/research/','/c006','/c008','/enshu/records/','/enshu/compare/'],urls)
+        self.assertNotIn('class="archive-banner"',text)
+        self.assertIn('原画像13頁',choices)
         for widget in ('quiz-start','flash-next','course-lessons'):
             self.assertNotIn('id="'+widget+'"',text)
         self.assertEqual(1,text.count('class="academy-destinations"'))

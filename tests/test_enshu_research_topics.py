@@ -3,6 +3,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'tools'))
 from enshu_research_topics import TOPICS
+from enshu_navigation import LINKS
 
 class ResearchTopicsTest(unittest.TestCase):
  def test_category_membership_and_navigation(self):
@@ -47,7 +48,7 @@ class ResearchTopicsTest(unittest.TestCase):
     page=(ROOT/path.lstrip('/')/'index.html').read_text(encoding='utf8')
     self.assertEqual(page.count('class="academy-middle-header"'),1,path)
     block=re.search(r'<!-- academy-middle:start -->(.*?)<!-- academy-middle:end -->',page,re.S)[1]
-    self.assertEqual(block.count('<a '),8,path)
+    self.assertEqual(block.count('<a '),len(LINKS)+1,path)
     back=re.search(r'<nav class="research-nav research-category-return".*?</nav>',page,re.S)[0]
     self.assertIn('href="/enshu/research/topics/'+key+'/"',back,path)
     self.assertLess(page.index('academy-middle:start'),page.index('research-note-head'))
