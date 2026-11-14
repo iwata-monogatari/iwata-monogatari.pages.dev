@@ -135,3 +135,10 @@
 - ナグラは書評者自身の遠江3地点の観察と原辞典の紹介を区別。松崎は伊豆、井川・岡崎も遠州の実証へ移さない。MDLの境界は変化の発生年ではなく、同一調査系列の再分析を独立標本として足さない。新居の絵の変更、家族の使用と本人使用、タ／ツとタ／ケの地域、ヤルカ／ヤルカイカ等の原表記を保持。まめったい2024の井川41＋注2を412と読まない。人数の版差・本文の不整合を記録した。
 - 原109ノートの本文・出典・公開日・2枚の写真、郡誌380／376、FPJD287／211、歴史資料60、教材182語／546作例／12コースを保持。写真は既存の利用条件確認済みの磐田の風景。新設はcount_as_knowledge:falseで知識記事1322を水増ししない。
 - 検証の正本は制作workspaceのoutputs/enshu-systematic-review/verification.json。実際の公開状態・commit・deploy・本番本文・ブラウザPC/320/390・GSC受理は正本と証拠を再読して判断する。source-review.json、candidate-review.json、bibliography-review.json、source-artifact-manifest.json、content-audit.jsonを引き継ぎ、同じ本文を重複制作しない。未読原著の解決や全研究の終了へ読み替えない。既存の範囲・予定・通知条件を保持し、新しい監視を作らない。
+
+
+## 2026-11-14 研究分類14ページへの分割
+- 最新の依頼により /enshu/research/ の14分類への入口・分類名・件数を保持し、リンク先を /enshu/research/topics/<分類ID>/ へ分離。研究ノート124本の本文・URL・資料・写真は再制作せず保持し、分類一覧のカードを移す。機能ページを新着・知識記事へ重複加算しない。
+- tools/build_enshu_research.pyからtools/enshu_research_topics.pyを呼び、写真付きのカードを分割。各分類に学び舎の共通案内、分類一覧・前後分類への戻りを付ける。元の#分類IDと#life-*はenshu-research-topics-legacy.jsで新ページへ引継ぎ。
+- 調査した範囲と未解決点 #coverage・資料を集計する #lab・文献と確認範囲 #sources は研究一覧下部に本文ごと保持し、下部案内から移動。編集方針・集計スクリプト・全ダウンロードも保持する。一覧を旧一ページの124カードへ戻さない。
+- 実際の検証・公開commit・deploy・本番確認は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-research-topics/verification.json を参照。既存自動実行の予定・状態・通知条件を変えず、新規監視は作らない。

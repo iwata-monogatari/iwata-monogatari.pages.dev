@@ -1,0 +1,75 @@
+"""Separate existing research categories while preserving each original card."""
+import html
+import json
+import re
+from enshu_navigation import navigation
+
+BASE='/enshu/research/'
+TOPICS=['systematic','regional','new-sources','kinship','livelihood','honorific','festival','language','grammar','word-history','folk-life','variation','sound','foundations']
+
+def balanced_div(text,start):
+    depth=0
+    for match in re.finditer(r'</?div\b[^>]*>',text[start:]):
+        depth += -1 if match[0].startswith('</') else 1
+        if depth==0:return text[start:start+match.end()]
+    raise AssertionError('Unclosed category')
+
+def split_research_topics(root, original, check=False):
+    groups={}
+    for key in TOPICS:
+        match=re.search(r'<div class="research-note-group" id="'+key+'">',original)
+        assert match,key
+        groups[key]=balanced_div(original,match.start())
+    topic_nav=re.search(r'<nav class="research-topics" aria-label="研究テーマを選ぶ">.*?</nav>',original,re.S)[0]
+    labels={m[1]:m[2] for m in re.finditer(r'<a href="#([^"]+)">(.*?)</a>',topic_nav,re.S)}
+    assert set(labels)==set(TOPICS)
+    def path(key):return BASE+'topics/'+key+'/'
+    new_nav=topic_nav
+    for key in TOPICS:new_nav=new_nav.replace('href="#'+key+'"','href="'+path(key)+'"')
+    head=re.search(r'<head>(.*?)</head>',original,re.S)[1]
+    before_main=original.split('<main',1)[0].split('</head>',1)[1]
+    footer=original.split('</main>',1)[1]
+    footer=re.sub(r'<script\b[^>]*enshu-research\.js[^>]*></script>','',footer)
+    credits=re.search(r'<!-- iwata-photo:credits -->.*?<!-- /iwata-photo:credits -->',original,re.S)
+    credits=credits[0] if credits else ''
+    outputs={}
+    for i,key in enumerate(TOPICS):
+        label=re.sub('<[^>]+>','',labels[key]).strip()
+        title=re.sub(r'\s*\d+本$','',label).strip()
+        description=title+'の研究ノート一覧。問い・資料・分析・別の読み・検証方法を、各ノートで確かめます。'
+        url='https://iwata-monogatari.net'+path(key)
+        h=re.sub(r'<meta name="iwata:(?:published|category)"[^>]*>','',head)
+        h=re.sub(r'<title>.*?</title>','<title>'+html.escape(label)+'｜遠州弁研究ノート｜磐田物語</title>',h)
+        h=re.sub(r'<link rel="canonical" href="[^"]*">','<link rel="canonical" href="'+url+'">',h)
+        for attr,name,value in [('name','description',description),('property','og:title',title),('property','og:description',description),('property','og:url',url)]:
+            h=re.sub(r'<meta '+attr+'="'+name+r'" content="[^"]*">','<meta '+attr+'="'+name+'" content="'+html.escape(value,quote=True)+'">',h)
+        cards=re.findall(r'<a href="(/enshu/research/[^"#]+/)"><div class="research-card-top">',groups[key])
+        schema={'@context':'https://schema.org','@type':'CollectionPage','name':title,'description':description,'url':url,'inLanguage':'ja','isPartOf':{'@type':'CollectionPage','url':'https://iwata-monogatari.net'+BASE},'hasPart':[{'@type':'Article','url':'https://iwata-monogatari.net'+c} for c in cards]}
+        h=re.sub(r'<script type="application/ld\+json">.*?</script>','<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False)+'</script>',h,flags=re.S)
+        links='<nav class="academy-paths" aria-label="研究分類の前後"><a href="'+BASE+'#notebooks">← 研究ノートの分類一覧へ</a><div>'
+        for j,word in [(i-1,'前の分類'),(i+1,'次の分類')]:
+            if 0<=j<len(TOPICS):
+                other=TOPICS[j];links+='<a href="'+path(other)+'">'+word+'：'+re.sub('<[^>]+>','',labels[other])+'</a>'
+        links+='</div></nav>'
+        lower='<nav class="research-nav" aria-label="調査と資料"><a href="'+BASE+'#coverage">調査した範囲と未解決点</a><a href="'+BASE+'#lab">資料を集計する</a><a href="'+BASE+'#sources">文献と確認範囲</a></nav>'
+        body=navigation()+ '<div class="breadcrumbs"><a href="/enshu/">学び舎</a> ／ <a href="'+BASE+'">研究ノート・集計室</a> ／ '+html.escape(title)+'</div><header class="academy-section-heading"><p>遠州弁研究ノート</p><h1>'+html.escape(title)+'</h1><p>'+html.escape(label)+' ／ 既存ノートを分類から読む。</p></header>'+links+groups[key]+links+lower+credits+navigation()
+        outputs['enshu/research/topics/'+key+'/index.html']='<!doctype html><html lang="ja"><head>'+h+'</head>'+before_main+'<main class="academy seminar research" id="research-content">'+body+'</main>'+footer
+    index=original.replace(topic_nav,new_nav)
+    for group in groups.values():index=index.replace(group,'',1)
+    hero=re.search(r'<header class="research-hero">.*?</header>',index,re.S)
+    # Photograph layout adds attributes to this header, so match its full tag.
+    if not hero:hero=re.search(r'<header class="research-hero"[^>]*>.*?</header>',index,re.S)
+    hero_new=hero[0]
+    for anchor in ('coverage','lab','sources'):hero_new=re.sub(r'<a href="#'+anchor+r'">.*?</a>','',hero_new)
+    index=index[:hero.start()]+hero_new+index[hero.end():]
+    lower='<nav class="research-nav" aria-label="調査と資料"><a href="#coverage">調査した範囲と未解決点</a><a href="#lab">資料を集計する</a><a href="#sources">文献と確認範囲</a></nav>'
+    marker=re.search(r'<section\b[^>]*\bid="coverage"[^>]*>',index)
+    assert marker,'Coverage section must remain on index'
+    index=index[:marker.start()]+lower+index[marker.start():]
+    index=index.replace('</head>','<script defer src="/assets/js/enshu-research-topics-legacy.js?v=20261114"></script></head>',1)
+    outputs['enshu/research/index.html']=index
+    for name,text in outputs.items():
+        target=root/name
+        if check:assert target.exists() and target.read_text(encoding='utf8')==text,'Regenerate '+name
+        else:target.parent.mkdir(parents=True,exist_ok=True);target.write_text(text,encoding='utf8',newline='\n')
+    return groups
