@@ -88,3 +88,9 @@
 - 最新依頼：/enshu/records/ は1242頁の12記録のみを保持し、1243〜1254頁は /enshu/records/<頁>/ に分割。380記録の元データ・語ID・原表記・意味・原注・記録地・出典リンクを保持。各頁は2枚の撮影地・撮影年・出典・CC条件付きの磐田実写を、導入と記録の間へ配置。写真を方言採録地の実証としない。
 - 全380記録の横断検索は /enshu/records/search/ に分離し保持。各頁のGET検索から進める。旧rootの#page-<頁>・語ID・q/v/p条件はenshu-records-pages.jsで対応頁または検索へ引き継ぎ。不明IDで推測しない。頁一覧・前後頁・学び舎の9入口への戻りを保持。新しい頁・検索を知識記事・新着へ重複加算しない。
 - 正本 tools/enshu_records_pages.py をtools/build_enshu_corpus.pyから実行。写真は既存credits.jsonの確認済み13点を使用し、画像の生成・切抜き・改変をせず、写真の注記・権利情報を保持。元の13頁の全記録を入口に一括再挿入しない。公開・本番・検証の実際の状態は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-records-pagination/verification.json を参照。既存自動実行の予定・状態・通知条件・権限を保持し、新規監視なし。
+
+## 2026-11-14：比較帖24テーマを独立ページへ分割
+- /enshu/compare/ は24テーマの一覧を保持し、各 /enshu/compare/<既存テーマID>/ へ移動する。元の解説・比較表の原表記・意味・記録地・出典を保持。旧 #compare-<ID> は初回表示とhashchangeで新頁へ引き継ぐ。未知のIDは転送しない。
+- 各頁に共通ミドルヘッダー、一覧への戻り、前後テーマ、既存許諾済みの磐田実写真2点（撮影地・作者・出典・ライセンス付き）を配置。写真を方言の採録地点の証拠と扱わない。tools/enshu_compare_pages.py を tools/build_enshu_corpus.py から生成し、旧単一頁へ戻さない。
+- 元の24テーマの分類データ・380記録・辞典・研究ノート・公開日を保持。構造分割の機能頁を新着・知識記事数へ重複計上しない。公開と検証の実際の結果は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-compare-pagination/verification.json を参照。既存自動実行の範囲・予定・状態・通知条件は変更しない。
+- 急須・きせる・畚のテーマID tools は保持し、公開URLのみ /enshu/compare/household-tools/ とする。tools というパス要素は既存サイトの生成物除外に該当するため。旧 #compare-tools もこの正規URLへ引き継ぐ。

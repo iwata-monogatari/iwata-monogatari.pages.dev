@@ -37,6 +37,7 @@ def before_nth(text,pattern,n,addition):
  i=matches[n-1].start();return text[:i]+addition+text[i:]
 
 def apply_photos(text,url):
+ if 'class="academy archive compare-paging"' in text:return text
  # Paginated records own their per-page photographs and inline reading breaks.
  if url.startswith('/enshu/records/') and 'class="academy archive records-paging"' in text:return text
  plan,_=data()

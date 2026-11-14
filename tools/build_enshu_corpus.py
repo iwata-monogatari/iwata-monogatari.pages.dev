@@ -56,6 +56,10 @@ for path,text in outputs.items():
   from enshu_records_pages import split_records
   split_records(R,text,rows,check='--check' in sys.argv)
   continue
+ if path==R/'enshu/compare/index.html':
+  from enshu_compare_pages import split_comparisons
+  split_comparisons(R,text,groups,check='--check' in sys.argv)
+  continue
  from enshu_photo_layout import apply_photos
  text=apply_photos(text,'/'+path.parent.relative_to(R).as_posix()+'/')
  if '--check' in sys.argv:assert path.exists() and path.read_text(encoding='utf-8')==text,str(path)
