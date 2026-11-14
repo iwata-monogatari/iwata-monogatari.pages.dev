@@ -1,5 +1,12 @@
 # 遠州弁：資料読解8講と学習素材の拡充（2026-11-12）
 
+## 2026-11-14 講座を独立ページへ分割
+
+- 8講の本文・比較表・演習・回答・資料の確認範囲を保持し、`/enshu/seminar/{evidence,geography,modality,grammar,sound,meaning,folklore,change}/` へ分割。講座一覧のリンク・CollectionPageのhasPartも新URLへ統一。新規の研究や語義の追加ではない。
+- 生成元は `tools/build_enshu_seminar.py` と `tools/enshu_seminar_pages.py`。一覧・各講座の上部と末尾に「学び舎の入口へ」と7入口を配置。各講座には一覧・前後の講座へのリンクを保持する。資料は各講座内から参照でき、元の写真と撮影地・権利情報も保持。
+- 旧 `#lesson-<既知ID>` は `assets/js/enshu-seminar-legacy.js` で該当ページへ移す。不明なIDでは転送しない。8講を一ページへ再結合せず、学習データ・研究記事・新着件数へ重複追加しない。
+- 実際の検証・公開commit・deploy・本番確認の成否は `C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-seminar-pages/verification.json` を参照。記録を読まずに確認済みとは扱わない。既存自動実行の範囲・予定・通知条件を広げず、新しい監視は作らない。
+
 続編の研究ノート6本・資料の集計室と導線については `docs/enshu-research-handoff.md` を併読する。既存8講の先へ進む別教材であり、同じ補足や数値を重ねて追加しない。
 
 ユーザー依頼：出典と既存デザインを保ち、単語・場面別例文を増やして公開する。同じ依頼の追加指示として、言語学・民俗学の学術的な解説を既存コンテンツへ加える。研究者の監修を受けたと表示する依頼ではない。
