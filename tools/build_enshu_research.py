@@ -115,8 +115,13 @@ life_topics={
 assert {x for _,xs in life_topics.values() for x in xs}=={n['slug'] for n in notes if n.get('group')=='livelihood'}
 
 
+def source_archive_link(key):
+    if key not in SYSTEMATIC_SOURCES and key not in EXTRA_SOURCES:return ''
+    match=re.search(r'https://web\.archive\.org/[^\s]+\.pdf',SOURCES[key][3])
+    return ' ／ <a href="'+E(match[0])+'">確認した公開保存版へ ↗</a>' if match else ''
+
 def bibliography(keys):
-    return '<section id="sources" class="seminar-bibliography"><p class="eyebrow">REFERENCES / 確認範囲を明記</p><h2>出典に戻って読む</h2><ol>'+''.join(f'<li id="source-{k}"><h3>{E(SOURCES[k][0])}</h3><p>{E(SOURCES[k][1])}</p><p>{E(SOURCES[k][3])}</p><a href="{E(SOURCES[k][2])}">原資料・論文へ ↗</a></li>' for k in keys)+'</ol></section>'
+    return '<section id="sources" class="seminar-bibliography"><p class="eyebrow">REFERENCES / 確認範囲を明記</p><h2>出典に戻って読む</h2><ol>'+''.join(f'<li id="source-{k}"><h3>{E(SOURCES[k][0])}</h3><p>{E(SOURCES[k][1])}</p><p>{E(SOURCES[k][3])}</p><a href="{E(SOURCES[k][2])}">原資料・論文へ ↗</a>{source_archive_link(k)}</li>' for k in keys)+'</ol></section>'
 
 template=(R/'enshu/index.html').read_text(encoding='utf8')
 header=re.search(r'<header class="gh-site".*?</header>',template,re.S)[0]
