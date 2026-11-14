@@ -37,6 +37,8 @@ def before_nth(text,pattern,n,addition):
  i=matches[n-1].start();return text[:i]+addition+text[i:]
 
 def apply_photos(text,url):
+ # Paginated records own their per-page photographs and inline reading breaks.
+ if url.startswith('/enshu/records/') and 'class="academy archive records-paging"' in text:return text
  plan,_=data()
  if url not in plan:
   assert not url.startswith('/enshu/research/'),'新規研究ノートには撮影地確認済みの写真計画を追加してください: '+url

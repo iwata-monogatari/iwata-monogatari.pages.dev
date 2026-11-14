@@ -52,6 +52,10 @@ for path,text in outputs.items():
  text=re.sub(r'<nav class="archive-nav">.*?</nav>','',text,flags=re.S)
  text=middle_header(text,url).replace('</main>',navigation(url)+'</main>',1)
  text=text.replace('enshu-navigation.css?v=20261114-middle','enshu-navigation.css?v=20261114-archive')
+ if path==R/'enshu/records/index.html':
+  from enshu_records_pages import split_records
+  split_records(R,text,rows,check='--check' in sys.argv)
+  continue
  from enshu_photo_layout import apply_photos
  text=apply_photos(text,'/'+path.parent.relative_to(R).as_posix()+'/')
  if '--check' in sys.argv:assert path.exists() and path.read_text(encoding='utf-8')==text,str(path)
