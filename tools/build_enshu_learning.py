@@ -51,6 +51,9 @@ for target_url in ('/c006','/c008'):
  if target_url=='/c006':
   from enshu_dictionary_layout import apply_dictionary_layout
   after=apply_dictionary_layout(after)
+ if target_url=='/c008':
+  from enshu_converter_layout import apply_converter_layout
+  after=apply_converter_layout(after)
  if '--check' in sys.argv:assert before==after, 'Regenerate middle header: '+target_url
  elif after!=before:target.write_text(after,encoding='utf8')
 result=split_pages(R,result,course_section,sections,practice,explorer_section(learning,by),learning['scenes'],'--check' in sys.argv,entries=learning['entries'])['enshu/index.html']
