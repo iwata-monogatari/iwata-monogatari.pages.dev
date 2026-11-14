@@ -152,3 +152,8 @@
 - /enshu/research/topics/<分類ID>/ の14頁に、導入とカード一覧末尾の2か所へ既存許諾済み磐田写真を配置。撮影地・作者・出典・ライセンスと、採録地点/研究調査の場所を示すものではない注記を保持。既存のカード写真と原本画像は改変しない。
 - 共通ミドルヘッダーを navigation('/enshu/research/') とし、研究一覧(#notebooks)へ戻る案内・前後分類案内を上下に統一。各分類の原文・カード・124研究ノートへのURLと所属を保持。調査範囲・集計室・文献への下部案内も保持。研究一覧・集計室・各ノート・ダウンロードは変更しない。
 - tools/enshu_research_topics.py を tools/build_enshu_research.py から生成。写真や戻り案内を重複挿入せず、旧分類構造へ巻き戻さない。機能頁を知識記事数・新着へ重複加算しない。公開・本番・検証の実際の結果は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-research-topic-photos/verification.json を参照。既存自動実行の範囲・予定・状態・通知条件は変更せず、新規監視なし。
+
+## 2026-11-14：全研究ノートの写真保持と上下の共通案内
+- 全124ノートには導入・本文途中に既存の磐田実写真2点があるため、重複挿入せず、写真・配置・撮影地/撮影年/作者/出典/ライセンスと特殊な留保を保持。写真は本文の他地域の調査対象地や方言採録現場の証拠ではない旨を末尾にも明記。
+- 上部の共通ミドルヘッダーと所属分類への戻りを保持し、末尾にも同じ10リンクの navigation('/enshu/research/') と元の note_category_return の分類リンクを配置。14分類のカード所属と全124ノートの戻り先を照合。本文・資料・出典・目次・関連ノート・公開日を保持。
+- 生成元 tools/build_enshu_research.py / tools/enshu_research_topics.py の note_reading_return を保持し、写真や戻り案内を重複挿入しない。研究一覧・分類ページ・集計室・ダウンロード・教材は再制作しない。公開・本番確認の実際の結果は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-research-note-photos/verification.json を参照。既存自動実行の範囲・予定・状態・通知条件を変更せず、新規監視なし。

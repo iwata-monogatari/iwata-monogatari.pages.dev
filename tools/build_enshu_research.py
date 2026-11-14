@@ -247,6 +247,9 @@ for path,value in outputs.items():
         from enshu_navigation import middle_header
         value=middle_header(value,BASE)
     if path.suffix=='.html':value=apply_photos(value,'/'+path.parent.relative_to(R).as_posix()+'/')
+    if path.suffix=='.html' and path.parent.parent==R/'enshu/research':
+        from enshu_research_topics import note_reading_return
+        value=note_reading_return(value)
     if path==R/'enshu/research/index.html':
         from enshu_research_topics import split_research_topics
         split_research_topics(R,value,check='--check' in sys.argv)

@@ -15,6 +15,16 @@ def note_category_return(note):
     assert key in TOPICS,(note['slug'],key)
     return '<nav class="research-nav research-category-return" aria-label="所属する研究分類"><a href="'+BASE+'topics/'+key+'/">← '+html.escape(TOPIC_LABELS[key])+'の分類ページへ</a></nav>'
 
+def note_reading_return(text):
+    """Reuse existing note photographs and repeat its exact category return below."""
+    text=re.sub(r'<!-- research-note-return:start -->.*?<!-- research-note-return:end -->','',text,flags=re.S)
+    category=re.findall(r'<nav class="research-nav research-category-return".*?</nav>',text,re.S)
+    assert len(category)==1,'Each note must have one original category return'
+    assert len(re.findall(r'<figure class="iwata-photo iwata-photo-(?:lead|middle)"',text))==2,'Keep both existing Iwata photographs'
+    footer='<!-- research-note-return:start --><section class="seminar-next research-note-return" aria-label="研究ノートから戻る"><p class="research-small">写真は、撮影地・撮影年を添えた磐田の風景です。本文の調査対象地や方言の採録現場を示すものではありません。</p>'+category[0]+'<div class="academy-middle-header">'+navigation(BASE)+'</div></section><!-- research-note-return:end -->'
+    assert text.count('</main>')==1
+    return text.replace('</main>',footer+'</main>',1)
+
 def balanced_div(text,start):
     depth=0
     for match in re.finditer(r'</?div\b[^>]*>',text[start:]):
