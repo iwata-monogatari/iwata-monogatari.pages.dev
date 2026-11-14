@@ -6,6 +6,12 @@ from enshu_navigation import navigation
 
 BASE='/enshu/research/'
 TOPICS=['systematic','regional','new-sources','kinship','livelihood','honorific','festival','language','grammar','word-history','folk-life','variation','sound','foundations']
+TOPIC_LABELS=dict(zip(TOPICS,['原論文から深く読む','地域の原資料を読む','新資料から深く読む','親族・人の呼び方','仕事・生業','敬語・待遇表現','祭り・年中行事','文の組立てと意味','否定・条件・可能・勧誘','語源・語史','暮らしと民俗','地域・世代・意味の変化','発音・アクセント','文法・民俗・資料']))
+
+def note_category_return(note):
+    key=note.get('group','foundations')
+    assert key in TOPICS,(note['slug'],key)
+    return '<nav class="research-nav research-category-return" aria-label="所属する研究分類"><a href="'+BASE+'topics/'+key+'/">← '+html.escape(TOPIC_LABELS[key])+'の分類ページへ</a></nav>'
 
 def balanced_div(text,start):
     depth=0

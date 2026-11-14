@@ -142,3 +142,8 @@
 - tools/build_enshu_research.pyからtools/enshu_research_topics.pyを呼び、写真付きのカードを分割。各分類に学び舎の共通案内、分類一覧・前後分類への戻りを付ける。元の#分類IDと#life-*はenshu-research-topics-legacy.jsで新ページへ引継ぎ。
 - 調査した範囲と未解決点 #coverage・資料を集計する #lab・文献と確認範囲 #sources は研究一覧下部に本文ごと保持し、下部案内から移動。編集方針・集計スクリプト・全ダウンロードも保持する。一覧を旧一ページの124カードへ戻さない。
 - 実際の検証・公開commit・deploy・本番確認は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-research-topics/verification.json を参照。既存自動実行の予定・状態・通知条件を変えず、新規監視は作らない。
+
+
+## 2026-11-14 各研究ノートのミドルヘッダーと所属分類への戻り
+- 既存全研究ノートに学び舎への戻りと7入口の共通ミドルヘッダーを追加。直下に、当該ノートを掲載する元の分類ページ /enshu/research/topics/<分類ID>/ へ戻る静的リンクを置く。生成元tools/build_enshu_research.py、middle_header()、note_category_return()を保持し、所属は元のnotes.group（基礎6本はfoundations）と分類カードで照合する。
+- 記事本文・資料・注記・写真・公開日・URL・既存目次を保持。全ノートを研究トップへの戻りだけに戻さず、トップ・14分類・集計室の構造も保持。検証・公開・本番確認の実際の結果は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-research-note-header/verification.json を参照。既存自動実行の範囲・予定・状態・通知条件を変更せず、新しい監視を作らない。

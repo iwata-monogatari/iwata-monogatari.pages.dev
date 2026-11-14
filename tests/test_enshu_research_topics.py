@@ -38,4 +38,21 @@ class ResearchTopicsTest(unittest.TestCase):
    self.assertIn('href="#'+key+'"',index)
   self.assertIn('id="research-records"',index)
 
+ def test_each_note_returns_to_its_actual_category(self):
+  count=0
+  for key in TOPICS:
+   category=(ROOT/'enshu/research/topics'/key/'index.html').read_text(encoding='utf8')
+   paths=re.findall(r'<a href="(/enshu/research/[^"#]+/)"><div class="research-card-top">',category)
+   for path in paths:
+    page=(ROOT/path.lstrip('/')/'index.html').read_text(encoding='utf8')
+    self.assertEqual(page.count('class="academy-middle-header"'),1,path)
+    block=re.search(r'<!-- academy-middle:start -->(.*?)<!-- academy-middle:end -->',page,re.S)[1]
+    self.assertEqual(block.count('<a '),8,path)
+    back=re.search(r'<nav class="research-nav research-category-return".*?</nav>',page,re.S)[0]
+    self.assertIn('href="/enshu/research/topics/'+key+'/"',back,path)
+    self.assertLess(page.index('academy-middle:start'),page.index('research-note-head'))
+    self.assertLess(page.index('research-category-return'),page.index('research-note-head'))
+    count+=1
+  self.assertEqual(count,len(json.loads((ROOT/'data/enshu-research-index.json').read_text(encoding='utf8'))['notes']))
+
 if __name__=='__main__':unittest.main()

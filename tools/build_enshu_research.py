@@ -179,6 +179,8 @@ for i,n in enumerate(notes):
     related=[notes[(i+1)%len(notes)],notes[(i+2)%len(notes)]]
     article=f'''<div class="breadcrumbs"><a href="/enshu/">学び舎</a> ／ <a href="{BASE}">遠州弁研究ノート</a> ／ {i+1:02}</div><header class="research-note-head"><p class="eyebrow">RESEARCH NOTE {i+1:02} / {E(n['field'])}</p><h1>{E(n['title'])}</h1><p class="seminar-deck">{E(n['deck'])}</p><p class="research-byline">磐田物語 編集部 ／ {n['published'].replace('-', '年', 1).replace('-', '月', 1)}日{' ／ 補足：2026年11月13日' if n.get('updated') else ''} ／ 公開資料に基づく研究解説</p><div class="research-finding"><strong>このノートで確かめること</strong><p>{E(n['finding'])}</p></div></header><div class="research-note-layout"><aside>{toc}</aside><div class="research-prose">{n['body']}{bibliography(n['sources'])}<p class="research-byline">資料の記録、先行研究の見解、編集部の分析・調査案を区別しています。研究者監修・学術査読を受けた論文や、編集部による現地調査報告ではありません。<a href="{BASE}#editorial">編集方針</a></p></div></div><section class="seminar-next"><h2>次の問いへ進む</h2>{cards(related)}{nav}</section>'''
     if n['slug'] in systematic_supplements:article=article.replace('補足：2026年11月13日','補足：2026年11月14日')
+    from enshu_research_topics import note_category_return
+    article=note_category_return(n)+article
     outputs[R/f'enshu/research/{n["slug"]}/index.html']=shell(n['title']+'｜遠州弁研究ノート',n['deck']+' '+n['finding'],BASE+n['slug']+'/',article,article=True,published=n['published'],modified=n.get('updated',n['published']))
 
 # A standard-library-only replay accompanies the frozen exported rows.
@@ -241,7 +243,7 @@ downloads={'records.csv':csv_bytes,'reproduce.py':replay.encode('utf8'),'README.
 for name,data in downloads.items():outputs[R/'downloads/enshu-research'/name]=data
 outputs[R/'data/enshu-research-index.json']=(json.dumps({'version':DATE,'notes':[{k:n[k] for k in ['slug','field','title','deck','finding']} for n in notes]},ensure_ascii=False,indent=2)+'\n').encode('utf8')
 for path,value in outputs.items():
-    if path==R/'enshu/research/index.html':
+    if path.suffix=='.html' and path.parent.parent==R/'enshu/research' or path==R/'enshu/research/index.html':
         from enshu_navigation import middle_header
         value=middle_header(value,BASE)
     if path.suffix=='.html':value=apply_photos(value,'/'+path.parent.relative_to(R).as_posix()+'/')
