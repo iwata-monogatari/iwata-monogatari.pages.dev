@@ -1,6 +1,7 @@
 (() => {
   'use strict';
   const $=id=>document.getElementById(id);
+  const coursePath=id=>'/enshu/courses/'+(id==='work'?'work-tools':id)+'/';
   const node=(tag,text)=>{const n=document.createElement(tag);n.textContent=text;return n;};
   const shuffled=list=>{const a=[...list];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
   let data,round=[],position=0,score=0,answered=false,reverse=false,missed=[],cards=[],cardIndex=0;
@@ -8,7 +9,7 @@
   const sourceHref=e=>e.historical?'/enshu/records/#'+e.id:'/c006?q='+encodeURIComponent(e.w)+'#'+e.id;
   function dictionary(e){const a=node('a',e.historical?'記録・原画像を読む →':'3作例・資料を辞典で読む →');a.href=sourceHref(e);return a;}
   const brief=e=>e.m.split('。')[0]+'。';
-  let lastPool=[],lastLimit=5,reviewing=false,activeCourse='kitchen',allCourses=false;
+  let lastPool=[],lastLimit=5,reviewing=false;
   function quizPool(){
     if(!data)return[];const scene=data.scenes.find(s=>s.id===$('quiz-scene').value),ids=scene&&new Set(scene.words),cat=$('quiz-category').value;
     const scope=$('quiz-source').value;
@@ -57,35 +58,15 @@
     $('quiz-board').hidden=true;const summary=$('quiz-summary');summary.replaceChildren();
     const title=node('h3',`${round.length}問をひと回り。`);title.tabIndex=-1;summary.append(title,node('p',`正解 ${score} / ${round.length}問。気になったことばを、絵札や資料でもう一度。`));
     const list=node('ul','');list.className='quiz-word-review';const wrongIds=new Set(missed.map(e=>e.id));
-    for(const e of round){const li=node('li',''),a=node('a','');a.href='/enshu/?word='+e.id+'#cards';a.dataset.exploreWord=e.id;a.append(node('span',wrongIds.has(e.id)?'↻ もう一度':'✓ 確かめた'),node('strong',e.w),node('small',brief(e)));li.append(a);list.append(li);}summary.append(list);
+    for(const e of round){const li=node('li',''),a=node('a','');a.href='/enshu/words/?word='+e.id;a.dataset.exploreWord=e.id;a.append(node('span',wrongIds.has(e.id)?'↻ もう一度':'✓ 確かめた'),node('strong',e.w),node('small',brief(e)));li.append(a);list.append(li);}summary.append(list);
     const controls=node('div','');controls.className='quiz-result-actions';const retryEntries=[...missed],samePool=[...lastPool],limit=lastLimit,direction=reverse;
     if(retryEntries.length){const retry=node('button',`間違えた${retryEntries.length}語だけ、もう一度`);retry.type='button';retry.onclick=()=>beginQuiz(retryEntries,retryEntries.length,true,direction);controls.append(retry);}
     const again=node('button','同じ範囲でもうひと回り');again.type='button';again.onclick=()=>beginQuiz(samePool,limit,false,direction);controls.append(again);
-    const other=node('a','別の場面を選ぶ ↑');other.href='#courses';controls.append(other);summary.append(controls);title.focus({preventScroll:true});summary.scrollIntoView({block:'start'});
+    const other=node('a','場面一覧に戻る');other.href='/enshu/courses/';controls.append(other);summary.append(controls);title.focus({preventScroll:true});summary.scrollIntoView({block:'start'});
   }
-  $('quiz-start').onclick=()=>beginQuiz();
-  $('quiz-next').onclick=()=>{if(!answered)return;position++;if(position<round.length){question();focusQuestion();}else results();};
-  $('quiz-hint-button').onclick=()=>{if(!round.length)return;const e=round[position];$('quiz-hint').textContent=reverse?`${e.cat}のことば。はじめの字は「${Array.from(e.w)[0]}」です。`:'標準語の会話なら：'+e.learning.examples[0].standard;$('quiz-hint').hidden=false;$('quiz-hint-button').disabled=true;$('quiz-hint-button').textContent='ヒント表示中';$('quiz-hint-button').setAttribute('aria-expanded','true');};
-  function showCourse(id,showAll=false){
-    const scene=data.scenes.find(s=>s.id===id);if(!scene)return;activeCourse=id;allCourses=showAll;
-    document.querySelectorAll('#course-lessons .scene').forEach(s=>s.hidden=!showAll&&s.dataset.scene!==id);
-    document.querySelectorAll('.study-courses [data-course]').forEach(a=>{if(a.dataset.course===id)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');});
-    $('course-status').textContent=showAll?'12コースをまとめて表示しています。':`選択中：${scene.title} ・ ${scene.words.length}語`;
-    $('courses-show-all').textContent=showAll?'選んだコースだけ読む':'全コースをまとめて読む';$('courses-show-all').setAttribute('aria-expanded',String(showAll));
-  }
-  function setupStudy(){
-    const hash=location.hash.slice(1),initial=data.scenes.find(s=>'scene-'+s.id===hash);showCourse(initial?initial.id:data.scenes[0].id);
-    $('courses-show-all').disabled=false;$('courses-show-all').onclick=()=>showCourse(activeCourse,!allCourses);
-    for(const id of ['quiz-scene','quiz-length','quiz-direction','quiz-category','quiz-source'])$(id).onchange=updateQuizSetup;
-    window.addEventListener('hashchange',()=>{const scene=data.scenes.find(s=>'#scene-'+s.id===location.hash);if(scene){showCourse(scene.id);requestAnimationFrame(()=>document.getElementById('scene-'+scene.id).scrollIntoView({block:'start'}));}});
-    document.querySelector('.academy').addEventListener('click',event=>{
-      if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey||event.button!==0)return;const link=event.target.closest('a');if(!link)return;
-      if(link.dataset.course){showCourse(link.dataset.course);return;}
-      if(link.dataset.quizScene){event.preventDefault();$('quiz-scene').value=link.dataset.quizScene;$('quiz-category').value='all';$('quiz-source').value=link.dataset.quizSource||'all';$('quiz-length').value='3';updateQuizSetup();history.replaceState(null,'',location.pathname+location.search+'#practice');beginQuiz();return;}
-      if(link.dataset.exploreWord&&data.entries.some(e=>e.id===link.dataset.exploreWord)){event.preventDefault();$('flash-scene').value='all';deck('all',link.dataset.exploreWord);flash(true);focusWord();}
-    });
-    const target=location.hash&&document.getElementById(location.hash.slice(1));if(target)requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
-  }
+  if($('quiz-start')) $('quiz-start').onclick=()=>beginQuiz();
+  if($('quiz-next')) $('quiz-next').onclick=()=>{if(!answered)return;position++;if(position<round.length){question();focusQuestion();}else results();};
+  if($('quiz-hint-button')) $('quiz-hint-button').onclick=()=>{if(!round.length)return;const e=round[position];$('quiz-hint').textContent=reverse?`${e.cat}のことば。はじめの字は「${Array.from(e.w)[0]}」です。`:'標準語の会話なら：'+e.learning.examples[0].standard;$('quiz-hint').hidden=false;$('quiz-hint-button').disabled=true;$('quiz-hint-button').textContent='ヒント表示中';$('quiz-hint-button').setAttribute('aria-expanded','true');};
   let exampleIndex=0;
   const starterButtons=[...document.querySelectorAll('.word-starter')];
   const explorerControls=['flash-prev','flash-random','flash-next','flash-scene','flash-example-next','flash-copy'];
@@ -107,11 +88,11 @@
     $('flash-scene-label').textContent=scene?scene.title:e.cat;
     $('flash-progress').textContent=`${cardIndex+1} / ${cards.length}語`;
     $('flash-dictionary').href=sourceHref(e);$('flash-dictionary').textContent=e.historical?'記録・原画像を読む →':'使い分け・出典を読む →';
-    $('flash-course').href=scene?'#scene-'+scene.id:'#courses';
+    $('flash-course').href=scene?coursePath(scene.id):'/enshu/courses/';
     $('flash-course').textContent=scene?'この場面のことばを読む →':'12コースから読む →';
     starterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.word===e.id)));
     $('flash-message').textContent='';$('flash-share-fallback').hidden=true;example();
-    if(interacted){const url=new URL(location.href);url.searchParams.set('word',e.id);url.hash='cards';history.replaceState(null,'',url.pathname+url.search+url.hash);}
+    if(interacted){const url=new URL(location.href);url.searchParams.set('word',e.id);url.hash='';history.replaceState(null,'',url.pathname+url.search);}
   }
   function deck(sceneId,preferred){
     const scene=data.scenes.find(s=>s.id===sceneId),pool=scene?scene.words.map(id=>data.entries.find(e=>e.id===id)):data.entries.filter(e=>sceneId==='historical'?!!e.historical:sceneId==='dictionary'?!e.historical:true);
@@ -119,6 +100,7 @@
     cards=[first,...pool.filter(e=>e.id!==first.id)];cardIndex=0;
   }
   function focusWord(){ $('flash-word').focus({preventScroll:true});$('flash-card').scrollIntoView({block:'start'}); }
+  if($('flash-next')) {
   $('flash-next').onclick=()=>{if(!cards.length)return;cardIndex=(cardIndex+1)%cards.length;flash(true);focusWord();};
   $('flash-prev').onclick=()=>{if(!cards.length)return;cardIndex=(cardIndex-1+cards.length)%cards.length;flash(true);focusWord();};
   $('flash-random').onclick=()=>{if(cards.length<2)return;cardIndex=(cardIndex+1+Math.floor(Math.random()*(cards.length-1)))%cards.length;flash(true);focusWord();};
@@ -126,13 +108,22 @@
   $('flash-scene').onchange=()=>{if(!data)return;deck($('flash-scene').value);flash(true);};
   starterButtons.forEach(b=>{b.onclick=()=>{if(!data)return;$('flash-scene').value='all';deck('all',b.dataset.word);flash(true);focusWord();};});
   $('flash-copy').onclick=async()=>{
-    if(!cards.length)return;const url=new URL('https://iwata-monogatari.net/enshu/');url.searchParams.set('word',cards[cardIndex].id);url.hash='cards';
+    if(!cards.length)return;const url=new URL('https://iwata-monogatari.net/enshu/words/');url.searchParams.set('word',cards[cardIndex].id);
     try{await navigator.clipboard.writeText(url.href);$('flash-message').textContent='この一語へのリンクをコピーしました。';}
     catch{$('flash-message').textContent='コピーできませんでした。下のリンクを選択してコピーできます。';$('flash-share-url').value=url.href;$('flash-share-fallback').hidden=false;$('flash-share-url').focus();$('flash-share-url').select();}
   };
-  $('quiz-start').disabled=true;explorerControls.forEach(id=>$(id).disabled=true);
+  }
+  if($('quiz-start')) $('quiz-start').disabled=true;
+  explorerControls.forEach(id=>{if($(id))$(id).disabled=true;});
   fetch('/data/enshu-learning.json?v=20261112-more').then(r=>{if(!r.ok)throw Error('data');return r.json();}).then(d=>{
-    data=d;const requested=new URLSearchParams(location.search).get('word');deck('all',d.entries.some(e=>e.id===requested)?requested:'ponpon');flash();
-    setupStudy();$('quiz-start').disabled=false;updateQuizSetup();explorerControls.forEach(id=>$(id).disabled=false);starterButtons.forEach(b=>b.disabled=false);
-  }).catch(()=>{$('quiz-summary').textContent='練習データを読み込めませんでした。場面別コースと辞典から引き続き学べます。';$('flash-message').textContent='ほかの絵札を読み込めませんでした。表示中の一語と、場面別コース・辞典はそのまま読めます。';});
+    data=d;const params=new URLSearchParams(location.search),requested=params.get('word');
+    if($('flash-next')){deck('all',d.entries.some(e=>e.id===requested)?requested:'ponpon');flash();explorerControls.forEach(id=>$(id).disabled=false);starterButtons.forEach(b=>b.disabled=false);}
+    if($('quiz-start')){
+      const scene=d.scenes.find(s=>s.id===params.get('scene'));
+      if(scene){$('quiz-scene').value=scene.id;$('quiz-course-return').href=coursePath(scene.id);$('quiz-course-return').textContent='← 「'+scene.title+'」に戻る';}
+      if(['historical','dictionary'].includes(params.get('source'))) $('quiz-source').value=params.get('source');
+      for(const id of ['quiz-scene','quiz-length','quiz-direction','quiz-category','quiz-source'])$(id).onchange=()=>{updateQuizSetup();const selected=d.scenes.find(s=>s.id===$('quiz-scene').value);$('quiz-course-return').href=selected?coursePath(selected.id):'/enshu/courses/';$('quiz-course-return').textContent=selected?'← 「'+selected.title+'」に戻る':'← 場面を選び直す';};
+      updateQuizSetup();if(scene&&params.get('start')==='1')beginQuiz();
+    }
+  }).catch(()=>{if($('quiz-summary'))$('quiz-summary').textContent='練習データを読み込めませんでした。場面別コースと辞典から引き続き学べます。';if($('flash-message'))$('flash-message').textContent='ほかの絵札を読み込めませんでした。表示中の一語と、場面別コース・辞典はそのまま読めます。';});
 })();

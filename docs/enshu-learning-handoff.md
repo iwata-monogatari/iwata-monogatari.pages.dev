@@ -57,3 +57,11 @@
 ## 2026-11-13：辞典から学び舎への案内の件数依存を除去
 - c006.html の /enshu/ を指す静的原稿リンク1箇所を「遠州弁の学び舎：語彙・会話・コース別練習へ →」へ変更。旧「402作例・12コース・268問」という学び舎全体の説明へ戻さない。URL・辞典の134語/402作例・資料印51語/磐南2011の29語・182学習語/546作例/364方向別練習・39研究ノートを保持する。辞典自体の402作例という正しい表記を全置換しない。
 - tools/build_c006_dictionary.mjsの生成マーカー外の静的原稿を変更し、完全build後も保持する。公開と本番確認の実際の結果は docs/growth/execution-log.md の同日節、および C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-13-c006-academy-link/verification.json で照合する。検索効果の実証ではない。同じ本文差分・更新日・履歴を重ねず、新しい監視・予定・通知条件を追加しない。
+
+
+## 2026-11-14：学び方を独立ページへ分割
+- 学び舎 /enshu/ の7入口はすべて別ページへ。場面一覧 /enshu/courses/、12場面 /enshu/courses/<場面>/、クイズ /enshu/practice/、一語 /enshu/words/ に分割。運ぶ・直す・道具だけURLは work-tools、既存データの場面IDは work を保持する。講座・研究・辞典・変換の既存URLは保持。
+- 分割は tools/enshu_navigation.py と tools/build_enshu_learning.py から生成。元データ182語・546作例・24会話、各場面の既存所属と本文、原注・資料・画像を保持。既存辞典134語・資料380記録・研究（現行一覧は data/enshu-research-index.json）を再制作・固定件数へ巻き戻さない。今回分割した機能ページを知識記事・新着へ重複加算しない。
+- 各分割ページの上下に「学び舎の入口へ」と7入口、クイズには選んだ場面への戻りリンクを配置。c008にも学び舎への戻りを追加。場面の3問、資料語限定、クイズ結果から一語、作例切替・出典・共有リンクを保持。クイズ回答・成績の送信や保存は追加しない。
+- 旧 /enshu/#courses・#practice・#cards・#scene-<ID>、/enshu/?word=<公開ID>#cards は enshu-legacy-navigation.js で対応する独立ページへ replace。新しい通常の入口リンクをページ内ジャンプに戻さない。未知のsceneは転送しない。共有語IDは正本データから照合し、不明なIDで意味を作らない。
+- 原本・差分・検査・公開SHA/deploy/本番PC・390px・320pxの実際の結果は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-enshu-navigation/verification.json を参照。未完了を公開完了へ読み替えず、この構造を再施工しない。検索効果は未測定。既存自動実行の予定・状態・通知条件を変えず、新規監視は作らない。

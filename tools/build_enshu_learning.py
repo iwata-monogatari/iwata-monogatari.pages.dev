@@ -5,6 +5,7 @@ from urllib.parse import quote
 from enshu_explorer import explorer_section
 from enshu_study import build_study
 from enshu_materials import expand_materials
+from enshu_navigation import split_pages
 R=Path(__file__).resolve().parents[1];E=lambda x:html.escape(str(x),quote=True)
 d=json.loads((R/'data/c006-dictionary.json').read_text(encoding='utf-8'))
 p=R/'data/enshu-learning.json';learning=expand_materials(R,json.loads(p.read_text(encoding='utf-8')),d)
@@ -43,6 +44,7 @@ if '/assets/css/enshu-study.css' not in result:
  result=result.replace('</head>','<link rel="stylesheet" href="/assets/css/enshu-study.css?v=20261112"></head>',1)
 result=result.replace('enshu-study.css?v=20261112"','enshu-study.css?v=20261112-more"')
 serialized=json.dumps(learning,ensure_ascii=False,indent=2)+'\n'
+result=split_pages(R,result,course_section,sections,practice,explorer_section(learning,by),learning['scenes'],'--check' in sys.argv)['enshu/index.html']
 if '--check' in sys.argv:
  assert serialized==p.read_text(encoding='utf-8') and result==original,'Run tools/build_enshu_learning.py'
 else:
