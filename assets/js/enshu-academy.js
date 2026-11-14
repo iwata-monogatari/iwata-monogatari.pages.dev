@@ -1,6 +1,13 @@
 (() => {
   'use strict';
   const $=id=>document.getElementById(id);
+  const quizConfig=$('quiz-page-config')?JSON.parse($('quiz-page-config').textContent):null;
+  if(quizConfig&&!quizConfig.scene){
+    const current=new URL(location.href),sid=current.searchParams.get('scene');
+    if(Object.prototype.hasOwnProperty.call(quizConfig.paths,sid)){
+      current.pathname=quizConfig.paths[sid];current.searchParams.delete('scene');location.replace(current.pathname+current.search+current.hash);return;
+    }
+  }
   const coursePath=id=>'/enshu/courses/'+(id==='work'?'work-tools':id)+'/';
   const node=(tag,text)=>{const n=document.createElement(tag);n.textContent=text;return n;};
   const shuffled=list=>{const a=[...list];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
@@ -119,10 +126,17 @@
     data=d;const params=new URLSearchParams(location.search),requested=params.get('word');
     if($('flash-next')){deck('all',d.entries.some(e=>e.id===requested)?requested:'ponpon');flash();explorerControls.forEach(id=>$(id).disabled=false);starterButtons.forEach(b=>b.disabled=false);}
     if($('quiz-start')){
-      const scene=d.scenes.find(s=>s.id===params.get('scene'));
+      const scene=d.scenes.find(s=>s.id===(quizConfig?quizConfig.scene:params.get('scene')));
       if(scene){$('quiz-scene').value=scene.id;$('quiz-course-return').href=coursePath(scene.id);$('quiz-course-return').textContent='← 「'+scene.title+'」に戻る';}
       if(['historical','dictionary'].includes(params.get('source'))) $('quiz-source').value=params.get('source');
-      for(const id of ['quiz-scene','quiz-length','quiz-direction','quiz-category','quiz-source'])$(id).onchange=()=>{updateQuizSetup();const selected=d.scenes.find(s=>s.id===$('quiz-scene').value);$('quiz-course-return').href=selected?coursePath(selected.id):'/enshu/courses/';$('quiz-course-return').textContent=selected?'← 「'+selected.title+'」に戻る':'← 場面を選び直す';};
+      for(const [key,id] of [['length','quiz-length'],['direction','quiz-direction'],['category','quiz-category']]){const value=params.get(key);if([...$(id).options].some(o=>o.value===value))$(id).value=value;}
+      for(const id of ['quiz-scene','quiz-length','quiz-direction','quiz-category','quiz-source'])$(id).onchange=()=>{
+        if(id==='quiz-scene'&&quizConfig){
+          const sid=$('quiz-scene').value,target=sid==='all'?'/enshu/practice/':quizConfig.paths[sid];
+          if(target){const url=new URL(location.href);url.pathname=target;url.searchParams.delete('scene');url.searchParams.delete('start');url.hash='';for(const [key,field] of [['length','quiz-length'],['direction','quiz-direction'],['category','quiz-category'],['source','quiz-source']])url.searchParams.set(key,$(field).value);location.assign(url.pathname+url.search);return;}
+        }
+        updateQuizSetup();const selected=d.scenes.find(s=>s.id===$('quiz-scene').value);$('quiz-course-return').href=selected?coursePath(selected.id):'/enshu/courses/';$('quiz-course-return').textContent=selected?'← 「'+selected.title+'」に戻る':'← 場面を選び直す';
+      };
       updateQuizSetup();if(scene&&params.get('start')==='1')beginQuiz();
     }
   }).catch(()=>{if($('quiz-summary'))$('quiz-summary').textContent='練習データを読み込めませんでした。場面別コースと辞典から引き続き学べます。';if($('flash-message'))$('flash-message').textContent='ほかの絵札を読み込めませんでした。表示中の一語と、場面別コース・辞典はそのまま読めます。';});

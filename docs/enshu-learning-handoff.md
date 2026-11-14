@@ -100,3 +100,8 @@
 - 正本 data/enshu-learning.json 等の182語・546作例・原注・辞典・資料・研究ノートを変更しない。作例は編集部教材であり、発話引用・当時の会話復元・全域使用の証明へ読み替えない。資料のない語へ出典を創作しない。
 - tools/enshu_word_pages.py を tools/enshu_navigation.py / tools/build_enshu_learning.py から再生成。旧 /enshu/words/?word=<ID> は既知182IDのみ個別URLへ引き継ぐ。場面・クイズからの新規リンクは個別URLへ。未知IDは推測して転送しない。機能頁を知識記事・新着へ重複計上せず、旧単一ウィジェットへ巻き戻さない。
 - 公開・検証の実際の状態は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-word-pagination/verification.json を参照。既存自動実行の範囲・予定・状態・通知条件を変更せず、新規監視は作成しない。
+
+## 2026-11-14：クイズを12場面の独立ページへ分割
+- /enshu/practice/ に12場面の一覧と従来の全182語の出題設定を保持し、各 /enshu/practice/<場面ID>/ へ分割。work のURLのみ work-tools。各頁に共通ミドルヘッダー、一覧・出題設定への戻り、場面本文への戻り、既存許諾済み磐田写真と撮影地・作者・出典・ライセンスを配置。写真は語の採録地の証拠と扱わない。
+- 問題・答え・ヒント・解説・採点・復習の正本182語/546作例と既存出題処理は保持。問題数3/5/10、双方向、分類、辞典/歴史資料の絞り込みを保持し、場面セレクターの移動時にも選択設定を引き継ぐ。旧 ?scene=<ID>&start=1 等は既知12場面だけ正規URLへ移動し、開始・資料・問題数・方向・分類条件を保持。場面の通常リンクは個別クイズURLへ。成績の送信・保存は追加しない。
+- tools/enshu_quiz_pages.py を tools/enshu_navigation.py / tools/build_enshu_learning.py から生成。機能頁を知識記事数・新着へ重複加算しない。公開・本番・検証の実際の結果は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-quiz-pagination/verification.json を参照。旧単一場面切替だけの構造へ戻さず、既存自動実行の範囲・予定・状態・通知条件を変更しない。
