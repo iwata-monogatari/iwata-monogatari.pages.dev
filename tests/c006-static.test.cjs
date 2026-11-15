@@ -10,6 +10,13 @@ const ROOT = path.resolve(__dirname, '..');
 const html = fs.readFileSync(path.join(ROOT, 'c006.html'), 'utf8');
 const json = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/c006-dictionary.json'), 'utf8'));
 const COUNT = json.entries.length;
+test('existing explanation navigation recognizes miren without adding dictionary words', () => {
+  const fn = vm.runInNewContext(`(${html.match(/function hasMirenExplanation\(ts\)\{[\s\S]*?\n\}/)[0]})`);
+  for (const terms of [['見れん'], ['みれん'], ['見れん','意味'], ['遠州弁','見れん']]) assert.equal(fn(terms), true);
+  for (const terms of [[], ['未練'], ['ぽんぽん'], ['見れん','無関係']]) assert.equal(fn(terms), false);
+  assert.match(html, /id="negative-possibility">打消しと逆接の、細かな使い分け/);
+  assert.equal((html.match(/id="explanation-match"/g)||[]).length,1);
+});
 const generator = import(pathToFileURL(path.join(ROOT, 'tools/build_c006_dictionary.mjs')));
 const fields = { word: 'w', kana: 'k', cat: 'cat', mean: 'm', example: 'ex', std: 'std' };
 

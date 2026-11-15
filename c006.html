@@ -53,7 +53,7 @@
   .hero h1 .accent{color:var(--brown-deep);background:linear-gradient(transparent 62%, rgba(166,113,62,.18) 62%);}
   .hero p{font-size:16.5px;color:var(--ink-soft);margin:0;line-height:2;max-width:660px;}
   .hero .region-answer{margin:0 0 18px;padding:14px 16px;border-left:3px solid var(--brown);background:var(--paper-deep);}
-  #dialect-region{scroll-margin-top:100px;}
+  #dialect-region,#negative-possibility,#search{scroll-margin-top:100px;}
 
   .tabs{max-width:900px;margin:0 auto;padding:18px 24px 0;display:flex;gap:8px;border-bottom:1px solid var(--line);}
   .tab{padding:11px 22px;font-size:15px;font-weight:700;font-family:"Shippori Mincho",serif;
@@ -2111,6 +2111,7 @@
     </div>
     <p class="count" id="count" role="status">134 語</p>
     <div class="suggest" id="suggest" hidden></div>
+    <div class="suggest" id="explanation-match" hidden role="status">「見れん」は「もっと知る」に解説があります。<a href="#negative-possibility">「見れん」の解説を読む →</a></div>
   </div>
   <div class="dict" id="dict">
   <!-- c006-dictionary:start -->
@@ -5036,7 +5037,8 @@
 </div>
 
 <div class="gsec">
-<p class="gh2" role="heading" aria-level="2">打消しと逆接の、細かな使い分け</p>
+<p class="gh2" role="heading" aria-level="2" id="negative-possibility">打消しと逆接の、細かな使い分け</p>
+<p><a href="#search">← 検索結果へ戻る</a></p>
 <p>文法欄で示した打消しの「ん」には、過去や可能と組み合わさると、さらに細かな形がある。逆接（〜けれど）の言い方も、遠州のなかで地域差がある。</p>
 <div class="gtable-wrap">
 <table class="gtable">
@@ -5391,6 +5393,7 @@ function showPanel(name){
 }
 document.querySelectorAll(".tab").forEach(t=>{ t.onclick=()=>showPanel(t.dataset.tab); });
 document.querySelector('a[href="#dialect-region"]').addEventListener("click",()=>showPanel("more"));
+document.querySelector('a[href="#negative-possibility"]').addEventListener("click",()=>showPanel("more"));
 
 function makeChips(container, items, getActive, setActive, cls){
   items.forEach(label=>{
@@ -5479,7 +5482,13 @@ function render(){
   // 並び順：検索中は関連度順、そうでなければ五十音順
   list.forEach(r=>{ const el = entryEls.get(r.x.d.w); if (el) dictEl.insertBefore(el, emptyEl); });
   emptyEl.hidden = list.length !== 0;
+  document.getElementById("explanation-match").hidden = !hasMirenExplanation(ts);
   renderSuggest(ts, list.length);
+}
+
+function hasMirenExplanation(ts){
+  return ts.some(t=>t==="見れん" || t==="みれん") &&
+    ts.every(t=>["見れん","みれん","意味","方言","遠州弁"].includes(t));
 }
 
 function renderSuggest(ts, n){

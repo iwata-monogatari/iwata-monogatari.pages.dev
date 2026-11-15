@@ -163,3 +163,8 @@
 
 - 入口の7リンクを別ページに統一し、場面一覧・12場面・クイズ・一語表示を分離。上下の学び舎ナビと、場面からのクイズの戻り先を明示。旧hash・語ID共有リンクは対応ページへ引き継ぐ。教材・辞典・研究原文を追加制作せず、機能ページを新着記事へ重複登録しない。
 - 生成元、保護条件、今後の重複防止は docs/enshu-learning-handoff.md の同日節。完全build・関連検査・公開コミット・既存Pages経路・本番表示の実際の成否は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-14-enshu-navigation/verification.json に保存。公開状態と検証状態を同一視しない。
+
+## 2026-11-15 c006：「見れん」検索から既存解説へ
+
+- 見れん/みれん/ミレンの検索に、既存「もっと知る」の打消し・可能の説明へ進む案内と検索結果への戻りを追加。固定ID negative-possibility と既存hash処理でタブと共有URLを開く。134語の意味・402作例・出典・絵札・通常検索・写真・共通案内を保持し、新語・語義は追加していない。
+- 対象は生成領域外の検索UIと既存見出しの固定ID。docs/enshu-learning-handoff.md の保護指示を参照。検証・commit・deploy・本番PC/320px/390px・検索条件保持の実際の結果は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-15-c006-miren-search/verification.json に保存。既存の検索導線不足を解消する変更であり、検索流入増の効果は未評価。
