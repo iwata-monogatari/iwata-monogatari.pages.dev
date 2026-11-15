@@ -81,6 +81,8 @@ def split_pages(root, result, courses, lessons, practice, explorer, scenes, chec
     courses = external_activity_links(courses, scenes)
     courses = re.sub(r'<div class="course-view-controls">.*?</div>', '', courses, flags=re.S)
     outputs['enshu/courses/index.html'] = document('/enshu/courses/', '場面から読む｜遠州弁の12コース', '暮らしの場面を選び、ことばの意味と24の会話を読む。各場面は独立したページで開きます。', courses)
+    from enshu_index_hero import courses_index_hero
+    outputs['enshu/courses/index.html'] = courses_index_hero(outputs['enshu/courses/index.html'])
     for number, scene in enumerate(scenes):
         sid = scene['id']
         body = re.search(r'<section id="scene-'+re.escape(sid)+r'".*?</section>', lessons, re.S).group(0)
