@@ -30,7 +30,7 @@
     const note=document.createElement('p');note.textContent='本文中の文字が一致する既存の解説です。';box.appendChild(note);
     const list=document.createElement('ul');
     matches.forEach(s=>{const li=document.createElement('li'),a=document.createElement('a');a.href='#'+s.id;a.textContent=s.title+'（'+s.panel+'）';
-      a.addEventListener('click',()=>document.querySelector('.tab[data-tab="'+(s.panel==='文法と語法'?'grammar':'more')+'"]').click());
+      a.addEventListener('click',event=>{event.preventDefault();root.history.pushState(null,'','#'+s.id);root.openHash();});
       li.appendChild(a);list.appendChild(li);});box.appendChild(list);
   }
   root.c006ExplanationSearch={render};render(document.getElementById('search').value);
