@@ -57,6 +57,7 @@ def external_activity_links(markup, scenes):
 
 def split_pages(root, result, courses, lessons, practice, explorer, scenes, check=False, entries=None):
     head = re.search(r'<head>(.*?)</head>', result, re.S).group(1)
+    head = re.sub(r'<!-- academy-home-hero:style -->.*?<!-- /academy-home-hero:style -->','',head,flags=re.S)
     head = re.sub(r'<script\b[^>]*enshu-academy\.js[^>]*></script>', '', head)
     head = re.sub(r'<script\b[^>]*enshu-legacy-navigation\.js[^>]*></script>', '', head)
     head = re.sub(r'<link\b[^>]*enshu-navigation\.css[^>]*>', '', head)
@@ -115,7 +116,8 @@ def split_pages(root, result, courses, lessons, practice, explorer, scenes, chec
     legacy = '<noscript><p>以前のページ内リンクをご利用の方も、上の学び方から各ページへ進めます。</p></noscript>'
     if legacy not in landing:
         landing = landing.replace('</main>', legacy+'</main>')
-    outputs['enshu/index.html'] = landing
+    from enshu_home_hero import apply_home_hero
+    outputs['enshu/index.html'] = apply_home_hero(landing)
     for path, markup in outputs.items():
         target = root/path
         if check:
