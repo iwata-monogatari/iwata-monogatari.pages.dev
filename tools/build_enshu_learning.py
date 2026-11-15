@@ -51,6 +51,8 @@ for target_url in ('/c006','/c008'):
  if target_url=='/c006':
   from enshu_dictionary_layout import apply_dictionary_layout
   after=apply_dictionary_layout(after)
+  from c006_explanation_navigation import apply_explanation_navigation
+  after=apply_explanation_navigation(after)
  if target_url=='/c008':
   from enshu_converter_layout import apply_converter_layout
   after=apply_converter_layout(after)
