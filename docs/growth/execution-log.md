@@ -1,5 +1,10 @@
 # 磐田物語 集客改善・実行記録
 
+## 2026-11-17 c172：辞典案内の旧件数を除去
+
+- 資料室 source-nav の「122語の辞典・絵札」を「遠州弁辞典・絵札」へ変更し、同じ /c006 に遷移する。収録数を別の固定数へ置換せず、辞典側を正本とする。ナビラベル以外の本文・生成資料表・原注・画像・地域説明・134語の辞典を保持。
+- 完全build・既存資料テスト・各公開ゲート・公開commit・Pages・本番PC/320px/390pxの実際の結果は C:/Users/Owner/Documents/Codex/2026-10-29/zi/outputs/2026-11-17-c172-dictionary-label/verification.json と差分・画面記録を参照。既存の不整合を解消する品質修正であり、検索流入増・順位・AI引用の成果は未評価。保護条件は docs/enshu-learning-handoff.md の同日節。
+
 ## 2026-10-01（JST）初日監査
 
 - 対象: https://iwata-monogatari.net/ ／ `iwata-monogatari/iwata-monogatari.pages.dev` の `main`。
