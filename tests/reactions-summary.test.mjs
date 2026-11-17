@@ -105,3 +105,29 @@ test("missing database returns an error, not misleading zero counts", async () =
   assert.equal(response.status, 500);
   assert.equal((await response.json()).ok, false);
 });
+
+test("album votes can be changed and appear on the Iwata dashboard under the canonical photo link", async () => {
+  const { sqlite, env } = fixture();
+  const origin = "https://iwataalb.atawi.link";
+  const { onRequestPost } = await import("../functions/api/reactions/react.js");
+  const vote = (reaction, source = origin) => onRequestPost({ env, request: new Request("https://iwata-monogatari.net/api/reactions/react", {
+    method: "POST", headers: {Origin: source}, body: JSON.stringify({
+      site:"iwataalb", path:"/photos/station/", title:"駅前", vid:"0123456789abcdef", reaction
+    })
+  }) });
+  try {
+    assert.equal((await vote("local", "https://example.org")).status, 400);
+    assert.equal((await vote("local")).status, 200);
+    assert.equal((await vote("more")).status, 200);
+    const result = await (await summary({request:request("?site=iwata"), env})).json();
+    const photo = result.pages.find(row => row.path === origin + "/photos/station/");
+    assert.equal(photo.total, 1);
+    assert.equal(photo.more, 1);
+    assert.equal(photo.local, 0);
+    assert.ok(result.pages.every(row => !row.path.startsWith("https://oishi-hiroyuki.org")));
+    const privateRequest = request("?site=iwata");
+    privateRequest.headers.set("Authorization", "Bearer test-only-token");
+    const privateResult = await (await admin({request:privateRequest, env})).json();
+    assert.ok(privateResult.pages.some(row => row.path === photo.path));
+  } finally { sqlite.close(); }
+});

@@ -16,7 +16,7 @@ export function normalizePath(input) {
 }
 
 // 他サイトの記事も同じ表に記録する。磐田物語はパスのまま、他サイトはオリジン付きの完全URLで保存して区別する。
-export const PARTNER_SITES = { oishi: "https://oishi-hiroyuki.org" };
+export const PARTNER_SITES = { oishi: "https://oishi-hiroyuki.org", iwataalb: "https://iwataalb.atawi.link" };
 
 export function storedPath(body, request) {
   const path = normalizePath(body && body.path);
@@ -26,6 +26,9 @@ export function storedPath(body, request) {
   const origin = PARTNER_SITES[site];
   // 他サイト名義の記録は、そのサイトのページから送られたものだけ受け付ける
   if (!origin || request.headers.get("Origin") !== origin) return "";
+  if (site === "iwataalb") {
+    return /^\/photos\/[\w-]+$/.test(path) ? origin + path + "/" : "";
+  }
   return origin + path;
 }
 

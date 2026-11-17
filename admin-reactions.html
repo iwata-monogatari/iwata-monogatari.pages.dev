@@ -64,7 +64,7 @@
     <div class="box toolbar">
       <label>サイト:
         <select id="site">
-          <option value="iwata" selected>磐田物語</option>
+          <option value="iwata" selected>磐田物語・磐田懐かし写真館</option>
           <option value="oishi">大石浩之（oishi-hiroyuki.org）</option>
           <option value="all">すべて（記事の反応）</option>
         </select>
@@ -154,7 +154,8 @@
   // oishi-hiroyuki.org では2番目のボタンを「共感した」として使っている（記録上の種類は local）
   var LABEL_OISHI = { learned:"📖 知らなかった", local:"👍 共感した", more:"✍️ もっと知りたい" };
   var LABEL = LABEL_IWATA;
-  function labelsFor(path) { return /^https?:/.test(path || "") ? LABEL_OISHI : LABEL_IWATA; }
+  function labelsFor(path) { if ((path || "").startsWith("https://iwataalb.atawi.link/")) return {learned:"初めて知った",local:"見覚えがある",more:"もっと見たい"};
+    return /^https?:/.test(path || "") ? LABEL_OISHI : LABEL_IWATA; }
   var COLOR = { learned:"var(--c-learned)", local:"var(--c-local)", more:"var(--c-more)" };
   var pages = [], sortKey = "total", sortDesc = true;
   var adminMode = false, requestId = 0;
@@ -266,6 +267,7 @@
       var tr = el("tr");
       var td = el("td"), a = el("a", "", cleanTitle(p.title));
       a.href = p.path; a.target = "_blank"; a.rel = "noopener";
+      if (p.path.startsWith("https://iwataalb.atawi.link/")) td.appendChild(el("span", "tag", "写真館"));
       td.appendChild(a); td.appendChild(el("span", "path", p.path)); tr.appendChild(td);
       ["total","learned","local","more"].forEach(function (k) { tr.appendChild(el("td", "num", String(p[k]))); });
       var mixTd = el("td"), mix = el("div", "mix");
