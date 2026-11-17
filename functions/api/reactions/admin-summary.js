@@ -14,8 +14,7 @@ export async function onRequestGet({ request, env }) {
   const site = url.searchParams.get("site") || "iwata";
   // 磐田物語はパスのまま、他サイトはオリジン付きURLで保存している
   if (!["all", "iwata", ...Object.keys(PARTNER_SITES)].includes(site)) return json({ ok: false, error: "不明なサイトです。" }, 400);
-  const siteCond = site === "iwata" ? ` AND (path LIKE '/%' OR path LIKE '${PARTNER_SITES.iwataalb}/%')`
-    : site === "all" ? ""
+  const siteCond = site === "all" ? ""
     : PARTNER_SITES[site] ? ` AND path LIKE '${PARTNER_SITES[site]}/%'`
     : " AND path LIKE '/%'";
   const internalCond = (includeInternal ? "" : " AND internal = 0") + siteCond;

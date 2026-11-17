@@ -6,9 +6,9 @@ export async function onRequestGet({ request, env }) {
   if (!env.DB) return json({ ok: false, error: "データベース未設定です。" }, 503);
   const url = new URL(request.url);
   const site = url.searchParams.get("site") || "oishi";
-  if (!["iwata", "oishi", "all"].includes(site)) return json({ ok: false, error: "サイトの指定が正しくありません。" }, 400);
+  if (!["iwata", "all", ...Object.keys(PARTNER_SITES)].includes(site)) return json({ ok: false, error: "サイトの指定が正しくありません。" }, 400);
   const { days, today, since } = feedbackPeriod(url.searchParams);
-  const pattern = site === "all" ? "%" : site === "iwata" ? "/%" : PARTNER_SITES.oishi + "/%";
+  const pattern = site === "all" ? "%" : site === "iwata" ? "/%" : PARTNER_SITES[site] + "/%";
   const internal = url.searchParams.get("internal") === "1" ? "" : "AND internal = 0";
   try {
     await ensureFeedbackTables(env.DB);

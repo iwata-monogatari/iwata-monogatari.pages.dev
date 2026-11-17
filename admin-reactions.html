@@ -64,7 +64,8 @@
     <div class="box toolbar">
       <label>サイト:
         <select id="site">
-          <option value="iwata" selected>磐田物語・磐田懐かし写真館</option>
+          <option value="iwata" selected>磐田物語</option>
+          <option value="iwataalb">磐田懐かし写真館</option>
           <option value="oishi">大石浩之（oishi-hiroyuki.org）</option>
           <option value="all">すべて（記事の反応）</option>
         </select>
@@ -85,9 +86,9 @@
     <div id="article-reactions">
     <div class="tiles">
       <div class="tile"><div class="k">反応の合計</div><div class="v" id="t-total">0</div></div>
-      <div class="tile"><div class="k"><span class="dot" style="background:var(--c-learned)"></span>📖 知らなかった</div><div class="v" id="t-learned">0</div></div>
+      <div class="tile"><div class="k"><span class="dot" style="background:var(--c-learned)"></span><span id="lbl-learned">📖 知らなかった</span></div><div class="v" id="t-learned">0</div></div>
       <div class="tile"><div class="k"><span class="dot" style="background:var(--c-local)"></span><span id="lbl-local">🏠 見覚え・行きたい</span></div><div class="v" id="t-local">0</div></div>
-      <div class="tile"><div class="k"><span class="dot" style="background:var(--c-more)"></span>✍️ もっと知りたい</div><div class="v" id="t-more">0</div></div>
+      <div class="tile"><div class="k"><span class="dot" style="background:var(--c-more)"></span><span id="lbl-more">✍️ もっと知りたい</span></div><div class="v" id="t-more">0</div></div>
       <div class="tile hide" id="visitors-tile"><div class="k">反応した人（端末）</div><div class="v" id="t-visitors">0</div></div>
       <div class="tile"><div class="k">届いた一言</div><div class="v" id="t-notes">0</div></div>
     </div>
@@ -153,8 +154,9 @@
   var LABEL_IWATA = { learned:"📖 知らなかった", local:"🏠 見覚え・行きたい", more:"✍️ もっと知りたい" };
   // oishi-hiroyuki.org では2番目のボタンを「共感した」として使っている（記録上の種類は local）
   var LABEL_OISHI = { learned:"📖 知らなかった", local:"👍 共感した", more:"✍️ もっと知りたい" };
+  var LABEL_ALBUM = {learned:"初めて知った",local:"見覚えがある",more:"もっと見たい"};
   var LABEL = LABEL_IWATA;
-  function labelsFor(path) { if ((path || "").startsWith("https://iwataalb.atawi.link/")) return {learned:"初めて知った",local:"見覚えがある",more:"もっと見たい"};
+  function labelsFor(path) { if ((path || "").startsWith("https://iwataalb.atawi.link/")) return LABEL_ALBUM;
     return /^https?:/.test(path || "") ? LABEL_OISHI : LABEL_IWATA; }
   var COLOR = { learned:"var(--c-learned)", local:"var(--c-local)", more:"var(--c-more)" };
   var pages = [], sortKey = "total", sortDesc = true;
@@ -213,7 +215,9 @@
 
   function render(d, authenticated) {
     pages = d.pages || [];
-    LABEL = d.site === "oishi" ? LABEL_OISHI : LABEL_IWATA;
+    LABEL = d.site === "oishi" ? LABEL_OISHI : d.site === "iwataalb" ? LABEL_ALBUM : LABEL_IWATA;
+    $("lbl-learned").textContent = LABEL.learned;
+    $("lbl-more").textContent = LABEL.more;
     $("lbl-local").textContent = d.site === "all" ? "🏠 見覚え／👍 共感" : LABEL.local;
     $("th-local").textContent = d.site === "oishi" ? "👍" : d.site === "all" ? "🏠👍" : "🏠";
     var sum = { learned:0, local:0, more:0 };
@@ -343,7 +347,7 @@
   $("reload-btn").addEventListener("click", load);
   $("days").addEventListener("change", load);
   $("site").addEventListener("change", load);
-  try { var qs = new URLSearchParams(location.search).get("site"); if (["iwata", "oishi", "all"].indexOf(qs) !== -1) $("site").value = qs; } catch (e) {}
+  try { var qs = new URLSearchParams(location.search).get("site"); if (["iwata", "iwataalb", "oishi", "all"].indexOf(qs) !== -1) $("site").value = qs; } catch (e) {}
   $("internal").addEventListener("change", load);
   $("forget-btn").addEventListener("click", function () {
     fetch("/api/reactions/admin-session", { method: "DELETE", cache: "no-store", credentials: "same-origin" })

@@ -106,7 +106,7 @@ test("missing database returns an error, not misleading zero counts", async () =
   assert.equal((await response.json()).ok, false);
 });
 
-test("album votes can be changed and appear on the Iwata dashboard under the canonical photo link", async () => {
+test("album votes can be changed and appear only under the album under the canonical photo link", async () => {
   const { sqlite, env } = fixture();
   const origin = "https://iwataalb.atawi.link";
   const { onRequestPost } = await import("../functions/api/reactions/react.js");
@@ -119,15 +119,23 @@ test("album votes can be changed and appear on the Iwata dashboard under the can
     assert.equal((await vote("local", "https://example.org")).status, 400);
     assert.equal((await vote("local")).status, 200);
     assert.equal((await vote("more")).status, 200);
-    const result = await (await summary({request:request("?site=iwata"), env})).json();
+    const result = await (await summary({request:request("?site=iwataalb"), env})).json();
     const photo = result.pages.find(row => row.path === origin + "/photos/station/");
+    assert.equal(result.pages.length, 1);
     assert.equal(photo.total, 1);
     assert.equal(photo.more, 1);
     assert.equal(photo.local, 0);
     assert.ok(result.pages.every(row => !row.path.startsWith("https://oishi-hiroyuki.org")));
-    const privateRequest = request("?site=iwata");
+    const privateRequest = request("?site=iwataalb");
     privateRequest.headers.set("Authorization", "Bearer test-only-token");
     const privateResult = await (await admin({request:privateRequest, env})).json();
-    assert.ok(privateResult.pages.some(row => row.path === photo.path));
+    assert.deepEqual(privateResult.pages.map(row => row.path), [photo.path]);
+    const iwataReq = request("?site=iwata");
+    iwataReq.headers.set("Authorization", "Bearer test-only-token");
+    for (const read of [admin, summary]) {
+      const iwata = await (await read({request:iwataReq,env})).json();
+      assert.ok(iwata.pages.length);
+      assert.ok(iwata.pages.every(row => row.path.startsWith("/")));
+    }
   } finally { sqlite.close(); }
 });
