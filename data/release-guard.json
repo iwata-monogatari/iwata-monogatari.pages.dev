@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1794874928,
-  "generation": 20261117092208,
-  "git_commit_at_stamp": "36d3da1afc1529c18d34ecf529f0ea33c42151d8",
+  "generated_at_unix": 1794906637,
+  "generation": 20261117092209,
+  "git_commit_at_stamp": "564d47a3d8c5f28b61ea8a6bed8558bbe5bcd4a2",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,11 +31,11 @@
     },
     {
       "path": "c034.html",
-      "sha256": "d53bb7686d52295a2d9bc4799652eb2e6bbe701f0416f3eac14882553c275319"
+      "sha256": "6597a63b6ac1a0c344ceee8bb7c43abf5d961b807a22bd8dc2940fede0df2080"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "2c8f3abf18fa766b78a717b6643b91629dd1dba39f10c8ba6960b926e746828a"
+      "sha256": "16f47f2e7547f47dadee3c3ada83df2866189b0f325f754d93f254332af3b0a8"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "10116f681332da05751b1a7d1b3a3cdfb62c7570752adb1480be1cd1914e2ba5"
+      "sha256": "17bbcdc54240258dab1d7524f6b6398ca639505254e62635ac6d81af68c8e1e4"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "787faa0341c04364a7d295418bbf58c2086727c1b8b14dcc0f21a9a433e02519"
+      "sha256": "bfd7d1c83ac1feecdd4652efbb3fce681de4c8a2b27c5bd8cd27c2c99fedb612"
     },
     {
       "path": "updates.html",
-      "sha256": "1012fe431221c9108c7d5841d95bdbd8c7e2a56dcd021af9a78a031bc157245b"
+      "sha256": "557d145ce903eb1a408ad30607e57d3af92df7e60a4264daab77aae37c2fbd11"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "511df83dc9ec1ea4e7d9fc1c968abff2e322b032b27419551325b74071cfcece",
+      "content_sha256": "dafded70a11aa7b4e43e997dd98460eadf6d4b6945b1c5ef30f52b0f75199fdb",
       "path": "index.html",
-      "sha256": "10116f681332da05751b1a7d1b3a3cdfb62c7570752adb1480be1cd1914e2ba5",
+      "sha256": "17bbcdc54240258dab1d7524f6b6398ca639505254e62635ac6d81af68c8e1e4",
       "url": "/"
     },
     {
-      "content_sha256": "6cab1f9af3e6c7b18047ff7071cfcc06f59bacb7dac6cc07c7360c6a87f36929",
+      "content_sha256": "d175b800f2e2f08db16963245129536febe1529533530a17fe182e6e1ab35ec6",
       "path": "updates.html",
-      "sha256": "1012fe431221c9108c7d5841d95bdbd8c7e2a56dcd021af9a78a031bc157245b",
+      "sha256": "557d145ce903eb1a408ad30607e57d3af92df7e60a4264daab77aae37c2fbd11",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "4e0a23b04c3bd3ff21067e04e9b4733ed6a0ec7e0efbfa88536cadda77f04b7d",
+      "content_sha256": "e3acd8692d7725f40f0ecb8e46cdfde31cce78778e5eca4e091c3885faecee62",
       "path": "c034.html",
-      "sha256": "d53bb7686d52295a2d9bc4799652eb2e6bbe701f0416f3eac14882553c275319",
+      "sha256": "6597a63b6ac1a0c344ceee8bb7c43abf5d961b807a22bd8dc2940fede0df2080",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "9f64c5aa65e5b81afc1f760b73b17640b9aa21b2f5881b3358a0586cc1e1bc20",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "14b5c37c2aa3b6e80d42238a6fdd1b00423363689752d28869e34c150c995a74",
+      "path": "blog/20261117-ninomiya-yomikata/index.html",
+      "sha256": "fbfbd71cd3c1886ead820523294b19a937cf995ef62b4d99ad96bdf5bbb5aa8a",
+      "url": "/blog/20261117-ninomiya-yomikata"
     },
     {
       "content_sha256": "b30c5ad8ef368e885e777175858aae7d3e10115dd0789c940105e684db9478a4",
@@ -856,21 +862,15 @@
       "path": "enshu/research/maisaka-rhythm/index.html",
       "sha256": "86a4d2b9d1c816fbe75d36c34ae43e0cce9246bb6d0c9458c3a9b9878827a251",
       "url": "/enshu/research/maisaka-rhythm"
-    },
-    {
-      "content_sha256": "ef21bd49a7ff0cfe2c39b6fae01d6ec6c4738651adf65033f195ec0a5d90e6e8",
-      "path": "enshu/research/mamettai-meaning/index.html",
-      "sha256": "65fcc2fc717aa53ee3d42aeb13c3c490e2935124484bc610bfa8be42f23ddc0f",
-      "url": "/enshu/research/mamettai-meaning"
     }
   ],
   "schema": 1,
-  "state_hash": "6b036a53103b5b6e39c3f49a6e59142d244b466a43ac17b871d3a60a187b839c",
+  "state_hash": "877c1e3b76309e68e8c05f1f219dc51260b96b28c447bea7de88d52c3c967c05",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1322,
-    "new_articles": 1638,
-    "new_articles_sha256": "2c8f3abf18fa766b78a717b6643b91629dd1dba39f10c8ba6960b926e746828a",
+    "new_articles": 1639,
+    "new_articles_sha256": "16f47f2e7547f47dadee3c3ada83df2866189b0f325f754d93f254332af3b0a8",
     "pages_sha256": "04599b177715821fb14086fb7b930b5bd998b4e13ec5eac56ed905791ce76776",
     "pages_total": 1537,
     "published_pages": 1536
