@@ -1,7 +1,7 @@
 {
-  "generated_at_unix": 1794982592,
-  "generation": 20261118151632,
-  "git_commit_at_stamp": "ee2c04723fc1e45c9fc764b030b6aef5c56465ff",
+  "generated_at_unix": 1795074077,
+  "generation": 20261119074117,
+  "git_commit_at_stamp": "1866e29e36daea3c2a4dd74cff60edc21717594d",
   "policy": {
     "latest_article_limit": 120,
     "pinned_urls": [
@@ -31,11 +31,11 @@
     },
     {
       "path": "c034.html",
-      "sha256": "07abf4defd14e2cb66de28480359154786efa6ec13b2e010b5f802508c58ff08"
+      "sha256": "ff85781a643c9caf1d6ec99f763b3248393972cb81adfd2edead4d6fc6fdaae6"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "2dda30a90542797ab047e7db1475a55742003b7a166db4b9270bd6c6a1ca75e8"
+      "sha256": "40de9b25973f50fc46cc445b00f720ee08a7053ae649486b8bf02d315439b25b"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "8622c1ec16e0c6c565169700ed8b02b34a171cfdca6c726d6e56963d7ebe0ecd"
+      "sha256": "fc2bf88679aef09b32389ad9c1692bd5f50cd17be84561e4db8a51ef49c211d0"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "b67cdb26ce4bbc2449bfd8fd22477315e579f32cd1d2442facd9eb518db2ffa2"
+      "sha256": "8c929d8844bef6fa8158ce63f594ef693a3974c08d84be9d2800abfaa19b185e"
     },
     {
       "path": "updates.html",
-      "sha256": "d4a9343eccb2c0f80246e74027b6670ef5431bb89cf1483e7a2dd1de8736eaac"
+      "sha256": "832519e1989aa26eaeb00761abc31c4bcad20765adfcc49ef41e7d0f8bd22a42"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "7a544cb8116ae7f17eb9c1ac2905c05899ae84ef34e0e99c411bebca00a59130",
+      "content_sha256": "25f97067e54b4890b09659bcd701d4b15bd0ea6447f8b91084b34e1af2e60f28",
       "path": "index.html",
-      "sha256": "8622c1ec16e0c6c565169700ed8b02b34a171cfdca6c726d6e56963d7ebe0ecd",
+      "sha256": "fc2bf88679aef09b32389ad9c1692bd5f50cd17be84561e4db8a51ef49c211d0",
       "url": "/"
     },
     {
-      "content_sha256": "e9604bb88297af3bd098b59d72a2529216c57c9338d450b8241327d1dde95ceb",
+      "content_sha256": "2495028adfa8e1e94599e9423dc5d415a362aaf611cf21e878b28f37496246fc",
       "path": "updates.html",
-      "sha256": "d4a9343eccb2c0f80246e74027b6670ef5431bb89cf1483e7a2dd1de8736eaac",
+      "sha256": "832519e1989aa26eaeb00761abc31c4bcad20765adfcc49ef41e7d0f8bd22a42",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "c6762dc1f4d5005eba6fd4b4dbcfa6c0f7e45c8cee81d66083d6e11d89cc1fb2",
+      "content_sha256": "2fe8b3f8c25acd303d3fd24e407ad2fe5710c7910af0601cc283484ed4af4b74",
       "path": "c034.html",
-      "sha256": "07abf4defd14e2cb66de28480359154786efa6ec13b2e010b5f802508c58ff08",
+      "sha256": "ff85781a643c9caf1d6ec99f763b3248393972cb81adfd2edead4d6fc6fdaae6",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,18 @@
       "path": "s025.html",
       "sha256": "9f64c5aa65e5b81afc1f760b73b17640b9aa21b2f5881b3358a0586cc1e1bc20",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "15837a9bc28b4d94d91f343cb6f84aacf898672be831fe8009ed21a7098846cf",
+      "path": "blog/20261119-kaketsuka-yomikata/index.html",
+      "sha256": "12abd1d08d49e3e6025ebe8631942bb79f229614fbd3dba8e5fa1437d01b23d2",
+      "url": "/blog/20261119-kaketsuka-yomikata"
+    },
+    {
+      "content_sha256": "5227f2d94b6f69e5acba6f816e66eece8285552da0c1a4fa05ca896081603923",
+      "path": "blog/20261118-iwata-gappei-2005/index.html",
+      "sha256": "92a340985604bc55f684a62551c216a5e33d4d0acee28cba50680b4e10a75a99",
+      "url": "/blog/20261118-iwata-gappei-2005"
     },
     {
       "content_sha256": "8d608864440b9c290da5846c65f9f50e76f817fcc7a756197aa6893630eba33b",
@@ -850,27 +862,15 @@
       "path": "enshu/research/accent-history/index.html",
       "sha256": "4aeb0fc4b5fafb50527f165ee7bb4964d0337d0120ea6a808bacf5768e8366ae",
       "url": "/enshu/research/accent-history"
-    },
-    {
-      "content_sha256": "58c9bea5d386b8b5466f03a2a2dbb68b3c83e86cba7e9108a35b2ddd7a93d984",
-      "path": "enshu/research/generations-and-change/index.html",
-      "sha256": "62939690d399ab3b156251734eaf39f227441908520adf2c2bbaa52d46211d47",
-      "url": "/enshu/research/generations-and-change"
-    },
-    {
-      "content_sha256": "d66d21a1e94f41cedfa0eeedda207b8fa3a46100803448a8553f93ca559e41dc",
-      "path": "enshu/research/hamanako-variation/index.html",
-      "sha256": "7cd819e96a12d01e7e5b6d43d836b3677be7fd57c8082d6093de73c43b156ac4",
-      "url": "/enshu/research/hamanako-variation"
     }
   ],
   "schema": 1,
-  "state_hash": "8d6e5d72b719ca6a33b8a24a0361a94c1f9dd61d0a962defff46b85e73d46e30",
+  "state_hash": "191e95f45f5776c0a8093141418eaa19e73e66164408b41da220a24544d439d3",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1322,
-    "new_articles": 1640,
-    "new_articles_sha256": "2dda30a90542797ab047e7db1475a55742003b7a166db4b9270bd6c6a1ca75e8",
+    "new_articles": 1642,
+    "new_articles_sha256": "40de9b25973f50fc46cc445b00f720ee08a7053ae649486b8bf02d315439b25b",
     "pages_sha256": "04599b177715821fb14086fb7b930b5bd998b4e13ec5eac56ed905791ce76776",
     "pages_total": 1537,
     "published_pages": 1536
