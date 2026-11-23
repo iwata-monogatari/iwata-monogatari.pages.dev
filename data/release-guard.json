@@ -1,6 +1,6 @@
 {
-  "generated_at_unix": 1795331764,
-  "generation": 20261122161604,
+  "generated_at_unix": 1795389225,
+  "generation": 20261123081345,
   "git_commit_at_stamp": "",
   "policy": {
     "latest_article_limit": 120,
@@ -31,11 +31,11 @@
     },
     {
       "path": "c034.html",
-      "sha256": "109b87437adccbfe992fc536db381275f422436de51a5524e5826904eb8e450b"
+      "sha256": "42de970a02ffe340cd42ef4c22a4826efc6f01809409af17a553e17c259a27a2"
     },
     {
       "path": "data/new-articles.json",
-      "sha256": "338a323526a1e6d028e519b6acefa8c8d7601e26b459ff357d318193d238baa2"
+      "sha256": "5519d47eafb252d1f5d1ad6ccb56b2035668f5d17a773f0ed135e7f273e85087"
     },
     {
       "path": "data/pages.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "82cf6a341a8165cad6456a2fe99c77830e67cc5d1e65cdc49a3f3ad69d4408b8"
+      "sha256": "23cf5c5fde70929755a19c32870def189576ae8d292fac6f4e32c7b4fcc200e9"
     },
     {
       "path": "package.json",
@@ -63,30 +63,30 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "d80d4147d0093fc6c02248d777f89e4e8eff49dc28ff23ed9cd36ef03e369d4e"
+      "sha256": "095b40756e68e75c22a9cfd59c7b2f1aa34799e62f3856a4d1c93b0ccd9a1650"
     },
     {
       "path": "updates.html",
-      "sha256": "fe87ab337ce0b6118251865f874b02f5603edf10af6fc37e8b90e1da90c1e5b8"
+      "sha256": "7f927bd17be2afbb1be8a87baf4e7e463555c4897ac0604093dec02bb0d72231"
     }
   ],
   "protected_urls": [
     {
-      "content_sha256": "696300d9b391f9b723afa7d479399c09618117d22dd7eb0776867dbe80197169",
+      "content_sha256": "8b1271fec7fe80ccc1e84b09516dc20783ba18eee79928aedf3926addfd3077f",
       "path": "index.html",
-      "sha256": "82cf6a341a8165cad6456a2fe99c77830e67cc5d1e65cdc49a3f3ad69d4408b8",
+      "sha256": "23cf5c5fde70929755a19c32870def189576ae8d292fac6f4e32c7b4fcc200e9",
       "url": "/"
     },
     {
-      "content_sha256": "0356a5e8e53606fbbd11d299bec4a34b1ff942eac53d6b6df78ca6ac172a7965",
+      "content_sha256": "4bd1f5708d75cbf96213b81eabe47295739d3fdf69b2ea360906d5f51f1c641b",
       "path": "updates.html",
-      "sha256": "fe87ab337ce0b6118251865f874b02f5603edf10af6fc37e8b90e1da90c1e5b8",
+      "sha256": "7f927bd17be2afbb1be8a87baf4e7e463555c4897ac0604093dec02bb0d72231",
       "url": "/updates.html"
     },
     {
-      "content_sha256": "6e2b6c4f0886b04a51020487d1b22740439f71c99821123de3d19ffd2e61f746",
+      "content_sha256": "6bacd8f8b3d5dc058c78819a06c278dfb05d2122ae1f687a83456ac209632a25",
       "path": "c034.html",
-      "sha256": "109b87437adccbfe992fc536db381275f422436de51a5524e5826904eb8e450b",
+      "sha256": "42de970a02ffe340cd42ef4c22a4826efc6f01809409af17a553e17c259a27a2",
       "url": "/c034.html"
     },
     {
@@ -142,6 +142,12 @@
       "path": "s025.html",
       "sha256": "9f64c5aa65e5b81afc1f760b73b17640b9aa21b2f5881b3358a0586cc1e1bc20",
       "url": "/s025.html"
+    },
+    {
+      "content_sha256": "88d2b34dea861c8443bd8365fb74b63c37a0750b503b900f510b0b18675344f3",
+      "path": "blog/20261123-ryuyo-gyogyo-kakou-yomikata/index.html",
+      "sha256": "d31bb729ef24a67a82775c8c0f93bf207120df4772662d44c228b311129e2029",
+      "url": "/blog/20261123-ryuyo-gyogyo-kakou-yomikata"
     },
     {
       "content_sha256": "fcc16693c4741cf2c418067861ebfbd1dc27ea9fbc719134937b1e4cc75c095a",
@@ -856,21 +862,15 @@
       "path": "enshu/research/negation-paradigms/index.html",
       "sha256": "2d26f8a1628356c32e03f69f6112d02a5fa90069d397681abcb2b3f713008216",
       "url": "/enshu/research/negation-paradigms"
-    },
-    {
-      "content_sha256": "ac42a3a8dc9408ae472c52c2c51097843a28e317ba8aac99fabdb02e81089b65",
-      "path": "enshu/research/potential-forms/index.html",
-      "sha256": "aed984477897e1417efb70f15940c23628a628d2bc0399cf79fd9061779e49d8",
-      "url": "/enshu/research/potential-forms"
     }
   ],
   "schema": 1,
-  "state_hash": "8b936c5c9300908bec736a83648cb17c1c022bf763b35cdb10fcc3935dacf2c9",
+  "state_hash": "d04a2f76af0bf46f8552256f8c9e99510911911afd4b624fb25825f5cd34c462",
   "summary": {
     "archived_pages": 1,
     "knowledge_pages": 1322,
-    "new_articles": 1645,
-    "new_articles_sha256": "338a323526a1e6d028e519b6acefa8c8d7601e26b459ff357d318193d238baa2",
+    "new_articles": 1646,
+    "new_articles_sha256": "5519d47eafb252d1f5d1ad6ccb56b2035668f5d17a773f0ed135e7f273e85087",
     "pages_sha256": "04599b177715821fb14086fb7b930b5bd998b4e13ec5eac56ed905791ce76776",
     "pages_total": 1537,
     "published_pages": 1536
