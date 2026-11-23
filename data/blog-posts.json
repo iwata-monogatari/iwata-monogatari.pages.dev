@@ -1,2338 +1,2358 @@
 {
-  "_comment": "磐田物語ブログ 台帳。/blog/<slug>/index.html の実体と1対1で対応する。記事の追加は必ずこの台帳への追記と同時に行い、python scripts/build_blog.py で /blog/index.html を再生成する。",
-  "_policy": "このブログは新しい史実を主張しない。既存ページの読み解き・現在の風景との対比・資料の探し方・既存ページへの導線に限る。詳細は docs/BLOG-SKILL.md。",
-  "_url_convention": "/blog/<slug>/ （末尾スラッシュ付きディレクトリ。canonical・og:url もこの形に揃える）",
-  "_kinds": {
-    "reading": "既存ページの読み解き（既存記事を紹介・関連づける）",
-    "now-and-then": "現在の磐田の風景と、既存ページに書かれている過去との対比",
-    "how-to-research": "資料の探し方・郷土史の調べ方",
-    "guide": "地区・地名など、既存ページに既に書かれている内容への導線"
+ "_comment": "磐田物語ブログ 台帳。/blog/<slug>/index.html の実体と1対1で対応する。記事の追加は必ずこの台帳への追記と同時に行い、python scripts/build_blog.py で /blog/index.html を再生成する。",
+ "_policy": "このブログは新しい史実を主張しない。既存ページの読み解き・現在の風景との対比・資料の探し方・既存ページへの導線に限る。詳細は docs/BLOG-SKILL.md。",
+ "_url_convention": "/blog/<slug>/ （末尾スラッシュ付きディレクトリ。canonical・og:url もこの形に揃える）",
+ "_kinds": {
+  "reading": "既存ページの読み解き（既存記事を紹介・関連づける）",
+  "now-and-then": "現在の磐田の風景と、既存ページに書かれている過去との対比",
+  "how-to-research": "資料の探し方・郷土史の調べ方",
+  "guide": "地区・地名など、既存ページに既に書かれている内容への導線"
+ },
+ "posts": [
+  {
+   "slug": "20260901-showa-100-iwata-map",
+   "date": "2026-09-01",
+   "kind": "how-to-research",
+   "tags": [
+    "古地図",
+    "調査・資料"
+   ],
+   "title": "昭和100年の地図で磐田を読む方法",
+   "description": "昭和100年を機に、磐田の古地図を現在地へ結び付ける手順を案内する。寺社・台地端・川を基準にし、道や水路、地名、別資料の順で照合すると、古地図を急いで断定せずに読める。",
+   "internal_links": [
+    "/c011.html",
+    "/c131.html",
+    "/c068.html",
+    "/c004.html"
+   ],
+   "updated_at": "2026-10-14"
   },
-  "posts": [
-    {
-      "slug": "20260901-showa-100-iwata-map",
-      "date": "2026-09-01",
-      "kind": "how-to-research",
-      "tags": [
-        "古地図",
-        "調査・資料"
-      ],
-      "title": "昭和100年の地図で磐田を読む方法",
-      "description": "昭和100年を機に、磐田の古地図を現在地へ結び付ける手順を案内する。寺社・台地端・川を基準にし、道や水路、地名、別資料の順で照合すると、古地図を急いで断定せずに読める。",
-      "internal_links": [
-        "/c011.html",
-        "/c131.html",
-        "/c068.html",
-        "/c004.html"
-      ],
-      "updated_at": "2026-10-14"
-    },
-    {
-      "slug": "20260827-iwata-monogatari-no-arukikata",
-      "date": "2026-08-27",
-      "kind": "guide",
-      "tags": [
-        "サイト案内",
-        "調査・資料"
-      ],
-      "title": "磐田物語の歩き方 ── 地区・テーマ・史料室という三つの入口",
-      "description": "千本を超える記事の中から、読みたい一本にたどり着くための入口を整理する。地区から降りる、テーマから横に読む、史料そのものから入る。三つの入口の使い分けを、実際のページを示しながら案内する。",
-      "internal_links": [
-        "/c007.html",
-        "/c137.html",
-        "/c034.html",
-        "/c019.html",
-        "/c015.html",
-        "/u034.html",
-        "/01001-mitsuke.html"
-      ]
-    },
-    {
-      "slug": "20260827-iwata-kyodo-shiryo-shirabekata",
-      "date": "2026-08-27",
-      "kind": "how-to-research",
-      "tags": [
-        "図書館",
-        "調査・資料"
-      ],
-      "title": "磐田の郷土資料はどこで調べる ── 図書館とアーカイブ入門",
-      "description": "磐田の郷土資料を自分で調べたいとき、どこへ行けばよいか。磐田市立図書館・磐田市歴史文書館・静岡県立中央図書館という三つの場所の役割を分け、2026年3月に公表された県立のデジタルアーカイブ計画も踏まえて、最初の一歩を案内する。",
-      "internal_links": [
-        "/u034.html",
-        "/c015.html",
-        "/oishi-ronko/279/",
-        "/oishi-ronko/215/",
-        "/c131.html"
-      ]
-    },
-    {
-      "slug": "20260828-tenryugawa-hanran-hazardmap",
-      "date": "2026-08-28",
-      "kind": "now-and-then",
-      "tags": [
-        "防災",
-        "天竜川"
-      ],
-      "title": "天竜川の氾濫史とハザードマップ ── 防災の日の前に読む",
-      "description": "磐田市は2026年1月から、洪水ハザードマップをスマートフォンで見られるようにした。想定は最大規模の降雨。ただし地図が示すのはこれから起こりうる浸水で、過去の記録ではない。天竜川下流に残る氾濫の記録を、磐田物語の既存ページから案内する。",
-      "internal_links": [
-        "/oishi-ronko/218/",
-        "/oishi-ronko/220/",
-        "/t042.html",
-        "/r045.html",
-        "/oishi-ronko/141/"
-      ]
-    },
-    {
-      "slug": "20260830-kaketsuka-matsuri-nittei",
-      "date": "2026-08-30",
-      "kind": "guide",
-      "tags": [
-        "祭り",
-        "掛塚"
-      ],
-      "title": "掛塚まつりの日程2026 ── 磐田論考でたどる湊町の記録",
-      "description": "磐田市は2026年10月17日・18日に掛塚まつりが行われると公表した。会場は貴船神社周辺。日付だけでは見えてこない9台の屋台、県指定の屋台囃子、2024年に市指定となった竹馬について、磐田物語の既存ページから案内する。",
-      "internal_links": [
-        "/oishi-ronko/015/",
-        "/oishi-ronko/167/",
-        "/oishi-ronko/175/",
-        "/oishi-ronko/054/",
-        "/oishi-ronko/029/"
-      ]
-    },
-    {
-      "slug": "20260831-iwata-kofun-naze-ooi",
-      "date": "2026-08-31",
-      "kind": "reading",
-      "tags": [
-        "古墳・遺跡",
-        "磐田原台地"
-      ],
-      "title": "磐田になぜ古墳が多いのか ── 兜塚・堂山を読む",
-      "description": "磐田には九百基を超える古墳があるといわれる。その数の理由を、文化財の数え方ではなく磐田原台地という地形から読む。直径84mの兜塚古墳、全長110mの堂山古墳を手がかりに、磐田物語の既存ページへ案内する。",
-      "internal_links": [
-        "/c012.html",
-        "/m125.html",
-        "/u037.html",
-        "/k047.html",
-        "/k044.html"
-      ]
-    },
-    {
-      "slug": "20260831-mitsuke-nakaizumi-jinko",
-      "date": "2026-08-31",
-      "kind": "reading",
-      "tags": [
-        "見付",
-        "中泉"
-      ],
-      "title": "見付と中泉、人口で比べる磐田の二つの中心",
-      "description": "磐田市の住民基本台帳では、2026年7月末現在で見付地区24,569人、中泉地区18,300人。ただし昭和25年には中泉が見付を上回っていた。江戸の見付宿の戸口から現在の町別人口表まで、区域の取り方に注意しながら磐田物語の既存ページへ案内する。",
-      "internal_links": [
-        "/r038.html",
-        "/m142.html",
-        "/m018.html",
-        "/n092.html",
-        "/c093.html"
-      ]
-    },
-    {
-      "slug": "20260901-mitsuke-tenjin-hadaka-matsuri-2026",
-      "date": "2026-09-01",
-      "kind": "guide",
-      "tags": [
-        "祭り",
-        "見付"
-      ],
-      "title": "見付天神裸祭2026｜8日間の神事を読む",
-      "description": "見付天神裸祭は2026年9月19日・20日に開催予定。9月13日から続く8日間を、静岡県の公開日程と磐田物語の既存論考から読み解き、観覧前に確かめたい点を案内する。",
-      "internal_links": [
-        "/oishi-ronko/005/",
-        "/oishi-ronko/001/",
-        "/oishi-ronko/251/",
-        "/matsuri-hadaka.html",
-        "/m102.html"
-      ]
-    },
-    {
-      "slug": "20260902-nakahara-b-kofun-exhibition",
-      "date": "2026-09-02",
-      "kind": "guide",
-      "tags": [
-        "古墳・遺跡",
-        "展示"
-      ],
-      "title": "中原B古墳群発掘調査成果展｜向陽学府の出土品を見る前に",
-      "description": "向陽学府で見つかった土器や耳環を見る前に、磐田原台地の古墳分布、発掘調査報告書、展示で確認したい点を磐田物語の既存ページから案内する。",
-      "internal_links": [
-        "/c012.html",
-        "/k044.html",
-        "/u034.html"
-      ]
-    },
-    {
-      "slug": "20260905-totomi-kokubunji-2026",
-      "date": "2026-09-05",
-      "kind": "now-and-then",
-      "tags": [
-        "古墳・遺跡",
-        "遠江国分寺"
-      ],
-      "title": "遠江国分寺跡2026｜工事写真で読む史跡公園",
-      "description": "遠江国分寺跡の2026年度再整備を、磐田市が8月6日に更新した工事写真から読む。4月から7月の工程、見学前の安全確認、史跡公園の背景を既存論考3本と結んで案内する。",
-      "internal_links": [
-        "/oishi-ronko/222/",
-        "/oishi-ronko/241/",
-        "/oishi-ronko/272/"
-      ]
-    },
-    {
-      "slug": "20260905-showa-elementary-school-exhibition",
-      "date": "2026-09-05",
-      "kind": "how-to-research",
-      "tags": [
-        "学校",
-        "展示"
-      ],
-      "title": "磐田の昭和の小学校｜展示資料と学校史の読み方",
-      "description": "昭和40～60年代の学校写真や行事の資料を、資料名・年代・学校名・作成者から読む。磐田市歴史文書館の展示案内を、学校史の本編3記事と結んだ記録。掲載した展示の会期は過ぎているが、資料を確かめる手順を読み返せる。",
-      "internal_links": [
-        "/c094.html",
-        "/c148.html",
-        "/c150.html",
-        "/u042.html"
-      ],
-      "updated_at": "2026-10-14",
-      "aliases": [
-        "磐田の昭和の小学校｜9月30日までの展示を読む"
-      ]
-    },
-    {
-      "slug": "20260906-iwata-bousai-kunren-tonankai",
-      "date": "2026-09-06",
-      "kind": "now-and-then",
-      "tags": [
-        "防災",
-        "地震"
-      ],
-      "title": "磐田市防災訓練2026｜東南海地震の記憶を読む",
-      "description": "磐田市が2026年9月6日に予定する総合防災訓練を入口に、自治会資料の確かめ方と、竜洋・田原などに残る東南海地震の記録を読む順番を案内する。",
-      "internal_links": [
-        "/r040.html",
-        "/r030.html",
-        "/u043.html",
-        "/c124.html"
-      ]
-    },
-    {
-      "slug": "20260906-iwata-hospital-history",
-      "date": "2026-09-06",
-      "kind": "reading",
-      "tags": [
-        "医療",
-        "暮らし"
-      ],
-      "title": "磐田の病院史｜救急の日に読む治療と予防",
-      "description": "磐田の病院史は、病院だけでは読めない。2026年9月6日からの救急医療週間を入口に、種痘・避病院・学校検診・組合立磐田病院を既存記事でたどり、治療と予防を暮らしの歴史として案内する。",
-      "internal_links": [
-        "/c120.html",
-        "/c165.html",
-        "/c094.html",
-        "/c150.html"
-      ]
-    },
-    {
-      "slug": "20260906-iwata-old-newspapers",
-      "date": "2026-09-06",
-      "kind": "how-to-research",
-      "tags": [
-        "新聞",
-        "調査・資料"
-      ],
-      "title": "磐田の古新聞の探し方｜国立国会図書館の3手順",
-      "description": "磐田の出来事や人物を古新聞で確かめたい市民へ。紙名・刊行日を絞り、公開範囲を読み、閲覧・複写の条件を確認する。2026年8月追加の新聞約10,900点は館内限定で、現時点では全文検索対象外。国立国会図書館で迷わない3手順を案内する。",
-      "internal_links": [
-        "/c132",
-        "/c159",
-        "/oishi-ronko/243/",
-        "/c020",
-        "/c019"
-      ]
-    },
-    {
-      "slug": "20260907-iwata-water-shortage-2026",
-      "date": "2026-09-07",
-      "kind": "now-and-then",
-      "tags": [
-        "農業・水",
-        "磐田用水"
-      ],
-      "title": "磐田の水不足2026｜5％取水制限と用水の歴史",
-      "description": "磐田市は2026年8月21日から上水道5％、工業・農業用水10％の取水制限対象。5％は家庭使用量の一律削減ではない。磐田原と磐田用水の既存記事をたどり、数字の読み方と確認手順を案内する。",
-      "internal_links": [
-        "/k045",
-        "/oishi-ronko/058/",
-        "/oishi-ronko/277/"
-      ]
-    },
-    {
-      "slug": "20260907-iwata-rice-history-hakuro",
-      "date": "2026-09-07",
-      "kind": "reading",
-      "tags": [
-        "農業・水",
-        "祭り"
-      ],
-      "title": "磐田の稲作史｜白露の9月7日に米作りを読む",
-      "description": "2026年の白露は9月7日23時41分。だが、その精密な時刻は磐田の稲作開始を示さない。弥生のムラと低地、八王子神社の米とぎまつり、現在の土地利用を既存記事でたどり、確認できることと決められないことを分けて読む。",
-      "internal_links": [
-        "/u030.html",
-        "/oishi-ronko/107/",
-        "/c066.html"
-      ]
-    },
-    {
-      "slug": "20260908-ndl-kotenseki-fulltext",
-      "date": "2026-09-08",
-      "kind": "how-to-research",
-      "tags": [
-        "古典籍",
-        "調査・資料"
-      ],
-      "title": "国立国会図書館の古典籍全文検索｜磐田を探す3手順",
-      "description": "国立国会図書館の古典籍全文検索で磐田を探す方法を3手順で案内。2026年9月1日に約7.5万点が加わり、全資料群の対象は約423万点。古典籍に絞り、該当コマの原画像と書誌を確かめ、検索漏れを「記載なし」としない。",
-      "internal_links": [
-        "/oishi-ronko/294/",
-        "/c019.html",
-        "/m149.html"
-      ]
-    },
-    {
-      "slug": "20260908-two-theories-kinosaki-castle",
-      "date": "2026-09-08",
-      "kind": "reading",
-      "tags": [
-        "城跡",
-        "見付"
-      ],
-      "title": "城之崎城の二説比較｜秀吉説と武田説",
-      "description": "城之崎城が未完になった理由をめぐる秀吉説と武田説を、伝承・時系列・地理・直接史料の有無で比較。武田説も確定ではない。2026年9月12日の郷土史講座を前に、本編3ページの安全な読み順を案内する。",
-      "internal_links": [
-        "/m058",
-        "/m060",
-        "/oishi-ronko/196/"
-      ]
-    },
-    {
-      "slug": "20260908-akizaki-yatsushiroran",
-      "date": "2026-09-08",
-      "kind": "reading",
-      "tags": [
-        "中泉",
-        "文化財"
-      ],
-      "title": "アキザキヤツシロランとは｜磐田の秋咲き希少種",
-      "description": "アキザキヤツシロランは、磐田市が天然記念物『群生地』として記録する秋咲きの希少種です。2026年8月21日更新の市指定文化財一覧と磐田物語の既存3ページから、指定情報、生態、見頃を断定できない理由、現地へ行く前の確認手順を案内します。",
-      "internal_links": [
-        "/n028",
-        "/oishi-ronko/177/",
-        "/oishi-ronko/266/"
-      ]
-    },
-    {
-      "slug": "20260908-iwata-bunkazai-dayori-backnumber",
-      "date": "2026-09-08",
-      "kind": "how-to-research",
-      "tags": [
-        "文化財",
-        "調査・資料"
-      ],
-      "title": "いわた文化財だよりバックナンバー｜第258号から探す",
-      "description": "いわた文化財だよりのバックナンバーは、総目次で題目を検索し、号数帯ごとの入口から本文を開くと探しやすい。2026年9月1日発行の第258号を例に、第1〜200号の合冊版と第201号以降のPDFへの進み方、日付の確かめ方を案内する。",
-      "internal_links": [
-        "/c005.html",
-        "/u034.html",
-        "/c019.html"
-      ]
-    },
-    {
-      "slug": "20260909-iwata-old-tokaido-guideposts",
-      "date": "2026-09-09",
-      "kind": "guide",
-      "tags": [
-        "旧東海道",
-        "文化財"
-      ],
-      "title": "磐田の旧東海道道標｜秋に歩く4つの見方",
-      "description": "磐田の旧東海道で道標を安全に見る順序を、石の役割、道筋との関係、現在位置、交通の4面から案内。2026年9月の生活道路の法定速度変更と交通安全運動も、公的情報と本編4ページで確かめます。",
-      "internal_links": [
-        "/c088.html",
-        "/t039.html",
-        "/m026.html",
-        "/c136.html"
-      ]
-    },
-    {
-      "slug": "20260909-mitsuke-school-iwata-bunko-difference",
-      "date": "2026-09-09",
-      "kind": "reading",
-      "tags": [
-        "旧見付学校",
-        "磐田文庫",
-        "見付",
-        "文化財"
-      ],
-      "title": "旧見付学校と磐田文庫の違い｜2施設を読み分ける",
-      "description": "旧見付学校は小学校校舎、磐田文庫は書物に触れる場です。2施設の始まりと役割を比較し、2026年1月23日に認定された一つの保存活用計画との関係、見学前に読む本編3ページを案内します。",
-      "internal_links": [
-        "/oishi-ronko/040/",
-        "/m112.html",
-        "/m015.html"
-      ]
-    },
-    {
-      "slug": "20260911-kyu-akamatsuke-mon-hei",
-      "date": "2026-09-11",
-      "kind": "reading",
-      "tags": [
-        "旧赤松家",
-        "見付",
-        "近代建築",
-        "文化財"
-      ],
-      "title": "旧赤松家の門と塀｜レンガ遺構を読む3つの視点",
-      "description": "旧赤松家のレンガ積みの門と塀は、近代造船を担った赤松則良の屋敷跡に残る県指定文化財です。2026年3月更新の磐田市公式案内と磐田物語の既存4ページから、遺構の背景、磐田原開拓との結びつき、見学前の確認手順を大石浩之が案内します。",
-      "internal_links": [
-        "/m014.html",
-        "/m020.html",
-        "/oishi-ronko/046/",
-        "/oishi-ronko/170/"
-      ]
-    },
-    {
-      "slug": "20260912-mitsuke-wakihonjin-tonyaba",
-      "date": "2026-09-12",
-      "kind": "reading",
-      "tags": [
-        "見付宿",
-        "旧東海道",
-        "文化財",
-        "見付"
-      ],
-      "title": "見付宿の脇本陣と問屋場｜東海道の宿場町を読む3つの記録",
-      "description": "見付宿の脇本陣や問屋場は、東海道五十三次・二十八番目の宿場町として人馬の継立を支えた要所です。2026年3月更新の磐田市公式案内と磐田物語の既存4ページから、宿場町の機能、本陣との違い、現地を歩く前の確認手順を大石浩之が案内します。",
-      "internal_links": [
-        "/c007.html",
-        "/c034.html",
-        "/m001.html",
-        "/m026.html"
-      ]
-    },
-    {
-      "slug": "20260912-mitsuke-tenjin-hadaka-matsuri-rekishi",
-      "date": "2026-09-12",
-      "kind": "reading",
-      "tags": [
-        "見付天神",
-        "裸祭",
-        "重要無形民俗文化財",
-        "見付"
-      ],
-      "title": "見付天神裸祭の起源と歴史｜国指定重要無形民俗文化財を読む3つの記録",
-      "description": "国指定重要無形民俗文化財「見付天神裸祭」の起源と神頭糸の歴史。2026年3月更新の磐田市公式案内と磐田物語の既存4ページから、腰みの姿の裸衆の練りと鬼踊り、見学前の確認手順を大石浩之が案内します。",
-      "internal_links": [
-        "/c007.html",
-        "/c023.html",
-        "/m001.html",
-        "/m026.html"
-      ]
-    },
-    {
-      "slug": "20260912-iwata-original-image-catalog",
-      "date": "2026-09-12",
-      "kind": "reading",
-      "tags": [
-        "史料",
-        "調べ方",
-        "佐口史料"
-      ],
-      "title": "磐田の史料｜原本・画像・目録の違いを読む",
-      "description": "原本は元の資料、画像は撮影された範囲、目録は識別のための情報です。磐田の佐口史料の既存3ページから、代表画像と資料全体の違い、空欄や判読不能の読み方を整理。9月30日までの「史料を遺す」展を入口に、デジタル化の便利さと確認の手間を考えます。",
-      "image": "/assets/blog/20260912-iwata-original-image-catalog-cover.webp",
-      "internal_links": [
-        "/c019.html",
-        "/c020.html",
-        "/c068.html"
-      ]
-    },
-    {
-      "slug": "20260913-iwata-suzuka-eight-hours-factory",
-      "date": "2026-09-13",
-      "kind": "reading",
-      "tags": [
-        "鈴鹿8耐",
-        "ヤマハ発動機",
-        "新貝",
-        "西貝塚",
-        "工場"
-      ],
-      "title": "磐田の鈴鹿8耐展示｜見学前に読む工場の記憶",
-      "description": "磐田の鈴鹿8耐関連展示は、ヤマハのYZF-R1を9月18〜23日に磐田市情報館で見学できる予定です。申込不要・無料。9月13日は期間外です。見学前に読む本編3ページから、新貝・西貝塚の工場と用地交渉、土地の記録への入口を案内します。",
-      "image": "/assets/blog/20260913-iwata-suzuka-eight-hours-factory-cover.webp",
-      "internal_links": [
-        "/c065.html",
-        "/u053.html",
-        "/u005.html"
-      ]
-    },
-    {
-      "slug": "20260913-iwata-tsukimi-dango-mukasa",
-      "date": "2026-09-13",
-      "kind": "reading",
-      "tags": [
-        "月見",
-        "向笠",
-        "年中行事",
-        "食文化"
-      ],
-      "title": "磐田の月見団子｜向笠の十三夜を本編で読む",
-      "description": "磐田の月見団子を知る入口は、向笠の十三夜に供えたへそ団子の記録です。うるち米の粉、すすき、季節の作物を本編から読み、採録地域と刊行時点を確かめます。市内共通の現行習慣とはせず、中秋の名月9月25日と十三夜10月23日を分けて案内します。",
-      "image": "/assets/blog/20260913-iwata-tsukimi-dango-mukasa-cover.webp",
-      "internal_links": [
-        "/k073.html",
-        "/oishi-ronko/269/",
-        "/oishi-ronko/283/"
-      ]
-    },
-    {
-      "slug": "20260914-iwata-horse-history",
-      "date": "2026-09-14",
-      "kind": "reading",
-      "tags": [
-        "馬",
-        "古墳・遺跡",
-        "中泉軌道",
-        "民俗信仰"
-      ],
-      "title": "磐田と馬の歴史｜埴輪・鉄路・供養を読む",
-      "description": "磐田と馬の歴史は、二子塚古墳の馬具と馬形埴輪、中泉軌道の馬力化申請、馬頭観音の解説という本編3本から読めます。9月20〜26日の動物愛護週間を前に、飾り・輸送・供養と暮らしの接点を整理。時代をまたぐ連続性や、未確認の石塔の場所・年代は決めつけません。",
-      "image": "/assets/blog/20260914-iwata-horse-history-cover.webp",
-      "internal_links": [
-        "/u038.html",
-        "/c060.html",
-        "/c070.html"
-      ]
-    },
-    {
-      "slug": "20260914-family-memories-question-memo",
-      "date": "2026-09-14",
-      "kind": "how-to-research",
-      "tags": [
-        "聞き取り",
-        "調べ方",
-        "家族",
-        "子どもの遊び"
-      ],
-      "title": "家族の昔話の残し方｜磐田の本編から作る質問メモ",
-      "description": "家族の昔話は、遊びを一つ選び、聞いた言葉と未確認事項を分けると残せます。磐田物語の本編3本をもとに、年・場所・人数・道具を聞く質問表と記録欄を用意。9月21日の敬老の日を前に、録音の希望、話の食い違い、写真や地図との照合まで、家族で使える手順を案内します。",
-      "image": "/assets/blog/20260914-family-memories-question-memo-cover.webp",
-      "internal_links": [
-        "/c167.html",
-        "/c068.html",
-        "/f016.html"
-      ]
-    },
-    {
-      "slug": "20260915-shishigahana-history-walk",
-      "date": "2026-09-15",
-      "kind": "reading",
-      "tags": [
-        "豊岡",
-        "史跡散策",
-        "獅子ヶ鼻公園",
-        "資料・調査"
-      ],
-      "title": "獅子ヶ鼻公園の史跡散策｜秋の連休前に読む本編",
-      "description": "獅子ヶ鼻公園の史跡散策は、市の通行情報と本編3本を確かめるところから。公園・岩室廃寺跡・山の景観を読む順に絞り、地名と見学可否を分けて案内します。9月21〜23日の連休前に、約7kmのコース、下広場からの通行止、駐車場とトイレの読み違いを確認します。",
-      "image": "/assets/blog/20260915-shishigahana-history-walk-cover.webp",
-      "internal_links": [
-        "/y017.html",
-        "/y021.html",
-        "/y005.html"
-      ]
-    },
-    {
-      "slug": "20260915-bohi-kenshobi-difference",
-      "date": "2026-09-15",
-      "kind": "reading",
-      "tags": [
-        "石碑",
-        "国分寺",
-        "下岡田",
-        "資料・調査"
-      ],
-      "title": "墓碑と顕彰碑の違い｜磐田の本編を読み比べる",
-      "description": "墓碑と顕彰碑の違いは、人物の没年を読むか、後世の評価を読むかに着目すると整理できます。磐田の国分寺の墓塔と下岡田の義民碑を本編で比較。9月20日の彼岸入りを前に、没年・建立年・顕彰の時点を分け、番号の意味や未確認事項を残す読み方を案内します。",
-      "image": "/assets/blog/20260915-bohi-kenshobi-difference-cover.webp",
-      "internal_links": [
-        "/oishi-ronko/145/",
-        "/s032.html",
-        "/n040.html"
-      ]
-    },
-    {
-      "slug": "20260916-iwata-aviation-history",
-      "date": "2026-09-16",
-      "kind": "reading",
-      "tags": [
-        "航空史",
-        "竜洋",
-        "田原",
-        "学校"
-      ],
-      "title": "磐田の航空史｜空の日に読む飛行場と暮らし",
-      "description": "磐田の航空史を暮らしから読む入口は、福長飛行場跡、旧田原小学校の飛行機見物、天竜飛行場と竜洋の学童を扱う本編3本です。9月20日の空の日を前に、場所の記録と回想、戦時の学校生活を読み分け、見物先や飛行場同士の関係を決めつけずに確かめます。",
-      "image": "/assets/blog/20260916-iwata-aviation-history-cover.webp",
-      "internal_links": [
-        "/r065.html",
-        "/u042.html",
-        "/r029.html"
-      ]
-    },
-    {
-      "slug": "20260917-ikeda-ferry-museum-visit",
-      "date": "2026-09-17",
-      "kind": "guide",
-      "tags": [
-        "池田の渡し",
-        "史跡散策",
-        "調査・資料"
-      ],
-      "title": "池田の渡し歴史風景館｜秋の見学前に読む本編",
-      "description": "池田の渡し歴史風景館の見学前に、船賃の分配・宿で待つ時間・渡河の判断を本編3本から読みます。無料・9〜17時という市の案内と、9月21〜23日の個別の開館日は分けて確認。問い合わせ先と、展示の資料名・年代を控える手順をまとめた秋の見学準備です。",
-      "image": "/assets/blog/20260917-ikeda-ferry-museum-visit-cover.webp",
-      "internal_links": [
-        "/t004.html",
-        "/t048.html",
-        "/t016.html"
-      ]
-    },
-    {
-      "slug": "20260918-mitsuke-school-autumn-visit",
-      "date": "2026-09-18",
-      "kind": "guide",
-      "tags": [
-        "旧見付学校",
-        "国指定史跡",
-        "擬洋風建築",
-        "見付"
-      ],
-      "title": "旧見付学校と学びの記憶｜秋の見学前に読む本編",
-      "description": "国指定史跡「旧見付学校」の見学前に、擬洋風建築の工夫・寺子屋から続く学びの歴史・磐田文庫との関係を本編3本から読みます。無料・午前9時〜午後4時30分という市の利用案内と秋の連休の開館日を確認し、展示資料の年代を控える手順を大石浩之が案内します。",
-      "image": "/assets/blog/20260918-mitsuke-school-autumn-visit-cover.webp",
-      "internal_links": [
-        "/m015.html",
-        "/m113.html",
-        "/m112.html",
-        "/c013.html"
-      ]
-    },
-    {
-      "slug": "20260919-mitsuke-post-station-walk",
-      "date": "2026-09-19",
-      "kind": "guide",
-      "tags": [
-        "見付宿",
-        "本陣",
-        "問屋場",
-        "東海道",
-        "見付"
-      ],
-      "title": "見付宿の本陣と問屋場｜秋の東海道散策前に読む本編",
-      "description": "東海道見付宿の散策前に、本陣・脇本陣・旅籠の宿泊機能、問屋場と高札場が担った人馬継立、小路が交差する独特の町割りを本編3本から読みます。見付宿通りの歩行環境と秋の散策手順を大石浩之が案内します。",
-      "image": "/assets/blog/20260919-mitsuke-post-station-walk-cover.webp",
-      "internal_links": [
-        "/oishi-ronko/156/",
-        "/m148.html",
-        "/m003.html",
-        "/01001-mitsuke.html"
-      ]
-    },
-    {
-      "slug": "20260919-2-kakezuka-kaiun-rekishi-walk",
-      "date": "2026-09-19",
-      "kind": "guide",
-      "tags": [
-        "掛塚",
-        "千石船",
-        "廻船",
-        "天竜川",
-        "秋"
-      ],
-      "title": "掛塚湊と千石船の廻船史｜秋の旧掛塚散策前に読む本編",
-      "description": "秋の掛塚散策前に、天竜川河口の掛塚湊が千石船で栄えた廻船史と旧湊町の歴史遺産、関連する本編記事を整理。豪商の屋敷や貴船神社の祭礼に繋がる水運文化の読み方を案内します。",
-      "image": "/assets/blog/20260919-2-kakezuka-kaiun-rekishi-walk-cover.webp",
-      "internal_links": [
-        "/01007-ryuyo.html",
-        "/matsuri-kaketsuka.html",
-        "/matsuri-kaketsuka-kibune.html",
-        "/matsuri-kaketsuka-machi.html",
-        "/m033.html"
-      ]
-    },
-    {
-      "slug": "20260920-shubun-higan-difference",
-      "date": "2026-09-20",
-      "kind": "reading",
-      "tags": [
-        "年中行事",
-        "彼岸",
-        "向笠",
-        "福田"
-      ],
-      "title": "秋分と彼岸の違い｜磐田の行事記録を読む",
-      "description": "秋分は一日、彼岸は前後3日ずつを含む7日間。2026年は9月20日が入り、23日が秋分・中日、26日が明けです。向笠・福田の本編3本から、暦の混在と記録された時点を読み分け、古い行事の日付を現在の予定へ置き換えずに確かめる方法を案内します。",
-      "image": "/assets/blog/20260920-shubun-higan-difference-cover.webp",
-      "internal_links": [
-        "/k073.html",
-        "/oishi-ronko/103/",
-        "/oishi-ronko/269/"
-      ]
-    },
-    {
-      "slug": "20260920-iwata-old-bus-routes",
-      "date": "2026-09-20",
-      "kind": "how-to-research",
-      "tags": [
-        "バス",
-        "交通史",
-        "調査・資料"
-      ],
-      "title": "磐田の昔のバス路線｜本編から調べる3手順",
-      "description": "磐田の昔のバス路線は、本編で路線名を拾い、年代の意味を分け、出典付きの照会メモを作る3手順で調べます。9月20日のバスの日に、向笠原線などの名前を入口にして、記憶と記録を分ける方法を案内。停留所や運行期間が分からない欄は未確認のまま残します。",
-      "image": "/assets/blog/20260920-iwata-old-bus-routes-cover.webp",
-      "internal_links": [
-        "/c064.html",
-        "/c058.html",
-        "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
-      ]
-    },
-    {
-      "slug": "20260921-iwata-station-seven-story-pagoda",
-      "date": "2026-09-21",
-      "kind": "reading",
-      "tags": [
-        "七重の塔",
-        "磐田駅",
-        "遠江国分寺",
-        "資料・調査"
-      ],
-      "title": "磐田駅の七重の塔｜青い光から本編を読む",
-      "description": "磐田駅の七重の塔は、手話への理解を広げる取り組みで9月25日まで青色に点灯。本編3本を入口に、塔の意味、遠江国分寺の伽藍配置、約66.5mとする復元案を読み分けます。現在の駅前の塔と歴史上の塔を混同せず、資料で確かめる順番を案内します。",
-      "image": "/assets/blog/20260921-iwata-station-seven-story-pagoda-cover.webp",
-      "internal_links": [
-        "/n006.html",
-        "/n004.html",
-        "/n015.html"
-      ]
-    },
-    {
-      "slug": "20260921-cultural-property-designation-registration",
-      "date": "2026-09-21",
-      "kind": "reading",
-      "tags": [
-        "文化財",
-        "調査・資料"
-      ],
-      "title": "文化財の指定と登録の違い｜磐田の本編を読む",
-      "description": "指定と登録は、文化財を守る仕組みの違いです。国の建造物では、指定は重要なものを選び、許可制等で保護する制度。登録は届出と指導・助言を基本に、指定を補完します。磐田の本編では、区分・種別・対象名を分けて読み、登録年月日を建築年と混同しないことから始めます。",
-      "image": "/assets/blog/20260921-cultural-property-designation-registration-cover.webp",
-      "internal_links": [
-        "/n032",
-        "/c021",
-        "/oishi-ronko/206/"
-      ]
-    },
-    {
-      "slug": "20260922-iwata-sake-history",
-      "date": "2026-09-22",
-      "kind": "reading",
-      "tags": [
-        "産業",
-        "祭り",
-        "調査・資料"
-      ],
-      "title": "磐田の酒の歴史｜商いと祭りを本編で読む",
-      "description": "磐田の酒の歴史は、酒造業・屋敷・祭礼の記録を分けて読むと暮らしとの接点を探せます。千寿酒造、花咲乃庄、中野白山神社の白酒を扱う本編3本へ案内。10月1日の日本酒の日を前に、商いと供え物を混同せず、資料で分かることと未確認の関係を読み分けます。",
-      "image": "/assets/blog/20260922-iwata-sake-history-cover.webp",
-      "internal_links": [
-        "/c067",
-        "/y024",
-        "/f020"
-      ]
-    },
-    {
-      "slug": "20260922-okegayanuma-autumn-walk",
-      "date": "2026-09-22",
-      "kind": "reading",
-      "tags": [
-        "自然",
-        "桶ケ谷沼",
-        "調査・資料"
-      ],
-      "title": "桶ケ谷沼の秋散策｜出かける前に読む地域の記録",
-      "description": "桶ケ谷沼の秋散策は、土地の記憶と高校生の自然観察を扱う本編から準備できます。岩井の地名を読むk048、アカトンボ類の研究を紹介するc105へ案内。現地で見たことと資料の記録を分け、訪問前の確認先や、種類を急いで決めない観察メモの作り方を紹介します。",
-      "image": "/assets/blog/20260922-okegayanuma-autumn-walk-cover.webp",
-      "internal_links": [
-        "/k048.html",
-        "/c105.html",
-        "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
-      ]
-    },
-    {
-      "slug": "20260923-fu-hachimangu-kokubunji-walk",
-      "date": "2026-09-23",
-      "kind": "reading",
-      "tags": [
-        "中泉",
-        "府八幡宮",
-        "遠江国分寺跡",
-        "調査・資料"
-      ],
-      "title": "府八幡宮と国分寺跡の秋散策｜古代国府の記憶を本編で読む",
-      "description": "府八幡宮と遠江国分寺跡の秋散策は、古代遠江国の中心地を読み解く本編から準備できます。国府の記憶を継ぐn017、特別史跡の歩みを読むn016へ案内。現地で見る社殿や礎石と、文献や発掘調査の記録を分け、歴史散策をより深く味わうための確認先と観察メモの作り方を紹介します。",
-      "image": "/assets/blog/20260923-fu-hachimangu-kokubunji-walk-cover.webp",
-      "internal_links": [
-        "/n017.html",
-        "/n016.html",
-        "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
-      ]
-    },
-    {
-      "slug": "20260923-nakaizumi-shin-nakaizumi",
-      "date": "2026-09-23",
-      "kind": "reading",
-      "tags": [
-        "鉄道",
-        "中泉",
-        "資料・調査"
-      ],
-      "title": "中泉駅と新中泉駅の違い｜磐田の本編で読み分ける",
-      "description": "中泉駅は現在の磐田駅の旧称、新中泉は光明電気鉄道の起点として本編に記されています。駅名・所属路線・開業と改称の年月日を3本の本編で照合。10月14日の鉄道の日を前に、似た名前を同じ駅の改称と取り違えず、位置関係は資料で確かめる読み方を案内します。",
-      "image": "/assets/blog/20260923-nakaizumi-shin-nakaizumi-cover.webp",
-      "internal_links": [
-        "/n070",
-        "/c055",
-        "/c130"
-      ]
-    },
-    {
-      "slug": "20260923-iwata-postal-history-sources",
-      "date": "2026-09-23",
-      "kind": "reading",
-      "tags": [
-        "郵便",
-        "中泉",
-        "掛塚",
-        "資料・調査"
-      ],
-      "title": "磐田の郵便史はどこまで分かる｜本編の確認点",
-      "description": "磐田の郵便史は、制度・前島密・旧掛塚郵便局の本編3本から確かめられます。各局の開設年月や在任中の個別事績には未確認の範囲が残ります。世界郵便デーの公式案内を入口に、本編の記述と留保、局舎の現況を分けて読み、次に探す資料を整理します。",
-      "image": "/assets/blog/20260923-iwata-postal-history-sources-cover.webp",
-      "internal_links": [
-        "/c121",
-        "/oishi-ronko/053/",
-        "/r055"
-      ]
-    },
-    {
-      "slug": "20260924-iwata-old-homepage-warp",
-      "date": "2026-09-24",
-      "kind": "how-to-research",
-      "tags": [
-        "資料・調査",
-        "ウェブアーカイブ"
-      ],
-      "title": "磐田市の昔のホームページを探す3手順",
-      "description": "磐田市の昔のホームページは、本編の出典を控え、WARPで市名やURLを検索し、保存日と掲載内容を記録する3手順で探せます。古い資料を検索対象に入れる設定や、掲載日との違いも案内。10月9日から13日の検索・閲覧停止予定と、見つからない場合の残し方も確認します。",
-      "image": "/assets/blog/20260924-iwata-old-homepage-warp-cover.webp",
-      "internal_links": [
-        "/c068.html",
-        "/oishi-ronko/294/",
-        "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
-      ]
-    },
-    {
-      "slug": "20260924-iwata-yatai-dashi",
-      "date": "2026-09-24",
-      "kind": "reading",
-      "tags": [
-        "祭り",
-        "福田",
-        "中泉"
-      ],
-      "title": "磐田の屋台と山車の違い｜本編の呼び名を比べる",
-      "description": "磐田の屋台と山車は、呼び名だけでは構造を分けられません。福田の二輪屋台と、中泉の山車一覧にある二輪・四輪・三輪の記載を本編で比較。町名、形式、資料の時点を確かめる読み方と、福田こども園の地域屋台行事を一般参加の案内にしない理由を整理します。",
-      "image": "/assets/blog/20260924-iwata-yatai-dashi-cover-v2.webp",
-      "internal_links": [
-        "/f007.html",
-        "/matsuri-fuhachiman-dashi.html",
-        "/oishi-ronko/044/"
-      ]
-    },
-    {
-      "slug": "20260925-fukude-textiles-koromogae",
-      "date": "2026-09-25",
-      "kind": "reading",
-      "tags": [
-        "福田",
-        "織物",
-        "産業",
-        "資料・調査"
-      ],
-      "title": "福田の織物を読む｜衣替えから入る本編3本",
-      "description": "福田の織物は、加工・分業と労働・工場建築を扱う本編3本から読み解けます。10月初めの衣替えを入口に、起毛をつくる仕事、働く人、北窓採光へ視線を広げる読書案内です。服の産地や建物の来歴を外観で決めず、本編の記述と未確認の範囲を分けて確かめます。",
-      "image": "/assets/blog/20260925-fukude-textiles-koromogae-cover.webp",
-      "internal_links": [
-        "/f003.html",
-        "/c075.html",
-        "/oishi-ronko/242/"
-      ]
-    },
-    {
-      "slug": "20260925-iwata-old-aerial-photos",
-      "date": "2026-09-25",
-      "kind": "how-to-research",
-      "tags": [
-        "資料の探し方",
-        "空中写真",
-        "古地図"
-      ],
-      "title": "磐田の昔の航空写真を探す3手順",
-      "description": "磐田の昔の航空写真は、本編で地名を拾い、国土地理院で場所と年代を絞り、撮影年月と番号を記録して探します。刷新後の閲覧サービスを使い、表示範囲と実際の画像を照合。自宅周辺の土地の姿を調べる際に、見えたものと推測を分け、出典を残す手順を案内します。",
-      "image": "/assets/blog/20260925-iwata-old-aerial-photos-cover.webp",
-      "internal_links": [
-        "/c068.html",
-        "/t053.html",
-        "/c131.html"
-      ]
-    },
-    {
-      "slug": "20260926-kaketsuka-bridge-reading",
-      "date": "2026-09-26",
-      "kind": "reading",
-      "tags": [
-        "天竜川",
-        "交通",
-        "資料の探し方"
-      ],
-      "title": "掛塚橋の工事案内と歴史｜資料を分ける読み方",
-      "description": "掛塚橋の工事案内は、工事全体の期間と規制の実施日時を分けて読みます。袋井土木事務所の公式案内を入口に、磐田物語の道・橋・渡船の本編へ。掲載日と工事日、旧橋と新橋、昔の料金と現在の利用条件を混同せず、資料の役割を分けて記録する読書案内です。",
-      "image": "/assets/blog/20260926-kaketsuka-bridge-reading-cover.webp",
-      "internal_links": [
-        "/c136.html",
-        "/r039.html",
-        "/blog/20260917-ikeda-ferry-museum-visit/"
-      ]
-    },
-    {
-      "slug": "20260926-shikiji-satoyama-higanbana",
-      "date": "2026-09-26",
-      "kind": "guide",
-      "tags": [
-        "豊岡",
-        "花",
-        "資料・調査"
-      ],
-      "title": "敷地里山公園の彼岸花｜訪問前に読む地域の記録",
-      "description": "敷地里山公園の彼岸花は、磐田市の花ごよみでは9月下旬が目安です。当日の開花情報とは分けて確認。旧敷地村の地名と敷地川の地形を扱う本編へ案内し、現在の風景と過去の記録を混同しない読み方、訪問前に控える資料と未確認の利用条件を整理します。",
-      "image": "/assets/blog/20260926-shikiji-satoyama-higanbana-cover.webp",
-      "internal_links": [
-        "/y002.html",
-        "/oishi-ronko/149/",
-        "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
-      ]
-    },
-    {
-      "slug": "20260927-iwata-athlete-research",
-      "date": "2026-09-27",
-      "kind": "how-to-research",
-      "tags": [
-        "スポーツ",
-        "学校",
-        "資料の探し方"
-      ],
-      "title": "磐田ゆかりの選手の調べ方｜本編から作る確認メモ",
-      "description": "磐田ゆかりの選手は、競技実績と学校・地域との接点を別々に確かめます。本編から手がかりを拾い、資料名・該当箇所・確認日を残す親子向けの調べ方を案内。10月12日のスポーツ体験行事を入口に、出身と所属を混同せず、未確認の欄を残せる確認メモを作ります。",
-      "image": "/assets/blog/20260927-iwata-athlete-research-cover.webp",
-      "internal_links": [
-        "/oishi-ronko/245/",
-        "/c107.html",
-        "/iwata-higashi-high-school-history.html",
-        "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
-      ],
-      "updated_at": "2026-10-14"
-    },
-    {
-      "slug": "20260927-shumon-ninbetsucho-census",
-      "date": "2026-09-27",
-      "kind": "reading",
-      "tags": [
-        "人口",
-        "統計",
-        "資料の読み方"
-      ],
-      "title": "宗門人別帳と国勢調査の違い｜磐田の本編を読む",
-      "description": "宗門人別帳と国勢調査は、人を記す目的と記録の単位が違います。磐田物語の本編2本を、氏名・家族・檀那寺と、人口・年齢・産業・世帯構成から読み比べます。10月18日の統計の日を入口に、地域や時点をそろえ、昔の名簿と人口統計を同じ尺度で読まない確認メモを作ります。",
-      "image": "/assets/blog/20260927-shumon-ninbetsucho-census-cover.webp",
-      "internal_links": [
-        "/c113.html",
-        "/c128.html",
-        "/blog/20260831-mitsuke-nakaizumi-jinko/",
-        "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
-      ]
-    },
-    {
-      "slug": "20260928-iwata-music-history",
-      "date": "2026-09-28",
-      "kind": "reading",
-      "tags": [
-        "音楽",
-        "福田",
-        "竜洋",
-        "資料の読み方"
-      ],
-      "title": "磐田の音楽史はどこまで分かる｜本編3本への案内",
-      "description": "磐田の音楽史は、記録の存在と演奏内容の確認を分けて読むところから始めます。福田の論考232・f042と竜洋のr075へ案内。10月1日の国際音楽の日を前に、地区名や資料中の語を手がかりにし、結成年・人数・曲目の未確認事項を残す読み方を整理します。",
-      "image": "/assets/blog/20260928-iwata-music-history-cover.webp",
-      "internal_links": [
-        "/oishi-ronko/232/",
-        "/f042.html",
-        "/r075.html"
-      ]
-    },
-    {
-      "slug": "20260929-iwata-aerial-photo-reading",
-      "date": "2026-09-29",
-      "kind": "reading",
-      "tags": [
-        "空中写真",
-        "地図",
-        "資料の読み方"
-      ],
-      "title": "磐田の昔と今を空中写真で比べる｜本編への読み方",
-      "description": "磐田の昔と今を空中写真で比べる前に、撮影年、位置、縮尺、画像の出典を分けて確認します。地理院地図と地図・空中写真閲覧サービスを入口に、磐田物語の本編3本へ案内し、写真から読み取れることと現地確認が必要なことを整理します。",
-      "image": "/assets/blog/20260929-iwata-aerial-photo-reading-cover.webp",
-      "internal_links": [
-        "/c136.html",
-        "/oishi-ronko/149/",
-        "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
-      ]
-    },
-    {
-      "slug": "20260929-iwata-kuzushiji-check",
-      "date": "2026-09-29",
-      "kind": "how-to-research",
-      "tags": [
-        "地名",
-        "古文書",
-        "資料の探し方"
-      ],
-      "title": "くずし字の調べ方｜磐田の地名で始める確認メモ",
-      "description": "磐田の古文書で読めない地名は、一字の候補と根拠を分けて調べます。字典の引き方を選び、本編の翻刻と注記を照合する手順を紹介。歴史文書館の展示を入口に、AIの読みに頼り切らず、資料名・頁・前後の文字・未確認事項を残す確認メモを作ります。",
-      "image": "/assets/blog/20260929-iwata-kuzushiji-check-cover.webp",
-      "internal_links": [
-        "/m149.html",
-        "/m165.html",
-        "/c019.html",
-        "/blog/20260908-ndl-kotenseki-fulltext/"
-      ],
-      "updated_at": "2026-11-03"
-    },
-    {
-      "slug": "20260930-fukude-shirasu",
-      "date": "2026-09-30",
-      "kind": "reading",
-      "tags": [
-        "福田",
-        "シラス",
-        "食文化",
-        "漁業"
-      ],
-      "title": "福田のシラス｜秋の食卓から読む本編3本",
-      "description": "福田のシラスの食文化は、漁と加工・食卓・港を扱う本編3本から読めます。県と市の公式解説で二艘曳きや加工の流れを確かめ、季節の案内と当日の入荷を区別。釜揚げとしらす干しを入口に、地域の商いと暮らしを資料の範囲でたどる読み方を大石浩之が案内します。",
-      "image": "/assets/blog/20260930-fukude-shirasu-cover.webp",
-      "internal_links": [
-        "/f002.html",
-        "/f010.html",
-        "/f001.html"
-      ]
-    },
-    {
-      "slug": "20260930-kenchicho-chiken-difference",
-      "date": "2026-09-30",
-      "kind": "reading",
-      "tags": [
-        "土地",
-        "古文書",
-        "福田",
-        "資料の読み方"
-      ],
-      "title": "検地帳と地券の違い｜磐田の本編を読み比べる",
-      "description": "検地帳の名請人と地券の所有者は、同じ意味に置き換えずに読みます。磐田物語の本編3本で田畑の面積、地価、姓名と後世の家への比定を比較。10月1日の土地の日を入口に、実家に残る古い記録から何が分かり、何を未確認で残すかを整理する読書案内です。",
-      "image": "/assets/blog/20260930-kenchicho-chiken-difference-cover.webp",
-      "internal_links": [
-        "/f032",
-        "/c102",
-        "/oishi-ronko/306/"
-      ]
-    },
-    {
-      "slug": "20261001-iwata-rail-freight",
-      "date": "2026-10-01",
-      "kind": "reading",
-      "tags": [
-        "鉄道",
-        "貨物",
-        "資料の読み方"
-      ],
-      "title": "磐田の鉄道貨物｜輸送の構想と実績を読む3本",
-      "description": "磐田の鉄道貨物は、運ぶ構想・契約・専用線の記録を分けて読みます。本編3本で天竜川の荷物、会社要項と鉱石運搬契約、工場や倉庫への接続を確認。10月14日の鉄道の日を前に、見込みと輸送実績を混同せず、資料の留保も残す読み方を商いの視点から案内します。",
-      "image": "/assets/blog/20261001-iwata-rail-freight-cover.webp",
-      "internal_links": [
-        "/c057",
-        "/c096",
-        "/n047"
-      ]
-    },
-    {
-      "slug": "20261002-ryuyo-kaiyo-autumn-walk",
-      "date": "2026-10-02",
-      "kind": "guide",
-      "tags": [
-        "竜洋",
-        "海岸",
-        "調査・資料"
-      ],
-      "title": "竜洋海洋公園の秋散策｜海辺を読む本編案内",
-      "description": "竜洋海洋公園の秋散策は、公園と海岸の本編2本から準備できます。駒場・天竜川・遠州灘との関係を読み、現地で施設名や通行案内を確かめる手順を整理。10月31日の竜洋海洋フェスタは予定表の情報として扱い、開催予定と当日の状況を分けて読む案内です。",
-      "image": "/assets/blog/20261002-ryuyo-kaiyo-autumn-walk-cover.webp",
-      "internal_links": [
-        "/r083",
-        "/f022",
-        "/01007-ryuyo"
-      ]
-    },
-    {
-      "slug": "20261002-iwata-tea-fields-reading",
-      "date": "2026-10-02",
-      "kind": "reading",
-      "tags": [
-        "茶畑",
-        "向陽",
-        "農業",
-        "資料の読み方"
-      ],
-      "title": "磐田の茶畑｜本編3本で産地の記録を読む",
-      "description": "磐田の茶畑の歴史は、場所・地区史・土地利用を扱う本編3本から読めます。日本茶のGI登録を入口に、磐田原と大藤の記録へ案内。台地の水利に関する記述の違いを示し、産地の物語を急いで一つにせず、原資料へ戻る確認メモの作り方を大石浩之が整理します。",
-      "image": "/assets/blog/20261002-iwata-tea-fields-reading-cover.webp",
-      "internal_links": [
-        "/k051",
-        "/k032-ofuji",
-        "/c066"
-      ]
-    },
-    {
-      "slug": "20261003-iwata-ieyasu-source-memo",
-      "date": "2026-10-03",
-      "kind": "how-to-research",
-      "tags": [
-        "徳川家康",
-        "伝承",
-        "資料・調査"
-      ],
-      "title": "磐田の家康伝承の調べ方｜本編から作る確認メモ",
-      "description": "磐田の家康伝承は、本編で資料名・書き手・成立時期を拾い、記録と伝承を分けて調べます。中泉御殿と行興寺の本編3本から、原資料へ戻れる確認メモを作成。10月10日開幕の家康企画展を前に、出来事の年と資料の成立年を混同せず、未確認欄を残す手順を案内します。",
-      "image": "/assets/blog/20261003-iwata-ieyasu-source-memo-cover.webp",
-      "internal_links": [
-        "/n048",
-        "/n052",
-        "/t037"
-      ]
-    },
-    {
-      "slug": "20261004-toyoda-kaori-autumn-walk",
-      "date": "2026-10-04",
-      "kind": "guide",
-      "tags": [
-        "豊田",
-        "地名",
-        "散策",
-        "資料の読み方"
-      ],
-      "title": "豊田香りの公園の秋散策｜立野を読む本編案内",
-      "description": "豊田香りの公園の秋散策は、豊田町駅北口から徒歩3分の立野を入口に、本編3本へつながります。市広報のキンモクセイの見頃と当日の開花を区別し、地名資料・旧豊田町の沿革・史跡の記録を読む手順を紹介。地名の由来を急いで決めず、散策と読書を楽しむ案内です。",
-      "image": "/assets/blog/20261004-toyoda-kaori-autumn-walk-cover.webp",
-      "internal_links": [
-        "/t006",
-        "/t043",
-        "/t044"
-      ]
-    },
-    {
-      "slug": "20261004-iwata-hoshiimo-trade-reading",
-      "date": "2026-10-04",
-      "kind": "reading",
-      "tags": [
-        "干し芋",
-        "産業史",
-        "商店街",
-        "資料の読み方"
-      ],
-      "title": "磐田の干し芋｜商いの記録へつなぐ本編3本",
-      "description": "磐田の干し芋の歴史は、甘藷切干と八百庄商店の出荷記録を扱う本編から読めます。さつまいもの収穫期9〜11月を入口に、産業史・商店街・中泉の本編3本へ案内。発祥や販売経路を急いで決めず、資料名と未確認事項を分けて控える読み方を大石浩之が紹介します。",
-      "image": "/assets/blog/20261004-iwata-hoshiimo-trade-reading-cover.webp",
-      "internal_links": [
-        "/c098",
-        "/c074",
-        "/n046"
-      ]
-    },
-    {
-      "slug": "20261005-iwata-history-source-notes",
-      "date": "2026-10-05",
-      "kind": "how-to-research",
-      "tags": [
-        "郷土史",
-        "資料の読み方",
-        "出典"
-      ],
-      "title": "磐田の郷土史の出典を残す3手順",
-      "description": "郷土史の出典は、資料名・該当箇所・URLと確認日の順に残します。佐口史料の目録と見付宿の帳簿を扱う本編を例に、原資料と案内記事を分けるメモを紹介。国立国会図書館の資料追加を機に、未確認の頁や読めない字を埋めず、後から同じ資料に戻れる記録を整えます。",
-      "image": "/assets/blog/20261005-iwata-history-source-notes-cover.webp",
-      "internal_links": [
-        "/c019",
-        "/c020",
-        "/m165"
-      ]
-    },
-    {
-      "slug": "20261006-hikifuda-postcard-mitsuke",
-      "date": "2026-10-06",
-      "kind": "reading",
-      "tags": [
-        "見付",
-        "引札",
-        "絵葉書",
-        "資料の読み方"
-      ],
-      "title": "引札と絵葉書の違い｜見付の本編を読み比べる",
-      "description": "引札は商店名・取扱品・版元の記載、絵葉書は写真に写る家並みを読む入口です。見付の本編を比較し、図柄と商況、撮影年代と発行年代を混同しない読み方を紹介。文字・活字文化の日を前に、未確認を残して一枚ずつ確かめる手順を大石浩之が案内します。",
-      "image": "/assets/blog/20261006-hikifuda-postcard-mitsuke-cover.webp",
-      "internal_links": [
-        "/m140.html",
-        "/m120.html",
-        "/oishi-ronko/255/"
-      ]
-    },
-    {
-      "slug": "20261007-iwata-money-history-reading",
-      "date": "2026-10-07",
-      "kind": "reading",
-      "tags": [
-        "金融",
-        "産業史",
-        "見付",
-        "資料の読み方"
-      ],
-      "title": "磐田のお金の歴史｜貯蓄の日に読む本編3本",
-      "description": "磐田のお金の歴史は、見付宿の貸付利子、産業と銀行、新円切替と預金封鎖を扱う本編3本から読めます。10月17日の貯蓄の日を前に、元金と利子、銀行の記録、預金の利用条件を読み分ける案内です。大石浩之が本編の留保も示し、暮らしと商いの支払いから読む手順を紹介します。",
-      "image": "/assets/blog/20261007-iwata-money-history-reading-cover.webp",
-      "internal_links": [
-        "/m169.html",
-        "/c098.html",
-        "/c163.html"
-      ]
-    },
-    {
-      "slug": "20261008-akamatsu-autumn-exhibition-guide",
-      "date": "2026-10-08",
-      "kind": "guide",
-      "tags": [
-        "旧赤松家",
-        "展示",
-        "見付",
-        "資料の読み方"
-      ],
-      "title": "旧赤松家記念館の秋展示｜見学前の本編案内",
-      "description": "旧赤松家記念館の米蔵では、赤松浪江と掛川松ヶ岡・山﨑家を扱う秋展示が案内されています。会期は2026年10月1日〜12月27日。人物・施設・資料案内の本編3本を読む順番と、無料見学の開館時間・休館日の確認手順を大石浩之が整理します。",
-      "image": "/assets/blog/20261008-akamatsu-autumn-exhibition-guide-cover.webp",
-      "internal_links": [
-        "/m014.html",
-        "/oishi-ronko/046/",
-        "/c005.html"
-      ]
-    },
-    {
-      "slug": "20261009-mitsuke-sento-memory-reading",
-      "date": "2026-10-09",
-      "kind": "reading",
-      "tags": [
-        "見付",
-        "銭湯",
-        "暮らし",
-        "資料の読み方"
-      ],
-      "title": "磐田の銭湯の記憶｜見付の本編2本への案内",
-      "description": "磐田・見付の銭湯の記憶は、本編m122と論考216で読めます。店の存在を伝える記録・回想と、閉店理由の推定を分け、軒数の幅や未確認の留保を残す読書案内です。10月10日の銭湯の日を前に、大石浩之が本編2本の読む順番と資料の確かめ方を紹介します。",
-      "image": "/assets/blog/20261009-mitsuke-sento-memory-reading-cover.webp",
-      "internal_links": [
-        "/m122.html",
-        "/oishi-ronko/216/",
-        "/c005.html"
-      ]
-    },
-    {
-      "slug": "20261009-usagiyama-kamada-reading",
-      "date": "2026-10-09",
-      "kind": "guide",
-      "tags": [
-        "御厨",
-        "鎌田",
-        "公園",
-        "寺社",
-        "資料の読み方"
-      ],
-      "title": "兎山公園周辺の歴史散策｜鎌田を読む本編3本",
-      "description": "兎山公園周辺の歴史散策は、鎌田御厨、鎌田神明宮、医王寺庭園及び参道の本編3本を読むところから。地名と社伝、庭と道の見方を分け、家族で出かける前に確認する順番を大石浩之が案内します。10月12日のスポーツの日を前に、公園の施設情報と現地での線引きも整理します。",
-      "image": "/assets/blog/20261009-usagiyama-kamada-reading-cover.webp",
-      "internal_links": [
-        "/u002.html",
-        "/u003.html",
-        "/u028.html"
-      ]
-    },
-    {
-      "slug": "20261010-iwata-buddhist-statue-research",
-      "date": "2026-10-10",
-      "kind": "how-to-research",
-      "tags": [
-        "仏像",
-        "寺社",
-        "文化財",
-        "資料の読み方"
-      ],
-      "title": "仏像の調べ方｜磐田の本編で作る鑑賞メモ",
-      "description": "磐田の仏像は、像名・所蔵先・制作年代を分け、本編と公式資料を照合して調べます。浜松市美術館の展示をきっかけに、神像の尊名や制作と伝来の確度を確かめる手順を紹介。未確認を残せる鑑賞メモの書式と、本編3本を読む順番を大石浩之が案内します。",
-      "image": "/assets/blog/20261010-iwata-buddhist-statue-research-cover.webp",
-      "internal_links": [
-        "/n075",
-        "/m021",
-        "/oishi-ronko/051/"
-      ]
-    },
-    {
-      "slug": "20261011-hinomi-yagura-role-reading",
-      "date": "2026-10-11",
-      "kind": "reading",
-      "tags": [
-        "防災",
-        "火の見櫓",
-        "暮らし",
-        "資料の読み方"
-      ],
-      "title": "火の見櫓の役割｜磐田の本編3本を読む",
-      "description": "火の見櫓の役割は、火事を見張り、半鐘の音で知らせること。本編の消防史・掛塚の火災と消防・秋葉常夜灯を読み、見付ける備えと伝える備えを整理します。10月13日の国際防災デーを前に、個別の合図や現存状況を決め付けず、出典と未確認事項を残す読み方を大石浩之が案内します。",
-      "image": "/assets/blog/20261011-hinomi-yagura-role-reading-cover.webp",
-      "internal_links": [
-        "/c123.html",
-        "/r041.html",
-        "/c087.html"
-      ]
-    },
-    {
-      "slug": "20261012-local-history-reading-circle",
-      "date": "2026-10-12",
-      "kind": "reading",
-      "tags": [
-        "読書会",
-        "古墳・遺跡",
-        "資料の読み方"
-      ],
-      "title": "郷土史読書会の開き方｜磐田の本編で始める",
-      "description": "郷土史読書会は、家族や知人2〜4人で本編の一節を45分読む形から。磐田の堂山古墳・新豊院山古墳群・発掘調査報告書の本編を使い、記載と感想、未確認の疑問を分ける進め方を提案します。読む範囲の決め方、役割分担、持ち帰るメモまで大石浩之が案内します。",
-      "image": "/assets/blog/20261012-local-history-reading-circle-cover.webp",
-      "internal_links": [
-        "/u037.html",
-        "/y011.html",
-        "/u034.html"
-      ]
-    },
-    {
-      "slug": "20261012-yashiroyama-history-walk",
-      "date": "2026-10-12",
-      "kind": "reading",
-      "tags": [
-        "城跡",
-        "豊岡",
-        "資料の読み方"
-      ],
-      "title": "社山城跡の歴史散策｜訪問前に読む本編3本",
-      "description": "社山城跡の歴史散策は、遺構・史料の確度・周辺集落を扱う本編3本の予習から。y014、第30号、第84号の読む順序と、現地へ持っていく観察メモを大石浩之が提案します。築城年や城主、地名の由来を決め付けず、出発前に別途確認する通行・駐車条件も整理します。",
-      "image": "/assets/blog/20261012-yashiroyama-history-walk-cover.webp",
-      "internal_links": [
-        "/y014.html",
-        "/oishi-ronko/030/",
-        "/oishi-ronko/084/"
-      ]
-    },
-    {
-      "slug": "20261013-kokudaka-harvest-difference",
-      "date": "2026-10-13",
-      "kind": "reading",
-      "tags": [
-        "石高",
-        "統計",
-        "資料の読み方"
-      ],
-      "title": "石高と収穫量の違い｜磐田の本編を読み比べる",
-      "description": "石高は土地の生産力を示す評価の基準で、その年の収穫実績とは分けて読みます。磐田物語の本編3本から、年代・村域・記載基準の違いと未確認の数値を整理。10月18日の統計の日を前に、昔の村の豊かさを数字だけで決めず、比較の条件を確かめる読書案内です。",
-      "image": "/assets/blog/20261013-kokudaka-harvest-difference-cover.webp",
-      "internal_links": [
-        "/c035.html",
-        "/r034.html",
-        "/oishi-ronko/223/"
-      ]
-    },
-    {
-      "slug": "20261014-ryuyo-museum-reading",
-      "date": "2026-10-14",
-      "kind": "reading",
-      "tags": [
-        "竜洋郷土資料館",
-        "資料の読み方",
-        "竜洋"
-      ],
-      "title": "竜洋郷土資料館｜秋の見学前に読む本編3本",
-      "description": "掛塚・袖浦・十束の地域像、袖浦の製塩、十束の新田開拓を扱う本編3本が入口です。暮らしの展示を考える問いを用意し、由来・用途・記録の確度を現地で確かめます。本編の説明が、そのまま展示品の説明になるとは限りません。入館は無料。開館日と休館日は市の施設ガイドで確認します。 この記事は、既存の本編と公的な施設案内を読むための案内です。新しい史実を主張しません。現在",
-      "image": "/assets/blog/20261014-ryuyo-museum-reading-cover.webp",
-      "internal_links": [
-        "/r019.html",
-        "/oishi-ronko/041/",
-        "/r004.html"
-      ]
-    },
-    {
-      "slug": "20261014-jinsha-passenger-records",
-      "date": "2026-10-14",
-      "kind": "reading",
-      "tags": [
-        "鉄道",
-        "人車軌道",
-        "資料の読み方"
-      ],
-      "title": "磐田の人車軌道｜乗客の記録を読む3本",
-      "description": "磐田の中泉軌道の旅客利用は、本編c060の車丁・6人乗り・利用人数の記述から読めます。会社史のc059、廃線後の記憶を扱うc062を続けて読み、人数と乗客の体験を分けて確認。鉄道の日に、原資料未照合の数値を言い切らない読み方を大石浩之が案内します。",
-      "image": "/assets/blog/20261014-jinsha-passenger-records-cover.webp",
-      "internal_links": [
-        "/c060.html",
-        "/c059.html",
-        "/c062.html"
-      ]
-    },
-    {
-      "slug": "20261015-ezu-topographic-map-mitsuke",
-      "date": "2026-10-15",
-      "kind": "reading",
-      "tags": [
-        "古地図",
-        "見付",
-        "資料の読み方"
-      ],
-      "title": "絵図と地形図の違い｜見付の本編で読み分ける",
-      "description": "絵図と地形図の違いは、古さだけでなく描く目的にあります。見付宿の二枚の絵図を扱う本編から、林の帰属や修繕負担の読み方を案内。国土地理院の電子地形図50000の目的と比べ、距離や空白を読みすぎず、現在の場所を決める前に確かめたい項目を整理します。",
-      "image": "/assets/blog/20261015-ezu-topographic-map-mitsuke-cover.webp",
-      "internal_links": [
-        "/m152.html",
-        "/c011.html",
-        "/c131.html"
-      ]
-    },
-    {
-      "slug": "20261016-shizuoka-cultural-properties-exhibition",
-      "date": "2026-10-16",
-      "kind": "how-to-research",
-      "tags": [
-        "文化財",
-        "資料の読み方",
-        "旧見付学校"
-      ],
-      "title": "しずおかの文化財展｜磐田の本編と読む秋展示",
-      "description": "しずおかの文化財は、県立中央図書館で10月1日から11月29日まで開かれる文化財関連資料の展示です。旧見付学校の紹介や公式の展示資料リストを入口に、磐田の文化財を読む本、本編c005の資料利用方針、見学前に確かめたいことを案内します。",
-      "image": "/assets/blog/20261016-shizuoka-cultural-properties-exhibition-cover.webp",
-      "internal_links": [
-        "/c005.html",
-        "/m015.html",
-        "/blog/20260909-mitsuke-school-iwata-bunko-difference/"
-      ]
-    },
-    {
-      "slug": "20261016-cultural-property-sign-reading",
-      "date": "2026-10-16",
-      "kind": "how-to-research",
-      "tags": [
-        "文化財",
-        "資料の読み方",
-        "説明板"
-      ],
-      "title": "文化財説明板の読み方｜磐田で確かめる3項目",
-      "description": "文化財説明板は、名称・年号が指す出来事・説明の根拠の順で読みます。磐田の指定文化財一覧、旧見付学校、寺院の本編を使い、落成や指定を混同しない確認メモの作り方を案内。分からない箇所は未確認と残し、次に調べる問いを一つ持ち帰ります。",
-      "image": "/assets/blog/20261016-cultural-property-sign-reading-cover.webp",
-      "internal_links": [
-        "/c021.html",
-        "/m015.html",
-        "/c134.html"
-      ]
-    },
-    {
-      "slug": "20261017-kyureki-shinreki-reading",
-      "date": "2026-10-17",
-      "kind": "reading",
-      "tags": [
-        "暦",
-        "年中行事",
-        "資料の読み方"
-      ],
-      "title": "旧暦と新暦の違い｜磐田の行事記録を読む",
-      "description": "旧暦と新暦は、日付を決める仕組みが違います。福田と向笠の本編を案内し、月遅れとの混同を避けながら行事記録を読み比べます。十三夜の日付を入口に、資料の月日、地域と採録時点、現在の開催案内を分け、分からない点を残す読み方を紹介します。",
-      "image": "/assets/blog/20261017-kyureki-shinreki-reading-cover.webp",
-      "internal_links": [
-        "/f017.html",
-        "/k073.html",
-        "/oishi-ronko/262/"
-      ]
-    },
-    {
-      "slug": "20261018-iwata-kaki-toyooka-reading",
-      "date": "2026-10-18",
-      "kind": "reading",
-      "tags": [
-        "豊岡",
-        "食文化",
-        "産業",
-        "資料の読み方"
-      ],
-      "title": "磐田の柿｜秋の味覚から豊岡の本編3本へ",
-      "description": "磐田市敷地の次郎柿は、県公式情報で10月下旬～12月上旬が旬の目安です。ころ柿・敷地米・旧敷地村の本編3本を案内し、秋の味覚から地域の生業へ読み進めます。今年の収穫状況と過去の記録を分け、資料で分からない点を残す読み方を紹介します。",
-      "image": "/assets/blog/20261018-iwata-kaki-toyooka-reading-cover.webp",
-      "internal_links": [
-        "/y029.html",
-        "/y030.html",
-        "/oishi-ronko/079/"
-      ]
-    },
-    {
-      "slug": "20261019-iwata-cultural-heritage-festival",
-      "date": "2026-10-19",
-      "kind": "guide",
-      "tags": [
-        "文化財",
-        "展示",
-        "資料の読み方"
-      ],
-      "title": "いわた文化財フェスティバル2026｜本編で予習",
-      "description": "いわた文化財フェスティバル2026は11月29日、見付と竜洋の2会場で開催予定。発掘調査報告書、奉納相撲、上野公園の本編3本で予習し、展示と体験の受付条件を分けて確認します。本編の記述と当日の展示内容を混同しない訪問準備の案内です。",
-      "image": "/assets/blog/20261019-iwata-cultural-heritage-festival-cover.webp",
-      "internal_links": [
-        "/u034.html",
-        "/t066.html",
-        "/n063.html"
-      ]
-    },
-    {
-      "slug": "20261019-local-history-timeline-notes",
-      "date": "2026-10-19",
-      "kind": "how-to-research",
-      "tags": [
-        "郷土史",
-        "年表",
-        "資料の読み方"
-      ],
-      "title": "郷土史年表の作り方｜磐田の本編で3列メモ",
-      "description": "郷土史の年表は「年代・出来事・出典と確かさ」の3列で整理します。磐田の本編を例に、運行停止と会社解散を分け、年代の「ごろ」「前後」や推定を残す手順を案内。文化財保護強調週間を前に、分からない年を埋めず、まず3行の読書メモから始めます。",
-      "image": "/assets/blog/20261019-local-history-timeline-notes-cover.webp",
-      "internal_links": [
-        "/n011.html",
-        "/c096.html",
-        "/r044.html"
-      ]
-    },
-    {
-      "slug": "20261020-terakoya-modern-school-comparison",
-      "date": "2026-10-20",
-      "kind": "reading",
-      "tags": [
-        "学校",
-        "寺子屋",
-        "資料の読み方"
-      ],
-      "title": "寺子屋と近代学校の違い｜磐田の本編を読む",
-      "description": "寺子屋と近代学校の違いを、学ぶ場・教える人・地域の負担から比較します。磐田物語の教育史と田原の学校史を案内し、制度の年代と地域の記録を区別。読書週間を前に、人数や費用が未確認の部分も残しながら本編を読み解きます。",
-      "image": "/assets/blog/20261020-terakoya-modern-school-comparison-cover.webp",
-      "internal_links": [
-        "/oishi-ronko/240/",
-        "/oishi-ronko/124/",
-        "/c094.html"
-      ]
-    },
-    {
-      "slug": "20261021-iwata-haikai-autumn-reading",
-      "date": "2026-10-21",
-      "kind": "reading",
-      "tags": [
-        "俳諧",
-        "野口在色",
-        "文学"
-      ],
-      "title": "磐田の俳諧｜秋の読書で開く本編2本",
-      "description": "磐田の俳諧を知る入口に、野口在色と後世の俳諧活動を扱う本編、竜洋の地域の記憶を扱う本編を案内します。読書週間を前に、読む順番と資料の確かめどころを整理。人物の伝記を新たに作らず、記述と未確認の範囲を分けて読みます。",
-      "image": "/assets/blog/20261021-iwata-haikai-autumn-reading-cover.webp",
-      "internal_links": [
-        "/n054.html",
-        "/r070.html",
-        "/n053.html"
-      ]
-    },
-    {
-      "slug": "20261022-old-photo-location-research",
-      "date": "2026-10-22",
-      "kind": "how-to-research",
-      "tags": [
-        "古写真",
-        "資料の調べ方",
-        "見付"
-      ],
-      "title": "古写真の撮影場所の調べ方｜磐田の本編で確認",
-      "description": "古写真の撮影場所は、表裏の文字を控え、道筋や周辺建物を本編と照合して調べます。磐田の本編3本を手掛かりに、一致と相違、推定と未確認を分けた確認メモを作成。文化財保護強調週間を前に、場所を急いで決めない読み方を案内します。",
-      "image": "/assets/blog/20261022-old-photo-location-research-cover.webp",
-      "internal_links": [
-        "/c131.html",
-        "/m120.html",
-        "/c068.html"
-      ]
-    },
-    {
-      "slug": "20261023-choshizuka-autumn-reading",
-      "date": "2026-10-23",
-      "kind": "guide",
-      "tags": [
-        "古墳・遺跡",
-        "寺谷",
-        "本編案内"
-      ],
-      "title": "銚子塚古墳周辺の秋散策｜本編3本への案内",
-      "description": "銚子塚古墳周辺の散策前に、両古墳の形、被葬者像の推定、長者屋敷遺跡を扱う本編3本を案内します。寺谷の史跡を同じ時代や人物の物語にまとめず、記録と解釈を読み分けます。秋の文化財保護強調週間を前に、一つの問いを持って歩くための読書案内です。",
-      "image": "/assets/blog/20261023-choshizuka-autumn-reading-cover.webp",
-      "internal_links": [
-        "/k047.html",
-        "/oishi-ronko/011/",
-        "/k038.html"
-      ]
-    },
-    {
-      "slug": "20261024-shiseki-iseki-difference",
-      "date": "2026-10-24",
-      "kind": "reading",
-      "tags": [
-        "古墳・遺跡",
-        "文化財",
-        "本編案内"
-      ],
-      "title": "史跡と遺跡の違い｜磐田の本編で読み分ける",
-      "description": "史跡と遺跡は対立する分類ではありません。名前と指定区分を分け、磐田の本編3本で確認事項と推定を読み分けます。文化財保護強調週間を前に、遠江国分寺の伽藍、指定文化財一覧、発掘調査報告書を読む順序と、未確認を残すメモの作り方を案内します。",
-      "image": "/assets/blog/20261024-shiseki-iseki-difference-cover.webp",
-      "internal_links": [
-        "/n004.html",
-        "/c021.html",
-        "/u034.html"
-      ]
-    },
-    {
-      "slug": "20261025-kakezuka-lighthouse-reading",
-      "date": "2026-10-25",
-      "kind": "reading",
-      "tags": [
-        "灯台",
-        "竜洋",
-        "本編案内"
-      ],
-      "title": "掛塚灯台の記録｜灯台記念日に読む本編3本",
-      "description": "掛塚灯台の歴史を、本編の資料案内・港の近代年表・磐田論考第73号で読む入口です。灯台と天気予報、救難所の記録をたどり、私的な灯明施設とのつながりなど未確認の点を分けます。灯台記念日を前に、根拠へ戻れる読書メモの残し方を大石浩之が案内します。",
-      "image": "/assets/blog/20261025-kakezuka-lighthouse-reading-cover.webp",
-      "internal_links": [
-        "/r057.html",
-        "/r044.html",
-        "/oishi-ronko/073/"
-      ]
-    },
-    {
-      "slug": "20261026-iwata-old-tree-walk",
-      "date": "2026-10-26",
-      "kind": "guide",
-      "tags": [
-        "巨木",
-        "天然記念物",
-        "散策"
-      ],
-      "title": "磐田の巨木散策｜秋の行き先を選ぶ本編3本",
-      "description": "磐田の巨木散策は、駅前の善導寺大クス、見付の西光寺、城之崎の福王寺を扱う本編から選べます。文化財保護強調週間を前に、土地の記憶と木の関係を読む案内です。樹齢の推定や名称の違いを残し、訪問前に確かめたいことを一つ選びます。",
-      "image": "/assets/blog/20261026-iwata-old-tree-walk-cover.webp",
-      "internal_links": [
-        "/n026",
-        "/m028",
-        "/n030"
-      ]
-    },
-    {
-      "slug": "20261027-iwata-dialect-reading-route",
-      "date": "2026-10-27",
-      "kind": "how-to-research",
-      "tags": [
-        "遠州弁",
-        "資料の調べ方",
-        "本編案内"
-      ],
-      "title": "遠州弁の調べ方｜磐田の3ページを使い分ける",
-      "description": "遠州弁を調べるときは、辞典で意味を探し、解説で注記を読み、資料室で記録を確かめます。磐田物語の3ページを使い分け、作例と採録、知っていることばと使うことばを分ける読書案内。今日一語を調べるためのメモ欄も用意しました。",
-      "image": "/assets/blog/20261027-iwata-dialect-reading-route-cover.svg",
-      "internal_links": [
-        "/c006",
-        "/c175",
-        "/c172",
-        "/c176"
-      ],
-      "run_id": "b4730f589d9b493c9c79262d231ce859"
-    },
-    {
-      "slug": "20261028-niji-bunko-reading-guide",
-      "date": "2026-10-28",
-      "kind": "reading",
-      "tags": [
-        "福田",
-        "資料の調べ方",
-        "本編案内"
-      ],
-      "title": "虹文庫の記録｜磐田の本編3本を読む入口",
-      "description": "虹文庫を知る入口として、磐田物語の福田地区記事、詳しい論考、民間記録の総論を案内します。設立年や活動実態の未確認事項を埋めず、各ページの役割と資料の読み分けを整理。読書週間に、地域の名前から本編へ進むための読書案内です。",
-      "image": "/assets/blog/20261028-niji-bunko-reading-guide-cover.webp",
-      "internal_links": [
-        "/f043.html",
-        "/oishi-ronko/239/",
-        "/oishi-ronko/279/"
-      ],
-      "run_id": "0f30a737d13c4146928746167d708408"
-    },
-    {
-      "slug": "20261028-iwata-timber-reading",
-      "date": "2026-10-28",
-      "kind": "reading",
-      "tags": [
-        "木材流通",
-        "天竜川",
-        "本編案内"
-      ],
-      "title": "磐田の木材流通｜川・問屋・鉄路を読む3本",
-      "description": "磐田の木材流通を知る入口として、天竜川の輸送方法、掛塚の問屋、豊岡の鉄路を扱う本編3本を案内します。運ぶ方法と取引、駅までの接続を分けて読み、裏付けのない年代や規模は補いません。秋の林業研修をきっかけに、地域の商売を読むための確認点を整理します。",
-      "image": "/assets/blog/20261028-iwata-timber-reading-cover.webp",
-      "internal_links": [
-        "/t041.html",
-        "/r009.html",
-        "/o010.html"
-      ],
-      "run_id": "962c0fa09a754f5986e129ed5d3f9f13"
-    },
-    {
-      "slug": "20261030-iwata-sumo-history-reading",
-      "date": "2026-10-30",
-      "kind": "reading",
-      "tags": [
-        "相撲",
-        "文化財",
-        "資料の読み方"
-      ],
-      "title": "磐田の相撲の歴史｜展示前に読む本編2本",
-      "description": "磐田の相撲の歴史を知る入口として、若宮八幡宮と佐藤繁蔵の記事、文化財資料集を案内。歴史文書館の企画展に向け、記録と展示を分けて確かめます。",
-      "image": "/assets/blog/20261030-iwata-sumo-history-reading-cover.webp",
-      "internal_links": [
-        "/t066.html",
-        "/c005.html"
-      ],
-      "run_id": "46c1827b2bfd468291c32952d10673c3"
-    },
-    {
-      "slug": "20261031-ikou-ibutsu-difference",
-      "date": "2026-10-31",
-      "kind": "reading",
-      "tags": [
-        "文化財",
-        "古墳・遺跡",
-        "資料の読み方"
-      ],
-      "title": "遺構と遺物の違い｜磐田の本編で読み分ける",
-      "description": "遺構は住居跡や溝など土地に残る痕跡、遺物は土器や道具などの物です。磐田の城之崎・浜部・米塚の本編を手がかりに、場所と出土品の記述を読み分けます。文化財保護強調週間を前に、見つかった位置と年代の説明を混同せず読むためのメモも紹介します。",
-      "image": "/assets/blog/20261031-ikou-ibutsu-difference-cover.webp",
-      "internal_links": [
-        "/u004.html",
-        "/s025.html",
-        "/k003.html"
-      ],
-      "run_id": "abd529ecde8c491f8fd0e6f7e4c23977"
-    },
-    {
-      "slug": "20261101-iwata-kikobun-reading",
-      "date": "2026-11-01",
-      "kind": "reading",
-      "tags": [
-        "紀行文学",
-        "資料の読み方",
-        "見付"
-      ],
-      "title": "磐田の紀行文の読み方｜旅人の印象をどう読む",
-      "description": "磐田の紀行文は、作品に書かれた言葉、本編の解釈、未確認事項を分けて読みます。見付を描く十六夜日記と、国分寺が登場しない紀行文、江戸の旅の読み物を入口に、旅人の印象を町全体の事実へ広げない確認メモの作り方を案内します。",
-      "image": "/assets/blog/20261101-iwata-kikobun-reading-cover.webp",
-      "internal_links": [
-        "/c110.html",
-        "/n037.html",
-        "/m137.html"
-      ],
-      "run_id": "99c30bd41be349cbbd9a150b0af8a61d"
-    },
-    {
-      "slug": "20261102-iwata-shaden-date-notes",
-      "date": "2026-11-02",
-      "kind": "how-to-research",
-      "tags": [
-        "社殿",
-        "資料の読み方",
-        "見付",
-        "中泉"
-      ],
-      "title": "磐田の社殿の年代を調べる｜本編で作る確認メモ",
-      "description": "磐田の社殿の年代は、創建の由緒、再建、修理を分けて調べます。淡海国玉神社と府八幡宮の本編を入口に、対象の建物・工事の種類・出典を一行ずつ記す確認メモを提案。棟札の年号と現存部材を混同せず、未確認の範囲も残す手順です。",
-      "image": "/assets/blog/20261102-iwata-shaden-date-notes-cover.webp",
-      "internal_links": [
-        "/oishi-ronko/066/",
-        "/n082.html",
-        "/n075.html"
-      ],
-      "run_id": "37452faf2e6a4f1bb84debe6a88df6d0"
-    },
-    {
-      "slug": "20261103-iwata-same-name-person",
-      "date": "2026-11-03",
-      "kind": "reading",
-      "tags": [
-        "人物",
-        "資料・史料",
-        "比較"
-      ],
-      "title": "同姓同名は同一人物？磐田の本編を読み比べる",
-      "description": "同姓同名でも、名前の一致だけでは同一人物と決められません。磐田物語の本編3本を読み比べ、郷土資料と全国資料の記述、両者をつなぐ根拠、未確認の範囲を分けます。文化財保護強調週間に、人物を取り違えず、結論を保留しながら読める比較読書案内です。",
-      "image": "/assets/blog/20261103-iwata-same-name-person-cover.webp",
-      "internal_links": [
-        "/oishi-ronko/268/",
-        "/oishi-ronko/258/",
-        "/oishi-ronko/210/"
-      ]
-    },
-    {
-      "slug": "20261103-honkoku-kaisetsu-difference",
-      "date": "2026-11-03",
-      "kind": "reading",
-      "tags": [
-        "資料・史料",
-        "地名",
-        "比較"
-      ],
-      "title": "翻刻と解説の違い｜磐田の地名資料を読む",
-      "description": "翻刻は資料の文字を写したもの、解説は内容や背景を説明する文章です。見付の地名一覧と太田川の本編から、表記・注記・解釈を読み分けます。文化財保護強調週間に、読めた文字と地名の由来を混同せず、判断を保留しながら郷土資料を読むための案内です。",
-      "image": "/assets/blog/20261103-honkoku-kaisetsu-difference-cover.webp",
-      "internal_links": [
-        "/m149.html",
-        "/k068.html",
-        "/blog/20260929-iwata-kuzushiji-check/"
-      ]
-    },
-    {
-      "slug": "20261104-tsunami-bosai-day",
-      "date": "2026-11-04",
-      "kind": "reading",
-      "tags": [
-        "防災",
-        "資料・史料"
-      ],
-      "title": "津波防災の日はなぜ11月5日？磐田の地震記録と読み比べる",
-      "description": "津波防災の日は、旧暦11月5日に紀州広村を襲った津波と避難の故事にちなみます。磐田の本編に出る旧暦11月4日は安政東海地震の日。遠州と紀州の地名、二つの地震名、当時と現在の暦を並べ、磐田に伝わる『一代咄』への入口を案内します。",
-      "image": "/assets/blog/20261104-tsunami-bosai-day-cover.webp",
-      "internal_links": [
-        "/c124.html",
-        "/r040.html",
-        "/blog/20261017-kyureki-shinreki-reading/"
-      ]
-    },
-    {
-      "slug": "20261104-tokaido-ichiri",
-      "date": "2026-11-04",
-      "kind": "reading",
-      "tags": [
-        "東海道",
-        "見付宿"
-      ],
-      "title": "一里は何キロ？磐田の一里塚で読む東海道の距離",
-      "description": "東海道の一里は約4キロ。磐田・見付の阿多古山一里塚の模式図で、道の両側にある塚の数え方を読みます。本編に出てくる約3.9キロとの関係、往復で歩くときの距離の考え方も紹介します。",
-      "image": "/assets/blog/20261104-tokaido-ichiri-cover.webp",
-      "internal_links": [
-        "/m026.html",
-        "/c088.html",
-        "/t039.html"
-      ]
-    },
-    {
-      "slug": "20261105-senhiki-record",
-      "date": "2026-11-05",
-      "kind": "reading",
-      "tags": [
-        "方言",
-        "郷土資料"
-      ],
-      "title": "磐田の方言の調べ方｜「せんひき」の原回答をたどる",
-      "description": "定規を「せんひき」と呼ぶ記録を、国立国語研究所の全国方言分布調査で探す手順です。磐田市地点のデータ番号25230を開き、質問項目、回答「センヒキ」、子供の頃の呼び名を記した注記を別々に控えます。",
-      "image": "/assets/blog/20261105-senhiki-record-cover.webp",
-      "internal_links": [
-        "/c175.html",
-        "/c172.html",
-        "/blog/20261027-iwata-dialect-reading-route/"
-      ]
-    },
-    {
-      "slug": "20261105-kaketsuka-totsuka-shobogumi",
-      "date": "2026-11-05",
-      "kind": "reading",
-      "tags": [
-        "消防",
-        "防災",
-        "竜洋"
-      ],
-      "title": "掛塚と十束村の消防組はどう始まったか",
-      "description": "掛塚の記録が伝えるのは消防組の設立、十束村の記録が最初に挙げるのはポンプの購入です。磐田物語の本編を開き、組を設けた年、道具を備えた年、村内を四部に分けた年を、竜洋地区に暮らす人が読み比べられるよう整理します。",
-      "image": "/assets/blog/20261105-kaketsuka-totsuka-shobogumi-cover.webp",
-      "internal_links": [
-        "/r041.html",
-        "/c123.html",
-        "/blog/20261011-hinomi-yagura-role-reading/"
-      ]
-    },
-    {
-      "slug": "20261106-legend-comparison-notes",
-      "date": "2026-11-06",
-      "kind": "how-to-research",
-      "tags": [
-        "郷土資料",
-        "伝説"
-      ],
-      "title": "伝説の読み比べ方｜磐田の本編で作る比較メモ",
-      "description": "伝説の結末が資料ごとに違うときは、話を一つにまとめず比較欄を分けます。磐田の太田川伝説を扱う本編から、資料名・該当頁・村名・人物名・展開・結末のメモを作り、記載なしと未確認を分ける読み方を案内します。",
-      "image": "/assets/blog/20261106-legend-comparison-notes-cover.webp",
-      "internal_links": [
-        "/k068.html",
-        "/f016.html",
-        "/c050.html"
-      ]
-    },
-    {
-      "slug": "20261107-iwata-winter-life-reading",
-      "date": "2026-11-07",
-      "kind": "reading",
-      "tags": [
-        "暮らし",
-        "資料の読み方"
-      ],
-      "title": "磐田の冬の暮らし｜木炭と電灯の記録を読む",
-      "description": "磐田の昔の冬の暮らしは、木炭の用途と入手条件、電灯の供給と家庭への普及を分けて読みます。配給史と電気の歴史を扱う本編への読書案内です。暖房器具や家庭の使用量を推測で補わず、確認メモと原資料へ戻る手順を紹介します。",
-      "image": "/assets/blog/20261107-iwata-winter-life-reading-cover.webp",
-      "internal_links": [
-        "/c166.html",
-        "/c122.html",
-        "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
-      ],
-      "run_id": "e172917aec5040dbb52201c44d314b6e",
-      "url": "https://iwata-monogatari.net/blog/20261107-iwata-winter-life-reading/"
-    },
-    {
-      "slug": "20261108-iwata-kinjiro-exhibition",
-      "title": "磐田の二宮金次郎像展示｜本編と読む16体",
-      "date": "2026-11-08",
-      "kind": "reading",
-      "tags": [
-        "展示",
-        "資料の読み方"
-      ],
-      "description": "磐田の二宮金次郎像展示は埋蔵文化財センターで開催中。小学校と旧小学校跡に残る16体の写真と背負子を紹介します。開催条件を確認し、像の記録と報徳運動の本編を分けて読む見学準備を案内します。",
-      "image": "/assets/blog/20261108-iwata-kinjiro-exhibition-cover.webp",
-      "internal_links": [
-        "/c118.html",
-        "/r031.html",
-        "/blog/20260905-showa-elementary-school-exhibition/"
-      ],
-      "run_id": "5bafcadc447e4e69886dddd81ce0ff10",
-      "url": "https://iwata-monogatari.net/blog/20261108-iwata-kinjiro-exhibition/"
-    },
-    {
-      "slug": "20261109-shizuoka-han-prefecture-comparison",
-      "title": "静岡藩と静岡県の違い｜磐田の本編を読み分ける",
-      "date": "2026-11-09",
-      "kind": "reading",
-      "tags": [
-        "資料の読み方",
-        "近代史"
-      ],
-      "description": "静岡藩と静岡県は、名前が似ていても同じ時代・区域を指しません。県誕生150周年を入口に、浜松県を挟む本編の記述と県公式年表を読み比べ、磐田の郡の記録と混同しないための確認順を案内します。",
-      "image": "/assets/blog/20261109-shizuoka-han-prefecture-comparison-cover.webp",
-      "internal_links": [
-        "/c126.html",
-        "/c116.html",
-        "/c010.html"
-      ],
-      "run_id": "f0a5973e46dc456bb60283b5a0556b43",
-      "url": "https://iwata-monogatari.net/blog/20261109-shizuoka-han-prefecture-comparison/"
-    },
-    {
-      "slug": "20261109-chimei-shorui-yomikata",
-      "title": "書類の地名が地図と違うとき｜磐田の地名解説の歩き方",
-      "date": "2026-11-09",
-      "kind": "guide",
-      "tags": [
-        "地名",
-        "資料の読み方"
-      ],
-      "description": "実家の課税明細書や古い書類に出てくる地名が、今の地図や住所と合わない。2026年11月に公開された磐田物語の地名解説を使い、大字・小字・地番の分け方、合併で変わった名前の照合、似た地名の取り違えを防ぐ確認順を案内します。",
-      "image": "/assets/blog/20261109-chimei-shorui-yomikata-cover.webp",
-      "internal_links": [
-        "/chimei/",
-        "/chimei/aza-chiban/",
-        "/chimei/old-address/",
-        "/chimei/kazei-meisaisho/",
-        "/chimei/missing-aza/",
-        "/chimei/similar-names/"
-      ],
-      "run_id": "06ed880d97bb6f7d4d47cb2d11e33951",
-      "url": "https://iwata-monogatari.net/blog/20261109-chimei-shorui-yomikata/"
-    },
-    {
-      "slug": "20261110-mitsuke-kanjocho-yomikata",
-      "title": "見付宿の勘定帳の読み方｜天保10年の歳入・歳出を本編で確かめる",
-      "date": "2026-11-10",
-      "kind": "reading",
-      "tags": [
-        "見付宿",
-        "資料の読み方"
-      ],
-      "description": "宿場の収入は運賃だけではありません。天保10年（1839年）の見付宿では、最大の歳入は宿内と助郷への賦課金で、最大の支出は人馬を動かす運輸費でした。磐田物語の本編4ページを使い、勘定帳の区分の分け方、概数の扱い、宿助成の読み方を案内します。",
-      "image": "/assets/blog/20261110-mitsuke-kanjocho-yomikata-cover.webp",
-      "internal_links": [
-        "/m158.html",
-        "/m167.html",
-        "/m168.html",
-        "/m169.html"
-      ],
-      "run_id": "57a0a4fa223d68ba2a604e5bd0fafcd4",
-      "url": "https://iwata-monogatari.net/blog/20261110-mitsuke-kanjocho-yomikata/"
-    },
-    {
-      "slug": "20261111-shinden-chimei-yomikata",
-      "title": "磐田の「新田」地名の読み方｜本村名と人名、二つの型を本編でたどる",
-      "date": "2026-11-11",
-      "kind": "reading",
-      "tags": [
-        "地名",
-        "新田開発"
-      ],
-      "description": "寺谷新田・源平新田・太郎馬新田・宇兵衛新田。磐田に残る「新田」の地名は、本村名を冠する型と人名を冠する型に大別できます。磐田物語の本編と磐田論考を使い、二つの舞台（天竜川左岸と遠州灘沿岸）、年代が残る池之谷新田の例、「未確認」をそのまま読む作法を案内します。",
-      "image": "/assets/blog/20261111-shinden-chimei-yomikata-cover.webp",
-      "internal_links": [
-        "/t007.html",
-        "/t008.html",
-        "/oishi-ronko/273/",
-        "/oishi-ronko/142/",
-        "/oishi-ronko/143/",
-        "/k076.html"
-      ],
-      "run_id": "ba1485c73786c82235d0c85b3dc94fb1",
-      "url": "https://iwata-monogatari.net/blog/20261111-shinden-chimei-yomikata/"
-    },
-    {
-      "slug": "20261112-mitsuke-sukego-yomikata",
-      "title": "見付宿の助郷の読み方｜宿の外側の68ヶ村と、勤高・賃銭で読む負担の広がり",
-      "date": "2026-11-12",
-      "kind": "reading",
-      "tags": [
-        "見付宿",
-        "助郷"
-      ],
-      "description": "見付宿の人馬が足りないとき、周辺の村々が人足と馬を出した制度が助郷です。第一期68ヶ村から123ヶ村への組み替え、村高と勤高の違い、天保10年の買人馬、池田の渡しの定助郷・大助郷との対比を、磐田物語の本編5ページで読み分けます。",
-      "image": "/assets/blog/20261112-mitsuke-sukego-yomikata-cover.webp",
-      "internal_links": [
-        "/m118.html",
-        "/m175.html",
-        "/m176.html",
-        "/m177.html",
-        "/t047.html"
-      ],
-      "run_id": "4f121feae2b5419e9ea1c9cfb70e4201",
-      "url": "https://iwata-monogatari.net/blog/20261112-mitsuke-sukego-yomikata/"
-    },
-    {
-      "slug": "20261113-kamada-shinmeigu-taisai-yomikata",
-      "title": "鎌田神明宮大祭の読み方｜十月ひと月の収斂と、六地区の屋台・虫封じを読む",
-      "date": "2026-11-13",
-      "kind": "reading",
-      "tags": [
-        "祭り",
-        "鎌田神明宮"
-      ],
-      "description": "鎌田神明宮大祭は、本宮の二日間だけの祭りではありません。十月の摂社祭が十七郷十九社から本宮へ収斂する流れ、御厨六地区の屋台と囃子、昭和15年に作られた浦安の舞、幼児の虫封じと満願の鎌奉納を、磐田物語の本編5ページで読み分けます。",
-      "image": "/assets/blog/20261113-kamada-shinmeigu-taisai-yomikata-cover.webp",
-      "internal_links": [
-        "/matsuri-kamada.html",
-        "/matsuri-kamada-sengu.html",
-        "/matsuri-kamada-yatai.html",
-        "/matsuri-kamada-urayasu.html",
-        "/matsuri-kamada-mushifuji.html"
-      ],
-      "run_id": "3126829341de4c0ba96d3dba2a850724",
-      "url": "https://iwata-monogatari.net/blog/20261113-kamada-shinmeigu-taisai-yomikata/"
-    },
-    {
-      "slug": "20261114-yaramaika-yomikata",
-      "title": "遠州弁「やらまいか」の読み方｜誘いの語法と、挑戦の気質を分けて読む",
-      "date": "2026-11-14",
-      "kind": "reading",
-      "tags": [
-        "遠州弁",
-        "やらまいか"
-      ],
-      "description": "遠州弁「やらまいか」には二つの読み方があります。動詞に付く誘いの語法としての意味と、進取の気質を表す地域の自己像としての広がりです。磐田物語の遠州弁辞典と関連3ページで、二つの読みを混ぜずに読み分けます。",
-      "image": "/assets/blog/20261114-yaramaika-yomikata-cover.webp",
-      "internal_links": [
-        "/c006.html",
-        "/c065.html",
-        "/c118.html",
-        "/c127.html"
-      ],
-      "run_id": "8378fa23668cd680bd67c41d60538496",
-      "url": "https://iwata-monogatari.net/blog/20261114-yaramaika-yomikata/"
-    },
-    {
-      "slug": "20261114-kokubunji-matsuri-yomikata",
-      "title": "遠江国分寺まつりの読み方｜国司行列と夜市、二つの動線で読む一日",
-      "date": "2026-11-14",
-      "kind": "reading",
-      "tags": [
-        "祭り",
-        "遠江国分寺"
-      ],
-      "description": "遠江国分寺まつりは、史跡公園だけで完結する祭りではありません。磐田駅北口から府八幡宮を経て国分寺跡へ向かう国司参拝行列と、夕方に駅前へ戻る夜市という二つの動線、天平・戦国・現代の時代の重なりを、磐田物語の本編特集と子特集3ページで読み分けます。",
-      "image": "/assets/blog/20261114-kokubunji-matsuri-yomikata-cover.webp",
-      "internal_links": [
-        "/matsuri-kokubunji.html",
-        "/matsuri-kokubunji-gyoretsu.html",
-        "/matsuri-kokubunji-jidai.html",
-        "/matsuri-kokubunji-yoichi.html"
-      ],
-      "run_id": "9ecf3aa63aac439997d88ee94b833bf4",
-      "url": "https://iwata-monogatari.net/blog/20261114-kokubunji-matsuri-yomikata/"
-    },
-    {
-      "slug": "20261116-ikago-yomikata",
-      "title": "五十子（いかご）の読み方｜「五十」を数字で読まない地名と、旧表記「伊加子」を本編でたどる",
-      "date": "2026-11-16",
-      "kind": "reading",
-      "tags": [
-        "地名",
-        "福田"
-      ],
-      "description": "磐田市五十子は「いかご」と読みます。数字の「五十」をふつうに読んでもたどり着きにくいこの地名を、市の旧福田町の住所表示と日本郵便の読み、磐田市立図書館レファレンス事例78が紹介する旧表記「伊加子」と由来の説明、福田の地域史への入口まで、磐田物語の本編ページで読み分けます。",
-      "image": "/assets/blog/20261116-ikago-yomikata-cover.webp",
-      "internal_links": [
-        "/chimei/ikago/",
-        "/chimei/fukude/",
-        "/chimei/towns/",
-        "/f029.html"
-      ],
-      "run_id": "f60a44b580d84a8faa697023a63ae270",
-      "url": "https://iwata-monogatari.net/blog/20261116-ikago-yomikata/"
-    },
-    {
-      "slug": "20261117-ninomiya-yomikata",
-      "title": "二之宮（にのみや）の読み方｜合併で変わらなかった住所と、区画整理で変わった町名・地番を本編でたどる",
-      "date": "2026-11-17",
-      "kind": "reading",
-      "tags": [
-        "地名",
-        "中泉"
-      ],
-      "description": "磐田市の二之宮は「にのみや」と読みます。合併前・合併後の住所表示の両方に同じ「磐田市二之宮」が載る一方、一部は駅北土地区画整理の対象となり町名・地番が変わったこと、二之宮浅間・二之宮東との読み分け、自治会名と住所の区別まで、磐田物語の本編ページで読み分けます。",
-      "image": "/assets/blog/20261117-ninomiya-yomikata-cover.webp",
-      "internal_links": [
-        "/chimei/towns/0109000/",
-        "/chimei/towns/0110000/",
-        "/chimei/towns/0111000/",
-        "/chimei/towns/",
-        "/chimei/old-address/",
-        "/n091.html"
-      ],
-      "run_id": "e715f51aefaf4d9e9080980dbf36e13f",
-      "url": "https://iwata-monogatari.net/blog/20261117-ninomiya-yomikata/"
-    },
-    {
-      "slug": "20261118-shingai-yomikata",
-      "title": "新貝（しんがい）の読み方｜合併で変わらなかった住所と、2023年の換地処分で変わった区域内の地番を本編でたどる",
-      "date": "2026-11-18",
-      "kind": "reading",
-      "tags": [
-        "地名",
-        "御厨"
-      ],
-      "description": "磐田市の新貝は「しんがい」と読みます。合併前・合併後の住所表示の両方に同じ「磐田市新貝」が載る一方、2023年10月13日の換地処分公告で翌14日から区画整理区域内の地番が変わったこと、新貝一〜三丁目との読み分け、課税明細書の所在欄の見方まで、磐田物語の本編ページで読み分けます。",
-      "image": "/assets/blog/20261118-shingai-yomikata-cover.webp",
-      "internal_links": [
-        "/chimei/towns/0070000/",
-        "/chimei/towns/0070001/",
-        "/chimei/towns/0070002/",
-        "/chimei/towns/0070003/",
-        "/chimei/towns/",
-        "/chimei/old-address/",
-        "/u005.html",
-        "/u045.html"
-      ],
-      "run_id": "3c3ec10e5d094c2ca4a861d57d11333c",
-      "url": "https://iwata-monogatari.net/blog/20261118-shingai-yomikata/"
-    },
-    {
-      "slug": "20261118-iwata-gappei-2005",
-      "title": "磐田市合併（2005年）の歩み｜一市三町一村の新設合併と、住所・市章の変更を本編でたどる",
-      "date": "2026-11-18",
-      "kind": "guide",
-      "tags": [
-        "合併",
-        "市町村史"
-      ],
-      "description": "今の磐田市は2005年4月1日、旧磐田市・福田町・竜洋町・豊田町・豊岡村の一市三町一村の新設合併で生まれました。合併協定の調印から開市式、旧町名が大字に残った住所の変更、現市章と市の木の制定まで、磐田物語の本編ページでたどります。",
-      "image": "/assets/blog/20261118-iwata-gappei-2005-cover.webp",
-      "internal_links": [
-        "/c097.html",
-        "/c014.html",
-        "/c147.html",
-        "/oishi-ronko/274/",
-        "/chimei/old-address/",
-        "/chimei/towns/0165000/",
-        "/y008.html"
-      ],
-      "run_id": "b9ca83ea01cc47c3bbc7f54525ca5d23",
-      "url": "https://iwata-monogatari.net/blog/20261118-iwata-gappei-2005/"
-    },
-    {
-      "slug": "20261119-kaketsuka-yomikata",
-      "title": "掛塚（かけつか）の読み方｜竜洋町掛塚から磐田市掛塚へ、湊町の歩みを本編でたどる",
-      "date": "2026-11-19",
-      "kind": "reading",
-      "tags": [
-        "地名",
-        "竜洋"
-      ],
-      "description": "磐田市の掛塚は「かけつか」と読みます。市の住所表示が合併前の「竜洋町掛塚」と合併後の「磐田市掛塚」を同じ行で対応させること、西貝塚・東貝塚との読み分け、そして天竜川河口の湊町としての歩みを、磐田物語の本編ページで読み分けます。",
-      "image": "/assets/blog/20261119-kaketsuka-yomikata-cover.webp",
-      "internal_links": [
-        "/chimei/towns/0025000/",
-        "/chimei/towns/",
-        "/chimei/old-address/",
-        "/01007-ryuyo.html",
-        "/r038.html",
-        "/r036.html"
-      ],
-      "run_id": "8c201a2839b048088dd179c4f56d5da9",
-      "url": "https://iwata-monogatari.net/blog/20261119-kaketsuka-yomikata/"
-    },
-    {
-      "slug": "20261120-tenryugawa-watashi-kotsu",
-      "title": "天竜川の渡し船と磐田の交通の歩み｜池田の渡しの運用・助郷・川留めから橋への移り変わりを本編でたどる",
-      "date": "2026-11-20",
-      "kind": "reading",
-      "tags": [
-        "天竜川",
-        "交通"
-      ],
-      "description": "橋のない天竜川を、人はどう渡ったのか。東海道の池田の渡しについて、流れで使い分けた渡し場と川会所、川留めの目安、渡船を支えた定助郷・大助郷と船名敷の経済、洪水のたびの仮渡船、そして掛塚側の渡船場から橋への移り変わりを、磐田物語の本編ページで読み分けます。",
-      "image": "/assets/blog/20261120-tenryugawa-watashi-kotsu-cover.webp",
-      "internal_links": [
-        "/t004.html",
-        "/t045.html",
-        "/t047.html",
-        "/t048.html",
-        "/t052.html",
-        "/r039.html",
-        "/c136.html",
-        "/t062.html",
-        "/oishi-ronko/267/"
-      ],
-      "run_id": "2df8b9a0d486447ea276de84bfaad9f1",
-      "url": "https://iwata-monogatari.net/blog/20261120-tenryugawa-watashi-kotsu/"
-    },
-    {
-      "slug": "20261121-mitsuke-yakunin-denmayaku",
-      "title": "見付宿を動かした人々｜名主・問屋・年寄・組頭の四役九人と、間口で決まった伝馬役を本編でたどる",
-      "date": "2026-11-21",
-      "kind": "reading",
-      "tags": [
-        "見付宿",
-        "東海道"
-      ],
-      "description": "見付宿を実際に動かしていたのは誰か。天保13年の名前帳に残る宿役人9名（名主・問屋・年寄・組頭の四役と兼職の顔ぶれ）、寛文5年から据え置かれた問屋給米、表間口の間数で171軒に割り付けられた伝馬役とその金納化の歩みを、磐田物語の本編「宿を動かした人々」で読み分けます。",
-      "image": "/assets/blog/20261121-mitsuke-yakunin-denmayaku-cover.webp",
-      "internal_links": [
-        "/m143.html",
-        "/m142.html",
-        "/m144.html",
-        "/m153.html",
-        "/m161.html",
-        "/m162.html",
-        "/m150.html",
-        "/m170.html",
-        "/m118.html"
-      ],
-      "run_id": "dff0a4a90a544a6e806a21435e5d6f3c",
-      "url": "https://iwata-monogatari.net/blog/20261121-mitsuke-yakunin-denmayaku/"
-    },
-    {
-      "slug": "20261122-fukude-betchin-corduroy-yomikata",
-      "date": "2026-11-22",
-      "kind": "reading",
-      "tags": [
-        "福田",
-        "織物"
-      ],
-      "title": "福田の別珍・コールテン｜「世界のコーデュロイ」を産んだ織物の町を本編でたどる",
-      "description": "磐田市福田の織物産業を、本編 f003「別珍・コールテンと福田の織物産業」一本に絞って読みます。別珍とコールテンの織りの違い、遠州の綿織物の蓄積の上に輸出向けの品質が磨かれた歩み、漁業の本編 f001・f002 と並べて見える港町と織物の町の二つの顔を案内します。",
-      "internal_links": [
-        "/f003.html",
-        "/f001.html",
-        "/f002.html"
-      ],
-      "updated_at": "2026-11-22",
-      "image": "/assets/blog/20261122-fukude-betchin-corduroy-yomikata-cover.webp",
-      "url": "https://iwata-monogatari.net/blog/20261122-fukude-betchin-corduroy-yomikata/",
-      "run_id": "357c023d2dcd1d9b0a0c356fc7acd497"
-    }
-  ]
+  {
+   "slug": "20260827-iwata-monogatari-no-arukikata",
+   "date": "2026-08-27",
+   "kind": "guide",
+   "tags": [
+    "サイト案内",
+    "調査・資料"
+   ],
+   "title": "磐田物語の歩き方 ── 地区・テーマ・史料室という三つの入口",
+   "description": "千本を超える記事の中から、読みたい一本にたどり着くための入口を整理する。地区から降りる、テーマから横に読む、史料そのものから入る。三つの入口の使い分けを、実際のページを示しながら案内する。",
+   "internal_links": [
+    "/c007.html",
+    "/c137.html",
+    "/c034.html",
+    "/c019.html",
+    "/c015.html",
+    "/u034.html",
+    "/01001-mitsuke.html"
+   ]
+  },
+  {
+   "slug": "20260827-iwata-kyodo-shiryo-shirabekata",
+   "date": "2026-08-27",
+   "kind": "how-to-research",
+   "tags": [
+    "図書館",
+    "調査・資料"
+   ],
+   "title": "磐田の郷土資料はどこで調べる ── 図書館とアーカイブ入門",
+   "description": "磐田の郷土資料を自分で調べたいとき、どこへ行けばよいか。磐田市立図書館・磐田市歴史文書館・静岡県立中央図書館という三つの場所の役割を分け、2026年3月に公表された県立のデジタルアーカイブ計画も踏まえて、最初の一歩を案内する。",
+   "internal_links": [
+    "/u034.html",
+    "/c015.html",
+    "/oishi-ronko/279/",
+    "/oishi-ronko/215/",
+    "/c131.html"
+   ]
+  },
+  {
+   "slug": "20260828-tenryugawa-hanran-hazardmap",
+   "date": "2026-08-28",
+   "kind": "now-and-then",
+   "tags": [
+    "防災",
+    "天竜川"
+   ],
+   "title": "天竜川の氾濫史とハザードマップ ── 防災の日の前に読む",
+   "description": "磐田市は2026年1月から、洪水ハザードマップをスマートフォンで見られるようにした。想定は最大規模の降雨。ただし地図が示すのはこれから起こりうる浸水で、過去の記録ではない。天竜川下流に残る氾濫の記録を、磐田物語の既存ページから案内する。",
+   "internal_links": [
+    "/oishi-ronko/218/",
+    "/oishi-ronko/220/",
+    "/t042.html",
+    "/r045.html",
+    "/oishi-ronko/141/"
+   ]
+  },
+  {
+   "slug": "20260830-kaketsuka-matsuri-nittei",
+   "date": "2026-08-30",
+   "kind": "guide",
+   "tags": [
+    "祭り",
+    "掛塚"
+   ],
+   "title": "掛塚まつりの日程2026 ── 磐田論考でたどる湊町の記録",
+   "description": "磐田市は2026年10月17日・18日に掛塚まつりが行われると公表した。会場は貴船神社周辺。日付だけでは見えてこない9台の屋台、県指定の屋台囃子、2024年に市指定となった竹馬について、磐田物語の既存ページから案内する。",
+   "internal_links": [
+    "/oishi-ronko/015/",
+    "/oishi-ronko/167/",
+    "/oishi-ronko/175/",
+    "/oishi-ronko/054/",
+    "/oishi-ronko/029/"
+   ]
+  },
+  {
+   "slug": "20260831-iwata-kofun-naze-ooi",
+   "date": "2026-08-31",
+   "kind": "reading",
+   "tags": [
+    "古墳・遺跡",
+    "磐田原台地"
+   ],
+   "title": "磐田になぜ古墳が多いのか ── 兜塚・堂山を読む",
+   "description": "磐田には九百基を超える古墳があるといわれる。その数の理由を、文化財の数え方ではなく磐田原台地という地形から読む。直径84mの兜塚古墳、全長110mの堂山古墳を手がかりに、磐田物語の既存ページへ案内する。",
+   "internal_links": [
+    "/c012.html",
+    "/m125.html",
+    "/u037.html",
+    "/k047.html",
+    "/k044.html"
+   ]
+  },
+  {
+   "slug": "20260831-mitsuke-nakaizumi-jinko",
+   "date": "2026-08-31",
+   "kind": "reading",
+   "tags": [
+    "見付",
+    "中泉"
+   ],
+   "title": "見付と中泉、人口で比べる磐田の二つの中心",
+   "description": "磐田市の住民基本台帳では、2026年7月末現在で見付地区24,569人、中泉地区18,300人。ただし昭和25年には中泉が見付を上回っていた。江戸の見付宿の戸口から現在の町別人口表まで、区域の取り方に注意しながら磐田物語の既存ページへ案内する。",
+   "internal_links": [
+    "/r038.html",
+    "/m142.html",
+    "/m018.html",
+    "/n092.html",
+    "/c093.html"
+   ]
+  },
+  {
+   "slug": "20260901-mitsuke-tenjin-hadaka-matsuri-2026",
+   "date": "2026-09-01",
+   "kind": "guide",
+   "tags": [
+    "祭り",
+    "見付"
+   ],
+   "title": "見付天神裸祭2026｜8日間の神事を読む",
+   "description": "見付天神裸祭は2026年9月19日・20日に開催予定。9月13日から続く8日間を、静岡県の公開日程と磐田物語の既存論考から読み解き、観覧前に確かめたい点を案内する。",
+   "internal_links": [
+    "/oishi-ronko/005/",
+    "/oishi-ronko/001/",
+    "/oishi-ronko/251/",
+    "/matsuri-hadaka.html",
+    "/m102.html"
+   ]
+  },
+  {
+   "slug": "20260902-nakahara-b-kofun-exhibition",
+   "date": "2026-09-02",
+   "kind": "guide",
+   "tags": [
+    "古墳・遺跡",
+    "展示"
+   ],
+   "title": "中原B古墳群発掘調査成果展｜向陽学府の出土品を見る前に",
+   "description": "向陽学府で見つかった土器や耳環を見る前に、磐田原台地の古墳分布、発掘調査報告書、展示で確認したい点を磐田物語の既存ページから案内する。",
+   "internal_links": [
+    "/c012.html",
+    "/k044.html",
+    "/u034.html"
+   ]
+  },
+  {
+   "slug": "20260905-totomi-kokubunji-2026",
+   "date": "2026-09-05",
+   "kind": "now-and-then",
+   "tags": [
+    "古墳・遺跡",
+    "遠江国分寺"
+   ],
+   "title": "遠江国分寺跡2026｜工事写真で読む史跡公園",
+   "description": "遠江国分寺跡の2026年度再整備を、磐田市が8月6日に更新した工事写真から読む。4月から7月の工程、見学前の安全確認、史跡公園の背景を既存論考3本と結んで案内する。",
+   "internal_links": [
+    "/oishi-ronko/222/",
+    "/oishi-ronko/241/",
+    "/oishi-ronko/272/"
+   ]
+  },
+  {
+   "slug": "20260905-showa-elementary-school-exhibition",
+   "date": "2026-09-05",
+   "kind": "how-to-research",
+   "tags": [
+    "学校",
+    "展示"
+   ],
+   "title": "磐田の昭和の小学校｜展示資料と学校史の読み方",
+   "description": "昭和40～60年代の学校写真や行事の資料を、資料名・年代・学校名・作成者から読む。磐田市歴史文書館の展示案内を、学校史の本編3記事と結んだ記録。掲載した展示の会期は過ぎているが、資料を確かめる手順を読み返せる。",
+   "internal_links": [
+    "/c094.html",
+    "/c148.html",
+    "/c150.html",
+    "/u042.html"
+   ],
+   "updated_at": "2026-10-14",
+   "aliases": [
+    "磐田の昭和の小学校｜9月30日までの展示を読む"
+   ]
+  },
+  {
+   "slug": "20260906-iwata-bousai-kunren-tonankai",
+   "date": "2026-09-06",
+   "kind": "now-and-then",
+   "tags": [
+    "防災",
+    "地震"
+   ],
+   "title": "磐田市防災訓練2026｜東南海地震の記憶を読む",
+   "description": "磐田市が2026年9月6日に予定する総合防災訓練を入口に、自治会資料の確かめ方と、竜洋・田原などに残る東南海地震の記録を読む順番を案内する。",
+   "internal_links": [
+    "/r040.html",
+    "/r030.html",
+    "/u043.html",
+    "/c124.html"
+   ]
+  },
+  {
+   "slug": "20260906-iwata-hospital-history",
+   "date": "2026-09-06",
+   "kind": "reading",
+   "tags": [
+    "医療",
+    "暮らし"
+   ],
+   "title": "磐田の病院史｜救急の日に読む治療と予防",
+   "description": "磐田の病院史は、病院だけでは読めない。2026年9月6日からの救急医療週間を入口に、種痘・避病院・学校検診・組合立磐田病院を既存記事でたどり、治療と予防を暮らしの歴史として案内する。",
+   "internal_links": [
+    "/c120.html",
+    "/c165.html",
+    "/c094.html",
+    "/c150.html"
+   ]
+  },
+  {
+   "slug": "20260906-iwata-old-newspapers",
+   "date": "2026-09-06",
+   "kind": "how-to-research",
+   "tags": [
+    "新聞",
+    "調査・資料"
+   ],
+   "title": "磐田の古新聞の探し方｜国立国会図書館の3手順",
+   "description": "磐田の出来事や人物を古新聞で確かめたい市民へ。紙名・刊行日を絞り、公開範囲を読み、閲覧・複写の条件を確認する。2026年8月追加の新聞約10,900点は館内限定で、現時点では全文検索対象外。国立国会図書館で迷わない3手順を案内する。",
+   "internal_links": [
+    "/c132",
+    "/c159",
+    "/oishi-ronko/243/",
+    "/c020",
+    "/c019"
+   ]
+  },
+  {
+   "slug": "20260907-iwata-water-shortage-2026",
+   "date": "2026-09-07",
+   "kind": "now-and-then",
+   "tags": [
+    "農業・水",
+    "磐田用水"
+   ],
+   "title": "磐田の水不足2026｜5％取水制限と用水の歴史",
+   "description": "磐田市は2026年8月21日から上水道5％、工業・農業用水10％の取水制限対象。5％は家庭使用量の一律削減ではない。磐田原と磐田用水の既存記事をたどり、数字の読み方と確認手順を案内する。",
+   "internal_links": [
+    "/k045",
+    "/oishi-ronko/058/",
+    "/oishi-ronko/277/"
+   ]
+  },
+  {
+   "slug": "20260907-iwata-rice-history-hakuro",
+   "date": "2026-09-07",
+   "kind": "reading",
+   "tags": [
+    "農業・水",
+    "祭り"
+   ],
+   "title": "磐田の稲作史｜白露の9月7日に米作りを読む",
+   "description": "2026年の白露は9月7日23時41分。だが、その精密な時刻は磐田の稲作開始を示さない。弥生のムラと低地、八王子神社の米とぎまつり、現在の土地利用を既存記事でたどり、確認できることと決められないことを分けて読む。",
+   "internal_links": [
+    "/u030.html",
+    "/oishi-ronko/107/",
+    "/c066.html"
+   ]
+  },
+  {
+   "slug": "20260908-ndl-kotenseki-fulltext",
+   "date": "2026-09-08",
+   "kind": "how-to-research",
+   "tags": [
+    "古典籍",
+    "調査・資料"
+   ],
+   "title": "国立国会図書館の古典籍全文検索｜磐田を探す3手順",
+   "description": "国立国会図書館の古典籍全文検索で磐田を探す方法を3手順で案内。2026年9月1日に約7.5万点が加わり、全資料群の対象は約423万点。古典籍に絞り、該当コマの原画像と書誌を確かめ、検索漏れを「記載なし」としない。",
+   "internal_links": [
+    "/oishi-ronko/294/",
+    "/c019.html",
+    "/m149.html"
+   ]
+  },
+  {
+   "slug": "20260908-two-theories-kinosaki-castle",
+   "date": "2026-09-08",
+   "kind": "reading",
+   "tags": [
+    "城跡",
+    "見付"
+   ],
+   "title": "城之崎城の二説比較｜秀吉説と武田説",
+   "description": "城之崎城が未完になった理由をめぐる秀吉説と武田説を、伝承・時系列・地理・直接史料の有無で比較。武田説も確定ではない。2026年9月12日の郷土史講座を前に、本編3ページの安全な読み順を案内する。",
+   "internal_links": [
+    "/m058",
+    "/m060",
+    "/oishi-ronko/196/"
+   ]
+  },
+  {
+   "slug": "20260908-akizaki-yatsushiroran",
+   "date": "2026-09-08",
+   "kind": "reading",
+   "tags": [
+    "中泉",
+    "文化財"
+   ],
+   "title": "アキザキヤツシロランとは｜磐田の秋咲き希少種",
+   "description": "アキザキヤツシロランは、磐田市が天然記念物『群生地』として記録する秋咲きの希少種です。2026年8月21日更新の市指定文化財一覧と磐田物語の既存3ページから、指定情報、生態、見頃を断定できない理由、現地へ行く前の確認手順を案内します。",
+   "internal_links": [
+    "/n028",
+    "/oishi-ronko/177/",
+    "/oishi-ronko/266/"
+   ]
+  },
+  {
+   "slug": "20260908-iwata-bunkazai-dayori-backnumber",
+   "date": "2026-09-08",
+   "kind": "how-to-research",
+   "tags": [
+    "文化財",
+    "調査・資料"
+   ],
+   "title": "いわた文化財だよりバックナンバー｜第258号から探す",
+   "description": "いわた文化財だよりのバックナンバーは、総目次で題目を検索し、号数帯ごとの入口から本文を開くと探しやすい。2026年9月1日発行の第258号を例に、第1〜200号の合冊版と第201号以降のPDFへの進み方、日付の確かめ方を案内する。",
+   "internal_links": [
+    "/c005.html",
+    "/u034.html",
+    "/c019.html"
+   ]
+  },
+  {
+   "slug": "20260909-iwata-old-tokaido-guideposts",
+   "date": "2026-09-09",
+   "kind": "guide",
+   "tags": [
+    "旧東海道",
+    "文化財"
+   ],
+   "title": "磐田の旧東海道道標｜秋に歩く4つの見方",
+   "description": "磐田の旧東海道で道標を安全に見る順序を、石の役割、道筋との関係、現在位置、交通の4面から案内。2026年9月の生活道路の法定速度変更と交通安全運動も、公的情報と本編4ページで確かめます。",
+   "internal_links": [
+    "/c088.html",
+    "/t039.html",
+    "/m026.html",
+    "/c136.html"
+   ]
+  },
+  {
+   "slug": "20260909-mitsuke-school-iwata-bunko-difference",
+   "date": "2026-09-09",
+   "kind": "reading",
+   "tags": [
+    "旧見付学校",
+    "磐田文庫",
+    "見付",
+    "文化財"
+   ],
+   "title": "旧見付学校と磐田文庫の違い｜2施設を読み分ける",
+   "description": "旧見付学校は小学校校舎、磐田文庫は書物に触れる場です。2施設の始まりと役割を比較し、2026年1月23日に認定された一つの保存活用計画との関係、見学前に読む本編3ページを案内します。",
+   "internal_links": [
+    "/oishi-ronko/040/",
+    "/m112.html",
+    "/m015.html"
+   ]
+  },
+  {
+   "slug": "20260911-kyu-akamatsuke-mon-hei",
+   "date": "2026-09-11",
+   "kind": "reading",
+   "tags": [
+    "旧赤松家",
+    "見付",
+    "近代建築",
+    "文化財"
+   ],
+   "title": "旧赤松家の門と塀｜レンガ遺構を読む3つの視点",
+   "description": "旧赤松家のレンガ積みの門と塀は、近代造船を担った赤松則良の屋敷跡に残る県指定文化財です。2026年3月更新の磐田市公式案内と磐田物語の既存4ページから、遺構の背景、磐田原開拓との結びつき、見学前の確認手順を大石浩之が案内します。",
+   "internal_links": [
+    "/m014.html",
+    "/m020.html",
+    "/oishi-ronko/046/",
+    "/oishi-ronko/170/"
+   ]
+  },
+  {
+   "slug": "20260912-mitsuke-wakihonjin-tonyaba",
+   "date": "2026-09-12",
+   "kind": "reading",
+   "tags": [
+    "見付宿",
+    "旧東海道",
+    "文化財",
+    "見付"
+   ],
+   "title": "見付宿の脇本陣と問屋場｜東海道の宿場町を読む3つの記録",
+   "description": "見付宿の脇本陣や問屋場は、東海道五十三次・二十八番目の宿場町として人馬の継立を支えた要所です。2026年3月更新の磐田市公式案内と磐田物語の既存4ページから、宿場町の機能、本陣との違い、現地を歩く前の確認手順を大石浩之が案内します。",
+   "internal_links": [
+    "/c007.html",
+    "/c034.html",
+    "/m001.html",
+    "/m026.html"
+   ]
+  },
+  {
+   "slug": "20260912-mitsuke-tenjin-hadaka-matsuri-rekishi",
+   "date": "2026-09-12",
+   "kind": "reading",
+   "tags": [
+    "見付天神",
+    "裸祭",
+    "重要無形民俗文化財",
+    "見付"
+   ],
+   "title": "見付天神裸祭の起源と歴史｜国指定重要無形民俗文化財を読む3つの記録",
+   "description": "国指定重要無形民俗文化財「見付天神裸祭」の起源と神頭糸の歴史。2026年3月更新の磐田市公式案内と磐田物語の既存4ページから、腰みの姿の裸衆の練りと鬼踊り、見学前の確認手順を大石浩之が案内します。",
+   "internal_links": [
+    "/c007.html",
+    "/c023.html",
+    "/m001.html",
+    "/m026.html"
+   ]
+  },
+  {
+   "slug": "20260912-iwata-original-image-catalog",
+   "date": "2026-09-12",
+   "kind": "reading",
+   "tags": [
+    "史料",
+    "調べ方",
+    "佐口史料"
+   ],
+   "title": "磐田の史料｜原本・画像・目録の違いを読む",
+   "description": "原本は元の資料、画像は撮影された範囲、目録は識別のための情報です。磐田の佐口史料の既存3ページから、代表画像と資料全体の違い、空欄や判読不能の読み方を整理。9月30日までの「史料を遺す」展を入口に、デジタル化の便利さと確認の手間を考えます。",
+   "image": "/assets/blog/20260912-iwata-original-image-catalog-cover.webp",
+   "internal_links": [
+    "/c019.html",
+    "/c020.html",
+    "/c068.html"
+   ]
+  },
+  {
+   "slug": "20260913-iwata-suzuka-eight-hours-factory",
+   "date": "2026-09-13",
+   "kind": "reading",
+   "tags": [
+    "鈴鹿8耐",
+    "ヤマハ発動機",
+    "新貝",
+    "西貝塚",
+    "工場"
+   ],
+   "title": "磐田の鈴鹿8耐展示｜見学前に読む工場の記憶",
+   "description": "磐田の鈴鹿8耐関連展示は、ヤマハのYZF-R1を9月18〜23日に磐田市情報館で見学できる予定です。申込不要・無料。9月13日は期間外です。見学前に読む本編3ページから、新貝・西貝塚の工場と用地交渉、土地の記録への入口を案内します。",
+   "image": "/assets/blog/20260913-iwata-suzuka-eight-hours-factory-cover.webp",
+   "internal_links": [
+    "/c065.html",
+    "/u053.html",
+    "/u005.html"
+   ]
+  },
+  {
+   "slug": "20260913-iwata-tsukimi-dango-mukasa",
+   "date": "2026-09-13",
+   "kind": "reading",
+   "tags": [
+    "月見",
+    "向笠",
+    "年中行事",
+    "食文化"
+   ],
+   "title": "磐田の月見団子｜向笠の十三夜を本編で読む",
+   "description": "磐田の月見団子を知る入口は、向笠の十三夜に供えたへそ団子の記録です。うるち米の粉、すすき、季節の作物を本編から読み、採録地域と刊行時点を確かめます。市内共通の現行習慣とはせず、中秋の名月9月25日と十三夜10月23日を分けて案内します。",
+   "image": "/assets/blog/20260913-iwata-tsukimi-dango-mukasa-cover.webp",
+   "internal_links": [
+    "/k073.html",
+    "/oishi-ronko/269/",
+    "/oishi-ronko/283/"
+   ]
+  },
+  {
+   "slug": "20260914-iwata-horse-history",
+   "date": "2026-09-14",
+   "kind": "reading",
+   "tags": [
+    "馬",
+    "古墳・遺跡",
+    "中泉軌道",
+    "民俗信仰"
+   ],
+   "title": "磐田と馬の歴史｜埴輪・鉄路・供養を読む",
+   "description": "磐田と馬の歴史は、二子塚古墳の馬具と馬形埴輪、中泉軌道の馬力化申請、馬頭観音の解説という本編3本から読めます。9月20〜26日の動物愛護週間を前に、飾り・輸送・供養と暮らしの接点を整理。時代をまたぐ連続性や、未確認の石塔の場所・年代は決めつけません。",
+   "image": "/assets/blog/20260914-iwata-horse-history-cover.webp",
+   "internal_links": [
+    "/u038.html",
+    "/c060.html",
+    "/c070.html"
+   ]
+  },
+  {
+   "slug": "20260914-family-memories-question-memo",
+   "date": "2026-09-14",
+   "kind": "how-to-research",
+   "tags": [
+    "聞き取り",
+    "調べ方",
+    "家族",
+    "子どもの遊び"
+   ],
+   "title": "家族の昔話の残し方｜磐田の本編から作る質問メモ",
+   "description": "家族の昔話は、遊びを一つ選び、聞いた言葉と未確認事項を分けると残せます。磐田物語の本編3本をもとに、年・場所・人数・道具を聞く質問表と記録欄を用意。9月21日の敬老の日を前に、録音の希望、話の食い違い、写真や地図との照合まで、家族で使える手順を案内します。",
+   "image": "/assets/blog/20260914-family-memories-question-memo-cover.webp",
+   "internal_links": [
+    "/c167.html",
+    "/c068.html",
+    "/f016.html"
+   ]
+  },
+  {
+   "slug": "20260915-shishigahana-history-walk",
+   "date": "2026-09-15",
+   "kind": "reading",
+   "tags": [
+    "豊岡",
+    "史跡散策",
+    "獅子ヶ鼻公園",
+    "資料・調査"
+   ],
+   "title": "獅子ヶ鼻公園の史跡散策｜秋の連休前に読む本編",
+   "description": "獅子ヶ鼻公園の史跡散策は、市の通行情報と本編3本を確かめるところから。公園・岩室廃寺跡・山の景観を読む順に絞り、地名と見学可否を分けて案内します。9月21〜23日の連休前に、約7kmのコース、下広場からの通行止、駐車場とトイレの読み違いを確認します。",
+   "image": "/assets/blog/20260915-shishigahana-history-walk-cover.webp",
+   "internal_links": [
+    "/y017.html",
+    "/y021.html",
+    "/y005.html"
+   ]
+  },
+  {
+   "slug": "20260915-bohi-kenshobi-difference",
+   "date": "2026-09-15",
+   "kind": "reading",
+   "tags": [
+    "石碑",
+    "国分寺",
+    "下岡田",
+    "資料・調査"
+   ],
+   "title": "墓碑と顕彰碑の違い｜磐田の本編を読み比べる",
+   "description": "墓碑と顕彰碑の違いは、人物の没年を読むか、後世の評価を読むかに着目すると整理できます。磐田の国分寺の墓塔と下岡田の義民碑を本編で比較。9月20日の彼岸入りを前に、没年・建立年・顕彰の時点を分け、番号の意味や未確認事項を残す読み方を案内します。",
+   "image": "/assets/blog/20260915-bohi-kenshobi-difference-cover.webp",
+   "internal_links": [
+    "/oishi-ronko/145/",
+    "/s032.html",
+    "/n040.html"
+   ]
+  },
+  {
+   "slug": "20260916-iwata-aviation-history",
+   "date": "2026-09-16",
+   "kind": "reading",
+   "tags": [
+    "航空史",
+    "竜洋",
+    "田原",
+    "学校"
+   ],
+   "title": "磐田の航空史｜空の日に読む飛行場と暮らし",
+   "description": "磐田の航空史を暮らしから読む入口は、福長飛行場跡、旧田原小学校の飛行機見物、天竜飛行場と竜洋の学童を扱う本編3本です。9月20日の空の日を前に、場所の記録と回想、戦時の学校生活を読み分け、見物先や飛行場同士の関係を決めつけずに確かめます。",
+   "image": "/assets/blog/20260916-iwata-aviation-history-cover.webp",
+   "internal_links": [
+    "/r065.html",
+    "/u042.html",
+    "/r029.html"
+   ]
+  },
+  {
+   "slug": "20260917-ikeda-ferry-museum-visit",
+   "date": "2026-09-17",
+   "kind": "guide",
+   "tags": [
+    "池田の渡し",
+    "史跡散策",
+    "調査・資料"
+   ],
+   "title": "池田の渡し歴史風景館｜秋の見学前に読む本編",
+   "description": "池田の渡し歴史風景館の見学前に、船賃の分配・宿で待つ時間・渡河の判断を本編3本から読みます。無料・9〜17時という市の案内と、9月21〜23日の個別の開館日は分けて確認。問い合わせ先と、展示の資料名・年代を控える手順をまとめた秋の見学準備です。",
+   "image": "/assets/blog/20260917-ikeda-ferry-museum-visit-cover.webp",
+   "internal_links": [
+    "/t004.html",
+    "/t048.html",
+    "/t016.html"
+   ]
+  },
+  {
+   "slug": "20260918-mitsuke-school-autumn-visit",
+   "date": "2026-09-18",
+   "kind": "guide",
+   "tags": [
+    "旧見付学校",
+    "国指定史跡",
+    "擬洋風建築",
+    "見付"
+   ],
+   "title": "旧見付学校と学びの記憶｜秋の見学前に読む本編",
+   "description": "国指定史跡「旧見付学校」の見学前に、擬洋風建築の工夫・寺子屋から続く学びの歴史・磐田文庫との関係を本編3本から読みます。無料・午前9時〜午後4時30分という市の利用案内と秋の連休の開館日を確認し、展示資料の年代を控える手順を大石浩之が案内します。",
+   "image": "/assets/blog/20260918-mitsuke-school-autumn-visit-cover.webp",
+   "internal_links": [
+    "/m015.html",
+    "/m113.html",
+    "/m112.html",
+    "/c013.html"
+   ]
+  },
+  {
+   "slug": "20260919-mitsuke-post-station-walk",
+   "date": "2026-09-19",
+   "kind": "guide",
+   "tags": [
+    "見付宿",
+    "本陣",
+    "問屋場",
+    "東海道",
+    "見付"
+   ],
+   "title": "見付宿の本陣と問屋場｜秋の東海道散策前に読む本編",
+   "description": "東海道見付宿の散策前に、本陣・脇本陣・旅籠の宿泊機能、問屋場と高札場が担った人馬継立、小路が交差する独特の町割りを本編3本から読みます。見付宿通りの歩行環境と秋の散策手順を大石浩之が案内します。",
+   "image": "/assets/blog/20260919-mitsuke-post-station-walk-cover.webp",
+   "internal_links": [
+    "/oishi-ronko/156/",
+    "/m148.html",
+    "/m003.html",
+    "/01001-mitsuke.html"
+   ]
+  },
+  {
+   "slug": "20260919-2-kakezuka-kaiun-rekishi-walk",
+   "date": "2026-09-19",
+   "kind": "guide",
+   "tags": [
+    "掛塚",
+    "千石船",
+    "廻船",
+    "天竜川",
+    "秋"
+   ],
+   "title": "掛塚湊と千石船の廻船史｜秋の旧掛塚散策前に読む本編",
+   "description": "秋の掛塚散策前に、天竜川河口の掛塚湊が千石船で栄えた廻船史と旧湊町の歴史遺産、関連する本編記事を整理。豪商の屋敷や貴船神社の祭礼に繋がる水運文化の読み方を案内します。",
+   "image": "/assets/blog/20260919-2-kakezuka-kaiun-rekishi-walk-cover.webp",
+   "internal_links": [
+    "/01007-ryuyo.html",
+    "/matsuri-kaketsuka.html",
+    "/matsuri-kaketsuka-kibune.html",
+    "/matsuri-kaketsuka-machi.html",
+    "/m033.html"
+   ]
+  },
+  {
+   "slug": "20260920-shubun-higan-difference",
+   "date": "2026-09-20",
+   "kind": "reading",
+   "tags": [
+    "年中行事",
+    "彼岸",
+    "向笠",
+    "福田"
+   ],
+   "title": "秋分と彼岸の違い｜磐田の行事記録を読む",
+   "description": "秋分は一日、彼岸は前後3日ずつを含む7日間。2026年は9月20日が入り、23日が秋分・中日、26日が明けです。向笠・福田の本編3本から、暦の混在と記録された時点を読み分け、古い行事の日付を現在の予定へ置き換えずに確かめる方法を案内します。",
+   "image": "/assets/blog/20260920-shubun-higan-difference-cover.webp",
+   "internal_links": [
+    "/k073.html",
+    "/oishi-ronko/103/",
+    "/oishi-ronko/269/"
+   ]
+  },
+  {
+   "slug": "20260920-iwata-old-bus-routes",
+   "date": "2026-09-20",
+   "kind": "how-to-research",
+   "tags": [
+    "バス",
+    "交通史",
+    "調査・資料"
+   ],
+   "title": "磐田の昔のバス路線｜本編から調べる3手順",
+   "description": "磐田の昔のバス路線は、本編で路線名を拾い、年代の意味を分け、出典付きの照会メモを作る3手順で調べます。9月20日のバスの日に、向笠原線などの名前を入口にして、記憶と記録を分ける方法を案内。停留所や運行期間が分からない欄は未確認のまま残します。",
+   "image": "/assets/blog/20260920-iwata-old-bus-routes-cover.webp",
+   "internal_links": [
+    "/c064.html",
+    "/c058.html",
+    "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
+   ]
+  },
+  {
+   "slug": "20260921-iwata-station-seven-story-pagoda",
+   "date": "2026-09-21",
+   "kind": "reading",
+   "tags": [
+    "七重の塔",
+    "磐田駅",
+    "遠江国分寺",
+    "資料・調査"
+   ],
+   "title": "磐田駅の七重の塔｜青い光から本編を読む",
+   "description": "磐田駅の七重の塔は、手話への理解を広げる取り組みで9月25日まで青色に点灯。本編3本を入口に、塔の意味、遠江国分寺の伽藍配置、約66.5mとする復元案を読み分けます。現在の駅前の塔と歴史上の塔を混同せず、資料で確かめる順番を案内します。",
+   "image": "/assets/blog/20260921-iwata-station-seven-story-pagoda-cover.webp",
+   "internal_links": [
+    "/n006.html",
+    "/n004.html",
+    "/n015.html"
+   ]
+  },
+  {
+   "slug": "20260921-cultural-property-designation-registration",
+   "date": "2026-09-21",
+   "kind": "reading",
+   "tags": [
+    "文化財",
+    "調査・資料"
+   ],
+   "title": "文化財の指定と登録の違い｜磐田の本編を読む",
+   "description": "指定と登録は、文化財を守る仕組みの違いです。国の建造物では、指定は重要なものを選び、許可制等で保護する制度。登録は届出と指導・助言を基本に、指定を補完します。磐田の本編では、区分・種別・対象名を分けて読み、登録年月日を建築年と混同しないことから始めます。",
+   "image": "/assets/blog/20260921-cultural-property-designation-registration-cover.webp",
+   "internal_links": [
+    "/n032",
+    "/c021",
+    "/oishi-ronko/206/"
+   ]
+  },
+  {
+   "slug": "20260922-iwata-sake-history",
+   "date": "2026-09-22",
+   "kind": "reading",
+   "tags": [
+    "産業",
+    "祭り",
+    "調査・資料"
+   ],
+   "title": "磐田の酒の歴史｜商いと祭りを本編で読む",
+   "description": "磐田の酒の歴史は、酒造業・屋敷・祭礼の記録を分けて読むと暮らしとの接点を探せます。千寿酒造、花咲乃庄、中野白山神社の白酒を扱う本編3本へ案内。10月1日の日本酒の日を前に、商いと供え物を混同せず、資料で分かることと未確認の関係を読み分けます。",
+   "image": "/assets/blog/20260922-iwata-sake-history-cover.webp",
+   "internal_links": [
+    "/c067",
+    "/y024",
+    "/f020"
+   ]
+  },
+  {
+   "slug": "20260922-okegayanuma-autumn-walk",
+   "date": "2026-09-22",
+   "kind": "reading",
+   "tags": [
+    "自然",
+    "桶ケ谷沼",
+    "調査・資料"
+   ],
+   "title": "桶ケ谷沼の秋散策｜出かける前に読む地域の記録",
+   "description": "桶ケ谷沼の秋散策は、土地の記憶と高校生の自然観察を扱う本編から準備できます。岩井の地名を読むk048、アカトンボ類の研究を紹介するc105へ案内。現地で見たことと資料の記録を分け、訪問前の確認先や、種類を急いで決めない観察メモの作り方を紹介します。",
+   "image": "/assets/blog/20260922-okegayanuma-autumn-walk-cover.webp",
+   "internal_links": [
+    "/k048.html",
+    "/c105.html",
+    "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
+   ]
+  },
+  {
+   "slug": "20260923-fu-hachimangu-kokubunji-walk",
+   "date": "2026-09-23",
+   "kind": "reading",
+   "tags": [
+    "中泉",
+    "府八幡宮",
+    "遠江国分寺跡",
+    "調査・資料"
+   ],
+   "title": "府八幡宮と国分寺跡の秋散策｜古代国府の記憶を本編で読む",
+   "description": "府八幡宮と遠江国分寺跡の秋散策は、古代遠江国の中心地を読み解く本編から準備できます。国府の記憶を継ぐn017、特別史跡の歩みを読むn016へ案内。現地で見る社殿や礎石と、文献や発掘調査の記録を分け、歴史散策をより深く味わうための確認先と観察メモの作り方を紹介します。",
+   "image": "/assets/blog/20260923-fu-hachimangu-kokubunji-walk-cover.webp",
+   "internal_links": [
+    "/n017.html",
+    "/n016.html",
+    "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
+   ]
+  },
+  {
+   "slug": "20260923-nakaizumi-shin-nakaizumi",
+   "date": "2026-09-23",
+   "kind": "reading",
+   "tags": [
+    "鉄道",
+    "中泉",
+    "資料・調査"
+   ],
+   "title": "中泉駅と新中泉駅の違い｜磐田の本編で読み分ける",
+   "description": "中泉駅は現在の磐田駅の旧称、新中泉は光明電気鉄道の起点として本編に記されています。駅名・所属路線・開業と改称の年月日を3本の本編で照合。10月14日の鉄道の日を前に、似た名前を同じ駅の改称と取り違えず、位置関係は資料で確かめる読み方を案内します。",
+   "image": "/assets/blog/20260923-nakaizumi-shin-nakaizumi-cover.webp",
+   "internal_links": [
+    "/n070",
+    "/c055",
+    "/c130"
+   ]
+  },
+  {
+   "slug": "20260923-iwata-postal-history-sources",
+   "date": "2026-09-23",
+   "kind": "reading",
+   "tags": [
+    "郵便",
+    "中泉",
+    "掛塚",
+    "資料・調査"
+   ],
+   "title": "磐田の郵便史はどこまで分かる｜本編の確認点",
+   "description": "磐田の郵便史は、制度・前島密・旧掛塚郵便局の本編3本から確かめられます。各局の開設年月や在任中の個別事績には未確認の範囲が残ります。世界郵便デーの公式案内を入口に、本編の記述と留保、局舎の現況を分けて読み、次に探す資料を整理します。",
+   "image": "/assets/blog/20260923-iwata-postal-history-sources-cover.webp",
+   "internal_links": [
+    "/c121",
+    "/oishi-ronko/053/",
+    "/r055"
+   ]
+  },
+  {
+   "slug": "20260924-iwata-old-homepage-warp",
+   "date": "2026-09-24",
+   "kind": "how-to-research",
+   "tags": [
+    "資料・調査",
+    "ウェブアーカイブ"
+   ],
+   "title": "磐田市の昔のホームページを探す3手順",
+   "description": "磐田市の昔のホームページは、本編の出典を控え、WARPで市名やURLを検索し、保存日と掲載内容を記録する3手順で探せます。古い資料を検索対象に入れる設定や、掲載日との違いも案内。10月9日から13日の検索・閲覧停止予定と、見つからない場合の残し方も確認します。",
+   "image": "/assets/blog/20260924-iwata-old-homepage-warp-cover.webp",
+   "internal_links": [
+    "/c068.html",
+    "/oishi-ronko/294/",
+    "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
+   ]
+  },
+  {
+   "slug": "20260924-iwata-yatai-dashi",
+   "date": "2026-09-24",
+   "kind": "reading",
+   "tags": [
+    "祭り",
+    "福田",
+    "中泉"
+   ],
+   "title": "磐田の屋台と山車の違い｜本編の呼び名を比べる",
+   "description": "磐田の屋台と山車は、呼び名だけでは構造を分けられません。福田の二輪屋台と、中泉の山車一覧にある二輪・四輪・三輪の記載を本編で比較。町名、形式、資料の時点を確かめる読み方と、福田こども園の地域屋台行事を一般参加の案内にしない理由を整理します。",
+   "image": "/assets/blog/20260924-iwata-yatai-dashi-cover-v2.webp",
+   "internal_links": [
+    "/f007.html",
+    "/matsuri-fuhachiman-dashi.html",
+    "/oishi-ronko/044/"
+   ]
+  },
+  {
+   "slug": "20260925-fukude-textiles-koromogae",
+   "date": "2026-09-25",
+   "kind": "reading",
+   "tags": [
+    "福田",
+    "織物",
+    "産業",
+    "資料・調査"
+   ],
+   "title": "福田の織物を読む｜衣替えから入る本編3本",
+   "description": "福田の織物は、加工・分業と労働・工場建築を扱う本編3本から読み解けます。10月初めの衣替えを入口に、起毛をつくる仕事、働く人、北窓採光へ視線を広げる読書案内です。服の産地や建物の来歴を外観で決めず、本編の記述と未確認の範囲を分けて確かめます。",
+   "image": "/assets/blog/20260925-fukude-textiles-koromogae-cover.webp",
+   "internal_links": [
+    "/f003.html",
+    "/c075.html",
+    "/oishi-ronko/242/"
+   ]
+  },
+  {
+   "slug": "20260925-iwata-old-aerial-photos",
+   "date": "2026-09-25",
+   "kind": "how-to-research",
+   "tags": [
+    "資料の探し方",
+    "空中写真",
+    "古地図"
+   ],
+   "title": "磐田の昔の航空写真を探す3手順",
+   "description": "磐田の昔の航空写真は、本編で地名を拾い、国土地理院で場所と年代を絞り、撮影年月と番号を記録して探します。刷新後の閲覧サービスを使い、表示範囲と実際の画像を照合。自宅周辺の土地の姿を調べる際に、見えたものと推測を分け、出典を残す手順を案内します。",
+   "image": "/assets/blog/20260925-iwata-old-aerial-photos-cover.webp",
+   "internal_links": [
+    "/c068.html",
+    "/t053.html",
+    "/c131.html"
+   ]
+  },
+  {
+   "slug": "20260926-kaketsuka-bridge-reading",
+   "date": "2026-09-26",
+   "kind": "reading",
+   "tags": [
+    "天竜川",
+    "交通",
+    "資料の探し方"
+   ],
+   "title": "掛塚橋の工事案内と歴史｜資料を分ける読み方",
+   "description": "掛塚橋の工事案内は、工事全体の期間と規制の実施日時を分けて読みます。袋井土木事務所の公式案内を入口に、磐田物語の道・橋・渡船の本編へ。掲載日と工事日、旧橋と新橋、昔の料金と現在の利用条件を混同せず、資料の役割を分けて記録する読書案内です。",
+   "image": "/assets/blog/20260926-kaketsuka-bridge-reading-cover.webp",
+   "internal_links": [
+    "/c136.html",
+    "/r039.html",
+    "/blog/20260917-ikeda-ferry-museum-visit/"
+   ]
+  },
+  {
+   "slug": "20260926-shikiji-satoyama-higanbana",
+   "date": "2026-09-26",
+   "kind": "guide",
+   "tags": [
+    "豊岡",
+    "花",
+    "資料・調査"
+   ],
+   "title": "敷地里山公園の彼岸花｜訪問前に読む地域の記録",
+   "description": "敷地里山公園の彼岸花は、磐田市の花ごよみでは9月下旬が目安です。当日の開花情報とは分けて確認。旧敷地村の地名と敷地川の地形を扱う本編へ案内し、現在の風景と過去の記録を混同しない読み方、訪問前に控える資料と未確認の利用条件を整理します。",
+   "image": "/assets/blog/20260926-shikiji-satoyama-higanbana-cover.webp",
+   "internal_links": [
+    "/y002.html",
+    "/oishi-ronko/149/",
+    "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
+   ]
+  },
+  {
+   "slug": "20260927-iwata-athlete-research",
+   "date": "2026-09-27",
+   "kind": "how-to-research",
+   "tags": [
+    "スポーツ",
+    "学校",
+    "資料の探し方"
+   ],
+   "title": "磐田ゆかりの選手の調べ方｜本編から作る確認メモ",
+   "description": "磐田ゆかりの選手は、競技実績と学校・地域との接点を別々に確かめます。本編から手がかりを拾い、資料名・該当箇所・確認日を残す親子向けの調べ方を案内。10月12日のスポーツ体験行事を入口に、出身と所属を混同せず、未確認の欄を残せる確認メモを作ります。",
+   "image": "/assets/blog/20260927-iwata-athlete-research-cover.webp",
+   "internal_links": [
+    "/oishi-ronko/245/",
+    "/c107.html",
+    "/iwata-higashi-high-school-history.html",
+    "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
+   ],
+   "updated_at": "2026-10-14"
+  },
+  {
+   "slug": "20260927-shumon-ninbetsucho-census",
+   "date": "2026-09-27",
+   "kind": "reading",
+   "tags": [
+    "人口",
+    "統計",
+    "資料の読み方"
+   ],
+   "title": "宗門人別帳と国勢調査の違い｜磐田の本編を読む",
+   "description": "宗門人別帳と国勢調査は、人を記す目的と記録の単位が違います。磐田物語の本編2本を、氏名・家族・檀那寺と、人口・年齢・産業・世帯構成から読み比べます。10月18日の統計の日を入口に、地域や時点をそろえ、昔の名簿と人口統計を同じ尺度で読まない確認メモを作ります。",
+   "image": "/assets/blog/20260927-shumon-ninbetsucho-census-cover.webp",
+   "internal_links": [
+    "/c113.html",
+    "/c128.html",
+    "/blog/20260831-mitsuke-nakaizumi-jinko/",
+    "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
+   ]
+  },
+  {
+   "slug": "20260928-iwata-music-history",
+   "date": "2026-09-28",
+   "kind": "reading",
+   "tags": [
+    "音楽",
+    "福田",
+    "竜洋",
+    "資料の読み方"
+   ],
+   "title": "磐田の音楽史はどこまで分かる｜本編3本への案内",
+   "description": "磐田の音楽史は、記録の存在と演奏内容の確認を分けて読むところから始めます。福田の論考232・f042と竜洋のr075へ案内。10月1日の国際音楽の日を前に、地区名や資料中の語を手がかりにし、結成年・人数・曲目の未確認事項を残す読み方を整理します。",
+   "image": "/assets/blog/20260928-iwata-music-history-cover.webp",
+   "internal_links": [
+    "/oishi-ronko/232/",
+    "/f042.html",
+    "/r075.html"
+   ]
+  },
+  {
+   "slug": "20260929-iwata-aerial-photo-reading",
+   "date": "2026-09-29",
+   "kind": "reading",
+   "tags": [
+    "空中写真",
+    "地図",
+    "資料の読み方"
+   ],
+   "title": "磐田の昔と今を空中写真で比べる｜本編への読み方",
+   "description": "磐田の昔と今を空中写真で比べる前に、撮影年、位置、縮尺、画像の出典を分けて確認します。地理院地図と地図・空中写真閲覧サービスを入口に、磐田物語の本編3本へ案内し、写真から読み取れることと現地確認が必要なことを整理します。",
+   "image": "/assets/blog/20260929-iwata-aerial-photo-reading-cover.webp",
+   "internal_links": [
+    "/c136.html",
+    "/oishi-ronko/149/",
+    "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
+   ]
+  },
+  {
+   "slug": "20260929-iwata-kuzushiji-check",
+   "date": "2026-09-29",
+   "kind": "how-to-research",
+   "tags": [
+    "地名",
+    "古文書",
+    "資料の探し方"
+   ],
+   "title": "くずし字の調べ方｜磐田の地名で始める確認メモ",
+   "description": "磐田の古文書で読めない地名は、一字の候補と根拠を分けて調べます。字典の引き方を選び、本編の翻刻と注記を照合する手順を紹介。歴史文書館の展示を入口に、AIの読みに頼り切らず、資料名・頁・前後の文字・未確認事項を残す確認メモを作ります。",
+   "image": "/assets/blog/20260929-iwata-kuzushiji-check-cover.webp",
+   "internal_links": [
+    "/m149.html",
+    "/m165.html",
+    "/c019.html",
+    "/blog/20260908-ndl-kotenseki-fulltext/"
+   ],
+   "updated_at": "2026-11-03"
+  },
+  {
+   "slug": "20260930-fukude-shirasu",
+   "date": "2026-09-30",
+   "kind": "reading",
+   "tags": [
+    "福田",
+    "シラス",
+    "食文化",
+    "漁業"
+   ],
+   "title": "福田のシラス｜秋の食卓から読む本編3本",
+   "description": "福田のシラスの食文化は、漁と加工・食卓・港を扱う本編3本から読めます。県と市の公式解説で二艘曳きや加工の流れを確かめ、季節の案内と当日の入荷を区別。釜揚げとしらす干しを入口に、地域の商いと暮らしを資料の範囲でたどる読み方を大石浩之が案内します。",
+   "image": "/assets/blog/20260930-fukude-shirasu-cover.webp",
+   "internal_links": [
+    "/f002.html",
+    "/f010.html",
+    "/f001.html"
+   ]
+  },
+  {
+   "slug": "20260930-kenchicho-chiken-difference",
+   "date": "2026-09-30",
+   "kind": "reading",
+   "tags": [
+    "土地",
+    "古文書",
+    "福田",
+    "資料の読み方"
+   ],
+   "title": "検地帳と地券の違い｜磐田の本編を読み比べる",
+   "description": "検地帳の名請人と地券の所有者は、同じ意味に置き換えずに読みます。磐田物語の本編3本で田畑の面積、地価、姓名と後世の家への比定を比較。10月1日の土地の日を入口に、実家に残る古い記録から何が分かり、何を未確認で残すかを整理する読書案内です。",
+   "image": "/assets/blog/20260930-kenchicho-chiken-difference-cover.webp",
+   "internal_links": [
+    "/f032",
+    "/c102",
+    "/oishi-ronko/306/"
+   ]
+  },
+  {
+   "slug": "20261001-iwata-rail-freight",
+   "date": "2026-10-01",
+   "kind": "reading",
+   "tags": [
+    "鉄道",
+    "貨物",
+    "資料の読み方"
+   ],
+   "title": "磐田の鉄道貨物｜輸送の構想と実績を読む3本",
+   "description": "磐田の鉄道貨物は、運ぶ構想・契約・専用線の記録を分けて読みます。本編3本で天竜川の荷物、会社要項と鉱石運搬契約、工場や倉庫への接続を確認。10月14日の鉄道の日を前に、見込みと輸送実績を混同せず、資料の留保も残す読み方を商いの視点から案内します。",
+   "image": "/assets/blog/20261001-iwata-rail-freight-cover.webp",
+   "internal_links": [
+    "/c057",
+    "/c096",
+    "/n047"
+   ]
+  },
+  {
+   "slug": "20261002-ryuyo-kaiyo-autumn-walk",
+   "date": "2026-10-02",
+   "kind": "guide",
+   "tags": [
+    "竜洋",
+    "海岸",
+    "調査・資料"
+   ],
+   "title": "竜洋海洋公園の秋散策｜海辺を読む本編案内",
+   "description": "竜洋海洋公園の秋散策は、公園と海岸の本編2本から準備できます。駒場・天竜川・遠州灘との関係を読み、現地で施設名や通行案内を確かめる手順を整理。10月31日の竜洋海洋フェスタは予定表の情報として扱い、開催予定と当日の状況を分けて読む案内です。",
+   "image": "/assets/blog/20261002-ryuyo-kaiyo-autumn-walk-cover.webp",
+   "internal_links": [
+    "/r083",
+    "/f022",
+    "/01007-ryuyo"
+   ]
+  },
+  {
+   "slug": "20261002-iwata-tea-fields-reading",
+   "date": "2026-10-02",
+   "kind": "reading",
+   "tags": [
+    "茶畑",
+    "向陽",
+    "農業",
+    "資料の読み方"
+   ],
+   "title": "磐田の茶畑｜本編3本で産地の記録を読む",
+   "description": "磐田の茶畑の歴史は、場所・地区史・土地利用を扱う本編3本から読めます。日本茶のGI登録を入口に、磐田原と大藤の記録へ案内。台地の水利に関する記述の違いを示し、産地の物語を急いで一つにせず、原資料へ戻る確認メモの作り方を大石浩之が整理します。",
+   "image": "/assets/blog/20261002-iwata-tea-fields-reading-cover.webp",
+   "internal_links": [
+    "/k051",
+    "/k032-ofuji",
+    "/c066"
+   ]
+  },
+  {
+   "slug": "20261003-iwata-ieyasu-source-memo",
+   "date": "2026-10-03",
+   "kind": "how-to-research",
+   "tags": [
+    "徳川家康",
+    "伝承",
+    "資料・調査"
+   ],
+   "title": "磐田の家康伝承の調べ方｜本編から作る確認メモ",
+   "description": "磐田の家康伝承は、本編で資料名・書き手・成立時期を拾い、記録と伝承を分けて調べます。中泉御殿と行興寺の本編3本から、原資料へ戻れる確認メモを作成。10月10日開幕の家康企画展を前に、出来事の年と資料の成立年を混同せず、未確認欄を残す手順を案内します。",
+   "image": "/assets/blog/20261003-iwata-ieyasu-source-memo-cover.webp",
+   "internal_links": [
+    "/n048",
+    "/n052",
+    "/t037"
+   ]
+  },
+  {
+   "slug": "20261004-toyoda-kaori-autumn-walk",
+   "date": "2026-10-04",
+   "kind": "guide",
+   "tags": [
+    "豊田",
+    "地名",
+    "散策",
+    "資料の読み方"
+   ],
+   "title": "豊田香りの公園の秋散策｜立野を読む本編案内",
+   "description": "豊田香りの公園の秋散策は、豊田町駅北口から徒歩3分の立野を入口に、本編3本へつながります。市広報のキンモクセイの見頃と当日の開花を区別し、地名資料・旧豊田町の沿革・史跡の記録を読む手順を紹介。地名の由来を急いで決めず、散策と読書を楽しむ案内です。",
+   "image": "/assets/blog/20261004-toyoda-kaori-autumn-walk-cover.webp",
+   "internal_links": [
+    "/t006",
+    "/t043",
+    "/t044"
+   ]
+  },
+  {
+   "slug": "20261004-iwata-hoshiimo-trade-reading",
+   "date": "2026-10-04",
+   "kind": "reading",
+   "tags": [
+    "干し芋",
+    "産業史",
+    "商店街",
+    "資料の読み方"
+   ],
+   "title": "磐田の干し芋｜商いの記録へつなぐ本編3本",
+   "description": "磐田の干し芋の歴史は、甘藷切干と八百庄商店の出荷記録を扱う本編から読めます。さつまいもの収穫期9〜11月を入口に、産業史・商店街・中泉の本編3本へ案内。発祥や販売経路を急いで決めず、資料名と未確認事項を分けて控える読み方を大石浩之が紹介します。",
+   "image": "/assets/blog/20261004-iwata-hoshiimo-trade-reading-cover.webp",
+   "internal_links": [
+    "/c098",
+    "/c074",
+    "/n046"
+   ]
+  },
+  {
+   "slug": "20261005-iwata-history-source-notes",
+   "date": "2026-10-05",
+   "kind": "how-to-research",
+   "tags": [
+    "郷土史",
+    "資料の読み方",
+    "出典"
+   ],
+   "title": "磐田の郷土史の出典を残す3手順",
+   "description": "郷土史の出典は、資料名・該当箇所・URLと確認日の順に残します。佐口史料の目録と見付宿の帳簿を扱う本編を例に、原資料と案内記事を分けるメモを紹介。国立国会図書館の資料追加を機に、未確認の頁や読めない字を埋めず、後から同じ資料に戻れる記録を整えます。",
+   "image": "/assets/blog/20261005-iwata-history-source-notes-cover.webp",
+   "internal_links": [
+    "/c019",
+    "/c020",
+    "/m165"
+   ]
+  },
+  {
+   "slug": "20261006-hikifuda-postcard-mitsuke",
+   "date": "2026-10-06",
+   "kind": "reading",
+   "tags": [
+    "見付",
+    "引札",
+    "絵葉書",
+    "資料の読み方"
+   ],
+   "title": "引札と絵葉書の違い｜見付の本編を読み比べる",
+   "description": "引札は商店名・取扱品・版元の記載、絵葉書は写真に写る家並みを読む入口です。見付の本編を比較し、図柄と商況、撮影年代と発行年代を混同しない読み方を紹介。文字・活字文化の日を前に、未確認を残して一枚ずつ確かめる手順を大石浩之が案内します。",
+   "image": "/assets/blog/20261006-hikifuda-postcard-mitsuke-cover.webp",
+   "internal_links": [
+    "/m140.html",
+    "/m120.html",
+    "/oishi-ronko/255/"
+   ]
+  },
+  {
+   "slug": "20261007-iwata-money-history-reading",
+   "date": "2026-10-07",
+   "kind": "reading",
+   "tags": [
+    "金融",
+    "産業史",
+    "見付",
+    "資料の読み方"
+   ],
+   "title": "磐田のお金の歴史｜貯蓄の日に読む本編3本",
+   "description": "磐田のお金の歴史は、見付宿の貸付利子、産業と銀行、新円切替と預金封鎖を扱う本編3本から読めます。10月17日の貯蓄の日を前に、元金と利子、銀行の記録、預金の利用条件を読み分ける案内です。大石浩之が本編の留保も示し、暮らしと商いの支払いから読む手順を紹介します。",
+   "image": "/assets/blog/20261007-iwata-money-history-reading-cover.webp",
+   "internal_links": [
+    "/m169.html",
+    "/c098.html",
+    "/c163.html"
+   ]
+  },
+  {
+   "slug": "20261008-akamatsu-autumn-exhibition-guide",
+   "date": "2026-10-08",
+   "kind": "guide",
+   "tags": [
+    "旧赤松家",
+    "展示",
+    "見付",
+    "資料の読み方"
+   ],
+   "title": "旧赤松家記念館の秋展示｜見学前の本編案内",
+   "description": "旧赤松家記念館の米蔵では、赤松浪江と掛川松ヶ岡・山﨑家を扱う秋展示が案内されています。会期は2026年10月1日〜12月27日。人物・施設・資料案内の本編3本を読む順番と、無料見学の開館時間・休館日の確認手順を大石浩之が整理します。",
+   "image": "/assets/blog/20261008-akamatsu-autumn-exhibition-guide-cover.webp",
+   "internal_links": [
+    "/m014.html",
+    "/oishi-ronko/046/",
+    "/c005.html"
+   ]
+  },
+  {
+   "slug": "20261009-mitsuke-sento-memory-reading",
+   "date": "2026-10-09",
+   "kind": "reading",
+   "tags": [
+    "見付",
+    "銭湯",
+    "暮らし",
+    "資料の読み方"
+   ],
+   "title": "磐田の銭湯の記憶｜見付の本編2本への案内",
+   "description": "磐田・見付の銭湯の記憶は、本編m122と論考216で読めます。店の存在を伝える記録・回想と、閉店理由の推定を分け、軒数の幅や未確認の留保を残す読書案内です。10月10日の銭湯の日を前に、大石浩之が本編2本の読む順番と資料の確かめ方を紹介します。",
+   "image": "/assets/blog/20261009-mitsuke-sento-memory-reading-cover.webp",
+   "internal_links": [
+    "/m122.html",
+    "/oishi-ronko/216/",
+    "/c005.html"
+   ]
+  },
+  {
+   "slug": "20261009-usagiyama-kamada-reading",
+   "date": "2026-10-09",
+   "kind": "guide",
+   "tags": [
+    "御厨",
+    "鎌田",
+    "公園",
+    "寺社",
+    "資料の読み方"
+   ],
+   "title": "兎山公園周辺の歴史散策｜鎌田を読む本編3本",
+   "description": "兎山公園周辺の歴史散策は、鎌田御厨、鎌田神明宮、医王寺庭園及び参道の本編3本を読むところから。地名と社伝、庭と道の見方を分け、家族で出かける前に確認する順番を大石浩之が案内します。10月12日のスポーツの日を前に、公園の施設情報と現地での線引きも整理します。",
+   "image": "/assets/blog/20261009-usagiyama-kamada-reading-cover.webp",
+   "internal_links": [
+    "/u002.html",
+    "/u003.html",
+    "/u028.html"
+   ]
+  },
+  {
+   "slug": "20261010-iwata-buddhist-statue-research",
+   "date": "2026-10-10",
+   "kind": "how-to-research",
+   "tags": [
+    "仏像",
+    "寺社",
+    "文化財",
+    "資料の読み方"
+   ],
+   "title": "仏像の調べ方｜磐田の本編で作る鑑賞メモ",
+   "description": "磐田の仏像は、像名・所蔵先・制作年代を分け、本編と公式資料を照合して調べます。浜松市美術館の展示をきっかけに、神像の尊名や制作と伝来の確度を確かめる手順を紹介。未確認を残せる鑑賞メモの書式と、本編3本を読む順番を大石浩之が案内します。",
+   "image": "/assets/blog/20261010-iwata-buddhist-statue-research-cover.webp",
+   "internal_links": [
+    "/n075",
+    "/m021",
+    "/oishi-ronko/051/"
+   ]
+  },
+  {
+   "slug": "20261011-hinomi-yagura-role-reading",
+   "date": "2026-10-11",
+   "kind": "reading",
+   "tags": [
+    "防災",
+    "火の見櫓",
+    "暮らし",
+    "資料の読み方"
+   ],
+   "title": "火の見櫓の役割｜磐田の本編3本を読む",
+   "description": "火の見櫓の役割は、火事を見張り、半鐘の音で知らせること。本編の消防史・掛塚の火災と消防・秋葉常夜灯を読み、見付ける備えと伝える備えを整理します。10月13日の国際防災デーを前に、個別の合図や現存状況を決め付けず、出典と未確認事項を残す読み方を大石浩之が案内します。",
+   "image": "/assets/blog/20261011-hinomi-yagura-role-reading-cover.webp",
+   "internal_links": [
+    "/c123.html",
+    "/r041.html",
+    "/c087.html"
+   ]
+  },
+  {
+   "slug": "20261012-local-history-reading-circle",
+   "date": "2026-10-12",
+   "kind": "reading",
+   "tags": [
+    "読書会",
+    "古墳・遺跡",
+    "資料の読み方"
+   ],
+   "title": "郷土史読書会の開き方｜磐田の本編で始める",
+   "description": "郷土史読書会は、家族や知人2〜4人で本編の一節を45分読む形から。磐田の堂山古墳・新豊院山古墳群・発掘調査報告書の本編を使い、記載と感想、未確認の疑問を分ける進め方を提案します。読む範囲の決め方、役割分担、持ち帰るメモまで大石浩之が案内します。",
+   "image": "/assets/blog/20261012-local-history-reading-circle-cover.webp",
+   "internal_links": [
+    "/u037.html",
+    "/y011.html",
+    "/u034.html"
+   ]
+  },
+  {
+   "slug": "20261012-yashiroyama-history-walk",
+   "date": "2026-10-12",
+   "kind": "reading",
+   "tags": [
+    "城跡",
+    "豊岡",
+    "資料の読み方"
+   ],
+   "title": "社山城跡の歴史散策｜訪問前に読む本編3本",
+   "description": "社山城跡の歴史散策は、遺構・史料の確度・周辺集落を扱う本編3本の予習から。y014、第30号、第84号の読む順序と、現地へ持っていく観察メモを大石浩之が提案します。築城年や城主、地名の由来を決め付けず、出発前に別途確認する通行・駐車条件も整理します。",
+   "image": "/assets/blog/20261012-yashiroyama-history-walk-cover.webp",
+   "internal_links": [
+    "/y014.html",
+    "/oishi-ronko/030/",
+    "/oishi-ronko/084/"
+   ]
+  },
+  {
+   "slug": "20261013-kokudaka-harvest-difference",
+   "date": "2026-10-13",
+   "kind": "reading",
+   "tags": [
+    "石高",
+    "統計",
+    "資料の読み方"
+   ],
+   "title": "石高と収穫量の違い｜磐田の本編を読み比べる",
+   "description": "石高は土地の生産力を示す評価の基準で、その年の収穫実績とは分けて読みます。磐田物語の本編3本から、年代・村域・記載基準の違いと未確認の数値を整理。10月18日の統計の日を前に、昔の村の豊かさを数字だけで決めず、比較の条件を確かめる読書案内です。",
+   "image": "/assets/blog/20261013-kokudaka-harvest-difference-cover.webp",
+   "internal_links": [
+    "/c035.html",
+    "/r034.html",
+    "/oishi-ronko/223/"
+   ]
+  },
+  {
+   "slug": "20261014-ryuyo-museum-reading",
+   "date": "2026-10-14",
+   "kind": "reading",
+   "tags": [
+    "竜洋郷土資料館",
+    "資料の読み方",
+    "竜洋"
+   ],
+   "title": "竜洋郷土資料館｜秋の見学前に読む本編3本",
+   "description": "掛塚・袖浦・十束の地域像、袖浦の製塩、十束の新田開拓を扱う本編3本が入口です。暮らしの展示を考える問いを用意し、由来・用途・記録の確度を現地で確かめます。本編の説明が、そのまま展示品の説明になるとは限りません。入館は無料。開館日と休館日は市の施設ガイドで確認します。 この記事は、既存の本編と公的な施設案内を読むための案内です。新しい史実を主張しません。現在",
+   "image": "/assets/blog/20261014-ryuyo-museum-reading-cover.webp",
+   "internal_links": [
+    "/r019.html",
+    "/oishi-ronko/041/",
+    "/r004.html"
+   ]
+  },
+  {
+   "slug": "20261014-jinsha-passenger-records",
+   "date": "2026-10-14",
+   "kind": "reading",
+   "tags": [
+    "鉄道",
+    "人車軌道",
+    "資料の読み方"
+   ],
+   "title": "磐田の人車軌道｜乗客の記録を読む3本",
+   "description": "磐田の中泉軌道の旅客利用は、本編c060の車丁・6人乗り・利用人数の記述から読めます。会社史のc059、廃線後の記憶を扱うc062を続けて読み、人数と乗客の体験を分けて確認。鉄道の日に、原資料未照合の数値を言い切らない読み方を大石浩之が案内します。",
+   "image": "/assets/blog/20261014-jinsha-passenger-records-cover.webp",
+   "internal_links": [
+    "/c060.html",
+    "/c059.html",
+    "/c062.html"
+   ]
+  },
+  {
+   "slug": "20261015-ezu-topographic-map-mitsuke",
+   "date": "2026-10-15",
+   "kind": "reading",
+   "tags": [
+    "古地図",
+    "見付",
+    "資料の読み方"
+   ],
+   "title": "絵図と地形図の違い｜見付の本編で読み分ける",
+   "description": "絵図と地形図の違いは、古さだけでなく描く目的にあります。見付宿の二枚の絵図を扱う本編から、林の帰属や修繕負担の読み方を案内。国土地理院の電子地形図50000の目的と比べ、距離や空白を読みすぎず、現在の場所を決める前に確かめたい項目を整理します。",
+   "image": "/assets/blog/20261015-ezu-topographic-map-mitsuke-cover.webp",
+   "internal_links": [
+    "/m152.html",
+    "/c011.html",
+    "/c131.html"
+   ]
+  },
+  {
+   "slug": "20261016-shizuoka-cultural-properties-exhibition",
+   "date": "2026-10-16",
+   "kind": "how-to-research",
+   "tags": [
+    "文化財",
+    "資料の読み方",
+    "旧見付学校"
+   ],
+   "title": "しずおかの文化財展｜磐田の本編と読む秋展示",
+   "description": "しずおかの文化財は、県立中央図書館で10月1日から11月29日まで開かれる文化財関連資料の展示です。旧見付学校の紹介や公式の展示資料リストを入口に、磐田の文化財を読む本、本編c005の資料利用方針、見学前に確かめたいことを案内します。",
+   "image": "/assets/blog/20261016-shizuoka-cultural-properties-exhibition-cover.webp",
+   "internal_links": [
+    "/c005.html",
+    "/m015.html",
+    "/blog/20260909-mitsuke-school-iwata-bunko-difference/"
+   ]
+  },
+  {
+   "slug": "20261016-cultural-property-sign-reading",
+   "date": "2026-10-16",
+   "kind": "how-to-research",
+   "tags": [
+    "文化財",
+    "資料の読み方",
+    "説明板"
+   ],
+   "title": "文化財説明板の読み方｜磐田で確かめる3項目",
+   "description": "文化財説明板は、名称・年号が指す出来事・説明の根拠の順で読みます。磐田の指定文化財一覧、旧見付学校、寺院の本編を使い、落成や指定を混同しない確認メモの作り方を案内。分からない箇所は未確認と残し、次に調べる問いを一つ持ち帰ります。",
+   "image": "/assets/blog/20261016-cultural-property-sign-reading-cover.webp",
+   "internal_links": [
+    "/c021.html",
+    "/m015.html",
+    "/c134.html"
+   ]
+  },
+  {
+   "slug": "20261017-kyureki-shinreki-reading",
+   "date": "2026-10-17",
+   "kind": "reading",
+   "tags": [
+    "暦",
+    "年中行事",
+    "資料の読み方"
+   ],
+   "title": "旧暦と新暦の違い｜磐田の行事記録を読む",
+   "description": "旧暦と新暦は、日付を決める仕組みが違います。福田と向笠の本編を案内し、月遅れとの混同を避けながら行事記録を読み比べます。十三夜の日付を入口に、資料の月日、地域と採録時点、現在の開催案内を分け、分からない点を残す読み方を紹介します。",
+   "image": "/assets/blog/20261017-kyureki-shinreki-reading-cover.webp",
+   "internal_links": [
+    "/f017.html",
+    "/k073.html",
+    "/oishi-ronko/262/"
+   ]
+  },
+  {
+   "slug": "20261018-iwata-kaki-toyooka-reading",
+   "date": "2026-10-18",
+   "kind": "reading",
+   "tags": [
+    "豊岡",
+    "食文化",
+    "産業",
+    "資料の読み方"
+   ],
+   "title": "磐田の柿｜秋の味覚から豊岡の本編3本へ",
+   "description": "磐田市敷地の次郎柿は、県公式情報で10月下旬～12月上旬が旬の目安です。ころ柿・敷地米・旧敷地村の本編3本を案内し、秋の味覚から地域の生業へ読み進めます。今年の収穫状況と過去の記録を分け、資料で分からない点を残す読み方を紹介します。",
+   "image": "/assets/blog/20261018-iwata-kaki-toyooka-reading-cover.webp",
+   "internal_links": [
+    "/y029.html",
+    "/y030.html",
+    "/oishi-ronko/079/"
+   ]
+  },
+  {
+   "slug": "20261019-iwata-cultural-heritage-festival",
+   "date": "2026-10-19",
+   "kind": "guide",
+   "tags": [
+    "文化財",
+    "展示",
+    "資料の読み方"
+   ],
+   "title": "いわた文化財フェスティバル2026｜本編で予習",
+   "description": "いわた文化財フェスティバル2026は11月29日、見付と竜洋の2会場で開催予定。発掘調査報告書、奉納相撲、上野公園の本編3本で予習し、展示と体験の受付条件を分けて確認します。本編の記述と当日の展示内容を混同しない訪問準備の案内です。",
+   "image": "/assets/blog/20261019-iwata-cultural-heritage-festival-cover.webp",
+   "internal_links": [
+    "/u034.html",
+    "/t066.html",
+    "/n063.html"
+   ]
+  },
+  {
+   "slug": "20261019-local-history-timeline-notes",
+   "date": "2026-10-19",
+   "kind": "how-to-research",
+   "tags": [
+    "郷土史",
+    "年表",
+    "資料の読み方"
+   ],
+   "title": "郷土史年表の作り方｜磐田の本編で3列メモ",
+   "description": "郷土史の年表は「年代・出来事・出典と確かさ」の3列で整理します。磐田の本編を例に、運行停止と会社解散を分け、年代の「ごろ」「前後」や推定を残す手順を案内。文化財保護強調週間を前に、分からない年を埋めず、まず3行の読書メモから始めます。",
+   "image": "/assets/blog/20261019-local-history-timeline-notes-cover.webp",
+   "internal_links": [
+    "/n011.html",
+    "/c096.html",
+    "/r044.html"
+   ]
+  },
+  {
+   "slug": "20261020-terakoya-modern-school-comparison",
+   "date": "2026-10-20",
+   "kind": "reading",
+   "tags": [
+    "学校",
+    "寺子屋",
+    "資料の読み方"
+   ],
+   "title": "寺子屋と近代学校の違い｜磐田の本編を読む",
+   "description": "寺子屋と近代学校の違いを、学ぶ場・教える人・地域の負担から比較します。磐田物語の教育史と田原の学校史を案内し、制度の年代と地域の記録を区別。読書週間を前に、人数や費用が未確認の部分も残しながら本編を読み解きます。",
+   "image": "/assets/blog/20261020-terakoya-modern-school-comparison-cover.webp",
+   "internal_links": [
+    "/oishi-ronko/240/",
+    "/oishi-ronko/124/",
+    "/c094.html"
+   ]
+  },
+  {
+   "slug": "20261021-iwata-haikai-autumn-reading",
+   "date": "2026-10-21",
+   "kind": "reading",
+   "tags": [
+    "俳諧",
+    "野口在色",
+    "文学"
+   ],
+   "title": "磐田の俳諧｜秋の読書で開く本編2本",
+   "description": "磐田の俳諧を知る入口に、野口在色と後世の俳諧活動を扱う本編、竜洋の地域の記憶を扱う本編を案内します。読書週間を前に、読む順番と資料の確かめどころを整理。人物の伝記を新たに作らず、記述と未確認の範囲を分けて読みます。",
+   "image": "/assets/blog/20261021-iwata-haikai-autumn-reading-cover.webp",
+   "internal_links": [
+    "/n054.html",
+    "/r070.html",
+    "/n053.html"
+   ]
+  },
+  {
+   "slug": "20261022-old-photo-location-research",
+   "date": "2026-10-22",
+   "kind": "how-to-research",
+   "tags": [
+    "古写真",
+    "資料の調べ方",
+    "見付"
+   ],
+   "title": "古写真の撮影場所の調べ方｜磐田の本編で確認",
+   "description": "古写真の撮影場所は、表裏の文字を控え、道筋や周辺建物を本編と照合して調べます。磐田の本編3本を手掛かりに、一致と相違、推定と未確認を分けた確認メモを作成。文化財保護強調週間を前に、場所を急いで決めない読み方を案内します。",
+   "image": "/assets/blog/20261022-old-photo-location-research-cover.webp",
+   "internal_links": [
+    "/c131.html",
+    "/m120.html",
+    "/c068.html"
+   ]
+  },
+  {
+   "slug": "20261023-choshizuka-autumn-reading",
+   "date": "2026-10-23",
+   "kind": "guide",
+   "tags": [
+    "古墳・遺跡",
+    "寺谷",
+    "本編案内"
+   ],
+   "title": "銚子塚古墳周辺の秋散策｜本編3本への案内",
+   "description": "銚子塚古墳周辺の散策前に、両古墳の形、被葬者像の推定、長者屋敷遺跡を扱う本編3本を案内します。寺谷の史跡を同じ時代や人物の物語にまとめず、記録と解釈を読み分けます。秋の文化財保護強調週間を前に、一つの問いを持って歩くための読書案内です。",
+   "image": "/assets/blog/20261023-choshizuka-autumn-reading-cover.webp",
+   "internal_links": [
+    "/k047.html",
+    "/oishi-ronko/011/",
+    "/k038.html"
+   ]
+  },
+  {
+   "slug": "20261024-shiseki-iseki-difference",
+   "date": "2026-10-24",
+   "kind": "reading",
+   "tags": [
+    "古墳・遺跡",
+    "文化財",
+    "本編案内"
+   ],
+   "title": "史跡と遺跡の違い｜磐田の本編で読み分ける",
+   "description": "史跡と遺跡は対立する分類ではありません。名前と指定区分を分け、磐田の本編3本で確認事項と推定を読み分けます。文化財保護強調週間を前に、遠江国分寺の伽藍、指定文化財一覧、発掘調査報告書を読む順序と、未確認を残すメモの作り方を案内します。",
+   "image": "/assets/blog/20261024-shiseki-iseki-difference-cover.webp",
+   "internal_links": [
+    "/n004.html",
+    "/c021.html",
+    "/u034.html"
+   ]
+  },
+  {
+   "slug": "20261025-kakezuka-lighthouse-reading",
+   "date": "2026-10-25",
+   "kind": "reading",
+   "tags": [
+    "灯台",
+    "竜洋",
+    "本編案内"
+   ],
+   "title": "掛塚灯台の記録｜灯台記念日に読む本編3本",
+   "description": "掛塚灯台の歴史を、本編の資料案内・港の近代年表・磐田論考第73号で読む入口です。灯台と天気予報、救難所の記録をたどり、私的な灯明施設とのつながりなど未確認の点を分けます。灯台記念日を前に、根拠へ戻れる読書メモの残し方を大石浩之が案内します。",
+   "image": "/assets/blog/20261025-kakezuka-lighthouse-reading-cover.webp",
+   "internal_links": [
+    "/r057.html",
+    "/r044.html",
+    "/oishi-ronko/073/"
+   ]
+  },
+  {
+   "slug": "20261026-iwata-old-tree-walk",
+   "date": "2026-10-26",
+   "kind": "guide",
+   "tags": [
+    "巨木",
+    "天然記念物",
+    "散策"
+   ],
+   "title": "磐田の巨木散策｜秋の行き先を選ぶ本編3本",
+   "description": "磐田の巨木散策は、駅前の善導寺大クス、見付の西光寺、城之崎の福王寺を扱う本編から選べます。文化財保護強調週間を前に、土地の記憶と木の関係を読む案内です。樹齢の推定や名称の違いを残し、訪問前に確かめたいことを一つ選びます。",
+   "image": "/assets/blog/20261026-iwata-old-tree-walk-cover.webp",
+   "internal_links": [
+    "/n026",
+    "/m028",
+    "/n030"
+   ]
+  },
+  {
+   "slug": "20261027-iwata-dialect-reading-route",
+   "date": "2026-10-27",
+   "kind": "how-to-research",
+   "tags": [
+    "遠州弁",
+    "資料の調べ方",
+    "本編案内"
+   ],
+   "title": "遠州弁の調べ方｜磐田の3ページを使い分ける",
+   "description": "遠州弁を調べるときは、辞典で意味を探し、解説で注記を読み、資料室で記録を確かめます。磐田物語の3ページを使い分け、作例と採録、知っていることばと使うことばを分ける読書案内。今日一語を調べるためのメモ欄も用意しました。",
+   "image": "/assets/blog/20261027-iwata-dialect-reading-route-cover.svg",
+   "internal_links": [
+    "/c006",
+    "/c175",
+    "/c172",
+    "/c176"
+   ],
+   "run_id": "b4730f589d9b493c9c79262d231ce859"
+  },
+  {
+   "slug": "20261028-niji-bunko-reading-guide",
+   "date": "2026-10-28",
+   "kind": "reading",
+   "tags": [
+    "福田",
+    "資料の調べ方",
+    "本編案内"
+   ],
+   "title": "虹文庫の記録｜磐田の本編3本を読む入口",
+   "description": "虹文庫を知る入口として、磐田物語の福田地区記事、詳しい論考、民間記録の総論を案内します。設立年や活動実態の未確認事項を埋めず、各ページの役割と資料の読み分けを整理。読書週間に、地域の名前から本編へ進むための読書案内です。",
+   "image": "/assets/blog/20261028-niji-bunko-reading-guide-cover.webp",
+   "internal_links": [
+    "/f043.html",
+    "/oishi-ronko/239/",
+    "/oishi-ronko/279/"
+   ],
+   "run_id": "0f30a737d13c4146928746167d708408"
+  },
+  {
+   "slug": "20261028-iwata-timber-reading",
+   "date": "2026-10-28",
+   "kind": "reading",
+   "tags": [
+    "木材流通",
+    "天竜川",
+    "本編案内"
+   ],
+   "title": "磐田の木材流通｜川・問屋・鉄路を読む3本",
+   "description": "磐田の木材流通を知る入口として、天竜川の輸送方法、掛塚の問屋、豊岡の鉄路を扱う本編3本を案内します。運ぶ方法と取引、駅までの接続を分けて読み、裏付けのない年代や規模は補いません。秋の林業研修をきっかけに、地域の商売を読むための確認点を整理します。",
+   "image": "/assets/blog/20261028-iwata-timber-reading-cover.webp",
+   "internal_links": [
+    "/t041.html",
+    "/r009.html",
+    "/o010.html"
+   ],
+   "run_id": "962c0fa09a754f5986e129ed5d3f9f13"
+  },
+  {
+   "slug": "20261030-iwata-sumo-history-reading",
+   "date": "2026-10-30",
+   "kind": "reading",
+   "tags": [
+    "相撲",
+    "文化財",
+    "資料の読み方"
+   ],
+   "title": "磐田の相撲の歴史｜展示前に読む本編2本",
+   "description": "磐田の相撲の歴史を知る入口として、若宮八幡宮と佐藤繁蔵の記事、文化財資料集を案内。歴史文書館の企画展に向け、記録と展示を分けて確かめます。",
+   "image": "/assets/blog/20261030-iwata-sumo-history-reading-cover.webp",
+   "internal_links": [
+    "/t066.html",
+    "/c005.html"
+   ],
+   "run_id": "46c1827b2bfd468291c32952d10673c3"
+  },
+  {
+   "slug": "20261031-ikou-ibutsu-difference",
+   "date": "2026-10-31",
+   "kind": "reading",
+   "tags": [
+    "文化財",
+    "古墳・遺跡",
+    "資料の読み方"
+   ],
+   "title": "遺構と遺物の違い｜磐田の本編で読み分ける",
+   "description": "遺構は住居跡や溝など土地に残る痕跡、遺物は土器や道具などの物です。磐田の城之崎・浜部・米塚の本編を手がかりに、場所と出土品の記述を読み分けます。文化財保護強調週間を前に、見つかった位置と年代の説明を混同せず読むためのメモも紹介します。",
+   "image": "/assets/blog/20261031-ikou-ibutsu-difference-cover.webp",
+   "internal_links": [
+    "/u004.html",
+    "/s025.html",
+    "/k003.html"
+   ],
+   "run_id": "abd529ecde8c491f8fd0e6f7e4c23977"
+  },
+  {
+   "slug": "20261101-iwata-kikobun-reading",
+   "date": "2026-11-01",
+   "kind": "reading",
+   "tags": [
+    "紀行文学",
+    "資料の読み方",
+    "見付"
+   ],
+   "title": "磐田の紀行文の読み方｜旅人の印象をどう読む",
+   "description": "磐田の紀行文は、作品に書かれた言葉、本編の解釈、未確認事項を分けて読みます。見付を描く十六夜日記と、国分寺が登場しない紀行文、江戸の旅の読み物を入口に、旅人の印象を町全体の事実へ広げない確認メモの作り方を案内します。",
+   "image": "/assets/blog/20261101-iwata-kikobun-reading-cover.webp",
+   "internal_links": [
+    "/c110.html",
+    "/n037.html",
+    "/m137.html"
+   ],
+   "run_id": "99c30bd41be349cbbd9a150b0af8a61d"
+  },
+  {
+   "slug": "20261102-iwata-shaden-date-notes",
+   "date": "2026-11-02",
+   "kind": "how-to-research",
+   "tags": [
+    "社殿",
+    "資料の読み方",
+    "見付",
+    "中泉"
+   ],
+   "title": "磐田の社殿の年代を調べる｜本編で作る確認メモ",
+   "description": "磐田の社殿の年代は、創建の由緒、再建、修理を分けて調べます。淡海国玉神社と府八幡宮の本編を入口に、対象の建物・工事の種類・出典を一行ずつ記す確認メモを提案。棟札の年号と現存部材を混同せず、未確認の範囲も残す手順です。",
+   "image": "/assets/blog/20261102-iwata-shaden-date-notes-cover.webp",
+   "internal_links": [
+    "/oishi-ronko/066/",
+    "/n082.html",
+    "/n075.html"
+   ],
+   "run_id": "37452faf2e6a4f1bb84debe6a88df6d0"
+  },
+  {
+   "slug": "20261103-iwata-same-name-person",
+   "date": "2026-11-03",
+   "kind": "reading",
+   "tags": [
+    "人物",
+    "資料・史料",
+    "比較"
+   ],
+   "title": "同姓同名は同一人物？磐田の本編を読み比べる",
+   "description": "同姓同名でも、名前の一致だけでは同一人物と決められません。磐田物語の本編3本を読み比べ、郷土資料と全国資料の記述、両者をつなぐ根拠、未確認の範囲を分けます。文化財保護強調週間に、人物を取り違えず、結論を保留しながら読める比較読書案内です。",
+   "image": "/assets/blog/20261103-iwata-same-name-person-cover.webp",
+   "internal_links": [
+    "/oishi-ronko/268/",
+    "/oishi-ronko/258/",
+    "/oishi-ronko/210/"
+   ]
+  },
+  {
+   "slug": "20261103-honkoku-kaisetsu-difference",
+   "date": "2026-11-03",
+   "kind": "reading",
+   "tags": [
+    "資料・史料",
+    "地名",
+    "比較"
+   ],
+   "title": "翻刻と解説の違い｜磐田の地名資料を読む",
+   "description": "翻刻は資料の文字を写したもの、解説は内容や背景を説明する文章です。見付の地名一覧と太田川の本編から、表記・注記・解釈を読み分けます。文化財保護強調週間に、読めた文字と地名の由来を混同せず、判断を保留しながら郷土資料を読むための案内です。",
+   "image": "/assets/blog/20261103-honkoku-kaisetsu-difference-cover.webp",
+   "internal_links": [
+    "/m149.html",
+    "/k068.html",
+    "/blog/20260929-iwata-kuzushiji-check/"
+   ]
+  },
+  {
+   "slug": "20261104-tsunami-bosai-day",
+   "date": "2026-11-04",
+   "kind": "reading",
+   "tags": [
+    "防災",
+    "資料・史料"
+   ],
+   "title": "津波防災の日はなぜ11月5日？磐田の地震記録と読み比べる",
+   "description": "津波防災の日は、旧暦11月5日に紀州広村を襲った津波と避難の故事にちなみます。磐田の本編に出る旧暦11月4日は安政東海地震の日。遠州と紀州の地名、二つの地震名、当時と現在の暦を並べ、磐田に伝わる『一代咄』への入口を案内します。",
+   "image": "/assets/blog/20261104-tsunami-bosai-day-cover.webp",
+   "internal_links": [
+    "/c124.html",
+    "/r040.html",
+    "/blog/20261017-kyureki-shinreki-reading/"
+   ]
+  },
+  {
+   "slug": "20261104-tokaido-ichiri",
+   "date": "2026-11-04",
+   "kind": "reading",
+   "tags": [
+    "東海道",
+    "見付宿"
+   ],
+   "title": "一里は何キロ？磐田の一里塚で読む東海道の距離",
+   "description": "東海道の一里は約4キロ。磐田・見付の阿多古山一里塚の模式図で、道の両側にある塚の数え方を読みます。本編に出てくる約3.9キロとの関係、往復で歩くときの距離の考え方も紹介します。",
+   "image": "/assets/blog/20261104-tokaido-ichiri-cover.webp",
+   "internal_links": [
+    "/m026.html",
+    "/c088.html",
+    "/t039.html"
+   ]
+  },
+  {
+   "slug": "20261105-senhiki-record",
+   "date": "2026-11-05",
+   "kind": "reading",
+   "tags": [
+    "方言",
+    "郷土資料"
+   ],
+   "title": "磐田の方言の調べ方｜「せんひき」の原回答をたどる",
+   "description": "定規を「せんひき」と呼ぶ記録を、国立国語研究所の全国方言分布調査で探す手順です。磐田市地点のデータ番号25230を開き、質問項目、回答「センヒキ」、子供の頃の呼び名を記した注記を別々に控えます。",
+   "image": "/assets/blog/20261105-senhiki-record-cover.webp",
+   "internal_links": [
+    "/c175.html",
+    "/c172.html",
+    "/blog/20261027-iwata-dialect-reading-route/"
+   ]
+  },
+  {
+   "slug": "20261105-kaketsuka-totsuka-shobogumi",
+   "date": "2026-11-05",
+   "kind": "reading",
+   "tags": [
+    "消防",
+    "防災",
+    "竜洋"
+   ],
+   "title": "掛塚と十束村の消防組はどう始まったか",
+   "description": "掛塚の記録が伝えるのは消防組の設立、十束村の記録が最初に挙げるのはポンプの購入です。磐田物語の本編を開き、組を設けた年、道具を備えた年、村内を四部に分けた年を、竜洋地区に暮らす人が読み比べられるよう整理します。",
+   "image": "/assets/blog/20261105-kaketsuka-totsuka-shobogumi-cover.webp",
+   "internal_links": [
+    "/r041.html",
+    "/c123.html",
+    "/blog/20261011-hinomi-yagura-role-reading/"
+   ]
+  },
+  {
+   "slug": "20261106-legend-comparison-notes",
+   "date": "2026-11-06",
+   "kind": "how-to-research",
+   "tags": [
+    "郷土資料",
+    "伝説"
+   ],
+   "title": "伝説の読み比べ方｜磐田の本編で作る比較メモ",
+   "description": "伝説の結末が資料ごとに違うときは、話を一つにまとめず比較欄を分けます。磐田の太田川伝説を扱う本編から、資料名・該当頁・村名・人物名・展開・結末のメモを作り、記載なしと未確認を分ける読み方を案内します。",
+   "image": "/assets/blog/20261106-legend-comparison-notes-cover.webp",
+   "internal_links": [
+    "/k068.html",
+    "/f016.html",
+    "/c050.html"
+   ]
+  },
+  {
+   "slug": "20261107-iwata-winter-life-reading",
+   "date": "2026-11-07",
+   "kind": "reading",
+   "tags": [
+    "暮らし",
+    "資料の読み方"
+   ],
+   "title": "磐田の冬の暮らし｜木炭と電灯の記録を読む",
+   "description": "磐田の昔の冬の暮らしは、木炭の用途と入手条件、電灯の供給と家庭への普及を分けて読みます。配給史と電気の歴史を扱う本編への読書案内です。暖房器具や家庭の使用量を推測で補わず、確認メモと原資料へ戻る手順を紹介します。",
+   "image": "/assets/blog/20261107-iwata-winter-life-reading-cover.webp",
+   "internal_links": [
+    "/c166.html",
+    "/c122.html",
+    "/blog/20260827-iwata-kyodo-shiryo-shirabekata/"
+   ],
+   "run_id": "e172917aec5040dbb52201c44d314b6e",
+   "url": "https://iwata-monogatari.net/blog/20261107-iwata-winter-life-reading/"
+  },
+  {
+   "slug": "20261108-iwata-kinjiro-exhibition",
+   "title": "磐田の二宮金次郎像展示｜本編と読む16体",
+   "date": "2026-11-08",
+   "kind": "reading",
+   "tags": [
+    "展示",
+    "資料の読み方"
+   ],
+   "description": "磐田の二宮金次郎像展示は埋蔵文化財センターで開催中。小学校と旧小学校跡に残る16体の写真と背負子を紹介します。開催条件を確認し、像の記録と報徳運動の本編を分けて読む見学準備を案内します。",
+   "image": "/assets/blog/20261108-iwata-kinjiro-exhibition-cover.webp",
+   "internal_links": [
+    "/c118.html",
+    "/r031.html",
+    "/blog/20260905-showa-elementary-school-exhibition/"
+   ],
+   "run_id": "5bafcadc447e4e69886dddd81ce0ff10",
+   "url": "https://iwata-monogatari.net/blog/20261108-iwata-kinjiro-exhibition/"
+  },
+  {
+   "slug": "20261109-shizuoka-han-prefecture-comparison",
+   "title": "静岡藩と静岡県の違い｜磐田の本編を読み分ける",
+   "date": "2026-11-09",
+   "kind": "reading",
+   "tags": [
+    "資料の読み方",
+    "近代史"
+   ],
+   "description": "静岡藩と静岡県は、名前が似ていても同じ時代・区域を指しません。県誕生150周年を入口に、浜松県を挟む本編の記述と県公式年表を読み比べ、磐田の郡の記録と混同しないための確認順を案内します。",
+   "image": "/assets/blog/20261109-shizuoka-han-prefecture-comparison-cover.webp",
+   "internal_links": [
+    "/c126.html",
+    "/c116.html",
+    "/c010.html"
+   ],
+   "run_id": "f0a5973e46dc456bb60283b5a0556b43",
+   "url": "https://iwata-monogatari.net/blog/20261109-shizuoka-han-prefecture-comparison/"
+  },
+  {
+   "slug": "20261109-chimei-shorui-yomikata",
+   "title": "書類の地名が地図と違うとき｜磐田の地名解説の歩き方",
+   "date": "2026-11-09",
+   "kind": "guide",
+   "tags": [
+    "地名",
+    "資料の読み方"
+   ],
+   "description": "実家の課税明細書や古い書類に出てくる地名が、今の地図や住所と合わない。2026年11月に公開された磐田物語の地名解説を使い、大字・小字・地番の分け方、合併で変わった名前の照合、似た地名の取り違えを防ぐ確認順を案内します。",
+   "image": "/assets/blog/20261109-chimei-shorui-yomikata-cover.webp",
+   "internal_links": [
+    "/chimei/",
+    "/chimei/aza-chiban/",
+    "/chimei/old-address/",
+    "/chimei/kazei-meisaisho/",
+    "/chimei/missing-aza/",
+    "/chimei/similar-names/"
+   ],
+   "run_id": "06ed880d97bb6f7d4d47cb2d11e33951",
+   "url": "https://iwata-monogatari.net/blog/20261109-chimei-shorui-yomikata/"
+  },
+  {
+   "slug": "20261110-mitsuke-kanjocho-yomikata",
+   "title": "見付宿の勘定帳の読み方｜天保10年の歳入・歳出を本編で確かめる",
+   "date": "2026-11-10",
+   "kind": "reading",
+   "tags": [
+    "見付宿",
+    "資料の読み方"
+   ],
+   "description": "宿場の収入は運賃だけではありません。天保10年（1839年）の見付宿では、最大の歳入は宿内と助郷への賦課金で、最大の支出は人馬を動かす運輸費でした。磐田物語の本編4ページを使い、勘定帳の区分の分け方、概数の扱い、宿助成の読み方を案内します。",
+   "image": "/assets/blog/20261110-mitsuke-kanjocho-yomikata-cover.webp",
+   "internal_links": [
+    "/m158.html",
+    "/m167.html",
+    "/m168.html",
+    "/m169.html"
+   ],
+   "run_id": "57a0a4fa223d68ba2a604e5bd0fafcd4",
+   "url": "https://iwata-monogatari.net/blog/20261110-mitsuke-kanjocho-yomikata/"
+  },
+  {
+   "slug": "20261111-shinden-chimei-yomikata",
+   "title": "磐田の「新田」地名の読み方｜本村名と人名、二つの型を本編でたどる",
+   "date": "2026-11-11",
+   "kind": "reading",
+   "tags": [
+    "地名",
+    "新田開発"
+   ],
+   "description": "寺谷新田・源平新田・太郎馬新田・宇兵衛新田。磐田に残る「新田」の地名は、本村名を冠する型と人名を冠する型に大別できます。磐田物語の本編と磐田論考を使い、二つの舞台（天竜川左岸と遠州灘沿岸）、年代が残る池之谷新田の例、「未確認」をそのまま読む作法を案内します。",
+   "image": "/assets/blog/20261111-shinden-chimei-yomikata-cover.webp",
+   "internal_links": [
+    "/t007.html",
+    "/t008.html",
+    "/oishi-ronko/273/",
+    "/oishi-ronko/142/",
+    "/oishi-ronko/143/",
+    "/k076.html"
+   ],
+   "run_id": "ba1485c73786c82235d0c85b3dc94fb1",
+   "url": "https://iwata-monogatari.net/blog/20261111-shinden-chimei-yomikata/"
+  },
+  {
+   "slug": "20261112-mitsuke-sukego-yomikata",
+   "title": "見付宿の助郷の読み方｜宿の外側の68ヶ村と、勤高・賃銭で読む負担の広がり",
+   "date": "2026-11-12",
+   "kind": "reading",
+   "tags": [
+    "見付宿",
+    "助郷"
+   ],
+   "description": "見付宿の人馬が足りないとき、周辺の村々が人足と馬を出した制度が助郷です。第一期68ヶ村から123ヶ村への組み替え、村高と勤高の違い、天保10年の買人馬、池田の渡しの定助郷・大助郷との対比を、磐田物語の本編5ページで読み分けます。",
+   "image": "/assets/blog/20261112-mitsuke-sukego-yomikata-cover.webp",
+   "internal_links": [
+    "/m118.html",
+    "/m175.html",
+    "/m176.html",
+    "/m177.html",
+    "/t047.html"
+   ],
+   "run_id": "4f121feae2b5419e9ea1c9cfb70e4201",
+   "url": "https://iwata-monogatari.net/blog/20261112-mitsuke-sukego-yomikata/"
+  },
+  {
+   "slug": "20261113-kamada-shinmeigu-taisai-yomikata",
+   "title": "鎌田神明宮大祭の読み方｜十月ひと月の収斂と、六地区の屋台・虫封じを読む",
+   "date": "2026-11-13",
+   "kind": "reading",
+   "tags": [
+    "祭り",
+    "鎌田神明宮"
+   ],
+   "description": "鎌田神明宮大祭は、本宮の二日間だけの祭りではありません。十月の摂社祭が十七郷十九社から本宮へ収斂する流れ、御厨六地区の屋台と囃子、昭和15年に作られた浦安の舞、幼児の虫封じと満願の鎌奉納を、磐田物語の本編5ページで読み分けます。",
+   "image": "/assets/blog/20261113-kamada-shinmeigu-taisai-yomikata-cover.webp",
+   "internal_links": [
+    "/matsuri-kamada.html",
+    "/matsuri-kamada-sengu.html",
+    "/matsuri-kamada-yatai.html",
+    "/matsuri-kamada-urayasu.html",
+    "/matsuri-kamada-mushifuji.html"
+   ],
+   "run_id": "3126829341de4c0ba96d3dba2a850724",
+   "url": "https://iwata-monogatari.net/blog/20261113-kamada-shinmeigu-taisai-yomikata/"
+  },
+  {
+   "slug": "20261114-yaramaika-yomikata",
+   "title": "遠州弁「やらまいか」の読み方｜誘いの語法と、挑戦の気質を分けて読む",
+   "date": "2026-11-14",
+   "kind": "reading",
+   "tags": [
+    "遠州弁",
+    "やらまいか"
+   ],
+   "description": "遠州弁「やらまいか」には二つの読み方があります。動詞に付く誘いの語法としての意味と、進取の気質を表す地域の自己像としての広がりです。磐田物語の遠州弁辞典と関連3ページで、二つの読みを混ぜずに読み分けます。",
+   "image": "/assets/blog/20261114-yaramaika-yomikata-cover.webp",
+   "internal_links": [
+    "/c006.html",
+    "/c065.html",
+    "/c118.html",
+    "/c127.html"
+   ],
+   "run_id": "8378fa23668cd680bd67c41d60538496",
+   "url": "https://iwata-monogatari.net/blog/20261114-yaramaika-yomikata/"
+  },
+  {
+   "slug": "20261114-kokubunji-matsuri-yomikata",
+   "title": "遠江国分寺まつりの読み方｜国司行列と夜市、二つの動線で読む一日",
+   "date": "2026-11-14",
+   "kind": "reading",
+   "tags": [
+    "祭り",
+    "遠江国分寺"
+   ],
+   "description": "遠江国分寺まつりは、史跡公園だけで完結する祭りではありません。磐田駅北口から府八幡宮を経て国分寺跡へ向かう国司参拝行列と、夕方に駅前へ戻る夜市という二つの動線、天平・戦国・現代の時代の重なりを、磐田物語の本編特集と子特集3ページで読み分けます。",
+   "image": "/assets/blog/20261114-kokubunji-matsuri-yomikata-cover.webp",
+   "internal_links": [
+    "/matsuri-kokubunji.html",
+    "/matsuri-kokubunji-gyoretsu.html",
+    "/matsuri-kokubunji-jidai.html",
+    "/matsuri-kokubunji-yoichi.html"
+   ],
+   "run_id": "9ecf3aa63aac439997d88ee94b833bf4",
+   "url": "https://iwata-monogatari.net/blog/20261114-kokubunji-matsuri-yomikata/"
+  },
+  {
+   "slug": "20261116-ikago-yomikata",
+   "title": "五十子（いかご）の読み方｜「五十」を数字で読まない地名と、旧表記「伊加子」を本編でたどる",
+   "date": "2026-11-16",
+   "kind": "reading",
+   "tags": [
+    "地名",
+    "福田"
+   ],
+   "description": "磐田市五十子は「いかご」と読みます。数字の「五十」をふつうに読んでもたどり着きにくいこの地名を、市の旧福田町の住所表示と日本郵便の読み、磐田市立図書館レファレンス事例78が紹介する旧表記「伊加子」と由来の説明、福田の地域史への入口まで、磐田物語の本編ページで読み分けます。",
+   "image": "/assets/blog/20261116-ikago-yomikata-cover.webp",
+   "internal_links": [
+    "/chimei/ikago/",
+    "/chimei/fukude/",
+    "/chimei/towns/",
+    "/f029.html"
+   ],
+   "run_id": "f60a44b580d84a8faa697023a63ae270",
+   "url": "https://iwata-monogatari.net/blog/20261116-ikago-yomikata/"
+  },
+  {
+   "slug": "20261117-ninomiya-yomikata",
+   "title": "二之宮（にのみや）の読み方｜合併で変わらなかった住所と、区画整理で変わった町名・地番を本編でたどる",
+   "date": "2026-11-17",
+   "kind": "reading",
+   "tags": [
+    "地名",
+    "中泉"
+   ],
+   "description": "磐田市の二之宮は「にのみや」と読みます。合併前・合併後の住所表示の両方に同じ「磐田市二之宮」が載る一方、一部は駅北土地区画整理の対象となり町名・地番が変わったこと、二之宮浅間・二之宮東との読み分け、自治会名と住所の区別まで、磐田物語の本編ページで読み分けます。",
+   "image": "/assets/blog/20261117-ninomiya-yomikata-cover.webp",
+   "internal_links": [
+    "/chimei/towns/0109000/",
+    "/chimei/towns/0110000/",
+    "/chimei/towns/0111000/",
+    "/chimei/towns/",
+    "/chimei/old-address/",
+    "/n091.html"
+   ],
+   "run_id": "e715f51aefaf4d9e9080980dbf36e13f",
+   "url": "https://iwata-monogatari.net/blog/20261117-ninomiya-yomikata/"
+  },
+  {
+   "slug": "20261118-shingai-yomikata",
+   "title": "新貝（しんがい）の読み方｜合併で変わらなかった住所と、2023年の換地処分で変わった区域内の地番を本編でたどる",
+   "date": "2026-11-18",
+   "kind": "reading",
+   "tags": [
+    "地名",
+    "御厨"
+   ],
+   "description": "磐田市の新貝は「しんがい」と読みます。合併前・合併後の住所表示の両方に同じ「磐田市新貝」が載る一方、2023年10月13日の換地処分公告で翌14日から区画整理区域内の地番が変わったこと、新貝一〜三丁目との読み分け、課税明細書の所在欄の見方まで、磐田物語の本編ページで読み分けます。",
+   "image": "/assets/blog/20261118-shingai-yomikata-cover.webp",
+   "internal_links": [
+    "/chimei/towns/0070000/",
+    "/chimei/towns/0070001/",
+    "/chimei/towns/0070002/",
+    "/chimei/towns/0070003/",
+    "/chimei/towns/",
+    "/chimei/old-address/",
+    "/u005.html",
+    "/u045.html"
+   ],
+   "run_id": "3c3ec10e5d094c2ca4a861d57d11333c",
+   "url": "https://iwata-monogatari.net/blog/20261118-shingai-yomikata/"
+  },
+  {
+   "slug": "20261118-iwata-gappei-2005",
+   "title": "磐田市合併（2005年）の歩み｜一市三町一村の新設合併と、住所・市章の変更を本編でたどる",
+   "date": "2026-11-18",
+   "kind": "guide",
+   "tags": [
+    "合併",
+    "市町村史"
+   ],
+   "description": "今の磐田市は2005年4月1日、旧磐田市・福田町・竜洋町・豊田町・豊岡村の一市三町一村の新設合併で生まれました。合併協定の調印から開市式、旧町名が大字に残った住所の変更、現市章と市の木の制定まで、磐田物語の本編ページでたどります。",
+   "image": "/assets/blog/20261118-iwata-gappei-2005-cover.webp",
+   "internal_links": [
+    "/c097.html",
+    "/c014.html",
+    "/c147.html",
+    "/oishi-ronko/274/",
+    "/chimei/old-address/",
+    "/chimei/towns/0165000/",
+    "/y008.html"
+   ],
+   "run_id": "b9ca83ea01cc47c3bbc7f54525ca5d23",
+   "url": "https://iwata-monogatari.net/blog/20261118-iwata-gappei-2005/"
+  },
+  {
+   "slug": "20261119-kaketsuka-yomikata",
+   "title": "掛塚（かけつか）の読み方｜竜洋町掛塚から磐田市掛塚へ、湊町の歩みを本編でたどる",
+   "date": "2026-11-19",
+   "kind": "reading",
+   "tags": [
+    "地名",
+    "竜洋"
+   ],
+   "description": "磐田市の掛塚は「かけつか」と読みます。市の住所表示が合併前の「竜洋町掛塚」と合併後の「磐田市掛塚」を同じ行で対応させること、西貝塚・東貝塚との読み分け、そして天竜川河口の湊町としての歩みを、磐田物語の本編ページで読み分けます。",
+   "image": "/assets/blog/20261119-kaketsuka-yomikata-cover.webp",
+   "internal_links": [
+    "/chimei/towns/0025000/",
+    "/chimei/towns/",
+    "/chimei/old-address/",
+    "/01007-ryuyo.html",
+    "/r038.html",
+    "/r036.html"
+   ],
+   "run_id": "8c201a2839b048088dd179c4f56d5da9",
+   "url": "https://iwata-monogatari.net/blog/20261119-kaketsuka-yomikata/"
+  },
+  {
+   "slug": "20261120-tenryugawa-watashi-kotsu",
+   "title": "天竜川の渡し船と磐田の交通の歩み｜池田の渡しの運用・助郷・川留めから橋への移り変わりを本編でたどる",
+   "date": "2026-11-20",
+   "kind": "reading",
+   "tags": [
+    "天竜川",
+    "交通"
+   ],
+   "description": "橋のない天竜川を、人はどう渡ったのか。東海道の池田の渡しについて、流れで使い分けた渡し場と川会所、川留めの目安、渡船を支えた定助郷・大助郷と船名敷の経済、洪水のたびの仮渡船、そして掛塚側の渡船場から橋への移り変わりを、磐田物語の本編ページで読み分けます。",
+   "image": "/assets/blog/20261120-tenryugawa-watashi-kotsu-cover.webp",
+   "internal_links": [
+    "/t004.html",
+    "/t045.html",
+    "/t047.html",
+    "/t048.html",
+    "/t052.html",
+    "/r039.html",
+    "/c136.html",
+    "/t062.html",
+    "/oishi-ronko/267/"
+   ],
+   "run_id": "2df8b9a0d486447ea276de84bfaad9f1",
+   "url": "https://iwata-monogatari.net/blog/20261120-tenryugawa-watashi-kotsu/"
+  },
+  {
+   "slug": "20261121-mitsuke-yakunin-denmayaku",
+   "title": "見付宿を動かした人々｜名主・問屋・年寄・組頭の四役九人と、間口で決まった伝馬役を本編でたどる",
+   "date": "2026-11-21",
+   "kind": "reading",
+   "tags": [
+    "見付宿",
+    "東海道"
+   ],
+   "description": "見付宿を実際に動かしていたのは誰か。天保13年の名前帳に残る宿役人9名（名主・問屋・年寄・組頭の四役と兼職の顔ぶれ）、寛文5年から据え置かれた問屋給米、表間口の間数で171軒に割り付けられた伝馬役とその金納化の歩みを、磐田物語の本編「宿を動かした人々」で読み分けます。",
+   "image": "/assets/blog/20261121-mitsuke-yakunin-denmayaku-cover.webp",
+   "internal_links": [
+    "/m143.html",
+    "/m142.html",
+    "/m144.html",
+    "/m153.html",
+    "/m161.html",
+    "/m162.html",
+    "/m150.html",
+    "/m170.html",
+    "/m118.html"
+   ],
+   "run_id": "dff0a4a90a544a6e806a21435e5d6f3c",
+   "url": "https://iwata-monogatari.net/blog/20261121-mitsuke-yakunin-denmayaku/"
+  },
+  {
+   "slug": "20261122-fukude-betchin-corduroy-yomikata",
+   "date": "2026-11-22",
+   "kind": "reading",
+   "tags": [
+    "福田",
+    "織物"
+   ],
+   "title": "福田の別珍・コールテン｜「世界のコーデュロイ」を産んだ織物の町を本編でたどる",
+   "description": "磐田市福田の織物産業を、本編 f003「別珍・コールテンと福田の織物産業」一本に絞って読みます。別珍とコールテンの織りの違い、遠州の綿織物の蓄積の上に輸出向けの品質が磨かれた歩み、漁業の本編 f001・f002 と並べて見える港町と織物の町の二つの顔を案内します。",
+   "internal_links": [
+    "/f003.html",
+    "/f001.html",
+    "/f002.html"
+   ],
+   "updated_at": "2026-11-22",
+   "image": "/assets/blog/20261122-fukude-betchin-corduroy-yomikata-cover.webp",
+   "url": "https://iwata-monogatari.net/blog/20261122-fukude-betchin-corduroy-yomikata/",
+   "run_id": "357c023d2dcd1d9b0a0c356fc7acd497"
+  },
+  {
+   "date": "2026-11-23",
+   "description": "磐田市竜洋の漁業を、本編 r007「天竜川河口のシラスウナギ漁とウナギ養殖の源流」一本に絞って読みます。汽水域に集まるシラスウナギ、冬の深夜の集魚灯と手杁網の掬い漁、許可制と漁期による資源管理、浜名湖と磐田のウナギ養殖へ稚魚を送ってきた役割を案内します。",
+   "internal_links": [
+    "/r007.html",
+    "/f004.html",
+    "/r016.html"
+   ],
+   "kind": "reading",
+   "slug": "20261123-ryuyo-gyogyo-kakou-yomikata",
+   "tags": [
+    "竜洋",
+    "漁業"
+   ],
+   "title": "竜洋の漁業と天竜川河口｜シラスウナギの掬い漁とウナギ養殖の源流を本編でたどる",
+   "updated_at": "2026-11-23",
+   "image": "/assets/blog/20261123-ryuyo-gyogyo-kakou-yomikata-cover.webp",
+   "url": "https://iwata-monogatari.net/blog/20261123-ryuyo-gyogyo-kakou-yomikata/",
+   "run_id": "4fe26b578978414293045e3bce2cb99d"
+  }
+ ]
 }
