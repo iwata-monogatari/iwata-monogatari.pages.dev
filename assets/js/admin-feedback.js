@@ -8,6 +8,7 @@
   async function load() {
     var id = ++requestId;
     rows = []; body.replaceChildren(); download.disabled = true;
+    if (document.getElementById("site").value === "cheshire") return;
     status.textContent = "見せ方の希望を読み込んでいます…";
     var query = new URLSearchParams({ site: document.getElementById("site").value, days: document.getElementById("days").value });
     if (document.getElementById("internal").checked) query.set("internal", "1");

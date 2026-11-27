@@ -67,6 +67,7 @@
           <option value="iwata" selected>磐田物語</option>
           <option value="iwataalb">磐田懐かし写真館</option>
           <option value="oishi">大石浩之（oishi-hiroyuki.org）</option>
+          <option value="cheshire">ATAWIチェシャ猫（問い別の回答）</option>
           <option value="all">すべて（記事の反応）</option>
         </select>
       </label>
@@ -83,6 +84,7 @@
       <span class="status" id="status" role="status" aria-live="polite">読み込み中…</span>
     </div>
 
+    <section id="cheshire-panel" hidden><h2>チェシャ猫に、ひとこと言い返す。</h2><p>期間内に最後に選ばれた回答を、各問につき同じブラウザーから一票として集計します。割合はその問いの回答数に対する比率です。確認用の回答は除外します。</p><div id="cheshire-results"></div></section>
     <div id="article-reactions">
     <div class="tiles">
       <div class="tile"><div class="k">反応の合計</div><div class="v" id="t-total">0</div></div>
@@ -146,6 +148,7 @@
   </div>
 </div>
 
+<script src="/assets/js/cheshire-summary.js"></script>
 <script>
 (function () {
   "use strict";
@@ -174,8 +177,16 @@
   function cleanTitle(t) { return (t || "").replace(/\s*[|｜–-]\s*(磐田物語|大石浩之|磐田市政、ちょっと一言).*$/, "") || "（無題）"; }
 
   function load() {
-    document.dispatchEvent(new Event("reaction-summary-loading"));
     var currentRequest = ++requestId;
+    var cheshire = $("site").value === "cheshire";
+    $("cheshire-panel").hidden = !cheshire;
+    $("article-reactions").hidden = cheshire;
+    if (cheshire) {
+      $("internal-control").classList.add("hide");
+      loadCheshireSummary($("days").value, function () { return currentRequest === requestId; });
+      return;
+    }
+    document.dispatchEvent(new Event("reaction-summary-loading"));
     $("internal-control").classList.toggle("hide", !adminMode);
     var authenticated = adminMode;
     statusEl.textContent = "読み込み中…";
@@ -347,7 +358,7 @@
   $("reload-btn").addEventListener("click", load);
   $("days").addEventListener("change", load);
   $("site").addEventListener("change", load);
-  try { var qs = new URLSearchParams(location.search).get("site"); if (["iwata", "iwataalb", "oishi", "all"].indexOf(qs) !== -1) $("site").value = qs; } catch (e) {}
+  try { var qs = new URLSearchParams(location.search).get("site"); if (["iwata", "iwataalb", "oishi", "cheshire", "all"].indexOf(qs) !== -1) $("site").value = qs; } catch (e) {}
   $("internal").addEventListener("change", load);
   $("forget-btn").addEventListener("click", function () {
     fetch("/api/reactions/admin-session", { method: "DELETE", cache: "no-store", credentials: "same-origin" })

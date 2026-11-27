@@ -12,7 +12,7 @@ export async function onRequest({ request, next }) {
   const path = new URL(request.url).pathname;
   const isCounts = path.endsWith("/counts");
   const isAdminRoute = /\/admin(?:-|\/|$)/.test(path);
-  const corsOk = isCounts
+  const corsOk = path.endsWith("/cheshire") ? origin === "https://cheshire.atawi.link" : isCounts
     ? origin === DASHBOARD_ORIGIN
     : ALLOWED.has(origin) && !isAdminRoute;
   const corsHeaders = corsOk
